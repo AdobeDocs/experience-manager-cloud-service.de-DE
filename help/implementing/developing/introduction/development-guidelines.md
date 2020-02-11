@@ -2,7 +2,7 @@
 title: AEM als Cloud Service Development Guidelines
 description: 'Noch auszufüllen '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Kunden können auf CRXDE Lite in der Entwicklungsumgebung zugreifen, jedoch nich
 
 Eine Reihe von Tools zum Debugging von AEM als Cloud-Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Bereitstellungs- und Produktionsumgebungen verfügbar. Die URL kann wie folgt festgelegt werden, indem die Autor- oder Veröffentlichungsdienst-URLs angepasst werden:
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Als Kurzbefehl kann der folgende CLI-Befehl für Cloud Manager verwendet werden, um die Developer Console basierend auf einem im Folgenden beschriebenen Umgebungsparameter zu starten:
 
