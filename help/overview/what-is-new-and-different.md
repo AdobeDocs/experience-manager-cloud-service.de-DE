@@ -2,7 +2,7 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud-Dienst
 description: 'Was ist anders und was ist neu - Adobe Experience Manager (AEM) als Cloud-Dienst. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe übernimmt proaktiv die Aktualisierung aller operativen Instanzen des Dien
 
 >[!NOTE]
 >
->Dies wird mithilfe von [Cloud Manager](#cloud-manager)erreicht.
+>Weitere Informationen finden Sie unter [Implementierungsarchitektur](/help/core-concepts/architecture.md#deployment-architecture).
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->Weitere Informationen finden Sie unter [Implementierungsarchitektur](/help/core-concepts/architecture.md#deployment-architecture).
-
-### Frühere Versionen {#previous-versions-cloud-manager}
-
-Der Cloud Manager wurde als Bereitstellungswerkzeug für AEM-Instanzen von Managed Services verwendet.
-
-Die Hauptunterschiede zwischen Cloud Manager für AMS und Cloud Services bestehen darin, dass ein Mieter bei der Erstellung mit Gutschriften aufgefüllt wird, die auf den SKUs basieren, die vom Kunden gekauft wurden.
-
->[!NOTE]
->Das Konzept der *Gutschriften* ist aus operativer Sicht zwar wichtig, wird jedoch nicht direkt in der Benutzeroberfläche von Cloud Manager angezeigt.
-
-Das Erstellen eines normalen Programms verbraucht keine Gutschriften, aber es muss eine Kerngutschrift vorhanden sein, um eine zu erstellen.
-Weitere Informationen zum Erstellen verschiedener Programme finden Sie unter Programm [erstellen](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
-
-### AEM als Cloud-Dienst {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager ist ein wesentlicher Bestandteil der kontinuierlichen Aktualisierung von AEM als Cloud-Dienst, da es alle Aktualisierungen Ihrer Instanzen steuert - dies ist obligatorisch.
 
