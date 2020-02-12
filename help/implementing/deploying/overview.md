@@ -2,7 +2,7 @@
 title: Bereitstellen auf AEM als Cloud-Dienst
 description: 'Bereitstellen auf AEM als Cloud-Dienst '
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
 
 ---
 
@@ -48,7 +48,7 @@ Wie bei vorhandenen Nicht-Cloud-AEM-Versionen wird eine lokale Offline-Entwicklu
 > [!HINWEIS}
 >Es gibt geringfügige betriebliche Unterschiede zwischen dem Verhalten der Anwendung auf einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung beachtet werden und könnten bei der Bereitstellung der Cloud-Infrastruktur zu einem anderen Verhalten führen. Aufgrund dieser Unterschiede ist es wichtig, die umfassenden Tests in Entwicklungs- und Bereitstellungsumgebungen durchzuführen, bevor neuer benutzerdefinierter Code in der Produktion eingeführt wird.
 
-Im Folgenden finden Sie den Vorgang, mit dem Entwickler auf die relevante Version der AEM-Artefakte zugreifen können, die wir als AEM als Cloud-Service-SDK bezeichnen, das für die Entwicklung von benutzerspezifischem Code für eine interne Version benötigt wird. Informationen zum Dispatcher finden Sie [auf dieser Seite](/help/implementing/dispatcher/overview.md).
+Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die entsprechende Version von [AEM als Cloud-Dienst-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung der Funktion als Cloud-Dienst-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/overview.md).
 
 ## Bereitstellen von Content Packages über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
