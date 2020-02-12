@@ -2,7 +2,7 @@
 title: Vorgänge und Wartung von Adobe Experience Manager als Cloud-Dienst
 description: Adobe Experience Manager als Cloud-Dienst für Vorgänge und Wartungs-Selbsthilfe und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ Auf dieser Seite werden die Selbsthilfe-Ressourcen zu den Vorgängen und der War
 * [Content-Replikation](replication.md)
 * [Wartungsaufgaben](maintenance.md)
 * [Sichern und Wiederherstellen](backup.md)
-* [Indizierung](indexing.md)
 
 ## Experience Manager als Cloud-Service-Handbuch {#aem-guides}
 
