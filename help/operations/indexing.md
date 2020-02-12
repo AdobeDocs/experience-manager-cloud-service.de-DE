@@ -1,13 +1,13 @@
 ---
-title: Indizierung
-description: 'Indizierung '
+title: Inhaltssuche und -indizierung
+description: 'Inhaltssuche und -indizierung '
 translation-type: tm+mt
-source-git-commit: 83d2abd5b75e644be97de1d5420e7bca6b13e0d9
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
 
-# Indizierung {#indexing}
+# Inhaltssuche und -indizierung {#indexing}
 
 ## Änderungen in AEM als Cloud-Dienst {#changes-in-aem-as-a-cloud-service}
 
