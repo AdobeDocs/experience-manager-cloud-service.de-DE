@@ -2,7 +2,7 @@
 title: Ihre Testergebnisse verstehen - Cloud-Services
 description: Testergebnisse verstehen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlich auszuführe
 
 Beispielsweise `com.myco.tests.aem.ExampleIT` würde eine Klasse mit dem Namen ausgeführt, eine Klasse mit dem Namen `com.myco.tests.aem.ExampleTest` jedoch nicht.
 
-Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von aem-testing-clients kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen.
+Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von aem-testing-clients kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen. Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
 ## Benutzerdefinierte Funktionstests {#custom-functional-test}
 
@@ -126,7 +126,7 @@ Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vor
 Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt. Dieser Schritt wird derzeit unmittelbar nach der Bereitstellung der Stufe ausgeführt.
 
 > Hinweis:
->Über die Schaltfläche **Protokoll** herunterladen können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses - auf diese kann mit der oben beschriebenen regulären Funktion zum Herunterladen oder zum Verfolgen von Endprotokollen zugegriffen werden.
+>Über die Schaltfläche **Protokoll** herunterladen können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses - auf diese kann mit der regulären Funktion zum Herunterladen oder zum Versenden von Protokollen zugegriffen werden. Weitere Informationen finden Sie unter Protokolle [aufrufen und verwalten](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Lokale Testausführung {#local-test-execution}
 
