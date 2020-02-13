@@ -2,7 +2,7 @@
 title: CI/CD-Pipeline konfigurieren - Cloud-Dienste
 description: CI/CD-Pipeline konfigurieren - Cloud-Dienste
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
    Außerdem können Sie in den Pipeline-Optionen Bereitstellungsauslöser und das Verhalten bei wichtigen Fehlern festlegen.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
@@ -97,8 +97,6 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
    * **Bearbeiten**: Ermöglicht die Bearbeitung der Pipeline-Einstellungen.
    * **Build**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann.
    * **Git** verwalten - Ermöglicht dem Benutzer, die für den Zugriff auf das Cloud Manager Git-Repository erforderlichen Informationen abzurufen
-
-
 
 ## Die nächsten Schritte {#the-next-steps}
 
