@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2020.2.0
 description: Versionshinweise für Version 2020.2.0
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager als Cloud Service 2020.2.0 beschrieben.
 
-Das Veröffentlichungsdatum ist der 13. Februar 2020.
-
 ## Cloud Manager {#cloud-manager}
+
+Das Veröffentlichungsdatum für Cloud Manager Version 2020.2.0 ist der 13. Februar 2020.
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Cloud Manager Release 2020.2.0.
 
