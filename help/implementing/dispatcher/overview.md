@@ -2,7 +2,7 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ Der `invalidate.cache` Ansatz wird nicht mehr unterstützt, da er nur einen best
 AEM als Cloud-Dienst funktioniert auf Dienstebene und nicht auf der Ebene einzelner Knoten. Daher sind die Ungültigmachungsanweisungen in der Dokumentation zur [Dispatcher-Hilfe](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) nicht mehr genau.
 Stattdessen sollte der Replizierungsfilter-Agent verwendet werden. Dies kann mithilfe der Replikations-API erfolgen. Die Replikations-API-Dokumentation ist [hier](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) speziell im `CustomStep` Beispiel, in dem eine Replizierungsaktion des Typs ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar, sondern vorkonfiguriert, um auf den Dispatcher zu verweisen. Er ist mit dem Veröffentlichungsdienst, der den Flush-Agent ausführt, übereinstimmen. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder -Workflows ausgelöst werden.
 
-<!--The diagram below illustrates this.
+Das folgende Diagramm zeigt dies.
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 Wenn Bedenken bestehen, dass der Dispatcher-Cache nicht gelöscht wird, wenden Sie sich an den Kundensupport, der den Dispatcher-Cache ggf. leeren kann.
 
