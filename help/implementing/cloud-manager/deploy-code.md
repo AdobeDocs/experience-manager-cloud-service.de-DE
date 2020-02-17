@@ -2,7 +2,7 @@
 title: Code bereitstellen - Cloud-Dienste
 description: Code bereitstellen - Cloud-Dienste
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfigurier
 
    * Validierung: Dieser Schritt stellt sicher, dass die Pipeline so konfiguriert ist, dass die derzeit verfügbaren Ressourcen verwendet werden. So wird z. B. überprüft, ob die konfigurierte Verzweigung vorhanden ist und die Umgebungen verfügbar sind.
    * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Weitere Informationen zur Build-Umgebung finden Sie unter [AEM-Anwendungsprojekt erstellen](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md).
-   * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](understand-test-results.md).
+   * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](/help/implementing/developing/introduction/understand-test-results.md).
    * Bilder erstellen: Dieser Schritt enthält eine Protokolldatei aus dem zum Erstellen von Bildern verwendeten Prozess. Dieser Prozess ist verantwortlich für die Umwandlung der Inhalte und Dispatcher-Pakete, die vom Build-Schritt erstellt wurden, in Docker-Bilder und Kubernetes-Konfiguration.
    * Bereitstellung in der Staging-Umgebung
 
       ![](assets/stage-deployment.png)
    The **Stage testing**, involves the following steps:
 
-   * Produktfunktionstests: Die Ausführung von Cloud Manager-Pipeline-Ausführungen unterstützt die Ausführung von Tests, die gegen die Stage-Umgebung ausgeführt werden. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](understand-test-results.md).
-   * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](understand-test-results.md).
+   * Produktfunktionstests: Die Ausführung von Cloud Manager-Pipeline-Ausführungen unterstützt die Ausführung von Tests, die gegen die Stage-Umgebung ausgeführt werden. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](/help/implementing/developing/introduction/understand-test-results.md).
+   * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt. Weitere Informationen zum Testprozess finden Sie unter [Testergebnisse verstehen](/help/implementing/developing/introduction/understand-test-results.md).
 
       ![](assets/stage-testing.png)
 
