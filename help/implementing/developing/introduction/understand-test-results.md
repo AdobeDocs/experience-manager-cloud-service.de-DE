@@ -2,7 +2,7 @@
 title: Ihre Testergebnisse verstehen - Cloud-Services
 description: Testergebnisse verstehen - Cloud Services
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vor
 
 Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt. Dieser Schritt wird derzeit unmittelbar nach der Bereitstellung der Stufe ausgeführt.
 
-> Hinweis:
+>[!NOTE]
 >Über die Schaltfläche **Protokoll** herunterladen können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses - auf diese kann mit der regulären Funktion zum Herunterladen oder zum Versenden von Protokollen zugegriffen werden. Weitere Informationen finden Sie unter Protokolle [aufrufen und verwalten](/help/implementing/cloud-manager/manage-logs.md) .
 
 ## Lokale Testausführung {#local-test-execution}
