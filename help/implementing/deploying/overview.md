@@ -2,7 +2,7 @@
 title: Bereitstellen für AEM als Cloud Service
 description: 'Bereitstellen für AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 Die Grundlagen der Codeentwicklung sind in AEM als Cloud-Dienst im Vergleich zu den AEM On Premise- und Managed Services-Lösungen ähnlich. Entwickler schreiben Code und testen ihn lokal, der dann als Cloud-Dienstumgebungen an AEM gesendet wird. Cloud Manager, ein optionales Werkzeug zur Inhaltsbereitstellung für Managed Services, ist erforderlich. Dies ist jetzt der einzige Mechanismus zur Bereitstellung von Code in AEM als Cloud-Dienstumgebungen.
 
 Die Aktualisierung der AEM-Version ist immer ein separates Bereitstellungsereignis, das nicht das Verschieben von benutzerdefiniertem Code ermöglicht. Andernfalls sollten Versionen von benutzerspezifischem Code mit der AEM-Version getestet werden, die in Produktion ist, da diese Version zusätzlich bereitgestellt wird. Updates der AEM-Version, die danach erfolgen und die im Vergleich zu den heutigen Managed Services häufig auftreten, werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten Kundencode sein.
+
+Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM als Cloud-Dienst:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In diesem Dokument wird beschrieben, wie Entwickler ihre Vorgehensweisen so anpassen sollten, dass sie sowohl mit AEM als Updates für die Version des Cloud-Dienstes als auch mit Updates für Kunden arbeiten.
 
@@ -45,7 +49,7 @@ Bei vorherigen AEM-Lösungen änderte sich die aktuelle AEM-Version selten (etwa
 
 Wie bei vorhandenen Nicht-Cloud-AEM-Versionen wird eine lokale Offline-Entwicklung unterstützt, die auf einem bestimmten Schnellstart basiert. In den meisten Fällen ist dies das bevorzugte Debugging-Tool.
 
-> [!HINWEIS}
+>[!NOTE]
 >Es gibt geringfügige betriebliche Unterschiede zwischen dem Verhalten der Anwendung auf einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung beachtet werden und könnten bei der Bereitstellung der Cloud-Infrastruktur zu einem anderen Verhalten führen. Aufgrund dieser Unterschiede ist es wichtig, die umfassenden Tests in Entwicklungs- und Bereitstellungsumgebungen durchzuführen, bevor neuer benutzerdefinierter Code in der Produktion eingeführt wird.
 
 Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die entsprechende Version von [AEM als Cloud-Dienst-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung von AEM als Cloud-Dienst-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/overview.md).
@@ -107,7 +111,8 @@ Nach der Umstellung auf eine neue Anwendungsversion:
 
 Es ist möglich, die Installation variabler Inhalte auf Autoren oder Veröffentlichungen zu beschränken, indem Sie Pakete in einen Ordner install.author oder install.publish unter einbetten `/apps`. Details zur empfohlenen Projektumstrukturierung finden Sie in der [AEM-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) .
 
->[!NOTE] Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung ist vorhanden, um die Option eines Testlaufs der automatisierten Ausführung sicherzustellen. Für eine Umgebung spezifische Inhalte müssen manuell über Package Manager installiert werden.
+>[!NOTE]
+> Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung ist vorhanden, um die Option eines Testlaufs der automatisierten Ausführung sicherzustellen. Für eine Umgebung spezifische Inhalte müssen manuell über Package Manager installiert werden.
 
 Außerdem gibt es keinen Mechanismus, um die Änderungen des veränderlichen Inhaltspakets nach deren Anwendung zurückzusetzen. Wenn Kunden ein Problem erkennen, können sie es in ihrer nächsten Codeversion oder als letztes Mittel beheben und das gesamte System auf einen Zeitpunkt vor der Bereitstellung wiederherstellen.
 
@@ -123,7 +128,8 @@ Für die folgenden Fälle ist es vorzuziehen, explizite Inhaltserstellungsanweis
 * Gruppen erstellen/löschen
 * Benutzer erstellen/löschen
 * ACLs hinzufügen
-   > [!NOTE] Die Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können Anweisungen zur vorherigen Erstellung von Pfaden erforderlich sein.
+   > [!NOTE]
+   > Die Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können Anweisungen zur vorherigen Erstellung von Pfaden erforderlich sein.
 * Pfad hinzufügen (z. B. für Stammordnerstrukturen)
 * Hinzufügen von CNDs (Begriffsdefinitionen)
 
