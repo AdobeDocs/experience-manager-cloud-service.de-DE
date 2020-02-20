@@ -4,12 +4,12 @@ description: Lernen Sie das Konzept von Sammlungen in AEM Assets kennen. Erfahre
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# Verwalten von Sammlungen {#manage-collections}
 
 Eine Sammlung ist ein Satz von Assets innerhalb von AEM- (Adobe Experience Manager-) Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 
@@ -225,7 +225,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 
 In der Benutzeroberfläche &quot;Assets&quot;können Sie Assets nach bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten suchen oder filtern. If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine intelligente Sammlung erstellen. Intelligente Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+Gespeicherte Suchen werden erstellt, wenn Sie eine intelligente Sammlung erstellen. Intelligente Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
