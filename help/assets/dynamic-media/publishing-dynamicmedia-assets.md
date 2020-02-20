@@ -2,7 +2,7 @@
 title: Veröffentlichen von Assets mit dynamischen Medien
 description: Anleitung zum Veröffentlichen von Asset mit dynamischen Medien
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -39,5 +39,5 @@ Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Anwendungen integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
-See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/scene7-http2faq.md) to learn more.
+See [HTTP/2 delivery of content frequently asked questions](/help/assets/dynamic-media/http2faq.md) to learn more.
 <!--this md file used to reside under sites-administering-->
