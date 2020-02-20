@@ -3,7 +3,7 @@ title: Herunterladen von Assets aus AEM
 description: Erfahren Sie, wie Sie Assets aus AEM herunterladen und die Download-Funktion aktivieren oder deaktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -61,8 +61,6 @@ The `Asset Download Servlet` can be disabled on an AEM Publish instances by upda
 1. Um Asset-Download-Anforderungen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) eine neue Regel hinzu.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. You can manually disable the OSGi component on a Publish instance, by navigating to the OSGi Console at `<aem-host>/system/console/components`. Locate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` and click **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >
