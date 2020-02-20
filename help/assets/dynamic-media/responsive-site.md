@@ -2,12 +2,12 @@
 title: Bereitstellen von optimierten Bildern für eine responsive Site
 description: Anleitung zur Bereitstellung optimierter Bilder mit der responsiven Codefunktion
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Bereitstellen von optimierten Bildern für eine responsive Website {#delivering-optimized-images-for-a-responsive-site}
 
 Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für responsive Verarbeitung für den Webentwickler freigeben möchten. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
@@ -44,4 +44,4 @@ Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourweb
 
 HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Die Bereitstellung von Dynamic Media Assets kann über HTTP/2 erfolgen, das schnellere Antwort- und Ladezeiten bietet.
 
-Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2.md).
+Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2faq.md).
