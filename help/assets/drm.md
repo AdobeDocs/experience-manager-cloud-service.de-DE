@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager Assets
 description: Erfahren Sie, wie Sie den Assetablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ Sie können den Ablaufstatus eines Assets an den folgenden Stellen anzeigen:
 
 Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Unter-Assets suchen.
 
-1. Klicken Sie in der Assets-Konsole auf das Suchsymbol in der Symbolleiste, um das Feld &quot;Omni-Suche&quot;anzuzeigen.
+1. Klicken Sie in der Assets-Konsole auf das Suchsymbol in der Symbolleiste, um das Suchfeld anzuzeigen.
 
-1. Betätigen Sie bei in das Omni-Suchfeld gesetztem Cursor die Eingabetaste, um die Seite mit den Suchergebnissen anzuzeigen.
+1. Drücken Sie mit dem Cursor in das Feld Omniture Search die Eingabetaste, um die Suchergebnisseite anzuzeigen.
 
 1. Klicken Sie auf das GlobalNav-Symbol, um das Suchfeld anzuzeigen.
 
@@ -42,13 +42,13 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Un
 
 1. Wählen Sie **[!UICONTROL Abgelaufen]** aus. Die abgelaufenen Assets werden in den Suchergebnissen angezeigt.
 
-When you choose the **Expired** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Stattdessen werden sie angezeigt, nachdem AEM Assets bei der nächsten Ausführung des Planers erkennt, dass sie auf abgelaufene Unter-Assets verweisen.
+When you choose the **[!UICONTROL Expired]** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Stattdessen werden sie angezeigt, nachdem AEM Assets bei der nächsten Ausführung des Planers erkennt, dass sie auf abgelaufene Unter-Assets verweisen.
 
 Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, das vor dem aktuellen Planerzyklus liegt, erkennt der Planer das Asset als abgelaufenes Asset, wenn es das nächste Mal aufgeführt wird, und spiegelt dementsprechend seinen Status wider.
 
 Wenn eine Störung oder ein Fehler verhindert, dass der Planer abgelaufene Assets im aktuellen Zyklus erkennt, untersucht der Planer diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in AEM Configuration Manager.
 
 1. Öffnen Sie AEM Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Unter-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
@@ -90,7 +90,7 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
 1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omnisearch bar.
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
+1. Drücken Sie die Eingabetaste und klicken Sie dann auf das AEM-Symbol bzw. tippen Sie darauf, um das Suchfeld anzuzeigen.
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
 1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
