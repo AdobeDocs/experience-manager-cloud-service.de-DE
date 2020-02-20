@@ -2,7 +2,7 @@
 title: Bereitstellen von Dynamic Media Assets
 description: Informationen zum Bereitstellen von Dynamic Media Assets
 translation-type: tm+mt
-source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -31,12 +31,12 @@ Weitere Informationen finden Sie in den folgenden Themen:
 * [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Verknüpfen von URLs mit einer Webanwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/dynamic-media/responsive-site.md)
-* [Bereitstellung von Inhalten über HTTP/2](/help/assets/dynamic-media/http2.md) 
-* [Ungültigmachen von Inhalten im CDN-Cache ](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen ()](/help/assets/dynamic-media/http2faq.md)
+* [Ungültigmachen von Inhalten im CDN-Cache](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [Regelsätze zum Konvertieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) 
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Anwendungen integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
-Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur Bereitstellung von Inhalten über HTTP/2](/help/assets/dynamic-media/scene7-http2faq.md).
+Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur Bereitstellung von Inhalten über HTTP/2](/help/assets/dynamic-media/http2faq.md).
