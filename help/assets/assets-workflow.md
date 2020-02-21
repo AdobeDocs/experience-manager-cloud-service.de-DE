@@ -3,14 +3,14 @@ title: Arbeitsabläufe auf Assets anwenden
 description: Erfahren Sie, wie Sie Arbeitsabläufe auf Assets, Ordner und Sammlungen in Adobe Experience Manager Assets anwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Arbeitsabläufe auf Assets anwenden {#applying-workflows-to-assets}
 
-Sie verwenden Workflows in digitalen Assets, um das Asset zu aktivieren oder Wasserzeichen zu erstellen. Einige der Workflows für Assets sind so konfiguriert, dass sie unter bestimmten Bedingungen automatisch ausgeführt werden. Beispielsweise wird der Workflow, der automatisch eine Darstellung erstellt, automatisch ausgeführt, nachdem ein Bild bearbeitet wurde.
+Sie verwenden Workflows in digitalen Assets, um das Asset zu aktivieren. Einige der Workflows für Assets sind so konfiguriert, dass sie unter bestimmten Bedingungen automatisch ausgeführt werden. Beispielsweise wird der Workflow, der automatisch eine Darstellung erstellt, automatisch ausgeführt, nachdem ein Bild bearbeitet wurde.
 
 ## Apply a workflow to an AEM asset {#apply-a-workflow-to-an-aem-asset}
 
