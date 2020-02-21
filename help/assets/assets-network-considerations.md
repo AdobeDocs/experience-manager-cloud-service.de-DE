@@ -3,7 +3,7 @@ title: Überlegungen zum Netzwerk
 description: Enthält Netzwerküberlegungen für die Implementierung von AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Es folgen einige Punkte, die zu berücksichtigen sind:
 
 * Lesen von XMP-Metadaten/Writeback
 * Automatische Aktivierung und Replikation
-* Wasserzeichen
 * Unter-Asset-Aufnahme/Seitenextraktion
 * Überlappende Workflows
 
 Es folgt ein Kundenbeispiel für die Definition eines Asset-Workflows.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
