@@ -2,7 +2,7 @@
 title: Hinzufügen von Assets mit dynamischen Medien zu Seiten
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL Seitenverhältnis aktivieren Übereinstimmung]**- Entspricht dem Seitenverhältnis des Originalbilds, wenn Sie eine Darstellung für intelligente Zuschnitte auswählen.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Titel des Smart-Freistellungsbilds.
 
