@@ -2,18 +2,14 @@
 title: Einführung in die Programm- und Programmtypen
 description: Informationen zu Programm- und Programmtypen - Cloud-Services
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 
 ---
 
 
-# Programme und Programmtypen {#understanding-programs}
+# Grundlegendes zu Programmen und Programmtypen {#understanding-programs}
 
 In Cloud Manager befindet sich die Mandant-Entität ganz oben, die mehrere Programme enthalten kann.  Jedes Programm kann nicht mehr als eine Produktionsumgebung und mehrere Nicht-Produktionsumgebungen enthalten.
-
-Das folgende Diagramm zeigt die Hierarchie der Entitäten in Cloud Manager.
-
-![](assets/program_types.png)
 
 ## Programmtypen {#program-types}
 
