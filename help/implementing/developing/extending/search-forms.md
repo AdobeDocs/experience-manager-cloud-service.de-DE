@@ -2,18 +2,32 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Search Forms for Adobe Experience Manager als Cloud-Dienst.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Konfigurieren von Suchformularen {#configuring-search-forms}
 
-Verwenden Sie **Suchformulare** , um die in den verschiedenen Suchfeldern in der Autorenumgebung verfügbaren Suchfacetten und Filter anzupassen. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
+Adobe Experience Manager als Cloud-Dienst verfügt über einen leistungsstarken [Suchmechanismus](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar.
+In Kombination mit diesem stehen Ihnen auch eine Reihe vordefinierter Optionen zum Filtern Ihres Inhalts zur Verfügung. Diese enthalten vordefinierte Facetten wie &quot; **Änderungsdatum**&quot;, &quot; **Veröffentlichungsstatus**&quot;oder &quot; **Livecopy-Status** &quot;, mit denen Sie schnell zu den benötigten Ressourcen navigieren können.
 
-Sie können die [Suchformulare konfigurieren](#configuring-your-search-forms), die in den unterschiedlichen Konsolen und im Asset-Browser (bei der Bearbeitung von Seiten) genutzt werden. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
+![Suche und Filterung der Nutzung](assets/csf-usage.png)
+
+Mit diesen beiden Zielen können Sie Ihren Inhalt schnell und einfach finden aus:
+
+* [Suchen und Filtern](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* den [Assets-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (beim Bearbeiten von Seiten)
+
+>[!NOTE]
+>
+>Sie können den zugrunde liegenden [Content Search- und Indexing](/help/operations/indexing.md) -Dienst konfigurieren.
+
+Mit **Suchformularen** können Sie diese Bedienfelder entsprechend Ihren spezifischen Anforderungen anpassen und erweitern.
+
+Die **Suchformulare** bieten eine vordefinierte Auswahl an [Vorhersagen](#predicates-and-their-settings) , die Sie kombinieren und definieren können. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
 * **Tools**
 
@@ -21,73 +35,48 @@ Sie können die [Suchformulare konfigurieren](#configuring-your-search-forms), d
 
       * **Suchformulare**
 
-Wenn Sie zum ersten Mal auf diese Konsole zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die richtige Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Wenn Sie die Konfiguration angepasst haben, wird das Schlosssymbol nicht mehr angezeigt – es sei denn, Sie [löschen die benutzerdefinierte Konfiguration](#deleting-a-configuration-to-reinstate-the-default); dann wird das Standardsymbol wieder aktiviert und das Vorhängeschloss angezeigt.
+## Standardformulare {#default-forms}
+
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (standardmäßig) ist - und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, verschwindet die Sperre. Es wird wieder angezeigt, wenn Sie Ihre benutzerdefinierte Konfiguration[](#deleting-a-configuration-to-reinstate-the-default)löschen. In diesem Fall werden die Standardeinstellung (und die Padlock-Anzeige) erneut installiert.
 
 ![Konfigurieren von Suchformularen - Übersicht](assets/csf-overview.png)
-
-## Konfigurationen {#configurations}
 
 Die Standardkonfigurationen (alphabetisch aufgeführt) sind verfügbar:
 
 * **Asset-Admin-Suchschiene:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei Verwendung der Assets-Konsole zur Verfügung stehen.
-
 * **Seiten-Editor (Dokumentensuche):**
-
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Dokumenten im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
 * **Seiteneditor (Experience-Fragment-Suche):**
 
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Erlebnisfragmenten im Asset-Browser verfügbar sind (beim Bearbeiten einer Seite).
-
 * **Seiten-Editor (Bildsuche):**
-
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Bildern im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Manuskriptsuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Manuskripten im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
-
 * **Seiten-Editor (Seitensuche):**
-
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Seiten im Asset-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
 * **Seiten-Editor (Absatzsuche):**
 
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Absätzen im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
-
 * **Seiten-Editor (Produktsuche):**
-
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Produkten im Asset-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
 * **Seiten-Editor (Scene7-Suche)**:
 
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Scene7-Ressourcen im Asset-Browser verfügbar sind (beim Bearbeiten einer Seite).
-
 * **Seiten-Editor (Videosuche)**:
-
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Videos im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
 * **Projekt-Admin-Suchschiene:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer beim Durchsuchen von Projekten zur Verfügung stehen.
-
 * **Projekt-Übersetzungs-Suchschiene:**
-
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach Projektübersetzungen zur Verfügung stehen.
 
 * **Sites-Admin-Suchschiene**:
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei Verwendung der Suchleiste der Site-Konsole zur Verfügung stehen.
-
 * **Snippet-Admin-Suchschiene**:
-
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer beim Durchsuchen von Snippets zur Verfügung stehen.
 
 * **Stock-Admin-Suchschiene**:
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer beim Durchsuchen von Beständen zur Verfügung stehen.
+>[!NOTE]
+>
+> Weitere Informationen zu Asset-bezogenen Suchformularen finden Sie unter [Assets - Suchfacetten](/help/assets/search-facets.md)
+
 
 ## Prädikate und ihre Einstellungen {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Datum Bereich</td>
-   <td>Suchen Sie Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
+   <td>Suchen Sie nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -181,7 +170,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Gültigkeitsstatus</td>
-   <td>Suchen Sie Assets nach dem Ablaufstatus.</td>
+   <td>Suchen Sie Ressourcen basierend auf dem Ablaufstatus.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -191,7 +180,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Dateigröße</td>
-   <td>Suchen Sie Assets nach ihrer Größe.</td>
+   <td>Filtern Sie Ressourcen nach ihrer Größe.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -205,7 +194,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    <td>Suchen Sie Assets nach dem Datei-/Mime-Typ.</td>
    <td>
     <ul>
-     <li>Feldbezeichnung</li>
+     <li>Feldbezeichnung</li> 
      <li>Eigenschaftsname*</li>
      <li>Mimetype-Pfad</li>
      <li>Beschreibung</li>
@@ -214,7 +203,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Volltext</td>
-   <td>Sucheigenschaft für Volltextsuchen.</td>
+   <td>Sucheigenschaft für Volltextsuchen. Er wird dem Operator "jcr:contains"zugeordnet.</td>
    <td>
     <ul>
      <li>Platzhalter</li>
@@ -304,7 +293,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Seite Status</td>
-   <td>Suchseiten nach ihrem Status.</td>
+   <td>Filtern Sie Seiten nach ihrem Status.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -315,7 +304,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Pfad</td>
-   <td>Suchen Sie Assets, die sich unter einem bestimmten Pfad befinden.</td>
+   <td>Filtern Sie nach einem bestimmten Pfad. Sie können mehrere Pfade als Optionen angeben.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -325,7 +314,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Pfad Browser</td>
-   <td>Geben Sie einen Pfadbrowser für die Suche an.</td>
+   <td>Stellen Sie einen Pfadbrowser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>
      <li>Platzhalter</li>
@@ -360,7 +349,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Veröffentlichungsstatus</td>
-   <td>Suchen von Assets nach ihrem Veröffentlichungsstatus</td>
+   <td>Filtern Sie Ressourcen nach ihrem Veröffentlichungsstatus.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -380,7 +369,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Bewertung</td>
-   <td>Suchen Sie Assets nach ihrer Bewertung.<br /> </td>
+   <td>Suchen Sie nach Ressourcen gemäß ihrer durchschnittlichen Bewertung.<br /> </td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -391,7 +380,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Relatives Datum</td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>Filtern Sie Ressourcen nach dem relativen Erstellungsdatum. Zum Beispiel vor einer Woche, vor einem Monat.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -497,23 +486,24 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* Die allgemeinen Suchvorausschätzungen werden wie folgt definiert:
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+This information is for reference only, you must not make changes to `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Prädikateinstellungen {#predicate-settings}
 
-Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfügung:
+Abhängig von der Vorhersage steht eine Auswahl von Einstellungen zur Konfiguration zur Verfügung, darunter:
 
 * **Feldbezeichnung**
 
@@ -659,22 +649,19 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
+   ![Eigene Definition](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->You ***must*** not change anything in the `/libs` path.
->
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
->
->Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
->
->1. Recreate the required item, as it exists in `/libs`, under `/apps`. In diesem Fall im folgenden Verzeichnis:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Make any changes within `/apps.`
+   >[!NOTE]
+   >
+   >You ***must*** not change anything in the `/libs` path.
+   >
+   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >
+   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+   >
+   >1. Recreate the required item, as it exists in `/libs`, under `/apps`. In diesem Fall im folgenden Verzeichnis:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Make any changes within `/apps.`
 
 
 1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**.
@@ -695,16 +682,13 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
       Wählen Sie den Pfad, zu dem Ihre Optionen gehalten werden. Beispiel:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Optionsprognosen](assets/csf-options-predicate-02.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suchschiene**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen:
+1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suchschiene**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Anwenderberechtigungen {#user-permissions}
