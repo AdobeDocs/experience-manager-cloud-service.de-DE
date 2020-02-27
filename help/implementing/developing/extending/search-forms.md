@@ -664,9 +664,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    >1. Make any changes within `/apps.`
 
 
-1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**.
-
-   Klicken/tippen Sie anschließend auf das Symbol **Suchformulare bearbeiten**.
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**. Wählen Sie dann **Bearbeiten**.
 
 1. Fügen Sie je nach Konfiguration **Optionen** oder eine **Optionseigenschaft** zur Konfiguration hinzu.
 1. Aktualisieren Sie die Felder, vor allem:
@@ -685,11 +683,10 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    ![Optionsprognosen](assets/csf-options-predicate-02.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suchschiene**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![verwendete Optionen](assets/csf-options-usage.png)
+
 
 ## Anwenderberechtigungen {#user-permissions}
 
