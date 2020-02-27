@@ -1,8 +1,8 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 + Was ist erforderlich? {#what-is-required}
    + [Gewährte Zugriffsrechte](what-is-required/access-rights-granted.md)
    + [Hinzufügen von Anwendern und Rollen](what-is-required/add-users-roles.md)
+   + [Rollenbasierte Berechtigungen](what-is-required/role-based-permissions.md)
    + [Quell-Code-Repository](what-is-required/source-code-repository.md)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
    + [Zugriff auf Experience Manager als Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
@@ -24,3 +25,4 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/sites-readiness.md)
++ [Übersicht über die Tools-Konsolen](tools-consoles.md)
