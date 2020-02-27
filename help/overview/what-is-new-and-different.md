@@ -2,7 +2,7 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud-Dienst
 description: 'Was ist anders und was ist neu - Adobe Experience Manager (AEM) als Cloud-Dienst. '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
@@ -20,7 +20,7 @@ Es bestehen inhärente Unterschiede zwischen diesen vorherigen Ansätzen und AEM
 * [Architektur](#architecture)
 * [Upgrades](#upgrades)
 * [Cloud Manager](#cloud-manager)
-* [Eingliederung](#onboarding)
+* [Einstieg](#onboarding)
 * [Entwickeln](#developing)
 * [Vorgänge und Leistung](#operations-and-performance)
 * [Identitätsmanagement](#identity-management)
@@ -129,7 +129,7 @@ Derzeit ist Cloud Manager in der Lage, Umgebungen in 3 geografischen Regionen zu
 
 * APAC (Australien)
 
-## Eingliederung {#onboarding}
+## Einstieg {#onboarding}
 
 >[!NOTE]
 >
@@ -179,6 +179,10 @@ Dieser Prozess wird häufig als Cloud-erste Entwicklung bezeichnet. Da die End-t
 
 Die Web-Konsole, in der OSGI-Pakete und ihre zugehörige Konfiguration verwaltet werden, und früher Teil von AEM QuickStart, ist für Benutzer von AEM nicht mehr direkt als Cloud-Service-Umgebung verfügbar. Über eine neue Entwicklerkonsole kann auf diese Schnittstelle weiterhin im schreibgeschützten Modus zugegriffen werden. Mit dieser Konsole können Entwickler einen bestimmten Knoten eines Autoren- oder Veröffentlichungsdiensts auswählen und sich direkt anmelden und dann auf die standardmäßig blockierten Bereiche zugreifen.
 
+>[!NOTE]
+>
+>Siehe auch [OSGi-Konfiguration](/help/implementing/deploying/overview.md#osgi-configuration)
+
 Eine weitere allgemeine Anforderung für Entwickler ist der schnelle Zugriff auf die Protokolldateien der verschiedenen Umgebungen. Mit AEM als Cloud-Dienst werden die Protokolldateien der verschiedenen Knoten im Autor- und Veröffentlichungsknoten über den Cloud Manager bereitgestellt, entweder in Form von Dateien, die heruntergeladen werden können, oder über APIs.
 
 Aufgrund der klaren Trennung von Code und Inhalt können Entwickler einen bestimmten Prozess zum Aktualisieren von Inhalten im Rahmen einer Bereitstellung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
@@ -207,7 +211,7 @@ Um schnelle Iterationen und Entwicklung zu unterstützen, ist es auch möglich, 
 
 >[!NOTE]
 >
->Für weitere Details beginnen Sie mit [Sicherung](/help/operations/backup.md), [Indizierung](/help/operations/indexing.md)und [anderen Wartungsaufgaben](/help/operations/maintenance.md).
+>Für weitere Details beginnen Sie mit [Backup](/help/operations/backup.md), [Indizierung](/help/operations/indexing.md) und [anderen Wartungsaufgaben](/help/operations/maintenance.md).
 
 Bei AEM als Cloud-Dienst werden solche Vorgänge automatisiert, sodass eine Unterbrechung des Dienstes nicht mehr erforderlich ist.
 
