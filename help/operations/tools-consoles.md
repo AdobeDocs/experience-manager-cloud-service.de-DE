@@ -29,7 +29,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
