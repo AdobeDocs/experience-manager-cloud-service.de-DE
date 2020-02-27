@@ -15,7 +15,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
 
 >[!NOTE]
 >
->As the cards in the UI provide details about the purpose of each option, this table simply provides quick reference as to the location of features in the Tools panel.
+>Da die Karten in der Benutzeroberfläche Details zum Zweck der einzelnen Optionen enthalten, bietet diese Tabelle einen schnellen Überblick über die Position der Funktionen im Bedienfeld &quot;Werkzeuge&quot;.
 
 <table>
  <tbody>
