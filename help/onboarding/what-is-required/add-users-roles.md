@@ -2,12 +2,12 @@
 title: Benutzer und Rollen hinzufügen - Erforderlich
 description: Benutzer und Rollen hinzufügen - Erforderlich
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Benutzer und Rollen hinzufügen - Erforderlich {#add-users-roles}
+# Hinzufügen von Anwendern und Rollen {#add-users-roles}
 
 
 Für viele Funktionen in [!UICONTROL Cloud Manager] sind spezielle Berechtigungen erforderlich. Beispielsweise dürfen nur bestimmte Anwender die KPIs (Key Performance Indicators) für ein Programm festlegen. Diese Berechtigungen werden logisch in Rollen gruppiert.
