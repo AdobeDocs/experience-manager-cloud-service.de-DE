@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
 * Bei Bereitstellungstypen von Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt.
 
-   |  | AEM-Sites als Cloud-Dienst | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
+   |  | AEM Sites as a Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
    |---|---|---|---|
-   | **AEM Assets als Cloud-Dienst** | Unterstützt | Unterstützt | Unterstützt |
+   | **AEM Assets as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets auf AMS** | Nicht unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets lokal** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
@@ -37,14 +37,10 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
 
-* Microsoft Word (DOC und DOCX)
-* Microsoft Excel (XLS und XLSX)
-* Microsoft PowerPoint (PPT und PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Nur Text (TXT)
-* Webseiten (HTML)
+Folgende Formate werden unterstützt:
+
+* **Bildformate**: Die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützten Bildformate werden unterstützt. Dynamische Medienkomponenten werden nicht unterstützt.
+* **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](file-format-support.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
