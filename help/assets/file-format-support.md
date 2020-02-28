@@ -3,26 +3,18 @@ title: Dateiformate und MIME-Typen, die von Experience Manager Assets als Cloud-
 description: Dateiformate und MIME-Typen, die von Experience Manager Assets als Cloud-Dienst unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager als Cloud-Dienst unterstützt grundlegende Inhaltsverwaltungsfunktionen - Speicherung, Online-Verwaltung von Metadaten, Versionierung, Hochladen und Herunterladen usw. - für jede Binärdatei unabhängig vom Format. Darüber hinaus bietet es erweiterte Unterstützung für häufig verwendete Dateiformate wie Bilder, Adobe-proprietäre Formate, Dokumente und Videos, um Vorschauen und Darstellungen zu generieren und Metadaten und Text für die Indexierung im Volltext zu extrahieren. Diese erweiterte Unterstützung wird mithilfe von [Asset-Mikrodiensten](asset-microservices-configure-and-use.md)bereitgestellt.
+Adobe Experience Manager als Cloud-Dienst unterstützt grundlegende Inhaltsverwaltungsfunktionen — Speicherung, Online-Verwaltung von Metadaten, Versionierung, Upload und Download usw. — für jede Binärdatei, unabhängig vom Format. Adobe Experience Manager Assets unterstützt eine breite Palette von Dateiformaten und jede Produktfunktion unterstützt unterschiedliche Formate.
 
-Zu den wichtigsten Dateiformaten mit erweiterter Unterstützung zählen:
+Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Mikrodiensten](asset-microservices-configure-and-use.md)bereitgestellt.
 
-* Wichtige [Adobe-Dateiformate](#adobe-formats) , die von Adobe-Anwendungen und -Diensten produziert werden, einschließlich Adobe Fotoshop, InDesign, Illustrator, XD, Dimension und Acrobat/PDF.
-* Wichtige [Bildformate](#image-formats)
-* [Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras, darunter Canon, Nikon, Fujifilm, Olympus und andere Hersteller (mit Adobe Camera Raw)
-* Allgemeine [Dokumentformate](#document-formats), einschließlich der Formate [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) und [Open Document](#opendocument-formats)
-* Umfassendes Spektrum an [Video](#video-formats) - und [Audioformaten](#audio-formats)
-
-## Legende für detaillierte Support-Informationen {#legend-for-detailed-support-information}
-
-In der folgenden Legende wird die Unterstützung für eine Funktion beschrieben:
+In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 | Unterstützungsebene | Beschreibung |
 | ------------------------------------------------------------ | --------------------------- |
@@ -30,7 +22,17 @@ In der folgenden Legende wird die Unterstützung für eine Funktion beschrieben:
 | * | Siehe Bemerkungen unter der Tabelle |
 | - | Nicht zutreffend |
 
-Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
+## Asset-Konvertierung mithilfe von Asset-Mikrodiensten {#asset-microservices-supported-formats}
+
+Hier einige der Highlights:
+
+* Wichtige [Adobe-Dateiformate](#adobe-formats) , die von Adobe-Anwendungen und -Diensten produziert werden, einschließlich Adobe Fotoshop, InDesign, Illustrator, XD, Dimension und Acrobat/PDF.
+* Wichtige [Bilddateiformate](#image-formats).
+* [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras, darunter Canon, Nikon, Fujifilm, Olympus und andere Hersteller (powered by Adobe Camera Raw).
+* Allgemeine [Dokumentformate](#document-formats), einschließlich der Formate [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) und [Open Document](#opendocument-formats) .
+* Umfassendes Spektrum an [Video](#video-formats)- und [Audio](#audio-formats) formaten.
+
+Die Spalten der folgenden Tabellen enthalten folgende Informationen:
 
 | Spalte | Beschreibung |
 | ------------ | --------------------------------------------------------------- |
@@ -42,11 +44,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | TXT | Extrahieren von Text aus einem Dokument zur Indizierung |
 | Breite/Höhe | Unterstützung für das Definieren der Breite und Höhe einer Darstellung (Pixel) |
 
-<!-- Adding this checkmark icon ✓ does not look good in table. The icon's shade and size has to be toned down for good readability and less clutter.
-@gklebus: I suggest using a checkmark character, either U+2713 ✓ CHECK MARK or U+2714 ✔ HEAVY CHECK MARK
--->
-
-## Adobe-Formate {#adobe-formats}
+### Adobe-Formate {#adobe-formats}
 
 | Dateiformat | GIF | JPEG | PNG | TXT | XMP | Breite/Höhe |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
@@ -64,7 +62,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 
 \* Bei INDD (InDesign-Dateien) wird die Größe der Darstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in InDesign (**[!UICONTROL Voreinstellungen > Dateihandhabung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um eine größere Darstellung einzubetten.
 
-## Bildformate {#image-formats}
+### Bildformate {#image-formats}
 
 | Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -76,8 +74,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-
-## Camera RAW-Formate {#camera-raw-formats}
+### Camera RAW-Formate {#camera-raw-formats}
 
 | Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -109,7 +106,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Dokumentformate {#document-formats}
+### Dokumentformate {#document-formats}
 
 | Dateiformat | TXT | XMP |
 | ----------- | --- | --- |
@@ -120,7 +117,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | TEXT | ✓ | - |
 | XML | ✓ | - |
 
-## Microsoft Office-Formate {#microsoft-office-formats}
+### Microsoft Office-Formate {#microsoft-office-formats}
 
 | Dateiformat | GIF | JPEG | PNG | TEXT | Breite/Höhe |
 | ----------- | --- | ---- | --- | ---- | ------------ |
@@ -128,7 +125,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## OpenDocument-Formate {#opendocument-formats}
+### OpenDocument-Formate {#opendocument-formats}
 
 | Dateiformat | GIF | JPEG | PNG | TEXT | Höhe |
 | ----------- | --- | ---- | --- | ---- | ------ |
@@ -139,7 +136,7 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Videoformate {#video-formats}
+### Videoformate {#video-formats}
 
 | Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -166,15 +163,27 @@ Die Spalten der Unterstützungstabellen enthalten die folgenden Informationen:
 | WEBM | ✓ | ✓ | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Audioformate {#audio-formats}
+### Audioformate {#audio-formats}
 
 Assets als Cloud-Dienst bietet XMP-Unterstützung für die folgenden Audioformate: AIF, ASF, M4A, MP3, WAV und WMA.
 
-<!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+## Unterstützte Dokumentformate {#doc-formats}
 
-Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
-https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
--->
+Die folgenden Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
+
+| Dateiformat | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+|---|---|
+| DOC | ✓ |
+| DOCX | ✓ |
+| ODT | ✓ |
+| PDF | ✓ |
+| HTML | ✓ |
+| RTF | ✓ |
+| TXT | ✓ |
+| XLS | ✓ |
+| XLSX | ✓ |
+| PPT | ✓ |
+| PPTX | ✓ |
 
 >[!MORELIKETHIS]
 >
