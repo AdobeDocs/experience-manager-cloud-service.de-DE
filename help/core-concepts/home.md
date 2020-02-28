@@ -1,34 +1,34 @@
 ---
-title: Grundlegende Konzepte von Adobe Experience Manager als Cloud Service
-description: Grundlegende Konzepte von Adobe Experience Manager als Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
+title: Grundlegende Konzepte von Adobe Experience Manager as a Cloud Service
+description: Grundlegende Konzepte von Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: ht
 source-git-commit: b7f0896adbfad31597ea8224f1daaa12a2f40180
 
 ---
 
 
-# Grundlegende Konzepte von Experience Manager als Cloud Service {#aem-core-concepts-guide}
+# Grundlegende Konzepte von Experience Manager as a Cloud Service {#aem-core-concepts-guide}
 
-Auf dieser Seite finden Sie Selbsthilfe-Ressourcen, die die grundlegenden Konzepte von Experience Manager als Cloud Service vorstellen.
+Auf dieser Seite finden Sie Selbsthilfe-Ressourcen, die die grundlegenden Konzepte von Experience Manager as a Cloud Service vorstellen.
 
 ## Wichtige Artikel zu den grundlegenden Konzepten {#key-articles}
 
-* [Architektur von AEM als Cloud Service](architecture.md)
+* [Architektur von AEM as a Cloud Service](architecture.md)
 
-## Handbücher für Experience Manager als Cloud Service {#aem-guides}
+## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [Experience Manager als Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager als Cloud Service. |
-| [Überblick](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager als Cloud Service, einschließlich Einführung, Terminologie usw. |
-| [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager als Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
-| [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager als Cloud Service. |
-| [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager als Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
-| [Sites-Benutzerhandbuch](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites als Cloud Service verwalten. |
-| [Assets-Benutzerhandbuch](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets als Cloud Service verwalten. |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager als Cloud Service anpassen können, einschließlich Themen zur Implementierung von Entwicklungsumgebungen. |
-| [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Lösungen in Experience Manager als Cloud Service integrieren. |
-| [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager als Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
+| [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
+| [Überblick](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
+| [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
+| [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
+| [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
+| [Sites-Benutzerhandbuch](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten. |
+| [Assets-Benutzerhandbuch](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zur Implementierung von Entwicklungsumgebungen. |
+| [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Lösungen in Experience Manager as a Cloud Service integrieren. |
+| [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
@@ -37,6 +37,6 @@ Auf dieser Seite finden Sie Selbsthilfe-Ressourcen, die die grundlegenden Konzep
 * [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutorials zu Adobe Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
