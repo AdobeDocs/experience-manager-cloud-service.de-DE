@@ -3,7 +3,7 @@ title: Erkennen, wie Asset-Mikrodienste Ihre digitalen Assets in der Cloud verar
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Asset-Verarbeitungsmikrodiensten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung v
 * Verbesserte Widerstandsfähigkeit bei der Verarbeitung von Assets. Potenzielle Probleme beim Umgang mit atypischen Dateien, wie beschädigte Dateien oder extrem große Dateien, wirken sich nicht mehr auf die Leistung der Bereitstellung aus.
 * Vereinfachte Konfiguration der Asset-Verarbeitung für Administratoren.
 * Das Setup für die Verarbeitung von Assets wird von Adobe verwaltet und verwaltet, um die bekannteste Konfiguration für die Verarbeitung von Darstellungen, Metadaten und Textextraktionen für verschiedene Dateitypen bereitzustellen.
-* Native Adobe-Dateiverarbeitungsdienste werden gegebenenfalls verwendet, um eine hohe Originaltreue und eine effiziente Verarbeitung der proprietären Formate von Adobe zu gewährleisten.
+* Native Adobe-Dateiverarbeitungsdienste werden gegebenenfalls verwendet, um eine hohe Originaltreue und [effiziente Verarbeitung von Adobe-proprietären Formaten](file-format-support.md)zu gewährleisten.
 * Möglichkeit zur Konfiguration des Arbeitsablaufs für die Nachbearbeitung, um benutzerspezifische Aktionen und Integrationen hinzuzufügen.
 
 Mithilfe von Asset-Mikrodiensten können Sie die Notwendigkeit von Rendering-Tools von Drittanbietern (wie ImageMagick) vermeiden und die Konfiguration des Systems vereinfachen. Gleichzeitig erhalten Sie sofort verfügbare Funktionen für gängige Dateitypen.
@@ -82,7 +82,7 @@ Adobe Experience Manager kann so konfiguriert werden, dass die Arbeitsabläufe n
 
 >[!MORELIKETHIS]
 >
->* [Erste Schritte mit Asset Microservices](asset-microservices-configure-and-use.md)
+>* [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
 >* [Unterstützte Dateiformate](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [AEM Desktop App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
