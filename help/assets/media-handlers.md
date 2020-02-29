@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Media Handlers und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM bietet verschiedene Standard-Workflows zur Bearbeitung von Assets. To view t
 
 Bereits bestehende Workflows können erweitert und neue Workflows können erstellt werden, um Assets nach spezifischen Anforderungen zu bearbeiten.
 
-The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
+Das folgende Beispiel zeigt, wie der Workflow für die **[!UICONTROL AEM Assets-Synchronisierung]** verbessert werden kann, sodass Teil-Assets für alle Assets außer PDF-Dokumente generiert werden.
 
 ### Deaktivieren/Aktivieren eines Medien-Handlers {#disabling-enabling-a-media-handler}
 
@@ -151,10 +151,10 @@ Hier eine Beispielvorlage:
 
 Schnittstelle und Klassen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte Mime-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Zum Hinzufügen eines neuen MIME-Typs muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` Klasse:
-   * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extrahierung von Teilassets.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse:
+   * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extraktion von Teil-Assets.
    * Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die com.day.cq.dam.core.AbstractAssetHandler-Klasse.
    * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernehmen und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf true setzen.
 
@@ -162,7 +162,7 @@ Die folgenden Methoden müssen implementiert werden:
 
 * `extractMetadata()`: Diese Methode extrahiert alle verfügbaren Metadaten.
 * `getThumbnailImage()`: Diese Methode erstellt ein Miniaturbild aus dem übergebenen Asset.
-* `getMimeTypes()`: Diese Methode gibt den bzw. die Asset-Mime-Typen zurück.
+* `getMimeTypes()`: Diese Methode gibt den Asset-MIME-Typ(en) zurück.
 
 Hier eine Beispielvorlage:
 
@@ -170,7 +170,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 Schnittstelle und Klassen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte Mime-Typen hinzufügt. Wenn ein neuer MIME-Typ hinzugefügt werden soll, muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Zum Hinzufügen eines neuen MIME-Typs muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extrahierung von Teilassets.
 
@@ -391,7 +391,7 @@ Die folgenden Konvertierungen können automatisch ausgeführt und in AEM Assets 
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filtert die Datei nach bestimmten MIME-Typen, falls angegeben.
+* Filtert die Datei nach bestimmten MIME-Typen, sofern angegeben.
 * Erstellt ein temporäres Verzeichnis auf dem Datenträger, der den AEM-Server hostet. 
 * Streamt die Originaldatei in den temporären Ordner.
 * Führt den Befehl aus, der über die Argumente des Schritts definiert ist. Der Befehl wird im temporären Ordner mit den Berechtigungen des Benutzers ausgeführt, der AEM ausführt.
@@ -421,7 +421,7 @@ Installieren Sie ImageMagick zunächst auf dem Datenträger, der den AEM-Server 
 
    Ein gespiegeltes Bild wird dem Verzeichnis hinzugefügt.
 
-Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
+Fügen Sie dem Workflow für **[!UICONTROL DAM Update Asset]** dann den Befehlszeilen-Prozessschritt hinzu:
 
 1. Go to the **[!UICONTROL Workflow]** console.
 1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
@@ -441,7 +441,7 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam`hinzu
 
 #### Konfiguration des Prozessschritts CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-In diesem Abschnitt wird beschrieben, wie die **Prozess-Argumente** des **CommandLineProcess** festgelegt werden.
+In diesem Abschnitt wird beschrieben, wie Sie die **Prozessargumente** von **CommandLineProcess** festlegen.
 
 The values of the **Process Arguments** must be separated by a comma and must not start with a whitespace.
 
@@ -453,7 +453,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat.</p> <p>Es können mehrere Mime-Typen definiert werden.</p> </td>
+   <td><p>Optionales Argument. Der Prozess wird angewendet, wenn der Asset denselben MIME-Typ wie der des Arguments hat.</p> <p>Es können mehrere Mime-Typen definiert werden.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilentool ab.</p> <p>Es kann nur ein Befehl definiert werden.</p> <p>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br/></p> <p><code>${filename}</code>: Name der Eingabedatei, z. B. original.jpg<br/><code>${file}</code>: der vollständige Pfadname der Eingabedatei, z. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: Verzeichnis der Eingabedatei, z. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: Name der Eingabedatei ohne Erweiterung, z. B. Original<br/><code>${extension}</code>: Erweiterung der Eingabedatei, z. B. jpg<br/></p></td>
+   <td><p>Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilentool ab.</p> <p>Es kann nur ein Befehl definiert werden.</p> <p>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br/></p> <p><code>${filename}</code>: Name der Eingabedatei, z. B. "original.jpg"<br/><code>${file}</code>: vollständiger Pfadname der Eingabedatei, z. B. "/tmp/cqdam0816.tmp/original.jpg"<br/><code>${directory}</code>: Verzeichnis der Eingabedatei, z. B. "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: Name der Eingabedatei ohne Erweiterung, z. B. Original<br/><code>${extension}</code>: Erweiterung der Eingabedatei, z. B. JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
