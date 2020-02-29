@@ -1,14 +1,14 @@
 ---
-title: Einführung in Assets als Cloud-Dienst
+title: Einführung in Assets as a Cloud Service
 description: Neue Funktionen in Assets als Cloud-Dienst.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Einführung in Assets als Cloud-Dienst {#assets-cloud-service-introduction}
+# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ Die gleichzeitige Erfassung einer großen Anzahl von Assets oder komplexen Asset
 
 Unternehmen benötigen Unterstützung für eine Vielzahl von Dateiformaten und Inhaltsauflösungen für Anwendungen in mehreren Geräten, unterschiedlichen Geografien und mehreren Sprachen. Asset-Verarbeitungs- und Speicheranforderungen erfordern Ressourcen und Funktionen, die eine herkömmliche Lösung überfordern können. Manchmal führen technische Beschränkungen der Verarbeitung von Vermögenswerten nicht zu den gewünschten Ergebnissen und zu anderen Zeiten behindern die Speicherkosten die Gewinnmargen.
 
-Zunächst sollten Sie die [Vorteile eines Cloud-nativen Angebots](#solution-benefits)verstehen. Sehen Sie sich die bemerkenswerten [Änderungen an AEM als Cloud-Dienst](/help/release-notes/aem-cloud-changes.md) an, die sich auch auf Assets auswirken, und folgen Sie den bemerkenswerten [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
+Zunächst sollten Sie die [Vorteile eines Cloud-nativen Angebots](#solution-benefits)verstehen. Sehen Sie sich die bemerkenswerten [Änderungen an AEM als Cloud-Dienst](/help/release-notes/aem-cloud-changes.md) an, die sich auch auf Experience Manager Assets auswirken, und folgen Sie den bemerkenswerten [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
 
 Lesen Sie weiter, um die [Details der neuen Asset-Funktionen](#whats-new-assets) und die [bekannten Probleme](/help/release-notes/known-issues.md)zu erfahren. Sehen Sie sich eine Liste der [veralteten oder entfernten Funktionen](/help/release-notes/deprecated-removed-features.md) an, um zu erfahren, was in dieser Version entfernt wurde, und sehen Sie sich diese [Liste der kommenden Funktionen](/help/release-notes/known-issues.md#upcoming-assets-capabilities) an, um zu erfahren, was in naher Zukunft geschieht. Verstehen Sie die AEM-Begriffe schließlich mithilfe dieses [Glossars](/help/overview/terminology.md).
 
