@@ -3,7 +3,7 @@ title: Metadatenschema-Referenz
 description: 'Erfahren Sie mehr über die Standard-Konventionen für das Beschreiben von Asset-Metadaten, darunter Dublin Core, IPTC und weitere Metadatenschemen. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>format</td> 
-   <td>Das Dateiformat, das physische Medium oder die Dimensionen des Assets. AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
+   <td>Das Dateiformat, das physische Medium oder die Dimensionen des Assets. AEM gibt <code>dc:format</code> den MIME-Typ des Assets an.<br /> </td> 
   </tr>
   <tr>
    <td>Kennung</td> 
