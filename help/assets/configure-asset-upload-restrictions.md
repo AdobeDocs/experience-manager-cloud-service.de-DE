@@ -3,7 +3,7 @@ title: Konfigurieren von Einschränkungen beim Hochladen von Assets
 description: Erfahren Sie mehr darüber, wie Sie Adobe Experience Manager (AEM) Assets so konfigurieren können, dass der von den Benutzern hochladbare Typ von Assets (Dateien) eingeschränkt ist.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -17,9 +17,8 @@ Sie können Adobe Experience Manager (AEM) Assets so konfigurieren, dass der von
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. To restrict users to upload files of certain MIME types only, unselect the **[!UICONTROL llow all MIME]** option and specify allowed MIME types in the **[!UICONTROL Allowed Asset MIMEs (regex)]** fields using regular expressions.
+1. Um zu beschränken, dass Benutzer nur Dateien mit bestimmten MIME-Typen hochladen können, heben Sie die Auswahl der Option **[!UICONTROL Alle MIME zulassen]** auf und geben Sie in den Feldern **[!UICONTROL Zulässige Asset-MIMEs (regex)]** zulässige MIME-Typen mit regulären Ausdrücken an.
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Click/tap **[!UICONTROL Save]** to save the changes. Wenn Sie MIME-Zeichenfolgen für zulässige MIME-Typen angeben, schlägt der Uploadvorgang für alle Assets fehl, deren MIME-Typ nicht den in diesen Feldern konfigurierten MIME-Zeichenfolgen entspricht.
-
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Wenn Sie MIME-Zeichenfolgen für zulässige MIME-Typen angeben, schlägt der Uploadvorgang bei allen Assets mit MIME-Typ fehl, die nicht mit den konfigurierten MIME-Zeichenfolgen in diesen Feldern übereinstimmen.
