@@ -3,7 +3,7 @@ title: Assets-HTTP-API
 description: Erfahren Sie mehr über die Implementierung, Datenmodelle und Funktionen der Assets-HTTP-API. Verwenden Sie die Assets-HTTP-API, um verschiedene Aufgaben rund um Assets auszuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -19,7 +19,7 @@ So greifen Sie auf die API zu:
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-Die API-Antwort ist eine JSON-Datei für einige Mime-Typen und ein Antwortcode für alle Mime-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
+Die API-Antwort ist eine JSON-Datei für einige MIME-Typen und ein Antwortcode für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
 
 Nach der [!UICONTROL Abschaltzeit]sind ein Asset und seine Darstellungen weder über die Assets-Weboberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL On-Zeit] in der Zukunft liegt oder die [!UICONTROL Off-Zeit] in der Vergangenheit liegt.
 
