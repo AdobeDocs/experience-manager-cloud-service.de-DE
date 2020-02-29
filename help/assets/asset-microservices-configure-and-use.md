@@ -3,12 +3,12 @@ title: Asset-Mikrodienste für die Asset-Verarbeitung konfigurieren und verwende
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Mikrodienste konfigurieren und verwenden, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Erste Schritte mit Asset Microservices {#get-started-using-asset-microservices}
+# Erste Schritte mit Asset-Microservices {#get-started-using-asset-microservices}
 
 <!--
 
@@ -97,9 +97,9 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 #### MIME-Typeinschlussregeln {#mime-type-inclusion-rules}
 
-Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Darstellungsspezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird diese spezifische Darstellung nicht für das Asset generiert (&quot;Blacklisting&quot;).
+Wenn ein Asset mit einem bestimmten MIME-Typ verarbeitet wird, wird der MIME-Typ zunächst mit dem ausgeschlossenen MIME-Typwert für die Darstellungsspezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird diese spezifische Darstellung nicht für das Asset generiert (&quot;Blacklisting&quot;).
 
-Andernfalls wird der Mime-Typ mit dem eingeschlossenen Mime-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (&quot;Whitelisting&quot;).
+Andernfalls wird der MIME-Typ mit dem eingeschlossenen MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (&quot;Whitelisting&quot;).
 
 #### Spezielle FPO-Darstellung {#special-fpo-rendition}
 
@@ -114,7 +114,7 @@ Nachdem zusätzliche Verarbeitungsprofile erstellt wurden, müssen sie auf besti
 Es gibt zwei Möglichkeiten, Verarbeitungsprofile auf Ordner anzuwenden:
 
 * Administratoren können unter **[!UICONTROL Extras > Assets > Verarbeitungsprofile]** eine Definition des Verarbeitungsprofils auswählen und die Aktion Profile auf Ordner **[!UICONTROL anwenden]** verwenden. Dadurch wird ein Inhaltsbrowser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
-* Die Benutzer können einen Ordner in der Benutzeroberfläche &quot;Assets&quot;auswählen, die Aktion &quot; **[!UICONTROL Eigenschaften]** &quot;zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte &quot; **[!UICONTROL Verarbeitungsprofile]** &quot;klicken und in der Dropdown-Liste das richtige Verarbeitungsprofil für diesen Ordner auswählen. Die Auswahl wird bei der Aktion **[!UICONTROL Speichern und Schließen]** gespeichert.
+* Benutzer können einen Ordner in der Benutzeroberfläche „Assets“ auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Verarbeitungsprofile]** klicken und in der Dropdownliste das richtige Verarbeitungsprofil für diesen Ordner auswählen. Die Auswahl wird bei der Aktion **[!UICONTROL Speichern und Schließen]** gespeichert.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle n
 >
 >Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keine Anwendung erfolgt, wird sie in der Ordnerstruktur angezeigt, bis ein Verarbeitungsprofil angewendet wurde, und verwendet es für das Asset. Das bedeutet, dass ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, für die gesamte Struktur funktioniert, aber mit einem anderen Profil, das auf einen Unterordner angewendet wird, überschrieben werden kann.
 
-Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden hat, indem sie ein neu hochgeladenes Asset öffnen, für das die Verarbeitung abgeschlossen ist, die Asset-Vorschau öffnen und auf die **[!UICONTROL Ausgabeansicht]** der linken Leiste klicken. Die spezifischen Darstellungen im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Inklusionsregeln des Mime-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
+Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden hat, indem sie ein neu hochgeladenes Asset öffnen, für das die Verarbeitung abgeschlossen ist, die Asset-Vorschau öffnen und auf die **[!UICONTROL Ausgabeansicht]** der linken Leiste klicken. Die spezifischen Darstellungen im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den MIME-Einschlussregeln übereinstimmt, sollten sichtbar und zugänglich sein.
 
 ![Zusätzliche Darstellungen](assets/renditions-additional-renditions.png)*Abbildung: Beispiel zweier zusätzlicher Darstellungen, die von einem Verarbeitungsprofil generiert wurden, das auf den übergeordneten Ordner angewendet wurde*
 
