@@ -2,7 +2,7 @@
 title: Rollenbasierte Berechtigungen
 description: Rollenbasierte Berechtigungen
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ Jede Rolle verfügt über bestimmte Berechtigungen, vorkonfigurierte Aufgaben od
 
 | Berechtigung | Beschreibung | Business Owner | Bereitstellungsmanager | Programmmanager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
-| Mandanten erstellen | Neuen Mandanten erstellen |  |  |  |  |
-| Mandanten aktualisieren | Mandanten aktualisieren. |  |  |  |  |
 | Programm hinzufügen | Neues Programm hinzufügen. | x |  |  |  |
 | Umgebung erstellen | Erstellen Sie Prod+Stage, Dev, Playground-Umgebungen. | x | x |  |  |
-| Umgebungsvariablen konfigurieren | Konfigurieren Sie Umgebungsvariablen und -geheimnisse. |  | x |  | x |
-| Benutzerdefinierten Domänennamen hinzufügen oder entfernen, SSL-Zertifikat hochladen oder aktualisieren | Benutzerdefinierten Domänennamen hinzufügen/entfernen, SSL-Zertifikat hochladen/aktualisieren | x | x |  |  |
 | Umgebung aktualisieren | Aktualisieren Sie Prod+Stage, Dev, Playground-Umgebungen. | x | x |  |  |
 | Umgebung löschen | Löschen Sie Umgebungen ohne Prod, Dev und Playground. | x | x |  |  |
 | Umgebung löschen | Löschen Sie Prod+Stage-Umgebung. |  |  |  |  |
