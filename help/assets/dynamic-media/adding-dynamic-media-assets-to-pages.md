@@ -2,16 +2,16 @@
 title: Hinzufügen von Assets mit dynamischen Medien zu Seiten
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # Hinzufügen von Assets mit dynamischen Medien zu Seiten{#adding-dynamic-media-assets-to-pages}
 
-Wenn Sie den Assets auf Ihren Websites Dynamic Media-Funktionen hinzufügen möchten, können Sie die Komponente für **dynamische Medien**,**interaktive Medien**, **Panoramamedien** oder **360-Grad-Videomedien** direkt auf der Seite hinzufügen. Wechseln Sie dazu in den Layoutmodus und aktivieren Sie die Dynamic Media-Komponenten. Sie können diese Komponenten zu der Seite und Assets zur jeweiligen Komponente hinzufügen. Die smarten Dynamic Media-Komponenten können unterscheiden, ob Sie ein Bild oder ein Video hinzufügen, und ändern die verfügbaren Konfigurationsoptionen entsprechend.
+Um die Funktion für dynamische Medien zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente **Dynamische Medien**, **Interaktive Medien**, **Panoramamedien** oder **Video-360-Medien** direkt auf der Seite hinzufügen. Wechseln Sie dazu in den Layoutmodus und aktivieren Sie die Komponenten für dynamische Medien. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. Die Komponenten für dynamische Medien sind smart – sie erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Konfigurationsoptionen ändern sich entsprechend.
 
-Wenn Sie AEM als WCM verwenden, fügen Sie Dynamische Medien-Assets direkt zur Seite hinzu. [Verknüpfen](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) oder [integrieren](/help/assets/dynamic-media/embed-code.md) Sie bei Verwendung eines Drittanbieters für Ihren WCM Ihre Assets. Für eine dynamische Drittanbieter-Website finden Sie unter [Übermitteln von optimierten Bildern an eine dynamische Website](/help/assets/dynamic-media/responsive-site.md) entsprechende Informationen.
+Wenn Sie AEM als WCM verwenden, fügen Sie Assets für dynamische Medien direkt zur Seite hinzu. Wenn Sie einen Drittanbieter für Ihr WCM verwenden, [verknüpfen](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) Sie Ihre Assets oder [betten](/help/assets/dynamic-media/embed-code.md) Sie sie ein. Eine responsive Website von Drittanbietern finden Sie unter [Bereitstellen optimierter Bilder für eine responsive Site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
 
 Zum Lokalisieren von Komponenten vom Typ „Dynamische Medien“ stehen Ihnen zwei Möglichkeiten zur Verfügung:
 
-* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
+* Öffnen Sie auf einer Webseite in Sites **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -70,7 +70,7 @@ Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
-* **** Dynamische Medien: Assets wie Bilder, Videos, E-Kataloge und Rotationssets. 
+* **[!UICONTROL Dynamische Medien]**: Wird für Assets wie Bilder, Videos, E-Kataloge und Rotationssets verwendet.
 * **[!UICONTROL Interaktive Medien]** : Verwenden Sie diese Option für alle interaktiven Assets wie interaktive Videos, interaktive Bilder oder Karussellsets.
 * **[!UICONTROL Panoramaaufnahme]** - Verwendung für Panoramabilder oder Panoramabilder mit VR.
 * **[!UICONTROL Video 360-Medien]** - Wird für Video-Assets mit 360 und 360 VR verwendet.
@@ -113,7 +113,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 >[!NOTE]
 >
->Die Bildkomponente für dynamische Medien ist standardmäßig adaptiv. Wenn sie eine feste Größe aufweisen soll, müssen Sie dies in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** festlegen.
+>Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte **[!UICONTROL Erweitert]** in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe Verwalten von Viewer-Vorgaben. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -192,7 +192,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 >[!NOTE]
 >
->Die Bildkomponente für dynamische Medien ist standardmäßig adaptiv. Wenn sie eine feste Größe aufweisen soll, müssen Sie dies in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** festlegen.
+>Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte **[!UICONTROL Erweitert]** in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter Bildvorgaben und in der Referenz zum Image-Serving-Befehl beschrieben.
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Seitenverhältnis aktivieren Übereinstimmung]**- Entspricht dem Seitenverhältnis des Originalbilds, wenn Sie eine Darstellung für intelligente Zuschnitte auswählen.
+* **[!UICONTROL Seitenverhältnis]** aktivieren: Wählen Sie diese Option, um eine intelligente Schnittdarstellung mit einem Seitenverhältnis auszuwählen, das dem Seitenverhältnis des Originalbilds am besten entspricht.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Titel des Smart-Freistellungsbilds.
 
@@ -261,7 +261,7 @@ Die Panoramamedienkomponente bezieht sich auf Kugelpanoramen. Solche Bilder biet
 * Ein Seitenverhältnis von 2:1.
 * Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
+Sowohl das Seitenverhältnis als auch die Keywordkriterien gelten für Panorama-Assets für die Seite mit den Asset-Details und die WCM-Komponente mit den **[!UICONTROL Panoramamedien]**.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 >* Jede Instanz verwendet denselben Asset-Typ.
 >
 >
-Be aware that assigning a different viewer preset to each **[!UICONTROL Panoramic Media]** component on that page is not supported.
+Beachten Sie, dass das Zuweisen einer anderen Viewer-Voreinstellung zu jeder **[!UICONTROL Panoramamedien]**-Komponente auf dieser Seite nicht unterstützt wird.
 >
 >Sie können jedoch dieselbe Viewer-Vorgabe für alle Komponenten für Panoramamedien, die Assets desselben Typs verwenden, auf der Seite verwenden.
 
