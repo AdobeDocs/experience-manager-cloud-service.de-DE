@@ -2,7 +2,7 @@
 title: Rollenbasierte Berechtigungen
 description: Rollenbasierte Berechtigungen
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -26,11 +26,11 @@ Jede Rolle verfügt über bestimmte Berechtigungen, vorkonfigurierte Aufgaben od
 | Programm-Setup | Zugriff erlauben |  | x |  | x |
 | Pipeline-Einrichtung | Einrichten oder Bearbeiten der Pipeline. |  | x |  |  |
 | Pipeline-Ausführung | Starten Sie die Pipeline. | x | x |  |  |
-| Pipeline-Ausführung | Ablehnen/Genehmigen Sie wichtige Fehler in 3 Stufen. | x | x | x |  |
+| Pipeline-Ausführung | Ablehnen/Genehmigen Sie wichtige 3-Stufen-Fehler. | x | x | x |  |
 | Pipeline-Ausführung | Bereitstellen der GoLive-Genehmigung. | x | x | x |  |
 | Pipeline-Ausführung | Planen der Bereitstellung für die Produktion. | x | x | x |  |
 | Pipeline-Ausführung | Produktionskanal fortsetzen. |  |  |  |  |
 | Umgebung verwalten  | Fügen Sie im Bildschirm &quot;Umgebung verwalten&quot;das Segment &quot;Publish-Dispatcher&quot;hinzu. | x | x |  |  |  |
 | Push-Aktualisierung | Starten Sie Push Update Pipeline. |  |  |  |  |
-| Persönliches Zugriffstoken erstellen | Persönliches Zugriffstoken erstellen. |  | x |  | x |
+| Persönliches Zugriffstoken erstellen | Zugriff auf Git. |  | x |  | x |
 
