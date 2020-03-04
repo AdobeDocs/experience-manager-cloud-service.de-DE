@@ -71,7 +71,7 @@ Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 * **[!UICONTROL Dynamische Medien]**: Wird für Assets wie Bilder, Videos, E-Kataloge und Rotationssets verwendet.
-* **[!UICONTROL Interaktive Medien]** : Verwenden Sie diese Option für alle interaktiven Assets wie interaktive Videos, interaktive Bilder oder Karussellsets.
+* **[!UICONTROL Interaktive Medien]** : Verwenden Sie diese Option für alle interaktiven Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets.
 * **[!UICONTROL Panoramaaufnahme]** - Verwendung für Panoramabilder oder Panoramabilder mit VR.
 * **[!UICONTROL Video 360-Medien]** - Wird für Video-Assets mit 360 und 360 VR verwendet.
 
