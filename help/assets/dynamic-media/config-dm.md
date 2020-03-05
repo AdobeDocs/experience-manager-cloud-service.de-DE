@@ -1,13 +1,13 @@
 ---
-title: Konfigurieren des dynamischen Media Cloud-Dienstes
+title: Konfigurieren des Dynamischen Media Cloud-Dienstes
 description: Informationen zum Konfigurieren dynamischer Medien im Adobe Experience Manager Cloud-Dienst.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
 
-# Konfigurieren von dynamischen Medien {#configuring-dynamic-media-scene-mode}
+# Konfigurieren von Dynamic Media {#configuring-dynamic-media-scene-mode}
 
 Wenn Sie Adobe Experience Manager für verschiedene Umgebungen verwenden, z. B. eine für die Entwicklung, eine für die Staging-Umgebung und eine für die Live-Produktion, müssen Sie die dynamischen Media Cloud-Dienste für jede dieser Umgebungen konfigurieren.
 
@@ -50,8 +50,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 So konfigurieren Sie Dynamic Media Cloud Services:
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf der linken Seite des Konsolens unter der Überschrift **[!UICONTROL Tools]** auf **[!UICONTROL Cloud-Dienste > Dynamische Medienkonfiguration]**.
-1. Tippen Sie im Browser für die Dynamic Media-Konfiguration im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf das Ordnersymbol links neben **[!UICONTROL global]**) und dann auf **[!UICONTROL Erstellen]**.
+1. Tippen Sie auf der linken Seite der Konsole unter der Überschrift **[!UICONTROL Werkzeuge]** auf **[!UICONTROL Cloud Services > Konfiguration dynamischer Medien]**.
+1. Tippen Sie auf der Seite „Browser zur Konfiguration dynamischer Medien“ im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf bzw. wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und tippen Sie dann auf **[!UICONTROL Erstellen]**.
 1. Geben Sie auf der Seite für die Dynamic Media-Konfiguration einen Titel, die E-Mail-Adresse des Dynamic Media-Kontos und ein Kennwort ein und wählen Sie Ihre Region. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support, wenn Sie sie nicht erhalten haben.
 1. Klicken Sie auf **[!UICONTROL Mit Dynamic Media verbinden]**.
 
@@ -59,7 +59,7 @@ So konfigurieren Sie Dynamic Media Cloud Services:
    >
    >Nachdem Sie Ihre Bereitstellungs-E-Mail mit Anmeldeinformationen für Dynamic Media erhalten haben, [melden Sie sich](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bei Dynamic Media an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Das Aktualisieren des Kennworts ist wichtig, damit der Dynamic Media-Cloud-Service mit den richtigen Anmeldedaten eingerichtet wird.
 
-1. Wenn die Verbindung erfolgreich hergestellt wurde, stellen Sie Folgendes ein:
+1. Wenn die Verbindung erfolgreich hergestellt wurde, können Sie Folgendes festlegen:
 
    * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Sie können mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen erstellen.
 
@@ -70,18 +70,18 @@ So konfigurieren Sie Dynamic Media Cloud Services:
    * **[!UICONTROL Sicherer Vorschauserver]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschauserver für sichere Ausgaben anzugeben. Das heißt dass AEM sicher auf die Dynamic Media-Remoteausgaben zugreifen und eine Vorschau darauf anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmensserver oder eines speziellen Servers getroffen haben, empfiehlt Adobe Systems, diese Einstellung nicht zu verändern. 
 
-   * **[!UICONTROL Alle Inhalte]** synchronisieren - standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets selektiv aus der Synchronisierung mit dynamischen Medien einschließen oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für dynamische Medien wählen:
+   * **[!UICONTROL Synchronisieren Sie alle Inhalte]** - standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets selektiv aus der Synchronisierung mit dynamischen Medien einschließen oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für dynamische Medien wählen:
 
    * **[!UICONTROL Synchronisierungsmodus für dynamische Medien]**
       * **[!UICONTROL Standardmäßig]** aktiviert - Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig]** deaktiviert - Die Konfiguration wird erst auf einen Ordner angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit dynamischen Medien markiert haben.
-Um einen ausgewählten Ordner für die Synchronisierung mit dynamischen Medien zu markieren, öffnen Sie die Seite &quot;Eigenschaften&quot;Ihres Asset-Ordners. Tippen Sie auf die Registerkarte **[!UICONTROL Details]** und wählen Sie dann aus der Dropdownliste **[!UICONTROL Dynamic Media-Synchronisierungsmodus]** die folgenden drei Optionen aus. Tippen Sie anschließend auf **[!UICONTROL Speichern]**.
+Um einen ausgewählten Ordner für die Synchronisierung mit dynamischen Medien zu markieren, öffnen Sie die Seite „Eigenschaften“ Ihres Asset-Ordners. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL Vererbt]** - Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]** - Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit dynamischen Medien ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]** - Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit dynamischen Medien aus.
    >[!NOTE]
    >
-   >Die Versionsverwaltung in dynamischen Medien wird nicht unterstützt. Außerdem gilt die verzögerte Aktivierung nur, wenn die Option **[!UICONTROL Assets veröffentlichen]** auf der Seite zum Bearbeiten der Dynamic Media-Konfiguration auf **[!UICONTROL Bei Aktivierung]** festgelegt ist, und selbst dann nur, bis das Asset erstmals aktiviert wird.
+   >Versionierung wird in dynamischen Medien nicht unterstützt. Eine verzögerte Aktivierung gilt nur, wenn auf der Seite „Konfiguration dynamischer Medien bearbeiten“ die Option **[!UICONTROL Assets veröffentlichen]** auf **[!UICONTROL Bei Aktivierung]** eingestellt ist, und erst dann, wenn das Asset zum ersten Mal aktiviert wird.
    >
    >
    >Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
@@ -153,7 +153,7 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 
 * **[!UICONTROL Server]** - Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugewiesenen Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Anwendungen zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keine Servernamen, es sei denn, Sie werden ausdrücklich von der AEM-Unterstützung dazu aufgefordert.
 
-* **[!UICONTROL Bilder]** überschreiben: Bei dynamischen Medien ist es nicht möglich, dass zwei Dateien denselben Namen haben. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen geben an, wie Ersatzelemente hochgeladen werden: ob sie das Original ersetzen oder doppelt werden. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen gelten für Assets, die in einen anderen Ordner als das Original hochgeladen werden, oder Assets mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
+* **[!UICONTROL Bilder]** überschreiben: Bei dynamischen Medien ist es nicht möglich, dass zwei Dateien denselben Namen haben. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen geben an, wie Ersatzelemente hochgeladen werden: ob sie das Original ersetzen oder duplizieren. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen gelten für Assets, die in einen anderen Ordner als das Original hochgeladen werden, oder Assets mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
 
 * **[!UICONTROL Im aktuellen Ordner mit demselben Namen/derselben Erweiterung]** des Basisbilds überschreiben - Diese Option ist die strengste Ersatzregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt.
 
@@ -168,7 +168,7 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 
 >[!NOTE]
 >
->Standardmäßig werden 15 Ausgabeformate angezeigt, wenn Sie in der Detailansicht des Assets **[!UICONTROL Ausgabeformate]** wählen, und 15 Viewer-Vorgaben, wenn Sie **[!UICONTROL Betrachter]** wählen. Sie können diesen Grenzwert erhöhen. See [Increasing or decreasing the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing or decreasing the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen oder Verringern der Anzahl angezeigter Bildvoreinstellungen](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) bzw. [Erhöhen oder Verringern der Anzahl angezeigter Viewer-Voreinstellungen](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Konfigurieren des Farbmanagements {#configuring-color-management}
@@ -178,7 +178,7 @@ Beim Farbmanagement für dynamische Medien können Sie die richtigen Assets farb
 So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim Anfordern Bildern aktiviert ist:
 
 1. [Melden Sie sich](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) mit den Anmeldeinformationen, die Sie bei der Bereitstellung erhalten haben, bei Dynamic Media Classic an. Navigate to **[!UICONTROL Setup > Application Setup]**.
-1. Erweitern Sie den Bereich **[!UICONTROL Veröffentlichungseinstellungen]** und wählen Sie **[!UICONTROL Image-Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
+1. Erweitern Sie den Bereich **[!UICONTROL Veröffentlichungssetup]** und wählen Sie **[!UICONTROL Bildserver]**. Richten Sie beim Festlegen der Standardeinstellungen für Veröffentlichungsinstanzen für **[!UICONTROL Veröffentlichungskontext]** die Einstellung **[!UICONTROL Bild-Serving]** ein.
 1. Navigieren Sie zu der Eigenschaft, die Sie ändern müssen, z. B. einer Eigenschaft im Bereich **[!UICONTROL Farbverwaltungsattribute.]**
 
    Sie können die folgenden Farbkorrektureigenschaften festlegen:
@@ -190,7 +190,7 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
-For example, you could set the **[!UICONTROL RGB Default Color Space]** to *sRGB*, and **[!UICONTROL CMYK Default Color Space]** to *WebCoated*.
+Sie können beispielsweise den **[!UICONTROL RGB-Standardfarbraum]** auf *sRGB* und den **[!UICONTROL CMYK-Standardfarbraum]** auf *WebCoated* setzen.
 
 Dies hat folgende Auswirkungen:
 
@@ -236,7 +236,7 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
 #### Hinzufügen benutzerdefinierter MIME-Typen für nicht unterstützte Formate {#adding-custom-mime-types-for-unsupported-formats}
 
-Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in AEM Assets hinzufügen. Um sicherzustellen, dass keine neuen Knoten, die Sie in CRXDE Lite hinzufügen, von AEM gelöscht werden, müssen Sie sicherstellen, dass der MIME-Typ verschoben wird, bevor `image_` und der aktivierte Wert auf **[!UICONTROL false]** eingestellt ist.
+Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in AEM Assets hinzufügen. Um sicherzustellen, dass keine neuen Knoten, die Sie in CRXDE Lite hinzufügen, von AEM gelöscht werden, müssen Sie sicherstellen, dass der MIME-Typ vor `image_` verschoben wird und der aktivierte Wert auf **[!UICONTROL false]** eingestellt ist.
 
 **So fügen Sie benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzu**
 
@@ -248,11 +248,11 @@ Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in AE
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Führen Sie auf der Seite einen Bildlauf nach unten zum Namen *Adobe CQ Scene7 Asset MIME-Typ Service* durch, wie im folgenden Screenshot gezeigt. Tippen Sie rechts neben dem Namen auf die Option Konfigurationswerte **[!UICONTROL bearbeiten]** (Stiftsymbol).
+1. Blättern Sie auf der Seite nach unten zum Namen *Adobe CQ Scene7 Asset MIME-Typ Service*, wie im folgenden Screenshot gezeigt. Tippen Sie rechts neben dem Namen auf die Option **[!UICONTROL Konfigurationswerte bearbeiten]** (Stiftsymbol).
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. Klicken Sie auf der Seite &quot; **Adobe CQ Scene7 Asset MIME-Typ Service** &quot;auf ein Pluszeichen &lt;+>. Die Position in der Tabelle, an der Sie auf das Pluszeichen klicken, um den neuen Mime-Typ hinzuzufügen, ist trivial.
+1. Klicken Sie auf der Seite &quot; **Adobe CQ Scene7 Asset MIME-Typ Service** &quot;auf ein beliebiges Pluszeichen &lt;+>. Die Position in der Tabelle, an der Sie auf das Pluszeichen klicken, um den neuen Mime-Typ hinzuzufügen, ist trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
@@ -279,7 +279,7 @@ Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in AE
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Wenn der Mime-Typ `image_vnd.dwg` noch ausgewählt ist, doppelklicken Sie auf der Registerkarte &quot; **[!UICONTROL Eigenschaften]** &quot;in der **[!UICONTROL aktivierten]** Zeile unter der Spaltenüberschrift &quot; **[!UICONTROL Wert]** &quot;auf den Wert, um die Dropdownliste &quot; **[!UICONTROL Wert]** &quot;zu öffnen.
+1. Wenn der Mime-Typ `image_vnd.dwg` noch ausgewählt ist, klicken Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** in der **[!UICONTROL aktivierten]** Zeile unter der Spaltenüberschrift **[!UICONTROL Wert]** doppelt auf den Wert, um die Dropdownliste **[!UICONTROL Wert]** zu öffnen.
 1. Geben Sie `false` in das Feld ein (oder wählen Sie **[!UICONTROL false]** aus der Dropdownliste).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -311,7 +311,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
    Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
 1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming]**.
-1. Wählen Sie **[!UICONTROL Formular anzeigen]** oder **[!UICONTROL Code anzeigen]**, um die gewünschte Ansicht festzulegen, und geben Sie Informationen zu den einzelnen Elementen ein.
+1. Wählen Sie **[!UICONTROL Formular anzeigen]** oder **[!UICONTROL Code anzeigen]**, um anzugeben, wie Sie die Informationen zu den einzelnen Elementen anzeigen und eingeben möchten.
 
    You can select the **[!UICONTROL View Code]** check box to view the regular expression value building alongside your form selections. Sie können diese Werte nach Bedarf eingeben oder ändern. Dies hilft Ihnen bei der Definition der Elemente der Benennungsdefinition, falls Sie aus irgendeinem Grund durch die Formularansicht eingeschränkt werden. Falls Ihre Werte in der Formularansicht nicht analysiert werden können, werden die Formularfelder inaktiv.
 
@@ -390,9 +390,9 @@ Mit diesen Informationen können Sie Ihr Stapelsatztyp-Rezept wie folgt erstelle
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-Die Gruppierung für den freigegebenen Assetnamensteil des Rotationssets wird dem Feld **Übereinstimmung** hinzugefügt (wie hervorgehoben). Der variable Teil des Asset-Namens, der die Zeile und die Spalte enthält, wird den Feldern **Zeile** bzw. **Spalte** hinzugefügt.
+Die Gruppierung für den Teil des gemeinsamen Asset-Namens des Rotationssets wird dem Feld **Übereinstimmung** hinzugefügt (wie hervorgehoben). Der variable Teil des Asset-Namens, der die Zeile und Spalte enthält, wird den Feldern **Zeile** bzw. **Spalte** hinzugefügt.
 
-Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den Namen des 2D-Rotationsset-Rezepts, der unter **Stapelsatzvorlagen** im Dialogfeld **Upload-Auftragsoptionen** aufgeführt ist.
+Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den Namen des 2D-Rotationssets-Rezepts, das unter **Batchset-Voreinstellungen** im Dialogfeld **Upload-Auftragsoptionen** aufgeführt ist.
 
 **So erstellen Sie eine Stapelsatzvorgabe für die automatische Erstellung eines 2D-Rotationssets**
 
@@ -406,10 +406,10 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
 1. Klicken Sie im Bereich „Vorgabenliste“ auf **[!UICONTROL Hinzufügen]**, um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
 1. Geben Sie im Bereich „Details“ im Feld „Vorgabenname“ einen Namen für die Vorgabe ein.
-1. Wählen Sie im Dropdownmenü „Stapelsatztyp“ die Option **[!UICONTROL Asset-Set]** aus.
+1. Wählen Sie im Dropdownmenü „Batch-Settyp“ die Option **[!UICONTROL Asset-Set]**.
 1. Wählen Sie in der Dropdownliste „Untertyp“ die Option **[!UICONTROL Multiachsen-Rotationsset]** aus.
 1. Erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und klicken Sie in der Dropdownliste „Dateibenennung“ auf **[!UICONTROL Benutzerdefiniert]**.
-1. Verwenden Sie die Attribute **[!UICONTROL Übereinstimmung]** und optional **[!UICONTROL Basisname]**, um einen regulären Ausdruck für die Benennung der Bild-Assets zu definieren, aus denen die Gruppierung besteht.
+1. Verwenden Sie die Attribute **[!UICONTROL Übereinstimmung]** und optional **[!UICONTROL Basisname]**, um einen regulären Ausdruck für die Benennung von Bild-Assets zu definieren, aus denen die Gruppierung besteht.
 
    Ein regulärer Ausdruck für eine genaue Übereinstimmung könnte z. B. wie folgt aussehen:
 
