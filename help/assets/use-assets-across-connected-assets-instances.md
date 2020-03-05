@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
+source-git-commit: 1bf3f14b5ef1f971997ec8b19ea7bb300dbaaf24
 
 ---
 
@@ -30,12 +30,12 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
    |  | AEM Sites as a Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
-   | **AEM 6.5 Assets auf AMS** | Nicht unterstützt | Unterstützt | Unterstützt |
+   | **AEM 6.5 Assets auf AMS** | Unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets lokal** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
+Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiten-Editor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
 
 * **Bildformate**: Die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützten Bildformate werden unterstützt. Dynamische Medienkomponenten werden nicht unterstützt.
 * **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](file-format-support.md#supported-document-formats).
@@ -165,7 +165,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Alle Sites-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Bereitstellung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
-* Es ist nicht möglich, ein Remote-Asset als Miniaturansicht für eine Webseite auf der Registerkarte [!UICONTROL Miniaturansicht] in den [!UICONTROL Seiteneigenschaften] zu verwenden, indem Sie auf Bild [!UICONTROL auswählen]klicken.
+* Es ist nicht möglich, ein Remote-Asset als Miniaturansicht für eine Webseite auf der Registerkarte &quot; [!UICONTROL Miniaturansicht] &quot;in den [!UICONTROL Seiteneigenschaften] zu verwenden, indem Sie auf Bild [!UICONTROL auswählen]klicken.
 
 **Einrichten und Lizenzieren**
 
