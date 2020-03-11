@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: 'Inhaltssuche und -indizierung '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ## Änderungen in AEM als Cloud-Dienst {#changes-in-aem-as-a-cloud-service}
 
-Mit AEM als Cloud-Dienst verschiebt Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
+Mit AEM als Cloud-Dienst verlagert Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
 
 Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und früheren Versionen:
 
@@ -21,7 +21,7 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. In der Regel werden Indexänderungen vor der Produktion eingeleitet, um Qualitätssicherungen in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und keine Auswirkungen auf die Business KPIs in der Produktion zu haben.
 
-1. Alle damit zusammenhängenden Metriken einschließlich Suchleistung in der Produktion stehen Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Ansicht zu den Themen Suche und Indizierung zu bieten.
+1. Alle damit zusammenhängenden Metriken, einschließlich der Suchleistung in der Produktion, stehen Kunden zur Laufzeit zur Verfügung, um die ganzheitliche Ansicht zu den Themen Suche und Indizierung bereitzustellen.
 
 1. Kunden können Warnungen entsprechend ihren Bedürfnissen einrichten.
 
@@ -50,10 +50,10 @@ AS NOTE: the above is internal for now.
 Die Definition von Indizes kann aus drei Anwendungsfällen bestehen:
 
 1. Hinzufügen einer neuen Kunden-Indexdefinition
-1. Aktualisieren einer vorhandenen Indexdefinition Dies bedeutet effektiv, eine neue Version einer vorhandenen Indexdefinition hinzuzufügen.
+1. Aktualisieren einer vorhandenen Indexdefinition. Dies bedeutet effektiv, eine neue Version einer vorhandenen Indexdefinition hinzuzufügen.
 1. Entfernen eines vorhandenen, redundanten oder veralteten Indexes
 
-Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation[zur ](/help/implementing/deploying/overview.md)Bereitstellung auf AEM als Cloud-Dienst.
+Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation [zur](/help/implementing/deploying/overview.md)Bereitstellung auf AEM als Cloud-Dienst.
 
 ### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
@@ -61,7 +61,7 @@ Sie müssen ein neues Indexdefinitionspaket mit der tatsächlichen Indexdefiniti
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-die dann untergehen müssen `ui.content/src/main/content/jcr_root`. Unterstammordner werden ab sofort nicht mehr unterstützt.
+die dann untergehen müssen `ui.apps/src/main/content/jcr_root`. Unterstammordner werden ab sofort nicht mehr unterstützt.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,17 +71,17 @@ Das Paket aus dem obigen Beispiel wird wie `com.adobe.granite:new-index-content:
 
 Indexdefinitionen sind jetzt als benutzerdefiniert und als Version gekennzeichnet:
 
-* Die Indexdefinition selbst (z. `/oak:index/ntBaseLucene-custom-1`B. MUTABLE-Inhalt)
+* Die Indexdefinition selbst (z. B. `/oak:index/ntBaseLucene-custom-1`)
 
-Um einen Index bereitzustellen, sollte daher die Indexdefinition (`/oak:index/definitionname`) über das **veränderliche Paket** bereitgestellt werden, üblicherweise `ui.content` über Git und den Cloud Manager-Bereitstellungsprozess.
+Um einen Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) daher über Git und den `ui.apps` Cloud Manager-Bereitstellungsprozess bereitgestellt werden.
 
-Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung über Cloud Manager bereitgestellt werden. Bei der Bereitstellung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB bzw. dem Azurblauen Segment Store für Autoren und Veröffentlichungen verantwortlich sind. Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu deklariert, bevor der Blue-Green-Switch stattfindet.
+Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung über Cloud Manager bereitgestellt werden. Bei der Bereitstellung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB bzw. dem Azurblauen Segment Store für Autoren- bzw. Veröffentlichungszwecke verantwortlich sind. Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu deklariert, bevor der Blue-Green-Switch stattfindet.
 
 ## Indexverwaltung unter Verwendung von Blue-Green-Bereitstellungen {#index-management-using-blue-green-deployments}
 
 ### Was ist Indexverwaltung {#what-is-index-management}
 
-Bei der Indexverwaltung geht es um das Hinzufügen, Entfernen und Ändern von Indizes. Die Änderung der *Definition* eines Indexes ist schnell, aber die Anwendung der Änderung (häufig als &quot;Erstellen eines Indexes&quot;oder bei vorhandenen Indizes als &quot;Neudexing&quot;bezeichnet) erfordert Zeit. Es handelt sich nicht sofort: Das Repository muss gescannt werden, damit Daten indiziert werden.
+Bei der Indexverwaltung geht es darum, Indizes hinzuzufügen, zu entfernen und zu ändern. Die Änderung der *Definition* eines Indexes ist schnell, aber die Anwendung der Änderung (häufig als &quot;Erstellen eines Indexes&quot;oder bei vorhandenen Indizes als &quot;Neudexing&quot;bezeichnet) erfordert Zeit. Es handelt sich nicht sofort: Das Repository muss gescannt werden, damit Daten indiziert werden.
 
 ### Was ist eine blaugrüne Implementierung {#what-is-blue-green-deployment}
 
@@ -105,7 +105,7 @@ Die Lese- und Schreibbereiche des Repositorys werden von allen Versionen der Anw
 
 ### Indexverwaltung ohne blaugrüne Bereitstellung {#index-management-without-blue-green-deployment}
 
-Während der Entwicklung oder bei Verwendung von lokalen Installationen können Indizes zur Laufzeit hinzugefügt, entfernt oder geändert werden. Indizes werden verwendet, sobald sie verfügbar sind. Wenn ein Index in der alten Version der Anwendung noch nicht verwendet werden soll, wird der Index normalerweise während eines geplanten Ausfalls erstellt. Dasselbe gilt, wenn ein Index entfernt oder ein vorhandener Index geändert wird. Wenn Sie einen Index entfernen, ist er nach dem Entfernen nicht mehr verfügbar.
+Während der Entwicklung oder bei Verwendung von lokalen Installationen können Indizes zur Laufzeit hinzugefügt, entfernt oder geändert werden. Indizes werden verwendet, sobald sie verfügbar sind. Wenn ein Index in der alten Version der Anwendung noch nicht verwendet werden soll, wird der Index normalerweise während eines geplanten Ausfalls erstellt. Dasselbe gilt, wenn ein Index entfernt oder ein vorhandener Index geändert wird. Wenn Sie einen Index entfernen, steht er nicht mehr zur Verfügung, sobald er entfernt wurde.
 
 ### Indexverwaltung mit blaugrüner Implementierung {#index-management-with-blue-green-deployment}
 
