@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: 'Inhaltssuche und -indizierung '
 translation-type: tm+mt
-source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
+source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ---
 
@@ -29,7 +29,7 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 
-1. Auf einer hohen Ebene von AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
+1. Auf einer hohen Ebene in AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
 Die verwendete Indexversion wird mithilfe von Flags in den Indexdefinitionen über das `useIfExist` Flag konfiguriert. Ein Index kann nur in einer Version der Anwendung (z. B. nur blau oder nur grün) oder in beiden Versionen verwendet werden. Detaillierte Dokumentation finden Sie unter [Index-Management mit Blue-Green-Bereitstellungen](#index-management-using-blue-green-deployments).
 
@@ -68,6 +68,10 @@ die dann untergehen müssen `ui.apps/src/main/content/jcr_root`. Unterstammordne
 Das Paket aus dem obigen Beispiel wird wie `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`folgt erstellt.
 
 ### Bereitstellen von Indexdefinitionen {#deploying-index-definitions}
+
+> [!NOTE]
+>
+> Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0** , das es Ihnen nicht erlaubt, `oak:index` zu Modulen von hinzuzufügen `<packageType>application</packageType>`. Um dies zu umgehen, verwenden Sie bitte Version **1.0.4**.
 
 Indexdefinitionen sind jetzt als benutzerdefiniert und als Version gekennzeichnet:
 
