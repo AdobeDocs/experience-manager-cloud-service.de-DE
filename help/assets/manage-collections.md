@@ -4,7 +4,7 @@ description: Verstehen Sie das Konzept der Sammlung in Adobe Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -19,9 +19,9 @@ Sie können mehrere Sammlungen für einen Benutzer freigeben. Jede Sammlung enth
 
 Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets sortieren:
 
-* Eine Sammlung, die eine statische Referenzliste mit Assets, Ordnern und anderen Sammlungen enthält.
+* Eine Sammlung, die eine statische Referenz-Liste von Assets, Ordnern und anderen Sammlungen enthält.
 
-* Eine intelligente Sammlung, die basierend auf Suchkriterien dynamisch Elemente enthält.
+* Eine intelligente Sammlung, die Elemente basierend auf Suchkriterien dynamisch enthält.
 
 ## Zugriff auf die Sammlungskonsole {#navigate-the-collections-console}
 
@@ -170,7 +170,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Hierarchie der Assets in 
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine oder mehrere Sammlungen für den Download aus.
 1. Tippen bzw. klicken Sie in der Symbolleiste auf das Symbol Herunterladen.
-1. Tippen oder klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabeformate des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
+1. Tippen oder klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabeformate des Assets in der Sammlung herunterladen möchten. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 
