@@ -3,7 +3,7 @@ title: Asset-Berichte
 description: In diesem Artikel werden verschiedene Berichte rund um das Thema Assets in AEM Assets beschrieben. Außerdem erhalten Sie Informationen über das Generieren von Berichten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -18,7 +18,7 @@ Das Berichterstellungs-Framework von AEM Assets nutzt Sling-Aufträge, um Beric
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und einer Benachrichtigung im Posteingang benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
+Wenn ein Bericht erstellt wird, erhalten Sie eine Benachrichtigung über <!-- through an email (optional) and --> eine Posteingangsbenachrichtigung. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Erstellen von Berichten {#generate-reports}
 
@@ -36,7 +36,7 @@ AEM Assets generiert die folgenden standardmäßigen Berichte für Sie:
 
 AEM-Administratoren können diese Berichte einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 
    ![Navigation](assets/navigation.png)
 
@@ -47,7 +47,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    >[!NOTE]
    >
-   >Bevor Sie einen Bericht vom Typ **[!UICONTROL Asset heruntergeladen]** generieren können, müssen Sie sicherstellen, dass der Asset-Download-Dienst aktiviert ist. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+   >Bevor Sie einen **[!UICONTROL Asset-Download]**-Bericht erstellen können, stellen Sie sicher, dass der Asset-Download-Service aktiviert ist. Öffnen Sie in der Web Console (`https://[aem_server]:[port]/system/console/configMgr`) die **[!UICONTROL Day CQ DAM Event Recorder]**-Konfiguration und wählen Sie die Option **[!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)]** in den Ereignistypen, falls nicht bereits ausgewählt.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    >[!NOTE]
    >
-   >Der Bericht zur **[!UICONTROL Festplattenauslastung]** umfasst keine Felder für den Datumsbereich, da er nur den aktuellen Speicherbedarf angibt.
+   >Der Bericht **[!UICONTROL Festplattennutzung]** enthält keine Datumsbereichsfelder, da er nur die aktuelle Festplattenspeichernutzung angibt.
 
    ![disk_usage_configuration](assets/disk_usage_configuration.png)
 
@@ -79,9 +79,9 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![files_report](assets/files_report.png)
 
-   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die aus AEM Assets heraus für externe Benutzer freigegeben wurden. Er enthält die E-Mail-ID des Benutzers, der das Asset freigegeben hat, die E-Mail-IDs der Benutzer, für die die Assets freigegeben wurden, Freigabedaten sowie das Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Die Spalten können nicht angepasst werden.
 
-   The **[!UICONTROL Link Share]** report, does not include options for subfolders and renditions because it merely publishes the shared URLs that appear under */var/dam/share*.
+   Der Bericht **[!UICONTROL Linkfreigabe]** enthält keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter */var/dam/share* angezeigt werden.
 
    ![link_share](assets/link_share.png)
 
@@ -91,7 +91,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![configure_columns](assets/configure_columns.png)
 
-   Um einen benutzerdefinierten Spaltennamen oder Eigenschaftenpfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei unter dem Knoten jcr:content in CRX. Alternativ können Sie sie über die Eigenschaftenpfadauswahl hinzufügen.
+   Um einen benutzerdefinierten Spaltennamen oder Eigenschaftenpfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei unter dem Knoten &quot;jcr:content&quot;in CRX. Alternativ können Sie sie über die Eigenschaftenpfadauswahl hinzufügen.
 
    ![custom_columns](assets/custom_columns.png)
 
@@ -116,13 +116,13 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Veröffentlichung in Brand Portal
 * Dateien
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und tippen/klicken Sie auf **[!UICONTROL Weiter]**.
 1. Konfigurieren Sie je nach Bedarf Berichtdetails wie den Titel, eine Beschreibung, eine Miniaturansicht, den Ordnerpfad, den Datumsbereich usw.
 
-1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
+1. Um eine benutzerspezifische Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
