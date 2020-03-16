@@ -2,7 +2,7 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: 'Noch auszufüllen '
 translation-type: tm+mt
-source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
+source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
 
 ---
 
@@ -27,23 +27,23 @@ Der Status darf nicht im Speicher verbleiben, sondern muss im Repository bestehe
 
 ## Status auf dem Dateisystem {#state-on-the-filesystem}
 
-Das Dateisystem der Instanz sollte in AEM nicht als Cloud-Dienst verwendet werden. Der Datenträger ist kurzlebig und wird entsorgt, wenn Instanzen recycelt werden. Eine begrenzte Nutzung des Dateisystems für die temporäre Speicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass dies negative Auswirkungen auf das Ressourcenverbrauchskontingent haben kann und Datenträgerbeschränkungen unterliegt.
+Das Dateisystem der Instanz sollte in AEM nicht als Cloud-Dienst verwendet werden. Der Datenträger ist kurzlebig und wird entsorgt, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass dies negative Auswirkungen auf das Ressourcenverbrauchskontingent haben kann und Datenträgerbeschränkungen unterliegt.
 
-Als Beispiel, bei dem die Verwendung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsstufe sicherstellen, dass alle Daten, die beibehalten werden müssen, für längere Zeit an einen externen Dienst gesendet werden.
+Wenn beispielsweise die Dateisystemnutzung nicht unterstützt wird, sollte die Veröffentlichungsstufe sicherstellen, dass alle Daten, die beibehalten werden müssen, für längere Datenspeicherung an einen externen Dienst gesendet werden.
 
 ## Überwachung {#observation}
 
-Ähnlich wie bei allem, was asynchron passiert, wie bei Beobachtungsereignissen, kann nicht garantiert werden, dass es lokal ausgeführt wird, und muss daher mit Vorsicht verwendet werden. Dies gilt sowohl für JCR-Ereignisse als auch für Sling-Ressourcenereignisse. Bei einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall wird es sich jedoch nicht um eine örtliche Veranstaltung handeln, und es könnte sogar sein, dass es bei einer laufenden Präsidentschaftswahl zum Zeitpunkt der Veranstaltung keinen aktiven Führer gibt.
+Ähnlich wie alles, was asynchron passiert, wie das Handeln auf Beobachtungsdaten, kann nicht garantiert werden, dass es lokal ausgeführt wird und muss daher mit Sorgfalt verwendet werden. Dies gilt sowohl für JCR-Ereignis als auch für Sling-Ressourcen-Ereignis. Bei einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall wird es sich jedoch nicht um ein örtliches Ereignis handeln, und es könnte sogar sein, dass es bei einer laufenden Präsidentschaftswahl, wenn das Ereignis ausgestellt wird, keine aktive Führung gibt.
 
-## Hintergrundaufgaben und lange ausgeführte Aufträge {#background-tasks-and-long-running-jobs}
+## Aufgaben im Hintergrund und lange ausgeführte Aufträge {#background-tasks-and-long-running-jobs}
 
-Bei Code, der als Hintergrundaufgaben ausgeführt wird, muss davon ausgegangen werden, dass die Instanz, in der er ausgeführt wird, jederzeit heruntergefahren werden kann. Daher muss der Code widerstandsfähig sein und der größte Import wiederverwendbar sein. Das bedeutet, dass der Code, wenn er erneut ausgeführt wird, nicht von vornherein beginnen sollte, sondern eher nahe an der Stelle, an der er aufgegeben wurde. Dies ist zwar keine neue Anforderung für diese Art von Code, in AEM als Cloud-Dienst ist es jedoch wahrscheinlicher, dass eine Instanzentnahme erfolgt.
+Als Hintergrundcode ausgeführter Aufgaben müssen davon ausgehen, dass die Instanz, in der sie ausgeführt werden, jederzeit heruntergefahren werden kann. Daher muss der Code widerstandsfähig sein und der größte Import wiederverwendbar sein. Das heißt, wenn der Code erneut ausgeführt wird, sollte er nicht von Anfang an erneut Beginn werden, sondern eher an der Stelle, an der er aufgegeben wurde. Dies ist zwar keine neue Anforderung für diese Art von Code, in AEM als Cloud-Dienst ist es jedoch wahrscheinlicher, dass eine Instanzentnahme erfolgt.
 
-Um die Probleme möglichst gering zu halten, sollten lang andauernde Aufträge möglichst vermieden werden, und sie sollten zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling Jobs, die mindestens einmal garantiert sind und daher, wenn sie unterbrochen werden, so bald wie möglich erneut ausgeführt werden. Aber sie sollten wahrscheinlich nicht von Anfang an wieder anfangen. Für die Planung solcher Aufträge ist es am besten, den [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Scheduler so zu verwenden, wie dies bei mindestens einer Ausführung der Fall ist.
+Um die Probleme möglichst gering zu halten, sollten lang andauernde Aufträge möglichst vermieden werden, und sie sollten zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling Jobs, die mindestens einmal garantiert sind und daher, wenn sie unterbrochen werden, so bald wie möglich erneut ausgeführt werden. Aber sie sollten wahrscheinlich nicht von Anfang an wieder Beginn machen. Für die Planung solcher Aufträge ist es am besten, die Planung [Sling-Aufträge](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) so zu verwenden, dass sie mindestens einmal ausgeführt wird.
 
-Der Sling Commons Scheduler sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass es geplant wird.
+Die Planung Sling Commons sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass es geplant wird.
 
-Ebenso kann nicht garantiert werden, dass alles, was asynchron geschieht, wie das Handeln bei Beobachtungsereignissen (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt werden kann und daher mit Sorgfalt verwendet werden muss. Dies gilt bereits jetzt für AEM-Bereitstellungen.
+Ebenso kann nicht garantiert werden, dass alles, was asynchron passiert, wie das Handeln auf Beobachtungsdaten (wie JCR-Ereignisse oder Sling-Ressourcen-Ereignis) ausgeführt werden kann und daher mit Sorgfalt verwendet werden muss. Dies gilt bereits jetzt für AEM-Bereitstellungen.
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
@@ -83,14 +83,37 @@ Inhalte werden von &quot;Autor&quot;zu &quot;Veröffentlichen&quot;über einen P
 
 ### Protokolle {#logs}
 
-* Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien geschrieben
-   * `./crx-quickstart/logs`
-* In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilenwerkzeug verwenden, um die Protokolle zu verkleinern. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
+
+Auf Cloud-Umgebung können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilenwerkzeug verwenden, um die Protokolle zu verkleinern. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Protokollebene festlegen**
+
+Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, um ausführliche Protokolle zu Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+
+**Aktivieren der DEBUG-Protokollebene**
+
+Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
+Zum Aktivieren der DEBUG-Protokollebene stellen Sie mit dem CRX-Explorer die Eigenschaft
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+auf „debug“ ein. Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolle generiert werden.
+Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Die Protokollebenen lauten wie folgt:
+
+| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen, und das Installationsprogramm kann nicht fortgesetzt werden. |
+|---|---|---|
+| 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, aber ein CRX-Teil wurde nicht ordnungsgemäß installiert und funktioniert daher nicht. |
+| 2 | Warnung | Die Aktion war erfolgreich, hatte aber Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
+| 3 | Informationen | Die Aktion war erfolgreich. |
 
 ### Thread Dumps {#thread-dumps}
 
-Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können jedoch derzeit nicht auf Self-Service-Weise heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
+Thread-Dumps auf Cloud-Umgebung werden laufend gesammelt, können jedoch derzeit nicht auf Self-Service-Weise heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
 ## CRX/DE Lite und Systemkonsole {#crxde-lite-and-system-console}
 
@@ -98,17 +121,17 @@ Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können jedoch derzei
 
 Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web Console (`/system/console`).
 
-Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellstart) `/apps` und direkt geschrieben werden `/libs` können, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
+Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellstart) `/apps` und direkt geschrieben werden `/libs` können. Dies unterscheidet sich von Cloud-Umgebung, bei denen diese obersten Ordner unveränderlich sind.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Kunden können auf CRXDE Lite in der Entwicklungsumgebung zugreifen, jedoch nicht auf die Bühne oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in geschrieben werden. Daher führt der Versuch, dies zu tun, zu Fehlern.
+Kunden können auf CRXDE Lite auf der Entwicklungs-Umgebung zugreifen, jedoch nicht auf die Bühne oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in geschrieben werden. Daher führt der Versuch, dies zu tun, zu Fehlern.
 
-Eine Reihe von Tools zum Debugging von AEM als Cloud-Service-Entwicklungsumgebungen stehen in der Developer Console für Entwicklungs-, Bereitstellungs- und Produktionsumgebungen zur Verfügung. Die URL kann wie folgt festgelegt werden, indem die URLs des Autoren- oder Veröffentlichungsdienstes angepasst werden:
+Eine Reihe von Tools zum Debugging von AEM als Cloud Service Developer-Umgebung stehen in der Developer Console für Entwickler-, Bereitstellungs- und Produktionsfunktionen zur Verfügung. Die URL kann wie folgt festgelegt werden, indem die URLs des Autoren- oder Veröffentlichungsdienstes angepasst werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Kurzbefehl kann der folgende CLI-Befehl für Cloud Manager verwendet werden, um die Developer Console basierend auf einem im Folgenden beschriebenen Umgebungsparameter zu starten:
+Als Kurzbefehl kann der folgende CLI-Befehl für Cloud Manager verwendet werden, um die Developer Console auf der Grundlage eines Umgebung-Parameters zu starten, der unten beschrieben wird:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -126,13 +149,13 @@ Wie unten dargestellt können Entwickler Paketabhängigkeiten und Servlets aufl�
 
 ![Dev Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool &quot;Anfrage erläutern&quot;:
+Die Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool &quot;Abfrage erläutern&quot;:
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 ### AEM Staging- und Produktionsdienst {#aem-staging-and-production-service}
 
-Kunden haben keinen Zugriff auf Entwicklerwerkzeuge für Staging- und Produktionsumgebungen.
+Kunden haben keinen Zugriff auf Entwicklerwerkzeuge für Staging- und Produktions-Umgebung.
 
 ### Leistungsüberwachung {#performance-monitoring}
 
