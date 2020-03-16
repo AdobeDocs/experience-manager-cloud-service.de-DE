@@ -3,7 +3,7 @@ title: Asynchrone Vorgänge
 description: AEM Assets optimiert die Leistung, durch das asynchrone Ausführen ressourcenintensiver Vorgänge.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 ## Überwachen des Status asynchroner Vorgänge {#monitoring-the-status-of-asynchronous-operations}
 
-Jedes Mal, wenn AEM Assets einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem Posteingang sowie per E-Mail.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Aufträge]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Aufträge]**.
 1. In the **[!UICONTROL Async Job Status]** page, review the details of the operations.
 
    ![job_status](assets/job_status.png)
@@ -44,7 +44,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen
 
-   **[!UICONTROL Fehler]******: Der Vorgang konnte nicht verarbeitet werden
+   **[!UICONTROL Fehlschlag]** oder **[!UICONTROL Fehler]**: Der Vorgang konnte nicht bearbeitet werden.
 
    **[!UICONTROL Geplant]**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant
 
@@ -72,7 +72,7 @@ AEM Assets führt jeden Tag um 1:00 Uhr einen Bereinigungsauftrag aus, um abge
 
 Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** job.
 1. Geben Sie die Schwellenzahl der Tage an, nach denen abgeschlossene Aufträge gelöscht werden, und die maximale Anzahl von Aufträgen, für die Details im Verlauf beibehalten werden.
 
@@ -89,7 +89,7 @@ Sie können den Schwellenwert für Assets oder Verweise festlegen, damit AEM As
 
 Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron verarbeitet.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
@@ -101,7 +101,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
 Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron verarbeitet.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
