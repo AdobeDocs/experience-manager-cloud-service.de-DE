@@ -1,17 +1,17 @@
 ---
-title: 'Entwickeln eines Repository-Strukturpakets   '
+title: 'AEM Project Repository Structure Package  '
 description: Für Adobe Experience Manager als Cloud Service Maven-Projekte ist eine Definition des Unterpakets "Repository-Struktur"erforderlich, deren einziger Zweck darin besteht, die Wurzeln des JCR-Repositorys zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Entwickeln eines Repository-Strukturpakets
+# AEM Project Repository Structure Package
 
 Für erstellte Projekte für Adobe Experience Manager als Cloud-Dienst ist eine Definition des Unterpakets &quot;Repository-Struktur&quot;erforderlich, deren einziger Zweck darin besteht, die Wurzeln des JCR-Repositorys zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden. Dadurch wird sichergestellt, dass die Installation von Paketen in Experience Manager erfolgt, da ein Cloud-Dienst automatisch nach JCR-Ressourcenabhängigkeiten geordnet wird. Fehlende Abhängigkeiten können zu Szenarien führen, in denen Unterstrukturen vor ihren übergeordneten Strukturen installiert und daher unerwartet entfernt werden, was die Bereitstellung unterbricht.
 
-Wenn Ihr Codepaket an einem Speicherort bereitgestellt wird, der **nicht vom Codepaket abgedeckt** wird, müssen alle übergeordneten Ressourcen (JCR-Ressourcen näher am JCR-Stammordner) im Repository-Strukturpaket aufgezählt werden, um diese Abhängigkeiten zu erstellen.
+Wenn Ihr Codepaket an einem Speicherort bereitgestellt wird, der **nicht vom Codepaket abgedeckt** wird, müssen alle übergeordneten Ressourcen (JCR-Ressourcen näher am JCR-Stamm) im Repository-Strukturpaket aufgezählt werden, um diese Abhängigkeiten zu schaffen.
 
 ![Repository-Strukturpaket](./assets/repository-structure-packages.png)
 
@@ -31,7 +31,7 @@ Um ein Repository-Strukturpaket für Ihr Maven-Projekt zu erstellen, erstellen S
 
 Aktualisieren Sie `<filters>` die, um alle JCR-Repository-Pfade einzuschließen, in denen Ihre Codepakete bereitgestellt werden.
 
-Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt der `<modules>` Liste der übergeordneten Projekte hinzufügen.
+Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt zur `<modules>` Liste der übergeordneten Projekte hinzufügen.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -93,7 +93,7 @@ Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt der `<modules>` List
 </project>
 ```
 
-## Referenzieren des Repository-Strukturpakets
+## Referenzieren des Repository Structure-Pakets
 
 Um das Repository-Strukturpaket zu verwenden, referenzieren Sie es über das gesamte Codepaket (die Unterpakete, die für `/apps`) Maven-Projekte über das FileVault-Inhaltspaket Maven-Plug-Ins- `<repositoryStructurePackage>` Konfiguration.
 
@@ -141,7 +141,7 @@ Beispiel:
 + Codepaket A wird in `/apps/a`
 + Codepaket B wird bereitgestellt in `/apps/a/b`
 
-Wenn keine Abhängigkeit auf Paketebene aus dem Code-Paket B auf dem Code-Paket A festgestellt wird, kann Codepaket B zuerst in bereitgestellt werden, gefolgt von `/apps/a`dem Code-Paket B, in dem `/apps/a`die Bereitstellung erfolgt, wodurch die zuvor installierte Komponente entfernt wird `/apps/a/b`.
+Wenn keine Abhängigkeit auf Paketebene aus dem Code-Paket B auf dem Code-Paket A festgestellt wird, kann Codepaket B zuerst in bereitgestellt werden, gefolgt von `/apps/a`dem Code-Paket B, in dem `/apps/a`die Bereitstellung erfolgt, was zum Entfernen der zuvor installierten Pakete führt `/apps/a/b`.
 
 In diesem Fall:
 
@@ -157,7 +157,7 @@ Wenn die Repository-Strukturpakete nicht korrekt eingerichtet sind, wird beim Ma
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Dies bedeutet, dass das Umbruchcode-Paket keine Liste enthält, `<repositoryStructurePackage>` die `/apps/some/path` in der Filterliste aufgeführt ist.
+Dies zeigt an, dass das Umbruchcode-Paket keine Listen `<repositoryStructurePackage>` in seiner Filter-Liste enthält `/apps/some/path` .
 
 ## Zusätzliche Ressourcen
 
