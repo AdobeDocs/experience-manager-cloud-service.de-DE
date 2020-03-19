@@ -2,24 +2,24 @@
 title: Protokolle verwalten - Cloud-Dienst
 description: Protokolle verwalten - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
 
 ---
 
 
-# Zugriff und Verwaltung von Protokollen {#manage-logs}
+# Zugriff auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.  Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Die Benutzer können über die Umgebung Card auf eine Liste verfügbarer Protokolldateien für die ausgewählte Umgebung zugreifen.  Die Benutzer können auf eine Liste verfügbarer Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Seite **Übersicht** .
+Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Seite &quot; **Übersicht** &quot;.
 
 ![](assets/manage-logs1.png)
 
-Oder die Seite **Umgebungen** :
+Oder die Seite **Umgebung** :
 
 ![](assets/manage-logs2.png)
 
->[!Note]
+>[!NHinweis]
 >Unabhängig davon, wo es geöffnet wird, wird dasselbe Dialogfeld angezeigt, in dem eine einzelne Protokolldatei heruntergeladen werden kann.
 
 ![](assets/manage-logs3.png)
@@ -29,7 +29,7 @@ Oder die Seite **Umgebungen** :
 
 Zusätzlich zum Herunterladen von Protokollen über die Benutzeroberfläche stehen Protokolle über die API und die Befehlszeilenschnittstelle zur Verfügung.
 
-Wenn Sie beispielsweise die Protokolldateien für eine bestimmte Umgebung herunterladen möchten, wäre der Befehl etwas Anderes, als
+Wenn Sie beispielsweise die Protokolldateien für eine bestimmte Umgebung herunterladen möchten, würde der Befehl nur die Zeilen
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
@@ -41,7 +41,7 @@ Mit dem folgenden Befehl können Protokolle gezählt werden:
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Um die Umgebungs-ID (in diesem Fall 1884) und die verfügbaren Dienst- oder Protokollnamenoptionen abzurufen, können Sie Folgendes verwenden:
+Um die Umgebung-ID (in diesem Fall 1884) und die verfügbaren Dienst- oder Protokollnamenoptionen abzurufen, können Sie Folgendes verwenden:
 
 ```java
 $ aio cloudmanager:list-environments
@@ -64,5 +64,12 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
->Während **Protokolldownloads** sowohl über die Benutzeroberfläche als auch über die API verfügbar sein werden, ist **Log Tailing** nur für API/CLI verfügbar.
+>[!NHinweis]
+>Während **Protokolldownloads** sowohl über die Benutzeroberfläche als auch über die API verfügbar sind, ist **Log-Tailing** nur für API/CLI verfügbar.
+
+### Zusätzliche Ressourcen {#resources}
+
+Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
+
+* [Dokumentation zur Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
