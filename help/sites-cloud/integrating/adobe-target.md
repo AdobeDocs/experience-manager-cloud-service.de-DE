@@ -2,7 +2,7 @@
 title: Integration mit Adobe Target
 description: 'Integration mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
+source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
 
 ---
 
@@ -42,7 +42,7 @@ Führen Sie zur Integration in Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->In AEM als Cloud-Dienst ist der Replizierungsagenten, der Angebot und Aktivitäten von AEM mit Adobe-Zielgruppe synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an den [Adobe-Support](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) , wenn Sie den Replizierungsagenten erneut aktivieren möchten.
+>In AEM als Cloud-Dienst ist der Replizierungsagenten, der Angebot und Aktivitäten von AEM mit Adobe-Zielgruppe synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Supportteam](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) , wenn Sie den Replizierungsagenten erneut aktivieren möchten.
 
 >[!NOTE]
 >
