@@ -3,7 +3,7 @@ title: Asset-Mikrodienste für die Asset-Verarbeitung konfigurieren und verwende
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Mikrodienste konfigurieren und verwenden, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten, die von Adobe verwaltet werden, um eine optimale Verarbeitung verschiedener Asset-Typen und Verarbeitungsoptionen zu gewährleisten.
 
-Die Asset-Verarbeitung wird auf der Grundlage der Konfiguration in den **[!UICONTROL Verarbeitungsprofilen]** durchgeführt, die ein Standardset bereitstellen und dem Administrator erlauben, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Um Erweiterbarkeit und vollständige Anpassung zu ermöglichen, ermöglicht die Verarbeitung von Assets eine optionale Konfiguration von Arbeitsabläufen nach der Verarbeitung, die dann vom Administrator erstellt und gepflegt werden.
+Die Asset-Verarbeitung wird auf der Grundlage der Konfiguration in **[!UICONTROL Verarbeitungswerkzeugen]** durchgeführt, die ein Standardset bereitstellen und es dem Administrator ermöglichen, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Um Erweiterbarkeit und vollständige Anpassung zu ermöglichen, ermöglicht die Asset-Verarbeitung eine optionale Konfiguration der Nachbearbeitung Workflows, die dann vom Administrator erstellt und gepflegt werden.
 
-Nachstehend wird ein übergeordneter Fluss zur Asset-Verarbeitung in Experience Manager als Cloud-Dienst dargestellt.
+Nachstehend wird ein übergeordneter Fluss für die Asset-Verarbeitung in Experience Manager als Cloud-Dienst dargestellt.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,57 +37,57 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Für Kunden, die von früheren Versionen von Experience Manager aktualisieren: Die in diesem Abschnitt beschriebene Asset-Verarbeitung ersetzt das Workflow-Modell &quot;DAM Update Asset&quot;, das zuvor für die Verarbeitung von Assets verwendet wurde. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt. Die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
+> Für Kunden, die von früheren Versionen von Experience Manager aktualisieren: Die in diesem Abschnitt beschriebene Asset-Verarbeitung ersetzt das Workflow-Modell &quot;DAM Update Asset&quot;, das zuvor für die Verarbeitung von Assets verwendet wurde. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt, und die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
 
 ## Erste Schritte mit der Asset-Verarbeitung {#get-started}
 
-Die Asset-Verarbeitung mit Asset-Mikrodiensten wird mit einer Standardkonfiguration vorkonfiguriert, sodass die vom System benötigten Standarddarstellungen verfügbar sind. Außerdem stellen Sie sicher, dass Metadaten-Extraktion und Textextraktion verfügbar sind. Benutzer können sofort mit dem Hochladen oder Aktualisieren von Assets beginnen. Die grundlegende Verarbeitung ist standardmäßig verfügbar.
+Die Asset-Verarbeitung mit Asset-Mikrodiensten wird mit einer Standardkonfiguration vorkonfiguriert, sodass die vom System benötigten Standarddarstellungen verfügbar sind. Außerdem stellen Sie sicher, dass Vorgänge zur Extraktion und Extraktion von Metadaten verfügbar sind. Beginn können Assets sofort hochladen oder aktualisieren. Die Basisverarbeitung ist standardmäßig verfügbar.
 
-Für bestimmte Anforderungen an die Generierung und Verarbeitung von Ausgabeformaten kann ein AEM-Administrator zusätzliche [!UICONTROL Verarbeitungsprofile]erstellen. Benutzer können einem bestimmten Ordner ein oder mehrere der verfügbaren Profile zuweisen, um eine weitere Verarbeitung zu erhalten. Angenommen, Sie erstellen Web-, Mobil- und Tablet-spezifische Darstellungen. Das folgende Video zeigt, wie Sie [!UICONTROL Verarbeitungsprofile] erstellen und anwenden und auf die erstellten Darstellungen zugreifen.
+Für bestimmte Anforderungen an die Generierung von Darstellungen oder die Verarbeitung von Assets kann ein AEM-Administrator zusätzliche [!UICONTROL Verarbeitungs-Profil]erstellen. Die Benutzer können einem bestimmten Profil ein oder mehrere dieser Elemente zuweisen, um eine weitere Verarbeitung zu erhalten. Angenommen, Sie erstellen Web-, Mobil- und Tablet-spezifische Darstellungen. Im folgenden Video wird das Erstellen und Anwenden von [!UICONTROL Verarbeitungs-Profilen] und der Zugriff auf die erstellten Darstellungen erläutert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 Informationen zum Ändern des vorhandenen Profils finden Sie unter [Konfigurationen für Asset-Mikrodienste](#configure-asset-microservices).
-Informationen zum Erstellen benutzerdefinierter Verarbeitungsprofile, die spezifisch für Ihre benutzerdefinierten Anforderungen sind, wie z. B. zur Integration in andere Systeme, finden Sie unter Arbeitsabläufe [nach der Verarbeitung](#post-processing-workflows).
+Informationen zum Erstellen benutzerdefinierter Profil für die Verarbeitung, z. B. zur Integration in andere Systeme, finden Sie unter [Nachbearbeitung Workflows](#post-processing-workflows).
 
 ## Konfigurationen für Asset Microservices {#configure-asset-microservices}
 
-Um Asset-Mikrodienste zu konfigurieren, können Administratoren die Konfigurationsoberfläche unter **[!UICONTROL Tools > Assets > Verarbeitungsprofile]** verwenden.
+Um Asset-Mikrodienste zu konfigurieren, können Administratoren die Konfigurationsoberfläche unter **[!UICONTROL &quot;Extras&quot;> &quot;Assets&quot;> &quot;Profil]** bearbeiten&quot;verwenden.
 
 ### Standardkonfiguration {#default-config}
 
-Bei der Standardkonfiguration wird nur das [!UICONTROL Standard] -Verarbeitungsprofil konfiguriert. Es handelt sich um eine integrierte Version, die nicht verändert werden kann. Es wird immer ausgeführt, um sicherzustellen, dass die gesamte für die Anwendung erforderliche Verarbeitung stattfindet.
+Bei der Standardkonfiguration wird nur das Profil für die Standardverarbeitung konfiguriert. Das Profil für die Standardverarbeitung ist auf der Benutzeroberfläche nicht sichtbar und kann nicht geändert werden. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Mit einem Profil für die Standardverarbeitung wird sichergestellt, dass die gesamte grundlegende Verarbeitung, die für Experience Manager erforderlich ist, für alle Assets abgeschlossen ist.
 
-![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
-Das Standard-Verarbeitungsprofil bietet die folgende Verarbeitungskonfiguration:
+Das Profil für die Standardverarbeitung bietet die folgende Verarbeitungskonfiguration:
 
 * Standardmäßige Miniaturansichten, die von der Asset-Benutzeroberfläche verwendet werden (48, 140 und 319 px)
 * Große Vorschau (Webdarstellung - 1280 px)
 * Metadatenextraktion
-* Textextrahierung
+* Extraktion von Text
 
 ### Unterstützte Dateiformate {#supported-file-formats}
 
-Asset Microservices bieten Unterstützung für eine Vielzahl von Dateiformaten, was die Möglichkeit betrifft, Darstellungen zu erstellen oder Metadaten zu extrahieren. Die vollständige Liste finden Sie unter [Unterstützte Dateiformate](file-format-support.md) .
+Asset Microservices bieten Unterstützung für eine Vielzahl von Dateiformaten, was die Möglichkeit betrifft, Darstellungen zu generieren oder Metadaten zu extrahieren. Die vollständige Liste finden Sie unter [Unterstützte Dateiformate](file-format-support.md) .
 
-### Zusätzliche Verarbeitungsprofile hinzufügen {#processing-profiles}
+### Hinzufügen zusätzlicher Profil {#processing-profiles}
 
-Zusätzliche Verarbeitungsprofile können mit der Aktion **[!UICONTROL Erstellen]** hinzugefügt werden.
+Mit der Aktion &quot; **[!UICONTROL Erstellen]** &quot;können weitere Profil zur Verarbeitung hinzugefügt werden.
 
-Jede Konfiguration des Verarbeitungsprofils enthält eine Liste der Darstellungen. Für jede Darstellung können Sie Folgendes angeben:
+Jede Konfiguration des verarbeitenden Profils enthält eine Liste von Darstellungen. Für jede Darstellung können Sie Folgendes angeben:
 
 * Darstellungsname
 * Darstellungsformat (JPEG, PNG oder GIF werden unterstützt)
 * Darstellungsbreite und -höhe in Pixel (sofern nicht angegeben, wird die vollständige Pixelgröße des Originals angenommen)
 * Darstellungsqualität (für JPEG) in Prozent
-* Eingeschlossene und ausgeschlossene MIME-Typen definieren, für welche Asset-Typen das Verarbeitungsprofil gilt
+* Eingeschlossene und ausgeschlossene MIME-Typen definieren, für welche Asset-Typen das verarbeitende Profil gilt
 
-![processing-profiles-adding](assets/processing-profiles-adding.png)
+![processing-Profils-adding](assets/processing-profiles-adding.png)
 
-Wenn ein neues Verarbeitungsprofil gespeichert wird, wird es der Liste der konfigurierten Verarbeitungsprofile hinzugefügt. Diese Verarbeitungsprofile können dann auf Ordner in der Ordnerhierarchie angewendet werden, um sie für das Hochladen von Assets und die dort durchgeführten Assets effektiv zu gestalten.
+Wenn ein neues Profil gespeichert wird, wird es zur Liste der konfigurierten Profil hinzugefügt. Diese Profil zur Verarbeitung können dann auf Ordner in der Ordnerhierarchie angewendet werden, damit sie für Asset-Uploads und -Assets dort wirksam sind.
 
-![processing-profiles-list](assets/processing-profiles-list.png)
+![processing-Profils-Liste](assets/processing-profiles-list.png)
 
 #### Darstellungsbreite und -höhe {#rendition-width-height}
 
@@ -99,42 +99,42 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 Wenn ein Asset mit einem bestimmten MIME-Typ verarbeitet wird, wird der MIME-Typ zunächst mit dem ausgeschlossenen MIME-Typwert für die Darstellungsspezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird diese spezifische Darstellung nicht für das Asset generiert (&quot;Blacklisting&quot;).
 
-Andernfalls wird der MIME-Typ mit dem eingeschlossenen MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (&quot;Whitelisting&quot;).
+Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (&quot;Whitelisting&quot;).
 
 #### Spezielle FPO-Darstellung {#special-fpo-rendition}
 
-Das Verarbeitungsprofil kann eine spezielle &quot;FPO-Darstellung&quot;enthalten, die verwendet wird, wenn [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) mit Adobe InDesign verwendet wird, um direkte Links zu Assets aus Experience Manager in InDesign-Dokumente zu platzieren.
+Beim Platzieren von Assets in großen Größen aus AEM in Adobe InDesign-Dokumenten muss ein Kreativprofi nach dem [Platzieren eines Assets](https://helpx.adobe.com/indesign/using/placing-graphics.html)eine Weile warten. In der Zwischenzeit wird der Benutzer daran gehindert, InDesign zu verwenden. Dies unterbricht den kreativen Fluss und beeinträchtigt die Benutzererfahrung. Adobe ermöglicht die zeitweilige Platzierung kleiner Darstellungen in InDesign-Dokumenten. Diese können später bei Bedarf durch Assets mit voller Auflösung ersetzt werden. Experience Manager bietet Darstellungen, die nur für die Platzierung verwendet werden (FPO). Diese FPO-Darstellungen haben eine kleine Dateigröße, haben aber dasselbe Seitenverhältnis.
 
-In der Adobe Asset Link- [Dokumentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) erfahren Sie, ob Sie das Programm für Ihr Verarbeitungsprofil aktivieren müssen.
+Das verarbeitende Profil kann eine FPO-Darstellung (nur für Platzierung) enthalten. Informationen dazu, ob Sie es für Ihr verarbeitendes Profil aktivieren müssen, finden Sie in der Adobe Asset Link- [Dokumentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) . Weitere Informationen finden Sie in der Dokumentation zum [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ## Verwenden von Asset-Mikrodiensten zur Verarbeitung von Assets {#use-asset-microservices}
 
-Nachdem zusätzliche Verarbeitungsprofile erstellt wurden, müssen sie auf bestimmte Ordner angewendet werden, damit Experience Manager sie bei der Verarbeitung von Assets verwendet, die in diesen Ordnern hochgeladen oder aktualisiert wurden. Das integrierte, standardmäßige Verarbeitungsprofil wird immer ausgeführt.
+Erstellen Sie die zusätzlichen, benutzerdefinierten Verarbeitungsordner und wenden Sie sie auf bestimmte Profil an, damit Experience Manager Assets verarbeiten kann, die in diese  hochgeladen oder aktualisiert wurden. Das standardmäßige, integrierte Standard-Profil für die Verarbeitung wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
-Es gibt zwei Möglichkeiten, Verarbeitungsprofile auf Ordner anzuwenden:
+Es gibt zwei Möglichkeiten, verarbeitende Profil auf Ordner anzuwenden:
 
-* Administratoren können unter **[!UICONTROL Extras > Assets > Verarbeitungsprofile]** eine Definition des Verarbeitungsprofils auswählen und die Aktion Profile auf Ordner **[!UICONTROL anwenden]** verwenden. Dadurch wird ein Inhaltsbrowser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
+* Administratoren können unter **[!UICONTROL &quot;Extras&quot;> &quot;Assets&quot;> &quot;Profil]** für die Verarbeitung&quot;eine Definition für verarbeitendes Profil auswählen und die Aktion &quot;Profil auf Ordner **[!UICONTROL anwenden&quot;verwenden]** . Dadurch wird ein Inhaltsbrowser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
 * Benutzer können einen Ordner in der Benutzeroberfläche „Assets“ auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Verarbeitungsprofile]** klicken und in der Dropdownliste das richtige Verarbeitungsprofil für diesen Ordner auswählen. Die Auswahl wird bei der Aktion **[!UICONTROL Speichern und Schließen]** gespeichert.
 
 >[!NOTE]
 >
->Nur ein Verarbeitungsprofil kann auf einen bestimmten Ordner angewendet werden. Wenn Sie weitere Darstellungen erstellen müssen, können Sie dem Verarbeitungsprofil weitere Darstellungsdefinitionen hinzufügen.
+>Auf einen bestimmten Profil kann nur ein Verarbeitungsordner angewendet werden. Wenn Sie weitere Darstellungen erstellen müssen, können Sie dem verarbeitenden Profil weitere Darstellungsdefinitionen hinzufügen.
 
-Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) wurden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese zusätzliche Verarbeitung erfolgt zusätzlich zum Standardprofil. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
+Nachdem ein verarbeitendes Profil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesem  hochgeladen (oder aktualisiert) wurden, oder die Unterordner des Ordners verarbeitet, indem das konfigurierte zusätzliche Profil für die Verarbeitung verwendet wird. Diese zusätzliche Verarbeitung erfolgt zusätzlich zum standardmäßigen Profil. Wenn Sie mehrere Profil auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Assets mit jedem dieser Profil verarbeitet.
 
 >[!NOTE]
 >
->Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keine Anwendung erfolgt, wird sie in der Ordnerstruktur angezeigt, bis ein Verarbeitungsprofil angewendet wurde, und verwendet es für das Asset. Das bedeutet, dass ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, für die gesamte Struktur funktioniert, aber mit einem anderen Profil, das auf einen Unterordner angewendet wird, überschrieben werden kann.
+>Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein verarbeitendes Profil. Wenn keine Option angewendet wird, wird sie in der Ordnerstruktur angezeigt, bis ein verarbeitendes Profil angewendet wurde, und verwendet es für das Asset. Das bedeutet, dass ein auf einen Ordner angewendetes Profil für die gesamte Struktur funktioniert, jedoch überschrieben werden kann, wenn ein anderes Profil auf einen Unterordner angewendet wird.
 
-Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden hat, indem sie ein neu hochgeladenes Asset öffnen, für das die Verarbeitung abgeschlossen ist, die Asset-Vorschau öffnen und auf die **[!UICONTROL Ausgabeansicht]** der linken Leiste klicken. Die spezifischen Darstellungen im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den MIME-Einschlussregeln übereinstimmt, sollten sichtbar und zugänglich sein.
+Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden hat, indem sie ein neu hochgeladenes Asset öffnen, für das die Verarbeitung abgeschlossen ist, die Asset-Vorschau öffnen und auf die Ansicht **[!UICONTROL Ausgabeformate]** der linken Leiste klicken. Die spezifischen Darstellungen im verarbeitenden Profil, für die der Typ des jeweiligen Assets mit den MIME-Einschlussregeln übereinstimmt, sollten sichtbar und zugänglich sein.
 
-![Zusätzliche Darstellungen](assets/renditions-additional-renditions.png)*Abbildung: Beispiel zweier zusätzlicher Darstellungen, die von einem Verarbeitungsprofil generiert wurden, das auf den übergeordneten Ordner angewendet wurde*
+![Zusätzliche Darstellungen](assets/renditions-additional-renditions.png)*Abbildung: Beispiel zweier zusätzlicher Darstellungen, die von einem verarbeitenden Profil generiert wurden, das auf den übergeordneten Ordner angewendet wurde*
 
-## Arbeitsabläufe nach der Verarbeitung {#post-processing-workflows}
+## Workflows nach der Verarbeitung {#post-processing-workflows}
 
-In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden können, können der Konfiguration zusätzliche Nachbearbeitungsarbeitsabläufe hinzugefügt werden. Dies ermöglicht das Hinzufügen einer vollständig angepassten Verarbeitung zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset Microservices.
+Wenn zusätzliche Verarbeitung von Assets erforderlich ist, die mit den verarbeitenden Profilen nicht erreicht werden können, können zusätzliche Workflows zur Konfiguration hinzugefügt werden. Dies ermöglicht das Hinzufügen einer vollständig angepassten Verarbeitung zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset Microservices.
 
-Nach der Verarbeitung ausgeführte Arbeitsabläufe nach der Verarbeitung werden, sofern konfiguriert, automatisch von AEM ausgeführt. Workflow-Starter müssen nicht manuell hinzugefügt werden, um sie auszulösen.
+Nach Abschluss der Verarbeitung werden Workflows, sofern konfiguriert, automatisch von AEM ausgeführt, nachdem die Verarbeitung der Mikrodienste abgeschlossen ist. Workflow-Starter müssen nicht manuell hinzugefügt werden, um sie auszulösen.
 
 Beispiele dafür sind:
 
@@ -147,28 +147,28 @@ Das Hinzufügen einer Workflow-Konfiguration für die Nachbearbeitung zu Experie
 * Erstellen eines oder mehrerer Workflow-Modelle. Sie werden als &quot;Workflow-Modelle nach der Verarbeitung&quot;bezeichnet, es handelt sich jedoch um normale AEM-Workflow-Modelle.
 * Hinzufügen spezifischer Workflow-Schritte zu diesen Modellen. Diese Schritte werden basierend auf der Konfiguration des Workflow-Modells für die Assets ausgeführt.
 * Der letzte Schritt eines solchen Modells muss der `DAM Update Asset Workflow Completed Process` Schritt sein. Dies ist erforderlich, um sicherzustellen, dass AEM weiß, dass die Verarbeitung beendet wurde und das Asset als verarbeitet (&quot;Neu&quot;) gekennzeichnet werden kann.
-* Erstellen einer Konfiguration für den benutzerdefinierten Workflow Runner-Dienst, mit der die Ausführung eines Workflow-Modells für die Nachbearbeitung entweder nach Pfad (Ordnerspeicherort) oder regulärem Ausdruck konfiguriert werden kann
+* Erstellen einer Konfiguration für den benutzerdefinierten Workflow Runner-Dienst, mit der die Ausführung eines Workflow-Nachbearbeitungs-Modells entweder nach Pfad (Ordnerspeicherort) oder regulärem Ausdruck konfiguriert werden kann
 
-### Erstellen von Workflow-Modellen für die Nachbearbeitung
+### Erstellen von Workflow-Modellen für die Nachbearbeitung {#create-post-processing-workflow-models}
 
-Workflow-Modelle nach der Verarbeitung sind normale AEM-Workflow-Modelle. Bitte erstellen Sie unterschiedliche, wenn Sie unterschiedliche Verarbeitungsschritte für verschiedene Repository-Speicherorte oder Asset-Typen benötigen.
+Workflow-Modelle nach der Verarbeitung sind normale AEM-Workflow-Modelle. Erstellen Sie verschiedene Modelle, wenn Sie unterschiedliche Verarbeitungsschritte für verschiedene Repository-Speicherorte oder Asset-Typen benötigen.
 
-Verarbeitungsschritte sollten je nach Bedarf hinzugefügt werden. Sie können alle unterstützten vordefinierten Schritte sowie alle benutzerdefinierten Workflow-Schritte verwenden.
+Verarbeitungsschritte sollten je nach Bedarf hinzugefügt werden. Sie können alle verfügbaren unterstützten Schritte sowie alle benutzerdefinierten Workflow-Schritte verwenden.
 
-Der letzte Schritt jedes Nachbearbeitungsablaufs muss der `DAM Update Asset Workflow Completed Process`sein. Dadurch wird sichergestellt, dass das Asset ordnungsgemäß als &quot;Verarbeitung abgeschlossen&quot;gekennzeichnet ist.
+Stellen Sie sicher, dass der letzte Schritt jedes Workflows der Nachbearbeitung `DAM Update Asset Workflow Completed Process`ist. Der letzte Schritt hilft sicherzustellen, dass Experience Manager weiß, wann die Asset-Verarbeitung abgeschlossen ist.
 
-### Workflow-Ausführung nach der Verarbeitung konfigurieren
+### Workflow-Ausführung nach der Verarbeitung konfigurieren {#configure-post-processing-workflow-execution}
 
 Um die Workflow-Modelle für die Nachbearbeitung so zu konfigurieren, dass sie für Assets ausgeführt werden, die nach Abschluss der Verarbeitung der Asset-Mikrodienste im System hochgeladen oder aktualisiert wurden, muss der Custom Workflow Runner-Dienst konfiguriert werden.
 
 Der Custom Workflow Runner-Dienst (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) ist ein OSGi-Dienst und bietet zwei Optionen für die Konfiguration:
 
-* Arbeitsabläufe nach der Verarbeitung nach Pfad (`postProcWorkflowsByPath`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen Repository-Pfaden aufgeführt werden. Pfade und Modelle sollten durch einen Doppelpunkt voneinander getrennt werden. Einfache Repository-Pfade werden unterstützt und sollten einem Workflow-Modell im `/var` Pfad zugeordnet werden. Beispiel: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Arbeitsabläufe nach der Verarbeitung nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Ausdrücke und Modelle sollten durch einen Doppelpunkt getrennt werden. Der reguläre Ausdruck sollte direkt auf den Asset-Knoten verweisen und nicht auf eine der Darstellungen oder Dateien. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Nachbearbeitung Workflows Pfad (`postProcWorkflowsByPath`): Es können mehrere Workflow-Modelle aufgeführt werden, die auf unterschiedlichen Repository-Pfaden basieren. Pfade und Modelle sollten durch einen Doppelpunkt voneinander getrennt werden. Einfache Repository-Pfade werden unterstützt und sollten einem Workflow-Modell im `/var` Pfad zugeordnet werden. Beispiel: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Nachbearbeitung Workflows nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Ausdruck und Modelle sollten durch einen Doppelpunkt getrennt werden. Der reguläre Ausdruck sollte direkt auf den Asset-Knoten und nicht auf eine der Darstellungen oder Dateien verweisen. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >Die Konfiguration des benutzerdefinierten Workflow Runner ist eine Konfiguration eines OSGi-Dienstes. Informationen zum Bereitstellen einer OSGi-Konfiguration finden Sie unter [Bereitstellung in Experience Manager](/help/implementing/deploying/overview.md) .
 > OSGi-Webkonsole ist im Gegensatz zu lokalen und verwalteten Services-Bereitstellungen von AEM nicht direkt in den Cloud-Dienstbereitstellungen verfügbar.
 
-Weitere Informationen dazu, welche der Standard-Arbeitsablaufschritte im Arbeitsablauf für die Nachbearbeitung verwendet werden können, finden Sie unter [Arbeitsablaufschritte im Arbeitsablauf](developer-reference-material-apis.md#post-processing-workflows-steps) für die Nachbearbeitung in der Entwicklerreferenz.
+Weitere Informationen darüber, welcher standardmäßige Workflow-Schritt im Arbeitsablauf für die Nachbearbeitung verwendet werden kann, finden Sie unter [Workflow-Schritte im Arbeitsablauf](developer-reference-material-apis.md#post-processing-workflows-steps) für die Nachbearbeitung in der Developer-Referenz.
