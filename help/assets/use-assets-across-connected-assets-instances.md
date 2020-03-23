@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
+source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
 
 ---
 
@@ -164,7 +164,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Metadatenschemata werden nicht abgerufen.
 * Alle Sites-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Bereitstellung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
-* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
+* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren.
 * Es ist nicht möglich, ein Remote-Asset als Miniaturansicht für eine Webseite auf der Registerkarte &quot; [!UICONTROL Miniaturansicht] &quot;in den [!UICONTROL Seiteneigenschaften] zu verwenden, indem Sie auf Bild [!UICONTROL auswählen]klicken.
 
 **Einrichten und Lizenzieren**
