@@ -2,7 +2,7 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -172,7 +172,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
    * Legen Sie Eigenschaften für Cloud-Services<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).--> fest. 
 
-### Personalisierung  {#personalization}
+### Personalisierung     {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -181,6 +181,8 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 * **Konfiguration für Targeting**
 
    * Wählen Sie eine [Marke aus, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Für diese Option muss sich das Benutzerkonto in der `Target Adminstrators`Gruppe befinden.
 
 ### Berechtigungen {#permissions}
 
@@ -216,7 +218,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
       * für eine einzelne Seite
       * für mehrere Seiten (bei der Massenbearbeitung steht nur ein Teil der Eigenschaften zur Verfügung)
 * Im Seiten-Editor:
-   * Using **Page Information** (then **Open Properties**)
+   * Verwenden von **Seiteninformationen** (dann **Eigenschaften öffnen**)
 
 ### In der Sites-Konsole (einzelne Seite):{#from-the-sites-console-single-page}
 
@@ -236,14 +238,14 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 1. Öffnen Sie die Seite, für die Sie Eigenschaften bearbeiten möchten.
 1. Wählen Sie das Symbol **Seiteninformationen**, um das Auswahlmenü zu öffnen:
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. Außerdem sind rechts in der Symbolleiste auch folgende Schaltflächen verfügbar:
+1. Wählen Sie **Eigenschaften öffnen**. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können. Die Eigenschaften werden nach der entsprechenden Registerkarte sortiert. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
    * **Abbrechen**
    * **Speichern und schließen**
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
 ### In der Sites-Konsole (mehrere Seiten):{#from-the-sites-console-multiple-pages}
 
-In der **Sites-Konsole** können Sie mehrere Seiten auswählen. Anschließend können Sie die Seiteneigenschaften mithilfe der Option **Eigenschaften anzeigen** anzeigen bzw. bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
+In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
 >[!NOTE]
 >
@@ -261,7 +263,7 @@ Sie können mehrere Seiten zur Massenbearbeitung auf verschiedene Arten auswähl
 * Beim Navigieren in der **Sites-Konsole**
 * Nach dem Verwenden der **Suche** zum Auffinden einer Gruppe aus Seiten
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Nach Auswahl der Seiten und anschließendem Tippen/Klicken auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
 ![Eigenschaften von Seiten zur Massenbearbeitung](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
