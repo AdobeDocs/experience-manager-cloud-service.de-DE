@@ -2,14 +2,14 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 # Content Versand in AEM als Cloud-Dienst {#content-delivery}
 
-Der Content Versand des Veröffentlichungsdienstes umfasst:
+Die aktuellen Seitendetails veröffentlichen den Content Versand des Dienstes in AEM als Cloud-Dienst. Der Content Versand des Veröffentlichungsdienstes umfasst:
 
 * CDN (normalerweise von Adobe verwaltet)
 * AEM-Dispatcher
