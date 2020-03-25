@@ -2,7 +2,7 @@
 title: AEM-Projektstruktur
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung im Adobe Experience Manager Cloud-Dienst definieren.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
@@ -43,7 +43,7 @@ Dieses Diagramm bietet eine Übersicht über die empfohlene Projektstruktur und 
 
 Die empfohlene Anwendungsbereitstellungsstruktur lautet wie folgt:
 
-+ Das `ui.apps` Paket bzw. das Inhaltspaket enthält den gesamten bereitzustellenden Code und stellt nur für `/apps`die Bereitstellung bereit. Zu den gebräuchlichen Elementen des `ui.apps` Pakets gehören:
++ Das `ui.apps` Paket bzw. das Codepaket enthält den gesamten bereitzustellenden Code und stellt nur für `/apps`die Bereitstellung bereit. Zu den gebräuchlichen Elementen des `ui.apps` Pakets gehören:
    + OSGi-Pakete
       + `/apps/my-app/install`
    + OSGi-Konfigurationen
@@ -69,7 +69,7 @@ Die empfohlene Anwendungsbereitstellungsstruktur lautet wie folgt:
          + Gruppen
          + ACLs (Berechtigungen)
             + Beliebig `rep:policy` für alle Pfade (veränderlich oder unveränderlich)
-+ Das `ui.content` Paket bzw. das Codepaket enthält alle Inhalte und Konfigurationen. Zu den gebräuchlichen Elementen des `ui.content` Pakets gehören:
++ Das `ui.content` Paket oder das Inhaltspaket enthält alle Inhalte und Konfigurationen. Zu den gebräuchlichen Elementen des `ui.content` Pakets gehören:
    + Kontextsensitive Konfigurationen
       + `/conf`
    + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltsaufbau, der auf in Repo Init definierten Inhaltsstrukturen aufbaut und diese erweitert.
@@ -178,7 +178,7 @@ Für die Zielgruppe von AEM-Autor, AEM-Veröffentlichung oder beidem wird das Pa
 
 Unterbrechen der Ordnerstruktur:
 
-+ Der Ordner der ersten Ebene **muss vorhanden sein** `/apps`.
++ Der Ordner der ersten Ebene **muss** vorhanden sein `/apps`.
 + Der Ordner auf der zweiten Ebene stellt die Anwendung dar, deren Ordnername nach dem `-packages` Fixieren festgelegt ist. Oft gibt es nur einen einzigen Ordner auf 2. Ebene, in den alle Unterpakete eingebettet sind. Es können jedoch beliebig viele Ordner auf 2. Ebene erstellt werden, um die logische Struktur der Anwendung am besten darzustellen:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
