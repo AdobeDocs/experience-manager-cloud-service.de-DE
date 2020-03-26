@@ -2,7 +2,7 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
+source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
 
 ---
 
@@ -31,43 +31,54 @@ Die folgenden Abschnitte enthalten genauere Informationen zum Content Versand, e
 
 Informationen zur Replizierung vom Autorendienst zum Veröffentlichungsdienst finden Sie [hier](/help/operations/replication.md).
 
->[!NOTE]
->Traffic wird über einen Apache-Webserver ausgeführt, der Module einschließlich des Dispatchers unterstützt. Der Dispatcher wird primär als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu beschränken, um die Leistung zu erhöhen.
-
 ## CDN {#cdn}
 
-AEM Angebots bietet drei Optionen:
+AEM als Cloud-Dienst wird mit einem Standard-CDN ausgeliefert. Hauptzweck ist es, die Latenz zu reduzieren, indem zwischengespeicherte Inhalte von den CDN-Knoten an der Kante in der Nähe des Browsers bereitgestellt werden. Es wird vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert.
 
-1. Adobe Managed CDN - AEM&#39;s vordefiniertes CDN. Diese Option wird empfohlen, da sie vollständig integriert ist.
-1. Kunden-CDN verweist auf Adobe Managed CDN - der Kunde verweist sein eigenes CDN auf das vordefinierte CDN von AEM. Wenn die erste Option nicht lebensfähig ist, ist dies die nächste bevorzugte Option, da sie weiterhin die AEM-Integration mit dem Standard-CDN nutzt. Kunden sind weiterhin für die Verwaltung ihres eigenen CDN verantwortlich.
-1. Customer Managed CDN - Der Kunde bringt sein eigenes CDN und ist für dessen Verwaltung voll und ganz verantwortlich.
+Insgesamt stehen AEM Angebots zwei Optionen zur Verfügung:
 
->[!CAUTION]
->Die erste Option wird dringend empfohlen. Adobe kann nicht für das Ergebnis einer Fehlkonfiguration verantwortlich gemacht werden, wenn Sie die zweite Option wählen.
+1. AEM Managed CDN - AEM&#39;s vordefiniertes CDN. Es handelt sich um eine eng integrierte Option, die keine umfangreichen Kundeninvestitionen zur Unterstützung der CDN-Integration mit AEM erfordert.
+1. Kundenverwaltetes CDN verweist auf AEM Managed CDN - der Kunde verweist sein eigenes CDN auf das vordefinierte CDN von AEM. Der Kunde muss weiterhin sein eigenes CDN verwalten, aber die Investitionen in die Integration mit AEM sind gering.
 
-Die zweite und dritte Option werden von Fall zu Fall zugelassen. Dies umfasst die Erfüllung bestimmter Voraussetzungen, unter anderem, aber nicht beschränkt auf den Kunden, der über eine veraltete Integration mit seinem CDN-Anbieter verfügt, was schwer rückgängig zu machen ist.
+Die erste Option sollte die meisten Leistungs- und Sicherheitsanforderungen des Kunden erfüllen. Darüber hinaus sind die Investitionen der Kunden und die laufende Wartung am wenigsten erforderlich.
 
-### Adobe Managed CDN {#adobe-managed-cdn}
+Die zweite Option ist von Fall zu Fall zulässig. Die Entscheidung beruht auf der Erfüllung bestimmter Voraussetzungen, darunter auch dem Kunden, der über eine veraltete Integration mit seinem CDN-Anbieter verfügt, die schwer aufzugeben ist.
+
+Nachfolgend finden Sie eine Entscheidungsmatrix zum Vergleich der beiden Optionen. Detailliertere Informationen finden Sie in den folgenden Abschnitten.
+
+| Details | AEM Managed CDN | Vom Kunden verwaltetes CDN verweist auf AEM CDN |
+|---|---|---|
+| **Kundenaufwand** | Keine, sie ist vollständig integriert. Nur CNAME muss auf AEM Managed CDN verweisen. | Mäßige Kundeninvestitionen. Der Kunde muss sein eigenes CDN verwalten. |
+| **Voraussetzungen** | Keine | Vorhandenes CDN, das nur schwer zu ersetzen ist. Vor dem Start muss ein erfolgreicher Belastungstest durchgeführt werden. |
+| **CDN-Expertise** | Keine | Benötigt mindestens eine Teilzeit-Engineering-Ressource mit detailliertem CDN-Wissen, die das CDN des Kunden konfigurieren kann. |
+| **Sicherheit** | Verwaltet von Adobe. | Verwaltet von Adobe (und optional vom Kunden bei seinem eigenen CDN). |
+| **Leistung** | Optimiert von Adobe. | Einige AEM-CDN-Funktionen sind nützlich, aber möglicherweise ein kleiner Leistungseinbruch aufgrund des zusätzlichen Hosts. **Hinweis**: Hopfen vom Kunden CDN bis Fastly CDN wahrscheinlich effizient sein). |
+| **Caching** | Unterstützt Cache-Kopfzeilen, die auf Dispatcher-Ebene angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf Dispatcher-Ebene angewendet werden. |
+| **Funktionen zur Bild- und Videokomprimierung** | Kann mit Adobe Dynamic Media verwendet werden. | Kann mit Adobe Dynamic Media oder einer kundenverwalteten CDN-Bild-/Videolösung verwendet werden. |
+
+### AEM Managed CDN {#aem-managed-cdn}
 
 Die Vorbereitung auf Content Versand mithilfe des standardmäßigen CDN von Adobe ist ganz einfach, wie nachfolgend beschrieben:
 
 1. Sie stellen Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen freigeben. Bitte stimmen Sie sich mit dem Kundensupport auf dieser Aufgabe ab.
-Hinweis: AEM als Cloud-Dienst unterstützt keine DV-Zertifikate (Domain Validated).
+   **Hinweis:** AEM als Cloud-Dienst unterstützt keine DV-Zertifikate (Domain Validated).
 1. Der Kundensupport koordiniert dann mit Ihnen die zeitliche Abfolge für einen CNAME-DNS-Datensatz und weist deren FQDN auf `adobe-aem.map.fastly.net`.
 1. Sie werden benachrichtigt, wenn die SSL-Zertifikate ablaufen, damit Sie die neuen SSL-Zertifikate erneut senden können.
 
+**Einschränkung des Traffics**
+
 Standardmäßig kann bei einem Adobe Managed CDN-Setup der gesamte öffentliche Traffic zum Veröffentlichungsdienst wechseln, sowohl für Produktions- als auch für Nicht-Produktions- (Entwicklungs- und Bereitstellungsdienste) Umgebung. Wenn Sie den Traffic für eine bestimmte Umgebung auf den Veröffentlichungsdienst beschränken möchten (z. B. die Beschränkung der Staging-Aktivität auf eine Reihe von IP-Adressen), sollten Sie sich an den Kundendienst wenden, um diese Einschränkungen zu konfigurieren.
 
-### Customer CDN verweist auf Adobe Managed CDN {#point-to-point-CDN}
+### Customer CDN verweist auf AEM Managed CDN {#point-to-point-CDN}
 
 Wird unterstützt, wenn Sie Ihr vorhandenes CDN verwenden möchten, die Anforderungen eines vom Kunden verwalteten CDN jedoch nicht erfüllen können. In diesem Fall verwalten Sie Ihr eigenes CDN, verweisen aber auf das von Adobe verwaltete CDN.
 
-Bitte beachten Sie, dass Sie:
+Bitte beachten Sie, dass:
 
 1. Sie benötigen ein vorhandenes CDN.
-1. Du wirst es verwalten.
-1. Sie müssen CDN für die Verwendung mit AEM als Cloud-Dienst konfigurieren können - siehe die Konfigurationsanweisungen unten.
-1. Sie haben Ingenieurexperten von CDN, die im Falle von Problemen im Zusammenhang mit dem Projekt jederzeit erreichbar sind.
+1. Du musst es verwalten.
+1. Sie müssen in der Lage sein, das CDN für die Verwendung mit AEM als Cloud-Dienst zu konfigurieren - siehe die Konfigurationsanweisungen unten.
+1. Sie benötigen technische CDN-Experten, die im Falle von Problemen im Zusammenhang mit dem Projekt auf Anfrage zur Verfügung stehen.
 1. Sie müssen vor dem Produktivbetrieb einen Lasttest durchführen und erfolgreich bestehen.
 
 Konfigurationsanweisungen:
@@ -77,28 +88,6 @@ Konfigurationsanweisungen:
 1. Schicken Sie die SNI-Kopfzeile an die Herkunft. Wie der Host-Header muss der sni-Header die Herkunft-Domäne sein.
 1. Legen Sie die `X-Edge-Key`Variable fest, die erforderlich ist, um den Traffic korrekt an die AEM-Server zu leiten. Der Wert sollte von Adobe stammen.
 
-### Kundenverwaltetes CDN {#customer-managed-cdn}
-
-Wird unterstützt, wenn Sie Ihr vorhandenes CDN verwenden müssen.  In diesem Fall verwalten Sie Ihr eigenes CDN und weisen es auf AEM hin.
-
-Sie können Ihr eigenes CDN verwalten, vorausgesetzt:
-
-1. Sie haben ein CDN.
-1. Es muss sich um ein unterstütztes CDN handeln. Derzeit wird Akamai unterstützt. Wenn Ihr Unternehmen ein derzeit nicht unterstütztes CDN verwalten möchte, wenden Sie sich bitte an den Kundensupport.
-1. Du wirst es verwalten.
-1. Sie müssen CDN für die Verwendung mit AEM als Cloud-Dienst konfigurieren können - siehe die Konfigurationsanweisungen unten.
-1. Sie haben Ingenieurexperten von CDN, die im Falle von Problemen im Zusammenhang mit dem Projekt jederzeit erreichbar sind.
-1. Sie müssen für Cloud Manager Whitelists von CDN-Knoten bereitstellen, wie in den Konfigurationsanweisungen beschrieben.
-1. Sie müssen vor dem Produktivbetrieb einen Lasttest durchführen und erfolgreich bestehen.
-
-Konfigurationsanweisungen:
-
-1. Stellen Sie die Whitelist des CDN-Anbieters für Adobe bereit, indem Sie die Umgebung create/update API mit einer Liste von CIDRs zur Whitelist aufrufen.
-1. Legen Sie die `X-Forwarded-Host` Kopfzeile mit dem Domänennamen fest.
-1. Legen Sie den Host-Header mit der Herkunft-Domäne fest, der AEM als Cloud-Dienst-Adresse. Der Wert sollte von Adobe stammen.
-1. Schicken Sie die SNI-Kopfzeile an die Herkunft. Der SNI-Header muss die Herkunft-Domäne sein.
-1. Legen Sie die `X-Edge-Key` erforderlichen fest, um den Traffic ordnungsgemäß zu den AEM-Servern zu leiten. Der Wert sollte von Adobe stammen.
-
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Kundensupport überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
 ### Caching {#caching}
@@ -107,7 +96,7 @@ Der Zwischenspeicherungsprozess befolgt die folgenden Regeln.
 
 ### HTML/Text {#html-text}
 
-* standardmäßig 5 Minuten lang im Cache gespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene ausgestrahlt wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene gesendet wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME` Variable in der Verwendung von AEM als Cloud-Dienst-SDK-Dispatcher-Tools definiert `global.vars` wird.
 
 Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cache` der folgenden Regel steht:
@@ -181,21 +170,20 @@ Vor AEM als Cloud-Dienst gab es zwei Möglichkeiten, den Dispatcher-Cache zu ung
 1. Rufen Sie den Replizierungsagenten auf und geben Sie den Veröffentlichungs-Dispatcher-Flush-Agent an
 2. Direkter Aufruf der `invalidate.cache` API (z. B. `POST /dispatcher/invalidate.cache`)
 
-Der `invalidate.cache` Ansatz wird nicht mehr unterstützt, da er nur einen bestimmten Dispatcher-Knoten anspricht.
-AEM als Cloud-Dienst funktioniert auf Dienstebene, nicht auf der Ebene einzelner Knoten. Daher sind die Ungültigmachungsanweisungen auf der Seite &quot; [Ungültige zwischengespeicherte Seiten von AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) &quot;nicht für AEM als Cloud-Dienst gültig.
+Der `invalidate.cache` API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er nur einen bestimmten Dispatcher-Knoten anspricht. AEM als Cloud-Dienst funktioniert auf Dienstebene, nicht auf der Ebene einzelner Knoten. Daher sind die Ungültigmachungsanweisungen auf der Seite &quot; [Ungültige zwischengespeicherte Seiten von AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) &quot;nicht mehr für AEM als Cloud-Dienst gültig.
 Stattdessen sollte der Replizierungsspülmittel verwendet werden. Dies kann mithilfe der Replikations-API erfolgen. Die Replikations-API-Dokumentation ist [hier](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) speziell im `CustomStep` Beispiel, in dem eine Replizierungsaktion des Typs ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar, sondern vorkonfiguriert, um auf den Dispatcher zu verweisen. Er ist mit dem Veröffentlichungsdienst, der den Flush-Agent ausführt, übereinstimmen. Der Flush-Agent kann in der Regel von OSGi-Ereignissen oder Workflows ausgelöst werden.
 
-Das folgende Diagramm zeigt dies.
+Das unten dargestellte Diagramm veranschaulicht dies.
 
 ![](assets/cdnc.png "CDNCDN")
 
-Wenn Bedenken bestehen, dass der Dispatcher-Cache nicht geleert wird, wenden Sie sich an den Kundensupport, der den Dispatcher-Cache ggf. bereinigen kann.
+Wenn Bedenken bestehen, dass der Dispatcher-Cache nicht geleert wird, wenden Sie sich an den [Kundensupport](https://helpx.adobe.com/support.ec.html) , der den Dispatcher-Cache ggf. bereinigen kann.
 
-Das von Adobe verwaltete CDN berücksichtigt TTLs und muss daher nicht gerötet werden. Bei Verdacht auf ein Problem wenden Sie sich an den Kundensupport, der bei Bedarf einen von Adobe verwalteten CDN-Cache leeren kann.
+Das von Adobe verwaltete CDN berücksichtigt TTLs und muss daher nicht gerötet werden. Bei Verdacht auf ein Problem [wenden Sie sich an den Support](https://helpx.adobe.com/support.ec.html) des Kunden, der nach Bedarf einen von Adobe verwalteten CDN-Cache leeren kann.
 
 ## Clientseitige Bibliotheken und Versionskonsistenz {#content-consistency}
 
-Die Seiten bestehen natürlich aus HTML, Javascript, CSS und Bildern. Kunden werden empfohlen, das clientlibs-Framework (clientlibs) zu nutzen, um JavaScript- und CSS-Ressourcen in HTML-Seiten zu importieren, wobei Abhängigkeiten zwischen JS-Bibliotheken berücksichtigt werden.
+Die Seiten bestehen aus HTML, Javascript, CSS und Bildern. Kunden werden empfohlen, das clientlibs-Framework (clientlibs) zu nutzen, um JavaScript- und CSS-Ressourcen in HTML-Seiten zu importieren, wobei Abhängigkeiten zwischen JS-Bibliotheken berücksichtigt werden.
 
 Das clientlibs-Framework bietet eine automatische Versionsverwaltung, d. h. Entwickler können Änderungen an JS-Bibliotheken in der Quellcodeverwaltung einchecken und die neueste Version wird zur Verfügung gestellt, wenn ein Kunde seine Veröffentlichung vorantreibt. Andernfalls müssten Entwickler HTML mit Verweisen auf die neue Version der Bibliothek manuell ändern. Dies ist besonders aufwändig, wenn viele HTML-Vorlagen dieselbe Bibliothek gemeinsam nutzen.
 
