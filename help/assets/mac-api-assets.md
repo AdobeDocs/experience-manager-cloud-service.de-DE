@@ -3,7 +3,7 @@ title: Assets-HTTP-API
 description: Erfahren Sie mehr über die Implementierung, Datenmodelle und Funktionen der Assets-HTTP-API. Verwenden Sie die Assets-HTTP-API, um verschiedene Aufgaben rund um Assets auszuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -43,7 +43,7 @@ Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Daten
 
 Ordner sind wie Ordner in herkömmlichen Dateisystemen. Sie stellen Container für andere Ordner oder Assets dar. Ordner enthalten folgende Komponenten:
 
-**Einrichtungen**: Bei den Entitäten eines Ordners handelt es sich um untergeordnete Elemente, bei denen es sich um Ordner und Assets handeln kann.
+**Entitäten**: Bei den Entitäten eines Ordners handelt es sich um untergeordnete Elemente, bei denen es sich um Ordner und Assets handeln kann.
 
 **Eigenschaften**:
 * `name`  — Name des Ordners. Dies ist dasselbe wie das letzte Segment im URL-Pfad ohne Erweiterung
