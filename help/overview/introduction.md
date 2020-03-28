@@ -2,7 +2,7 @@
 title: Einführung in Adobe Experience Manager als Cloud-Dienst
 description: 'Einführung in Adobe Experience Manager (AEM) als Cloud-Dienst. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
 
 ---
 
@@ -11,13 +11,15 @@ source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 [Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) ist jetzt als Cloud-Dienst verfügbar.
 
-Adobe Experience Manager als Cloud-Dienst:
+Adobe Experience Manager as a Cloud Service:
 
 * Ist die Cloud-native Methode zur Nutzung der AEM-Anwendungen.
 
-* Ermöglicht es Ihnen, Ihren Kunden personalisierte, inhaltsbasierte Erlebnisse bereitzustellen, indem Sie die Leistungsfähigkeit des AEM Content Management Systems mit AEM Digital Asset Management kombinieren.
+* Ermöglicht es Ihnen, Ihren Kunden personalisierte, inhaltsbasierte Erlebnisse bereitzustellen, indem Sie die Leistungsfähigkeit des AEM-Content-Management-Systems mit AEM Digital Asset Management kombinieren.
 
-* Bietet kontinuierliche Bereitstellung und kontinuierliche Integration für Updates ohne Ausfallzeiten.
+* Bietet Continuous Versand und Continuous Integration für Updates ohne Ausfallzeiten.
+
+* Ermöglicht die schnelle und effiziente Bereitstellung von Inhalten mit einem integrierten Content Versand Network (CDN) und anderen Best Practices auf Netzwerkebene.
 
 * Basiert auf einer dynamischen Architektur, die automatisch skaliert, wodurch Überlegungen zur Infrastruktur entfernt werden.
 
@@ -53,7 +55,7 @@ AEM erreicht diese Ziele durch Übernahme der Hauptmerkmale moderner Cloud-Diens
 
 * Es ist immer on:
 
-   * Die gesamte Dienstarchitektur wurde überarbeitet, sodass keine Ausfallzeiten auftreten. weder für die Inhaltsverwaltung noch für die Inhaltsbereitstellungsfunktionen.
+   * Die gesamte Dienstarchitektur wurde überarbeitet, sodass keine Ausfallzeiten auftreten. weder für das Content-Management noch für die Content Versand-Funktionen.
 
 * Er ist immer auf dem Maßstab:
 
@@ -61,7 +63,7 @@ AEM erreicht diese Ziele durch Übernahme der Hauptmerkmale moderner Cloud-Diens
 
 * Er ist immer aktuell:
 
-   * AEM als Cloud-Dienst implementiert eine neue, kontinuierliche Bereitstellungspipeline für die AEM-Codebasis mit automatisierten Aktualisierungen bis zu mehreren Malen im Monat. Dadurch wird eine der größten Herausforderungen von AEM-Anwendungen gelöst, indem Sie auf dem neuesten Stand der aktuellen Version bleiben.
+   * AEM als Cloud-Dienst implementiert eine neue, kontinuierliche Versand-Pipeline für die AEM-Codebasis mit automatisierten Updates bis zu mehreren Malen pro Monat. Dadurch wird eine der größten Herausforderungen von AEM-Anwendungen gelöst, indem Sie auf dem neuesten Stand der aktuellen Version bleiben.
 
 * Es entwickelt sich immer:
 
@@ -70,7 +72,7 @@ AEM erreicht diese Ziele durch Übernahme der Hauptmerkmale moderner Cloud-Diens
 ## Adobe Experience Manager als Cloud-Dienst kennenlernen {#getting-to-know-aem-as-cloud-service}
 
 * [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) zwischen Adobe Experience Manager als Cloud-Dienst und früheren Versionen
-* Die [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager als Cloud-Dienst
+* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
 * [Wichtige Änderungen an AEM-Sites in AEM als Cloud-Dienst](/help/sites-cloud/sites-cloud-changes.md)
 * [Einführung in Assets als Cloud-Dienst](/help/assets/overview.md)
-* [Adobe Experience Manager als Cloud-Service-Lehrgänge](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
