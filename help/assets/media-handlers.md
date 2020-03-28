@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Media Handlers und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -18,7 +18,7 @@ Media Handler sind Dienste innerhalb von AEM Assets, die bestimmte Aktionen für
 
 >[!NOTE]
 >
->Please refer to the [Assets supported formats](file-format-support.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
+>See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
 
 ## Standard-Medien-Handler {#default-media-handlers}
 
@@ -82,7 +82,7 @@ Die folgenden Media-Handler stehen in AEM Assets zur Verfügung und behandeln di
   <tr>
    <td>OpenOfficeHandler</td>
    <td>com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler</td>
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.present<br /><br /> </td>
+   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.Dokument<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.present<br /><br /> </td>
   </tr>
   <tr>
    <td>EPubHandler</td>
@@ -92,7 +92,7 @@ Die folgenden Media-Handler stehen in AEM Assets zur Verfügung und behandeln di
   <tr>
    <td>GenericAssetHandler</td>
    <td><p>com.day.cq.dam.core.impl.handler.GenericAssetHandler</p> </td>
-   <td>Ausweichmöglichkeit, falls kein anderer Handler gefunden wurde, der Daten aus einem Asset extrahiert</td>
+   <td>Ausweichmöglichkeit, falls kein anderer Handler gefunden wurde, um Daten aus einem Asset zu extrahieren</td>
   </tr>
  </tbody>
 </table>
@@ -162,7 +162,7 @@ Die folgenden Methoden müssen implementiert werden:
 
 * `extractMetadata()`: Diese Methode extrahiert alle verfügbaren Metadaten.
 * `getThumbnailImage()`: Diese Methode erstellt ein Miniaturbild aus dem übergebenen Asset.
-* `getMimeTypes()`: Diese Methode gibt den Asset-MIME-Typ(en) zurück.
+* `getMimeTypes()`: Diese Methode gibt den bzw. die Asset-MIME-Typen zurück.
 
 Hier eine Beispielvorlage:
 
@@ -172,7 +172,7 @@ Schnittstelle und Klassen:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Diese Schnittstelle beschreibt den Dienst, der Unterstützung für bestimmte MIME-Typen hinzufügt. Zum Hinzufügen eines neuen MIME-Typs muss diese Schnittstelle implementiert werden. Die Schnittstelle enthält Methoden zum Importieren und Exportieren der jeweiligen Dokumente, zum Erstellen von Miniaturbildern und zum Extrahieren von Metadaten.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extrahierung von Teilassets.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie häufig verwendete Funktionen für die Extraktion von Teilassets.
 
 <!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
@@ -391,7 +391,7 @@ Die folgenden Konvertierungen können automatisch ausgeführt und in AEM Assets 
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* Filtert die Datei nach bestimmten MIME-Typen, sofern angegeben.
+* Filter der Datei nach bestimmten MIME-Typen, falls angegeben.
 * Erstellt ein temporäres Verzeichnis auf dem Datenträger, der den AEM-Server hostet. 
 * Streamt die Originaldatei in den temporären Ordner.
 * Führt den Befehl aus, der über die Argumente des Schritts definiert ist. Der Befehl wird im temporären Ordner mit den Berechtigungen des Benutzers ausgeführt, der AEM ausführt.
@@ -407,7 +407,7 @@ Dazu verwenden Sie ImageMagick. ImageMagick ist eine kostenlose Software zum Ers
 
 Installieren Sie ImageMagick zunächst auf dem Datenträger, der den AEM-Server hostet:
 
-1. Install ImageMagick: please refer to the [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. ImageMagick installieren: Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php).
 1. Richten Sie das Tool so ein, dass Sie die Konvertierung über die Befehlszeile ausführen können.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
@@ -415,7 +415,7 @@ Installieren Sie ImageMagick zunächst auf dem Datenträger, der den AEM-Server 
 
    >[!NOTE]
    >
-   >In manchen Versionen von Windows (z. B. Windows SE), kann der Konvertierungsbefehl eventuell nicht ausgeführt werden, da er in Konflikt mit dem nativen Konvertierungsdienstprogramm steht, das Teil der Windows-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >In manchen Versionen von Windows (z. B. Windows SE), kann der Konvertierungsbefehl eventuell nicht ausgeführt werden, da er in Konflikt mit dem nativen Konvertierungsdienstprogramm steht, das Teil der Windows-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`. 
 
 1. To see if the tool runs properly, add a .jpg image to the working directory and run the command convert `<image-name>.jpg -flip <image-name>-flipped.jpg` on the command line.
 
