@@ -3,12 +3,12 @@ title: 'Assets-APIs für die Verwaltung digitaler Assets in Adobe Experience Man
 description: Mithilfe von Assets-APIs können Sie grundlegende Vorgänge zum Erstellen, Lesen und Löschen (CRUD) zum Verwalten von Assets durchführen, einschließlich Binärdateien, Metadaten, Darstellungen, Kommentare und Inhaltsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# Assets als Cloud-Dienst-APIs {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -20,7 +20,7 @@ Give a list of and overview of all reference information available.
 
 ## Asset-Upload {#asset-upload-technical}
 
-Experience Manager als Cloud-Dienst bietet eine neue Möglichkeit zum Hochladen von Assets in das Repository - direktes binäres Hochladen in binäre Cloud-Speicher. Dieser Abschnitt gibt einen technischen Überblick.
+Experience Manager als Cloud-Dienst bietet eine neue Möglichkeit, Assets in das Repository hochzuladen - direktes binäres Hochladen in die binäre Cloud-Datenspeicherung. Dieser Abschnitt gibt einen technischen Überblick.
 
 ### Übersicht über das direkte binäre Hochladen {#overview-binary-upload}
 
@@ -32,10 +32,10 @@ Der allgemeine Algorithmus zum Hochladen einer Binärdatei lautet:
 
 ![Übersicht über das direkte Protokoll zum binären Hochladen](assets/add-assets-technical.png)
 
-Wichtige Unterschiede zu früheren Versionen von AEM sind unter anderem:
+Wichtige Unterschiede im Vergleich zu früheren Versionen von AEM sind unter anderem:
 
-* Binärdateien durchlaufen nicht AEM, das jetzt lediglich den Upload-Prozess mit dem für die Bereitstellung konfigurierten binären Cloud-Speicher koordiniert
-* Die binäre Cloud-Speicherung wird von einem Content Delivery Network (CDN, Edge Network) vorgestellt, das den Upload-Endpunkt näher an den Client bringt und so die Upload-Leistung und Benutzerfreundlichkeit verbessert, insbesondere für verteilte Teams, die Assets hochladen, verbessert, insbesondere beim Hochladen von Assets durch verteilte Teams
+* Binärdateien durchlaufen nicht AEM, das jetzt lediglich den Upload-Vorgang mit der für die Bereitstellung konfigurierten binären Cloud-Datenspeicherung koordiniert
+* Die binäre Cloud-Datenspeicherung wird von einem Content Versand Network (CDN, Edge Network) vorgestellt, das den Upload-Endpunkt näher an den Client bringt und so die Upload-Leistung und Benutzerfreundlichkeit verbessert, insbesondere für verteilte Teams, die Assets hochladen, verbessert, insbesondere beim Hochladen von Assets durch verteilte Teams
 
 Dieser Ansatz sollte eine skalierbarere und leistungsfähigere Handhabung von Asset-Uploads bieten.
 
@@ -44,7 +44,7 @@ Informationen zum Überprüfen des Clientcodes, der diesen Ansatz implementiert,
 
 ### Hochladen starten {#initiate-upload}
 
-Der erste Schritt besteht darin, eine HTTP POST-Anforderung an den Ordner zu senden, in dem das Asset erstellt oder aktualisiert werden soll. den Selektor einschließen, `.initiateUpload.json` um anzugeben, dass die Anforderung darin besteht, einen binären Upload zu starten. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`:
+Der erste Schritt besteht darin, eine HTTP POST-Anforderung an den Ordner zu senden, in dem das Asset erstellt oder aktualisiert werden soll. den Selektor einschließen, `.initiateUpload.json` um anzugeben, dass die Anforderung darin besteht, mit einem binären Upload zu beginnen. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`:
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
@@ -78,11 +78,11 @@ Bei erfolgreichem Abschluss der Anforderung wird ein 201-Statuscode und ein Text
 
 * `(string) completeURI`: Der URI, der aufgerufen werden sollte, wenn der Binärladevorgang abgeschlossen ist. Dies kann ein absoluter oder relativer URI sein, und Clients sollten in der Lage sein, beides zu handhaben. d. h. der Wert kann `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` (siehe [Abschließen des Uploads](#complete-upload)) sein.
 * `(string) folderPath`: Vollständiger Pfad zu dem Ordner, in den die Binärdatei hochgeladen wird.
-* `(array) (files)`: Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der initiativen Anforderung bereitgestellt werden.
+* `(array) (files)`: Eine Liste von Elementen, deren Länge und Reihenfolge mit der Liste der binären Informationen übereinstimmen, die in der Initiierungsanforderung bereitgestellt werden.
 * `(string) fileName`: Der Name der entsprechenden Binärdatei, wie er in der Anfrage zum Initiieren angegeben ist. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
 * `(string) mimeType`: Der Mime-Typ der entsprechenden Binärdatei, wie in der In-Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
 * `(string) uploadToken`: Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
-* `(array) uploadURIs`: Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, auf die der binäre Inhalt hochgeladen werden soll (siehe Binärdatei [hochladen](#upload-binary)).
+* `(array) uploadURIs`: Eine Liste von Zeichenfolgen, deren Werte vollständige URIs sind, auf die der binäre Inhalt hochgeladen werden soll (siehe Binärdatei [hochladen](#upload-binary)).
 * `(number) minPartSize`: Die Mindestlänge (in Byte) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
 * `(number) maxPartSize`: Die maximale Länge (in Byte) von Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
 
@@ -93,8 +93,8 @@ Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-
 Eine mögliche Möglichkeit hierfür ist die Berechnung der Bauteilgröße anhand der Anzahl der Upload-URIs, die von der API bereitgestellt werden. Beispiel unter der Annahme, dass die Gesamtgröße der Binärdatei 20.000 Byte und die Anzahl der Upload-URIs 2 beträgt:
 
 * Berechnen Sie die Größe des Teils, indem Sie die Gesamtgröße durch die Anzahl der URIs teilen: 20.000 / 2 = 10.000
-* POST-Bytebereich 0-9.999 der Binärdatei auf den ersten URI in der Liste der Upload-URIs
-* POST-Bytebereich 10.000-19.999 der Binärdatei bis zum zweiten URI in der Liste der Upload-URIs
+* POST-Bytebereich 0-9.999 der Binärdatei bis zum ersten URI in Liste von Upload-URIs
+* POST-Bytebereich 10.000-19.999 der Binärdatei bis zur zweiten URI in Liste von Upload-URIs
 
 Bei erfolgreicher Ausführung antwortet der Server auf jede Anforderung mit einem `201` Statuscode.
 
@@ -129,7 +129,7 @@ Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripten und
 
 ### Veraltete APIs zum Hochladen von Assets {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Für Experience Manager als Cloud-Dienst werden nur die neuen Upload-APIs unterstützt. APIs aus Experience Manager 6.5 werden nicht mehr unterstützt.
@@ -144,20 +144,20 @@ Methoden zum Hochladen oder Aktualisieren von Assets oder Darstellungen (binäre
 * [Open Source-Befehlszeilenwerkzeug](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## Arbeitsabläufe für die Verarbeitung und Nachbearbeitung von Assets {#post-processing-workflows}
+## Verarbeitung und Nachbearbeitung von Assets Workflows {#post-processing-workflows}
 
-Die Verarbeitung der Assets erfolgt größtenteils auf der Grundlage der Konfiguration der **[!UICONTROL Verarbeitungsprofile]** durch [Asset-Mikrodienste](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)und erfordert keine Entwicklererweiterungen.
+Die Verarbeitung der Assets erfolgt größtenteils auf der Grundlage der Konfiguration der **[!UICONTROL Verarbeitungs-Profil]** durch [Asset-Mikrodienste](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)und erfordert keine Entwicklererweiterungen.
 
-Für die Konfiguration des Arbeitsablaufs nach der Verarbeitung können Sie standardmäßige AEM-Workflows mit Erweiterungen verwenden (z. B. können benutzerdefinierte Schritte verwendet werden). Lesen Sie den folgenden Unterabschnitt, um zu verstehen, welche Arbeitsablaufschritte in den Asset-Nachbearbeitungsabläufen verwendet werden können.
+Für die Konfiguration des Arbeitsablaufs nach der Verarbeitung können Sie AEM Workflows mit Erweiterungen (z. B. benutzerdefinierte Schritte) verwenden. Lesen Sie den folgenden Unterabschnitt, um zu verstehen, welche Arbeitsablaufschritte in der Workflows zur Nachbearbeitung von Assets verwendet werden können.
 
 ### Arbeitsablaufschritte im Arbeitsablauf nach der Verarbeitung {#post-processing-workflows-steps}
 
 >[!NOTE]
 Dieser Abschnitt betrifft hauptsächlich Kunden, die von früheren Versionen von AEM auf AEM als Cloud-Dienst aktualisieren.
 
-Aufgrund eines neuen Bereitstellungsmodells, das mit Experience Manager als Cloud-Dienst eingeführt wurde, werden bestimmte Workflow-Schritte, die im Workflow vor der Einführung von Asset-Mikrodiensten verwendet werden, möglicherweise nicht mehr für Arbeitsabläufe nach der Verarbeitung unterstützt. `DAM Update Asset` Beachten Sie, dass die meisten von ihnen durch eine viel einfachere Konfiguration und Verwendung von Asset-Mikrodiensten ersetzt werden.
+Aufgrund eines neuen Bereitstellungsmodells, das mit Experience Manager als Cloud-Dienst eingeführt wurde, werden bestimmte Arbeitsablaufschritte, die im Arbeitsablauf vor der Einführung von Asset-Mikrodiensten verwendet werden, möglicherweise nicht mehr für die Nachbearbeitung von Workflows unterstützt. `DAM Update Asset` Beachten Sie, dass die meisten von ihnen durch eine viel einfachere Konfiguration und Verwendung von Asset-Mikrodiensten ersetzt werden.
 
-Im Folgenden finden Sie eine Liste mit Modellen für technische Arbeitsabläufe und deren Support in AEM als Cloud-Dienst:
+Im Folgenden finden Sie eine Liste der Modelle für technische Arbeitsabläufe und deren Support in AEM als Cloud-Dienst:
 
 ### Unterstützte Workflow-Schritte {#supported-workflow-steps}
 
