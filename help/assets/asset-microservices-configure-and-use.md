@@ -3,7 +3,7 @@ title: Asset-Mikrodienste für die Asset-Verarbeitung konfigurieren und verwende
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Mikrodienste konfigurieren und verwenden, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 # Erste Schritte mit Asset-Microservices {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten, die von Adobe verwaltet werden, um eine optimale Verarbeitung verschiedener Asset-Typen und Verarbeitungsoptionen zu gewährleisten.
+Asset Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten. Adobe verwaltet die Dienste für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
 
-Die Asset-Verarbeitung wird auf der Grundlage der Konfiguration in **[!UICONTROL Verarbeitungswerkzeugen]** durchgeführt, die ein Standardset bereitstellen und es dem Administrator ermöglichen, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Um Erweiterbarkeit und vollständige Anpassung zu ermöglichen, ermöglicht die Asset-Verarbeitung eine optionale Konfiguration der Nachbearbeitung Workflows, die dann vom Administrator erstellt und gepflegt werden.
+Die Verarbeitung von Assets hängt von der Konfiguration in **[!UICONTROL verarbeitenden Profilen]** ab, die eine Standardeinstellung bereitstellen und es einem Administrator ermöglichen, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Administratoren können die Konfigurationen der Workflows für die Nachbearbeitung erstellen und verwalten, einschließlich optionaler Anpassungen. Die Anpassung von Workflows ermöglicht Erweiterbarkeit und vollständige Anpassung.
 
-Nachstehend wird ein übergeordneter Fluss für die Asset-Verarbeitung in Experience Manager als Cloud-Dienst dargestellt.
+Darunter befindet sich ein Fluss auf hoher Ebene für die Asset-Verarbeitung.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Für Kunden, die von früheren Versionen von Experience Manager aktualisieren: Die in diesem Abschnitt beschriebene Asset-Verarbeitung ersetzt das Workflow-Modell &quot;DAM Update Asset&quot;, das zuvor für die Verarbeitung von Assets verwendet wurde. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt, und die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
+> Die hier beschriebene Asset-Verarbeitung ersetzt das `DAM Update Asset` Workflow-Modell, das in früheren Versionen von Experience Manager vorhanden ist. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt, und die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
 
 ## Erste Schritte mit der Asset-Verarbeitung {#get-started}
 
@@ -77,17 +75,18 @@ Mit der Aktion &quot; **[!UICONTROL Erstellen]** &quot;können weitere Profil zu
 
 Jede Konfiguration des verarbeitenden Profils enthält eine Liste von Darstellungen. Für jede Darstellung können Sie Folgendes angeben:
 
-* Darstellungsname
-* Darstellungsformat (JPEG, PNG oder GIF werden unterstützt)
-* Darstellungsbreite und -höhe in Pixel (sofern nicht angegeben, wird die vollständige Pixelgröße des Originals angenommen)
-* Darstellungsqualität (für JPEG) in Prozent
-* Eingeschlossene und ausgeschlossene MIME-Typen definieren, für welche Asset-Typen das verarbeitende Profil gilt
+* Darstellungsname.
+* Unterstütztes Ausgabeformat, z. B. JPEG, PNG oder GIF.
+* Darstellungsbreite und -höhe in Pixel. Wenn sie nicht angegeben ist, wird die vollständige Pixelgröße des Originalbilds verwendet.
+* Darstellungsqualität von JPEG in Prozent.
+* Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
 ![processing-Profils-adding](assets/processing-profiles-adding.png)
 
-Wenn ein neues Profil gespeichert wird, wird es zur Liste der konfigurierten Profil hinzugefügt. Diese Profil zur Verarbeitung können dann auf Ordner in der Ordnerhierarchie angewendet werden, damit sie für Asset-Uploads und -Assets dort wirksam sind.
+Wenn Sie ein neues Profil erstellen und speichern, wird es zur Liste der konfigurierten Profil hinzugefügt. Sie können diese verarbeitenden Profil auf Ordner in der Ordnerhierarchie anwenden, um sie beim Hochladen von Assets und bei der Verarbeitung von Assets effektiv zu gestalten.
 
-![processing-Profils-Liste](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Darstellungsbreite und -höhe {#rendition-width-height}
 
