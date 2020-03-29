@@ -2,14 +2,14 @@
 title: Hinzufügen Ihrer digitalen Assets mit Adobe Experience Manager
 description: Hinzufügen Ihrer digitalen Assets als Cloud-Dienst an Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Digitale Assets in Adobe Experience Manager Hinzufügen {#add-assets-to-experience-manager}
 
-Durch das Hochladen Ihrer digitalen Dateien in Adobe Experience Manager wird der binäre Inhalt der Datei mit Rich-Metadaten, Smart-Tags, Darstellungen und anderen DAM-Diensten (Digital Asset Management) erweitert. Sie können verschiedene Dateitypen (z. B. Bilder, PDF-Dateien, Rohdateien usw.) aus Ihrem lokalen Ordner oder einem Netzlaufwerk in Experience Manager Assets hochladen.
+Adobe Experience Manager bereichert den binären Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Darstellungen und anderen DAM-Diensten (Digital Asset Management). Sie können verschiedene Dateitypen, wie z. B. Bilder, Dokumente und Rohbilddateien, aus Ihrem lokalen Ordner oder einem Netzlaufwerk in Experience Manager Assets hochladen.
 
 Es stehen eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripten, die Kunden erstellen würden, und automatisierte Erfassungsintegrationen, die als AEM-Erweiterungen hinzugefügt werden.
 
