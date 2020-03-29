@@ -3,7 +3,7 @@ title: 'Assets-APIs für die Verwaltung digitaler Assets in Adobe Experience Man
 description: Mithilfe von Assets-APIs können Sie grundlegende Vorgänge zum Erstellen, Lesen und Löschen (CRUD) zum Verwalten von Assets durchführen, einschließlich Binärdateien, Metadaten, Darstellungen, Kommentare und Inhaltsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ Der Inhaltstyp des Anforderungstextes sollte `application/x-www-form-urlencoded`
 * `(string) fileName`: Erforderlich. Der Name des Assets, wie er in der Instanz angezeigt wird.
 * `(number) fileSize`: Erforderlich. Die Gesamtlänge der hochzuladenden Binärdatei in Byte.
 
-Beachten Sie, dass eine einzelne Anforderung zum Initiieren von Uploads für mehrere Binärdateien verwendet werden kann, sofern jede Binärdatei die erforderlichen Felder enthält.
-
-Bei erfolgreichem Abschluss der Anforderung wird ein 201-Statuscode und ein Text mit JSON-Daten im folgenden Format angezeigt:
+Eine einzelne Anforderung kann verwendet werden, um Uploads für mehrere Binärdateien zu starten, sofern jede Binärdatei die erforderlichen Felder enthält. Bei erfolgreicher Ausführung antwortet die Anforderung mit einem `201` Statuscode und einem Text, der JSON-Daten im folgenden Format enthält:
 
 ```
 {
@@ -74,17 +72,17 @@ Bei erfolgreichem Abschluss der Anforderung wird ein 201-Statuscode und ein Text
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`: Der URI, der aufgerufen werden sollte, wenn der Binärladevorgang abgeschlossen ist. Dies kann ein absoluter oder relativer URI sein, und Clients sollten in der Lage sein, beides zu handhaben. d. h. der Wert kann `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` (siehe [Abschließen des Uploads](#complete-upload)) sein.
-* `(string) folderPath`: Vollständiger Pfad zu dem Ordner, in den die Binärdatei hochgeladen wird.
-* `(array) (files)`: Eine Liste von Elementen, deren Länge und Reihenfolge mit der Liste der binären Informationen übereinstimmen, die in der Initiierungsanforderung bereitgestellt werden.
-* `(string) fileName`: Der Name der entsprechenden Binärdatei, wie er in der Anfrage zum Initiieren angegeben ist. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
-* `(string) mimeType`: Der Mime-Typ der entsprechenden Binärdatei, wie in der In-Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
-* `(string) uploadToken`: Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
-* `(array) uploadURIs`: Eine Liste von Zeichenfolgen, deren Werte vollständige URIs sind, auf die der binäre Inhalt hochgeladen werden soll (siehe Binärdatei [hochladen](#upload-binary)).
-* `(number) minPartSize`: Die Mindestlänge (in Byte) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
-* `(number) maxPartSize`: Die maximale Länge (in Byte) von Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
+* `completeURI` (Zeichenfolge): Rufen Sie diesen URI auf, wenn das Hochladen der Binärdatei abgeschlossen ist. Der URI kann ein absoluter oder relativer URI sein, und Clients sollten in der Lage sein, beides zu handhaben. Das heißt, der Wert kann `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` Siehe [vollständiger Upload](#complete-upload)sein.
+* `folderPath` (Zeichenfolge): Vollständiger Pfad zu dem Ordner, in den die Binärdatei hochgeladen wird.
+* `(files)` (Array): Eine Liste von Elementen, deren Länge und Reihenfolge mit der Liste der binären Informationen übereinstimmen, die in der Initiierungsanforderung bereitgestellt werden.
+* `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie er in der Anfrage zum Initiieren angegeben ist. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
+* `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie in der In-Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
+* `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anforderung enthalten sein.
+* `uploadURIs` (Array): Eine Liste von Zeichenfolgen, deren Werte vollständige URIs sind, auf die der binäre Inhalt hochgeladen werden soll (siehe Binärdatei [hochladen](#upload-binary)).
+* `minPartSize` (Nummer): Die Mindestlänge (in Byte) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
+* `maxPartSize` (Nummer): Die maximale Länge (in Byte) von Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
 
 ### Binärdatei hochladen {#upload-binary}
 
