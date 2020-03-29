@@ -3,20 +3,20 @@ title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Experience Manager Assets als Hyperlink freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Freigeben und Verteilen von in Experience Manager verwalteten Assets {#share-assets-from-aem}
 
-Mit Adobe Experience Manager (AEM)-Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Entitäten, einschließlich Partner und Anbieter, freigeben. Sie können die folgenden Methoden verwenden, um Assets aus Experience Manager Assets als Cloud-Dienst freizugeben:
+Mit Adobe Experience Manager (AEM)-Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Entitäten, einschließlich Partner und Anbieter, freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets als Cloud-Dienst freizugeben:
 
-* Freigeben von als Link
-* Herunterladen von Assets
-* Über AEM-Desktop-App freigeben
-* Über Adobe Asset Link freigeben
-* (Anstehende Funktion) Freigeben mit dem Markenportal
+* Als Link freigeben.
+* Laden Sie Assets herunter und geben Sie sie separat frei.
+* Freigeben über die AEM-Desktop-App.
+* Über Adobe Asset Link freigeben.
+* (Anstehende Funktion) Freigeben mit dem Markenportal.
 
 ## Freigeben von Assets als Link {#sharelink}
 
@@ -33,7 +33,7 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
    >[!NOTE]
    >
-   >Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn erneut für die Benutzer frei.
+   >Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -110,11 +110,13 @@ Benutzer können einige Assets herunterladen und diese außerhalb von Experience
 
 Marketingexperten und Anwender aus der Branche können genehmigte Assets mit ihren Kreativprofis problemlos gemeinsam verwenden.
 
-* **AEM-Desktop-App**: Die App funktioniert unter Windows und Mac. Siehe Übersicht über [Desktop-Apps](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen-, Such- und Vorschauen-Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können neue Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit der Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM-Desktop-App**: Die App funktioniert unter Windows und Mac. Siehe Übersicht über [Desktop-Apps](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen-, Such- und Vorschauen-Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und sie für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit der Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Die Kreativprofis können Assets direkt in Adobe InDesign, Adobe Illustrator und Adobe Fotoshop suchen und verwenden.
 
 ## Konfigurieren der Asset-Freigabe {#configure-sharing}
+
+Die verschiedenen Optionen zum Freigeben der Assets erfordern eine bestimmte Konfiguration und müssen spezifische Voraussetzungen erfüllen.
 
 ### Asset-Linkfreigabe konfigurieren {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit der Desktop-App {#desktop-actions}
 
-Über die Assets-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder Assets auschecken und öffnen, um sie in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden Desktop-Aktionen genannt. Wenn diese nicht aktiviert sind, lesen Sie [Aktivieren von Desktop-Aktionen in der AEM-Weboberfläche](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Über die Assets-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder Assets auschecken und öffnen, um sie in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als &quot;Desktop-Aktionen&quot;bezeichnet. Um sie zu aktivieren, finden Sie unter [Aktivieren von Desktop-Aktionen in der AEM-Weboberfläche](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Desktop-Aktionen aktivieren, die beim Arbeiten mit der Desktop-App als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
