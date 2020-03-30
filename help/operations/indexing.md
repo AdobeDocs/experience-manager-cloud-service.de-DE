@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: 'Inhaltssuche und -indizierung '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -31,7 +31,7 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Auf einer hohen Ebene in AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
-Die verwendete Indexversion wird mithilfe von Flags in den Indexdefinitionen über das `useIfExist` Flag konfiguriert. Ein Index kann nur in einer Version der Anwendung (z. B. nur blau oder nur grün) oder in beiden Versionen verwendet werden. Detaillierte Dokumentation finden Sie unter [Index-Management mit Blue-Green-Bereitstellungen](#index-management-using-blue-green-deployments).
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. Kunden können sehen, ob der Indexierungsauftrag auf der Buildseite von Cloud Manager abgeschlossen ist, und erhalten eine Benachrichtigung, wenn die neue Version Traffic aufnehmen kann.
 
