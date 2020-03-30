@@ -2,7 +2,7 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ Stattdessen sollte der Replizierungsspülmittel verwendet werden. Dies kann mith
 
 Das unten dargestellte Diagramm veranschaulicht dies.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 Wenn Bedenken bestehen, dass der Dispatcher-Cache nicht geleert wird, wenden Sie sich an den [Kundensupport](https://helpx.adobe.com/support.ec.html) , der den Dispatcher-Cache ggf. bereinigen kann.
 
