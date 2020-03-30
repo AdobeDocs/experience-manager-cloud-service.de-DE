@@ -2,7 +2,7 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ Der Datenfluss sieht folgendermaßen aus:
 
 Der Content-Typ HTML/Text läuft nach 300 s (5 Minuten) auf der Dispatcher-Ebene ab. Dies ist ein Schwellenwert, den sowohl der Dispatcher-Cache als auch CDN beachten. Bei der Bereitstellung des Veröffentlichungsdiensts wird der Dispatcher-Cache geleert und anschließend erwärmt, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
-Die folgenden Abschnitte enthalten genauere Informationen zum Content Versand, einschließlich CDN-Konfiguration und Dispatcher-Zwischenspeicherung.
+Die folgenden Abschnitte enthalten genauere Informationen zum Content Versand, einschließlich CDN-Konfiguration und -Zwischenspeicherung.
 
 Informationen zur Replizierung vom Autorendienst zum Veröffentlichungsdienst finden Sie [hier](/help/operations/replication.md).
 
 ## CDN {#cdn}
 
-AEM als Cloud-Dienst wird mit einem Standard-CDN ausgeliefert. Hauptzweck ist es, die Latenz zu reduzieren, indem zwischengespeicherte Inhalte von den CDN-Knoten an der Kante in der Nähe des Browsers bereitgestellt werden. Es wird vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert.
+AEM als Cloud-Dienst wird mit einem integrierten CDN ausgeliefert. Hauptzweck ist es, die Latenz zu reduzieren, indem zwischengespeicherte Inhalte von den CDN-Knoten an der Kante in der Nähe des Browsers bereitgestellt werden. Es wird vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert.
 
 Insgesamt stehen AEM Angebots zwei Optionen zur Verfügung:
 
 1. AEM Managed CDN - AEM&#39;s vordefiniertes CDN. Es handelt sich um eine eng integrierte Option, die keine umfangreichen Kundeninvestitionen zur Unterstützung der CDN-Integration mit AEM erfordert.
 1. Kundenverwaltetes CDN verweist auf AEM Managed CDN - der Kunde verweist sein eigenes CDN auf das vordefinierte CDN von AEM. Der Kunde muss weiterhin sein eigenes CDN verwalten, aber die Investitionen in die Integration mit AEM sind gering.
 
-Die erste Option sollte die meisten Leistungs- und Sicherheitsanforderungen des Kunden erfüllen. Darüber hinaus sind die Investitionen der Kunden und die laufende Wartung am wenigsten erforderlich.
+Die erste Option sollte die meisten Leistungs- und Sicherheitsanforderungen des Kunden erfüllen. Darüber hinaus erfordert es minimalen Kundenaufwand.
 
 Die zweite Option ist von Fall zu Fall zulässig. Die Entscheidung beruht auf der Erfüllung bestimmter Voraussetzungen, darunter auch dem Kunden, der über eine veraltete Integration mit seinem CDN-Anbieter verfügt, die schwer aufzugeben ist.
 
@@ -53,7 +53,7 @@ Nachfolgend finden Sie eine Entscheidungsmatrix zum Vergleich der beiden Optione
 | **CDN-Expertise** | Keine | Benötigt mindestens eine Teilzeit-Engineering-Ressource mit detailliertem CDN-Wissen, die das CDN des Kunden konfigurieren kann. |
 | **Sicherheit** | Verwaltet von Adobe. | Verwaltet von Adobe (und optional vom Kunden bei seinem eigenen CDN). |
 | **Leistung** | Optimiert von Adobe. | Einige AEM-CDN-Funktionen sind nützlich, aber möglicherweise ein kleiner Leistungseinbruch aufgrund des zusätzlichen Hosts. **Hinweis**: Hopfen vom Kunden CDN bis Fastly CDN wahrscheinlich effizient sein). |
-| **Caching** | Unterstützt Cache-Kopfzeilen, die auf Dispatcher-Ebene angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf Dispatcher-Ebene angewendet werden. |
+| **Caching** | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. |
 | **Funktionen zur Bild- und Videokomprimierung** | Kann mit Adobe Dynamic Media verwendet werden. | Kann mit Adobe Dynamic Media oder einer kundenverwalteten CDN-Bild-/Videolösung verwendet werden. |
 
 ### AEM Managed CDN {#aem-managed-cdn}
@@ -62,6 +62,9 @@ Die Vorbereitung auf Content Versand mithilfe des standardmäßigen CDN von Adob
 
 1. Sie stellen Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen freigeben. Bitte stimmen Sie sich mit dem Kundensupport auf dieser Aufgabe ab.
    **Hinweis:** AEM als Cloud-Dienst unterstützt keine DV-Zertifikate (Domain Validated).
+1. Sie sollten den Kundensupport informieren:
+   * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert.
+   * wenn eine IP-Whitelist erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
 1. Der Kundensupport koordiniert dann mit Ihnen die zeitliche Abfolge für einen CNAME-DNS-Datensatz und weist deren FQDN auf `adobe-aem.map.fastly.net`.
 1. Sie werden benachrichtigt, wenn die SSL-Zertifikate ablaufen, damit Sie die neuen SSL-Zertifikate erneut senden können.
 
@@ -90,13 +93,13 @@ Konfigurationsanweisungen:
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Kundensupport überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
-### Caching {#caching}
+## Caching {#caching}
 
-Der Zwischenspeicherungsprozess befolgt die folgenden Regeln.
+Die Zwischenspeicherung am CDN kann mithilfe von Dispatcher-Regeln konfiguriert werden. Beachten Sie, dass der Dispatcher auch die resultierenden Cache-Ablaufkopfzeilen berücksichtigt, wenn sie in der Dispatcher-Konfiguration aktiviert `enableTTL` sind. Dies bedeutet, dass bestimmte Inhalte auch dann aktualisiert werden, wenn Inhalte erneut veröffentlicht werden.
 
 ### HTML/Text {#html-text}
 
-* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene gesendet wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene ausgestrahlt wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME` Variable in der Verwendung von AEM als Cloud-Dienst-SDK-Dispatcher-Tools definiert `global.vars` wird.
 
 Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cache` der folgenden Regel steht:
@@ -106,15 +109,15 @@ Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cac
 { /glob "*" /type "allow" }
 ```
 
-* kann auf einer feineren Ebene durch apache mod_headers Direktiven überschrieben werden. Beispiel:
+* kann auf einer feineren Ebene durch die folgenden apache mod_headers-Direktiven überschrieben werden:
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cache` der folgenden Regel steht:
+Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` der folgenden Regel (die sich in der Standardkonfiguration befindet) vorliegt:
 
 ```
 /0000
@@ -128,32 +131,41 @@ Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cac
 * Durch Verwendung des clientseitigen Bibliotheksrahmens von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da Änderungen als neue Dateien mit einem eindeutigen Pfad angezeigt werden.  Mit anderen Worten, HTML, die auf die Client-Bibliotheken verweisen, werden nach Bedarf erstellt, damit Kunden neue Inhalte während der Veröffentlichung erleben können. Die Cachesteuerung ist bei älteren Browsern, die den Wert &quot;unveränderlich&quot;nicht einhalten, auf &quot;unveränderlich&quot;oder auf 30 Tage eingestellt.
 * Weitere Informationen finden Sie im Abschnitt [Clientseitige Bibliotheken und Versionskonsistenz](#content-consistency) .
 
-### Bilder {#images}
+### Bilder und alle Inhalte, die groß genug sind und in der Blob-Datenspeicherung gespeichert sind {#images}
 
-* nicht zwischengespeichert
-
-### Sonstige Inhaltstypen {#other-content}
-
-* keine standardmäßige Zwischenspeicherung
-* kann durch Apache überschrieben werden `mod_headers`. Beispiel:
+* standardmäßig nicht zwischengespeichert
+* kann mithilfe der folgenden Apache- `mod_headers` Richtlinien auf feinere abgestufte Ebene eingestellt werden:
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*Andere Methoden zum Festlegen von Cache-Headern können ebenfalls funktionieren
+Es muss sichergestellt werden, dass eine Datei unter src/conf.dispatcher.d/cache die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
 
-Vor der Annahme von Live-Traffic sollten Kunden beim Adobe-Kundensupport überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+Stellen Sie sicher, dass Assets, die nicht im Cache gespeichert, sondern privat gespeichert werden sollen, nicht zu den Filtern der LocationMatch-Direktive gehören.
+
+* Beachten Sie, dass andere Methoden, einschließlich des Projekts [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, Werte nicht erfolgreich außer Kraft setzen.
+
+### Andere Inhaltdateitypen im Knotenspeicher {#other-content}
+
+* keine standardmäßige Zwischenspeicherung
+* default kann nicht mit der für HTML/Textdateitypen verwendeten `EXPIRATION_TIME` Variablen eingestellt werden
+* Cache-Ablauf kann mit derselben LocationMatch-Strategie festgelegt werden, die im Abschnitt html/text beschrieben wird, indem der entsprechende regex angegeben wird
 
 ## Dispatcher {#disp}
 
 Traffic wird über einen Apache-Webserver ausgeführt, der Module einschließlich des Dispatchers unterstützt. Der Dispatcher wird primär als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu beschränken, um die Leistung zu erhöhen.
 
-Inhalte des Typs HTML/Text werden mit Cache-Kopfzeilen eingestellt, die einem 300-Minuten-Ablaufdatum (5 Minuten) entsprechen.
+Wie im Abschnitt zum Zwischenspeichern des CDN beschrieben, können Regeln auf die Dispatcher-Konfiguration angewendet werden, um alle standardmäßigen Ablaufeinstellungen für den Cache zu ändern.
 
-Der Rest dieses Abschnitts beschreibt Überlegungen zur Ungültigmachung des Dispatcher-Cache.
+Der Rest dieses Abschnitts beschreibt Überlegungen zur Ungültigmachung des Dispatcher-Cache. Für die meisten Kunden sollte es nicht erforderlich sein, den Dispatcher-Cache zu ungültigen, sondern sich stattdessen darauf zu verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden, und das CDN die Cache-Ablaufkopfzeilen respektiert.
 
 ### Dispatcher-Cache-Ungültigkeit während der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
