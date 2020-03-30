@@ -2,7 +2,7 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ Strenge clientlib-Versionen sind in allen AEM als Cloud-Dienst-Umgebung standard
 
 So aktivieren Sie eine strikte clientlib-Version im lokalen SDK QuickStart:
 
-1. Navigieren Sie zum OSGi Configuration Manager. <host>/system/console/configMgr
+1. Navigate to the OSGi Configuration manager `<host>/system/console/configMgr`
 1. Suchen Sie die OSGi-Konfiguration für Adobe Granite HTML Library Manager:
    * Aktivieren Sie das Kontrollkästchen, um die strikte Versionierung zu aktivieren.
    * Geben Sie in das Feld Long term client side cache key den Wert / ein.*;Hash
