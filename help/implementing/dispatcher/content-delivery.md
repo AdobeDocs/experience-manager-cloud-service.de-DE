@@ -2,7 +2,7 @@
 title: Content Versand
 description: 'Content Versand '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ Die Zwischenspeicherung am CDN kann mithilfe von Dispatcher-Regeln konfiguriert 
 
 * standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene ausgestrahlt wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME` Variable in der Verwendung von AEM als Cloud-Dienst-SDK-Dispatcher-Tools definiert `global.vars` wird.
-
-Sie müssen sicherstellen, dass für eine Datei unter `src/conf.dispatcher.d/cache` der folgenden Regel steht:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * kann auf einer feineren Ebene durch die folgenden apache mod_headers-Direktiven überschrieben werden:
 
 ```
