@@ -1,29 +1,29 @@
 ---
-title: Verwalten von Umgebungen - Cloud-Dienst
-description: Verwalten von Umgebungen - Cloud-Dienst
+title: Umgebung verwalten - Cloud-Dienst
+description: Umgebung verwalten - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
 
 # Verwalten von Umgebungen {#manage-environments}
 
-Im folgenden Abschnitt werden die Umgebungstypen beschrieben, die ein Benutzer erstellen kann, und die Möglichkeiten zum Erstellen einer Umgebung durch den Benutzer beschrieben.
+Im folgenden Abschnitt werden die Umgebung beschrieben, die ein Benutzer erstellen kann, sowie die Möglichkeiten zum Erstellen einer Umgebung.
 
-## Umgebungstypen {#environment-types}
+## Umgebung {#environment-types}
 
-Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebungstypen erstellen (innerhalb der Grenzen dessen, was dem jeweiligen Mandanten zur Verfügung steht).
+Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebung erstellen (innerhalb der Grenzen dessen, was dem jeweiligen Mandanten zur Verfügung steht).
 
 * **Produktions- und Stage-Umgebung**:
 Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test- und Produktionszwecke verwendet.
 
-* **Entwicklung**: Eine Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken geschaffen werden und wird nur mit Nicht-Produktionsleitungen in Verbindung gebracht.
+* **Entwicklung**: Eine Entwicklungs-Umgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird nur mit Nicht-Produktionsleitungen in Verbindung gebracht.
 
    >[!NOTE]
-   >Eine Entwicklungsumgebung, die automatisch in einem Sandbox-Programm erstellt wird, wird so konfiguriert, dass sie Sites und Assets-Lösungen enthält.
+   >Eine Entwicklungs-Umgebung, die automatisch in einem Sandbox-Programm erstellt wird, wird so konfiguriert, dass sie Sites- und Asset-Lösungen enthält.
 
-   In der folgenden Tabelle sind die Umgebungstypen und ihre Attribute zusammengefasst:
+   Die folgende Tabelle fasst die Umgebung und ihre Attribute zusammen:
 
    | Name | Autorenebene | Veröffentlichungsstufe | Benutzer kann | Benutzer kann | Pipeline, die mit der Umgebung verknüpft werden kann |
    |--- |--- |--- |--- |---|---|
@@ -32,17 +32,19 @@ Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test-
    | Entwicklung | Ja | Ja, wenn Sites enthalten sind | Ja | Ja | Produktionsfremde Pipeline |
 
    >[!NOTE]
-   >
-Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test- und Produktionszwecke verwendet.  Benutzer können nicht nur eine Stage- oder Produktionsumgebung erstellen.
+   >Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test- und Produktionszwecke verwendet.  Benutzer können nicht nur eine Stage- oder Produktions-Umgebung erstellen.
 
 ## Hinzufügen einer Umgebung {#adding-environments}
 
 
-1. Der Benutzer klickt auf die Schaltfläche Umgebung **hinzufügen** , um eine Umgebung hinzuzufügen.
+1. Der Benutzer klickt auf die Schaltfläche **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
+
+   >[!NOTE]
+   >Auf diese Schaltfläche kann auch von der Seite &quot;Umgebung&quot;oder von der Karte &quot;Umgebung&quot;aus zugegriffen werden. Als Benutzer wird diese Option nur angezeigt, wenn Sie über die erforderliche Berechtigung verfügen. Wenden Sie sich bei Fragen an Ihren Adobe-Kundenbetreuer.
 
    ![](assets/add-environment.png)
 
-1. Das Dialogfeld &quot;Umgebung **** hinzufügen&quot;wird angezeigt. Der Benutzer muss Details wie **Umgebungstyp** , **Umgebungsname** und **Umgebungsbeschreibung** übermitteln (je nach dem Ziel des Benutzers, die Umgebung innerhalb der Grenzen des für den jeweiligen Mandanten verfügbaren Bereichs zu erstellen).
+1. Das Dialogfeld **Umgebung hinzufügen** wird angezeigt. Der Benutzer muss Details wie **Umgebungstyp**, **Umgebungsname** und **Umgebungsbeschreibung** übermitteln (je nach Ziel des Benutzers, die Umgebung innerhalb der Grenzen des für den jeweiligen Mandanten verfügbaren Bereichs zu erstellen).
 
    ![](assets/add-environment2.png)
 
@@ -57,16 +59,16 @@ Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test-
    >Falls Sie noch keine Pipeline für die Nicht-Produktion eingerichtet haben, wird im Bildschirm &quot; *Übersicht* &quot;die Karte angezeigt, von der aus Sie Ihre Nicht-Produktionspipeline erstellen können.
 
 
-## Umgebung aktualisieren {#updating-dev-environment}
+## Aktualisieren der Umgebung {#updating-dev-environment}
 
-Updates der Stage- und Produktionsumgebungen werden automatisch von Adobe verwaltet.
+Updates der Stage- und Production-Umgebung werden automatisch von Adobe verwaltet.
 
-Updates für Entwicklungsumgebungen werden von den Benutzern des Programms verwaltet. Wenn in einer Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, zeigt der Status auf der Umgebungskarte auf dem Startbildschirm die **AKTUALISIERUNG** an.
+Updates der Entwicklungs-Umgebung werden von den Benutzern des Programms verwaltet. Wenn eine Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausführt, zeigt der Status auf der Umgebung-Karte auf dem Startbildschirm die **AKTUALISIERUNG** an.
 
 ![](assets/manage-environments2.png)
 )
 
-Wenn dieser Status angezeigt wird, ist die Option **Aktualisieren** im Dropdown-Menü sowohl auf der Umgebungskarte als auch im Menü **Verwalten** verfügbar, wenn Sie auf **Details** aus der Karte **UMWELT** klicken.
+Wenn dieser Status angezeigt wird, ist die Option **Aktualisieren** im Dropdownmenü sowohl auf der Umgebungskarte als auch im Menü **Verwalten** verfügbar, wenn Sie auf **Details** auf der Karte **UMGEBUNGEN** klicken.
 
 ![](assets/add-environment4.png)
 
