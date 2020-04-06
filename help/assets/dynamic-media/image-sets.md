@@ -2,7 +2,7 @@
 title: Bildsets
 description: Erfahren Sie, wie Sie mit Bildsätzen in dynamischen Medien arbeiten können
 translation-type: tm+mt
-source-git-commit: 8c7338110bb6d673bf80f274ff886539aead2847
+source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
@@ -78,9 +78,7 @@ If you have issues creating sets, see Images and Sets in [Troubleshooting Dynami
 
 ## Hochladen von Assets in Bildsets {#uploading-assets-in-image-sets}
 
-Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat, um optimale Zoomdetails zu erzielen. Mit dynamischen Medien können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixeln gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixeln oder eine beliebige andere Größenkombination mit bis zu 25 Megapixeln verwenden.
-
-Bildsets unterstützen zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
+Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat. Bildsets unterstützen zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
 Sie laden Bilder für Bildsets genauso wie [alle anderen Assets in Assets](/help/assets/manage-digital-assets.md#uploading-assets) hoch.
 
