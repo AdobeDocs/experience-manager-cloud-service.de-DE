@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -17,7 +17,7 @@ Im Interesse einer kontinuierlichen Verbesserung der AEM-Dokumentation ist die g
 
 ## Dokumentationsstandards
 
-Während wir Beiträge zu unserer Dokumentation begrüßen, sollte jeder Beitrag zur AEM-Dokumentation, entweder in Form einer Pull-Anfrage oder einer Ausgabe, unseren Beitrags- und Dokumentationsstandards entsprechen.
+Auch wenn wir Beiträge zu unserer Dokumentation begrüßen, muss jeder Beitrag zur AEM-Dokumentation in Form einer Pull-Anforderung oder eines Problems mit unseren Beitrags- und Dokumentationsstandards übereinstimmen.
 
 Beiträge, die diesen Standards nicht entsprechen, können abgelehnt werden.
 
@@ -33,9 +33,9 @@ Ausnahmen von dieser Regel gelten für die Versionshinweise, in denen bekannte P
 
 ### Dokumentationsbeiträge sind nicht zur Beantwortung technischer Fragen geeignet.
 
-Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht für die Beantwortung Ihrer Fragen zur Verwendung von AEM, zur Implementierung Ihres AEM-Projekts oder zur Lösung technischer Probleme vorgesehen.
+Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sollen nicht zur Beantwortung Ihrer Fragen über die Verwendung von AEM oder die Lösung technischer Probleme verwendet werden.
 
-Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
 ***Die Beiträge zur AEM-Dokumentation sind kein Ersatz für die Adobe-Kundenunterstützung*** . Solche Beiträge, die Antworten auf Supportfragen suchen, werden abgelehnt.
 
@@ -43,13 +43,13 @@ Any questions about the usage of AEM or technical errors you may have should be 
 
 Wenn Sie ein Problem erstellen, um Verbesserungen an der Dokumentation vorzuschlagen, müssen Sie Links zu den betroffenen Seiten einfügen. Wenn Sie ein Problem mit dem Link zum **Bearbeiten dieser Seite** auf einer Dokumentationsseite erstellen, wird das Problem automatisch mit einem Link zur Seite erstellt.
 
-Dies gilt nicht für Pull-Anfragen, da Pull-Anfragen von ihrer Natur auf die betroffene(n) Seite(n) verweisen.
+Dies gilt nicht für Pull-Anforderungen, da Pull-Anforderungen die betroffenen Seiten definitionsgemäß enthalten.
 
 ## Dokumentationsrichtlinien
 
 Wir bitten darum, dass alle Beiträge zu unserer Dokumentation bestimmten Stilrichtlinien folgen.
 
-Indem Sie diese Richtlinien befolgen, erleichtern Sie die Überprüfung Ihres Beitrags und beschleunigen somit dessen Aufnahme in unsere Dokumentation.
+Indem Sie diese Richtlinien befolgen, erleichtern Sie die Überprüfung Ihres Beitrags und beschleunigen somit dessen Aufnahme in unsere Dokumentation. Die Nichteinhaltung oder unvollständige Einhaltung dieser Richtlinien bedeutet jedoch nicht, dass der Beitrag abgelehnt wird.
 
 ### Sprache und Stil
 
