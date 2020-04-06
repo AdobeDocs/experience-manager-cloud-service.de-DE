@@ -2,7 +2,7 @@
 title: Veröffentlichen von Assets mit dynamischen Medien
 description: Anleitung zum Veröffentlichen von Asset mit dynamischen Medien
 translation-type: tm+mt
-source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. Nachdem Sie Ihre dynamischen Medien-Assets veröffentlicht haben, können Sie sie über URL oder Einbettung in eine Webseite einbetten.
 
-Sie können Assets, die Sie hochladen, auch sofort veröffentlichen - ohne Benutzereingriff. Sie können diese Assets auch selektiv veröffentlichen. Informationen hierzu finden Sie unter [Konfigurieren von dynamischen Medien](config-dm.md).
+Sie können Assets, die Sie hochladen, auch sofort veröffentlichen - ohne Benutzereingriff. Informationen hierzu finden Sie unter [Konfigurieren von dynamischen Medien](config-dm.md).
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt die Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht wurden und welche nicht.
 
