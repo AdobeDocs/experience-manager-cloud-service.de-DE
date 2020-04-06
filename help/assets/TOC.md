@@ -2,14 +2,13 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
 # Assets {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
 + [Wichtige Änderungen an AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architektur](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [Digital Rights Management für Assets](drm.md)
 + Konfigurieren, Verwalten und Erweitern von Assets {#admin}
    + [APIs und Referenzmaterial](developer-reference-material-apis.md)
+   + [Konfigurieren der Asset-Freigabe](configure-asset-sharing.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
-   + [Verarbeitungsprofile](/help/assets/dynamic-media/processing-profiles.md)
    + [Mehrsprachige Assets und Übersetzung von Assets](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Erweitern des Asset-Editors](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [XMP-Metadaten](xmp-metadata.md)
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
++ Freigeben und Verteilen von Assets {#brandportal}
+   + [Konfigurieren von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von AEM Assets im Markenportal](publish-to-brand-portal.md)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
