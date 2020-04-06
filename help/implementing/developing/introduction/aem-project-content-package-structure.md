@@ -1,13 +1,13 @@
 ---
-title: AEM-Projektstruktur
-description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung im Adobe Experience Manager Cloud-Dienst definieren.
+title: Verstehen der Inhaltspaket-Struktur eines Projekts
+description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung auf dem Adobe Experience Manager Cloud-Dienst ordnungsgemäß definieren.
 translation-type: tm+mt
-source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
+source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 ---
 
 
-# AEM-Projektstruktur
+# Grundlegendes zur Struktur eines Projekts Content Package im Adobe Experience Manager Cloud-Dienst {#understand-cloud-service-package-structure}
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ Die in diesem Dokument beschriebene Paketstruktur ist **sowohl** mit lokalen Ent
 
 `/apps` und `/libs` werden als **unveränderliche** Bereiche von AEM betrachtet, da sie nach dem Start von AEM (d. h. zur Laufzeit) nicht mehr geändert werden können (erstellen, aktualisieren, löschen). Jeder Versuch, einen unveränderlichen Bereich zur Laufzeit zu ändern, schlägt fehl.
 
-Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`usw. sind alle **veränderbare** Bereiche, d.h. sie können zur Laufzeit geändert werden.
+Alles andere im Repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. sind alle **veränderbare** Bereiche, d.h. sie können zur Laufzeit geändert werden.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ Dieses Diagramm bietet eine Übersicht über die empfohlene Projektstruktur und 
 
 Die empfohlene Anwendungsbereitstellungsstruktur lautet wie folgt:
 
-+ Das `ui.apps` Paket bzw. das Codepaket enthält den gesamten bereitzustellenden Code und stellt nur für `/apps`die Bereitstellung bereit. Zu den gebräuchlichen Elementen des `ui.apps` Pakets gehören:
++ Das `ui.apps` Paket bzw. das Inhaltspaket enthält den gesamten bereitzustellenden Code und stellt nur für `/apps`die Bereitstellung bereit. Zu den gebräuchlichen Elementen des `ui.apps` Pakets gehören:
    + OSGi-Pakete
       + `/apps/my-app/install`
    + OSGi-Konfigurationen
@@ -58,28 +58,23 @@ Die empfohlene Anwendungsbereitstellungsstruktur lautet wie folgt:
       + `/apps/settings`
    + ACLs (Berechtigungen)
       + Alle `rep:policy` für einen Pfad unter `/apps`
-   + Repo Init OSGi-Konfigurationsanweisungen (und zugehörige Skripten)
-      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logisch Teil der AEM-Anwendung sind. Repo Init sollte verwendet werden, um Folgendes zu definieren:
-         + Grundlegende Inhaltsstrukturen
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
-         + Benutzer
-         + Dienstbenutzer
-         + Gruppen
-         + ACLs (Berechtigungen)
-            + Beliebig `rep:policy` für alle Pfade (veränderlich oder unveränderlich)
-+ Das `ui.content` Paket oder das Inhaltspaket enthält alle Inhalte und Konfigurationen. Zu den gebräuchlichen Elementen des `ui.content` Pakets gehören:
++ Das `ui.content` Paket bzw. das Codepaket enthält alle Inhalte und Konfigurationen. Zu den gebräuchlichen Elementen des `ui.content` Pakets gehören:
    + Kontextsensitive Konfigurationen
       + `/conf`
-   + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltsaufbau, der auf in Repo Init definierten Inhaltsstrukturen aufbaut und diese erweitert.
+   + Grundlegende Inhaltsstrukturen (Asset-Ordner, Sites-Stammseiten)
       + `/content`, `/content/dam`, usw.
    + Steuerbare Taggategruppen
       + `/content/cq:tags`
+   + Dienstbenutzer
+      + `/home/users`
+   + Benutzergruppen
+      + `/home/groups`
    + Eichenindizes
-      + `/oak:index`
+      + `/oak:indexes`
    + Ältere Knoten
       + `/etc`
+   + ACLs (Berechtigungen)
+      + Alle `rep:policy` für einen Pfad, der **nicht** unter `/apps`
 + Das `all`-Paket ist ein Containerpaket, das NUR die `ui.apps`- und `ui.content`-Pakete als Einbettung enthält. Das `all`-Paket darf **keinen eigenen Inhalt** haben, sondern muss alle Implementierungen für das Repository an die Unterpakete delegieren.
 
    Pakete werden jetzt mit der Einbettungskonfiguration [des Maven](#embeddeds)FileVault Package Maven-Plug-Ins anstelle der `<subPackages>` Konfiguration enthalten.
@@ -117,35 +112,6 @@ Adobe Cloud Manager sammelt standardmäßig alle Pakete, die vom Maven-Build ers
 >
 >Ein vollständiges Snippet finden Sie im Abschnitt [POM XML-Snippets](#pom-xml-snippets) unten.
 
-## Repo-Init{#repo-init}
-
-Repo Init enthält Anweisungen oder Skripten, mit denen JCR-Strukturen definiert werden, von allgemeinen Knotenstrukturen wie Ordnerbäumen bis hin zu Benutzern, Dienstbenutzern, Gruppen und ACL-Definition.
-
-Die wichtigsten Vorteile von Repo Init sind die impliziten Berechtigungen, alle von ihren Skripten definierten Aktionen durchzuführen, und sie werden frühzeitig im Bereitstellungslebenszyklus aufgerufen, um sicherzustellen, dass alle erforderlichen JCR-Strukturen vorhanden sind, bis der Code ausgeführt wird.
-
-Während Repo Init-Skripte selbst als Skripten im `ui.apps` Projekt live sind, können und sollten sie zum Definieren der folgenden veränderbaren Strukturen verwendet werden:
-
-+ Grundlegende Inhaltsstrukturen
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
-+ Dienstbenutzer
-+ Benutzer
-+ Gruppen
-+ ACLs
-
-Repo-Init-Skripten werden als Einträge in `scripts` `RepositoryInitializer` OSGi-Werkskonfigurationen gespeichert und können daher implizit durch den Ausführungsmodus Targeting erfolgen. Dies ermöglicht Unterschiede zwischen den Repo Init-Skripten von AEM Author und AEM Publish Services oder sogar zwischen Envs (Dev, Stage und Prod).
-
-Beachten Sie, dass bei der Definition von Benutzern und Gruppen nur Gruppen als Teil der Anwendung betrachtet werden und dass hier als integraler Bestandteil ihrer Funktion definiert werden sollte. Organisationsbenutzer und -gruppen sollten weiterhin zur Laufzeit in AEM definiert werden. Wenn beispielsweise ein benutzerdefinierter Arbeitsablauf einer benannten Gruppe Aufgaben zuweist, sollte diese Gruppe in der AEM-Anwendung über Repo Init definiert werden. Wenn die Gruppierung jedoch lediglich organisatorisch ist, wie &quot;Wendy&#39;s Team&quot;und &quot;Sean&#39;s Team&quot;, sind diese am besten definiert und werden zur Laufzeit in AEM verwaltet.
-
->[!TIP]
->
->Repo Init-Skripten *müssen* im Inline- `scripts` Feld definiert werden, und die `references` Konfiguration funktioniert nicht.
-
-Das vollständige Vokabular für Repo Init-Skripte ist in der [Apache Sling Repo Init-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)verfügbar.
-
->[!TIP]
->
->Ein vollständiges Snippet finden Sie im Abschnitt [Repo Init Snippets](#snippet-repo-init) weiter unten.
-
 ## Repository-Strukturpaket {#repository-structure-package}
 
 Codepakete müssen die Konfiguration des FileVault Maven-Plug-Ins so konfigurieren, dass auf eine `<repositoryStructurePackage>` Weise verwiesen wird, die die Richtigkeit struktureller Abhängigkeiten erzwingt (um sicherzustellen, dass ein Codepaket nicht über ein anderes installiert wird). Sie können Ihr eigenes Repository-Strukturpaket für Ihr Projekt [erstellen](repository-structure-package.md).
@@ -178,7 +144,7 @@ Für die Zielgruppe von AEM-Autor, AEM-Veröffentlichung oder beidem wird das Pa
 
 Unterbrechen der Ordnerstruktur:
 
-+ Der Ordner der ersten Ebene **muss** vorhanden sein `/apps`.
++ Der Ordner der ersten Ebene **muss vorhanden sein** `/apps`.
 + Der Ordner auf der zweiten Ebene stellt die Anwendung dar, deren Ordnername nach dem `-packages` Fixieren festgelegt ist. Oft gibt es nur einen einzigen Ordner auf 2. Ebene, in den alle Unterpakete eingebettet sind. Es können jedoch beliebig viele Ordner auf 2. Ebene erstellt werden, um die logische Struktur der Anwendung am besten darzustellen:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
@@ -355,28 +321,6 @@ Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Conta
     ...
 ```
 
-### Repo-Init{#snippet-repo-init}
-
-Repo Init-Skripten, die die Repo Init-Skripten enthalten, werden in der `RepositoryInitializer` OSGi-Factory-Konfiguration über die `scripts` Eigenschaft definiert. Beachten Sie, dass diese Skripte, die in OSGi-Konfigurationen definiert sind, einfach per Ausführungsmodus mithilfe der üblichen `../config.<runmode>` Ordnersemantik überprüft werden können.
-
-Da Skripten in der Regel mehrzeilige Deklarationen sind, ist es einfacher, sie in der `.config` Datei zu definieren, als das XML-Basenformat `sling:OsgiConfig` .
-
-`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
-
-```plain
-scripts=["
-    create service user my-data-reader-service
-
-    set ACL on /var/my-data
-        allow jcr:read for my-data-reader-service
-    end
-
-    create path (sling:Folder) /conf/my-app/settings
-"]
-```
-
-Die `scripts` OSGi-Eigenschaft enthält Direktiven, die von der Repo Init-Sprache [des](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling definiert werden.
-
 ### Repository-Strukturpaket {#xml-repository-structure-package}
 
 Fügen Sie im `ui.apps/pom.xml` und allen anderen Elementen, `pom.xml` die ein Codepaket deklarieren (`<packageType>application</packageType>`), die folgende Repository-Struktur-Paketkonfiguration zum FileVault Maven-Plug-In hinzu. Sie können Ihr eigenes Repository-Strukturpaket für Ihr Projekt [erstellen](repository-structure-package.md).
@@ -394,7 +338,7 @@ Fügen Sie im `ui.apps/pom.xml` und allen anderen Elementen, `pom.xml` die ein C
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>repository-structure-pkg</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -485,9 +429,6 @@ Schließen Sie im `all`-Projekt-`filter.xml` (`all/src/main/content/jcr_root/MET
 Wenn mehrere in den Zielgruppen von embeddeds verwendet `/apps/*-packages` werden, müssen sie alle hier aufgezählt werden.
 
 ### Maven-Repositorys von Drittanbietern {#xml-3rd-party-maven-repositories}
-
->[!WARNING]
-> Durch das Hinzufügen von mehr Maven-Repositorys können die Maven-Buildzeiten verlängert werden, da zusätzliche Maven-Repositorys auf Deep-Threads überprüft werden.
 
 Fügen Sie im Reaktorprojekt die erforderlichen Richtlinien für das öffentliche Maven-Repository `pom.xml`von Drittanbietern hinzu. Die vollständige `<repository>` Konfiguration sollte beim Repository Provider des Drittanbieters verfügbar sein.
 
