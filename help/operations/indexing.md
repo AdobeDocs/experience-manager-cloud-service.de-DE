@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: 'Inhaltssuche und -indizierung '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -29,9 +29,9 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 
-1. Auf einer hohen Ebene in AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
+1. Auf einer hohen Ebene von AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+Die verwendete Indexversion wird mithilfe von Flags in den Indexdefinitionen über das `useIfExist` Flag konfiguriert. Ein Index kann nur in einer Version der Anwendung (z. B. nur blau oder nur grün) oder in beiden Versionen verwendet werden. Detaillierte Dokumentation finden Sie unter [Index-Management mit Blue-Green-Bereitstellungen](#index-management-using-blue-green-deployments).
 
 1. Kunden können sehen, ob der Indexierungsauftrag auf der Buildseite von Cloud Manager abgeschlossen ist, und erhalten eine Benachrichtigung, wenn die neue Version Traffic aufnehmen kann.
 
@@ -61,7 +61,7 @@ Sie müssen ein neues Indexdefinitionspaket mit der tatsächlichen Indexdefiniti
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-die dann untergehen müssen `ui.apps/src/main/content/jcr_root`. Unterstammordner werden ab sofort nicht mehr unterstützt.
+die dann untergehen müssen `ui.content/src/main/content/jcr_root`. Unterstammordner werden ab sofort nicht mehr unterstützt.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ Das Paket aus dem obigen Beispiel wird wie `com.adobe.granite:new-index-content:
 
 ### Bereitstellen von Indexdefinitionen {#deploying-index-definitions}
 
-> [!NOTE]
->
-> Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0** , das es Ihnen nicht erlaubt, `oak:index` zu Modulen von hinzuzufügen `<packageType>application</packageType>`. Um dies zu umgehen, verwenden Sie bitte Version **1.0.4**.
-
 Indexdefinitionen sind jetzt als benutzerdefiniert und als Version gekennzeichnet:
 
-* Die Indexdefinition selbst (z. B. `/oak:index/ntBaseLucene-custom-1`)
+* Die Indexdefinition selbst (z. `/oak:index/ntBaseLucene-custom-1`B. MUTABLE-Inhalt)
 
-Um einen Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) daher über Git und den `ui.apps` Cloud Manager-Bereitstellungsprozess bereitgestellt werden.
+Um einen Index bereitzustellen, sollte daher die Indexdefinition (`/oak:index/definitionname`) über das **veränderliche Paket** bereitgestellt werden, üblicherweise `ui.content` über Git und den Cloud Manager-Bereitstellungsprozess.
 
 Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung über Cloud Manager bereitgestellt werden. Bei der Bereitstellung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB bzw. dem Azurblauen Segment Store für Autoren- bzw. Veröffentlichungszwecke verantwortlich sind. Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu deklariert, bevor der Blue-Green-Switch stattfindet.
 
