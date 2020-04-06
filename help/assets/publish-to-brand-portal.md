@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Veröffentlichen von Assets, Ordnern und Sammlungen im Markenportal {#publish-aem-assets-to-brand-portal}
 
 Als Asset-Administrator von Adobe Experience Manager (AEM) können Sie Assets, Ordner und Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Außerdem können Sie den Veröffentlichungsarbeitsablauf für ein Asset oder einen Ordner auf ein späteres Datum oder eine spätere Uhrzeit einstellen. Nach der Veröffentlichung können die Benutzer des Markenportals auf die Assets, Ordner und Sammlungen zugreifen und sie an andere Benutzer weiterleiten.
 
