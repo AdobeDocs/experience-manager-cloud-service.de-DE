@@ -2,7 +2,7 @@
 title: Einführung in Adobe Experience Manager als Cloud-Dienst
 description: 'Einführung in Adobe Experience Manager (AEM) als Cloud-Dienst. '
 translation-type: tm+mt
-source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
+source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
@@ -18,8 +18,6 @@ Adobe Experience Manager as a Cloud Service:
 * Ermöglicht es Ihnen, Ihren Kunden personalisierte, inhaltsbasierte Erlebnisse bereitzustellen, indem Sie die Leistungsfähigkeit des AEM-Content-Management-Systems mit AEM Digital Asset Management kombinieren.
 
 * Bietet Continuous Versand und Continuous Integration für Updates ohne Ausfallzeiten.
-
-* Ermöglicht die schnelle und effiziente Bereitstellung von Inhalten mit einem integrierten Content Versand Network (CDN) und anderen Best Practices auf Netzwerkebene.
 
 * Basiert auf einer dynamischen Architektur, die automatisch skaliert, wodurch Überlegungen zur Infrastruktur entfernt werden.
 
