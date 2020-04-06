@@ -3,7 +3,7 @@ title: Digital Rights Management in Adobe Experience Manager Assets
 description: Erfahren Sie, wie Sie den Assetablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -54,13 +54,11 @@ Damit die Assets-Konsole die verknüpften Assets zusammen mit den abgelaufenen T
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Unter-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
 1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Zeitbasierte Planungsregel]** und ändern Sie die Zeit im Feld **[!UICONTROL Periodische Planung]** in Sekunden. Beispiel: Der Beispielausdruck „0 0 0 &amp;ast; &amp;ast; ?“ löst den Auftrag um 00 Uhr aus.
-
-<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
+1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
--->
+   >Nur der Ersteller eines Assets (die Person, die ein bestimmtes Asset in AEM Assets hochlädt) erhält eine E-Mail, wenn das Asset abläuft. Weitere Informationen zum Konfigurieren von E-Mail-Benachrichtigungen auf AEM-Ebene finden Sie unter Konfigurieren von E-Mail-Benachrichtigungen.
 
 1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie ein Administrator oder der Ersteller des Assets sind, werden Sie vor Ablauf des Assets darüber informiert, dass das Asset nach dem angegebenen Zeitraum ablaufen wird.
 
