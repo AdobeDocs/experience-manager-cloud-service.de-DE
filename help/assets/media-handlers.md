@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Media Handlers und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -18,7 +18,7 @@ Media Handler sind Dienste innerhalb von AEM Assets, die bestimmte Aktionen für
 
 >[!NOTE]
 >
->See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
+>Please refer to the [Assets supported formats](file-format-support.md) page for a description of all the formats supported by AEM Assets as well as features supported for each format.
 
 ## Standard-Medien-Handler {#default-media-handlers}
 
@@ -407,7 +407,7 @@ Dazu verwenden Sie ImageMagick. ImageMagick ist eine kostenlose Software zum Ers
 
 Installieren Sie ImageMagick zunächst auf dem Datenträger, der den AEM-Server hostet:
 
-1. ImageMagick installieren: Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php).
+1. Install ImageMagick: please refer to the [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
 1. Richten Sie das Tool so ein, dass Sie die Konvertierung über die Befehlszeile ausführen können.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
