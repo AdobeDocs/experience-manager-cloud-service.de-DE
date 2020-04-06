@@ -2,7 +2,7 @@
 title: Einführung in Adobe Experience Manager als Cloud-Dienst - Terminologie
 description: 'Einführung in Adobe Experience Manager als Cloud-Dienst - Terminologie. '
 translation-type: tm+mt
-source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
+source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
@@ -38,7 +38,6 @@ Die folgenden Begriffe werden in Bezug auf Adobe Experience Manager (AEM) als Cl
 | Asset-Mikrodienste | Cloud-basierte Dienste zur Verarbeitung digitaler Assets, die verschiedene Anwendungsfälle für die Asset-Verarbeitung berücksichtigen, wie z. B. Generierung von Ausgabeformaten, PDF-Verarbeitung, Bearbeitung von Teilassets, Textverarbeitung usw. Weitere Informationen finden Sie unter Übersicht über [Asset Microservices](/help/assets/asset-microservices-overview.md). |
 | Cloud Manager Git Repository | Wo Kunden ihre Code- und Konfigurationseinstellungen speichern. |
 | Cloud-Anbieter | AEM als Cloud-Dienst unterstützt AWS als Cloud-Anbieter. |
-| Content Versand Network (CDN) | AEM als Cloud-Dienst wird mit einem Standard-CDN ausgeliefert. Sein Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten an der Kante in der Nähe des Browsers bereitgestellt werden. Es wird vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert. |
 | Inhalts-Repository | Wo der Inhalt beibehalten wird. |
 | Unternehmensinstallation | Jede Instanz von AEM als Cloud-Dienst wird von den anderen Instanzen isoliert. |
 | Goldener Meister | Die AEM-Veröffentlichungsstufe. |
