@@ -2,7 +2,7 @@
 title: Protokolle verwalten - Cloud-Dienst
 description: Protokolle verwalten - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!NHinweis]
 >Während **Protokolldownloads** sowohl über die Benutzeroberfläche als auch über die API verfügbar sind, ist **Log-Tailing** nur für API/CLI verfügbar.
-
-### Zusätzliche Ressourcen {#resources}
-
-Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
-
-* [Dokumentation zur Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
