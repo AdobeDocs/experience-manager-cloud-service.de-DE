@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Asset-Verwaltung 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -19,9 +19,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Marketing Cloud nicht unterstützt. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* Experience Manager lässt die Verwendung von `subassets` Wort als Ordnername nicht zu. Es ist ein Schlüsselwort, das für Knoten reserviert ist, die Teilassets für zusammengesetzte Assets enthalten
-
+>Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Marketing Cloud nicht unterstützt. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 
 1. Navigieren Sie zu dem Ort in Ihrem Ordner „Digitale Assets“, an dem Sie einen neuen Ordner erstellen möchten. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. DAM verwendet standardmäßig den Titel, den Sie als Ordnernamen angegeben haben. Wenn der Ordner erstellt wurde, können Sie die Standardeinstellung außer Kraft setzen und einen anderen Ordnernamen angeben.
@@ -417,15 +415,13 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-<!--
-1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
--->
+1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Beispiel: Um Aaron MacDonald über eine Anmerkung zu benachrichtigen, geben Sie „@aa“ ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron in der Liste aus, um ihn über den Kommentar zu informieren. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
->[!NOTE]
->
->For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+   >[!NOTE]
+   >
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. Nachdem Sie die Anmerkung hinzugefügt haben, klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
 
