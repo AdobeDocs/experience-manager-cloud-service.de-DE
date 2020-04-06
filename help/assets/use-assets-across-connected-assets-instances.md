@@ -3,14 +3,14 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Webseiten in verschiedenen Bereitstellungen. Es gibt einige Gründe dafür, warum bestehende Bereitstellungen geografisch verteilt sind, die für die Arbeit im Tandem erforderlich sind, oder Akquisitionen, die zu einer heterogenen Infrastruktur führen, die die übergeordnete Firma gemeinsam nutzen möchte.
+In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Webseiten in verschiedenen Bereitstellungen. Häufig sind geografisch verteilte Bereitstellungen zur Zusammenarbeit erforderlich oder Akquisitionen führen zu einer heterogenen Infrastruktur, die das übergeordnete Unternehmen konsolidieren möchte. Aber häufig führt auch Wachstum dazu, dass eine eigene Instanz für das Asset-Management erforderlich wird.
 
 AEM Sites bietet Funktionen zum Erstellen von Webseiten, während AEM Assets das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. AEM unterstützt nun dank Integration von AEM Sites und AEM Assets das obige Nutzungsszenario.
 
@@ -18,7 +18,7 @@ AEM Sites bietet Funktionen zum Erstellen von Webseiten, während AEM Assets d
 
 Beim Bearbeiten von Seiten im Seiten-Editor können die Autoren Assets aus einer anderen AEM Assets-Bereitstellung durchsuchen und einbetten. Zur Erstellung eines AEM-Administrators führen Sie eine einmalige Integration einer lokalen AEM Sites-Bereitstellung mit einer anderen (Remote-)Bereitstellung von AEM Assets durch.
 
-Für Sites-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren.
+Für Sites-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](/help/assets/assets-migration-guide.md).
 
 ### Voraussetzungen und unterstützte Bereitstellungen {#prerequisites}
 
@@ -164,7 +164,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Metadatenschemata werden nicht abgerufen.
 * Alle Sites-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Bereitstellung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
-* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren.
+* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
 * Es ist nicht möglich, ein Remote-Asset als Miniaturansicht für eine Webseite auf der Registerkarte &quot; [!UICONTROL Miniaturansicht] &quot;in den [!UICONTROL Seiteneigenschaften] zu verwenden, indem Sie auf Bild [!UICONTROL auswählen]klicken.
 
 **Einrichten und Lizenzieren**
