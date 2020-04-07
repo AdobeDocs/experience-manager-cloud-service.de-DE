@@ -3,7 +3,7 @@ title: Asset-Berichte
 description: In diesem Artikel werden verschiedene Berichte rund um das Thema Assets in AEM Assets beschrieben. Außerdem erhalten Sie Informationen über das Generieren von Berichten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Das Berichterstellungs-Framework von AEM Assets nutzt Sling-Aufträge, um Beric
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und einer Benachrichtigung im Posteingang benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
+Wenn ein Bericht erstellt wird, erhalten Sie eine Benachrichtigung über <!-- through an email (optional) and --> eine Posteingangsbenachrichtigung. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Erstellen von Berichten {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![files_report](assets/files_report.png)
 
-   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Die Spalten können nicht angepasst werden.
 
    Der Bericht **[!UICONTROL Linkfreigabe]** enthält keine Optionen für Unterordner und Ausgabedarstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter */var/dam/share* angezeigt werden.
 
