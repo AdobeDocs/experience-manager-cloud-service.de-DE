@@ -82,7 +82,7 @@ Die empfohlene Anwendungsbereitstellungsstruktur lautet wie folgt:
       + `/etc`
 + Das `all`-Paket ist ein Containerpaket, das NUR die `ui.apps`- und `ui.content`-Pakete als Einbettung enthält. Das `all`-Paket darf **keinen eigenen Inhalt** haben, sondern muss alle Implementierungen für das Repository an die Unterpakete delegieren.
 
-   Pakete werden jetzt mit der Einbettungskonfiguration [des Maven](#embeddeds)FileVault Package Maven-Plug-Ins anstelle der `<subPackages>` Konfiguration enthalten.
+   Pakete werden jetzt mit der Einbettungskonfiguration [des Maven](#embeddeds)FileVault Package Maven Plug-Ins anstelle der `<subPackages>` Konfiguration enthalten.
 
    Bei komplexen Experience Manager-Bereitstellungen ist es möglicherweise wünschenswert, mehrere `ui.apps` und `ui.content` mehrere Projekte/Pakete zu erstellen, die bestimmte Sites oder Mieter in AEM darstellen. Ist dies der Fall, stellen Sie sicher, dass die Aufteilung zwischen veränderlichem und unveränderlichem Inhalt eingehalten wird und die erforderlichen Inhaltspakete als Unterpakete im `all` Container-Inhaltspaket hinzugefügt werden.
 
