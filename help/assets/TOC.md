@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [XMP-Metadaten](xmp-metadata.md)
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD===========
-+ Freigeben und Verteilen von Assets {#brandportal}
-   + [Konfigurieren von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von AEM Assets im Markenportal](publish-to-brand-portal.md)
->>>>>>>>>>übergeordnet von 733b637... update toc========parent von da6a8ae... Markenportal mit AEM-Assets in der Cloud========übergeordnetes Element von da6a8ae konfigurieren... Markenportal mit AEM Assets in der Cloud konfigurieren
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD====================
+>>>>>>>>>>übergeordnet von 733b637... update toc
 
 
 
 
 
 > 
++ Freigeben und Verteilen von Assets {#brandportal}
+   + [Konfigurieren von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von AEM Assets im Markenportal](publish-to-brand-portal.md)
+>>>>>>>übergeordnet von 733b637... update toc========parent von da6a8ae... Markenportal mit AEM-Assets in der Cloud========übergeordnetes Element von da6a8ae konfigurieren... Markenportal mit AEM Assets in der Cloud konfigurieren
+
+
+
+
+
+
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
