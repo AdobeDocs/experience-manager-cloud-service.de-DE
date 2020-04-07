@@ -2,14 +2,14 @@
 title: Hinzufügen Ihrer digitalen Assets mit Adobe Experience Manager
 description: Hinzufügen Ihrer digitalen Assets als Cloud-Dienst an Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Digitale Assets in Adobe Experience Manager Hinzufügen {#add-assets-to-experience-manager}
 
-Durch das Hochladen Ihrer digitalen Dateien in Adobe Experience Manager wird der binäre Inhalt der Datei mit Rich-Metadaten, Smart-Tags, Darstellungen und anderen DAM-Diensten (Digital Asset Management) erweitert. Sie können verschiedene Dateitypen (z. B. Bilder, PDF-Dateien, Rohdateien usw.) aus Ihrem lokalen Ordner oder einem Netzlaufwerk in Experience Manager Assets hochladen.
+Adobe Experience Manager bereichert den binären Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Darstellungen und anderen DAM-Diensten (Digital Asset Management). Sie können verschiedene Dateitypen, wie z. B. Bilder, Dokumente und Rohbilddateien, aus Ihrem lokalen Ordner oder einem Netzlaufwerk in Experience Manager Assets hochladen.
 
 Es stehen eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripten, die Kunden erstellen würden, und automatisierte Erfassungsintegrationen, die als AEM-Erweiterungen hinzugefügt werden.
 
@@ -64,7 +64,7 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf I
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene As
 
 > [!NOTE]
 >
-> Wenn Sie verschachtelte Ordnerhierarchien in AEM hochladen müssen, finden Sie weitere Informationen zum [Hochladen von Assets](#bulk-upload)
+> Informationen zum Hochladen verschachtelter Ordnerhierarchien in AEM finden Sie unter [Massen-Upload von Assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
