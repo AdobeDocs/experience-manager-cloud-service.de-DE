@@ -3,7 +3,7 @@ title: Erkennen, wie Asset-Mikrodienste Ihre digitalen Assets in der Cloud verar
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Asset-Verarbeitungsmikrodiensten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,7 +13,6 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
 Adobe Experience Manager als Cloud-Dienst bietet eine Cloud-native Möglichkeit, Experience Manager-Anwendungen und -Funktionen zu nutzen. Eines der Schlüsselelemente dieser neuen Architektur ist die Asset-Erfassung und -Verarbeitung, die auf Asset-Mikrodiensten basiert.
@@ -51,12 +50,12 @@ Die wichtigsten Schritte zur Erfassung und Verarbeitung mithilfe von Asset-Mikro
 * Die Verarbeitungsergebnisse, z. B. Darstellungen, werden in der binären Cloud-Datenspeicherung gespeichert.
 * Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Darstellungen) vorhanden sind, die dann in Experience Manager für das hochgeladene Asset verfügbar sind
 
-Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Falls konfiguriert, kann Experience Manager auch das Workflow-Modell des Beginn für die Nachbearbeitung des Assets verwenden, z. B. um einige kundenspezifische Schritte auszuführen, die für die Umgebung des Kunden spezifisch sind, z. B. das Abrufen von Informationen aus den Unternehmenssystemen des Kunden, um sie den Asset-Eigenschaften hinzuzufügen.
+Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Wenn dies konfiguriert ist, kann Experience Manager auch das Workflow-Modell des Beginns verwenden, um die Nachbearbeitung des Assets durchzuführen, z. B. um einige benutzerdefinierte Schritte auszuführen, die für die Umgebung des Kunden spezifisch sind, z. B. das Abrufen von Informationen aus den Unternehmenssystemen des Kunden, die den Asset-Eigenschaften hinzugefügt werden sollen.
 
-Die Erfassung und der Verarbeitungsfluss zeigen einige wichtige Konzepte, die von der Asset Microservices-Architektur für Experience Manager genutzt werden:
+Die Erfassung und der Verarbeitungsfluss sind Schlüsselkonzepte der Asset Microservices-Architektur für Experience Manager.
 
-* **Direkter binärer Zugriff** - Assets werden nach der Konfiguration für Experience Manager-Umgebung in den Cloud Binary Store übertragen (und hochgeladen) und dann in AEM, Asset-Mikrodienste und schließlich erhalten Clients direkten Zugriff darauf, um ihre Arbeit auszuführen. Dadurch wird die Belastung in Netzwerken und die Duplizierung der gespeicherten Binärdateien minimiert
-* **Externalisierte Verarbeitung** - Die Verarbeitung von Assets erfolgt außerhalb von AEM Umgebung und spart ihre Ressourcen (CPU, Arbeitsspeicher), um wichtige Digital Asset Management-Funktionen bereitzustellen und die interaktive Arbeit mit dem System für Endbenutzer zu unterstützen
+* **Direkter binärer Zugriff**: Assets werden in den Cloud Binary Store übertragen (und hochgeladen), sobald sie für Experience Manager-Umgebung konfiguriert wurden. Anschließend erhalten AEM, Asset-Mikrodienste und schließlich Clients direkten Zugriff auf sie, um ihre Arbeit auszuführen. Dadurch wird die Belastung in Netzwerken und die Duplizierung der gespeicherten Binärdateien minimiert
+* **Externalisierte Verarbeitung**: Die Verarbeitung von Assets erfolgt außerhalb von AEM Umgebung und spart ihre Ressourcen (CPU, Arbeitsspeicher), um wichtige Digital Asset Management-Funktionen bereitzustellen und die interaktive Arbeit mit dem System für Endbenutzer zu unterstützen.
 
 ## Asset-Upload mit direktem binären Zugriff {#asset-upload-with-direct-binary-access}
 
@@ -64,10 +63,10 @@ Experience Manager-Clients, die Teil des Produktangebots sind, unterstützen sta
 
 Sie können benutzerdefinierte Upload-Tools verwenden, die direkt mit AEM HTTP-APIs funktionieren. Sie können diese APIs direkt verwenden oder die folgenden Open-Source-Projekte verwenden und erweitern, die das Upload-Protokoll implementieren:
 
-* [Open Source Upload-Bibliothek](https://github.com/adobe/aem-upload)
-* [Open Source-Befehlszeilenwerkzeug](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-Source-Upload-Bibliothek](https://github.com/adobe/aem-upload)
+* [Open-Source-Befehlszeilenwerkzeug](https://github.com/adobe/aio-cli-plugin-aem)
 
-For more information, see [uploading assets](add-assets.md).
+For more information, see [upload assets](add-assets.md).
 
 ## Hinzufügen Nachbearbeitung benutzerdefinierter Assets {#add-custom-asset-post-processing}
 
