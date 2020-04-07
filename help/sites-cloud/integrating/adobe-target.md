@@ -2,7 +2,7 @@
 title: Integration mit Adobe Target
 description: 'Integration mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -34,11 +34,15 @@ Führen Sie zur Integration in Target die folgenden Aufgaben durch:
    * [Integration von AEM mit Adobe Launch über Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Die AEM-Integration mit dem Start von Adobe, Analytics und der Zielgruppe](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [Konfigurieren Sie die Aktivitäten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Verknüpfen Sie Ihre Aktivitäten mit der Target-Cloud-Konfiguration.
-
 >[!NOTE]
 >
 >Die IMS-Konfiguration (technische Konten) zum Starten durch Adobe ist in AEM als Cloud-Dienst vorkonfiguriert. Benutzer müssen diese Konfiguration nicht erstellen.
+
+1. [Konfigurieren Sie die Aktivitäten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Verknüpfen Sie Ihre Aktivitäten mit der Target-Cloud-Konfiguration.
+
+>[!CAUTION]
+>
+>In AEM als Cloud-Dienst ist der Replizierungsagenten, der Angebot und Aktivitäten von AEM mit Adobe-Zielgruppe synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Supportteam](https://helpx.adobe.com/de/contact/enterprise-support.ec.html#experience-manager) , wenn Sie den Replizierungsagenten erneut aktivieren möchten.
 
 >[!NOTE]
 >
