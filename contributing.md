@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -20,18 +20,25 @@ Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern,
 
 ## So können Sie einen Beitrag leisten
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe möchte die Übermittlung Ihrer Beiträge so einfach wie möglich machen. Es gibt zwei Möglichkeiten:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe möchte die Übermittlung Ihrer Beiträge so einfach wie möglich machen. Es gibt zwei Möglichkeiten:
 =======
-Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
-
-### Erstellen eines Problems
->>>>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+=======
+>>>>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en zu &quot;stagingWie Sie beitragen, hängt davon ab, wer Sie sind und welche Änderungen Sie dazu beitragen möchten:
 
 
 
 
 
 > 
+
+### Erstellen eines Problems
+>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+
+
+
+
+
+
 
 * [Erstellen eines Problems](#create-an-issue)
 * [Erstellen einer Pull-Anforderung](#create-a-pull-request)
@@ -49,8 +56,16 @@ Mithilfe von Problemen können Sie Ihre Idee zur Verbesserung der Dokumente einf
 
 ### Erstellen einer Pull-Anforderung {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADInnen Sie ein Problem sehen und genau wissen, wie es zu beheben ist, sollten Sie eine Pull-Anforderung erstellen. Mithilfe von Pull-Anforderungen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem Mitglied des AEM Docs Teams bezüglich einer Aufnahme in die Dokumentation geprüft werden. Klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbedienfeld auf den Link **Diese Seite bearbeiten**, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anforderung zu erstellen.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEADIm, wenn ein Problem auftritt und Sie genau wissen, wie dieses zu beheben ist, sollten Sie eine Pull-Anforderung erstellen. Mithilfe von Pull-Anforderungen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem Mitglied des AEM Docs Teams bezüglich einer Aufnahme in die Dokumentation geprüft werden. Klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbedienfeld auf den Link **Diese Seite bearbeiten**, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anforderung zu erstellen.
 =======
+=======
+>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+
+
+
+
+
+
 ### Größere Änderungen von Adobe-Mitarbeitern
 >>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
 
@@ -71,10 +86,19 @@ Im folgenden Video erhalten Sie einen schnellen Überblick über die Erstellung 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Beiträge von Adobe-Mitarbeitern
 
-Wenn Sie ein Mitarbeiter von Adobe sind und einen Beitrag einreichen möchten, verwenden Sie bitte `AdobeDocs` der Organisation im Git-Repository des Unternehmens.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
 Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anforderungen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können im Repository des Unternehmens schneller genehmigt werden. Bitte stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
 =======
+=======
+>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+
+
+
+
+
+
 ## Tools und Einrichtung
 
 Communitymitwirkende können die GitHub-UI zur grundlegenden Bearbeitung verwenden oder das Repo zum Beisteuern größerer Beiträge forken.
@@ -89,13 +113,13 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 * [Druckbares Infoblatt zu Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Beschriftungen
->>>>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
 
 
 
 
 
-> 
+
 
 ## Weiterführende Informationen
 
