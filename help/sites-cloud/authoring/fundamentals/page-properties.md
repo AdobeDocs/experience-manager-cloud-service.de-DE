@@ -2,7 +2,7 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,6 +181,8 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 * **Konfiguration für Targeting**
 
    * Wählen Sie eine [Marke aus, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Für diese Option muss sich das Benutzerkonto in der `Target Adminstrators`Gruppe befinden.
 
 ### Berechtigungen {#permissions}
 
