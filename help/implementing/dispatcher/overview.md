@@ -535,7 +535,7 @@ $ validator httpd .
 
 Wenn Fehler bei fehlenden Include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
-Wenn Sie Apache-Direktiven sehen, die nicht in der Positivliste aufgeführt sind, entfernen Sie sie.
+Wenn Sie Apache-Anweisungen sehen, die nicht in der Positivliste aufgeführt sind, entfernen Sie sie.
 
 ### Entfernen Sie alle Nicht-Veröffentlichungs-Farmen
 
@@ -672,7 +672,7 @@ Weitere Informationen zu jedem weiteren Fehler finden Sie im Abschnitt Fehlerbeh
 
 Mithilfe des Skripts `docker_run.sh` in AEM als Cloud Service Dispatcher Tools können Sie testen, ob Ihre Konfiguration keinen anderen Fehler enthält, der nur bei der Bereitstellung angezeigt würde:
 
-### Schritt 1: Implementierungsinformationen mit dem Validator generieren
+### Schritt 1: Informationen zur Bereitstellung mit dem Validator generieren
 
 ```
 validator full -d out .
