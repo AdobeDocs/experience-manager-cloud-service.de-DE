@@ -2,7 +2,7 @@
 title: Benutzerhandbücher zu Adobe Experience Manager as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,8 +24,6 @@ Auf dieser Seite finden Sie die Selbsthilfe-Benutzerhandbücher für Experience 
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zur Implementierung von Entwicklungsumgebungen. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Lösungen in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
-| [Wechsel zu AEM als Cloud-Dienst](/help/move-to-cloud-service/home.md) | Erfahren Sie mehr über die Selbsthilfe-Ressourcen und -Tools, die den Umstieg auf AEM als Cloud-Dienst erleichtern. |
-
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
