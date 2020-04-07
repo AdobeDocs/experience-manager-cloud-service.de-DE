@@ -50,7 +50,9 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://contribu
 =======
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>parent von f6e5291... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>parent von f6e5291... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... Die Verzweigung &quot;Staging&quot; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von 190577c zusammenführen... &quot;Master&quot;der Verzweigung in Staging zusammenführen
 
 
 
