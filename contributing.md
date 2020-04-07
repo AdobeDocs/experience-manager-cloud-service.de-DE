@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
+source-git-commit: e11c6c58cd97f8c52fada14d9a6b6981d7a399c4
 translation-type: tm+mt
 
 ---
@@ -39,7 +39,7 @@ Mithilfe von Problemen können Sie Ihre Idee zur Verbesserung der Dokumente einf
 
 ### Erstellen einer Pull-Anforderung {#create-a-pull-request}
 
-Wenn Sie ein Problem sehen und genau wissen, wie Sie es beheben können, sollten Sie eine Pull-Anforderung erstellen. Mithilfe von Pull-Anforderungen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem Mitglied des AEM Docs Teams bezüglich einer Aufnahme in die Dokumentation geprüft werden. Klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbedienfeld auf den Link **Diese Seite bearbeiten**, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anforderung zu erstellen.
+Wenn Sie ein Problem sehen und genau wissen, wie Sie es beheben können, sollten Sie eine Pull-Anforderung erstellen. Mithilfe von Pull-Anforderungen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem Mitglied des AEM Docs Teams zur Aufnahme geprüft werden. Klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbedienfeld auf den Link **Diese Seite bearbeiten**, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anforderung zu erstellen.
 
 Allen Pull-Anforderungen muss eine unterzeichnete [CLA (Contributor Licence Agreement – Lizenzvereinbarung für Mitwirkende) beigefügt sein.](https://opensource.adobe.com/cla.html) Dies berechtigt Adobe dazu, Ihre Beiträge als Teil des Projekts weiterzuvertreiben. Die Adobe-CLA muss nur einmal übermittelt werden. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
 
@@ -51,9 +51,9 @@ Im folgenden Video erhalten Sie einen schnellen Überblick über die Erstellung 
 
 ### Beiträge von Adobe-Mitarbeitern
 
-Wenn Sie ein Adobe-Mitarbeiter sind und eine Pull-Anforderung stellen möchten, verwenden Sie bitte das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
+Wenn Sie ein Mitarbeiter von Adobe sind und einen Beitrag einreichen möchten, verwenden Sie bitte `AdobeDocs` der Organisation im Git-Repository des Unternehmens.
 
-Für Probleme nutzen Sie bitte die öffentlichen Repositories.
+Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anforderungen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können im Repository des Unternehmens schneller genehmigt werden. Bitte stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
 
 ## Weiterführende Informationen
 
