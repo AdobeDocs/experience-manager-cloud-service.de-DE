@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -48,8 +48,9 @@ Projektverantwortliche, die dem Verhaltenskodex nicht im guten Glauben folgen od
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4, available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
 =======
-Dieser Verhaltenskodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4 übernommen, der unter [](https://contributor-covenant.org/version/1/4/)https://contributor-covenant.org/version/1/4/ verfügbar ist.
->>>>>>>>>>parent von f6e5291... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
+This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>parent von f6e5291... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... &quot;Staging&quot;der Verzweigung von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging zusammenführen
 
 
 
