@@ -2,7 +2,7 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: 'Noch auszufüllen '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -83,7 +83,37 @@ Inhalte werden von &quot;Autor&quot;zu &quot;Veröffentlichen&quot;über einen P
 
 ### Protokolle {#logs}
 
-For more information on how to work with logs, see the [Logging documentation](/help/implementing/developing/introduction/logging.md).
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
+
+Auf Cloud-Umgebung können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilenwerkzeug verwenden, um die Protokolle zu verkleinern. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Protokollebene festlegen**
+
+Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, um ausführliche Protokolle zu Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+
+> [!NOTE]
+> 
+> Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
+
+**Aktivieren der DEBUG-Protokollebene**
+
+Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
+Um die DEBUG-Protokollebene zu aktivieren, legen Sie die Variable
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+auf „debug“ ein. Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolle generiert werden.
+Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Die Protokollebenen lauten wie folgt:
+
+| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen, und das Installationsprogramm kann nicht fortgesetzt werden. |
+|---|---|---|
+| 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, aber ein CRX-Teil wurde nicht ordnungsgemäß installiert und funktioniert daher nicht. |
+| 2 | Warnung | Die Aktion war erfolgreich, hatte aber Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
+| 3 | Informationen | Die Aktion war erfolgreich. |
 
 ### Thread Dumps {#thread-dumps}
 
