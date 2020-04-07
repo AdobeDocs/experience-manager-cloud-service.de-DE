@@ -2,7 +2,7 @@
 title: Umgebung verwalten - Cloud-Dienst
 description: Umgebung verwalten - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -38,9 +38,6 @@ Die Produktions- und Produktionsstufe ist als Duo verfügbar und wird für Test-
 
 
 1. Der Benutzer klickt auf die Schaltfläche **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
-
-   >[!NOTE]
-   >Auf diese Schaltfläche kann auch von der Seite &quot;Umgebung&quot;oder von der Karte &quot;Umgebung&quot;aus zugegriffen werden. Als Benutzer wird diese Option nur angezeigt, wenn Sie über die erforderliche Berechtigung verfügen. Wenden Sie sich bei Fragen an Ihren Adobe-Kundenbetreuer.
 
    ![](assets/add-environment.png)
 
