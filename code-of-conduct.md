@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
 translation-type: tm+mt
 
 ---
@@ -45,17 +45,4 @@ Projektverantwortliche, die dem Verhaltenskodex nicht im guten Glauben folgen od
 
 ## Zuordnung
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4, available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
-=======
-This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>parent von f6e5291... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... Verzweigung &#39;Staging&#39; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von f6e5291 zusammenführen... Die Verzweigung &quot;Staging&quot; von https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en in Staging=======parent von 190577c zusammenführen... &quot;Master&quot;der Verzweigung in Staging zusammenführen
-
-
-
-
-
-> 
+Dieser Verhaltenskodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4 übernommen, der unter [](https://contributor-covenant.org/version/1/4/)https://contributor-covenant.org/version/1/4/ verfügbar ist.
