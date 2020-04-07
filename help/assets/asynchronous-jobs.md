@@ -3,7 +3,7 @@ title: Asynchrone Vorgänge
 description: AEM Assets optimiert die Leistung, durch das asynchrone Ausführen ressourcenintensiver Vorgänge.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 ## Überwachen des Status asynchroner Vorgänge {#monitoring-the-status-of-asynchronous-operations}
 
-Jedes Mal, wenn AEM Assets einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem Posteingang sowie per E-Mail.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
