@@ -2,13 +2,14 @@
 sub-product: Erstellen von Inhalten in AEM als Cloud-Dienst
 user-guide-title: Erstellen von Inhalten in AEM als Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Sites {#sites}
 
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Wichtige Änderungen an AEM Sites in AEM Cloud Service](sites-cloud-changes.md)
 + Authoring {#authoring}
    + Erste Schritte {#getting-started}
