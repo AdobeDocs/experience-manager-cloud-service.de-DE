@@ -99,7 +99,7 @@ Die Zwischenspeicherung am CDN kann mithilfe von Dispatcher-Regeln konfiguriert 
 
 ### HTML/Text {#html-text}
 
-* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene ausgestrahlt wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem Cache-Control-Header, der von der Apache-Ebene gesendet wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME` Variable in der Verwendung von AEM als Cloud-Dienst-SDK-Dispatcher-Tools definiert `global.vars` wird.
 * kann auf einer feineren Ebene durch die folgenden apache mod_headers-Direktiven überschrieben werden:
 
