@@ -3,7 +3,7 @@ title: Asset-Mikrodienste für die Asset-Verarbeitung konfigurieren und verwende
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Mikrodienste konfigurieren und verwenden, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 # Erste Schritte mit Asset-Microservices {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten, die von Adobe verwaltet werden, um eine optimale Verarbeitung verschiedener Asset-Typen und Verarbeitungsoptionen zu gewährleisten.
+Asset Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten. Adobe verwaltet die Dienste für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
 
-Die Asset-Verarbeitung wird auf der Grundlage der Konfiguration in **[!UICONTROL Verarbeitungswerkzeugen]** durchgeführt, die ein Standardset bereitstellen und es dem Administrator ermöglichen, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Um Erweiterbarkeit und vollständige Anpassung zu ermöglichen, ermöglicht die Asset-Verarbeitung eine optionale Konfiguration der Nachbearbeitung Workflows, die dann vom Administrator erstellt und gepflegt werden.
+Die Verarbeitung von Assets hängt von der Konfiguration in **[!UICONTROL verarbeitenden Profilen]** ab, die eine Standardeinstellung bereitstellen und es einem Administrator ermöglichen, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Administratoren können die Konfigurationen der Workflows für die Nachbearbeitung erstellen und verwalten, einschließlich optionaler Anpassungen. Die Anpassung von Workflows ermöglicht Erweiterbarkeit und vollständige Anpassung.
 
-Nachstehend wird ein übergeordneter Fluss für die Asset-Verarbeitung in Experience Manager als Cloud-Dienst dargestellt.
+Darunter befindet sich ein Fluss auf hoher Ebene für die Asset-Verarbeitung.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Für Kunden, die von früheren Versionen von Experience Manager aktualisieren: Die in diesem Abschnitt beschriebene Asset-Verarbeitung ersetzt das Workflow-Modell &quot;DAM Update Asset&quot;, das zuvor für die Verarbeitung von Assets verwendet wurde. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt, und die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
+> Die hier beschriebene Asset-Verarbeitung ersetzt das `DAM Update Asset` Workflow-Modell, das in früheren Versionen von Experience Manager vorhanden ist. Die meisten Schritte zum Generieren von Standarddarstellungen und zum Erstellen von Metadaten werden durch die Verarbeitung von Asset-Mikrodiensten ersetzt, und die verbleibenden Schritte können, falls vorhanden, durch die Konfiguration des Arbeitsablaufs nach der Verarbeitung ersetzt werden.
 
 ## Erste Schritte mit der Asset-Verarbeitung {#get-started}
 
@@ -56,9 +54,9 @@ Um Asset-Mikrodienste zu konfigurieren, können Administratoren die Konfiguratio
 
 ### Standardkonfiguration {#default-config}
 
-Bei der Standardkonfiguration ist nur das [!UICONTROL standardmäßige] Profil für die Verarbeitung konfiguriert. Es handelt sich um eine integrierte Version, die nicht verändert werden kann. Es wird immer ausgeführt, um sicherzustellen, dass die gesamte für die Anwendung erforderliche Verarbeitung stattfindet.
+Bei der Standardkonfiguration wird nur das Profil für die Standardverarbeitung konfiguriert. Das Profil für die Standardverarbeitung ist auf der Benutzeroberfläche nicht sichtbar und kann nicht geändert werden. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Mit einem Profil für die Standardverarbeitung wird sichergestellt, dass die gesamte grundlegende Verarbeitung, die für Experience Manager erforderlich ist, für alle Assets abgeschlossen ist.
 
-![processing-Profils-standard](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 Das Profil für die Standardverarbeitung bietet die folgende Verarbeitungskonfiguration:
 
@@ -77,17 +75,18 @@ Mit der Aktion &quot; **[!UICONTROL Erstellen]** &quot;können weitere Profil zu
 
 Jede Konfiguration des verarbeitenden Profils enthält eine Liste von Darstellungen. Für jede Darstellung können Sie Folgendes angeben:
 
-* Darstellungsname
-* Darstellungsformat (JPEG, PNG oder GIF werden unterstützt)
-* Darstellungsbreite und -höhe in Pixel (sofern nicht angegeben, wird die vollständige Pixelgröße des Originals angenommen)
-* Darstellungsqualität (für JPEG) in Prozent
-* Eingeschlossene und ausgeschlossene MIME-Typen definieren, für welche Asset-Typen das verarbeitende Profil gilt
+* Darstellungsname.
+* Unterstütztes Ausgabeformat, z. B. JPEG, PNG oder GIF.
+* Darstellungsbreite und -höhe in Pixel. Wenn sie nicht angegeben ist, wird die vollständige Pixelgröße des Originalbilds verwendet.
+* Darstellungsqualität von JPEG in Prozent.
+* Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
 ![processing-Profils-adding](assets/processing-profiles-adding.png)
 
-Wenn ein neues Profil gespeichert wird, wird es zur Liste der konfigurierten Profil hinzugefügt. Diese Profil zur Verarbeitung können dann auf Ordner in der Ordnerhierarchie angewendet werden, damit sie für Asset-Uploads und -Assets dort wirksam sind.
+Wenn Sie ein neues Profil erstellen und speichern, wird es zur Liste der konfigurierten Profil hinzugefügt. Sie können diese verarbeitenden Profil auf Ordner in der Ordnerhierarchie anwenden, um sie beim Hochladen von Assets und bei der Verarbeitung von Assets effektiv zu gestalten.
 
-![processing-Profils-Liste](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Darstellungsbreite und -höhe {#rendition-width-height}
 
@@ -103,13 +102,13 @@ Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn e
 
 #### Spezielle FPO-Darstellung {#special-fpo-rendition}
 
-Für die Verarbeitung von Profil kann eine spezielle &quot;FPO-Darstellung&quot;verwendet werden, wenn [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) mit Adobe InDesign verwendet wird, um direkte Links zu Assets aus Experience Manager in InDesign-Dokumenten zu platzieren.
+Beim Platzieren von Assets in großen Größen aus AEM in Adobe InDesign-Dokumenten muss ein Kreativprofi nach dem [Platzieren eines Assets](https://helpx.adobe.com/de/indesign/using/placing-graphics.html)eine Weile warten. In der Zwischenzeit wird der Benutzer daran gehindert, InDesign zu verwenden. Dies unterbricht den kreativen Fluss und beeinträchtigt die Benutzererfahrung. Adobe ermöglicht die zeitweilige Platzierung kleiner Darstellungen in InDesign-Dokumenten. Diese können später bei Bedarf durch Assets mit voller Auflösung ersetzt werden. Experience Manager bietet Darstellungen, die nur für die Platzierung verwendet werden (FPO). Diese FPO-Darstellungen haben eine kleine Dateigröße, haben aber dasselbe Seitenverhältnis.
 
-In der Adobe Asset Link- [Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) erfahren Sie, ob Sie das Profil für die Verarbeitung aktivieren müssen.
+Das verarbeitende Profil kann eine FPO-Darstellung (nur für Platzierung) enthalten. Informationen dazu, ob Sie es für Ihr verarbeitendes Profil aktivieren müssen, finden Sie in der Adobe Asset Link- [Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) . Weitere Informationen finden Sie in der Dokumentation zum [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ## Verwenden von Asset-Mikrodiensten zur Verarbeitung von Assets {#use-asset-microservices}
 
-Nachdem weitere Verarbeitungsordner erstellt wurden, müssen diese auf bestimmte Profil angewendet werden, damit Experience Manager sie bei der Verarbeitung von Assets verwendet, die in diesen Ordnern hochgeladen oder aktualisiert wurden. Das integrierte, standardmäßige Profil zur Verarbeitung wird immer ausgeführt.
+Erstellen Sie die zusätzlichen, benutzerdefinierten Verarbeitungsordner und wenden Sie sie auf bestimmte Profil an, damit Experience Manager Assets verarbeiten kann, die in diese  hochgeladen oder aktualisiert werden. Das standardmäßige, integrierte Standard-Profil für die Verarbeitung wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
 Es gibt zwei Möglichkeiten, verarbeitende Profil auf Ordner anzuwenden:
 
@@ -149,15 +148,15 @@ Das Hinzufügen einer Workflow-Konfiguration für die Nachbearbeitung zu Experie
 * Der letzte Schritt eines solchen Modells muss der `DAM Update Asset Workflow Completed Process` Schritt sein. Dies ist erforderlich, um sicherzustellen, dass AEM weiß, dass die Verarbeitung beendet wurde und das Asset als verarbeitet (&quot;Neu&quot;) gekennzeichnet werden kann.
 * Erstellen einer Konfiguration für den benutzerdefinierten Workflow Runner-Dienst, mit der die Ausführung eines Workflow-Nachbearbeitungs-Modells entweder nach Pfad (Ordnerspeicherort) oder regulärem Ausdruck konfiguriert werden kann
 
-### Erstellen von Workflow-Modellen für die Nachbearbeitung
+### Erstellen von Workflow-Modellen für die Nachbearbeitung {#create-post-processing-workflow-models}
 
-Workflow-Modelle nach der Verarbeitung sind normale AEM-Workflow-Modelle. Bitte erstellen Sie unterschiedliche, wenn Sie unterschiedliche Verarbeitungsschritte für verschiedene Repository-Speicherorte oder Asset-Typen benötigen.
+Workflow-Modelle nach der Verarbeitung sind normale AEM-Workflow-Modelle. Erstellen Sie verschiedene Modelle, wenn Sie unterschiedliche Verarbeitungsschritte für verschiedene Repository-Speicherorte oder Asset-Typen benötigen.
 
-Verarbeitungsschritte sollten je nach Bedarf hinzugefügt werden. Sie können alle unterstützten vordefinierten Schritte sowie alle benutzerdefinierten Workflow-Schritte verwenden.
+Verarbeitungsschritte sollten je nach Bedarf hinzugefügt werden. Sie können alle verfügbaren unterstützten Schritte sowie alle benutzerdefinierten Workflow-Schritte verwenden.
 
-Der letzte Schritt der einzelnen Workflows muss der `DAM Update Asset Workflow Completed Process`sein. Dadurch wird sichergestellt, dass das Asset ordnungsgemäß als &quot;Verarbeitung abgeschlossen&quot;gekennzeichnet ist.
+Stellen Sie sicher, dass der letzte Schritt jedes Workflows der Nachbearbeitung `DAM Update Asset Workflow Completed Process`ist. Der letzte Schritt hilft sicherzustellen, dass Experience Manager weiß, wann die Asset-Verarbeitung abgeschlossen ist.
 
-### Konfigurieren der Workflow-Ausführung nach der Verarbeitung
+### Workflow-Ausführung nach der Verarbeitung konfigurieren {#configure-post-processing-workflow-execution}
 
 Um die Workflow-Modelle für die Nachbearbeitung so zu konfigurieren, dass sie für Assets ausgeführt werden, die nach Abschluss der Verarbeitung der Asset-Mikrodienste im System hochgeladen oder aktualisiert wurden, muss der Custom Workflow Runner-Dienst konfiguriert werden.
 
@@ -171,4 +170,4 @@ Der Custom Workflow Runner-Dienst (`com.adobe.cq.dam.processor.nui.impl.workflow
 >Die Konfiguration des benutzerdefinierten Workflow Runner ist eine Konfiguration eines OSGi-Dienstes. Informationen zum Bereitstellen einer OSGi-Konfiguration finden Sie unter [Bereitstellung in Experience Manager](/help/implementing/deploying/overview.md) .
 > OSGi-Webkonsole ist im Gegensatz zu lokalen und verwalteten Services-Bereitstellungen von AEM nicht direkt in den Cloud-Dienstbereitstellungen verfügbar.
 
-Weitere Informationen dazu, welche der Standard-Arbeitsablaufschritte im Arbeitsablauf für die Nachbearbeitung verwendet werden können, finden Sie unter [Arbeitsablaufschritte im Arbeitsablauf](developer-reference-material-apis.md#post-processing-workflows-steps) für die Nachbearbeitung in der Entwicklerreferenz.
+Weitere Informationen darüber, welcher standardmäßige Workflow-Schritt im Arbeitsablauf für die Nachbearbeitung verwendet werden kann, finden Sie unter [Workflow-Schritte im Arbeitsablauf](developer-reference-material-apis.md#post-processing-workflows-steps) für die Nachbearbeitung in der Developer-Referenz.
