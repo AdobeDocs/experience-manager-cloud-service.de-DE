@@ -3,7 +3,7 @@ title: Veröffentlichen von Assets, Ordnern und Sammlungen im Markenportal
 description: Veröffentlichen Sie Assets, Ordner und Sammlungen im Markenportal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset, Ordner oder der Samm
 >[!NOTE]
 >
 >Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die AEM-Autoreninstanz keine übermäßigen Ressourcen belegt.
->
+
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-bp}
 
