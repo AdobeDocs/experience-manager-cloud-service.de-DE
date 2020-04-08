@@ -2,7 +2,7 @@
 title: Suchen
 description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -65,6 +65,7 @@ So durchsuchen und filtern Sie Ressourcen:
    >* abhängig vom ausgewählten Ressourcentyp – beispielsweise sind die Kriterien „Assets“ und „Communities“ nach Themen spezialisiert.
    >* je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -73,7 +74,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
 1. Sie können auch weitere Suchbegriffe hinzufügen.
 
-1. Schließen Sie die Funktion **Suchen** über das **X** (rechts oben).
+1. Schließen Sie die **Suche** mit dem **X** (oben rechts).
 
 >[!NOTE]
 >
@@ -102,6 +103,6 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
    * **x** (für den Namen der gespeicherten Suche) verwenden, um eine neue Abfrage zu starten. Die gespeicherte Suche selbst wird nicht gelöscht.
    * die Option **Gespeicherte Suche bearbeiten** verwenden, die Suchbedingungen ändern und dann erneut auf **Speichern** klicken.
 
-Sie können gespeicherte Suchen ändern, indem Sie die gespeicherte Suche auswählen und am unteren Rand des Suchbereichs auf **Gespeicherte Suche bearbeiten** klicken.
+Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 
 ![Speichern einer Suche ändern](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
