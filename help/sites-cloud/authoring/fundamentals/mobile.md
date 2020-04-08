@@ -2,14 +2,14 @@
 title: Verfassen einer Seite für Mobilgeräte
 description: Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um festzustellen, welche Darstellung der Endbenutzer sieht.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
 # Verfassen einer Seite für Mobilgeräte {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. Durch ein responsives Layout werden Ihre Inhalte automatisch an das Zielgerät angepasst, sodass keine Inhalte für bestimmte Geräte erstellt werden müssen.
+Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. Durch ein responsives Layout werden Ihre Inhalte automatisch an das Gerät der Zielgruppe angepasst, sodass keine Inhalte für bestimmte Geräte erstellt werden müssen.
 
 Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um zu sehen, was der Endbenutzer sieht, wenn auf er die Seite zugreift.
 
@@ -17,9 +17,10 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe Erstellen einer Live-Kopie für verschiedene Kanäle.
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe Erstellen einer Live-Kopie für verschiedene Kanal.
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. Siehe Erstellen von Gerätegruppenfiltern.
+>AEM-Entwickler können neue Gerätegruppen erstellen. Siehe Erstellen von Filtern für Gerätegruppen.
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
