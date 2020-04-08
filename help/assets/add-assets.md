@@ -2,7 +2,7 @@
 title: Hinzufügen Ihrer digitalen Assets mit Adobe Experience Manager
 description: Hinzufügen Ihrer digitalen Assets als Cloud-Dienst an Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Während Sie in Experience Manager Binärdateien hochladen und verwalten können
 
 Sie können auch festlegen, dass für die hochgeladenen Assets zusätzliche Verarbeitungsschritte ausgeführt werden. Für den Ordner, in den Assets hochgeladen werden, können mehrere Profil zur Asset-Verarbeitung konfiguriert werden, um bestimmte Metadaten, Darstellungen oder Bildverarbeitungsdienste hinzuzufügen. Weitere Informationen finden Sie unter [Zusätzliche Verarbeitung](#additional-processing) weiter unten.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager als Cloud-Dienst nutzt eine neue Methode zum Hochladen von Assets - direktes binäres Hochladen. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-App und somit für die Endbenutzer transparent unterstützt.
 >
@@ -75,7 +75,7 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf I
 
 Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene Asset oder den Ordner, den Sie zuerst erstellt haben.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Informationen zum Hochladen verschachtelter Ordnerhierarchien in AEM finden Sie unter [Massen-Upload von Assets](#bulk-upload).
 
@@ -130,7 +130,7 @@ Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in ein
 * Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical)nutzt. Ein solches benutzerdefiniertes Tool kann bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
 * Verwenden Sie die [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) , um verschachtelte Ordnerhierarchien hochzuladen.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Für das Hochladen von Massen als Teil der Inhaltsmigration von anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager ist eine sorgfältige Planung, Prüfung und Auswahl der Werkzeuge erforderlich. Anleitungen zu Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md) .
 
@@ -157,7 +157,7 @@ Wenn in Ihrer Umgebung zusätzlich Dynamic Media aktiviert ist:
 * Mit [Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smart Cropping]** und Pixelzuschnitt) sowie Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
 * [Mit Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden
 
-> [!NOTE]
+>[!NOTE]
 >
 > Das Zuschneiden von dynamischen Medien und andere Vorgänge auf Assets sind nicht destruktiv, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
 
