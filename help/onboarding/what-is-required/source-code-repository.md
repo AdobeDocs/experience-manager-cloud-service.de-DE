@@ -2,14 +2,14 @@
 title: Quellcode-Repository - Cloud-Dienste
 description: Quellcode-Repository - Cloud-Dienste
 translation-type: tm+mt
-source-git-commit: 6f323f33663f83043eb8a15fe00e6ed872c3cac1
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
 # Quellcode-Repository {#source-code-repository}
 
-Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository bereitgestellt.
+Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository bereitgestellt.
 
 Damit ein Benutzer auf das Cloud Manager-Git-Repository zugreifen kann, muss er einen Git-Client mit einem Befehlszeilenwerkzeug, einem eigenständigen visuellen Git-Client oder der IDE des Benutzers wie Eclipse, IntelliJ, NetBeans verwenden.
 
@@ -21,5 +21,6 @@ Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss der Anwendungsc
 $ git clone {URL}
 ```
 
-> [!NOTE]
+>[!NOTE]
+>
 > Ein Benutzer kann eine Kopie seines Codes auschecken und Änderungen am lokalen Code-Repository vornehmen. Sobald die Änderungen vorliegen, kann der Benutzer die Codeänderungen wieder in das Remote-Code-Repository in Cloud Manager übernehmen.
