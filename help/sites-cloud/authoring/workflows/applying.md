@@ -2,7 +2,7 @@
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -13,8 +13,8 @@ Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten aktiv zu werd
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
-* Den anzuwendenden Workflow.
-   * Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
+* Der anzuwendende Workflow.
+   * Sie können jeden Workflow anwenden (auf den Sie Zugriff haben, wie vom AEM-Administrator zugewiesen).
 * Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu erkennen.
 * Die Workflow-Nutzlast. Hierbei kann es sich um eine oder mehrere Seiten handeln.
 
@@ -30,7 +30,8 @@ Workflows können wie folgt gestartet werden:
 >* Anwenden von Workflows auf DAM-Assets.
 >* [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ Workflows können wie folgt gestartet werden:
 >[!NOTE]
 >
 >AEM-Administratoren können Workflows mithilfe mehrerer anderer Methoden starten.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ Anschließend können Sie Details angeben:
       * Sie können einen Titel für das Paket festlegen, um die Identifizierung erleichtern.
    >[!NOTE]
    >
-   >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.
+   >Die Option **Workflowpaket beibehalten** ist verfügbar, wenn der Workflow für die Unterstützung mehrerer Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -112,7 +115,7 @@ Anschließend können Sie Details angeben:
 
 1. Im Schritt **Bereich** können Sie Folgendes auswählen:
 
-   * **Fügen Sie Inhalt** hinzu, um den [Pfadbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen. Klicken Sie im Browser auf/tippen Sie auf **Auswählen** , um den Inhalt der Workflow-Instanz hinzuzufügen.
+   * **Hinzufügen Content** , um den [Pfadbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen; Klicken Sie im Browser auf/tippen Sie auf **Auswählen** , um den Inhalt der Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
@@ -129,7 +132,7 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
    >[!NOTE]
    >
-   >Wenn Sie zusätzliche Ressourcen hinzufügen, können Sie **Zurück** verwenden, um die Einstellung für **Workflow-Paket behalten** im Schritt **Eigenschaften** anzupassen.
+   >Wenn Sie zusätzliche Ressourcen hinzufügen, können Sie **Zurück** verwenden, um die Einstellung für **Workflowpaket beibehalten** im Schritt **Eigenschaften** anzupassen.
 
 1. Use **Create** to close the wizard and create the workflow instance. Eine Meldung wird in der Sites-Konsole angezeigt.
 
