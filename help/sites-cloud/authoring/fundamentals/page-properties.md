@@ -2,7 +2,7 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >Beispiel: Wenn Sie einen Alias für `latin-lang` den Knoten `/content/we-retail/spanish` definieren, kann diese Seite über `/content/we-retail/latin-language`
    >
    >Weitere Informationen finden Sie unter Lokalisierte Seitennamen unter Best Practices für SEO- und URL-Verwaltung.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Cloud-Services**
 
-   * Legen Sie Eigenschaften für Cloud-Services<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).--> fest. 
+   * Legen Sie Eigenschaften für Cloud-Services fest.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalisierung     {#personalization}
 
 * **ContextHub-Konfigurationen**
 
-   * Wählen Sie ContextHub Konfiguration und Segmentpfad. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Wählen Sie ContextHub Konfiguration und Segmentpfad.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Konfiguration für Targeting**
 
@@ -188,16 +193,24 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Berechtigungen**
 
-   * Berechtigungen hinzufügen <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Geschlossene Benutzergruppe bearbeiten <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Effektive Berechtigungen<!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)--> anzeigen 
+   * Berechtigungen hinzufügen
+   * Geschlossene Benutzergruppe bearbeiten
+   * Effektive Berechtigungen anzeigen 
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
+
 
 ### Live Copy {#live-copy}
 
@@ -252,6 +265,7 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 >Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Weitere Informationen dazu finden Sie unter Bearbeiten von Eigenschaften für mehrere Assets.
 >
 >Darüber hinaus steht Ihnen die Massenbearbeitung zur Verfügung. Damit können Sie mithilfe von GQL (Google Query Language) auf mehreren Seiten nach Inhalten suchen und die Inhalte anschließend direkt per Massenbearbeitung bearbeiten, bevor Sie die Änderungen an den Ursprungsseiten speichern.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 >[!NOTE]
 >
 >Die Seitenkomponente kann so konfiguriert werden, dass die für die Massenbearbeitung verfügbaren Felder angegeben werden. Informationen dazu finden Sie unter Konfigurieren der Seite für Massenbearbeitung von Seiteneigenschaften.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
