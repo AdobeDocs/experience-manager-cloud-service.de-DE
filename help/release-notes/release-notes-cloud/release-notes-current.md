@@ -1,38 +1,45 @@
 ---
-title: Versionshinweise für Version 2020.4.0
-description: Versionshinweise für Version 2020.4.0
+title: Adobe Experience Manager als Cloud-Dienst - Versionshinweise für 2020.4.0
+description: Versionshinweise zu Experience Manager für 2020.4.0
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# Release Notes for AEM as a Cloud Service 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager als Cloud-Dienst 2020.4.0 beschrieben.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise [!DNL Experience Manager] als Cloud Service 2020.4.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Experience Manager als Cloud-Dienst 2020.4.0 ist der 9. April 2020.
+Das Veröffentlichungsdatum für [!DNL Experience Manager] den Cloud-Dienst 2020.4.0 ist der 9. April 2020.
 
-## Assets {#assets}
+## What&#39;s New in Assets {#assets}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Experience Manager Assets und dynamische Medien in AEM als Cloud-Service-Version 2020.4.0.
+Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen für [!DNL Experience Manager Assets] und [!DNL Dynamic Media] in der aktuellen Version.
 
-### Neuerungen {#assets-what-is-new}
+* [Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) unterstützt die Anwendungsfälle für die Asset-Verteilung für Experience Manager Assets. [!DNL Brand Portal] unterstützt Unternehmen dabei, ihre Marketing-Anforderungen zu erfüllen, indem zugelassene Marken- und Produktressourcen sicher an externe Agenturen, Partner, interne Teams und Wiederverkäufer zum Herunterladen verteilt werden.
+   * [!DNL Brand Portal] die Konfiguration über [!DNL Adobe I/O] Konsole abgeschlossen wurde.
+   * Die Asset-Beschaffung in [!DNL Brand Portal] wird mit [!DNLEExperience Manager] als Cloud-Dienst noch nicht unterstützt.
 
-* [Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) ist für AEM als Cloud-Dienst-Assets verfügbar und unterstützt Anwendungsfälle für die Asset-Verteilung. Brand Portal unterstützt Unternehmen dabei, ihre Marketing-Anforderungen zu erfüllen, indem zugelassene Marken- und Produktressourcen sicher zum Herunterladen an externe Agenturen, Partner, interne Teams und Wiederverkäufer verteilt werden.
-   * Die Konfiguration des Markenportals erfolgt über die Adobe I/O-Konsole.
-   * Die Asset-Beschaffung im Markenportal wird von AEM als Cloud-Dienst noch nicht unterstützt
-* Die neue Version von [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 2.0 wird von AEM als Cloud-Dienst unterstützt. Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Inhaltserstellung, indem AEM Assets über das In-App-Bedienfeld &quot;Asset-Link&quot;mit den Creative Cloud-Desktop-Apps Fotoshop, Illustrator und InDesign verknüpft werden.
-   * AEM als Cloud-Dienst ist für Adobe Asset Link vorkonfiguriert, was zu einer [vereinfachten Konfiguration](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)führt.
-   * Asset Link unterstützt jetzt einen [AEM Umgebung-Umschalter](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink), der es kreativen Benutzern ermöglicht, sich einfacher mit verschiedenen AEM-Umgebungen zu verbinden (z. B. bei Agenturen, die mit mehreren Clients mit AEM Assets arbeiten)
-* Der automatische Beginn für [Arbeitsabläufe](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) nach der Verarbeitung kann in der Benutzeroberfläche &quot;Ordnereigenschaften&quot;für bestimmte Ordnerhierarchien konfiguriert werden.
-   * Die Benutzeroberfläche &quot;Ordnereigenschaften&quot;wurde vereinfacht. Die neue Registerkarte &quot;Asset-Verarbeitung&quot;enthält Metadaten-Profil, Profil für die Verarbeitung und die neue Konfiguration des Arbeitsablaufs für den automatischen Beginn
-* Das Dialogfeld zur Asset-Wiederaufarbeitung ermöglicht die Auswahl eines bestimmten verarbeitenden Profils und die Entscheidung, die Verarbeitung in Unterordnern erneut durchzuführen
-* Dynamische Medien: Die Konfiguration für selektive Veröffentlichung wurde hinzugefügt. Das bedeutet, dass Assets nur zur sicheren Vorschau automatisch veröffentlicht werden und explizit in AEM veröffentlicht werden können, ohne DMS7 für Versand in der öffentlichen Domäne zu veröffentlichen.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) Version 2.0 funktioniert [!DNL Experience Manager] als Cloud-Dienst. [!DNL Adobe Asset Link] optimiert die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Inhaltserstellung durch die Verbindung [!DNL Experience Manager Assets] mit [!DNL Creative Cloud] Desktop-Apps [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]und [!DNL Adobe InDesign] über das In-App- [!DNL Asset Link] Bedienfeld.
+   * [!DNL Experience Manager] ist vorkonfiguriert für [!DNL Adobe Asset Link], was zu einer [einfachen Konfiguration](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) und einer schnelleren Einführung in Kreativprofis führt.
+   * [!DNL Asset Link] unterstützt jetzt einen [Experience Manager Umgebung-Umschalter](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) , mit dem sich Kreativbenutzer problemlos mit einer anderen [!DNL Experience Manager] Umgebung verbinden können. Ein Beispiel, bei dem diese Funktion nützlich ist, sind Agenturdesigner, die mit mehreren Kunden arbeiten und verschiedene [!DNL Experience Manager Assets] Bereitstellungen verwenden.
 
-### Fehlerbehebungen  {#assets-bug-fixes}
+* Die Benutzer können die [Nachbearbeitung Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) für den automatischen Beginn in der Benutzeroberfläche &quot; [!UICONTROL Eigenschaften] &quot;für die jeweiligen Ordnerhierarchien konfigurieren.
+   * Die Benutzeroberfläche &quot;Ordnereigenschaften [!UICONTROL &quot;wurde vereinfacht. Die neue Registerkarte &quot;] Asset-Verarbeitung  &quot;enthält Metadaten-Profil, Profil zur Verarbeitung und die neue Workflow-Konfiguration für den automatischen Beginn.
+   * Im Dialogfeld zur Asset-Wiederaufbereitung können Sie ein bestimmtes Profil auswählen und entscheiden, es in Unterordnern erneut zu verarbeiten.
+   * [!DNL Dynamic Media]: Es wurde eine selektive Veröffentlichungskonfiguration hinzugefügt, sodass Assets nur für sichere Vorschau automatisch veröffentlicht werden. Außerdem können die Assets explizit in Experience Manager veröffentlicht werden, ohne sie für Versände in der öffentlichen Domäne in DMS7 zu veröffentlichen.
 
-* Fehlerbehebungen in der Asset-Verarbeitung
-* Fehlerbehebungen in der Konfiguration von Dynamischen Medien und beim Veröffentlichen von Assets im Dynamischen Media Versand-Dienst
+* Folgende Themen wurden behandelt:
+   * Fehlerbehebungen bei Problemen mit der Asset-Verarbeitung.
+   * Fehlerbehebungen in [!DNL Dynamic Media] Konfiguration und Veröffentlichung von Assets im [!DNL Dynamic Media] Versand-Dienst.
+
+>[!MORELIKETHIS]
+>
+>* [Info zu Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Markenportal konfigurieren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Experience Manager für die Verwendung mit Asset Link konfigurieren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Erstellen von Arbeitsabläufen in Experience Manager mithilfe von Assets Microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
