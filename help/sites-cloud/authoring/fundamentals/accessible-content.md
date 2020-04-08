@@ -2,7 +2,7 @@
 title: Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)
 description: Barrierefreies Nutzen von Webinhalten durch Personen mit Behinderungen
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -18,15 +18,17 @@ WCAG 2.0 umfasst eine Reihe von technologieunabhängigen Richtlinien und Erfolgs
 >* den Quick Guide zu WCAG 2.0, um weitere Details zu erhalten.
 >* Konfigurieren des Rich-Text-Editors (RTE) für die Erstellung von barrierefrei zugänglichen Inhalten
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 Diese sind in drei Konformitätslevel abgestuft: Level A (niedrigstes), Level AA und Level AAA (höchstes). Die Levels sind kurz definiert wie folgt:
 
-* **Level A:** Ihre Site erreicht ein allgemeines Mindestmaß an Barrierefreiheit. Zur Erreichung dieses Levels müssen alle Erfolgskriterien von Level A erfüllt sein.
-* **** Stufe AA: Dies ist ein idealer Barrierefreiheitsgrad, nach dem Sie streben können und in dem Ihre Site ein verbessertes Maß an Barrierefreiheit erreicht, sodass sie für die meisten Menschen in den meisten Situationen mit den meisten Technologien zugänglich ist. Um dieses Niveau zu erreichen, sind alle Erfolgskriterien der Stufen A und AA erfüllt.
-* **Level AAA:** Ihre Site erreicht ein sehr hohes Maß an Barrierefreiheit. Zur Erreichung dieses Levels müssen alle Erfolgskriterien von Level A, Level AA und Level AAA erfüllt sein.
+* **Stufe A:** Ihre Site erreicht eine einfache, minimale Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-Erfolgskriterien erfüllt.
+* **Stufe AA:** Dies ist ein idealer Barrierefreiheitsgrad, der angestrebt werden sollte und mit dem Ihre Site mehr Barrierefreiheit ermöglicht, sodass sie für die meisten Menschen in den meisten Situationen mit den meisten Technologien zugänglich ist. Bei Erreichen dieser Stufe sind alle Kategorie-A- und -AA-Erfolgskriterien erfüllt.
+* **Stufe AAA:** Ihre Site erreicht eine sehr hohe Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-, -AA- und -AAA-Erfolgskriterien erfüllt.
 
 Bei der Erstellung Ihrer Site sollten Sie das Gesamtlevel festlegen, dem Ihre Site entsprechen sollte.
 
@@ -72,7 +74,8 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 
 >[!NOTE]
 >
->Einige integrierte Komponenten wie **Karussell** und **Dia-Show** bieten keine Möglichkeit zum Hinzufügen von alternativen Textbeschreibungen zu Bildern. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see Adding Support for Additional HTML Elements and Attributes).
+>Einige vordefinierten Komponenten wie **Karussell** und **Bildschirmpräsentation** bieten keine Möglichkeit, Bilder mit Alternativtextbeschreibungen zu versehen. Bei der Implementierung von Versionen dieser Komponenten für Ihre AEM-Instanz muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es zum Inhalt hinzufügen können (siehe „Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute“).
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -101,14 +104,14 @@ Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Think about
 * Symbole:
 Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 * Charts and graphs: These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Additionally, you could provide the source data in tabular form elsewhere in the page or site.
-* Maps, diagrams, flowcharts: For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+* Maps, Diagramme, Flussdiagramme: Für Grafiken, die räumliche Daten bereitstellen (z. B.  um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Maps ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Map bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Map Image kurz die *Zuordnung von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
 * CAPTCHAs:
 Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Webseiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie bestehen aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um einen Sicherheitstest zu bestehen. Die Bereitstellung einer Textalternative für das Bild ist offensichtlich nicht möglich, daher müssen Sie stattdessen alternative nichtgrafische Lösungen in Betracht ziehen.
 Das W3C bietet eine Reihe von Vorschlägen wie: Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
    * Logik-Puzzles
    * Audio statt Bilder
    * Eingeschränkte Benutzerkonten und Spamfilter
-* Hintergrundbilder: Diese werden mithilfe von CSS (Cascading Stylesheets) anstelle von HTML erreicht. Das bedeutet, dass es nicht möglich ist, einen alternativen Textwert anzugeben. Daher sollten Hintergrundbilder keine wichtigen Textinformationen liefern - wenn dies der Fall ist, müssen diese Informationen auch im Text der Seite angegeben werden. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
+* Hintergrundbilder: Diese werden mithilfe von CSS (Cascading Stylesheets) anstelle von HTML erreicht. Dies bedeutet, dass es nicht möglich ist, einen alternativen Textwert anzugeben. Daher sollten Hintergrundbilder keine wichtigen Textinformationen liefern - wenn dies der Fall ist, müssen diese Informationen auch im Text der Seite angegeben werden. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -190,7 +193,7 @@ Gehörlose oder schwerhörige Menschen können Audioinhalte gar nicht oder nur s
 Es gibt zwei Arten von Untertiteln:
 
 * Offen: Immer sichtbar, wenn das Video abgespielt wird
-* Geschlossen:* *Die Beschriftungen können vom Benutzer ein- oder ausgeschaltet werden
+* Geschlossen:* *Die Beschriftungen können vom Benutzer ein- oder ausgeschaltet werden.
 
 Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können, ob die Untertitel angezeigt werden.
 
@@ -306,10 +309,10 @@ AEM erleichtert den Aufbau von Webseiten mit den entsprechenden HTML-Elementen. 
 
 Sie können folgendermaßen sicherstellen, dass Ihre Webseiten die entsprechende Struktur erhalten:
 
-* **Verwendung von Überschriften:** Solange die Barrierefreiheitsfunktionen der RTE aktiviert sind, bietet AEM drei Stufen der Seitenüberschrift. Sie können diese verwenden, um Abschnitte und Unterabschnitte im Inhalt zu kennzeichnen. Überschrift 1 ist die oberste Ebene der Überschrift und Überschrift 3 die unterste. Der Systemadministrator kann das System so konfigurieren, dass die Verwendung von weiteren Überschriftenebenen zulässig ist.
-* **Text** hervorgehoben: Verwenden Sie das `<strong>` oder das `<em>` Element, um die Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
+* **Verwenden von Überschriften:** Solange die Barrierefreiheitsfunktionen der RTE aktiviert sind, bietet AEM drei Stufen der Seitenüberschrift. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
+* **Hervorgehobener Text**: Verwenden Sie das `<strong>`- oder `<em>`-Element, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften, um Text in Absätzen hervorzuheben.
    * Markieren Sie den Text, den Sie hervorheben möchten.
-   * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+   * Klicken Sie auf das Symbol **B** (für `<strong>`) oder auf das Symbol **I** (für `<em>`), das im Bedienfeld **Eigenschaften** angezeigt wird (vergewissern Sie sich, dass HTML ausgewählt ist).
 
       >[!NOTE]
       >
@@ -321,12 +324,12 @@ Sie können folgendermaßen sicherstellen, dass Ihre Webseiten die entsprechende
       >They are effectively the same, but `<strong>` and `<em>` are preferable as they are semantically correct html. Your development team can configure the RTE to use `<strong>` and `<em>` (instead of `<b>` and `<i>`) when developing your project instance.
 
 
-* **Verwenden Sie Listen**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
-   * The `<ul>` element is used for *unordered* (bulleted) lists. Individual list items are identified using the `<li>` element.In the RTE, use the **Bullet List** icon.
+* **Listenverwenden:** Mit HTML können Sie drei verschiedene Listentypen angeben:
+   * Das `<ul>`-Element wird für *ungeordnete* Listen (mit Aufzählungszeichen) verwendet. Einzelne Listenelemente werden mithilfe des `<li>`-Elements identifiziert. Verwenden Sie im RTE das Symbol **Aufzählungsliste**.
    * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element. Verwenden Sie in RTE das Symbol **Nummerierte Liste** .
    Wenn Sie Inhalt in einen Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den jeweiligen Listentyp aus. Wie im obigen Beispiel, in dem gezeigt wird, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zum HTML-Code hinzugefügt.
 
-   Im Vollbildmodus sind die Symbole für **Aufzählung** und **Nummerierte Liste** einzeln sichtbar. Außerhalb des Vollbildmodus befinden sich die beiden Optionen unter dem Symbol **Listen**.
+   Im Vollbildmodus sind die einzelnen Symbole **Aufzählungsliste** und **Nummerierte Liste** sichtbar. Wenn Sie sich nicht im Vollbildmodus befinden, sind die beiden Optionen hinter dem einzelnen Symbol **Listen** verfügbar.
 * **Tabellen** verwenden: Datentabellen müssen anhand von HTML-Tabellenelementen identifiziert werden:
    * one `<table>` element
    * a `<tr>` element for each row of the table
@@ -339,19 +342,20 @@ Sie können folgendermaßen sicherstellen, dass Ihre Webseiten die entsprechende
    * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
    >[!NOTE]
    >
-   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes).
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   >Standardmäßig sind diese Elemente und Attribute nicht direkt verfügbar, obwohl der Systemadministrator Unterstützung für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen kann (siehe „Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute“).
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
 
 * Definieren Sie eine entsprechende **Beschriftung**.
-* Idealerweise sollten Sie die Standardwerte für **Breite**, **Höhe**, **Rand**, **Textabstand** und **Zellenabstand** entfernen. Alle Eigenschaften können in einem globalen Stylesheet festgelegt werden.
+* Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
 
 Sie können dann die **Zellen-Eigenschaften** verwenden, um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt:  
 
-* **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Ebenen von Kopfzeilen vorhanden sind, reichen die grundlegenden Tabelleneigenschaften möglicherweise nicht aus, um alle erforderlichen Strukturinformationen bereitzustellen. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. Beispiel: In der folgenden Tabelle werden die Überschriften den IDs zugeordnet, um eine programmatische Verknüpfung für Benutzer von Hilfstechnologien zu erstellen.
+* **Komplexe Datentabellen:** In einigen Fällen, in denen komplexe Tabellen mit mindestens zwei Stufen von Kopfzeilen vorhanden sind, reichen die einfachen Tabelleneigenschaften möglicherweise nicht aus, um alle erforderlichen Strukturinformationen bereitzustellen. Für diese Arten komplexer Tabellen müssen direkte Beziehungen zwischen den Kopfzeilen und den zugehörigen Zellen mithilfe der Attribute **header** und **id** geschaffen werden. Beispielsweise werden in der Tabelle unten Kopfzeilen und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
    >[!NOTE]
    >
@@ -476,7 +480,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie einen zus�
 
 Manche Menschen mit einem beeinträchtigten Sehvermögen können nicht zwischen bestimmten Farbpaaren mit geringem Kontrast unterscheiden. Die Barrierefreiheit ist für diese Menschen in folgenden Situationen eingeschränkt:
 
-* Wenn zwischen dem Text und der Hintergrundfarbe nur wenig Kontrast besteht.
+* Der Text hat in Bezug auf die Hintergrundfarbe einen schlechten Kontrast.
 * Wenn die Farbkodierung des Textes (wie Link-Text und Text ohne Link) für die Unterscheidung der Informationen wichtig ist.
 
 >[!NOTE]
@@ -609,7 +613,7 @@ Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwai
 
 Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt der Seite so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
 
-You can also edit the page title when editing a page, which is accessible by **Page Information** - **Properties.**
+Sie können den Seitentitel auch beim Bearbeiten einer Seite bearbeiten. Sie können darauf über **Seiteninformationen** > **Eigenschaften** zugreifen.
 
 #### Weitere Informationen - Seite mit Titel versehen (2.4.2) {#more-information-page-titled}
 
@@ -708,7 +712,7 @@ To meet this success criterion, the default language of a web page can be identi
 * Eine Seite, die als US-Englisch wiedergegeben werden soll, sollte den folgenden Standard annehmen:
    `<html lang = “en-us”>`
 
-**In AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt, kann aber auch beim Bearbeiten einer Seite geändert werden, auf die** Sidekick **- Registerkarte &quot;** Seite **&quot;-** Seiteneigenschaften zugreifen kann... - Registerkarte **Erweitert** .
+In AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt, sie kann aber auch beim Bearbeiten einer Seite geändert werden, auf die über die Registerkarte **Sidekick** > **Seite** > **Seiteneigenschaften …** > **Erweitert** zugegriffen werden kann.
 
 #### Weitere Informationen - Sprache der Seite (3.1.1) {#more-information-language-of-page}
 
@@ -784,17 +788,18 @@ Im AEM wird eine Standardbeschriftung eingefügt, wenn Sie eine Formularkomponen
 
 Das Feld **Titel** muss für Feldelemente verwendet werden, weil es eine Beschriftung bereitstellt, die für Sprachausgabetechnologien verfügbar ist. Es reicht nicht aus, einfach nur eine Beschriftung im Text neben dem Feld anzugeben.
 
-For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
+Bei einigen Formularkomponenten ist es auch möglich, Beschriftungen mithilfe des Kontrollkästchens **Titel ausblenden** visuell auszublenden. Auf diese Weise ausgeblendete Beschriftungen stehen weiterhin für Hilfstechnologien zur Verfügung, werden jedoch nicht auf dem Bildschirm angezeigt. Auch wenn dies in einigen Situationen einen guten Ansatz bilden kann, ist es in der Regel besser, möglichst immer eine sichtbare Beschriftung hinzuzufügen, da manche Benutzer nur einen sehr kleinen Ausschnitt des Bildschirms sehen (jeweils ein Feld) und die Felder nur anhand der Beschriftung richtig zuordnen können.
 
 #### Bild-Schaltflächen {#image-buttons}
 
-Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfläche**) liefert das Feld **Titel** auf der Registerkarte **Titel und Text** des Bearbeitungsdialogfelds den Alt-Text für das Bild und nicht die Beschriftung. Im folgenden Beispiel wurde daher für das Bild mit dem Text `Submit` im Bearbeitungsdialogfeld der Alt+Text `Submit` über das Feld **Titel** hinzugefügt.
+Wo Bildschaltflächen verwendet werden (z. B. die Komponente **Bildschaltfläche** ), stellt das Feld **Titel** auf der Registerkarte **Titel und Text** des Bearbeitungsdialogfelds anstelle der Bezeichnung den Alternativtext für das Bild bereit. In dem unten stehenden Beispiel hat das Bild mit dem Text `Submit` den alternativen Text `Submit`, der über das Feld **Titel** im Bearbeitungsdialogfeld hinzugefügt wird.
 
 #### Gruppen von Formularfeldern {#groups-of-form-fields}
 
-Wenn es eine Gruppe zusammenhängender Steuerelemente gibt, wie eine **Optionsfeldgruppe**, kann sowohl ein Titel für die Gruppe erforderlich sein als auch für die einzelnen Steuerelemente. Wenn Sie im AEM ein Set Optionsschaltflächen hinzufügen, enthält das Feld **Titel** diesen Gruppentitel, während die Titel der einzelnen Schaltflächen beim Erstellen der Optionsschaltflächen (**Elemente**) angegeben werden.
+Bei einer Gruppe miteinander verbundener Steuerelemente, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, wird dieser Gruppentitel im Feld **Titel** bereitgestellt, während einzelne Titel als Optionsschaltflächen (**Elemente**) angegeben werden.
 
-Es gibt jedoch keine programmatische Zuordnung zwischen dem Gruppentitel und den Optionsschaltflächen. Der Titel muss beim Bearbeiten der Vorlage in die erforderlichen Tags `fieldset` und `legend` gesetzt werden, um diese Zuordnung herzustellen. Dies kann ausschließlich über die Bearbeitung des Seitenquellcodes erfolgen. Alternativ kann ein Systemadministrator die Unterstützung für diese Elemente hinzufügen, damit sie im Dialogfeld **Feldeigenschaften** angezeigt werden (siehe Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen).
+Es gibt jedoch keine programmatische Verbindung zwischen dem Gruppentitel und den Optionsfeldern selbst. Vorlagen-Editors müssen den Titel in die erforderlichen `fieldset`- und `legend`-Tags einschließen, um diese Zuordnung zu erstellen. Dies kann nur durch Bearbeiten des Seitenquellcodes erfolgen. Alternativ können Systemadministratoren Unterstützung für diese Elemente hinzufügen, damit sie im Dialogfeld **Feldeigenschaften** angezeigt werden (siehe „Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute“).
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -803,7 +808,7 @@ However, there is no programmatic association between the group title and the ra
 
 Wenn Daten in einem bestimmten Format eingegeben werden müssen, sollten Sie die in der Beschriftung verdeutlichen. Wenn z. B. ein Datum im Format `DD-MM-YYYY` eingegeben werden soll, fügen Sie diese Angabe in die Beschriftung ein. Dies führt dazu, dass die Beschriftung automatisch zusammen mit dem gewünschten Format ausgegeben wird, wenn Benutzer der Sprachausgabe auf das Feld treffen.
 
-Wenn die Eingabe in ein Feld erforderlich ist, verdeutlichen Sie dies, indem Sie das Wort „erforderlich“ in die Beschriftung einfügen. AEM adds an asterisk when a field is required, but it would be ideal to include the word `required`in the label itself (in the **Title** field in the edit dialog).
+Wenn die Eingabe für ein Formularfeld obligatorisch ist, machen Sie dies deutlich, indem Sie das erforderliche Wort als Teil der Bezeichnung verwenden. AEM fügt ein Sternchen hinzu, wenn ein Feld erforderlich ist. Es empfiehlt sich jedoch, das Wort `required`in die Bezeichnung selbst mit aufzunehmen (im Feld **Titel** im Dialogfeld „Bearbeiten“).
 
 Auch die Positionierung von Beschriftungen ist wichtig, da sie das Auffinden der entsprechenden Felder erleichtert. Dies ist besonders wichtig, wenn es sich um komplexe Formulare handelt. Halten Sie sich an folgende Richtlinien:
 
