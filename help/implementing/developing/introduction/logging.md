@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -120,15 +120,15 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 ## Protokollebene festlegen {#setting-the-log-level}
 
-Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, um ausführliche Protokolle zu Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
 
 ### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > Die globale Aktivierung der DEBUG-Protokollebene erzeugt eine große Menge an Informationen, die sich nur schwer durchblättern lassen. Es wird empfohlen, diese Option nur für Dienste zu aktivieren, für die Debugging erforderlich ist. Weitere Informationen finden Sie unter [Anmelder und Autoren für individuelle Dienste](logging.md#loggers-and-writers-for-individual-services).
 
