@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service-SDK
-description: 'Noch auszufüllen '
+description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,12 +32,12 @@ Darüber hinaus verwenden einige Kunden, die zuvor mit AEM 6.5 oder früher bere
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] Der Versionseintrag für das SDK sollte mit der Version von AEM als Cloud-Dienst übereinstimmen. Sie können sehen, welche Version Sie verwenden, indem Sie sich bei AEM anmelden, dann das Fragezeichen in der oberen rechten Ecke des Bildschirms aufrufen und **[!UICONTROL Info zu Adobe Experience Manager auswählen.]**
+>[!NOTE] Der Versionseintrag für das SDK sollte mit der Version von AEM als Cloud-Dienst übereinstimmen. Sie können sehen, welche Version Sie verwenden, indem Sie sich bei AEM anmelden, dann das Fragezeichen in der oberen rechten Ecke des Bildschirms aufrufen und **[!UICONTROL Info zu Adobe Experience Manager auswählen.]**
 
 * Die Remote-Koordinate für das Maven-Repository, in dem das Paket gehostet wird, sollte in der Pom-Datei enthalten sein.
 
