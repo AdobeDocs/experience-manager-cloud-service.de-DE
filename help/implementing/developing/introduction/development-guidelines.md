@@ -1,8 +1,8 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
-description: 'Noch auszufüllen '
+description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -77,7 +77,7 @@ Die umgekehrte Replizierung von &quot;Veröffentlichen auf Autor&quot;wird in AE
 
 ## Forward Replication Agents müssen möglicherweise portiert werden. {#forward-replication-agents}
 
-Inhalte werden von &quot;Autor&quot;zu &quot;Veröffentlichen&quot;über einen Pub-Unter-Mechanismus repliziert. Benutzerdefinierte Replizierungsagenten werden nicht unterstützt.
+Inhalte werden von &quot;Autor&quot;bis &quot;Veröffentlichen&quot;über einen Pub-Unter-Mechanismus repliziert. Benutzerdefinierte Replizierungsagenten werden nicht unterstützt.
 
 ## Überwachung und Debugging {#monitoring-and-debugging}
 
@@ -91,9 +91,9 @@ Auf Cloud-Umgebung können Entwickler Protokolle über Cloud Manager herunterlad
 
 Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
-> [!NOTE]
-> 
-> Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
+>[!NOTE]
+>
+>Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
 
 **Aktivieren der DEBUG-Protokollebene**
 
