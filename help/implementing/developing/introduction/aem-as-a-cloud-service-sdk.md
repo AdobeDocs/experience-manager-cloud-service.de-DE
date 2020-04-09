@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service-SDK
 description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ Darüber hinaus verwenden einige Kunden, die zuvor mit AEM 6.5 oder früher bere
 </repository>
 ```
 
-## Aktualisieren eines lokalen Projekts mit einer neuen SDK-Version {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Aktualisieren eines lokalen Projekts mit einer neuen SDK-Version {#refreshing-a-local-project-with-a-new-skd-version}
 
 Wann wird empfohlen, das lokale Projekt mit einem neuen SDK zu aktualisieren?
 
@@ -92,5 +92,5 @@ Um Inhaltspakete mit verschlüsselten Werten wiederverwenden zu können, müssen
 
 * Wenn Sie die lokale Datei &quot;quickstart.jar&quot;zum ersten Beginn aufrufen, müssen Sie den folgenden Parameter hinzufügen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Es wird empfohlen, jedoch optional, sie immer hinzuzufügen.
 * Beim ersten Starten einer Instanz erstellen Sie ein Paket, das einen Filter für den Stammordner &quot;`/etc/key`&quot;enthält. Dies hält das Geheimnis für die Wiederverwendung in allen Umgebung, für die Sie sie wiederverwenden möchten
-* Exportieren Sie alle veränderlichen Inhalte, die Geheimnisse enthalten, oder suchen Sie die verschlüsselten Werte, `/crx/de` um sie dem Paket hinzuzufügen, das in allen Installationen wiederverwendet wird.
+* Exportieren Sie alle veränderbaren Inhalte, die Geheimnisse enthalten, oder suchen Sie die verschlüsselten Werte nach, `/crx/de` um sie dem Paket hinzuzufügen, das über Installationen hinweg wiederverwendet wird.
 * Wenn Sie eine neue Instanz drehen (entweder um sie durch eine neue Version zu ersetzen, oder mehrere dev-Umgebung sollten die Anmeldeinformationen für das Testen gemeinsam verwenden), installieren Sie das in den Schritten 2 und 3 erstellte Paket, um den Inhalt wiederverwenden zu können, ohne dass eine manuelle Neukonfiguration erforderlich ist. Das liegt daran, dass sich der Kryptoschlüssel jetzt in einer Synchronisierung befindet.
