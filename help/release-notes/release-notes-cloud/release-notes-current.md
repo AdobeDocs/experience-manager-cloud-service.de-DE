@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als Cloud-Dienst - Versionshinweise für 2020.4.0
 description: Versionshinweise zu Experience Manager für 2020.4.0
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 >* [Experience Manager für die Verwendung mit Asset Link konfigurieren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Erstellen von Arbeitsabläufen in Experience Manager mithilfe von Assets Microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Cloud Manager-Aktualisierungen {#cloud-manager}
+
+## Neue Funktionen in Cloud Manager {#whats-new-cloud-manager}
+
+* Herausgeber-URLs sind jetzt auf der Seite &quot;Umgebung&quot;in der Benutzeroberfläche von Cloud Manager verfügbar.
+* Änderungen an der Navigation, die es dem Benutzer ermöglichen, ein Programm von der Cloud Manager-Übersichtsseite zu bearbeiten, zu wechseln oder hinzuzufügen.
+* Änderungen, die es dem Benutzer erlauben, Programm von der Programm-Karte in der Cloud Manager-Landingpage zu bearbeiten.
+* Neue Pipeline-Status- **Pipeline, die mit der Umgebung, mit der sie verbunden ist, ausgeführt** wird.
+* Verbesserte Verständlichkeit der Pipeline-Ausführungsseite. Dazu gehören die Anzeige des Pipeline-Namens (nur nicht in der Produktion) und des Typs sowie eine Markierung, mit der angegeben wird, ob der Pipeline-Status in Bearbeitung/Abgebrochen/Fehlgeschlagen ist.
+* QuickInfos zur Verbesserung der Benutzerfreundlichkeit und Verständlichkeit, weshalb Hinzufügen Schaltfläche &quot;Programm/Umgebung&quot;deaktiviert ist.
+* Fehlgeschlagene Umgebung können jetzt über die Benutzeroberfläche und die API gelöscht werden.
+* Der zur Erstellung von Git-Passwörtern verwendete Prozess wurde für Probleme in der zugrunde liegenden Service-Ebene widerstandsfähiger gemacht.
+
+## Fehlerbehebungen {#bug-fixes-cloud-manager}
+
+* Die Links zur Umgebung &quot;Stage&quot;auf der Seite mit Details zur Pipelineausführung navigierten nicht einheitlich zum richtigen Ort.
+* Einzelne Schritte innerhalb des Umgebung-Erstellungsprozesses werden schneller als nötig ausgeführt, sodass der Vorgang fehlschlägt.
+* Die Maven-Konfiguration, die im Build-Container verwendet wird, wurde aktualisiert, um Deadlocks beim Herunterladen von Artefaktmetadaten zu vermeiden.
+* In einigen Fällen kann der Schritt Image erstellen nicht erfolgreich zum Herunterladen von Kundenpaketen führen.
+* Bestimmte selten auftretende Umstände würden verhindern, dass Umgebung gelöscht werden.
+* Experience Cloud-Benachrichtigungen wurden nicht konsistent empfangen.
