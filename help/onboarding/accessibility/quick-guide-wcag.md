@@ -2,7 +2,7 @@
 title: Eine Kurzanleitung zu WCAG 2.1
 seo-title: Eine Kurzanleitung zu WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -87,7 +87,7 @@ Diese Liste soll nicht erschöpfend sein, sie enthält eine Einführung in die v
 
 [Was ist neu in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) bietet wertvolle Informationen über das Delta zwischen WCAG und 2.0 und WCAG 2.1.
 
-[WCAG 2.0 und 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) klären den Status ihrer Beziehungen weiter.
+In den Abschnitten [WCAG 2.0 und 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wird der Status ihrer Beziehungen näher erläutert.
 
 ### Techniken für WCAG 2.1 {#techniques-for-wcag}
 
