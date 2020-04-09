@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als Cloud-Dienst - Versionshinweise für 2020.4.0
 description: Versionshinweise zu Experience Manager für 2020.4.0
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 >* [Erstellen von Arbeitsabläufen in Experience Manager mithilfe von Assets Microservices](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Manager-Aktualisierungen {#cloud-manager}
-
 ## Neue Funktionen in Cloud Manager {#whats-new-cloud-manager}
 
 * Herausgeber-URLs sind jetzt auf der Seite &quot;Umgebung&quot;in der Benutzeroberfläche von Cloud Manager verfügbar.
@@ -57,7 +55,7 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 * Fehlgeschlagene Umgebung können jetzt über die Benutzeroberfläche und die API gelöscht werden.
 * Der zur Erstellung von Git-Passwörtern verwendete Prozess wurde für Probleme in der zugrunde liegenden Service-Ebene widerstandsfähiger gemacht.
 
-## Fehlerbehebungen {#bug-fixes-cloud-manager}
+### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
 * Die Links zur Umgebung &quot;Stage&quot;auf der Seite mit Details zur Pipelineausführung navigierten nicht einheitlich zum richtigen Ort.
 * Einzelne Schritte innerhalb des Umgebung-Erstellungsprozesses werden schneller als nötig ausgeführt, sodass der Vorgang fehlschlägt.
