@@ -3,7 +3,7 @@ title: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 description: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cl
    Ein Verteilungsagenten enthält zwei Warteschlangen:
    * Eine Verarbeitungswarteschlange für die Verteilung von Assets an das Markenportal.
    * Eine Fehlerwarteschlange für die Assets, bei denen die Verteilung fehlgeschlagen ist.
-   Sie können einzelne Warteschlangen oder die Gesamtkonfiguration testen.
-
    ![](assets/test-bpconfig3.png)
 
 1. Um die Verbindung zwischen AEM Assets und dem Markenportal zu überprüfen, klicken Sie auf **[!UICONTROL Verbindung]** testen.
@@ -218,11 +216,20 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cl
    >
    >Deaktivieren Sie nicht den Distributionsagenten, da dies dazu führen kann, dass die Verteilung der Assets (in der Warteschlange) fehlschlägt.
 
-Markenportal wurde erfolgreich mit Ihrer AEM Assets-Cloud-Instanz konfiguriert. Sie können jetzt:
+
+Sobald das Markenportal erfolgreich mit Ihrer AEM Assets-Cloud-Instanz konfiguriert wurde, können Sie:
 
 * [Veröffentlichen von Assets aus AEM Assets im Markenportal](publish-to-brand-portal.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+Zusätzlich zu den oben genannten Funktionen können Sie auch Metadaten-Schemas, Bildvorgaben, Suchfacetten und -Tags aus AEM Assets in Brand Portal veröffentlichen.
+
+* [Veröffentlichen von Vorgaben, Schemas und Facetten im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## Verteilungsprotokolle {#distribution-logs}
@@ -233,7 +240,7 @@ Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlich
 
 1. Führen Sie die Schritte (Schritt 1 bis 4) aus, wie in **[!UICONTROL Test Connection]** gezeigt, und navigieren Sie zur Seite &quot;Distribution Agent&quot;.
 
-1. Wählen Sie die Verteilungswarteschlange **[!UICONTROL queue-bpdistributionAgent0]** und klicken Sie auf **[!UICONTROL Protokolle]** , um die Verteilungsprotokolle Ansicht.
+1. Klicken Sie auf **[!UICONTROL Protokolle]** , um die Verteilungsprotokolle Ansicht. Die Verarbeitungs- und Fehlerprotokolle finden Sie hier.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,9 @@ Beim Veröffentlichen des Assets werden die folgenden Anforderungs- und Antwortp
 
 Im obigen Beispiel wird eine zusätzliche Anforderung und Antwort ausgelöst. Das System konnte den übergeordneten Ordner (auch als Hinzufügen Pfad bezeichnet) im Markenportal nicht finden, da das Asset zum ersten Mal veröffentlicht wurde. Daher wird eine zusätzliche Anforderung ausgelöst, einen übergeordneten Ordner mit demselben Namen im Markenportal zu erstellen, in dem das Asset veröffentlicht wird.
 
-Wenn der übergeordnete Ordner mit demselben Namen vorhanden ist (alias Hinzufügen Pfad) im Markenportal wird keine zusätzliche Anforderung ausgelöst.
-
 >[!NOTE]
+>>Eine zusätzliche Anforderung wird generiert, wenn der übergeordnete Ordner nicht im Markenportal vorhanden ist (im obigen Beispiel) oder der übergeordnete Ordner in AEM Assets geändert wurde.
 >
->Um die Fehlerprotokolle Ansicht, wählen Sie die Verteilungswarteschlange **[!UICONTROL error-queue-bpdistributionAgent0]** aus und klicken Sie auf **[!UICONTROL Protokolle]**.
-
 
 ## Zusätzliche Informationen {#additional-information}
 
@@ -274,6 +278,7 @@ Gehen Sie zu `/system/console/slingmetrics` , um Statistiken zu verteilten Inhal
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
