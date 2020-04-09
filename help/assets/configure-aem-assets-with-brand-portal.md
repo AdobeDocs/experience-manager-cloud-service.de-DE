@@ -3,7 +3,7 @@ title: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 description: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -161,9 +161,9 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cloud-Dienstes zu erstellen:
 
-1. Anmelden bei Ihrer AEM Assets-Cloud-Instanz
+1. Bei Ihrer AEM Assets-Cloud-Instanz anmelden
 
-1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Cloud Services > AEM Brand Portal]**.
+1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
    Die Seite &quot;Konfiguration des Markenportals&quot;wird geöffnet.
 
@@ -217,7 +217,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cl
    >Deaktivieren Sie nicht den Distributionsagenten, da dies dazu führen kann, dass die Verteilung der Assets (in der Warteschlange) fehlschlägt.
 
 
-Sobald das Markenportal erfolgreich mit Ihrer AEM Assets-Cloud-Instanz konfiguriert wurde, können Sie:
+Ihre AEM Assets-Cloud-Instanz wurde erfolgreich mit dem Brand Portal konfiguriert. Jetzt können Sie:
 
 * [Veröffentlichen von Assets aus AEM Assets im Markenportal](publish-to-brand-portal.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Beim Veröffentlichen des Assets werden die folgenden Anforderungs- und Antwortp
 Im obigen Beispiel wird eine zusätzliche Anforderung und Antwort ausgelöst. Das System konnte den übergeordneten Ordner (auch als Hinzufügen Pfad bezeichnet) im Markenportal nicht finden, da das Asset zum ersten Mal veröffentlicht wurde. Daher wird eine zusätzliche Anforderung ausgelöst, einen übergeordneten Ordner mit demselben Namen im Markenportal zu erstellen, in dem das Asset veröffentlicht wird.
 
 >[!NOTE]
->>Eine zusätzliche Anforderung wird generiert, wenn der übergeordnete Ordner nicht im Markenportal vorhanden ist (im obigen Beispiel) oder der übergeordnete Ordner in AEM Assets geändert wurde.
 >
+>Eine zusätzliche Anforderung wird generiert, wenn der übergeordnete Ordner nicht im Markenportal vorhanden ist (im oben stehenden Beispiel) oder der übergeordnete Ordner in AEM Assets geändert wurde.
+
 
 ## Zusätzliche Informationen {#additional-information}
 
