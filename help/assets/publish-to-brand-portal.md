@@ -3,7 +3,7 @@ title: Veröffentlichen von Assets, Ordnern und Sammlungen im Markenportal
 description: Veröffentlichen Sie Assets, Ordner und Sammlungen im Markenportal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ Im Folgenden werden die Schritte zum Rückgängigmachen der Veröffentlichung ei
 1. In the dialog, click **[!UICONTROL Unpublish]**.
 1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Benutzeroberfläche des Markenportals entfernt.
 
-Weitere Informationen zur Verteilung von Assets, Ordnern und Sammlungen an Endbenutzer finden Sie in der Dokumentation [zum](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Markenportal.
+Zusätzlich zu den oben genannten Funktionen können Sie auch Metadaten-Schemas, Bildvorgaben, Suchfacetten und -Tags aus AEM Assets in Brand Portal veröffentlichen.
 
+* [Veröffentlichen von Vorgaben, Schemas und Facetten im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 <!--
