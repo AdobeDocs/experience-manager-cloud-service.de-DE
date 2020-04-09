@@ -2,7 +2,7 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
@@ -11,41 +11,40 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 Die Cloud-native Lösung bietet dem Benutzer die erforderlichen Berechtigungen und die Möglichkeit, ein Programm auf einem Selbstbedienungsmodell zu erstellen.
 
-Ein Programmerstellungsassistent fordert den Benutzer auf, Details zu übermitteln, je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt wird, was dem jeweiligen Kunden oder Unternehmen zur Verfügung steht.
+Ein Assistent zum Erstellen von Programmen fordert den Benutzer auf, Details zu übermitteln, je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden oder Unternehmen zur Verfügung steht.
 
-Beim erstmaligen Zugriff auf Cloud Manager oder wenn keine Programme im Mieter vorhanden sind, wird dem Benutzer der Bildschirm **Erstellen des ersten Programms** angezeigt. Wenn der Benutzer *Esc* auswählt oder außerhalb des Dialogfelds klickt, wird der folgende Bildschirm angezeigt:
+Im Ereignis des erstmaligen Zugriffs auf Cloud Manager oder wenn keine Programm im Mieter vorhanden sind, wird der Bildschirm &quot;Erstes Programm **erstellen** &quot;angezeigt. Wenn der Benutzer *Esc* auswählt oder außerhalb des Dialogfelds klickt, wird der folgende Bildschirm angezeigt:
 
 ![](assets/create-program1.png)
 
 
-## Verwenden des Programmassistenten {#using-create-program-wizard}
+## Verwenden des Assistenten zum Erstellen von Programmen {#using-create-program-wizard}
 
-Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden/Unternehmen zur Verfügung steht, fordert ein Programmerstellungsassistent den Benutzer auf, eine oder mehrere Details zu übermitteln.
+Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden/Unternehmen zur Verfügung steht, wird der Programm-Erstellungsassistent aufgefordert, eine oder mehrere Angaben zu übermitteln.
 
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->Wenn bereits ein Programm vorhanden ist, sehen Sie oben rechts auf der Einstiegsseite das **Programm** hinzufügen, wie in der folgenden Abbildung dargestellt.
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
-## Demoprogramm erstellen {#create-demo-program}
+## Erstellen eines Demo-Programms {#create-demo-program}
 
 >[!NOTE]
->
-Ein Demoprogramm entspricht einem Sandbox-Programm in der Benutzeroberfläche von Cloud Manager.
+>Ein Demo-Programm entspricht einem Sandbox-Programm in der Benutzeroberfläche von Cloud Manager.
 
 Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
-1. Wählen Sie im Assistenten zum Erstellen des Programms die Option **Demo** einrichten. Der Benutzer sendet den Programmnamen, bevor er &quot; **Erstellen**&quot;auswählt.
+1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Eine Demo** einrichten. Der Benutzer sendet den Programm-Namen, bevor er &quot; **Erstellen**&quot;auswählt.
 
    ![](assets/create-program-setupdemo.png)
 
-1. Benutzer sehen die neue Sandbox-Programmkarte auf der Einstiegsseite und können mit dem Mauszeiger darauf zeigen, um das Cloud Manager-Symbol auszuwählen, um zur Übersichtsseite von Cloud Manager zu navigieren. Die Karte informiert den Benutzer über den Status der automatischen Einrichtung des neu erstellten Sandbox-Programms. Der Benutzer sieht eine Progression.
+1. Der Benutzer sieht die neue Sandbox-Programm-Karte auf der Landingpage und kann den Mauszeiger darüber halten, um das Cloud Manager-Symbol auszuwählen, um zur Cloud Manager-Übersichtsseite zu navigieren. Die Karte informiert den Benutzer über den Status der automatischen Einrichtung des neu erstellten Sandbox-Programms. Der Benutzer sieht eine Progression.
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Nachdem das Programm eingerichtet und der Projekterstellungsschritt abgeschlossen ist, kann der Benutzer auf den Link Git **** verwalten zugreifen, wie in der folgenden Abbildung gezeigt:
+1. Nachdem das Programm eingerichtet und der Projekterstellungsschritt abgeschlossen ist, kann der Benutzer auf den Link Git **** verwalten zugreifen, wie in der folgenden Abbildung dargestellt:
 
    ![](assets/create-program4.png)
 
@@ -54,26 +53,32 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
    >Weitere Informationen zum Zugriff auf und zur Verwaltung des Git-Repositorys mithilfe der Self-Service-Git-Kontoverwaltung über die Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Nachdem die Entwicklungsumgebung erstellt wurde, kann der Benutzer **auf AEM** -Link zugreifen, wie in der folgenden Abbildung gezeigt:
+1. Nachdem die Entwicklungs-Umgebung erstellt wurde, kann der Benutzer **auf AEM** -Link zugreifen, wie in der folgenden Abbildung dargestellt:
 
    ![](assets/create-program-5.png)
 
-1. Nach Abschluss der Bereitstellung für die Entwicklungsumgebung für die Nicht-Produktion leitet der Assistent den Benutzer zum Zugriff auf AEM (in der Entwicklung) oder zum Bereitstellen von Code in der Entwicklungsumgebung:
+1. Nach Abschluss der Bereitstellung für die Entwicklungspipeline für die Nicht-Produktion führt der Assistent den Benutzer dazu, entweder auf AEM (in der Entwicklungsphase) zuzugreifen oder Code für die Entwicklungs-Umgebung bereitzustellen:
 
    ![](assets/create-program-setup-deploy.png)
+
+   >[!NOTE]
+   >Sie können ein Programm auch auf der Seite Übersicht über Cloud Manager bearbeiten, wechseln oder hinzufügen, wie unten dargestellt:
+
+   ![](assets/create-program-a1.png)
+
 
 
 ## Erstellen eines regulären Programms {#create-regular-program}
 
-Ein *reguläres* Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und damit beginnen können, Code zu schreiben, zu erstellen und zu testen, um ihn in der Produktion bereitzustellen.
+Ein *reguläres* Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und Beginn zum Schreiben, Erstellen und Testen von Code mit dem Ziel der Bereitstellung für die Produktion bereitstellen können.
 
 Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
-1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot; **Zur Produktion** einrichten&quot;, um ein normales Programm zu erstellen. Der Benutzer kann den Standardprogrammnamen akzeptieren oder bearbeiten, bevor er **Weiter** auswählt.
+1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot; **Zur Produktion** einrichten&quot;, um ein normales Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er &quot; **Weiter**&quot;auswählt.
 
    ![](assets/set-up-prod1.png)
 
-1. Der Benutzer wählt Lösungen aus, die in das Programm in den Bildschirm aufgenommen werden sollen, der nach dem Bildschirm oben angezeigt wird.
+1. Der Benutzer wählt die Lösungen aus, die in das Programm auf dem Bildschirm, der nach oben angezeigt wird, aufgenommen werden sollen.
 
 
 
@@ -87,17 +92,17 @@ Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
    ![](assets/set-up-prod3.png)
 
-1. Sobald Sie Ihre Programmkarte auf der Einstiegsseite sehen, halten Sie den Mauszeiger darüber, um das Symbol Cloud Manager auszuwählen, um zur Seite &quot;Cloud Manager- **Übersicht** &quot;zu navigieren.
+1. Sobald Sie Ihre Programm-Karte auf der Landingpage sehen, halten Sie den Mauszeiger darüber, um das Symbol Cloud Manager auszuwählen, um zur Seite &quot;Cloud Manager- **Übersicht** &quot;zu navigieren.
 
    ![](assets/set-up-prod4.png)
 
-1. Die Hauptkarte für Aktionsaufrufe führt den Benutzer dazu, eine Umgebung zu erstellen, eine Nicht-Produktionspipeline zu erstellen und schließlich eine Produktionspipeline zu erstellen.
+1. Die Hauptkarte für Aktionsaufrufe wird den Benutzer anleiten, eine Umgebung zu erstellen, eine Nicht-Produktions-Pipeline zu erstellen und schließlich eine Produktionspipeline zu erstellen.
    ![](assets/set-up-prod5.png)
 
 
    >[!NOTE]
    >
-   >Ein reguläres Programm verfügt nicht über eine **automatische Setup** -Funktion.
+   >A regular program does not have **Auto-setup** feature.
 
 
 
