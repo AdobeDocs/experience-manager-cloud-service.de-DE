@@ -3,7 +3,7 @@ title: Veröffentlichen von Assets, Ordnern und Sammlungen im Markenportal
 description: Veröffentlichen Sie Assets, Ordner und Sammlungen im Markenportal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ Im Folgenden werden die Schritte zum Rückgängigmachen der Veröffentlichung ei
 
 1. From the **Collections** console of your AEM Assets instance, and select the collection that    you want to unpublish.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. From the toolbar, click **[!UICONTROL Remove from Brand Portal]** icon.
 1. In the dialog, click **[!UICONTROL Unpublish]**.
