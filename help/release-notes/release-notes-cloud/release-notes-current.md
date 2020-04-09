@@ -2,7 +2,7 @@
 title: Adobe Experience Manager als Cloud-Dienst - Versionshinweise für 2020.4.0
 description: Versionshinweise zu Experience Manager für 2020.4.0
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
    * Im Dialogfeld zur Asset-Wiederaufbereitung können Sie ein bestimmtes Profil auswählen und entscheiden, es in Unterordnern erneut zu verarbeiten.
    * [!DNL Dynamic Media]: Es wurde eine selektive Veröffentlichungskonfiguration hinzugefügt, sodass Assets nur für sichere Vorschau automatisch veröffentlicht werden. Außerdem können die Assets explizit in Experience Manager veröffentlicht werden, ohne sie für Versände in der öffentlichen Domäne in DMS7 zu veröffentlichen.
 
-* Die folgenden Themen werden behandelt:
-   * Fehlerbehebungen bei Problemen mit der Asset-Verarbeitung.
-   * Fehlerbehebungen in [!DNL Dynamic Media] Konfiguration und Veröffentlichung von Assets im [!DNL Dynamic Media] Versand-Dienst.
+### Fehlerbehebungen {#assets-bug-fixes}
+
+* Fehlerbehebungen bei Problemen mit der Asset-Verarbeitung.
+* Fehlerbehebungen in [!DNL Dynamic Media] Konfiguration und Veröffentlichung von Assets im [!DNL Dynamic Media] Versand-Dienst.
 
 >[!MORELIKETHIS]
 >
