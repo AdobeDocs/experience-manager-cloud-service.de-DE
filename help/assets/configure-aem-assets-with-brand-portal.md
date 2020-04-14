@@ -3,7 +3,7 @@ title: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 description: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
 
 ---
 
@@ -152,7 +152,7 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 >[!CAUTION]
 >
->Erstellen Sie nur eine gültige IMS-Konfiguration. Erstellen Sie nicht mehrere IMS-Konfigurationen.
+>Erstellen Sie nur eine gültige IMS-Konfiguration.
 >
 > Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
 
@@ -161,7 +161,7 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cloud-Dienstes zu erstellen:
 
-1. Bei Ihrer AEM Assets-Cloud-Instanz anmelden
+1. Anmelden bei Ihrer AEM Assets-Cloud-Instanz
 
 1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
