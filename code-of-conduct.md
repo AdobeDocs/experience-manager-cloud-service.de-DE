@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
+source-git-commit: 2ca676ed1bd59651c00a83fd28945f6f042ca50a
 translation-type: tm+mt
 
 ---
@@ -11,7 +11,7 @@ Um eine offene und einladende Umgebung zu fördern, versprechen wir als Mitwirke
 
 ## Unsere Standards
 
-Zu den Beispielen für Verhaltensweisen, die zur Schaffung einer positiven Umgebung beitragen, gehören:
+Zu den Beispielen, die zur Schaffung einer positiven Umgebung beitragen, gehören:
 
 * Verwenden einer einladenden und inklusiven Sprache
 * Respekt gegenüber unterschiedlichen Sichtweisen und Erfahrungen
@@ -35,14 +35,14 @@ Projektverantwortliche haben das Recht und die Verantwortung, Kommentare, Verpfl
 
 ## Anwendungsbereich
 
-Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öffentlichen Bereichen, wenn eine Person das Projekt oder die Community repräsentiert. Beispiele für das Repräsentieren eines Projekts oder einer Community sind die Verwendung einer offiziellen E-Mail-Adresse des Projekts, die Veröffentlichung über ein offizielles Social-Media-Konto oder das Handeln als benannter Vertreter bei einem Online- oder Offline-Ereignis. Die Repräsentation eines Projekts kann von den Projektverantwortlichen weiter definiert und geklärt werden.
+Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öffentlichen Räumen, wenn eine Person das Projekt oder die Community repräsentiert. Beispiele für das Repräsentieren eines Projekts oder einer Community sind die Verwendung einer offiziellen E-Mail-Adresse des Projekts, die Veröffentlichung über ein offizielles Social-Media-Konto oder das Handeln als benannter Vertreter bei einem Online- oder Offline-Ereignis. Die Repräsentation eines Projekts kann von den Projektverantwortlichen weiter definiert und geklärt werden.
 
 ## Durchsetzung
 
-Fälle von beleidigenden, belästigenden oder sonst inakzeptablen Verhaltensweisen können über die Kontaktaufnahme mit dem Projekt-Team unter Grp-opensourceoffice@adobe.com gemeldet werden. Alle Beschwerden werden geprüft und untersucht und erhalten eine Antwort, die den Umständen entsprechend notwendig und angemessen erscheint. Das Projekt-Team ist verpflichtet, die Vertraulichkeit in Bezug auf den Melder eines Vorkommnisses zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Fälle von beleidigenden, belästigenden oder anderweitig inakzeptablen Verhaltensweisen können unter Grp-opensourceoffice@adobe.com an das Projektteam gemeldet werden. Alle Beschwerden werden geprüft und untersucht und erhalten eine Antwort, die für die Umstände als erforderlich und angemessen erachtet wird. Das Projektteam ist verpflichtet, die Vertraulichkeit in Bezug auf den Melder eines Vorkommnisses zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
-Projektverantwortliche, die dem Verhaltenskodex nicht im guten Glauben folgen oder diesen nicht durchsetzen, müssen mit vorübergehenden oder dauerhaften Konsequenzen rechnen, die von anderen Mitgliedern der Projektleitung bestimmt werden.
+Projektverantwortliche, die dem Verhaltenskodex nicht im guten Glauben folgen oder diesen durchsetzen, können vorübergehenden oder dauerhaften Auswirkungen unterliegen, wie von anderen Mitgliedern der Projektleitung bestimmt.
 
-## Zuordnung
+## Attribution
 
-Dieser Verhaltenskodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4 übernommen, der unter [](https://contributor-covenant.org/version/1/4/)https://contributor-covenant.org/version/1/4/ verfügbar ist.
+Dieser Verhaltenskodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4 übernommen, der unter [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/) verfügbar ist.
