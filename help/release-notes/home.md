@@ -2,7 +2,7 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
+source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: c92578526bd02944ece86ec0771d6707401163fe
 
 ## Wichtige Versionshinweise {#key-articles}
 
-* [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
+* [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Neue Funktionen](what-is-new.md)
 * [Wichtige Änderungen](aem-cloud-changes.md)
 * [Bekannte Probleme](known-issues.md)
