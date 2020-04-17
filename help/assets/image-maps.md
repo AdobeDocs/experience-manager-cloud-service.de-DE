@@ -2,7 +2,7 @@
 title: Hinzufügen von Imagemaps
 description: Erfahren Sie, wie Sie Bild-Assets per Hyperlink verbundene Imagemaps hinzufügen können.
 contentOwner: asgupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
