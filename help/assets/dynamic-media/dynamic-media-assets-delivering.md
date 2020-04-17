@@ -1,15 +1,15 @@
 ---
-title: Bereitstellen von Assets für dynamische Medien
-description: Dynamische Medien bieten mehrere Optionen für die Bereitstellung dynamischer Medien-Assets – sowohl Video als auch Bilder – auf Ihrer Website.
-translation-type: tm+mt
+title: Bereitstellen von Dynamic Media-Assets
+description: Dynamic Media bietet mehrere Optionen für die Bereitstellung von Dynamic Media-Assets – sowohl Videos als auch Bildern – auf Ihrer Website.
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Delivering Dynamic Media assets{#delivering-dynamic-media-assets}
+# Bereitstellen von Dynamic Media-Assets{#delivering-dynamic-media-assets}
 
-Wie Sie Ihre dynamischen Medien-Assets - sowohl Videos als auch Bilder - bereitstellen können, hängt davon ab, wie Ihre Website implementiert wird.
+Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen können, ist davon abhängig, wie Ihre Website implementiert ist.
 
 Mit Dynamic Media haben Sie mehrere Optionen:
 
@@ -18,5 +18,5 @@ Mit Dynamic Media haben Sie mehrere Optionen:
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
-* [Hinzufügen von Dynamischen Medien-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
