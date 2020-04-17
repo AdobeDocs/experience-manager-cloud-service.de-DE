@@ -1,7 +1,7 @@
 ---
 title: Komponenten
-description: Komponenten sind der grundlegende Baustein für die Inhaltserstellung auf den Inhaltsseiten in AEM
-translation-type: tm+mt
+description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Komponenten {#components}
 
-Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in Adobe Experience Manager (AEM). Komponenten wie Bilder, Text, Titel usw. können einfach gezogen und abgelegt werden, um Ihren Inhalt zu erstellen.
+Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in Adobe Experience Manager (AEM). Komponenten wie Bilder, Text und Titel können einfach per Drag-and-Drop verschoben werden, um Inhalte zu erstellen.
 
 AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
@@ -19,7 +19,7 @@ AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-## Allgemeine Verwendung {#general-usage}
+## Allgemeine Verwendung   {#general-usage}
 
 Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
@@ -29,18 +29,18 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 * [Inhalt bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Inhalt bearbeiten - Vollbildmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie im Artikel [Bearbeiten Seiteninhalten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie im Artikel [Bearbeiten von Seiteninhalten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 
-The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. Sie können wichtige Informationen über die einzelnen Komponenten und deren Verwendung anzeigen.
+Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) bietet eine Übersicht über die Komponentengruppen und Komponenten, die von Ihrer AEM-Installation bereitgestellt werden. Sie können wichtige Informationen über die einzelnen Komponenten und deren Verwendung anzeigen.
 
 ## Kernkomponenten {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+Die [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
 
-Sie werden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das Authoring von AEM. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
+Sie werden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das AEM-Authoring. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
 
 ### Konfigurieren von Vorlagen {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/features/templates.md) enable/disable these and edit parameters for specific components.
+Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-cloud/authoring/features/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
