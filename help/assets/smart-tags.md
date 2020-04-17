@@ -1,58 +1,58 @@
 ---
 title: Optimierte Smart-Tags
-description: Wenden Sie kontextbezogene und beschreibende Business-Tags mithilfe des Adobe Sensei-Dienstes AI und ML an, um die Ermittlung und Geschwindigkeit von Assets zu verbessern.
+description: Wenden Sie mithilfe der KI- und ML-Services von Adobe Sensei kontextbezogene und beschreibende Unternehmens-Tags an, um die Asset-Erkennung und Content Velocity zu verbessern.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
 
 ---
 
 
-# Intelligente Tags für Assets {#smart-tag-assets}
+# Tagging Ihrer Assets mit Smart-Tags {#smart-tag-assets}
 
-## Overview of Smart Tags {#overview-of-enhanced-smart-tags}
+## Überblick über Smart-Tags {#overview-of-enhanced-smart-tags}
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend ein taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass diese Begriffe im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler Assets anhand einer Geschäftstaxonomie dabei, sie am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass nur relevante Bilder angezeigt werden, wenn für das Erstellen einer Werbekampagne nach verschiedenen Modellen gesucht wird.
 
-In the background, the Smart Content Service uses AI framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html) und trainiert damit seinen Bilderkennungsalgorithmus auf die Tag-Struktur und Taxonomie Ihres Unternehmens. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 >[!NOTE]
 >
->Smart Content Services können nur für Assets-Kunden verwendet werden. Der Dienst für intelligente Inhalte steht als Add-on zu Experience Manager zum Kauf zur Verfügung.
+>Smart Content Services stehen nur Assets-Kunden zur Verfügung. Smart Content Service kann als Add-on zu Experience Manager erworben werden.
 
 <!-- ![flowchart](assets/flowchart.gif) -->
 
 ## Verwalten von Smart-Tags und Suchvorgängen {#manage-smart-tags-and-searches}
 
-Sie können Smart-Tags kuratieren, um alle falschen Tags zu entfernen, die Ihren Markenbildern zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
+Sie können Smart-Tags kuratieren, um ungenaue Tags zu entfernen, die möglicherweise Ihren Markenbildern zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
 
-Mithilfe der Moderation können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Bilder ohne Bezug angezeigt werden.
+Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Bilder ohne Bezug angezeigt werden.
 
-Sie können einem Tag auch einen höheren Rang zuweisen, um seine Relevanz im Hinblick auf ein Bild zu erhöhen. Je höher der Rang eines Tags für ein Bild, desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Bildes in die Suchergebnisse.
+Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Bild zu erhöhen. Je höher der Rang eines Tags für ein Bild, desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Bildes in die Suchergebnisse.
 
-1. Suchen Sie im Feld Omniture Search nach Assets, die auf einem Tag basieren.
+1. Suchen Sie im OmniSearch-Feld nach Assets, die auf einem Tag basieren.
 1. Prüfen Sie die Suchergebnisse auf Bilder, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
 1. Wählen Sie ein solches Bild aus und klicken/tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Tags verwalten]**.
-1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn das Bild nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und klicken/tippen Sie dann in der Symbolleiste auf das Symbol zum Löschen. Alternatively, click/tap `X` symbol that appears beside the label.
-1. Um einem Tag einen höheren Rang zuzuweisen, wählen Sie das Tag aus und klicken/tippen Sie in der Symbolleiste auf das Symbol zum Fördern. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
-1. Click/tap **[!UICONTROL Save]**, and then click/tap **[!UICONTROL OK]** to close the Success dialog.
+1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn Sie ein spezifisches Tag für ein Bild ausschließen möchten, wählen Sie das Tag aus und klicken/tippen Sie in der Symbolleiste auf das Löschsymbol. Klicken/tippen Sie alternativ auf das `X`-Symbol, das neben der Beschriftung angezeigt wird.
+1. Um dem Tag einen höheren Rang zuzuweisen, wählen Sie es aus und klicken/tippen Sie in der Symbolleiste auf das Symbol „Bewerben“. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
+1. Klicken/tippen Sie auf **[!UICONTROL Speichern]** und dann Sie auf **[!UICONTROL OK]**, um das Dialogfeld „Erfolg“ zu schließen.
 1. Navigieren Sie zur Seite „Eigenschaften“ des betreffenden Bildes. Beachten Sie, dass das beworbene Tag eine hohe Relevanz erhält und es aus diesem Grund höher in den Suchergebnissen angezeigt wird.
 
-### AEM-Suchergebnisse mit Smart-Tags {#understandsearch}
+### AEM-Suchergebnisse mit Smart-Tags   {#understandsearch}
 
-By default, AEM search combines the search terms with an `AND` clause. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Using smart tags adds an additional `OR` clause to find any of the search terms in the applies smart tags. For example, consider searching for `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. However, an asset tagged with either `woman` or `running` using smart tags appears in such a search query. Die Suchergebnisse sind also eine Kombination aus
+Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Schlüsselwort `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* assets with `woman` and `running` keywords in the metadata.
+* Assets mit den Keywords `woman` und `running` in den Metadaten.
 
 * Assets, die über Smart-Tags mit einem der Schlüsselwörter getaggt wurden.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
 
-1. matches of `woman running` in the various metadata fields.
-1. Übereinstimmungen `woman running` in Smart-Tags.
-1. matches of `woman` or of `running` in smart tags.
+1. Treffer von `woman running` in den verschiedenen Metadatenfeldern.
+1. Treffer von `woman running` in den Smart-Tags,
+1. Treffer von `woman` oder `running` in Smart-Tags.
 
 <!-- 
 
