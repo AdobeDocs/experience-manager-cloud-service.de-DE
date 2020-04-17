@@ -1,13 +1,13 @@
 ---
 title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Seitenvergleich {#page-diff}
+# Seitenvergleich   {#page-diff}
 
 ## Einführung {#introduction}
 
@@ -17,22 +17,22 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>Der Benutzer muss über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
 >
->Weitere Informationen zu dieser Funktion finden Sie unter Entwicklung und Seitenvergleich. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Weitere Informationen zu dieser Funktion finden Sie unter „Entwicklung und Seitenvergleich“. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
 
-## Verwenden Sie:{#use}
+## Verwenden Sie {#use}
 
 Folgendes kann verglichen werden:
 
-* [Versionen](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Frühere Version einer Seite mit dem aktuellen Status
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
-* [Starts](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Start mit der Quelle
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Versionen](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) – frühere Version einer Seite mit ihrem aktuellen Status
+* Live Copies – Live Copy mit ihrer Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Launches](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) – Launch mit seiner Quelle
+* Sprachkopien – eine Seite vor und nach der (erneuten) Übersetzung <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden {#presentation-of-differences}
+### Darstellung von Unterschieden   {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -43,7 +43,7 @@ Wenn Sie z. B. Versionen vergleichen, wird die aktuelle Version auf der linken S
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browserfensters angezeigt.
 
-![Versionen nebeneinander](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
+![Seitenvergleich der Versionen](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
 Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Geänderte Elemente werden mit verschiedenen Farben hervorgehoben.
 
@@ -59,17 +59,17 @@ Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 **HTML-Änderungen** 
 
 * Dunkelgrün – HTML hinzugefügt
-* Rot - HTML entfernt
+* Rot – HTML entfernt
 
 >[!NOTE]
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden {#fullscreen-and-exiting}
+### Vollbild und Beenden   {#fullscreen-and-exiting}
 
-Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browserfenster zu vergrößern.
+Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
-![Schaltfläche &quot;Vollbild&quot;](/help/sites-cloud/authoring/assets/versions-full-screen.png)
+![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
 Die gewählte Seite füllt dann das gesamte Fenster aus, aber die Leiste am oberen Rand bleibt weiterhin angezeigt und bietet Ihnen die Möglichkeit, zwischen den zwei Seiten zu wechseln.
 
@@ -77,11 +77,11 @@ Die gewählte Seite füllt dann das gesamte Fenster aus, aber die Leiste am ober
 
 >[!NOTE]
 >
->Wenn die Browserbreite nicht für beide Seitennamen in der Vollbildansicht geeignet ist, wird nur der Name der angezeigten Seite angezeigt und der andere hinter der Auslassungszeichen.
+>Wenn die Browser-Breite nicht beide Seitennamen in der Vollbildansicht aufnehmen kann, wird nur der Name der angezeigten Seite angezeigt und der andere Name ist über die Auslassungspunkte verfügbar.
 
 Sie können die Vollbildansicht auch schließen, indem Sie auf das Symbol „Vollbildmodus beenden“ klicken.
 
-![Vollbildmodus verlassen](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
+![Vollbildmodus beenden](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
 
 Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile auf die Schaltfläche „Schließen“ klicken.
 
@@ -91,7 +91,7 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
 * Bei Versionen erstellt der Seitenvergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn Änderungen an einem Bild vorgenommen werden, z. B. Änderungen an den Attributen &quot;alt&quot;, &quot;title&quot;oder &quot;src&quot;, wird es blau hervorgehoben, sobald es geändert wurde. In einigen Fällen hat das Bild jedoch eine Base64-Darstellung des Attributs src, und auch wenn beide Bilder gleich aussehen, werden sie aufgrund der unterschiedlichen src-Attribute vom Diff als verschieden gekennzeichnet.
+* Wenn Änderungen an einem Bild vorgenommen werden, z. B. eine Änderung der alt-, title- oder der src-Attribute, wird das geänderte Element blau hervorgehoben. In manchen Fällen weist ein Bild jedoch eine Base64-Darstellung des src-Attributs auf und selbst dann, wenn beide Bilder gleich aussehen, werden sie vom Seitenvergleich aufgrund der unterschiedlichen src-Attribute gekennzeichnet.
 * Der Seitenvergleich erkennt keine Bilddrehung.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
@@ -102,4 +102,4 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the developer documentation of this feature. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der Entwickler-Dokumentation zu dieser Funktion. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
