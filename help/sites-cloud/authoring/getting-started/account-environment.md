@@ -1,28 +1,28 @@
 ---
 title: Konfigurieren der Kontoumgebung
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Konfigurieren der Kontoumgebung {#configuring-your-account-environment}
+# Konfigurieren der Kontoumgebung   {#configuring-your-account-environment}
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
 Mit der Option [Benutzer](#user-settings) in der [Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) und dem verbundenen Dialogfeld [Eigene Voreinstellungen](#my-preferences) können Sie Benutzeroptionen bearbeiten.
 
-Begin by accessing the [User](#user-settings) option in the header.
+Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](#user-settings) aufrufen.
 
 ## Benutzereinstellungen {#user-settings}
 
 Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
 * Stellvertretend agieren
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
-* Profile
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Mit der Funktion „Stellvertretend agieren“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+* Profil
+   * Über das Profil können Sie bequem über einen Link auf Ihre Benutzereinstellungen zugreifen. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Eigene Voreinstellungen](#my-preferences)
    * Hier können verschiedene auf den jeweiligen Benutzer zugeschnittene Einstellungen festgelegt werden.
 
@@ -42,7 +42,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Fensterverwaltung**
 
-   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie ein der folgenden beiden Optionen:
+   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie eine der folgenden beiden Optionen aus:
 
    * **Mehrere Fenster** (Standard)
 
@@ -54,7 +54,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Desktop-Aktionen für Assets anzeigen**
 
-   Für diese Option ist die AEM Desktop App erforderlich.
+   Für diese Option ist das AEM-Desktop-Programm erforderlich.
 
 * **Anmerkungsfarbe**
 
@@ -90,4 +90,4 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Stock-Konfiguration**
 
-   This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled Adobe Stock integration. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration vornehmen. Sie ist nur verfügbar, wenn Ihr Systemadministrator die Adobe Stock-Integration aktiviert hat. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
