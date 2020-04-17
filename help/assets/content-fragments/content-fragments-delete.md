@@ -1,7 +1,7 @@
 ---
 title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Inhaltsfragmente – Überlegungen zum Löschen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ## Berechtigungen – Löschen oder nicht löschen {#permissions-delete-or-not-delete}
 
-Die Möglichkeit, Inhalt zu löschen ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen. 
+Die Möglichkeit, Inhalt zu löschen, ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen. 
 
-Im Zusammenhang mit Löschberechtigungen müssen Inhaltsfragmente auf zwei Ebenen betrachtet werden:
+In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Perspektiven betrachtet werden:
 
 1. **Das Inhaltsfragment als einzelne Entität.**
 
@@ -25,7 +25,7 @@ Im Zusammenhang mit Löschberechtigungen müssen Inhaltsfragmente auf zwei Ebene
    Die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
    * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren muss, **aber kein ganzes Fragment löschen darf**.
-   * **Berechtigungen:** Siehe Nur für Editor-Funktionen erforderliche Berechtigungen. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Berechtigungen:** Siehe „Nur für Editor-Funktionen erforderliche Berechtigungen“. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Im Zusammenhang mit Löschberechtigungen müssen Inhaltsfragmente auf zwei Ebene
 
 >[!NOTE]
 >
->Siehe auch Prüfen von Benutzerverwaltungsvorgängen in AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>Siehe auch „Prüfen von Benutzerverwaltungsvorgängen in AEM“. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
@@ -53,7 +53,7 @@ Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, zum Beispiel:
 
 >[!CAUTION]
 >
->Setting the permissions on `/content/dam` is also possible, as all content fragments are stored here.
+>Die Berechtigungen können auch auf `/content/dam` festgelegt werden, weil hier alle Inhaltsfragmente gespeichert werden.
 >
 >Allerdings wird die Löschberechtigung dadurch auch für *alle* anderen Asset-Typen gewährt.
 
@@ -67,13 +67,13 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content`node of all Content Fragments:
+* Für den `jcr:content`-Knoten aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`
 
-* For all nodes below `jcr:content` of all Content Fragments:
+* Für alle Knoten unter `jcr:content` aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
