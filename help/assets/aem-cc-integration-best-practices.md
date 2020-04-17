@@ -1,15 +1,15 @@
 ---
-title: Best Practices zur Integration von Adobe Experience Manager und Adobe Creative Cloud
-description: Best Practices für die Integration einer AEM-Instanz in Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
+title: Best Practices für die Integration von Adobe Experience Manager und Adobe Creative Cloud
+description: Best Practices für die Integration einer AEM-Instanz mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
 
 
-# AEM and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
+# Best Practices für die Integration von AEM und Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager (AEM) Assets ist eine Digital Asset Management(DAM)-Lösung, die mit Adobe Creative Cloud integriert werden kann, um DAM-Benutzer bei der Zusammenarbeit mit Kreativteams zu unterstützen und so die Kooperation beim Erstellen von Inhalten zu optimieren.
 
@@ -19,47 +19,47 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 
 >[!NOTE]
 >
->Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt und nachfolgend nicht mehr behandelt. Adobe empfiehlt neuere Funktionen wie Adobe Asset Link oder AEM Desktop App, um kreativen Benutzern den Zugriff auf in AEM verwaltete Assets zu ermöglichen.
+>Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt und nachfolgend nicht mehr behandelt. Adobe empfiehlt neuere Funktionen wie Adobe Asset Link oder AEM-Desktop-Programm, um kreativen Benutzern den Zugriff auf in AEM verwaltete Assets zu ermöglichen.
 
-## Kooperationsanforderungen von Kreativen, Marketern und DAM-Benutzern {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Kooperationsanforderungen von Kreativen, Marketern und DAM-Benutzern   {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 
-| Voraussetzungen | Anwendungsfall  | Betroffene Oberflächen |
+| Voraussetzungen | Anwendungsfall | Betroffene Oberflächen |
 |---|---|---|
 | Vereinfachtes Desktop-Erlebnis für Kreative | Für Kreativprofis oder, ganz allgemein, für Desktop-Benutzer, die mit nativen Applikationen zur Asset-Erstellung arbeiten, soll der Zugriff auf Assets von einem DAM-System (AEM Assets) optimiert werden. Sie benötigen eine einfache und unkomplizierte Möglichkeit zum Entdecken, Verwenden (Öffnen), Bearbeiten und Speichern von Änderungen in AEM sowie zum Hochladen neuer Dateien. | Windows- oder Mac-Desktop, Creative Cloud-Applikationen |
 | Bereitstellen von hochwertigen, gebrauchsfertigen Assets aus Adobe Stock | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | AEM Assets, Adobe Stock Marketplace, Metadatenfelder |
 | Verteilen und Freigeben von Assets nach Organisationen | Interne Abteilungen/Zweigstellen und externe Partner, Distributoren und Agenturen verwenden die genehmigten Assets, die von der übergeordneten Organisation freigegeben wurden. Die Organisation möchte die erstellten Assets sicher und nahtlos für eine größere Wiederverwendung freigeben. | Brand Portal, Asset Share Commons |
 
-## Adobe-Angebote zur Unterstützung von Kooperationsanforderungen {#adobe-offerings-to-support-the-collaboration-need}
+## Adobe-Angebote zur Unterstützung von Kooperationsbedarf {#adobe-offerings-to-support-the-collaboration-need}
 
 | Wertangebot für die betroffenen Benutzer | Adobe-Angebot | Betroffene Oberflächen |
 |---|---|---|
-| Kreativbenutzer entdecken Assets aus AEM, öffnen und verwenden diese, führen Bearbeitungen durch und laden AEM-Änderungen sowie neue Dateien in AEM hoch, ohne Creative Cloud-Applikationen verlassen zu müssen. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator und InDesign |
-| Geschäftsbenutzer vereinfachen das Öffnen und Verwenden von Assets, das Bearbeiten und Hochladen von Änderungen in AEM und das Hochladen neuer Dateien in AEM von der Desktop-Umgebung aus. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Applikationen, auch Adobe-fremden, zu öffnen. | [AEM Desktop App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM Desktop App auf Windows- und Mac-Desktop |
+| Kreativbenutzer entdecken Assets aus AEM, öffnen und verwenden diese, führen Bearbeitungen durch und laden AEM-Änderungen sowie neue Dateien in AEM hoch, ohne Creative Cloud-Applikationen verlassen zu müssen. | [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator und InDesign |
+| Geschäftsbenutzer vereinfachen das Öffnen und Verwenden von Assets, führen Bearbeitungen durch und laden AEM-Änderungen sowie neue Dateien aus der Desktop-Umgebung in AEM hoch. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Applikationen, auch Adobe-fremden, zu öffnen. | [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM-Desktop-Programm auf Windows- und Mac-Desktop |
 | Marketer und Geschäftsbenutzer können Adobe Stock-Assets in AEM entdecken, in einer Vorschau anzeigen, lizenzieren sowie speichern und verwalten. Lizenzierte und gespeicherte Assets liefern ausgewählte Adobe Stock-Metadaten für eine bessere Governance. | [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md) | AEM-Web-Oberfläche |
 
-Dieser Artikel konzentriert sich hauptsächlich auf die ersten beiden Aspekte der Kooperationsanforderungen. Die Verteilung und Beschaffung skalierter Assets wird kurz als Nutzungsszenario erwähnt. Als Lösungen für diese Anforderungen sollten Sie Adobe Brand Portal oder Asset Share Commons in Betracht ziehen. Alternate solutions such as [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](share-assets.md), using [AEM Assets web UI](/help/assets/manage-digital-assets.md) should be reviewed based on specific requirement.
+Dieser Artikel konzentriert sich hauptsächlich auf die ersten beiden Aspekte der Kooperationsanforderungen. Die Verteilung und Beschaffung skalierter Assets wird kurz als Nutzungsszenario erwähnt. Als Lösungen für diese Anforderungen sollten Sie Adobe Brand Portal oder Asset Share Commons in Betracht ziehen. Alternative Lösungen wie [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), Lösungen, die basierend auf [Asset Share](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Komponenten erstellt werden können, und [Link-Freigabe](share-assets.md), die allesamt die [AEM Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) verwenden, sind auf Grundlagen bestimmter Anforderungen zu prüfen.
 
 ![Creative Cloud-Verbindungen für AEM: Festlegen der zu verwendenden Funktion](assets/creative-connections-aem.png)
 
 Festlegen der zu verwendenden Funktion
 
-### Zuordnen von Nutzungsszenarien und Adobe-Lösungen {#mapping-of-use-cases-and-adobe-solutions}
+### Zuordnen von Nutzungsszenarien und Adobe-Lösungen   {#mapping-of-use-cases-and-adobe-solutions}
 
-| Anwendungsfall  | Adobe Asset Link | AEM-Desktop-Programm | Bemerkungen oder alternative Methoden |
+| Anwendungsfall | Adobe Asset Link | AEM-Desktop-Programm | Bemerkungen oder alternative Methoden |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Entdecken – Durchsuchen von AEM-Ordnern | Ja | AEM-Web-Benutzeroberfläche und Desktop-Aktionen | Deaktivieren Sie beim Durchsuchen der Netzwerkfreigabe die Miniaturansichten, um das Herunterladen binärer Asset-Dateien zu vermeiden. |
 | Entdecken – Zugreifen auf AEM-Sammlungen | Ja | AEM-Web-Benutzeroberfläche und Desktop-Aktionen |  |
 | Entdecken – Suchen nach Assets aus AEM | Ja | AEM-Web-Benutzeroberfläche und Desktop-Aktionen |  |
-| Verwenden – Öffnen von Assets | Ja | Ja – für jede App | [Öffnen über die Weboberfläche](/help/assets/manage-digital-assets.md#previewing-assets) oder den Finder |
-| Verwenden – Platzieren von Assets aus AEM in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | AEM Desktop App ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Applikationen werden durch lokale Pfade dargestellt. |
-| Bearbeiten – Öffnen zur Bearbeitung | Ja – Checkout-Aktion | Ja – Öffnen-Aktion (über die Netzwerkfreigabe) | [Beim Auschecken in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) wird das Asset standardmäßig im Creative Cloud-Speicherkonto des Benutzers (durch Creative Cloud-App synchronisiert) gespeichert. |
-| Bearbeiten – laufende Arbeiten außerhalb von AEM | Ja - Asset verfügbar im Creative Cloud-Speicherkonto des Benutzers, das mit dem Desktop synchronisiert wird. | Ja |  |
-| Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
-| Hochladen – einzelne Datei | Ja – Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Weboberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
-| Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Weboberfläche](/help/assets/manage-digital-assets.md#uploading-assets); Benutzerdefiniertes Skript oder Werkzeug |
+| Verwenden – Öffnen von Assets | Ja | Ja – für jede App | [Öffnen über die Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md#previewing-assets) oder den Finder |
+| Verwenden – Platzieren von Assets aus AEM in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | Das AEM-Desktop-Programm ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Applikationen werden durch lokale Pfade dargestellt. |
+| Bearbeiten – Öffnen zur Bearbeitung | Ja – Checkout-Aktion | Ja – Öffnen-Aktion (über die Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch die Creative Cloud-Applikation) gespeichert. |
+| Bearbeiten – laufende Arbeiten außerhalb von AEM | Ja – Asset im mit dem Desktop synchronisierten Creative Cloud-Speicherkonto des Benutzers verfügbar. | Ja |  |
+| Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
+| Hochladen – einzelne Datei | Ja – Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
+| Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets); benutzerdefiniertes Skript oder Tool |
 | Sonstiges – Benutzer und Anmeldung | Erkennung des Creative Cloud-Benutzers, der bei der Creative Cloud-Desktop-Applikation angemeldet ist (SSO) | AEM-Benutzer/-Anmeldung | Benutzer beider Lösungen werden mit dem AEM-Benutzerkontingent verrechnet. |
-| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf AEM-Bereitstellungen über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf AEM-Bereitstellungen über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerkproxy-Umgebung frei. |
+| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf AEM-Bereitstellungen über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf AEM-Bereitstellungen über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
 
 
 <!-- Removing this row from table as migration guide is not yet final.
@@ -68,7 +68,7 @@ Festlegen der zu verwendenden Funktion
 
 Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere Lösungen in Betracht gezogen werden:
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) für ein konfigurierbares SaaS-Add-on zu AEM Assets zum Veröffentlichen von Assets.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html) für ein konfigurierbares SaaS-Add-On für AEM Assets, um Assets zu veröffentlichen
 
 * Benutzerdefinierte Lösungen, erstellt auf Grundlage der [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Codebasis
 * AEM-[Linkfreigabe](/help/assets/share-assets.md), um Assets ad hoc mithilfe von Links freizugeben
@@ -79,18 +79,18 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 ### Glossar der allgemeinen Begriffe {#glossary-of-common-terms}
 
 * **Laufende Arbeit oder laufende kreative Arbeit (Work-In-Progress, WIP):** Eine Phase im Asset-Lebenszyklus, in der ein Asset mehrfach geändert wird und in der Regel noch nicht zur Freigabe für breitere Teams bereit ist.
-* **** Kreative Elemente: Assets, die für ein breiteres Team freigegeben werden können oder die vom Kreativteam für die Freigabe mit Marketing- oder LOB-Teams ausgewählt/genehmigt wurden.
+* **Fertige Kreativ-Assets:** Assets, die für ein breiteres Team freigegeben werden können oder die vom Kreativ-Team für die Freigabe mit Marketing- oder LOB-Teams ausgewählt/genehmigt wurden.
 
 * **Asset-Genehmigungen:** Der Genehmigungsprozess für bereits in DAM hochgeladene Assets, welcher in der Regel Markengenehmigungen, rechtliche Genehmigungen usw. umfasst.
-* **Abgeschlossenes Asset:** Ein Asset, für das alle  Tagging von Genehmigungen/Metadaten und kann vom breiteren Team verwendet werden. Ein solches Asset wird in DAM gespeichert und für alle (interessierten) Benutzer bereitgestellt. Es kann in Marketingkanälen oder von Kreativteams zur Designgestaltung verwendet werden.
+* **Abgeschlossenes Asset:** Ein Asset, für das alle     Genehmigungen/Metadaten-Tagging durchgeführt wurden und das bereit für die Verwendung durch das breitere Team ist. Ein solches Asset wird in DAM gespeichert und für alle (interessierten) Benutzer bereitgestellt. Es kann in Marketingkanälen oder von Kreativteams zur Designgestaltung verwendet werden.
 
-* **Geringfügige Asset-**  update/change: Eine schnelle und kleine Änderung an einem digitalen Asset. Sie erfolgt häufig als Reaktion auf Anforderung einer Retusche oder geringfügigen Bearbeitung oder auf eine Asset-Überprüfung bzw. -Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung von Sättigung/Helligkeit, Farbe usw.).
-* **Wesentliche Asset-**  update/change: Eine Veränderung eines digitalen Assets, die erhebliche Arbeit erfordert und manchmal über einen längeren Zeitraum erfolgen muss. Sie umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrere Male gespeichert werden. Bei wesentlichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase verschoben.
+* **Geringfügige     Asset-Aktualisierung/Änderung:** Eine schnelle und kleine Änderung an einem digitalen Asset. Sie erfolgt häufig als Reaktion auf Anforderung einer Retusche oder geringfügigen Bearbeitung oder auf eine Asset-Überprüfung bzw. -Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung von Sättigung/Helligkeit, Farbe usw.).
+* **Wesentliche    Asset-Aktualisierung/Änderung:** Eine Änderung an einem digitalen Asset, die umfangreiche Arbeit und manchmal einen längeren Zeitraum erfordert. Sie umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrere Male gespeichert werden. Bei wesentlichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase verschoben.
 * **DAM:** Digital Asset Management. Sofern nicht ausdrücklich anders angegeben ist „DAM“ in diesem Dokument ein Synonym für AEM (Adobe Experience Manager)-Assets.
 * **Kreativer Benutzer:** Ein Kreativprofi, der mit Creative Cloud-Applikationen und -Diensten digitale Assets erstellt. In einigen Fällen kann ein kreativer Benutzer ein Mitglied eines Kreativteams sein, das Creative Cloud verwendet, jedoch keine digitalen Assets erstellt (z. B. ein Creative Director oder Leiter des Kreativteams).
-* **** DAM-Benutzer: Ein typischer Benutzer eines DAM-Systems. Je nach Organisation kann ein DAM-Benutzer ein Marketing- oder Nicht-Marketingbenutzer sein, z. B. Branchenbenutzer, Bibliothekar, Vertriebsmitarbeiter usw.
+* **DAM-Benutzer:** Ein typischer Benutzer eines DAM-Systems. Je nach Organisation kann ein DAM-Benutzer ein Marketing- oder Nicht-Marketing-Benutzer sein, z. B. Branchenbenutzer, Bibliothekar, Vertriebsmitarbeiter usw.
 
-### Überlegungen zur Verwendung der AEM- und Creative Cloud-Integration {#considerations-when-using-aem-and-creative-cloud-integration}
+### Überlegungen zur Integration von AEM und Creative Cloud{#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -104,15 +104,15 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 Dies ist eine kurze Zusammenfassung von Best Practices für die AEM- und Creative Cloud-Integration. Lesen Sie den Rest dieses Dokuments, um detaillierte Informationen dazu zu erhalten.
 
 * **Für kreative Benutzer, die in Photoshop, InDesign oder Illustrator arbeiten:** Adobe Asset Link bietet ein optimales Benutzererlebnis, einschließlich der ordnungsgemäßen Abwicklung laufender Arbeiten von aus AEM ausgecheckten Assets.
-* **Für einen vereinfachten Desktop-Zugriff auf Assets bei beliebigen allgemeinen Dateiformaten oder Applikationen:** Verwenden Sie AEM Desktop App.
+* **Für einen vereinfachten Desktop-Zugriff auf Assets bei beliebigen allgemeinen Dateiformaten oder Applikationen:** Verwenden Sie das AEM-Desktop-Programm.
 * **Gründe und Zeitpunkt zum Speichern von Assets in DAM:** Aktualisierungen, die für das breiter gefasste Team in Ihrer Organisation verfügbar gemacht werden sollen.
-* **Berücksichtigung der Menge der freigegebenen Assets:** Wenn Ihr Nutzungsszenario eine Asset-Verteilung vorsieht, sind Governance und Sicherheit möglicherweise die wichtigsten Aspekte. Erwägen Sie die Verwendung von Werkzeugen, die dafür entwickelt wurden, z. B. Brand Portal.
-* **Wissenswertes über den Asset-Lebenszyklus:** Sie müssen wissen, welche Assets in Ihrer Organisation von den verschiedenen Teams gehandhabt werden.
+* **Berücksichtigung der Menge der freigegebenen Assets:** Wenn Ihr Nutzungsszenario eine Asset-Verteilung vorsieht, sind Governance und Sicherheit möglicherweise die wichtigsten Aspekte. Erwägen Sie die Verwendung von Tools, die für eine skalierte Vorgehensweise entwickelt wurden, wie z. B. Brand Portal.
+* **Wissenswertes über den Asset-Lebenszyklus:** Sie müssen wissen, welche Assets in Ihrer Organisation von den verschiedenen Teams genutzt werden.
 * **Sorgfältige Verarbeitung häufiger Asset-Speichervorgänge:** Adobe Asset Link übernimmt diese Aufgabe für Sie – mit PS, AI und ID. Führen Sie für andere Applikationen keine laufenden Arbeitsaufgaben im zugeordneten/freigegebenen Ordner aus, es sei denn, Sie benötigen alle Änderungen in DAM.
 
 ### Zugreifen auf Adobe Stock Assets über AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
-[Die AEM- und Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) bietet AEM-Benutzern die Möglichkeit, Assets von Adobe Stock in AEM zu suchen, in der Vorschau anzuzeigen, zu lizenzieren und zu speichern. Lizenzierte und gespeicherte Adobe Stock-Assets verfügen über ausgewählte Stock-Metadaten, mit denen sie mit zusätzlichen Filtern gesucht werden können.
+[Die Integration von AEM und Adobe Stock](/help/assets/aem-assets-adobe-stock.md) ermöglicht AEM-Anwendern die Suche, Vorschau, Lizenzierung und Speicherung von Assets aus Adobe Stock in AEM. Lizenzierte und gespeicherte Adobe Stock-Assets verfügen über ausgewählte Adobe Stock-Metadaten, mit denen Suchvorgänge über zusätzliche Filter durchgeführt werden können.
 
 Einige wichtige Punkte zu dieser Integration:
 
@@ -121,13 +121,13 @@ Einige wichtige Punkte zu dieser Integration:
 
 **Arbeiten mit Assets in Creative Cloud, die aus Adobe Stock in AEM gespeichert wurden.** Diese Integration ist zwar unabhängig von Adobe Asset Link, aber Adobe Asset Link erkennt diese so aus Adobe Stock gespeicherten Assets und zeigt zusätzliche Metadaten sowie ein Adobe Stock-Symbol auf diesen Assets in der Adobe Asset Link-Erweiterungsoberfläche in Photoshop, Illustrator bzw. InDesign an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch Speichern in AEM zu regulären AEM-Assets werden.
 Kreative Benutzer, die in Creative Cloud-Applikationen mit vorhandener Adobe Asset Link-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets von Adobe Stock in AEM auch Zugriff auf das Creative Cloud Libraries-Bedienfeld, um Adobe Stock-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-Lizenzierte und in AEM gespeicherte Assets aus Adobe Stock werden breiter gefassten Teams zur Verfügung gestellt, die auf die AEM Assets-Bereitstellung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können sich die Assets selbst lediglich standardmäßig in ihrem Creative-Cloud-Konto zur Verfügung stellen.
+Lizenzierte und in AEM gespeicherte Assets aus Adobe Stock werden breiter gefassten Teams zur Verfügung gestellt, die auf die AEM Assets-Bereitstellung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können sich die Assets selbst lediglich standardmäßig in ihrem Creative Cloud-Konto zur Verfügung stellen.
 
-## Informationen zum Speichern von Assets in einem DAM {#about-storing-assets-in-a-dam}
+## Informationen zum Speichern von Assets in DAM {#about-storing-assets-in-a-dam}
 
 Für das Entwickeln eines effizienten Workflows zwischen Kreativteams und Marketing-/Branchenteams sowie für die Auswahl der besten Begleitfunktionen ist es wichtig zu verstehen, wann und warum Assets in DAM gespeichert werden.
 
-### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
+### Warum Assets in DAM gespeichert werden   {#why-assets-are-stored-in-dam}
 
 Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
 
@@ -137,7 +137,7 @@ Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Asp
 
 Häufig ist das Speichern aller Assets und Aktualisierungen nicht empfehlenswert. Beispiel: Wenn Aktualisierungen von schlechter Qualität sind und einen unverhältnismäßigen Ressourcenverbrauch aufweisen, sollten die Assets nicht in DAM gespeichert werden.
 
-#### Wann Assets in DAM gespeichert werden {#when-assets-are-stored-in-dam}
+#### Wann Assets in DAM gespeichert werden   {#when-assets-are-stored-in-dam}
 
 Kreativteams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Beispielsweise vermeiden sie das Speichern von Assets in den folgenden Fällen:
 
@@ -151,7 +151,7 @@ In der Regel werden Assets der folgenden Klassen in DAM gespeichert:
 * Assets, die vorab vom Kreativteam ausgewählt wurden
 * Bestimmte Asset-Formate, die vom Marketingteam verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien)
 
-#### Wann Aktualisierungen von Assets in DAM gespeichert werden {#when-updates-to-assets-are-stored-in-dam}
+#### Wann Aktualisierungen von Assets in DAM gespeichert werden   {#when-updates-to-assets-are-stored-in-dam}
 
 In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzer relevant sind. Dadurch wird sichergestellt, dass Benutzern (Marketing- und ähnliche Funktionen) in der DAM-Asset-Zeitleiste nur relevante Versionen angezeigt werden.
 
@@ -168,11 +168,11 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 AEM Assets unterstützt zwei Arten von Benutzern, die auf deren Zugriff auf die AEM Assets-Bereitstellung basieren. Normalerweise haben Benutzer innerhalb des Unternehmensnetzwerks (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks haben dagegen keinen direkten Zugriff. Der Benutzertyp bestimmt, welche Integrationen aus technischer Sicht verwendet werden können.
 
-#### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
+#### Kreative Benutzer mit direktem Zugriff auf DAM   {#creative-users-with-direct-access-to-dam}
 
-In der Regel haben interne Kreativteams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich AEM-Anmeldung. AEM und die Netzwerkinfrastruktur können so eingerichtet werden, dass sie direkten Zugriff auf externe Parteien - meist vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten - ermöglichen, z. B. über VPN oder IP-Whitelist auf AEM zuzugreifen.
+In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich AEM-Anmeldung. Die AEM- und Netzwerkinfrastruktur kann eingerichtet werden, um externen Parteien – normalerweise vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten – direkten Zugriff zu ermöglichen, damit diese über das Netzwerk (z. B. über VPN oder IP-Whitelisting) auf AEM zugreifen können
 
-In solchen Fällen bietet Adobe Asset Link oder die AEM-Desktop-App einfachen Zugriff auf endgültige/genehmigte Assets und ermöglicht Ihnen das Speichern kreativer Assets in DAM.
+In solchen Fällen bietet Adobe Asset Link oder das AEM-Desktop-Programm einfachen Zugriff auf abgeschlossene/genehmigte Assets und ermöglicht das Speichern fertiger Kreativ-Assets in DAM.
 
 #### Kreative Benutzer ohne Zugriff auf DAM {#creative-users-without-access-to-dam}
 
@@ -180,8 +180,8 @@ Externe Agenturen oder Freiberufler ohne direkten Zugriff auf die DAM-Instanz be
 
 Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte Assets bereit:
 
-* Verwenden der Desktop-App, wenn Asset Link nicht funktioniert.
-* Use [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) for distributing assets securely to external partners
+* Verwenden des Desktop-Programms, wenn Asset Link nicht funktioniert.
+* Verwenden von [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), um Assets sicher an externe Partner zu verteilen.
 * Verwenden einer benutzerdefinierten Implementierung eines Verteilungs- und Quellportals basierend auf [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * Verwenden der in AEM eingerichteten Zugriffssteuerung und der erforderlichen Netzwerkinfrastruktur (z. B. VPN und IP-Whitelisting), um externen Parteien Zugriff auf einen speziellen Inhaltsbereich in Ihrem DAM-System zu gewähren. Sie können über die AEM-Web-Benutzeroberfläche Assets abrufen und neue Inhalte in Ihr DAM-System hochladen.
 
@@ -197,31 +197,31 @@ Adobe Asset Link bietet eine gute Unterstützung für dieses Nutzungsszenario:
 * Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten mobilen Creative Cloud-Applikation). Außerdem kann es für andere Creative Cloud-Benutzer zwecks Zusammenarbeit freigegeben werden.
 * Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrer Creative Cloud-Applikation mit einem optionalen Kommentar einchecken. Das entsprechende Asset in AEM wird versioniert und mit der neuen Binärdatei aktualisiert. AEM-Benutzer wie Marketer oder Branchenbenutzer haben über die Timeline-Benutzeroberfläche von AEM Assets Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
-AEM Desktop App bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in AEM hochgeladen. Mit einer solchen Konfiguration werden häufig gespeicherte Inhalte während der laufenden Arbeit in AEM hochgeladen und versioniert, sodass beträchtlicher Netzwerkverkehr und potenzielle skalierbarkeitsbezogene Herausforderungen entstehen – ganz zu schweigen von den unnötigen Versionen in AEM.
+Das AEM-Desktop-Programm bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in AEM hochgeladen. Mit einer solchen Konfiguration werden häufig gespeicherte Inhalte während der laufenden Arbeit in AEM hochgeladen und versioniert, sodass beträchtlicher Netzwerkverkehr und potenzielle skalierbarkeitsbezogene Herausforderungen entstehen – ganz zu schweigen von den unnötigen Versionen in AEM.
 
 In diesem Fall wird empfohlen, die AEM Desktop App-Option zum Deaktivieren automatischer Aktualisierungen zu verwenden und Asset-Änderungen manuell in AEM hochzuladen. Dabei wird die Aktion zum Hochladen von Assets in der Asset-Status-Benutzeroberfläche der App genutzt.
 
-#### Massenupload in DAM {#bulk-upload-to-dam}
+#### Massen-Upload in DAM {#bulk-upload-to-dam}
 
 In einigen Szenarien müssen Sie möglicherweise eine größere Anzahl von Dateien gleichzeitig in DAM hochladen. Beispiele dafür sind:
 
-* Hochladen der Ergebnisse von Fotografieren oder größere Projekte
+* Hochladen der Ergebnisse von   Fotoshootings oder größeren Projekten 
 * Hochladen von Assets von Kreativagenturen
 * Hochladen von Assets aus einem größeren Satz, wenn die Auswahl außerhalb von DAM erfolgt
 
-Hinweis: Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem  photoshot ), als normaler Teil des Arbeitsablaufs des Desktop-Benutzers. Das Migrieren großer Assets wird hier nicht behandelt.
+Hinweis: Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem      Fotoshooting) als normaler Vorgang im Workflow eines Desktop-Benutzers. Das Migrieren großer Assets wird hier nicht behandelt.
 
 Sie können die folgenden Upload-Funktionen nutzen:
 
-* Um große/hierarchische Ordner stapelweise hochzuladen, verwenden Sie AEM Desktop App mit Funktionen zum [Hochladen von Ordnern](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload). Sie können auch hierarchische Ordnerstrukturen hochladen. Das Hochladen von Assets erfolgt im Hintergrund und ist daher nicht an eine Webbrowsersitzung gebunden.
+* Um große/hierarchische Ordner stapelweise hochzuladen, verwenden Sie AEM Desktop App mit Funktionen zum [Hochladen von Ordnern](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html#bulkupload). Sie können auch hierarchische Ordnerstrukturen hochladen. Das Hochladen von Assets erfolgt im Hintergrund und ist daher nicht an eine Webbrowsersitzung gebunden.
 * Um einige Dateien aus einem einzelnen Ordner hochzuladen, ziehen Sie die Dateien direkt in die Weboberfläche oder verwenden Sie die Option „Erstellen“ in der Web-Benutzeroberfläche von AEM Assets.
-* Je nach Ihren Geschäftsanforderungen können Sie auch benutzerdefinierte Uploader verwenden.
+* Je nach Ihren Geschäftsanforderungen können Sie auch benutzerdefinierte Upload-Programme verwenden.
 
 #### Verwalten digitaler Assets direkt auf dem Desktop {#managing-digital-assets-directly-from-desktop}
 
 Wenn Sie digitale Assets in Netzwerk-Dateifreigaben verwalten, kann stattdessen einfach die von AEM Desktop App zugeordnete Netzwerkfreigabe verwendet werden. Beim Übergang von Netzwerk-Dateifreigaben stellt die Web-Benutzeroberfläche von AEM einen umfangreichen Satz von Digital-Asset-Management-Funktionen bereit, die weit über die Möglichkeiten einer Netzwerkfreigabe hinausgehen (Suche, Sammlungen, Metadaten, Zusammenarbeit, Vorschauen usw.). Außerdem bietet AEM Desktop App einen praktischen Link zur Verbindung des serverseitigen DAM-Repositorys mit Arbeiten auf dem Desktop.
 
-Vermeiden Sie die Verwendung der AEM-Desktop-App zum Verwalten von Assets direkt im Netzwerk von AEM Assets. Vermeiden Sie beispielsweise die Verwendung der AEM-Desktop-App zum Verschieben/Kopieren mehrerer Dateien. Verwenden Sie stattdessen die Web-Benutzeroberfläche von AEM Assets, um Ordner aus dem Finder/Explorer in die Netzwerkfreigabe zu ziehen, oder verwenden Sie die Funktion „Ordner hochladen“ von AEM Assets.
+Verwenden Sie das AEM-Desktop-Programm nicht für die direkte Verwaltung von Assets in der Netzwerkfreigabe von AEM Assets. Vermeiden Sie beispielsweise die Nutzung des AEM-Desktop-Programms zum Verschieben/Kopieren mehrerer Dateien. Verwenden Sie stattdessen die Web-Benutzeroberfläche von AEM Assets, um Ordner aus dem Finder/Explorer in die Netzwerkfreigabe zu ziehen, oder verwenden Sie die Funktion „Ordner hochladen“ von AEM Assets.
 
 <!-- 
 #### Asset migration {#asset-migration}
