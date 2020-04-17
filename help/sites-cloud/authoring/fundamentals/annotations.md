@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Seitenanmerkungen
 description: Viele Komponenten, die direkt zur Handhabung von Inhalten verwendet werden, ermöglichen das Hinzufügen von Anmerkungen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
 
-Eine Anmerkung platziert eine farbige Skizze oder einen Klebezettel auf der Seite. Mit der Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
+Bei einer Anmerkung wird eine farbige Zeichnung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
 
 >[!NOTE]
 >
@@ -23,19 +23,19 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 
 >[!CAUTION]
 >
->Beim Löschen einer Ressource (z. B. einer Komponente) werden alle an diese Ressource angehängten Anmerkungen und Skizzen unabhängig von ihrer Position auf der Seite insgesamt gelöscht.
+>Durch Löschen einer Ressource (z. B. einer Komponente) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind (unabhängig von ihrer Position auf der Seite als Ganzes).
 
 >[!NOTE]
 >
->Abhängig von Ihren Anforderungen können Sie auch einen Workflow entwickeln, um Benachrichtigungen beim Hinzufügen, Aktualisieren oder Löschen von Anmerkungen zu senden.
+>Je nach Ihren Anforderungen können Sie auch einen Workflow erstellen, damit Benachrichtigungen gesendet werden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
 
-### Anmerkungen zu Komponenten {#annotating-a-component}
+### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
 
 Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen.
 
 1. Sie können den Anmerkungsmodus über das Symbol in der Symbolleiste (rechts oben) aufrufen, wenn Sie eine Seite bearbeiten:
 
-   ![Anmerkungsschaltfläche](/help/sites-cloud/authoring/assets/annotations.png)
+   ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
 
    Sie können nun vorhandene Anmerkungen anzeigen.
 
@@ -51,20 +51,20 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
 1. Tippen/klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
-   ![Hinzufügen einer Anmerkung](/help/sites-cloud/authoring/assets/annotation-adding.png)
+   ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
    Hier können Sie das entsprechende Feld und/oder Symbol für folgende Aktionen wählen:
 
    * Einen Anmerkungstext eingeben.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
-      ![Schaltfläche &quot;Anmerkung skizzieren&quot;](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+      ![Schaltfläche „Anmerkungszeichnung“](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      Der Cursor ändert sich in ein Fadenkreuz, wenn Sie eine Skizze erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichenlinie spiegelt die Anmerkungsfarbe wider und kann entweder ein Pfeil, ein Kreis oder ein Oval sein.
+      Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
 
    * Farbe wählen/ändern:
 
-      ![Schaltfläche &quot;Anmerkungsfarbfeld&quot;](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+      ![Schaltfläche „Anmerkungsfarbfeld“](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
    * Die Anmerkung löschen.
 
@@ -72,7 +72,7 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
 1. Sie können das Dialogfeld für die Anmerkungen schließen, indem Sie außerhalb des Dialogfelds. Eine abgeschnittene Ansicht (das erste Wort) der Anmerkung wird zusammen mit sämtlichen Zeichnungen angezeigt:
 
-   ![Anmerkungsskizzen](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Anmerkungszeichnungen](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. Wenn Sie mit dem Bearbeiten einer bestimmten Anmerkung fertig sind, können Sie Folgendes tun:
 
@@ -100,11 +100,11 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
 Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
 
-![Anmerkungsindikator](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+![Kennzeichnung von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## Kommentieren anderer Ressourcen {#annotating-other-resources}
+## Hinzufügen von Anmerkungen zu anderen Ressourcen {#annotating-other-resources}
 
-Neben den Komponenten können Sie eine Vielzahl von Ressourcen kommentieren:
+Neben Komponenten können Sie zu einer Vielzahl von Ressourcen Anmerkungen hinzufügen:
 
-* Anmerkungen zu Assets [kommentieren](/help/assets/manage-digital-assets.md#annotating)
-* Kommentieren von Video-Assets [Kommentieren von Video-Assets](/help/assets/manage-video-assets.md#annotate-video-assets)
+* Hinzufügen von Anmerkungen zu Assets [Hinzufügen von Anmerkungen zu Assets](/help/assets/manage-digital-assets.md#annotating)
+* Hinzufügen von Anmerkungen zu Video-Assets [Hinzufügen von Anmerkungen zu Video-Assets](/help/assets/manage-video-assets.md#annotate-video-assets)
