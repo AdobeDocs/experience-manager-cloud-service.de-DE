@@ -1,7 +1,7 @@
 ---
 title: Integrieren mit Adobe Analytics
 description: 'Integrieren mit Adobe Analytics '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
 
 ---
@@ -9,24 +9,24 @@ source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
 
 # Integrieren mit Adobe Analytics{#integrating-with-adobe-analytics}
 
-Durch die Integration von Adobe Analytics und AEM als Cloud-Dienst können Sie die Aktivität Ihrer Webseite verfolgen:
+Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen:
 
 * Eine Adobe Analytics-Konfiguration ermöglicht AEM die Authentifizierung mit Adobe Analytics.
-* Ein Framework identifiziert die Daten, die an Ihre Adobe Analytics-Report Suite gesendet werden.
+* Ein Framework identifiziert die Daten, die an die Adobe Analytics-Report Suite übermittelt werden.
 
-Zu den Daten gehören z. B. Seiten- und Benutzerdaten:
+Die Daten umfassen Seiten- und Benutzerdaten, z. B.:
 
 * Daten, die von AEM-Komponenten erfasst werden
 * Link-Klicks
 * Videonutzungsdaten
-* die Anzahl von Seitenbesuchen von Adobe Analytics
+* die Anzahl von Seitenbesuchen aus Adobe Analytics
 
-Die unten aufgeführten Seiten können Ihnen bei der Konfiguration der Integration helfen. Beachten Sie, dass Launch by Adobe das defacto-Tool zur Instrumentierung einer AEM-Site mit Analytics-Funktionen (JS-Bibliotheken) ist. Die Integration von AEM als Cloud-Dienst in Launch und Adobe Analytics erfolgt daher Hand in Hand.
+Die unten aufgeführten Seiten können Ihnen bei der Konfiguration der Integration helfen. Beachten Sie, dass Launch by Adobe das Tool zur Instrumentierung einer AEM-Site mit Analytics-Funktionen (JS-Bibliotheken) ist. Daher erfolgt die Integration von AEM as a Cloud Service in Launch und Adobe Analytics Hand in Hand.
 
-* [Herstellen einer Verbindung zu Adobe Analytics und Erstellen von Frameworks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) - Beachten Sie, dass &quot;Analytics-Frameworks&quot;in AEM veraltet sind und ihre Erstellung nicht in AEM als Cloud-Dienst funktioniert, da hierfür die klassische Benutzeroberfläche erforderlich ist. Der Start von Adobe sollte stattdessen sowohl für die Variablenzuordnung als auch für die Bereitstellung von JS-Bibliotheken auf Seiten verwendet werden.
-* [Starten von Adobe integrieren](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-* [Integration von AEM mit Adobe Launch über Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-* [Die AEM-Integration mit dem Start von Adobe, Analytics und Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+* [Herstellen einer Verbindung zu Adobe Analytics und Erstellen von Frameworks](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) - Beachten Sie, dass „Analytics-Frameworks“ in AEM veraltet sind und sie in AEM as a Cloud Service nicht erstellt werden können, da hierfür die klassische Benutzeroberfläche erforderlich ist. Stattdessen sollte Launch by Adobe sowohl für die Variablenzuordnung als auch für die Bereitstellung von JS-Bibliotheken auf Seiten verwendet werden.
+* [Integrieren von Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [Integrieren von AEM mit Adobe Launch über Adobe I/O](https://helpx.adobe.com/de/experience-manager/using/aem_launch_adobeio_integration.html)
+* [Grundlegendes zur AEM-Integration mit Launch by Adobe, Analytics und Target](https://helpx.adobe.com/de/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 * [Konfigurieren der Link-Überwachung für Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-link.html)
 * [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
 * [Konfigurieren von Videotracking für Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-video.html)
@@ -34,18 +34,18 @@ Die unten aufgeführten Seiten können Ihnen bei der Konfiguration der Integrati
 
 >[!CAUTION]
 >
->Kunden mit Adobe Experience Manager als Cloud-Service, die kein Analytics-Konto haben, können Zugriff auf das Analytics Foundation Pack für Experience Cloud anfordern.  Dieses Foundation Pack bietet eine mengenbegrenzte Verwendung von Analytics.
+>Kunden mit Adobe Experience Manager as a Cloud Service, die kein Analytics-Konto haben, können Zugriff auf Analytics Foundation Pack für Experience Cloud anfordern.  Dieses Foundation Pack bietet eine eingeschränkte Verwendung von Analytics.
 
 >[!NOTE]
 >
->Die IMS-Konfiguration (technische Konten) zum Starten durch Adobe ist in AEM als Cloud-Dienst vorkonfiguriert. Benutzer müssen diese Konfiguration nicht erstellen.
+>Die IMS-Konfiguration (technische Konten) für Launch by Adobe ist in AEM as a Cloud Service vorkonfiguriert. Benutzer müssen diese Konfiguration nicht erstellen.
 
 ## Weiterführende Informationen {#further-information}
 
 Siehe:
 
-* [Erweitern der Adobe Analytics-Integration](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) für Informationen zur Entwicklung von Komponenten, die Benutzerdaten erfassen und das Adobe Analytics-Framework anpassen. Beachten Sie, dass &quot;Analytics-Frameworks&quot;in AEM veraltet sind und ihre Erstellung in AEM nicht als Cloud-Dienst funktioniert, da hierfür die klassische Benutzeroberfläche erforderlich ist. Der Start von Adobe sollte stattdessen sowohl für die Variablenzuordnung als auch für die Bereitstellung von JS-Bibliotheken auf Seiten verwendet werden.
-* The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
+* [Erweitern der Adobe Analytics-Integration](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html), um Informationen zur Entwicklung von Komponenten zu erhalten, die Benutzerdaten erfassen, und zur Anpassung des Adobe Analytics-Frameworks. Beachten Sie, dass „Analytics-Frameworks“ in AEM veraltet sind und sie in AEM as a Cloud Service nicht erstellt werden können, da hierfür die klassische Benutzeroberfläche erforderlich ist. Stattdessen sollte Launch by Adobe sowohl für die Variablenzuordnung als auch für die Bereitstellung von JS-Bibliotheken auf Seiten verwendet werden.
+* den Knowledgebase-Artikel [Adobe Analytics-Integration – Problembehebung](https://helpx.adobe.com/de/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), um Information zur Behebung von Problemen mit der Adobe Analytics-Integration zu erhalten.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Siehe:
    >  Beispiel: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Apache HTTP-Komponenten-Proxy-Konfiguration** zum Konfigurieren der 4.x-API;
+* **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
    >  Beispiel: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
