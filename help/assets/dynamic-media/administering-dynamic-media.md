@@ -1,15 +1,15 @@
 ---
 title: Einrichten dynamischer Medien
 description: Zum Einrichten dynamischer Medien müssen Sie dynamische Medien konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Einrichten dynamischer Medien {#setting-up-dynamic-media}
+# Einrichten dynamischer Medien   {#setting-up-dynamic-media}
 
-Mit [dynamischen Medien](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generieren und liefern dynamische Medien durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten attraktiver Inhalte in Echtzeit.
+Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generiert und liefert Dynamic Media durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten vielfältiger Inhalte in Echtzeit.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -21,12 +21,12 @@ Mit [dynamischen Medien](https://www.adobe.com/solutions/web-experience-manageme
 
 -->
 
-Wenn Sie dynamische Medien verwalten, sind die folgenden Themen von Interesse:
+Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren von dynamischen Medien](config-dm.md)
+* [Konfigurieren von Dynamic Media ](config-dm.md)
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
-* [Fehlerbehebung bei dynamischen Medien](troubleshoot-dm.md)
+* [Fehlerbehebung bei Dynamic Media](troubleshoot-dm.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -35,6 +35,6 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 >[!NOTE]
 >
->**Wenn Sie aktualisieren:**
+>**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Nachdem Sie AEM ausgeführt haben, ist für jedes hochgeladene Asset automatisch &quot;Dynamische Medien&quot;aktiviert (es sei denn, es wurde explizit vom Systemadministrator deaktiviert). Wenn Sie eine aktualisierte Instanz von AEM verwenden und neu für dynamische Medien sind, müssen Sie Ihre Assets möglicherweise neu verarbeiten, um sie für dynamische Medien zu aktivieren.
+>* Sobald Sie AEM eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten AEM-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie Assets ggf. erneut verarbeiten, um Dynamic Media für die Assets verwenden zu können.
