@@ -1,7 +1,7 @@
 ---
 title: Zugehörige Inhalte
 description: 'Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 # Zugehörige Inhalte{#associated-content}
 
-Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden.  Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden soll](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert. 
+Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden soll](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert. 
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 
@@ -17,9 +17,9 @@ Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragm
 >
 >Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen. 
 
-Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie:
+Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 
-1. Open your fragment and select **Associated Content** from the side panel.
+1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **Zugehörige Inhalte** aus.
 
    ![Zugehörige Inhalte](assets/cfm-assoc-content-01.png)
 
