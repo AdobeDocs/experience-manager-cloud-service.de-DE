@@ -1,21 +1,22 @@
 ---
-title: Benachrichtigungen - Cloud-Dienst
-description: Benachrichtigungen - Cloud-Dienst
-translation-type: tm+mt
+title: Benachrichtigungen – Cloud Service
+description: Benachrichtigungen – Cloud Service
+translation-type: ht
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 ---
 
 
-# Benachrichtigungen {#notifications}
+# Grundlegendes zu Benachrichtigungen {#notifications}
 
-[!UICONTROL Cloud Manager] ermöglicht es dem Benutzer, zu Beginn einer Produktionsimplementierung Benachrichtigungen zu erhalten, wenn die Produktionsplanung beginnt und (erfolgreich oder nicht erfolgreich) abgeschlossen wird. Diese Benachrichtigungen werden über das Adobe [!UICONTROL Experience Cloud]-Benachrichtigungssystem gesendet.
+[!UICONTROL Cloud Manager] ermöglicht es dem Benutzer, zu Beginn einer Produktionsbereitstellung Benachrichtigungen beim Start und beim Abschluss (erfolgreich oder nicht erfolgreich) der Produktions-Pipeline zu erhalten. Diese Benachrichtigungen werden über das Adobe [!UICONTROL Experience Cloud]-Benachrichtigungssystem gesendet.
 
 >[!NOTE]
 >
 >Die Genehmigung und geplanten Benachrichtigungen werden nur an Anwender mit den Rollen „Business Owner“, „Programmmanager“ und „Bereitstellungsmanager“ gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-UI (User Interface, Benutzeroberfläche) und überall in Adobe [!UICONTROL Experience Cloud] angezeigt.
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt.
+
 ![](assets/notify-1.png)
 
 Klicken Sie in der Kopfzeile auf das Glockensymbol, um die Seitenleiste zu öffnen und Benachrichtigungen anzuzeigen, wie in der Abbildung unten dargestellt:
