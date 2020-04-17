@@ -1,17 +1,17 @@
 ---
-title: Verwalten von Metadaten für digitale Assets
+title: Metadaten für digitale Assets verwalten
 description: In diesem Abschnitt erfahren Sie alles über die Arten von Metadaten und darüber wie Sie mit AEM Assets Metadaten einfacher verwalten, kategorisieren und organisieren können. Sie können mit den Assets beliebige Metadaten speichern und verwalten. Daher ermöglicht AEM Assets die automatische Organisation und Verarbeitung von Assets basierend auf ihren Metadaten.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
 
 
-# Metadaten digitaler Assets verwalten {#managing-metadata-for-digital-assets}
+# Metadaten für digitale Assets verwalten {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager (AEM) speichert Metadaten für jedes Asset. So können Assets einfacher kategorisiert und organisiert und spezielle Assets leichter von Benutzern gefunden werden. Metadaten können aus in AEM Assets hochgeladenen Dateien extrahiert werden. Damit lässt sich die Metadatenverwaltung in den kreativen Workflow integrieren. Sie können mit den Assets beliebige Metadaten speichern und verwalten. Daher ermöglicht AEM Assets die automatische Organisation und Verarbeitung von Assets basierend auf ihren Metadaten.
+Adobe Experience Manager (AEM) speichert Metadaten für jedes Asset. So können Assets einfacher kategorisiert und organisiert und spezielle Assets leichter von Benutzern gefunden werden. Metadaten können aus in AEM Assets hochgeladenen Dateien extrahiert werden. Damit lässt sich die Metadatenverwaltung in den kreativen Workflow integrieren. Sie können mit den Assets beliebige Metadaten speichern und verwalten. So ermöglicht AEM Assets die automatische Organisation und Verarbeitung von Assets basierend auf ihren Metadaten.
 
 >[!MORELIKETHIS]
 >
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) speichert Metadaten für jedes Asset. So können 
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## Warum Metadaten {#why-metadata}
+## Wozu dienen Metadaten? {#why-metadata}
 
 Metadaten sind Informationen über Daten. In diesem Zusammenhang beziehen sich Daten auf das Asset, mit dem Sie arbeiten (z. B. ein Bild). Metadaten sind wichtig, da Benutzer mit ihnen Assets effizienter verwalten können.
 
@@ -52,9 +52,9 @@ Wenn Metadaten Assets hinzugefügt werden, steigt auch der Wert der Assets, da d
 * einfacher zu verwalten werden: Sie können Assets mit denselben Eigenschaften einfacher finden und ändern.
 * komplexer werden: Je mehr Metadaten Sie einem Asset hinzugefügt haben, desto wichtiger wird die Verwaltung der Metadaten.
 
-Aus diesen Gründen erhalten Sie mit AEM-Assets die richtigen Mittel, Metadaten für digitale Assets zu erstellen, zu verwalten und auszutauschen.
+Aus diesen Gründen erhalten Sie mit AEM Assets die richtigen Mittel, um Metadaten für digitale Assets zu erstellen, zu verwalten und auszutauschen.
 
-## Metadata basics {#metadata-basics}
+## Grundlagen zu Metadaten {#metadata-basics}
 
 Metadaten werden aus Assets extrahiert, wenn diese importiert (aufgenommen) werden. Außerdem können Sie Assets genauer einteilen, wenn Sie Metadaten hinzufügen.
 
@@ -62,35 +62,35 @@ In diesem Abschnitt werden die Metadatentypen und Kodierungsstandards behandelt.
 
 ### Technische Metadaten {#technical-metadata}
 
-Technische Metadaten eignen sich für Softwareanwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollten. Technische Metadaten können automatisch von AEM-Assets und anderer Software bestimmt werden und können sich ändern, wenn das Asset bearbeitet wird. Welche technischen Metadaten für ein Asset verfügbar sind, hängt größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
+Technische Metadaten eignen sich für Software-Anwendungen, die mit digitalen Assets arbeiten und nicht manuell gepflegt werden sollen. Technische Metadaten können automatisch von AEM Assets und anderer Software festgelegt bestimmt werden und können sich ändern, wenn das Asset bearbeitet wird. Welche technischen Metadaten für ein Asset verfügbar sind, hängt größtenteils vom Dateityp des Assets ab. Beispiele für technische Metadaten:
 
 * Größe einer Datei
 * Abmessungen (Höhe und Breite) eines Bildes
 * Bitrate einer Audio- oder Videodatei
 * Auflösung (Detailebene) eines Bildes
 
-### Beschreibende Metadaten {#descriptive-metadata}
+### Beschreibende Metadaten   {#descriptive-metadata}
 
 Beschreibende Metadaten sind solche, die sich auf die Anwendungsdomäne beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie müssen manuell oder halbautomatisch erstellt werden. Beispiel: Eine GPS-fähige Kamera kann den Längen- und Breitengrad, an dem ein Bild aufgenommen wurde, automatisch verfolgen und diese Informationen den Metadaten des Bildes hinzufügen.
 
 Da der manuelle Aufwand für die Erstellung beschreibender Metadaten sehr kostspielig ist, wurden Standards aufgestellt, um den Austausch von Metadaten über Softwaresysteme und Organisationen hinweg zu erleichtern.
 
-AEM-Assets unterstützt alle relevanten Standards für die Metadatenverwaltung.
+AEM Assets unterstützt alle relevanten Standards für die Metadatenverwaltung.
 
 Aufgrund der Wichtigkeit von Metadaten und des hohen manuellen Arbeitsaufwands für ihre Erstellung wurden Standards aufgestellt, die den Austausch erleichtern.
 
-### Encoding standards {#encoding-standards}
+### Kodierungsstandards {#encoding-standards}
 
 Metadaten können auf mehrere verschiedene Arten in Dateien eingebettet werden. Dazu werden die folgenden Kodierungsstandards unterstützt:
 
-* XMP: Damit speichert AEM-Assets die extrahierten Metadaten im Repository.
+* XMP: Damit speichert AEM Assets die extrahierten Metadaten im Repository.
 * ID3: für Audio- und Videodateien
 * EXIF: für Bilddateien
-* Andere/Legacy: aus Microsoft Word, PowerPoint, Excel usw.
+* Andere/Legacy: von Microsoft Word, PowerPoint, Excel usw.
 
 #### XMP {#xmp}
 
-XMP bedeutet Extensible Metadata Platform und ist der Metadatenstandard, der von AEM Assets für das gesamte Metadatenmanagement verwendet wird. XMP bietet nicht nur eine universelle Metadaten-Kodierung, die in alle Dateiformate eingebettet werden kann, sondern bietet auch ein Rich-Content-Modell und wird von Adobe und anderen Unternehmen unterstützt, sodass Benutzer von XMP in Kombination mit AEM Assets eine leistungsstarke Plattform haben, auf der sie aufbauen können.
+XMP steht für Extensible Metadata Platform und ist der Metadatenstandard, der von AEM Assets für die gesamte Metadatenverwaltung eingesetzt wird. XMP bietet nicht nur universelle Metadatenkodierung, die in alle Dateiformate eingebettet werden kann, sondern auch ein Rich-Content-Modell. XMP wird von Adobe und anderen Unternehmen unterstützt, sodass Benutzer, die XMP in Kombination mit AEM Assets einsetzen, über eine leistungsstarke Plattform verfügen.
 
 #### ID3 {#id}
 
@@ -101,10 +101,10 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 * ID3-Tags funktionieren in MP3- und MP3pro-Dateien.
 * WAV weist keine Tags auf.
 * WMA verfügt über proprietäre Tags, die keine Open Source-Implementierung zulassen.
-* Ogg Vorbis verwendet Xiph-Kommentare, die in den OGG-Container eingebettet sind.
+* Ogg Vorbis nutzt Xiph-Kommentare, die in den OGG-Container eingebettet sind.
 * AAC verwendet ein proprietäres Tagging-Format.
 
-#### EXIF {#exif}
+#### EXIF   {#exif}
 
 EXIF steht für „Exchangeable Image File Format“ (austauschbares Bilddateiformat) und ist das in der digitalen Fotografie am häufigsten verwendete Metadatenformat. Es ermöglicht die Einbettung von festen Begriffen für Metadateneigenschaften in mehrere Dateiformate wie
 
@@ -119,15 +119,15 @@ EXIF speichert Metadaten als Paare aus dem Metadatennamen und dem Metadatenwert.
 
 Da EXIF automatisch von modernen Digitalkameras erstellt und in moderner Grafiksoftware unterstützt wird, kann es als der kleinste gemeinsame Nenner für die Metadatenverwaltung betrachtet werden.
 
-Die meisten der von EXIF definierten Metadatenfelder sind besonders technisch und eignen sich nur bedingt für die Verwaltung beschreibender Metadaten. For this reason, AEM Assets offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-metadata.md), the powerful metadata format AEM Assets uses for metadata management.
+Die meisten der von EXIF definierten Metadatenfelder sind besonders technisch und eignen sich nur bedingt für die Verwaltung beschreibender Metadaten. Daher erlaubt AEM Assets eine Zuordnung von EXIF-Eigenschaften zu [gängigen Metadatenschemata](metadata-schemas.md) und [XMP](xmp-metadata.md), dem leistungsstarken Metadatenformat, das von AEM Assets für die Metadatenverwaltung eingesetzt wird.
 
 #### Andere Metadaten {#other-metadata}
 
-Andere Metadaten, die aus Dateien eingebettet werden können, sind Microsoft Word, PowerPoint, Excel usw.
+Andere Metadaten können aus Dateien von Microsoft Word, PowerPoint, Excel usw. eingebettet werden.
 
-## Verwalten von Metadaten Ihrer digitalen Assets {#manage-assets-metadata}
+## Verwalten von Metadaten für digitale Assets {#manage-assets-metadata}
 
-Mit Enterprise Manager-Assets können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie häufig vorkommende Metadatenänderungen schnell stapelweise an Assets weiterleiten können. Auf der Seite &quot; [!UICONTROL Eigenschaften] &quot;können Sie Metadateneigenschaften in einen allgemeinen Wert ändern oder Tags hinzufügen oder ändern. Verwenden Sie den Schema-Editor, um die Seite &quot;Metadateneigenschaften&quot;anzupassen, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften.
+Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern. Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schemaeditor.
 
 >[!NOTE]
 >
@@ -135,23 +135,23 @@ Mit Enterprise Manager-Assets können Sie die Metadaten mehrerer Assets gleichze
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected assets.
+1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um für die ausgewählten Assets die Seite [!UICONTROL Eigenschaften] zu öffnen.
 
    >[!NOTE]
    >
-   >Wenn Sie mehrere Assets auswählen, wird die niedrigste gemeinsame übergeordnete Form für die Assets ausgewählt. In other words, the [!UICONTROL Properties] page only displays metadata fields that are common across the [!UICONTROL Properties] pages of all the individual assets.
+   >Wenn Sie mehrere Assets auswählen, wird die niedrigste gemeinsame übergeordnete Form für die Assets ausgewählt. Das heißt, die Seite [!UICONTROL Eigenschaften] zeigt nur Metadatenfelder an, die auf den Seiten [!UICONTROL Eigenschaften] aller individuellen Assets vorhanden sind.
 
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.
 1. Heben Sie die Auswahl der anderen Assets in der Liste auf, um den Metadateneditor für ein bestimmtes Asset anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für das jeweilige Asset gefüllt.
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by deselecting them. In der Asset-Liste sind alle Assets standardmäßig ausgewählt. Die Metadaten für Assets, die Sie aus der Liste entfernen, werden nicht aktualisiert.
-   >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
+   >* Auf der Seite [!UICONTROL Eigenschaften] können Sie Assets aus der Asset-Liste entfernen, indem Sie die Auswahl aufheben. In der Asset-Liste sind alle Assets standardmäßig ausgewählt. Die Metadaten für Assets, die Sie aus der Liste entfernen, werden nicht aktualisiert.
+   >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
 
-1. To select a different metadata schema for the assets, tap/click **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Speichern Sie die Änderungen.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den Feldern. Tap/click **[!UICONTROL Submit]**.
+1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Einstellungen]** und wählen Sie das gewünschte Schema aus. Speichern Sie die Änderungen.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
 
    >[!CAUTION]
    >
@@ -159,11 +159,11 @@ Mit Enterprise Manager-Assets können Sie die Metadaten mehrerer Assets gleichze
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configlimit}
 
-Um DOS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parameter, die in einer Sling-Anforderung unterstützt werden. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. AEM generiert die folgende Warnung in den Protokollen:
+Um DoS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parameter, die in einer Sling-Anfrage unterstützt werden. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. AEM generiert die folgende Warnung in den Protokollen:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Um den Grenzwert zu ändern, greifen Sie auf die Web-Konsole (**[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**) zu und ändern Sie den Wert für **[!UICONTROL maximale POST-Parameter]** unter **[!UICONTROL Apache Sling Request Parameter Handling]** der OSGi-Konfiguration.
+Um den Grenzwert zu ändern, greifen Sie auf die Web-Konsole zu (**[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**) und ändern Sie den Wert für **[!UICONTROL Maximale POST-Parameter]** unter **[!UICONTROL Apache Sling Request Parameter Handling]** der OSGi-Konfiguration.
 
 ## Metadatenschemata {#metadata-schemata}
 
@@ -171,7 +171,7 @@ Metadatenschemata sind vordefinierte Sets aus Metadaten-Eigenschaftsdefinitionen
 
 Sie können Ihre eigenen Metadatenschemata entwerfen, wenn keine vorhanden sind, die Ihren Anforderungen entsprechen (achten Sie aber darauf, keine bereits vorhandenen Schemata zu duplizieren). Innerhalb eines Unternehmens kann die organisationsübergreifende Freigabe von Metadaten durch eine Trennung der Schemata erleichtert werden.
 
-AEM bietet eine vordefinierte Liste der beliebtesten Metadatenschemata, mit denen Sie Ihre Metadatenstrategie neu starten und die benötigten Metadateneigenschaften aus einem bereits definierten Schema auswählen können.
+AEM stellt eine standardmäßige Liste der am häufigsten verwendeten Metadatenschemata bereit, sodass Sie Ihre Metadatenstrategie schnell implementieren und die benötigten Metadateneigenschaften aus einem bereits definierten Schema auswählen können.
 
 Im folgenden Abschnitt werden die unterstützten Metadatenschemata aufgelistet.
 
@@ -184,7 +184,7 @@ Im folgenden Abschnitt werden die unterstützten Metadatenschemata aufgelistet.
 * XMP – Extensible Metadata Platform
 * xmpBJ – Einfaches Auftrags-Ticketing
 
-### Anwendungsspezifische Metadaten {#application-specific-metadata}
+### Anwendungsspezifische Metadaten   {#application-specific-metadata}
 
 >[!NOTE]
 >
@@ -192,10 +192,10 @@ Im folgenden Abschnitt werden die unterstützten Metadatenschemata aufgelistet.
 >
 >Wenn Ihre Assets zahlreiche anwendungsspezifische Metadaten enthalten, können Sie einen Workflow-Schritt erstellen, der die anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
 
-* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/)
+* acdsee: vom ACDSee-Programm verwaltete Metadaten [www.acdsee.com/](https://www.acdsee.com/)
 * album: Adobe Photoshop-Album
-* cq - wird von AEM Assets verwendet
-* dam: Von AEM-Assets verwendet
+* cq: von AEM Assets verwendet
+* dam: von AEM Assets verwendet
 * dex: Optima SC Description Explorer
 * crs: Adobe Photoshop Camera Raw
 * lr: Adobe Lightroom
@@ -204,36 +204,36 @@ Im folgenden Abschnitt werden die unterstützten Metadatenschemata aufgelistet.
 * pdf und pdfx
 * photoshop und psAux: Adobe Photoshop
 
-### Digital Rights Management-Metadaten {#digital-rights-management-metadata}
+### Digital Rights Management-Metadaten   {#digital-rights-management-metadata}
 
 * cc: Creative Commons
 * xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* Prism - https://www.idealliance.org/prism-metadata für Veröffentlichungsanforderungen für Standard-Metadaten
+* plus: Picture Licensing Universal System – https://www.useplus.com/
+* prism: Publishing Requirements for Industry Standard Metadata – https://www.idealliance.org/prism-metadata 
 * prl: Prism Rights Language
 * pur: Prism Usage Rights
 * xmpPlus: Integration von PLUS in XMP
 
-### Fotografiespezifische Metadaten {#photography-specific-metadata}
+### Fotografiespezifische Metadaten   {#photography-specific-metadata}
 
 * exif: zahlreiche technische Informationen von der Kamera, einschließlich GPS-Position
 * crs: Photoshop Camera Raw
 * Iptc4xmpCore und iptc4xmpExt
 * TIFF: Bildmetadaten (nicht nur für TIFF-Bilder)
 
-### Druckspezifische Metadaten {#print-specific-metadata}
+### Druckspezifische Metadaten   {#print-specific-metadata}
 
-* pdf und pdfx - Adobe PDF- und Drittanbieteranwendungen
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
+* pdf und pdfx: Adobe PDF und Drittanbieteranwendungen
+* prism: [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata
 * XMP
 * xmpPG: XMP für paginierten Text
 
-### Multimedia-specific metadata {#multimedia-specific-metadata}
+### Multimedia-spezifische Metadaten {#multimedia-specific-metadata}
 
 * xmpDM: Dynamic Media
 * xmpMM: Medien-Management
 
-## Metadata-driven workflows {#metadata-driven-workflows}
+## Metadatengesteuerte Workflows {#metadata-driven-workflows}
 
 Indem Sie metadatengesteuerte Workflows erstellen, können Sie einige Prozesse automatisieren und so die Effizienz steigern. In einem metadatengesteuerten Workflow liest das Workflow-Managementsystem den Workflow und führt anschließend einige vordefinierte Aktionen aus.
 
