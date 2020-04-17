@@ -1,7 +1,7 @@
 ---
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Projekte {#projects}
 
-Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Kacheln können Projekt- und Team-Informationen, Assets, Workflows und andere Arten von Informationen sein. Ausführliche Informationen finden Sie unter [Projektkacheln](#project-tiles).
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
+>Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie mit Projektfunktionen wie Erstellen von Projekten, Erstellen von Aufgaben/Workflows, Anzeigen und Verwalten des Teams arbeiten, benötigen sie Lesezugriff auf `/home/users` und `/home/groups`. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf `/home/users` und `/home/groups`.
 
 Als Benutzer haben Sie folgende Möglichkeiten:
 
@@ -32,7 +32,7 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen und diese verwalten.
 
-![Die Projektkonsole](/help/sites-cloud/authoring/assets/projects-console.png)
+![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Wählen Sie **Timeline** und dann ein Projekt, um seine Timeline anzuzeigen.
 * Klicken/tippen Sie auf **Auswählen**, um den Auswahlmodus zu aktivieren.
@@ -40,7 +40,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln {#project-tiles}
+## Projektkacheln   {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
@@ -57,11 +57,11 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in d
 * Launches
 * Aufgaben
 
-### Assets {#assets}
+### Assets  {#assets}
 
 In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für ein bestimmtes Projekt verwenden.
 
-![Elementkachel](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
+![Assets-Kachel](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
 Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für dynamische Medien verfügen.
 
@@ -69,15 +69,15 @@ Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets
 
 ### Asset-Sammlungen {#asset-collections}
 
-Asset-Sammlungen können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. You define collections in Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Asset-Sammlungen können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
 
 ![Asset-Sammlung](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung aus der Liste auswählen.
 
-### Erlebnisse {#experiences}
+### Erlebnisse   {#experiences}
 
-Über die Kachel **Erlebnisse** können Sie eine mobile Anwendung, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
+Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
@@ -101,19 +101,19 @@ Sie können dem Link einen aussagekräftigen Namen geben und die Miniaturansicht
 
 Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine Projektminiaturansicht hinzufügen, die auf der Hauptprojektseite angezeigt wird.
 
-![Projektinfo](/help/sites-cloud/authoring/assets/project-info.png)
+![Projektinformationen](/help/sites-cloud/authoring/assets/project-info.png)
 
 Die Team-Mitglieder können dieser Kachel hinzugefügt oder aus ihr entfernt werden (oder ihre Rollen können geändert werden). Das Gleiche gilt für die Kachel „Team“.
 
-![Teammitglieder zum Projekt hinzufügen](/help/sites-cloud/authoring/assets/projects-add-team.png)
+![Team-Mitglieder zum Projekt hinzufügen](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 ### Übersetzungsauftrag {#translation-job}
 
-In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten und sehen den jeweiligen Status Ihrer Übersetzungen. Informationen zum Einrichten Ihrer Übersetzung finden Sie unter Erstellen von Übersetzungsprojekten. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten und sehen den jeweiligen Status Ihrer Übersetzungen. Informationen zum Einrichten Ihrer Übersetzung finden Sie unter „Erstellen von Übersetzungsprojekten“. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
 
 ![Übersetzungsauftrag](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
+Klicken Sie auf die Auslassungszeichen unten auf der Karte **Übersetzungsauftrag**, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
 
 ![Detail des Übersetzungsauftrags](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -121,7 +121,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 In dieser Kachel können Sie die Mitglieder des Projektteams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
 
-![Teamelement](/help/sites-cloud/authoring/assets/projects-team-tile.png)
+![Kachel „Team“](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
 Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber hinaus können Sie die [Benutzerrolle](#user-roles-in-a-project) bearbeiten, die dem jeweiligen Team-Mitglied zugewiesen ist.
 
@@ -145,7 +145,7 @@ Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für d
 
 ### Aufgaben {#tasks}
 
-Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben überwachen, einschließlich Workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
+Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben überwachen, einschließlich Workflows. Aufgaben werden im Detail unter [Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md) beschrieben.
 
 ![Aufgaben](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -153,13 +153,13 @@ Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben üb
 
 Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
-* Ein einfaches Projekt - Ein Referenzbeispiel für Projekte, die nicht in andere Kategorien passen (ein Sammelformular). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Einstiegsseite anfordern und E-Mail anfordern).
-* Ein Medienprojekt - Ein Beispielprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es umfasst außerdem zwei Arbeitsabläufe im Zusammenhang mit Medieninhalten - &quot;Kopie anfordern&quot;(zum Anfordern und Überprüfen von Text) und &quot;Foto-Shoot&quot;(zum Verwalten produktbezogener Fotografien)
-* Ein Übersetzungsprojekt: ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflows-Benutzeroberfläche zugegriffen werden kann. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
+* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
+* Ein Übersetzungsprojekt: ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt   {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
@@ -170,9 +170,9 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 
 | Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
 |---|---|---|---|
-| Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users` group |
-| Bearbeiter      | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für /etc/commerce; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
-| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Eigentümer kann ein Projekt erstellen, Arbeiten in einem Projekt initiieren und genehmigte Assets in den Ordner &quot;Produktion&quot;verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden.  | Write permission on `/etc/commerce` | `dam-users` Gruppe (um ein Projekt erstellen zu können) mit Projektadministratoren (um Assets verschieben zu können) |
+| Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
+| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
+| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users`-Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um Assets verschieben zu können) |
 
 >[!NOTE]
 >
