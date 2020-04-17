@@ -1,7 +1,7 @@
 ---
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
 description: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,49 +9,49 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
-Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Er bildet die Grundlage für verschiedene Komponenten
+Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können verschiedene Komponenten erstellt werden.
 
-## Bearbeitung im Kontext {#in-place-editing}
+## Bearbeiten im Kontext {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) as with any component.
+Bei der Auswahl einer textbasierten Komponente durch einfaches Tippen oder Klicken wird die [Komponenten-Symbolleiste](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) wie bei Komponenten üblich geöffnet.
 
 ![Die Komponenten-Symbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 Wenn Sie nochmals darauf tippen/klicken oder gleich anfangs die Komponente mit einem langsamen Doppeltippen/-klick auswählen, wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und die Formatierung ändern.
 
-![Ersetzende Bearbeitung mit der RTE](/help/sites-cloud/authoring/assets/rte-in-place-editing.png)
+![Bearbeiten im Kontext mit dem RTE](/help/sites-cloud/authoring/assets/rte-in-place-editing.png)
 
 Diese Symbolleiste beinhaltet die folgenden Optionen:
 
-* **Format**: Auf diese Weise können Sie Fett, Kursiv und Unterstrichen einstellen.
-* **Listen**: Damit können Sie Listen mit Aufzählungszeichen oder Nummerierungen erstellen oder den Einzug einstellen.
+* **Format**: Wählen Sie die Optionen „Fett“, „Kursiv“ und „Unterstrichen“ aus.
+* **Listen**: Erstellen Sie Stichpunkt- oder Aufzählungslisten oder legen Sie einen Einzug fest.
 * **Hyperlink**
 * **Verknüpfung aufheben**
 * **Vollbild**
 * **Schließen**
 * **Speichern**
 
-## Full Screen Editing {#full-screen-editing}
+## Bearbeiten im Vollbildmodus {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) opens the rich text editor and hides the rest of the page content.
+Wenn für textbasierte Komponenten der Vollbildmodus in der [Symbolleiste](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) ausgewählt wird, öffnet sich der Rich-Text-Editor und der restliche Seiteninhalt wird verborgen.
 
-![Vollbildschaltfläche RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+![Schaltfläche für den RTE-Vollbildmodus](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. Die Verfügbarkeit der Optionen hängt von der Konfiguration ab. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen hängt von der Konfiguration ab. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
 ![RTE im Vollbildmodus](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
 Zusätzliche Optionen für den Rich-Text-Editor sind:
 
-* **Verankerung**: Erstellen Sie einen Anker im Text, zu dem Sie später einen Link/Verweis erstellen können.
+* **Anker**: Erstellen Sie einen Anker im Text, zu dem Sie später eine Verknüpfung/einen Verweis herstellen können.
 * **Text links ausrichten**
 * **Text zentrieren**
 * **Text rechts ausrichten**
 
-Schließen Sie den Vollbildmodus, indem Sie auf das Symbol Minimieren klicken.
+Den Vollbildmodus schließen Sie, indem Sie auf das Symbol zum Minimieren klicken.
 
-![RTE minimieren Schaltfläche](/help/sites-cloud/authoring/assets/rte-minimize.png)
+![Schaltfläche zum Minimieren des RTE](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
 >[!NOTE]
 >
->Das Kopieren verschachtelter Listen aus Microsoft Word in die RTE kann zu inkonsistenten Ergebnissen führen und erfordert möglicherweise eine manuelle Anpassung, nachdem der Text in die RTE eingefügt wurde.
+>Das Kopieren verschachtelter Listen aus Microsoft Word in den RTE kann zu inkonsistenten Ergebnissen führen und erfordert möglicherweise eine manuelle Anpassung, nachdem der Text in den RTE eingefügt wurde.
