@@ -1,50 +1,50 @@
 ---
-title: Erweiterte Suchoptionen und Funktionen in Adobe Experience Manager Assets
+title: Erweitern der Suchoptionen und Funktionen in Adobe Experience Manager Assets
 description: Erweitern Sie die Suchfunktionen von Assets.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Suche nach Assets erweitern {#extend-assets-search}
+# Erweitern der Asset-Suche {#extend-assets-search}
 
 Sie können die Suchfunktionen von Adobe Experience Manager (AEM) Assets erweitern. Standardmäßig sucht AEM Assets anhand von Zeichenfolgen nach Assets.
 
-Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
+Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. Sie können den Standardsatz der Eigenschaften im folgenden Verzeichnis überlagern: `/apps/dam/content/search/searchpanel/facets`.
 
-Sie können dem AEM Assets-Admin-Bedienfeld auch weitere Registerkarten hinzufügen.
+Sie können dem Admin-Bedienfeld von AEM Assets auch zusätzliche Registerkarten hinzufügen.
 
 ## Überlagerung {#overlay}
 
-To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie den Knoten `facets` aus `/libs/dam/content/search/searchpanel` nach `/apps/dam/content/search/searchpanel/` oder geben Sie eine weitere `facetURL`-Eigenschaft in die Konfiguration des Suchfensters ein (standardmäßig `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 >[!NOTE]
 >
->By default, the directory structure under `/apps` does not exist and needs to be created. Ensure that the node types match those under `/libs`.
+>Standardmäßig ist die Verzeichnisstruktur unter `/apps` nicht vorhanden und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen den Typen unter `/libs` entsprechen.
 
 ### Hinzufügen von Registerkarten {#add-tabs}
 
-Sie können weitere Suchregisterkarten hinzufügen, indem Sie sie im AEM Assets-Admin konfigurieren. So erstellen Sie weitere Registerkarten:
+Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im Admin-Bedienfeld von AEM Assets konfigurieren. So erstellen Sie weitere Registerkarten:
 
-1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
+1. Erstellen Sie die Ordnerstruktur `/apps/wcm/core/content/damadmin/tabs,`, falls noch nicht vorhanden, kopieren Sie den Knoten `tabs` aus `/libs/wcm/core/content/damadmin` und fügen Sie ihn ein.
 1. Erstellen und konfigurieren Sie die zweite Registerkarte wie gewünscht.
 
    >[!NOTE]
    >
-   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
+   >Achten Sie bei Erstellung eines zweiten `siteadminsearchpanel` auf die Festlegung einer `id`-Eigenschaft, um Formularkonflikte zu vermeiden.
 
-### Erstellen benutzerdefinierter Prädikate {#create-custom-predicates}
+### Erstellen benutzerdefinierter Eigenschaften {#create-custom-predicates}
 
-AEM Assets verfügt über eine Reihe vordefinierter Prädikate, die zum Anpassen einer Seite zum Teilen von Assets verwendet werden können.
+AEM Assets umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann.
 <!-- In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md). -->
 
-Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html). 
+Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispiel-Eigenschaften befinden sich unter **/libs/cq/search/components/predicates**.
 
-#### Beispiel: Einfaches Eigenschaftsprädikat erstellen {#example-build-a-simple-property-predicate}
+#### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
@@ -61,7 +61,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
        componentGroup="Search"/>
    ```
 
-1. Fügen Sie `titlepredicate.jsp`.
+1. Fügen Sie `titlepredicate.jsp` hinzu.
 
    ```xml
    <%--
@@ -135,7 +135,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 
    >[!NOTE]
    >
-   >Stellen Sie beim Suchen sicher, dass der Begriff korrekt eingegeben wird und auch die Groß-/Kleinschreibung stimmt. 
+   >Stellen Sie beim Suchen sicher, dass der Begriff korrekt eingegeben wird und auch die Groß-/Kleinschreibung stimmt.
 
 #### Beispiel: Einfache Gruppeneigenschaft erstellen {#example-build-a-simple-group-predicate}
 
@@ -240,7 +240,7 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
-#### FulltextPredicate {#fulltextpredicate}
+#### FulltextPredicate   {#fulltextpredicate}
 
 <table>
  <tbody>
@@ -250,14 +250,14 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>calculateName</td>
+   <td>predicateName</td>
    <td>Zeichenfolge</td>
-   <td>Name der Vorhersage. Standard ist "fulltext"</td>
+   <td>Name der Eigenschaft. Standardwert ist „fulltext“</td>
   </tr>
   <tr>
    <td>searchCallback</td>
    <td>Funktion</td>
-   <td>Rückruf zum Auslösen der Suche bei Ereignis "keyup". Standard "CQ.wcm.SiteAdmin.doSearch"</td>
+   <td>Callback zum Auslösen der Suche bei Ereignis „keyup“. Standardwert ist „CQ.wcm.SiteAdmin.doSearch“</td>
   </tr>
  </tbody>
 </table>
@@ -272,14 +272,14 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>calculateName</td>
+   <td>predicateName</td>
    <td>Zeichenfolge</td>
-   <td>Name der Vorhersage. Standardwert ist 'property'</td>
+   <td>Name der Eigenschaft. Standardwert ist „property“</td>
   </tr>
   <tr>
    <td>propertyName</td>
    <td>Zeichenfolge </td>
-   <td>Name der JCR-Eigenschaft. Standard: "jcr:title"</td>
+   <td>Name der JCR-Eigenschaft. Standardwert ist „jcr:title“</td>
   </tr>
   <tr>
    <td>defaultValue<br /> </td>
@@ -299,24 +299,24 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>calculateName</td>
+   <td>predicateName</td>
    <td>Zeichenfolge</td>
-   <td>Name der Vorhersage. Standard ist "path"</td>
+   <td>Name der Eigenschaft. Standardwert ist „path“</td>
   </tr>
   <tr>
    <td>rootPath</td>
    <td>Zeichenfolge </td>
-   <td>Stammpfad der Vorhersage. Standard auf "/content/dam"</td>
+   <td>Stammpfad der Eigenschaft. Standardwert ist „/content/dam“</td>
   </tr>
   <tr>
    <td>pathFieldPredicateName</td>
    <td>Zeichenfolge</td>
-   <td>Standard "folder"</td>
+   <td>Standardwert ist „folder“</td>
   </tr>
   <tr>
    <td>showFlatOption</td>
-   <td>Boolesch </td>
-   <td>Markieren, um Kontrollkästchen "Suche in Unterordnern"anzuzeigen. Der Standardwert ist „true“.</td>
+   <td>Boolesch</td>
+   <td>Markierung, um Kontrollkästchen „Suche in Unterordnern“ anzuzeigen. Standardwert ist „true“.</td>
   </tr>
  </tbody>
 </table>
@@ -331,14 +331,14 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>calculateName</td>
+   <td>predicateName</td>
    <td>Zeichenfolge</td>
-   <td>Name der Vorhersage. Standard ist "daterange"</td>
+   <td>Name der Eigenschaft. Standardwert ist „daterange“</td>
   </tr>
   <tr>
    <td>propertyname</td>
    <td>Zeichenfolge</td>
-   <td>Name der JCR-Eigenschaft. Standard "jcr:content/jcr:lastModified"</td>
+   <td>Name der JCR-Eigenschaft. Standardwert ist „jcr:content/jcr:lastModified“</td>
   </tr>
   <tr>
    <td>defaultValue </td>
@@ -358,39 +358,39 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>Titels </td>
+   <td>title </td>
    <td>Zeichenfolge </td>
-   <td>Fügt einen zusätzlichen Top-Titel hinzu </td>
+   <td>Fügt einen zusätzlichen oberen Titel hinzu </td>
   </tr>
   <tr>
-   <td>calculateName</td>
+   <td>predicateName</td>
    <td>Zeichenfolge</td>
-   <td>Name der Vorhersage. Standard ist "daterange"</td>
+   <td>Name der Eigenschaft. Standardwert ist „daterange“</td>
   </tr>
   <tr>
    <td>propertyname</td>
    <td>Zeichenfolge</td>
-   <td>Name der JCR-Eigenschaft. Standard "jcr:content/metadata/cq:tags"</td>
+   <td>Name der JCR-Eigenschaft. Standardwert ist „jcr:content/metadata/cq:tags“</td>
   </tr>
   <tr>
-   <td>reduzieren</td>
+   <td>collapse</td>
    <td>Zeichenfolge</td>
-   <td>Ebene reduzieren. Standard ist "level1"</td>
+   <td>Ebene der Reduzierung. Standardwert ist „level1“</td>
   </tr>
   <tr>
    <td>triggerSearch</td>
-   <td>Boolesch  </td>
-   <td>Flag zum Auslösen der Suche beim Scheck. Standard ist false</td>
+   <td>Boolesch </td>
+   <td>Markierung zum Auslösen der Suche nach Aktivierung. Standardwert ist „false“</td>
   </tr>
   <tr>
    <td>searchCallback</td>
    <td>Funktion</td>
-   <td>Rückruf zum Auslösen der Suche. Die Standardeinstellung ist "CQ.wcm.SiteAdmin.doSearch"</td>
+   <td>Callback zum Auslösen der Suche. Standardwert ist „CQ.wcm.SiteAdmin.doSearch“</td>
   </tr>
   <tr>
    <td>searchTimeoutTime</td>
    <td>Nummer</td>
-   <td>Timeout, bevor searchCallback ausgelöst wird. Der Standardwert ist 800 ms.</td>
+   <td>Zeitlimit, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms.</td>
   </tr>
  </tbody>
 </table>
