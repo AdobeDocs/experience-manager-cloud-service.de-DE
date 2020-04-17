@@ -1,20 +1,20 @@
 ---
 title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Tastaturbefehle für Konsolen {#keyboard-shortcuts-for-consoles}
+# Tastaturbefehle für Konsolen   {#keyboard-shortcuts-for-consoles}
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
 | Position | Kürzel | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl |
-| Konsole - Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
+| Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
@@ -22,7 +22,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) |
 |  | ` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
@@ -36,7 +36,7 @@ Die Tastenkombinationen werden mit den Windows-[Modifikatortasten](#os-specific-
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 
-Die für die Tastaturbefehle verwendeten Zusatztasten hängen vom Betriebssystem des Clients ab.
+Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem vom Client verwendeten Betriebssystem.
 
 | Windows/Linux | macOS |
 |---|---|
