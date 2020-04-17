@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,13 +9,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Erstellen von Launches {#creating-launches}
 
-Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
+Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* Der Titel wird in der Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) angezeigt. Von dort aus haben Autoren Zugriff zur Bearbeitung.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
-* Standardmäßig aktualisiert Live Copy automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* Standardmäßig aktualisiert die Live Copy automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
-Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. Das **Launch-Datum** funktioniert allerdings nur in Kombination mit der Kennzeichnung **Produktionsbereit** (siehe [Bearbeiten einer Launch-Konfiguration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Damit die Aktionen automatisch erfolgen, muss beides festgelegt werden.
 
 ## Erstellen eines Launches {#creating-a-launch}
 
@@ -37,14 +37,14 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    >
    >In der **Sites-Konsole** können Sie auch den [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
    >
-   >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet. 
+   >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
 1. Im Schritt **Quelle auswählen** müssen Sie **Seiten hinzufügen**. Sie können mehrere Seiten auswählen, wobei jeweils der Pfad angegeben werden muss:
    * Navigieren Sie zur erforderlichen Position.
-   * Wählen Sie die Quellseite(n) aus und bestätigen Sie (Häkchen).
+   * Wählen Sie die Quellseite(n) aus und bestätigen Sie (durch ein Häkchen).
    Wiederholen Sie dies nach Bedarf.
 
-   ![Startquelle auswählen](/help/sites-cloud/authoring/assets/launches-select-source.png)
+   ![Launch-Quelle auswählen](/help/sites-cloud/authoring/assets/launches-select-source.png)
 
    >[!NOTE]
    >
@@ -59,25 +59,25 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
       * Geben Sie an, ob der Launch mit den oder ohne die untergeordneten Seiten erstellt werden soll.  Standardmäßig werden Unterseiten eingeschlossen.
    Fahren Sie mit **Weiter** fort.
 
-   ![Startquelle auswählen](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
+   ![Launch-Quelle auswählen](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
 
 1. Im Schritt **Eigenschaften** des Assistenten können Sie Folgendes festlegen:
 
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Livedaten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Launch zu einer Live-Kopie wird. Standardmäßig ist diese Option aktiviert. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
-   * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Kennzeichnung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
-   ![Eigenschaften starten](/help/sites-cloud/authoring/assets/launches-properties.png)
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Dies erfolgt, indem diese Option den Launch zu einer Live Copy macht. Standardmäßig ist diese Option aktiviert. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+   ![Launch-Eigenschaften](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
    Wenn Sie zur Konsole zurückkehren (über **Fertig**), können Sie den Launch wie folgt einsehen (und darauf zugreifen):
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * in der Konsole [**Launches **](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * unter [**Verweise **in der Konsole** Sites **](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
-### Create Launch with New Template {#create-launch-with-new-template}
+### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
 Bei der Erstellung eines Launches können Sie auswählen, ob eine neue Vorlage verwendet werden soll:
 
@@ -85,12 +85,12 @@ Bei der Erstellung eines Launches können Sie auswählen, ob eine neue Vorlage v
 >
 >Diese Option ist nur verfügbar, wenn ein Launch über die Konsole **Sites** erstellt wird. Sie steht nicht zur Verfügung, wenn ein Launch über die Konsole **Launches** erstellt wird.
 
-![Erstellen eines Starts mit einer neuen Vorlage](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
+![Erstellen eines Launches mit einer neuen Vorlage](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
 
 Die Auswahl dieser Option bewirkt Folgendes:
 
-* Aktualisieren Sie die anderen verfügbaren Optionen,
-* Schließen Sie einen neuen Schritt ein, in dem Sie die erforderliche Vorlage auswählen können.
+* die anderen verfügbaren Optionen werden aktualisiert,
+* ein neuer Schritt wird einbezogen, mit dem Sie die gewünschte Vorlage auswählen können.
 
 ![Auswählen einer neuen Vorlage](/help/sites-cloud/authoring/assets/launches-select-template.png)
 
@@ -100,7 +100,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
-### Erstellen von verschachtelten Launches {#creating-a-nested-launch}
+### Erstellen von verschachtelten Launches   {#creating-a-nested-launch}
 
 Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Launches) bietet Ihnen die Möglichkeit, einen Launch aus einem vorhandenen Launch zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vornehmen zu müssen.
 
@@ -108,29 +108,29 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 >
 >Siehe auch [Weiterleiten eines verschachtelten Launches](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch).
 
-#### Erstellen von verschachtelten Launches: Konsole „Launches“{#creating-a-nested-launch-launches-console}
+#### Erstellen von verschachtelten Launches: Konsole „Launches“ {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
-1. Wählen Sie in der **Launch-Konsole** die Option **Erstellen**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
+1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
+1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie zur Launch-Verzweigung, indem Sie `/content/launches` im Filter angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
-   ![Erstellen eines verschachtelten Starts](/help/sites-cloud/authoring/assets/launches-create-nested.png)
+   ![Erstellen von verschachtelten Launches](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren. Geben Sie die **Eigenschaften** dann wie bei jedem anderen Launch an.
 
-   ![Quelle für verschachtelten Start auswählen](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+   ![Auswählen einer Quelle für einen verschachtelten Launch](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
 
-#### Erstellen von verschachtelten Launches: Konsole „Sites“{#creating-a-nested-launch-sites-console}
+#### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
 
 So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen Launches über die Konsole **Sites**:
 
-1. Rufen Sie [Launch aus Verweisen (Konsole „Sites“)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
+1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Wählen Sie **Launch erstellen** aus, um den Assistenten zu öffnen (da die Quelle bereits ausgewählt wurde, wird der Schritt **Quelle auswählen** übersprungen).
 1. Geben Sie den **Launch-Titel** und jegliche weiteren erforderlichen Details ein (wie bei einem normalen Launch).
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
-If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+Bei Auswahl von **Fertig** wird erneut die Leiste **Verweise** der Konsole **Sites** angezeigt. Bei Auswahl der entsprechenden Seite wird der neue Launch angezeigt.
 
 ### Löschen von Launches {#deleting-a-launch}
 
