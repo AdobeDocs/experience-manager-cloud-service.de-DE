@@ -1,17 +1,17 @@
 ---
 title: Exportieren in CSV
 description: Exportieren von Informationen zu Ihren Seiten in eine CSV-Datei auf Ihrem lokalen System
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Exportieren in CSV {#export-to-csv}
+# Exportieren in CSV   {#export-to-csv}
 
-Mit **CSV-Export erstellen** können Sie Informationen über Ihre Seiten in eine CSV-Datei auf Ihrem lokalen System exportieren.
+Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in eine CSV-Datei auf Ihrem lokalen System exportieren.
 
-* Die heruntergeladene Datei erhält den Namen `export.csv`
+* Die heruntergeladene Datei erhält den Namen `export.csv`.
 * Der Inhalt der Datei hängt davon ab, welche Eigenschaften Sie für den Export auswählen.
 * Sie können den Pfad zusammen mit der Tiefe des Exports definieren.
 
@@ -44,16 +44,16 @@ Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatibl
 
 So erstellen Sie einen CSV-Export: 
 
-1. Öffnen Sie die **Sites-Konsole** und gehen Sie zum gewünschten Verzeichnis, falls erforderlich.
-   * Die Option &quot; **CSV-Bericht** erstellen&quot;ist beim Durchsuchen der **Sites** -Konsole verfügbar (in der Listenansicht)
-   * Es handelt sich um eine Option im Dropdown-Menü **Erstellen** :
+1. Öffnen Sie die **Sites-Konsole** und wechseln Sie zum gewünschten Verzeichnis, falls erforderlich.
+   * Die Option **CSV-Bericht erstellen** ist verfügbar, wenn Sie durch die Konsole **Sites** (in der Listenansicht) navigieren.
+   * Es handelt sich um eine Option im Dropdown-Menü **Erstellen**:
 
-      ![Option &quot;CSV erstellen&quot;](/help/sites-cloud/authoring/assets/csv-create.png)
+      ![Option „CSV-Bericht erstellen“](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. Wählen Sie in der Symbolleiste **Erstellen** und dann **CSV-Bericht** aus, um den Assistenten zu öffnen:
 
    ![CSV-Exportoptionen](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. Wählen Sie die gewünschten Eigenschaften aus, die Sie exportieren möchten.
 1. Klicken Sie auf **Erstellen**.
-   ![Ergebnis des CSV-Exports in Excel](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![Resultierender CSV-Export in Excel](/help/sites-cloud/authoring/assets/csv-example.png)
