@@ -3,7 +3,7 @@ title: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 description: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
+source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
 
 ---
 
@@ -24,7 +24,7 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 
 ## Konfiguration erstellen {#create-new-configuration}
 
-Sie können eine neue Konfiguration auf Adobe I/O erstellen, um Ihre AEM Assets-Cloud-Instanz mit Brand Portal zu konfigurieren.
+Sie können eine Konfiguration auf Adobe I/O erstellen, um Ihre AEM Assets-Cloud-Instanz mit Brand Portal zu konfigurieren.
 
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch:
 1. [Erhalten eines öffentlichen Zertifikats](#public-certificate)
@@ -46,7 +46,7 @@ Die IMS-Konfiguration umfasst zwei Schritte:
 
 Mit dem öffentlichen Zertifikat können Sie Ihr Profil auf Adobe I/O authentifizieren.
 
-1. Anmelden bei Ihrer AEM Assets-Cloud-Instanz
+1. Melden Sie sich bei Ihrer AEM Assets-Cloud-Instanz an.
 
 1. Navigieren Sie im **Tool** ![Tools](assets/tools.png) -Bedienfeld zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
 
@@ -56,13 +56,13 @@ Mit dem öffentlichen Zertifikat können Sie Ihr Profil auf Adobe I/O authentifi
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   Auf diese Weise gelangen Sie zur Seite &quot;Konfiguration **[!UICONTROL des technischen]** Adobe IMS-Kontos&quot;.
+   Sie gelangen auf die Seite &quot;Technische Konfiguration **[!UICONTROL des]** Adobe IMS-Kontos&quot;.
 
 1. Standardmäßig wird die Registerkarte &quot; **Zertifikat** &quot;geöffnet.
 
    Wählen Sie in der **Cloud-Lösung** die Option **[!UICONTROL Adobe Brand Portal]**.
 
-1. Markieren Sie das Kontrollkästchen Neues Zertifikat **** erstellen und geben Sie einen **Alias** für das Zertifikat an. Der Alias dient als Name des Dialogfelds.
+1. Markieren Sie das Kontrollkästchen Neues Zertifikat **[!UICONTROL erstellen]** und geben Sie einen **Alias** für das Zertifikat an. Der Alias dient als Name des Dialogfelds.
 
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Ein Dialogfeld wird angezeigt. Klicken Sie auf **[!UICONTROL OK]** , um das öffentliche Zertifikat zu generieren.
 
@@ -152,18 +152,19 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 >[!CAUTION]
 >
->Erstellen Sie nur eine gültige IMS-Konfiguration.
+>Es muss nur eine IMS-Konfiguration vorhanden sein, die den Health Check besteht. Erstellen Sie nicht mehrere IMS-Konfigurationen.
 >
-> Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
+>Wenn die Konfiguration die Statusprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
+
 
 
 ### Configure cloud service {#configure-the-cloud-service}
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cloud-Dienstes zu erstellen:
 
-1. Anmelden bei Ihrer AEM Assets-Cloud-Instanz
+1. Melden Sie sich bei Ihrer AEM Assets-Cloud-Instanz an.
 
-1. Navigieren Sie im Bereich **Tools** ![Tools](assets/tools.png) zu **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Navigieren Sie im **Tool** ![Tools](assets/tools.png) -Bedienfeld zu **[!UICONTROL Cloud-Services]** > **[!UICONTROL AEM-Markenportal]**.
 
    Die Seite &quot;Konfiguration des Markenportals&quot;wird geöffnet.
 
@@ -202,8 +203,13 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration des Brand Portal-Cl
 1. Die Seite mit dem Verteilungsagenten wird geöffnet. Standardmäßig wird die Registerkarte &quot; **[!UICONTROL Status]** &quot;geöffnet, in der die Verteilungswarteschlangen gefüllt werden.
 
    Ein Verteilungsagenten enthält zwei Warteschlangen:
-   * Eine Verarbeitungswarteschlange für die Verteilung von Assets an das Markenportal.
-   * Eine Fehlerwarteschlange für die Assets, bei denen die Verteilung fehlgeschlagen ist.
+   * **processing-queue**: für die Verteilung von Assets an Brand Portal.
+
+   * **error-queue**: für die Assets, bei denen die Verteilung fehlgeschlagen ist.
+   >[!NOTE]
+   >
+   >Es wird empfohlen, die Fehler zu überprüfen und die **Fehlerwarteschlange** regelmäßig zu löschen.
+
    ![](assets/test-bpconfig3.png)
 
 1. Um die Verbindung zwischen AEM Assets und dem Markenportal zu überprüfen, klicken Sie auf **[!UICONTROL Verbindung]** testen.
@@ -238,7 +244,7 @@ In den Protokollen finden Sie detaillierte Informationen zu den Aktionen, die mi
 
 Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlicht, um die Konfiguration zu überprüfen.
 
-1. Führen Sie die Schritte (Schritt 1 bis 4) aus, wie in **[!UICONTROL Test Connection]** gezeigt, und navigieren Sie zur Seite &quot;Distribution Agent&quot;.
+1. Führen Sie die Schritte (Schritt 1 - 4) aus, wie in **[!UICONTROL Test Connection]** gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
 
 1. Klicken Sie auf **[!UICONTROL Protokolle]** , um die Verteilungsprotokolle Ansicht. Die Verarbeitungs- und Fehlerprotokolle finden Sie hier.
 
@@ -246,41 +252,44 @@ Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlich
 
 Der Verteilungsagenten generiert die folgenden Protokolle:
 
-* INFO: Dies ist ein vom System generiertes Protokoll, das bei erfolgreicher Konfiguration ausgelöst wird und den Distributionsagenten aktiviert.
-* DSTRQ1 (Anforderung 1): Wird bei Testverbindung ausgelöst.
+* INFO: Dies ist ein vom System erstelltes Protokoll, das bei einer erfolgreichen Konfiguration ausgelöst wird, die den Distributionsagenten aktiviert.
+* DSTRQ1 (Anforderung 1): Wird bei der Testverbindung ausgelöst.
 
 Beim Veröffentlichen des Assets werden die folgenden Anforderungs- und Antwortprotokolle generiert:
 
 **Distributionsagenten-Anfrage**:
 * DSTRQ2 (Anforderung 2): Die Anfrage zur Veröffentlichung von Assets wird ausgelöst.
-* DSTRQ3 (Anforderung 3): Das System löst eine weitere Anforderung zum Veröffentlichen des Ordners aus, in dem das Asset vorhanden ist, und repliziert den Ordner im Markenportal.
+* DSTRQ3 (Anforderung 3): Das System löst eine weitere Anforderung zum Veröffentlichen des Ordners aus, in dem sich das Asset befindet, und repliziert den Ordner im Markenportal.
 
 **Reaktion** des Verteilungsagenten:
 * queue-bpdistributionAgent0 (DSTRQ2): Das Asset wird im Markenportal veröffentlicht.
 * queue-bpdistributionAgent0 (DSTRQ3): Das System repliziert den Ordner, der das Asset im Markenportal enthält.
 
-Im obigen Beispiel wird eine zusätzliche Anforderung und Antwort ausgelöst. Das System konnte den übergeordneten Ordner (auch als Hinzufügen Pfad bezeichnet) im Markenportal nicht finden, da das Asset zum ersten Mal veröffentlicht wurde. Daher wird eine zusätzliche Anforderung ausgelöst, einen übergeordneten Ordner mit demselben Namen im Markenportal zu erstellen, in dem das Asset veröffentlicht wird.
+Im obigen Beispiel werden eine zusätzliche Anforderung und Antwort ausgelöst. Das System konnte den übergeordneten Ordner (auch als Hinzufügen Pfad bezeichnet) im Markenportal nicht finden, da das Asset zum ersten Mal veröffentlicht wurde. Daher wird eine zusätzliche Anforderung ausgelöst, einen übergeordneten Ordner mit demselben Namen im Markenportal zu erstellen, in dem das Asset veröffentlicht wird.
 
 >[!NOTE]
 >
 >Eine zusätzliche Anforderung wird generiert, wenn der übergeordnete Ordner nicht im Markenportal vorhanden ist (im oben stehenden Beispiel) oder der übergeordnete Ordner in AEM Assets geändert wurde.
 
 
-## Zusätzliche Informationen {#additional-information}
 
-Gehen Sie zu `/system/console/slingmetrics` , um Statistiken zu verteilten Inhalten zu erhalten:
+<!--
 
-1. **Zählermetriken**
+## Additional information {#additional-information}
+
+Go to `/system/console/slingmetrics` for statistics related to the distributed content:
+
+1. **Counter metrics**
    * sling: `mac_sync_request_failure`
    * sling: `mac_sync_request_received`
    * sling: `mac_sync_request_success`
 
-1. **Zeitmetriken**
+1. **Time metrics**
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
-
+-->
 
 <!--
    Comment Type: draft
