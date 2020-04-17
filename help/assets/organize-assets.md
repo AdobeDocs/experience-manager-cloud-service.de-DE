@@ -1,8 +1,8 @@
 ---
-title: Digitale Assets organisieren
-description: Organisieren Sie Ihre digitalen Assets mit verschiedenen Methoden, die in Adobe Experience Manager Assets bereitgestellt werden.
+title: Organisieren von digitalen Assets
+description: Organisieren Sie Ihre digitalen Assets mithilfe der unterschiedlichen Methoden, die Adobe Experience Manager Assets bietet.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -14,7 +14,7 @@ Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokum
 
 AEM Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch anhand von Ordnern organisieren oder in ungeordneter Ad-hoc-Manier ablegen, wobei zum Beispiel Tags verwendet werden können. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
-## Erstellen von Ordnern {#create-folders}
+## Erstellen von Ordnern   {#create-folders}
 
 Wenn Sie eine Sammlung von Assets organisieren, etwa alle *Naturaufnahmen*, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei AEM Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
@@ -23,15 +23,15 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle *Naturaufnahmen*, kön
 >Die Freigabe eines Assets-Ordners (in Marketing Cloud) vom Typ `sling:OrderedFolder` wird nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht „Geordnet“ aus.
 
 1. Navigieren Sie zu dem Ort in Ihrem Ordner „Digitale Assets“, an dem Sie einen neuen Ordner erstellen möchten.
-1. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Select **[!UICONTROL New Folder]**.
-1. In the **[!UICONTROL Title]** field, provide a folder name. DAM verwendet standardmäßig den Titel, den Sie als Ordnernamen angegeben haben. Wenn der Ordner erstellt wurde, können Sie die Standardeinstellung außer Kraft setzen und einen anderen Ordnernamen angeben.
+1. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
+1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. DAM verwendet standardmäßig den Titel, den Sie als Ordnernamen angegeben haben. Wenn der Ordner erstellt wurde, können Sie die Standardeinstellung außer Kraft setzen und einen anderen Ordnernamen angeben.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ihr Ordner wird im Ordner „Digitale Assets“ angezeigt.
 
 ## Hinzufügen von CUG-Eigenschaften zu Ordnern {#add-cug-properties-to-folders}
 
 Sie können einschränken, wer in Assets auf bestimmte Ordner zugreifen kann, indem Sie den Ordner einer CUG (Closed User Group, geschlossene Benutzergruppe) zuweisen. So weisen Sie einen Ordner einer CUG zu:
 
-1. Klicken Sie in Assets mit der rechten Maustaste auf den Ordner, dem Sie CUG-Eigenschaften zuweisen möchten, und wählen Sie **Eigenschaften**.
+1. Klicken Sie in Assets mit der rechten Maustaste auf den Ordner, dem Sie CUG-Eigenschaften zuweisen möchten, und wählen Sie **Eigenschaften** aus.
 1. Klicken Sie auf die Registerkarte **CUG**.
 1. Aktivieren Sie das Kontrollkästchen **Aktiviert**, um den Ordner und die darin enthaltenen Assets nur einer geschlossenen Benutzergruppe zugänglich zu machen.
 1. Rufen Sie die Anmeldeseite auf, sofern vorhanden, und fügen Sie diese Informationen hinzu. Fügen Sie zulässige Gruppen hinzu, indem Sie auf **Element hinzufügen** klicken. Fügen Sie, sofern nötig, den Bereich hinzu. Klicken Sie auf **OK**, um die Änderungen zu speichern.
@@ -40,6 +40,6 @@ Sie können einschränken, wer in Assets auf bestimmte Ordner zugreifen kann, in
 
 Sie können zum Organisieren von Assets Ordner und/oder Tags verwenden. Wenn Sie Assets Tags hinzufügen, können Sie diese bei einer Suche leichter finden. Gehen Sie wie folgt vor, um einem Asset Tags hinzuzufügen:
 
-1. Öffnen Sie das Asset, indem Sie im Digital Asset Manager doppelt darauf klicken.
-1. In the **Tags** area, click the drop-down button to reveal the available tags. Wählen Sie geeignete Tags aus. To delete a tag, hover the mouse over the tag and click the **x** to delete it.
-1. Click **Save** to save any tags you added.
+1. Öffnen Sie das Asset, indem Sie in Digital Asset Manager doppelt darauf klicken.
+1. Klicken Sie im Bereich **Tags** auf die Dropdown-Schaltfläche, um sich verfügbare Tags anzeigen zu lassen. Wählen Sie geeignete Tags aus. Löschen Sie ein Tag, indem Sie den Mauszeiger über dem Tag platzieren und auf das **x** klicken.
+1. Klicken Sie auf **Speichern**, um hinzugefügte Tags zu speichern.
