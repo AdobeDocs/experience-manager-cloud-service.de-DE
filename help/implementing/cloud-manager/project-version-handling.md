@@ -1,7 +1,7 @@
 ---
 title: Umgang mit Maven-Projektversionen
-description: Maven Project Version Handlingt - Cloud Services
-translation-type: tm+mt
+description: Umgang mit Maven-Projektversionen – Cloud Services
+translation-type: ht
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 ---
