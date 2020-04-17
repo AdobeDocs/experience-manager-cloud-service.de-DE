@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit Aufgaben
 description: Aufgaben sind am Inhalt durchgeführte Arbeiten und werden in Projekten verwendet, um festzustellen, inwieweit aktuelle Aufgaben vollständig durchgeführt sind.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,31 +13,31 @@ Bei Aufgaben handelt es sich um Arbeitsschritte, die auf Inhalt ausgeführt werd
 
 Aufgaben werden auch in Projekten verwendet, um den Grad der Vollständigkeit der aktuellen Aufgaben, einschließlich Workflow-Aufgaben zu bestimmen.
 
-## Verfolgen des Projektfortschritts {#tracking-project-progress}
+## Verfolgen des Projektfortschritts   {#tracking-project-progress}
 
 Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben in einem Projekt betrachten, die auf der Kachel **Aufgaben** dargestellt werden. Der Projektfortschritt kann bestimmt werden durch:
 
-* **** Aufgabenkachel: Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel auf der Seite mit den Projektdetails dargestellt.
+* **Aufgabenkachel:** Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite „Projektdetails“ verfügbar ist.
 
-* **** Aufgabenliste: Wenn Sie auf die Aufgabenkachel klicken, wird eine Liste der Aufgaben angezeigt. Diese Liste enthält ausführliche Informationen über alle Aufgaben, die mit dem Projekt verbunden sind.
+* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält ausführliche Informationen über alle Aufgaben, die mit dem Projekt verbunden sind.
 
 Beide enthalten sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der **Aufgabenkachel** erstellen.
 
-### Aufgabenkachel {#task-tile}
+### Aufgabenkachel   {#task-tile}
 
 Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb des Projekts angezeigt. Die Aufgabenkachel zeigt den aktuellen Status des Projekts an. Die Anzeige basiert auf den vorhandenen Aufgaben innerhalb des Workflows und beinhaltet keine Aufgaben, die in der Zukunft erzeugt werden, während der Workflow fortgesetzt wird. Die folgenden Informationen sind in der Aufgabenkachel sichtbar:
 
-* Prozentsatz der abgeschlossenen Aufgaben 
+* Prozentsatz der abgeschlossenen Aufgaben
 * Prozentsatz der aktiven Aufgaben
 * Prozentsatz der überfälligen Aufgaben
 
-![Aufgabenbereich](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Aufgabenkachel](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Anzeigen oder Ändern von Aufgaben in einem Projekt {#viewing-or-modifying-the-tasks-in-a-project}
 
 Zusätzlich zur Verfolgung des Fortschritts möchten Sie vielleicht auch Informationen über das Projekt anzeigen oder es ändern.
 
-#### Aufgabenliste {#task-list}
+#### Aufgabenliste   {#task-list}
 
 Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste der Aufgaben anzuzeigen, die mit dem Projekt verbunden sind. Die Aufgaben werden in übergeordnete Workflows aufgeteilt. Die Aufgabendetails werden zusammen mit Metadaten wie Fälligkeitsdatum, Verantwortlicher, Priorität und Status angezeigt.
 
@@ -45,7 +45,7 @@ Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste
 
 #### Aufgabendetails {#task-details}
 
-Für weitere Informationen zu einer bestimmten Aufgabe tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und **Aufgabendetails **öffnen.
+Tippen/klicken Sie für weitere Informationen über eine bestimmte Aufgabe in der Aufgabenliste auf die Aufgabe und öffnen Sie „Aufgabendetails“.
 
 ![Aufgabendetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -68,7 +68,7 @@ So fügen Sie eine Aufgabe hinzu:
 
 1. Tippen/klicken Sie auf **Erstellen**.
 
-## Arbeiten mit Aufgaben im Posteingang {#working-with-tasks-in-the-inbox}
+## Arbeiten mit Aufgaben im Posteingang   {#working-with-tasks-in-the-inbox}
 
 Eine andere Möglichkeit, auf Aufgaben zuzugreifen, bietet der Posteingang. Sie können den Inhalt aus dem Posteingang öffnen, um die erforderlichen Änderungen vorzunehmen. Wenn Sie fertig sind, ändern Sie den Aufgabenstatus in „Fertig gestellt“. Aufgaben werden auch in Ihrem Posteingang angezeigt, wenn sie einer Benutzergruppe zugewiesen werden, der Sie angehören. In diesem Fall kann jedes Mitglied der Gruppe die erforderliche Bearbeitung durchführen und die Aufgabe fertigstellen.
 
