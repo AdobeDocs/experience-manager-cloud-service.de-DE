@@ -2,13 +2,13 @@
 title: 'Ein- und Auschecken von Dateien in Assets '
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Checkin- und Checkout-Dateien in Assets {#check-in-and-check-out-files-in-assets}
+# Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
 
 Mit Adobe Experience Manager (AEM) Assets können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets eingecheckt haben. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
@@ -16,7 +16,7 @@ Um Assets aus-/einchecken zu können, benötigen Sie entsprechenden Schreibzugri
 
 Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Autor vorgenommenen Änderungen überschreiben, wenn mehrere Benutzer teamübergreifend im Rahmen von Bearbeitungsworkflows zusammenarbeiten.
 
-## Auschecken von Assets {#checking-out-assets}
+## Auschecken von Assets   {#checking-out-assets}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das ausgecheckt werden soll. Sie können auch mehrere Assets zum Auschecken auswählen.
 
