@@ -1,19 +1,19 @@
 ---
-title: Migration zum Cloud-Dienst von Adobe Experience Manager 6.x
-description: Migration zum Cloud-Dienst von Adobe Experience Manager 6.x
+title: Migration zu Cloud Service von Adobe Experience Manager 6.x
+description: Migration zu Cloud Service von Adobe Experience Manager 6.x
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Zu Adobe Experience Manager Assets als Cloud-Dienst wechseln {#move-to-assets-cloud-service}
+# Wechseln zu Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
 -->
 
-## Info zum Migrationswerkzeug {#migration-tool}
+## Über das Migrations-Tool {#migration-tool}
 
 <!-- 
 Link back to information about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets. Document the Assets-specific information here.
@@ -25,19 +25,19 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 
 -->
 
-Mit dem Migrationswerkzeug können Sie Folgendes erreichen:
+Mit dem Migrations-Tool können Sie Folgendes erreichen:
 
-* Konvertieren Sie die vorhandenen Workflow-Modelle in Verarbeitungsprofile, die mit dem Assets Compute Service funktionieren.
-* Entfernen Sie nicht unterstützte Schritte aus den Workflow-Modellen.
-* Deaktivieren Sie Workflow-Starter.
-* Zusammenführen Sie die Konfigurationen nach der Benutzerbestätigung/-überprüfung im vorhandenen Quellcode.
+* Konvertieren vorhandener Workflow-Modelle in Verarbeitungsprofile, die mit dem Assets Compute Service verwendet werden können
+* Entfernen nicht unterstützter Schritte aus den Workflow-Modellen
+* Deaktivieren von Workflow-Launchern
+* Zusammenführen von Konfigurationen – nach der Benutzerbestätigung/-validierung – im vorhandenen Quell-Code
 
-Das Migrationswerkzeug erstellt Verarbeitungsprofile in einem Maven-Modul, die Benutzer auf zwei Arten verwenden können:
+Das Migrations-Tool erstellt Verarbeitungsprofile in einem Maven-Modul, die Benutzer auf zwei Arten verwenden können:
 
-* Zusammenführen zu einem ihrer bestehenden Projekte.
-* Fügen Sie das Modul als neues Untermodul hinzu.
+* Zusammenführen in einem bestehenden Projekt
+* Hinzufügen des Moduls als neues Untermodul
 
-Das Migrationswerkzeug enthält einen Bericht über die vorgenommenen Änderungen und Informationen zu den Änderungen.
+Das Migrations-Tool stellt einen Bericht über die vorgenommenen Änderungen sowie Informationen zu den Änderungen bereit.
 
 <!--  
 
