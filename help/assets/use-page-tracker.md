@@ -1,20 +1,20 @@
 ---
-title: Verwenden von Seiten-Tracker und Einbettungscode in Webseiten
+title: Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Verwenden von Seitenverfolgung und Einbettungscode in Webseiten {#using-page-tracker-and-embed-code-in-web-pages}
+# Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten {#using-page-tracker-and-embed-code-in-web-pages}
 
 Die Seitenverfolgung ist Teil des JavaScript-Codes, den Sie in Code von Websites von Drittanbietern einbeziehen, um es Adobe Analytics zu ermöglichen, die Erfassung von Nutzungsdaten rund um Adobe Experience Manager (AEM) Assets auf diesen Websites zu aktivieren.
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 
-Der folgende Beispielcode zeigt, wie eine Webseite, die sowohl den Seiten-Tracker-Code als auch den Einbettungscode enthält, aussieht:
+Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sowohl den Seitenverfolgungs-Code als auch Einbettungs-Code enthält:
 
 ```
 <!DOCTYPE html>
@@ -56,9 +56,9 @@ Der folgende Beispielcode zeigt, wie eine Webseite, die sowohl den Seiten-Tracke
 </html>
 ```
 
-## Hinzufügen von Seitenverfolgungscode {#adding-page-tracker-code}
+## Hinzufügen von Seitenverfolgungs-Code {#adding-page-tracker-code}
 
-Sie fügen den Seiten-Trackercode im Kopfzeilenabschnitt Ihres Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
+Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
 
 ```xml
  <head>
@@ -76,9 +76,9 @@ Sie fügen den Seiten-Trackercode im Kopfzeilenabschnitt Ihres Website-Codes hin
  </head>
 ```
 
-## Hinzufügen von Einbettungscode {#adding-embed-code}
+## Hinzufügen von Einbettungs-Code   {#adding-embed-code}
 
-Sie fügen den Einbettungscode im Hauptteil Ihres Website-Codes hinzu. Das folgende Codebeispiel zeigt den Einbettungscode, der in einer Webseite enthalten ist:
+Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das folgende Code-Beispiel zeigt den Einbettungs-Code, der in einer Web-Seite enthalten ist:
 
 ```xml
 <body>
