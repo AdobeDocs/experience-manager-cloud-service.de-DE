@@ -2,7 +2,7 @@
 title: Freigeben privater Ordner
 description: Erfahren Sie, wie Sie in Adobe Experience Manager (AEM) Assets einen privaten Ordner erstellen, ihn mit anderen Benutzern teilen und ihnen verschiedene Berechtigungen zuweisen können.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -12,16 +12,16 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-Benutzeroberfläche erstellen, der nur für Sie verfügbar ist. Sie können diesen privaten Ordner auch für andere Benutzer freigeben und diesen Benutzern verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
 
-1. In the Assets console, tap/click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. Klicken oder tippen Sie in der Konsole „Assets“ von der Symbolleiste aus auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Ordner]** aus dem Menü aus.
 1. Geben Sie in das Dialogfeld **[!UICONTROL Ordner hinzufügen]** einen Titel und einen Namen (optional) für den Ordner ein und wählen Sie **[!UICONTROL Privat]** aus.
-1. Tippen/klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird auf der Assets-Benutzeroberfläche erstellt.
+1. Tippen oder klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird auf der Assets-Benutzeroberfläche erstellt.
 1. Um den Ordner gemeinsam mit anderen Benutzern verwenden und Berechtigungen zuweisen zu können, wählen Sie den Ordner aus und klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]**.
 
    >[!NOTE]
    >
-   >Der Ordner ist erst dann für andere Benutzer sichtbar, wenn Sie ihn freigegeben haben.
+   >Der Ordner wird erst dann für andere Benutzer sichtbar, wenn Sie ihn freigeben.
 
-1. In the Folder Properties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. Wählen Sie auf der Seite „Ordnereigenschaften“ einen Benutzer in der Liste **[!UICONTROL Benutzer hinzufügen]** aus, weisen Sie dem Benutzer eine Rolle für den privaten Ordner zu und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    >[!NOTE]
    >
@@ -31,7 +31,7 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
 1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei AEM Assets mit den Anmeldedaten des Benutzers an, um die Benachrichtigungen anzuzeigen.
 1. Tippen/klicken Sie auf das Symbol „Benachrichtigungen“, um eine Liste der Benachrichtigungen zu öffnen.
-1. Klicken/tippen Sie auf den Eintrag für den privaten Ordner, der vom Administrator freigegeben wurde, um den Ordner zu öffnen.
+1. Klicken oder tippen Sie auf den Eintrag für den privaten Ordner, der vom Administrator freigegeben wurde, um den Ordner zu öffnen.
 
 >[!NOTE]
 >
