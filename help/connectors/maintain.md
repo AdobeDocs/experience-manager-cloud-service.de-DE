@@ -1,17 +1,17 @@
 ---
-title: Warten eines AEM Connector
-description: Warten eines AEM Connector
-translation-type: tm+mt
+title: Warten eines AEM-Connectors
+description: Warten eines AEM-Connectors
+translation-type: ht
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 
 ---
 
 
-Warten eines AEM Connector
+Warten eines AEM-Connectors
 ============================
 
-Dieser Artikel enthält Informationen zur Wartung eines AEM Connectors und sollte in Verbindung mit Artikeln zur [Implementierung](implement.md) und zum [Senden](submit.md) von Connectors gelesen werden.
+In diesem Artikel finden Sie nützliche Informationen zum Warten von AEM-Connectoren. Lesen Sie diese zusammen mit den Artikeln zum [Implementieren](implement.md) und [Übermitteln](submit.md) von Connectoren.
 
-Selbst nach der ersten Übermittlung kann es Gründe für einen Partner geben, seinen AEM Connector zu aktualisieren, entweder aufgrund einer neuen Version von AEM oder unabhängig davon - zum Beispiel um Funktionen hinzuzufügen oder Fehler zu beheben. In diesem Artikel wird der Prozess für beide Szenarien erläutert und auch der typische Vorgang eines Kunden zum Überprüfen von Connectors beim Aktualisieren von AEM beschrieben.
+Selbst nach der ersten Übermittlung kann es für einen Partner Gründe geben, seinen AEM-Connector zu aktualisieren, entweder aufgrund der Einführung einer neuen AEM-Version oder unabhängig davon, etwa um Funktionen zu ergänzen oder Fehler zu beheben. In diesem Artikel wird das Verfahren für beide Szenarien erläutert und außerdem das typische Vorgehen eines Kunden zum Überprüfen von Connectoren bei einem Upgrade von AEM beschrieben.
 
-AEM als Cloud-Service-Anwendungen werden täglich mit AEM-Wartungs-Patches aktualisiert, wobei größere Änderungen monatlich während einer Funktionsversion aktiviert werden. Während AEM-Updates abwärtskompatibel sein sollen und daher keine Anwendungen beschädigen, wird Anbieterpartnern empfohlen, regelmäßig zu überprüfen, ob ihre Connectors sich wie erwartet verhalten. Der Zugriff auf ein AEM-Programm/eine AEM-Umgebung wird vom Partnerteam festgelegt.
+AEM as a Cloud Service-Anwendungen werden täglich durch AEM-Wartungs-Patches aktualisiert. Größere Änderungen werden monatlich im Rahmen von Feature-Releases aktiviert. Auch wenn AEM-Updates grundsätzlich abwärtskompatibel sein und somit die Ausführung von Anwendungen nicht beeinträchtigen sollten, wird Anbietern empfohlen, regelmäßig zu überprüfen, ob sich ihre Connectoren erwartungsgemäß verhalten. Der Zugriff auf ein AEM-Programm/eine AEM-Umgebung wird vom Partner-Team festgelegt.
