@@ -1,13 +1,13 @@
 ---
 title: Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups
 description: Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups {#using-quickviews-to-create-custom-pop-ups}
+# Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups  {#using-quickviews-to-create-custom-pop-ups}
 
 Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig von dem von Ihnen verwendeten Viewer, können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
 
@@ -19,7 +19,7 @@ Schnellansichten werden in Dynamic Media von folgenden Viewern unterstützt:
 
 Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zum Erstellen einer Schnellansicht für alle drei unterstützten Viewer identisch.
 
-**So erstellen Sie mit QuickViews benutzerdefinierte Popups**
+**Verwenden von Schnellansichten, um benutzerdefinierte Popups zu erstellen**
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
@@ -28,7 +28,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
    <table>
     <tbody>
     <tr>
-    <td><strong>Derzeit verwendeter Viewer </strong></td>
+    <td><strong>Derzeit verwendeter Viewer</strong></td>
     <td><strong>Führen Sie die folgenden Schritte aus, um die Schnellansicht zu erstellen</strong></td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
    <table>
     <tbody>
     <tr>
-    <td><strong>Derzeit verwendeter Viewer</strong><br />  </td>
+    <td><strong>Derzeit verwendeter Viewer</strong><br /> </td>
     <td><strong>Führen Sie die folgenden Schritte aus, um den Viewer in Ihre Website zu integrieren</strong></td>
     </tr>
     <tr>
@@ -60,20 +60,21 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
     </tr>
     <tr>
     <td>Interaktive Videos<br /> </td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrating an interactive video with your website</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrieren eines interaktiven Videos mit Ihrer Website</a>.<br /> </td>
     </tr>
     <tr>
-    <td>Karussell-Banner</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adding a carousel banner to your website page</a>.<br /> </td>
+    <td>Karussellbanner</td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Hinzufügen eines Karussellbanners zu Ihrer Website</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
 1. Der Viewer, den Sie verwenden, muss jetzt erfahren, wie die Schnellansicht verwendet werden soll.
 
-   Hierzu nutzt der Viewer einen Handler namens `QuickViewActive`.
+   Hierzu nutzt der Viewer einen Handler mit dem Namen `QuickViewActive`.
 
-   **Beispiel** Angenommen, Sie verwenden auf Ihrer Webseite für ein interaktives Bild den folgenden Einbettungscode:
+   **Beispiel**
+Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den folgenden Einbettungs-Code:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -81,7 +82,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Mithilfe des obigen Beispiel für Einbettungscode haben wir den folgenden Code:**
+   **Mit dem obigen Einbettungs-Code-Beispiel erhalten wir folgenden Code:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -94,20 +95,20 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
    })
    ```
 
-   Learn more about `setHandlers()` method at the following:
+   Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
+   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
+   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
 
 1. Jetzt müssen Sie den Handler `quickViewActivate` konfigurieren.
 
-   The `quickViewActivate` handler controls the Quickviews in the viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. The embed code provides mapping for the SKU variable set in the Quickview as well as a sample `loadQuickView` function call.
+   Der Handler `quickViewActivate` steuert die Schnellansichten im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungs-Code stellt die Zuordnung für das SKU-Variablenset in der Schnellansicht sowie ein Beispiel für einen Aufruf der Funktion `loadQuickView` bereit.
 
-   **Variablenzuordnung** Ordnen Sie den in der Schnellansicht enthaltenen SKU-Wert- und allgemeinen Variablen für die Verwendung auf Ihrer Webseite zu:
+   **Variablenzuordnung** Ordnen Sie den in der Schnellansicht enthaltenen SKU-Wert- und allgemeinen Variablen für die Verwendung auf Ihrer Web-Seite zu:
 
    `var *variable1*= inData.*quickviewVariable*`
 
-   Der bereitgestellte Einbettungscode enthält ein Zuordnungsbeispiel für die SKU-Variable:
+   Der bereitgestellte Einbettungs-Code enthält ein Zuordnungsbeispiel für die SKU-Variable:
 
    `var sku=inData.sku`
 
@@ -122,23 +123,23 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
    `loadQuickView(sku)`
 
-   The sample function call assumes the function `loadQuickView()` exists and is accessible.
+   Im Beispiel für einen Funktionsaufruf wird davon ausgegangen, dass die Funktion `loadQuickView()` vorhanden und verfügbar ist.
 
-   Learn more about `quickViewActivate` method at the following:
+   Hier finden Sie weitere Informationen zur Methode `quickViewActivate`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * Interaktive Datenunterstützung im interaktiven Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
+   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
+   * Interaktive Datenunterstützung im interaktiven Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
 
 1. Gehen Sie folgendermaßen vor:
 
    * Entfernen Sie im Einbettungscode die Auskommentierung des Abschnitts „setHandlers“.
    * Ordnen Sie alle weiteren Variablen zu, die in der Schnellansicht enthalten sind.
 
-      * Update the `loadQuickView(sku,*var1*,*var2*)` call if you are adding additional variables.
-   * Create a simple `loadQuickView` () function on page, outside of the viewer.
+      * Aktualisieren Sie den Aufruf `loadQuickView(sku,*var1*,*var2*)`, wenn Sie weitere Variablen hinzufügen.
+   * Erstellen Sie auf der Seite eine einfache `loadQuickView` ()-Funktion außerhalb des Viewers.
 
-      Die folgende Funktion schreibt z. B. den SKU-Wert in die Browserkonsole:
+      Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
 
    ```xml
    function loadQuickView(sku){
@@ -148,7 +149,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
    * Laden Sie eine HTML-Testseite auf einen Webserver hoch und öffnen Sie sie.
 
-      Mit den zugeordneten Variablen aus der Schnellansicht und dem Funktionsaufruf schreibt die Browserkonsole den Variablenwert mithilfe der Beispielfunktion in die Browserkonsole.
+      Mit den zugeordneten Variablen aus der Schnellansicht und dem Funktionsaufruf schreibt die Browser-Konsole den Variablenwert mithilfe der Beispielfunktion in die Browser-Konsole.
 
 
 
@@ -194,7 +195,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
    Einige Viewer, wie der interaktive Video-Viewer, unterstützen die Anzeige im Vollbildmodus. Wenn Sie das Popupfenster jedoch verwenden, wie in den vorherigen Schritten beschrieben, wird es im Vollbildmodus hinter dem Viewer angezeigt.
 
-   Damit das Popupfenster sowohl im Standard- als auch im Vollbildmodus im Vordergrund angezeigt wird, müssen Sie das Popup mit dem Viewer-Container verbinden. Hierzu können Sie eine zweite Handlermethode nutzen, `initComplete`.
+   Damit das Popupfenster sowohl im Standard- als auch im Vollbildmodus im Vordergrund angezeigt wird, müssen Sie das Popup mit dem Viewer-Container verbinden. Hierzu können Sie eine zweite Handler-Methode nutzen, `initComplete`.
 
    Der Handler `initComplete` wird aufgerufen, nachdem der Viewer initialisiert wurde.
 
@@ -202,12 +203,12 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
    "initComplete":function() { code block }
    ```
 
-   Learn more about `init()` method at the following:
+   Hier finden Sie weitere Informationen zur Methode `init()`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
+   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
 
-1. Um das in den vorherigen Schritten beschriebene Popupfenster mit dem Viewer zu verbinden, verwenden Sie den folgenden Code: 
+1. Um das in den vorherigen Schritten beschriebene Popup-Fenster mit dem Viewer zu verbinden, verwenden Sie den folgenden Code:
 
    ```xml
    "initComplete":function() {
@@ -253,5 +254,5 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
    `s7interactiveimageviewer.init()`
 
-   Nachdem Sie den Viewer in Ihre Hostseite eingebettet haben, prüfen Sie, ob die Viewer-Instanz erstellt wird und die Handler geladen werden, bevor der Viewer mit `init()` () aufgerufen wird.
+   Nachdem Sie den Viewer in Ihre Host-Seite eingebettet haben, prüfen Sie, ob die Viewer-Instanz erstellt wird und die Handler geladen werden, bevor der Viewer mit `init()` aufgerufen wird.
 
