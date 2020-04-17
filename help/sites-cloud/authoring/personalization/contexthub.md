@@ -1,13 +1,13 @@
 ---
-title: Seitenvorschau mit ContextHub-Daten
+title: Vorschau von Seiten mit ContextHub-Daten
 description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Seitenvorschau mit ContextHub-Daten  {#previewing-pages-using-contexthub-data}
+# Vorschau von Seiten mit ContextHub-Daten {#previewing-pages-using-contexthub-data}
 
 In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können mithilfe der Leiste Store-Daten bearbeitet werden. Die ContextHub-Symbolleiste eignet sich besonders für die Vorschau von Inhalten, die durch Daten im ContextHub Store gesteuert werden.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
 
@@ -26,7 +26,7 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 1. Klicken oder tippen Sie bei zur Bearbeitung geöffneter Seite auf die Vorschauoption.
 
-   ![Schaltfläche &quot;Vorschau&quot;](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![Die Vorschauschaltfläche](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. Klicken oder tippen Sie auf das ContextHub-Symbol, um die Symbolleiste einzublenden.
 
@@ -36,15 +36,15 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
 
-### Inhalt der Symbolleiste {#toolbar-content}
+### Inhalt der Symbolleiste   {#toolbar-content}
 
-Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
+Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub-Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
 
-![ContextHub-Personas](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![ContextHub-Rollen](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### Popup-Inhalt {#popup-content}
 
-Einige UI-Module zeigen eine Popup-Überlagerung an, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzlich zu den in der Symbolleiste verfügbaren Informationen weitere Daten.
+Einige Benutzeroberflächenmodule zeigen ein überlagertes Popup an, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzlich zu den in der Symbolleiste verfügbaren Informationen weitere Daten.
 
 ![ContextHub-Profilinformationen](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
@@ -52,8 +52,8 @@ Einige UI-Module zeigen eine Popup-Überlagerung an, wenn darauf geklickt oder g
 
 In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Steuern diese Store-Daten Seiteninhalte, können Sie mit dem Formular Änderungen vornehmen, die sich dann in den Seiteninhalten widerspiegeln.
 
-### Vollbildmodus {#fullscreen-mode}
+### Vollbildmodus   {#fullscreen-mode}
 
-In einigen Popup-Overlays ist ein Symbol enthalten, das beim Anklicken oder Antippen dafür sorgt, dass der Popup-Inhalt den ganzen Bildschirm oder das gesamte Browserfenster ausfüllt.
+Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
 
-![Schaltfläche &quot;Vollbild&quot;](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
+![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
