@@ -3,7 +3,7 @@ title: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 description: AEM Assets-Cloud-Dienst mit Markenportal konfigurieren
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
+source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
 
@@ -152,9 +152,9 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 >[!CAUTION]
 >
->Es muss nur eine IMS-Konfiguration vorhanden sein, die den Health Check besteht. Erstellen Sie nicht mehrere IMS-Konfigurationen.
+>Sie müssen nur eine IMS-Konfiguration haben. Erstellen Sie nicht mehrere IMS-Konfigurationen.
 >
->Wenn die Konfiguration die Statusprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
+>Vergewissern Sie sich, dass die IMS-Konfiguration die Statusprüfung besteht. Wenn die Konfiguration die Statusprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
 
 
 
