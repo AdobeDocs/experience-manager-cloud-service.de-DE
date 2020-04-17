@@ -1,13 +1,13 @@
 ---
-title: Benutzerdefinierte Code-Qualitätsregeln - Cloud-Dienste
-description: Benutzerdefinierte Code-Qualitätsregeln - Cloud-Dienste
-translation-type: tm+mt
+title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
+description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
+translation-type: ht
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 ---
 
 
-# Understanding Custom Code Quality Rules {#custom-code-quality-rules}
+# Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität {#custom-code-quality-rules}
 
 
 Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf bewährten Verfahren des AEM Engineering basieren.
@@ -260,7 +260,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Seit**: Version 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Pfadgebundene Servlets können keine standardmäßigen JCR-Zugriffssteuerungselemente verwenden, sodass besonders strenge Sicherheitsmaßnahmen erforderlich sind. Statt pfadgebundene Servlets zu verwenden, wird empfohlen, Knoten im Repository zu erstellen und Servlets nach Ressourcentyp zu registrieren.
+Wie in der [Sling-Dokumentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html) beschrieben, sollten Servlets nicht über Pfade verknüpft werden. Pfadgebundene Servlets können keine standardmäßigen JCR-Zugriffssteuerungselemente verwenden, sodass besonders strenge Sicherheitsmaßnahmen erforderlich sind. Statt pfadgebundene Servlets zu verwenden, wird empfohlen, Knoten im Repository zu erstellen und Servlets nach Ressourcentyp zu registrieren.
 
 #### Nicht konformer Code {#non-compliant-code-5}
 
