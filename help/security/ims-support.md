@@ -1,94 +1,94 @@
 ---
-title: IMS-Unterstützung für Adobe Experience Manager als Cloud-Dienst
-description: IMS-Unterstützung für Adobe Experience Manager als Cloud-Dienst
+title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
+description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
 
 ---
 
 
-# IMS Support for Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
+# IMS-Unterstützung für Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
 ## Einführung {#introduction}
 
-* AEM als Cloud-Dienst umfasst die Unterstützung der Admin-Konsole für AEM-Instanzen und für die kurze Authentifizierung durch das Adobe Identity Management System (IMS).
-* Die Admin-Konsole ermöglicht Administratoren die zentrale Verwaltung aller Experience Cloud-Benutzer.
-* Benutzer und Gruppen können Produktinstanzen zugewiesen werden, die mit AEM als Cloud-Dienstinstanzen verknüpft sind, sodass sie sich bei dieser Instanz anmelden können.
+* AEM as a Cloud Service umfasst die Unterstützung der Admin Console für AEM-Instanzen und die auf dem Adobe Identity Management System (kurz IMS) basierende Authentifizierung.
+* Die Admin Console ermöglicht Administratoren die zentrale Verwaltung aller Experience Cloud-Benutzer.
+* Benutzer und Gruppen können Produktprofilen zugeordnet werden, die mit AEM as a Cloud Service-Instanzen verknüpft sind, sodass sie sich bei dieser Instanz anmelden können.
 
 ## Wichtige Highlights {#key-highlights}
 
-AEM als Cloud-Service-Angebot unterstützt nur die IMS-Authentifizierung von Autoren-, Admin- und Dev-Benutzern. Die Unterstützung externer Endbenutzer von Kundensites wie Site-Besuchern wird dadurch nicht Angebot.
+AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Es bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.
 
-* Die Admin-Konsole repräsentiert Kunden als IMS-Organisationen, Autoren- und Veröffentlichungsinstanzen in einer Umgebung als Produktkontextinstanzen. Dadurch können System- und Produktadministratoren den Zugriff auf Instanzen verwalten.
-* Mit den Produkt-Profilen in der Admin-Konsole wird festgelegt, auf welche Instanzen ein Benutzer zugreifen kann.
-* Kunden können ihre eigenen SAML 2-kompatiblen Identitätsanbieter (kurz IDP) für Single-Sign-On verwenden.
-* Es werden nur Enterprise IDs oder Federated IDs für Single-Sign-On des Kunden unterstützt, keine persönlichen Adobe IDs.
+* Die Admin Console repräsentiert Kunden als IMS-Organisationen, Autoren- und Veröffentlichungsinstanzen in einer Umgebung als Produktkontextinstanzen. Dadurch können System- und Produktadministratoren den Zugriff auf Instanzen verwalten.
+* Produktprofile in der Admin Console legen fest, auf welche Instanzen ein Benutzer zugreifen kann.
+* Kunden können ihre eigenen SAML 2-kompatiblen Identitätsanbieter (kurz IDP) für Single-Sign-On verwenden.
+* Nur Enterprise IDs oder Federated IDs (für Single Sign-On beim Kunden) werden unterstützt, jedoch keine persönlichen Adobe IDs.
 
 ## Architektur {#architecture}
 
-Die IMS-Authentifizierung funktioniert mit dem OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Sobald ein Benutzer zu IMS hinzugefügt wurde und über eine Adobe-Identität verfügt, kann er sich mit den IMS-Anmeldeinformationen beim AEM-Autorendienst anmelden.
+Die IMS-Authentifizierung verwendet das OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Sobald ein Benutzer zu IMS hinzugefügt wurde und über eine Adobe-Identität verfügt, kann er sich mit den IMS-Anmeldeinformationen beim AEM-Autorendienst anmelden.
 
-Der Anmeldefluss des Benutzers wird unten angezeigt, der Benutzer wird zu IMS und optional zum Kunden-IDP für die einmalige Anmeldung umgeleitet und dann zurück zu AEM weitergeleitet.
+Die Schritte zur Benutzeranmeldung werden unten gezeigt. Der Benutzer wird zu IMS und optional zum Kunden-IDP für SSO und anschließend zurück zu AEM weitergeleitet.
 
 ![IMS-Architektur](/help/security/assets/ims1.png)
 
 ## Einrichtung {#how-to-set-up}
 
-### Onboarding Organizations to Adobe Admin Console {#onboarding-orgs-to-adobe-admin-console}
+### Onboarding von Organisationen zur Admin Console {#onboarding-orgs-to-adobe-admin-console}
 
-Der Kunde, der sich bei der Adobe Admin Console anmeldet, ist eine Voraussetzung für die Verwendung von Adobe IMS für die AEM-Authentifizierung.
+Das Onboarding von Kunden zur Adobe Admin Console ist eine Voraussetzung für die Verwendung von Adobe IMS zur AEM-Authentifizierung.
 
-Als ersten Schritt müssen Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden als IMS-Organisationen in der [Adobe Admin-Konsole](https://helpx.adobe.com/de/enterprise/using/admin-console.html) dargestellt. Dies ist das Portal, das Adobe-Kunden verwenden, um ihre Produktberechtigungen für ihre Benutzer und Gruppen zu verwalten.
+Als ersten Schritt müssen Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt. Dies ist das Portal, das Adobe-Kunden verwenden, um ihre Produktberechtigungen für ihre Benutzer und Gruppen zu verwalten.
 
-AEM-Kunden sollten bereits über eine Organisation verfügen. Im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin-Konsole zur Verwaltung von Benutzerberechtigungen und zum Zugriff bereitgestellt.
+Für AEM-Kunden sollte bereits eine Organisation bereitgestellt sein. Im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen zur Verwaltung der Benutzerberechtigungen und -zugriffe in der Admin Console bereitgestellt.
 
 Sobald ein Kunde als IMS-Organisation existiert, muss er sein System wie folgt konfigurieren:
 
-![IMS-Einstieg](/help/security/assets/ims2.png)
+![IMS-Onboarding](/help/security/assets/ims2.png)
 
-1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung beim Cloud Manager können die Systemadministratoren entweder AEM-Programm und -Umgebung bereitstellen oder für administrative Aufgaben zur Admin-Konsole navigieren.
-1. Der Systemadministrator beansprucht eine Domäne, um das Eigentum an der jeweiligen Domäne zu bestätigen (z. B. acme.com)
-1. Der Systemadministrator richtet Benutzerverzeichnisse ein
-1. Der Systemadministrator führt die IDP-Konfiguration in der Admin-Konsole aus, um Single-Sign-On einzurichten.
-1. Der AEM-Administrator verwaltet die lokalen Gruppen und Berechtigungen wie gewohnt.
+1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung bei Cloud Manager können die Systemadministratoren entweder AEM-Programme und -Umgebungen bereitstellen oder für Verwaltungsaufgaben zur Admin Console navigieren.
+1. Der Systemadministrator beansprucht eine Domäne, um die Eigentümerschaft der Domäne zu bestätigen (beispielsweise acme.com).
+1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
+1. Der Systemadministrator führt die IDP-Konfiguration in der Admin Console aus, um Single-Sign-On einzurichten.
+1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
 
-Die Grundlagen des Adobe-Identitätsmanagements einschließlich der IDP-Konfiguration werden [hier](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html)behandelt.
+Die Grundlagen von Adobe Identity Management einschließlich der IDP-Konfiguration werden [hier](https://helpx.adobe.com/de/enterprise/using/set-up-identity.html) behandelt.
 
-Die Verwendung von Enterprise Administration und Admin Console wird [hier](https://helpx.adobe.com/de/enterprise/managing/user-guide.html)behandelt.
+Die Verwaltung von Unternehmen und die Verwendung der Admin Console werden [hier](https://helpx.adobe.com/de/enterprise/managing/user-guide.html) behandelt.
 
-### Onboarding Users in Admin Console {#onboarding-users-in-admin-console}
+### Onboarding von Benutzern zur Admin Console {#onboarding-users-in-admin-console}
 
-Es gibt drei Möglichkeiten, Benutzer an Bord zu nehmen, je nach Größe des Kunden und dessen Präferenz: Erstellen Sie Benutzer manuell in der Admin-Konsole, laden Sie eine CSV-Datei hoch oder synchronisieren Sie Benutzer aus dem Unternehmensverzeichnis des Kunden.
+Je nach der Größe des Kunden und den bevorzugten Einstellungen gibt es drei Möglichkeiten, Benutzer hinzuzufügen: Manuelles Erstellen von Benutzern in der Admin Console, Hochladen einer .csv-Datei oder Synchronisieren von Benutzern aus dem Active Directory des Unternehmens des Kunden.
 
 **Manuelles Hinzufügen über die Admin Console-Benutzeroberfläche**
 
-Benutzer und Gruppen können manuell in der Admin Console-Benutzeroberfläche erstellt werden. Diese Methode kann verwendet werden, wenn nicht viele Benutzer zu verwalten sind. Beispielsweise weniger als 50 AEM-Benutzer oder wenn Sie diese Methode bereits zur Verwaltung anderer Adobe-Produkte wie Analytics-, Zielgruppe- oder Creative Cloud-Anwendungen verwenden.
+Benutzer und Gruppen können manuell in der Admin Console-Benutzeroberfläche erstellt werden. Diese Methode kann verwendet werden, wenn nur wenige Benutzer verwaltet werden müssen. Zum Beispiel bei weniger als 50 AEM-Benutzern oder wenn Sie die Methode bereits zur Verwaltung anderer Adobe-Produkte wie Analytics, Target oder Creative Cloud-Programmen verwenden.
 
-![Benutzeranmeldung](/help/security/assets/ims3.png)
+![Onboarding von Benutzern](/help/security/assets/ims3.png)
 
-**Datei-Upload in der Admin-Konsole**
+**Datei-Upload in der Admin Console-Benutzeroberfläche**
 
-For easy handling of user creation, a `.csv` file can be uploaded for adding users in bulk.
+Zur einfachen Handhabung der Benutzererstellung können Sie eine `.csv`-Datei hochladen, um eine große Anzahl von Benutzern hinzuzufügen.
 
 ![Datei-Upload](/help/security/assets/ims4.png)
 
 **Tool zur Benutzersynchronisierung**
 
-Mit User Sync Tool (UST kurz) können unsere Unternehmenskunden Adobe-Benutzer mithilfe von Active Directory erstellen und verwalten. Dies funktioniert auch bei anderen getesteten OpenLDAP-Ordnerdiensten. Die Zielgruppe-Benutzer sind IT-Identitätsadministratoren (Enterprise Directory oder System Admins), die das Tool installieren und konfigurieren können. Das Open-Source-Tool ist anpassbar, sodass Sie es an Ihre eigenen Anforderungen anpassen können.
+Mit dem Tool zur Benutzersynchronisierung (kurz UST) können unsere Unternehmenskunden Adobe-Benutzer mithilfe von Active Directory erstellen und verwalten. Dies funktioniert auch für andere getestete OpenLDAP-Verzeichnisdienste. Die Zielbenutzer sind IT-Identitätsadministratoren (Enterprise-Verzeichnis- oder Systemadministratoren), die das Tool installieren und konfigurieren können. Das Open Source-Tool ist anpassbar, sodass Sie das Tool an die eigenen Anforderungen anpassen können.
 
-Wenn die Benutzersynchronisierung ausgeführt wird, ruft sie eine Liste von Benutzern aus dem Active Directory des Unternehmens ab und vergleicht sie mit der Liste der Benutzer in der Admin-Konsole.  Anschließend ruft es die Adobe User Management-API auf, damit die Admin Console mit dem Verzeichnis der Organisation synchronisiert wird. Der Änderungsfluss ist nur eine Möglichkeit. Änderungen, die in der Admin-Konsole vorgenommen wurden, werden nicht in den Ordner verschoben.
+Wenn die Benutzersynchronisierung ausgeführt wird, ruft das Tool eine Liste der Benutzer aus dem Active Directory des Unternehmens ab und vergleicht sie mit der Liste der Benutzer in der Admin Console.  Anschließend ruft es die Adobe User Management-API auf, damit die Admin Console mit dem Verzeichnis der Organisation synchronisiert wird. Der Änderungsfluss ist einseitig. Änderungen, die in der Admin Console vorgenommen wurden, werden nicht in das Verzeichnis übertragen.
 
-Das Tool ermöglicht es dem Systemadministrator, Benutzergruppen im Kundenverzeichnis der Produktkonfiguration und Benutzergruppen in der Admin-Konsole zuzuordnen.
+Das Tool ermöglicht es dem Systemadministrator, Benutzergruppen im Kundenverzeichnis mit der Produktkonfiguration und den Benutzergruppen in der Admin Console abzubilden.
 
-To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [User Management API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
+Um die Benutzersynchronisierung einzurichten, muss die Organisation Anmeldeinformationen erstellen. Die Schritte hierfür sind dieselben wie bei der [User Management-API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
 ![Tool zur Benutzersynchronisierung](/help/security/assets/ims5.png)
 
-User Sync Tool is distributed through the Adobe Github repository [at this location](https://github.com/adobe-apiplatform/user-sync.py/releases/latest).
+Das Tool zur Benutzersynchronisierung steht über das Adobe Github-Repository [an diesem Speicherort](https://github.com/adobe-apiplatform/user-sync.py/releases/latest) zur Verfügung.
 
 >[!NOTE]
 >
-> Eine Vorabversion **2.4RC1** ist mit Unterstützung der dynamischen Gruppenbildung verfügbar und kann [hier](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)gefunden werden.
+> Eine Vorabversion **2.4RC1** ist mit Unterstützung der dynamischen Gruppenbildung verfügbar und kann [hier](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) gefunden werden.
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
@@ -96,23 +96,23 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie [hier](https://g
 
 **Dokumentation zur Benutzersynchronisierung**
 
-Weitere Informationen finden Sie in der [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/en/) .
+Weitere Informationen finden Sie in der [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/en/).
 
-The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+Das Tool zur Benutzersynchronisierung muss mit dem Verfahren [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) als Adobe I/O-Client-UMAPI registriert werden.
 
-Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
+Die Dokumentation zur Adobe I/O-Konsole finden Sie [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 
-The User Management API that is used by the User Sync Tool is covered [here](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+Die User Management-API, die vom Tool zur Benutzersynchronisierung verwendet wird, wird [hier](https://www.adobe.io/apis/cloudplatform/umapi-new.html) erläutert.
 
 ## Konfiguration von Adobe Experience as a Cloud Service {#aem-configuration}
 
 >[!NOTE]
 >
->Die erforderliche AEM IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebung und -Instanzen bereitgestellt werden. Der Administrator kann ihn jedoch entsprechend seinen Anforderungen nach der [hier](/help/implementing/deploying/overview.md)beschriebenen Methode ändern.
+>Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebungen und -Instanzen bereitgestellt werden. Der Administrator kann sie jedoch entsprechend seinen Anforderungen nach der [hier](/help/implementing/deploying/overview.md) beschriebenen Methode ändern.
 
-Die erforderliche AEM IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebung und -Instanzen bereitgestellt werden.  Kundenadministratoren können einen Teil der Konfiguration gemäß ihren Anforderungen ändern
+Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die AEM-Umgebungen und -Instanzen bereitgestellt werden.  Kundenadministratoren können einen Teil der Konfiguration gemäß ihren Anforderungen ändern.
 
-Der allgemeine Ansatz besteht darin, Adobe IMS als OAuth-Anbieter zu konfigurieren. Der **Standard-Synchronisations-Handler für Apache Jackrabbit Oak** kann wie bei der LDAP-Synchronisierung geändert werden.
+Der allgemeine Ansatz besteht darin, Adobe IMS als OAuth-Anbieter zu konfigurieren. Der **Apache Jackrabbit Oak Standard Sync Handler** kann wie bei der LDAP-Synchronisierung geändert werden.
 
 Nachfolgend sind die wichtigsten OSGI-Konfigurationen aufgeführt, die geändert werden müssen, um Eigenschaften wie die automatische Mitgliedschaft für Benutzer oder Gruppenzuordnungen zu ändern.
 
@@ -122,27 +122,27 @@ Nachfolgend sind die wichtigsten OSGI-Konfigurationen aufgeführt, die geändert
 
 ### Verwalten von Produkten und Benutzerzugriff in der Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wenn sich der Produktadministrator bei der Admin-Konsole anmeldet, sehen sie mehrere Instanzen des AEM Managed Services-Produktkontexts wie unten dargestellt:
+Wenn sich der Produktadministrator bei der Admin Console anmeldet, sieht er wie unten gezeigt mehrere Instanzen des AEM Managed Services-Produktkontexts:
 
-![Instanzanmeldung](/help/security/assets/ims6.png)
+![Anmeldung von Instanzen](/help/security/assets/ims6.png)
 
-In diesem Beispiel umfasst die Organisation **AEM-MS-Onboard** 32 Instanzen, die verschiedene Topologien und Umgebungen wie „Stage“ oder „Prod“ umfassen.
+In diesem Beispiel hat **AEM-MS-Onboard** der Organisation 32 Instanzen mit unterschiedlichen Topologien und Umgebungen wie Staging oder Produktion.
 
-![Instanzen login2](/help/security/assets/ims7.png)
+![Anmeldung von Instanzen2](/help/security/assets/ims7.png)
 
-Unter jeder Produktkontextinstanz werden zugehörige Produkt-Profil angezeigt. Mit diesen Profilen wird Benutzern und Gruppen der Zugriff mit den erforderlichen Berechtigungen zugewiesen.
+Unter jeder Produktkontextinstanz gibt es zugehörige Produktprofile. Mit diesen Produktprofilen wird Benutzern und Gruppen der Zugriff mit den erforderlichen Berechtigungen zugewiesen.
 
 Das Profil **Administrator_xxx** wird verwendet, um Administratorberechtigungen in der zugehörigen AEM-Instanz zu gewähren, während das Profil **User_xxx** zum Hinzufügen regulärer Benutzer verwendet wird.
 
-Alle Benutzer und Gruppen, die im Rahmen dieses Profils hinzugefügt werden, können sich wie im folgenden Beispiel bei dieser Instanz anmelden:
+Alle unter diesem Produktprofil hinzugefügten Benutzer und Gruppen können sich wie im Beispiel unten gezeigt bei dieser Instanz anmelden:
 
-![Produkt-Profil](/help/security/assets/ims8.png)
+![Produktprofil](/help/security/assets/ims8.png)
 
-### Anmelden bei Adobe Experience Manager als Cloud-Dienst (#login-to-aem)
+### Anmelden bei Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
-**Anmeldung beim lokalen Administrator**
+**Lokale Administratoranmeldung**
 
-AEM kann weiterhin lokale Anmeldungen für Admin-Benutzer unterstützen. Auf dem Anmeldebildschirm können Sie sich lokal anmelden:
+AEM kann lokale Anmeldungen für Administratoren weiterhin unterstützen. Der Anmeldebildschirm bietet eine Option zur lokalen Anmeldung:
 
 ![Lokale Anmeldung](/help/security/assets/ims9.png)
 
@@ -150,27 +150,31 @@ AEM kann weiterhin lokale Anmeldungen für Admin-Benutzer unterstützen. Auf dem
 
 **IMS-basierte Anmeldung**
 
-Für andere Benutzer kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Benutzer klicken wie unten gezeigt auf die Schaltfläche Mit Adobe anmelden:
+Für andere Benutzer kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Benutzer klicken wie unten gezeigt auf die Schaltfläche „Mit Adobe anmelden“:
 
 ![IMS-Anmeldung](/help/security/assets/ims10.png)
 
-Sie werden dann zum IMS-Anmeldebildschirm umgeleitet und müssen ihre Anmeldeinformationen eingeben:
 
-![IMS-Anmeldung2](/help/security/assets/ims11.png)
+>[!NOTE]
+> Jeder Benutzer, der in IMS erstellt wurde, kann mit der Adobe ID oder der Federated ID erstellt werden. Wenn ein Benutzer mit der Adobe-ID eingerichtet wird, wird er mithilfe des Identitätsanbieters seiner Firma für die Anmeldung authentifiziert.
 
-![IMS-Anmeldung3](/help/security/assets/ims12.png)
+Anschließend werden sie zum IMS-Anmeldebildschirm weitergeleitet und müssen ihre Anmeldeinformationen eingeben:
+
+![IMS Login2](/help/security/assets/ims11.png)
+
+![IMS Login3](/help/security/assets/ims12.png)
 
 Wenn während der Ersteinrichtung der Admin Console Federated IDP konfiguriert wurde, wird der Benutzer zum Kunden-IDP für die einmalige Anmeldung weitergeleitet:
 
-![IMS-Anmeldung4](/help/security/assets/ims13.png)
+![IMS Login4](/help/security/assets/ims13.png)
 
 Sobald die Authentifizierung abgeschlossen ist, wird der Benutzer zurück zu AEM weitergeleitet und angemeldet:
 
-![IMS-Anmeldung5](/help/security/assets/ims14.png)
+![IMS Login5](/help/security/assets/ims14.png)
 
-### Verwalten von Berechtigungen und Zugriffssteuerungslisten in Adobe Experience Manager als Cloud-Dienst {#managing-permissions-in-aem}
+### Verwalten von Berechtigungen und Zugriffssteuerungslisten (ACLs) in Adobe Experience Manager as a Cloud Service {#managing-permissions-in-aem}
 
-Die Zugriffssteuerungslisten und Berechtigungen werden weiterhin in AEM verwaltet. Die vom IMS synchronisierten Benutzergruppen können lokalen Gruppen zugewiesen werden, in denen ACLs und Berechtigungen definiert sind.
+Die Zugriffssteuerungslisten (ACLs) und Berechtigungen werden weiterhin in AEM verwaltet. Die vom IMS synchronisierten Benutzergruppen können lokalen Gruppen zugewiesen werden, in denen ACLs und Berechtigungen definiert sind.
 
 Im Beispiel unten werden der lokalen Gruppe **Dam_Users** synchronisierte Gruppen hinzugefügt.
 
@@ -182,10 +186,61 @@ Wenn sich der Benutzer anmeldet, werden die Gruppenmitgliedschaften wie unten da
 
 ![ACL2](/help/security/assets/ims16.png)
 
-In AEM können die mit IMS synchronisierten Benutzergruppen als Mitglieder zu bestehenden lokalen Gruppen wie **DAM-Benutzern** hinzugefügt werden.
+In AEM können die aus IMS synchronisierten Benutzergruppen vorhandenen lokalen Gruppen (z. B. **DAM-Benutzer**) als Mitglieder hinzugefügt werden.
 
 ![ACL3](/help/security/assets/ims17.png)
 
-Wie unten gezeigt, erbt die Gruppe **AEM-GRP_008** die Berechtigungen von **DAM-Benutzern**. So können Berechtigungen für synchronisierte Gruppen effektiv verwaltet werden. Diese Option wird häufig auch bei der LDAP-basierten Authentifizierungsmethode verwendet.
+Wie unten gezeigt, erbt die Gruppe **AEM-GRP_008** die Berechtigungen und Rechte von **DAM-Benutzer**. Dies ist eine effektive Möglichkeit zur Verwaltung von Berechtigungen für synchronisierte Gruppen und wird häufig auch in der LDAP-basierten Authentifizierungsmethode verwendet.
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### Zugriff auf Cloud Manager {#accessing-cloud-manager}
+
+Um auf Cloud Manager oder AEM als Cloud-Service-Umgebung zugreifen zu können, müssen Sie Profilen des Cloud Manager-Produkts zugewiesen sein.
+
+Cloud Manager-Produkt umfasst die folgenden Profile:
+
+* Business Owner
+* Bereitstellungsmanager
+* Programmmanager
+* Entwickler
+* Integrationen
+
+>[!NOTE]
+>Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit bestimmten Berechtigungen, vorkonfigurierten Aufgaben oder Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+
+**Schritte zum Hinzufügen eines Benutzers**
+
+1. Hinzufügen eines Benutzers auf ein bestimmtes Profil entweder über den Bildschirm eines vorhandenen Benutzers oder über einen neuen Benutzerbildschirm.
+
+1. Alternativ können Sie einen Benutzer auch über den Bildschirm &quot; **Übersicht** &quot;hinzufügen, wie in der folgenden Abbildung dargestellt.
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >Sie können einem Benutzer mehr als ein Profil zuweisen, wie in der folgenden Abbildung dargestellt.
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. Nachdem Sie zum entsprechenden Profil hinzugefügt wurden, sollten Sie über [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) oben rechts in der Benutzeroberfläche auf die entsprechenden Mieter in Cloud Manager zugreifen können.
+
+
+### Zugriff auf eine Instanz in AEM als Cloud-Dienst {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>Die im vorherigen Abschnitt erwähnten Schritte müssen bereits abgeschlossen sein, bevor Sie Zugriff auf eine Instanz in AEM als Cloud-Dienst erhalten.
+
+Um Zugriff auf eine AEM-Instanz in der **Admin-Konsole** zu haben, sollten Sie das Cloud Manager-Programm und die Umgebung im Programm in der Produkt-Liste der **Admin-Konsole** sehen.
+
+Im folgenden Screenshot sehen Sie beispielsweise zwei verfügbare Umgebung: *dev author* und a *publish*.
+
+![ACL3](/help/security/assets/ims19.png)
+
+Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des entsprechenden Cloud-Service-Produkts hinzugefügt werden.
+
+Jede Autoreninstanz verfügt über einen AEM-Administrator und ein AEM-Profil für Benutzer und jede Instanz im Veröffentlichungsmodus über ein AEM-Profil. Sie können nach Bedarf weitere Profil hinzufügen.
+
+Um Zugriff auf die AEM-Instanz auf Administratorebene zu erhalten, fügen Sie den Benutzer dem AEM-Administrator-Profil für das jeweilige Produkt hinzu.
+
