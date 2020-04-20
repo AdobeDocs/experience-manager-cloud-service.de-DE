@@ -2,7 +2,7 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -293,11 +293,9 @@ Bitte beachten Sie Folgendes:
 
 * Aufgaben, für die möglicherweise zusätzliche Arbeitsschritte erforderlich sind:
 
-   * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
-
    * Erstellen Sie neue Varianten von `ContentFragment` zur Aktualisierung der Datenstruktur.
 
-   * Beim Entfernen vorhandener Varianten wird die Datenstruktur nicht aktualisiert.
+   * Wenn Sie vorhandene Varianten durch ein Element entfernen, `ContentElement.removeVariation()`werden die globalen Datenstrukturen, die der Änderung zugewiesen sind, nicht aktualisiert. Um sicherzustellen, dass diese Datenstrukturen synchron bleiben, verwenden Sie `ContentFragment.removeVariation()` stattdessen die Option, mit der eine Variation global entfernt wird.
 
 ## Clientseitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-client-side}
 
@@ -315,84 +313,18 @@ Beachten Sie Folgendes
 
 ## Bearbeitungssitzungen {#edit-sessions}
 
-Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment in einer der Editor-Seiten öffnet. Die Bearbeitungssitzung ist beendet, wenn der Benutzer den Editor durch Auswählen von **Speichern** oder **Abbrechen** verlässt.
+>[!CAUTION]
+>
+>Bitte beachten Sie diese Hintergrundinformationen. Sie sollten hier nichts ändern (da es im Repository als *privater Bereich* gekennzeichnet ist), aber es kann in einigen Fällen hilfreich sein, zu verstehen, wie die Dinge unter der Haube funktionieren.
 
-### Voraussetzungen {#requirements}
+Die Bearbeitung eines Inhaltsfragments, das mehrere Ansichten umfassen kann (= HTML-Seiten), ist atomisch. Da die atomaren Bearbeitungsfunktionen für mehrere Ansichten kein typisches AEM-Konzept sind, verwenden Inhaltsfragmente eine so genannte *Bearbeitungssitzung*.
 
-Für das Steuern einer Bearbeitungssitzung gelten folgende Voraussetzungen:
+Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment im Editor öffnet. Die Bearbeitungssitzung ist beendet, wenn der Benutzer den Editor durch Auswählen von **Speichern** oder **Abbrechen** verlässt.
 
-* Die Bearbeitung eines Inhaltsfragments, das mehrere Ansichten umfassen kann (= HTML-Seiten), sollte atomar sein.
+Technisch gesehen werden alle Änderungen an *Live* -Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung für *Live* -Inhalte ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medienelementen).
 
-* Das Bearbeiten sollte außerdem *transaktional* sein. Am Ende der Bearbeitungssitzung müssen die Änderungen entweder übergeben (gespeichert) oder zurückgesetzt (abgebrochen) werden.
-
-* Grenzfälle müssen richtig gehandhabt werden, z. B. wenn ein Benutzer eine Seite durch manuelle Eingabe einer URL oder globale Navigation verlässt.
-
-* Eine regelmäßige automatische Speicherung (alle x Minuten) sollte verfügbar sein, um den Verlust von Daten zu vermeiden.
-
-* Falls ein Inhaltsfragment von zwei Benutzern gleichzeitig bearbeitet wird, sollten diese die jeweiligen Änderungen nicht gegenseitig überschreiben.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Verlassen einer Seite
-
-   * Falls eine Bearbeitungssitzung vorhanden ist und die Änderungen nicht persistent gespeichert wurden, wird ein Modal-Bestätigungsdialogfeld angezeigt, um den Benutzer über potenziell verloren gegangene Daten zu benachrichtigen und ihm zu ermöglichen, auf der Seite zu bleiben.
+Es gibt einige Sicherheitsmaßnahmen für Fallschutzsysteme an den Kanten. Wenn der Benutzer beispielsweise versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
+Beachten Sie, dass zwei Benutzer dasselbe Inhaltsfragment gleichzeitig bearbeiten können und daher alle anderen Änderungen überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Kassengang* der DAM-Verwaltung auf das Fragment angewendet wird.
 
 ## Beispiele {#examples}
 
