@@ -2,14 +2,14 @@
 title: Adobe Experience Manager als Content Fragments-Unterstützung für Cloud-Dienste in der Assets-HTTP-API
 description: Erfahren Sie mehr über Adobe Experience Manager als Unterstützung für Inhaltsfragmente der Cloud in der Asset-HTTP-API.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API{#content-fragments-support-in-aem-assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 >[!NOTE]
 >
@@ -27,11 +27,12 @@ Mit der API können Sie Adobe Experience Manager als Cloud-Dienst als kostenlose
 
 Beispielsweise benötigen frameworkbasierte oder benutzerdefinierte Single-Page-Applikationen (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
-While [AEM Core Components](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Nicht jede SPA-Entwicklungsorganisation hat direkten Zugang zu solchen Kenntnissen.
+While [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) provide a very comprehensive, flexible and customizable API that can serve required Read operations for this purpose, and whose JSON output can be customized, they do require AEM WCM (Web Content Management) know-how for implementation as they must be hosted in pages that are based on dedicated AEM templates. Nicht jede SPA-Entwicklungsorganisation hat direkten Zugang zu solchen Kenntnissen.
 
 Hier kann die Assets-REST-API eingesetzt werden. Es ermöglicht Entwicklern, direkt auf Assets (z. B. Bilder und Inhaltsfragmente) zuzugreifen, ohne sie zuerst in eine Seite einbetten zu müssen, und ihre Inhalte im serialisierten JSON-Format bereitzustellen.
 
 >[!NOTE]
+>
 >Es ist nicht möglich, die JSON-Ausgabe über die Assets REST API anzupassen.
 
 Mit der Assets-REST-API können Entwickler Inhalte ändern, indem sie neue Assets erstellen, aktualisieren oder vorhandene Assets, Inhaltsfragmente und Ordner löschen.
@@ -290,7 +291,7 @@ Der Hauptteil muss eine JSON-Darstellung davon enthalten, was für das angegeben
 
 Dies kann einfach der Titel oder die Beschreibung eines Inhaltsfragments bzw. ein einzelnes Element oder alle Elementwerte und/oder Metadaten sein.
 
-### Löschen {#delete}
+### Löschen Sie {#delete}
 
 Nutzung erfolgt über:
 
