@@ -2,7 +2,7 @@
 title: Inhaltsfragmente Konfigurieren von Komponenten für die Wiedergabe
 description: Inhaltsfragmente Konfigurieren von Komponenten für die Wiedergabe
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ Diese Informationen sind erforderlich, wenn:
 * Sie müssen Ihre eigene Content Fragment-basierte Komponente implementieren.
 * Und müssen die fortgeschrittenen Dienste nutzen.
 
-Es wird jedoch empfohlen, die Hauptkomponenten zu verwenden.
+Es wird empfohlen, die Hauptkomponenten zu verwenden.
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ Die OSGi-Konfiguration lautet:
  <thead>
   <tr>
    <td>Etikett</td>
-   <td>OSGi-Konfiguration<br /> </td>
+   <td>OSGi Configuration<br /> </td>
    <td>Beschreibung</td>
   </tr>
  </thead>
