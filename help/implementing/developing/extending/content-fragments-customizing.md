@@ -2,7 +2,7 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ Je nach Fragment-Typ werden auch Modelle oder die **Vorlage &quot;Einfaches Frag
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
    >[!NOTE]
    >
-   >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über Leserechte für das Modell verfügen.
+   >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über `read` Berechtigungen für das Modell verfügen.
 
    >[!CAUTION]
    >
