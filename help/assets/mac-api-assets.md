@@ -3,60 +3,60 @@ title: Assets-HTTP-API
 description: Erfahren Sie mehr über die Implementierung, Datenmodelle und Funktionen der Assets-HTTP-API. Verwenden Sie die Assets-HTTP-API, um verschiedene Aufgaben rund um Assets auszuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
 
 # Assets-HTTP-API {#assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Die Assets HTTP-API ermöglicht die Erstellung, das Lesen, das Aktualisieren und Löschen (CRUD) von Vorgängen für Assets, einschließlich Binärdateien, Metadaten, Darstellungen und Kommentaren, sowie strukturierte Inhalte mit AEM Content Fragments. Es wird unter bereitgestellt `/api/assets` und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](content-fragments/content-fragments.md).
+Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabeformate und Kommentaren sowie strukturierten Inhalten mit AEM-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
-1. Open the API service document at `https://[hostname]:[port]/api.json`.
-1. Follow the Assets service link leading to `https://[hostname]:[server]/api/assets.json`.
+1. Öffnen Sie das Dokument zum API-Dienst unter `https://[hostname]:[port]/api.json`.
+1. Folgen Sie dem Link zum Assets-Dienst, der zu `https://[hostname]:[server]/api/assets.json` führt.
 
 Die API-Antwort ist eine JSON-Datei für einige MIME-Typen und ein Antwortcode für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
 
-Nach der [!UICONTROL Abschaltzeit]sind ein Asset und seine Darstellungen weder über die Assets-Weboberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL On-Zeit] in der Zukunft liegt oder die [!UICONTROL Off-Zeit] in der Vergangenheit liegt.
+Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabeformate weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
 >[!NOTE]
 >
->Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Darstellungen) werden für AEM als Cloud-Dienst-Bereitstellung depremiert. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical) .
+>Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabeformate) werden für die Bereitstellung von AEM as a Cloud Service nicht mehr unterstützt. For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## Inhaltsfragmente {#content-fragments}
 
 Ein [Inhaltsfragment](content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Er kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
-Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](content-fragments/content-fragments.md). 
+Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](assets-api-content-fragments.md).
 
 ## Datenmodell {#data-model}
 
 Die Assets-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
 
-Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](content-fragments/content-fragments.md).
+Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Ordner {#folders}
 
-Ordner sind wie Ordner in herkömmlichen Dateisystemen. Sie stellen Container für andere Ordner oder Assets dar. Ordner enthalten folgende Komponenten:
+Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie stellen Container für andere Ordner oder Assets dar. Ordner enthalten folgende Komponenten:
 
-**Entitäten**: Bei den Entitäten eines Ordners handelt es sich um untergeordnete Elemente, bei denen es sich um Ordner und Assets handeln kann.
+**Entitäten**: Zu den Entitäten eines Ordners zählen die untergeordneten Elemente, z. B. die Ordner und Assets.
 
 **Eigenschaften**:
-* `name`  — Name des Ordners. Dies ist dasselbe wie das letzte Segment im URL-Pfad ohne Erweiterung
-* `title` — Optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
+* `name`: Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung
+* `title`: Optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
 
 >[!NOTE]
 >
->Einige Funktionen des Ordners oder des Assets sind einem anderen Präfix zugeordnet. Das `jcr` Präfix `jcr:title`, `jcr:description`und `jcr:language` werden durch das `dc` Präfix ersetzt. Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
+>Einige Eigenschaften des Ordners oder Assets sind einem anderen Präfix zugeordnet. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
-**Links** Ordner stellen drei Links offen:
+**Links**-Ordner stellen drei Links bereit:
 * `self`: Link zu sich selbst
 * `parent`: Link zum übergeordneten Ordner
-* `thumbnail`: (Optional) Link zu einem Ordnerminiaturbild
+* `thumbnail`: (Optionaler) Link zu einem Ordnerminiaturbild
 
 ### Assets {#assets}
 
@@ -66,23 +66,23 @@ In AEM enthalten Assets die folgenden Elemente:
 * Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Bei den zusätzlichen Wiedergabeformaten kann es sich um Bilder unterschiedlicher Größe, unterschiedliche Videokodierungen oder aus PDF- oder InDesign-Dateien extrahierte Seiten handeln.
 * Optionale Kommentare
 
-Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](content-fragments/content-fragments.md). 
+Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](assets-api-content-fragments.md).
 
 In AEM enthält ein Ordner die folgenden Komponenten:
 
-* Einrichtungen: Die untergeordneten Elemente von Assets sind ihre Darstellungen.
+* Entitäten: Die untergeordneten Elemente von Assets sind die Ausgabeformate.
 * Eigenschaften
 * Links
 
-Die Asset HTTP-API bietet die folgenden Funktionen:
+Die Assets-HTTP-API bietet die folgenden Funktionen:
 
 * Abrufen von Ordnerauflistungen
 * Erstellen von Ordnern
-* Erstellen von Assets (nicht mehr unterstützt)
-* Aktualisieren der Asset-Binärdatei (nicht mehr unterstützt)
+* Erstellen von Assets   (veraltet)
+* Aktualisieren der Asset-Binärdatei (veraltet)
 * Aktualisieren der Asset-Metadaten
-* Erstellen von Asset-Wiedergabeformaten
-* Aktualisieren von Asset-Wiedergabeformaten
+* Erstellen von Asset-Ausgabeformaten
+* Aktualisieren von Asset-Ausgabeformaten
 * Erstellen von Asset-Kommentaren
 * Kopieren von Ordnern oder Assets
 * Verschieben von Ordnern oder Assets
@@ -90,7 +90,7 @@ Die Asset HTTP-API bietet die folgenden Funktionen:
 
 >[!NOTE]
 >
->Zur besseren Lesbarkeit der folgenden Beispiele wird die vollständige cURL-Notation weggelassen. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
+>Zur besseren Lesbarkeit der folgenden Beispiele wird die vollständige cURL-Notation weggelassen. Tatsächlich korreliert die Notation mit [Resty](https://github.com/micha/resty), dem Skript-Wrapper für cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -111,7 +111,7 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 GET /api/assets/myFolder.json
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 200 - OK - success
@@ -121,15 +121,15 @@ GET /api/assets/myFolder.json
 
 **Antwort**
 
-Die zurückgegebene Entitätsklasse lautet assets/folder.
+Die Klasse der zurückgegebenen Entität ist Assets/Ordner.
 
-Die Eigenschaften der enthaltenen Entitäten bilden eine Untergruppe der vollständigen Eigenschaften einer jeden Entität. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
+Die Eigenschaften der enthaltenen Entitäten bilden eine Untergruppe der vollständigen Eigenschaften einer jeden Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
 
 ## Erstellen von Ordnern {#create-a-folder}
 
-Creates a new `sling`: `OrderedFolder` at the given path. Wenn ein * anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen als Knotenname. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
+Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein * angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Akzeptiert als Anforderungsdaten wird entweder eine Siren-Darstellung des neuen Ordners oder ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Dies ist dann sinnvoll, wenn Sie einen Ordner direkt aus einem HTML-Formular erstellen. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
 
-The operation will fail with a `500` response code if the parent node of the given path does not exist. If the folder already exists a `409` response code is returned.
+Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schlägt der Vorgang mit einem Antwort-Code `500` fehl. Wenn der Ordner bereits vorhanden ist, wird der Antwort-Code `409` zurückgegeben.
 
 **Parameter**
 
@@ -141,13 +141,13 @@ The operation will fail with a `500` response code if the parent node of the giv
 POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
 ```
 
- oder  ermöglichen.
+ oder
 
 ```
 POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 201 - CREATED - on successful creation
@@ -158,11 +158,11 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 
 ## Erstellen von Assets {#create-an-asset}
 
-Informationen zum Erstellen eines Assets mit APIs finden Sie unter [Hochladen](developer-reference-material-apis.md) von Assets. Das Erstellen eines Assets mit der HTTP-API ist veraltet.
+Informationen zum Erstellen eines Assets mit APIs finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Das Erstellen eines Assets mit der HTTP-API wird nicht mehr unterstützt.
 
-## Aktualisieren einer Asset-Binärdatei {#update-asset-binary}
+## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Informationen zum Aktualisieren von Asset-Binärdateien mithilfe von APIs finden Sie unter [Hochladen](developer-reference-material-apis.md) von Assets. Das Aktualisieren einer Asset-Binärdatei mit der HTTP-API wird nicht mehr unterstützt.
+Informationen zum Aktualisieren von Asset-Binärdateien mithilfe von APIs finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Das Aktualisieren einer Asset-Binärdatei mit der HTTP-API wird nicht mehr unterstützt.
 
 ## Aktualisieren von Metadaten eines Assets {#update-asset-metadata}
 
@@ -174,7 +174,7 @@ Aktualisiert die Asset-Metadateneigenschaften.
 PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 200 - OK - if Asset has been updated successfully
@@ -183,14 +183,14 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Erstellen von Asset-Wiedergabeformaten {#create-an-asset-rendition}
+## Erstellen von Asset-Ausgabeformaten {#create-an-asset-rendition}
 
-Erstellt ein neues Asset-Wiedergabeformat für ein Asset. Wenn der Parametername der Anforderung nicht angegeben ist, wird der Dateiname als Darstellungsname verwendet.
+Erstellt ein neues Asset-Ausgabeformat für ein Asset. Wenn der Anforderungsparametername nicht angegeben wurde, wird der Dateiname als Ausgabeformatname verwendet.
 
 **Parameter**
 
-* `name` - Name der Darstellung
-* `file` - Dateireferenz
+* `name` - Name des Ausgabeformats
+* `file` - Dateiverweis
 
 **Anforderung**
 
@@ -198,13 +198,13 @@ Erstellt ein neues Asset-Wiedergabeformat für ein Asset. Wenn der Parametername
 POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"
 ```
 
- oder  ermöglichen.
+ oder
 
 ```
 POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 201 - CREATED - if Rendition has been created successfully
@@ -213,7 +213,7 @@ POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"fil
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Aktualisieren von Asset-Wiedergabeformaten {#update-an-asset-rendition}
+## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
 
 Aktualisiert bzw. ersetzt ein Asset-Wiedergabeformat durch die neuen Binärdaten.
 
@@ -223,7 +223,7 @@ Aktualisiert bzw. ersetzt ein Asset-Wiedergabeformat durch die neuen Binärdaten
 PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 200 - OK - if Rendition has been updated successfully
@@ -247,7 +247,7 @@ Erstellt einen neuen Asset-Kommentar.
 POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 201 - CREATED - if Comment has been created successfully
@@ -256,7 +256,7 @@ POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"ann
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Copy a folder or an asset {#copy-a-folder-or-asset}
+## Kopieren von Ordnern oder Assets {#copy-a-folder-or-asset}
 
 Kopiert einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel.
 
@@ -274,7 +274,7 @@ X-Overwrite - 'F' to prevent overwriting an existing destination
 COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 201 - CREATED - if folder/asset has been copied to a non-existing destination
@@ -283,7 +283,7 @@ COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Move a folder or an asset {#move-a-folder-or-asset}
+## Verschieben von Ordnern oder Assets {#move-a-folder-or-asset}
 
 Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel.
 
@@ -301,7 +301,7 @@ X-Overwrite - either 'T' to force deletion of existing resources or 'F' to preve
 MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 201 - CREATED - if folder/asset has been copied to a non-existing destination
@@ -310,7 +310,7 @@ MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Löschen eines Ordners, eines Assets oder einer Darstellung {#delete-a-folder-asset-or-rendition}
+## Löschen eines Ordners, eines Assets oder eines Ausgabeformats {#delete-a-folder-asset-or-rendition}
 
 Löscht eine Ressource (Struktur) in dem angegebenen Pfad.
 
@@ -320,19 +320,19 @@ Löscht eine Ressource (Struktur) in dem angegebenen Pfad.
 DELETE /api/assets/myFolder
 ```
 
- oder  ermöglichen.
+ oder
 
 ```
 DELETE /api/assets/myFolder/myAsset.png
 ```
 
- oder  ermöglichen.
+ oder
 
 ```xml
 DELETE /api/assets/myFolder/myAsset.png/renditions/original
 ```
 
-**Antwortcodes**
+**Antwort-Codes**
 
 ```
 200 - OK - if folder has been deleted successfully
