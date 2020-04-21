@@ -1,13 +1,13 @@
 ---
-title: 'Arbeiten mit Inhaltsfragmenten '
+title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
+# Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
 
 Inhaltsfragmente in Adobe Experience Manager (AEM) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und [Verwenden von seitenunabhängigen Inhalten](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
 
@@ -143,7 +143,7 @@ Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden
    * sind problemlos verfügbar (als Übergangsinhalte), wenn das Fragment auf einer Seite verwendet wird; 
    * weitere Informationen finden Sie unter [Zugehörige Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md). 
 
-* Über den **Assets-Browser** des Seiten-Editors verfügbare Assets 
+* Im Seiten-Editor verfügbare Assets im **Asset-Browser**
 
    * bieten vollständige Flexibilität bei der Asset-Auswahl; 
    * ermöglichen eine gewisse Flexibilität bei der Positionierung; 
@@ -161,7 +161,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * Bei einfachen Fragmenten:
 
       * Der Inhalt befindet sich in einem (oder mehreren) mehrzeiligen Textfeld(ern) oder Element(en).
-      * Die Elemente werden in der Fragmentvorlage definiert (es ist nicht möglich, sie bei der Fragmenterstellung zu definieren; siehe „Inhaltsfragmentvorlagen“). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * Die Elemente werden in der Fragmentvorlage definiert (kann beim Authoring des Fragments nicht definiert werden).
 
 * **Fragmentabsätze**
 
@@ -169,7 +169,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
       * durch vertikale Abstände (Zeilenschaltung) getrennt sind 
       * sich in mehrzeiligen Textelementen befinden, entweder in einfachen oder in strukturierten Fragmenten
-   * Im [Rich-Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text)- und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown)-Modus kann ein Absatz als Kopfzeile formatiert sein, wobei dieser sowie der nachfolgende Absatz als eine Einheit fungieren.
+   * In den Modi [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
    * Ermöglichen die Inhaltssteuerung während der Seitenbearbeitung  
 
@@ -263,7 +263,7 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
 * **Fragmentvorlage**
 
    * Erforderlich für das [Erstellen eines einfachen Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * In der Regel während der Projektimplementierung entwickelt; kann nicht während des Erstellens entwickelt werden.<!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * In der Regel während der Projektimplementierung entwickelt; kann nicht während des Erstellens entwickelt werden.
    * Definiert die grundlegenden Eigenschaften eines einfachen Fragments (Titel, Anzahl der Textelemente, Tag-Definitionen).
    * Vorlagendefinitionen erfordern einen Titel und ein Textelement. Alle weiteren Elemente sind optional. Die Vorlage definiert einen minimalen Gültigkeitsbereich für das Fragment und ggf. den Standardinhalt. Autoren können zu einem späteren Zeitpunkt die Definition eines Fragments über die Angaben in der Vorlage hinaus erweitern.
 
