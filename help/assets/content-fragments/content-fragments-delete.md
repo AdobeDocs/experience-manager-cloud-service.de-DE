@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Inhaltsfragmente – Überlegungen zum Löschen
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
@@ -25,7 +25,7 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
    Die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
    * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren muss, **aber kein ganzes Fragment löschen darf**.
-   * **Berechtigungen:** Siehe „Nur für Editor-Funktionen erforderliche Berechtigungen“. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Berechtigungen:** Siehe [Nur für Editor-Funktionen erforderliche Berechtigungen](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
-Benutzer, die ein Fragment bearbeiten oder aktualisieren müssen, **aber keine kompletten Fragmente löschen dürfen**, benötigen bestimmte Berechtigungen, da die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können.
+Benutzern, die ein Inhaltsfragment bearbeiten/aktualisieren müssen, **ohne dass sie ein ganzes Fragment löschen können**, müssen spezifische Berechtigungen zugewiesen werden, da für den grundlegenden Vorgang des Inhaltsfragment-Editors das Löschen von Übergangsunterelementen erforderlich ist.
 
 Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
