@@ -1,13 +1,13 @@
 ---
-title: Verwalten von Inhaltsfragmenten
+title: 'Verwalten von Inhaltsfragmenten    '
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
 
-# Verwalten von Inhaltsfragmenten{#managing-content-fragments}
+# Verwalten von Inhaltsfragmenten{#managing-content-fragments}    
 
 Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
@@ -24,25 +24,19 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 
 >[!NOTE]
 >
->Weitere Informationen zu für einfache Inhaltsfragmente verwendeten Vorlagen finden Sie unter Entwickeln von Inhaltsfragmenten.
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>Weitere Informationen zu für einfache Inhaltsfragmente verwendeten Vorlagen finden Sie unter [Entwickeln von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md).
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
 Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einfachen und strukturierten Fragmenten gleich:
 
-1. Navigieren Sie in den Ordner **Assets**, in dem Sie das Fragment erstellen möchten.
+1. Navigieren Sie zum Ordner **Assets**, in dem Sie das Fragment erstellen möchten.
 2. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
-3. Im ersten Schritt des Assistenten müssen Sie die Grundlage für das neue Fragment festlegen.
+3. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
    * Dabei kann es sich um Folgendes handeln:
 
-      * Vorlage – beispielsweise **Einfaches Fragment** <!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * Vorlage – beispielsweise **Einfaches Fragment**
 
       * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Flughafen**-Modell
    * Es werden alle verfügbaren Vorlagen und Modelle angezeigt.
@@ -108,7 +102,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Kopieren**/**Einfügen**
 
 * **Verschieben**
-* **Quick Publish**
+* **Schnell veröffentlichen**
 * **Veröffentlichung verwalten**
 * **Löschen**
 
@@ -120,11 +114,9 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 So öffnen Sie ein Fragment zur Bearbeitung:
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
 >[!CAUTION]
 >
@@ -155,14 +147,14 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-   * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Metadaten  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
    ![Modi](assets/cfm-managing-04.png)
 
 4. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**. 
 
    >[!NOTE]
    >
-   >Sowohl die Option **Speichern** als auch **Abbrechen** beendet den Editor – vollständige Informationen über die Auswirkung beider Optionen auf Inhaltsfragmente finden Sie unter [Speichern, Abbrechen und Versionen](#save-cancel-and-versions). 
+   >Sowohl **Speichern** als auch **Abbrechen** schließen den Editor – siehe [Speichern, Abbrechen und Versionen](#save-cancel-and-versions) für ausführliche Informationen zur Funktionsweise beider Optionen für Content Fragment.
 
 ## Speichern, Abbrechen und Versionen    {#save-cancel-and-versions}
 
@@ -178,13 +170,7 @@ Der Editor bietet zwei Optionen:
 
    >[!CAUTION]
    >
-   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie die entsprechenden Berechtigungen. Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
    >[!NOTE]
    >
