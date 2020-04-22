@@ -2,7 +2,7 @@
 title: 'Verwalten von Inhaltsfragmenten    '
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 
 [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) können vor dem Erstellen von Inhaltsfragmenten mit strukturiertem Inhalt aktiviert und erstellt werden.
 
->[!NOTE]
->
->Weitere Informationen zu für einfache Inhaltsfragmente verwendeten Vorlagen finden Sie unter [Entwickeln von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md).
-
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
 Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einfachen und strukturierten Fragmenten gleich:
@@ -34,12 +30,13 @@ Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einf
 2. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
 3. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
-   * Dabei kann es sich um Folgendes handeln:
+   * Dies kann sein:
 
-      * Vorlage – beispielsweise **Einfaches Fragment**
+      * die **Vorlage &quot;Simple Fragment** &quot;
 
       * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Flughafen**-Modell
-   * Es werden alle verfügbaren Vorlagen und Modelle angezeigt.
+
+         * Alle verfügbaren Modelle werden angezeigt.
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
    ![Fragmentbasis](assets/cfm-managing-01.png)
