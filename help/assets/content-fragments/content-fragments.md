@@ -2,7 +2,7 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 Es gibt folgende Arten von Inhaltsfragmenten:
 
-* Einfache Fragmente. Diese haben keine vordefinierte Struktur. Sie enthalten lediglich Text und Bilder.
-These are based on the **Simple Fragment** template.
+* Einfache Fragmente
 
-* Fragmente, die strukturierte Inhalte enthalten. Diese basieren auf einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md), das eine Struktur für das daraus entstehende Fragment vordefiniert.
-Diese können außerdem verwendet werden, um Content Services über den JSON Exporter bereitzustellen.
+   * Diese haben keine vordefinierte Struktur.
+
+   * Sie enthalten lediglich Text und Bilder.
+
+   * These are based on the **Simple Fragment** template.
+
+* Fragmente mit strukturiertem Inhalt
+
+   * These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
+   * Diese können außerdem verwendet werden, um Content Services über den JSON Exporter bereitzustellen.
 
 ## Inhaltstyp {#content-type}
 
