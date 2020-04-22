@@ -2,7 +2,7 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 Es gibt folgende Arten von Inhaltsfragmenten:
 
 * Einfache Fragmente. Diese haben keine vordefinierte Struktur. Sie enthalten lediglich Text und Bilder.
-Diese basieren auf der Vorlage für einfache Fragmente.
+These are based on the **Simple Fragment** template.
 
 * Fragmente, die strukturierte Inhalte enthalten. Diese basieren auf einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md), das eine Struktur für das daraus entstehende Fragment vordefiniert.
 Diese können außerdem verwendet werden, um Content Services über den JSON Exporter bereitzustellen.
@@ -161,7 +161,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * Bei einfachen Fragmenten:
 
       * Der Inhalt befindet sich in einem (oder mehreren) mehrzeiligen Textfeld(ern) oder Element(en).
-      * Die Elemente werden in der Fragmentvorlage definiert (kann beim Authoring des Fragments nicht definiert werden).
+      * Die Elemente werden in der Vorlage &quot; **Einfaches Fragment** &quot;definiert.
 
 * **Fragmentabsätze**
 
@@ -197,7 +197,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * Die einzelnen Assets innerhalb der Sammlung können mit dem Fragment im Seiten-Editor verwendet werden, wenn es einer Seite hinzugefügt wird.  Zugehörige Inhalte sind also optional, abhängig von den Anforderungen des jeweiligen Kanals. 
    * Die Assets sind [mit Fragmenten über Sammlungen verknüpft](/help/assets/content-fragments/content-fragments-assoc-content.md). Mithilfe verknüpfter Sammlungen kann der Autor entscheiden, welche Assets beim Bearbeiten einer Seite verwendet werden sollen.
 
-      * Sammlungen können mit Fragmenten anhand von Vorlagen als Standardinhalt oder von Autoren während der Fragmentbearbeitung verbunden werden.
+      * Sammlungen können Fragmenten als Standardinhalt oder vom Autor während des Fragmenterstellens zugeordnet werden.
       * [Asset (DAM)-Sammlungen](/help/assets/manage-collections.md) sind die Basis für die zugehörigen Inhalte von Fragmenten. 
    * Sie können auch das eigentliche Fragment zu einer Sammlung hinzufügen und so die Nachverfolgung unterstützen. 
 
@@ -229,7 +229,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
    * Ausgabeformate von Fragmenttext, eigens zu redaktionellen Zwecken. Diese können mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch; auch für lokale Ad-hoc-Änderungen geeignet;
    * werden als Kopien vom **Master** erstellt, können dann aber nach Bedarf bearbeitet werden; gewöhnlich kommt es zu einer Inhaltsüberlappung zwischen den Varianten;
-   * können während der Fragmentbearbeitung definiert oder in Fragment-Vorlagen vordefiniert werden;
+   * Kann beim Authoring von Fragmenten definiert werden.
    * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
    * können mit dem Master [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Masterinhalt aktualisiert wurde; 
    * können [zusammengefasst](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
@@ -262,10 +262,8 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
 
 * **Fragmentvorlage**
 
-   * Erforderlich für das [Erstellen eines einfachen Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * In der Regel während der Projektimplementierung entwickelt; kann nicht während des Erstellens entwickelt werden.
+   * Die Vorlage &quot; **Einfaches Fragment** &quot;ist zum [Erstellen eines einfachen Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)erforderlich.
    * Definiert die grundlegenden Eigenschaften eines einfachen Fragments (Titel, Anzahl der Textelemente, Tag-Definitionen).
-   * Vorlagendefinitionen erfordern einen Titel und ein Textelement. Alle weiteren Elemente sind optional. Die Vorlage definiert einen minimalen Gültigkeitsbereich für das Fragment und ggf. den Standardinhalt. Autoren können zu einem späteren Zeitpunkt die Definition eines Fragments über die Angaben in der Vorlage hinaus erweitern.
 
 * **Inhaltsfragment-Komponente**
 
