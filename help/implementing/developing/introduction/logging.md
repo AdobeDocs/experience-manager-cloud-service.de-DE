@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -96,7 +96,7 @@ Hier werden alle Zugriffsanforderungen an das AEM WCM-System und das Repository 
 
 Beispielausgabe:
 
-**Protokollierung von AEM-HTTP-Anforderungen/Antwortzugriff**
+**Protokollierung von AEM-HTTP-Anforderungen/-Antwortzugriffen**
 
 Hier werden alle Zugriffsanforderungen zusammen mit der Antwort registriert.
 
@@ -110,7 +110,7 @@ Dieses Protokoll dient zum Debugging von Dispatcher-Problemen. Weitere Informati
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-Was bewährte Verfahren anbelangt, sollten Sie sich an den Konfigurationen, die derzeit in AEM als Cloud Service Maven-Archetyp vorhanden sind, ausrichten. Diese legen unterschiedliche Protokolleinstellungen und Ebenen für bestimmte Umgebung fest:
+Was bewährte Verfahren anbelangt, sollten Sie sich an den Konfigurationen, die derzeit in AEM als Cloud Service Maven-Archetyp vorhanden sind, ausrichten. Diese legen unterschiedliche Protokollierungseinstellungen und -stufen für bestimmte Umgebung fest:
 
 * für `local dev` - und `dev` -Umgebung festlegen Sie die Protokollfunktion auf **DEBUG** -Ebene auf `error.log`
 * für `stage`, setzen Sie die Protokollfunktion auf **WARN** -Ebene auf `error.log`
