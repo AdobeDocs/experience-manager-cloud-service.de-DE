@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ Die anderen Paare folgen der Standardkonfiguration:
 
    * Schreibt `Warning` Nachrichten für `../logs/error.log` den Dienst `org.apache.pdfbox`.
 
-* Ist nicht mit einem bestimmten Writer verknüpft, sodass ein impliziter Writer mit Standardkonfiguration (tägliche Protokollrotation) verwendet wird.
+* Verlinkt nicht zu einem bestimmten Writer und erstellt daher einen impliziten Writer mit Standardkonfiguration.
 
 **AEM als Cloud-Service-HTTP-Anforderungsprotokoll**
 
@@ -96,7 +96,7 @@ Hier werden alle Zugriffsanforderungen an das AEM WCM-System und das Repository 
 
 Beispielausgabe:
 
-**Protokollierung von AEM-HTTP-Anforderungen/-Antwortzugriffen**
+**AEM als Cloud-Dienst HTTP-Anforderung/Antwortzugriffsprotokollierung**
 
 Hier werden alle Zugriffsanforderungen zusammen mit der Antwort registriert.
 
@@ -183,7 +183,7 @@ Diese Elemente sind über die folgenden Parameter mit den entsprechenden Element
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Protokollebene festlegen {#setting-the-log-level}
+### Protokollebene festlegen {#setting-the-log-level}
 
 Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
@@ -191,7 +191,7 @@ Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-
 >
 > Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
 
-### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
+**Aktivieren der DEBUG-Protokollebene**
 
 >[!WARNING]
 >
