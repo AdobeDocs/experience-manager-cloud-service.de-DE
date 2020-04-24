@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 * Ist nicht mit einem bestimmten Writer verknüpft, sodass ein impliziter Writer mit Standardkonfiguration (tägliche Protokollrotation) verwendet wird.
 
-### AEM als Cloud-Service-HTTP-Anforderungsprotokoll {#request-logging}
+**AEM als Cloud-Service-HTTP-Anforderungsprotokoll**
 
 Hier werden alle Zugriffsanforderungen an das AEM WCM-System und das Repository registriert.
 
 Beispielausgabe:
 
-### Protokollierung von AEM-HTTP-Anforderungen/Antwortzugriff {#access-logging}
+**Protokollierung von AEM-HTTP-Anforderungen/Antwortzugriff**
 
 Hier werden alle Zugriffsanforderungen zusammen mit der Antwort registriert.
 
 Beispielausgabe:
 
-### Apache Web Server/Dispatcher-Protokollierung {#dispatcher-logging}
+**Apache Web Server/Dispatcher-Protokollierung**
 
 Dieses Protokoll dient zum Debugging von Dispatcher-Problemen. Weitere Informationen finden Sie unter [Debugging der Apache- und Dispatcher-Konfiguration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/).
 
@@ -110,7 +110,7 @@ Dieses Protokoll dient zum Debugging von Dispatcher-Problemen. Weitere Informati
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-Was bewährte Verfahren anbelangt, sollten Sie sich an den Konfigurationen, die derzeit in AEM als Cloud Service Maven-Archetyp vorhanden sind, ausrichten. Diese legen unterschiedliche Protokollierungseinstellungen und -stufen für bestimmte Umgebung fest:
+Was bewährte Verfahren anbelangt, sollten Sie sich an den Konfigurationen, die derzeit in AEM als Cloud Service Maven-Archetyp vorhanden sind, ausrichten. Diese legen unterschiedliche Protokolleinstellungen und Ebenen für bestimmte Umgebung fest:
 
 * für `local dev` - und `dev` -Umgebung festlegen Sie die Protokollfunktion auf **DEBUG** -Ebene auf `error.log`
 * für `stage`, setzen Sie die Protokollfunktion auf **WARN** -Ebene auf `error.log`
