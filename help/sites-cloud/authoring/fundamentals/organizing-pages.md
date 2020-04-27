@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -258,19 +258,21 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
    Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
-   ![Schaltfläche „Kopieren“](/help/sites-cloud/authoring/assets/copy.png)
+   ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Verwenden Sie das Symbol **Einfügen**:
+1. Das Symbol &quot; **Einfügen** &quot;ist mit einem Dropdownpfeil direkt rechts verfügbar:
 
-   ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/paste.png)
+   ![Einfügen](/help/sites-cloud/authoring/assets/paste.png)
 
-   In diesem Verzeichnis wird eine Kopie der ursprünglichen Seite und aller Unterseiten erstellt.
+   Wählen Sie eine der folgenden Möglichkeiten:
 
+   1. Wählen Sie das Symbol **Seite einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
+   1. Wählen Sie den Dropdownpfeil aus, um die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. untergeordnete Seiten werden nicht kopiert.
    >[!NOTE]
    >
    >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
@@ -339,7 +341,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 >[!NOTE]
 >
->Wenn eine Seite bereits veröffentlicht wurde, wird ihre Veröffentlichung durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
+>Wenn die Seite bereits veröffentlicht wurde, wird das Veröffentlichen durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
 
 >[!NOTE]
 >
@@ -365,7 +367,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    >[!NOTE]
    >
-   >Aus Sicherheitsgründen ist das Symbol **Löschen** nicht als Schnellaktion verfügbar.
+   >Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
 
 1. Es wird ein Bestätigungsdialogfeld angezeigt.
 
