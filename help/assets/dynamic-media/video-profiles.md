@@ -1,8 +1,8 @@
 ---
 title: Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
 
 ---
 
@@ -27,7 +27,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
 >[!NOTE]
 >
->Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In AEM kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud-Dienste eingerichtet sind. Dieser Workflow erfasst Informationen zu Historie und Fehlern von Workflow-Prozessen. Siehe [Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud-Services eingerichtet haben, wird der Workflow **[!UICONTROL Videokodierung Dynamic Media]** automatisch wirksam, wenn Sie ein Video hochladen. (Wenn Sie keine dynamischen Medien verwenden, gilt der Workflow **[!UICONTROL DAM-Update-Asset]**.)
+>Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In AEM kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud-Dienste eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie dynamische Medien aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit dynamischen Medien]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine dynamischen Medien verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 >
 >Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das AEM-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie sehen die generierten Miniaturansichten, wenn Sie auf das Ausgabeformat-Symbol (eine Malerpalette) eines kodierten Videos tippen.
 
@@ -130,7 +130,7 @@ Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden 
 
 * Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
-* Audiobitrate
+* Audiobitrate  
 * Seitenverhältnis beibehalten
 * Kodierung mit zwei Durchgängen
 * Konstante Bitrate
@@ -159,7 +159,7 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein. Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixeln ein.
+   * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein. Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
 
    * Tippen Sie zum Visualisieren der Größe des Videos auf das Informationssymbol (i) rechts neben **[!UICONTROL Höhe]**, um die Seite mit der Größenberechnung zu öffnen. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Tippen Sie oben rechts auf **[!UICONTROL X]**, wenn Sie fertig sind.
 
@@ -171,8 +171,8 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
    * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
-   * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnitt-Verhältnis]** das Verhältnis aus, das Sie verwenden möchten.
+   * Geben Sie im Feld &quot;Name&quot;einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht identifizieren können.
+   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -185,7 +185,7 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 ## Erstellen eines Videoprofils für progressives Streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
-Wenn Sie die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht verwenden, denken Sie daran, dass alle dem Profil hinzugefügten Kodierungsvorgaben als individuelle Videoausgabeformate für Einzel-Bitraten-Streaming oder progressive Videoübermittlung behandelt werden. Außerdem wird nicht sichergestellt, dass alle Videoausgabeformate dasselbe Seitenverhältnis aufweisen.
+Wenn Sie die Option **[!UICONTROL Kodieren für adaptives Streaming]** nicht verwenden möchten, beachten Sie, dass alle Kodierungsvoreinstellungen, die Sie dem Profil hinzufügen, als einzelne Videoausgabedarstellungen für Single-Bitrate-Streaming oder progressive Videowiedergabe behandelt werden. Außerdem gibt es keine Validierung, um sicherzustellen, dass alle Videowiedergaben dasselbe Seitenverhältnis aufweisen.
 
 Die Videoformat-Codecs H.264 (.mp4) und WebM werden unterstützt.
 
@@ -224,8 +224,8 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
 
    * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
-   * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnitt-Verhältnis]** das Verhältnis aus, das Sie verwenden möchten.
+   * Geben Sie im Feld &quot;Name&quot;einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht identifizieren können.
+   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -364,7 +364,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 ### Anwenden eines Videoprofils auf bestimmte Ordner {#applying-video-profiles-to-specific-folders}
 
-Die Anwendung von Videoprofilen auf Ordner erfolgt im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]**. In diesem Abschnitt werden diese beiden Möglichkeiten beschrieben.
+Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
