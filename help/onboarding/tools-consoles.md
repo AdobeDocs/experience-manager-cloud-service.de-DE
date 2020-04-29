@@ -2,7 +2,7 @@
 title: Die Tools-Konsolen
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
 translation-type: tm+mt
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
 >Da die Karten in der Benutzeroberfläche Details zum Zweck der einzelnen Optionen enthalten, bietet diese Tabelle einen schnellen Überblick über die Position der Funktionen im Bedienfeld &quot;Werkzeuge&quot;.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Abschnitt</td>
-   <td>Wahl</td>
+   <td>Option</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Allgemein</td>
    <td> </td>
@@ -108,7 +110,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
    <td>Prüfer für externe Links<br /> </td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Assets </td>
    <td> </td>
   </tr>
   <tr>
@@ -121,7 +123,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Metadatenschemata</td>
+   <td>Metadatenschemata  </td>
   </tr>
   <tr>
    <td> </td>
@@ -208,7 +210,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
    <td>Adobe IMS-Konfigurationen</td>
   </tr>
   <tr>
-   <td>Cloud-Services<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
