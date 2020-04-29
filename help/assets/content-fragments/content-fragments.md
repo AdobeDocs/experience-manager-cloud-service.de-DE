@@ -1,15 +1,15 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) als Cloud-Dienst seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
 
-Inhaltsfragmente in Adobe Experience Manager (AEM) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und [Verwenden von seitenunabhängigen Inhalten](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
