@@ -2,7 +2,7 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -369,8 +369,13 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    >
    >Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
 
-1. Es wird ein Bestätigungsdialogfeld angezeigt.
+1. Ein Dialogfeld wird zur Bestätigung aufgerufen.
 
+   ![Dialogfeld löschen](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
+      * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-cloud/authoring/features/page-versions.md)
+      * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
    * **Löschen** bestätigen Sie die Aktion.
 
