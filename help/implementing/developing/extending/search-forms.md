@@ -2,7 +2,7 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Search Forms for Adobe Experience Manager als Cloud-Dienst.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -37,11 +37,11 @@ Die **Suchformulare** bieten eine vordefinierte Auswahl an [Vorhersagen](#predic
 
 ## Standardformulare {#default-forms}
 
-When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (standardmäßig) ist - und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, verschwindet die Sperre. Es wird wieder angezeigt, wenn Sie Ihre benutzerdefinierte Konfiguration[](#deleting-a-configuration-to-reinstate-the-default)löschen. In diesem Fall werden die Standardeinstellung (und die Padlock-Anzeige) erneut installiert.
+When you first access the **Search Forms** console you can see that all the configurations have a padlock symbol. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (standardmäßig) ist - und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, wird die Sperre ausgeblendet. Es wird wieder angezeigt, wenn Sie Ihre benutzerdefinierte Konfiguration [](#deleting-a-configuration-to-reinstate-the-default)löschen. In diesem Fall werden die Standardeinstellung (und die Padlock-Anzeige) erneut installiert.
 
 ![Konfigurieren von Suchformularen - Übersicht](assets/csf-overview.png)
 
-Die Standardkonfigurationen (alphabetisch aufgeführt) sind verfügbar:
+Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 
 * **Asset-Admin-Suchschiene:**
 
@@ -156,7 +156,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum Bereich</td>
+   <td>Datum   Bereich</td>
    <td>Suchen Sie nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -221,7 +221,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendeter Filter</td>
+   <td>Ausgeblendet Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -232,7 +232,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Einblicke</td>
-   <td>Suchen nach einer Auswahl von Insight-Parametern.</td>
+   <td>Suchen Sie nach einer Auswahl von Insight-Parametern.</td>
    <td>Dies ist eine komplexe Vorhersage, die sich aus mehreren Vorhersagen zusammensetzt:
     <ul>
      <li>Gruppe</li>
@@ -279,7 +279,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Options-Eigenschaft</td>
+   <td>Optionen Eigenschaft</td>
    <td>Suchen Sie nach einer oder mehreren Eigenschaften der Option.</td>
    <td>
     <ul>
@@ -303,7 +303,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad</td>
+   <td>Pfad </td>
    <td>Filtern Sie nach einem bestimmten Pfad. Sie können mehrere Pfade als Optionen angeben.</td>
    <td>
     <ul>
@@ -313,7 +313,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad Browser</td>
+   <td>Pfad  Browser</td>
    <td>Stellen Sie einen Pfadbrowser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>
@@ -324,7 +324,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Pfad Ausgeblendet</td>
+   <td>Pfad  Ausgeblendet</td>
    <td>Ein Filter auf dem Pfad, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -425,7 +425,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Vorlagen</td>
-   <td>Suche nach der ausgewählten Vorlage.</td>
+   <td>Suchen Sie nach der ausgewählten Vorlage.</td>
    <td>
     <ul>
      <li>Platzhalter</li>
@@ -436,7 +436,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Übersetzungsstatus</td>
-   <td>Suche nach dem Übersetzungsstatus.</td>
+   <td>Suchen Sie nach dem Übersetzungsstatus.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -503,7 +503,7 @@ This information is for reference only, you must not make changes to `/libs`.
 
 ### Prädikateinstellungen {#predicate-settings}
 
-Abhängig von der Vorhersage steht eine Auswahl von Einstellungen zur Konfiguration zur Verfügung, darunter:
+Abhängig von der Vorhersage steht eine Auswahl von Einstellungen für die Konfiguration zur Verfügung, darunter:
 
 * **Feldbezeichnung**
 
@@ -600,11 +600,11 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. Wählen Sie das Vorschausymbol aus:
 
-   ![Vorschausymbol](assets/csf-preview-icon.png)
+   ![Symbol &quot;Vorschau&quot;](assets/csf-preview-icon.png)
 
 1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
 
-   ![Vorschauformular](assets/csf-preview-form.png)
+   ![Vorschau](assets/csf-preview-form.png)
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
@@ -613,7 +613,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
 
-   ![Löschsymbol](assets/csf-delete-icon.png)
+   ![delete-Symbol](assets/csf-delete-icon.png)
 
 1. In einem Dialogfeld werden Sie dazu aufgefordert, die Löschaktion zu bestätigen.
 
@@ -671,7 +671,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    * **Eigenschaftsname**
 
-      Spezifizieren Sie die Knoteneigenschaft, nach der auf den Zielknoten gesucht werden soll. Beispiel:
+      Spezifizieren Sie die Knoteneigenschaft, nach der auf den Zielgruppen-Nodes gesucht werden soll. Beispiel:
 
       `jcr:content/cq:template`
 
@@ -693,14 +693,16 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benötigen, um Suchformulare zu bearbeiten, zu löschen und Vorschauen anzuzeigen.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Aktion</strong></td>
    <td><strong>Berechtigungen</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Bearbeiten </td>
-   <td>Lesen, Schreibberechtigungen für den <code>/apps </code>Knoten.</td>
+   <td>Read, Write permissions on the <code>/apps </code>node.</td>
   </tr>
   <tr>
    <td>Löschen</td>
