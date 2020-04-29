@@ -1,15 +1,15 @@
 ---
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Inhaltsfragmente {#content-fragments}
 
-Adobe Experience Manager (AEM)-Inhaltsfragmente werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
+Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud-Dienst werden als seitenunabhängige Assets [erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
 
 Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -90,7 +90,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
 
 * **Variante**
-   * Die Voreinstellung **Master** ist immer verfügbar.
+   * Der Standard-**Master** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden. 
 * **Absätze**: Geben Sie den Bereich der einzubeziehenden Absätze an:
    * **Alle**
@@ -143,7 +143,7 @@ Bei Zwischeninhalten können Sie:
 
 ### Verwenden von zugehörigen Inhalten   {#using-associated-content}
 
-Wenn ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) mit [zugehörigem Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) vorhanden ist, kann auf diese Assets über das seitliche Bedienfeld zugegriffen werden (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Zugehöriger Inhalt ist eine spezielle Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Content Fragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
