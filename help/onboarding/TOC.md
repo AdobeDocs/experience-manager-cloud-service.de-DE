@@ -2,7 +2,7 @@
 sub-product: Einstieg in AEM as a Cloud Service
 user-guide-title: Einstieg in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/sites-readiness.md)
++ Erreichbarkeit {#accessibility}
+   + [AEM als Cloud-Dienst und die Richtlinien zur Web-Zugänglichkeit](accessibility/web-accessibility.md)
+   + [Eine Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + [Übersicht über die Tools-Konsolen](tools-consoles.md)
