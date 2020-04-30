@@ -2,7 +2,7 @@
 title: AEM-Projektstruktur
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung im Adobe Experience Manager Cloud-Dienst definieren.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
 
 ---
 
@@ -69,7 +69,7 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
          + Gruppen
          + ACLs (Berechtigungen)
             + Beliebig `rep:policy` für alle Pfade (veränderlich oder unveränderlich)
-+ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem: <!-- GRANITE-29128 -->
++ The `ui.content` package, or Content Package, contains all content and configuration. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
    + Kontextabhängige Konfigurationen
       + `/conf`
    + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltsaufbau, der auf in Repo Init definierten Inhaltsstrukturen aufbaut und diese erweitert.
