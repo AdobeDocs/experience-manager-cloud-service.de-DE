@@ -2,7 +2,7 @@
 title: Rollenbasierte Berechtigungen
 description: Rollenbasierte Berechtigungen
 translation-type: tm+mt
-source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
+source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 ---
 
@@ -13,24 +13,26 @@ source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ## Anwenderberechtigungen {#user-permissions}
 
-Jede Rolle verfügt über bestimmte Berechtigungen, vorkonfigurierte Aufgaben oder Berechtigungen, die jeder Rolle zugeordnet sind. In der folgenden Tabelle sind die verfügbaren Funktionen und Rollen aufgelistet, die die Funktion ausführen können.
+Jede der Rollen verfügt über spezifische Berechtigungen, vorkonfigurierte Aufgaben oder Berechtigungen, die jeder Rolle zugeordnet sind. In der folgenden Tabelle sind die verfügbaren Funktionen und Rollen aufgelistet, die die Funktion ausführen können.
 
 | Berechtigung | Beschreibung | Business Owner | Bereitstellungsmanager | Programmmanager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
-| Programm hinzufügen | Neues Programm hinzufügen. | x |  |  |  |
-| Umgebung erstellen | Erstellen Sie Prod+Stage, Dev, Playground-Umgebungen. | x | x |  |  |
-| Umgebung aktualisieren | Aktualisieren Sie Prod+Stage, Dev, Playground-Umgebungen. | x | x |  |  |
-| Umgebung löschen | Löschen Sie Umgebungen ohne Prod, Dev und Playground. | x | x |  |  |
-| Umgebung löschen | Löschen Sie Prod+Stage-Umgebung. |  |  |  |  |
-| Programm-Setup | Konfigurieren Sie das Programm (einschließlich KPIs). | x |  |  |  |
-| Programm-Setup | Zugriff erlauben |  | x |  | x |
+| Programm hinzufügen | Hinzufügen ein neues Programm. | x |  |  |  |
+| Umgebung erstellen | Erstellen Sie Prod+Stage-, Dev- und Playground-Umgebung. | x | x |  |  |
+| Umgebung aktualisieren | Aktualisieren Sie die Umgebung Prod+Stage, Dev und Playground. | x | x |  |  |
+| Umgebung löschen | Löschen Sie Umgebung ohne Prod, Dev und Playground. | x | x |  |  |
+| Umgebung löschen | Löschen Sie die Umgebung Prod+Stage. |  |  |  |  |
+| Programm einrichten | Konfigurieren Sie Programm (einschließlich KPIs). | x |  |  |  |
+| Programm einrichten | Zugriff erlauben |  | x |  | x |
 | Pipeline-Einrichtung | Einrichten oder Bearbeiten der Pipeline. |  | x |  |  |
-| Pipeline-Ausführung | Starten Sie die Pipeline. | x | x |  |  |
+| Pipeline-Ausführung | Beginn der Pipeline. | x | x |  |  |
 | Pipeline-Ausführung | Ablehnen/Genehmigen Sie wichtige 3-Stufen-Fehler. | x | x | x |  |
 | Pipeline-Ausführung | Bereitstellen der GoLive-Genehmigung. | x | x | x |  |
 | Pipeline-Ausführung | Planen der Bereitstellung für die Produktion. | x | x | x |  |
 | Pipeline-Ausführung | Produktionskanal fortsetzen. |  |  |  |  |
-| Umgebung verwalten  | Fügen Sie im Bildschirm &quot;Umgebung verwalten&quot;das Segment &quot;Publish-Dispatcher&quot;hinzu. | x | x |  |  |  |
-| Push-Aktualisierung | Starten Sie Push Update Pipeline. |  |  |  |  |
-| Persönliches Zugriffstoken erstellen | Zugriff auf Git. |  | x |  | x |
+| Pipeline löschen | Ermöglicht das Löschen einer Pipeline. |  | x |  |  |
+| Ausführung abbrechen | Aktuelle Ausführung abbrechen. |  | x |  |  |
+| Umgebung verwalten  | Hinzufügen Sie das Segment Publish-Dispatcher im Bildschirm &quot;Umgebung verwalten&quot;. | x | x |  |  |  |
+| Push-Aktualisierung | Push-Update-Pipeline des Beginns |  |  |  |  |
+| Persönliches Zugriffs-Token erstellen | Zugriff auf Git. |  | x |  | x |
 
