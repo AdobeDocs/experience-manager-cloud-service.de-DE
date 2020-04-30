@@ -2,7 +2,7 @@
 title: Eine Kurzanleitung zu WCAG 2.1
 seo-title: Eine Kurzanleitung zu WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 Adobe Experience Manager (AEM) als Cloud-Dienst wurde entwickelt, um die Einhaltung der Web Content Accessibility-Richtlinien zu maximieren.
 
-Die [Web Content Accessibility Guidelines, Version 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) sind eine vom [World Wide Web Consortium (W3C)](https://www.w3.org/) im Rahmen seiner [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) entwickelte Zusammenstellung international anerkannter Richtlinien.
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Webinhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Webinhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
 
