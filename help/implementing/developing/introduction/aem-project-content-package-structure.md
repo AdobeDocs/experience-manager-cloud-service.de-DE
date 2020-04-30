@@ -2,7 +2,7 @@
 title: AEM-Projektstruktur
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung im Adobe Experience Manager Cloud-Dienst definieren.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
          + Gruppen
          + ACLs (Berechtigungen)
             + Beliebig `rep:policy` für alle Pfade (veränderlich oder unveränderlich)
-+ The `ui.content` package, or Content Package, contains all content and configuration. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
++ The `ui.content` package, or Content Package, contains all content and configuration. Das Inhaltspaket enthält alles, was nicht im `ui.apps` Paket enthalten ist, oder mit anderen Worten, alles, was nicht in `/apps` oder `/oak:index`. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
    + Kontextabhängige Konfigurationen
       + `/conf`
    + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltsaufbau, der auf in Repo Init definierten Inhaltsstrukturen aufbaut und diese erweitert.
       + `/content`, `/content/dam` usw.
    + Geregelte Tagging-Taxonomien
       + `/content/cq:tags`
-   + Oak-Indizes
-      + `/oak:index`
    + Veraltete etc-Knoten
       + `/etc`
 + Das `all`-Paket ist ein Container-Paket, das NUR die `ui.apps`- und `ui.content`-Pakete als Einbettung enthält. Das `all`-Paket darf keinen eigenen Inhalt **** haben, sondern muss die Bereitstellung an das Repository an seine Unterpakete delegieren.
