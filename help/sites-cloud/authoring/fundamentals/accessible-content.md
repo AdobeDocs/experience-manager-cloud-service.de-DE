@@ -2,7 +2,7 @@
 title: Barrierefreie Inhalte für Adobe Experience Manager als Cloud-Dienst erstellen (WCAG 2.1-Konformität)
 description: Barrierefreies Nutzen von Webinhalten durch Personen mit Behinderungen
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -617,7 +617,7 @@ Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktion
 
 #### Zweck - Tastatur (2.1.1) {#purpose-keyboard}
 
-Ziel dieses Erfolgskriteriums ist es, sicherzustellen, dass Inhalte, wo immer möglich, über eine Tastatur- oder Tastatur-Schnittstelle bedient werden können (sodass eine alternative Tastatur verwendet werden kann). Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie auch von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, die eine augenblickliche Koordination erfordern) sowie von Personen, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren fungieren, verwendet werden. Zu den Keyboard-Emulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, On-Screen-Tastaturen, Scan-Software und eine Vielzahl von Hilfstechnologien und alternative Tastaturen. Personen mit niedrigem Sehvermögen haben möglicherweise auch Schwierigkeiten, einen Zeiger zu verfolgen und die Verwendung von Software viel einfacher (oder nur möglich) zu finden, wenn sie ihn über die Tastatur steuern können.
+Ziel dieses Erfolgskriteriums ist es, sicherzustellen, dass Inhalte, wo immer möglich, über eine Tastatur- oder Tastatur-Schnittstelle bedient werden können (sodass eine alternative Tastatur verwendet werden kann). Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie auch von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, die eine augenblickliche Koordination erfordern) sowie von Personen, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren fungieren, verwendet werden. Zu den Keyboard-Emulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, On-Screen-Tastaturen, Scan-Software und eine Vielzahl von Hilfstechnologien und alternative Tastaturen. Personen mit niedrigem Sehvermögen haben möglicherweise auch Probleme mit der Verfolgung eines Zeigers und finden die Verwendung von Software viel einfacher (oder nur möglich), wenn sie es über die Tastatur steuern können.
 
 #### Treffen - Tastatur (2.1.1) {#how-to-meet-keyboard}
 
