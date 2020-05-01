@@ -1,57 +1,55 @@
 ---
-title: Dateiformate und MIME-Typen, die von Experience Manager Assets als Cloud-Dienst unterstützt werden
-description: Dateiformate und MIME-Typen, die von Experience Manager Assets als Cloud-Dienst unterstützt werden.
+title: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
+description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
-# Assets supported file formats {#supported-file-formats}
+# Von AEM Assets unterstützte Dateiformate {#supported-file-formats}
 
 Adobe Experience Manager als Cloud-Dienst unterstützt grundlegende Content-Management-Funktionen — Datenspeicherung, Online-Verwaltung von Metadaten, Versionierung, Hochladen und Herunterladen usw. — für jede Binärdatei, unabhängig von ihrem Format. Adobe Experience Manager Assets unterstützt eine breite Palette von Dateiformaten und jede Produktfunktion unterstützt unterschiedliche Formate.
 
-Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Mikrodiensten](asset-microservices-configure-and-use.md)bereitgestellt.
+Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
 In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 | Unterstützungsebene | Beschreibung |
-| ------------------------------------------------------------ | --------------------------- |
+| ------------- | --------------------------- |
 | ✓ | Unterstützt |
-| * | Siehe Bemerkungen unter der Tabelle |
+| * | Siehe Anmerkungen unterhalb der Tabelle |
 | - | Nicht zutreffend |
 
-## Asset-Konvertierung mithilfe von Asset-Mikrodiensten {#asset-microservices-supported-formats}
+## Asset conversion using asset microservices {#asset-microservices-supported-formats}
 
 Hier einige der Highlights:
 
-* Wichtige [Adobe-Dateiformate](#adobe-formats) , die von Adobe-Anwendungen und -Diensten produziert werden, einschließlich Adobe Fotoshop, InDesign, Illustrator, XD, Dimension und Acrobat/PDF.
-* Wichtige [Bilddateiformate](#image-formats).
-* [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras, darunter Canon, Nikon, Fujifilm, Olympus und andere Hersteller (powered by Adobe Camera Raw).
-* Allgemeine [Dokument-Formate](#document-formats), einschließlich [Microsoft Office](#microsoft-office-formats) - (Word, Excel, PowerPoint) und [Open Dokument](#opendocument-formats) -Formate.
-* Umfassendes Spektrum an [Video](#video-formats)- und [Audio](#audio-formats) formaten.
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, and Adobe Acrobat or PDF.
+* Gängige [Bildformate](#image-formats).
+* [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
+* Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
+* Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten.](#audio-formats)
 
 Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 
 | Spalte | Beschreibung |
 | ------------ | --------------------------------------------------------------- |
-| Format | Dateiformat (Dateierweiterung) des Assets, Original-Binärdatei |
-| GIF | GIF-Format für die Generierung von Darstellungen |
-| JPEG | JPEG-Format für die Generierung von Darstellungen |
-| PNG | PNG-Format für die Generierung von Darstellungen |
-| XMP | Extraktion von Metadaten aus der ursprünglichen Binärdatei |
-| TXT | Extraktion von Texten aus Dokument zur Indizierung |
-| Breite/Höhe | Unterstützung für das Definieren der Breite und Höhe einer Darstellung (Pixel) |
+| Format | Dateiformat (Dateierweiterung) der ursprünglichen Binärdatei des Assets. |
+| GIF | GIF-Format für die Generierung von Ausgabeformaten. |
+| JPEG | JPEG-Format für die Generierung von Ausgabeformaten. |
+| PNG | PNG-Format für die Generierung von Ausgabeformaten. |
+| Breite/Höhe | Unterstützung zur Definition der Breite und Höhe einer Darstellung in Pixel. |
 
 ### Adobe-Formate {#adobe-formats}
 
-| Dateiformat | GIF | JPEG | PNG | TXT | XMP | Breite/Höhe |
-| ----------- | --- | ---- | --- | --- | --- | ------------ |
+| Dateiformat | GIF | JPEG | PNG | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | - | - | ✓ | - |
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| IDEEN | - | - | - | - | ✓ | - |
+| IDEAS | - | - | - | - | ✓ | - |
 | INDD | ✓ | ✓ | ✓ | - | ✓ | ✓* |
 | INDT | - | - | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -60,12 +58,12 @@ Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 | PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 
-\* Bei INDD (InDesign-Dateien) wird die Größe der Darstellung durch die in der INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in InDesign (&quot;**[!UICONTROL Voreinstellungen&quot;> &quot;Dateihandhabung&quot;> &quot;Vorschau immer mit Dokumenten speichern&quot;, &quot;Vorschau-Größe]**&quot;), um eine größere Darstellung einzubetten.
+\* Bei INDD (InDesign-Dateien) wird die Größe des Ausgabeformats durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in InDesign (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um ein größeres Ausgabeformat einzubetten.
 
 ### Bildformate {#image-formats}
 
-| Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Dateiformat | GIF | JPEG | PNG | Metadatenextraktion | Breite/Höhe |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | BMP | ✓ | ✓ | ✓ | - | ✓ |
 | EPS | - | - | - | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -76,8 +74,8 @@ Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 
 ### Camera RAW-Formate {#camera-raw-formats}
 
-| Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Dateiformat | GIF | JPEG | PNG | Metadatenextraktion | Breite/Höhe |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -85,7 +83,7 @@ Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 | CRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DCR | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | FFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GPR | ✓ | ✓ | ✓ | ✓ | ✓ |
 | IIQ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -106,40 +104,36 @@ Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Dokument-Formate {#document-formats}
+### Dokumentenformate {#document-formats}
 
-| Dateiformat | TXT | XMP |
-| ----------- | --- | --- |
-| EPUB | ✓ | - |
-| HTML | ✓ | - |
-| PS | - | ✓ |
-| RTF | ✓ | - |
-| TEXT | ✓ | - |
-| XML | ✓ | - |
+Die folgenden Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 
-### Microsoft Office-Formate {#microsoft-office-formats}
-
-| Dateiformat | GIF | JPEG | PNG | TEXT | Breite/Höhe |
-| ----------- | --- | ---- | --- | ---- | ------------ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-### OpenDocument-Formate {#opendocument-formats}
-
-| Dateiformat | GIF | JPEG | PNG | TEXT | Höhe |
-| ----------- | --- | ---- | --- | ---- | ------ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| OFG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+|  | GIF | JPEG | PNG | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - |
+| HTML | - | - | - | ✓ | - | ✓ | ✓ |
+| PS | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - |
 
 ### Videoformate {#video-formats}
 
-| Dateiformat | GIF | JPEG | PNG | XMP | Breite/Höhe |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Dateiformat | GIF | JPEG | PNG | Metadatenextraktion | Breite/Höhe |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3G2 | - | - | - | ✓ | - |
 | 3GP | - | - | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -165,27 +159,9 @@ Die Spalten der folgenden Tabellen enthalten die folgenden Informationen:
 
 ### Audioformate {#audio-formats}
 
-Assets als Cloud-Dienst bietet XMP-Unterstützung für die folgenden Audioformate: AIF, ASF, M4A, MP3, WAV und WMA.
-
-## Unterstützte Dokumentformate {#doc-formats}
-
-Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
-
-| Dateiformat | Speicher | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|---|---|---|
-| DOC | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ |
-| PDF | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |
-| RTF | ✓ | ✓ | ✓ |
-| TXT | ✓ | ✓ | ✓ |
-| XLS | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ |
-| PPT | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ |
+Assets als Cloud-Dienst bietet Unterstützung für XMP-Metadaten-Extraktionen für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
 
 >[!MORELIKETHIS]
 >
->* [Asset-Verarbeitung mithilfe von Asset-Mikrodiensten](asset-microservices-overview.md)
+>* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md)
 
