@@ -3,7 +3,7 @@ title: Handbuch zur Assets-Migration
 description: Beschreibt, wie Sie Assets in AEM einfügen, Metadaten anwenden, Ausgabeformate erstellen und diese aktivieren können, um Instanzen zu veröffentlichen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -27,7 +27,7 @@ Bevor Sie tatsächlich einen der Migrationsschritte ausführen, überprüfen und
 >* Synthetic Workflow
 >
 >
-These software are open source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+These software are open-source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Zu AEM migrieren {#migrating-to-aem}
 
@@ -48,7 +48,7 @@ Deaktivieren Sie vor der Migration die Starter für den Workflow „DAM-Update-A
 
 ### Load tags {#loading-tags}
 
-Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar kann die Anwendung von Tags auf Assets mit Tools wie CSV Asset Importer und durch die AEM-Unterstützung für Metadatenprofile automatisiert werden, die Tags müssen dazu aber in das System geladen werden. The [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) feature lets you populate tags by using a Microsoft Excel spreadsheet that is loaded into the system.
+Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar kann die Anwendung von Tags auf Assets mit Tools wie CSV Asset Importer und durch die AEM-Unterstützung für Metadatenprofile automatisiert werden, die Tags müssen dazu aber in das System geladen werden. Mit [Tag Maker von ACS AEM-Tools](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) können Sie Tags mithilfe einer in das System geladenen Microsoft Excel-Tabelle auffüllen.
 
 ### Ingest assets {#ingesting-assets}
 
@@ -60,7 +60,7 @@ Es gibt zwei Herangehensweisen zum Laden von Assets in das System: ein Push-basi
 
 Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer AEM-Instanz lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
 
-Der Ansatz, HTTPS zu durchdrücken, hat zwei Hauptvorteile:
+Der Push-basierte Ansatz mit HTTP hat zwei wesentliche Nachteile:
 
 1. Die Assets müssen über HTTP an den Server übertragen werden. Dies ist mit einem gewissen (zeitlichen) Mehraufwand verbunden, sodass die Migration länger dauert.
 1. Wenn Tags und benutzerdefinierte Metadaten auf die Assets angewendet werden müssen, erfordert dieser Ansatz einen zweiten benutzerdefinierten Prozess, der zum Anwenden dieser Metadaten auf die Assets durchgeführt werden muss (nach dem Asset-Import).
@@ -79,8 +79,8 @@ Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Wo
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
-1. The simplest approach is [ACS Commons’ Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage durch einen Workflow verarbeiten. Darüber hinaus gibt es auch Optionen zum Festlegen von Stapelgrößen.
-1. Sie können den [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gemeinsam mit [Synthetischen Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) verwenden. Dieser Ansatz erfordert zwar viel mehr Mitwirkung, Sie können jedoch den Verwaltungsaufwand für die AEM-Workflow-Engine verringern und gleichzeitig die Verwendung von Serverressourcen optimieren. Darüber hinaus steigert der Fast Action Manager die Leistung durch die dynamische Überwachung der Serverressourcen und die Einschränkung der Systemlast. Beispielskripte wurden auf der Seite mit den ACS Commons-Funktionen bereitgestellt.
+1. Die einfachste Herangehensweise bietet [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage durch einen Workflow verarbeiten. Darüber hinaus gibt es auch Optionen zum Festlegen von Stapelgrößen.
+1. Sie können [Fast Action Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zusammen mit [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) verwenden. Dieser Ansatz erfordert zwar viel mehr Mitwirkung, Sie können jedoch den Verwaltungsaufwand für die AEM-Workflow-Engine verringern und gleichzeitig die Verwendung von Serverressourcen optimieren. Darüber hinaus steigert der Fast Action Manager die Leistung durch die dynamische Überwachung der Serverressourcen und die Einschränkung der Systemlast. Beispielskripte wurden auf der Seite mit den ACS Commons-Funktionen bereitgestellt.
 
 ### Activate assets {#activating-assets}
 
@@ -88,7 +88,7 @@ Bei Bereitstellungen mit einer Veröffentlichungsstufe müssen Sie die Assets f�
 
 Um hier Abhilfe zu schaffen, können Sie [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) für die Asset-Verwaltung einsetzen. Dies funktioniert ohne Sling-Warteschlangen und sorgt für weniger Mehraufwand, während der Workload gedrosselt wird, um eine Überlastung des Servers zu vermeiden. Ein Beispiel für die Verwendung von FAM zur Replikationsverwaltung finden Sie auf der Dokumentationsseite für die Funktion.
 
-Weitere Optionen zum Abrufen von Assets in die Veröffentlichungsfarm sind die Verwendung von [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) oder [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als Werkzeuge im Rahmen von Jackrabbit bereitgestellt werden. Eine andere Möglichkeit ist die Verwendung eines Open-Source-Werkzeugs für Ihre AEM-Infrastruktur namens [Grabbit](https://github.com/TWCable/grabbit), das angeblich schneller ist als vlt.
+Zu weiteren Optionen zum Übertragen von Assets in die Veröffentlichungsfarm gehören u. a. [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) und [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als Tools mit Jackrabbit bereitgestellt werden. Eine andere Möglichkeit ist zudem [Grabbit](https://github.com/TWCable/grabbit), ein Open-Source-Tool für Ihre AEM-Infrastruktur, das schneller sein soll als vlt.
 
 Jeder dieser Ansätze ist dahingehend eingeschränkt, dass die Assets in der Autoreninstanz nicht als aktiviert angezeigt werden. Um diese Assets mit dem korrekten Aktivierungsstatus zu kennzeichnen, müssen Sie ein Skript ausführen, damit die Assets als aktiviert markiert werden.
 
@@ -110,7 +110,7 @@ Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, u
 
 ### Enable Workflows {#enabling-workflows}
 
-Nach abgeschlossener Migration sollten die Starter für die Workflows „DAM-Update-Asset“ neu aktiviert werden, um die Wiedergabegenerierung und Metadatenextraktion für die laufende, tagtägliche Systemnutzung zu unterstützen.
+Nach abgeschlossener Migration sollten die Starter für die Workflows „DAM-Update-Asset“ neu aktiviert werden, um die Ausgabegenerierung und Metadatenextraktion für die laufende, tagtägliche Systemnutzung zu unterstützen.
 
 ## Migrieren zwischen AEM-Instanzen {#migrating-between-aem-instances}
 
@@ -124,7 +124,7 @@ In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Wiedergaben s
 
 1. Es werden zwei Tools zum Verschieben von Assets zwischen AEM-Instanzen empfohlen:
 
-   * Mit **Vault Remote Copy** (oder vlt rcp) können Sie vlt netzwerkübergreifend einsetzen. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repositorydaten von einer Instanz herunter und lädt diese in die andere Instanz. Vlt rcp is documented at [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * Mit **Vault Remote Copy** (oder vlt rcp) können Sie vlt netzwerkübergreifend einsetzen. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repositorydaten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** ist ein Open-Source-Tool zur Inhaltssynchronisierung, das von Time Warner Cable für die eigene AEM-Implementierung entwickelt wurde. Durch die Nutzung kontinuierlicher Datenströme weist das Tool im Vergleich zu vlt rcp eine geringere Latenz auf. Darüber hinaus soll es zwei- bis zehnmal schneller sein als vlt rcp. Grabbit unterstützt zudem die alleinige Synchronisierung von Delta-Inhalten, sodass Änderungen nach erfolgreich abgeschlossener Erstmigration synchronisiert werden.
 
 1. Follow the instructions to [activate assets](#activating-assets) documented for the initial migration to AEM.
