@@ -3,7 +3,7 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ Asset Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung 
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. Administratoren können die Konfigurationen der Workflows für die Nachbearbeitung erstellen und verwalten, einschließlich optionaler Anpassungen. Die Anpassung von Workflows ermöglicht Erweiterbarkeit und vollständige Anpassung.
 
-Mit Asset Microservices können Sie eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die standardmäßig mehr Formate abdecken als mit früheren Versionen von Experience Manager möglich, z. B. die Miniaturansicht-Extraktion von PSD- und PSB-Formaten, die zuvor Drittanbieterlösungen wie ImageMagick erforderten.
+Mit Asset Microservices können Sie eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken als mit früheren Versionen von Experience Manager möglich ist. Beispielsweise ist jetzt eine Miniaturansicht-Extraktion von PSD- und PSB-Formaten möglich, die zuvor von Drittanbietern wie ImageMagick benötigt wurde.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -108,7 +108,7 @@ Das verarbeitende Profil kann eine FPO-Darstellung (nur für Platzierung) enthal
 
 ## Verwenden von Asset-Microservices zur Verarbeitung von Assets {#use-asset-microservices}
 
-Erstellen Sie die zusätzlichen, benutzerdefinierten Verarbeitungsordner und wenden Sie sie auf bestimmte Profil an, damit Experience Manager Assets verarbeiten kann, die in diese  hochgeladen oder aktualisiert werden. Das standardmäßige, integrierte Standard-Profil für die Verarbeitung wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
+Erstellen Sie die zusätzlichen, benutzerdefinierten Verarbeitungsordner und wenden Sie sie auf bestimmte Profil an, damit Experience Manager Assets verarbeiten kann, die in diese  hochgeladen oder aktualisiert wurden. Das standardmäßige, integrierte Standard-Profil für die Verarbeitung wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
 Es gibt zwei Möglichkeiten, Verarbeitungsprofile auf Ordner anzuwenden:
 
