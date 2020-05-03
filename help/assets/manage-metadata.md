@@ -4,14 +4,14 @@ description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
+source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
 
 ---
 
 
 # Verwalten von Metadaten für digitale Assets {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Dies erleichtert die Kategorisierung und Organisation von Assets und hilft Menschen, die nach einem bestimmten Asset suchen. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
+[!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Sie ermöglicht eine einfachere Kategorisierung und Organisation von Assets und hilft Menschen, die nach einem bestimmten Asset suchen. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. Mit der Möglichkeit, Metadaten mit Ihren Assets zu verwalten, können Sie Assets automatisch basierend auf ihren Metadaten organisieren und verarbeiten.
 
 >[!MORELIKETHIS]
 >
@@ -23,7 +23,7 @@ source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## Wozu dienen Metadaten? {#why-metadata}
+## Die Bedeutung von Metadaten {#why-metadata}
 
 Metadaten sind Informationen über Daten. In dieser Hinsicht beziehen sich Daten auf Ihr digitales Asset, z. B. ein Bild. Metadaten sind für eine effiziente Asset-Verwaltung von entscheidender Bedeutung.
 
@@ -35,7 +35,7 @@ Metadaten sind alle für ein Asset verfügbaren Daten, die jedoch nicht unbeding
 * Name des Ordners, in dem er enthalten ist.
 * Zugehörige Assets oder angewendete Tags.
 
-These are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
+Die obigen Eigenschaften sind die grundlegenden Metadateneigenschaften, die für Assets verwaltet werden [!DNL Experience Manager] können, sodass Benutzer alle Assets anzeigen können. Die Reihenfolge der Assets nach dem Datum der letzten Änderung ist beispielsweise hilfreich, wenn Sie versuchen, kürzlich hinzugefügte Assets zu ermitteln.
 
 Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – darunter:
 
@@ -45,13 +45,13 @@ Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – daru
 * Beschreibung des Assets.
 * Tags, die einem Asset zugewiesen sind.
 
-Mit mehr Metadaten können Sie Assets genauer einteilen. Außerdem erweisen sie sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, einige hundert Dateien zu verwalten, die nur auf den Dateinamen basieren. Dieser Ansatz ist jedoch nicht skalierbar und fällt schnell unter, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Assets steigt.
+Mit mehr Metadaten können Sie Assets genauer einteilen. Außerdem erweisen sie sich als nützlich, wenn die Menge digitaler Daten ansteigt. Es ist möglich, einige hundert Dateien zu verwalten, die nur auf den Dateinamen basieren. Dieser Ansatz ist jedoch nicht skalierbar. Es bleibt hinter den Erwartungen zurück, wenn die Zahl der beteiligten Personen und die Zahl der verwalteten Vermögenswerte steigt.
 
 Durch Hinzufügen von Metadaten wächst der Wert eines digitalen Assets, da das Asset
 
 * Mehr Zugänglichkeit - Systeme und Benutzer können es leicht finden.
 * Einfachere Verwaltung - Sie können Assets mit demselben Satz Eigenschaften einfacher finden und Änderungen darauf anwenden.
-* Vollständiger: Je mehr Metadaten Sie zu einem Asset hinzugefügt haben, desto mehr Informationen und Kontext werden mit dem Asset geliefert.
+* Complete - Asset enthält weitere Informationen und Kontext mit weiteren Metadaten.
 
 For these reasons, [!DNL Assets] provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
@@ -68,11 +68,7 @@ Technische Metadaten eignen sich für Software-Anwendungen, die mit digitalen As
 
 Beschreibende Metadaten sind solche, die sich auf die Anwendungsdomäne beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Es wird manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Breiten- und Längengrad verfolgen und Geotag für das Bild hinzufügen.
 
-Da der manuelle Aufwand für die Erstellung beschreibender Metadaten sehr kostspielig ist, wurden Standards aufgestellt, um den Austausch von Metadaten über Softwaresysteme und Organisationen hinweg zu erleichtern.
-
-[!DNL Experience Manager Assets] unterstützt alle relevanten Standards für das Metadatenmanagement.
-
-Aufgrund der Wichtigkeit von Metadaten und des hohen manuellen Arbeitsaufwands für ihre Erstellung wurden Standards aufgestellt, die den Austausch erleichtern.
+Die Kosten für das manuelle Erstellen beschreibender Metadaten sind hoch. Daher werden Standards eingeführt, um den Austausch von Metadaten zwischen Softwaresystemen und Organisationen zu erleichtern. [!DNL Experience Manager Assets] unterstützt alle relevanten Standards für das Metadatenmanagement.
 
 ## Kodierungsstandards {#encoding-standards}
 
@@ -101,15 +97,15 @@ ID3-Tags wurden für das MP3-Dateiformat entwickelt. Weitere Informationen zu Fo
 
 ### Exif {#exif}
 
-Das austauschbare Bilddateiformat (Exif) ist das beliebteste Metadatenformat für die Digitalfotografie. Es bietet eine Möglichkeit zum Einbetten eines festen Wortschatzes mit Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Da Exif automatisch von modernen Digitalkameras erstellt und durch moderne Grafiksoftware unterstützt wird, kann es als kleinster gemeinsamer Nenner für das Metadaten-Management angesehen werden.
+Das austauschbare Bilddateiformat (Exif) ist das beliebteste Metadatenformat für die Digitalfotografie. Es bietet eine Möglichkeit zum Einbetten eines festen Wortschatzes mit Metadateneigenschaften in viele Dateiformate wie JPEG, TIFF, RIFF und WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Moderne Digitalkameras erstellen Exif-Metadaten und moderne Grafiksoftware unterstützen sie. Das Format Exif ist der kleinste gemeinsame Nenner für die Verwaltung von Metadaten, besonders für Bilder.
 
 Eine wichtige Einschränkung von Exif besteht darin, dass einige gängige Bilddateiformate wie BMP, GIF oder PNG diese nicht unterstützen.
 
-Metadatenfelder, die normalerweise von Exif definiert werden, sind technischer Natur und werden nur in begrenztem Umfang für die Verwaltung beschreibender Metadaten verwendet. Aus diesem Grund werden [!DNL Experience Manager Assets] Angebote von Exif-Eigenschaften in [gängige Metadaten-Schemata](metadata-schemas.md) und in XMP zugeordnet.
+Metadatenfelder, die von Exif definiert werden, sind typischerweise technischer Natur und werden nur in begrenztem Umfang für das beschreibende Metadatenmanagement verwendet. Aus diesem Grund werden [!DNL Experience Manager Assets] Angebote von Exif-Eigenschaften in [gängige Metadaten-Schemata](metadata-schemas.md) und in XMP zugeordnet.
 
 #### Other metadata {#other-metadata}
 
-Andere Metadaten können aus Dateien von Microsoft Word, PowerPoint, Excel usw. eingebettet werden.
+Other metadata that can be embedded from files include [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ## Verwalten von Metadaten für digitale Assets {#manage-assets-metadata}
 
@@ -163,14 +159,14 @@ Die unterstützten Metadaten-Schemata sind unten aufgeführt.
 
 * DC - [!DNL Dublin Core] ist ein wichtiger und häufig verwendeter Metadatensatz.
 * DICOM – Digital Imaging and Communications in Medicine.
-* Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard enthält viele themenspezifische Metadaten.
-* rdf – Resource Description Framework: Für generische semantische Webmetadaten.
+* `Iptc4xmpCore` und `iptc4xmpExt` - International Press Communications Standard enthält viele themenspezifische Metadaten.
+* RDF - Resource Description Framework - für allgemeine semantische Webmetadaten.
 * XMP - [!DNL Extensible Metadata Platform].
-* xmpBJ – Einfaches Auftrags-Ticketing.
+* `xmpBJ` - Einfache Job Ticketing.
 
 ### Application-specific metadata {#application-specific-metadata}
 
-Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Metadaten. Diese Metadaten können unter Umständen nicht von anderen Anwendungen verwendet werden. For example, if you have an asset with [!DNL Adobe Photoshop] metadata and another image-rendering application tries to access the metadata, it may not be able to access the metadata. Wenn Sie feststellen, dass Ihre Assets viele anwendungsspezifische Metadaten enthalten, können Sie einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
+Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Metadaten. Wenn Sie solche Metadaten verwenden, können andere Anwendungen die Metadaten möglicherweise nicht verwenden. Beispielsweise kann eine andere Anwendung zum Rendern von Bildern möglicherweise nicht auf [!DNL Adobe Photoshop] Metadaten zugreifen. Sie können einen Workflow-Schritt erstellen, der eine anwendungsspezifische Eigenschaft in eine Standardeigenschaft ändert.
 
 * ACDSee - Metadata managed by the [!DNL ACDSee] program. Siehe [www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album].
@@ -180,8 +176,8 @@ Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Meta
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
-* MicrosoftPhoto und MP: Microsoft Photo.
-* PDF &amp; PDF/X.
+* MicrosoftFoto und MP - Microsoft Foto.
+* PDF und PDF/X.
 * Fotoshop und psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
@@ -204,8 +200,8 @@ Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Meta
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF und PDF/X - Adobe PDF- und Drittanbieteranwendungen.
-* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
-* XMP.
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP-Metadaten für Seiten-Text.
 
 ### Multimedia-spezifische Metadaten {#multimedia-specific-metadata}
@@ -218,5 +214,5 @@ Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Meta
 Das Erstellen von durch Metadaten angetriebenen Workflows hilft Ihnen, einige Prozesse zu automatisieren, was die Effizienz verbessert. In einem metadatengesteuerten Workflow liest das Workflow-Managementsystem den Workflow und führt anschließend einige vordefinierte Aktionen aus. Im Folgenden finden Sie einige Beispiele für den Einsatz metadatengesteuerter Workflows:
 
 * Der Workflow kann prüfen, ob ein Bild einen Titel hat oder nicht. Ist dies nicht der Fall, benachrichtigt das System, einen Titel hinzuzufügen.
-* Der Arbeitsablauf kann prüfen, ob ein Copyright-Hinweis für ein Asset die Verteilung zulässt. Dementsprechend sendet das System das Asset an den einen oder anderen Server.
+* Der Arbeitsablauf kann prüfen, ob ein Copyright-Hinweis für ein Asset die Verteilung zulässt. Das System sendet das Asset an den einen oder anderen Server.
 * Ein Workflow kann nach Assets ohne vordefinierte, obligatorische Metadaten oder Assets mit *ungültigen* Metadaten suchen.
