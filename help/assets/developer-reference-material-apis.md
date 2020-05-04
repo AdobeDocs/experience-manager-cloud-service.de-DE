@@ -3,7 +3,7 @@ title: 'Assets-APIs für Digital Asset Management in Adobe Experience Manager as
 description: Asset-APIs ermöglichen grundlegende CRUD-Operationen (Create-Read-Update-Delete – Erstellen-Lesen-Aktualisieren-Löschen) zur Verwaltung von Assets, einschließlich Binär- und Metadaten, Ausgabeformaten, Kommentaren und Inhaltsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,7 +48,7 @@ Der erste Schritt besteht darin, eine HTTP-POST-Anfrage an den Ordner zu senden,
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten:
 
