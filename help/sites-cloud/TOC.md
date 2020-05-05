@@ -2,7 +2,7 @@
 sub-product: Erstellen von Inhalten in AEM als Cloud-Dienst
 user-guide-title: Erstellen von Inhalten in AEM als Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [Exportieren in CSV](authoring/fundamentals/csv-export.md)
       + [Komponenten](authoring/fundamentals/components.md)
       + [Authoring für Mobilgeräte](authoring/fundamentals/mobile.md)
-      + [Barrierefrei zugängliche Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](authoring/fundamentals/accessible-content.md)
+      + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) ](authoring/fundamentals/accessible-content.md)
       + [Fehlerbehebung](authoring/fundamentals/troubleshooting.md)
       + [Tastaturbefehle](authoring/fundamentals/keyboard-shortcuts.md)
    + Authoring – Funktionen {#features}
@@ -56,12 +56,12 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [Weiterleiten von Launches](authoring/launches/promoting.md)
    + Workflows {#workflows}
       + [Arbeiten mit Workflows](authoring/workflows/overview.md)
-      + [Anwenden von Workflows auf Seiten](authoring/workflows/applying.md)
+      + [Anwenden von Workflows auf Seiten ](authoring/workflows/applying.md)
       + [Teilnehmen an Workflows](authoring/workflows/participating.md)
    + Personalisierung     {#personalization}
       + [Überblick über die Personalisierung](authoring/personalization/overview.md)
-      + [Seitenvorschau mit ContextHub-Daten](authoring/personalization/contexthub.md)
-      + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
+      + [Vorschau von Seiten mit ContextHub-Daten ](authoring/personalization/contexthub.md)
+      + [Verfassen zielgerichteter Inhalte im Targeting-Modus ](authoring/personalization/targeted-content.md)
       + [Verwenden zielgerichteter Inhalte in Multisites](authoring/personalization/multisite-targeted-content.md)
       + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](authoring/personalization/multisite-structure.md)
       + [Verwalten von Aktivitäten](authoring/personalization/activities.md)
