@@ -2,7 +2,7 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ Wenn beispielsweise `$[secret:server_password]` eine Textdatei mit dem Namen **s
 Wenn für eine OSGI-Eigenschaft unterschiedliche Werte für &quot;author&quot;und &quot;publish&quot;erforderlich sind:
 
 * Es sollten separate `config.author` und `config.publish` OSGi-Ordner verwendet werden, wie im Abschnitt [Runmode Resolution beschrieben](#runmode-resolution).
-* Es sollten unabhängige Variablennamen verwendet werden. Es wird empfohlen, ein Präfix wie author_ zu verwenden<variablename> und publish_<variablename> wobei die Variablennamen identisch sind
+* Es sollten unabhängige Variablennamen verwendet werden. Es wird empfohlen, ein Präfix zu verwenden, z. B. `author_<variablename>` und `publish_<variablename>` bei dem die Variablennamen identisch sind
 
 ### Konfigurationsbeispiele {#configuration-examples}
 
@@ -530,7 +530,7 @@ Wie oben erwähnt, werden durch Aufrufen der API die neuen Variablen und Werte i
 
 In der Regel rufen Kunden die API auf, um Umgebung festzulegen, bevor Code bereitgestellt wird, der auf sie in Cloud Manager basiert. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 
-Beachten Sie, dass die API bei Verwendung einer Pipeline möglicherweise nicht erfolgreich ist. Entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
+Beachten Sie, dass die API möglicherweise nicht erfolgreich ist, wenn eine Pipeline verwendet wird, entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
 
 Es kann Situationen geben, in denen eine geplante Bereitstellung von Kundencode auf vorhandenen Variablen basiert, um neue Werte zu erhalten, was mit dem aktuellen Code nicht übereinstimmen würde. Wenn dies Besorgnis erregend ist, wird empfohlen, die Variablenänderungen in additiver Weise vorzunehmen. Erstellen Sie dazu neue Variablennamen, anstatt nur den Wert alter Variablen zu ändern, sodass der alte Code nie auf den neuen Wert verweist. Wenn das neue Release stabil aussieht, können Sie dann die älteren Werte entfernen.
 
