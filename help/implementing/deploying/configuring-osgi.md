@@ -2,7 +2,7 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 Der Zweck besteht darin, dass sich der Wert der OSGI-Eigenschaft für &quot;stage&quot;, &quot;prod&quot;und für jede der 3 dev-Umgebung `my_var1` unterscheidet. Daher muss die Cloud Manager-API aufgerufen werden, um den Wert für `my_var1` jedes dev-env festzulegen.
 
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Inhalt von "myfile.cfg.json"</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**Beispiel 3**
+
+Der Wert der OSGi-Eigenschaft muss für stage-, production- und nur eine dev-Umgebung gleich sein, für die anderen beiden dev-Umgebung jedoch unterschiedlich sein. `my_var1` In diesem Fall muss die Cloud Manager-API aufgerufen werden, um den Wert `my_var1` für jede dev-Umgebung festzulegen, einschließlich für die dev-Umgebung, die denselben Wert wie stage und production haben sollte. Der in der **Konfiguration** des Ordners festgelegte Wert wird nicht übernommen.
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Inhalt von "myfile.cfg.json"</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+Eine andere Möglichkeit wäre, einen Standardwert für das Ersetzungstoken im Ordner &quot;config.dev&quot;festzulegen, der mit dem im Ordner &quot; **config** &quot;identisch ist.
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>Inhalt von "myfile.cfg.json"</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## Cloud Manager-API-Format zum Festlegen von Eigenschaften {#cloud-manager-api-format-for-setting-properties}
+
+### Festlegen von Werten über API {#setting-values-via-api}
+
+Durch Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungspipeline für Kundencode. Der Autor- und der Veröffentlichungsdienst werden neu gestartet und referenziert die neuen Werte, was in der Regel einige Minuten dauert.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Beachten Sie, dass Standardvariablen nicht über die API festgelegt werden, sondern in der OSGi-Eigenschaft selbst.
+
+Weitere Informationen finden Sie auf [dieser Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables).
+
+### Abrufen von Werten über API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+Weitere Informationen finden Sie auf [dieser Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables).
+
+### Löschen von Werten über API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+Um eine Variable zu löschen, fügen Sie sie mit einem leeren Wert ein.
+
+Weitere Informationen finden Sie auf [dieser Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables).
+
+### Abrufen von Werten über die Befehlszeile {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Festlegen von Werten über die Befehlszeile {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Löschen von Werten über die Befehlszeile {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Weitere Informationen zum Konfigurieren von Werten mithilfe des Cloud Manager-Plugins für die Adobe I/O-CLI finden Sie auf [dieser Seite](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
+
+### Anzahl der Variablen {#number-of-variables}
+
+Es können bis zu 20 Variablen deklariert werden.
+
+## Überlegungen zur Bereitstellung für die spezifischen Konfigurationswerte für &quot;Geheim&quot;und &quot;Umgebung&quot; {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Da die für geheime und Umgebung spezifischen Konfigurationswerte außerhalb von Git liegen und daher nicht Teil des formalen AEM als Bereitstellungsmechanismus für Cloud-Dienste sind, sollte der Kunde AEM als Bereitstellungsprozess für Cloud-Dienste verwalten, steuern und integrieren.
+
+Wie oben erwähnt, werden durch Aufrufen der API die neuen Variablen und Werte in Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungspipeline für den Kundencode. Der Autor- und der Veröffentlichungsdienst werden neu gestartet und referenziert die neuen Werte, was in der Regel einige Minuten dauert. Beachten Sie, dass die Qualitätsstufen und Tests, die von Cloud Manager während einer regulären Codebereitstellung ausgeführt werden, während dieses Prozesses nicht ausgeführt werden.
+
+In der Regel rufen Kunden die API auf, um Umgebung festzulegen, bevor Code bereitgestellt wird, der auf sie in Cloud Manager basiert. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
+
+Beachten Sie, dass die API bei Verwendung einer Pipeline möglicherweise nicht erfolgreich ist. Entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
+
+Es kann Situationen geben, in denen eine geplante Bereitstellung von Kundencode auf vorhandenen Variablen basiert, um neue Werte zu erhalten, was mit dem aktuellen Code nicht übereinstimmen würde. Wenn dies Besorgnis erregend ist, wird empfohlen, die Variablenänderungen in additiver Weise vorzunehmen. Erstellen Sie dazu neue Variablennamen, anstatt nur den Wert alter Variablen zu ändern, sodass der alte Code nie auf den neuen Wert verweist. Wenn das neue Release stabil aussieht, können Sie dann die älteren Werte entfernen.
+
+Da die Werte einer Variablen nicht versioniert sind, kann ein Rückgängigmachen des Codes dazu führen, dass sie auf neuere Werte verweisen, die Probleme verursachen. Die oben genannte Strategie für eine additive Variable würde auch hier helfen.
+
+Diese zusätzliche Variablenstrategie ist auch für Szenarien der Disaster Recovery nützlich, bei denen die Variablennamen und -werte, auf die sie Bezug nehmen, bei Bedarf mehrere Tage vor der Bereitstellung unverändert bleiben. Dies beruht auf einer Strategie, bei der ein Kunde einige Tage wartet, bevor diese älteren Variablen entfernt werden, da andernfalls der ältere Code nicht über geeignete Variablen zum Verweisen verfügt.
