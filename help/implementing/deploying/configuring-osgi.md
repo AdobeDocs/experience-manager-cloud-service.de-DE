@@ -2,10 +2,10 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
-ht-degree: 7%
+source-wordcount: '2214'
+ht-degree: 4%
 
 ---
 
@@ -127,34 +127,34 @@ AEM als Cloud-Dienst erfordert die Verwendung von Umgebung-spezifischen Konfigur
 
 Verwenden Sie für geheime Umgebung spezifische Konfigurationen, um den Wert für Geheimnisse in allen AEM-Umgebung als Cloud-Dienst zu speichern, einschließlich Stage und Produktion.
 
-### Hinzufügen einer neuen Konfiguration zum Repository {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### Informationen, die Sie dafür benötigen {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-Um eine neue Konfiguration zum Repository hinzuzufügen, benötigen Sie folgende Informationen:
+To add a new configuration to the repository you need to know the following:
 
 1. The **Persistent Identity** (PID) of the service.
 
    Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   Erstellen Sie beispielsweise einen Knoten, `com.day.cq.wcm.core.impl.VersionManagerImpl.` um **AEM WCM Version Manager** zu konfigurieren.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Ob ein bestimmter Ausführungsmodus erforderlich ist. Erstellen Sie den Ordner:
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - für alle Ausführungsmodi
-   * `config.author` - für die Umgebung des Verfassers
-   * `config.publish` - Umgebung zur Veröffentlichung
-   * `config.<run-mode>` - gegebenenfalls
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
 1. Whether a **Configuration** or **Factory Configuration** is necessary.
-1. Die einzelnen Parameter, die konfiguriert werden müssen, einschließlich etwaiger vorhandener Parameterdefinitionen, die neu erstellt werden müssen.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Referenzieren Sie das einzelne Parameterfeld in der Web-Konsole. Der Name wird für jeden Parameter in Klammern angezeigt.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   Erstellen Sie beispielsweise eine Eigenschaft
-   `versionmanager.createVersionOnActivation` , um Version **auf Aktivierung** erstellen zu konfigurieren.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -162,29 +162,31 @@ Um eine neue Konfiguration zum Repository hinzuzufügen, benötigen Sie folgende
 
    `select * from sling:OsgiConfig`
 
-   In diesem Fall kann diese Konfiguration kopiert ` /apps/<yourProject>/`und dann am neuen Speicherort angepasst werden.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## Erstellen der Konfiguration im Repository {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaßen vor:
+To actually add the new configuration to the repository:
 
-1. Erstellen Sie im ui.apps-Projekt je nach verwendetem Ausführungsmodus einen `/apps/…/config.xxx` Ordner
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. Erstellen Sie eine neue JSON-Datei mit dem Namen der PID und fügen Sie die `.cfg.json` Erweiterung hinzu
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. Die JSON-Datei mit den Schlüsselwertpaaren für die OSGi-Konfiguration füllen
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >Wenn Sie einen vordefinierten OSGi-Dienst konfigurieren, können Sie die Namen der OSGi-Eigenschaften über `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Speichern Sie die JSON-Datei in Ihrem Projekt.
+1. Save the JSON file to your project. -->
 
 ## Konfigurationseigenschaftsformat in Quellcodeverwaltung {#configuration-property-format-in-source-control}
 
-Das Erstellen einer neuen OSGI-Konfigurationseigenschaft wird im Abschnitt zum [Hinzufügen einer neuen Konfiguration zum Repository](#creating-the-configuration-in-the-repository) oben beschrieben. Führen Sie die folgenden Schritte aus und ändern Sie die Syntax wie in den Unterabschnitten unten beschrieben:
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Führen Sie die folgenden Schritte aus und ändern Sie die Syntax wie in den Unterabschnitten unten beschrieben:
 
 ### Inline-Werte {#inline-values}
 
@@ -502,7 +504,7 @@ Wie oben erwähnt, werden durch Aufrufen der API die neuen Variablen und Werte i
 
 In der Regel rufen Kunden die API auf, um Umgebung festzulegen, bevor Code bereitgestellt wird, der auf sie in Cloud Manager basiert. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 
-Beachten Sie, dass die API möglicherweise nicht erfolgreich ist, wenn eine Pipeline verwendet wird, entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
+Beachten Sie, dass die API bei Verwendung einer Pipeline möglicherweise nicht erfolgreich ist. Entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
 
 Es kann Situationen geben, in denen eine geplante Bereitstellung von Kundencode auf vorhandenen Variablen basiert, um neue Werte zu erhalten, was mit dem aktuellen Code nicht übereinstimmen würde. Wenn dies Besorgnis erregend ist, wird empfohlen, die Variablenänderungen in additiver Weise vorzunehmen. Erstellen Sie dazu neue Variablennamen, anstatt nur den Wert alter Variablen zu ändern, sodass der alte Code nie auf den neuen Wert verweist. Wenn das neue Release stabil aussieht, können Sie dann die älteren Werte entfernen.
 
