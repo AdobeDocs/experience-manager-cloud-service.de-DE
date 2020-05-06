@@ -2,9 +2,9 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ Eine OSGi-Konfigurationsdatei wird definiert unter:
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-entsprechend dem Konfigurationsformat [&quot;]cfg.json OSGi&quot;(entsprechend dem Konfigurationsformat &quot;cfg.json OSGi&quot;).
+dem Konfigurationsformat cfg.json OSGi folgen.
 
 > [!NOTE]
 >
@@ -504,7 +504,7 @@ Wie oben erwähnt, werden durch Aufrufen der API die neuen Variablen und Werte i
 
 In der Regel rufen Kunden die API auf, um Umgebung festzulegen, bevor Code bereitgestellt wird, der auf sie in Cloud Manager basiert. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 
-Beachten Sie, dass die API bei Verwendung einer Pipeline möglicherweise nicht erfolgreich ist. Entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
+Beachten Sie, dass die API möglicherweise nicht erfolgreich ist, wenn eine Pipeline verwendet wird, entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
 
 Es kann Situationen geben, in denen eine geplante Bereitstellung von Kundencode auf vorhandenen Variablen basiert, um neue Werte zu erhalten, was mit dem aktuellen Code nicht übereinstimmen würde. Wenn dies Besorgnis erregend ist, wird empfohlen, die Variablenänderungen in additiver Weise vorzunehmen. Erstellen Sie dazu neue Variablennamen, anstatt nur den Wert alter Variablen zu ändern, sodass der alte Code nie auf den neuen Wert verweist. Wenn das neue Release stabil aussieht, können Sie dann die älteren Werte entfernen.
 
