@@ -2,10 +2,10 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 4%
+source-wordcount: '2317'
+ht-degree: 5%
 
 ---
 
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## Erstellen der Konfiguration im Repository {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaßen vor:
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. Erstellen Sie im ui.apps-Projekt je nach verwendetem Ausführungsmodus einen `/apps/…/config.xxx` Ordner
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. Erstellen Sie eine neue JSON-Datei mit dem Namen der PID und fügen Sie die `.cfg.json` Erweiterung hinzu
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. Die JSON-Datei mit den Schlüsselwertpaaren für die OSGi-Konfiguration füllen
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >Wenn Sie einen vordefinierten OSGi-Dienst konfigurieren, können Sie die Namen der OSGi-Eigenschaften über `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. Speichern Sie die JSON-Datei in Ihrem Projekt. -->
 
 ## Konfigurationseigenschaftsformat in Quellcodeverwaltung {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+Das Erstellen einer neuen OSGI-Konfigurationseigenschaft wird im Abschnitt zum [Hinzufügen einer neuen Konfiguration zum Repository](#creating-the-configuration-in-the-repository) oben beschrieben.
 
 Führen Sie die folgenden Schritte aus und ändern Sie die Syntax wie in den Unterabschnitten unten beschrieben:
 
