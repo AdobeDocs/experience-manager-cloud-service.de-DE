@@ -3,16 +3,27 @@ title: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Date
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2e73a9bba91f15702bdeb1d57e87b688360661bd
+source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 71%
 
 ---
 
 
 # Von AEM Assets unterstützte Dateiformate {#supported-file-formats}
 
-Adobe Experience Manager als Cloud-Dienst unterstützt grundlegende Content-Management-Funktionen — Datenspeicherung, Online-Verwaltung von Metadaten, Versionierung, Hochladen und Herunterladen usw. — für jede Binärdatei, unabhängig von ihrem Format. Adobe Experience Manager Assets unterstützt eine breite Palette von Dateiformaten und jede Produktfunktion unterstützt unterschiedliche Formate.
+Adobe Experience Manager as a Cloud Service unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. Adobe Experience Manager Assets unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
-Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
+Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Volltextindizierung. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
+
+Zu den Highlights für die Asset-Konvertierung mithilfe von Asset-Mikrodiensten zählen:
+
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, and Adobe Acrobat or PDF.
+* Gängige [Bildformate](#image-formats).
+* [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
+* Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
+* Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten](#audio-formats).
 
 In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
@@ -22,17 +33,7 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | * | Siehe Anmerkungen unterhalb der Tabelle |
 | - | Nicht zutreffend |
 
-## Asset conversion using asset microservices {#asset-microservices-supported-formats}
-
-Hier einige der Highlights:
-
-* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, and Adobe Acrobat or PDF.
-* Gängige [Bildformate](#image-formats).
-* [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
-* Common [document formats](#document-formats), including Microsoft Office and Open Document formats.
-* Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten.](#audio-formats)
-
-### Adobe-Formate {#adobe-formats}
+## Adobe-Formate {#adobe-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -48,9 +49,9 @@ Hier einige der Highlights:
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Bei INDD (InDesign-Dateien) wird die Größe des Ausgabeformats durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen in InDesign (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um ein größeres Ausgabeformat einzubetten.
+\* For [!DNL Adobe InDesign] files (INDD), the size of rendition is determined by the preview embedded in the INDD file. Configure the preferences in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) to embed larger rendition.
 
-### Bildformate {#image-formats}
+## Bildformate {#image-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
@@ -62,7 +63,31 @@ Hier einige der Highlights:
 | SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-### Camera RAW-Formate {#camera-raw-formats}
+## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
+
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | - | - | - | - |
+| PSD   ‡ | ✓ | - | - | - | - |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ | - | - | - | - |
+
+‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. It is an image that is generated by [!DNL Adobe Photoshop] and is included in the PSD file. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+
+Die folgenden Untertypen von Rasterbilddateiformaten, die nicht unterstützt werden [!DNL Dynamic Media]:
+
+* PNG-Dateien mit einer IDAT-Größe größer als 100 MB.
+* PSB-Dateien.
+* PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
+* PSD-Dateien mit einer Bittiefe größer als 16.
+* TIFF-Dateien mit Gleitkommadaten.
+* TIFF-Dateien mit Lab-Farbraum.
+
+## [!DNL Camera RAW] formate {#camera-raw-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -94,7 +119,7 @@ Hier einige der Highlights:
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-### Dokumentenformate {#document-formats}
+## Dokumentenformate {#document-formats}
 
 Die folgenden Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 
@@ -120,7 +145,15 @@ Die folgenden Dokument-Formate werden für Asset-Management-Funktionen unterstü
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-### Videoformate {#video-formats}
+## Dokument-Formate in [!DNL Dynamic Media] {#document-support-dynamic-media}
+
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| INDD | ✓ | - | - | - | - |
+
+## Videoformate {#video-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -147,7 +180,28 @@ Die folgenden Dokument-Formate werden für Asset-Management-Funktionen unterstü
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-### Audioformate {#audio-formats}
+## Videoformate [!DNL Dynamic Media] zum Transkodieren {#video-dynamic-media-transcoding}
+
+| Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
+|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| MP4 | MPEG-4 | H264/AVC (alle Profile) |  |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
+| M4V | Apple iTunes | H264/AVC |  |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| WebM | WebM | Google VP8 |  |
+| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
+| MTS | AVCHD | H264/AVC |  |
+| MKV | Matroska | H264/AVC |  |
+| R3D, RM | Red Raw Video | MJPEG 2000 |  |
+| RAM, RM | RealVideo | Nicht unterstützt | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
+| FLAC | Native Flac | Free Lossless Audio Codec |  |
+| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec |  |
+
+## Audioformate {#audio-formats}
 
 Assets als Cloud-Dienst bietet Unterstützung für XMP-Metadaten-Extraktionen für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
 
