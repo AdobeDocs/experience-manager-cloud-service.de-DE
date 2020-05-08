@@ -1,7 +1,7 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 # Entwicklungsrichtlinien für AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-Code, der in AEM als Cloud-Dienst ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
+Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
-Während der Aktualisierung von AEM als Cloud-Dienst werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf alter Code nicht mit Inhalten umgehen, die mit neuem Code erstellt wurden, und der neue Code muss mit alten Inhalten umgehen können.
+Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf der alte Code nicht mit dem durch den neuen Code erzeugten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
 <!--
 
 >[!NOTE]
@@ -19,86 +19,86 @@ Während der Aktualisierung von AEM als Cloud-Dienst werden Instanzen mit altem 
 
 -->
 
-Wenn der Master im Cluster identifiziert werden muss, kann die Apache Sling Discovery API verwendet werden, um ihn zu erkennen.
+Wenn der Master im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um ihn zu erkennen.
 
-## Speicherstatus {#state-in-memory}
+## Status im Speicher {#state-in-memory}
 
-Der Status darf nicht im Speicher verbleiben, sondern muss im Repository bestehen bleiben. Andernfalls wird dieser Status möglicherweise verloren, wenn eine Instanz beendet wird.
+Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository verbleiben. Andernfalls geht dieser Status möglicherweise verloren, wenn eine Instanz beendet wird.
 
-## Status auf dem Dateisystem {#state-on-the-filesystem}
+## Status im Dateisystem {#state-on-the-filesystem}
 
-Das Dateisystem der Instanz sollte in AEM nicht als Cloud-Dienst verwendet werden. Der Datenträger ist kurzlebig und wird entsorgt, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass dies negative Auswirkungen auf das Ressourcenverbrauchskontingent haben kann und Datenträgerbeschränkungen unterliegt.
+Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
-Wenn beispielsweise die Dateisystemnutzung nicht unterstützt wird, sollte die Veröffentlichungsstufe sicherstellen, dass alle Daten, die beibehalten werden müssen, für längere Datenspeicherung an einen externen Dienst gesendet werden.
+Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Dienst gesendet werden.
 
 ## Überwachung {#observation}
 
-Ähnlich wie alles, was asynchron passiert, wie das Handeln auf Beobachtungsdaten, kann nicht garantiert werden, dass es lokal ausgeführt wird und muss daher mit Sorgfalt verwendet werden. Dies gilt sowohl für JCR-Ereignis als auch für Sling-Ressourcen-Ereignis. Bei einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall wird es sich jedoch nicht um ein örtliches Ereignis handeln, und es könnte sogar sein, dass es bei einer laufenden Präsidentschaftswahl, wenn das Ereignis ausgestellt wird, keine aktive Führung gibt.
+In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse, lokal ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt sowohl für JCR-Ereignisse als auch für Sling-Ressourcen-Ereignisse. Zum Zeitpunkt einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall handelt es sich jedoch nicht um ein lokales Ereignis und es kann sogar sein, dass es bei einer zum Zeitpunkt der Veranlassung des Ereignisses laufenden Auswahl der führenden Instanz keine aktive führende Instanz gibt.
 
-## Aufgaben im Hintergrund und lange ausgeführte Aufträge {#background-tasks-and-long-running-jobs}
+## Hintergrundaufgaben und Aufträge mit langer Laufzeit {#background-tasks-and-long-running-jobs}
 
-Als Hintergrundcode ausgeführter Aufgaben müssen davon ausgehen, dass die Instanz, in der sie ausgeführt werden, jederzeit heruntergefahren werden kann. Daher muss der Code widerstandsfähig sein und der größte Import wiederverwendbar sein. Das heißt, wenn der Code erneut ausgeführt wird, sollte er nicht von Anfang an erneut Beginn werden, sondern eher an der Stelle, an der er aufgegeben wurde. Dies ist zwar keine neue Anforderung für diese Art von Code, in AEM als Cloud-Dienst ist es jedoch wahrscheinlicher, dass eine Instanzentnahme erfolgt.
+Als Hintergrundaufgaben ausgeführter Code muss davon ausgehen, dass die Instanz, in der er ausgeführt wird, jederzeit heruntergefahren werden kann. Daher muss der Code stabil und vor allem verwendbar sein. Das bedeutet, dass der Code, wenn er erneut ausgeführt wird, nicht von vorne beginnen sollte, sondern eher nahe an der Stelle, an der er abgebrochen wurde. Dies ist zwar keine neue Anforderung für diese Art von Code, aber bei AEM as a Cloud Service ist es wahrscheinlicher, dass eine Instanz heruntergefahren wird.
 
-Um die Probleme möglichst gering zu halten, sollten lang andauernde Aufträge möglichst vermieden werden, und sie sollten zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling Jobs, die mindestens einmal garantiert sind und daher, wenn sie unterbrochen werden, so bald wie möglich erneut ausgeführt werden. Aber sie sollten wahrscheinlich nicht von Anfang an wieder Beginn machen. Für die Planung solcher Aufträge ist es am besten, die Planung [Sling-Aufträge](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) so zu verwenden, dass sie mindestens einmal ausgeführt wird.
+Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmaliges Ausführen haben und daher, falls sie unterbrochen werden, so schnell wie möglich wieder ausgeführt werden. Aber sie sollten wahrscheinlich nicht wieder von vorne anfangen. Für die Planung solcher Aufträge ist es am besten, die [Sling-Auftrags](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing)-Planung zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
 
-Die Planung Sling Commons sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass es geplant wird.
+Der Sling Commons Scheduler sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
-Ebenso kann nicht garantiert werden, dass alles, was asynchron passiert, wie das Handeln auf Beobachtungsdaten (wie JCR-Ereignisse oder Sling-Ressourcen-Ereignis) ausgeführt werden kann und daher mit Sorgfalt verwendet werden muss. Dies gilt bereits jetzt für AEM-Bereitstellungen.
+In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Implementierungen.
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
-Es wird dringend empfohlen, dass alle ausgehenden HTTP-Verbindungen angemessene Verbindungs- und Lesezeitlimits einrichten. Für Code, der diese Timeouts nicht anwendet, erzwingen AEM-Instanzen, die auf AEM als Cloud-Dienst ausgeführt werden, globale Timeouts. Diese Zeitüberschreitungswerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen, die von den folgenden gängigen Java-Bibliotheken verwendet werden:
+Es wird dringend empfohlen, dass ausgehende HTTP-Verbindungen angemessene Zeitlimits für das Verbinden und Lesen festlegen. Für Code, der diese Zeitlimits nicht anwendet, erzwingen AEM-Instanzen, die in AEM as a Cloud Service ausgeführt werden, globale Zeitlimits. Diese Zeitlimitwerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen, die von den folgenden gängigen Java-Bibliotheken verwendet werden:
 
-Adobe empfiehlt die Verwendung der bereitgestellten [Apache HttpComponents Client 4.x-Bibliothek](https://hc.apache.org/httpcomponents-client-ga/) zum Herstellen von HTTP-Verbindungen.
+Adobe empfiehlt zum Herstellen von HTTP-Verbindungen die Verwendung der bereitgestellten [Apache HttpComponents Client 4.x-Bibliothek](https://hc.apache.org/httpcomponents-client-ga/).
 
-Es gibt folgende Alternativen, die bekanntermaßen funktionieren, aber die Bereitstellung der Abhängigkeit selbst erfordern:
+Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch möglicherweise die Abhängigkeiten selbst bereitstellen müssen, sind:
 
 * [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) und/oder [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (bereitgestellt von AEM)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da es veraltet ist und durch Version 4.x ersetzt wird)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
 
-## Keine klassischen Benutzeroberflächenanpassungen {#no-classic-ui-customizations}
+## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
-AEM als Cloud-Dienst unterstützt nur die Touch-Benutzeroberfläche für Kundencode von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
+AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunden-Code von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
 
-## Native Binärdateien vermeiden {#avoid-native-binaries}
+## Vermeiden von nativen Binärdateien {#avoid-native-binaries}
 
-Code kann keine Binärdateien zur Laufzeit herunterladen oder ändern. Beispielsweise kann es keine Dateien entpacken `jar` oder `tar` Dateien.
+Der Code kann zur Laufzeit keine Binärdateien herunterladen oder ändern. Beispielsweise kann er keine `jar`- oder `tar`-Dateien entpacken.
 
-## Keine Streaming-Binärdateien über AEM als Cloud-Dienst {#no-streaming-binaries}
+## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
-Auf Binärdateien sollte über das CDN zugegriffen werden, das Binärdateien außerhalb der AEM-Hauptdienste bereitstellt.
+Auf Binärdateien sollte über das CDN zugegriffen werden, das Binärdateien außerhalb der AEM-Kerndienste bereitstellt.
 
-Verwenden Sie zum Beispiel nicht `asset.getOriginal().getStream()`, was das Herunterladen einer Binärdatei auf die Kurzzeitplatte des AEM-Dienstes auslöst.
+Verwenden Sie zum Beispiel nicht `asset.getOriginal().getStream()`, wodurch das Herunterladen einer Binärdatei auf den temporären Datenträger des AEM-Dienstes ausgelöst wird.
 
-## Keine Rückwärtsreplikationsagenten {#no-reverse-replication-agents}
+## Keine Rückwärtsreplikations-Agenten {#no-reverse-replication-agents}
 
-Die umgekehrte Replizierung von &quot;Veröffentlichen auf Autor&quot;wird in AEM nicht als Cloud-Dienst unterstützt. Wenn eine solche Strategie erforderlich ist, können Sie einen externen Persistenzspeicher verwenden, der von der Farm der Veröffentlichungsinstanzen und möglicherweise vom Autorencluster freigegeben wird.
+Die Rückwärtsreplikation von der Veröffentlichungs- auf die Autoreninstanz wird in AEM as a Cloud Service nicht unterstützt. Wenn eine solche Strategie erforderlich ist, können Sie einen externen Persistenzspeicher verwenden, der von der Farm der Veröffentlichungsinstanzen und möglicherweise vom Autoren-Cluster gemeinsam genutzt wird.
 
-## Forward Replication Agents müssen möglicherweise portiert werden. {#forward-replication-agents}
+## Vorwärtsreplikationsagenten müssen möglicherweise portiert werden {#forward-replication-agents}
 
-Inhalte werden von &quot;Autor&quot;bis &quot;Veröffentlichen&quot;über einen Pub-Unter-Mechanismus repliziert. Benutzerdefinierte Replizierungsagenten werden nicht unterstützt.
+Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- auf die Veröffentlichungsinstanz repliziert. Benutzerdefinierte Replikationsagenten werden nicht unterstützt.
 
-## Überwachung und Debugging {#monitoring-and-debugging}
+## Überwachen und Debugging {#monitoring-and-debugging}
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien    im `/crx-quickstart/logs`-Ordner geschrieben.
 
-Auf Cloud-Umgebung können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilenwerkzeug verwenden, um die Protokolle zu verkleinern. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
-**Protokollebene festlegen**
+**Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebung zu ändern, sollte die Sling Logging OSGI-Konfiguration geändert und anschließend eine vollständige Neubereitstellung durchgeführt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktions-Umgebung zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
 >[!NOTE]
 >
->Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie auf einer lokalen Entwicklungs-Umgebung erstellen und dann als Cloud-Dienstinstanz an eine AEM-Instanz senden. Weitere Informationen dazu finden Sie unter [Bereitstellen auf AEM als Cloud-Dienst](/help/implementing/deploying/overview.md).
+>Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie in einer lokalen Entwicklungsumgebung erstellen und dann an eine AEM as a Cloud Service-Instanz pushen. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Aktivieren der DEBUG-Protokollebene**
 
 Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
-Um die DEBUG-Protokollebene zu aktivieren, legen Sie die Variable
+Um die DEBUG-Protokollebene zu aktivieren, stellen Sie die Eigenschaft
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
@@ -109,58 +109,58 @@ Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Anga
 
 Die Protokollebenen lauten wie folgt:
 
-| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen, und das Installationsprogramm kann nicht fortgesetzt werden. |
+| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen und das Installationsprogramm kann nicht fortgesetzt werden. |
 |---|---|---|
 | 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, aber ein CRX-Teil wurde nicht ordnungsgemäß installiert und funktioniert daher nicht. |
-| 2 | Warnung | Die Aktion war erfolgreich, hatte aber Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
+| 2 | Warnung | Die Aktion war erfolgreich, stieß aber auf Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
 | 3 | Informationen | Die Aktion war erfolgreich. |
 
-### Thread Dumps {#thread-dumps}
+### Thread-Dumps {#thread-dumps}
 
-Thread-Dumps auf Cloud-Umgebung werden laufend gesammelt, können jedoch derzeit nicht auf Self-Service-Weise heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
+Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
-## CRX/DE Lite und Systemkonsole {#crxde-lite-and-system-console}
+## CRX/DE Lite und Systemkonsole {#crxde-lite-and-system-console}
 
 ### Lokale Entwicklung {#local-development}
 
-Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web Console (`/system/console`).
+Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
 
-Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellstart) `/apps` und direkt geschrieben werden `/libs` können. Dies unterscheidet sich von Cloud-Umgebung, bei denen diese obersten Ordner unveränderlich sind.
+Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellstart) `/apps` und `/libs` direkt geschrieben werden können, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
 
-### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
+### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Kunden können auf CRXDE Lite auf der Entwicklungs-Umgebung zugreifen, jedoch nicht auf die Bühne oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in geschrieben werden. Daher führt der Versuch, dies zu tun, zu Fehlern.
+Kunden können in der Entwicklungsumgebung auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Eine Reihe von Tools zum Debugging von AEM als Cloud Service Developer-Umgebung stehen in der Developer Console für Entwickler-, Bereitstellungs- und Produktionsfunktionen zur Verfügung. Die URL kann wie folgt festgelegt werden, indem die URLs des Autoren- oder Veröffentlichungsdienstes angepasst werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungsdienst-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Kurzbefehl kann der folgende CLI-Befehl für Cloud Manager verwendet werden, um die Developer Console auf der Grundlage eines Umgebung-Parameters zu starten, der unten beschrieben wird:
+Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Entwicklerkonsole auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-See [this page](/help/release-notes/home.md) for more information.
+Weitere Informationen finden Sie auf [dieser Seite](/help/release-notes/home.md).
 
 Entwickler können Statusinformationen generieren und verschiedene Ressourcen auflösen.
 
-Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGI-Konfigurationen, Eichenindizes, OSGI-Dienste und Sling-Aufträge.
+Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGI-Konfigurationen, Oak-Indizes, OSGI-Dienste und Sling-Jobs.
 
-![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
+![Entwicklerkonsole 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
-Wie unten dargestellt können Entwickler Paketabhängigkeiten und Servlets auflösen:
+Wie unten dargestellt, können Entwickler Paketabhängigkeiten und Servlets auflösen:
 
-![Dev Console 2](/help/implementing/developing/introduction/assets/devconsole2.png)
+![Entwicklerkonsole 2](/help/implementing/developing/introduction/assets/devconsole2.png)
 
-![Dev Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
+![Entwicklerkonsole 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool &quot;Abfrage erläutern&quot;:
+Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
 
-![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+![Entwicklerkonsole 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 ### AEM Staging- und Produktionsdienst {#aem-staging-and-production-service}
 
-Kunden haben keinen Zugriff auf Entwicklerwerkzeuge für Staging- und Produktions-Umgebung.
+Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
 
 ### Leistungsüberwachung {#performance-monitoring}
 
-Adobe überwacht die Anwendungsleistung und ergreift Maßnahmen, um bei auftretender Verschlechterung Abhilfe zu schaffen. Derzeit können Anwendungsmetriken nicht bereinigt werden.
+Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
