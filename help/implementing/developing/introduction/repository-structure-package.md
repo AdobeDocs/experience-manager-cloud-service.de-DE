@@ -1,37 +1,37 @@
 ---
-title: 'AEM Project Repository Structure Package  '
-description: Für Adobe Experience Manager als Cloud Service Maven-Projekte ist eine Definition des Unterpakets "Repository-Struktur"erforderlich, deren einziger Zweck darin besteht, die Wurzeln des JCR-Repositorys zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
-translation-type: tm+mt
+title: 'Repository-Strukturpaket von AEM-Projekten  '
+description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# AEM Project Repository Structure Package
+# Repository-Strukturpaket von AEM-Projekten
 
-Für erstellte Projekte für Adobe Experience Manager als Cloud-Dienst ist eine Definition des Unterpakets &quot;Repository-Struktur&quot;erforderlich, deren einziger Zweck darin besteht, die Wurzeln des JCR-Repositorys zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden. Dadurch wird sichergestellt, dass die Installation von Paketen in Experience Manager erfolgt, da ein Cloud-Dienst automatisch nach JCR-Ressourcenabhängigkeiten geordnet wird. Fehlende Abhängigkeiten können zu Szenarien führen, in denen Unterstrukturen vor ihren übergeordneten Strukturen installiert und daher unerwartet entfernt werden, was die Bereitstellung unterbricht.
+Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden. Dadurch wird sichergestellt, dass die Installation von Paketen in Experience Manager as a Cloud Service automatisch nach JCR-Ressourcenabhängigkeiten sortiert wird. Fehlende Abhängigkeiten können zu Szenarien führen, in denen Unterstrukturen vor ihren übergeordneten Strukturen installiert und daher unerwartet entfernt werden, wodurch die Implementierung unterbrochen wird.
 
-Wenn Ihr Codepaket an einem Speicherort bereitgestellt wird, der **nicht vom Codepaket abgedeckt** wird, müssen alle übergeordneten Ressourcen (JCR-Ressourcen näher am JCR-Stamm) im Repository-Strukturpaket aufgezählt werden, um diese Abhängigkeiten zu schaffen.
+Wenn Ihr Code-Paket an einem Ort eingesetzt wird, der **nicht vom Code-Paket abgedeckt** wird, müssen alle Vorgänger-Ressourcen (JCR-Ressourcen, die näher am JCR-Stamm liegen) im Repository-Strukturpaket aufgelistet werden, um diese Abhängigkeiten herzustellen.
 
 ![Repository-Strukturpaket](./assets/repository-structure-packages.png)
 
-Das Repository-Strukturpaket definiert den erwarteten, allgemeinen Zustand, in `/apps` dem der Paket-Validator Bereiche &quot;sicher vor potenziellen Konflikten&quot;als Standardwurzeln ermittelt.
+Das Repository-Strukturpaket definiert den erwarteten, gemeinsamen Zustand von `/apps`, den der Paket-Validator verwendet, um Bereiche zu bestimmen, die „vor potenziellen Konflikten sicher“ sind, da es sich um Standardstämme handelt.
 
-Die typischsten Pfade, die in das Repository-Strukturpaket aufgenommen werden sollen, sind:
+Typische Pfade, die in das Repository-Strukturpaket aufgenommen werden, sind:
 
-+ `/apps` der ein vom System bereitgestellter Knoten ist
-+ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`und `/apps/sling/...` die allgemeine Überlagerungen bereitstellen `/libs`.
-+ `/apps/settings` der freigegebene kontextabhängige Konfigurationsstammpfad ist
++ `/apps`, der ein vom System bereitgestellter Knoten ist
++ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...` und `/apps/sling/...`, die gebräuchliche Überlagerungen für `/libs` bereitstellen.
++ `/apps/settings`, der der freigegebene kontextabhängige Konfigurationsstammpfad ist.
 
-Beachten Sie, dass dieses Unterpaket **keinen Inhalt hat** und nur aus einer `pom.xml` Definition der Filterwurzeln besteht.
+Beachten Sie, dass dieses Unterpaket **keinen** Inhalt hat und nur aus einer `pom.xml` besteht, die die Filterstämme definiert.
 
 ## Erstellen des Repository-Strukturpakets
 
-Um ein Repository-Strukturpaket für Ihr Maven-Projekt zu erstellen, erstellen Sie ein neues leeres Maven-Unterprojekt mit dem folgenden `pom.xml`und aktualisieren Sie die Projektmetadaten entsprechend Ihrem übergeordneten Maven-Projekt.
+Um ein Repository-Strukturpaket für Ihr Maven-Projekt zu erstellen, erstellen Sie ein neues leeres Maven-Unterprojekt mit dieser `pom.xml`, um die Projektmetadaten entsprechend Ihrem übergeordneten Maven-Projekt zu aktualisieren.
 
-Aktualisieren Sie `<filters>` die, um alle JCR-Repository-Pfade einzuschließen, in denen Ihre Codepakete bereitgestellt werden.
+Aktualisieren Sie die `<filters>`, um alle JCR-Repository-Pfade einzuschließen, in denen Ihre Code-Pakete bereitgestellt werden.
 
-Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt zur `<modules>` Liste der übergeordneten Projekte hinzufügen.
+Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt der `<modules>`-Liste der übergeordneten Projekte hinzufügen.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,11 +112,11 @@ Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt zur `<modules>` List
 </project>
 ```
 
-## Referenzieren des Repository Structure-Pakets
+## Referenzieren des Repository-Strukturpakets
 
-Um das Repository-Strukturpaket zu verwenden, referenzieren Sie es über das gesamte Codepaket (die Unterpakete, die für `/apps`) Maven-Projekte über das FileVault-Inhaltspaket Maven-Plug-Ins- `<repositoryStructurePackage>` Konfiguration.
+Um das Repository-Strukturpaket zu verwenden, referenzieren Sie es über alle Code-Paket-Maven-Projekte (die Unterpakete, die in `/apps` bereitgestellt werden) über die Konfiguration des FileVault Content Package Maven Plug-ins `<repositoryStructurePackage>`.
 
-Fügen Sie im `ui.apps/pom.xml`und anderen Code-Paketen `pom.xml`einen Verweis auf die Repository-Strukturpaket-Konfiguration des Projekts (#repository-structure-package) zum FileVault-Paket Maven-Plug-In hinzu.
+Fügen Sie in der `ui.apps/pom.xml` und den `pom.xml` anderen Code-Paketen einen Verweis auf die Repository-Strukturpaket-Konfiguration des Projekts (#repository-structure-package) zum FileVault Package Maven-Plug-in hinzu.
 
 ```xml
 ...
@@ -151,21 +151,21 @@ Fügen Sie im `ui.apps/pom.xml`und anderen Code-Paketen `pom.xml`einen Verweis a
 </dependencies>
 ```
 
-## Anwendungsfall für Multi-Code-Pakete
+## Anwendungsfall für mehrere Code-Pakete
 
-Weniger häufig verwendete und komplexere Anwendungsfälle unterstützen die Bereitstellung mehrerer Codepakete, die in denselben Bereichen des JCR-Repositorys installiert werden.
+Weniger häufig verwendete und komplexere Anwendungsfälle unterstützen die Implementierung von Multi-Code-Paketen, die in denselben Bereichen des JCR-Repositorys installiert werden.
 
 Beispiel:
 
-+ Codepaket A wird in `/apps/a`
-+ Codepaket B wird bereitgestellt in `/apps/a/b`
++ Code-Paket A wird in `/apps/a` bereitgestellt
++ Code-Paket B wird in `/apps/a/b` bereitgestellt
 
-Wenn keine Abhängigkeit auf Paketebene aus dem Code-Paket B auf dem Code-Paket A festgestellt wird, kann Codepaket B zuerst in bereitgestellt werden, gefolgt von `/apps/a`dem Code-Paket B, in dem `/apps/a`die Bereitstellung erfolgt, was zum Entfernen der zuvor installierten Pakete führt `/apps/a/b`.
+Wenn keine Abhängigkeit auf Paketebene von Code-Paket B zu Code-Paket A festgestellt wird, kann Code-Paket B zuerst in `/apps/a` bereitgestellt werden, gefolgt von Code-Paket B, das in `/apps/a` bereitgestellt wird. Dadurch wird die zuvor installierte Komponente `/apps/a/b` entfernt.
 
 In diesem Fall:
 
-+ Codepaket A sollte eine `<repositoryStructurePackage>` Beschreibung des Repository-Strukturpakets des Projekts (für das ein Filter verwendet werden sollte) enthalten `/apps`.
-+ Code-Paket B sollte ein `<repositoryStructurePackage>` auf Code-Paket A definieren, da das Codepaket B in dem von Codepaket A freigegebenen Speicherplatz bereitgestellt wird.
++ Code-Paket A sollte `<repositoryStructurePackage>` im Repository-Strukturpaket des Projekts definieren (was einen Filter für `/apps` enthalten sollte).
++ Code-Paket B sollte `<repositoryStructurePackage>` für Code-Paket A definieren, da Code-Paket B in dem von Code-Paket A gemeinsam genutzten Speicherplatz bereitgestellt wird.
 
 ## Fehler und Debugging
 
@@ -176,8 +176,8 @@ Wenn die Repository-Strukturpakete nicht korrekt eingerichtet sind, wird beim Ma
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Dies zeigt an, dass das Umbruchcode-Paket keine Listen `<repositoryStructurePackage>` in seiner Filter-Liste enthält `/apps/some/path` .
+Dies bedeutet, dass das problematische Code-Paket kein `<repositoryStructurePackage>` enthält, das `/apps/some/path` in der Filterliste auflistet.
 
 ## Zusätzliche Ressourcen
 
-+ [FileVault Content Package Maven Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven-Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
