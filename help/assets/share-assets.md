@@ -1,8 +1,8 @@
 ---
 title: Freigeben von Assets, Ordnern und Sammlungen als Link
-description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Experience Manager Assets als Hyperlink freigeben.
+description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Adobe Experience Manager Assets als Hyperlink freigeben.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -10,26 +10,26 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Freigeben und Verteilen von in Experience Manager verwalteten Assets {#share-assets-from-aem}
 
-Mit Adobe Experience Manager (AEM)-Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Entitäten, einschließlich Partner und Anbieter, freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets als Cloud-Dienst freizugeben:
+Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets as a Cloud Service freizugeben:
 
-* Als Link freigeben.
-* Laden Sie Assets herunter und geben Sie sie separat frei.
-* Freigeben über die AEM-Desktop-App.
-* Über Adobe Asset Link freigeben.
-* (Anstehende Funktion) Freigeben mit dem Markenportal.
+* Freigeben als Link.
+* Herunterladen von Assets und separates Freigeben.
+* Freigeben über das AEM-Desktop-Programm.
+* Freigeben über Adobe Asset Link.
+* (Zukünftige Funktion) Freigeben über Brand Portal.
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im Dialogfeld „Linkfreigabe“. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
+Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
 
 >[!NOTE]
 >
->* Sie benötigen die Berechtigung &quot;ACL bearbeiten&quot;für den Ordner oder das Asset, das Sie als Link freigeben möchten.
+>* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung „ACL bearbeiten“.
 >* Bevor Sie einen Link für andere Benutzer freigeben, stellen Sie sicher, dass Day CQ Mail Service konfiguriert ist. Andernfalls tritt ein Fehler auf.
 
 
 1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]**. An asset link is auto-created in the **[!UICONTROL Share Link]** field. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
+1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]**. Im Feld **[!UICONTROL Link freigeben]** wird automatisch ein Asset-Link erstellt. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
    >[!NOTE]
    >
@@ -104,29 +104,29 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Herunterladen und Freigeben von Assets {#download-and-share-assets}
 
-Benutzer können einige Assets herunterladen und diese außerhalb von Experience Manager freigeben. Weitere Informationen finden Sie unter [Suchen nach Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)und [Herunterladen von Sammlungen.](manage-collections.md#download-a-collection)
+Benutzer können einige Assets herunterladen und diese außerhalb von Experience Manager freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
 
-## Freigeben von Assets für Kreativprofis {#share-with-creatives}
+## Freigeben von Assets für Kreativschaffende {#share-with-creatives}
 
-Marketingexperten und Anwender aus der Branche können genehmigte Assets mit ihren Kreativprofis problemlos gemeinsam verwenden.
+Marketing-Experten und Anwender aus der Branche können genehmigte Assets problemlos für ihre Kreativschaffenden freigeben.
 
-* **AEM-Desktop-App**: Die App funktioniert unter Windows und Mac. Siehe Übersicht über [Desktop-Apps](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen-, Such- und Vorschauen-Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und sie für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit der Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Übersicht über das AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe Asset Link**: Die Kreativprofis können Assets direkt in Adobe InDesign, Adobe Illustrator und Adobe Fotoshop suchen und verwenden.
+* **Adobe Asset Link**: Die Kreativschaffenden können Assets direkt in Adobe InDesign, Adobe Illustrator und Adobe Photoshop suchen und verwenden.
 
 ## Konfigurieren der Asset-Freigabe {#configure-sharing}
 
-Die verschiedenen Optionen zum Freigeben der Assets erfordern eine bestimmte Konfiguration und müssen spezifische Voraussetzungen erfüllen.
+Die verschiedenen Optionen zum Freigeben der Assets erfordern eine spezifische Konfiguration und müssen bestimmte Voraussetzungen erfüllen.
 
-### Asset-Linkfreigabe konfigurieren {#asset-link-sharing}
+### Konfigurieren der Asset-Link-Freigabe {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im Dialogfeld „Linkfreigabe“. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
+Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
 
 >[!NOTE]
 >
->Wenn Sie Links von Ihrer AEM Authoring-Instanz an externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET` Anforderungen bereitstellen. Sperren Sie andere URLs, um sicherzustellen, dass Ihre AEM Author-Instanz sicher ist.
+>Wenn Sie Links von Ihrer AEM-Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anforderungen bereitstellen. Blockieren Sie andere URLs, um den Schutz Ihrer AEM-Autoreninstanz sicherzustellen.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -149,34 +149,34 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### Konfigurieren der maximal zulässigen Datengröße {#maxdatasize}
+### Konfigurieren der maximal zulässigen Datengröße     {#maxdatasize}
 
-Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegeben wurden, komprimiert AEM die Asset-Hierarchie aus dem Repository und gibt anschließend das Asset in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, führt das bei großen komprimierten Datenmengen zu Speicherfehlern in JVM. Um das System aufgrund dieser Situation vor einem möglichen DoS-Angriff zu schützen, können Sie die maximale Größe der heruntergeladenen Dateien konfigurieren. Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anforderungen abgelehnt. Der Standardwert lautet 100 MB.
+Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegeben wurden, komprimiert AEM die Asset-Hierarchie aus dem Repository und gibt anschließend das Asset in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, kann es bei großen komprimierten Datenmengen zu Speicherfehlern in JVM kommen. Um das System aufgrund dieser Situation vor einem möglichen DoS-Angriff (Service-Verweigerung) zu schützen, können Sie die maximale Größe der heruntergeladenen Dateien konfigurieren. Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anforderungen abgelehnt. Der Standardwert lautet 100 MB.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie dann zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
-1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
-1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie anschließend zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Suchen Sie in der Web-Konsole die Konfiguration **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**.
+1. Öffnen Sie die Konfiguration im Bearbeitungsmodus und ändern Sie den Wert des Parameters **[!UICONTROL Maximale Größe von Inhalten (unkomprimiert)]**.
 1. Speichern Sie die Änderungen.
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Aktivieren von Desktop-Aktionen für die Verwendung mit der Desktop-App {#desktop-actions}
+### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
 
-Über die Assets-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder Assets auschecken und öffnen, um sie in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als &quot;Desktop-Aktionen&quot;bezeichnet. Um sie zu aktivieren, finden Sie unter [Aktivieren von Desktop-Aktionen in der AEM-Weboberfläche](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Über die Assets-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder Assets auschecken und öffnen, um sie in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der AEM-Web-Benutzeroberfläche](https://docs.adobe.com/help/de-DE/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Desktop-Aktionen aktivieren, die beim Arbeiten mit der Desktop-App als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
+![Aktivieren von Desktop-Aktionen aktivieren, die beim Arbeiten mit dem Desktop-Programm als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
 ### Konfigurationen zur Verwendung von Adobe Asset Link {#configure-asset-link}
 
-Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Inhaltserstellung. Es verbindet Adobe Experience Manager (AEM)-Assets mit Creative Cloud-Desktop-Apps Adobe InDesign, Adobe Fotoshop und Adobe Illustrator. Über das Bedienfeld &quot;Adobe Asset-Link&quot;können kreative Elemente auf in AEM Assets gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativ-Apps zu verlassen, mit denen sie am besten vertraut sind.
+Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Damit wird Adobe Experience Manager (AEM) Assets mit den Creative Cloud-Desktop-Programmen Adobe InDesign, Adobe Photoshop und Adobe Illustrator verbunden. Über das Adobe Asset-Link-Bedienfeld können Kreative auf in AEM Assets gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
 
-Siehe [Konfigurieren von AEM für die Verwendung mit Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Siehe [Konfigurieren von AEM für die Verwendung mit Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Best Practices und Fehlerbehebung {#bestpractices}
 
-* Asset-Ordner oder -Sammlungen, die einen Whitespace in ihrem Namen enthalten, werden möglicherweise nicht freigegeben.
+* Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
 * Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem AEM-Administrator nach den [Download-Beschränkungen](#maxdatasize).
 
 <!--
