@@ -1,7 +1,7 @@
 ---
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -13,20 +13,20 @@ Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, [mu
 
 Dies wird als Veröffentlichung einer Seite bezeichnet. Wenn Sie eine Seite aus der Veröffentlichungsumgebung entfernen, wird dies als Rückgängigmachen der Veröffentlichung bezeichnet. Während der Veröffentlichung und des Rückgängigmachens der Veröffentlichung bleibt die Seite so lange in der Bearbeitungsumgebung verfügbar und kann geändert werden, bis Sie sie löschen.
 
-Sie können eine Seite sofort oder zu einem vordefinierten Datum/einer vordefinierten Uhrzeit veröffentlichen oder die Veröffentlichung rückgängig machen.
+Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt (Datum/Uhrzeit) veröffentlichen bzw. ihre Veröffentlichung rückgängig machen.
 
 ## Terminologie {#terminology}
 
-Während der Arbeit mit AEM stehen Ihnen möglicherweise unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung zur Verfügung.
+Bei der Arbeit mit AEM stoßen Sie möglicherweise auf unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung.
 
 * **Veröffentlichen/Veröffentlichung rückgängig machen**
-   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihre Inhalte auf Ihrer Umgebung veröffentlichen können (oder nicht).
+   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
    * Dies sind die in der AEM-Dokumentation verwendeten Begriffe.
 * **Aktivieren/Deaktivieren**
-   * Diese Begriffe sind gleichbedeutend mit Veröffentlichung/Rückgängigmachen der Veröffentlichung.
+   * Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
    * Diese Begriffe wurden in früheren Versionen von AEM verwendet.
-* **Wiederholen/Replikation**
-   * Dies sind die technischen Begriffe, die die Datenbewegung (z. B. Seiteninhalt, Dateiinhalt, Code, Benutzerkommentare) von einer Umgebung zur anderen beschreiben, wenn Sie eine Seite veröffentlichen.
+* **Replizieren/Replikation**
+   * Dies sind die technischen Begriffe, die die Bewegung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, wenn Sie eine Seite veröffentlichen.
    * Diese Begriffe werden hauptsächlich von Entwicklern verwendet.
 
 ## Veröffentlichen von Seiten {#publishing-pages-1}
@@ -41,7 +41,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >Wenn Sie nicht über die erforderlichen Berechtigungen für das Veröffentlichen einer bestimmten Seite verfügen:
 >
 >* Ein Workflow wird ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
->* Dieser Workflow wurde möglicherweise von Ihrem Entwicklerteam angepasst.
+>* Dieser Workflow wurde möglicherweise von Ihrem Entwickler-Team angepasst.
 >* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
 
 
@@ -54,7 +54,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden.
 
-1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
+1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen, und danach die Option **Seite veröffentlichen**.
 
    ![Veröffentlichen einer Seite über Seitenoptionen](/help/sites-cloud/authoring/assets/publishing-page-options.png)
 
@@ -62,42 +62,42 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
    * Wenn die Seite Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt und Sie können eine der folgenden Aktionen ausführen:
-      * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+      * Geben Sie an, welche Assets, Tags usw. Sie mit der Seite veröffentlichen möchten, und wählen Sie **Veröffentlichen** aus, um den Vorgang abzuschließen.
       * Mit **Abbrechen** können Sie den Vorgang abbrechen.
    ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Selecting **Publish** will replicate the page to the publish environment. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiten-Editor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
 
    ![Statusinfo-Banner veröffentlichen](/help/sites-cloud/authoring/assets/publishing-info.png)
 
    Wird diese Seite in der Konsole dargestellt, ist der aktualisierte Veröffentlichungsstatus sichtbar.
 
-   ![Seitenveröffentlichungsstatus in der Ansicht der Spalten in der Sites-Konsole](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
+   ![Status der Seitenveröffentlichung in der Spaltenansicht in der Site-Konsole](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
 
 >[!NOTE]
 >
->Beim Veröffentlichen im Editor handelt es sich um eine oberflächliche Veröffentlichung, d. h. nur die ausgewählte Seite/die ausgewählten Seiten werden veröffentlicht und untergeordnete Seiten werden/sind nicht veröffentlicht.
+>Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
 ### Veröffentlichungen über die Konsole {#publishing-from-the-console}
 
 In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
-* [Schnell veröffentlichen](#quick-publish)
+* [Quick Publish](#quick-publish)
 * [Veröffentlichung verwalten](#manage-publication)
 
-#### Schnell veröffentlichen {#quick-publish}
+#### Quick Publish     {#quick-publish}
 
-**Die Schnellveröffentlichung** ist in einfachen Fällen erforderlich und veröffentlicht die ausgewählten Seiten sofort ohne weitere Interaktionen. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
+**Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
 So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen“:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Wählen Sie die gewünschten Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Quick Publish**.
 
    ![Auswählen von Seiten zur Veröffentlichung](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. In the Quick Publish dialog, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
+1. Bestätigen Sie im Dialogfeld „Quick Publish“ die Veröffentlichung, indem Sie auf **Veröffentlichen** klicken, oder brechen Sie den Vorgang ab, indem Sie auf **Abbrechen** klicken. Beachten Sie, dass auch alle unveröffentlichten Verweise ebenfalls automatisch veröffentlicht werden.
 
-   ![Schnellveröffentlichungsbestätigung](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
+   ![Quick Publish-Bestätigung](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
 1. Bei der Veröffentlichung der Seite erscheint eine Warnmeldung, in der die Veröffentlichung bestätigt wird.
 
@@ -105,77 +105,77 @@ So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen�
 >
 >Die Option „Schnell veröffentlichen“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten {#manage-publication}
+#### Veröffentlichung verwalten     {#manage-publication}
 
-**Angebote für Veröffentlichungen** können mit mehr Optionen als mit der Funktion &quot;Schnelle Veröffentlichung&quot;verwaltet werden. Dadurch können untergeordnete Seiten einbezogen, die Verweise angepasst und relevante Workflows gestartet werden. Außerdem können Sie die Veröffentlichung zu einem späteren Zeitpunkt vornehmen.
+**Veröffentlichung verwalten** bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
 So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgängig mit „Veröffentlichung verwalten“:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
 
    ![Auswählen von Seiten zur Veröffentlichung](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. Der Assistent zum **Verwalten von Veröffentlichungen** wird gestartet. The first step, **Options**, allows you to:
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Im ersten Schritt **Optionen** haben Sie folgende Möglichkeiten:
 
    * Veröffentlichen Sie die ausgewählte Seite oder machen Sie die Veröffentlichung rückgängig.
    * Führen Sie diese Aktion sofort oder zu einem späteren Zeitpunkt aus.
    Bei der späteren Veröffentlichung wird ein Workflow gestartet, mit dem die ausgewählten Seiten zur angegebenen Zeit veröffentlicht werden. Entsprechend wird durch die Auswahl des Rückgängigmachens der Veröffentlichung zu einem späteren Zeitpunkt der entsprechende Workflow für die ausgewählten Seiten zum angegebenen Zeitpunkt gestartet.
 
-   Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole Workflow, um den entsprechenden Workflow zu beenden. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole „Workflow“, um den entsprechenden Workflow zu beenden. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
    Klicken Sie auf **Weiter**, um fortzufahren.
 
-1. In the next step of the Manage Publication wizard, **Scope**, you can define the scope of the publication/un-publication such as including to include child pages and/or including references.
+1. Im nächsten Schritt des Assistenten „Veröffentlichung verwalten“ können Sie den **Umfang** der Veröffentlichung/der rückgängig gemachten Veröffentlichung definieren, wie z. B. das Einschließen von untergeordneten Seiten und/oder von Verweisen.
 
-   ![Veröffentlichungsbereich verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
+   ![Umfang der Veröffentlichung verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
-   Mit der Schaltfläche **Inhalt hinzufügen** können Sie der Liste der zu veröffentlichenden Seiten weitere Seiten hinzufügen, falls Sie die Auswahl vernachlässigt haben, bevor Sie den Assistenten „Veröffentlichung verwalten“ starten.
+   Mit der Schaltfläche **Inhalt hinzufügen** können Sie zusätzliche Seiten zur Liste der zu veröffentlichenden Seiten hinzufügen, falls Sie dies noch nicht vor dem Starten des Assistenten „Veröffentlichung verwalten“ getan haben.
 
-   Durch Klicken auf die Schaltfläche „Inhalt hinzufügen“ wird der [Pfadbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) gestartet, mit dem Inhalte ausgewählt werden können.
+   Durch Klicken auf die Schaltfläche „Inhalt hinzufügen“ wird der [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) gestartet, mit dem Inhalte ausgewählt werden können.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel **to cancel the selection and return to the wizard.
+   Wählen Sie die gewünschten Seiten aus und klicken Sie dann auf **Auswählen**, um den Inhalt dem Assistenten hinzuzufügen, oder auf „Abbrechen“, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
    Im Assistenten können Sie dann ein Element in der Liste auswählen, um es weiter zu konfigurieren:
 
    * Untergeordnete Elemente einschließen
    * Das Element aus der Auswahl entfernen
    * Seine veröffentlichten Verweise verwalten
-   ![Verwalten von Seiten zur Auswahl von Veröffentlichungen](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
+   ![Verwalten von Veröffentlichungen mit Seitenauswahl](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Clicking **Include Children** opens a dialogue allowing you to:
+   Durch Klicken auf **Untergeordnete Elemente einbeziehen** wird ein Dialogfeld geöffnet, in dem Sie folgende Möglichkeiten haben:
 
    * Nur unmittelbar untergeordnete Elemente einbeziehen.
    * Nur geänderte Seiten einbeziehen.
    * Nur bereits veröffentlichte Seiten einbeziehen.
-   Click **Add** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
+   Klicken Sie auf **Hinzufügen**, um die untergeordneten Seiten zur Liste der Seiten hinzuzufügen, die je nach Auswahloptionen veröffentlicht werden sollen oder deren Veröffentlichung rückgängig gemacht werden soll. Klicken Sie auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
-   ![Veröffentlichung einschließlich untergeordneter Elemente verwalten](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+   ![Verwalten von Veröffentlichungen einschließlich untergeordneter Elemente](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
    Dort sehen Sie die hinzugefügten Seiten entsprechend Ihrer Auswahl im Dialogfeld „Untergeordnete Elemente einbeziehen“.
 
-   You can view and modify the references to be published or unpublished for a page by selecting it and then clicking the **Published References** button.
+   Zur Ansicht und zum Ändern der Verweise, die für eine Seite veröffentlicht werden sollen bzw. deren Veröffentlichung rückgängig gemacht werden soll, wählen Sie sie aus und klicken Sie anschließend auf die Schaltfläche **Veröffentlichte Verweise**.
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   The **Published References** dialog displays the references for the selected content. Standardmäßig sind sie alle ausgewählt und werden veröffentlicht/Veröffentlichung rückgängig gemacht. Sie können die Auswahl jedoch aufheben, damit sie nicht in der Aktion enthalten sind.
+   Das Dialogfeld **Veröffentlichte Verweise** zeigt die Verweise für den ausgewählten Inhalt an. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
 
-   Click **Done** to save your changes or **Cancel** to cancel the selection and return to the wizard.
+   Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
    Im Assistenten wird die Spalte **Verweise** aktualisiert und zeigt Ihre Auswahl von Verweisen an, die veröffentlicht werden sollen bzw. deren Veröffentlichung rückgängig gemacht werden soll.
 
-   ![Verwalten von Seiten zur Auswahl von Veröffentlichungen](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
+   ![Verwalten von Veröffentlichungen mit Seitenauswahl](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Click **Publish** to complete.
+1. Klicken Sie auf **Veröffentlichen**, um den Vorgang abzuschließen.
 
    In der Sites-Konsole wird die Veröffentlichung durch eine Benachrichtigung bestätigt.
 
-1. If the published pages are associated with workflows, they may be shown in a final **Workflows** step of the publication wizard.
+1. Wenn die veröffentlichten Seiten mit Workflows verknüpft sind, werden diese im abschließenden **Workflow**-Schritt des Veröffentlichungsassistenten gezeigt.
 
    >[!NOTE]
    >
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as Managing Access to Workflows and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
+   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. Weitere Informationen finden Sie im vorherigen Hinweis auf dieser Seite bezüglich Berechtigungen für die Veröffentlichung sowie unter „Verwaltung der Zugriffsrechte auf Workflows“ und unter [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md).
    <!--
    >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
    -->
@@ -183,7 +183,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
    Die Ressourcen werden gemäß den ausgelösten Workflows gruppiert, wobei Sie für jede Ressource folgende Möglichkeiten haben:
 
    * Definieren des Workflow-Titels
-   * Behalten Sie das Workflow-Paket bei, sofern der Workflow Unterstützung für mehrere Ressourcen bietet.
+   * Beibehalten des Workflow-Pakets, vorausgesetzt der Workflow unterstützt mehrere Ressourcen.
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
@@ -194,29 +194,29 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
 Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungsumgebung gelöscht, sodass sie nicht mehr für Ihre Leser verfügbar ist.
 
-In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished:
+[Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten rückgängig machen:
 
 * [Im Seiten-Editor](#unpublishing-from-the-editor)
 * [In der Sites-Konsole](#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor     {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
+### Rückgängigmachen der Veröffentlichung in der Konsole     {#unpublishing-from-the-console}
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
-1. Der Assistent zum **Verwalten von Veröffentlichungen** wird gestartet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung rückgängig machen** anstelle der Standardoption **Veröffentlichen** aus.
+1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung rückgängig machen** anstelle der Standardoption **Veröffentlichen** aus.
 
    ![Veröffentlichung wird rückgängig gemacht](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Die Auswahl von „Später veröffentlichen“ startet einen Workflow zur Veröffentlichung der Seite zum angegebenen Zeitpunkt. Entsprechend startet die Auswahl von „Später deaktivieren“ einen Workflow zum Rückgängigmachen der Veröffentlichung der ausgewählten Seiten zum angegebenen Zeitpunkt.
 
-   Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole Workflow, um den entsprechenden Workflow zu beenden. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole „Workflow“, um den entsprechenden Workflow zu beenden. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
-1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
+1. Um das Rückgängigmachen der Veröffentlichung abzuschließen, fahren Sie mit dem Assistenten ähnlich wie beim [Veröffentlichen der Seite](#manage-publication) fort.
 
 ## Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Baums {#publishing-and-unpublishing-a-tree}
 
@@ -225,41 +225,41 @@ Wenn Sie allerdings eine große Zahl von Inhaltsseiten erstellt bzw. aktualisier
 Dazu können Sie in der Sites-Konsole die Option [Veröffentlichung verwalten](#manage-publication) verwenden.
 
 1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen möchten bzw. dessen Veröffentlichung Sie rückgängig machen möchten, und danach **Veröffentlichung verwalten**.
-1. Der Assistent zum **Verwalten von Veröffentlichungen** wird gestartet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung rückgängig machen“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung rückgängig machen“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
 1. Wählen Sie im Schritt **Bereich** die Stammseite aus und danach **Untergeordnete Elemente einbeziehen**.
 
-   ![Verwalten von Seiten zur Auswahl von Veröffentlichungen](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
+   ![Verwalten von Veröffentlichungen mit Seitenauswahl](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. In the **Include Children** dialogue, un-check the options:
+1. Deaktivieren Sie im Dialogfeld **Untergeordnete Elemente einbeziehen** die folgenden Optionen:
 
    * Nur unmittelbar untergeordnete Elemente einbeziehen
    * Nur bereits veröffentlichte Seiten einschließen
-   Diese Optionen sind standardmäßig ausgewählt. Sie müssen also darauf achten, diese Auswahl aufzuheben. Click **Add** to confirm and add the content to the publication/un-publication.
+   Diese Optionen sind standardmäßig ausgewählt. Sie müssen also darauf achten, diese Auswahl aufzuheben. Klicken Sie auf **Hinzufügen**, um den Inhalt beim Veröffentlichen bzw. beim Rückgängigmachen der Veröffentlichung hinzuzufügen.
 
-   ![Untergeordnete Elemente beim Rückgängigmachen der Veröffentlichung einschließen](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Untergeordnete Elemente beim Rückgängigmachen der Veröffentlichung einbeziehen](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
 
 1. Im Assistenten **Veröffentlichung verwalten** wird der Inhalt des Baums zur Überprüfung aufgelistet. Sie können die Auswahl weiter anpassen, indem Sie zusätzliche Seiten hinzuzufügen oder ausgewählte Seiten entfernen.
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
 
-   Remember that you can also review the references to be published via the **Published References** option.
+   Sie können die zu veröffentlichenden Verweise auch in der Option **Veröffentlichte Verweise** überprüfen.
 
-1. [Fahren Sie mit dem Assistenten zum Verwalten von Veröffentlichungen wie gewohnt](#manage-publication) fort, um die Veröffentlichung der Struktur abzuschließen oder die Veröffentlichung rückgängig zu machen.
+1. [Fahren Sie mit dem Assistenten „Veröffentlichung verwalten“ wie üblich fort](#manage-publication), um die Veröffentlichung oder das Rückgängigmachen der Veröffentlichung des Baums abzuschließen.
 
 ## Bestimmen des Veröffentlichungsstatus {#determining-publication-status}
 
-Sie können den Veröffentlichungsstatus einer Seite festlegen:
+Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
-* In der [Ressourcenübersicht in der Sites-Konsole](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 
+* In der [Ressourcenübersicht in der Sites-Konsole](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![Veröffentlichungsstatus in der Ansicht der Karte](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+   ![Veröffentlichungsstatus in der Kartenansicht](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   Der Veröffentlichungsstatus wird in den Ansichten [Karten](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalten](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Listen](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in der Sites Console angezeigt.
+   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) angezeigt.
 
-* In the [timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* in der [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Veröffentlichungsstatus in der Ansicht der Zeitschiene](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+   ![Veröffentlichungsstatus in der Timeline-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
-* In the [Page Information menu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) when editing a page
+* im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) beim Bearbeiten einer Seite
 
-   ![Veröffentlichungsstatus im Menü &quot;Seiteninformationen&quot;](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+   ![Veröffentlichungsstatus im Menü „Seiteninformationen“](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
