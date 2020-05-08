@@ -1,7 +1,7 @@
 ---
 title: Verfassen einer Seite für Mobilgeräte
 description: Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um festzustellen, welche Darstellung der Endbenutzer sieht.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 # Verfassen einer Seite für Mobilgeräte {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. Durch ein responsives Layout werden Ihre Inhalte automatisch an das Gerät der Zielgruppe angepasst, sodass keine Inhalte für bestimmte Geräte erstellt werden müssen.
+Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. Durch ein responsives Layout werden Ihre Inhalte automatisch an das jeweilige Zielgerät angepasst, sodass Inhalte nicht speziell für bestimmte Geräte erstellt werden müssen.
 
 Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um zu sehen, was der Endbenutzer sieht, wenn auf er die Seite zugreift.
 
@@ -17,9 +17,9 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe Erstellen einer Live-Kopie für verschiedene Kanal.
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe „Erstellen einer Live Copy für unterschiedliche Kanäle“.
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. Siehe Erstellen von Filtern für Gerätegruppen.
+>AEM-Entwickler können neue Gerätegruppen erstellen. Siehe „Erstellen von Gerätegruppen-Filtern“.
 
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
@@ -29,18 +29,18 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
-1. From global navigation open the **Sites** console.
+1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
 1. Bearbeiten Sie eine Inhaltsseite.
-1. Switch to the desired emulator by clicking the **Emulator** icon at the top of the page.
+1. Wechseln Sie durch Klicken auf das **** Emulator-Symbol am oberen Seitenrand zum gewünschten Emulator.
 
-   ![Emulatorsymbol](/help/sites-cloud/authoring/assets/emulator.png)
+   ![Emulator-Symbol](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. Ziehen Sie Komponenten per Drag &amp; Drop aus dem Komponenten-Browser oder Asset-Browser auf die Seite.
-1. [Ändern Sie das reaktionsfähige Layout](/help/sites-cloud/authoring/features/responsive-layout.md) der Seite und ihrer Komponenten je nach ausgewähltem Gerät.
+1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser oder Asset-Browser auf die Seite.
+1. [Ändern Sie das responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md) der Seite und ihrer Komponenten je nach Gerät.
 
-Die Seite sieht wie folgt aus:
+Die Seite sieht dann ähnlich wie die folgende aus:
 
-![Mobilbeispiel](/help/sites-cloud/authoring/assets/mobile.png)
+![Beispiel für Mobilgeräte](/help/sites-cloud/authoring/assets/mobile.png)
 
 >[!NOTE]
 >
