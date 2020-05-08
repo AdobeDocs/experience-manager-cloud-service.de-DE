@@ -1,20 +1,20 @@
 ---
 title: Anwenden von Workflows auf Seiten
-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
-translation-type: tm+mt
+description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
-# Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
 
-Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten aktiv zu werden. Es ist auch möglich, mehr als einen Workflow anzuwenden.
+Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
-   * Sie können jeden Workflow anwenden (auf den Sie Zugriff haben, wie vom AEM-Administrator zugewiesen).
+   * Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu erkennen.
 * Die Workflow-Nutzlast. Hierbei kann es sich um eine oder mehrere Seiten handeln.
 
@@ -55,30 +55,30 @@ In beiden Fällen ist Folgendes zu tun:
 
 * [Geben Sie die Workflow-Details im Workflow-Erstellungs-Assistenten an](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starting a Workflow from the Sites Toolbar {#starting-a-workflow-from-the-sites-toolbar}
+### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starten:
 
-1. Gehen Sie zur gewünschten Seite und wählen Sie sie aus. 
+1. Gehen Sie zur gewünschten Seite und wählen Sie sie aus.
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. Von der Option **Erstellen** in der Symbolleiste aus können Sie jetzt **Workflow** auswählen.
 
-   ![Workflow aus der Symbolleiste erstellen](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
+   ![Erstellen von Workflows über die Symbolleiste](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starten eines Workflows aus der Timeline {#starting-a-workflow-from-the-timeline}
+### Starten eines Workflows aus der Timeline     {#starting-a-workflow-from-the-timeline}
 
 Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
-1. [Wählen Sie die Ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) aus und öffnen Sie die [Zeitschiene](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (oder öffnen Sie die Zeitschiene und wählen Sie die Ressource aus).
+1. [Wählen Sie die Ressource aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) und öffnen Sie die [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (oder öffnen Sie die Timeline und wählen Sie dann die Ressource aus).
 1. Der Pfeil neben dem Kommentarfeld kann verwendet werden, um **Workflow starten** anzuzeigen:
 
-   ![Workflow aus der Zeitleiste erstellen](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
+   ![Erstellen von Workflows über die Timeline](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Angeben von Workflow-Details im Assistenten „Workflow erstellen“ {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Angeben von Workflow-Details im Assistenten „Workflow erstellen“     {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
 
@@ -103,19 +103,19 @@ Anschließend können Sie Details angeben:
       * Sie können einen Titel für das Paket festlegen, um die Identifizierung erleichtern.
    >[!NOTE]
    >
-   >Die Option **Workflowpaket beibehalten** ist verfügbar, wenn der Workflow für die Unterstützung mehrerer Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.
+   >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.
 
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
 
-   Wenn abgeschlossen, klicken Sie auf **Weiter**, um fortzufahren.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**, um fortzufahren.
 
    ![Festlegen von Workflow-Eigenschaften](/help/sites-cloud/authoring/assets/workflows-properties.png)
 
-1. Im Schritt **Bereich** können Sie Folgendes auswählen:
+1. Im Schritt **Umfang** können Sie Folgendes auswählen:
 
-   * **Hinzufügen Content** , um den [Pfadbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen; Klicken Sie im Browser auf/tippen Sie auf **Auswählen** , um den Inhalt der Workflow-Instanz hinzuzufügen.
+   * **Inhalt hinzufügen**, um den [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) zu öffnen und zusätzliche Ressourcen auszuwählen; im Browser klicken/tippen Sie auf **Auswählen**, um den Inhalt zur Workflow-Instanz hinzuzufügen.
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
@@ -128,16 +128,16 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
          Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet wird.
 
       * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
-   ![Workflow-Bereich definieren](/help/sites-cloud/authoring/assets/workflows-scope.png)
+   ![Definieren des Workflow-Umfangs](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
    >
-   >Wenn Sie zusätzliche Ressourcen hinzufügen, können Sie **Zurück** verwenden, um die Einstellung für **Workflowpaket beibehalten** im Schritt **Eigenschaften** anzupassen.
+   >Wenn Sie zusätzliche Ressourcen hinzufügen, können Sie **Zurück** verwenden, um die Einstellung für **Workflow-Paket behalten** im Schritt **Eigenschaften** anzupassen.
 
-1. Use **Create** to close the wizard and create the workflow instance. Eine Meldung wird in der Sites-Konsole angezeigt.
+1. Verwenden Sie **Erstellen**, um den Assistenten zu schließen und die Workflow-Instanz zu erstellen. In der Sites-Konsole wird eine Benachrichtigung angezeigt.
 
-## Starting a Workflow from the Page Editor {#starting-a-workflow-from-the-page-editor}
+## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
 Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **Im Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
 
-![Starten eines Workflows über den Seiteneditor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
+![Starten eines Workflows aus dem Seiten-Editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
