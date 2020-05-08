@@ -2,10 +2,10 @@
 title: OSGi für AEM als Cloud-Dienst konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und Umgebung-spezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 5%
+source-wordcount: '2689'
+ht-degree: 4%
 
 ---
 
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Erstellen der Konfiguration im Repository {#creating-the-configuration-in-the-repository}
+## Erstellen von OSGi-Konfigurationen
 
-Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaßen vor:
+Es gibt zwei Möglichkeiten, neue OSGi-Konfigurationen zu erstellen, wie nachfolgend beschrieben. Der erste Ansatz wird normalerweise zur Konfiguration benutzerdefinierter OSGi-Komponenten verwendet, die über bekannte OSGi-Eigenschaften und -Werte des Entwicklers verfügen, und der zweite für AEM-bereitgestellte OSGi-Komponenten.
 
-1. Erstellen Sie im ui.apps-Projekt je nach verwendetem Ausführungsmodus einen `/apps/…/config.xxx` Ordner
+### Schreiben von OSGi-Konfigurationen
 
-1. Erstellen Sie eine neue JSON-Datei mit dem Namen der PID und fügen Sie die `.cfg.json` Erweiterung hinzu
+OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entwickelt und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch zum Kopieren/Einfügen und Aktualisieren von Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ordnern im Laufzeitmodus genutzt werden.
+
+1. Öffnen Sie in Ihrer IDE das `ui.apps` Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), in dem die Ausführungsmodi Zielgruppe werden, die die neue OSGi-Konfiguration durchführen soll.
+1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json` Datei. Die PID ist die Persistente Identität der OSGi-Komponente ist normalerweise der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<PID>-<factory-name>.cfg.json` Benennungskonvention verwenden.
+1. Öffnen Sie die neue `.cfg.json` Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json` Datei
+1. Hinzufügen und bestätigen Sie Ihre neue OSGi-Konfigurationsdatei auf Git
+
+### Generieren von OSGi-Konfigurationen mit AEM SDK QuickStart
+
+Die AEM SDK QuickStart Jar-Web-Konsole von AEM SDK kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich für die Konfiguration von AEM-bereitgestellten OSGi-Komponenten, deren OSGi-Eigenschaften und deren Wertformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht richtig verstanden werden. Beachten Sie, dass in der Konfigurationsoberfläche von AEM Web Console Dateien in das Repository geschrieben werden. Achten Sie daher darauf, dass dies zu vermeiden ist, dass während der lokalen Entwicklung möglicherweise unerwartete Verhaltensweisen auftreten, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können. `.cfg.json`
+
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM-Webkonsole als Admin-Benutzer an
+1. Navigieren Sie zu OSGi > Konfiguration
+1. Suchen Sie die zu konfigurierende OSGi-Komponente und tippen Sie zum Bearbeiten auf ihren Titel
+   ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
+1. Bearbeiten Sie die OSGi-Konfigurationseigenschaftswerte nach Bedarf über die Web-Benutzeroberfläche
+1. Notieren Sie die Persistente Identität (PID) an einem sicheren Ort. Dies wird später zum Generieren der OSGi-Konfigurations-JSON verwendet
+1. Tippen Sie auf Speichern
+1. Navigieren Sie zu OSGi > OSGi-Installationskonfigurationsdrucker.
+1. Fügen Sie die in Schritt 5 kopierte PID ein, stellen Sie sicher, dass das Serialisierungsformat auf &quot;OSGi Configurator JSON&quot;eingestellt ist.
+1. Tippen Sie auf Drucken,
+1. Die OSGi-Konfiguration im JSON-Format wird im Abschnitt &quot;Serialisierte Konfigurationseigenschaften&quot;angezeigt
+   ![OSGi-Installationskonfigurationsdrucker](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. Öffnen Sie in Ihrer IDE das `ui.apps` Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), in dem die Ausführungsmodi der neuen OSGi-Konfiguration Zielgruppe werden sollen.
+1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json` Datei. Die PID ist der gleiche Wert aus Schritt 5.
+1. Fügen Sie die serialisierten Konfigurationseigenschaften aus Schritt 10 in die `.cfg.json` Datei ein.
+1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json` Datei.
+1. Hinzufügen und speichern Sie die neue OSGi-Konfigurationsdatei auf Git.
 
 
-1. Die JSON-Datei mit den Schlüsselwertpaaren für die OSGi-Konfiguration füllen
-
-   >[!NOTE]
-   >
-   >Wenn Sie einen vordefinierten OSGi-Dienst konfigurieren, können Sie die Namen der OSGi-Eigenschaften über `/system/console/configMgr`
-
-
-1. Speichern Sie die JSON-Datei in Ihrem Projekt. -->
-
-## Konfigurationseigenschaftsformat in Quellcodeverwaltung {#configuration-property-format-in-source-control}
-
-Das Erstellen einer neuen OSGI-Konfigurationseigenschaft wird im Abschnitt zum [Hinzufügen einer neuen Konfiguration zum Repository](#creating-the-configuration-in-the-repository) oben beschrieben.
-
-Führen Sie die folgenden Schritte aus und ändern Sie die Syntax wie in den Unterabschnitten unten beschrieben:
+## OSGi-Konfigurationseigenschaftsformate
 
 ### Inline-Werte {#inline-values}
 
 Inline-Werte werden wie erwartet als Standard-Name/Wert-Paare gemäß der JSON-Standardsyntax formatiert. Beispiel:
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
@@ -504,7 +519,7 @@ Wie oben erwähnt, werden durch Aufrufen der API die neuen Variablen und Werte i
 
 In der Regel rufen Kunden die API auf, um Umgebung festzulegen, bevor Code bereitgestellt wird, der auf sie in Cloud Manager basiert. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 
-Beachten Sie, dass die API möglicherweise nicht erfolgreich ist, wenn eine Pipeline verwendet wird, entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
+Beachten Sie, dass die API bei Verwendung einer Pipeline möglicherweise nicht erfolgreich ist. Entweder ein AEM-Update oder eine Kundenbereitstellung, je nachdem, welcher Teil der End-to-End-Pipeline zu diesem Zeitpunkt ausgeführt wird. Die Fehlerantwort zeigt an, dass die Anforderung nicht erfolgreich war, obwohl sie den spezifischen Grund nicht angibt.
 
 Es kann Situationen geben, in denen eine geplante Bereitstellung von Kundencode auf vorhandenen Variablen basiert, um neue Werte zu erhalten, was mit dem aktuellen Code nicht übereinstimmen würde. Wenn dies Besorgnis erregend ist, wird empfohlen, die Variablenänderungen in additiver Weise vorzunehmen. Erstellen Sie dazu neue Variablennamen, anstatt nur den Wert alter Variablen zu ändern, sodass der alte Code nie auf den neuen Wert verweist. Wenn das neue Release stabil aussieht, können Sie dann die älteren Werte entfernen.
 
