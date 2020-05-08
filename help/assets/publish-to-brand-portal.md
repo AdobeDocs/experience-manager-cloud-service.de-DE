@@ -1,8 +1,8 @@
 ---
-title: Veröffentlichen von Assets, Ordnern und Sammlungen im Markenportal
-description: Veröffentlichen Sie Assets, Ordner und Sammlungen im Markenportal.
+title: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal
+description: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
@@ -10,11 +10,11 @@ source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
 
-Als Asset-Administrator von Adobe Experience Manager (AEM) können Sie Assets, Ordner und Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Außerdem können Sie den Veröffentlichungsarbeitsablauf für ein Asset oder einen Ordner auf ein späteres Datum oder eine spätere Uhrzeit einstellen. Nach der Veröffentlichung können die Benutzer des Markenportals auf die Assets, Ordner und Sammlungen zugreifen und sie an andere Benutzer weiterleiten.
+Als Administrator von Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen über die AEM Assets Brand Portal-Instanz veröffentlichen. Außerdem können Sie den Veröffentlichungs-Workflow für ein Asset oder einen Ordner zu einem späteren Zeitpunkt einplanen. Nach der Veröffentlichung können die Benutzer von Brand Portal auf die Assets, Ordner und Sammlungen zugreifen und sie an andere Benutzer weiterleiten.
 
-Zunächst müssen Sie jedoch AEM Assets mit dem Markenportal konfigurieren. For details, see [Configure AEM Assets with Brand Portal](configure-aem-assets-with-brand-portal.md).
+Allerdings müssen Sie zunächst AEM Assets mit Brand Portal konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset, Ordner oder der Sammlung in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal angezeigt, wenn Sie die Veröffentlichung von AEM Assets erneut durchführen. Mit dieser Funktion wird sichergestellt, dass derzeit vorgenommene Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
+Spätere Änderungen am ursprünglichen Asset, Order oder an der ursprünglichen Sammlung in AEM Assets spiegeln sich erst bei erneuter Veröffentlichung von AEM Assets aus in Brand Portal wider. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 * [Veröffentlichen von Assets in Brand Portal](#publish-assets-to-bp)
 * [Veröffentlichen von Ordnern in Brand Portal](#publish-folders-to-brand-portal)
@@ -27,66 +27,66 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset, Ordner oder der Samm
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-bp}
 
-Im Folgenden werden die Schritte zum Veröffentlichen von Assets aus AEM Assets im Markenportal beschrieben:
+Im Folgenden werden die Schritte zum Veröffentlichen von Assets aus AEM Assets in Brand Portal beschrieben:
 
-1. Öffnen Sie in der Assets-Konsole den übergeordneten Ordner, wählen Sie alle Assets aus, die Sie veröffentlichen möchten, und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Schnelle Veröffentlichung]** &quot;.
+1. Öffnen Sie in der Assets-Konsole den übergeordneten Ordner, wählen Sie alle Assets aus, die Sie veröffentlichen möchten, und klicken Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
 
    ![publish2bp-2](assets/publish2bp.png)
 
 1. Im Folgenden finden Sie zwei Möglichkeiten, Assets zu veröffentlichen:
-   * [Jetzt](#publish-to-bp-now) veröffentlichen (Assets sofort veröffentlichen)
-   * [Später](#publish-to-bp-later) veröffentlichen (Planen der Veröffentlichung von Assets)
+   * [Sofort veröffentlichen](#publish-to-bp-now) (Assets sofort veröffentlichen)
+   * [Später veröffentlichen](#publish-to-bp-later) (Veröffentlichung von Assets terminieren)
 
-### Assets jetzt veröffentlichen {#publish-to-bp-now}
+### Sofortiges Veröffentlichen von Assets {#publish-to-bp-now}
 
 Um die ausgewählten Assets in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-* From the toolbar, select **[!UICONTROL Quick Publish]**. Then from the menu, click **[!UICONTROL Publish to Brand Portal]**.
+* Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Klicken Sie dann im Menü auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
-* From the toolbar, select **[!UICONTROL Manage Publication]**.
+* Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-   1. Wählen Sie in **[!UICONTROL Aktion]** die Option In Markenportal **[!UICONTROL veröffentlichen]**.
+   1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
-      Wählen Sie in **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]**.
+      Wählen Sie unter **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]** aus.
 
       Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   2. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Scope]** und klicken Sie auf In Markenportal **[!UICONTROL veröffentlichen]**.
+   2. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Umfang]** und klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
-Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurden. Melden Sie sich bei der Oberfläche des Markenportals an, um die veröffentlichten Assets anzuzeigen.
+Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurden. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen.
 
 ### Assets später veröffentlichen {#publish-to-bp-later}
 
 So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem späteren Zeitpunkt:
 
-1. Wählen Sie die Assets aus, die Sie für die Veröffentlichung planen möchten, und klicken Sie oben in der Symbolleiste auf Veröffentlichung **[!UICONTROL verwalten]** .
+1. Wählen Sie die Assets aus, die Sie für die Veröffentlichung planen möchten, und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**.
 
-1. Wählen Sie auf der Seite &quot;Veröffentlichung **** verwalten&quot;die Option **[!UICONTROL In Markenportal]** veröffentlichen aus **[!UICONTROL Aktion]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** unter **[!UICONTROL Aktion]** aus.
 
-   Wählen Sie **[!UICONTROL Später]** aus der **[!UICONTROL Planung]**.
+   Wählen Sie **[!UICONTROL Später]** unter **[!UICONTROL Planung]** aus.
 
-   ![publishlatbp-1](assets/publishlaterbp-1.png)
+   ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. Select an **[!UICONTROL Activation date]** and specify time. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Select an **Activation date** and specify time. Klicken Sie auf **Weiter**.
+1. Wählen Sie ein **Aktivierungsdatum** aus und geben Sie die Zeit an. Klicken Sie auf **Weiter**.
 
-1. Specify a **[!UICONTROL Workflow title]** in **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
+1. Geben Sie einen **[!UICONTROL Workflow-Titel]** in **[!UICONTROL Workflows]** an. Klicken Sie auf **[!UICONTROL Später veröffentlichen]**.
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Melden Sie sich bei der Oberfläche des Markenportals an, um die veröffentlichten Assets anzuzeigen (je nach Datum oder Uhrzeit).
+Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen (je nach Ihrem geplanten Zeitpunkt).
 
 ![bp_landing_page](assets/bp_landing_page.png)
 
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
-Sie können Asset-Ordner sofort veröffentlichen oder die Veröffentlichung rückgängig machen oder einen späteren Zeitpunkt planen.
+Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung aufheben oder einen späteren Zeitpunkt festlegen.
 
 ### Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-bp}
 
-1. Wählen Sie in der Assets-Konsole die zu veröffentlichenden Ordner aus und klicken Sie in der Symbolleiste auf die Option &quot; **[!UICONTROL Schnelle Veröffentlichung]** &quot;.
+1. Wählen Sie in der Assets-Konsole die Ordner aus, die Sie veröffentlichen möchten, und klicken Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
 
    ![publish2bp](assets/publish2bp.png)
 
@@ -94,140 +94,140 @@ Sie können Asset-Ordner sofort veröffentlichen oder die Veröffentlichung rüc
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * From the toolbar, select **[!UICONTROL Quick Publish]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus.
 
-      Wählen Sie im Menü **[!UICONTROL Im Brand Portal veröffentlichen]** aus.
+      Wählen Sie im Menü **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
-   * From the toolbar, select **[!UICONTROL Manage Publication]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-      1. Wählen Sie in **[!UICONTROL Aktion]** die Option In Markenportal **[!UICONTROL veröffentlichen]**.
+      1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
-         Wählen Sie in **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]**.
+         Wählen Sie unter **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]** aus.
 
-         Klicken Sie auf **Weiter.**
+         Klicken Sie auf **Weiter**.
 
-      1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Scope]** und klicken Sie auf In Markenportal **[!UICONTROL veröffentlichen]**.
-   Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei Ihrer Markenportal-Oberfläche an, um den veröffentlichten Ordner anzuzeigen.
+      1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Umfang]** und klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
+   Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Ordner zu sehen.
 
 1. **Ordner später veröffentlichen**
 
-   So planen Sie die Veröffentlichung der Asset-Ordner zu einem späteren Zeitpunkt:
+   Wenn Sie die Asset-Ordner zu einem späteren Zeitpunkt veröffentlichen möchten:
 
-   1. Wählen Sie die Ordner, die Sie für die Veröffentlichung planen möchten, und wählen Sie oben in der Symbolleiste die Option &quot;Veröffentlichung **[!UICONTROL verwalten]** &quot;aus.
-   1. Wählen Sie in **[!UICONTROL Aktion]** die Option In Markenportal **[!UICONTROL veröffentlichen]**.
+   1. Wählen Sie die Ordner aus, die Sie für die Veröffentlichung planen möchten, und wählen Sie oben in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
+   1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
-      Wählen Sie in **[!UICONTROL Planung]** die Option **[!UICONTROL Später]**.
+      Wählen Sie unter **[!UICONTROL Planung]** die Option **[!UICONTROL Später]** aus.
 
-   1. Select an **[!UICONTROL Activation date]** and specify time. Klicken Sie auf **[!UICONTROL Weiter]**.
+   1. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. Confirm your selection in **[!UICONTROL Scope]**. Klicken Sie auf **[!UICONTROL Weiter]**.
+   1. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Umfang]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
+   1. Geben Sie einen Workflow-Titel unter **[!UICONTROL Workflows]** an. Klicken Sie auf **[!UICONTROL Später veröffentlichen]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
 ### Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
-Sie können jeden im Markenportal veröffentlichten Asset-Ordner entfernen, indem Sie die Veröffentlichung aus der AEM Assets-Instanz rückgängig machen. Nachdem Sie die Veröffentlichung des Originalordners rückgängig gemacht haben, steht die Kopie nicht mehr für Markenportal-Benutzer zur Verfügung.
+Sie können alle in Brand Portal veröffentlichten Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM Assets-Instanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
-Sie können die Veröffentlichung von Asset-Ordnern aus dem Markenportal sofort rückgängig machen oder eine spätere Planung vornehmen.
+Sie können die Veröffentlichung von Asset-Ordnern in Brand Portal sofort aufheben oder einen späteren Zeitpunkt festlegen.
 
 So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
 
-1. Wählen Sie in der Assets-Konsole die Asset-Ordner aus, die Sie veröffentlichen möchten, und klicken Sie in der Symbolleiste auf die Option &quot;Veröffentlichung **[!UICONTROL verwalten]** &quot;.
+1. Wählen Sie in der Assets-Konsole die Asset-Ordner aus, deren Veröffentlichung Sie aufheben möchten, und klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**.
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. **Veröffentlichung von Asset-Ordnern jetzt rückgängig machen**
+1. **Sofortiges Rückgängigmachen der Veröffentlichung von Assets**
 
-   So heben Sie die Veröffentlichung des ausgewählten Asset-Ordners im Markenportal sofort auf:
+   Wenn Sie die Veröffentlichung des ausgewählten Ordners in Brand Portal sofort rückgängig machen möchten:
 
-   1. From the toolbar, select **[!UICONTROL Manage Publication]**.
+   1. Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-   1. Wählen Sie in **[!UICONTROL Aktion]** **[!UICONTROL Veröffentlichung rückgängig machen im Markenportal]**.
+   1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL Veröffentlichung in Brand Portal rückgängig machen]** aus.
 
-      Wählen Sie in **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]**.
+      Wählen Sie unter **[!UICONTROL Planung]** die Option **[!UICONTROL Jetzt]** aus.
 
       Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Scope]** und klicken Sie auf **[!UICONTROL Veröffentlichung im Markenportal]** rückgängig machen.
+   1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Umfang]** und klicken Sie auf **[!UICONTROL Veröffentlichung in Brand Portal rückgängig machen]**.
 
-      ![verify-unpublish](assets/confirm-unpublish.png)
+      ![confirm-unpublish](assets/confirm-unpublish.png)
 
-1. **Veröffentlichung von Asset-Ordnern später rückgängig machen**
+1. **Späteres Rückgängigmachen der Veröffentlichung von Assets**
 
-   So planen Sie das Rückgängigmachen der Veröffentlichung eines Asset-Ordners auf ein späteres Datum und eine spätere Uhrzeit:
+   Wenn Sie die Veröffentlichung eines Asset-Ordners zu einem späteren Zeitpunkt rückgängig machen möchten:
 
-   1. From the toolbar, select **[!UICONTROL Manage Publication]**.
+   1. Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-   1. Wählen Sie in **[!UICONTROL Aktion]****[!UICONTROL Veröffentlichung rückgängig machen aus Markenportal]**.
+   1. Wählen Sie unter **[!UICONTROL Aktion]** die Option **[!UICONTROL Veröffentlichung in Brand Portal rückgängig machen]** aus.
 
-      Wählen Sie in **[!UICONTROL Planung]** die Option **[!UICONTROL Später]**.
+      Wählen Sie unter **[!UICONTROL Planung]** die Option **[!UICONTROL Später]** aus.
 
-   1. Select an **[!UICONTROL Activation date]** and specify the time. Klicken Sie auf **[!UICONTROL Weiter]**.
+   1. Wählen Sie ein **[!UICONTROL Aktivierungsdatum]** aus und geben Sie die Zeit an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Scope]** und klicken Sie auf **[!UICONTROL Weiter]**.
+   1. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Umfang]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   1. Specify a **[!UICONTROL Workflow title]** in **[!UICONTROL Workflows]**. Click **[!UICONTROL Unpublish Later]**.
+   1. Geben Sie einen **[!UICONTROL Workflow-Titel]** in **[!UICONTROL Workflows]** an. Klicken Sie auf **[!UICONTROL Veröffentlichung später rückgängig machen]**.
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
 ## Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
 
-Sie können Sammlungen in Ihrer AEM Assets-Cloud-Instanz veröffentlichen oder die Veröffentlichung rückgängig machen.
+Sie können Sammlungen in Ihrer AEM Assets-Cloud-Instanz veröffentlichen oder deren Veröffentlichung rückgängig machen.
 
 >[!NOTE]
 >
->Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Therefore, if you select content fragment(s) in AEM Assets, then **[!UICONTROL Publish to Brand Portal]** action is not available.
+>Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher in der AEM-Assets-Instanz Inhaltsfragmente auswählen, ist die Aktion **[!UICONTROL In Brand Portal veröffentlichen]** nicht verfügbar.
 >
->Wenn Sammlungen, die Inhaltsfragmente enthalten, aus AEM Assets in Brand Portal veröffentlicht werden, werden alle Inhalte des Ordners mit Ausnahme von Inhaltsfragmenten auf die Oberfläche des Markenportals repliziert.
+>Wenn Sammlungen, die Inhaltsfragmente enthalten, über AEM Assets in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente in der Brand Portal-Oberfläche repliziert.
 
 
 ### Veröffentlichen von Sammlungen {#publish-collections}
 
-Im Folgenden werden die Schritte zum Veröffentlichen von Sammlungen aus AEM Assets im Markenportal beschrieben:
+Im Folgenden werden die Schritte zum Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal beschrieben:
 
-1. Klicken Sie in der AEM Assets-Benutzeroberfläche auf AEM-Logo.
+1. Klicken Sie in der Benutzeroberfläche von AEM Assets auf das AEM-Logo.
 
-1. From **Navigation** page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+1. Gehen Sie von der Seite **Navigation** aus zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
-1. From the **Collections** console, select the collections that you want to publish to Brand Portal.
+1. Wählen Sie in der Konsole **Sammlungen** die Sammlung aus, die Sie in Brand Portal veröffentlichen möchten.
 
-   ![select_collection](assets/select_collection.png)
+   ![Sammlung auswählen](assets/select_collection.png)
 
-1. From the toolbar, click **[!UICONTROL Publish to Brand Portal]**.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
-1. In the confirmation dialog, click **[!UICONTROL Publish]**.
+1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Veröffentlichen]**.
 
 1. Schließen Sie die Bestätigungsmeldung.
 
-   Melden Sie sich beim Markenportal als Administrator an. Die veröffentlichte Sammlung steht in der Konsole „Sammlungen“ zur Verfügung.
+   Melden Sie sich bei Brand Portal als Administrator an. Die veröffentlichte Sammlung steht in der Konsole „Sammlungen“ zur Verfügung.
 
-   ![veröffentlichte Sammlung](assets/published_collection.png)
+   ![Veröffentlichte Sammlung](assets/published_collection.png)
 
 ### Veröffentlichung von Sammlungen rückgängig machen {#unpublish-collections}
 
-Sie können alle im Markenportal veröffentlichten Sammlungen entfernen, indem Sie die Veröffentlichung in Ihrer AEM Assets-Instanz rückgängig machen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, ist die Kopie für die Benutzer des Markenportals nicht mehr verfügbar.
+Sie können alle in Brand Portal veröffentlichte Sammlungen entfernen, indem Sie die Veröffentlichung über die AEM Assets-Instanz rückgängig machen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, ist deren Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
-Im Folgenden werden die Schritte zum Rückgängigmachen der Veröffentlichung einer Sammlung beschrieben:
+Im Folgenden werden die Schritte zum Aufheben der Veröffentlichung einer Sammlung beschrieben:
 
-1. From the **Collections** console of your AEM Assets instance, and select the collection that    you want to unpublish.
+1. Wählen Sie über die Konsole **Sammlungen** der AEM Assets-Instanz die Sammlung aus, deren Veröffentlichung rückgängig gemacht werden soll.
 
-   ![select_collection](assets/select_collection-1.png)
+   ![Sammlung auswählen](assets/select_collection-1.png)
 
-1. From the toolbar, click **[!UICONTROL Remove from Brand Portal]** icon.
-1. In the dialog, click **[!UICONTROL Unpublish]**.
-1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Benutzeroberfläche des Markenportals entfernt.
+1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Aus Brand Portal löschen]**.
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Brand Portal-Oberfläche entfernt.
 
-Zusätzlich zu den oben genannten Funktionen können Sie auch Metadaten-Schemas, Bildvorgaben, Suchfacetten und -Tags aus AEM Assets in Brand Portal veröffentlichen.
+Darüber hinaus können Sie Metadatenschemata, Bildvorgaben, Suchfacetten und Tags von AEM Assets in Brand Portal veröffentlichen.
 
-* [Veröffentlichen von Vorgaben, Schemas und Facetten im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
+Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/home.html).
 
 
 <!--
