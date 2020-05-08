@@ -1,41 +1,41 @@
 ---
-title: Einführung in Assets as a Cloud Service
-description: Neue Funktionen in Assets als Cloud-Dienst.
+title: Einführung in AEM Assets as a Cloud Service
+description: Neue Funktionen in AEM Assets as a Cloud Service
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
+# Neu: AEM Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets als Cloud-Dienst-Angebot ist eine Cloud-native API-Lösung für Unternehmen, mit der sie nicht nur ihre Digital Asset Management- und Dynamic Media-Vorgänge schnell und wirkungsvoll durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie AI/ML nutzen können, und zwar innerhalb eines Systems, das immer aktuell, immer verfügbar und immer lernfähig ist.
+Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native PaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital-Asset-Management- und Dynamic-Media-Vorgänge schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
 
-Die gleichzeitige Erfassung vieler Assets oder komplexer Assets ist eine ressourcenintensive Aufgabe für eine AEM Author-Instanz. Die primäre Instanz verbraucht erhebliche CPU-, Speicher- und I/O-Ressourcen, wenn Assets hinzugefügt, verarbeitet oder sogar migriert werden. Solche Leistungsprobleme wirken sich auf das Authoring und Browsen von Endbenutzern aus.
+Die gleichzeitige Erfassung vieler oder komplexer Assets ist eine ressourcenintensive Aufgabe für eine AEM-Autoreninstanz. Die primäre Instanz beansprucht in erheblichem Umfang CPU-, Speicher- und E/A-Ressourcen, wenn Assets hinzugefügt, verarbeitet oder sogar migriert werden. Diese Leistungsprobleme wirken sich auf das Authoring- und Browsing-Erlebnis von Endbenutzern aus.
 
-Unternehmen benötigen Unterstützung für eine Vielzahl von Dateiformaten und Inhaltsauflösungen für Anwendungen in mehreren Geräten, unterschiedlichen Geografien und mehreren Sprachen. Die Anforderungen an die Asset-Verarbeitung und -Datenspeicherung erfordern Ressourcen und Funktionen, die eine herkömmliche Lösung überfordern können. Manchmal führen technische Einschränkungen bei der Verarbeitung von Vermögenswerten nicht zu den gewünschten Ergebnissen, und manchmal behindern die Kosten der Datenspeicherung die Gewinnmargen.
+Unternehmen benötigen Unterstützung für eine Vielzahl von Dateiformaten und Inhaltsauflösungen für Anwendungen in geräte-, standort- und sprachübergreifende Anwendungsfällen. Die Verarbeitungs- und Speicheranforderungen von Assets erfordern Ressourcen und Funktionen, die herkömmliche Lösungen überfordern können. In einigen Fällen verhindern technische Beschränkungen bei der Asset-Verarbeitung, dass die gewünschten Ergebnissen erzielt werden. In anderen Fällen schmälern die Speicherkosten die Gewinnspanne.
 
-Zunächst sollten Sie die [Vorteile eines Cloud-nativen Angebots](#solution-benefits)verstehen. Sehen Sie sich die bemerkenswerten [Änderungen an AEM als Cloud-Dienst](/help/release-notes/aem-cloud-changes.md) an, die sich auch auf Experience Manager Assets auswirken, und folgen Sie den bemerkenswerten [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
+Zunächst ist es wichtig, die [Vorteile von Cloud-nativen Lösungen](#solution-benefits) zu verstehen. Werfen Sie einen genaueren Blick auf die wesentlichen [Änderungen an AEM as a Cloud Service](/help/release-notes/aem-cloud-changes.md), die sich auch auf Experience Manager Assets auswirken, gefolgt von den wesentlichen [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
 
-Lesen Sie weiter, um die [Details der neuen Asset-Funktionen](#whats-new-assets) und die [bekannten Probleme](/help/release-notes/known-issues.md)zu erfahren. Sehen Sie sich eine Liste der [veralteten oder entfernten Funktionen](/help/release-notes/deprecated-removed-features.md) an, um zu erfahren, was in dieser Version entfernt wurde, und sehen Sie sich diese [Liste der kommenden Funktionen](/help/release-notes/known-issues.md#upcoming-assets-capabilities) an, um zu erfahren, was in Kürze geschieht. Verstehen Sie abschließend mithilfe dieses [Glossars](/help/overview/terminology.md)die AEM-Begriffe.
+Machen Sie sich außerdem mit den [Details der neuen Assets-Funktionen](#whats-new-assets) und [bekannten Problemen](/help/release-notes/known-issues.md) vertraut. Sehen Sie sich eine Liste der [veralteten oder entfernten Funktionen](/help/release-notes/deprecated-removed-features.md) an, um zu erfahren, welche Funktionen in dieser Version nicht mehr enthalten sind. Sehen Sie sich außerdem eine [Liste der künftig verfügbaren Funktionen](/help/release-notes/known-issues.md#upcoming-assets-capabilities) an, um zu erfahren, welche Funktionen Ihnen demnächst zur Verfügung stehen. Darüber hinaus finden Sie in diesem [Glossar](/help/overview/terminology.md) Erläuterungen zu AEM-Begriffen.
 
 ## Vorteile der Lösung {#solution-benefits}
 
-Im Folgenden werden die wichtigsten Vorteile von Assets als Cloud-Dienst beschrieben. Weitere Informationen finden Sie unter [Übersicht über Experience Manager als Cloud-Dienst](/help/overview/introduction.md).
+Im Folgenden werden die wichtigsten Vorteile von Assets as a Cloud Service beschrieben. Weitere Informationen finden Sie in der [Übersicht über Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md).
 
-* **Moderner Cloud-Dienst für die Asset-Verarbeitung**: Die neuen Asset-Mikrodienste sind ein Cloud-basierter, skalierbarer, zuverlässiger und leicht zu bedienender Asset-Verarbeitungsdienst.
-* **Hochgradig skalierbar**: Elastische Skalierbarkeit für alle Implementierungen. Praktisch unbegrenzte Ressourcen, die nach Bedarf verfügbar sind. Sparen Sie Kosten für Überdesign im Vergleich zu einem herkömmlichen System.
-* **Neueste Software**: Immer aktuell und immer aktualisiert. Alle Benutzer haben nur die neueste Software mit allen Patches, Features, Sicherheit und Fehlerkorrekturen, die ihnen zur Verfügung stehen. Entwickler und Integratoren arbeiten mit den neuesten APIs, ohne dass Unterstützung für mehrere Versionen erforderlich ist.
-* **Immer online**: Null Ausfallzeiten (0dt) dank der Instanz, die in einem Cluster mit Backups und Redundanz bereitgestellt wird. Upgrades sind auch 0dt.
-* **Konstante Überwachung**: Die Überwachung des Systems erfolgt durch automatisierte und integrierte Prüfungen und Auslöser, um die Leistung, Verfügbarkeit und Stabilität insgesamt zu erhalten.
-* **Problemlose Bereitstellungen**: AEM in Cloud-Vorgängen werden vollständig automatisiert, sodass keine manuelle Intervention erforderlich ist. Bei automatisierten Bereitstellungen automatisiert die Cloud Manager-Komponente (CM) die Erstellung bereitstellbarer Docker-Bilder, die Ihren benutzerdefinierten Code enthalten.
+* **Moderner Cloud Service für die Asset-Verarbeitung**: Die neuen Asset-Microservices sind ein Cloud-basierter, skalierbarer, zuverlässiger und unkomplizierter Dienst zur Asset-Verarbeitung.
+* **Hohe Skalierbarkeit**: Flexible Skalierbarkeit bei unterschiedlichsten Bereitstellungen. Nahezu unbegrenzte Ressourcen, die bei Bedarf zur Verfügung stehen, soweit und sobald diese benötigt werden. Spart Kosten für überflüssiges Design, die bei herkömmlichen Systemen anfallen können.
+* **Neueste Software**: Immer auf dem neuesten Stand und immer aktualisiert. Allen Benutzern wird ausschließlich die neueste Software mit allen Patches, Features, Sicherheitsfunktionen und Fehlerbehebungen zur Verfügung gestellt. Entwickler und Integratoren verwenden die neuesten APIs, sodass Probleme im Zusammenhang mit der Unterstützung mehrerer Versionen vermieden werden.
+* **Immer online**: Keine Ausfallzeiten (0 DT), da die Instanz in einem Cluster mit Backups und Redundanz bereitgestellt wird. Auch Upgrades erfolgen ohne Ausfallzeiten.
+* **Durchgehende Überwachung**: Die Überwachung des Systems ist automatisiert. Integrierte Prüfungen und Trigger tragen zudem dazu bei, die Leistung, Verfügbarkeit und allgemeine Stabilität sicherzustellen.
+* **Unkomplizierte Bereitstellungen**: Vorgänge in Cloud-basierten AEM-Versionen sind umfassend automatisiert und erfordern keine Benutzerinteraktionen. Für automatisierte Bereitstellungen automatisiert die Komponente „Cloud Manager“ (CM) die Erstellung bereitstellbarer Docker-Images, die Ihren spezifischen Code enthalten.
 
-## Funktionen für neue Assets {#whats-new-assets}
+## Neue Assets-Funktionen {#whats-new-assets}
 
-Die wichtigsten neuen Funktionen sind:
+Die wichtigsten neuen Funktionen:
 
-* [Asset-Mikrodienste](/help/assets/asset-microservices-overview.md)
-* [Methoden zum Hochladen von Assets](/help/assets/add-assets.md)
+* [Asset-Microservices](/help/assets/asset-microservices-overview.md)
+* [Asset-Upload-Methoden](/help/assets/add-assets.md)
