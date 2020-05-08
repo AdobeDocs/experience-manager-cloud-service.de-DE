@@ -1,13 +1,13 @@
 ---
 title: Suchen
 description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
 
-# Suche{#search-feature}
+# Suche {#search-feature}
 
 Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
 
@@ -15,7 +15,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 
-![Suchschaltfläche](/help/sites-cloud/authoring/assets/search-button.png)
+![Schaltfläche „Suchen“](/help/sites-cloud/authoring/assets/search-button.png)
 
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
@@ -25,7 +25,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchschiene sichtbar ist.
 
 ## Suchen und Filtern {#search-and-filter}
 
@@ -35,7 +35,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![Suchbegriff](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Standardmäßig sind die Suchergebnisse auf den aktuellen Speicherort beschränkt (d. h. Konsole und Ressourcentyp): 
+   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position begrenzt (d. h. Konsolen- und zugehörigen Ressourcentyp):
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
@@ -48,31 +48,31 @@ So durchsuchen und filtern Sie Ressourcen:
 
 1. Wenn Sie weitere Details anzeigen möchten, wählen Sie das Symbol für die Seitenleiste (oben links) aus, um den Seitenbereich **Filter und Optionen** zu öffnen.
 
-   ![Schaltfläche &quot;Leiste&quot;](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![Seitenleisten-Schaltfläche](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   Je nach Ressourcentyp zeigt Search eine vordefinierte Auswahl von Such-/Filterkriterien an.
+   Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien an.
 
    Im Seitenbereich können Sie folgende Elemente auswählen:
 
    * Gespeicherte Suchvorgänge
    * Verzeichnisse, die durchsucht werden sollen
    * Tags
-   * Suchkriterien, z. B. Modifizierte Datumswerte, Veröffentlichungsstatus, LiveCopy-Status
+   * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status.
    >[!NOTE]
    >
    >Die Suchkriterien können variieren:
    >
    >* abhängig vom ausgewählten Ressourcentyp – beispielsweise sind die Kriterien „Assets“ und „Communities“ nach Themen spezialisiert.
-   >* je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
+   >* Je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
 
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![Suchseitenbedienfeld](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![Suchen im seitlichen Bedienfeld](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Sie können auch weitere Suchbegriffe hinzufügen.
+1. Sie können auch zusätzliche Suchbegriffe hinzufügen.
 
 1. Schließen Sie die **Suche** mit dem **X** (oben rechts).
 
@@ -82,7 +82,7 @@ So durchsuchen und filtern Sie Ressourcen:
 >
 >Bei Auswahl eines Elements auf der Seite mit den Suchergebnissen bleiben die Suchkriterien erhalten, wenn Sie über die Zurück-Schaltfläche des Browsers zur Suchseite zurückkehren.
 
-## Saved Searches {#saved-searches}
+## Gespeicherte Suchvorgänge {#saved-searches}
 
 Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
 
@@ -90,7 +90,7 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
    ![Speichern einer Suche](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Weisen Sie einen Namen zu und wählen Sie **Speichern** zur Bestätigung:
+1. Weisen Sie einen Namen zu und wählen Sie zur Bestätigung **Speichern** aus:
 
    ![Speichern einer Suche mit einem Namen](/help/sites-cloud/authoring/assets/search-save-name.png)
 
@@ -105,4 +105,4 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 
-![Speichern einer Suche ändern](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
+![Ändern einer gespeicherten Suche](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
