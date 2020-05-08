@@ -1,42 +1,42 @@
 ---
-title: Hinzufügen Ihrer digitalen Assets mit Adobe Experience Manager
-description: Hinzufügen Ihrer digitalen Assets als Cloud-Dienst an Adobe Experience Manager
-translation-type: tm+mt
+title: Hinzufügen digitaler Assets zu Adobe Experience Manager
+description: Hinzufügen digitaler Assets zu Adobe Experience Manager as a Cloud Service
+translation-type: ht
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
-# Digitale Assets in Adobe Experience Manager Hinzufügen {#add-assets-to-experience-manager}
+# Hinzufügen digitaler Assets zu Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager bereichert den binären Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Darstellungen und anderen DAM-Diensten (Digital Asset Management). Sie können verschiedene Dateitypen, wie z. B. Bilder, Dokumente und Rohbilddateien, aus Ihrem lokalen Ordner oder einem Netzlaufwerk in Experience Manager Assets hochladen.
+In Adobe Experience Manager wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in Experience Manager Assets hochladen.
 
-Es stehen eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripten, die Kunden erstellen würden, und automatisierte Erfassungsintegrationen, die als AEM-Erweiterungen hinzugefügt werden.
+Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browserupload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager-Desktop-Programm, Upload- und Erfassungsskripte, die Kunden erstellen, und automatisierte Erfassungsintegrationen, die als AEM-Erweiterungen hinzugefügt werden.
 
-Wir konzentrieren uns hier auf Upload-Methoden für Endbenutzer und stellen Links zu Artikeln bereit, die technische Aspekte des Hochladeens und der Erfassung von Assets mit Experience Manager-APIs und -SDKs beschreiben.
+Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Erfassung von Assets mithilfe von Experience Manager-APIs und SDKs beschreiben.
 
-Während Sie in Experience Manager Binärdateien hochladen und verwalten können, unterstützen die am häufigsten verwendeten Dateiformate zusätzliche Dienste wie Metadaten-Extraktion oder Vorschau-/Darstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md) .
+Sie können zwar jede beliebige Binärdatei in Experience Manager hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Dienste, wie z. B. die Extraktion von Metadaten oder die Vorschau/Ausgabegenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
-Sie können auch festlegen, dass für die hochgeladenen Assets zusätzliche Verarbeitungsschritte ausgeführt werden. Für den Ordner, in den Assets hochgeladen werden, können mehrere Profil zur Asset-Verarbeitung konfiguriert werden, um bestimmte Metadaten, Darstellungen oder Bildverarbeitungsdienste hinzuzufügen. Weitere Informationen finden Sie unter [Zusätzliche Verarbeitung](#additional-processing) weiter unten.
+Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabeformate oder Bildbearbeitungsdienste hinzuzufügen. Weitere Informationen finden Sie unten unter [Zusätzliche Verarbeitung](#additional-processing).
 
 >[!NOTE]
 >
-> Experience Manager als Cloud-Dienst nutzt eine neue Methode zum Hochladen von Assets - direktes binäres Hochladen. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-App und somit für die Endbenutzer transparent unterstützt.
+> Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
 >
-> Hochladecode, der von technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und -Protokolle verwenden.
+> Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
 
-## Upload assets {#upload-assets}
+## Hochladen von Assets {#upload-assets}
 
-Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf Ihrem Desktop auswählen und per Drag &amp; Drop in die Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload auch über die Benutzeroberfläche starten.
+Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und per Drag-and-Drop in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload auch über die Benutzeroberfläche starten.
 
-1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. Führen Sie einen der folgenden Schritte aus, um die Assets hochzuladen:
 
-   * On the toolbar, tap the **[!UICONTROL Create]** icon. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
-   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Benutzeroberfläche &quot;Assets&quot;. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+   * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
+   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Assets-Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
    ![create_menu](assets/create_menu.png)
 
-   Um mehrere Dateien auszuwählen, drücken Sie die Strg- oder Befehlstaste und wählen Sie die Assets im Dateiauswahl-Dialogfeld aus. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
+   Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -55,7 +55,7 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf I
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
+1. Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
 
    Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht AEM Assets den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
@@ -98,79 +98,79 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### Verarbeiten von Uploads, wenn Asset bereits vorhanden ist {#handling-upload-existing-file}
+### Handhabung von Uploads, wenn das Asset bereits vorhanden ist {#handling-upload-existing-file}
 
 Wenn Sie ein Asset unter einem Namen hochladen, der bereits für ein Asset verwendet wird, das sich am Zielort befindet, wird eine Warnmeldung angezeigt.
 
-Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle zuvor vorgenommenen Änderungen (z. B. Anmerkungen, Zuschneiden usw.) gelöscht. If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
+Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset und sämtliche vorherigen Änderungen daran (z. B. Anmerkungen, Zuschnitte usw.) gelöscht. Wenn Sie sich dafür entscheiden, beide Assets zu behalten, wird das neue Asset umbenannt und die Ziffer `1` an den Namen angehängt.
 
 >[!NOTE]
 >
->When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. Diese ID unterscheidet sich von der ID des vorherigen Assets.
+>Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
 >
->Wenn Asset Insights in Adobe Analytics zur Verfolgung von Impressionen/Klicks aktiviert ist, werden die für das Asset in Analytics erfassten Daten mit der neu generierten Asset-ID ungültig.
+>Wenn Asset Insights zur Verfolgung von Impressions/Klicks mit Adobe Analytics aktiviert ist, werden die für das Asset in Analytics erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
-Um das Duplikat-Asset in AEM Assets beizubehalten, tippen/klicken Sie auf &quot; **[!UICONTROL Behalten]**&quot;. Um das hochgeladene Duplikat-Asset zu löschen, tippen/klicken Sie auf **[!UICONTROL Löschen]**.
+Tippen oder klicken Sie auf **[!UICONTROL Behalten]**, um das doppelte Asset in AEM Assets beizubehalten. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
 
-### Behandlung von Dateinamen und verbotene Zeichen {#filename-handling}
+### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-AEM Assets verhindert, dass Sie Assets mit den verbotenen Zeichen in ihren Dateinamen hochladen. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem nicht zulässigen Zeichen oder mehr hochzuladen, zeigt AEM Assets eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt AEM Assets eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
-To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload.
+Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten.
 
 Allerdings werden die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) nicht unterstützt:
 
-* asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-* asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Der Asset-Dateiname darf nicht enthalten: `* / : [ \\ ] | # % { } ? &`
+* Der Asset-Ordnername darf nicht enthalten: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Bulk upload of assets {#bulk-upload}
+## Massen-Upload von Assets {#bulk-upload}
 
 Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in einer verschachtelten Ordnerhierarchie auf dem Datenträger vorhanden sind, können die folgenden Vorgehensweisen verwendet werden:
 
-* Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical)nutzt. Ein solches benutzerdefiniertes Tool kann bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
-* Verwenden Sie die [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) , um verschachtelte Ordnerhierarchien hochzuladen.
+* Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical) nutzt. Ein solches benutzerdefiniertes Tool kann bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
+* Verwenden Sie das [Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), um verschachtelte Ordnerhierarchien hochzuladen.
 
 >[!NOTE]
 >
-> Für das Hochladen von Massen als Teil der Inhaltsmigration von anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager ist eine sorgfältige Planung, Prüfung und Auswahl der Werkzeuge erforderlich. Anleitungen zu Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md) .
+> Der Massen-Upload als Teil der Migration von Inhalten aus anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager erfordert eine sorgfältige Planung, Abwägung und Auswahl der Tools. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
-Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass Sie zum Webbrowser wechseln müssen.
+Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
-* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) bietet Zugriff auf Assets aus AEM in Adobe Fotoshop-, Adobe Illustrator- und Adobe InDesign-Desktopanwendungen. Sie können das derzeit geöffnete Dokument direkt von der Benutzeroberfläche von Adobe Asset Link aus in diese Desktop-Anwendungen hochladen.
-* [Die Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, in der sie verarbeitet werden. Es ist besonders nützlich, Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browser-Upload nur das Hochladen von Listen mit einfachen Dateien unterstützt.
+* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) bietet den Zugriff auf Assets aus AEM in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das derzeit geöffnete Dokument direkt von der Benutzeroberfläche von Adobe Asset Link in diesen Desktop-Anwendungen zu AEM hochladen.
+* Das [Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Zusätzliche Verarbeitung {#additional-processing}
 
-Um eine zusätzliche Verarbeitung der hochgeladenen Assets durchzuführen, können Sie die Asset-Verarbeitungs-Profil-Profil im Ordner verwenden, in die Assets hochgeladen werden. Sie sind im Dialogfeld **[!UICONTROL Eigenschaften]** des Ordners verfügbar.
+Um eine zusätzliche Verarbeitung der hochgeladenen Assets zu ermöglichen, können Sie die Verarbeitungsprofile von Assets im Ordner verwenden, in den die Assets hochgeladen werden. Sie sind im Dialogfeld **[!UICONTROL Eigenschaften]** des Ordners verfügbar.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-Die folgenden Profile stehen zur Verfügung:
+Die folgenden Profile sind verfügbar:
 
-* [Mit Metadaten-Profilen](metadata-profiles.md) können Sie standardmäßige Metadateneigenschaften auf in diesen Ordner hochgeladene Assets anwenden
-* [Mit Profilen](asset-microservices-configure-and-use.md#processing-profiles) zur Verarbeitung können Sie die Darstellungsverarbeitung anwenden und neben den Standarddarstellungen auch Darstellungen generieren.
+* Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
+* Mit [Verarbeitungsprofilen](asset-microservices-configure-and-use.md#processing-profiles) können Sie neben den Standarddarstellungen auch die Darstellungsverarbeitung anwenden und Ausgabeformate generieren
 
-Wenn in Ihrer Umgebung zusätzlich Dynamic Media aktiviert ist:
+Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
-* Mit [Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smart Cropping]** und Pixelzuschnitt) sowie Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* [Mit Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden
+* Mit [Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* Mit [Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
-> Das Zuschneiden von dynamischen Medien und andere Vorgänge auf Assets sind nicht destruktiv, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
+> Das von Dynamic Media unterstützte Zuschneiden und andere Operationen an Assets sind zerstörungsfrei, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
 
-## Hochladen oder Erfassen von Assets mit APIs {#upload-using-apis}
+## Hochladen oder Aufnehmen von Assets mit APIs {#upload-using-apis}
 
-Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Source-SDK- und Beispielclients finden Sie im Abschnitt zum [Hochladen](developer-reference-material-apis.md#asset-upload-technical) von Assets in der Developer-Referenz.
+Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Source-SDK und Beispiel-Clients finden Sie im Abschnitt zum [Asset-Upload](developer-reference-material-apis.md#asset-upload-technical) in der Entwicklerreferenz.
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Dokumentation zu Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Technische Referenz zum Hochladen von Assets](developer-reference-material-apis.md#asset-upload-technical)
+>* [Adobe Asset Link-Dokumentation](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
+>* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload-technical)
 
