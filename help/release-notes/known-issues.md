@@ -1,7 +1,7 @@
 ---
 title: Bekannte Probleme
-description: Versionshinweise zu bekannten Problemen mit Adobe Experience Manager als Cloud-Dienst
-translation-type: tm+mt
+description: Spezifische Versionshinweise zu bekannte Problemen mit Adobe Experience Manager as a Cloud Service.
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 # Bekannte Probleme {#known-issues}
 
-In diesem Artikel werden die bekannten Probleme von Adobe Experience Manager als Cloud-Service-Angebot Liste. Die Liste wird mit jeder kontinuierlichen Version von Experience Manager überarbeitet und aktualisiert.
+In diesem Artikel werden die bekannten Probleme mit Adobe Experience Manager as a Cloud Service aufgeführt. Die Liste wird mit jeder neuen Version von Adobe Experience Manager überarbeitet und aktualisiert.
 
-[Wenden Sie sich an den Support](https://helpx.adobe.com/de/marketing-cloud/experience-manager.html) , um weitere Informationen zu den bekannten Problemen zu erhalten.
+[Wenden Sie sich an den Support](https://helpx.adobe.com/de/marketing-cloud/experience-manager.html), um weitere Informationen zu den folgenden bekannten Problemen zu erhalten.
 
 <!-- 
 ## Platform {#platform}
@@ -23,25 +23,25 @@ In diesem Artikel werden die bekannten Probleme von Adobe Experience Manager als
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Einige bekannte Probleme sind:
+Zu den bekannten Probleme zählen:
 
-* **Metadaten-Schema**: Widget zur Asset-Bewertung, das zum JSP-Kompilierungsfehler verwendet wird. Es wurde aus dem Metadaten-Schema entfernt. <!-- CQ-4282865, CQ-4284633 -->
+* **Metadatenschema**: Das Widget zur Asset-Bewertung, das verwendet wird, um JSP-Kompilierungsfehler zu verursachen. Es wurde aus dem Metadatenschema entfernt. <!-- CQ-4282865, CQ-4284633 -->
 
-### Funktionen für bevorstehende Assets {#upcoming-assets-capabilities}
+### Künftig verfügbare AEM Assets-Funktionen {#upcoming-assets-capabilities}
 
-Einige Funktionen von Adobe Experience Manager-Assets, die von den Grundfunktionen abhängen, die noch nicht in Experience Manager als Cloud-Service-Bereitstellungsarchitektur verfügbar sind, werden voraussichtlich zu einem späteren Zeitpunkt aktiviert:
+Einige Funktionen von Adobe Experience Manager-Assets, die von den grundlegenden Funktionen abhängen, die noch nicht in der Adobe Experience Manager as a Cloud Service-Bereitstellungsarchitektur verfügbar sind, werden voraussichtlich zu einem späteren Zeitpunkt aktiviert:
 
-* Erweiterte Funktionen für intelligentes Tagging, die AI-Dienste von Adobe I/O nutzen, sind derzeit nicht verfügbar.
-* Aufgrund der Abhängigkeit von Commerce Integration Framework-APIs sind Funktionen derzeit nicht aktiviert:
-   * Fotografieren von Workflow-Modellen
-   * Die Registerkarte &quot;Produktinformationen&quot;in der Benutzeroberfläche der Asset-Eigenschaften wird nicht ausgefüllt.
-* Funktionen sind derzeit aufgrund der Abhängigkeit von der InDesign Server-Integration nicht aktiviert:
+* Erweiterte Funktionen für Smart-Tagging, die KI-Dienste von Adobe I/O nutzen, sind derzeit nicht verfügbar.
+* Aufgrund der Abhängigkeit von Commerce Integration Framework-APIs sind die folgenden Funktionen derzeit nicht aktiviert:
+   * Fotoshooting-Workflow-Modelle.
+   * In der Benutzeroberfläche der Asset-Eigenschaften ist die Registerkarte mit den Produktinformationen nicht ausgefüllt.
+* Aufgrund der Abhängigkeit von der InDesign Server-Integration sind die folgenden Funktionen derzeit nicht aktiviert:
    * Asset-Vorlagen und Asset-Kataloge.
    * Mehrseitige Vorschau von InDesign-Dateien.
 
 >[!MORELIKETHIS]
 >
->* [Wichtige Änderungen in AEM](aem-cloud-changes.md)
+>* [Wichtige Änderungen an AEM](aem-cloud-changes.md)
 >* [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
->* [Versionshinweise;](home.md)
+>* [Versionshinweise](home.md)
 
