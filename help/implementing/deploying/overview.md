@@ -1,183 +1,183 @@
 ---
-title: Bereitstellen für AEM als Cloud Service
-description: 'Bereitstellen für AEM als Cloud Service '
-translation-type: tm+mt
+title: Bereitstellen in AEM as a Cloud Service
+description: 'Bereitstellen in AEM as a Cloud Service '
+translation-type: ht
 source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
 
-# Bereitstellen für AEM als Cloud Service {#deploying-to-aem-as-a-cloud-service}
+# Bereitstellen in AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Einführung {#introduction}
 
-Die Grundlagen der Codeentwicklung sind in AEM als Cloud-Dienst im Vergleich zu den AEM On Premise- und Managed Services-Lösungen ähnlich. Entwickler schreiben Code und testen ihn lokal, der dann als Cloud-Dienstumgebungen an AEM gesendet wird. Cloud Manager, ein optionales Werkzeug zur Inhaltsbereitstellung für Managed Services, ist erforderlich. Dies ist jetzt der einzige Mechanismus zur Bereitstellung von Code in AEM als Cloud-Dienstumgebungen.
+Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren zur Bereitstellung von Code in AEM as a Cloud Service-Umgebungen.
 
-Die Aktualisierung der AEM-Version ist immer ein separates Bereitstellungsereignis, das nicht das Verschieben von benutzerdefiniertem Code ermöglicht. Andernfalls sollten Versionen von benutzerspezifischem Code mit der AEM-Version getestet werden, die in Produktion ist, da diese Version zusätzlich bereitgestellt wird. Updates der AEM-Version, die danach erfolgen und die im Vergleich zu den heutigen Managed Services häufig auftreten, werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten Kundencode sein.
+Die Aktualisierung der AEM-Version ist stets ein separates Bereitstellungsereignis, das nicht mit dem Pushen von benutzerspezifischem Code verbunden ist. Anders gesagt: Bei Freigabe von benutzerspezifischem Code sollte mit jener AEM-Version getestet werden, die sich in der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. Aktualisierungen der AEM-Version, die danach stattfinden (und im Vergleich zu heutigen Managed Services häufiger vorkommen werden), werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten benutzerspezifischen Code sein.
 
-Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM als Cloud-Dienst:
+Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=ger)
 
-In diesem Dokument wird beschrieben, wie Entwickler ihre Vorgehensweisen so anpassen sollten, dass sie sowohl mit AEM als Updates für die Version des Cloud-Dienstes als auch mit Updates für Kunden arbeiten.
+In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
 >[!NOTE]
->Es wird empfohlen, dass Kunden mit vorhandenen Code-Datenbanken die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)beschriebene Repository-Restrukturierung durchführen.
+>Kunden mit vorhandenen Code-Basen wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
 
 
 ## Aktualisierungen der AEM-Version {#version-updates}
 
-Es ist wichtig zu verstehen, dass AEM häufig aktualisiert wird, potenziell so oft wie einmal am Tag, und sich auf Fehlerbehebungen und Leistungsverbesserungen konzentriert. Die Aktualisierung erfolgt transparent und ohne Ausfallzeiten. Das Update soll abwärtskompatibel sein, d. h., Sie müssen keinen benutzerdefinierten Code ändern. Tatsächlich sind AEM-Updates unabhängige Ereignisse von der Bereitstellung von Kundencode. Das AEM-Update wird zusätzlich zu Ihrem letzten erfolgreichen Code-Push bereitgestellt, was bedeutet, dass alle seit dem letzten Push-to-Production-Vorgang vorgenommenen Änderungen nicht bereitgestellt werden.
+Sie sollten wissen, dass AEM häufig aktualisiert wird, bis zu einmal am Tag. Dabei geht es vor allem um Fehlerbehebungen und Leistungsverbesserungen. Die Aktualisierung erfolgt transparent und ohne Ausfallzeiten. Die Aktualisierung soll abwärtskompatibel sein; d. h., Sie sollten keinen benutzerspezifischen Code ändern müssen. AEM-Aktualisierungen sind Ereignisse, die unabhängig von der Bereitstellung von benutzerspezifischem Code sind. Die AEM-Aktualisierung wird auf Ihrem letzten erfolgreichen Code-Push bereitgestellt, was bedeutet, dass alle seit dem letzten Push-to-Production-Vorgang gesendeten Änderungen nicht bereitgestellt werden.
 
 >[!NOTE]
 >
-> Wenn benutzerdefinierter Code in die Staging-Phase verschoben und dann von Ihnen abgelehnt wurde, werden diese Änderungen beim nächsten AEM-Update entfernt, um das git-Tag der letzten erfolgreichen Kunden-Version bis zur Produktion widerzuspiegeln.
+> Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
 
-In regelmäßigen Abständen wird eine Version der Funktionen veröffentlicht, die sich auf Funktionserweiterungen und Erweiterungen konzentriert, die die Benutzererfahrung im Vergleich zu den täglichen Versionen wesentlich beeinflussen. Eine neue Version der Funktionen wird nicht durch die Bereitstellung eines großen Änderungssatzes ausgelöst, sondern durch den Umstieg auf einen Umschalter, der Code aktiviert, der sich im Laufe von Tagen oder Wochen während der täglichen Aktualisierungen angesammelt hat.
+In regelmäßigen Abständen wird ein Feature Release veröffentlicht, bei dem es vor allem um Funktionserweiterungen und -verbesserungen geht, die das Anwendererlebnis im Vergleich zu den täglich veröffentlichten Versionen wesentlich stärker beeinflussen. Ein neues Feature Release wird nicht durch die Bereitstellung eines großen Änderungssatzes ausgelöst, sondern durch Betätigung eines „Freigabeschalters“, sodass Code aktiviert wird, der sich im Laufe von Tagen oder Wochen bei den täglichen Aktualisierungen angesammelt hat.
 
-Gesundheitskontrollen dienen zur Überwachung des Gesundheitszustands des Antrags. Wenn diese Prüfungen während einer Aktualisierung des AEM-Dienstes als Cloud-Dienst fehlschlagen, wird die Version für diese Umgebung nicht ausgeführt. Adobe untersucht dann, warum das Update dieses unerwartete Verhalten verursachte.
+Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe für diese Umgebung nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
 ### Composite Node Store {#composite-node-store}
 
-Wie oben erwähnt, werden Updates in den meisten Fällen keine Ausfallzeiten verursachen, auch für den Autor, der ein Cluster aus Knoten ist. Rollierende Aktualisierungen sind möglich, da die Funktion &quot;Composite Node Store&quot;in Oak verwendet wird. Mit dieser Funktion kann AEM mehrere Repositorys gleichzeitig referenzieren. Bei einer rollierenden Bereitstellung enthält die neue grüne AEM-Version ein eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren Blue AEM-Version unterscheidet, obwohl beide auf ein freigegebenes, auf DocumentMK basierendes veränderbares Repository verweisen, das Bereiche wie `/content`, `/conf`und `/etc` andere enthält. Da sowohl die Blue- als auch die Green-Version über eigene Versionen verfügen, können sie beide während der rollierenden Aktualisierung aktiv sein, wobei beide Traffic aufnehmen, bis das Blau vollständig durch das Grün ersetzt wird. `/libs`
+Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Dank der Funktion „Composite Node Store“ in Oak sind rollierende Aktualisierungen möglich. Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue Green AEM-Version ihr eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren Blue AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf`, `/etc` und andere umfasst. Da sowohl die Blue- als auch die Green-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde. 
 
-## Kundenveröffentlichungen {#customer-releases}
+## Benutzerspezifische Versionen {#customer-releases}
 
 ### Kodierung mit der richtigen AEM-Version {#coding-against-the-right-aem-version}
 
-Bei vorherigen AEM-Lösungen änderte sich die aktuelle AEM-Version selten (etwa jährlich mit vierteljährlichen Service Packs), und Kunden aktualisieren die Produktionsinstanzen zu ihrer eigenen Zeit auf den neuesten Schnellstart, wobei auf die API-JAR verwiesen wird. AEM als Cloud-Service-Anwendungen werden jedoch häufiger automatisch auf die neueste Version von AEM aktualisiert. Daher sollte benutzerdefinierter Code für interne Versionen mit diesen neueren AEM-Schnittstellen erstellt werden.
+Bei früheren AEM-Lösungen änderte sich die aktuelle AEM-Version selten (etwa 1-mal jährlich mit vierteljährlichen Service Packs); Kunden aktualisierten die Produktionsinstanzen im eigenen Tempo auf den neuesten Schnellstart, indem sie auf das API-JAR verwiesen. AEM as a Cloud Service-Anwendungen jedoch werden häufiger automatisch auf die neueste Version von AEM aktualisiert. Daher sollte benutzerspezifischer Code für interne Freigaben mit diesen neueren AEM-Schnittstellen erstellt werden.
 
 Wie bei vorhandenen Nicht-Cloud-AEM-Versionen wird eine lokale Offline-Entwicklung unterstützt, die auf einem bestimmten Schnellstart basiert. In den meisten Fällen ist dies das bevorzugte Debugging-Tool.
 
 >[!NOTE]
->Es gibt geringfügige betriebliche Unterschiede zwischen dem Verhalten der Anwendung auf einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung beachtet werden und könnten bei der Bereitstellung der Cloud-Infrastruktur zu einem anderen Verhalten führen. Aufgrund dieser Unterschiede ist es wichtig, die umfassenden Tests in Entwicklungs- und Bereitstellungsumgebungen durchzuführen, bevor neuer benutzerdefinierter Code in der Produktion eingeführt wird.
+>Beim Verhalten der Anwendung gibt es geringfügige Unterschiede zwischen einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung berücksichtigt werden und können bei Implementierung in der Cloud-Infrastruktur ggf. zu einem anderen Verhalten führen. Darum ist es wichtig, in Entwicklungs- und Staging-Umgebungen umfassende Tests durchzuführen, bevor neuer benutzerspezifischer Code in die Produktionsumgebung eingeführt wird.
 
-Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die entsprechende Version von [AEM als Cloud-Dienst-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung von AEM als Cloud-Dienst-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/overview.md).
+Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die entsprechende Version des [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung der AEM as a Cloud Service-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/overview.md).
 
-## Bereitstellen von Content Packages über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### Bereitstellung über Cloud Manager {#deployments-via-cloud-manager}
+### Bereitstellungen über Cloud Manager {#deployments-via-cloud-manager}
 
-Kunden stellen benutzerdefinierten Code über Cloud Manager in Cloud-Umgebungen bereit. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete in ein Artefakt gemäß dem Sling-Funktionsmodell umwandelt. So wird eine AEM als Cloud-Serviceanwendung beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie sich also die Pakete im Package Manager in Cloud-Umgebungen ansehen, enthält der Name &quot;cp2fm&quot;und die transformierten Pakete enthalten alle Metadaten entfernt. Sie können nicht interagiert werden, d. h. sie können nicht heruntergeladen, repliziert oder geöffnet werden. Ausführliche Dokumentation zum Konverter finden Sie hier [](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt umwandelt. So wird eine AEM as a Cloud Service-Anwendung beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie also die Pakete im Package Manager für Cloud-Umgebungen betrachten, enthält der Name „cp2fm“ und wurden alle Metadaten der transformierten Pakete entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Inhaltspakete, die für AEM als Cloud-Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderbarem und unveränderlichem Inhalt aufweisen. Cloud Manager erzwingt dies, indem der Build fehlschlägt und eine Meldung wie die folgende ausgegeben wird:
+Inhaltspakete, die für AEM as a Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichen und veränderlichen Inhalten aufweisen. Cloud Manager erzwingt dies, indem der Build ggf. fehlschlägt und eine Meldung wie die folgende ausgibt:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
-Der Rest dieses Abschnitts beschreibt die Zusammensetzung und Implikationen unveränderlicher und veränderbarer Pakete.
+Im Rest dieses Abschnitts werden die Komposition und Implikationen unveränderlicher und veränderlicher Pakete beschrieben.
 
 ### Unveränderliche Inhaltspakete {#immutabe-content-packages}
 
-Sämtlicher Inhalt und Code, der im unveränderlichen Repository beibehalten wird, muss in Git überprüft und über Cloud Manager bereitgestellt werden. Anders ausgedrückt wird Code im Gegensatz zu aktuellen AEM-Lösungen nie direkt auf einer laufenden AEM-Instanz bereitgestellt. Dadurch wird sichergestellt, dass der Code, der für eine bestimmte Version in einer Cloud-Umgebung ausgeführt wird, identisch ist. Dadurch wird das Risiko unbeabsichtigter Codeänderungen bei der Produktion vermieden. Beispiel: Die OSGI-Konfiguration sollte der Quellcodeverwaltung übergeben und nicht zur Laufzeit über den Configuration Manager der AEM-Webkonsole verwaltet werden.
+Sämtlicher Inhalt und Code, der im unveränderlichen Repository persistent ist, muss in Git eingecheckt und mit Cloud Manager bereitgestellt werden. Anders gesagt: Im Gegensatz zu aktuellen AEM-Lösungen wird Code niemals direkt in einer laufenden AEM-Instanz bereitgestellt. Dadurch wird sichergestellt, dass der Code, der für eine bestimmte Version in beliebigen Cloud-Umgebungen ausgeführt wird, identisch ist. So wird das Risiko unbeabsichtigter Code-Varianten in der Produktion eliminiert. Beispiel: Die OSGI-Konfiguration sollte der Quell-Code-Verwaltung übergeben und nicht zur Laufzeit über den Konfigurations-Manager der AEM-Web-Konsole verwaltet werden.
 
-Da Anwendungsänderungen aufgrund des Blue-Green-Bereitstellungsmusters durch einen Switch aktiviert werden, können sie nicht von Änderungen im veränderbaren Repository abhängig sein, mit Ausnahme von Dienstbenutzern, ihren ACLs, Nodetyps und Änderungen der Indexdefinition.
+Da Anwendungsänderungen aufgrund des Blue-Green-Bereitstellungsmusters durch einen Schalter aktiviert werden, dürfen sie nicht von Änderungen im veränderlichen Repository abhängig sein, mit Ausnahme von Dienstbenutzern, ihren ACLs, Knotentypen und Änderungen der Indexdefinition.
 
-Für Kunden mit vorhandenen Code-Datenbanken ist es wichtig, die in der AEM-Dokumentation beschriebene Repository-Restrukturierung durchzuführen, um sicherzustellen, dass zuvor unter &quot;/etc&quot;befindliche Inhalte an den richtigen Speicherort verschoben werden.
+Kunden mit vorhandenen Code-Basen müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
 
-## OSGI-Konfiguration {#osgi-configuration}
+## OSGi-Konfiguration {#osgi-configuration}
 
-Wie bereits erwähnt, sollte die OSGI-Konfiguration der Quellcodeverwaltung anstatt über die Web-Konsole zugewiesen werden. Dazu gehören:
+Wie bereits erwähnt, sollte die OSGi-Konfiguration an die Quell-Code-Verwaltung übermittelt werden und nicht über die Web-Konsole. Zu geeigneten Verfahren gehören:
 
-* Vornehmen der erforderlichen Änderungen in der lokalen AEM-Umgebung des Entwicklers mit dem Konfigurationsmanager der AEM-Webkonsole und anschließendem Exportieren der Ergebnisse in das AEM-Projekt im lokalen Dateisystem
-* Manuelles Erstellen der OSGI-Konfiguration im AEM-Projekt auf dem lokalen Dateisystem, wobei auf den Konfigurationsmanager der AEM-Konsole für die Eigenschaftsnamen verwiesen wird.
+* Vornehmen der erforderlichen Änderungen in der lokalen AEM-Umgebung des Entwicklers mit dem Konfigurations-Manager der AEM-Web-Konsole und anschließendes Exportieren der Ergebnisse in das AEM-Projekt im lokalen Dateisystem;
+* manuelles Erstellen der OSGi-Konfiguration im AEM-Projekt im lokalen Dateisystem und anschließendes Verweisen auf die Eigenschaftsnamen durch den Konfigurations-Manager der AEM-Web-Konsole.
 
 ## Veränderlicher Inhalt {#mutable-content}
 
-In einigen Fällen kann es nützlich sein, Inhaltsänderungen in der Quellcodeverwaltung vorzubereiten, damit sie von Cloud Manager bereitgestellt werden können, sobald eine Umgebung aktualisiert wurde. Es ist beispielsweise sinnvoll, bestimmte Stammordnerstrukturen zu kopieren oder Änderungen in editierbaren Vorlagen anzuordnen, um Richtlinien in Komponenten zu aktivieren, die von der Anwendungsbereitstellung aktualisiert wurden.
+Manchmal kann es nützlich sein, Inhaltsänderungen in der Quell-Code-Verwaltung vorzubereiten, damit sie von Cloud Manager bereitgestellt werden können, sobald eine Umgebung aktualisiert wird. So kann es beispielsweise sinnvoll sein, bestimmte Stammordnerstrukturen zu testen oder Änderungen in editierbaren Vorlagen anzuordnen, um darin Richtlinien für Komponenten zu aktivieren, die bei der Anwendungsbereitstellung aktualisiert wurden.
 
-Es gibt zwei Strategien, um die Inhalte zu beschreiben, die von Cloud Manager für das veränderliche Repository bereitgestellt werden, d. h. veränderliche Inhaltspakete und Aussagen zum erneuten Verweisen.
+Es gibt zwei Strategien zur Beschreibung von Inhalten, die von Cloud Manager im veränderlichen Repository bereitgestellt werden: veränderliche Inhaltspakete und repoinit-Anweisungen.
 
-### Flexible Inhaltspakete {#mutable-content-packages}
+### Veränderliche Inhaltspakete {#mutable-content-packages}
 
-Inhalte wie Ordnerpfadhierarchien, Dienstbenutzer und Zugriffssteuerelemente (ACLs) werden in der Regel in ein AEM-Projekt übertragen, das auf Archetypen basiert. Zu den Techniken gehören der Export aus AEM oder das direkte Schreiben als XML. Während der Erstellung und Bereitstellung packt Cloud Manager das resultierende Paket mit veränderlichen Inhalten. Der veränderbare Inhalt wird während der Bereitstellungsphase in der Pipeline zu drei verschiedenen Zeitpunkten installiert:
+Inhalte wie Ordnerpfadhierarchien, Dienstbenutzer und Zugriffssteuerungen (ACLs) werden in der Regel in ein AEM-Projekt übertragen, das auf Maven-Archetypen basiert. Zu den Methoden gehören das Exportieren aus AEM oder das direkte Schreiben als XML. Bei der Erstellung und Bereitstellung packt Cloud Manager das resultierende veränderliche Inhaltspaket. Der veränderbare Inhalt wird in der Bereitstellungsphase in der Pipeline zu drei verschiedenen Zeitpunkten installiert:
 
 Vor dem Start der neuen Version der Anwendung:
 
 * Indexdefinitionen (hinzufügen, ändern, entfernen)
 
-Während des Starts der neuen Version der Anwendung, aber vor dem Umstieg:
+Beim Start der neuen Version der Anwendung, aber vor der Umstellung:
 
-* Dienstbenutzer (Hinzufügen)
-* ACLs für Dienstbenutzer (Hinzufügen)
+* Dienstbenutzer (hinzufügen)
+* ACLs für Dienstbenutzer (hinzufügen)
 * Knotentypen (hinzufügen)
 
-Nach der Umstellung auf eine neue Anwendungsversion:
+Nach der Umstellung auf die neue Anwendungsversion:
 
-* Alle anderen Inhalte über Jackrabbit Vault zu definieren. Beispiel:
+* Alle anderen Inhalte, über Jackrabbit Vault definierbar Beispiel:
    * Ordner (hinzufügen, ändern, entfernen)
-   * Bearbeitbare Vorlagen (Hinzufügen, Ändern, Entfernen)
-   * Context Aware-Konfiguration (alles unter `/conf`) (Hinzufügen, Ändern, Entfernen)
-   * Skripten (Pakete können Installationshaken in verschiedenen Phasen des Installationsprozesses der Paketinstallation auslösen)
+   * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
+   * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen)
 
-Es ist möglich, die Installation variabler Inhalte auf Autoren oder Veröffentlichungen zu beschränken, indem Sie Pakete in einen Ordner install.author oder install.publish unter einbetten `/apps`. Details zur empfohlenen Projektumstrukturierung finden Sie in der [AEM-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) .
+Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Details zur empfohlenen Projektumstrukturierung finden Sie in der [AEM-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
 >[!NOTE]
-> Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung ist vorhanden, um die Option eines Testlaufs der automatisierten Ausführung sicherzustellen. Für eine Umgebung spezifische Inhalte müssen manuell über Package Manager installiert werden.
+> Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über Package Manager installiert werden.
 
-Außerdem gibt es keinen Mechanismus, um die Änderungen des veränderlichen Inhaltspakets nach deren Anwendung zurückzusetzen. Wenn Kunden ein Problem erkennen, können sie es in ihrer nächsten Codeversion oder als letztes Mittel beheben und das gesamte System auf einen Zeitpunkt vor der Bereitstellung wiederherstellen.
+Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzunehmen. Wenn Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
-Alle enthaltenen Pakete von Drittanbietern müssen als AEM-kompatibel mit einem Cloud-Dienst validiert werden. Andernfalls führt die Einbeziehung zu einem Bereitstellungsfehler.
+Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Bereitstellungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Datenbanken der in der [AEM-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)beschriebenen Repository-Restrukturierung entsprechen.
+Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Basen die in der [AEM-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/repository-restructuring.html) beschriebenen Repository-Umstrukturierung durchführen.
 
-## Repointing {#repoinit}
+## Repoinit {#repoinit}
 
-Für die folgenden Fälle ist es vorzuziehen, explizite Inhaltserstellungsanweisungen in OSGI- `repoinit` Fabrikkonfigurationen manuell zu kodieren:
+In folgenden Fällen ist es vorzuziehen, in den OSGi-Werkseinstellungen manuell explizite `repoinit`-Anweisungen für die Inhaltserstellung zu kodieren:
 
 * Dienstbenutzer erstellen/löschen/deaktivieren
 * Gruppen erstellen/löschen
 * Benutzer erstellen/löschen
 * ACLs hinzufügen
    > [!NOTE]
-   > Die Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können Anweisungen zur vorherigen Erstellung von Pfaden erforderlich sein.
+   >Eine Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können vorherige Anweisungen zur Pfaderstellung erforderlich sein.
 * Pfad hinzufügen (z. B. für Stammordnerstrukturen)
-* Hinzufügen von CNDs (Begriffsdefinitionen)
+* CNDs hinzufügen (Definitionen für Knotentypen)
 
-Sie sollten aufgrund der folgenden Vorteile erneut auf diese Anwendungsfälle zur Änderung der unterstützten Inhalte verweisen:
+Aufgrund der folgenden Vorteile ist bei diesen Anwendungsfällen für die Inhaltsänderung bevorzugt „repoinit“ zu verwenden:
 
-* Repoinit erstellt Ressourcen beim Start, sodass Logik die Existenz dieser Ressourcen als selbstverständlich betrachten kann. Bei der Methode des Pakets für veränderliche Inhalte werden Ressourcen nach dem Start erstellt, sodass Anwendungscode, der auf diesen basiert, möglicherweise fehlschlägt.
-* Repoinit ist eine relativ sichere Anweisung, da Sie explizit steuern, welche Aktion ausgeführt werden soll. Außerdem werden nur zusätzliche Vorgänge unterstützt, mit Ausnahme einiger sicherheitsrelevanter Fälle, in denen Benutzer, Dienstbenutzer und Gruppen entfernt werden können. Dagegen ist die Entfernung von etwas im variablen Inhaltspaket-Ansatz explizit.  Wenn Sie einen Filter definieren, werden alle von einem Filter erfassten Elemente gelöscht. Vorsicht ist geboten, da es bei jedem Inhalt Szenarien gibt, in denen das Vorhandensein neuer Inhalte das Verhalten der Anwendung verändern kann.
-* Repoinit führt schnelle und atomare Operationen durch. Veränderliche Inhaltspakete dagegen können in hohem Maße von der Leistung abhängig sein, die von den Strukturen, die von einem Filter abgedeckt werden. Selbst wenn Sie einen einzelnen Knoten aktualisieren, kann ein Snapshot eines großen Baums erstellt werden.
-* Es ist möglich, die Anweisung zum erneuten Verweisen zur Laufzeit in einer lokalen dev-Umgebung zu überprüfen, da sie ausgeführt wird, wenn die OSGi-Konfiguration registriert wird.
+* Repoinit erstellt Ressourcen beim Start, sodass Logik die Existenz dieser Ressourcen als selbstverständlich betrachten kann. Beim Ansatz mit veränderlichen Inhaltspaketen werden Ressourcen nach dem Start erstellt, sodass Anwendungs-Code, der auf sie angewiesen ist, fehlschlagen kann.
+* Repoinit ist ein relativ sicherer Anweisungssatz, da Sie explizit steuern, welche Aktion vorgenommen werden soll. Zudem werden nur additive Vorgänge unterstützt, mit Ausnahme einiger sicherheitsrelevanter Fälle, in denen Benutzer, Dienstbenutzer und Gruppen entfernt werden können. Dagegen ist eine Entfernung beim Ansatz mit variablen Inhaltspaketen explizit. Wenn Sie einen Filter definieren, werden alle von einem Filter derzeit erfassten Elemente gelöscht. Dennoch ist Vorsicht geboten, da es bei jedem Inhalt Szenarien geben kann, in denen die Existenz neuer Inhalte das Verhalten der Anwendung verändert.
+* Repoinit sorgt für schnelle und atomische Operationen. Veränderliche Inhaltspakete hingegen können stark von der Leistung der Strukturen abhängen, die von einem Filter abgedeckt werden. Auch wenn Sie nur einen Knoten aktualisieren, wird ggf. ein Schnappschuss einer großen Baumstruktur erstellt.
+* Repoinit-Anweisungen können in einer lokalen Entwicklungsumgebung zur Laufzeit überprüft werden, da sie bei der Registrierung der OSGi-Konfiguration ausgeführt werden.
 * Repoinit-Anweisungen sind atomisch und explizit und werden übersprungen, wenn der Status bereits übereinstimmt.
 
-Wenn Cloud Manager die Anwendung bereitstellt, werden diese Anweisungen unabhängig von der Installation von Inhaltspaketen ausgeführt.
+Wenn Cloud Manager die Anwendung bereitstellt, werden diese Anweisungen unabhängig von der Installation jeglicher Inhaltspakete ausgeführt.
 
-Gehen Sie wie folgt vor, um weitere Aussagen zu erstellen:
+Gehen Sie wie folgt vor, um weitere repoinit-Anweisungen zu erstellen:
 
-1. OSGi-Konfiguration für PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in einem Konfigurationsordner des Projekts hinzufügen
-1. Fügen Sie der Skripteigenschaft der config die Anweisung repoinit hinzu. Syntax und Optionen sind in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)dokumentiert. Beachten Sie, dass vor den untergeordneten Ordnern explizit ein übergeordneter Ordner erstellt werden muss. Beispielsweise eine explizite Erstellung von `/content` zuvor `/content/myfolder`, vorher `/content/myfolder/mysubfolder`. Für ACLs, die auf niedrigen Strukturen festgelegt werden, wird empfohlen, diese auf einer höheren Ebene festzulegen und mit einer `rep:glob` Einschränkung zu arbeiten.  Beispiel `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Fügen Sie die OSGi-Konfiguration für PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in einem Konfigurationsordner des Projekts hinzu.
+1. Fügen Sie der Skripteigenschaft von „config“ repoinit-Anweisungen hinzu. Syntax und Optionen werden in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) beschrieben. Beachten Sie, dass vor untergeordneten Ordnern explizit ein übergeordneter Ordner erstellt werden muss. Beispielsweise ist eine explizite Erstellung von `/content` vor `/content/myfolder` und vor `/content/myfolder/mysubfolder` erforderlich. Bei ACLs, die für untergeordnete Strukturen festgelegt werden, wird empfohlen, diese auf einer höheren Ebene festzulegen und eine `rep:glob`-Einschränkung zu nutzen.  Beispiel `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validieren Sie zur Laufzeit in der lokalen Entwicklungsumgebung.
 
 <!-- last statement in step 2 to be clarified with Brian -->
 
 >[!WARNING]
 >
->Für ACLs, die für Knoten unter `/apps` oder `/libs` die Ausführung des Repunkts definiert sind, beginnt die Ausführung in einem leeren Repository. Die Pakete werden nach dem Repoinit installiert, sodass Anweisungen sich nicht auf etwas verlassen können, das in den Paketen definiert ist, sondern müssen die Bedingungen wie die übergeordneten Strukturen darunter definieren.
+>Bei ACLs, die für Knoten unter `/apps` oder `/libs` definiert sind, beginnt die repoinit-Ausführung in einem leeren Repository. Die Pakete werden nach dem „repoinit“ installiert. Das bedeutet, dass Anweisungen sich auf nichts verlassen können, was in den Paketen definiert ist, sondern Vorbedingungen wie die übergeordneten Strukturen darunter definieren müssen.
 
 >[!TIP]
 >
->Für ACLs ist die Erstellung von tiefen Strukturen möglicherweise schwerfällig, daher ist es vernünftiger, ein ACL auf einer höheren Ebene zu definieren und zu beschränken, wo es über eine rep:glob-Beschränkung handeln soll.
+>Bei ACLs ist die Erstellung von tiefen Strukturen ggf. aufwendig. Daher ist es vernünftiger, eine ACL auf einer höheren Ebene zu definieren und durch eine rep:glob-Beschränkung zu beschränken, wo sie handeln soll.
 
-Weitere Informationen zu Repoinit finden Sie in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+Weitere Informationen zu „repoinit“ finden Sie in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html).
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
 above appears to be internal, to confirm with Brian -->
 
-### Package Manager &quot;one offs&quot;für Pakete mit variablem Inhalt {#package-manager-oneoffs-for-mutable-content-packages}
+### Package Manager-„one offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
 
-Es gibt Anwendungsfälle, in denen ein Inhaltspaket als &quot;Einmal&quot;installiert werden sollte. Importieren Sie beispielsweise bestimmten Inhalt von Produktion auf Staging, um ein Produktionsproblem zu debuggen. Für diese Szenarien kann Package Manager in AEM als Cloud-Dienstumgebungen verwendet werden.
+Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann Package Manager in AEM as a Cloud Service-Umgebungen verwendet werden.
 
-Da Package Manager ein Laufzeitkonzept ist, ist es nicht möglich, Inhalte oder Code in das unveränderliche Repository zu installieren. Daher sollten diese Inhaltspakete nur aus veränderlichem Inhalt bestehen (hauptsächlich `/content` oder `/conf`). Wenn das Inhaltspaket gemischten Inhalt enthält (sowohl veränderlicher als auch unveränderlicher Inhalt), wird nur der veränderliche Inhalt installiert.
+Da Package Manager auf einem Laufzeitkonzept basiert, ist es unmöglich, Inhalte oder Code im unveränderlichen Repository zu installieren. Daher dürfen diese Inhaltspakete nur aus veränderlichen Inhalten bestehen (hauptsächlich `/content` oder `/conf`). Wenn das Inhaltspaket gemischte Inhalte enthält (sowohl veränderliche als auch unveränderliche Inhalte), wird nur der veränderliche Inhalt installiert.
 
-Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderlich als auch unveränderlich) werden in der Benutzeroberfläche von AEM Package Manager als eingefroren angezeigt. Diese Pakete können nicht neu installiert, neu erstellt oder sogar heruntergeladen werden und werden mit dem Suffix **&quot;cp2fm&quot;** aufgelistet, was anzeigt, dass ihre Installation von Cloud Manager verwaltet wurde.
+Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderliche als auch unveränderliche) werden in der Benutzeroberfläche von AEM Package Manager mit einem eingefrorenen Status angezeigt. Solche Pakete können weder neu installiert, neu erstellt noch heruntergeladen werden und werden mit dem Suffix **cp2fm** aufgeführt, was darauf hinweist, dass ihre Installation von Cloud Manager vorgenommen wurde.
 
-### Einschließlich Drittanbieter-Pakete {#including-third-party}
+### Einschließen von Drittanbieterpaketen {#including-third-party}
 
-Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen wie Software-Anbietern wie den Übersetzungspartnern von Adobe einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und sie im `pom.xml`. Dies ist nur für öffentliche Repositorys möglich.
+Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen (zum Beispiel von Software-Anbietern wie Übersetzungspartnern von Adobe) einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und in `pom.xml` auf sie zu verweisen. Das ist nur bei öffentlichen Repositorys möglich.
 
-Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden in einem lokalen, dateisystembasierten Maven-Repository platzieren, das zu SCM als Teil des Projekts verpflichtet ist und unabhängig davon referenziert wird. Das Projektarchiv wird in den nachfolgend dargestellten Projektplänen deklariert:
+Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository würde in den nachfolgend dargestellten Projekt-POMs deklariert:
 
 
 ```
@@ -190,9 +190,9 @@ Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, kö
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-Alle enthaltenen Pakete von Drittanbietern müssen den in diesem Artikel beschriebenen Richtlinien für die Codierung und Verpackung von AEM als Cloud-Dienst entsprechen. Andernfalls führt die Einbeziehung zu einem Bereitstellungsfehler.
+Alle enthaltenen Pakete von Drittanbietern müssen den in diesem Artikel beschriebenen Richtlinien zur Kodierung und Verpackung für AEM as a Cloud Service entsprechen. Andernfalls wird ihre Einbeziehung zu einem Bereitstellungsfehler führen.
 
-Das folgende Maven POM XML-Fragment zeigt, wie Pakete von Drittanbietern über die **Plugin-Konfiguration filevault-package-maven-plugin in** Maven in das &quot;Container&quot;-Paket des Projekts eingebettet werden können, üblicherweise mit dem Namen **&#39;all&#39;**.
+Das folgende Maven-POM-XML-Fragment zeigt, wie Pakete von Drittanbietern über das „Container“-Paket des Projekts, in der Regel **&#39;all&#39;** genannt, über die Maven-Plug-in-Konfiguration **filevault-package-maven-plugin** eingebettet werden können.
 
 ```
 ...
@@ -227,86 +227,86 @@ Das folgende Maven POM XML-Fragment zeigt, wie Pakete von Drittanbietern über d
 ...
 ```
 
-## Funktionsweise von Rollierenden Bereitstellungen {#how-rolling-deployments-work}
+## Funktionsweise von rollierenden Bereitstellungen {#how-rolling-deployments-work}
 
-Wie AEM-Updates werden auch Kundenversionen mithilfe einer kontinuierlichen Implementierungsstrategie bereitgestellt, um unter den richtigen Umständen Ausfallzeiten im Autorencluster zu vermeiden. Die allgemeine Reihenfolge der Ereignisse ist wie unten beschrieben, wobei **Blue** die alte Version des Kundencodes und **Green** die neue Version ist. Sowohl Blau als auch Grün verwenden dieselbe Version von AEM-Code.
+Genauso wie AEM-Aktualisierungen werden benutzerspezifische Versionen mithilfe einer rollierenden Implementierungsstrategie bereitgestellt, um unter den richtigen Bedingungen Ausfallzeiten im Autoren-Cluster zu verhindern. Die allgemeine Reihenfolge der Ereignisse ist wie unten beschrieben, wobei **Blue** die alte Version des benutzerspezifischen Codes und **Green** die neue Version darstellt. Sowohl „Blue“ als auch „Green“ verwenden dieselbe Version von AEM-Code.
 
-* Blaue Version ist aktiv und ein Release-Kandidat für Grün wurde erstellt und verfügbar
-* Wenn neue oder aktualisierte Indexdefinitionen vorhanden sind, werden die entsprechenden Indizes verarbeitet. Beachten Sie, dass bei der blauen Bereitstellung immer die alten Indizes verwendet werden, während beim grünen Index immer die neuen Indizes verwendet werden.
-* Grün beginnt, während Blau noch serviert
-* Blau läuft und serviert, während Green durch Gesundheitskontrollen auf die Bereitschaft überprüft wird
-* Grüne Knoten, die bereit sind, Traffic zu akzeptieren und blaue Knoten zu ersetzen, die heruntergefahren werden
-* Im Laufe der Zeit werden blaue Nodes durch grüne ersetzt, bis nur noch Grün übrig bleibt, wodurch die Bereitstellung abgeschlossen wird
-* Alle neuen oder geänderten veränderlichen Inhalte werden bereitgestellt
+* Die blaue Version ist aktiv; für die grüne Version wird ein Freigabekandidat erstellt und verfügbar gemacht.
+* Wenn neue oder aktualisierte Indexdefinitionen vorhanden sind, werden die entsprechenden Indizes verarbeitet. Beachten Sie, dass bei der blauen Bereitstellung immer die alten Indizes verwendet werden, während bei der grünen Bereitstellung stets die neuen Indizes verwendet werden.
+* „Green“ startet, während „Blue“ weiter bereitstellt.
+* „Blue“ wird ausgeführt und stellt bereit, während „Green“ mit Konsistenzprüfungen auf ihre Bereitschaft überprüft wird.
+* Grüne Knoten, die bereit zur Aufnahme von Traffic sind und blaue Knoten ersetzen, die heruntergefahren werden.
+* Nach und nach werden blaue Knoten durch grüne ersetzt, bis nur noch grüne Knoten übrig bleiben, wodurch die Bereitstellung abgeschlossen ist.
+* Alle neuen oder geänderten veränderlichen Inhalte werden bereitgestellt.
 
-## Indexes {#indexes}
+## Indizes {#indexes}
 
-Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue (grüne) Version Traffic aufnehmen kann. Details zum Indexmanagement in Skyline finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indexauftrags auf der Buildseite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
+Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue (grüne) Version Traffic annehmen kann. Details zur Indexverwaltung in Skyline finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indizierungsauftrags auf der Build-Seite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version bereit zur Aufnahme von Traffic ist.
 
 >[!NOTE]
 >
->Die für eine kontinuierliche Bereitstellung benötigte Zeit hängt von der Größe des Indexes ab, da die grüne Version Traffic erst akzeptieren kann, wenn der neue Index generiert wurde.
+>Die Dauer einer rollierenden Bereitstellung hängt von der Größe des Indexes ab, da die grüne Version Traffic erst annehmen kann, nachdem der neue Index generiert wurde.
 
-Derzeit funktioniert Skyline nicht mit Indexverwaltungstools wie ACS Commons Sicherstellen des Oak Index-Tools.
+Derzeit funktioniert Skyline nicht mit Indexverwaltungs-Tools wie dem ACS Commons Ensure Oak Index-Tool.
 
 ## Replikation {#replication}
 
-Der Veröffentlichungsmechanismus ist rückwärtskompatibel mit den [AEM Replication Java-APIs](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
+Der Veröffentlichungsmechanismus ist rückwärtskompatibel mit den [AEM Replication Java-APIs](https://helpx.adobe.com/de/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Um mit der Cloud bereitstehenden AEM QuickStart-Lösung Replizierung zu entwickeln und zu testen, müssen die klassischen Replizierungsfunktionen mit einem Autor-/Veröffentlichungssetup verwendet werden. Wenn der Einstiegspunkt der Benutzeroberfläche in AEM Author für die Cloud entfernt wurde, gehen die Benutzer zur Konfiguration `http://localhost:4502/etc/replication` .
+Um mit Replikation und dem Cloud-fähigen AEM-Schnellstart entwickeln und testen zu können, müssen die klassischen Replikationsfunktionen in einem Author/Publish-Setup verwendet werden. Wenn der Einstiegspunkt der Benutzeroberfläche in AEM Author für die Cloud entfernt wurde, würden Benutzer zur Konfiguration `http://localhost:4502/etc/replication` aufrufen.
 
-## Abwärtskompatibler Code für Rollierende Bereitstellungen {#backwards-compatible-code-for-rolling-deployments}
+## Rückwärtskompatibler Code für rollierende Bereitstellungen {#backwards-compatible-code-for-rolling-deployments}
 
-Wie oben erläutert, bedeutet die kontinuierliche Bereitstellungsstrategie von AEM als Cloud-Dienst, dass sowohl die alte als auch die neue Version gleichzeitig ausgeführt werden können. Seien Sie daher vorsichtig bei Codeänderungen, die nicht rückwärtskompatibel mit der alten AEM-Version sind, die weiterhin verwendet wird.
+Wie oben erläutert, beinhaltet die kontinuierliche Bereitstellungsstrategie von AEM as a Cloud Service, dass sich sowohl die alten als auch die neuen Versionen gleichzeitig ausführen lassen. Seien Sie daher vorsichtig bei Code-Änderungen, die nicht rückwärtskompatibel mit der alten, weiter verwendeten AEM-Version sind.
 
-Darüber hinaus sollte die alte Version auf Kompatibilität mit allen neuen Strukturen für veränderliche Inhalte getestet werden, die von der neuen Version im Falle einer Zurücknahme angewendet werden, da veränderliche Inhalte nicht entfernt werden.
+Darüber hinaus sollte die alte Version auf ihre Kompatibilität mit allen neuen Strukturen veränderlicher Inhalte getestet werden, die von der neuen Version im Fall eines Rollbacks angewendet werden, da veränderliche Inhalte nicht entfernt werden.
 
-### Dienstbenutzer und ACL-Änderungen {#service-users-and-acl-changes}
+### Dienstbenutzer- und ACL-Änderungen {#service-users-and-acl-changes}
 
-Das Ändern von Dienstbenutzern oder ACLs, die für den Zugriff auf Inhalte oder Code erforderlich sind, kann in älteren AEM-Versionen zu Fehlern führen, was den Zugriff auf diesen Inhalt oder Code mit veralteten Dienstbenutzern ermöglicht. Um dieses Verhalten zu beheben, wird empfohlen, Änderungen in mindestens 2 Versionen durchzuführen, wobei die erste Version als Brücke fungiert, bevor sie in der folgenden Version bereinigt wird.
+Das Ändern von Dienstbenutzern oder ACLs, die für den Zugriff auf Inhalt oder Code erforderlich sind, kann in den älteren AEM-Versionen zu Fehlern führen, sodass mit veralteten Dienstbenutzern auf diesen Inhalt oder Code zugegriffen wird. Darum wird empfohlen, Änderungen auf mindestens zwei Versionen zu verteilen, wobei die erste Version als Brücke fungiert, bevor die folgende Version bereinigt wird.
 
 ### Indexänderungen {#index-changes}
 
-Wenn Änderungen an Indizes vorgenommen werden, ist es wichtig, dass die Blue-Version ihre Indizes bis zum Ende verwendet, während die Green-Version ihre eigenen geänderten Indizes verwendet. Der Entwickler sollte die [in diesem Artikel](/help/operations/indexing.md)beschriebenen Indexmanagementtechniken befolgen.
+Wenn Änderungen an Indizes vorgenommen werden, muss die blaue Version ihre Indizes bis zum Ende weiter verwenden, während die grüne Version ihre eigenen geänderten Indizes nutzt. Der Entwickler sollte die [in diesem Artikel](/help/operations/indexing.md) beschriebenen Methoden zur Indexverwaltung befolgen.
 
-### Konservative Kodierung für Rückflüsse {#conservative-coding-for-rollbacks}
+### Konservative Kodierung für Rollbacks {#conservative-coding-for-rollbacks}
 
-Wenn nach der Bereitstellung ein Fehler gemeldet oder erkannt wird, ist möglicherweise ein Rollback zur Blue-Version erforderlich. Es wäre ratsam sicherzustellen, dass der Blue-Code mit allen neuen Strukturen kompatibel ist, die von der grünen Version erstellt wurden, da die neuen Strukturen (alle veränderlichen Inhalte) nicht zurückgenommen werden. Wenn der alte Code nicht kompatibel ist, müssen Korrekturen in späteren Kundenveröffentlichungen vorgenommen werden.
+Wenn nach der Bereitstellung ein Fehler gemeldet oder erkannt wird, ist möglicherweise ein Rollback zur blauen Version erforderlich. Es ist ratsam, dass der Blue-Code mit allen neuen Strukturen, die von der Green-Version erstellt werden, kompatibel ist, da die neuen Strukturen (beliebige veränderliche Inhalte) nicht zurückgesetzt werden. Wenn der alte Code nicht kompatibel ist, müssen in späteren benutzerspezifischen Versionen Korrekturen vorgenommen werden.
 
-## Runmodes {#runmodes}
+## Ausführungsmodi {#runmodes}
 
-In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGI-Konfigurationen anzuwenden oder OSGI-Pakete auf diese spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise der *Dienst* (Autor und Veröffentlichung) und die Umgebung (dev, stage, prod).
+In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGi-Konfigurationen anzuwenden oder OSGi-Pakete in diesen spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise der *Dienst* (author und publish) sowie die Umgebung (dev, stage, prod).
 
-AEM als Cloud-Dienst hingegen ist genauer darüber informiert, welche Ausführungsmodi verfügbar sind und wie ihnen OSGI-Pakete und OSGI-Konfigurationen zugeordnet werden können:
+AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche Ausführungsmodi verfügbar sind und wie ihnen OSGi-Pakete und OSGi-Konfigurationen zugeordnet werden können:
 
-* Die OSGI-Konfigurationslaufmodi müssen auf dev, stage, prod für die Umgebung oder den Autor verweisen und für den Dienst veröffentlichen. Es `<service>.<environment_type>` wird eine Kombination von unterstützt, die jedoch in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. author.dev oder publish.prod). Die OSGI-Token sollten direkt aus dem Code referenziert werden, anstatt die `getRunModes` Methode zu verwenden, die zur Laufzeit nicht mehr die `environment_type` enthält.
-* Die Ausführungsmodi von OSGI-Bundles sind auf den Dienst (Autor, Veröffentlichung) beschränkt. OSGI-Pakete pro Ausführung sollten im Inhaltspaket unter entweder `install/author` oder `install/publish`installiert werden.
+* Die Ausführungsmodi der OSGI-Konfiguration müssen für die Umgebung auf dev, stage, prod bzw. für den Dienst auf author, publish verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in der bestimmten Reihenfolge verwendet werden müssen (z. B. author.dev oder publish.prod). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält.
+* Die Ausführungsmodi von OSGi-Bundles sind auf den Dienst (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install/author` oder `install/publish` installiert werden.
 
-Wie bei den vorhandenen AEM-Lösungen gibt es keine Möglichkeit, Ausführungsmodi zu verwenden, um nur Inhalte für bestimmte Umgebungen oder Dienste zu installieren. Wenn Sie eine Entwicklungsumgebung mit Daten oder HTML starten möchten, die sich nicht auf der Bühne oder in der Produktion befinden, könnte Package Manager verwendet werden.
+Wie bei vorhandenen AEM-Lösungen gibt es keine Möglichkeit, Ausführungsmodi zu verwenden, um Inhalte nur für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML getestet werden soll, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.
 
 Die folgenden Runmode-Konfigurationen werden unterstützt:
 
-* **config** (*Die Standardeinstellung gilt für alle AEM-Dienste*)
-* **config.author** (*Gilt für alle AEM Author-Dienste*)
-* **config.author.dev** (*Gilt für den AEM Dev Author-Dienst*)
-* **config.author.stage** (*Gilt für den AEM Staging Author-Dienst*)
-* **config.author.prod** (*Gilt für den AEM Production Author-Dienst*)
-* **config.publish** (*Gilt für den AEM Publish-Dienst*)
-* **config.publish.dev** (*Gilt für den AEM Dev Publish-Dienst*)
-* **config.publish.stage** (*Gilt für den AEM Staging Publish-Dienst*)
-* **config.publish.prod** (*Gilt für den AEM Production Publish-Dienst*)
-* **config.dev** (*Gilt für AEM Dev-Dienste)
-* **config.stage** (*Gilt für AEM Staging-Dienste)
-* **config.prod** (*Gilt für AEM Production-Dienste)
+* **config** (*der Standard, gilt für alle AEM-Dienste*)
+* **config.author** (*gilt für alle AEM Author-Dienste*)
+* **config.author.dev** (*gilt für den AEM Dev Author-Dienst*)
+* **config.author.stage** (*gilt für den AEM Staging Author-Dienst*)
+* **config.author.prod** (*gilt für den AEM Production Author-Dienst*)
+* **config.publish** (*gilt für den AEM Publish-Dienst*)
+* **config.publish.dev** (*gilt für den AEM Dev Publish-Dienst*)
+* **config.publish.stage** (*gilt für den AEM Staging Publish-Dienst*)
+* **config.publish.prod** (*gilt für den AEM Production Publish-Dienst*)
+* **config.dev** (*gilt für AEM Dev-Dienste)
+* **config.stage** (*gilt für AEM Staging-Dienste)
+* **config.prod** (*gilt für AEM Production-Dienste)
 
-Es wird die OSGI-Konfiguration verwendet, die über die am besten passenden Ausführungsmodi verfügt.
+Es wird jene OSGi-Konfiguration verwendet, die über die meisten passenden Ausführungsmodi verfügt.
 
-Bei der lokalen Entwicklung kann ein Startparameter des Ausführungsmodus übergeben werden, um anzugeben, welche OSGI-Konfiguration im Ausführungsmodus verwendet wird.
+Bei der lokalen Entwicklung kann ein Runmode-Startparameter übergeben werden, um anzugeben, welche Runmode-OSGI-Konfiguration verwendet werden soll.
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## Konfiguration von Wartungsaufgaben in der Quellcodeverwaltung {#maintenance-tasks-configuration-in-source-control}
+## Konfiguration von Wartungsaufgaben in der Quell-Code-Verwaltung {#maintenance-tasks-configuration-in-source-control}
 
-Die Konfiguration von Wartungsaufgaben muss in der Quellcodeverwaltung beibehalten werden, da der Bildschirm &quot; **Werkzeuge&quot;> &quot;Vorgänge** &quot;in Cloud-Umgebungen nicht mehr verfügbar ist. Dies hat den Vorteil, dass Veränderungen vorsätzlich beibehalten werden, anstatt reaktiv angewandt und vielleicht vergessen. Weitere Informationen finden Sie im Artikel[ zur ](/help/operations/maintenance.md)Wartungsaufgabe.
+Die Konfiguration von Wartungsaufgaben muss in der Quell-Code-Verwaltung persistiert werden, da der Bildschirm **Tools > Vorgänge** in Cloud-Umgebungen nicht mehr verfügbar ist. Das hat den Vorteil, dass Veränderungen vorsätzlich persistiert werden, anstatt reaktiv angewandt und ggf. vergessen zu werden. Weitere Informationen finden Sie im [Artikel zur Wartungsaufgabe](/help/operations/maintenance.md).
