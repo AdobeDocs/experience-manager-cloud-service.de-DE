@@ -1,16 +1,16 @@
 ---
-title: Adobe Experience Manager Assets als Cloud-Dienst konfigurieren und verwalten
-description: Erfahren Sie mehr über die Konfigurations- und Verwaltungsfunktionen, die für Assets als Cloud-Dienst erforderlich sind
+title: Konfigurieren und Verwalten von Adobe Experience Manager Assets as a Cloud Service
+description: Erfahren Sie mehr über die für Adobe Experience Manager Assets as a Cloud Service erforderlichen Konfigurations- und Verwaltungsaufgaben.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Assets als Cloud-Dienst konfigurieren und verwalten {#config-administer-assets-cloud-service}
+# Konfigurieren und Verwalten von Adobe Experience Manager Assets as a Cloud Service {#config-administer-assets-cloud-service}
 
-Der Artikel Liste die Konfigurations- oder Verwaltungsfunktionen der obersten Ebene, die für die ersten Schritte mit Adobe Experience Manager Assets als Cloud-Dienst erforderlich sind.
+In diesem Artikel werden die übergeordneten Konfigurations- und Verwaltungsaufgaben aufgeführt, die für den Einstieg in die Verwendung von Adobe Experience Manager Assets as a Cloud Service erforderlich sind.
 
 <!-- SCOPE 
 
