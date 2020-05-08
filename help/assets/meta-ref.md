@@ -2,7 +2,7 @@
 title: Metadatenschema-Referenz
 description: 'Erfahren Sie mehr über die Standard-Konventionen für das Beschreiben von Asset-Metadaten, darunter Dublin Core, IPTC und weitere Metadatenschemen. '
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
@@ -18,7 +18,7 @@ Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die 
 
 Das einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, die in der folgenden Tabelle aufgeführt werden. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 
-In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core Initiative](https://dublincore.org/) for more information.
+Zusätzlich zum DCMES wurden auch noch andere Metadatenelemente von der Dublin Core Initiative erstellt. Weitere Informationen finden Sie unter [Dublin Core Initiative](https://dublincore.org/).
 
 <table>
  <tbody>
@@ -28,7 +28,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>contributor</td> 
-   <td>Die Personen oder das Unternehmen, die/das dafür verantwortlich ist, zum Inhalt beizutragen.</td> 
+   <td>Die Personen oder das Unternehmen, diedafür verantwortlich sind, zum Inhalt beizutragen.</td> 
   </tr>
   <tr>
    <td>coverage</td> 
@@ -36,10 +36,10 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>creator</td> 
-   <td>Die Personen oder das Unternehmen, die/das dafür verantwortlich ist, den Inhalt zu erstellen.</td> 
+   <td>Die Personen oder das Unternehmen, die dafür verantwortlich sind, den Inhalt zu erstellen.</td> 
   </tr>
   <tr>
-   <td>Datum</td> 
+   <td>date</td> 
    <td>Datum oder Zeitraum, mit dem das Asset verknüpft ist.<br /> </td> 
   </tr>
   <tr>
@@ -48,10 +48,10 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>format</td> 
-   <td>Das Dateiformat, das physische Medium oder die Dimensionen des Assets. AEM gibt <code>dc:format</code> den MIME-Typ des Assets an.<br /> </td> 
+   <td>Das Dateiformat, das physische Medium oder die Dimensionen des Assets. AEM verwendet <code>dc:format</code>, um den MIME-Typ des Assets zu kennzeichnen.<br /> </td> 
   </tr>
   <tr>
-   <td>Kennung</td> 
+   <td>identifier</td> 
    <td>Eine eindeutige Referenz zum Asset.</td> 
   </tr>
   <tr>
@@ -60,7 +60,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
   </tr>
   <tr>
    <td>publisher</td> 
-   <td>Die Personen oder das Unternehmen, die/das dafür verantwortlich ist, das Asset verfügbar zu machen.</td> 
+   <td>Die Personen oder das Unternehmen, die dafür verantwortlich sind, das Asset verfügbar zu machen.</td> 
   </tr>
   <tr>
    <td>relation</td> 
@@ -79,7 +79,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
    <td>Das Thema des Assets.<br /> </td> 
   </tr>
   <tr>
-   <td>Titels</td> 
+   <td>title</td> 
    <td>Ein Name für das Asset.</td> 
   </tr>
   <tr>
