@@ -1,7 +1,7 @@
 ---
-sub-product: Versionshinweise für AEM als Cloud-Dienst
-user-guide-title: Versionshinweise für AEM als Cloud-Dienst
-translation-type: tm+mt
+sub-product: Versionshinweise für AEM as a Cloud Service
+user-guide-title: Versionshinweise für AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
