@@ -1,15 +1,15 @@
 ---
-title: Integration mit Adobe Target
-description: 'Integration mit Adobe Target '
-translation-type: tm+mt
+title: Integrieren mit Adobe Target
+description: 'Integrieren mit Adobe Target '
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Integration mit Adobe Target{#integrating-with-adobe-target}
+# Integrieren mit Adobe Target{#integrating-with-adobe-target}
 
-As part of the Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Onlineerlebnisse zu automatisieren. AEM als Cloud-Dienst hat den Targeting-Arbeitsablauf übernommen, der in Adobe Zielgruppe Standard verwendet wird. Wenn Sie Zielgruppe verwenden, sind Sie mit der Targeting-Umgebung zur Bearbeitung in AEM als Cloud-Dienst vertraut.
+Als Teil von Adobe Marketing Cloud ermöglicht [Adobe Target](http://www.adobe.com/de/solutions/testing-targeting/testandtarget.html) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren. AEM as a Cloud Service hat den Targeting-Workflow übernommen, der in Adobe Target Standard verwendet wird. Wenn Sie Target verwenden, sind Sie mit der Targeting-Bearbeitungsumgebung in AEM as a Cloud Service vertraut.
 
 Integrieren Sie Ihre AEM-Sites in Adobe Target, um den Inhalt auf Ihren Seiten zu personalisieren:
 
@@ -20,36 +20,36 @@ Integrieren Sie Ihre AEM-Sites in Adobe Target, um den Inhalt auf Ihren Seiten z
 
 >[!NOTE]
 >
->Adobe Experience Manager als Cloud-Dienstkunden, die über kein bestehendes Zielgruppe-Konto verfügen, können den Zugriff auf das Zielgruppe Foundation Pack für Experience Cloud anfordern.  Das Foundation Pack bietet eine begrenzte Anzahl von Zielgruppen.
+>Kunden mit Adobe Experience Manager as a Cloud Service, die kein Target-Konto haben, können Zugriff auf Target Foundation Pack für Experience Cloud anfordern.  Das Foundation Pack bietet eine eingeschränkte Verwendung von Target.
 
 
-Führen Sie zur Integration in Target die folgenden Aufgaben durch:
+Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
-* [Führen Sie vorbereitende Aufgaben durch](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): Registrieren Sie sich bei Adobe Target und konfigurieren Sie bestimmte Aspekte der AEM-Autoreninstanz. Your Adobe Target account must have **approver** level permissions at a minimum. Darüber hinaus müssen Sie die Aktivitätseinstellungen auf dem Veröffentlichungsknoten so sichern, dass sie für Benutzer nicht zugänglich sind.
+* [Führen Sie vorbereitende Aufgaben durch](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html): Registrieren Sie sich bei Adobe Target und konfigurieren Sie bestimmte Aspekte der AEM-Autoreninstanz. Ihre Adobe Target-Konto muss mindestens über Berechtigungen auf der Ebene **Genehmigende Person** verfügen. Darüber hinaus müssen Sie die Aktivitätseinstellungen auf dem Veröffentlichungsknoten so sichern, dass sie für Benutzer nicht zugänglich sind.
 
-* Launch by Adobe ist das defacto-Tool zur Instrumentierung einer AEM-Site mit Zielgruppe-Funktionen (JS-Bibliotheken). Die Integration von AEM als Cloud-Dienst in Launch und Adobe-Zielgruppe erfolgt daher Hand in Hand (siehe die Links unten).
+* Launch by Adobe ist das Tool zur Instrumentierung einer AEM-Site mit Target-Funktionen (JS-Bibliotheken). Daher erfolgt die Integration von AEM as a Cloud Service in Launch und Adobe Target Hand in Hand (siehe die Links unten).
 
-   * [Integration mit Adobe Zielgruppe mit Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-   * [Starten von Adobe integrieren](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-   * [Integration von AEM mit Adobe Launch über Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-   * [Die AEM-Integration mit dem Start von Adobe, Analytics und der Zielgruppe](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+   * [Integration mit Adobe Target über Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [Integrieren von Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+   * [Integrieren von AEM mit Adobe Launch über Adobe I/O](https://helpx.adobe.com/de/experience-manager/using/aem_launch_adobeio_integration.html)
+   * [Grundlegendes zur AEM-Integration mit Launch by Adobe, Analytics und Target](https://helpx.adobe.com/de/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 >[!NOTE]
 >
->Die IMS-Konfiguration (technische Konten) zum Starten durch Adobe ist in AEM als Cloud-Dienst vorkonfiguriert. Benutzer müssen diese Konfiguration nicht erstellen.
+>Die IMS-Konfiguration (technische Konten) für Launch by Adobe ist in AEM as a Cloud Service vorkonfiguriert. Benutzer müssen diese Konfiguration nicht erstellen.
 
 1. [Konfigurieren Sie die Aktivitäten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Verknüpfen Sie Ihre Aktivitäten mit der Target-Cloud-Konfiguration.
 
 >[!CAUTION]
 >
->In AEM als Cloud-Dienst ist der Replizierungsagenten, der Angebot und Aktivitäten von AEM mit Adobe-Zielgruppe synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Supportteam](https://helpx.adobe.com/de/contact/enterprise-support.ec.html#experience-manager) , wenn Sie den Replizierungsagenten erneut aktivieren möchten.
+>In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an den [Adobe-Support](https://helpx.adobe.com/de/contact/enterprise-support.ec.html#experience-manager), wenn Sie den Replikations-Agenten erneut aktivieren möchten.
 
 >[!NOTE]
 >
 >Wenn Sie Target mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 >
 
 
@@ -60,18 +60,18 @@ Führen Sie zur Integration in Target die folgenden Aufgaben durch:
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration in Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node).
 
-When the integration is complete, you can [author targeted content](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. Beachten Sie, dass für Seitenkomponenten ein spezifischer Code erforderlich ist, um das Content-Targeting zu aktivieren. (See [Developing for Targeted Content](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
+Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html), die Besucherdaten an Adobe Target senden. Beachten Sie, dass Seitenkomponenten einen spezifischen Code für die Aktivierung von Content-Targeting benötigen. (Siehe [Entwicklung im Hinblick auf gezielte Inhalte](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html)).
 
 >[!NOTE]
 >
 >Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von serverseitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine serverseitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
 
-## Quellen für Hintergrundinformationen {#background-information-sources}
+## Quellen für Hintergrundinformationen     {#background-information-sources}
 
-Die Integration von AEM als Cloud-Dienst mit Adobe Zielgruppe erfordert Kenntnisse über Adobe Zielgruppe, AEM Aktivitäten-Management und AEM Audiencen-Management. Sie sollten mit den folgenden Informationen vertraut sein:
+Die Integration von AEM as a Cloud Service mit Adobe Target erfordert Kenntnisse über Adobe Target, AEM-Aktivitäts-Management und AEM-Zielgruppen-Management. Sie sollten mit den folgenden Informationen vertraut sein:
 
-* Adobe Target (See the [Adobe Target documentation](https://marketing.adobe.com/resources/help/de_DE/target/)).
-* AEM Activities console (See [Managing Activities](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
+* Adobe Target (siehe [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/)).
+* AEM-Aktivitätskonsole (siehe [Verwalten von Aktivitäten](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
 * AEM-Zielgruppen (siehe [Verwalten von Zielgruppen](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html).
 
 >[!NOTE]
