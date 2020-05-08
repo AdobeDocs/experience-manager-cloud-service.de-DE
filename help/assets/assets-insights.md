@@ -1,18 +1,18 @@
 ---
-title: Asset-Insights
+title: Asset Insights
 description: Erfahren Sie, wie Sie mit der Funktion „Asset Insights“ Benutzerbewertungen und Nutzungsstatistiken von Bildern nachverfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen von Adobe verwendet werden.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Asset-Insights {#asset-insights}
+# Asset Insights {#asset-insights}
 
-Asset Insights verfolgt Benutzerbewertungen und Nutzungsstatistiken von Bildern, die auf Websites von Drittanbietern, in Marketing-Kampagnen und in den Kreativlösungen von Adobe verwendet werden. Es bietet Einblicke in die Leistung und Beliebtheit der Bilder.
+Mit der Funktion „Asset Insights“ verfolgen Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern, die auf Drittanbieter-Websites, in Marketing-Kampagnen und den Kreativlösungen von Adobe verwendet werden. Sie bietet Einblicke in die Leistung und Beliebtheit der Bilder.
 
-Assets Insights hält Details zu Benutzeraktivitäten wie Anzahl der Bildbewertungen, Klickraten und Impressionen (Häufigkeit des Ladens eines Bildes auf einer Website) fest. Er weist Bildern anhand dieser Statistiken Punktzahlen zu. Sie können die Bewertungen und Leistungsstatistiken verwenden, um beliebte Bilder zur Aufnahme in Kataloge, Marketing-Kampagnen usw. auszuwählen. Sie können außerdem Richtlinien zu Archivierungen und Lizenzerneuerungen anhand dieser Statistiken formulieren.
+Assets Insights hält Details zu Benutzeraktivitäten wie Anzahl der Bildbewertungen, Klickraten und Impressionen (Häufigkeit des Ladens eines Bildes auf einer Website) fest. Basierend auf diesen Statistiken werden Bildern Bewertungen zugewiesen. Sie können Bewertungs- und Leistungsstatistiken nutzen, um beliebte Bilder für Kataloge, Marketing-Kampagnen usw. auszuwählen. Sie können außerdem Richtlinien zu Archivierungen und Lizenzerneuerungen anhand dieser Statistiken formulieren.
 
 Damit Assets Insights Nutzungsstatistiken für Bilder von einer Website festhalten kann, müssen Sie den eingebetteten Code für das Bild im Website-Code einfügen.
 
@@ -22,31 +22,31 @@ Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfiguriere
 >
 >Einblicke werden nur für Bilder unterstützt und bereitgestellt.
 
-## View statistics for an image {#viewing-statistics-for-an-image}
+## Anzeigen von Statistiken für Bilder {#viewing-statistics-for-an-image}
 
 Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
-1. From the Assets user interface (UI), select the image and then tap **[!UICONTROL Properties]** from the toolbar.
-1. Tippen Sie auf der Seite Eigenschaften auf **[!UICONTROL Einblicke]**.
-1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Statistiken]**. The **[!UICONTROL Score]** section describes the total asset usage and performance sores of an asset .
+1. Wählen Sie auf der Assets-Benutzeroberfläche das Bild aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
+1. Tippen Sie auf der Seite „Eigenschaften“ auf **[!UICONTROL Insights]**.
+1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Der Abschnitt **[!UICONTROL Bewertung]** beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets.
 
    Die Nutzungsbewertung beschreibt, wie oft ein Asset in verschiedenen Lösungen verwendet wird.
 
    Die Bewertung **[!UICONTROL Impressionen]** beschreibt, wie oft das Asset auf der Website geladen wurde. Die unter **[!UICONTROL Klicks]** angezeigte Zahl beschreibt, wie oft Benutzer auf das Asset geklickt haben.
 
-1. Review the **[!UICONTROL Usage Statistics]** section to know which entities the asset was part of and which creative solutions recently used it. Je höher die Nutzung, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
+1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
 
    * **[!UICONTROL Asset]**: Wie oft war das Asset Teil einer Sammlung oder eines zusammengesetzten Assets.
-   * **[!UICONTROL Web und Mobil]**: Die Frequenz, mit der das Asset zu Websites und Apps gehörte.
-   * **[!UICONTROL Sozial]**: Wie oft wurde das Asset in Lösungen wie Adobe Social und Adobe Campaign verwendet.
+   * **[!UICONTROL Web und Mobile]**: Wie oft wurde das Asset in Websites und Apps verwendet.
+   * **[!UICONTROL Social]**: Wie oft wurde das Asset in Lösungen wie Adobe Social und Adobe Campaign verwendet.
    * **[!UICONTROL E-Mail]**: Wie oft wurde das Asset in E-Mail-Kampagnen verwendet.
-   ![usage_statistics](assets/usage_statistics.png)
+   ![Nutzungsstatistiken](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Da die Asset Insights-Funktion in der Regel die Lösungsdaten regelmäßig aus Adobe Analytics abruft, werden im Abschnitt &quot;Lösungen&quot;möglicherweise nicht die aktuellsten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abholvorgangs ab, mit dem Asset Insights ausgeführt wird, um Daten aus Analytics abzurufen.
+   >Da die Asset Insights-Funktion normalerweise in bestimmten Abständen die Lösungsdaten aus Adobe Analytics abruft, werden im Abschnitt „Lösungen“ möglicherweise nicht die neuesten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abholvorgangs ab, mit dem Asset Insights ausgeführt wird, um Daten aus Analytics abzurufen.
 
-1. Um Leistungsstatistiken für das Asset für einen bestimmten Zeitraum grafisch anzuzeigen, wählen Sie den gewünschten Zeitraum im Abschnitt **[!UICONTROL Leistungsstatistiken]** aus. Details, einschließlich Klicks und Impressionen, werden als Trendlinien eines Diagramms angezeigt.
+1. Um Leistungsstatistiken für das Asset für einen bestimmten Zeitraum grafisch anzuzeigen, wählen Sie den gewünschten Zeitraum im Abschnitt **[!UICONTROL Leistungsstatistiken]** aus. Details wie Klicks und Impressions werden als Trend-Linien eines Diagramms angezeigt.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -54,24 +54,24 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
    >
    >Im Gegensatz zu den Daten im Abschnitt „Lösungen“ zeigt der Abschnitt „Leistungsstatistiken“ die neuesten Daten an.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, tap/click **[!UICONTROL Get Embed Code]** below the asset thumbnail. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Um den Einbettungs-Code für das Asset zu erhalten, das Sie zu Websites hinzufügen, um Leistungsdaten zu gewinnen, tippen oder klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungs-Code abrufen]**. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## View aggregate statistics for images {#viewing-aggregate-statistics-for-images}
+## Anzeigen von zusammengefassten Statistiken für Bilder {#viewing-aggregate-statistics-for-images}
 
-Sie können mit der **[!UICONTROL Insight-Ansicht]** Bewertungen aller Assets gleichzeitig in einem Ordner anzeigen.
+Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Ordner, in dem die Assets enthalten sind, für die Sie Statistiken anzeigen möchten.
 1. Tippen oder klicken Sie auf das Layout-Symbol und wählen Sie **[!UICONTROL Insight-Ansicht]** aus.
 1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
-## Hintergrundauftrag planen {#scheduling-background-job}
+## Planen von Hintergrundaufträgen {#scheduling-background-job}
 
 Asset Insights ruft regelmäßig Nutzungsdaten für Assets aus den Adobe Analytics-Report Suites ab. Standardmäßig führt Asset Insights alle 24 Stunden um 2 Uhr Hintergrundjobs aus, um Daten abzurufen. Sie können jedoch die Häufigkeit und die Zeit ändern, indem Sie den Dienst **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** von der Web-Konsole aus konfigurieren.
 
-1. Tippen Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
-1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie anschließend zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Öffnen Sie die Service-Konfiguration **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -85,30 +85,30 @@ Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von 
 >
 >Einblicke werden nur für Bilder unterstützt und bereitgestellt.
 
-1. Klicken Sie in AEM auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]**.
+1. Klicken Sie in AEM auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Klicken Sie auf die Karte **[!UICONTROL Insight-Konfiguration]**.
+1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
 1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
 
    ![Konfigurieren von Adobe Analytics für Asset Insights in AEM](assets/insights_config2.png)
 
-   *Abbildung: Adobe Analytics für Assets Insights in AEM konfigurieren*
+   *Abbildung: Konfigurieren von Adobe Analytics für Asset Insights in AEM*
 
-1. Tippen/Klicken Sie auf **[!UICONTROL Authentifizieren]**. Nachdem AEM Ihre Anmeldedaten authentifiziert hat, wählen Sie aus der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite aus, aus der Asset Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
-1. After AEM sets up your report suite, tap **[!UICONTROL Done]**.
+1. Klicken/tippen Sie auf **[!UICONTROL Authentifizieren]**. Nachdem AEM Ihre Anmeldedaten authentifiziert hat, wählen Sie aus der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite aus, aus der Asset Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Nach der Report Suite-Einrichtung durch AEM tippen Sie auf **[!UICONTROL Fertig]**.
 
 ### Seitenverfolgung {#page-tracker}
 
-Nachdem Sie Ihr Adobe Analytics-Konto konfiguriert haben, wird der Seiten-Tracker-Code für Sie generiert. Um Asset Insights zur Verfolgung von AEM-Assets in Websites von Drittanbietern zu aktivieren, beziehen Sie den Seitenverfolgungscode in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in AEM Assets, um den Seitenverfolgungscode zu erzeugen. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Nachdem Sie Ihr Adobe Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Um Asset Insights zur Verfolgung von AEM-Assets in Websites von Drittanbietern zu aktivieren, beziehen Sie den Seitenverfolgungscode in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in AEM Assets, um den Seitenverfolgungscode zu erzeugen. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. Klicken Sie in AEM auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]**.
+1. Klicken Sie in AEM auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Klicken Sie auf der Seite **[!UICONTROL Navigation]** auf die Karte **[!UICONTROL Insights Page Tracker]**.
-1. Click **[!UICONTROL Download]** to download the page tracker code.
+1. Klicken Sie in der **[!UICONTROL Navigationsseite]** auf die Karte **[!UICONTROL Insights-Seitenverfolgung]**.
+1. Klicken Sie auf **[!UICONTROL Herunterladen]**, um den Seitenverfolgungs-Code herunterzuladen.
 
 <!--
 
