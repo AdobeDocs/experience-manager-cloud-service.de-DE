@@ -3,9 +3,9 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] als Clou
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 63%
 
 ---
@@ -47,7 +47,7 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
 Bei Auswahl der Option **[!UICONTROL Abgelaufen]** zeigt die Konsole „“ nur die abgelaufenen Assets und Teil-Assets an, auf die von ebenenübergreifenden Assets verwiesen wird. [!DNL Assets] Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
-Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, das vor dem aktuellen Planerzyklus liegt, erkennt der Planer das Asset als abgelaufenes Asset, wenn es das nächste Mal aufgeführt wird, und spiegelt dementsprechend seinen Status wider.
+Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, das vor dem aktuellen Planerzyklus liegt, erkennt der Planer das Asset als abgelaufenes Asset, wenn es das nächste Mal aufgeführt wird, und spiegelt dementsprechend seinen Status wider. Das Ablaufdatum eines Assets wird für Benutzer in verschiedenen Zeitzonen unterschiedlich angezeigt.
 
 Wenn eine Störung oder ein Fehler verhindert, dass der Planer abgelaufene Assets im aktuellen Zyklus erkennt, untersucht der Planer diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
