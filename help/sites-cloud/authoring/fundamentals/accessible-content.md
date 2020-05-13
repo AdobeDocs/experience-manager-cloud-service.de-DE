@@ -2,14 +2,17 @@
 title: Barrierefreie Inhalte für Adobe Experience Manager als Cloud-Dienst erstellen (WCAG 2.1-Konformität)
 description: Barrierefreies Nutzen von Webinhalten durch Personen mit Behinderungen
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+workflow-type: tm+mt
+source-wordcount: '13874'
+ht-degree: 52%
 
 ---
 
 
 # Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) {#creating-accessible-content-wcag-conformance}
 
-Die [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), die von [einer Arbeitsgruppe des World Wide Wec Consortiums](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group)erarbeitet wurden, bestehen aus einer Reihe von technologieunabhängigen Leitlinien und Erfolgskriterien, die helfen, Web-Inhalte für Menschen mit Behinderungen zugänglich und nutzbar zu machen.
+Die [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), die von [einer Arbeitsgruppe des World Wide Wec Consortiums](https://www.w3.org/Konsortium/Aktivitäten#Accessibility_Guidelines_Working_Group)erarbeitet wurden, bestehen aus einer Reihe von technologieunabhängigen Leitlinien und Erfolgskriterien, die helfen, Web-Inhalte für Menschen mit Behinderungen zugänglich und nutzbar zu machen.
 
 Als Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstützende Dokumente an:
 
@@ -20,7 +23,8 @@ Als Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstütz
 * [Die WCAG-Dokumente](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Siehe auch:
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md) for further details
+* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Die Berichte zur [Barrierefreiheitskonformität für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 
 <!-- 
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
@@ -29,16 +33,12 @@ Siehe auch:
 Die Leitlinien werden nach drei Konformitätsstufen eingestuft: Stufe A (niedrigste), Stufe AA und Kategorie AAA (höchste). Die Levels sind kurz definiert wie folgt:
 
 * **Stufe A:** Ihre Site erreicht eine einfache, minimale Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-Erfolgskriterien erfüllt.
-* **Level AA:** Dies ist ein ideales Level der Barrierefreiheit, das Sie anstreben sollten. Auf diesem Level erreicht Ihre Site ein höheres Maß an Barrierefreiheit, da sie für die meisten Menschen in den meisten Situationen mit den meisten Technologien barrierefrei zugänglich ist. Um dieses Level zu erreichen, müssen alle Erfolgskriterien von Level A und Level AA erfüllt sein.
+* **Stufe AA:** Dies ist ein idealer Grad an Barrierefreiheit, nach dem Sie streben können, in dem Ihre Site ein grundlegendes Niveau der Barrierefreiheit erreicht, sodass sie für die meisten Menschen in den meisten Situationen mit den meisten Technologien zugänglich ist. Bei Erreichen dieser Stufe sind alle Kategorie-A- und -AA-Erfolgskriterien erfüllt.
 * **Stufe AAA:** Ihre Site erreicht eine sehr hohe Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-, -AA- und -AAA-Erfolgskriterien erfüllt.
 
-Bei der Erstellung Ihrer Site sollten Sie das Gesamtlevel festlegen, dem Ihre Site entsprechen sollte.
+Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
 Im folgenden Abschnitt finden Sie die [WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) mit den entsprechenden Erfolgskriterien für die [Konformitätslevels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) Level A und Level AA.
-
->[!NOTE]
->
->Da bestimmte Inhalte die Erfolgskriterien von Level AAA unmöglich erreichen können, ist es nicht empfehlenswert, dieses Konformitätslevel als allgemeine Richtlinie festzulegen.
 
 >[!NOTE]
 >
@@ -46,19 +46,17 @@ Im folgenden Abschnitt finden Sie die [WCAG 2.1-Richtlinien](https://www.w3.org/
 >
 >* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
->
 
 
+## Grundsatz 1: Erkennbar     {#principle-perceivable}
 
-## Grundsatz 1: Erkennbar   {#principle-perceivable}
+[Grundsatz 1: Erkennbar – Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG/#perceivable)
 
-[Grundsatz 1: Erkennbar -  Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG/#perceivable)
+### Textalternativen (1.1)     {#text-alternatives}
 
-### Textalternativen (1.1)   {#text-alternatives}
+[Richtlinie 1.1 Textalternativen: Bieten Sie Textalternativen für nichttextliche Inhalte, damit sie in andere Formate geändert werden, die von bestimmten Personen benötigt werden, wie zum Beispiel Großdruck, Braille, Sprache, Symbole oder einfachere Sprache.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-[Richtlinie 1.1 Textalternativen: Bieten Sie Textalternativen für nichttextlichen Inhalt, damit sie in andere Formate geändert werden, die von bestimmten Personen benötigt werden, wie zum Beispiel Großdruck, Braille, Sprache, Symbole oder einfachere Sprache.](https://www.w3.org/TR/WCAG/#text-alternatives)
-
-### Nichttextlicher Inhalt (1.1.1)   {#non-text-content}
+### Nichttextlicher Inhalt (1.1.1)     {#non-text-content}
 
 * Erfolgskriterium 1.1.1
 * Level A
@@ -70,7 +68,7 @@ Informationen auf einer Webseite können in vielen verschiedenen nichttextlichen
 
 Ein nützlicher weiterer Vorteil besteht darin, dass es durch Textalternativen möglich ist, nichttextliche Inhalte durch die Suchmaschinentechnologie zu indizieren.
 
-#### Erfüllen: Nichttextlicher Inhalt (1.1.1)   {#how-to-meet-non-text-content}
+#### Erfüllen: Nichttextlicher Inhalt (1.1.1)     {#how-to-meet-non-text-content}
 
 Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **ALT-Text** durchgeführt werden:
 
@@ -82,7 +80,7 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-In AEM muss das Feld **Alternativtext** standardmäßig ausgefüllt werden. Wenn das Bild nur dekorativ ist und Alternativtext keinen Sinn ergeben würde, kann die Option **Bild ist dekorativ** aktiviert werden.
+In AEM muss das Feld **Alternativtext** standardmäßig ausgefüllt werden. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
 
 #### Erstellen guter Textalternativen {#creating-good-text-alternatives}
 
@@ -95,7 +93,7 @@ Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der
 * Alternativtext sollte keinen Inhalt replizieren, der bereits in Textform auf derselben Seite vorhanden ist. Denken Sie daran, dass viele Bilder Darstellungen von Punkten sind, die bereits der Text einer Seite abdeckt. Somit ist möglicherweise bereits eine Textalternative vorhanden.
 * Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und kein anderer Text vorhanden ist, der Teil desselben Links ist, dann muss der Alternativtext für das Bild das Ziel des Links angeben und braucht das Bild nicht zu beschreiben.
 * Wenn sich der nichttextliche Inhalt in einem Schaltflächenelement befindet und kein Text vorhanden ist, der Teil derselben Schaltfläche ist, dann muss der Alternativtext des Bildes die Funktion der Schaltfläche angeben statt das Bild zu beschreiben.
-* Es ist völlig in Ordnung, wenn für ein Bild ein leerer Alternativtext (null) angegeben wird, allerdings nur dann, wenn das Bild keinen Alternativtext hat (wenn es sich beispielsweise nur um eine dekorative Grafik handelt) oder der entsprechende Text bereits im Seitentext vorhanden ist.
+* Es ist durchaus akzeptabel, dass einem Bild ein leerer alternativer Text (null) zugewiesen wird, jedoch nur, wenn das Bild keinen alternativen Text benötigt (z. B. eine rein dekorative Grafik) oder wenn der entsprechende Text bereits im Seitentext vorhanden ist.
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -104,10 +102,10 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderlich sind:
 
 * Veranschaulichende Fotos:
-Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Denken Sie an die Rolle des Fotos auf der Seite. Eine angemessene Textentsprechung lautet dann wahrscheinlich `Photo of [object]`, kann jedoch vom Text neben dem Bild abhängen.
+Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, über die Rolle des Fotos auf der Seite nachzudenken und generell die Beschreibung des Bildinhalts zu empfehlen, da Hilfstechnologie den Elementtyp ankündigt (z. B. `graphic` oder `image`); Es kann mehr Klarheit in der Verwendung `screenshot` oder `illustration` in den alternativen Textbeschreibungen, aber dies hängt vom Kontext. Konsistenz ist ein wichtiger Faktor, eine Entscheidung sollte für ein gesamtes Autorenteam getroffen werden, und dies gilt für die gesamte Benutzererfahrung.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative aufweisen, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 * Diagramme: Normalerweise werden dadurch numerische Daten dargestellt. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupt-Trends eingefügt werden. Fall nötig, können Sie eine detailliertere Textbeschreibung im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
-* Karten, Funktionspläne, Flussdiagramme: Für Grafiken mit räumlichen Daten (wie zum Beispiel zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder eines Prozesses) müssen Sie sicherstellen, dass die Hauptaussage im Textformat angegeben wird. Bei Karten ist die Angabe einer vollständigen Textentsprechung wahrscheinlich unpraktisch, doch wenn die Karte als Wegweiser zu einem bestimmten Standort dient, kann der Alternativtext für das Kartenbild kurz *Karte von X* lauten, gefolgt von einer Wegbeschreibung zu diesem Standort in Textform an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild**.
+* Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken, die räumliche Daten bereitstellen (um z. B. das Beschreiben von Beziehungen zwischen Objekten oder einem Prozess zu unterstützen) sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes verknüpften Datenpunkts positioniert werden. Bei Maps ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Map bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Map Image kurz die *Zuordnung von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
 * CAPTCHAs: Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung zwischen Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Web-Seiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie besteht aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um den Sicherheitstest zu bestehen. Die Bereitstellung einer Textalternative für das Bild ist offensichtlich nicht möglich; daher müssen Sie alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet eine Reihe von Vorschlägen wie. Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
    * Logik-Puzzles
    * Audio statt Bilder
@@ -118,7 +116,7 @@ Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Denken Sie 
 >
 >Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergrundtext vorhanden sein; weitere Details hierzu finden Sie unter [Kontrast (Minimum) (1.4.3)](#contrast-minimum).
 
-#### Weitere Informationen: Nichttextlicher Inhalt (1.1.1)   {#more-information-non-text-content}
+#### Weitere Informationen: Nichttextlicher Inhalt (1.1.1)     {#more-information-non-text-content}
 
 * [Erfolgskriterien 1.1.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Erfolgskriterien 1.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -128,7 +126,7 @@ Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Denken Sie 
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### Zeitbasierte Medien (1.2)   {#time-based-media}
+### Zeitbasierte Medien (1.2)     {#time-based-media}
 
 [Richtlinie 1.2 Zeitbasierte Medien: Bereitstellung von Alternativen für zeitbasierte Medien.](https://www.w3.org/TR/WCAG/#time-based-media)
 
@@ -164,9 +162,11 @@ Wenn diese Informationen in einem anderen Format bereitgestellt werden, wie zum 
 
 >[!NOTE]
 >
->Wenn der Audio- oder Videoinhalt als Alternative zu Inhalten bereitgestellt wird, die bereits in einem anderen Format auf einer Webseite vorhanden sind, müssen die oben genannten Anforderungen nicht erfüllt werden. Wenn beispielsweise ein Video eine Liste von Textanweisungen veranschaulicht, dann ist für dieses Video kein Alternativtext erforderlich, weil die Textanweisungen bereits als Alternative für das Video dienen.
+>Wenn der Audio- oder Videoinhalt als Alternative zu Inhalten bereitgestellt wird, die bereits in einem anderen Format auf derselben Webseite vorhanden sind, ist möglicherweise keine zusätzliche Alternative erforderlich.
+>
+>Die Leitlinien, [Verständigung WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html), enthalten weitere Informationen.
 
-Das Einfügen von Multimedia wie Flash-Inhalten auf Ihren AEM-Webseiten entspricht in etwa dem Einfügen eines Bildes. Da Multimedia jedoch weit mehr ist als ein Standbild, gibt es eine Vielzahl von verschiedenen Einstellungen und Optionen zur Steuerung wie die Multimedia-Inhalte abgespielt werden.
+Das Einfügen von Multimedia in Ihre AEM-Webseiten ist ähnlich wie das Einfügen eines Bildes. Da Multimedia jedoch weit mehr ist als ein Standbild, gibt es eine Vielzahl von verschiedenen Einstellungen und Optionen zur Steuerung wie die Multimedia-Inhalte abgespielt werden.
 
 >[!NOTE]
 >
@@ -185,11 +185,7 @@ Das Einfügen von Multimedia wie Flash-Inhalten auf Ihren AEM-Webseiten entspric
 
 #### Zweck - Beschriftungen (vorab aufgezeichnet) (1.2.2) {#purpose-captions-prerecorded}
 
-Gehörlose oder schwerhörige Menschen können Audioinhalte gar nicht oder nur schwer verstehen. Untertitel sind Textentsprechungen für gesprochene und nicht gesprochene Audioinhalte; sie werden im Video zum richtigen Zeitpunkt auf dem Bildschirm angezeigt. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was vor sich geht.
-
->[!NOTE]
->
->Untertitel sind nicht erforderlich, wenn passender Text oder nichttextliche Entsprechungen (die direkt entsprechende Informationen vermitteln) auf derselben Seite wie das Video oder die Animation verfügbar sind.
+Menschen, die Taub oder schwerhörig sind, werden nicht auf Audioinhalte zugreifen können oder große Schwierigkeiten haben. Beschriftungen sind Textäquivalente für gesprochene und nicht gesprochene Audiodaten, die zur richtigen Zeit während des Videos auf dem Bildschirm angezeigt werden. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was passiert.
 
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -200,7 +196,7 @@ Es gibt zwei Arten von Untertiteln:
 
 Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können, ob die Untertitel angezeigt werden.
 
-Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Lernprogrammen unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-pre-recorded) zusammengestellt). Geben Sie Benutzern auf jeden Fall einen Hinweis, dass Untertitel für das Video verfügbar sind.
+Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Lernprogrammen unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-pre-recorded) zusammengestellt). Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitel-Funktion im Videoplayer aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
 
 Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Anwendungen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
 
@@ -234,9 +230,9 @@ Es gibt zwei Ansätze zur Erfüllung dieses Erfolgskriteriums. Beide sind akzept
       * Dadurch können Benutzer zwischen dem vorhandenen Audio-Track (der *keine* Audiobeschreibung enthält) und dem neuen Audio-Track (*mit* einer Audiobeschreibung) wechseln.
       * Dadurch wird verhindert, dass Benutzer, die die zusätzliche Beschreibung nicht benötigen, gestört werden.
    * Erstellen Sie eine zweite Version des Videoinhalts, um erweiterte Audiobeschreibungen zu ermöglichen. Dies verringert die Schwierigkeiten, die sich durch Einfügen von detaillierten Audiobeschreibungen in Lücken zwischen dem vorhandenen Dialog ergeben, weil das Audio und Video an passenden Stellen unterbrochen werden muss. Als Ergebnis kann eine viel längere Audiobeschreibung gegeben werden, bevor die Aktion erneut startet. Wie im vorigen Beispiel wird dies am besten als optionaler eigener Audio-Track bereitgestellt, um eine Störung der Benutzer zu verhindern, die keine zusätzliche Beschreibung benötigen.
-1. Stellen Sie ein Text-Transkript bereit, das eine angemessene Textentsprechung der Audio- und Bildelemente des Videos oder der Animation ist. Es sollte möglichst den Sprecher, eine Beschreibung der Szenerie und den sprachlichen Ausdruck angeben. Abhängig von der Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation einfügen, oder auch auf einer separaten Seite. In diesem Fall müssen Sie einen Link zu dem Transkript neben dem Video oder der Animation bereitstellen.
+1. Stellen Sie ein Text-Transkript bereit, das eine angemessene Textentsprechung der Audio- und Bildelemente des Videos oder der Animation ist. Dies sollte gegebenenfalls einen Hinweis darauf enthalten, wer spricht, eine Beschreibung der Einstellung, Ereignisse oder Informationen, die visuell präsentiert werden, sowie Ausdrücke zur Stimmabgabe. Abhängig von der Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation einfügen, oder auch auf einer separaten Seite. In diesem Fall müssen Sie einen Link zu dem Transkript neben dem Video oder der Animation bereitstellen.
 
-Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rahmen dieses Leitfadens sprengen. Die Erstellung von Audiobeschreibungen können zeitaufwändig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben. Wenn Sie Inhalte in Adobe Flash Professional erstellen, sollten Sie auch ein Skript erstellen, um den Benutzer aufzufordern, das entsprechende Plug-in herunterzuladen. Zudem sollten Sie eine Textalternative anhand des Elements `<noscript>` bereitstellen.
+Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rahmen dieses Leitfadens sprengen. Die Erstellung von Audiobeschreibungen können zeitaufwändig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben.
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
@@ -244,13 +240,13 @@ Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rah
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 * [Adobe Encore](https://www.adobe.com/products/encore.html)
 
-### Untertitel (live) (1.2.4)      {#captions-live}
+### Untertitel (live) (1.2.4)          {#captions-live}
 
 * Erfolgskriterium 1.2.4
 * Level AA
 * Untertitel (Live): Untertitel werden für alle Live-Audioinhalte in synchronisierten Medien bereitgestellt.
 
-#### Zweck: Untertitel (Live) (1.2.4)   {#purpose-captions-live}
+#### Zweck: Untertitel (Live) (1.2.4)     {#purpose-captions-live}
 
 Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezeichnet)](#captions-pre-recorded) insofern, als es Zugangsbarrieren behandelt, die gehörlose oder schwerhörige Menschen erfahren; der Unterschied besteht darin, dass dieses Erfolgskriterium Live-Präsentationen wie Webcasts behandelt.
 
@@ -262,16 +258,14 @@ Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch
 
 * [WebAIM: Echtzeit-Untertitelung](https://www.webaim.org/techniques/captions/realtime.php)
 
-<!--
-* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/accessit/articles?1209)
--->
+* [AccessComputing-Projekt (University of Washington): Können Beschriftungen automatisch mit Spracherkennung erstellt werden?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
-#### Weitere Informationen: Untertitel (Live) (1.2.4)   {#more-information-captions-live}
+#### Weitere Informationen: Untertitel (Live) (1.2.4)     {#more-information-captions-live}
 
 * [Erfolgskriterien 1.2.4 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [Erfolgskriterien 1.2.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Audiobeschreibung (vorab aufgezeichnet) (1.2.5) {#audio-description-prerecorded}
+### Audiobeschreibung (vorab aufgezeichnet) (1.2.5)  {#audio-description-prerecorded}
 
 * Erfolgskriterium 1.2.5
 * Level AA
@@ -290,56 +284,44 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 * [Erfolgskriterien 1.2.5 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Erfolgskriterien 1.2.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Anpassbar (1.3)   {#adaptable}
+### Anpassbar (1.3)     {#adaptable}
 
 [Richtlinie 1.3 Anpassbar: Erstellen von Inhalten, die auf verschiedene Arten präsentiert werden können (zum Beispiel mit einfacherem Layout) ohne Informationen oder die Struktur zu verlieren.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Diese Richtlinie behandelt die Anforderungen zur Unterstützung folgender Personen:
 
-* Personen, die nicht auf Informationen zugreifen können, die von einem Autor in einem standardmäßigen zweidimensionalen, mehrspaltigen, farbigen Web-Seiten-Layout präsentiert werden;
+* kann möglicherweise nicht auf Informationen zugreifen, die von einem Autor in der Standarddarstellung dieses Inhalts dargestellt werden (z. B. ein mehrspaltiges Layout oder eine Seite mit starker Verwendung von Farbe und/oder Bildern).
 
-* Personen, die eine Nur-Audio-Darstellung oder alternative visuelle Darstellung wie Großdruck oder hohen Kontrast verwenden wollen.
+* kann nur Audio oder eine alternative visuelle Anzeige wie z. B. großen Text oder hohen Kontrast verwenden.
 
-### Informationen und Beziehungen (1.3.1)      {#info-and-relationships}
+### Informationen und Beziehungen (1.3.1)          {#info-and-relationships}
 
 * Erfolgskriterium 1.3.1
 * Level A
 * Informationen und Beziehungen: Informationen, Struktur und Beziehungen, die durch die Präsentation vermittelt werden, können programmatisch festgelegt werden oder sind im Text verfügbar.
 
-#### Zweck: Informationen und Beziehungen (1.3.1)   {#purpose-info-and-relationships}
+#### Zweck: Informationen und Beziehungen (1.3.1)     {#purpose-info-and-relationships}
 
-Viele Hilfstechnologien, die von Menschen mit Behinderungen verwendet werden, verlassen sich auf Strukturinformationen zur effektiven Anzeige oder Ausgabe von Inhalten. Diese Strukturinformationen können in Form von Seitenüberschriften, Tabellenzeilen und Spaltenüberschriften sowie Listentypen vorliegen. Beispielsweise könnte ein Benutzer mit einem Bildschirmleser von Überschrift zu Überschrift durch eine Seite navigieren. Wenn Seiteninhalte jedoch nur über visuelles Styling statt das zugrundeliegende HTML strukturiert wurden, stehen den Hilfstechnologien keine Strukturinformationen zur Verfügung und deren Fähigkeit zur Unterstützung eines leichteren Browsings ist erheblich eingeschränkt.
+Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or *understand* content. Diese Strukturinformationen können in Form von Seitenüberschriften, Tabellenzeilen und Spaltenüberschriften sowie Listentypen vorliegen. Beispielsweise könnte ein Benutzer mit einem Bildschirmleser von Überschrift zu Überschrift durch eine Seite navigieren. Wenn Seiteninhalte jedoch nur über visuelles Styling statt das zugrundeliegende HTML strukturiert wurden, stehen den Hilfstechnologien keine Strukturinformationen zur Verfügung und deren Fähigkeit zur Unterstützung eines leichteren Browsings ist erheblich eingeschränkt.
 
-Dieses Erfolgskriterium besteht, um sicherzustellen, dass derartige Strukturinformationen über HTML bereitgestellt werden, damit die Browser und Hilfstechnologien auf die Informationen zugreifen und davon profitieren können.
+Dieses Erfolgskriterium besteht darin sicherzustellen, dass solche Strukturinformationen programmgesteuert über HTML oder andere Kodierungstechniken bereitgestellt werden, damit Browser und Hilfstechnologien auf die Informationen zugreifen und diese nutzen können.
 
-#### Erfüllen: Informationen und Beziehungen (1.3.1)   {#how-to-meet-info-and-relationships}
+#### Erfüllen: Informationen und Beziehungen (1.3.1)     {#how-to-meet-info-and-relationships}
 
-AEM erleichtert den Aufbau von Web-Seiten mit den entsprechenden HTML-Elementen. Öffnen Sie Ihren Seiteninhalt im RTE (einer Textkomponente) und geben Sie im Menü **Paraformat** (Absatzsymbol) das entsprechende Strukturelement (zum Beispiel Absatz, Überschrift usw.) an.
+Mit AEM ist es ganz einfach, semantisch aussagekräftige Webinhalte mit den entsprechenden HTML-Elementen zu erstellen. Öffnen Sie Ihren Seiteninhalt im RTE (einer Textkomponente) und geben Sie im Menü **Paraformat** (Absatzsymbol) das entsprechende Strukturelement (zum Beispiel Absatz, Überschrift usw.) an.
 
-Sie können folgendermaßen sicherstellen, dass Ihre Webseiten die entsprechende Struktur erhalten:
+Sie können sicherstellen, dass Ihre Webseiten die richtige Struktur erhalten, indem Sie gegebenenfalls die folgenden Elemente verwenden:
 
-* **Verwenden von Überschriften:** Solange die Barrierefreiheitsfunktionen der RTE aktiviert sind, bietet AEM drei Stufen der Seitenüberschrift. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
-* **Hervorgehobener Text**: Verwenden Sie das Element `<strong>` oder `<em>`, um die Hervorhebung vorzunehmen. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
-   * Markieren Sie den Text, den Sie hervorheben möchten.
-   * Klicken Sie auf das Symbol **B** (für `<strong>`) oder das Symbol **I** (für `<em>`), die im Bereich **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
+* **Überschriften:** Solange die Barrierefreiheitsfunktionen der RTE aktiviert sind, werden in AEM Angebots 3 die Seitenüberschriften angezeigt. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
 
-      >[!NOTE]
-      >
-      >RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
-      >
-      >* `<b>` für `<strong>`
-      >* `<i>` für `<em>`
-      >
-      >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
-
-
-* **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
+* **Listen**: Sie können HTML verwenden, um drei verschiedene Arten von Listen anzugeben:
    * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie in RTE das Symbol **Aufzählungsliste**.
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
    Wenn Sie Inhalt in einen Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den jeweiligen Listentyp aus. Wie im obigen Beispiel, in dem gezeigt wird, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zum HTML-Code hinzugefügt.
 
    Im Vollbildmodus sind die einzelnen Symbole **Aufzählungsliste** und **Nummerierte Liste** sichtbar. Wenn Sie sich nicht im Vollbildmodus befinden, sind die beiden Optionen hinter dem einzelnen Symbol **Listen** verfügbar.
-* **Tabellen verwenden**: Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
+
+* **Tabellen**: Datentabellen müssen anhand von HTML-Tabellenelementen identifiziert werden:
    * Ein Element `<table>`
    * Ein Element `<tr>` für jede Tabellenzeile
    * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
@@ -353,16 +335,29 @@ Sie können folgendermaßen sicherstellen, dass Ihre Webseiten die entsprechende
    >
    >Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe „Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute“).
 
-<!-- removed link syntax for ExL - Bob Bringhurst
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
--->
+   <!-- removed link syntax for ExL - Bob Bringhurst
+  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
+  -->
 
-So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
+   So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
 
-* Definieren Sie eine entsprechende **Beschriftung**.
-* Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
+   * Definieren Sie eine entsprechende **Beschriftung**.
+   * Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
+   Sie können dann die **Zellen-Eigenschaften** verwenden, um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt:  
 
-Sie können dann die **Zellen-Eigenschaften** verwenden, um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt:  
+* **Betonung**: Verwenden Sie das `<strong>` Element oder `<em>` das Element, um die Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
+   * Markieren Sie den Text, den Sie hervorheben möchten.
+   * Klicken Sie auf das Symbol **B** (für `<strong>`) oder das Symbol **I** (für `<em>`), die im Bereich **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
+
+      >[!NOTE]
+      >
+      >RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
+      >
+      >* `<b>` für `<strong>`
+      >* `<i>` für `<em>`
+      >
+      >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
+
 
 * **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet. Beispielsweise werden in der Tabelle unten Kopfzeilen und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
@@ -408,7 +403,7 @@ Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direk
 * [Erfolgskriterien 1.3.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [Erfolgskriterien 1.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### Sinnvolle Sequenz (1.3.2) {#meaningful-sequence}
+### Sinnvolle Sequenz (1.3.2)  {#meaningful-sequence}
 
 * Erfolgskriterium 1.3.2
 * Level A
@@ -427,15 +422,15 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 1.3.2](https://
 * [Erfolgskriterien 1.3.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [Erfolgskriterien 1.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### Sensorische Eigenschaften (1.3.3)      {#sensory-characteristics}
+### Sensorische Eigenschaften (1.3.3)          {#sensory-characteristics}
 
 * Erfolgskriterium 1.3.3
 * Level A
 * Sensorische Eigenschaften: Anweisungen, die zum Verstehen und Bedienen von Inhalt verfügbar sind, beziehen sich nicht nur auf sensorische Eigenschaften der Komponenten wie Form, Größe, visuelle Position, Ausrichtung oder Klang.
 
-#### Zweck: Sensorische Eigenschaften (1.3.3)   {#purpose-sensory-characteristics}
+#### Zweck: Sensorische Eigenschaften (1.3.3)     {#purpose-sensory-characteristics}
 
-Entwickler konzentrieren sich bei der Präsentation von Informationen oft auf visuelle Design-Funktionen wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Diese können zwar sehr wirkungsvolle Entwicklungsmethoden zur Vermittlung von Informationen sein, doch blinde Menschen oder Menschen mit eingeschränktem Sehvermögen können nicht auf Informationen zugreifen, für die die visuelle Erkennung von Attributen wie Position, Farbe oder Form erforderlich ist.
+Entwickler konzentrieren sich bei der Präsentation von Informationen oft auf visuelle Design-Funktionen wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Designtechniken zur Informationsübermittlung handeln (und die allgemeine Zugänglichkeit für sehbehinderte Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Menschen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden) unterschieden werden muss, für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
@@ -443,7 +438,7 @@ Entsprechend sind Informationen, für die zwischen verschiedenen Klängen (z. B.
 >
 >Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
 
-#### Erfüllen: Sensorische Eigenschaften (1.3.3)   {#how-to-meet-sensory-characteristics}
+#### Erfüllen: Sensorische Eigenschaften (1.3.3)     {#how-to-meet-sensory-characteristics}
 
 Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von Seiteninhalten beziehen, auch in alternativen Formaten präsentiert werden.
 
@@ -459,11 +454,11 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 * [Erfolgskriterien 1.3.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Erfolgskriterien 1.3.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Unterscheidbar (1.4)   {#distinguishable}
+### Unterscheidbar (1.4)     {#distinguishable}
 
 [Richtlinie 1.4 Unterscheidbar: Erleichtern Sie den Benutzern das Sehen und Hören von Inhalt einschließlich der Unterscheidung von Vorder- und Hintergrund.](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### Verwendung von Farbe (1.4.1)      {#use-of-color}
+### Verwendung von Farbe (1.4.1)          {#use-of-color}
 
 * Erfolgskriterium 1.4.1
 * Level A
@@ -473,7 +468,7 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 >
 >Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden unter [Anpassbar (1.3)](#adaptable) behandelt. Hierzu gehören der programmtechnische Zugriff auf Farbe und andere visuelle Darstellungskodierungen.
 
-#### Zweck - Verwendung von Farbe (1.4.1)   {#purpose-use-of-color}
+#### Zweck - Verwendung von Farbe (1.4.1)     {#purpose-use-of-color}
 
 Farbe bietet sichtbar eine effektive Möglichkeit, die Ästhetik von Webseiten zu verbessern, und kann auch die Vermittlung von Informationen unterstützen. Es gibt jedoch eine Vielzahl visueller Beeinträchtigungen, von Farbenblindheit bis zur Beeinträchtigung der Farbwahrnehmung, die dazu führt, dass manche Menschen zwischen bestimmten Farben nicht unterscheiden können. Aus diesem Grund ist die farbliche Kodierung ein unzuverlässiges Mittel für die Bereitstellung von Informationen.
 
@@ -481,13 +476,15 @@ Jemand mit einer Rot-Grün-Sehschwäche kann z. B. nicht zwischen Grünschattier
 
 Außerdem können Menschen, die einen reinen Textbrowser, monochrome Anzeigen oder einen Schwarzweiß-Ausdruck auf Papier nutzen, keine Farben wahrnehmen.
 
-#### Erfüllen - Verwendung von Farbe (1.4.1)   {#how-to-meet-use-of-color}
+Ein weiterer Aspekt ist der *ausgewählte* Status eines Schnittstellenelements (z. B. Registerkarten, Schaltflächen zum Umschalten), das auf eine andere Weise übertragen werden muss als nur mit Farbe und über eine visuelle Darstellung hinaus. Bei solchen Elementen ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig inklusives Benutzererlebnis erstellt wird, das sich nicht auf einen bestimmten Sinn stützt.
+
+#### Erfüllen - Verwendung von Farbe (1.4.1)     {#how-to-meet-use-of-color}
 
 Immer wenn Farbe verwendet wird, um Informationen zu vermitteln, müssen Sie sicherstellen, dass die verfügbaren Informationen auch verfügbar sind, wenn die Farbe nicht sichtbar ist.
 
 Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch explizit im Text enthalten ist.
 
-Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen zusätzlichen visuellen Hinweis sorgen, z. B. durch Ändern des Stils (z. B. fett, kursiv) oder der Schriftart. So können auch Personen mit Seh- oder Farbschwäche die Informationen erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten.
+Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen zusätzlichen visuellen Hinweis sorgen, z. B. durch Ändern des Stils (z. B. fett, kursiv) oder der Schriftart. So können auch Personen mit Seh- oder Farbschwäche die Informationen erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten. Daher ist es (manchmal) nützlich, versteckten Text bereitzustellen oder programmatische Lösungen wie die [Accessible Rich Internet Applications (ARIA) Suite von Webstandards](https://www.w3.org/WAI/standards-guidelines/aria/)zu verwenden, um diese Informationen an nicht sichtbare Benutzer zu übermitteln.
 
 #### Weitere Informationen – Verwendung von Farbe (1.4.1) {#more-information-use-of-color}
 
@@ -497,7 +494,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 <!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 -->
 
-### Audiosteuerung (1.4.2) {#audio-control}
+### Audiosteuerung (1.4.2)  {#audio-control}
 
 * Erfolgskriterium 1.4.2
 * Level A
@@ -505,7 +502,13 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 
 #### Zweck - Audiosteuerung (1.4.2) {#purpose-audio-control}
 
-Personen, die Bildschirmlesehilfen verwenden, können es schwer finden, die Sprachausgabe zu hören, wenn gleichzeitig andere Audiodateien abgespielt werden. Diese Schwierigkeit wird noch verschärft, wenn die Sprachausgabe des Bildschirmlesehilfen auf Software basiert (wie die meisten heute) und über die gleiche Lautstärkeregelung wie der Sound gesteuert wird. Daher ist es wichtig, dass der Benutzer den Hintergrundton ausschalten kann. Hinweis: Die Steuerung des Volumens beinhaltet die Möglichkeit, sein Volumen auf Null zu reduzieren.
+Personen, die Bildschirmlesehilfen verwenden, können es schwer finden, die Sprachausgabe zu hören, wenn gleichzeitig andere Audiodateien abgespielt werden. Diese Schwierigkeit wird noch verschärft, wenn die Sprachausgabe des Bildschirmlesehilfen auf Software basiert (wie die meisten heute) und über die gleiche Lautstärkeregelung wie der Sound gesteuert wird. Darüber hinaus können einige Menschen mit kognitiven Behinderungen und Menschen, die neurodivergierend sind, eine Schallempfindlichkeit haben. Diese Personen werden feststellen, dass die Lautstärke von Audioinhalten nicht mehr verändert werden kann, was sehr störend ist.
+
+Daher ist es wichtig, dass der Benutzer den Hintergrundton ausschalten kann.
+
+>[!NOTE]
+>
+>Die Steuerung des Volumens beinhaltet die Möglichkeit, sein Volumen auf Null zu reduzieren.
 
 #### Erfüllung - Audio-Steuerung (1.4.2) {#how-to-meet-audio-control}
 
@@ -516,16 +519,19 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 1.4.2](https://
 * [Erfolgskriterien 1.4.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
 * [Erfolgskriterien 1.4.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
 
-### Kontrast (Minimum) (1.4.3)   {#contrast-minimum}
+### Kontrast (Minimum) (1.4.3)     {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
 * Level AA
 * Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit folgenden Ausnahmen:
    * Großer Text: Großer Text und Bilder von großem Text haben ein Kontrastverhältnis von mindestens 3:1.
-   * Nebensächlich: Für Text oder Bilder eines Texts, die Teil einer inaktiven Komponente der Benutzerschnittstelle, reine Dekoration, für niemanden sichtbar oder Teil eines Bildes sind, welches signifikante andere visuelle Inhalte enthält, gibt es keine Kontrastanforderung
+   * Incidental: Text or images of text that are part of an inactive user interface component, that are [pure decoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
+   >[!NOTE]
+   >
+   >Weitere Informationen finden Sie unter [Grundlagen zum Nicht-Text-Kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) , um sicherzustellen, dass Leser die zusätzlichen Anforderungen an Nicht-Text-Elemente verstehen (einschließlich Symbole, Oberflächenelemente usw.).
 
-#### Zweck - Kontrast (Minimum) (1.4.3)   {#purpose-contrast-minimum}
+#### Zweck - Kontrast (Minimum) (1.4.3)     {#purpose-contrast-minimum}
 
 Manche Menschen mit einem beeinträchtigten Sehvermögen können nicht zwischen bestimmten Farbpaaren mit geringem Kontrast unterscheiden. Die Barrierefreiheit ist für diese Menschen in folgenden Situationen eingeschränkt:
 
@@ -536,7 +542,7 @@ Manche Menschen mit einem beeinträchtigten Sehvermögen können nicht zwischen 
 >
 >Text, der ausschließlich zu dekorativen Zwecken verwendet wird, ist von diesem Erfolgskriterium nicht betroffen.
 
-#### Erfüllen - Kontrast (Minimum) (1.4.3)   {#how-to-meet-contrast-minimum}
+#### Erfüllen - Kontrast (Minimum) (1.4.3)     {#how-to-meet-contrast-minimum}
 
 Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend Kontrast besteht. Das Kontrastverhältnis hängt von der Größe und dem Schriftschnitt des betroffenen Textes ab:
 
@@ -544,18 +550,33 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 * Für Text mit einer Größe von mindestens 18 Punkt (oder 14 Punkt bei Fettschrift) sollte das Kontrastverhältnis mindestens 3:1 betragen.
 * Falls der Hintergrund gemustert ist, sollte der Hintergrund um alle Texte abgestuft sein, damit das Verhältnis von 4,5:1 oder 3:1 beibehalten wird.
 
+>[!NOTE]
+>
+>Bitte beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entsprechenden PT/PX/EM-Größe unterscheiden können.
+>
+>Es wird empfohlen, bei der Auswahl der passenden Schriften und der Größenanpassung für Webinhalte gutes Urteilsvermögen und Fehler auf der Seite der Lesbarkeit und Benutzerfreundlichkeit zu verwenden.
+
+>[!NOTE]
+>
+>Hilfe bei Konvertierungen in andere Einheiten:
+>
+>* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Schriftartgrößenkonvertierung: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX-to-EM-Konvertierung einfach](http://pxtoem.com)
+
+
 Verwenden Sie ein Farbkontrasttool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
 Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Dann brauchen Sie den Kontrast nicht zu prüfen, weil der Browser des Benutzers die Farbe für den Text und den Hintergrund ermittelt.
 
 Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müssen Sie einen Link zu einer alternativen, identischen Version der Seite bereitstellen (auf der keine Farbkontrastprobleme vorliegen) oder dem Benutzer die Anpassung des Kontrasts des Farbschemas der Seite an seine eigenen Anforderungen ermöglichen.
 
-#### Weitere Informationen - Kontrast (Minimum) (1.4.3)   {#more-information-contrast-minimum}
+#### Weitere Informationen - Kontrast (Minimum) (1.4.3)     {#more-information-contrast-minimum}
 
 * [Erfolgskriterien 1.4.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Erfolgskriterien 1.4.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### Textgröße ändern (1.4.4) {#resize-text}
+### Textgröße ändern (1.4.4)  {#resize-text}
 
 * Erfolgskriterium 1.4.4
 * Level A
@@ -567,14 +588,14 @@ Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass visuell gerenderter T
 
 #### Wie Sie mit Text übereinstimmen - Größe ändern (1.4.4) {#how-to-meet-resize-text}
 
-Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
+Neben den Richtlinien unter [Erfolgskriterien 1.4.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) können Sie Autoren von Inhalten empfehlen, fließende, flexible Breiten und Höhen in ihren Seitenentwürfen und Schriftgrößen (z. B. Responsive Web Design) zu verwenden, um Lesern die Möglichkeit zu geben, die Größe von Text zu ändern.
 
 #### Weitere Informationen - Ändern der Textgröße (1.4.4) {#more-information-resize-text}
 
 * [Erfolgskriterien 1.4.4 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
 
-### Bilder von Text (1.4.5)   {#images-of-text}
+### Bilder von Text (1.4.5)     {#images-of-text}
 
 * Erfolgskriterium 1.4.5
 * Level AA
@@ -586,22 +607,22 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 1.4.4](https://
 >
 >Firmenschriftzüge (Texte, die Teil eines Logos oder eines Markennamens sind) werden als erforderlich angesehen.
 
-#### Zweck - Bilder von Text (1.4.5)   {#purpose-images-of-text}
+#### Zweck - Bilder von Text (1.4.5)     {#purpose-images-of-text}
 
 Bilder von Text werden häufig verwendet, wenn ein bestimmter Textstil bevorzugt wird. Z. B. bei einem Firmenschriftzug oder wenn der Text aus einer anderen Quelle generiert wurde (z. B. ein eingescanntes Papierdokument). Im Vergleich mit in HTML dargestelltem Text, dessen Stil mittels CSS festgelegt wird, fehlt Bildern von Text jedoch die Flexibilität, die Größe oder das Erscheinungsbild zu ändern, was für Menschen mit Beeinträchtigungen der Sehfähigkeit oder mit Leseschwäche erforderlich sein kann.
 
-#### Erfüllen - Bilder von Text (1.4.5)   {#how-to-meet-images-of-text}
+#### Erfüllen - Bilder von Text (1.4.5)     {#how-to-meet-images-of-text}
 
 Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von Text in HTML durch einen identischen Text zu ersetzen, damit der Text in einer anpassbaren Version verfügbar ist. Ein Beispiel hierfür finden Sie unter [C30: Verwenden von CSS, um Text durch Bilder von Text zu ersetzen und ein Steuerelement zum Umschalten auf der Benutzeroberfläche bereitzustellen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
-#### Weitere Informationen - Bilder von Text (1.4.5)   {#more-information-images-of-text}
+#### Weitere Informationen - Bilder von Text (1.4.5)     {#more-information-images-of-text}
 
 * [Erfolgskriterien 1.4.5 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [Erfolgskriterien 1.4.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## Grundsatz 2: Bedienbar   {#principle-operable}
+## Grundsatz 2: Bedienbar     {#principle-operable}
 
-[Grundsatz 2: Bedienbar - Komponenten der Benutzerschnittstelle und der Navigation müssen bedienbar sein.](https://www.w3.org/TR/WCAG/#operable)
+[Grundsatz 2: Bedienbar – Komponenten der Benutzerschnittstelle und der Navigation müssen bedienbar sein.](https://www.w3.org/TR/WCAG/#operable)
 
 ### Barrierefreie Tastatur (2.1) {#keyboard-accessible}
 
@@ -609,7 +630,7 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 
 Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktionen zugreifen können.
 
-### Tastatur (2.1.1) {#keyboard}
+### Tastatur (2.1.1)  {#keyboard}
 
 * Erfolgskriterium 2.1.1
 * Level A
@@ -628,7 +649,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.1.1](https://
 * [Erfolgskriterien 2.1.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [Erfolgskriterien 2.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
-### Keine Tastaturbelegung (2.1.2) {#no-keyboard-trap}
+### Keine Tastaturbelegung (2.1.2)  {#no-keyboard-trap}
 
 * Erfolgskriterium 2.1.2
 * Level A
@@ -638,7 +659,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.1.1](https://
 
 Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass der Tastaturfokus in Unterabschnitten des Inhalts einer Webseite nicht *aufgefangen* wird. Dies ist ein häufig auftretendes Problem, wenn mehrere Formate innerhalb einer Seite kombiniert und mithilfe von Plug-Ins oder eingebetteten Anwendungen wiedergegeben werden.
 
-Es kann vorkommen, dass die Funktionalität der Webseite den Fokus auf einen Unterabschnitt des Inhalts beschränkt, solange der Benutzer weiß, wie er diesen Status verlassen und den Fokus *aufheben* kann.
+Es kann vorkommen, dass die Funktionalität der Webseite den Fokus auf einen Unterabschnitt des Inhalts beschränkt (z. B. ein modaler Dialog). In solchen Fällen sollten Sie eine Methode bereitstellen, mit der ein Benutzer aus diesem Inhaltsunterabschnitt aussteigen kann (z. B. schließt die Esc-Taste den modalen Dialog oder eine Schließen-Schaltfläche den modalen Dialog).
 
 #### Wie man mit - Keine Tastaturfalle (2.1.2) {#how-to-meet-no-keyboard-trap}
 
@@ -655,7 +676,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.1.2](https://
 
 Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Handeln haben.
 
-### Zeitverstellbar (2.2.1) {#timing-adjustable}
+### Zeitverstellbar (2.2.1)  {#timing-adjustable}
 
 * Erfolgskriterium 2.2.1
 * Level A
@@ -674,7 +695,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.2.1](https://
 * [Erfolgskriterien 2.2.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Erfolgskriterien 2.2.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Pausieren, Beenden, Ausblenden (2.2.2)      {#pause-stop-hide}
+### Pausieren, Beenden, Ausblenden (2.2.2)          {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
 * Level A
@@ -689,21 +710,21 @@ Folgendes sollte beachtet werden:
 1. Inhalt, der regelmäßig durch Software aktualisiert wird oder der auf den Benutzer-Agenten gestreamt wird, darf keine Informationen bewahren oder darstellen, die zwischen dem Initiieren des Anhaltens und dem Fortsetzen der Darstellung generiert oder empfangen wurden, da dies technisch möglicherweise nicht machbar ist und in vielen Situationen irreführend sein kann.
 1. Eine Animation, die Teil einer Ladephase oder eines ähnlichen Szenarios ist, kann als erforderlich erachtet werden, wenn während dieser Phase keine Benutzerinteraktion möglich ist und wenn das Fehlen einer Fortschrittsanzeige Benutzer verwirren oder zu der Annahme verleiten kann, der Inhalt sei eingefroren oder beschädigt.
 
-#### Zweck - Pausieren, Beenden, Ausblenden (2.2.2)   {#purpose-pause-stop-hide}
+#### Zweck - Pausieren, Beenden, Ausblenden (2.2.2)     {#purpose-pause-stop-hide}
 
-Manche Benutzer empfinden Inhalte, die sich bewegen, als störend und haben Schwierigkeiten sich auf andere Bereiche der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, sich bewegendem Text zu folgen.
+Bestimmte Benutzer finden möglicherweise Inhalte, die verschoben werden, ablenkend oder sogar physisch schmerzhaft, was es schwierig macht, sich auf andere Teile der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, sich bewegendem Text zu folgen.
 
-#### Erfüllen - Pausieren, Beenden, Ausblenden (2.2.2)   {#how-to-meet-pause-stop-hide}
+#### Erfüllen - Pausieren, Beenden, Ausblenden (2.2.2)     {#how-to-meet-pause-stop-hide}
 
 Abhängig von der Art des Inhalts können Sie beim Erstellen von Webseiten mit sich bewegendem, blitzendem oder blinkendem Inhalt die folgenden Empfehlungen beachten:
 
-* Bieten Sie die Möglichkeit, das Scrollen des Inhalts anzuhalten, um Benutzern Zeit zum Lesen zu geben; z. B. Nachrichten-Ticker oder automatisch aktualisierten Text.
+* Bieten Sie die Möglichkeit, das Scrollen des Inhalts anzuhalten, um Benutzern Zeit zum Lesen zu geben. Beispielsweise News-Ticker, automatisch aktualisierter Text und Bildkarusselle, die automatisch weitergeleitet werden.
 * Stellen Sie sicher, dass blinkende Inhalte maximal fünf Sekunden lang blinken.
-* Nutzen Sie Technologien, mit denen die Anzeige von blinkenden Inhalten im Browser deaktiviert werden kann, z. B. Dateien im GIF- (Graphics Interchange Format) oder APNG-Format (Animated Portable Network Graphics).
-* Bieten Sie auf der Webseite ein Formularsteuerelement an, über das Benutzer sämtliche blinkenden Inhalte auf der Seite deaktivieren können.
-* Falls eine der obigen Maßnahmen nicht möglich ist, bieten Sie einen Link zu einer Seite, die alle Inhalte ohne Blinken zeigt.
+* Verwenden Sie geeignete Technologien, um bewegte oder blinkende Inhalte anzuzeigen, die vom Browser deaktiviert werden können. Z. B. Dateien im GIF- (Graphics Interchange Format) oder APNG-Format (Animated Portable Network Graphics).
+* Stellen Sie ein Formularsteuerelement auf der Webseite bereit, damit der Benutzer alle bewegten oder blinkenden Inhalte auf der Seite deaktivieren kann.
+* Wenn eine der oben genannten Optionen nicht möglich ist, stellen Sie einen Link zu einer Seite bereit, die den gesamten Inhalt enthält, jedoch ohne dass verschoben oder blinkt werden muss.
 
-#### Weitere Informationen - Pausieren, Beenden, Ausblenden (2.2.2)   {#more-information-pause-stop-hide}
+#### Weitere Informationen - Pausieren, Beenden, Ausblenden (2.2.2)     {#more-information-pause-stop-hide}
 
 * [Erfolgskriterium 2.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [Erfolgskriterium 2.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
@@ -712,7 +733,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Webseiten mit s
 
 [Leitlinie 2.3 Krampfanfälle: Entwerfen Sie den Inhalt nicht so, dass es bekanntermaßen zu Krämpfen oder körperlichen Reaktionen kommt.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
-### Grenzwert von maximal dreimaligem Blitzen (2.3.1)   {#three-flashes-or-below-threshold}
+### Grenzwert von maximal dreimaligem Blitzen (2.3.1)     {#three-flashes-or-below-threshold}
 
 * Erfolgskriterium 2.3.1
 * Level A
@@ -726,7 +747,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Webseiten mit s
 
 In bestimmten Fällen können blitzende Inhalte photosensitive Anfälle auslösen. Dieses Erfolgskriterium ermöglicht Benutzern den Zugriff und die Nutzung des gesamten Inhalts ohne Beeinträchtigung durch blitzende Inhalte.
 
-#### Erfüllen - Grenzwert von maximal dreimaligem Blitzen (2.3.1)   {#how-to-meet-three-flashes-or-below-threshold}
+#### Erfüllen - Grenzwert von maximal dreimaligem Blitzen (2.3.1)     {#how-to-meet-three-flashes-or-below-threshold}
 
 Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
 
@@ -744,7 +765,7 @@ Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
 
 Dadurch wird sichergestellt, dass der Inhalt einfach und einfach zu navigieren ist.
 
-### Blöcke umgehen (2.4.1) {#bypass-blocks}
+### Blöcke umgehen (2.4.1)  {#bypass-blocks}
 
 * Erfolgskriterium 2.4.1
 * Level A
@@ -752,7 +773,7 @@ Dadurch wird sichergestellt, dass der Inhalt einfach und einfach zu navigieren i
 
 #### Zweck - Umgehungsblöcke (2.4.1) {#purpose-bypass-blocks}
 
-Ziel dieses Erfolgskriteriums ist es, Personen, die sequenziell durch Inhalte navigieren, einen direkteren Zugriff auf den primären Inhalt der Webseite zu ermöglichen. Webseiten und Anwendungen enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigationslinks, Überschriftengrafiken und Werberahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Wortgruppen oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke angesehen.
+Ziel dieses Erfolgskriteriums ist es, Personen, die sequenziell durch Inhalte navigieren, einen direkteren Zugriff auf den primären Inhalt der Webseite zu ermöglichen. Webseiten und Anwendungen enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigationslinks, Kopfzeilengrafiken, Menüs und Anzeigenrahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Wortgruppen oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke angesehen.
 
 #### Wie man mit Blöcken umgeht (2.4.1) {#how-to-meet-bypass-blocks}
 
@@ -763,19 +784,19 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.4.1](https://
 * [Erfolgskriterien 2.4.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [Erfolgskriterien 2.4.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### Seite mit Titel versehen (2.4.2)      {#page-titled}
+### Seite mit Titel versehen (2.4.2)          {#page-titled}
 
 * Erfolgskriterium 2.4.2
 * Level A
 * Seite mit Titel versehen: Webseiten haben einen Titel, der das Thema oder den Zweck beschreibt
 
-#### Zweck - Seite mit Titel versehen (2.4.2)   {#purpose-page-titled}
+#### Zweck - Seite mit Titel versehen (2.4.2)     {#purpose-page-titled}
 
 Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwaigen Beeinträchtigungen - um schnell den Inhalt einer Webseite zu ermitteln, ohne die Seite vollständig zu lesen. Dies ist insbesondere dann nützlich, wenn mehrere Webseiten in Browsertabs geöffnet sind, da der Seitentitel auf den Tabs angezeigt wird, was die Seiten schnell auffindbar macht.
 
-#### Erfüllen - Seite mit Titel versehen (2.4.2)   {#how-to-meet-page-titled}
+#### Erfüllen - Seite mit Titel versehen (2.4.2)     {#how-to-meet-page-titled}
 
-Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt der Seite so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
+Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und Zweck der Seite, insbesondere individuelle Aspekte, angemessen beschreibt, damit Besucher schnell erkennen können, ob der Inhalt tatsächlich für ihre Bedürfnisse relevant ist.
 
 Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. Öffnen Sie dazu **Seiteninformationen** > **Eigenschaften**.
 
@@ -784,7 +805,7 @@ Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. �
 * [Erfolgskriterium 2.4.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [Erfolgskriterium 2.4.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### Fokusreihenfolge (2.4.3) {#focus-order}
+### Fokusreihenfolge (2.4.3)  {#focus-order}
 
 * Erfolgskriterium 2.4.3
 * Level A
@@ -792,7 +813,7 @@ Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. �
 
 #### Zweck - Fokusreihenfolge (2.4.3) {#purpose-focus-order}
 
-Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Benutzer, die nacheinander durch Inhalte navigieren, auf Informationen in einer Reihenfolge stoßen, die der Bedeutung des Inhalts entspricht und von der Tastatur aus bedient werden kann. Dadurch wird Verwirrung verringert, da Benutzer ein konsistentes mentales Modell des Inhalts bilden können. Es kann verschiedene Bestellungen geben, die logische Beziehungen im Inhalt widerspiegeln. Wenn Sie beispielsweise Komponenten in einer Tabelle nacheinander in einer Zeile oder in einer Spalte durchlaufen, spiegeln beide die logischen Beziehungen im Inhalt wider. Jede Bestellung kann dieses Erfolgskriterium erfüllen.
+Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Benutzer, die nacheinander durch Inhalte navigieren, auf Informationen in einer Reihenfolge stoßen, die der Bedeutung des Inhalts entspricht und von der Tastatur aus bedient werden kann. Dadurch wird Verwirrung verringert, da Benutzer ein konsistentes mentales Modell des Inhalts bilden können. Es kann verschiedene Bestellungen geben, die logische Beziehungen im Inhalt widerspiegeln. Beispielsweise spiegelt der Wechsel durch Komponenten in einem Online-Formular, das aus mehreren Feldern und/oder Schritten besteht, die logischen Beziehungen im Inhalt wider.
 
 #### Treffen mit der Fokusreihenfolge (2.4.3) {#how-to-meet-focus-order}
 
@@ -803,17 +824,17 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.4.3](https://
 * [Erfolgskriterien 2.4.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [Erfolgskriterien 2.4.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### Link-Zweck (im Kontext) (2.4.4)      {#link-purpose-in-context}
+### Link-Zweck (im Kontext) (2.4.4)          {#link-purpose-in-context}
 
 * Erfolgskriterium 2.4.4
 * Level A
 * Linkzweck (im Kontext): Der Zweck jedes Links kann allein durch den Linktext oder durch den Linktext zusammen mit dem programmatisch festgelegten Linkkontext bestimmt werden. Ausgenommen sind Fälle, in denen der Zweck des Links für Benutzer generell mehrdeutig ist.
 
-#### Zweck - Link-Zweck (im Kontext) (2.4.4)   {#purpose-link-purpose-in-context}
+#### Zweck - Link-Zweck (im Kontext) (2.4.4)     {#purpose-link-purpose-in-context}
 
-Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Linktext klar erkenntlich ist wohin ein Link führt. Dies erleichtert Benutzern die Entscheidung, ob sie einem Link folgen möchten oder nicht. Für sehende Benutzer ist ein aussagekräftiger Linktext ausgesprochen nützlich, wenn sich auf einer Seite mehrere Links befinden (vor allem, wenn eine Seite sehr viel Text enthält), da ein aussagekräftiger Linktext einen deutlicheren Hinweis auf die Funktion der Zielseite liefert. Gleichzeitig können Benutzer von Eingabehilfentechnologien, mit denen eine Liste aller Links auf einer Seite erstellt werden kann, den Linktext außerhalb des Kontextes einfacher nachvollziehen.
+Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Linktext klar erkenntlich ist wohin ein Link führt. Dies erleichtert Benutzern die Entscheidung, ob sie einem Link folgen möchten oder nicht. Für sehende Benutzer ist ein aussagekräftiger Linktext ausgesprochen nützlich, wenn sich auf einer Seite mehrere Links befinden (vor allem, wenn eine Seite sehr viel Text enthält), da ein aussagekräftiger Linktext einen deutlicheren Hinweis auf die Funktion der Zielseite liefert. Benutzer einiger Hilfstechnologien, die eine Liste aller Links auf einer Seite generieren können, können den Linktext einfacher aus dem Kontext verstehen, wenn der Linktext sowohl eindeutig als auch informativ ist. Sehbehinderte Personen mit kognitiven Behinderungen können jedoch verwirrt werden, wenn ein Link nicht genügend Informationen bereitstellt, um genau zu beschreiben, wohin der Link führt.
 
-#### Erfüllen - Link-Zweck (im Kontext) (2.4.4)   {#how-to-meet-link-purpose-in-context}
+#### Erfüllen - Link-Zweck (im Kontext) (2.4.4)     {#how-to-meet-link-purpose-in-context}
 
 Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig beschreibt.
 
@@ -826,9 +847,9 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
 
 Links sollten auf den Seiten eine konsistente Bezeichnung erhalten. Dies gilt insbesondere für Navigationsleisten. Wenn ein Link zu einer bestimmten Seite z. B. auf einer Seite **Publikationen** heißt, dann sollte er auch auf allen anderen Seiten denselben Namen erhalten.
 
-Zum Zeitpunkt des Schreibens gibt es jedoch einige Probleme mit der Verwendung von Titeln:
+Zum Zeitpunkt des Schreibens gibt es einige Probleme mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links auf einer Seite eindeutige Informationen über das Ziel liefern (z. B. &quot;mehr lesen&quot;bezieht sich oft auf eine Reihe unterschiedlicher Ziele):
 
-* Im Title-Attribut enthaltener Text ist in der Regel nur für Mausbenutzer als QuickInfo-Popup verfügbar. Über eine Tastatur ist kein Zugriff möglich.
+* Der im Titelattribut enthaltene Text steht im Allgemeinen nur Mausbenutzern als QuickInfo-Popup zur Verfügung und kann nicht konsistent über die Tastatur oder von mobilen Benutzern aufgerufen werden.
 * Die Sprachausgabe kann Title-Attribute auslesen, diese Funktion ist jedoch nicht unbedingt standardmäßig aktiviert. Daher ist es für Benutzer eventuell nicht ersichtlich, dass ein Title-Attribut vorhanden ist.
 * Es ist schwierig das Erscheinungsbild des Titeltextes anzupassen, weshalb es für manche Menschen schwierig oder unmöglich sein kann, diesen zu lesen.
 
@@ -870,7 +891,7 @@ Alternativ können Skripts verwendet werden. Dabei wird im Link selbst ein minim
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### Mehrere Möglichkeiten (2.4.5) {#multiple-ways}
+### Mehrere Möglichkeiten (2.4.5)  {#multiple-ways}
 
 * Erfolgskriterium 2.4.5
 * Level AA
@@ -891,7 +912,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.4.5](https://
 * [Erfolgskriterien 2.4.5 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [Erfolgskriterien 2.4.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### Überschriften und Etiketten (2.4.6) {#headings-and-labels}
+### Überschriften und Etiketten (2.4.6)  {#headings-and-labels}
 
 * Erfolgskriterium 2.4.6
 * Level AA
@@ -910,7 +931,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.4.6](https://
 * [Erfolgskriterien 2.4.6 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [Erfolgskriterien 2.4.6 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### Fokus sichtbar (2.4.7) {#focus-visible}
+### Fokus sichtbar (2.4.7)  {#focus-visible}
 
 * Erfolgskriterium 2.4.7
 * Level AA
@@ -933,35 +954,39 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 2.4.7](https://
 * [Erfolgskriterien 2.4.7 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
 * [Erfolgskriterien 2.4.7 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
-## Grundsatz 3: Verständlich   {#principle-understandable}
+## Grundsatz 3: Verständlich     {#principle-understandable}
 
-[Grundsatz 3: Verständlich - Informationen und die Bedienung der Benutzerschnittstelle müssen verständlich sein.](https://www.w3.org/TR/WCAG/#understandable)
+[Grundsatz 3: Verständlich – Informationen und die Bedienung der Benutzerschnittstelle müssen verständlich sein.](https://www.w3.org/TR/WCAG/#understandable)
 
-### Machen Sie Inhalt lesbar und verständlich (3.1)   {#make-text-content-readable-and-understandable}
+### Machen Sie Inhalt lesbar und verständlich (3.1)     {#make-text-content-readable-and-understandable}
 
 [Richtlinie 3.1 Lesbar: Machen Sie Inhalt lesbar und verständlich.](https://www.w3.org/TR/WCAG/#readable)
 
-### Sprache der Seite (3.1.1)   {#language-of-page}
+### Sprache der Seite (3.1.1)     {#language-of-page}
 
 * Erfolgskriterium 3.1.1
 * Level A
 * Sprache der Seite: Die voreingestellte menschliche Sprache einer Webseite kann programmatisch bestimmt werden.
 
-#### Zweck - Sprache der Seite (3.1.1)   {#purpose-language-of-page}
+#### Zweck - Sprache der Seite (3.1.1)     {#purpose-language-of-page}
 
 Der Zweck dieses Erfolgskriteriums besteht darin, sicherzustellen, dass Texte und andere linguistische Inhalte fehlerfrei gerendert werden. Für Benutzer der Sprachausgabe stellt dies sicher, dass der Inhalt korrekt ausgesprochen wird, während bei visuellen Browsern die Wahrscheinlichkeit höher ist, dass bestimmte Zeichensätze richtig angezeigt werden.
 
-#### Erfüllen - Sprache der Seite (3.1.1)   {#how-to-meet-language-of-page}
+#### Erfüllen - Sprache der Seite (3.1.1)     {#how-to-meet-language-of-page}
 
 Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seite über das Attribut `lang` innerhalb des Elements `<html>` am Anfang der Seite festgelegt werden. Beispiel:
 
-* Wenn eine Seite z. B. in britischem Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
-   `<html lang = “en-gb”>`
+* If a page is written in English, the `<html>` element should read:
+   `<html lang = “en”>`
 
-* Wenn eine Seite hingegen als Seite in US-Englisch gerendert werden soll, ist folgende Angabe erforderlich:
-   `<html lang = “en-us”>`
+* Eine auf Spanisch wiederzugebende Seite sollte folgende Norm annehmen:
+   `<html lang = “es”>`
 
-In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kann aber auch bei ihrer Bearbeitung geändert werden. Öffnen Sie dazu den **Sidekick** > Registerkarte **Seite** > **Seiteneigenschaften…** > Registerkarte **Erweitert**.
+In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+
+>[!NOTE]
+>
+>AEM bietet eine weitere Feinabstimmung für Variationen einer Stammsprache; Beispielsweise American Engish - en-us, British English - en-gb und Canadian English - en-ca. Diese Detailstufe ist für Hilfstechnologien oft überflüssig, kann aber auch für regionale Variationen des Seiteninhalts verwendet werden.
 
 #### Weitere Informationen – Sprache der Seite (3.1.1) {#more-information-language-of-page}
 
@@ -969,23 +994,23 @@ In AEM wird die Standardsprache einer Seite bei ihrer Erstellung festgelegt, kan
 * [Erfolgskriterium 3.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * Die Codes basieren auf ISO 639-1. Eine umfangreichere Liste der Codes für die einzelnen Sprachen finden Sie auf der [W3 Schools-Website](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Sprache von Teilen (3.1.2)      {#language-of-parts}
+### Sprache von Teilen (3.1.2)          {#language-of-parts}
 
 * Erfolgskriterium 3.1.2
 * Level AA
 * Sprache von Teilen: Die menschliche Sprache aller Abschnitte und Sätze im Inhalt kann programmatisch bestimmt werden. Ausgenommen sind Eigennamen, technische Fachbegriffe, Wörter einer unbestimmten Sprache und Wörter oder Wendungen, die Teil des Jargons des direkt umliegenden Textes sind.
 
-#### Zweck - Sprache von Teilen (3.1.2)   {#purpose-language-of-parts}
+#### Zweck - Sprache von Teilen (3.1.2)     {#purpose-language-of-parts}
 
 Der Zweck dieses Erfolgskriteriums ähnelt dem Zweck des Erfolgskriteriums [Sprache der Seite](#language-of-page). Es gilt jedoch für Webseiten, die auf einer Seite Inhalte im mehreren Sprachen enthalten (z. B. in Form von Zitaten oder wenig geläufigen Lehnwörtern).
 
 Seiten, die dieses Erfolgskriterium erfüllen, bieten folgende Möglichkeiten:
 
 * Software für die Braille-Übersetzung kann akzentuierte Zeichen einfügen.
-* Die Sprachausgabe kann betroffene Wörter außerhalb der Standardsprache korrekt aussprechen.
+* Bildschirmlesehilfen können Wörter aussprechen, die Sonderzeichen enthalten oder nicht in der auf Seitenebene festgelegten Standardsprache enthalten sind.
 * Übersetzungstools wie der Google Übersetzer können Inhalt korrekt von einer Sprache in eine andere übersetzen.
 
-#### Erfüllen - Sprache von Teilen (3.1.2)   {#how-to-meet-language-of-parts}
+#### Erfüllen - Sprache von Teilen (3.1.2)     {#how-to-meet-language-of-parts}
 
 Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Ein deutschsprachiges Zitat (ISO 639-1-Code “de”) kann z. B. wie folgt angezeigt werden:
 
@@ -1025,7 +1050,7 @@ To add the span element, with an appropriate language, you can manually edit you
 
 Dadurch soll sichergestellt werden, dass die Webseiten einheitlich aussehen und funktionieren.
 
-### Fokus (3.2.1) {#on-focus}
+### Fokus (3.2.1)  {#on-focus}
 
 * Erfolgskriterium 3.2.1
 * Level A
@@ -1050,7 +1075,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.2.1](https://
 * [Erfolgskriterien 3.2.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [Erfolgskriterien 3.2.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### Beim Eingang (3.2.2) {#on-input}
+### Beim Eingang (3.2.2)  {#on-input}
 
 * Erfolgskriterium 3.2.2
 * Level A
@@ -1069,7 +1094,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.2.2](https://
 * [Erfolgskriterien 3.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [Erfolgskriterien 3.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### Konsistente Navigation (3.2.3) {#consistent-navigation}
+### Konsistente Navigation (3.2.3)  {#consistent-navigation}
 
 * Erfolgskriterium 3.2.3
 * Level AA
@@ -1092,7 +1117,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.2.3](https://
 * [Erfolgskriterien 3.2.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [Erfolgskriterien 3.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### Konsistente Identifizierung (3.2.4) {#consistent-identification}
+### Konsistente Identifizierung (3.2.4)  {#consistent-identification}
 
 * Erfolgskriterium 3.2.4
 * Level A
@@ -1121,7 +1146,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.2.4](https://
 
 [Richtlinie 3.3 Hilfestellung bei der Eingabe: Helfen Sie Benutzern, Fehler zu vermeiden und zu korrigieren.](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### Fehlerkennung (3.3.1) {#error-identification}
+### Fehlerkennung (3.3.1)  {#error-identification}
 
 * Erfolgskriterium 3.3.1
 * Level A
@@ -1150,13 +1175,13 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.3.1](https://
 * [Erfolgskriterien 3.3.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
 * [Erfolgskriterien 3.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
 
-### Beschriftungen oder Anweisungen (3.3.2)   {#labels-or-instructions}
+### Beschriftungen oder Anweisungen (3.3.2)     {#labels-or-instructions}
 
 * Erfolgskriterium 3.3.2
 * Level A
 * Beschriftungen oder Anweisungen: Wenn der Inhalt eine Eingabe durch den Benutzer erfordert, werden Beschriftungen oder Anweisungen bereitgestellt.
 
-#### Zweck - Beschriftungen oder Anweisungen (3.3.2)   {#purpose-labels-or-instructions}
+#### Zweck - Beschriftungen oder Anweisungen (3.3.2)     {#purpose-labels-or-instructions}
 
 Das Bereitstellen von Anweisungen, die Menschen beim Ausfüllen von Formularen unterstützen, bildet einen entscheidenden Bestandteil der bewährten Verfahrenspraxis für eine benutzerfreundliche Oberfläche. Dies ist insbesondere für Menschen mit visuellen oder kognitiven Einschränkungen hilfreich, die das Layout eines Formulars und die Art der in einem bestimmten Formularfeld anzugebenden Daten andernfalls nur schwer nachvollziehen können.
 
@@ -1195,12 +1220,12 @@ Beschriftungen entweder direkt über dem Feld oder direkt links vom Feld platzie
 
 In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schaltfläche mit `Submit` als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 
-#### Weitere Informationen – Beschriftungen oder Anweisungen (3.3.2)   {#more-information-labels-or-instructions}
+#### Weitere Informationen – Beschriftungen oder Anweisungen (3.3.2)     {#more-information-labels-or-instructions}
 
 * [Erfolgskriterium 3.3.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [Erfolgskriterium 3.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### Fehlervorschläge (3.3.3) {#error-suggestion}
+### Fehlervorschläge (3.3.3)  {#error-suggestion}
 
 * Erfolgskriterium 3.3.3
 * Level AA
@@ -1223,7 +1248,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.3.3](https://
 * [Erfolgskriterien 3.3.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [Erfolgskriterien 3.3.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### Fehlervermeidung (Rechts-, Finanz- und Datenrecht) (3.3.4) {#error-prevention-legal-financial-data}
+### Fehlervermeidung (Rechts-, Finanz- und Datenrecht) (3.3.4)  {#error-prevention-legal-financial-data}
 
 * Erfolgskriterium 3.3.4
 * Level AA
@@ -1260,7 +1285,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.3.4](https://
 
 Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragenten, einschließlich Hilfstechnologien.
 
-### Analyse (4.1.1) {#parsing}
+### Analyse (4.1.1)  {#parsing}
 
 * Erfolgskriterium 4.1.1
 * Level A
@@ -1281,7 +1306,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 4.1.1](https://
 * [Erfolgskriterien 4.1.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [Erfolgskriterien 4.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### Name, Rolle, Wert (4.1.2) {#name-role-value}
+### Name, Rolle, Wert (4.1.2)  {#name-role-value}
 
 * Erfolgskriterium 4.1.2
 * Level A
@@ -1289,9 +1314,9 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 4.1.1](https://
 
 #### Zweck - Name, Rolle, Wert (4.1.2) {#purpose-ame-role-value}
 
-Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Hilfstechnologien (AT) Informationen über die Benutzeroberflächen-Steuerelemente im Inhalt sammeln, aktivieren oder einstellen und über den Status der Benutzeroberflächensteuerelemente auf dem Laufenden halten können.
+Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Hilfstechnologien (AT) Informationen über die Benutzeroberflächen-Steuerelemente im Inhalt sammeln, aktivieren oder einstellen und auf dem Laufenden halten können.
 
-Wenn Standardsteuerelemente von barrierefreien Technologien verwendet werden, ist dieser Prozess einfach. Werden die Elemente der Benutzeroberfläche gemäß der Spezifikation verwendet, so sind die Bedingungen dieser Bestimmung erfüllt. (Siehe Beispiele für das Erfolgskriterium 4.1.2 unten)
+Wenn Standardsteuerelemente von zugänglichen Technologien verwendet werden, ist dieser Prozess einfach. Werden die Elemente der Benutzeroberfläche gemäß der Spezifikation verwendet, so sind die Bedingungen dieser Bestimmung erfüllt. (Siehe Beispiele für das Erfolgskriterium 4.1.2 unten)
 
 Werden jedoch benutzerdefinierte Steuerelemente erstellt oder Schnittstellenelemente (in Code oder Skript) so programmiert, dass sie eine andere Rolle und/oder Funktion haben als üblich, müssen zusätzliche Maßnahmen getroffen werden, um sicherzustellen, dass die Steuerelemente wichtige Informationen für Hilfstechnologien bereitstellen und sich durch Hilfstechnologien steuern lassen.
 
