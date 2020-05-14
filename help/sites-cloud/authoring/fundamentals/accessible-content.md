@@ -2,10 +2,10 @@
 title: Barrierefreie Inhalte für Adobe Experience Manager als Cloud-Dienst erstellen (WCAG 2.1-Konformität)
 description: Barrierefreies Nutzen von Webinhalten durch Personen mit Behinderungen
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 52%
+source-wordcount: '13873'
+ht-degree: 50%
 
 ---
 
@@ -38,14 +38,14 @@ Die Leitlinien werden nach drei Konformitätsstufen eingestuft: Stufe A (niedrig
 
 Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
-Im folgenden Abschnitt finden Sie die [WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) mit den entsprechenden Erfolgskriterien für die [Konformitätslevels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) Level A und Level AA.
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >In diesem Dokument verwenden wir Folgendes:
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## Grundsatz 1: Erkennbar     {#principle-perceivable}
@@ -130,7 +130,7 @@ Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wich
 
 [Richtlinie 1.2 Zeitbasierte Medien: Bereitstellung von Alternativen für zeitbasierte Medien.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-Diese Richtlinie behandelt Webinhalte, die *zeitbasiert* sind. Es handelt sich um Inhalte, die der Benutzer abspielen kann (wie Video, Audio und animierte Inhalte) und die entweder vorher aufgezeichnet wurden oder als Live-Stream verfügbar sind.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -154,9 +154,9 @@ Wenn diese Informationen in einem anderen Format bereitgestellt werden, wie zum 
 
 #### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* Wenn es sich bei dem Inhalt um aufgezeichnetes Audio ohne Video (wie zum Beispiel einen Podcast) handelt:
+* Wenn der Inhalt vorab aufgezeichnetes Audio ohne Video ist (z. B. ein Podcast):
    * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit. Das Transkript sollte eine HTML-Seite mit einer Textentsprechung aller gesprochenen und wichtigen nicht gesprochenen Inhalte sein und den Sprecher, eine Beschreibung der Szenerie, sprachliche Ausdrücke sowie eine Beschreibung anderer wichtiger Audioinhalte angeben.
-* Wenn es sich bei dem Inhalt um eine Animation oder ein aufgezeichnetes Video ohne Audio handelt:
+* Wenn der Inhalt eine Animation oder ein vorab aufgezeichnetes Video ohne Audio ist:
    * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einer entsprechenden Textbeschreibung der Informationen im Video bereit.
    * Es kann auch eine entsprechende Audiobeschreibung in einem häufig verwendeten Audioformat wie MP3 sein.
 
@@ -196,13 +196,13 @@ Es gibt zwei Arten von Untertiteln:
 
 Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können, ob die Untertitel angezeigt werden.
 
-Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Lernprogrammen unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-pre-recorded) zusammengestellt). Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitel-Funktion im Videoplayer aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitel-Funktion im Videoplayer aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
 
 Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Anwendungen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Erfolgskriterium 1.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [Erfolgskriterium 1.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Erfolgskriterien 1.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -236,9 +236,12 @@ Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rah
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Erfolgskriterien 1.2.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [Erfolgskriterien 1.2.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### Untertitel (live) (1.2.4)          {#captions-live}
 
@@ -248,7 +251,7 @@ Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rah
 
 #### Zweck: Untertitel (Live) (1.2.4)     {#purpose-captions-live}
 
-Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezeichnet)](#captions-pre-recorded) insofern, als es Zugangsbarrieren behandelt, die gehörlose oder schwerhörige Menschen erfahren; der Unterschied besteht darin, dass dieses Erfolgskriterium Live-Präsentationen wie Webcasts behandelt.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### Erfüllen: Untertitel (Live) (1.2.4) {#how-to-meet-captions-live}
 
@@ -359,44 +362,46 @@ Sie können sicherstellen, dass Ihre Webseiten die richtige Struktur erhalten, i
       >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 
 
-* **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet. Beispielsweise werden in der Tabelle unten Kopfzeilen und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
+* **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet.
 
    >[!NOTE]
    >
    >Das ID-Attribut ist in Standardinstallationen nicht verfügbar. Es kann durch Konfigurieren von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   Beispielsweise werden in der Tabelle unten Kopfzeilen und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
-Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quellcodes verwenden.
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Dazu ist die Konfiguration des RTE, der HTML-Regeln und des Serialisierungsprogramms erforderlich.
+   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quellcodes verwenden.
+
+   >[!NOTE]
+   >
+   >Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Dazu ist die Konfiguration des RTE, der HTML-Regeln und des Serialisierungsprogramms erforderlich.
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
@@ -491,9 +496,6 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 * [Erfolgskriterien 1.4.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Erfolgskriterien 1.4.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### Audiosteuerung (1.4.2)  {#audio-control}
 
 * Erfolgskriterium 1.4.2
@@ -558,7 +560,7 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 
 >[!NOTE]
 >
->Hilfe bei Konvertierungen in andere Einheiten:
+>Die folgenden Sites können bei Konvertierungen in andere Einheiten hilfreich sein:
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Schriftartgrößenkonvertierung: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -638,7 +640,7 @@ Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktion
 
 #### Zweck - Tastatur (2.1.1) {#purpose-keyboard}
 
-Ziel dieses Erfolgskriteriums ist es, sicherzustellen, dass Inhalte, wo immer möglich, über eine Tastatur- oder Tastatur-Schnittstelle bedient werden können (sodass eine alternative Tastatur verwendet werden kann). Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie auch von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, die eine augenblickliche Koordination erfordern) sowie von Personen, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren fungieren, verwendet werden. Zu den Keyboard-Emulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, On-Screen-Tastaturen, Scan-Software und eine Vielzahl von Hilfstechnologien und alternative Tastaturen. Personen mit niedrigem Sehvermögen haben möglicherweise auch Probleme mit der Verfolgung eines Zeigers und finden die Verwendung von Software viel einfacher (oder nur möglich), wenn sie es über die Tastatur steuern können.
+Ziel dieses Erfolgskriteriums ist es, sicherzustellen, dass Inhalte, wo immer möglich, über eine Tastatur- oder Tastatur-Schnittstelle bedient werden können (sodass eine alternative Tastatur verwendet werden kann). Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie auch von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, die eine augenblickliche Koordination erfordern) sowie von Personen, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren fungieren, verwendet werden. Zu den Keyboard-Emulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, On-Screen-Tastaturen, Scan-Software und eine Vielzahl von Hilfstechnologien und alternative Tastaturen. Personen mit niedrigem Sehvermögen haben möglicherweise auch Schwierigkeiten, einen Zeiger zu verfolgen und die Verwendung von Software viel einfacher (oder nur möglich) zu finden, wenn sie ihn über die Tastatur steuern können.
 
 #### Treffen - Tastatur (2.1.1) {#how-to-meet-keyboard}
 
@@ -870,7 +872,7 @@ John Smith’s publications
 >
 >Der obige Ausschnitt dient der Illustration. Es wird empfohlen, die Komponente **Bild** zu verwenden.
 
-Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. Links ohne Kontext können in den folgenden Fällen verwendet werden. HTML-Beispiele hierzu finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Es ist zwar ratsam, Linktext bereitzustellen, der den Zweck des Links ohne zusätzlichen Kontext identifiziert, doch ist dies nicht immer möglich. Links ohne Kontext können in den folgenden Fällen verwendet werden. HTML-Beispiele hierzu finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Wenn der Link-Text zu einer Liste eng zusammenhängender Links gehört und das den Link umgebende Listenelement ausreichend Kontext liefert.
 * Wenn der Zweck eines Links aus dem *vorangehenden* (nicht dem nachfolgenden) Text des Absatzes klar hervorgeht.
