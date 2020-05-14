@@ -1,8 +1,11 @@
 ---
 title: Bildprofile für Dynamic Media
 description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 937b06829f290b1e5a2108c456a759100c450a14
+workflow-type: tm+mt
+source-wordcount: '2652'
+ht-degree: 97%
 
 ---
 
@@ -14,6 +17,10 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 ## Optionen für das Zuschneiden {#crop-options}
 
 Für das Zuschneiden von Bildern stehen Ihnen zwei Optionen und für die Automatisierung der Erstellung von Farb- und Bildmustern eine Option zur Verfügung.
+
+>[!IMPORTANT]
+>
+>Achten Sie darauf, dass jede von Ihnen erstellte intelligente Zuschneidegeneration zusätzliche Verarbeitungsschritte erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
 
 <table>
  <tbody>
@@ -98,7 +105,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
    Es empfiehlt sich, einen Profilnamen auszuwählen, der den Zweck des Profils beschreibt. Wenn Sie beispielsweise ein Profil erstellen, das nur Farb-/Bildmuster generiert – wo also smartes Zuschneiden deaktiviert und „Farb- und Bildmuster“ aktiviert ist –, können Sie das Profil „Smarte Farb-/Bildmuster“ nennen.
 
-   Siehe auch [Optionen für smartes Zuschneiden und smarte Farb-/Bildmuster](#crop-options) sowie [Unschärfemasken](#unsharp-mask).
+   Siehe auch Optionen für [Smart-Zuschneiden und Smart-Musterabschnitt](#crop-options) sowie [Unscharf maskieren](#unsharp-mask).
 
    ![Zuschneiden](assets/crop.png)
 
@@ -129,7 +136,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 ### Anwenden von Bildprofilen für Dynamic Media auf bestimmte Ordner {#applying-image-profiles-to-specific-folders}
 
-Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil auf einen Ordner anwenden. In diesem Abschnitt werden die beiden Möglichkeiten beschrieben, mit denen Sie Bildprofile auf Ordner anwenden können.
+Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Bildprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
