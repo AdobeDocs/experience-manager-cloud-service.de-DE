@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
 seo-title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 87%
@@ -24,7 +24,7 @@ Das Erstellen barrierefreier Websites und Inhalte mit AEM as a Cloud Service wir
 
 * Entwickler von Vorlagen sollten sich ebenfalls dieser Thematiken bei der Umsetzung des Webdesigns bewusst sein.
 
-Adobe Experience Manager as a Cloud Service arbeitet nach den [Richtlinien](#wcag-accessibility-guideslines) des [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager as a Cloud Service arbeitet nach den [Richtlinien](#wcag-accessibility-guidelines) des [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Experience Manager as a Cloud Service arbeitet nach den [Richtlinien](#wca
 
 Das [World Wide Web Consortium (W3C)](https://www.w3.org/) ist eine internationale Gemeinschaft, die sich der Entwicklung von Web-Standards widmet. Die [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) veröffentlicht die [Web Content Accessibility Guidelines](#wcag-accessibility-guidelines).
 
-## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines (WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 Die [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) veröffentlichte im Juni 2018 die [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), um Webdesigner und Entwickler bei der Erstellung barrierefreier Websites zu unterstützen.
 
