@@ -1,8 +1,11 @@
 ---
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
-translation-type: ht
-source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
+translation-type: tm+mt
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '3512'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +20,7 @@ Die Aktualisierung der AEM-Version ist stets ein separates Bereitstellungsereign
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
@@ -80,6 +83,8 @@ Wie bereits erwähnt, sollte die OSGi-Konfiguration an die Quell-Code-Verwaltung
 
 * Vornehmen der erforderlichen Änderungen in der lokalen AEM-Umgebung des Entwicklers mit dem Konfigurations-Manager der AEM-Web-Konsole und anschließendes Exportieren der Ergebnisse in das AEM-Projekt im lokalen Dateisystem;
 * manuelles Erstellen der OSGi-Konfiguration im AEM-Projekt im lokalen Dateisystem und anschließendes Verweisen auf die Eigenschaftsnamen durch den Konfigurations-Manager der AEM-Web-Konsole.
+
+Weitere Informationen zur OSGI-Konfiguration finden Sie unter [Konfigurieren von OSGi für AEM als Cloud-Dienst](/help/implementing/deploying/configuring-osgi.md).
 
 ## Veränderlicher Inhalt {#mutable-content}
 
@@ -279,7 +284,7 @@ In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit belieb
 
 AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche Ausführungsmodi verfügbar sind und wie ihnen OSGi-Pakete und OSGi-Konfigurationen zugeordnet werden können:
 
-* Die Ausführungsmodi der OSGI-Konfiguration müssen für die Umgebung auf dev, stage, prod bzw. für den Dienst auf author, publish verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in der bestimmten Reihenfolge verwendet werden müssen (z. B. author.dev oder publish.prod). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält.
+* Die Ausführungsmodi der OSGI-Konfiguration müssen für die Umgebung auf dev, stage, prod bzw. für den Dienst auf author, publish verweisen. Es wird eine Kombination aus `<service>.<environment_type>``author.dev` unterstützt, wobei diese genau in der bestimmten Reihenfolge verwendet werden müssen (z. B.  oder `publish.prod`). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM als Cloud-Dienst](/help/implementing/deploying/configuring-osgi.md).
 * Die Ausführungsmodi von OSGi-Bundles sind auf den Dienst (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install/author` oder `install/publish` installiert werden.
 
 Wie bei vorhandenen AEM-Lösungen gibt es keine Möglichkeit, Ausführungsmodi zu verwenden, um Inhalte nur für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML getestet werden soll, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.
