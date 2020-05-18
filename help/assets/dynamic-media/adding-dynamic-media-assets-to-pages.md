@@ -1,8 +1,11 @@
 ---
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
-translation-type: ht
-source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
+translation-type: tm+mt
+source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+workflow-type: tm+mt
+source-wordcount: '3132'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +29,7 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Tippen Sie im linken Bereich auf das Symbol **[!UICONTROL Komponenten]** und filtern Sie nach „Dynamic Media“.
 
-   Wenn keine Dynamic Media-Komponenten verfügbar sind, müssen Sie die Dynamic Media-Komponenten aktivieren. Weitere Informationen finden Sie unter [Bearbeiten von Vorlagen – Vorlagenautoren](/help/sites-cloud/authoring/features/templates.md).
+   Wenn keine Liste von Komponenten für dynamische Medien verfügbar ist, müssen Sie die Komponenten für dynamische Medien aktivieren, die Sie verwenden möchten. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,6 +52,33 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
    Die Dynamic Media-Komponente für 360-Grad-Videomedien
 
 1. Wenn Sie fertig sind, tippen Sie oben rechts im Dialogfeld auf das Häkchen, um Ihre Änderungen zu speichern.
+
+### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+
+Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite hinzugefügt werden können, müssen Sie die Komponenten, die Sie verwenden möchten, zunächst aktivieren.
+
+1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Tippen Sie auf der linken Seite der Symbolleiste am oberen Rand der Seite auf das Symbol &quot;Seiteninformationen&quot;und dann in der Dropdown-Liste auf Vorlage **[!UICONTROL bearbeiten]** .
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. Tippen Sie auf der rechten Seite der Symbolleiste am oberen Seitenrand aus der Dropdown-Liste auf **[!UICONTROL Struktur]**.
+
+   ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
+
+1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]** , um die Symbolleiste zu öffnen, und klicken Sie dann auf das Symbol &quot;Richtlinie&quot;.
+1. Stellen Sie auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;unter der Überschrift &quot; **[!UICONTROL Eigenschaften]** &quot;sicher, dass die Registerkarte &quot; **[!UICONTROL Zulässige Komponenten]** &quot;ausgewählt ist.
+
+   ![Zulässige Komponenten](/help/assets/assets-dm/allowed-components.png)
+
+1. Führen Sie einen Bildlauf durch, bis **[!UICONTROL dynamische Medien]** angezeigt werden.
+1. Tippen Sie auf das Symbol > links neben **[!UICONTROL Dynamische Medien]** , um die Liste zu erweitern, und wählen Sie die Dynamischen Medienkomponenten aus, die Sie aktivieren möchten.
+
+   ![Liste von Komponenten für dynamische Medien](/help/assets/assets-dm/dm-components-select.png)
+
+1. Tippen Sie rechts oben auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;auf das Symbol Fertig (Häkchen).
+
+1. Tippen Sie auf der rechten Seite der Symbolleiste oben auf der Seite in der Dropdown-Liste auf &quot; **[!UICONTROL Anfänglicher Inhalt]**&quot;und [fügen Sie wie gewohnt einer Seite](#adding-a-dynamic-media-component-to-a-page) eine Komponente für dynamische Medien hinzu.
 
 ## Lokalisieren von Dynamic Media-Komponenten {#localizing-dynamic-media-components}
 
