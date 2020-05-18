@@ -2,8 +2,11 @@
 title: Erweitern des Asset-Editors
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorha
 
 Einige der AEM Assets-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,7 +53,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/compo
 
 Einige der Komponenten von AEM Assets verwenden die AEM-Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -73,7 +76,7 @@ Die Beispiel-Handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/hea
 * Wenn ein Asset geladen wird, deaktivieren sie den WCM-Modus, da ParSys nur auf einer einfachen Formularseite bearbeitet werden kann.
 * Wenn ein Asset geladen wird, verwenden sie dessen Titel anstelle des Titels auf der Formularseite.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ Die Beispiel-Handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/hea
 
 Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset- oder Seitentitel):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,7 +139,7 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
 
 1. Fügen Sie `samplemeta.jsp` mit dem folgenden Snippet hinzu:
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field comopnent
@@ -196,7 +199,7 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
 
 1. Navigieren Sie zu Ihrem Browser, wechseln Sie auf Ihrer Beispielseite (z. B.`asseteditor.html`) in den Design-Modus und aktivieren Sie Ihre neue Komponente für das Absatzsystem.
 
-1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, muss sie dem Metadatenformular hinzugefügt werden.
+1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, müssen sie dem Metadatenformular hinzugefügt werden.
 
 ## Ändern von Metadatenoptionen   {#modifying-metadata-options}
 
