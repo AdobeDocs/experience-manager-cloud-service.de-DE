@@ -2,8 +2,11 @@
 title: Erstellen und Verwalten digitaler Assets in mehreren Sprachen und Ausführen von Übersetzungs-Workflows
 description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '2615'
+ht-degree: 100%
 
 ---
 
@@ -46,7 +49,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ## Vorbereiten von Assets für die Übersetzung {#prepare-assets-for-translation}
 
-Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann in andere Sprachen für die Verwendung in mehrsprachigen Projekten übersetzt werden.
+Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird.
 
 In Adobe Experience Manager (AEM) Assets sind mehrsprachige Assets in Ordnern enthalten, wobei jeder Ordner die Assets in einer anderen Sprache enthält.
 
@@ -54,7 +57,7 @@ Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer S
 
 Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die Sprach-Master-Vorlage. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
-```
+```shell
 /content
 &nbsp; &nbsp; /- dam
 &nbsp; &nbsp; &nbsp; |- en
@@ -79,7 +82,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie ei
 
 Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Assetknotens im Repository verwendet und bestimmt daher den Pfad des Assets. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
-1. Klicken/tippen Sie in der Konsole „Assets“ auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Ordner]** aus dem Menü aus.
+1. Tippen/Klicken Sie in der Assets-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie im Menü die Option **[!UICONTROL Ordner]** aus.
 1. Geben Sie in den Namensfeldtyp den Ländercode im Format `<language-code>` ein.
 1. Klicken oder tippen Sie auf **[!UICONTROL Erstellen]**. Der Sprachstamm wird in der Konsole „Assets“ erstellt. 
 
@@ -127,7 +130,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
    >
    >Wenn Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** wählen, wird Ihr Übersetzungsprojekt zu einem vorhandenen Projekt hinzugefügt, sofern Ihre Projekteinstellungen genau den Einstellungen des bereits vorhandenen Projekts entsprechen. Anderenfalls wird ein neues Projekt erstellt.
 1. Wählen Sie aus der Liste **[!UICONTROL Vorhandenes Übersetzungsprojekt]** ein Projekt, dem das zu übersetzende Asset hinzugefügt werden soll.
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden zum Zielordner hinzugefügt. Der aktualisierte Ordner wird unter **[!UICONTROL Sprachkopien]** aufgeführt.
+1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden dem Zielordner hinzugefügt. Der aktualisierte Ordner wird unter **[!UICONTROL Sprachkopien]** aufgeführt.
 1. Navigieren Sie zur Projektkonsole und öffnen Sie das vorhandene Übersetzungsprojekt, dem Sie Assets hinzugefügt haben.
 1. Klicken/tippen Sie auf das Übersetzungsprojekt, um die Seite mit den Projektdetails anzuzeigen.
 1. Klicken/tippen Sie unten auf der Kachel **Übersetzungsauftrag** auf das Auslassungszeichen, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
@@ -147,7 +150,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
-* Neues Übersetzungsprojekt erstellen
+* Erstellen eines neuen Übersetzungsprojekts
 * Zu vorhandenem Übersetzungsprojekt hinzufügen
 
 ### Zu vorhandenem Übersetzungsprojekt hinzufügen {#add-to-existing-translation-project-1}
@@ -210,12 +213,12 @@ Diesen Workflow führen Sie aus, um eine weitere Gruppe von Assets zu übersetze
 Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopien für eine bestimmte Sprache zu erstellen. Der Workflow bietet die folgenden Optionen:
 
 * Nur Struktur erstellen
-* Neues Übersetzungsprojekt erstellen
+* Erstellen eines neuen Übersetzungsprojekts
 * Zu vorhandenem Übersetzungsprojekt hinzufügen
 
 ### Nur Struktur erstellen  {#create-structure-only}
 
-Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden die Quell-Assets in den Zielordner kopiert. Allerdings wird kein Übersetzungsprojekt erstellt.
+Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
 1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
 1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
@@ -253,7 +256,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
 ### Anwenden eines benutzerdefinierten Übersetzungs-Connectors {#applying-custom-translation-connector}
 
-Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anwenden möchten, die in Übersetzungs-Workflows verwendet werden sollen. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie den Connector zunächst über Package Manager. Konfigurieren Sie den Connector anschließend über die Konsole „Cloud-Services“. Wenn Sie den Connector konfiguriert haben, ist er in der Connector-Liste in der Registerkarte „Cloud-Services“ verfügbar. Die Beschreibung hierzu finden Sie unter [Anwenden der Übersetzungsdienste](#applying-the-translation-services). Wenn Sie den benutzerdefinierten Connector anwenden und Übersetzungs-Workflows ausführen, werden die Connector-Details in der Kachel **[!UICONTROL Zusammenfassung der Übersetzung]** des Übersetzungsprojekts unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
+Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwenden möchten, den Sie in den Übersetzungsworkflows verwenden möchten. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector aus Package Manager. Konfigurieren Sie dann den Connector über die Cloud Services Console. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
 
 1. Installieren Sie den Connector von Package Manager.
 1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
