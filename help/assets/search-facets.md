@@ -1,8 +1,11 @@
 ---
 title: Suchfacetten
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
-translation-type: ht
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '2387'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +83,7 @@ Die Werteigenschaft eines Dateityps, wie in CRXDE dargestellt, wird für funktio
 
 Statt im CRX-Repository manuell eine Knotenstruktur für die Optionen zu erstellen, können Sie die Optionen in einer JSON-Datei definieren, indem Sie entsprechende Schlüssel-Wert-Paare angeben. Geben Sie den Pfad der JSON-Datei im Feld **[!UICONTROL Eigenschaftsname]** an. Sie können z. B. die Schlüssel-Wert-Paare `image/bmp`, `image/gif`, `image/jpeg` und `image/png` definieren und die Werte wie im folgenden Beispiel in einer JSON-Datei angeben. Im Feld **[!UICONTROL Eigenschaftsname]** können Sie den CRX-Pfad für die Datei angeben.
 
-```
+```json
 {
     "options" :
  [
@@ -124,7 +127,7 @@ Mit dem Prädikat `Multi Value Property` können Sie Assets anhand mehrerer Wert
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Mehrwert-Eigenschaftsprädikat]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/dc:value`. Sie können auch das Auswahl-Dialogfeld verwenden, um einen Knoten auszuwählen.
-1. Stellen Sie sicher, dass **[!UICONTROL Trennzeichen-Unterstützung]** aktiviert ist. Geben Sie im Feld **[!UICONTROL Trennzeichen eingeben]** die Zeichen ein, mit denen einzelne Werte getrennt werden. Standardmäßig wird ein Komma als Trennzeichen angegeben. Sie können auch ein anderes Trennzeichen festlegen.
+1. Stellen Sie sicher, dass die **[!UICONTROL Trennzeichen-Unterstützung]** aktiviert ist. Geben Sie im Feld **[!UICONTROL Eingabe-Trennzeichen]** bestimmte Trennzeichen an, um einzelne Werte voneinander zu trennen. Standardmäßig sind Kommata als Trennzeichen angegeben. Sie können auch ein anderes Trennzeichen festlegen.
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und tippen Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
 1. Geben Sie im Feld „Mehrwert“ mehrere durch Trennzeichen getrennte Werte ein und führen Sie die Suche aus. Die Eigenschaft sucht für die eingegebenen Werte nach genau übereinstimmenden Texten.
@@ -172,7 +175,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad  Browser</td>
+   <td>Pfad    Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -182,7 +185,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Pfad</p> </td>
+   <td><p>Pfad   </p> </td>
    <td><p>Verwenden Sie dieses Suchprädikat, um Ergebnisse am Speicherort zu filtern. Sie können verschiedene Pfade als Optionen angeben.</p> </td>
    <td>
     <ul>
@@ -222,7 +225,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum   Bereich</p> </td>
+   <td><p>Datum     Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>
