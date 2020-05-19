@@ -2,9 +2,9 @@
 title: Barrierefreie Inhalte für Adobe Experience Manager als Cloud-Dienst erstellen (WCAG 2.1-Konformität)
 description: Verwenden Sie AEM als Cloud-Dienst, um Web-Inhalte für Menschen mit Behinderungen zugänglich und für diese nutzbar zu machen.
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 49%
 
 ---
@@ -1160,7 +1160,7 @@ Befolgen Sie die Richtlinien unter [How to Meet Success Criteria 3.2.4](https://
 
 #### Zweck - Fehlererkennung (3.3.1) {#purpose-error-identification}
 
-Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass die Benutzer wissen, dass ein Fehler aufgetreten ist, und feststellen können, was falsch ist. Die Fehlermeldung sollte so spezifisch wie möglich sein. Bei einer fehlgeschlagenen Formularübermittlung reicht die erneute Anzeige des Formulars und die Angabe der fehlerhaften Felder nicht aus, um festzustellen, dass ein Fehler aufgetreten ist. Bildschirmlesehilfen-Benutzer wissen beispielsweise erst dann, wenn sie auf einen der Indikatoren stoßen. Sie können das Formular ganz verlassen, bevor sie auf die Fehleranzeige stoßen, weil sie der Ansicht sind, dass die Seite einfach nicht funktionsfähig ist. Gemäß der Definition in WCAG 2.0 ist ein &quot;Eingabefehler&quot;vom Benutzer bereitgestellte Informationen, die nicht akzeptiert werden. Hierzu gehört Folgendes:
+Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass die Benutzer wissen, dass ein Fehler aufgetreten ist, und feststellen können, was falsch ist. Die Fehlermeldung sollte so spezifisch wie möglich sein. Bei einer fehlgeschlagenen Formularübermittlung reicht die erneute Anzeige des Formulars und die Angabe der fehlerhaften Felder nicht aus, um festzustellen, dass ein Fehler aufgetreten ist. Bildschirmlesehilfen-Benutzer wissen beispielsweise erst dann, wenn sie auf einen der Indikatoren stoßen. Sie können das Formular ganz verlassen, bevor sie auf die Fehleranzeige stoßen, weil sie der Ansicht sind, dass die Seite einfach nicht funktionsfähig ist. Gemäß der Definition in WCAG ist ein [Eingabefehler](https://www.w3.org/TR/WCAG/#dfn-input-error) vom Benutzer bereitgestellte Informationen, die nicht akzeptiert werden. Hierzu gehört Folgendes:
 
 Informationen, die für die Webseite erforderlich sind, vom Benutzer jedoch nicht angegeben werden, oder Informationen, die vom Benutzer bereitgestellt werden, aber nicht dem erforderlichen Datenformat oder den zulässigen Werten entsprechen.
 Beispiel:
@@ -1241,7 +1241,7 @@ In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schal
 
 #### Zweck - Fehlervorschlag (3.3.3) {#purpose-error-suggestion}
 
-Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Benutzer geeignete Vorschläge zur Korrektur eines Eingabefehlers erhalten, wenn dies möglich ist. Die WCAG 2.0-Definition von &quot;Eingabefehler&quot; besagt, dass es sich um &quot;vom Benutzer bereitgestellte Informationen, die nicht akzeptiert werden&quot; vom System handelt. Einige Beispiele für Informationen, die nicht akzeptiert werden, umfassen Informationen, die vom Benutzer benötigt, aber nicht angegeben werden, sowie Informationen, die vom Benutzer bereitgestellt werden, aber nicht dem erforderlichen Datenformat oder zulässigen Werten entsprechen.
+Ziel dieses Erfolgskriteriums ist es sicherzustellen, dass Benutzer geeignete Vorschläge zur Korrektur eines Eingabefehlers erhalten, wenn dies möglich ist. Die WCAG-Definition des [Eingabefehlers](https://www.w3.org/TR/WCAG/#dfn-input-error) besagt, dass es sich um &quot;vom Benutzer bereitgestellte Informationen, die nicht akzeptiert werden&quot; vom System handelt. Einige Beispiele für Informationen, die nicht akzeptiert werden, umfassen Informationen, die vom Benutzer benötigt, aber nicht angegeben werden, sowie Informationen, die vom Benutzer bereitgestellt werden, aber nicht dem erforderlichen Datenformat oder zulässigen Werten entsprechen.
 
 Erfolgskriterium 3.3.1 sieht die Benachrichtigung über Fehler vor. Personen mit kognitiven Einschränkungen können jedoch schwer verstehen, wie die Fehler zu korrigieren sind. Sehbehinderte Menschen können möglicherweise nicht genau herausfinden, wie der Fehler zu korrigieren ist. Bei einer nicht erfolgreichen Formularübermittlung können Benutzer das Formular verlassen, da sie möglicherweise nicht sicher sind, wie der Fehler zu korrigieren ist, obwohl sie wissen, dass er aufgetreten ist.
 
