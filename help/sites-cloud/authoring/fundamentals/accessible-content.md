@@ -1,10 +1,10 @@
 ---
 title: Barrierefreie Inhalte für Adobe Experience Manager als Cloud-Dienst erstellen (WCAG 2.1-Konformität)
-description: Barrierefreies Nutzen von Webinhalten durch Personen mit Behinderungen
+description: Verwenden Sie AEM als Cloud-Dienst, um Web-Inhalte für Menschen mit Behinderungen zugänglich und für diese nutzbar zu machen.
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 49%
 
 ---
