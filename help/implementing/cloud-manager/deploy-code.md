@@ -1,8 +1,11 @@
 ---
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
-translation-type: ht
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+translation-type: tm+mt
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -98,7 +101,7 @@ Wenn Cloud Manager in produktionsfremden Topologien bereitgestellt wird, besteht
 
    >[!NOTE]
    >
-   >Sie können Änderungen am Load-Balancer in Entwicklungs- und Staging-Bereitstellungen überspringen, d. h. das Trennen und Anfügen in beiden Nicht-Produktions-Pipelines bei Entwicklungsumgebungen und in der Produktions-Pipeline bei Staging-Umgebungen.
+   >Sie können Änderungen des Lastenausgleichs in Entwicklungs- und Bereitstellungen überspringen, d. h. die Schritte trennen und an beiden nicht in der Produktion befindlichen Pipelines, für Entwickler-Umgebung und die Produktionsleitung für Stage-Umgebung anhängen.
 
 ### Bereitstellung in der Produktionsphase {#deployment-production-phase}
 
