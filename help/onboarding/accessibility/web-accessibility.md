@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
-seo-title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
+description: Einführung in Adobe Experience Manager als Cloud-Dienst und die Richtlinien zur Web-Zugänglichkeit
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 87%
+source-wordcount: '385'
+ht-degree: 83%
 
 ---
 
