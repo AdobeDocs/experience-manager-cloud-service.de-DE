@@ -1,8 +1,11 @@
 ---
 title: Konfigurieren von Dynamic Media Cloud Services
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager Cloud Service.
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+workflow-type: tm+mt
+source-wordcount: '5120'
+ht-degree: 97%
 
 ---
 
@@ -458,9 +461,24 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
 Für die reibungslose Ausführung von Dynamic Media mit dem Ausführungsmodus <!--(with `dynamicmedia_scene7` run mode)--> empfiehlt Adobe die folgenden Maßnahmen zur Optimierung der Synchronisierungsleistung/-skalierbarkeit:
 
-* Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Video-Assets)
-* Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows (Bilder und Nicht-Video-Assets)
-* Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic-Server
+* Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
+* Aktualisieren des vordefinierten Granite-Arbeitsablaufs (Video-Assets) für die Warteschlange von Arbeitsthreads.
+* Aktualisieren des vordefinierten Granite-Arbeitsablaufs für transiente Arbeitsabläufe (Bilder und Nicht-Video-Assets) in der Warteschlange für Arbeitsabläufe.
+* Aktualisieren der maximalen Upload-Verbindungen auf den Server von Dynamic Media Classic.
+
+#### Aktualisieren der vordefinierten Auftragsparameter für die Verarbeitung verschiedener Dateiformate
+
+Sie können Auftragsparameter für eine schnellere Verarbeitung einstellen, wenn Sie Dateien hochladen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese aber nicht als Vorlagen verarbeiten möchten, können Sie die Ebenendatei auf &quot;false&quot;(Aus) setzen. In diesem Fall würde der Parameter für den angepassten Auftrag wie `process=None&createTemplate=false`folgt angezeigt werden.
+
+Adobe empfiehlt die Verwendung der folgenden &quot;angepassten&quot;Auftragsparameter für PDF-, PostScript- und PSD-Dateien:
+
+| Dateityp | Empfohlene Auftragsparameter |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Um einen dieser Parameter zu aktualisieren, führen Sie die Schritte unter [Aktivieren der Unterstützung](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern aus.
 
 #### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
 
