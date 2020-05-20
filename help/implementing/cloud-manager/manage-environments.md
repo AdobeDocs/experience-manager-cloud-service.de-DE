@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 78%
 
 ---
@@ -49,7 +49,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 
    ![](assets/no-environments.png)
 
-   >[!HINWEIS)
+   >[!NOTE]
    >Die Option **Hinzufügen Umgebung** wird aufgrund fehlender Berechtigungen oder vertraglicher Verpflichtungen deaktiviert.
 
 1. Daraufhin erscheint das Dialogfeld **Umgebung hinzufügen**. Dort muss der Benutzer die Felder **Umgebungstyp**, **Umgebungsname** und **Umgebungsbeschreibung** ausfüllen (je nach Ziel des Benutzers bei der Erstellung der Umgebung im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
