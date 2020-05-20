@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 78%
+source-wordcount: '629'
+ht-degree: 68%
 
 ---
 
@@ -66,7 +66,6 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >[!NOTE]
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
-
 ## Aktualisieren einer Umgebung {#updating-dev-environment}
 
 Aktualisierungen der Staging- und Produktionsumgebungen werden automatisch von Adobe verwaltet.
@@ -74,11 +73,12 @@ Aktualisierungen der Staging- und Produktionsumgebungen werden automatisch von A
 Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Programms verwaltet. Wenn in einer Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, lautet der Status für die Umgebungskarte auf dem Startbildschirm **UPDATE VERFÜGBAR**.
 
 ![](assets/manage-environments2.png)
-)
 
-Wenn dieser Status angezeigt wird, ist die Option **Aktualisieren** im Dropdown-Menü sowohl auf der Umgebungskarte als auch im Menü **Verwalten** verfügbar, wenn Sie in der Karte **UMGEBUNGEN** auf **Details** klicken.
 
-![](assets/add-environment4.png)
+Die **Option &quot;Aktualisieren** &quot;ist im Dropdown-Menü auf der **Umgebung** -Karte verfügbar.
+Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
+
+![](assets/update-environment2.png)
 
 Durch Auswahl dieser Option aus dem Dropdown-Menü kann ein Bereitstellungs-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
 
@@ -88,10 +88,19 @@ Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die 
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs-Umgebung löschen.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+Die Option &quot; **Löschen** &quot;ist im Dropdown-Menü auf der **Umgebung** -Karte verfügbar.
+Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Diese Funktion steht nicht für Produktions-/Stage-Umgebung zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Stage-Umgebung in einem Sandbox-Programm verfügbar.
+
+## Zugriff auf die Developer Console {#accessing-developer-console}
+
+Wählen Sie **Developer Console** aus dem Dropdown-Menü in der **Umgebung** Card.
+
+![](assets/dev-console1.png)
+
+Sie können diese Option auch über die Schaltfläche &quot; **Verwalten** &quot;auswählen, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf &quot; **Details** &quot;klicken.
 
