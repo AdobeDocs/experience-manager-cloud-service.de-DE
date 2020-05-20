@@ -2,7 +2,10 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
+source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +32,7 @@ Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der
 
 ![](assets/create-program-add.png)
 
-## Erstellen eines Demo-Programms {#create-demo-program}
-
->[!NOTE]
->Ein Demo-Programm entspricht einem Sandbox-Programm in der Benutzeroberfläche von Cloud Manager.
+## Erstellen eines Sandbox-Programms {#create-demo-program}
 
 Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
