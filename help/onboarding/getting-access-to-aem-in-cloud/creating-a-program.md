@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
 1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Eine Demo** einrichten. Der Benutzer sendet den Programm-Namen, bevor er &quot; **Erstellen**&quot;auswählt.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. Der Benutzer sieht die neue Sandbox-Programm-Karte auf der Landingpage und kann den Mauszeiger darüber halten, um das Cloud Manager-Symbol auszuwählen, um zur Cloud Manager-Übersichtsseite zu navigieren. Die Karte informiert den Benutzer über den Status der automatischen Einrichtung des neu erstellten Sandbox-Programms. Der Benutzer sieht eine Progression.
 
