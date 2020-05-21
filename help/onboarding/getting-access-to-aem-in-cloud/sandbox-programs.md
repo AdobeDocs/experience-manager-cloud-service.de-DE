@@ -2,9 +2,9 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: eb874176c71d7f3d03d953f7bae4cb3db2ffb3b9
+source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Ein Sandbox-Programm ist einer der beiden Typen von Programmen, die im AEM Cloud-Dienst verfügbar sind, wobei der andere ein reguläres Programm ist.
 
-Eine Sandbox wird normalerweise für Schulungen, laufende Demos, Aktivierungsmaßnahmen oder POCs erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren.
+Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung oder den Testversand von Concept (POC) erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren.
 
-Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Development-Umgebung und eine Nicht-Produktions-Pipeline enthält.
+Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einer Git-Verzweigung gefüllt, die Beispielcode, eine Development-Umgebung und eine Nicht-Produktions-Pipeline enthält.
 
 Weitere Informationen zu Programm-Typen finden Sie unter [Einführung zu Programmen und Programm-Typen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html).
 
@@ -26,99 +26,121 @@ Weitere Informationen zu Programm-Typen finden Sie unter [Einführung zu Program
 
 Sandbox-Programm haben die folgenden Attribute:
 
-1. **Erstellung von Programmen:** Die Erstellung des Sandbox-Programms erfolgt automatisch:
+1. **Programm-Erstellung:** Die Erstellung des Sandbox-Programms erfolgt automatisch:
    * Einrichtung des Projekts mit Beispielcode und Inhalt
    * Schaffung einer Umgebung für die Entwicklung
-   * Erstellung von Nicht-Produktionslinien-Pipeline, die zur Entwicklungs-Umgebung bereitgestellt werden (Master-Zweig, der in der Umgebung für Entwicklung bereitgestellt wird)
+   * Erstellung von Nicht-Produktionslinien-Pipeline, die zur Entwicklungs-Umgebung bereitgestellt werden (Bereitstellung der Hauptverzweigung zur Umgebung der Entwicklung)
 
-1. **Dazu gehören:** Sandbox-Programm umfassen Sites und Assets.
+1. **Lösungen:** Sandbox-Programm umfassen AEM-Sites und -Assets.
 
-1. **AEM-Updates:** AEM-Updates können manuell auf Umgebung in einem Sandbox-Programm angewendet werden und werden nicht automatisch gesendet.
+1. **AEM-Aktualisierungen:** AEM-Updates können manuell auf Umgebung in einem Sandbox-Programm angewendet werden und werden nicht automatisch gesendet.
 
 1. **Hibernation:** Umgebung in einem Sandbox-Programm werden automatisch ausgeblendet, wenn für einen bestimmten Zeitraum keine Aktivität erkannt wird. Hibernated-Umgebung können manuell entfernt werden.
 
 ### Erstellen eines Sandbox-Programms {#creating-sandbox-program}
 
-Ein Assistent zum Erstellen von Programmen fordert den Benutzer auf, Details zu übermitteln.
+Mit einem Assistenten zum Erstellen von Programmen können Sie ein Sandbox-Programm erstellen.
 
 Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program).
 
 ### Erstellen von Sandbox-Umgebung {#creating-sandbox-environments}
 
-Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch in einer Umgebung bereitgestellt. Die Development-Umgebung wird standardmäßig mit einem Autor und einer Veröffentlichungsstufe geliefert.
+Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch in einer Umgebung bereitgestellt. Die Development-Umgebung umfasst standardmäßig einen Autor und eine Veröffentlichungsstufe.
 
 Der Produktions-Stage-Umgebung-Satz kann manuell dem Sandbox-Programm hinzugefügt werden, wenn der Anwender bereit ist, eine Produktionspipeline einzurichten.
 
-Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments).
+Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) .
 
 ### Löschen von Sandbox-Umgebung  {#deleting-sandbox-environments}
 
-Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Stage-Umgebung/Sätze löschen.
+Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Stage-Umgebung oder -Sets löschen.
 
-Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment).
+Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) .
 
 
 ## Hibernating- und EntHibernating-Sandbox-Umgebung {#hibernating-introduction}
 
-Sandbox-Programm-Umgebung werden nach einer Inaktivität in den *Ruhemodus* versetzt.
+Sandbox-Programm-Umgebung werden in den *Ruhezustand* versetzt, wenn für einen bestimmten Zeitraum keine Aktivität erkannt wird.
 
 >[!NOTE]
->Hibernation ist einzigartig in Sandbox-Programm-Umgebung. Regelmäßige Umgebung des Programms werden nicht gehäutet.
+>Hibernation ist einzigartig in Sandbox-Programm-Umgebung. Regelmäßige Umgebung des Programms führen nicht zu Hibernationen.
 
 ### Hibernation {#hibernation-introduction}
 
-Eine Ruhezeit kann entweder automatisch oder manuell erfolgen. Es kann bis zu ein paar Minuten dauern, bis eine Umgebung geheilt wird. Daten werden während der Winterzeit beibehalten.
+Eine Ruhezeit kann entweder automatisch oder manuell erfolgen. Es kann einige Minuten dauern, bis Sandbox-Programm-Umgebung in den *Ruhezustand* wechseln. Daten werden während der Winterzeit beibehalten.
 
 Die Hibernation wird wie folgt kategorisiert:
 
-* **Automatische** Sandbox-Programm-Umgebung werden nach achtstündiger Inaktivität automatisch ausgeblendet, d. h., weder der Autor- noch der Veröffentlichungsdienst erhalten eine Anforderung.
+* **Automatische** Sandbox-Programm-Umgebung werden nach achtstündiger Inaktivität automatisch ausgeblendet, d. h., weder Autor- noch Veröffentlichungsdienste erhalten eine Anfrage.
 
-* **Manuell**: Die Kunden können eine Sandbox-Programm-Umgebung manuell löschen, dies ist jedoch nicht erforderlich, da die Bergung nach einer Inaktivität automatisch erfolgt.
+* **Manuell**: Als Benutzer können Sie eine Sandbox-Programm-Umgebung manuell löschen, obwohl dies nicht erforderlich ist, da eine Ruhezeit nach einer bestimmten Inaktivität (acht Stunden) automatisch eintritt.
 
 #### Manuelle Bereinigung {#using-manual-hibernation}
 
+Sie können Ihr Sandbox-Programm in der Developer Console auf zwei verschiedene Arten manuell löschen:
 
-Eine manuelle Bereinigung kann von einem der beiden Bildschirme in der Entwicklerkonsole aus erreicht werden.
+* Detailbildschirm der Umgebung
+* Bildschirm zur Umgebung
 
-Gehen Sie wie folgt vor, um Ihre Programm-Umgebung manuell zu berühren:
+Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 
-1. Navigieren Sie zur Developer Console.
-1. Klicken Sie auf Hibernate
-1. Klicken Sie zur Bestätigung auf Hibernate.
+1. Navigieren Sie zur **Developer Console**.
+Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+1. Klicken Sie auf Hibernate, wie in der folgenden Abbildung dargestellt:
+1. Klicken Sie auf **Hibernate** , um den Schritt zu bestätigen
 1. Nach erfolgreichem Beenden sehen Sie den folgenden Bildschirm.
-1. Im Anzeigebereich &quot;Umgebung&quot;, der unten dargestellt wird und über den Sie auf den Link &quot;Umgebung&quot;im Bildschirm &quot;Umgebung&quot;klicken können, können Sie auf die Schaltfläche &quot;Hibernate&quot;in der Zeile der gewünschten Umgebung klicken. Daraufhin wird ein Bestätigungsbildschirm angezeigt.
 
-### Enthibernation {#de-hibernation-introduction}
-
->[!IMPORTANT]
->Der Zugriff auf die Developer Console wird in der Admin-Konsole über die Rolle &quot;Cloud Manager - Entwickler&quot;definiert. Mit dieser Berechtigung kann ein Benutzer eine Umgebung löschen.
-
-### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
+#### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
 
 Bei Browseranfragen zum Autoren- oder Veröffentlichungsstatus einer überzähligen Umgebung trifft der Benutzer auf eine Landingpage, die den Status der Umgebung beschreibt, wie nachfolgend dargestellt:
 
-Ein Benutzer mit der Rolle &quot;Cloud Manager - Entwicklerrolle&quot;kann auf die Schaltfläche &quot;Developer Console&quot;klicken, um auf die Entwicklerkonsole zuzugreifen und die Umgebung zu deaktivieren. Informationen zum Festlegen von Rollen finden Sie in der Dokumentation zu Cloud Manager.
+Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die Schaltfläche &quot;Developer Console&quot;klicken, um auf die Entwicklerkonsole zuzugreifen und die Umgebung zu deaktivieren. Informationen zum Festlegen von Rollen finden Sie in der Dokumentation zu Cloud Manager.
 
 Wenn ein Benutzer in einem Unternehmen nicht auf die Schaltfläche &quot;Developer Console&quot;klicken kann, um in die Developer Console gelangen zu können, muss ihm wahrscheinlich die Schaltfläche &quot;Cloud Manager - Developer Role&quot;zugewiesen werden.
 
 
+### Enthibernation {#de-hibernation-introduction}
+
+1. Navigieren Sie zur **Developer Console**.
+Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+
+   >[!IMPORTANT]
+   >Der Zugriff auf die Developer Console wird von der **Cloud Manager - Entwicklerrolle** in der **Admin-Konsole** definiert. Ein Benutzer mit der Berechtigung für die Rolle &quot;Entwickler&quot;kann eine Sandbox-Programm-Umgebung deaktivieren.
+
+1. Click on **De-hibernate**, as shown in the figure below:
+
+   ![](assets/de-hibernation-img1.png)
+
+1. Klicken Sie auf **De Hibernate** , um den Schritt zu bestätigen.
+
+   ![](assets/de-hibernation-img2.png)
+
+1. Sie erhalten die Benachrichtigung, dass der Bereinigungsprozess begonnen hat, und Sie werden über den Fortschritt informiert.
+
+   ![](assets/de-hibernation-img3.png)
+
+1. Nach Abschluss des Vorgangs ist die Sandbox-Programm-Umgebung erneut aktiv.
+
+   ![](assets/de-hibernation-img4.png)
 
 
 ## AEM-Aktualisierungen für Sandbox-Umgebung {#aem-updates-sandbox}
 
 
-Weitere Informationen finden Sie unter [AEM-Versionsupdates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates).
+Weitere Informationen finden Sie in den [AEM-Versionsupdates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) .
 
-Benutzer können AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden (siehe Abbildung unten). Dies kann erfolgen, wenn der angezeigte Status AKTUALISIERBAR ist. Die Option &quot;Aktualisieren&quot;steht im Dropdown-Menü auf der Umgebung-Karte zur Verfügung. Sie kann auch im Menü &quot;Verwalten&quot;im Bildschirm &quot;UMGEBUNG&quot;ausgewählt werden.
+Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden (siehe Abbildung unten). Dies kann erfolgen, wenn der angezeigte Status **AKTUALISIERBAR** ist.
 
->[!NOTE]
->Eine Nicht-Produktionsleitung, die in die Umgebung von Interesse für die Entwicklung einführt, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
-
->[!NOTE]
->Eine Produktionsleitung muss so konfiguriert sein, dass eine manuelle Update-Pipeline zur Produktions- und Stage-Umgebung gestartet werden kann.
+Die Option &quot;Aktualisieren&quot;ist im Dropdown-Menü auf der Karte &quot; **Umgebung** &quot;verfügbar. Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
 
 >[!NOTE]
->Die manuelle Aktualisierung auf Produktions- oder Stage-Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
+>Eine *Nicht-Produktionspipeline* , die in der für die Entwicklung relevanten Umgebung bereitgestellt wird, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
+
+>[!NOTE]
+>Eine *Produktionsleitung* muss konfiguriert werden, damit eine manuelle Update-Pipeline zu Production+Stage-Umgebung gestartet werden kann.
+
+>[!NOTE]
+>Die manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
 
 
 
