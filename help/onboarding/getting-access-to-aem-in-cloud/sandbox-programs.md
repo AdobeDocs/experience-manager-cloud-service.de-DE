@@ -2,10 +2,10 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Sandbox-Programm haben die folgenden Attribute:
 
 Mit einem Assistenten zum Erstellen von Programmen können Sie ein Sandbox-Programm erstellen.
 
-Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program).
+Weitere Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) .
 
 ### Erstellen von Sandbox-Umgebung {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ Der Produktions-Stage-Umgebung-Satz kann manuell dem Sandbox-Programm hinzugefü
 
 Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) .
 
-### Löschen von Sandbox-Umgebung  {#deleting-sandbox-environments}
+### Löschen von Sandbox-Umgebung {#deleting-sandbox-environments}
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Stage-Umgebung oder -Sets löschen.
 
@@ -75,6 +75,9 @@ Die Hibernation wird wie folgt kategorisiert:
 
 * **Manuell**: Als Benutzer können Sie eine Sandbox-Programm-Umgebung manuell löschen, obwohl dies nicht erforderlich ist, da eine Ruhezeit nach einer bestimmten Inaktivität (acht Stunden) automatisch eintritt.
 
+>[!CAUTION]
+>In der neuesten Version können Sie die Sandbox-Programm-Umgebung nicht durch Verknüpfungen mit der Developer Console von Cloud Manager neu starten.
+
 #### Manuelle Bereinigung {#using-manual-hibernation}
 
 Sie können Ihr Sandbox-Programm in der Developer Console auf zwei verschiedene Arten manuell löschen:
@@ -87,9 +90,16 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
 
-1. Klicken Sie auf Hibernate, wie in der folgenden Abbildung gezeigt.
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   Oder
+
+   Klicken Sie in der Liste Umgebung auf **Hibernate** , wie in der folgenden Abbildung dargestellt:
+
+   ![](assets/hibernate-1b.png)
+
 1. Klicken Sie auf **Hibernate** , um den Schritt zu bestätigen.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +107,6 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 1. Nach erfolgreichem Beenden des Ruhezustands wird im Bildschirm &quot; **Developer Console** &quot;die Benachrichtigung zum Abschluss des Ruhezustands für Ihre Umgebung angezeigt.
 
    ![](assets/hibernate-4.png)
-
-#### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
-
-Bei Browseranfragen zum Autoren- oder Veröffentlichungsstatus einer überzähligen Umgebung trifft der Benutzer auf eine Landingpage, die den Status der Umgebung beschreibt, wie nachfolgend dargestellt:
-
-Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die Schaltfläche &quot;Developer Console&quot;klicken, um auf die Entwicklerkonsole zuzugreifen und die Umgebung zu deaktivieren. Informationen zum Festlegen von Rollen finden Sie in der Dokumentation zu Cloud Manager.
-
-Wenn ein Benutzer in einem Unternehmen nicht auf die Schaltfläche &quot;Developer Console&quot;klicken kann, um in die Developer Console gelangen zu können, muss ihm wahrscheinlich die Schaltfläche &quot;Cloud Manager - Developer Role&quot;zugewiesen werden.
 
 
 ### Enthibernation {#de-hibernation-introduction}
@@ -119,6 +121,13 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
    ![](assets/de-hibernation-img1.png)
 
+   Oder
+
+   Klicken Sie auf **Enthibernate** aus der Liste der **Umgebung** , wie in der folgenden Abbildung dargestellt:
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Klicken Sie auf **De Hibernate** , um den Schritt zu bestätigen.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,24 +140,42 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
    ![](assets/de-hibernation-img4.png)
 
+#### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
+
+Bei Browseranfragen zum Autoren- oder Veröffentlichungsstatus einer überzähligen Umgebung wird dem Benutzer eine Landingpage angezeigt, die den Status der Umgebung beschreibt, wie in der folgenden Abbildung dargestellt:
+
+![](assets/de-hibernation-img5.png)
+
+
+Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die **Developer Console** klicken, um auf die Entwicklerkonsole zuzugreifen und die Umgebung zu deaktivieren.
+
+>[!NOTE]
+> Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich. Weitere Informationen zu Rollen für Benutzer, die die Verfügbarkeit bestimmter Funktionen steuern, finden Sie unter Benutzer und Rollen[hinzufügen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
+
+#### Wichtige Überlegungen {#important-considerations}
+
+Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Aspekte:
+
+* Ein Benutzer kann eine Pipeline verwenden, um benutzerdefinierten Code für ausgeblendete Umgebung bereitzustellen. Die Umgebung bleibt erhalten, und der neue Code wird in der Umgebung angezeigt, sobald er entfernt wurde.
+
+* AEM-Upgrades können auf ausgeblendete Umgebung angewendet werden, die Kunden manuell aus Cloud Manager auslösen können. Die Umgebung bleibt erhalten, und die neue Version erscheint in der Umgebung, sobald sie entfernt wurde.
+
+>[!NOTE]
+>Derzeit gibt Cloud Manager nicht an, ob eine Umgebung ausgeblendet ist.
 
 ## AEM-Aktualisierungen für Sandbox-Umgebung {#aem-updates-sandbox}
 
-
 Weitere Informationen finden Sie in den [AEM-Versionsupdates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) .
 
-Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden (siehe Abbildung unten). Dies kann erfolgen, wenn der angezeigte Status **AKTUALISIERBAR** ist.
+Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden.
 
-Die Option &quot;Aktualisieren&quot;ist im Dropdown-Menü auf der Karte &quot; **Umgebung** &quot;verfügbar. Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
-
->[!NOTE]
->Eine *Nicht-Produktionspipeline* , die in der für die Entwicklung relevanten Umgebung bereitgestellt wird, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
+Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren der Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
->Eine *Produktionsleitung* muss konfiguriert werden, damit eine manuelle Update-Pipeline zu Production+Stage-Umgebung gestartet werden kann.
+>* Eine *Nicht-Produktionspipeline* , die in der für die Entwicklung relevanten Umgebung bereitgestellt wird, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
+>* Eine *Produktionsleitung* muss konfiguriert werden, damit eine manuelle Update-Pipeline zu Production+Stage-Umgebung gestartet werden kann.
+>* Die manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
 
->[!NOTE]
->Die manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
 
 
 
