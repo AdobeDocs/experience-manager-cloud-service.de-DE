@@ -4,7 +4,7 @@ description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
 source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Sandbox-Programm haben die folgenden Attribute:
 
 Mit einem Assistenten zum Erstellen von Programmen können Sie ein Sandbox-Programm erstellen.
 
-Weitere Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) .
+Informationen zum Erstellen eines Sandbox-Programms finden Sie unter
 
 ### Erstellen von Sandbox-Umgebung {#creating-sandbox-environments}
 
@@ -74,9 +74,6 @@ Die Hibernation wird wie folgt kategorisiert:
 * **Automatische** Sandbox-Programm-Umgebung werden nach achtstündiger Inaktivität automatisch ausgeblendet, d. h., weder Autor- noch Veröffentlichungsdienste erhalten eine Anfrage.
 
 * **Manuell**: Als Benutzer können Sie eine Sandbox-Programm-Umgebung manuell löschen, obwohl dies nicht erforderlich ist, da eine Ruhezeit nach einer bestimmten Inaktivität (acht Stunden) automatisch eintritt.
-
->[!CAUTION]
->In der neuesten Version können Sie die Sandbox-Programm-Umgebung nicht durch Verknüpfungen mit der Developer Console von Cloud Manager neu starten.
 
 #### Manuelle Bereinigung {#using-manual-hibernation}
 
@@ -152,17 +149,6 @@ Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die **Developer Co
 >[!NOTE]
 > Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich. Weitere Informationen zu Rollen für Benutzer, die die Verfügbarkeit bestimmter Funktionen steuern, finden Sie unter Benutzer und Rollen[hinzufügen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Wichtige Überlegungen {#important-considerations}
-
-Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Aspekte:
-
-* Ein Benutzer kann eine Pipeline verwenden, um benutzerdefinierten Code für ausgeblendete Umgebung bereitzustellen. Die Umgebung bleibt erhalten, und der neue Code wird in der Umgebung angezeigt, sobald er entfernt wurde.
-
-* AEM-Upgrades können auf ausgeblendete Umgebung angewendet werden, die Kunden manuell aus Cloud Manager auslösen können. Die Umgebung bleibt erhalten, und die neue Version erscheint in der Umgebung, sobald sie entfernt wurde.
-
->[!NOTE]
->Derzeit gibt Cloud Manager nicht an, ob eine Umgebung ausgeblendet ist.
-
 ## AEM-Aktualisierungen für Sandbox-Umgebung {#aem-updates-sandbox}
 
 Weitere Informationen finden Sie in den [AEM-Versionsupdates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) .
@@ -172,10 +158,13 @@ Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm
 Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren der Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
->* Eine *Nicht-Produktionspipeline* , die in der für die Entwicklung relevanten Umgebung bereitgestellt wird, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
->* Eine *Produktionsleitung* muss konfiguriert werden, damit eine manuelle Update-Pipeline zu Production+Stage-Umgebung gestartet werden kann.
->* Die manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
+>Eine *Nicht-Produktionspipeline* , die in der für die Entwicklung relevanten Umgebung bereitgestellt wird, muss konfiguriert werden, damit eine manuelle Aktualisierungspipeline initiiert werden kann.
 
+>[!NOTE]
+>Eine *Produktionsleitung* muss konfiguriert werden, damit eine manuelle Update-Pipeline zu Production+Stage-Umgebung gestartet werden kann.
+
+>[!NOTE]
+>Die manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
 
 
 
