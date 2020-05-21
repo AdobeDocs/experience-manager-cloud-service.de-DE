@@ -2,9 +2,9 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung
 
 Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einer Git-Verzweigung gefüllt, die Beispielcode, eine Development-Umgebung und eine Nicht-Produktions-Pipeline enthält.
 
-Weitere Informationen zu Programm-Typen finden Sie unter [Einführung zu Programmen und Programm-Typen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html).
+Weitere Informationen zu den Programm-Typen finden Sie unter [Einführung zu Programmen und Programmen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) .
 
 ### Attribute von Sandbox-Programmen {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
-1. Klicken Sie auf Hibernate, wie in der folgenden Abbildung dargestellt:
-1. Klicken Sie auf **Hibernate** , um den Schritt zu bestätigen
-1. Nach erfolgreichem Beenden sehen Sie den folgenden Bildschirm.
+
+1. Klicken Sie auf Hibernate, wie in der folgenden Abbildung gezeigt.
+
+   ![](assets/hibernate-1.png)
+1. Klicken Sie auf **Hibernate** , um den Schritt zu bestätigen.
+
+   ![](assets/hibernate-2.png)
+
+1. Nach erfolgreichem Beenden des Ruhezustands wird im Bildschirm &quot; **Developer Console** &quot;die Benachrichtigung zum Abschluss des Ruhezustands für Ihre Umgebung angezeigt.
+
+   ![](assets/hibernate-4.png)
 
 #### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
 
