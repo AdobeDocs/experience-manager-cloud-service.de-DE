@@ -2,9 +2,9 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
+source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 1%
 
 Ein Sandbox-Programm ist einer der beiden Typen von Programmen, die im AEM Cloud-Dienst verfügbar sind, wobei der andere ein reguläres Programm ist.
 
-Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung oder den Testversand von Concept (POC) erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren.
+Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung oder den Testversand von Concept (POC) erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren. Sie unterliegen nicht den [AEM-Serviceverpflichtungen](https://www.adobe.com/legal/service-commitments.html).
+
+Die in einer Sandbox erstellten Umgebung sind nicht für die automatische Skalierung konfiguriert. Daher sind sie nicht für Leistungs- oder Belastungsprüfungen geeignet.
 
 Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einem Git-Repository, einer Development-Umgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird mit einem Beispielprojekt basierend auf dem AEM-Projektarchiv gefüllt.
 
