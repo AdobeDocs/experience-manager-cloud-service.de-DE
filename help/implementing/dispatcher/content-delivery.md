@@ -1,8 +1,11 @@
 ---
 title: Inhaltsbereitstellung
 description: 'Inhaltsbereitstellung '
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +55,7 @@ Nachfolgend finden Sie eine Entscheidungsmatrix zum Vergleich der beiden Optione
 | **Voraussetzungen** | Keine | Vorhandenes CDN, das nur schwer zu ersetzen ist. Vor der Live-Schaltung muss ein erfolgreicher Belastungstest durchgeführt werden. |
 | **CDN-Kompetenz** | Keine | Benötigt mindestens eine technische Teilzeitressource mit detailliertem CDN-Wissen, die das CDN des Kunden konfigurieren kann. |
 | **Sicherheit** | Verwaltet von Adobe. | Verwaltet von Adobe (und optional vom Kunden bei seinem eigenen CDN). |
-| **Leistung** | Optimiert von Adobe. | Profitiert von einigen AEM-CDN-Funktionen, aber möglicherweise kleiner Leistungseinbruch aufgrund des zusätzlichen Wechsels. **Hinweis**: Wechsel vom Kunden CDN zum Fastly-CDN sind wahrscheinlich effizient. |
+| **Leistung** | Optimiert von Adobe. | Profitiert von einigen AEM-CDN-Funktionen, aber möglicherweise kleiner Leistungseinbruch aufgrund des zusätzlichen Wechsels. **Hinweis**: Hops vom Kunden-CDN bis zum Adobe-Out-of-the-Box-CDN (wahrscheinlich effizient). |
 | **Caching** | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. |
 | **Funktionen zur Bild- und Videokomprimierung** | Kann mit Adobe Dynamic Media verwendet werden. | Kann mit Adobe Dynamic Media oder einer kundenverwalteten CDN-Bild-/Videolösung verwendet werden. |
 
@@ -65,7 +68,7 @@ Die Vorbereitung der Inhaltsbereitstellung mithilfe des vorkonfigurierten CDN vo
 1. Sie sollten den Support informieren:
    * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert.
    * wenn eine IP-Whitelist erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
-1. Der Support koordiniert dann mit Ihnen den Zeitpunkt für einen CNAME-DNS-Eintrag und verweist dessen FQDN auf `adobe-aem.map.fastly.net`.
+1. Der Support koordiniert dann mit Ihnen den Zeitpunkt für einen CNAME-DNS-Eintrag und verweist dessen FQDN auf `cdn.adobeaemcloud.com`.
 1. Sie werden benachrichtigt, wenn SSL-Zertifikate ablaufen, damit Sie neue SSL-Zertifikate senden können.
 
 **Beschränken des Traffic**
