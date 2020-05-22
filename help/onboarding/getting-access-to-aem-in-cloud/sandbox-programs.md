@@ -2,9 +2,9 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Weitere Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Er
 
 ### Erstellen von Sandbox-Umgebung {#creating-sandbox-environments}
 
-Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch in einer Umgebung bereitgestellt. Die Development-Umgebung umfasst standardmäßig einen Autor und eine Veröffentlichungsstufe.
+Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch an eine Development-Umgebung gesendet. Die Development-Umgebung umfasst standardmäßig einen Autor und eine Veröffentlichungsstufe.
 
 Der Produktions-Stage-Umgebung-Satz kann manuell dem Sandbox-Programm hinzugefügt werden, wenn der Anwender bereit ist, eine Produktionspipeline einzurichten.
 
@@ -71,12 +71,12 @@ Eine Ruhezeit kann entweder automatisch oder manuell erfolgen. Es kann einige Mi
 
 Die Hibernation wird wie folgt kategorisiert:
 
-* **Automatische** Sandbox-Programm-Umgebung werden nach achtstündiger Inaktivität automatisch ausgeblendet, d. h., weder Autor- noch Veröffentlichungsdienste erhalten eine Anfrage.
+* **Automatische** Sandbox-Programm-Umgebung werden nach acht Stunden Inaktivität automatisch ausgeblendet, d. h., weder der Autor noch der Veröffentlichungsdienst erhalten Anfragen.
 
-* **Manuell**: Als Benutzer können Sie eine Sandbox-Programm-Umgebung manuell löschen, obwohl dies nicht erforderlich ist, da eine Ruhezeit nach einer bestimmten Inaktivität (acht Stunden) automatisch eintritt.
+* **Manuell**: Als Benutzer können Sie eine Sandbox-Programm-Umgebung manuell löschen, dies ist jedoch nicht erforderlich, da eine Ruhezeit nach einer bestimmten Inaktivität (acht Stunden) automatisch eintritt.
 
 >[!CAUTION]
->In der neuesten Version können Sie die Sandbox-Programm-Umgebung nicht durch Verknüpfungen mit der Developer Console von Cloud Manager neu starten.
+>In der neuesten Version haben Sie bei Verknüpfungen mit der Developer Console direkt aus Cloud Manager keine Möglichkeit, eine Sandbox-Programm-Umgebung zu löschen. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
 
 #### Manuelle Bereinigung {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+   >[!NOTE]
+   >Wenn Sie eine Verknüpfung zur Developer Console direkt über Cloud Manager erstellen, haben Sie nicht die Möglichkeit, eine Sandbox-Programm-Umgebung zu löschen. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
    Oder
 
-   Klicken Sie in der Liste Umgebung auf **Hibernate** , wie in der folgenden Abbildung dargestellt:
+   Klicken Sie auf den Link **Umgebung** oben links, um die Liste der Umgebung Ansicht, und klicken Sie dann auf **Hibernate**, wie in der folgenden Abbildung gezeigt:
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
 
+   >[!NOTE]
+   >Alternativ können Sie zur **Developer Console** navigieren, um die Bereinigung zu deaktivieren, indem Sie versuchen, auf den Autor- oder Veröffentlichungsdienst einer bereits ausgeblendeten Umgebung zuzugreifen. In diesem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie im Abschnitt Zugriff auf eine ausgeblendete Umgebung.
+
    >[!IMPORTANT]
    >Der Zugriff auf die Developer Console wird von der **Cloud Manager - Entwicklerrolle** in der **Admin-Konsole** definiert. Ein Benutzer mit der Berechtigung für die Rolle &quot;Entwickler&quot;kann eine Sandbox-Programm-Umgebung deaktivieren.
 
@@ -123,7 +128,7 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
    Oder
 
-   Klicken Sie auf **Enthibernate** aus der Liste der **Umgebung** , wie in der folgenden Abbildung dargestellt:
+   Klicken Sie auf den Link **Umgebung** oben links, um die Liste der Umgebung Ansicht, und klicken Sie dann auf **Löschen**, wie in der Abbildung unten dargestellt
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die **Developer Co
 >[!NOTE]
 > Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich. Weitere Informationen zu Rollen für Benutzer, die die Verfügbarkeit bestimmter Funktionen steuern, finden Sie unter Benutzer und Rollen[hinzufügen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Wichtige Überlegungen {#important-considerations}
+### Wichtige Überlegungen {#important-considerations}
 
 Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Aspekte:
 
