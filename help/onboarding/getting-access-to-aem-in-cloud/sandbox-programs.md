@@ -4,7 +4,7 @@ description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 1%
 
 ---
@@ -91,8 +91,8 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
-   >[!NOTE]
-   >Wenn Sie eine Verknüpfung zur Developer Console direkt über Cloud Manager erstellen, haben Sie nicht die Möglichkeit, eine Sandbox-Programm-Umgebung zu löschen. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
+   >[!IMPORTANT]
+   >Wenn Sie eine **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie keine Möglichkeit, eine Sandbox-Programm-Umgebung zu löschen. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
 1. Navigieren Sie zur **Developer Console**.
 Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+
+   >[!IMPORTANT]
+   >Wenn Sie eine **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie nicht die Möglichkeit, eine Sandbox-Programm-Umgebung zu deaktivieren. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
 
    >[!NOTE]
    >Alternativ können Sie zur **Developer Console** navigieren, um die Bereinigung zu deaktivieren, indem Sie versuchen, auf den Autor- oder Veröffentlichungsdienst einer bereits ausgeblendeten Umgebung zuzugreifen. In diesem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie im Abschnitt Zugriff auf eine ausgeblendete Umgebung.
