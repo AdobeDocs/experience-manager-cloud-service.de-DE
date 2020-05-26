@@ -1,8 +1,11 @@
 ---
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 Das Navigationsfenster:
 
 ![Navigationsfenster](/help/sites-cloud/authoring/assets/navigation.png)
+
+Der Titel der Browser-Registerkarte wird aktualisiert, um Ihren Standort während der Navigation durch die Konsolen und Inhalte widerzuspiegeln.
 
 Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
@@ -150,6 +155,14 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
    >
    >Die Option **Ansichtseinstellungen** steht nur im Modus **Listenansicht** zur Verfügung.
 
+* Tastaturnavigation
+
+   Sie können auf einer Website nur mit der Tastatur navigieren. Dies verwendet die standardmäßige Browserfunktionalität des **TAB** -Schlüssels (oder **OPT+TAB**), um Sie zwischen fokussierbaren Elementen auf der Seite zu bewegen.
+
+   In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie durch die Kopfzeilenoptionen navigieren, und beschleunigt die Navigation, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt führen.
+
+   ![Zu Hauptinhalt überspringen](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## Aufrufen der Hilfe {#accessing-help}
 
 Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
@@ -166,7 +179,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
    ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-* **Seiten-Editor**
+* **Seiteneditor**
 
    Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiteneditor durch eine Reihe von Folien vorgestellt.
 
