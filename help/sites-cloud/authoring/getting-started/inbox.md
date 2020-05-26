@@ -1,8 +1,11 @@
 ---
-title: Ihr Posteingang
+title: 'Ihr Posteingang  '
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
 
 1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
-1. Standardmäßig wird die [Listenansicht](#inbox-list-view) verwendet, Sie können aber auch zur [Kalenderansicht](#inbox-calendar-view) wechseln. Dies erfolgt über den Ansichtselektor oben rechts in der Symbolleiste.
+1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
 
@@ -105,6 +108,10 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Es ist zwar möglich, mehr als ein Element auszuwählen, es können jedoch nur jeweils Aktionen für ein Element durchgeführt werden.
+
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
 
    ![Posteingangselement auswählen](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
+2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
 
    * Ein Dialogfeld für die jeweilige Aktion wird geöffnet
    * Ein Assistent für eine bestimmte Aktion wird gestartet
@@ -182,7 +189,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    >
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
-1. Klicken Sie in der Symbolleiste auf **Projekt erstellen**, um den Assistenten zu öffnen.
+1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
 1. Geben Sie die gewünschten Eigenschaften an:
 
