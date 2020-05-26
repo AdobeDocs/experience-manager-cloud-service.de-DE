@@ -2,10 +2,10 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 1%
+source-wordcount: '1269'
+ht-degree: 0%
 
 ---
 
@@ -150,17 +150,17 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
    ![](assets/de-hibernation-img4.png)
 
+#### Berechtigungen zum Deaktivieren von Bereinigungen {#permissions-de-hibernate}
+
+Jeder Benutzer mit einem Profil, das ihm Zugriff auf AEM als Cloud-Dienst gewährt, sollte auf die **Developer Console** zugreifen können, sodass er die Umgebung deaktivieren kann.
+
+Informationen zum Einrichten von Benutzerberechtigungen finden Sie unter [Hinzufügen Benutzer und Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
+
 #### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
 
 Bei Browseranfragen zum Autoren- oder Veröffentlichungsstatus einer überzähligen Umgebung wird dem Benutzer eine Landingpage angezeigt, die den Status der Umgebung beschreibt, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/de-hibernation-img5.png)
-
-
-Ein Benutzer mit **Cloud Manager - Entwicklerrolle** kann auf die **Developer Console** klicken, um auf die Entwicklerkonsole zuzugreifen und die Umgebung zu deaktivieren.
-
->[!NOTE]
-> Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich. Weitere Informationen zu Rollen für Benutzer, die die Verfügbarkeit bestimmter Funktionen steuern, finden Sie unter Benutzer und Rollen[hinzufügen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Wichtige Überlegungen {#important-considerations}
 
