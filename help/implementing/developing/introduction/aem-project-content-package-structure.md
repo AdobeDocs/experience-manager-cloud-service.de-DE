@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 94%
+source-wordcount: '2417'
+ht-degree: 90%
 
 ---
 
@@ -239,7 +239,9 @@ Das Hinzufügen von Maven-Abhängigkeiten folgt den Standardpraktiken von Maven,
 
 Um eine ordnungsgemäße Installation der Pakete sicherzustellen, wird empfohlen, Abhängigkeiten zwischen Paketen zu erstellen.
 
-Die allgemeine Regel ist, dass Pakete mit veränderlichem Inhalt (`ui.content`) vom unveränderlichen Inhalt (`ui.apps`) abhängen sollten, der die Wiedergabe und Verwendung des veränderlichen Inhalts unterstützt.
+The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
+
+Eine wichtige Ausnahme von dieser allgemeinen Regel ist, dass das unveränderliche Codepaket (`ui.apps` oder ein anderes) __nur__ OSGi-Pakete enthält. Ist dies der Fall, sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Codepakete, die OSGi-Pakete __nur__ enthalten, nicht mit AEM Package Manager registriert sind. Daher hat jedes AEM-Paket, je nach Paket, eine nicht zufrieden stellende Abhängigkeit und kann nicht installiert werden.
 
 >[!TIP]
 >
