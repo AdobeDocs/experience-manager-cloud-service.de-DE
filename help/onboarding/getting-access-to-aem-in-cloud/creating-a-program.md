@@ -2,7 +2,7 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Im Ereignis des erstmaligen Zugriffs auf Cloud Manager oder wenn keine Programm 
 
 Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden/Unternehmen zur Verfügung steht, wird der Programm-Erstellungsassistent aufgefordert, eine oder mehrere Angaben zu übermitteln.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der
 
 Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
-1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Eine Demo** einrichten. Der Benutzer sendet den Programm-Namen, bevor er &quot; **Erstellen**&quot;auswählt.
+1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Sandbox** einrichten. Der Benutzer sendet den Programm-Namen, bevor er &quot; **Erstellen**&quot;auswählt.
 
    ![](assets/create-sandbox.png)
 
