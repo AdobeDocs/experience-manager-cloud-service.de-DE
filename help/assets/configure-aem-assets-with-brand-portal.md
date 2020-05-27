@@ -3,9 +3,9 @@ title: Konfigurieren von AEM Assets Cloud Service mit Brand Portal
 description: Konfigurieren von AEM Assets Cloud Service mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM)-Assets werden über die Adobe Developer Console m
 
 **Wie funktioniert die Konfiguration?**
 
-Die Konfiguration einer AEM Assets-Cloud-Instanz mit Ihrem Markenportal-Mandanten (Unternehmen) ist ein mehrstufiger Prozess, der Konfigurationen sowohl in der AEM Assets-Cloud-Instanz als auch in der Adobe Developer Console erfordert.
+Zum Konfigurieren der AEM Assets-Cloud-Instanz mit einem Markenportal-Mandanten (Unternehmen) sind Konfigurationen sowohl in der AEM Assets-Cloud-Instanz als auch in der Adobe Developer Console erforderlich.
 
 1. Erstellen Sie in der AEM Assets-Cloud-Instanz ein IMS-Konto und erstellen Sie ein öffentliches Zertifikat (öffentlicher Schlüssel).
 1. Erstellen Sie in Adobe Developer Console ein Projekt für Ihren Markenportal-Mandanten (Unternehmen).
@@ -28,9 +28,11 @@ Die Konfiguration einer AEM Assets-Cloud-Instanz mit Ihrem Markenportal-Mandante
 1. Testen Sie die Konfiguration, indem Sie ein Asset aus der AEM Assets-Cloud-Instanz in Brand Portal veröffentlichen.
 
 >[!NOTE]
->>Ein Markenportal-Mandant darf nur mit einer AEM Assets-Cloud-Instanz konfiguriert werden.
->>Konfigurieren Sie keinen Markenportal-Mandanten mit mehreren AEM Assets-Cloud-Instanzen.
 >
+>Ein Markenportal-Mieter darf nur mit einer AEM Assets-Cloud-Instanz konfiguriert werden.
+>
+>Konfigurieren Sie keinen Markenportal-Mandanten mit mehreren AEM Assets-Cloud-Instanzen.
+
 
 ## Voraussetzungen {#prerequisites}
 
