@@ -134,11 +134,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >[!NOTE]
    >
    >1. Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird.
-      >
-      >
-      >
-
-   2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
+   >
+   >
+   >2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
 
 3. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
