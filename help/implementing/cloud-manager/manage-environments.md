@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 68%
+source-wordcount: '702'
+ht-degree: 61%
 
 ---
 
@@ -98,7 +98,12 @@ Diese Funktion steht nicht für Produktions-/Stage-Umgebung zur Verfügung, die 
 
 ## Zugriff auf die Developer Console {#accessing-developer-console}
 
-Wählen Sie **Developer Console** aus dem Dropdown-Menü in der **Umgebung** Card.
+Wählen Sie **Developer Console** aus dem Dropdown-Menü in der **Umgebung** Card. Dadurch wird eine neue Registerkarte in Ihrem Browser mit der Anmeldeseite in der **Developer Console** geöffnet.
+
+Nur Benutzer mit der Rolle &quot;Entwickler&quot;haben Zugriff auf die **Developer Console**. Die Ausnahme gilt für Sandbox-Programm, bei denen alle Benutzer mit Zugriff auf das Cloud Manager Sandbox-Programm Zugriff auf die **Developer Console** haben.
+
+Weitere Informationen finden Sie unter [Hibernating and De-Hibernating Sandbox-Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
+
 
 ![](assets/dev-console1.png)
 
