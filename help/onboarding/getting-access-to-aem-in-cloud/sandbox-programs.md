@@ -2,9 +2,9 @@
 title: Sandbox-Programm - Cloud-Dienst
 description: Sandbox-Programm - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ Sie können Ihr Sandbox-Programm in der Developer Console auf zwei verschiedene 
 
 * Detailbildschirm der Umgebung
 * Bildschirm zur Umgebung
+
+>[!NOTE]
+>Der Zugriff auf die Developer Console für ein Sandbox-Programm steht allen Benutzern von Cloud Manager zur Verfügung.
 
 Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
 
@@ -175,7 +178,7 @@ Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Asp
 
 ## AEM-Aktualisierungen für Sandbox-Umgebung {#aem-updates-sandbox}
 
-Weitere Informationen finden Sie in den [AEM-Versionsupdates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) .
+Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
 Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden.
 
