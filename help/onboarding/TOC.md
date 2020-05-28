@@ -2,10 +2,10 @@
 sub-product: Einstieg in AEM as a Cloud Service
 user-guide-title: Einstieg in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '133'
+ht-degree: 85%
 
 ---
 
@@ -33,4 +33,6 @@ ht-degree: 88%
 + Erreichbarkeit {#accessibility}
    + [AEM als Cloud-Dienst und die Richtlinien zur Web-Zugänglichkeit](accessibility/web-accessibility.md)
    + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Best Practices {#best-practices}
+   + [SEO- und URL-Verwaltung](best-practices/seo-and-url-management.md)
 + [Übersicht über die Tools-Konsolen](tools-consoles.md)
