@@ -3,10 +3,10 @@ title: Konfigurieren von AEM Assets Cloud Service mit Brand Portal
 description: Konfigurieren von AEM Assets Cloud Service mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 38%
+source-wordcount: '1762'
+ht-degree: 37%
 
 ---
 
@@ -69,7 +69,7 @@ Mit dem öffentlichen Zertifikat können Sie Ihr Profil in der Adobe Developer C
 
 1. Melden Sie sich bei Ihrer AEM Assets-Cloud-Instanz an.
 
-1. Navigieren Sie im **Tool** ![Tools](assets/tools.png)-Bedienfeld zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Benutzeroberfläche der Adobe IMS-Kontokonfiguration](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ Führen Sie die folgenden Schritte aus, um die Dienstkontoberechtigungen und die
 
 1. Überprüfen Sie das öffentliche Zertifikat und klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Im Markenportal wird für jede Organisation ein Standard-Profil erstellt. Die Profil &quot;Produkt&quot;werden in der Admin-Konsole erstellt, um Benutzern Gruppen zuzuweisen (je nach Rollen und Berechtigungen). Für die Konfiguration mit dem Markenportal wird das OAuth-Token auf Unternehmensebene erstellt. Daher müssen Sie das standardmäßige Produkt-Profil für Ihr Unternehmen konfigurieren.
+1. Wählen Sie das Standardprodukt- **[!UICONTROL Asset-Markenportal]** aus und klicken Sie auf **[!UICONTROL Speicherkonfiguration]**.
 
-   Wählen Sie das Standardprodukt- **[!UICONTROL Asset-Markenportal]** aus.
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![Profil auswählen](assets/service-account4.png)
 
@@ -144,7 +146,7 @@ Führen Sie die folgenden Schritte aus, um die Dienstkontoberechtigungen und die
 
    >[!NOTE]
    >
-   >Sie können die Anmeldeinformationen nach Bedarf Ansicht und andere Aktionen ausführen (JWT-Token generieren, Berechtigungsdetails kopieren, Clientgeheimnisse abrufen usw.).
+   >Sie können die Anmeldeinformationen nach Bedarf Ansicht und andere Aktionen ausführen (JWT-Token generieren, Berechtigungsdetails kopieren, Clientgeheimnis abrufen usw.).
 
 1. Kopieren Sie auf der Registerkarte &quot; **[!UICONTROL Clientanmeldeinformationen]** &quot;die **[!UICONTROL Client-ID]**.
 
@@ -237,7 +239,7 @@ Führen Sie die folgenden Schritte aus, um den Markenportal-Cloud-Dienst zu konf
 
 1. Melden Sie sich bei Ihrer AEM Assets-Cloud-Instanz an.
 
-1. Navigieren Sie im **Tool** ![Tools](assets/tools.png)-Bedienfeld zu **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Klicken Sie auf der Seite &quot;Markenportal-Konfigurationen&quot;auf **[!UICONTROL Erstellen]**.
 
@@ -257,7 +259,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration zu validieren:
 
 1. Melden Sie sich bei Ihrer AEM Assets-Cloud-Instanz an.
 
-1. Navigieren Sie im **Tool** ![Tools](assets/tools.png)-Bedienfeld zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Verteilung]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ In den Protokollen finden Sie detaillierte Informationen zu den Aktionen des Dis
 
 Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlicht, um die Konfiguration zu validieren.
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. Klicken Sie auf **[!UICONTROL Protokolle]**, um die Verteilungsprotokolle anzuzeigen. Hier können Sie die Verarbeitungs- und Fehlerprotokolle sehen.
 
