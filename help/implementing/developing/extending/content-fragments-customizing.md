@@ -1,29 +1,32 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 
 # Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
 
-In Adobe Experience Manager als Cloud-Dienst erweitert ein Inhaltsfragment ein Standard-Asset. siehe:
+In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein Standard-Asset. Siehe:
 
 * [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-* [Verwalten von Assets](/help/assets/manage-digital-assets.md) und [Anpassen und Erweitern des Asset-Editors](/help/assets/extend-asset-editor.md) .
+* Weitere Informationen zu Standard-Assets finden Sie unter [Verwalten von Assets](/help/assets/manage-digital-assets.md) und [Anpassen und Erweitern des Asset-Editors](/help/assets/extend-asset-editor.md).
 
 ## Architektur {#architecture}
 
-Ein Inhaltsfragment umfasst die folgenden grundlegenden[Bestandteile](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment):
+Ein Inhaltsfragment umfasst die folgenden grundlegenden [Bestandteile](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment):
 
-* A *Content Fragment*,
-* consisting of one or more *Content Elements*,
-* and which can have one or more *Content Variations*.
+* Ein *Inhaltsfragment*,
+* das ein oder mehrere *Inhaltselemente* enthält,
+* und eine oder mehrere *Inhaltsvarianten* aufweisen kann.
 
-Je nach Fragment-Typ werden auch Modelle oder die **Vorlage &quot;Einfaches Fragment** &quot;verwendet:
+Je nach Fragmenttyp werden außerdem Modelle oder die Vorlagen für **einfache Fragmente** verwendet:
 
 >[!CAUTION]
 >
@@ -40,25 +43,25 @@ Je nach Fragment-Typ werden auch Modelle oder die **Vorlage &quot;Einfaches Frag
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
    >[!NOTE]
    >
-   >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über `read` Berechtigungen für das Modell verfügen.
+   >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über `read`-Rechte für das Modell verfügen.
 
    >[!CAUTION]
    >
    >Alle Änderungen an einem vorhandenen Inhaltsfragmentmodell können sich auf abhängige Fragmente auswirken. Daher kann es zu verwaisten Eigenschaften in diesen Fragmenten kommen.
 
-* Inhaltsfragmentvorlage - **Einfaches Fragment**:
+* Inhaltsfragmentvorlage – **Einfaches Fragment**:
 
-   * werden zum Definieren von einfachen Inhaltsfragmenten verwendet.
+   * wird zum Definieren von einfachen Inhaltsfragmenten verwendet.
 
-   * Diese Vorlage definiert die (einfache, schreibgeschützte) Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
+   * Diese Vorlage definiert die (grundlegende, rein textbasierte) Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
 
    * Die Vorlage wird beim Erstellen in das Fragment kopiert.
 
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
 
-   * The Content fragment template (**Simple Fragment**) operates in a different manner to that of other templating mechanisms within the AEM ecosystem (e.g. page templates, etc.). Daher sollte sie gesondert betrachtet werden.
+   * Die Inhaltsfragmentvorlage (**Einfaches Fragment**) arbeitet anders als die anderen Vorlagen in der AEM-Umgebung (z. B. Seitenvorlagen usw.). Daher sollte sie separat berücksichtigt werden.
 
-   * When based on the **Simple Fragment** template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
+   * Bei der Verwendung der Vorlage **Einfaches Fragment** wird der MIME-Typ des Inhalts anhand des tatsächlichen Inhalts verwaltet. Dies bedeutet, dass jedes Element und jede Variante einen anderen MIME-Typ haben kann.
 
 ### Integration von Sites mit Assets {#integration-of-sites-with-assets}
 
@@ -68,35 +71,33 @@ Die Inhaltsfragmentverwaltung (Content Fragment Management, CFM) ist Teil von AE
 * Sie verwenden vorhandene Assets-Funktionen.
 * Sie sind vollständig mit Assets integriert (Admin-Konsole usw.).
 
-Inhaltsfragmente werden als Sites-Funktion wie folgt betrachtet:
+Inhaltsfragmente werden als Sites-Funktion betrachtet, da:
 
-* Sie werden beim Authoring Ihrer Seiten verwendet.
+* sie beim Authoring von Seiten verwendet werden.
 
 #### Zuordnen von strukturierten Inhaltsfragmenten zu Assets {#mapping-structured-content-fragments-to-assets}
 
-![Inhaltsfragment in Elementstruktur](assets/content-fragment-to-assets-structured.png)
+![Zuordnung von Inhaltsfragment zum Asset – strukturiert](assets/content-fragment-to-assets-structured.png)
 
 Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhaltsfragmentmodell) werden einem einzelnen Asset zugeordnet:
 
-* All content is stored under the `jcr:content/data` node of the asset:
+* Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
-   * Die Elementdaten werden unter dem Master-Unterknoten gespeichert:
+   * Die Elementdaten werden im Master-Unterknoten gespeichert:
       `jcr:content/data/master`
 
-   * Variations are stored under a sub-node that carries the name of the variation:
-e.g. `jcr:content/data/myvariation`
+   * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:
+z. B. `jcr:content/data/myvariation`
 
-   * The data of each element is stored in the respective sub-node as a property with the element name:
-e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
+   * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert: Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
-* Metadata and associated content is stored below `jcr:content/metadata`
-Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
 
 #### Zuordnen von einfachen Inhaltsfragmenten zu Assets {#mapping-simple-content-fragments-to-assets}
 
-![Inhaltsfragment in Assets einfach](assets/content-fragment-to-assets-simple.png)
+![Zuordnung von Inhaltsfragment zum Asset – einfach](assets/content-fragment-to-assets-simple.png)
 
-Simple content fragments (based on the **Simple Fragment** template) are mapped to a composite consisting of a main asset and (optional) sub-assets:
+Einfache Inhaltsfragmente (basierend auf der Vorlage **Einfaches Fragment**) werden einem Verbund (Composite) aus Haupt-Asset und (optionalen) Unter-Assets zugeordnet:
 
 * Alle nicht inhaltsbezogenen Daten in einem Fragment (wie Titel, Beschreibung, Metadaten, Struktur) werden nur im Haupt-Asset verwaltet.
 * Der Inhalt des ersten Elements eines Fragments wird dem ursprünglichen Ausgabeformat des Haupt-Assets zugeordnet.
@@ -105,10 +106,10 @@ Simple content fragments (based on the **Simple Fragment** template) are mapped 
 
 * Zusätzliche Elemente (falls vorhanden) werden Unter-Assets des Haupt-Assets zugeordnet.
 
-   * Der Hauptinhalt dieser zusätzlichen Elemente wird der ursprünglichen Darstellung des jeweiligen Unterassets zugeordnet.
+   * Der Hauptinhalt dieser zusätzlichen Elemente wird dem ursprünglichen Ausgabeformat des jeweiligen Unter-Assets zugeordnet.
    * Andere Varianten (falls zutreffend) zusätzlicher Elemente werden anderen Ausgabeformaten der jeweiligen Unter-Assets zugeordnet.
 
-#### Asset-Speicherort {#asset-location}
+#### Asset-Speicherort     {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -116,27 +117,27 @@ Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
 #### Asset-Berechtigungen {#asset-permissions}
 
-Weitere Informationen finden Sie unter [Inhaltsfragment - Überlegungen](/help/assets/content-fragments/content-fragments-delete.md)löschen.
+Weitere Informationen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Funktionsintegration {#feature-integration}
 
-Integration mit Assets core:
+Integration mit dem Assets-Kern:
 
-* Die Funktion &quot;Inhaltsfragment-Management (CFM)&quot;baut auf dem Asset-Kern auf.
+* Die Funktion „Inhaltsfragmentverwaltung“ (Content Fragment Management, CFM) baut auf dem Asset-Kern auf.
 
-* CFM stellt eigene Implementierungen für Elemente in den Ansichten &quot;card/column/Liste&quot;bereit. diese Plug-ins in die vorhandenen Asset Content Rendering-Implementierungen.
+* CFM stellt eigene Implementierungen für Elemente in der Karten-, Spalten- und Listenansicht bereit. Diese sind mit den Ausgabeformatimplementierungen vorhandener Asset-Inhalte verknüpft.
 
-* Mehrere Assets-Komponenten wurden erweitert, um Inhaltsfragmente zu berücksichtigen.
+* Einige Asset-Komponenten wurden für Inhaltsfragmente erweitert.
 
 ### Verwenden von Inhaltsfragmenten in Seiten {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
->Die Komponente [Inhaltsfragment ist Teil der Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/developing.html).
+>Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html)**bereit, eine[Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this**[Content Fragment](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/developing.html)** core component.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)**bereit, eine[Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für**[Inhaltsfragmente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
 
-* Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
+* Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
 * Mit der Komponente können Sie die Variante auswählen, die angezeigt werden soll.
 
@@ -148,9 +149,9 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 
    * Bei Zwischeninhalten müssen Sie:
 
-      * Kenntnis der Möglichkeit instabiler Verweise; Zwischen-Inhalt (der beim Authoring einer Seite hinzugefügt wird) hat keine feste Beziehung zu dem Absatz, neben dem er positioniert wird, und fügt einen neuen Absatz (im Inhaltsfragmenteditor) ein, bevor die Position des dazwischen liegenden Inhalts die relative Position verlieren kann
+      * beachten, dass Verweise möglicherweise instabil sind. Bei der Seitenbearbeitung hinzugefügte Zwischeninhalte haben keine feste Beziehung zu dem Absatz, neben dem sie platziert werden; es wird ein neuer Absatz (im Inhaltsfragment-Editor) eingefügt, bevor der Zwischeninhalt die relative Position verlieren kann.
 
-      * Berücksichtigen Sie die zusätzlichen Parameter (z. B. Variation und Absatz-Filter), um zu konfigurieren, was auf der Seite wiedergegeben wird.
+      * die zusätzlichen Parameter (wie Varianten- und Absatzfilter) berücksichtigen, um zu konfigurieren, was auf der Seite dargestellt wird.
 
 >[!NOTE]
 >
@@ -158,9 +159,9 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 >
 >Bei Verwendung eines auf einem Inhaltsfragmentmodell basierenden Inhaltsfragments auf einer Seite wird auf das Modell verwiesen. Falls das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell zu den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
 >
->**Inhaltsfragment-Vorlage - Einfaches Fragment:**
+>**Inhaltsfragmentvorlage – Einfaches Fragment:**
 >
->When using a content fragment that has been based on the content fragment template **Simple Fragment** on a page, there is no reference as the template was copied when creating the fragment.
+>Bei Verwendung eines auf der Inhaltsfragmentvorlage **Einfaches Fragment** basierten Inhaltsfragments auf einer Seite erfolgt kein Verweis, da die Vorlage beim Erstellen des Fragments kopiert wurde.
 
 ### Integration mit anderen Frameworks {#integration-with-other-frameworks}
 
@@ -168,15 +169,15 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 * **Übersetzungen**
 
-   Inhaltsfragmente sind vollständig in den AEM-Übersetzungs-Workflow integriert. Auf Architekturebene bedeutet dies:
+   Inhaltsfragmente sind vollständig mit dem AEM-Übersetzungs-Workflow integriert. Auf Architekturebene bedeutet dies:
 
    * Die einzelnen Übersetzungen eines Inhaltsfragments sind separate Fragmente, z. B.:
 
-      * sie befinden sich unter verschiedenen sprachlichen Wurzeln; aber verwenden Sie genau denselben relativen Pfad unterhalb des entsprechenden Sprachstamms:
+      * sie befinden sich unter verschiedenen Sprachstämmen, verwenden aber genau denselben relativen Pfad unterhalb des entsprechenden Sprachstamms:
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs.
+         im Vergleich zu
 
          `/content/dam/<path>/de/<to>/<fragment>`
    * Außer den regelbasierten Pfaden besteht keinerlei Verbindung zwischen den unterschiedlichen Sprachversionen von Inhaltsfragmenten. Sie werden als zwei separate Fragmente behandelt, obwohl die Benutzeroberfläche Funktionen zum Navigieren zwischen den Sprachvarianten beinhaltet.
@@ -184,7 +185,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
    >
    >Der AEM-Übersetzungs-Workflow arbeitet mit `/content`:
    >
-   >* As the content fragment models reside in `/conf`, these are not included in such translations. Sie können die Strings der Benutzeroberfläche internationalisieren.
+   >* Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können die Strings der Benutzeroberfläche internationalisieren.
 
 
 * **Metadatenschemata**
@@ -195,11 +196,11 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
       `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      kann bei Bedarf erweitert werden.
+      dieses kann bei Bedarf erweitert werden.
 
    * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
 
-## Serverseitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung     {#the-content-fragment-management-api-server-side}
 
 Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -209,11 +210,11 @@ Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwende
 >
 >Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen {#key-interfaces}
+### Hauptschnittstellen     {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
-* **Inhaltsfragment** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhaltsfragment** ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
@@ -225,9 +226,9 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
       * Auflisten von Elementen
       * Abrufen von Elementen nach Name
-      * Create new elements (see [Caveats](#caveats))
+      * Erstellen neuer Elemente (siehe [Einschränkungen](#caveats))
 
-      * Access element data (see `ContentElement`)
+      * Zugriff auf Elementdaten (siehe `ContentElement`)
    * Auflisten der für das Fragment definierten Varianten
    * Globales Erstellen neuer Varianten
    * Verwalten zugeordneter Inhalte:
@@ -247,15 +248,15 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
          * Auflisten von Varianten
          * Abrufen von Varianten nach Name
          * Erstellen neuer Varianten (siehe [Einschränkungen](#caveats))
-         * Remove variations (see [Caveats](#caveats))
-         * Access variation data (see `ContentVariation`)
+         * Entfernen von Varianten (siehe [Einschränkungen](#caveats))
+         * Zugriff auf Variantendaten (siehe `ContentVariation`)
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
    * **Inhaltsvariante** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
       * Einfache Synchronisierung basierend auf den zuletzt geänderten Informationen
-   All three interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) extend the `Versionable` interface, which adds versioning capabilities, required for content fragments:
+   Alle drei Schnittstellen (`ContentFragment`, `ContentElement`, `ContentVariation`) erweitern die `Versionable`-Schnittstelle durch zusätzliche, für Inhaltsfragmente erforderliche Versionierungsfunktionen:
 
    * Erstellen neuer Versionen des Elements
    * Auflisten der Versionen des Elements
@@ -267,64 +268,64 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo () {#adapting-using-adaptto}
+### Anpassen mit adaptTo()     {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
-* `ContentFragment` können angepasst werden an:
+* `ContentFragment` kann angepasst werden an:
 
-   * `Resource` - die zugrunde liegende Sling - Ressource; Um das zugrunde liegende Objekt `Resource` direkt zu aktualisieren, muss das `ContentFragment` Objekt neu erstellt werden.
+   * `Resource`: die zugrunde liegende Sling-Ressource. Um die zugrunde liegende `Resource` direkt zu aktualisieren, muss das `ContentFragment`-Objekt neu erstellt werden.
 
-   * `Asset` - die DAM- `Asset` Abstraktion, die das Inhaltsfragment darstellt; Das `Asset` direkte Aktualisieren des Objekts erfordert eine erneute Erstellung des `ContentFragment` Objekts.
+   * `Asset`: die DAM-`Asset`-Abstrahierung, die für das Inhaltsfragment steht. Um das zugrunde liegende `Asset` direkt zu aktualisieren, muss das `ContentFragment`-Objekt neu erstellt werden.
 
-* `ContentElement` können angepasst werden an:
+* `ContentElement` kann angepasst werden an:
 
    * `ElementTemplate` – für den Zugriff auf die Strukturdaten des Elements.
 
-* `Resource` können angepasst werden an:
+* `Resource` kann angepasst werden an:
 
    * `ContentFragment`
 
 ### Einschränkungen {#caveats}
 
-Bitte beachten Sie Folgendes:
+Beachten Sie Folgendes:
 
 * Die gesamte API ist so konzipiert, dass Änderungen **nicht** automatisch persistent gespeichert werden (es sei denn, dies ist anders in der Java-Dokumentation der API angegeben). Daher müssen Sie immer den Ressourcenkonfliktlöser der entsprechenden Anfrage (oder den tatsächlich verwendeten Konfliktlöser) festlegen.
 
 * Aufgaben, für die möglicherweise zusätzliche Arbeitsschritte erforderlich sind:
 
-   * Erstellen Sie neue Varianten von `ContentFragment` zur Aktualisierung der Datenstruktur.
+   * Erstellen Sie neue Varianten von `ContentFragment`, um die Datenstruktur zu aktualisieren.
 
-   * Wenn Sie vorhandene Varianten durch ein Element entfernen, `ContentElement.removeVariation()`werden die globalen Datenstrukturen, die der Änderung zugewiesen sind, nicht aktualisiert. Um sicherzustellen, dass diese Datenstrukturen synchron bleiben, verwenden Sie `ContentFragment.removeVariation()` stattdessen die Option, mit der eine Variation global entfernt wird.
+   * Durch das Entfernen vorhandener Varianten eines Elements mithilfe von `ContentElement.removeVariation()` werden die der Variante zugewiesenen globalen Datenstrukturen nicht aktualisiert. Verwenden Sie stattdessen `ContentFragment.removeVariation()`, um sicherzustellen, dass diese Datenstrukturen synchron bleiben, wodurch eine Variante global entfernt wird.
 
-## Clientseitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung     {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
->Die clientseitige API ist intern.
+>Die Client-seitige API ist intern.
 
 ### Zusätzliche Informationen {#additional-information}
 
-Beachten Sie Folgendes
+Beachten Sie Folgendes:
 
 * `filter.xml`
 
-   The `filter.xml` for content fragment management is configured so that it does not overlap with the Assets core content package.
+   `filter.xml` für die Inhaltsfragmentverwaltung ist so konfiguriert, dass es sich nicht mit dem Hauptinhaltspaket für Assets überschneidet.
 
 ## Bearbeitungssitzungen {#edit-sessions}
 
 >[!CAUTION]
 >
->Bitte beachten Sie diese Hintergrundinformationen. Sie sollten hier nichts ändern (da es im Repository als *privater Bereich* gekennzeichnet ist), aber es kann in einigen Fällen hilfreich sein, zu verstehen, wie die Dinge unter der Haube funktionieren.
+>Beachten Sie diese Hintergrundinformationen. Sie sollten hier nichts ändern (da dies im Repository als *privater Bereich* gekennzeichnet ist). Es kann aber in einigen Fällen hilfreich sein, die internen Prozesses zu verstehen.
 
-Die Bearbeitung eines Inhaltsfragments, das mehrere Ansichten umfassen kann (= HTML-Seiten), ist atomisch. Da die atomaren Bearbeitungsfunktionen für mehrere Ansichten kein typisches AEM-Konzept sind, verwenden Inhaltsfragmente eine so genannte *Bearbeitungssitzung*.
+Das Bearbeiten eines Inhaltsfragments, das mehrere Ansichten (d. h. HTML-Seiten) umspannen kann, ist atomisch. Da die atomischen Bearbeitungsfunktionen für mehrere Ansichten kein typisches AEM-Konzept sind, verwenden Inhaltsfragmente eine sogenannte *Bearbeitungssitzung*.
 
 Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment im Editor öffnet. Die Bearbeitungssitzung ist beendet, wenn der Benutzer den Editor durch Auswählen von **Speichern** oder **Abbrechen** verlässt.
 
-Technisch gesehen werden alle Änderungen an *Live* -Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung für *Live* -Inhalte ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medienelementen).
+Technisch gesehen werden alle Änderungen an *Live*-Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung an *Live*-Inhalten ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medien-Assets).
 
-Es gibt einige Sicherheitsmaßnahmen für Fallschutzsysteme an den Kanten. Wenn der Benutzer beispielsweise versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
-Beachten Sie, dass zwei Benutzer dasselbe Inhaltsfragment gleichzeitig bearbeiten können und daher alle anderen Änderungen überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Kassengang* der DAM-Verwaltung auf das Fragment angewendet wird.
+Es gibt einige Sicherheitsmaßnahmen für Randfälle, beispielsweise, wenn der Benutzer versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
+Beachten Sie, dass zwei Benutzer möglicherweise dasselbe Inhaltsfragment gleichzeitig bearbeiten und daher gegenseitig die Änderungen überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die *Checkout*-Aktion der DAM-Verwaltung auf das Fragment angewendet wird.
 
 ## Beispiele {#examples}
 
@@ -346,9 +347,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments     {#example-creating-a-new-content-fragment}
 
-Um ein neues Inhaltsfragment programmgesteuert zu erstellen, müssen Sie ein`FragmentTemplate` adaptives Modell oder eine Vorlagenressource verwenden.
+Um ein neues Inhaltsfragment zu programmieren, verwenden Sie eine `FragmentTemplate`, die von einem Modell oder einer Vorlagenressource angepasst wurde.
 
 Beispiel:
 
@@ -358,19 +359,19 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern     {#example-specifying-the-auto-save-interval}
 
-The [auto save interval](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
+Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
-* Node: `<conf-root>/settings/dam/cfm/jcr:content`
+* Knoten: `<conf-root>/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`
 * Typ: `Long`
 
-* Default: `600` (10 minutes); this is defined on `/libs/settings/dam/cfm/jcr:content`
+* Standard: `600` (10 Minuten); wird definiert in `/libs/settings/dam/cfm/jcr:content`
 
 Wenn Sie ein Intervall von 5 Minuten für das automatische Speichern festlegen möchten, müssen Sie die Eigenschaft auf dem Knoten definieren. Beispiel:
 
-* Node: `/conf/global/settings/dam/cfm/jcr:content`
+* Knoten: `/conf/global/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`
 
 * Typ: `Long`
@@ -381,4 +382,4 @@ Wenn Sie ein Intervall von 5 Minuten für das automatische Speichern festlegen m
 
 Weitere Informationen finden Sie unter
 
-* [Kernkomponenten – Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
+* [Kernkomponenten – Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
