@@ -1,21 +1,24 @@
 ---
 title: Die Tools-Konsolen
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 
 # Die Tools-Konsolen{#tools-consoles}
 
-Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können.
+Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können.
 
 Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel) zugegriffen werden.
 
 >[!NOTE]
 >
->Da die Karten in der Benutzeroberfläche Details zum Zweck der einzelnen Optionen enthalten, bietet diese Tabelle einen schnellen Überblick über die Position der Funktionen im Bedienfeld &quot;Werkzeuge&quot;.
+>Da die Karten in der Benutzeroberfläche Details zum Zweck jeder Option bereitstellen, bietet diese Tabelle einfach einen Überblick über die Position der Funktionen im Tools-Bedienfeld.
 
 <table>
  <thead>
@@ -51,7 +54,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Konfigurationsbrowser</td>
+   <td>Konfigurations-Browser</td>
   </tr>
   <tr>
    <td> </td>
@@ -59,7 +62,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Jobs</td>
+   <td>Aufträge</td>
   </tr>
   <tr>
    <td>Workflow</td>
@@ -110,7 +113,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
    <td>Prüfer für externe Links<br /> </td>
   </tr>
   <tr>
-   <td>Assets </td>
+   <td>Assets</td>
    <td> </td>
   </tr>
   <tr>
@@ -123,7 +126,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Metadatenschemata  </td>
+   <td>Metadatenschemata</td>
   </tr>
   <tr>
    <td> </td>
@@ -195,7 +198,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>OAuth Clients</td>
+   <td>OAuth-Clients</td>
   </tr>
   <tr>
    <td> </td>
@@ -227,7 +230,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Konfiguration dynamischer Medien</td>
+   <td>Dynamic Media-Konfiguration</td>
   </tr>
   <tr>
    <td> </td>
@@ -239,7 +242,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>BrightEdge-Inhaltsoptimierung</td>
+   <td>BrightEdge Content Optimizer</td>
   </tr>
   <tr>
    <td>Betrieb</td>
@@ -255,7 +258,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Testen</td>
+   <td>Tests</td>
   </tr>
   <tr>
    <td> </td>
