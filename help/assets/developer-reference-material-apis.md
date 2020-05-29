@@ -2,8 +2,11 @@
 title: 'Assets-APIs für Digital Asset Management in Adobe Experience Manager as a Cloud Service '
 description: Asset-APIs ermöglichen grundlegende CRUD-Operationen (Create-Read-Update-Delete – Erstellen-Lesen-Aktualisieren-Löschen) zur Verwaltung von Assets, einschließlich Binär- und Metadaten, Ausgabeformaten, Kommentaren und Inhaltsfragmenten.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Wichtige Unterschiede im Vergleich zu früheren Versionen von AEM sind unter and
 Dieser Ansatz sollte eine skalierbarere und leistungsfähigere Handhabung von Asset-Uploads bieten.
 
 > !![NOTE]
-To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
+Den Client-Code, der diesen Ansatz implementiert, können Sie in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload) einsehen.
 
 ### Initiieren des Uploads {#initiate-upload}
 
@@ -55,7 +58,7 @@ Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Form
 * `(string) fileName`: Erforderlich. Der Name des Assets, wie er in der Instanz angezeigt wird.
 * `(number) fileSize`: Erforderlich. Die Gesamtlänge der hochzuladenden Binärdatei in Byte.
 
-Eine einzelne Anforderung kann verwendet werden, um Uploads für mehrere Binärdateien zu starten, sofern jede Binärdatei die erforderlichen Felder enthält. If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
+Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdateien zu initiieren, solange jede Binärdatei die erforderlichen Felder enthält. Bei Erfolg wird die Anfrage mit einem `201`-Status-Code und einem Text mit JSON-Daten im folgenden Format beantwortet:
 
 ```
 {
@@ -74,15 +77,15 @@ Eine einzelne Anforderung kann verwendet werden, um Uploads für mehrere Binärd
 }
 ```
 
-* `completeURI` (Zeichenfolge): Rufen Sie diesen URI auf, wenn das Hochladen der Binärdatei abgeschlossen ist. Der URI kann ein absoluter oder relativer URI sein, und Clients sollten in der Lage sein, beides zu handhaben. Das heißt, der Wert kann `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` Siehe [vollständiger Upload](#complete-upload)sein.
-* `folderPath` (Zeichenfolge): Vollständiger Pfad zu dem Ordner, in den die Binärdatei hochgeladen wird.
-* `(files)` (Array): Eine Liste von Elementen, deren Länge und Reihenfolge mit der Liste der binären Informationen übereinstimmen, die in der Initiierungsanforderung bereitgestellt werden.
-* `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie er in der Anfrage zum Initiieren angegeben ist. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
-* `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie in der In-Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
+* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
+* `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
+* `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
+* `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
+* `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie in der Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
-* `uploadURIs` (Array): Eine Liste von Zeichenfolgen, deren Werte vollständige URIs sind, auf die der binäre Inhalt hochgeladen werden soll (siehe Binärdatei [hochladen](#upload-binary)).
-* `minPartSize` (Nummer): Die Mindestlänge (in Byte) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
-* `maxPartSize` (Nummer): Die maximale Länge (in Byte) von Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehrere URIs vorhanden sind.
+* `uploadURIs` (Array): Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, in die der binäre Inhalt hochgeladen werden soll (siehe [Hochladen der Binärdatei](#upload-binary)).
+* `minPartSize` (Zahl): Die Mindestlänge (in Bytes) der Daten, die für einen der Upload-URIs bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
+* `maxPartSize` (Zahl): Die maximale Länge (in Bytes) der Daten, die für einen der Upload-URIs bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
 
 ### Hochladen der Binärdatei {#upload-binary}
 
@@ -92,27 +95,27 @@ Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend 
 
 * Berechnen Sie die Teilegröße, indem Sie die Gesamtgröße durch die Anzahl der URIs teilen: 20.000 / 2 = 10.000
 * POST-Byte-Bereich 0-9.999 der Binärdatei zur ersten URI in der Liste der Upload-URIs
-* POST-Byte-Bereich 10.000-19.999 der Binärdatei zur zweiten URI in der Liste der Upload-URIs
+* POST-Byte-Bereich 10.000-19.999 der Binärdatei zum zweiten URI in der Liste der Upload-URIs
 
 Bei erfolgreicher Ausführung antwortet der Server auf jede Anfrage mit Status-Code `201`.
 
 ### Abschließen des Hochladens {#complete-upload}
 
-Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP POST-Anforderung an den vollständigen URI, der von den Initiierungsdaten bereitgestellt wird. Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten.
+Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-POST-Anfrage an den vollständigen URI, der von den Initiierungsdaten bereitgestellt wird. Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten.
 
-| Felder | Typ | Erforderlich oder nicht | Beschreibung |
+| Felder | Typ | Erforderlich | Beschreibung |
 |---|---|---|---|
 | `fileName` | Zeichenfolge | Erforderlich | Der Name des Assets, wie in den Initiierungsdaten angegeben. |
 | `mimeType` | Zeichenfolge | Erforderlich | Der HTTP-Content-Typ der Binärdatei, wie in den Initiierungsdaten angegeben. |
 | `uploadToken` | Zeichenfolge | Erforderlich | Upload-Token für die Binärdatei, wie in den Initiierungsdaten angegeben. |
-| `createVersion` | Boolesch | Optional | If `True` and an asset with the specified name already exists, then Experience Manager creates a new version of the asset. |
-| `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die mit der neuen Version eines Assets verknüpfte Beschriftung . |
-| `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die mit der Version verknüpften Kommentare. |
-| `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits vorhanden ist, löscht Experience Manager das Asset und erstellt es dann erneut. |
+| `createVersion` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits existiert, erstellt die Instanz eine neue Version des Assets. |
+| `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
+| `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
+| `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits existiert, löscht Experience Manager das Asset und erstellt es dann erneut. |
 
 >!![NOTE]
 >
-> If the asset already exists and neither `createVersion` nor `replace` is specified, then Experience Manager updates the asset&#39;s current version with the new binary.
+> Wenn das Asset bereits existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert Experience Manager die aktuelle Version des Assets mit der neuen Binärdatei.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
@@ -122,36 +125,36 @@ Bei erfolgreicher Ausführung antwortet der Server mit Status-Code `200`.
 
 ### Open-Source-Upload-Bibliothek {#open-source-upload-library}
 
-Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripten und -Tools zu erstellen, stellt Adobe Open-Source-Bibliotheken und -Tools als Ausgangspunkt bereit:
+Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripte und -Tools zu erstellen, stellt Adobe Open-Source-Bibliotheken und -Tools als Ausgangspunkt bereit:
 
-* [Open-Source-Bibliothek für AEM-Upload](https://github.com/adobe/aem-upload)
-* [Open-Source-Befehlszeilenwerkzeug](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload)
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### Veraltete APIs zum Hochladen von Assets {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Für Adobe Experience Manager als Cloud-Dienst werden nur die neuen Upload-APIs unterstützt. Die APIs von Adobe Experience Manager 6.5 werden nicht mehr unterstützt. Die Methoden zum Hochladen oder Aktualisieren von Assets oder Darstellungen (binärer Upload) werden in den folgenden APIs nicht mehr unterstützt:
+Für Adobe Experience Manager as a Cloud Service werden nur die neuen Upload-APIs unterstützt. Die APIs aus Adobe Experience Manager 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabeformaten (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
 
 * [AEM Assets-HTTP-API](mac-api-assets.md)
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Open-Source-Bibliothek](https://github.com/adobe/aem-upload)zum Hochladen von AEM-Dateien.
-* [Open-Source-Befehlszeilenwerkzeug](https://github.com/adobe/aio-cli-plugin-aem).
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
 
-In Experience Manager basiert die Asset-Verarbeitung auf der **[!UICONTROL Verarbeitungskonfiguration für Profil]** , die [Asset-Mikrodienste](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)verwendet. Für die Verarbeitung sind keine Entwicklererweiterungen erforderlich.
+In Experience Manager basiert die Asset-Verarbeitung auf der Konfiguration von **[!UICONTROL Verarbeitungsprofilen]**, die [Asset-Microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) verwendet. Für die Verarbeitung sind keine Entwicklererweiterungen erforderlich.
 
-Für die Konfiguration des Arbeitsablaufs nach der Verarbeitung verwenden Sie die standardmäßige Workflows mit Erweiterungen mit benutzerdefinierten Schritten.
+Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefinierten Schritten für die Konfiguration des Nachbearbeitungs-Workflows.
 
-## Unterstützung von Workflow-Schritten im Arbeitsablauf nach der Verarbeitung {#post-processing-workflows-steps}
+## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Kunden, die von früheren Versionen von Experience Manager auf Experience Manager als Cloud-Dienst aktualisieren, können Asset-Mikrodienste zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Mikrodienste sind viel einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die in der vorherigen Version im Arbeitsablauf [!UICONTROL DAM Update Asset] verwendet wurden, werden nicht unterstützt.
+Kunden, die von früheren Versionen auf Experience Manager as a Cloud Service aktualisieren, können Asset-Microservices für die Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
 
-Die folgenden Arbeitsablaufschritte werden in Experience Manager als Cloud-Dienst unterstützt.
+Die folgenden Workflow-Schritte werden in Experience Manager as a Cloud Service unterstützt.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
