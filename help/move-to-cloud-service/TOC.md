@@ -2,7 +2,7 @@
 sub-product: Wechsel zu AEM als Cloud-Dienst
 user-guide-title: Wechsel zu AEM als Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 5%
