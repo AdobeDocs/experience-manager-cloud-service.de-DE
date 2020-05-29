@@ -1,8 +1,11 @@
 ---
 title: Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +30,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
 >[!NOTE]
 >
->Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In AEM kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud-Dienste eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie dynamische Medien aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit dynamischen Medien]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine dynamischen Medien verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+>Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In AEM kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud-Dienste eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie dynamische Medien aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit dynamischen Medien]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine dynamischen Medien verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 >
 >Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das AEM-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie sehen die generierten Miniaturansichten, wenn Sie auf das Ausgabeformat-Symbol (eine Malerpalette) eines kodierten Videos tippen.
 
@@ -51,7 +54,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate   (Kbit/s)</strong></td>
+   <td><strong>Audiobitrate     (Kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -171,8 +174,8 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
    * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld &quot;Name&quot;einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht identifizieren können.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
+   * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -218,14 +221,14 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wiederholen Sie Schritt 4 bis 9, um weitere Kodierungsvorgaben zu erstellen.
+   * Wiederholen Sie die Schritte 4 bis 9, um weitere Codierungsvorgaben zu erstellen.
    * Fahren Sie mit dem nächsten Schritt fort.
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
 
    * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld &quot;Name&quot;einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht identifizieren können.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
+   * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -348,7 +351,7 @@ Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Strea
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]**.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
-## Anwenden eines Videoprofils auf Ordner   {#applying-a-video-profile-to-folders}
+## Anwenden eines Videoprofils auf Ordner     {#applying-a-video-profile-to-folders}
 
 Wenn Sie ein Videoprofil einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
@@ -366,7 +369,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten auf Ordner anwenden.
 
-Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
 
@@ -381,7 +384,7 @@ Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, auf den Sie ein Videoprofil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
@@ -423,5 +426,5 @@ Sie können ein Videoprofil aus einem Ordner im Menü **[!UICONTROL Tools]** ent
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
 1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften**.
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
