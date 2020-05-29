@@ -1,15 +1,18 @@
 ---
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 
 # Inhaltsfragmente {#content-fragments}
 
-Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud-Dienst werden als seitenunabhängige Assets [erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
+Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden als [seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
 
 Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -48,7 +51,7 @@ Inhaltsfragmente ermöglichen:
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite   {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite     {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 2. Fügen Sie die **Inhaltsfragmentkomponente** hinzu; entweder aus dem **Komponenten-Browser** oder mit **Neue Komponente einfügen**.
@@ -98,7 +101,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
       * **Überschriften als separate Absätze behandeln**
 * **Überschriften als separate Absätze behandeln**
 
-### Schnelle Verbindung zum Fragmenteditor   {#quick-connection-to-fragment-editor}
+### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
@@ -106,7 +109,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 >
 >Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-### Hinzufügen von Zwischeninhalten   {#adding-in-between-content}
+### Hinzufügen von Zwischeninhalten     {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -141,7 +144,7 @@ Bei Zwischeninhalten können Sie:
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
 
-### Verwenden von zugehörigen Inhalten   {#using-associated-content}
+### Verwenden von zugehörigen Inhalten     {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Content Fragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
