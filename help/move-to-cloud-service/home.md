@@ -2,7 +2,7 @@
 title: Wechsel zu AEM als Cloud-Dienst
 description: Adobe Experience Manager als Cloud-Dienst, der auf AEM als Cloud-Dienst-Selbsthilfe- und Dokumentationslinks umstellt
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## Vorteile des Übergangs zu AEM als Cloud-Dienst {#benefits-aem-moving-to-aem-guide}
 
