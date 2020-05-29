@@ -1,8 +1,11 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -119,7 +122,7 @@ Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Ze
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. Eine Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -247,7 +250,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite   {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite     {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -265,14 +268,14 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    >Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Das Symbol &quot; **Einfügen** &quot;ist mit einem Dropdownpfeil direkt rechts verfügbar:
+1. Das Symbol **Einfügen** ist mit einem Dropdown-Pfeil direkt rechts verfügbar:
 
    ![Einfügen](/help/sites-cloud/authoring/assets/paste.png)
 
-   Wählen Sie eine der folgenden Möglichkeiten:
+   Wählen Sie eine der folgenden Möglichkeiten aus:
 
-   1. Wählen Sie das Symbol **Seite einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
-   1. Wählen Sie den Dropdownpfeil aus, um die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. untergeordnete Seiten werden nicht kopiert.
+   1. Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
+   1. Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
    >[!NOTE]
    >
    >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
@@ -367,13 +370,13 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    >[!NOTE]
    >
-   >Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
+   >Als Sicherheitsmaßnahme ist das Symbol **Löschen** nicht per Schnellzugriff verfügbar.
 
-1. Ein Dialogfeld wird zur Bestätigung aufgerufen.
+1. Ein Bestätigungsdialogfeld wird angezeigt.
 
-   ![Dialogfeld löschen](/help/sites-cloud/authoring/assets/delete-page.png)
+   ![Dialogfeld „Löschen“](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
+   * **Möchten Sie Seiten vor dem Löschen archivieren?** – Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-cloud/authoring/features/page-versions.md)
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
