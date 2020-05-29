@@ -1,8 +1,11 @@
 ---
 title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Inhaltsfragmente – Überlegungen zum Löschen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -37,7 +40,7 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 
 ## Nur für Editor-Funktionen erforderliche Berechtigungen {#permissions-required-for-editor-functionality-only}
 
-Benutzern, die ein Inhaltsfragment bearbeiten/aktualisieren müssen, **ohne dass sie ein ganzes Fragment löschen können**, müssen spezifische Berechtigungen zugewiesen werden, da für den grundlegenden Vorgang des Inhaltsfragment-Editors das Löschen von Übergangsunterelementen erforderlich ist.
+Benutzer, die ein Fragment bearbeiten oder aktualisieren müssen, **aber keine kompletten Fragmente löschen dürfen**, benötigen bestimmte Berechtigungen, da die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können.
 
 Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
