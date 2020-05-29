@@ -1,8 +1,11 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
    + [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
-   + [Suchen nach Assets](search-assets.md)
+   + [Suchen von Assets](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags](smart-tags.md)
    + [Organisieren von Assets](organize-assets.md)
@@ -94,7 +97,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
    + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](dynamic-media/launch.md)
    + [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](dynamic-media/custom-pop-ups.md)
-   + [Bereitstellen von optimierten Bildern für eine responsive Website](dynamic-media/responsive-site.md)
+   + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](dynamic-media/previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
