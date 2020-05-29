@@ -1,8 +1,11 @@
 ---
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -22,14 +25,14 @@ Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um i
 
 In diesem Abschnitt werden Funktionen aufgeführt, die in Adobe Experience Manager as a Cloud Service als veraltet gekennzeichnet wurden. In der Regel werden Funktionen, die in einer künftigen Version entfernt werden sollen, zuerst als veraltet gekennzeichnet, wobei eine Alternative bereitgestellt wird.
 
-Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderungen ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
+Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
-| Assets | `DAM Asset Update` Arbeitsablauf zur Verarbeitung von erfassten Bildern. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
-| Assets | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Assets | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie ImageMagick.. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| Assets  | Fmpeg-Transkodierung von Videos. | Verwenden Sie für die Erstellung von Miniaturbildern des Formats [Asset Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie zum Transkodieren von FFmpeg [dynamische Medien](/help/assets/manage-video-assets.md). |
+| Assets | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
+| Assets | Assets können direkt in AEM hochgeladen werden. Weitere Informationen dazu finden Sie im Abschnitt zu [veralteten Upload-APIs für Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Assets | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie ImageMagick. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Assets | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturansichten [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -37,7 +40,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus Adobe Experience Mana
 
 | Bereich | Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
-| Benutzeroberfläche | Während einige Dialogfelder der klassischen Benutzeroberfläche für ausgewählte Funktionen wie Prüfer für externe Links, Versionsbereinigung und einige Cloud-Service-Konfigurationen vorerst weiterhin verfügbar sind, kann generell nicht mehr auf die klassische Benutzeroberfläche in der AEM-Produkt-Benutzeroberfläche zugegriffen werden. | Standard-Benutzeroberfläche |
+| Benutzeroberfläche | Während einige Dialogfelder der klassischen Benutzeroberfläche für ausgewählte Funktionen wie Prüfer für externe Links, Versionsbereinigung und einige Cloud Service-Konfigurationen vorerst weiterhin verfügbar sind, kann generell nicht mehr auf die klassische Benutzeroberfläche in der AEM-Produkt-Benutzeroberfläche zugegriffen werden. | Standard-Benutzeroberfläche |
 | Dynamic Media | Frühere Integrationen mit [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/scene7.html) und dem [Dynamic Media-Hybridmodus](https://helpx.adobe.com/de/experience-manager/6-5/assets/using/config-dynamic.html) sind nicht in AEM as a Cloud Service verfügbar. | Verwenden Sie die mit Adobe Experience Manager as a Cloud Service bereitgestellte [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)-Funktion. |
 | Sites | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit AEM 6.4 als veraltet und wurden nun aus AEM entfernt. |
 | Sites | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des AEM-Repositorys nicht zur Laufzeit zugegriffen werden kann. |
