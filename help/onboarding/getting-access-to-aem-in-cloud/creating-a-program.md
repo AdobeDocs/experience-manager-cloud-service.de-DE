@@ -2,7 +2,7 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
 1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot; **Zur Produktion** einrichten&quot;, um ein normales Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er &quot; **Weiter**&quot;auswählt.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. Der Benutzer wählt die Lösungen aus, die in das Programm auf dem Bildschirm, der nach oben angezeigt wird, aufgenommen werden sollen.
 
