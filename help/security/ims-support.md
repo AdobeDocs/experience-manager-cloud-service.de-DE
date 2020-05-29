@@ -1,8 +1,11 @@
 ---
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Auto
 
 ## Architektur {#architecture}
 
-Die IMS-Authentifizierung verwendet das OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Sobald ein Benutzer zu IMS hinzugefügt wurde und über eine Adobe-Identität verfügt, kann er sich mit den IMS-Anmeldeinformationen beim AEM-Autorendienst anmelden.
+Die IMS-Authentifizierung verwendet das OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Wenn Benutzer zu IMS hinzugefügt wurden und eine Adobe ID haben, können sie sich mit den IMS-Anmeldeinformationen bei AEM-Autorendiensten anmelden.
 
 Die Schritte zur Benutzeranmeldung werden unten gezeigt. Der Benutzer wird zu IMS und optional zum Kunden-IDP für SSO und anschließend zurück zu AEM weitergeleitet.
 
@@ -156,7 +159,7 @@ Für andere Benutzer kann die IMS-basierte Anmeldung verwendet werden, sobald IM
 
 
 >[!NOTE]
-> Jeder Benutzer, der in IMS erstellt wurde, kann mit der Adobe ID oder der Federated ID erstellt werden. Wenn ein Benutzer mit der Adobe-ID eingerichtet wird, wird er mithilfe des Identitätsanbieters seiner Firma für die Anmeldung authentifiziert.
+> Jeder Benutzer, der in IMS erstellt wurde, kann mit einer Adobe ID oder einer Federated ID erstellt werden. Wenn ein Benutzer mit der Adobe ID eingerichtet wird, wird er mithilfe des Identitätsanbieters seiner Firma für die Anmeldung authentifiziert.
 
 Anschließend werden sie zum IMS-Anmeldebildschirm weitergeleitet und müssen ihre Anmeldeinformationen eingeben:
 
@@ -197,18 +200,18 @@ Wie unten gezeigt, erbt die Gruppe **AEM-GRP_008** die Berechtigungen und Rechte
 
 ### Zugriff auf Cloud Manager {#accessing-cloud-manager}
 
-Um auf Cloud Manager oder AEM als Cloud-Service-Umgebung zugreifen zu können, müssen Sie Profilen des Cloud Manager-Produkts zugewiesen sein.
+Um auf Cloud Manager oder AEM as a Cloud Service-Umgebungen zugreifen zu können, müssen Sie Profilen des Cloud Manager-Produkts zugewiesen sein.
 
 Unter [Rollendefinitionen](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) finden Sie weitere Informationen zu Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
 
 >[!NOTE]
->Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit bestimmten Berechtigungen, vorkonfigurierten Aufgaben oder Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder dem Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
 **Schritte zum Hinzufügen eines Benutzers**
 
-1. Hinzufügen eines Benutzers auf ein bestimmtes Profil entweder über den Bildschirm eines vorhandenen Benutzers oder über einen neuen Benutzerbildschirm.
+1. Fügen Sie einem bestimmten Profil einen Benutzer hinzu, entweder über den Bildschirm eines vorhandenen Benutzers oder über einen Bildschirm für neue Benutzer.
 
-1. Alternativ können Sie einen Benutzer auch über den Bildschirm &quot; **Übersicht** &quot;hinzufügen, wie in der folgenden Abbildung dargestellt.
+1. Sie können einen Benutzer auch über den Bildschirm **Übersicht** hinzufügen, wie in der folgenden Abbildung dargestellt.
 
    ![ACL3](/help/security/assets/ims23.png)
 
@@ -218,23 +221,23 @@ Unter [Rollendefinitionen](/help/onboarding/what-is-required/add-users-roles.md#
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Nachdem Sie zum entsprechenden Profil hinzugefügt wurden, sollten Sie über [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) oben rechts in der Benutzeroberfläche auf die entsprechenden Mieter in Cloud Manager zugreifen können.
+1. Nachdem Sie dem entsprechenden Profil hinzugefügt wurden, sollten Sie über [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) oben rechts in der Benutzeroberfläche auf die entsprechenden Mandanten in Cloud Manager zugreifen können.
 
 
-### Zugriff auf eine Instanz in AEM als Cloud-Dienst {#accessing-instance-cloud-service}
+### Zugriff auf eine Instanz in AEM as a Cloud Service {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->Die im vorherigen Abschnitt erwähnten Schritte müssen bereits abgeschlossen sein, bevor Sie Zugriff auf eine Instanz in AEM als Cloud-Dienst erhalten.
+>Die im vorherigen Abschnitt erwähnten Schritte müssen bereits abgeschlossen sein, bevor Sie Zugriff auf eine Instanz in AEM as a Cloud Service erhalten.
 
-Um Zugriff auf eine AEM-Instanz in der **Admin-Konsole** zu haben, sollten Sie das Cloud Manager-Programm und die Umgebung im Programm in der Produkt-Liste der **Admin-Konsole** sehen.
+Um auf eine AEM-Instanz in der **Admin Console** zugreifen zu können, sollten Sie das Cloud Manager-Programm und die Umgebungen innerhalb des Programms in der Produktliste in der **Admin Console** ansehen.
 
-Im folgenden Screenshot sehen Sie beispielsweise zwei verfügbare Umgebung: *dev author* und a *publish*.
+Im folgenden Screenshot sehen Sie beispielsweise zwei verfügbare Umgebungen: *dev author* und *publish*.
 
 ![ACL3](/help/security/assets/ims19.png)
 
-Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des entsprechenden Cloud-Service-Produkts hinzugefügt werden.
+Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des entsprechenden Cloud Services-Produkts hinzugefügt werden.
 
-Jede Autoreninstanz verfügt über einen AEM-Administrator und ein AEM-Profil für Benutzer und jede Instanz im Veröffentlichungsmodus über ein AEM-Profil. Sie können nach Bedarf weitere Profil hinzufügen.
+Jede Autoreninstanz verfügt über einen AEM-Administrator und ein AEM-Benutzerprofil und jede Veröffentlichungsinstanz über ein AEM-Profil. Sie können bei Bedarf weitere Profile hinzufügen.
 
-Um Zugriff auf die AEM-Instanz auf Administratorebene zu erhalten, fügen Sie den Benutzer dem AEM-Administrator-Profil für das jeweilige Produkt hinzu.
+Um Zugriff auf die AEM-Instanz auf Administratorebene zu erhalten, fügen Sie den Benutzer dem AEM-Administratorprofil für das jeweilige Produkt hinzu.
 
