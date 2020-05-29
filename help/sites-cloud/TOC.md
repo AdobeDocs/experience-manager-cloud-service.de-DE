@@ -1,8 +1,11 @@
 ---
-sub-product: Erstellen von Inhalten in AEM als Cloud-Dienst
-user-guide-title: Erstellen von Inhalten in AEM als Cloud-Dienst
-translation-type: tm+mt
+sub-product: Inhaltserstellung in AEM as a Cloud Service
+user-guide-title: Inhaltserstellung in AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -58,10 +61,10 @@ source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
       + [Arbeiten mit Workflows](authoring/workflows/overview.md)
       + [Anwenden von Workflows auf Seiten ](authoring/workflows/applying.md)
       + [Teilnehmen an Workflows](authoring/workflows/participating.md)
-   + Personalisierung     {#personalization}
+   + Personalisierung  {#personalization}
       + [Überblick über die Personalisierung](authoring/personalization/overview.md)
       + [Vorschau von Seiten mit ContextHub-Daten ](authoring/personalization/contexthub.md)
-      + [Verfassen zielgerichteter Inhalte im Targeting-Modus ](authoring/personalization/targeted-content.md)
+      + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
       + [Verwenden zielgerichteter Inhalte in Multisites](authoring/personalization/multisite-targeted-content.md)
       + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](authoring/personalization/multisite-structure.md)
       + [Verwalten von Aktivitäten](authoring/personalization/activities.md)
