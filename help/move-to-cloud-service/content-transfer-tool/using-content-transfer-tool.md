@@ -2,9 +2,9 @@
 title: Verwenden des Inhaltsübertragungstools
 description: Verwenden des Inhaltsübertragungstools
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1527'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,8 @@ Befolgen Sie den folgenden Abschnitt, um die wichtigen Überlegungen beim Ausfü
 
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung auf Version vom 29. Mai 2020 oder höher aktualisiert wird. Wenn Sie eine *Produktions-Umgebung* verwenden, wird diese automatisch aktualisiert.
 
+* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und zur Verwaltungsgruppe in der Cloud-Dienstinstanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
+
 * Während der Extraktion wird das Content Transfer Tool auf einer aktiven AEM-Quellinstanz ausgeführt.
 
 * Die *Ingestion-Phase* für den Autor wird die gesamte Autorenbereitstellung reduzieren. Das bedeutet, dass der Autor AEM während des gesamten Erfassungsvorgangs nicht verfügbar ist.
@@ -29,7 +31,7 @@ Befolgen Sie den folgenden Abschnitt, um die wichtigen Überlegungen beim Ausfü
 Das Content Transfer Tool kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager auf der Quell-Instanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Weitere Informationen finden Sie unter [Zugriff auf AEM als Cloud-Dienst-SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) .
+>Laden Sie das Content Transfer Tool von [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)herunter.
 
 ## Ausführen des Inhaltsübermittlungstools {#running-tool}
 
@@ -120,7 +122,8 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > Sie müssen die Seite aktualisieren, um den aktualisierten Status Ansicht.
+   >Sie müssen die Seite aktualisieren, um den aktualisierten Status Ansicht.
+   >Wenn die Extraktion gestartet wird, wird die Schreibsperre erstellt und nach *60 Sekunden* freigegeben. Wenn also eine Extraktion gestoppt wird, müssen Sie eine Minute warten, bis die Sperre freigegeben wird, bevor Sie die Extraktion erneut starten.
 
 #### Extraktion oben {#top-up-extraction-process}
 
@@ -185,7 +188,7 @@ Nachdem der Erfassungsvorgang abgeschlossen ist, können Sie Delta-Inhalte verwe
 1. Das Dialogfeld &quot; **Integration** des Migrationssatzes&quot;wird angezeigt.
 
    >[!NOTE]
-   >Sie sollten die Option &quot; *Bereinigen* &quot;deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird.
+   >Sie sollten die Option &quot; *Wischen* &quot;deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
@@ -250,10 +253,12 @@ Die Dateien, die in der oben angegebenen *OUT_DIR* erstellt wurden, um Konsisten
 
 Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in der Benutzeroberfläche (UI) für das Content Transfer Tool:
 
-1. Der Benutzer erstellt einen Migrationssatz für eine Autor-URL (Entwicklung/Stage/Produktion) und führt erfolgreich Extraktion und Erfassung durch.
+* Der Benutzer erstellt einen Migrationssatz für eine Autor-URL (Entwicklung/Stage/Produktion) und führt erfolgreich Extraktion und Erfassung durch.
 
-1. Der Benutzer erstellt dann einen neuen Migrationssatz für dieselbe Autor-URL und führt Extraktion und Erfassung für den neuen Migrationssatz durch. Die Benutzeroberfläche zeigt an, dass der Erfassungsstatus des ersten Migrationssatzes auf &quot; **FEHLGESCHLAGEN** &quot;geändert wird und keine Protokolle verfügbar sind.
+* Der Benutzer erstellt dann einen neuen Migrationssatz für dieselbe Autor-URL und führt Extraktion und Erfassung für den neuen Migrationssatz durch. Die Benutzeroberfläche zeigt an, dass der Erfassungsstatus des ersten Migrationssatzes auf &quot; **FEHLGESCHLAGEN** &quot;geändert wird und keine Protokolle verfügbar sind.
 
-1. Dies bedeutet nicht, dass die Erfassung für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten wird angezeigt, da beim Starten eines neuen Erfassungsauftrags der vorherige Erfassungsauftrag gelöscht wird. Daher sollte der Änderungsstatus für den ersten Migrationssatz ignoriert werden.
+* Dies bedeutet nicht, dass die Erfassung für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten wird angezeigt, da beim Starten eines neuen Erfassungsauftrags der vorherige Erfassungsauftrag gelöscht wird. Daher sollte der Änderungsstatus für den ersten Migrationssatz ignoriert werden.
+
+* Die Symbole in der Benutzeroberfläche des Inhaltsübermittlungstools können sich von den in diesem Handbuch gezeigten Screenshots unterscheiden oder je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt werden.
 
 
