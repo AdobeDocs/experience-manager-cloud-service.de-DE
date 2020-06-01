@@ -1,8 +1,11 @@
 ---
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -12,6 +15,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
 Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
+
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
 ## Unterstützte Formate für die 3D-Vorschau{#supported-3d-previewing-assets}
 
