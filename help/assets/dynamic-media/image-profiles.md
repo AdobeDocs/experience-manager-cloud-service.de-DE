@@ -2,9 +2,9 @@
 title: Bildprofile für Dynamic Media
 description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2663'
 ht-degree: 94%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 94%
 # Bildprofile für Dynamic Media {#image-profiles}
 
 Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch zuschneiden, indem Sie ein neues Bildprofil auf den Ordner anwenden.
+
+>[!IMPORTANT]
+>
+>Image-Profil sind nicht auf PDF-Dateien anwendbar.
 
 ## Optionen für das Zuschneiden {#crop-options}
 
