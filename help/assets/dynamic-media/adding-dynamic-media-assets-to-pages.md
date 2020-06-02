@@ -2,10 +2,10 @@
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
-ht-degree: 92%
+source-wordcount: '3137'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 
 ## Hinzufügen einer Dynamic Media-Komponente zu einer Seite     {#adding-a-dynamic-media-component-to-a-page}
 
-Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Panoramamedien oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
+Das Hinzufügen einer Komponente zu einer Seite mit 3D-Medien, dynamischen Medien, interaktiven Medien, Panorama-Medien, Smart-Zuschneiden-Video oder Video 360-Medien entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
 **Hinzufügen einer Dynamic Media-Komponente zu einer Seite**
 
@@ -51,7 +51,7 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
 
    Die Dynamic Media-Komponente für 360-Grad-Videomedien
 
-1. Wenn Sie fertig sind, tippen Sie oben rechts im Dialogfeld auf das Häkchen, um Ihre Änderungen zu speichern.
+1. Wenn Sie fertig sind, tippen Sie in der oberen rechten Ecke des Dialogfelds auf das Kontrollkästchen, um Ihre Änderungen zu speichern.
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
