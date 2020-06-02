@@ -1,11 +1,11 @@
 ---
 title: Intelligente Bildbearbeitung
 description: 'Intelligente Bildbearbeitung nutzt die individuellen anzeigebezogenen Benutzermerkmale, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
-translation-type: ht
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ Nein. Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandene
 
 Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
 
-## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?      {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert Smart Imaging mit HTTPS? Und mit HTTP/2?      {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
