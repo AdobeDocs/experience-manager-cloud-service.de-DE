@@ -1,19 +1,23 @@
 ---
 title: Veröffentlichen von Dynamic Media-Assets
 description: Anleitung zum Veröffentlichen von Asset mit dynamischen Medien
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+contentOwner: Rick Brough
+translation-type: tm+mt
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 77%
 
 ---
 
 
 # Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
 
-Sie veröffentlichen Dynamic Media-Assets, indem Sie die Assets auswählen und auf das Symbol **[!UICONTROL Veröffentlichen]** tippen. Nachdem Dynamic Media-Assets veröffentlicht wurden, können Sie sie per URL oder Einbetten in eine Web-Seite aufnehmen.
+Sie veröffentlichen Ihre Assets für dynamische Medien, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Schnelle Veröffentlichung]** tippen. Nachdem Sie Ihre dynamischen Medien-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten von Code auf der Seite in eine Webseite einfügen.
 
 Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Sie können diese Assets auch selektiv veröffentlichen. Informationen hierzu finden Sie unter [Konfigurieren von Dynamic Media](config-dm.md).
 
-In der **[!UICONTROL Kartenansicht]** erscheint ein kleines Globussymbol direkt unter dem Namen eines Assets, um anzugeben, dass es veröffentlicht ist. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
+In der Ansicht **[!UICONTROL &quot;]** Karte&quot;wird ein kleines Globussymbol direkt unter dem Namen des Assets sowie links neben dem Datum und der Uhrzeit angezeigt, um anzugeben, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Wenn Sie Video-Assets sofort nach der Kodierung veröffentlichen möchten, achte
 
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Webseite](embed-code.md).
+See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page.](embed-code.md)
 
 >[!NOTE]
 >
