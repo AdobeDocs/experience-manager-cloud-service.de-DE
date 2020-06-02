@@ -2,25 +2,25 @@
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 90%
 
 ---
 
 
-# Vorschau von 3D-Assets{#previewing-3d-assets}
+# Anzeigen einer Vorschau von 3D-Assets in AEM{#previewing-3d-assets}
 
-Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
+Adobe Experience Manager unterstützt das Hochladen, den Versand und die interaktive Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
 Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Unterstützte Formate für die 3D-Vorschau{#supported-3d-previewing-assets}
+## Unterstützte Formate für die 3D-Vorschau in AEM{#supported-3d-previewing-assets}
 
-Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
+Die interaktive 3D-Vorschau in AEM unterstützt die folgenden Dateiformate:
 
 | 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
 |---|---|---|---|
@@ -40,13 +40,13 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets{#performance-3d-previewing-assets}
+## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
 Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
-**Vorschau von 3D-Assets anzeigen**
+**So Vorschau von 3D-Assets in AEM**
 
 1. Laden Sie 3D-Assets in AEM hoch.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
