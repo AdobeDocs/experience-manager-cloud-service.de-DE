@@ -2,9 +2,9 @@
 title: Navigation
 description: Navigation - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -20,17 +20,20 @@ Nach erfolgreicher Anmeldung werden Sie wie unten gezeigt zur Landingpage von Cl
 
 ## SysAdmin-Zugriff {#sysadmin-access}
 
-Ein Benutzer in der SysAdmin-Rolle hat einen 1-Klick-Zugriff auf den Speicherort in der Admin-Konsole, von dem aus die Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden.
+Als Benutzer in der Rolle &quot;SysAdmin&quot;haben Sie mit einem Klick Zugriff auf den Speicherort in der Admin-Konsole, von dem aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden.
 
 ### Rollen verwalten {#manage-roles}
 
 Als Benutzer in SysAdmin steht auf der Landingpage neben dem **Hinzufügen Programm** eine Option zum **Verwalten von Rollen** zur Verfügung. Auf diese Weise erhalten Sie einen 1-Klick-Zugriff auf den Speicherort in der Admin-Konsole, an dem Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können.
 
-Weitere Informationen zum Hinzufügen von Benutzern zu einem Profil finden Sie unter [Zugriff auf Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) , um weitere Informationen zum Hinzufügen von Benutzern zu Cloud Managerzu erhalten.
+Weitere Informationen zum Hinzufügen von Benutzern zu einem Profil finden Sie unter Zugriff auf Cloud Manager [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) aufrufen.
 
 ### Zugriff auf AEM verwalten {#manage-access-aem}
 
-Als Benutzer in SysAdmin haben Sie direkten Zugriff auf die Autoreninstanz über einen Klick in Cloud Manager.
+Als Benutzer in SysAdmin haben Sie einen 1-Klick-Zugriff auf die Admin-Konsole, von der aus Sie direkt zur Autoreninstanz navigieren und den Zugriff verwalten können.
+
+![](assets/manage-access1.png)
+
 Weitere Informationen finden Sie unter [Zugriff auf eine Instanz in AEM als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) .
 
 ## Für bestehende AMS-Kunden {#existing-aem}
