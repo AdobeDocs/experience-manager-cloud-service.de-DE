@@ -2,9 +2,9 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
+source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,11 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
    ![](assets/create-program-a1.png)
 
+## Löschen eines Sandbox-Programms {#delete-sandbox-program}
 
+Sandbox-Programm-Benutzer in *Business Owner* oder *Deployment Manager* -Rolle in Cloud Manager können ihre Produktions- und Stage-Umgebung löschen, die über die Benutzeroberfläche von Cloud Manager festgelegt wurde.
+
+Die Löschoption ist sowohl auf der Seite &quot;Umgebung&quot;auf der Seite &quot; *Übersicht* &quot;als auch auf der Seite &quot; **Umgebung** &quot;verfügbar. Wenn Sie die Option zum Löschen entweder auf der Produktions- oder der Stufe auswählen, wird auch die andere Option im Satz gelöscht.
 
 ## Erstellen eines regulären Programms {#create-regular-program}
 
