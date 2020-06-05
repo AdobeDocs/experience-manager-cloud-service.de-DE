@@ -3,15 +3,15 @@ title: Taggen Sie Bilder mit künstlich intelligenten Diensten.
 description: Taggen Sie Bilder mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit Adobe Sensei-Diensten anwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 35%
 
 ---
 
 
-# Taggen Sie Ihre Bilder mit intelligenten Diensten. {#smart-tag-assets}
+# Intelligente Tag-Dienste erfassen und Ihre Bilder mit Tags versehen {#train-service-tag-assets}
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend ein taxonomiegesteuertes Vokabular in Asset-Metadaten. Es enthält im Wesentlichen eine Liste von Suchbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um auf ihre digitalen Assets zu verweisen und nach ihnen zu suchen. Durch das Taggen von Assets mit einem taxonomisch gesteuerten Vokabular wird sichergestellt, dass die Assets durch tag-basierte Suchen leicht identifiziert und abgerufen werden können.
 
@@ -25,7 +25,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 Führen Sie die folgenden Aufgaben aus, um intelligentes Tagging zu verwenden:
 
-* [Integration von Experience Manager mit Adobe I/O](#integrate-aem-with-aio).
+* [Integrieren Sie Experience Manager in die Adobe Developer Console](#integrate-aem-with-aio).
 * [Verstehen Sie Tag-Modelle und Richtlinien](#understand-tag-models-guidelines).
 * [Zug das Modell](#train-model).
 * [Taggen Sie Ihre digitalen Assets](#tag-assets).
@@ -35,11 +35,11 @@ Intelligente Tags gelten nur für [!DNL Adobe Experience Manager Assets] Kunden.
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integration [!DNL Experience Manager] mit Adobe I/O {#integrate-aem-with-aio}
+## Integration [!DNL Experience Manager] in die Adobe Developer Console {#integrate-aem-with-aio}
 
-You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using Adobe I/O. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
+Sie können [!DNL Adobe Experience Manager] mit der Adobe Developer Console Smart Tags integrieren. Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
 
-Aufgaben zum Konfigurieren der intelligenten Tags finden Sie unter Experience Manager für intelligentes Tagging von Assets [](smart-tags-configuration.md) konfigurieren. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+Aufgaben zum Konfigurieren der intelligenten Tags finden Sie unter Experience Manager für intelligentes Tagging von Assets [](smart-tags-configuration.md) konfigurieren. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Verstehen Sie Tag-Modelle und -Richtlinien. {#understand-tag-models-guidelines}
 
