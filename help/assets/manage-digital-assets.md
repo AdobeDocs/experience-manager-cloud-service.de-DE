@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 98%
+source-wordcount: '4419'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,19 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 
 ## Hochladen von Assets {#uploading-assets}
 
-Detaillierte Informationen finden Sie unter [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
+Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
+
+## Duplikat-Assets erkennen {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] die Duplizierung und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets Auswirkungen auf die Leistung haben kann. Um die Funktion zu aktivieren, konfigurieren Sie den [!UICONTROL Adobe AEM Cloud-Asset-Duplikationsdetektor]. Siehe [OSGi-Konfigurationen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Die Duplizierungserkennung basiert auf dem eindeutigen `dam:sha1` Wert, der bei `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass Duplikat-Assets erkannt werden, auch wenn die Dateinamen unterschiedlich sind.
+
+![OSGi-Konfiguration des Duplikat-Assets erkennen](assets/duplicate-detection.png)
+
+Nach der Aktivierung sendet Experience Manager Benachrichtigungen über Duplikat-Assets an den Posteingang. Es ist ein aggregiertes Ergebnis für mehrere Duplikat. Benutzer können die Assets auf Grundlage der Ergebnisse entfernen.
+
+![Posteingangsbenachrichtigung für Duplikat-Assets](assets/duplicate-detect-inbox-notification.png)
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 
@@ -89,6 +101,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
    * Anzahl der Aufrufe oder Downloads des Assets
    * Kanäle/Geräte, über die das Asset genutzt wurde
    * Kreativlösungen, in denen das Asset kürzlich verwendet wurde
+
    Weitere Informationen finden Sie unter [Asset Insights](assets-insights.md).
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern und schließen]**.
@@ -160,6 +173,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    * Tippen oder klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Ziel auswählen]** zurückzukehren.
 
    * Tippen oder klicken Sie auf **[!UICONTROL Abbrechen]**, um den Verschiebungsvorgang abzubrechen.
+
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
 ### Verwalten von Ausgabeformaten {#managing-renditions}
@@ -233,6 +247,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
       * Wenn die Seite Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+
    >[!NOTE]
    >
    >Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu können. Wenn Sie nur eine Änderungsberechtigung haben, haben Sie nur die Möglichkeit, die Asset-Metadaten zu bearbeiten und Notizen zum Asset hinzuzufügen. Sie können jedoch das Asset oder dessen Metadaten nicht löschen.
@@ -292,6 +307,7 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
    * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
    * **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht wird (sodass die Assets nicht mehr in der Veröffentlichungsumgebung verfügbar sind).
+
    >[!NOTE]
    >
    >Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Verweise rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
@@ -344,6 +360,7 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kl
    * Wählen Sie das Asset aus und klicken oder tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
    * Tippen oder klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]**, das über einem Asset in der Kartenansicht angezeigt wird.
    * Klicken Sie in der Symbolleiste auf der Asset-Seite auf das Symbol **[!UICONTROL Bearbeiten]**.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Um das Bild zu beschneiden, tippen oder klicken Sie auf das Symbol **Zuschneiden**.
@@ -414,6 +431,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
    * [Schnellaktionen](#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
