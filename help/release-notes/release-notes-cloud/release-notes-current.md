@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 6%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## What&#39;s New in AEM Sites {#aem-sites}
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für AEM-Sites in AEM als Cloud-Service-Version 2020.6.0.
+
+### Neuerungen {#whats-new-2020.6.0}
+
+Version 2.9.0 der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) ist jetzt als Teil von AEM-Sites verfügbar, einschließlich:
+
+* Integration zwischen [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) und den Kernkomponenten
+* Konfigurierbare HTML-ID-Attribute für alle Komponenten
+* Eine neue Statusleistenkomponente
+* Viele Fehlerbehebungen
 
 ### Fehlerbehebungen {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Benutzer, die in Cloud Manager die Rolle &quot; *Geschäftsinhaber* &quot;verwenden, können jetzt ein Sandbox-Programm aus der Landingpage (über die Schaltfläche &quot;Schnellaktion&quot;auf der Programm-Karte) oder aus dem Programm löschen.
 
-* Sandbox-Programm-Benutzer in *Business Owner* oder *Deployment Manager* -Rolle in Cloud Manager können ihre Produktions- und Stage-Umgebung jetzt über die Benutzeroberfläche von Cloud Manager löschen. Die Option zum Löschen steht jetzt sowohl auf der Übersichtsseite als auch auf der Seite &quot;Umgebung&quot;auf der Umgebung zur Verfügung. Wenn Sie die Option zum Löschen entweder auf der Produktions- oder der Stufe auswählen, wird auch die andere Option im Satz gelöscht.
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) .
+
+* Sandbox-Programm-Benutzer in *Business Owner* oder *Deployment Manager* -Rolle in Cloud Manager können ihre Produktions- und Stage-Umgebung jetzt über die Benutzeroberfläche von Cloud Manager löschen. Die Option zum Löschen steht jetzt sowohl auf der Seite &quot;Übersicht über die **Programme&quot;als auch auf der Seite &quot;Umgebung** &quot; **Umgebung** zur Verfügung. Wenn Sie die Option zum Löschen entweder auf der Produktions- oder der Stufe auswählen, wird auch die andere Option im Satz gelöscht.
+
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) .
 
 * Coach Markierungen auf der Landingpage, um den Benutzer über die grundlegende Navigation zu informieren und zu informieren.
 
-* Coach-Markierungen auf der Seite *Übersicht* , um den Benutzer über die grundlegende Navigation innerhalb von Cloud Manager zu informieren und ihn zu informieren, damit er sie starten kann.
+* Coach-Markierungen auf der Seite &quot; **Programm-Übersicht** &quot;, um den Benutzer über die grundlegende Navigation innerhalb von Cloud Manager zu informieren und ihn zu informieren, um ihn zu starten.
 
 * In Cloud Manager steht jetzt eine **LEARN** -Seite zur Verfügung, die über die Navigation oben aufgerufen werden kann. Diese Seite enthält Ressourcen, die Benutzern dabei helfen, sich über die am häufigsten verwendeten Arbeitsabläufe zu informieren, je nachdem, welche Rollen ihnen in Cloud Manager zugewiesen wurden.
 
-* Sandbox-Programm werden jetzt mit einem **Sandbox** -Zeichen identifiziert, das auf der Programm-Karte auf der Landingpage sowie neben dem Programm-Namen auf der *Übersichtsseite* angezeigt wird.
+* Sandbox-Programm werden jetzt mit einem **Sandbox** -Zeichen identifiziert, das auf der Programm-Karte auf der Landingpage sowie neben dem Programm-Namen auf der Seite &quot; **Programm-Übersicht** &quot;angezeigt wird.
 
-* Ein Benutzer in der *SysAdmin* -Rolle hat jetzt einen 1-Klick-Zugriff auf den Speicherort in der Admin-Konsole, von dem aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können. Auf der Landingpage neben der Schaltfläche &quot; **Hinzufügen Programm** &quot;wird die Schaltfläche &quot;Rollen **** verwalten&quot;angezeigt.
+* Ein Benutzer in der SysAdmin-Rolle hat jetzt einen 1-Klick-Zugriff auf den Speicherort in der Admin-Konsole, von dem aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können. Auf der Landingpage neben der Schaltfläche &quot; **Hinzufügen Programm** &quot;steht jetzt eine Schaltfläche &quot;Zugriff **** verwalten&quot;zur Verfügung.
 
-* Ein Benutzer in der SysAdmin-Rolle hat jetzt direkten Zugriff auf die Autoreninstanz über einen Klick von CM.
+   Weitere Informationen finden Sie in den [SysAdmin-Aufgaben](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) .
+
+* Ein Benutzer in der SysAdmin-Rolle hat jetzt einen 1-Klick-Zugriff auf die Autoreninstanz direkt aus Cloud Manager.
+
+   Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) .
 
 * Das Build-Protokoll enthält jetzt die Liste der entdeckten Artefakte, einschließlich übersprungener Inhaltspakete.
 
@@ -77,7 +94,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Unter bestimmten Umständen wurden die Symbole im Dialogfeld &quot;Programm **erstellen** &quot;falsch ausgerichtet.
 
-* Die AEM-Versionshinweise wurden nicht einheitlich auf der Seite &quot; *Übersicht* &quot;angezeigt.
+* Die AEM-Versionshinweise wurden nicht einheitlich auf der Seite &quot; **Programme - Übersicht** &quot;angezeigt.
 
 * Bei der Konfiguration der Produktionsleitung war die Option **Geplante Bereitstellung** für einige Kunden nicht sichtbar.
 
