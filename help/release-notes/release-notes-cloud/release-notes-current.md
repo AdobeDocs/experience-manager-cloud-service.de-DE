@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 6%
 
 ---
@@ -120,17 +120,12 @@ Train Enhanced Smart Tags für eine intuitive Schulung zu intelligenten Tags. Er
 
 **Unterstützung der Erfassung, Vorschau und Versand von 3D-Inhalten**
 
-Organisationen können jetzt 3D-Dateien in AEM Assets speichern und verwenden. Benutzer können eine Vielzahl von Kern-3D-Dateien hochladen, Vorschauen vornehmen und nutzen, einschließlich .obj-, .stl-, .gltf- und .glb-Dateien. Zusätzlich [!DNL Dynamic Media]können 3D-Erlebnisse über agnostische URLs oder Viewer konfiguriert und bereitgestellt werden. Dazu gehören ein [!DNL Dynamic Media] 3D-Experience Viewer, die Sites-3D-Viewer-Komponente und die Möglichkeit, 3D-Dateien über [!DNL Dynamic Media] (AR/VR) bereitzustellen.
-
-<!-- TBD: Add link to the DM help article, if any. -->
+Organisationen können jetzt 3D-Dateien in AEM Assets speichern und verwenden. Benutzer können eine Vielzahl von Kern-3D-Dateien hochladen, Vorschauen vornehmen und nutzen, einschließlich .obj-, .stl-, .gltf- und .glb-Dateien. Zusätzlich [!DNL Dynamic Media]können 3D-Erlebnisse über agnostische URLs oder Viewer konfiguriert und bereitgestellt werden. Dazu gehören ein [!DNL Dynamic Media] 3D-Experience Viewer, die Sites-3D-Viewer-Komponente und die Möglichkeit, 3D-Dateien über [!DNL Dynamic Media] (AR/VR) bereitzustellen. Siehe [Arbeiten mit 3D-Assets in dynamischen Medien](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Verbesserungen der Barrierefreiheit**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * Auf Benutzeroberflächenelemente, Steuerelemente und Eingabefelder kann über die Tastatur zugegriffen werden.
 * Änderung der Farbe oder des Kontrasts einiger Oberflächenelemente, um diese für Benutzer mit eingeschränkter Sicht und ohne Farbwahrnehmung leichter erkennbar zu machen. Beispielsweise weist Assets jetzt einen angemessenen Kontrast in den Bewertungssymbole für Stern auf der Seite &quot; [!UICONTROL Eigenschaften] &quot;und in der Ansicht &quot;Karten&quot;auf.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Weitere Verbesserungen**
 
 Die Version bietet die folgenden zusätzlichen Verbesserungen:
 
-* Verbesserungen der Barrierefreiheit in der Benutzeroberfläche &quot;Assets&quot;.
 * Möglichkeit zur Neuverarbeitung von Assets mit Profilen zur Asset-Verarbeitung, sodass die Benutzer die volle Kontrolle über den Prozess haben (vollständige Asset-Verarbeitung ausführen, nur spezifisches Profil anwenden und entscheiden können, ob der Nachbearbeitungsvorgang ausgeführt werden soll).
 * Suchergebnisse werden jetzt schneller zurückgegeben, wenn die zugrunde liegende Clusterinstanz hinter den Kulissen neu gestartet wurde (in einem solchen Fall könnte die anfängliche Suche länger dauern).
-* Sortieren Sie Assets nach &quot;Name&quot;, wenn Sie Assets in der Ansicht &quot;Liste&quot;in der Benutzeroberfläche &quot;Assets&quot;und in den Suchergebnissen anzeigen.
-* Sortieren Sie nach &quot;Erstellt&quot;(Datum), wenn Sie Assets in der Ansicht &quot;Liste&quot;in der Assets-Oberfläche und in den Suchergebnissen anzeigen.
-* Unterstützung für die Konvertierung von EPS-Dateien in Bilder.
+* Sortieren Sie Assets nach &quot;Name&quot;, wenn Sie Assets in der Ansicht &quot;Liste&quot;in der Benutzeroberfläche &quot;Assets&quot;und in den Suchergebnissen anzeigen. Siehe [Suchen von Assets](/help/assets/search-assets.md#sort).
+* Sortieren Sie nach &quot;Erstellt&quot;(Datum), wenn Sie Assets in der Ansicht &quot;Liste&quot;in der Assets-Oberfläche und in den Suchergebnissen anzeigen. Siehe [Suchen von Assets](/help/assets/search-assets.md#sort).
+* Unterstützung für die Konvertierung von EPS-Dateien in Bilder mithilfe von Asset Microservices.
 
 ### Fehlerbehebungen {#assets-bug-fixes}
 
