@@ -2,10 +2,10 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b03fcba0dc2e03b6ca0d57aa804bddf0817f227e
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 99%
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 99%
    + [APIs und Referenzmaterial](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verarbeitungsprofile](/help/assets/dynamic-media/processing-profiles.md)
+   + [Intelligente Tags konfigurieren](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung von Assets](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Erweitern des Asset-Editors](extend-asset-editor.md)
@@ -86,7 +87,7 @@ ht-degree: 99%
    + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
-   + [3D-Bilder](dynamic-media/assets-3d.md)
+   + [3D-Unterstützung](dynamic-media/assets-3d.md)
    + [Bildsets](dynamic-media/image-sets.md)
    + [Panoramabilder](dynamic-media/panoramic-images.md)
    + [Gemischte Mediensets](dynamic-media/mixed-media-sets.md)
