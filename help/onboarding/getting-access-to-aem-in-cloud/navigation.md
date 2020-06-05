@@ -2,7 +2,7 @@
 title: Navigation
 description: Navigation - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Weitere Informationen zum Hinzufügen von Benutzern zu einem Profil finden Sie u
 
 1. Navigieren Sie zur Landingpage von Cloud Manager und klicken Sie auf Zugriff **verwalten**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Durch Klicken auf Zugriff **verwalten** gelangen Sie zur **Admin-Konsole** , von der aus Sie die Benutzerrollen oder Berechtigungen für Cloud Manager verwalten können.
-
-   ![](assets/sys-admin2.png)
 
 ### Zugriff auf Autorinstanz verwalten {#manage-access-aem}
 
@@ -48,14 +46,17 @@ Als Benutzer in der Rolle &quot;SysAdmin&quot;haben Sie mit einem Klick Zugriff 
 
 Weitere Informationen finden Sie unter [Zugriff auf eine Instanz in AEM als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) .
 
-1. Navigieren Sie auf der Seite &quot; **Übersicht** &quot;oder auf der Seite &quot; *Umgebung* &quot;zur Karte für die **Umgebung** , um die Option &quot;Zugriff **** verwalten&quot;zu verwenden, wie in der Abbildung unten dargestellt.
+1. Navigieren Sie auf der Seite &quot; **Programm-Übersicht** &quot;zur Karte &quot; **Umgebung** &quot;.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   Oder
+
+   Klicken Sie auf **Details** aus der Karte **Umgebung** , um die Seite Umgebung zu öffnen. Klicken Sie auf **Verwalten** -> Zugriff **verwalten**.
+
+   ![](assets/sys-admin4.png)
 
 1. Wenn Sie auf Zugriff **verwalten** klicken, wird die **Admin-Konsole** aufgerufen, von der aus Sie auf die Autoreninstanz einer Umgebung zugreifen können.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Für bestehende AMS-Kunden {#existing-aem}
 
