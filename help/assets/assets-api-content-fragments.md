@@ -1,11 +1,11 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
-translation-type: ht
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
 >
 Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
@@ -147,6 +148,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -313,7 +315,7 @@ Es gibt einige Beschränkungen:
 
 Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden Status-Codes angezeigt:
 
-1. 200 (OK)
+* **200** (OK)
 
    Wird zurückgegeben, wenn:
 
@@ -321,19 +323,19 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
    * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
-1. 201 (Erstellt)
+* **201** (erstellt)
 
    Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
-1. 404 (Nicht gefunden)
+* **404** (nicht gefunden)
 
    Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 
-1. 500 (Interner Server-Fehler)
+* **** 500 (Interner Serverfehler)
 
    >[!NOTE]
    >
@@ -364,6 +366,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
    ```xml
