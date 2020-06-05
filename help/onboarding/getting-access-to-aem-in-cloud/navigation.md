@@ -2,9 +2,9 @@
 title: Navigation
 description: Navigation - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,9 @@ Weitere Informationen zum Hinzufügen von Benutzern zu einem Profil finden Sie u
 
    ![](assets/sys-admin5.png)
 
-1. Durch Klicken auf Zugriff **verwalten** gelangen Sie zur **Admin-Konsole** , von der aus Sie die Benutzerrollen oder Berechtigungen für Cloud Manager verwalten können.
+1. Nachdem Sie auf Zugriff **verwalten** geklickt haben, navigieren Sie zur **Admin-Konsole** , von der aus Sie die Benutzerrollen oder Berechtigungen für Cloud Manager verwalten können.
+
+   ![](assets/sys-admin1.png)
 
 ### Zugriff auf Autorinstanz verwalten {#manage-access-aem}
 
@@ -46,17 +48,17 @@ Als Benutzer in der Rolle &quot;SysAdmin&quot;haben Sie mit einem Klick Zugriff 
 
 Weitere Informationen finden Sie unter [Zugriff auf eine Instanz in AEM als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) .
 
-1. Navigieren Sie auf der Seite &quot; **Programm-Übersicht** &quot;zur Karte &quot; **Umgebung** &quot;.
+1. Navigieren Sie zur **Umgebung** -Karte auf der Seite &quot; **Programm-Übersicht** &quot;und klicken Sie auf &quot;Zugriff **verwalten**&quot;.
 
    ![](assets/sys-admin6.png)
 
    Oder
 
-   Klicken Sie auf **Details** aus der Karte **Umgebung** , um die Seite Umgebung zu öffnen. Klicken Sie auf **Verwalten** -> Zugriff **verwalten**.
+   **Zugriff** verwalten ist auch über die Schaltfläche **verwalten** verfügbar, wenn Sie auf **Details** auf der **Umgebung** -Karte klicken.
 
    ![](assets/sys-admin4.png)
 
-1. Wenn Sie auf Zugriff **verwalten** klicken, wird die **Admin-Konsole** aufgerufen, von der aus Sie auf die Autoreninstanz einer Umgebung zugreifen können.
+1. Nachdem Sie auf Zugriff **verwalten** geklickt haben, navigieren Sie zur **Admin-Konsole** , von der aus Sie Zugriff auf die Autoreninstanz der Umgebung haben.
 
 ## Für bestehende AMS-Kunden {#existing-aem}
 
