@@ -1,8 +1,11 @@
 ---
 title: Bekannte Probleme
 description: Spezifische Versionshinweise zu bekannte Problemen mit Adobe Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ Zu den bekannten Probleme zählen:
 
 Einige Funktionen von Adobe Experience Manager-Assets, die von den grundlegenden Funktionen abhängen, die noch nicht in der Adobe Experience Manager as a Cloud Service-Bereitstellungsarchitektur verfügbar sind, werden voraussichtlich zu einem späteren Zeitpunkt aktiviert:
 
-* Erweiterte Funktionen für Smart-Tagging, die KI-Dienste von Adobe I/O nutzen, sind derzeit nicht verfügbar.
 * Aufgrund der Abhängigkeit von Commerce Integration Framework-APIs sind die folgenden Funktionen derzeit nicht aktiviert:
    * Fotoshooting-Workflow-Modelle.
    * In der Benutzeroberfläche der Asset-Eigenschaften ist die Registerkarte mit den Produktinformationen nicht ausgefüllt.
 * Aufgrund der Abhängigkeit von der InDesign Server-Integration sind die folgenden Funktionen derzeit nicht aktiviert:
    * Asset-Vorlagen und Asset-Kataloge.
-   * Mehrseitige Vorschau von InDesign-Dateien.
+   * Mehrseitige Vorschau von Adobe InDesign-Dateien.
 
 >[!MORELIKETHIS]
 >
