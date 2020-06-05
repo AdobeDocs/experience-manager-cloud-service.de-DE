@@ -2,8 +2,11 @@
 title: Verwenden von digitalen Adobe Stock-Assets in AEM Assets
 description: Sie können Adobe Stock-Assets in Experience Manager suchen, abrufen und verwalten. Behandeln Sie die lizenzierten Assets wie jedes andere Experience Manager-Asset.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 97%
 
 ---
 
@@ -24,11 +27,11 @@ Um die Kommunikation zwischen AEM und Adobe Stock zu ermöglichen, erstellen Sie
 
 ### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
 
-1. Klicken Sie auf das AEM-Logo. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]** aus.
+1. Klicken Sie auf das AEM-Logo. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Geben Sie passende Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL Nutzlast]** an. Ausführliche Informationen zum Abruf dieser Werte von Adobe I/O finden Sie unter [JWT-Authentifizierung – Schnellstart](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
-1. Fügen Sie den heruntergeladenen Schlüssel zu Ihrem Adobe I/O-Servicekonto hinzu.
+1. Geben Sie die entsprechenden Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Geheimer Clientschlüssel]** und **[!UICONTROL Nutzlast]** ein. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
+1. Hinzufügen Sie den heruntergeladenen öffentlichen Schlüssel in Ihr Adobe Developer Console-Dienstkonto ein.
 
 ### Erstellen einer Adobe Stock-Konfiguration in AEM   {#create-adobe-stock-configuration-in-aem}
 
@@ -65,7 +68,7 @@ Geben Sie alternativ `Location: Adobe Stock` in die Suchleiste ein, um Adobe Sto
 
 >[!NOTE]
 >
->In Adobe Stock durchsuchte Assets werden in AEM nur angezeigt. Adobe Stock-Assets werden nur dann abgerufen und im AEM-Repository gespeichert, wenn Benutzer [Assets speichern](/help/assets/aem-assets-adobe-stock.md#saveassets) oder [Assets lizenzieren](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets, die bereits in AEM gespeichert sind, werden angezeigt und zur einfacheren Verwendung hervorgehoben. Darüber hinaus werden diese Assets mit zusätzlichen Metadaten gespeichert, um Adobe Stock als Quelle anzugeben.
+>In Adobe Stock durchsuchte Assets werden in AEM nur angezeigt. Adobe Stock-Assets werden nur dann abgerufen und im AEM-Repository gespeichert, wenn Benutzer [Assets speichern](/help/assets/aem-assets-adobe-stock.md#saveassets) oder [Assets lizenzieren](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets, die bereits in AEM gespeichert sind, werden angezeigt und hervorgehoben, um einfachen Zugriff und schnelle Referenzierung zu ermöglichen. Außerdem werden solche Assets mit einigen zusätzlichen Metadaten gespeichert, um die Quelle als Adobe Stock anzugeben.
 
 ![Suchfilter in AEM und hervorgehobene Adobe Stock Assets in Suchergebnissen](assets/aem-search-filters2.jpg)*Abbildung: Suchfilter in AEM und hervorgehobene Adobe Stock-Assets in Suchergebnissen*
 
