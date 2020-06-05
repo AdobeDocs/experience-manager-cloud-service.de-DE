@@ -2,8 +2,11 @@
 title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie ein Metadatenschema für Asset-Ordner in AEM Assets erstellen.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +110,7 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Ordners als Eigenschaft `dc:title`.
 
-* `./jcr:created`: Zeigt die Eigenschaft „JCR“ im Knoten des Ordners an. Wenn Sie diese Eigenschaften in CRXDE konfigurieren, empfiehlt Adobe, dass Sie sie mit „Bearbeitung deaktivieren“ markieren, da sie geschützt sind. Andernfalls tritt der Fehler `Asset(s) failed to modify` auf, wenn Sie die Eigenschaften des Assets speichern.
+* `./jcr:created`: Speichert das Erstellungsdatum und die Uhrzeit eines Assets. Es handelt sich um eine geschützte Eigenschaft. Wenn Sie diese Eigenschaften konfigurieren, empfiehlt Adobe, dass Sie sie als &quot;Bearbeiten [!UICONTROL deaktivieren]&quot;markieren.
 
 Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-Formular angezeigt wird, fügen Sie dem Eigenschaftenpfad keine Leerzeichen hinzu.
 
