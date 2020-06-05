@@ -3,8 +3,11 @@ title: Suchen nach digitalen Assets und Bildern in AEM
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+translation-type: tm+mt
+source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+workflow-type: tm+mt
+source-wordcount: '4529'
+ht-degree: 99%
 
 ---
 
@@ -108,7 +111,7 @@ Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um 
 
 So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in AEM](https://helpx.adobe.com/de/experience-manager/kt/help/assets/search-feature-video-use.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
@@ -312,10 +315,6 @@ Illustration der Nutzung eines Fragezeichen-Platzhalters bei der Asset-Suche anh
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
 
-### Sort on Name column {#sortbyname}
-
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting does not work on the `Name` column by default. To sort by the `Name` column, overlay `/libs/dam/gui/content/commons/availablecolumns` and change the value of sortable to `True`.
-
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
@@ -351,8 +350,8 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 -->
-<!--
 
+<!--
 ### Mandatory metadata {#mandatorymetadata}
 
 Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
@@ -401,13 +400,13 @@ Sobald Ihnen durchsuchte Assets angezeigt werden, die Ihren Kriterien entspreche
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
 
-### Sortieren von Suchergebnissen {#sort}
+### Suchergebnisse sortieren {#sort}
 
-Das Sortieren von Suchergebnissen hilft Ihnen, erforderliche Assets schneller zu finden. Das Sortieren von Suchergebnissen ist in der Listenansicht möglich und nur, wenn Sie die Option **[!UICONTROL [Dateien](#searchui)]**im Bedienfeld**[!UICONTROL  Filter ]**auswählen. AEM Assets nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
+Das Sortieren von Suchergebnissen hilft Ihnen, erforderliche Assets schneller zu finden. Das Sortieren von Suchergebnissen ist in der Listenansicht möglich und nur, wenn Sie die Option **[!UICONTROL [Dateien](#searchui)]**im Bedienfeld**[!UICONTROL  Filter ]**auswählen.[!DNL Assets]nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
-In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
+In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert mit diesen Spalten: Name, Titel, Status, Dimensionen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) Veröffentlicht, Workflow und Checked-out.
 
-Siehe [Konfigurieren der Sortierung anhand der Namensspalte](#sortbyname). Mehr über Einschränkungen bei der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
+Mehr über Einschränkungen bei der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
 
 ### Überprüfen fon detaillierten Informationen zu einem Asset {#checkinfo}
 
