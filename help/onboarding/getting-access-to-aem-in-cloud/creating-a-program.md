@@ -2,9 +2,9 @@
 title: Erstellen eines Programms - Cloud-Dienst
 description: Erstellen eines Programms - Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Die Option zum Löschen ist in der Landingpage verfügbar, wie unten dargestellt
 
 Oder
 
-Wählen Sie auf der Seite &quot; **Übersicht** &quot;die Option Programm ** löschen, um Ihr Sandbox-Programm zu löschen.
+Wählen Sie **Programm** löschen auf der Seite **Programm-Übersicht** , um Ihr Sandbox-Programm zu löschen.
 
 ![](assets/delete-sandbox2.png)
 
