@@ -2,8 +2,11 @@
 title: Konfigurieren und Verwalten von Adobe Experience Manager Assets as a Cloud Service
 description: Erfahren Sie mehr über die für Adobe Experience Manager Assets as a Cloud Service erforderlichen Konfigurations- und Verwaltungsaufgaben.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 100%
 
 ---
 
