@@ -1,8 +1,11 @@
 ---
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 [So erstellen Sie eine neue Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
-1. [Navigieren Sie zu der Position,](#finding-your-page) an der Sie die neue Seite erstellen möchten.
+1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
 1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann in der Liste die Option **Seite**:
 
    ![Schaltfläche „Erstellen“](/help/sites-cloud/authoring/assets/create.png)
@@ -102,6 +105,7 @@ Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht
       * Auf einem Mobilgerät: Tippen und halten Sie die Karte
       * Auf einem Desktop-Gerät: Verwenden Sie den durch das Häkchen-Symbol dargestellten [Schnellzugriff](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
    * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
+
    ![Beispielkarte](/help/sites-cloud/authoring/assets/card.png)
 
 ### Schnellaktionen (nur Kartenansicht/Desktop) {#quick-actions-card-view-desktop-only}
@@ -134,6 +138,7 @@ So bearbeiten Sie Ihre Seite:
       * den Seitenbereich öffnen
       * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)) auswählen
       * die gewünschte Komponente auf Ihre Seite ziehen
+
       Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
 
       ![Schaltfläche zum Umschalten des Seitenbereichs](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -171,6 +176,7 @@ So bearbeiten Sie Ihre Seite:
 
       * Wählen Sie in der Symbolleiste die Option **Vorschau**.
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
+
    >[!NOTE]
    >
    >Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
@@ -179,13 +185,14 @@ So bearbeiten Sie Ihre Seite:
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
-* In der **Sites-Konsole**:
+* In der Konsole **Sites**:
 
    1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
    1. Wählen Sie das Symbol **Eigenschaften** aus, indem Sie wahlweise Folgendes verwenden:
 
       * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
+
       ![Schaltfläche „Eigenschaften“](/help/sites-cloud/authoring/assets/properties.png)
 
    1. Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
@@ -202,13 +209,14 @@ Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigens
 
 Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (und zum Rückgängigmachen der Veröffentlichung):
 
-* In der **Sites-Konsole**:
+* In der Konsole **Sites**:
 
    1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
    1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
 
       * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
+
       ![Schaltfläche „Quick Publish“](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -217,7 +225,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
    1. Öffnen Sie das Menü **Seiteninformationen**.
    1. Wählen Sie **Seite veröffentlichen**.
 
-* Das Entfernen einer Seite aus der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die ausschließlich über die Symbolleiste verfügbar ist (nicht über die Schnellaktionen).
+* Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur auf der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
 
    ![Schaltfläche „Veröffentlichung verwalten“](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,10 +238,11 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 Diese Aktionen können alle wie folgt ausgelöst werden:
 
 1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie verschieben, kopieren und einfügen oder löschen möchten.
-1. Wählen Sie nach Bedarf das Symbol „Kopieren“ (gefolgt von „Einfügen“), „Verschieben“ oder „Löschen“ aus, indem Sie wahlweise Folgendes verwenden:
+1. Wählen Sie das Symbol zum Kopieren (und dann Einfügen), Verschieben oder Löschen nach Bedarf aus, indem Sie eine der folgenden Aktionen durchführen:
 
    * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die gewünschte Ressource
    * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
+
    Anschließend abhängig von Ihrer Aktion:
 
    * Kopieren:
@@ -251,7 +260,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
 ### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
-Durch das [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) verhindern Sie, dass andere Autoren gleichzeitig mit Ihnen daran arbeiten. Sie finden das Symbol/die Schaltfläche „Sperren“ (und „Entsperren“) an folgenden Orten:
+[Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
 * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
 * Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite
