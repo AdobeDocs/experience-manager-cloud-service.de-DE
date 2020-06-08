@@ -1,10 +1,10 @@
 ---
 title: Die Tools-Konsolen
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '189'
 ht-degree: 100%
 
 ---
