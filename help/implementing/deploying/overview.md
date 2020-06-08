@@ -1,10 +1,10 @@
 ---
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '3512'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Die Aktualisierung der AEM-Version ist stets ein separates Bereitstellungsereign
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
