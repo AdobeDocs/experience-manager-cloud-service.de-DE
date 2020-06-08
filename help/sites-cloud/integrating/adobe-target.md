@@ -1,8 +1,11 @@
 ---
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 100%
 
 ---
 
@@ -50,6 +53,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 >
 >* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
 >* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+
 >
 
 
@@ -82,6 +86,7 @@ Die Integration von AEM as a Cloud Service mit Adobe Target erfordert Kenntnisse
 >* 2.000 Erlebnisse
 >* 50 Metriken
 >* 50 Berichtssegmente
+
 >
 
 
