@@ -2,10 +2,10 @@
 title: Stapelweises Importieren und Exportieren von Asset-Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Massen importieren und exportieren können.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '662'
 ht-degree: 100%
 
 ---
