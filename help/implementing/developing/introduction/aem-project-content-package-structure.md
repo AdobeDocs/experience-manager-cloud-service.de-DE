@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
 source-wordcount: '2417'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -72,7 +72,7 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
          + Gruppen
          + ACLs (Berechtigungen)
             + Beliebige `rep:policy` für alle (veränderlichen und unveränderlichen) Pfade
-+ Das `ui.content`-Paket bzw. das Inhaltspaket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket enthält alles, was nicht im `ui.apps` Paket enthalten ist, oder mit anderen Worten, alles, was nicht in `/apps` oder `/oak:index`. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
++ Das `ui.content`-Paket bzw. das Inhaltspaket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket enthält alles, was nicht im `ui.apps`-Paket enthalten ist, oder mit anderen Worten, alles, was nicht in `/apps` oder `/oak:index` enthalten ist. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
    + Kontextabhängige Konfigurationen
       + `/conf`
    + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltserstellungen, die auf in Repo Init definierten Inhaltsstrukturen aufbauen und diese erweitern
