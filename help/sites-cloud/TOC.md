@@ -1,10 +1,10 @@
 ---
 sub-product: Inhaltserstellung in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
