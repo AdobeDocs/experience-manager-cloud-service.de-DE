@@ -1,8 +1,11 @@
 ---
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 100%
 
 ---
 
@@ -95,6 +98,7 @@ Anschließend können Sie Details angeben:
    * **Workflow-Titel**
 
       * Sie können einen Titel für diese Instanz angeben, damit Sie sie zu einem späteren Zeitpunkt identifizieren können.
+
    Abhängig vom Workflow-Modell stehen die folgenden Optionen zur Verfügung. Diese erlauben, das als Payload erstellte Paket zu behalten, nachdem der Workflow beendet ist.
 
    * **Workflow-Paket behalten**
@@ -125,9 +129,11 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
          * Nur unmittelbar untergeordnete Elemente einbeziehen.
          * Nur geänderte Seiten einbeziehen.
          * Nur bereits veröffentlichte Seiten einbeziehen.
+
          Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet wird.
 
       * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
+
    ![Definieren des Workflow-Umfangs](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
