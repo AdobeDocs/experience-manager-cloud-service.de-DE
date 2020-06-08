@@ -1,8 +1,11 @@
 ---
-title: Arbeiten mit dynamischen Medien
+title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
 
@@ -32,9 +35,9 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 
 * [Rotationssets](spin-sets.md)
 * [Video](video.md)
-* [Bereitstellen von Dynamic Media Assets](delivering-dynamic-media-assets.md)
+* [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
-* [Verwenden von Schnellansichten zum ERstellen von benutzerdefinierten Popups](custom-pop-ups.md) 
+* [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](custom-pop-ups.md)
 
 Siehe auch [Einrichten dynamischer Medien](administering-dynamic-media.md).
 
