@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -27,14 +27,14 @@ Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung 
 
 Die Verarbeitung von Assets hängt von der Konfiguration in den **[!UICONTROL Verarbeitungsprofilen]** ab, die eine Standardeinstellung bieten und es einem Administrator ermöglichen, spezifischere Asset-Verarbeitungskonfigurationen hinzuzufügen. Administratoren können die Konfigurationen von Nachbearbeitungs-Workflows erstellen und verwalten, einschließlich optionaler Anpassungen. Die Anpassung von Workflows ermöglicht Erweiterbarkeit und vollständige Anpassung.
 
-Mit Asset Microservices können Sie eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken als mit früheren Versionen von Experience Manager möglich ist. Beispielsweise ist jetzt eine Miniaturansicht-Extraktion von PSD- und PSB-Formaten möglich, die zuvor von Drittanbietern wie ImageMagick benötigt wurde.
+Mit Asset-Microservices können Sie eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Eine hochwertige Ansicht der Asset-](assets/asset-microservices-flow.png "VerarbeitungEine hochwertige Ansicht der Asset-Verarbeitung")
+![Eine allgemeine Ansicht der Asset-Verarbeitung](assets/asset-microservices-flow.png "Eine allgemeine Ansicht der Asset-Verarbeitung")
 
 >[!NOTE]
 >
