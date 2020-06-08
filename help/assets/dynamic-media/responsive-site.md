@@ -1,8 +1,11 @@
 ---
 title: Bereitstellen von optimierten Bildern für eine responsive Site
 description: Anleitung zur Bereitstellung optimierter Bilder mit der responsiven Codefunktion
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 100%
 
 ---
 
