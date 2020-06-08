@@ -3,6 +3,9 @@ title: Rollenbasierte Berechtigungen
 description: Rollenbasierte Berechtigungen
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 60%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 [!UICONTROL Cloud Manager] verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Beispielsweise schreibt ein Entwickler Code und ist berechtigt, den Code per Push an das **Git-Repository** zu übertragen. Ein Business Owner verfügt wiederum über verschiedene Berechtigungen, um KPIs (Key Performance Indicators) zu definieren und Bereitstellungen zu genehmigen.
 
-## Anwenderberechtigungen {#user-permissions}
+## Benutzerberechtigungen {#user-permissions}
 
 Jede der Rollen verfügt über spezifische Berechtigungen, vorkonfigurierte Aufgaben oder Berechtigungen, die jeder Rolle zugeordnet sind. In der folgenden Tabelle sind die verfügbaren Funktionen und Rollen aufgelistet, die die Funktion ausführen können.
 
