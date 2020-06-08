@@ -1,8 +1,11 @@
 ---
 title: Bearbeiten von Launches
 description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Wenn Ihr Launch auf einer Live Copy basiert, sehen Sie Folgendes: <!--If your la
 * Schlosssymbole (kleine Vorhängeschlösser), wenn Sie eine Komponente bearbeiten (Inhalt und/oder Eigenschaften)
 * die Registerkarte **Live Copy** in den **Seiteneigenschaften**
 
-Eine Live Copy wird verwendet, um Inhalt *von* der Quellverzweigung mit Ihrer *Startverzweigung* zu synchronisieren (um Ihren Launch mit den Änderungen an der Quelle aktuell zu halten).
+Eine Livecopy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer Launch-Verzweigung zu synchronisieren (um Ihren Launch mit den Änderungen an der Quelle zu aktualisieren).
 
 Sie können Änderungen auf dieselbe Weise vornehmen wie bei einer Standard-Live-Copy, z. B.:
 
@@ -34,7 +37,7 @@ Siehe „Ändern von Live Copy-Inhalt“. <!--See [Changing Live Copy Content](/
 
 ## Vergleichen einer Launch-Seite mit ihrer Quellseite {#comparing-a-launch-page-to-its-source-page}
 
-Sie können die vorgenommenen Änderungen verfolgen, indem Sie den Launch in den **Verweisen** anzeigen und die Launch-Seite mit ihrer Quellseite vergleichen:
+Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Referenzen** anzeigen und die Launch- mit der Quellseite vergleichen:
 
 1. Navigieren Sie in der **Sites-Konsole** [zur Quellseite Ihres Launches und wählen Sie sie aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie das Fenster **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**und wählen Sie **Launches**aus.
@@ -73,7 +76,7 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
       * Wählen Sie **Eigenschaften bearbeiten** aus.
       * Die Details werden angezeigt.
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
-   * Unter [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) finden Sie weitere Informationen über den Zweck und die Interaktion der Felder **Launch-Datum** und **Produktionsbereit**.
+   * Unter [Launches – Reihenfolge der Ereignisse](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
 ## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
 
