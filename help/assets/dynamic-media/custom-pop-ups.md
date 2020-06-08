@@ -1,13 +1,16 @@
 ---
-title: Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups
+title: 'Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups '
 description: Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 100%
 
 ---
 
 
-# Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups  {#using-quickviews-to-create-custom-pop-ups}
+# Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups} 
 
 Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig von dem von Ihnen verwendeten Viewer, können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
 
