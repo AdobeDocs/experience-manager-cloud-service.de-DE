@@ -1,13 +1,16 @@
 ---
 title: Metadaten – Fragmenteigenschaften
 description: Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 100%
 
 ---
 
 
-# Metadaten   – Fragmenteigenschaften{#metadata-fragment-properties}
+# Metadaten – Fragmenteigenschaften{#metadata-fragment-properties}
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
