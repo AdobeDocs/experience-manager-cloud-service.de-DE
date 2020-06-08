@@ -2,8 +2,11 @@
 title: 'Ein- und Auschecken von Dateien in Assets '
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 100%
 
 ---
 
@@ -50,7 +53,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
    Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
 
-1. Wählen Sie das bearbeitete Asset in der Assets-Benutzeroberfläche aus und klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einchecken]**.
+1. Wählen Sie das bearbeitete Asset in der Benutzeroberfläche „Assets“ aus und klicken Sie auf das Symbol **[!UICONTROL Checkin]** in der Symbolleiste.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
