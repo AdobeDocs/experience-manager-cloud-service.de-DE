@@ -175,7 +175,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad    Browser</td>
+   <td>Pfad      Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -185,7 +185,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Pfad   </p> </td>
+   <td><p>Pfad     </p> </td>
    <td><p>Verwenden Sie dieses Suchprädikat, um Ergebnisse am Speicherort zu filtern. Sie können verschiedene Pfade als Optionen angeben.</p> </td>
    <td>
     <ul>
@@ -225,7 +225,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum     Bereich</p> </td>
+   <td><p>Datum       Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>
