@@ -1,8 +1,11 @@
 ---
 title: Panoramabilder
 description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 100%
 
 ---
 
@@ -73,7 +76,7 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
-Informationen hierzu finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
+Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
 
