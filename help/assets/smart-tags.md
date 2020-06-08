@@ -3,9 +3,9 @@ title: Taggen Sie Bilder mit künstlich intelligenten Diensten.
 description: Taggen Sie Bilder mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit Adobe Sensei-Diensten anwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 35%
 
 ---
@@ -99,7 +99,7 @@ Sie können die Schulung nicht rückgängig machen. Die obigen Richtlinien sollt
 Gehen Sie wie folgt vor, um ein Modell für Ihre unternehmensspezifischen Tags zu erstellen und auszubilden:
 
 1. Erstellen Sie die erforderlichen Tags und die entsprechende Tag-Struktur. Laden Sie die entsprechenden Bilder in das DAM-Repository hoch.
-1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Assets]** > **[!UICONTROL Schulungsmodell]** auf.
+1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Assets]** > **[!UICONTROL Smart-Tag-Schulung]** auf.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Geben Sie einen **[!UICONTROL Titel]**, eine **[!UICONTROL Beschreibung]** ein.
 1. Suchen Sie die Tags der vorhandenen Tags, für die Sie das Modell trainieren möchten, und wählen Sie sie aus `cq:tags` diesen aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Dialogfeld &quot;Assets **[!UICONTROL auswählen]** &quot;auf **[!UICONTROL Hinzufügen Assets]** für jedes Tag. Suchen Sie im DAM-Repository oder durchsuchen Sie das Repository, um mindestens 10 und höchstens 50 Bilder auszuwählen. Wählen Sie Assets und nicht den Ordner aus. Klicken Sie nach Auswahl der Bilder auf **[!UICONTROL Auswählen]**.
