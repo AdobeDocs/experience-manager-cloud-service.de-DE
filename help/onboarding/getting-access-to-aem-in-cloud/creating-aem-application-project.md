@@ -3,11 +3,14 @@ title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 92%
 
 ---
 
 
-# Creating an AEM Application Project {#aem-application-project}
+# Erstellen eines AEM-Anwendungsprojekts {#aem-application-project}
 
 ## Arbeiten mit dem Assistenten zum Erstellen eines AEM-Anwendungsprojekts {#using-wizard-to-create-an-aem-application-project}
 
@@ -20,18 +23,18 @@ Gehen Sie wie folgt vor, um ein AEM-Anwendungsprojekt in Cloud Manager zu erstel
 
    ![](assets/create-wizard1.png)
 
-1. Klicken Sie auf **Erstellen** , um zum Bildschirm &quot;Verzweigung und Projekt **erstellen&quot;** zu navigieren.
+1. Klicken Sie auf **Erstellen**, um zum Bildschirm **Verzweigung und Projekt erstellen** zu navigieren.
 
    ![](assets/create-wizard2.png)
 
-1. Die Kachel **Projekterstellung in Bearbeitung** wird im Bildschirm *Programmübersicht* angezeigt.
+1. Die Kachel &quot; **Projekterstellung in Bearbeitung** &quot;wird im Bildschirm &quot; *Programm-Übersicht* &quot;angezeigt.
 
    ![](assets/create-wizard3.png)
 
-1. Sobald die Programmerstellung abgeschlossen ist, wird die Kachel **Umgebung** hinzufügen auf der Seite *Programmübersicht* angezeigt.
+1. Sobald die Programmerstellung abgeschlossen ist, wird die Kachel **Umgebung hinzufügen** auf der Seite *Programmübersicht* angezeigt.
    ![](assets/create-wizard4.png)
 
-   Informationen zum Hinzufügen und Verwalten von Umgebungen finden Sie unter [Verwalten Ihrer Umgebungen](/help/implementing/cloud-manager/manage-environments.md) .
+   Informationen zum Hinzufügen und Verwalten von Umgebung finden Sie unter [Verwalten Ihrer Umgebung](/help/implementing/cloud-manager/manage-environments.md) .
 
 ## Einrichten des Projekts {#setting-up-your-project}
 
@@ -255,14 +258,14 @@ Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, d.
 
 >[!NOTE]
 >
->Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein Systempaket in der AEM-Umgebung installieren müssen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
+>Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein auf der AEM-Umgebung installiertes Systempaket benötigen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
 
 ## Überspringen von Inhaltspaketen {#skipping-content-packages}
 
 In Cloud Manager können Builds eine beliebige Anzahl von Inhaltspaketen generieren.
 Aus vielerlei Gründen kann es sinnvoll sein, ein Inhaltspaket zu erstellen, es jedoch nicht bereitzustellen. Dies kann nützlich sein, etwa für Inhaltspakete, die nur zum Testen erstellt wurden, oder für Pakete, die in einem anderen Schritt im Build-Prozess (also als Unterpaket eines anderen Pakets) neu verpackt werden.
 
-Um diese Szenarien zu berücksichtigen, sucht Cloud Manager in den Eigenschaften integrierter Inhaltspakete nach einer Eigenschaft namens ***cloudManagerTarget***. Wenn diese Eigenschaft auf „Ohne“ festgelegt ist, wird das Paket übersprungen und nicht bereitgestellt. Der Mechanismus zum Festlegen dieser Eigenschaft hängt davon ab, wie der Build das Inhaltspaket erzeugt. Mit dem filevault-maven-Plugin würden Sie beispielsweise das Plugin wie folgt konfigurieren:
+Um diese Szenarien zu berücksichtigen, sucht Cloud Manager in den Eigenschaften erstellter Inhaltspakete nach einer Eigenschaft namens ***cloudManagerTarget***. Wenn diese Eigenschaft auf „Ohne“ festgelegt ist, wird das Paket übersprungen und nicht bereitgestellt. Der Mechanismus zum Festlegen dieser Eigenschaft hängt davon ab, wie der Build das Inhaltspaket erzeugt. Mit dem filevault-maven-Plugin würden Sie beispielsweise das Plugin wie folgt konfigurieren:
 
 ```xml
         <plugin>
