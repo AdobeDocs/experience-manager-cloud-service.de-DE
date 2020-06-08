@@ -1,8 +1,11 @@
 ---
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 
 Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-cloud/authoring/projects/overview.md) und [Workflows](/help/sites-cloud/authoring/projects/workflows.md).  So erstellen Sie ein neues Projekt:
 
-1. Tippen oder klicken Sie in **Projekte** auf **Erstellen**, um den Assistenten **Projekt erstellen** zu öffnen:
+1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
 1. Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter**.
 
    ![Erstellen eines Projekts](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -72,7 +75,7 @@ Dieselbe Methode wird zum Löschen eines Projekts aus der Konsole oder einer ver
 
 >[!NOTE]
 >
->Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer zuordnen, werden im Projekt automatisch Gruppen angelegt, mit denen die entsprechenden Berechtigungen verwaltet werden. Beispielsweise könnte das Projekt „MeinProjekt“ die drei Gruppen **MeinProjekt-Inhaber**, **MeinProjekt-Bearbeiter** und **MeinProjekt-Beobachter** haben. Wenn das Projekt gelöscht wird, werden diese Gruppen nicht automatisch gelöscht. Sie müssen von Administratoren über **Tools** > **Sicherheit** > **Gruppen** manuell gelöscht werden.
+>Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Ein Administrator muss die Gruppen unter **Werkzeuge** > **Sicherheit** > **Gruppen** manuell löschen.
 
 ### Hinzufügen von Elementen zu einer Kachel {#adding-items-to-a-tile}
 
