@@ -1,8 +1,11 @@
 ---
 title: Anwenden von Dynamic Media-Bildvorgaben
 description: Erfahren Sie, wie Sie in Dynamic Media Bildvorgaben anwenden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 100%
 
 ---
 
@@ -39,6 +42,7 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
    * Wählen Sie ein dynamisches Ausgabeformat aus, um eine Vorschau der Bildvorgabe anzuzeigen.
    * Tippen Sie auf **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**, um das Popup-Fenster anzuzeigen.
+
    >[!NOTE]
    >
    >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL RES]**, falls zutreffend) nicht verfügbar.
