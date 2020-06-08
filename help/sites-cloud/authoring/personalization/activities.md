@@ -1,8 +1,11 @@
 ---
-title: Verwalten von Aktivitäten
+title: 'Verwalten von Aktivitäten '
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 100%
 
 ---
 
@@ -71,20 +74,20 @@ Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese e
 
 Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität, um Ihre Marketinganstrengungen auf bestimmte Zielgruppen abzustimmen. Beim Erstellen oder Bearbeiten von Aktivitäten werden folgende Daten festgelegt:
 
-* **Name:** der Name der Aktivität.
-* **Targeting-Engine:** Wählen Sie [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oder [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) als Engine für zielgerichtete Inhalte aus.
-* **Wählen Sie eine Target-Konfiguration aus** (nur Adobe Target): die Cloud-Konfiguration, mit deren Hilfe sich diese Aktivität mit Adobe Target verbindet. Diese Option ist nur verfügbar, wenn Adobe Target als Targeting-Engine ausgewählt wurde.
+* **Name:** Der Name der Aktivität.
+* **Targeting-Engine:** Entweder [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oder [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) als Engine für zielgerichtete Inhalte.
+* **Auswählen einer Target-Konfiguration:** (Nur Adobe Target) Die Cloud-Konfiguration, mit der diese Aktivität eine Verbindung zu Adobe Target herstellen soll. Diese Option wird nur angezeigt, wenn Adobe Target für die Targeting-Engine ausgewählt wurde.
 * **Aktivitätstyp**: der Aktivitätstyp – A/B-Test oder Erlebnis-Targeting.
-* **Vorgabe** (optional): Geben Sie eine Beschreibung der Aktivität ein.
-* **Erlebnisse:** Zuordnungen der Zielgruppennamen und Marketingsegmente, die angesprochen werden sollen.
+* **Zielsetzung:** (Optional) Eine Beschreibung der Aktivität.
+* **Erlebnisse:** Zuordnungen zwischen Zielgruppennamen und den Marketingsegmenten, die Sie als Ziel auswählen.
 * **Traffic-Anteile**: wurde A/B-Test ausgewählt, können Sie festlegen, welcher Anteil des Traffics (in Prozent) an die verschiedenen Erlebnisse weitergeleitet wird.
-* **Dauer:** Zeitraum, in dem die Aktivität aktiv ist.
-* **Priorität:** relative Wichtigkeit der Aktivität. Stellen verschiedene Aktivitäten Inhalte für die gleichen Benutzersegmente bereit, wird eine Aktivität mit höherer Priorität bevorzugt.
-* **Zielmetrik**: wurde Adobe Target als Targeting-Engine ausgewählt, können Sie der Aktivität Erfolgsmetriken hinzufügen. Es muss mindestens eine Erfolgsmetrik festgelegt werden.
+* **Dauer:** Der Zeitraum, in dem die Aktivität angewendet wird.
+* **Priorität:** Die relative Priorität der Aktivität. Wenn Aktivitäten Inhalte für dieselben Benutzersegmente bereitstellen, hat die Aktivität mit höherer Priorität Vorrang.
+* **Zielmetrik**: wurde Adobe Target als Targeting-Engine ausgewählt, können Sie der Aktivität Erfolgsmetriken hinzufügen. Eine Erfolgsmetrik ist erforderlich.
 
 >[!NOTE]
 >
->Neue Adobe Target-Aktivitäten müssen im Editor für zielgerichtete Inhalte *erstellt* werden, nicht in der Konsole **Aktivitäten**, da die Synchronisierung mit Adobe Target in diesem Fall fehlschlägt.
+>Neue Adobe Target-Aktivitäten müssen im Editor für zielgerichtete Inhalte *erstellt* werden, nicht in der Konsole **Aktivitäten**, da die Synchronisierung mit Adobe Target fehlschlägt.
 >
 >Bestehende Adobe Target-Aktivitäten können jedoch in der Konsole bearbeitet werden.
 
@@ -97,7 +100,7 @@ So fügen Sie eine Aktivität hinzu:
    * Haben Sie Adobe Target als Targeting-Engine ausgewählt, wählen Sie die Cloud-Konfiguration aus, die für die Verbindung mit Adobe Target verwendet werden soll, oder bearbeiten Sie diese. (Achten Sie darauf, kein Framework auszuwählen, das für die Cloud-Konfiguration erstellt wurde.)
    * (Optional) Das Ziel oder die Beschreibung der Aktivität.
    * Wählen Sie den Aktivitätstyp aus.
-1. Fügen Sie der Aktivität eines oder mehr Erlebnisse hinzu. Klicken oder tippen Sie auf **Erlebnis hinzufügen**.
+1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
    1. Klicken oder tippen Sie auf **Zielgruppe wählen** und wählen Sie das Segment aus, auf das Ihr Erlebnis abgestimmt ist.
    1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**. 
@@ -109,7 +112,7 @@ Wenn Sie A/B-Tests in Adobe Target verwenden:
    1. Klicken oder tippen Sie auf **Weiter**.
 1. Verwenden Sie das Dropdown-Menü **Start**, um festzulegen, wann die Aktivität beginnen soll. Wählen Sie einen der folgenden Werte aus:
    * **Ist diese Option aktiviert**, beginnt die Aktivität, sobald die Seite aktiviert wird, auf der sich der zielgerichtete Inhalt befindet.
-   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität online gehen soll.
+   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 1. Verwenden Sie das Dropdown-Menü „Ende“, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
    * **Ist diese Option deaktiviert**, endet die Aktivität, sobald die Seite deaktiviert wird, auf der sich der Targeting-Inhalt befindet.
    * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität beendet werden soll.
@@ -163,6 +166,7 @@ So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
    * Die aktuelle Aktivität wird deaktiviert.
    * Es werden alle Seiten modifiziert und zielgerichtete Inhalte durch die Inhalte des Gewinnererlebnisses ersetzt. Der Inhalt des Gewinnererlebnisses wird Teil der normalen Seite **ohne** Targeting.
+
    ![Konvertieren des Gewinners](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Gewinnererlebnisse sind diejenigen Erlebnisse, die in den Berichten größere Steigerungen als andere erzielen. Diese Steigerungen werden aus der Konversionsrate errechnet.
