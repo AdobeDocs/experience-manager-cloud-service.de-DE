@@ -1,8 +1,11 @@
 ---
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '6010'
+ht-degree: 100%
 
 ---
 
@@ -107,7 +110,7 @@ Manchmal ist es ausreichend, die IT-Experten zu konsultieren, die für Ihre vorh
 
 Die meisten Schnellansichtsimplementierungen verwenden das folgende Modell:
 
-* Der Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. Dazu kann er beispielsweise auf die Schaltfläche „Schnellansicht“ klicken.
+* Benutzer aktiviert ein Benutzeroberflächenelement auf der Website. Dazu kann er beispielsweise auf die Schaltfläche „Schnellansicht“ klicken.
 * Die Website sendet eine Ajax-Anforderung an das Back-End, um bei Bedarf die Schnellansichtsdaten oder -inhalte zu laden.
 * Die Schnellansichtsdaten werden in den Inhalt übersetzt, um für das Rendern auf der Webseite vorbereitet zu werden.
 * Schließlich zeigt der Front-End-Code diesen Inhalt visuell auf dem Bildschirm an.
@@ -353,6 +356,7 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
       * Tippen Sie auf das vordere blaue Oval zum Positionieren direkt am Segmentanfang.
       * Tippen Sie auf das hintere blaue Oval zum Positionieren direkt am Segmentende.
       * Tippen Sie auf das gesamte Segment, um die Videowiedergabe auf den Anfang dieses Segments zurückzusetzen.
+
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
    Neupositionierung des Endes eines Timeline-Segments
@@ -412,7 +416,7 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
       <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einem Hyperlink</td> 
       <td><p>Tippen Sie unter „Aktionstyp“ auf <strong>Hyperlink</strong> und führen Sie dann einen der folgenden Schritte aus:</p> 
        <ul> 
-       <li>Wenn Sie AEM Sites-Kunde sind, tippen Sie auf das Symbol zur Site-Auswahl (Ordner), um zu einer Webseite zu navigieren. Beachten Sie, dass die URL-basierte Verlinkungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.</li> 
+       <li>Wenn Sie AEM Sites-Kunde sind, tippen Sie auf das Symbol zur Site-Auswahl (Ordner), um zu einer Webseite zu navigieren. Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.</li> 
        <li>Wenn Sie nur dynamische Medien verwenden, geben Sie im Textfeld „HREF“ den vollständigen URL-Pfad zu einer verknüpften Webseite an.</li> 
        </ul> <p>Stellen Sie sicher, dass Sie angeben, ob Sie den Link in einem neuen Browser oder auf der aktuellen Registerkarte öffnen möchten.</p> </td> 
       </tr> 
@@ -482,14 +486,14 @@ So fügen Sie Ihrem Video Interaktivität hinzu:
 
 1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Integrationscode oder die URL erstellt, die Sie schließlich kopieren und auf die Websiteoberfläche einfügen.
 
-   Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden Sie nur den Integrationscode. Wenn Sie die Interaktivität mit per Hyperlink verbundenen Webseiten hinzugefügt haben, können Sie auch die veröffentlichte URL verwenden. Beachten Sie jedoch, dass die URL-basierte Methode zur Verlinkung nicht möglich ist, wenn Ihr interaktiver Inhalt Links mit relativen URLs enthält, insbesondere Links zu AEM Sites-Seiten.
+   Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden Sie nur den Integrationscode. Wenn Sie die Interaktivität mit per Hyperlink verbundenen Webseiten hinzugefügt haben, können Sie auch die veröffentlichte URL verwenden. Beachten Sie jedoch, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
 
    Informationen hierzu finden Sie unter [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie auch alle zugehörigen Bild-Assets des Videos aus Ihrem eCommerce-Bereich separat veröffentlichen.
 
-   Nachdem Sie Timeline-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Einstiegsseite Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos auf Ihrer Website](#integrating-an-interactive-video-with-your-website).
+   Nachdem Sie Timeline-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Einstiegsseite Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos auf Ihrer Website.](#integrating-an-interactive-video-with-your-website)
 
 ## Veröffentlichen interaktiver Video-Assets {#publishing-interactive-video-assets}
 
@@ -751,7 +755,7 @@ Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Video
 
 [https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html)
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups  {#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups} 
 
-Siehe [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](/help/assets/dynamic-media/custom-pop-ups.md).
+Siehe [Popups mithilfe von benutzerspezifischen Schnellansichten erstellen](/help/assets/dynamic-media/custom-pop-ups.md).
 -->
