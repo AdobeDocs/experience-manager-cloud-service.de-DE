@@ -161,7 +161,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie durch die Kopfzeilenoptionen navigieren, und beschleunigt die Navigation, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt führen.
 
-   ![Zu Hauptinhalt überspringen](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+   ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Aufrufen der Hilfe {#accessing-help}
 
@@ -196,6 +196,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
    * **Dokumentation** –
 Dokumentation für Web Experience Management anzeigen
    * **Entwicklungsressourcen** –Entwicklungsressourcen und Downloads
+
    >[!NOTE]
    >
    >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
@@ -310,6 +311,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Dann erscheint ein Häkchen auf der Miniaturansicht und der Ressourcenname wird hervorgehoben dargestellt.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
+
    Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird sie zusammen mit den folgenden Details in der letzten Spalte angezeigt:
 
    * Seitentitel
