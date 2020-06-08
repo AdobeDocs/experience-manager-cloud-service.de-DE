@@ -1,13 +1,16 @@
 ---
-title: Verwalten von Bildvorgaben
+title: 'Verwalten von Bildvorgaben  '
 description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3657'
+ht-degree: 100%
 
 ---
 
 
-# Verwalten von Bildvorgaben{#managing-image-presets}
+# Verwalten von Bildvorgaben  {#managing-image-presets}
 
 Anhand von Bildvorgaben kann AEM Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung aus Größen- und Formatierungsbefehlen für die Anzeige von Bildern dar. Beim Erstellen einer Bildvorgabe wählen Sie eine Größe für die Bildbereitstellung aus. Außerdem wählen Sie Formatierungsbefehle, damit die Darstellung des Bildes bei der Bereitstellung zur Anzeige optimiert wird.
 
@@ -43,11 +46,11 @@ Bildvorgaben verwalten Sie in AEM, indem Sie auf das AEM-Logo tippen oder klicke
 >
 >Sie müssen Bildvorgaben *nicht* veröffentlichen, da die Veröffentlichung von Bildvorgaben automatisch erfolgt.
 >
->Siehe [Veröffentlichen von Bildvorgaben](#publishing-image-presets).
+>Siehe [Veröffentlichen von Bildvorgaben.](#publishing-image-presets)
 
 >[!NOTE]
 >
->Das System zeigt mehrere Ausgabeformate, wenn Sie **[!UICONTROL Ausgabeformate]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Anzahl der angezeigten Bildvorgaben erhöhen](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>Das System zeigt mehrere Ausgabeformate, wenn Sie **[!UICONTROL Ausgabeformate]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF   {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -72,7 +75,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabeformate für AI-, EPS- oder 
 
 >[!NOTE]
 >
->Im Workflow „DAM-Update-Asset“ generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
+>Im „DAM Update Asset“-Workflow generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
 
 #### Metadateneigenschaften von PDF-/AI-/EPS-Assets   {#pdf-ai-eps-asset-metadata-properties}
 
@@ -130,6 +133,7 @@ Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Ma
 ### InDesign-Dateiformat (INDD)   {#indesign-indd-file-format}
 
 Wenn Sie INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Wiedergaben zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
+ 
 
 Für InDesign-Dateien werden nur dann Unter-Assets extrahiert, wenn der Adobe InDesign Server in AEM integriert ist. Referenzierte Assets werden auf der Grundlage ihrer Metadaten verknüpft. Für die Verknüpfung ist InDesign Server nicht erforderlich. Die referenzierten Assets müssen jedoch in AEM vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
 
@@ -172,7 +176,7 @@ Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
 Sie können die Größe von Miniaturansichten über die Einstellungen im Workflow **[!UICONTROL DAM-Update-Asset]** konfigurieren. Im Workflow sind zwei Schritte enthalten, in denen Sie die Größe der Miniaturansichten von Bild-Assets konfigurieren können. Obwohl der eine (**[!UICONTROL Dynamic Media Process Image-Assets]**) für das Generieren dynamischer Bild-Assets und der andere (**[!UICONTROL Miniaturansichten verarbeiten]**) für das Generieren statischer Miniaturansichten verwendet wird bzw. dann, wenn alle anderen Prozesse zum Generieren von Miniaturansichten fehlschlagen, sollten *beide* dieselben Einstellungen haben.
 
-Mit dem Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** werden Miniaturansichten durch den Image-Server erstellt. Diese Konfiguration ist unabhängig von der Konfiguration für den Schritt **[!UICONTROL Miniaturansichten verarbeiten]**. Das Generieren von Miniaturansichten mit dem Schritt **[!UICONTROL Miniaturansichten verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturansichten.
+Im Schritt **[!UICONTROL Bild-Assets-Prozess für dynamische Medien]** werden vom Bildserver Miniaturansichten generiert. Diese Konfiguration ist unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Prozessminiaturansichten]** angewendet wird. Das Generieren von Miniaturansichten mit dem Schritt **[!UICONTROL Miniaturansichten verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturansichten.
 
 Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, z. B. *80:80:false*. Die Breite und die Höhe legen die Größe der Miniaturansicht in Pixel fest. Für den Center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
 
@@ -197,7 +201,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
    >[!NOTE]
    >
-   >Die Werte im Argument „Miniaturen“ im Schritt **[!UICONTROL Miniaturansichten verarbeiten]** müssen mit denen im Argument „Miniaturen“ im Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** übereinstimmen.
+   >Die Werte im Argument „Miniaturansichten“ im Schritt **[!UICONTROL Prozessminiaturansichten]** müssen mit dem Argument „Miniaturansichten“ im Schritt **[!UICONTROL Bild-Assets-Prozess für dynamische Medien]** übereinstimmen.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
 
@@ -243,9 +247,9 @@ Wenn Sie INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamisc
 
    >[!NOTE]
    >
-   >Um eine responsive Bildvorgabe zu erstellen, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
+   >Damit diese Bildvoreinstellung responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
 
-1. Geben Sie die entsprechenden Werte auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** einschließlich eines Namens ein. Die Optionen werden in den [Optionen für die Bildvorgabe](#image-preset-options) hervorgehoben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
+1. Geben Sie Werte wie gewünscht in die Registerkarten **[!UICONTROL Einfach]** und **[!UICONTROL Erweitert]** ein, einschließlich eines Namens. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
@@ -269,7 +273,7 @@ Dadurch wird diese Vorgabe in AEM als responsiv erkannt. Sie können die anderen
 
 Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeiten von Bildvorgaben verfügbar. Adobe empfiehlt zudem die folgenden Best Practices für den Anfang:
 
-* **Format** (Registerkarte **[!UICONTROL Allgemein]**): Wählen Sie **[!UICONTROL JPEG]** oder ein anderes Format, das Ihre Anforderungen erfüllt. Alle Webbrowser unterstützen das JPEG-Bildformat. Es bietet einen angemessenen Ausgleich zwischen kleiner Dateigröße und Bildqualität. Das JPEG-Format nutzt aber ein verlustreiches Kompressionsschema, das zu unerwünschten Bildartefakten führen kann, wenn die Komprimierung zu niedrig eingestellt ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 zu setzen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
+* **Format** (Registerkarte **[!UICONTROL Allgemein]**): Wählen Sie **[!UICONTROL JPEG]** oder ein anderes Format, das Ihre Anforderungen erfüllt. Alle Webbrowser unterstützen das JPEG-Bildformat. Es bietet eine gute Balance zwischen kleinen Dateigrößen und Bildqualität. Bilder im JPEG-Format verwenden jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig festgelegt ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
 
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**: Aktivieren Sie nicht die Option **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für „Unschärfemaske“).
 
