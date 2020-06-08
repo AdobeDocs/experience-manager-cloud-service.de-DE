@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -68,11 +68,11 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
    Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) .
 
-* Coach Markierungen auf der Landingpage, um den Benutzer über die grundlegende Navigation zu informieren und zu informieren.
+* Coachmarks auf der Landingpage, die dem Benutzer grundlegende Informationen zur Navigation liefern.
 
 * Coach-Markierungen auf der Seite &quot; **Programm-Übersicht** &quot;, um den Benutzer über die grundlegende Navigation innerhalb von Cloud Manager zu informieren und ihn zu informieren, um ihn zu starten.
 
-* In Cloud Manager steht jetzt eine **LEARN** -Seite zur Verfügung, die über die Navigation oben aufgerufen werden kann. Diese Seite enthält Ressourcen, die Benutzern dabei helfen, sich über die am häufigsten verwendeten Arbeitsabläufe zu informieren, je nachdem, welche Rollen ihnen in Cloud Manager zugewiesen wurden.
+* In Cloud Manager ist jetzt eine Seite mit **LERNMATERIALIEN** verfügbar, auf die Sie über die obere Navigationsleiste zugreifen können. Die Seite enthält Ressourcen, die Benutzer über die häufigsten Workflows für ihre entsprechende Rolle in Cloud Manager informieren.
 
 * Sandbox-Programm werden jetzt mit einem **Sandbox** -Zeichen identifiziert, das auf der Programm-Karte auf der Landingpage sowie neben dem Programm-Namen auf der Seite &quot; **Programm-Übersicht** &quot;angezeigt wird.
 
@@ -84,9 +84,9 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
    Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) .
 
-* Das Build-Protokoll enthält jetzt die Liste der entdeckten Artefakte, einschließlich übersprungener Inhaltspakete.
+* Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte einschließlich übersprungener Inhaltspakete.
 
-* Der Schritt Erstellen überprüft jetzt, ob alle erstellten Inhaltspakete alle obligatorischen Eigenschaften enthalten - Name, Gruppe und Version.
+* Der Schritt „Erstellen“ überprüft jetzt, ob alle erstellten Inhaltspakete alle obligatorischen Eigenschaften enthalten: Name, Gruppe und Version.
 
 * Der Schritt Erstellen überprüft jetzt, ob der Build mindestens ein Inhaltspaket erstellt hat.
 
@@ -96,7 +96,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Die AEM-Versionshinweise wurden nicht einheitlich auf der Seite &quot; **Programme - Übersicht** &quot;angezeigt.
 
-* Bei der Konfiguration der Produktionsleitung war die Option **Geplante Bereitstellung** für einige Kunden nicht sichtbar.
+* When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
 
 ### Bekannte Probleme {#known-issues-cm}
 
