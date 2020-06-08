@@ -1,8 +1,11 @@
 ---
 title: Inhaltsfragmentmodelle
 description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -32,6 +35,7 @@ Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-m
 
    1. einen **Titel** angeben,
    2. **Inhaltsfragmentmodelle** auswählen, um deren Verwendung zu aktivieren.
+
    ![Konfiguration](assets/cfm-models-01.png)
 
 4. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
@@ -52,7 +56,7 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](#enable-content-fragment-models), ist die Option **Erstellen** nicht verfügbar.
 
-1. Legen Sie den **Modell-Titel** fest. Bei Bedarf können Sie auch **eine Beschreibung** hinzufügen.
+1. Geben Sie den **Modelltitel** an. Sie können bei Bedarf auch eine **Beschreibung** hinzufügen.
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
@@ -75,6 +79,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 
    * Links: bereits definierte Felder
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
+
    >[!NOTE]
    >
    >Wenn ein Feld ein **Pflichtfeld** ist, wird die **Bezeichnung** im linken Bereich mit einem Stern markiert (*****).
@@ -84,9 +89,11 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 1. **So fügen Sie ein Feld hinzu**
 
    * Ziehen Sie einen erforderlichen Datentyp an die entsprechende Stelle für ein Feld:
+
    ![Datentyp zum Feld](assets/cfm-models-04.png)
 
    * Wenn ein Feld zum Modell hinzugefügt wurde, werden im rechten Fenster die **Eigenschaften** angezeigt, die für diesen speziellen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist. Beispiel:
+
    ![Feldeigenschaften](assets/cfm-models-05.png)
 
    >[!NOTE]
@@ -94,6 +101,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
    * **Rich-Text**
    * **Markdown**
    * **Nur Text**
+
    Wenn Sie keinen Typ angeben, wird der Standardwert **Rich-Text** in diesem Feld verwendet.
    Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
 
