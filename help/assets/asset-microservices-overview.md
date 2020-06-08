@@ -2,10 +2,10 @@
 title: Verständnis, wie Asset-Microservices Ihre digitalen Assets in der Cloud verarbeiten können
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '845'
 ht-degree: 100%
 
 ---
