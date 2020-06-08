@@ -1,10 +1,10 @@
 ---
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1097'
 ht-degree: 100%
 
 ---
