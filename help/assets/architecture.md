@@ -2,8 +2,11 @@
 title: Architektur von Adobe Experience Manager Assets as a Cloud Service
 description: Architektur von Adobe Experience Manager Assets as a Cloud Service
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 100%
 
 ---
 
