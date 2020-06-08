@@ -1,8 +1,11 @@
 ---
 title: Rotationssets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1805'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. Richten Sie [Rotationsset-Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md) nach Bedarf ein.
 
-   Administratoren können Rotationsset-Viewer-Vorgaben erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und Sie wählen im Dropdown-Menü der linken Seitenleiste die Option **Viewer**.
+   Administratoren können Rotationsset-Viewer-Voreinstellungen erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und Sie wählen im Dropdown-Menü der linken Seitenleiste die Option **Viewer**.
 
    Um Viewer-Vorgaben zu erstellen oder zu bearbeiten, wählen Sie **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 
@@ -116,9 +119,9 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
    * Tippen Sie oben links auf der Seite des Rotationsset-Editors auf **[!UICONTROL Asset hinzufügen]**.
 
    * Tippen Sie in der Mitte des Rotationsset-Editors auf **[!UICONTROL Tippen, um den Asset-Wähler zu öffnen]**.
-   Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Über den ausgewählten Assets wird ein Häkchensymbol angezeigt. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
+   Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **Eingabe** tippen. Mit Filtern können Sie Ihre Suchergebnisse verfeinern. Sie können nach Pfad, Sammlung, Dateityp und Tags filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol „Ansicht“ tippen und zwischen **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]** wählen.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **Eingabe** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie das Symbol „Ansicht“ tippen und dann **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]** wählen.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -158,7 +161,7 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. Wählen Sie aus dem Menü „Suche“ die Option **[!UICONTROL Filter]**, erweitern Sie dann **[!UICONTROL Dynamische Medien]** und wählen Sie **[!UICONTROL Sets]** aus. 
+1. Über die Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamische Medien]** erweitern und **[!UICONTROL Sets]** auswählen.
 
    Die Suche gibt als Ergebnis Sets zurück, die in der Benutzeroberfläche manuell oder mit Stapelsatzvorgaben automatisch erstellt wurden.  Im Gegensatz zu AEM-Suchen, die mit dem Suchkriterium `Contains` durchgeführt werden, wird die Suchabfrage für automatisierte Sets mithilfe des Suchkriteriums `Starts with` durchgeführt. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
 
@@ -192,6 +195,7 @@ Wenn Sie das in AEM als Miniaturansicht verwendete Bild löschen und durch ein a
    * Um ein Asset zu löschen, wählen Sie es aus und klicken oder tippen Sie auf **[!UICONTROL Asset löschen]**.
    * Um eine Vorgabe anzuwenden, tippen oder klicken Sie auf das Symbol „Vorgabe“ und wählen Sie eine Vorgabe aus.
    * Navigieren Sie zum Löschen eines ganzen Rotationssets zu diesem Rotationsset, wählen Sie es aus und wählen Sie **[!UICONTROL Löschen]**.
+
    >[!NOTE]
    >
    >Sie können die Bilder in einem Rotationsset bearbeiten, indem Sie zu diesem Set navigieren, in der linken Seitenleiste auf **[!UICONTROL Mitglieder des Sets]** tippen und dann auf das Bleistiftsymbol eines einzelnen Assets tippen, um das Bearbeitungsfenster zu öffnen.
