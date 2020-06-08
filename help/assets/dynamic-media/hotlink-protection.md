@@ -1,8 +1,11 @@
 ---
-title: Aktivieren des Hotlink-Schutzes in Dynamic Media
+title: 'Aktivieren des Hotlink-Schutzes in Dynamic Media  '
 description: Informationen zum Aktivieren des Hotlink-Schutzes in Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 100%
 
 ---
 
