@@ -1,10 +1,10 @@
 ---
 title: Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '3676'
 ht-degree: 100%
 
 ---
@@ -133,7 +133,7 @@ Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden 
 
 * Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
-* Audiobitrate  
+* Audiobitrate    
 * Seitenverhältnis beibehalten
 * Kodierung mit zwei Durchgängen
 * Konstante Bitrate
