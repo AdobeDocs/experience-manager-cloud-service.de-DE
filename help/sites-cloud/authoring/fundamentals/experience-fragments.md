@@ -1,8 +1,11 @@
 ---
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -226,6 +229,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
    * **Name** (Wenn Sie das Feld leer lassen, wird der Name vom Titel abgeleitet.)
    * **Beschreibung**
    * **Varianten-Tags**
+
    Beispiel:
 
    ![Varianteneigenschaften](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -244,6 +248,7 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
 
    * Ziehen Sie das gewünschte Fragment vom Asset-Browser auf die Komponente.
    * Wählen Sie in der Komponenten-Symbolleiste die Option **Konfigurieren** aus und geben Sie das zu verwendende Fragment an. Bestätigen Sie Ihre Auswahl mit **Fertig**.
+
    >[!NOTE]
    >
    >In der Komponenten-Symbolleiste dient die Option „Bearbeiten“ als Kurzbefehl zum Öffnen eines Fragments im Editor für Fragmente.
@@ -328,7 +333,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
       * **Anzahl der Web-Varianten** – nur zur Information
       * **Anzahl der Nicht-Web-Varianten** – nur zur Information
       * **Anzahl der Seiten, auf denen dieses Fragment verwendet wird** – nur zur Information
-   * **Cloud-Services**
+   * **Cloud Services**
       * **Cloud-Konfiguration**
       * **Cloud-Service-Konfigurationen**
       * **Facebook-Seiten-ID**
