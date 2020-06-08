@@ -1,8 +1,11 @@
 ---
-title: Erstellen von Seitenvorlagen
+title: 'Erstellen von Seitenvorlagen  '
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlagen-Editor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
-Mit dem **Vorlagen-Editor** ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten. Ein erfahrener Benutzer, ein so genannter **Vorlagenautor**, kann hinzugezogen werden. Entwickler werden weiterhin benötigt, um die Umgebung zu installieren und Client-Bibliotheken und die zu verwendenden Komponenten zu erstellen. Sobald dies jedoch erledigt ist, hat der **Vorlagenautor** die Möglichkeit, Vorlagen ohne ein Entwicklungsprojekt zu erstellen und zu konfigurieren.
+Mit dem **Vorlagen-Editor** ist das Erstellen und Verwalten von Vorlagen nicht mehr nur eine Aufgabe für Entwickler. Auch ein Power User, der als **Vorlagenautor** bezeichnet wird, kann einbezogen werden. Entwickler müssen weiterhin die Umgebung einrichten, Clientbibliotheken erstellen und die zu verwendenden Komponenten erstellen. Sobald diese Grundlagen vorhanden sind, hat der **Vorlagenautor** jedoch die Flexibilität, Vorlagen ohne Entwicklungsprojekt zu erstellen und zu konfigurieren.
 
 Mit der **Vorlagenkonsole** können Vorlagenautoren:
 
@@ -30,7 +33,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 >[!NOTE]
 >
->Der **Vorlagen-Editor** unterstützt das Targeting nicht direkt auf der Vorlagenebene. Seiten, die auf der Grundlage einer bearbeitbaren Vorlage erstellt wurden, können als Ziel angegeben werden, aber die Vorlagen selbst nicht.
+>Der **Vorlagen-Editor** unterstützt kein Targeting direkt auf Vorlagenstufe. Seiten, die auf Grundlage einer bearbeitbaren Vorlage erstellt wurden, können zielgerichtet sein, die Vorlagen selbst müssen das jedoch nicht sein.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -42,7 +45,7 @@ Bevor Sie anfangen, sollten Sie beachten, dass die Erstellung einer neuen Vorlag
 
 ### Rollen {#roles}
 
-Das Erstellen einer neuen Vorlage mit der **Vorlagenkonsole** und dem **Vorlagen-Editor** erfordert die Zusammenarbeit zwischen den folgenden Rollen:
+Für das Erstellen einer neuen Vorlage mithilfe der **Vorlagenkonsole** und des **Vorlagen-Editors** ist eine Zusammenarbeit zwischen folgenden Rollen erforderlich:
 
 * **Admin**:
    * Erstellt neue Ordner für Vorlagen, wofür `admin`-Berechtigungen erforderlich sind.
@@ -455,7 +458,7 @@ Auf der Registerkarte **Standardkomponenten** definieren Sie, welche Komponenten
 
 Klicken oder tippen Sie auf **Zuordnung hinzufügen**, um eine völlig neue Komponente und MIME-Typ-Zuordnung hinzuzufügen.
 
-Wählen Sie in der Liste eine Komponente aus und klicken oder tippen Sie auf **Typ hinzufügen**, um einen zusätzlichen MIME-Typ einer bereits zugeordneten Komponente hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
+Wählen Sie eine Komponente in der Liste aus und tippen/klicken Sie auf **Typ hinzufügen**, um einer bereits zugeordneten Komponente einen zusätzlichen MIME-Typ hinzuzufügen. Klicken Sie auf das Symbol **Löschen**, um einen MIME-Typ zu entfernen.
 
 ![Registerkarte „Standardkomponenten“](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,13 +480,13 @@ Wenn eine Komponente entsperrt wurde:
 
 ![Schaltfläche „Komponente sperren“](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Das gilt auch für das Entsperren von Container-Komponenten, damit weitere Komponenten hinzugefügt werden können, entweder im Modus **Anfänglicher Inhalt** oder auf resultierenden Seiten. Wenn Sie bereits Komponenten/Inhalte zum Container hinzugefügt haben, bevor Sie ihn entsperrt haben, werden diese nicht mehr im **Strukturmodus** angezeigt, aber sie werden im Modus **Anfänglicher Inhalt** angezeigt. Im **Strukturmodus** werden nur die Container-Komponente selbst und die zugehörige Liste der **zugelassenen Komponenten** angezeigt. 
+Dies umfasst das Entsperren von Containerkomponenten, sodass weitere Komponenten hinzugefügt werden können, entweder im **Ursprüngliche Inhalte** oder auf den daraus resultierenden Seiten. Wenn Sie dem Container bereits Komponenten/Inhalte hinzugefügt haben, bevor Sie ihn entsperren, werden diese nicht mehr angezeigt, wenn Sie sich im Modus **Struktur** befinden, sondern im Modus **Ursprüngliche Inhalte**. Im **Strukturmodus** werden nur die Container-Komponente selbst und die zugehörige Liste der **zugelassenen Komponenten** angezeigt. 
 
 ![Zugelassene Komponenten](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Der Layout-Container wächst nicht an, um die Liste der zulässigen Komponenten aufzunehmen. Auf diese Weise wird Speicherplatz gespart. Stattdessen wird der Container zu einer bildlauffähigen Liste.
 
-Konfigurierbare Komponenten werden mit einem **Richtliniensymbol** angezeigt, auf das getippt oder geklickt werden kann, um die Richtlinie und die Eigenschaften der Komponente zu bearbeiten.
+Komponenten, die konfigurierbar sind, werden mit einem Symbol für **Richtlinien** angezeigt, auf das Sie tippen/klicken können, um die Richtlinie und Eigenschaften dieser Komponente zu bearbeiten.
 
 ![Symbol „Konfigurierbare Komponente“](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -547,6 +550,7 @@ So greifen Sie auf das Dialogfeld **Seitenrichtlinie** zu:
 
    * Die linke Hälfte definiert die [Seitenrichtlinien](#page-policies). 
    * Die rechte Hälfte definiert die [Seiteneigenschaften](#page-properties). 
+
    ![Seiten-Design](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Seitenrichtlinien {#page-policies}
@@ -635,6 +639,7 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
 
       * Nur Struktur – werden sofort übernommen
       * Anfängliche Inhalte enthalten – werden nur auf Seiten übernommen, die nach der Änderung erstellt werden
+
    Lassen Sie bei folgenden Vorgängen besondere Vorsicht walten:
 
    * Sperren oder Entsperren von Komponenten in aktivierten Vorlagen.
@@ -642,6 +647,7 @@ Beim Erstellen von Vorlagen sollten Sie Folgendes berücksichtigen:
 
       * Wenn Komponenten (die gesperrt waren) entsperrt werden, fehlen sie auf vorhandenen Seiten.
       * Wenn Komponenten (die bearbeitbar waren) gesperrt werden, wird der entsprechende Inhalt auf den Seiten ausgeblendet.
+
    >[!NOTE]
    >
    >AEM warnt ausdrücklich davor, den Sperrstatus von Komponenten in Vorlagen zu ändern, die keine Entwürfe mehr sind.
