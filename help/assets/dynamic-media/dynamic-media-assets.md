@@ -1,8 +1,11 @@
 ---
-title: Arbeiten mit dynamischen Medien
+title: Arbeiten mit Dynamic Media
 description: Mit dynamischen Medien können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Master-Assets können Sie mit dynamischen Medien mehrere Variationen ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 100%
 
 ---
 
