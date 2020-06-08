@@ -1,8 +1,11 @@
 ---
 title: Arbeiten mit Aufgaben
 description: Aufgaben sind am Inhalt durchgeführte Arbeiten und werden in Projekten verwendet, um festzustellen, inwieweit aktuelle Aufgaben vollständig durchgeführt sind.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlosse
 
 * **Aufgabenkachel:** Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite „Projektdetails“ verfügbar ist.
 
-* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält ausführliche Informationen über alle Aufgaben, die mit dem Projekt verbunden sind.
+* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
 Beide enthalten sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der **Aufgabenkachel** erstellen.
 
@@ -61,12 +64,12 @@ Sie können neue Aufgaben zu Projekten hinzufügen. Diese Aufgaben werden in der
 
 So fügen Sie eine Aufgabe hinzu:
 
-1. Klicken Sie im Projekt in der Kachel **Aufgaben** auf das Plussymbol. Das Fenster **Aufgabe hinzufügen** wird geöffnet.
+1. Tippen/Klicken Sie im Projekt in der Kachel **Aufgaben** auf das Plussymbol (+). Das Fenster **Aufgabe hinzufügen** wird geöffnet.
 1. Geben Sie Informationen über die Aufgabe ein. Der Titel der Aufgabe und die Gruppe, der sie zugewiesen ist, sind obligatorisch. Weitere Informationen wie der Inhaltspfad, Beschreibung, Aufgabenpriorität und Fälligkeitsdatum sind optional. Darüber hinaus können Sie die Registerkarte **Erweitert** auswählen, um den Namen der Aufgabe einzugeben, der zum Benennen der URL verwendet wird.
 
    ![Aufgabe hinzufügen](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tippen/klicken Sie auf **Erstellen**.
+1. Tippen oder klicken Sie auf **Erstellen**.
 
 ## Arbeiten mit Aufgaben im Posteingang   {#working-with-tasks-in-the-inbox}
 
