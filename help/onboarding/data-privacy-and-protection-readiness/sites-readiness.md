@@ -3,6 +3,9 @@ title: Datenschutz- und Datenschutzvorschriften - Adobe Experience Manager als C
 description: 'Erfahren Sie mehr über Adobe Experience Manager als Unterstützung für Cloud-Service-Sites für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Datenschutzgesetzes für Verbraucher und wie bei der Implementierung eines neuen AEM als Cloud-Service-Projekt einzuhalten ist. '
 translation-type: tm+mt
 source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 44%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
 >
 >Der Inhalt dieses Dokuments stellt keine Rechtsberatung dar und ist nicht als Ersatz für Rechtsberatung gedacht.
 >
->Bitte konsultieren Sie die Rechtsabteilung Ihres Unternehmens, um sich über die Datenschutzbestimmungen zu informieren.
+>Für Informationen zu Datenschutzbestimmungen und Datenschutzbestimmungen wenden Sie sich bitte an die Rechtsabteilung Ihrer Firma.
 
 >[!NOTE]
 >
@@ -27,11 +30,11 @@ Weitere Informationen finden Sie im [Adobe Privacy Center](https://www.adobe.com
 >
 >Weitere Informationen finden Sie unter [Adobe Experience Manager als Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) .
 
-## AEM-Autorenebene {#aem-author-tier}
+## AEM Author-Ebene {#aem-author-tier}
 
 User accounts and UGC content on the author server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
-## Veröffentlichungsstufe in AEM {#aem-publish-tier}
+## AEM Publish-Ebene {#aem-publish-tier}
 
 User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
@@ -50,36 +53,36 @@ So wählen Sie aus:
 1. Navigieren Sie zu:
    [Adobe Privacy Center - Ausschluss](https://www.adobe.com/privacy/opt-out.html)
 
-1. Blättern Sie nach unten zu **Dienste** - **Experience Cloud-Nutzungsdaten**.
+1. Blättern Sie nach unten zu **Dienste** - **Experience Cloud-Dienstnutzungsdaten**.
 
 1. Wählen Sie den referenzierten Link aus. derzeit **hier** benannt.
 
-1. Sie erhalten die folgenden Details sowie die Optionen zum Ausschluss oder zur Teilnahme:
+1. Sie erhalten die folgenden Details sowie die Optionen zum Opt-out oder in:
 
    * Um die Aggregation und Analyse von Daten über Ihren Besuch auf dieser Site abzuwählen, müssen Sie ein Cookie in Ihrem Browser installieren. Dieses Cookie identifiziert, dass Sie sich abgemeldet haben.
 
       Wenn Sie das Ausschluss-Cookie löschen oder Computer oder Webbrowser wechseln, müssen Sie die Abmeldung erneut vornehmen.
 
-      Ausschluss - Ausschluss von der Aggregation und Analyse der Besuchersitzung ( `amcglobal.sc.omtrdc.net` Ausschluss-Cookie installieren) - Klicken Sie hier.
+      Ausschluss - Ausschluss von der Aggregation und Analyse der Besucher-Sitzung ( `amcglobal.sc.omtrdc.net` Ausschluss-Cookie installieren) - Klicken Sie hier.
 
-      Teilnahme - Schließen Sie mich in die Aggregation und Analyse der Besuchersitzung ein (installieren Sie nicht das `amcglobal.sc.omtrdc.net` Ausschluss-Cookie) - Klicken Sie hier.
+      Teilnahme - Schließen Sie mich in die Aggregation und Analyse der Besucher-Sitzung ein (installieren Sie nicht das `amcglobal.sc.omtrdc.net` Ausschluss-Cookie) - Klicken Sie hier.
    Gehen Sie wie oben beschrieben vor, um auf die eigentlichen Links zuzugreifen.
 
    >[!NOTE]
    >
-   > Eine weitere Beschreibung finden Sie im Abschnitt **Datenschutzrichtlinien** der [Nutzungsbedingungen](https://marketing.adobe.com/resources/help/en_US/terms.html).
+   > Eine weitere Beschreibung finden Sie im Abschnitt **Datenschutzrichtlinien** der [Nutzungsbedingungen](https://marketing.adobe.com/resources/help/de_DE/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM-Sites enthalten eine optionale Integration mit Analytics Foundation, die Funktionen des Adobe Analytics On-Demand-Dienstes verwendet.
+AEM-Sites enthalten eine optionale Integration mit Analytics Foundation, die Funktionen des Adobe Analytics-On-Demand-Dienstes verwendet.
 
 For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Personalisierungsstiftung nach Target {#personalization-foundation-by-target}
+## Personalisierungsstiftung nach Zielgruppe {#personalization-foundation-by-target}
 
-AEM-Sites enthalten eine optionale Integration mit Personalization Foundation von Target, die Funktionen des Adobe Target-On-Demand-Dienstes verwendet.
+AEM-Sites enthalten eine optionale Integration in Personalization Foundation nach Zielgruppe, die Funktionen des On-Demand-Dienstes von Adobe Zielgruppe verwendet.
 
-For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+For further information on managing data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://marketing.adobe.com/resources/help/de_DE/target/target/privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -98,7 +101,7 @@ Der Website-Inhaber muss eine Opt-out-Komponente gemäß den folgenden Richtlini
 Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Daher muss ein Besucher der Website eindeutig zustimmen, bevor personenbezogene Daten in der (clientseitigen) Persistenz des Browsers gespeichert werden.
 
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
-* Die Geschäftsbedingungen, die sich auf den Datenschutz und die Privatsphäre der Website beziehen, müssen dem Website-Besucher angezeigt werden, damit er:
+* Die Geschäftsbedingungen, die sich auf den Datenschutz und die Privatsphäre der Website beziehen, müssen dem Besucher der Website angezeigt werden, damit er:
 
    * Akzeptieren der Bedingungen
    * Ablehnen der Bedingungen
