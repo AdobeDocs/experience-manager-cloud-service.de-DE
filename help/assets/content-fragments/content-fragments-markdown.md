@@ -1,8 +1,11 @@
 ---
 title: Markdown
 description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 100%
 
 ---
 
@@ -15,14 +18,14 @@ Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/conte
 
 Sie können Folgendes definieren:
 
-* [Überschriftsnotation](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation) 
-* [Absätze und Zeilenumbrüche](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks) 
+* [Überschriftsnotation ](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation) 
+* [Absätze und Zeilenumbrüche](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Bilder](/help/assets/content-fragments/content-fragments-markdown.md#images)
-* [Blockzitate](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes) 
+* [Blockzitate](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
 * [Listen](/help/assets/content-fragments/content-fragments-markdown.md#lists)
-* [Hervorhebungen](/help/assets/content-fragments/content-fragments-markdown.md#emphasis) 
-* [Codeblöcke](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks) 
+* [Hervorhebungen](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
+* [Code-Blöcke](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
 * [Umgekehrter Schrägstrich als Escape-Zeichen](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Überschriftsnotation {#heading-notation} 
