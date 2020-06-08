@@ -1,8 +1,11 @@
 ---
-title: Erstellen und Verwalten von Angeboten
+title: 'Erstellen und Verwalten von Angeboten  '
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,7 @@ Erstellen Sie eine Marke, mit der Angebote verknüpft werden sollen. Öffnen Sie
 
 Erstellen Sie mithilfe der Angebotskonsole eine Marke, wird diese ebenfalls in der [Aktivitätskonsole](/help/sites-cloud/authoring/personalization/activities.md) angezeigt, in der Sie der Marke Aktivitäten hinzufügen können.
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
+1. Tippen/Klicken Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
 
    ![Navigieren zur Angebotskonsole](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
