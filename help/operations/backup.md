@@ -3,6 +3,9 @@ title: Sicherung und Wiederherstellung in AEM als Cloud-Dienst
 description: 'Sicherung und Wiederherstellung in AEM als Cloud-Dienst '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Kunden sollten ein Support-Ticket mit einer Beschreibung des aufgetretenen Probl
 
 AEM als Cloud-Dienst unterstützt:
 
-* 24-Stunden-Recovery, d. h., das System kann in den letzten 24 Stunden zu einem beliebigen Zeitpunkt wiederhergestellt werden.
+* 24-Stunden-Recovery, d.h. das System kann in den letzten 24 Stunden zu einem beliebigen Zeitpunkt wiederhergestellt werden.
 * Wiederherstellen eines bestimmten, von Adobe definierten Zeitstempels, der in den letzten 7 Tagen einmal täglich ausgeführt wurde.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
 
 In allen Fällen wird die Version des benutzerdefinierten Codes von der letzten erfolgreichen Bereitstellung vor dem Wiederherstellungspunkt übernommen.
@@ -31,4 +34,4 @@ Das Ziel der Wiederherstellungszeit (RTO) variiert je nach Größe des Repositor
 
 Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktualisiert.
 
-**Die Daten aus gelöschten Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.**
+**Die Daten gelöschter Umgebung gehen dauerhaft verloren und können nicht wiederhergestellt werden.**
