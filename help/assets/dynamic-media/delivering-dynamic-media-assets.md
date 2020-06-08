@@ -1,8 +1,11 @@
 ---
 title: Bereitstellen von Dynamic Media-Assets
 description: Informationen zum Bereitstellen von Dynamic Media-Assets
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 100%
 
 ---
 
