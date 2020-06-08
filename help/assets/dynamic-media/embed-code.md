@@ -1,8 +1,11 @@
 ---
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
