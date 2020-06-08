@@ -2,9 +2,9 @@
 title: Verwenden des Inhaltsübertragungstools
 description: Verwenden des Inhaltsübertragungstools
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Zugriffstoken**: Geben Sie das Zugriffstoken ein.
 
       >[!NOTE]
-      >Sie können das Zugriffstoken aus der Autoreninstanz abrufen, indem Sie zu navigieren `/libs/granite/migration/token.json`.
+      >Sie können das Zugriffstoken aus der Autoreninstanz abrufen, indem Sie zu navigieren `/libs/granite/migration/token.json`. Das Zugriffstoken wird aus der Autoreninstanz des Cloud-Dienstes abgerufen.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
