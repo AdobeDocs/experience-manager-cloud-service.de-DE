@@ -1,8 +1,11 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 100%
 
 ---
 
@@ -155,6 +158,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
 
    * Unter **[!UICONTROL Videodienst-URL]** kopieren Sie den gesamten URL-Pfad. Der kopierte URL-Pfad wird in den nachfolgenden Schritten benötigt. Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
