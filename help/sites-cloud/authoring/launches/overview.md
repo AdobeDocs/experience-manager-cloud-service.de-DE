@@ -1,8 +1,11 @@
 ---
 title: Launches
-description: Launches  helfen Ihnen, effizient Inhalte für eine künftige Version zu entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
-translation-type: ht
+description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 100%
 
 ---
 
@@ -37,13 +40,13 @@ Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentli
 
 Launches ermöglichen Folgendes:
 
-* Erstellen einer Kopie der Quellseiten:
+* Erstellen Sie eine Kopie Ihrer Quellseiten:
    * Die Kopie ist Ihr Launch.
-   * Die Quellseiten der obersten Ebene werden als **Produktion** bezeichnet.
+   * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
       * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
    ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* Bearbeiten der Launch-Konfiguration:
+* Bearbeiten Sie die Launch-Konfiguration:
    * Sie können Seiten bzw. Verzweigungen zum Launch hinzufügen oder daraus entfernen.
    * Sie können Launch-Eigenschaften bearbeiten, z. B. **Titel**, **Launch-Datum** und die Markierung **Produktionsbereit**.
 * Manuelles oder automatisches Weiterleiten und Veröffentlichen des Inhalts:
@@ -54,7 +57,7 @@ Launches ermöglichen Folgendes:
    * Automatisch (dies beinhaltet Folgendes):
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
       * Das Flag **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
-      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live-****Datum)** an die Produktionsseiten weitergeleitet. Wenn der Inhalt weitergeleitet wurde, werden die Produktionsseiten automatisch veröffentlicht.\
+      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live-****Datum)** an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
          Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
