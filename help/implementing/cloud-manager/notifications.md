@@ -1,8 +1,11 @@
 ---
 title: Benachrichtigungen – Cloud Service
 description: Benachrichtigungen – Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
 
