@@ -2,8 +2,11 @@
 title: Metadatenschemata
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 100%
 
 ---
 
@@ -22,6 +25,7 @@ Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes M
 Die folgenden Vorlagen sind standardmäßig in AEM verfügbar:
 
    * **default**: Dies ist das Basisformular für Assets.
+
    Folgende untergeordnete Formulare übernehmen die Eigenschaften des Standardformulars:
 i. **image**: Schemaformular für Assets mit dem MIME-Typ „image“, z. B. `image/jpeg`, `image/png` usw.
 Das Formular „image“ enthält die folgenden Vorlagen für untergeordnete Formulare:
@@ -173,7 +177,7 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 >
 >Die Komponente „Verborgenes Feld“ enthält diese Attribute nicht. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
 
-Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bereich **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadaten-Überprüfung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. In den Suchergebnissen werden die Assets angezeigt, denen obligatorische Metadaten fehlen, die Sie im Schemaformular konfiguriert haben.
+Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
 Wenn Sie die Komponente „Kontextuelle Metadaten“ in eine beliebige Registerkarte eines Schemaformulars einfügen, wird sie in der Eigenschaftenseite der Assets als Liste angezeigt, auf die das bestimmte      Schema angewendet wird. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
 
@@ -209,7 +213,7 @@ AEM Assets stellt voreingestellte Standardformulare für verschiedene MIME-Type
 
 ### Hinzufügen neuer Formulare für MIME-Typen {#adding-new-forms-for-mime-types}
 
-Erstellen Sie ein neues Formular unter dem entsprechenden Formulartyp. Beispiel: Um eine neue Vorlage für den Untertyp **image/png** hinzuzufügen, erstellen Sie das Formular unter den „image“-Formularen. Der Titel für das Schemaformular ist der Name des Untertyps. In diesem Fall ist der Titel „png“**.**
+Erstellen Sie ein neues Formular unter dem entsprechenden Formulartyp. Beispiel: Um eine neue Vorlage für den Untertyp **image/png** hinzuzufügen, erstellen Sie das Formular unter den „image“-Formularen. Der Titel für das Schemaformular ist der Name des Untertyps. In diesem Fall lautet der Titel „png.**“**.
 
 #### Verwenden einer vorhandenen Schemavorlage für verschiedene MIME-Typen {#using-an-existing-schema-template-for-various-mime-types}
 
