@@ -2,8 +2,11 @@
 title: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal
 description: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
          Klicken Sie auf **Weiter**.
 
       1. Bestätigen Sie Ihre Auswahl in **[!UICONTROL Umfang]** und klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
+
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Ordner zu sehen.
 
 1. **Ordner später veröffentlichen**
