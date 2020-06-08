@@ -20,7 +20,6 @@ ht-degree: 99%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
-
 >
 >
 Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
@@ -148,7 +147,6 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -366,7 +364,6 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
       * `Could not update content element`
       * `Could not update fragment data of element`
-
    Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
    ```xml
