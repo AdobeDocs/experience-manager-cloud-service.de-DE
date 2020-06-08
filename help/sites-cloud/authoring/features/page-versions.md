@@ -1,8 +1,11 @@
 ---
 title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +74,7 @@ So stellen Sie eine frühere Version wieder her:
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Spalte **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgeführt.
+1. Öffnen Sie die Spalte **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Version zurücksetzen](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ Timewarp ist ein [Modus](/help/sites-cloud/authoring/fundamentals/environment-to
 
    ![Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Legen Sie im Dialogfeld das gewünschte Datum und die Uhrzeit fest und klicken oder tippen Sie auf **Datum einstellen**. Wenn Sie keine Zeit auswählen, wird standardmäßig die aktuelle Zeit verwendet.
+1. Legen Sie im Dialogfeld ein Datum und eine Uhrzeit fest und tippen/klicken Sie auf **Datum festlegen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit standardmäßig eingestellt.
 
    ![Timewarp-Zieldatum](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
