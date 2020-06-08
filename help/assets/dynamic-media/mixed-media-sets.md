@@ -1,8 +1,11 @@
 ---
 title: Gemischte Mediensets
 description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1467'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Laden Sie die Assets hoch.](#uploading-assets)
 
-   Laden Sie zunächst die Bilder und Videos für die gemischten Mediensets hoch. Erstellen Sie bei Bedarf die [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset einzoomen können. Stellen Sie sicher, dass die Bilder mindestens 2000 Pixel in der größten Abmessung aufweisen.
+   Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Da Benutzer Bilder im Viewer für gemischte Mediensets zoomen können, sollten Sie beim Auswählen von Bildern auch das Zoomen berücksichtigen. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat.
 
 1. [Erstellen Sie gemischte Mediensets.](#creating-mixed-media-sets)
 
@@ -65,7 +68,7 @@ Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) be
 
 ## Hochladen von Assets {#uploading-assets}
 
-Laden Sie zunächst die Bilder und Videos für die gemischten Mediensets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset einzoomen können. Stellen Sie sicher, dass die Bilder mindestens 2000 Pixel in der größten Abmessung aufweisen.
+Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat.
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum Set für gemischte Medien hinzufügen möchten, müssen Sie auch diese erstellen.
 
@@ -77,7 +80,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 **So erstellen Sie ein gemischtes Medienset**
 
-1. Navigieren Sie in Assets an die Stelle, an der Sie ein gemischtes Medienset erstellen möchten, und klicken Sie auf **[!UICONTROL Erstellen]**. Wählen Sie dann **[!UICONTROL Gemischtes Medienset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Editor für gemischte Mediensets wird aufgerufen.
+1. Navigieren Sie in Assets an die Stelle, an der Sie ein gemischtes Medienset erstellen möchten, und klicken Sie auf **[!UICONTROL Erstellen]**. Wählen Sie dann **[!UICONTROL Gemischtes Medienset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Editor für gemischte Mediensets wird angezeigt.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -91,7 +94,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 1. Tippen Sie auf den Asset-Selektor, um Assets auszuwählen, die Sie in das gemischte Medienset aufnehmen möchten. Wählen Sie sie aus und klicken Sie auf **[!UICONTROL Auswählen]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Mit Filtern können Sie Ihre Suchergebnisse verfeinern. Sie können nach Pfad, Sammlung, Dateityp und Tags filtern. Wählen Sie den Filter aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie das Symbol **[!UICONTROL Ansicht]** und dann die **[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]** auswählen.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter aus und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie das Symbol **[!UICONTROL Ansicht]** und dann die **[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]** auswählen.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -151,7 +154,7 @@ Sie können direkt auf der Benutzeroberfläche eine Vielzahl an Bearbeitungsaufg
 
    >[!NOTE]
    >
-   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (ohne es auszuwählen), um es auf der Seite „AEM – Vorschau festlegen“ zu öffnen. Klicken Sie in der linken Leiste auf das Caret-Symbol nach unten, um die Dropdownliste zu öffnen, und tippen Sie auf **[!UICONTROL Mitglieder des Sets]**. Bewegen Sie auf der Seite „Mitglieder des Sets“ den Mauszeiger auf ein Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
+   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (nicht auswählen), um es auf der Seite „AEM-Set-Vorschau“ zu öffnen. Klicken Sie in der linken Leiste auf das Caret-Symbol nach unten, um die Dropdownliste zu öffnen, und tippen Sie auf **[!UICONTROL Mitglieder des Sets]**. Bewegen Sie auf der Seite „Mitglieder des Sets“ den Mauszeiger auf ein Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Stiftsymbol), um die Bearbeitungsseite zu öffnen.
       >
       >
    * Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und tippen Sie auf **Auswählen** (Häkchensymbol). Drücken Sie die **[!UICONTROL Rücktaste]** oder tippen Sie auf **[!UICONTROL Mehr]** und dann auf **[!UICONTROL Löschen]**.
