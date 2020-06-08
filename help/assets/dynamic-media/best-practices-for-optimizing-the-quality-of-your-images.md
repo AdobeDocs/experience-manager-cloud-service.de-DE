@@ -1,8 +1,11 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 100%
 
 ---
 
@@ -57,7 +60,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       * **[!UICONTROL threshold]** (0-255, Sensitivität des Effekts)
 
-         Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL threshold]** können Sie die übermäßige Scharfzeichnung von Bereichen mit ähnlichen Farben, wie Hauttönen, vermeiden. Beispiel: Mit einem Schwellenwert von 12 werden geringfügige Abweichungen in der Hauttonhelligkeit ignoriert, um „Bildrauschen“ zu vermeiden, während dennoch Kantenkontrast zu kontrastreichen Bereichen hinzugefügt wird, z. B. wo Wimpern auf Haut treffen.
+         Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL threshold]** können Sie die übermäßige Scharfzeichnung von Bereichen mit ähnlichen Farben, wie Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
       Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
 
       AEM-Hilfethema zum Scharfzeichnen von Bildern.
