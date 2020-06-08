@@ -1,8 +1,11 @@
 ---
 title: Grundlegendes zur Segmentierung
 description: Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 96%
 
 ---
 
@@ -44,8 +47,8 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
    * Größe der Familie
    * Familienstand
    * Geschlecht
-   * Position
-* **Abgeleitete Eigenschaften**   - Manche demografischen Eigenschaften können ohne Registrierung nur schwer ermittelt werden, können jedoch durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
+   * Ort
+* **Abgeleitete Eigenschaften** - Einige demografische Eigenschaften lassen sich nur schwer ohne Registrierung ermitteln, können aber durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
    * Beispielsweise können Besitzer von Sites durch Kombination der verweisenden URL (als Verhaltenseigenschaft) mit demografischen Informationen (ermittelt mithilfe von Tools wie [Google Ad Planner](https://www.google.com/adplanner/)) demografische Eigenschaften ihrer Besucher ableiten.
 * **Untersegment**: Ein Segment kann in mehrere Untersegmente unterteilt werden. Dies geschieht über das Definieren weiterer Eigenschaften.
 * **Teaser-Seite**: Eine Teaser-Seite richtet sich an eine bestimmte Zielgruppe. Sie enthält wiederverwendbare Inhalte, die in dem Teaser-Absatz verwendet werden können.
