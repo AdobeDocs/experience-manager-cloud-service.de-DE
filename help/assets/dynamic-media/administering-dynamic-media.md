@@ -1,8 +1,11 @@
 ---
-title: Einrichten dynamischer Medien
+title: 'Einrichten dynamischer Medien  '
 description: Zum Einrichten dynamischer Medien müssen Sie dynamische Medien konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management
 Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant:
 
 * [Konfigurieren von Dynamic Media ](config-dm.md)
-* [Verwalten von Bildvorgaben](managing-image-presets.md)
+* [Verwalten von Bildvorgaben  ](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
 * [Fehlerbehebung bei Dynamic Media](troubleshoot-dm.md)
 
