@@ -2,8 +2,11 @@
 title: Anwenden von Workflows auf Assets
 description: Erfahren Sie, wie Sie Workflows auf Assets, Ordner und Sammlungen in Adobe Experience Manager Assets anwenden können.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 100%
 
 ---
 
