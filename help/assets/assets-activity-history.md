@@ -2,8 +2,11 @@
 title: Aktivitäts-Stream in der Timeline
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Timeline anzeigen können.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 100%
 
 ---
 
