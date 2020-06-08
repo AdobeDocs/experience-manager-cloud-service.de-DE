@@ -1,8 +1,11 @@
 ---
 title: Komponentenkonsole
 description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
