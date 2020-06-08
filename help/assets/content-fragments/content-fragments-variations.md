@@ -1,8 +1,11 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
 description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 100%
 
 ---
 
@@ -87,7 +90,7 @@ Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#for
 
 * [Mit Master synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
 
-* [Text zusammenfassen](#summarizing-text)
+* [Zusammenfassen von Text](#summarizing-text)
 
 ### Formate {#formats}
 
@@ -130,7 +133,7 @@ Nur Text ermöglicht die schnelle Eingabe von Inhalt ohne Formatierungs- oder Ma
 
 >[!CAUTION]
 >
->Bei Auswahl von **Nur Text** gehen möglicherweise zuvor unter **Rich-Text** oder **Markdown** hinzugefügte Formatierungen, Markdowns bzw. Assets verloren.
+>Wenn Sie **Klartext** auswählen, gehen möglicherweise alle Formatierungen, Markierungen und/oder Assets verloren, die Sie in **Rich Text** oder **Markdown** eingefügt haben.
 
 ### Markdown {#markdown}
 
@@ -144,10 +147,10 @@ Auf diese Weise können Sie Ihren Text mithilfe von Markdowns formatieren. Sie k
 * Absätze und Zeilenumbrüche
 * Links
 * Bilder
-* Blockzitat
+* Blockzitate
 * Listen
-* Hervorhebung
-* Codeblöcke
+* Hervorhebungen
+* Code-Blöcke
 * Umgekehrter Schrägstrich als Escape-Zeichen
 
 Für weitere [Aktionen](#actions) können Sie auch den Vollbild-Editor öffnen.
@@ -207,6 +210,7 @@ Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
    * Zu beseitigende Sätze werden rot und durchgestrichen hervorgehoben.
    * Klicken Sie auf einen beliebigen hervorgehobenen Satz, um ihn im zusammengefassten Inhalt zu behalten.
    * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, um ihn zu beseitigen.
+
    ![Zusammenfassungsvergleich](assets/cfm-variations-06.png)
 
 6. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
@@ -264,14 +268,15 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    * Navigieren zum gewünschten Asset in DAM
    * Suchen nach dem Asset in DAM
+
    Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniaturansicht klicken.
 
-4. Mit der Option **Auswählen** können Sie das Asset zum Absatzsystem Ihres Inhaltsfragments an der aktuellen Stelle hinzufügen.
+4. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen eines Assets das Format ändern:
-   * **Nur Text**: Das Asset wird vollständig aus dem Fragment entfernt.
-   * **Markdown**: Das Asset wird nicht angezeigt, ist jedoch noch verfügbar, wenn Sie wieder die Option **Rich Text** verwenden.
+   Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
+   * **Klartext:** Das Asset geht im Fragment vollständig verloren.
+   * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
 ## Verwalten von Varianten   {#managing-variations}
@@ -285,7 +290,7 @@ So erstellen Sie eine neue Variante:
 1. Öffnen Sie Ihr Fragment und stellen Sie sicher, dass das seitliche Bedienfeld sichtbar ist.
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Wählen Sie **Variante erstellen** aus.
-1. Legen Sie im daraufhin geöffneten Dialogfeld den **Titel** und eine **Beschreibung** für die neue Variante fest.
+1. Daraufhin wird ein Dialogfeld geöffnet, in dem der **Titel** und die **Beschreibung** für die neue Variante angegeben werden.
 1. Wählen Sie **Hinzufügen** aus. Das Fragment **Master**[ wird in die neue Variante kopiert, die nun zur Bearbeitung geöffnet ist](#editing-a-variation).
 
    >[!NOTE]
@@ -335,7 +340,7 @@ So löschen Sie eine vorhandene Variante:
 Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der Master-Version. Dadurch können Sie an Master vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
-Mittels Synchronisierung können nur Änderungen *von **Master**auf die Variante übertragen werden*.
+Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variation* zu kopieren.
 Es wird nur das aktuelle Element der Variante synchronisiert.
 Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
 Es ist nicht möglich, Änderungen *von einer Variante auf **Master ***zu übertragen.
@@ -352,6 +357,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf **Master ***zu übert
    * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
+
    ![Mit Master synchronisieren](assets/cfm-variations-11.png)
 
 1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
