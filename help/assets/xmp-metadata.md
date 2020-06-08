@@ -2,8 +2,11 @@
 title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform) für die Metadatenverwaltung. Er wird von AEM als standardisiertes Format für die Erstellung, Verarbeitung und den Austausch von Metadaten verwendet.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 100%
 
 ---
 
@@ -26,9 +29,9 @@ Alle Legacy-Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in 
 
 Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind stets mit einer bestimmten Entität verknüpft, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Bei XMP ist die Ressource stets das Asset.
 
-XMP definiert ein [Metadaten](https://de.wikipedia.org/wiki/Metadaten)-Modell, das mit jedem definierten Set aus Metadatenelementen verwendet werden kann. XMP definiert außerdem bestimmte [Schemata](https://de.wikipedia.org/wiki/Schemasprache_(XML)) für grundlegende Eigenschaften, die zum Aufzeichnen des Verlaufs einer Ressource durch mehrere Verarbeitungsschritte nützlich sind – vom Fotografieren, [Scannen](https://de.wikipedia.org/wiki/Scanner_(Datenerfassung)) oder Verfassen als Text über Fotobearbeitungsschritte (wie [Beschneiden](https://de.wikipedia.org/wiki/Cropping) oder Farbanpassung) bis hin zur Zusammenstellung des endgültigen Bildes. Dank XMP kann jedes dabei verwendete Softwareprogramm oder Gerät eigene Informationen zu einer digitalen Ressource hinzufügen, die dann in der endgültigen digitalen Datei beibehalten werden kann.
+XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), das mit jedem definierten Satz von Metadatenelementen verwendet werden kann. XMP definiert außerdem bestimmte [Schemata](https://de.wikipedia.org/wiki/Schemasprache_(XML)) für Standardeigenschaften, die für die Aufzeichnung des Verlaufs einer Ressource nützlich sind, während sie mehrere Verarbeitungsschritte durchläuft – von der Aufnahme über [Scannen](https://de.wikipedia.org/wiki/Scanner_(Datenerfassung)) oder Verfassen als Text und Bildbearbeitungsschritte (wie [Zuschneiden](https://de.wikipedia.org/wiki/Cropping) oder Farbkorrektur) bis hin zur Zusammensetzung in das endgültige Bild. XMP ermöglicht es jedem Softwareprogramm oder Gerät, eigene Informationen zu einer digitalen Ressource hinzuzufügen, die dann in der endgültigen digitalen Datei gespeichert werden kann.
 
-XMP wird meist mit einer Teilmenge des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert. Dies wird wiederum im [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt.
+XMP wird am häufigsten mit einer Untergruppe des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert, das wiederum in [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt wird.
 
 ### Vorteile von XMP   {#advantages-of-xmp}
 
@@ -113,7 +116,7 @@ Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten 
    ![Schritteigenschaften](assets/step_properties.png)
 
 1. Speichern Sie die Änderungen.
-1. Um das Pyramid-PTIFF-Ausgabeformat für Dynamic Media-Bilder mit neuen Attributen zu erstellen, fügen Sie den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** zum Workflow „DAM-Metadaten-Writeback“ hinzu. PTIFF-Wiedergaben werden nur lokal in einer Dynamic Media Hybrid-Implementierung erstellt und gespeichert.
+1. Um das Pyramid-PTIFF-Ausgabeformat für Dynamic Media-Bilder mit neuen Attributen zu erstellen, fügen Sie den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** zum Workflow „DAM-Metadaten-Writeback“ hinzu. PTIFF-Ausgabedarstellung werden nur lokal in einer Dynamic Media Hybrid-Implementierung erstellt und gespeichert.
 
 1. Speichern Sie den Workflow.
 
