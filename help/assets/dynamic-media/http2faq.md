@@ -1,8 +1,11 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
 description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -52,6 +55,7 @@ Sie müssen den Wechsel auf HTTP/2 beim technischen Support von Adobe (`s7suppor
 
    * Name, E-Mail-Adresse und Telefonnummer des Primärkontakts
    * Alle Domänen, die auf HTTP/2 umgestellt werden sollen. Das heißt, `images.company.com` oder `mycompany.scene7.com`.
+
    Ihre Domänen finden Sie, indem Sie sich für jedes Unternehmenskonto [bei Ihrer Instanz des Scene7 Publishing-Systems anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html).
 
     Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
@@ -59,6 +63,7 @@ Sie müssen den Wechsel auf HTTP/2 beim technischen Support von Adobe (`s7suppor
    * Vergewissern Sie sich, dass Sie sicheres HTTPS für Rich Media-Anforderungen verwenden.
    * Stellen Sie sicher, dass Sie das CDN über Adobe und nicht über eine direkte Beziehung verwenden.
    * Stellen Sie sicher, dass Sie eine dedizierte Domäne verwenden. Das heißt, `images.company.com` oder `mycompany.scene7.com`, nicht eine generische Scene7-Domäne wie `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+
    Ihre Domänen finden Sie, indem Sie sich für jedes Unternehmenskonto [bei Ihrer Instanz des Scene7 Publishing-Systems anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html).
 
     Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Scene7-Domäne verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domäne beantragen.
