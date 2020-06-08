@@ -1,8 +1,11 @@
 ---
-title: 'Ungültigmachen von Inhalten im CDN-Cache '
+title: 'Ungültigmachen von Inhalten im CDN-Cache  '
 description: Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Caches warten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
@@ -47,7 +50,7 @@ Siehe auch [Übersicht über Caching in Dynamic Media Classic (Scene7)](https://
 
    >[!NOTE]
    >
-   >Wenn Sie Assets auswählen und dann auf **[!UICONTROL Datei > Ungültiges CDN]** klicken, erstellt Dynamic Media mithilfe einer CDN-Ungültigmachen-Vorlage automatisch die URLs, die für das Content Delivery Network (CDN) ungültig gemacht werden sollen. Enthält das Textfeld **[!UICONTROL CDN-Ungültigmachen-Vorlage]** keinen Eintrag, wird eine leere URL-Liste zurückgegeben. Die Speicherung im CDN-Cache erfolgt nicht Asset-basiert, sondern URL-basiert.  Daher müssen Sie über alle URLs auf Ihrer Website informiert sein.  Nachdem Sie diese URLs ermittelt haben, können Sie sie dem in vorherigen Schritten genannten Textfeld **[!UICONTROL CDN-Ungültigmachen-Vorlage]** hinzufügen. Sie können dann diese Assets auswählen und die URLs in einem Schritt ungültig machen.
+   >Wenn Sie Assets auswählen und dann auf **[!UICONTROL Datei > Ungültiges CDN]** klicken, erstellt Dynamic Media mithilfe einer CDN-Ungültigmachen-Vorlage automatisch die URLs, die für das Content Delivery Network (CDN) ungültig gemacht werden sollen. Enthält das Textfeld **[!UICONTROL CDN-Ungültigmachen-Vorlage]** keinen Eintrag, wird eine leere URL-Liste zurückgegeben. Das Caching im CDN erfolgt nicht auf einem Asset-basierten Element. Es ist URL-basiert. Daher müssen Sie sich der vollständigen URLs auf Ihrer Website bewusst sein. Nachdem Sie diese URLs ermittelt haben, können Sie sie dem in vorherigen Schritten genannten Textfeld **[!UICONTROL CDN-Ungültigmachen-Vorlage]** hinzufügen. Sie können dann diese Assets auswählen und die URLs in einem Schritt ungültig machen.
    >
    >Eine weitere Möglichkeit besteht darin, komplette URLs der Liste **[!UICONTROL Ungültiges CDN]** hinzuzufügen. Wenn Sie diesem Ansatz folgen, ist es nicht erforderlich, Assets in Dynamic Media Classic auszuwählen, bevor Sie die Option **[!UICONTROL Datei > Ungültiges CDN]** aufrufen.
 
