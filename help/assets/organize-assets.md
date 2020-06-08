@@ -2,8 +2,11 @@
 title: Organisieren von digitalen Assets
 description: Organisieren Sie Ihre digitalen Assets mithilfe der unterschiedlichen Methoden, die Adobe Experience Manager Assets bietet.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +17,7 @@ Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokum
 
 AEM Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch anhand von Ordnern organisieren oder in ungeordneter Ad-hoc-Manier ablegen, wobei zum Beispiel Tags verwendet werden können. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
-## Erstellen von Ordnern   {#create-folders}
+## Erstellen von Ordnern {#create-folders}
 
 Wenn Sie eine Sammlung von Assets organisieren, etwa alle *Naturaufnahmen*, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei AEM Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
