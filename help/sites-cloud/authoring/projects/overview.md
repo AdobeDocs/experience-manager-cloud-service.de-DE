@@ -1,8 +1,11 @@
 ---
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 100%
 
 ---
 
@@ -47,17 +50,17 @@ Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen
 Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in den folgenden Abschnitten beschrieben:
 
 * Assets und Asset-Sammlungen
-* Erlebnisse
+* Erlebnisse  
 * Links
 * Projektinformationen
 * Team
 * Einstiegsseiten
 * E-Mails
-* Workflows
+* Workflows  
 * Launches
 * Aufgaben
 
-### Assets  {#assets}
+### Assets {#assets}
 
 In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für ein bestimmtes Projekt verwenden.
 
@@ -73,15 +76,15 @@ Asset-Sammlungen können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt w
 
 ![Asset-Sammlung](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
-Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung aus der Liste auswählen.
+Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung in der Liste auswählen.
 
-### Erlebnisse   {#experiences}
+### Erlebnisse {#experiences}
 
 Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Die Symbole weisen darauf hin, welches Erlebnis dargestellt wird: Website, mobile Anwendung oder Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Plussymbol oder auf **Erlebnis hinzufügen** klicken und die Erlebnisart auswählen.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, mobile Anwendung oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Pluszeichen (+) oder auf **Erlebnis hinzufügen** klicken und den Erlebnistyp auswählen.
 
 ![Erlebnis hinzufügen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -176,4 +179,4 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 
 >[!NOTE]
 >
->Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer zuordnen, werden im Projekt automatisch Gruppen angelegt, mit denen die entsprechenden Berechtigungen verwaltet werden. Beispielsweise könnte das Projekt „MeinProjekt“ die drei Gruppen **MeinProjekt-Inhaber**, **MeinProjekt-Bearbeiter** und **MeinProjekt-Beobachter** haben. Wenn das Projekt gelöscht wird, werden diese Gruppen nicht automatisch gelöscht. Sie müssen von Administratoren über **Tools** > **Sicherheit** > **Gruppen** manuell gelöscht werden.
+>Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen, werden mit dem Projekt verknüpfte Gruppen automatisch erstellt, um die zugehörigen Berechtigungen zu verwalten. Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **MyProject-Editor**, **MyProject-Beobachter** haben. Wird das Projekt jedoch gelöscht, werden diese Gruppen nicht automatisch gelöscht. Ein Administrator muss die Gruppen unter **Werkzeuge** > **Sicherheit** > **Gruppen** manuell löschen.
