@@ -3,6 +3,9 @@ title: Replikation
 description: Distribution und Fehlerbehebung bei der Replikation.
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 4%
 
 ---
 
@@ -23,11 +26,12 @@ Diese AEM-Standardfunktionen für Autoren ändern sich nicht mit dem AEM Cloud-D
 
 ### Aktivieren eines Baumes {#tree-activation}
 
-So führen Sie eine Strukturaktivierung durch:
+So führen Sie eine Baumstruktur-Aktivierung durch:
 
-1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Verteilung**
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
 2. Wählen Sie die Karte **forwardPublisher aus**
-3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die **Option Verteilen**
+3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die **Option &quot;Verteilen&quot;.**
+
    ![](assets/distribute.png "DistributeDistribute")
 4. Wählen Sie den Pfad im Pfadbrowser aus, fügen Sie einen Knoten, eine Struktur oder löschen Sie ihn nach Bedarf und wählen Sie **Senden**
 
@@ -35,7 +39,7 @@ So führen Sie eine Strukturaktivierung durch:
 
 Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM Author-Dienstes:
 
-1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Verteilung**
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
 2. Wählen Sie die Karte **forwardPublisher aus**
    ![](assets/status.png "StatusStatus")
 3. Überprüfen des Warteschlangenstatus, der grün sein sollte
