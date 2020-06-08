@@ -1,10 +1,10 @@
 ---
 title: Verwalten von Inhaltsfragmenten
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1470'
 ht-degree: 100%
 
 ---
@@ -40,6 +40,7 @@ Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einf
       * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Flughafen**-Modell
 
          * Alle verfügbaren Modelle werden angezeigt.
+
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
    ![Fragmentbasis](assets/cfm-managing-01.png)
@@ -127,6 +128,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
+
    Der Fragment-Editor wird geöffnet:
 
    ![Fragment-Editor](assets/cfm-managing-03.png)
@@ -134,9 +136,11 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >[!NOTE]
    >
    >1. Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird.
-   >
-   >
-   >2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
+      >
+      >
+      >
+
+   2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
 
 3. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
@@ -146,6 +150,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
    * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![Modi](assets/cfm-managing-04.png)
 
 4. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**. 
