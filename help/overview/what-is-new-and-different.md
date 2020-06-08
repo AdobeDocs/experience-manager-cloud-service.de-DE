@@ -3,6 +3,9 @@ title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud-Diens
 description: 'Was ist anders und was ist neu - Adobe Experience Manager (AEM) als Cloud-Dienst. '
 translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 7%
 
 ---
 
@@ -34,7 +37,7 @@ Es bestehen inhärente Unterschiede zwischen diesen vorherigen Ansätzen und AEM
 
 >[!NOTE]
 >
->Weitere Informationen zu den Versionen &quot;On-Premise&quot;und &quot;Managed Service&quot;finden Sie in der Dokumentation zu [AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html).
+>Weitere Informationen zu den Versionen &quot;On-Premise&quot;und &quot;Managed Service&quot;finden Sie in der Dokumentation zu [AEM 6.5](https://helpx.adobe.com/de/support/experience-manager/6-5.html).
 
 ## Architektur {#architecture}
 
@@ -42,25 +45,25 @@ Es bestehen inhärente Unterschiede zwischen diesen vorherigen Ansätzen und AEM
 >
 >Weitere Informationen finden Sie unter [Architektur](/help/core-concepts/architecture.md).
 
-AEM als Cloud-Dienst verfügt jetzt über:
+AEM as a Cloud Service verfügt jetzt über:
 
-* Eine dynamische Architektur mit einer variablen Anzahl von AEM-Bildern.
+* eine dynamische Architektur mit einer variablen Anzahl von AEM-Bildern.
 
-![Dynamische](assets/introduction-03.png "ArchitekturDynamische Architektur")
+![Dynamische Architektur](assets/introduction-03.png "Dynamische Architektur")
 
 Diese Architektur:
 
-* Wird basierend auf dem *tatsächlichen* Traffic und der *tatsächlichen* Aktivität skaliert.
+* wird basierend auf dem *tatsächlichen* Traffic und der *tatsächlichen* Aktivität skaliert.
 
-* Enthält einzelne Instanzen, die nur bei Bedarf ausgeführt werden.
+* enthält einzelne Instanzen, die nur bei Bedarf ausgeführt werden.
 
-* Verwendet modulare Anwendungen.
+* verwendet modulare Anwendungen.
 
-* Enthält einen Autorencluster als Standard; Dadurch werden Ausfallzeiten für Wartungsaufgaben vermieden.
+* enthält einen Autoren-Cluster als Standard; dadurch werden Ausfallzeiten für Wartungsaufgaben vermieden.
 
-Dies ermöglicht die automatische Skalierung für verschiedene Verwendungsmuster:
+Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 
-![Automatische Skalierung für verschiedene](assets/introduction-04.png "VerwendungsmusterAutomatische Skalierung für unterschiedliche Verwendungsmuster")
+![Automatische Skalierung für verschiedene Nutzungsmuster](assets/introduction-04.png "Automatische Skalierung für verschiedene Nutzungsmuster")
 
 
 ## Upgrades {#upgrades}
@@ -69,9 +72,9 @@ Dies ermöglicht die automatische Skalierung für verschiedene Verwendungsmuster
 >
 >Weitere Informationen finden Sie in der [Einführung](/help/implementing/deploying/overview.md)zur Bereitstellung.
 
-AEM als Cloud-Dienst verwendet jetzt kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), um sicherzustellen, dass Ihre Projekte vollständig auf dem neuesten Stand sind. Dies bedeutet, dass alle Aktualisierungsvorgänge vollständig automatisiert sind, sodass keine Unterbrechung des Diensts für Benutzer erforderlich ist.
+AEM als Cloud-Dienst verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte vollständig auf dem neuesten Stand sind. Dies bedeutet, dass alle Aktualisierungsvorgänge vollständig automatisiert sind, sodass keine Unterbrechung des Diensts für Benutzer erforderlich ist.
 
-Adobe übernimmt proaktiv die Aktualisierung aller operativen Instanzen des Dienstes auf die neueste Version der AEM-Codebasis:
+Adobe sorgt proaktiv dafür, dass alle operativen Instanzen des Dienstes auf die neueste Version der AEM-Codebasis aktualisiert werden:
 
 * Fehlerbehebungen:
 
@@ -83,7 +86,7 @@ Adobe übernimmt proaktiv die Aktualisierung aller operativen Instanzen des Dien
 
 * Neue Funktionen:
 
-   * Wird über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
+   * Wird über einen vorhersehbaren Monatszeitplan veröffentlicht.
 
 >[!NOTE]
 >
@@ -97,31 +100,31 @@ Updates können von Adobe ausgelöst werden, wenn eine neue Version des Cloud-Di
 
 Cloud Manager ist:
 
-* zur Verwaltung von AEM-Programmen und -Umgebungen verwendet werden,
+* zur Verwaltung von AEM-Programmen und -Umgebung verwendet werden,
 
-* eine wesentliche Komponente von AEM als Cloud-Dienst; jeder neue Mandant wird zuerst für den Cloud Manager-Zugriff bereitgestellt,
+* eine wesentliche Komponente von AEM als Cloud-Dienst; jeder neue Mandant wird zum ersten Mal für den Zugriff auf Cloud Manager bereitgestellt,
 
 * die zentrale Anlaufstelle für Ihr Betriebs- und Entwicklungspersonal.
 
-Die Anzahl und der Typ der AEM-Programme, die mit Cloud Manager erstellt werden können, werden wie folgt abgeleitet:
+Die Anzahl und der Typ der AEM-Programm, die mit Cloud Manager erstellt werden können, werden wie folgt abgeleitet:
 
 * aus der Lizenzvereinbarung für Kunden,
 
-* von internen Akteuren, wenn AEM als Cloud-Dienst für Aktivierung oder Schulung verwendet wird,
+* von internen Akteuren, wenn AEM als Cloud-Dienst für die Aktivierung oder Schulung verwendet wird,
 
 * von externen Prozessen, wie Testversionen, die von Adobe.com gestartet wurden.
 
 Cloud Manager wurde als Selbstbedienungsportal entwickelt, in dem die Hauptkomponenten von AEM als Cloud-Dienst erstellt und konfiguriert werden können:
 
-* Erstellen und Verwalten neuer Programme.
+* Erstellen und Verwalten neuer Programm.
 
-* Erstellen und Verwalten der AEM-Umgebungen in diesen Programmen.
+* Erstellen und Verwalten der AEM-Umgebung in diesen Programmen.
 
-* Erstellen und Verwalten der Pipelines zur Bereitstellung des Kundencodes und der zugehörigen Konfiguration in einer bestimmten Umgebung.
+* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kundencodes und der zugehörigen Konfiguration auf einer bestimmten Umgebung.
 
-* werden über wichtige Lebenszyklusereignisse für diese Komponenten (z. B. Produktupdates) benachrichtigt.
+* werden über wichtige Lebenszykluskomponenten für diese Ereignis (z. B. Produktupdates) benachrichtigt.
 
-Derzeit ist Cloud Manager in der Lage, Umgebungen in 3 geografischen Regionen zu erstellen (weitere Regionen folgen):
+Derzeit kann Cloud Manager Umgebung in drei geografischen Regionen erstellen (weitere Regionen folgen):
 
 * USA (Osten)
 
@@ -139,7 +142,7 @@ Das Starten und Verwalten eines AEM-Projekts ist unkompliziert, wenn AEM als Clo
 
 * AEM-Grundbilder werden für bestimmte Anwendungsfälle optimiert.
 
-* Viele der manuellen Konfigurationsaufgaben wurden überflüssig.
+* Viele der Aufgaben zur manuellen Konfiguration wurden überflüssig gemacht.
 
 Er unterscheidet sich auch erheblich, da es jetzt Folgendes gibt:
 
@@ -161,7 +164,7 @@ Er unterscheidet sich auch erheblich, da es jetzt Folgendes gibt:
 
 >[!NOTE]
 >
->Für weitere Details können Sie mit [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwicklung - Das WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)beginnen.
+>Für weitere Informationen können Sie Beginn mit [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwicklungs-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)machen.
 
 Die neue Architektur, die AEM als Cloud-Dienst unterstützt, umfasst einige wichtige Änderungen am gesamten Entwicklererlebnis. Eines der Hauptziele von AEM als Cloud-Dienst besteht darin, erfahrenen Kunden (die AEM entweder vor Ort oder im Zusammenhang mit Adobe Managed Services verwendet haben) die schnellstmögliche Migration zu AEM als Cloud-Dienst zu ermöglichen, ohne den Großteil ihres benutzerspezifischen Codes neu schreiben zu müssen. Es könnten jedoch noch einige Anpassungen erforderlich sein.
 
@@ -177,17 +180,17 @@ Damit bestehende AEM-Anwendungen auf AEM als Cloud-Dienst ausgeführt werden, si
 
 Dieser Prozess wird häufig als Cloud-erste Entwicklung bezeichnet. Da die End-to-End-Dauer (je nach Komplexität der Anwendung von 20 bis 50 Minuten) in Anspruch nehmen wird, müssen schnelle Entwicklungsmethoden eingeführt werden, bevor die ausstehenden Code- und Konfigurationsänderungen in der Cloud versucht werden.
 
-Die Web-Konsole, in der OSGI-Pakete und ihre zugehörige Konfiguration verwaltet werden, und früher Teil von AEM QuickStart, ist für Benutzer von AEM nicht mehr direkt als Cloud-Service-Umgebung verfügbar. Über eine neue Entwicklerkonsole kann auf diese Schnittstelle weiterhin im schreibgeschützten Modus zugegriffen werden. Mit dieser Konsole können Entwickler einen bestimmten Knoten eines Autoren- oder Veröffentlichungsdiensts auswählen und sich direkt anmelden und dann auf die standardmäßig blockierten Bereiche zugreifen.
+Die Web-Konsole, in der OSGI-Pakete und die zugehörige Konfiguration verwaltet werden und die zuvor Teil von AEM QuickStart war, steht Benutzern von AEM nicht mehr als Cloud-Service-Umgebung direkt zur Verfügung. Über eine neue Entwicklerkonsole kann auf diese Schnittstelle weiterhin im schreibgeschützten Modus zugegriffen werden. Mit dieser Konsole können Entwickler einen bestimmten Knoten eines Autoren- oder Veröffentlichungsdiensts auswählen und sich direkt anmelden und dann auf die standardmäßig blockierten Bereiche zugreifen.
 
 >[!NOTE]
 >
 >Siehe auch [OSGi-Konfiguration](/help/implementing/deploying/overview.md#osgi-configuration)
 
-Eine weitere allgemeine Anforderung für Entwickler ist der schnelle Zugriff auf die Protokolldateien der verschiedenen Umgebungen. Mit AEM als Cloud-Dienst werden die Protokolldateien der verschiedenen Knoten im Autor- und Veröffentlichungsknoten über den Cloud Manager bereitgestellt, entweder in Form von Dateien, die heruntergeladen werden können, oder über APIs.
+Eine weitere gängige Voraussetzung für Entwickler ist der schnelle Zugriff auf die Protokolldateien der verschiedenen Umgebung. Mit AEM als Cloud-Dienst werden die Protokolldateien der verschiedenen Knoten im Autor- und Veröffentlichungsknoten über den Cloud Manager bereitgestellt, entweder in Form von Dateien, die heruntergeladen werden können, oder über APIs.
 
 Aufgrund der klaren Trennung von Code und Inhalt können Entwickler einen bestimmten Prozess zum Aktualisieren von Inhalten im Rahmen einer Bereitstellung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
 
-* Standardmäßige *Standardinhalte* , die Teil des Kundenprojekts sind (z. B. Ordner, Vorlagen, Arbeitsabläufe usw.)
+* Standardmäßige *Standardinhalte* , die Teil des Kundenprojekts sind (z. B. Ordner, Vorlagen, Workflows usw.)
 
 * Suchindexdefinitionen
 
@@ -201,11 +204,11 @@ Um schnelle Iterationen und Entwicklung zu unterstützen, ist es auch möglich, 
 
 * AEM as a Cloud Service QuickStart: ein `.jar` basiertes, eigenständiges Installationsprogramm der neuesten AEM-Codebasis mit derselben funktionalen und API-Oberfläche.
 
-* Das AEM als Cloud Service Dispatcher SDK: ein bildbasierter Prozess zum lokalen Testen und Validieren von Dispatcher-Konfigurationen
+* Das AEM als Cloud-Service-Dispatcher-SDK: ein bildbasierter Prozess zum lokalen Testen und Validieren von Dispatcher-Konfigurationen
 
 >[!NOTE]
 >
->Beachten Sie, dass Cloud QuickStart nicht alle AEM-Sites und AEM Assets-Funktionen zulässt. Es besteht aus einer einfachen Autorenumgebung, in der die meisten Erweiterungen entwickelt und getestet werden können.
+>Beachten Sie, dass Cloud QuickStart nicht alle AEM-Sites und AEM Assets-Funktionen zulässt. Es besteht aus einer einfachen Autorensoftware, bei der die meisten Erweiterungen entwickelt und getestet werden können.
 
 ## Vorgänge und Leistung {#operations-and-performance}
 
@@ -221,9 +224,9 @@ In diesen Bereichen:
 
 * Topologien werden für maximale Widerstandsfähigkeit und Effizienz optimiert. Beispielsweise ist die binaryllose Replizierung der Standard.
 
-* Aufgaben mit hoher Auslastung, wie Warteschlangen, Aufträge und Massenverarbeitungsaufgaben, wurden aus der AEM-Core-Instanz verschoben, um von freigegebenen und dedizierten Mikrodiensten verarbeitet zu werden.
+* Aufgaben mit hoher Auslastung wie Warteschlangen, Aufträge und Aufgaben zur Massenverarbeitung wurden aus der AEM-Core-Instanz entfernt, um von freigegebenen und dedizierten Mikrodiensten verarbeitet zu werden.
 
-Vorgänge für AEM als Cloud-Dienst werden auch von einer neuen Infrastruktur für Überwachung, Berichterstellung und Benachrichtigung unterstützt. Dies ermöglicht es den Adobe SREs (Site Reliability Engineers), den Service proaktiv zu erhalten. Die verschiedenen Elemente der Architektur sind mit verschiedenen Gesundheitskontrollen ausgestattet. Wenn ein bestimmter Knoten der Architektur aus irgendeinem Grund als ungesund gilt, wird er aus dem Dienst entfernt und still durch einen neuen, gesunden ersetzt.
+Vorgänge für AEM als Cloud-Dienst werden auch von einer neuen Überwachungs-, Berichte- und Warninfrastruktur unterstützt. Dies ermöglicht es den Adobe SREs (Site Reliability Engineers), den Service proaktiv zu erhalten. Die verschiedenen Elemente der Architektur sind mit einer Vielzahl von Gesundheitskontrollen ausgestattet. Wenn ein bestimmter Knoten der Architektur aus irgendeinem Grund als ungesund gilt, wird er aus dem Dienst entfernt und still durch einen neuen, gesunden ersetzt.
 
 ## Identitätsmanagement {#identity-management}
 
@@ -233,7 +236,7 @@ Vorgänge für AEM als Cloud-Dienst werden auch von einer neuen Infrastruktur f�
 
 Eine wichtige Änderung an AEM als Cloud-Dienst ist die vollständig integrierte Verwendung von Adobe-IDs für den Zugriff auf die Autorenebene.
 
-Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen es Ihren Benutzern, auf Adobe-Produkte und -Dienste zuzugreifen, da die Benutzerprofilinformationen im Adobe Identity Management System (IMS) zentralisiert und für alle Cloud-Dienste freigegeben werden. Nachdem der Zugriff auf AEM zugewiesen wurde, können die Benutzerkonten in AEM als Cloud-Dienst referenziert werden (wie zuvor). zum Beispiel zum Definieren von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
+Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Adobe-Profil und -Dienste, da die Benutzerinformationen im Adobe Identity Management System (IMS) zentralisiert und für alle Cloud-Services freigegeben sind. Nachdem der Zugriff auf AEM zugewiesen wurde, können die Benutzerkonten in AEM als Cloud-Dienst referenziert werden (wie zuvor). zum Beispiel zum Definieren von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
 
 Dies kombiniert die Vorteile von:
 
@@ -253,13 +256,13 @@ Der Hauptunterschied besteht darin, dass die Benutzeroberfläche ausschließlich
 
 ## AEM Sites {#aem-sites}
 
-Mit Adobe Experience Manager Sites als Cloud-Dienst können Sie Ihren Kunden personalisierte, inhaltsbasierte Erlebnisse bereitstellen, indem Sie die Leistungsfähigkeit des AEM Content Management Systems mit AEM Digital Asset Management kombinieren.
+Mit Adobe Experience Manager Sites als Cloud-Dienst können Sie Ihren Kunden personalisierte, inhaltsbasierte Erlebnisse bereitstellen, indem Sie die Leistungsfähigkeit des AEM-Content-Management-Systems mit AEM Digital Asset Management kombinieren.
 
 Weitere Informationen finden Sie in der Übersicht über [Änderungen an Sites](/help/sites-cloud/sites-cloud-changes.md).
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native SaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital Asset Management- und Dynamic Media-Vorgänge schnell und wirkungsvoll durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie AI/ML nutzen können, und zwar innerhalb eines Systems, das immer aktuell, immer verfügbar und immer lernfähig ist.
+Adobe Experience Manager Assets als Cloud-Dienst-Angebot ist eine Cloud-native SaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital Asset Management- und Dynamic Media-Vorgänge mit Geschwindigkeit und Wirkung durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie AI/ML nutzen können, und zwar innerhalb eines Systems, das immer aktuell, immer verfügbar und immer lernfähig ist.
 
 Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation in der Cloud sowie die Erfassung und Suche von hochleistungsfähigen Assets.
 
