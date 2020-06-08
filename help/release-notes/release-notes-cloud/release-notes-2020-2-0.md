@@ -1,8 +1,11 @@
 ---
 title: Versionshinweise für Version 2020.2.0
 description: Versionshinweise für Version 2020.2.0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 100%
 
 ---
 
