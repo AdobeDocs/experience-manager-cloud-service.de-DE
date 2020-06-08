@@ -3,6 +3,9 @@ title: Quellcode-Repository - Cloud-Dienste
 description: Quellcode-Repository - Cloud-Dienste
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 23%
 
 ---
 
@@ -23,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> Ein Benutzer kann eine Kopie seines Codes auschecken und Änderungen am lokalen Code-Repository vornehmen. Sobald die Änderungen vorliegen, kann der Benutzer die Codeänderungen wieder in das Remote-Code-Repository in Cloud Manager übernehmen.
+> Ein Benutzer kann eine Kopie seines Codes auschecken und Änderungen am lokalen Code-Repository vornehmen. Sobald die Änderungen vorgenommen wurden, kann der Benutzer die Code-Änderungen wieder in das Remote-Code-Repository in Cloud Manager übertragen.
