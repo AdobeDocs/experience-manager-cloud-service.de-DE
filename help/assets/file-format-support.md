@@ -2,10 +2,10 @@
 title: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '782'
 ht-degree: 100%
 
 ---
