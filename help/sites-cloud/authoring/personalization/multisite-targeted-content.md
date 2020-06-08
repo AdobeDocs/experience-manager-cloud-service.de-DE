@@ -1,8 +1,11 @@
 ---
 title: Verwenden zielgerichteter Inhalte in Multisites
-description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Websites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden.
-translation-type: ht
+description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 100%
 
 ---
 
@@ -147,7 +150,7 @@ Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstell
 
 >[!NOTE]
 >
->Das Standardgebiet (Mastergebiet) wird automatisch eingeklappt, wenn Sie auf den Namen einer Marke klicken oder tippen, **bis** Sie ein weiteres Gebiet erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
+>Der Standardbereich „Masterbereich“ wird standardmäßig ausgeblendet, wenn Sie auf den Namen einer Marke tippen/klicken, **bis** Sie einen anderen Bereich erstellen. Wählen Sie entweder in der **Aktivitäts-** oder der **Angebotskonsole** eine Marke aus, wird Ihnen die **Gebietskonsole** angezeigt.
 
 So erstellen Sie ein neues Gebiet:
 
@@ -179,7 +182,7 @@ So erstellen Sie ein Gebiet als Live Copy:
 
    ![Live Copy erstellen](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. Geben Sie in das Feld **Name** einen Namen für die Live Copy ein. Standardmäßig werden auch Unterseiten eingeschlossen. Schließen Sie diese aus, indem Sie das Kontrollkästchen **Unterseiten ausschließen** aktivieren.
+1. Geben Sie im Feld **Name** einen Namen für die Live Copy ein. Standardmäßig werden Unterseiten einbezogen. schließen Sie sie aus, indem Sie das Kontrollkästchen **Unterseiten ausschließen** aktivieren.
 
    ![Live Copy erstellen](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -262,7 +265,7 @@ So deaktivieren Sie die Vererbung zielgerichteter Inhalte einer Aktivität:
 
 1. Navigieren Sie zu der Seite, deren Live Copy Sie vom Mastergebiet trennen möchten, und klicken oder tippen Sie im Modus-Dropdown-Menü auf **Targeting**.
 1. Ist Ihre Seite mit einem Gebiet verknüpft, das eine Live Copy darstellt, wird der Vererbungsstatus angezeigt. Tippen oder klicken Sie auf **Targeting starten**.
-1. Wählen Sie aus dem Dropdown-Menü in der Symbolleiste die Option **Live Copy trennen**. AEM fragt sodann, ob Sie die Live Copy trennen möchten.
+1. Wählen Sie aus dem Dropdown-Menü in der Symbolleiste die Option **Live Copy trennen**. AEM bestätigt, dass Sie die Live Copy trennen möchten.
 1. Tippen oder klicken Sie auf **Entfernen**, um die Live Copy von der Aktivität zu trennen. Nach der Trennung ist das Dropdown-Menü für die Vererbung nicht länger verfügbar. Die Aktivität ist jetzt eine lokale Aktivität.
 
    ![Lokale Aktivität](/help/sites-cloud/authoring/assets/multisite-winter.png)
