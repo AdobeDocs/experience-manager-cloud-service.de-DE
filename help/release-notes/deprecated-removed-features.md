@@ -1,10 +1,10 @@
 ---
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '504'
 ht-degree: 100%
 
 ---
