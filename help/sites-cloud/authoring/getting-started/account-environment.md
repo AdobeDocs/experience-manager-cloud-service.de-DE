@@ -1,8 +1,11 @@
 ---
-title: Konfigurieren der Kontoumgebung
+title: 'Konfigurieren der Kontoumgebung  '
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
@@ -82,6 +85,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    Diese Option aktiviert Tastaturbefehle. Diese sind zwar standardmäßig aktiviert, können aber deaktiviert werden, etwa wenn für einen Benutzer bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen.
 
 * **Asset-Homepage aktivieren**
