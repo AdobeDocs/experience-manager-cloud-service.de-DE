@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 85%
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [AEM Sites – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/sites-readiness.md)
-+ Erreichbarkeit {#accessibility}
-   + [AEM als Cloud-Dienst und die Richtlinien zur Web-Zugänglichkeit](accessibility/web-accessibility.md)
++ Barrierefreiheit {#accessibility}
+   + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](accessibility/web-accessibility.md)
    + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Best Practices {#best-practices}
    + [SEO- und URL-Verwaltung](best-practices/seo-and-url-management.md)
