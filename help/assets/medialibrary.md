@@ -2,8 +2,11 @@
 title: AEM Assets und AEM Media Library
 description: Häufig gestellte Fragen zu AEM Assets und AEM Media Library, einschließlich den Unterschieden zwischen den beiden.
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 100%
 
 ---
 
