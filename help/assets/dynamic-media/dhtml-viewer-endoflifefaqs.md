@@ -1,8 +1,11 @@
 ---
 title: Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer
 description: Am 31. Januar 2014 wurde die DHTML-Viewer-Plattform von Scene7 offiziell eingestellt. Mit dieser Benachrichtigung erhalten Sie Antworten auf häufig gestellte Fragen, sodass Sie sich auf die Umstellung auf unsere neue HTML5-Viewer-Plattform vorbereiten können.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 100%
 
 ---
 
@@ -120,4 +123,4 @@ Auch wenn Sie den DHTML-Viewer weiterhin bei der Produktion einsetzen können, i
 
 **An wen kann ich mich wenden, um weitere Informationen zu erhalten?**
 
-Falls nicht all Ihre Fragen durch diese FAQ beantwortet werden konnten, wenden Sie sich an den Support ([s7support@adobe.com](mailto:s7support@adobe.com)) oder Ihren Adobe-Kundenbetreuer.
+Wenn Ihre Fragen in diesen häufig gestellten Fragen nicht alle beantwortet werden, wenden Sie sich an den Support ([s7support@adobe.com](mailto:s7support@adobe.com)) oder Ihren Adobe-Kundenbetreuer.
