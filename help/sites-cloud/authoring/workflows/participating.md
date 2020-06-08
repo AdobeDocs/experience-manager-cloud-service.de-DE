@@ -1,8 +1,11 @@
 ---
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivitä
 
 ## Benachrichtigungen über verfügbare Workflow-Aktionen   {#notifications-of-available-workflow-actions}
 
-Wenn Ihnen ein Arbeitselement zugeordnet wird (z. B. **Inhalt bestätigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
+Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
 * In der [Benachrichtigungsanzeige](/help/sites-cloud/authoring/getting-started/inbox.md) (Symbolleiste) werden weitere Elemente angezeigt:
 
@@ -36,6 +39,7 @@ Wenn Ihnen ein Arbeitselement zugeordnet wird (z. B. **Inhalt bestätigen**), we
    * Die Anzahl der Workflows, die für diese Seite verwendet werden. Sie haben folgende Möglichkeiten:
       * die Nach-links-/Nach-rechts-Taste verwenden, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
       * auf die Zahl klicken/tippen, um eine Dropdown-Liste mit allen verwendeten Workflows zu öffnen, und den Workflow auswählen, der in der Statusleiste angezeigt werden soll.
+
    ![Seite mit mehreren Workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
