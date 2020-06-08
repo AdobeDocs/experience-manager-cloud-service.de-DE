@@ -1,8 +1,11 @@
 ---
 title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ Die tatsächlichen für den Benutzer verfügbaren Aktionen werden abhängig von 
    * Sie können die Komponente sowohl in die aktuelle Seite als auch in eine andere Seite einfügen.
    * Das Element wird über dem Element eingefügt, auf dem Sie die Einfügen-Aktion durchführen.
    * Die Option zum Einfügen wird nur angezeigt, wenn sich Inhalt in der Zwischenablage befindet.
+
    ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Bildkomponente – Vollbild
 
-   Im [Vollbildmodus](#edit-content-full-screen-mode) bietet die Bildkomponente mehr Platz zum Bearbeiten von Bildern sowie zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Zudem können im Vollbildmodus voreingestellte Freistellungsvorgaben ausgewählt werden.
+   Wenn Sie den [Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bilds und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
    ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
    * Auf der Komponente werden die Ziehpunkte für die Größenanpassung angezeigt.
    * Oben im Bildschirm wird die Emulator-Symbolleiste angezeigt.
    * In der Komponenten-Symbolleiste stehen statt der Standard-Bearbeitungsaktionen nun Layout-Aktionen zur Verfügung.
+
    ![Komponente im Layout-Modus](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    Jetzt können Sie Änderungen am Layout der Komponente auf die gleiche Art und Weise vornehmen wie im [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
@@ -438,7 +443,7 @@ Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol r
 
 Die Option **Als veröffentlicht anzeigen** ist im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) verfügbar. Mit dieser Option wird die Seite in einer neuen Registerkarte geöffnet, ihr Inhalt aktualisiert und die Seite so angezeigt, wie sie später in der Veröffentlichungsumgebung aussieht.
 
-## Sperren einer Seite   {#locking-a-page}
+## Sperren einer Seite {#locking-a-page}
 
 AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
 
@@ -451,7 +456,7 @@ Eine Seite kann wie folgt gesperrt werden:
 
       ![Schaltfläche „Sperren“](/help/sites-cloud/authoring/assets/lock.png)
 
-* **Seiten-Editor**
+* **Seiteneditor**
 
    1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen:
    1. Wählen Sie die Option **Seite sperren** aus.
