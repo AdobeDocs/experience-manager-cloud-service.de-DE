@@ -1,8 +1,11 @@
 ---
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
 >
 >Sie können diese Tour überspringen und jederzeit wiederholen, indem Sie sie im Menü **Seiteninformationen** auswählen.
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Aufrufen der Hilfe {#accessing-help}
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
@@ -83,7 +86,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
    * Komponenten nach Namen filtern
    * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
-   Sofern verfügbar, können Sie zudem eine detaillierte Beschreibung zu einer Komponente aufrufen. Klicken oder tippen Sie dazu im **Komponenten-Browser** auf das Infosymbol neben der jeweiligen Komponente. Zum Beispiel für das **Inhaltsfragment**:
+   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
    ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -202,7 +205,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 * Blueprints
 * Launches
-* Live Copys
+* Live Copies
 * Sprachkopien
 * Eingehende Links
 * Verwendung der Referenzkomponente: geliehener und verliehener Inhalt
@@ -307,7 +310,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/gettin
 ![Pfad-Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Sobald eine Ressource ausgewählt wird, wird die Schaltfläche **Auswählen** oben rechts im Dialogfeld aktiviert. Klicken/tippen Sie darauf, um die Auswahl zu bestätigen, oder heben Sie die Auswahl über **Abbrechen** auf.
-* Abhängig vom Kontext können auch mehrere Ressourcen ausgewählt werden. In diesem Fall wird durch Auswählen einer Ressource ebenfalls die Schaltfläche **Auswählen** aktiviert, wobei zusätzlich oben rechts im Fenster auch die Anzahl der ausgewählten Ressourcen angezeigt wird. Klicken Sie neben der Zahl auf **X**, wenn Sie die Auswahl für alle aufheben möchten.
+* Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl einer Ressource auch die Schaltfläche **Auswählen** aktiviert, aber auch die Anzahl der ausgewählten Ressourcen wird oben rechts im Fenster angezeigt. Klicken Sie auf das **X** neben der Zahl, um die Auswahl für alle aufzuheben.
 * Wenn Sie durch den Baum navigieren, wird Ihre Position in den Breadcrumbs am oberen Rand des Dialogfelds angezeigt. Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
 * Darüber hinaus können Sie auch jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.
 * Sie können Ihre Suche auch eingrenzen, indem Sie die Filteroptionen einblenden und die Ergebnisse nach Pfad filtern.
