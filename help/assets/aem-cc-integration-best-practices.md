@@ -3,8 +3,11 @@ title: Best Practices für die Integration von Adobe Experience Manager und Adob
 description: Best Practices für die Integration einer AEM-Instanz mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3300'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Geschäftsbenutzer vereinfachen das Öffnen und Verwenden von Assets, führen Bearbeitungen durch und laden AEM-Änderungen sowie neue Dateien aus der Desktop-Umgebung in AEM hoch. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Applikationen, auch Adobe-fremden, zu öffnen. | [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM-Desktop-Programm auf Windows- und Mac-Desktop |
 | Marketer und Geschäftsbenutzer können Adobe Stock-Assets in AEM entdecken, in einer Vorschau anzeigen, lizenzieren sowie speichern und verwalten. Lizenzierte und gespeicherte Assets liefern ausgewählte Adobe Stock-Metadaten für eine bessere Governance. | [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md) | AEM-Web-Oberfläche |
 
-Dieser Artikel konzentriert sich hauptsächlich auf die ersten beiden Aspekte der Kooperationsanforderungen. Die Verteilung und Beschaffung skalierter Assets wird kurz als Nutzungsszenario erwähnt. Als Lösungen für diese Anforderungen sollten Sie Adobe Brand Portal oder Asset Share Commons in Betracht ziehen. Alternative Lösungen wie [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), Lösungen, die basierend auf [Asset Share](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Komponenten erstellt werden können, und [Link-Freigabe](share-assets.md), die allesamt die [AEM Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) verwenden, sind auf Grundlagen bestimmter Anforderungen zu prüfen.
+Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte der Zusammenarbeit. Die Verteilung und Beschaffung von Vermögenswerten im entsprechende Maß wird kurz als Verwendungsfall genannt. Für solche Lösungen sollten Sie Adobe Brand Portal oder Asset Share Commons beachten. Alternative Lösungen wie [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), Lösungen, die basierend auf [Asset Share](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Komponenten erstellt werden können, und [Link-Freigabe](share-assets.md), die allesamt die [AEM Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) verwenden, sind auf Grundlagen bestimmter Anforderungen zu prüfen.
 
 ![Creative Cloud-Verbindungen für AEM: Festlegen der zu verwendenden Funktion](assets/creative-connections-aem.png)
 
@@ -81,13 +84,13 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 * **Laufende Arbeit oder laufende kreative Arbeit (Work-In-Progress, WIP):** Eine Phase im Asset-Lebenszyklus, in der ein Asset mehrfach geändert wird und in der Regel noch nicht zur Freigabe für breitere Teams bereit ist.
 * **Fertige Kreativ-Assets:** Assets, die für ein breiteres Team freigegeben werden können oder die vom Kreativ-Team für die Freigabe mit Marketing- oder LOB-Teams ausgewählt/genehmigt wurden.
 
-* **Asset-Genehmigungen:** Der Genehmigungsprozess für bereits in DAM hochgeladene Assets, welcher in der Regel Markengenehmigungen, rechtliche Genehmigungen usw. umfasst.
-* **Abgeschlossenes Asset:** Ein Asset, für das alle     Genehmigungen/Metadaten-Tagging durchgeführt wurden und das bereit für die Verwendung durch das breitere Team ist. Ein solches Asset wird in DAM gespeichert und für alle (interessierten) Benutzer bereitgestellt. Es kann in Marketingkanälen oder von Kreativteams zur Designgestaltung verwendet werden.
+* **Asset-Genehmigungen:** Der Genehmigungsprozess, der für Assets ausgeführt wird, die bereits auf DAM hochgeladen wurden. Dazu gehören in der Regel Markengenehmigungen, Genehmigungen usw.
+* **Abgeschlossenes Asset:** Ein Asset, für das alle     Genehmigungen/Metadaten-Tagging durchgeführt wurden und das bereit für die Verwendung durch das breitere Team ist. Ein solches Asset wird in DAM gespeichert und allen (bzw. allen interessierten) Benutzern zur Verfügung gestellt. Es kann in Marketingkanälen oder von Kreativteams verwendet werden, um Designs zu erstellen.
 
-* **Geringfügige     Asset-Aktualisierung/Änderung:** Eine schnelle und kleine Änderung an einem digitalen Asset. Sie erfolgt häufig als Reaktion auf Anforderung einer Retusche oder geringfügigen Bearbeitung oder auf eine Asset-Überprüfung bzw. -Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung von Sättigung/Helligkeit, Farbe usw.).
-* **Wesentliche    Asset-Aktualisierung/Änderung:** Eine Änderung an einem digitalen Asset, die umfangreiche Arbeit und manchmal einen längeren Zeitraum erfordert. Sie umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrere Male gespeichert werden. Bei wesentlichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase verschoben.
-* **DAM:** Digital Asset Management. Sofern nicht ausdrücklich anders angegeben ist „DAM“ in diesem Dokument ein Synonym für AEM (Adobe Experience Manager)-Assets.
-* **Kreativer Benutzer:** Ein Kreativprofi, der mit Creative Cloud-Applikationen und -Diensten digitale Assets erstellt. In einigen Fällen kann ein kreativer Benutzer ein Mitglied eines Kreativteams sein, das Creative Cloud verwendet, jedoch keine digitalen Assets erstellt (z. B. ein Creative Director oder Leiter des Kreativteams).
+* **Kleinere Asset-Aktualisierung/-Änderung:** Schnelle, kleine Änderung an einem digitalen Asset. Diese wird häufig aufgrund einer Retuschieranforderung oder einer kleineren Bearbeitungsanforderung, einer Asset-Überprüfung oder einer Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung der Sättigung/Helligkeit, Farbe usw.) durchgeführt.
+* **Größere Asset-Aktualisierung/-Änderung:** Änderung eines digitalen Assets, die viel Arbeit erfordert und manchmal über einen längeren Zeitraum erfolgen muss. Diese umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrmals gespeichert werden. Bei umfangreichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase versetzt.
+* **DAM:** Digital Asset Management. In diesem Dokument wird der Begriff synonym mit AEM Experience Manager-Assets verwendet, sofern nicht ausdrücklich anders angegeben.
+* **Kreativer Benutzer:** Kreativprofi, der digitale Assets mit Creative Cloud-Apps und -Diensten erstellt. In einigen Fällen kann ein kreativer Benutzer Mitglied eines Kreativteams sein, das möglicherweise Creative Cloud verwendet, aber keine digitalen Assets erstellt (z. B. Creative Director oder Creative Team Manager).
 * **DAM-Benutzer:** Ein typischer Benutzer eines DAM-Systems. Je nach Organisation kann ein DAM-Benutzer ein Marketing- oder Nicht-Marketing-Benutzer sein, z. B. Branchenbenutzer, Bibliothekar, Vertriebsmitarbeiter usw.
 
 ### Überlegungen zur Integration von AEM und Creative Cloud{#considerations-when-using-aem-and-creative-cloud-integration}
@@ -105,8 +108,8 @@ Dies ist eine kurze Zusammenfassung von Best Practices für die AEM- und Creati
 
 * **Für kreative Benutzer, die in Photoshop, InDesign oder Illustrator arbeiten:** Adobe Asset Link bietet ein optimales Benutzererlebnis, einschließlich der ordnungsgemäßen Abwicklung laufender Arbeiten von aus AEM ausgecheckten Assets.
 * **Für einen vereinfachten Desktop-Zugriff auf Assets bei beliebigen allgemeinen Dateiformaten oder Applikationen:** Verwenden Sie das AEM-Desktop-Programm.
-* **Gründe und Zeitpunkt zum Speichern von Assets in DAM:** Aktualisierungen, die für das breiter gefasste Team in Ihrer Organisation verfügbar gemacht werden sollen.
-* **Berücksichtigung der Menge der freigegebenen Assets:** Wenn Ihr Nutzungsszenario eine Asset-Verteilung vorsieht, sind Governance und Sicherheit möglicherweise die wichtigsten Aspekte. Erwägen Sie die Verwendung von Tools, die für eine skalierte Vorgehensweise entwickelt wurden, wie z. B. Brand Portal.
+* **Verstehen, warum und wann Assets in DAM gespeichert werden:** Aktualisierungen, die dem breiteren Team in Ihrer Organisation zur Verfügung zu stellen sind.
+* **Beachten des Volumens freigegebener Assets:** Wenn Ihr Anwendungsfall die Asset-Verteilung ist, könnten Governance und Sicherheit die wichtigsten Aspekte sein. Erwägen Sie die Verwendung von Tools, die für eine skalierte Vorgehensweise entwickelt wurden, wie z. B. Brand Portal.
 * **Wissenswertes über den Asset-Lebenszyklus:** Sie müssen wissen, welche Assets in Ihrer Organisation von den verschiedenen Teams genutzt werden.
 * **Sorgfältige Verarbeitung häufiger Asset-Speichervorgänge:** Adobe Asset Link übernimmt diese Aufgabe für Sie – mit PS, AI und ID. Führen Sie für andere Applikationen keine laufenden Arbeitsaufgaben im zugeordneten/freigegebenen Ordner aus, es sei denn, Sie benötigen alle Änderungen in DAM.
 
