@@ -1,8 +1,11 @@
 ---
 title: Strukturierung von Multisite-Management für zielgerichtete Inhalte
 description: Im Diagramm ist der Aufbau der Multisite-Unterstützung für zielgerichtete Inhalte dargestellt.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 100%
 
 ---
 
