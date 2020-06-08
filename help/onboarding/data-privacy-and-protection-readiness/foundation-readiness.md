@@ -3,6 +3,9 @@ title: Datenschutz- und Datenschutzvorschriften - Adobe Experience Manager als C
 description: 'Erfahren Sie mehr über Adobe Experience Manager als Unterstützung der Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Datenschutzgesetzes für Verbraucher und wie bei der Implementierung eines neuen AEM als Cloud-Service-Projekt einzuhalten ist. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 32%
 
 ---
 
@@ -13,15 +16,15 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 >
 >Der Inhalt dieses Dokuments stellt keine Rechtsberatung dar und ist nicht als Ersatz für Rechtsberatung gedacht.
 >
->Bitte konsultieren Sie die Rechtsabteilung Ihres Unternehmens, um sich über die Datenschutzbestimmungen zu informieren.
+>Für Informationen zu Datenschutzbestimmungen und Datenschutzbestimmungen wenden Sie sich bitte an die Rechtsabteilung Ihrer Firma.
 
 >[!NOTE]
 >
 >Weitere Informationen über die Reaktion von Adobe auf Datenschutzprobleme und was dies für Sie als Adobe-Kunde bedeutet, finden Sie im Datenschutzzentrum von [Adobe](https://www.adobe.com/privacy.html).
 
-## Unterstützung von AEM Foundation zum Datenschutz {#aem-foundation-data-privacy-and-protection-support}
+## Unterstützung von AEM Foundation für Datenschutz und Datenschutz {#aem-foundation-data-privacy-and-protection-support}
 
-Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im Benutzerprofil gespeichert. Die Informationen in diesem Artikel behandeln daher in erster Linie das Zugreifen auf Benutzerprofile und das Löschen von Benutzerprofilen, das Ansprechen auf die Anforderungen bzw. das Löschen von Anforderungen.
+Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im User Profil gespeichert. Die Informationen in diesem Artikel behandeln daher in erster Linie das Zugreifen auf und Löschen von Profilen, das Ansprechen von Zugänglichkeits- bzw. Löschanforderungen.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
@@ -39,7 +42,7 @@ Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im Ben
 
 1. Klicken Sie nun auf das Benutzerprofil, um es zu öffnen, und rufen Sie die Registerkarte **[!UICONTROL Details]** auf.
 
-   ![Benutzerprofil](assets/dpp-foundation-02.png)
+   ![user Profil](assets/dpp-foundation-02.png)
 
 ### HTTP-API {#http-api}
 
@@ -85,7 +88,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 4. Bestätigen Sie abschließend die Aktion.
 
-   Die Benutzeroberfläche zeigt dann an, dass das Benutzerkonto deaktiviert wurde, indem die Profilkarte abgegraut und eine Sperre hinzugefügt wurde:
+   Die Benutzeroberfläche weist dann darauf hin, dass das Benutzerkonto deaktiviert wurde, indem die Profil-Karte abgegraut und eine Sperre hinzugefügt wurde:
 
    ![Konto deaktiviert](assets/dpp-foundation-04.png)
 
@@ -93,11 +96,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Für AEM als Cloud-Dienst ist in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Benutzerprofils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
+> Für AEM als Cloud-Dienst ist in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Profils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
 
 ### HTTP-API {#http-api-1}
 
-The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
+Die folgenden Verfahren verwenden das `curl` Befehlszeilenwerkzeug, um zu veranschaulichen, wie Benutzer mit der **[!UICONTROL Aufnahme]** deaktiviert und die entsprechenden Profile am Standardspeicherort gelöscht werden können `userId`.
 
 **Ermitteln der Benutzerstartseite:**
 
@@ -116,7 +119,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **Löschen von Benutzerprofilen**
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profilknotenspeicherorte:
+Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profil-Knotenpunkte:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
