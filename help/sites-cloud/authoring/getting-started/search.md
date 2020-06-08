@@ -1,8 +1,11 @@
 ---
 title: Suchen
 description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ So durchsuchen und filtern Sie Ressourcen:
    * Verzeichnisse, die durchsucht werden sollen
    * Tags
    * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status.
+
    >[!NOTE]
    >
    >Die Suchkriterien können variieren:
