@@ -3,6 +3,9 @@ title: Zuerkannte Zugriffsrechte - Erforderlich
 description: Zuerkannte Zugriffsrechte - Erforderlich
 translation-type: tm+mt
 source-git-commit: 1511e24cbc4a845b1d7673438b8b7c4171d173e6
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 51%
 
 ---
 
@@ -17,6 +20,6 @@ To get started with an Adobe ID, please visit [Manage Adobe Identity Types](http
 
 ## Anwender und Rollen {#users-and-roles}
 
-Sobald Adobe eine Organisation für Ihr Unternehmen erstellt hat, wird Ihr Administrator als erstes Mitglied dieser Organisation hinzugefügt. The administrator will be granted the administrator permissions by default, and assigned the [!UICONTROL AEM Managed Services] **Product**, and one or more [!UICONTROL Cloud Manager] **Product Profiles**. Weitere Informationen zum Konfigurieren und Verwalten Ihrer Teamanwender mit Admin Console finden Sie unter [Hinzufügen von Anwendern und Rollen](add-users-roles.md).
+Sobald Adobe eine Organisation für Ihr Unternehmen erstellt hat, wird Ihr Administrator als erstes Mitglied dieser Organisation hinzugefügt. Dem Administrator werden standardmäßig die Administratorberechtigungen erteilt und das [!UICONTROL AEM Managed Services]-**Produkt** sowie mindestens ein [!UICONTROL Cloud Manager] **Produktprofil** zugewiesen. Weitere Informationen zum Konfigurieren und Verwalten Ihrer Teamanwender mit Admin Console finden Sie unter [Hinzufügen von Anwendern und Rollen](add-users-roles.md).
 
 Mit diesen Rechten kann Ihr Administrator nun per Single Sign-on (mit der Adobe ID) auf [!UICONTROL Experience Cloud]-Dienste zugreifen, sich bei Ihren AEM-Cloud-Umgebungen anmelden und [!UICONTROL Cloud Manager] verwenden.
