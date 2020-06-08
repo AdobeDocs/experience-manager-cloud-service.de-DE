@@ -92,6 +92,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
    * **Kartengröße**
+
    ![Einstellungen für die Kalenderansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Listenansicht**
@@ -100,6 +101,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    * **Sortieren nach**
    * **Sortierreihenfolge**
+
    ![Einstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    Sie können Ihren Kalender auch an andere Benutzer delegieren sowie die Delegierung von anderen Benutzern anfordern und Ihre Delegierungen verwalten.
@@ -128,6 +130,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    * **Schritt zurück** zu einem vorherigen Schritt
    * Anzeigen der Payload eines Workflows
    * Erstellen eines Projekts auf Basis des Elements
+
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter:
@@ -140,6 +143,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    * Ein Dialogfeld für die jeweilige Aktion wird geöffnet
    * Ein Assistent für eine bestimmte Aktion wird gestartet
    * Eine Dokumentationsseite wird geöffnet
+
    Wird etwa die Aktion **Delegieren** ausgeführt, öffnet sich ein Dialogfeld:
 
    ![Posteingangsaufgabe delegieren](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ Sie können vom Posteingang aus Aufgaben erstellen:
       * **Aufgabenpriorität**
       * **Startdatum**
       * **Fälligkeitsdatum**
+
    ![Posteingang – Aufgabe hinzufügen](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Erweitert**
 
       * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+
    ![Posteingang – Erweiterte Optionen zum Hinzufügen von Aufgaben](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Klicken Sie auf **Übermitteln**.
