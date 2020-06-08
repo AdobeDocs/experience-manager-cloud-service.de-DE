@@ -1,8 +1,11 @@
 ---
 title: 360-Grad-/VR-Video
 description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality (VR)-Videos in Dynamic Media.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 100%
 
 ---
 
@@ -59,6 +62,7 @@ Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf 
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
    * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
+
    Beachten Sie, dass sich durch diese Vorgehensweise auch steigenden Anforderungen an Netzwerk und CPU beim Anwender ergeben.
 
 1. [Laden Sie Ihr Video in den Ordner hoch](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
@@ -112,6 +116,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]**, um die Wiedergabe des Videos zu starten. Ziehen Sie dann den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
+
    ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR]**.
