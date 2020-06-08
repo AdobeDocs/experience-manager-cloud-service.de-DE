@@ -1,15 +1,18 @@
 ---
-title: Verfassen zielgerichteter Inhalte im Targeting-Modus
+title: 'Verfassen zielgerichteter Inhalte im Targeting-Modus '
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '5351'
+ht-degree: 100%
 
 ---
 
 
 # Verfassen zielgerichteter Inhalte im Targeting-Modus  {#authoring-targeted-content-using-targeting-mode}
 
-Verfassen Sie zielgerichtete Inhalte im Targeting-Modus vom AEM. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
+Verfassen Sie zielgerichtete Inhalte im Targeting-Modus von AEM. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
 
 * Erkennen Sie problemlos zielgerichtete Inhalte auf einer Seite. Zielgerichtete Inhalte werden mit einer gepunkteten Linie umrandet.
 * Wählen Sie eine Marke und Aktivität aus, um deren Erlebnisse anzuzeigen.
@@ -137,7 +140,7 @@ Wählen Sie nach [Beginn des Targeting-Verfahrens](#the-targeting-process-create
 >
 >Angebote sind die Inhalte von Targeting-Komponenten.
 
-Erlebnisse werden im Zielgruppenbereich angezeigt. Im folgenden Beispiel finden sich unter anderem die Erlebnisse **Standard**, **Frauen**, **Frauen über 30** und **Frauen unter 30**. In diesem Beispiel wird das Standardangebot einer Targeting-**Bild**-Komponente dargestellt.
+Erlebnisse werden im Bereich „Zielgruppen“ angezeigt. Im folgenden Beispiel finden sich unter anderem die Erlebnisse **Standard**, **Frauen**, **Frauen über 30** und **Frauen unter 30**. In diesem Beispiel wird das Standardangebot einer Targeting-**Bild**-Komponente dargestellt.
 
 ![Targeting-Bild-Komponente](/help/sites-cloud/authoring/assets/targeted-image-component.png)
 
@@ -145,7 +148,7 @@ Bei Auswahl eines anderen Erlebnisses wird in der Bild-Komponente das Angebot de
 
 ![Targeting-Bild-Komponente geändert](/help/sites-cloud/authoring/assets/targeted-image-different.png)
 
-Wurde ein Erlebnis ausgewählt und erhält die Targeting-Komponente kein Angebot für dieses Erlebnis, wird in der Komponente über dem halbtransparenten Standardangebot die Option **Angebot hinzufügen** angezeigt. Wurde für ein Erlebnis kein Angebot erstellt, wird das **Standardangebot** für das Segment angezeigt, das dem Erlebnis zugeordnet wurde.
+Wenn ein Erlebnis ausgewählt wurde und die Targeting-Komponente kein Angebot für dieses Erlebnis enthält, wird in der Komponente **Angebot hinzufügen** angezeigt. Diese Option wird auf dem halbtransparenten Standardangebot überlagert. Wenn für ein Erlebnis kein Angebot erstellt wurde, wird das **Standardangebot** für das Segment angezeigt, das dem Erlebnis zugeordnet ist.
 
 ![Angebot hinzufügen](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
 
@@ -467,7 +470,7 @@ So werden die Einstellungen für AEM-Targeting konfiguriert:
 1. Verwenden Sie das Dropdown-Menü **Start**, um festzulegen, wann die Aktivität beginnen soll. Wählen Sie einen der folgenden Werte aus:
 
    * **Ist diese Option aktiviert**, beginnt die Aktivität, sobald die Seite aktiviert wird, auf der sich der Targeting-Inhalt befindet.
-   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität online gehen soll.
+   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 
 1. Verwenden Sie das Dropdown-Menü **Ende**, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
 
@@ -483,7 +486,7 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 1. Verwenden Sie das Dropdown-Menü **Start**, um festzulegen, wann die Aktivität beginnen soll. Wählen Sie einen der folgenden Werte aus:
 
    * **Ist diese Option aktiviert**, beginnt die Aktivität, sobald die Seite aktiviert wird, auf der sich der Targeting-Inhalt befindet.
-   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität online gehen soll.
+   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 
 1. Verwenden Sie das Dropdown-Menü **Ende**, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
 
@@ -491,13 +494,13 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
    * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität beendet werden soll.
 
 1. Soll die Aktivität eine Priorität erhalten, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch** aus.
-1. Sollten Sie Adobe Analytics über Ihr Adobe Target-Konto konfiguriert haben, wird Ihnen zusätzlich das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle aus.
+1. Sollten Sie Adobe Analytics über Ihr Adobe Target-Konto konfiguriert haben, wird Ihnen zusätzlich das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
 
    Sollten Sie sich für **Adobe Analytics** entscheiden, wählen Sie Organisation und Report Suite aus. Sollten Sie **Adobe Target** auswählen, muss keine weitere Auswahl getroffen werden.
 
    ![Berichtsquelle](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Wählen Sie im Bereich **Zielmetrik** unter dem Punkt **Mein Primärziel** die zu verfolgende Erfolgsmetrik – Konversionen, Umsatz, Interaktion – aus und geben Sie an, wie die Metrik gemessen werden soll (oder welche Aktion die Zielgruppe ausführen muss, damit das Ziel als erreicht bewertet wird). Definitionen der Zielmetriken in der oben stehenden Tabelle finden Sie in der [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/target/r_success_metrics.html) unter dem Abschnitt zu Erfolgsmetriken.
+1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/target/r_success_metrics.html) zu Erfolgsmetriken.
 
    Sie können das Ziel umbenennen, indem Sie auf die drei Punkte oben rechts klicken und **Umbenennen** auswählen.
 
