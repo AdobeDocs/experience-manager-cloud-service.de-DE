@@ -1,8 +1,11 @@
 ---
 title: Anwenden von Dynamic Media-Viewer-Vorgaben
 description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 100%
 
 ---
 
