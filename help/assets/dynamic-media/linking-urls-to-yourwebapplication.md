@@ -2,10 +2,10 @@
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 97%
 
 ---
 
@@ -22,11 +22,11 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Anwendungen zu plat
 >
 >URL-Zeichenfolgen sind nur für dynamische Ausgabeformate von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die in DAM und nicht im Server für dynamische Medien aufbewahrt werden. Für statische Ausgabeformate wird die URL-Schaltfläche nicht angezeigt.
 
-Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
+Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
 Siehe auch [Verknüpfen von YouTube-URLs mit einer Web-Anwendung](video.md).
 
-Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
 Informationen hierzu finden Sie auch unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -84,6 +84,7 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
 Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen es sich neben Bildern und Videos um zusätzliche Assets handelt. Folgende unterstützte Formate von statischen Assets sind für die Bereitstellung verfügbar:
 
+* 3D-Dateien
 * Animiertes GIF
 * Audiodateien
 * CSS
@@ -108,7 +109,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Beispiel: `https://aem.com/is/content/adobe/image.gif`.
-   * Klicken Sie auf **[!UICONTROL Asset > Dynamische Ausgabeformate]** und tippen Sie dann auf ein dynamisches Ausgabeformat des statischen Assets und kopieren Sie die URL.
+   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
 
@@ -158,7 +159,6 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
 
    * Unter **[!UICONTROL Videodienst-URL]** kopieren Sie den gesamten URL-Pfad. Der kopierte URL-Pfad wird in den nachfolgenden Schritten benötigt. Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
-
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
