@@ -2,17 +2,20 @@
 title: Zwischenspeicherung in AEM als Cloud-Dienst
 description: 'Zwischenspeicherung in AEM als Cloud-Dienst '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 98%
+source-wordcount: '1358'
+ht-degree: 85%
 
 ---
 
 
 # Einführung {#intro}
 
-Caching im CDN kann mithilfe von Dispatcher-Regeln konfiguriert werden. Beachten Sie, dass der Dispatcher auch die resultierenden Cache-Ablaufkopfzeilen berücksichtigt, wenn `enableTTL` in der Dispatcher-Konfiguration aktiviert ist. Dies bedeutet, dass bestimmte Inhalte auch außerhalb der erneut veröffentlichten Inhalte aktualisiert werden.
+Traffic wird durch das CDN auf eine Apache-Webserverebene übertragen, die Module einschließlich des Dispatchers unterstützt. Um die Leistung zu erhöhen, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu beschränken.
+Regeln können auf die Dispatcher-Konfiguration angewendet werden, um alle standardmäßigen Cache-Ablaufeinstellungen zu ändern, was zu einer Zwischenspeicherung am CDN führt. Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+
+Diese Seite beschreibt auch, wie Dispatcher-Cache ungültig ist und wie die Zwischenspeicherung auf Browserebene im Hinblick auf clientseitige Bibliotheken funktioniert.
 
 ## Caching {#caching}
 
@@ -33,6 +36,14 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie den Cache-Control-Header auf &quot;privat&quot;. Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Ordner mit dem Namen &quot;myfolder&quot;zwischengespeichert werden:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Beachten Sie, dass andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), Werte nicht erfolgreich überschreiben.
@@ -70,13 +81,9 @@ Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeiche
 * Die Standardeinstellung kann nicht mit der für HTML-/Textdateitypen verwendeten `EXPIRATION_TIME`-Variablen gesetzt werden
 * Der Cache-Ablauf kann mit derselben LocationMatch-Strategie festgelegt werden, die im Abschnitt „HTML/Text“ beschrieben wird, indem der entsprechende Regex angegeben wird
 
-## Dispatcher {#disp}
+## Dispatcher-Cache-Ungültigkeit {#disp}
 
-Traffic wird über einen Apache-Webserver ausgeführt, der Module einschließlich des Dispatchers unterstützt. Der Dispatcher wird primär als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu beschränken, um die Leistung zu erhöhen.
-
-Wie im Abschnitt zum Zwischenspeichern des CDN beschrieben, können Regeln auf die Dispatcher-Konfiguration angewendet werden, um alle standardmäßigen Ablaufeinstellungen für den Cache zu ändern.
-
-Im Rest dieses Abschnitts werden Überlegungen im Zusammenhang mit der Dispatcher-Cache-Invalidierung beschrieben.  Für die meisten Kunden sollte es nicht notwendig sein, den Dispatcher-Cache zu invalidieren, sondern sich stattdessen darauf zu verlassen, dass der Dispatcher seinen Cache bei der Neuveröffentlichung von Inhalten aktualisiert und das CDN die Cache-Ablaufkopfzeilen berücksichtigt.
+Im Allgemeinen sollte es nicht notwendig sein, den Dispatcher-Cache ungültig zu machen. Stattdessen sollten Sie sich darauf verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden, und dass das CDN Cache-Ablaufkopfzeilen berücksichtigt.
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
