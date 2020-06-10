@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: 76cd37ae35360e68cca676de8eda53dff4819b41
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2272'
 ht-degree: 13%
 
 ---
@@ -28,7 +28,7 @@ Für die Verwendung von 3D-Assets in dynamischen Medien ist keine zusätzliche I
 
 ![Schuh in 3D](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
+<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
 ## Unterstützte 3D-Dateiformate in dynamischen Medien {#supported-three-d-file-formats-in-dm}
 
@@ -51,29 +51,30 @@ Informationen hierzu finden Sie unter [Konfigurieren der Cloud-Services für dyn
 
 1. **Hochladen von 3D-Assets**
 
-   * [Hochladen von 3D-Assets zur Verwendung in dynamischen Medien](/help/assets/add-assets.md#upload-assets).
-   * [Unterstützte 3D-Dateiformate zum Hochladen in dynamische Medien](#supported-three-d-file-formats-in-dm).
+   * [Hochladen von 3D-Assets zur Verwendung in dynamischen Medien](/help/assets/add-assets.md#upload-assets)
+   * [Unterstützte 3D-Dateiformate zum Hochladen in dynamische Medien](#supported-three-d-file-formats-in-dm)
 
 1. **Verwalten von 3D-Assets**
 
    * Organisieren und Suchen von 3D-Assets
 
-      * [Organisieren digitaler Assets](/help/assets/organize-assets.md).
-      * [Durchsuchen von 3D-Assets](/help/assets/search-assets.md).
+      * [Organisieren digitaler Assets](/help/assets/organize-assets.md)
+      * [Durchsuchen von 3D-Assets](/help/assets/search-assets.md)
    * Ansicht 3D-Assets
 
-      * [Anzeigen und Interagieren mit 3D-Assets](#viewing-three-d-assets).
-      * [Verwalten der Viewer-Vorgabe](/help/assets/dynamic-media/managing-viewer-presets.md)für Dimensionen
+      * [Anzeigen und Interagieren mit 3D-Assets](#viewing-three-d-assets)
+      * [Verwalten der Viewer-Vorgabe für Dimensionen](/help/assets/dynamic-media/managing-viewer-presets.md)
    * Arbeiten mit 3D-Asset-Metadaten
 
-      * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-digital-assets.md#editing-properties).
-      * [Metadatenschemata](/help/assets/metadata-schemas.md).
+      * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-digital-assets.md#editing-properties)
+      * [Metadatenschemata](/help/assets/metadata-schemas.md)
 
 
 
 1. **Veröffentlichen von 3D-Assets**
 
-   * [Veröffentlichen von 3D-Assets für dynamische Medien](#publishing-three-d-assets)
+   * [Veröffentlichen von statischen 3D-Assets für dynamische Medien](#publishing-three-d-assets)
+   * [Alternative Methoden zum Veröffentlichen von 3D-Assets für dynamische Medien mit dem Dimensions-Viewer](#alternate-publish-methods)
 
 ## Informationen zum Anzeigen und Arbeiten mit 3D-Assets {#viewing-three-d-assets}
 
@@ -93,17 +94,17 @@ Darüber hinaus sind die Funktionen des Client-Computers, wie eine Workstation, 
 >
 >Sie können die Viewer-Vorgabe &quot;Größe&quot;im Viewer-Vorgabeneditor öffnen, um die Navigation in einem 3D-Asset zu praktizieren, ohne dass zuvor 3D-Dateien hochgeladen werden müssen. Die Viewer-Vorgabe &quot;Größe&quot;verfügt über ein integriertes 3D-Asset, mit dem Sie interagieren können.
 >
->See [Managing viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+>See [Managing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
 ## Anzeigen und Interagieren mit einem 3D-Asset auf der Seite mit den Asset-Details {#viewing-three-d-assets-from-asset-details-page}
 
-Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-media/previewing-assets.md).
+Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche.](/help/assets/dynamic-media/previewing-assets.md)
 
 **So können Sie ein 3D-Asset über die Seite mit den Asset-Details Ansicht und damit interagieren**
 
 1. Laden Sie 3D-Assets in AEM hoch.
 
-   Siehe [Hochladen von 3D-Assets zur Verwendung in dynamischen Medien](/help/assets/add-assets.md#upload-assets).
+   Siehe [Hochladen von 3D-Assets zur Verwendung in dynamischen Medien.](/help/assets/add-assets.md#upload-assets)
 
 1. Tippen Sie in AEM auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets > Dateien]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
@@ -134,9 +135,9 @@ Wenn sich eine Webseite im **[!UICONTROL Bearbeitungsmodus befindet]** , ist kei
 
 >[!IMPORTANT]
 >
->Sie können diese Aufgabe erst ausführen, nachdem Sie einer Webseite eine 3D-Medienkomponente hinzugefügt und der Komponente ein 3D-Asset zugewiesen haben. Siehe [Hinzufügen der 3D-Medienkomponente zu einer Webseite](#adding-the-three-d-media-component-to-a-web-page) und [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente](#assigning-a-three-d-asset-to-the-component).
+>Sie können diese Aufgabe erst ausführen, nachdem Sie einer Webseite eine 3D-Medienkomponente hinzugefügt und der Komponente ein 3D-Asset zugewiesen haben. Siehe [Hinzufügen der 3D-Medienkomponente zu einer Webseite](#adding-the-three-d-media-component-to-a-web-page) und [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente.](#assigning-a-three-d-asset-to-the-component)
 
-Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-media/previewing-assets.md).
+Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche.](/help/assets/dynamic-media/previewing-assets.md)
 
 **So erstellen Sie eine Ansicht und Interaktion mit einem 3D-Asset innerhalb einer 3D-Medienkomponente**
 
@@ -194,7 +195,7 @@ Dynamische Medien enthalten eine Komponente für dynamische Medien mit 3D-Medien
 
 Wenn Sie Adobe Experience Manager als Web-Content-Management-System verwenden, können Sie Ihren Webseiten mithilfe der 3D-Medienkomponente 3D-Elemente hinzufügen.
 
-See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+See also [Adding Dynamic Media assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 1. Öffnen Sie AEM-Sites und wählen Sie die Webseite aus, der Sie die Komponente für dynamische Medien-3D-Medien hinzufügen möchten.
 1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Stellen Sie sicher, dass rechts oben auf der Seite der **[!UICONTROL Bearbeitungsmodus]** ausgewählt ist.
@@ -211,7 +212,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 
 Sie können der Komponente jetzt ein 3D-Asset zuweisen.
 
-Siehe [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente](#assigning-a-three-d-asset-to-the-component).
+Siehe [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente.](#assigning-a-three-d-asset-to-the-component)
 
 ### Optional - Konfigurieren der 3D-Medienkomponente {#configuring-the-three-d-component}
 
@@ -230,7 +231,7 @@ Siehe [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente](#assigning-a-three
 
 Nachdem Sie einer Webseite eine 3D-Medienkomponente hinzugefügt haben, können Sie ihr ein 3D-Asset zuweisen.
 
-See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
+See [Adding the 3D Media component to a web page.](#adding-the-three-d-media-component-to-a-web-page)
 
 1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.
 1. Wählen Sie in der Dropdown-Liste &quot; **[!UICONTROL 3D]** &quot;aus, um nur 3D-Asset-Dateitypen anzuzeigen.
@@ -247,17 +248,17 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 
 Dynamische Medien akzeptieren eine Vielzahl von 3D-Dateiformaten, die in dynamischen Medien als *statische Inhalte* unterstützt werden. Statischer Inhalt bedeutet, dass Sie 3D-Assets hochladen und veröffentlichen können. *Dynamische* Bildbearbeitung oder Bildbearbeitung, die mit dem 3D-Asset verknüpft sind, werden jedoch nicht unterstützt. Der Grund dafür ist, dass Dynamic Media Imaging Server keine 3D-Formate erkennt. Nach der Veröffentlichung eines 3D-Assets in dynamischen Medien haben Sie daher eine sofortige URL, die Sie kopieren können. Die URL für das 3D-Asset entspricht der üblichen URL-Struktur für dynamische Medien. Im Gegensatz zu herkömmlichen Bild-Assets in dynamischen Medien können Sie jedoch keine Parameter in der URL des Assets bearbeiten.
 
-See also [Obtaining a URL for a static asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
+See also [Obtaining a URL for a static asset.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 In der Ansicht **[!UICONTROL &quot;]** Karte&quot;wird ein kleines Globussymbol direkt unter dem Namen eines Assets sowie links neben dem Datum und der Uhrzeit angezeigt, um anzugeben, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
 Wenn Sie AEM als WCM verwenden, verwenden Sie diese Veröffentlichungsmethode, um die 3D-Elemente für dynamische Medien direkt auf Ihrer Webseite hinzuzufügen.
 
-See also [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+See also [Publishing Dynamic Media assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
-Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+Siehe auch [Veröffentlichen von Seiten.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
-**So veröffentlichen Sie 3D-Assets für dynamische Medien**
+**So veröffentlichen Sie statische 3D-Assets für dynamische Medien**
 
 1. Öffnen Sie ein 3D-Asset (Dateiformat GLB, OBJ oder STL), um es auf der Seite mit den Asset-Details Ansicht.
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
@@ -284,8 +285,8 @@ Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von 3D-Dynamisc
 
 * **[!UICONTROL URL]** - Verwenden Sie die **[!UICONTROL URL]** , wenn Sie ein Drittanbieter-Web-Content-Management-System verwenden und mit dem Dimensions-Viewer dynamische Medien-3D-Assets mit Ihren Webseiten verknüpfen möchten.
 
-   Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+   See [Linking URLs to your web application.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
 * **[!UICONTROL Einbetten]** - Verwenden Sie &quot; **[!UICONTROL Einbetten]** &quot;, wenn Sie ein auf einer Webseite eingebettetes dynamisches Media 3D-Asset mit dem Dimensions-Viewer Ansicht haben möchten. Kopieren Sie den Einbettungscode in die Zwischenablage, damit Sie ihn in Ihre Webseiten einfügen können. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
-   Siehe [Einbetten des Video-, Bild- oder Dimensionsviewers in dynamische Medien auf einer Webseite](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+   Siehe [Einbetten des Videos für dynamische Medien, des Bild-Viewers oder des Dimensions-Viewers auf einer Webseite.](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
