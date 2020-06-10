@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -18,9 +18,9 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## Neue Funktionen in AEM Sites {#aem-sites}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für AEM-Sites in AEM als Cloud-Service-Version 2020.6.0.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für AEM Sites in Version 2020.6.0 von AEM as a Cloud Service.
 
 ### Neuerungen {#whats-new-2020.6.0}
 
