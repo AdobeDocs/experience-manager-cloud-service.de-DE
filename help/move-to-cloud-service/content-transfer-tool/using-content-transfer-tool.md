@@ -1,210 +1,211 @@
 ---
-title: Verwenden des Inhaltsübertragungstools
-description: Verwenden des Inhaltsübertragungstools
+title: Verwenden des Content Transfer-Tools
+description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 3%
+source-wordcount: '1543'
+ht-degree: 88%
 
 ---
 
 
-# Verwenden des Inhaltsübertragungstools {#using-content-transfer-tool}
+# Verwenden des Content Transfer-Tools {#using-content-transfer-tool}
 
-## Wichtige Überlegungen zur Verwendung des Inhaltsübermittlungstools {#pre-reqs}
+## Wichtige Überlegungen zur Verwendung des Content Transfer-Tools {#pre-reqs}
 
-Befolgen Sie den folgenden Abschnitt, um die wichtigen Überlegungen beim Ausführen des Content Transfer-Tools zu verstehen:
+Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools:
 
-* Die Mindestsystemanforderung für das Content Transfer Tool ist AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Inhalts-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
+* Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
 
-* Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung auf Version vom 29. Mai 2020 oder höher aktualisiert wird. Wenn Sie eine *Produktions-Umgebung* verwenden, wird diese automatisch aktualisiert.
+* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
-* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und zur Verwaltungsgruppe in der Cloud-Dienstinstanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
+* Um das Inhaltsübermittlungstool verwenden zu können, müssen Sie Administrator-Benutzer auf Ihrer Quellinstanz sein und zur AEM-Administratorgruppe in der Cloud-Dienstinstanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
 
-* Während der Extraktion wird das Content Transfer Tool auf einer aktiven AEM-Quellinstanz ausgeführt.
+* Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
-* Die *Ingestion-Phase* für den Autor wird die gesamte Autorenbereitstellung reduzieren. Das bedeutet, dass der Autor AEM während des gesamten Erfassungsvorgangs nicht verfügbar ist.
+* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar.
 
 ## Verfügbarkeit {#availability}
 
-Das Content Transfer Tool kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager auf der Quell-Instanz von Adobe Experience Manager (AEM) installieren.
+Das Content Transfer Tool kann als ZIP-Datei (Content Transfer Tool v1.0.0) vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Laden Sie das Content Transfer Tool von [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)herunter.
+>Laden Sie das Content Transfer Tool vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)herunter.
 
-## Ausführen des Inhaltsübermittlungstools {#running-tool}
+## Ausführen des Content Transfer-Tools {#running-tool}
 
-In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte als Cloud-Dienst (Autor/Veröffentlichen) in AEM migrieren:
+In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
-1. Wählen Sie Adobe Experience Manager und navigieren Sie zu Tools -> **Vorgänge** -> **Inhaltsübertragung**.
+1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu Tools > **Vorgänge** > **Inhaltstransfer**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Klicken Sie auf &quot;Migrationsset **erstellen&quot;** , um einen neuen Migrationssatz zu erstellen. Die Details zum **Content Migrations-Set werden angezeigt** .
+1. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen. Die **Details zum Inhaltsmigrationssatz** werden angezeigt.
 
    >[!NOTE]
-   >Sie werden die vorhandenen Migrationssets auf diesem Bildschirm mit ihrem aktuellen Status Ansicht.
+   >Auf diesem Bildschirm sehen Sie die vorhandenen Migrationssätze mit ihrem aktuellen Status.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-1. Füllen Sie die Felder im Bildschirm **Inhaltsmigrationsset-Details** aus, wie nachfolgend beschrieben.
+1. Füllen Sie die Felder im Bildschirm **Details zum Inhaltsmigrationssatz** aus, wie nachfolgend beschrieben.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
 
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
-      >Für den Migrationssatznamen sind keine Sonderzeichen zulässig.
+      >Beim Namen des Migrationssatzes sind keine Sonderzeichen zulässig.
 
-   1. **Cloud-Dienstkonfiguration**: Geben Sie das Ziel AEM als URL für den Autor des Cloud-Dienstes ein.
-
-      >[!NOTE]
-      >Sie können während der Aktivität der Inhaltsübertragung maximal vier Migrationssätze gleichzeitig erstellen und verwalten.
-      >Darüber hinaus müssen Sie eine Migration für jede der spezifischen Umgebung - *Phase*, *Entwicklung* oder *Produktion*- separat erstellen.
-
-   1. **Zugriffstoken**: Geben Sie das Zugriffstoken ein.
+   1. **Cloud Service-Konfiguration**: Geben Sie die Ziel-URL der Autoreninstanz von AEM as a Cloud Service an.
 
       >[!NOTE]
-      >Sie können das Zugriffstoken aus der Autoreninstanz abrufen, indem Sie zu navigieren `/libs/granite/migration/token.json`. Das Zugriffstoken wird aus der Autoreninstanz des Cloud-Dienstes abgerufen.
+      >Sie können während der Inhaltstransferaktivität maximal vier Migrationssätze gleichzeitig erstellen und verwalten.
+      >Darüber hinaus müssen Sie für jede der spezifischen Umgebungen – *Staging*, *Entwicklung* und *Produktion* – eine separate Migration erstellen.
+
+   1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
+
+      >[!NOTE]
+      >Sie können das Zugriffs-Token aus der Autoreninstanz abrufen, indem Sie zu `/libs/granite/migration/token.json` navigieren. Das Zugriffstoken wird aus der Autoreninstanz des Cloud-Dienstes abgerufen.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
-      1. **Version** einschließen: Wählen Sie die gewünschte Option aus.
+      1. **Version einschließen**: Aktivieren Sie die Option.
 
-      1. **Einzuschließende** Pfade: Verwenden Sie den Pfadbrowser, um Pfade auszuwählen, die migriert werden müssen.
+      1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen.
 
          >[!IMPORTANT]
-         >Folgende Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
+         >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
          >* `/apps`
          >* `/libs`
          >* `/home`
          >* `/etc`
 
 
-1. Klicken Sie auf **Speichern** , nachdem Sie alle Felder im Anzeigebereich &quot; **Inhaltsmigrationsset-Details** &quot;ausgefüllt haben.
+1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Details zum Inhaltsmigrationssatz** ausgefüllt haben.
 
-1. Sie werden den Migrationssatz auf der Seite *Übersicht* Ansicht.
+1. Der Migrationssatz erscheint auf der Seite *Übersicht*.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
 
-   Alle auf diesem Bildschirm vorhandenen Migrationssets werden auf der Seite *Übersicht* mit ihren aktuellen Status- und Statusinformationen angezeigt.
+   Alle auf diesem Bildschirm vorhandenen Migrationssätze werden auf der Seite *Übersicht* mit ihren aktuellen Statusinformationen angezeigt.
 
-   * Eine *rote Cloud* bedeutet, dass Sie den Extraktion-Vorgang nicht abschließen können.
-   * Eine *grüne Cloud* bedeutet, dass Sie den gesamten Vorgang der Extraktion abschließen können.
+   * Eine *rote Wolke* bedeutet, dass Sie den Extraktionsvorgang nicht abschließen können.
+   * Eine *grüne Wolke* bedeutet, dass Sie den Extraktionsvorgang abschließen können.
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
-1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Migrationssatzeigenschaften Ansicht oder zu bearbeiten.
+1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Migrationssatzeigenschaften anzuzeigen oder zu bearbeiten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
 
-### Extraktion bei der Inhaltsübertragung {#extraction-process}
+### Extraktionsvorgang beim Inhaltstransfer {#extraction-process}
 
-Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
+Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool zu extrahieren:
 
-1. Wählen Sie auf der Seite &quot; *Übersicht* &quot;einen Migrationssatz aus und klicken Sie auf Extraktion &quot;Zu Beginn **extrahieren** &quot;.
+1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. Das Dialogfeld &quot; **Migrationsset-Extraktion** &quot;wird angezeigt und Sie klicken auf &quot; **Extrahieren** &quot;, um die Extraktion abzuschließen.
+1. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktion abzuschließen.
 
    >[!NOTE]
    >Sie haben die Möglichkeit, Staging-Container während der Extraktion zu überschreiben.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. Im Feld &quot; **EXTRAKTION** &quot;wird jetzt der Status &quot; **AUSFÜHREN** &quot;für die Extraktion angezeigt, die derzeit ausgeführt wird.
+1. Im Feld **EXTRAKTION** wird jetzt der Status **WIRD AUSGEFÜHRT** für die Extraktion angezeigt, die derzeit ausgeführt wird.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
 
-   Sobald die Extraktion abgeschlossen ist, wird der Status des Migrationssatzes auf **FINISHED** aktualisiert und unter dem Feld &quot; *INFO* &quot;wird ein **grünes** Cloud-Symbol angezeigt.
+   Sobald die Extraktion abgeschlossen ist, wird der Status des Migrationssatzes auf **BEENDET** aktualisiert und unter dem Feld *INFO* wird ein **grünes** Wolkensymbol angezeigt.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   >Sie müssen die Seite aktualisieren, um den aktualisierten Status Ansicht.
+   >Sie müssen die Seite aktualisieren, um den aktualisierten Status anzuzeigen.
    >Wenn die Extraktion gestartet wird, wird die Schreibsperre erstellt und nach *60 Sekunden* freigegeben. Wenn also eine Extraktion gestoppt wird, müssen Sie eine Minute warten, bis die Sperre freigegeben wird, bevor Sie die Extraktion erneut starten.
 
-#### Extraktion oben {#top-up-extraction-process}
+#### Auffüllextraktion {#top-up-extraction-process}
 
-Das Inhaltsübermittlungstool verfügt über eine Funktion, mit der das Aufstocken von differenziellen Inhalten unterstützt wird, wenn nur Änderungen übertragen werden können, die seit der vorherigen Aktivität der Inhaltsübertragung vorgenommen wurden.
+Das Content Transfer-Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->Nach der ersten Inhaltsübertragung wird empfohlen, häufig differenzielle Inhaltsaufstockungen durchzuführen, um die Einfrierzeit für die endgültige Übertragung von differenziellen Inhalten zu verkürzen, bevor Sie mit Cloud Service live gehen.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
 
-Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Top-up-Extraktion übertragen. Führen Sie dazu folgende Schritte durch:
+Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen. Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zur Seite &quot; *Übersicht* &quot;und wählen Sie den Migrationssatz aus, für den Sie die Top-up-Extraktion durchführen möchten.
+1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllextraktion durchführen möchten.
 
-1. Klicken Sie auf **Extrahieren** , um die Extraktion oben Beginn.
+1. Klicken Sie auf **Extrahieren**, um die Auffüllextraktion zu starten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
 
-1. Das Dialogfeld &quot;Extraktion **des Migrationssatzes** &quot;wird angezeigt.
+1. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt.
 
    >[!IMPORTANT]
-   >Sie sollten den Staging-Container **überschreiben während der Extraktion** deaktivieren.
+   >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
 
-### Einbettungsvorgang bei der Inhaltsübertragung {#ingestion-process}
+### Aufnahmevorgang beim Inhaltstransfer {#ingestion-process}
 
-Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu erfassen:
+Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool aufzunehmen:
 
-1. Wählen Sie auf der Seite &quot; *Übersicht* &quot;einen Migrationssatz aus und klicken Sie auf &quot;Zu Beginn-Extraktion **aufnehmen** &quot;.
+1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. Das Dialogfeld **Erfassung** des Migrationssatzes wird angezeigt.
+1. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
 
-   Zu Demonstrationszwecken ist die Option Inhalt in Autoreninstanz **aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig zu erstellen und zu veröffentlichen.
+   Zu Demonstrationszwecken ist die Option **Inhalt in Autoreninstanz aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
 
-   Klicken Sie auf **Erfassen** , um die Aufnahmephase abzuschließen.
+   Klicken Sie auf **Aufnehmen**, um die Aufnahmephase abzuschließen.
 
-1. Sobald die Erfassung abgeschlossen ist, wird der Status im Feld **AUTHOR INGESTION** auf **FINISHED** aktualisiert und unter dem **INFO**wird ein grünes Cloud-Symbol angezeigt.
+1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME IN AUTOR** in **BEENDET** aktualisiert und unter **INFO** wird ein grünes Wolkensymbol angezeigt.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
 
    >[!NOTE]
-   > Sie müssen die Seite aktualisieren, um den aktualisierten Status Ansicht.
+   > Sie müssen die Seite aktualisieren, um den aktualisierten Status anzuzeigen.
 
-#### Aufnahme nach oben {#top-up-ingestion-process}
+#### Auffüllaufnahme {#top-up-ingestion-process}
 
-Das Inhaltsübermittlungstool verfügt über eine Funktion, mit der Differenzialinhalte *überholt* werden können, wenn nur Änderungen übertragen werden können, die seit der vorherigen Aktivität der Inhaltsübertragung vorgenommen wurden.
+Das Content Transfer-Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->Nach der ersten Inhaltsübertragung wird empfohlen, häufig differenzielle Inhaltsaufstockungen durchzuführen, um die Einfrierzeit für die endgültige Übertragung von differenziellen Inhalten zu verkürzen, bevor Sie mit Cloud Service live gehen.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
 
-Nachdem der Erfassungsvorgang abgeschlossen ist, können Sie Delta-Inhalte verwenden, indem Sie die Erfassungsmethode verwenden. Führen Sie dazu folgende Schritte durch:
+Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllaufnahme übertragen. Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zur Seite &quot; *Übersicht* &quot;und wählen Sie den Migrationssatz aus, für den Sie die Erfassung nach oben durchführen möchten.
+1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten.
 
-1. Klicken Sie auf **Erfassen** , um die Extraktion oben Beginn.
+1. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
 
-1. Das Dialogfeld &quot; **Integration** des Migrationssatzes&quot;wird angezeigt.
+1. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
 
    >[!NOTE]
-   >Sie sollten die Option &quot; *Wischen* &quot;deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird.
+   >Sie sollten die Option *Löschen* deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird.
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
 
-Auf der Seite &quot; *Übersicht* &quot;können Sie Protokolle für einen vorhandenen Migrationssatz erstellen.
+Auf der Seite *Übersicht* können Sie die Protokolle für einen vorhandenen Migrationssatz anzeigen.
 Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zur Seite *Übersicht* , wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Ansichten-Protokoll** .
+1. Navigieren Sie zur Seite *Übersicht*, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Protokoll anzeigen**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
-1. Das Dialogfeld **Protokolle** wird angezeigt. Klicken Sie auf **Extraktion Logs** , um die Protokolle in einer neuen Registerkarte Ansicht.
+1. Das Dialogfeld **Protokolle** wird angezeigt. Klicken Sie auf **Extraktionsprotokolle**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)or,
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
+Oder:
 
-   Sie können auch Protokolle für die Ansicht Ihres Migrationssatzes im Anzeigebereich &quot; *Übersicht* &quot;erstellen. Wählen Sie den Migrationssatz aus und klicken Sie unter &quot; **EXTRAKTION** &quot;auf den Status. Klicken Sie in diesem Fall auf **FERTIG** , um Ansichten in einer neuen Registerkarte anzuzeigen.
+   Sie können die Protokolle für Ihren Migrationssatz auch über den Bildschirm *Übersicht* anzeigen. Wählen Sie den Migrationssatz aus und klicken Sie unter **EXTRAKTION** auf den Status. Klicken Sie in diesem Fall auf **FERTIG**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
@@ -213,11 +214,11 @@ Führen Sie dazu folgende Schritte durch:
 Sie können den Migrationssatz auf der Seite *Übersicht* löschen.
 Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zur Seite *Übersicht* , wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Löschen** .
+1. Navigieren Sie zur Seite *Übersicht*, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Löschen**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. Klicken Sie auf **Löschen** aus **Löschen des Migrationssatzes** , um den Löschvorgang zu bestätigen.
+1. Klicken Sie im Dialogfeld **Migrationssatz löschen** auf **Löschen**, um den Löschvorgang zu bestätigen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
@@ -225,15 +226,15 @@ Führen Sie dazu folgende Schritte durch:
 
 ### Fehlende Blob-IDs {#missing-blobs}
 
-Wenn, wie unten erwähnt, fehlende Blob-IDs gemeldet werden, müssen Sie eine Konsistenzprüfung im vorhandenen Repository durchführen und die fehlenden Blobs wiederherstellen.
+Wenn, wie unten erwähnt, fehlende Blob-IDs gemeldet werden, müssen Sie eine Konsistenzprüfung im bestehenden Repository durchführen und die fehlenden Blobs wiederherstellen.
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
 
 Der folgende Befehl wird ausgeführt
 
 >[!NOTE]
-> `--verbose` -Flag erforderlich ist, um die Knotenpfade zu melden, von denen aus auf die Blobs verwiesen wird.
+> `--verbose` -Markierung ist erforderlich, um die Knotenpfade zu melden, von denen aus auf die Blobs verwiesen wird.
 
-**Für Repositorys AEM 6.5 (Oak 1.8 und höher)**
+**Für Repositorys AEM 6.5 (Oak 1.8 und älter)**
 
 ```shell
 java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds] <DATASTORE_CFG> --verbose <OUT_DIR> --dump
@@ -245,19 +246,19 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Weitere Informationen finden Sie unter [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) .
+Weitere Informationen finden Sie unter [Ausführbare Jar für Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
-Die Dateien, die in der oben angegebenen *OUT_DIR* erstellt wurden, um Konsistenz zu gewährleisten, können dann auf Pfade überprüft werden, bei denen Binärdateien fehlen und geeignete Maßnahmen ergriffen werden, wie z. B. Wiederherstellung aus einer Sicherung, Löschen der Pfade, Neuindizierung usw.
+Die Dateien, die im oben angegebenen Verzeichnis *OUT_DIR* erstellt wurden, um Konsistenz zu gewährleisten, können dann auf Pfade ohne Binärdateien überprüft werden. Anschließend können geeignete Maßnahmen ergriffen werden, wie das Wiederherstellen aus einer Sicherung, das Löschen der Pfade, die Neuindizierung usw.
 
 ### Verhalten der Benutzeroberfläche {#ui-behavior}
 
-Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in der Benutzeroberfläche (UI) für das Content Transfer Tool:
+Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in der Benutzeroberfläche für das Content Transfer-Tool:
 
-* Der Benutzer erstellt einen Migrationssatz für eine Autor-URL (Entwicklung/Stage/Produktion) und führt erfolgreich Extraktion und Erfassung durch.
+* Der Benutzer erstellt einen Migrationssatz für eine Autoren-URL (Entwicklung/Staging/Produktion) und führt Extraktion und Aufnahme erfolgreich durch.
 
-* Der Benutzer erstellt dann einen neuen Migrationssatz für dieselbe Autor-URL und führt Extraktion und Erfassung für den neuen Migrationssatz durch. Die Benutzeroberfläche zeigt an, dass der Erfassungsstatus des ersten Migrationssatzes auf &quot; **FEHLGESCHLAGEN** &quot;geändert wird und keine Protokolle verfügbar sind.
+* Der Benutzer erstellt dann einen neuen Migrationssatz für dieselbe Autoren-URL und führt Extraktion und Aufnahme für den neuen Migrationssatz durch. Die Benutzeroberfläche zeigt an, dass sich der Aufnahmestatus des ersten Migrationssatzes in **FEHLGESCHLAGEN** ändert und keine Protokolle verfügbar sind.
 
-* Dies bedeutet nicht, dass die Erfassung für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten wird angezeigt, da beim Starten eines neuen Erfassungsauftrags der vorherige Erfassungsauftrag gelöscht wird. Daher sollte der Änderungsstatus für den ersten Migrationssatz ignoriert werden.
+* Dies bedeutet nicht, dass die Aufnahme für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten tritt auf, weil beim Starten eines neuen Aufnahmevorgangs der vorherige Aufnahmevorgang gelöscht wird. Daher sollte der Änderungsstatus des ersten Migrationssatzes ignoriert werden.
 
 * Die Symbole in der Benutzeroberfläche des Inhaltsübermittlungstools können sich von den in diesem Handbuch gezeigten Screenshots unterscheiden oder je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt werden.
 
