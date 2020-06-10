@@ -2,10 +2,10 @@
 title: CDN in AEM als Cloud-Dienst
 description: CDN in AEM als Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 95%
+source-wordcount: '889'
+ht-degree: 80%
 
 ---
 
@@ -31,20 +31,22 @@ Nachfolgend finden Sie eine Entscheidungsmatrix zum Vergleich der beiden Optione
 | **Voraussetzungen** | Keine | Vorhandenes CDN, das nur schwer zu ersetzen ist. Vor der Live-Schaltung muss ein erfolgreicher Belastungstest durchgeführt werden. |
 | **CDN-Kompetenz** | Keine | Benötigt mindestens eine technische Teilzeitressource mit detailliertem CDN-Wissen, die das CDN des Kunden konfigurieren kann. |
 | **Sicherheit** | Verwaltet von Adobe. | Verwaltet von Adobe (und optional vom Kunden bei seinem eigenen CDN). |
-| **Leistung** | Optimiert von Adobe. | Profitiert von einigen AEM-CDN-Funktionen, aber möglicherweise kleiner Leistungseinbruch aufgrund des zusätzlichen Wechsels. **Hinweis**: Hops vom Kunden-CDN bis zum Adobe-Out-of-the-Box-CDN (wahrscheinlich effizient). |
+| **Leistung** | Optimiert von Adobe. | Profitiert von einigen AEM-CDN-Funktionen, aber möglicherweise kleiner Leistungseinbruch aufgrund des zusätzlichen Wechsels. **Hinweis**: Wechsel vom Kunden-CDN zum vorkonfigurierten CDN von Adobe sind wahrscheinlich effizient). |
 | **Caching** | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. |
 | **Funktionen zur Bild- und Videokomprimierung** | Kann mit Adobe Dynamic Media verwendet werden. | Kann mit Adobe Dynamic Media oder einer kundenverwalteten CDN-Bild-/Videolösung verwendet werden. |
 
 ## AEM-verwaltetes CDN {#aem-managed-cdn}
 
-Die Vorbereitung der Inhaltsbereitstellung mithilfe des vorkonfigurierten CDN von Adobe ist einfach, wie nachfolgend beschrieben:
+Führen Sie folgende Schritte aus, um sich auf den Content Versand vorzubereiten, indem Sie das vordefinierte CDN von Adobe verwenden:
 
 1. Sie stellen Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen teilen. Koordinieren Sie diese Aufgabe mit dem Support.
    **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate.
 1. Sie sollten den Support informieren:
-   * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert.
+   * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
    * wenn eine IP-Whitelist erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
-1. Der Support koordiniert dann mit Ihnen den Zeitpunkt für einen CNAME-DNS-Eintrag und verweist dessen FQDN auf `cdn.adobeaemcloud.com`.
+1. Sie sollten sich mit dem Kundensupport abstimmen, wann die erforderlichen Änderungen an den DNS-Datensätzen vorgenommen werden. Die Anweisungen unterscheiden sich je nach Bedarf:
+   * Wenn kein Beispieldatensatz benötigt wird, sollten Kunden den CNAME-DNS-Datensatz so einstellen, dass er auf den FQDN verweist `cdn.adobeaemcloud.com`.
+   * Wenn ein Beispieldatensatz benötigt wird, erstellen Sie einen A-Datensatz, der auf die folgenden IPs verweist: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Kunden benötigen einen ex Record, wenn der gewünschte FQDN mit der DNS-Zone übereinstimmt. Dies kann mithilfe des UNIX-Befehls dig getestet werden, um zu sehen, ob der SOA-Wert der Ausgabe mit der Domäne übereinstimmt. Der Befehl `dig anything.dev.adobeaemcloud.com` gibt beispielsweise eine SOA (den Beginn der Behörde, d. h. die Zone) zurück, `dev.adobeaemcloud.com` sodass es kein APEX-Datensatz gibt, während eine SOA zurückgegeben wird, `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` sodass es sich um einen Apex-Datensatz handelt.
 1. Sie werden benachrichtigt, wenn SSL-Zertifikate ablaufen, damit Sie neue SSL-Zertifikate senden können.
 
 **Beschränken des Traffic**
