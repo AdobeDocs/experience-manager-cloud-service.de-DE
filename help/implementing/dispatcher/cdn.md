@@ -2,10 +2,10 @@
 title: CDN in AEM als Cloud-Dienst
 description: CDN in AEM als Cloud-Dienst
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 80%
+source-wordcount: '646'
+ht-degree: 42%
 
 ---
 
@@ -14,37 +14,18 @@ ht-degree: 80%
 
 AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert.
 
-AEM bietet zwei Optionen an:
-
-1. AEM-verwaltetes CDN – Das vorkonfigurierte CDN von AEM. Es handelt sich um eine eng integrierte Option, die keine umfangreichen Kundeninvestitionen zur Unterstützung der CDN-Integration mit AEM erfordert.
-1. Das vom Kunden verwaltete CDN verweist auf das AEM-verwaltete CDN – der Kunde verweist sein eigenes CDN auf das vorkonfigurierte CDN von AEM. Der Kunde muss weiterhin sein eigenes CDN verwalten, aber die Investitionen in die Integration mit AEM sind gering.
-
-Die erste Option sollte die meisten Leistungs- und Sicherheitsanforderungen des Kunden erfüllen. Darüber hinaus erfordert sie minimalen Kundenaufwand.
-
-Die zweite Option ist von Fall zu Fall zulässig. Die Entscheidung basiert auf der Erfüllung bestimmter Voraussetzungen, insbesondere dass der Kunde eine Altintegration mit seinem CDN-Anbieter hat, die schwer aufzugeben ist.
-
-Nachfolgend finden Sie eine Entscheidungsmatrix zum Vergleich der beiden Optionen. Weitere Informationen finden Sie in den folgenden Abschnitten.
-
-| Details | AEM-verwaltetes CDN | Vom Kunden verwaltetes CDN verweist auf AEM-CDN |
-|---|---|---|
-| **Kundenaufwand** | Kein Aufwand, vollständig integriert. Nur CNAME muss auf AEM-verwaltetes CDN verweisen. | Moderate Kundeninvestition. Der Kunde muss sein eigenes CDN verwalten. |
-| **Voraussetzungen** | Keine | Vorhandenes CDN, das nur schwer zu ersetzen ist. Vor der Live-Schaltung muss ein erfolgreicher Belastungstest durchgeführt werden. |
-| **CDN-Kompetenz** | Keine | Benötigt mindestens eine technische Teilzeitressource mit detailliertem CDN-Wissen, die das CDN des Kunden konfigurieren kann. |
-| **Sicherheit** | Verwaltet von Adobe. | Verwaltet von Adobe (und optional vom Kunden bei seinem eigenen CDN). |
-| **Leistung** | Optimiert von Adobe. | Profitiert von einigen AEM-CDN-Funktionen, aber möglicherweise kleiner Leistungseinbruch aufgrund des zusätzlichen Wechsels. **Hinweis**: Wechsel vom Kunden-CDN zum vorkonfigurierten CDN von Adobe sind wahrscheinlich effizient). |
-| **Caching** | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. | Unterstützt Cache-Kopfzeilen, die auf den Dispatcher angewendet werden. |
-| **Funktionen zur Bild- und Videokomprimierung** | Kann mit Adobe Dynamic Media verwendet werden. | Kann mit Adobe Dynamic Media oder einer kundenverwalteten CDN-Bild-/Videolösung verwendet werden. |
+Das von AEM verwaltete CDN wird die meisten Leistungs- und Sicherheitsanforderungen des Kunden erfüllen. Kunden können optional von ihrem eigenen CDN aus darauf verweisen, das sie verwalten müssen. Dies ist von Fall zu Fall zulässig, wenn bestimmte Voraussetzungen erfüllt sind, unter anderem wenn der Kunde eine veraltete Integration mit seinem CDN-Anbieter hat, die schwer aufzugeben ist.
 
 ## AEM-verwaltetes CDN {#aem-managed-cdn}
 
 Führen Sie folgende Schritte aus, um sich auf den Content Versand vorzubereiten, indem Sie das vordefinierte CDN von Adobe verwenden:
 
-1. Sie stellen Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen teilen. Koordinieren Sie diese Aufgabe mit dem Support.
+1. Stellen Sie Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen freigeben. Koordinieren Sie diese Aufgabe mit dem Support.
    **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate.
-1. Sie sollten den Support informieren:
+1. Informieren Sie den Kundensupport:
    * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
    * wenn eine IP-Whitelist erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
-1. Sie sollten sich mit dem Kundensupport abstimmen, wann die erforderlichen Änderungen an den DNS-Datensätzen vorgenommen werden. Die Anweisungen unterscheiden sich je nach Bedarf:
+1. Koordinieren Sie sich mit dem Kundensupport über den Zeitpunkt der erforderlichen Änderungen an den DNS-Datensätzen. Die Anweisungen unterscheiden sich je nach Bedarf:
    * Wenn kein Beispieldatensatz benötigt wird, sollten Kunden den CNAME-DNS-Datensatz so einstellen, dass er auf den FQDN verweist `cdn.adobeaemcloud.com`.
    * Wenn ein Beispieldatensatz benötigt wird, erstellen Sie einen A-Datensatz, der auf die folgenden IPs verweist: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Kunden benötigen einen ex Record, wenn der gewünschte FQDN mit der DNS-Zone übereinstimmt. Dies kann mithilfe des UNIX-Befehls dig getestet werden, um zu sehen, ob der SOA-Wert der Ausgabe mit der Domäne übereinstimmt. Der Befehl `dig anything.dev.adobeaemcloud.com` gibt beispielsweise eine SOA (den Beginn der Behörde, d. h. die Zone) zurück, `dev.adobeaemcloud.com` sodass es kein APEX-Datensatz gibt, während eine SOA zurückgegeben wird, `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` sodass es sich um einen Apex-Datensatz handelt.
 1. Sie werden benachrichtigt, wenn SSL-Zertifikate ablaufen, damit Sie neue SSL-Zertifikate senden können.
@@ -55,15 +36,13 @@ Standardmäßig kann bei einem von Adobe verwalteten CDN-Setup der gesamte öffe
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
-Wird unterstützt, wenn Sie Ihr vorhandenes CDN verwenden möchten, die Anforderungen eines vom Kunden verwalteten CDN jedoch nicht erfüllen können. In diesem Fall verwalten Sie Ihr eigenes CDN, verweisen aber auf das von Adobe verwaltete CDN.
+Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf das von Adobe verwaltete CDN verweisen, sofern folgende Voraussetzungen erfüllt sind:
 
-Beachten Sie Folgendes:
-
-1. Sie müssen über ein bestehendes CDN verfügen.
-1. Sie müssen es verwalten.
-1. Sie müssen in der Lage sein, das CDN für die Verwendung mit AEM as a Cloud Service zu konfigurieren – siehe Konfigurationsanweisungen unten.
-1. Sie benötigen technische CDN-Experten, die im Falle von Problemen im Zusammenhang mit dem Projekt auf Anfrage zur Verfügung stehen.
-1. Sie müssen einen Belastungstest durchführen und erfolgreich bestehen, bevor Sie zur Produktion übergehen.
+* Der Kunde muss über ein vorhandenes CDN verfügen, das nur mit Mühe ersetzt werden kann.
+* Der Kunde muss es verwalten.
+* Der Kunde muss in der Lage sein, das CDN für die Verwendung mit AEM als Cloud-Dienst zu konfigurieren - siehe die Konfigurationsanweisungen unten.
+* Kunden müssen über technische CDN-Experten verfügen, die im Falle von Problemen im Zusammenhang mit dem Kundenservice jederzeit erreichbar sind.
+* Der Kunde muss vor der Produktion einen Lasttest durchführen und erfolgreich bestehen.
 
 Konfigurationsanweisungen:
 
@@ -73,3 +52,5 @@ Konfigurationsanweisungen:
 1. Legen Sie die `X-Edge-Key`-Variable fest, die erforderlich ist, um den Traffic korrekt an die AEM-Server zu leiten. Der Wert sollte von Adobe stammen.
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
+
+Beachten Sie, dass aufgrund des zusätzlichen Hosts möglicherweise ein kleiner Leistungseinbruch zu verzeichnen ist, auch wenn der Hopfen vom CDN des Kunden bis zum von Adobe verwalteten CDN wahrscheinlich effizient sein wird.
