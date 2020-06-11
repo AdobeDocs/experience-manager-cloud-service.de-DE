@@ -3,10 +3,10 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 95%
+source-wordcount: '1872'
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 #### Einschlussregeln für MIME-Typen {#mime-type-inclusion-rules}
 
-Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird dieses spezifische Ausgabeformat nicht für das Asset generiert („Blacklisting“).
+Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn diese Liste übereinstimmt, wird diese spezielle Darstellung nicht für das Asset generiert (blockierte Liste).
 
-Andernfalls wird der Mime-Typ mit dem eingeschlossenen Mime-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird das Ausgabeformat generiert („Whitelisting“).
+Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulässige Liste).
 
 #### Spezielle FPO-Ausgabe {#special-fpo-rendition}
 
@@ -175,6 +175,6 @@ Der Custom Workflow Runner Service (`com.adobe.cq.dam.processor.nui.impl.workflo
 
 Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbearbeitungs-Workflow verwendet werden kann, finden Sie unter [Workflow-Schritte im Nachbearbeitungs-Workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in der Entwicklerreferenz.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
-* Berücksichtigen Sie beim Entwerfen von Workflows Ihre Anforderungen für alle Darstellungsarten. Wenn Sie nicht vorhersehen, dass eine Darstellung in Zukunft erforderlich sein soll, entfernen Sie den Erstellungsschritt aus dem Workflow. Darstellungen können danach nicht mehr stapelweise gelöscht werden. Unerwünschte Darstellungen können nach längerer Nutzung von [!DNL Experience Manager]Daten viel Datenspeicherung in Anspruch nehmen. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie entweder anpassen, [!DNL Experience Manager] um bestimmte Darstellungen zu löschen, oder die Assets löschen und erneut hochladen.
+* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
