@@ -3,10 +3,10 @@ title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform) für die Metadatenverwaltung. Er wird von AEM als standardisiertes Format für die Erstellung, Verarbeitung und den Austausch von Metadaten verwendet.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 86%
 
 ---
 
@@ -132,11 +132,11 @@ Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png�
 
 ### Filtern von XMP-Metadaten {#filtering-xmp-metadata}
 
-AEM Assets unterstützt das Filtern von Eigenschaften/Knoten nach der Whitelist und der Blacklist für XMP-Metadaten, die von den Binärdateien des Elements gelesen und in JCR gespeichert werden, wenn Assets erfasst werden.
+AEM Assets unterstützt das Filtern von Eigenschaften/Knoten für XMP-Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden. Das Filtern ist über eine blockierte Liste und eine zulässige Liste möglich.
 
-Bei der Filterung nach der Blacklist können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn durch das Filtern nach der Blacklist eine große Anzahl von Assets mit vielen XMP-Metadaten importiert werden kann, kann es zu Stabilitätsproblemen bei AEM-Instanz/-Cluster kommen, zum Beispiel zu blockierten Beobachtungswarteschlangen.
+Beim Filtern mit einer gesperrten Liste können Sie alle XMP-Metadateneigenschaften mit Ausnahme der Eigenschaften importieren, die für den Ausschluss angegeben wurden. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn das Filtern mit einer blockierten Liste das Importieren einer großen Anzahl von Assets mit zahlreichen XMP-Metadaten ermöglicht, kann es zu Stabilitätsproblemen bei der AEM-Instanz/dem AEM-Cluster kommen, z. B. zu verstopften Beobachtungswarteschlangen.
 
-Dieses Problem lässt sich mit dem Whitelist-Filter für XMP-Metadaten lösen, mit dem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Blacklist-Filter hinzufügen.
+Das Filtern von XMP-Metadaten über die zulässige Liste löst dieses Problem, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Zur Abwärtskompatibilität können Sie einige dieser Eigenschaften zum Filter hinzufügen, der eine gesperrte Liste verwendet.
 
 >[!NOTE]
 >
@@ -144,16 +144,17 @@ Dieses Problem lässt sich mit dem Whitelist-Filter für XMP-Metadaten lösen, m
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Um die Filterfunktion nach Whitelist anzuwenden, klicken Sie auf **[!UICONTROL Whitelist auf XMP-Eigenschaften anwenden]** und geben Sie die Eigenschaften an, die in das Feld **[!UICONTROL XML-Namen aus Whitelist für XMP-Filterfunktion]** importiert werden sollen.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
-1. Um nach Anwendung des Whitelist-Filters die XMP-Eigenschaften aus der Blacklist herauszufiltern, geben Sie sie im Feld **[!UICONTROL XML-Namen aus Blacklist für XMP-Filterfunktion]** an.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Das heißt, das Filtern nach der Blacklist ist standardmäßig aktiviert. Um die Filterfunktion nach der Blacklist zu deaktivieren, deaktivieren Sie die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]**.
+   >Die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern mit einer blockierten Liste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
 1. Speichern Sie die Änderungen.
 
 >[!MORELIKETHIS]
 >
 >* [XMP-Spezifikation von Adobe](https://www.adobe.com/devnet/xmp.html)
+
