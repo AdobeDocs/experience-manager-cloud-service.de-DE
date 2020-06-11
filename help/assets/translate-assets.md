@@ -3,10 +3,10 @@ title: Erstellen und Verwalten digitaler Assets in mehreren Sprachen und Ausfüh
 description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2615'
-ht-degree: 100%
+source-wordcount: '2612'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ In Adobe Experience Manager (AEM) Assets sind mehrsprachige Assets in Ordnern en
 
 Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/dam/it` der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](#create-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
-Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die Sprach-Master-Vorlage. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
+Die Sprachkopie, für die Sie ursprünglich Assets hinzugefügt haben, ist die Hauptsprache. Die Hauptsprache ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
 ```shell
 /content
@@ -71,9 +71,9 @@ Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die Sprach-M
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie */content/dam/en*. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](#create-a-language-root) korrekt konfiguriert ist.
+1. Erstellen Sie den Stamm der Sprache Ihrer Primärsprache. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](#create-a-language-root) korrekt konfiguriert ist.
 
-1. Fügen Sie Assets zu Ihrer Sprach-Master-Vorlage hinzu.
+1. Hinzufügen Assets in Ihre Sprachprimärsprache.
 1. Erstellen Sie den Sprachstamm der jeweiligen Zielsprache, für die Sie eine Sprachkopie benötigen.
 
 ### Erstellen eines Sprachstamms {#create-a-language-root}
@@ -82,7 +82,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie ei
 
 Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Assetknotens im Repository verwendet und bestimmt daher den Pfad des Assets. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
-1. Tippen/Klicken Sie in der Assets-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie im Menü die Option **[!UICONTROL Ordner]** aus.
+1. Tippen/klicken Sie in der Assets-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie im Menü die Option **[!UICONTROL Ordner]** aus.
 1. Geben Sie in den Namensfeldtyp den Ländercode im Format `<language-code>` ein.
 1. Klicken oder tippen Sie auf **[!UICONTROL Erstellen]**. Der Sprachstamm wird in der Konsole „Assets“ erstellt. 
 
@@ -90,7 +90,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 Die Touch-optimierte Benutzeroberfläche bietet einen Bereich „Verweise“, der eine Liste von Sprachstämmen anzeigt, die in AEM Assets erstellt wurden.
 
-1. In der Konsole „Assets“ wählen Sie die Sprach-Master-Vorlage aus, für die Sie Sprachkopien erstellen möchten.
+1. Wählen Sie in der Assets-Konsole die Sprachprimärdatei aus, für die Sie Sprachkopien erstellen möchten.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Verweise]** aus, um den Bereich „Verweise“ zu öffnen.
 1. Im Bereich „Verweise“ klicken oder tippen Sie auf **[!UICONTROL Sprachkopien]**. Der Bereich „Sprachkopien“ zeigt die Sprachkopien der Assets an.
 
@@ -151,9 +151,9 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
 * Erstellen eines neuen Übersetzungsprojekts
-* Zu vorhandenem Übersetzungsprojekt hinzufügen
+* Hinzufügen zu einem vorhandenen Übersetzungsprojekt 
 
-### Zu vorhandenem Übersetzungsprojekt hinzufügen {#add-to-existing-translation-project-1}
+### Hinzufügen zu einem vorhandenem Übersetzungsprojekt {#add-to-existing-translation-project-1}
 
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
@@ -206,7 +206,7 @@ Diesen Workflow führen Sie aus, um eine weitere Gruppe von Assets zu übersetze
 
 >[!NOTE]
 >
->Wenn Sie einen Übersetzungs-Workflow für komplexe Assets wie PDF- und Adobe InDesign-Dateien starten, werden ihre Unter-Assets oder Ausgabeformate (sofern vorhanden) nicht zur Übersetzung übermittelt.
+>Wenn Sie einen Übersetzungs-Workflow für komplexe Assets wie PDF- und Adobe InDesign-Dateien starten, werden ihre Teil-Assets oder Ausgabeformate (sofern vorhanden) nicht zur Übersetzung übermittelt.
 
 ### Workflow für das Erstellen und Übersetzen {#create-and-translate-workflow}
 
@@ -214,9 +214,9 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 * Nur Struktur erstellen
 * Erstellen eines neuen Übersetzungsprojekts
-* Zu vorhandenem Übersetzungsprojekt hinzufügen
+* Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen  {#create-structure-only}
+### Nur Struktur erstellen    {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -243,7 +243,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
-1. Navigieren Sie zur Registerkarte **[!UICONTROL Cloud-Services]**.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Cloud Services]**.
 1. Wählen Sie aus der Liste „Cloud-Service-Konfigurationen“ den gewünschten Übersetzungsanbieter aus. Wenn Sie beispielsweise Übersetzungsdienste von Microsoft nutzen möchten, wählen Sie **[!UICONTROL Microsoft Translator]** aus.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
@@ -259,8 +259,8 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwenden möchten, den Sie in den Übersetzungsworkflows verwenden möchten. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector aus Package Manager. Konfigurieren Sie dann den Connector über die Cloud Services Console. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
 
 1. Installieren Sie den Connector von Package Manager.
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
-1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud-Services]**.
+1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
+1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -268,7 +268,7 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwe
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Geben Sie einen Titel und einen Namen für den Connector ein und klicken/tippen Sie dann auf **[!UICONTROL Erstellen]**. Der benutzerdefinierte Connector ist in der Connector-Liste in der Registerkarte **[!UICONTROL Cloud-Services]** verfügbar. Die Beschreibung hierzu finden Sie in Schritt 5 von [Anwenden der Übersetzungsdienste](#applying-the-translation-services).
+1. Geben Sie einen Titel und einen Namen für den Connector ein und klicken/tippen Sie dann auf **[!UICONTROL Erstellen]**. Der benutzerdefinierte Connector ist in der Connector-Liste in der Registerkarte **[!UICONTROL Cloud Services]** verfügbar. Die Beschreibung hierzu finden Sie in Schritt 5 von [Anwenden der Übersetzungsdienste](#applying-the-translation-services).
 1. Führen Sie einen beliebigen unter „Erstellen von Übersetzungsprojekten“ beschriebenen Übersetzungs-Workflow aus, wenn Sie den benutzerdefinierten Connector angewendet haben. Überprüfen Sie die Details des Connectors in der Kachel **[!UICONTROL Zusammenfassung der Übersetzung]** des Übersetzungsprojekts in der **[!UICONTROL Projektekonsole]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
