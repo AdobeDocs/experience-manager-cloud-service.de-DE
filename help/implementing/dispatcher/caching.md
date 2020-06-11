@@ -2,7 +2,7 @@
 title: Zwischenspeicherung in AEM als Cloud-Dienst
 description: 'Zwischenspeicherung in AEM als Cloud-Dienst '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 85%
@@ -83,7 +83,7 @@ Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeiche
 
 ## Dispatcher-Cache-Ungültigkeit {#disp}
 
-Im Allgemeinen sollte es nicht notwendig sein, den Dispatcher-Cache ungültig zu machen. Stattdessen sollten Sie sich darauf verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden, und dass das CDN Cache-Ablaufkopfzeilen berücksichtigt.
+Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu ungültigen. Stattdessen sollten Sie sich darauf verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden und das CDN die Cache-Ablaufkopfzeilen respektiert.
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
