@@ -2,9 +2,9 @@
 title: Überblick über Cloud-Bereitschaftsanalysator
 description: Überblick über Cloud-Bereitschaftsanalysator
 translation-type: tm+mt
-source-git-commit: 3d818278c53f3d3b4c5b53aa5b78d06d876bf05f
+source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Übersicht {#overview-cloud-readiness-analyzer}
 
-Die Bewertung der Bereitschaft, von einer vorhandenen AEM-Instanz zu AEM als Cloud-Dienst zu wechseln, und die Bestimmung der Bereiche, die umgestaltet werden müssen, ist der erste Schritt auf dem Weg zu AEM als Cloud-Dienst.
+Der Cloud-Bereitschaftsanalysator unterstützt Sie bei der Beurteilung der Bereitschaft, von einer vorhandenen AEM-Instanz zu AEM als Cloud-Dienst zu wechseln.
 
-Cloud Readiness Analyzer (CRA) beschleunigt diese Schritte.
+Dieses Tool ermittelt Bereiche, in denen eine Umgestaltung erforderlich ist. Dies ist der erste Schritt auf dem Weg zur Transition zu AEM als Cloud-Dienst.
 
 CRA erkennt und meldet Muster, die
 
@@ -22,7 +22,11 @@ CRA erkennt und meldet Muster, die
 
 * Verletzung bestimmter Regeln, Konfigurationen oder Verwendungen, die vom Wechsel zu AEM als Cloud-Dienst betroffen sind
 
-Der Cloud Readiness Analyzer generiert einen Zusammenfassungsbericht, der verwendet werden kann, um ein allgemeines Verständnis der allgemeinen Aktualisierungsbereitschaft zu gewinnen.  Die Ergebnisse werden in dem Bericht nach Kategorien und Untertypen innerhalb dieser Kategorien geordnet. Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösungen im Zusammenhang mit diesen Kategorien erhalten Sie über Links im Zusammenfassungsbericht.
+## Zusammenfassungsbericht in Cloud-Bereitstellungsanalysator {#summary-report}
+
+Der Cloud Readiness Analyzer generiert einen Zusammenfassungsbericht, der verwendet werden kann, um ein allgemeines Verständnis der allgemeinen Aktualisierungsbereitschaft zu gewinnen.
+
+Die Ergebnisse werden in dem Bericht nach Kategorien und Untertypen innerhalb dieser Kategorien geordnet. Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösungen im Zusammenhang mit diesen Kategorien erhalten Sie über Links im Zusammenfassungsbericht.
 
 >[!NOTE]
->Die Ausgabe der CRA beschleunigt den Prozess der Schätzung von Zeit und Kosten, die für den Wechsel zu AEM als Cloud-Dienst erforderlich sind.
+>Die Ausgabe des Cloud Readiness Analyzer hilft, den Prozess der Schätzung von Zeit und Kosten zu beschleunigen, der für den Übergang zu AEM als Cloud-Dienst erforderlich ist.
