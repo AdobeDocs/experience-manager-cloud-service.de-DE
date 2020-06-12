@@ -2,9 +2,9 @@
 title: Überblick über Cloud-Bereitschaftsanalysator
 description: Überblick über Cloud-Bereitschaftsanalysator
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösunge
 >[!NOTE]
 >Der Bericht &quot;Cloud-Bereitschaftsanalysator&quot;beschleunigt den Prozess der Schätzung der Zeit und Kosten, die für die Transition auf AEM als Cloud-Dienst erforderlich sind, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
 
-Der Zusammenfassungsbericht ist in der AEM-Benutzeroberfläche verfügbar. Es besteht die Möglichkeit, den vollständigen Bericht in einem CSV-Format (kommagetrennte Werte) herunterzuladen, das während des Umgestaltungsprozesses hilfreich ist.
+Sie können den Zusammenfassungsbericht auch über die AEM-Benutzeroberfläche herunterladen. Weitere Informationen finden Sie unter Ergebnisse in einem CSV-Format **anzeigen** .
