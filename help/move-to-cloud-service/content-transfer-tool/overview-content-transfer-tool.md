@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer-Tool
 description: Übersicht über das Content Transfer-Tool
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '636'
+ht-degree: 82%
 
 ---
 
@@ -54,3 +54,11 @@ Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practice
 * In der Aufnahmephase wird empfohlen, die Aufnahme mit aktiviertem *Wischmodus* auszuführen, wobei das vorhandene Repository (Autor oder Veröffentlichung) in der Zielumgebung des AEM Cloud-Dienstes vollständig gelöscht und dann mit den Migrationssatzdaten aktualisiert wird. Dieser Modus ist viel schneller als der Nicht-Löschmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
 
 * Nach Abschluss der Aktivität zum Inhaltstransfer ist in der Cloud Service-Umgebung die korrekte Projektstruktur erforderlich, um sicherzustellen, dass der Inhalt in der Cloud Service-Umgebung erfolgreich gerendert wird.
+
+* Bevor Sie das Content Transfer Tool ausführen, müssen Sie sicherstellen, dass im `crx-quickstart` Unterverzeichnis der AEM-Quellinstanz genügend Speicherplatz vorhanden ist. Dies liegt daran, dass das Inhaltsübertragungstool eine lokale Kopie des Repositorys erstellt, die später in den Migrationssatz hochgeladen wird.
+Die allgemeine Formel zur Berechnung des benötigten freien Festplattenspeicherplatzes lautet wie folgt:
+   *Datenspeichergröße + Knotenspeichergröße * 1,5*
+
+   * Für die Größe *des* Datenspeichers verwendet das Content Transfer Tool 64 GB, auch wenn der tatsächliche Datenspeicher größer ist.
+   * Die *Knotenspeichergröße* ist die Größe des Segmentspeichers oder die Größe der MongoDB-Datenbank.
+Bei einer Segmentspeichergröße von 20 GB würde daher der erforderliche freie Speicherplatz 94 GB betragen.
