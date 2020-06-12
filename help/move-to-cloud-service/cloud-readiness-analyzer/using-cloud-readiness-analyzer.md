@@ -2,10 +2,10 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 4%
 
 ---
 
@@ -35,42 +35,54 @@ In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-### Anzeigen der Ergebnisse {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Wenn Sie auf **Cloud Readiness Analyzer** klicken, werden die Tool-Beginn, die den Bericht generieren, und nach einigen Minuten wird der erstellte Bericht angezeigt.
+
+   >[!NOTE]
+   >Sie müssen einen Bildlauf nach unten durchführen, um den vollständigen Bericht Ansicht.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Ansicht der Ergebnisse im Zusammenfassungsbericht {#viewing-the-results}
 
 >[!IMPORTANT]
 >Die Berichte, die mit Cloud Readiness Analyzer erstellt wurden, basieren auf Musterdetektoren. Weitere Informationen finden Sie unter [Musterdetektoren](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) .
 
-Es gibt zwei Möglichkeiten, die Ausgabe aus dem Cloud-Bereitschaftsanalysator Ansicht:
+Wenn Sie nach unten blättern, um den vollständigen Zusammenfassungsbericht Ansicht, sehen Sie die folgenden Informationen zu jeder im Bericht hervorgehobenen Kategorie:
 
-1. **Verwenden des Organisierten Berichts**
+1. **Wichtigkeitsstufe**
 
-   >[!NOTE]
-   >Der organisierte Bericht ist in AEM Version 6.3 und höher verfügbar.
+   In der folgenden Tabelle wird die Bedeutung der verschiedenen Stufen &quot;Mustererkennung&quot;und &quot;Cloud-Bereitschaftsanalysator&quot;beschrieben.
 
-   Oder
+   | Wichtigkeitsstufe | Beschreibung |
+   |--- |--- |
+   | INFO/0 | Diese Ergebnisse werden zu Informationszwecken bereitgestellt. |
+   | BERATUNG/1 | Diese Feststellung stellt möglicherweise ein Problem bei der Aktualisierung dar. Weitere Untersuchungen werden empfohlen. |
+   | MAJOR/2 | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden sollte. |
+   | KRITISCH/3 | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
 
-1. **Ausgabe der CRA anzeigen**
+1. **Beschreibung** Die Beschreibung enthält Informationen zur gemeldeten Kategorie.
 
-   Gehen Sie wie folgt vor, um die Ausgabe aus dem Cloud-Bereitschaftsanalyzer Ansicht:
+1. **Dokumentations-URL** Die Dokumentations-URL ermöglicht die Ansicht der technischen Dokumentation für den jeweiligen Typ.
 
-   >[!NOTE]
-   >Die folgenden Schritte gelten für AEM Version 6.1 und höher.
+1. **Meldung** Eine Beschreibung der Suche in einer einzelnen Meldung.
 
-   1. Navigieren Sie mit **AEM Web Console** zu `https://serveraddress:serverport/system/console/configMgr`.
+### Ansicht der Ergebnisse in einem CSV-Format {#viewing-the-results-csv}
 
-   1. Select **Status - Pattern Detector** as shown in the figure below.
+Der Zusammenfassungsbericht ist in der AEM-Benutzeroberfläche verfügbar. Sie können den vollständigen Bericht in einem CSV-Format (kommagetrennte Werte) herunterladen, das während des Umgestaltungsprozesses hilfreich ist.
+
+Gehen Sie wie folgt vor, um ein CSV-Format für Ihren Zusammenfassungsbericht zu erstellen:
+
+1. 
+   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+
+1. Klicken Sie nach der Berichterstellung auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Ansicht des Berichts in AEM 6.1-Instanzen {#aem-instances-report}
 
 Sie können den CSV-Bericht für AEM 6.1 herunterladen. Dies steht noch aus.
 
-#### Informationen zu wichtigen Ebenen im Bericht {#importance-levels}
-
-In der folgenden Tabelle wird die Bedeutung der verschiedenen Stufen &quot;Mustererkennung&quot;und &quot;Cloud-Bereitschaftsanalysator&quot;beschrieben.
-
-| Wichtigkeitsstufe | Beschreibung |
-|--- |--- |
-| INFO/0 | Diese Ergebnisse werden zu Informationszwecken bereitgestellt. |
-| BERATUNG/1 | Diese Feststellung stellt möglicherweise ein Problem bei der Aktualisierung dar. Weitere Untersuchungen werden empfohlen. |
-| MAJOR/2 | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden sollte. |
-| KRITISCH/3 | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
