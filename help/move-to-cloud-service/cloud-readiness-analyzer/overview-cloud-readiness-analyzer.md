@@ -2,9 +2,9 @@
 title: Überblick über Cloud-Bereitschaftsanalysator
 description: Überblick über Cloud-Bereitschaftsanalysator
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,25 @@ ht-degree: 0%
 
 # Übersicht {#overview-cloud-readiness-analyzer}
 
-Der Cloud-Bereitschaftsanalysator unterstützt Sie bei der Beurteilung der Bereitschaft, von einer vorhandenen AEM-Instanz zu AEM als Cloud-Dienst zu wechseln.
+Der Cloud-Bereitschaftsanalysator beschleunigt die Prüfung der Bereitschaft, von einer vorhandenen Adobe Experience Manager (AEM)-Bereitstellung zu AEM als Cloud-Dienst zu wechseln.
 
-Dieses Tool ermittelt Bereiche, in denen eine Umgestaltung erforderlich ist. Dies ist der erste Schritt auf dem Weg zur Transition zu AEM als Cloud-Dienst.
-
-CRA erkennt und meldet Muster, die
-
-* Verwenden Sie eine AEM 6.x-Funktion, die derzeit nicht von AEM als Cloud-Dienst unterstützt wird
-
-* Verletzung bestimmter Regeln, Konfigurationen oder Verwendungen, die vom Wechsel zu AEM als Cloud-Dienst betroffen sind
+Dieses Tool generiert einen Bericht, der Bereiche identifiziert, in denen eine Umgestaltung möglich ist. Dies ist der erste Schritt auf dem Weg zur Transition von AEM als Cloud-Dienst.
 
 ## Zusammenfassungsbericht in Cloud-Bereitstellungsanalysator {#summary-report}
 
-Der Cloud Readiness Analyzer generiert einen Zusammenfassungsbericht, der verwendet werden kann, um ein allgemeines Verständnis der allgemeinen Aktualisierungsbereitschaft zu gewinnen.
+Der Zusammenfassungsbericht zur Cloud-Bereitschaftsanalyse wird verwendet, um ein allgemeines Verständnis der allgemeinen Aktualisierungsbereitschaft zu gewinnen. Der Bericht enthält Feststellungen in Kategorien zu Problemen, die vor einer erfolgreichen Bereitstellung von AEM als Cloud-Dienst behandelt werden müssen.
 
-Die Ergebnisse werden in dem Bericht nach Kategorien und Untertypen innerhalb dieser Kategorien geordnet. Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösungen im Zusammenhang mit diesen Kategorien erhalten Sie über Links im Zusammenfassungsbericht.
+Der Zusammenfassungsbericht umfasst die folgenden Kategorien:
+
+* Zu ändernde Anwendungsfunktionalität
+* Repository-Elemente, die an einen unterstützten Speicherort verschoben werden müssen
+* Alte Dialogfelder und Komponenten der Benutzeroberfläche, die modernisiert werden müssen
+* Bereitstellungs- und Konfigurationsprobleme
+* AEM 6.x-Funktionen, die durch neue Funktionen ersetzt wurden oder die derzeit nicht von AEM als Cloud-Dienst unterstützt werden
+
+Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösungen im Zusammenhang mit diesen Kategorien erhalten Sie über Links im Zusammenfassungsbericht.
 
 >[!NOTE]
->Die Ausgabe des Cloud Readiness Analyzer hilft, den Prozess der Schätzung von Zeit und Kosten zu beschleunigen, der für den Übergang zu AEM als Cloud-Dienst erforderlich ist.
+>Der Bericht &quot;Cloud-Bereitschaftsanalysator&quot;beschleunigt den Prozess der Schätzung der Zeit und Kosten, die für die Transition auf AEM als Cloud-Dienst erforderlich sind, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
+
+Der Zusammenfassungsbericht ist in der AEM-Benutzeroberfläche verfügbar. Es besteht die Möglichkeit, den vollständigen Bericht in einem CSV-Format (kommagetrennte Werte) herunterzuladen, das während des Umgestaltungsprozesses hilfreich ist.
