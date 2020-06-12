@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Gehen Sie wie folgt vor, um die wichtigen Überlegungen beim Ausführen des Clou
 
 * Der CRA-Bericht wird mit der Ausgabe des Adobe Experience Manager (AEM)- [Musterdetektors](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)erstellt. Die von CRA verwendete Version des Musterdetektors ist im CRA-Installationspaket enthalten.
 
-* Die CRA kann nur vom `admin` Benutzer oder einem Benutzer in der `Administrators` Gruppe ausgeführt werden.
+* Die CRA kann nur vom *Administrator* -Benutzer oder einem Benutzer der **Administratorgruppe** ausgeführt werden.
 
 * CRA wird auf AEM-Instanzen mit Version 6.1 und höher unterstützt.
 
@@ -57,30 +57,48 @@ In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
 
 Für AEM 6.3 und höher besteht die primäre Möglichkeit zum Ausführen von Cloud Readiness Analyzer in folgenden Schritten:
 
-1. Verwenden Sie die Benutzeroberfläche von Adobe Experience Manager, um zu &quot;Tools -> **Vorgänge** -> **Cloud-Bereitstellungsanalyse**&quot;zu navigieren.
+1. Wählen Sie die Adobe Experience Manager-Instanz und navigieren Sie zu Tools -> **Vorgänge** -> **Cloud-Bereitstellungsanalyse**.
 
    >[!NOTE]
    >Die Ratingagentur beginnt mit einem Hintergrundprozess, um den Bericht zu generieren, sobald das Tool geöffnet wird. Es wird ein Hinweis angezeigt, dass die Berichtgenerierung läuft, bis der Bericht fertig ist. Sie können die Browser-Registerkarte schließen und zu einem späteren Zeitpunkt zur Ansicht des Berichts zurückkehren, sobald dieser abgeschlossen ist.
 
-Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht im CSV-Format (CSV) herunterzuladen, indem Sie auf die Schaltfläche **CSV** oben rechts auf der Tool-Seite klicken.
+1. Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht in Form von CSV (kommagetrennten Werten) herunterzuladen. Klicken Sie auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
 
-Sie können die CRA zwingen, ihren Cache zu leeren und den Bericht neu zu generieren, indem Sie auf die Schaltfläche &quot;Bericht aktualisieren&quot;in der oberen linken Ecke klicken.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Sie können die CRA zwingen, ihren Cache zu leeren und den Bericht neu zu generieren, indem Sie in der oberen linken Ecke auf die Schaltfläche Bericht **aktualisieren** klicken.
 
 ### AEM 6.2 und 6.1 {#aem-specific-versions}
 
-Die CRA-Benutzeroberfläche ist in AEM 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt. Bei AEM 6.1 funktioniert die Benutzeroberfläche nicht und es kann nur die HTTP-Schnittstelle verwendet werden.
+Die Benutzeroberfläche von Cloud Readiness Analyzer ist in AEM 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt. Bei AEM 6.1 funktioniert die Benutzeroberfläche nicht und es kann nur die HTTP-Schnittstelle verwendet werden.
 
 In allen Versionen kann der enthaltene Musterdetektor unabhängig ausgeführt werden.
 
+Gehen Sie wie folgt vor, um den CSV-Bericht für Adobe Experience Manager (AEM) 6.1 und 6.2 herunterzuladen:
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Wählen Sie die Registerkarte &quot; **Status** &quot;und suchen Sie in der Dropdown-Liste nach **Mustererkennung** , wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Sie können den Zusammenfassungsbericht in einem ZIP-Ordner oder im JSON-Format herunterladen.
+
 ## CRA-Zusammenfassungsbericht {#cra-summary-report}
 
-Wenn die CRA in der AEM-Benutzeroberfläche ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt. Das Format des Berichts lautet:
+Wenn der Cloud Readiness Analyzer in der AEM-Benutzeroberfläche ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
 
-* Berichtsübersicht: Informationen zum Bericht selbst, einschließlich des Zeitpunkts seiner Erstellung.
-* Systemübersicht: Informationen zum AEM-System, auf dem die CRA ausgeführt wurde.
-* Kategorien suchen: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie ansprechen. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Bedeutung der Suche, Zusammenfassung, Link zur Dokumentation der Kategorie und individuelle Suchinformationen.
+Das Format des Berichts lautet:
 
-Jedem Ergebnis wird eine wichtige Priorität zugewiesen, um eine ungefähre Priorität für Maßnahmen anzugeben. Folgende wichtige Werte werden verwendet:
+* *Berichtsübersicht*: Informationen zum Bericht selbst, einschließlich des Zeitpunkts seiner Erstellung.
+* *Systemübersicht*: Informationen zum AEM-System, auf dem die CRA ausgeführt wurde.
+* *Suchen von Kategorien*: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie ansprechen. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Bedeutung der Suche, Zusammenfassung, Link zur Dokumentation der Kategorie und individuelle Suchinformationen.
+
+Jedem Ergebnis wird eine wichtige Priorität zugewiesen, um eine ungefähre Priorität für Maßnahmen anzugeben.
+
+Befolgen Sie die folgende Tabelle, um die wichtigen Ebenen zu verstehen:
 
 | Importance | Beschreibung |
 |--- |--- |
@@ -91,16 +109,7 @@ Jedem Ergebnis wird eine wichtige Priorität zugewiesen, um eine ungefähre Prio
 
 ## CRA-CSV-Bericht {#crs-csv-report}
 
-Wenn die Schaltfläche &quot;CSV&quot;gedrückt wird, wird das CSV-Format des CRA-Berichts aus dem Ergebniscache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browsereinstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv`heruntergeladen. Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
-
-Führen Sie die folgenden Schritte aus, um aus Ihrer AEM-Instanz ein CSV-Format des Zusammenfassungsberichts zu generieren:
-
-1. 
-   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
-
-1. Sobald der Bericht verfügbar ist, klicken Sie auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Format des Berichts Cloud-Bereitstellungsanalysator aus dem Ergebniscache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browsereinstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv`heruntergeladen. Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
 Das CSV-Format des Berichts enthält Informationen, die aus der Musterdetektorausgabe generiert wurden und nach Kategorie, Untertyp und Wichtigkeitsstufe sortiert und organisiert sind. Das Format eignet sich für die Anzeige und Bearbeitung in einer Anwendung wie Microsoft Excel. Es soll alle Suchinformationen in einem wiederholbaren Format bereitstellen, das beim Vergleich von Berichten im Zeitverlauf zur Messung des Fortschritts hilfreich sein kann.
 
@@ -133,8 +142,10 @@ Die HTTP-Schnittstelle kann auf verschiedene Weise verwendet werden.
 
 Eine einfache Möglichkeit besteht darin, eine Browser-Registerkarte im selben Browser zu öffnen, in dem Sie sich bereits als Administrator bei AEM angemeldet haben. Sie können die URL auf der Registerkarte &quot;Browser&quot;eingeben und die Ergebnisse vom Browser anzeigen oder herunterladen lassen.
 
-Sie können auch ein Befehlszeilenwerkzeug wie `curl` oder `wget` eine beliebige HTTP-Clientanwendung verwenden. Wenn Sie keine Browserregisterkarte mit einer authentifizierten Sitzung verwenden, müssen Sie als Teil des Kommentars einen administrativen Benutzernamen und ein Kennwort angeben. Im Folgenden sehen Sie ein Beispiel dafür, wie dies möglich ist:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+Sie können auch ein Befehlszeilenwerkzeug wie `curl` oder `wget` eine beliebige HTTP-Clientanwendung verwenden. Wenn Sie keine Browserregisterkarte mit einer authentifizierten Sitzung verwenden, müssen Sie als Teil des Kommentars einen administrativen Benutzernamen und ein Kennwort angeben.
+
+Im Folgenden sehen Sie ein Beispiel dafür, wie dies möglich ist:
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### Überschriften und Parameter {#http-headers-and-parameters}
 
@@ -151,7 +162,7 @@ Die folgenden HTTP-Abfrage-Parameter stehen zur Verfügung, wenn HTTP-Header mö
 Wenn sowohl ein HTTP-Header als auch ein entsprechender Parameter für die Abfrage vorhanden sind, hat der Parameter &quot;Abfrage&quot;Vorrang.
 
 Die Generierung des Berichts über die HTTP-Oberfläche kann einfach mit dem folgenden Befehl initiiert werden:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 Nachdem eine Anforderung gestellt wurde, muss der Client nicht aktiv bleiben, damit der Bericht generiert wird. Die Berichtgenerierung kann mit einem Client über eine HTTP GET-Anforderung initiiert und nach der Berichterstellung aus dem Cache eines anderen Clients oder dem CSV-Tool in der AEM-Benutzeroberfläche angezeigt werden.
 
@@ -175,17 +186,7 @@ Der Wert für die Cache-Lebensdauer wird als `maxCacheAge` Eigenschaft auf dem f
 
 Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mithilfe der CRX/DE Lite-Schnittstelle auf AEM anpassen.
 
-## Ansicht des Berichts in AEM 6.1-Instanzen {#aem-instances-report}
 
-Gehen Sie wie folgt vor, um den CSV-Bericht für Adobe Experience Manager (AEM) 6.1 herunterzuladen:
 
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Wählen Sie die Registerkarte &quot; **Status** &quot;und suchen Sie in der Dropdown-Liste nach **Mustererkennung** , wie in der folgenden Abbildung dargestellt.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Sie können den Zusammenfassungsbericht in einem ZIP-Ordner oder im JSON-Format herunterladen.
 
 
