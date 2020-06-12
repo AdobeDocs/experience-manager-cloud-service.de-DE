@@ -2,10 +2,10 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 4%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Wenn Sie auf **Cloud Readiness Analyzer** klicken, werden die Tool-Beginn, die den Bericht generieren, und nach einigen Minuten wird der erstellte Bericht angezeigt.
+1. Nachdem Sie auf **Cloud-Bereitstellungsanalysator** geklickt haben, können die Tool-Beginn, die den Bericht generieren, den Zusammenfassungsbericht nach wenigen Minuten in Ihrer AEM-Instanz verwenden.
 
    >[!NOTE]
    >Sie müssen einen Bildlauf nach unten durchführen, um den vollständigen Bericht Ansicht.
@@ -77,12 +77,22 @@ Gehen Sie wie folgt vor, um ein CSV-Format für Ihren Zusammenfassungsbericht zu
 1. 
    1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-1. Klicken Sie nach der Berichterstellung auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
+1. Sobald der Bericht verfügbar ist, klicken Sie auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Ansicht des Berichts in AEM 6.1-Instanzen {#aem-instances-report}
 
-Sie können den CSV-Bericht für AEM 6.1 herunterladen. Dies steht noch aus.
+Gehen Sie wie folgt vor, um den CSV-Bericht für Adobe Experience Manager (AEM) 6.1 herunterzuladen:
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Wählen Sie die Registerkarte &quot; **Status** &quot;und suchen Sie in der Dropdown-Liste nach **Mustererkennung** , wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Sie können den Zusammenfassungsbericht in einem ZIP-Ordner oder im JSON-Format herunterladen.
+
 
