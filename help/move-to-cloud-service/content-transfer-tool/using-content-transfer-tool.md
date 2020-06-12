@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 88%
+source-wordcount: '1582'
+ht-degree: 86%
 
 ---
 
@@ -18,13 +18,15 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
 
-* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
 * Um das Inhaltsübermittlungstool verwenden zu können, müssen Sie Administrator-Benutzer auf Ihrer Quellinstanz sein und zur AEM-Administratorgruppe in der Cloud-Dienstinstanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
 
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar.
+
+* Die empfohlene Obergrenze für die Repository-Größe, die das Content Transfer Tool gleichzeitig unterstützen kann, beträgt 20 GB.
 
 ## Verfügbarkeit {#availability}
 
@@ -208,6 +210,8 @@ Oder:
    Sie können die Protokolle für Ihren Migrationssatz auch über den Bildschirm *Übersicht* anzeigen. Wählen Sie den Migrationssatz aus und klicken Sie unter **EXTRAKTION** auf den Status. Klicken Sie in diesem Fall auf **FERTIG**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verlängern, können Sie SSH in Ihre AEM-Umgebung einbinden und die `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`Datei zurücknehmen.
 
 ### Löschen eines Migrationssatzes {#deleting-migration-set}
 
