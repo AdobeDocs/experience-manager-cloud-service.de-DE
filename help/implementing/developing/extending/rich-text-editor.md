@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich Text Editor, um Inhalte in Adobe Experience Ma
 description: Rich-Text-Editor konfigurieren, um Inhalte in Adobe Experience Manager als Cloud-Dienst zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 53%
+source-wordcount: '2061'
+ht-degree: 48%
 
 ---
 
@@ -40,13 +40,13 @@ Autoren können Textinhalte in Experience Manager mit den verschiedenen Modi von
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen |
 |--- |--- |--- |
 | Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds | Minimale RTE-Funktionen |
-| RTE-Vollbildschirm | Füllt die gesamte Seite aus | Alle erforderlichen RTE-Funktionen |
+| RTE im Vollbildmodus | Füllt die gesamte Seite aus | Alle erforderlichen RTE-Funktionen |
 | Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt | Funktionen aktivieren |
-| Dialogfeld-Vollbildmodus | Wie im Vollbildmodus; enthält neben dem RTE Felder des Dialogfelds | Alle erforderlichen RTE-Funktionen |
+| Dialogfeld im Vollbildmodus | wie Vollbildmodus; enthält Felder des Dialogfelds neben RTE | Alle erforderlichen RTE-Funktionen |
 
 >[!NOTE]
 >
->Die Funktion zum Bearbeiten der Quelle ist im Inline-Bearbeitungsmodus nicht verfügbar. Im Vollbildmodus können Sie Bilder nicht per Drag-and-Drop verschieben. Alle anderen Funktionen sind in allen Modi verfügbar.
+>Die Funktion zum Bearbeiten der Quelle ist im Inline-Bearbeitungsmodus nicht verfügbar. Sie können Bilder nicht im Vollbildmodus ziehen. Alle anderen Funktionen sind in allen Modi verfügbar.
 
 ### Inline-Bearbeitung {#inline-editing}
 
@@ -56,11 +56,11 @@ Beim Öffnen (mit langsamem Klicken auf die Dublette) können die Inhalte innerh
 
 *Abbildung: Inline-Bearbeitung mit grundlegenden Optionen in der Symbolleiste.*
 
-### Bearbeitung im Vollbildmodus {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Experience Manager-Komponenten können in Ansicht im Vollbildmodus geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Die Bearbeitung im Vollbildmodus ist quasi eine detaillierte Version der Inline-Bearbeitung, da sie die meisten Bearbeitungsmöglichkeiten bietet. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Manager-Komponenten können in einer Vollbildansicht geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Erwägen Sie die Vollbildbearbeitung, um eine detaillierte Version der Inline-Bearbeitung zu bearbeiten, da sie die meisten Bearbeitungsoptionen Angebot. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
-Im Dialogfeld-Vollbildmodus stehen neben einer detaillierten RTE-Symbolleiste auch die in einem Dialogfeld verfügbaren Optionen und Komponenten zur Verfügung. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
+Im Vollbildmodus des Dialoges stehen neben einer detaillierten RTE-Symbolleiste auch die Optionen und Komponenten zur Verfügung, die in einem Dialogfeld verfügbar sind. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
 ![Die detaillierte RTE-Symbolleiste beim Bearbeiten im Vollbildmodus](assets/rte-toolbar-full-screen-mode.png)
 
@@ -113,7 +113,7 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 
 >[!NOTE]
 >
->Das Plug-in für den Vollbildmodus wird im Dialogfeldmodus nicht unterstützt. Use of the `dialogFullScreen` setting to configure the toolbar for full screen mode.
+>Das Vollbild-Plug-in wird im Dialogmodus nicht unterstützt. Use of the `dialogFullScreen` setting to configure the toolbar for full-screen mode.
 
 ## Grundlegendes zu den Konfigurationspfaden und -speicherorten {#understand-the-configuration-paths-and-locations}
 
@@ -122,7 +122,7 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 * Inline-Modus: `cq:editConfig/cq:inplaceEditing`
 * Vollbildmodus: `cq:editConfig/cq:inplaceEditing`
 * Dialogfeldmodus: `cq:dialog`
-* Vollbildmodus: `cq:dialog`
+* Vollbildmodus, Dialogmodus: `cq:dialog`
 
 >[!NOTE]
 >
@@ -131,7 +131,6 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
-
 >
 >
 Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -165,7 +164,6 @@ The [Core Components text component](https://docs.adobe.com/content/help/de/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
@@ -215,13 +213,13 @@ Um die Symbolleiste für `dialogFullScreen` zu konfigurieren, verwenden Sie die 
 </uiSettings>
 ```
 
-Für den Inline-Modus und den Vollbildmodus werden verschiedene Benutzeroberflächen-Einstellungen verwendet. Die Symbolleisten-Eigenschaft wird verwendet, um die Schaltflächen der Symbolleiste festzulegen.
+Für den Inline- und Vollbildmodus werden verschiedene Benutzeroberflächeneinstellungen verwendet. Die Eigenschaft toolbar gibt die Option der Symbolleiste an.
 
-For example, if the button is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
+For example, if the option is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
-If the button is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+If the option is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
-Separators (`|`) between a group of buttons can be specified with `-`.
+Separators (`|`) between a group of option can be specified with `-`.
 
 Der Knoten „pop-up“ im Inline- oder Vollbildmodus enthält eine Liste der verwendeten Popovers. Jeder untergeordnete Knoten unter dem Knoten „popovers“ wird nach dem Plug-in benannt (z. B. „format“). Er verfügt über eine Eigenschaft „items“, die eine Liste der Funktionen des Plug-ins beinhaltet (z. B. „format#bold“).
 
