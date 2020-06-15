@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -46,14 +46,14 @@ In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Nachdem Sie auf **Cloud-Bereitstellungsanalysator** geklickt haben, können die Tool-Beginn, die den Bericht generieren, den Zusammenfassungsbericht nach wenigen Minuten in Ihrer AEM-Instanz verwenden.
+1. Wenn Sie auf **Cloud-Bereitstellungsanalysator** klicken, werden die Tool-Beginn, die den Bericht generieren, und nach einigen Minuten ist der CRA-Bericht für Ihre AEM-Instanz verfügbar.
 
    >[!NOTE]
    >Sie müssen einen Bildlauf nach unten durchführen, um den vollständigen Bericht Ansicht.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Interpretieren des von Cloud Readiness Analyzer organisierten Berichts {#organized-report}
+## Interpretieren des Berichts &quot;Cloud-Bereitschaftsanalysator&quot; {#cra-report}
 
 Wenn der Cloud Readiness Analyzer in der AEM-Instanz ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
 
@@ -83,7 +83,7 @@ Für AEM 6.3 und höher besteht die primäre Möglichkeit zum Ausführen von Clo
    >[!NOTE]
    >Die Ratingagentur beginnt mit einem Hintergrundprozess, um den Bericht zu generieren, sobald das Tool geöffnet wird. Es wird ein Hinweis angezeigt, dass die Berichtgenerierung läuft, bis der Bericht fertig ist. Sie können die Browser-Registerkarte schließen und zu einem späteren Zeitpunkt zur Ansicht des Berichts zurückkehren, sobald dieser abgeschlossen ist.
 
-1. Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht in Form von CSV (kommagetrennten Werten) herunterzuladen. Klicken Sie auf **CSV** , um den vollständigen Zusammenfassungsbericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
+1. Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht in Form von CSV (kommagetrennten Werten) herunterzuladen. Klicken Sie auf **CSV** , um den vollständigen CRA-Bericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,30 +92,18 @@ Für AEM 6.3 und höher besteht die primäre Möglichkeit zum Ausführen von Clo
 
 ### Adobe Experience Manager 6.2 und 6.1 {#aem-specific-versions}
 
-Der Cloud Readiness Analyzer ist in Adobe Experience Manager (AEM) 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt.
+Der Cloud Readiness Analyzer ist in Adobe Experience Manager 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt.
+
+Für Adobe Experience Manager 6.1 ist das Tool nicht funktionsfähig und es kann nur die HTTP-Schnittstelle verwendet werden.
 
 >[!NOTE]
->
->* Für Adobe Experience Manager 6.1 ist das Tool nicht funktionsfähig und es kann nur die HTTP-Schnittstelle verwendet werden.
-   >
-   >
-* In allen Versionen kann der enthaltene Musterdetektor unabhängig ausgeführt werden.
+>In allen Versionen kann der enthaltene Musterdetektor unabhängig ausgeführt werden.
 
+## Interpretieren des CSV-Berichts zur Cloud-Bereitschaftsanalyse {#cra-csv-report}
 
-Gehen Sie wie folgt vor, um den CSV-Bericht für Adobe Experience Manager (AEM) 6.1 und 6.2 herunterzuladen:
+Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Format des Berichts Cloud-Bereitstellungsanalysator aus dem Ergebniscache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browsereinstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv`heruntergeladen.
 
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Wählen Sie die Registerkarte &quot; **Status** &quot;und suchen Sie in der Dropdown-Liste nach **Mustererkennung** , wie in der folgenden Abbildung dargestellt.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Sie können den Zusammenfassungsbericht in einem ZIP-Ordner oder im JSON-Format herunterladen.
-
-## Interpretieren des CSV-Berichts zur Cloud-Bereitschaftsanalyse {#crs-csv-report}
-
-Wenn Sie in Ihrer AEM-Instanz auf die Option **CSV** klicken, wird das CSV-Format des Berichts Cloud-Bereitstellungsanalysator aus dem Ergebniscache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browsereinstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv`heruntergeladen. Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
+Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
 Das CSV-Format des Berichts enthält Informationen, die aus der Musterdetektorausgabe generiert wurden und nach Kategorie, Untertyp und Wichtigkeitsstufe sortiert und organisiert sind. Das Format eignet sich für die Anzeige und Bearbeitung in einer Anwendung wie Microsoft Excel. Es soll alle Suchinformationen in einem wiederholbaren Format bereitstellen, das beim Vergleich von Berichten im Zeitverlauf zur Messung des Fortschritts hilfreich sein kann.
 
@@ -190,7 +178,7 @@ Die standardmäßige CRA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option z
 Der Wert für die Cache-Lebensdauer wird als `maxCacheAge` Eigenschaft auf dem folgenden Repository-Knoten gespeichert:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mithilfe von CRX/DE Lite anpassen.
+Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mithilfe von **CRXDE Lite** anpassen.
 
 
 
