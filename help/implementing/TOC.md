@@ -2,10 +2,10 @@
 sub-product: Implementieren für AEM as a Cloud Service
 user-guide-title: Implementieren für AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 85%
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 85%
 + Bereitstellen in AEM as a Cloud Service {#deploying}
    + [Bereitstellen in AEM as a Cloud Service](deploying/overview.md)
    + [Konfigurieren von OSGi für AEM as a Cloud Service](deploying/configuring-osgi.md)
++ AEM Author-Ebene {#author-tier}
+   + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Sichern der Autorenebene](/help/implementing/author-tier/securing-the-author-tier.md)
 + Content Versand - Übersicht {#content-delivery}
    + [Content Versand Flow](dispatcher/overview.md)
    + [Dispatcher in der Cloud](dispatcher/disp-overview.md)
