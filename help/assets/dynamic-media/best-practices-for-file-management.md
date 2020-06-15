@@ -2,10 +2,10 @@
 title: Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Profilen
 description: Tipps und Best Practices für das Benennen, Organisieren und Verwalten von Metadaten für digitale Asset-Dateien.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '487'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen
 
    * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
    * **Kundenordner** – enthalten digitale Assets basierend auf Kunden oder Projektnamen.
-   * **Master-Ordner** – enthalten digitale Quell-Assets in ihrer Originalform.
+   * **Primär-Quellordner** - enthält digitale Originalelemente.
    * **Ausgabeformatordner** – enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
    * **Dateigrößenordner** – enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
    * **Bereitstellungsordner** – enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
