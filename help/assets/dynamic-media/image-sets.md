@@ -2,10 +2,10 @@
 title: Bildsets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 100%
+source-wordcount: '2050'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 So schaffen Sie einen schnellen Einstieg:
 
-1. [Laden Sie die Masterbilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
+1. [Laden Sie Ihre primären Quellbilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
 
    Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
