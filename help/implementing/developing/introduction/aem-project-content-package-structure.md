@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 91%
+source-wordcount: '2522'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,16 @@ Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `
 >[!WARNING]
 >
 > Wie in früheren Versionen von AEM sollten `/libs` nicht geändert werden. Nur der AEM-Produkt-Code darf für `/libs` bereitstellen.
+
+### Oak Indexes {#oak-indexes}
+
+Oak-Indizes (`/oak:index`) werden speziell vom AEM Cloud-Bereitstellungsprozess verwaltet. Dies liegt daran, dass der Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu identifiziert wird, bevor zum neuen Codebild gewechselt wird.
+
+Aus diesem Grund müssen Oak-Indizes zwar zur Laufzeit veränderlich sein, aber als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderliche Pakete installiert werden. Daher sind `/oak:index` Konfigurationen Teil des Code-Pakets und nicht Teil des Content-Pakets [wie unten beschrieben.](#recommended-package-structure)
+
+>[!TIP]
+>
+>Weitere Informationen zur Indexierung in AEM als Cloud-Dienst finden Sie in der Dokument [Content Search and Indexing.](/help/operations/indexing.md)
 
 ## Empfohlene Paketstruktur {#recommended-package-structure}
 
@@ -133,7 +143,7 @@ Während Repo Init-Skripte selbst als Skripte im `ui.apps`-Projekt vorhanden sin
 + Gruppen
 + ACLs
 
-Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targeted by runmode, allowing for differences between AEM Author and AEM Publish Services&#39; Repo Init scripts, or even between Envs (Dev, Stage and Prod).
+Repo Init-Skripte werden als `scripts`-Einträge von `RepositoryInitializer`-OSGi-Werkskonfigurationen gespeichert und können daher implizit vom Ausführungsmodus angesprochen werden, wodurch Unterschiede zwischen den Repo Init-Skripten der AEM-Autoren- und AEM-Veröffentlichungsdienste oder sogar zwischen den Umgebungen (Entwicklung, Staging und Produktion) berücksichtigt werden.
 
 Beachten Sie, dass beim Definieren von Benutzern und Gruppen nur Gruppen als Teil der Anwendung betrachtet werden und hier als integraler Bestandteil ihrer Funktion definiert werden sollten. Organisationsbenutzer und -gruppen sollten weiterhin zur Laufzeit in AEM definiert werden. Wenn ein benutzerdefinierter Workflow beispielsweise einer benannten Gruppe Arbeit zuweist, sollte diese Gruppe über Repo Init in der AEM-Anwendung definiert werden. Wenn die Gruppierung jedoch nur organisatorisch ist, z. B. „Petras Team“ und „Stefans Team“, sollten diese am besten zur Laufzeit in AEM definiert und verwaltet werden.
 
@@ -184,6 +194,7 @@ Aufschlüsselung dieser Ordnerstruktur:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >Konventionell werden eingebettete Unterpakete mit dem Suffix `-packages` benannt. Dadurch wird sichergestellt, dass der Bereitstellungs-Code und die Inhaltspakete **nicht** in den Zielordnern eines Unterpakets `/apps/<app-name>/...` bereitgestellt werden, was zu destruktiven und zyklischen Installationsverhalten führt.
@@ -191,8 +202,8 @@ Aufschlüsselung dieser Ordnerstruktur:
 + Der Ordner der dritten Ebene muss
    `application` oder `content` sein.
    + Der `application`-Ordner enthält Code-Pakete
-   + The `content` folder holds content packages
-This folder name must correspond to the [package types](#package-types) of the packages it contains.
+   + Der `content`-Ordner enthält Inhaltspakete
+Dieser Ordnername muss den [Pakettypen](#package-types) der darin enthaltenen Pakete entsprechen.
 + Der Ordner der vierten Ebene enthält die Unterpakete und muss einer der folgenden sein:
    + `install` zur Installation auf **beiden**, AEM Author und AEM Publish
    + `install.author` zur Installation **nur** auf AEM Author
@@ -223,7 +234,7 @@ Fügen Sie einfach die `<filter root="/apps/<my-app>-packages"/>`-Einträge für
 
 ## Einbetten von Drittanbieter-Paketen {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe&#39;s public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+Alle Pakete müssen über das [öffentliche Maven-Artefakt-Repository von Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) oder ein öffentlich zugängliches, referenzierbares Maven-Artefakt-Repository von Drittanbietern verfügbar sein.
 
 Wenn sich die Pakete von Drittanbietern im **öffentlichen Maven-Artefakt-Repository von Adobe** befinden, ist für Adobe Cloud Manager keine weitere Konfiguration erforderlich, um die Artefakte aufzulösen.
 
@@ -239,9 +250,9 @@ Das Hinzufügen von Maven-Abhängigkeiten folgt den Standardpraktiken von Maven,
 
 Um eine ordnungsgemäße Installation der Pakete sicherzustellen, wird empfohlen, Abhängigkeiten zwischen Paketen zu erstellen.
 
-The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
+Die allgemeine Regel ist, dass Pakete mit veränderlichem Inhalt (`ui.content`) vom unveränderlichen Code (`ui.apps`) abhängen sollten, der die Wiedergabe und Verwendung des veränderlichen Inhalts unterstützt.
 
-Eine wichtige Ausnahme von dieser allgemeinen Regel ist, dass das unveränderliche Codepaket (`ui.apps` oder ein anderes) __nur__ OSGi-Pakete enthält. Ist dies der Fall, sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Codepakete, die OSGi-Pakete __nur__ enthalten, nicht mit AEM Package Manager registriert sind. Daher hat jedes AEM-Paket, je nach Paket, eine nicht zufrieden stellende Abhängigkeit und kann nicht installiert werden.
+Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Code-Pakete, die __nur__ OSGi-Bundles enthalten, nicht bei AEM Package Manager registriert sind, sodass jedes davon abhängige AEM-Paket eine unbefriedigende Abhängigkeit aufweist und nicht installiert werden kann.
 
 >[!TIP]
 >
@@ -340,7 +351,7 @@ In der `ui.content/pom.xml` deklariert die `<packageType>content</packageType>`-
 
 ### Markieren von Paketen für die Bereitstellung über Adobe Cloud Manager {#cloud-manager-target}
 
-Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Container-Projekts (`all`), `<cloudManagerTarget>none</cloudManagerTarget>` der `<properties>`-Konfiguration der `filevault-package-maven-plugin`-Plug-in-Deklaration hinzu, um sicherzustellen, dass sie **nicht** von Adobe Cloud Manager bereitgestellt werden. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
+Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Container-Projekts (`all`), `<cloudManagerTarget>none</cloudManagerTarget>` der `<properties>`-Konfiguration der `filevault-package-maven-plugin`-Plug-in-Deklaration hinzu, um sicherzustellen, dass sie **nicht** von Adobe Cloud Manager bereitgestellt werden. Das Container-Paket (`all`) sollte das Einzelpaket sein, das über Cloud Manager bereitgestellt wird. Dadurch werden alle erforderlichen Code- und Inhaltspakete eingebettet.
 
 ```xml
 ...
@@ -492,7 +503,7 @@ Wenn mehrere `/apps/*-packages` in den eingebetteten Zielen verwendet werden, m�
 ### Maven-Repositorys von Drittanbietern {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Durch das Hinzufügen von mehr Maven-Repositorys können die Maven-Buildzeiten verlängert werden, da zusätzliche Maven-Repositorys auf Abhängigkeiten überprüft werden.
+> Das Hinzufügen weiterer Maven-Repositorys kann die Maven-Erstellungszeiten verlängern, da zusätzliche Maven-Repositorys auf Abhängigkeiten überprüft werden.
 
 Fügen Sie im `pom.xml` des Reaktorprojekts alle erforderlichen öffentlichen Maven-Repository-Anweisungen von Drittanbietern hinzu. Die vollständige `<repository>`-Konfiguration sollte beim Repository-Drittanbieter erhältlich sein.
 
