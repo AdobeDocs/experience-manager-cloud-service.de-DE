@@ -2,10 +2,10 @@
 title: 'Verwalten von Aktivitäten '
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 100%
+source-wordcount: '2002'
+ht-degree: 99%
 
 ---
 
@@ -130,7 +130,7 @@ Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht wer
 
 >[!NOTE]
 >
->Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen,
+>Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen, Der Status der Aktivität ändert sich nur, wenn Sie die Seite aktualisieren.
 
 So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
 
