@@ -2,17 +2,17 @@
 title: 'Einrichten dynamischer Medien  '
 description: Zum Einrichten dynamischer Medien müssen Sie dynamische Medien konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 100%
+source-wordcount: '173'
+ht-degree: 84%
 
 ---
 
 
 # Einrichten dynamischer Medien   {#setting-up-dynamic-media}
 
-Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generiert und liefert Dynamic Media durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten vielfältiger Inhalte in Echtzeit.
+[Mithilfe von „Dynamische Medien“ können Sie Assets verwalten, indem Sie umfassende visuelle Merchandising- und Marketing-Assets bei Bedarf übermitteln, und zwar automatisch skaliert für die Verwendung im Web, auf Mobilgeräten und in sozialen Netzwerken. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Mithilfe einer Reihe von primären Quellelementen erstellen und liefern Dynamic Media über ein globales, skalierbares und leistungsoptimiertes Netzwerk mehrere Varianten von Rich-Content in Echtzeit.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
