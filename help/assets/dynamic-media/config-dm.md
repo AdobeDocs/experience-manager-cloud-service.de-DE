@@ -2,10 +2,10 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '5123'
-ht-degree: 99%
+source-wordcount: '5125'
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ Wenn Sie Adobe Experience Manager für unterschiedliche Umgebungen eingerichtet 
 
 Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media.
 
-Mit der neuen Architektur ist AEM für Master-Assets und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
+Mit der neuen Architektur ist AEM für primäre Quellelemente und für die Synchronisierung mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
 
-1. Wenn das Master-Asset in AEM hochgeladen wurde, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
+1. Wenn das primäre Quellelement in AEM hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
 1. Nachdem die Ausgaben erstellt wurden, kann AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 1. Nachdem der Inhalt bereit zur Genehmigung und Veröffentlichung ist, wird der Dynamic Media-Service ausgelöst und pusht Inhalt an Bereitstellungs-Server und Cache-Inhalt in das CDN.
 
@@ -95,7 +95,7 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
-1. Damit dynamische Medieninhalte vor der Veröffentlichung sicher Vorschau werden können, müssen Sie die AEM-Autoreninstanz für die Verbindung mit dynamischen Medien &quot;zulassen&quot;:
+1. Um Inhalte vor der Veröffentlichung sicher zu schützen, müssen Sie die AEM-Autoreninstanz mit &quot;Vorschau&quot;versehen, um eine Verbindung zu Dynamic Media herzustellen:
 
    * Melden Sie sich bei Ihrem Dynamic Media Classic-Konto an: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
    * Klicken Sie in der Navigationsleiste oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
