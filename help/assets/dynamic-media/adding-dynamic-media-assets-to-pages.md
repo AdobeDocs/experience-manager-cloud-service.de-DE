@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
 source-wordcount: '3124'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 >
 >Sie müssen Assets veröffentlichen, um sie Seiten in AEM hinzufügen zu können. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite     {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite       {#adding-a-dynamic-media-component-to-a-page}
 
 Das Hinzufügen einer Komponente zu einer Seite mit 3D-Medien, dynamischen Medien, interaktiven Medien, Panorama-Medien, Smart-Zuschneiden-Video oder Video 360-Medien entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
@@ -29,7 +29,7 @@ Das Hinzufügen einer Komponente zu einer Seite mit 3D-Medien, dynamischen Medie
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Tippen Sie im linken Bereich auf das Symbol **[!UICONTROL Komponenten]** und filtern Sie nach „Dynamic Media“.
 
-   Wenn keine Liste von Komponenten für dynamische Medien verfügbar ist, müssen Sie die Komponenten für dynamische Medien aktivieren, die Sie verwenden möchten. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
+   Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,32 +49,32 @@ Das Hinzufügen einer Komponente zu einer Seite mit 3D-Medien, dynamischen Medie
 
 1. Wenn Sie fertig sind, tippen Sie in der oberen rechten Ecke des Dialogfelds auf das Kontrollkästchen, um Ihre Änderungen zu speichern.
 
-### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+### Aktivieren von Dynamic Media-Komponenten {#enabling-dynamic-media-components}
 
-Wenn keine Komponenten für dynamische Medien verfügbar sind, die einer Seite hinzugefügt werden können, müssen Sie die Komponenten, die Sie verwenden möchten, zunächst aktivieren.
+Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar sind, bedeutet dies wahrscheinlich, dass Sie zunächst die zu verwendenden Komponenten aktivieren müssen.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Tippen Sie auf der linken Seite der Symbolleiste am oberen Rand der Seite auf das Symbol &quot;Seiteninformationen&quot;und dann in der Dropdown-Liste auf Vorlage **[!UICONTROL bearbeiten]** .
+1. Tippen Sie links oben auf der Seite in der Symbolleiste auf das Symbol „Seiteninformationen“ und dann in der Dropdown-Liste auf **[!UICONTROL Vorlage bearbeiten]**.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. Tippen Sie auf der rechten Seite der Symbolleiste am oberen Seitenrand aus der Dropdown-Liste auf **[!UICONTROL Struktur]**.
+1. Tippen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste auf **[!UICONTROL Struktur]**.
 
    ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
 
-1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]** , um die Symbolleiste zu öffnen, und klicken Sie dann auf das Symbol &quot;Richtlinie&quot;.
-1. Stellen Sie auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;unter der Überschrift &quot; **[!UICONTROL Eigenschaften]** &quot;sicher, dass die Registerkarte &quot; **[!UICONTROL Zulässige Komponenten]** &quot;ausgewählt ist.
+1. Tippen Sie unten auf der Seite auf **[!UICONTROL Layout-Container]**, um die Symbolleiste zu öffnen. Tippen Sie anschließend auf das Symbol „Richtlinie“.
+1. Stellen Sie auf der Seite **[!UICONTROL Layout-Container]** unter der Überschrift **[!UICONTROL Eigenschaften]** sicher, dass die Registerkarte **[!UICONTROL Zulässige Komponenten]** ausgewählt ist.
 
-   ![Zulässige Komponenten](/help/assets/assets-dm/allowed-components.png)
+   ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
-1. Führen Sie einen Bildlauf durch, bis **[!UICONTROL dynamische Medien]** angezeigt werden.
-1. Tippen Sie auf das Symbol > links neben **[!UICONTROL Dynamische Medien]** , um die Liste zu erweitern, und wählen Sie die Dynamischen Medienkomponenten aus, die Sie aktivieren möchten.
+1. Scrollen Sie nach unten, bis **[!UICONTROL Dynamic Media]** angezeigt wird.
+1. Tippen Sie links neben **[!UICONTROL Dynamic Media]** auf „>“, um die Liste zu erweitern, und wählen Sie die Dynamic Media-Komponenten aus, die Sie aktivieren möchten.
 
-   ![Liste von Komponenten für dynamische Medien](/help/assets/assets-dm/dm-components-select.png)
+   ![Liste der Dynamic Media-Komponenten](/help/assets/assets-dm/dm-components-select.png)
 
-1. Tippen Sie rechts oben auf der Seite &quot; **[!UICONTROL Layout-Container]** &quot;auf das Symbol Fertig (Häkchen).
+1. Tippen Sie rechts oben auf der Seite **[!UICONTROL Layout-Container]** auf das Symbol „Fertig“ (Häkchen).
 
-1. Tippen Sie auf der rechten Seite der Symbolleiste oben auf der Seite in der Dropdown-Liste auf &quot; **[!UICONTROL Anfänglicher Inhalt]**&quot;und [fügen Sie wie gewohnt einer Seite](#adding-a-dynamic-media-component-to-a-page) eine Komponente für dynamische Medien hinzu.
+1. Tippen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste auf **[!UICONTROL Anfänglicher Inhalt]** und [fügen Sie dann wie gewohnt eine Dynamic Media-Komponente zu einer Seite hinzu](#adding-a-dynamic-media-component-to-a-page).
 
 ## Lokalisieren von Dynamic Media-Komponenten {#localizing-dynamic-media-components}
 
@@ -117,6 +117,7 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -127,7 +128,7 @@ Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellunge
 
 * das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die vor der Aktivierung von dynamischen Medien importiert wurden, verfügen nicht über eine Pyramid TIFF-Datei.
 
-#### Arbeiten mit Bildern     {#when-working-with-images}
+#### Arbeiten mit Bildern       {#when-working-with-images}
 
 Mit der Komponente „Dynamische Medien“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -196,6 +197,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
    * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **Titel**: Ändern Sie den Titel des Videos.
@@ -254,6 +256,7 @@ Die Komponente „Interaktive Medien“ ist eine intelligente Komponente. Je nac
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -295,6 +298,7 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
