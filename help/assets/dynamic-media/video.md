@@ -2,10 +2,10 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 translation-type: tm+mt
-source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '10160'
-ht-degree: 100%
+source-wordcount: '10169'
+ht-degree: 98%
 
 ---
 
@@ -34,12 +34,12 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
       * [Erstellen eines Videokodierungsprofils](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
-   * Verknüpfen Sie das Videoverarbeitungsprofil mit den Ordnern, in die Sie die Master-Videos hochladen.
+   * Verknüpfen Sie das Profil für die Videoverarbeitung mit einem oder mehreren Ordnern, in die Sie Ihre primären Quellvideos hochladen möchten.
 
       * [Anwenden eines Videoprofils auf Ordner](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)
       * Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Weitere Informationen zum [Organisieren digitaler Assets](/help/assets/organize-assets.md)
-   * Laden Sie die Mastervideos in die Ordner hoch. Sie können Videodateien mit bis zu 15 GB pro Datei hochladen. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
+   * Laden Sie Ihre primären Quellvideos in die Ordner hoch. Sie können Videodateien mit bis zu 15 GB pro Datei hochladen. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
       * [Videos hochladen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)
       * Weitere Informationen zu [Unterstützten Eingabedateiformaten](/help/assets/file-format-support.md)
@@ -139,7 +139,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Hochladen von Videos mit zahlreichen unterstützten Video- und Audioformaten und Kodieren von Videos in das MP4 H.264-Format für die Wiedergabe auf mehreren Bildschirmen Sie können vordefinierte adaptive Videovorgaben oder einzelne Videokodierungsvorgaben verwenden bzw. Ihre eigene Kodierung anpassen, um die Qualität und Größe der Videos zu steuern.
 
    * Wenn ein adaptives Videoset generiert wird, umfasst es MP4-Videos.
-   * **Hinweis**: Master-/Quellvideos werden einem adaptiven Videoset nicht hinzugefügt.
+   * **Hinweis**: Primär-/Quellvideos werden keinem adaptiven Videoset hinzugefügt.
 
 * Videountertitelung in allen HTML5-Video-Viewern
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
@@ -305,7 +305,7 @@ Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobe
 
 ### Seitenverhältnis {#aspect-ratio}
 
-Wenn Sie eine Videokodierungsvorgabe für die Mastervideodatei auswählen oder erstellen, achten Sie darauf, dass die Vorgabe dasselbe Seitenverhältnis wie die Mastervideodatei aufweist. Das Seitenverhältnis ist das Verhältnis zwischen Breite und Höhe des Videos.
+Wenn Sie eine Videokodierungsvorgabe für Ihre primäre Quellvideodatei auswählen oder erstellen, stellen Sie sicher, dass die Vorgabe das gleiche Seitenverhältnis wie die primäre Quellvideodatei hat. Das Seitenverhältnis ist das Verhältnis zwischen Breite und Höhe des Videos.
 
 Um das Seitenverhältnis einer Videodatei zu ermitteln, rufen Sie die Metadaten der Datei ab und notieren Sie die Breite und Höhe der Datei (siehe „Abrufen der Metadaten von Dateien“ oben). Ermitteln Sie das Seitenverhältnis dann anhand der folgenden Formel:
 
@@ -372,7 +372,7 @@ Da Auflösung und Datenrate miteinander verknüpft sind, haben Sie beim Kodieren
 * Wählen Sie eine Datenrate und kodieren Sie dann mit der höchsten Auflösung, die mit der gewählten Datenrate eine gute Qualität erzeugt.
 * Wählen Sie eine Auflösung und kodieren Sie dann mit der erforderlichen Datenrate, um hohe Videoqualität mit der gewählten Auflösung zu erreichen.
 
-Orientieren Sie sich beim Auswählen (oder Erstellen) einer Videokodierungsvorgabe für die Mastervideodatei an der folgenden Tabelle, um die richtige Auflösung auszuwählen.
+Wenn Sie eine Videokodierungsvorgabe für Ihre primäre Quellvideodatei auswählen (oder erstellen), verwenden Sie diese Tabelle, um die richtige Auflösung Zielgruppe:
 
 | Auflösung | Höhe (Pixel) | Bildschirmgröße |
 |--- |--- |--- |
@@ -387,7 +387,7 @@ Orientieren Sie sich beim Auswählen (oder Erstellen) einer Videokodierungsvorga
 
 In den USA und Japan werden die meisten Videos mit 29,97 Frames pro Sekunde (fps) aufgenommen, in Europa mit 25 fps. Filme werden mit 24 fps aufgenommen.
 
-Wählen Sie eine Videokodierungsvorgabe aus, die der fps-Rate der jeweiligen Mastervideodatei entspricht. Wenn das Mastervideo beispielsweise 25 fps aufweist, wählen Sie eine Kodierungsvorgabe mit 25 fps. Standardmäßig wird bei jeder benutzerdefinierten Kodierung der fps-Wert der Mastervideodatei verwendet. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Videokodierungsvorgabe erstellen.
+Wählen Sie eine Videokodierungsvorgabe, die der fps-Rate der primären Quellvideodatei entspricht. Wenn Ihr primäres Quellvideo z. B. 25 fps beträgt, wählen Sie eine Kodierungsvorgabe mit 25 fps. Standardmäßig verwendet die gesamte benutzerdefinierte Kodierung die fps der primären Quellvideodatei. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Videokodierungsvorgabe erstellen.
 
 ### Abmessungen bei der Videokodierung {#video-encoding-dimensions}
 
@@ -783,7 +783,7 @@ Sie können auch den Fortschritt der YouTube-Veröffentlichung (oder des Rückg�
 
 Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Publishing-Zeiten können abhängig von zahlreichen Faktoren erheblich variieren, einschließlich Format des Mastervideos, Dateigröße und Upload-Datenverkehr. Der Publishing-Prozess kann einige Minuten bis zu mehrere Stunden dauern. Denken Sie außerdem daran, dass Formate mit höheren Auflösungen sehr viel langsamer angezeigt werden. Die Anzeige von 720p und 1080p beispielsweise dauert sehr viel länger als die Anzeige von 480p.
+Die Veröffentlichungszeit kann stark variieren, je nachdem, welche Faktoren das Format des primären Quellvideos, die Dateigröße und den Upload-Traffic aufweisen. Der Publishing-Prozess kann einige Minuten bis zu mehrere Stunden dauern. Denken Sie außerdem daran, dass Formate mit höheren Auflösungen sehr viel langsamer angezeigt werden. Die Anzeige von 720p und 1080p beispielsweise dauert sehr viel länger als die Anzeige von 480p.
 
 Wenn nach acht Stunden noch immer die Statusmeldung **[!UICONTROL Hochgeladen (Verarbeitung läuft, bitte warten)]** angezeigt wird, entfernen Sie das Video von der Site und laden Sie es erneut hoch.
 
