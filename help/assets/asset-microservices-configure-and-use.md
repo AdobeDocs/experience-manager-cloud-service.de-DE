@@ -101,7 +101,7 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn diese Liste übereinstimmt, wird diese spezielle Darstellung nicht für das Asset generiert (blockierte Liste).
 
-Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulässige Liste).
+Andernfalls wird der MIME-Typ mit dem eingeschlossenen MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulässige Liste).
 
 #### Spezielle FPO-Ausgabe {#special-fpo-rendition}
 
