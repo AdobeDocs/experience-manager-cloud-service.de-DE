@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
 source-wordcount: '4419'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -200,7 +200,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Löschen eines Ausgabeformats**
 
-   Wählen Sie im Bereich **[!UICONTROL Ausgabeformate]** ein Ausgabeformat aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabeformat löschen.]** Darstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie anpassen, [!DNL Experience Manager] um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
+   Wählen Sie im Bereich **[!UICONTROL Ausgabedarstellungen]** eine Ausgabedarstellung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung löschen]**. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -273,7 +273,7 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
 1. Navigieren Sie zum Speicherort der Assets/Ordner, die Sie veröffentlichen möchten.
 
-1. Wählen Sie entweder die Schnellaktion **[!UICONTROL Veröffentlichen]** auf der Asset-Karte aus oder wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Schnell veröffentlichen]**.
+1. Wählen Sie entweder die Schnellaktion **[!UICONTROL Veröffentlichen]** auf der Asset-Karte aus oder wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Quick Publish]**.
 1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die entweder unveröffentlicht sind oder seit der letzten Veröffentlichung/Aufhebung der Veröffentlichung geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -334,7 +334,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets     {#search-assets}
+## Suchen von Assets       {#search-assets}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -430,7 +430,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Tippen oder klicken Sie in einem der folgenden Elemente auf das Symbol **[!UICONTROL Anmerken]**:
 
    * [Schnellaktionen](#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
