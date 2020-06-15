@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 
-1. Auf einer hohen Ebene von AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
+1. Auf einer hohen Ebene in AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
 <!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
@@ -83,6 +83,10 @@ Indexdefinitionen sind jetzt als benutzerdefiniert und als Version gekennzeichne
 Um einen Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) daher über Git und den `ui.apps` Cloud Manager-Bereitstellungsprozess bereitgestellt werden.
 
 Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung über Cloud Manager bereitgestellt werden. Bei der Bereitstellung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB bzw. dem Azurblauen Segment Store für Autoren- bzw. Veröffentlichungszwecke verantwortlich sind. Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu deklariert, bevor der Blue-Green-Switch stattfindet.
+
+>[!TIP]
+>
+>Weitere Informationen zur erforderlichen Paketstruktur für AEM als Cloud-Dienst finden Sie in der Dokument- [AEM-Projektstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Indexverwaltung unter Verwendung von Blue-Green-Bereitstellungen {#index-management-using-blue-green-deployments}
 
