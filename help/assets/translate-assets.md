@@ -244,7 +244,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Cloud Services]**.
-1. Wählen Sie aus der Liste „Cloud-Service-Konfigurationen“ den gewünschten Übersetzungsanbieter aus. Wenn Sie beispielsweise Übersetzungsdienste von Microsoft nutzen möchten, wählen Sie **[!UICONTROL Microsoft Translator]** aus.
+1. Wählen Sie aus der Liste „Cloud Service-Konfigurationen“ den gewünschten Übersetzungsanbieter aus. Wenn Sie beispielsweise Übersetzungsdienste von Microsoft nutzen möchten, wählen Sie **[!UICONTROL Microsoft Translator]** aus.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
