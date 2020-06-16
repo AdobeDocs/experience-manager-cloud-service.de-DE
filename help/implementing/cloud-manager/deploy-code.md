@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '912'
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfigurier
 
 
 
->Vorsicht:
+>[!IMPORTANT]:
 >Die folgenden Abschnitte müssen für Cloud Manager für AEM Cloud Services aktualisiert werden und sind derzeit in Bearbeitung.
 
 ## Bereitstellungsprozess {#deployment-process}
@@ -103,7 +103,7 @@ Wenn Cloud Manager in produktionsfremden Topologien bereitgestellt wird, besteht
 
    >[!NOTE]
    >
-   >Sie können Änderungen des Lastenausgleichs in Entwicklungs- und Bereitstellungen überspringen, d. h. die Schritte trennen und an beiden nicht in der Produktion befindlichen Pipelines, für Entwickler-Umgebung und die Produktionsleitung für Stage-Umgebung anhängen.
+   >Sie können Änderungen am Load-Balancer in Entwicklungs- und Staging-Implementierungen überspringen, d. h. das Trennen und Anfügen in beiden produktionsfremden Pipelines bei Entwicklungsumgebungen und in der Produktions-Pipeline bei Staging-Umgebungen.
 
 ### Bereitstellung in der Produktionsphase {#deployment-production-phase}
 
