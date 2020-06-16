@@ -3,42 +3,49 @@ title: Herunterladen von Assets aus AEM
 description: Erfahren Sie, wie Sie Assets aus AEM herunterladen und die Download-Funktion aktivieren oder deaktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '771'
+ht-degree: 56%
 
 ---
 
 
-# Herunterladen von Assets aus AEM  {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Sie können Assets einschließlich der statischen und dynamischen Ausgabeformate herunterladen. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. Die komprimierte ZIP-Datei hat eine maximale Dateigröße von 1 GB für den Exportauftrag. Maximal 500 Gesamt-Assets pro Exportauftrag sind zulässig.
+Sie können Assets einschließlich der statischen und dynamischen Ausgabeformate herunterladen. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. Die komprimierte ZIP-Datei hat eine maximale Dateigröße von 1 GB für den Exportauftrag. Es sind maximal 500 Assets pro Exportauftrag zulässig.
 
 >[!NOTE]
 >
->Um die Assets herunterladen zu können, müssen diese Mitglieder über die Berechtigung zum Starten von Workflows verfügen, die das Herunterladen von Assets auslösen.
-
-Um Assets herunterzuladen, navigieren Sie zu einem Asset, wählen Sie das Asset aus und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Herunterladen]**. Geben Sie im dann angezeigten Dialogfeld die Download-Optionen an.
+>Empfänger von E-Mails müssen Mitglieder der Gruppe `dam-users` sein, um auf den ZIP-Download-Link in der E-Mail zugreifen zu können. Um die Assets herunterladen zu können, müssen diese Mitglieder über die Berechtigung zum Starten von Workflows verfügen, die das Herunterladen von Assets auslösen.
 
 Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und „Karussellset“ können nicht heruntergeladen werden.
 
-![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](assets/asset_download_dialog.png)
+**So laden Sie Assets herunter,**
 
-*Abbildung: Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets.*
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
+1. Wählen Sie den Ordner oder einen oder mehrere Assets im Ordner aus.
+1. On the toolbar, tap **[!UICONTROL Download]**.
 
-Im Folgenden finden Sie die Export-/Download-Optionen. Dynamische Ausgabeformate gibt es nur in Dynamic Media. Damit können Sie Ausgabeformate zusätzlich zum ausgewählten Asset direkt generieren. Diese Option steht nur zur Verfügung, wenn Sie Dynamic Media aktiviert haben.
+   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download.png)
 
-| Export- oder Download-Optionen | Beschreibungen |
-|---|---|
-| [!UICONTROL Assets] | Wählen Sie diese Option, um das Asset in seiner Originalform ohne Ausgabeformate herunterzuladen. |
-| [!UICONTROL Ausgabeformate] | Das Ausgabeformat ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabeformate auswählen, die heruntergeladen werden sollen. Die verfügbaren Ausgabeformate hängen von dem von Ihnen ausgewählten Asset ab. |
-| [!UICONTROL Dynamische Ausgabeformate] | Ein dynamisches Ausgabeformat generiert direkt andere Ausgabeformate. Wenn Sie diese Option auswählen, wählen Sie auch die Ausgabeformate aus, die Sie dynamisch erstellen möchten, indem Sie aus der Liste der Bildvorgaben auswählen. Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). |
-| [!UICONTROL Separaten Ordner für jedes Asset erstellen] | Wählen Sie diese Option aus, um die Ordnerhierarchie beim Herunterladen der Assets beizubehalten. Standardmäßig wird die Ordnerhierarchie ignoriert und alle Assets werden in einen Ordner auf Ihrem lokalen System heruntergeladen. |
+   *Optionen des Dialogfelds &quot;Herunterladen&quot;.*
 
-Die Option „Ausgabeformate“ ist verfügbar, wenn das Asset über Ausgabeformate verfügt. Die Option „Teilassets“ ist verfügbar, wenn das Asset Teilassets enthält.
+1. Wählen Sie im Dialogfeld &quot;Herunterladen&quot;die gewünschten Download-Optionen aus.
 
-Wenn Sie einen Ordner zum Herunterladen auswählen, wird die komplette Asset-Hierarchie unter dem Ordner heruntergeladen. Um jedes heruntergeladene Asset (einschließlich Assets in untergeordneten Ordnern) in einem eigenen Ordner abzulegen, wählen Sie die Option **[!UICONTROL Separaten Ordner für jedes Asset erstellen]**.
+   | Download-Option | Beschreibung |
+   |---|---|
+   | **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** | Wählen Sie diese Option, um alle Assets, die Sie herunterladen, einschließlich Assets in untergeordneten Ordnern, die im übergeordneten Ordner des Assets verschachtelt sind, in einen Ordner auf Ihrem lokalen Computer einzuschließen. Wenn diese Option *nicht* ausgewählt ist, wird standardmäßig die Ordnerhierarchie ignoriert und alle Assets werden in einen Ordner auf Ihrem lokalen Computer heruntergeladen. |
+   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung an den Empfänger zu senden. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Bereitstellung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können benutzerdefinierte Vorlagen für Mandanten an folgenden Speicherorten speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seinem ursprünglichen Formular ohne Darstellungen herunterzuladen.<br>Die Option für Teilassets ist verfügbar, wenn das ursprüngliche Asset Teilassets enthält. |
+   | **[!UICONTROL Ausgabeformat(e)]** | Das Ausgabeformat ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabeformate auswählen, die heruntergeladen werden sollen. Die verfügbaren Darstellungen hängen vom ausgewählten Asset ab. |
+   | **[!UICONTROL Intelligentes Zuschneiden]** | Wählen Sie diese Option, um alle Smart-Schnittdarstellungen des ausgewählten Assets aus AEM herunterzuladen. Eine ZIP-Datei mit den Smart-Zuschneidedarstellungen wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
+   | **[!UICONTROL Dynamische Ausgabe(n)]** | Wählen Sie diese Option, um eine Reihe von alternativen Darstellungen in Echtzeit zu erstellen. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>Darüber hinaus können Sie die Größe und Maßeinheit, das Format, den Farbraum, die Auflösung und optionale Bildmodifikatoren wie das Invertieren des Bildes auswählen. Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
+
+1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
+
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
