@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer-Tool
 description: Übersicht über das Content Transfer-Tool
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 83%
+ht-degree: 75%
 
 ---
 
@@ -49,7 +49,7 @@ Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practice
 
 * Es ist ratsam, die Überprüfungen zu Komprimierung und Konsistenz der Datenspeicher in den Repositorys vorab durchzuführen, um potenzielle Probleme zu erkennen und den im Repository vorhandenen Datenmüll zu reduzieren.
 
-* Wenn das Content Delivery Network (CDN) von AEM Cloud Author so konfiguriert ist, dass eine Whitelist von IPs vorliegt, sollte sichergestellt werden, dass die IPs der Quellumgebung auch der Whitelist hinzugefügt werden, damit die Quellumgebung und die AEM Cloud-Umgebung miteinander kommunizieren können.
+* Wenn die Konfiguration des AEM Cloud Author Content Versand Network (CDN) so konfiguriert ist, dass eine Whitelist von IPs vorliegt, muss sichergestellt werden, dass die IP-Adresse der Quelldatei auch dem Umgebung hinzugefügt wird, damit die Quellcode-Umgebung und die AEM Cloud-Umgebung miteinander kommunizieren können.
 
 * In der Aufnahmephase wird empfohlen, die Aufnahme mit aktiviertem *Wischmodus* auszuführen, wobei das vorhandene Repository (Autor oder Veröffentlichung) in der Zielumgebung von AEM Cloud Service vollständig gelöscht und dann mit den Migrationssatzdaten aktualisiert wird. Dieser Modus ist viel schneller als der Nicht-Löschmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
 
