@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Wenn sowohl ein HTTP-Header als auch ein entsprechender Parameter für die Abfra
 Die Generierung des Berichts über die HTTP-Oberfläche kann einfach mit dem folgenden Befehl initiiert werden:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Nachdem eine Anforderung gestellt wurde, muss der Client nicht aktiv bleiben, damit der Bericht generiert wird. Die Berichtgenerierung könnte mit einem Client über eine HTTP GET-Anforderung initiiert und nach der Berichterstellung aus dem Cache eines anderen Clients oder dem CSV-Tool in der AEM-Instanz angezeigt werden.
+Nachdem eine Anforderung gestellt wurde, muss der Client nicht aktiv bleiben, damit der Bericht generiert wird. Die Berichtgenerierung kann mit einem Client über eine HTTP GET-Anforderung initiiert und nach der Berichterstellung aus dem Cache eines anderen Clients oder dem CSV-Tool in der Benutzeroberfläche von AEM angezeigt werden.
 
 ### Antworten (#http-response)
 
