@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,13 @@ Gehen Sie wie folgt vor, um die wichtigen Überlegungen beim Ausführen des Clou
 Der Cloud Readiness Analyzer kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Laden Sie den Cloud Readiness Analyzer aus dem Software Distribution Portal *ausstehend* herunter.
+>Laden Sie den Cloud Readiness Analyzer vom Software Distribution Portal herunter.
 
-## Ausführen des Cloud Readiness Analyzer {#running-tool}
+## Ansicht des Berichts &quot;Cloud-Bereitschaftsanalysebericht&quot; {#viewing-report}
 
-In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
+### Adobe Experience Manager 6.3 und höher {#aem-later-versions}
+
+In diesem Abschnitt erfahren Sie, wie Sie den Bericht &quot;Cloud-Bereitschaftsanalyzer&quot;Ansicht haben:
 
 1. Wählen Sie Adobe Experience Manager und navigieren Sie zu Tools -> **Vorgänge** -> **Cloud Readiness Analyzer**.
 
@@ -51,41 +53,11 @@ In diesem Abschnitt erfahren Sie, wie Sie Cloud Readiness Analyzer ausführen:
    >[!NOTE]
    >Sie müssen einen Bildlauf nach unten durchführen, um den vollständigen Bericht Ansicht.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Interpretieren des Berichts &quot;Cloud-Bereitschaftsanalysator&quot; {#cra-report}
-
-Wenn der Cloud Readiness Analyzer in der AEM-Instanz ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
-
-Das Format des Berichts lautet:
-
-* *Berichtsübersicht*: Informationen zum Bericht selbst, einschließlich des Zeitpunkts seiner Erstellung.
-* *Systemübersicht*: Informationen zum AEM-System, auf dem die CRA ausgeführt wurde.
-* *Suchen von Kategorien*: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie ansprechen. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Bedeutung der Suche, Zusammenfassung, Link zur Dokumentation der Kategorie und individuelle Suchinformationen.
-
-Jedem Ergebnis wird eine wichtige Priorität zugewiesen, um eine ungefähre Priorität für Maßnahmen anzugeben.
-
-Befolgen Sie die folgende Tabelle, um die wichtigen Ebenen zu verstehen:
-
-| Importance | Beschreibung |
-|--- |--- |
-| INFO | Diese Ergebnisse werden zu Informationszwecken bereitgestellt. |
-| BERATUNG | Diese Feststellung stellt möglicherweise ein Problem bei der Aktualisierung dar. Weitere Untersuchungen werden empfohlen. |
-| MAJOR | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden sollte. |
-| KRITISCH | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
-
-### Adobe Experience Manager 6.3 und höher {#aem-older-version}
-
-Für AEM 6.3 und höher besteht die primäre Möglichkeit zum Ausführen von Cloud Readiness Analyzer in folgenden Schritten:
-
-1. Wählen Sie die Instanz des Adobe Experience Managers aus und navigieren Sie zu Tools -> **Vorgänge** -> **Cloud Readiness Analyzer**.
-
-   >[!NOTE]
-   >Die Ratingagentur beginnt mit einem Hintergrundprozess, um den Bericht zu generieren, sobald das Tool geöffnet wird. Es wird ein Hinweis angezeigt, dass die Berichtgenerierung läuft, bis der Bericht fertig ist. Sie können die Browser-Registerkarte schließen und zu einem späteren Zeitpunkt zur Ansicht des Berichts zurückkehren, sobald dieser abgeschlossen ist.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht in Form von CSV (kommagetrennten Werten) herunterzuladen. Klicken Sie auf **CSV** , um den vollständigen CRA-Bericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >Sie können die CRA zwingen, ihren Cache zu leeren und den Bericht neu zu generieren, indem Sie auf Bericht **aktualisieren** klicken.
@@ -98,6 +70,32 @@ In Adobe Experience Manager 6.1 funktioniert das Tool nicht und es kann nur die 
 
 >[!NOTE]
 >In allen Versionen kann der enthaltene Musterdetektor unabhängig ausgeführt werden.
+
+## Interpretieren des Berichts &quot;Cloud-Bereitschaftsanalysator&quot; {#cra-report}
+
+Wenn das Cloud Readiness Analyzer-Tool in der AEM-Instanz ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
+
+Das Format des Berichts lautet:
+
+* **Berichtsübersicht**: Informationen über den Bericht selbst und Informationen wie:
+   * *Berichtszeit*: Zeitpunkt der Erstellung und erstmaligen Bereitstellung des Berichtinhalts.
+   * *Ablaufzeit*: Wenn der Inhalt des Berichts abläuft, läuft der Cache ab.
+   * *Erstellungszeitraum*: Die Zeit, die beim Generieren des Berichtinhalts verbracht wird.
+   * *Suchzähler*: Die Gesamtzahl der im Bericht enthaltenen Feststellungen.
+* **Systemübersicht**: Informationen zum AEM-System, auf dem die CRA ausgeführt wurde.
+* **Suchen von Kategorien**: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie ansprechen. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Bedeutung der Suche, Zusammenfassung, Link zur Dokumentation der Kategorie und individuelle Suchinformationen.
+
+Jedem Ergebnis wird eine wichtige Priorität zugewiesen, um eine ungefähre Priorität für Maßnahmen anzugeben.
+
+Befolgen Sie die folgende Tabelle, um die wichtigen Ebenen zu verstehen:
+
+| Importance | Beschreibung |
+|--- |--- |
+| INFO | Diese Ergebnisse werden zu Informationszwecken bereitgestellt. |
+| BERATUNG | Diese Feststellung stellt möglicherweise ein Problem bei der Aktualisierung dar. Weitere Untersuchungen werden empfohlen. |
+| MAJOR | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden sollte. |
+| KRITISCH | Diese Feststellung ist wahrscheinlich ein Aktualisierungsfehler, der behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
+
 
 ## Interpretieren des CSV-Berichts zur Cloud-Bereitschaftsanalyse {#cra-csv-report}
 
