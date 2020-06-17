@@ -2,9 +2,9 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 96%
 
 ---
@@ -236,7 +236,7 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Direktiven finden, indem sie &quot;Validator Whitelist&quot;im SDK ausführen, wie oben beschrieben.
+Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Richtlinien finden, indem sie den Befehl validator&#39;s ausführen, wie oben beschrieben im SDK.
 
 Die zulassungsliste enthält eine Liste von Apache-Direktiven, die in einer Kundenkonfiguration zulässig sind. Wenn eine Direktive nicht auf die Zulassungsliste gesetzt ist, protokolliert das Tool einen Fehler und gibt einen Ausstiegscode von 0 zurück. Wenn in der Befehlszeile kein zulassungsliste angegeben ist (was auch beim Aufrufen der erforderlich ist), verwendet das Tool eine standardmäßige zulassungsliste, die Cloud Manager zur Überprüfung verwendet, bevor es in Cloud-Umgebung bereitgestellt wird.
 
