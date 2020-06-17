@@ -2,10 +2,10 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 100%
+source-wordcount: '3913'
+ht-degree: 96%
 
 ---
 
@@ -197,7 +197,7 @@ Das Validierungs-Tool ist im SDK `bin/validator` als macOS-, Linux- oder Windows
 
 Es wird wie folgt aufgerufen: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Das Tool validiert die Apache- und Dispatcher-Konfiguration. Es scannt alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` und prüft, ob nur in der Whitelist eingetragene Direktiven verwendet werden. Die in den Apache-Konfigurationsdateien zulässigen Direktiven können aufgelistet werden, indem Sie den Whitelist-Befehl des Validators ausführen:
+Das Tool validiert die Apache- und Dispatcher-Konfiguration. It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. Die in den Apache-Konfigurationsdateien zulässigen Richtlinien können aufgelistet werden, indem Sie den Befehl zulassungsliste des Validators ausführen:
 
 ```
 $ validator whitelist
@@ -236,9 +236,9 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Direktiven finden, indem sie im SDK „validator whitelist“ ausführen, wie in der Dokumentation zu Dispatcher Tools beschrieben.
+Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Direktiven finden, indem sie &quot;Validator Whitelist&quot;im SDK ausführen, wie oben beschrieben.
 
-Die Whitelist enthält eine Liste der Apache-Direktiven, die in einer Kundenkonfiguration zulässig sind. Wenn eine Direktive nicht in der Whitelist enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code von 0 zurück. Wenn in der Befehlszeile keine Whitelist angegeben ist (auf diese Weise sollte sie aufgerufen werden), verwendet das Tool eine standardmäßige Whitelist, die Cloud Manager vor der Bereitstellung in Cloud-Umgebungen zur Validierung nutzt.
+Die zulassungsliste enthält eine Liste von Apache-Direktiven, die in einer Kundenkonfiguration zulässig sind. Wenn eine Direktive nicht auf die Zulassungsliste gesetzt ist, protokolliert das Tool einen Fehler und gibt einen Ausstiegscode von 0 zurück. Wenn in der Befehlszeile kein zulassungsliste angegeben ist (was auch beim Aufrufen der erforderlich ist), verwendet das Tool eine standardmäßige zulassungsliste, die Cloud Manager zur Überprüfung verwendet, bevor es in Cloud-Umgebung bereitgestellt wird.
 
 Außerdem werden alle Dateien mit dem Muster `conf.dispatcher.d/enabled_farms/*.farm` gescannt und folgende Punkte geprüft:
 
@@ -256,7 +256,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Direktiven meldet, die nicht in der Whitelist enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
+Beachten Sie, dass das Validierungstool nur die verbotene Verwendung von Apache-Direktiven meldet, die nicht auf die Zulassungsliste gesetzt wurden. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
 
 Wenn keine Validierungsfehler gemeldet werden, kann Ihre Konfiguration bereitgestellt werden.
 
@@ -520,7 +520,7 @@ Wenn `conf.d/variables` jetzt eine einzelne Datei enthält, sollte sie in `custo
 
 Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die `Include`-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 
-### Whitelists entfernen
+### Entfernen von zulassungsliste
 
 Entfernen Sie den Ordner `conf.d/whitelists` und entfernen Sie `Include`-Anweisungen in den Virtual-Host-Dateien, die auf eine Datei in diesem Unterordner verweisen.
 
@@ -541,7 +541,7 @@ $ validator httpd .
 
 Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
-Wenn Sie Apache-Direktiven sehen, die nicht in der Whitelist enthalten sind, entfernen Sie sie.
+Wenn Sie keine Apache-Direktiven sehen, die nicht auf die Zulassungsliste gesetzt sind, entfernen Sie sie.
 
 ### Alle Nicht-Publish-Farmen entfernen
 
