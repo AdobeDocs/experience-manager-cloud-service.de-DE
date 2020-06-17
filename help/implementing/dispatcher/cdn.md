@@ -1,16 +1,16 @@
 ---
-title: CDN in AEM als Cloud-Dienst
-description: CDN in AEM als Cloud-Dienst
+title: CDN in AEM als Cloud Service
+description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 42%
+ht-degree: 40%
 
 ---
 
 
-# CDN in AEM als Cloud-Dienst {#cdn}
+# CDN in AEM als Cloud Service {#cdn}
 
 AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Anwendungen konfiguriert.
 
@@ -24,7 +24,7 @@ Führen Sie folgende Schritte aus, um sich auf den Content Versand vorzubereiten
    **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate.
 1. Informieren Sie den Kundensupport:
    * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
-   * wenn eine IP-Whitelist erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
+   * wenn eine IP-auf die Zulassungsliste setz erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
 1. Koordinieren Sie sich mit dem Kundensupport über den Zeitpunkt der erforderlichen Änderungen an den DNS-Datensätzen. Die Anweisungen unterscheiden sich je nach Bedarf:
    * Wenn kein Beispieldatensatz benötigt wird, sollten Kunden den CNAME-DNS-Datensatz so einstellen, dass er auf den FQDN verweist `cdn.adobeaemcloud.com`.
    * Wenn ein Beispieldatensatz benötigt wird, erstellen Sie einen A-Datensatz, der auf die folgenden IPs verweist: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Kunden benötigen einen ex Record, wenn der gewünschte FQDN mit der DNS-Zone übereinstimmt. Dies kann mithilfe des UNIX-Befehls dig getestet werden, um zu sehen, ob der SOA-Wert der Ausgabe mit der Domäne übereinstimmt. Der Befehl `dig anything.dev.adobeaemcloud.com` gibt beispielsweise eine SOA (den Beginn der Behörde, d. h. die Zone) zurück, `dev.adobeaemcloud.com` sodass es kein APEX-Datensatz gibt, während eine SOA zurückgegeben wird, `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` sodass es sich um einen Apex-Datensatz handelt.
@@ -40,7 +40,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 * Der Kunde muss über ein vorhandenes CDN verfügen, das nur mit Mühe ersetzt werden kann.
 * Der Kunde muss es verwalten.
-* Der Kunde muss in der Lage sein, das CDN für die Verwendung mit AEM als Cloud-Dienst zu konfigurieren - siehe die Konfigurationsanweisungen unten.
+* Der Kunde muss in der Lage sein, das CDN für die Verwendung mit AEM als Cloud Service zu konfigurieren - siehe die Konfigurationsanweisungen unten.
 * Kunden müssen über technische CDN-Experten verfügen, die im Falle von Problemen im Zusammenhang mit dem Kundenservice jederzeit erreichbar sind.
 * Der Kunde muss vor der Produktion einen Lasttest durchführen und erfolgreich bestehen.
 
