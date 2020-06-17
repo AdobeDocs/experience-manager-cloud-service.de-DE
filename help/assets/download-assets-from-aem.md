@@ -3,7 +3,7 @@ title: Herunterladen von Assets aus AEM
 description: Erfahren Sie, wie Sie Assets aus AEM herunterladen und die Download-Funktion aktivieren oder deaktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 56%
@@ -29,7 +29,7 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und
 1. Wählen Sie den Ordner oder einen oder mehrere Assets im Ordner aus.
 1. On the toolbar, tap **[!UICONTROL Download]**.
 
-   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download.png)
+   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download1.png)
 
    *Optionen des Dialogfelds &quot;Herunterladen&quot;.*
 
