@@ -2,7 +2,7 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
+source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 1%
@@ -164,7 +164,7 @@ Die folgenden Antwortwerte sind möglich:
 
 * `200 OK`: Die Antwort enthält Ergebnisse des Musterdetektors, die während der Frischheitsdauer des Zwischenspeichers generiert wurden.
 * `202 Accepted, processing cache`: Es wurden asynchrone Antworten bereitgestellt, um anzuzeigen, dass der Cache nicht mehr verfügbar war und dass eine Aktualisierung ausgeführt wird.
-* `400 Bad Request`: Gibt an, dass bei der Anforderung ein Fehler aufgetreten ist. Eine Meldung im Format Problemdetails (siehe [RFC 7807](https://tools.ietf.org/html/rfc7807)) enthält weitere Details.
+* `400 Bad Request`: Gibt an, dass bei der Anforderung ein Fehler aufgetreten ist. Eine Meldung im Format Problemdetails (siehe [RFC 7807](https://tools.ietf.org/html/rfc7807)) für weitere Informationen.
 * `401 Unauthorized`: Der Antrag wurde nicht genehmigt.
 * `500 Internal Server Error`: Gibt an, dass ein interner Serverfehler aufgetreten ist. Eine Meldung im Format Problemdetails enthält weitere Details.
 * `503 Service Unavailable`: Gibt an, dass der Server mit einer anderen Antwort beschäftigt ist und diese Anforderung nicht zeitnah bearbeiten kann. Dies tritt nur bei synchronen Anfragen auf. Eine Meldung im Format Problemdetails enthält weitere Details.
