@@ -2,9 +2,9 @@
 title: Überblick über Cloud-Bereitschaftsanalysator
 description: Überblick über Cloud-Bereitschaftsanalysator
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösunge
 >[!NOTE]
 >Der Bericht &quot;Cloud-Bereitschaftsanalysator&quot;beschleunigt den Prozess der Schätzung der Zeit und Kosten, die für die Transition zu AEM als Cloud Service erforderlich sind, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
 
-Sie können den Bericht Cloud-Bereitschaftsanalyzer auch von Ihrer AEM-Instanz herunterladen. Weitere Informationen finden Sie unter Ergebnisse in einem CSV-Format **anzeigen** .
+Sie können den Bericht Cloud-Bereitschaftsanalyzer auch von Ihrer AEM-Instanz herunterladen. Weitere Informationen finden Sie unter [Anzeigen des Berichts](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) zur Cloud-Bereitschaftsanalyse.
