@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 1%
 
 ## Wichtige Überlegungen zur Verwendung von Cloud Readiness Analyzer {#imp-considerations}
 
-Gehen Sie wie folgt vor, um die wichtigen Überlegungen beim Ausführen des Cloud Readiness Analyzer (CRA) zu verstehen:
+Gehen Sie wie folgt vor, um die wichtigen Überlegungen zum Ausführen des Cloud Readiness Analyzer (CRA) zu verstehen:
 
 * Der CRA-Bericht wird mit der Ausgabe des [Musterdetektors](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)für Adobe Experience Manager (AEM) erstellt. Die von CRA verwendete Version des Musterdetektors ist im CRA-Installationspaket enthalten.
 
-* Die CRA kann nur vom **Administrator** oder einem Benutzer in den **Administratoren** ausgeführt werden.
+* Die CRA kann nur vom **Administrator** -Benutzer oder einem Benutzer der **Administratorgruppe** ausgeführt werden.
 
 * CRA wird auf AEM-Instanzen mit Version 6.1 und höher unterstützt.
 
 * CRA kann auf jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, sie auf einer *Stage* -Umgebung auszuführen.
 
    >[!NOTE]
-   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, CRA auf einer *Author* -Umgebung auszuführen, die der *Production* -Umgebung in den Bereichen Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen so nahe wie möglich ist. Alternativ kann es auf einem Klon der Produktionsautor- *Umgebung* ausgeführt werden.
+   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, dass Sie CRA auf einer *Author* -Umgebung ausführen, die der *Production* -Umgebung in den Bereichen Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen so nahe wie möglich ist. Alternativ kann es auf einem Klon der Produktionsautor- *Umgebung* ausgeführt werden.
 
 * Die Generierung von CRA-Berichtinhalten kann sehr lange dauern, von einigen Minuten bis zu einigen Stunden. Die benötigte Zeit hängt in hohem Maße von der Größe und Art des AEM-Repository-Inhalts, der AEM-Version und anderen Faktoren ab.
 
@@ -55,7 +55,7 @@ In diesem Abschnitt erfahren Sie, wie Sie den Bericht &quot;Cloud-Bereitschaftsa
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Nachdem der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht in Form von CSV (kommagetrennten Werten) herunterzuladen. Klicken Sie auf **CSV** , um den vollständigen CRA-Bericht im CSV-Format (CSV) herunterzuladen, wie in der folgenden Abbildung dargestellt.
+1. Sobald der CRA-Bericht generiert und angezeigt wurde, haben Sie die Möglichkeit, den Bericht im CSV-Format (CSV) herunterzuladen, indem Sie auf **CSV** klicken, wie in der folgenden Abbildung dargestellt.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Wenn das Cloud Readiness Analyzer-Tool in der AEM-Instanz ausgeführt wird, wird
 
 Das Format des Berichts lautet:
 
-* **Berichtsübersicht**: Informationen zum Bericht selbst und enthält die folgenden Informationen:
+* **Berichtsübersicht**: Informationen zum Bericht selbst, die die folgenden Informationen enthalten:
    * **Berichtszeit**: Zeitpunkt der Erstellung und erstmaligen Bereitstellung des Berichtinhalts.
    * **Ablaufzeit**: Wenn der Inhalt des Berichts abläuft, läuft der Cache ab.
    * **Erstellungszeitraum**: Die Zeit, die beim Generieren des Berichtinhalts verbracht wird.
@@ -176,7 +176,7 @@ Die standardmäßige CRA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option z
 Der Wert für die Cache-Lebensdauer wird als `maxCacheAge` Eigenschaft auf dem folgenden Repository-Knoten gespeichert:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mit CRXDE Lite anpassen.
+Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mit CRX/DE Lite anpassen.
 
 
 
