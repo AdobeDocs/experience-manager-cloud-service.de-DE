@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Die Generierung des Berichts über die HTTP-Oberfläche kann einfach mit dem fol
 
 Nachdem eine Anforderung gestellt wurde, muss der Client nicht aktiv bleiben, damit der Bericht generiert wird. Die Berichtgenerierung kann mit einem Client über eine HTTP GET-Anforderung initiiert und nach der Berichterstellung aus dem Cache eines anderen Clients oder dem CSV-Tool in der Benutzeroberfläche von AEM angezeigt werden.
 
-### Antworten (#http-response)
+### Antworten {#http-responses}
 
 Die folgenden Antwortwerte sind möglich:
 
