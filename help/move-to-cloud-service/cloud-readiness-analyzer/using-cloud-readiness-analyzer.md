@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Der Cloud Readiness Analyzer kann als ZIP-Datei vom Software Distribution Portal
 
 ## Ansicht des Berichts &quot;Cloud-Bereitschaftsanalysebericht&quot; {#viewing-report}
 
-### Adobe Experience Manager 6.3 und höher {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 und höher {#aem-later-versions}
 
 In diesem Abschnitt erfahren Sie, wie Sie den Bericht &quot;Cloud-Bereitschaftsanalyzer&quot;Ansicht haben:
 
@@ -64,7 +64,7 @@ In diesem Abschnitt erfahren Sie, wie Sie den Bericht &quot;Cloud-Bereitschaftsa
 
 ### Adobe Experience Manager 6.2 und 6.1 {#aem-specific-versions}
 
-Der Cloud Readiness Analyzer ist in Adobe Experience Manager 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt.
+Das Cloud Readiness Analyzer-Tool ist in Adobe Experience Manager 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt.
 
 In Adobe Experience Manager 6.1 funktioniert das Tool nicht und es kann nur die HTTP-Schnittstelle verwendet werden.
 
@@ -77,11 +77,11 @@ Wenn das Cloud Readiness Analyzer-Tool in der AEM-Instanz ausgeführt wird, wird
 
 Das Format des Berichts lautet:
 
-* **Berichtsübersicht**: Informationen über den Bericht selbst und Informationen wie:
-   * *Berichtszeit*: Zeitpunkt der Erstellung und erstmaligen Bereitstellung des Berichtinhalts.
-   * *Ablaufzeit*: Wenn der Inhalt des Berichts abläuft, läuft der Cache ab.
-   * *Erstellungszeitraum*: Die Zeit, die beim Generieren des Berichtinhalts verbracht wird.
-   * *Suchzähler*: Die Gesamtzahl der im Bericht enthaltenen Feststellungen.
+* **Berichtsübersicht**: Informationen zum Bericht selbst und enthält die folgenden Informationen:
+   * **Berichtszeit**: Zeitpunkt der Erstellung und erstmaligen Bereitstellung des Berichtinhalts.
+   * **Ablaufzeit**: Wenn der Inhalt des Berichts abläuft, läuft der Cache ab.
+   * **Erstellungszeitraum**: Die Zeit, die beim Generieren des Berichtinhalts verbracht wird.
+   * **Suchzähler**: Die Gesamtzahl der im Bericht enthaltenen Feststellungen.
 * **Systemübersicht**: Informationen zum AEM-System, auf dem die CRA ausgeführt wurde.
 * **Suchen von Kategorien**: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie ansprechen. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Bedeutung der Suche, Zusammenfassung, Link zur Dokumentation der Kategorie und individuelle Suchinformationen.
 
