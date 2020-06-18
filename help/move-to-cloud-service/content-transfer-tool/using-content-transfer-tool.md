@@ -2,7 +2,7 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 86%
@@ -20,7 +20,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
-* Um das Inhaltsübermittlungstool verwenden zu können, müssen Sie Administrator-Benutzer auf Ihrer Quellinstanz sein und zur AEM-Administratorgruppe in der Cloud-Dienstinstanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
+* Um das Content Transfer Tool verwenden zu können, müssen Sie auf Ihrer Quellinstanz Administrator sein und der AEM-Administratorgruppe in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
 
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
@@ -33,7 +33,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 Das Content Transfer Tool kann als ZIP-Datei (Content Transfer Tool v1.0.0) vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Laden Sie das Content Transfer Tool vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)herunter.
+>Laden Sie das Content Transfer Tool vom [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Portal herunter.
 
 ## Ausführen des Content Transfer-Tools {#running-tool}
 
@@ -68,7 +68,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte 
    1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
 
       >[!NOTE]
-      >Sie können das Zugriffs-Token aus der Autoreninstanz abrufen, indem Sie zu `/libs/granite/migration/token.json` navigieren. Das Zugriffstoken wird aus der Autoreninstanz des Cloud-Dienstes abgerufen.
+      >Sie können das Zugriffs-Token aus der Autoreninstanz abrufen, indem Sie zu `/libs/granite/migration/token.json` navigieren. Das Zugriffstoken wird aus der Autoreninstanz des Cloud Service abgerufen.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
