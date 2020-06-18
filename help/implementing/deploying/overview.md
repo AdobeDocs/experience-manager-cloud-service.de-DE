@@ -2,10 +2,10 @@
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 100%
+source-wordcount: '3523'
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ Wenn Cloud Manager die Anwendung bereitstellt, werden diese Anweisungen unabhän
 
 Gehen Sie wie folgt vor, um weitere repoinit-Anweisungen zu erstellen:
 
-1. Fügen Sie die OSGi-Konfiguration für PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in einem Konfigurationsordner des Projekts hinzu.
+1. Add OSGi configuration for factory PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project. Verwenden Sie einen beschreibenden Namen für die Konfiguration wie **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
 1. Fügen Sie der Skripteigenschaft von „config“ repoinit-Anweisungen hinzu. Syntax und Optionen werden in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html) beschrieben. Beachten Sie, dass vor untergeordneten Ordnern explizit ein übergeordneter Ordner erstellt werden muss. Beispielsweise ist eine explizite Erstellung von `/content` vor `/content/myfolder` und vor `/content/myfolder/mysubfolder` erforderlich. Bei ACLs, die für untergeordnete Strukturen festgelegt werden, wird empfohlen, diese auf einer höheren Ebene festzulegen und eine `rep:glob`-Einschränkung zu nutzen.  Beispiel `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validieren Sie zur Laufzeit in der lokalen Entwicklungsumgebung.
 
