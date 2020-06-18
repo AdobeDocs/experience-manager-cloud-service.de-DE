@@ -2,7 +2,7 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 86%
@@ -36,6 +36,8 @@ Das Content Transfer Tool kann als ZIP-Datei (Content Transfer Tool v1.0.0) vom 
 >Laden Sie das Content Transfer Tool vom [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Portal herunter.
 
 ## Ausführen des Content Transfer-Tools {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
