@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer-Tool
 description: Übersicht über das Content Transfer-Tool
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 75%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta
 
 Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer-Tools:
 
-* Es ist ratsam, die Überprüfungen zu Komprimierung und Konsistenz der Datenspeicher in den Repositorys vorab durchzuführen, um potenzielle Probleme zu erkennen und den im Repository vorhandenen Datenmüll zu reduzieren.
+* Es wird empfohlen, [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) und [Datenspeicher-Konsistenzprüfungen](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) im **Quell** -Repository durchzuführen, um potenzielle Probleme zu identifizieren und die Größe des Repositorys zu reduzieren.
 
 * Wenn die Konfiguration des AEM Cloud Author Content Versand Network (CDN) so konfiguriert ist, dass eine Whitelist von IPs vorliegt, muss sichergestellt werden, dass die IP-Adresse der Quelldatei auch dem Umgebung hinzugefügt wird, damit die Quellcode-Umgebung und die AEM Cloud-Umgebung miteinander kommunizieren können.
 
