@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren Sie den Rich Text Editor, um Inhalte in Adobe Experience Manager als Cloud-Dienst zu erstellen.
-description: Rich-Text-Editor konfigurieren, um Inhalte in Adobe Experience Manager als Cloud-Dienst zu erstellen.
+title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Manager als Cloud Service zu erstellen.
+description: Rich-Text-Editor konfigurieren, um Inhalte in Adobe Experience Manager als Cloud Service zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 48%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 48%
 
 # Konfigurieren des Rich-Text-Editors {#configure-the-rich-text-editor}
 
-Der Rich Text Editor (RTE) bietet Autoren eine breite Palette von Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt. Administratoren konfigurieren die RTE, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](rich-text-editor.md). Erfahren Sie, wie Autoren RTE zum Authoring von [Webinhalten](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) verwenden.
+Der Rich Text Editor (RTE) bietet Autoren eine breite Palette von Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt. Administratoren konfigurieren die RTE, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Erfahren Sie, wie Autoren RTE zum Authoring von [Webinhalten](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) verwenden.
 
 Die RTE-Konzepte und -Schritte, die für ihre Konfiguration erforderlich sind, sind unten aufgeführt.
 
@@ -35,7 +35,7 @@ Die Symbolleiste enthält die Optionen für das WYSIWYG-Authoring-Erlebnis. Expe
 
 ## Verschiedene Bearbeitungsmodi {#editingmodes}
 
-Autoren können Textinhalte in Experience Manager mit den verschiedenen Modi von Komponenten erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
+Autoren können Textinhalte in Experience Manager mit den verschiedenen Komponentenmodi erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
 
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen |
 |--- |--- |--- |
@@ -58,7 +58,7 @@ Beim Öffnen (mit langsamem Klicken auf die Dublette) können die Inhalte innerh
 
 ### Full-screen editing {#full-screen-editing}
 
-Experience Manager-Komponenten können in einer Vollbildansicht geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Erwägen Sie die Vollbildbearbeitung, um eine detaillierte Version der Inline-Bearbeitung zu bearbeiten, da sie die meisten Bearbeitungsoptionen Angebot. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Manager-Komponenten können in einer Vollbildansicht-Ansicht geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Erwägen Sie die Vollbildbearbeitung, um eine detaillierte Version der Inline-Bearbeitung zu bearbeiten, da sie die meisten Bearbeitungsoptionen Angebot. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 Im Vollbildmodus des Dialoges stehen neben einer detaillierten RTE-Symbolleiste auch die Optionen und Komponenten zur Verfügung, die in einem Dialogfeld verfügbar sind. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
@@ -131,6 +131,7 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
+
 >
 >
 Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
@@ -164,6 +165,7 @@ The [Core Components text component](https://docs.adobe.com/content/help/de/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
@@ -268,11 +270,11 @@ Below is a sample snippet to map the command Bold to the Coral icon named `textI
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Die RTE-Funktion von Experience Manager unterliegt folgenden Einschränkungen:
+Die RTE-Funktion des Experience Managers unterliegt folgenden Einschränkungen:
 
 * RTE-Funktionen werden nur in Experience Manager-Komponentendialogen unterstützt. RTE wird nicht auf Assistenten oder Foundation-Formularen unterstützt.
 
-* Experience Manager funktioniert nicht auf Hybrid-Geräten. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* Experience Manager funktioniert nicht auf Hybridgeräten. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
