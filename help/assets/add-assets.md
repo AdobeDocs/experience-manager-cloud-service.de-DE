@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu Adobe Experience Manager
 description: Hinzufügen digitaler Assets zu Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 97%
 
 ---
 
@@ -157,8 +157,8 @@ Die folgenden Profile sind verfügbar:
 
 Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
-* Mit [Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* Mit [Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
+* [Mit Dynamic Media Image-Profilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschnitten (**[!UICONTROL Smart Cropping]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* [Mit Dynamic Media Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
