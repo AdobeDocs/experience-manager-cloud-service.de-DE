@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 100%
+source-wordcount: '1454'
+ht-degree: 98%
 
 ---
 
@@ -22,25 +22,19 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
-
 [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) können vor dem Erstellen von Inhaltsfragmenten mit strukturiertem Inhalt aktiviert und erstellt werden.
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
-Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einfachen und strukturierten Fragmenten gleich:
+Die Methode zum Erstellen eines Inhaltsfragments lautet:
 
 1. Navigieren Sie zum Ordner **Assets**, in dem Sie das Fragment erstellen möchten.
 2. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
 3. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
-   * Dabei kann es sich um Folgendes handeln:
+   * [Modell](/help/assets/content-fragments/content-fragments-models.md) - wird verwendet, um ein Fragment zu erstellen, das strukturierten Inhalt erfordert. Beispiel: **Adventure** -Modell
 
-      * die Vorlage für **einfache Fragmente**
-
-      * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Flughafen**-Modell
-
-         * Alle verfügbaren Modelle werden angezeigt.
-
+      * Alle verfügbaren Modelle werden angezeigt.
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
    ![Fragmentbasis](assets/cfm-managing-01.png)
@@ -128,7 +122,6 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
-
    Der Fragment-Editor wird geöffnet:
 
    ![Fragment-Editor](assets/cfm-managing-03.png)
@@ -150,7 +143,6 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
    * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-
    ![Modi](assets/cfm-managing-04.png)
 
 4. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**. 
