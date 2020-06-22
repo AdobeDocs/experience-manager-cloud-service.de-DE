@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 98%
@@ -44,7 +44,7 @@ ht-degree: 98%
 + Konfigurieren, Verwalten und Erweitern von Assets {#admin}
    + [APIs und Referenzmaterial](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
-   + [Verarbeitungsprofile](/help/assets/dynamic-media/processing-profiles.md)
+   + [Verarbeitungsprofile](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Intelligente Tags konfigurieren](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung von Assets](translate-assets.md)
    + [Suchfacetten](search-facets.md)
