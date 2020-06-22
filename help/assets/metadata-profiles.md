@@ -3,7 +3,7 @@ title: Metadatenprofile
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 100%
@@ -14,12 +14,6 @@ ht-degree: 100%
 # Metadatenprofile {#metadata-profiles}
 
 Mit einem Metadatenprofil können Sie standardmäßige Metadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadatenprofil und wenden Sie es auf einen Ordner an. Jedes Asset, das Sie nachfolgend in den Ordner hochladen, erbt die standardmäßigen Metadaten, die Sie in „Metadatenprofil“ konfiguriert haben.
-
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
 
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
