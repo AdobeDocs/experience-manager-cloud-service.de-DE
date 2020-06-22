@@ -1,8 +1,8 @@
 ---
-title: Maintenance-Aufgaben in AEM als Cloud-Dienst
-description: 'Maintenance-Aufgaben in AEM als Cloud-Dienst '
+title: Maintenance-Aufgaben in AEM als Cloud Service
+description: 'Maintenance-Aufgaben in AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: e9ee1064c5fa62b56c822a18ad6ca8cc4d09fa75
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 2%
@@ -10,9 +10,9 @@ ht-degree: 2%
 ---
 
 
-# Maintenance-Aufgaben in AEM als Cloud-Dienst
+# Maintenance-Aufgaben in AEM als Cloud Service
 
-Aufgaben zur Wartung sind Prozesse, die planmäßig ausgeführt werden, um das Repository zu optimieren. Mit AEM als Cloud-Dienst müssen die Kunden die operativen Eigenschaften der Maintenance-Aufgaben nur minimal konfigurieren. Kunden können ihre Ressourcen auf Probleme auf Anwendungsebene konzentrieren, wobei die Infrastrukturvorgänge Adobe überlassen bleiben.
+Aufgaben zur Wartung sind Prozesse, die planmäßig ausgeführt werden, um das Repository zu optimieren. Mit AEM als Cloud Service müssen die Kunden die betrieblichen Eigenschaften von Maintenance-Aufgaben nur minimal konfigurieren. Kunden können ihre Ressourcen auf Probleme auf Anwendungsebene konzentrieren, wobei die Infrastrukturvorgänge Adobe überlassen bleiben.
 
 Weitere Informationen zu Aufgaben der Wartung finden Sie auf den folgenden Seiten:
 
@@ -21,13 +21,13 @@ Weitere Informationen zu Aufgaben der Wartung finden Sie auf den folgenden Seite
 
 ## Aufgaben zur Wartung konfigurieren
 
-In früheren Versionen von AEM können Sie die Maintenance-Aufgaben mithilfe der Maintenance-Karte konfigurieren (Tools > Vorgänge > Wartung). Für AEM als Cloud-Dienst ist die Maintenance-Karte nicht mehr verfügbar. Daher sollten Konfigurationen der Quellcodeverwaltung zugewiesen und mithilfe des Cloud-Managers bereitgestellt werden. Adobe verwaltet Wartungs-Aufgaben, für die keine Kundenentscheidung erforderlich ist (z. B. Datastore Garbage Collection), während andere Wartungs-Aufgaben vom Kunden konfiguriert werden können (siehe folgende Tabelle).
+In früheren Versionen von AEM können Sie die Maintenance-Aufgaben mithilfe der Maintenance-Karte konfigurieren (Tools > Vorgänge > Wartung). Für AEM als Cloud Service ist die Maintenance-Karte nicht mehr verfügbar. Daher sollten Konfigurationen der Quellcodeverwaltung unterliegen und mithilfe des Cloud-Managers bereitgestellt werden. Adobe verwaltet Wartungs-Aufgaben, für die keine Kundenentscheidung erforderlich ist (z. B. Datastore Garbage Collection), während andere Wartungs-Aufgaben vom Kunden konfiguriert werden können (siehe folgende Tabelle).
 
 >[!CAUTION]
 >
 >Adobe behält sich das Recht vor, die Konfigurationseinstellungen der Aufgabe für die Wartung außer Kraft zu setzen, um Probleme wie Leistungsbeeinträchtigung zu vermeiden.
 
-Die folgende Tabelle zeigt die Aufgaben zur Wartung, die zum Zeitpunkt der Veröffentlichung von AEM als Cloud-Dienst verfügbar sind.
+Die folgende Tabelle zeigt die Aufgaben zur Wartung, die zum Zeitpunkt der Veröffentlichung von AEM als Cloud Service verfügbar sind.
 
 | Aufgabe der Wartung | Wem gehört die Konfiguration | Konfigurieren (optional) |
 |---|---|---|
@@ -35,9 +35,9 @@ Die folgende Tabelle zeigt die Aufgaben zur Wartung, die zum Zeitpunkt der Verö
 | Versionsbereinigung | Adobe | Adobe ist vollständig im Besitz, aber in Zukunft können Kunden bestimmte Parameter konfigurieren. |
 | Bereinigung des Prüfprotokolls | Adobe | Adobe ist vollständig im Besitz, aber in Zukunft können Kunden bestimmte Parameter konfigurieren. |
 | Lucene-Binärdateien-Bereinigung | Adobe | Nicht verwendet und daher von Adobe deaktiviert. |
-| Ad-hoc-Aufgaben-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten des Wartungsfensters unter und `/libs` mit `/apps` oder `/conf/global/settings/granite/operations/maintenance/granite_weekly` `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie unter dem Knoten oben einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_TaskPurgeTask`). <br> Informationen zum Konfigurieren der OSGI-Eigenschaften finden Sie in der Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Workflow-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten des Wartungsfensters unter und `/libs` mit `/apps` oder `/conf/global/settings/granite/operations/maintenance/granite_weekly` `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie unter dem Knoten oben einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_WorkflowPurgeTask`). <br> Konfigurieren der OSGI-Eigenschaften siehe Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Projekt-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten des Wartungsfensters unter und `/libs` mit `/apps` oder `/conf/global/settings/granite/operations/maintenance/granite_weekly` `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie einen Knoten unter dem oben stehenden Knoten (Name) mit den entsprechenden Eigenschaften hinzufügen `granite_ProjectPurgeTask`. <br> Konfigurieren von OSGI-Eigenschaften siehe Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Ad-hoc-Aufgaben-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten im vordefinierten Wartungsfenster `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie unter dem Knoten oben einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_TaskPurgeTask`). <br> Informationen zum Konfigurieren der OSGI-Eigenschaften finden Sie in der Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Workflow-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten im vordefinierten Wartungsfenster, `/libs` indem Sie Eigenschaften im Ordner`/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`erstellen. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie unter dem Knoten oben einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_WorkflowPurgeTask`). <br> Konfigurieren der OSGI-Eigenschaften siehe Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Projekt-Bereinigung | Kunde | Muss in github gemacht werden. <br> Überschreiben Sie den Konfigurationsknoten im vordefinierten Wartungsfenster `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle des Wartungsfensters. <br> Aktivieren Sie die Maintenance-Aufgabe, indem Sie einen Knoten unter dem oben stehenden Knoten (Name) mit den entsprechenden Eigenschaften hinzufügen `granite_ProjectPurgeTask`. <br> Konfigurieren von OSGI-Eigenschaften siehe Dokumentation zur [AEM 6.5 Maintenance Aufgabe](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Die Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgaben-Bereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Quellcodeverwaltung bearbeitet werden. Die folgende Tabelle beschreibt die für jedes Fenster verfügbaren Konfigurationsparameter.
 
@@ -54,7 +54,7 @@ Die Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinig
     <td>Täglich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_daily </code> (die den Knoten in <code>/apps</code> und <code>/libs</code>außer Kraft setzt)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
     <td>Siehe Codebeispiel 1 unten</td>
    <td>
     <ul>
@@ -67,7 +67,7 @@ Die Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinig
     <td>Wöchentlich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code> (die den Knoten in <code>/apps</code> und <code>/libs</code>außer Kraft setzt)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
     <td>Siehe Codebeispiel 2 unten</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ Die Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinig
     <td>Monatlich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td><code>/conf/global/settings/granite/operations/maintenance/granite_monthly</code> (die den Knoten in <code>/apps</code> und <code>/libs</code>außer Kraft setzt)</td>
+    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
     <td>Siehe Codebeispiel 3 unten</td>
      <td>
     <ul>
@@ -124,7 +124,7 @@ Codebeispiel 2
    windowStartTime="14:30"/>
 ```
 
-Codebeispiel 3
+Codebeispiel 2
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
