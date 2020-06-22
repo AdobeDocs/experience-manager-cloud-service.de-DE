@@ -2,10 +2,10 @@
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 99%
+source-wordcount: '1891'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 99%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
 >
 Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
@@ -147,6 +148,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -346,11 +348,10 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
    * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
-   * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell/keine gültige Vorlage:
+   * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * Das Inhaltsfragment konnte nicht erstellt werden (möglicherweise ein Berechtigungsproblem):
 
       * `Could not create content fragment`
@@ -364,6 +365,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
    ```xml
