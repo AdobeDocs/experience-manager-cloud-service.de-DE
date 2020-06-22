@@ -3,10 +3,10 @@ title: Konfigurieren von AEM Assets Cloud Service mit Brand Portal
 description: Konfigurieren von AEM Assets Cloud Service mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -317,7 +317,7 @@ In den Protokollen finden Sie detaillierte Informationen zu den Aktionen, die du
 
 Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlicht, um die Konfiguration zu validieren.
 
-1. Führen Sie die Schritte (1–4) aus, wie im Bereich [Verbindung testen](#test-configuration) gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. Klicken Sie auf **[!UICONTROL Protokolle]**, um die Verteilungsprotokolle anzuzeigen. Hier können Sie die Verarbeitungs- und Fehlerprotokolle sehen.
 
