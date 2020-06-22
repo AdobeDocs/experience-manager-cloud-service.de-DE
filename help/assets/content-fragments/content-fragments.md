@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 100%
+source-wordcount: '1804'
+ht-degree: 97%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 100%
 # Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
 
 In Adobe Experience Manager as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
+
+Inhaltsfragmente enthalten strukturierten Inhalt:
+
+* They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
@@ -59,7 +63,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Die Bereitstellung erfolgt im JSON-Format.
+Versand werden im JSON-Format mit dem JSON-Exporter erstellt.
 
 AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierter Inhalt wird in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Ausdrücke, Datum und Uhrzeit und mehr.
 
@@ -77,12 +81,6 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
->[!CAUTION]
->
->Inhaltsfragmente stehen über die klassische Benutzeroberfläche nicht zur Verfügung. 
->
->Die Inhaltsfragmente-Komponente kann im Sidekick der klassischen Benutzeroberfläche angezeigt werden. Es stehen jedoch keine weiteren Funktionen zur Verfügung. 
-
 >[!NOTE]
 >
 >AEM unterstützt auch die Übersetzung von Fragmentinhalten.  Weitere Informationen finden Sie unter „Erstellen von Übersetzungsprojekten für Inhaltsfragmente“.
@@ -92,24 +90,6 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## Arten von Inhaltsfragmenten {#types-of-content-fragment}
-
-Es gibt folgende Arten von Inhaltsfragmenten:
-
-* Einfache Fragmente
-
-   * Sie haben keine vordefinierte Struktur.
-
-   * Sie enthalten lediglich Text und Bilder.
-
-   * Sie basieren auf der Vorlage für **einfache Fragmente**.
-
-* Fragmente mit strukturiertem Inhalt
-
-   * Sie basieren auf einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md), das eine Struktur für das daraus entstehende Fragment vordefiniert.
-
-   * Diese können außerdem verwendet werden, um Content Services über den JSON Exporter bereitzustellen.
 
 ## Inhaltstyp {#content-type}
 
@@ -170,18 +150,14 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 * **Fragmentelementen**
 
    * Elemente korrelieren mit den Datenfeldern, die Inhalte enthalten.
-   * Verwenden Sie bei Fragmenten mit strukturiertem Inhalt ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
-   * Bei einfachen Fragmenten:
-
-      * Der Inhalt befindet sich in einem (oder mehreren) mehrzeiligen Textfeld(ern) oder Element(en).
-      * Die Elemente werden in der Vorlage **Einfaches Fragment** definiert.
+   * Sie verwenden ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
 
 * **Fragmentabsätze**
 
    * Textblöcke, die:
 
       * durch vertikale Abstände (Zeilenschaltung) getrennt sind 
-      * sich in mehrzeiligen Textelementen befinden, entweder in einfachen oder in strukturierten Fragmenten
+      * in mehrzeiligen Textelementen
    * In den Modi [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
    * Ermöglichen die Inhaltssteuerung während der Seitenbearbeitung  
@@ -274,11 +250,6 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Erforderlich für das [Erstellen eines strukturierten Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional. Das Modell definiert einen minimalen Gültigkeitsbereich für das Fragment und ggf. den Standardinhalt. Autoren können die definierte Struktur ändern, wenn sie den Fragmentinhalt erstellen.
-
-* **Fragmentvorlage**
-
-   * Die Vorlage **Einfaches Fragment** ist zum [Erstellen eines einfachen Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments) erforderlich.
-   * Definiert die grundlegenden Eigenschaften eines einfachen Fragments (Titel, Anzahl der Textelemente, Tag-Definitionen).
 
 * **Inhaltsfragment-Komponente**
 
