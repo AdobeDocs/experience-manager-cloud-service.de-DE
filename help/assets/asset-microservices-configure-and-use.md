@@ -3,10 +3,10 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 97%
+source-wordcount: '1875'
+ht-degree: 90%
 
 ---
 
@@ -99,9 +99,9 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 #### Einschlussregeln für MIME-Typen {#mime-type-inclusion-rules}
 
-Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn diese Liste übereinstimmt, wird diese spezielle Darstellung nicht für das Asset generiert (blockierte Liste).
+Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird diese spezifische Darstellung nicht für das Asset (blockierungsliste) generiert.
 
-Andernfalls wird der MIME-Typ mit dem eingeschlossenen MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulässige Liste).
+Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulassungsliste).
 
 #### Spezielle FPO-Ausgabe {#special-fpo-rendition}
 
@@ -136,20 +136,18 @@ Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden ha
 
 In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden können, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Dies ermöglicht es, zusätzlich zu der konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzuzufügen.
 
-Nachbearbeitungs-Workflows werden, falls konfiguriert, automatisch von AEM ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um sie auszulösen.
+Nachbearbeitungs-Workflows werden, falls konfiguriert, automatisch von AEM ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um sie auszulösen. Dazu gehören:
 
-Beispiele dafür sind:
-
-* benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets, z. B. Java-Code zur Generierung von Ausgabeformaten aus proprietären Dateiformaten.
-* Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
-* zusätzliche Verarbeitung durch externe Dienste
+* Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
+* Integrationen zum Hinzufügen von Metadaten oder Eigenschaften zu Assets aus externen Systemen, z. B. Produkt- oder Prozessinformationen.
+* Zusätzliche Verarbeitung durch externe Dienste.
 
 Das Hinzufügen einer Workflow-Konfiguration für die Nachbearbeitung zu Experience Manager umfasst die folgenden Schritte:
 
-* Erstellen eines oder mehrerer Workflow-Modelle. Sie werden als „Nachbearbeitungs-Workflow-Modelle“ bezeichnet. Es handelt sich jedoch um normale AEM-Workflow-Modelle.
-* Hinzufügen spezifischer Workflow-Schritte zu diesen Modellen. Diese Schritte werden basierend auf der Konfiguration des Workflow-Modells für die Assets ausgeführt.
-* Der letzte Schritt eines solchen Modells muss der Schritt `DAM Update Asset Workflow Completed Process` sein. Dies ist erforderlich, um sicherzustellen, dass AEM weiß, dass die Verarbeitung beendet wurde und das Asset als verarbeitet („Neu“) gekennzeichnet werden kann.
-* Erstellen einer Konfiguration für den Custom Workflow Runner Service, mit der die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder nach Pfad (Ordnerspeicherort) oder nach regulären Ausdrücken konfiguriert werden kann
+* Erstellen Sie ein oder mehrere Workflow-Modelle. In den Dokumenten wird dies als Arbeitsablaufmodell für die *Nachbearbeitung* erwähnt, bei denen es sich jedoch um normale Arbeitsablaufmodelle für Experience Manager handelt.
+* Hinzufügen spezifische Workflow-Schritte für diese Modelle. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt.
+* Hinzufügen [!UICONTROL DAM Update Asset Workflow abgeschlossen Prozessschritt] am Ende. Durch Hinzufügen dieses Schritts wird sichergestellt, dass der Experience Manager weiß, wann die Verarbeitung abgeschlossen ist und das Asset als verarbeitet markiert werden kann, d. h., dass auf dem Asset der Wert *Neu* angezeigt wird.
+* Erstellen Sie eine Konfiguration für den benutzerdefinierten Workflow Runner Service, mit der die Ausführung eines Workflow-Nachbearbeitungs-Modells entweder über einen Pfad (Ordnerspeicherort) oder durch einen regulären Ausdruck konfiguriert werden kann.
 
 ### Erstellen von Nachbearbeitungs-Workflow-Modellen {#create-post-processing-workflow-models}
 
