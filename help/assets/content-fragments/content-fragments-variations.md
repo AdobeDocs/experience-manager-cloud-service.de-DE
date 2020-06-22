@@ -2,9 +2,9 @@
 title: Varianten – Erstellen von Fragmentinhalten
 description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 100%
 
 ---
@@ -50,12 +50,6 @@ Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **V
    * auf eine Reihe von [Aktionen](#actions)zuzugreifen
 
 Beispiel:
-
-* Bearbeiten eines einfachen Fragments
-
-   Ein einfaches Fragment besteht aus einem mehrzeiligen Textfeld (visuelle Assets können über den Vollbild-Editor hinzugefügt werden).
-
-   ![Einfaches Fragment](assets/cfm-variations-01.png)
 
 * Bearbeiten eines Fragments mit strukturiertem Inhalt
 
