@@ -1,0 +1,142 @@
+---
+title: Informationen zu Dynamic Media - Bild-Profile und Video-Profile
+description: Ein Image-Profil oder ein Video-Profil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media angewendet werden soll. Oder welches Image-Profil, das auf Dynamic Media-Bild-Assets angewendet werden soll, damit diese ordnungsgemäß zugeschnitten werden.
+translation-type: tm+mt
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+workflow-type: tm+mt
+source-wordcount: '1296'
+ht-degree: 67%
+
+---
+
+
+# Informationen zu Dynamic Media - Bild-Profile und Video-Profile{#about-dm-image-video-profiles}
+
+Ein Image-Profil oder Video-Profil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media angewendet werden soll. Oder welches Image-Profil, das auf Dynamic Media-Bild-Assets angewendet werden soll, damit diese ordnungsgemäß zugeschnitten werden.
+
+In Dynamic Media können Sie zwei Typen von Profilen erstellen, die unter den folgenden Links detailliert behandelt werden:
+
+* [Dynamic Media Image Profils](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media Video-Profile](/help/assets/dynamic-media/video-profiles.md)
+
+See also [Metadata profiles](/help/assets/metadata-profiles.md).
+
+Sie müssen über Administratorrechte verfügen, um Dynamic Media zu erstellen, zu bearbeiten und zu löschen, um Profile oder Dynamic Media Video-Profil zu erstellen, zu bearbeiten und zu löschen.
+
+Nachdem Sie Ihr Image-Profil oder Video-Profil erstellt haben, weisen Sie es einem oder mehreren Ordnern zu, die Sie als Ziel für neu hochgeladene Dynamic Media verwenden.
+
+See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+
+>[!NOTE]
+>
+>Assets, die Sie von einem Ordner in einen anderen verschieben, werden nicht erneut verarbeitet. Angenommen, Sie verfügen über Ordner 1, dem das Profil A zugewiesen ist, und über Ordner 2, dem das Profil B zugewiesen ist. Wenn Sie die Assets aus Ordner 1 in Ordner 2 verschieben, behalten die verschobenen Assets ihre ursprüngliche Verarbeitung aus Ordner 1 bei.
+>
+>Dasselbe gilt auch, wenn Sie Assets zwischen zwei Ordnern verschieben, denen dasselbe Profil zugewiesen ist.
+
+## Dynamic Media-Assets in einem Ordner erneut verarbeiten {#reprocessing-assets}
+
+Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein Image-Profil für Dynamic Media oder ein Dynamic Media-Video-Profil verfügt, das Sie später geändert haben.
+
+Angenommen, Sie haben ein Image-Profil für Dynamic Media erstellt und einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Image-Profil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Image-Profil ein neues Verhältnis für intelligente Beschneidungen hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Scene7: Assets erneut verarbeiten* aus.
+
+Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Image-Profil oder Video-Profil bearbeitet haben oder bereits ein Image-Profil oder ein Video-Profil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
+
+Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für in einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch auf AEM aktualisiert. Wenn die Batch-Größe sehr groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn die Batch-Größe zu klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
+
+Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-load).
+
+>[!NOTE]
+>
+>Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu AEM durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
+Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
+
+<!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
+
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+
+-->
+
+**So verarbeiten Sie Dynamic Media-Assets in einem Ordner** neu:
+1. In AEM, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+
+   Ordner, denen bereits ein Image-Profil oder ein Video-Profil zugewiesen ist, werden durch die Anzeige des Profils direkt unter dem Ordnernamen in der Card-Ansicht angezeigt.
+
+1. Wählen Sie einen Ordner aus.
+
+   * Der Workflow berücksichtigt rekursiv alle Dateien in dem ausgewählten Ordner.
+   * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
+   * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
+
+1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Timeline]**.
+1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
+
+   ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+
+1. Klicken Sie auf **[!UICONTROL Workflow starten]**.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
+1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
+
+   ![Assets erneut verarbeiten 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+
+1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Bestätigen]**.
+
+   Klicken Sie auf der Hauptseite der AEM-Konsole auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+
+### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
+
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die Mime-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend wird das Verarbeitungsbanner länger für AEM-Assets angezeigt. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
+
+**Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**
+
+1. Tippen Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
+1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
+
+   ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
+1. Tippen Sie oben rechts auf der Workflow-Seite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
+1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
+
+   ![Komponente „Massen-Upload in Scene7“](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+
+1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 – Schritt-Eigenschaften]** Folgendes fest:
+   * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
+   * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
+   * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
+   * Geben Sie im Feld **[!UICONTROL Zeitraum]** ein Abrufintervall (Sekunden) ein, um zu testen, ob der externe Prozess abgeschlossen ist.
+   * Geben Sie im Feld **[!UICONTROL Batch]** die maximale Anzahl von Assets (50-1.000) ein, die in einem Massen-Upload-Auftrag auf den Dynamic Media-Server verarbeitet werden sollen.
+   * Wählen Sie **[!UICONTROL Bei Zeitüberschreitung fortsetzen]** aus, wenn Sie beim Erreichen des Zeitlimits fortfahren möchten. Entfernen Sie die Markierung, wenn Sie bei Erreichen der Zeitüberschreitung in den Posteingang wechseln möchten.
+
+   ![Dialogfeld „Eigenschaften“](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+
+1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Stapel-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
+
+1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+
+   ![Synchronisieren des Workflow-Modells](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+
+1. Schließen Sie die Browser-Registerkarte, auf der „Scene7: Assets erneut verarbeiten“ angezeigt wird.
+
+<!-- MAY BE NEEDED IN THE FUTURE
+
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
+
+   `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
+
+   ![CRXDE Lite](/help/security/assets/workflow-models9.png)
+
+1. On the right side of the CRXDE Lite page, in the lower portion, enter the following name, type, and value in its respective field:
+    * **[!UICONTROL Name]**: `reprocess-batch-size`
+    * **[!UICONTROL Type]**: `Long`
+    * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
+1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+
+    ![Saving the new property](/help/security/assets/workflow-models10.png)
+
+1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+
+-->
