@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 11%
 
 ---
@@ -109,16 +109,16 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 Mit erweiterten intelligenten Tags können Unternehmen intelligente Tagging-Modelle schulen, um Bilder zu erkennen, die auf kundenspezifischen Tags basieren, und zwar zusätzlich zu generischen Smart-Tags.
 
-Mit dieser Version gibt es eine neue, geführte Benutzererfahrung, die bei der Einrichtung von Smart-Tags-Schulungen für Sätze kundenspezifischer Tags und deren Schulung mit Assets hilft, die in Zukunft erkannt und mit Tags versehen werden sollten. Dies ist eine intuitivere Erfahrung.
+Mit dieser Version gibt es eine neue, geführte Benutzererfahrung, die bei der Einrichtung von Smart-Tags-Schulungen für Sätze kundenspezifischer Tags und deren Schulung mit Assets hilft, die in Zukunft erkannt und mit Tags versehen werden sollten. Das Erlebnis ist jetzt intuitiver.
 Train Enhanced Smart Tags für eine intuitive Schulung zu intelligenten Tags. Erfahren Sie, [wie Sie Assets](/help/assets/smart-tags.md) Smart-Tags hinzufügen und intelligentes Tagging [konfigurieren](/help/assets/smart-tags-configuration.md).
 
-**Unterstützung der Erfassung, Vorschau und Versand von 3D-Inhalten**
+**Unterstützung für Erfassung, Vorschau und Versand von 3D-Inhalten**
 
-Organisationen können jetzt 3D-Dateien in AEM Assets speichern und verwenden. Benutzer können eine Vielzahl von Kern-3D-Dateien hochladen, Vorschauen vornehmen und nutzen, einschließlich .obj-, .stl-, .gltf- und .glb-Dateien. Zusätzlich [!DNL Dynamic Media]können 3D-Erlebnisse über agnostische URLs oder Viewer konfiguriert und bereitgestellt werden. Dazu gehören ein [!DNL Dynamic Media] 3D-Experience Viewer, die Sites-3D-Viewer-Komponente und die Möglichkeit, 3D-Dateien über [!DNL Dynamic Media] (AR/VR) bereitzustellen. Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Organisationen können jetzt 3D-Dateien in AEM Assets speichern und verwenden. Benutzer können verschiedene Kern-3D-Dateien hochladen, Vorschau vornehmen und verwenden, einschließlich OBJ-, STL-, GLTF- und GLB-Dateien. Zusätzlich [!DNL Dynamic Media]können Sie 3D-Erlebnisse mit agnostischen URLs oder Viewern konfigurieren und bereitstellen. Dazu gehören ein [!DNL Dynamic Media] 3D-Experience Viewer, die Sites-3D-Viewer-Komponente und die Möglichkeit, 3D-Dateien über [!DNL Dynamic Media] (AR/VR) bereitzustellen. Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe Asset Link-Unterstützung für Adobe XD**
 
-Ab der neuesten Version [!DNL Experience Manager Assets] wird ein neues [!DNL Adobe Asset Link] Plug-in unterstützt, das mit [!DNL Adobe XD] Version 29.3 veröffentlicht wird. Die Integration ermöglicht Designern den Zugriff auf Assets und deren Verwendung in [!DNL Experience Manager] ihren Entwürfen, ohne dass die Anwendung verlassen [!DNL Adobe XD] muss. Weitere Informationen zu Adobe XD finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+Ab der neuesten Version [!DNL Experience Manager Assets] unterstützt es ein neues [!DNL Adobe Asset Link] Plugin, das mit [!DNL Adobe XD] Version 29.3 veröffentlicht wird. Die Integration ermöglicht Designern den Zugriff auf Assets und deren Verwendung in [!DNL Experience Manager] ihren Entwürfen, ohne dass die Anwendung verlassen [!DNL Adobe XD] muss. Weitere Informationen zu Adobe XD finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 Mit dieser Version können kreative Benutzer und Designer jetzt mit Assets arbeiten, die in [!DNL AEM Assets] einer Reihe von Creative Cloud-Desktop-Apps verwaltet werden, einschließlich [!DNL Adobe Asset Link] , [!DNL Adobe XD], [!DNL Photoshop]und [!DNL Illustrator][!DNL InDesign].
 
@@ -128,17 +128,17 @@ Mit dieser Version können kreative Benutzer und Designer jetzt mit Assets arbei
 
 Die Elemente der Benutzeroberfläche sind für Bildschirmlesehilfen benutzerfreundlich, können über eine Tastatur aufgerufen werden und haben einen besseren Kontrast. Im Folgenden finden Sie eine detaillierte Liste der Verbesserungen:
 
-* Die [!UICONTROL Optionen]-, [!UICONTROL Scope]- und [!UICONTROL Workflows] -Fortschrittsindikatoren auf der Seite &quot;Veröffentlichung  verwalten&quot;werden von der Bildschirmlesehilfe nicht als Fortschrittsindikatoren vorgelesen. Stattdessen sehen Bildschirmlesehilfen diese Statusindikatoren als Tabulator-Liste an. (CQ-4273015)
+* Die [!UICONTROL Fortschrittsleisten]&quot;Optionen&quot;, &quot; [!UICONTROL Umfang]&quot;und &quot; [!UICONTROL Workflows] &quot;auf der Seite &quot;Veröffentlichung  verwalten&quot;werden von der Bildschirmlesehilfe nicht als Fortschrittsleiste gelesen. Stattdessen sehen Bildschirmlesehilfen diese Statusindikatoren als Tabulator-Liste an. (CQ-4273015)
 
 * Beim Hinzufügen von Tags auf der Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets navigieren Benutzer durch eine Struktur von Tags. Die Baumstruktur kann nicht aufgerufen werden, da die Benutzer der Bildschirmlesehilfe beim Navigieren nichts hören. (CQ-4272964)
 
 * Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
-   * speichert die Tabelleninformationen, sobald das Dialogfeld geladen wurde.
-   * kann nicht zu allen aufgelisteten automatischen Empfehlungen navigieren.
-   * enthält keine automatischen Vorschläge für das Kombinationsfeld [!UICONTROL Hinzufügen E-Mail-Adresse/Suche] . (CQ-4294232)
+   * Speichert die Tabelleninformationen sofort beim Laden des Dialogfelds.
+   * Es ist nicht möglich, zu allen aufgelisteten automatischen Empfehlungen zu navigieren.
+   * Die angezeigten automatischen Vorschläge für das Kombinationsfeld [!UICONTROL Hinzufügen E-Mail-Adresse/Suche] werden nicht erwähnt. (CQ-4294232)
 
-* Die [!UICONTROL Metadaten-Schema-Editor] -Seite und ihre Elemente sind jetzt barrierefrei und für Bildschirmlesehilfen geeignet. Die Optionen können über eine Tastatur verwendet werden. (CQ-4272953) Benutzer können die Komponenten über die Tastatur im NVDA-Durchsuchenmodus ziehen. (CQ-4296326)
+* Die [!UICONTROL Metadaten-Schema-Editor] -Seite und die zugehörigen Elemente können jetzt auch über eine Tastatur aufgerufen werden und sind für eine Bildschirmlesehilfe geeignet. (CQ-4272953) Benutzer können die Komponenten über die Tastatur im NVDA-Durchsuchenmodus ziehen. (CQ-4296326)
 
 * Auf der Benutzeroberfläche &quot;Assets&quot;sind die Einstellungen für die Ansicht nicht über die Tastatur verfügbar. (CQ-4289038)
 
@@ -146,17 +146,17 @@ Die Elemente der Benutzeroberfläche sind für Bildschirmlesehilfen benutzerfreu
 
 * Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sicht oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Symbole für die Bewertung von Sternen im Bereich [!UICONTROL Bewertung] auf der Registerkarte [!UICONTROL Erweitert] in den [!UICONTROL Eigenschaften] eines Assets und in der Ansicht der Karte entsprechend geändert. (CQ-4295106)
 
-* Das Popupmenü des Kombinationsfeldes (in verschiedenen Listen auf verschiedenen Seiten) zeigt Einträge jetzt als Liste von Optionen an, die von Bildschirmlesehilfen angekündigt werden können. (CQ-4294017)
+* Die Bildschirmlesehilfen können nun die Einträge des Popupmenüs &quot;Liste&quot;des Kombinationsfelds (in verschiedenen Feldern auf verschiedenen Seiten) als Liste der Optionen lesen. (CQ-4294017)
 
 * Um einen Workflow auf ein Asset anzuwenden, können Sie über eine Tastatur auf den Chevron-Pfeil in der [!UICONTROL Zeitleiste] zugreifen. (CQ-4289268)
 
-* Benutzer können ausgewählte Tags im Feld [!UICONTROL Tags] auf der Registerkarte [!UICONTROL Einfach] auf der Seite [!UICONTROL Eigenschaften] eines Assets mit `x` Symbol entfernen. Der Zweck wird jetzt von Bildschirmlesehilfen zusammen mit der Anzahl der ausgewählten Tags (CQ-4273033) angekündigt.
+* Benutzer können ausgewählte Tags im Feld [!UICONTROL Tags] auf der Registerkarte [!UICONTROL Einfach] auf der Seite [!UICONTROL Eigenschaften] eines Assets mit `x` Symbol entfernen. Die Bildschirmlesehilfen geben nun den Zweck und die Anzahl der ausgewählten Tags an (CQ-4273033).
 
 * Die schreibgeschützten Formularfelder können mithilfe einer Tastatur ausgewählt werden. Beispielsweise die deaktivierten Felder auf der Registerkarte &quot; [!UICONTROL Einfach] &quot;auf der Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets. (CQ-4273031)
 
 * Greifen Sie jetzt über eine Tastatur auf die Optionen zum Filtern von Assets in der linken Seitenleiste zu. (CQ-4273018)
 
-* Der Zweck verschiedener Kombinationsfeldelemente wie Pfadfeld und die Option zum Öffnen des Dialogfelds &quot;Auswahl&quot;auf der Registerkarte &quot; [!UICONTROL Grundeinstellungen] &quot;der Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets werden jetzt von Bildschirmlesehilfen korrekt angekündigt. (CQ-4273016)
+* Die Bildschirmlesehilfe kündigt den Zweck verschiedener Kombinationsfeldelemente wie das Feld Pfad und die Option zum Öffnen des Dialogfelds Auswahl auf der Registerkarte [!UICONTROL Einfach] auf der Seite [!UICONTROL Eigenschaften] eines Assets an. (CQ-4273016)
 
 * Auf die Lautstärkeregler für Videos kann über eine Tastatur zugegriffen werden. (CQ-4272696)
 
@@ -172,7 +172,7 @@ Die Elemente der Benutzeroberfläche sind für Bildschirmlesehilfen benutzerfreu
 
 **Weitere Verbesserungen**
 
-Die Version bietet die folgenden zusätzlichen Verbesserungen:
+Die Version bietet die folgenden weiteren Verbesserungen:
 
 * Möglichkeit zur Neuverarbeitung von Assets mit Profilen zur Asset-Verarbeitung, sodass die Benutzer die volle Kontrolle über den Prozess haben (vollständige Asset-Verarbeitung ausführen, nur spezifisches Profil anwenden und entscheiden können, ob der Nachbearbeitungsvorgang ausgeführt werden soll).
 * Suchergebnisse werden jetzt schneller zurückgegeben, wenn die zugrunde liegende Clusterinstanz hinter den Kulissen neu gestartet wurde (in einem solchen Fall könnte die anfängliche Suche länger dauern).
@@ -191,7 +191,7 @@ Zusätzlich zu den oben genannten neuen Funktionen bietet die aktuelle Version d
 
 * Bei MP3-Musikdateien funktioniert die Wiedergabeschaltfläche, die auf der Miniaturansicht in der DAM-Vorschau angezeigt wird, nicht. (CQ-4294731)
 * Wenn Sie den Mauszeiger über die Ansicht der Karte bewegen, wird der Bildlauf durch (automatische) Fokussierung auf die Schnellaktionen durchgeführt, die auf der Karte verfügbar sind. (GRANITE-26895)
-* Die Anzeige zu vieler Bilder nach dem Scrollen in einer großen Anzahl von Suchergebnissen führt zu einem Absturz des Browsers. (GRANITE-26432)
+* Das Anzeigen zu vieler Bilder nach dem Scrollen in vielen Suchergebnissen führt zu einem Browserabsturz. (GRANITE-26432)
 * Wenn beim Herunterladen eines Assets die Option &quot;E-Mail&quot;aktiviert ist und selbst wenn eine gültige E-Mail-ID angegeben wurde, ist die Option &quot;Herunterladen&quot;nicht verfügbar. (CQ-4296535)
 * Als intelligente Sammlungen gespeicherte benutzerdefinierte Filter werden nicht ordnungsgemäß auf Assets angewendet. (CQ-4294942)
 * Mehrere Verbesserungen bei der Suche und Indizierung und Fehlerkorrekturen zur Leistungsverbesserung. (CQ-4286373)
