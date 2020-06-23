@@ -2,10 +2,10 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >
 Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -58,6 +59,7 @@ Inhaltsfragmente ermöglichen:
 3. Wählen Sie eine der folgenden Möglichkeiten:
    * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment in die Komponenteninstanz.
    * Wählen Sie die Inhaltsfragment-Komponente und dann **Konfigurieren** in der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
+
    >[!NOTE]
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
@@ -70,8 +72,8 @@ Inhaltsfragmente ermöglichen:
    >
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
-   >    * [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
@@ -86,20 +88,19 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    * **Einzelnes Textelement**
    * **Mehrere Elemente**
 * **Element**
-   * Die Voreinstellung **Haupt** ist immer verfügbar.
-   * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde. 
+   * Je nach verwendetem Modell ist eine Auswahl verfügbar.
+
    >[!NOTE]
    >
-   >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
+   >Die verfügbaren Elemente hängen vom verwendeten Modell ab.
 
 * **Variante**
    * Der Standard-**Master** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden. 
-* **Absätze**: Geben Sie den Bereich der einzubeziehenden Absätze an:
-   * **Alle**
-   * **Bereich**: Zum Beispiel `1`, `3-5`, `9-*`
-      * **Überschriften als separate Absätze behandeln**
-* **Überschriften als separate Absätze behandeln**
+
+* **ID**
+
+   * **HTML-ID-Attribut, das auf die Komponente angewandt wird.**
 
 ### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
