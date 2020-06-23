@@ -1,12 +1,12 @@
 ---
-title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Manager als Cloud Service zu erstellen.
-description: Rich-Text-Editor konfigurieren, um Inhalte in Adobe Experience Manager als Cloud Service zu erstellen.
+title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte [!DNL Adobe Experience Manager] als Cloud Service zu erstellen.
+description: Rich-Text-Editor konfigurieren, um Inhalte [!DNL Adobe Experience Manager] als Cloud Service zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
+source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 48%
+source-wordcount: '1981'
+ht-degree: 43%
 
 ---
 
@@ -31,18 +31,18 @@ Die RTE-Oberfläche Angebot ein [reaktionsfähiges Design](/help/sites-cloud/aut
 
 *Abbildung: Rich Text Editor-Symbolleiste mit allen verfügbaren Optionen.*
 
-Die Symbolleiste enthält die Optionen für das WYSIWYG-Authoring-Erlebnis. Experience Manager-Administratoren können die in der Symbolleiste auf der Benutzeroberfläche verfügbaren Optionen konfigurieren. In Experience Manager stehen standardmäßig umfassende Bearbeitungsoptionen zur Verfügung. Entwickler können Experience Manager anpassen, um weitere Bearbeitungsoptionen hinzuzufügen.
+Die Symbolleiste enthält die Optionen für das WYSIWYG-Authoring-Erlebnis. [!DNL Experience Manager] Administratoren können die in der Symbolleiste auf der Benutzeroberfläche verfügbaren Optionen konfigurieren. In [!DNL Experience Manager]sind standardmäßig umfassende Bearbeitungsoptionen verfügbar. Entwickler können die Bearbeitung anpassen, [!DNL Experience Manager] um weitere Optionen hinzuzufügen.
 
 ## Verschiedene Bearbeitungsmodi {#editingmodes}
 
-Autoren können Textinhalte in Experience Manager mit den verschiedenen Komponentenmodi erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
+Authors can create and edit textual content in [!DNL Experience Manager] using the different modes of components. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
 
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen |
 |--- |--- |--- |
-| Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds | Minimale RTE-Funktionen |
-| RTE im Vollbildmodus | Füllt die gesamte Seite aus | Alle erforderlichen RTE-Funktionen |
-| Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt | Funktionen aktivieren |
-| Dialogfeld im Vollbildmodus | wie Vollbildmodus; enthält Felder des Dialogfelds neben RTE | Alle erforderlichen RTE-Funktionen |
+| Inline | Bearbeitung im Kontext für schnelle, geringfügige Änderungen; Formatieren ohne Öffnen eines Dialogfelds. | Minimale RTE-Funktionen. |
+| RTE im Vollbildmodus | Füllt die gesamte Seite aus. | Alle erforderlichen RTE-Funktionen. |
+| Dialogfeld | Dialogfeld, das oberhalb des Seiteninhalts angezeigt wird, jedoch nicht die gesamte Seite einnimmt. | Aktivieren Sie Funktionen. |
+| Dialogfeld im Vollbildmodus | wie Vollbildmodus; enthält Felder des Dialogfelds neben RTE. | Alle erforderlichen RTE-Funktionen. |
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Autoren können Textinhalte in Experience Manager mit den verschiedenen Komponen
 
 ### Inline-Bearbeitung {#inline-editing}
 
-Beim Öffnen (mit langsamem Klicken auf die Dublette) können die Inhalte innerhalb der Seite bearbeitet werden. Dazu steht Ihnen eine kompakte Symbolleiste mit sehr grundlegenden Optionen zur Verfügung.
+Um den Inhalt auf einer Seite zu bearbeiten, öffnen Sie den Inhalt mit einem langsamen Klick auf die Dublette. Dazu steht Ihnen eine kompakte Symbolleiste mit grundlegenden Optionen zur Verfügung.
 
 ![Inline-Bearbeitung mit grundlegenden Optionen in der Symbolleiste](assets/inline-editing-mode-basic-options.png)
 
@@ -58,7 +58,7 @@ Beim Öffnen (mit langsamem Klicken auf die Dublette) können die Inhalte innerh
 
 ### Full-screen editing {#full-screen-editing}
 
-Experience Manager-Komponenten können in einer Vollbildansicht-Ansicht geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Erwägen Sie die Vollbildbearbeitung, um eine detaillierte Version der Inline-Bearbeitung zu bearbeiten, da sie die meisten Bearbeitungsoptionen Angebot. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+[!DNL Experience Manager] Komponenten können in einer Vollbildansicht geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Erwägen Sie die Vollbildbearbeitung, um eine detaillierte Version der Inline-Bearbeitung zu bearbeiten, da sie die meisten Bearbeitungsoptionen Angebot. Sie können sie öffnen, indem Sie auf ![Symbol klicken, um RTE im Vollbildmodus](assets/rte_fullscreen.png)zu öffnen, und zwar in der Kompaktsymbolleiste, wenn Sie den Inline-Bearbeitungsmodus verwenden.
 
 Im Vollbildmodus des Dialoges stehen neben einer detaillierten RTE-Symbolleiste auch die Optionen und Komponenten zur Verfügung, die in einem Dialogfeld verfügbar sind. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
@@ -68,7 +68,7 @@ Im Vollbildmodus des Dialoges stehen neben einer detaillierten RTE-Symbolleiste 
 
 ### Bearbeitung in einem Dialogfeld {#dialog-editing}
 
-Wenn Sie auf eine Komponente doppelklicken, öffnet sich ein Dialogfeld zur Bearbeitung des Inhalts. Das Dialogfeld öffnet sich oben auf der jeweiligen Seite. In bestimmten Fällen kann dieses Dialogfeld auch als Popup-Fenster geöffnet werden. Wenn eine Textkomponente beispielsweise Teil einer Spalte in einem mehrspaltigen Seitenlayout ist und der für das Dialogfeld verfügbare Bereich kleiner ist.
+Wenn Sie auf eine Komponente doppelklicken, öffnet sich ein Dialogfeld zur Bearbeitung des Inhalts. Das Dialogfeld öffnet sich oben auf der jeweiligen Seite. In bestimmten Fällen kann dieses Dialogfeld auch als Popup-Fenster geöffnet werden. Dies ist beispielsweise der Fall, wenn eine Textkomponente Teil einer Spalte in einem mehrspaltigen Seitenlayout ist und zu wenig Platz für die Anzeige des Dialogfelds vorhanden ist.
 
 ![Dialogbearbeitungsmodus](assets/dialog_editing_modetouchui.png)
 
@@ -83,7 +83,7 @@ Die Funktionen werden über eine Reihe von Plug-ins zur Verfügung gestellt, jew
    * Dient zum Aktivieren bzw. Deaktivieren der grundlegenden Funktionen für dieses Plug-In.
    * Konfiguriert mit einem standardisierten Verfahren.
 
-* weiteren Eigenschaften und Optionen, die eine spezielle Konfiguration erfordern.
+* Gegebenenfalls weitere Eigenschaften und Optionen, die eine spezielle Konfiguration erfordern.
 
 Die grundlegenden RTE-Funktionen sind durch den Wert der Eigenschaft `features` auf einem Knoten aktiviert oder deaktiviert, der spezifisch für das entsprechende Plug-in ist.
 
@@ -95,21 +95,21 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 
 | Plug-in-ID | features | Beschreibung |
 |--- |--- |--- |
-| edit | cut copy paste-default paste-plaintext paste-wordhtml | [Ausschneiden, Kopieren und drei Einfügemodi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | find replace | Suchen und Ersetzen. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | fette kursive Unterstreichung | [Grundlegende Textformatierung](configure-rich-text-editor-plug-ins.md#textstyles) |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Grundlegende Bildunterstützung (Ziehen aus der Inhaltssuche oder Inhaltssuche). Nutzungsverhalten für Autoren kann je nach verwendetem Browser variieren |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Informationen zum Definieren dieses Werts finden Sie unter [Registerkarten-Größe](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter justifyright | Absatzausrichtung |
-| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink anchor | [Hyperlinks und Anker](configure-rich-text-editor-plug-ins.md#linkstyles) |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | ordered unordered indent outdent | This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Miscellaneous tools allow authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
-| Paraformat | paraformat | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Sie können [weitere Absatzformate](configure-rich-text-editor-plug-ins.md#paraformats) hinzufügen oder die Liste erweitern. |
-| spellcheck | checktext | [Rechtschreibprüfung mit Spracherkennung](configure-rich-text-editor-plug-ins.md#adddict). |
-| styles | styles | Unterstützung für die Formatierung mit einer CSS-Klasse. [Hinzufügen Sie neue Textstile](configure-rich-text-editor-plug-ins.md#textstyles) , wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten. |
-| subsuperscript | subscript superscript | Erweiterungen zu den grundlegenden Formaten, indem Sie Unter- und Super-Skript hinzufügen. |
-| table | table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | See [configure table styles](configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells. |
-| undo | undo redo | History size of [undo and redo](configure-rich-text-editor-plug-ins.md#undohistory) operations. |
+| edit | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Ausschneiden, Kopieren und drei Einfügemodi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Suchen und Ersetzen. |
+| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Grundlegende Textformatierung](configure-rich-text-editor-plug-ins.md#textstyles) |
+| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Grundlegende Bildunterstützung (Ziehen aus der Inhaltssuche oder Inhaltssuche). Nutzungsverhalten für Autoren kann je nach verwendetem Browser variieren |
+| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Informationen zum Definieren dieses Werts finden Sie unter [Registerkarten-Größe](configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Absatzausrichtung |
+| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Hyperlinks und Anker](configure-rich-text-editor-plug-ins.md#linkstyles) |
+| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Miscellaneous tools let authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
+| Paraformat | `paraformat` | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Sie können [weitere Absatzformate](configure-rich-text-editor-plug-ins.md#paraformats) hinzufügen oder die Liste erweitern. |
+| spellcheck | `checktext` | [Rechtschreibprüfung mit Spracherkennung](configure-rich-text-editor-plug-ins.md#adddict). |
+| styles | `styles` | Unterstützung für die Formatierung mit einer CSS-Klasse. [Hinzufügen Sie neue Textstile](configure-rich-text-editor-plug-ins.md#textstyles) , wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten. |
+| subsuperscript | `subscript`, `superscript` | Erweiterungen zu den grundlegenden Formaten, indem Sie Unterskript- und Super-Skript hinzufügen. |
+| table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | See [configure table styles](configure-rich-text-editor-plug-ins.md#tablestyles) to add your own styles for entire tables or individual cells. |
+| undo | `undo`, `redo` | History size of [undo and redo](configure-rich-text-editor-plug-ins.md#undohistory) operations. |
 
 >[!NOTE]
 >
@@ -117,12 +117,12 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 
 ## Grundlegendes zu den Konfigurationspfaden und -speicherorten {#understand-the-configuration-paths-and-locations}
 
-Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Sie Ihren Autoren bereitstellen, legt den Speicherort für die Konfigurationsdetails fest, wenn Sie [die RTE-Plug-ins aktivieren](configure-rich-text-editor-plug-ins.md#activateplugin):
+The [mode of RTE editing and the interface](#editingmodes) that you provide for your authors decide the location for the configuration details when you are [activating the RTE plug-ins](configure-rich-text-editor-plug-ins.md#activateplugin). Die Speicherorte sind:
 
-* Inline-Modus: `cq:editConfig/cq:inplaceEditing`
-* Vollbildmodus: `cq:editConfig/cq:inplaceEditing`
-* Dialogfeldmodus: `cq:dialog`
-* Vollbildmodus, Dialogmodus: `cq:dialog`
+* Inline-Modus: `cq:editConfig/cq:inplaceEditing`.
+* Vollbildmodus: `cq:editConfig/cq:inplaceEditing`.
+* Dialogfeldmodus: `cq:dialog`.
+* Vollbildmodus, Dialogmodus: `cq:dialog`.
 
 >[!NOTE]
 >
@@ -131,22 +131,17 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
-
 >
 >
 Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Otherwise, the RTE configurations take effect for only the administrators and not for the users in the group `content-author`.
 
 Konfigurieren Sie die folgenden Eigenschaften, die im Dialogfeldbearbeitungsmodus gelten:
 
-* `useFixedInlineToolbar`: Legen Sie diese boolesche Eigenschaft, die auf dem RTE-Knoten definiert ist (mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext`), auf `True`fest, damit die RTE-Symbolleiste nicht schwebend, sondern fixiert wird.
-
-   Wenn diese Eigenschaft auf „true“ gesetzt ist, wird die Rich-Text-Bearbeitung standardmäßig bei dem Ereignis „foundation-contentloaded“ gestartet.
-
-   Um dies zu verhindern, setzen Sie die Eigenschaft `customStart` auf `True` und lösen Sie das Ereignis „rte-start“ zum Starten der RTE-Bearbeitung aus. Wenn diese Eigenschaft auf „true“ gesetzt ist, funktioniert das Standardverhalten, d. h. das Starten des RTE bei Klicken, nicht.
+* `useFixedInlineToolbar`: Sie können die RTE-Symbolleiste fixieren und nicht schwebend. Legen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext` auf `True`fest. Wenn diese Eigenschaft auf `True`festgelegt ist, wird die Bearbeitung von Rich-Text auf dem `foundation-contentloaded` Ereignis gestartet. To prevent this, set the property `customStart` to `True` and trigger the `rte-start` event to start RTE editing. Ist diese Eigenschaft `true`aktiviert, wird beim Klicken keine RTE Beginn, und dies ist das Standardverhalten.
 
 * `customStart`: Setzen Sie diese boolesche Eigenschaft, die im RTE-Knoten definiert ist, auf `True`, um den RTE-Startzeitpunkt zu steuern, indem Sie das Ereignis `rte-start` auslösen.
 
-* `rte-start`: Lösen Sie dieses Ereignis bei `contenteditable-div` des RTE aus, wenn die RTE-Bearbeitung gestartet werden soll. Dies funktioniert nur, wenn `customStart` auf „true“ gesetzt ist.
+* `rte-start`: Lösen Sie dieses Ereignis bei `contenteditable-div` des RTE aus, wenn die RTE-Bearbeitung gestartet werden soll. It works only if `customStart` has been set to `true`.
 
 Wenn RTE im Dialogfeld mit aktivierter Touch-Funktion verwendet wird, legen Sie die Eigenschaft `useFixedInlineToolbar` so fest, `true` dass Probleme vermieden werden.
 
@@ -159,20 +154,19 @@ Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-The [Core Components text component](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins using the user interface as content policies, eliminating the need for technical configuration. Inhaltsrichtlinien können mit RTE-UI-Konfigurationen verwendet werden, wie in diesem Dokument beschrieben ist. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
+The [Core Components text component](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Inhaltsrichtlinien können mit RTE-UI-Konfigurationen verwendet werden, wie in diesem Dokument beschrieben ist. For more information, see [create page templates](/help/sites-cloud/authoring/features/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
 
 >Zu Referenzzwecken finden Sie die standardmäßigen Textkomponenten (bereitgestellt im Rahmen einer Standardinstallation) unter:
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
 
 ## RTE-Symbolleiste konfigurieren {#dialogfullscreen}
 
-Mit Experience Manager können Sie die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen wollen. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
+[!DNL Experience Manager] Sie können die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen wollen. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
 
 Um die Symbolleiste für `dialogFullScreen` zu konfigurieren, verwenden Sie die folgende Beispielkonfiguration.
 
@@ -219,11 +213,11 @@ Für den Inline- und Vollbildmodus werden verschiedene Benutzeroberflächeneinst
 
 For example, if the option is itself a feature (for example, `Bold`), it is specified as `PluginName#FeatureName` (for example, `links#modifylink`).
 
-If the option is a popover (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
+If the option is a pop over (containing some features of a plug-in), it is specified as `#PluginName` (for example, `#format`).
 
 Separators (`|`) between a group of option can be specified with `-`.
 
-Der Knoten „pop-up“ im Inline- oder Vollbildmodus enthält eine Liste der verwendeten Popovers. Jeder untergeordnete Knoten unter dem Knoten „popovers“ wird nach dem Plug-in benannt (z. B. „format“). Er verfügt über eine Eigenschaft „items“, die eine Liste der Funktionen des Plug-ins beinhaltet (z. B. „format#bold“).
+Der Popupknoten im Inline- oder Vollbildmodus enthält eine Liste der verwendeten Popupfenster. Each child node under the `popovers` node is named after the plug-in (for example, format). Er verfügt über eine Eigenschaft „items“, die eine Liste der Funktionen des Plug-ins beinhaltet (z. B. „format#bold“).
 
 ## Einstellungen für die RTE-Benutzeroberfläche und Content-Richtlinien {#rtecontentpolicies}
 
@@ -246,7 +240,7 @@ Sie können die Zuordnung zwischen in der RTE-Symbolleiste angezeigten Coral-Sym
 1. Erstellen Sie Knoten für die einzelnen Symbole darunter.
 1. Geben Sie auf jeder einzelnen Symbol-Node ein Korallensymbol und einen Befehl ein, der dem Symbol zugeordnet werden soll.
 
-Below is a sample snippet to map the command Bold to the Coral icon named `textItalic`.
+Below is a sample snippet to map the command `Bold` to the Coral icon named `textItalic`.
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true">
@@ -270,11 +264,11 @@ Below is a sample snippet to map the command Bold to the Coral icon named `textI
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Die RTE-Funktion des Experience Managers unterliegt folgenden Einschränkungen:
+[!DNL Experience Manager]Für die RTE-Funktion gelten folgende Einschränkungen:
 
-* RTE-Funktionen werden nur in Experience Manager-Komponentendialogen unterstützt. RTE wird nicht auf Assistenten oder Foundation-Formularen unterstützt.
+* RTE capabilities are supported only in [!DNL Experience Manager] component dialogs. RTE wird nicht auf Assistenten oder Foundation-Formularen unterstützt.
 
-* Experience Manager funktioniert nicht auf Hybridgeräten. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* [!DNL Experience Manager] funktioniert nicht auf Hybrid-Geräten. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 
