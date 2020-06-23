@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * Gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
 
+* **HTML-ID**
+
+   * HTML-ID, die auf die Komponente angewendet werden soll.
+
 * **Seitentitel**
 
    * Ein Titel zur Verwendung auf der Seite. Dieser wird üblicherweise von Titel-Komponenten verwendet. Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
@@ -70,6 +74,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
    * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
+
    >[!CAUTION]
    >
    >Vanity-URLs:
@@ -97,6 +102,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * Geben Sie eine Seite an, zu der die Seite automatisch umgeleitet werden soll.
 
+* **Design**
+
+   * Gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
+
 * **Alias**
 
    * Geben Sie einen Alias an, der für diese Seite verwendet werden soll.
@@ -112,9 +121,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Vererbt von &lt;*Pfad*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Gibt an, ob die Seite vererbt wurde und von wo.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Cloud-Konfiguration**
 
@@ -172,9 +183,10 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Cloud-Service-Konfigurationen**
 
    * Legen Sie Eigenschaften für Cloud Services fest.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -183,6 +195,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 * **ContextHub-Konfigurationen**
 
    * Wählen Sie die ContextHub-Konfiguration und den Segmentpfad aus.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -199,6 +212,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * Berechtigungen hinzufügen
    * Geschlossene Benutzergruppe bearbeiten
    * Effektive Berechtigungen anzeigen
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -210,6 +224,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 * **Blueprint**
 
    * Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
