@@ -2,10 +2,10 @@
 title: 'Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups '
 description: Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1121'
+ht-degree: 97%
 
 ---
 
@@ -100,8 +100,8 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
+   * Interaktiver Bild-Viewer: [Sethandler](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Interaktiver Video-Viewer: [Sethandler](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Jetzt müssen Sie den Handler `quickViewActivate` konfigurieren.
 
