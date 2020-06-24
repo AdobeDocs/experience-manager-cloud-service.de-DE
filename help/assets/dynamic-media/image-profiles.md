@@ -2,10 +2,10 @@
 title: Bildprofile für Dynamic Media
 description: Erstellen Sie Dynamic Media-Image-Profil, die Einstellungen für Unschärfemaske, intelligente Beschneidung oder intelligentes Farbfeld oder beides enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2739'
-ht-degree: 74%
+source-wordcount: '2732'
+ht-degree: 73%
 
 ---
 
@@ -93,7 +93,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
  </tbody>
 </table>
 
-Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern] beschrieben (/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Erstellen von Bildprofilen für Dynamic Media {#creating-image-profiles}
 
