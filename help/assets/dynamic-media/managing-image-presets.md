@@ -2,10 +2,10 @@
 title: 'Verwalten von Bildvorgaben  '
 description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '3657'
-ht-degree: 100%
+source-wordcount: '3651'
+ht-degree: 99%
 
 ---
 
@@ -394,7 +394,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Bildmodifikator</strong></td>
-   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bildmodifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/c_command_reference.html">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
+   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bildmodifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
     <ul>
      <li>Grundlegende Befehle zur Vorlagenerstellung und Textdarstellung: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> und <code>textPs=</code></li>
      <li>Lokalisierungsbefehle: <code>locale=</code> und <code>req=xlate</code></li>
