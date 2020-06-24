@@ -2,10 +2,10 @@
 title: 'Verfassen zielgerichteter Inhalte im Targeting-Modus '
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 100%
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -337,12 +337,15 @@ Dem Standarderlebnis lassen sich keine Bibliotheksangebote hinzufügen.
    Mit der Angebotswahl können Sie die Angebote durchsuchen oder filtern. Beim Durchsuchen oder Filtern der Angebote können diese zudem sortiert und deren Anzeige angepasst werden. Die oben rechts gezeigte Zahl gibt an, wie viele Angebote in der aktuellen Bibliothek verfügbar sind.
 
    * Klicken oder tippen Sie auf **Durchsuchen**, um zu einem anderen Ordner zu navigieren. Es öffnet sich ein Navigationsfenster, in dem Sie durch Klicken auf die Pfeile tiefer in die Ordnerstruktur vordringen können. Klicken oder tippen Sie erneut auf **Durchsuchen**, um das Navigationsfenster zu schließen.
+
    ![Inhalt durchsuchen](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * Klicken oder tippen Sie auf **Filter**, um die Angebote nach Stichwörtern oder Tags zu filtern. Stichwörter werden manuell eingegeben, während sich Tags aus dem entsprechenden Dropdown-Menü auswählen lassen. Klicken oder tippen Sie erneut auf **Filter**, um das Filterfenster zu schließen.
+
    ![Inhalt filtern](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * Durch Klicken oder Tippen auf den Pfeil neben **Von neu nach alt** können Sie anpassen, wie die Angebote sortiert werden sollen. Angebote können von neu nach alt oder von alt nach neu sortiert werden.
+
    ![Sortierreihenfolge filtern](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    Klicken oder tippen Sie auf das Symbol neben **Anzeigen als**, um Angebote als Kacheln oder Liste anzuzeigen.
@@ -461,7 +464,7 @@ Verwenden Sie die erweiterten Optionen, um festzulegen, was geschehen soll, **we
 | Anzahl erhöhen, Benutzer freigeben und Wiedereintritt erlauben | Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er die Aktivität erneut aufruft: „Gleiches Erlebnis“, „Zufälliges Erlebnis“, „Nicht gesehenes Erlebnis“ |
 | Anzahl erhöhen, Benutzer freigeben und Wiedereintritt untersagen | Legen Sie fest, was der Benutzer anstelle des Aktivitätsinhalts sieht: „Gleiches Erlebnis ohne Tracking“, „Standardinhalt“ oder andere Aktivitätsinhalte |
 
-Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/target/r_success_metrics.html).
+Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
 ### Konfigurieren von Einstellungen (AEM Targeting)   {#configuring-settings-aem-targeting}
 
@@ -500,13 +503,13 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 
    ![Berichtsquelle](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/target/r_success_metrics.html) zu Erfolgsmetriken.
+1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) zu Erfolgsmetriken.
 
    Sie können das Ziel umbenennen, indem Sie auf die drei Punkte oben rechts klicken und **Umbenennen** auswählen.
 
    Möchten Sie die Inhalte aller Felder löschen, klicken Sie auf die drei Punkte oben rechts und wählen Sie **Alle Felder löschen** aus.
 
-   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://marketing.adobe.com/resources/help/de_DE/target/target/r_success_metrics.html).
+   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
