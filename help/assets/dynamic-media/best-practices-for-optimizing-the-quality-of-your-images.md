@@ -2,7 +2,7 @@
 title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 100%
@@ -65,7 +65,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       AEM-Hilfethema zum Scharfzeichnen von Bildern.
 
-      Best Practices-Whitepaper [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      Best Practices-Whitepaper [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
