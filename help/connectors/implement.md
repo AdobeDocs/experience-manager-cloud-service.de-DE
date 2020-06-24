@@ -2,10 +2,10 @@
 title: Implementieren von AEM-Connectoren
 description: Implementieren von AEM-Connectoren
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 100%
+source-wordcount: '960'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ Implementieren von AEM-Connectoren
 
 Im Folgenden finden Sie nützliche Hinweise zum Erstellen von [AEM-Connectoren](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html). Sie sollten zusammen mit Anleitungen zum [Senden](submit.md) und [Warten](maintain.md) von Connectoren gelesen werden.
 
-Beachten Sie, dass eine Entwicklerlizenz für AEM über das [Adobe Exchange-Programm](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html) erhältlich ist.
+Beachten Sie, dass eine Entwicklerlizenz für AEM über das [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud) erhältlich ist.
 
 Gängige Integrationsmuster
 ---------------------------
@@ -47,7 +47,7 @@ Community-Ressourcen
 Zusätzlich zur obenstehenden statischen Dokumentation bieten Adobe und die AEM-Community Ressourcen an, um einen Connector auf den Markt zu bringen:
 
 * Das [AEM-Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) der Adobe Community ist eine aktive Website, auf der Ihre Kollegen Fragen stellen und beantworten
-* Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
+* Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
 * Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](http://www.adobe.com/de/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
 
 Regeln für die Paketstruktur
