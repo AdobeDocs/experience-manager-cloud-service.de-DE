@@ -2,10 +2,10 @@
 title: 'Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Pop-ups '
 description: Die standardmäßige Schnellansicht wird in eCommerce-Anwendungen eingesetzt, in denen ein Popupfenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 97%
+source-wordcount: '1023'
+ht-degree: 88%
 
 ---
 
@@ -130,9 +130,9 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `quickViewActivate`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * Interaktive Datenunterstützung im interaktiven Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * Interaktiver Bild-Viewer - Rückrufe [von Ereignissen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Interaktiver Video-Viewer - [Ereignis-Rückrufe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Unterstützung interaktiver Daten im interaktiven Video-Viewer - Unterstützung [interaktiver Daten](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Gehen Sie folgendermaßen vor:
 
@@ -208,8 +208,8 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `init()`:
 
-   * Interaktiver Bild-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * Interaktiver Video-Viewer: [https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * Interaktiver Bild-Viewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Interaktiver Video-Viewer - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Um das in den vorherigen Schritten beschriebene Popup-Fenster mit dem Viewer zu verbinden, verwenden Sie den folgenden Code:
 
