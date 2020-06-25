@@ -3,10 +3,10 @@ title: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Date
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 96%
 
 ---
 
@@ -86,6 +86,21 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media
 * PSD-Dateien mit einer Bittiefe größer als 16.
 * TIFF-Dateien mit Gleitkommadaten.
 * TIFF-Dateien mit Lab-Farbraum.
+
+## Unterstützte 3D-Formate {#support-3d-formats}
+
+Die folgende Liste von 3D-Formaten wird unterstützt.
+
+Siehe [Arbeiten mit 3D-Assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffskontrolle | Miniaturansicht, Vorschau | 3D-Vorschau | Dynamic Media Versand |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW]-Formate {#camera-raw-formats}
 
