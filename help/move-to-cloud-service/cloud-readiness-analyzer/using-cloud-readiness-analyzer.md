@@ -2,9 +2,9 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,12 @@ Gehen Sie wie folgt vor, um die wichtigen Überlegungen zum Ausführen des Cloud
 
 * Der CRA-Bericht wird mit der Ausgabe des [Musterdetektors](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)für Adobe Experience Manager (AEM) erstellt. Die von CRA verwendete Version des Musterdetektors ist im CRA-Installationspaket enthalten.
 
-* Die CRA kann nur vom **Administrator** -Benutzer oder einem Benutzer der **Administratorgruppe** ausgeführt werden.
+* CRA kann nur vom **Administrator** -Benutzer oder einem Benutzer der **Administratorgruppe** ausgeführt werden.
 
 * CRA wird auf AEM-Instanzen mit Version 6.1 und höher unterstützt.
+
+   >[!NOTE]
+   > Besondere Anforderungen für die Installation von CRA auf AEM 6.1 finden Sie unter [Installieren auf AEM 6.1](#installing-on-aem61) .
 
 * CRA kann auf jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, sie auf einer *Stage* -Umgebung auszuführen.
 
@@ -169,7 +172,9 @@ Die folgenden Antwortwerte sind möglich:
 * `500 Internal Server Error`: Gibt an, dass ein interner Serverfehler aufgetreten ist. Eine Meldung im Format Problemdetails enthält weitere Details.
 * `503 Service Unavailable`: Gibt an, dass der Server mit einer anderen Antwort beschäftigt ist und diese Anforderung nicht zeitnah bearbeiten kann. Dies tritt nur bei synchronen Anfragen auf. Eine Meldung im Format Problemdetails enthält weitere Details.
 
-## Cache-Lebenszeitanpassung {#cache-adjustment}
+## Administratorinformationen
+
+### Cache-Lebenszeitanpassung {#cache-adjustment}
 
 Die standardmäßige CRA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option zum Aktualisieren eines Berichts und zum Wiederherstellen des Cache sowohl in der AEM-Instanz als auch in der HTTP-Schnittstelle ist dieser Standardwert für die meisten Verwendungen der CRA geeignet. Wenn die Berichtgenerierungszeit für Ihre AEM-Instanz besonders lang ist, sollten Sie die Cache-Lebensdauer anpassen, um die Regeneration des Berichts zu minimieren.
 
@@ -178,7 +183,12 @@ Der Wert für die Cache-Lebensdauer wird als `maxCacheAge` Eigenschaft auf dem f
 
 Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mit CRX/DE Lite anpassen.
 
+### Installieren auf AEM 6.1 {#installing-on-aem61}
 
+CRA verwendet ein Systemdienst-Benutzerkonto mit dem Namen `repository-reader-service` zum Ausführen des Musterdetektors. Dieses Konto ist auf AEM 6.2 und höher verfügbar. In AEM 6.1 muss dieses Konto *vor* der Installation von CRA wie folgt erstellt werden:
 
+1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Dienstbenutzers](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) , um einen Benutzer zu erstellen. Legen Sie die UserID fest, lassen Sie den Zwischenpfad leer `repository-reader-service` und klicken Sie dann auf das grüne Häkchen.
 
+2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service` Benutzer zur `administrators` Gruppe hinzuzufügen.
 
+3. Installieren Sie das CRA-Paket über Package Manager auf Ihrer AEM-Quellinstanz. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service` Systemdienstbenutzer hinzugefügt.)
