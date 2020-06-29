@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 description: 'Wesentliche Änderungen an AEM Sites in AEM Cloud Service '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 91%
 
 ---
 
@@ -15,9 +15,15 @@ ht-degree: 100%
 AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie der Cloud-nativen Skalierbarkeit, der Betriebszeit und der Aktualität, bietet AEM Sites as a Cloud Service auch eine Reihe von Sites-spezifischen Änderungen und Ergänzungen.
 
 >[!NOTE]
->In diesem Dokument werden die wesentlichen Änderungen an AEM Sites aufgeführt. Informationen zu allgemeinen Änderungen an Cloud-basierten AEM-Versionen finden Sie unter:
+>In diesem Dokument werden die wesentlichen Änderungen an AEM Sites aufgeführt. Allgemeine Änderungen an AEM als Cloud Service und anderen Modulen finden Sie unter:
 >
->* [Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
+>* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* Eine [Übersicht über AEM als Cloud Service - Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
+>* Die [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
+>* [Bemerkenswerte Änderungen an AEM als Cloud Service (Versionshinweise)](/help/release-notes/aem-cloud-changes.md)
+>* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Einführung von AEM Assets als Cloud Service](/help/assets/overview.md)
+>* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 
 
 Änderungen und Ergänzungen an AEM Sites as a Cloud Service:
