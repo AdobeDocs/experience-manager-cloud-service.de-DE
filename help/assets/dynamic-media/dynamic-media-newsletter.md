@@ -2,10 +2,10 @@
 description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Wert realisieren können. In diesem „One-Stop-Shop“-Newsletter finden Sie wertvolle Ressourcen zur Wissensbildung, darunter Videos, Lösungsübersichten und Einführungen in einige der wichtigsten Funktionen und Fähigkeiten wie Bildvoreinstellungen, Viewer-Voreinstellungen, Videoprofile und mehr. '
 title: Dynamic Media Newsletter
 translation-type: tm+mt
-source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
+source-git-commit: 26cc4778052ebcc520dc3ddeeca30c043eadf695
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 93%
+source-wordcount: '1200'
+ht-degree: 100%
 
 ---
 
@@ -22,20 +22,20 @@ In diesem „One-Stop-Shop“-Newsletter finden Sie wertvolle Ressourcen zur Wis
 
 ## Sie haben eine Ausgabe des Dynamic Media Newsletters verpasst?
 
-* **[Mai 2020, Ausgabe 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
-   In dieser Ausgabe:
+    In this issue:
 
-   * Was Business Continuity in unsicheren Zeiten bedeutet.
-   * Wichtige Schritte vom ersten All-Digital-Adobe-Gipfel.
-   * Muss Experience Manager-Arbeitsgruppensitzungen überwachen.
-   * Gipfelkunde: Unter Rüstung.
-   * Verpassen Sie nie ein Experience Insider-Webinar.
-   * Schwerpunkte des öffentlichen Sektors: Die dringende Notwendigkeit einer digitalen Registrierung.
-   * Sehen Sie sich die neuen Funktionen von Experience Manager Innovation an.
-   * Erstellen Sie Ihre Experience Manager-Fähigkeiten *live* mit den Adobe-Profis.
-   * Stellen Sie eine Verbindung zur Adobe Experience Manager-Community her.
-   * Verfolgen Sie Ihr Adobe-Know-how mit Adobe Experience League.
+    * What business continuity means in uncertain times.
+    * Key takeaways from the first all-digital Adobe Summit.
+    * Must-watch Experience Manager breakout sessions.
+    * Summit customer spotlight: Under Armour.
+    * Never miss an Experience Insider webinar.
+    * Public sector spotlight: The urgent need for digital enrollment.
+    * Look what’s new in Experience Manager Innovation.
+    * Build your Experience Manager skills *live* with the Adobe pros.
+    * Connect with the Adobe Experience Manager Community.
+    * Fast-track your Adobe expertise with Adobe Experience League. -->
 
 * **[April 2020, Ausgabe 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
