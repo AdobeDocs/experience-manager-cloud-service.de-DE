@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer AEM-Projekte. Es gibt jedoch eine Reihe von Unterschieden zwischen AEM Sites On-Premise oder in Adobe Managed Services im Vergleich zu AEM Cloud Service. In diesem Dokument wird auf die wichtigsten Unterschiede eingegangen.
 
 >[!NOTE]
->In diesem Dokument werden die wesentlichen Änderungen an AEM als Ganzes hervorgehoben. Lösungsspezifische Änderungen finden Sie hier:
+>In diesem Dokument werden die wesentlichen Änderungen an AEM als Ganzes hervorgehoben. Weitere Informationen und lösungsspezifische Änderungen finden Sie unter:
 >
->* [Wesentliche Änderungen an AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Westentliche Änderungen an AEM Assets in AEM Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
+>* Die [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
+>* [Wesentliche Änderungen an Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 * [/apps und /libs sind zur Laufzeit unveränderlich](#apps-libs-immutable)
+
 * [OSGi-Pakete und -Einstellungen müssen Repository-basiert sein](#osgi)
+
 * [Änderungen am Publishing-Repository sind nicht zulässig](#changes-to-publish-repo)
+
 * [Benutzerdefinierte Ausführungsmodi sind nicht zulässig](#custom-runmodes)
+
 * [Entfernung von Replikations-Agenten](#replication-agents)
+
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui)
+
 * [Bereitstellung auf Publishing-Seite](#publish-side-delivery)
+
 * [Asset-Handhabung und -Bereitstellung](#asset-handling)
 
 ## /apps und /libs sind zur Laufzeit unveränderlich {#apps-libs-immutable}
