@@ -2,23 +2,34 @@
 title: Wesentliche Änderungen an Adobe Experience Manager Assets as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager Assets in AEM Cloud Service im Vergleich zu Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '619'
+ht-degree: 92%
 
 ---
 
 
 # Wesentliche Änderungen an Adobe Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer AEM-Projekte. Allerdings gibt es viele Unterschiede zwischen der On-Premise- und der über Adobe Managed Service bereitgestellten Version von Adobe Experience Manager Assets und Adobe Experience Manager as a Cloud Service. In diesem Dokument werden die wichtigen Unterschiede bei den Asset-Funktionen verdeutlicht. Weitere Änderungen finden Sie im Abschnitt zu den allgemeinen [Änderungen an Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer AEM-Projekte. Allerdings gibt es viele Unterschiede zwischen der On-Premise- und der über Adobe Managed Service bereitgestellten Version von Adobe Experience Manager Assets und Adobe Experience Manager as a Cloud Service. In diesem Dokument werden die wichtigen Unterschiede bei den Asset-Funktionen verdeutlicht.
 
 Die Hauptunterschiede gegenüber Adobe Experience Manager 6.5 bestehen in den folgenden Bereichen:
 
 * [Asset-Aufnahme und -Upload](#asset-ingestion).
 * [Asset-Microservices für die Cloud-Verarbeitung](#asset-microservices).
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui).
+
+>[!NOTE]
+>In diesem Dokument werden die wesentlichen Änderungen an AEM Assets hervorgehoben. Allgemeine Änderungen an AEM als Cloud Service und anderen Modulen finden Sie unter:
+>
+>* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* Eine [Übersicht über AEM als Cloud Service - Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
+>* Die [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
+>* [Bemerkenswerte Änderungen an AEM als Cloud Service (Versionshinweise)](/help/release-notes/aem-cloud-changes.md)
+>* [Wesentliche Änderungen an Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+
 
 ## Asset-Erfassung und -Upload {#asset-ingestion}
 
