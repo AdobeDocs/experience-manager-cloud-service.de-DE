@@ -2,10 +2,10 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager als Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen.
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 47%
+source-wordcount: '1241'
+ht-degree: 42%
 
 ---
 
@@ -30,9 +30,9 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähigen Dialogfeld einer Komponente geeignet.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass sie nur für die standardmäßige, touchfähige Benutzeroberfläche geeignet ist; insbesondere Überschreibungen, die auf diese Weise definiert werden, gelten nur für das touchfähige Dialogfeld einer Komponente.
 >
->Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
+>Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer touchfähigen Komponente) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur vom Original in den Bereich, in dem die Anpassung definiert wird.
 
 ### Ziele für AEM {#goals-for-aem}
 
