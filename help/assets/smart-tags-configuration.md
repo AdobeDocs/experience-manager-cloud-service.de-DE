@@ -3,15 +3,15 @@ title: Optimierte Smart-Tags
 description: Wenden Sie mithilfe der KI- und ML-Services von Adobe Sensei kontextbezogene und beschreibende Unternehmens-Tags an, um die Asset-Erkennung und Content Velocity zu verbessern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 22%
+source-wordcount: '1009'
+ht-degree: 21%
 
 ---
 
 
-# Experience Manager für intelligentes Tagging von Assets konfigurieren {#configure-aem-for-smart-tagging}
+# Konfigurieren von Experience Manager für intelligentes Tagging von Assets {#configure-aem-for-smart-tagging}
 
 Durch das Taggen von Assets mit einem taxonomisch gesteuerten Vokabular wird sichergestellt, dass die Assets durch tag-basierte Suchen leicht identifiziert und abgerufen werden können. Adobe stellt intelligente Tags bereit, die künstliche Intelligenz und maschinelle Lernalgorithmen verwenden, um Bilder zu trainieren. Smart Tags verwenden ein künstliches Intelligenzkonzept von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html) , um den Bilderkennungsalgorithmus in Ihrer Tag-Struktur und Ihrer Geschäftstaxonomie zu schulen.
 
@@ -21,17 +21,17 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
 ## Integration mit der Adobe Developer Console {#aio-integration}
 
-Bevor Sie die Bilder mit SCS taggen können, müssen Sie sie mit der Adobe Developer Console in [!DNL Adobe Experience Manager] den Smart Tags-Dienst integrieren. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
+Bevor Sie die Bilder mit SCS taggen können, müssen Sie sie mithilfe der Adobe Developer Console in [!DNL Adobe Experience Manager] den Smart Tags-Dienst integrieren. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
-* Create a configuration in [!DNL Experience Manager] to generate a public key. Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.
-* Erstellen Sie eine Integration in Adobe Developer Console und laden Sie den generierten öffentlichen Schlüssel hoch.
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
-* Aktivieren Sie optional das automatische Tagging beim Hochladen eines Assets.
+* Create a configuration in [!DNL Experience Manager] to generate a public key. [Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.](#obtain-public-certificate)
+* [Erstellen Sie eine Integration in Adobe Developer Console](#create-aio-integration) und laden Sie den generierten öffentlichen Schlüssel hoch.
+* [Konfigurieren Sie Smart-Tags](#configure-smart-content-service) in Ihrer [!DNL Experience Manager] Instanz mithilfe des API-Schlüssels und anderer Anmeldedaten aus der Adobe Developer Console.
+* [Testen Sie die Konfiguration](#validate-the-configuration).
+* [Nach Ablauf](#certrenew)des Zertifikats neu konfigurieren.
 
 ### Voraussetzungen für die Integration der Adobe Developer Console {#prerequisite-for-aio-integration}
 
@@ -52,24 +52,7 @@ Mit einem öffentlichen Zertifikat können Sie Ihr Profil in der Adobe Developer
 
 1. Click **[!UICONTROL Download Public Key]**.
 
-   ![Smart-Tags in Experience Manager erstellen öffentlichen Schlüssel](assets/aem_smarttags-config1.png)
-
-### Bei Ablauf eines Zertifikats neu konfigurieren {#certrenew}
-
-Wenn das Zertifikat abläuft, wird es nicht mehr als vertrauenswürdig eingestuft. Um ein neues Zertifikat hinzuzufügen, führen Sie diese Schritte aus. Sie können ein abgelaufenes Zertifikat nicht verlängern.
-
-1. Log in your [!DNL Experience Manager] deployment as an administrator. Klicken Sie auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
-
-1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken Sie auf die Registerkarte **[!UICONTROL Keystore]**.
-1. Löschen Sie den vorhandenen **[!UICONTROL similaritysearch]**-Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
-
-   ![Löschen Sie den vorhandenen Eintrag „similaritysearch“ (Ähnlichkeitssuche) in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
-
-   *Abbildung: Löschen Sie den vorhandenen`similaritysearch`Eintrag in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.*
-
-1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]** auf. Öffnen Sie die verfügbare Smart-Tags-Konfiguration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
-
-1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie zum vorhandenen Dienst im Projekt. Laden Sie das neue Zertifikat hoch und konfigurieren Sie es. Weitere Informationen zur Konfiguration finden Sie in den Anweisungen unter Adobe Developer Console-Integration [erstellen](#create-aio-integration).
+   ![Experience Manager-Smart-Tags erstellen öffentlichen Schlüssel](assets/aem_smarttags-config1.png)
 
 ### Eine Integration erstellen {#create-aio-integration}
 
@@ -104,6 +87,23 @@ Nachdem Sie die Konfiguration abgeschlossen haben, führen Sie die folgenden Sch
 1. Wählen Sie die Konfiguration für intelligente Tags aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Überprüfen Sie den Zustand]** . Klicken Sie auf **[!UICONTROL Prüfen]**. Ein Dialogfeld mit der Meldung [!UICONTROL Gesunde Konfiguration] bestätigt, dass die Konfiguration funktioniert.
 
 ![Konfiguration von intelligenten Tags überprüfen](assets/smart-tag-config-validation.png)
+
+### Bei Ablauf eines Zertifikats neu konfigurieren {#certrenew}
+
+Wenn das Zertifikat abläuft, wird es nicht mehr als vertrauenswürdig eingestuft. Um ein neues Zertifikat hinzuzufügen, führen Sie diese Schritte aus. Sie können ein abgelaufenes Zertifikat nicht verlängern.
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Klicken Sie auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
+
+1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken Sie auf die Registerkarte **[!UICONTROL Keystore]**.
+1. Löschen Sie den vorhandenen **[!UICONTROL similaritysearch]**-Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+
+   ![Löschen Sie den vorhandenen Eintrag „similaritysearch“ (Ähnlichkeitssuche) in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
+
+   *Abbildung: Löschen Sie den vorhandenen`similaritysearch`Eintrag in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.*
+
+1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]** auf. Öffnen Sie die verfügbare Smart-Tags-Konfiguration. To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
+
+1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie zum vorhandenen Dienst im Projekt. Laden Sie das neue Zertifikat hoch und konfigurieren Sie es. Weitere Informationen zur Konfiguration finden Sie in den Anweisungen unter Adobe Developer Console-Integration [erstellen](#create-aio-integration).
 
 ## Aktivieren des intelligenten Tagging für neu hochgeladene Assets (optional) {#enable-smart-tagging-for-uploaded-assets}
 
