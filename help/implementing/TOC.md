@@ -2,10 +2,10 @@
 sub-product: Implementieren für AEM as a Cloud Service
 user-guide-title: Implementieren für AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 82%
+source-wordcount: '231'
+ht-degree: 75%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 82%
    + [AEM as a Cloud Service-SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Entwicklungsrichtlinien für AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Erste Schritte bei der Entwicklung von AEM-Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
+   + [Überlagerungen in AEM als Cloud Service](developing/introduction/overlays.md)
+   + [Verwenden des Sling Resource Merger in AEM als Cloud Service](developing/introduction/sling-resource-merger.md)
    + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Wissenswertes zu Testergebnissen](/help/implementing/developing/introduction/understand-test-results.md)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
@@ -49,5 +51,5 @@ ht-degree: 82%
 + Content Versand - Übersicht {#content-delivery}
    + [Content Versand Flow](dispatcher/overview.md)
    + [Dispatcher in der Cloud](dispatcher/disp-overview.md)
-   + [CDN in AEM als Cloud-Dienst](dispatcher/cdn.md)
-   + [Zwischenspeicherung in AEM als Cloud-Dienst](dispatcher/caching.md)
+   + [CDN in AEM als Cloud Service](dispatcher/cdn.md)
+   + [Zwischenspeichern in AEM als Cloud Service](dispatcher/caching.md)
