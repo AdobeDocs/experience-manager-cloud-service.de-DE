@@ -2,9 +2,9 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2530'
 ht-degree: 95%
 
 ---
@@ -46,7 +46,7 @@ Aus diesem Grund müssen Oak-Indizes zwar zur Laufzeit veränderlich sein, aber 
 
 >[!TIP]
 >
->Weitere Informationen zur Indexierung in AEM als Cloud-Dienst finden Sie in der Dokument [Content Search and Indexing.](/help/operations/indexing.md)
+>Weitere Informationen zur Indexierung in AEM als Cloud Service finden Sie in der Dokument [Content Search and Indexing.](/help/operations/indexing.md)
 
 ## Empfohlene Paketstruktur {#recommended-package-structure}
 
@@ -59,13 +59,13 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
 + Das `ui.apps`-Paket bzw. das Code-Paket enthält den gesamten bereitzustellenden Code und stellt nur für `/apps` bereit. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
    + OSGi-Bundles
       + `/apps/my-app/install`
-   + OSGi-Konfigurationen
+   + [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + HTML-Skripte
+   + [HTML-Skripte](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript und CSS (über Client-Bibliotheken)
       + `/apps/my-app/clientlibs`
-   + Überlagerungen von /libs
+   + [Überlagerungen von /libs](/help/implementing/developing/introduction/overlays.md)
       + `/apps/cq`, `/apps/dam/` usw.
    + Kontextabhängige Ausweichkonfigurationen
       + `/apps/settings`
