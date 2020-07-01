@@ -2,10 +2,10 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager als Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen.
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 42%
+source-wordcount: '1160'
+ht-degree: 40%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/implementing/developing/introduction/overlays.md)**von Ressourcen unter Verwendung der[konfigurierten Suchpfade](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths).
+* **[Überlagerungen](/help/implementing/developing/introduction/overlays.md)**von Ressourcen mithilfe der[Suchpfade](/help/implementing/developing/introduction/overlays.md#search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass sie nur für die standardmäßige, touchfähige Benutzeroberfläche geeignet ist; insbesondere Überschreibungen, die auf diese Weise definiert werden, gelten nur für das touchfähige Dialogfeld einer Komponente.
->
->Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer touchfähigen Komponente) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur vom Original in den Bereich, in dem die Anpassung definiert wird.
+>Die Sling Resource Merger-Methode und die zugehörigen Methoden können nur mit der touchfähigen Benutzeroberfläche verwendet werden (der einzigen Benutzeroberfläche, die für AEM als Cloud Service verfügbar ist).
 
 ### Ziele für AEM {#goals-for-aem}
 
@@ -43,27 +41,17 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 
    When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). Das unnötige Duplizieren von Daten erhöht die Wahrscheinlichkeit von Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
->[!NOTE]
->
->Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
->
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
 >[!CAUTION]
 >
 >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
+>Der Grund dafür ist, dass der Inhalt von `/libs` ggf. überschrieben werden kann, wenn Aktualisierungen auf Ihre Instanz angewendet werden.
 >
->Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
->
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths)abhängig.
    >
    >
-1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
-
->
-
+* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
+   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 
 ### Eigenschaften {#properties}
