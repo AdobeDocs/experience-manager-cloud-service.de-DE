@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 3%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Inhaltssuche und -indizierung {#indexing}
 
-## Änderungen in AEM als Cloud-Dienst {#changes-in-aem-as-a-cloud-service}
+## Änderungen in AEM als Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Mit AEM als Cloud-Dienst verlagert Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
+Mit AEM als Cloud Service verlagert sich Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
 
 Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und früheren Versionen:
 
@@ -32,13 +32,11 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 
-1. Auf einer hohen Ebene in AEM als Cloud-Dienst werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes vorhanden sein: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. Auf hoher Ebene wird es in AEM als Cloud Service mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes geben: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
 1. Kunden können sehen, ob der Indexierungsauftrag auf der Buildseite von Cloud Manager abgeschlossen ist, und erhalten eine Benachrichtigung, wenn die neue Version Traffic aufnehmen kann.
 
-1. Einschränkungen: Derzeit wird die Indexverwaltung für AEM als Cloud-Dienst nur für Indizes vom Typ lucene unterstützt.
+1. Einschränkungen: Derzeit wird die Indexverwaltung auf AEM als Cloud Service nur für Indizes des Typs lucene unterstützt.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ Die Definition von Indizes kann aus drei Anwendungsfällen bestehen:
 1. Aktualisieren einer vorhandenen Indexdefinition. Dies bedeutet effektiv, eine neue Version einer vorhandenen Indexdefinition hinzuzufügen.
 1. Entfernen eines vorhandenen, redundanten oder veralteten Indexes
 
-Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation [zur](/help/implementing/deploying/overview.md)Bereitstellung auf AEM als Cloud-Dienst.
+Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellung auf AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung üb
 
 >[!TIP]
 >
->Weitere Informationen zur erforderlichen Paketstruktur für AEM als Cloud-Dienst finden Sie in der Dokument- [AEM-Projektstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Weitere Informationen zur erforderlichen Paketstruktur für AEM als Cloud Service finden Sie in der Dokument- [AEM-Projektstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Indexverwaltung unter Verwendung von Blue-Green-Bereitstellungen {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ Die folgende Tabelle zeigt fünf Indexdefinitionen: Index `cqPageLucene` wird in
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` wird benötigt, damit AEM als Cloud-Dienst als Ersatz für einen vorhandenen Index markiert wird.
+> `<indexName>-custom-<customerVersionNumber>` wird benötigt, damit AEM als Cloud Service dies als Ersatz für einen vorhandenen Index kennzeichnet.
 
 | Index | Vordefinierter Index | Verwendung in Version 1 | Verwendung in Version 2 |
 |---|---|---|---|
@@ -161,7 +159,9 @@ Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, k�
 
 Um einen Index mit dem Namen &quot;/oak:index/acmeProduct-custom-1&quot;hinzuzufügen, der in einer neuen Version der Anwendung und später verwendet werden soll, muss der Index wie folgt konfiguriert werden:
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+Dies funktioniert, indem dem Indexnamen ein benutzerdefinierter Bezeichner vorangestellt wird, gefolgt von einem Punkt (**.**). Der Bezeichner muss zwischen 1 und 4 Zeichen lang sein.
 
 Wie oben gezeigt, stellt dies sicher, dass der Index nur von der neuen Version der Anwendung verwendet wird.
 
