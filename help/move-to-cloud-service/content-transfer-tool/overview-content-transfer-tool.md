@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 86%
 
 ---
 
@@ -55,10 +55,10 @@ Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practice
 
 * Nach Abschluss der Aktivität zum Inhaltstransfer ist in der Cloud Service-Umgebung die korrekte Projektstruktur erforderlich, um sicherzustellen, dass der Inhalt in der Cloud Service-Umgebung erfolgreich gerendert wird.
 
-* Bevor Sie das Content Transfer Tool ausführen, müssen Sie sicherstellen, dass im `crx-quickstart` Unterverzeichnis der AEM-Quellinstanz genügend Speicherplatz vorhanden ist. Dies liegt daran, dass das Inhaltsübertragungstool eine lokale Kopie des Repositorys erstellt, die später in den Migrationssatz hochgeladen wird.
-Die allgemeine Formel zur Berechnung des benötigten freien Festplattenspeicherplatzes lautet wie folgt:
+* Stellen Sie sicher, dass im `crx-quickstart`-Unterverzeichnis der AEM-Quellinstanz genügend Speicherplatz vorhanden ist, bevor Sie das Content Transfer-Tool ausführen. Dies ist notwendig, da das Content Transfer-Tool eine lokale Kopie des Repositorys erstellt, die später in den Migrationssatz hochgeladen wird.
+Die allgemeine Formel zur Berechnung des erforderlichen freien Festplattenspeicherplatzes lautet wie folgt:
    `data store size + node store size * 1.5`
 
-   * *Datenspeichergröße*: Das Content Transfer Tool verwendet 64 GB, auch wenn der eigentliche Datenspeicher größer ist.
-   * *Knotenspeichergröße*: Segmentspeicherordnergröße oder die MongoDB-Datenbankgröße.
-Bei einer Segmentspeichergröße von 20 GB würde daher der erforderliche freie Speicherplatz 94 GB betragen.
+   * *Datenspeichergröße*: Das Content Transfer-Tool verwendet 64 GB, auch wenn der eigentliche Datenspeicher größer ist.
+   * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
+Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
