@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Um die Kommunikation zwischen AEM und Adobe Stock zu ermöglichen, erstellen Sie
 >
 >Nur AEM- und Admin Console-Administratoren einer Organisation können die Integration durchführen, da hierfür Administratorrechte erforderlich sind.
 
-### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
+### Erstellen einer IMS-Konfiguration     {#create-an-ims-configuration}
 
 1. Klicken Sie auf das AEM-Logo. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Geben Sie die entsprechenden Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Geheimer Clientschlüssel]** und **[!UICONTROL Nutzlast]** ein. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
-1. Hinzufügen Sie den heruntergeladenen öffentlichen Schlüssel in Ihr Adobe Developer Console-Dienstkonto ein.
+1. Geben Sie die entsprechenden Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Geheimer Client-Schlüssel]** und **[!UICONTROL Payload]** ein. Detaillierte Informationen zum Abrufen dieser Werte aus der Adobe Developer Console finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Fügen Sie den heruntergeladenen Schlüssel zu Ihrem Adobe Developer Console-Dienstkonto hinzu.
 
 <!--
 TBD: Update this instance when AIO updates their documentation publish URL.
 -->
 
-### Erstellen einer Adobe Stock-Konfiguration in AEM   {#create-adobe-stock-configuration-in-aem}
+### Erstellen einer Adobe Stock-Konfiguration in AEM     {#create-adobe-stock-configuration-in-aem}
 
 1. Navigieren Sie in der AEM-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um eine Konfiguration zu erstellen und sie Ihrer bestehenden IMS-Konfiguration zuzuordnen. Wählen Sie `PROD` als Umgebungsparameter aus.
@@ -51,7 +51,7 @@ TBD: Update this instance when AIO updates their documentation publish URL.
 
 ## Verwenden und Verwalten von Adobe Stock-Assets in AEM {#usemanage}
 
-Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit Adobe Stock-Assets in AEM Assets ermöglichen. Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren.
+Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit Adobe Stock-Assets in AEM Assets ermöglichen. Benutzer können aus der AEM-Benutzeroberfläche heraus nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren.
 
 Sobald ein Adobe Stock-Asset in AEM lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können die Assets in AEM suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, die Assets in Brand Portal teilen, die Assets per AEM-Desktop-Programm aufrufen und verwenden und vieles mehr.
 
