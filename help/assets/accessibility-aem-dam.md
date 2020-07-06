@@ -1,17 +1,17 @@
 ---
-title: Barrierefreiheit in der Lösung für das digitale Asset-Management.
-description: Erkennen, wie Barrierefreiheitsfunktionen in Adobe Experience Manager als Cloud-Dienst behinderten Benutzern helfen.
+title: Barrierefreiheit in der Digital Asset Management-Lösung Assets.
+description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in Adobe Experience Manager as a Cloud Service Benutzern mit Behinderungen helfen.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbaa8161a87c765c9ec7581d41df5212f5eb7ffc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Accessibility in Adobe Experience Manager Assets as a Cloud Service {#accessibility-in-aem-assets}
+# Barrierefreiheit in Adobe Experience Manager Assets as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobe stellt Produkte für alle Benutzer einschließlich deaktivierter Benutzer her. Adobe Experience Manager wird kontinuierlich verbessert, um den Anforderungen behinderter Benutzer gerecht zu werden. Adobe Angebots stellt eine Produktkonformitätsinformationen zur Verfügung, in denen die geltenden Standards erläutert und die Barrierefreiheitsmerkmale erläutert werden.
-Weitere Informationen finden Sie unter ACRs von AEMaaCS.
+Adobe entwickelt Produkte für alle Benutzer, einschließlich Benutzer mit Behinderungen. Adobe Experience Manager wird kontinuierlich verbessert, um den Anforderungen behinderter Benutzer gerecht zu werden. Adobe bietet Konformitätsinformationen für seine Produkte an, in denen die geltenden Standards aufgeführt und die Funktionen für die Barrierefreiheit beschrieben werden.
+Weitere Informationen finden Sie in den ACRs von AEMaaCS.
