@@ -1,18 +1,18 @@
 ---
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '566'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Anzeigen einer Vorschau von 3D-Assets in AEM{#previewing-3d-assets}
+# Vorschau von 3D-Assets in AEM{#previewing-3d-assets}
 
-Adobe Experience Manager unterstützt das Hochladen, den Versand und die interaktive Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
+Adobe Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
 Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
@@ -40,13 +40,13 @@ Die interaktive 3D-Vorschau in AEM unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in AEM{#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
 Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
-**So Vorschau von 3D-Assets in AEM**
+**Vorschau von 3D-Assets in AEM**
 
 1. Laden Sie 3D-Assets in AEM hoch.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
@@ -76,7 +76,7 @@ Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-asse
    * **Kamera neu zentrieren**: Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene.
       * _Maus_: Doppelklicken Sie.
       * _Touchscreen_: Doppeltippen Sie.
-   * **Zurücksetzen**: Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen.
+   * **Zurücksetzen**: Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen.
    * **Vollbildmodus**: Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf Seite auf das Symbol „Vollbild“.
 
 1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen]**.
