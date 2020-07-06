@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    + [APIs und Referenzmaterial](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild-Profilen und Video-Profilen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Intelligente Tags konfigurieren](smart-tags-configuration.md)
+   + [Konfigurieren von Smart-Tags](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung von Assets](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Erweitern des Asset-Editors](extend-asset-editor.md)
@@ -88,10 +88,10 @@ ht-degree: 96%
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
-   + [Bildsets](dynamic-media/image-sets.md)
+   + [Bild-Sets](dynamic-media/image-sets.md)
    + [Panoramabilder](dynamic-media/panoramic-images.md)
-   + [Gemischte Mediensets](dynamic-media/mixed-media-sets.md)
-   + [Rotationssets](dynamic-media/spin-sets.md)
+   + [Sets für gemischte Medien](dynamic-media/mixed-media-sets.md)
+   + [Rotations-Sets](dynamic-media/spin-sets.md)
    + [Video](dynamic-media/video.md)
    + [Karussellbanner](dynamic-media/carousel-banners.md)
    + [Interaktive Bilder](dynamic-media/interactive-images.md)
