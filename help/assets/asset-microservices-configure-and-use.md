@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
 source-wordcount: '1875'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -99,9 +99,9 @@ Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen d
 
 #### Einschlussregeln für MIME-Typen {#mime-type-inclusion-rules}
 
-Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird diese spezifische Darstellung nicht für das Asset (blockierungsliste) generiert.
+Wenn ein Asset mit einem bestimmten Mime-Typ verarbeitet wird, wird der Mime-Typ zunächst mit dem Wert für die ausgeschlossenen Mime-Typen für die Ausgabespezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird dieses spezifische Ausgabeformat nicht für das Asset generiert (Blockierungsliste).
 
-Andernfalls wird der MIME-Typ mit dem mitgelieferten MIME-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird die Darstellung generiert (zulassungsliste).
+Andernfalls wird der Mime-Typ mit dem eingeschlossenen Mime-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird das Ausgabeformat generiert (Zulassungsliste).
 
 #### Spezielle FPO-Ausgabe {#special-fpo-rendition}
 
