@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -18,22 +18,22 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
+* Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung auf die Version vom 10. Juni 2020 oder höher aktualisiert ist. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
-* Um das Content Transfer Tool verwenden zu können, müssen Sie auf Ihrer Quellinstanz Administrator sein und der AEM-Administratorgruppe in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffstoken zur Verwendung des Inhaltsübermittlungstools nicht abrufen.
+* Um das Content Transfer-Tool verwenden zu können, müssen Sie ein Administrator-Benutzer in Ihrer Quellinstanz sein und zur AEM-Administratorengruppe in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer-Tools nicht abrufen.
 
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar.
 
-* Die empfohlene Obergrenze für die Repository-Größe, die das Content Transfer Tool gleichzeitig unterstützen kann, beträgt 20 GB.
+* Die empfohlene Obergrenze für die Repository-Größe, die das Content Transfer-Tool gleichzeitig unterstützen kann, beträgt 20 GB.
 
 ## Verfügbarkeit {#availability}
 
-Das Content Transfer Tool kann als ZIP-Datei (Content Transfer Tool v1.0.0) vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
+Das Content Transfer-Tool kann als ZIP-Datei (Content Transfer Tool v1.0.0) vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Laden Sie das Content Transfer Tool vom [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Portal herunter.
+>Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
 ## Ausführen des Content Transfer-Tools {#running-tool}
 
@@ -70,7 +70,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte 
    1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
 
       >[!NOTE]
-      >Sie können das Zugriffs-Token aus der Autoreninstanz abrufen, indem Sie zu `/libs/granite/migration/token.json` navigieren. Das Zugriffstoken wird aus der Autoreninstanz des Cloud Service abgerufen.
+      >Sie können das Zugriffs-Token aus der Autoreninstanz abrufen, indem Sie zu `/libs/granite/migration/token.json` navigieren. Das Zugriffs-Token wird aus der Cloud Service-Autoreninstanz abgerufen.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool zu 
 
    >[!NOTE]
    >Sie müssen die Seite aktualisieren, um den aktualisierten Status anzuzeigen.
-   >Wenn die Extraktion gestartet wird, wird die Schreibsperre erstellt und nach *60 Sekunden* freigegeben. Wenn also eine Extraktion gestoppt wird, müssen Sie eine Minute warten, bis die Sperre freigegeben wird, bevor Sie die Extraktion erneut starten.
+   >Beim Starten der Extraktionsphase wird die Schreibsperre aktiviert und nach *60 Sekunden* wieder aufgehoben. Wenn also eine Extraktion gestoppt wird, müssen Sie eine Minute warten, bis die Sperre aufgehoben wird, bevor Sie die Extraktion erneut starten können.
 
 #### Auffüllextraktion {#top-up-extraction-process}
 
@@ -213,7 +213,7 @@ Oder:
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verlängern, können Sie SSH in Ihre AEM-Umgebung einbinden und die `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`Datei zurücknehmen.
+1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verfolgen, können Sie SSH in Ihre AEM-Quellumgebung einbinden und die Datei `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file` verfolgen.
 
 ### Löschen eines Migrationssatzes {#deleting-migration-set}
 
@@ -266,6 +266,6 @@ Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in de
 
 * Dies bedeutet nicht, dass die Aufnahme für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten tritt auf, weil beim Starten eines neuen Aufnahmevorgangs der vorherige Aufnahmevorgang gelöscht wird. Daher sollte der Änderungsstatus des ersten Migrationssatzes ignoriert werden.
 
-* Die Symbole in der Benutzeroberfläche des Inhaltsübermittlungstools können sich von den in diesem Handbuch gezeigten Screenshots unterscheiden oder je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt werden.
+* Die Symbole in der Benutzeroberfläche des Content Transfer-Tools unterscheiden sich möglicherweise von den in diesem Handbuch gezeigten Screenshots oder werden je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt.
 
 
