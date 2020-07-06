@@ -3,16 +3,16 @@ title: Suchen nach digitalen Assets und Bildern in AEM
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4529'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Suchen nach Assets in AEM     {#search-assets-in-aem}
+# Suchen nach Assets in AEM       {#search-assets-in-aem}
 
 Mit den benutzerfreundlichen Optionen zur Asset-Erkennung in Experience Manager können Sie Inhalte schneller finden. Ihre Teams können die Time-to-Market mit einem nahtlosen, intelligenten Sucherlebnis durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von AEM Assets oder andere Apps und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
 
@@ -111,7 +111,7 @@ Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um 
 
 So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in AEM](https://helpx.adobe.com/de/experience-manager/kt/help/assets/search-feature-video-use.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6&captions=ger)
 
 *Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
@@ -142,7 +142,7 @@ Benutzer können aus der AEM-Benutzeroberfläche heraus nach [Adobe Stock-Assets
 
 ### Dynamic Media-Assets {#dmassets}
 
-Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media > Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, gemischte Mediensets und Rotationssets gefiltert und angezeigt.
+Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media > Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bild-Sets, Karussells, Sets für gemischte Medien und Rotations-Sets gefiltert und angezeigt.
 
 ### Mit bestimmten Werten in Metadatenfeldern suchen {#gqlsearch}
 
@@ -178,7 +178,7 @@ Der Suchbegriff für eine von einem Benutzer erstellte Eigenschaft ist ihre Feld
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):     `title:"John Doe" creatortool : Adobe*`
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):       `title:"John Doe" creatortool : Adobe*`
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds): `title:"Scott Reynolds"`
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds): `title:Scott*`
@@ -204,11 +204,11 @@ Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte dig
 
 ### Suchen nach Adobe Stock-Fotos {#adobestock-1}
 
-Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer ein bestimmtes Asset zu suchen. Siehe [Verwalten von Adobe Stock-Fotos in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Benutzer können aus der AEM-Benutzeroberfläche heraus nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer ein bestimmtes Asset zu suchen. Siehe [Verwalten von Adobe Stock-Fotos in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Suchen nach Dynamic Media-Assets {#dynamicmedia}
 
-Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, gemischte Mediensets und Rotationssets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
+Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bild-Sets, Karussells, Sets für gemischte Medien und Rotations-Sets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
 
 ### Suchen nach Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#contentfinder}
 
@@ -400,11 +400,11 @@ Sobald Ihnen durchsuchte Assets angezeigt werden, die Ihren Kriterien entspreche
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
 
-### Suchergebnisse sortieren {#sort}
+### Sortieren von Suchergebnissen {#sort}
 
 Das Sortieren von Suchergebnissen hilft Ihnen, erforderliche Assets schneller zu finden. Das Sortieren von Suchergebnissen ist in der Listenansicht möglich und nur, wenn Sie die Option **[!UICONTROL [Dateien](#searchui)]**im Bedienfeld**[!UICONTROL  Filter ]**auswählen.[!DNL Assets]nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
-In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert mit diesen Spalten: Name, Titel, Status, Dimensionen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) Veröffentlicht, Workflow und Checked-out.
+In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
 
 Mehr über Einschränkungen bei der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
 
