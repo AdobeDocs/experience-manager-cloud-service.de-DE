@@ -1,11 +1,11 @@
 ---
 title: Bekannte Probleme
 description: Spezifische Versionshinweise zu bekannte Problemen mit Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Einige Funktionen von Adobe Experience Manager-Assets, die von den grundlegenden
    * In der Benutzeroberfläche der Asset-Eigenschaften ist die Registerkarte mit den Produktinformationen nicht ausgefüllt.
 * Aufgrund der Abhängigkeit von der InDesign Server-Integration sind die folgenden Funktionen derzeit nicht aktiviert:
    * Asset-Vorlagen und Asset-Kataloge.
-   * Mehrseitige Vorschau von Adobe InDesign-Dateien.
+   * Mehrseitige Vorschau von Adobe InDesign-Dateien.
 
 >[!MORELIKETHIS]
 >
