@@ -5,16 +5,16 @@ translation-type: tm+mt
 source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 15%
+ht-degree: 42%
 
 ---
 
 
-# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
+# Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
 Der Rich Text Editor (RTE) ist ein einfacher Baustein zum Hinzufügen von Textinhalten zu [!DNL Adobe Experience Manager]Texten. Darüber hinaus basieren viele andere Komponenten, die Authoring ermöglichen, auf RTE. Experience Manager-Entwickler können RTE anpassen und Administratoren konfigurieren RTE für die Verwendung durch Autoren.
 
-## In-place editing {#in-place-editing}
+## Bearbeitung im Kontext {#in-place-editing}
 
 Auswählen einer textbasierten Komponente mit einem einzigen Klick, um die [Komponentensymbolleiste](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)anzuzeigen.
 
@@ -28,15 +28,15 @@ In der Regel bietet die Symbolleiste die folgenden Optionen:
 
 * **Format**: Markieren Sie den Text fett oder kursiv oder unterstreichen Sie ihn.
 * **Listen**: Erstellen Sie Listen mit Aufzählungszeichen oder Nummerierungen und legen Sie den Einzug fest.
-* **Hyperlink**: Erstellen von Links.
-* **Aufhebung der Verknüpfung**: Entfernen Sie den Hyperlink.
+* **Hyperlink**: Erstellen Sie Links.
+* **Verknüpfung aufheben**: Entfernen Sie Hyperlinks.
 * **Vollbild**: Öffnen Sie den Editor im Vollbildmodus.
 * **Schließen**: Beenden Sie die Bearbeitung.
 * **Speichern**: Speichern Sie die Änderungen.
 
-## Full-screen editing {#full-screen-editing}
+## Bearbeitung im Vollbildmodus {#full-screen-editing}
 
-Klicken Sie bei textbasierten Komponenten in der ![Symbolleiste](/help/sites-cloud/authoring/assets/editing-full-screen.png) auf die Vollbildmodus-Schaltfläche [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) RTE im Vollbildmodus, um den Rich-Text-Editor zu öffnen und den Rest des Seiteninhalts auszublenden.
+For text-based components, click the full-screen mode ![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png) from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) to open the rich text editor and hides the rest of the page content.
 
 Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen hängt von der Konfiguration ab. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -44,16 +44,16 @@ Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bear
 
 Zu den weiteren Optionen des Rich-Text-Editors gehören:
 
-* **Verankerung**: Erstellen Sie einen Anker im Text, zu dem Sie später eine Verknüpfung erstellen oder einen Verweis erstellen können.
+* **Anker**: Erstellen Sie einen Anker im Text, zu dem Sie später eine Verknüpfung/einen Verweis herstellen können.
 * **Text links ausrichten**.
 * **Text zentrieren**.
 * **Text rechts ausrichten**.
 
-Klicken Sie auf Minimieren, um den Vollbildmodus zu schließen.
+Klicken Sie auf „Minimieren“, um den Vollbildmodus zu schließen.
 
->[!Tip]
+>[!Tipp]
 >
->Das Kopieren verschachtelter Listen aus [!DNL Microsoft Word] der RTE kann zu inkonsistenten Ergebnissen führen. Fügen Sie stattdessen Text ein und nehmen Sie eine manuelle Anpassung vor.
+>Copying nested lists from [!DNL Microsoft Word] into the RTE can give inconsistent results. Fügen Sie sie stattdessen als Text ein und passen Sie das Format manuell an.
 
 >[!MORELIKETHIS]
 >
