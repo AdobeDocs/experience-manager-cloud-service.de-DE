@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '2612'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ In Adobe Experience Manager (AEM) Assets sind mehrsprachige Assets in Ordnern en
 
 Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/dam/it` der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](#create-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
-Die Sprachkopie, für die Sie ursprünglich Assets hinzugefügt haben, ist die Hauptsprache. Die Hauptsprache ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
+Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre Sprachinstanz. Die primäre Sprachinstanz ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
 ```shell
 /content
@@ -71,9 +71,9 @@ Die Sprachkopie, für die Sie ursprünglich Assets hinzugefügt haben, ist die H
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Stamm der Sprache Ihrer Primärsprache. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](#create-a-language-root) korrekt konfiguriert ist.
+1. Erstellen Sie den Sprachstamm für Ihre primäre Sprachinstanz. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](#create-a-language-root) korrekt konfiguriert ist.
 
-1. Hinzufügen Assets in Ihre Sprachprimärsprache.
+1. Fügen Sie Ihrer primären Sprachinstanz Assets hinzu.
 1. Erstellen Sie den Sprachstamm der jeweiligen Zielsprache, für die Sie eine Sprachkopie benötigen.
 
 ### Erstellen eines Sprachstamms {#create-a-language-root}
@@ -90,7 +90,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 Die Touch-optimierte Benutzeroberfläche bietet einen Bereich „Verweise“, der eine Liste von Sprachstämmen anzeigt, die in AEM Assets erstellt wurden.
 
-1. Wählen Sie in der Assets-Konsole die Sprachprimärdatei aus, für die Sie Sprachkopien erstellen möchten.
+1. In der Konsole „Assets“ wählen Sie die primäre Sprachinstanz aus, für die Sie Sprachkopien erstellen möchten.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Verweise]** aus, um den Bereich „Verweise“ zu öffnen.
 1. Im Bereich „Verweise“ klicken oder tippen Sie auf **[!UICONTROL Sprachkopien]**. Der Bereich „Sprachkopien“ zeigt die Sprachkopien der Assets an.
 
@@ -153,7 +153,7 @@ Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetze
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt 
 
-### Hinzufügen zu einem vorhandenem Übersetzungsprojekt {#add-to-existing-translation-project-1}
+### Hinzufügen zu einem vorhandenen Übersetzungsprojekt {#add-to-existing-translation-project-1}
 
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
@@ -216,7 +216,7 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen    {#create-structure-only}
+### Nur Struktur erstellen      {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
