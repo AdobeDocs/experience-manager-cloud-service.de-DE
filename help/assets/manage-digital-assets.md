@@ -3,11 +3,11 @@ title: Verwalten von digitalen Assets in Experience Manager
 description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4419'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 
 Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 
-## Duplikat-Assets erkennen {#detect-duplicate-assets}
+## Erkennen doppelter Assets {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] die Duplizierung und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets Auswirkungen auf die Leistung haben kann. Um die Funktion zu aktivieren, konfigurieren Sie den [!UICONTROL Adobe AEM Cloud-Asset-Duplikationsdetektor]. Siehe [OSGi-Konfigurationen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Die Duplizierungserkennung basiert auf dem eindeutigen `dam:sha1` Wert, der bei `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass Duplikat-Assets erkannt werden, auch wenn die Dateinamen unterschiedlich sind.
+Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] das Duplikat und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets die Leistung beeinträchtigen kann. Um die Funktion zu aktivieren, konfigurieren Sie die [!UICONTROL Duplikaterkennung für Cloud-Assets in Adobe AEM]. Erfahren Sie, [wie man OSGi-Konfigurationen durchführt](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Die Duplikaterkennung basiert auf dem eindeutigen Wert `dam:sha1`, der unter `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass doppelte Assets erkannt werden, selbst wenn die Dateinamen unterschiedlich sind.
 
-![OSGi-Konfiguration des Duplikat-Assets erkennen](assets/duplicate-detection.png)
+![OSGi-Konfiguration zur Erkennung doppelter Assets](assets/duplicate-detection.png)
 
-Nach der Aktivierung sendet Experience Manager Benachrichtigungen über Duplikat-Assets an den Posteingang. Es ist ein aggregiertes Ergebnis für mehrere Duplikat. Benutzer können die Assets auf Grundlage der Ergebnisse entfernen.
+Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte Assets an den Posteingang. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
 
-![Posteingangsbenachrichtigung für Duplikat-Assets](assets/duplicate-detect-inbox-notification.png)
+![Posteingangsbenachrichtigung für doppelte Assets](assets/duplicate-detect-inbox-notification.png)
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 
@@ -334,7 +334,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets       {#search-assets}
+## Suchen von Assets         {#search-assets}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -430,7 +430,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Tippen oder klicken Sie in einem der folgenden Elemente auf das Symbol **[!UICONTROL Anmerken]**:
 
    * [Schnellaktionen](#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
