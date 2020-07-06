@@ -1,16 +1,16 @@
 ---
-title: Übersicht über den Inhaltsfluss Versand
-description: Übersicht über den Inhaltsfluss Versand
-translation-type: tm+mt
+title: Übersicht über den Ablauf der Inhaltsbereitstellung
+description: Übersicht über den Ablauf der Inhaltsbereitstellung
+translation-type: ht
 source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Content Versand Flow {#content-delivery}
+# Ablauf der Inhaltsbereitstellung {#content-delivery}
 
 Auf dieser Seite wird der Veröffentlichungsdienst für die Inhaltsbereitstellung in AEM as a Cloud Service beschrieben. Der Veröffentlichungsdienst für die Inhaltsbereitstellung umfasst:
 
@@ -28,7 +28,7 @@ Der Datenfluss sieht wie folgt aus:
 1. Wenn der Inhalt nicht vollständig zwischengespeichert ist, ruft Dispatcher die AEM-Veröffentlichungsinstanz auf (Reverse-Proxy)
 1. Der Inhalt wird vom Browser gerendert, der ihn je nach Header auch zwischenspeichern kann
 
-Standardmäßig läuft der Content-Typ HTML/Text auf der Dispatcher-Ebene nach 300 s (5 Minuten) ab. Dies ist ein Schwellenwert, den sowohl der Dispatcher-Cache als auch CDN berücksichtigen. Bei der erneuten Bereitstellung des Publish-Dienst wird der Dispatcher-Cache geleert und anschließend aufgewärmt, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
+Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten) auf der Dispatcher-Ebene ab. Dieser Schwellenwert wird sowohl vom Dispatcher-Cache als auch vom CDN eingehalten. Bei der erneuten Bereitstellung des Publish-Dienst wird der Dispatcher-Cache geleert und anschließend aufgewärmt, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
 In den folgenden Abschnitten finden Sie ausführlichere Informationen zur Bereitstellung von Inhalten, einschließlich CDN-Konfiguration und Caching.
 
