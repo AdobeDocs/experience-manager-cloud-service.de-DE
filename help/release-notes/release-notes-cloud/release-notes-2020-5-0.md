@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.5.0
 description: Versionshinweise für Experience Manager 2020.5.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ## Veröffentlichungsdatum {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+Die Version 2020.5.0 von [!DNL Experience Manager] as a Cloud Service wurde am Donnerstag, 7. Mai 2020 veröffentlicht.
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## Neue Funktionen in AEM Sites {#aem-sites}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für AEM-Sites in AEM als Cloud-Service-Version 2020.5.0.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für AEM Sites in Version 2020.5.0 von AEM as a Cloud Service.
 
-* Detaillierte Auftragsinformationen sind jetzt verfügbar, nachdem Massenvorgänge und Rollover als asynchrone Aufträge verarbeitet wurden.
-* Beim Kopieren/Einfügen eines Seitenbaums bieten Sie jetzt an, zwischen dem Einfügen nur der Stammseite oder auch der Unterseiten des Baums zu wählen.
-* AEM Experience Fragments, die in Adobe Zielgruppe-Arbeitsbereiche exportiert wurden, werden jetzt als eindeutige Angebot- und Angebot-Quellen in der Zielgruppe angezeigt.
-* MSM - Mit *Veröffentlichungs* -Trigger werden nun Löschkomponenten für Komponenten in Live-Kopierquellen erfolgreich entfernt, d. h., Ereignis in einer Live-Kopie, die in Live-Kopierquellen gelöscht wurden, werden gelöscht.
-* MSM - Live-Copy-Komponenten werden jetzt nach dem Rollout derselben Komponente aus der Live-Kopierquelle in *_msm_move* umbenannt.
+* Nach der Stapelverarbeitung von Seitenverschiebungen und Rollouts als asynchrone Aufträge stehen jetzt detaillierte Auftragsinformationen zur Verfügung.
+* Beim Kopieren/Einfügen eines Seitenbaums können Sie jetzt auswählen, ob Sie nur die Stammseite oder auch die Unterseiten des Baums einfügen möchten.
+* AEM-Experience Fragments, die in Workspaces von Adobe Target exportiert werden, erscheinen nun als einzigartige Angebotstypen und Angebotsquellen in Target.
+* MSM – Mit dem *Publish*-Trigger werden nun erfolgreich Löschereignisse für Komponenten in der Live Copy-Quelle implementiert, d. h. das Löschen von Komponenten in einer Live Copy, die in der Live Copy-Quelle gelöscht wurden.
+* MSM – Live Copy-Komponenten werden jetzt nach dem Rollout derselben Komponente aus der Live Copy-Quelle in *_msm_moved* umbenannt.
 
 
 ## Neue Funktionen in Cloud Manager {#cloud-manager}
@@ -37,7 +37,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Sechs zusätzliche Regeln zur Code-Qualität wurden hinzugefügt, die Kunden bei der Planung einer Migration auf Cloud Service bei der Ermittlung potenzieller Probleme unterstützen.
 * Die neue Metrik *Cloud Service-Kompatibilität* wurde hinzugefügt, um die Zahl der Kompatibilitätsprobleme zusammenzufassen.
-* Umgebung, die nicht erstellt werden konnten, werden nun ca. 24 Stunden nach dem Erstellungsfehler automatisch gelöscht, es sei denn, sie wurden bereits gelöscht.
+* Umgebungen, deren Erstellung fehlgeschlagen ist, werden nun ca. 24 Stunden nach der fehlgeschlagenen Erstellung automatisch gelöscht, sofern sie nicht bereits gelöscht worden sind.
 * Die Leistung der Seite „Aktivität“ und der Pipeline Execution List-API wurde verbessert.
 * Das Code-Qualitätsprotokoll enthält jetzt vollständige Stacktraces für Ausnahmen.
 
@@ -46,8 +46,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 * Während der Ausführung der Produktions-Pipeline wurde eine irreführende Karte auf der Übersichtsseite angezeigt.
 * Die Code-Qualitätsregel *DontImplementOrExtendProviderTypesPomCheck* rief manchmal eine Nullzeiger-Ausnahme hervor.
 * Einige Dokumentations-Links auf der Übersichtsseite funktionierten nicht ordnungsgemäß.
-* Das Dialogfeld &quot;Umgebung erstellen&quot;wurde in Safari nicht korrekt dargestellt.
+* Das Dialogfeld „Umgebung erstellen“ wurde in Safari nicht korrekt dargestellt.
 * Auf bestimmten Karten auf der Übersichtsseite wurden die Entitätsnamen nicht korrekt angezeigt.
-* In einigen Fällen kann das Build Image nicht erfolgreich vom Kunden heruntergeladen werden.
+* In einigen Fällen konnte die Bilderstellung die Kundenpakete nicht erfolgreich herunterladen.
 
 
