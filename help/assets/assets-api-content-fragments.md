@@ -12,7 +12,7 @@ ht-degree: 98%
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API{#content-fragments-support-in-aem-assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist e
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
-#### Darstellung     {#representation}
+#### Darstellung       {#representation}
 
 Inhaltsfragmente:
 
@@ -230,7 +230,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente     {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente       {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -323,19 +323,19 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
    * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
-* **201** (erstellt)
+* **201** (Erstellt)
 
    Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
-* **404** (nicht gefunden)
+* **404** (Nicht gefunden)
 
    Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 
-* **** 500 (Interner Serverfehler)
+* **** 500 (Interner Server-Fehler)
 
    >[!NOTE]
    >
@@ -381,7 +381,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz     {#api-reference}
+## API-Referenz       {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 <!--
