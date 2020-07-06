@@ -1,21 +1,21 @@
 ---
-title: Zwischenspeicherung in AEM als Cloud-Dienst
-description: 'Zwischenspeicherung in AEM als Cloud-Dienst '
-translation-type: tm+mt
+title: Caching in AEM as a Cloud Service
+description: 'Caching in AEM as a Cloud Service '
+translation-type: ht
 source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1358'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # Einführung {#intro}
 
-Traffic wird durch das CDN auf eine Apache-Webserverebene übertragen, die Module einschließlich des Dispatchers unterstützt. Um die Leistung zu erhöhen, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu beschränken.
-Regeln können auf die Dispatcher-Konfiguration angewendet werden, um alle standardmäßigen Cache-Ablaufeinstellungen zu ändern, was zu einer Zwischenspeicherung am CDN führt. Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+Traffic wird über das CDN an einen Apache-Webserver geleitet, der die Module einschließlich des Dispatchers unterstützt. Um die Leistung zu steigern, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu begrenzen.
+Auf die Dispatcher-Konfiguration können Regeln angewendet werden, um die Standardeinstellungen für den Cache-Ablauf zu ändern, was zum Caching im CDN führt. Beachten Sie, dass der Dispatcher auch die resultierenden Cache-Ablaufkopfzeilen berücksichtigt, wenn `enableTTL` in der Dispatcher-Konfiguration aktiviert ist. Dies bedeutet, dass bestimmte Inhalte auch außerhalb der erneut veröffentlichten Inhalte aktualisiert werden.
 
-Diese Seite beschreibt auch, wie Dispatcher-Cache ungültig ist und wie die Zwischenspeicherung auf Browserebene im Hinblick auf clientseitige Bibliotheken funktioniert.
+Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird und wie das Caching auf Browser-Ebene in Bezug auf Client-seitige Bibliotheken funktioniert.
 
 ## Caching {#caching}
 
@@ -38,7 +38,7 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 { /glob "*" /type "allow" }
 ```
 
-* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie den Cache-Control-Header auf &quot;privat&quot;. Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Ordner mit dem Namen &quot;myfolder&quot;zwischengespeichert werden:
+* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf „privat“. Folgendes würde beispielsweise verhindern, dass html-Inhalte in einem Verzeichnis mit dem Namen „myfolder“ zwischengespeichert werden:
 
 ```
 <LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
@@ -81,9 +81,9 @@ Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeiche
 * Die Standardeinstellung kann nicht mit der für HTML-/Textdateitypen verwendeten `EXPIRATION_TIME`-Variablen gesetzt werden
 * Der Cache-Ablauf kann mit derselben LocationMatch-Strategie festgelegt werden, die im Abschnitt „HTML/Text“ beschrieben wird, indem der entsprechende Regex angegeben wird
 
-## Dispatcher-Cache-Ungültigkeit {#disp}
+## Dispatcher-Cache-Invalidierung {#disp}
 
-Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu ungültigen. Stattdessen sollten Sie sich darauf verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden und das CDN die Cache-Ablaufkopfzeilen respektiert.
+Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. Stattdessen sollten Sie sich darauf verlassen, dass der Dispatcher seinen Cache aktualisiert, wenn Inhalte erneut veröffentlicht werden, und dass das CDN die Cache-Ablaufkopfzeilen berücksichtigt.
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
