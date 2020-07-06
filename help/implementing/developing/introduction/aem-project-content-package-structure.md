@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
 source-wordcount: '2530'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `
 >
 > Wie in früheren Versionen von AEM sollten `/libs` nicht geändert werden. Nur der AEM-Produkt-Code darf für `/libs` bereitstellen.
 
-### Oak Indexes {#oak-indexes}
+### Oak-Indizes {#oak-indexes}
 
-Oak-Indizes (`/oak:index`) werden speziell vom AEM Cloud-Bereitstellungsprozess verwaltet. Dies liegt daran, dass der Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu identifiziert wird, bevor zum neuen Codebild gewechselt wird.
+Oak-Indizes (`/oak:index`) werden speziell vom AEM Cloud Service-Bereitstellungsprozess verwaltet. Dies liegt daran, dass Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu identifiziert wird, bevor zum neuen Code-Bild gewechselt wird.
 
-Aus diesem Grund müssen Oak-Indizes zwar zur Laufzeit veränderlich sein, aber als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderliche Pakete installiert werden. Daher sind `/oak:index` Konfigurationen Teil des Code-Pakets und nicht Teil des Content-Pakets [wie unten beschrieben.](#recommended-package-structure)
+Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind, als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderbare Pakete installiert werden. Daher sind `/oak:index`-Konfigurationen Teil des Code-Pakets und nicht Teil des Content-Pakets, [wie unten beschrieben.](#recommended-package-structure)
 
 >[!TIP]
 >
->Weitere Informationen zur Indexierung in AEM als Cloud Service finden Sie in der Dokument [Content Search and Indexing.](/help/operations/indexing.md)
+>Weitere Informationen zur Indizierung in AEM as a Cloud Service finden Sie im Dokument zu [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ## Empfohlene Paketstruktur {#recommended-package-structure}
 
@@ -194,7 +194,6 @@ Aufschlüsselung dieser Ordnerstruktur:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
-
    >[!WARNING]
    >
    >Konventionell werden eingebettete Unterpakete mit dem Suffix `-packages` benannt. Dadurch wird sichergestellt, dass der Bereitstellungs-Code und die Inhaltspakete **nicht** in den Zielordnern eines Unterpakets `/apps/<app-name>/...` bereitgestellt werden, was zu destruktiven und zyklischen Installationsverhalten führt.
