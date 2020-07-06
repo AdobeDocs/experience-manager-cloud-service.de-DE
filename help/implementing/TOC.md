@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -40,16 +40,16 @@ ht-degree: 75%
    + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Konfigurieren von Suchformularen](developing/extending/search-forms.md)
    + [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md)
-   + [RTE-Plug-Ins konfigurieren](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [RTE zum Erstellen barrierefreier Websites konfigurieren](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [Konfigurieren der RTE-Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Bereitstellen in AEM as a Cloud Service {#deploying}
    + [Bereitstellen in AEM as a Cloud Service](deploying/overview.md)
    + [Konfigurieren von OSGi für AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ AEM Author-Ebene {#author-tier}
++ Autorenebene {#author-tier}
    + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Sichern der Autorenebene](/help/implementing/author-tier/securing-the-author-tier.md)
-+ Content Versand - Übersicht {#content-delivery}
-   + [Content Versand Flow](dispatcher/overview.md)
++ Übersicht über die Inhaltsbereitstellung {#content-delivery}
+   + [Ablauf der Inhaltsbereitstellung](dispatcher/overview.md)
    + [Dispatcher in der Cloud](dispatcher/disp-overview.md)
-   + [CDN in AEM als Cloud Service](dispatcher/cdn.md)
-   + [Zwischenspeichern in AEM als Cloud Service](dispatcher/caching.md)
+   + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Caching in AEM as a Cloud Service](dispatcher/caching.md)
