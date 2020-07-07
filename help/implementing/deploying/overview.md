@@ -2,7 +2,7 @@
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 99%
@@ -34,7 +34,7 @@ Sie sollten wissen, dass AEM häufig aktualisiert wird, bis zu einmal am Tag. Da
 
 >[!NOTE]
 >
-> Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
+>Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
 
 In regelmäßigen Abständen wird ein Feature Release veröffentlicht, bei dem es vor allem um Funktionserweiterungen und -verbesserungen geht, die das Anwendererlebnis im Vergleich zu den täglich veröffentlichten Versionen wesentlich stärker beeinflussen. Ein neues Feature Release wird nicht durch die Bereitstellung eines großen Änderungssatzes ausgelöst, sondern durch Betätigung eines „Freigabeschalters“, sodass Code aktiviert wird, der sich im Laufe von Tagen oder Wochen bei den täglichen Aktualisierungen angesammelt hat.
 
@@ -133,8 +133,11 @@ In folgenden Fällen ist es vorzuziehen, in den OSGi-Werkseinstellungen manuell 
 * Gruppen erstellen/löschen
 * Benutzer erstellen/löschen
 * ACLs hinzufügen
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >Eine Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können vorherige Anweisungen zur Pfaderstellung erforderlich sein.
+
 * Pfad hinzufügen (z. B. für Stammordnerstrukturen)
 * CNDs hinzufügen (Definitionen für Knotentypen)
 
