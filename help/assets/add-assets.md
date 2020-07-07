@@ -2,7 +2,7 @@
 title: Hinzufügen digitaler Assets zu Adobe Experience Manager
 description: Hinzufügen digitaler Assets zu Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 97%
@@ -24,9 +24,9 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 
 >[!NOTE]
 >
-> Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
+>Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
 >
-> Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
+>Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
 
 ## Hochladen von Assets {#upload-assets}
 
@@ -37,6 +37,7 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem De
 
    * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
    * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Assets-Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+
    ![create_menu](assets/create_menu.png)
 
    Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
@@ -80,7 +81,7 @@ Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene As
 
 >[!NOTE]
 >
-> Informationen zum Hochladen verschachtelter Ordnerhierarchien in AEM finden Sie unter [Massen-Upload von Assets](#bulk-upload).
+>Informationen zum Hochladen verschachtelter Ordnerhierarchien in AEM finden Sie unter [Massen-Upload von Assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -135,7 +136,7 @@ Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in ein
 
 >[!NOTE]
 >
-> Der Massen-Upload als Teil der Migration von Inhalten aus anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager erfordert eine sorgfältige Planung, Abwägung und Auswahl der Tools. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
+>Der Massen-Upload als Teil der Migration von Inhalten aus anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager erfordert eine sorgfältige Planung, Abwägung und Auswahl der Tools. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
@@ -162,7 +163,7 @@ Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
 >[!NOTE]
 >
-> Das von Dynamic Media unterstützte Zuschneiden und andere Operationen an Assets sind zerstörungsfrei, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
+>Das von Dynamic Media unterstützte Zuschneiden und andere Operationen an Assets sind zerstörungsfrei, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
 
