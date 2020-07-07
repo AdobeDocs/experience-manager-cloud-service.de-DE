@@ -2,7 +2,7 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager als Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen.
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 40%
@@ -51,8 +51,9 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
    >
    >
 * Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
-   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
+>
+>
+However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 ### Eigenschaften {#properties}
 
@@ -186,7 +187,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
    1. Erstellen Sie den entsprechenden Knoten unter /apps.
    1. Create a property `sling:hideResource`
 
-      * type: `Boolean`
+      * Typ: `Boolean`
       * value: `true`
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
@@ -196,9 +197,8 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
    1. Eigenschaft erstellen `sling:hideChildren`:
 
-      * type: `String[]`
+      * Typ: `String[]`
       * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
-
       Der Platzhalter&amp;ast; können alle untergeordneten Knoten ausgeblendet/ignoriert werden.
 
 
@@ -213,7 +213,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
          Dies gibt den Knoten (wie in `/libs`) an, vor dem der aktuelle Knoten positioniert werden soll:
 
-         * type: `String`
+         * Typ: `String`
          * value: `<before-SiblingName>`
 
 ### Aufrufen des Sling Resource Merger aus dem Code {#invoking-the-sling-resource-merger-from-your-code}
