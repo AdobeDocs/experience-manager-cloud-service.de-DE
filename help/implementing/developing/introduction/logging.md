@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 100%
@@ -46,8 +46,9 @@ In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterl
 
 ### Standard-Logger und -Writer {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> Eine Anpassung ist hier ggf. möglich, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist. Wenn Sie jedoch die standardmäßigen Protokollierungskonfigurationen anpassen müssen, stellen Sie sicher, dass Sie dies nur in `dev`-Umgebung tun.
+>[!IMPORTANT]
+>
+>Eine Anpassung ist hier ggf. möglich, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist. Wenn Sie jedoch die standardmäßigen Protokollierungskonfigurationen anpassen müssen, stellen Sie sicher, dass Sie dies nur in `dev`-Umgebung tun.
 
 Bestimmte Logger und Writer sind in einer standardmäßigen AEM as a Cloud Service-Installation bereits enthalten.
 
@@ -192,13 +193,13 @@ Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-
 
 >[!NOTE]
 >
-> Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie in einer lokalen Entwicklungsumgebung erstellen und dann an eine AEM as a Cloud Service-Instanz pushen. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie in einer lokalen Entwicklungsumgebung erstellen und dann an eine AEM as a Cloud Service-Instanz pushen. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Aktivieren der DEBUG-Protokollebene**
 
 >[!WARNING]
 >
-> Die globale Aktivierung der DEBUG-Protokollebene erzeugt eine große Menge an Informationen, die schwer zu sichten sind. Es wird empfohlen, diese Option nur für Dienste zu aktivieren, die Debuggen erfordern. Weitere Informationen finden Sie unter [Logger und Writer für einzelne Dienste](logging.md#loggers-and-writers-for-individual-services).
+>Die globale Aktivierung der DEBUG-Protokollebene erzeugt eine große Menge an Informationen, die schwer zu sichten sind. Es wird empfohlen, diese Option nur für Dienste zu aktivieren, die Debuggen erfordern. Weitere Informationen finden Sie unter [Logger und Writer für einzelne Dienste](logging.md#loggers-and-writers-for-individual-services).
 
 Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
 Um die DEBUG-Protokollebene zu aktivieren, stellen Sie die Eigenschaft
