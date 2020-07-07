@@ -3,7 +3,7 @@ title: Konfigurieren von AEM Assets Cloud Service mit Brand Portal
 description: Konfigurieren von AEM Assets Cloud Service mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 98%
@@ -32,7 +32,6 @@ Zum Konfigurieren der AEM Assets-Cloud-Instanz mit einem Brand Portal-Mandanten 
 >Ein Brand Portal-Mandant darf nur mit einer AEM Assets-Cloud-Instanz konfiguriert werden.
 >
 >Konfigurieren Sie keinen Brand Portal-Mandanten mit mehreren AEM Assets-Cloud-Instanzen.
-
 
 ## Voraussetzungen {#prerequisites}
 
@@ -231,8 +230,6 @@ Führen Sie die folgenden Schritte aus, um das IMS-Konto zu konfigurieren, das S
 >
 >Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
 
-
-
 ### Konfigurieren von Cloud Service {#configure-the-cloud-service}
 
 Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud Service zu konfigurieren:
@@ -343,8 +340,6 @@ Im obigen Beispiel werden eine zusätzliche Anfrage und Antwort ausgelöst. Das 
 >[!NOTE]
 >
 >Es wird eine zusätzliche Anfrage generiert, wenn der übergeordnete Ordner nicht in Brand Portal vorhanden ist (im oben stehenden Beispiel) oder der übergeordnete Ordner in AEM Assets geändert wurde.
-
-
 
 <!--
 
