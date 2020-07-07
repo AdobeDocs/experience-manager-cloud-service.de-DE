@@ -2,7 +2,7 @@
 title: Integrieren mit Git
 description: Integrieren mit Git – Cloud Services
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Die Videoreihe setzt grundlegende Kenntnisse der Git- und Quellcodeverwaltung vo
 
 >[!NOTE]
 >
-> Die Schritte und Benennungskonventionen in dieser Videoreihe präsentieren mehrere Best Practices für die Arbeit mit einem kundenverwalteten Git-Repository und Cloud Manager. Es wird erwartet, dass die dargelegten Konventionen und Arbeitsabläufe für einzelne Entwicklungsteams angepasst werden.
+>Die Schritte und Benennungskonventionen in dieser Videoreihe präsentieren mehrere Best Practices für die Arbeit mit einem kundenverwalteten Git-Repository und Cloud Manager. Es wird erwartet, dass die dargelegten Konventionen und Arbeitsabläufe für einzelne Entwicklungsteams angepasst werden.
 
 ## Erstsynchronisierung {#initial-sync}
 
