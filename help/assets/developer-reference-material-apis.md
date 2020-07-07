@@ -3,7 +3,7 @@ title: 'Assets-APIs für Digital Asset Management in Adobe Experience Manager as
 description: Asset-APIs ermöglichen grundlegende CRUD-Operationen (Create-Read-Update-Delete – Erstellen-Lesen-Aktualisieren-Löschen) zur Verwaltung von Assets, einschließlich Binär- und Metadaten, Ausgabeformaten, Kommentaren und Inhaltsfragmenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
@@ -42,8 +42,9 @@ Wichtige Unterschiede im Vergleich zu früheren Versionen von AEM sind unter and
 
 Dieser Ansatz sollte eine skalierbarere und leistungsfähigere Handhabung von Asset-Uploads bieten.
 
-> !![NOTE]
-Den Client-Code, der diesen Ansatz implementiert, können Sie in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload) einsehen.
+>[!NOTE]
+>
+>Den Client-Code, der diesen Ansatz implementiert, können Sie in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload) einsehen.
 
 ### Initiieren des Uploads {#initiate-upload}
 
@@ -114,8 +115,7 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits existiert, löscht Experience Manager das Asset und erstellt es dann erneut. |
 
 >!![NOTE]
->
-> Wenn das Asset bereits existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert Experience Manager die aktuelle Version des Assets mit der neuen Binärdatei.
+Wenn das Asset bereits existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert Experience Manager die aktuelle Version des Assets mit der neuen Binärdatei.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
