@@ -2,10 +2,10 @@
 title: Konfigurieren von OSGI für AEM as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ implementierten OSGi-Dienst bereitzustellen, wird eine OSGi-Konfigurationsdatei 
 
 nach dem OSGi-Konfigurationsformat cfg.json definiert.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Frühere Versionen von AEM unterstützten OSGi-Konfigurationsdateien unter Verwendung verschiedener Dateiformate wie .cfg., .config und als XML sling:OsgiConfig-Ressourcendefinitionen. Diese Formate werden durch das OSGi-Konfigurationsformat cfg.json ersetzt.
+>Frühere Versionen von AEM unterstützten OSGi-Konfigurationsdateien unter Verwendung verschiedener Dateiformate wie .cfg., .config und als XML sling:OsgiConfig-Ressourcendefinitionen. Diese Formate werden durch das OSGi-Konfigurationsformat cfg.json ersetzt.
 
 ## Runmode-Auflösung {#runmode-resolution}
 
@@ -166,41 +166,41 @@ To add a new configuration to the repository you need to know the following:
 
 ## Erstellen von OSGi-Konfigurationen
 
-Es gibt zwei Möglichkeiten, neue OSGi-Konfigurationen zu erstellen, wie nachfolgend beschrieben. Der erste Ansatz wird normalerweise zur Konfiguration benutzerdefinierter OSGi-Komponenten verwendet, die über bekannte OSGi-Eigenschaften und -Werte des Entwicklers verfügen, und der zweite für AEM-bereitgestellte OSGi-Komponenten.
+Es gibt zwei Möglichkeiten, neue OSGi-Konfigurationen zu erstellen, wie unten beschrieben. Der erste Ansatz wird typischerweise für die Konfiguration von benutzerdefinierten OSGi-Komponenten verwendet, die dem Entwickler bekannte OSGi-Eigenschaften und -Werte haben, und der zweite für von AEM bereitgestellte OSGi-Komponenten.
 
 ### Schreiben von OSGi-Konfigurationen
 
-OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entwickelt und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch zum Kopieren/Einfügen und Aktualisieren von Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ordnern im Laufzeitmodus genutzt werden.
+OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entworfen und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch genutzt werden, um Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ausführungsmodus-Ordnern zu kopieren, einzufügen und zu aktualisieren.
 
-1. Öffnen Sie in Ihrer IDE das `ui.apps` Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), in dem die Ausführungsmodi Zielgruppe werden, die die neue OSGi-Konfiguration durchführen soll.
-1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json` Datei. Die PID ist die Persistente Identität der OSGi-Komponente ist normalerweise der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
+1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll
+1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Dies ist normalerweise der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<PID>-<factory-name>.cfg.json` Benennungskonvention verwenden.
-1. Öffnen Sie die neue `.cfg.json` Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
-1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json` Datei
-1. Hinzufügen und bestätigen Sie Ihre neue OSGi-Konfigurationsdatei auf Git
+Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<PID>-<factory-name>.cfg.json`-Namenskonvention verwenden.
+1. Öffnen Sie die neue `.cfg.json`-Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
+1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
 
 ### Generieren von OSGi-Konfigurationen mit AEM SDK QuickStart
 
-Die AEM SDK QuickStart Jar-Web-Konsole von AEM SDK kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich für die Konfiguration von AEM-bereitgestellten OSGi-Komponenten, deren OSGi-Eigenschaften und deren Wertformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht richtig verstanden werden. Beachten Sie, dass in der Konfigurationsoberfläche von AEM Web Console Dateien in das Repository geschrieben werden. Achten Sie daher darauf, dass dies zu vermeiden ist, dass während der lokalen Entwicklung möglicherweise unerwartete Verhaltensweisen auftreten, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können. `.cfg.json`
+Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, deren OSGi-Eigenschaften und deren Werteformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht gut verstanden werden. Beachten Sie, dass die Verwendung der Konfigurationsoberfläche der AEM Web-Konsole `.cfg.json`-Dateien in das Repository schreibt. Seien Sie sich dessen bewusst, um potenziell unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die im AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM-Webkonsole als Admin-Benutzer an
-1. Navigieren Sie zu OSGi > Konfiguration
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK QuickStart Jar als Administrator an
+1. Navigieren Sie zu „OSGi“ > „Konfiguration“
 1. Suchen Sie die zu konfigurierende OSGi-Komponente und tippen Sie zum Bearbeiten auf ihren Titel
    ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
 1. Bearbeiten Sie die OSGi-Konfigurationseigenschaftswerte nach Bedarf über die Web-Benutzeroberfläche
-1. Notieren Sie die Persistente Identität (PID) an einem sicheren Ort. Dies wird später zum Generieren der OSGi-Konfigurations-JSON verwendet
-1. Tippen Sie auf Speichern
-1. Navigieren Sie zu OSGi > OSGi-Installationskonfigurationsdrucker.
-1. Fügen Sie die in Schritt 5 kopierte PID ein, stellen Sie sicher, dass das Serialisierungsformat auf &quot;OSGi Configurator JSON&quot;eingestellt ist.
-1. Tippen Sie auf Drucken,
-1. Die OSGi-Konfiguration im JSON-Format wird im Abschnitt &quot;Serialisierte Konfigurationseigenschaften&quot;angezeigt
-   ![OSGi-Installationskonfigurationsdrucker](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-1. Öffnen Sie in Ihrer IDE das `ui.apps` Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), in dem die Ausführungsmodi der neuen OSGi-Konfiguration Zielgruppe werden sollen.
-1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json` Datei. Die PID ist der gleiche Wert aus Schritt 5.
-1. Fügen Sie die serialisierten Konfigurationseigenschaften aus Schritt 10 in die `.cfg.json` Datei ein.
-1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json` Datei.
-1. Hinzufügen und speichern Sie die neue OSGi-Konfigurationsdatei auf Git.
+1. Notieren Sie die persistente Identität (PID) an einem sicheren Ort. Diese wird später zum Generieren der OSGi-Konfigurations-JSON verwendet
+1. Tippen Sie auf „Speichern“
+1. Gehen Sie zu „OSGi“ > „OSGi Installer-Konfigurationsdrucker“
+1. Fügen Sie die in Schritt 5 kopierte PID ein. Stellen Sie sicher, dass das Serialisierungsformat auf „OSGi Configurator JSON“ eingestellt ist
+1. Tippen Sie auf „Drucken“
+1. Die OSGi-Konfiguration im JSON-Format wird im Abschnitt „Serialisierte Konfigurationseigenschaften“ angezeigt
+   ![OSGi Installer-Konfigurationsdrucker](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
+1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json`-Datei. Die PID ist der Wert aus Schritt 5.
+1. Fügen Sie die serialisierten Konfigurationseigenschaften aus Schritt 10 in die `.cfg.json`-Datei ein.
+1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei.
+1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git.
 
 
 ## OSGi-Konfigurationseigenschaftsformate
@@ -539,9 +539,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Weitere Informationen zum Konfigurieren von Werten mithilfe des Cloud Manager-Plug-ins für Adobe I/O-CLI finden Sie auf [dieser Seite](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
+>Weitere Informationen zum Konfigurieren von Werten mithilfe des Cloud Manager-Plug-ins für Adobe I/O-CLI finden Sie auf [dieser Seite](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
 
 ### Anzahl der Variablen {#number-of-variables}
 
