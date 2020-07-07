@@ -2,7 +2,7 @@
 title: Replikation
 description: Distribution und Fehlerbehebung bei der Replikation.
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 4%
@@ -12,17 +12,17 @@ ht-degree: 4%
 
 # Replikation {#replication}
 
-Adobe Experience Manager als Cloud-Dienst verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um den Inhalt in einen Pipelineservice zu verschieben, der auf einer Adobe-E/A-Verbindung ausgeführt wird, die sich außerhalb der AEM-Laufzeit befindet.
+Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um den Inhalt in einen Pipelineservice zu verschieben, der auf Adobe I/O ausgeführt wird und sich außerhalb der AEM-Laufzeit befindet.
 
 >[!NOTE]
 >
-> Lesen Sie [Distribution](/help/core-concepts/architecture.md#content-distribution) für weitere Informationen.
+>Lesen Sie [Distribution](/help/core-concepts/architecture.md#content-distribution) für weitere Informationen.
 
 ## Methoden zum Veröffentlichen von Inhalten {#methods-of-publishing-content}
 
 ### Schnelle Veröffentlichung rückgängig machen/planen - Veröffentlichung rückgängig machen/veröffentlichen {#publish-unpublish}
 
-Diese AEM-Standardfunktionen für Autoren ändern sich nicht mit dem AEM Cloud-Dienst.
+Diese AEM-Standardfunktionen für Autoren ändern sich nicht mit AEM Cloud Service.
 
 ### Aktivieren eines Baumes {#tree-activation}
 
@@ -48,5 +48,5 @@ Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswartesc
 
 ![](assets/logs.png "LogsLogs")
 
-Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM Publish-Dienst zurückgesetzt.
+Wenn die Inhalte nicht veröffentlicht werden konnten, wird die gesamte Veröffentlichung vom AEM Publish-Dienst zurückgesetzt.
 In diesem Fall sollten die Warteschlangen überprüft werden, um festzustellen, welche Elemente die Löschung der Veröffentlichung verursacht haben. Wenn Sie auf eine Warteschlange mit einem roten Status klicken, wird die Warteschlange mit ausstehenden Elementen angezeigt, von der aus einzelne oder alle Elemente bei Bedarf gelöscht werden können.
