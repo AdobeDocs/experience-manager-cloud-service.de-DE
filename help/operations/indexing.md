@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Inhaltssuche und -indizierung {#indexing}
 
-## Änderungen in AEM als Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
 Mit AEM als Cloud Service verlagert sich Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
 
@@ -72,7 +72,7 @@ Das Paket aus dem obigen Beispiel wird wie `com.adobe.granite:new-index-content:
 
 >[!NOTE]
 >
-> Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0** , das es Ihnen nicht erlaubt, `oak:index` zu Modulen von hinzuzufügen `<packageType>application</packageType>`. Um dies zu umgehen, verwenden Sie bitte Version **1.0.4**.
+>Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0** , das es Ihnen nicht erlaubt, `oak:index` zu Modulen von hinzuzufügen `<packageType>application</packageType>`. Um dies zu umgehen, verwenden Sie bitte Version **1.0.4**.
 
 Indexdefinitionen sind jetzt als benutzerdefiniert und als Version gekennzeichnet:
 
@@ -124,7 +124,7 @@ Die folgende Tabelle zeigt fünf Indexdefinitionen: Index `cqPageLucene` wird in
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` wird benötigt, damit AEM als Cloud Service dies als Ersatz für einen vorhandenen Index kennzeichnet.
+>`<indexName>-custom-<customerVersionNumber>` wird benötigt, damit AEM als Cloud Service dies als Ersatz für einen vorhandenen Index kennzeichnet.
 
 | Index | Vordefinierter Index | Verwendung in Version 1 | Verwendung in Version 2 |
 |---|---|---|---|
