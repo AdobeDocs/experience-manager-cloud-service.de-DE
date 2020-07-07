@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
-description: Einführung in Adobe Experience Manager als Cloud-Dienst und die Richtlinien zur Web-Zugänglichkeit
+description: Einführung in Adobe Experience Manager as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service arbeitet nach den [Richtlinien](#wca
 
 >[!NOTE]
 >
-> Weitere Informationen finden Sie in den Berichten zur [Barrierefreiheitskonformität für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html) .
+>Weitere Informationen finden Sie unter [Konformitätsberichte zur Barrierefreiheit für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 * In [Erstellen barrierefreier Inhalte](/help/sites-cloud/authoring/fundamentals/accessible-content.md) wird beschrieben, wie diese mit AEM zusammenhängen.
 
 >[!NOTE]
-> 
+>
 >Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
 <!--
@@ -62,7 +62,7 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## Barrierefreiheit bei Adobe     {#accessibility-at-adobe}
+## Barrierefreiheit bei Adobe       {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
 
