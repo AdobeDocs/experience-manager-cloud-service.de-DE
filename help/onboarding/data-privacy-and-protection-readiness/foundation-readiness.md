@@ -1,8 +1,8 @@
 ---
-title: Datenschutz- und Datenschutzvorschriften - Adobe Experience Manager als Cloud Service Foundation Readiness
-description: 'Erfahren Sie mehr über Adobe Experience Manager als Unterstützung der Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Datenschutzgesetzes für Verbraucher und wie bei der Implementierung eines neuen AEM als Cloud-Service-Projekt einzuhalten ist. '
+title: Datenschutzbestimmungen - Adobe Experience Manager als Cloud Service Foundation Readiness
+description: 'Erfahren Sie mehr über den Adobe Experience Manager als Cloud Service Foundation-Unterstützung für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Verbraucherschutzgesetzes und der Frage, wie bei der Umsetzung eines neuen AEM als Cloud Service-Projekts einzuhalten ist. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 32%
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Für AEM als Cloud-Dienst ist in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Profils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
+>Für AEM als Cloud Service steht in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Profils zur Verfügung, da auf CRXDE nicht zugegriffen werden kann.
 
 ### HTTP-API {#http-api-1}
 
