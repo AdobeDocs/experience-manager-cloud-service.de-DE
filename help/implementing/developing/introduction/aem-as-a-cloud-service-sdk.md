@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service-SDK
 description: Noch auszufüllen
-translation-type: ht
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -40,7 +40,9 @@ Darüber hinaus werden manche Kunden, die zuvor AEM 6.5 oder frühere Versionen 
 </dependency>
 ```
 
->[!NOTE] Der Versionseintrag für das SDK sollte mit der Version von AEM as a Cloud Service übereinstimmen. Sie können anzeigen, welche Version Sie verwenden, indem Sie sich bei AEM anmelden, das Fragezeichen in der oberen rechten Ecke des Bildschirms aufrufen und **[!UICONTROL Über Adobe Experience Manager]** auswählen.
+>[!NOTE]
+>
+>Der Versionseintrag für das SDK sollte mit der Version von AEM as a Cloud Service übereinstimmen. Sie können anzeigen, welche Version Sie verwenden, indem Sie sich bei AEM anmelden, das Fragezeichen in der oberen rechten Ecke des Bildschirms aufrufen und **[!UICONTROL Über Adobe Experience Manager]** auswählen.
 
 
 ## Aktualisieren eines lokalen Projekts mit einer neuen SDK-Version {#refreshing-a-local-project-with-a-new-skd-version}
