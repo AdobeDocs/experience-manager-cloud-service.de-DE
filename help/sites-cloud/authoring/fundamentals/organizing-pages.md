@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 100%
+source-wordcount: '2550'
+ht-degree: 92%
 
 ---
 
@@ -360,6 +360,27 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### Asynchrone Aktionen {#asynchronous-actions}
+
+Normalerweise wird sofort eine Aktion zum Verschieben oder Umbenennen von Seiten durchgeführt. Dies gilt als synchrone Verarbeitung, und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
+
+Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer das Authoring in der Benutzeroberfläche fortsetzen kann, ohne dass die Aktion zum Verschieben oder Umbenennen der Seite behindert wird.
+
+* Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
+* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang durchgeführt.
+* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang durchgeführt.
+   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll
+      * **Jetzt** beginnt die Ausführung des asynchronen Auftrags sofort.
+      * **Später** kann der Benutzer definieren, wann der asynchrone Auftrag Beginn wird.
+
+         ![Asynchroner Seitenwechsel](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+Der Status asynchroner Aufträge kann im [**Async-Auftragsstatus **-Dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)unter** Globale Navigation **->** Tools **->** Vorgänge **->** Aufträge überprüft werden.**
+
+>[!NOTE]
+>
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) im Operations-Benutzerhandbuch.
 
 ### Löschen einer Seite {#deleting-a-page}
 
