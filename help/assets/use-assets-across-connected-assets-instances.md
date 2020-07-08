@@ -3,7 +3,7 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 100%
@@ -139,13 +139,13 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
    *Abbildung: Optionen zum Filtern von Dokumenttypen und Bildern bei der Suche nach Assets auf Remote-DAM.*
 
-1. Ein Site-Autor wird benachrichtigt, wenn ein Asset asynchron abgerufen wird und wenn eine Abruf-Aufgabe fehlschlägt. Beim oder auch nach dem Authoring können die Autoren detaillierte Informationen zu Abruf-Aufgaben und -Fehlern in der Benutzeroberfläche von [Async-Aufträgen](/help/assets/asynchronous-jobs.md) anzeigen.
+1. Ein Site-Autor wird benachrichtigt, wenn ein Asset asynchron abgerufen wird und wenn eine Abruf-Aufgabe fehlschlägt. Beim oder auch nach dem Authoring können die Autoren detaillierte Informationen zu Abruf-Aufgaben und -Fehlern in der Benutzeroberfläche von [Async-Aufträgen](/help/operations/asynchronous-jobs.md) anzeigen.
 
    ![Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden.](assets/assets_async_transfer_fails.png)
 
    *Abbildung: Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden.*
 
-1. Beim Veröffentlichen einer Seite zeigt [!DNL Experience Manager] eine vollständige Liste der auf der Seite verwendeten Assets an. Stellen Sie sicher, dass die Remote-Assets zum Zeitpunkt der Veröffentlichung erfolgreich abgerufen wurden. Informationen zum Überprüfen des Status der einzelnen abgerufenen Assets finden Sie in der Benutzeroberfläche für [Async-Aufträge](/help/assets/asynchronous-jobs.md).
+1. Beim Veröffentlichen einer Seite zeigt [!DNL Experience Manager] eine vollständige Liste der auf der Seite verwendeten Assets an. Stellen Sie sicher, dass die Remote-Assets zum Zeitpunkt der Veröffentlichung erfolgreich abgerufen wurden. Informationen zum Überprüfen des Status der einzelnen abgerufenen Assets finden Sie in der Benutzeroberfläche für [Async-Aufträge](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -189,4 +189,4 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 Führen Sie die folgenden Schritte aus, um häufige Fehler zu beheben:
 
 * Wenn Sie über [!UICONTROL Content Finder] nicht nach Remote-Assets suchen können, überprüfen Sie erneut, dass Sie über die erforderlichen Rollen und Berechtigungen verfügen.
-* Ein Asset, das aus einem Remote-DAM abgerufen wurde, kann aus folgenden Gründen nicht auf einer Web-Seite veröffentlicht werden: Es ist im Remote-Speicher nicht vorhanden, es fehlen die Berechtigungen für den Abruf oder es liegt ein Netzwerkfehler vor. Vergewissern Sie sich, dass das Asset nicht aus dem Remote-DAM entfernt wird oder die Berechtigungen nicht geändert wurden. Stellen Sie sicher, dass erforderliche Voraussetzungen erfüllt sind. Versuchen Sie erneut, das Asset zur Seite hinzuzufügen und es zu veröffentlichen. Überprüfen Sie die [Liste asynchroner Aufträge](/help/assets/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* Ein Asset, das aus einem Remote-DAM abgerufen wurde, kann aus folgenden Gründen nicht auf einer Web-Seite veröffentlicht werden: Es ist im Remote-Speicher nicht vorhanden, es fehlen die Berechtigungen für den Abruf oder es liegt ein Netzwerkfehler vor. Vergewissern Sie sich, dass das Asset nicht aus dem Remote-DAM entfernt wird oder die Berechtigungen nicht geändert wurden. Stellen Sie sicher, dass erforderliche Voraussetzungen erfüllt sind. Versuchen Sie erneut, das Asset zur Seite hinzuzufügen und es zu veröffentlichen. Überprüfen Sie die [Liste asynchroner Aufträge](/help/operations/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
