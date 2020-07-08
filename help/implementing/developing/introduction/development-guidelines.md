@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1631'
+ht-degree: 95%
 
 ---
 
@@ -160,8 +160,7 @@ Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen L
 
 ![Entwicklerkonsole 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
+Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programm ist &quot;Cloud Manager - Entwicklerrolle&quot;für Statusdumps erforderlich. Benutzer müssen auch im AEM-Profil &quot;Benutzer&quot;oder &quot;AEM-Administratoren&quot;im Autoren- und Veröffentlichungsdienst definiert sein, um Statusdump-Daten aus beiden Diensten Ansicht. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- und Produktionsdienst {#aem-staging-and-production-service}
