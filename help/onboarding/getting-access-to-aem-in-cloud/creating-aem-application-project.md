@@ -2,9 +2,9 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1251'
 ht-degree: 86%
 
 ---
@@ -94,16 +94,17 @@ Fügen Sie dazu in der Datei &quot;pom.xml&quot;einen `<plugin>` Eintrag hinzu, 
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
-        </plugin>
 ```
 
 >[!NOTE]
->Unterstützte Hersteller sind Oracle- und Sun-Mikrosysteme und die unterstützten Versionen sind 1.8, 1.11 und 11.
+>* Die unterstützten Anbieter sind `oracle` und `sun`.
+>* Die unterstützten Versionen sind `1.8`, `1.11`und `11`.
+
 
 ## Umgebungsvariablen {#environment-variables}
 
