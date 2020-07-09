@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 92%
+source-wordcount: '1255'
+ht-degree: 86%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
 * Apache Maven 3.6.0 ist installiert.
-* Die installierte Java-Version ist Oracle JDK 8u202.
+* Mit der Java-Version wurden Oracle JDK 8u202 und 11.0.2 installiert.
 * Es sind einige zusätzliche erforderliche Systempakete installiert:
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 * Maven wird immer mit folgendem Befehl ausgeführt: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven wird auf Systemebene mit einer settings.xml-Datei konfiguriert, die automatisch das öffentliche Adobe-**Artefakt**-Repository enthält. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo.adobe.com/)).
 
+### Using Java 11 {#using-java-11}
+
+Cloud Manager unterstützt jetzt das Erstellen von Kundenprojekten mit Java 8 und Java 11. Standardmäßig werden Projekte mit Java 8 erstellt. Kunden, die Java 11 in ihren Projekten verwenden möchten, können dies mit dem [Apache Maven Toolchain Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/)tun.
+
+Fügen Sie dazu in der Datei &quot;pom.xml&quot;einen `<plugin>` Eintrag hinzu, der wie folgt aussieht:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>Unterstützte Hersteller sind Oracle- und Sun-Mikrosysteme und die unterstützten Versionen sind 1.8, 1.11 und 11.
 
 ## Umgebungsvariablen {#environment-variables}
 
