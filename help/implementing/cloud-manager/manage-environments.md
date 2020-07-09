@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 61%
+source-wordcount: '695'
+ht-degree: 95%
 
 ---
 
@@ -41,16 +41,15 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 ## Hinzufügen einer Umgebung {#adding-environments}
 
 
-1. Klicken Sie auf **Hinzufügen Umgebung** , um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm &quot; **Umgebung** &quot;zugegriffen werden.
-   ![](assets/no-environment-2.png)
+1. Klicken Sie auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm **Umgebungen** zugegriffen werden.
+   ![](assets/environments-tab.png)
 
-
-   Die Option **Hinzufügen Umgebung** ist auch auf der Karte &quot; **Umgebung** &quot;verfügbar, wenn das Programm keine Umgebung enthält.
+   Die Option **Umgebung hinzufügen** ist auch auf der Karte **Umgebungen** verfügbar, wenn das Programm keine Umgebung enthält.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >Die Option **Hinzufügen Umgebung** wird aufgrund fehlender Berechtigungen oder vertraglicher Verpflichtungen deaktiviert.
+   >Die Option **Umgebung hinzufügen** wird aufgrund fehlender Berechtigungen oder vertraglicher Verpflichtungen deaktiviert.
 
 1. Daraufhin erscheint das Dialogfeld **Umgebung hinzufügen**. Dort muss der Benutzer die Felder **Umgebungstyp**, **Umgebungsname** und **Umgebungsbeschreibung** ausfüllen (je nach Ziel des Benutzers bei der Erstellung der Umgebung im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
 
@@ -75,37 +74,37 @@ Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Program
 ![](assets/manage-environments2.png)
 
 
-Die **Option &quot;Aktualisieren** &quot;ist im Dropdown-Menü auf der **Umgebung** -Karte verfügbar.
-Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
+Die **Option &quot;Aktualisieren** &quot;ist auf der **Umgebung** -Karte verfügbar.
+Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Durch Auswahl dieser Option aus dem Dropdown-Menü kann ein Bereitstellungs-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
+Durch Auswahl dieser Option kann ein Deployment Manager die mit dieser Umgebung verknüpfte Pipeline auf die neueste Version aktualisieren und dann die Pipeline ausführen.
 
 Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die Pipeline auszuführen.
 
-## Löschen der Umgebung {#deleting-environment}
+## Löschen einer Umgebung {#deleting-environment}
 
-Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs-Umgebung löschen.
+Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
 
-Die Option &quot; **Löschen** &quot;ist im Dropdown-Menü auf der **Umgebung** -Karte verfügbar.
-Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf **Details** klicken.
+Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar.
+Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
-Diese Funktion steht nicht für Produktions-/Stage-Umgebung zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Stage-Umgebung in einem Sandbox-Programm verfügbar.
+Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
 
-## Zugriff auf die Developer Console {#accessing-developer-console}
+## Aufrufen der Entwicklerkonsole {#accessing-developer-console}
 
-Wählen Sie **Developer Console** aus dem Dropdown-Menü in der **Umgebung** Card. Dadurch wird eine neue Registerkarte in Ihrem Browser mit der Anmeldeseite in der **Developer Console** geöffnet.
+Wählen Sie **Entwicklerkonsole** aus dem Dropdown-Menü auf der Karte **Umgebungen** aus. Dadurch wird eine neue Registerkarte in Ihrem Browser mit der Anmeldeseite von **Entwicklerkonsole** geöffnet.
 
-Nur Benutzer mit der Rolle &quot;Entwickler&quot;haben Zugriff auf die **Developer Console**. Die Ausnahme gilt für Sandbox-Programm, bei denen alle Benutzer mit Zugriff auf das Cloud Manager Sandbox-Programm Zugriff auf die **Developer Console** haben.
+Nur Benutzer mit der Rolle „Entwickler“ haben Zugriff auf die **Entwicklerkonsole**. Die Ausnahme bilden Sandbox-Programme, bei denen jeder Benutzer mit Zugriff auf das Cloud Manager-Sandbox-Programm Zugriff auf die **Entwicklerkonsole** hat.
 
-Weitere Informationen finden Sie unter [Hibernating and De-Hibernating Sandbox-Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) .
+Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
 ![](assets/dev-console1.png)
 
-Sie können diese Option auch über die Schaltfläche &quot; **Verwalten** &quot;auswählen, wenn Sie auf der Karte &quot; **Umgebung** &quot;auf &quot; **Details** &quot;klicken.
+Sie können diese Option auch über die Schaltfläche **Verwalten** aktivieren, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
 
