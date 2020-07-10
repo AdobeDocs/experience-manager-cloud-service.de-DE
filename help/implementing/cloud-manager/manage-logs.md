@@ -2,7 +2,7 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Diese Dateien können über die Benutzeroberfläche heruntergeladen werden. Dies
 
 Oder über die Seite **Umgebungen**:
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!NHinweis]
 >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
