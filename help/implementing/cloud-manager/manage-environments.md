@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 95%
+source-wordcount: '702'
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ Aktualisierungen der Staging- und Produktionsumgebungen werden automatisch von A
 
 Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Programms verwaltet. Wenn in einer Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, lautet der Status für die Umgebungskarte auf dem Startbildschirm **UPDATE VERFÜGBAR**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 Die **Option &quot;Aktualisieren** &quot;ist auf der **Umgebung** -Karte verfügbar.
@@ -87,10 +87,14 @@ Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die 
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
 
-Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar.
-Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
+Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar. Klicken Sie auf **...** für eine Development-Umgebung, die Sie löschen möchten.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+Sie können eine Umgebung auch löschen, wenn Sie auf **Details** auf der Karte **Umgebung** klicken.
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
@@ -104,7 +108,7 @@ Nur Benutzer mit der Rolle „Entwickler“ haben Zugriff auf die **Entwicklerko
 Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 Sie können diese Option auch über die Schaltfläche **Verwalten** aktivieren, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
 
