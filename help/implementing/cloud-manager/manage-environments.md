@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 91%
+source-wordcount: '753'
+ht-degree: 80%
 
 ---
 
@@ -75,7 +75,7 @@ Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Program
 
 
 Die **Option &quot;Aktualisieren** &quot;ist auf der **Umgebung** -Karte verfügbar.
-Diese Option steht auch über die Schaltfläche **Verwalten** zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
+This option is also available, if you click on **Details** from the **Environments** card. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie die Umgebung &quot;Entwicklung&quot;ausgewählt haben, klicken Sie auf **...** und wählen Sie **Aktualisieren**, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/environments-screen-update.png)
 
@@ -91,7 +91,7 @@ Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verf�
 
 ![](assets/environ-delete.png)
 
-Sie können eine Umgebung auch löschen, wenn Sie auf **Details** auf der Karte **Umgebung** klicken.
+Die Option zum Löschen ist auch verfügbar, wenn Sie auf **Details** auf der Karte **Umgebung** klicken. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie die Umgebung &quot;Entwicklung&quot;ausgewählt haben, klicken Sie auf **...** und wählen Sie **Löschen**, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/environ-delete-2.png)
 
@@ -110,5 +110,5 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 
 ![](assets/environ-dev-console.png)
 
-Sie können diese Option auch über die Schaltfläche **Verwalten** aktivieren, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken.
+This option is also available, if you click on **Details** from the **Environments** card. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
 
