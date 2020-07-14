@@ -2,7 +2,7 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 97%
@@ -567,7 +567,7 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 
 >[!NOTE]
 >
->Nach der Konfiguration des Cloud-Dienstes ist keine zusätzliche Konfiguration erforderlich, um den Replizierungsagenten für YouTube Publish als diesen Punkt zu aktivieren. Der Grund dafür ist, dass sie beim Speichern der Cloud-Dienstkonfiguration aktiviert wurde.
+>Nach der Konfiguration des Cloud-Dienstes ist keine zusätzliche Konfiguration erforderlich, um den Replizierungsagenten für YouTube Publish zu diesem Zeitpunkt zu aktivieren. Der Grund dafür ist, dass sie beim Speichern der Cloud-Dienstkonfiguration aktiviert wurde.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
