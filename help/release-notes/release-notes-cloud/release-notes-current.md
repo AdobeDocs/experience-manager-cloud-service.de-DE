@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.7.0
 description: Versionshinweise für Experience Manager 2020.7.0
 translation-type: tm+mt
-source-git-commit: d800ffd57826251031206290405ec1dd5febede8
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 49%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
@@ -49,3 +49,20 @@ Die Version 2020.7.0 von [!UICONTROL Cloud Manager] wurde am 09. Juli 2020 ve
 * Bei der Validierung von Umgebung ist ein Fehler aufgetreten.
 
 * Auf der Seite &quot;Umgebung&quot;werden manchmal Veröffentlichungs- und Dispatcher-Segmente angezeigt, wenn keine vorhanden war.
+
+## Neue Funktionen in Cloud-Bereitstellungsanalysator {#cloud-readiness-analyzer}
+
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Cloud Readiness Analyzer Version 1.0.2.
+
+### Fehlerbehebungen {#cra-bug-fixes}
+
+* Frühere Versionen der CRA konnten nicht auf Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde eine explizite Unterstützung hinzugefügt, um Benutzern in der Administratorgruppe zuzulassen.
+
+   Weitere Informationen finden Sie unter [Installieren von CRA auf AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) .
+
+* Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
+
+* CRA erkannte benutzerdefinierte Duplikat-Komponenten.
+
+* Bei AEM 6.1 wurde die Inhaltsüberprüfung beendet, bevor die vollständige Überprüfung abgeschlossen wurde. Die Ausnahmebehandlung wurde hinzugefügt, damit der Inspektor die Prüfung überspringen und fortsetzen kann, bis die vollständige Überprüfung abgeschlossen ist.
+
