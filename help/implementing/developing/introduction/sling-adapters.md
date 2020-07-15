@@ -2,15 +2,15 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden.
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 43%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Verwenden von Sling-Adaptern{#using-sling-adapters}
+# Verwenden von Sling-Adaptern {#using-sling-adapters}
 
 Mit [Sling](https://sling.apache.org) wird ein [Adaptermuster](https://sling.apache.org/site/adapters.html) zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Schnittstelle verwendet werden. This interface provides a generic [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) method that will translate the object to the class type being passed as the argument.
 
