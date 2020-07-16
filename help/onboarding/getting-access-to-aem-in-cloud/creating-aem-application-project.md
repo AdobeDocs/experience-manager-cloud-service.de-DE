@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 88%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
@@ -73,11 +73,14 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 * Maven wird immer mit folgendem Befehl ausgeführt: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven wird auf Systemebene mit einer settings.xml-Datei konfiguriert, die automatisch das öffentliche Adobe-**Artefakt**-Repository enthält. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo.adobe.com/)).
 
-### Using Java 11 {#using-java-11}
+>[!NOTE]
+>Obwohl Cloud Manager keine bestimmte Version des Programms definiert, muss die verwendete Version mindestens `jacoco-maven-plugin`verwendet werden `0.7.5.201505241946`.
 
-Cloud Manager unterstützt jetzt das Erstellen von Kundenprojekten mit Java 8 und Java 11. Standardmäßig werden Projekte mit Java 8 erstellt. Kunden, die Java 11 in ihren Projekten verwenden möchten, können dies mit dem [Apache Maven Toolchain Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/)tun.
+### Verwendung von Java 11 {#using-java-11}
 
-Fügen Sie dazu in der Datei &quot;pom.xml&quot;einen `<plugin>` Eintrag hinzu, der wie folgt aussieht:
+Cloud Manager unterstützt jetzt das Erstellen von Kundenprojekten mit Java 8 und Java 11. Standardmäßig werden Projekte mit Java 8 erstellt. Kunden, die Java 11 in ihren Projekten verwenden möchten, können dies mit dem [Apache Maven Toolchain-Plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) tun.
+
+Fügen Sie dazu der Datei „pom.xml“ einen `<plugin>`-Eintrag hinzu, der wie folgt aussieht:
 
 ```xml
         <plugin>
@@ -103,7 +106,7 @@ Fügen Sie dazu in der Datei &quot;pom.xml&quot;einen `<plugin>` Eintrag hinzu, 
 ```
 
 >[!NOTE]
->Die unterstützten `vendor` Werte sind `oracle` und `sun` die unterstützten `version` Werte sind `1.8`, `1.11`und `11`.
+>Die unterstützten `vendor`-Werte sind `oracle` und `sun`, die unterstützten `version`-Werte sind `1.8`, `1.11` und `11`.
 
 ## Umgebungsvariablen {#environment-variables}
 
