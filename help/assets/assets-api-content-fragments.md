@@ -2,10 +2,10 @@
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -211,7 +211,7 @@ Die Assets-REST-API gewährt Zugriff auf die Eigenschaften eines Ordners, z. B.
 
 Wenn ein Asset angefordert wird, gibt die Antwort die Metadaten (z. B. Titel, Name und andere Informationen) wie vom entsprechenden Asset-Schema definiert zurück.
 
-Die Binärdaten eines Assets werden als SIREN-Link vom Typ `content` bereitgestellt (auch als `rel attribute` bekannt).
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
 Assets können mehrere Ausgabeformate aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt das Ausgabeformat der Miniaturansichten dar, das als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
 
@@ -244,7 +244,7 @@ Zugehöriger Inhalt wird derzeit nicht bereitgestellt.
 
 Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Veröffentlichungsumgebung zusammen mit Ihrem spezifischen Verwendungsszenario verwenden.
 
-* Die Erstellung ist nur in einer Autoreninstanz möglich ([und derzeit gibt es keine Möglichkeit, ein Fragment mit dieser API für die Veröffentlichungsinstanz zu replizieren](/help/assets/assets-api-content-fragments.md#limitations)). 
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
 * Die Bereitstellung ist in beiden Umgebungen möglich, da AEM angeforderte Inhalte nur im JSON-Format bereitstellt.
 
    * Das Speichern und Bereitstellen über eine AEM-Autoreninstanz sollte für Mediathekanwendungen hinter einer Firewall ausreichen.
