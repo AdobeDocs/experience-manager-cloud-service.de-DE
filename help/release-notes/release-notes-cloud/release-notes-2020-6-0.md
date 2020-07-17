@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1949'
 ht-degree: 70%
 
 ---
@@ -182,11 +182,6 @@ Die Version bietet die folgenden weiteren Verbesserungen:
 
 ### Fehlerbehebungen {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
 
 * Bei MP3-Musikdateien funktioniert die Wiedergabeschaltfläche nicht, die auf der Miniaturansicht in der DAM-Vorschau angezeigt wird. (CQ-4294731)
@@ -195,3 +190,4 @@ In addition to the above new features, the current release provides the followin
 * Wenn beim Herunterladen eines Assets die E-Mail-Option aktiviert ist, ist die Option zum Herunterladen nicht verfügbar, auch wenn eine gültige E-Mail-Adresse angegeben wurde. (CQ-4296535)
 * Als Smart-Sammlungen gespeicherte benutzerdefinierte Filter werden nicht korrekt auf Assets angewendet. (CQ-4294942)
 * Mehrere Verbesserungen bei der Suche und Indizierung und Fehlerkorrekturen zur Verbesserung der Leistung. (CQ-4286373)
+* Bei den Ordnereigenschaften wird ein 500-jähriger Serverfehler angezeigt. (CQ-4295701)
