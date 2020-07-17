@@ -2,7 +2,7 @@
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 98%
@@ -67,7 +67,7 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >[!NOTE]
 >Der Zugriff über:
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
->* `/content/assets` **erfordert keine** Verwendung des `.model`-Selektors.
+>* `/content/path/to/page` **erfordert keine** Verwendung des `.model`-Selektors.
 
 
 Die HTTP-Methode ermittelt den auszuführenden Vorgang:
