@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 100%
+source-wordcount: '2401'
+ht-degree: 99%
 
 ---
 
@@ -226,7 +226,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert.
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchvorgänge, die Sie speichern können, und die gespeicherten Suchvorgänge, die in der Liste angezeigt werden, sind unbegrenzt.
 
 >[!NOTE]
 >
