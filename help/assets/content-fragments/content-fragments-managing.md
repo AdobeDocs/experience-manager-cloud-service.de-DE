@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Inhaltsfragmenten
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 >
 >Inhaltsfragmente werden dann für erstellte Seiten verwendet. Weitere Informationen finden Sie unter [Seitenerstellung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-## Erstellen von Inhaltsfragmenten     {#creating-content-fragments}
+## Erstellen von Inhaltsfragmenten       {#creating-content-fragments}
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
@@ -26,15 +26,16 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
-Die Methode zum Erstellen eines Inhaltsfragments lautet:
+Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
 1. Navigieren Sie zum Ordner **Assets**, in dem Sie das Fragment erstellen möchten.
 2. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
 3. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
-   * [Modell](/help/assets/content-fragments/content-fragments-models.md) - wird verwendet, um ein Fragment zu erstellen, das strukturierten Inhalt erfordert. Beispiel: **Adventure** -Modell
+   * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Abenteuer**-Modell
 
       * Alle verfügbaren Modelle werden angezeigt.
+
    Wählen Sie **Weiter** aus, wenn Sie Ihre Auswahl getroffen haben.
 
    ![Fragmentbasis](assets/cfm-managing-01.png)
@@ -122,6 +123,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
+
    Der Fragment-Editor wird geöffnet:
 
    ![Fragment-Editor](assets/cfm-managing-03.png)
@@ -143,6 +145,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
    * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![Modi](assets/cfm-managing-04.png)
 
 4. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**. 
@@ -151,7 +154,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >
    >Sowohl **Speichern** als auch **Abbrechen** schließen den Editor – siehe [Speichern, Abbrechen und Versionen](#save-cancel-and-versions) für ausführliche Informationen zur Funktionsweise beider Optionen für Inhaltsfragmente.
 
-## Speichern, Abbrechen und Versionen      {#save-cancel-and-versions}
+## Speichern, Abbrechen und Versionen        {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -205,19 +208,19 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
 
 Wenn Sie das Fragment geöffnet haben, können Sie die Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) verwenden, um Ihren Inhalt zu erstellen.
 
-## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments     {#creating-and-managing-variations-within-your-fragment}
+## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments       {#creating-and-managing-variations-within-your-fragment}
 
 Sobald Sie den Master-Inhalt erstellt haben, können Sie [Varianten](/help/assets/content-fragments/content-fragments-variations.md) dieses Inhalts erstellen und verwalten.
 
-## Verknüpfen von Inhalt mit Ihrem Fragment     {#associating-content-with-your-fragment}
+## Verknüpfen von Inhalt mit Ihrem Fragment       {#associating-content-with-your-fragment}
 
 Sie können auch Inhalt mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
 
-## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments     {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments       {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Sie können die Eigenschaften eines Fragments über die Registerkarte [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md) anzeigen und bearbeiten.
 
-## Timeline für Inhaltsfragmente     {#timeline-for-content-fragments}
+## Timeline für Inhaltsfragmente       {#timeline-for-content-fragments}
 
 Neben den Standardoptionen enthält die [Timeline](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
