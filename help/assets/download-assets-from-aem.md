@@ -2,47 +2,47 @@
 title: Herunterladen von Assets aus AEM
 description: Erfahren Sie, wie Sie Assets aus AEM herunterladen und die Download-Funktion aktivieren oder deaktivieren.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 
-# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+# Herunterladen von Assets aus [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Sie können Assets einschließlich der statischen und dynamischen Ausgabeformate herunterladen. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. Die komprimierte ZIP-Datei hat eine maximale Dateigröße von 1 GB für den Exportauftrag. Es sind maximal 500 Assets pro Exportauftrag zulässig.
+Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstellungen herunterladen. Sie haben auch die Möglichkeit, eine E-Mail mit Links zu Assets direkt von [!DNL Adobe Experience Manager Assets] aus zu senden. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. Die komprimierte ZIP-Datei hat eine maximale Dateigröße von 1 GB für den Exportauftrag. Es sind maximal 500 Assets pro Exportauftrag zulässig.
 
 >[!NOTE]
 >
 >Empfänger von E-Mails müssen Mitglieder der Gruppe `dam-users` sein, um auf den ZIP-Download-Link in der E-Mail zugreifen zu können. Um die Assets herunterladen zu können, müssen diese Mitglieder über die Berechtigung zum Starten von Workflows verfügen, die das Herunterladen von Assets auslösen.
 
-Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und „Karussellset“ können nicht heruntergeladen werden.
+Die Asset-Typen „Bild-Set“, „Rotations-Set“ „Set für gemischte Medien“ und „Karussell-Set“ können nicht heruntergeladen werden.
 
-**So laden Sie Assets herunter,**
+**So laden Sie Assets herunter:**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo, tippen Sie links in der Leiste auf **[!UICONTROL Navigation]** (Kompasssymbol).
+1. Tippen Sie auf der Navigationsseite auf **[!UICONTROL Assets > Dateien]**.
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
-1. Wählen Sie den Ordner oder einen oder mehrere Assets im Ordner aus.
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
 
-   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download1.png)
+   ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
 
-   *Optionen des Dialogfelds &quot;Herunterladen&quot;.*
+   *Optionen des Dialogfelds „Herunterladen“.*
 
-1. Wählen Sie im Dialogfeld &quot;Herunterladen&quot;die gewünschten Download-Optionen aus.
+1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
    | Download-Option | Beschreibung |
    |---|---|
-   | **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** | Wählen Sie diese Option, um alle Assets, die Sie herunterladen, einschließlich Assets in untergeordneten Ordnern, die im übergeordneten Ordner des Assets verschachtelt sind, in einen Ordner auf Ihrem lokalen Computer einzuschließen. Wenn diese Option *nicht* ausgewählt ist, wird standardmäßig die Ordnerhierarchie ignoriert und alle Assets werden in einen Ordner auf Ihrem lokalen Computer heruntergeladen. |
-   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung an den Empfänger zu senden. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Bereitstellung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können benutzerdefinierte Vorlagen für Mandanten an folgenden Speicherorten speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seinem ursprünglichen Formular ohne Darstellungen herunterzuladen.<br>Die Option für Teilassets ist verfügbar, wenn das ursprüngliche Asset Teilassets enthält. |
-   | **[!UICONTROL Ausgabeformat(e)]** | Das Ausgabeformat ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabeformate auswählen, die heruntergeladen werden sollen. Die verfügbaren Darstellungen hängen vom ausgewählten Asset ab. |
-   | **[!UICONTROL Intelligentes Zuschneiden]** | Wählen Sie diese Option, um alle Smart-Schnittdarstellungen des ausgewählten Assets aus AEM herunterzuladen. Eine ZIP-Datei mit den Smart-Zuschneidedarstellungen wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
-   | **[!UICONTROL Dynamische Ausgabe(n)]** | Wählen Sie diese Option, um eine Reihe von alternativen Darstellungen in Echtzeit zu erstellen. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>Darüber hinaus können Sie die Größe und Maßeinheit, das Format, den Farbraum, die Auflösung und optionale Bildmodifikatoren wie das Invertieren des Bildes auswählen. Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
+   | **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** | Wählen Sie diese Option, um jedes Asset, das Sie herunterladen – einschließlich der Assets in Unterordnern, die unter dem übergeordneten Ordner des Assets verschachtelt sind – in einen Ordner auf Ihrem lokalen Computer aufzunehmen. Wenn diese Option *nicht* ausgewählt ist, wird standardmäßig die Ordnerhierarchie ignoriert und alle Assets werden in einen Ordner auf Ihrem lokalen Computer heruntergeladen. |
+   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung an den Empfänger zu senden. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Bereitstellung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können mandantenspezifische benutzerdefinierte Vorlagen in folgenden Ordnern speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seiner Originalform ohne Ausgabedarstellungen herunterzuladen.<br>Die Option „Teilassets“ ist verfügbar, wenn das Asset Teil-Asset enthält. |
+   | **[!UICONTROL Ausgabedarstellung(en)]** | Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabedarstellungen auswählen, die heruntergeladen werden sollen. Die verfügbaren Ausgabedarstellungen hängen vom ausgewählten Asset ab. |
+   | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus AEM herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
+   | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](/help/assets/dynamic-media/image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
 1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
