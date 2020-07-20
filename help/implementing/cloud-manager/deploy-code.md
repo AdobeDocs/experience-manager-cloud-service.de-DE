@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
 ht-degree: 100%
 
