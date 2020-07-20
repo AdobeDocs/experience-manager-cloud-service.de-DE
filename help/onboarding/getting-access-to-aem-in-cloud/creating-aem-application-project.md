@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 92%
+source-wordcount: '1314'
+ht-degree: 80%
 
 ---
 
@@ -128,6 +128,39 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 | CM_PROGRAM_NAME | Name des Programms |
 | ARTIFACTS_VERSION | Die von Cloud Manager generierte synthetische Version bei einer Staging- oder Produktions-Pipeline |
 | CM_AEM_PRODUCT_VERSION | Der Name der Version |
+
+### Pipeline-Variablen {#pipeline-variables}
+
+In einigen Fällen kann der Build-Prozess eines Kunden von bestimmten Konfigurationsvariablen abhängen, die nicht in das Git-Repository platziert werden können oder zwischen den Pipeline-Ausführungen mit derselben Verzweigung variieren müssen.
+
+Cloud Manager ermöglicht die Konfiguration dieser Variablen über die Cloud Manager-API oder die Cloud Manager-CLI pro Pipeline. Variablen können entweder als Nur-Text oder in Ruhe verschlüsselt gespeichert werden. In beiden Fällen werden Variablen innerhalb der Build-Umgebung als Umgebung-Variable bereitgestellt, auf die dann in der `pom.xml` Datei oder anderen Buildskripten verwiesen werden kann.
+
+Um eine Variable mithilfe der CLI festzulegen, führen Sie einen Befehl wie den folgenden aus:
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+Aktuelle Variablen können aufgelistet werden:
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+Variablennamen dürfen nur alphanumerische Zeichen und Unterstriche (_) enthalten. Dabei sollten Großbuchstaben verwendet werden. Pro Pipeline sind maximal 200 Variablen zulässig. Jeder Name muss weniger als 100 Zeichen und jeder Wert darf nicht länger als 2048 Zeichen sein.
+
+Bei Verwendung in einer `Maven pom.xml` Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mit einer ähnlichen Syntax zuzuordnen:
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+            </properties>
+        </profile>
+```
+
 
 ## Aktivieren von Maven-Profilen in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
