@@ -1,22 +1,22 @@
 ---
-title: Bewährte Verfahren zum Organisieren digitaler Assets für die Verwendung von Dynamic Media-Image-Profilen oder -Video-Profilen
-description: Tipps und Best Practices für das Benennen, Organisieren und Verwalten von Bild- und Videodateien für Dynamic Media.
-translation-type: tm+mt
+title: Best Practices zum Organisieren digitaler Assets für die Verwendung von Dynamic Media-Bildprofilen oder -Videoprofilen
+description: Tipps und Best Practices für das Benennen, Organisieren und Verwalten von Dynamic Media-Bild- und -Videodateien.
+translation-type: ht
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# Bewährte Verfahren zum Organisieren digitaler Assets für die Verwendung von Image-Profilen oder Video-Profilen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Best Practices zum Organisieren digitaler Assets für die Verwendung von Bild- oder Videoprofilen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Wichtig für die Verwendung von Dynamic Media Image-Profilen oder Video-Profilen ist, dass sie Ordnern zugewiesen werden. In einem Profil befinden sich Einstellungen für ein Bild oder Video. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Daher hat die Benennung von Dateien und Ordnern, die Anordnung von Unterordnern und die Handhabung der Dateien in diesen Ordnern erhebliche Auswirkungen darauf, wie diese Assets vom Profil verarbeitet werden.
+Wichtig für die Verwendung von Dynamic Media-Bildprofilen oder -Videoprofilen ist, dass sie Ordnern zugewiesen werden. In einem Profil befinden sich Einstellungen für ein Bild oder Video. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern behandeln, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.
 
 Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
 
-Siehe [Informationen zu Dynamic Media Image Profil und Video-Profilen](about-image-video-profiles.md).
+Siehe [Informationen zu Dynamic Media-Bildprofilen und -Videoprofilen](about-image-video-profiles.md).
 
 Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen Asset-Dateien.
 
@@ -30,7 +30,7 @@ Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen
 
    * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
    * **Kundenordner** – enthalten digitale Assets basierend auf Kunden oder Projektnamen.
-   * **Primär-Quellordner** - enthält digitale Originalelemente.
+   * **Primäre Ordner:** enthalten digitale Quell-Assets in ihrer Originalform.
    * **Ausgabeformatordner** – enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
    * **Dateigrößenordner** – enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
    * **Bereitstellungsordner** – enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
