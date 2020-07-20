@@ -2,11 +2,11 @@
 title: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -89,11 +89,11 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media
 
 ## 3D-Formate {#support-3d-formats}
 
-Die folgende Liste von 3D-Formaten wird unterstützt.
+Die folgende Liste von 3D-Formaten wird unterstützt:
 
-Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffskontrolle | Miniaturansicht, Vorschau | 3D-Vorschau | Dynamic Media Versand |
+| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
