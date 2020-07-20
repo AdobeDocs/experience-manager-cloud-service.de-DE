@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben wer
 
 Bevor Sie die Bilder mit SCS taggen können, integrieren Sie [!DNL Adobe Experience Manager] mithilfe der Adobe Developer Console mit dem Smart-Tags-Service. Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Service weitergeleitet wird.
 
-* Erstellen Sie eine Konfiguration in [!DNL Experience Manager], um einen öffentlichen Schlüssel zu erstellen. [Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.](#obtain-public-certificate)
-* [Erstellen Sie eine Integration in der Adobe Developer Console und laden Sie den generierten öffentlichen Schlüssel hoch.](#create-aio-integration)
-* [Konfigurieren Sie Smart-Tags](#configure-smart-content-service) in Ihrer [!DNL Experience Manager] Instanz mithilfe des API-Schlüssels und anderer Anmeldedaten aus der Adobe Developer Console.
+* Erstellen Sie eine Konfiguration in [!DNL Experience Manager], um einen öffentlichen Schlüssel zu erstellen. [Erlangen Sie ein öffentliches Zertifikat](#obtain-public-certificate) für die OAuth-Integration.
+* [Erstellen Sie eine Integration in der Adobe Developer Console](#create-aio-integration) und laden Sie den generierten öffentlichen Schlüssel hoch.
+* [Konfigurieren Sie Smart-Tags](#configure-smart-content-service) in Ihrer [!DNL Experience Manager]Instanz mithilfe des API-Schlüssels und der anderen Anmeldeinformationen aus der Adobe Developer Console.
 * [Testen Sie die Konfiguration](#validate-the-configuration).
-* [Nach Ablauf](#certrenew)des Zertifikats neu konfigurieren.
+* [Konfigurieren Sie erneut nach Ablauf des Zertifikats](#certrenew).
 
 ### Voraussetzungen für die Integration in der Adobe Developer Console {#prerequisite-for-aio-integration}
 
