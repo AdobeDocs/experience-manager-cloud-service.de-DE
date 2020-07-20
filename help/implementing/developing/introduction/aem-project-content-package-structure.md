@@ -65,7 +65,7 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
       + `/apps/my-app/components`
    + JavaScript und CSS (über Client-Bibliotheken)
       + `/apps/my-app/clientlibs`
-   + [Überlagerungen von /libs](/help/implementing/developing/introduction/overlays.md)
+   + [Überlagerungen](/help/implementing/developing/introduction/overlays.md) von /libs
       + `/apps/cq`, `/apps/dam/` usw.
    + Kontextabhängige Ausweichkonfigurationen
       + `/apps/settings`
