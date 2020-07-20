@@ -1,11 +1,11 @@
 ---
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46ceff932d5e6a52293a4bb03734224f734439df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -28,21 +28,21 @@ Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Einen Überblick über den Experience Manager als Cloud Service-Dokumentation erhalten Sie hier Beginn. |
+| [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
 | [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
-| [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager als Cloud Service, einschließlich neuer, nicht mehr unterstützter und entfernter Funktionen und bekannter Probleme. |
+| [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
-| [Sites-Benutzerhandbuch](/help/sites-cloud/home.md) | Verstehen Sie, wie Sie Experience Manager-Sites als Cloud Service erstellen und verwalten. |
-| [Assets-Benutzerhandbuch](/help/assets/home.md) | Verstehen Sie, wie Sie Experience Manager Assets als Cloud Service verwenden und verwalten. |
+| [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
+| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihren Experience Manager als Cloud Service-Bereitstellung anpassen können, einschließlich Themen zu Entwicklung und Bereitstellung. |
-| [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Connectors als Cloud Service in Experience Manager integriert werden können. |
-| [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager als Cloud Service, z. B. Indizierung und Wartung von Aufgaben. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung. |
+| [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren. |
+| [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
-* [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/de/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
