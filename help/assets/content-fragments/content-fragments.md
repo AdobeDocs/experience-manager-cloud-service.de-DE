@@ -2,9 +2,9 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
+source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 96%
 
 ---
@@ -83,7 +83,7 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 >[!NOTE]
 >
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.  Weitere Informationen finden Sie unter „Erstellen von Übersetzungsprojekten für Inhaltsfragmente“.
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten.  
 
 <!--
 >[!NOTE]
