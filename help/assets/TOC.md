@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
-+ [Wichtige Änderungen an AEM Assets as a Cloud Service](assets-cloud-changes.md)
++ [Wesentliche Änderungen an AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
@@ -44,7 +44,7 @@ ht-degree: 98%
 + Konfigurieren, Verwalten und Erweitern von Assets {#admin}
    + [APIs und Referenzmaterial](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
-   + [Arbeiten mit Bild-Profilen und Video-Profilen](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Informationen zum Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Konfigurieren von Smart-Tags](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung von Assets](translate-assets.md)
    + [Suchfacetten](search-facets.md)
@@ -84,7 +84,7 @@ ht-degree: 98%
    + [Anwenden von Bildvorgaben für Dynamic Media](dynamic-media/image-presets.md)
    + [Bildprofile](dynamic-media/image-profiles.md)
    + [Videoprofile](dynamic-media/video-profiles.md)
-   + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
+   + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
@@ -98,7 +98,7 @@ ht-degree: 98%
    + [Interaktive Videos](dynamic-media/interactive-videos.md)
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
    + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](dynamic-media/launch.md)
-   + [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](dynamic-media/custom-pop-ups.md)
+   + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](dynamic-media/custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](dynamic-media/previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media/adding-dynamic-media-assets-to-pages.md)
