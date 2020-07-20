@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -547,174 +547,174 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Optionsknotenpfad** Praktisch dasselbe wie der **Optionspfad**, mit dem Unterschied, dass dieser Pfad sich im gemeinsamen Prädikatsfeld befindet, während der andere Pfad nur für Assets gilt.
-**Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
+* **Options-Node-Pfad** identisch mit dem 
+**Optionspfad**, nur dieser befindet sich im Feld &quot;Allgemeine Vorhersage&quot;, der andere ist spezifisch für Assets.
+
+* **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
 * Der Asterisk (*) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt.
 
-* Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}**
+## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
-## Erstellen/Öffnen einer benutzerdefinierten Konfiguration {#creating-opening-a-customized-configuration}
+### Erstellen/Öffnen einer benutzerdefinierten Konfiguration {#creating-opening-a-customized-configuration}
 
-### Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
+1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
 
-1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.************
-
+1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
 1. Über das Symbol **Bearbeiten** können Sie die Konfiguration für die Aktualisierung öffnen.
 1. Bei einer neuen Anpassung möchten Sie vermutlich [neue Prädikatfelder hinzufügen und die Einstellungen wie erforderlich festlegen](#add-edit-a-predicate-field-and-define-field-settings). Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [die Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
-1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.[](#add-edit-a-predicate-field-and-define-field-settings)
-1. [!NOTE]**
+1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.
 
-   >[!NOTE]Die angepassten Konfigurationen werden (wie jeweils angemessen) unter folgendem Pfad gespeichert:
+   >[!NOTE]
    >
-   >`/apps/cq/gui/content/facets/<option>`
+   >Die angepassten Konfigurationen werden (wie jeweils angemessen) unter folgendem Pfad gespeichert:
    >
+   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
-   >* Hinzufügen/Bearbeiten eines Prädikatfelds und Definieren der Feldeinstellungen {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren/aktualisieren:{#add-edit-a-predicate-field-and-define-field-settings}
+### Hinzufügen/Bearbeiten eines Prädikatfelds und Definieren der Feldeinstellungen {#add-edit-a-predicate-field-and-define-field-settings}
 
-[Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
+Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren/aktualisieren:
 
+1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Eigenschaft auswählen** und ziehen Sie das benötigte Prädikat an den erforderlichen Ort. Beispiel: das **Datumsbereichsprädikat**:
-1. ![Hinzufügen von Prädikaten](assets/csf-add-predicate.png)****
 
-   ![Der nächste Schritt hängt davon ab, was Sie tun möchten:](assets/csf-add-predicate.png)
+   ![Hinzufügen von Prädikaten](assets/csf-add-predicate.png)
 
-1. Sie fügen ein neues Feld hinzu:
+1. Der nächste Schritt hängt davon ab, was Sie tun möchten:
 
-   * Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
+   * Sie fügen ein neues Feld hinzu:
 
-      Sie aktualisieren ein vorhandenes Prädikat:****
+      Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
 
-   * Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
+   * Sie aktualisieren ein vorhandenes Prädikat:
 
-      Beispiel: die Einstellungen für das **Datumsbereichsprädikat**:
+      Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
+   Beispiel: die Einstellungen für das **Datumsbereichsprädikat**:
+
    ![Ändern eines Prädikats](assets/csf-modify-predicate.png)
 
-   Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie sie mit **Fertig**. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.
+1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie sie mit **Fertig**. Ihre Änderungen werden beim nächsten Einsatz der Konfiguration angezeigt.
 
-1. Anzeigen einer Vorschau der Suchkonfiguration {#previewing-the-search-configuration}**
+### Anzeigen einer Vorschau der Suchkonfiguration {#previewing-the-search-configuration}
 
-### Wählen Sie das Vorschausymbol aus:{#previewing-the-search-configuration}
+1. Wählen Sie das Vorschausymbol aus:
 
-1. ![Vorschausymbol](assets/csf-preview-icon.png)
+   ![Vorschausymbol](assets/csf-preview-icon.png)
 
-   ![Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.](assets/csf-preview-icon.png)
+1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
 
-1. ![Vorschau des Formulars anzeigen](assets/csf-preview-form.png)
+   ![Vorschau des Formulars anzeigen](assets/csf-preview-form.png)
 
-   **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
+1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-1. Löschen eines Prädikatfelds     {#deleting-a-predicate-field}**
+### Löschen eines Prädikatfelds     {#deleting-a-predicate-field}
 
-### [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-
+1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
-1. ![Löschsymbol](assets/csf-delete-icon.png)****
 
-   ![In einem Dialogfeld werden Sie dazu aufgefordert, die Löschaktion zu bestätigen.](assets/csf-delete-icon.png)
+   ![Löschsymbol](assets/csf-delete-icon.png)
+
+1. In einem Dialogfeld werden Sie dazu aufgefordert, die Löschaktion zu bestätigen.
 
 1. Bestätigen Sie diese und andere Änderungen mit **Fertig**.
 
-1. Löschen einer Konfiguration (zur erneuten Aktivierung des Standards) {#deleting-a-configuration-to-reinstate-the-default}**
+### Löschen einer Konfiguration (zur erneuten Aktivierung des Standards) {#deleting-a-configuration-to-reinstate-the-default}
 
-### Wenn Sie eine Konfiguration angepasst haben, werden die Standardwerte überschrieben. Sie können die Standardkonfiguration erneut aktivieren, indem Sie die angepasste Konfiguration löschen.{#deleting-a-configuration-to-reinstate-the-default}
+Wenn Sie eine Konfiguration angepasst haben, werden die Standardwerte überschrieben. Sie können die Standardkonfiguration erneut aktivieren, indem Sie die angepasste Konfiguration löschen.
 
-[!NOTE]
-
->[!NOTE]Standardkonfigurationen können nicht gelöscht werden.
+>[!NOTE]
 >
->Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
+>Standardkonfigurationen können nicht gelöscht werden.
 
-Wählen Sie die benötigte Konfiguration (z. B. **Seiten-Editor (Absatzsuche)**) und anschließend das Symbol **Löschen** in der Symbolleiste aus:
+Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
-1. ![Standardangaben wiederherstellen](assets/csf-restore-default.png)****
+1. Wählen Sie die benötigte Konfiguration (z. B. **Seiten-Editor (Absatzsuche)**) und anschließend das Symbol **Löschen** in der Symbolleiste aus:
 
-   ![Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)](assets/csf-restore-default.png)
+   ![Standardangaben wiederherstellen](assets/csf-restore-default.png)
 
-1. Hinzufügen von Optionsprädikaten     {#adding-options-predicates}
+1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.{#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten     {#adding-options-predicates}
+
+Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
 Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstellt wird) verdeutlicht die einzelnen Schritte:
 
-Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
+1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
-1. Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzer verfügbar sein sollen.
+   Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzer verfügbar sein sollen.
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 
-   `jcr:title` – die Feldbezeichnung, die in der Suchleiste angezeigt werden soll
-
+   * `jcr:title` – die Feldbezeichnung, die in der Suchleiste angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
-   * ![Definition eines Prädikats](assets/csf-options-predicate-01.png)
 
-   [!NOTE]](assets/csf-options-predicate-01.png)
+   ![Definition eines Prädikats](assets/csf-options-predicate-01.png)
 
+   >[!NOTE]
+   >
    >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
    >
-   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)***`/libs`
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
-   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:`/libs`
+   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   >Aktivieren Sie das benötigte Element erneut so, wie es in `/libs` unter `/apps` vorhanden ist. In diesem Fall im folgenden Verzeichnis:
-   >
-   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
+   >1. Aktivieren Sie das benötigte Element erneut so, wie es in `/libs` unter `/apps` vorhanden ist. In diesem Fall im folgenden Verzeichnis:
+   >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
-   >1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**. Wählen Sie dann **Bearbeiten** aus.
 
 
-1. Fügen Sie je nach Konfiguration **Optionen** oder eine **Optionseigenschaft** zur Konfiguration hinzu.****
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**. Wählen Sie dann **Bearbeiten** aus.
 
-1. Aktualisieren Sie die Felder, vor allem:********
-1. **Eigenschaftsname**
+1. Fügen Sie je nach Konfiguration **Optionen** oder eine **Optionseigenschaft** zur Konfiguration hinzu.
+1. Aktualisieren Sie die Felder, vor allem:
 
-   * **Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:**
+   * **Eigenschaftsname**
+
+      Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:
 
       `jcr:content/cq:template`
 
-      **Optionsknotenpfad**
+   * **Optionsknotenpfad**
 
-   * **Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:**
+      Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
+   ![Optionsprädikate](assets/csf-options-predicate-02.png)
 
-      ![Optionsprädikate](assets/csf-options-predicate-02.png)
-   Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-
+1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
 1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die Leiste **Suchen – Filter**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
-1. ![Verwendete Optionen](assets/csf-options-usage.png)****
 
-   Benutzerberechtigungen {#user-permissions}](assets/csf-options-usage.png)
-
-
-## In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benötigen, um Suchformulare zu bearbeiten, zu löschen und Vorschauen anzuzeigen.{#user-permissions}
+   ![Verwendete Optionen](assets/csf-options-usage.png)
 
 
+## Benutzerberechtigungen {#user-permissions}
+
+In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benötigen, um Suchformulare zu bearbeiten, zu löschen und Vorschauen anzuzeigen.
 
 <table>
  <thead>
   <tr>
-   </td>
-   </td>
+   <td><strong>Aktion</strong></td>
+   <td><strong>Berechtigungen</strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   </td>
-   </td>
+   <td>Bearbeiten </td>
+   <td>Lese- und Schreibberechtigungen für den Knoten <code>/apps </code>.</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>Löschen</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/apps</code>.</td>
   </tr>
   <tr>
-   </td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
+   <td>Vorschau</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br />Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>
