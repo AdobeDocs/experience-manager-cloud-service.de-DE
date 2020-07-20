@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -136,18 +136,18 @@ Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden ha
 
 In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden können, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Dies ermöglicht es, zusätzlich zu der konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzuzufügen.
 
-Nachbearbeitungs-Workflows werden, falls konfiguriert, automatisch von AEM ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um sie auszulösen. Dazu gehören:
+Nachbearbeitungs-Workflows werden, falls konfiguriert, automatisch von AEM ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um sie auszulösen. Zu den Beispielen gehören:
 
 * Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
-* Integrationen zum Hinzufügen von Metadaten oder Eigenschaften zu Assets aus externen Systemen, z. B. Produkt- oder Prozessinformationen.
+* Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
 * Zusätzliche Verarbeitung durch externe Dienste.
 
 Das Hinzufügen einer Workflow-Konfiguration für die Nachbearbeitung zu Experience Manager umfasst die folgenden Schritte:
 
-* Erstellen Sie ein oder mehrere Workflow-Modelle. In den Dokumenten wird dies als Arbeitsablaufmodell für die *Nachbearbeitung* erwähnt, bei denen es sich jedoch um normale Arbeitsablaufmodelle für Experience Manager handelt.
-* Hinzufügen spezifische Workflow-Schritte für diese Modelle. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt.
-* Hinzufügen [!UICONTROL DAM Update Asset Workflow abgeschlossen Prozessschritt] am Ende. Durch Hinzufügen dieses Schritts wird sichergestellt, dass der Experience Manager weiß, wann die Verarbeitung abgeschlossen ist und das Asset als verarbeitet markiert werden kann, d. h., dass auf dem Asset der Wert *Neu* angezeigt wird.
-* Erstellen Sie eine Konfiguration für den benutzerdefinierten Workflow Runner Service, mit der die Ausführung eines Workflow-Nachbearbeitungs-Modells entweder über einen Pfad (Ordnerspeicherort) oder durch einen regulären Ausdruck konfiguriert werden kann.
+* Erstellen eines oder mehrerer Workflow-Modelle. In den Dokumenten wird dies als *Workflow-Modelle für die Nachbearbeitung* erwähnt, bei denen es sich jedoch um normale Workflow-Modelle für Experience Manager handelt.
+* Hinzufügen spezifischer Workflow-Schritte zu diesen Modellen. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt.
+* Fügen Sie am Ende den Schritt [!UICONTROL Abgeschlosser Prozess zum DAM-Workflow eines Asset-Updates] hinzu. Durch Hinzufügen dieses Schritts wird sichergestellt, dass Experience Manager weiß, wann die Verarbeitung abgeschlossen ist, und das Asset als verarbeitet markiert werden kann, d. h., dass beim Asset der Wert *Neu* angezeigt wird.
+* Erstellen Sie eine Konfiguration für den Custom Workflow Runner Service, mit der die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder nach Pfad (Speicherort für Ordner) oder nach regulären Ausdrücken konfiguriert werden kann.
 
 ### Erstellen von Nachbearbeitungs-Workflow-Modellen {#create-post-processing-workflow-models}
 
