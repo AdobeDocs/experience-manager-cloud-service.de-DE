@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
 source-wordcount: '5125'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Wenn Sie Adobe Experience Manager für unterschiedliche Umgebungen eingerichtet 
 
 Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media.
 
-Mit der neuen Architektur ist AEM für primäre Quellelemente und für die Synchronisierung mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
+Mit der neuen Architektur ist AEM für Assets aus Primärquellen und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets zuständig:
 
-1. Wenn das primäre Quellelement in AEM hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
+1. Wenn das Asset aus einer Primärquelle in AEM hochgeladen wurde, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
 1. Nachdem die Ausgaben erstellt wurden, kann AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 1. Nachdem der Inhalt bereit zur Genehmigung und Veröffentlichung ist, wird der Dynamic Media-Service ausgelöst und pusht Inhalt an Bereitstellungs-Server und Cache-Inhalt in das CDN.
 
@@ -137,7 +137,7 @@ Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 * [Hinzufügen benutzerdefinierter MIME-Typen für nicht unterstützte Formate](#adding-custom-mime-types-for-unsupported-formats)
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotations-Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Veröffentlichungseinstellungen für Image-Server         {#publishing-setup-for-image-server}
+#### Veröffentlichungseinstellungen für Image-Server           {#publishing-setup-for-image-server}
 
 Mit den Veröffentlichungseinstellungen wird festgelegt, wie Assets standardmäßig von Dynamic Media bereitgestellt werden. Wenn keine Einstellung festgelegt wird, stellt Dynamic Media ein Asset gemäß den Standardeinstellungen unter „Veröffentlichungseinstellungen“ bereit. Beispiel: Bei der Anforderung, ein Bild bereitzustellen, das kein Auflösungsattribut enthält, wird ein Bild mit der Einstellung „Standardobjektauflösung“ bereitgestellt.
 
