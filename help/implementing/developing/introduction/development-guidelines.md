@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit alte
 
 -->
 
-Wenn das Primär im Cluster identifiziert werden muss, kann die Apache Sling Discovery API verwendet werden, um es zu erkennen.
+Wenn der Master im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um ihn zu erkennen.
 
 ## Status im Speicher {#state-in-memory}
 
@@ -86,7 +86,7 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien      im `/crx-quickstart/logs`-Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien        im `/crx-quickstart/logs`-Ordner geschrieben.
 
 In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
