@@ -1,31 +1,31 @@
 ---
-title: Informationen zu Dynamic Media - Bild-Profile und Video-Profile
-description: Ein Image-Profil oder ein Video-Profil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media angewendet werden soll. Oder welches Image-Profil, das auf Dynamic Media-Bild-Assets angewendet werden soll, damit diese ordnungsgemäß zugeschnitten werden.
-translation-type: tm+mt
+title: Informationen zu Dynamic Media – Bild- und Videoprofile
+description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
+translation-type: ht
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# Informationen zu Dynamic Media - Bild-Profile und Video-Profile{#about-dm-image-video-profiles}
+# Informationen zu Dynamic Media – Bild- und Videoprofile {#about-dm-image-video-profiles}
 
-Ein Image-Profil oder Video-Profil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media angewendet werden soll. Oder welches Image-Profil, das auf Dynamic Media-Bild-Assets angewendet werden soll, damit diese ordnungsgemäß zugeschnitten werden.
+Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
 
-In Dynamic Media können Sie zwei Typen von Profilen erstellen, die unter den folgenden Links detailliert behandelt werden:
+In Dynamic Media können Sie zwei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
 
-* [Dynamic Media Image Profils](/help/assets/dynamic-media/image-profiles.md)
-* [Dynamic Media Video-Profile](/help/assets/dynamic-media/video-profiles.md)
+* [Dynamic Media-Bildprofile](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media-Videoprofile](/help/assets/dynamic-media/video-profiles.md)
 
-See also [Metadata profiles](/help/assets/metadata-profiles.md).
+Siehe auch [Metadaten-Profile](/help/assets/metadata-profiles.md).
 
-Sie müssen über Administratorrechte verfügen, um Dynamic Media zu erstellen, zu bearbeiten und zu löschen, um Profile oder Dynamic Media Video-Profil zu erstellen, zu bearbeiten und zu löschen.
+Sie müssen über Administratorrechte verfügen, um Dynamic Media-Bildprofile oder Dynamic Media-Videoprofile zu erstellen, zu bearbeiten und zu löschen.
 
-Nachdem Sie Ihr Image-Profil oder Video-Profil erstellt haben, weisen Sie es einem oder mehreren Ordnern zu, die Sie als Ziel für neu hochgeladene Dynamic Media verwenden.
+Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
-See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Siehe auch [Best Practices zum Organisieren Ihrer digitalen Assets für die Verwendung von Bild- oder Videoprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
@@ -33,13 +33,13 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 >
 >Dasselbe gilt auch, wenn Sie Assets zwischen zwei Ordnern verschieben, denen dasselbe Profil zugewiesen ist.
 
-## Dynamic Media-Assets in einem Ordner erneut verarbeiten {#reprocessing-assets}
+## Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner {#reprocessing-assets}
 
-Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein Image-Profil für Dynamic Media oder ein Dynamic Media-Video-Profil verfügt, das Sie später geändert haben.
+Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, neu verarbeiten.
 
-Angenommen, Sie haben ein Image-Profil für Dynamic Media erstellt und einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Image-Profil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Image-Profil ein neues Verhältnis für intelligente Beschneidungen hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Scene7: Assets erneut verarbeiten* aus.
+Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für smartes Zuschneiden hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Scene7: Assets erneut verarbeiten* aus.
 
-Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Image-Profil oder Video-Profil bearbeitet haben oder bereits ein Image-Profil oder ein Video-Profil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
+Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Bildprofil oder Videoprofil bearbeitet haben oder bereits ein Bildprofil oder ein Videoprofil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
 
 Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für in einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch auf AEM aktualisiert. Wenn die Batch-Größe sehr groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn die Batch-Größe zu klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
 
@@ -56,10 +56,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**So verarbeiten Sie Dynamic Media-Assets in einem Ordner** neu:
-1. In AEM, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+**Dynamic Media-Assets in einem Ordner erneut verarbeiten**:
+1. Navigieren Sie in AEM auf der Seite „Assets“ zu einem Ordner mit Dynamic Media-Assets, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie den Workflow **Scene7: Assets erneut verarbeiten** anwenden möchten.
 
-   Ordner, denen bereits ein Image-Profil oder ein Video-Profil zugewiesen ist, werden durch die Anzeige des Profils direkt unter dem Ordnernamen in der Card-Ansicht angezeigt.
+   Bei Ordnern, denen bereits ein Bildprofil oder ein Videoprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
 1. Wählen Sie einen Ordner aus.
 
