@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
 source-wordcount: '1849'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -53,7 +53,7 @@ Inhaltsfragmente werden als Sites-Funktion betrachtet, da:
 
 * sie beim Authoring von Seiten verwendet werden.
 
-#### Mapping Content Fragments to Assets {#mapping-content-fragments-to-assets}
+#### Zuordnen von Inhaltsfragmenten zu Assets {#mapping-content-fragments-to-assets}
 
 ![Inhaltsfragment zu Assets](assets/content-fragment-to-assets.png)
 
@@ -69,10 +69,10 @@ z. B. `jcr:content/data/myvariation`
 
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert: Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in  gespeichert werden. 
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
 `jcr:content`
 
-#### Asset-Speicherort     {#asset-location}
+#### Asset-Speicherort       {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -120,7 +120,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 >
 >**Inhaltsfragmentmodell:**
 >
->Wenn ein Inhaltsfragment auf einer Seite verwendet wird, wird auf das darauf basierende Inhaltsfragmentmodell verwiesen.
+>Wenn ein Inhaltsfragment auf einer Seite verwendet wird, wird auf das Inhaltsfragmentmodell verwiesen, auf dem es basiert.
 >
 >Falls das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell zu den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
 
@@ -161,7 +161,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung     {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung       {#the-content-fragment-management-api-server-side}
 
 Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -171,7 +171,7 @@ Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwende
 >
 >Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen     {#key-interfaces}
+### Hauptschnittstellen       {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -197,7 +197,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Auflisten von Sammlungen
       * Hinzufügen von Sammlungen
       * Entfernen von Sammlungen
-   * Auf das Fragmentmodell zugreifen
+   * Zugreifen auf das Fragmentmodell
 
    Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
@@ -231,7 +231,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()     {#adapting-using-adaptto}
+### Anpassen mit adaptTo()       {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -263,7 +263,7 @@ Beachten Sie Folgendes:
 
    * Durch das Entfernen vorhandener Varianten eines Elements mithilfe von `ContentElement.removeVariation()` werden die der Variante zugewiesenen globalen Datenstrukturen nicht aktualisiert. Verwenden Sie stattdessen `ContentFragment.removeVariation()`, um sicherzustellen, dass diese Datenstrukturen synchron bleiben, wodurch eine Variante global entfernt wird.
 
-## Client-seitige API für die Inhaltsfragmentverwaltung     {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung       {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -312,10 +312,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments     {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments       {#example-creating-a-new-content-fragment}
 
-To create a new content fragment programmatically, you need to use a
-`FragmentTemplate` adapted from a model resource.
+Um programmgesteuert ein neues Inhaltsfragment zu erstellen, verwenden Sie eine `FragmentTemplate`, die von einer Modellressource angepasst wurde.
 
 Beispiel:
 
@@ -325,7 +324,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern     {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern       {#example-specifying-the-auto-save-interval}
 
 Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
