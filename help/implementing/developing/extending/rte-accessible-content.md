@@ -1,61 +1,61 @@
 ---
 title: Konfigurieren Sie den RTE, um barrierefreie Web-Seiten und Websites zu erstellen.
-description: Learn to configure Rich Text Editor to create accessible sites in [!DNL Adobe Experience Manager].
+description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um barrierefreie Websites in  [!DNL Adobe Experience Manager] zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren des RTE für barrierefreie Websites {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] unterstützt standardmäßige Barrierefreiheitsfunktionen wie alternativen Text für Bilder und zusätzliche Funktionen, auf die beim Erstellen von Inhalten zugegriffen werden kann. Inhaltsautoren verwenden diese Funktionen zusammen mit Komponenten, die den Rich-Text-Editor (RTE) verwenden. Zu den Funktionen gehören das Hinzufügen von Alternativtext, Strukturinformationen über Überschriften und Absatzelemente usw.
+[!DNL Adobe Experience Manager] unterstützt standardmäßige Barrierefreiheitsfunktionen wie alternativen Text für Bilder und zusätzliche Funktionen, auf die beim Erstellen von Inhalten zugegriffen werden kann. Inhaltsautoren verwenden diese Funktionen zusammen mit Komponenten, die den Rich-Text-Editor (RTE) verwenden. Dazu gehören alternativer Text, Strukturinformationen über Überschriften und Absatzelemente usw.
 
 Informationen zu den typischen Konfigurationen von RTE finden Sie unter [Konfigurieren von RTE-Plug-ins](rich-text-editor.md) und [Konfigurieren von RTE-Plug-ins für bestimmte Funktionen](configure-rich-text-editor-plug-ins.md).
 
-Verwenden Sie die RTE-Plug-in-Konfiguration, um die Funktionen zur Barrierefreiheit zu konfigurieren und anzupassen. For example, use `paraformat` to add extra block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2` and `H3` provided by default. Die Bearbeitung von Rich-Text ist mit vielen Komponenten der Authoring-Benutzeroberfläche möglich. Die am häufigsten verwendeten Komponenten sind Text, Bild, Download usw.
+Verwenden Sie die RTE-Plug-in-Konfiguration, um die Funktionen zur Barrierefreiheit zu konfigurieren und anzupassen. Verwenden Sie zum Beispiel `paraformat`, um semantische Blockebenenelemente hinzuzufügen, einschließlich der Erweiterung der Zahl von Überschriftenebenen, die über die standardmäßigen Ebenen `H1`, `H2` und `H3` hinausgeht. Die Bearbeitung von Rich-Text ist mit vielen Komponenten der Authoring-Benutzeroberfläche möglich. Die am häufigsten verwendeten Komponenten sind Text, Bild, Download usw.
 
 Die RTE-Funktion kann in vielen Komponenten zur Verfügung gestellt werden. Die primäre Komponente ist die `Text`-Komponente.
 
-For the `Text` component in [!DNL Experience Manager], the following screenshot displays the rich text editor with a range of plug-ins enabled, including `paraformat`:
+Für die `Text`-Komponente in [!DNL Experience Manager] zeigt der folgende Screenshot den Rich-Text-Editor mit einer Reihe von aktivierten Plug-ins, darunter `paraformat`:
 
 ![RTE-Text-Komponente im Vollbildmodus](assets/rte-toolbar-full-screen-mode.png)
 
-## Configure the plug-in features {#configuring-the-plugin-features}
+## Konfigurieren der Plug-in-Funktionen {#configuring-the-plugin-features}
 
 Anweisungen zum Konfigurieren von RTE finden Sie auf der Seite [Konfigurieren des Rich-Text-Editors](rich-text-editor.md). Der Artikel umfasst:
 
-* [Zusatzmodule und zugehörige Funktionen](rich-text-editor.md#aboutplugins)
+* [Plug-ins und ihre Funktionen](rich-text-editor.md#aboutplugins)
 * [Konfigurationsspeicherorte](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Konfigurieren anderer RTE-Funktionen](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-To activate a few or all features for a plug-in, configure the plug-in within the appropriate `rtePlugins` sub-branch in CRXDE Lite.
+Um einige oder alle Funktionen eines Plug-ins zu aktivieren, konfigurieren Sie das Plug-in in der entsprechenden `rtePlugins`-Unterverzweigung in CRXDE Lite.
 
-![CRXDE Lite zeigt ein Beispiel für rtePlugin](assets/example-rteplugin-crxde-lite.png)
+![Beispiel für ein rtePlugin in CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
 
-### Example to specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Beispiel – Angeben von im RTE-Auswahlfeld verfügbaren Absatzformaten {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-Zur Auswahl stehen neue semantische Blockformate zur Verfügung.
+Es stehen neue semantische Blockformate als Auswahl zur Verfügung.
 
-1. Legen Sie den [Konfigurationsort](rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
-1. [Aktivieren Sie das Auswahlfeld](rich-text-editor.md) für Absätze, indem Sie das Plug-In [aktivieren](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. Legen Sie den [Konfigurationsspeicherort](rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
+1. [Aktivieren Sie das Absatzauswahlfeld](rich-text-editor.md) durch die [Aktivierung des Plug-ins](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [Geben Sie die Formate an, die Sie im Absatzauswahlfeld zur Verfügung haben möchten](rich-text-editor.md).
 1. Die Absatzformate sind dann für den Autor der Inhalte aus den Auswahlfeldern im RTE verfügbar.
 
-With structural elements available in the RTE via the paragraph format options, [!DNL Experience Manager] provides a good basis for the development of accessible content. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen können die Autoren die entsprechenden Strukturelemente auswählen, z. B. Überschriften, und globale Stile verwenden, die über die Option &quot;Stile&quot;ausgewählt wurden, um ein sauberes Markup und größere Optionen für Benutzer sicherzustellen, die mit ihren eigenen Stylesheets und korrekt strukturierten Inhalten surfen.
+Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt [!DNL Experience Manager] eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen können die Autoren die entsprechenden Strukturelemente auswählen, z. B. Überschriften, und globale Stile verwenden, die über die Option „Stile“ ausgewählt wurden, um ein sauberes Markup und bessere Optionen für Benutzer sicherzustellen, die mit ihren eigenen Stylesheets und korrekt strukturierten Inhalten im Internet surfen.
 
-## Use of the Source Edit feature {#use-of-the-source-edit-feature}
+## Verwenden der Funktion „Quellenbearbeitung“  {#use-of-the-source-edit-feature}
 
-In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quellcode zu untersuchen und anzupassen. For example, a piece of content created within the RTE may require more markup to ensure compliance with WCAG 2.0. This can be done with the [source edit](rich-text-editor.md#aboutplugins) option of the RTE. You can specify the [`sourceedit` feature on the `misctools` plug-in](rich-text-editor.md#aboutplugins).
+In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Befolgung des WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Gehen Sie beim Verwenden der Funktion `sourceedit` sorgfältig vor. Typisierungsfehler und nicht unterstützte Funktionen können Probleme verursachen.
+>Gehen Sie beim Verwenden der Funktion `sourceedit` sorgfältig vor. Tippfehler und nicht unterstützte Funktionen können Probleme verursachen.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
@@ -149,5 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Kurzanleitung zu WCAG-Standards](/help/onboarding/accessibility/quick-guide-wcag.md)
->* [Barrierefreie Inhalte in Experience Manager erstellen](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Erstellen barrierefreier Inhalte in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
