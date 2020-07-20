@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Befolgen Sie diese Anweisungen, um die Bereitstellung von Inhalten mithilfe des 
    **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate.
 1. Teilen Sie dem Support mit:
    * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
-   * wenn eine IP-auf die Zulassungsliste setz erforderlich ist, um den Traffic auf eine bestimmte Umgebung zu beschränken.
+   * Wenn eine IP-Whitelist erforderlich ist, um den Datenverkehr auf eine bestimmte Umgebung zu beschränken.
 1. Stimmen Sie sich mit dem Support über den Zeitpunkt der notwendigen Änderungen an den DNS-Einträgen ab. Die Anweisungen unterscheiden sich je nachdem, ob ein Apex-Eintrag erforderlich ist:
    * Wenn kein Apex-Eintrag erforderlich ist, sollten Kunden den CNAME-DNS-Eintrag so einstellen, dass ihr FQDN auf `cdn.adobeaemcloud.com` verweist.
    * Wenn ein Apex-Eintrag erforderlich ist, erstellen Sie einen A-Eintrag, der auf die folgenden IPs verweist: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Kunden benötigen einen Apex-Eintrag, wenn der gewünschte FQDN mit der DNS-Zone übereinstimmt. Dies kann mithilfe des Unix-Befehls „dig“ getestet werden, um zu sehen, ob der SOA-Wert der Ausgabe mit der Domäne übereinstimmt. Der Befehl `dig anything.dev.adobeaemcloud.com` gibt beispielsweise eine SOA („Start of Authority“, d. h. die Zone) von `dev.adobeaemcloud.com` zurück – es ist also kein APEX-Eintrag, während `dig dev.adobeaemcloud.com` eine SOA von `dev.adobeaemcloud.com` zurückgibt – es ist also ein APEX-Eintrag.
