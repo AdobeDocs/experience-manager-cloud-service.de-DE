@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -158,8 +158,8 @@ Die folgenden Profile sind verfügbar:
 
 Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
-* [Mit Dynamic Media Image-Profilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschnitten (**[!UICONTROL Smart Cropping]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* [Mit Dynamic Media Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
+* Mit [Dynamic Media-Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* Mit [Dynamic Media-Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
