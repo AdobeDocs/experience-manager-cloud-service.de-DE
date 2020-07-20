@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1538'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel**
 
@@ -38,11 +38,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **In Navigation ausblenden**
 
-   * Gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
+   * Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
 
 * **HTML-ID**
 
-   * HTML-ID, die auf die Komponente angewendet werden soll.
+   * HTML-ID, die auf die Komponente angewandt wird.
 
 * **Seitentitel**
 
@@ -104,7 +104,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Design**
 
-   * Gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
+   * Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
 
 * **Alias**
 
@@ -150,7 +150,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * Geben Sie eine Exportkonfiguration an.
 
-### Miniaturansicht     {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
@@ -183,14 +183,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud-Service-Konfigurationen**
+* **Cloud Service-Konfigurationen**
 
    * Legen Sie Eigenschaften für Cloud Services fest.
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### Personalisierung    {#personalization}
+### Personalisierung      {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -230,14 +230,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 
-### Live Copy     {#live-copy}
+### Live Copy       {#live-copy}
 
 * **Live Copy**
 
    * Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur     {#site-structure}
+### Site-Struktur       {#site-structure}
 
 * Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
@@ -248,7 +248,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * durch Klicken oder Tippen auf **Eigenschaften**
       * für eine einzelne Seite
       * für mehrere Seiten (bei der Massenbearbeitung steht nur ein Teil der Eigenschaften zur Verfügung)
-* Im Seiten-Editor:
+* Im Seiteneditor:
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
 ### In der Sites-Konsole (einzelne Seite):{#from-the-sites-console-single-page}
