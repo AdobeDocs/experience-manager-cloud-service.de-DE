@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu Adobe Experience Manager
 description: Hinzufügen digitaler Assets zu Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1356'
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene As
 
 >[!NOTE]
 >
->Informationen zum Hochladen verschachtelter Ordnerhierarchien in AEM finden Sie unter [Massen-Upload von Assets](#bulk-upload).
+>To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
