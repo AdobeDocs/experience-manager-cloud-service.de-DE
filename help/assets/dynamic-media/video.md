@@ -1,9 +1,9 @@
 ---
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 100%
 
