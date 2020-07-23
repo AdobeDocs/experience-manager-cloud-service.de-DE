@@ -2,7 +2,7 @@
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
@@ -23,8 +23,8 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 Workflows können wie folgt gestartet werden:
 
-* [von der **Sites-Konsole** aus](#starting-a-workflow-from-the-sites-console).
-* [beim Bearbeiten einer Seite von den **Seiteninformationen **](#starting-a-workflow-from-the-page-editor)aus.
+* [von der Sites-Konsole aus](#starting-a-workflow-from-the-sites-console).
+* [beim Bearbeiten einer Seite von den Seiteninformationen](#starting-a-workflow-from-the-page-editor) aus.
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Workflows können wie folgt gestartet werden:
 
 Sie können einen Workflow wie folgt starten:
 
-* [über die Option **Erstellen** der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [über die **Timeline**-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
+* [ die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 In beiden Fällen ist Folgendes zu tun:
 
@@ -87,8 +87,8 @@ Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und 
 
 Öffnen Sie den Assistenten **Workflow erstellen** über
 
-* [die Option **Erstellen** der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [ die **Timeline**-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
+* [ die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 Anschließend können Sie Details angeben:
 
