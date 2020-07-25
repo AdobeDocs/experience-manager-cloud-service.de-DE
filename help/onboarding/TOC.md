@@ -1,11 +1,12 @@
 ---
 sub-product: Einstieg in AEM as a Cloud Service
 user-guide-title: Einstieg in AEM as a Cloud Service
+user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 93%
    + [Quell-Code-Repository](what-is-required/source-code-repository.md)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
    + [Zugriff auf Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + Cloud-Service-Programm {#cloud-service-programs}
+   + Cloud Service-Programme {#cloud-service-programs}
       + [Aufrufen von Programmen](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [Erstellen eines Programms](getting-access-to-aem-in-cloud/creating-a-program.md)
@@ -34,5 +35,5 @@ ht-degree: 93%
    + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](accessibility/web-accessibility.md)
    + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Best Practices {#best-practices}
-   + [SEO- und URL-Verwaltung](best-practices/seo-and-url-management.md)
+   + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
 + [Übersicht über die Tools-Konsolen](tools-consoles.md)
