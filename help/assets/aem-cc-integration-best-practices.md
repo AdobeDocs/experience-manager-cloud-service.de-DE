@@ -1,13 +1,13 @@
 ---
 title: Best Practices für die Integration von Adobe Experience Manager und Adobe Creative Cloud
-description: Best Practices für die Integration einer AEM-Instanz mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
+description: Best Practices integrieren eine Experience Manager-Bereitstellung in Adobe Creative Cloud, um die Übertragung von Assets zu optimieren Workflows und eine maximale Effizienz zu erzielen.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+workflow-type: tm+mt
 source-wordcount: '3302'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
