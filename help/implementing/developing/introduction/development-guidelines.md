@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 97%
+source-wordcount: '1940'
+ht-degree: 84%
 
 ---
 
@@ -86,7 +86,7 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien        im `/crx-quickstart/logs`-Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien          im `/crx-quickstart/logs`-Ordner geschrieben.
 
 In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -160,7 +160,7 @@ Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen L
 
 ![Entwicklerkonsole 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programm ist &quot;Cloud Manager - Entwicklerrolle&quot;für Statusdumps erforderlich. Benutzer müssen auch im AEM-Profil &quot;Benutzer&quot;oder &quot;AEM-Administratoren&quot;im Autoren- und Veröffentlichungsdienst definiert sein, um Statusdump-Daten aus beiden Diensten Ansicht. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungsdienste definiert werden, um Status-Dump-Daten von beiden Diensten anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- und Produktionsdienst {#aem-staging-and-production-service}
@@ -170,3 +170,45 @@ Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsum
 ### Leistungsüberwachung {#performance-monitoring}
 
 Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
+
+## IP-Adresse des dedizierten Fortschritts
+
+Auf Anfrage stellt AEM als Cloud Service eine statische, dedizierte IP-Adresse für HTTP (Port 80) und HTTPS (Port 443) für ausgehenden Traffic bereit, der im Java-Code programmiert ist.
+
+### Vorteile
+
+Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM verbessern, da es sich um einen Cloud Service handelt, bei dem Angebot eine Zulassungsliste von IP-Adressen verwendet wird. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM-Cloud Service des Kunden in den externen Dienst fließen darf. Dies ist zusätzlich zum Traffic von anderen zulässigen IPs möglich.
+
+Ohne die Funktion für die dedizierte IP-Adresse wird der Traffic, der als Cloud Service aus AEM kommt, durch eine Reihe von IPs geleitet, die mit anderen Kunden geteilt werden.
+
+### Konfiguration
+
+Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Kundensupport, der die IP-Adressinformationen bereitstellt. Für jede Umgebung sollte eine Anforderung gestellt werden, einschließlich aller neuen Umgebung, die nach der ursprünglichen Anforderung erstellt werden.
+
+### Funktionsverwendung
+
+Die Funktion ist mit Java-Code oder mit Bibliotheken kompatibel, die zu ausgehenden Traffic führen, sofern sie standardmäßige Java-Systemeigenschaften für Proxykonfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken beinhalten.
+
+Nachfolgend finden Sie ein Codebeispiel:
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+Die gleiche IP-Adresse gilt für alle Programm eines Kunden in seiner Adobe-Organisation und für alle Umgebung in jedem Programm. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
+
+Nur HTTP- und HTTPS-Anschlüsse werden unterstützt. Dies schließt HTTP/1.1 sowie HTTP/2 ein, wenn sie verschlüsselt sind.
+
+### Debugging-Überlegungen
+
+Um zu überprüfen, ob der Traffic tatsächlich an der erwarteten dedizierten IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip)aufzurufen, der die aufrufende IP-Adresse zurückgibt.
