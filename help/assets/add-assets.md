@@ -1,20 +1,20 @@
 ---
-title: Hinzufügen digitaler Assets zu Adobe Experience Manager
-description: Hinzufügen digitaler Assets zu Adobe Experience Manager as a Cloud Service
+title: Add your digital assets to [!DNL Adobe Experience Manager].
+description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 99%
+source-wordcount: '1328'
+ht-degree: 77%
 
 ---
 
 
 # Hinzufügen digitaler Assets zu Adobe Experience Manager {#add-assets-to-experience-manager}
 
-In Adobe Experience Manager wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in Experience Manager Assets hochladen.
+[!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
-Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browserupload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager-Desktop-Programm, Upload- und Erfassungsskripte, die Kunden erstellen, und automatisierte Erfassungsintegrationen, die als AEM-Erweiterungen hinzugefügt werden.
+Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripten, die von Kunden erstellt werden, und automatisierte Erfassungsintegrationen, die als Experience Manager-Erweiterungen hinzugefügt werden.
 
 Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Erfassung von Assets mithilfe von Experience Manager-APIs und SDKs beschreiben.
 
@@ -24,19 +24,19 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 
 >[!NOTE]
 >
->Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie AEM-Benutzeroberfläche, Adobe Asset Link, AEM-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
+>Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie der Benutzeroberfläche des Experience Managers, Adobe Asset Link, der Desktop-App des Experience Managers unterstützt und ist somit für Endbenutzer transparent.
 >
 >Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
 
 ## Hochladen von Assets {#upload-assets}
 
-Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem Desktop auswählen und per Drag-and-Drop in der Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload auch über die Benutzeroberfläche starten.
+Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf dem Desktop auswählen und auf die Benutzeroberfläche (Webbrowser) in den Zielordner ziehen. Sie können den Upload auch über die Benutzeroberfläche starten.
 
-1. Navigieren Sie in der Assets-Benutzeroberfläche zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
+1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. Führen Sie einen der folgenden Schritte aus, um die Assets hochzuladen:
 
    * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
-   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Assets-Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem De
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
+1. Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
-   Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht AEM Assets den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
+   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -69,13 +69,13 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem De
 -->
 
 <!-- #ENGCHECK assuming this is not relevant? remove after confirming#
-   During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
+   During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
 
-1. Das Dialogfeld „Upload-Fortschritt“ in AEM Assets zeigt die Anzahl der erfolgreich hochgeladenen Dateien und die der Dateien an, die nicht hochgeladen werden konnten.
+1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
 Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene Asset oder den Ordner, den Sie zuerst erstellt haben.
 
@@ -87,19 +87,19 @@ Darüber hinaus zeigt die Assets-Benutzeroberfläche das zuletzt hochgeladene As
 
 ### Serial uploads {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your AEM Assets instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests AEM Assets can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, AEM assets may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of [!DNL Assets]. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, [!DNL Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
-To overcome this situation, AEM Assets ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
+To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
+If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
+>Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
 ### Handhabung von Uploads, wenn das Asset bereits vorhanden ist {#handling-upload-existing-file}
@@ -114,11 +114,11 @@ Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erste
 >
 >Wenn Asset Insights zur Verfolgung von Impressions/Klicks mit Adobe Analytics aktiviert ist, werden die für das Asset in Analytics erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
-Tippen oder klicken Sie auf **[!UICONTROL Behalten]**, um das doppelte Asset in AEM Assets beizubehalten. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
+Um das Duplikat-Asset beizubehalten, [!DNL Assets]klicken Sie auf **[!UICONTROL Behalten]**. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt AEM Assets eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+[!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
 Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten.
 
@@ -142,7 +142,7 @@ Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in ein
 
 Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
-* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) bietet den Zugriff auf Assets aus AEM in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das derzeit geöffnete Dokument direkt von der Benutzeroberfläche von Adobe Asset Link in diesen Desktop-Anwendungen zu AEM hochladen.
+* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
 * Das [Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Zusätzliche Verarbeitung {#additional-processing}
