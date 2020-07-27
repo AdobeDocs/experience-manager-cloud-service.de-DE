@@ -1,18 +1,16 @@
 ---
-title: Suchfacetten
+title: Suchfacetten.
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 100%
+source-wordcount: '2371'
+ht-degree: 95%
 
 ---
 
 
 # Suchfacetten {#search-facets}
-
-Erfahren Sie, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
 
 Eine unternehmensweite Bereitstellung von Adobe Experience Manager (AEM) Assets bietet die Möglichkeit, eine Vielzahl von Assets zu speichern. Es kann manchmal zur anstrengenden und zeitraubenden Aufgabe werden, das richtige Asset zu finden, wenn Sie nur die generischen Suchfunktionen von AEM verwenden.
 
@@ -35,34 +33,30 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat `Ful
 
 1. Ziehen Sie auf der Seite „Suchformulare bearbeiten“ ein Prädikat von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Ziehen und Ablegen eines Prädikats zum Anpassen der Suchfilter](assets/drag_predicate.png)
+   ![Drücken Sie die Taste und verschieben Sie eine Prognose, um die Filter der Suche anzupassen.](assets/drag_predicate.png)
 
-   Ziehen und Ablegen eines Prädikats zum Anpassen der Suchfilter
+   *Abbildung: Drücken Sie die Eingabetaste und verschieben Sie ein Prädikat, um die Filter anzupassen.*
 
-1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll.
-
-   Mit der Kopfzeilenbeschriftung auf der Registerkarte „Einstellungen“ wird der Typ des gewählten Prädikats identifiziert.
+1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Mit der Kopfzeilenbeschriftung auf der Registerkarte „Einstellungen“ wird der Typ des gewählten Prädikats identifiziert.
 
    ![Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat](assets/settings.png)
 
-   Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat
+   *Abbildung: Verwenden Sie die Registerkarte &quot;Einstellungen&quot;, um die erforderlichen Optionen für eine Vorhersage bereitzustellen.*
 
-1. Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Basierend auf diesem Namen wird die Suche ausgeführt. Geben Sie beispielsweise `jcr:content/metadata/dc:description` oder `./jcr:content/metadata/dc:description` ein.
-
-   Sie können auch einen vorhandenen Knoten aus dem Auswahl-Dialogfeld auswählen.
+1. Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Basierend auf diesem Namen wird die Suche ausgeführt. Geben Sie beispielsweise `jcr:content/metadata/dc:description` oder `./jcr:content/metadata/dc:description` ein. Sie können auch einen vorhandenen Knoten aus dem Auswahl-Dialogfeld auswählen.
 
    ![Verknüpfen einer Metadateneigenschaft mit einem Prädikat im Feld „Eigenschaftsname“](assets/property_settings.png)
 
-   Verknüpfen einer Metadateneigenschaft mit einem Prädikat im Feld „Eigenschaftsname“
+   *Abbildung: Verknüpfen Sie eine Metadateneigenschaft mit einem Prädikat im Feld &quot;Eigenschaftsname&quot;.*
 
-1. Tippen/klicken Sie auf das Symbol **[!UICONTROL Vorschau]** ![Vorschau](assets/preview.png), um eine Vorschau des Bedienfelds „Filter“ anzuzeigen, wie es nach dem Hinzufügen des Prädikats angezeigt wird.
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. Prüfen Sie das Layout des Prädikats im Vorschaumodus.
 
    ![Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen](assets/preview-1.png)
 
    Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen
 
-1. Um die Vorschau zu schließen, tippen/klicken Sie auf das Symbol **[!UICONTROL Schließen]** ![Schließen](assets/do-not-localize/close_icon.png) oben rechts in der Vorschau.
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Einstellungen zu speichern.
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. Geben Sie beispielsweise „Adobe“ ein. Wenn Sie eine Suche durchführen, werden Assets mit der Beschreibung „Adobe“ in den Suchergebnissen aufgelistet.
@@ -139,20 +133,18 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Ass
 1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Tag-Eigenschaft]** von der Registerkarte „Eigenschaft auswählen“ in den Hauptbereich.
-1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise *jcr:content/metadata/cq:tags*. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
+1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/cq:tags`. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
 1. Konfigurieren Sie die Eigenschaft „Pfad für Stamm-Tags“ dieses Prädikats, um die Tag-Liste mit verschiedenen Tags zu füllen.
 1. Aktivieren Sie **[!UICONTROL Option „Übereinstimmung mit allen Tags“ anzeigen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
    ![Typische Einstellungen des Tag-Prädikats](assets/tags_predicate.png)
-
-   Typische Einstellungen des Tag-Prädikats
 
 1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und klicken/tippen Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften   {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften     {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -175,7 +167,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad      Browser</td>
+   <td>Pfad          Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -185,7 +177,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Pfad     </p> </td>
+   <td><p>Pfad         </p> </td>
    <td><p>Verwenden Sie dieses Suchprädikat, um Ergebnisse am Speicherort zu filtern. Sie können verschiedene Pfade als Optionen angeben.</p> </td>
    <td>
     <ul>
@@ -225,7 +217,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum       Bereich</p> </td>
+   <td><p>Datum           Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>
@@ -330,28 +322,13 @@ Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wied
 
 Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hier eine Liste der erforderlichen Berechtigungen für die Bearbeitung, das Löschen und die Vorschau in Bezug auf Suchfacetten.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Aktion</strong></td>
-   <td><strong>Berechtigungen</strong></td>
-  </tr>
-  <tr>
-   <td>Bearbeiten </td>
-   <td>Lese- und Schreibberechtigungen für den Knoten <code>/apps</code> in CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Löschen</td>
-   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/apps</code> in CRX</td>
-  </tr>
-  <tr>
-   <td>Vorschau</td>
-   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code> in CRX Außerdem Lese- und Schreibberechtigungen für den Knoten <code>/apps</code></td>
-  </tr>
- </tbody>
-</table>
+| Aktion | Berechtigung |
+|---|---|
+| Bearbeiten | Read and write permissions on the `/apps` node in CRX. |
+| Löschen | Read, write, and delete permissions on the `/apps` node in CRX. |
+| Vorschau | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
 
 >[!MORELIKETHIS]
 >
->* [Suchen nach digitalen Assets](search-assets.md)
+>* [Suchen nach digitalen Assets](search-assets.md).
 
