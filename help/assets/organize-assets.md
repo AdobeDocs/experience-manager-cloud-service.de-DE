@@ -3,15 +3,15 @@ title: Organisieren von digitalen Assets
 description: Organisieren Sie Ihre digitalen Assets mithilfe der unterschiedlichen Methoden, die Adobe Experience Manager Assets bietet.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 100%
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
 
-# Organisieren von digitalen Assets{#organize-digital-assets}
+# Organisieren von digitalen Assets {#organize-digital-assets}
 
 Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
 
@@ -44,5 +44,5 @@ Sie können einschränken, wer in Assets auf bestimmte Ordner zugreifen kann, in
 Sie können zum Organisieren von Assets Ordner und/oder Tags verwenden. Wenn Sie Assets Tags hinzufügen, können Sie diese bei einer Suche leichter finden. Gehen Sie wie folgt vor, um einem Asset Tags hinzuzufügen:
 
 1. Öffnen Sie das Asset, indem Sie in Digital Asset Manager doppelt darauf klicken.
-1. Klicken Sie im Bereich **Tags** auf die Dropdown-Schaltfläche, um sich verfügbare Tags anzeigen zu lassen. Wählen Sie geeignete Tags aus. Löschen Sie ein Tag, indem Sie den Mauszeiger über dem Tag platzieren und auf das **x** klicken.
+1. In the **Tags** area, open the menu to reveal the available tags. Wählen Sie die gewünschten Tags aus. To delete a tag, hover the pointer over the tag and click `X` to delete it.
 1. Klicken Sie auf **Speichern**, um hinzugefügte Tags zu speichern.
