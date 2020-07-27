@@ -3,10 +3,10 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 100%
+source-wordcount: '1861'
+ht-degree: 92%
 
 ---
 
@@ -113,24 +113,26 @@ Das Verarbeitungsprofil kann eine FPO-Wiedergabe (nur für Platzierung) enthalte
 
 Erstellen Sie die zusätzlichen benutzerdefinierten Verarbeitungsprofile und wenden Sie sie auf bestimmte Ordner an, damit Experience Manager sie für Assets verarbeitet, die in diese Ordner hochgeladen oder in diesen aktualisiert wurden. Das standardmäßige integrierte Verarbeitungsprofil wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
-Es gibt zwei Möglichkeiten, Verarbeitungsprofile auf Ordner anzuwenden:
+Wenden Sie verarbeitende Profil auf Ordner mit einer der folgenden Methoden an:
 
 * Administratoren können unter **[!UICONTROL Tools > Assets > Verarbeitungsprofile]** eine Definition des Verarbeitungsprofils auswählen und die Aktion **[!UICONTROL Profil auf Ordner anwenden]** verwenden. Dadurch wird ein Inhalts-Browser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
-* Die Benutzer können einen Ordner in der Benutzeroberfläche „Assets“ auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Verarbeitungsprofile]** klicken und in der Dropdown-Liste das richtige Verarbeitungsprofil für diesen Ordner auswählen. Die Auswahl wird bei der Aktion **[!UICONTROL Speichern und schließen]** gespeichert.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Um die Änderungen zu speichern, klicken Sie auf **[!UICONTROL Speichern &amp; Schließen]**.
 
 >[!NOTE]
 >
->Nur ein Verarbeitungsprofil kann auf einen bestimmten Ordner angewendet werden. Wenn Sie weitere Ausgabeformate erstellen müssen, können Sie dem Verarbeitungsprofil weitere Ausgabedefinitionen hinzufügen.
+>Nur ein Verarbeitungsprofil kann auf einen bestimmten Ordner angewendet werden. Um weitere Darstellungen zu generieren, fügen Sie dem bestehenden Profil weitere Darstellungsdefinitionen hinzu.
 
-Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese zusätzliche Verarbeitung erfolgt zusätzlich zum Standardprofil. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
+Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum standardmäßigen Profil. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
 
 >[!NOTE]
 >
->Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keines angewendet wird, geht Experience Manager in der Ordnerstruktur nach oben, bis ein angewendetes Verarbeitungsprofil gefunden und für das Asset verwendet wird. Das bedeutet, dass ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, für die gesamte Struktur funktioniert, aber mit einem anderen Profil, das auf einen Unterordner angewendet wird, überschrieben werden kann.
+>Ein auf einen Profil angewendetes Verarbeitungsordner funktioniert für die gesamte Struktur, kann jedoch überschrieben werden, wenn ein anderes Profil auf einen Unterordner angewendet wird. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keine Anwendung erfolgt, wird ein übergeordneter Profil in der Hierarchie auf die Anwendung eines Verarbeitungsordners überprüft.
 
 Benutzer können überprüfen, ob die Verarbeitung tatsächlich stattgefunden hat, indem sie ein neu hochgeladenes Asset öffnen, für das die Verarbeitung abgeschlossen ist, die Asset-Vorschau öffnen und auf die Ansicht **[!UICONTROL Ausgabeformate]** in der linken Leiste klicken. Die spezifischen Ausgabeformate im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
 
-![Zusätzliche Ausgabeformate](assets/renditions-additional-renditions.png)*Abbildung: Beispiel zweier zusätzlicher Ausgabeformate, die von einem Verarbeitungsprofil generiert wurden, das auf den übergeordneten Ordner angewendet wurde*
+![additional-renditions](assets/renditions-additional-renditions.png)
+
+*Abbildung: Beispiel für zwei zusätzliche Darstellungen, die von einem verarbeitenden Profil generiert wurden, das auf den übergeordneten Ordner angewendet wurde.*
 
 ## Nachbearbeitungs-Workflows {#post-processing-workflows}
 
