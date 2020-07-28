@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
-translation-type: ht
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -59,7 +59,8 @@ Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfigurier
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >Die folgenden Abschnitte müssen für Cloud Manager für AEM Cloud Services aktualisiert werden und sind derzeit in Bearbeitung.
 
 ## Bereitstellungsprozess {#deployment-process}
