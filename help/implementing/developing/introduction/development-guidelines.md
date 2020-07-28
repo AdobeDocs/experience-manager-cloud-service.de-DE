@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 84%
+source-wordcount: '1949'
+ht-degree: 83%
 
 ---
 
@@ -173,17 +173,17 @@ Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschl
 
 ## IP-Adresse des dedizierten Fortschritts
 
-Auf Anfrage stellt AEM als Cloud Service eine statische, dedizierte IP-Adresse für HTTP (Port 80) und HTTPS (Port 443) für ausgehenden Traffic bereit, der im Java-Code programmiert ist.
+Auf Anfrage stellt AEM als Cloud Service eine statische, dedizierte IP-Adresse für HTTP (Port 80) und HTTPS (Port 443)-ausgehenden Traffic bereit, der im Java-Code programmiert ist.
 
 ### Vorteile
 
-Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM verbessern, da es sich um einen Cloud Service handelt, bei dem Angebot eine Zulassungsliste von IP-Adressen verwendet wird. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM-Cloud Service des Kunden in den externen Dienst fließen darf. Dies ist zusätzlich zum Traffic von anderen zulässigen IPs möglich.
+Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie einem CRM-Anbieter) oder anderen Integrationen außerhalb AEM Angebots als Cloud Service einer IP-Adresse erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Datenverkehr vom AEM Cloud Service des Kunden in den externen Dienst fließen darf. Dies ist zusätzlich zum Traffic von anderen zulässigen IPs möglich.
 
-Ohne die Funktion für die dedizierte IP-Adresse wird der Traffic, der als Cloud Service aus AEM kommt, durch eine Reihe von IPs geleitet, die mit anderen Kunden geteilt werden.
+Ohne die Funktion für die dedizierte IP-Adresse wird Datenverkehr, der als Cloud Service aus AEM kommt, durch eine Reihe von IPs geleitet, die mit anderen Kunden geteilt werden.
 
 ### Konfiguration
 
-Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Kundensupport, der die IP-Adressinformationen bereitstellt. Für jede Umgebung sollte eine Anforderung gestellt werden, einschließlich aller neuen Umgebung, die nach der ursprünglichen Anforderung erstellt werden.
+Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Kundensupport, der die IP-Adressinformationen bereitstellt. In der Anforderung sollten die einzelnen Umgebung angegeben werden, und es sollten zusätzliche Anforderungen gestellt werden, wenn neue Umgebung die Funktion nach der ursprünglichen Anforderung benötigen. Sandbox-Programm-Umgebung werden nicht unterstützt.
 
 ### Funktionsverwendung
 
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Die gleiche IP-Adresse gilt für alle Programm eines Kunden in seiner Adobe-Organisation und für alle Umgebung in jedem Programm. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
+Die gleiche IP-Adresse gilt für alle Programm eines Kunden in seiner Adobe Organisation und für alle Umgebung in jedem Programm. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
 
 Nur HTTP- und HTTPS-Anschlüsse werden unterstützt. Dies schließt HTTP/1.1 sowie HTTP/2 ein, wenn sie verschlüsselt sind.
 
