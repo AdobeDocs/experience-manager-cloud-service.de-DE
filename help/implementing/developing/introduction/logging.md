@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
@@ -34,48 +34,62 @@ Beachten Sie, dass HTTP-Anforderungen, die vom Dispatcher-Cache der Veröffentli
 AEM als Cloud Service bietet Zugriff auf Java-Protokollanweisungen. Entwickler von Anwendungen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Anweisungen zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
 
 <table>
-<tbody>
 <tr>
-<td> <b>AEM Umgebung</b></td>
-<td> <b>Protokollebene</b></td>
-<td> <b>Beschreibung</b></td>
-<td> <b>Verfügbarkeit der Protokollerklärung</b></td>
+<td>
+<b>AEM Umgebung</b></td>
+<td>
+<b>Protokollebene</b></td>
+<td>
+<b>Beschreibung</b></td>
+<td>
+<b>Verfügbarkeit der Protokollerklärung</b></td>
 </tr>
 <tr>
-<td> Entwicklung</td>
-<td> DEBUG</td>
-<td> Beschreibt, was in der Anwendung geschieht.
+<td>
+Entwicklung</td>
+<td>
+DEBUG</td>
+<td>
+Beschreibt, was in der Anwendung geschieht.<br>
 
 Wenn die DEBUG-Protokollierung aktiv ist, werden Anweisungen protokolliert, die ein klares Bild von den auftretenden Aktivitäten sowie allen wichtigen Parametern, die sich auf die Verarbeitung auswirken, vermitteln.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale Entwicklung</li>
 <li>Entwicklung</li>
 </ul></td>
 </tr>
 <tr>
-<td> Staging</td>
-<td> WARN</td>
-<td> Beschreibt Bedingungen, bei denen Fehler auftreten können.
+<td>
+Staging</td>
+<td>
+WARN</td>
+<td>
+Beschreibt Bedingungen, bei denen Fehler auftreten können.<br>
 
 Wenn die WARN-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Bedingungen hinweisen, die sich der Unter-Optimalität nähern.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale Entwicklung</li>
 <li>Entwicklung</li>
 <li>Staging</li>
 </ul></td>
 </tr>
 <tr>
-<td> Produktion</td>
-<td> FEHLER</td>
-<td> Beschreibt Bedingungen, die auf einen Fehler hinweisen und gelöst werden müssen.
+<td>
+Produktion</td>
+<td>
+FEHLER</td>
+<td>
+Beschreibt Bedingungen, die auf einen Fehler hinweisen und gelöst werden müssen.<br>
 
 Wenn die ERROR-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Fehler hinweisen. ERROR-Protokollerklärungen deuten auf ein schwerwiegendes Problem hin, das so bald wie möglich gelöst werden sollte.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Lokale Entwicklung</li>
 <li>Entwicklung</li>
 <li>Staging</li>
 <li>Produktion</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
