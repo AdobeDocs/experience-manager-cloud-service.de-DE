@@ -2,428 +2,80 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 17%
 
 ---
 
 
-# Protokollierung{#logging}
-
-AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um benutzerdefinierten Code in Cloud-Umgebungen und insbesondere in lokalen Entwicklungsumgebungen zu debuggen.
-
-
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## Protokollierung in AEM as a Cloud Service{#aem-as-a-cloud-service-logging}
-
-Mit AEM as a Cloud Service können Sie Folgendes konfigurieren:
-
-* Globale Parameter für den zentralen Protokollierungsdienst
-* Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Spezifische Einstellungen für die einzelnen Dienste
-
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im Ordner `/crx-quickstart/logs` geschrieben.
-
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen.
-
->[!NOTE]
->
->Die Protokollierung in AEM as a Cloud Service basiert auf Sling-Prinzipien. Weitere Informationen finden Sie unter [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
-
-## Java-Protokollierung in AEM as a Cloud Service {#aem-as-a-cloud-service-java-logging}
-
-### Standard-Logger und -Writer {#standard-loggers-and-writers}
-
->[!IMPORTANT]
->
->Eine Anpassung ist hier ggf. möglich, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist. Wenn Sie jedoch die standardmäßigen Protokollierungskonfigurationen anpassen müssen, stellen Sie sicher, dass Sie dies nur in `dev`-Umgebung tun.
-
-Bestimmte Logger und Writer sind in einer standardmäßigen AEM as a Cloud Service-Installation bereits enthalten.
-
-Das erste Paar ist ein Sonderfall, da sowohl `request`- als auch `access`-Protokolle gesteuert werden:
-
-* Der Logger:
-
-   * Apache Sling Customizable Request Data Logger
-
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
-
-   * Schreibt Meldungen zum Anforderungsinhalt in die Datei `request.log`.
-
-* Ist verknüpft mit:
-
-   * Apache Sling Request Logger
-
-      (org.apache.sling.engine.impl.log.RequestLogger)
-
-   * Schreibt Meldungen in `request.log` oder `access.log`.
-
-Die anderen Paare folgen der Standardkonfiguration:
-
-* Der Logger:
-
-   * Apache Sling Logging Logger-Konfiguration
-
-      (org.apache.sling.commons.log.LogManager.factory.config)
-
-   * Schreibt `Information`-Meldungen in `logs/error.log`.
-
-* Ist mit dem folgenden Writer verknüpft:
-
-   * Apache Sling Logging Write-Konfiguration
-
-      (org.apache.sling.commons.log.LogManager.factory.writer)
-
-* Der Logger:
-
-   * Apache Sling Logging Logger-Konfiguration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
-
-   * Schreibt `Warning`-Meldungen in `../logs/error.log` für den `org.apache.pdfbox`-Dienst.
-
-* Ist nicht mit einem bestimmten Writer verknüpft, sodass ein impliziter Writer mit Standardkonfiguration erstellt und verwendet wird.
-
-**Protokollierung von HTTP-Anfragen in AEM as a Cloud Service**
-
-Hier werden alle Zugriffsanfragen an das AEM WCM-System und das Repository registriert.
-
-Beispielausgabe:
-
-**Protokollierung von HTTP-Zugriffsanfragen und -Antworten in AEM as a Cloud Service**
-
-Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
-
-Beispielausgabe:
-
-**Apache Web Server-/Dispatcher-Protokollierung**
-
-Dieses Protokoll dient zum Debugging von Dispatcher-Problemen. Weitere Informationen finden Sie unter [Debuggen der Apache- und Dispatcher-Konfiguration](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/).
-
-<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
-
-leftover text from the last breakaway chunk (re dispatcher) -->
-
-Was Best Practices anbelangt, sollten Sie sich an den Konfigurationen ausrichten, die derzeit im AEM as a Cloud Service-Archetyp in Maven vorhanden sind. Diese legen unterschiedliche Protokolleinstellungen und Ebenen für bestimmte Umgebungen fest:
-
-* Setzen Sie beim Logger für `local dev`- und `dev`-Umgebungen die **DEBUG**-Ebene auf `error.log`.
-* Setzen Sie beim Logger für `stage`-Umgebungen die **WARN**-Ebene auf `error.log`.
-* Setzen Sie beim Logger für `prod`-Umgebungen die **ERROR**-Ebene auf `error.log`.
-
-Nachfolgend finden Sie Beispiele für jede Konfiguration:
-
-* `dev`-Umgebungen:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-
-* `stage`-Umgebungen:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-* `prod`-Umgebungen:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-### Logger und Writer für einzelne Dienste {#loggers-and-writers-for-individual-services}
-
-Neben den globalen Protokollierungseinstellungen können Sie in AEM as a Cloud Service bestimmte Einstellungen für einzelne Dienste konfigurieren:
-
-* Bestimmte Protokollierungsstufe
-* Logger (OSGi-Dienst, der die Protokollmeldungen bereitstellt)
-
-So können Sie die Protokollmeldungen für einen einzelnen Dienst in eine separate Datei leiten. Dies kann insbesondere beim Entwickeln oder Testen nützlich sein, etwa wenn Sie für einen bestimmten Dienst auf eine höhere Protokollierungsstufe angewiesen sind.
-
-AEM as a Cloud Service geht wie folgt vor, um Protokollmeldungen in eine Datei zu schreiben:
-
-1. Ein **OSGi-Dienst** (Logger) schreibt eine Protokollmeldung.
-1. Ein **Logging Logger** (Protokollierungslogger) formatiert diese Meldung gemäß Ihren Angaben.
-1. Ein **Logging Writer** (Protokollierungswriter) schreibt all diese Meldungen in die von Ihnen definierte physische Datei.
-
-Diese Elemente sind über die folgenden Parameter mit den entsprechenden Elementen verknüpft:
-
-* **Logger (Logging Logger)**
-
-   Hiermit werden der Dienst bzw. die Dienste zum Generieren der Meldungen definiert.
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
-
-### Festlegen der Protokollebene {#setting-the-log-level}
-
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
-
->[!NOTE]
->
->Um die unten aufgeführten Konfigurationsänderungen durchzuführen, müssen Sie sie in einer lokalen Entwicklungsumgebung erstellen und dann an eine AEM as a Cloud Service-Instanz pushen. Weitere Informationen dazu finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
-
-**Aktivieren der DEBUG-Protokollebene**
-
->[!WARNING]
->
->Die globale Aktivierung der DEBUG-Protokollebene erzeugt eine große Menge an Informationen, die schwer zu sichten sind. Es wird empfohlen, diese Option nur für Dienste zu aktivieren, die Debuggen erfordern. Weitere Informationen finden Sie unter [Logger und Writer für einzelne Dienste](logging.md#loggers-and-writers-for-individual-services).
-
-Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
-Um die DEBUG-Protokollebene zu aktivieren, stellen Sie die Eigenschaft
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-auf „debug“ ein. Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolle generiert werden.
-Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-Die Protokollebenen lauten wie folgt:
-
-| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen und das Installationsprogramm kann nicht fortgesetzt werden. |
-|---|---|---|
-| 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, aber ein CRX-Teil wurde nicht ordnungsgemäß installiert und funktioniert daher nicht. |
-| 2 | Warnung | Die Aktion war erfolgreich, stieß aber auf Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
-| 3 | Informationen | Die Aktion war erfolgreich. |
-
-### Erstellen eigener Logger und Writer {#creating-your-own-loggers-and-writers}
-
-Sie können ein eigenes Logger-/Writer-Paar definieren:
-
-1. Erstellen Sie eine neue Instanz der Werkskonfiguration [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
-
-   1. Geben Sie den Logger an.
-
-<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
-
-    1. Specify the Log File - this must match that specified for the Logger.
-    1. Configure the other parameters as required. -->
-
-### Konfigurieren der Protokollierung {#configure-logging}
-
->[!NOTE]
->
->Beim Arbeiten mit Adobe Experience Manager gibt es mehrere Möglichkeiten, die Konfigurationseinstellungen für solche Dienste zu verwalten.
-
-Unter bestimmten Umständen müssen Sie möglicherweise ein benutzerdefiniertes Protokoll mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
-
-1. Erstellen Sie, falls nicht bereits vorhanden, einen neuen Konfigurationsordner (`sling:Folder`) für das Projekt `/apps/<*project-name*>/config`.
-1. Erstellen Sie unter `/apps/<*project-name*>/config` einen Knoten für die neue Apache Sling Logging Logger-Konfiguration:
-
-   * Name: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (da dies ein Logger ist)
-
-      wobei `<*identifier*>` durch einen freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden).
-
-      Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
-
-   * Typ: `sling:OsgiConfig`
-   >[!NOTE]
-   >
-   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
-
-<!-- 1. Set the following properties on this node:
-
-    * Name: `org.apache.sling.commons.log.file`
-
-      Type: String
-
-      Value: specify the Log File; for example, `logs/myLogFile.log`
-
-    * Name: `org.apache.sling.commons.log.names`
-
-      Type: String[] (String + Multi)
-
-      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
-
-        * `org.apache.sling`
-        * `org.apache.felix`
-        * `com.day`
-
-    * Name: `org.apache.sling.commons.log.level`
-
-      Type: String
-
-      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
-
-    * Configure the other parameters as required:
-
-        * Name: `org.apache.sling.commons.log.pattern`
-
-          Type: `String`
-
-          Value: specify the pattern of the log message as required; for example,
-
-          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
-
-   >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
-
-   >
-   >
-   >{0} The timestamp of type `java.util.Date`
-   >{1} the log marker
-   >{2} the name of the current thread
-   >{3} the name of the logger
-   >{4} the log level
-   >{5} the log message
-
-   >
-   >
-   >If the log call includes a `Throwable` the stacktrace is appended to the message.
-
-   >[!CAUTION]
-   >
-   >org.apache.sling.commons.log.names must have a value.
-
-   >[!NOTE]
-   >
-   >Log writer paths are relative to the `crx-quickstart` location.
-   >
-   >
-   >Therefore, a log file specified as:
-   >
-   >
-   >`logs/thelog.log`
-
-   >
-   >
-   >writes to:
-   >
-   >
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
-   >
-   >
-   >And a log file specified as:
-   >
-   >
-   >`../logs/thelog.log`
-
-   >
-   >
-   >writes to a directory:
-   >
-   >
-   >` <*cq-installation-dir*>/logs/`
-   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
- -->
-
-<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
-
-<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
-
-   >[!CAUTION]
-   >
-   >A new Logging Writer Configuration is only required when the existing default is not suitable.
-
-   >
-   >
-   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
-
-   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
-
-    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
-
-      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-
-    * Type: `sling:OsgiConfig`
-
-   >[!NOTE]
-   >
-   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
-
-   Set the following properties on this node:
-
-    * Name: `org.apache.sling.commons.log.file`
-
-      Type: `String`
-
-      Value: specify the Log File so that it matches the file specified in the Logger;
-
-      for this example, `../logs/myLogFile.log`.
-
-    * Configure the other parameters as required:
-
-        * Name: `org.apache.sling.commons.log.file.number`
-
-          Type: `Long`
-
-          Value: specify the number of log files you want kept; for example, `5`
-
-        * Name: `org.apache.sling.commons.log.file.size`
-
-          Type: `String`
-
-          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
-
-   >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
-   >
-   >* a maximum file size
-   >* a time/date schedule
-   >
-   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
-   >
-   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
-   >
-   >The default is '.'yyyy-MM-dd (for daily log rotation).
-   >
-   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
-   >
-   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >      |---|---|
-   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
-   >
-   >      Note: When specifying a time/date:
-   >      1. You should "escape" literal text within a pair of single quotes (' ');
-   >      this is to avoid certain characters being interpreted as pattern letters.
-   >      1. Only use characters allowed for a valid file name anywhere in the option.
-
-1. Read your new log file with your chosen tool.
-
-   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
-
-Die Felix-Konsole enthält auch Informationen zum Sling Log-Support unter `../system/console/slinglog`; beispielsweise `https://localhost:4502/system/console/slinglog`.draf
-
-## Zugreifen auf und Verwalten von Protokollen {#manage-logs}
-
-Informationen zum Zugriff auf und zur Verwaltung von Protokollen finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+# Protokollierung {#logging}
+
+AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Codeausführung bei lokalen Entwicklungs- und Cloud-Umgebung zu debuggen und zu verstehen, insbesondere die AEM als Dev-Umgebung eines Cloud Service.
+
+AEM Protokollierungs- und Protokollierungsebenen werden in Konfigurationsdateien verwaltet, die als Teil des AEM Projekts in Git gespeichert und als Teil des AEM Projekts über Cloud Manager bereitgestellt werden. Die Anmeldung AEM als Cloud Service kann in zwei logische Sätze unterteilt werden:
+
+* AEM Protokollierung, die die Protokollierung auf AEM Anwendungsebene durchführt
+* Apache HTTPD Web Server/Dispatcher-Protokollierung, die die Protokollierung des Webservers und des Dispatchers auf der Veröffentlichungsstufe durchführt.
+
+## AEM {#aem-loggin}
+
+Die Protokollierung auf AEM Anwendungsebene erfolgt über drei Protokolle:
+
+1. AEM Java-Protokolle, die Java-Protokollanweisungen für die AEM Anwendung wiedergeben.
+1. HTTP-Anforderungsprotokolle, die Informationen zu HTTP-Anforderungen und deren Antworten AEM
+1. HTTP-Zugriffsprotokolle, in denen zusammengefasste Informationen und HTTP-Anforderungen, die von AEM bereitgestellt werden, protokolliert werden
+
+Beachten Sie, dass HTTP-Anforderungen, die vom Dispatcher-Cache der Veröffentlichungsstufe oder vom Upstream-CDN bereitgestellt werden, nicht in diesen Protokollen angezeigt werden.
+
+### AEM Java-Protokollierung {#aem-java-logging}
+
+AEM als Cloud Service bietet Zugriff auf Java-Protokollanweisungen. Entwickler von Anwendungen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Anweisungen zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
+
+<table>
+<tbody>
+<tr>
+<td> <b>AEM Umgebung</b></td>
+<td> <b>Protokollebene</b></td>
+<td> <b>Beschreibung</b></td>
+<td> <b>Verfügbarkeit der Protokollerklärung</b></td>
+</tr>
+<tr>
+<td> Entwicklung</td>
+<td> DEBUG</td>
+<td> Beschreibt, was in der Anwendung geschieht.
+
+Wenn die DEBUG-Protokollierung aktiv ist, werden Anweisungen protokolliert, die ein klares Bild von den auftretenden Aktivitäten sowie allen wichtigen Parametern, die sich auf die Verarbeitung auswirken, vermitteln.</td>
+<td> <ul>
+<li> Lokale Entwicklung</li>
+<li>Entwicklung</li>
+</ul></td>
+</tr>
+<tr>
+<td> Staging</td>
+<td> WARN</td>
+<td> Beschreibt Bedingungen, bei denen Fehler auftreten können.
+
+Wenn die WARN-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Bedingungen hinweisen, die sich der Unter-Optimalität nähern.</td>
+<td> <ul>
+<li> Lokale Entwicklung</li>
+<li>Entwicklung</li>
+<li>Staging</li>
+</ul></td>
+</tr>
+<tr>
+<td> Produktion</td>
+<td> FEHLER</td>
+<td> Beschreibt Bedingungen, die auf einen Fehler hinweisen und gelöst werden müssen.
+
+Wenn die ERROR-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Fehler hinweisen. ERROR-Protokollerklärungen deuten auf ein schwerwiegendes Problem hin, das so bald wie möglich gelöst werden sollte.</td>
+<td> <ul>
+<li> Lokale Entwicklung</li>
+<li>Entwicklung</li>
+<li>Staging</li>
+<li>Produktion</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
