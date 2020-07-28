@@ -2,7 +2,7 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 83%
@@ -171,21 +171,21 @@ Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsum
 
 Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
 
-## IP-Adresse des dedizierten Fortschritts
+## IP-Adresse des dedizierten Fortschritts {#dedicated-egress-ip-address}
 
 Auf Anfrage stellt AEM als Cloud Service eine statische, dedizierte IP-Adresse für HTTP (Port 80) und HTTPS (Port 443)-ausgehenden Traffic bereit, der im Java-Code programmiert ist.
 
-### Vorteile
+### Vorteile {#benefits}
 
 Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie einem CRM-Anbieter) oder anderen Integrationen außerhalb AEM Angebots als Cloud Service einer IP-Adresse erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Datenverkehr vom AEM Cloud Service des Kunden in den externen Dienst fließen darf. Dies ist zusätzlich zum Traffic von anderen zulässigen IPs möglich.
 
 Ohne die Funktion für die dedizierte IP-Adresse wird Datenverkehr, der als Cloud Service aus AEM kommt, durch eine Reihe von IPs geleitet, die mit anderen Kunden geteilt werden.
 
-### Konfiguration
+### Konfiguration {#configuration}
 
 Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Kundensupport, der die IP-Adressinformationen bereitstellt. In der Anforderung sollten die einzelnen Umgebung angegeben werden, und es sollten zusätzliche Anforderungen gestellt werden, wenn neue Umgebung die Funktion nach der ursprünglichen Anforderung benötigen. Sandbox-Programm-Umgebung werden nicht unterstützt.
 
-### Funktionsverwendung
+### Funktionsverwendung {#feature-usage}
 
 Die Funktion ist mit Java-Code oder mit Bibliotheken kompatibel, die zu ausgehenden Traffic führen, sofern sie standardmäßige Java-Systemeigenschaften für Proxykonfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken beinhalten.
 
@@ -209,6 +209,6 @@ Die gleiche IP-Adresse gilt für alle Programm eines Kunden in seiner Adobe Orga
 
 Nur HTTP- und HTTPS-Anschlüsse werden unterstützt. Dies schließt HTTP/1.1 sowie HTTP/2 ein, wenn sie verschlüsselt sind.
 
-### Debugging-Überlegungen
+### Debugging-Überlegungen {#debugging-considerations}
 
 Um zu überprüfen, ob der Traffic tatsächlich an der erwarteten dedizierten IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip)aufzurufen, der die aufrufende IP-Adresse zurückgibt.
