@@ -2,10 +2,10 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
+source-git-commit: c7100f53ce38cb8120074ec4eb9677fb7303d007
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 10%
 
 ---
 
@@ -29,7 +29,7 @@ Die Protokollierung auf AEM Anwendungsebene erfolgt über drei Protokolle:
 
 Beachten Sie, dass HTTP-Anforderungen, die vom Dispatcher-Cache der Veröffentlichungsstufe oder vom Upstream-CDN bereitgestellt werden, nicht in diesen Protokollen angezeigt werden.
 
-### AEM Java-Protokollierung {#aem-java-logging}
+## AEM Java-Protokollierung {#aem-java-logging}
 
 AEM als Cloud Service bietet Zugriff auf Java-Protokollanweisungen. Entwickler von Anwendungen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Anweisungen zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
 
@@ -91,3 +91,105 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, 
 </ul></td>
 </tr>
 </table>
+
+Während die Java-Protokollierung mehrere andere Stufen der Protokollierungsgranularität unterstützt, empfiehlt AEM Cloud Service die Verwendung der drei oben beschriebenen Stufen.
+
+AEM Protokollierungsstufen werden über die OSGi-Umgebung festgelegt, die wiederum Git zugewiesen und über Cloud Manager bereitgestellt wird, um als Cloud Service AEM zu werden. Aus diesem Grund sollten Protokollanweisungen konsistent und für die Umgebung-Typen gut bekannt sein, um sicherzustellen, dass die Protokolle, die über AEM verfügbar sind, auf der optimalen Protokollebene verfügbar sind, ohne dass eine erneute Bereitstellung der Anwendung mit der aktualisierten Protokollstufenkonfiguration erforderlich ist.
+
+### Protokollformat {#log-format}
+
+| Datum und Uhrzeit | AEM als Cloud Service-ID | Protokollebene | Thread | Java-Klasse | Protokollmeldung |
+|---|---|---|---|---|---|
+| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | Kein angegebener Genehmiger, standardmäßig [ Creative-Genehmiger-Benutzergruppe ] |
+
+**Beispielprotokollausgabe**
+
+`22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge`
+`22.06.2020 18:33:30.229 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [qtp501076283-1805] org.apache.sling.auth.core.impl.SlingAuthenticator getAnonymousResolver: Anonymous access not allowed by configuration - requesting credentials`
+`22.06.2020 18:33:30.370 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] org.apache.sling.i18n.impl.JcrResourceBundle Finished loading 0 entries for 'en_US' (basename: <none>) in 4ms`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring`
+
+### Konfigurationsprotokolle {#configuration-loggers}
+
+AEM Java-Protokolle werden als OSGi-Konfiguration definiert und somit für die Zielgruppe spezifische AEM als Cloud Service-Umgebung unter Verwendung von Ausführungsmodusordnern.
+
+Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete über OSGi-Konfigurationen für die Sling LogManager-Factory. Es gibt zwei unterstützte Konfigurationseigenschaften:
+
+| OSGi-Konfigurationseigenschaft | Beschreibung |
+|---|---|
+| org.apache.sling.commons.log.names | Die Java-Pakete, für die Protokollanweisungen gesammelt werden sollen. |
+| org.apache.sling.commons.log.level | Die Protokollierungsebene, auf der die Java-Pakete protokolliert werden sollen, angegeben von org.apache.sling.commons.log.names |
+
+Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM als Cloud Service führen.
+
+Die folgenden Beispiele zeigen die empfohlenen Protokollierungskonfigurationen (unter Verwendung des Platzhalter-Java-Pakets von `com.example`) für die drei AEM als Cloud Service-Umgebung.
+
+### Entwicklung {#development}
+
+/apps/my-app/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "debug"
+}
+```
+
+### Staging {#stage}
+
+/apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "warn"
+}
+```
+
+### Produktion {#productiomn}
+
+/apps/my-app/config.prod/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "error"
+}
+```
+
+## AEM HTTP-Anforderungsprotokoll {#aem-http-request-logging}
+
+AEM als HTTP-Anforderungsprotokoll eines Cloud Service bietet einen Einblick in die HTTP-Anforderungen an AEM und ihre HTTP-Antworten in der Reihenfolge der Zeit. Dieses Protokoll ist hilfreich, um die HTTP-Anfragen an AEM und die Reihenfolge zu verstehen, in der sie verarbeitet und beantwortet werden.
+
+Der Schlüssel zum Verständnis dieses Protokolls ist die Zuordnung der HTTP-Anforderungs- und -Antwortpaare zu ihren IDs, gekennzeichnet durch den numerischen Wert in den Klammern. Beachten Sie, dass bei Anforderungen und den zugehörigen Antworten häufig andere HTTP-Anforderungen und -Antworten im Protokoll interagiert werden.
+
+### Protokollformat {#http-request-logging-format}
+
+| Datum und Uhrzeit | Antrags-/Antwortseiten-ID |  | HTTP-Methode | URL | Protokoll | AEM als Cloud Service-Node-ID |
+|---|---|---|---|---|---|---|
+| 29/April/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataProfile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
+
+**Beispielprotokoll**
+
+```
+29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+```
+
+### Protokoll konfigurieren {#configuring-the-log}
+
+Das AEM HTTP-Anforderungsprotokoll ist in AEM als Cloud Service nicht konfigurierbar.
+
+## AEM HTTP Access Logging {#aem-http-access-logging}
+
+AEM als Cloud Service-HTTP-Zugriffsprotokollierung zeigt HTTP-Anforderungen in der Reihenfolge der Zeit an. Jeder Protokolleintrag stellt die HTTP-Anforderung dar, die auf AEM zugreift.
+
+Dieses Protokoll ist hilfreich, um schnell zu verstehen, welche HTTP-Anforderungen an AEM gesendet werden, ob sie erfolgreich sind, indem Sie sich den zugehörigen HTTP-Antwortstatuscode ansehen und wie lange die HTTP-Anforderung dauerte. Dieses Protokoll kann auch hilfreich sein, um die Aktivität eines bestimmten Benutzers zu debuggen, indem die Protokolleinträge nach Benutzern gefiltert werden.
+
+### Protokollformat {#access-log-format}
