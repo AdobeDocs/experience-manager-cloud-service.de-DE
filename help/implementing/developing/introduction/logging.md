@@ -2,10 +2,10 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 8%
+source-wordcount: '2053'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,9 @@ Die Protokollierung auf AEM Anwendungsebene erfolgt über drei Protokolle:
 1. HTTP-Anforderungsprotokolle, die Informationen zu HTTP-Anforderungen und deren Antworten AEM
 1. HTTP-Zugriffsprotokolle, in denen zusammengefasste Informationen und HTTP-Anforderungen, die von AEM bereitgestellt werden, protokolliert werden
 
-Beachten Sie, dass HTTP-Anforderungen, die vom Dispatcher-Cache der Veröffentlichungsstufe oder vom Upstream-CDN bereitgestellt werden, nicht in diesen Protokollen angezeigt werden.
+> [!NOTE]
+> 
+> HTTP-Anforderungen, die aus dem Dispatcher-Cache der Veröffentlichungsstufe oder dem Upstream-CDN bereitgestellt werden, werden in diesen Protokollen nicht übernommen.
 
 ## AEM Java-Protokollierung {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEM Protokollierungsstufen werden über die OSGi-Umgebung festgelegt, die wieder
 
 ### Protokollformat {#log-format}
 
-| Datum und Uhrzeit | AEM als Cloud Service-ID | Protokollebene | Thread | Java-Klasse | Protokollmeldung |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **Beispielprotokollausgabe**
 
 ```
@@ -110,6 +108,35 @@ AEM Protokollierungsstufen werden über die OSGi-Umgebung festgelegt, die wieder
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Datum und Uhrzeit</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM als Cloud Service-Node-ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>Protokollebene</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java-Klasse</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>Protokollmeldung</td>
+<td>Kein angegebener Genehmiger, Standard: [ Creative Genehmiger-Benutzergruppe ]</td>
+</tr>
+</tbody>
+</table>
 
 ### Konfigurationsprotokolle {#configuration-loggers}
 
@@ -167,10 +194,6 @@ Der Schlüssel zum Verständnis dieses Protokolls ist die Zuordnung der HTTP-Anf
 
 ### Protokollformat {#http-request-logging-format}
 
-| Datum und Uhrzeit | Antrags-/Antwortseiten-ID |  | HTTP-Methode | URL | Protokoll | AEM als Cloud Service-Node-ID |
-|---|---|---|---|---|---|---|
-| 29/April/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataProfile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **Beispielprotokoll**
 
 ```
@@ -182,6 +205,36 @@ Der Schlüssel zum Verständnis dieses Protokolls ist die Zuordnung der HTTP-Anf
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>Datum und Uhrzeit</td>
+<td>29/April/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>Antrags-/Antwortseiten-ID</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP-Methode</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataProfile/</td>
+</tr>
+<tr>
+<td>Protokoll</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM als Cloud Service-Node-ID</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### Protokoll konfigurieren {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher-Protokoll {#dispatcher-log}
 
-**Protokollformat**
+<!--de completat-->
 
+**Beispiel**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### Protokollformat {#dispatcher-log-format}
+
+### Konfigurieren des Dispatcher-Fehlerprotokolls {#configuring-the-dispatcher-error-log}
+
+Die Loglevels des Dispatchers werden durch die Variable DISP_LOG_LEVEL in der Datei definiert `conf.d/variables/global.var`.
+
+Sie kann auf &quot;Fehler&quot;, &quot;Warn&quot;, &quot;Info&quot;, &quot;Debug&quot;und &quot;Trace1&quot;mit dem Standardwert &quot;Warn&quot;eingestellt werden.
+
+Während die Protokollierung von Dispatchern mehrere andere Stufen der Protokollierungsgranularität unterstützt, empfiehlt die AEM als Cloud Service die Verwendung der unten beschriebenen Stufen.
+
+Um die Protokollierungsstufe pro Umgebung festzulegen, verwenden Sie den entsprechenden bedingten Zweig in der `global.var` Datei, wie nachfolgend beschrieben:
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Zugriff auf Protokolle {#how-to-access-logs}
+
+### Cloud-Umgebung {#cloud-environments}
+
+AEM als Cloud Service-Protokolle für Cloud-Dienste können entweder über die Cloud Manager-Oberfläche heruntergeladen oder über die Befehlszeile über die Adobe-E/A-Befehlszeilenschnittstelle protokolliert werden. Weitere Informationen finden Sie in der Protokolldokumentation [zu](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+
+### Lokales SDK {#local-sdk}
+
+AEM als Cloud Service-SDK stellt Protokolldateien zur Unterstützung der lokalen Entwicklung bereit.
+
+AEM Protokolle befinden sich im Ordner `crx-quickstart/logs`, in dem die folgenden Protokolle angezeigt werden können:
+
+* AEM Java-Protokoll: `error.log`
+* AEM HTTP-Anforderungsprotokoll: `request.log`
+* AEM HTTP-Zugriffsprotokoll: `access.log`
+
+Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, der den Dispatcher enthält. Informationen zum Beginn des Dispatchers finden Sie in der Dokumentation zum [Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) .
+
+So rufen Sie die Protokolle ab:
+
+1. Geben Sie in der Befehlszeile `docker ps` zur Liste Ihrer Container ein
+1. Um sich beim Container anzumelden, geben Sie &quot;`docker exec -it <container> /bin/sh`&quot;ein, wobei `<container>` die Dispatcher-Container-ID aus dem vorherigen Schritt ist
+1. Navigieren Sie zum Cache-Stammordner unter `/mnt/var/www/html`
+1. Die Protokolle befinden sich unter `/etc/httpd/logs`
+1. Inspect die Protokolle: Sie können unter dem Ordner XYZ aufgerufen werden, in dem die folgenden Protokolle angezeigt werden:
+   * Apache HTTPD Web server access log - `httpd_access.log`
+   * Apache HTTPD-Webserver-Fehlerprotokolle `httpd_error.log`
+   * Dispatcher-Protokolle - `dispatcher.log`
+
+Die Protokolle werden auch direkt an die Terminalausgabe gedruckt. Meistens sollten diese Protokolle DEBUG sein, was bei Ausführung von Docker durch Übergabe in der Debug-Ebene als Parameter erreicht werden kann. Beispiel:
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## Debugging von Produktion und Phase {#debugging-production-and-stage}
+
+Unter außergewöhnlichen Umständen müssen die Protokollebenen in Stage- oder Produktions-Umgebung geändert werden, um eine genauere Granularität zu erhalten.
+
+Dies ist zwar möglich, erfordert jedoch Änderungen an den Protokollebenen in den Konfigurationsdateien in Git von Warn und Fehler zu Debug und eine Bereitstellung, um diese Konfigurationsänderungen als Cloud Service mit den Umgebung zu AEM.
+
+Je nach Traffic und der Menge der von Debug geschriebenen Protokollanweisung kann dies zu Leistungsbeeinträchtigungen auf der Umgebung führen. Daher wird empfohlen, dass Änderungen an den Debugging-Stufen für die Phasen und die Produktion wie folgt vorgenommen werden:
+
+* Vorsichtig und nur, wenn absolut notwendig
+* auf die entsprechenden Ebenen zurückgeführt und so bald wie möglich wieder eingesetzt
+
+## Splunk Logs {#splunk-logs}
+
+Kunden mit Splunk-Konten können über das Kundensupport-Ticket beantragen, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokollierungsdaten entsprechen den Protokolldownloads von Cloud Manager, es ist jedoch ggf. sinnvoll, die im Splunk-Produkt verfügbaren Abfragen zu nutzen.
+
+Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der Netzwerk-E/A-Nutzung des Kunden betrachtet.
+
+### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
+
+In der Supportanfrage sollten Kunden Folgendes angeben:
+
+* Der Splunk-Host
+* Splunk-Index
+* Der Splunk-Port
+* Das Splunk-HEC-Token. Weitere Informationen finden Sie auf [dieser Seite](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
+
+Die oben genannten Eigenschaften sollten für jede relevante Programm/Umgebung-Typkombination angegeben werden.  Wenn ein Kunde z. B. Entwicklungs-, Staging- und Produktions-Umgebung wünschte, sollte er drei Informationssätze bereitstellen, wie nachfolgend beschrieben.
+
+> [!NOTE]
+>
+> Splunk-Weiterleitung für Sandbox-Programm-Umgebung wird nicht unterstützt.
+
+Nachfolgend finden Sie eine Beispielanforderung für den Kundensupport:
+
+Programm 123, Production Env
+
+* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-Index: acme_123prod (der Kunde kann die gewünschte Benennungsregel auswählen)
+* Splunk-Anschluss: 443
+* Splunk-HEC-Token: ABC 123
+
+Programm 123, Stage Env
+
+* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-Index: acme_123stage
+* Splunk-Anschluss: 443
+* Splunk-HEC-Token: ABC 123
+
+Programm 123, Dev Envs
+
+* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-Index: acme_123dev
+* Splunk-Anschluss: 443
+* Splunk-HEC-Token: ABC 123
+
+Es kann ausreichen, dass für jede Umgebung derselbe Splunk-Index verwendet wird. In diesem Fall kann entweder das `aem_env_type` Feld verwendet werden, um basierend auf den Werten dev, stage und prod zu unterscheiden. Wenn mehrere dev-Umgebung vorhanden sind, kann auch das `aem_env_id` Feld verwendet werden. Einige Unternehmen können einen eigenen Index für die Protokolle der Produktions-Umgebung wählen, wenn der zugehörige Index den Zugriff auf eine reduzierte Gruppe von Splunk-Benutzern einschränkt.
+
+Im Folgenden finden Sie einen Beispielprotokolleintrag:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
