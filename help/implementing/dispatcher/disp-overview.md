@@ -2,7 +2,7 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 100%
@@ -253,9 +253,9 @@ Bei Ausführung mit Ihrem Maven-Artefakt oder Ihrem `dispatcher/src`-Unterverzei
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Whitelist enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
@@ -528,7 +528,7 @@ Entfernen Sie den Ordner `conf.d/whitelists` und entfernen Sie `Include`-Anweisu
 
 ### Nicht mehr verfügbare Variable ersetzen
 
-In allen Virtual-Host-Dateien:
+In allen virtuellen Host-Dateien:
 
 Benennen Sie `PUBLISH_DOCROOT` in `DOCROOT` um.
 Entfernen Sie Abschnitte, die auf Variablen mit den Namen `DISP_ID`, `PUBLISH_FORCE_SSL` oder `PUBLISH_WHITELIST_ENABLED` verweisen.
@@ -664,7 +664,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### Status prüfen, indem Sie den Validator ausführen
 
-Führen Sie mit dem `dispatcher`-Unterbefehl den Adobe as a Cloud Service-Dispatcher-Validator in Ihrem Verzeichnis aus:
+Führen Sie mit dem `dispatcher`-Unterbefehl den AEM as a Cloud Service-Dispatcher-Validator in Ihrem Verzeichnis aus:
 
 ```
 $ validator dispatcher .
@@ -672,7 +672,7 @@ $ validator dispatcher .
 
 Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
-Wenn Fehler wegen einer nicht definierten Variable `PUBLISH_DOCROOT` auftreten, benennen Sie diese um in `DOCROOT`.
+Wenn Fehler wegen einer nicht definierten Variable `PUBLISH_DOCROOT` auftreten, benennen Sie diese in `DOCROOT` um.
 
 Weitere Informationen zu anderen Fehlern finden Sie im Abschnitt „Fehlerbehebung“ in der Dokumentation des Validator-Tools.
 
@@ -690,7 +690,7 @@ Dadurch wird die vollständige Konfiguration validiert und werden in `out` Berei
 
 ### Schritt 2: Dispatcher mit diesen Bereitstellungsinformationen in einem Docker-Image starten.
 
-Wenn Ihr AEM-Veröffentlichungs-Server auf Ihrem macOS-Computer ausgeführt wird und Port 4503 überwacht, können Sie Dispatcher wie folgt vor diesem Server starten:
+Wenn Ihr AEM-Veröffentlichungs-Server auf Ihrem macOS-Computer ausgeführt und Port 4503 überwacht wird, können Sie Dispatcher wie folgt vor diesem Server starten:
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
