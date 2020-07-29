@@ -2,10 +2,10 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 11%
+source-wordcount: '1077'
+ht-degree: 10%
 
 ---
 
@@ -51,7 +51,6 @@ Entwicklung</td>
 DEBUG</td>
 <td>
 Beschreibt, was in der Anwendung geschieht.<br>
-
 Wenn die DEBUG-Protokollierung aktiv ist, werden Anweisungen protokolliert, die ein klares Bild von den auftretenden Aktivitäten sowie allen wichtigen Parametern, die sich auf die Verarbeitung auswirken, vermitteln.</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### HTTP-Zugriffsprotokoll konfigurieren {#configuring-the-http-access-log}
+
+Das HTTP-Zugriffsprotokoll ist in AEM als Cloud Service nicht konfigurierbar.
+
+## Apache Web Server-/Dispatcher-Protokollierung {#dispatcher-logging}
+
+AEM als Cloud Service stellt drei Protokolle für die Apache-Webserver- und Dispatcher-Ebene im Bereich Veröffentlichen bereit:
+
+* Apache HTTPD Web Server Access-Protokoll
+* Apache HTTPD Web Server-Fehlerprotokoll
+* Dispatcher-Protokoll
+
+Beachten Sie, dass diese Protokolle nur für die Veröffentlichungsstufe verfügbar sind.
+
+Dieser Protokollsatz bietet Einblicke in HTTP-Anforderungen an die AEM als Cloud Service-Veröffentlichungsstufe, bevor diese Anforderungen die AEM Anwendung erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anforderungen an die Server der Veröffentlichungsstufe vom Apache HTTPD-Webserver und AEM Dispatcher im Cache verarbeitet werden und niemals die AEM Anwendung selbst erreichen. Daher gibt es keine Protokollanweisungen für diese Anforderungen in AEM Java-, Anforderungs- oder Zugriffsprotokollen.
