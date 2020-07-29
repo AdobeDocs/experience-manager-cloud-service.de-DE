@@ -2,10 +2,10 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 10%
+source-wordcount: '1304'
+ht-degree: 8%
 
 ---
 
@@ -195,41 +195,18 @@ Dieses Protokoll ist hilfreich, um schnell zu verstehen, welche HTTP-Anforderung
 
 ### Protokollformat {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM als Cloud Service-Node-ID</b></td>
-<td><b>IP-Adresse des Kunden</b></td>
-<td><b>User</b></td>
-<td><b>Datum und Uhrzeit</b></td>
-<td><b>Leer</b></td>
-<td><b>HTTP-Methode</b></td>
-<td><b>URL</b></td>
-<td><b>Protokoll</b></td>
-<td><b>Leer</b></td>
-<td><b>HTTP-Antwortstatus</b></td>
-<td><b>HTTP-Antwortzeit in Millisekunden</b></td>
-<td><b>Referrer</b></td>
-<td><b>Benutzeragent</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/April/2020:17:37:14 +000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| AEM als Cloud Service-Node-ID | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| IP-Adresse des Kunden | - |
+| User | myuser@adobe.com |
+| Datum und Uhrzeit | 30/April/2020:17:37:14 +000 |
+| HTTP-Methode | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| Protokoll | HTTP/1.1 |
+| HTTP-Antwortstatus | 200 |
+| HTTP-Anforderungszeit in Millisekunden | 1141 |
+| Referrer | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Benutzeragent | &quot;Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
 
 **Beispiel**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 Das HTTP-Zugriffsprotokoll ist in AEM als Cloud Service nicht konfigurierbar.
 
-## Apache Web Server-/Dispatcher-Protokollierung {#dispatcher-logging}
+## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
 AEM als Cloud Service stellt drei Protokolle für die Apache-Webserver- und Dispatcher-Ebene im Bereich Veröffentlichen bereit:
 
@@ -253,4 +230,74 @@ AEM als Cloud Service stellt drei Protokolle für die Apache-Webserver- und Disp
 
 Beachten Sie, dass diese Protokolle nur für die Veröffentlichungsstufe verfügbar sind.
 
-Dieser Protokollsatz bietet Einblicke in HTTP-Anforderungen an die AEM als Cloud Service-Veröffentlichungsstufe, bevor diese Anforderungen die AEM Anwendung erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anforderungen an die Server der Veröffentlichungsstufe vom Apache HTTPD-Webserver und AEM Dispatcher im Cache verarbeitet werden und niemals die AEM Anwendung selbst erreichen. Daher gibt es keine Protokollanweisungen für diese Anforderungen in AEM Java-, Anforderungs- oder Zugriffsprotokollen.
+Dieser Protokollsatz bietet Einblicke in HTTP-Anforderungen an die AEM als Cloud Service-Veröffentlichungsstufe, bevor diese Anforderungen die AEM Anwendung erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anforderungen an die Server der Veröffentlichungsstufe von Inhalten verarbeitet werden, die vom Apache HTTPD-Webserver und AEM Dispatcher zwischengespeichert werden und niemals die AEM Anwendung selbst erreichen. Daher gibt es keine Protokollanweisungen für diese Anforderungen in AEM Java-, Anforderungs- oder Zugriffsprotokollen.
+
+### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
+
+Das Apache HTTP-Webserver-Zugriffsprotokoll enthält Anweisungen für jede HTTP-Anforderung, die den Webserver/Dispatcher der Veröffentlichungsstufe erreicht. Beachten Sie, dass Anforderungen, die von einem Upstream-CDN bereitgestellt werden, in diesen Protokollen nicht berücksichtigt werden.
+
+Informationen zum Fehlerprotokollformat finden Sie in der [offiziellen Dokumentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog)von Apache.
+
+**Protokollformat**
+
+<!--blank until prod build finishes-->
+
+**Beispiel**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Apache HTTPD Web Server Access Log konfigurieren {#configuring-the-apache-httpd-webs-server-access-log}
+
+Dieses Protokoll ist in AEM als Cloud Service nicht konfigurierbar.
+
+## Apache HTTPD Web Server-Fehlerprotokoll {#apache-httpd-web-server-error-log}
+
+Das Apache HTTP-Webserver-Fehlerprotokoll enthält Anweisungen für jeden Fehler im Webserver/Dispatcher der Veröffentlichungsstufe.
+
+Informationen zum Fehlerprotokollformat finden Sie in der [offiziellen Dokumentation](https://httpd.apache.org/docs/2.4/logs.html#errorlog)von Apache.
+
+**Protokollformat**
+
+<!--placeholder-->
+
+**Beispiel**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Konfigurieren des Apache HTTPD Web Server-Fehlerprotokolls {#configuring-the-apache-httpd-web-server-error-log}
+
+Die Protokollierungsstufen mod_rewrite werden durch die Variable REWRITE_LOG_LEVEL in der Datei definiert `conf.d/variables/global.var`.
+
+Sie kann auf &quot;Fehler&quot;, &quot;Warn&quot;, &quot;Info&quot;, &quot;Debug&quot;und &quot;Trace1 - Trace8&quot;mit dem Standardwert &quot;Warn&quot;eingestellt werden. Zum Debugging Ihrer RewriteRules wird empfohlen, die Protokollebene auf Trace2 zu erhöhen.
+
+Weitere Informationen finden Sie in der Dokumentation [zum Modul](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite.
+
+Um die Protokollebene pro Umgebung festzulegen, verwenden Sie den entsprechenden bedingten Zweig in der Datei &quot;global.var&quot;, wie nachfolgend beschrieben:
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcher-Protokoll {#dispatcher-log}
+
+**Protokollformat**
+
