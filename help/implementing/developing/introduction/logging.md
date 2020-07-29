@@ -2,9 +2,9 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
+source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 10%
 
 ---
@@ -195,9 +195,41 @@ Dieses Protokoll ist hilfreich, um schnell zu verstehen, welche HTTP-Anforderung
 
 ### Protokollformat {#access-log-format}
 
-| AEM als Cloud Service-Node-ID | IP-Adresse des Kunden | User |  | Datum und Uhrzeit |  | HTTP-Methode | URL | Protokoll |  | HTTP-Antwort | HTTP-Anforderungszeit in Millisekunden | Referrer | Benutzeragent |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 | - | `myuser@adobe.com` | 30/April/2020:17:37:14 +000 | &quot; | GET | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |  | HTTP/1.1 | &quot; | 200 | 1141 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | &quot;Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
+<table>
+<tbody>
+<tr>
+<td><b>AEM als Cloud Service-Node-ID</b></td>
+<td><b>IP-Adresse des Kunden</b></td>
+<td><b>User</b></td>
+<td><b>Datum und Uhrzeit</b></td>
+<td><b>Leer</b></td>
+<td><b>HTTP-Methode</b></td>
+<td><b>URL</b></td>
+<td><b>Protokoll</b></td>
+<td><b>Leer</b></td>
+<td><b>HTTP-Antwortstatus</b></td>
+<td><b>HTTP-Antwortzeit in Millisekunden</b></td>
+<td><b>Referrer</b></td>
+<td><b>Benutzeragent</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>30/April/2020:17:37:14 +000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>"Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 
 **Beispiel**
 
