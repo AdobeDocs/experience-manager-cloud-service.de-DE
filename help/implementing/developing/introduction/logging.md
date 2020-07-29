@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
@@ -66,7 +66,6 @@ Staging</td>
 WARN</td>
 <td>
 Beschreibt Bedingungen, bei denen Fehler auftreten können.<br>
-
 Wenn die WARN-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Bedingungen hinweisen, die sich der Unter-Optimalität nähern.</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ Produktion</td>
 FEHLER</td>
 <td>
 Beschreibt Bedingungen, die auf einen Fehler hinweisen und gelöst werden müssen.<br>
-
 Wenn die ERROR-Protokollierung aktiv ist, werden nur Anweisungen protokolliert, die auf Fehler hinweisen. ERROR-Protokollerklärungen deuten auf ein schwerwiegendes Problem hin, das so bald wie möglich gelöst werden sollte.</td>
 <td>
 <ul>
