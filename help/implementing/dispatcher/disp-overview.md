@@ -2,7 +2,7 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 99%
@@ -372,7 +372,7 @@ Dadurch wird Dispatcher in einem Container gestartet, wobei sein Backend auf ein
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-Protokollebenen werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s&quot; definiert. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+Protokollebenen werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s&quot; definiert. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
