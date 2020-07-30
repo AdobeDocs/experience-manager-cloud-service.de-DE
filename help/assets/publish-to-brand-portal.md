@@ -2,9 +2,9 @@
 title: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal
 description: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -183,7 +183,7 @@ Sie können Sammlungen in Ihrer AEM Assets-Cloud-Instanz veröffentlichen oder d
 
 >[!NOTE]
 >
->Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher in der AEM-Assets-Instanz Inhaltsfragmente auswählen, ist die Aktion **[!UICONTROL In Brand Portal veröffentlichen]** nicht verfügbar.
+>Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher in der AEM Assets-Instanz Inhaltsfragmente auswählen, ist die Aktion **[!UICONTROL In Brand Portal veröffentlichen]** nicht verfügbar.
 >
 >Wenn Sammlungen, die Inhaltsfragmente enthalten, über AEM Assets in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente in der Brand Portal-Oberfläche repliziert.
 
