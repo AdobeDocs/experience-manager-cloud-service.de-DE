@@ -2,18 +2,17 @@
 title: Versionshinweise für Version 2020.3.0
 description: Versionshinweise für Version 2020.3.0
 translation-type: tm+mt
-source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '245'
+ht-degree: 94%
 
 ---
 
 
 # Versionshinweise für AEM as a Cloud Service 2020.3.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.3.0 beschrieben.
-
+Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager als Cloud Service 2020.3.0 erläutert.
 
 ## Veröffentlichungsdatum {#release-date}
 
