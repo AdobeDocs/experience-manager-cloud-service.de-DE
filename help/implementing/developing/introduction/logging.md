@@ -2,7 +2,7 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 8%
@@ -27,9 +27,9 @@ Die Protokollierung auf AEM Anwendungsebene erfolgt über drei Protokolle:
 1. HTTP-Anforderungsprotokolle, die Informationen zu HTTP-Anforderungen und deren Antworten AEM
 1. HTTP-Zugriffsprotokolle, in denen zusammengefasste Informationen und HTTP-Anforderungen, die von AEM bereitgestellt werden, protokolliert werden
 
-> [!NOTE]
-> 
-> HTTP-Anforderungen, die aus dem Dispatcher-Cache der Veröffentlichungsstufe oder dem Upstream-CDN bereitgestellt werden, werden in diesen Protokollen nicht übernommen.
+>[!NOTE]
+>
+>HTTP-Anforderungen, die aus dem Dispatcher-Cache der Veröffentlichungsstufe oder dem Upstream-CDN bereitgestellt werden, werden in diesen Protokollen nicht übernommen.
 
 ## AEM Java-Protokollierung {#aem-java-logging}
 
@@ -595,9 +595,9 @@ In der Supportanfrage sollten Kunden Folgendes angeben:
 
 Die oben genannten Eigenschaften sollten für jede relevante Programm/Umgebung-Typkombination angegeben werden.  Wenn ein Kunde z. B. Entwicklungs-, Staging- und Produktions-Umgebung wünschte, sollte er drei Informationssätze bereitstellen, wie nachfolgend beschrieben.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Splunk-Weiterleitung für Sandbox-Programm-Umgebung wird nicht unterstützt.
+>Splunk-Weiterleitung für Sandbox-Programm-Umgebung wird nicht unterstützt.
 
 Nachfolgend finden Sie eine Beispielanforderung für den Kundensupport:
 
