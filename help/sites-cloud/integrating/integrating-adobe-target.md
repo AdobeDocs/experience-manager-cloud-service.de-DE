@@ -2,10 +2,10 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 10%
+source-wordcount: '857'
+ht-degree: 9%
 
 ---
 
@@ -17,18 +17,18 @@ Als Teil von Adobe Marketing Cloud ermöglicht Adobe Target Ihnen die Steigerung
 * Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM als Cloud Service zu erstellen (IMS-Konfiguration erforderlich).
 * Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Die Integration mit Launch ist für das Erlebnis-Targeting erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
+Adobe Launch ist erforderlich für die Verwaltung clientseitiger Eigenschaften für Analytics und Zielgruppe auf AEM Seiten (JS-Bibliotheken/Tags). Allerdings ist die Integration mit Launch für &quot;Erlebnis-Targeting&quot;erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
 
 >[!NOTE]
 >
->Kunden mit Adobe Experience Manager as a Cloud Service, die kein Target-Konto haben, können Zugriff auf Target Foundation Pack für Experience Cloud anfordern.  Das Foundation Pack bietet eine eingeschränkte Verwendung von Target.
+>Kunden mit Adobe Experience Manager as a Cloud Service, die kein Target-Konto haben, können Zugriff auf Target Foundation Pack für Experience Cloud anfordern. Das Foundation Pack bietet eine eingeschränkte Verwendung von Target.
 
 ## Erstellen der Adobe Target-Konfiguration {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
    ![](assets/cloudservice.png "NavigationNavigation")
 2. Wählen Sie **Adobe Target**.
-3. Klicken Sie auf die Schaltfläche **Erstellen.**
+3. Select the **Create** button.
    ![](assets/tenant.png "CreateCreate")
 4. Füllen Sie die Details aus (siehe unten) und wählen Sie **Verbinden**.
    ![](assets/open_screen.png "ConnectConnect")
@@ -59,10 +59,6 @@ AEM Angebot und die Integration mit Experience Platform Launch sind sofort einse
 >
 >Vorhandene (ältere) Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-Benutzeroberfläche konfiguriert werden. Es wird empfohlen, die Variablenzuordnungskonfigurationen in Launch neu zu erstellen.
 
->[!NOTE]
->
->Vorhandene (ältere) Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-Benutzeroberfläche konfiguriert werden. Es wird empfohlen, die Variablenzuordnungskonfigurationen in Launch neu zu erstellen.
-
 Als allgemeine Übersicht werden die folgenden Schritte zur Integration beschrieben:
 
 1. Eigenschaft &quot;Launch&quot;erstellen
@@ -83,7 +79,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Hinzufügen der erforderlichen Erweiterungen {#add-extension}
 
-&quot;Erweiterungen&quot;ist der Container, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen mit der Zielgruppe JavaScript SDK für das moderne Web at.js. Sie müssen sowohl die **Adobe Target** - als auch die **Adobe ContextHub** -Erweiterungen hinzufügen.
+**Erweiterungen** sind der Container, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen, indem das JavaScript-SDK der Zielgruppe für das moderne Web at.js verwendet wird. Sie müssen sowohl die **Adobe Target** - als auch die **Adobe ContextHub** -Erweiterungen hinzufügen.
 
 1. Wählen Sie die Option &quot;Erweiterungskatalog&quot;und suchen Sie im Filter nach Zielgruppen.
 2. Wählen Sie &quot; **Adobe Target** at.js&quot;und klicken Sie auf die Option &quot;Installieren&quot;.
@@ -95,7 +91,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Erstellen eines Datenelements {#data-element}
 
-Datenelemente sind die Platzhalter, denen Sie kontextbezogene Hub-Parameter zuordnen können.
+**Datenelemente** sind die Platzhalter, denen Sie kontextbezogene Hub-Parameter zuordnen können.
 
 1. Wählen Sie **Datenelemente**.
 2. Wählen Sie **Hinzufügen Datenelement**.
@@ -105,7 +101,7 @@ Datenelemente sind die Platzhalter, denen Sie kontextbezogene Hub-Parameter zuor
 
 ### Erstellen einer Seitenregel {#page-rule}
 
-In der Regel definieren und ordnen wir eine Folge von Aktionen, die auf der Site ausgeführt werden, um Targeting zu erreichen.
+In der **Regel** definieren und ordnen wir eine Folge von Aktionen, die auf der Site ausgeführt werden, um Targeting zu erreichen.
 
 1. Hinzufügen eine Reihe von Aktionen, wie im Screenshot dargestellt.
    ![Aktionen](assets/rules.png "Aktionen")
