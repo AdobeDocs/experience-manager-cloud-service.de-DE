@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Inhaltsfragmente ermöglichen:
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite       {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite         {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 2. Fügen Sie die **Inhaltsfragmentkomponente** hinzu; entweder aus dem **Komponenten-Browser** oder mit **Neue Komponente einfügen**.
@@ -82,7 +82,7 @@ Inhaltsfragmente ermöglichen:
 
 >[!NOTE]
 >
->Siehe auch [Kernkomponenten, Inhaltsfragment-Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
+>Siehe auch [Kernkomponenten, die Inhaltsfragment-Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter auswählen, einschließlich:
 
@@ -106,7 +106,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
    * **HTML-ID**-Attribut, das auf die Komponente angewandt wird.
 
-### Schnelle Verbindung zum Fragmenteditor       {#quick-connection-to-fragment-editor}
+### Schnelle Verbindung zum Fragmenteditor         {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
@@ -114,7 +114,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 >
 >Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-### Hinzufügen von Zwischeninhalten       {#adding-in-between-content}
+### Hinzufügen von Zwischeninhalten         {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -136,11 +136,11 @@ Bei Zwischeninhalten können Sie:
 >
 >Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsstufe benötigen, können Sie das Bild dem Fragment hinzufügen (als [Mischmedienfragment](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
->Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Fragmenteditor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
@@ -151,9 +151,9 @@ Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
 
-### Verwenden von zugehörigen Inhalten       {#using-associated-content}
+### Verwenden von zugehörigen Inhalten         {#using-associated-content}
 
-Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Content Fragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragmente mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 
