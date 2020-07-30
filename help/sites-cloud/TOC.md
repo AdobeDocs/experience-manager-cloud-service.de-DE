@@ -3,7 +3,7 @@ sub-product: Inhaltserstellung in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -73,5 +73,5 @@ ht-degree: 100%
       + [Erstellen und Verwalten von Angeboten](authoring/personalization/offers.md)
       + [Grundlegendes zur Segmentierung](authoring/personalization/segmentation.md)
 + Integration mit AEM as a Cloud Service {#integrations}
-   + [Integrieren mit Adobe Analytics](integrating/adobe-analytics.md)
-   + [Integration mit Adobe Target](integrating/adobe-target.md)
+   + [Integrieren mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
+   + [Integration mit Adobe Target](integrating/integrating-adobe-target.md)
