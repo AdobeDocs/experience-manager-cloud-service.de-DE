@@ -2,7 +2,7 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 9%
@@ -26,12 +26,12 @@ Adobe Launch ist erforderlich für die Verwaltung clientseitiger Eigenschaften f
 ## Erstellen der Adobe Target-Konfiguration {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-   ![](assets/cloudservice.png "NavigationNavigation")
+   ![](assets/cloudservice1.png "NavigationNavigation")
 2. Wählen Sie **Adobe Target**.
 3. Select the **Create** button.
-   ![](assets/tenant.png "CreateCreate")
+   ![](assets/tenant1.png "CreateCreate")
 4. Füllen Sie die Details aus (siehe unten) und wählen Sie **Verbinden**.
-   ![](assets/open_screen.png "ConnectConnect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### IMS-Konfiguration
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der Zielgruppe zu bearbeiten:
 1. Wählen Sie eine vorhandene Konfiguration aus und klicken Sie auf **Eigenschaften**.
 2. Bearbeiten Sie die Eigenschaften.
 3. Select **Re-connect to Adobe Target**.
-   ![Erneutes](assets/edit_config_page.png "Verbinden")
+   ![Erneutes](assets/edit_config_page1.png "Verbinden")
 4. Wählen Sie **Speichern und schließen** aus.
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
@@ -75,7 +75,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 2. Geben Sie einen Namen für Ihre Eigenschaft ein.
 3. Als Domäne geben Sie den IP/Host ein, auf dem Sie die Startbibliothek laden möchten.
 4. Klicken Sie auf die Schaltfläche **Speichern** .
-   ![](assets/properties_newproperty.png "LaunchpropertyLaunchproperty")
+   ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### Hinzufügen der erforderlichen Erweiterungen {#add-extension}
 
@@ -83,10 +83,10 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 1. Wählen Sie die Option &quot;Erweiterungskatalog&quot;und suchen Sie im Filter nach Zielgruppen.
 2. Wählen Sie &quot; **Adobe Target** at.js&quot;und klicken Sie auf die Option &quot;Installieren&quot;.
-   ![Zielgruppe](assets/search_ext.png "SearchTarget Search")
+   ![Zielgruppe](assets/search_ext1.png "SearchTarget Search")
 3. Select the **Configure** button. Beachten Sie das Konfigurationsfenster mit den importierten Kontoanmeldeinformationen und die at.js-Zielgruppe für diese Erweiterung.
 4. Wählen Sie &quot; **Speichern** &quot;, um die Erweiterung des Zieldatensatzes der Eigenschaft &quot;Start&quot;hinzuzufügen. Sie sollten die Erweiterung des Zieldatensatzes unter der Liste **Installierte Erweiterungen** anzeigen können.
-   ![Save](assets/configure_extension.png "ExtensionSave Extension")
+   ![Save](assets/configure_extension1.png "ExtensionSave Extension")
 5. Wiederholen Sie die obigen Schritte, um nach der **Adobe ContextHub** zu suchen und sie zu installieren (dies ist für die Integration mit Kontextteilparametern erforderlich, basierend darauf, auf welchen Targeting durchgeführt wird).
 
 ### Erstellen eines Datenelements {#data-element}
@@ -97,16 +97,16 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 2. Wählen Sie **Hinzufügen Datenelement**.
 3. Geben Sie den Namen des Datenelements an und ordnen Sie es einem Kontextknoten-Parameter zu.
 4. select **Save**.
-   ![Data](assets/data_elem.png "ElementData-Element")
+   ![Data](assets/data_elem1.png "ElementData-Element")
 
 ### Erstellen einer Seitenregel {#page-rule}
 
 In der **Regel** definieren und ordnen wir eine Folge von Aktionen, die auf der Site ausgeführt werden, um Targeting zu erreichen.
 
 1. Hinzufügen eine Reihe von Aktionen, wie im Screenshot dargestellt.
-   ![Aktionen](assets/rules.png "Aktionen")
+   ![Aktionen](assets/rules1.png "Aktionen")
 2. Fügen Sie in Hinzufügen &quot;Params to All Mboxes&quot;dem Parameter, der im mbox-Aufruf gesendet wird, das zuvor konfigurierte Datenelement hinzu (siehe Datenelement oben).
-   ![](assets/map_data.png "MboxActions")
+   ![](assets/map_data1.png "MboxActions")
 
 ### Erstellen und Veröffentlichen {#build-publish}
 
