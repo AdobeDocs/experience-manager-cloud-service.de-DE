@@ -1,17 +1,17 @@
 ---
 title: Sling-Schnellübersicht
 description: Ein einfache Sling-Referenz
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '30'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 
-# Sling-Schnellübersicht {#sling-cheatsheet}
+# Sling-Schnellübersicht  {#sling-cheatsheet}
 
-![Die Auflösung des Apache Sling-Skripts.](assets/sling-cheatsheet-01.png)
+![Verstehen der Auflösung des Apache Sling-Skripts.](assets/sling-cheatsheet-01.png)
 
-![Verwenden des SlingPostServlet - dies ist der Standardhandler für Ihre POST-Anforderungen; es kann fast alles tun.](assets/sling-cheatsheet-02.png)
+![Das SlingPostServlet verwenden – dies ist der Standard-Handler für Ihre POST-Anforderungen. Er kann fast alles erledigen.](assets/sling-cheatsheet-02.png)
