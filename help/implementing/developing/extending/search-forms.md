@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum         Bereich</td>
+   <td>Datum           Bereich</td>
    <td>Suche nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -224,7 +224,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet     Filter</td>
+   <td>Ausgeblendet       Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -269,7 +269,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Optionen   </td>
+   <td>Optionen     </td>
    <td><p>Die Optionen sind vom Benutzer erstellte Inhaltsknoten.</p> <p>Weitere Informationen finden Sie unter <a href="#addinganoptionspredicate">Hinzufügen eines Optionsprädikats</a>.</p> </td>
    <td>
     <ul>
@@ -282,7 +282,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Optionen    Eigenschaft</td>
+   <td>Optionen      Eigenschaft</td>
    <td>Suche nach einer oder mehreren Eigenschaften der Option.</td>
    <td>
     <ul>
@@ -295,7 +295,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite     Status</td>
+   <td>Seite       Status</td>
    <td>Filtern von Seiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -306,7 +306,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad       </td>
+   <td>Pfad         </td>
    <td>Filtern nach einem bestimmten Pfad. Sie können mehrere Pfade als Optionen angeben.</td>
    <td>
     <ul>
@@ -316,7 +316,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad        Browser</td>
+   <td>Pfad          Browser</td>
    <td>Stellen Sie einen Pfad-Browser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>
@@ -327,7 +327,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Pfad    Ausgeblendet</td>
+   <td>Pfad      Ausgeblendet</td>
    <td>Ein Filter für den Pfad, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -547,8 +547,9 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Options-Node-Pfad** identisch mit dem 
-**Optionspfad**, nur dieser befindet sich im Feld &quot;Allgemeine Vorhersage&quot;, der andere ist spezifisch für Assets.
+* **Options-Knotenpfad** 
+Identisch mit dem 
+**Optionspfad**, nur dass dieser sich im Feld „Allgemeine Vorhersage“ befindet, der andere ist spezifisch für Assets.
 
 * **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
@@ -611,7 +612,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds     {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds       {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -638,7 +639,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten     {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten       {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
