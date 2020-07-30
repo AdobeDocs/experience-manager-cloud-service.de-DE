@@ -1,9 +1,9 @@
 ---
 title: Sites in Adobe Experience Manager as a Cloud Service
 description: Sites in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Sites in Experience Ma
 * [Verwenden von Experience Fragments](authoring/fundamentals/experience-fragments.md)
 * [Verwenden von Launches](authoring/launches/overview.md)
 * [Personalisieren von Inhalten mit ContextHub](authoring/personalization/contexthub.md)
-* [Integrieren mit Adobe Analytics](integrating/adobe-analytics.md)
-* [Integrieren mit Adobe Target](integrating/adobe-target.md)
+* [Integrieren mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [Integrieren mit Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
