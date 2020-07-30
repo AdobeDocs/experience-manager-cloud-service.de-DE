@@ -1,9 +1,9 @@
 ---
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1926'
 ht-degree: 100%
 
@@ -236,7 +236,7 @@ Im folgenden Screenshot sehen Sie beispielsweise zwei verfügbare Umgebungen: *d
 
 ![ACL3](/help/security/assets/ims19.png)
 
-Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des entsprechenden Cloud Services-Produkts hinzugefügt werden.
+Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des entsprechenden Cloud Service-Produkts hinzugefügt werden.
 
 Jede Autoreninstanz verfügt über einen AEM-Administrator und ein AEM-Benutzerprofil und jede Veröffentlichungsinstanz über ein AEM-Profil. Sie können bei Bedarf weitere Profile hinzufügen.
 
