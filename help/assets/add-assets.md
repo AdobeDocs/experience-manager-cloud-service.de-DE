@@ -2,10 +2,10 @@
 title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 77%
+source-wordcount: '1324'
+ht-degree: 76%
 
 ---
 
@@ -63,7 +63,6 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf d
 
    If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,7 +72,6 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie sie entweder auf d
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
-
 
 1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
@@ -154,7 +152,7 @@ Um eine zusätzliche Verarbeitung der hochgeladenen Assets zu ermöglichen, kön
 Die folgenden Profile sind verfügbar:
 
 * Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
-* Mit [Verarbeitungsprofilen](asset-microservices-configure-and-use.md#processing-profiles) können Sie neben den Standarddarstellungen auch die Darstellungsverarbeitung anwenden und Ausgabeformate generieren
+* [Mit Profilen](asset-microservices-configure-and-use.md) zur Verarbeitung können Sie mehr Darstellungen generieren, als standardmäßig möglich sind.
 
 Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
