@@ -1,9 +1,9 @@
 ---
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: 'Einführung in die Architektur von Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1679'
 ht-degree: 100%
 
@@ -148,7 +148,7 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
 ## Bereitstellungsarchitektur {#deployment-architecture}
 
-Cloud Manager verwaltet alle Aktualisierungen der Instanzen von AEM as a Cloud Service. Er ist obligatorisch, da nur auf diese Weise die Kundenanwendung erstellt, getestet und bereitgestellt werden kann, und zwar sowohl für die Autoren- als auch für die Veröffentlichungsstufe. Diese Updates können von Adobe, wenn eine neue Version von AEM Cloud Services verfügbar ist, oder vom Kunden ausgelöst werden, wenn eine neue Version seiner Anwendung verfügbar ist.
+Cloud Manager verwaltet alle Aktualisierungen der Instanzen von AEM as a Cloud Service. Er ist obligatorisch, da nur auf diese Weise die Kundenanwendung erstellt, getestet und bereitgestellt werden kann, und zwar sowohl für die Autoren- als auch für die Veröffentlichungsstufe. Diese Updates können von Adobe, wenn eine neue Version von AEM Cloud Service verfügbar ist, oder vom Kunden ausgelöst werden, wenn eine neue Version seiner Anwendung verfügbar ist.
 
 Technisch wird dies aufgrund des Konzepts einer Bereitstellungs-Pipeline implementiert, die an jede Umgebung innerhalb eines Programms gekoppelt ist. Wenn eine Cloud Manager-Pipeline ausgeführt wird, wird eine neue Version der Kundenanwendung erstellt, sowohl für die Autorenstufe als auch für die Veröffentlichungsstufe. Dies wird erreicht, indem die neuesten Kundenpakete mit dem neuesten Adobe-Grundbild kombiniert werden. Wenn die neuen Bilder erfolgreich erstellt und getestet wurden, automatisiert Cloud Manager die Umstellung auf die neueste Version des Bildes vollständig, indem alle Dienstknoten mithilfe eines kontinuierlichen Aktualisierungsmusters aktualisiert werden. Dies führt zu keiner Ausfallzeit, weder für den Autoren- noch für den Veröffentlichungsdienst.
 
