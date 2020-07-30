@@ -1,11 +1,11 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -189,6 +189,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![Auswählen einer Vorlage für eine neue Seite](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
@@ -196,6 +197,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
 
    * Verwenden Sie **Zurück**, um zur Vorlagenauswahl zurückzukehren.
+
    Die Schlüsselfelder sind:
 
    * **Titel**:
@@ -206,6 +208,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+
    >[!TIP]
    >
    >Weitere Informationen finden Sie unter [Benennungskonventionen für Seiten](#page-naming-conventions).
@@ -240,6 +243,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Bearbeiten** aus:
 
    ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/edit.png)
@@ -250,7 +254,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite     {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite       {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -259,6 +263,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
@@ -276,6 +281,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    1. Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
    1. Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
+
    >[!NOTE]
    >
    >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
@@ -295,6 +301,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Verschieben** aus:
 
    ![Schaltfläche „Verschieben“](/help/sites-cloud/authoring/assets/move.png)
@@ -305,6 +312,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![Verschieben und Umbenennen einer Seite](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
@@ -320,6 +328,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
+
    >[!NOTE]
    >
    >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben/umbenennen, als Ziel ausgewählt.
@@ -363,24 +372,24 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
-Normalerweise wird sofort eine Aktion zum Verschieben oder Umbenennen von Seiten durchgeführt. Dies gilt als synchrone Verarbeitung, und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
+Normalerweise wird eine Aktion zum Verschieben oder Umbenennen von Seiten sofort ausgeführt. Dies gilt als synchrone Verarbeitung und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
 
-Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer das Authoring in der Benutzeroberfläche fortsetzen kann, ohne dass die Aktion zum Verschieben oder Umbenennen der Seite behindert wird.
+Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Inhaltserstellung in der Benutzeroberfläche fortsetzen kann, ohne von der Aktion zum Verschieben oder Umbenennen der Seite aufgehalten zu werden.
 
 * Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
-* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang durchgeführt.
-* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang durchgeführt.
-   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll
-      * **Jetzt** beginnt die Ausführung des asynchronen Auftrags sofort.
-      * **Später** kann der Benutzer definieren, wann der asynchrone Auftrag Beginn wird.
+* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang ausgeführt.
+* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang ausgeführt.
+   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
+      * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
+      * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
-         ![Asynchroner Seitenwechsel](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+         ![Asynchrone Seitenverschiebung](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im [**Async-Auftragsstatus **-Dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)unter** Globale Navigation **->** Tools **->** Vorgänge **->** Aufträge überprüft werden.**
+Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)unter** Globale Navigation **>** Tools **>** Vorgänge **>** Aufträge **überprüft werden.
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) im Operations-Benutzerhandbuch.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/-umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) im Benutzerhandbuch für den Betrieb.
 
 ### Löschen einer Seite {#deleting-a-page}
 
