@@ -2,9 +2,9 @@
 title: Integrieren mit Adobe Analytics
 description: 'Integrieren mit Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 18%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 18%
 Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration erfordert:
 
 * Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM als Cloud Service zu erstellen.
-* Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Launch].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration in AEM als Cloud Service keine Frameworkunterstützung bereitgestellt. Stattdessen erfolgt sie jetzt über Adobe Launch, das defacto Tool zur Instrumentierung einer AEM Site mit Analytics-Funktionen (JS-Bibliotheken) ist. Beim Start der Adobe wird eine Eigenschaft erstellt, bei der die Adobe Analytics-Erweiterung konfiguriert werden kann und Regeln zum Senden von Daten an Adobe Analytics erstellt werden. Adobe Launch hat die Aufgabe der von SiteCatalyst bereitgestellten Analytics ersetzt.
+Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration in AEM als Cloud Service keine Frameworkunterstützung bereitgestellt. Stattdessen erfolgt sie jetzt über Adobe Launch, das defacto-Tool zur Instrumentierung einer AEM Site mit Analytics-Funktionen (JS-Bibliotheken). Beim Start der Adobe wird eine Eigenschaft erstellt, bei der die Adobe Analytics-Erweiterung konfiguriert werden kann und Regeln zum Senden von Daten an Adobe Analytics erstellt werden. Adobe Launch hat die Aufgabe der von SiteCatalyst bereitgestellten Analytics ersetzt.
 
 >[!NOTE]
 >
->Kunden mit Adobe Experience Manager as a Cloud Service, die kein Analytics-Konto haben, können Zugriff auf Analytics Foundation Pack für Experience Cloud anfordern.  Dieses Foundation Pack bietet eine eingeschränkte Verwendung von Analytics.
+>Kunden mit Adobe Experience Manager as a Cloud Service, die kein Analytics-Konto haben, können Zugriff auf Analytics Foundation Pack für Experience Cloud anfordern. Dieses Foundation Pack bietet eine eingeschränkte Verwendung von Analytics.
 
 ## Erstellen der Analytics-Konfiguration {#analytics-configuration}
 
@@ -33,7 +33,7 @@ Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration 
 
 ### Configuration Parameters {#configuration-parameters}
 
-Die Konfigurationsfelder im Fenster &quot;Adobe Analytics Configuration&quot;lauten wie folgt:
+Die Konfigurationsfelder im Fenster &quot;Adobe Analytics-Konfiguration&quot;sind:
 
 ![Konfigurationsparameter](assets/properties_field.png "Konfigurationsparameter")
 
@@ -52,7 +52,7 @@ Um eine Touch-UI-Konfiguration auf eine Site anzuwenden, gehen Sie zu: **Sites**
 
 ## Integrieren von Adobe Analytics auf AEM Sites mithilfe von Adobe Launch
 
-Adobe Analytics kann als Erweiterung in der Eigenschaft &quot;Start&quot;hinzugefügt werden. Es können Regeln definiert werden, die die Zuordnung und den anschließenden Aufruf an Adobe Analytics durchführen.
+Adobe Analytics kann als Erweiterung in der Eigenschaft &quot;Start&quot;hinzugefügt werden. Es können Regeln definiert werden, die die Zuordnung und den anschließenden Aufruf an Adobe Analytics durchführen:
 
 * In [diesem Video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) erfahren Sie, wie Sie die Analytics-Erweiterung in Launch für eine einfache Site konfigurieren.
 
@@ -60,7 +60,7 @@ Adobe Analytics kann als Erweiterung in der Eigenschaft &quot;Start&quot;hinzuge
 
 >[!NOTE]
 >
->Vorhandene Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-Benutzeroberfläche konfiguriert werden. Es wird empfohlen, die Variablenzuordnungskonfigurationen in Launch neu zu erstellen.
+>Vorhandene (ältere) Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-Benutzeroberfläche konfiguriert werden. Es wird empfohlen, die Variablenzuordnungskonfigurationen in Launch neu zu erstellen.
 
 >[!NOTE]
 >
