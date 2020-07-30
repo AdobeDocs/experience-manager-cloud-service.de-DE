@@ -3,11 +3,11 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Manager Assets vertraut. Erfahren Sie, wie Sie Sammlungen verwalten, bearbeiten und mit anderen Benutzern teilen können.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2401'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -222,11 +222,11 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge     {#saved-searches}
+## Gespeicherte Suchvorgänge       {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchvorgänge, die Sie speichern können, und die gespeicherten Suchvorgänge, die in der Liste angezeigt werden, sind unbegrenzt.
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt. 
 
 >[!NOTE]
 >
