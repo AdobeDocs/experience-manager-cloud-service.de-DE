@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von OSGI für AEM as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2691'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
