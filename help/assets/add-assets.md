@@ -14,7 +14,7 @@ ht-degree: 77%
 
 [!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
-Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripten, die von Kunden erstellt werden, und automatisierte Erfassungsintegrationen, die als Experience Manager-Erweiterungen hinzugefügt werden.
+Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients, wie Adobe Asset Link oder Experience Manager Desktop-App, Upload- und Erfassungsskripte, die von Kunden erstellt werden, und automatisierte Erfassungsintegrationen, die als Experience Manager-Erweiterungen hinzugefügt werden.
 
 Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Erfassung von Assets mithilfe von Experience Manager-APIs und SDKs beschreiben.
 
@@ -24,7 +24,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 
 >[!NOTE]
 >
->Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie der Benutzeroberfläche des Experience Managers, Adobe Asset Link, der Desktop-App des Experience Managers unterstützt und ist somit für Endbenutzer transparent.
+>Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients unterstützt, wie z. B. Experience Manager-Benutzeroberfläche, Adobe-Asset-Link, Experience Manager-Desktop-App und somit für Endbenutzer transparent.
 >
 >Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
 
