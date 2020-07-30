@@ -1,18 +1,18 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
-translation-type: ht
-source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+workflow-type: tm+mt
+source-wordcount: '1948'
+ht-degree: 99%
 
 ---
 
 
 # Versionshinweise für AEM as a Cloud Service 2020.6.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.6.0 beschrieben.
+Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager als Cloud Service 2020.6.0 erläutert.
 
 ## Veröffentlichungsdatum {#release-date}
 
