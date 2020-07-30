@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 
    In der folgenden Tabelle sind die Umgebungstypen und ihre Attribute zusammengefasst:
 
-   | Name | AEM Author-Ebene | AEM Publish-Ebene | Benutzer kann erstellen | Benutzer kann löschen | Pipeline, die der Umgebung zugeordnet werden kann |
+   | Name | Autorenebene | AEM Publish-Ebene | Benutzer kann erstellen | Benutzer kann löschen | Pipeline, die der Umgebung zugeordnet werden kann |
    |--- |--- |--- |--- |---|---|
    | Produktion | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
    | Staging | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
@@ -74,12 +74,12 @@ Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Program
 ![](assets/update-environ-1.png)
 
 
-Die **Option &quot;Aktualisieren** &quot;ist auf der **Umgebung** -Karte verfügbar.
-This option is also available, if you click on **Details** from the **Environments** card. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie die Umgebung &quot;Entwicklung&quot;ausgewählt haben, klicken Sie auf **...** und wählen Sie **Aktualisieren**, wie in der folgenden Abbildung dargestellt:
+Die Option **Aktualisieren** ist auf der Karte **Umgebungen** verfügbar.
+Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Aktualisieren**, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/environments-screen-update.png)
 
-Durch Auswahl dieser Option kann ein Deployment Manager die mit dieser Umgebung verknüpfte Pipeline auf die neueste Version aktualisieren und dann die Pipeline ausführen.
+Durch Auswahl dieser Option kann ein Bereitstellungs-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
 
 Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die Pipeline auszuführen.
 
@@ -87,11 +87,11 @@ Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die 
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
 
-Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar. Klicken Sie auf **...** für eine Development-Umgebung, die Sie löschen möchten.
+Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar. Klicken Sie auf **...** für eine Entwicklungsumgebung, die Sie löschen möchten.
 
 ![](assets/environ-delete.png)
 
-Die Option zum Löschen ist auch verfügbar, wenn Sie auf **Details** auf der Karte **Umgebung** klicken. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie die Umgebung &quot;Entwicklung&quot;ausgewählt haben, klicken Sie auf **...** und wählen Sie **Löschen**, wie in der folgenden Abbildung dargestellt:
+Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Löschen**, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/environ-delete-2.png)
 
@@ -110,5 +110,5 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 
 ![](assets/environ-dev-console.png)
 
-This option is also available, if you click on **Details** from the **Environments** card. Die Seite &quot; **Umgebung** &quot;wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
+Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
 
