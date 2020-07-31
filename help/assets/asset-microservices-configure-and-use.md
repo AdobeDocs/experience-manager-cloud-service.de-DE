@@ -3,10 +3,10 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 56%
+source-wordcount: '2208'
+ht-degree: 57%
 
 ---
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um ein Profil für die Standardverarbeitung zu erstelle
    * Qualität in Prozent jeder JPEG-Darstellung.
    * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
-![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -106,23 +106,22 @@ Das folgende Video zeigt den Nutzen und die Verwendung von Standard-Profil.
 
 ## Benutzerspezifische Profil- und Anwendungsfälle {#custom-config}
 
-**TBD-Elemente**:
+<!-- **TBD items**:
 
-* Generelles Cross-Linking mit dem Erweiterbarkeitsinhalt.
-* Erwähnung, wie die URL des Workers abgerufen wird. Worker-URL für Dev-, Stage- und Prod-Umgebung.
-* Erwähnungszuordnung von Dienstparametern. Link zum Berechnen des Dienstartikels.
-* Überprüfen Sie den Fluss aus der Perspektive freigegeben in Jira Ticket.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 Einige komplexe Anwendungsfälle für die Asset-Verarbeitung können nicht mit Standardkonfigurationen durchgeführt werden, da die Anforderungen der Organisationen unterschiedlich sind. Angebot [!DNL Asset Compute Service] zur Adobe solcher Anwendungsfälle. Es handelt sich um einen skalierbaren und erweiterbaren Dienst zur Verarbeitung digitaler Assets. Es kann Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten und Archiven.
 
-Entwickler können den Asset Compute-Dienst verwenden, um spezialisierte benutzerdefinierte Mitarbeiter zu erstellen, die vordefinierten, komplexen Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Arbeiter über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle:
+Entwickler können den Asset Compute-Dienst verwenden, um spezialisierte benutzerdefinierte Mitarbeiter zu erstellen, die vordefinierten, komplexen Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Arbeiter über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
 
-* Generieren Sie benutzerdefinierte erweiterte Smart-Tags für digitale Assets mit Adobe Sensei.
-* Erstellen Sie mit Adobe Sensei eine Schnittmaske eines Betreffs.
-* Rufen Sie Produktmetadateninformationen vom PIM-System ab und machen Sie die Metadaten während der Asset-Erfassung zu einem binären Asset.
-* Ändern Sie die Hintergrundfarbe eines transparenten Bildes mit der [!DNL Adobe Photoshop] API.
-* Retuschieren Sie ein Bild mit der [!DNL Photoshop] API.
-* Richten Sie ein Bild mithilfe der [!DNL Adobe Lightroom] API aus.
+* Rufen Sie [!DNL Adobe Photoshop] die Bildausschnitt-API auf und speichern Sie das Ergebnis als Darstellung.
+* Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
+* Verwenden Sie die [!DNL Photoshop] API, um verschiedene Darstellungen basierend auf der Photoshop-Vorlage zu generieren.
+* Verwenden Sie die [!DNL Adobe Lightroom] API, um die erfassten Assets zu optimieren und sie als Darstellungen zu speichern.
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
 * Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
+* Derzeit ist die Unterstützung auf das Generieren von Darstellungen beschränkt. Das Generieren neuer Assets wird nicht unterstützt.
