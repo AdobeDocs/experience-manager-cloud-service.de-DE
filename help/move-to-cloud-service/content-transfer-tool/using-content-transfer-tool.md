@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 100%
+source-wordcount: '1616'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools:
 
 * Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
+
+* Das Content Transfer Tool kann mit den folgenden Arten des Datenspeichers verwendet werden: Dateidatenspeicher, S3-Datenspeicher und freigegebener S3-Datenspeicher. Derzeit unterstützt es keinen Blue Blob Store Data Store.
 
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung auf die Version vom 10. Juni 2020 oder höher aktualisiert ist. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
@@ -239,7 +241,7 @@ Der folgende Befehl wird ausgeführt
 
 >[!NOTE]
 >
->`--verbose`-Markierung ist erforderlich, um die Knotenpfade zu melden, von denen aus auf die Blobs verwiesen wird.
+>`--verbose`-Markierung ist erforderlich, um die Knotenpfade zu melden, von denen aus auf die BLOBs verwiesen wird.
 
 **Für Repositorys AEM 6.5 (Oak 1.8 und älter)**
 
