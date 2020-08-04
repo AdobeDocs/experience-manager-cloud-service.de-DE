@@ -3,9 +3,9 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 45%
 
 ---
@@ -146,8 +146,8 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname jeder Darstellung und eine unterstützte Dateierweiterung.
-   * Endpunkt-URL einer benutzerdefinierten Firefly-App. Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
-   * Hinzufügen [!UICONTROL Dienstparameter] , um zusätzliche Informationen oder Parameter an den benutzerdefinierten Worker zu übergeben.
+   * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
+   * Hinzufügen Serviceparameter, um zusätzliche Informationen oder Parameter an den benutzerdefinierten Worker [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)übergeben.
    * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
