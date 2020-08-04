@@ -2,7 +2,7 @@
 title: Erste Schritte mit AEM Commerce als Cloud Service
 description: Erste Schritte mit AEM Commerce als Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 6%
@@ -13,6 +13,8 @@ ht-degree: 6%
 # Erste Schritte mit AEM Commerce als Cloud Service {#start}
 
 Um mit AEM Commerce als Cloud Service beginnen zu können, muss Ihr Experience Manager Cloud Service über das Commerce Integration Framework (CIF) Add-On verfügen. Das CIF-Add-on ist ein Zusatzmodul, das als Cloud Service über den [AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/home.translate.html)steht.
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## Einstieg {#onboarding}
 
