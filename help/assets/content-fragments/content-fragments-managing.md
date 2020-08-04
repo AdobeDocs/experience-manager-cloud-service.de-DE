@@ -1,9 +1,9 @@
 ---
 title: Verwalten von Inhaltsfragmenten
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
-translation-type: ht
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 100%
 
@@ -131,9 +131,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >[!NOTE]
    >
    >1. Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird.
-   >
-   >
-   >2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
+      >
+      >
+   2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
 
 3. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
