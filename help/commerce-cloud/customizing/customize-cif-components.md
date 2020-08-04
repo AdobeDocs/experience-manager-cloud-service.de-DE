@@ -2,7 +2,7 @@
 title: CIF-Hauptkomponenten anpassen
 description: CIF-Hauptkomponenten anpassen
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 2%
@@ -279,7 +279,7 @@ Als Nächstes erweitern wir die Geschäftslogik des Product Teaser durch die Imp
 
 Sling-Modelle werden als Java implementiert und können im **Kernmodul** des erstellten Projekts gefunden werden.
 
-1. Öffnen Sie das Acme Store-Projekt in der IDE Ihrer Wahl und navigieren Sie unter dem **Core** -Modul zu: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** ist eine von uns vorab erstellte Java-Schnittstelle, die die CIF- **ProductTeaser** -Schnittstelle erweitert.
+1. Öffnen Sie das Acme Store-Projekt in der IDE Ihrer Wahl und navigieren Sie unter dem **Core** -Modul zu: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** ist eine von uns vordefinierte Java-Schnittstelle, die die CIF- **ProductTeaser** -Schnittstelle erweitert.
 
 1. Öffnen Sie als Nächstes die Datei **MyProductTeaserImpl.java** unter: `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`. `MyProductTeaserImpl` ist die Implementierungsklasse für die Schnittstelle `MyProductTeaser`.
 
@@ -352,7 +352,7 @@ Sling-Modelle werden als Java implementiert und können im **Kernmodul** des ers
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    Speichern Sie die Änderungen in `productteaser.html`.
