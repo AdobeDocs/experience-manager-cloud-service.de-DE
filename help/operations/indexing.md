@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 3%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 3%
 
 # Inhaltssuche und -indizierung {#indexing}
 
-## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Änderungen in AEM als Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Mit AEM als Cloud Service verlagert sich Adobe von einem AEM-Instanzenmodell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager gesteuert wird. Statt Indizes für einzelne AEM-Instanzen zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
+Mit AEM als Cloud Service verlagert sich die Adobe von einem instanzzentrierten Modell zu einer dienstbasierten Ansicht mit n-x-AEM-Containern, die von CI/CD-Pipelines im Cloud Manager angetrieben wird. Statt Indizes für einzelne AEM zu konfigurieren und zu verwalten, muss die Indexkonfiguration vor einer Bereitstellung angegeben werden. Konfigurationsänderungen in der Produktion brechen eindeutig die CI/CD-Richtlinien. Dasselbe gilt für Indexänderungen, da sie sich auf die Systemstabilität und -leistung auswirken können, wenn sie nicht spezifiziert sind, bevor sie in die Produktion aufgenommen werden.
 
 Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und früheren Versionen:
 
-1. Benutzer haben keinen Zugriff auf den Index-Manager einer einzelnen AEM-Instanz, um die Indexierung zu debuggen, zu konfigurieren oder zu verwalten. Es wird nur für lokale Entwicklungs- und Bereitstellungen vor Ort verwendet.
+1. Benutzer haben keinen Zugriff auf den Index-Manager einer einzelnen AEM Instanz, um die Indexierung zu debuggen, zu konfigurieren oder zu verwalten. Es wird nur für lokale Entwicklungs- und Bereitstellungen vor Ort verwendet.
 
-1. Benutzer ändern die Indizes nicht auf einer einzigen AEM-Instanz, und sie müssen sich auch keine Gedanken mehr über Konsistenzprüfungen oder das erneute Dekodieren machen.
+1. Die Benutzer ändern die Indizes nicht auf einer einzigen AEM Instanz, und sie müssen sich auch keine Gedanken mehr über Konsistenzprüfungen oder das erneute Dekodieren machen.
 
 1. In der Regel werden Indexänderungen vor der Produktion eingeleitet, um Qualitätssicherungen in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und keine Auswirkungen auf die Business KPIs in der Produktion zu haben.
 
@@ -32,7 +32,7 @@ Nachstehend eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und f
 
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 
-1. Auf hoher Ebene wird es in AEM als Cloud Service mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes geben: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
+1. Auf hoher Ebene AEM als Cloud Service werden mit der Einführung des [Blue-Green-Bereitstellungsmodells](#index-management-using-blue-green-deployments) zwei Indizes bestehen: ein Set für die alte Version (blau) und ein Set für die neue Version (grün).
 
 1. Kunden können sehen, ob der Indexierungsauftrag auf der Buildseite von Cloud Manager abgeschlossen ist, und erhalten eine Benachrichtigung, wenn die neue Version Traffic aufnehmen kann.
 
@@ -54,7 +54,7 @@ Die Definition von Indizes kann aus drei Anwendungsfällen bestehen:
 1. Aktualisieren einer vorhandenen Indexdefinition. Dies bedeutet effektiv, eine neue Version einer vorhandenen Indexdefinition hinzuzufügen.
 1. Entfernen eines vorhandenen, redundanten oder veralteten Indexes
 
-Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellung auf AEM als Cloud Service](/help/implementing/deploying/overview.md).
+Für die beiden obigen Punkte 1 und 2 müssen Sie eine neue Indexdefinition als Teil Ihrer benutzerspezifischen Codebasis im jeweiligen Cloud Manager-Veröffentlichungsplan erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellen auf AEM als Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
@@ -84,7 +84,7 @@ Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung üb
 
 >[!TIP]
 >
->Weitere Informationen zur erforderlichen Paketstruktur für AEM als Cloud Service finden Sie in der Dokument- [AEM-Projektstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Weitere Informationen zur erforderlichen Paketstruktur für AEM als Cloud Service finden Sie im Dokument [AEM Projektstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Indexverwaltung unter Verwendung von Blue-Green-Bereitstellungen {#index-management-using-blue-green-deployments}
 
@@ -105,7 +105,7 @@ Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) k�
 * **/content**
 * */libs (schreibgeschützt)*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme.**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -124,21 +124,21 @@ Die folgende Tabelle zeigt fünf Indexdefinitionen: Index `cqPageLucene` wird in
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` wird benötigt, damit AEM als Cloud Service dies als Ersatz für einen vorhandenen Index kennzeichnet.
+>`<indexName>-custom-<customerVersionNumber>` ist erforderlich, damit AEM als Cloud Service dies als Ersatz für einen vorhandenen Index kennzeichnen kann.
 
 | Index | Vordefinierter Index | Verwendung in Version 1 | Verwendung in Version 2 |
 |---|---|---|---|
 | /oak:index/damAssetLucene | Ja | Ja | Nein |
 | /oak:index/damAssetLucene-custom-1 | Ja (angepasst) | Nein | Ja |
-| /oak:index/acmeProduct-custom-1 | Nein | Ja | Nein |
-| /oak:index/acmeProduct-custom-2 | Nein | Nein | Ja |
+| /oak:index/acme.product-custom-1 | Nein | Ja | Nein |
+| /oak:index/acme.product-custom-2 | Nein | Nein | Ja |
 | /oak:index/cqPageLucene | Ja | Ja | Ja |
 
 Die Versionsnummer wird bei jeder Indexänderung inkrementiert. Um zu vermeiden, dass benutzerspezifische Indexnamen mit den Indexnamen des Produkts selbst kollidieren, müssen benutzerspezifische Indizes sowie Änderungen an vordefinierten Indizes mit enden `-custom-<number>`.
 
 ### Änderungen an den vordefinierten Indizes {#changes-to-out-of-the-box-indexes}
 
-Sobald Adobe einen vordefinierten Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;ändert, wird ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt oder, falls der Index bereits angepasst wurde, die benutzerdefinierte Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index kann jedoch später erneut angepasst werden.
+Sobald die Adobe einen vordefinierten Index wie &quot;damAssetLucene&quot;oder &quot;cqPageLucene&quot;ändert, wird ein neuer Index mit dem Namen `damAssetLucene-2` oder `cqPageLucene-2` erstellt oder, falls der Index bereits angepasst wurde, die benutzerdefinierte Indexdefinition mit den Änderungen im vordefinierten Index zusammengeführt, wie unten dargestellt. Die Zusammenführung von Änderungen erfolgt automatisch. Das bedeutet, dass Sie nichts tun müssen, wenn sich ein vordefinierter Index ändert. Der Index kann jedoch später erneut angepasst werden.
 
 | Index | Vordefinierter Index | Verwendung in Version 2 | Verwendung in Version 3 |
 |---|---|---|---|
@@ -153,26 +153,26 @@ Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene`.
 
 ### Entfernen eines Indexes {#removing-an-index}
 
-Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, können Sie einen leeren Index (einen Index ohne zu indexierende Daten) mit einem neuen Namen definieren. Sie können ihn beispielsweise benennen `/oak:index/acmeProduct-custom-3`. Dadurch wird der Index ersetzt `/oak:index/acmeProduct-custom-2`. Nach dem Entfernen durch das System `/oak:index/acmeProduct-custom-2` `/oak:index/acmeProduct-custom-3` kann auch der leere Index entfernt werden.
+Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, können Sie einen leeren Index (einen Index ohne zu indexierende Daten) mit einem neuen Namen definieren. Sie können ihn beispielsweise benennen `/oak:index/acme.product-custom-3`. Dadurch wird der Index ersetzt `/oak:index/acme.product-custom-2`. Nach dem Entfernen durch das System `/oak:index/acme.product-custom-2` `/oak:index/acme.product-custom-3` kann auch der leere Index entfernt werden.
 
 ### Index hinzufügen {#adding-an-index}
 
-Um einen Index mit dem Namen &quot;/oak:index/acmeProduct-custom-1&quot;hinzuzufügen, der in einer neuen Version der Anwendung und später verwendet werden soll, muss der Index wie folgt konfiguriert werden:
+Um einen Index mit dem Namen &quot;/oak:index/acme.product-custom-1&quot;hinzuzufügen, der in einer neuen Version der Anwendung und höher verwendet werden soll, muss der Index wie folgt konfiguriert werden:
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-Dies funktioniert, indem dem Indexnamen ein benutzerdefinierter Bezeichner vorangestellt wird, gefolgt von einem Punkt (**.**). Der Bezeichner muss zwischen 1 und 4 Zeichen lang sein.
+Dies funktioniert, indem dem Indexnamen ein benutzerdefinierter Bezeichner vorangestellt wird, gefolgt von einem Punkt (**`.`**). Der Bezeichner muss zwischen 2 und 5 Zeichen lang sein.
 
 Wie oben gezeigt, stellt dies sicher, dass der Index nur von der neuen Version der Anwendung verwendet wird.
 
 ### Ändern eines Index {#changing-an-index}
 
-Wenn ein vorhandener Index geändert wird, muss ein neuer Index mit der geänderten Indexdefinition hinzugefügt werden. Angenommen, der vorhandene Index &quot;/oak:index/acmeProduct-custom-1&quot;wurde geändert. Der alte Index wird unter gespeichert `/oak:index/acmeProduct-custom-1`und der neue Index unter `/oak:index/acmeProduct-custom-2`.
+Wenn ein vorhandener Index geändert wird, muss ein neuer Index mit der geänderten Indexdefinition hinzugefügt werden. Angenommen, der vorhandene Index &quot;/oak:index/acme.product-custom-1&quot;wurde geändert. Der alte Index wird unter gespeichert `/oak:index/acme.product-custom-1`und der neue Index unter `/oak:index/acme.product-custom-2`.
 
 Die alte Version der Anwendung verwendet die folgende Konfiguration:
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 Die neue Version der Anwendung verwendet die folgende (geänderte) Konfiguration:
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
