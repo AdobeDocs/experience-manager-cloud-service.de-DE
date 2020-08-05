@@ -2,7 +2,7 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 9%
@@ -14,10 +14,10 @@ ht-degree: 9%
 
 Als Teil von Adobe Marketing Cloud ermöglicht Adobe Target Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM als Cloud Service erfordert Folgendes:
 
-* Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM als Cloud Service zu erstellen (IMS-Konfiguration erforderlich).
+* Verwenden der Touch-Benutzeroberfläche, um eine Zielgruppe-Konfiguration in AEM als Cloud Service zu erstellen (IMS-Konfiguration erforderlich).
 * Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe Launch ist erforderlich für die Verwaltung clientseitiger Eigenschaften für Analytics und Zielgruppe auf AEM Seiten (JS-Bibliotheken/Tags). Allerdings ist die Integration mit Launch für &quot;Erlebnis-Targeting&quot;erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
+Adobe Launch ist erforderlich, um clientseitige Eigenschaften für Analytics und Zielgruppe in AEM zu verwalten (JS-Bibliotheken/Tags). Allerdings ist die Integration mit Launch für &quot;Erlebnis-Targeting&quot;erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Hinzufügen der erforderlichen Erweiterungen {#add-extension}
 
-**Erweiterungen** sind der Container, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen, indem das JavaScript-SDK der Zielgruppe für das moderne Web at.js verwendet wird. Sie müssen sowohl die **Adobe Target** - als auch die **Adobe ContextHub** -Erweiterungen hinzufügen.
+**Erweiterungen** sind der Container, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt clientseitige Implementierungen, indem das JavaScript-SDK der Zielgruppe für das moderne Web at.js verwendet wird. Sie müssen sowohl die **Adobe Target** - als auch die **Adobe ContextHub** -Erweiterung hinzufügen.
 
 1. Wählen Sie die Option &quot;Erweiterungskatalog&quot;und suchen Sie im Filter nach Zielgruppen.
 2. Wählen Sie &quot; **Adobe Target** at.js&quot;und klicken Sie auf die Option &quot;Installieren&quot;.
