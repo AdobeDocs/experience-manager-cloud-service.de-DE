@@ -3,9 +3,9 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 45%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 45%
 # Asset-Mikrodienste und verarbeitende Profil verwenden {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager ermöglicht die folgenden Verarbeitungsstufen.
 | Option | Beschreibung | Anwendungsfälle |
 |---|---|---|
 | [Standardkonfiguration](#default-config) | Es ist verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Darstellung. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Große Vorschau (Web-Ausgabe - 1280 Pixel) </li><li> Metadaten und Text-Extraktion.</li></ul> |
-| [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Darstellungen durch Erweitern der Standardoption. Erweitern Sie den vordefinierten Arbeiter, um verschiedene Formate und Darstellungen bereitzustellen. | <ul><li>FPO-Darstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingt auf konfigurierte Dateitypen anwenden. </li> </ul> |
-| [Benutzerdefiniertes Profil](#custom-config) | Von Administratoren über die Benutzeroberfläche konfiguriert, um benutzerdefinierten Code über benutzerdefinierte Mitarbeiter zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
+| [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Darstellungen durch Erweitern der Standardoption. Erweitern Sie die vordefinierte Option, um verschiedene Formate und Darstellungen bereitzustellen. | <ul><li>FPO-Darstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingt auf konfigurierte Dateitypen anwenden. </li> </ul> |
+| [Benutzerdefiniertes Profil](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche zur Verwendung von benutzerspezifischem Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfälle
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung eines benutzerdefinierten Workers nur dann, wenn die geschäftliche Anforderung nicht mit den Standardkonfigurationen oder dem Standard-Profil erfüllt werden kann.
+>Adobe empfiehlt die Verwendung einer benutzerdefinierten Anwendung nur dann, wenn die Geschäftsanforderungen nicht mit den Standardkonfigurationen oder dem Standard-Profil erfüllt werden können.
 
-Es kann Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten und Archiven.
+Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Arbeiter [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Arbeiter über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
+Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Anwendungen [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
 
 * Verwenden Sie [!DNL Adobe Photoshop]die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) und speichern Sie das Ergebnis als Darstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
@@ -135,22 +135,24 @@ Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefini
 
 >[!NOTE]
 >
->Sie können die Standardmetadaten nicht mit den benutzerdefinierten Workern bearbeiten. Sie können nur benutzerdefinierte Metadaten ändern.
+>Sie können die Standardmetadaten nicht mit den benutzerdefinierten Anwendungen bearbeiten. Sie können nur benutzerdefinierte Metadaten ändern.
 
 ### Create a custom profile {#create-custom-profile}
 
 Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Werkzeuge > Assets > Profil]** für die Verarbeitung zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Geben Sie den gewünschten Dateinamen der Darstellung ein.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Benutzerdefiniert]** . Click **[!UICONTROL Add New]**. Geben Sie den gewünschten Dateinamen der Darstellung ein.
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname jeder Darstellung und eine unterstützte Dateierweiterung.
-   * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
-   * Hinzufügen Serviceparameter, um zusätzliche Informationen oder Parameter an den benutzerdefinierten Worker [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)übergeben.
+   * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
+   * Hinzufügen Service-Parameter, um zusätzliche Informationen oder Parameter an die benutzerdefinierte Anwendung [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)übergeben.
    * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
+
+Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit einem verarbeitenden Profil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
 Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. Sie können ein verarbeitendes Profil erstellen, das die Photoshop-API nutzt, um die Bilder zu bearbeiten.
 
-Die Asset Compute Service-Integration ermöglicht es dem Experience Manager, diese Parameter mithilfe des Felds [!UICONTROL Service Parameters] an den benutzerdefinierten Worker zu übergeben. Der benutzerdefinierte Worker ruft dann die Photoshop-API auf und übergibt diese Werte an die API. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
+Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese Parameter mithilfe des Felds [!UICONTROL Service Parameters] an die benutzerdefinierte Anwendung zu übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop-API auf und leitet diese Werte an die API weiter. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
 
 ![custom-processing-Profil](assets/custom-processing-profile.png)
 
-*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in den benutzerdefinierten Worker integriert wurden.*
+*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden.*
 
 Wenn Kampagnen in den Ordner hochgeladen werden, auf den dieses verarbeitende Profil angewendet wird, werden die Bilder mit `Jumanji` Text in der `Arial-BoldMT` Schriftart aktualisiert.
 
@@ -243,5 +245,5 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 >
 >* [Einführung in den Asset Compute-Dienst](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Verstehen Sie die Erweiterbarkeit und wann sie](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)verwendet werden soll.
->* [Erstellen von benutzerdefinierten Workern](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html).
+>* [Erstellen benutzerdefinierter Anwendungen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
 
