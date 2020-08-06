@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 97%
+source-wordcount: '676'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ## Wissenswertes zum Ablauf {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+Sie können Ihre Pipeline über die Kachel **Pipeline-Einstellungen** in der [!UICONTROL Cloud Manager]-Benutzeroberfläche konfigurieren.
 
 Der Bereitstellungsmanager ist für die Einrichtung der Pipeline verantwortlich. Wählen Sie hierfür zunächst eine Verzweigung im **Git-Repository** aus.
 
@@ -69,7 +69,14 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Klicken Sie auf **Weiter**, um auf die Registerkarte **Testen** zuzugreifen und die Testkriterien für Ihr Programm zu definieren.
+1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Content Audit**.
+
+   Diese Option enthält eine Tabelle der URL-Pfade, die immer im Content Audit enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Inhaltsprüfung einbezogen.
+
+   >[!NOTE]
+   > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
+
+   Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) der Inhaltsprüfung.
 
    ![](assets/set-up-pipeline4.png)
 
