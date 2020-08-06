@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 70%
+source-wordcount: '772'
+ht-degree: 63%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 70%
 
 In Cloud Manager gibt es zwei Arten von Pipeline:
 
-* **Produktionsrohre**:
+* **Produktionsleitung**:
 
-   Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde.
+   Eine Produktionspipeline kann erst hinzugefügt werden, wenn eine Produktions- und Umgebung-Set erstellt wurde.
 
-   Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
+   Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
-* **Produktionsfremde Pipelines**:
+* **Nicht-Produktions-Pipeline**:
 
    Auf der Seite &quot; **Übersicht** &quot;der Benutzeroberfläche von Cloud Manager kann eine Pipeline für Nicht-Produktion hinzugefügt werden.
 
    Weitere Informationen finden Sie unter [Nicht-Produktion- und Nur-Code-Qualitätsrohre](configure-pipeline.md#non-production-pipelines) .
 
-## Wissenswertes zum Ablauf {#understanding-the-flow}
+>[!NOTE]
+>Zur Konfiguration der Pipeline müssen Sie:
+> * den Auslöser festlegen, der die Pipeline startet,
+> * Parameter zur Steuerung der Produktionsimplementierung festlegen,
+> * Leistungstestparameter konfigurieren.
 
-Sie können Ihre Pipeline über die Kachel **Pipeline-Einstellungen** in der [!UICONTROL Cloud Manager]-Benutzeroberfläche konfigurieren.
 
-Der Bereitstellungsmanager ist für die Einrichtung der Pipeline verantwortlich. Wählen Sie hierfür zunächst eine Verzweigung im **Git-Repository** aus.
+## Setting up Production Pipeline {#setting-up-production-pipeline}
 
-Zur Konfiguration der Pipeline muss der Benutzer:
+Der Deployment Manager ist für die Einrichtung der Produktionsleitung zuständig.
 
-* den Auslöser festlegen, der die Pipeline startet,
-* Parameter zur Steuerung der Produktionsimplementierung festlegen,
-* Leistungstestparameter konfigurieren.
-
-## Einrichten der Pipeline {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->Die Pipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen ist und das Git-Repository mindestens eine Verzweigung hat.
+>[!NOTE]
+>Eine Produktionspipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen ist, das Git-Repository über mindestens eine Verzweigung verfügt und ein Produktions- und Stage-Umgebung-Set erstellt wurde.
 
 Bevor Sie Code bereitstellen, müssen Sie Ihre Pipelineeinstellungen über [!UICONTROL Cloud Manager] konfigurieren.
 
