@@ -2,7 +2,7 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 72%
@@ -15,11 +15,15 @@ ht-degree: 72%
 In Cloud Manager gibt es zwei Arten von Pipeline:
 
 * **Produktionsrohre**:
-Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde. Weitere Informationen finden Sie im Abschnitt [Einrichten der Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
+Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde.
+
+   Weitere Informationen finden Sie im Abschnitt [Einrichten der Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
 
 * **Produktionsfremde Pipelines**:
 
-   Auf der Seite &quot; **Übersicht** &quot;der Benutzeroberfläche von Cloud Manager kann eine Pipeline für Nicht-Produktion hinzugefügt werden. Weitere Informationen finden Sie unter [Nicht-Produktion- und Nur-Code-Qualitätsrohre](configure-pipeline.md#non-production-pipelines) .
+   Auf der Seite &quot; **Übersicht** &quot;der Benutzeroberfläche von Cloud Manager kann eine Pipeline für Nicht-Produktion hinzugefügt werden.
+
+   Weitere Informationen finden Sie unter [Nicht-Produktion- und Nur-Code-Qualitätsrohre](configure-pipeline.md#non-production-pipelines) .
 
 ## Wissenswertes zum Ablauf {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Content-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. Klicken Sie im Bildschirm &quot;Pipeline **bearbeiten&quot;auf** Speichern **** . Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
