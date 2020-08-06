@@ -2,7 +2,7 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 72%
@@ -57,11 +57,11 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 1. Der Bildschirm **Pipeline einrichten** wird angezeigt. Wählen Sie die Verzweigung aus und klicken Sie auf **Weiter**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. Konfigurieren Sie die Implementierungsoptionen.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    Sie können den Auslöser definieren, mit dem die Pipeline gestartet wird:
 
