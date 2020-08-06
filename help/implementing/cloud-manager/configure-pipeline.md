@@ -2,16 +2,24 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 83%
+source-wordcount: '770'
+ht-degree: 72%
 
 ---
 
 
 # Konfigurieren der CI/CD-Pipeline {#configure-ci-cd-pipeline}
 
+In Cloud Manager gibt es zwei Arten von Pipeline:
+
+* **Produktionsrohre**:
+Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde. Weitere Informationen finden Sie im Abschnitt [Einrichten der Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
+
+* **Produktionsfremde Pipelines**:
+
+   Auf der Seite &quot; **Übersicht** &quot;der Benutzeroberfläche von Cloud Manager kann eine Pipeline für Nicht-Produktion hinzugefügt werden. Weitere Informationen finden Sie unter [Nicht-Produktion- und Nur-Code-Qualitätsrohre](configure-pipeline.md#non-production-pipelines) .
 
 ## Wissenswertes zum Ablauf {#understanding-the-flow}
 
@@ -78,14 +86,18 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) der Inhaltsprüfung.
 
-   ![](assets/set-up-pipeline4.png)
+   ![](assets/content-audit-1.png)
 
-1. Klicken Sie auf **Speichern**. Auf der Seite *Übersicht* wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
+   Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Content-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
+
+   ![](assets/content-audit-2.png)
+
+1. Klicken Sie im Bildschirm &quot;Pipeline **bearbeiten&quot;auf** Speichern **** . Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Produktionsfremde Pipelines und Pipelines für Tests der Codequalität
+## Produktionsfremde Pipelines und Pipelines für Tests der Codequalität {#non-production-pipelines}
 
 Zusätzlich zur Haupt-Pipeline, die für die Staging- und Produktionsumgebung bereitgestellt wird, können Kunden weitere Pipelines einrichten, die als **produktionsfremde Pipelines** bezeichnet werden. Diese Pipelines führen immer die Schritte Build-Erstellung und Tests der Codequalität aus. Sie können optional auch für die Adobe Managed Services-Umgebung bereitgestellt werden.
 
