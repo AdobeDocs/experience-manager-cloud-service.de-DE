@@ -2,7 +2,7 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 9%
@@ -28,7 +28,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Neu erstellte Umgebung in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
-* Hibernated-Umgebung können von der Cloud Manager-Übersichtsseite entfernt werden.
+* Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
 * Authentifizierungsgebundene private Maven-Repositorys werden jetzt unterstützt.
 
@@ -52,7 +52,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Auf der Übersichtsseite wurden Farbabweichungen festgestellt.
 
-### Bekannte Probleme {#known-issues}
+### Bekannte Probleme {#known-issues-cm}
 
 * Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
 
