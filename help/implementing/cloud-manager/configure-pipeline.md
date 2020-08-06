@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 72%
+source-wordcount: '793'
+ht-degree: 70%
 
 ---
 
@@ -15,9 +15,10 @@ ht-degree: 72%
 In Cloud Manager gibt es zwei Arten von Pipeline:
 
 * **Produktionsrohre**:
-Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde.
 
-   Weitere Informationen finden Sie im Abschnitt [Einrichten der Pipeline](configure-pipeline.md#setting-up-the-pipeline) .
+   Eine Produktions-Pipeline kann nur hinzugefügt werden, wenn eine Produktions- und Stage-Umgebung erstellt wurde.
+
+   Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
 * **Produktionsfremde Pipelines**:
 
@@ -83,6 +84,8 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Content Audit**.
 
+   ![](assets/content-audit-1.png)
+
    Diese Option enthält eine Tabelle der URL-Pfade, die immer im Content Audit enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Inhaltsprüfung einbezogen.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) der Inhaltsprüfung.
 
-   ![](assets/content-audit-1.png)
-
    Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Content-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
+
+   >[!NOTE]
+   >Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Weitere Informationen finden Sie unter [Bekannte Probleme](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) .
 
    ![](assets/content-audit2.png)
 
