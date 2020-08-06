@@ -2,7 +2,7 @@
 title: Versionshinweise für die Version 2020.7.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Neuerungen {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Dienst zur Verarbeitung von Assets. Administratoren können Experience Manager so konfigurieren, dass benutzerdefinierter Worker aufgerufen wird, der mit dem [!DNL Asset Compute Service]erstellt wurde. Entwickler können den Dienst zum Erstellen spezieller, benutzerdefinierter Arbeiter verwenden, die komplexen Anwendungsfällen Rechnung tragen. Dieser Webdienst kann Miniaturansichten für verschiedene Dateitypen erstellen, hochwertige Bildwiedergaben aus Dateiformaten erstellen, Adoben kodieren (zukünftig), Metadaten extrahieren, Volltext als Vorläufer für die Indexierung extrahieren und ein Asset über alle verfügbaren Sensei-Dienste ausführen. Siehe [Verwenden von Asset-Mikrodiensten und Verarbeitungs-Profilen](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Dienst zur Verarbeitung von Assets. Administratoren können Experience Manager konfigurieren, um benutzerdefinierte Anwendungen aufzurufen, die mit dem [!DNL Asset Compute Service]. Entwickler können den Dienst verwenden, um spezielle benutzerdefinierte Anwendungen zu erstellen, die komplexen Anwendungsfällen entsprechen. Dieser Webdienst kann Miniaturansichten für verschiedene Dateitypen erstellen, hochwertige Bildwiedergaben aus Dateiformaten erstellen, Adoben kodieren (zukünftig), Metadaten extrahieren, Volltext als Vorläufer für die Indexierung extrahieren und ein Asset über alle verfügbaren Sensei-Dienste ausführen. Siehe [Verwenden von Asset-Mikrodiensten und Verarbeitungs-Profilen](/help/assets/asset-microservices-configure-and-use.md).
 
 * Die anfängliche Konfiguration von [!DNL Dynamic Media] in [!DNL Experience Manager] als Cloud Service wurde verbessert, um robuster zu sein. Es stellt den Administratoren nun den Fortschritt der Prozesse zur Verfügung.
 
