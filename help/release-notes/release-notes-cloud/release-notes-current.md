@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Neuerungen {#what-is-new-commerce}
 
-* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Unterstützung von Eigenschaften für Kategorien und Produkte in der Produktkonsole wird ebenfalls bereitgestellt.
+* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Support for properties for catogories and products in the Product Console also provided.
 
 * Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
 
@@ -48,7 +48,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * In einigen Fällen wurden abgeschlossene Pipeline-Hinrichtungen nicht erfolgreich als abgeschlossen aufgezeichnet, wodurch neue Hinrichtungen der Pipeline verhindert wurden.
 
-* Hinrichtungen von Pipeline würden gelegentlich aufgrund interner Kommunikationsprobleme &quot;feststecken&quot;.
+* Hinrichtungen von Pipeline würden gelegentlich aufgrund interner Kommunikationsprobleme *feststecken* .
 
 * Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit Administratorrollen, die keine Systemadministratoren waren, fälschlicherweise Zugriff auf Cloud Manager.
 
@@ -58,7 +58,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Die Benutzeroberfläche erlaubte irrtümlicherweise den Versuch, Vorgänge auf einer Umgebung auszuführen, während diese gelöscht wurde.
 
-* Auf der Übersichtsseite wurden Farbabweichungen festgestellt.
+* Auf der Seite &quot; **Übersicht** &quot;des Cloud-Managers wurde eine Farbabweichung festgestellt.
 
 ### Bekannte Probleme {#known-issues-cm}
 
