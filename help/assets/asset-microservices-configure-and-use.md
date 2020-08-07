@@ -3,10 +3,10 @@ title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarb
 description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 45%
+source-wordcount: '2537'
+ht-degree: 44%
 
 ---
 
@@ -47,8 +47,8 @@ Experience Manager ermöglicht die folgenden Verarbeitungsstufen.
 | Option | Beschreibung | Anwendungsfälle |
 |---|---|---|
 | [Standardkonfiguration](#default-config) | Es ist verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Darstellung. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Große Vorschau (Web-Ausgabe - 1280 Pixel) </li><li> Metadaten und Text-Extraktion.</li></ul> |
-| [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Darstellungen durch Erweitern der Standardoption. Erweitern Sie die vordefinierte Option, um verschiedene Formate und Darstellungen bereitzustellen. | <ul><li>FPO-Darstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingt auf konfigurierte Dateitypen anwenden. </li> </ul> |
-| [Benutzerdefiniertes Profil](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche zur Verwendung von benutzerspezifischem Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
+| [Custom configuration](#standard-config) | Configured by administrators via user interface. Provides more options for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO-Darstellung. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
+| [Custom profile](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche zur Verwendung von benutzerspezifischem Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). Supports more complex requirements in a cloud-native and scalable method. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -59,9 +59,9 @@ Asset Microservices bieten Unterstützung für eine Vielzahl von Dateiformaten, 
 
 ## Standardkonfiguration {#default-config}
 
-Einige Standardwerte sind vorkonfiguriert, um sicherzustellen, dass die in Experience Manager erforderlichen Standarddarstellungen verfügbar sind. Die Standardkonfiguration stellt außerdem sicher, dass die Vorgänge zur Extraktion und Extraktion von Metadaten verfügbar sind. Benutzer können sofort mit dem Hochladen oder Aktualisieren von Assets beginnen. Die grundlegende Verarbeitung ist standardmäßig verfügbar.
+Einige Standardwerte sind vorkonfiguriert, um sicherzustellen, dass die in Experience Manager erforderlichen Standarddarstellungen verfügbar sind. The default configuration also ensure that metadata extraction and text extraction operations are available. Benutzer können sofort mit dem Hochladen oder Aktualisieren von Assets beginnen. Die grundlegende Verarbeitung ist standardmäßig verfügbar.
 
-Bei der Standardkonfiguration wird nur das grundlegendste verarbeitende Profil konfiguriert. Ein solches Profil ist auf der Benutzeroberfläche nicht sichtbar und Sie können es nicht ändern. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
+With the default configuration, only the most basic processing profile is configured. Ein solches Profil ist auf der Benutzeroberfläche nicht sichtbar und Sie können es nicht ändern. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
@@ -72,7 +72,7 @@ Bei der Standardkonfiguration wird nur das grundlegendste verarbeitende Profil k
 
 * **Darstellungsbreite und -höhe**: Die Angabe der Breite und Höhe der Darstellung bietet die maximale Größe des generierten Ausgabebilds. Asset Microservices versucht, die größtmögliche Darstellung zu erstellen, deren Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe ist. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
 
-* **MIME-Typeinschlussregeln**: Wenn ein Asset mit einem bestimmten MIME-Typ verarbeitet wird, wird der MIME-Typ zunächst mit dem ausgeschlossenen MIME-Typwert für die Darstellungsspezifikation verglichen. Wenn es mit dieser Liste übereinstimmt, wird dieses spezifische Ausgabeformat nicht für das Asset generiert (Blockierungsliste). Andernfalls wird der Mime-Typ mit dem eingeschlossenen Mime-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird das Ausgabeformat generiert (Zulassungsliste).
+* **MIME type inclusion rules**: When an asset with a specific MIME type is processed, the MIME type is first checked against the excluded MIME types value for the rendition specification. Wenn es mit dieser Liste übereinstimmt, wird dieses spezifische Ausgabeformat nicht für das Asset generiert (Blockierungsliste). Andernfalls wird der Mime-Typ mit dem eingeschlossenen Mime-Typ verglichen. Wenn er mit der Liste übereinstimmt, wird das Ausgabeformat generiert (Zulassungsliste).
 
 * **Spezielle FPO-Darstellung**: Beim Platzieren großer Assets aus [!DNL Experience Manager] in [!DNL Adobe InDesign] Dokumente wartet ein Kreativprofi eine Weile, nachdem er ein Asset [platziert](https://helpx.adobe.com/de/indesign/using/placing-graphics.html)hat. Meanwhile, the user is blocked from using [!DNL InDesign]. Dies unterbricht den kreativen Fluss und wirkt sich negativ auf das Kundenerlebnis aus. Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] bietet Ausgabeversionen, die nur für die Platzierung (FPO) verwendet werden. Diese FPO-Darstellungen haben eine kleine Dateigröße, weisen aber dasselbe Seitenverhältnis auf.
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um ein Profil für die Standardverarbeitung zu erstelle
 
 1. Administratoren greifen auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL VerarbeitungsProfil]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen beim Anwenden auf einen Ordner hilft, das Profil eindeutig zu identifizieren.
-1. Um FPO-Darstellungen zu erstellen, aktivieren Sie auf der Registerkarte &quot; **[!UICONTROL Standard]** &quot;die Option &quot; **[!UICONTROL FPO-Darstellung]** erstellen&quot;. Geben Sie einen **[!UICONTROL Qualitätswert]** zwischen 1 und 100 ein.
+1. To generate FPO renditions, on the **[!UICONTROL Standard]** tab, enable **[!UICONTROL Create FPO Rendition]**. Input a **[!UICONTROL Quality]** value between 1 and 100.
 1. Um andere Darstellungen zu erstellen, klicken Sie auf **[!UICONTROL Hinzufügen Neu]** und geben Sie die folgenden Informationen ein:
 
    * Dateiname jeder Darstellung.
@@ -110,23 +110,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Benutzerspezifische Profil- und Anwendungsfälle {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
-Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adoben-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerspezifischer oder organisationsspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des DAM Update Asset-Workflows wird entweder automatisch oder über die Konfiguration der verarbeitenden Profil durchgeführt. Wenn diese Verarbeitungsoptionen die Geschäftsanforderungen nicht erfüllen, empfiehlt Adobe, die Standardfunktionen zu entwickeln und [!DNL Asset Compute Service] zu erweitern. Eine Übersicht finden Sie unter Erweiterbarkeit [und Verwendungszeitpunkt](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adoben-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerspezifischer oder organisationsspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des DAM Update Asset-Workflows wird entweder automatisch oder über die Konfiguration der verarbeitenden Profil durchgeführt. If the business needs are not met by these processing options, Adobe recommends developing and using [!DNL Asset Compute Service] to extend the default capabilities. Eine Übersicht finden Sie unter Erweiterbarkeit [und Verwendungszeitpunkt](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung einer benutzerdefinierten Anwendung nur dann, wenn die Geschäftsanforderungen nicht mit den Standardkonfigurationen oder dem Standard-Profil erfüllt werden können.
+>Adobe recommends using a custom application only when the business requirements cannot be accomplished using the default configurations or the standard profile.
 
 Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Anwendungen [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
 
 * Verwenden Sie [!DNL Adobe Photoshop]die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) und speichern Sie das Ergebnis als Darstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
@@ -142,17 +134,17 @@ Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefini
 Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Werkzeuge > Assets > Profil]** für die Verarbeitung zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Benutzerdefiniert]** . Click **[!UICONTROL Add New]**. Geben Sie den gewünschten Dateinamen der Darstellung ein.
+1. Click **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. Provide the desired file name of the rendition.
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname jeder Darstellung und eine unterstützte Dateierweiterung.
    * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
-   * Hinzufügen Service-Parameter, um zusätzliche Informationen oder Parameter an die benutzerdefinierte Anwendung [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)übergeben.
-   * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
+   * hinzufügen Service-Parameter, um zusätzliche Informationen oder Parameter an die benutzerdefinierte Anwendung [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)übergeben.
+   * MIME-Typen wurden eingeschlossen und ausgeschlossen, um die Verarbeitung auf einige bestimmte Dateiformate zu beschränken.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit einem verarbeitenden Profil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
+Bei den benutzerdefinierten Anwendungen handelt es sich um kopflose [Project Firefly](https://github.com/AdobeDocs/project-firefly) -Apps. Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit einem verarbeitenden Profil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
 
 >[!CAUTION]
 >
@@ -160,17 +152,17 @@ Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit 
 
 ### Beispiel für ein benutzerdefiniertes Profil {#custom-profile-example}
 
-Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. Sie können ein verarbeitendes Profil erstellen, das die Photoshop-API nutzt, um die Bilder zu bearbeiten.
+Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. You can create a processing profile that leverages the Photoshop API to edit the images.
 
-Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese Parameter mithilfe des Felds [!UICONTROL Service Parameters] an die benutzerdefinierte Anwendung zu übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop-API auf und leitet diese Werte an die API weiter. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
+Asset Compute Service integration allows Experience Manager to pass these parameters to the custom application using the [!UICONTROL Service Parameters] field. The custom application then invokes Photoshop API and passes these values to the API. For example, you can pass font name, text color, text weight and text size to add the custom text to campaign images.
 
-![custom-processing-Profil](assets/custom-processing-profile.png)
+![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden.*
+*Figure: Use[!UICONTROL Service Parameters]field to pass added information to predefined parameters build into the custom application.*
 
-Wenn Kampagnen in den Ordner hochgeladen werden, auf den dieses verarbeitende Profil angewendet wird, werden die Bilder mit `Jumanji` Text in der `Arial-BoldMT` Schriftart aktualisiert.
+When campaign images are uploaded to the folder on which this processing profile is applied, the images are updated with `Jumanji` text in `Arial-BoldMT` font.
 
-## Verarbeitung von Profilen zur Verarbeitung von Assets {#use-profiles}
+## Use processing profiles to process assets {#use-profiles}
 
 Erstellen Sie die zusätzlichen benutzerdefinierten Verarbeitungsprofile und wenden Sie sie auf bestimmte Ordner an, damit Experience Manager sie für Assets verarbeitet, die in diese Ordner hochgeladen oder in diesen aktualisiert wurden. Das standardmäßige integrierte Verarbeitungsprofil wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
@@ -183,11 +175,11 @@ Wenden Sie verarbeitende Profil auf Ordner mit einer der folgenden Methoden an:
 >
 >Nur ein Verarbeitungsprofil kann auf einen bestimmten Ordner angewendet werden. Um weitere Darstellungen zu generieren, fügen Sie dem bestehenden Profil weitere Darstellungsdefinitionen hinzu.
 
-Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum standardmäßigen Profil. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
+Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. This processing is in addition to the standard, default profile. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
 
 >[!NOTE]
 >
->Ein auf einen Profil angewendetes Verarbeitungsordner funktioniert für die gesamte Struktur, kann jedoch überschrieben werden, wenn ein anderes Profil auf einen Unterordner angewendet wird. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keine Anwendung erfolgt, wird ein übergeordneter Profil in der Hierarchie auf die Anwendung eines Verarbeitungsordners überprüft.
+>A processing profile applied to a folder works for the entire tree, but can be over-ridden with another profile applied to a sub-folder. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn keine Anwendung erfolgt, wird ein übergeordneter Profil in der Hierarchie auf die Anwendung eines Verarbeitungsordners überprüft.
 
 Alle generierten Darstellungen sind in der Ansicht [!UICONTROL Darstellungen] in der linken Leiste verfügbar. Öffnen Sie die Asset-Vorschau und öffnen Sie die linke Leiste, um auf die Ansicht **[!UICONTROL Ausgabeformate]** zuzugreifen. Die spezifischen Ausgabeformate im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
 
