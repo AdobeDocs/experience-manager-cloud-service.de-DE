@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Neuerungen {#what-is-new-commerce}
 
-* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Support for properties for catogories and products in the Product Console also provided.
+* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Unterstützung von Eigenschaften für Kategorien und Produkte in der Produktkonsole wird ebenfalls bereitgestellt.
 
 * Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
 
@@ -64,7 +64,21 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
 
-* Auf der Registerkarte &quot;Content Audit&quot;wird die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne anstelle der Veröffentlichungsdomäne angezeigt.
+* The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
 
-* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
+* In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
+
+## Content Transfer-Tool {#content-transfer-tool}
+
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Content Transfer Tool Version 1.0.4.
+
+### Neuerungen {#what-is-new-ctt}
+
+* Content Transfer Tool now supports Shared S3 DataStore.
+
+### Fehlerbehebungen {#ctt-bug-fixes}
+
+* Additional timeouts added for the tool to complete actions.
+
+* Earlier version UI sometimes displayed successful extraction even though log showed errors.
 
