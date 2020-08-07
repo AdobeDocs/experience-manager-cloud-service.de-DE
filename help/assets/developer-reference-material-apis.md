@@ -2,11 +2,11 @@
 title: 'Assets-APIs für Digital Asset Management in Adobe Experience Manager as a Cloud Service '
 description: Asset-APIs ermöglichen grundlegende CRUD-Operationen (Create-Read-Update-Delete – Erstellen-Lesen-Aktualisieren-Löschen) zur Verwaltung von Assets, einschließlich Binär- und Metadaten, Ausgabeformaten, Kommentaren und Inhaltsfragmenten.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1249'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 99%
 
 ---
 
@@ -48,11 +48,7 @@ Dieser Ansatz sollte eine skalierbarere und leistungsfähigere Handhabung von As
 
 ### Initiieren des Uploads {#initiate-upload}
 
-Der erste Schritt besteht darin, eine HTTP-POST-Anfrage an den Ordner zu senden, in dem das Asset erstellt oder aktualisiert werden soll. Schließen Sie den Selektor `.initiateUpload.json` ein, um anzugeben, dass die Anfrage darin besteht, einen binären Upload zu starten. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+Der erste Schritt besteht darin, eine HTTP-POST-Anfrage an den Ordner zu senden, in dem das Asset erstellt oder aktualisiert werden soll. Schließen Sie den Selektor `.initiateUpload.json` ein, um anzugeben, dass die Anfrage darin besteht, einen binären Upload zu starten. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`. Die POST wird angefordert `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten:
 
@@ -61,7 +57,7 @@ Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Form
 
 Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdateien zu initiieren, solange jede Binärdatei die erforderlichen Felder enthält. Bei Erfolg wird die Anfrage mit einem `201`-Status-Code und einem Text mit JSON-Daten im folgenden Format beantwortet:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
