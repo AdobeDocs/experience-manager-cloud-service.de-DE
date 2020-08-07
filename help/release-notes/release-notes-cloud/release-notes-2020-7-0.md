@@ -2,7 +2,7 @@
 title: Versionshinweise für die Version 2020.7.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -44,20 +44,28 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Arbeitsablaufmodelle, die von Kunden erstellt wurden, die im Git-Projekt bereitgestellt werden, das mit der Umgebung in Cloud Manager verknüpft ist, werden automatisch in Experience Manager bereitgestellt `/conf/global` `/var` und damit verfügbar gemacht. Die Produktarbeitsablaufmodelle, unter `/libs` denen der Kunde Änderungen vorgenommen hat, werden nicht automatisch bereitgestellt `/var`.
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Neuerungen {#what-is-new-commerce}
+
+AEM Commerce ist jetzt auf dem Cloud Service verfügbar.
+
+Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) .
+
 ## Kernkomponenten {#core-components}
 
 ### Neuerungen {#what-is-new-core-components}
 
 Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* Einführung einer neuen [PDF Viewer-Komponente](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Introduction of a new [PDF Viewer Component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
 
-* Die Accelerated Mobile Pages (AMP)-Unterstützung von Core-Komponenten ist jetzt verfügbar. Es hilft, schnellere Kundenerlebnisse zu erzielen, indem die Transition der Seite sofort erfolgt, wenn die Site von einem Google Mobile-Suchergebnis aus aufgerufen wird, was die Benutzerinteraktion und die SEO verbessert.
-Weitere Informationen finden Sie unter [AMP-Unterstützung für die Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) .
+* Accelerated Mobile Pages (AMP) support of Core Components is now available. It helps to produce faster customer experiences by making the page transition instantaneously when entering the site from a Google mobile search result, which improves user engagement and SEO.
+Refer to [AMP Support for the Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) for more details.
 
 * Kompatibilität mit Version 1.0.2 der [Adobe Client Data Layer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
 
-* Fehlerbehebungen und Verbesserungen der Codequalität.
+* Bug fixes and code quality improvements.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -97,27 +105,19 @@ Die Version 2020.7.0 von [!UICONTROL Cloud Manager] wurde am 09. Juli 2020 ve
 
 ### Bekannte Probleme {#known-issues}
 
-* Aufgrund einer Änderung bei der Berechnung der Code-Abdeckung ist die erforderliche *Mindestversion* des Jacoco-Plugins jetzt 0.7.5.201505241946 (veröffentlicht im Mai 2015). Kunden, die explizit auf eine ältere Version verweisen, erhalten eine Fehlermeldung im Code-Qualitätsprozess.
+* Aufgrund einer Änderung bei der Berechnung der Code-Abdeckung ist die erforderliche *Mindestversion* des Jacoco-Plugins jetzt 0.7.5.201505241946 (veröffentlicht im Mai 2015). Customers explicitly referencing an older version receive an error message in the code quality process.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
 ### Neuerungen {#what-is-new-foundations}
 
-* [Protokolle können an Splunk-Konten](/help/implementing/developing/introduction/logging.md#splunk-logs)weitergeleitet werden, wodurch Organisationen ihre Splunk-Investitionen nutzen können.
+* [Logs can be forwarded to Splunk accounts](/help/implementing/developing/introduction/logging.md#splunk-logs), which allows organizations to leverage their Splunk investment.
 
-* [Eine statische, dedizierte IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
+* [A static, dedicated egress IP address](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) can be assigned for outbound traffic programmed in Java code, which may be useful for some integrations.
 
 * Die Benutzeroberfläche AEM Analytics-Cloud-Service wurde von der klassischen Benutzeroberfläche in die neue AEM Benutzeroberfläche hochgeladen. Außerdem wurde der Speicherort des Analytics-Cloud-Dienstes in AEM Repository von `/etc` in `/conf`die Ausrichtung mit anderen AEM-Cloud-Diensten verschoben.
 
-* Die Benutzeroberfläche des AEM Cloud-Dienstes wurde von der klassischen Benutzeroberfläche in die neue AEM Benutzeroberfläche hochgeladen. Außerdem wurde der Speicherort des Zielgruppe Cloud-Dienstes in AEM Repository von `/etc` nach `/conf`verschoben, um ihn an andere AEM Cloud-Dienste anzupassen.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### Neuerungen {#what-is-new-commerce}
-
-AEM Commerce ist jetzt auf dem Cloud Service verfügbar.
-
-Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) .
+* Ported AEM Target cloud service UI from Classic UI to new AEM UI. Also moved location of Target cloud service in AEM repository from `/etc` to `/conf`, to align with other AEM cloud services.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
