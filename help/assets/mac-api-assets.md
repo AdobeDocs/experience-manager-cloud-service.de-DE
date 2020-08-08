@@ -1,21 +1,21 @@
 ---
-title: Assets-HTTP-API in [!DNL Adobe Experience Manager].
-description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
+title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
+description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 45%
+source-wordcount: '1476'
+ht-degree: 100%
 
 ---
 
 
 # Assets-HTTP-API {#assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
+Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
@@ -24,7 +24,7 @@ So greifen Sie auf die API zu:
 
 Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
 
-After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
+Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ After the [!UICONTROL Off Time], an asset and its renditions are not available v
 
 Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Er kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
-For further information see [Content Fragments Support in the Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md).
 
 ## Datenmodell {#data-model}
 
@@ -51,7 +51,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 **Eigenschaften**:
 
 * `name` ist der Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung.
-* `title` ist ein optionaler Titel des Ordners, der anstelle seines Namens angezeigt werden kann.
+* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
 
 >[!NOTE]
 >
@@ -65,33 +65,35 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 
 ### Assets {#assets}
 
-In [!DNL Experience Manager] an asset contains the following elements:
+In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Weitere Darstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder extrahierte Seiten aus PDF- oder Adobe InDesign-Dateien sein.
+* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Bei den zusätzlichen Ausgabedarstellungen kann es sich um Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF- oder Adobe InDesign-Dateien extrahierte Seiten handeln.
 * Optionale Kommentare.
 
-For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md).
 
-In [!DNL Experience Manager] a folder has the following components:
+In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
-* Einrichtungen: Die untergeordneten Elemente von Assets sind ihre Darstellungen.
+* Entitäten: Die untergeordneten Elemente von Assets sind die Ausgabedarstellungen.
 * Eigenschaften.
 * Links.
+
+## Verfügbare Funktionen {#available-features}
 
 Die Assets-HTTP-API bietet die folgenden Funktionen:
 
 * Abrufen von Ordnerauflistungen.
 * Erstellen von Ordnern.
-* Erstellen Sie ein Asset (nicht mehr unterstützt).
+* Erstellen von Assets (veraltet).
 * Aktualisieren der Asset-Binärdatei (veraltet).
 * Aktualisieren der Asset-Metadaten.
-* Erstellen von Asset-Ausgabeformaten.
-* Aktualisieren von Asset-Ausgabeformaten.
+* Erstellen von Asset-Ausgabedarstellungen.
+* Aktualisieren von Asset-Ausgabedarstellungen.
 * Erstellen von Asset-Kommentaren.
 * Kopieren von Ordnern oder Assets.
 * Verschieben von Ordnern oder Assets.
-* Löschen von Ordnern, Assets oder Wiedergabeformaten.
+* Löschen von Ordnern, Assets oder Ausgabedarstellungen.
 
 >[!NOTE]
 >
@@ -112,19 +114,19 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 
 **Anforderung**: `GET /api/assets/myFolder.json`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 200 - OK - Erfolg.
-* 404 - NICHT GEFUNDEN - Ordner ist nicht vorhanden oder nicht verfügbar.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 200 – OK – Erfolg.
+* 404 – NICHT GEFUNDEN – Ordner existiert nicht oder ist nicht zugänglich.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-**Antwort**: Die zurückgegebene Entitätsklasse ist ein Asset oder ein Ordner. Die Eigenschaften von enthaltenen Entitäten sind eine Untergruppe des gesamten Eigenschaftensatzes jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
+**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
 
 ## Erstellen von Ordnern {#create-a-folder}
 
-Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. If a `*` is provided instead of a node name, the servlet uses the parameter name as node name. Akzeptiert als Anforderungsdaten wird entweder eine Siren-Darstellung des neuen Ordners oder ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Dies ist dann sinnvoll, wenn Sie einen Ordner direkt aus einem HTML-Formular erstellen. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
+Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Akzeptiert als Anforderungsdaten wird entweder eine Siren-Darstellung des neuen Ordners oder ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Dies ist dann sinnvoll, wenn Sie einen Ordner direkt aus einem HTML-Formular erstellen. Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
 
-Ein API-Aufruf schlägt mit einem `500` Antwortcode fehl, wenn der übergeordnete Knoten des angegebenen Pfads nicht vorhanden ist. Ein Aufruf gibt einen Antwortcode zurück, `409` wenn der Ordner bereits vorhanden ist.
+Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schlägt der API-Aufruf mit einem Antwort-Code `500` fehl. Ein Aufruf gibt einen Antwort-Code `409` zurück, wenn der Ordner bereits vorhanden ist.
 
 **Parameter**: `name` ist der Ordnername.
 
@@ -133,12 +135,12 @@ Ein API-Aufruf schlägt mit einem `500` Antwortcode fehl, wenn der übergeordnet
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - CREATED - bei erfolgreicher Erstellung.
-* 409 - KONFLIKT - wenn bereits Ordner vorhanden.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 201 – ERSTELLT – bei erfolgreicher Erstellung.
+* 409 – KONFLIKT – wenn der Ordner bereits existiert.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Erstellen von Assets {#create-an-asset}
 
@@ -150,22 +152,22 @@ Informationen zum Aktualisieren von Asset-Binärdateien mithilfe von APIs finden
 
 ## Aktualisieren von Metadaten eines Assets {#update-asset-metadata}
 
-Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:` Namensraum aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr` Namensraum. Die API synchronisiert die Eigenschaften nicht unter den beiden Namensräumen.
+Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
 
 **Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 200 - OK - wenn Asset erfolgreich aktualisiert wurde.
-* 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 200 – OK – wenn das Asset erfolgreich aktualisiert wurde.
+* 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Erstellen von Asset-Ausgabeformaten {#create-an-asset-rendition}
+## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
 
-Erstellen Sie eine neue Asset-Darstellung für ein Asset. Wenn der Parametername der Anforderung nicht angegeben wird, wird der Dateiname als Darstellungsname verwendet.
+Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anforderungsparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
-**Parameter**: Die Parameter dienen `name` dem Namen der Darstellung und `file` als Dateiverweis.
+**Parameter**: Die Parameter sind `name` für den Namen der Ausgabedarstellung und `file` als ein Dateiverweis.
 
 **Anforderung**
 
@@ -174,10 +176,10 @@ Erstellen Sie eine neue Asset-Darstellung für ein Asset. Wenn der Parametername
 
 **Antwort-Codes**
 
-* 201 - ERSTELLT - wenn die Darstellung erfolgreich erstellt wurde.
-* 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 201 – ERSTELLT - wenn die Ausgabedarstellung erfolgreich erstellt wurde.
+* 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
 
@@ -185,12 +187,12 @@ Aktualisiert bzw. ersetzt ein Asset-Wiedergabeformat durch die neuen Binärdaten
 
 **Anforderung**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 200 - OK - wenn die Darstellung erfolgreich aktualisiert wurde.
-* 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 200 – OK – wenn die Ausgabedarstellung erfolgreich aktualisiert wurde.
+* 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Hinzufügen eines Kommentars zu einem Asset {#create-an-asset-comment}
 
@@ -200,31 +202,31 @@ Erstellt einen neuen Asset-Kommentar.
 
 **Anforderung**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - ERSTELLT - wenn Kommentar erfolgreich erstellt wurde.
-* 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 201 – ERSTELLT - wenn der Kommentar erfolgreich erstellt wurde.
+* 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Kopieren von Ordnern oder Assets {#copy-a-folder-or-asset}
 
-Kopiert einen Ordner oder ein Asset, der unter dem angegebenen Pfad zu einem neuen Ziel verfügbar ist.
+Kopiert einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel.
 
-**Anforderungsheader**: Die Parameter sind:
+**Anforderungs-Header**: Die Parameter sind:
 
-* `X-Destination` - ein neuer Ziel-URI im API-Lösungsbereich, in den die Ressource kopiert werden soll.
-* `X-Depth` - entweder `infinity` oder `0`. Die Verwendung kopiert `0` nur die Ressource und ihre Eigenschaften und nicht die untergeordneten Elemente.
-* `X-Overwrite` - Verwenden Sie diese Option, `F` um zu verhindern, dass ein Asset am vorhandenen Ziel überschrieben wird.
+* `X-Destination` – ein neuer Ziel-URI im Bereich der API-Lösung, in den die Ressource kopiert werden soll.
+* `X-Depth` – entweder `infinity` oder `0`. Mit `0` werden nur die Ressource und ihre Eigenschaften kopiert und nicht ihre untergeordneten Elemente.
+* `X-Overwrite` – Verwenden Sie `F`, um ein Überschreiben eines Assets am vorhandenen Ziel zu verhindern.
 
 **Anforderung**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - CREATED - wenn Ordner/Asset in ein nicht vorhandenes Ziel kopiert wurde.
-* 204 - KEIN INHALT - wenn der Ordner/das Asset an ein vorhandenes Ziel kopiert wurde.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn ein Anforderungsheader fehlt.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 201 – ERSTELLT – wenn der Ordner/das Asset in ein nicht vorhandenes Ziel kopiert wurde.
+* 204 – KEIN INHALT – wenn der Ordner/das Asset in ein vorhandenes Ziel kopiert wurde.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anforderungs-Header fehlt.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Verschieben von Ordnern oder Assets {#move-a-folder-or-asset}
 
@@ -232,22 +234,22 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 
 **Anforderungs-Header**: Die Parameter sind:
 
-* `X-Destination` - ein neuer Ziel-URI im API-Lösungsbereich, in den die Ressource kopiert werden soll.
-* `X-Depth` - entweder `infinity` oder `0`. Die Verwendung kopiert `0` nur die Ressource und ihre Eigenschaften und nicht die untergeordneten Elemente.
-* `X-Overwrite` - Verwenden Sie entweder `T` zum erzwingen des Löschens einer vorhandenen Ressource oder `F` um zu verhindern, dass eine vorhandene Ressource überschrieben wird.
+* `X-Destination` – ein neuer Ziel-URI im Bereich der API-Lösung, in den die Ressource kopiert werden soll.
+* `X-Depth` – entweder `infinity` oder `0`. Mit `0` werden nur die Ressource und ihre Eigenschaften kopiert und nicht ihre untergeordneten Elemente.
+* `X-Overwrite` Verwenden Sie entweder `T`, um das Löschen einer vorhandenen Ressource zu erzwingen, oder `F`, um das Überschreiben einer vorhandenen Ressource zu verhindern.
 
 **Anforderung**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - CREATED - wenn Ordner/Asset in ein nicht vorhandenes Ziel kopiert wurde.
-* 204 - KEIN INHALT - wenn der Ordner/das Asset an ein vorhandenes Ziel kopiert wurde.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn ein Anforderungsheader fehlt.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 201 – ERSTELLT – wenn der Ordner/das Asset in ein nicht vorhandenes Ziel kopiert wurde.
+* 204 – KEIN INHALT – wenn der Ordner/das Asset in ein vorhandenes Ziel kopiert wurde.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn ein Anforderungs-Header fehlt.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Löschen eines Ordners, eines Assets oder eines Ausgabeformats {#delete-a-folder-asset-or-rendition}
+## Löschen eines Ordners, eines Assets oder einer Ausgabedarstellung {#delete-a-folder-asset-or-rendition}
 
-Löscht eine Ressource (-tree) am angegebenen Pfad.
+Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 **Anforderung**
 
@@ -255,8 +257,8 @@ Löscht eine Ressource (-tree) am angegebenen Pfad.
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**Antwortcodes**: Die Antwortcodes sind:
+**Antwort-Codes**: Die Antwort-Codes sind:
 
-* 200 - OK - wenn der Ordner erfolgreich gelöscht wurde.
-* 412 - PRECONDITION FEHLGESCHLAGEN - wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
-* 500 - INTERNER SERVER-FEHLER - wenn etwas Anderes schiefgeht.
+* 200 – OK – wenn der Ordner erfolgreich gelöscht wurde.
+* 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
+* 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
