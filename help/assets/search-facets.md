@@ -1,11 +1,11 @@
 ---
 title: Suchfacetten.
 description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,30 +33,30 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat `Ful
 
 1. Ziehen Sie auf der Seite „Suchformulare bearbeiten“ ein Prädikat von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Drücken Sie die Taste und verschieben Sie eine Prognose, um die Filter der Suche anzupassen.](assets/drag_predicate.png)
+   ![Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen](assets/drag_predicate.png)
 
-   *Abbildung: Drücken Sie die Eingabetaste und verschieben Sie ein Prädikat, um die Filter anzupassen.*
+   *Abbildung: Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen.*
 
 1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Mit der Kopfzeilenbeschriftung auf der Registerkarte „Einstellungen“ wird der Typ des gewählten Prädikats identifiziert.
 
    ![Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat](assets/settings.png)
 
-   *Abbildung: Verwenden Sie die Registerkarte &quot;Einstellungen&quot;, um die erforderlichen Optionen für eine Vorhersage bereitzustellen.*
+   *Abbildung: Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat.*
 
 1. Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Basierend auf diesem Namen wird die Suche ausgeführt. Geben Sie beispielsweise `jcr:content/metadata/dc:description` oder `./jcr:content/metadata/dc:description` ein. Sie können auch einen vorhandenen Knoten aus dem Auswahl-Dialogfeld auswählen.
 
    ![Verknüpfen einer Metadateneigenschaft mit einem Prädikat im Feld „Eigenschaftsname“](assets/property_settings.png)
 
-   *Abbildung: Verknüpfen Sie eine Metadateneigenschaft mit einem Prädikat im Feld &quot;Eigenschaftsname&quot;.*
+   *Abbildung: Verknüpfen einer Metadateneigenschaft mit einem Prädikat im Feld „Eigenschaftsname“.*
 
-1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Klicken Sie auf das Symbol **[!UICONTROL Vorschau]** ![Vorschau](assets/preview.png), um eine Vorschau des Bedienfelds „Filter“ anzuzeigen, wie es nach dem Hinzufügen des Prädikats angezeigt wird.
 1. Prüfen Sie das Layout des Prädikats im Vorschaumodus.
 
    ![Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen](assets/preview-1.png)
 
    Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen
 
-1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
+1. Um die Vorschau zu schließen, klicken Sie auf das Symbol **[!UICONTROL Schließen]** ![Schließen](assets/do-not-localize/close_icon.png) oben rechts in der Vorschau.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Einstellungen zu speichern.
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. Geben Sie beispielsweise „Adobe“ ein. Wenn Sie eine Suche durchführen, werden Assets mit der Beschreibung „Adobe“ in den Suchergebnissen aufgelistet.
@@ -144,7 +144,7 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Ass
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften     {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften      {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -167,7 +167,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad          Browser</td>
+   <td>Pfad           Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -217,7 +217,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum           Bereich</p> </td>
+   <td><p>Datum            Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>
@@ -324,9 +324,9 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 
 | Aktion | Berechtigung |
 |---|---|
-| Bearbeiten | Read and write permissions on the `/apps` node in CRX. |
-| Löschen | Read, write, and delete permissions on the `/apps` node in CRX. |
-| Vorschau | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
+| Bearbeiten | Lese- und Schreibberechtigungen für den `/apps`-Knoten in CRX. |
+| Löschen | Lese-, Schreib- und Löschberechtigungen für den `/apps`-Knoten in CRX. |
+| Vorschau | Lese-, Schreib- und Löschberechtigungen für den `/var/dam/content`-Knoten in CRX. Außerdem Lese- und Schreibberechtigungen für den `/apps`-Knoten. |
 
 >[!MORELIKETHIS]
 >
