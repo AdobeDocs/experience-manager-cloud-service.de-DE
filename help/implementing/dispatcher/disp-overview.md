@@ -1,11 +1,11 @@
 ---
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -200,7 +200,7 @@ Das Validierungs-Tool ist im SDK `bin/validator` als macOS-, Linux- oder Windows
 
 Es wird wie folgt aufgerufen: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Das Tool validiert die Apache- und Dispatcher-Konfiguration. Es scannt alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` und prüft, ob nur in der Whitelist eingetragene Anweisungen verwendet werden. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Whitelist-Befehl des Validators ausführen:
+Das Tool validiert die Apache- und Dispatcher-Konfiguration. Es scannt alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` und prüft, ob nur in der Zulassungsliste eingetragene Anweisungen verwendet werden. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 
 ```
 $ validator whitelist
@@ -239,9 +239,9 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Anweisungen finden, indem sie den Whitelist-Befehl des Validators im SDK ausführen, wie oben beschrieben.
+Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Anweisungen finden, indem sie den Zulassungslistenbefehl des Validators im SDK ausführen, wie oben beschrieben.
 
-Die Whitelist enthält eine Liste der Apache-Anweisungen, die in einer Kundenkonfiguration zulässig sind. Wenn eine Anweisung nicht in der Whitelist enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code zurück, der ungleich 0 ist. Wenn in der Befehlszeile keine Whitelist angegeben ist (auf diese Weise sollte sie aufgerufen werden), verwendet das Tool eine standardmäßige Whitelist, die Cloud Manager vor der Bereitstellung in Cloud-Umgebungen zur Validierung nutzt.
+Die Zulassungsliste enthält eine Liste der Apache-Anweisungen, die in einer Kundenkonfiguration zulässig sind. Wenn eine Anweisung nicht in der Zulassungsliste enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code zurück, der ungleich 0 ist. Wenn in der Befehlszeile keine Zulassungsliste angegeben ist (auf diese Weise sollte sie aufgerufen werden), verwendet das Tool eine standardmäßige Zulassungsliste, die Cloud Manager vor der Bereitstellung in Cloud-Umgebungen zur Validierung nutzt.
 
 Außerdem werden alle Dateien mit dem Muster `conf.dispatcher.d/enabled_farms/*.farm` gescannt und folgende Punkte geprüft:
 
@@ -259,7 +259,7 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Whitelist enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
+Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Zulassungsliste enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
 
 Wenn keine Validierungsfehler gemeldet werden, kann Ihre Konfiguration bereitgestellt werden.
 
@@ -372,7 +372,7 @@ Dadurch wird Dispatcher in einem Container gestartet, wobei sein Backend auf ein
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-Protokollebenen werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var`s&quot; definiert. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
+Protokollebenen werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var` definiert. Weitere Informationen finden Sie in der [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging).
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
@@ -493,7 +493,7 @@ Wenn `conf.d/variables` jetzt eine einzelne Datei enthält, sollte sie in `custo
 
 Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die `Include`-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 
-### Entfernen von Whitelists
+### Entfernen von Zulassungslisten
 
 Entfernen Sie den Ordner `conf.d/whitelists` und entfernen Sie `Include`-Anweisungen in den Virtual-Host-Dateien, die auf eine Datei in diesem Unterordner verweisen.
 
@@ -514,7 +514,7 @@ $ validator httpd .
 
 Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
-Wenn Sie Apache-Anweisungen sehen, die nicht in der Whitelist enthalten sind, entfernen Sie sie.
+Wenn Sie Apache-Anweisungen sehen, die nicht in der Zulassungsliste enthalten sind, entfernen Sie sie.
 
 ### Alle Nicht-Publish-Farmen entfernen
 
