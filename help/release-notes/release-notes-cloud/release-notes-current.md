@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.'
+description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
 source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
@@ -18,9 +18,9 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Neuerungen {#what-is-new-commerce}
 
-* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Unterstützung von Eigenschaften für Kategorien und Produkte in der Produktkonsole wird ebenfalls bereitgestellt.
+* Product Console feature is now available. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Support for properties for catogories and products in the Product Console also provided.
 
-* Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
+* Product and Category Pickers improved to allow marketers to select product via SKU or select category via category ID.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -30,7 +30,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 ### Neuerungen {#what-is-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Whenever a production pipeline is run, a new Content Audit step will be included in the pipeline after custom functional testing which will evaluate the site against a number of dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).
 
    Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
@@ -38,7 +38,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
-* Authentifizierungsgebundene private Maven-Repositorys werden jetzt unterstützt.
+* Authentication-bound Private Maven Repositories are now supported.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -48,7 +48,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * In einigen Fällen wurden abgeschlossene Pipeline-Hinrichtungen nicht erfolgreich als abgeschlossen aufgezeichnet, wodurch neue Hinrichtungen der Pipeline verhindert wurden.
 
-* Hinrichtungen von Pipeline würden gelegentlich aufgrund interner Kommunikationsprobleme *feststecken* .
+* Pipeline executions would occasionally get *stuck* due to internal communication issues.
 
 * Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit Administratorrollen, die keine Systemadministratoren waren, fälschlicherweise Zugriff auf Cloud Manager.
 
@@ -64,21 +64,21 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
 
-* The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
+* Auf der Registerkarte &quot;Content Audit&quot;wird die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne anstelle der Veröffentlichungsdomäne angezeigt.
 
-* In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
+* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
 
 ## Content Transfer-Tool {#content-transfer-tool}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Content Transfer Tool Version 1.0.4.
+Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.0.4.
 
 ### Neuerungen {#what-is-new-ctt}
 
-* Content Transfer Tool now supports Shared S3 DataStore.
+* Content Transfer Tool unterstützt jetzt den freigegebenen S3 DataStore.
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Additional timeouts added for the tool to complete actions.
+* Zusätzliche Timeouts, die hinzugefügt wurden, damit das Tool Aktionen abschließen kann.
 
-* Earlier version UI sometimes displayed successful extraction even though log showed errors.
+* In früheren Versionen der Benutzeroberfläche wurde manchmal eine erfolgreiche Extraktion angezeigt, obwohl Fehler im Protokoll auftraten.
 
