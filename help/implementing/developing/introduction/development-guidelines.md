@@ -1,11 +1,11 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Noch auszufüllen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien          im `/crx-quickstart/logs`-Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien           im `/crx-quickstart/logs`-Ordner geschrieben.
 
 In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -171,25 +171,25 @@ Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsum
 
 Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
 
-## IP-Adresse des dedizierten Fortschritts {#dedicated-egress-ip-address}
+## Dedizierte Ausgangs-IP-Adresse {#dedicated-egress-ip-address}
 
-Auf Anfrage stellt AEM als Cloud Service eine statische, dedizierte IP-Adresse für HTTP (Port 80) und HTTPS (Port 443)-ausgehenden Traffic bereit, der im Java-Code programmiert ist.
+Auf Anfrage stellt AEM as a Cloud Service eine dedizierte statische IP-Adresse für den in Java-Code programmierten ausgehenden HTTP (Port 80)- und HTTPS (Port 443)-Traffic bereit.
 
 ### Vorteile {#benefits}
 
-Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie einem CRM-Anbieter) oder anderen Integrationen außerhalb AEM Angebots als Cloud Service einer IP-Adresse erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Datenverkehr vom AEM Cloud Service des Kunden in den externen Dienst fließen darf. Dies ist zusätzlich zum Traffic von anderen zulässigen IPs möglich.
+Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service, die eine Zulassungsliste von IP-Adressen anbieten, erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud Service des Kunden in den externen Dienst fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
 
-Ohne die Funktion für die dedizierte IP-Adresse wird Datenverkehr, der als Cloud Service aus AEM kommt, durch eine Reihe von IPs geleitet, die mit anderen Kunden geteilt werden.
+Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kunden gemeinsam genutzt werden.
 
 ### Konfiguration {#configuration}
 
-Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Kundensupport, der die IP-Adressinformationen bereitstellt. In der Anforderung sollten die einzelnen Umgebung angegeben werden, und es sollten zusätzliche Anforderungen gestellt werden, wenn neue Umgebung die Funktion nach der ursprünglichen Anforderung benötigen. Sandbox-Programm-Umgebung werden nicht unterstützt.
+Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Support, der die IP-Adressinformationen bereitstellt. In der Anfrage sollten die einzelnen Umgebungen angegeben werden. Außerdem sollten zusätzliche Anfragen gestellt werden, wenn neue Umgebungen die Funktion nach der ursprünglichen Anfrage benötigen. Sandbox-Programmumgebungen werden nicht unterstützt.
 
-### Funktionsverwendung {#feature-usage}
+### Verwendung der Funktion {#feature-usage}
 
-Die Funktion ist mit Java-Code oder mit Bibliotheken kompatibel, die zu ausgehenden Traffic führen, sofern sie standardmäßige Java-Systemeigenschaften für Proxykonfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken beinhalten.
+Die Funktion ist mit Java-Code oder Bibliotheken kompatibel, die zu ausgehendem Datenverkehr führen, sofern sie Standard-Java-Systemeigenschaften für Proxy-Konfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken umfassen.
 
-Nachfolgend finden Sie ein Codebeispiel:
+Nachfolgend finden Sie ein Code-Beispiel:
 
 ```
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -205,10 +205,10 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Die gleiche IP-Adresse gilt für alle Programm eines Kunden in seiner Adobe Organisation und für alle Umgebung in jedem Programm. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
+Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Organisation und auf alle Umgebungen in jedem seiner Programme angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
 
-Nur HTTP- und HTTPS-Anschlüsse werden unterstützt. Dies schließt HTTP/1.1 sowie HTTP/2 ein, wenn sie verschlüsselt sind.
+Es werden nur HTTP- und HTTPS-Ports unterstützt. Dies schließt bei Verschlüsselung HTTP/1.1 sowie HTTP/2 ein.
 
-### Debugging-Überlegungen {#debugging-considerations}
+### Überlegungen zum Debuggen {#debugging-considerations}
 
-Um zu überprüfen, ob der Traffic tatsächlich an der erwarteten dedizierten IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip)aufzurufen, der die aufrufende IP-Adresse zurückgibt.
+Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debug-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
