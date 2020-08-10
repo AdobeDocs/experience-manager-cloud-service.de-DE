@@ -1,9 +1,9 @@
 ---
 title: 'Repository-Strukturpaket von AEM-Projekten  '
 description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
 ht-degree: 100%
 
