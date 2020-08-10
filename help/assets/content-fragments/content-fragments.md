@@ -1,11 +1,11 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 
 Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren und Pflegen von Inhaltsfragmenten beschrieben: 
 
-* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)         – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
+* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)            – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Master-Version
+* [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
 * [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md) – Anzeigen und Bearbeiten der Fragmenteigenschaften
@@ -53,7 +53,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen. 
 
-## Inhaltsfragmente und Content Services       {#content-fragments-and-content-services}
+## Inhaltsfragmente und Content Services          {#content-fragments-and-content-services}
 
 Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Webseiten hinweg generalisiert werden.
 
@@ -72,7 +72,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >[!NOTE]
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sind unterschiedliche Funktionen in AEM:
->* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 
 >
@@ -83,7 +83,7 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 >[!NOTE]
 >
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.  
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten.
 
 <!--
 >[!NOTE]
@@ -154,7 +154,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Fragmentabsätze**
 
-   * Textblöcke, häufig mehrzeilig, die als einzelne Entitäten getrennt werden.
+   * Textblöcke, häufig mehrzeilig, die als einzelne Entitäten getrennt sind.
 
    * In den Modi [Rich-Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) und [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kann ein Absatz als Kopfzeile formatiert werden. In diesem Fall gehören dieser und der folgende Absatz als eine Einheit zusammen.
 
@@ -203,23 +203,23 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    >
    >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
 
-* **Master**
+* **Vorlage**
 
    * Integraler Bestandteil des Fragments: 
 
-      * Jedes Inhaltsfragment hat eine Masterinstanz.
-      * Der Master kann gelöscht werden. 
-   * Auf den Master kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)**zugegriffen werden.
-   * Der Master ist keine Variante an sich, sondern die Grundlage aller Varianten.
+      * Jedes Inhaltsfragment hat eine Vorlageninstanz.
+      * Die Vorlage kann gelöscht werden. 
+   * Auf die primäre Vorlage kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)**zugegriffen werden.
+   * Die Vorlage ist keine Variante an sich, sondern die Grundlage aller Varianten.
 
 
 * **Varianten**
 
    * Ausgabeformate von Fragmenttext, eigens zu redaktionellen Zwecken. Diese können mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch; auch für lokale Ad-hoc-Änderungen geeignet;
-   * werden als Kopien vom **Master** erstellt, können dann aber nach Bedarf bearbeitet werden; gewöhnlich kommt es zu einer Inhaltsüberlappung zwischen den Varianten;
+   * werden als Kopien von der **Vorlage** erstellt, können dann aber nach Bedarf bearbeitet werden; gewöhnlich kommt es zu einer Inhaltsüberlappung zwischen den Varianten;
    * können beim Erstellen von Fragmenten definiert werden;
    * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
-   * können mit dem Master [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Masterinhalt aktualisiert wurde; 
+   * können mit der Vorlage [synchronisiert](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde; 
    * können [zusammengefasst](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
    * sind auf der Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) des Fragment-Editors verfügbar.
 
@@ -247,8 +247,8 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Erforderlich zum [Erstellen eines Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments). 
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren - sofern zutreffend.
-   * Autoren können die definierte Struktur ändern, wenn sie den Fragmentinhalt erstellen.
+   * Das Modell kann Standardinhalte definieren – sofern zutreffend.
+   * Autoren können die definierte Struktur nicht ändern, wenn sie den Fragmentinhalt erstellen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 
 * **Inhaltsfragment-Komponente**
@@ -259,7 +259,7 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
-## Anwendungsbeispiel        {#example-usage}
+## Anwendungsbeispiel           {#example-usage}
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
