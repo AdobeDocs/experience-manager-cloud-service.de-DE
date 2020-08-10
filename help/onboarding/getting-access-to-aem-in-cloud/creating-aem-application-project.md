@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 82%
+source-wordcount: '1406'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um ein AEM-Anwendungsprojekt in Cloud Manager zu erstel
 
    ![](assets/create-wizard2.png)
 
-1. Die Kachel &quot; **Projekterstellung in Bearbeitung** &quot;wird im Bildschirm &quot; *Programm-Übersicht* &quot;angezeigt.
+1. The **Project Creation in Progress** tile displays on the *Program Overview* screen.
 
    ![](assets/create-wizard3.png)
 
@@ -45,7 +45,7 @@ Damit vorhandene AEM-Projekte erfolgreich in Cloud Manager erstellt und bereitge
 * Projekte müssen mit Apache Maven erstellt werden.
 * Im Stammverzeichnis des Git-Repositorys muss eine Datei *pom.xml* vorhanden sein. Diese *pom.xml*-Datei kann ggf. auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen usw.) wie nötig.
 
-* Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren *pom.xml*-Dateien hinzufügen. Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei der Konfiguration unterstützt. Der Zugriff auf netzwerkgeschützte Artefakt-Repositorys wird jedoch nicht unterstützt.
+* Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren *pom.xml*-Dateien hinzufügen. Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei entsprechender Konfiguration unterstützt. Allerdings wird der Zugriff auf netzwerkgeschützte Artefakte nicht unterstützt.
 * Bereitstellbare Inhaltspakete werden erkannt, wenn Sie nach Inhaltspaketen im *ZIP*-Format suchen, die in einem Verzeichnis mit dem Namen *target* enthalten sind. Eine beliebige Anzahl von Untermodulen kann Inhaltspakete produzieren.
 
 * Bereitstellbare Dispatcher-Artefakte werden erkannt, wenn Sie nach *ZIP*-Dateien (ebenfalls in einem Verzeichnis namens *target*) suchen, die Verzeichnisse mit den Namen *conf* und *conf.d* enthalten.
@@ -59,7 +59,6 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
 * Apache Maven 3.6.0 ist installiert.
-* Mit der Java-Version wurden Oracle JDK 8u202 und 11.0.2 installiert.
 * Es sind einige zusätzliche erforderliche Systempakete installiert:
 
    * bzip2
@@ -96,7 +95,7 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 | CM_PROGRAM_ID | Numerische Programmkennung |
 | CM_PROGRAM_NAME | Name des Programms |
 | ARTIFACTS_VERSION | Die von Cloud Manager generierte synthetische Version bei einer Staging- oder Produktions-Pipeline |
-| CM_AEM_PRODUCT_VERSION | Der Name der Version |
+| CM_AEM_PRODUCT_VERSION | The Release name |
 
 ### Pipeline-Variablen {#pipeline-variables}
 
@@ -211,15 +210,15 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 
 ## Unterstützung für kennwortgeschütztes Maven-Repository {#password-protected-maven-repositories}
 
-Um ein kennwortgeschütztes Maven-Repository aus Cloud Manager zu verwenden, geben Sie das Kennwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](#pipeline-variables) an und verweisen Sie dann auf dieses Geheimnis in einer Datei mit dem Namen `.cloudmanager/maven/settings.xml` im git-Repository. Diese Datei folgt dem Schema [Maven Settings File](https://maven.apache.org/settings.html) . Wenn der Cloud Manager-Build-Beginn ausgeführt wird, wird das `<servers>` Element in dieser Datei mit der von Cloud Manager bereitgestellten `settings.xml` Standarddatei zusammengeführt. Wenn diese Datei vorhanden ist, wird die Server-ID von innerhalb eines `<repository>` und/oder `<pluginRepository>` -Elements in der `pom.xml` Datei aus referenziert. Im Allgemeinen würden diese `<repository>` und/oder `<pluginRepository>` Elemente in einem [Cloud Manager-spezifischen Profil]{#activating-maven-profiles-in-cloud-manager}enthalten sein, auch wenn dies nicht unbedingt erforderlich ist.
+Um ein kennwortgeschütztes Maven-Repository aus Cloud Manager zu verwenden, geben Sie das Kennwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](#pipeline-variables) an und verweisen Sie dann in einer Datei im git-Repository mit dem Namen `.cloudmanager/maven/settings.xml` auf dieses Geheimnis. Diese Datei folgt dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html). Wenn der Build-Vorgang von Cloud Manager gestartet wird, wird das `<servers>`-Element in dieser Datei mit der von Cloud Manager bereitgestellten `settings.xml`-Standarddatei zusammengeführt. Wenn diese Datei vorhanden ist, wird die Server-ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert. Im Allgemeinen wären diese `<repository>`- und/oder `<pluginRepository>`-Elemente in einem [Cloud Manager-spezifischen Profil]{#activating-maven-profiles-in-cloud-manager} enthalten, auch wenn dies nicht unbedingt erforderlich ist.
 
-Beispiel: Das Repository befindet sich unter https://repository.myco.com/maven2, der Benutzername Cloud Manager sollte verwendet werden `cloudmanager` und das Kennwort lautet `secretword`.
+Beispiel: Das Repository befindet sich unter https://repository.myco.com/maven2, der von Cloud Manager zu verwendende Benutzername lautet `cloudmanager` und das Kennwort lautet `secretword`.
 
-Legen Sie zunächst das Kennwort als geheim auf der Pipeline fest:
+Legen Sie zunächst in der Pipeline das Kennwort als geheim fest:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
 
-Verweisen Sie anschließend auf diese `.cloudmanager/maven/settings.xml` Datei:
+Verweisen Sie anschließend aus der `.cloudmanager/maven/settings.xml`-Datei darauf:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -235,7 +234,7 @@ Verweisen Sie anschließend auf diese `.cloudmanager/maven/settings.xml` Datei:
 </settings>
 ```
 
-Verweisen Sie schließlich auf die Server-ID in der `pom.xml` Datei:
+Verweisen Sie schließlich auf die Server-ID in der `pom.xml`-Datei:
 
 ```xml
 <profiles>
