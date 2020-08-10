@@ -62,7 +62,7 @@ ht-degree: 100%
       + [Arbeiten mit Workflows](authoring/workflows/overview.md)
       + [Anwenden von Workflows auf Seiten ](authoring/workflows/applying.md)
       + [Teilnehmen an Workflows](authoring/workflows/participating.md)
-   + Personalisierung  {#personalization}
+   + Personalisierung   {#personalization}
       + [Überblick über die Personalisierung](authoring/personalization/overview.md)
       + [Vorschau von Seiten mit ContextHub-Daten ](authoring/personalization/contexthub.md)
       + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
