@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 66%
 # Grundlegendes zu Testergebnissen – Cloud Services {#understand-test-results}
 
 Cloud Manager für Cloud Services -Pipeline-Ausführungen unterstützen die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden. Dies steht im Gegensatz zu Tests, die während des Build- und Unit-Testschritts ausgeführt werden, die offline ohne Zugriff auf eine laufende AEM-Umgebung durchgeführt werden.
-In diesem Zusammenhang werden zwei Typen von Tests durchgeführt:
+In diesem Zusammenhang werden drei Testtypen ausgeführt:
 * Vom Kunden geschriebene Tests
 * Von Adobe geschriebene Tests
 * Open Source-Tool powered by Lighthouse from Google
@@ -138,13 +138,13 @@ Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig
 
 Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
-Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
+It validates the deployment process and helps ensure that changes deployed:
 
-1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
+1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
 
 1. Schließen Sie keine Regressionen in diese Dimensionen ein.
 
-Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der Endbenutzer auf der Site auf höchstem Niveau gehalten wird. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
+Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
 ### Informationen zu den Ergebnissen der Inhaltsprüfung {#understanding-content-audit-results}
 
@@ -155,11 +155,11 @@ Content Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene �
 * Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
 * Der Verlauf der Testergebnisse wird innerhalb von Cloud Manager beibehalten, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung vorgenommen werden, Regressionen aus der vorherigen Ausführung enthalten.
 
-#### Aggregat-Ergebnisse {#aggregate-scores}
+#### Aggregate Scores {#aggregate-scores}
 
-Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
+There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
 
-Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
+The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs.
 
 Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
@@ -169,7 +169,7 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 * **Keine Änderung** - die Seite(n) hat/haben seit dem letzten Produktionszyklus denselben Wert erreicht
 
-* **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
+* **N/A** - there was no previous score available to compare to
 
    ![](assets/content-audit-test1.png)
 
@@ -177,7 +177,7 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung gegenüber der vorherigen Ausführung des Tests.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
+Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
 
 ![](assets/page-level-scores.png)
 
