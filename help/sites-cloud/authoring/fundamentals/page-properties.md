@@ -1,11 +1,11 @@
 ---
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Einschaltzeit**
 
-   * Datum und Uhrzeit der Aktivierung der veröffentlichten Seite. Nach der Veröffentlichung ruht die Seite bis zu diesem Zeitpunkt. 
-   * Lassen Sie diese Felder leer, wenn die Seite sofort veröffentlicht werden soll (der Normalfall).
+   * The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+
+      >[!NOTE]
+      >
+      > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+
+      * Wenn diese Seite bereits [veröffentlicht wurde (manuell)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , wird sie bis zum Rendern zur angegebenen Zeit ruhend (ausgeblendet) gehalten.
+      * Wenn die Seite nicht veröffentlicht und für die automatische Replizierung konfiguriert ist, wird sie automatisch veröffentlicht und dann zur festgelegten Zeit gerendert.
+      * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replizierung konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404 angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+   * Lassen Sie diese Felder (**On Time** and **Off Time**) für Seiten, die Sie sofort veröffentlichen möchten und die auf der Umgebung &quot;publish&quot;verfügbar sind, leer, bis sie deaktiviert sind (im Normalfall).
 
 * **Ausschaltzeit**
 
-   * Datum und Uhrzeit der Deaktivierung der veröffentlichten Seite.
-   * Lassen Sie diese Felder für sofortige Maßnahmen leer.
+   * Parallel zur **On-Time** definiert dies den Zeitpunkt, zu dem die veröffentlichte Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
+   * Lassen Sie diese Felder (**On Time** and **Off Time**) für Seiten, die Sie sofort veröffentlichen möchten und die auf der Umgebung &quot;publish&quot;verfügbar sind, leer, bis sie deaktiviert sind (im Normalfall).
 
 * **Vanity-URL**
 
