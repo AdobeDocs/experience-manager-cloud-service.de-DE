@@ -2,17 +2,17 @@
 title: Replikation
 description: Distribution und Fehlerbehebung bei der Replikation.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 3%
 
 ---
 
 
 # Replikation {#replication}
 
-Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um den Inhalt in einen Pipelineservice zu verschieben, der auf Adobe I/O ausgeführt wird und sich außerhalb der AEM-Laufzeit befindet.
+Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um den Inhalt zu verschieben, um ihn in einen Pipelineservice zu replizieren, der auf einer Adobe-I/O ausgeführt wird, die sich außerhalb der AEM Laufzeitumgebung befindet.
 
 >[!NOTE]
 >
@@ -22,31 +22,39 @@ Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribu
 
 ### Schnelle Veröffentlichung rückgängig machen/planen - Veröffentlichung rückgängig machen/veröffentlichen {#publish-unpublish}
 
-Diese AEM-Standardfunktionen für Autoren ändern sich nicht mit AEM Cloud Service.
+Diese Standard-AEM-Funktionen für die Autoren ändern sich nicht mit AEM Cloud Service.
+
+### An- und Ausschalten - Konfiguration auslösen {#on-and-off-times-trigger-configuration}
+
+Die zusätzlichen Möglichkeiten für **An- und** Ausschaltzeit **sind auf der Registerkarte** Grundeinstellungen der Seiteneigenschaften [](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)verfügbar.
+
+Um die automatische Replizierung dafür zu realisieren, müssen Sie die **automatische Replizierung** in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger-Konfiguration** aktivieren:
+
+![OSGi-On-Off-Auslöserkonfiguration](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Aktivieren eines Baumes {#tree-activation}
 
-So führen Sie eine Baumstruktur-Aktivierung durch:
+To perform a tree activation:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
-2. Wählen Sie die Karte **forwardPublisher aus**
-3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die **Option &quot;Verteilen&quot;.**
+1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
+2. Select the card **forwardPublisher**
+3. Once in the forwardPublisher Web console UI, **select Distribute**
 
-   ![](assets/distribute.png "DistributeDistribute")
-4. Wählen Sie den Pfad im Pfadbrowser aus, fügen Sie einen Knoten, eine Struktur oder löschen Sie ihn nach Bedarf und wählen Sie **Senden**
+   ![Distribute](assets/distribute.png "Distribute")
+4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
 
 ## Fehlerbehebung {#troubleshooting}
 
-Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM Author-Dienstes:
+To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
-2. Wählen Sie die Karte **forwardPublisher aus**
-   ![](assets/status.png "StatusStatus")
-3. Überprüfen des Warteschlangenstatus, der grün sein sollte
-4. Sie können die Verbindung zum Replizierungsdienst testen
-5. Wählen Sie die Registerkarte &quot; **Protokolle** &quot;aus, auf der der Verlauf der Veröffentlichungen angezeigt wird
+1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
+2. Select the card **forwardPublisher**
+   ![Status](assets/status.png "Status")
+3. Check the queue status which should be green
+4. You can test the connection to the replication service
+5. Select the **Logs** tab which shows the history of content publications
 
 ![](assets/logs.png "LogsLogs")
 
-Wenn die Inhalte nicht veröffentlicht werden konnten, wird die gesamte Veröffentlichung vom AEM Publish-Dienst zurückgesetzt.
+Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM Publish-Dienst zurückgesetzt.
 In diesem Fall sollten die Warteschlangen überprüft werden, um festzustellen, welche Elemente die Löschung der Veröffentlichung verursacht haben. Wenn Sie auf eine Warteschlange mit einem roten Status klicken, wird die Warteschlange mit ausstehenden Elementen angezeigt, von der aus einzelne oder alle Elemente bei Bedarf gelöscht werden können.
