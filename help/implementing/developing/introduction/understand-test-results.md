@@ -2,9 +2,9 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
+source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1598'
 ht-degree: 60%
 
 ---
@@ -104,7 +104,7 @@ Funktionstests werden in zwei Typen eingeteilt:
 
 Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zu den Kernfunktionen in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn diese Kernfunktionalität nicht mehr funktioniert.
 
-Sie werden automatisch ausgeführt, wenn ein Kunde neuen Code für Cloud Manager bereitstellt.
+Produktfunktionstests werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt.
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -169,9 +169,9 @@ Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestel
 
 1. Schließen Sie keine Regressionen in diese Dimensionen ein.
 
-Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der Endbenutzer auf der Site auf höchstem Niveau gehalten wird. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
 
-### Understanding Content Audit Results {#understanding-content-audit-results}
+### Informationen zu den Ergebnissen der Inhaltsprüfung {#understanding-content-audit-results}
 
 Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
 
@@ -180,7 +180,7 @@ Content Audit provides aggregate and detailed page-level test results via the Pr
 * Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
-#### Aggregate Scores {#aggregate-scores}
+#### Aggregat-Ergebnisse {#aggregate-scores}
 
 Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
 
