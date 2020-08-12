@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 60%
+source-wordcount: '1620'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,7 @@ Folgende Tests sind möglich:
 
 * Vom Kunden geschriebene
 * Adobe geschrieben
-* Open Source-Tool (powered by Lighthouse from Google)
+* Open source tool (powered by Lighthouse from Google)
 
    >[!NOTE]
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
@@ -91,7 +91,7 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 >Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
 
 >[!NOTE]
->Es gibt zwar keinen expliziten Sicherheitstestschritt, es gibt jedoch weiterhin sicherheitsbezogene Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Weitere Informationen finden Sie unter [Sicherheitsübersicht AEM als Cloud Service](/help/security/cloud-service-security-overview.md) .
+>While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
 
 ## Funktionstests {#functional-testing}
 
@@ -104,7 +104,9 @@ Funktionstests werden in zwei Typen eingeteilt:
 
 Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zu den Kernfunktionen in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn diese Kernfunktionalität nicht mehr funktioniert.
 
-Produktfunktionstests werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt.
+Produktfunktionstests werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt und nicht übersprungen werden kann.
+
+Beziehen Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) für Mustertests herunter.
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -163,7 +165,7 @@ Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so k
 
 Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
-It validates the deployment process and helps ensure that changes deployed:
+Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
 
 1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
@@ -175,8 +177,8 @@ Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der End
 
 Content Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene über die Seite zur Ausführung der Produktionspipeline.
 
-* Aggregate level metrics measure the average score across the pages that were audited.
-* Individual page level scores are also available via drill down.
+* Metriken auf Aggregat-Ebene messen den Durchschnittswert der geprüften Seiten.
+* Einzelne Seitenergebnisse sind auch per Drilldown verfügbar.
 * Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
@@ -190,17 +192,17 @@ Value of Change metric may be one of the following:
 
 * **Positiver Wert** : Die Seite(n) wurde(n) seit dem letzten Produktionsablauf beim ausgewählten Test verbessert.
 
-* **Negativer Wert** : Die Seite(n) ist/sind seit dem letzten Produktionszyklus auf dem ausgewählten Test zurückgekehrt
+* **Negative value** - the page(s) have regressed on the selected test since the last production pipeline run
 
 * **Keine Änderung** - die Seite(n) hat/haben seit dem letzten Produktionszyklus denselben Wert erreicht
 
-* **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
+* **N/A** - there was no previous score available to compare to
 
    ![](assets/content-audit-test1.png)
 
-#### Page-level Scores {#page-level-scores}
+#### Bewertungen auf Seitenebene {#page-level-scores}
 
-Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
+Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung gegenüber der vorherigen Ausführung des Tests.
 
 Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse.
 
