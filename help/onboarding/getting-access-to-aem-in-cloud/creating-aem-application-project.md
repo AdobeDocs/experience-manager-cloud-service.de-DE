@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 92%
+source-wordcount: '1472'
+ht-degree: 91%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um ein AEM-Anwendungsprojekt in Cloud Manager zu erstel
 
    ![](assets/create-wizard2.png)
 
-1. Die Kachel &quot; **Projekterstellung in Bearbeitung** &quot;wird im Bildschirm &quot; *Programm-Übersicht* &quot;angezeigt.
+1. The **Project Creation in Progress** tile displays on the *Program Overview* screen.
 
    ![](assets/create-wizard3.png)
 
@@ -210,7 +210,7 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 
 ## Unterstützung für kennwortgeschütztes Maven-Repository {#password-protected-maven-repositories}
 
-Um ein kennwortgeschütztes Maven-Repository aus Cloud Manager zu verwenden, geben Sie das Kennwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](#pipeline-variables) an und verweisen Sie dann in einer Datei im git-Repository mit dem Namen `.cloudmanager/maven/settings.xml` auf dieses Geheimnis. Diese Datei folgt dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html). Wenn der Build-Vorgang von Cloud Manager gestartet wird, wird das `<servers>`-Element in dieser Datei mit der von Cloud Manager bereitgestellten `settings.xml`-Standarddatei zusammengeführt. Server-IDs, die mit `adobe` und `cloud-manager` als reserviert gelten, sollten nicht von benutzerdefinierten Servern verwendet werden. Server-IDs, die **nicht** mit einem dieser Präfixe übereinstimmen, oder die Standard-ID `central` werden nie von Cloud Manager gespiegelt. Wenn diese Datei vorhanden ist, wird die Server-ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
+Um ein kennwortgeschütztes Maven-Repository aus Cloud Manager zu verwenden, geben Sie das Kennwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](#pipeline-variables) an und verweisen Sie dann in einer Datei im git-Repository mit dem Namen `.cloudmanager/maven/settings.xml` auf dieses Geheimnis. Diese Datei folgt dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html). Wenn der Build-Vorgang von Cloud Manager gestartet wird, wird das `<servers>`-Element in dieser Datei mit der von Cloud Manager bereitgestellten `settings.xml`-Standarddatei zusammengeführt. Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers. Server-IDs, die **nicht** mit einem dieser Präfixe übereinstimmen, oder die Standard-ID `central` werden nie von Cloud Manager gespiegelt. Wenn diese Datei vorhanden ist, wird die Server-ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
 Beispiel: Das Repository befindet sich unter https://repository.myco.com/maven2, der von Cloud Manager zu verwendende Benutzername lautet `cloudmanager` und das Kennwort lautet `secretword`.
 
@@ -336,7 +336,7 @@ Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, d.
 
 >[!NOTE]
 >
->Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. If you need a system package installed on the AEM environment, contact your Adobe Representative.
+>Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein auf der AEM Umgebung installiertes Systempaket benötigen, wenden Sie sich an Ihren Kundenbetreuer für Adobe.
 
 ## Überspringen von Inhaltspaketen {#skipping-content-packages}
 
@@ -374,3 +374,12 @@ Mit dem content-package-maven-Plugin ist es ähnlich:
             </configuration>
         </plugin>
 ```
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Refer to the sections below to learn how to use Cloud Manager in Cloud Service:
+
+* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
+* [Configure your CI-CD Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
+* [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
+* [Grundlegendes zu Testergebnissen](/help/implementing/developing/introduction/understand-test-results.md)
