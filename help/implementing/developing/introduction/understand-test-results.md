@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 59%
+source-wordcount: '1596'
+ht-degree: 60%
 
 ---
 
@@ -20,14 +20,14 @@ Es gibt drei große Kategorien von Tests, die von Cloud Manager für Cloud Servi
 1. [Funktionstests](#functional-testing)
 1. [Content Audit-Tests](#content-audit-testing)
 
-These tests can be:
+Folgende Tests sind möglich:
 
-* Customer-written
-* Adobe-written
+* Vom Kunden geschriebene
+* Adobe geschrieben
 * Powered by Lighthouse von Google als Open-Source-Tool
 
    >[!NOTE]
-   > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
+   > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
 
 
 ## Testen der Codequalität {#code-quality-testing}
@@ -95,17 +95,16 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 
 ## Funktionstests {#functional-testing}
 
-Functional testing is categorized into two types:
+Funktionstests werden in zwei Typen eingeteilt:
 
 * Funktionstests für das Produkt
 * Benutzerdefinierte Funktionstests
 
 ### Funktionstests für das Produkt {#product-functional-testing}
 
-Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zum Erstellen und Replizieren, mit denen verhindert wird, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn die Kernfunktionalität in AEM gestört wird.
-They run automatically whenever a customer deploys new code to Cloud Manager.
+Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zu den Kernfunktionen in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn diese Kernfunktionalität nicht mehr funktioniert.
 
-The Product Functional testing step in the pipeline is always present and cannot be skipped.This step is current done immediately after the stage deployment.
+Sie werden automatisch ausgeführt, wenn ein Kunde neuen Code für Cloud Manager bereitstellt.
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -164,36 +163,36 @@ Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so k
 
 Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
-It validates the deployment process and helps ensure that changes deployed:
+Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
 
 1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
-1. Do not include regressions in these dimensions.
+1. Schließen Sie keine Regressionen in diese Dimensionen ein.
 
-Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der Endbenutzer auf der Site auf höchstem Niveau gehalten wird. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+Content Audit in Cloud Manager ensures that the end users digital experience on the site may be maintained at the highest standards. The results are informational and allow the user to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
-### Informationen zu den Ergebnissen der Inhaltsprüfung {#understanding-content-audit-results}
+### Understanding Content Audit Results {#understanding-content-audit-results}
 
 Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
 
 * Aggregate level metrics measure the average score across the pages that were audited.
 * Individual page level scores are also available via drill down.
-* Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
+* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
-#### Aggregat-Ergebnisse {#aggregate-scores}
+#### Aggregate Scores {#aggregate-scores}
 
 Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
 
 Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
 
-Value of Change metric may be one of the following:
+Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 * **Positiver Wert** : Die Seite(n) wurde(n) seit dem letzten Produktionsablauf beim ausgewählten Test verbessert.
 
 * **Negativer Wert** : Die Seite(n) ist/sind seit dem letzten Produktionszyklus auf dem ausgewählten Test zurückgekehrt
 
-* **No Change** - the page(s) have scored the same since the last production pipeline run
+* **Keine Änderung** - die Seite(n) hat/haben seit dem letzten Produktionszyklus denselben Wert erreicht
 
 * **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
 
