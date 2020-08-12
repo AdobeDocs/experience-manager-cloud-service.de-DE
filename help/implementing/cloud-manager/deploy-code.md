@@ -2,9 +2,9 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 86%
 
 ---
@@ -51,12 +51,12 @@ Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfigurier
    **Staging-Tests** umfassen die folgenden Schritte:
 
    * Produktfunktionstests: Cloud Manager-Pipeline-Hinrichtungen unterstützen die Ausführung von Tests, die mit der Umgebung der Phase ausgeführt werden.
-Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+Einzelheiten zum Testprozess finden Sie unter [Produktfunktionstests](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) .
 
    * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
-      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+      Einzelheiten zum Testprozess finden Sie unter [Benutzerdefinierte Funktionstests](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) .
 
-   * Content Audit: This step in the pipeline is always present and cannot be skipped. Während eine Produktions-Pipeline ausgeführt wird, wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Inhaltsprüfung eingefügt. Die konfigurierten Seiten werden an den Dienst gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
+   * Content Audit: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Während eine Produktions-Pipeline ausgeführt wird, wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Inhaltsprüfung eingefügt. Die konfigurierten Seiten werden an den Dienst gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
 Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) des Content Audit.
 
       ![](assets/testing-tab.png)
