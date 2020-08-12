@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 61%
+source-wordcount: '1614'
+ht-degree: 59%
 
 ---
 
@@ -14,20 +14,20 @@ ht-degree: 61%
 
 Cloud Manager für Cloud Services -Pipeline-Ausführungen unterstützen die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden. Dies steht im Gegensatz zu Tests, die während des Build- und Unit-Testschritts ausgeführt werden, die offline ohne Zugriff auf eine laufende AEM-Umgebung durchgeführt werden.
 
-There are three broad categories of tests supported by Cloud Manager for Cloud Services Pipeline:
+Es gibt drei große Kategorien von Tests, die von Cloud Manager für Cloud Services-Pipeline unterstützt werden:
 
 1. [Testen der Codequalität](#code-quality-testing)
 1. [Funktionstests](#functional-testing)
 1. [Content Audit-Tests](#content-audit-testing)
 
-Folgende Tests sind möglich:
+These tests can be:
 
-* Vom Kunden geschriebene
+* Customer-written
 * Adobe-written
-* Open Source-Tool powered by Lighthouse from Google
+* Powered by Lighthouse von Google als Open-Source-Tool
 
    >[!NOTE]
-   > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
+   > Both Customer-written tests and Adobe-written tests are run in a containerized infrastructure designed for running these types of tests.
 
 
 ## Testen der Codequalität {#code-quality-testing}
@@ -90,7 +90,10 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 >
 >Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
 
-## Functional Testing {#functional-testing}
+>[!NOTE]
+>Es gibt zwar keinen expliziten Sicherheitstestschritt, es gibt jedoch weiterhin sicherheitsbezogene Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Weitere Informationen finden Sie unter [Sicherheitsübersicht AEM als Cloud Service](/help/security/cloud-service-security-overview.md) .
+
+## Funktionstests {#functional-testing}
 
 Functional testing is categorized into two types:
 
@@ -102,7 +105,7 @@ Functional testing is categorized into two types:
 Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zum Erstellen und Replizieren, mit denen verhindert wird, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn die Kernfunktionalität in AEM gestört wird.
 They run automatically whenever a customer deploys new code to Cloud Manager.
 
-Der Schritt zum Testen der Produktfunktionalität in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Dieser Schritt wird derzeit unmittelbar nach der Bereitstellung der Phase durchgeführt.
+The Product Functional testing step in the pipeline is always present and cannot be skipped.This step is current done immediately after the stage deployment.
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -111,7 +114,7 @@ Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vor
 Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
 
 >[!NOTE]
->Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
+>Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 
 #### Schreiben von Funktionstests {#writing-functional-tests}
@@ -159,38 +162,38 @@ Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so k
 
 ## Content Audit-Tests {#content-audit-testing}
 
-Content Audit is a feature available in Cloud Manager Sites Production pipelines that is powered by Lighthouse, an open source tool from Google. This feature is enabled in all Cloud Manager Production pipelines.
+Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
-Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
+It validates the deployment process and helps ensure that changes deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, SEO (Search Engine Optimization), and PWA (Progressive Web App).
+1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
 1. Do not include regressions in these dimensions.
 
-Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der Endbenutzer auf der Site auf höchstem Niveau gehalten wird. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
+Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der Endbenutzer auf der Site auf höchstem Niveau gehalten wird. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
 
 ### Informationen zu den Ergebnissen der Inhaltsprüfung {#understanding-content-audit-results}
 
 Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
 
-* Metriken auf Aggregat-Ebene messen den Durchschnittswert der geprüften Seiten.
-* Einzelne Seitenergebnisse sind auch per Drilldown verfügbar.
+* Aggregate level metrics measure the average score across the pages that were audited.
+* Individual page level scores are also available via drill down.
 * Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
-* Der Verlauf der Testergebnisse wird innerhalb von Cloud Manager beibehalten, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung vorgenommen werden, Regressionen aus der vorherigen Ausführung enthalten.
+* A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
-#### Aggregate Scores {#aggregate-scores}
+#### Aggregat-Ergebnisse {#aggregate-scores}
 
 Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
 
 Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
 
-Der Wert der Änderungsmetrik kann einer der folgenden sein:
+Value of Change metric may be one of the following:
 
 * **Positiver Wert** : Die Seite(n) wurde(n) seit dem letzten Produktionsablauf beim ausgewählten Test verbessert.
 
 * **Negativer Wert** : Die Seite(n) ist/sind seit dem letzten Produktionszyklus auf dem ausgewählten Test zurückgekehrt
 
-* **Keine Änderung** - die Seite(n) hat/haben seit dem letzten Produktionszyklus denselben Wert erreicht
+* **No Change** - the page(s) have scored the same since the last production pipeline run
 
 * **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
 
@@ -198,9 +201,9 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 #### Bewertungen auf Seitenebene {#page-level-scores}
 
-By drilling into any of the tests, more detailed page level scoring can be seen. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
+Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung gegenüber der vorherigen Ausführung des Tests.
 
-Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
 
 ![](assets/page-level-scores.png)
 
