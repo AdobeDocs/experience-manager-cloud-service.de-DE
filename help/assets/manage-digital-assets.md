@@ -3,11 +3,11 @@ title: Verwalten von digitalen Assets in Experience Manager
 description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
-workflow-type: ht
-source-wordcount: '4419'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+workflow-type: tm+mt
+source-wordcount: '4435'
+ht-degree: 99%
 
 ---
 
@@ -46,6 +46,15 @@ Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] das Duplikat und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets die Leistung beeinträchtigen kann. Um die Funktion zu aktivieren, konfigurieren Sie die [!UICONTROL Duplikaterkennung für Cloud-Assets in Adobe AEM]. Erfahren Sie, [wie man OSGi-Konfigurationen durchführt](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Die Duplikaterkennung basiert auf dem eindeutigen Wert `dam:sha1`, der unter `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass doppelte Assets erkannt werden, selbst wenn die Dateinamen unterschiedlich sind.
 
 ![OSGi-Konfiguration zur Erkennung doppelter Assets](assets/duplicate-detection.png)
+
+Sie können die Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` im benutzerdefinierten Code hinzufügen und die Datei kann Folgendes enthalten:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
 
 Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte Assets an den Posteingang. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
 
