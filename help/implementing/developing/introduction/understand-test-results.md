@@ -2,9 +2,9 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
+source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1596'
 ht-degree: 60%
 
 ---
@@ -24,7 +24,7 @@ Folgende Tests sind möglich:
 
 * Vom Kunden geschriebene
 * Adobe geschrieben
-* Powered by Lighthouse von Google als Open-Source-Tool
+* Open Source-Tool (powered by Lighthouse from Google)
 
    >[!NOTE]
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
@@ -163,7 +163,7 @@ Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so k
 
 Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
-Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
+It validates the deployment process and helps ensure that changes deployed:
 
 1. Erfüllen Sie Grundstandards für Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
@@ -173,20 +173,20 @@ Content Audit in Cloud Manager stellt sicher, dass das digitale Erlebnis der End
 
 ### Informationen zu den Ergebnissen der Inhaltsprüfung {#understanding-content-audit-results}
 
-Content Audit provides aggregate and detailed page-level test results via the Production Pipeline execution page.
+Content Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene über die Seite zur Ausführung der Produktionspipeline.
 
 * Aggregate level metrics measure the average score across the pages that were audited.
 * Individual page level scores are also available via drill down.
 * Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
 * A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
 
-#### Aggregat-Ergebnisse {#aggregate-scores}
+#### Aggregate Scores {#aggregate-scores}
 
-Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
+There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
 
-Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
+The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs.
 
-Der Wert der Änderungsmetrik kann einer der folgenden sein:
+Value of Change metric may be one of the following:
 
 * **Positiver Wert** : Die Seite(n) wurde(n) seit dem letzten Produktionsablauf beim ausgewählten Test verbessert.
 
@@ -198,11 +198,11 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
    ![](assets/content-audit-test1.png)
 
-#### Bewertungen auf Seitenebene {#page-level-scores}
+#### Page-level Scores {#page-level-scores}
 
-Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung gegenüber der vorherigen Ausführung des Tests.
+Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. The user will be able to see how the individual pages scored for the specific test along with the change from the previous time the test was run.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
+Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse.
 
 ![](assets/page-level-scores.png)
 
