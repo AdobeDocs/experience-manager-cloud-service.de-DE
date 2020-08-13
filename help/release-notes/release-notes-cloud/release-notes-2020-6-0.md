@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 99%
+source-wordcount: '1955'
+ht-degree: 98%
 
 ---
 
@@ -190,4 +190,4 @@ Zusätzlich zu den oben genannten neuen Funktionen bietet die aktuelle Version d
 * Wenn beim Herunterladen eines Assets die E-Mail-Option aktiviert ist, ist die Option zum Herunterladen nicht verfügbar, auch wenn eine gültige E-Mail-Adresse angegeben wurde. (CQ-4296535)
 * Als Smart-Sammlungen gespeicherte benutzerdefinierte Filter werden nicht korrekt auf Assets angewendet. (CQ-4294942)
 * Mehrere Verbesserungen bei der Suche und Indizierung und Fehlerkorrekturen zur Verbesserung der Leistung. (CQ-4286373)
-* Bei den Ordnereigenschaften wird ein Fehler „500 interner Server-Fehler“ angezeigt. (CQ-4295701)
+* Auf die Registerkarte &quot;Ordnereigenschaften&quot;kann in Assets nicht zugegriffen werden und es wird ein Fehler vom Typ 500 zurückgegeben. (CQ-4295701)
