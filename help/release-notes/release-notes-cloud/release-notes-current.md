@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 8%
+source-wordcount: '525'
+ht-degree: 23%
 
 ---
 
@@ -14,13 +14,17 @@ ht-degree: 8%
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.8.0 beschrieben.
 
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+* Die neuen [!DNL Experience Manager Assets] Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei den vorhandenen Bereitstellungen [konfigurieren Administratoren wie bisher die Integration](/help/assets/smart-tags-configuration.md#aio-integration) von Smarttags.
+
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Neuerungen {#what-is-new-commerce}
 
-* Product Console feature is now available. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Support for properties for catogories and products in the Product Console also provided.
+* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Unterstützung von Eigenschaften für Kategorien und Produkte in der Produktkonsole wird ebenfalls bereitgestellt.
 
-* Product and Category Pickers improved to allow marketers to select product via SKU or select category via category ID.
+* Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -30,7 +34,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 ### Neuerungen {#what-is-new-cloud-manager}
 
-* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Whenever a production pipeline is run, a new Content Audit step will be included in the pipeline after custom functional testing which will evaluate the site against a number of dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).
+* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
    Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
@@ -38,47 +42,47 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
-* Authentication-bound Private Maven Repositories are now supported.
+* Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Einige unnötige und unerwünschte SonarQube-Plugins wurden im Rahmen der Überprüfung der Codequalität ausgeführt.
+* Einige unnötige und unerwünschte SonarQube-Plug-ins wurden im Rahmen der Überprüfung der Codequalität ausgeführt.
 
-* Auf der Seite zur Ausführung der Pipeline wurde der Zweigname falsch formatiert.
+* Auf der Seite zur Ausführung der Pipeline wurde der Verzweigungsname falsch formatiert.
 
-* In einigen Fällen wurden abgeschlossene Pipeline-Hinrichtungen nicht erfolgreich als abgeschlossen aufgezeichnet, wodurch neue Hinrichtungen der Pipeline verhindert wurden.
+* In einigen Fällen wurden abgeschlossene Pipeline-Ausführungen nicht erfolgreich als abgeschlossen aufgezeichnet, wodurch neue Ausführungen der Pipeline verhindert wurden.
 
-* Pipeline executions would occasionally get *stuck* due to internal communication issues.
+* Pipeline-Ausführungen blieben gelegentlich aufgrund interner Kommunikationsprobleme *stecken*.
 
-* Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit Administratorrollen, die keine Systemadministratoren waren, fälschlicherweise Zugriff auf Cloud Manager.
+* Upon provisioning a new organization, some users with administrative roles other than system administrators were erroneously given access to Cloud Manager.
 
-* Unter bestimmten Umständen wurde der Aktualisierungsindexauftrag mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
+* Under certain conditions, the update indexes job was started multiple times in parallel resulting in a deployment failure.
 
-* Die QuickInfo auf den Programm-Karten waren nicht einheitlich korrekt.
+* Die QuickInfo auf den Programmkarten war nicht immer korrekt.
 
-* Die Benutzeroberfläche erlaubte irrtümlicherweise den Versuch, Vorgänge auf einer Umgebung auszuführen, während diese gelöscht wurde.
+* The user interface erroneously allowed for operations to be attempted on an environment while it was being deleted.
 
-* Auf der Seite &quot; **Übersicht** &quot;des Cloud-Managers wurde eine Farbabweichung festgestellt.
+* There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
 
 ### Bekannte Probleme {#known-issues-cm}
 
-* Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
+* Invalid pages are included bringing the Content Audit Average Score below what they should be.
 
-* Auf der Registerkarte &quot;Content Audit&quot;wird die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne anstelle der Veröffentlichungsdomäne angezeigt.
+* The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
 
-* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
+* In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
 
 ## Content Transfer-Tool {#content-transfer-tool}
 
-Follow this section to learn about what is new and the updates for Content Transfer Tool Release v1.0.4.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Content Transfer Tool Version 1.0.4.
 
 ### Neuerungen {#what-is-new-ctt}
 
-* Content Transfer Tool unterstützt jetzt den freigegebenen S3 DataStore.
+* Content Transfer Tool now supports Shared S3 DataStore.
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Zusätzliche Timeouts, die hinzugefügt wurden, damit das Tool Aktionen abschließen kann.
+* Additional timeouts added for the tool to complete actions.
 
 * In früheren Versionen der Benutzeroberfläche wurde manchmal eine erfolgreiche Extraktion angezeigt, obwohl Fehler im Protokoll auftraten.
 
