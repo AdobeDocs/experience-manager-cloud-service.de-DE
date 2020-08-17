@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 24%
+source-wordcount: '518'
+ht-degree: 22%
 
 ---
 
@@ -34,18 +34,14 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 ### Neuerungen {#what-is-new-cloud-manager}
 
-* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
    Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-* Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
+* Neu erstellte Umgebung in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
 * Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
-* Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
-
-* Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
-Refer to [Using Java 11 Support](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) for more details.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -57,23 +53,23 @@ Refer to [Using Java 11 Support](/help/onboarding/getting-access-to-aem-in-cloud
 
 * Pipeline-Ausführungen blieben gelegentlich aufgrund interner Kommunikationsprobleme *stecken*.
 
-* Upon provisioning a new organization, some users with administrative roles other than system administrators were erroneously given access to Cloud Manager.
+* Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit Administratorrollen, die keine Systemadministratoren waren, fälschlicherweise Zugriff auf Cloud Manager.
 
-* Under certain conditions, the update indexes job was started multiple times in parallel resulting in a deployment failure.
+* Unter bestimmten Umständen wurde der Aktualisierungsindexauftrag mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
 
 * Die QuickInfo auf den Programmkarten war nicht immer korrekt.
 
-* The user interface erroneously allowed for operations to be attempted on an environment while it was being deleted.
+* Die Benutzeroberfläche erlaubte irrtümlicherweise den Versuch, Vorgänge auf einer Umgebung auszuführen, während diese gelöscht wurde.
 
 * There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
 
 ### Bekannte Probleme {#known-issues-cm}
 
-* Invalid pages are included bringing the Content Audit Average Score below what they should be.
+* Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
 
-* The Content Audit tab incorrectly displays the base URL using the author domain instead of the publish domain.
+* Auf der Registerkarte &quot;Content Audit&quot;wird die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne anstelle der Veröffentlichungsdomäne angezeigt.
 
-* In order to activate the Content Audit step, users must edit the pipeline and, optionally, add pages. If no pages are added, the homepage will be audited.
+* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
 
 ## Content Transfer-Tool {#content-transfer-tool}
 
