@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.7.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 38%
+source-wordcount: '1056'
+ht-degree: 36%
 
 ---
 
@@ -30,11 +30,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Konfigurationen werden jetzt im Experience Manager-Repository gespeichert `/conf` und nicht `/etc/cloudsettings` im Repository.
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### Neuerungen {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Dienst zur Verarbeitung von Assets. Administratoren können Experience Manager konfigurieren, um benutzerdefinierte Anwendungen aufzurufen, die mit dem [!DNL Asset Compute Service]. Entwickler können den Dienst verwenden, um spezielle benutzerdefinierte Anwendungen zu erstellen, die komplexen Anwendungsfällen entsprechen. Dieser Webdienst kann Miniaturansichten für verschiedene Dateitypen erstellen, hochwertige Bildwiedergaben aus Dateiformaten erstellen, Adoben kodieren (zukünftig), Metadaten extrahieren, Volltext als Vorläufer für die Indexierung extrahieren und ein Asset über alle verfügbaren Sensei-Dienste ausführen. Siehe [Verwenden von Asset-Mikrodiensten und Verarbeitungs-Profilen](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Dienst zur Verarbeitung von Assets. Administratoren können konfigurieren, [!DNL Experience Manager] um benutzerdefinierte Anwendungen aufzurufen, die mit dem [!DNL Asset Compute Service]Operator erstellt wurden. Entwickler können den Dienst verwenden, um spezielle benutzerdefinierte Anwendungen zu erstellen, die komplexen Anwendungsfällen entsprechen. Dieser Webdienst kann Miniaturansichten für verschiedene Dateitypen, hochwertige Bildwiedergaben aus Dateiformaten, Kodieren von Adoben (Zukunftsvideos), Extrahieren von Metadaten, Extrahieren von Volltext als Vorläufer für die Indexierung und Ausführen eines Assets über alle verfügbaren [!DNL Sensei] Dienste erstellen. siehe [Verwenden von Asset-Mikrodiensten und Verarbeitungs-Profilen](/help/assets/asset-microservices-configure-and-use.md).
 
 * Die anfängliche Konfiguration von [!DNL Dynamic Media] in [!DNL Experience Manager] als Cloud Service wurde verbessert, um robuster zu sein. Es stellt den Administratoren nun den Fortschritt der Prozesse zur Verfügung.
 
@@ -42,7 +42,13 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Arbeitsablaufschritte, die nicht mit einer Cloud Service-Bereitstellung kompatibel sind, werden jetzt im [!UICONTROL Workflow-Modell] -Editor mit einer Warnmeldung versehen. Außerdem werden beim Ausführen der vorhandenen Workflows auf der Cloud Service-Umgebung die nicht kompatiblen Workflow-Schritte übersprungen.
 
-* Arbeitsablaufmodelle, die von Kunden erstellt wurden, die im Git-Projekt bereitgestellt werden, das mit der Umgebung in Cloud Manager verknüpft ist, werden automatisch in Experience Manager bereitgestellt `/conf/global` `/var` und damit verfügbar gemacht. Die Produktarbeitsablaufmodelle, unter `/libs` denen der Kunde Änderungen vorgenommen hat, werden nicht automatisch bereitgestellt `/var`.
+* Workflow-Modelle, die von Kunden erstellt wurden, die im Git-Projekt bereitgestellt werden, das mit der Umgebung in verknüpft ist, `/conf/global` werden automatisch bereitgestellt [!DNL Cloud Manager] und damit in verfügbar `/var` [!DNL Experience Manager]. Die Produktarbeitsablaufmodelle, unter `/libs` denen der Kunde Änderungen vorgenommen hat, werden nicht automatisch bereitgestellt `/var`.
+
+### Fehlerbehebungen {#assets-bugs-fixed}
+
+* Der Assistent zum Verschieben von Assets wird für die in Sammlungen enthaltenen Assets nicht wie erwartet geladen. (CQ-4296756)
+* Die Werte von `dam:size` und `dam:sha1` sind von XMP Schreibback ausgeschlossen. (CQ-4237355)
+* Beim Rückgängigmachen der Veröffentlichung von Assets als Massendatei wird ein Fehler ausgegeben, der darauf hindeutet, dass der Anforderungs-URI zu lang ist. [!DNL Brand Portal] (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
