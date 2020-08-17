@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.8.0.'
+description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
+source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 23%
+source-wordcount: '544'
+ht-degree: 24%
 
 ---
 
@@ -34,15 +34,18 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 ### Neuerungen {#what-is-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
    Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-* Neu erstellte Umgebung in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
+* Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
 * Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
+
+* Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
+Refer to [Using Java 11 Support](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) for more details.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -78,11 +81,11 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 ### Neuerungen {#what-is-new-ctt}
 
-* Content Transfer Tool now supports Shared S3 DataStore.
+* Content Transfer Tool unterstützt jetzt den freigegebenen S3 DataStore.
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Additional timeouts added for the tool to complete actions.
+* Zusätzliche Timeouts, die hinzugefügt wurden, damit das Tool Aktionen abschließen kann.
 
 * In früheren Versionen der Benutzeroberfläche wurde manchmal eine erfolgreiche Extraktion angezeigt, obwohl Fehler im Protokoll auftraten.
 
