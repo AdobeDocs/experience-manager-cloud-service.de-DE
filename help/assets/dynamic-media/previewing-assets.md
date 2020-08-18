@@ -1,11 +1,11 @@
 ---
 title: Anzeigen von Assets in einer Vorschau
 description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anzeigen.
-translation-type: ht
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
-source-wordcount: '1215'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+workflow-type: tm+mt
+source-wordcount: '1213'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
 
 **So zeigen Sie die Asset-Vorschau an**
 
-1. Tippen Sie in **Adobe Experience Manager** auf der Seite **Navigation** auf **[!UICONTROL Assets]** und **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
 1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf die Miniaturansicht) des Assets, das Sie in der Vorschau anzeigen möchten.
