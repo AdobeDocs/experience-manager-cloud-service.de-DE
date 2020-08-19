@@ -2,11 +2,11 @@
 sub-product: Implementieren für AEM as a Cloud Service
 user-guide-title: Implementieren für AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-translation-type: ht
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
    + [Verwalten von Umgebungen](cloud-manager/manage-environments.md)
    + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
+   + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
+      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Testen der Codequalität](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
+      + [Content Audit-Tests](/help/implementing/cloud-manager/content-audit-testing.md)
    + [Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität](cloud-manager/custom-code-quality-rules.md)
    + [Zugreifen auf und Verwalten von Protokollen](cloud-manager/manage-logs.md)
    + [Wissenswertes zu Benachrichtigungen](cloud-manager/notifications.md)
@@ -30,14 +35,13 @@ ht-degree: 100%
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service-SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Entwicklungsrichtlinien für AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-   + [Erste Schritte bei der Entwicklung von AEM-Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
+   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
    + [Sling-Schnellübersicht](developing/introduction/sling-cheatsheet.md)
    + [Verwenden von Sling-Adaptern](developing/introduction/sling-adapters.md)
    + [Verwenden des Sling Resource Mergers in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Überlagerungen in AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Protokollierung](developing/introduction/logging.md)
    + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [Wissenswertes zu Testergebnissen](/help/implementing/developing/introduction/understand-test-results.md)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
