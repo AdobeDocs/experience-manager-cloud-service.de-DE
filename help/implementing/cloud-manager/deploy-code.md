@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 84%
+source-wordcount: '984'
+ht-degree: 82%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 84%
 
 ## Bereitstellen von Code mit Cloud Manager {#deploying-code-with-cloud-manager}
 
-Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfiguriert haben, können Sie Ihren Code bereitstellen.
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Klicken Sie in Cloud Manager auf **Bereitstellen**, um den Bereitstellungsprozess zu starten.
 
@@ -42,7 +42,7 @@ Sobald Sie Ihre **Pipeline** (Repository, Umgebung und Testumgebung) konfigurier
    Die **Staging-Bereitstellung** umfasst die folgenden Schritte:
 
    * Validierung: Dieser Schritt stellt sicher, dass die Pipeline so konfiguriert ist, dass die derzeit verfügbaren Ressourcen verwendet werden. So wird z. B. überprüft, ob die konfigurierte Verzweigung vorhanden ist und die Umgebungen verfügbar sind.
-   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. See [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) for details on the build environment.
+   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Weitere Informationen zur Build-Umgebung finden Sie unter [Build Umgebung Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) .
    * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Codequalitätstests](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) .
    * Bilder erstellen: Dieser Schritt enthält eine Protokolldatei aus dem Prozess, der zum Erstellen von Bildern verwendet wird. Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Bilder und die Kubernetes-Konfiguration verantwortlich.
    * Bereitstellen in der Staging-Umgebung
