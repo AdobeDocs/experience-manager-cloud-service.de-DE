@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 59%
+source-wordcount: '1700'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Folgende Tests sind möglich:
 
 * Vom Kunden geschriebene
 * Adobe geschrieben
-* Open source tool (powered by Lighthouse from Google)
+* Open Source-Tool (powered by Lighthouse from Google)
 
    >[!NOTE]
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
@@ -32,7 +32,13 @@ Folgende Tests sind möglich:
 
 ## Testen der Codequalität {#code-quality-testing}
 
-Im Rahmen der Pipeline wird der Quellcode gescannt, um sicherzustellen, dass Bereitstellungen bestimmte Qualitätskriterien erfüllen. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. In der folgenden Tabelle finden Sie eine Zusammenfassung der Testkriterienbewertung:
+Dieser Schritt bewertet die Qualität Ihres Anwendungscodes. Es ist das Kernziel einer reinen Code-Quality-Pipeline und wird unmittelbar nach dem Bauschritt in allen Nicht-Produktions- und Produktionsleitungen ausgeführt.
+
+Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
+
+Bei der Codequalitätsprüfung wird der Quellcode gescannt, um sicherzustellen, dass seine Bereitstellung bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md)bezeichnet.
+
+Die Ergebnisse dieses Schritts werden als *Bewertung* bereitgestellt. Die nachstehende Tabelle fasst die Bewertungen für verschiedene Prüfkriterien zusammen:
 
 | Name | Definition | Kategorie | Fehlerschwellenwert |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Im Rahmen der Pipeline wird der Quellcode gescannt, um sicherzustellen, dass Ber
 | Kompatibilität mit Cloud Service | Anzahl der festgestellten Kompatibilitätsprobleme mit Cloud Service. | Info | > 0 |
 
 
+Sie können hier eine Liste der Regeln herunterladen: [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
 >[!NOTE]
 >
 >Genauere Definitionen finden Sie unter [Metrikdefinitionen](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
-Sie können hier eine Liste der Regeln herunterladen: [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
@@ -91,7 +98,7 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 >Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
 
 >[!NOTE]
->While there is no explicit Security Testing step,  there are still security-related code quality rules evaluated during the code quality step. Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+>Es gibt zwar keinen expliziten Sicherheitstestschritt, es gibt jedoch weiterhin sicherheitsbezogene Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht AEM als Cloud Service](/help/security/cloud-service-security-overview.md) .
 
 ## Funktionstests {#functional-testing}
 
@@ -179,24 +186,24 @@ Content Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene �
 
 * Metriken auf Aggregat-Ebene messen den Durchschnittswert der geprüften Seiten.
 * Einzelne Seitenergebnisse sind auch per Drilldown verfügbar.
-* Details of the scores are available to see what are the results of the individual tests, along with guidance on how to remediate any issues that were identified during the content audit.
-* A history of the test results are persisted within Cloud Manager so customers can see whether changes that are being introduced in the pipeline run include any regressions from the previous run.
+* Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
+* Der Verlauf der Testergebnisse wird innerhalb von Cloud Manager beibehalten, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung vorgenommen werden, Regressionen aus der vorherigen Ausführung enthalten.
 
-#### Aggregate Scores {#aggregate-scores}
+#### Aggregat-Ergebnisse {#aggregate-scores}
 
-There is an aggregate level score for each test type (performance, accessibility, SEO, best practices, and PWA).
+Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
 
-The aggregate level score takes the average score of the pages that are included in the run. The change at the aggregate level represents the average score of the pages in the current run compared to the average of the scores from the previous run, even if the collection of pages configured to be included has been changed between runs.
+Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
 
-Value of Change metric may be one of the following:
+Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 * **Positiver Wert** : Die Seite(n) wurde(n) seit dem letzten Produktionsablauf beim ausgewählten Test verbessert.
 
-* **Negative value** - the page(s) have regressed on the selected test since the last production pipeline run
+* **Negativer Wert** : Die Seite(n) ist/sind seit dem letzten Produktionszyklus auf dem ausgewählten Test zurückgekehrt
 
 * **Keine Änderung** - die Seite(n) hat/haben seit dem letzten Produktionszyklus denselben Wert erreicht
 
-* **N/A** - there was no previous score available to compare to
+* **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
 
    ![](assets/content-audit-test1.png)
 
@@ -204,7 +211,7 @@ Value of Change metric may be one of the following:
 
 Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seitenniveau angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung gegenüber der vorherigen Ausführung des Tests.
 
-Clicking into the details of any individual page will provide information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected. The details of the tests and associated guidance are provided by Google Lighthouse.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
 
 ![](assets/page-level-scores.png)
 
