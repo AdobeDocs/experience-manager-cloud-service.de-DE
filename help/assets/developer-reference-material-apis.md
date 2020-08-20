@@ -1,59 +1,47 @@
 ---
-title: 'Assets-APIs für Digital Asset Management in Adobe Experience Manager as a Cloud Service '
-description: Asset-APIs ermöglichen grundlegende CRUD-Operationen (Create-Read-Update-Delete – Erstellen-Lesen-Aktualisieren-Löschen) zur Verwaltung von Assets, einschließlich Binär- und Metadaten, Ausgabeformaten, Kommentaren und Inhaltsfragmenten.
+title: Entwicklerreferenzen für die digitale Asset-Verwaltung [!DNL Adobe Experience Manager] als Cloud Service.
+description: '[!DNL Assets] APIs und Entwicklerverweisinhalte ermöglichen die Verwaltung von Assets, einschließlich Binärdateien, Metadaten, Darstellungen, Kommentaren und [!DNL Content Fragments]Kommentaren.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 99%
+source-wordcount: '1244'
+ht-degree: 50%
 
 ---
 
 
-# Assets as a Cloud Service-APIs {#assets-cloud-service-apis}
+# [!DNL Assets] APIs und Referenzmaterial für Entwickler {#assets-cloud-service-apis}
 
-<!-- 
-Give a list of and overview of all reference information available.
-* New upload method
-* Javadocs
-* Assets HTTP API documented at [https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html](https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html)
-
--->
+Der Artikel enthält Referenzmaterial und Ressourcen für Entwickler von [!DNL Assets] als Cloud Service. Es enthält eine neue Upload-Methode, API-Referenz und Informationen zur Unterstützung, die in der Workflows nach der Verarbeitung bereitgestellt wird.
 
 ## Asset-Upload {#asset-upload-technical}
 
-Experience Manager as a Cloud Service bietet eine neue Möglichkeit zum Hochladen von Assets in das Repository – das direkte binäre Hochladen in einen binären Cloud-Speicher. In diesem Abschnitt wird ein technischer Überblick bereitgestellt.
+[!DNL Experience Manager] als Cloud Service eine neue Methode zum Hochladen von Assets in das Repository bereitstellt. Die Benutzer können die Assets mit der HTTP-API direkt in die Cloud-Datenspeicherung hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
-### Übersicht über das direkte binäre Hochladen {#overview-binary-upload}
-
-Der allgemeine Algorithmus zum Hochladen einer Binärdatei lautet:
-
-1. Senden einer HTTP-Anfrage, die AEM über die Absicht informiert, eine neue Binärdatei hochzuladen.
-1. Posten des Inhalts der Binärdatei an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
-1. Senden einer HTTP-Anfrage, um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.
+1. [Senden Sie eine HTTP-Anforderung](#initiate-upload). Es informiert Sie [!DNL Experience Manage]bzw. die Bereitstellung Ihrer Absicht, eine neue Binärdatei hochzuladen.
+1. [Posten des Inhalts der Binärdatei an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.](#upload-binary)
+1. [Senden einer HTTP-Anfrage, um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.](#complete-upload)
 
 ![Übersicht über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
 
-Wichtige Unterschiede im Vergleich zu früheren Versionen von AEM sind unter anderem:
+Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-Uploads. Die Unterschiede gegenüber [!DNL Experience Manager] 6.5 sind:
 
-* Binärdateien durchlaufen nicht AEM, das jetzt lediglich den Upload-Prozess mit dem für die Bereitstellung konfigurierten binären Cloud-Speicher koordiniert
-* Die binäre Cloud-Speicherung wird von einem CDN (Content Delivery Network, Edge Network) unterstützt, das den Upload-Endpunkt näher an den Client heranführt und so zur Verbesserung der Upload-Leistung und des Benutzererlebnisses beiträgt, insbesondere für verteilte Teams, die Assets hochladen
-
-Dieser Ansatz sollte eine skalierbarere und leistungsfähigere Handhabung von Asset-Uploads bieten.
+* Binaries do not go through [!DNL Experience Manager], which is now simply coordinating the upload process with the binary cloud storage configured for the deployment.
+* Die Binary Cloud-Datenspeicherung funktioniert mit einem Content Versand Network (CDN) oder Edge-Netzwerk. Ein CDN wählt einen Upload-Endpunkt aus, der für einen Client näher liegt. Wenn Daten kürzer zu einem nahe gelegenen Endpunkt transportiert werden, verbessern sich die Upload-Leistung und die Benutzerfreundlichkeit, insbesondere für geografisch verteilte Teams.
 
 >[!NOTE]
 >
->Den Client-Code, der diesen Ansatz implementiert, können Sie in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload) einsehen.
+>Siehe Clientcode zur Implementierung dieses Ansatzes in der Open-Source-Bibliothek [für AEM-Uploads](https://github.com/adobe/aem-upload).
 
 ### Initiieren des Uploads {#initiate-upload}
 
-Der erste Schritt besteht darin, eine HTTP-POST-Anfrage an den Ordner zu senden, in dem das Asset erstellt oder aktualisiert werden soll. Schließen Sie den Selektor `.initiateUpload.json` ein, um anzugeben, dass die Anfrage darin besteht, einen binären Upload zu starten. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`. Die POST wird angefordert `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Senden Sie eine HTTP-POST an den gewünschten Ordner. Assets werden in diesem Ordner erstellt oder aktualisiert. Schließen Sie die Auswahl ein, `.initiateUpload.json` um anzugeben, dass die Anforderung darin besteht, den Upload einer Binärdatei zu starten. Der Pfad zum Ordner, in dem das Asset erstellt werden soll, lautet beispielsweise `/assets/folder`. Die POST wird angefordert `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten:
 
-* `(string) fileName`: Erforderlich. Der Name des Assets, wie er in der Instanz angezeigt wird.
-* `(number) fileSize`: Erforderlich. Die Gesamtlänge der hochzuladenden Binärdatei in Byte.
+* `(string) fileName`: Erforderlich. Der Name des Assets, wie er in angezeigt wird [!DNL Experience Manager].
+* `(number) fileSize`: Erforderlich. Die Dateigröße des hochgeladenen Assets in Byte.
 
 Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdateien zu initiieren, solange jede Binärdatei die erforderlichen Felder enthält. Bei Erfolg wird die Anfrage mit einem `201`-Status-Code und einem Text mit JSON-Daten im folgenden Format beantwortet:
 
@@ -74,11 +62,11 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 }
 ```
 
-* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
+* `completeURI` (Zeichenfolge): Rufen Sie diesen URI auf, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
 * `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
-* `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
+* `(files)` (Array): Eine Liste von Elementen, deren Länge und Reihenfolge mit der Liste der binären Informationen übereinstimmen, die in der Initiierungsanforderung bereitgestellt werden.
 * `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
-* `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie in der Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
+* `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie der Initiierungsanforderung angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadURIs` (Array): Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, in die der binäre Inhalt hochgeladen werden soll (siehe [Hochladen der Binärdatei](#upload-binary)).
 * `minPartSize` (Zahl): Die Mindestlänge (in Bytes) der Daten, die für einen der Upload-URIs bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
@@ -86,15 +74,15 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, ist es die Verantwortung des Clients, die Binärdatei in Teile zu „teilen“ und jeden Teil in der richtigen Reihenfolge zu den URIs zu posten. Alle URIs müssen verwendet werden. Jeder Teil muss größer als die Mindestgröße und kleiner als die maximale Größe sein, wie in der Initiierungsantwort angegeben. Diese Anfragen werden von CDN-Edge-Knoten unterstützt, um das Hochladen von Binärdateien zu beschleunigen.
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben ist, teilt der Client die Binärdatei in Teile auf und fordert die POST jedes Teils in jeder URI in der Reihenfolge an. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der Mindest- und Höchstgrößen liegt, die in der initiativen Antwort angegeben sind. CDN-Edge-Knoten helfen, den angeforderten Upload von Binärdateien zu beschleunigen.
 
-Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Beispiel unter der Annahme, dass die Gesamtgröße der Binärdatei 20.000 Bytes und die Anzahl der Upload-URIs 2 beträgt:
+Eine mögliche Methode hierfür ist die Berechnung der Bauteilgröße anhand der Anzahl der Upload-URIs, die von der API bereitgestellt werden. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Byte und die Anzahl der Upload-URIs ist 2. Führen Sie dann die folgenden Schritte aus:
 
-* Berechnen Sie die Teilegröße, indem Sie die Gesamtgröße durch die Anzahl der URIs teilen: 20.000 / 2 = 10.000
-* POST-Byte-Bereich 0-9.999 der Binärdatei zur ersten URI in der Liste der Upload-URIs
-* POST-Byte-Bereich 10.000-19.999 der Binärdatei zum zweiten URI in der Liste der Upload-URIs
+* Berechnen Sie die Teilegröße, indem Sie die Gesamtgröße durch die Anzahl der URIs teilen: 20.000 / 2 = 10.000.
+* POST-Byte-Bereich 0-9.999 der Binärdatei zur ersten URI in der Liste der Upload-URIs.
+* POST-Byte-Bereich 10.000-19.999 der Binärdatei zum zweiten URI in der Liste der Upload-URIs.
 
-Bei erfolgreicher Ausführung antwortet der Server auf jede Anfrage mit Status-Code `201`.
+If the upload is successful, the server responds to each request with a `201` status code.
 
 ### Abschließen des Hochladens {#complete-upload}
 
@@ -105,34 +93,34 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `fileName` | Zeichenfolge | Erforderlich | Der Name des Assets, wie in den Initiierungsdaten angegeben. |
 | `mimeType` | Zeichenfolge | Erforderlich | Der HTTP-Content-Typ der Binärdatei, wie in den Initiierungsdaten angegeben. |
 | `uploadToken` | Zeichenfolge | Erforderlich | Upload-Token für die Binärdatei, wie in den Initiierungsdaten angegeben. |
-| `createVersion` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits existiert, erstellt die Instanz eine neue Version des Assets. |
+| `createVersion` | Boolesch | Optional | If `True` and an asset with the specified name exists, then [!DNL Experience Manager] creates a new version of the asset. |
 | `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
 | `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
-| `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen bereits existiert, löscht Experience Manager das Asset und erstellt es dann erneut. |
+| `replace` | Boolesch | Optional | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
 
 >!![NOTE]
-Wenn das Asset bereits existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert Experience Manager die aktuelle Version des Assets mit der neuen Binärdatei.
+If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
-Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Selbst wenn die Binärdatei einer Datei vollständig hochgeladen wird, wird das Asset erst nach Abschluss des Upload-Vorgangs von der Instanz verarbeitet.
+Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht Beginn, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist.
 
 Bei erfolgreicher Ausführung antwortet der Server mit Status-Code `200`.
 
 ### Open-Source-Upload-Bibliothek {#open-source-upload-library}
 
-Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripte und -Tools zu erstellen, stellt Adobe Open-Source-Bibliotheken und -Tools als Ausgangspunkt bereit:
+Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripten und -Tools zu erstellen, bietet Adobe Open-Source-Bibliotheken und -Tools:
 
-* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload)
-* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem)
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 ### Veraltete APIs zum Hochladen von Assets {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Für Adobe Experience Manager as a Cloud Service werden nur die neuen Upload-APIs unterstützt. Die APIs aus Adobe Experience Manager 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabeformaten (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
+Die neue Upload-Methode wird nur [!DNL Adobe Experience Manager] als Cloud Service unterstützt. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabeformaten (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
 
-* [AEM Assets-HTTP-API](mac-api-assets.md)
+* [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
@@ -142,15 +130,15 @@ Für Adobe Experience Manager as a Cloud Service werden nur die neuen Upload-API
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
 
-In Experience Manager basiert die Asset-Verarbeitung auf der Konfiguration von **[!UICONTROL Verarbeitungsprofilen]**, die [Asset-Microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices) verwendet. Für die Verarbeitung sind keine Entwicklererweiterungen erforderlich.
+In [!DNL Experience Manager], the asset processing is based on **[!UICONTROL Processing Profiles]** configuration that uses [asset microservices](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). Für die Verarbeitung sind keine Entwicklererweiterungen erforderlich.
 
 Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefinierten Schritten für die Konfiguration des Nachbearbeitungs-Workflows.
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Kunden, die von früheren Versionen auf Experience Manager as a Cloud Service aktualisieren, können Asset-Microservices für die Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
+Kunden, die ein Upgrade von früheren Versionen von Assets durchführen, [!DNL Experience Manager] können Asset-Mikrodienste zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
 
-Die folgenden Workflow-Schritte werden in Experience Manager as a Cloud Service unterstützt.
+[!DNL Experience Manager] als Cloud Service die folgenden Arbeitsablaufschritte unterstützen:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -162,7 +150,7 @@ Die folgenden Workflow-Schritte werden in Experience Manager as a Cloud Service 
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar.
+Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 
 * `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
@@ -203,3 +191,7 @@ Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microserv
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
+>[!MORELIKETHIS]
+* [Das Experience Cloud als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+
