@@ -2,29 +2,37 @@
 title: Übersicht über Testergebnisse - Cloud Services
 description: Übersicht über Testergebnisse - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 41%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 
 
 # Übersicht {#overview}
 
-Cloud Manager für Cloud Services -Pipeline-Ausführungen unterstützen die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden. Dies steht im Gegensatz zu Tests, die während des Build- und Unit-Testschritts ausgeführt werden, die offline ohne Zugriff auf eine laufende AEM-Umgebung durchgeführt werden.
-
 Es gibt drei große Kategorien von Tests, die von Cloud Manager für Cloud Services-Pipeline unterstützt werden:
 
 1. [Testen der Codequalität](/help/implementing/cloud-manager/code-quality-testing.md)
+
+   Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Die Code-Quality-Pipeline wird unmittelbar nach dem Build-Schritt in allen Nicht-Produktions- und Produktionsleitungen ausgeführt.
+
+   The [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) executed by Cloud Manager are created based on best practices from AEM Engineering.
+
 1. [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
+
+   Der Funktionstest ist Teil der Testphase einer Produktionsleitung.
+
 1. [Content Audit-Tests](/help/implementing/cloud-manager/content-audit-testing.md)
+
+   Der Content-Audit-Test ist in allen Cloud Manager-Produktionsleitungen aktiviert und kann nicht übersprungen werden.
 
 Folgende Tests sind möglich:
 
 * Vom Kunden geschriebene
 * Adobe geschrieben
-* Open Source-Tool (powered by Lighthouse from Google)
+* Open Source-Tool
 
    >[!NOTE]
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
