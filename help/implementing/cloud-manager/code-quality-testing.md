@@ -2,10 +2,10 @@
 title: Codequalitätstests - Cloud Services
 description: Codequalitätstests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '831'
+ht-degree: 76%
 
 ---
 
@@ -16,14 +16,26 @@ Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Es ist 
 
 Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
 
-## Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 Bei der Codequalitätsprüfung wird der Quellcode gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md)bezeichnet.
 
 >[!NOTE]
 >You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-Die Ergebnisse dieses Schritts werden als *Bewertung* bereitgestellt. In der folgenden Tabelle finden Sie eine Zusammenfassung der Testkriterienbewertung:
+**Dreistufiges Tor**
+
+In diesem Codequalitätstestschritt gibt es eine dreistufige Struktur für die identifizierten Probleme:
+
+* **Kritisch**: Hierbei handelt es sich um vom Test identifizierte Probleme, die zu einem sofortigen Pipelinefehler führen.
+
+* **Wichtig**: Hierbei handelt es sich um vom Test identifizierte Probleme, durch die die Pipeline angehalten wird. Bereitstellungsmanager, Projektmanager oder Business Owner können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+
+* **Info**: Hierbei handelt es sich um vom Test identifizierte Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipelineausführung haben
+
+Die Ergebnisse dieses Schritts werden als *Bewertungen* bereitgestellt.
+
+In der folgenden Tabelle sind die Rating- und Ausfallschwellenwerte für jede der kritischen, wichtigen und informativen Kategorien zusammengefasst:
 
 | Name | Definition | Kategorie | Fehlerschwellenwert |
 |--- |--- |--- |--- |
