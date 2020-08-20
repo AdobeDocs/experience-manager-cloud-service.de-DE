@@ -3,10 +3,10 @@ sub-product: Implementieren für AEM as a Cloud Service
 user-guide-title: Implementieren für AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 97%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 0%
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
       + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Codequalität](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Benutzerspezifische Regeln für Codequalität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
       + [Content Audit-Tests](/help/implementing/cloud-manager/content-audit-testing.md)
-   + [Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität](cloud-manager/custom-code-quality-rules.md)
    + [Zugreifen auf und Verwalten von Protokollen](cloud-manager/manage-logs.md)
    + [Wissenswertes zu Benachrichtigungen](cloud-manager/notifications.md)
 + Verwalten von Code {#managing-code}
