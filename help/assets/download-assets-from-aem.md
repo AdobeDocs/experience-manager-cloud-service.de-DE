@@ -1,12 +1,12 @@
 ---
-title: Herunterladen von Assets aus AEM
-description: Erfahren Sie, wie Sie Assets aus AEM herunterladen und die Download-Funktion aktivieren oder deaktivieren.
+title: Herunterladen von Assets aus [!DNL Adobe Experience Manager Assets].
+description: Herunterladen von Assets [!DNL Adobe Experience Manager Assets] und Aktivieren oder Deaktivieren der Download-Funktion.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 91%
 
 ---
 
@@ -21,17 +21,14 @@ Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstel
 
 Die Asset-Typen „Bild-Set“, „Rotations-Set“ „Set für gemischte Medien“ und „Karussell-Set“ können nicht heruntergeladen werden.
 
-**So laden Sie Assets herunter:**
+Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo, tippen Sie links in der Leiste auf **[!UICONTROL Navigation]** (Kompasssymbol).
-1. Tippen Sie auf der Navigationsseite auf **[!UICONTROL Assets > Dateien]**.
-1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
-1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
+1. Klicken Sie in der Benutzeroberfläche von Experience Manager auf **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Navigieren Sie zu den Assets, die Sie herunterladen möchten. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus. On the toolbar, click **[!UICONTROL Download]**.
 
-   ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
+   ![Verfügbare Optionen beim Herunterladen von Assets von [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *Optionen des Dialogfelds „Herunterladen“.*
+   *Abbildung: Optionen des Dialogfelds &quot;Herunterladen&quot;.*
 
 1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
@@ -44,8 +41,7 @@ Die Asset-Typen „Bild-Set“, „Rotations-Set“ „Set für gemischte Medien
    | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus AEM herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](/help/assets/dynamic-media/image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
-1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
-
+1. In the dialog box, click **[!UICONTROL Download]**.
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
@@ -76,6 +72,6 @@ Das `Asset Download Servlet` kann auf einer AEM-Veröffentlichungsinstanz deakti
 >[!MORELIKETHIS]
 >
 >* [Herunterladen von DRM-geschützten Assets](drm.md)
->* [Herunterladen von Assets mit dem AEM-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Herunterladen von Assets mit der Experience Manager Desktop-App auf einem Windows- oder Mac-Desktop](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
