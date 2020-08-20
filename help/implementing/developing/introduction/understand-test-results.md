@@ -2,9 +2,9 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 53%
 
 ---
@@ -24,7 +24,7 @@ Folgende Tests sind möglich:
 
 * Vom Kunden geschriebene
 * Adobe geschrieben
-* Open Source-Tool (powered by Lighthouse from Google)
+* Open Source-Tool
 
    >[!NOTE]
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
