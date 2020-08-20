@@ -2,9 +2,9 @@
 title: Content Audit-Tests - Cloud Services
 description: Content Audit-Tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Content Audit-Tests {#content-audit-testing}
 
-Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, die von Lighthouse, einem Open-Source-Tool von Google, betrieben werden. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
+Content Audit ist eine Funktion, die in Cloud Manager-Sites-Produktionsleitungen verfügbar ist, einem Open-Source-Tool von Google. Diese Funktion ist in allen Cloud Manager-Produktionsleitungen aktiviert.
 
 Er validiert den Bereitstellungsprozess und stellt sicher, dass die bereitgestellten Änderungen
 
