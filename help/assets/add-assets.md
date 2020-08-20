@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu  [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -151,13 +151,13 @@ Um eine zusätzliche Verarbeitung der hochgeladenen Assets zu ermöglichen, kön
 
 Die folgenden Profile sind verfügbar:
 
-* Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
+* [Mit Metadaten-Profilen](metadata-profiles.md) können Sie Standardmetadateneigenschaften auf in diesen Ordner hochgeladene Assets anwenden
 * [Mit Profilen](asset-microservices-configure-and-use.md) zur Verarbeitung können Sie mehr Darstellungen generieren, als standardmäßig möglich sind.
 
 Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
 
-* Mit [Dynamic Media-Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* Mit [Dynamic Media-Video-Profilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
+* [Mit Profilen](dynamic-media/image-profiles.md) für dynamische Medienbilder können Sie bestimmte Zuschneidevorgänge (**[!UICONTROL Smart Cropping]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* [Mit Video-Profilen](dynamic-media/video-profiles.md) für dynamische Medien können Sie bestimmte Profil zur Videokodierung (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
