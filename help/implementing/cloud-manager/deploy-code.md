@@ -2,7 +2,7 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 ## Bereitstellen von Code mit Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Nachdem Sie die Produktionspipeline (Repository, Umgebung und Testing-Umgebung) konfiguriert haben, können Sie den Code bereitstellen.
 
 1. Klicken Sie in Cloud Manager auf **Bereitstellen**, um den Bereitstellungsprozess zu starten.
 
