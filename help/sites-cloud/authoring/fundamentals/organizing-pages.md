@@ -1,9 +1,9 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Clou
 
 >[!NOTE]
 >
->Ihr Konto muss über die erforderlichen Zugriffsrechte und Berechtigungen verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise Erstellen, Kopieren, Verschieben, Bearbeiten und Löschen.
+>Ihr Konto muss über die erforderlichen Zugriffsrechte und Berechtigungen verfügen, damit Sie Aktionen auf Seiten durchführen können, beispielsweise das Erstellen, Kopieren, Verschieben, Bearbeiten und Löschen.
 >
 >Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an den Systemadministrator zu wenden.
 
@@ -385,7 +385,7 @@ Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, w
 
          ![Asynchrone Seitenverschiebung](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)unter** Globale Navigation **>** Tools **>** Vorgänge **>** Aufträge **überprüft werden.
+Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 
 >[!NOTE]
 >
