@@ -2,7 +2,7 @@
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 100%
@@ -121,7 +121,7 @@ Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne We
 
 * Drücken Sie zum Anzeigen aller ausgehenden HTTP-Anforderungen in Google Chrome die Taste **F12** (Windows) oder **Befehlstaste + Wahltaste + I** (Mac), um den Bereich für Entwicklertools anzuzeigen, und klicken Sie dann auf die Registerkarte **Netzwerk**.
 
-* In Firefox können Sie das Firebug-Plug-in aktivieren, indem Sie **F12** (Windows) bzw. **Befehlstaste+Wahltaste+I** (Mac) drücken und die Registerkarte **Netz** öffnen; oder Sie öffnen die Registerkarte „Netzwerk“ im integrierten Inspektor-Tool.
+* In Firefox können Sie das Firebug-Plug-in aktivieren, indem Sie **F12** (Windows) bzw. **Befehlstaste + Wahltaste + I** (Mac) drücken und die Registerkarte **[Netz]** öffnen, oder Sie öffnen die Registerkarte „Netzwerk“ im integrierten Inspektor-Tool.
 
 * In Internet Explorer aktivieren Sie das Debugger-Tool, indem Sie **F12** drücken.
 
@@ -257,7 +257,7 @@ Nach dem Hinzufügen von Timeline-Segmenten fügen Sie Miniaturbilder in jedem S
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-Beachten Sie, dass im interaktiven Video die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten.  Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+Beachten Sie, dass im interaktiven Video die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 >[!NOTE]
 Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
@@ -757,5 +757,5 @@ Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Video
 
 ## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups} 
 
-Siehe [Popups mithilfe von benutzerspezifischen Schnellansichten erstellen](/help/assets/dynamic-media/custom-pop-ups.md).
+Siehe [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](/help/assets/dynamic-media/custom-pop-ups.md).
 -->
