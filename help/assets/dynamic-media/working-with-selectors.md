@@ -2,9 +2,9 @@
 title: 'Arbeiten mit Selektoren '
 description: Auswählen von Assets für interaktive Bilder, interaktive Videos und Karussellbanner
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
 1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und tippen oder klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
-   Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp**.
+   Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -72,7 +72,7 @@ Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen 
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren AEM-Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
+1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren AEM Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
