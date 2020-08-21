@@ -2,11 +2,11 @@
 title: Metadatenprofile
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -89,7 +89,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 1. Tippen Sie auf der linken Leiste auf **[!UICONTROL Assets]** und navigieren Sie dann zu dem Ordner, auf den Sie ein Metadatenprofil anwenden möchten.
 1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften**.
-1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend das Profil aus dem Dropdown-Menü aus und tippen Sie auf **Speichern**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 ### Globales Anwenden eines Metadatenprofils {#applying-a-metadata-profile-globally}
 
