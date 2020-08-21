@@ -1,11 +1,11 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
-translation-type: ht
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
-workflow-type: ht
-source-wordcount: '1272'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Tippen Sie links oben auf der Seite auf **Cloud Services** und dann auf das AEM-Symbol. Navigieren Sie anschließend zu **[!UICONTROL Allgemein > CRXDE Lite]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the AEM icon and navigate to **[!UICONTROL General > CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für das Video-Ausgabeformat aus dem JCR (Java Content Repository).
 
    Der Pfad für das Video-Ausgabeformat kann zum Beispiel folgendermaßen aussehen:
