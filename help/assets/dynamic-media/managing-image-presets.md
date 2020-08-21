@@ -2,9 +2,9 @@
 title: 'Verwalten von Bildvorgaben '
 description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3648'
 ht-degree: 98%
 
 ---
@@ -254,7 +254,7 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ### Erstellen von responsiven Bildvorgaben {#creating-a-responsive-image-preset}
 
