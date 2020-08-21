@@ -1,11 +1,11 @@
 ---
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
-translation-type: ht
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
-workflow-type: ht
-source-wordcount: '3124'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
+source-wordcount: '3121'
+ht-degree: 98%
 
 ---
 
@@ -189,9 +189,9 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 >
 >Die Videokomponente für Dynamic Media ist standardmäßig adaptiv. Wenn sie eine feste Größe aufweisen soll, müssen Sie dies in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** festlegen.
 
-* **Viewer-Vorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
+* **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Video-Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
 
-* **Viewer-Modifikatoren**: Viewer-Modifikatoren haben die Form „name=value pair with a &amp; delimiter“ und ermöglichen eine Viewer-Bearbeitung, wie im Adobe Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
+* **[!UICONTROL Viewer-Modifikatoren]**- Viewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Paars mit einem &amp;-Trennzeichen und ermöglichen das Ändern von Viewern, wie im Viewer-Referenzhandbuch für Adoben beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
 
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
@@ -200,7 +200,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **Titel**: Ändern Sie den Titel des Videos.
+* **[!UICONTROL Titel]**: Ändern Sie den Videotitel.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
