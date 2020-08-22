@@ -2,9 +2,9 @@
 title: Verwenden des Rich-Text-Editors in  [!DNL Adobe Experience Manager] , um Inhalte zu erstellen.
 description: Verwenden des Rich-Text-Editors von  [!DNL Experience Manager] , um Inhalte zu erstellen.
 translation-type: tm+mt
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Zusätzliche Optionen für den Rich-Text-Editor sind:
 
 Klicken Sie auf „Minimieren“, um den Vollbildmodus zu schließen.
 
->[!TTipp]
+>[!TIP]
 >
 >Das Kopieren verschachtelter Listen aus [!DNL Microsoft Word] in den RTE kann zu inkonsistenten Ergebnissen führen. Fügen Sie sie stattdessen als Text ein und passen Sie das Format manuell an.
 
