@@ -1,10 +1,10 @@
 ---
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
-translation-type: ht
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: ht
-source-wordcount: '209'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Oder über die Seite **Umgebungen**:
 
 ![](assets/download-logs.png)
 
->[!NHinweis]
+>[!NOTE]
 >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
 
 ![](assets/manage-logs3.png)
@@ -67,7 +67,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!NHinweis]
+>[!NOTE]
 >Während **Protokoll-Downloads** sowohl über die Benutzeroberfläche als auch über die API möglich sind, ist das **Protokoll-Tailing** nur über APIs/die Befehlszeilenschnittstelle möglich.
 
 ### Zusätzliche Ressourcen {#resources}
