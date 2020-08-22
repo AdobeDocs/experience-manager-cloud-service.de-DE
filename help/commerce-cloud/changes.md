@@ -2,9 +2,9 @@
 title: Wichtige Änderungen beim AEM als Cloud Service
 description: Es wurden erhebliche Änderungen an AEM Commerce als Cloud Service gegenüber Adobe Experience Manager 6.5 vorgenommen.
 translation-type: tm+mt
-source-git-commit: df6f679b70a7cc70e4f76612c0a72a31443cd1b8
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ Nachfolgend sind die verschiedenen Bereitstellungsmodelle für Commerce Integrat
 | Bereitstellung von CIF-Authoring-Werkzeugen für Magento-Backend | [Informationen zu CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) , der auf AEM 6.5 unterstützt wird | [Informationen zu CIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) , der auf AEM 6.5 unterstützt wird | AEM als Cloud Service muss mit CIF-Add-On bereitgestellt werden. Weitere Informationen erhalten Sie von Ihrem Vertriebsmitarbeiter |
 | Bereitstellung des [CIF-Venia-Projekts](https://github.com/adobe/aem-cif-guides-venia) | AEM Paketinstallation | Bereitstellung über [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projekt in [Cloud Manager Git Repository](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) und Bereitstellung über [Cloud Manager verschoben](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
->[!NHinweis]
+>[!NOTE]
 >
 >CIF Classic/Quickstart Version von Commerce Integration Framework kann für AEM On-Premise-Angebot in sehr begrenzten Anwendungsfällen verwendet werden. Dies ist jedoch nicht die empfohlene Lösung.
 
@@ -48,6 +48,6 @@ Die wichtigsten Unterschiede sind:
 * Das GraphQL Client OSGI Bundle **darf nicht** mehr in das AEM Projekt einbezogen werden, es wird über das CIF Add-on bereitgestellt
 * OSGI-Konfigurationen für GraphQL-Client und Graphql Data Service **dürfen nicht** mehr in das AEM Projekt einbezogen werden
 
->[!TTipp]
+>[!TIP]
 >
 >Sehen Sie sich das Projekt [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) auf GitHub an. Dieses Projekt bietet Maven-Profile für die AEM als Cloud Service und für Bereitstellungen vor Ort, die den unterschiedlichen Rahmenbedingungen Rechnung tragen.
