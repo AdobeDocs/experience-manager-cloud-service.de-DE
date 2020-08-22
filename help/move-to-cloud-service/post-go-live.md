@@ -1,10 +1,10 @@
 ---
 title: Phase nach der Live-Schaltung
 description: Phase nach der Live-Schaltung
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementieren fü
 
 Als ein Benutzer können Sie auf CRX/DE Lite in der Entwicklungsumgebung zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung.
 
->[WICHTIG]
+>[!IMPORTANT]
 >Das Schreiben in unveränderliche Repositorys wie `/libs` und `/apps` zur Laufzeit führt zu Fehlern. Darüber hinaus haben Sie als Kunde keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
 
 Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRX/DE Lite finden Sie unter [Entwickeln mit CRX/DE Lite](https://docs.adobe.com/help/de-DE/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
