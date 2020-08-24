@@ -2,9 +2,9 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10052'
 ht-degree: 99%
 
 ---
@@ -972,11 +972,11 @@ So zeigen Sie Videoberichte an:
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo, tippen Sie dann links in der Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**.
 1. Führen Sie auf der Seite „Videoberichte“ eine der folgenden Aktionen aus:
 
-   * Tippen Sie in der Nähe der oberen rechten Ecke auf das Symbol **[Videobericht aktualisieren]**.
-Sie müssen den Bericht nur dann aktualisieren, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie die Videoverfolgung sehen, die seit der letzten Ausführung des Berichts vorgenommen wurde.
+   * Near the upper-right corner, tap the **[!UICONTROL Refresh Video Report]** icon.
+You only need to use Refresh if the end date of the report is the current day. This ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-   * Tippen Sie in der Nähe der oberen rechten Ecke auf das Symbol **[Datumsauswahl]**.
-Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und tippen Sie dann auf **[!UICONTROL Bericht ausführen]**.
+   * Near the upper-right corner, tap the **[!UICONTROL Date Picker]** icon.
+Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
 
    Im Gruppenfeld „Top-Metriken“ werden verschiedene aggregierte Messungen für alle auf der Site *veröffentlichten *Videos angegeben.
 
@@ -1011,7 +1011,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
 
    Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
 
-   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Einbettungs-Code]** als auch in der Funktion **[URL kopieren]**. Der in der URL des Befehls **[URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   Der richtige Wert für den Parameter „config2“ befindet sich sowohl im **[!UICONTROL Einbettungscode]** als auch in der Kopiefunktion **[!UICONTROL URL]**. In der URL des Kopiebefehls **[!UICONTROL URL]** ist der zu suchende Parameter `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
 
 1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
 
