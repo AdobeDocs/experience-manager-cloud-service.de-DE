@@ -2,15 +2,15 @@
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 translation-type: tm+mt
-source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
+source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2253'
 ht-degree: 100%
 
 ---
 
 
-# Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität {#custom-code-quality-rules}
+# Benutzerspezifische Regeln für Codequalität {#custom-code-quality-rules}
 
 
 Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf bewährten Verfahren des AEM Engineering basieren.
