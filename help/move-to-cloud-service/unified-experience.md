@@ -2,17 +2,19 @@
 title: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 description: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 translation-type: tm+mt
-source-git-commit: c00b10b4d564e05099740b9ff991624db4f37a3d
+source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
 
 # Einheitliches Erlebnis für Tools zur Codeumgestaltung {#unified-experience}
 
-Mehrere Tools mit unterschiedlichen Interaktionspunkten für Kunden schaffen ein uneinheitliches Erlebnis und erhöhen die Komplexität der Verwendung von Werkzeugen, wobei jede von ihnen unterschiedliche Ausführungsanforderungen hinsichtlich Installation, Einrichtung und Ausführung hat.
+Die Unified Experience for Code Refactoring-Tools vereinheitlichen das Erlebnis für die Ausführung von AEM als Cloud Service-Code-Refactoring-Tools, die auf Dispatcher-Dateien, Code und Repositorys arbeiten.
+
+Dieses Tool reduziert die Komplexität der Verwendung von Code-Refactoring-Werkzeugen, wobei jede von ihnen unterschiedliche Ausführungsanforderungen hinsichtlich Installation, Einrichtung und Ausführung hat.
 
 ## Vorteile {#benefits}
 
@@ -26,9 +28,12 @@ Die Unique Experience for Code Refactoring Tools zusammen mit den zugehörigen R
 
 * Vereinfachen Sie den zukünftigen Zusatz neuer Tools, wie z.B. das Hinzufügen neuer Tools zum Plugin, sollte einfach einen neuen Befehl für Entwickler und ein einfaches Plugin-Update für Benutzer erfordern, damit das Erlebnis mit einer höheren Wertschöpfung konsistent bleibt.
 
-### Grundlegendes zum Anwendungsdesign
+## Erläuterungen zum Plugin {#understanding-plugin}
 
-Diese Tools vereinen alle Code-Refactoring-Tools in einer &quot;node.js&quot;-Anwendung, um dem Benutzer eine einheitliche Benutzererfahrung `aio-cli plugin` zu bieten.
+Der Code, die Repository-Struktur oder Konfigurationen auf dem lokalen Computer des Kunden werden neu `aio-cli-plugin-aem-cloud-service-migration` berechnet. Diese Seite erfasst die detaillierten Anforderungen und Designentscheidungen für das einheitliche Erlebnis.
+Es ist als Open Source für Community verfügbar, um es für benutzerdefinierte Anwendungsfälle zu erweitern.
+
+Diese Tools vereinen alle Code-Refactoring-Tools in einer &quot;node.js&quot;-Anwendung, um dem Benutzer eine einheitliche Benutzererfahrung `aio-cli plugin` zu bieten. Das Plug-in überprüft die lokale Codebasis des Kunden und stellt AEM als Cloud Service kompatiblen Code, Konfigurationen und Pakete her, die dann auf Cloud Service-Umgebung bereitgestellt werden können.
 
 Das Zusatzmodul besteht aus zwei Hauptteilen:
 
@@ -44,16 +49,12 @@ Das Zusatzmodul besteht aus zwei Hauptteilen:
 
    * Aufzeichnung der während der Migration ausgeführten Vorgänge in konsistenter Reihenfolge, um einen Zusammenfassungsbericht zu erstellen.
 
-## Verwenden des Plug-Ins {#using-plugin}
-
-Der Code, die Repository-Struktur oder Konfigurationen auf dem lokalen Computer des Kunden werden neu `aio-cli-plugin-aem-cloud-service-migration` berechnet. Diese Seite erfasst die detaillierten Anforderungen und Designentscheidungen für das einheitliche Erlebnis.
-Es ist als Open Source für Community verfügbar, um es für benutzerdefinierte Anwendungsfälle zu erweitern.
-
 ## Verfügbarkeit {#availability}
 
-Sie können das `aio-cli-plugin-aem-cloud-service-migration` über `aio-cli` (derzeit nur mit Dispatcher-Konverter integriert) installieren und verwenden.
+Sie können das `aio-cli-plugin-aem-cloud-service-migration` über `aio-cli`installieren und verwenden.
 
-Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) , um mehr über die Verwendung und den Beitrag zu diesem Tool zu erfahren.
+>[!NOTE]
+>Dieses Tool ist derzeit nur mit dem Dispatcher Converter integriert.
 
-Der Plugin-Code wurde in Github geöffnet.
+Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) , um mehr über die Verwendung und den Beitrag zu diesem Plugin-Code zu erfahren, der in GitHub offen ist.
 
