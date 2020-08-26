@@ -2,7 +2,7 @@
 title: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 description: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ Das `aio-cli-plugin-aem-cloud-service-migration` Plugin besteht aus zwei Hauptte
 
 * **Benutzeroberfläche**
 
-   * `aio-cli` Befehle zum Ausführen eines oder mehrerer Code-Refactoring-Tools (durch Verketten der Tools, die sequenziell ausgeführt werden sollen)
-   * `config.yaml` , die die erforderlichen Eingabeparameter übernimmt
+   * `aio-cli` Befehle zum Ausführen eines oder mehrerer Code Refactoring Tools (durch Verketten der Tools, die sequenziell ausgeführt werden sollen).
+   * `config.yaml` , der die erforderlichen Eingabeparameter übernimmt.
 
 * **zugrunde liegende Code Refactoring Tool Suite**
 
