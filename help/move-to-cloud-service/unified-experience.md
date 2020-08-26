@@ -2,10 +2,10 @@
 title: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 description: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
@@ -16,17 +16,19 @@ Die Unified Experience for Code Refactoring-Tools vereinheitlichen das Erlebnis 
 
 Dieses Tool reduziert die Komplexität der Verwendung von Code-Refactoring-Werkzeugen, wobei jede von ihnen unterschiedliche Ausführungsanforderungen hinsichtlich Installation, Einrichtung und Ausführung hat.
 
+![image](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Vorteile {#benefits}
 
-Die Unified Experience for Code Refactoring Tools rufen alle Code-Refactoring-Tools auf und führen sie aus, die am Quellcode von derselben Stelle aus arbeiten.
+Die Unified Experience for Code Refactoring-Tools rufen alle Code-Refactoring-Werkzeuge auf und führen sie aus, die am Quellcode arbeiten.
 
-Die Unique Experience for Code Refactoring Tools zusammen mit den zugehörigen Repositorys ermöglichen Folgendes:
+Diese Werkzeuge ermöglichen zusammen mit den zugehörigen Repositorys Folgendes:
 
-* Vereinheitlichen Sie alle Werkzeuge, die bei der Migration von Quellcode in eine `node.js` `aio-cli plugin` Anwendung eingesetzt werden, um dem Benutzer eine einheitliche Benutzererfahrung zu bieten.
+* Die Vereinheitlichung aller Tools, die an der Migration von Quellcode in eine `node.js` `aio-cli plugin` Anwendung arbeiten, bietet dem Benutzer eine einheitliche Benutzererfahrung.
 
-* Bereitstellung zur Durchführung der Gesamtmigration über einen einzelnen Befehl und gleichzeitig Flexibilität bei der Ausführung eines bestimmten Tools gemäß Anforderung.
+* Bereitstellung zur Durchführung der Gesamtmigration über einen einzelnen Befehl und gleichzeitig Flexibilität bei der Ausführung eines bestimmten Tools gemäß den Anforderungen.
 
-* Vereinfachen Sie den zukünftigen Zusatz neuer Tools, wie z.B. das Hinzufügen neuer Tools zum Plugin, sollte einfach einen neuen Befehl für Entwickler und ein einfaches Plugin-Update für Benutzer erfordern, damit das Erlebnis mit einer höheren Wertschöpfung konsistent bleibt.
+* Zur Vereinfachung künftiger Tools wie dem Hinzufügen neuer Tools zum Plugin sollte lediglich ein neuer Befehl für Entwickler und ein einfaches Plugin-Update für Benutzer hinzugefügt werden, sodass das Erlebnis mit einer höheren Wertschöpfung konsistent bleibt.
 
 ## Erläuterungen zum Plugin {#understanding-plugin}
 
