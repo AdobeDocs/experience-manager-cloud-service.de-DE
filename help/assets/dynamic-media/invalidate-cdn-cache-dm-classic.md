@@ -2,7 +2,7 @@
 title: Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic
 description: Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Caches warten.
 translation-type: tm+mt
-source-git-commit: e4822ae72d133bb502bc2c2fa1eb07a625f2a507
+source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 90%
@@ -20,7 +20,7 @@ Dynamic Media-Assets werden vom CDN zwecks schneller Bereitstellung im Cache ges
 
 Siehe auch [Übersicht über Caching in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**To invalidate your CDN cache by way of Dynamic Media Classic:**
+**So machen Sie Ihren CDN-Cache über Dynamic Media Classic ungültig:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
