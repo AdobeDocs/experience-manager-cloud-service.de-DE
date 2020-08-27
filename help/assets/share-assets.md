@@ -3,10 +3,10 @@ title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Adobe Experience Manager Assets als Hyperlink freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 100%
+source-wordcount: '905'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Herunterladen und Freigeben von Assets {#download-and-share-assets}
 
-Benutzer können einige Assets herunterladen und diese außerhalb von Experience Manager freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
+Users can download the required assets and share these outside of [!DNL Experience Manager]. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
 
 ## Freigeben von Assets für Kreativschaffende {#share-with-creatives}
 
