@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Im Markenportal sind jetzt native und hochwertige PDF-Dokument-Vorschauen verfügbar. Siehe Übersicht über den [Dokument-Viewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Die Benutzeroberfläche zum Ungültigmachen des Cache ist jetzt in verfügbar [!DNL Dynamic Media].
+* Sie können jetzt den CDN (Content Versand Network)-Cache direkt von [!DNL Dynamic Media] in AEM als Cloud Service ungültig machen (im Gegensatz zur Verwendung [!DNL Dynamic Media Classic]), um sicherzustellen, dass die neuesten Assets innerhalb von Minuten statt stundenweise bereitgestellt werden. Siehe [Ungültigmachen des CDN-Cache über dynamische Medien](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * Die Benutzeroberflächensteuerelemente, Navigation, Durchsuchen und Sucherfahrung in [!DNL Assets]werden jetzt noch besser unterstützt.
 
