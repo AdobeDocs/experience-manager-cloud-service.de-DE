@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 94%
 
 ---
 
@@ -141,6 +141,16 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >[!CAUTION]
    >
    >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
+
+## Benutzerdefinierte Metadaten mit verarbeitendem Profil {#metadata-compute-service}
+
+Assets als Cloud Service können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie mit Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)arbeiten.
+
+![Metadaten-Darstellung im verarbeitenden Profil](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Es kann nur ein verarbeitendes Profil auf einen Ordner angewendet werden. Um mehrere Verarbeitungsschritte auf Assets in einem Profil anzuwenden, fügen Sie einem einzelnen Verarbeitungsordner weitere Optionen hinzu. Beispielsweise kann ein einzelnes Profil Darstellungen generieren, Assets transkodieren, benutzerdefinierte Metadaten generieren usw. Sie können MIME-Filter für jede Aufgabe anwenden, damit die entsprechende Aufgabe für das erforderliche Dateiformat ausgelöst wird.
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configlimit}
 
