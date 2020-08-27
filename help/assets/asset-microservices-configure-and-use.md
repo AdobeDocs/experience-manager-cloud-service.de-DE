@@ -1,33 +1,23 @@
 ---
-title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarbeitung
-description: Erfahren Sie, wie Sie die Cloud-nativen Asset-Microservices konfigurieren und verwenden, um Assets skaliert zu verarbeiten.
+title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarbeitung.
+description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Mikrodienste, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2530'
+ht-degree: 45%
 
 ---
 
 
 # Asset-Mikrodienste und verarbeitende Profil verwenden {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-nativen Anwendungen (auch als &quot;Arbeiter&quot;bezeichnet). Adobe verwaltet die Dienste für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of [!DNL Experience Manager]. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren.
 
-Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Diensten. Adobe verwaltet die Dienste für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
-
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. Administratoren können die Konfigurationen von Nachbearbeitungs-Workflows erstellen und verwalten, einschließlich optionaler Anpassungen. Die Anpassung von Workflows ermöglicht Erweiterbarkeit und vollständige Anpassung.
-
-Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren.
+Die Verarbeitung von Assets hängt von der Konfiguration in **[!UICONTROL verarbeitenden Profilen]** ab. Experience Manager bietet eine grundlegende Standardeinstellung und ermöglicht es Administratoren, eine spezifischere Asset-Verarbeitungskonfiguration hinzuzufügen. Administratoren erstellen, warten und ändern die Konfigurationen der Workflows nach der Verarbeitung, einschließlich optionaler Anpassungen. Durch Anpassen der Workflows können Entwickler das Standardangebot erweitern.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Gehen Sie wie folgt vor, um ein Profil für die Standardverarbeitung zu erstelle
    * Qualität in Prozent jeder JPEG-Darstellung.
    * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -158,9 +148,7 @@ Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese 
 
 ![custom-processing-Profil](assets/custom-processing-profile.png)
 
-*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden.*
-
-Wenn Kampagnen in den Ordner hochgeladen werden, auf den dieses verarbeitende Profil angewendet wird, werden die Bilder mit `Jumanji` Text in der `Arial-BoldMT` Schriftart aktualisiert.
+*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden. In diesem Beispiel werden Kampagnen, die hochgeladen werden, mit`Jumanji`Text in der`Arial-BoldMT`Schriftart aktualisiert.*
 
 ## Verarbeitung von Profilen zur Verarbeitung von Assets {#use-profiles}
 
@@ -169,19 +157,20 @@ Erstellen Sie die zusätzlichen benutzerdefinierten Verarbeitungsprofile und wen
 Verwenden Sie eine der folgenden Methoden, um Verarbeitungsprofile auf Ordner anzuwenden:
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. Dadurch wird ein Inhalts-Browser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
-* Die Benutzer können einen Ordner in der Benutzeroberfläche „Assets“ auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Verarbeitungsprofile]** klicken und in der Popup-Liste das richtige Verarbeitungsprofil für diesen Ordner auswählen. Klicken Sie auf **[!UICONTROL Speichern &amp; Schließen]**, um die Änderungen zu speichern.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Klicken Sie auf **[!UICONTROL Speichern &amp; Schließen]**, um die Änderungen zu speichern.
+   ![Anwenden des Verarbeitungs-Profils auf einen Ordner auf der Registerkarte &quot;Asset-Eigenschaften&quot;](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Nur ein Verarbeitungsprofil kann auf einen bestimmten Ordner angewendet werden. Um weitere Ausgabedarstellungen zu generieren, fügen Sie dem bestehenden Verarbeitungsprofil weitere Darstellungsdefinitionen hinzu.
+>Es kann nur ein verarbeitendes Profil auf einen Ordner angewendet werden. Um weitere Ausgabedarstellungen zu generieren, fügen Sie dem bestehenden Verarbeitungsprofil weitere Darstellungsdefinitionen hinzu.
 
-Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum Standardprofil. Wenn Sie mehrere Profile auf einen Ordner anwenden, werden die hochgeladenen oder aktualisierten Elemente mit jedem dieser Profile verarbeitet.
+Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum Standardprofil.
 
 >[!NOTE]
 >
 >Ein Verarbeitungsprofil, das auf einen Ordner angewendet wird, funktioniert für die gesamte Struktur, kann aber mit einem anderen Profil überschrieben werden, das auf einen Unterordner angewendet wird. Wenn Assets in einen Ordner hochgeladen werden, prüft Experience Manager die Eigenschaften des zugehörigen Ordners auf ein Verarbeitungsprofil. Wenn nichts angewendet wird, wird in einem übergeordneten Ordner in der Hierarchie geprüft, ob ein Verarbeitungsprofil angewendet werden soll.
 
-Alle generierten Darstellungen sind in der Ansicht [!UICONTROL Darstellungen] in der linken Leiste verfügbar. Öffnen Sie die Asset-Vorschau und öffnen Sie die linke Leiste, um auf die Ansicht **[!UICONTROL Ausgabeformate]** zuzugreifen. Die spezifischen Ausgabeformate im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
+Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die generierten Darstellungen in der Ansicht [!UICONTROL Darstellungen] in der linken Leiste Vorschau haben. Öffnen Sie die Asset-Vorschau und öffnen Sie die linke Leiste, um auf die Ansicht **[!UICONTROL Ausgabeformate]** zuzugreifen. Die spezifischen Ausgabeformate im Verarbeitungsprofil, für die der Typ des jeweiligen Assets mit den Einschlussregeln des MIME-Typs übereinstimmt, sollten sichtbar und zugänglich sein.
 
 ![Zusätzliche-Ausgabedarstellungen](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 >* [Einführung in den Asset Compute-Dienst](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
 >* [Verstehen Sie die Erweiterbarkeit und wann sie](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)verwendet werden soll.
 >* [Erstellen benutzerdefinierter Anwendungen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [Unterstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
