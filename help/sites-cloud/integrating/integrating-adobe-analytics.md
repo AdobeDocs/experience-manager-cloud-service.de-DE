@@ -2,9 +2,9 @@
 title: Integrieren mit Adobe Analytics
 description: 'Integrieren mit Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 76db5314369ca0f854482586d5c96474014a47af
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '539'
 ht-degree: 18%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 18%
 Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration erfordert:
 
 * Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM als Cloud Service zu erstellen.
-* Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Launch](#analytics-launch). Weitere Informationen zum Starten der Adobe finden Sie auf [dieser Seite](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration in AEM als Cloud Service keine Frameworkunterstützung bereitgestellt. Stattdessen erfolgt sie jetzt über Adobe Launch, das defacto-Tool zur Instrumentierung einer AEM Site mit Analytics-Funktionen (JS-Bibliotheken). Beim Start der Adobe wird eine Eigenschaft erstellt, bei der die Adobe Analytics-Erweiterung konfiguriert werden kann und Regeln zum Senden von Daten an Adobe Analytics erstellt werden. Adobe Launch hat die Aufgabe der von SiteCatalyst bereitgestellten Analytics ersetzt.
+Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration in AEM als Cloud Service keine Framework-Unterstützung bereitgestellt. Stattdessen erfolgt dies jetzt über den Adobe Launch, das defacto-Tool zur Instrumentierung einer AEM Site mit Analytics-Funktionen (JS-Bibliotheken). Beim Start der Adobe wird eine Eigenschaft erstellt, bei der die Adobe Analytics-Erweiterung konfiguriert werden kann und Regeln zum Senden von Daten an Adobe Analytics erstellt werden. Adobe Launch hat die Aufgabe der von SiteCatalyst bereitgestellten Analytics ersetzt.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Im Vergleich zu früheren Versionen von AEM wird in der Analytics-Konfiguration 
 
 1. Navigate to **Tools** → **Cloud Services**.
 2. Select **Adobe Analytics**.
-   ![Adobe Analytics](assets/analytics_screen2.png "WindowAdobe Analytics Window")
+   ![Adobe Analytics](assets/analytics_screen2.png "FensterAdobe Analytics-Fenster")
 3. Select the **Create** button.
 4. Füllen Sie die Details aus (siehe unten) und klicken Sie auf **Verbinden**.
 
@@ -43,14 +43,14 @@ Die Konfigurationsfelder im Fenster &quot;Adobe Analytics-Konfiguration&quot;sin
 | Benutzername | Adobe Analytics API-Benutzer |
 | Kennwort | Adobe Analytics-Kennwort für die Authentifizierung |
 | Datenzentrum | Das Adobe Analytics-Rechenzentrum, mit dem Ihr Konto verbunden ist (Server, z. B. San Jose, London) |
-| Segment | Option zur Verwendung eines in der aktuellen Berichte-Suite definierten Analytics-Segments. Die Analytics-Berichte werden auf Grundlage des Segments gefiltert. Weitere Informationen finden Sie auf [dieser Seite](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html) . |
+| Segment | Option zur Verwendung eines in der aktuellen Berichte-Suite definierten Analytics-Segments. Die Analytics-Berichte werden basierend auf dem Segment gefiltert. Weitere Informationen finden Sie auf [dieser Seite](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html) . |
 | Report Suites | Ein Repository, in dem Sie Daten senden und Berichte abrufen. Eine Report Suite definiert den vollständigen, unabhängigen Berichte auf einer bestimmten Website, eine Reihe von Websites oder eine Untergruppe von Webseiten. Sie können die Berichte, die aus einer einzigen Report Suite abgerufen wurden, in einer Ansicht bearbeiten, und zwar jederzeit entsprechend Ihren Anforderungen. |
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 
 Um eine Touch-UI-Konfiguration auf eine Site anzuwenden, gehen Sie zu: **Sites** → **Wählen Sie eine beliebige Site-Seite** → **Eigenschaften** → **Erweitert** → **Konfiguration** → Konfiguration.
 
-## Integrieren von Adobe Analytics auf AEM Sites mithilfe von Adobe Launch
+## Integrieren von Adobe Analytics auf AEM Sites mithilfe von Adobe Launch {#analytics-launch}
 
 Adobe Analytics kann als Erweiterung in der Eigenschaft &quot;Start&quot;hinzugefügt werden. Es können Regeln definiert werden, die die Zuordnung und den anschließenden Aufruf an Adobe Analytics durchführen:
 
