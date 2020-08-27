@@ -2,10 +2,10 @@
 title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1510'
+ht-degree: 67%
 
 ---
 
@@ -15,8 +15,14 @@ ht-degree: 100%
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung sind die folgenden Aktionen verfügbar:
 
 * Erstellen einer Version einer Seite
-* Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
-* Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
+* Frühere Version einer oder mehrerer Seiten neu angeben, um:
+   * Rückgängigmachen von Änderungen, die an den Seiten vorgenommen wurden.
+   * Wiederherstellen von gelöschten Seiten.
+   * Wiederherstellen eines Baums (wie zu einem bestimmten Datum und einer bestimmten Uhrzeit).
+* Vorschau einer Version.
+* Vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version.
+   * Unterschiede im Text und bei Bildern werden hervorgehoben.
+* Timewarp verwendet die Seitenversionen, um den Status der Veröffentlichungs-Umgebung zu bestimmen.
 
 ## Erstellen einer neuen Version   {#creating-a-new-version}
 
@@ -53,33 +59,104 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
-## Wiederherstellen einer früheren Seitenversion {#reverting-to-a-page-version}
+## Neueinstufung von Versionen {#reinstating-versions}
 
-Nachdem eine Version erstellt wurde, können Sie diese Version bei Bedarf wiederherstellen.
+Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Methoden, eine ältere Version erneut zu installieren:
+
+* Option **Auf Version** zurücksetzen in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+
+   Frühere Version einer ausgewählten Seite erneut angeben.
+
+* die Optionen **Wiederherstellen** in der Symbolleiste der oberen [Aktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
+   * **Version wiederherstellen**
+
+      Neuzuordnen von Versionen bestimmter Seiten im derzeit ausgewählten Ordner; Dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
+
+   * **Baum wiederherstellen**
+
+      eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit neu angeben; Dies kann Seiten umfassen, die zuvor gelöscht wurden.
 
 >[!NOTE]
 >
->Wenn eine Seite wiederhergestellt wird, gehört die erstellte Version zu einem neuen Zweig.
+>Beim erneuten Installieren einer Seite wird die erstellte Version Teil einer neuen Verzweigung.
 >
 >Beispiel:
 >
 >1. Erstellen Sie Versionen einer beliebigen Seite.
 >1. Die anfänglichen Etiketten und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
->1. Stellen Sie die erste Version wieder her, d. h. Version 1.0.
+>1. Die erste Version erneut angeben; d. h. 1.0.
 >1. Erstellen Sie weitere neue Versionen.
 >1. Die erzeugten Etiketten und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
 
-So stellen Sie eine frühere Version wieder her:
+### Revert to a Version {#revert-to-a-version}
+
+So **stellen Sie** die ausgewählte Seite auf eine frühere Version zurück:
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die Spalte **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
-   ![Version zurücksetzen](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![Auf diese Version zurücksetzen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Wählen Sie **Auf diese Version zurücksetzen**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline werden aktualisiert.
+
+### Version wiederherstellen {#restore-version}
+
+Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiederhergestellt werden. Dies kann auch die Wiederherstellung von Seiten umfassen, die zuvor gelöscht wurden:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Wählen Sie **Wiederherstellen** und dann **Wiederherstellen der Version** in der Symbolleiste [der](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)Aktionen oben.
+
+   >[!NOTE]
+   >
+   >Wenn eine der folgenden Optionen:
+   >* Sie haben eine einzelne Seite ausgewählt, die noch keine untergeordneten Seiten hatte,
+   >* oder keine der Seiten im Ordner Versionen enthält,
+
+   >
+   >Dann ist die Anzeige leer, da keine Versionen verfügbar sind.
+
+1. Die verfügbaren Versionen werden aufgelistet:
+
+   ![Version wiederherstellen - Liste aller Seiten im Ordner](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+
+1. Verwenden Sie für eine bestimmte Seite die Dropdownauswahl unter &quot; **WIEDERHERSTELLEN ZU VERSION** &quot;, um die erforderliche Version für diese Seite auszuwählen.
+
+   ![Version wiederherstellen - Version auswählen](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+
+1. Wählen Sie in der Hauptanzeige die zu wiederherzustellende Seite aus:
+
+   ![Version wiederherstellen - Seite auswählen](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+
+1. Wählen Sie **Wiederherstellen** für die ausgewählte Version der ausgewählten Seite, die als *aktuelle* Version wiederhergestellt werden soll.
+
+>[!NOTE]
+>
+>Die Reihenfolge, in der Sie eine erforderliche Seite und die zugehörige Version auswählen, ist austauschbar.
+
+### Baum wiederherstellen {#restore-tree}
+
+Diese Methode kann verwendet werden, um eine Version eines Baums zu einem bestimmten Datum und zu einem bestimmten Zeitpunkt wiederherzustellen; Dies kann Seiten umfassen, die zuvor gelöscht wurden:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Wählen Sie **Wiederherstellen** und dann **Wiederherstellen der Struktur** in der Symbolleiste [der](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)Aktionen oben. Die aktuelle Version des Baums wird angezeigt:
+
+   ![Baum wiederherstellen](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. Verwenden Sie die Datums- und Uhrzeitauswahl unter &quot; **Neueste Versionen am Datum** &quot;, um eine andere Version des Baums auszuwählen, die wiederhergestellt werden soll.
+
+1. Legen Sie das Flag &quot; **Preserve Non Version Pages** &quot;wie gewünscht fest:
+
+   * Wenn diese Option aktiviert ist, werden alle Seiten ohne Versionsnummer beibehalten und von der Wiederherstellung nicht beeinflusst.
+
+   * Wenn diese Option deaktiviert (nicht ausgewählt) ist, werden alle Seiten ohne Versionsnummer entfernt, da sie nicht in der Versionsstruktur vorhanden waren.
+
+1. Wählen Sie &quot; **Wiederherstellen** &quot;für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
 
 ## Vorschau einer Version   {#previewing-a-version}
 
