@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus [!DNL Adobe Experience Manager Assets].
 description: Herunterladen von Assets [!DNL Adobe Experience Manager Assets] und Aktivieren oder Deaktivieren der Download-Funktion.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
+source-git-commit: c4a642541a3c8f69c0efff0dbbe036374a1d6f6b
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 91%
+source-wordcount: '894'
+ht-degree: 67%
 
 ---
 
@@ -21,9 +21,30 @@ Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstel
 
 Die Asset-Typen „Bild-Set“, „Rotations-Set“ „Set für gemischte Medien“ und „Karussell-Set“ können nicht heruntergeladen werden.
 
+Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
+
+* [Experience Manager-Benutzeroberfläche](#download-in-aem)
+* Benutzeroberfläche &quot;Asset-Link freigeben&quot;
+* [Asset-Freigabe - Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+
+## Herunterladen von Assets über AEM Oberfläche {#download-in-aem}
+
+Der asynchrone Download-Dienst bietet ein Framework für den nahtlosen Download von Assets mit großer Größe. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. Die großen Dateien werden asynchron heruntergeladen und die Benutzer werden über den Abschluss der Experience Manager-Benachrichtigungen im Posteingang informiert. Siehe [Verstehen des Experience Manager-Posteingangs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+
+![Benachrichtigung herunterladen](assets/download-notification.png)
+
+*Abbildung: Downloadbenachrichtigung über[!DNL Experience Manager]Posteingang.*
+
+Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
+
+* Wenn mehr als 10 Assets oder mehr als 100 MB heruntergeladen werden müssen.
+* Wenn die Vorbereitung des Downloads mehr als 30 Sekunden dauert.
+
 Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
-1. Klicken Sie in der Benutzeroberfläche von Experience Manager auf **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigieren Sie zu den Assets, die Sie herunterladen möchten. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus. On the toolbar, click **[!UICONTROL Download]**.
 
    ![Verfügbare Optionen beim Herunterladen von Assets von [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
@@ -38,14 +59,14 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung an den Empfänger zu senden. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Bereitstellung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können mandantenspezifische benutzerdefinierte Vorlagen in folgenden Ordnern speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seiner Originalform ohne Ausgabedarstellungen herunterzuladen.<br>Die Option „Teilassets“ ist verfügbar, wenn das Asset Teil-Asset enthält. |
    | **[!UICONTROL Ausgabedarstellung(en)]** | Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabedarstellungen auswählen, die heruntergeladen werden sollen. Die verfügbaren Ausgabedarstellungen hängen vom ausgewählten Asset ab. |
-   | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus AEM herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
+   | **[!UICONTROL Smartes Zuschneiden]** | Select this option to download all the smart crop renditions of the selected asset from within [!DNL Experience Manager]. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](/help/assets/dynamic-media/image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
-Das Standard-Servlet in AEM ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anforderungen für die Erstellung von ZIP-Dateien mit für sie sichtbaren Assets zu stellen, die den Server und das Netzwerk überlasten können. Um potenzielle DoS-Risiken zu reduzieren, die durch diese Funktion verursacht werden, ist die `AssetDownloadServlet`-OSGi-Komponente für Veröffentlichungsinstanzen standardmäßig deaktiviert.
+Das Standard-Servlet in [!DNL Experience Manager] ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zu stellen, um ZIP-Dateien von Assets zu erstellen. Die Downloadvorbereitung kann Auswirkungen auf die Leistung haben oder sogar den Server und das Netzwerk überladen. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances.
 
 Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset-Freigabe oder eine andere portalähnliche Implementierung verwenden, aktivieren Sie das Servlet manuell über eine OSGi-Konfiguration. Adobe empfiehlt, die zulässige Download-Größe so gering wie möglich zu halten, ohne dass dabei die täglichen Download-Anforderungen beeinträchtigt werden. Ein hoher Wert kann sich auf die Leistung auswirken.
 
@@ -63,7 +84,7 @@ Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset
 
 ## Deaktivieren des Asset-Download-Servlets {#disable-asset-download-servlet}
 
-Das `Asset Download Servlet` kann auf einer AEM-Veröffentlichungsinstanz deaktiviert werden, indem die Dispatcher-Konfiguration so aktualisiert wird, dass sie alle Asset-Download-Anforderungen blockiert. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
+The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
 
 1. Um Asset-Download-Anforderungen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) eine neue Regel hinzu.
 
