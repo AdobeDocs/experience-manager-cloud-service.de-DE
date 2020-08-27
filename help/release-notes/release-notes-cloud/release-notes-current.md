@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
+source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 22%
+source-wordcount: '1002'
+ht-degree: 12%
 
 ---
 
@@ -14,15 +14,57 @@ ht-degree: 22%
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.8.0 beschrieben.
 
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* Möglichkeit, Seiten und Unterseiten (Seitenbäume) auf eine frühere Version wiederherzustellen.
+
+* Möglichkeit, Launches in AEM SPA-Editor zu erstellen.
+
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* Die neuen [!DNL Experience Manager Assets] Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei den vorhandenen Bereitstellungen [konfigurieren Administratoren wie bisher die Integration](/help/assets/smart-tags-configuration.md#aio-integration) von Smarttags.
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Die Videotranskodierung wird jetzt mit Asset-Mikrodiensten unterstützt. Im Anzeigebereich &quot; [!UICONTROL Verarbeitungsvorgänge für Profile] &quot;finden Sie einen neuen Abschnitt zur Video-Bitrate und -Dimensionen (das Ausgabeformat ist MP4 mit H.264-Codec). For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). Für weitere Transkodierungsoptionen und Video-Versand- [!DNL Dynamic Media] Add-On können verwendet werden.
+
+* Bei neuen [!DNL Experience Manager Assets] Bereitstellungen ist die Funktion für intelligentes Tagging jetzt standardmäßig konfiguriert. Die manuelle Integration mit [!DNL Adobe Developer Console]ist nicht erforderlich. Bei vorhandenen Implementierungen [konfigurieren Administratoren wie bisher die Integration](/help/assets/smart-tags-configuration.md#aio-integration) von Smarttags.
+
+* Eine neue [Asset-Download-Erfahrung](/help/assets/download-assets-from-aem.md) ermöglicht,
+
+   * Asynchroner Download für große Downloads, damit die Benutzer nicht warten müssen.
+
+   * Eine neue modulare API für Entwicklererweiterbarkeit.
+
+* [!DNL Experience Manager] hat die Leistung der Metadaten-Extraktion für Asset-Mikrodienste verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
+
+* Verwenden Sie Process Profil, um benutzerdefinierte Metadaten mit dem Compute Service zu generieren. Siehe [Benutzerdefinierte Metadaten mithilfe des Verarbeitungs-Profils](/help/assets/manage-metadata.md#metadata-compute-service)
+
+* Eine einfachere Download-Funktion für Brand Portal-Benutzer, die von Administratoren konfiguriert werden können. Siehe Überblick über [das Herunterladen](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+
+* Im Markenportal sind jetzt native und hochwertige PDF-Dokument-Vorschauen verfügbar. Siehe Übersicht über den [Dokument-Viewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+
+* Die Benutzeroberfläche zum Ungültigmachen des Cache ist jetzt in verfügbar [!DNL Dynamic Media].
+
+* Die Benutzeroberflächensteuerelemente, Navigation, Durchsuchen und Sucherfahrung in [!DNL Assets]werden jetzt noch besser unterstützt.
+
+   * Wenn Sie nach Auswahl der Option [!UICONTROL Hinzufügen Darstellung] die Escape-Taste drücken, kehrt der Fokus zur Symbolleiste zurück. <!-- via CQ-4293594-->
+   * Der Tastaturfokus funktioniert wie erwartet, wenn das Kombinationsfeld &quot;E-Mail&quot;verwendet wird. <!-- via CQ-4286215 -->
+   * Die Akkordeonelemente im Abschnitt &quot;Filter suchen&quot;werden als standardmäßige erweiterbare Akkordeons interpretiert. <!-- via CQ-4273103 -->
+   * Beim Anwenden eines Tags auf ein Asset werden Tags im Dialogfeld als drei Elemente angezeigt. ARIA-Attribute werden auf die Bausteinelemente angemessen angewendet, damit sie jetzt verfügbar sind. <!-- via CQ-4272964 -->
+
+* [!DNL AEM Desktop app] Version 2.0.3 ist jetzt verfügbar, was die Kompatibilität mit [!DNL AEM] 6.5.5 verbessert [!DNL Service Pack] und die Client OS-Kompatibilitätsversion aktualisiert (Entfernen von [!DNL Windows] 7 und [!DNL MacOS] Versionen vor 10.14).
+
+### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed}
+
+* Die Option &quot;Relate&quot;und &quot;Disrelation&quot;reagiert nicht, wenn zum ersten Mal darauf geklickt wird. (CQ-4299022)
+* Wenn Sie beim Herunterladen eines Assets die Option zum Empfangen des Assets per E-Mail auswählen, wird die E-Mail nicht gesendet. (CQ-4299146)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Neuerungen {#what-is-new-commerce}
 
-* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Unterstützung von Eigenschaften für Kategorien und Produkte in der Produktkonsole wird ebenfalls bereitgestellt.
+* Die Funktion Produktkonsole ist jetzt verfügbar. Auf diese Weise können Marketingexperten/Autoren in AEM Ansicht und Navigation in Kategorien und Produkten durchführen, die im Commerce-Backend gespeichert sind. Die Produktkonsole unterstützt auch Eigenschaften für Kategorien und Produkte.
 
 * Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
 
@@ -42,6 +84,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 06. August 2020 ver�
 
 * Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
 
+* Möglichkeit zur Durchführung von Erlebnisprüfungen auf Seiten, powered by Google Lighthouse. Im Rahmen der Cloud Manager-Pipeline können bis zu 25 Seiten überprüft und anhand von Erlebnis-KPIs validiert werden. Die Ergebnisse werden in der Benutzeroberfläche von Cloud Manager angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -85,3 +128,14 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * In früheren Versionen der Benutzeroberfläche wurde manchmal eine erfolgreiche Extraktion angezeigt, obwohl Fehler im Protokoll auftraten.
 
+## Code-Refaktorierungs-Tools {#code-refactoring-tools}
+
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für die Code Refactoring Tools.
+
+### Neuerungen {#what-is-new-refactoring}
+
+* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refactoring-Tools zu vereinheitlichen, damit Entwickler Code-Refactoring-Tools von einem Ort aus aufrufen und ausführen können. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* AEM Dispatcher Converter wurde erweitert, um Konvertierungen von On-Premise- und Adobe Managed Services Dispatcher-Konfigurationen in AEM als Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Siehe [Git-Ressource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) .
+
+* AEM Dispatcher Converter neu geschrieben ` node.js ` und mit dem AIO-CLI Plugin integriert.
