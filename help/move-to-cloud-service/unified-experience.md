@@ -2,7 +2,7 @@
 title: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 description: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 translation-type: tm+mt
-source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
+source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Wir haben Tools entwickelt, um einige der Aufgaben zur Codeumgestaltung zu autom
 
 ## Vorteile {#benefits}
 
-Das Unified Experience-Plugin bietet die folgenden Vorteile:
+Das Plug-in Unified Experience bietet die folgenden Vorteile:
 
 * Vereinheitlicht Tools, die mit Quellcode arbeiten, in einer `node.js` Anwendung, die als `aio-cli ` Plug-In verfügbar gemacht wird, um dem Benutzer eine einheitliche Benutzererfahrung zu bieten.
 
