@@ -2,7 +2,7 @@
 title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
 translation-type: tm+mt
-source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
+source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -226,7 +226,7 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 * **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
 * **Timewarp verwendet Seitenversionen** : Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
 * **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
-* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über [Wiederherstellen](#reverting-to-a-page-version) manuell ausführen.
+* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über [Wiederherstellen](#revert-to-a-version) manuell ausführen.
 * **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
 >[!CAUTION]
