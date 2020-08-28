@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 3%
+source-wordcount: '1521'
+ht-degree: 2%
 
 ---
 
@@ -176,3 +176,7 @@ Die alte Version der Anwendung verwendet die folgende Konfiguration:
 Die neue Version der Anwendung verwendet die folgende (geänderte) Konfiguration:
 
 `/oak:index/acme.product-custom-2`
+
+### Index-Verfügbarkeit/Fehlertoleranz {#index-availability}
+
+Es wird empfohlen, Duplikat-Indizes für Funktionen zu erstellen, die äußerst wichtig sind (unter Berücksichtigung der oben genannten Benennungsregel für Indizes). Bei Indexbeschädigung oder einem solchen unvorhergesehenen Ereignis steht daher ein Fallback-Index zur Verfügung, um auf Abfragen zu reagieren.
