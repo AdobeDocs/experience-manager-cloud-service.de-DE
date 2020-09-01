@@ -2,10 +2,10 @@
 title: 'Erstellen von Seitenvorlagen  '
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlagen-Editor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem **Vorlagen-Editor** können Vorlagenautoren:
 
 In diesem Dokument wird erklärt, wie ein **Vorlagenautor** die Vorlagenkonsole und den Vorlagen-Editor verwenden kann, um bearbeitbare Vorlagen zu erstellen und zu verwalten.
 
-Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument „Bearbeitbare Seitenvorlagen“. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
-Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. Dies ist eine Administratoraufgabe, die im Dokument „Bearbeitbare Seitenvorlagen“ beschrieben wird. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlagen erstellt werden. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Erstellen einer neuen Vorlage – Vorlagenautor {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    >
    >In einer Standard-AEM-Instanz ist der Ordner **Global** bereits in der Vorlagenkonsole vorhanden. Er enthält Standardvorlagen und dient als Ausweichlösung, wenn keine Richtlinien und/oder Vorlagentypen im aktuellen Ordner gefunden werden.
    >
-   >Es wird als Best Practice empfohlen, einen für Ihr Projekt erstellten Vorlagenordner zu verwenden. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >Es wird das bewährte Verfahren empfohlen, einen [für Ihr Projekt erstellten Vorlagenordner zu verwenden](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Wählen Sie **Erstellen** und anschließend **Vorlage erstellen**, um den Assistenten zu öffnen.
 
@@ -114,7 +114,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
 
    >[!NOTE]
    >
-   >Vorlagenarten sind vordefinierte Vorlagen, die als Vorlagen für eine Vorlage betrachtet werden können. Sie werden von Entwicklern oder vom Systemadministrator vordefiniert. Weitere Informationen finden Sie im Entwicklerdokument „Seitenvorlagen – Bearbeitbar“. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Vorlagenarten sind vordefinierte Vorlagen, die als Vorlagen für eine Vorlage betrachtet werden können. Sie werden von Entwicklern oder vom Systemadministrator vordefiniert. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Stellen Sie die **Vorlagendetails** fertig:
 
@@ -204,7 +204,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
    >Wenn die Liste **Zugelassene Vorlagen** leer ist, wird die Struktur weiter durchsucht, bis ein Wert/eine Liste gefunden wird.
    >
    >
-   >Weitere Informationen finden Sie unter „Vorlagenverfügbarkeit“ – die Prinzipien für zugelassene Vorlagen bleiben gleich. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Klicken Sie auf **Speichern**, um die Änderungen an den Seiteneigenschaften zu speichern.
 
@@ -265,7 +265,7 @@ Wenn eine Komponente entsperrt wurde, können Sie den [anfänglichen Inhalt](#ed
 
 #### Layout {#template-layout}
 
-Mit dem [Layout](#editing-a-template-layout-template-author) können Sie das Vorlagen-Layout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus [**Layout **für das Erstellen von Seiten](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Mit dem [Layout](#editing-a-template-layout-template-author) können Sie das Vorlagen-Layout für die erforderlichen Geräteformate vordefinieren. Der Modus **Layout** für das Erstellen von Vorlagen bietet dieselben Funktionen wie der Modus [**Layout** für das Erstellen von Seiten](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Seitenrichtlinien {#template-page-policies}
 
@@ -414,7 +414,7 @@ Sie können zum Beispiel für eine Bildkomponente die Beschneidungsproportionen,
 
 >[!NOTE]
 >
->Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren, können nur für Optionen definiert werden, die vom RTE über die UI-Einstellungen bereitgestellt werden. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)Inhaltsrichtlinien für Komponenten, die den Rich-Text-Editor implementieren, können nur für Optionen definiert werden, die vom RTE über die UI-Einstellungen bereitgestellt werden.
 
 #### Richtlinien und Eigenschaften (Layout-Container) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 
 >[!NOTE]
 >
->Der Modus **Anfänglicher Inhalt** kann als Bearbeitungsmodus für Seiten betrachtet werden, die mit dieser Vorlage erstellt werden. Daher sind Richtlinien nicht im Modus **Anfänglicher Inhalt**, sondern im [**Strukturmodus **definiert](#editing-a-template-structure-template-author).
+>Der Modus **Anfänglicher Inhalt** kann als Bearbeitungsmodus für Seiten betrachtet werden, die mit dieser Vorlage erstellt werden. Daher sind Richtlinien nicht im Modus **Anfänglicher Inhalt**, sondern im [**Strukturmodus** definiert](#editing-a-template-structure-template-author).
 
 * Entsperrte Komponenten, die bearbeitet werden können, werden hervorgehoben. Werden sie ausgewählt, erhalten sie einen blauen Rand:
 
