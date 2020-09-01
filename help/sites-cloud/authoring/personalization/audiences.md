@@ -1,9 +1,9 @@
 ---
 title: Verwalten von Zielgruppen
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub
-translation-type: ht
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ So erstellen Sie eine Adobe Target-Zielgruppe:
 
    ![Navigieren zu Zielgruppen](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Klicken oder tippen Sie in der Konsole „Zielgruppen“ auf **Erstellen** und anschließend auf „Target-Zielgruppe erstellen“.
+1. Klicken oder tippen Sie in der Navigationskonsole auf **Erstellen** und anschließend auf **Target-Zielgruppe erstellen**.
 
    ![Erstellen einer Target-Zielgruppe](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
