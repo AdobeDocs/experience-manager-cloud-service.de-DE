@@ -2,9 +2,9 @@
 title: Struktur der AEM Benutzeroberfläche
 description: Die Benutzeroberfläche der AEM umfasst mehrere grundlegende Prinzipien und besteht aus mehreren Schlüsselelementen
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 51%
 
 ---
@@ -169,4 +169,4 @@ Je nach verfügbarem Platz werden die Komponentensymbolleisten in der oberen ode
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Editor für Touch-fähige Seiten.
+Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Seiteneditor.
