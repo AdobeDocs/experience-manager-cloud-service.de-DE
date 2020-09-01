@@ -2,7 +2,7 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
-* über den Selektor [**Seiteninformationen **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
+* über den Selektor [**Seiteninformationen**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
 * über das [Konfigurationsdialogfeld](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) bei bestimmten Komponenten (mithilfe des Symbols „?“ in der Symbolleiste des Dialogfelds), das die kontextsensitive Hilfe anzeigt.
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -82,10 +82,12 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Symbol oder Abkürzung
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
       * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
+
    In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
    * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
+
    Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
    ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -98,7 +100,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 ## Asset-Browser {#assets-browser}
 
-Der Asset-Browser enthält alle Assets, die auf Ihrer aktuellen Seite direkt verwendet werden können. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+Der Asset-Browser enthält alle [Assets](/help/assets/home.md), die auf Ihrer aktuellen Seite direkt verwendet werden können.
 
 Der Asset-Browser befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem [Komponenten-Browser](#components-browser) und der [Inhaltsstruktur](#content-tree)). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
@@ -153,7 +155,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 >
 >Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
-Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den Asset-Editor auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-digital-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -281,6 +283,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
