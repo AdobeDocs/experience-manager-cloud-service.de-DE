@@ -2,10 +2,10 @@
 title: Verwenden des Rich-Text-Editors in  [!DNL Adobe Experience Manager] , um Inhalte zu erstellen.
 description: Verwenden des Rich-Text-Editors von  [!DNL Experience Manager] , um Inhalte zu erstellen.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ In der Regel bietet die Symbolleiste die folgenden Optionen:
 
 Klicken Sie bei textbasierten Komponenten in der [Symbolleiste](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf die Schaltfläche ![RTE-Vollbild](/help/sites-cloud/authoring/assets/editing-full-screen.png) für den Vollbildmodus, um den Rich-Text-Editor zu öffnen und den Rest des Seiteninhalts auszublenden.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen hängt von der Konfiguration ab. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE im Vollbildmodus](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
