@@ -2,7 +2,7 @@
 title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Si
 
 Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Ziehen Sie die benötigte Komponente an die [passende Position](#component-placeholder).
 1. [Bearbeiten](#edit-content) Sie die Komponente.
@@ -142,7 +142,7 @@ Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud
 
 Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** des Absatzsystems hinzufügen. 
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Neue Komponenten können auf zwei Arten aus dem Absatzsystem ausgewählt und hinzugefügt werden:
 
    * Wählen Sie die Option **Komponente einfügen** (+) in der Symbolleiste einer vorhandenen Komponente oder aus dem Feld **Komponenten hierher ziehen**.
@@ -165,7 +165,7 @@ Dieses Verhalten kann für Ihre Installation konfiguriert werden. Weitere Inform
 
 So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie den [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Ziehen Sie das benötigte Asset an die passende Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
 
@@ -177,7 +177,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 >
 >Auf Mobilgeräten nimmt der Asset-Browser den gesamten Bildschirm ein. Sobald Sie ein Asset per Drag-and-Drop auswählen, wird der Browser geschlossen, sodass Sie das Asset auf der Seite ablegen können.
 
-Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets eine Änderung vornehmen möchten, können Sie den Asset-Editor direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets eine Änderung vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-digital-assets.md) direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -456,7 +456,7 @@ Eine Seite kann wie folgt gesperrt werden:
 
       ![Schaltfläche „Sperren“](/help/sites-cloud/authoring/assets/lock.png)
 
-* **Seiteneditor**
+* **Seiten-Editor**
 
    1. Wählen Sie das Symbol **Seiteninformationen** aus, um das Menü zu öffnen:
    1. Wählen Sie die Option **Seite sperren** aus.
