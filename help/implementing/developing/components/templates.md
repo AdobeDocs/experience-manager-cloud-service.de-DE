@@ -2,7 +2,7 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden bei der Erstellung einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 63%
@@ -512,7 +512,7 @@ Für Seiten, die anhand bearbeitbarer Vorlagen erstellt wurden, gilt Folgendes:
 
    * `cq:templateType` - Enthält einen Verweis auf den Vorlagentyp.
 
-![Zusammenhänge zwischen Vorlagen, Inhalten und Komponenten](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![Zusammenhänge zwischen Vorlagen, Inhalten und Komponenten](assets/templates-content-components.png)
 
 Das obige Diagramm veranschaulicht, wie Vorlagen, Inhalte und Komponenten zusammenhängen:
 
@@ -565,7 +565,7 @@ Die Bewertung funktioniert wie folgt:
 
 Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 
-![Vorlagenbewertungsprozess](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![Vorlagenbewertungsverfahren](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
