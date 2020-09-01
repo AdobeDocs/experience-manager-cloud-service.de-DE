@@ -2,7 +2,7 @@
 title: 'Konfigurieren der Kontoumgebung  '
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -94,4 +94,4 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Stock-Konfiguration**
 
-   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration vornehmen. Sie ist nur verfügbar, wenn Ihr Systemadministrator die Adobe Stock-Integration aktiviert hat. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat. 
