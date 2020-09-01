@@ -2,7 +2,7 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, rahmenunabhängige Vertrag beschrieben, den ein SPA-Framework erfüllen sollte, um bearbeitbare SPA-Komponenten in AEM zu implementieren.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 Damit der Autor den AEM SPA-Editor zum Bearbeiten des Inhalts einer SPA verwenden kann, müssen bestimmte Anforderungen erfüllt sein.
 
-## Einführung {#introdcution}
+## Einführung {#introduction}
 
 In diesem Dokument wird der allgemeine Vertrag beschrieben, den ein SPA-Framework erfüllen sollte (d.h. die Art AEM Supportebene), um bearbeitbare SPA-Komponenten in AEM zu implementieren.
 
@@ -283,4 +283,3 @@ Sehen Sie selbst, wie ein einfaches SPA funktioniert, und experimentieren Sie mi
 Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 * [Übersicht](editor-overview.md) über die SPAs in AEM und das Kommunikationsmodell
-
