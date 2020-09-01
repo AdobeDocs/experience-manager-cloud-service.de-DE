@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-Beim Erstellen einer neuen Seite validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -103,7 +103,7 @@ Mindestens zulässig sind die folgenden Zeichen:
 * `_` (Unterstrich)
 * `-` (Bindestrich/Minus)
 
-Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den Benennungskonventionen. <!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den Benennun
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR.](/help/implementing/developing/introduction/naming-conventions.md)
 
 Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
@@ -122,7 +122,7 @@ Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Ze
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/implementing/developing/introduction/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -206,7 +206,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen**[ für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR.](/help/implementing/developing/introduction/naming-conventions.md)
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
    >[!TIP]
@@ -365,9 +365,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 >[!NOTE]
 >
->Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. Weitere Informationen finden Sie unter „Formularverfügbarkeit“.
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
 -->
 
 #### Asynchrone Aktionen {#asynchronous-actions}
