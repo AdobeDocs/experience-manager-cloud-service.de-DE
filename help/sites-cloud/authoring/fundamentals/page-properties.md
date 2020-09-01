@@ -2,9 +2,9 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -62,11 +62,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Einschaltzeit**
 
-   * The date and time at which the published page will be made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
+   * Datum und Uhrzeit der Anzeige (Wiedergabe) der veröffentlichten Umgebung. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replizierung veröffentlicht werden.
 
       >[!NOTE]
       >
-      > See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+      > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [An- und Ausschaltzeit - Triggerkonfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration) .
 
       * Wenn diese Seite bereits [veröffentlicht wurde (manuell)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , wird sie bis zum Rendern zur angegebenen Zeit ruhend (ausgeblendet) gehalten.
       * Wenn die Seite nicht veröffentlicht und für die automatische Replizierung konfiguriert ist, wird sie automatisch veröffentlicht und dann zur festgelegten Zeit gerendert.
@@ -129,11 +129,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **Vererbt von &lt;Pfad>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * Gibt an, ob die Seite vererbt wurde und von wo.
 
 * **Cloud-Konfiguration**
 
@@ -148,7 +146,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * Aktivieren (oder deaktivieren) Sie die Verwendung der Authentifizierung für den Zugriff auf die Seite.
    >[!NOTE]
    >
-   >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)**definiert.
+   >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
 
 * **Anmeldeseite**
 
