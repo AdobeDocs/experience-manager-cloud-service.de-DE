@@ -2,7 +2,7 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
@@ -72,7 +72,7 @@ Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets
 
 ### Asset-Sammlungen {#asset-collections}
 
-Asset-Sammlungen können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+[Asset-Sammlungen](/help/assets/manage-collections.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. 
 
 ![Asset-Sammlung](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ Die Team-Mitglieder können dieser Kachel hinzugefügt oder aus ihr entfernt wer
 
 ### Übersetzungsauftrag {#translation-job}
 
-In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten und sehen den jeweiligen Status Ihrer Übersetzungen. Informationen zum Einrichten Ihrer Übersetzung finden Sie unter „Erstellen von Übersetzungsprojekten“. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+In der Kachel „Übersetzungsauftrag“ können Sie eine Übersetzung starten und sehen den jeweiligen Status Ihrer Übersetzungen. Informationen zum Einrichten Ihrer Übersetzung finden Sie unter [Erstellen von Übersetzungsprojekten](/help/assets/translate-assets.md).
 
 ![Übersetzungsauftrag](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
