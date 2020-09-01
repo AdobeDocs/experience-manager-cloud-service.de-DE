@@ -2,7 +2,7 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Webseite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 82%
@@ -62,7 +62,7 @@ For further information about developing in HTL see the [HTL documentation](http
 
 Dieser Entscheidungsbaum fasst die Logik zusammen, die das Verhalten der Wrapper-Tags bestimmt.
 
-![Entscheidungsstruktur](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![Entscheidungsstruktur](assets/decoration-tag-decision-tree.png)
 
 ### Nutzungsszenarien {#use-cases}
 
