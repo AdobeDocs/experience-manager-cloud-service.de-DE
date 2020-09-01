@@ -2,7 +2,7 @@
 title: JSON-Exporter für Content Services
 description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Webseiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Webseiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 translation-type: tm+mt
-source-git-commit: 02d95b7c45cb4d6d2fbfd9699690ecc1b80e1202
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 75%
@@ -38,7 +38,7 @@ Innerhalb AEM Versands wird mithilfe der Auswahl `model` und `.json` Erweiterung
 
 1. Inhalte der folgenden Art bereitgestellt:
 
-   ![JSON-Modell für WKND-Inhalt](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![JSON-Modell für WKND-Inhalt](assets/json-model-wknd.png)
 
 Alternativ können Sie die Inhalte eines strukturierten Inhaltsfragments bereitstellen, indem Sie dieses spezifisch nachverfolgen.
 
@@ -56,7 +56,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
 * Inhalte der folgenden Art bereitgestellt:
 
-   ![JSON-Modell des WKND-Inhaltsfragments](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+   ![JSON-Modell des WKND-Inhaltsfragments](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
