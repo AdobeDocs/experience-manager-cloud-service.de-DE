@@ -2,7 +2,7 @@
 title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
 
    ![Version wiederherstellen - Seite auswählen](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Wählen Sie **Wiederherstellen** für die ausgewählte Version der ausgewählten Seite, die als *aktuelle* Version wiederhergestellt werden soll.
+1. Wählen Sie **Wiederherstellen** für die ausgewählte Version der ausgewählten Seite, die als aktuelle Version wiederhergestellt werden soll.
 
 >[!NOTE]
 >
