@@ -2,7 +2,7 @@
 title: 'Seitenvergleich  '
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 >
 >Der Benutzer muss über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
 >
->Weitere Informationen zu dieser Funktion finden Sie unter „Entwicklung und Seitenvergleich“. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
 ## Verwenden Sie {#use}
 
@@ -105,4 +105,4 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 >[!NOTE]
 >
->Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der Entwickler-Dokumentation zu dieser Funktion. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/implementing/developing/introduction/page-diff.md) zu dieser Funktion. 
