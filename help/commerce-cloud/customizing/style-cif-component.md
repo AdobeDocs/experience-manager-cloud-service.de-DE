@@ -10,7 +10,7 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1e8603a27af30ab394297b9f40491d93bc7d4ef4
+source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 5%
@@ -182,7 +182,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    **clientlib-cif** - Dies ist auch eine leere Client-Bibliothek, die einfach die notwendigen Abhängigkeiten von [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)einbettet. Die Kategorie ist `venia.cif`.
 
-   **clientlib-grid** - Dies umfasst das CSS, das zur Aktivierung AEM Funktion &quot;Responsive Grid&quot;erforderlich ist. Durch die Verwendung des AEM-Rasters wird der [Layoutmodus](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) im AEM-Editor aktiviert und Autoren erhalten die Möglichkeit, Komponenten neu zu formatieren. Die Kategorie ist `venia.grid` und ist in der `venia.base` Bibliothek eingebettet.
+   **clientlib-grid** - Dies umfasst das CSS, das zur Aktivierung AEM Funktion &quot;Responsive Grid&quot;erforderlich ist. Durch die Verwendung des AEM-Rasters wird der [Layoutmodus](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) im AEM-Editor aktiviert und Autoren von Inhalten erhalten die Möglichkeit, Komponenten neu zu formatieren. Die Kategorie ist `venia.grid` und ist in der `venia.base` Bibliothek eingebettet.
 
 1. Inspect der Dateien `customheaderlibs.html` und `customfooterlibs.html` darunter `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
