@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 919d607a0c5fb673d9011c6d7bf2759140e8468f
+source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -259,7 +259,7 @@ Verwenden Sie [die IDE Ihrer Wahl](https://docs.adobe.com/content/help/en/experi
    ...
    ```
 
-   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wird.
+   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wurde.
 
    Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith` Methode zum Abrufen des zusätzlichen `created_at` Attributs erweitert wurde. Dieses Attribut wird später als Teil der `isShowBadge()` Methode verwendet.
 
