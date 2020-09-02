@@ -3,10 +3,10 @@ sub-product: Einstieg in AEM as a Cloud Service
 user-guide-title: Einstieg in AEM as a Cloud Service
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 93%
+source-wordcount: '144'
+ht-degree: 95%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 93%
       + [Sandbox-Programme](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Erstellen eines AEM-Anwendungsprojekts {#create-application-project}
       + [Verwenden des Assistenten](getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [Projekt einrichten](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Details zur Build-Umgebung](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Einrichten des Projekts](getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [Die Build-Umgebung](getting-access-to-aem-in-cloud/build-environment-details.md)
 + Einhaltung von Datenschutzbestimmungen {#data-privacy}
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
