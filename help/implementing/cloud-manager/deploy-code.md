@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 82%
+source-wordcount: '985'
+ht-degree: 81%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 ## Bereitstellen von Code mit Cloud Manager {#deploying-code-with-cloud-manager}
 
-Nachdem Sie die Produktionspipeline (Repository, Umgebung und Testing-Umgebung) konfiguriert haben, können Sie den Code bereitstellen.
+Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) konfiguriert haben, können Sie Ihren Code bereitstellen.
 
 1. Klicken Sie in Cloud Manager auf **Bereitstellen**, um den Bereitstellungsprozess zu starten.
 
@@ -42,7 +42,7 @@ Nachdem Sie die Produktionspipeline (Repository, Umgebung und Testing-Umgebung) 
    Die **Staging-Bereitstellung** umfasst die folgenden Schritte:
 
    * Validierung: Dieser Schritt stellt sicher, dass die Pipeline so konfiguriert ist, dass die derzeit verfügbaren Ressourcen verwendet werden. So wird z. B. überprüft, ob die konfigurierte Verzweigung vorhanden ist und die Umgebungen verfügbar sind.
-   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Weitere Informationen zur Build-Umgebung finden Sie unter [Build Umgebung Details](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) .
+   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Weitere Informationen zur Build-Umgebung finden Sie unter [Build Umgebung Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) .
    * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Codequalitätstests](/help/implementing/cloud-manager/code-quality-testing.md) .
    * Bilder erstellen: Dieser Schritt enthält eine Protokolldatei aus dem Prozess, der zum Erstellen von Bildern verwendet wird. Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Bilder und die Kubernetes-Konfiguration verantwortlich.
    * Bereitstellen in der Staging-Umgebung
@@ -51,13 +51,13 @@ Nachdem Sie die Produktionspipeline (Repository, Umgebung und Testing-Umgebung) 
    **Staging-Tests** umfassen die folgenden Schritte:
 
    * Produktfunktionstests: Cloud Manager-Pipeline-Hinrichtungen unterstützen die Ausführung von Tests, die mit der Umgebung der Phase ausgeführt werden.
-Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) .
+Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
    * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
-      Weitere Informationen finden Sie unter [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) .
+      Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
-   * Content Audit: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Während eine Produktions-Pipeline ausgeführt wird, wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Inhaltsprüfung eingefügt. Die konfigurierten Seiten werden an den Dienst gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
-Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/content-audit-testing.md) des Content Audit.
+   * Erlebnis-Prüfung: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei der Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Prüfschritt eingefügt. Die konfigurierten Seiten werden an den Dienst gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Ergebnisse und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.
+Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/experience-audit-testing.md) des Erlebnis-Audit.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Wenn Cloud Manager in produktionsfremden Topologien bereitgestellt wird, besteht
 
    >[!NOTE]
    >
-   >Alle AEM-Artefakte werden für Autor und Publisher bereitgestellt. Wenn knotenspezifische Konfigurationen erforderlich sind, sollten Ausführungsmodi genutzt werden. Weitere Informationen dazu, wie Sie mit Ausführungsmodi die AEM-Instanz für einen bestimmten Zweck anpassen können, finden Sie unter „Ausführungsmodi“.
+   >Alle AEM-Artefakte werden für Autor und Publisher bereitgestellt. Die Ausführungsmodi sollten genutzt werden, wenn knotenspezifische Konfigurationen erforderlich sind. Weitere Informationen dazu, wie Sie mit den Ausführungsmodi Ihre AEM Instanz für einen bestimmten Zweck einstellen können, finden Sie unter Ausführungsmodi.
 
 1. Das Dispatcher-Artefakt wird wie folgt für jeden Dispatcher bereitgestellt:
 
