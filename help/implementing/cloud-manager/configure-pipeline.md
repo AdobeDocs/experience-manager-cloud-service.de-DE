@@ -2,7 +2,7 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -58,11 +58,11 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 1. Der Bildschirm **Pipeline einrichten** wird angezeigt. Wählen Sie die Verzweigung aus und klicken Sie auf **Weiter**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Konfigurieren Sie die Implementierungsoptionen.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    Sie können den Auslöser definieren, mit dem die Pipeline gestartet wird:
 
@@ -80,7 +80,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Erlebnis-Audit**.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Erlebnisprüfung einbezogen.
 
@@ -94,7 +94,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    >[!NOTE]
    >Um den Experience Audit-Schritt zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Weitere Informationen finden Sie unter [Bekannte Probleme](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) .
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Klicken Sie im Bildschirm &quot;Pipeline **bearbeiten&quot;auf** Speichern **** . Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
