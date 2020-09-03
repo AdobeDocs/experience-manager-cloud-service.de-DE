@@ -2,10 +2,10 @@
 title: Details der Build-Umgebung
 description: Details zur Umgebung erstellen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 89%
+source-wordcount: '668'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,10 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Andere Pakete können zur Erstellungszeit wie [unten](#installing-additional-system-packages) beschrieben installiert werden.
 * Jeder Build wird in einer unberührten Umgebung erstellt, der Build-Container speichert zwischen den Ausführungen keinen Status.
-* Maven wird immer mit folgendem Befehl ausgeführt: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
+* Maven wird immer mit den folgenden drei Befehlen ausgeführt:
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
 * Maven wird auf Systemebene mit einer settings.xml-Datei konfiguriert, die automatisch das öffentliche Adobe-**Artefakt**-Repository enthält. (See [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
 >[!NOTE]
