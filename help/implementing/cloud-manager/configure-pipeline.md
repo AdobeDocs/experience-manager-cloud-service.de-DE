@@ -2,7 +2,7 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -78,21 +78,21 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Content Audit**.
+1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Erlebnis-Audit**.
 
    ![](assets/content-audit-1.png)
 
-   Diese Option enthält eine Tabelle der URL-Pfade, die immer im Content Audit enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Inhaltsprüfung einbezogen.
+   Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Erlebnisprüfung einbezogen.
 
    >[!NOTE]
    > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
 
-   Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/content-audit-testing.md) der Inhaltsprüfung.
+   Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/experience-audit-testing.md) des Erlebnis-Audit.
 
-   Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Content-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
+   Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Erlebnis-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
 
    >[!NOTE]
-   >Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Weitere Informationen finden Sie unter [Bekannte Probleme](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) .
+   >Um den Experience Audit-Schritt zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Weitere Informationen finden Sie unter [Bekannte Probleme](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) .
 
    ![](assets/content-audit2.png)
 
