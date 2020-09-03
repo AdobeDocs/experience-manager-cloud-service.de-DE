@@ -2,9 +2,9 @@
 title: Erlebnis-Audit-Tests - Cloud Services
 description: Erlebnis-Audit-Tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ Mit Experience Audit in Cloud Manager wird sichergestellt, dass die digitalen Er
 
 Erlebnis-Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene über die Seite zur Ausführung der Produktionspipeline.
 
-* Metriken auf Aggregat-Ebene messen den Durchschnittswert der geprüften Seiten.
+* Metriken auf Aggregat-Ebene messen das durchschnittliche Ergebnis auf allen Seiten, die auf Leistung, Zugänglichkeit, Best Practices, SEO (Suchmaschinenoptimierung) geprüft wurden.
+   >[!NOTE]
+   >Der Wert für die progressive Webanwendung (PWA) ist nicht im Zusammenfassungsergebnis enthalten und wird nur im Detailbildschirm für die Berichtdetails auf Seitenebene angezeigt.
 * Einzelne Seitenergebnisse sind auch per Drilldown verfügbar.
 * Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
 * Der Verlauf der Testergebnisse wird innerhalb von Cloud Manager beibehalten, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung vorgenommen werden, Regressionen aus der vorherigen Ausführung enthalten.
 
 ### Aggregat-Ergebnisse {#aggregate-scores}
 
-Für jeden Testtyp (Leistung, Barrierefreiheit, SEO, Best Practices und PWA) gibt es einen Aggregat-Level-Wert.
+Für jeden Testtyp wie Leistung, Barrierefreiheit, SEO und Best Practices gibt es einen Aggregat-Level-Wert.
+>[!NOTE]
+>Der Wert für die progressive Webanwendung (PWA) ist nicht im Zusammenfassungsergebnis enthalten und wird nur im Detailbildschirm für die Berichtdetails auf Seitenebene angezeigt.
 
 Das Aggregat-Level-Ergebnis entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf Aggregat-Ebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Seitenerfassung, die für die Aufnahme konfiguriert wurde, zwischen den Ausführungen geändert wurde.
 
