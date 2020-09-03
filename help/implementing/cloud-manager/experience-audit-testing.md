@@ -2,7 +2,7 @@
 title: Erlebnis-Audit-Tests - Cloud Services
 description: Erlebnis-Audit-Tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 * **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### Bewertungen auf Seitenebene {#page-level-scores}
 
@@ -59,5 +60,5 @@ Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seite
 
 Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
