@@ -2,10 +2,10 @@
 title: Benachrichtigungen – Cloud Service
 description: Benachrichtigungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 94%
 
 ---
 
@@ -33,11 +33,10 @@ Die Seitenleiste listet die neuesten Benachrichtigungen auf.
 
 Standardmäßig sind Benachrichtigungen in der Webbenutzeroberfläche aller Adobe [!UICONTROL Experience Cloud]-Lösungen verfügbar. Einzelne Anwender können sich diese Benachrichtigungen auch zusenden lassen, und zwar direkt oder als Digest.
 
-
 Auf diese Weise gelangen Anwender zum Bildschirm „Benachrichtigungseinstellungen“ von Adobe [!UICONTROL Experience Cloud].
 
 Anwender können E-Mail-Benachrichtigungen aktivieren und (optional) die Typen von Benachrichtigungen auswählen, die sie per E-Mail erhalten möchten.
 
 >[!NOTE]
 >
->Sie können auch eine Digest-Option in Adobe [!UICONTROL Experience Cloud] aktivieren, wie unten dargestellt:
+>You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
