@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 89%
+source-wordcount: '689'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanford
 Befolgen Sie diese Anweisungen, um die Bereitstellung von Inhalten mithilfe des vorkonfigurierten CDN von Adobe vorzubereiten:
 
 1. Stellen Sie Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen teilen. Koordinieren Sie diese Aufgabe mit dem Support.
-   **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate.
+   **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
 1. Teilen Sie dem Support mit:
    * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
    * Wenn eine IP-Whitelist erforderlich ist, um den Datenverkehr auf eine bestimmte Umgebung zu beschränken.
