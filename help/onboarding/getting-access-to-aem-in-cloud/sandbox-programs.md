@@ -1,11 +1,11 @@
 ---
-title: Sandbox-Programm - Cloud-Dienst
-description: Sandbox-Programm - Cloud-Dienst
+title: Sandbox-Programme - Cloud Service
+description: Sandbox-Programme - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 0%
+source-wordcount: '1286'
+ht-degree: 1%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ## Einführung {#introduction}
 
-Ein Sandbox-Programm ist einer der beiden Typen von Programmen, die im AEM Cloud-Dienst verfügbar sind, wobei der andere ein reguläres Programm ist.
+Ein Sandbox-Programm ist eines der beiden Programm, die in AEM Cloud Service verfügbar sind, das andere ein reguläres Programm.
 
-Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung oder den Testversand von Concept (POC) erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren. Sie unterliegen nicht den [AEM als Cloud-Service-Verpflichtungen](https://www.adobe.com/legal/service-commitments.html).
+Eine Sandbox wird normalerweise für Schulungen, laufende Demos, die Aktivierung oder den Testversand von Concept (POC) erstellt. Sie sind nicht dazu gedacht, Live-Verkehr zu transportieren. Sie unterliegen nicht den [AEM als Cloud Service-Verpflichtungen](https://www.adobe.com/legal/service-commitments.html).
 
 Die in einer Sandbox erstellten Umgebung sind nicht für die automatische Skalierung konfiguriert. Daher sind sie nicht für Leistungs- oder Belastungsprüfungen geeignet.
 
-Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einem Git-Repository, einer Development-Umgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird mit einem Beispielprojekt basierend auf dem AEM-Projektarchiv gefüllt.
+Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einem Git-Repository, einer Development-Umgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird mit einem Beispielprojekt basierend auf dem AEM Project-Archetyp gefüllt.
 
 Weitere Informationen zu den Programm-Typen finden Sie unter [Einführung zu Programmen und Programmen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) .
 
@@ -31,11 +31,11 @@ Sandbox-Programm haben die folgenden Attribute:
 1. **Programm-Erstellung:** Die Erstellung des Sandbox-Programms erfolgt automatisch:
    * Einrichtung des Projekts mit Beispielcode und Inhalt
    * Schaffung einer Umgebung für die Entwicklung
-   * Erstellung von Nicht-Produktionslinien-Pipeline, die zur Entwicklungs-Umgebung bereitgestellt werden (Bereitstellung der Hauptverzweigung zur Umgebung der Entwicklung)
+   * Erstellung von Nicht-Produktionslinien-Pipeline, die zur Umgebung der Entwicklung bereitgestellt werden (Übergeordnet-Filiale, die zur Umgebung der Entwicklung verwendet werden)
 
-1. **Lösungen:** Sandbox-Programm umfassen AEM-Sites und -Assets.
+1. **Lösungen:** Sandbox-Programme sind AEM Sites und Assets.
 
-1. **AEM-Aktualisierungen:** AEM-Updates können manuell auf Umgebung in einem Sandbox-Programm angewendet werden und werden nicht automatisch gesendet.
+1. **AEM Updates:** AEM Updates können manuell auf Umgebung in einem Sandbox-Programm angewendet werden und werden nicht automatisch gesendet.
 
 1. **Hibernation:** Umgebung in einem Sandbox-Programm werden automatisch ausgeblendet, wenn für einen bestimmten Zeitraum keine Aktivität erkannt wird. Hibernated-Umgebung können manuell entfernt werden.
 
@@ -128,7 +128,7 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
    >Alternativ können Sie zur **Developer Console** navigieren, um die Bereinigung zu deaktivieren, indem Sie versuchen, auf den Autor- oder Veröffentlichungsdienst einer bereits ausgeblendeten Umgebung zuzugreifen. In diesem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie im Abschnitt Zugriff auf eine ausgeblendete Umgebung.
 
    >[!IMPORTANT]
-   >Der Zugriff auf die Developer Console wird von der **Cloud Manager - Entwicklerrolle** in der **Admin-Konsole** definiert. Ein Benutzer mit der Berechtigung für die Rolle &quot;Entwickler&quot;kann eine Sandbox-Programm-Umgebung deaktivieren.
+   >Der Zugriff auf die Developer Console wird durch die **Cloud Manager - Entwicklerrolle** in der **Admin Console** definiert. Ein Benutzer mit der Berechtigung für die Rolle &quot;Entwickler&quot;kann eine Sandbox-Programm-Umgebung deaktivieren.
 
 1. Click on **De-hibernate**, as shown in the figure below:
 
@@ -155,9 +155,9 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
 #### Berechtigungen zum Deaktivieren von Bereinigungen {#permissions-de-hibernate}
 
-Jeder Benutzer mit einem Profil, das ihm Zugriff auf AEM als Cloud-Dienst gewährt, sollte auf die **Developer Console** zugreifen können, sodass er die Umgebung deaktivieren kann.
+Jeder Benutzer mit einem Profil, das ihm Zugriff auf AEM als Cloud Service gewährt, sollte auf die **Entwicklerkonsole** zugreifen können, damit er die Umgebung dehibernieren kann.
 
-Informationen zum Einrichten von Benutzerberechtigungen finden Sie unter [Hinzufügen Benutzer und Rollen](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
+Informationen zum Einrichten von Benutzerberechtigungen finden Sie unter [Hinzufügen Benutzer und Rollen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
 
 #### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
 
@@ -171,22 +171,22 @@ Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Asp
 
 * Ein Benutzer kann eine Pipeline verwenden, um benutzerdefinierten Code für ausgeblendete Umgebung bereitzustellen. Die Umgebung bleibt erhalten, und der neue Code wird in der Umgebung angezeigt, sobald er entfernt wurde.
 
-* AEM-Upgrades können auf ausgeblendete Umgebung angewendet werden, die Kunden manuell aus Cloud Manager auslösen können. Die Umgebung bleibt erhalten, und die neue Version erscheint in der Umgebung, sobald sie entfernt wurde.
+* AEM Upgrades können auf ausgeblendete Umgebung angewendet werden, die Kunden manuell aus Cloud Manager auslösen können. Die Umgebung bleibt erhalten, und die neue Version erscheint in der Umgebung, sobald sie entfernt wurde.
 
 >[!NOTE]
 >Derzeit gibt Cloud Manager nicht an, ob eine Umgebung ausgeblendet ist.
 
-## AEM-Aktualisierungen für Sandbox-Umgebung {#aem-updates-sandbox}
+## AEM Updates für Sandbox-Umgebung {#aem-updates-sandbox}
 
 Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
-Ein Benutzer kann AEM-Updates manuell auf die Umgebung in einem Sandbox-Programm anwenden.
+Ein Benutzer kann AEM Aktualisierungen manuell auf die Umgebung in einem Sandbox-Programm anwenden.
 
 Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren der Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
 
 >[!NOTE]
 >* Eine manuelle Aktualisierung kann nur ausgeführt werden, wenn die zielgerichtete Umgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.
->* Eine manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich in derselben AEM-Version befinden.
+>* Eine manuelle Aktualisierung auf *Produktions* - oder *Stage* -Umgebung wird automatisch aktualisiert. Der Produktions- und Stage-Umgebung-Satz muss sich auf derselben AEM befinden.
 
 
 
