@@ -2,10 +2,10 @@
 title: Grundlegendes zu Testergebnissen – Cloud Services
 description: Grundlegendes zu Testergebnissen – Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager für Cloud Services -Pipeline-Ausführungen unterstützen die Ausf
 
 Es gibt drei große Kategorien von Tests, die von Cloud Manager für Cloud Services-Pipeline unterstützt werden:
 
-1. [Testen der Codequalität](#code-quality-testing)
+1. [Testen der Code-Qualität](#code-quality-testing)
 1. [Funktionstests](#functional-testing)
 1. [Content Audit-Tests](#content-audit-testing)
 
@@ -30,15 +30,15 @@ Folgende Tests sind möglich:
    > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
 
 
-## Testen der Codequalität {#code-quality-testing}
+## Testen der Code-Qualität {#code-quality-testing}
 
-Dieser Schritt bewertet die Qualität Ihres Anwendungscodes. Es ist das Kernziel einer reinen Code-Quality-Pipeline und wird unmittelbar nach dem Bauschritt in allen Nicht-Produktions- und Produktionsleitungen ausgeführt.
+Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen Nichtproduktions- und Produktions-Pipelines ausgeführt wird.
 
-Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
+Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
 ### Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität {#understanding-code-quality-rules}
 
-Bei der Codequalitätsprüfung wird der Quellcode gescannt, um sicherzustellen, dass seine Bereitstellung bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md)bezeichnet.
+Bei der Codequalitätsprüfung wird der Quellcode gescannt, um sicherzustellen, dass seine Bereitstellung bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
 
 You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
@@ -225,7 +225,7 @@ Der Wert der Änderungsmetrik kann einer der folgenden sein:
 
 * **K/A** - Es gab keine vorherige Punktzahl zum Vergleich
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### Bewertungen auf Seitenebene {#page-level-scores}
 
@@ -233,5 +233,5 @@ Durch das Bohren in einem der Tests kann eine detailliertere Bewertung auf Seite
 
 Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten festgestellt werden. Die Details der Tests und die damit verbundenen Anleitungen werden von Google Lighthouse bereitgestellt.
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
