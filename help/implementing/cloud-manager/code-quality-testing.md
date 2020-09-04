@@ -2,26 +2,26 @@
 title: Codequalitätstests - Cloud Services
 description: Codequalitätstests - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 76%
+ht-degree: 86%
 
 ---
 
 
-# Testen der Codequalität {#code-quality-testing}
+# Testen der Code-Qualität {#code-quality-testing}
 
-Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Es ist das Kernziel einer reinen Code-Quality-Pipeline und wird unmittelbar nach dem Bauschritt in allen Nicht-Produktions- und Produktionsleitungen ausgeführt.
+Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen Nichtproduktions- und Produktions-Pipelines ausgeführt wird.
 
-Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
+Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
 ## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
-Bei der Codequalitätsprüfung wird der Quellcode gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md)bezeichnet.
+Beim Testen der Code-Qualität wird der Quellcode gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+>Sie können die vollständige Liste der Regeln [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx) herunterladen.
 
 **Dreistufiges Tor**
 
@@ -33,7 +33,7 @@ In diesem Codequalitätstestschritt gibt es eine dreistufige Struktur für die i
 
 * **Info**: Hierbei handelt es sich um vom Test identifizierte Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipelineausführung haben
 
-Die Ergebnisse dieses Schritts werden als *Bewertungen* bereitgestellt.
+The results of this step is delivered as *Ratings*.
 
 In der folgenden Tabelle sind die Rating- und Ausfallschwellenwerte für jede der kritischen, wichtigen und informativen Kategorien zusammengefasst:
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die Rating- und Ausfallschwellenwerte für jede de
 
 ## Umgang mit falsch positiven Werten {#dealing-with-false-positives}
 
-Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. Dies wird als „falsch positiv“ bezeichnet.
+Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. This is referred to as a *false positive*.
 
 In diesen Fällen kann der Quellcode mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem besteht etwa darin, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter in Bezug auf die Identifizierung eines hartcodierten Kennworts „aggressiv“ sein kann.
 
