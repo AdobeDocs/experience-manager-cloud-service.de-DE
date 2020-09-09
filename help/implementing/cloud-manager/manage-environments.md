@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 95%
 
 ---
@@ -101,7 +101,7 @@ Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, 
 
 ## Managing Access {#managing-access}
 
-Select **Manage Access** from from the dropdown menu in the **Environments** Card. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
+Select **Manage Access** from the dropdown menu in the **Environments** Card. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
 
 Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
 
