@@ -2,9 +2,9 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -82,9 +82,9 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    ![](assets/setup-3.png)
 
-   Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Erlebnis-Prüfung aufgenommen werden soll.
+   Klicken Sie auf **Hinzufügen Neue Seite** , um einen URL-Pfad anzugeben, der in die Erlebnis-Prüfung aufgenommen werden soll.
 
-   Wenn Sie zum Beispiel `https://wknd.site/us/en/about-us.html` in Experience Audit einschließen möchten, geben Sie den Pfad `us/en/about-us.html` in dieses Feld ein.
+   Wenn Sie zum Beispiel `https://wknd.site/us/en/about-us.html` in Experience Audit einschließen möchten, geben Sie den Pfad `us/en/about-us.html` in dieses Feld ein und klicken Sie auf **Speichern**.
 
    ![](assets/exp-audit4.png)
 
