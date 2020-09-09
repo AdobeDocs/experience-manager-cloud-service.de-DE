@@ -2,9 +2,9 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -78,7 +78,10 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Erlebnis-Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten. Der Benutzer muss auf **Hinzufügen Neue Seite** klicken, um seinen eigenen benutzerspezifischen Link zu definieren.
+1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Erlebnis-Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten.
+
+   >[!NOTE]
+   >Sie müssen auf **Hinzufügen Neue Seite** klicken, um Ihren eigenen benutzerspezifischen Link zu definieren.
 
    ![](assets/setup-3.png)
 
