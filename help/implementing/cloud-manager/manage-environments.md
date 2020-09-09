@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
-translation-type: ht
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 95%
 
 ---
 
@@ -98,6 +98,15 @@ Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebung
 
 >[!NOTE]
 Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
+
+## Managing Access {#managing-access}
+
+Select **Manage Access** from from the dropdown menu in the **Environments** Card. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
+
+Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
+
+![](assets/environ-manage-access.png)
+
 
 ## Aufrufen der Entwicklerkonsole {#accessing-developer-console}
 
