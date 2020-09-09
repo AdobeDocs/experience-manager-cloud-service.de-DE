@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 65%
+source-wordcount: '775'
+ht-degree: 63%
 
 ---
 
@@ -82,16 +82,26 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    ![](assets/setup-3.png)
 
-   Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten. Der Benutzer kann manuell einen einzuschließenden URL-Pfad eingeben. Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Erlebnisprüfung einbezogen.
+   Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten. Der Benutzer muss das Eingabefeld ausfüllen, um seinen eigenen benutzerspezifischen Link zu definieren.
 
-   >[!NOTE]
-   > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
+   Wenn Sie zum Beispiel `https://wknd.site/us/en/about-us.html` in Experience Audit einschließen möchten, geben Sie den Pfad `us/en/about-us.html` in dieses Feld ein.
+
+   ![](assets/set-up-5.png)
+
+   Die in der Tabelle angezeigte URL lautet `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+
+   ![](assets/set-up-4.png)
+
+   Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Erlebnis-Prüfung einbezogen.
 
    Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/experience-audit-testing.md) des Erlebnis-Audit.
 
    Klicken Sie auf **Hinzufügen Überschreiben** der neuen Seite, um einen URL-Pfad anzugeben, der in die Erlebnis-Prüfung aufgenommen werden soll. Klicken Sie nach dem Hinzufügen des Pfads auf **Speichern**.
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
 
 1. Klicken Sie im Bildschirm &quot;Pipeline **bearbeiten&quot;auf** Speichern **** . Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
