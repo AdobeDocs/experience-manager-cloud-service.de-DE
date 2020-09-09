@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 28%
+source-wordcount: '235'
+ht-degree: 20%
 
 ---
 
@@ -14,12 +14,30 @@ ht-degree: 28%
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.9.0 beschrieben.
 
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Neue Funktionen {#what-is-new-commerce}
+
+* Version 1.3.0 der CIF-Kernkomponenten Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) .
+
+* Vorschau mit Produkt/Kategorie für Produkt- und Kategorie-Vorlagen ist jetzt verfügbar. Auf diese Weise können Geschäftsbenutzer/Marketingexperten in AEM die Produkt-/Kategorie-Vorlagen mit echten Daten Ansicht werden.
+
+* Eigenschaftenseite zu Produkten und Kategorien hinzugefügt, damit Geschäftsbenutzer Details zur Ansicht der Produkt-SKU/Kategorien-ID eingeben können.
+
+* Sortierungsfunktion, die der Produktkonsole hinzugefügt wurde, um das Sortieren von Produkten/Kategorien nach Namen oder Preisattributen zu ermöglichen.
+
+* Produktsuchfunktion hinzugefügt.
+
+### Fehlerbehebungen {#bug-fixes-commerce}
+
+* Bei den Commerce Cloud-Konfigurationen wurde die Vererbung nicht berücksichtigt. Dieser Fehler wurde behoben, um sicherzustellen, dass die Konfiguration Werte erbt.
+
 
 ## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die [!UICONTROL Cloud Manager]-Version 2020.9.0 wurde am 03. September 2020 veröffentlicht.
+Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 03. September 2020 veröffentlicht.
 
 ### Neuerungen {#what-is-new-cloud-manager}
 
