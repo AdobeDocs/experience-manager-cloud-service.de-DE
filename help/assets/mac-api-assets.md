@@ -3,7 +3,7 @@ title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
+Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
@@ -34,13 +34,13 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Er kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
-Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md).
+Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Datenmodell {#data-model}
 
 Die Assets-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
 
-Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments).
+Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Ordner {#folders}
 
@@ -71,7 +71,7 @@ In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 * Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Bei den zusätzlichen Ausgabedarstellungen kann es sich um Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF- oder Adobe InDesign-Dateien extrahierte Seiten handeln.
 * Optionale Kommentare.
 
-Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md).
+Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
