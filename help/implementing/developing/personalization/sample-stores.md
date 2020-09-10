@@ -2,9 +2,9 @@
 title: Beispiele für ContextHub-Store-Kandidaten
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 76%
 
 ---
@@ -112,7 +112,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 Speichert Informationen über die aktuelle Clientumgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
-### Quellort {#source-location-surferinfo
+### Quellpfad {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
