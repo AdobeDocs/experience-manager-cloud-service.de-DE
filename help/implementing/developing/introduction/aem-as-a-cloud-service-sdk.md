@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service-SDK
-description: Noch auszufüllen
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1027'
-ht-degree: 100%
+description: Überblick über die AEM als Cloud Service Software Development Kit
+translation-type: tm+mt
+source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 98%
 
 ---
 
