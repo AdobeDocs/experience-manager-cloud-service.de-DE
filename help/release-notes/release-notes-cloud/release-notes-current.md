@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
+source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '255'
 ht-degree: 20%
 
 ---
@@ -13,6 +13,12 @@ ht-degree: 20%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.9.0 beschrieben.
+
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -31,7 +37,6 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
 * Bei den Commerce Cloud-Konfigurationen wurde die Vererbung nicht berücksichtigt. Dieser Fehler wurde behoben, um sicherzustellen, dass die Konfiguration Werte erbt.
-
 
 ## Cloud Manager {#cloud-manager}
 
