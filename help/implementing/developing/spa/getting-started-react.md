@@ -2,7 +2,7 @@
 title: Erste Schritte mit SPAs in AEM mithilfe von React
 description: In diesem Artikel wird eine Beispielanwendung für SPA vorgestellt, die Zusammenstellung erklärt und Ihnen ermöglicht, sich schnell mit Ihrer eigenen SPA mit dem React Framework vertraut zu machen.
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 38%
@@ -48,9 +48,9 @@ Die `package.json` Datei definiert die Anforderungen des gesamten SPA-Pakets. Di
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ Der Einstiegspunkt in die SPA ist natürlich die hier gezeigte Datei `index.js`,
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ Wenn die Komponente mit der Komponentenvorlage (z. B. JSX) statisch instanziiert
 Beim Rendern der App ruft `index.js` `App.js` auf, die hier in einer vereinfachten Version angezeigt wird, um die Erläuterung auf den wesentlichen Inhalt zu reduzieren.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 Durch Rendern der Seite werden `App.js` Aufrufe in einer vereinfachten Version `Page.js` angezeigt.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ Mit der gerenderten Seite können die Komponenten wie `Image.js` wie hier darges
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ Sie können eine Komponente exportieren und bearbeitbar halten.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
