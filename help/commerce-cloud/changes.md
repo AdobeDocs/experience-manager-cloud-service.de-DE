@@ -2,10 +2,10 @@
 title: Wichtige Änderungen beim AEM als Cloud Service
 description: Es wurden erhebliche Änderungen an AEM Commerce als Cloud Service gegenüber Adobe Experience Manager 6.5 vorgenommen.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 13%
+source-wordcount: '624'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ Die Hauptunterschiede gegenüber Adobe Experience Manager 6.5 bestehen in den fo
 
 ## Unterstützung für CIF Classic/Quickstart auf Experience Manager als Cloud Service {#cif-classic}
 
-Das Classic Commerce Integration Framework, das einen Product Importer zum Importieren und Speichern von Produktkatalogen in Experience Manager enthielt, ist in Experience Manager nicht mehr als Cloud Service verfügbar. Die Verwendung von Classic CIF wird in Experience Manager nicht unterstützt, da ein Cloud Service und Projekte, die Classic CIF verwenden, die Classic CIF-Implementierung durch die unterstützte Version ersetzen müssen, wie in [CIF auf Experience Manager als Cloud Service beschrieben](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
+Das Classic Commerce Integration Framework, das einen Product Importer zum Importieren und Speichern von Produktkatalogen in Experience Manager enthielt, ist in Experience Manager nicht mehr als Cloud Service verfügbar. Die Verwendung von Classic CIF wird in Experience Manager nicht unterstützt, da ein Cloud Service und Projekte, die Classic CIF verwenden, die Classic CIF-Implementierung durch die unterstützte Version ersetzen müssen, wie in [CIF auf Experience Manager als Cloud Service beschrieben](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
 
 ## Bereitstellung von CIF {#deployment}
 
@@ -33,6 +33,10 @@ Nachfolgend sind die verschiedenen Bereitstellungsmodelle für Commerce Integrat
 | Bereitstellung des [CIF-Venia-Projekts](https://github.com/adobe/aem-cif-guides-venia) | AEM Paketinstallation | Bereitstellung über [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | Projekt in [Cloud Manager Git Repository](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) und Bereitstellung über [Cloud Manager verschoben](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
+>
+>Weitere Dokumentation zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+
+>[!NHinweis]
 >
 >CIF Classic/Quickstart Version von Commerce Integration Framework kann für AEM On-Premise-Angebot in sehr begrenzten Anwendungsfällen verwendet werden. Dies ist jedoch nicht die empfohlene Lösung.
 
