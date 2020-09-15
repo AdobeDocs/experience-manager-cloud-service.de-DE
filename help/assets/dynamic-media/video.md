@@ -2,10 +2,10 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
-ht-degree: 99%
+source-wordcount: '10056'
+ht-degree: 98%
 
 ---
 
@@ -412,9 +412,9 @@ In dynamischen Medien wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwe
 
 ## Veröffentlichen von Videos auf YouTube        {#publishing-videos-to-youtube}
 
-Sie können AEM-Video-Assets direkt in einem YouTube-Kanal veröffentlichen, den Sie zuvor erstellt haben.
+Sie können in AEM Assets verwaltete Video-Assets direkt auf einem zuvor erstellten YouTube-Kanal veröffentlichen.
 
-Um Video-Assets auf YouTube zu veröffentlichen, richten Sie AEM Assets mit Tags ein. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Die Veröffentlichung auf YouTube erfolgt neben einer normalen Veröffentlichung des Videos, solange ein entsprechendes Tag verwendet wird. 
+Um Video-Assets auf YouTube zu veröffentlichen, taggen Sie Video-Assets in AEM Assets mit Tags. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Die Veröffentlichung auf YouTube erfolgt neben einer normalen Veröffentlichung des Videos, solange ein entsprechendes Tag verwendet wird. 
 
 YouTube verwendet eine eigene Kodierung. Daher wird keines der bei der Kodierung von Dynamic Media erstellten Videoausgabeformate, sondern das in AEM hochgeladene Originalvideo auf YouTube hochgeladen. Die Verarbeitung von Videos mit Dynamic Media ist zwar nicht erforderlich, wird aber vermutlich für den Fall durchgeführt, dass eine Viewer-Vorgabe für die Wiedergabe benötigt wird.
 
