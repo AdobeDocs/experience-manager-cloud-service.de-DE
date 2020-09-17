@@ -2,7 +2,7 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
+source-git-commit: 99e721e373f34d72f75393b0771a069b9c1f8631
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 71%
@@ -106,7 +106,7 @@ Das Format des Berichts lautet:
 * **Systemübersicht**: Informationen zum AEM-System, für das CRA ausgeführt wurde.
 * **Suchen von Kategorien**: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie behandeln. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Wichtigkeit der Ergebnisse, Zusammenfassung, Link zur Dokumentation der Kategorien und individuelle Suchinformationen.
 
-Jedem Ergebnis wird eine Wichtigkeitsstufe zugewiesen, um eine ungefähre Priorität für das Handeln anzugeben. Weitere Informationen zu den einzelnen Kategorien finden Sie in den Kategorien [des Musterdetektors](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
+Jedem Ergebnis wird eine Wichtigkeitsstufe zugewiesen, um eine ungefähre Priorität für das Handeln anzugeben. Weitere Informationen zu den einzelnen Kategorien finden Sie in den Kategorien zum [Musterdetektor](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 
