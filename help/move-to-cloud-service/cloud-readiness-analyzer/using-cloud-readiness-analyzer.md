@@ -2,7 +2,7 @@
 title: Verwenden von Cloud Readiness Analyzer
 description: Verwenden von Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 71%
@@ -62,20 +62,20 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Cloud Readiness Analyze
 
 1. Sobald der CRA-Bericht erstellt wurde, wird eine Zusammenfassung und die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach der Art der Feststellung und der Wichtigkeitsstufe geordnet sind. Um weitere Details zu einer bestimmten Suche zu erhalten, können Sie auf die Zahl klicken, die der Art der Suche in der Tabelle entspricht.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    Die oben beschriebene Aktion führt automatisch einen Bildlauf zur Position der Suche im Bericht durch.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >Sie können den CRA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in der Abbildung unten dargestellt.
