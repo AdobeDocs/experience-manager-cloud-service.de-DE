@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
+source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '390'
+ht-degree: 19%
 
 ---
 
@@ -53,3 +53,20 @@ Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 03. September 20
 ### Fehlerbehebungen {#bug-fixes-cm}
 
 * Auf der Registerkarte &quot;Content Audit&quot;wurde die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne und nicht der Veröffentlichungsdomäne angezeigt.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für Cloud Readiness Analyzer Version 1.1.0.
+
+### Neue Funktionen {#what-is-new-cra}
+
+* Der Cloud Readiness Analyzer (CRA) verfügt über eine Beginn-Statuskonsole, die eine explizite Schaltfläche &quot;Bericht erstellen&quot;anzeigt, auf die der Benutzer klicken kann, um die CRA auszuführen.
+
+* Die CRA-Benutzeroberfläche zeigt den Fortschritt während der Ausführung an. Es zeigt Elemente an, die analysiert werden, und die während der Ausführung gefundenen Ergebnisse.
+
+* Der CRA-Bericht enthält eine Zusammenfassung und die Anzahl der Ergebnisse in Tabellenform, die nach Art der Befunde und der Wichtigkeitsstufe geordnet sind. Wenn Sie auf die Anzahl dieser Suche klicken, wird automatisch ein Bildlauf zur Position dieser Suche im Bericht durchgeführt.
+
+### Fehlerbehebungen {#cra-bug-fixes}
+
+* In bestimmten Fällen wurde der CRA-Bericht nach der erzwungenen Aktualisierung nicht aktualisiert. Dieses Problem wurde in dieser Version behoben.
+
