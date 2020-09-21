@@ -4,9 +4,9 @@ user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 100%
       + [Verwalten von Zielgruppen](authoring/personalization/audiences.md)
       + [Erstellen und Verwalten von Angeboten](authoring/personalization/offers.md)
       + [Grundlegendes zur Segmentierung](authoring/personalization/segmentation.md)
+      + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Integration mit AEM as a Cloud Service {#integrations}
    + [Integrieren mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integration mit Adobe Target](integrating/integrating-adobe-target.md)
