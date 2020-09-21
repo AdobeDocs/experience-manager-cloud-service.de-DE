@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 100%
+source-wordcount: '2542'
+ht-degree: 99%
 
 ---
 
@@ -102,8 +102,10 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
    + Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Bereitstellungsartefakt zu erstellen
       + `ui.apps.common` stellt Code bereit, der **sowohl** für Site A als auch für Site B erforderlich ist
       + `ui.apps.site-a` stellt Code bereit, der für Site A erforderlich ist
+         + `core.site-a` OSGi bundle Jar ist in `ui.apps.site-a`
       + `ui.content.site-a` stellt Inhalte und Konfigurationen bereit, die für Site A erforderlich sind
       + `ui.apps.site-b` stellt Code bereit, der für Site B erforderlich ist
+         + `core.site-b` OSGi bundle Jar ist in `ui.apps.site-b`
       + `ui.content.site-b` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
 ## Pakettypen {#package-types}
