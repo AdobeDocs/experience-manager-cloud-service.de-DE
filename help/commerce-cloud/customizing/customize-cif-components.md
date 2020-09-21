@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
+source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -176,7 +176,7 @@ Verwenden Sie anschließend eine Grafik-QL-IDE, um zu überprüfen, ob das `eco_
    }
    ```
 
-   ![Beispiel für eine GraphlQL-Antwort](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Beispieldiagramm-QL-Antwort](../assets/customize-cif-components/sample-graphql-query.png)
 
    Beachten Sie, dass der Wert von **Yes** eine Ganzzahl von **1** ist. Dies ist nützlich, wenn wir die GraphQL Abfrage in Java schreiben.
 
@@ -259,7 +259,7 @@ Verwenden Sie [die IDE Ihrer Wahl](https://docs.adobe.com/content/help/en/experi
    ...
    ```
 
-   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wurde.
+   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wird.
 
    Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith` Methode zum Abrufen des zusätzlichen `created_at` Attributs erweitert wurde. Dieses Attribut wird später als Teil der `isShowBadge()` Methode verwendet.
 
@@ -407,7 +407,7 @@ In unserem Fall möchten wir ein Banner über dem Teaser rendern, um anzugeben, 
 
    Wenn das `eco_friendly` Attribut für das Produkt auf **Ja** eingestellt ist, sollte der Text &quot;Eco Friendly&quot;auf der Seite angezeigt werden. Versuchen Sie, zu anderen Produkten zu wechseln, um die Verhaltensänderung zu sehen.
 
-1. Als Nächstes öffnen Sie die AEM, `error.log` um die Protokollerklärungen anzuzeigen, die wir hinzugefügt haben. Der `error.log` befindet sich am `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. Als Nächstes öffnen Sie die AEM, `error.log` um die Protokollerklärungen anzuzeigen, die wir hinzugefügt haben. Das `error.log` befindet sich an `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
    Suchen Sie in den AEM Protokollen nach den Protokollanweisungen, die im Sling-Modell hinzugefügt wurden:
 
