@@ -2,10 +2,10 @@
 title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Sie Workflow-Instanzen verwalten
 translation-type: tm+mt
-source-git-commit: 85e4104c3c2dbe4b67005bab52edb7ab90767406
+source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 71%
+ht-degree: 64%
 
 ---
 
@@ -40,16 +40,16 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Use th
 
 1. Wählen Sie im Dialogfeld &quot;Filter&quot;die Workflow-Suchkriterien aus. Sie können anhand der folgenden Eingaben suchen:
 
-* Nutzlastpfad: Einen bestimmten Pfad auswählen
-* Workflow-Modell: Workflow-Modell auswählen
-* Bevollmächtigter: Workflow-Verantwortlichen auswählen
-* Typ: Aufgabe-, Workflow-Element- oder Workflow-Fehler
-* Status der Aufgabe: Aktiv, Abgeschlossen oder Beendet
-* Wo ich bin: Inhaber UND Zessionar, nur Inhaber, nur Zessionar
-* Beginn: Beginn vor oder nach einem bestimmten Datum
-* Enddatum: Datum vor oder nach einem bestimmten Datum beenden
-* Fälligkeitsdatum: Fälligkeitsdatum vor oder nach einem bestimmten Datum
-* Aktualisiertes Datum: Datum vor oder nach einem bestimmten Datum aktualisiert
+   * Nutzlastpfad: Einen bestimmten Pfad auswählen
+   * Workflow-Modell: Workflow-Modell auswählen
+   * Bevollmächtigter: Workflow-Verantwortlichen auswählen
+   * Typ: Aufgabe-, Workflow-Element- oder Workflow-Fehler
+   * Status der Aufgabe: Aktiv, Abgeschlossen oder Beendet
+   * Wo ich bin: Inhaber UND Zessionar, nur Inhaber, nur Zessionar
+   * Beginn: Beginn vor oder nach einem bestimmten Datum
+   * Enddatum: Datum vor oder nach einem bestimmten Datum beenden
+   * Fälligkeitsdatum: Fälligkeitsdatum vor oder nach einem bestimmten Datum
+   * Aktualisiertes Datum: Datum vor oder nach einem bestimmten Datum aktualisiert
 
 ## Aussetzen, Fortsetzen und Beenden einer Workflow-Instanz {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -65,12 +65,12 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Use th
 ## Anzeigen archivierter Workflows {#viewing-archived-workflows}
 
 1. Using Navigation select **Tools**, then **Workflow**.
+
 1. Wählen Sie **Archiv** aus, um die Liste der erfolgreich abgeschlossenen Workflow-Instanzen anzuzeigen.
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >
    >Der Abbruchstatus wird als erfolgreiches Beenden betrachtet, da er infolge der Benutzeraktion auftritt, wie zum Beispiel:
    >
    >* nach der Verwendung der Aktion **Beenden** oder
@@ -90,13 +90,14 @@ Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
-* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
-* **Beenden** Beenden Sie den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie zum Beispiel von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
+* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl &quot;Wiederholungsschritt&quot;, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
+* **Beenden** Sie den Workflow beenden, wenn der Fehler eine unvereinbare Situation für den Workflow verursacht hat. Beispielsweise kann sich der Workflow auf Umgebungsbedingungen wie Informationen im Repository stützen, die für die Workflow-Instanz nicht mehr gültig sind.
 * **Beenden und erneut versuchen** Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Nutzlast und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
 
 Setzen Sie den Workflow anschließend zur Untersuchung von Fehlern fort oder beenden Sie ihn. Gehen Sie hierzu wie folgt vor:
 
 1. Using Navigation select **Tools**, then **Workflow**.
+
 1. Wählen Sie **Fehler** aus, um die Liste der Workflow-Instanzen anzuzeigen, die nicht erfolgreich abgeschlossen wurden.
 1. Wählen Sie ein spezifisches Element und dann die entsprechende Aktion aus:
 
@@ -110,16 +111,12 @@ Konfigurieren Sie die **Adobe Granite Workflow-Bereinigungskonfiguration**, um W
 
 Sie können auch mehrere Konfigurationen des Dienstes erstellen, um Workflow-Instanzen zu löschen, die andere Kriterien erfüllen. Erstellen Sie zum Beispiel eine Konfiguration, mit der die Instanzen eines bestimmten Workflow-Modells gelöscht werden, wenn sie bedeutend länger als erwartet ausgeführt werden. Erstellen Sie eine weitere Konfiguration, die alle abgeschlossenen Workflows nach einer bestimmten Anzahl von Tagen löscht, um die Größe des Repositorys zu minimieren.
 
-Zum Konfigurieren des Dienstes können Sie die OSGI-Konfigurationsdateien konfigurieren, siehe [OSGi-Konfigurationsdateien](/help/implementing/deploying/configuring-osgi.md). In der folgenden Tabelle werden die Eigenschaften beschrieben, die für beide Methoden erforderlich sind.
+Zum Konfigurieren des Dienstes können Sie die OSGi-Konfigurationsdateien konfigurieren, siehe [OSGi-Konfigurationsdateien](/help/implementing/deploying/configuring-osgi.md). Die folgende Tabelle beschreibt die Eigenschaften, die Sie für beide Methoden benötigen.
 
 >[!NOTE]
->
 >Für das Hinzufügen der Konfiguration zum Repository lautet die Service-PID:
->
 >`com.adobe.granite.workflow.purge.Scheduler`
->
 >Da der Dienst ein Factory-Dienst ist, erfordert der Name des Knotens `sling:OsgiConfig` einen ein Kennungssuffix, wie zum Beispiel:
->
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -161,9 +158,7 @@ Zum Konfigurieren des Dienstes können Sie die OSGI-Konfigurationsdateien konfig
 You can set the maximum size of the inbox by configuring the **Adobe Granite Workflow Service**, see [add an OSGi configuration to the repository](/help/implementing/deploying/configuring-osgi.md). Die folgende Tabelle beschreibt die Eigenschaft, die Sie konfigurieren.
 
 >[!NOTE]
->
 >Für das Hinzufügen der Konfiguration zum Repository lautet die Service-PID:
->
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname |
