@@ -2,7 +2,7 @@
 title: Erlebnis-Audit-Tests - Cloud Services
 description: Erlebnis-Audit-Tests - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Erlebnis-Audit bietet Aggregat- und detaillierte Testergebnisse auf Seitenebene 
    >[!NOTE]
    >Der Wert für die progressive Webanwendung (PWA) ist nicht im Zusammenfassungsergebnis enthalten und wird nur im Detailbildschirm für die Berichtdetails auf Seitenebene angezeigt.
 * Einzelne Seitenergebnisse sind auch per Drilldown verfügbar.
-* Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Inhaltsprüfung festgestellt wurden, sind verfügbar.
+* Details zu den Ergebnissen der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Erlebnisprüfung festgestellt wurden, sind verfügbar.
 * Der Verlauf der Testergebnisse wird innerhalb von Cloud Manager beibehalten, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung vorgenommen werden, Regressionen aus der vorherigen Ausführung enthalten.
 
 ### Aggregat-Ergebnisse {#aggregate-scores}
