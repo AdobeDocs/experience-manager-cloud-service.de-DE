@@ -1,5 +1,5 @@
 ---
-product: Adobe Experience Manager
+product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.de-DE
 index: y
 solution-title: Adobe Experience Manager as a Cloud Service
@@ -9,10 +9,10 @@ getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-c
 tutorials-title: Tutorials
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: 967d0993ba2114d0dd081724cf5e7754899b5c8e
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
