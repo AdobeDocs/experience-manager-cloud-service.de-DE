@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Das Wasserzeichen eines PNG-Bildes wird für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden. &lt;!— TBD: Link zum Hilfeartikel.>
+* Das Wasserzeichen eines PNG-Bildes wird für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden.
 
 * Verbesserungen in [!DNL Dynamic Media]
 
@@ -107,6 +107,6 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Die CTT-Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
 
-* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* schnell abzurufen.
+* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* einfach abzurufen.
 
 * Beschreibende Überprüfungsmeldung hinzugefügt für *URL* und *Migrationssatzname*.
