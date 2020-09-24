@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 17%
+source-wordcount: '629'
+ht-degree: 15%
 
 ---
 
@@ -14,11 +14,38 @@ ht-degree: 17%
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.9.0 beschrieben.
 
+## Veröffentlichungsdatum {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
+* Das Single Page Application (SPA) Editor JavaScript SDK [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* Das Wasserzeichen eines PNG-Bildes wird für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden. &lt;!— TBD: Link zum Hilfeartikel.>
+
+* Verbesserungen in [!DNL Dynamic Media]
+
+   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf [!DNL Dynamic Media] intelligente Schnittbilder und dynamische Darstellungen zugreifen, mit denen synchronisiert wird, [!DNL Dynamic Media] [!DNL Dynamic Media] sodass sie Werbematerialien erstellen können, ohne diese Assets für den weltweiten Versand veröffentlichen zu müssen. AEM und [!DNL Dynamic Media] Verlagswesen sind entkoppelt und können dazu separat durchgeführt werden.
+   * Administratoren können das Kennwort für [!DNL Dynamic Media] Cloud Service, das bei der Bereitstellung direkt in AEM Benutzeroberfläche erhalten wurde, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss, zurücksetzen.
+
+* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+   * Verbesserte PDF-Vorschau mit Adobe Document Cloud Ansicht SDK-Integration.
+   * Download-Funktion mit einem Klick.
+   * Neue Verwaltungskonfigurationen für das Download-Erlebnis.
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -80,6 +107,6 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Die CTT-Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
 
-* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* einfach abzurufen.
+* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* schnell abzurufen.
 
 * Beschreibende Überprüfungsmeldung hinzugefügt für *URL* und *Migrationssatzname*.
