@@ -2,7 +2,7 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 99%
@@ -158,7 +158,9 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic klicken Sie auf **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen.]**
 
 * **[!UICONTROL Server]**: Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugeordneten Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Anwendungen zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keine Server-Namen, sofern Sie nicht vom AEM-Support ausdrücklich dazu angewiesen werden.
+
 * **[!UICONTROL Bilder überschreiben]**: Dynamic Media lässt zwei Dateien mit denselben Namen nicht zu. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen legen fest, wie Ersatz-Assets hochgeladen werden, d. h. ob sie das Original ersetzen oder doppelt vorhanden sind. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen gelten für Assets, die in einen anderen Ordner als das Original hochgeladen werden, oder Assets mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
+
 * **[!UICONTROL Im aktuellen Ordner Bilder mit demselben Namen und derselben Erweiterung überschreiben]**: Diese Option stellt die strengste Ersetzungsregel dar. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale N
    >Wählen Sie immer die folgende Einstellung, um die Konsistenz mit AEM sicherzustellen: **Im aktuellen Ordner Bilder mit demselben Namen und derselben Erweiterung überschreiben**.
 
 * **[!UICONTROL In belieb. Ordner Assets mit ident. Namen und ident. Erweit. überschreiben]**: Das Ersatzbild muss dieselbe Dateierweiterung haben wie das Originalbild (beispielsweise würde „chair.jpg“ die Datei „chair.jpg“ ersetzen, nicht jedoch die Datei „chair.tif“). Sie können das Ersatzbild jedoch in einen anderen Ordner hochladen als den, in dem sich das Original befindet. Das hochgeladene Bild bleibt dann im neuen Ordner; die Datei befindet sich also nicht mehr am ursprünglichen Speicherort..
+
 * **[!UICONTROL In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben]**: Diese Option stellt die am wenigsten einschränkende Ersetzungsregel dar. Sie können ein Ersatzbild in einen anderen Ordner hochladen als den, in dem sich das Originalbild befindet, und eine Datei mit einer anderen Dateierweiterung verwenden, um die Originaldatei zu ersetzen. Wenn sich die Originaldatei in einem anderen Ordner befindet, bleibt das Ersatzbild in dem neuen Ordner, in den es hochgeladen wurde.
+
 * **[!UICONTROL Standardfarbprofile]**: Zusätzliche Informationen finden Sie unter [Konfigurieren des Farb-Managements](#configuring-color-management).
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 
 Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
-**So konfigurieren Sie die Asset-Verarbeitung**
+So konfigurieren Sie die Asset-Verarbeitung:
 
 1. Klicken Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Allgemein > CRXDE Lite]**.
 1. Navigieren Sie in der linken Leiste zu:
@@ -230,7 +234,6 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
    * Doppelklicken Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/file-format-support.md) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
-
    * Wiederholen Sie die Schritte 3–4, um weitere MIME-Typen zu bearbeiten.
    * Klicken Sie auf der Menüleiste der Seite „CRXDE Lite“ auf **[!UICONTROL Alle speichern.]**
 
@@ -240,7 +243,7 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
 Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass neue Knoten, die Sie in CRXDE Lite hinzufügen, von AEM nicht gelöscht werden, müssen Sie den MIME-Typ verschieben, bevor `image_` und der aktivierte Wert auf **[!UICONTROL false]** gesetzt werden.
 
-**So fügen Sie benutzerspezifische MIME-Typen für nicht unterstützte Formate hinzu**
+So fügen Sie benutzerspezifische MIME-Typen für nicht unterstützte Formate hinzu:
 
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Vorgänge > Web-Konsole.]**
 
@@ -306,7 +309,7 @@ Hinweis: Als Alternative können Sie **[!UICONTROL Code anzeigen]** ohne verfüg
 
 Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mit diesen Feldern können Sie alle Elemente einer Benennungskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Satzes verwendet wird, der diese Elemente enthält. Für die individuelle Benennungskonvention eines Unternehmens können eine oder mehrere Zeilen der Definition für jedes dieser Elemente verwendet werden. Sie können für Ihre eindeutige Definition so viele Zeilen wie erforderlich verwenden und sie zu eindeutigen Elementen gruppieren, beispielsweise Elementen für Hauptbild, Farbe, alternative Ansicht und Muster.
 
-**So konfigurieren Sie die Standardbenennung**
+So konfigurieren Sie die Standardbenennung:
 
 1. Melden Sie sich bei Ihrem Dynamic Media Classic-Konto (Scene7) an: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Sie können Ihre Stapelsatzvorgaben erstellen, bearbeiten und verwalten. Es gibt
 
 Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmethode oder die Codemethode verwenden, die Ihnen die Verwendung regelmäßiger Ausdrücke ermöglicht. Ebenso wie bei der Standardbenennung können Sie gleichzeitig „Code anzeigen“ wählen und Definitionen in der Formularansicht vornehmen und mithilfe von regelmäßigen Ausdrücken Ihre Definitionen erstellen Als Alternative können Sie eine der Ansichten deaktivieren, um die andere ausschließlich zu verwenden.
 
-**So erstellen Sie eine Stapelsatzvorgabe**
+So erstellen Sie eine Stapelsatzvorgabe:
 
 1. Melden Sie sich bei Ihrem Dynamic Media Classic-Konto (Scene7) an: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
-**So aktualisieren Sie die Granite-Workflow-Warteschlange**
+So aktualisieren Sie die Granite-Workflow-Warteschlange:
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr` und suchen Sie nach **Warteschlange: Granite-Workflow-Warteschlange**.
 
@@ -525,7 +528,7 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
 Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dynamic Media Classic-Servern.
 
-**So aktualisieren Sie die Scene7-Upload-Verbindung**
+So aktualisieren Sie die Scene7-Upload-Verbindung:
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Ändern Sie im Feld **[!UICONTROL Anzahl der Verbindungen]** und/oder im Feld **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** den Wert in die gewünschte Anzahl.
@@ -538,7 +541,7 @@ Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dy
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Tippen Sie auf **[!UICONTROL Speichern.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
