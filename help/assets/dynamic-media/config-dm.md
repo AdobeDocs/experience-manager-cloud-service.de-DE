@@ -2,7 +2,7 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
+source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 98%
@@ -64,26 +64,35 @@ So konfigurieren Sie Dynamic Media Cloud Services:
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, können Sie Folgendes einrichten:
 
-   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Sie können mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen erstellen.
+* **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Sie können mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen erstellen.
 
-   * **[!UICONTROL Firmen-Root-Ordnerpfad]**
+* **[!UICONTROL Firmen-Root-Ordnerpfad]**
 
-   * **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
-      * **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
-      * **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
-      * **[!UICONTROL Selektive Veröffentlichung]** bedeutet, dass Assets nur für die sichere Vorschau veröffentlicht werden. Außerdem können Assets explizit in AEM veröffentlicht werden, ohne sie in DMS7 zu veröffentlichen, um sie öffentlich zugänglich zu machen. In Zukunft wird Adobe diese Option erweitern, um Assets in AEM zu veröffentlichen und Assets in Dynamic Media zu veröffentlichen, wobei sich die beiden gegenseitig ausschließen. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Darstellungen verwenden können. Oder Sie können Assets ausschließlich in AEM zur Vorschau veröffentlichen. Diese Assets werden nicht in DMS7 veröffentlicht, um sie öffentlich zugänglich zu machen.
-   * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
+* **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
+
+* **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
+
+* **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
+
+* **[!UICONTROL Selektive Veröffentlichung]** bedeutet, dass Assets nur für die sichere Vorschau veröffentlicht werden. Außerdem können Assets explizit in AEM veröffentlicht werden, ohne sie in DMS7 zu veröffentlichen, um sie öffentlich zugänglich zu machen. In Zukunft wird Adobe diese Option erweitern, um Assets in AEM zu veröffentlichen und Assets in Dynamic Media zu veröffentlichen, wobei sich die beiden gegenseitig ausschließen. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Darstellungen verwenden können. Oder Sie können Assets ausschließlich in AEM zur Vorschau veröffentlichen. Diese Assets werden nicht in DMS7 veröffentlicht, um sie öffentlich zugänglich zu machen.
+
+* **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe Systems, diese Einstellung nicht zu verändern. 
 
-   * **[!UICONTROL Alle Inhalte synchronisieren]** – ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
+* **[!UICONTROL Alle Inhalte synchronisieren]** – ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
 
-   * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
-      * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
+* **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
+
+* **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+
+* **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
 Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu markieren, öffnen Sie die Seite „Eigenschaften“ Ihres Asset-Ordners. Tippen Sie auf die Registerkarte **[!UICONTROL Details]** und wählen Sie dann aus der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für dynamische Medien]** die folgenden drei Optionen aus. Tippen Sie anschließend auf **[!UICONTROL Speichern]**.
-         * **[!UICONTROL Vererbt]** - Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
-         * **[!UICONTROL Aktivieren für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
-         * **[!UICONTROL Deaktiviert für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
+
+* **[!UICONTROL Vererbt]** - Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
+
+* **[!UICONTROL Aktivieren für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
+
+* **[!UICONTROL Deaktiviert für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
 
    >[!NOTE]
    >
@@ -176,10 +185,10 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
 
    Sie können die folgenden Farbkorrektureigenschaften festlegen:
 
-   * **[!UICONTROL CMYK-Standardfarbraum]**: Name des standardmäßigen CMYK-Farbprofils.
-   * **[!UICONTROL Graustufen-Standardfarbraum]**: Name des standardmäßigen Grau-Farbprofils.
-   * **[!UICONTROL RGB-Standardfarbraum]**: Name des standardmäßigen RGB-Farbprofils.
-   * **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt, **[!UICONTROL relativ]** festzulegen.
+   **[!UICONTROL CMYK-Standardfarbraum]**: Name des standardmäßigen CMYK-Farbprofils.
+   **[!UICONTROL Graustufen-Standardfarbraum]**: Name des standardmäßigen Grau-Farbprofils.
+   **[!UICONTROL RGB-Standardfarbraum]**: Name des standardmäßigen RGB-Farbprofils.
+   **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt, **[!UICONTROL relativ]** festzulegen.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -190,7 +199,7 @@ Dies hat folgende Auswirkungen:
 * Die Farbkorrektur für RGB- und CMYK-Bilder wird aktiviert.
 * Für RGB-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *sRGB* befinden.
 * Für CMYK-Bilder ohne Farbprofil wird angenommen, dass sie sich im Farbraum *WebCoated* befinden.
-* Für dynamische Wiedergaben, bei denen eine RGB-Ausgabe zurückgegeben wird, erfolgt dies im Farbraum *sRGB*.
+* Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * Für dynamische Wiedergaben, bei denen eine CMYK-Ausgabe zurückgegeben wird, erfolgt dies im Farbraum *WebCoated*.
 
 #### Konfigurieren der Asset-Verarbeitung {#configuring-asset-processing}
