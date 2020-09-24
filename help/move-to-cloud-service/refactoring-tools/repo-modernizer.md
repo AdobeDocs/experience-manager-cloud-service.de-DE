@@ -2,10 +2,10 @@
 title: Repository-Moderator
 description: Repository-Moderator
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ Der Repository Moderator erstellt eine kompatible AEM Cloud Service-Projektstruk
 
 * `all` -Paket ist ein Container-Paket, das die Unterpakete `ui.apps` und `ui.content`enthält.
 
+>[!NOTE]
+>Die Projektstruktur basiert auf *Archetype 24* für Pakete und deren `pom.xml/filter.xml files`. Refer to [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
+
 ## Verwenden des Repository-Moderators {#using-repo-modernizer}
 
 * Über Adobe I/O CLI: Es wird empfohlen, den Repository Modernizer über `aio-cli-plugin-aem-cloud-service-migration` (AEM als Cloud Service-Code-Refactoring-Plugin für die Adobe-I/O-CLI) zu verwenden.
@@ -36,5 +39,5 @@ Der Repository Moderator erstellt eine kompatible AEM Cloud Service-Projektstruk
 
    Siehe **[Git-Ressource: Repository-Moderator](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** , um zu erfahren, wie dieses Tool verwendet wird.
 
->[!NOTE]
->Repository Modernizer wird mit NodeJS entwickelt. Es wird empfohlen, NodeJS 10.0+ zu installieren.
+   >[!NOTE]
+   >Der Repository Modernizer wird mithilfe von NodeJS entwickelt. Es wird empfohlen, NodeJS 10.0+ zu installieren.
