@@ -2,9 +2,9 @@
 title: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 description: Einheitliches Erlebnis für Tools zur Codeumgestaltung
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ Das `aio-cli-plugin-aem-cloud-service-migration` Plugin besteht aus zwei Hauptte
 Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) , um mehr über die Verwendung und den Beitrag zu diesem Plugin-Code zu erfahren, der in GitHub offen ist.
 
 >[!NOTE]
->Derzeit ist nur der Dispatcher Converter in das Plugin integriert.
+>Derzeit ist das Plugin in AEM Dispatcher Converter und Repository Modernizer integriert.
