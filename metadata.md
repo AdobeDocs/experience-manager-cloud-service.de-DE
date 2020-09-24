@@ -1,28 +1,31 @@
 ---
-product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+product: Adobe Experience Manager
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.de-DE
 index: y
-solution-title: Adobe Experience Manager als Cloud-Dienst
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+solution-title: Adobe Experience Manager as a Cloud Service
+solution-hub-url: https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/landing/home.translate.html
 getting-started-title: Erste Schritte
 getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutorials
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 85%
 
 ---
 
 
 # Metadaten für die interne Verwendung
 
-Die Metadaten im GitHub-Authoring-System sind hierarchisch aufgebaut und werden in den folgenden, sich verstärkenden Ebenen definiert.
+Die Metadaten im GitHub-Authoring-System sind hierarchisch aufgebaut und werden in den folgenden aufsteigend sortierten Präzedenzebenen definiert.
 
 1. metadata.md
-1. ToC
+1. IHV
 1. Artikel
 
-Die in der Datei &quot;metadata.md&quot;definierten Metadaten gelten für den gesamten Bericht, können jedoch auf den Ebenen &quot;ToC&quot;und &quot;article&quot;überschrieben werden. Das Überschreiben der Metadaten sollte auf der niedrigstmöglichen Ebene erfolgen.
+Die in der Datei „metadata.md“ definierten Metadaten gelten für den gesamten Bericht, können jedoch auf der IHV- (ToC) und der Artikelebene überschrieben werden. Das Überschreiben der Metadaten sollte auf der niedrigstmöglichen Ebene erfolgen.
 
 Die Metadaten im Bericht &quot;experience-manager-cloud-service.de&quot;sind das erforderliche Minimum.
 
@@ -38,7 +41,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-ToCs
+IHVs
 
 * `sub-product`
 * `user-guide-title`
