@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1054'
 ht-degree: 12%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 12%
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.8.0 beschrieben.
 
-## Veröffentlichungsdatum {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * Möglichkeit, Seiten und Unterseiten (Seitenbäume) auf eine frühere Version [wiederherzustellen](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
 * Möglichkeit, Launches [in AEM](/help/sites-cloud/authoring/launches/overview.md) SPA-Editor zu [erstellen.](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -80,6 +78,7 @@ Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am Donnerstag, 6. Aug
 ### Neuerungen {#what-is-new-cloud-manager}
 
 * Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+
 
    >[!NOTE]
    >Content Audit wurde seither in Experience Audit umbenannt.
