@@ -2,10 +2,10 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '5122'
-ht-degree: 98%
+source-wordcount: '5599'
+ht-degree: 81%
 
 ---
 
@@ -46,53 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Konfigurieren von Dynamic Media Cloud Service {#configuring-dynamic-media-cloud-services}
+## Erstellen einer neuen Konfiguration für dynamische Medien in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Vor der Konfiguration von Dynamic Media Cloud Services**: Nachdem Sie Ihre Bereitstellungs-E-Mail mit Anmeldeinformationen für Dynamic Media erhalten haben, müssen Sie sich bei Dynamic Media Classic [anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und Ihr Kennwort ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
-
-So konfigurieren Sie Dynamic Media Cloud Services:
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf der linken Seite der Konsole unter der Überschrift **[!UICONTROL Tools]** auf **[!UICONTROL Cloud Services > Konfiguration dynamischer Medien]**.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Tippen Sie auf der Seite „Browser zur Konfiguration dynamischer Medien“ im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf bzw. wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und tippen Sie dann auf **[!UICONTROL Erstellen]**.
-1. Geben Sie auf der Seite für die Dynamic Media-Konfiguration einen Titel, die E-Mail-Adresse des Dynamic Media-Kontos und ein Kennwort ein und wählen Sie Ihre Region. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support, wenn Sie sie nicht erhalten haben.
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support, wenn Sie sie nicht erhalten haben.
 1. Klicken Sie auf **[!UICONTROL Mit Dynamic Media verbinden]**.
+1. Geben Sie im Dialogfeld &quot;Kennwort **** ändern&quot;im Feld &quot; **[!UICONTROL Neues Kennwort]** &quot;ein neues Kennwort ein, das aus 8-25 Zeichen besteht. Das Kennwort muss mindestens eine der folgenden Angaben enthalten:
 
-   >[!NOTE]
-   >
-   >Nachdem Sie Ihre Bereitstellungs-E-Mail mit Anmeldeinformationen für Dynamic Media erhalten haben, [melden Sie sich](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bei Dynamic Media an, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Das Aktualisieren des Kennworts ist wichtig, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+   * Großbuchstabe
+   * Kleinbuchstabe
+   * Nummer
+   * Sonderzeichen: `# $ & . - _ : { }`
+
+   Beachten Sie, dass das Feld &quot; **[!UICONTROL Aktuelles Kennwort]** &quot;absichtlich vorausgefüllt und von Interaktionen ausgeblendet wird.
+
+   Falls erforderlich, können Sie die Rechtschreibung eines von Ihnen eingegebenen oder neu eingegebenen Kennworts überprüfen, indem Sie auf das Augensymbol für das Kennwort tippen, um das Kennwort anzuzeigen. Tippen Sie erneut auf das Symbol, um das Kennwort auszublenden.
+
+1. Geben Sie im Feld **[!UICONTROL Kennwort]** wiederholen das neue Kennwort ein und tippen Sie dann auf **[!UICONTROL Fertig.]**
+
+   Das neue Kennwort wird gespeichert, wenn Sie auf **[!UICONTROL Speichern]** in der oberen rechten Ecke der Seite &quot;Konfiguration für dynamische Medien **[!UICONTROL erstellen&quot;tippen]** .
+
+   Wenn Sie im Dialogfeld &quot;Kennwort **[!UICONTROL ändern&quot;auf &quot;]** Abbrechen **[!UICONTROL &quot;tippen, müssen Sie beim Tippen auf &quot;]** Speichern **** &quot;noch ein neues Kennwort eingeben, um die neu erstellte Konfiguration für dynamische Medien zu speichern.
+
+   Siehe auch [Ändern des Kennworts in &quot;Dynamische Medien](#change-dm-password)&quot;.
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, können Sie Folgendes einrichten:
 
-* **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Sie können mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen erstellen.
-
-* **[!UICONTROL Firmen-Root-Ordnerpfad]**
-
-* **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
-
-* **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
-
-* **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
-
-* **[!UICONTROL Selektive Veröffentlichung]** bedeutet, dass Assets nur für die sichere Vorschau veröffentlicht werden. Außerdem können Assets explizit in AEM veröffentlicht werden, ohne sie in DMS7 zu veröffentlichen, um sie öffentlich zugänglich zu machen. In Zukunft wird Adobe diese Option erweitern, um Assets in AEM zu veröffentlichen und Assets in Dynamic Media zu veröffentlichen, wobei sich die beiden gegenseitig ausschließen. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Darstellungen verwenden können. Oder Sie können Assets ausschließlich in AEM zur Vorschau veröffentlichen. Diese Assets werden nicht in DMS7 veröffentlicht, um sie öffentlich zugänglich zu machen.
-
-* **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
-Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe Systems, diese Einstellung nicht zu verändern. 
-
-* **[!UICONTROL Alle Inhalte synchronisieren]** – ist standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
-
-* **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
-
-* **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
-Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu markieren, öffnen Sie die Seite „Eigenschaften“ Ihres Asset-Ordners. Tippen Sie auf die Registerkarte **[!UICONTROL Details]** und wählen Sie dann aus der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für dynamische Medien]** die folgenden drei Optionen aus. Tippen Sie anschließend auf **[!UICONTROL Speichern]**.
-
-* **[!UICONTROL Vererbt]** - Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
-
-* **[!UICONTROL Aktivieren für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
-
-* **[!UICONTROL Deaktiviert für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
+   | Eigenschaft | Beschreibung |
+   |---|---|
+   | Unternehmen | Der Name des Kontos für dynamische Medien. Sie können mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen erstellen. |
+   | Firmen-Root-Ordnerpfad | Pfad zum Stammordner Ihrer Firma. |
+   | Veröffentlichen von Assets | Sie können aus den folgenden drei Optionen wählen:<br>**[!UICONTROL Sofort ]**: Wenn Assets hochgeladen werden, lädt das System die Assets ein und stellt die URL/Einbettung sofort bereit. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.<br>**[!UICONTROL Bei Aktivierung]**: Sie müssen das Asset zuerst explizit veröffentlichen, bevor ein URL-/Einbettungslink bereitgestellt wird.<br>**[!UICONTROL Selektive Veröffentlichung ]**: Assets werden nur zur sicheren Vorschau automatisch veröffentlicht und können explizit auf AEM veröffentlicht werden, ohne DMS7 für den Versand in der öffentlichen Domäne zu veröffentlichen. In Zukunft wird Adobe diese Option erweitern, um Assets in AEM zu veröffentlichen und Assets in Dynamic Media zu veröffentlichen, wobei sich die beiden gegenseitig ausschließen. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Darstellungen verwenden können. Oder Sie können Assets ausschließlich in AEM zur Vorschau veröffentlichen. Diese Assets werden nicht in DMS7 veröffentlicht, um sie öffentlich zugänglich zu machen. |
+   | Sicherer Vorschau-Server | Ermöglicht die Angabe des URL-Pfads für den Vorschau-Server für sichere Darstellungen. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).<br>Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe Systems, diese Einstellung nicht zu verändern.  |
+   | Alle Inhalte synchronisieren | Standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:<br>**[!UICONTROL Synchronisierungsmodus für Dynamic Media]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Standardmäßig]** deaktiviert: Die Konfiguration wird erst dann auf einen Ordner angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit dynamischen Medien markiert haben.<br>Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Details]** &quot;in der Dropdown-Liste &quot;Synchronisierungsmodus für **[!UICONTROL dynamische Medien]** &quot;eine der folgenden drei Optionen. When you are done, tap **[!UICONTROL Save]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor &quot;Alle Inhalte **synchronisieren&quot;ausgewählt haben**.* Siehe auch [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in dynamischen Medien.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Vererbt ]**: Kein expliziter Synchronisierungswert im Ordner; Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.<br>**[!UICONTROL Für Unterordner]** aktivieren: Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit dynamischen Medien ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.<br>**[!UICONTROL Deaktiviert für Unterordner ]**: Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit dynamischen Medien aus. |
 
    >[!NOTE]
    >
@@ -101,10 +91,19 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
    >
    >Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
-1. Für eine sichere Vorschau von Dynamic Media-Inhalt vor dessen Veröffentlichung müssen Sie die AEM-Autoreninstanz der Zulassungsliste hinzufügen, um eine Verbindung mit Dynamic Media herzustellen:
+1. Tippen Sie auf **[!UICONTROL Speichern]**. Das neue Kennwort und die Konfiguration für dynamische Medien werden gespeichert. Wenn Sie stattdessen auf **[!UICONTROL Abbrechen]** tippen, wird kein Kennwortupdate durchgeführt.
+1. Tippen Sie im Dialogfeld &quot;Dynamische Medien **[!UICONTROL konfigurieren]** &quot;auf **[!UICONTROL OK]** , um die Konfiguration zu starten.
+
+   >[!IMPORTANT]
+   >
+   >Wenn die neue Konfiguration für dynamische Medien abgeschlossen ist, erhalten Sie eine Statusbenachrichtigung in AEM Posteingang.
+   >
+   >Diese Inbox-Benachrichtigung informiert Sie darüber, ob die Konfiguration erfolgreich war oder nicht.
+   > Weitere Informationen finden Sie unter [Fehlerbehebung bei einer neuen Konfiguration](#troubleshoot-dm-config) für dynamische Medien und [Ihren Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) .
+
+1. Um dynamische Medieninhalte vor der Veröffentlichung sicher Vorschau, müssen Sie die Instanz im Autorenmodus als &quot;Zulassungsliste&quot;AEM, um eine Verbindung zu dynamischen Medien herzustellen. Gehen Sie wie folgt vor, um dies einzurichten:
 
    * Melden Sie sich bei Ihrem Dynamic Media Classic-Konto an: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
    * Klicken Sie in der Navigationsleiste oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
@@ -117,6 +116,58 @@ Um einen ausgewählten Ordner für die Synchronisierung mit Dynamic Media zu mar
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media verwenden.
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie auch eine der Aufgaben unter [Konfigurieren der erweiterten Einstellungen in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) durchführen.
+
+### Fehlerbehebung bei einer neuen Konfiguration für dynamische Medien {#troubleshoot-dm-config}
+
+Wenn eine neue Konfiguration für dynamische Medien abgeschlossen ist, erhalten Sie eine Statusbenachrichtigung in AEM Posteingang. Diese Benachrichtigung informiert Sie darüber, ob die Konfiguration erfolgreich war oder nicht, wie in den folgenden Bildern aus dem Posteingang dargestellt.
+
+![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+Siehe auch [Ihr Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**So beheben Sie eine neue Konfiguration für dynamische Medien**
+
+1. Tippen Sie in der rechten oberen Ecke der AEM auf das Glockensymbol und dann auf **[!UICONTROL Ansicht Alle]**.
+1. Tippen Sie auf der Seite &quot;Posteingang&quot;auf die Erfolgsbenachrichtigung, um einen Überblick über den Status und die Protokolle der Konfiguration zu erhalten.
+
+   Wenn die Konfiguration fehlschlug, tippen Sie auf die Fehlerbenachrichtigung ähnlich dem folgenden Screenshot.
+
+   ![dmsetupfged](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. Überprüfen Sie auf der Seite &quot; **[!UICONTROL DMSETUP]** &quot;die Konfigurationsdetails, die den Fehler beschreiben. Beachten Sie insbesondere alle Fehlermeldungen oder Fehlercodes. Sie müssen sich mit diesen Informationen an Adobe Care wenden.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### Ändern des Kennworts in &quot;Dynamische Medien&quot; {#change-dm-password}
+
+Der Ablauf des Kennworts in dynamischen Medien ist auf 100 Jahre ab dem aktuellen Systemdatum festgelegt.
+
+Das Kennwort muss mindestens eine der folgenden Angaben enthalten:
+
+* Großbuchstabe
+* Kleinbuchstabe
+* Nummer
+* Sonderzeichen: `# $ & . - _ : { }`
+
+Falls erforderlich, können Sie die Rechtschreibung eines von Ihnen eingegebenen oder neu eingegebenen Kennworts überprüfen, indem Sie auf das Augensymbol für das Kennwort tippen, um das Kennwort anzuzeigen. Tippen Sie erneut auf das Symbol, um das Kennwort auszublenden.
+
+Das geänderte Kennwort wird gespeichert, wenn Sie oben rechts auf der Seite &quot;Konfiguration **[!UICONTROL dynamischer Medien]** bearbeiten&quot;auf **[!UICONTROL &quot;Speichern]** &quot;tippen.
+
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. Tippen Sie auf der Seite &quot;Konfiguration **[!UICONTROL dynamischer Medien]** bearbeiten&quot;direkt unter dem Feld **[!UICONTROL Kennwort]** auf Kennwort **[!UICONTROL ändern.]**
+1. Gehen Sie im Dialogfeld &quot;Kennwort **[!UICONTROL ändern]** &quot;wie folgt vor:
+
+   * Geben Sie im Feld **[!UICONTROL Neues Kennwort]** ein neues Kennwort ein.
+
+      Beachten Sie, dass das Feld &quot; **[!UICONTROL Aktuelles Kennwort]** &quot;absichtlich vorausgefüllt und von Interaktionen ausgeblendet wird.
+
+   * Geben Sie im Feld **[!UICONTROL Kennwort]** wiederholen das neue Kennwort ein und tippen Sie dann auf **[!UICONTROL Fertig.]**
+
+1. Tippen Sie oben rechts auf der Seite &quot;Konfiguration **[!UICONTROL dynamischer Medien]** bearbeiten&quot;auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK.]**
 
 ## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -181,14 +232,15 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
 
 1. [Melden Sie sich](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) mit den Anmeldeinformationen, die Sie bei der Bereitstellung erhalten haben, bei Dynamic Media Classic an. Navigieren Sie zu **[!UICONTROL Einrichtung > Anwendungseinstellungen]**.
 1. Erweitern Sie den Bereich **[!UICONTROL Veröffentlichungseinstellungen]** und wählen Sie **[!UICONTROL Image-Server]**. Legen Sie **[!UICONTROL Veröffentlichungskontext]** beim Festlegen von Standardwerten für Veröffentlichungsinstanzen auf **[!UICONTROL Image Serving]** fest.
-1. Navigieren Sie zu der Eigenschaft, die Sie ändern müssen, z. B. einer Eigenschaft im Bereich **[!UICONTROL Farbverwaltungsattribute]**.
+1. Navigieren Sie zu der Eigenschaft, die Sie ändern müssen, z. B. einer Eigenschaft im Bereich **[!UICONTROL Farbverwaltungsattribute.]**
+Sie können die folgenden Farbkorrektureigenschaften festlegen:
 
-   Sie können die folgenden Farbkorrektureigenschaften festlegen:
-
-   **[!UICONTROL CMYK-Standardfarbraum]**: Name des standardmäßigen CMYK-Farbprofils.
-   **[!UICONTROL Graustufen-Standardfarbraum]**: Name des standardmäßigen Grau-Farbprofils.
-   **[!UICONTROL RGB-Standardfarbraum]**: Name des standardmäßigen RGB-Farbprofils.
-   **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt, **[!UICONTROL relativ]** festzulegen.
+   | Eigenschaft | Beschreibung |
+   |---|---|
+   | CMYK-Standardfarbraum | Name des standardmäßigen CMYK-Farbfelds. |
+   | Standardfarbraum für graue Skalierung | Name des standardmäßigen grauen Profils. |
+   | RGB-Standardfarbraum | Name des standardmäßigen RGB-Profils. |
+   | Renderpriorität Farbkonvertierung | Gibt die Renderpriorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt, **[!UICONTROL relativ]** festzulegen. |
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -474,7 +526,7 @@ Adobe empfiehlt die Verwendung der folgenden „angepassten“ Auftragsparameter
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Um einen dieser Parameter zu aktualisieren, führen Sie die Schritte unter [Unterstützung von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern](#enabling-mime-type-based-assets-scene-upload-job-parameter-support) aus.
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
 
