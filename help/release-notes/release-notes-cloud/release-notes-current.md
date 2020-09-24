@@ -2,17 +2,17 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 14%
+source-wordcount: '730'
+ht-degree: 12%
 
 ---
 
 
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.9.0 beschrieben.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -28,12 +28,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Das Wasserzeichen eines PNG-Bildes wird für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden.
+* Wasserzeichen-Bilddateien werden für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden und verwendet eine PNG-Datei als Wasserzeichen. Siehe [Wasserzeichen für Ihre Assets](/help/assets/watermark-assets.md).
 
 * Verbesserungen in [!DNL Dynamic Media]
 
-   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf [!DNL Dynamic Media] intelligente Schnittbilder und dynamische Darstellungen zugreifen, mit denen synchronisiert wird, [!DNL Dynamic Media] [!DNL Dynamic Media] sodass sie Werbematerialien erstellen können, ohne diese Assets für den weltweiten Versand veröffentlichen zu müssen. AEM und [!DNL Dynamic Media] Verlagswesen sind entkoppelt und können dazu separat durchgeführt werden.
-   * Administratoren können das Kennwort für [!DNL Dynamic Media] Cloud Service, das bei der Bereitstellung direkt in AEM Benutzeroberfläche erhalten wurde, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss, zurücksetzen.
+   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf synchronisierte [!DNL Dynamic Media] Bilder und dynamische Darstellungen zugreifen, um Werbematerial zu erstellen, ohne diese Assets für den weltweiten Versand veröffentlichen zu müssen. [!DNL Dynamic Media] [!DNL Dynamic Media] So können Sie auch auf diese Bilder zugreifen, ohne sie veröffentlichen zu müssen. [!DNL Experience Manager] und die [!DNL Dynamic Media] Veröffentlichung ist entkoppelt und kann separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
+   * Administratoren können jetzt das bei der Bereitstellung erhaltene [!DNL Dynamic Media] Cloud Service-Kennwort zurücksetzen. Das Zurücksetzen kann in der [!DNL Experience Manager] Benutzeroberfläche erfolgen, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss.
 
 * Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
 
