@@ -2,9 +2,9 @@
 title: SPA- und serverseitiges Rendering
 description: Durch die Verwendung des serverseitigen Renderings (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigt und anschließend das Rendering an den Client weitergeleitet werden.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ In den folgenden Abschnitten wird erläutert, wie Adobe I/O Runtime zur Implemen
 >
 >Adobe empfiehlt für jede AEM Umgebung eine separate Adobe I/O Runtime-Instanz (Autor, Veröffentlichung, Stage usw.).
 
-## Remote Renderer-Konfiguration {#remote-renderer-configuration}
+## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 
 AEM müssen wissen, wo der remote gerenderte Inhalt abgerufen werden kann. Unabhängig davon, [welches Modell Sie für SSR implementieren,](#adobe-i-o-runtime) müssen Sie angeben, wie Sie auf diesen Remote-Rendering-Dienst zugreifen AEM.
 
@@ -67,8 +67,6 @@ Die folgenden Felder stehen für die Konfiguration zur Verfügung:
 >[!NOTE]
 >
 >Unabhängig davon, ob Sie sich für die Implementierung des [AEM-basierten Kommunikationsflusses](#aem-driven-communication-flow) oder des [Adobe I/O Runtime-basierten Datenflusses entscheiden,](#adobe-i-o-runtime-driven-communication-flow) müssen Sie eine Remote-Konfiguration des Inhalts-Renderers definieren.
->
->Diese Konfiguration muss auch definiert werden, wenn Sie einen benutzerdefinierten Node.js-Server [verwenden.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ Die folgenden Felder stehen für die Konfiguration zur Verfügung:
 
 ## AEM-gesteuerter Kommunikationsfluss {#aem-driven-communication-flow}
 
-Bei Verwendung von SSR umfasst der Arbeitsablauf [für die](introduction.md#workflow) Komponenteninteraktion von SPAs in AEM eine Phase, in der der ursprüngliche Inhalt der App auf Adobe I/O Runtime generiert wird.
+Bei Verwendung von SSR umfasst der Arbeitsablauf [für die](introduction.md#interaction-with-the-spa-editor) Komponenteninteraktion von SPAs in AEM eine Phase, in der der ursprüngliche Inhalt der App auf Adobe I/O Runtime generiert wird.
 
 1. Der Browser fordert den SSR-Inhalt von AEM an.
 1. AEM sendet das Modell an Adobe I/O Runtime.
@@ -164,7 +162,7 @@ Mit der `RemoteContentRendererRequestHandlerServlet` können Sie die Anforderung
 
 Um einen benutzerdefinierten Anforderungs-Handler hinzuzufügen, implementieren Sie die `RemoteContentRendererRequestHandler` Schnittstelle. Stellen Sie sicher, dass die `Constants.SERVICE_RANKING` component-Eigenschaft auf eine Ganzzahl größer als 100 gesetzt wird, was der Rangfolge der Komponente entspricht `DefaultRemoteContentRendererRequestHandlerImpl`.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ So rufen Sie ein Servlet ab und geben Inhalte zurück, die in die Seite eingefü
 
 In der Regel ist die HTL-Vorlage einer Seitenkomponente der wichtigste Empfänger einer solchen Funktion.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
