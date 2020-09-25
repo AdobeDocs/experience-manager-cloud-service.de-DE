@@ -2,9 +2,9 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden bei der Erstellung einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 63%
 
 ---
@@ -292,7 +292,7 @@ Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
 
    * Den Ressourcentyp der Seitenkomponente.
    * Die Richtlinie des Stammknotens, die die im Vorlagen-Editor zulässigen Komponenten definiert.
-   * Es wird empfohlen, die Haltepunkte für das responsive Raster und das Setup des Emulators für mobile Geräte über den Vorlagentyp zu definieren. This is optional, because the configuration could also be defined on the individual template (see the section [Template Type and Mobile Device Groups](#p-template-type-and-mobile-device-groups-br-p)).
+   * Es wird empfohlen, die Haltepunkte für das responsive Raster und das Setup des Emulators für mobile Geräte über den Vorlagentyp zu definieren.
 
 * AEM stellt einige vordefinierte Vorlagentypen wie HTML5-Seiten und Seiten mit adaptivem Formular bereit.
 
@@ -476,7 +476,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    Bevor eine Vorlage verwendet werden kann, muss sie auf eine der folgenden Weisen aktiviert werden:
 
-   * [Durch Aktivieren der Vorlage](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) über die **Vorlagenkonsole**
+   * [Durch Aktivieren der Vorlage](/help/sites-cloud/authoring/features/templates.md) über die **Vorlagenkonsole**
 
    * Setting the status property on the `jcr:content` node.
 
