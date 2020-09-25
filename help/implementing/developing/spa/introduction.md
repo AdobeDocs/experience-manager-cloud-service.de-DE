@@ -2,7 +2,7 @@
 title: Einführung und exemplarische Vorgehensweisen zu SPA
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Verwendung einer einfachen SPA-Anwendung zum Authoring erläutert, wie sie mit dem zugrunde liegenden AEM SPA-Editor in Beziehung steht.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 3%
@@ -151,7 +151,7 @@ Wenn die Seite beim Navigieren durch die untergeordneten Seiten nicht neu gelade
 
 Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-a-spa-application), geht näher auf die Mechanismen des Ladens der SPA ein und beschreibt, wie Inhalte synchron und asynchron geladen werden können.
 
-### Laden einer SPA-Anwendung {#loading-an-spa-application}
+### Laden einer SPA-Anwendung {#loading-a-spa-application}
 
 1. Laden Sie, falls noch nicht geladen, die Anwendung &quot;We.Retail Protokoll&quot;entweder auf dem Veröffentlichungsserver oder unter Verwendung der Option &quot; **Ansicht wie veröffentlicht** &quot;im Menü &quot; **Seiteninformationen** &quot;des Seiteneditors.
 
