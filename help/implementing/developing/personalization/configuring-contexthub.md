@@ -2,9 +2,9 @@
 title: Konfigurieren von ContextHub
 description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1683'
 ht-degree: 68%
 
 ---
@@ -72,7 +72,6 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Ein generischer UI-Modultyp | In den Eigenschaften des UI-Moduls konfiguriert |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Zeigt Informationen zum Browser an | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Zeigt Informationen zu Datum und Uhrzeit an | `datetime` |
-| [contexthub.device](sample-modules.md#contexthub-device-ui-module-type) | Client-Gerät anzeigen | `emulators` |
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie die Position auf einer Karte an. Sie können den Standort ändern. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Zeigt Statistiken zu Seiten-Tags an | `tagcloud` |
@@ -112,14 +111,10 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 | Filialtyp | Beschreibung |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück |
-| [aem.resolvedsegmente](sample-stores.md#aem-resolvedsegments-sample-store-candidate) | Speichert die aktuell gelösten Segmente. Hört auf den ContextHub SegmentManager-Dienst automatisch, um den Store automatisch zu aktualisieren |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Speichert den Breiten- und Längengrad des Browser-Speicherorts. |
-| [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) | Speichert das aktuelle Datum, die aktuelle Uhrzeit und die aktuelle Saison für den Browser-Standort |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Definiert Eigenschaften und Funktionen für eine Reihe von Geräten und erkennt das aktuelle Client-Gerät |
-| [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) | Ruft Daten von einem JSONP-Dienst ab und speichert sie |
 | [granite.Profil](sample-stores.md#granite-profile-sample-store-candidate) | Speichert Profil-Daten für den aktuellen Benutzer |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Speichert Informationen zum Client, z. B. Geräteinformationen, Browsertyp und Fensterausrichtung |
-| [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) | Speichert Seiten-Tags und Tag-Zählungen |
 
 1. Klicken oder tippen Sie auf der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
 1. Klicken oder tippen Sie auf den standardmäßigen Konfigurations-Container.
@@ -144,7 +139,7 @@ In diesem Beispiel wird veranschaulicht, wie Sie einen Store konfigurieren und d
 
 A contexthub.generic-jsonp store is configured so that it stores data for the service call `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. Der Dienst gibt die folgenden Daten zurück, die in einem UI-Modul angezeigt werden:
 
-```xml
+```javascript
 {
    "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
    "original": "\"text to md5\""
@@ -165,7 +160,7 @@ Verwenden Sie zum Speichern von Daten aus dem MD5-Dienst der Website „jsontest
 * **Aktiviert:** Auswählen
 * **Detailkonfiguration (JSON):**
 
-   ```xml
+   ```javascript
    {
     "service": {
     "jsonp": false,
@@ -193,7 +188,7 @@ Use the procedure in [Adding a UI Module](#adding-a-ui-module) to add the UI mod
 * **Modultyp:** contexthub.base
 * **Detailkonfiguration (JSON):**
 
-   ```xml
+   ```javascript
    {
     "icon": "coral-Icon--data",
     "title": "MD5 Conversion",
@@ -222,6 +217,15 @@ Use CRXDE Lite to set the property `debug` to **true** under:
 
 * `/conf/global/settings/cloudsettings` oder
 * `/conf/<site>/settings/cloudsettings`
+
+### Protokollieren von Debugmeldungen für ContextHub {#logging-debug-messages-for-contexthub}
+
+Configure the Adobe Granite ContextHub OSGi service (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) to log detailed Debug messages that are useful when developing.
+
+To configure the service you can either use the [Web Console](/help/implementing/deploying/configuring-osgi.md) or use a JCR node in the repository:
+
+* Web-Konsole: Wählen Sie zum Protokollieren von Debugmeldungen die Debugeigenschaft aus.
+* JCR node: To log Debug messages, set the boolean `com.adobe.granite.contexthub.debug` property to `true`.
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 
