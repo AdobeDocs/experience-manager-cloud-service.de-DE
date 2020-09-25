@@ -2,9 +2,9 @@
 title: Mustertypen von ContextHub-Benutzeroberflächenmodulen
 description: ContextHub bietet mehrere Musterbenutzeroberflächenmodule, die Sie in Ihren Lösungen verwenden können
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 66%
 
 ---
@@ -95,7 +95,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.browserinfo benötigen keine
 
 ## Benutzeroberflächenmodultyp contexthub.datetime  {#contexthub-datetime-ui-module-type}
 
-The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) store candidate.
+The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the `contexthub.datetime` store candidate.
 
 ![contexthub.datetime-Modul](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens tagcloud ab, der auf dem der Storekandidat [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) basiert.
+The `contexthub.tagcloud` UI module displays information about tags. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens tagcloud ab, der auf dem der Storekandidat `contexthub.tagcloud` basiert.
 
 ![contexthub.tagcloud-Modul](assets/tagcloud-module.png)
 
