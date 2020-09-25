@@ -2,7 +2,7 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, rahmenunabhängige Vertrag beschrieben, den ein SPA-Framework erfüllen sollte, um bearbeitbare SPA-Komponenten in AEM zu implementieren.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 12%
@@ -164,7 +164,7 @@ Die SPA-Komponente wird einem grafischen Container wie dem Responsive Grid zugeo
 
 Beispiel:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Beispiel:
 
 Die zugrunde liegende [`Component Mapping`](#componentmapping) Bibliothek und ihre `MapTo` Funktion können verkapselt und erweitert werden, um die Funktionen im Verhältnis zur Bearbeitungskonfiguration, die neben der aktuellen Komponentenklasse bereitgestellt wird, bereitzustellen.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 In der obigen Implementierung wird die Projektkomponente mit der Leere-Funktion erweitert, bevor sie im [Komponentenzuordnungsspeicher](#componentmapping) registriert wird. Dies geschieht durch Umkapseln und Erweitern der [`ComponentMapping`](#componentmapping) Bibliothek, um die Unterstützung des `EditConfig` Konfigurationsobjekts einzuführen:
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ Das folgende Fragment zeigt die typische HTML-Darstellung einer Seiteninhaltsstr
 * Das responsive Rasterelement überträgt Klassennamen mit dem Präfix `aem-Grid--`
 * The responsive column element carries class names prefixed with `aem-GridColumn--`
 * Ein interaktives Raster, das auch die Spalte eines übergeordneten Rasters ist, wird umschlossen, da die beiden vorherigen Präfixe nicht im selben Element angezeigt werden
-* Elements corresponding to editable resources carry a `data-cq-data-path` property. Weitere Informationen finden Sie im Abschnitt [Vertrag mit dem Seiteneditor](#contract-wtih-the-page-editor) in diesem Dokument.
+* Elements corresponding to editable resources carry a `data-cq-data-path` property. Weitere Informationen finden Sie im Abschnitt [Vertrag mit dem Seiteneditor](#contract-with-the-page-editor) in diesem Dokument.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
@@ -282,4 +282,4 @@ Sehen Sie selbst, wie ein einfaches SPA funktioniert, und experimentieren Sie mi
 
 Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
 
-* [Übersicht](editor-overview.md) über die SPAs in AEM und das Kommunikationsmodell
+* [Übersicht](editor-overview.md) über die SPAs in AEM und das Kommunikationsmodell im SPA-Editor
