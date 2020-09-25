@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 67%
@@ -43,8 +43,8 @@ Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 * [ContextHub stellt verschiedene Beispielspeicherarten bereit](sample-stores.md).
 * Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](configuring-contexthub.md#creating-a-contexthub-store).
 * Entwickler können [benutzerdefinierte Speichertypen erstellen](extending-contexthub.md#creating-custom-store-candidates).
-* Entwickler können auf die [gespeicherten Daten](configuring-contexthub.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
+* Entwickler können auf die [gespeicherten Daten](adding-contexthub.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
 ## Segmentierung {#segmentation}
 
-ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](configuring-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](adding-contexthub.md#determining-resolved-contexthub-segments).
