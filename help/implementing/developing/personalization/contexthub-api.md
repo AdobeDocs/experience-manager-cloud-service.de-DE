@@ -2,7 +2,7 @@
 title: Referenz zur ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 73%
@@ -12,7 +12,7 @@ ht-degree: 73%
 
 # Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference}
 
-Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](configuring-contexthub.md#adding-contexthub-to-a-page-component).
+Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](adding-contexthub.md).
 
 ## ContextHub-Konstanten {#contexthub-constants}
 
@@ -20,7 +20,7 @@ Konstante Werte, die von der ContextHub-JavaScript-API definiert werden.
 
 ### Ereigniskonstanten {#event-constants}
 
-In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](contexthub-api.md#contexthub-utils-eventing)
+In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](#contexthub-utils-eventing)
 
 | Konstante | Beschreibung | Wert |
 |---|---|---|
@@ -482,7 +482,7 @@ Löst den angegebenen Parameter auf.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Dienst abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (See [Persistence Modes:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Dienst abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (See [Persistence Modes:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
