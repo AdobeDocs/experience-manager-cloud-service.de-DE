@@ -1,19 +1,19 @@
 ---
-title: Reports about usage and sharing of your digital assets.
+title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets, [!DNL Adobe Experience Manager Assets] in denen Sie die Nutzung, Aktivität und Freigabe Ihrer digitalen Assets verstehen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab9a3bfa3536e25243e9752f9f034e31a57e136c
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 49%
+source-wordcount: '1007'
+ht-degree: 50%
 
 ---
 
 
 # Asset-Berichte     {#asset-reports}
 
-Mit Asset Berichte können Sie das Dienstprogramm Ihrer [!DNL Adobe Experience Manager Assets] Bereitstellung bewerten. With [!DNL Assets], you can generate various reports for your digital assets. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
+Mit Asset Berichte können Sie das Dienstprogramm Ihrer [!DNL Adobe Experience Manager Assets] Bereitstellung bewerten. Damit [!DNL Assets]können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
 
 Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
 
@@ -39,14 +39,14 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
 [!DNL Adobe Experience Manager] Administratoren können diese Berichte ganz einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
-1. In [!DNL Experience Manager] interface, click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 
-   ![Tools page to navigate assets report](assets/navigation.png)
+   ![Tools-Seite zum Navigieren im Assets-Bericht](assets/navigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
-   ![Select report type](assets/choose_report.png)
+   ![Berichttyp auswählen](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
-1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. You can select more columns. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
+1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können weitere Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
 
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/configure_columns.png)
 
