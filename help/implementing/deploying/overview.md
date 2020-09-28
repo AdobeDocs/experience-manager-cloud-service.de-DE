@@ -2,10 +2,10 @@
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '3537'
-ht-degree: 99%
+source-wordcount: '3202'
+ht-degree: 97%
 
 ---
 
@@ -16,39 +16,19 @@ ht-degree: 99%
 
 Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren zur Bereitstellung von Code in AEM as a Cloud Service-Umgebungen.
 
-Die Aktualisierung der AEM-Version ist stets ein separates Bereitstellungsereignis, das nicht mit dem Pushen von benutzerspezifischem Code verbunden ist. Anders gesagt: Bei Freigabe von benutzerspezifischem Code sollte mit jener AEM-Version getestet werden, die sich in der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. Aktualisierungen der AEM-Version, die danach stattfinden (und im Vergleich zu heutigen Managed Services häufiger vorkommen werden), werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten benutzerspezifischen Code sein.
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Anders gesagt: Bei Freigabe von benutzerspezifischem Code sollte mit jener AEM-Version getestet werden, die sich in der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. AEM Updates, die danach erfolgen, die häufig auftreten und automatisch angewendet werden. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten benutzerspezifischen Code sein.
 
-Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
-
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
 >[!NOTE]
 >Kunden mit vorhandenen Code-Basen wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
 
-
-## Aktualisierungen der AEM-Version {#version-updates}
-
-Sie sollten wissen, dass AEM häufig aktualisiert wird, bis zu einmal am Tag. Dabei geht es vor allem um Fehlerbehebungen und Leistungsverbesserungen. Die Aktualisierung erfolgt transparent und ohne Ausfallzeiten. Die Aktualisierung soll abwärtskompatibel sein; d. h., Sie sollten keinen benutzerspezifischen Code ändern müssen. AEM-Aktualisierungen sind Ereignisse, die unabhängig von der Bereitstellung von benutzerspezifischem Code sind. Die AEM-Aktualisierung wird auf Ihrem letzten erfolgreichen Code-Push bereitgestellt, was bedeutet, dass alle seit dem letzten Push-to-Production-Vorgang gesendeten Änderungen nicht bereitgestellt werden.
-
->[!NOTE]
->
->Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
-
-In regelmäßigen Abständen wird ein Feature Release veröffentlicht, bei dem es vor allem um Funktionserweiterungen und -verbesserungen geht, die das Anwendererlebnis im Vergleich zu den täglich veröffentlichten Versionen wesentlich stärker beeinflussen. Ein neues Feature Release wird nicht durch die Bereitstellung eines großen Änderungssatzes ausgelöst, sondern durch Betätigung eines „Freigabeschalters“, sodass Code aktiviert wird, der sich im Laufe von Tagen oder Wochen bei den täglichen Aktualisierungen angesammelt hat.
-
-Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe für diese Umgebung nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
-
-### Composite Node Store {#composite-node-store}
-
-Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Dank der Funktion „Composite Node Store“ in Oak sind rollierende Aktualisierungen möglich. Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue Green AEM-Version ihr eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren Blue AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf`, `/etc` und andere umfasst. Da sowohl die Blue- als auch die Green-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde. 
-
 ## Benutzerspezifische Versionen {#customer-releases}
 
 ### Kodierung mit der richtigen AEM-Version {#coding-against-the-right-aem-version}
 
-Bei früheren AEM-Lösungen änderte sich die aktuelle AEM-Version selten (etwa 1-mal jährlich mit vierteljährlichen Service Packs); Kunden aktualisierten die Produktionsinstanzen im eigenen Tempo auf den neuesten Schnellstart, indem sie auf das API-JAR verwiesen. AEM as a Cloud Service-Anwendungen jedoch werden häufiger automatisch auf die neueste Version von AEM aktualisiert. Daher sollte benutzerspezifischer Code für interne Freigaben mit diesen neueren AEM-Schnittstellen erstellt werden.
+Bei früheren AEM-Lösungen änderte sich die aktuelle AEM-Version selten (etwa 1-mal jährlich mit vierteljährlichen Service Packs); Kunden aktualisierten die Produktionsinstanzen im eigenen Tempo auf den neuesten Schnellstart, indem sie auf das API-JAR verwiesen. AEM als Cloud Service werden jedoch häufiger automatisch auf die neueste Version von AEM aktualisiert, sodass benutzerspezifischer Code für interne Versionen mit der neuesten AEM Version erstellt werden sollte.
 
 Wie bei vorhandenen Nicht-Cloud-AEM-Versionen wird eine lokale Offline-Entwicklung unterstützt, die auf einem bestimmten Schnellstart basiert. In den meisten Fällen ist dies das bevorzugte Debugging-Tool.
 
@@ -56,6 +36,13 @@ Wie bei vorhandenen Nicht-Cloud-AEM-Versionen wird eine lokale Offline-Entwicklu
 >Beim Verhalten der Anwendung gibt es geringfügige Unterschiede zwischen einem lokalen Computer und der Adobe Cloud. Diese architektonischen Unterschiede müssen bei der lokalen Entwicklung berücksichtigt werden und können bei Implementierung in der Cloud-Infrastruktur ggf. zu einem anderen Verhalten führen. Darum ist es wichtig, in Entwicklungs- und Staging-Umgebungen umfassende Tests durchzuführen, bevor neuer benutzerspezifischer Code in die Produktionsumgebung eingeführt wird.
 
 Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die entsprechende Version des [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) heruntergeladen und installiert werden. Weitere Informationen zur Verwendung der AEM as a Cloud Service-Dispatcher-Tools finden Sie auf [dieser Seite](/help/implementing/dispatcher/overview.md).
+
+Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+
+>[!NOTE]
+>Kunden mit vorhandenen Code-Basen wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
 
 ## Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
