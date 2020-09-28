@@ -2,10 +2,10 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud Service
 description: 'Was ist anders und Was ist neu - Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
+source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 11%
+source-wordcount: '2154'
+ht-degree: 15%
 
 ---
 
@@ -66,31 +66,46 @@ Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 ![Automatische Skalierung für verschiedene Nutzungsmuster](assets/introduction-04.png "Automatische Skalierung für verschiedene Nutzungsmuster")
 
 
-## Upgrades {#upgrades}
+## Updates {#upgrades}
 
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/implementing/deploying/overview.md).
+>Weitere Informationen finden Sie in der [Einführung](/help/implementing/deploying/overview.md)zur Bereitstellung.
 
-AEM as a Cloud Service now uses Continuous Integration and Continuous Delivery (CI/CD) to ensure that your projects are fully up-to-date. These mean that all upgrade operations are fully automated, so do not require any interruption of service for users.
-
-Adobe proactively takes care of updating all operational instances of the service to the latest version of the AEM code base:
-
-* Bug-fixes:
-
-   * Can be released on a daily basis.
-
-   * Instances are frequently updated with the latest bug-fixes. As changes are applied regularly the impact is incremental, reducing the impact on your service.
-
-   * Most updates are for maintenance and security reasons.
-
-* Neue Funktionen:
-
-   * Will be released via a predictable monthly schedule.
+AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte die aktuellste AEM Version aufweisen. Dies bedeutet, dass alle Aktualisierungsvorgänge vollständig automatisiert sind, sodass keine Unterbrechung des Diensts für Benutzer erforderlich ist.
 
 >[!NOTE]
->
->Weitere Informationen finden Sie unter [Implementierungsarchitektur](/help/core-concepts/architecture.md#deployment-architecture).
+>Wenn die Aktualisierung der Produktions-Umgebung fehlschlägt, führt Cloud Manager automatisch eine Rollback-Umgebung durch. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss des Updates die Umgebung für die Phase und Produktion AEM gleichen Version sind.
+
+AEM Updates der Version umfassen zwei Typen:
+
+* **Push-Updates**
+
+   * Kann täglich freigegeben werden.
+   * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
+
+   Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
+
+>[!NOTE]
+>Weitere Informationen zu AEM Push-Aktualisierungen finden Sie im Whitepaper zu [Adobe Experience Manager als Cloud Service Continuous Versand Model](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+
+* **Neue Funktionen**
+
+   * Veröffentlicht über einen vorhersehbaren Monatszeitplan.
+
+AEM Updates durchlaufen eine intensive und vollautomatisierte Produktvalidierungspipeline, die mehrere Schritte umfasst, um eine Unterbrechung des Service für alle in der Produktion befindlichen Systeme zu vermeiden. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen während eines AEM als Cloud Service-Update fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe wird prüfen, warum das Update zu diesem unerwarteten Verhalten geführt hat.
+
+[Produkttests und Funktionstests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) des Kunden, die verhindern, dass Produktaktualisierungen und Kundencode-Push die Produktion unterbrechen, werden auch während einer AEM Aktualisierung der Version überprüft.
+
+>[HINWEIS]
+>Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
+
+
+### Composite Node Store {#composite-node-structure}
+
+Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht.
+
+Rolling updates are possible due to the *composite node store* feature in Oak. Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In a rolling deployment, the new Green AEM version contains its own `/libs`, that is, the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Da sowohl die Blue- als auch die Green-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde. 
 
 ## Cloud Manager {#cloud-manager}
 
@@ -130,20 +145,20 @@ Derzeit kann Cloud Manager Umgebung in drei geografischen Regionen erstellen (we
 
 * EMEA (Niederlande)
 
-* APAC (Australia)
+* APAC (Australien)
 
 >[!NOTE]
->Refer to [Accessing Experience Manager as a Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) to get started with Cloud Manager in AEM as a Cloud Service.
+>Informationen zum Einstieg in Cloud Manager in AEM Cloud Service finden Sie unter [Zugriff auf Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) .
 
 ## Einstieg {#onboarding}
 
 >[!NOTE]
 >
->For further details see [Onboarding](/help/onboarding/home.md).
+>Weitere Informationen finden Sie unter [Einstieg](/help/onboarding/home.md).
 
-Starting and managing an AEM project is straightforward when using AEM as a Cloud service as Adobe is responsible for many aspects:
+Das Starten und Verwalten eines AEM ist unkompliziert, wenn AEM als Cloud-Dienst verwendet wird, da die Adobe für viele Aspekte verantwortlich ist:
 
-* Baseline AEM images are optimized for specific use-cases.
+* Grundlegende AEM sind für bestimmte Anwendungsfälle optimiert.
 
 * Viele der Aufgaben zur manuellen Konfiguration wurden überflüssig gemacht.
 
@@ -183,21 +198,21 @@ Damit bestehende AEM-Anwendungen auf AEM als Cloud Service ausgeführt werden, s
 
 Dieser Prozess wird häufig als Cloud-erste Entwicklung bezeichnet. Da die End-to-End-Dauer (je nach Komplexität der Anwendung von 20 bis 50 Minuten) in Anspruch nehmen wird, müssen schnelle Entwicklungsmethoden eingeführt werden, bevor die ausstehenden Code- und Konfigurationsänderungen in der Cloud versucht werden.
 
-Die Web-Konsole, in der OSGI-Pakete und die zugehörige Konfiguration verwaltet werden und die zuvor Teil der AEM QuickStart war, ist für Benutzer einer AEM als Cloud Service-Umgebung nicht mehr direkt zugänglich. This interface can still be accessed in read-only mode by using a new developer console. With this console, developers can select and login directly to any particular node of an author or publish service, then access the areas blocked by default.
+Die Web-Konsole, in der OSGI-Pakete und die zugehörige Konfiguration verwaltet werden und die zuvor Teil der AEM QuickStart war, ist für Benutzer einer AEM als Cloud Service-Umgebung nicht mehr direkt zugänglich. Über eine neue Entwicklerkonsole kann auf diese Schnittstelle weiterhin im schreibgeschützten Modus zugegriffen werden. Mit dieser Konsole können Entwickler einen bestimmten Knoten eines Autoren- oder Veröffentlichungsdiensts auswählen und sich direkt anmelden und dann auf die standardmäßig blockierten Bereiche zugreifen.
 
 >[!NOTE]
 >
->See also [OSGi Configuration](/help/implementing/deploying/overview.md#osgi-configuration)
+>Siehe auch [OSGi-Konfiguration](/help/implementing/deploying/overview.md#osgi-configuration)
 
-Another common requirement for developers is quick access to the log files of the various environments. With AEM as a Cloud Service, the log files of the different nodes in the author and publish nodes are made available via the Cloud Manager, either in the form of files that can be downloaded, or via APIs.
+Eine weitere gängige Voraussetzung für Entwickler ist der schnelle Zugriff auf die Protokolldateien der verschiedenen Umgebung. AEM als Cloud Service werden die Protokolldateien der verschiedenen Knoten im Autor- und Veröffentlichungsknoten über den Cloud Manager bereitgestellt, entweder in Form von herunterzuladenden Dateien oder über APIs.
 
-Due to the clear separation of code and content, developers can use a particular process for updating content as part of a deployment. The typical use cases for mutable content are:
+Aufgrund der klaren Trennung von Code und Inhalt können Entwickler einen bestimmten Prozess zum Aktualisieren von Inhalten im Rahmen einer Bereitstellung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
 
-* Standard *default* content that is part of the customer project (for example, folders, templates, workflows, etc)
+* Standardmäßige *Standardinhalte* , die Teil des Kundenprojekts sind (z. B. Ordner, Vorlagen, Workflows usw.)
 
-* Search index definitions
+* Suchindexdefinitionen
 
-* ACLs and permissions
+* ACLs und Berechtigungen
 
 * Dienstbenutzer und Benutzergruppen
 
@@ -241,17 +256,17 @@ Eine wichtige Änderung an AEM als Cloud Service ist die vollständig integriert
 
 Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Dienste der Adobe, da die Benutzerinformationen im Adobe Identity Management System (IMS) zentralisiert sind und über alle Cloud-Profil hinweg freigegeben werden können. Nachdem AEM Zugriff zugewiesen wurde, können die Benutzerkonten in AEM als Cloud Service referenziert werden (wie zuvor). zum Beispiel zum Definieren von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
 
-This combines the benefits of:
+Dies kombiniert die Vorteile von:
 
-* Using the Adobe Identity Management System (IMS) to provide single-sign-on across all Adobe cloud applications.
+* Verwenden der Adobe Identity Management System (IMS), um Single Sign-On für alle Adobe Cloud-Anwendungen bereitzustellen.
 
-* User preferences remaining local to each particular instance of AEM as a Cloud Service.
+* Benutzervoreinstellungen bleiben lokal für jede bestimmte Instanz von AEM als Cloud Service.
 
-## Authoring User Interface {#authoring-user-interface}
+## Authoring-Benutzeroberfläche {#authoring-user-interface}
 
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
+>Für weitere Details ist die [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) ein guter Ausgangspunkt.
 
 Die Grundprinzipien der Authoring-Benutzeroberfläche (UI), sowohl für Sites als auch für Assets, werden allen vertraut sein, die AEM in der Vergangenheit verwendet haben.
 
