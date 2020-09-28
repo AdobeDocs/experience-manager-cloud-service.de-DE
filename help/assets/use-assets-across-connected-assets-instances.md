@@ -1,11 +1,11 @@
 ---
-title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-Workflow von  [!DNL Adobe Experience Manager Sites] .
+title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Sites]
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
-workflow-type: ht
-source-wordcount: '2082'
+translation-type: tm+mt
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+workflow-type: tm+mt
+source-wordcount: '2080'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a Cloud Service ** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]auf AMS ** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise ** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
+   | **[!DNL Experience Manager Assets]as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]auf AMS** | Unterstützt | Unterstützt | Unterstützt |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
