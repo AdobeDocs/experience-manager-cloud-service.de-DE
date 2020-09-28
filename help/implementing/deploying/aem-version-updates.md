@@ -2,10 +2,10 @@
 title: AEM
 description: 'AEM '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 35%
+source-wordcount: '395'
+ht-degree: 38%
 
 ---
 
@@ -21,15 +21,12 @@ AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Vers
 
 AEM Updates der Version umfassen zwei Typen:
 
-* **Push-Updates**
+* **AEM Push-Updates**
 
    * Kann täglich freigegeben werden.
    * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
 
-   Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
-
->[!NOTE]
->Weitere Informationen zu AEM Push-Aktualisierungen finden Sie im Whitepaper zu [Adobe Experience Manager als Cloud Service Continuous Versand Model](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
 
 * **Neue Funktionen**
 
