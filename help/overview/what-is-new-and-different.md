@@ -2,10 +2,10 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud Service
 description: 'Was ist anders und Was ist neu - Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 15%
+source-wordcount: '1899'
+ht-degree: 11%
 
 ---
 
@@ -69,14 +69,12 @@ Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 ## Updates {#upgrades}
 
 >[!NOTE]
->
->Weitere Informationen finden Sie in der [Einführung](/help/implementing/deploying/overview.md)zur Bereitstellung.
+>Weitere Informationen finden Sie in den [AEM Updates](/help/implementing/deploying/aem-version-updates.md).
 
-AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte die aktuellste AEM Version aufweisen. Dies bedeutet, dass alle Aktualisierungsvorgänge vollständig automatisiert sind, sodass keine Unterbrechung des Diensts für Benutzer erforderlich ist.
+AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte die aktuellste AEM Version aufweisen.
 
->[!NOTE]
->Wenn die Aktualisierung der Produktions-Umgebung fehlschlägt, führt Cloud Manager automatisch eine Rollback-Umgebung durch. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss des Updates die Umgebung für die Phase und Produktion AEM gleichen Version sind.
-
+Dies bedeutet, dass alle Aktualisierungsvorgänge vollständig automatisiert sind, sodass keine Unterbrechung des Diensts für Benutzer erforderlich ist.
+Adobe sorgt proaktiv dafür, dass alle operativen Instanzen des Dienstes auf die neueste Version der AEM-Codebasis aktualisiert werden:
 AEM Updates der Version umfassen zwei Typen:
 
 * **Push-Updates**
@@ -93,19 +91,8 @@ AEM Updates der Version umfassen zwei Typen:
 
    * Veröffentlicht über einen vorhersehbaren Monatszeitplan.
 
-AEM Updates durchlaufen eine intensive und vollautomatisierte Produktvalidierungspipeline, die mehrere Schritte umfasst, um eine Unterbrechung des Service für alle in der Produktion befindlichen Systeme zu vermeiden. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen während eines AEM als Cloud Service-Update fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe wird prüfen, warum das Update zu diesem unerwarteten Verhalten geführt hat.
-
-[Produkttests und Funktionstests](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) des Kunden, die verhindern, dass Produktaktualisierungen und Kundencode-Push die Produktion unterbrechen, werden auch während einer AEM Aktualisierung der Version überprüft.
-
->[HINWEIS]
->Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
-
-
-### Composite Node Store {#composite-node-structure}
-
-Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht.
-
-Rolling updates are possible due to the *composite node store* feature in Oak. Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In a rolling deployment, the new Green AEM version contains its own `/libs`, that is, the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Da sowohl die Blue- als auch die Green-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde. 
+>[!NOTE]
+>Weitere Informationen finden Sie unter [Implementierungsarchitektur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) .
 
 ## Cloud Manager {#cloud-manager}
 
