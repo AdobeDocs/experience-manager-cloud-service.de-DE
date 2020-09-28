@@ -1,13 +1,13 @@
 ---
-title: Best Practices für die Integration von Adobe Experience Manager und Adobe Creative Cloud
+title: Best Practices zur Integration mit [!DNL Adobe Creative Cloud]
 description: Best Practices für die Integration einer Experience Manager-Implementierung mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: ht
-source-wordcount: '3302'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+workflow-type: tm+mt
+source-wordcount: '3297'
+ht-degree: 99%
 
 ---
 
