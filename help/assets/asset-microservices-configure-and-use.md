@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren und Verwenden von Asset-Microservices für die Asset-Verarbeitung.
+title: Asset-Mikrodienste konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Mikrodienste, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2527'
 ht-degree: 45%
 
 ---
@@ -142,7 +142,7 @@ Bei den benutzerdefinierten Anwendungen handelt es sich um kopflose [Project Fir
 
 ### Beispiel für ein benutzerdefiniertes Profil {#custom-profile-example}
 
-Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. Sie können ein verarbeitendes Profil erstellen, das die Photoshop-API nutzt, um die Bilder zu bearbeiten.
+Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. Sie können ein verarbeitendes Profil erstellen, das die Photoshop-API zum Bearbeiten der Bilder nutzt.
 
 Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese Parameter mithilfe des Felds [!UICONTROL Service Parameters] an die benutzerdefinierte Anwendung zu übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop API auf und übergibt diese Werte an die API. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
 
