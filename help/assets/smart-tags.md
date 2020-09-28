@@ -1,11 +1,11 @@
 ---
-title: Tagging von Bildern mithilfe von KI-Diensten.
+title: Taggen von Bildern mit intelligenten Diensten
 description: Tagging von Bildern mithilfe von KI-Diensten, die kontextbezogene und beschreibende Unternehmens-Tags mithilfe von Adobe Sensei-Diensten anwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2424'
 ht-degree: 98%
 
 ---
@@ -39,7 +39,7 @@ Smart-Tags sind nur für [!DNL Adobe Experience Manager Assets]-Kunden relevant.
 
 >[!IMPORTANT]
 >
->Die neuen [!DNL Experience Manager Assets] Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. It helps configure the smart tags functionality faster. On the existing deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
+>Die neuen [!DNL Experience Manager Assets] Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei vorhandenen Bereitstellungen können Administratoren die Integration [von Smarttags manuell](/help/assets/smart-tags-configuration.md#aio-integration)konfigurieren.
 
 You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using [!DNL Adobe Developer Console]. Verwenden Sie diese Konfiguration, um über [!DNL Experience Manager] auf den Smart-Tags-Service zuzugreifen. Informationen zu den Aufgaben zum Konfigurieren von Smart-Tags finden Sie unter [Konfigurieren von Experience Manager für das Smart-Tagging von Assets](smart-tags-configuration.md). Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Smart-Tags-Service weitergeleitet wird.
 
