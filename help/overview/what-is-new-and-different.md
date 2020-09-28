@@ -2,9 +2,9 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud Service
 description: 'Was ist anders und Was ist neu - Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1884'
 ht-degree: 11%
 
 ---
@@ -82,17 +82,14 @@ AEM Updates der Version umfassen zwei Typen:
    * Kann täglich freigegeben werden.
    * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
 
-   Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
+      Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
 
->[!NOTE]
->Weitere Informationen zu AEM Push-Aktualisierungen finden Sie im Whitepaper zu [Adobe Experience Manager als Cloud Service Continuous Versand Model](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      >[!NOTE]
+      >Weitere Informationen zu AEM Push-Aktualisierungen finden Sie im Whitepaper zu [Adobe Experience Manager als Cloud Service Continuous Versand Model.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **Neue Funktionen**
 
    * Veröffentlicht über einen vorhersehbaren Monatszeitplan.
-
->[!NOTE]
->Weitere Informationen finden Sie unter [Implementierungsarchitektur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) .
 
 ## Cloud Manager {#cloud-manager}
 
