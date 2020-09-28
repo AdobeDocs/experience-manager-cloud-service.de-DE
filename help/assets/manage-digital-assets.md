@@ -1,12 +1,12 @@
 ---
-title: Verwalten von digitalen Assets in Experience Manager
+title: Verwalten digitaler Assets
 description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4431'
 ht-degree: 99%
 
 ---
