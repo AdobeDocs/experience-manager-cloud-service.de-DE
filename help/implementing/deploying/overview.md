@@ -2,10 +2,10 @@
 title: Bereitstellen in AEM as a Cloud Service
 description: 'Bereitstellen in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
-ht-degree: 97%
+source-wordcount: '3210'
+ht-degree: 94%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 97%
 
 Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren zur Bereitstellung von Code in AEM as a Cloud Service-Umgebungen.
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Anders gesagt: Bei Freigabe von benutzerspezifischem Code sollte mit jener AEM-Version getestet werden, die sich in der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. AEM Updates, die danach erfolgen, die häufig auftreten und automatisch angewendet werden. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten benutzerspezifischen Code sein.
-
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). Andernfalls sollten Versionen von benutzerspezifischem Code mit der AEM Version getestet werden, die in Produktion ist, da diese Version oben bereitgestellt wird. AEM Updates, die danach erfolgen, die häufig auftreten und automatisch angewendet werden. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten Kundencode sein.
 
 In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
@@ -236,19 +235,19 @@ Genauso wie AEM-Aktualisierungen werden benutzerspezifische Versionen mithilfe e
 
 ## Indizes {#indexes}
 
-Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue (grüne) Version Traffic annehmen kann. Details zur Indexverwaltung in Skyline finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indizierungsauftrags auf der Build-Seite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version bereit zur Aufnahme von Traffic ist.
+Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue (grüne) Version Traffic annehmen kann. Details zur Indexverwaltung in AEM als Cloud Service finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indizierungsauftrags auf der Build-Seite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version bereit zur Aufnahme von Traffic ist.
 
 >[!NOTE]
 >
 >Die Dauer einer rollierenden Bereitstellung hängt von der Größe des Indexes ab, da die grüne Version Traffic erst annehmen kann, nachdem der neue Index generiert wurde.
 
-Derzeit funktioniert Skyline nicht mit Indexverwaltungs-Tools wie dem ACS Commons Ensure Oak Index-Tool.
+Derzeit funktioniert AEM als Cloud Service nicht mit Indexverwaltungstools wie ACS Commons Sicherstellen des Oak Index-Tools.
 
 ## Replikation {#replication}
 
 Der Veröffentlichungsmechanismus ist rückwärtskompatibel mit den [AEM Replication Java-APIs](https://helpx.adobe.com/de/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Um mit Replikation und dem Cloud-fähigen AEM-Schnellstart entwickeln und testen zu können, müssen die klassischen Replikationsfunktionen in einem Author/Publish-Setup verwendet werden. Wenn der Einstiegspunkt der Benutzeroberfläche in AEM Author für die Cloud entfernt wurde, würden Benutzer zur Konfiguration `http://localhost:4502/etc/replication` aufrufen.
+Um die Replikation mit der Cloud AEM Schnellstart zu entwickeln und zu testen, müssen die klassischen Replizierungsfunktionen mit einem Autor-/Veröffentlichungssetup verwendet werden. Wenn der Einstiegspunkt der Benutzeroberfläche in AEM Author für die Cloud entfernt wurde, würden Benutzer zur Konfiguration `http://localhost:4502/etc/replication` aufrufen.
 
 ## Rückwärtskompatibler Code für rollierende Bereitstellungen {#backwards-compatible-code-for-rolling-deployments}
 
