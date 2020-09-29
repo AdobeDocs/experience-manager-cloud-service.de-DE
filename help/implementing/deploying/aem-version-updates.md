@@ -2,7 +2,7 @@
 title: AEM
 description: 'AEM '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 38%
@@ -24,6 +24,7 @@ AEM Updates der Version umfassen zwei Typen:
 * **AEM Push-Updates**
 
    * Kann täglich freigegeben werden.
+
    * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
 
       Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
