@@ -2,9 +2,9 @@
 title: Was ist anders und was ist neu - Adobe Experience Manager als Cloud Service
 description: 'Was ist anders und Was ist neu - Adobe Experience Manager (AEM) als Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
+source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 ![Automatische Skalierung für verschiedene Nutzungsmuster](assets/introduction-04.png "Automatische Skalierung für verschiedene Nutzungsmuster")
 
 
-## AEM {#upgrades}
+## AEM {#aem-updates}
 
 >[!NOTE]
 >Weitere Informationen finden Sie in den [AEM Updates](/help/implementing/deploying/aem-version-updates.md).
@@ -78,7 +78,7 @@ AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Vers
 
 AEM Updates der Version umfassen zwei Typen:
 
-* **Push-Updates**
+* **AEM Push-Updates**
 
    * Kann täglich freigegeben werden.
    * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
