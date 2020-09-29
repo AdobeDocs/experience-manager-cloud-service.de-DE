@@ -2,15 +2,15 @@
 title: Details der Build-Umgebung
 description: Details zur Umgebung erstellen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 88%
+source-wordcount: '716'
+ht-degree: 82%
 
 ---
 
 
-# Die Build-Umgebung {#understanding-build-environment}
+# Grundlagen zur Build-Umgebung {#understanding-build-environment}
 
 ## Details der Build-Umgebung {#build-environment-details}
 
@@ -71,9 +71,10 @@ Fügen Sie dazu der Datei „pom.xml“ einen `<plugin>`-Eintrag hinzu, der wie 
 ```
 
 >[!NOTE]
->Unterstützte Herstellerwerte sind `oracle` und `sun`.
->
->Unterstützte Versionswerte sind `1.8`, `1.11`und `11`.
+>Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
+
+>[!NOTE]
+>Der Cloud Manager-Projekterstellung nutzt weiterhin Java 8, um Maven aufzurufen. Daher funktioniert das Überprüfen oder Erzwingen der im Toolchain-Plugin konfigurierten Java-Version über Plugins wie das [Apache Maven Enforcer-Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) nicht und solche Plugins dürfen nicht verwendet werden.
 
 ## Umgebungsvariablen {#environment-variables}
 
