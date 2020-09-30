@@ -3,7 +3,7 @@ title: Zugänglichkeit in [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 3%
@@ -110,7 +110,7 @@ Nach der Anmeldung können DAM-Benutzer über die Tastatur zur [!DNL Assets] Ben
 
 Wenn ein Benutzer die Profil- oder Hilfe-Option aus dem Menü erweitert, wird die entsprechende Option bzw. der entsprechende Status von der Bildschirmlesehilfe angekündigt. Wenn ein Benutzer die Option &quot;Benutzertastatur&quot;erweitert, können die verfügbaren Profil über eine Tastatur ausgewählt werden. Ein Benutzer kann beispielsweise einen anderen Benutzer imitieren. Option und Fehlermeldung zur Benutzeroberfläche
 
-![Tastaturnavigation der wichtigsten Optionen in der Benutzeroberfläche von Experience Manager](assets/keyboard-navigation-in-aem.gif)
+![Tastaturnavigation der wichtigsten Optionen in der Benutzeroberfläche des Experience Managers](assets/keyboard-navigation-in-aem.gif)
 
 *Abbildung: Navigieren durch die Optionen oben in der Benutzeroberfläche des Experience Managers mithilfe des`Tab`Schlüssels.*
 
@@ -172,7 +172,7 @@ Für Metadaten-Vorgänge, die in der Regel von Rollen wie Marketingexperten und 
 * Die Funktion zum Ziehen mit der Tastatur funktioniert im Metadaten-Schema-Editor im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
 * Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld &quot;Hinzufügen Benutzer&quot;oder &quot;Gruppe&quot;unter &quot;Geschlossene Benutzergruppe&quot;auf der Registerkarte &quot;Berechtigungen&quot;der Ordnereigenschaften verschieben.
 
-## Suchen nach digitalen Assets {#search}
+## Suchen nach digitalen Assets {#search-assets}
 
 Eine schnelle und nahtlose Suche nach Assets beschleunigt die Inhaltsgeschwindigkeit. Die Anwendungsfälle mit Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität [!DNL Assets] . Um eine Suche über die Omniture Suchleiste Beginn, können Benutzer den Tastaturbefehl verwenden `/` `Tab` oder zusammen mit Bildschirmlesehilfen die Suchoption schnell finden. Die Bildschirmlesehilfe erläutert den Namen der Option als [!UICONTROL Suchschaltfläche] , wenn der Fokus auf der ![Suchoption](assets/do-not-localize/search_icon.png)liegt. Benutzer können die Suchbox `Return` durch Drücken der Taste öffnen. Die Bildschirmlesehilfe erläutert nicht nur den in das Suchfeld eingegebenen Suchbegriff, sondern auch die von [!DNL Experience Manager Assets]ihr angebotenen Vorschläge zur automatischen Vervollständigung. Benutzer können eine Kombination aus Pfeiltasten verwenden `Return``Tab` und auf die verschiedenen Optionen zugreifen, um eine Suche auszulösen.
 
