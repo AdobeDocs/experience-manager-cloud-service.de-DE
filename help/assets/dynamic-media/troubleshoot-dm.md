@@ -2,17 +2,21 @@
 title: Fehlerbehebung bei Dynamic Media
 description: Fehlerbehebung bei Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 95%
 
 ---
 
 
 # Fehlerbehebung bei Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-Das folgende Dokument beschreibt die Fehlerbehebung bei Dynamic Media.
+Im folgenden Thema wird die Fehlerbehebung für dynamische Medien beschrieben.
+
+## Neue Konfiguration für dynamische Medien {#new-dm-config}
+
+Siehe [Fehlerbehebung bei einer neuen Konfiguration für dynamische Medien.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## Allgemein (alle Assets) {#general-all-assets}
 
@@ -32,14 +36,6 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
 Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im Paket `com.adobe.cq.dam.ips` über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
-
-### Verschieben, Kopieren, Löschen {#move-copy-delete}
-
-Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Löschvorgang ausführen:
-
-* Prüfen Sie für Bilder und Videos, ob der Wert `<object_node>/jcr:content/metadata/dam:scene7ID` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
-* Prüfen Sie für Bild- und Viewer-Vorgaben, ob der Wert `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
-* Wenn der obige Metadatenwert fehlt, müssen Sie Assets erneut hochladen, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 
 ### Versionskontrolle {#version-control}
 
@@ -75,16 +71,6 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
      <li>Veröffentlichen Sie das Asset.</li>
      <li>Laden Sie das Asset erneut hoch und veröffentlichen Sie es.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>Asset-Wähler im Set-Editor hängt sich beim Laden auf</td>
-   <td><p>Bekanntes Problem, das in 6.4 behoben wird</p> </td>
-   <td><p>Schließen Sie den Wähler und öffnen Sie ihn erneut.</p> </td>
-  </tr>
-  <tr>
-   <td>Schaltfläche <strong>Auswählen</strong> ist nicht aktiv, nachdem ein Asset beim Bearbeiten eines Sets ausgewählt wurde</td>
-   <td><p> </p> <p>Bekanntes Problem, das in 6.4 behoben wird</p> <p> </p> </td>
-   <td><p>Klicken Sie im Asset-Wähler zuerst auf einen anderen Ordner und kehren Sie dann zurück, um das Asset auszuwählen.</p> </td>
   </tr>
   <tr>
    <td>Karussell-Hotspot verschiebt sich nach dem Wechsel zwischen Folien</td>
@@ -160,7 +146,6 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td><p>So prüfen Sie, ob die Videokodierung noch läuft oder ob ein Fehler aufgetreten ist:</p>
     <ul>
      <li>Überprüfen Sie den Videostatus <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Überwachen Sie das Video in der Workflow-Konsole <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Registerkarten „Instanzen“, „Archiv“, „Fehler“.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -220,19 +205,16 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
     </ol> </td>
    <td><p>Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchronisiert oder veröffentlicht wurden, starten Sie den gesamten Kopier-/Synchronisierungsvorgang neu:</p>
     <ol>
-     <li>Navigieren Sie zu CRXDE Lite.
-      <ul>
-       <li>Löschen Sie <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Navigieren Sie zum CRX Package Manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Navigieren Sie zu <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>Wählen Sie die folgenden Aktionen in der Reihenfolge aus:
       <ol>
-       <li>Suchen Sie das Viewer-Paket in der Liste (es beginnt mit <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Klicken Sie auf <strong>Neu installieren</strong>.</li>
+       <li>Synchronisierte Ordner löschen.</li>
+       <li>Wählen Sie den Ordner "Vorgabe"(unten <code>/conf</code>).
+       <li>Trigger-DM-Setup-Async-Auftrag.</li>
       </ol> </li>
-     <li>Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
-      <ul>
-       <li>Nehmen Sie keine Änderungen vor und klicken Sie auf <strong>Speichern</strong>. Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.<br />  </li>
-      </ul> </li>
+     <li>Warten Sie auf Benachrichtigung über erfolgreiche Synchronisierung in Ihrem AEM Posteingang.
+     </li>
     </ol> </td>
   </tr>
  </tbody>
