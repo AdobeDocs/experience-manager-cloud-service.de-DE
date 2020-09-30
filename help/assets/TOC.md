@@ -4,9 +4,9 @@ user-guide-title: Assets als Cloud Service-Handbuch
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
+source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 90%
 + [Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
++ [Zugänglichkeit in [!DNL Assets]](accessibility.md)
 + Verwalten digitaler Assets mit AEM {#manage}
    + [Freigeben von Assets](share-assets.md)
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
