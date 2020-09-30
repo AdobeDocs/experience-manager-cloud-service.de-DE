@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +158,9 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
 Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden. Nur die zugehörigen Metadaten können nicht bearbeitet werden.
 
-## Beschränkungen {#limitations}
+## Limitations and best practices {#tip-and-limitations}
+
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Asset Insight](/help/assets/assets-insights.md) -Funktion auf der [!DNL Sites] Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
@@ -166,7 +168,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
 * Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Dynamic Media]-Assets, Inhaltsfragmente und Experience Fragments werden nicht unterstützt.
-* Metadatenschemata werden nicht abgerufen.
+* [!DNL Experience Manager] ruft die Metadaten-Schema nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn das Schema separat aktualisiert wird, werden alle Eigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren.
@@ -185,6 +187,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Nach 5 Sekunden tritt bei Abrufvorgängen ein Timeout auf. Autoren können beispielsweise bei Netzwerkproblemen Probleme beim Abrufen von Assets haben. Autoren können es erneut versuchen, indem sie das Remote-Asset aus [!UICONTROL Content Finder] in den [!UICONTROL Seiten-Editor] ziehen.
 * An abgerufenen Assets können einfache, zerstörungsfreie Änderungen sowie Änderungen, die von der `Image`-Komponente unterstützt werden, vorgenommen werden. Assets sind schreibgeschützt.
 * Die einzige Methode zum erneuten Abrufen des Assets besteht darin, es auf eine Seite zu ziehen. Es gibt keine API-Unterstützung oder andere Methoden zum erneuten Abrufen eines Assets, um es zu aktualisieren.
+* Wenn Assets aus dem DAM stillgelegt werden, werden sie weiterhin auf [!DNL Sites] Seiten verwendet.
 
 ## Fehlerbehebung bei Problemen       {#troubleshoot}
 
