@@ -2,10 +2,10 @@
 title: Entwicklung AEM Handels für AEM als Cloud Service
 description: Entwicklung AEM Handels für AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
+source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 12%
+source-wordcount: '962'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,34 @@ Für die lokale CIF-Hinzufügen-on-Entwicklung, bei der das AEM als Cloud Servic
    Diese Variable muss auch für die AEM als Cloud Service-Umgebung eingerichtet werden.
 
 6. Beginn des AEM als Cloud Service-SDK
+
+7. Beginn des lokalen GraphQL-Proxyservers
+
+   Um den Magento GraphQL-Endpunkt lokal für das CIF-Add-on und die CIF-Komponenten verfügbar zu machen, verwenden Sie den folgenden Befehl. Der GraphQL-Endpunkt steht dann unter `http://localhost:3002/graphql`.
+Beispiel Mac OSX:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+   ```
+
+   Beispiel Windows:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+   ```
+   Das Argument `--proxyPartial` muss eine leere Zeichenfolge erhalten.
+
+   Sie können den lokalen GraphQL-Proxy testen, indem Sie mit einem GraphQL-Abfrage-Tool einige Abfragen testen `http://localhost:3002/graphql` und testen.
+
+8. Melden Sie sich bei AEM SDK an und konfigurieren Sie CIF für die Verwendung des lokalen GraphQL-Proxyservers
+
+   Navigieren Sie zur CIF-Cloud Service-Konfiguration (&quot;Extras&quot;> &quot;Cloud Services&quot;> &quot;CIF-Konfiguration&quot;). Öffnen Sie die Ansicht Eigenschaften der von Ihrem Projekt verwendeten Konfiguration.
+
+   Verwenden Sie für die `GraphQL Proxy Path` Eigenschaft den lokalen Proxyserver-Endpunkt `http://localhost:3002/graphql`. Speichern Sie die Konfiguration.
+
+>[!NOTE]
+>
+>Schieben Sie die Konfiguration von Schritt 8 nicht in den Projektbericht. Diese Konfiguration ist nur für eine lokale Entwicklungseinrichtung erforderlich. AEM als Cloud Service-Umgebung werden bereits während des Einsteigens mit dem GraphQL Proxy eingerichtet.
 
 Überprüfen Sie das Setup über OSGI-Konsole:`http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die CIF-Add-on-bezogenen Bundles, Inhaltspakete und OSGI-Konfigurationen enthalten, wie in der Funktionsmodelldatei definiert.
 
