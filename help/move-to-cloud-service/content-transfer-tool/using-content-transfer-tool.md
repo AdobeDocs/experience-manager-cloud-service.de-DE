@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
+source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 84%
+source-wordcount: '1688'
+ht-degree: 79%
 
 ---
 
@@ -20,15 +20,15 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Das Content Transfer Tool kann mit den folgenden Arten des Datenspeichers verwendet werden: Dateidatenspeicher, S3-Datenspeicher, freigegebener S3-Datenspeicher und Datenspeicher für die Blase.
 
-* Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung auf die Version vom 10. Juni 2020 oder höher aktualisiert ist. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
+* Wenn Sie eine *Sandbox-Umgebung* verwenden, stellen Sie sicher, dass Ihre Umgebung aktuell ist und auf die neueste Version aktualisiert wird. Wenn Sie eine *Produktionsumgebung* verwenden, wird diese automatisch aktualisiert.
 
-* Um das Content Transfer-Tool verwenden zu können, müssen Sie ein Administrator-Benutzer in Ihrer Quellinstanz sein und zur AEM-Administratorengruppe in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer-Tools nicht abrufen.
+* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und zur lokalen Gruppe der AEM in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer-Tools nicht abrufen.
 
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar.
 
-* Die empfohlene Obergrenze für die Repository-Größe, die das Content Transfer-Tool gleichzeitig unterstützen kann, beträgt 20 GB.
+* Derzeit beträgt die Standardgröße von MongoDB für eine AEM als Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, dass Sie für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einreichen, um die MongoDB-Größe zu erhöhen.
 
 ## Verfügbarkeit {#availability}
 
