@@ -2,7 +2,7 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 87%
@@ -232,9 +232,9 @@ Der [Day CQ Mail Service OSGI-Dienst](https://docs.adobe.com/content/help/en/exp
 
 AEM CS erfordert, dass Post über Port 465 gesendet wird. Wenn ein Mail-Server Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Beachten Sie, dass Adobe keine SMTP-Speicherung über eine eindeutige dedizierte IP-Adresse unterstützt.
+>Beachten Sie, dass Adobe keine SMTP-Speicherung über eine eindeutige dedizierte IP-Adresse unterstützt.
 
 ### Konfiguration {#email-configuration}
 
