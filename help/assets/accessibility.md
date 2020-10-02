@@ -1,11 +1,11 @@
 ---
 title: Zugänglichkeit in [!DNL Experience Manager Assets]
-description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
+description: Erkennen Sie, wie Barrierefreiheitsfunktionen [!DNL Adobe Experience Manager] in einem Cloud Service Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
+source-git-commit: bd27bb5da82c9997f4c562a3d1efad77df66728f
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -171,7 +171,7 @@ Für Metadaten-Vorgänge, die in der Regel von Rollen wie Marketingexperten und 
 * Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte &quot;Einfach&quot;der Schaltflächen &quot;Asset-Eigenschaften&quot;an, um die ausgewählten Tags zu löschen.
 * Das Popup-Dialogfeld für die Datumsauswahl kann über eine Tastatur verwendet werden. Mit dem Datumsauswahl können Sie Zeit- und Nebenzeiten einstellen.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert im Metadaten-Schema-Editor im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
-* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld Hinzufügen Benutzer oder Gruppe unter &quot;Geschlossene Benutzergruppe&quot;auf der Registerkarte &quot;Berechtigungen&quot;der Ordnereigenschaften verschieben.
+* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld &quot;Hinzufügen Benutzer&quot;oder &quot;Gruppe&quot;unter &quot;Geschlossene Benutzergruppe&quot;auf der Registerkarte &quot;Berechtigungen&quot;der Ordnereigenschaften verschieben.
 
 ## Suchen nach digitalen Assets {#search-assets}
 
