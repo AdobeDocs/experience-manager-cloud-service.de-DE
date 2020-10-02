@@ -1,11 +1,11 @@
 ---
-title: Zugänglichkeit in [!DNL Experience Manager Assets].
+title: Zugänglichkeit in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1841'
 ht-degree: 3%
 
 ---
@@ -43,11 +43,12 @@ Informationen zum Zugriff auf den Bericht mit detaillierten Informationen zu den
 
 ## Hilfstechnologien {#at-support}
 
-Benutzer mit Behinderungen greifen häufig auf Hardware und Software zurück, um auf Webinhalte zuzugreifen. Diese Werkzeuge werden als Hilfstechnologien bezeichnet. [!DNL Adobe Experience Manager Assets] mit den folgenden Hilfstechnologien arbeiten, damit Benutzer die Kernfunktionen verwenden können:
+Benutzer mit Behinderungen greifen häufig auf Hardware und Software zurück, um auf Webinhalte zuzugreifen. Diese Werkzeuge werden als Hilfstechnologien bezeichnet. [!DNL Adobe Experience Manager Assets] mit den folgenden Hilfstechnologien arbeiten, um Benutzern Unterstützung bei der Verwendung der Kernfunktionen der Software zu bieten:
 
 * Bildschirmlesehilfen.
 * Spracherkennungssoftware.
 * Verwendung der Tastatur - Navigation und Tastaturbefehle.
+* Hilfreiche Hardware, einschließlich Switch-Steuerungen, erfrischbare Braille-Displays und andere Computer-Eingabegeräte.
 * Werkzeuge zum Vergrößern der Benutzeroberfläche
 
 ## [!DNL Experience Manager Assets] Nutzungsszenarien, auf die zugegriffen werden kann {#accessible-assets-use-cases}
@@ -170,7 +171,7 @@ Für Metadaten-Vorgänge, die in der Regel von Rollen wie Marketingexperten und 
 * Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte &quot;Einfach&quot;der Schaltflächen &quot;Asset-Eigenschaften&quot;an, um die ausgewählten Tags zu löschen.
 * Das Popup-Dialogfeld für die Datumsauswahl kann über eine Tastatur verwendet werden. Mit dem Datumsauswahl können Sie Zeit- und Nebenzeiten einstellen.
 * Die Funktion zum Ziehen mit der Tastatur funktioniert im Metadaten-Schema-Editor im Durchsuchen-Modus der Bildschirmlesehilfe korrekt.
-* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld &quot;Hinzufügen Benutzer&quot;oder &quot;Gruppe&quot;unter &quot;Geschlossene Benutzergruppe&quot;auf der Registerkarte &quot;Berechtigungen&quot;der Ordnereigenschaften verschieben.
+* Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld Hinzufügen Benutzer oder Gruppe unter &quot;Geschlossene Benutzergruppe&quot;auf der Registerkarte &quot;Berechtigungen&quot;der Ordnereigenschaften verschieben.
 
 ## Suchen nach digitalen Assets {#search-assets}
 
