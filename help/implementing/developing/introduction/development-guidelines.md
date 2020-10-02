@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 90c3fd9a4293821568700148eb8d186b929988a1
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '2237'
+ht-degree: 87%
 
 ---
 
@@ -184,6 +184,47 @@ Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Tr
 ### Konfiguration {#configuration}
 
 Um eine dedizierte IP-Adresse zu aktivieren, senden Sie eine Anfrage an den Support, der die IP-Adressinformationen bereitstellt. In der Anfrage sollten die einzelnen Umgebungen angegeben werden. Außerdem sollten zusätzliche Anfragen gestellt werden, wenn neue Umgebungen die Funktion nach der ursprünglichen Anfrage benötigen. Sandbox-Programmumgebungen werden nicht unterstützt.
+
+### E-Mail senden {#sending-email}
+
+AEM als Cloud Service erfordert die Verschlüsselung von ausgehenden Postsendungen. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und versenden.
+
+**Zugriff anfordern**
+
+Ausgehende E-Mails sind standardmäßig deaktiviert. Um es zu aktivieren, senden Sie ein Support-Ticket mit:
+
+1. Der vollständig qualifizierte Domänenname für den E-Mail-Server (z. B. `smtp.sendgrid.net`)
+1. Der zu verwendende Anschluss. Es sollte Port 465 sein, wenn vom Mail-Server unterstützt, andernfalls Port 587 Beachten Sie, dass Port 587 nur verwendet werden kann, wenn der Mail-Server TLS an diesem Anschluss erfordert und erzwingt
+1. Programm-ID und Umgebung-ID für die Umgebung, von denen sie per E-Mail senden möchten
+1. Ob SMTP-Zugriff bei Autor, Veröffentlichung oder beidem erforderlich ist.
+
+**Senden von E-Mails**
+
+Der [Day CQ Mail Service OSGI-Dienst](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Supportanfrage angegebenen E-Mail-Server gesendet werden und nicht direkt an Empfänger.
+
+AEM CS erfordert, dass Post über Port 465 gesendet wird. Wenn ein Mail-Server Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
+
+> [!NOTE]
+>
+> Beachten Sie, dass Adobe keine SMTP-Speicherung über eine eindeutige dedizierte IP-Adresse unterstützt.
+
+**Konfiguration**
+
+E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGi-Dienst](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)gesendet werden.
+
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) . Für AEM CS müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` Dienst vorgenommen werden:
+
+Wenn Port 465 angefordert wurde:
+
+* setzen `smtp.port` auf `465`
+* setzen `smtp.ssl` auf `true`
+* setzen `smtp.starttls` auf `false`
+
+Wenn Port 587 angefordert wurde (nur zulässig, wenn der E-Mail-Server Port 465 nicht unterstützt):
+
+* setzen `smtp.port` auf `587`
+* setzen `smtp.ssl` auf `false`
+* setzen `smtp.starttls` auf `true`
 
 ### Verwendung der Funktion {#feature-usage}
 
