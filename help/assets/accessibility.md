@@ -3,9 +3,9 @@ title: Zugänglichkeit in [!DNL Experience Manager Assets]
 description: Erkennen Sie, wie Barrierefreiheitsfunktionen [!DNL Adobe Experience Manager] in einem Cloud Service Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 3%
 
 ---
@@ -175,7 +175,7 @@ Für Metadaten-Vorgänge, die in der Regel von Rollen wie Marketingexperten und 
 
 ## Suchen nach digitalen Assets {#search-assets}
 
-Eine schnelle und nahtlose Suche nach Assets beschleunigt die Inhaltsgeschwindigkeit. Die Einsatzfälle mit Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität [!DNL Assets] . Um eine Suche über die Omniture Suchleiste Beginn, können Benutzer den Tastaturbefehl verwenden `/` `Tab` oder zusammen mit Bildschirmlesehilfen die Suchoption schnell finden. Die Bildschirmlesehilfe erläutert den Namen der Option als [!UICONTROL Suchschaltfläche] , wenn der Fokus auf der ![Suchoption](assets/do-not-localize/search_icon.png)liegt. Benutzer können die Suchbox `Return` durch Drücken der Taste öffnen. Die Bildschirmlesehilfe erläutert nicht nur den in das Suchfeld eingegebenen Suchbegriff, sondern auch die von [!DNL Experience Manager Assets]ihr angebotenen Vorschläge zur automatischen Vervollständigung. Benutzer können eine Kombination aus Pfeiltasten verwenden `Return``Tab` und auf die verschiedenen Optionen zugreifen, um eine Suche auszulösen.
+Eine schnelle und nahtlose Suche nach Assets beschleunigt die Inhaltsgeschwindigkeit. Die Einsatzfälle mit Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität [!DNL Assets] . Um eine Suche über die Omniture Suchleiste Beginn, können Benutzer den Tastaturbefehl verwenden `/` `Tab` oder zusammen mit Bildschirmlesehilfen die Suchoption schnell finden. Die Bildschirmlesehilfe erläutert den Namen der Option als [!UICONTROL Suchschaltfläche] , wenn der Fokus auf der ![Suchoption](assets/do-not-localize/search_icon.png)liegt. Benutzer können die Suchbox `Return` durch Drücken der Taste öffnen. Die Bildschirmlesehilfe erwähnt nicht nur den in das Suchfeld eingegebenen Suchbegriff, sondern beschreibt auch die von [!DNL Experience Manager Assets]Ihnen angebotenen Vorschläge. Benutzer können eine Kombination aus Pfeiltasten verwenden `Return``Tab` und auf die verschiedenen Optionen zugreifen, um eine Suche auszulösen.
 
 Die Suchfunktion steht mit den folgenden Funktionen zur Verfügung:
 
@@ -187,7 +187,7 @@ Die Suchfunktion steht mit den folgenden Funktionen zur Verfügung:
 
 Beim Filtern der Suchergebnisse:
 
-* Auf der Suchergebnisseite finden Sie informative Titel, die ein besseres Verständnis der Bildschirmlesehilfen-Benutzer ermöglichen.
+* Die Suchergebnisseite hat einen informativen Titel, der ein besseres Verständnis der Benutzer von Bildschirmlesehilfen vermittelt.
 * Eine Bildschirmlesehilfe kündigt die Optionen im Suchfilter als erweiterbare Akkordeons an.
 * Prädikate mit Schaltflächen mit gemischtem Status werden von Bildschirmlesehilfen angekündigt.
 
@@ -203,8 +203,8 @@ Beim Freigeben von Assets verbessern die folgenden Funktionen die Zugänglichkei
 * Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
    * Die Tabelleninformationen sollten nicht kommentiert werden, sobald das Dialogfeld geladen wurde.
-   * Kann zu allen aufgelisteten automatischen Empfehlungen navigieren.
-   * Geben Sie die angezeigten automatischen Vorschläge für Hinzufügen Felder &quot;E-Mail-Adresse&quot;und &quot;Suche&quot;an.
+   * Kann zu allen aufgelisteten Vorschlägen navigieren.
+   * Geben Sie die angezeigten Vorschläge für Hinzufügen Felder &quot;E-Mail-Adresse&quot;und &quot;Suche&quot;an.
 
 ## Zugänglichkeit in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
