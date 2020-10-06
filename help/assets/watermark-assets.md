@@ -3,10 +3,10 @@ title: Wasserzeichen der Vermögenswerte
 description: Hinzufügen von Wasserzeichen zu digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 2%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] können Sie Bildern ein digitales Wasserzeichen hinzufügen. [!DNL Assets] unterstützt das Anwenden eines Bildes als Wasserzeichen auf andere Bilddateien. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht der Assets zu überprüfen. Außerdem kann ein Wasserzeichen verwendet werden, um den Status eines Dokuments wie vertraulich, Entwurf, Gültigkeit usw. anzugeben.
 
-Gehen Sie wie folgt vor, um Experience Manager zu Wasserzeichenelementen zu konfigurieren:
+Gehen Sie wie folgt vor, [!DNL Experience Manager] um Wasserzeichenelemente zu konfigurieren:
 
 1. Eine PNG-Datei wird als Wasserzeichen angewendet. Laden Sie diese Datei in Ihr DAM-Repository hoch.
 
-1. Greifen Sie auf das mit Ihrer Umgebung verknüpfte Cloud Manager Git-Repository zu. Komprimieren Sie eine Datei mit dem Namen `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in ihrem Cloud Manager Git-Repository mit folgendem Inhalt. Weitere Informationen finden Sie unter [OSGi-Konfiguration in Experience Manager als Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Greifen Sie auf das [!DNL Cloud Manager] Git-Repository zu, das Ihrer Umgebung zugeordnet ist. Komprimieren Sie eine Datei mit dem Namen `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in ihrem [!DNL Cloud Manager] Git-Repository mit folgendem Inhalt. Weitere Informationen finden Sie unter [OSGi-Konfiguration [!DNL Experience Manager] als Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
