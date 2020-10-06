@@ -4,10 +4,10 @@ user-guide-title: Assets als Cloud Service-Handbuch
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
+source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 79%
+source-wordcount: '405'
+ht-degree: 80%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 79%
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
    + [Wasserzeichenanlagen](watermark-assets.md)
-+ Configure, administer and extend [!DNLAssets] {#admin}
++ Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
    + [Referenz zu Dokumenten und APIs für Entwickler](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild- und Video-Profilen](/help/assets/dynamic-media/about-image-video-profiles.md)
