@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 * Verbesserungen in [!DNL Dynamic Media]
 
-   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf synchronisierte [!DNL Dynamic Media] Bilder und dynamische Darstellungen zugreifen, um Werbematerial zu erstellen, ohne diese Assets für den weltweiten Versand veröffentlichen zu müssen. [!DNL Dynamic Media] [!DNL Dynamic Media] So können Sie auch auf diese Bilder zugreifen, ohne sie veröffentlichen zu müssen. [!DNL Experience Manager] und die [!DNL Dynamic Media] Veröffentlichung ist entkoppelt und kann separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
+   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf synchronisierte [!DNL Dynamic Media] Bilder und dynamische Darstellungen zugreifen, um Werbematerial zu erstellen, ohne dass diese Assets für den weltweiten Versand veröffentlicht werden müssen. [!DNL Dynamic Media] [!DNL Dynamic Media] Dies ist möglich. [!DNL Experience Manager] und die [!DNL Dynamic Media] Veröffentlichung ist entkoppelt und kann separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
    * Administratoren können jetzt das bei der Bereitstellung erhaltene [!DNL Dynamic Media] Cloud Service-Kennwort zurücksetzen. Das Zurücksetzen kann in der [!DNL Experience Manager] Benutzeroberfläche erfolgen, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss.
 
 * Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
@@ -116,6 +116,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates für die Code Refactoring Tools.
 
 ### Neue Funktionen {#what-is-new-refactoring}
+
+[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) ist ein Dienstprogramm, das entwickelt wurde, um bestehende Projektpakete umzustrukturieren, indem Inhalt und Code in separate Pakete aufgeteilt werden, um mit der Projektstruktur kompatibel zu sein, die für Adobe Experience Manager als Cloud Service definiert wurde.
 
 * Das AIO-CLI-Plugin unterstützt Repository Modernizer und ermöglicht es Benutzern, das Tool mit dem Plugin auszuführen.
 
