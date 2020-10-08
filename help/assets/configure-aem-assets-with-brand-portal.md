@@ -3,7 +3,7 @@ title: AEM Assets als Cloud Service mit dem Markenportal konfigurieren
 description: Konfigurieren von AEM Assets mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 38%
@@ -30,7 +30,6 @@ AEM Assets als Cloud Service wird über die Adobe Developer Console, die ein Ado
 >[!NOTE]
 >
 >Ein AEM Assets als Cloud Service-Instanz darf nur mit einem Markenportal-Mandanten konfiguriert werden.
-
 
 ## Voraussetzungen {#prerequisites}
 
@@ -64,16 +63,10 @@ Die IMS-Konfiguration umfasst zwei Schritte:
 Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Profil in der Adobe Developer Console.
 
 1. Melden Sie sich bei AEM Assets an.
-
 1. Navigieren Sie im Bedienfeld **** Tools zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
-
-
 1. Klicken Sie auf der Seite mit den Adobe IMS-Konfigurationen auf **[!UICONTROL Erstellen]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. Standardmäßig wird die Registerkarte **Zertifikat** geöffnet.
-
 1. Wählen Sie **[!UICONTROL Adobe Brand Portal]** in der Dropdown-Liste **[!UICONTROL Cloud-Lösung]** .
-
 1. Aktivieren Sie das Kontrollkästchen Neues Zertifikat **** erstellen und geben Sie einen **Alias** für den öffentlichen Schlüssel an. Der Alias dient als Name des öffentlichen Schlüssels.
-
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Zertifikat erstellen](assets/ims-config2.png)
@@ -218,8 +211,6 @@ Führen Sie die folgenden Schritte aus, um das IMS-Konto zu konfigurieren.
 >
 >Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
 
-
-
 ### Konfigurieren von Cloud Service {#configure-the-cloud-service}
 
 Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud Service zu konfigurieren:
@@ -281,19 +272,15 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
    >
    >Vermeiden Sie das Deaktivieren des Verteilungsagenten, da dies dazu führen kann, dass die Verteilung der Assets (in der Warteschlange) fehlschlägt.
 
-
 Sie können jetzt:
 
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](publish-to-brand-portal.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## Verteilungsprotokolle {#distribution-logs}
 
@@ -302,7 +289,6 @@ Sie können die Verteilungsagenten-Protokolle für den Asset-Veröffentlichungs-
 Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlicht, um die Konfiguration zu validieren.
 
 1. Führen Sie die Schritte (1–4) aus, wie im Abschnitt [Konfiguration testen](#test-configuration) gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
-
 1. Klicken Sie auf **[!UICONTROL Protokolle]** , um die Verarbeitungs- und Fehlerprotokolle Ansicht.
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ Der Verteilungsagenten hat die folgenden Protokolle generiert:
 Beim Veröffentlichen des Assets werden die folgenden Anfrage- und Antwortprotokolle generiert:
 
 **Anfrage des Verteilungsagenten**:
+
 * DSTRQ2 (Anfrage 2): Die Anfrage zur Veröffentlichung des Assets wird ausgelöst.
 * DSTRQ3 (Anforderung 3): Das System löst eine weitere Anforderung zum Veröffentlichen des AEM Assets-Ordners aus (in dem sich das Asset befindet) und repliziert den Ordner im Markenportal.
 
 **Antwort des Verteilungsagenten**:
+
 * queue-bpdistributionagent0 (DSTRQ2): Das Asset wird in Brand Portal veröffentlicht.
 * queue-bpdistributionAgent0 (DSTRQ3): Das System repliziert den AEM Assets-Ordner (mit dem Asset) im Markenportal.
 
@@ -327,8 +315,6 @@ Im obigen Beispiel wird eine zusätzliche Anforderung und Antwort ausgelöst. Da
 >[!NOTE]
 >
 >Zusätzliche Anforderungen werden generiert, wenn der übergeordnete Ordner nicht im Markenportal vorhanden ist oder in AEM Assets geändert wurde.
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
