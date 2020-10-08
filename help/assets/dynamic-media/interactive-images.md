@@ -2,7 +2,7 @@
 title: Interaktive Bilder
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4238'
 ht-degree: 100%
@@ -222,7 +222,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
 
 >[!NOTE]
 >
->Beachten Sie, dass im interaktiven Bild die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten.  Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+>Beachten Sie, dass im interaktiven Bild die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
 
@@ -233,7 +233,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 >[!NOTE]
 >
 >Wenn Sie Hotspots einem interaktiven Bild oder einem Bild für ein Karussellbanner hinzufügen, werden die Hotspot-Informationen immer am selben Metadatenspeicherort gespeichert, der relativ zum Speicherort des Bildes ist, unabhängig davon, ob es sich um ein interaktives Bild oder um ein Karussellbanner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
-
+>
 >  Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussellbanner mit demselben Bild erstellen möchten. Stattdessen sollten Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
 >
 >Weitere Informationen finden Sie unter [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md).
@@ -290,7 +290,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
 
          >[!NOTE]
          >
-         >Beachten Sie, dass im interaktiven Bild die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten.  Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+         >Beachten Sie, dass im interaktiven Bild die Tools zur Freigabe in Social Media nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 
 
