@@ -1,9 +1,9 @@
 ---
 title: Informationen zu Dynamic Media – Bild- und Videoprofile
 description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
-translation-type: ht
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -48,7 +48,8 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 >[!NOTE]
 >
 >Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu AEM durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
-Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
+>
+>Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
