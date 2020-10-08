@@ -1,11 +1,11 @@
 ---
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
-translation-type: ht
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
-workflow-type: ht
-source-wordcount: '2212'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+workflow-type: tm+mt
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -588,7 +588,7 @@ Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist,
 
 In der Supportanfrage sollten Kunden Folgendes angeben:
 
-* Splunk-Host
+* Splunk-HEC-Endpunktadresse
 * Splunk-Index
 * Splunk-Port
 * Splunk-HEC-Token. Weitere Informationen finden Sie auf [dieser Seite](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
@@ -603,21 +603,21 @@ Unten finden Sie ein Beispiel für eine Support-Anfrage:
 
 Programm 123, Produktionsumgebung
 
-* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123prod (der Kunde kann auswählen, welche Namenskonvention er wünscht)
 * Splunk-Port: 443
 * Splunk-HEC-Token: ABC 123
 
 Programm 123, Staging-Umgebung
 
-* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123stage
 * Splunk-Port: 443
 * Splunk-HEC-Token: ABC 123
 
 Programm 123, Entwicklungsumgebung
 
-* Splunk-Host: `splunk-hec-ext.acme.com`
+* Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123dev
 * Splunk-Port: 443
 * Splunk-HEC-Token: ABC 123
