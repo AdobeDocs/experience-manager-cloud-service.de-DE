@@ -2,7 +2,7 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllextraktion durchführen möchten. Klicken Sie auf **Extrahieren**, um die Auffüllextraktion zu starten. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt.
 
    >[!IMPORTANT]
+   >
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Aufnahmevorgang beim Inhaltstransfer {#ingestion-process}
 
@@ -151,17 +153,16 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool auf
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Sobald die Erfassung abgeschlossen ist, wird der Status im Feld **PUBLISH INGESTION** auf **FINISHED** aktualisiert.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Auffüllaufnahme {#top-up-ingestion-process}
 
 Das Content Transfer-Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
+>
 >Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
 
 Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllaufnahme übertragen. Führen Sie dazu folgende Schritte durch:
@@ -169,8 +170,10 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
 
    >[!IMPORTANT]
+   >
    >Sie sollten die Option &quot;Vorhandenen Inhalt vor der Erfassung **löschen&quot;in der Cloud-Instanz deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird** .
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
 
