@@ -2,7 +2,7 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -366,7 +366,6 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 >[!NOTE]
 >
 >Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
