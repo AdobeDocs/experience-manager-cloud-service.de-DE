@@ -2,7 +2,7 @@
 title: Repository-Moderator
 description: Repository-Moderator
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
@@ -40,4 +40,5 @@ Der Repository Moderator erstellt eine kompatible AEM Cloud Service-Projektstruk
    Siehe **[Git-Ressource: Repository-Moderator](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** , um zu erfahren, wie dieses Tool verwendet wird.
 
    >[!NOTE]
+   >
    >Der Repository Modernizer wird mithilfe von NodeJS entwickelt. Es wird empfohlen, NodeJS 10.0+ zu installieren.
