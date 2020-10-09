@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '4521'
+source-wordcount: '4523'
 ht-degree: 97%
 
 ---
@@ -109,7 +109,7 @@ Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um 
 1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** einen Suchbegriff ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Sie können auf dieselbe Weise mehrere Suchbegriffe eingeben.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Das Asset, das Sie für diesen Suchbegriff erhöht haben, befindet sich unter den obersten Suchergebnissen.
 
-So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in AEM](https://helpx.adobe.com/de/experience-manager/kt/help/assets/search-feature-video-use.html).
+So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
