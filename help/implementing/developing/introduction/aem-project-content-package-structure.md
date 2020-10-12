@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -63,7 +63,7 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
 + The `ui.apps` package contains all the code to be deployed and only deploys to `/apps`. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
    + [Komponentendefinitionen und HTML](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) -Skripten
       + `/apps/my-app/components`
-   + JavaScript und CSS (über Client-Bibliotheken)
+   + JavaScript and CSS (via [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [Überlagerungen](/help/implementing/developing/introduction/overlays.md) von `/libs`
       + `/apps/cq`, `/apps/dam/` usw.
