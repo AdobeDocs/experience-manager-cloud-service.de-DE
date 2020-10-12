@@ -2,9 +2,9 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden bei der Erstellung einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 63%
 
 ---
@@ -115,8 +115,8 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
 >
 >Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den `cq.shared`-Namespace einbinden.
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>Weitere Informationen finden Sie unter [Verwendung clientseitiger Bibliotheken](/help/implementing/developing/introduction/clientlibs.md).
 
 >[!CAUTION]
 >
@@ -464,7 +464,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 >[!NOTE]
 >
->Die Pfade der Richtliniendefinitionen sind vom Pfad der Komponente abhängig. `cq:policy` enthält einen relativen Verweis auf die Konfiguration selbst.
+>Die Pfade der Richtliniendefinitionen sind vom Pfad der Komponente abhängig. `cq:policy` holds a relative reference to the configuration itself.
 
 ### Seitenrichtlinien {#page-policies}
 
