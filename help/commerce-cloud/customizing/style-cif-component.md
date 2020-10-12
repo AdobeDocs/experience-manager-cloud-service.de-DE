@@ -10,10 +10,10 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 5%
+source-wordcount: '2592'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ In diesem Lernprogramm wird ein neuer Stil für die Komponente Product Teaser im
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Abschluss dieses Lernprogramms ist eine lokale Entwicklungs-Umgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert ist und mit einer Magento-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklung mit AEM als Cloud Service-SDK](../develop.md).
+Zum Abschluss dieses Lernprogramms ist eine lokale Umgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert ist und mit einer Magento-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklung mit AEM als Cloud Service-SDK](../develop.md).
 
 ## Clone the Venia project {#clone-venia-project}
 
@@ -67,7 +67,7 @@ Wir klonen das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
 
 ## Client-Bibliotheken und ui.frontend-Modul {#introduction-to-client-libraries}
 
-Die CSS und JavaScript, die für die Wiedergabe des Themas/der Stile des Stores verantwortlich sind, werden in AEM von einer [Client-Bibliothek](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) oder clientlibs verwaltet. Client-Bibliotheken bieten einen Mechanismus zum Organisieren von CSS und JavaScript im Code eines Projekts und zur anschließenden Bereitstellung auf der Seite.
+Die CSS und JavaScript, die für die Wiedergabe des Themas/der Stile des Stores verantwortlich sind, werden in AEM von einer [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) oder clientlibs verwaltet. Client-Bibliotheken bieten einen Mechanismus zum Organisieren von CSS und JavaScript im Code eines Projekts und zur anschließenden Bereitstellung auf der Seite.
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Clientbibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Die Kenntnis, wie Client-Bibliotheken strukturiert und auf der Seite eingeschlossen sind, ist von entscheidender Bedeutung.
 
@@ -77,7 +77,7 @@ Das `ui.frontend` Modul ist auch ein Maven-Modul und mit dem größeren Projekt 
 
 ![ui.frontend zur ui.apps-Architektur](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Kompilierte CSS und JavaScript werden während eines Maven-Builds aus dem`ui.frontend`Modul als Client-Bibliothek in das`ui.apps`Modul kopiert*
+*Kompilierte CSS und JavaScript werden während eines Maven-Builds aus dem `ui.frontend` Modul als Client-Bibliothek in das `ui.apps` Modul kopiert*
 
 ## Teaser-Stil aktualisieren {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Nachdem die Codeaktualisierungen bereitgestellt wurden, fügen Sie der Startseit
    </html>
    ```
 
-   Clientbibliotheken, die auf der Seite bereitgestellt werden, erhalten ein Präfix `/etc.clientlibs` und werden über einen [Proxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) bereitgestellt, um zu vermeiden, dass vertrauliche Daten in `/apps` oder `/libs`angezeigt werden.
+   Client-Bibliotheken, die auf der Seite bereitgestellt werden, werden mit einem Präfix versehen `/etc.clientlibs` und über einen [Proxy](/help/implementing/developing/introduction/clientlibs.md) bereitgestellt, um zu vermeiden, dass vertrauliche Daten in `/apps` oder `/libs`angezeigt werden.
 
    Hinweis `venia/clientlibs/clientlib-site.min.css` und `venia/clientlibs/clientlib-site.min.js`. Dies sind die kompilierten CSS- und Javascript-Dateien, die vom `ui.frontend` Modul abgeleitet wurden.
 
@@ -482,6 +482,6 @@ Verwenden Sie das [AEM-Stilsystem](https://docs.adobe.com/content/help/de-DE/exp
 * [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 * [Einrichten einer Umgebung zur lokalen AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Client-seitige Bibliotheken](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [Client-seitige Bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
 * [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Entwickeln mit dem Stilsystem](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
