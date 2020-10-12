@@ -2,7 +2,7 @@
 title: SPA- und serverseitiges Rendering
 description: Durch die Verwendung des serverseitigen Renderings (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigt und anschließend das Rendering an den Client weitergeleitet werden.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
     </ul> </td>
    <td>
     <ul>
-     <li>Für die Anwendung erforderliche Clientlib-Ressourcen wie CSS und JavaScript müssen vom AEM-Entwickler über die <code>allowProxy</code> Eigenschaft verfügbar gemacht werden<br /> </li>
+     <li>Für die Anwendung erforderliche Clientlib-Ressourcen wie CSS und JavaScript müssen vom AEM-Entwickler über die <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> Eigenschaft verfügbar gemacht werden<br /> </li>
      <li>Ressourcen müssen zwischen AEM und Adobe I/O Runtime synchronisiert werden<br /> </li>
      <li>Um das Authoring der SPA zu aktivieren, ist unter Umständen ein Proxyserver für Adobe I/O Runtime erforderlich</li>
     </ul> </td>
