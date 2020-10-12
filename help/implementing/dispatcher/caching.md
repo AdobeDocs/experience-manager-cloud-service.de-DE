@@ -1,11 +1,11 @@
 ---
 title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
-translation-type: ht
-source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -113,7 +113,7 @@ Das von Adobe verwaltete CDN berücksichtigt TTLs und muss daher nicht geleert w
 
 ## Client-seitige Bibliotheken und Versionskonsistenz {#content-consistency}
 
-Seiten bestehen aus HTML, JavaScript, CSS und Bildern. Wir empfehlen Kunden, das Client-seitige Bibliotheken-Framework zu nutzen, um JavaScript- und CSS-Ressourcen in HTML-Seiten zu importieren und dabei Abhängigkeiten zwischen JS-Bibliotheken zu berücksichtigen.
+Seiten bestehen aus HTML, JavaScript, CSS und Bildern. Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
 Das clientlibs-Framework bietet eine automatische Versionsverwaltung, d. h. Entwickler können Änderungen an JS-Bibliotheken in der Quell-Code-Verwaltung einchecken und die neueste Version wird zur Verfügung gestellt, wenn ein Kunde seine Version veröffentlicht. Andernfalls müssten Entwickler HTML mit Verweisen auf die neue Version der Bibliothek manuell ändern. Dies ist sehr aufwendig, wenn viele HTML-Vorlagen dieselbe Bibliothek nutzen.
 
