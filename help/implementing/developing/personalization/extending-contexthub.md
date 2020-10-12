@@ -2,7 +2,7 @@
 title: Erweitern von ContextHub
 description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 68%
@@ -18,9 +18,7 @@ Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitges
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Store-Kandidaten muss in einem Client-Bibliotheksordner enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
+Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Store-Kandidaten muss in einem [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md) enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden 
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-Die JavaScript-Datei, die den Code enthält, mit dem der Renderer erstellt und registriert wird, muss in einem Client-Bibliotheksordner enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
+The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). Die Ordnerkategorie muss dem folgenden Muster entsprechen:
 
 ```javascript
 contexthub.module.[moduleType]
