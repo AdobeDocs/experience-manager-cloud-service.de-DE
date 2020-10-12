@@ -97,10 +97,11 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
    ![Feldeigenschaften](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
-   * **Rich-Text**
-   * **Markdown**
-   * **Nur Text**
+   >
+   >Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
+   >* **Rich-Text**
+   >* **Markdown**
+   >* **Nur Text**
 
    Wenn Sie keinen Typ angeben, wird der Standardwert **Rich-Text** in diesem Feld verwendet.
    Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
@@ -118,7 +119,8 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 ## Löschen eines Inhaltsfragmentmodells {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-Das Löschen eines Inhaltsfragmentmodells wirkt sich unter Umständen auf abhängige Fragmente aus.
+>
+>Das Löschen eines Inhaltsfragmentmodells wirkt sich unter Umständen auf abhängige Fragmente aus.
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
@@ -128,7 +130,8 @@ So löschen Sie ein Inhaltsfragmentmodell:
 1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Anwendungssymbolleiste aus.
 
    >[!NOTE]
-   Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
+   >
+   >Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
 ## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
 
@@ -142,4 +145,5 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 1. Wählen Sie Ihr Modell und anschließen die Option **Löschen** aus der Anwendungssymbolleiste aus.
 
    >[!NOTE]
-   Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   >
+   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
