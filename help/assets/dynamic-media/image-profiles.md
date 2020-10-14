@@ -2,10 +2,10 @@
 title: Dynamic Media-Bildprofile
 description: Erstellen Sie Dynamic Media-Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 100%
+source-wordcount: '2737'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 >[!IMPORTANT]
 >
->Bildprofile können nicht auf PDF-Dateien angewendet werden.
+>Image-Profil können nicht auf PDF-, GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Optionen für das Zuschneiden {#crop-options}
 
