@@ -1,13 +1,13 @@
 ---
 sub-product: Implementieren für AEM as a Cloud Service
 user-guide-title: Implementieren für AEM as a Cloud Service
-breadcrumb-title: Implementierungshandbuch
+breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -62,20 +62,20 @@ ht-degree: 78%
    + [Kopflos und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
    + Einzelseiten-Webanwendungen {#spa}
-      + [Einführung und exemplarische Vorgehensweisen zu SPA](developing/spa/introduction.md)
-      + [SPA-WKND-Tutorial](developing/spa/wknd-tutorial.md)
+      + [SPA Einführung und exemplarische Vorgehensweise](developing/spa/introduction.md)
+      + [SPA WKND-Tutorial](developing/spa/wknd-tutorial.md)
       + [Erste Schritte mit React](developing/spa/getting-started-react.md)
       + [Erste Schritte mit Angular](developing/spa/getting-started-angular.md)
-      + [SPA Deep Dives](developing/spa/deep-dives.md)
-      + [Entwicklung von SPAs für AEM](developing/spa/developing.md)
+      + [SPA Tauchgänge](developing/spa/deep-dives.md)
+      + [Entwicklung von SPA für AEM](developing/spa/developing.md)
       + [SPA-Editor – Überblick](developing/spa/editor-overview.md)
       + [SPA-Blueprint](developing/spa/blueprint.md)
-      + [SPA-Seitenkomponente](developing/spa/page-component.md)
+      + [SPA](developing/spa/page-component.md)
       + [Zuordnung dynamischer Modelle zu Komponenten](developing/spa/model-to-component-mapping.md)
       + [Model-Routing](developing/spa/routing.md)
       + [Integration starten](developing/spa/launch-integration.md)
       + [Serverseitiges Rendering](developing/spa/ssr.md)
-      + [SPA-Referenz-Dokumente](developing/spa/reference-materials.md)
+      + [SPA Referenz-Dokumente](developing/spa/reference-materials.md)
 + Personalisierung   {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Konfigurieren von ContextHub](developing/personalization/configuring-contexthub.md)
