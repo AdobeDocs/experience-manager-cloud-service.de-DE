@@ -2,10 +2,10 @@
 title: Details der Build-Umgebung
 description: Details zur Umgebung erstellen - Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 82%
+source-wordcount: '732'
+ht-degree: 84%
 
 ---
 
@@ -74,7 +74,7 @@ Fügen Sie dazu der Datei „pom.xml“ einen `<plugin>`-Eintrag hinzu, der wie 
 >Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
 
 >[!NOTE]
->Der Cloud Manager-Projekterstellung nutzt weiterhin Java 8, um Maven aufzurufen. Daher funktioniert das Überprüfen oder Erzwingen der im Toolchain-Plugin konfigurierten Java-Version über Plugins wie das [Apache Maven Enforcer-Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) nicht und solche Plugins dürfen nicht verwendet werden.
+>Der Projekt-Build von Cloud Manager nutzt weiterhin Java 8, um Maven aufzurufen. Daher funktioniert das Überprüfen oder Erzwingen der im Toolchain-Plug-in über Plug-ins wie das [Apache Maven Enforcer-Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) konfigurierten Java-Version nicht und solche Plug-ins dürfen nicht verwendet werden.
 
 ## Umgebungsvariablen {#environment-variables}
 
@@ -111,7 +111,7 @@ Aktuelle Variablen können aufgelistet werden:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Variablennamen dürfen nur alphanumerische Zeichen und Unterstriche (_) enthalten. Dabei sollten Großbuchstaben verwendet werden. Pro Pipeline sind maximal 200 Variablen zulässig. Jeder Name darf maximal 100 Zeichen und jeder Wert maximal 2048 Zeichen lang sein.
+Variablennamen dürfen nur alphanumerische Zeichen und Unterstriche (_) enthalten. Dabei sollten Großbuchstaben verwendet werden. Pro Pipeline sind maximal 200 Variablen zulässig. Jeder Name muss weniger als 100 Zeichen und jeder Wert muss bei Variablen des Typs String weniger als 2048 Zeichen und bei Variablen des Typs &quot;secretString&quot;500 Zeichen umfassen.
 
 Bei Verwendung in einer `Maven pom.xml`-Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mit einer ähnlichen Syntax zuzuordnen:
 
@@ -187,5 +187,4 @@ Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie v
 Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, d. h. mit `gem` für RubyGems oder mit `pip` für Python-Pakete.
 
 >[!NOTE]
->
 >Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein auf der AEM Umgebung installiertes Systempaket benötigen, wenden Sie sich an Ihren Kundenbetreuer für Adobe.
