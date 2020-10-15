@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 79%
+source-wordcount: '1710'
+ht-degree: 78%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 79%
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools:
 
 * Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
+
+* Java muss auf der AEM Umgebung konfiguriert werden, damit der `java` Befehl von dem Benutzer ausgeführt werden kann, der Beginn AEM.
 
 * Das Content Transfer Tool kann mit den folgenden Arten des Datenspeichers verwendet werden: Dateidatenspeicher, S3-Datenspeicher, freigegebener S3-Datenspeicher und Datenspeicher für die Blase.
 
