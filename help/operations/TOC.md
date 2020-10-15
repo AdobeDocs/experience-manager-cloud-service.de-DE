@@ -1,12 +1,12 @@
 ---
 sub-product: Betrieb und Wartung für AEM as a Cloud Service
 user-guide-title: Betrieb und Wartung für AEM as a Cloud Service
-breadcrumb-title: Operations Guide
-user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
+breadcrumb-title: Verfahrensanleitung
+user-guide-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '62'
 ht-degree: 100%
 
 ---
