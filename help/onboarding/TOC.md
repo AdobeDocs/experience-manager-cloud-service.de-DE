@@ -1,12 +1,12 @@
 ---
 sub-product: Einstieg in AEM as a Cloud Service
 user-guide-title: Einstieg in AEM as a Cloud Service
-breadcrumb-title: Onboarding Guide
-user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
+breadcrumb-title: Onboarding-Anleitung
+user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
