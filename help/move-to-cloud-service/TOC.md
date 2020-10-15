@@ -1,13 +1,13 @@
 ---
 sub-product: Wechseln zu AEM as a Cloud Service
 user-guide-title: Wechseln zu AEM as a Cloud Service
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: Verschiebeanleitung
+user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 95%
 
 ---
 
