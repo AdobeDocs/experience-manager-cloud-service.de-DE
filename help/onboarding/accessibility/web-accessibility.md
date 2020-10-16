@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
 description: Einführung in Adobe Experience Manager as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -58,6 +58,7 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 -->
 
 <!--
+* [Accessibility in Assets](/help/assets/accessibility.md)
 * [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
   Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
@@ -65,5 +66,4 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 ## Barrierefreiheit bei Adobe         {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
-
 
