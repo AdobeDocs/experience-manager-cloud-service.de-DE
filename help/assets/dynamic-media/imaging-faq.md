@@ -1,11 +1,11 @@
 ---
 title: Intelligente Bildbearbeitung
 description: 'Intelligente Bildbearbeitung nutzt die individuellen anzeigebezogenen Benutzermerkmale, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
-translation-type: ht
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
-source-wordcount: '1720'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -111,8 +111,8 @@ Für Ihre erste benutzerdefinierte Domäne fallen mit einer Dynamic Media-Lizenz
 
 Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine entsprechende Anfrage stellen.
 
-1. Richten Sie eine Anfrage an den technischen Support (E-Mail: `s7support@adobe.com`).
-1. In der Anfrage geben Sie folgende Informationen an:
+1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Geben Sie im Supportfall die folgenden Informationen ein:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
    1. Geben Sie alle Domänen an, für die intelligente Bildbearbeitung aktiviert werden soll (also `images.company.com` oder `mycompany.scene7.com`).
@@ -146,8 +146,7 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
 Die Anfragen werden in der Reihenfolge ihres Eingangs beim technischen Support gemäß Warteliste bearbeitet.
 
 >[!NOTE]
->
->Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden. 
+Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden. 
 
 ## Welche Risiken bestehen bei der Umstellung auf die intelligente Bildbearbeitung? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -169,8 +168,7 @@ Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder di
 1. Wiederholen Sie diesen Test auf verschiedenen Browsern und bei unterschiedlichen Benutzerbedingungen. 
 
 >[!NOTE]
->
->Nicht alle Bilder werden konvertiert.  Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
+Nicht alle Bilder werden konvertiert.  Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
