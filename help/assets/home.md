@@ -1,16 +1,16 @@
 ---
-title: Assets als Cloud Service-Handbuch
+title: Assets als Cloud-Service-Anleitung
 description: Adobe Experience Manager Assets as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '352'
 ht-degree: 85%
 
 ---
 
 
-# Assets als Cloud Service-Handbuch {#aem-assets-guide}
+# Assets als Cloud-Service-Anleitung {#aem-assets-guide}
 
 Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Assets as a Cloud Service.
 
@@ -40,7 +40,7 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Asset
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
-* [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/de/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [Aktuelle Aktualisierungen der Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
