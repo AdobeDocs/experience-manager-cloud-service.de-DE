@@ -3,9 +3,9 @@ title: Zugänglichkeit in [!DNL Experience Manager Assets]
 description: Erkennen Sie, wie Barrierefreiheitsfunktionen [!DNL Adobe Experience Manager] in einem Cloud Service Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Viele Benutzeroberflächenelemente, die mit einem Zeiger angeklickt oder bearbei
 
 ### Tastaturbefehle in Assets {#keyboard-shortcuts}
 
-Die folgenden Aktionen in Assets funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager] Konsolen gelten, gelten auch für Assets. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Erfahren Sie, wie Sie die Tastaturbefehle [aktivieren oder deaktivieren](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Die folgenden Aktionen in Assets funktionieren mit den aufgelisteten Tastaturbefehlen. Die meisten Tastaturbefehle, die für [!DNL Experience Manager] Konsolen gelten, gelten auch für Assets. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Erfahren Sie, wie Sie die Tastaturbefehle [aktivieren oder deaktivieren](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | Benutzeroberfläche oder Szenario | Tastaturbefehl | Aktion |
 |---|---|---|
@@ -192,7 +192,7 @@ Beim Filtern der Suchergebnisse:
 
 ## Freigeben von Assets {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Beim Freigeben von Assets verbessern die folgenden Funktionen die Zugänglichkeit:
