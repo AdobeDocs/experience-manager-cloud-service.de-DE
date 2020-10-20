@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden bei der Erstellung einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -156,7 +156,7 @@ Eine Liste aller zulässigen Einträge wird erstellt. If any configurations over
 Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
-* Verwenden des Konfigurationsbrowsers
+* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Verwenden von CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 ### Verwenden des Konfigurationsbrowsers {#using-the-configuration-browser}
 
-1. Wechseln Sie zu **Globale Navigation** > **Tools** > **Konfigurationsbrowser**.
+1. Wechseln Sie zu **Globale Navigation** > **Tools** > [**Konfigurationsbrowser**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -203,7 +203,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 >[!NOTE]
 >
->Im Konfigurationsbrowser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
 
 ### ACLs und Gruppen {#acls-and-groups}
 
@@ -464,7 +464,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 >[!NOTE]
 >
->Die Pfade der Richtliniendefinitionen sind vom Pfad der Komponente abhängig. `cq:policy` holds a relative reference to the configuration itself.
+>Die Pfade der Richtliniendefinitionen sind vom Pfad der Komponente abhängig. `cq:policy` enthält einen relativen Verweis auf die Konfiguration selbst.
 
 ### Seitenrichtlinien {#page-policies}
 
