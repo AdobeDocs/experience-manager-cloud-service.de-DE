@@ -2,7 +2,7 @@
 title: Multi-Store-Einrichtung
 description: Multi-Store-Einrichtung
 translation-type: tm+mt
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 4%
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site zu verbinden und CIF-Kernkomponenten s
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Gehen Sie AEM zu Tools -> Allgemein -> Konfigurationsbrowser
+   * Gehen Sie AEM zu Tools -> Allgemein -> [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Wählen Sie die erstellte Basiskonfiguration aus
    * Erstellen Sie eine neue Konfiguration mithilfe der unter Nummer 2 beschriebenen Schritte.
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site zu verbinden und CIF-Kernkomponenten s
 
 4. Zuweisen der untergeordneten Konfiguration zu einer AEM Site
 
-   * Zu AEM Sites-Konsole wechseln
+   * Zu AEM Sites Console wechseln
    * Navigieren Sie zur Region oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/de für die Venia-Beispielseite
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften
    * Wählen Sie die Registerkarte Erweitert
