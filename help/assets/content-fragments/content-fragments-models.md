@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle
 description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -22,12 +22,12 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
-* Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im Konfigurations-Manager
+* Aktivieren der Verwendung von Inhaltsfragmentmodellen im Konfigurationsbrowser
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an
 
-### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
+### Enable Content Fragment Models in Configuration Browser {#enable-content-fragment-models-in-configuration-browser}
 
-Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
+To [create a new Content Fragment Model](#creating-a-content-fragment-model) you **must** first enable them using the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 2. Wählen Sie den entsprechenden Speicherort für Ihre Web-Seite aus.
@@ -97,11 +97,10 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
    ![Feldeigenschaften](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
-   >* **Rich-Text**
-   >* **Markdown**
-   >* **Nur Text**
+   Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
+   * **Rich-Text**
+   * **Markdown**
+   * **Nur Text**
 
    Wenn Sie keinen Typ angeben, wird der Standardwert **Rich-Text** in diesem Feld verwendet.
    Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
@@ -119,8 +118,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 ## Löschen eines Inhaltsfragmentmodells {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->Das Löschen eines Inhaltsfragmentmodells wirkt sich unter Umständen auf abhängige Fragmente aus.
+Das Löschen eines Inhaltsfragmentmodells wirkt sich unter Umständen auf abhängige Fragmente aus.
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
@@ -130,8 +128,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
 1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Anwendungssymbolleiste aus.
 
    >[!NOTE]
-   >
-   >Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
+   Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
 ## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
 
@@ -145,5 +142,4 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 1. Wählen Sie Ihr Modell und anschließen die Option **Löschen** aus der Anwendungssymbolleiste aus.
 
    >[!NOTE]
-   >
-   >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+   Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
