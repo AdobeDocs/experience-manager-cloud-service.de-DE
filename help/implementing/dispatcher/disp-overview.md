@@ -1,11 +1,11 @@
 ---
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
-translation-type: ht
-source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
-workflow-type: ht
-source-wordcount: '3824'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+workflow-type: tm+mt
+source-wordcount: '4073'
+ht-degree: 91%
 
 ---
 
@@ -28,8 +28,8 @@ In diesem Abschnitt wird beschrieben, wie Sie die Apache- und Dispatcher-Konfigu
 
 Die Dispatcher Tools sind Teil des gesamten AEM as a Cloud Service-SDK und bieten:
 
-* eine Vanilla-Dateistruktur mit den Konfigurationsdateien, die in ein Maven-Projekt für Dispatcher aufgenommen werden sollen;
-* Tools für Kunden zur lokalen Validierung einer Dispatcher-Konfiguration;
+* eine Vanilla-Dateistruktur mit den Konfigurationsdateien, die in ein Maven-Projekt für Dispatcher aufgenommen werden sollen.
+* Tooling für Kunden, um zu überprüfen, ob die Dispatcher-Konfiguration nur AEM als vom Cloud Service unterstützte Direktiven enthält.        Darüber hinaus überprüft die Tooling, ob die Syntax korrekt ist, sodass Apache erfolgreich Beginn ausführen kann.
 * ein Docker-Image, das Dispatcher lokal aufruft.
 
 ## Herunterladen und Extrahieren der Tools {#extracting-the-sdk}
@@ -194,13 +194,13 @@ Standardmäßiges Host-Globbing für ein Standardprojekt. Wenn Sie Anpassungen v
 
 In den folgenden Abschnitten wird beschrieben, wie Sie die Konfiguration lokal validieren, damit sie beim Bereitstellen einer internen Version das zugehörige Qualitäts-Gate in Cloud Manager übergeben kann.
 
-## Lokale Validierung der Dispatcher-Konfiguration {#local-validation-of-dispatcher-configuration}
+## Lokale Validierung unterstützter Direktiven in der Dispatcher-Konfiguration {#local-validation-of-dispatcher-configuration}
 
 Das Validierungs-Tool ist im SDK `bin/validator` als macOS-, Linux- oder Windows-Binärdatei verfügbar, sodass Kunden die gleiche Validierung ausführen können, die Cloud Manager beim Erstellen und Bereitstellen einer Version vornimmt.
 
 Es wird wie folgt aufgerufen: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Das Tool validiert die Apache- und Dispatcher-Konfiguration. Es scannt alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` und prüft, ob nur in der Zulassungsliste eingetragene Anweisungen verwendet werden. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
+Das Tool überprüft, ob die Dispatcher-Konfiguration die entsprechenden Anweisungen verwendet, die von AEM als Cloud-Dienst unterstützt werden, indem alle Dateien mit einem Muster überprüft werden `conf.d/enabled_vhosts/*.vhost`. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 
 ```
 $ validator whitelist
@@ -261,11 +261,9 @@ Cloud manager validator 1.0.4
 
 Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Zulassungsliste enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
 
-Wenn keine Validierungsfehler gemeldet werden, kann Ihre Konfiguration bereitgestellt werden.
-
 Nachfolgend finden Sie Fehlerbehebungsverfahren für das Debugging häufiger Validierungsfehler, die vom Tool ausgegeben werden:
 
-**kann einen`conf.dispatcher.d`-Unterordner im Archiv nicht finden**
+**kann einen `conf.dispatcher.d`-Unterordner im Archiv nicht finden**
 
 Ihr Archiv sollte Ordner `conf.d` und `conf.dispatcher.d` enthalten. Beachten Sie, dass Sie **nicht** das Präfix `etc/httpd` in Ihrem Archiv verwenden sollten.
 
@@ -347,13 +345,41 @@ Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Zwar wird dies für Abwärtskompatibilität weiterhin unterstützt, doch sollten Sie zum neuen Layout wechseln.
 
+## Lokale Validierung der Konfigurationssyntax des Dispatchers, damit apache httpd Beginn ausführen kann {#local-validation}
+
+Sobald festgestellt wurde, dass die Konfiguration des Dispatcher-Moduls nur unterstützte Direktiven enthält, sollten Sie überprüfen, ob die Syntax korrekt ist, damit apache Beginn machen kann. Um dies zu testen, muss der Docker lokal installiert sein. Beachten Sie, dass AEM nicht laufen muss.
+
+Verwenden Sie das `validate.sh` Skript wie folgt:
+
+```
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+```
+
+Das Skript führt Folgendes aus:
+
+1. Es führt den Validator aus dem vorherigen Abschnitt aus, um sicherzustellen, dass nur die unterstützten Direktiven einbezogen werden. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
+2. Es führt den `httpd -t command` to-Test aus, wenn die Syntax korrekt ist, sodass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration für die Bereitstellung bereit sein
+
 ## Lokales Testen der Apache- und Dispatcher-Konfiguration {#testing-apache-and-dispatcher-configuration-locally}
 
-Sie können Ihre Apache- und Dispatcher-Konfiguration auch lokal testen. Dazu muss Docker lokal installiert sein und Ihre Konfiguration die Validierung bestehen (wie oben beschrieben).
+Sie können Ihre Apache- und Dispatcher-Konfiguration auch lokal testen. Dazu muss der Docker lokal installiert sein und Ihre Konfiguration, um die Validierung wie oben beschrieben zu bestehen.
 
-Mit dem Parameter `-d` gibt der Validator einen Ordner mit allen Konfigurationsdateien aus, die von Dispatcher benötigt werden.
-
-Dann kann das Skript `docker_run.sh` auf diesen Ordner verweisen und den Container mit Ihrer Konfiguration starten.
+Führen Sie das Validator-Tool aus, indem Sie den Parameter &quot;`-d`&quot; verwenden, der einen Ordner mit allen vom Dispatcher benötigten Konfigurationsdateien ausgibt. Dann kann das `docker_run.sh` Skript auf diesen Ordner verweisen. Durch Angabe der Anschlussnummer (im Beispiel unten, 8080) zum Bereitstellen des Dispatcher-Endpunkts wird der Container mit Ihrer Konfiguration Beginn.
 
 ```
 $ validator full -d out src/dispatcher
@@ -372,7 +398,35 @@ Dadurch wird Dispatcher in einem Container gestartet, wobei sein Backend auf ein
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-Protokollebenen werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` in `conf.d/variables/global.var` definiert. Weitere Informationen finden Sie in der [Protokollierungsdokumentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging).
+The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+
+Die Protokollierungsstufen für diese Module werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` definiert. Sie können in der Datei `conf.d/variables/global.vars` festgelegt werden. Ihr relevanter Teil lautet:
+
+```
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+```
+
+Wenn Dispatcher lokal ausgeführt wird, werden Protokolle direkt in die Terminalausgabe gedruckt. Meistens sollen diese Protokolle in DEBUG sein, was durch Übergeben der Debug-Ebene als Parameter bei Ausführung von Docker erreicht werden kann. Beispiel: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+
+Protokolle für Cloud-Umgebung werden über den Protokolldienst bereitgestellt, der in Cloud Manager verfügbar ist.
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
