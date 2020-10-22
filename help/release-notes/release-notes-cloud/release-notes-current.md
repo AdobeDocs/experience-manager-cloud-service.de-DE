@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '781'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* Das Single Page Application (SPA) Editor JavaScript SDK [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
+* Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -87,7 +87,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 ### Neue Funktionen {#what-is-new-cra}
 
-* Die CRA (Cloud Readiness Analyzer) verfügt über eine Beginn-Statuskonsole, die eine explizite Schaltfläche zum **Generieren eines Berichts** anzeigt, auf die der Benutzer klicken kann, um die CRA auszuführen.
+* Der [Cloud-Bereitschaftsanalysator (CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) verfügt über eine Beginn-Statuskonsole, die eine explizite Schaltfläche zum **Generieren eines Berichts** anzeigt, auf die der Benutzer klicken kann, um die CRA auszuführen.
 
 * Die CRA-Benutzeroberfläche zeigt den Fortschritt während der Ausführung an. Es zeigt Elemente an, die analysiert werden, und die während der Ausführung gefundenen Ergebnisse.
 
@@ -103,7 +103,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Das Content Transfer Tool (CTT) unterstützt den Blue Blob Store Data Store.
+* Das [Content Transfer Tool (CTT)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) unterstützt den Blue Blob Store Data Store.
 
 * Die CTT-Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
 
