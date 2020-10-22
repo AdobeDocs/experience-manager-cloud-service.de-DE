@@ -2,9 +2,9 @@
 title: Authoring – Konzepte
 description: Konzepte der Bearbeitung (Authoring) in AEM
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 100%
 Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
 
 * Autor
-* Veröffentlichen
+* Veröffentlichen  
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher darauf zuzugreifen können.
 
@@ -27,10 +27,6 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 ![Abbildung von Autor, Publisher und Dispatchern](/help/sites-cloud/authoring/assets/author-publish.png)
 
 In der Autorenumgebung werden die Funktionen von AEM über die Autorenbenutzeroberfläche von AEM bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzern zur Verfügung stellen.
-
->[!NOTE]
->
->AEM selbst wird für das Veröffentlichen der AEM-Dokumentation verwendet.
 
 ## Autorenumgebung {#author-environment}
 
@@ -65,4 +61,4 @@ Weitere Informationen zum Veröffentlichen und Rückgängigmachen der Veröffent
 
 ## Dispatcher {#dispatcher}
 
-Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](/help/implementing/dispatcher/overview.md)**Lastverteilung und Caching durch.
+Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](/help/implementing/dispatcher/overview.md)** Lastverteilung und Caching durch.
