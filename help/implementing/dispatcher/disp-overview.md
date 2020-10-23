@@ -2,9 +2,9 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 89%
 
 ---
@@ -35,7 +35,8 @@ Die Dispatcher Tools sind Teil des gesamten AEM as a Cloud Service-SDK und biete
 ## Herunterladen und Extrahieren der Tools {#extracting-the-sdk}
 
 Die Dispatcher Tools, die Teil des [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)sind, können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Dispatcher-Tools-Version verfügbar ist, kann für die Bereitstellung auf Cloud-Umgebung verwendet werden, auf denen diese AEM in der Cloud oder höher ausgeführt werden.
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdEntpacken Sie das SDK, das Dispatcher-Tools für macOS/Linux und Windows bündelt.
+
+Entpacken Sie das SDK, das Dispatcher-Tools für macOS/Linux und Windows bündelt.
 
 **Machen Sie für macOS/Linux** das Dispatcher-Tool Artefakt ausführbar und führen Sie es aus. Es extrahiert selbst die Dispatcher Tools-Dateien unter dem Verzeichnis, in dem Sie sie gespeichert haben (wobei `version` die Version der Dispatcher Tools ist).
 
