@@ -2,10 +2,10 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
-ht-degree: 91%
+source-wordcount: '4082'
+ht-degree: 89%
 
 ---
 
@@ -34,18 +34,19 @@ Die Dispatcher Tools sind Teil des gesamten AEM as a Cloud Service-SDK und biete
 
 ## Herunterladen und Extrahieren der Tools {#extracting-the-sdk}
 
-Die Dispatcher Tools können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)-Portal heruntergeladen werden. Beachten Sie, dass der Zugriff auf die SDK-Listen auf diejenigen mit AEM Managed Services- oder AEM as a Cloud Service-Umgebungen beschränkt ist. Jede in dieser neuen Dispatcher Tools-Version verfügbare neue Konfiguration kann für die Bereitstellung in Cloud-Umgebungen, in denen diese Version von AEM in der Cloud oder höher ausgeführt wird, verwendet werden.
+Die Dispatcher Tools, die Teil des [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)sind, können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Dispatcher-Tools-Version verfügbar ist, kann für die Bereitstellung auf Cloud-Umgebung verwendet werden, auf denen diese AEM in der Cloud oder höher ausgeführt werden.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdEntpacken Sie das SDK, das Dispatcher-Tools für macOS/Linux und Windows bündelt.
 
-**Für macOS und Linux** laden Sie das Shell-Skript in einen Ordner auf Ihrem Computer, machen Sie es ausführbar und führen Sie es aus. Es extrahiert selbst die Dispatcher Tools-Dateien unter dem Verzeichnis, in dem Sie sie gespeichert haben (wobei `version` die Version der Dispatcher Tools ist).
+**Machen Sie für macOS/Linux** das Dispatcher-Tool Artefakt ausführbar und führen Sie es aus. Es extrahiert selbst die Dispatcher Tools-Dateien unter dem Verzeichnis, in dem Sie sie gespeichert haben (wobei `version` die Version der Dispatcher Tools ist).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Für Windows** laden Sie das ZIP-Archiv herunter und extrahieren Sie es.
+**Unter Windows** extrahieren Sie das ZIP-Archiv für Dispatcher Tooling.
 
 ## Dateistruktur {#file-structure}
 
@@ -379,7 +380,7 @@ Das Skript führt Folgendes aus:
 
 Sie können Ihre Apache- und Dispatcher-Konfiguration auch lokal testen. Dazu muss der Docker lokal installiert sein und Ihre Konfiguration, um die Validierung wie oben beschrieben zu bestehen.
 
-Führen Sie das Validator-Tool aus, indem Sie den Parameter &quot;`-d`&quot; verwenden, der einen Ordner mit allen vom Dispatcher benötigten Konfigurationsdateien ausgibt. Dann kann das `docker_run.sh` Skript auf diesen Ordner verweisen. Durch Angabe der Anschlussnummer (im Beispiel unten, 8080) zum Bereitstellen des Dispatcher-Endpunkts wird der Container mit Ihrer Konfiguration Beginn.
+Führen Sie das Validator-Tool aus (beachten Sie, dass es sich von dem `validator.sh` oben genannten unterscheidet), indem Sie den `-d` Parameter verwenden, der einen Ordner mit allen Dispatcher-Konfigurationsdateien ausgibt. Führen Sie dann das `docker_run.sh` Skript aus und übergeben Sie diesen Ordner als Argument. Durch Angabe der Anschlussnummer (hier: 8080), um den Dispatcher-Endpunkt anzuzeigen, wird ein Docker-Container gestartet, der den Dispatcher mit Ihrer Konfiguration ausführt.
 
 ```
 $ validator full -d out src/dispatcher
