@@ -2,7 +2,7 @@
 title: Entwicklung und Seitenvergleich
 description: Verstehen Sie, wie die Funktion "Seitenabweichung"funktioniert und wie sie einen Entwickler beeinflussen kann.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 52%
@@ -30,7 +30,7 @@ Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden 
 
 Eine Bereinigungs-Aufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
-## Berechtigungen {#permissions}
+## Beschränkungen {#limitations}
 
 Der Unterschied erfolgt clientseitig über DOM-Vergleich, was den diff-Prozess einfach macht, es gibt jedoch eine Reihe von Einschränkungen, die vom Entwickler zu berücksichtigen sind.
 
