@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
+source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 97%
+source-wordcount: '220'
+ht-degree: 95%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 97%
       + [Verwenden des Assistenten](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Einrichten des Projekts](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Grundlagen zur Build-Umgebung](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
+      + [Versionshinweise für 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [Versionshinweise für 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + Einhaltung von Datenschutzbestimmungen {#data-privacy}
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
