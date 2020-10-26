@@ -3,9 +3,9 @@ title: Zugänglichkeit in [!DNL Experience Manager Assets]
 description: Erkennen Sie, wie Barrierefreiheitsfunktionen [!DNL Adobe Experience Manager] in einem Cloud Service Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werd
 
 ## Unterstützung für die Verwendung der Tastatur {#keyboard-use}
 
-Viele Benutzeroberflächenelemente, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur verknüpft werden. Mithilfe einer Tastatur können Benutzer sich auf Elemente der Benutzeroberfläche konzentrieren und geeignete Maßnahmen ergreifen. Benutzer können Tastaturbefehle direkt verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf Elemente der Benutzeroberfläche konzentrieren und ihn über die Tastatur auslösen zu müssen. Beispielsweise können Benutzer die Zeitschiene eines Assets auf der linken Seite öffnen, indem sie mit der Tastatur zum Steuerelement der Benutzeroberfläche navigieren, die Eingabetaste drücken und den `alt + 2` Tastaturbefehl drücken.
+Viele Benutzeroberflächenelemente, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur verknüpft werden. Mithilfe einer Tastatur können Benutzer sich auf Elemente der Benutzeroberfläche konzentrieren und geeignete Maßnahmen ergreifen. Benutzer können Tastaturbefehle direkt verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf Elemente der Benutzeroberfläche konzentrieren und ihn über die Tastatur auslösen zu müssen. Beispielsweise können Benutzer die Zeitleiste eines Assets auf der linken Seite öffnen, indem sie zum UI-Steuerelement navigieren, eine Tastatur drücken `Return` und den `Alt + 2` Tastaturbefehl drücken.
 
 <!-- TBD items:
 
