@@ -1,16 +1,16 @@
 ---
-title: Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial
+title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
 description: Steigen Sie gerade in die Entwicklung mit AEM ein? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, wie sie eine Website in AEM mit den neuesten Standards und Technologien implementieren.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 20a19c558be17631889f0253b3ad4e5a71ebcce2
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '254'
 ht-degree: 100%
 
 ---
 
 
-# Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Übersicht {#overview}
 
@@ -31,6 +31,6 @@ Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von
 * [Maven-AEM-Projektarchetyp](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
-* Sling-Modelle
+* [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 * [Bearbeitbare Vorlagen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [Stilsystem](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
