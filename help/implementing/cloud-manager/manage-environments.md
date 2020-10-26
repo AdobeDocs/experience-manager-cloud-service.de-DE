@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
+source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '829'
 ht-degree: 90%
 
 ---
@@ -66,7 +66,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
 
-### Ansicht der Umgebung {#viewing-environment}
+### Anzeigen von Umgebung {#viewing-environment}
 
 Die **Umgebung** -Karte auf der Seite Überblick Liste bis zu drei Umgebung.
 
