@@ -2,9 +2,9 @@
 title: Konfigurationen und der Konfigurationsbrowser
 description: Machen Sie sich mit AEM Konfigurationen und der Verwaltung der Workspace-Einstellungen in AEM vertraut.
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ AEM Konfigurationen dienen zur Verwaltung von Einstellungen in AEM und dienen al
 Eine Konfiguration kann aus zwei verschiedenen Perspektiven betrachtet werden.
 
 * [Ein Administrator](#configurations-administrator) verwendet Konfigurationen als Arbeitsbereiche in AEM, um Einstellungsgruppen zu definieren und zu verwalten.
-* [Ein Entwickler](#configurations-developer) verwendet den zugrunde liegenden Konfigurationsmechanismus, der Sling Context-Aware-Konfigurationen implementiert, um die Einstellungen in AEM beizubehalten und nachzuschlagen.
+* [Ein Entwickler](#configurations-developer) verwendet den zugrunde liegenden Konfigurationsmechanismus, der Konfigurationen implementiert, um die Einstellungen in AEM beizubehalten und nachzuschlagen.
 
-Einfach gesagt, aus der Ansicht eines Administrators heraus, sind Konfigurationen, wie Sie Arbeitsflächen zur Verwaltung von Einstellungen in AEM erstellen, während der Entwickler verstehen sollte, wie AEM bestehen bleibt und sucht diese Konfigurationen im Repository.
+Zusammenfassung: Aus der Ansicht eines Administrators ergeben sich bei Konfigurationen die Arbeitsbereiche zur Verwaltung von Einstellungen in AEM, während der Entwickler verstehen sollte, wie AEM diese Konfigurationen im Repository verwendet und verwaltet.
 
 Konfigurationen dienen unabhängig von Ihrer Perspektive zwei Hauptzielen in AEM:
 
-* Konfigurationen ermöglichen bestimmte Funktionen für Benutzergruppen.
+* Konfigurationen ermöglichen bestimmte Funktionen für bestimmte Benutzergruppen.
 * Konfigurationen definieren Zugriffsrechte für diese Funktionen.
 
 ## Konfigurationen als Administrator {#configurations-administrator}
@@ -38,6 +38,8 @@ Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werde
 * [Context Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
+
+### Beispiel {#administrator-example}
 
 Ein Administrator kann beispielsweise zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
 
@@ -122,7 +124,7 @@ Obwohl der [Administrator und die Benutzer Konfigurationen als Arbeitsplätze](#
 
 Content verweist über eine `cq:conf` Eigenschaft auf die zugehörige Konfiguration. AEM führt eine Suche basierend auf dem Inhalt durch und es ist eine kontextuelle `cq:conf` Eigenschaft, um die entsprechende Konfiguration zu finden.
 
-### Ein einfaches Beispiel  {#example}
+### Beispiel {#developer-example}
 
 Nehmen wir an, Sie haben einen Anwendungscode, der an DAM-Einstellungen interessiert ist.
 
@@ -193,7 +195,7 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
 
 ### Verwenden von Konfigurationen {#using-configurations}
 
-Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextsensitive Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder eine Ressourcenstruktur beziehen, wie im vorherigen Beispiel [beschrieben.](#example)
+Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextsensitive Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder eine Ressourcenstruktur beziehen, wie im vorherigen Beispiel [beschrieben.](#developer-example)
 
 Weitere Informationen zu Context-Aware-Konfigurationen, Beispielen und deren Verwendung [finden Sie in der Sling-Dokumentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
