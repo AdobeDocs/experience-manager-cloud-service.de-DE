@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 90%
 
 ---
@@ -38,8 +38,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >
 Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt. Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
 
-## Hinzufügen einer Umgebung {#adding-environments}
-
+## Hinzufügen von Umgebung {#adding-environments}
 
 1. Klicken Sie auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm **Umgebungen** zugegriffen werden.
    ![](assets/environments-tab.png)
@@ -66,7 +65,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
 
-### Anzeigen von Umgebung {#viewing-environment}
+## Umgebung anzeigen {#viewing-environment}
 
 Die **Umgebung** -Karte auf der Seite Überblick Liste bis zu drei Umgebung.
 
