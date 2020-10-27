@@ -1,0 +1,58 @@
+---
+title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.7.0
+description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.7.0
+translation-type: tm+mt
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 71%
+
+---
+
+
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
+
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.7.0 erläutert.
+
+## Veröffentlichungsdatum {#release-date}
+
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.7.0 ist der 09. Juli 2020.
+
+## Neue Funktionen {#whats-new-cloud-manager}
+
+* Die Seite „Umgebungen“ wurde neu gestaltet.
+
+* Im Ruhezustand befindliche Umgebungen verfügen jetzt über einen separaten Status.
+
+* Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
+
+* Cloud Manager-Pipelines unterstützen jetzt benutzerspezifische Variablen und Geheimnisse.
+
+   Weitere Informationen finden Sie unter [Pipeline-Variablen](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+
+* Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
+
+* Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
+Weitere Informationen finden Sie unter [Verwenden der Java 11-Unterstützung](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
+
+### Fehlerbehebungen {#bug-fixes-cm}
+
+* Die Verknüpfung von Cloud Manager mit der Developer Console war vor der vollständigen Erstellung der Umgebung nicht korrekt aktiviert.
+
+* Die Verknüpfung zur Developer Console direkt aus Cloud Manager zeigte die Option zum Versetzen der Umgebung eines Sandbox-Programms in den Ruhezustand und zum Aufheben des Ruhezustands nicht an.
+
+* Die Optionen **Abbrechen** und **Speichern** auf der Seite „Bearbeiten“ für produktionsfremde Pipelines waren nicht immer sichtbar.
+
+* Bestimmte Fehler im Code-Qualitätsprozess konnten dazu führen, dass die Protokolldatei nicht korrekt erzeugt wurde.
+
+* Beim Erstellen eines neuen Programms gab der vorgeschlagene Name manchmal ein Duplikat eines vorhandenen Programmnamens zurück.
+
+* Protokolle für bestimmte größere Pipeline-Schritte konnten nicht über die gesamte Benutzeroberfläche konsistent heruntergeladen werden.
+
+* Bei der Validierung von Umgebungsnamen trat ein Fehler mit einer Verschiebung um den Wert eins auf.
+
+* Auf der Seite „Umgebungen“ wurden manchmal Veröffentlichungs- und Dispatcher-Segmente angezeigt, wenn keine vorhanden waren.
+
+### Bekannte Probleme {#known-issues}
+
+* Aufgrund einer Änderung bei der Berechnung der Code-Abdeckung ist die erforderliche *Mindestversion* des Jacoco-Plugins jetzt 0.7.5.201505241946 (veröffentlicht im Mai 2015). Kunden, die explizit auf eine ältere Version verweisen, erhalten eine Fehlermeldung im Code-Qualitätsprozess.
