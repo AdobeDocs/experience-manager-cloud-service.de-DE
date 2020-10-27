@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 90%
+source-wordcount: '850'
+ht-degree: 88%
 
 ---
 
@@ -69,9 +69,17 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 
 Die **Umgebung** -Karte auf der Seite Überblick Liste bis zu drei Umgebung.
 
-Der Benutzer kann auf die Schaltfläche &quot;Alle **** anzeigen&quot;klicken, um zur Zusammenfassungsseite für die **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
+1. Klicken Sie auf die Schaltfläche &quot;Alle **** anzeigen&quot;, um zur Zusammenfassungsseite für die **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. Auf der Seite &quot; **Umgebung** &quot;wird die Liste aller vorhandenen Umgebung angezeigt.
+
+   ![](assets/environment-view-2.png)
+
+1. Wählen Sie eine der Umgebung aus der Liste aus, um die Details zur Umgebung Ansicht.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Aktualisieren einer Umgebung {#updating-dev-environment}
