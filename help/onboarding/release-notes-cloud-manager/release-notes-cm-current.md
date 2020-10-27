@@ -2,7 +2,7 @@
 title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
 description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 54%
@@ -31,7 +31,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.10.
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
 * Die Umgebung auf der Übersichtsseite wird jetzt bis zu drei Umgebung Liste. Die Benutzer können auf die Schaltfläche &quot;Alle **** anzeigen&quot;klicken, um zur Zusammenfassungsseite der Umgebung zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
-Refer to [Viewing Environments](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+Weitere Informationen finden Sie unter Umgebung [](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) anzeigen.
 
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
