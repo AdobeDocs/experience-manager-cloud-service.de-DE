@@ -2,9 +2,9 @@
 title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie ein Metadatenschema für Asset-Ordner in AEM Assets erstellen.
 contentOwner: AG
-translation-type: ht
-source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -171,4 +171,3 @@ Sie können Ordner-Metadatenschemata auch beim Erstellen eines Ordners zuweisen.
 Geben Sie Metadatenwerte in die verschiedenen Felder ein und tippen/klicken Sie auf **[!UICONTROL Speichern]**, um die Werte zu speichern. Die angegebenen Werte werden im Ordnerknoten im CRX-Repository gespeichert.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
-
