@@ -5,10 +5,10 @@ breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 82%
+source-wordcount: '429'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 82%
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
    + [Suchen von Assets](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
-   + [Smart-Tags](smart-tags.md)
+   + [Smart-Tags für Bilder](smart-tags.md)
+   + [Intelligente Tags für Video-Assets](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
    + [Verwenden von [!DNL Adobe Stock] Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 82%
    + [Referenz zu Dokumenten und APIs für Entwickler](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild- und Video-Profilen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Smarttags konfigurieren](smart-tags-configuration.md)
+   + [Intelligente Tagging von Bildern konfigurieren](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzungen](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Assets-HTTP-API](mac-api-assets.md)
