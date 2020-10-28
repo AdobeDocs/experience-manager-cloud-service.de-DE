@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.10.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 21%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * In der Benutzeroberfläche der CIF Cloud-Konfiguration wurden Schaltflächen zum Speichern und Schließen für Konfigurationen in /lib und /apps/ angezeigt. Diese sind jedoch schreibgeschützt und daher wurde die Benutzeroberfläche so eingestellt, dass nur die Schaltfläche &quot;Schließen&quot;angezeigt wird.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * Die Seite &quot;Umgebung&quot;wurde neu gestaltet.
 
@@ -77,7 +77,7 @@ Content to come
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
 * Die Umgebung auf der Übersichtsseite wird jetzt bis zu drei Umgebung Liste. Die Benutzer können auf die Schaltfläche &quot;Alle **** anzeigen&quot;klicken, um zur Zusammenfassungsseite der Umgebung zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
-
+Weitere Informationen finden Sie unter Umgebung [](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) anzeigen.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
