@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.10.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
+source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 21%
+source-wordcount: '869'
+ht-degree: 20%
 
 ---
 
@@ -102,7 +102,7 @@ Weitere Informationen finden Sie unter Umgebung [](/help/implementing/cloud-mana
 
 ### Workflows {#workflows}
 
-* Unterstützung für die Suche von Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Nutzlastpfad und Beginn-Datum hinzugefügt.
+* Es wurde Unterstützung für die Suche von Workflow-Instanzen auf Grundlage von Workflow-Titel, Workflow-Modell, Status, Initiator, Nutzlastpfad und Beginn-Datum hinzugefügt. Siehe [Instanzen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)des Sucharbeitsablaufs.
 
 ## Content Transfer-Tool {#content-transfer-tool}
 
