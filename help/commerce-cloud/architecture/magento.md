@@ -1,10 +1,11 @@
 ---
 title: AEM- und Magento-Integration mithilfe von Commerce Integration Framework
-description: AEM- und Magento-Integration mithilfe von Commerce Integration Framework
+description: AEM und Magento werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorie-Picker und die Produktkonsole verwenden, um Produkt- und Kategorie-Daten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
 
-AEM und Magento werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM Author Produkt- und Kategorie-Picker und die Produktkonsole verwenden, um Produkt- und Kategorie-Daten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
+AEM und Magento werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorie-Picker und die Produktkonsole verwenden, um Produkt- und Kategorie-Daten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 
 ## Architekturüberblick {#overview}
 
