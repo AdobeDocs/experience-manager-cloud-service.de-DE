@@ -1,16 +1,17 @@
 ---
 title: CIF-Hauptkomponenten anpassen
 description: Erfahren Sie, wie Sie AEM CIF-Hauptkomponenten anpassen. Das Lernprogramm beschreibt, wie eine CIF-Core-Komponente sicher erweitert werden kann, um unternehmensspezifische Anforderungen zu erfüllen. Erfahren Sie, wie Sie eine GraphQL-Abfrage erweitern, um ein benutzerdefiniertes Attribut zurückzugeben und das neue Attribut in einer CIF-Core-Komponente anzuzeigen.
-sub-product: commerce
-topics: development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -34,7 +35,7 @@ Die Marke Venia hat vor kurzem begonnen, einige Produkte mit nachhaltigen Materi
 
 ## Voraussetzungen {#prerequisites}
 
-Zum Abschluss dieses Lernprogramms ist eine lokale Entwicklungs-Umgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert ist und mit einer Magento-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklung mit AEM als Cloud Service-SDK](../develop.md). Um dem Tutorial vollständig zu folgen, benötigen Sie Berechtigungen, um einem Produkt [in Magento](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Attribute hinzuzufügen.
+Zum Abschluss dieses Lernprogramms ist eine lokale Umgebung erforderlich. Dazu gehört eine laufende Instanz von AEM, die konfiguriert ist und mit einer Magento-Instanz verbunden ist. Überprüfen Sie die Anforderungen und Schritte zum [Einrichten einer lokalen Entwicklung mit AEM als Cloud Service-SDK](../develop.md). Um dem Tutorial vollständig zu folgen, benötigen Sie Berechtigungen, um einem Produkt [in Magento](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Attribute hinzuzufügen.
 
 Sie benötigen außerdem eine GraphQL IDE wie [GraphiQL](https://github.com/graphql/graphiql) oder eine Browsererweiterung, um die Codebeispiele und -tutorials auszuführen. Wenn Sie eine Browsererweiterung installieren, stellen Sie sicher, dass diese die Möglichkeit hat, Anforderungsheader festzulegen. In Google Chrome ist der [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) eine Erweiterung, die den Auftrag ausführen kann.
 
@@ -259,7 +260,7 @@ Verwenden Sie [die IDE Ihrer Wahl](https://docs.adobe.com/content/help/en/experi
    ...
    ```
 
-   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wird.
+   Die `@PostConstruct` Anmerkung stellt sicher, dass diese Methode aufgerufen wird, sobald das Sling-Modell initialisiert wurde.
 
    Beachten Sie, dass die GraphQL-Abfrage des Produkts bereits mit der `extendProductQueryWith` Methode zum Abrufen des zusätzlichen `created_at` Attributs erweitert wurde. Dieses Attribut wird später als Teil der `isShowBadge()` Methode verwendet.
 
@@ -433,7 +434,7 @@ An diesem Punkt funktioniert die Logik, wann das **Eco Friendly** Zeichen angeze
    ![Eco-freundliche SVG hinzugefügt](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
 1. Open the file `productteaser.scss` at `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
-1. hinzufügen die folgenden Regeln für die `.productteaser` Klasse:
+1. hinzufügen die folgenden Segmentregeln innerhalb der `.productteaser` Klasse:
 
    ```scss
    .productteaser {
