@@ -1,10 +1,18 @@
 ---
 title: Erweiterte URL-Konfigurationen
-description: Erweiterte URL-Konfigurationen
+description: Erfahren Sie, wie Sie die URLs für Produkt- und Kategorien-Seiten anpassen. Dies ermöglicht Implementierungen, URLs für Suchmaschinen zu optimieren und die Erkennung zu fördern.
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '789'
 ht-degree: 4%
 
 ---
@@ -51,7 +59,7 @@ Es ist auch möglich, den `UrlProvider` Dienst durch einen komplett benutzerdefi
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
-Zusätzlich zum `UrlProvider`können [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfiguriert werden, um URLs umzuschreiben und zu verarbeiten. Das AEM Archetype-Projekt bietet außerdem [eine Beispielkonfiguration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) zum Konfigurieren einiger Sling-Zuordnungen für Port 4503 (publish) und 80 (dispatcher).
+Zusätzlich `UrlProvider`ist es möglich, [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) zu konfigurieren, um URLs umzuschreiben und zu verarbeiten. Das AEM Archetype-Projekt bietet außerdem [eine Beispielkonfiguration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) zum Konfigurieren einiger Sling-Zuordnungen für Port 4503 (publish) und 80 (dispatcher).
 
 ## Kombinieren mit AEM Dispatcher {#dispatcher}
 
