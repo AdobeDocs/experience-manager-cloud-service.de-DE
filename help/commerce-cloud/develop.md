@@ -1,10 +1,16 @@
 ---
 title: Entwicklung AEM Handels für AEM als Cloud Service
-description: Entwicklung AEM Handels für AEM als Cloud Service
+description: Erfahren Sie, wie Sie mit dem AEM Projektarchiv ein kommerziell unterstütztes AEM erstellen. Erfahren Sie, wie Sie das Projekt mithilfe des AEM als Cloud Service-SDK auf einer lokalen Entwicklungs-Umgebung erstellen und bereitstellen.
+topics: Commerce, Development
+feature: Commerce Integration Framework
+version: cloud-service
+doc-type: tutorial
+kt: 5826
+thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '987'
 ht-degree: 10%
 
 ---
