@@ -2,10 +2,10 @@
 title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
 description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.10.
 
 * Im Ruhezustand befindliche Umgebungen verfügen jetzt über einen separaten Status.
 
-* Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
+* Der Cloud Manager Build Container unterstützt jetzt das Kompilieren von Projekten mit Java 8 oder Java 11. Java 11 wird vom Maven Toolchain-System unterstützt.
 
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
