@@ -1,11 +1,12 @@
 ---
 title: Einführung in AEM Handel als Cloud Service
-description: Neue Funktionen in AEM Commerce als Cloud Service.
+description: Experience Manager Commerce als Cloud Service besteht aus Commerce Integration Framework (CIF), das von der Adobe empfohlen wird, Commerce-Dienstleistungen von Magento und anderen Drittanbieter-Commerce-Lösungen mit dem Experience Cloud zu integrieren und zu erweitern.
+thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 1%
+source-wordcount: '1357'
+ht-degree: 2%
 
 ---
 
@@ -42,29 +43,29 @@ Das CIF-Add-On bietet Zugriff auf kommerzielle Authoring-Werkzeuge wie Produktko
 
 ### AEM CIF-Kernkomponenten {#aem-cif-core}
 
-Die AEM CIF-Core-Komponenten sind serverseitige und clientseitige gerenderte Komponenten mit Magento GraphQL-Unterstützung. Sie werden dazu verwendet, statische, speicherbare und SEO-freundliche Commerce-Stores zu erstellen, die auf AEM Technologien basieren.
+Die AEM CIF-Kernkomponenten sind serverseitige und clientseitige gerenderte Komponenten mit Magento GraphQL-Unterstützung. Sie werden dazu verwendet, statische, speicherbare und SEO-freundliche Commerce-Stores zu erstellen, die auf AEM Technologien basieren.
 
 Grundlegende Komponenten werden bereitgestellt, die in Commerce-Implementierungen wie Produktdetails, Produktnavigation, Liste usw. verwendet werden. Sie können unverändert verwendet oder erweitert werden.
 
-Die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) funktionieren wie die [AEM Sites Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) , sind aber auf kommerzielle Anwendungsfälle spezialisiert.
+Die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) funktionieren wie die [AEM Sites-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) , sind aber auf kommerzielle Anwendungsfälle spezialisiert.
 
-Die folgenden Komponenten bieten folgende Hauptvorteile:
+Die folgenden Komponenten bieten folgende Vorteile:
 
 * Sie sind einfach in Ihren Projekten zu verwenden.
 * Sie können wie vorhanden oder mit sehr minimalen Änderungen verwendet werden.
 * Sie bieten Best Practices für die Verbindung mit Magento über GraphQL-APIs oder REST-APIs.
 
-Komponenten wie Product Teaser und Product Carousel werden bereitgestellt, damit AEM Author Erlebnisseiten in AEM erstellen können, indem Marketing- und Commerce-Inhalte kombiniert werden. Diese Komponenten können einfach per Drag &amp; Drop auf eine Inhaltsseite gezogen werden, die in AEM erstellt wurde und mit bestimmten Produkten oder Kategorien verknüpft ist. Dazu verwenden Sie die CIF-Authoring-Werkzeuge wie die Produkt- oder Kategorie-Auswahl in Cloud Service.
+Komponenten wie Product Teaser und Product Carousel werden bereitgestellt, damit AEM-Autoren Erlebnisseiten in AEM erstellen können, wobei Marketing- und Commerce-Inhalte kombiniert werden. Diese Komponenten können einfach per Drag &amp; Drop auf eine Inhaltsseite gezogen werden, die in AEM erstellt wurde und mit bestimmten Produkten oder Kategorien verknüpft ist. Dazu verwenden Sie die CIF-Authoring-Werkzeuge wie die Produkt- oder Kategorie-Auswahl in Cloud Service.
 
 Alle Komponenten sind Open-Source auf [GitHub](https://github.com/adobe/aem-core-cif-components). Dies zeigt volle Transparenz über die in Zukunft vorgenommenen Änderungen und ermöglicht Ihnen, die neueste Version sehr einfach zu bekommen. Sie können auch Pull-Anforderungen für Verbesserungen und Fehlerbehebungen bereitstellen, die integriert werden können.
 
 ### AEM Venedig-Storefront {#aem-venia-storefront}
 
-Die [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) ist ein moderner, produktionsfertiger Referenzspeicher, der eine einfache B2C-Geschäftsreise zeigt. Es kann verwendet werden, um kommerzielle Projekte zu starten und Projekte mithilfe von AEM, CIF und Magento zu beschleunigen. Es zeigt Best Practices für die Integration von AEM und Magento und zeigt, wie die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) und - [AEM Sites Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) verwendet werden und unterstützt Adobe Commerce GraphQL-Endpunkte. Es bietet auch eine Pre-Sales-Website mit einer Referenz-Website, um die Integration zwischen AEM und Magento zu demonstrieren.
+Die [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) ist ein moderner, produktionsfertiger Referenzspeicher, der eine einfache B2C-Geschäftsreise zeigt. Es kann verwendet werden, um kommerzielle Projekte zu starten und Projekte mithilfe von AEM, CIF und Magento zu beschleunigen. Es zeigt Best Practices für die Integration von AEM und Magento und zeigt, wie die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) und [AEM Sites-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) verwendet werden und unterstützt Adobe Commerce GraphQL-Endpunkte. Es bietet auch eine Pre-Sales-Website mit einer Referenz-Website, um die Integration zwischen AEM und Magento zu demonstrieren.
 
 Die AEM Venia Storefront ist eine gemischte Anwendung, bei der AEM das Glas besitzt und das Magento das Commerce-Backend auf eine kopflose Weise beherrscht. Sowohl das serverseitige Rendering als auch das clientseitige Rendering werden im Store verwendet. Das serverseitige Rendering wird verwendet, um statischen Inhalt bereitzustellen, und das clientseitige Rendering wird zur Bereitstellung dynamischer Inhalte verwendet.
 
-Produkt- und Katalogseiten sind relativ statisch und werden serverseitig mit AEM CIF-Kernkomponenten wie Produktdetails und Produktdokumentation auf generischen Vorlagen dargestellt, die in AEM erstellt wurden. Diese Komponenten erhalten Daten von Magento über GraphQL APIs.
+Produkt- und Katalogseiten sind relativ statisch und werden serverseitig mit AEM CIF-Kernkomponenten wie Produktdetails und Produktdokumentation auf generischen Vorlagen dargestellt, die in AEM erstellt wurden. Diese Komponenten erhalten Daten aus Magento über GraphQL APIs.
 Diese Seiten werden dynamisch erstellt, auf dem Server wiedergegeben, im Cache des AEM Dispatchers zwischengespeichert und dann an den Browser gesendet.
 Für dynamischere Attribute wie Bestand oder Preis werden hingegen clientseitige Komponenten verwendet. Clientseitige Komponenten oder Webkomponenten rufen Daten direkt aus dem Magento über GraphQL-APIs ab, und der Inhalt wird dann im Browser wiedergegeben.
 
