@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 60%
+source-wordcount: '1692'
+ht-degree: 48%
 
 ---
 
@@ -18,7 +18,7 @@ Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informatione
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte bereitzustellen. Hier festgelegte [Aktivitäten](activities.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
-AEM ermöglicht Ihnen die einfache Personalisierung der Benutzererfahrungen. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
+AEM ermöglicht es Ihnen, die Benutzererfahrungen einfach zu personalisieren. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
@@ -26,14 +26,14 @@ The [Audiences](audiences.md) console is used to manage segments for ContextHub 
 
 Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus.
 
-![Verwalten von Audiencen](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![Verwalten von Audiencen](../assets/contexthub-segmentation-audiences.png)
 
 ## Segment-Editor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 The **Segment Editor** allows you to easily modify a segment. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
-![Segment-Editor](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![Segment-Editor](../assets/contexthub-segment-editor.png)
 
 Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
 
@@ -87,13 +87,15 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 So legen Sie Ihr neues Segment fest:
 
-1. Klicken oder tippen Sie nach dem [Zugriff auf die Segmente](#accessing-segments) auf die Schaltfläche „Erstellen“ und wählen Sie **ContextHub-Segment erstellen** aus.
+1. Nach dem [Zugriff auf die Segmente](#accessing-segments)[navigieren Sie zu dem Ordner](#organizing-segments) , in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner.
 
-   ![hinzufügen](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie ContextHub-Segment **erstellen**.
+
+   ![hinzufügen](../assets/contexthub-create-segment.png)
 
 1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
 
-   ![Neues Segment](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![Neues Segment](../assets/contexthub-new-segment.png)
 
    Jedes Segment verfügt über einen Boost-Parameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
@@ -104,7 +106,7 @@ So legen Sie Ihr neues Segment fest:
 1. Ziehen Sie einen Vergleich oder Verweis in den Segment-Editor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel testen wir Menschen in Basel.
 
-   ![Tests für Menschen in Basel](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![Tests für Menschen in Basel](../assets/contexthub-comparing-property-value.png)
 
    Legen Sie möglichst immer einen **Datentyp** fest, um die ordnungsgemäße Bewertung Ihrer Vergleiche sicherzustellen. Weitere Informationen finden Sie unter [Vergleiche](#comparisons).
 
@@ -130,7 +132,7 @@ Im folgenden Beispiel werden Besucher ausgewählt, die in unserer Schweizer Ziel
 
 Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
 
-![Segment mit ODER-Operator](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![Segment mit ODER-Operator](../assets/contexthub-or-operator.png)
 
 Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
@@ -186,9 +188,78 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
 1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
 
+## Segmente organisieren {#organizing-segments}
+
+Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwalten sein. In solchen Fällen kann es nützlich sein, Ordner zur Verwaltung Ihrer Segmente zu erstellen.
+
+### Create a New Folder {#create-folder}
+
+1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+
+   ![hinzufügen](../assets/contexthub-create-segment.png)
+
+1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner ein.
+   * Der **Titel** sollte beschreibend sein.
+   * Der **Name** wird zum Knotennamen im Repository.
+      * Es wird automatisch auf der Grundlage des Titels generiert und entsprechend [AEM Benennungskonventionen angepasst.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Er kann bei Bedarf angepasst werden.
+
+   ![Ordner erstellen](../assets/contexthub-create-folder.png)
+
+1. Tippen oder klicken Sie auf **Erstellen**.
+
+   ![Ordner bestätigen](../assets/contexthub-confirm-folder.png)
+
+1. Der Ordner wird in der Liste der Segmente angezeigt.
+   * Die Sortierung der Spalten hat Auswirkungen darauf, wo in der Liste der neue Ordner angezeigt wird.
+   * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
+      ![Der neue Ordner](../assets/contexthub-folder.png)
+
+### Vorhandene Ordner ändern {#modify-folders}
+
+1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+
+   ![Ordner auswählen](../assets/contexthub-select-folder.png)
+
+1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen** , um den Ordner umzubenennen.
+
+1. Geben Sie einen neuen **Ordnertitel** ein und tippen oder klicken Sie auf **Speichern**.
+
+   ![Ordner umbenennen](../assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Beim Umbenennen von Ordnern kann nur der Titel geändert werden. Der Name kann nicht geändert werden.
+
+### Ordner löschen
+
+1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+
+   ![Ordner auswählen](../assets/contexthub-select-folder.png)
+
+1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen** , um den Ordner zu löschen.
+
+1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
+
+   ![Löschen bestätigen](../assets/contexthub-confirm-segment-delete.png)
+
+   * Tippen oder klicken Sie zur Bestätigung auf **Löschen** .
+   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+
+1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss der Löschvorgang bestätigt werden.
+
+   ![Löschen von Kindern bestätigen](../assets/contexthub-confirm-segment-child-delete.png)
+
+   * Tippen oder klicken Sie zur Bestätigung auf Löschen **erzwingen** .
+   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+
+>[!NOTE]
+>
+> Es ist nicht möglich, ein Segment von einem Ordner in einen anderen zu verschieben.
+
 ## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
-Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md)getestet werden.**
+Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md) getestet werden.**
 
 1. Vorschau einer Seite
 1. Klicken Sie auf das ContextHub-Symbol, damit die ContextHub-Symbolleiste angezeigt wird.
@@ -197,11 +268,11 @@ Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe
 
 Beispielsweise basiert unsere einfache Segmentdefinition zur Identifizierung von Benutzern in Basel auf dem Standort des Benutzers. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
 
-![Segment, das aufgelöst wird](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![Segment, das aufgelöst wird](../assets/contexthub-segment-resolve.png)
 
 Oder ob es nicht aufgelöst wurde:
 
-![Segment, das nicht aufgelöst wird](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![Segment, das nicht aufgelöst wird](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
