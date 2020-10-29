@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und zur lokalen Gruppe der AEM in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer-Tools nicht abrufen.
 
+* Derzeit beträgt die Standardgröße von MongoDB für eine AEM als Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, dass Sie für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einreichen, um die MongoDB-Größe zu erhöhen.
+
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
-* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar.
+* Nachdem Sie die *Extraktion* des Inhaltsübermittlungsprozesses abgeschlossen haben und bevor Sie die *Übergangsphase* starten, um Inhalte in Ihre AEM als Cloud Service- *Stage* - oder *Produktionsinstanz* zu übernehmen, müssen Sie ein Support-Ticket protokollieren, um die Adobe über Ihre Absicht zu informieren, *Ingestion* ** auszuführen, damit die Adobe sicherstellen kann, dass während desIngestionProcess keine Unterbrechungen auftreten. Sie müssen das Support-Ticket 1 Woche vor dem geplanten *Ingestion* -Datum einloggen. Nachdem Sie das Support-Ticket übermittelt haben, gibt das Supportteam Ihnen Anleitungen zu den nächsten Schritten.
+   * Protokollieren Sie ein Support-Ticket mit den folgenden Details:
+   1. Genaues Datum und voraussichtliche Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Ingestion* -Phase Beginn beabsichtigen.
+   2. Umgebung-Typ (Phase oder Produktion), in den Sie Daten erfassen möchten.
+   3. Programm-ID
 
-* Derzeit beträgt die Standardgröße von MongoDB für eine AEM als Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, dass Sie für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einreichen, um die MongoDB-Größe zu erhöhen.
+* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Bitte stellen Sie außerdem sicher, dass während der *Engpass* -Phase keine Cloud Manager-Pipelines ausgeführt werden.
+
 
 ## Verfügbarkeit {#availability}
 
