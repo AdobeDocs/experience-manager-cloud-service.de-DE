@@ -1,10 +1,10 @@
 ---
 title: Zwischenspeicherung und Leistung
-description: Zwischenspeicherung und Leistung
+description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Content-Caching zu aktivieren, um die Leistung Ihrer Commerce-Implementierung zu optimieren.
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -44,11 +44,11 @@ venia/components/structure/navigation:true:10:600
 
 wenn der [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) verwendet wird. Beachten Sie die Verwendung des Komponenten-Proxynamens `venia/components/structure/navigation`, **nicht** den Namen der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`).
 
-Die Zwischenspeicherung für andere Komponenten sollte auf Projektbasis festgelegt werden, in der Regel in Abstimmung mit der auf der Ebene des Dispatchers konfigurierten Zwischenspeicherung. Denken Sie daran, dass diese Zwischenspeicher nicht aktiv ungültig gemacht werden, daher sollte die Cachedauer sorgfältig eingestellt werden. Es gibt keine &quot;Einheitsgröße für alle&quot;-Werte, die mit allen möglichen Projekten und Anwendungsfällen übereinstimmen. Stellen Sie sicher, dass Sie eine Cachestrategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
+Die Zwischenspeicherung für andere Komponenten sollte auf Projektbasis definiert werden, üblicherweise in Abstimmung mit der auf Dispatcher-Ebene konfigurierten Zwischenspeicherung. Denken Sie daran, dass diese Zwischenspeicher nicht aktiv ungültig gemacht werden, daher sollte die Cachedauer sorgfältig eingestellt werden. Es gibt keine &quot;Einheitsgröße für alle&quot;-Werte, die mit allen möglichen Projekten und Anwendungsfällen übereinstimmen. Stellen Sie sicher, dass Sie eine Cachestrategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
 
 ## Dispatcher caching {#dispatcher}
 
-Das Zwischenspeichern AEM Seiten oder Fragmente im [AEM Dispatcher](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html) ist eine Best Practice für AEM Projekte. Normalerweise beruht sie auf Ungültigmachungstechniken, die sicherstellen, dass alle Inhaltsänderungen in AEM im Dispatcher ordnungsgemäß aktualisiert werden. Dies ist ein Kernmerkmal der Cachestrategie für AEM Dispatcher.
+Das Zwischenspeichern AEM Seiten oder Fragmente im [AEM Dispatcher](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html) ist eine Best Practice für AEM Projekte. Normalerweise beruht sie auf Ungültigmachungstechniken, die sicherstellen, dass alle in AEM geänderten Inhalte im Dispatcher ordnungsgemäß aktualisiert werden. Dies ist ein Kernmerkmal der AEM Dispatcher-Cachestrategie.
 
 Neben reinem AEM verwaltetem Inhalt kann CIF eine Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL von Magento abgerufen werden. Während sich die Seitenstruktur selbst möglicherweise nie ändert, kann sich der Commerce-Inhalt ändern, z. B. wenn sich einige Produktdaten (Name, Preis usw.) im Magento ändern.
 
