@@ -1,11 +1,17 @@
 ---
 title: Erste Schritte mit AEM Commerce als Cloud Service
-description: Erste Schritte mit AEM Commerce als Cloud Service
+description: Erfahren Sie, wie Sie ein Commerce-aktiviertes AEM auf einem laufenden AEM als Cloud-Dienst-Umgebung bereitstellen. Verwenden Sie Funktionen von Adobe Cloud Manager und eine CI/CD-Pipeline, um den Venia-Referenzspeicher auf einer laufenden Umgebung zu erstellen.
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 5%
+source-wordcount: '600'
+ht-degree: 6%
 
 ---
 
