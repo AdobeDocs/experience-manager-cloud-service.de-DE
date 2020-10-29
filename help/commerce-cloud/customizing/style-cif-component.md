@@ -1,16 +1,17 @@
 ---
 title: Stil AEM CIF-Kernkomponenten
 description: Erfahren Sie, wie Sie die CIF-Hauptkomponenten gestalten AEM. Das Lernprogramm beschreibt, wie clientlibs und clientlibs zum Bereitstellen und Verwalten von CSS und JavaScript für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwendet werden. In diesem Lernprogramm wird auch erläutert, wie das ui.frontend-Modul und ein Webpack-Projekt in den End-to-End-Build-Prozess integriert werden.
-sub-product: commerce
-topics: front-end-development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 4%
