@@ -1,11 +1,11 @@
 ---
 title: 'Verfassen zielgerichteter Inhalte im Targeting-Modus '
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
-translation-type: ht
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+workflow-type: tm+mt
 source-wordcount: '5348'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 
 Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Informationen hierzu finden Sie in der Anleitung zur Integration mit Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![Targeting für Inhalte](/help/sites-cloud/authoring/assets/targeted-content.png)
+![Targeting für Inhalte](../assets/targeted-content.png)
 
 Die im Target-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optionen der [Aktivitätskonsole](/help/sites-cloud/authoring/personalization/activities.md) wider:
 
@@ -53,11 +53,11 @@ So wechseln Sie in den Targeting-Modus:
 1. Öffnen Sie die Seite, auf der Sie zielgerichtete Inhalte veröffentlichen möchten.
 1. Klicken oder tippen Sie in der Symbolleiste oben auf der Seite auf das Dropdown-Menü für den Modus, um die verfügbaren Modustypen anzuzeigen.
 
-   ![Targeting-Modus](/help/sites-cloud/authoring/assets/targeted-mode.png)
+   ![Targeting-Modus](../assets/targeted-mode.png)
 
 1. Klicken oder tippen Sie auf **Targeting**. Die Targeting-Optionen werden daraufhin oben auf der Seite eingeblendet.
 
-   ![Targeting-Symbolleiste](/help/sites-cloud/authoring/assets/targeted-toolbar.png)
+   ![Targeting-Symbolleiste](../assets/targeted-toolbar.png)
 
 ## Hinzufügen von Aktivitäten im Targeting-Modus {#adding-an-activity-using-targeting-mode}
 
@@ -118,7 +118,7 @@ So fügen Sie eine Aktivität hinzu:
 1. Wählen Sie aus dem Dropdown-Menü **Aktivität** diejenige Aktivität aus, für die zielgerichtete Inhalte verfasst werden sollen.
 1. Möchten Sie die Steuerungen einblenden, mit denen Sie durch das Targeting-Verfahren navigieren können, klicken oder tippen Sie auf **Targeting starten**.
 
-   ![Targeting starten](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
+   ![Targeting starten](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
@@ -142,15 +142,15 @@ Wählen Sie nach [Beginn des Targeting-Verfahrens](#the-targeting-process-create
 
 Erlebnisse werden im Bereich „Zielgruppen“ angezeigt. Im folgenden Beispiel finden sich unter anderem die Erlebnisse **Standard**, **Frauen**, **Frauen über 30** und **Frauen unter 30**. In diesem Beispiel wird das Standardangebot einer Targeting-**Bild**-Komponente dargestellt.
 
-![Targeting-Bild-Komponente](/help/sites-cloud/authoring/assets/targeted-image-component.png)
+![Targeting-Bild-Komponente](../assets/targeted-image-component.png)
 
 Bei Auswahl eines anderen Erlebnisses wird in der Bild-Komponente das Angebot des entsprechenden Erlebnisses gezeigt.
 
-![Targeting-Bild-Komponente geändert](/help/sites-cloud/authoring/assets/targeted-image-different.png)
+![Targeting-Bild-Komponente geändert](../assets/targeted-image-different.png)
 
 Wenn ein Erlebnis ausgewählt wurde und die Targeting-Komponente kein Angebot für dieses Erlebnis enthält, wird in der Komponente **Angebot hinzufügen** angezeigt. Diese Option wird auf dem halbtransparenten Standardangebot überlagert. Wenn für ein Erlebnis kein Angebot erstellt wurde, wird das **Standardangebot** für das Segment angezeigt, das dem Erlebnis zugeordnet ist.
 
-![Angebot hinzufügen](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
+![Angebot hinzufügen](../assets/targeted-add-offer.png)
 
 Das Standardereignis wird ebenfalls angezeigt, wenn die Besuchereigenschaften nicht mit Erlebnissen zugeordneten Segmenten übereinstimmen. Informationen hierzu finden Sie unter [Erlebnisse im Targeting-Modus hinzufügen](#adding-and-removing-experiences-using-targeting-mode).
 
@@ -158,11 +158,11 @@ Das Standardereignis wird ebenfalls angezeigt, wenn die Besuchereigenschaften ni
 
 Angebote, die [auf der Seite verfasst](#adding-a-custom-offer) und nur für ein einziges Erlebnis verwendet werden, werden als individuelle Angebote bezeichnet. Das folgende Bild wurde über dem Inhalt eines individuellen Angebots platziert:
 
-![Symbol für benutzerspezifisches Angebot](/help/sites-cloud/authoring/assets/targeted-custom-offer-icon.png)
+![Symbol für benutzerspezifisches Angebot](../assets/targeted-custom-offer-icon.png)
 
 Angebote, die [aus einer Angebotsbibliothek hinzugefügt werden](#adding-an-offer-from-an-offer-library), werden mit dem folgenden Bild platziert:
 
-![Symbol für Bibliotheksangebot](/help/sites-cloud/authoring/assets/targeted-library-offer-icon.png)
+![Symbol für Bibliotheksangebot](../assets/targeted-library-offer-icon.png)
 
 Individuelle Angebote können in einer Angebotsbibliothek gespeichert werden, falls Sie sich dazu entscheiden, sie erneut zu verwenden. Sie können Bibliotheksangebote andererseits auch in individuelle Angebote umwandeln, wenn Sie den Inhalt eines Erlebnisses bearbeiten. Im Anschluss an die Bearbeitung kann das Angebot dann erneut in der Bibliothek gespeichert werden. 
 
@@ -174,7 +174,7 @@ Im Erstellungsschritt des [Targeting-Verfahrens](#the-targeting-process-create-t
 
 So fügen Sie Erlebnisse hinzu:
 
-1. Um ein Erlebnis hinzuzufügen, klicken oder tippen Sie auf **+** **Erlebnis-Targeting hinzufügen**. Diese Option befindet sich unter den bereits bestehenden Erlebnissen im Bereich **Zielgruppen**.
+1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
 1. Wählen Sie eine Zielgruppe aus. Standardmäßig wird der Name des Erlebnisses übernommen. Falls gewünscht, können Sie jedoch auch einen anderen Namen eingeben. Klicken oder tippen Sie auf **OK**.
 
 #### Erlebnisse im Targeting-Modus entfernen     {#removing-experiences-using-targeting-mode}
@@ -183,7 +183,7 @@ So löschen Sie Erlebnisse:
 
 1. Klicken oder tippen Sie auf den Pfeil neben dem Erlebnisnamen.
 
-   ![Erlebnis löschen](/help/sites-cloud/authoring/assets/targeted-delete-experiene.png)
+   ![Erlebnis löschen](../assets/targeted-delete-experiene.png)
 
 1. Klicken Sie auf **Löschen**.
 
@@ -239,11 +239,11 @@ Gehen Sie folgendermaßen vor, wenn Sie mit dem [Targeting begonnen haben](#the-
 
 1. Klicken oder tippen Sie auf die Komponente, deren Targeting Sie durchführen möchten. Es wird die Symbolleiste der Komponente eingeblendet, die der hier gezeigten Leiste ähnelt.
 
-   ![Targeting-Komponente](/help/sites-cloud/authoring/assets/targeted-component.png)
+   ![Targeting-Komponente](../assets/targeted-component.png)
 
 1. Klicken oder tippen Sie auf das Target-Symbol.
 
-   ![Target-Schaltfläche](/help/sites-cloud/authoring/assets/targeted-target-button.png)
+   ![Target-Schaltfläche](../assets/targeted-target-button.png)
 
    Der Komponenteninhalt ist das Angebot für das Standarderlebnis. Beim Festlegen einer Komponente wird der zugehörige Standardknoten für jedes Erlebnis repliziert. Dies ist zum Modifizieren des richtigen Inhaltsknotens beim erlebnisspezifischen Bearbeiten erforderlich. Diesen Ereignissen, die nicht dem Standardereignis entsprechen, können Sie entweder [ein individuelles Angebot](#adding-a-custom-offer) oder [ein Bibliotheksangebot](#adding-an-offer-from-an-offer-library) hinzufügen.
 
@@ -261,15 +261,15 @@ Da es sich bei der Target-Komponente um einen Container handelt, wird diese als 
 
 Im Targeting-Modus wird die Target-Komponente mit blauem Rahmen dargestellt und die Ablagezielnachricht kennzeichnet Komponenten mit Targeting.
 
-![Target-Dropzone](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![Target-Dropzone](../assets/targeted-drop-target.png)
 
 Im Bearbeitungsmodus wird die Target-Komponente mit Zielscheibensymbol dargestellt.
 
-![Symbol für Target-Dropzone](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
+![Symbol für Target-Dropzone](../assets/targeted-drop-target-icon.png)
 
 Ziehen Sie Komponenten in die Target-Komponente, werden diese zu Targeting-Komponenten.
 
-![Dropzone mit Targeting-Komponenten](/help/sites-cloud/authoring/assets/targeted-drop-zone-populated.png)
+![Dropzone mit Targeting-Komponenten](../assets/targeted-drop-zone-populated.png)
 
 Fügen Sie der Target-Komponente eine Komponente hinzu, stellt diese Inhalte für ein bestimmtes Erlebnis bereit. Zur Festlegung des Erlebnisses müssen Sie dieses vor dem Hinzufügen der Komponenten auswählen.
 
@@ -303,7 +303,7 @@ Sollten Sie sich dazu entschließen, das Angebot auch für andere Erlebnisse nut
 1. Wählen Sie das Erlebnis aus, dem das Angebot hinzugefügt werden soll.
 1. Möchten Sie das Komponentenmenü einblenden, klicken oder tippen Sie auf die Targeting-Komponente, der das Angebot hinzugefügt wird.
 
-   ![Hinzufügen eines Angebots](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
+   ![Hinzufügen eines Angebots](../assets/targeted-component-menu.png)
 
 1. Klicken oder tippen Sie auf das Plus-Zeichen (+).
 
@@ -311,7 +311,7 @@ Sollten Sie sich dazu entschließen, das Angebot auch für andere Erlebnisse nut
 
 1. Klicken oder tippen Sie auf das Angebot, um das Angebotsmenü einzublenden, und klicken oder tippen Sie auf die Bearbeitungsschaltfläche.
 
-   ![Symbolleiste der Target-Komponente](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
+   ![Symbolleiste der Target-Komponente](../assets/targeted-offer-menu.png)
 
 1. Bearbeiten Sie den Inhalt der Komponente.
 
@@ -324,33 +324,33 @@ Dem Standarderlebnis lassen sich keine Bibliotheksangebote hinzufügen.
 1. Wählen Sie das Erlebnis aus, dem das Angebot hinzugefügt werden soll.
 1. Möchten Sie das Komponentenmenü einblenden, klicken oder tippen Sie auf die Targeting-Komponente, der das Angebot hinzugefügt wird.
 
-   ![Targeting-Angebot](/help/sites-cloud/authoring/assets/targeted-add-offer-large.png)
+   ![Targeting-Angebot](../assets/targeted-add-offer-large.png)
 
 1. Klicken oder tippen Sie auf das Ordnersymbol.
 
-   ![Ordnersymbol](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
+   ![Ordnersymbol](../assets/targeted-folder-button.png)
 
 1. Wählen Sie das gewünschte Angebot aus der Bibliothek aus und klicken oder tippen Sie auf das entsprechende Häkchen.
 
-   ![Angebotsbibliothek](/help/sites-cloud/authoring/assets/targeted-select-content.png)
+   ![Angebotsbibliothek](../assets/targeted-select-content.png)
 
    Mit der Angebotswahl können Sie die Angebote durchsuchen oder filtern. Beim Durchsuchen oder Filtern der Angebote können diese zudem sortiert und deren Anzeige angepasst werden. Die oben rechts gezeigte Zahl gibt an, wie viele Angebote in der aktuellen Bibliothek verfügbar sind.
 
    * Klicken oder tippen Sie auf **Durchsuchen**, um zu einem anderen Ordner zu navigieren. Es öffnet sich ein Navigationsfenster, in dem Sie durch Klicken auf die Pfeile tiefer in die Ordnerstruktur vordringen können. Klicken oder tippen Sie erneut auf **Durchsuchen**, um das Navigationsfenster zu schließen.
 
-   ![Inhalt durchsuchen](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
+   ![Inhalt durchsuchen](../assets/targeted-select-content-browse.png)
 
    * Klicken oder tippen Sie auf **Filter**, um die Angebote nach Stichwörtern oder Tags zu filtern. Stichwörter werden manuell eingegeben, während sich Tags aus dem entsprechenden Dropdown-Menü auswählen lassen. Klicken oder tippen Sie erneut auf **Filter**, um das Filterfenster zu schließen.
 
-   ![Inhalt filtern](/help/sites-cloud/authoring/assets/targeted-filter.png)
+   ![Inhalt filtern](../assets/targeted-filter.png)
 
    * Durch Klicken oder Tippen auf den Pfeil neben **Von neu nach alt** können Sie anpassen, wie die Angebote sortiert werden sollen. Angebote können von neu nach alt oder von alt nach neu sortiert werden.
 
-   ![Sortierreihenfolge filtern](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
+   ![Sortierreihenfolge filtern](../assets/targeted-filter-sort.png)
 
    Klicken oder tippen Sie auf das Symbol neben **Anzeigen als**, um Angebote als Kacheln oder Liste anzuzeigen.
 
-   ![Als Schaltfläche anzeigen](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
+   ![Als Schaltfläche anzeigen](../assets/targeted-view-as-button.png)
 
 #### Hinzufügen individueller Angebote zu einer Bibliothek {#adding-a-custom-offer-to-a-library}
 
@@ -361,7 +361,7 @@ Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wie
 1. Wählen Sie das gewünschte Erlebnis aus, um das individuelle Angebot anzuzeigen.
 1. Klicken oder tippen Sie auf das individuelle Angebot, um das Angebotsmenü einzublenden, und klicken oder tippen Sie auf das Symbol **Angebot in Angebotsbibliothek speichern**.
 
-   ![Angebot in Angebotsbibliothek speichern](/help/sites-cloud/authoring/assets/targeted-save-offer-library-button.png)
+   ![Angebot in Angebotsbibliothek speichern](../assets/targeted-save-offer-library-button.png)
 
 1. Geben Sie einen Angebotsnamen ein und wählen Sie die Bibliothek aus, der das Angebot hinzugefügt werden soll. Klicken oder tippen Sie abschließend auf das Häkchen.
 
@@ -372,7 +372,7 @@ Wandeln Sie ein Bibliotheksangebot in ein individuelles Angebot um, um das Angeb
 1. Wählen Sie das Erlebnis aus, um das Bibliotheksangebot anzuzeigen.
 1. Klicken oder tippen Sie auf das Bibliotheksangebot, um das Angebotsmenü einzublenden, und klicken oder tippen Sie auf das Symbol „In Inline-Angebot konvertieren“.
 
-   ![In Inline-Angebot konvertieren](/help/sites-cloud/authoring/assets/targeted-convert-inline.png)
+   ![In Inline-Angebot konvertieren](../assets/targeted-convert-inline.png)
 
 #### Überarbeiten eines Bibliothekangebots {#editing-a-library-offer}
 
@@ -388,11 +388,11 @@ Wandeln Sie ein Bibliotheksangebot in ein individuelles Angebot um, um das Angeb
 
 Im Target-Schritt des [Targeting-Verfahrens](#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite sind die Zielgruppen aufgeführt, die durch das Erlebnis angesprochen werden sollen. Sie können die Zielgruppen für jedes Erlebnis festlegen und ändern. Sollten Sie mit Adobe Target arbeiten, können Sie zudem A/B-Tests erstellen, die es Ihnen ermöglichen, einen bestimmten Anteil des Traffics einer Zielgruppe auf ein bestimmtes Erlebnis umzuleiten.
 
-### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden …    {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 werden Zielgruppen auf der linken Seite des Zuordnungsdiagramms angezeigt, Erlebnisse auf der rechten Seite.
 
-![Zuordnen von Zielgruppen](/help/sites-cloud/authoring/assets/targeted-diagram.png)
+![Zuordnen von Zielgruppen](../assets/targeted-diagram.png)
 
 Legen Sie mithilfe eines Segments eine Zielgruppe fest. Die Cloud-Konfiguration für die Seite bestimmt darüber, welche Segmente Ihnen zur Verfügung stehen. Wurde die Seite nicht mit einer Adobe Target-Cloud-Konfiguration verknüpft, stehen für die Definition der Zielgruppen AEM-Segmente zur Verfügung. Wurde die Seite hingegen mit einer Adobe Target-Cloud-Konfiguration verknüpft, werden Target-Segmente verwendet.
 
@@ -400,7 +400,7 @@ Weitere Informationen zu Targeting-Engines finden Sie unter [Targeting-Engine](/
 
 Eine Zielgruppe darf nicht mehr als einem Erlebnis zugewiesen werden. Wenn ein Erlebnis einer Zielgruppe zugewiesen wird, die mit einem anderen Erlebnis verknüpft ist, erscheint neben dem Erlebnis ein Warnsymbol.
 
-![Warnsymbol](/help/sites-cloud/authoring/assets/targeted-warn.png)
+![Warnsymbol](../assets/targeted-warn.png)
 
 ### Verknüpfen von Erlebnissen und Zielgruppen (AEM oder Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -410,13 +410,13 @@ Gehen Sie wie folgt vor, um in AEM Targeting (oder dem Erlebnis-Targeting von A
 1. (Optional) Klicken oder tippen Sie auf **Bearbeiten** und geben Sie ein Stichwort ein, nach dem das gewünschte Segment durchsucht werden soll.
 1. Wählen Sie aus der Zielgruppenliste die gewünschte aus und klicken oder tippen Sie auf **OK**.
 
-### Wenn Sie A/B-Tests (Adobe Target) verwenden …     {#if-you-are-using-a-b-testing-adobe-target}
+### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 befinden sich – sollten Sie über eine A/B-Testaktivität verfügen – die Zielgruppen links, der Anteil der Besucher, der auf das Erlebnis umgeleitet wird, in der Mitte und die Erlebnisse selbst rechts.
 
 Sie können die Prozentwerte beliebig anpassen, solange sie in der Summe 100 % ergeben. Zielgruppen dürfen in A/B-Tests mehreren Erlebnissen zugewiesen werden.
 
-![A/B-Targeting](/help/sites-cloud/authoring/assets/targeted-ab.png)
+![A/B-Targeting](../assets/targeted-ab.png)
 
 ### Zielgruppen in A/B-Tests Traffic-Anteilen zuordnen {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -436,15 +436,15 @@ Zielmetriken werden nur für veröffentlichte Kampagnen gemessen.
 
 Sollten Sie AEM als Targeting-Engine verwenden:
 
-![AEM als Targeting-Engine](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![AEM als Targeting-Engine](../assets/targeted-goals.png)
 
 Sollten Sie Adobe Target als Targeting-Engine verwenden:
 
-![Adobe Target als Targeting-Engine](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target als Targeting-Engine](../assets/targeted-engine.png)
 
 Wenn Sie Adobe Target als Targeting-Engine verwenden und A4T Analytics für das Konto konfiguriert wurde, wird Ihnen ein zusätzliches Dropdown-Menü für die **Berichtsquelle** angezeigt:
 
-![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
+![A4T](../assets/targeted-source.png)
 
 Es sind folgende Erfolgsmetriken verfügbar (nur für die Veröffentlichung einsetzbar):
 
@@ -501,7 +501,7 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 
    Sollten Sie sich für **Adobe Analytics** entscheiden, wählen Sie Organisation und Report Suite aus. Sollten Sie **Adobe Target** auswählen, muss keine weitere Auswahl getroffen werden.
 
-   ![Berichtsquelle](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
+   ![Berichtsquelle](../assets/targeted-reporting-source.png)
 
 1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/de-DE/target/using/activities/success-metrics/success-metrics.html) zu Erfolgsmetriken.
 
@@ -515,7 +515,7 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
    >
    >Sie müssen mindestens eine Zielmetrik definieren.
 
-   ![Zielmetrik](/help/sites-cloud/authoring/assets/targeted-goal-metric.png)
+   ![Zielmetrik](../assets/targeted-goal-metric.png)
 
    >[!NOTE]
    >
@@ -523,7 +523,7 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 
 1. Klicken Sie auf **Neue Metrik hinzufügen**, um weitere Erfolgsmetriken zu konfigurieren.
 
-   ![Weitere Metriken](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
+   ![Weitere Metriken](../assets/targeted-additional-metrics.png)
 
    >[!NOTE]
    >
@@ -560,11 +560,11 @@ Mit den folgenden Werkzeugen lassen sich Besuchererlebnisse simulieren:
 1. Möchten Sie in den Vorschaumodus wechseln, klicken oder tippen Sie in der Symbolleiste auf **Vorschau**.
 1. Klicken Sie in der Symbolleiste auf das ContextHub-Symbol.
 
-   ![ContextHub-Schaltfläche](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
+   ![ContextHub-Schaltfläche](../assets/targeted-contexthub-button.png)
 
 1. Verwenden Sie ContextHub, um die Kontexteigenschaften zu bearbeiten. Klicken oder tippen Sie beispielsweise auf Personeneigenschaften, um einen anderen Benutzer auszuwählen.
 
-   ![ContextHub-Symbolleiste](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
+   ![ContextHub-Symbolleiste](../assets/targeted-contexthub-toolbar.png)
 
    Die Seite ändert sich entsprechend und gibt nun die Inhalte wieder, die für den aktuellen Kontext erstellt wurden.
 
@@ -576,19 +576,19 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
 
 1. Klicken oder tippen Sie nach abgeschlossenem Targeting der Komponente auf die Komponente und dann auf das Einstellungssymbol (Zahnrad).
 
-   ![Komponenteneinstellungen](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
+   ![Komponenteneinstellungen](../assets/targeted-component-settings.png)
 
    Sodann zeigt AEM das Fenster mit den Target-Optionen an.
 
-   ![Target-Dialogfeld](/help/sites-cloud/authoring/assets/targeted-dialog.png)
+   ![Target-Dialogfeld](../assets/targeted-dialog.png)
 
 1. Alternativ können Sie auf diese Einstellungen auch im Vollbildmodus zugreifen: Klicken oder tippen Sie dazu im Optionsfenster der Target-Komponente auf das Vollbildsymbol.
 
-   ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
+   ![Schaltfläche „Vollbild“](../assets/targeted-fullscreen.png)
 
    AEM zeigt die Target-Komponentenoptionen daraufhin im Vollbildmodus an.
 
-   ![Komponente im Vollbildmodus](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+   ![Komponente im Vollbildmodus](../assets/targeted-target-as-enging.png)
 
 1. Konfigurieren Sie die Einstellungen der Target-Komponente, wie in den folgenden Tabellen beschrieben.
 
@@ -599,7 +599,7 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
 
 Wenn Sie Adobe Target als Engine auswählen:
 
-![Target als Engine](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+![Target als Engine](../assets/targeted-target-as-enging.png)
 
 | Option | Beschreibung |
 |---|---|
