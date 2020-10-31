@@ -2,10 +2,10 @@
 title: Dynamic Media-Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
-ht-degree: 100%
+source-wordcount: '3680'
+ht-degree: 99%
 
 ---
 
@@ -425,6 +425,6 @@ Sie können aus dem Menü **[!UICONTROL Tools]** heraus ein Videoprofil aus eine
 ### Entfernen von Videoprofilen aus Ordnern über „Eigenschaften“{#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
-1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **[Eigenschaften]**.
+1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
