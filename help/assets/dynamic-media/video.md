@@ -2,7 +2,7 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 98%
@@ -689,7 +689,7 @@ So automatisieren Sie die Einstellung von YouTube-Standardeigenschaften für hoc
 
 1. Klicken Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie links in der Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
 1. Klicken Sie auf **[!UICONTROL Standard]**. (Aktiveren Sie nicht das Auswahlfeld links neben „Standard“.)
-1. Markieren Sie auf der Seite **[!UICONTROL Standard]** das Kontrollkästchen links neben **[!UICONTROL Video]** und klicken Sie dann auf **[Bearbeiten]**.
+1. Markieren Sie auf der Seite **[!UICONTROL Standard]** das Kontrollkästchen links neben **[!UICONTROL Video]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf der Seite „Metadatenschema-Editor“ auf die Registerkarte **[!UICONTROL Erweitert]**.
 1. Klicken Sie unter der Überschrift „YouTube-Publishing“ auf **[!UICONTROL YouTube-Kategorie]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
