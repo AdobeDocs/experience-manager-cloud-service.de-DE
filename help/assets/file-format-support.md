@@ -3,9 +3,9 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,6 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
