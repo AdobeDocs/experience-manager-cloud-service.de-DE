@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '828'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 ## Adobe-Formate {#adobe-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
+| Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
@@ -61,6 +61,9 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* Die WebP-Unterstützung ist derzeit für verlustbehaftete Komprimierung ausgelegt und unterstützt Werte von 0 bis 100, um die Bildqualität zu ändern.
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -137,7 +140,7 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/asset
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
-| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
