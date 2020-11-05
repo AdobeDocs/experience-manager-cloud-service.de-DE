@@ -2,9 +2,9 @@
 title: Überprüfen des Domänennamenstatus
 description: Überprüfen des Domänennamenstatus
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ Melden Sie sich bei Ihrem Domänenregistrierer an und erstellen Sie einen CNAME-
 | CNAME | Benutzerdefinierter Domänenname verweist auf die Zielgruppe |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### APEX-Datensatz {#apex-record}
+
+Eine ex-Domäne ist eine benutzerdefinierte Domäne, die keine Subdomäne enthält, z. B. example.com. Eine ex-Domäne wird mit einem `A` , `ALIAS` oder `ANAME` Datensatz über Ihren DNS-Provider konfiguriert. Die Apex-Domänen müssen auf bestimmte IP-Adressen verweisen.
+
+hinzufügen alle folgenden A-Datensätze über Ihren Domänenanbieter an die DNS-Einstellungen Ihrer Domäne:
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## DNS-Datensatzstatus überprüfen {#check-status-dns-record}
+
+Sie können feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihrer AEM als Cloud Service-Website aufgelöst wird, indem Sie in der Tabelle auf der Seite &quot;Domäneneinstellungen&quot;auf das Statussymbol für den DNS-Datensatz klicken. Cloud Manager führt eine DNS-Suche nach Ihrem Domänennamen durch und zeigt eine der folgenden Statusmeldungen an:
+
+>[!NOTE]
+>Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerspezifischer Domänenname zum ersten Mal überprüft und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol **Wiederholen** auflösen neben dem Status aktiv auswählen. BILD EINFÜGEN
+
+* **Der DNS-Status, der nicht erkannt** wurde, wird erst erkannt, wenn der benutzerdefinierte Domänenname erfolgreich überprüft und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domäne gelöscht wird.
+
+* **DNS löst falsch**. Dies deutet darauf hin, dass die DNS-Datensatzkonfiguration noch nicht aufgelöst/verzeichnet wurde oder fehlerhaft ist. Ein Vertreter der Adobe wird automatisch benachrichtigt.
+
+   >[!NOTE]
+   >Sie müssen entweder eine `CNAME` oder `A-record` die entsprechenden Anweisungen befolgen. Gehen Sie zum Konfigurieren von DNS-Einstellungen INSERT LINK, um mehr über das Thema zu erfahren. Wenn Sie bereit sind, müssen Sie das Symbol &quot;Erneut auflösen&quot;neben dem Status auswählen.
+
+* **DNS-Auflösung wird** ausgeführt. Dieser Status wird normalerweise angezeigt, nachdem Sie das Symbol &quot;Erneut auflösen&quot;neben dem Status ausgewählt haben.
+
+* **DNS löst korrekt** Ihre DNS-Einstellungen sind richtig konfiguriert. Ihre Website dient Besuchern.
