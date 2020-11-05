@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
+source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 97%
+source-wordcount: '812'
+ht-degree: 99%
 
 ---
 
@@ -61,9 +61,6 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-| WebP | ✓ | ✓ | - | - |
-
-* Die WebP-Unterstützung ist derzeit für verlustbehaftete Komprimierung ausgelegt und unterstützt Werte von 0 bis 100, um die Bildqualität zu ändern.
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
