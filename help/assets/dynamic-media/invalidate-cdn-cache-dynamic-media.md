@@ -2,9 +2,9 @@
 title: Ungültigmachen des CDN-Cache über dynamische Medien
 description: Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Caches warten.
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ Dynamic Media-Assets werden vom CDN (Content Versand Network) zwischengespeicher
 
 >[!IMPORTANT]
 >
->Die folgenden Schritte gelten nur für dynamische Medien auf AEM als Cloud Service. Für diese Funktion müssen Sie außerdem das vordefinierte CDN verwenden, das im Lieferumfang AEM dynamischen Medien enthalten ist. andere benutzerdefinierte CDN werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Für diese Funktion müssen Sie das im Lieferumfang von AEM Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. andere benutzerdefinierte CDN werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 See also [Caching overview in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -37,7 +37,9 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/de/experien
 
    ![Vorlage für die Ungültigmachung von CDN - Erstellen](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Tippen Sie in der rechten oberen Ecke der Seite **[!UICONTROL für die Vorlage]** zur CDN-Ungültigmachung auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK.]**<br>   *Teil 2 von 2: Festlegen von Optionen für die CDN-Ungültigkeit*
+1. Tippen Sie in der rechten oberen Ecke der Seite **[!UICONTROL für die Vorlage]** zur CDN-Ungültigmachung auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK.]**<br>
+
+   *Teil 2 von 2: Festlegen von Optionen für die CDN-Ungültigkeit*
    <br>
 
 1. Tippen Sie in AEM als Cloud Service auf **[!UICONTROL Werkzeuge > Assets > CDN-Ungültigmachung.]**
@@ -55,9 +57,9 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/de/experien
 
    | Option | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL Invalidierungs-Asset hat Bildvorgaben in CDN zugeordnet]** | (Optional) Wenn Sie diese Option aktivieren, werden ausgewählte Assets und alle zugehörigen Bildvorgabe-URLs automatisch für die Cache-Ungültigmachung gebildet.<br>Assets und die zugehörigen vordefinierten URLs werden automatisch zur Ungültigmachung erstellt. Diese Option funktioniert nur für Bild-Assets. |
+   | **[!UICONTROL Dem Asset zugeordnete Bildvorgaben im CDN invalidieren]** | (Optional) Wenn Sie diese Option aktivieren, werden ausgewählte Assets und alle zugehörigen Bildvorgabe-URLs automatisch für die Cache-Ungültigmachung gebildet.<br>Assets und die zugehörigen vordefinierten URLs werden automatisch zur Ungültigmachung erstellt. Diese Option funktioniert nur für Bild-Assets. |
    | **[!UICONTROL Auf Vorlage basierende Ungültigmachung]** | (Optional) Aktivieren Sie diese Option, um nur die definierte Vorlage für die URL-Bildung zu verwenden. |
-   | **[!UICONTROL Assets hinzufügen]** | Verwenden Sie die Asset-Auswahl, um Assets auszuwählen, die ungültig gemacht werden sollen. Sie können veröffentlichte oder unveröffentlichte Assets auswählen.<br>Die Zwischenspeicherung im CDN erfolgt URL-basiert und nicht Asset-basiert. Daher müssen Sie sich über die vollständigen URLs auf Ihrer Website im Klaren sein. Nachdem Sie diese URLs ermittelt haben, können Sie sie der Vorlage hinzufügen. Anschließend können Sie diese Assets auswählen und hinzufügen und die URLs in einem Schritt für ungültig erklären. <br>Verwenden Sie diese Option in Verbindung mit **[!UICONTROL Ungültigmachen von Asset-zugeordneten Bildvorgaben im CDN]**, **[!UICONTROL Ungültigmachen basierend auf Vorlage]** oder beidem. |
+   | **[!UICONTROL Assets hinzufügen]** | Verwenden Sie die Asset-Auswahl, um Assets auszuwählen, die ungültig gemacht werden sollen. Sie können veröffentlichte oder unveröffentlichte Assets auswählen.<br>Die Zwischenspeicherung im CDN erfolgt URL-basiert und nicht Asset-basiert. Daher müssen Sie sich über die vollständigen URLs auf Ihrer Website im Klaren sein. Nachdem Sie diese URLs ermittelt haben, können Sie sie der Vorlage hinzufügen. Anschließend können Sie diese Assets auswählen und hinzufügen und die URLs in einem Schritt für ungültig erklären. <br>Verwenden Sie diese Option in Verbindung mit **[!UICONTROL Ungültigmachen von Asset-zugeordneten Bildvorgaben im CDN]**, **[!UICONTROL Ungültigmachen auf der Grundlage einer Vorlage]** oder beidem. |
    | **[!UICONTROL URL hinzufügen]** | Fügen Sie Dynamischen Medien-Assets, deren CDN-Cache Sie ungültig machen möchten, manuell vollständige URL-Pfade hinzu oder fügen Sie sie ein. Verwenden Sie diese Option, wenn Sie in ***Teil 1 von 2 keine Vorlage für das Ungültigmachen eines CDN erstellt haben: Erstellen einer Vorlage*** für die Ungültigmachung von CDN und nur wenige Assets zum Ungültigmachen.<br>**Wichtig:** Jede URL, die Sie hinzufügen, muss sich in einer eigenen Zeile befinden.<br>Sie können bis zu 1000 URLs zu einem bestimmten Zeitpunkt für ungültig erklären. Wenn die Anzahl der URLs im Textfeld **[!UICONTROL Hinzufügen URL]** größer als 1000 ist, können Sie nicht auf **[!UICONTROL Weiter]** tippen. In diesem Fall müssen Sie auf **[!UICONTROL X]** rechts neben einem ausgewählten Asset oder auf eine manuell hinzugefügte URL tippen, um es aus der Liste für die Ungültigmachung zu löschen.<br>Beachten Sie, dass Sie URLs für intelligente Imagemaps entweder in der Vorlage &quot;CDN-Ungültigmachung&quot;oder in diesem Textfeld für die **[!UICONTROL Hinzufügen URL]** angeben müssen. |
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Next.]**
