@@ -3,9 +3,9 @@ title: Asset-Mikrodienste konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Mikrodienste, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 45%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager ermöglicht die folgenden Verarbeitungsstufen.
 
 | Option | Beschreibung | Anwendungsfälle |
 |---|---|---|
-| [Standardkonfiguration](#default-config) | Es ist verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Darstellung. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> Große Vorschau (Web-Ausgabe - 1280 Pixel) </li><li> Metadaten und Text-Extraktion.</li></ul> |
+| [Standardkonfiguration](#default-config) | Es ist verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Darstellung. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> Große Vorschau (Webdarstellung - 1280 Pixel) </li><li> Metadaten und Text-Extraktion.</li></ul> |
 | [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Darstellungen durch Erweitern der Standardoption. Erweitern Sie die vordefinierte Option, um verschiedene Formate und Darstellungen bereitzustellen. | <ul><li>FPO-Darstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingt auf konfigurierte Dateitypen anwenden. </li> </ul> |
 | [Benutzerdefiniertes Profil](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche, um benutzerdefinierten Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
@@ -78,9 +78,9 @@ Gehen Sie wie folgt vor, um ein Profil für die Standardverarbeitung zu erstelle
 1. Um andere Darstellungen zu erstellen, klicken Sie auf **[!UICONTROL Hinzufügen Neu]** und geben Sie die folgenden Informationen ein:
 
    * Dateiname jeder Darstellung.
-   * Dateiformat (PNG, JPEG oder GIF) jeder Darstellung.
+   * Dateiformat (PNG, JPEG, GIF oder WebP) jeder Darstellung.
    * Breite und Höhe der einzelnen Darstellungen in Pixel. Wenn die Werte nicht angegeben werden, wird die vollständige Pixelgröße des Originalbilds verwendet.
-   * Qualität in Prozent jeder JPEG-Darstellung.
+   * Qualität in Prozent jeder JPEG- und WebP-Darstellung.
    * Eingeschlossene und ausgeschlossene MIME-Typen zur Definition der Anwendbarkeit eines Profils.
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese 
 
 ![custom-processing-Profil](assets/custom-processing-profile.png)
 
-*Abbildung: Verwenden Sie das Feld[!UICONTROL Dienstparameter], um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden. In diesem Beispiel werden Kampagnen, die hochgeladen werden, mit`Jumanji`Text in der`Arial-BoldMT`Schriftart aktualisiert.*
+*Abbildung: Verwenden Sie das Feld [!UICONTROL Dienstparameter] , um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden. In diesem Beispiel werden Kampagnen, die hochgeladen werden, mit `Jumanji` Text in der `Arial-BoldMT` Schriftart aktualisiert.*
 
 ## Verarbeitung von Profilen zur Verarbeitung von Assets {#use-profiles}
 
