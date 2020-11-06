@@ -2,9 +2,9 @@
 title: Versionshinweise für die Version 2020.10.0 [!DNL Adobe Experience Manager] von als Cloud Service.
 description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: a544acab6f79fa60990bfc3915a5a664befb8b09
+source-git-commit: 11df1136cbfca9237ead417cacca4049e2f35b4d
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '888'
 ht-degree: 19%
 
 ---
@@ -44,13 +44,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL Adobe Asset Link]Version 2.1**: Eine neue Version der [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) -Erweiterung für [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]und [!DNL Adobe InDesign] ist verfügbar. Es fügt Kompatibilität mit den neuesten [!DNL Adobe Creative Cloud] Anwendungen mit Version 2021, veröffentlicht im Oktober 2020.
 
-* **[!DNL Assets]WebP-Dateiunterstützung**: [!DNL Assets] als Cloud Service unterstützt jetzt das WebP-Bildformat. WebP ist ein aufstrebendes Bildformat, das von Google erstellt wurde. Bilder im WebP-Dateiformat sind visuell nicht von JPG- oder PNG-Dateien zu unterscheiden und die Dateien sind viel kleiner. Die geringere Dateigröße von Assets verbessert die Seitenladezeit und hilft Inhaltserstellern, eine schnellere Web-Erfahrung zu erzielen.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebP-Dateiunterstützung**: [!DNL Assets] als Cloud Service unterstützt jetzt das WebP-Bildformat. WebP ist ein aufstrebendes Bildformat, das von Google erstellt wurde. Bilder im WebP-Dateiformat sind visuell nicht von JPG- oder PNG-Dateien zu unterscheiden und die Dateien sind viel kleiner. Die geringere Dateigröße von Assets verbessert die Seitenladezeit und hilft Inhaltserstellern, eine schnellere Web-Erfahrung zu erzielen. Siehe [Erstellen eines Standard-Profils](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
