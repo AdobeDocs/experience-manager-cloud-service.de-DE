@@ -2,9 +2,9 @@
 title: Intelligente Bildbearbeitung
 description: 'Intelligente Bildbearbeitung nutzt die individuellen anzeigebezogenen Benutzermerkmale, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 79%
 
 ---
@@ -105,8 +105,6 @@ Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
 
 ## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?        {#does-smart-imaging-working-with-https-how-about-http}
 
