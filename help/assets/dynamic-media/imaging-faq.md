@@ -2,10 +2,10 @@
 title: Intelligente Bildbearbeitung
 description: 'Intelligente Bildbearbeitung nutzt die individuellen anzeigebezogenen Benutzermerkmale, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
 translation-type: tm+mt
-source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
+source-git-commit: 2c1bfdd3c66eeb1be05aaf5b397de36a7fe0140c
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 79%
+source-wordcount: '1816'
+ht-degree: 90%
 
 ---
 
@@ -187,34 +187,6 @@ Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder di
 Nicht alle Bilder werden konvertiert.  Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## Wie erkenne ich den Leistungsgewinn? Gibt es eine Möglichkeit, die Vorteile von Smart Imaging zu beachten? {#performance-gain}
-
-**Über Smart Imaging-Kopfzeilen**
-
-Die Header-Werte für Smart Imaging funktionieren nur, wenn Nicht-Cache-Anforderungen ab sofort verarbeitet werden. Dies geschieht, um die Kompatibilität des aktuellen Caches zu gewährleisten und zu vermeiden, dass eine Berechnung erforderlich ist, wenn Bilder über den Cache verarbeitet werden.
-
-Um Smart Imaging-Kopfzeilen zu verwenden, müssen Sie den`cache=off`Modifikator in Ihre Anforderungen einfügen. Siehe[Cache](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html) in der API für das Servieren und Rendern von dynamischen Medien.
-
-Beispiel für die Verwendung `cache=off` (nur zur Veranschaulichung):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Nachdem Sie eine solche Anforderung verwendet haben, können Sie im Abschnitt &quot;Antwortheader&quot;die `-x-adobe-smart-imaging` Kopfzeile anzeigen. Siehe den folgenden Screenshot mit `-x-adobe-smart-imaging` hervorgehobener Markierung.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Dieser Kopfzeilenwert bezeichnet Folgendes:
-
-* Smart Imaging funktioniert für die Firma.
-* Positiver Wert (>=0) bedeutet, dass die Konvertierung erfolgreich war. In diesem Fall wird ein neues Bild (WebP hier) zurückgegeben.
-* Negativer Wert (&lt;0) bedeutet, dass die Konvertierung nicht erfolgreich war. In diesem Fall wird das ursprünglich angeforderte Bild zurückgegeben (standardmäßig JPEG, falls nicht angegeben).
-* Der Wert gibt die Differenz in Byte zwischen dem angeforderten Bild und dem neuen Bild an. In diesem Fall werden 75048 Bytes gespeichert, was ungefähr 75 KB für ein Bild entspricht. 
-   * Der negative Wert gibt an, dass das angeforderte Bild kleiner als das neue Bild war. Wir zeigen die negative Größendifferenz an, aber das bereitgestellte Bild ist nur das ursprünglich angeforderte Bild
-
-**Wann werden Smart Imaging-Kopfzeilen verwendet?**
-
-Die Smart Imaging-Antwort-Header sind für Debugging-Zwecke oder beim Hervorheben der Vorteile von Smart Imaging aktiviert. Die Verwendung`cache=off`in normalen Szenarien kann die Ladezeit erheblich beeinträchtigen.
 
 ## Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden? {#turning-off-smart-imaging}
 
