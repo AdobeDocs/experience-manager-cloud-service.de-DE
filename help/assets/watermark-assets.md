@@ -3,9 +3,9 @@ title: Wasserzeichen der Vermögenswerte
 description: Hinzufügen von Wasserzeichen zu digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Gehen Sie wie folgt vor, [!DNL Experience Manager] um Wasserzeichenelemente zu k
 
 1. Eine PNG-Datei wird als Wasserzeichen angewendet. Laden Sie diese Datei in Ihr DAM-Repository hoch.
 
-1. Greifen Sie auf das [!DNL Cloud Manager] Git-Repository zu, das Ihrer Umgebung zugeordnet ist. Komprimieren Sie eine Datei mit dem Namen `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` in ihrem [!DNL Cloud Manager] Git-Repository mit folgendem Inhalt. Weitere Informationen finden Sie unter [OSGi-Konfiguration [!DNL Experience Manager] als Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Greifen Sie auf das [!DNL Cloud Manager] Git-Repository zu, das Ihrer Umgebung zugeordnet ist. Komprimieren Sie eine Datei mit dem Namen `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` im Repository mit folgendem Inhalt. Anweisungen finden Sie [unter OSGi-Konfiguration [!DNL Experience Manager] als Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
