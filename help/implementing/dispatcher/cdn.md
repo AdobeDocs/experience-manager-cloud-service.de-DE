@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 87%
+source-wordcount: '713'
+ht-degree: 81%
 
 ---
 
@@ -20,10 +20,10 @@ Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanford
 
 Befolgen Sie diese Anweisungen, um die Bereitstellung von Inhalten mithilfe des vorkonfigurierten CDN von Adobe vorzubereiten:
 
-1. Stellen Sie Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen teilen. Koordinieren Sie diese Aufgabe mit dem Support.
+1. Stellen Sie Adobe das signierte SSL-Zertifikat und den geheimen Schlüssel zur Verfügung, indem Sie einen Link zu einem sicheren Formular mit diesen Informationen teilen. Koordinieren Sie diese Aufgabe mit dem Support. Adobe unterstützt bis zu 10 SSL-Zertifikate für ein Programm.
    **Hinweis:** AEM as a Cloud Service unterstützt keine DV (Domain Validated)-Zertifikate. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
 1. Teilen Sie dem Support mit:
-   * welche benutzerdefinierte Domäne einer bestimmten Umgebung zugeordnet werden soll, wie durch die Programm-ID und die Umgebung-ID definiert. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
+   * welche benutzerdefinierte(n) Domäne(n) einer bestimmten Umgebung zugeordnet werden soll(en), wie durch die Programm-ID und Umgebung-ID definiert. Bis zu 100 Domänen werden für eine bestimmte Umgebung unterstützt und Domänen dürfen keine Platzhalter enthalten. Beachten Sie, dass benutzerdefinierte Domänen auf der Autorenseite nicht unterstützt werden.
    * Wenn eine IP-Whitelist erforderlich ist, um den Datenverkehr auf eine bestimmte Umgebung zu beschränken.
 1. Stimmen Sie sich mit dem Support über den Zeitpunkt der notwendigen Änderungen an den DNS-Einträgen ab. Die Anweisungen unterscheiden sich je nachdem, ob ein Apex-Eintrag erforderlich ist:
    * Wenn kein Apex-Eintrag erforderlich ist, sollten Kunden den CNAME-DNS-Eintrag so einstellen, dass ihr FQDN auf `cdn.adobeaemcloud.com` verweist.
@@ -53,6 +53,6 @@ Konfigurationsanweisungen:
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
-Aufgrund des zusätzlichen Hopfens kann es zu einem geringen Leistungseinbruch kommen, obwohl Hopfen vom CDN-Kundendienst bis zum von der Adobe verwalteten CDN wahrscheinlich effizient sein werden.
+Aufgrund des zusätzlichen Hofes kann es zu einem geringen Leistungseinbruch kommen, obwohl Hopfen vom CDN-Kundendienst bis zum von der Adobe verwalteten CDN wahrscheinlich effizient sein werden.
 
 Beachten Sie, dass diese CDN-Konfiguration des Kunden für die Veröffentlichungsstufe unterstützt wird, jedoch nicht vor der Autorenebene.
