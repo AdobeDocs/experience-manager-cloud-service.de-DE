@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu  [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 94%
+source-wordcount: '1312'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ Allerdings werden die folgenden Zeichen (in der Liste durch Leerzeichen getrennt
 Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in einer verschachtelten Ordnerhierarchie auf dem Datenträger vorhanden sind, können die folgenden Vorgehensweisen verwendet werden:
 
 * Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical) nutzt. Ein solches benutzerdefiniertes Tool kann bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
-* Verwenden Sie das [Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html), um verschachtelte Ordnerhierarchien hochzuladen.
+* Verwenden Sie das [Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), um verschachtelte Ordnerhierarchien hochzuladen.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Um eine größere Anzahl von Dateien hochzuladen, insbesondere wenn diese in ein
 Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
 * [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
-* Das [Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
+* Das [Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Zusätzliche Verarbeitung {#additional-processing}
 
@@ -171,7 +171,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link-Dokumentation](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
 >* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload-technical)
