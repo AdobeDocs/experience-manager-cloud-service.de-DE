@@ -1,11 +1,11 @@
 ---
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: 'Einführung in die Architektur von Adobe Experience Manager as a Cloud Service. '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ Die Skalierung von Instanzen pro Mandant des Dienstes kann automatisch oder manu
 ## Umgebungen {#environments}
 
 >[!NOTE]
->
 >Weitere Informationen finden Sie unter [Bereitstellen – Laufzeitmodi](/help/implementing/deploying/overview.md#runmodes).
 
-AEM as a Cloud Service wird in Foirm von Einzelinstanzen bereitgestellt, wobei jede Instanz eine vollständige AEM-Umgebung darstellt. Es gibt vier Arten von Umgebungen, die mit AEM as a Cloud Service verfügbar sind:
+AEM as a Cloud Service wird in Foirm von Einzelinstanzen bereitgestellt, wobei jede Instanz eine vollständige AEM-Umgebung darstellt.
+
+Es stehen drei Arten von Umgebung zur Verfügung, die AEM als Cloud Service verwenden:
 
 * **Produktionsumgebung**: hostet die Anwendungen für Geschäftsleute.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service wird in Foirm von Einzelinstanzen bereitgestellt, wobei j
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-* **Demonstrationsumgebung**: kann für Evaluierungs-, Demonstrations-, Prototyping- und Schulungszwecke verwendet werden.
-
-Die Entwicklungs- und Demonstrationsumgebungen werden häufig als *produktionsfremde* Umgebungen bezeichnet.
+   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
 ## Programme {#programs}
 
