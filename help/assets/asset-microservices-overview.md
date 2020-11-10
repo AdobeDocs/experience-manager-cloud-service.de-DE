@@ -3,10 +3,10 @@ title: Verarbeiten von Assets mit Asset Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 99%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager kann so konfiguriert werden, dass die Workflows nach Ab
 >* [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
 >* [Unterstützte Dateiformate](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
->* [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Apache Oak-Dokumentation zum direkten Binärzugriff](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
