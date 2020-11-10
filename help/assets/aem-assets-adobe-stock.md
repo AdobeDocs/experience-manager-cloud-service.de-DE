@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Assets verwalten in [!DNL Assets].'
 description: Suchen, Abrufen, Lizenz und [!DNL Adobe Stock] Verwalten von Assets von innen [!DNL Adobe Experience Manager]aus. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 21%
 
 ---
@@ -78,7 +78,7 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 
 ![Filter in Experience Manager suchen und Adobe Stock-Assets in Suchergebnissen markieren](assets/aem-search-filters2.jpg)
 
-*Abbildung: Suchen Sie in den Suchergebnissen nach Filtern[!DNL Experience Manager]und markierten[!DNL Adobe Stock]Assets.*
+*Abbildung: Suchen Sie in den Suchergebnissen nach Filtern [!DNL Experience Manager] und markierten [!DNL Adobe Stock] Assets.*
 
 ### Speichern und Anzeigen erforderlicher Assets {#saveassets}
 
@@ -96,7 +96,7 @@ Benutzer können [!DNL Adobe Stock] Assets über die Quote ihres [!DNL Adobe Sto
 
 ![Dialogfeld zum Lizenzieren und Speichern von Adobe Stock-Assets in Experience Manager Assets](assets/aem-stock_licenseandsave.jpg)
 
-*Abbildung: Dialogfeld zum Lizenzieren und Speichern von[!DNL Adobe Stock]Assets[!DNL Experience Manager Assets].*
+*Abbildung: Dialogfeld zum Lizenzieren und Speichern von [!DNL Adobe Stock] Assets [!DNL Experience Manager Assets].*
 
 ### Anzeigen von Metadaten und Asset-Eigenschaften {#access-metadata-and-asset-properties}
 
@@ -118,7 +118,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 >[!MORELIKETHIS]
 >
->* [Videoschulung zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Videoschulung zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/de/enterprise/using/adobe-stock-enterprise.html)
 >* [Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/de/stock/faq.html)
 
