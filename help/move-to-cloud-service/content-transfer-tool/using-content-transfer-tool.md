@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Derzeit beträgt die Standardgröße von MongoDB für eine AEM als Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, dass Sie für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einreichen, um die MongoDB-Größe zu erhöhen.
 
+* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion* -Prozess kopiert den gesamten `/home` Migrationssatz und der *Ingestion* -Prozess kopiert alle Benutzer und Gruppen, auf die in den ACLs für migrierte Inhalte verwiesen wird.
+
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
 * Nachdem Sie die *Extraktion* des Inhaltsübermittlungsprozesses abgeschlossen haben und bevor Sie die *Übergangsphase* starten, um Inhalte in Ihre AEM als Cloud Service- *Stage* - oder *Produktionsinstanz* zu übernehmen, müssen Sie ein Support-Ticket protokollieren, um die Adobe über Ihre Absicht zu informieren, *Ingestion* ** auszuführen, damit die Adobe sicherstellen kann, dass während desIngestionProcess keine Unterbrechungen auftreten. Sie müssen das Support-Ticket 1 Woche vor dem geplanten *Ingestion* -Datum einloggen. Nachdem Sie das Support-Ticket übermittelt haben, gibt das Supportteam Ihnen Anleitungen zu den nächsten Schritten.
@@ -49,6 +51,7 @@ Das Content Transfer Tool kann als ZIP-Datei vom Software Distribution Portal he
 ## Ausführen des Content Transfer-Tools {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
