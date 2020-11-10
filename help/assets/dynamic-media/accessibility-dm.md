@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 
 Dynamische Medien unterstützen Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
 
+
+
 ## Unterstützung der Barrierefreiheit von Tastaturen in dynamischen Medien
 
 Tastenanschläge, die von einzelnen Benutzeroberflächenelementen unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu entdecken. Die Tastatursteuerung in dynamischen Medien umfasst Folgendes:
@@ -25,8 +27,8 @@ Tastenanschläge, die von einzelnen Benutzeroberflächenelementen unterstützt w
 Durch Verwendung `Tab` wird der Eingabefokus auf das nächste Element der Benutzeroberfläche in der Tab-Reihenfolge weitergeleitet. Durch die Verwendung `Shift+Tab` wird der Eingabefokus wieder auf das vorherige Element der Benutzeroberfläche zurückgesetzt.
 Der Fokusdurchlauf folgt der natürlichen Elementposition der Benutzeroberfläche auf dem Bildschirm und bewegt sich in der Reihenfolge von links nach rechts und von oben nach unten.
 * Möglichkeit, mit der `Spacebar` und- `Enter` Taste Standard-Benutzeroberflächenelemente wie Schaltflächen, Dropdown-Listen usw. zu aktivieren.
-* Möglichkeit, einige benutzerdefinierte Tastenanschläge zu verwenden, um mit komplexen Benutzeroberflächenelementen wie Pfeiltasten im Hotspot-Editor zu interagieren.
 * Möglichkeit, die Tastaturfokushervorhebung auf dem aktiven Element anzuzeigen. Das Element der Benutzeroberfläche mit Eingabefokus erhält möglicherweise eine visuelle Fokusanzeige als Rahmen, der um das Element der Benutzeroberfläche gerendert wird.
+* Möglichkeit, einige benutzerdefinierte Tastenanschläge zu verwenden, um mit komplexen Benutzeroberflächenelementen wie Pfeiltasten im Hotspot-Editor zu interagieren. Im Bildzuschneide-/Smart-Zuschneideeditor haben Sie die Möglichkeit, mithilfe der Pfeiltasten die Rahmengröße zu beschneiden oder das Bild neu zu positionieren oder beides.
 
 Da Dynamic Media ein Plug-in für AEM Assets ist, ist das Verhalten der Tastatursteuerung im Wesentlichen dasselbe wie in AEM Assets. Beispielsweise hat die `Cancel` Schaltfläche in dynamischen Medien dieselbe Fokushervorhebung wie in AEM Assets und reagiert auf die `Spacebar` Taste wie in AEM Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts). Ausnahmen hiervon sind der Hotspot-Editor und die Editoren für das Zuschneiden und Zuschneiden von Bildern.
 
