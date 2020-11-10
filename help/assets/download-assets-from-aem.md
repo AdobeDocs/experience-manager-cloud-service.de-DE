@@ -3,10 +3,10 @@ title: Herunterladen von Assets
 description: Herunterladen von Assets [!DNL Adobe Experience Manager Assets] und Aktivieren oder Deaktivieren der Download-Funktion.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 67%
+source-wordcount: '885'
+ht-degree: 66%
 
 ---
 
@@ -26,16 +26,16 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 * [Experience Manager-Benutzeroberfläche](#download-in-aem)
 * Benutzeroberfläche &quot;Asset-Link freigeben&quot;
 * [Asset-Freigabe - Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Herunterladen von Assets über AEM Oberfläche {#download-in-aem}
 
-Der asynchrone Download-Dienst bietet ein Framework für den nahtlosen Download von Assets mit großer Größe. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. Die großen Dateien werden asynchron heruntergeladen und die Benutzer werden über den Abschluss der Experience Manager-Benachrichtigungen im Posteingang informiert. Siehe [Verstehen des Experience Manager-Posteingangs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+Der asynchrone Download-Dienst bietet ein Framework für den nahtlosen Download von Assets mit großer Größe. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. Die großen Dateien werden asynchron heruntergeladen und die Benutzer werden über den Abschluss der Experience Manager-Benachrichtigungen im Posteingang informiert. Siehe [Verstehen des Experience Manager-Posteingangs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
 ![Benachrichtigung herunterladen](assets/download-notification.png)
 
-*Abbildung: Downloadbenachrichtigung über[!DNL Experience Manager]Posteingang.*
+*Abbildung: Downloadbenachrichtigung über [!DNL Experience Manager] Posteingang.*
 
 Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
 
@@ -86,7 +86,7 @@ Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset
 
 The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
 
-1. Um Asset-Download-Anforderungen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) eine neue Regel hinzu.
+1. Um Asset-Download-Anforderungen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring) eine neue Regel hinzu.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
