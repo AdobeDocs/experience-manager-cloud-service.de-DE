@@ -3,15 +3,15 @@ title: Asset-Mikrodienste konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Mikrodienste, um Assets im Maßstab zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 45%
+source-wordcount: '2514'
+ht-degree: 46%
 
 ---
 
 
-# Asset-Mikrodienste und verarbeitende Profil verwenden {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 Asset-Mikrodienste bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-nativen Anwendungen (auch als &quot;Arbeiter&quot;bezeichnet). Adobe verwaltet die Dienste für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen.
 
@@ -38,7 +38,7 @@ Experience Manager ermöglicht die folgenden Verarbeitungsstufen.
 |---|---|---|
 | [Standardkonfiguration](#default-config) | Es ist verfügbar und kann nicht geändert werden. Diese Konfiguration bietet eine sehr einfache Funktion zur Darstellung. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> Große Vorschau (Webdarstellung - 1280 Pixel) </li><li> Metadaten und Text-Extraktion.</li></ul> |
 | [Benutzerdefinierte Konfiguration](#standard-config) | Von Administratoren über die Benutzeroberfläche konfiguriert. Bietet weitere Optionen für die Generierung von Darstellungen durch Erweitern der Standardoption. Erweitern Sie die vordefinierte Option, um verschiedene Formate und Darstellungen bereitzustellen. | <ul><li>FPO-Darstellung. </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingt auf konfigurierte Dateitypen anwenden. </li> </ul> |
-| [Benutzerdefiniertes Profil](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche, um benutzerdefinierten Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset Compute-Dienstes](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
+| [Benutzerdefiniertes Profil](#custom-config) | Konfiguriert von Administratoren über die Benutzeroberfläche zur Verwendung von benutzerspezifischem Code über benutzerdefinierte Anwendungen zum Aufrufen des [Asset compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html). Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,15 +100,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Benutzerspezifische Profil- und Anwendungsfälle {#custom-config}
 
-Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adoben-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerspezifischer oder organisationsspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des DAM Update Asset-Workflows wird entweder automatisch oder über die Konfiguration der verarbeitenden Profil durchgeführt. Wenn diese Verarbeitungsoptionen die Geschäftsanforderungen nicht erfüllen, empfiehlt Adobe, die Standardfunktionen zu entwickeln und [!DNL Asset Compute Service] zu erweitern. Eine Übersicht finden Sie unter Erweiterbarkeit [und Verwendungszeitpunkt](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfällen, z. B. Standardverarbeitung, Verarbeitung von Adoben-spezifischen Formaten wie Photoshop-Dateien und Implementierung benutzerspezifischer oder organisationsspezifischer Verarbeitungsformate. Die zuvor erforderliche Anpassung des DAM Update Asset-Workflows wird entweder automatisch oder über die Konfiguration der verarbeitenden Profil durchgeführt. Wenn diese Verarbeitungsoptionen die Geschäftsanforderungen nicht erfüllen, empfiehlt Adobe, die Standardfunktionen zu entwickeln und [!DNL Asset Compute Service] zu erweitern. Eine Übersicht finden Sie unter Erweiterbarkeit [und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung einer benutzerdefinierten Anwendung nur dann, wenn die Geschäftsanforderungen nicht mit den Standardkonfigurationen oder dem Standard-Profil erfüllt werden können.
 
-Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Darstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
+Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Anwendungen [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
+Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Anwendungen [zu](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
 
 * Verwenden Sie [!DNL Adobe Photoshop]die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) und speichern Sie das Ergebnis als Darstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
@@ -128,13 +128,13 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname jeder Darstellung und eine unterstützte Dateierweiterung.
-   * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
-   * hinzufügen Service-Parameter, um zusätzliche Informationen oder Parameter an die benutzerdefinierte Anwendung [zu](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)übergeben.
+   * [Endpunkt-URL einer benutzerdefinierten Firefly-App](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). Die App muss aus demselben Unternehmen stammen wie das Experience Manager-Konto.
+   * hinzufügen Service-Parameter, um zusätzliche Informationen oder Parameter an die benutzerdefinierte Anwendung [zu](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)übergeben.
    * MIME-Typen wurden eingeschlossen und ausgeschlossen, um die Verarbeitung auf einige bestimmte Dateiformate zu beschränken.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Bei den benutzerdefinierten Anwendungen handelt es sich um kopflose [Project Firefly](https://github.com/AdobeDocs/project-firefly) -Apps. Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit einem verarbeitenden Profil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Apps. Die benutzerdefinierte Anwendung ruft alle angegebenen Dateien ab, wenn sie mit einem verarbeitenden Profil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
 
 >[!CAUTION]
 >
@@ -144,7 +144,7 @@ Bei den benutzerdefinierten Anwendungen handelt es sich um kopflose [Project Fir
 
 Zur Veranschaulichung der Verwendung von benutzerdefiniertem Profil sollten wir einen Verwendungsfall erwägen, um Kampagnen mit benutzerdefiniertem Text zu versehen. Sie können ein verarbeitendes Profil erstellen, das die Photoshop-API zum Bearbeiten der Bilder nutzt.
 
-Die Asset Compute Service-Integration ermöglicht es Experience Managern, diese Parameter mithilfe des Felds [!UICONTROL Service Parameters] an die benutzerdefinierte Anwendung zu übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop API auf und übergibt diese Werte an die API. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
+Mit der asset compute Service-Integration kann Experience Manager diese Parameter mithilfe des Felds [!UICONTROL Dienstparameter] an die benutzerdefinierte Anwendung übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop API auf und übergibt diese Werte an die API. Sie können beispielsweise Schriftartnamen, Textfarbe, Gewichtung und Textgröße übergeben, um den benutzerdefinierten Text den Kampagnen hinzuzufügen.
 
 ![custom-processing-Profil](assets/custom-processing-profile.png)
 
@@ -224,9 +224,9 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 
 >[!MORELIKETHIS]
 >
->* [Einführung in den Asset Compute-Dienst](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html).
->* [Verstehen Sie die Erweiterbarkeit und wann sie](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)verwendet werden soll.
->* [Erstellen benutzerdefinierter Anwendungen](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [Einführung in den Asset compute-Dienst](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
+>* [Verstehen Sie die Erweiterbarkeit und wann sie](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)verwendet werden soll.
+>* [Erstellen benutzerdefinierter Anwendungen](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Unterstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
 
 
