@@ -3,10 +3,10 @@ title: Bilder mit AI-generierten Tags automatisch taggen
 description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 87%
+source-wordcount: '2432'
+ht-degree: 85%
 
 ---
 
@@ -205,7 +205,7 @@ Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugeh�
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-* Tagging wird in den Sprachen unterstützt, in denen AEM unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart-Tags](https://docs.adobe.com/content/help/de-DE/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* Tagging wird in den von Experience Manager unterstützten Sprachen unterstützt. For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 Verwenden Sie Asset-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 
