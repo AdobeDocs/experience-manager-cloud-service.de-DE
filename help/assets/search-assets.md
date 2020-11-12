@@ -1,58 +1,59 @@
 ---
-title: Suchen nach digitalen Assets
-description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
+title: Suchen nach digitalen Assets und Bildern in [!DNL Adobe Experience Manager].
+description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 7f9384b08df70aac2f425b830337e97d711b709e
 workflow-type: tm+mt
-source-wordcount: '4523'
-ht-degree: 97%
+source-wordcount: '4743'
+ht-degree: 73%
 
 ---
 
 
-# Suchen nach Assets in AEM       {#search-assets-in-aem}
+# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-Mit den benutzerfreundlichen Optionen zur Asset-Erkennung in Experience Manager können Sie Inhalte schneller finden. Ihre Teams können die Time-to-Market mit einem nahtlosen, intelligenten Sucherlebnis durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von AEM Assets oder andere Apps und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
+[!DNL Adobe Experience Manager Assets] bietet stabile Methoden zur Ermittlung von Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einem nahtlosen, intelligenten Sucherlebnis durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
-AEM unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
+[!DNL Experience Manager Assets] unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
 
 | Suchen von Assets | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
-|--- |--- |--- |
+|---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
 | [Benutzeroberfläche für Suchen](#searchui) |  | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und -verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Massenaktualisierung von Metadaten](#metadataupdates) |
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
-| [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Unerwartete Ergebnisse](#unexpectedresults) und [Fehlerbehebung](#troubleshoot) |
-| [Suche über andere Lösungen und Apps](#beyondomnisearch): <br />     [Asset Link](#aal) <br />     [Desktop-Programm](#desktopapp) <br />     [Adobe Stock-Fotos](#adobestock) <br />     [Dynamic Media-Assets](#dynamicmedia) |  |  |
-| [Asset-Wähler/Auswahl](#assetselector) |  |  |
+| [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Unerwartete Ergebnisse verstehen und beheben](#unexpectedresults) |
+| [Suchen Sie nach anderen Lösungen und Apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-App](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
+| [Asset-Wähler](#assetselector) |  |  |
 | [Einschränkungen](#tips) und [Tipps](#limitations) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
-Suchen Sie mithilfe des OmniSearch-Felds oben in der AEM-Web-Oberfläche nach Assets. Gehen Sie in AEM zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![search_icon](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie die Suchbegriff-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. Sie können erweiterte Suchen durchführen, um den [Suchbereich](#scope) zu vergrößern oder zu verkleinern.
+Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and press return. Alternativ können Sie die Suchbegriff-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
 
-Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](/help/assets/search-facets.md) hinzufügen/entfernen.
+Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. You can customize the Filters panel and add or remove search predicates using [search facets](/help/assets/search-facets.md). Der [!UICONTROL Dateityp] -Filter im Bedienfeld &quot; [!UICONTROL Filter] &quot;enthält Kontrollkästchen mit gemischtem Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
-Die AEM-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
+[!DNL Experience Manager] Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
 
 ## Suchoberfläche verstehen {#searchui}
 
 Machen Sie sich mit der Suchoberfläche und den verfügbaren Aktionen vertraut.
 
-![Bestandteile der Oberfläche für Assets-Suchergebnisse verstehen](assets/aem_search_results.png)
-*Abbildung:* Bestandteile der Oberfläche für Assets-Suchergebnisse verstehen
+![Benutzeroberfläche der Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
-**A.** Speichern Sie die Suche als Smart-Sammlung. **B.** Verwenden Sie Filter (Prädikate) zur Eingrenzung der Suchergebnisse. **C.** Zeigen Sie Dateien, Ordner oder beide in den Suchergebnissen an. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** OmniSearch-Feld mit benutzerdefiniertem Suchbegriff **G.** Kontrollkästchen zur Auswahl aller Suchergebnisse **H.** Anzahl der angezeigten Suchergebnisse aus der Gesamtanzahl der Suchergebnisse **I.** Schließen der Suche **J.** Wechseln zwischen Kartenansicht und Listenansicht
+*Abbildung: Erkennen Sie die Oberfläche [!DNL Experience Manager Assets] der Suchergebnisse.*
+
+**A.** Speichern Sie die Suche als intelligente Sammlung. **B.** Filter oder Vorhersagen zur Eingrenzung der Suchergebnisse. **C.** Anzeigen von Dateien, Ordnern oder beidem. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Wählen Sie die geladenen Suchergebnisse aus. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **I.** Schließen Sie die Suche. **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
 
 ### Dynamische Suchfacetten {#dynamicfacets}
 
-Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindig machen, indem Sie die dynamisch aktualisierte Anzahl der erwarteten Suchergebnisse in den Suchfacetten verwenden. Die erwartete Anzahl an Assets wird noch vor Anwendung des Suchfilters aktualisiert. Durch Anzeige der erwarteten Anzahl im Filter können Sie schnell und effizient durch Suchergebnisse navigieren. Weitere Informationen finden Sie unter [Suche nach Assets in AEM](/help/assets/search-assets.md).
+Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindig machen, indem Sie die dynamisch aktualisierte Anzahl der erwarteten Suchergebnisse in den Suchfacetten verwenden. Die erwartete Anzahl an Assets wird noch vor Anwendung des Suchfilters aktualisiert. Durch Anzeige der erwarteten Anzahl im Filter können Sie schnell und effizient durch Suchergebnisse navigieren.
 
 ![Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten](assets/asset_search_results_in_facets_filters.png)
 
-Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten
+*Abbildung: Sehen Sie sich die ungefähre Anzahl der Assets an, ohne die Suchergebnisse in den Suchfacetten zu filtern.*
 
 ## Suchvorschläge bei der Eingabe {#searchsuggestions}
 
@@ -68,11 +69,13 @@ Wenn Sie mit der Eingabe eines Suchbegriffs beginnen, schlägt AEM mögliche Suc
 
 ### Grundlegende Suchbegriffe und -ergebnisse {#searchbasics}
 
-Sie können im OmniSearch-Feld mit Suchbegriffen suchen. Bei der Suche mit Suchbegriffen wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die gängigen Metadatenfelder hinweg). Wenn mehrere Suchbegriffe verwendet werden, ist `AND` der Standardoperator zwischen den Suchbegriffen. Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den größten Übereinstimmungen. Bei mehreren Suchbegriffen sind Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags erscheinen, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern auftauchen.
+Sie können im OmniSearch-Feld mit Suchbegriffen suchen. Bei der Stichwortsuche wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die beliebten Metadatenfelder hinweg). Wenn mehrere Suchbegriffe verwendet werden, ist `AND` der Standardoperator zwischen den Suchbegriffen.
 
-AEM bietet Ihnen die Möglichkeit, einem bestimmten Suchbegriff mehr Gewicht zu verleihen. Außerdem können Sie für bestimmte Suchbegriffe das Ranking einiger ausgewählter Assets erhöhen. AEM-Administratoren können diese Konfigurationen wie unten beschrieben vornehmen.
+Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den größten Übereinstimmungen. Bei mehreren Suchbegriffen sind Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags erscheinen, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern auftauchen. [!DNL Experience Manager] bietet Ihnen die Möglichkeit, einem bestimmten Suchbegriff mehr Gewicht zu verleihen. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
 
 Zum schnellen Auffinden der benötigten Assets bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlverfahren. Sie können Ergebnisse anhand mehrerer Kriterien filtern und für verschiedene Filter die Anzahl der durchsuchten Assets anzeigen. Alternativ können Sie die Suche erneut ausführen, indem Sie die Abfrage im OmniSearch-Feld ändern. Wenn Sie Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu wahren.
+
+Wenn die Ergebnisse viele Assets sind, [!DNL Experience Manager] werden die ersten 100 in der Ansicht und 200 in der Ansicht Liste angezeigt. Wenn Benutzer einen Bildlauf durchführen, werden weitere Assets geladen. Dadurch soll die Leistung verbessert werden. Sehen Sie sich eine Videodemonstration zur [Anzahl der angezeigten](https://www.youtube.com/watch?v=LcrGPDLDf4o)Assets an.
 
 Manchmal werden in den Suchergebnissen auch unerwartete Assets angezeigt. Weitere Informationen dazu finden Sie unter [Unerwartete Ergebnisse](#unexpectedresults).
 
@@ -105,11 +108,11 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um die auf Suchbegriffen basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Suchbegriffe festlegen, erscheinen bei der Suche nach diesen Suchbegriffen oben in den Suchergebnissen.
 
-1. Öffnen Sie in der Assets-Benutzeroberfläche für das Asset die Seite „Eigenschaften“. Klicken Sie auf **[!UICONTROL Erweitert]** und klicken oder tippen Sie dann auf **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Für Suchbegriffe erhöhen]**.
-1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** einen Suchbegriff ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Sie können auf dieselbe Weise mehrere Suchbegriffe eingeben.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. Sie können auf dieselbe Weise mehrere Suchbegriffe eingeben.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Das Asset, das Sie für diesen Suchbegriff erhöht haben, befindet sich unter den obersten Suchergebnissen.
 
-So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+So können Sie das Ranking bestimmter Assets in den Suchergebnissen für den jeweiligen Suchbegriff erhöhen. Siehe Beispielvideo unten. For detailed info, see [search in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -196,11 +199,11 @@ Mit Adobe Asset Link können Kreativprofis jetzt auf in AEM Assets gespeicherte 
 
 ### Suchen nach Assets im AEM-Desktop-Programm {#desktopapp}
 
-Kreativprofis verwenden das Desktop-Programm, um AEM-Assets auf ihrem lokalen Desktop (Windows oder Mac) bequem zu durchsuchen und verfügbar zu machen. Kreative können die gewünschten Assets in Mac Finder oder Windows Explorer leicht anzeigen, in Desktop-Programmen öffnen und lokal ändern. Die Änderungen werden dann wiederum unter einer neuen, im Repository erstellten Version in AEM gespeichert. Die Anwendung unterstützt grundlegende Suchvorgänge mit einem oder mehreren Suchbegriffen, den Platzhaltern „*“ und „?“ sowie dem AND-Operator. Siehe [Assets durchsuchen und suchen sowie Vorschau für Assets anzeigen](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) im Desktop-Programm.
+Kreativprofis verwenden das Desktop-Programm, um AEM-Assets auf ihrem lokalen Desktop (Windows oder Mac) bequem zu durchsuchen und verfügbar zu machen. Kreative können die gewünschten Assets in Mac Finder oder Windows Explorer leicht anzeigen, in Desktop-Programmen öffnen und lokal ändern. Die Änderungen werden dann wiederum unter einer neuen, im Repository erstellten Version in AEM gespeichert. Die Anwendung unterstützt grundlegende Suchvorgänge mit einem oder mehreren Suchbegriffen, den Platzhaltern „*“ und „?“ sowie dem AND-Operator. Siehe [Assets durchsuchen und suchen sowie Vorschau für Assets anzeigen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) im Desktop-Programm.
 
 ### Suchen von Assets in Brand Portal {#brandportal}
 
-Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte digitale Assets effizient und sicher mit erweiterten internen Teams, Partnern und Wiederverkäufern zu teilen. Siehe [Suchen von Assets in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte digitale Assets effizient und sicher mit erweiterten internen Teams, Partnern und Wiederverkäufern zu teilen. Siehe [Suchen von Assets in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Suchen nach Adobe Stock-Fotos {#adobestock-1}
 
@@ -238,7 +241,7 @@ Sie können die folgenden Anforderungsparameter in einer URL übergeben, um den 
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Verwenden Sie diese Option, um die Asset-Typen basierend auf dem übergebenen Wert zu filtern. |
 | root | &lt;Ordnerpfad> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
 
-Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu `https://[AEM server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
+Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
 
 ![Asset in der Asset-Auswahl suchen und auswählen](assets/assetpicker.png)
 
@@ -246,29 +249,33 @@ Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu 
 
 ## Beschränkungen {#limitations}
 
-Die Suchfunktion in AEM Assets unterliegt folgenden Einschränkungen:
+The search capability in [!DNL Experience Manager Assets] has the following limitations:
 
 * Beginnen Sie die Suchanfrage nicht mit einem Leerzeichen, da die Suche sonst nicht funktioniert.
-* AEM zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben (CQ-4273540).
+* [!DNL Experience Manager] zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern bzw. Dateien und Ordnern können die Suchergebnisse mit keinem anderen Parameter sortiert werden.
-* Wenn Sie die Eingabetaste drücken, ohne etwas in die OmniSearch-Leiste einzugeben, gibt AEM eine Liste mit nur Dateien ohne Ordner zurück. Wenn Sie gezielt nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt AEM keine Ergebnisse zurück.
+* If you press Return without typing in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
 
 Visuelle Suchen oder Ähnlichkeitssuchen weisen die folgenden Einschränkungen auf:
 
 * Die visuelle Suche funktioniert am besten mit größeren Repositorys. Zwar ist keine Mindestanzahl von Bildern für gute Ergebnisse erforderlich, doch ist die Qualität der Treffer bei einigen Bildern möglicherweise nicht so hoch wie bei Treffern aus einem großen Repository.
-* Sie können das Modell weder ändern noch AEM so trainieren, dass ähnliche Bilder gefunden werden. Das Hinzufügen oder Entfernen von Smart-Tags zu bzw. von einigen Assets verändert das Modell beispielsweise nicht. Die Assets werden aus den visuell ähnlichen Suchergebnissen ausgeschlossen.
+* You cannot change the model or train [!DNL Experience Manager] to find similar images. Das Hinzufügen oder Entfernen von Smart-Tags zu bzw. von einigen Assets verändert das Modell beispielsweise nicht. Die Assets werden aus den visuell ähnlichen Suchergebnissen ausgeschlossen.
+
+Die Suchfunktion kann in den folgenden Szenarien Leistungseinschränkungen aufweisen:
+
+* Die Ansicht der Karten ist schneller als die Ansicht der Liste, die Suchergebnisse anzuzeigen.
 
 ## Suchtipps {#tips}
 
 * Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
 * Verwenden Sie das Prädikat „Einblicke“, um basierend auf den Nutzungsstatistiken diverser Creative Cloud-Programme nach unterstützten Assets zu suchen. Nutzungsdaten werden unter Nutzungsbewertung, Impressions, Klicks und Medienkanäle gruppiert, in denen die Assets anhand von Kategorien angezeigt werden.
-* Aktivieren Sie Kontrollkästchen, um alle Suchergebnisse oder die gefilterten Suchergebnisse auszuwählen, die für die Auswahl verwendet werden sollen. Es werden alle gesuchten Assets ausgewählt, unabhängig davon, wie viele Assets in der aktuellen Benutzeransicht angezeigt werden. Sie können beispielsweise alle ausgewählten Assets herunterladen, Metadateneigenschaften für alle ausgewählten Assets stapelweise aktualisieren oder ausgewählte Assets einer Sammlung hinzufügen.
+* Aktivieren Sie das Kontrollkästchen &quot;Alle **[!UICONTROL auswählen]** &quot;, um die gesuchten Assets auszuwählen. [!DNL Experience Manager] zeigt zunächst 100 Assets in der Ansicht der Karten und 200 Assets in der Ansicht der Liste an. Während des Bildlaufs der Suchergebnisse werden weitere Assets geladen. Sie können mehr Assets als die geladenen Assets auswählen. Die Anzahl der ausgewählten Assets wird oben rechts auf der Suchergebnisseite angezeigt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen. Wenn mehr Assets ausgewählt als angezeigt werden, wird entweder eine Aktion auf alle ausgewählten Assets angewendet oder ein Dialogfeld zeigt die Anzahl der Assets an, auf die sie angewendet werden. Um eine Aktion auf die Assets anzuwenden, die nicht geladen wurden, stellen Sie sicher, dass alle Assets explizit ausgewählt sind.
 * Informationen zum Suchen nach Assets, die keine obligatorischen Metadaten enthalten, finden Sie unter [Obligatorische Metadaten](#mandatorymetadata).
 * Die Suche nutzt alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. For better results, use double (not single) quotes or ensure that the number is contiguous to a word without a special character (for example `shoe12`).
 * Die Volltextsuche unterstützt Operatoren wie `-` und `^`. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. For example, use `"Notebook - Beauty"` instead of `Notebook - Beauty`.
 * Wenn es zu viele Suchergebnisse gibt, schränken Sie den [Suchbereich](#scope) ein, um die gewünschten Assets leichter finden zu können. Das funktioniert am besten, wenn Sie eine Ahnung davon haben, wie Sie besser nach den gewünschten Assets suchen können (z. B. nach einem bestimmten Dateityp, nach einem bestimmten Speicherort, nach bestimmten Metadaten usw.).
 
-* **Tagging**: Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. AEM bietet Methoden zum automatischen Taggen von Assets mit den KI-Diensten von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
+* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. [!DNL Experience Manager] bietet Methoden zum automatischen Taggen von Assets mit den KI-Diensten von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
 
 * **Indizierung**: In den Suchergebnissen werden nur indizierte Metadaten und Assets zurückgegeben. Um eine bessere Abdeckung und Leistung zu erzielen, stellen Sie eine ordnungsgemäße Indizierung sicher und befolgen Sie die Best Practices. Siehe [Indizierung](#searchindex).
 
@@ -303,10 +310,11 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 *Abbildung: Die Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels wird veranschaulicht.*
 
-**Suchbegriff ausschließen**: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die einen Suchbegriff nicht enthalten. Beispielsweise gibt die Abfrage `running -shoe` Assets zurück, die `running`, aber nicht `shoe` enthalten. Gleichermaßen gibt die Abfrage `camp -night` Assets zurück, die `camp`, aber nicht `night` enthalten. Beachten Sie, dass die Abfrage `camp-night` Assets zurückgibt, die sowohl `camp` als auch `night` enthalten.
+**Suchbegriff ausschließen**: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die einen Suchbegriff nicht enthalten. Beispielsweise gibt die Abfrage `running -shoe` Assets zurück, die `running`, aber nicht `shoe` enthalten. Gleichermaßen gibt die Abfrage `camp -night` Assets zurück, die `camp`, aber nicht `night` enthalten. The query `camp-night` returns assets that contain both `camp` and `night`.
 
-![Nutzung eines Bindestrichs zum Suchen nach Assets, die einen ausgeschlossenen Suchbegriff nicht enthalten](assets/search_dash_exclude_keyword.gif)
-*Abbildung: Nutzung eines Bindestrichs zum Suchen nach Assets, die einen ausgeschlossenen Suchbegriff nicht enthalten*
+![Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten](assets/search_dash_exclude_keyword.gif)
+
+*Abbildung: Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten.*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -319,7 +327,7 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
+Visual search uses smart tags. After configuring smart tagging functionality, follow these steps.
 
 1. In AEM CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
@@ -344,7 +352,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
@@ -394,7 +402,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## Arbeiten mit Asset-Suchergebnissen {#aftersearch}
 
-Sobald Ihnen durchsuchte Assets angezeigt werden, die Ihren Kriterien entsprechen, können Sie folgende typische Aufgaben mit diesen Suchergebnissen ausführen oder die folgenden Aktionen vornehmen:
+Sie können die Assets, nach denen Sie gesucht haben, wie [!DNL Experience Manager]folgt bearbeiten:
 
 * Metadateneigenschaften und andere Informationen anzeigen.
 * Ein oder mehrere Assets herunterladen.
@@ -403,7 +411,7 @@ Sobald Ihnen durchsuchte Assets angezeigt werden, die Ihren Kriterien entspreche
 
 ### Sortieren von Suchergebnissen {#sort}
 
-Das Sortieren von Suchergebnissen hilft Ihnen, erforderliche Assets schneller zu finden. Das Sortieren von Suchergebnissen ist in der Listenansicht möglich und nur, wenn Sie die Option **[[!UICONTROL Dateien]](#searchui)** im Bedienfeld **[!UICONTROL Filter]** auswählen. [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
+Sortieren Sie die Suchergebnisse, um die erforderlichen Assets schneller zu ermitteln. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
 In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
 
@@ -419,7 +427,7 @@ Um die Kommentare zu einem Asset oder den Versionsverlauf eines Assets zu überp
 
 ![Sortieren von Timeline-Einträgen für ein gesuchtes Asset](assets/sort_timeline_search_results.gif)
 
-Sortieren von Timeline-Einträgen für ein gesuchtes Asset
+*Abbildung: Sortieren von Zeitleisteneinträgen für ein Suchelement*
 
 ### Herunterladen gesuchter Assets {#download}
 
@@ -429,7 +437,7 @@ Sie können die gesuchten Assets und ihre Ausgaben herunterladen, und zwar genau
 
 Es lassen sich für die gängigen Metadatenfelder verschiedener Assets Massenaktualisierungen durchführen. Wählen Sie aus den Suchergebnissen ein oder mehrere Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und aktualisieren Sie die Metadaten nach Bedarf. Klicken Sie abschließend auf **[!UICONTROL Speichern und schließen]**. Die zuvor vorhandenen Metadaten in den aktualisierten Feldern werden überschrieben.
 
-Bei Assets, die in einem einzelnen Ordner oder einer Sammlung verfügbar sind, ist es einfacher, [die Metadaten stapelweise zu aktualisieren](/help/assets/manage-metadata.md#manage-assets-metadata). Bei Assets, die in verschiedenen Ordnern enthalten sind oder gemeinsamen Kriterien entsprechen, ist es schneller, durch Suchen eine Massenaktualisierung der Metadaten vorzunehmen.
+For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/manage-metadata.md#manage-assets-metadata) without using the search functionality. Bei Assets, die in verschiedenen Ordnern enthalten sind oder gemeinsamen Kriterien entsprechen, ist es schneller, durch Suchen eine Massenaktualisierung der Metadaten vorzunehmen.
 
 ### Smart-Sammlungen {#collections-1}
 
@@ -440,38 +448,27 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
 
-## Unerwartete Suchergebnisse {#unexpectedresults}
-
-**Suchen nach fehlenden Metadaten**: Bei der Suche nach Assets, denen die obligatorischen Metadaten fehlen, zeigt AEM möglicherweise einige Assets mit gültigen Metadaten an. Fehlende Metadaten werden anhand der Eigenschaft „Indizierte Metadaten“ erkannt und gemeldet. Selbst wenn die Asset-Metadaten korrigiert werden, werden sie bis zur Neuindizierung weiterhin als fehlende Metadaten angezeigt. Siehe [Obligatorische Metadaten](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
-
-**Zu viele Suchergebnisse**: Um zu viele Suchergebnisse zu vermeiden, sollten Sie die Suchergebnisse einschränken. Um beispielsweise in DAM nach Assets zu suchen, wählen Sie in der OmniSearch-Leiste `Location:Assets` aus. Weitere Suchfilter finden Sie unter [Suchbereich](#scope).
-
-<!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
--->
+## Unerwartete Suchergebnisse und Probleme {#unexpectedresults}
 
 <!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**Keine Vorschläge zur automatischen Vervollständigung bei neu hochgeladenen Assets**: Die Metadaten (Titel, Tags usw.) der kürzlich hochgeladenen Assets stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie mit der Eingabe eines Suchbegriffs in die OmniSearch-Leiste beginnen. AEM Assets erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu.
+| Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
+|---|---|---|
+| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nachdem die Metadaten aktualisiert wurden, muss der korrekte Status der Asset-Metadaten erneut indiziert werden. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
+| Zu viele Suchergebnisse. | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Nicht verwandte oder teilweise verwandte Suchergebnisse. | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
+| Keine Vorschläge für Assets automatisch ausfüllen. | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
+| Keine Suchergebnisse. | <ul><li>Assets, die Ihrer Abfrage entsprechen, sind nicht vorhanden. </li><li> Whitespace, der vor der Abfrage der Suche hinzugefügt wurde. </li><li> Das Feld für nicht unterstützte Metadaten enthält den Suchbegriff, nach dem Sie gesucht haben.</li><li> Suche, die während der Offenzeit eines Assets durchgeführt wurde. </li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie intelligentes Tagging oder Ähnlichkeitssuche verwenden, um die Suchergebnisse zu verbessern. </li><li>[Bekannte Einschränkung](#limitations).</li><li>Alle Metadatenfelder werden bei Suchvorgängen nicht berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Zeit- und Zeitangabe für die erforderlichen Assets.</li></ul> |
+| Suchfilter oder eine Vorhersage ist nicht verfügbar. | <ul><li>Der Suchfilter ist entweder nicht konfiguriert.</li><li>Es ist nicht für Ihre Anmeldung verfügbar.</li><li>(Weniger wahrscheinlich) Die Suchoptionen werden nicht auf die verwendete Bereitstellung angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassungen verfügbar sind oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Berechtigung/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator und überprüfen Sie die verfügbaren Anpassungen für die [!DNL Assets] Bereitstellung, die Sie verwenden.</li></ul> |
+| Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild. | <ul><li>Bild ist in nicht verfügbar [!DNL Experience Manager].</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>hinzufügen Sie das Bild an [!DNL Assets].</li><li>Wenden Sie sich an Ihren Administrator, um das Repository erneut zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem intelligenten Tag zu versehen.</li></ul> |
+| Bei der Suche nach visuell ähnlichen Bildern wird ein irrelevantes Bild angezeigt. | Visuelles Suchverhalten. | [!DNL Experience Manager] zeigt so viele potenziell passende Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, jedoch mit einem niedrigeren Such-Ranking. Die Qualität der Treffer und die Relevanz der gefundenen Assets nehmen ab, je weiter Sie nach unten scrollen. |
+| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet. | Die Option &quot;Alle  auswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Ansicht der Karte und die ersten 200 Suchergebnisse in der Ansicht der Liste aus. |  |
 
-**Keine Suchergebnisse**: Wenn AEM für eine Suchanfrage eine leere Seite anzeigt, kann dies folgende Gründe haben:
+>[!MORELIKETHIS]
+>
+>* [[!DNL Experience Manager] Handbuch zur Suchimplementierung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Erweiterte Konfiguration zur Steigerung der Suchergebnisse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Intelligente Übersetzungssuche konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
-* Es sind keine Assets vorhanden, die Ihrer Abfrage entsprechen.
-* Sie haben vor der Suchanfrage ein Leerzeichen eingegeben. Dabei handelt es sich um eine [bekannte Einschränkung](#limitations).
-
-* Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen. Nicht alle Metadatenfelder werden bei Suchvorgängen berücksichtigt. Siehe [Suchbereich](#scope).
-* Die Ein- und Ausschaltzeit wurde für ein Asset konfiguriert und die Suche wurde während der Ausschaltzeit des Assets durchgeführt.
-
-**Suchfilter/Prädikat ist nicht verfügbar**: Wenn in der Benutzeroberfläche keine erwartete Anpassung für Suchfilter verfügbar ist, wenden Sie sich an Ihren Administrator, um zu prüfen, ob die Anpassung für alle Autoren und auf dem Produktions-Server, den Sie verwenden, implementiert wurde. Möglicherweise war die Konfiguration falsch.
-
-## Fehlerbehebung bei suchbezogenen Problemen {#troubleshoot}
-
-<!-- TBD: Expand this section.
--->
-
-Lernen Sie im Folgenden Probleme und mögliche Lösungen kennen:
-
-* Wenden Sie sich an Ihren Administrator, wenn kein erwarteter Suchfilter/kein erwartetes Prädikat angezeigt wird.
-* Bei der Suche nach visuell ähnlichen Bildern fehlt in den Suchergebnissen möglicherweise ein erwartetes Bild. Überprüfen Sie, ob die entsprechenden Assets indiziert und mit Smart-Tags versehen sind.
-* Bei der Suche nach visuell ähnlichen Bildern kann gelegentlich auch ein scheinbar irrelevantes Bild in den Suchergebnissen angezeigt werden. AEM zeigt so viele potenziell passende Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, jedoch mit einem niedrigeren Such-Ranking. Die Qualität der Treffer und die Relevanz der gefundenen Assets nehmen ab, je weiter Sie nach unten scrollen.
