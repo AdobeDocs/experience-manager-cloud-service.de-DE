@@ -2,7 +2,7 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 85%
@@ -88,13 +88,13 @@ Aktualisierungen der Staging- und Produktionsumgebungen werden automatisch von A
 
 Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Programms verwaltet. Wenn in einer Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, lautet der Status für die Umgebungskarte auf dem Startbildschirm **UPDATE VERFÜGBAR**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 Die Option **Aktualisieren** ist auf der Karte **Umgebungen** verfügbar.
 Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Aktualisieren**, wie in der folgenden Abbildung dargestellt:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Durch Auswahl dieser Option kann ein Bereitstellungs-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
 
@@ -110,7 +110,7 @@ Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verf�
 
 Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Löschen**, wie in der folgenden Abbildung dargestellt:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -123,7 +123,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. Si
 
 Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Aufrufen der Entwicklerkonsole {#accessing-developer-console}
@@ -135,7 +135,7 @@ Nur Benutzer mit der Rolle „Entwickler“ haben Zugriff auf die **Entwicklerko
 Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction).
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
 
