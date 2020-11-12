@@ -2,10 +2,10 @@
 title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.11.0
 description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.11.0
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '179'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 
 ### Neue Funktionen {#what-is-new}
 
-* Eine neue Menüoption **Anmeldung lokal** ist jetzt über die Menüoptionen auf den Seiten &quot;Umgebung&quot;und &quot;Umgebung-Zusammenfassung&quot;verfügbar.
+* Eine neue Menüoption &quot; **Lokale Anmeldung** &quot;steht nun den Benutzern über die Menüoptionen &quot;Umgebung&quot;auf den Seiten &quot;Umgebung&quot;und &quot;Umgebung - Zusammenfassung&quot;zur Verfügung.
 
-* Die Registerkarte &quot; **Lernen** &quot;in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert
+* Die Registerkarte &quot; **Lernen** &quot;in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
