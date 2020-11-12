@@ -2,7 +2,7 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 85%
@@ -141,7 +141,7 @@ Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** au
 
 ## Lokale Anmeldung {#login-locally}
 
-Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der Karte für **Umgebung** , um sich lokal bei Adobe Experience Manager anzumelden
+Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der Karte für **Umgebung** , um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![](assets/environ-login-locally.png)
 
