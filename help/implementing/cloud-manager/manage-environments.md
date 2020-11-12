@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 88%
+source-wordcount: '870'
+ht-degree: 86%
 
 ---
 
@@ -138,4 +138,10 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 ![](assets/environ-dev-console.png)
 
 Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
+
+## Lokale Anmeldung {#login-locally}
+
+Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der Karte für **Umgebung** , um sich lokal bei Adobe Experience Manager anzumelden
+
+![](assets/environ-login.png)
 
