@@ -2,7 +2,7 @@
 title: Verwenden des Content Transfer-Tools
 description: Verwenden des Content Transfer-Tools
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Nachdem Sie die *Extraktion* des Inhaltsübermittlungsprozesses abgeschlossen haben und bevor Sie die *Übergangsphase* starten, um Inhalte in Ihre AEM als Cloud Service- *Stage* - oder *Produktionsinstanz* zu übernehmen, müssen Sie ein Support-Ticket protokollieren, um die Adobe über Ihre Absicht zu informieren, *Ingestion* ** auszuführen, damit die Adobe sicherstellen kann, dass während desIngestionProcess keine Unterbrechungen auftreten. Sie müssen das Support-Ticket 1 Woche vor dem geplanten *Ingestion* -Datum einloggen. Nachdem Sie das Support-Ticket übermittelt haben, gibt das Supportteam Ihnen Anleitungen zu den nächsten Schritten.
    * Protokollieren Sie ein Support-Ticket mit den folgenden Details:
-   1. Genaues Datum und voraussichtliche Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Ingestion* -Phase Beginn beabsichtigen.
-   2. Umgebung-Typ (Phase oder Produktion), in den Sie Daten erfassen möchten.
-   3. Programm-ID
+      * Genaues Datum und voraussichtliche Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Ingestion* -Phase Beginn beabsichtigen.
+      * Umgebung-Typ (Phase oder Produktion), in den Sie Daten erfassen möchten.
+      * Programm-ID.
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Bitte stellen Sie außerdem sicher, dass während der *Engpass* -Phase keine Cloud Manager-Pipelines ausgeführt werden.
 
