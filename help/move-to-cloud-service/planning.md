@@ -2,10 +2,10 @@
 title: Planungsphase
 description: Planungsphase
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Der erste Schritt in der Planungsphase besteht darin, Ihre Bereitschaft für den
 
 Sie müssen eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen vornehmen, um den für die Umstellung erwarteten Aufwand zu bestimmen.
 
-Sie können den Bewertungsschritt beschleunigen, indem Sie den Cloud Readiness Analyzer (CRA) für Ihre aktuelle AEM ausführen. Weitere Informationen finden Sie unter [CRA-Übersicht](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html).
+Sie können den Bewertungsschritt beschleunigen, indem Sie den Best Practices-Analyzer für Ihre aktuelle AEM ausführen. Weitere Informationen finden Sie unter [Best Practices-Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Wenn Sie bereits Zugriff auf Cloud Manager und eine Cloud Service-Umgebung haben, wird empfohlen, Ihren aktuellen Code in einer Cloud Manager-Pipeline für die Code-Qualität auszuführen, um die erforderlichen Code-Änderungen für die Kompatibilität mit Cloud Service zu bewerten.
