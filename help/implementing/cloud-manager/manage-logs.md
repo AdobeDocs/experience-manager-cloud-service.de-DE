@@ -2,10 +2,10 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen. Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Diese Dateien können über die Benutzeroberfläche heruntergeladen werden. Dies kann über die Seite **Übersicht** erfolgen:
+These files can be downloaded through the UI, either from the **Overview**  page:
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Oder über die Seite **Umgebungen**:
 
@@ -25,7 +25,7 @@ Oder über die Seite **Umgebungen**:
 >[!NOTE]
 >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Protokolle über API {#logs-thorugh-api}
