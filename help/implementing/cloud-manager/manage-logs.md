@@ -2,7 +2,7 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 93%
@@ -28,7 +28,7 @@ Oder über die Seite **Umgebungen**:
 ![](assets/download-logs2.png)
 
 
-## Protokolle über API {#logs-thorugh-api}
+## Protokolle über API {#logs-through-api}
 
 Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
 
