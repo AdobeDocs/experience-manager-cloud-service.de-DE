@@ -3,7 +3,7 @@ title: Bilder mit AI-generierten Tags automatisch taggen
 description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 85%
@@ -154,7 +154,7 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass Ihre Assets ordnungsgemäß mit Tags versehen sind. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
-
+>
 >In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags markiert. Selbst unveränderte Assets werden jedoch markiert, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus des Tagging-Workflows 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
 
 ### Tagging hochgeladener Assets {#tag-uploaded-assets}
