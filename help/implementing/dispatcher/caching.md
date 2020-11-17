@@ -2,10 +2,10 @@
 title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 98%
+source-wordcount: '1483'
+ht-degree: 89%
 
 ---
 
@@ -28,6 +28,16 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
 ```
 <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Age 0
+</LocationMatch>
+```
+
+Gehen Sie beim Festlegen von Headern für globale Cachesteuerelemente oder solchen, die einem breiten Regex entsprechen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die Sie möglicherweise privat halten möchten. Erwägen Sie, mehrere Richtlinien zu verwenden, um sicherzustellen, dass die Regeln in einer feinen Weise angewendet werden. AEM als Cloud Service entfernt den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was er als nicht erreichbar erkennt, wie in der Dispatcher-Dokumentation beschrieben. Damit AEM immer die Zwischenspeicherung anwenden, können Sie die Option &quot;immer&quot;wie folgt hinzufügen:
+
+```
+<LocationMatch "\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 ```
 
@@ -41,7 +51,7 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 * Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf „privat“. Folgendes würde beispielsweise verhindern, dass html-Inhalte in einem Verzeichnis mit dem Namen „myfolder“ zwischengespeichert werden:
 
 ```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
     Header set Cache-Control “private”
 </LocationMatch>
 ```
@@ -59,10 +69,13 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 * Können durch die folgenden Apache-Anweisungen `mod_headers` auf eine feinere Ebene gesetzt werden:
 
 ```
-<LocationMatch "^.*.jpeg$">
+<LocationMatch "^\.*.(jpeg|jpg)$">
     Header set Cache-Control "max-age=222"
+    Header set Age 0
 </LocationMatch>
 ```
+
+Sehen Sie sich die oben stehende Diskussion im Abschnitt html/text an, um Vorsicht zu walten und nicht zu weit zwischenspeichern. Außerdem erfahren Sie, wie Sie AEM dazu zwingen, immer die Zwischenspeicherung mit der Option &quot;Immer&quot;anzuwenden.
 
 Es muss sichergestellt werden, dass eine Datei unter src/conf.dispatcher.d/cache die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
 
