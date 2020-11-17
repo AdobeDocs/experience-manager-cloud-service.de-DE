@@ -2,10 +2,10 @@
 title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 89%
+source-wordcount: '1481'
+ht-degree: 85%
 
 ---
 
@@ -25,12 +25,12 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
 * Kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME`-Variable in `global.vars` mithilfe der Dispatcher Tools des AEM as a Cloud Service-SDK definiert wird.
 * Kann auf einer feineren Ebene durch die folgenden Anweisungen von apache mod_headers überschrieben werden:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
 Gehen Sie beim Festlegen von Headern für globale Cachesteuerelemente oder solchen, die einem breiten Regex entsprechen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die Sie möglicherweise privat halten möchten. Erwägen Sie, mehrere Richtlinien zu verwenden, um sicherzustellen, dass die Regeln in einer feinen Weise angewendet werden. AEM als Cloud Service entfernt den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was er als nicht erreichbar erkennt, wie in der Dispatcher-Dokumentation beschrieben. Damit AEM immer die Zwischenspeicherung anwenden, können Sie die Option &quot;immer&quot;wie folgt hinzufügen:
 
@@ -48,15 +48,16 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 { /glob "*" /type "allow" }
 ```
 
-* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf „privat“. Folgendes würde beispielsweise verhindern, dass html-Inhalte in einem Verzeichnis mit dem Namen „myfolder“ zwischengespeichert werden:
+* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* Beachten Sie, dass andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), Werte nicht erfolgreich überschreiben.
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
@@ -68,12 +69,12 @@ Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` d
 * Standardmäßig nicht zwischengespeichert
 * Können durch die folgenden Apache-Anweisungen `mod_headers` auf eine feinere Ebene gesetzt werden:
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
 Sehen Sie sich die oben stehende Diskussion im Abschnitt html/text an, um Vorsicht zu walten und nicht zu weit zwischenspeichern. Außerdem erfahren Sie, wie Sie AEM dazu zwingen, immer die Zwischenspeicherung mit der Option &quot;Immer&quot;anzuwenden.
 
@@ -86,7 +87,8 @@ Es muss sichergestellt werden, dass eine Datei unter src/conf.dispatcher.d/cache
 
 Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht Teil der Filter der LocationMatch-Anweisung sind.
 
-* Beachten Sie, dass andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), Werte nicht erfolgreich überschreiben.
+>[!NOTE]
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### Andere Inhaltsdateitypen im Knotenspeicher {#other-content}
 
