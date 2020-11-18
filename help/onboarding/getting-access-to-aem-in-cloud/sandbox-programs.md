@@ -2,10 +2,10 @@
 title: Sandbox-Programme - Cloud Service
 description: Sandbox-Programme - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 1%
+source-wordcount: '1184'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Die in einer Sandbox erstellten Umgebung sind nicht für die automatische Skalie
 
 Sandbox-Programm umfassen Sites und Assets und werden automatisch mit einem Git-Repository, einer Development-Umgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird mit einem Beispielprojekt basierend auf dem AEM Project-Archetyp gefüllt.
 
-Weitere Informationen zu den Programm-Typen finden Sie unter [Einführung zu Programmen und Programmen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) .
+Weitere Informationen zu den Programm-Typen finden Sie unter [Einführung zu Programmen und Programmen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) .
 
 ### Attribute von Sandbox-Programmen {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ Sandbox-Programm haben die folgenden Attribute:
 
 Mit einem Assistenten zum Erstellen von Programmen können Sie ein Sandbox-Programm erstellen.
 
-Weitere Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) .
+Weitere Informationen zum Erstellen eines Sandbox-Programms finden Sie unter [Erstellen eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) .
 
 ### Erstellen von Sandbox-Umgebung {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch a
 
 Der Produktions-Stage-Umgebung-Satz kann manuell dem Sandbox-Programm hinzugefügt werden, wenn der Anwender bereit ist, eine Produktionspipeline einzurichten.
 
-Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) .
+Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](/help/implementing/cloud-manager/manage-environments.md) .
 
 ### Löschen von Sandbox-Umgebung {#deleting-sandbox-environments}
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Stage-Umgebung oder -Sets löschen.
 
-Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) .
+Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebung](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) .
 
 
 ## Hibernating- und EntHibernating-Sandbox-Umgebung {#hibernating-introduction}
@@ -90,10 +90,10 @@ Sie können Ihr Sandbox-Programm in der Developer Console auf zwei verschiedene 
 >[!NOTE]
 >Der Zugriff auf die Developer Console für ein Sandbox-Programm steht allen Benutzern von Cloud Manager zur Verfügung.
 
-Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu löschen:
+Gehen Sie wie folgt vor, um Ihre Sandbox-Programm-Umgebung manuell zu berühren:
 
 1. Navigieren Sie zur **Developer Console**.
-Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+Informationen zum Zugriff auf die [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
    >[!IMPORTANT]
    >Wenn Sie eine **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie keine Möglichkeit, eine Sandbox-Programm-Umgebung zu löschen. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
 
@@ -119,7 +119,7 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 ### Enthibernation {#de-hibernation-introduction}
 
 1. Navigieren Sie zur **Developer Console**.
-Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
+Informationen zum Zugriff auf die [Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) über die Karte für **Umgebung** finden Sie unter Zugriff auf die Developer Console **** .
 
    >[!IMPORTANT]
    >Wenn Sie eine **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie nicht die Möglichkeit, eine Sandbox-Programm-Umgebung zu deaktivieren. Die Problemumgehung erfolgt einmal in der Developer Console. Fügen Sie am Ende der URL `#release-cm-p1234-e5678 where 1234` 1234 das folgende Muster hinzu: Ihre *Programm-ID* und 5678 Ihre *Umgebung-ID*.
@@ -155,9 +155,7 @@ Informationen zum Zugriff auf die [Developer Console](https://docs.adobe.com/con
 
 #### Berechtigungen zum Deaktivieren von Bereinigungen {#permissions-de-hibernate}
 
-Jeder Benutzer mit einem Profil, das ihm Zugriff auf AEM als Cloud Service gewährt, sollte auf die **Entwicklerkonsole** zugreifen können, damit er die Umgebung dehibernieren kann.
-
-Informationen zum Einrichten von Benutzerberechtigungen finden Sie unter [Hinzufügen Benutzer und Rollen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) in Cloud Manager.
+Jeder Benutzer mit einem Profil, das ihm Zugriff auf AEM als Cloud Service gewährt, sollte auf die **Entwicklerkonsole** zugreifen können, sodass er die Umgebung dehibernieren kann.
 
 #### Zugriff auf eine ausgeblendete Umgebung {#accessing-hibernated-environment}
 
@@ -178,11 +176,11 @@ Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Asp
 
 ## AEM Updates für Sandbox-Umgebung {#aem-updates-sandbox}
 
-Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
 
 Ein Benutzer kann AEM Aktualisierungen manuell auf die Umgebung in einem Sandbox-Programm anwenden.
 
-Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren der Umgebung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) .
+Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren der Umgebung](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) .
 
 >[!NOTE]
 >* Eine manuelle Aktualisierung kann nur ausgeführt werden, wenn die zielgerichtete Umgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.
