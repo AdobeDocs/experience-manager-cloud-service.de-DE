@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service-SDK
 description: Überblick über die AEM als Cloud Service Software Development Kit
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 98%
+source-wordcount: '1181'
+ht-degree: 86%
 
 ---
 
@@ -23,6 +23,17 @@ Darüber hinaus werden manche Kunden, die zuvor AEM 6.5 oder frühere Versionen 
 
 * **6.5 Veraltetes Java-API-JAR**: ein zusätzlicher Satz von Schnittstellen, die seit AEM 6.5 entfernt wurden.
 * **6.5 Veraltetes Javadoc-JAR**: die Javadocs für den zusätzlichen Satz an Schnittstellen.
+
+## Erstellen für das SDK {#building-for-the-sdk}
+
+Das AEM als Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Weitere Informationen finden Sie in der Dokumentation zum [AEMArchetype-Projekt](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Auf hoher Ebene werden die folgenden Schritte ausgeführt:
+
+* **Kompilieren Sie Code**. Wie erwartet wird Quellcode kompiliert und die resultierenden Inhaltspakete generiert
+* **Bauen Sie Artefakte** auf. Während dieses Prozesses werden Artefakte erstellt
+* **Analysieren von Bundles**. Bundles werden mithilfe des Maven Analyzer-Plugins analysiert, das nach Problemen im Maven-Projekt sucht, z. B. fehlende Abhängigkeiten
+* **Bereitstellen von Artefakten**. Artefakte werden auf dem lokalen Server bereitgestellt.
+
+Die gleichen Schritte werden von Cloud Manager bei der Bereitstellung in Cloud-Umgebung ausgeführt. Die Ausführung von Builds auf lokaler Ebene ermöglicht lokale Entwicklung und Tests, sodass Entwickler Code- oder Strukturprobleme effizient erkennen können, lange bevor sie sich zur Quellcodeverwaltung verpflichten und Cloud Manager-Bereitstellungen auslösen, was länger dauern kann.
 
 ## Zugriff auf das AEM as a Cloud Service-SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
