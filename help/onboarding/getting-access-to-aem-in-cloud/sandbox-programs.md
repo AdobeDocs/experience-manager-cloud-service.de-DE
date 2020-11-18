@@ -2,7 +2,7 @@
 title: Sandbox-Programme - Cloud Service
 description: Sandbox-Programme - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,13 +51,13 @@ Sandbox-Programm werden zum Zeitpunkt der Erstellung des Programms automatisch a
 
 Der Produktions-Stage-Umgebung-Satz kann manuell dem Sandbox-Programm hinzugefügt werden, wenn der Anwender bereit ist, eine Produktionspipeline einzurichten.
 
-Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebung](/help/implementing/cloud-manager/manage-environments.md) .
+Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md) .
 
 ### Löschen von Sandbox-Umgebung {#deleting-sandbox-environments}
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Stage-Umgebung oder -Sets löschen.
 
-Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebung](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) .
+Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen der Umgebung](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) .
 
 
 ## Hibernating- und EntHibernating-Sandbox-Umgebung {#hibernating-introduction}
@@ -176,7 +176,7 @@ Bei Umgebung mit Hibernationen und enthibernierten  sind nur wenige wichtige Asp
 
 ## AEM Updates für Sandbox-Umgebung {#aem-updates-sandbox}
 
-Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
 
 Ein Benutzer kann AEM Aktualisierungen manuell auf die Umgebung in einem Sandbox-Programm anwenden.
 
