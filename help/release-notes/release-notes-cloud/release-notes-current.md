@@ -2,10 +2,10 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 4%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL Adobe Asset Link]Version 2.1**: Eine neue Version der [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) -Erweiterung für [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]und [!DNL Adobe InDesign] ist verfügbar. Es fügt Kompatibilität mit den neuesten [!DNL Adobe Creative Cloud] Anwendungen mit Version 2021, veröffentlicht im Oktober 2020.
 
-* **[!DNL Assets]WebP-Dateiunterstützung**: [!DNL Assets] als Cloud Service unterstützt jetzt das WebP-Bildformat. WebP ist ein aufstrebendes Bildformat, das von Google erstellt wurde. Bilder im WebP-Dateiformat sind visuell nicht von JPG- oder PNG-Dateien zu unterscheiden und die Dateien sind viel kleiner. Die geringere Dateigröße von Assets verbessert die Seitenladezeit und hilft Inhaltserstellern, eine schnellere Web-Erfahrung zu erzielen. Siehe [Erstellen eines Standard-Profils](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+* **[!DNL Assets]WebP-Dateiunterstützung**: [!DNL Assets] als Cloud Service unterstützt jetzt die Erstellung von Darstellungen im WebP-Bildformat. WebP ist ein aufstrebendes Bildformat, das von Google erstellt wurde. Bilder im WebP-Dateiformat sind visuell nicht von JPG- oder PNG-Dateien zu unterscheiden und die Dateien sind viel kleiner. Die geringere Dateigröße von Assets verbessert die Seitenladezeit und hilft Inhaltserstellern, eine schnellere Web-Erfahrung zu erzielen. Siehe [Erstellen eines Standard-Profils](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -72,13 +72,13 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 * Eine neue Menüoption **Lokale Anmeldung** steht nun den Benutzern über die Menüoptionen auf den Zusammenfassungsseiten für die **Umgebung** und **Umgebung** zur Verfügung.
 Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
 
-* Die Registerkarte &quot; **Lernen** &quot;in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plugins.
-* Über den Link in der Fußzeile von Cloud Manager zur Auswahl einer Sprache navigieren Sie jetzt zum richtigen Speicherort.
-* Während der Codeprüfung wird der SonarQube-Vorgang manchmal nicht Beginn. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
+* Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plug-ins.
+* Über den Link in der Fußzeile von Cloud Manager zur Sprachauswahl wird jetzt an die richtige Stelle navigiert.
+* Manchmal startete der SonarQube-Prozess während des Code-Scannens nicht. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
 * Alle vorhandenen Produktionslinien werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
