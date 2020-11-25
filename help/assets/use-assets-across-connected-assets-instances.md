@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 90%
+source-wordcount: '2244'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Benutzer können Web-Seiten in [!DNL Experience Manager Sites] erstellen. [!DNL 
 
 ## Übersicht über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten im [!UICONTROL Seiten-Editor] können die Autoren Assets aus einer anderen [!DNL Assets]-Bereitstellung durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Sites] mit einer anderen (Remote-)Bereitstellung von [!DNL Assets].
+Beim Bearbeiten von Seiten im [!UICONTROL Seiteneditor] [!DNL Assets] als Zielort der Zielgruppe können die Autoren Assets aus einer anderen Bereitstellung, die als Asset-Quelle dient, nahtlos suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites] Funktionen und einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets] Funktionen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren.
 
@@ -154,7 +154,7 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
 >[!CAUTION]
 >
->Sobald die abgerufenen Remote-Assets in einer Web-Seite verwendet werden, können sie von allen Benutzern durchsucht und verwendet werden, die über die Zugriffsberechtigung für den lokalen Ordner verfügen, in dem die abgerufenen Assets gespeichert sind (im obigen Beispiel `connectedassets`). Die Assets sind außerdem über [!UICONTROL Content Finder] durchsuchbar und im lokalen Repository sichtbar.
+>Nach der Verwendung auf einer Webseite können die abgerufenen Remote-Assets durchsucht werden und von jedem Benutzer verwendet werden, der über die Berechtigung zum Zugriff auf den lokalen Ordner verfügt. Die abgerufenen Assets werden im lokalen Ordner gespeichert (`connectedassets` im obigen Abschnitt). Die Assets sind außerdem über [!UICONTROL Content Finder] durchsuchbar und im lokalen Repository sichtbar.
 
 Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden. Nur die zugehörigen Metadaten können nicht bearbeitet werden.
 
