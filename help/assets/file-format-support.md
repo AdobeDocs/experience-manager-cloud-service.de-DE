@@ -1,25 +1,25 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: Von Adobe Experience Manager Assets as a Cloud Service unterstützte Dateiformate und MIME-Typen
+description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
+source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
 
-# Von AEM Assets unterstützte Dateiformate {#supported-file-formats}
+# [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. Adobe Experience Manager Assets unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
+[!DNL Adobe Experience Manager] as a Cloud Service unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
-Darüber hinaus bietet Experience Manager Assets erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Volltextindizierung. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
+In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
 Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zählen:
 
-* Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Services erstellt werden, einschließlich Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension und Adobe Acrobat oder PDF.
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
 * Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
@@ -39,7 +39,7 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
-| DN | ✓ |  | ✓ | ✓ |
+| DN | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -94,12 +94,12 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/asset
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW]-Formate {#camera-raw-formats}
 
@@ -174,7 +174,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ |  | ✓ |
+| DIVX | ✓ | - | ✓ |
 | F4V | ✓ | ✓ | ✓ |
 | FLV | ✓ | ✓ | ✓ |
 | M2T | ✓ | - | ✓ |
@@ -197,27 +197,27 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 ## Videoformate in [!DNL Dynamic Media] zum Transcodieren {#video-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
-|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| MP4 | MPEG-4 | H264/AVC (alle Profile) |  |
+|------------------------|--------------------|--------|-------|
+| MP4 | MPEG-4 | H264/AVC (alle Profile) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 |  |
-| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D, RM | Red Raw Video | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MTS | AVCHD | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| R3D, RM | Red Raw Video | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Nicht unterstützt | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | Free Lossless Audio Codec |  |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec |  |
+| FLAC | Native Flac | Free Lossless Audio Codec | - |
+| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec | - |
 
 ## Audioformate {#audio-formats}
 
-Assets as a Cloud Service unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
+[!DNL Assets] as a Cloud Service unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
 
 >[!MORELIKETHIS]
 >
