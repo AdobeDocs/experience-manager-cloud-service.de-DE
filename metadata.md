@@ -4,16 +4,16 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.
 index: y
 type: Documentation
 solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/landing/home.translate.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=de
 getting-started-title: Erste Schritte
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 85%
+source-wordcount: '110'
+ht-degree: 70%
 
 ---
 
@@ -52,5 +52,3 @@ Artikel
 * `title`
 * `description`
 * `contentOwner` (nur auf Core Asset-Inhalt unter `/help/assets`)
-
-Weitere Informationen zu den Metadaten finden Sie im [internen Authoring-Handbuch.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
