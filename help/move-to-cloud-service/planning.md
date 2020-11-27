@@ -2,15 +2,21 @@
 title: Planungsphase
 description: Planungsphase
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 91%
 
 ---
 
 
 # Planung {#planning-phase}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="Planen Ihrer Transition"
+>abstract="Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder veraltet wurden."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices-Analyzer"
 
 Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder veraltet wurden.
 
@@ -20,7 +26,7 @@ AEM as a Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwa
 
 Es gibt jedoch eine Reihe von Unterschieden zwischen AEM On-Premise oder in Adobe Managed Services im Vergleich zu AEM as a Cloud Service.
 
-Die wichtigen Unterschiede finden Sie unter [Wichtige Änderungen in AEM Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/aem-cloud-changes.html) .
+Die wichtigen Unterschiede finden Sie unter [Wichtige Änderungen in AEM Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
 
 ## Veraltete Funktionen {#deprecated-features}
 
