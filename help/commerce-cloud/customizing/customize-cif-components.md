@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
-# Anpassen AEM CIF-Hauptkomponenten {#customize-cif-components}
+# Customize AEM CIF Core Components {#customize-cif-components}
 
 Das [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Codebasis für die Verwendung der [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Lernprogramm erweitern Sie die Komponente [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) weiter, um ein benutzerdefiniertes Attribut aus Magento anzuzeigen. Außerdem erfahren Sie mehr über die GraphQL-Integration zwischen AEM und Magento und die Erweiterungshaken der CIF-Kernkomponenten.
 
@@ -487,8 +487,8 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst! Laden Sie die [fertige
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+* [AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)
+* [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 * [Anpassen AEM CIF-Hauptkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 * [Anpassen der Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
