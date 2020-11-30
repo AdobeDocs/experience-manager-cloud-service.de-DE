@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
 source-wordcount: '2219'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Einträge protokolliert, di
 
 Während die Java-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der drei oben beschriebenen Ebenen.
 
-Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neubereitstellung der Anwendung für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
+Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neuimplementierung der Anwendung für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
 
 **Beispiel einer Protokollausgabe**
 
@@ -300,7 +300,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>Benutzeragent</td>
-<td>„Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36“</td>
+<td>„Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36“</td>
 </tr>
 </tbody>
 </table>
@@ -381,7 +381,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Benutzeragent</td>
-<td>„Mozilla/5.0 (Macintosh) Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36“</td>
+<td>„Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/81.0.4044.122 Safari/537.36“</td>
 </tr>
 </tbody>
 </table>
@@ -511,7 +511,7 @@ Define REWRITE_LOG_LEVEL Debug
 
 ### Konfigurieren des Dispatcher-Fehlerprotokolls {#configuring-the-dispatcher-error-log}
 
-Die Dispatcher-Protokollebenen werden durch die Variable „DISP_LOG_LEVEL in der Datei `conf.d/variables/global.var` angegeben.
+Die Dispatcher-Protokollebenen werden durch die Variable „DISP_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` angegeben.
 
 Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ eingestellt werden, wobei der Standardwert „Warn“ ist.
 
@@ -593,7 +593,7 @@ In der Supportanfrage sollten Kunden Folgendes angeben:
 * Splunk-Port
 * Splunk-HEC-Token. Weitere Informationen finden Sie auf [dieser Seite](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
-Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden. Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
+Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden.  Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
 
 >[!NOTE]
 >
