@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Mit der Vorschau können Sie prüfen, wie ein von Ihnen hochgeladenes digitales 
 
 Ein Viewer ist eine Sammlung aus verschiedenen Einstellungen oder „Vorgaben“, wie die Viewer-Anzeigegröße, das Zoom-Verhalten, die Farbschemata, Rahmen, Schriftarten usw., die bestimmen, wie Rich-Media-Assets auf den Computerbildschirmen und Mobilgeräten der Benutzer angezeigt werden.
 
-Sie können die dedizierte Vorschaufunktion für Videos, Rotations-Sets und Bild-Sets verwenden, Assets aber auch über von Ihnen erstellte Viewer-Vorgaben in der Vorschau anzeigen. Alternativ dazu können Sie auch Bildvorgaben verwenden, um Ausgabeformate von Bildern anzuzeigen.
+Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bildsets verwenden, Assets aber auch über von Ihnen erstellte Viewer-Vorgaben in der Vorschau anzeigen. Alternativ dazu können Sie auch Bildvorgaben verwenden, um Ausgabedarstellungen von Bildern anzuzeigen.
 
 * [Anwenden von Bildvorgaben](/help/assets/dynamic-media/image-presets.md)
 * [Anwenden von Viewer-Vorgaben](/help/assets/dynamic-media/viewer-presets.md)
@@ -29,7 +29,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
 
 **So zeigen Sie die Asset-Vorschau an**
 
-1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
+1. Tippen Sie in **[!UICONTROL Adobe Experience Manager]** auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets]** und dann auf **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
 1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf die Miniaturansicht) des Assets, das Sie in der Vorschau anzeigen möchten.
@@ -39,7 +39,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
     <tbody>
       <tr>
       <td><strong>Per Klick ausgewählter Asset-Typ</strong><br /> </td>
-      <td><strong>Asset-Vorschau in bestimmtem Ausgabeformat möglich?</strong></td>
+      <td><strong>Asset-Vorschau in bestimmter Ausgabedarstellung möglich?</strong></td>
       <td><strong>Asset-Vorschau in bestimmtem Viewer möglich?</strong></td>
       </tr>
       <tr>
@@ -63,9 +63,9 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p>Bild</p> </td>
       <td>Ja</td>
       <td>Ja</td>
-      <td><p><strong>Asset-Vorschau in bestimmtem Ausgabeformat</strong></p>
+      <td><p><strong>Asset-Vorschau in bestimmter Ausgabedarstellung</strong></p>
         <ul>
-        <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabeformate</strong> und wählen Sie dann das Ausgabeformat, das Sie in einer Vorschau anzeigen möchten.</li>
+        <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabedarstellungen</strong> und wählen Sie dann die Ausgabedarstellung, die Sie in einer Vorschau anzeigen möchten.</li>
         </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
@@ -75,16 +75,16 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td>Multimedia</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td><p><strong>Asset-Vorschau in bestimmtem Ausgabeformat</strong></p>
+      <td><p><strong>Asset-Vorschau in bestimmter Ausgabedarstellung</strong></p>
         <ul>
-        <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabeformate</strong> und wählen Sie dann das Ausgabeformat, das Sie in einer Vorschau anzeigen möchten.</li>
-        </ul> <p>Wenn Sie ein Videoausgabeformat mit einer höheren Auflösung für die Vorschau auswählen, kann das Video abgeschnitten werden. Dies liegt daran, dass in der Vorschau des Ausgabeformats die genaue Auflösung angezeigt wird, die auch die Kunden sehen, und zwar im Kontext des eingebetteten Viewers, über den die Vorschau erfolgt.</p> <p>Wenn Sie die Vorschau eines adaptiven Videosets auf Asset-Ebene anzeigen, werden die Ausgabeformate in ein Wiedergabeerlebnis zusammengefasst. Das heißt, das adaptive Video wird entsprechend für die Anzeige skaliert und mit der optimalen Auflösung im Kontext des Anzeigegeräts und der Verbindungsgeschwindigkeit wiedergegeben.<br /> </p> <p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
+        <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabedarstellungen</strong> und wählen Sie dann die Ausgabedarstellung, die Sie in einer Vorschau anzeigen möchten.</li>
+        </ul> <p>Wenn Sie eine Videoausgabedarstellung mit einer höheren Auflösung für die Vorschau auswählen, kann das Video abgeschnitten werden. Dies liegt daran, dass in der Vorschau der Ausgabedarstellung die genaue Auflösung angezeigt wird, die auch die Kunden sehen, und zwar im Kontext des eingebetteten Viewers, über den die Vorschau erfolgt.</p> <p>Wenn Sie die Vorschau eines adaptiven Videosets auf Asset-Ebene anzeigen, werden die Ausgabedarstellungen in ein Wiedergabeerlebnis zusammengefasst. Das heißt, das adaptive Video wird entsprechend für die Anzeige skaliert und mit der optimalen Auflösung im Kontext des Anzeigegeräts und der Verbindungsgeschwindigkeit wiedergegeben.<br /> </p> <p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
         </ul> </td>
       </tr>
       <tr>
-      <td>Bild-Set</td>
+      <td>Bildset</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
@@ -93,7 +93,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, um den Original-Zoom des Bildes wiederherzustellen.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
-      <td>Rotations-Set</td>
+      <td>Rotationsset</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
@@ -111,7 +111,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Klicken Sie auf <strong>Zurücksetzen</strong>, um den Original-Zoom des Bildes wiederherzustellen.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
-      <td>Karussell-Set</td>
+      <td>Karussellset</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong>
@@ -123,9 +123,9 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td>360-Grad-Video<br /> </td>
       <td>Ja</td>
       <td>Ja</td>
-      <td><p><strong>Asset-Vorschau in bestimmtem Ausgabeformat</strong></p>
+      <td><p><strong>Asset-Vorschau in bestimmter Ausgabedarstellung</strong></p>
         <ul>
-        <li>Tippen Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie <strong>Ausgabeformate</strong> und dann das Ausgabeformat aus, das Sie in der Vorschau anzeigen möchten.</li>
+        <li>Tippen Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie <strong>Ausgabedarstellungen</strong> und dann die Ausgabedarstellung aus, die Sie in der Vorschau anzeigen möchten.</li>
         </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
         <ul>
         <li>Tippen Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie <strong>Viewer</strong> und dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
