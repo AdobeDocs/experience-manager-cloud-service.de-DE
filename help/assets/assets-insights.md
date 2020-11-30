@@ -43,6 +43,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
    * **[!UICONTROL Web und Mobile]**: Wie oft wurde das Asset in Websites und Apps verwendet.
    * **[!UICONTROL Social]**: Wie oft wurde das Asset in Lösungen wie Adobe Social und Adobe Campaign verwendet.
    * **[!UICONTROL E-Mail]**: Wie oft wurde das Asset in E-Mail-Kampagnen verwendet.
+
    ![Nutzungsstatistiken](assets/usage_statistics.png)
 
    >[!NOTE]
