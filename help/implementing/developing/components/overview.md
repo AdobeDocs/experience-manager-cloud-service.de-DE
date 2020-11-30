@@ -10,7 +10,7 @@ ht-degree: 53%
 ---
 
 
-# Komponenten Überblick {#components-overview}
+# Komponentenübersicht {#components-overview}
 
 Diese Seite enthält eine Übersicht über die Komponenten von Adobe Experience Manager (AEM), z. B. für die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/components.md).
 
@@ -26,7 +26,7 @@ Komponenten in AEM sind:
 * Kann überall in einem beliebigen AEM ausgeführt werden und kann auch auf die Ausführung unter bestimmten Komponenten beschränkt sein.
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Sie können das Bearbeitungsverhalten konfigurieren.
-* Verwenden Sie Dialogfelder, die mit Unterelementen basierend auf Granite UI-Komponenten erstellt wurden.
+* Verwenden Sie Dialogfelder, die mit Unterelementen basierend auf Granite-UI-Komponenten erstellt wurden.
 * werden mit [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
