@@ -81,8 +81,8 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    Wenn Sie zur Konsole zurückkehren (über **Fertig**), können Sie den Launch wie folgt einsehen (und darauf zugreifen):
 
-   * in der Konsole [**Launches **](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * unter [**Verweise **in der Konsole** Sites **](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * in der Konsole [**Launches**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * unter [**Verweise** in der Konsole **Sites**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
