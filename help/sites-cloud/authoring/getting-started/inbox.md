@@ -1,16 +1,16 @@
 ---
-title: 'Ihr Posteingang  '
+title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
 translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Ihr Posteingang   {#your-inbox}
+# Ihr Posteingang  {#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (darunter auch aus Workflows und Projekten). Sie erhalten beispielsweise Benachrichtigungen zu folgenden Themen:
 
@@ -41,9 +41,9 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 
 >[!NOTE]
 >
->Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource angezeigt](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view) angezeigt.
 
-## Öffnen des Posteingangs   {#opening-the-inbox}
+## Öffnen des Posteingangs     {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
@@ -112,7 +112,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 >[!NOTE]
 >
->Es ist zwar möglich, mehr als ein Element auszuwählen, es können jedoch nur jeweils Aktionen für ein Element durchgeführt werden.
+>Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
 
