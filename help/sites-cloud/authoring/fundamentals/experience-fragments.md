@@ -335,7 +335,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
       * **Anzahl der Seiten, auf denen dieses Fragment verwendet wird** – nur zur Information
    * **Cloud Services**
       * **Cloud-Konfiguration**
-      * **Cloud-Service-Konfigurationen**
+      * **Cloud Service-Konfigurationen**
       * **Facebook-Seiten-ID**
       * **Pinterest-Pinnwand**
    * **Verweise**
