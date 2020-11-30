@@ -1,16 +1,16 @@
 ---
-title: SPA-Modell-Routing
+title: Routing SPA
 description: Bei Einzelseitenanwendungen in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
 
-# SPA-Modell-Routing{#spa-model-routing}
+# Routing SPA{#spa-model-routing}
 
 Bei Einzelseitenanwendungen in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 
@@ -20,7 +20,7 @@ Die App ist im Besitz des Routings und wird dann von den Frontend-Entwicklern de
 
 ## Architektur {#architecture}
 
-Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](blueprint.md#pagemodelmanager) des SPA Blueprint-Dokuments.
+Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](blueprint.md#pagemodelmanager) im Dokument SPA Blueprint.
 
 ## ModelRouter {#modelrouter}
 
@@ -28,15 +28,15 @@ Die `ModelRouter` - sofern aktiviert - kapselt die HTML5-Verlauf-API-Funktionen 
 
 ## Manuelles oder automatisches Routing {#manual-vs-automatic-model-routing}
 
-Das `ModelRouter` automatisiert das Abrufen von Fragmenten des Modells. Aber wie jedes automatisierte Werkzeug kommt es mit Einschränkungen. Bei Bedarf `ModelRouter` kann das Element deaktiviert oder so konfiguriert werden, dass Pfade mithilfe von Metaeigenschaften ignoriert werden (siehe Abschnitt &quot;Metaeigenschaften&quot;des Dokuments &quot; [SPA-Seitenkomponente](page-component.md) &quot;). Front-End-Entwickler können dann ihre eigene Modellebene implementieren, indem sie die `PageModelManager` zum Laden eines bestimmten Modellfragments mithilfe der `getData()` Funktion auffordern.
+Das `ModelRouter` automatisiert das Abrufen von Fragmenten des Modells. Aber wie jedes automatisierte Werkzeug kommt es mit Einschränkungen. Bei Bedarf `ModelRouter` kann das Element deaktiviert oder so konfiguriert werden, dass Pfade mithilfe von Metaeigenschaften ignoriert werden (siehe Abschnitt &quot;Metaeigenschaften&quot;im Dokument [SPA Seitenkomponenten](page-component.md) ). Front-End-Entwickler können dann ihre eigene Modellebene implementieren, indem sie die `PageModelManager` zum Laden eines bestimmten Modellfragments mithilfe der `getData()` Funktion auffordern.
 
 >[!CAUTION]
 >
->Die aktuelle Version der `ModelRouter` einzigen Version unterstützt die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad von Sling Model-Einstiegspunkten zeigen. Die Verwendung von Vanity-URLs oder Aliasnamen wird nicht unterstützt.
+>Die aktuelle Version von `ModelRouter` unterstützt nur eine Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad von Sling Model-Einstiegspunkten verweisen. Die Verwendung von Vanity-URLs oder Aliasnamen wird nicht unterstützt.
 
 ## Routing-Vertrag {#routing-contract}
 
-Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die HTML5-Verlauf-API zum Routing auf den verschiedenen Anwendungsseiten verwendet.
+Die aktuelle Implementierung basiert auf der Annahme, dass das SPA Projekt die HTML5-Verlauf-API zum Routing der verschiedenen Anwendungsseiten verwendet.
 
 ### Konfiguration {#configuration}
 
