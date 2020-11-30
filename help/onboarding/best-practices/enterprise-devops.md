@@ -1,9 +1,9 @@
 ---
 title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Adobe Experience Manager (AEM) as a Cloud Service besteht gewöhnlich aus mehr
 
 * [Entwicklung](#development)
 * [Qualitätssicherung](#quality-assurance)
-* [Staging](#staging)
+* [Staging  ](#staging)
 * [Produktion](#production-author-and-publish)
 
 >[!NOTE]
