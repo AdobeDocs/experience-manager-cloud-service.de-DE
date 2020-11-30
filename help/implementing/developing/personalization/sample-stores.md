@@ -1,16 +1,16 @@
 ---
-title: Beispiele für ContextHub-Store-Kandidaten
+title: 'Beispiele für ContextHub-Store-Kandidaten '
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
 translation-type: tm+mt
 source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
-# Beispiele für ContextHub-Store-Kandidaten {#sample-contexthub-store-candidates}
+# Beispiele für ContextHub-Store-Kandidaten  {#sample-contexthub-store-candidates}
 
 ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
 
@@ -20,7 +20,7 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 
 >[!WARNING]
 >
->Die Beispielspeicherkandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Erstellung Ihrer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen und sollten daher nicht direkt verwendet werden.
+>Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen, und sollten daher nicht direkt verwendet werden.
 
 ## Beispiel-Store-Kandidat „aem.segmentations“{#aem-segmentation-sample-store-candidate}
 
@@ -32,11 +32,11 @@ Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segment
 
 ### Basisimplementierung {#base-implementation-segmentation}
 
-[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)Der Store-Kandidat aem.segmentations erweitert .
+[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)Der Store-Kandidat aem.segmentations erweitert.
 
 ### Konfiguration {#configuration-segmentation}
 
-When you create an `aem.segmentation` store, you do not need to provide a detailed configuration. Die Standardkonfiguration gibt das Verzeichnis Ort der ContextHub-Segmentdefinitionen an.
+Wenn Sie einen `aem.segmentation`-Store erstellen, ist es nicht erforderlich, eine detaillierte Konfiguration zur Verfügung zu stellen. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
 
 ```xml
 {
@@ -50,7 +50,7 @@ When you create an `aem.segmentation` store, you do not need to provide a detail
 
 ## Beispiel-Store-Kandidat „contexthub.geolocations“{#contexthub-geolocation-sample-store-candidate}
 
-The `contexthub.geolocation` sample store candidate uses Google Maps to obtain and store information about the client location.
+Der Beispiel-Store-Kandidat `contexthub.geolocation` verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
 
 ### Quellpfad {#source-location-geolocation}
 
@@ -58,7 +58,7 @@ The `contexthub.geolocation` sample store candidate uses Google Maps to obtain a
 
 ### Basisimplementierung {#base-implementation-geolocation}
 
-The `contexthub.geolocation` store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+Der Store-Kandidat `contexthub.geolocation` erweitert [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Konfiguration {#configuration-geolocation}
 
@@ -104,13 +104,13 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 >[!NOTE]
 >
->Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Aufrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen.
+>Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen.
 >
 >In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
-## Beispiel-Store-Kandidat „contexthub.surferinfo“ {#contexthub-surferinfo-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.surferinfo“  {#contexthub-surferinfo-sample-store-candidate}
 
-Speichert Informationen über die aktuelle Clientumgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
+Speichert Informationen über die aktuelle Client-Umgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
 ### Quellpfad {#source-location-surferinfo}
 
@@ -118,11 +118,11 @@ Speichert Informationen über die aktuelle Clientumgebung wie Gerät, Fenster, B
 
 ### Basisimplementierung {#base-implementation-surferinfo}
 
-The `contexthub.surferinfo` store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+Der Store-Kandidat `contexthub.surferinfo` erweitert [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Konfiguration {#configuration-surferinfo}
 
-The default configuration is inherited from `ContextHub.Store.PersistedStore`.
+Die Standardkonfiguration wird von `ContextHub.Store.PersistedStore` übernommen.
 
 ### Datenelemente {#data-items-surferinfo}
 
@@ -175,9 +175,9 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.emulators {#granite-emulators-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.emulators“ {#granite-emulators-sample-store-candidate}
 
-The `granite.emulators` sample store candidate stores information about client devices.
+Der Beispiel-Store-Kandidat `granite.emulators` speichert Informationen über Kundengeräte.
 
 ### Quellpfad {#source-location-emulators}
 
@@ -185,7 +185,7 @@ The `granite.emulators` sample store candidate stores information about client d
 
 ### Basisimplementierung {#base-implementation-emulators}
 
-The `granite.emulators` store candidate extends [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+Der Store-Kandidat `granite.emulators` erweitert [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Konfiguration {#configuration-emulators}
 
@@ -308,7 +308,7 @@ Der Store-Datenbaum ähnelt dem folgenden Beispiel:
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.profile“ {#granite-profile-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.profile“  {#granite-profile-sample-store-candidate}
 
 Informationen über den aktuellen Benutzer.
 
@@ -318,7 +318,7 @@ Informationen über den aktuellen Benutzer.
 
 ### Basisimplementierung {#base-implementation-profile}
 
-The `granite.profile` store candidate extends [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+Der Store-Kandidat `granite.profile` erweitert [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Konfiguration {#configuration-profile}
 
