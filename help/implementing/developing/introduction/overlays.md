@@ -1,9 +1,9 @@
 ---
 title: Überlagerungen für Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Überlagerungen in AEM as a Cloud Service{#overlays-in-aem}
 
-Adobe Experience Manager als Cloud Service verwendet das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen (z. B. das Erstellen von Seiten) zu erweitern und anzupassen.
+Adobe Experience Manager as a Cloud Service verwendet das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen (z. B. das Erstellen von Seiten) zu erweitern und anzupassen.
 
 <!--
 Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -49,7 +49,7 @@ In einer Standardinstanz wird die vordefinierte Funktionalität unter `/libs` ge
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Sie dürfen ***keine *Änderungen in der Verzweigung`/libs`vornehmen.**Jegliche Änderungen, die Sie vornehmen, können verloren gehen, sobald Aktualisierungen an Ihrer Instanz vorgenommen werden.
+* Sie dürfen ***keine* Änderungen in der Verzweigung `/libs` vornehmen.**Jegliche Änderungen, die Sie vornehmen, können verloren gehen, sobald Aktualisierungen an Ihrer Instanz vorgenommen werden.
 
 * Überlagerungen bündeln Ihre Änderungen an zentraler Stelle und erleichtern es Ihnen, Ihre Änderungen zu verfolgen, zu migrieren, zu sichern und/oder zu debuggen.
 
