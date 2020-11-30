@@ -31,7 +31,7 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichen  
+* Veröffentlichen
 * [!DNL Brand Portal] publish
 * Festplattenauslastung
 * Dateien
@@ -115,7 +115,7 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichen  
+* Veröffentlichen
 * [!DNL Brand Portal] publish
 * Dateien
 
