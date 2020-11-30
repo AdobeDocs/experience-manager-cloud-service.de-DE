@@ -1,41 +1,41 @@
 ---
-title: Codequalitätstests - Cloud Services
-description: Codequalitätstests - Cloud Services
+title: Testen der Code-Qualität – Cloud Services
+description: Testen der Code-Qualität – Cloud Services
 translation-type: tm+mt
 source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Testen der Code-Qualität {#code-quality-testing}
 
-Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen Nichtproduktions- und Produktions-Pipelines ausgeführt wird.
+Beim Testen der Code-Qualität wird die Qualität Ihres Programm-Codes bewertet. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen Nichtproduktions- und Produktions-Pipelines ausgeführt wird.
 
 Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
-## Understanding Code Quality Rules {#understanding-code-quality-rules}
+## Grundlegendes zu Regeln für die Code-Qualität {#understanding-code-quality-rules}
 
-Beim Testen der Code-Qualität wird der Quellcode gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
+Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
 
 >[!NOTE]
 >Sie können die vollständige Liste der Regeln [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx) herunterladen.
 
-**Dreistufiges Tor**
+**Dreistufige Akzeptanztests**
 
-In diesem Codequalitätstestschritt gibt es eine dreistufige Struktur für die identifizierten Probleme:
+Bei diesem Schritt zum Testen der Code-Qualität gibt es eine dreistufige Struktur für die identifizierten Probleme:
 
 * **Kritisch**: Hierbei handelt es sich um vom Test identifizierte Probleme, die zu einem sofortigen Pipelinefehler führen.
 
-* **Wichtig**: Hierbei handelt es sich um vom Test identifizierte Probleme, durch die die Pipeline angehalten wird. Bereitstellungsmanager, Projektmanager oder Business Owner können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+* **Wichtig**: Hierbei handelt es sich um vom Test identifizierte Probleme, durch die die Pipeline angehalten wird. Implementierungs-Manager, Projekt-Manager oder Business Owner können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
 
-* **Info**: Hierbei handelt es sich um vom Test identifizierte Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipelineausführung haben
+* **Info**: Hierbei handelt es sich um vom Test identifizierte Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipelineausführung haben.
 
-The results of this step is delivered as *Ratings*.
+Die Ergebnisse dieses Schritts werden als *Bewertung* bereitgestellt.
 
-In der folgenden Tabelle sind die Rating- und Ausfallschwellenwerte für jede der kritischen, wichtigen und informativen Kategorien zusammengefasst:
+In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die einzelnen Kategorien „Kritisch“, „Wichtig“ und „Information“ zusammengefasst:
 
 | Name | Definition | Kategorie | Fehlerschwellenwert |
 |--- |--- |--- |--- |
@@ -59,11 +59,11 @@ In der folgenden Tabelle sind die Rating- und Ausfallschwellenwerte für jede de
 
 ## Umgang mit falsch positiven Werten {#dealing-with-false-positives}
 
-Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. This is referred to as a *false positive*.
+Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. Dies wird als *falsch positiv* bezeichnet.
 
-In diesen Fällen kann der Quellcode mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem besteht etwa darin, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter in Bezug auf die Identifizierung eines hartcodierten Kennworts „aggressiv“ sein kann.
+In diesen Fällen kann der Quell-Code mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem besteht etwa darin, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter in Bezug auf die Identifizierung eines hartcodierten Kennworts „aggressiv“ sein kann.
 
-Sehen wir uns ein konkretes Beispiel mit Code an, der in AEM-Projekten relativ häufig vorkommt, wenn eine Verbindung zu einem externen Dienst hergestellt werden soll:
+Sehen wir uns ein konkretes Beispiel mit Code an, der in AEM-Projekten relativ häufig vorkommt, wenn eine Verbindung zu einem externen Service hergestellt werden soll:
 
 ```java
 @Property(label = "Service Password")
@@ -92,4 +92,4 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 >Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
 
 >[!NOTE]
->Es gibt zwar keinen expliziten Sicherheitstestschritt, es gibt jedoch weiterhin sicherheitsbezogene Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht AEM als Cloud Service](/help/security/cloud-service-security-overview.md) .
+>Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Code-Qualitätsschritt werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
