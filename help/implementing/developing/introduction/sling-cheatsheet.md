@@ -1,9 +1,9 @@
 ---
-title: Sling-Schnellübersicht
+title: 'Sling-Schnellübersicht '
 description: Ein einfache Sling-Referenz
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 100%
 
