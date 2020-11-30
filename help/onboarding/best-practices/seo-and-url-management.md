@@ -242,7 +242,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 1. Der Dispatcher speichert die Antwort unter `/my-page.html` und leitet die Antwort zurück an den Benutzer.
 1. Ein Inhaltsautor ändert diese Seite und aktiviert sie.
-1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.**Da der Dispatcher auf diesem Pfad keine Seite gespeichert hat, bleibt der alte Inhalt gespeichert und ist nicht mehr aktuell.
+1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da der Dispatcher auf diesem Pfad keine Seite gespeichert hat, bleibt der alte Inhalt gespeichert und ist nicht mehr aktuell.
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Cache an die längere URL weiterleiten.
 
@@ -364,8 +364,8 @@ Um eine Sitemap programmatisch zu generieren, registrieren Sie einen Sling-Servl
 >
 >Sie können ein Sling-Servlet registrieren, um auf den `sitemap`-Selektor mit der Endung `xml` zu warten. Dies führt zur Verarbeitung der Anfrage durch das Servlet, wenn eine URL angefordert wird, die wie folgt endet:
 >    `/<path-to>/page.sitemap.xml`
->Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
->Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
+Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
+Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
