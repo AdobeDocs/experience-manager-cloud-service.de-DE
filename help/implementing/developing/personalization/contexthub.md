@@ -5,26 +5,26 @@ translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
 # ContextHub {#contexthub}
 
-ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Das wichtigste Merkmal ist die Möglichkeit, Kontextdaten zu [Ansichten, während verschiedene Personen simuliert und umgeschaltet werden.](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Seine Hauptfunktion ist die Möglichkeit, [Kontextdaten anzuzeigen, während die Simulation verschiedener Rollen und der Wechsel zwischen ihnen ermöglicht wird](/help/sites-cloud/authoring/personalization/contexthub.md).
 
-Der ContextHub ermöglicht Ihnen Folgendes:
+ContextHub ermöglicht Ihnen Folgendes:
 
-* [Präsentieren, Ansicht, Wechseln von Personen und Simulieren von Benutzererlebnissen](#presentation) beim Erstellen von Seiten mithilfe von Kontextdaten.
-* [Bewahren Sie Kontextdaten](#persistence) auf Ihrer Website als Datenschichtdarstellung auf.
-* [Verwalten Sie Segmente](#segmentation) für den ausgewählten Kontext.
+* [Präsentieren, Anzeigen, Wechseln von Rollen und Simulieren von Anwendererlebnissen](#presentation) beim Erstellen von Seiten mithilfe von Kontextdaten
+* [Beibehalten von Kontextdaten](#persistence) auf Ihrer Website als Datenschichtdarstellung
+* [Verwalten von Segmenten](#segmentation) für den ausgewählten Kontext
 
-Die clientseitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zur Personalisierung von Inhalten.
+Die Client-seitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zur Personalisierung von Inhalten.
 
 ## Präsentation {#presentation}
 
-Die [ContextHub-Symbolleiste](/help/sites-cloud/authoring/personalization/contexthub.md) ermöglicht es Vermarktern und Autoren, gespeicherte Daten zu sehen und zu manipulieren, um die Benutzererfahrung beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die Zugriff auf [ContextHub-Stores bieten,](#persistence) die ContextHub-Daten auf dem Client beibehalten.
+Die [ContextHub-Symbolleiste](/help/sites-cloud/authoring/personalization/contexthub.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die den Zugriff auf [ContextHub-Speicher](#persistence) ermöglichen, in denen ContextHub-Daten auf dem Client beibehalten werden.
 
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 
@@ -36,15 +36,15 @@ Entwickler müssen die [ContextHub-Komponente in die Seite einfügen](configurin
 
 ## Persistenz {#persistence}
 
-ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores, um Daten nach Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
+ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub-JavaScript-API können Sie auf Speicher zugreifen, um Daten bei Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
 Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 
 * [ContextHub stellt verschiedene Beispielspeicherarten bereit](sample-stores.md).
 * Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](configuring-contexthub.md#creating-a-contexthub-store).
-* Entwickler können [benutzerdefinierte Speichertypen erstellen](extending-contexthub.md#creating-custom-store-candidates).
+* Entwickler können [anwenderdefinierte Speichertypen erstellen](extending-contexthub.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](adding-contexthub.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
-## Segmentierung {#segmentation}
+## Segmentierung  {#segmentation}
 
 ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](adding-contexthub.md#determining-resolved-contexthub-segments).
