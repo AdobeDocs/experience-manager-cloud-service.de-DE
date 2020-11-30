@@ -1,32 +1,32 @@
 ---
-title: Versionshinweise für die Version 2020.8.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.8.0.'
+title: Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.8.0.
 translation-type: tm+mt
 source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 12%
+source-wordcount: '1050'
+ht-degree: 16%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.8.0 beschrieben.
 
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
 * Möglichkeit, Seiten und Unterseiten (Seitenbäume) auf eine frühere Version [wiederherzustellen](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Möglichkeit, Launches [in AEM](/help/sites-cloud/authoring/launches/overview.md) SPA-Editor zu [erstellen.](/help/implementing/developing/spa/introduction.md)
+* Möglichkeit, Launches [im AEM](/help/sites-cloud/authoring/launches/overview.md) SPA Editor zu [erstellen.](/help/implementing/developing/spa/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
 * Die Videoverschlüsselung wird jetzt mit Asset-Mikrodiensten unterstützt. In einem neuen Abschnitt in der Konfiguration der [!UICONTROL verarbeitenden Profil] können Sie die Bitrate und die Abmessungen des Videos festlegen. Das Ausgabeformat ist MP4 mit H.264-Codec. For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). Für weitere Transkodierungsoptionen und für Video-Versand verwenden Sie das [!DNL Dynamic Media] Add-on.
 
@@ -45,7 +45,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Im Markenportal sind jetzt native und hochwertige PDF-Dokument-Vorschauen verfügbar. Siehe Übersicht über den [Dokument-Viewer](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Sie können den CDN-Cache (Content Versand Network) jetzt direkt von [!DNL Dynamic Media] in AEM als Cloud Service deaktivieren (im Gegensatz zur Verwendung [!DNL Dynamic Media Classic]). Dadurch wird sichergestellt, dass die neuesten Assets innerhalb von Minuten statt innerhalb von Stunden bereitgestellt werden. Siehe [Ungültigmachen des CDN-Cache über dynamische Medien](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Sie können den CDN-Cache (Content Versand Network) jetzt direkt von [!DNL Dynamic Media] in AEM als Cloud Service deaktivieren (im Gegensatz zur Verwendung [!DNL Dynamic Media Classic]). Dadurch wird sichergestellt, dass die neuesten Assets innerhalb von Minuten statt innerhalb von Stunden bereitgestellt werden. See [Invalidating the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Die Benutzeroberflächensteuerelemente, Navigation, Durchsuchen und Sucherfahrung in [!DNL Assets]werden jetzt noch besser unterstützt.
 
@@ -69,7 +69,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Produkt- und Kategorie-Picker wurden verbessert, damit Marketingexperten Produkte über SKU auswählen oder Kategorien über Kategorien-ID auswählen können.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
