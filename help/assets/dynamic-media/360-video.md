@@ -117,7 +117,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]**, um die Wiedergabe des Videos zu starten. Ziehen Sie dann den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR]**.
 
