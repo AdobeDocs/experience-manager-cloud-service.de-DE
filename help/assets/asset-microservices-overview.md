@@ -1,12 +1,12 @@
 ---
-title: Verarbeiten von Assets mit Asset Microservices
+title: Verarbeiten von Assets mit Asset-Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service bietet eine Cloud-native Möglichke
 * Minimieren des Bedarfs an Workflows zur Verarbeitung von Assets in der Experience Manager-Umgebung. Dadurch werden Ressourcen freigesetzt, die Belastung von Experience Manager minimiert und Skalierbarkeit gewährleistet.
 * Verbesserte Ausfallsicherheit bei der Verarbeitung von Assets. Potenzielle Probleme beim Umgang mit atypischen Dateien, wie beschädigten oder extrem großen Dateien, wirken sich nicht mehr auf die Leistung der Implementierung aus.
 * Vereinfachte Konfiguration der Asset-Verarbeitung für Administratoren.
-* Die Einrichtung der Asset-Verarbeitung wird von Adobe verwaltet und gewartet, um eine optimale Konfiguration für die Handhabung von Ausgabeformaten, Metadaten und Textextraktion für verschiedene Dateitypen bereitzustellen.
+* Die Einrichtung der Asset-Verarbeitung wird von Adobe verwaltet und gewartet, um eine optimale Konfiguration für die Handhabung von Ausgabedarstellungen, Metadaten und Textextraktion für verschiedene Dateitypen bereitzustellen.
 * Gegebenenfalls werden native Adobe-Dateiverarbeitungsdienste verwendet, um eine Ausgabe mit hoher Wiedergabetreue und einen [effizienten Umgang mit proprietären Adobe-Formaten](file-format-support.md) zu ermöglichen.
 * Möglichkeit, den Nachbearbeitungs-Workflow so zu konfigurieren, dass benutzerspezifische Aktionen und Integrationen hinzugefügt werden können.
 
@@ -41,9 +41,9 @@ Die wichtigsten Schritte der Erfassung und Verarbeitung mithilfe von Asset-Micro
 
 * Clients wie Webbrowser oder Adobe Asset Link senden eine Upload-Anfrage an Experience Manager und beginnen mit dem Hochladen der Binärdatei direkt in den binären Cloud-Speicher.
 * Nach Abschluss des direkten binären Uploads benachrichtigt der Client Experience Manager.
-* Experience Manager sendet eine Verarbeitungsanfrage an die Asset-Microservices. Der Inhalt der Anfrage hängt von der Konfiguration der Verarbeitungsprofile in Experience Manager ab, die angeben, welche Ausgabeformate generiert werden sollen.
+* Experience Manager sendet eine Verarbeitungsanfrage an die Asset-Microservices. Der Inhalt der Anfrage hängt von der Konfiguration der Verarbeitungsprofile in Experience Manager ab, die angeben, welche Ausgabedarstellungen generiert werden sollen.
 * Das Backend der Assets-Microservices empfängt die Anfrage und sendet sie je nach Anfrage an einen oder mehrere Microservices. Jeder Microservice greift direkt auf die ursprüngliche Binärdatei im binären Cloud-Speicher zu.
-* Die Ergebnisse der Verarbeitung, z. B. Ausgabeformate, werden im binären Cloud-Speicher gespeichert.
+* Die Ergebnisse der Verarbeitung, z. B. Ausgabedarstellungen, werden im binären Cloud-Speicher gespeichert.
 * Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Darstellungen) vorhanden sind. Die generierten Darstellungen sind in Experience Manager für das hochgeladene Asset verfügbar.
 
 Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Falls konfiguriert, kann Experience Manager auch ein benutzerdefiniertes Workflow-Modell starten, um die Nachbearbeitung des Assets durchzuführen. Führen Sie beispielsweise benutzerdefinierte Schritte aus, die spezifisch für Ihre Umgebung sind, wie z. B. das Abrufen von Informationen aus einem Unternehmenssystem und das Hinzufügen von Asset-Eigenschaften.
@@ -80,6 +80,6 @@ Adobe Experience Manager kann so konfiguriert werden, dass die Workflows nach Ab
 >* [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
 >* [Unterstützte Dateiformate](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de)
 >* [Apache Oak-Dokumentation zum direkten Binärzugriff](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
