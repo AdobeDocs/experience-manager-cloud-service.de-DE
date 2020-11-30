@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -41,7 +41,7 @@ Folgendes sollte lokal installiert werden:
 - [AEM as a Cloud Service-SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 oder neuer)
-- [Node.js v10+](https://nodejs.org/en/)
+- [Node.js v10+](https://nodejs.org/de/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
