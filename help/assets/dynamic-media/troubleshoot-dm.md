@@ -5,24 +5,24 @@ translation-type: tm+mt
 source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Fehlerbehebung bei Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-Im folgenden Thema wird die Fehlerbehebung für dynamische Medien beschrieben.
+Das folgende Thema beschreibt die Fehlerbehebung bei Dynamic Media.
 
-## Neue Konfiguration für dynamische Medien {#new-dm-config}
+## Konfiguration für Dynamic Media {#new-dm-config}
 
-Siehe [Fehlerbehebung bei einer neuen Konfiguration für dynamische Medien.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+Siehe [Fehlerbehebung für eine neue Dynamic Media-Konfiguration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Allgemein (alle Assets) {#general-all-assets}
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften   {#asset-synchronization-status-properties}
+### Asset-Synchronisierungsstatuseigenschaften  {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -43,9 +43,9 @@ Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ers
 
 * Wenn Sie beide beibehalten, wird ein neues Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. Beispiel: `image.jpg` ist das ursprüngliche Asset und `image1.jpg` ist das neu hochgeladene Asset.
 
-* Das Erstellen einer Version wird in Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
+* Das Erstellen einer Version wird in Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Implementierung.
 
-## Bilder und Sets   {#images-and-sets}
+## Bilder und Sets  {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
@@ -78,12 +78,12 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td><p>Verwenden Sie für das Karussell nur Bilder derselben Größe.</p> </td>
   </tr>
   <tr>
-   <td>Bild wird im Viewer für dynamische Medien nicht als Vorschau angezeigt</td>
+   <td>Bild wird im Viewer für Dynamic Media nicht als Vorschau angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset <code>dam:scene7File</code> in den Metadateneigenschaften (CRXDE Lite) enthält.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
   <tr>
-   <td>Hochgeladenes Asset wird nicht im Asset-Wähler angezeigt</td>
+   <td>Hochgeladenes Asset wird nicht in der Asset-Auswahl angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset die Eigenschaft <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite) aufweist.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
@@ -150,8 +150,8 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td> </td>
   </tr>
   <tr>
-   <td>Videoausgabeformat fehlt</td>
-   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabeformate vorhanden sind:</p>
+   <td>Videoausgabedarstellung fehlt</td>
+   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabedarstellungen vorhanden sind:</p>
     <ul>
      <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist.</li>
      <li>Prüfen Sie anhand von <code>dam:scene7FileAvs</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
@@ -207,13 +207,13 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
     <ol>
      <li>Navigieren Sie zu <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
-     <li>Wählen Sie die folgenden Aktionen in der Reihenfolge aus:
+     <li>Wählen Sie die folgenden Aktionen in der angegebenen Reihenfolge aus:
       <ol>
-       <li>Synchronisierte Ordner löschen.</li>
-       <li>Wählen Sie den Ordner "Vorgabe"(unten <code>/conf</code>).
-       <li>Trigger-DM-Setup-Async-Auftrag.</li>
+       <li>Synchronisierte Ordner löschen</li>
+       <li>Ordner „Voreingestellt“ löschen (unter <code>/conf</code>)
+       <li>Async-Auftrag für DM-Setup auslösen</li>
       </ol> </li>
-     <li>Warten Sie auf Benachrichtigung über erfolgreiche Synchronisierung in Ihrem AEM Posteingang.
+     <li>Warten Sie auf die Benachrichtigung über die erfolgreiche Synchronisierung in Ihrem AEM-Posteingang.
      </li>
     </ol> </td>
   </tr>
