@@ -1,43 +1,44 @@
 ---
-title: AEM- und Magento-Integration mithilfe von Commerce Integration Framework
-description: AEM und Magento werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorie-Picker und die Produktkonsole verwenden, um Produkt- und Kategorie-Daten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
+title: Integration von AEM und Magento mithilfe des Commerce Integration Framework
+description: AEM und Magento werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
+# Integration von AEM und Magento mithilfe des Commerce Integration Framework {#aem-magento-framework}
 
-AEM und Magento werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorie-Picker und die Produktkonsole verwenden, um Produkt- und Kategorie-Daten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
+AEM und Magento werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 
 ## Architekturüberblick {#overview}
 
-Die Gesamtarchitektur ist wie folgt:
+Die Gesamtarchitektur sieht wie folgt aus:
 
 ![CIF-Architekturübersicht](../assets/AEM_Magento_Architecture.JPG)
 
-CIF baut auf der GraphQL-Unterstützung auf. Der wichtigste Kanal für die Kommunikation zwischen AEM und Magento ist die [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) in Magento. Es gibt verschiedene Möglichkeiten, die Kommunikation zwischen AEM als Cloud Service und Magento zu konfigurieren. Weitere Informationen finden Sie auf der Seite [Erste Schritte](../getting-started.md) .
+CIF baut auf GraphQL-Unterstützung auf. Der wichtigste Kommunikationskanal zwischen AEM und Magento ist die [GraphQL-API](https://devdocs.magento.com/guides/v2.4/graphql/) von Magento. Es gibt verschiedene Möglichkeiten, die Kommunikation zwischen AEM as a Cloud Service und Magento zu konfigurieren. Weitere Informationen finden Sie auf der Seite [Erste Schritte](../getting-started.md).
 
-CIF unterstützt serverseitige und clientseitige Kommunikationsmuster.
-Serverseitige APIs werden mithilfe des integrierten, generischen [GraphQL-Clients](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit einem [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Magento GraphQL-Schema implementiert. Zusätzlich können alle GraphQL Abfragen oder Mutationen im GQL Format verwendet werden.
+CIF unterstützt Server-seitige und Client-seitige Kommunikationsmuster.
 
-Bei clientseitigen Komponenten, die mit [React](https://reactjs.org/)erstellt werden, wird der [Apollo-Client](https://www.apollographql.com/docs/react/) verwendet.
+Server-seitige APIs werden mithilfe des integrierten, generischen [GraphQL-Clients](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit einem [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Magento GraphQL-Schema implementiert. Zusätzlich können alle GraphQL-Abfragen oder Mutationen im GQL-Format verwendet werden.
 
-## Architektur AEM CIF-Kernkomponenten {#cif-core-components}
+Bei Client-seitigen Komponenten, die mit [React](https://reactjs.org/) erstellt werden, kommt der [Apollo-Client](https://www.apollographql.com/docs/react/) zum Einsatz.
 
-![Architektur AEM CIF-Kernkomponenten](../assets/cif-component-architecture.jpg)
+## Architektur mit den AEM CIF-Kernkomponenten {#cif-core-components}
 
-[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) folgen sehr ähnlichen Designmustern und Best Practices wie die [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components).
+![Architektur mit den AEM CIF-Kernkomponenten](../assets/cif-component-architecture.jpg)
 
-Die Geschäftslogik und die Backend-Kommunikation mit Magento für die AEM CIF-Kernkomponenten werden in Sling Modellen implementiert. Falls es notwendig ist, diese Logik an die projektspezifischen Anforderungen anzupassen, kann das Delegationsmuster für Sling-Modelle verwendet werden.
+[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) folgen sehr ähnlichen Design-Mustern und Best Practices wie die [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components).
+
+Die Geschäftslogik und Backend-Kommunikation mit Magento für die AEM CIF-Kernkomponenten werden in Sling-Modellen implementiert. Falls es notwendig ist, diese Logik an projektspezifische Anforderungen anzupassen, kann das Delegationsmuster für Sling-Modelle verwendet werden.
 
 >[!TIP]
 >
->Die Seite [Anpassen AEM CIF-Kernkomponenten](../customizing/customize-cif-components.md) enthält ein detailliertes Beispiel und eine Best Practice zur Anpassung der CIF-Kernkomponenten.
+>Die Seite [Anpassen von AEM CIF-Kernkomponenten](../customizing/customize-cif-components.md) enthält ein detailliertes Beispiel und Best Practices zur Anpassung von CIF-Kernkomponenten.
 
-Innerhalb von Projekten können AEM CIF-Kernkomponenten und benutzerdefinierte Projektkomponenten den konfigurierten Client für einen mit einer AEM verknüpften Magento-Store über eine Sling Context-Aware-Konfiguration abrufen.
+Innerhalb von Projekten können AEM CIF-Kernkomponenten und benutzerdefinierte Projektkomponenten den konfigurierten Client für einen mit einer AEM-Seite verknüpften Magento-Store über eine Sling-kontextsensible Konfiguration abrufen.
