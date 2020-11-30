@@ -22,7 +22,7 @@ Es bestehen intrinsische Unterschiede zwischen diesen bisherigen Ansätzen und A
 
 * [Architektur](#architecture)
 * [Upgrades](#upgrades)
-* [Cloud Manager](#cloud-manager)
+* [Cloud Manager](#cloud-manager)
 * [Einstieg](#onboarding)
 * [Entwickeln](#developing)
 * [Vorgänge und Leistung](#operations-and-performance)
@@ -89,7 +89,7 @@ AEM Updates der Version umfassen zwei Typen:
 
    * Veröffentlicht über einen vorhersehbaren Monatszeitplan.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Adobe Cloud Manager ist ein unverzichtbarer Bestandteil des kontinuierlichen Aktualisierungsansatzes von AEM als Cloud Service, da es alle Aktualisierungen Ihrer Instanzen steuert - dies ist obligatorisch.
 
@@ -278,4 +278,4 @@ Weitere Informationen finden Sie unter:
 * [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Einführung in AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/overview.html)
