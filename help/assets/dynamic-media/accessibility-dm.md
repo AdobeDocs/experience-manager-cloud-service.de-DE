@@ -52,7 +52,7 @@ Die Elemente der Benutzeroberfläche für dynamische Medien arbeiten mit Hilfste
 
 Alle vordefinierten Komponenten von Dynamic Media Viewern unterstützen die Barrierefreiheit der Tastatur für Ihre Kunden.
 
-Siehe [Tastaturzugriff und Navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Viewer-Referenzhandbuch für dynamische Medien.
+Siehe [Tastaturzugriff und Navigation](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Viewer-Referenzhandbuch für dynamische Medien.
 
 ## Unterstützung von Technologien in Viewern für dynamische Medien {#assistive-technology=support-for-dm-viewers}
 
