@@ -43,6 +43,7 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
       * Durch Klicken auf die Symbolquelle gelangen Sie zu dieser Komponente.
    * Ansehen des **Ressourcentyps** und des **Ressourcen-Supertyps** (sofern definiert) für die Komponente
       * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
+
    >[!NOTE]
    >
    >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
