@@ -1,6 +1,6 @@
 ---
 title: Informationen zu Programm- und Programm-Typen
-description: Programm- und Programm-Typen - Cloud-Services
+description: Programm- und Programm-Typen - Cloud Services
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
