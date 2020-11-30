@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -62,21 +62,21 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Einschaltzeit**
 
-   * Datum und Uhrzeit der Anzeige (Wiedergabe) der veröffentlichten Umgebung. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replizierung veröffentlicht werden.
+   * Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
       >[!NOTE]
       >
-      > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [An- und Ausschaltzeit - Triggerkonfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration) .
+      > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
 
-      * Wenn diese Seite bereits [veröffentlicht wurde (manuell)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , wird sie bis zum Rendern zur angegebenen Zeit ruhend (ausgeblendet) gehalten.
-      * Wenn die Seite nicht veröffentlicht und für die automatische Replizierung konfiguriert ist, wird sie automatisch veröffentlicht und dann zur festgelegten Zeit gerendert.
-      * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replizierung konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404 angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
-   * Lassen Sie diese Felder (**On Time** and **Off Time**) für Seiten, die Sie sofort veröffentlichen möchten und die auf der Umgebung &quot;publish&quot;verfügbar sind, leer, bis sie deaktiviert sind (im Normalfall).
+      * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
+      * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
+      * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+   * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
 * **Ausschaltzeit**
 
-   * Parallel zur **On-Time** definiert dies den Zeitpunkt, zu dem die veröffentlichte Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
-   * Lassen Sie diese Felder (**On Time** and **Off Time**) für Seiten, die Sie sofort veröffentlichen möchten und die auf der Umgebung &quot;publish&quot;verfügbar sind, leer, bis sie deaktiviert sind (im Normalfall).
+   * Parallel zur **Einschaltzeit** wird hiermit der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
+   * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
 * **Vanity-URL**
 
@@ -121,7 +121,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >
    >Alias legt die Eigenschaft `sling:alias` fest, um einen Alias für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
    >
-   >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden. 
+   >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden.
    >
    >Weitere Informationen finden Sie in „Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“.
 
@@ -156,7 +156,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * Geben Sie eine Exportkonfiguration an.
 
-### Miniaturansicht       {#thumbnail}
+### Miniaturansicht  {#thumbnail}
 
 Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
@@ -196,7 +196,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### Personalisierung      {#personalization}
+### Personalisierung  {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -236,14 +236,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 
-### Live Copy       {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    * Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur       {#site-structure}
+### Site-Struktur  {#site-structure}
 
 * Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
