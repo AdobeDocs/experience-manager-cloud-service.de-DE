@@ -2,12 +2,12 @@
 sub-product: AEM Commerce as a Cloud Service
 user-guide-title: AEM Commerce as a Cloud Service
 breadcrumb-title: Commerce-Anleitung
-user-guide-description: Erfahren Sie, wie Sie Experience Manager Commerce als Cloud-Service verwenden und verwalten können.
+user-guide-description: Erfahren Sie, wie Sie Experience Manager Commerce as a Cloud Service verwenden und verwalten können.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '71'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 60%
 + [Entwickeln mit AEM Cloud Service SDK](develop.md)
 + Konfigurieren {#configure}
    + [Verwendung mehrerer Vorlagen](configuring/multi-template-usage.md)
-   + [Multi-Store-Einrichtung](configuring/multi-store-setup.md)
+   + [Multi-Store-Setup](configuring/multi-store-setup.md)
    + [URLs für SEO konfigurieren](configuring/advanced-url-configuration.md)
    + [Zwischenspeicheroptionen](configuring/caching.md)
 + Anpassen {#customize}
