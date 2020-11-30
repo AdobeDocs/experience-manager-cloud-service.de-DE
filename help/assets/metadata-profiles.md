@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 1. Tippen Sie auf der linken Leiste auf **[!UICONTROL Assets]** und navigieren Sie dann zu dem Ordner, auf den Sie ein Metadatenprofil anwenden möchten.
 1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften**.
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend das Profil aus dem Dropdown-Menü aus und tippen Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 ### Globales Anwenden eines Metadatenprofils {#applying-a-metadata-profile-globally}
 
@@ -109,7 +109,7 @@ Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle 
 
 Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. Wenn Sie sich im Ordner befinden, ist dies über die **Eigenschaften** möglich. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten aus Ordnern entfernen.
 
-### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche „Profile“     {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche „Profile“  {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
