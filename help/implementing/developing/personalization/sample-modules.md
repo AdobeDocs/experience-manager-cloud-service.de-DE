@@ -32,7 +32,7 @@ Die folgenden Eigenschaften sind verfügbar:
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das Benutzeroberflächenmodul geklickt oder getippt wird.
 * **Vollbildmodus:** Kontrollieren Sie, ob der Vollbildmodus erlaubt ist.
 
-Der Quellcode befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
+The source code is located at `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
 ### Konfiguration {#configuration}
 
