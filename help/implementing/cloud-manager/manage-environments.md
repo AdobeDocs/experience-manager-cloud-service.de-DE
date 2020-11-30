@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -35,8 +35,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    | Entwicklung | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Ja | Produktionsfremde Pipeline |
 
    >[!NOTE]
-   >
-Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt. Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
+   >Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt.  Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
 
 ## Hinzufügen von Umgebung {#adding-environments}
 
@@ -59,7 +58,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 
    ![](assets/add-environment-image1.png)
 
-1. Klicken Sie auf **Speichern**, um eine Umgebung mit den ausgefüllten Kriterien hinzuzufügen. Jetzt wird auf dem Bildschirm *Übersicht* die Karte angezeigt, über die Sie Ihre Pipeline einrichten können.
+1. Klicken Sie auf **Speichern**, um eine Umgebung mit den ausgefüllten Kriterien hinzuzufügen.  Jetzt wird auf dem Bildschirm *Übersicht* die Karte angezeigt, über die Sie Ihre Pipeline einrichten können.
 
    >[!NOTE]
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
@@ -96,7 +95,7 @@ Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** au
 
 ![](assets/environ-update2.png)
 
-Durch Auswahl dieser Option kann ein Bereitstellungs-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
+Durch Auswahl dieser Option kann ein Implementierung-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
 
 Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die Pipeline auszuführen.
 
@@ -117,11 +116,11 @@ Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebung
 >
 >Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten regulären Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
 
-## Managing Access {#managing-access}
+## Zugriffsverwaltung {#managing-access}
 
-Select **Manage Access** from the dropdown menu in the **Environments** Card. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
+Wählen Sie **Zugriff verwalten** aus dem Dropdown-Menü auf der Karte **Umgebungen** aus. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
 
-Weitere Informationen finden Sie unter Zugriff auf Autoreninstanz [verwalten](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) .
+Weitere Informationen finden Sie unter [Zugriffsverwaltung für Autoreninstanz](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem).
 
 ![](assets/environ-access.png)
 
@@ -137,7 +136,7 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 
 ![](assets/environ-devconsole.png)
 
-Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
+Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Entwicklerkonsole**.
 
 ## Lokale Anmeldung {#login-locally}
 
