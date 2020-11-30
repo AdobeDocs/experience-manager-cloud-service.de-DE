@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Asset-Workflow-Migrations-Tool {#asset-workflow-migration}
 
-Mit dem Asset-Workflow-Migrations-Tool können Sie Asset-Verarbeitungs-Workflows automatisch von On-Premise- oder AMS-Bereitstellungen von AEM zu Verarbeitungsprofilen und OSGi-Konfigurationen für die Verwendung in AEM Assets as a Cloud Service migrieren.
+Mit dem Asset-Workflow-Migrations-Tool können Sie Asset-Verarbeitungs-Workflows automatisch von On-Premise- oder AMS-Implementierungen von AEM zu Verarbeitungsprofilen und OSGi-Konfigurationen für die Verwendung in AEM Assets as a Cloud Service migrieren.
 
 ## Einführung {#introduction}
 
@@ -22,16 +22,16 @@ Mit diesem Dienstprogramm können die AEM-Entwickler bestehende AEM-Workflows f�
 
 ## Unterstützte Workflows {#migration-support-for-workflows}
 
-Die Workflows bieten unterschiedliche Migrationsunterstützung. Siehe diese [Liste spezifischer Workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). Die Workflows sind in den folgenden Kategorien je nach bereitgestellter Unterstützung eingeteilt. Adobe unterstützt die Migration von Workflows, die in `SUPPORTED`, `REQUIRED`oder `OPTIONAL` Kategorien aufgeführt sind. Die in den anderen Kategorien erwähnten Workflow-Schritte werden nicht unterstützt.
+Die Workflows bieten in unterschiedlichem Maß Unterstützung für Migrationen. Weitere Informationen finden Sie in dieser [Liste spezifischer Workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). Die Workflows sind je nach bereitgestellter Unterstützung in die folgenden Kategorien unterteilt. Adobe unterstützt die Migration von Workflows, die in den Kategorien `SUPPORTED`, `REQUIRED`oder `OPTIONAL` aufgeführt sind. Die in den anderen Kategorien erwähnten Workflow-Schritte werden nicht unterstützt.
 
-* `SUPPORTED`: Unterstützte Funktionen [!DNL Experience Manager Assets] als Cloud Service.
-* `OPTIONAL`: Optionale Funktion [!DNL Experience Manager Assets] als Cloud Service.
-* `REQUIRED`: Ein erforderlicher Schritt, der dem Workflow hinzugefügt wird.
-* `UNNECESSARY`: Funktionalität ist nicht erforderlich [!DNL Experience Manager Assets] als Cloud Service.
-* `NUI_OOTB`: Funktionen des [Asset Compute-Dienstes](/help/assets/asset-microservices-configure-and-use.md).
-* `DMS7_OOTB`: Von Standard- [!DNL Dynamic Media] Connectors bereitgestellte Funktionalität.
-* `NUI_MIGRATED`: Zu einem [verarbeitenden Profil für den Asset Compute-Dienst](/help/assets/asset-microservices-configure-and-use.md)migriert.
-* `UNSUPPORTED`: Derzeit nicht unterstützt in [!DNL Experience Manager Assets] als Cloud Service.
+* `SUPPORTED`: Unterstützte Funktionalität in [!DNL Experience Manager Assets] as a Cloud Service.
+* `OPTIONAL`: Optionale Funktionalität in [!DNL Experience Manager Assets] as a Cloud Service.
+* `REQUIRED`: Ein erforderlicher Schritt, der zum Workflow hinzugefügt wird.
+* `UNNECESSARY`: Funktionalität ist nicht erforderlich in [!DNL Experience Manager Assets] as a Cloud Service.
+* `NUI_OOTB`: Funktionalität, die vom [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md) bereitgestellt wird.
+* `DMS7_OOTB`: Funktionalität, die von standardmäßigen [!DNL Dynamic Media]-Connectoren bereitgestellt wird.
+* `NUI_MIGRATED`: Zu einem [Verarbeitungsprofil für den Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md) migriert.
+* `UNSUPPORTED`: Derzeit nicht unterstützt in [!DNL Experience Manager Assets] as a Cloud Service.
 
 ## Installieren des Asset-Workflow-Migrations-Tools {#installing-tool}
 
