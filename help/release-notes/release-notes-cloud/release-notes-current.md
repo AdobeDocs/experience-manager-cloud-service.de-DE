@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
@@ -21,7 +21,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
 <!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
 
@@ -31,7 +31,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
 * **[!DNL Adobe Sensei]Powered Video Smart Tagging**: Durch die Nutzung von AI-Modellen zur Analyse von Videoinhalten für objektspezifische und aktionsspezifische Tags können DAM-Benutzer weniger Zeit damit verbringen, Tags hinzuzufügen, und mehr Zeit damit verbringen, die umfangreichen Informationen zu nutzen, um Kunden das richtige Erlebnis zu bieten. Siehe [Smart-Tag-Video-Assets](/help/assets/smart-tags-video-assets.md).
 
@@ -61,13 +61,13 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 * In der Benutzeroberfläche der CIF Cloud-Konfiguration wurden Schaltflächen zum Speichern und Schließen für Konfigurationen in /lib und /apps/ angezeigt. Diese sind jedoch schreibgeschützt und daher wurde die Benutzeroberfläche so eingestellt, dass nur die Schaltfläche &quot;Schließen&quot;angezeigt wird.
 
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.0 ist der 12. November 2020.
 
-### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht nun den Benutzern über die Menüoptionen auf den Zusammenfassungsseiten für die **Umgebung** und **Umgebung** zur Verfügung.
 Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
@@ -105,7 +105,7 @@ Follow this section to learn about what is new and the updates for [Content Tran
 
 Das Veröffentlichungsdatum für Best Practices Analyzer ist der 13. November 2020.
 
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Neue Funktionen in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Cloud Readiness Analyzer ist jetzt Best Practices Analyzer (BPA). BPA bietet eine Best Practices-Bewertung Ihrer aktuellen AEM-Implementierung und hilft bei der Beurteilung der Bereitschaft, von einer vorhandenen AEM zu AEM als Cloud Service zu wechseln.
 
