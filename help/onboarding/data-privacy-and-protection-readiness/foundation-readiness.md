@@ -1,6 +1,6 @@
 ---
-title: Datenschutzbestimmungen - Adobe Experience Manager als Cloud Service Foundation Readiness
-description: 'Erfahren Sie mehr über den Adobe Experience Manager als Cloud Service Foundation-Unterstützung für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Verbraucherschutzgesetzes und der Frage, wie bei der Umsetzung eines neuen AEM als Cloud Service-Projekts einzuhalten ist. '
+title: Datenschutzvorschriften und Datenschutzvorschriften - Adobe Experience Manager als Cloud Service Foundation Readiness
+description: 'Erfahren Sie mehr über Adobe Experience Manager als Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Verbraucherschutzgesetzes und der Frage, wie bei der Umsetzung eines neuen AEM als Cloud Service-Projekt einzuhalten ist. '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -20,9 +20,9 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion von Adobe auf Datenschutzprobleme und was dies für Sie als Adobe-Kunde bedeutet, finden Sie im Datenschutzzentrum von [Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzfragen und was das für Sie als Adobe bedeutet, finden Sie im Datenschutzzentrum der [Adobe](https://www.adobe.com/privacy.html).
 
-## Unterstützung von AEM Foundation für Datenschutz und Datenschutz {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation-Unterstützung zum Datenschutz {#aem-foundation-data-privacy-and-protection-support}
 
 Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im User Profil gespeichert. Die Informationen in diesem Artikel behandeln daher in erster Linie das Zugreifen auf und Löschen von Profilen, das Ansprechen von Zugänglichkeits- bzw. Löschanforderungen.
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Für AEM als Cloud Service steht in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Profils zur Verfügung, da auf CRXDE nicht zugegriffen werden kann.
+>Für AEM als Cloud Service ist kein manuelles Verfahren in der Benutzeroberfläche zum Löschen eines Profils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
 
 ### HTTP-API {#http-api-1}
 
