@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Die Titel werden zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
+Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -78,13 +78,13 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 * **[Name](#name)**:
 
    * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](#page-name-restrictions-and-best-practices). 
+   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](#page-name-restrictions-and-best-practices).
 
 #### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich.  Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung).  Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
 >[!TIP]
@@ -93,7 +93,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -111,7 +111,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
 
 Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
@@ -122,7 +122,7 @@ Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Ze
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/implementing/developing/introduction/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![Beispiel für die Eingabe eines ungültigen Seitennamens](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -206,7 +206,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen**[ für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
    >[!TIP]
@@ -252,9 +252,9 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
 >[!NOTE]
 >
->Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
+>Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite       {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -325,7 +325,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
 
@@ -365,7 +365,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 >[!NOTE]
 >
->Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
+>Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. Weitere Informationen finden Sie unter [Formularverfügbarkeit](/help/implementing/developing/components/templates.md#template-availability).
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
