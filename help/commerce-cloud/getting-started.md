@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
 # Erste Schritte mit AEM Commerce als Cloud Service {#start}
 
-Um mit AEM Commerce als Cloud Service beginnen zu können, muss Ihr Experience Manager Cloud Service über das Commerce Integration Framework (CIF) Add-On verfügen. Das CIF-Add-on ist ein Zusatzmodul über [AEM Sites als Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/home.translate.html).
+Um mit AEM Commerce als Cloud Service beginnen zu können, muss Ihr Experience Manager Cloud Service über das Commerce Integration Framework (CIF) Add-On verfügen. Das CIF-Add-on ist ein Zusatzmodul über [AEM Sites als Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -42,9 +42,9 @@ Für jede AEM kann eine andere Magento GraphQL-Endpunkt-URL als Cloud Service-Um
 
 Gehen Sie wie folgt vor, um AEM Commerce mit Magento zu verbinden:
 
-1. Adobe-I/O-CLI mit dem Cloud Manager-Plugin abrufen
+1. Adobe I/O CLI mit dem Cloud Manager-Plugin
 
-   Informationen zum Herunterladen, Einrichten und Verwenden der [Adobe-E/A-CLI](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - [mit dem CLI-Plug-In](https://github.com/adobe/aio-cli) für [Cloud Manager finden Sie in der Dokumentation](https://github.com/adobe/aio-cli-plugin-cloudmanager)zu Adobe Cloud Manager.
+   Informationen zum Herunterladen, Einrichten und Verwenden der [Adobe I/O CLI](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) mit dem CLI-Plug-in [für](https://github.com/adobe/aio-cli) Cloud Manager finden Sie in der Dokumentation [](https://github.com/adobe/aio-cli-plugin-cloudmanager)zu Adobe Cloud Manager.
 
 2. Authentifizieren Sie die CLI mit dem AEM als Cloud Service-Programm
 
