@@ -14,7 +14,7 @@ ht-degree: 67%
 
 Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html) im [Vorlagen-Editor](/help/sites-cloud/authoring/features/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Designdialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Dialoge können sehr komplex werden, mit zahlreichen Optionen für den Benutzer, der nur einen Bruchteil der Optionen nutzen kann, die ihm zur Verfügung stehen. Dies kann dazu führen, dass die Benutzeroberfläche unübersichtlich wird.
 
