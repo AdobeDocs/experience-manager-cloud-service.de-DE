@@ -10,13 +10,13 @@ ht-degree: 100%
 ---
 
 
-# Verwenden des Sling Resource Merger in AEM   as a Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM     as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/implementing/developing/introduction/overlays.md)**von Ressourcen unter Verwendung der[Suchpfade](/help/implementing/developing/introduction/overlays.md#search-paths).
+* **[Überlagerungen](/help/implementing/developing/introduction/overlays.md)** von Ressourcen unter Verwendung der [Suchpfade](/help/implementing/developing/introduction/overlays.md#search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -48,11 +48,12 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >Der Grund dafür ist, dass der Inhalt von `/libs` ggf. überschrieben werden kann, wenn Upgrades auf Ihre Instanz angewendet werden.
 >
 >* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths) abhängig.
+   >
+   >
+* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
 >
->* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
 >
->
->Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
+Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 
 ### Eigenschaften {#properties}
 
