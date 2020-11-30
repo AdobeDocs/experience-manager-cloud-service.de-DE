@@ -1,11 +1,11 @@
 ---
 title: Details der Build-Umgebung
-description: Details zur Umgebung erstellen - Cloud Services
+description: Details zur Build-Umgebung – Cloud Services
 translation-type: tm+mt
 source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,16 +34,16 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven wird auf Systemebene mit einer settings.xml-Datei konfiguriert, die automatisch das öffentliche Adobe-**Artefakt**-Repository enthält. (See [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
+* Maven wird auf Systemebene mit einer settings.xml-Datei konfiguriert, die automatisch das öffentliche Adobe-**Artefakt**-Repository enthält. (Weitere Informationen dazu finden Sie im [Adobe Public Maven Repository](https://repo.adobe.com/)).
 
 >[!NOTE]
 >Obwohl Cloud Manager keine bestimmte Version des Programms des `jacoco-maven-plugin` definiert, muss mindestens die Version `0.7.5.201505241946` verwendet werden.
 
-### Java 11-Unterstützung verwenden {#using-java-support}
+### Verwenden von Java 11-Unterstützung {#using-java-support}
 
 Cloud Manager unterstützt jetzt das Erstellen von Kundenprojekten mit Java 8 und Java 11. Standardmäßig werden Projekte mit Java 8 erstellt.
 
-Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+Kunden, die Java 11 in ihren Projekten verwenden möchten, können dies mit dem [Apache Maven Toolchain-Plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) tun.
 
 Fügen Sie dazu der Datei „pom.xml“ einen `<plugin>`-Eintrag hinzu, der wie folgt aussieht:
 
@@ -71,7 +71,7 @@ Fügen Sie dazu der Datei „pom.xml“ einen `<plugin>`-Eintrag hinzu, der wie 
 ```
 
 >[!NOTE]
->Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
+>Vom Anbieter unterstützte Werte sind `oracle` und `sun`; die unterstützten Versionswerte sind `1.8`, `1.11` und `11`.
 
 >[!NOTE]
 >Der Projekt-Build von Cloud Manager nutzt weiterhin Java 8, um Maven aufzurufen. Daher funktioniert das Überprüfen oder Erzwingen der im Toolchain-Plug-in über Plug-ins wie das [Apache Maven Enforcer-Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) konfigurierten Java-Version nicht und solche Plug-ins dürfen nicht verwendet werden.
@@ -95,7 +95,7 @@ Um dies zu unterstützen, fügt Cloud Manager diese Standard-Umgebungsvariablen 
 | CM_PROGRAM_ID | Numerische Programmkennung |
 | CM_PROGRAM_NAME | Name des Programms |
 | ARTIFACTS_VERSION | Die von Cloud Manager generierte synthetische Version bei einer Staging- oder Produktions-Pipeline |
-| CM_AEM_PRODUCT_VERSION | Der Name der Version |
+| CM_AEM_PRODUCT_VERSION | Name der Version |
 
 ### Pipeline-Variablen {#pipeline-variables}
 
@@ -111,7 +111,7 @@ Aktuelle Variablen können aufgelistet werden:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Variablennamen dürfen nur alphanumerische Zeichen und Unterstriche (_) enthalten. Dabei sollten Großbuchstaben verwendet werden. Pro Pipeline sind maximal 200 Variablen zulässig. Jeder Name muss weniger als 100 Zeichen und jeder Wert muss bei Variablen des Typs String weniger als 2048 Zeichen und bei Variablen des Typs &quot;secretString&quot;500 Zeichen umfassen.
+Variablennamen dürfen nur alphanumerische Zeichen und Unterstriche (_) enthalten. Dabei sollten Großbuchstaben verwendet werden. Pro Pipeline sind maximal 200 Variablen zulässig. Jeder Name darf maximal 100 Zeichen und jeder Wert darf bei Variablen des Typs „String“ maximal 2048 Zeichen und bei Variablen des Typs „secretString“ maximal 500 Zeichen lang sein.
 
 Bei Verwendung in einer `Maven pom.xml`-Datei ist es in der Regel hilfreich, diese Variablen Maven-Eigenschaften mit einer ähnlichen Syntax zuzuordnen:
 
@@ -187,4 +187,4 @@ Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie v
 Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, d. h. mit `gem` für RubyGems oder mit `pip` für Python-Pakete.
 
 >[!NOTE]
->Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein auf der AEM Umgebung installiertes Systempaket benötigen, wenden Sie sich an Ihren Kundenbetreuer für Adobe.
+>Wenn Sie ein Systempaket auf diese Weise installieren, wird es **nicht** in der Laufzeitumgebung installiert, die für die Ausführung von Adobe Experience Manager verwendet wird. Wenn Sie ein Systempaket in der AEM-Umgebung installieren möchten, wenden Sie sich an Ihre Adobe-Support-Mitarbeiter.
