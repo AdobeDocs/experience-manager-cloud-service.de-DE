@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
 1. Bearbeiten Sie eine Inhaltsseite.
-1. Wechseln Sie durch Klicken auf das **** Emulator-Symbol am oberen Seitenrand zum gewünschten Emulator.
+1. Wechseln Sie durch Klicken auf das **Emulator**-Symbol am oberen Seitenrand zum gewünschten Emulator.
 
    ![Emulator-Symbol](/help/sites-cloud/authoring/assets/emulator.png)
 
