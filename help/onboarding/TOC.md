@@ -6,8 +6,8 @@ user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten S
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '244'
+ht-degree: 97%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 0%
       + [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md)
       + [Bereitstellen des Codes](/help/implementing/cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Benutzerspezifische Regeln für Codequalität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+      + [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
-      + [Test der Erlebnis-Prüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
    + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
    + [Wissenswertes zu Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
    + Erstellen eines AEM-Anwendungsprojekts {#create-application-project}
@@ -63,4 +63,4 @@ ht-degree: 0%
    + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Best Practices {#best-practices}
    + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
-+ [Übersicht über die Tools-Konsolen](tools-consoles.md)
++ [Überblick über die Tools-Konsolen](tools-consoles.md)
