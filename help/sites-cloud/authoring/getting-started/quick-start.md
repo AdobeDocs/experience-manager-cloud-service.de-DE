@@ -288,7 +288,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versions.md) Ihrer Seite:
 
-1. Wählen Sie zum Öffnen der Timeline-Leiste die Option **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**mithilfe des Symbolleistensymbols (vor oder nach dem[Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie zum Öffnen der Timeline-Leiste die Option **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![Ansichtsoption „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -302,7 +302,7 @@ So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versio
 
 Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe grundlegende Verfahren eingesetzt:
 
-1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**(vor oder nach dem[Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
+1. Wählen Sie mithilfe des Symbolleistensymbols die Option **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
    ![Ansichtsoption „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -310,7 +310,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
 1. Tippen/klicken Sie auf die wiederherzustellende Version. Dadurch werden weitere Aktionsschaltflächen angezeigt:
 
-   * **Auf diese Version zurücksetzen**
+   * **Auf diese Version zurück**
 
       * Die Version wird wiederhergestellt.
    * **Unterschiede anzeigen**
