@@ -1,6 +1,6 @@
 ---
 sub-product: Adobe Experience Manager Assets as a Cloud Service
-user-guide-title: Assets als Cloud-Service-Anleitung
+user-guide-title: Anleitung zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 80%
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 # [!DNL Assets] Guide {#assets}
 
 + [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
-+ [Übersicht und neue Funktionen](overview.md)
++ [Überblick und neue Funktionen](overview.md)
 + [Wichtige Änderungen [!DNL Assets] als Cloud Service](assets-cloud-changes.md)
 + [[!DNL Assets] Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
@@ -45,7 +45,7 @@ ht-degree: 80%
    + [Herunterladen von Assets](download-assets-from-aem.md)
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
-   + [Wasserzeichenanlagen](watermark-assets.md)
+   + [Wasserzeichen-Assets](watermark-assets.md)
 + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
    + [Referenz zu Dokumenten und APIs für Entwickler](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
@@ -110,9 +110,9 @@ ht-degree: 80%
    + [Verknüpfen von URLs mit einer Web-Anwendung](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Arbeiten mit selektiver Veröffentlichung in dynamischen Medien](dynamic-media/selective-publishing.md)
-   + [Ungültigmachen des CDN-Cache über dynamische Medien](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Hinweis zur Einstellung von Flash-Viewer](dynamic-media/flash-viewers-eol.md)
