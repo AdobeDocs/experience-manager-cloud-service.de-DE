@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -41,8 +41,8 @@ Auf dieser Seite werden die Selbsthilfe-Ressourcen für AEM Commerce als Cloud S
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Einhaltung der DSGVO](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
