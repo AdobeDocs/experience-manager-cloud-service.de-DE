@@ -68,7 +68,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Timeline]**.
+1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste]**.
 1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
@@ -79,7 +79,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Assets erneut verarbeiten 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Bestätigen]**.
+1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
    Klicken Sie auf der Hauptseite der AEM-Konsole auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
@@ -110,7 +110,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Dialogfeld „Eigenschaften“](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Stapel-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
+1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Batch-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
 1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
