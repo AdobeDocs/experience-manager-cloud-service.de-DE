@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Versionshinweise für AEM as a Cloud Service 2020.5.0 {#release-notes}
 
-Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager als Cloud Service 2020.5.0 erläutert.
+Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.5.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2020.5.0 von [!DNL Experience Manager] as a Cloud Service wurde am Donnerstag, 7. Mai 2020 veröffentlicht.
+Die Version 2020.5.0 von [!DNL Experience Manager] as a Cloud Service wurde am 7. Mai 2020 veröffentlicht.
 
 ## Neue Funktionen in AEM Sites {#aem-sites}
 
