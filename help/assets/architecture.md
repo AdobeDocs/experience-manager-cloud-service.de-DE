@@ -1,12 +1,12 @@
 ---
-title: Architektur [!DNL Assets]
+title: Architektur von  [!DNL Assets]
 description: Architektur von Adobe Experience Manager Assets as a Cloud Service
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Eine Übersicht über die Architektur von Asset-Microservices finden Sie in dies
 
 >[!MORELIKETHIS]
 >
->* [Übersicht und neue Funktionen](/help/assets/overview.md)
+>* [Überblick und neue Funktionen](/help/assets/overview.md)
 >* [Unterstützte Dateiformate und MIME-Typen](file-format-support.md)
 >* [Übersicht über Asset-Microservices](asset-microservices-overview.md)
 
