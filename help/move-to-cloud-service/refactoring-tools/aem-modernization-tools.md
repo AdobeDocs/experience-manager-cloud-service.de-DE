@@ -1,23 +1,23 @@
 ---
-title: AEM-Modernisierungstools
-description: 'AEM-Modernisierungstools '
+title: AEM-Modernisierungs-Tools
+description: 'AEM-Modernisierungs-Tools '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# AEM-Modernisierungstools {#aem-moderization-tools}
+# AEM-Modernisierungs-Tools {#aem-moderization-tools}
 
-Die AEM-Modernisierungs-Suite von Tools bietet AEM-Entwicklungsteams Werkzeuge, um ältere AEM-Funktionen in die aktuell unterstützten Funktionen zu konvertieren.
+Die AEM-Modernisierungs-Tool-Suite bietet AEM-Entwicklungs-Teams Tools, um ältere AEM-Funktionen in die aktuell unterstützten Funktionen zu konvertieren.
 
 
 ## Einführung {#introduction}
 
-AEM-Modernisierungstools ermöglichen die einfache Konvertierung von:
+Die AEM-Modernisierungs-Tools ermöglichen eine einfache Konvertierung von:
 
 * Statischen Vorlagen in bearbeitbare Vorlagen
 * Designkonfigurationen in Richtlinien
@@ -25,11 +25,11 @@ AEM-Modernisierungstools ermöglichen die einfache Konvertierung von:
 * Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche
 
 >[!NOTE]
->AEM Modernize Tools sind eine Community-Maßnahme und werden von Adobe weder unterstützt noch garantiert.
+>Die AEM-Modernisierung-Tools werden von der Community gesammelt, Adobe bietet keinerlei Unterstützung oder Garantie dafür.
 
-Weitere Informationen zu Planung, Konfiguration und Entwicklung von AEM- **[Modernisierungstools](https://opensource.adobe.com/aem-modernize-tools/)**finden Sie unter Einführung in AEM-Modernisierungstools.
+Weitere Informationen zu Planung, Konfiguration und Entwicklung von AEM-Modernisierungs-Tools finden Sie unter **[Einführung in AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)**.
 
-## Installation und Implementierung der AEM Modernisierungstool Suite {#installing-implementing}
+## Installation und Implementierung der AEM-Modernisierungs-Tool-Suite {#installing-implementing}
 
-Siehe **[Git-Ressource: AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)**, um mehr über Installation und Implementierung zu erfahren.
+Siehe **[Git-Ressource: AEM-Modernisierungs-Tool-Suite](https://github.com/adobe/aem-modernize-tools)**, um mehr über Installation und Implementierung zu erfahren.
 
