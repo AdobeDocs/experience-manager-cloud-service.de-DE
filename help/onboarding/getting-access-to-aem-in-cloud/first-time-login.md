@@ -1,18 +1,18 @@
 ---
-title: Erstmalige Anmeldung - Cloud Service
-description: Erstmalige Anmeldung - Cloud Service
+title: Erstmalige Anmeldung – Cloud Service
+description: Erstmalige Anmeldung – Cloud Service
 translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 
 # Aufrufen von Programmen {#first-time-login}
 
-Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager]angemeldet haben, können Sie die Benutzeroberfläche verwenden.
+Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, können Sie die Benutzeroberfläche verwenden.
 
 >[!NOTE]
 >
@@ -20,40 +20,40 @@ Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager]angemeldet haben, kö
 
 ## Cloud Manager-Landingpage {#landing-page}
 
-Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager]angemeldet haben, sehen Sie die Landingpage wie unten dargestellt.
+Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, sehen Sie die Landingpage wie unten dargestellt.
 
 >[!NOTE]
 >
->Programm, die sich auf dem Cloud Service befinden, werden durch den Untertitel **Experience Manager Cloud** (im Gegensatz zum **Experience Manager** für AMS-Programm) wie unten dargestellt angezeigt.
+>Programme, die sich in Cloud Service befinden, werden durch den Untertitel **Experience Manager Cloud** (im Gegensatz zu **Experience Manager** bei AMS-Programmen) angezeigt (wie unten dargestellt).
 
 ![](assets/first_timelogin1.png)
 
 
 Je nach Ihren Umständen sehen Sie eine der beiden Optionen:
 
-* **Es gibt keine Programm in Cloud Manager**
+* **Es gibt keine Programme in Cloud Manager**
 
-* **In Cloud Manager sind bereits Programm vorhanden**
+* **In Cloud Manager gibt es bereits Programme**
 
-## Hinzufügen eines neuen Programms in Cloud Service ohne vorhandene Programm {#no-program}
+## Hinzufügen eines neuen Programms in Cloud Service ohne vorhandene Programme {#no-program}
 
 
-Die Landingpage weist Sie an, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
+Die Landingpage weist Sie dazu an, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
 ![](assets/first_timelogin0.png)
 
 
-## Hinzufügen eines neuen Programms in Cloud Service mit vorhandenen Programmen {#existing-program}
+## Hinzufügen eines neuen Programms in Cloud Service bei vorhandenen Programmen {#existing-program}
 
 
-1. Log in to the **Adobe[!UICONTROL Experience Cloud]** and you will see the list of **Programs &amp; Products**.
+1. Melden Sie sich bei **Adobe [!UICONTROL Experience Cloud]** an und sehen Sie sich die Liste der **Programme und Produkte** an.
 
    ![](assets/first_timelogin1.png)
 
-   Programm, die sich auf dem Cloud Service befinden, werden durch den Untertitel &quot; **Experience Manager Cloud** &quot;gekennzeichnet (im Gegensatz zum **Experience Manager** für AMS-Programm).
+   Programme, die sich in Cloud Service befinden, sind durch den Untertitel **Experience Manager Cloud** gekennzeichnet (im Gegensatz zu **Experience Manager** bei AMS-Programmen).
 
    >[!NOTE]
-   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+   >Im folgenden Screenshot ist **We.Retail Global** ein AMS-Programm, während **We.Retail-Prod-Programm - Prod** ein Programm ist, das über Cloud Service verfügbar ist.
 
-1. Informationen zum Hinzufügen eines Programms über den Bildschirm &quot; **Programm und Produkte** &quot;zum Erstellen eines neuen Programms in Cloud Service finden Sie unter Programm [erstellen](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. Informationen zum Hinzufügen eines Programms über den Bildschirm **Programme und Produkte** zum Erstellen eines neuen Programms in Cloud Service finden Sie unter [Programm erstellen](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
 
