@@ -14,7 +14,7 @@ ht-degree: 2%
 
 AEM Konfigurationen dienen zur Verwaltung von Einstellungen in AEM und dienen als Arbeitsbereiche.
 
-## Was ist eine Konfiguration? {#what-is-a-configuration}
+## What is a Configuration? {#what-is-a-configuration}
 
 Eine Konfiguration kann aus zwei verschiedenen Perspektiven betrachtet werden.
 
@@ -57,7 +57,7 @@ Dies geschieht folgendermaßen:
 
 Ähnliche Setups sind nicht nur für bearbeitbare Vorlagen, sondern auch für Cloud-Konfigurationen, ContextHub-Segmente und Inhaltsfragmentmodelle möglich.
 
-### Verwenden des Konfigurationsbrowsers {#using-configuration-browser}
+### Verwenden des Konfigurations-Browsers {#using-configuration-browser}
 
 Der Konfigurationsbrowser ermöglicht es einem Administrator, Zugriffsrechte für Konfigurationen in AEM einfach zu erstellen, zu verwalten und zu konfigurieren.
 
