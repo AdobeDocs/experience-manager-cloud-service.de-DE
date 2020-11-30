@@ -1,6 +1,6 @@
 ---
-title: SPA- und serverseitiges Rendering
-description: Durch die Verwendung des serverseitigen Renderings (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigt und anschließend das Rendering an den Client weitergeleitet werden.
+title: SPA und serverseitiges Rendering
+description: Die Verwendung des serverseitigen Renderings (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das Rendering an den Client weiterleiten.
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# SPA- und serverseitiges Rendering{#spa-and-server-side-rendering}
+# SPA und serverseitiges Rendering{#spa-and-server-side-rendering}
 
-Einzelseitenanwendungen (SPAs) können dem Anwender ein umfangreiches, dynamisches Erlebnis Angebot werden, das auf vertraute Weise reagiert und sich verhält, oft genau wie eine native Anwendung. [Dies wird erreicht, indem der Client den Inhalt vorab lädt und dann die Benutzerinteraktion](introduction.md#how-does-a-spa-work) intensiv aufhebt und so die erforderliche Kommunikation zwischen Client und Server minimiert, wodurch die App reaktiver wird.
+Einzelseitenanwendungen (SPA) können dem Anwender ein umfangreiches, dynamisches Angebot bieten, das auf vertraute Weise reagiert und sich verhält, oft genau wie eine native Anwendung. [Dies wird erreicht, indem der Client den Inhalt vorab lädt und dann die Benutzerinteraktion](introduction.md#how-does-a-spa-work) intensiv aufhebt und so die erforderliche Kommunikation zwischen Client und Server minimiert, wodurch die App reaktiver wird.
 
-Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltlich reich ist. Um die Ladezeit zu optimieren, können einige Inhalte serverseitig wiedergegeben werden. Die Verwendung des serverseitigen Renderings (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das Rendering an den Client weiterleiten.
+Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und reich an Inhalt ist. Um die Ladezeit zu optimieren, können einige Inhalte serverseitig wiedergegeben werden. Die Verwendung des serverseitigen Renderings (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das Rendering an den Client weiterleiten.
 
 ## Verwendung von SSR {#when-to-use-ssr}
 
-SSR ist nicht für alle Projekte erforderlich. Obwohl AEM JS SSR für SPA vollständig unterstützt, wird von Adobe nicht empfohlen, sie systematisch für jedes Projekt zu implementieren.
+SSR ist nicht für alle Projekte erforderlich. Obwohl AEM JS SSR für SPA vollständig unterstützen, empfiehlt Adobe nicht, es systematisch für jedes Projekt zu implementieren.
 
 Bei der Entscheidung, SSR zu implementieren, müssen Sie zunächst abschätzen, welche zusätzliche Komplexität, Aufwand und Kostenaufstockung SSR realistisch für das Projekt, einschließlich der langfristigen Wartung, darstellen. Eine SSR-Architektur sollte nur gewählt werden, wenn der Mehrwert die geschätzten Kosten deutlich übersteigt.
 
@@ -74,18 +74,18 @@ Die folgenden Felder stehen für die Konfiguration zur Verfügung:
 
 ## AEM-gesteuerter Kommunikationsfluss {#aem-driven-communication-flow}
 
-Bei Verwendung von SSR umfasst der Arbeitsablauf [für die](introduction.md#interaction-with-the-spa-editor) Komponenteninteraktion von SPAs in AEM eine Phase, in der der ursprüngliche Inhalt der App auf Adobe I/O Runtime generiert wird.
+Bei Verwendung von SSR umfasst der Arbeitsablauf [für](introduction.md#interaction-with-the-spa-editor) Komponenteninteraktionen von SPA in AEM eine Phase, in der der ursprüngliche Inhalt der App auf Adobe I/O Runtime generiert wird.
 
 1. Der Browser fordert den SSR-Inhalt von AEM an.
 1. AEM sendet das Modell an Adobe I/O Runtime.
 1. Adobe I/O Runtime gibt den generierten Inhalt zurück.
 1. AEM gibt den von Adobe I/O Runtime über die HTML-Vorlage der Backend-Seitenkomponente zurückgegebenen HTML-Code aus.
 
-![SSE CMS-getriebene AEM I/O](assets/ssr-cms-drivenaemnode-adobeio.png)
+![SSE CMS-gesteuertes AEM Adobe I/O](assets/ssr-cms-drivenaemnode-adobeio.png)
 
 ## Adobe I/O Runtime-orientierter Kommunikationsfluss {#adobe-i-o-runtime-driven-communication-flow}
 
-Im vorherigen Abschnitt wird die standardmäßige und empfohlene Implementierung des serverseitigen Renderings in Bezug auf SPAs in AEM beschrieben, bei denen AEM das Bootstrapping und Bereitstellen von Inhalten durchführt.
+Im vorherigen Abschnitt wird die standardmäßige und empfohlene Implementierung des serverseitigen Renderings in Bezug auf SPA in AEM beschrieben, bei dem AEM das Bootstrapping und Bereitstellen von Inhalten durchführt.
 
 Alternativ kann SSR implementiert werden, sodass Adobe I/O Runtime für das Bootstrapping verantwortlich ist und den Kommunikationsfluss effektiv umkehrt.
 
@@ -107,14 +107,14 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
     </ul> </td>
    <td>
     <ul>
-     <li>Möglicherweise nicht mit SPA-Entwicklern vertraut<br /> </li>
+     <li>SPA Entwickler möglicherweise nicht vertraut<br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>über Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>Eingehendere Kenntnisse der SPA-Entwickler<br /> </li>
+     <li>SPA-Entwickler kennen<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -128,29 +128,29 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
 
 ## Planung für SSR {#planning-for-ssr}
 
-Im Allgemeinen muss nur ein Teil einer Anwendung serverseitig gerendert werden. Das allgemeine Beispiel ist der Inhalt, der über der Kante beim ersten Laden der Seite angezeigt wird, wird serverseitig gerendert. Dies spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
+Im Allgemeinen muss nur ein Teil einer Anwendung serverseitig gerendert werden. Das allgemeine Beispiel ist der Inhalt, der über der Kante beim ersten Laden der Seite angezeigt wird, wird serverseitig gerendert. Dies spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit dem SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
 Wenn Sie erwägen, das serverseitige Rendering für Ihre SPA zu implementieren, müssen Sie überprüfen, welche Teile der App erforderlich sind.
 
 ## Entwickeln einer SPA mit SSR {#developing-an-spa-using-ssr}
 
-SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Rendern auf Serverseite sind keine Browsereigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA-Komponenten isomorphisch sein, sodass keine Annahme darüber besteht, wo sie gerendert werden.
+SPA Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Rendern auf Serverseite sind keine Browsereigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA Komponenten isomorphisch sein, ohne dass davon ausgegangen wird, wo sie gerendert werden.
 
 Zur Nutzung von SSR müssen Sie Ihren Code sowohl in AEM als auch auf Adobe I/O Runtime bereitstellen, das für das serverseitige Rendering zuständig ist. Der Großteil des Codes ist gleich, jedoch unterscheiden sich serverspezifische Aufgaben.
 
-## SSR für besondere Schutzgebiete in AEM {#ssr-for-spas-in-aem}
+## SSR für SPA in AEM {#ssr-for-spas-in-aem}
 
-SSR für SPAs in AEM erfordern Adobe I/O Runtime, das für die Wiedergabe der App Content Server-Seite aufgerufen wird. Innerhalb der HTL der App wird eine Ressource auf Adobe I/O Runtime aufgerufen, um den Inhalt zu rendern.
+SSR für SPA in AEM erfordern Adobe I/O Runtime, das für die Wiedergabe der App Content Server-Seite aufgerufen wird. Innerhalb der HTL der App wird eine Ressource auf Adobe I/O Runtime aufgerufen, um den Inhalt zu rendern.
 
-Ebenso wie AEM standardmäßig die SPA-Frameworks &quot;Angular&quot;und &quot;React&quot;unterstützt, wird auch das serverseitige Rendering für Angular- und React-Apps unterstützt. Weitere Informationen finden Sie in der NPM-Dokumentation für beide Frameworks.
+Ebenso wie AEM standardmäßig die Frameworks Angular und React SPA unterstützt, wird auch das serverseitige Rendering für Angular- und React-Apps unterstützt. Weitere Informationen finden Sie in der NPM-Dokumentation für beide Frameworks.
 
 ## Remote Content Renderer {#remote-content-renderer}
 
-Die [Remote Content Renderer-Konfiguration](#remote-content-renderer-configuration) , die für die Verwendung von SSR mit Ihrer SPA in AEM erforderlich ist, tippt auf einen allgemeineren Renderdienst, der erweitert und an Ihre Anforderungen angepasst werden kann.
+Die [Remote Content Renderer-Konfiguration](#remote-content-renderer-configuration) , die erforderlich ist, um SSR mit Ihrer SPA in AEM zu verwenden, tippt auf einen allgemeineren Rendering-Dienst, der erweitert und an Ihre Anforderungen angepasst werden kann.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` ist ein OSGi-Dienst zum Abrufen von Inhalten, die auf einem Remote-Server wiedergegeben werden, z. B. von der Adobe I/O. Der an den Remote-Server gesendete Inhalt basiert auf dem weitergeleiteten Anforderungsparameter.
+`RemoteContentRenderingService` ist ein OSGi-Dienst zum Abrufen von Inhalten, die auf einem Remote-Server wiedergegeben werden, z. B. von Adobe I/O. Der an den Remote-Server gesendete Inhalt basiert auf dem weitergeleiteten Anforderungsparameter.
 
 `RemoteContentRenderingService` kann durch Abhängigkeitsinversion in ein benutzerdefiniertes Sling-Modell oder Servlet eingefügt werden, wenn zusätzliche Inhaltsbearbeitung erforderlich ist.
 
