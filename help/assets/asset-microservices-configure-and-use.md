@@ -108,7 +108,7 @@ Das [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfälle
 
 Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können die verwenden, [!DNL Asset Compute Service] um benutzerdefinierte Anwendungen [zu](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) erstellen, die den unterstützten Anwendungsfällen entsprechen. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
+Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) that cater to the supported use cases. [!DNL Experience Manager] Sie können diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem Sie benutzerdefinierte Profil verwenden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Dienste:
 
 * Verwenden Sie [!DNL Adobe Photoshop]die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) und speichern Sie das Ergebnis als Darstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
@@ -150,7 +150,7 @@ Mit der asset compute Service-Integration kann Experience Manager diese Paramete
 
 *Abbildung: Verwenden Sie das Feld [!UICONTROL Dienstparameter] , um zusätzliche Informationen an vordefinierte Parameter zu übergeben, die in der benutzerdefinierten Anwendung erstellt wurden. In diesem Beispiel werden Kampagnen, die hochgeladen werden, mit `Jumanji` Text in der `Arial-BoldMT` Schriftart aktualisiert.*
 
-## Verarbeitung von Profilen zur Verarbeitung von Assets {#use-profiles}
+## Use processing profiles to process assets {#use-profiles}
 
 Erstellen Sie die zusätzlichen benutzerdefinierten Verarbeitungsprofile und wenden Sie sie auf bestimmte Ordner an, damit Experience Manager sie für Assets verarbeitet, die in diese Ordner hochgeladen oder in diesen aktualisiert wurden. Das standardmäßige integrierte Verarbeitungsprofil wird immer ausgeführt, ist jedoch auf der Benutzeroberfläche nicht sichtbar. Wenn Sie ein benutzerdefiniertes Profil hinzufügen, werden beide Profil zur Verarbeitung der hochgeladenen Assets verwendet.
 
