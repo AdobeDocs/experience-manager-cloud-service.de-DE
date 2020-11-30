@@ -1,11 +1,11 @@
 ---
-title: Erstellen eines Programms - Cloud-Dienst
-description: Erstellen eines Programms - Cloud-Dienst
+title: Erstellen eines Programms - Cloud Service
+description: Erstellen eines Programms - Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -53,11 +53,11 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
    >Weitere Informationen zum Zugriff auf und zur Verwaltung des Git-Repositorys mithilfe der Self-Service-Git-Kontoverwaltung über die Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Nachdem die Entwicklungs-Umgebung erstellt wurde, kann der Benutzer **auf AEM** -Link zugreifen, wie in der folgenden Abbildung dargestellt:
+1. Nachdem die Entwicklungs-Umgebung erstellt wurde, kann der Benutzer **auf AEM** Link zugreifen, wie in der folgenden Abbildung dargestellt:
 
    ![](assets/create-program-5.png)
 
-1. Nach Abschluss der Bereitstellung für die Entwicklungspipeline für die Nicht-Produktion führt der Assistent den Benutzer dazu, entweder auf AEM (in der Entwicklungsphase) zuzugreifen oder Code für die Entwicklungs-Umgebung bereitzustellen:
+1. Nach Abschluss der Bereitstellung für die Entwicklungspipeline für die Nicht-Produktion führt der Assistent den Benutzer zum Zugriff auf AEM (bei der Entwicklung) oder zum Bereitstellen von Code für die Umgebung der Entwicklung:
 
    ![](assets/create-program-setup-deploy.png)
 
@@ -66,12 +66,12 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
    ![](assets/create-program-a1.png)
 
-## Löschen eines Sandbox-Programms {#delete-sandbox-program}
+## Deleting a Sandbox Program {#delete-sandbox-program}
 
-Sandbox-Programm-Benutzer in *Business Owner* oder *Deployment Manager* -Rolle in Cloud Manager können ihre Produktions- und Stage-Umgebung löschen, die über die Benutzeroberfläche von Cloud Manager festgelegt wurde.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->Wenn Sie die Option zum Löschen entweder auf der Produktions- oder der Stufe auswählen, wird auch die andere Option im Satz gelöscht.
+>Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
 Die Option zum Löschen ist in der Landingpage verfügbar, wie unten dargestellt:
 
@@ -84,9 +84,9 @@ Wählen Sie **Programm** löschen auf der Seite **Programm-Übersicht** , um Ihr
 ![](assets/delete-sandbox2.png)
 
 
-## Erstellen eines regulären Programms {#create-regular-program}
+## Creating a Regular Program {#create-regular-program}
 
-Ein *reguläres* Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und Beginn zum Schreiben, Erstellen und Testen von Code mit dem Ziel der Bereitstellung für die Produktion bereitstellen können.
+Ein *reguläres* Programm ist für Benutzer gedacht, die sich mit AEM und Cloud Manager auskennen und mit der Erstellung, dem Erstellen und dem Testen von Beginn-Code zur Bereitstellung in der Produktion vertraut sind.
 
 Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
