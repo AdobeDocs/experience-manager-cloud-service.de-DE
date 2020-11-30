@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -14,45 +14,45 @@ ht-degree: 65%
 
 Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
 
-## Funktionale Einschränkungen {#functional-limitations}
+## Funktionale Einschränkungen  {#functional-limitations}
 
 Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten möglicherweise mit den folgenden funktionalen Einschränkungen konfrontiert.
 
-### Links nicht aktiv {#links-not-active}
+### Links nicht aktiv  {#links-not-active}
 
-When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md), links are not active.
+Beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) sind Links nicht aktiv.
 
-* [Wechseln Sie zum **Vorschau** -Modus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) , um mithilfe der Links in Ihrem Inhalt zu navigieren.
+* [Wechseln Sie in den Modus **Vorschau**](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), um anhand der Links in den Inhalten zu navigieren.
 
 ### Strukturseiten {#structure-pages}
 
-Seiten können nicht benannt werden `structure`. Seiten mit Namen können im Seiteneditor nicht bearbeitet werden. `structure`
+Seiten dürfen nicht `structure` genannt werden. Seiten mit dem Namen `structure` können im Seiteneditor nicht bearbeitet werden.
 
 ## CSS-Einschränkungen {#css-limitations}
 
 Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglicherweise mit den folgenden Einschränkungen konfrontiert.
 
-### Absolut positionierte Elemente {#absolutely-positioned-elements}
+### Absolut positionierte Elemente  {#absolutely-positioned-elements}
 
 Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
 
 * Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
 
-### vh-Einheiten {#vh-units}
+### vh-Einheiten  {#vh-units}
 
-`vh` Einheiten werden nicht unterstützt, da die iframe-Höhe automatisch durch AEM angepasst werden muss.
+`vh`-Einheiten werden nicht unterstützt, da die iframe-Höhe von AEM automatisch angepasst werden muss.
 
 ### Feste Hintergrundbilder {#fixed-background-images}
 
-Feste Hintergrundbilder werden beim Bildlauf möglicherweise nicht als fixiert angezeigt, da sie in einen iframe eingebettet sind.
+Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie in einen iframe eingebettet sind.
 
-* Selecting **View Page as Published** in the header bar actions displays the page properly.
+* Wird in der Kopfzeile **Seite als veröffentlicht anzeigen** ausgewählt, wird die Seite korrekt angezeigt.
 
 ### 100 % Höhe {#height}
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Eine Umgehung ist möglich, um einen Vollbildkörper zu implementieren, indem das Textelement wie folgt &quot;gestreckt&quot;wird:
+* Dieses Problem kann umgangen werden, um einen Vollbildhauptteil zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
 
 ```xml
 body {
