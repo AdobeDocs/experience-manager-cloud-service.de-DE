@@ -12,7 +12,7 @@ ht-degree: 93%
 
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen. Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.  Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
 These files can be downloaded through the UI, either from the **Overview**  page:
 
