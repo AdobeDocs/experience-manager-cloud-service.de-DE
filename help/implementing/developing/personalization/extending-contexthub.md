@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 68%
 
 Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
 
-## Erstellen benutzerdefinierter Store-Kandidaten {#creating-custom-store-candidates}
+## Erstellen benutzerdefinierter Store-Kandidaten  {#creating-custom-store-candidates}
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 
@@ -24,18 +24,18 @@ Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Store-Kandi
 contexthub.store.[storeType]
 ```
 
-The `storeType` part of the category is the `storeType` with which the store candidate is registered. (Siehe [Registrieren von ContextHub-Store-Kandidaten](#registering-a-contexthub-store-candidate).) Beispielsweise muss für den Store-Typ `contexthub.mystore` die Kategorie des Client-Bibliotheksordners `contexthub.store.contexthub.mystore` lauten.
+Beim `storeType`-Teil der Kategorie handelt es sich um den `storeType`, mit dem der Store-Kandidat registriert wird. (Siehe [Registrieren von ContextHub-Store-Kandidaten](#registering-a-contexthub-store-candidate).) Beispielsweise muss für den Store-Typ `contexthub.mystore` die Kategorie des Client-Bibliotheksordners `contexthub.store.contexthub.mystore` lauten.
 
 ### Erstellen von ContextHub-Store-Kandidaten {#creating-a-contexthub-store-candidate}
 
-To create a store candidate, you use the [`ContextHub.Utils.inheritance.inherit`](contexthub-api.md#inherit-child-parent) function to extend one of the base stores:
+Verwenden Sie zum Erstellen eines Store-Kandidaten die Funktion [`ContextHub.Utils.inheritance.inherit`](contexthub-api.md#inherit-child-parent), um einen der grundlegenden Stores zu erweitern:
 
 * [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)
 * [`ContextHub.Store.SessionStore`](contexthub-api.md#contexthub-store-sessionstore)
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Note that each base store extends the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) store.
+Beachten Sie, dass jeder grundlegende Store den Store [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) erweitert.
 
 Im folgenden Beispiel wird erst die einfachste Erweiterung des Store-Kandidaten `ContextHub.Store.PersistedStore` erstellt:
 
@@ -44,13 +44,13 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-In der Praxis werden mit Ihren benutzerdefinierten Store-Kandidaten wohl zusätzliche Funktionen definiert oder die ursprüngliche Konfiguration des Stores überschrieben. Several [sample store candidates](sample-stores.md) are installed in the repository below `/libs/granite/contexthub/components/stores`.
+In der Praxis werden mit Ihren benutzerdefinierten Store-Kandidaten wohl zusätzliche Funktionen definiert oder die ursprüngliche Konfiguration des Stores überschrieben. Mehrere [Beispiel-Store-Kandidaten](sample-stores.md) werden im Repository unter. `/libs/granite/contexthub/components/stores` installiert.
 
 ### Registrieren von ContextHub-Store-Kandidaten {#registering-a-contexthub-store-candidate}
 
 Registrieren Sie einen Store-Kandidaten, um ihn mit dem ContextHub-Framework zu integrieren und Stores zu aktivieren, die auf Grundlage des Kandidaten erstellt werden sollen. Um einen Store-Kandidaten zu registrieren, verwenden Sie die Funktion [`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) der Klasse `ContextHub.Utils.storeCandidates`.
 
-Wenn Sie einen Store-Kandidaten registrieren, geben Sie einen Namen für den Store-Typ ein. Beim Erstellen eines Stores auf Grundlage des Kandidaten identifizieren Sie über den Store-Typ den zugrunde liegenden Kandidaten.
+Wenn Sie einen Store-Kandidaten registrieren, geben Sie einen Namen für den Store-Typ an. Beim Erstellen eines Stores auf Grundlage des Kandidaten identifizieren Sie über den Store-Typ den zugrunde liegenden Kandidaten.
 
 Geben Sie beim Registrieren eines Store-Kandidaten dessen Priorität an. Wird ein Store-Kandidat mit demselben Store-Typ wie ein bereits registrierter Store-Kandidat registriert, wird der Kandidat mit der höheren Priorität verwendet. Daher können Sie vorhandene Store-Kandidaten durch neue Implementierungen überschreiben.
 
@@ -59,20 +59,20 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann auf `0`, aber wenn Sie interessiert sind, können Sie über [fortgeschrittene Registrierungen erfahren,](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) die es ermöglicht, eine von wenigen Stores-Implementierungen auf Basis von JavaScript-Bedingung (`applies`) und Kandidatenpriorität auszuwählen.
+In den meisten Fällen ist nur ein Kandidat erforderlich und die Priorität kann auf `0` gesetzt werden. Wenn Sie Interesse daran haben, können Sie mehr über [erweiterte Registrierungen](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) erfahren, die es ermöglichen, auf Basis der JavaScript-Bedingung (`applies`) und Kandidatenpriorität eine von mehreren Store-Implementierungen auszuwählen.
 
 ## Erstellen von Typen von ContextHub-Benutzeroberflächenmodulen {#creating-contexthub-ui-module-types}
 
 Erstellen Sie benutzerdefinierte Typen eines Benutzeroberflächenmoduls, wenn die [mit ContextHub installierten Typen](sample-modules.md) nicht Ihren Anforderungen entsprechen. Erstellen Sie dazu einen neuen Benutzeroberflächenmodul-Renderer, indem Sie die `ContextHub.UI.BaseModuleRenderer`-Klasse erweitern und sie dann mit `ContextHub.UI` registrieren.
 
-To create a UI module renderer, create a `Class` object that contains the logic that renders the UI module. Ihre Klasse muss mindestens die folgenden Aktionen durchführen:
+Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class`-Objekt, das die Logik enthält, die das Benutzeroberflächenmodul rendert. Ihre Klasse muss mindestens die folgenden Aktionen durchführen:
 
-* Extend the `ContextHub.UI.BaseModuleRenderer` class. Bei dieser Klasse handelt es sich um die Basisimplementierung für alle Benutzeroberflächenmodul-Renderer. Das `Class`-Objekt definiert eine Eigenschaft namens `extend`, mit der Sie diese Klasse als diejenige benennen, die erweitert wird.
-* Bereitstellen einer Standardkonfiguration. Create a `defaultConfig` property. Diese Eigenschaft ist ein Objekt, das die Eigenschaften enthält, die für das Benutzeroberflächenmodul [`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) definiert sind, sowie alle anderen Eigenschaften, die Sie benötigen.
+* Erweitern der `ContextHub.UI.BaseModuleRenderer`-Klasse. Bei dieser Klasse handelt es sich um die Basisimplementierung für alle Benutzeroberflächenmodul-Renderer. Das `Class`-Objekt definiert eine Eigenschaft namens `extend`, mit der Sie diese Klasse als diejenige benennen, die erweitert wird.
+* Bereitstellen einer Standardkonfiguration. Erstellen Sie eine Eigenschaft `defaultConfig`. Diese Eigenschaft ist ein Objekt, das die Eigenschaften enthält, die für das Benutzeroberflächenmodul [`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) definiert sind, sowie alle anderen Eigenschaften, die Sie benötigen.
 
 Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Sie müssen einen Namen für den Modultyp angeben. Wenn Administratoren ein Benutzeroberflächenmodul auf Grundlage dieses Renderers anlegen, geben sie diesen Namen an.
 
-Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden anonymen Funktion. The following example is based on the source code for the `contexthub.browserinfo` UI module. Dieses Benutzeroberflächenmodul ist eine einfache Erweiterung der `ContextHub.UI.BaseModuleRenderer`-Klasse.
+Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden anonymen Funktion. Das folgende Beispiel basiert auf dem Quell-Code des Benutzeroberflächenmoduls `contexthub.browserinfo`. Dieses Benutzeroberflächenmodul ist eine einfache Erweiterung der `ContextHub.UI.BaseModuleRenderer`-Klasse.
 
 ```javascript
 ;(function() {
@@ -99,10 +99,10 @@ Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden 
 }());
 ```
 
-The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). Die Ordnerkategorie muss dem folgenden Muster entsprechen:
+Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Renderers muss in einem [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md) enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
 
 ```javascript
 contexthub.module.[moduleType]
 ```
 
-The `[moduleType]` part of the category is the `moduleType` with which the module renderer is registered. For example, for the `moduleType` of `contexthub.browserinfo`, the category of the client library folder must be `contexthub.module.contexthub.browserinfo`.
+Beim `[moduleType]`-Teil der Kategorie handelt es sich um den `moduleType`, mit dem der Renderer registriert wird. Beispielsweise muss für den `moduleType` von `contexthub.browserinfo` die Kategorie des Client-Bibliotheksordners `contexthub.module.contexthub.browserinfo` lauten.
