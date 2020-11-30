@@ -1,9 +1,9 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 100%
 
@@ -71,12 +71,13 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 >[!NOTE]
 >
->**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**sind unterschiedliche Funktionen in AEM:
+>**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >
->Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
@@ -208,7 +209,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
       * Jedes Inhaltsfragment hat eine Vorlageninstanz.
       * Die Vorlage kann gelöscht werden. 
-   * Auf die primäre Vorlage kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)**zugegriffen werden.
+   * Auf die primäre Vorlage kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)** zugegriffen werden.
    * Die Vorlage ist keine Variante an sich, sondern die Grundlage aller Varianten.
 
 
