@@ -1,16 +1,16 @@
 ---
-title: AEM
-description: 'AEM '
+title: Aktualisierungen der AEM-Version
+description: 'Aktualisierungen der AEM-Version '
 translation-type: tm+mt
 source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 38%
+ht-degree: 40%
 
 ---
 
 
-# AEM Version Updates {#aem-version-updates}
+# Aktualisierungen der AEM-Version {#aem-version-updates}
 
 ## Einführung {#introduction}
 
