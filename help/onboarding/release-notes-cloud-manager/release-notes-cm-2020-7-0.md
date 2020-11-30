@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 71%
+ht-degree: 78%
 
 ---
 
@@ -26,14 +26,14 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.7.0
 
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
-* Cloud Manager-Pipelines unterstützen jetzt benutzerspezifische Variablen und Geheimnisse.
+* Cloud Manager-Pipelines unterstützen jetzt anwenderspezifische Variablen und Geheimnisse.
 
    Weitere Informationen finden Sie unter [Pipeline-Variablen](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
 * Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
-Weitere Informationen finden Sie unter [Verwenden der Java 11-Unterstützung](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
+Weitere Informationen finden Sie unter [Java 11-Unterstützung verwenden](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -55,4 +55,4 @@ Weitere Informationen finden Sie unter [Verwenden der Java 11-Unterstützung](/h
 
 ### Bekannte Probleme {#known-issues}
 
-* Aufgrund einer Änderung bei der Berechnung der Code-Abdeckung ist die erforderliche *Mindestversion* des Jacoco-Plugins jetzt 0.7.5.201505241946 (veröffentlicht im Mai 2015). Kunden, die explizit auf eine ältere Version verweisen, erhalten eine Fehlermeldung im Code-Qualitätsprozess.
+* Aufgrund einer Änderung bei der Berechnung der Code-Abdeckung ist die erforderliche *Mindestversion* des Jacoco-Plugins jetzt 0.7.5.201505241946 (veröffentlicht im Mai 2015). Kunden, die eine ältere Version verwenden, erhalten eine Fehlermeldung im Code-Qualitätsprozess.
