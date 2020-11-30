@@ -1,5 +1,5 @@
 ---
-title: Multi-Store-Einrichtung
+title: Multi-Store-Setup
 description: Erfahren Sie, wie Sie mehrere Store-Ansichten von Magento zu AEM zuordnen. Dadurch können Projekte auch mehrsprachige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 version: cloud-service
@@ -13,50 +13,50 @@ translation-type: tm+mt
 source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 4%
+ht-degree: 92%
 
 ---
 
 
-# Multi-Store-Einrichtung {#multi-store}
+# Multi-Store-Setup {#multi-store}
 
-Die AEM CIF Core-Komponenten können auf mehreren AEM Sitestrukturen verwendet werden und die zugrunde liegende GraphQL Client-Implementierung kann mit verschiedenen Magento Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
+Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet werden und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Magento-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
-Eine Videoanleitung mit detaillierten Optionen zur Integration mehrerer Magento Store-Ansichten mit Adobe Experience Manager Sites.
+Videoeinführung mit detaillierten Optionen zur Integration mehrerer Magento-Store-Ansichten mit Adobe Experience Manager Sites:
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM Funktionen zur Verwaltung mehrerer Sites von Live Copy und Sprachkopie werden zusammen mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
+AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie werden zusammen mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
 
-Es wird empfohlen, eine 1:1-Beziehung zwischen AEM Site- und Magento Store-Ansicht zu verwenden.
+Es empfiehlt sich, eine 1:1-Beziehung zwischen AEM-Site und Magento Store-Ansicht zu verwenden.
 
-Gehen Sie wie folgt vor, um eine AEM-Site zu verbinden und CIF-Kernkomponenten so zu einer dedizierten Store-Ansicht AEM:
+Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu einer dedizierten Store-Ansicht zu verbinden:
 
 ## Konfiguration {#configuration}
 
-1. Konfigurieren Sie mehrere Stores und Store-Ansichten nach dem Muster, das in [Magento Websites, Stores und Ansichten beschrieben ist.](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Konfigurieren Sie mehrere Stores und Store-Ansichten nach dem Muster, das unter [Websites, Stores und Ansichten](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html) beschrieben ist.
 
-2. Stellen Sie sicher, dass die Verbindung zwischen AEM und Magento funktioniert.
+2. Stellen Sie sicher, dass die Verbindung zwischen AEM und Magento hergestellt ist.
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Gehen Sie AEM zu Tools -> Allgemein -> [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
-   * Wählen Sie die erstellte Basiskonfiguration aus
-   * Erstellen Sie eine neue Konfiguration mithilfe der unter Nummer 2 beschriebenen Schritte.
+   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
+   * Erstellen Sie eine neue Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können jetzt unter Tools -> Allgemein -> Konfigurationsbrowser die Konfigurationseinstellungen erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ -> „Allgemein“ -> „Konfigurationsbrowser“ erstellen.
 
-4. Zuweisen der untergeordneten Konfiguration zu einer AEM Site
+4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
-   * Zu AEM Sites Console wechseln
-   * Navigieren Sie zur Region oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/de für die Venia-Beispielseite
-   * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften
-   * Wählen Sie die Registerkarte Erweitert
-   * Wählen Sie im `Configuration` Abschnitt die im Schritt erstellte Konfiguration aus.
+   * Wechseln Sie zur AEM Sites-Konsole.
+   * Navigieren Sie zum Regions- oder zum Sprach-Stamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
+   * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
+   * Wählen Sie die Registerkarte „Erweitert“ aus.
+   * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.
 
 ## Zusätzliche Ressourcen
 
-* [Websites, Stores und Ansichten von Magentos](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [AEM CIF-Kernkomponenten - Konfiguration mehrerer Speicher/Standorte](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [Verwenden von Multi-Site-Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Websites, Stores und Ansichten](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [AEM-CIF-Kernkomponenten – Multi-Store-/Multi-Site-Konfiguration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Verwenden von Multi-Site-Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/msm.html)
