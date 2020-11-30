@@ -1,39 +1,39 @@
 ---
-title: Übersicht über Testergebnisse - Cloud Services
-description: Übersicht über Testergebnisse - Cloud Services
+title: Überblick über Testergebnisse – Cloud Services
+description: Überblick über Testergebnisse – Cloud Services
 translation-type: tm+mt
 source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Überblick {#overview}
 
-Es gibt drei große Kategorien von Tests, die von Cloud Manager für Cloud Services-Pipeline unterstützt werden:
+Es gibt drei allgemeine Testkategorien, die von Cloud Manager für Cloud Services-Pipeline unterstützt werden:
 
 1. [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   Die Codequalitätsprüfung bewertet die Qualität Ihres Anwendungscodes. Die Code-Quality-Pipeline wird unmittelbar nach dem Build-Schritt in allen Nicht-Produktions- und Produktionsleitungen ausgeführt.
+   Beim Testen der Code-Qualität wird die Qualität Ihres Anwendungs-Codes bewertet. Die Code-Qualitäts-Pipeline wird in allen produktionsfremden und Produktions-Pipelines unmittelbar nach dem Build-Schritt ausgeführt.
 
-   The [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) executed by Cloud Manager are created based on best practices from AEM Engineering.
+   Auf dieser Seite werden die [benutzerspezifischen Regeln für die Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md) beschrieben, die von Cloud Manager ausgeführt werden und auf bewährten Verfahren des AEM Engineering basieren.
 
 1. [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
 
-   Der Funktionstest ist Teil der Testphase einer Produktionsleitung.
+   Funktionstests sind Teil der Staging-Testphase einer Produktions-Pipeline.
 
-1. [Test der Erlebnis-Prüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Der Experience Audit-Test ist in allen Cloud Manager-Produktionsleitungen aktiviert und kann nicht übersprungen werden.
+   Das Testen mit Experience Audit ist in allen Cloud Manager-Produktions-Pipelines aktiviert und kann nicht übersprungen werden.
 
-Folgende Tests sind möglich:
+Diese Tests können folgendermaßen sein:
 
-* Vom Kunden geschriebene
-* Adobe geschrieben
-* Open Source-Tool
+* Vom Kunden geschrieben
+* Von Adobe geschrieben
+* Open-Source-Tool
 
    >[!NOTE]
-   > Sowohl kundengeschriebene Tests als auch Adoben werden in einer Containerinfrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
+   > Sowohl vom Kunden als auch von Adobe geschriebene Tests werden in einer Container-Infrastruktur ausgeführt, die für diese Testtypen entwickelt wurde.
 
