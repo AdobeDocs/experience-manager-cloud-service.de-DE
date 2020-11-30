@@ -16,7 +16,7 @@ Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wi
 
 Dieses Tool vereinfacht die Übertragung von Dateien für den Entwickler und kann auch in Eclipse und IntelliJ integriert werden, um die Entwicklung noch effizienter zu machen.
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 For a given path inside a `jcr_root` FileVault structure on the filesystem, the AEM Repo Tool creates a package with a single filter for the entire subtree and pushes that to the server (similar to FTP `put`), fetches it from the server ( `get`) or compares the differences ( `status` and `diff`).
 
@@ -37,4 +37,4 @@ CODE AUF GITHUB
 Den Code dieser Seite finden Sie auf GitHub
 
 * [Open Tools-Projekt auf GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip) herunter
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip) herunter.
