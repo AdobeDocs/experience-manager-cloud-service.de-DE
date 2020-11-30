@@ -1,9 +1,9 @@
 ---
 title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 100%
 
