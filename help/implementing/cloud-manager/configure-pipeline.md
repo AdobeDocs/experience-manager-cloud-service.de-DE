@@ -5,26 +5,26 @@ translation-type: tm+mt
 source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren der CI/CD-Pipeline {#configure-ci-cd-pipeline}
 
-In Cloud Manager gibt es zwei Arten von Pipeline:
+In Cloud Manager gibt es zwei Arten von Pipelines:
 
-* **Produktionsleitung**:
+* **Produktions-Pipeline**:
 
-   Eine Produktionspipeline kann erst hinzugefügt werden, wenn eine Produktions- und Umgebung-Set erstellt wurde.
+   Eine Produktions-Pipeline kann erst hinzugefügt werden, nachdem ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
 
-   Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
+   Weitere Informationen finden Sie unter [Einrichten einer Produktions-Pipeline](configure-pipeline.md#setting-up-the-pipeline).
 
-* **Nicht-Produktions-Pipeline**:
+* **Produktionsfremde Pipeline**
 
-   Auf der Seite &quot; **Übersicht** &quot;der Benutzeroberfläche von Cloud Manager kann eine Pipeline für Nicht-Produktion hinzugefügt werden.
+   Auf der Seite **Überblick** der Benutzeroberfläche von Cloud Manager kann eine produktionsfremde Pipeline hinzugefügt werden.
 
-   Weitere Informationen finden Sie unter [Nicht-Produktion- und Nur-Code-Qualitätsrohre](configure-pipeline.md#non-production-pipelines) .
+   Weitere Informationen finden Sie unter [Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität](configure-pipeline.md#non-production-pipelines).
 
 >[!NOTE]
 >Zur Konfiguration der Pipeline müssen Sie:
@@ -33,12 +33,12 @@ In Cloud Manager gibt es zwei Arten von Pipeline:
 > * Leistungstestparameter konfigurieren.
 
 
-## Setting up Production Pipeline {#setting-up-production-pipeline}
+## Einrichten einer Produktions-Pipeline {#setting-up-production-pipeline}
 
-Der Deployment Manager ist für die Einrichtung der Produktionsleitung zuständig.
+Der Implementierungs-Manager ist für die Einrichtung der Produktions-Pipeline verantwortlich.
 
 >[!NOTE]
->Eine Produktionspipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen ist, das Git-Repository über mindestens eine Verzweigung verfügt und ein Produktions- und Stage-Umgebung-Set erstellt wurde.
+>Eine Produktions-Pipeline kann erst eingerichtet werden, wenn die Erstellung eines Programms abgeschlossen wurde, das Git-Repository über mindestens eine Verzweigung verfügt und ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
 
 Bevor Sie Code bereitstellen, müssen Sie Ihre Pipelineeinstellungen über [!UICONTROL Cloud Manager] konfigurieren.
 
@@ -74,20 +74,20 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    Das ist für Kunden nützlich, die die Prozesse stärker automatisieren möchten. Die verfügbaren Optionen sind:
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Schlagen sofort fehl**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
+   * **Fehler sofort**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Erlebnis-Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die immer in der Erlebnis-Prüfung enthalten sein sollten.
+1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Experience Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die im Experience Audit stets enthalten sein sollten.
 
    >[!NOTE]
-   >Sie müssen auf **Hinzufügen Neue Seite** klicken, um Ihren eigenen benutzerspezifischen Link zu definieren.
+   >Sie müssen auf **Neue Seite hinzufügen** klicken, um einen eigenen benutzerspezifischen Link zu definieren.
 
    ![](assets/setup-3.png)
 
-   Klicken Sie auf **Hinzufügen Neue Seite** , um einen URL-Pfad anzugeben, der in die Erlebnis-Prüfung aufgenommen werden soll.
+   Klicken Sie auf **Neue Seite hinzufügen**, um einen URL-Pfad anzugeben, der in die Erlebnisprüfung aufgenommen werden soll.
 
-   Wenn Sie zum Beispiel `https://wknd.site/us/en/about-us.html` in Experience Audit einschließen möchten, geben Sie den Pfad `us/en/about-us.html` in dieses Feld ein und klicken Sie auf **Speichern**.
+   Wenn Sie zum Beispiel `https://wknd.site/us/en/about-us.html` in die Erlebnisprüfung einschließen möchten, geben Sie den Pfad `us/en/about-us.html` in dieses Feld ein und klicken Sie auf **Speichern**.
 
    ![](assets/exp-audit4.png)
 
@@ -97,14 +97,14 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    ![](assets/exp-audit5.png)
 
-   Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Homepage der Site standardmäßig in die Erlebnis-Prüfung einbezogen.
+   Es können maximal 25 Zeilen eingefügt werden. Wenn der Benutzer in diesem Abschnitt keine Seiten übermittelt hat, wird die Startseite der Site standardmäßig in die Erlebnisprüfung einbezogen.
 
-   Weitere Informationen finden Sie unter [Die Ergebnisse](/help/implementing/cloud-manager/experience-audit-testing.md) des Erlebnis-Audit.
+   Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
    >[!NOTE]
    > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
 
-1. Klicken Sie im Bildschirm &quot;Pipeline **bearbeiten&quot;auf** Speichern **** . Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
+1. Klicken Sie im Bildschirm **Pipeline bearbeiten** auf **Speichern**. Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
    ![](assets/configure-pipeline5.png)
 
@@ -130,7 +130,7 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
    ![](assets/configure-pipeline8.png)
 
    * **Bearbeiten**: Ermöglicht die Bearbeitung der Pipeline-Einstellungen.
-   * **Build**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann.
+   * **Erstellen**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann.
    * **Git verwalten**: Ermöglicht es dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen.
 
 ## Die nächsten Schritte {#the-next-steps}
