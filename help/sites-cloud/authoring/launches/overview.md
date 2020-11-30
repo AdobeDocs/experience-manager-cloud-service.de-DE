@@ -44,6 +44,7 @@ Launches ermöglichen Folgendes:
    * Die Kopie ist Ihr Launch.
    * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
       * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
+
    ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
@@ -62,11 +63,13 @@ Launches ermöglichen Folgendes:
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
+
    ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) (Launch innerhalb eines Launches):
    * Die Quelle ist ein vorhandener Launch.
    * Sie können einen [verschachtelten Launch](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) an jedes Ziel weiterleiten. Dabei kann es sich um einen übergeordneten Launch oder die Quellseiten der obersten Ebene (Produktion) handeln.
+
    ![Ein verschachtelter Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
