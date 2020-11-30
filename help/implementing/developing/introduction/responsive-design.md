@@ -1,74 +1,74 @@
 ---
-title: Responsive Design
-description: Mit reaktionsfähigem Design können dieselben Erlebnisse effektiv auf mehreren Geräten in mehreren Ausrichtungen angezeigt werden
+title: Responsives Design
+description: Responsives Design ermöglicht die effektive Darstellung derselben Erlebnisse auf verschiedenen Geräten in verschiedenen Ausrichtungen.
 translation-type: tm+mt
 source-git-commit: a642c5260c6c7ca63e59662877641d28db261fe4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
-# Responsive Design {#responsive-design}
+# Responsives Design {#responsive-design}
 
-Entwerfen Sie Ihre Erlebnisse so, dass sie sich an den Client-Viewport anpassen, in dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Webseiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Grafik zeigt eine Reihe von Möglichkeiten, wie eine Seite auf Änderungen der Fenstergröße reagieren kann:
+Gestalten Sie Ihre Erlebnisse so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Grafik zeigt eine Reihe von Möglichkeiten, wie eine Seite auf Änderungen der Fenstergröße reagieren kann:
 
 * Layout: Verwenden Sie einspaltige Layouts für kleinere Fenstergrößen und mehrspaltige Layouts für größere Fenstergrößen.
 * Textgröße: Verwenden Sie für größere Fenstergrößen größere Schriftgrößen (wo passend, z. B. Überschriften).
 * Inhalt: Zeigen Sie auf kleineren Geräten nur die wichtigsten Inhalte an.
 * Navigation: Gerätespezifische Tools werden für den Zugriff auf andere Seiten zur Verfügung gestellt.
-* Bilder: Bereitstellen von Bilddarstellungen, die für den Client-Viewport entsprechend den Fensterabmessungen geeignet sind.
+* Bilder: Stellen Sie anhand der Fenstergröße dem Client-Darstellungsfeld entsprechende Ausgabedarstellungen zur Verfügung.
 
-![Beispiele für reaktionsfähiges Design](assets/responsive-example.png)
+![Beispiele für responsives Design](assets/responsive-example.png)
 
-Entwickeln Sie Adobe Experience Manager (AEM)-Anwendungen, die HTML5 generieren und sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Darstellungsfeldbreiten unterschiedlichen Gerätetypen und Ausrichtungen:
+Entwickeln Sie Adobe Experience Manager (AEM)-Programme, die HTML5-Inhalte generieren, die sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Darstellungsfeldbreiten unterschiedlichen Gerätetypen und Ausrichtungen:
 
 * Maximale Breite von 480 Pixel (Smartphone, Hochformat)
 * Maximale Breite von 767 Pixel (Smartphone, Querformat)
 * Breite zwischen 768 Pixel und 979 Pixel (Tablet, Hochformat)
-* Breite zwischen 980 und 1199 Pixel (Tablet, Querformat)
+* Breite zwischen 980 Pixel und 1199 Pixel (Tablet, Querformat)
 * Breite von 1200 Pixel oder mehr (Desktop)
 
-Informationen zur Implementierung von reaktionsfähigem Designverhalten finden Sie in den folgenden Themen:
+Weitere Informationen finden Sie unter den folgenden Themen zur Implementierung von responsivem Design:
 
 * [Medienabfragen](#using-media-queries)
 * [Fließende Raster](#developing-a-fluid-grid)
 * [Adaptive Bilder](#using-adaptive-images)
 
-As you design, use the **Emulator** toolbar to preview your pages for various screen sizes.
+Nutzen Sie während des Design-Vorgangs die **Emulator**-Symbolleiste, um Vorschauen Ihrer Seiten in verschiedenen Bildschirmgrößen anzuzeigen.
 
-## Before You Develop {#before-you-develop}
+## Vor dem Entwicklungsvorgang {#before-you-develop}
 
-Vor der Entwicklung einer AEM-Anwendung, die Ihre Webseiten unterstützt, müssen Sie einige Designentscheidungen treffen. Beispielsweise benötigen Sie die folgenden Informationen:
+Vor der Entwicklung einer AEM-Anwendung, die Ihre Web-Seiten unterstützt, müssen Sie einige Designentscheidungen treffen. Beispielsweise benötigen Sie die folgenden Informationen:
 
-* Die Geräte, die Sie als Ziel auswählen
-* Die Viewport-Größen der Zielgruppe
-* Die Seitenlayouts für jede der angegebenen Viewport-Größen
+* Auf welche Geräte der Entwicklungsprozess ausgerichtet ist
+* Die Größe der Zieldarstellungsfelder
+* Die Seiten-Layouts für die berücksichtigten Zieldarstellungsfelder
 
-### Anwendungsstruktur {#application-structure}
+### Programmstruktur {#application-structure}
 
-Die typische AEM-Anwendungsstruktur unterstützt alle Implementierungen responsiven Designs:
+Die typische AEM-Programmstruktur unterstützt alle Implementierungen responsiven Designs:
 
-* Seitenkomponenten befinden sich unten `/apps/<application_name>/components`
-* Vorlagen unten `/apps/<application_name>/templates`
+* Seitenkomponenten befinden sich unter `/apps/<application_name>/components`
+* Vorlagen befinden sich unter `/apps/<application_name>/templates`
 
 ## Nutzung von Medienabfragen {#using-media-queries}
 
 Medienabfragen ermöglichen die selektive Nutzung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Anwendungen.
 
-The W3C group provides the [Media Queries](https://www.w3.org/TR/css3-mediaqueries/) recommendation that describes this CSS3 feature and the syntax.
+Die W3C-Gruppe stellt die [Medienabfragen](https://www.w3.org/TR/css3-mediaqueries/)-Empfehlung zur Verfügung, die diese CSS3-Funktion und die Syntax beschreibt.
 
 ### Erstellen der CSS-Datei {#creating-the-css-file}
 
-Definieren Sie in der CSS-Datei Medienabfragen anhand der Eigenschaften der Zielgeräte. Die folgende Implementierungsstrategie kann für die Verwaltung der Styles der verschiedenen Medienabfragen verwendet werden:
+Definieren Sie in der CSS-Datei Medienabfragen anhand der Eigenschaften der Zielgeräte. Die folgende Implementierungsstrategie kann für die Verwaltung der Stile der verschiedenen Medienabfragen verwendet werden:
 
-* Use a [Client Library folder](clientlibs.md) to define the CSS that is assembled when the page is rendered.
-* Definieren Sie die Medienabfragen und die zugehörigen Styles in separaten CSS-Dateien. Dabei ist es hilfreich, Dateinamen zu verwenden, die die Geräteeigenschaften der Medienabfrage darstellen.
-* Definieren Sie Styles, die alle Geräte gemeinsam haben, in einer separaten CSS-Datei.
-* Ordnen Sie in der Datei &quot;css.txt&quot;des Ordners &quot;Client-Bibliothek&quot;die CSS-Listen wie in der assemblierten CSS-Datei erforderlich an.
+* Verwenden Sie einen [Client-Bibliotheksordner](clientlibs.md), um das CSS zu definieren, das zusammengestellt wird, wenn die Seite gerendert wird.
+* Definieren Sie die Medienabfragen und die zugehörigen Stile in separaten CSS-Dateien. Dabei ist es hilfreich, Dateinamen zu verwenden, die die Geräteeigenschaften der Medienabfrage darstellen.
+* Definieren Sie Stile, die alle Geräte gemeinsam haben, in einer separaten CSS-Datei.
+* Sortieren Sie in der Datei „css.txt“ des Client-Bibliotheksordners die Liste der CSS-Dateien, wie es in der zusammengestellten CSS-Datei erforderlich ist.
 
-The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define styles in the site design. Die von WKND verwendete CSS-Datei befindet sich unter `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+Das [WKND-Tutorial](develop-wknd-tutorial.md) verwendet diese Strategie zur Definition von Stilen beim Website-Design. Die von WKND verwendete CSS-Datei befindet sich unter `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
