@@ -117,7 +117,7 @@ Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media ver
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, können Sie auch eine der Aufgaben unter [Konfigurieren der erweiterten Einstellungen in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) durchführen.
 
-### Fehlerbehebung bei einer neuen Konfiguration für dynamische Medien {#troubleshoot-dm-config}
+### Troubleshooting a new Dynamic Media Configuration {#troubleshoot-dm-config}
 
 Wenn eine neue Konfiguration für dynamische Medien abgeschlossen ist, erhalten Sie eine Statusbenachrichtigung in AEM Posteingang. Diese Benachrichtigung informiert Sie darüber, ob die Konfiguration erfolgreich war oder nicht, wie in den folgenden Bildern aus dem Posteingang dargestellt.
 
@@ -167,7 +167,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie oben rechts auf der Seite &qu
 
    * Geben Sie im Feld **[!UICONTROL Kennwort]** wiederholen das neue Kennwort ein und tippen Sie dann auf **[!UICONTROL Fertig.]**
 
-1. Tippen Sie oben rechts auf der Seite &quot;Konfiguration **[!UICONTROL dynamischer Medien]** bearbeiten&quot;auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK.]**
+1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK.]**
 
 ## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
