@@ -1,5 +1,5 @@
 ---
-title: Einführung in AEM Assets as a Cloud Service
+title: Einführung in Assets as a Cloud Service
 description: Neue Funktionen in AEM Assets as a Cloud Service
 contentOwner: AG
 translation-type: tm+mt
