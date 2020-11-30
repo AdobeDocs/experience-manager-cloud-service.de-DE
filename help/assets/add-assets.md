@@ -171,7 +171,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de)
 >* [Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link-Dokumentation](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
 >* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload-technical)
