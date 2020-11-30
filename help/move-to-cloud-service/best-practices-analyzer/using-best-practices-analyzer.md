@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
 workflow-type: tm+mt
 source-wordcount: '2207'
-ht-degree: 48%
+ht-degree: 72%
 
 ---
 
@@ -51,24 +51,24 @@ In diesem Abschnitt erfahren Sie, wie der Bericht Best Practices-Analyzer Ansich
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klicken Sie auf Bericht **erstellen** , um den Best Practices-Analyzer auszuführen.
+1. Click on **Generate Report** to execute the Best Practices Analyzer.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Während die BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm sehen. Es zeigt die Anzahl der analysierten Elemente und die Anzahl der gefundenen Ergebnisse an.
+1. Während die BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm sehen. Dabei wird die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. Sobald der BPA-Bericht erstellt wurde, wird eine Zusammenfassung und die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach der Art der Feststellung und der Wichtigkeitsstufe geordnet sind. Um weitere Details zu einer bestimmten Suche zu erhalten, können Sie auf die Zahl klicken, die der Art der Suche in der Tabelle entspricht.
+1. Sobald der BPA-Bericht erstellt wurde, wird eine Zusammenfassung und die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach der Art der Feststellung und der Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
-   Die oben beschriebene Aktion führt automatisch einen Bildlauf zur Position der Suche im Bericht durch.
+   Mit der oben beschriebenen Aktion wird automatisch ein Bildlauf zur Position des Ergebnisses im Bericht durchgeführt.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. Sie haben die Möglichkeit, den Bericht im CSV-Format herunterzuladen, indem Sie auf **CSV** klicken, wie in der folgenden Abbildung dargestellt.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -109,7 +109,7 @@ Das Format des Berichts lautet:
 Jedem Ergebnis wird eine Wichtigkeitsstufe zugewiesen, um eine ungefähre Priorität für das Handeln anzugeben.
 
 >[!NOTE]
->Weitere Informationen zu den einzelnen Kategorien finden Sie in den Kategorien zum [Musterdetektor](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Weitere Informationen zu den einzelnen Kategorien finden Sie unter [Musterdetektorkategorien](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 
@@ -123,7 +123,7 @@ Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 
 ## Interpretieren des CSV-Berichts &quot;Best Practices Analyzer&quot; {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Abhängig von Ihren Browser-Einstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv` heruntergeladen. 
+When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Abhängig von Ihren Browser-Einstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv` heruntergeladen.
 
 Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
@@ -167,17 +167,17 @@ Im Folgenden ein Beispiel:
 
 Diese Schnittstelle verwendet die folgenden HTTP-Kopfzeilen:
 
-* `Cache-Control: max-age=<seconds>`: Gibt die Dauer der Cache-Frische in Sekunden an. (Siehe [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Cache-Control: max-age=<seconds>`: Gibt die Lebensdauer der Cache-Aktualisierung in Sekunden an. (Siehe [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
 * `Prefer: respond-async`: Gibt an, dass der Server asynchron reagieren soll. (Siehe [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
 * `Prefer: return=minimal`: Gibt an, dass der Server eine minimale Antwort zurückgeben soll. (Siehe [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
 
 Die folgenden HTTP-Abfrageparameter stehen zur Verfügung, wenn HTTP-Kopfzeilen möglicherweise nicht einfach verwendet werden können:
 
-* `max-age` (Nummer, optional): Gibt die Dauer der Cache-Frische in Sekunden an. Diese Zahl muss 0 oder höher sein. Die Standardlebensdauer der Frische beträgt 86400 Sekunden. Ohne diesen Parameter oder den entsprechenden Header wird ein neuer Cache verwendet, um Anforderungen 24 Stunden lang zu bearbeiten. An diesem Punkt muss der Cache neu generiert werden. Die Verwendung `max-age=0` erzwingt die Löschung des Zwischenspeichers und löst eine Regeneration des Berichts aus, wobei die vorherige Frischheitsdauer von 0 (Nicht-Null) für den neu generierten Cache verwendet wird.
-* `respond-async` (boolean, optional): Gibt an, dass die Antwort asynchron bereitgestellt werden soll. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Wenn der Cache aktualisiert ist, hat dieser Parameter keine Auswirkung. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (boolean, optional): Gibt an, dass der Server den Cache bei einer Anforderung aktualisieren kann, wenn der aktuelle Cache leer ist, statisch ist oder bald nicht mehr verfügbar ist. Wenn `may-refresh-cache=true`oder nicht angegeben, kann der Server eine Hintergrundanalyse starten, die den Musterdetektor aufruft und den Cache aktualisiert. Wenn `may-refresh-cache=false` dann der Server keine Aufgabe zur Aktualisierung auslöst, die andernfalls durchgeführt worden wäre, wenn der Cache leer oder statisch ist, ist der Bericht dann leer. Diese Aufgabe wirkt sich nicht auf alle Aktualisierungsvorgänge aus, die bereits ausgeführt werden.
-* `return-minimal` (boolean, optional): Gibt an, dass die Antwort des Servers nur den Status mit der Fortschrittsanzeige und dem Cachestatus im JSON-Format enthalten sollte. Wenn `return-minimal=true`dies der Fall ist, ist der Antwortkörper auf das Statusobjekt beschränkt. Wenn `return-minimal=false`oder nicht angegeben, wird eine vollständige Antwort bereitgestellt.
-* `log-findings` (boolean, optional): Gibt an, dass der Server den Inhalt des Zwischenspeichers beim ersten Erstellen oder Aktualisieren protokollieren soll. Jede Suche aus dem Cache wird als JSON-Zeichenfolge protokolliert. Diese Protokollierung erfolgt nur, wenn `log-findings=true` und die Anforderung einen neuen Cache generiert.
+* `max-age` (Zahl, optional): Gibt die Lebensdauer der Cache-Aktualisierung in Sekunden an. Diese Zahl muss 0 oder höher sein. Die Standardlebensdauer für die Aktualisierung beträgt 86400 Sekunden. Ohne diesen Parameter oder den entsprechenden Header wird ein Aktualisierungs-Cache verwendet, um Anfragen 24 Stunden lang zu verarbeiten, bevor der Bericht neu generiert werden muss. Durch die Verwendung von `max-age=0` wird das Löschen des Caches erzwungen und eine Neuerstellung des Berichts eingeleitet. Dazu wird die zuvor festgelegte Lebensdauer für die Aktualisierung mit einem Wert, der ungleich null ist, für den neu generierten Cache verwendet.
+* `respond-async` (boolesch, optional): Gibt an, dass die Antwort asynchron bereitgestellt werden soll. Die Verwendung von `respond-async=true`, wenn der Cache veraltet ist, führt dazu, dass der Server die Antwort `202 Accepted` zurückgibt und den Cache verarbeitet, ohne darauf zu warten, dass der Cache aktualisiert und der Bericht generiert wird. Wenn der Cache aktualisiert ist, hat dieser Parameter keine Auswirkung. Der Standardwert lautet `false`. Ohne diesen Parameter oder den entsprechenden Header reagiert der Server synchron. Dies kann viel Zeit und eine Anpassung der maximalen Antwortzeit für den HTTP-Client erfordern.
+* `may-refresh-cache` (boolesch, optional): Gibt an, dass der Server den Cache bei einer Anfrage aktualisieren kann, wenn der aktuelle Cache leer oder veraltet ist bzw. in Kürze veraltet sein wird. Wenn `may-refresh-cache=true` oder wenn dieser Wert nicht angegeben wird, dann kann der Server eine Hintergrundaufgabe initiieren, die den Musterdetektor aufruft und den Cache aktualisiert. Wenn `may-refresh-cache=false`, dann initiiert der Server keine Aktualisierungsaufgabe, die andernfalls ausgeführt worden wäre, wenn der Cache leer oder veraltet ist. In diesem Fall ist der Bericht leer. Auf eine Aktualisierungsaufgabe, die bereits in Bearbeitung ist, hat dieser Parameter keine Auswirkung.
+* `return-minimal` (boolesch, optional): Gibt an, dass die Antwort des Servers nur den Status mit der Fortschrittsanzeige und dem Cache-Status im JSON-Format enthalten sollte. Wenn `return-minimal=true`, dann ist der Antworttext auf das Statusobjekt beschränkt. Wenn `return-minimal=false` oder der Wert nicht angegeben ist, wird eine vollständige Antwort bereitgestellt.
+* `log-findings` (boolesch, optional): Gibt an, dass der Server den Inhalt des Caches beim ersten Erstellen oder Aktualisieren protokollieren soll. Jedes Ergebnis aus dem Cache wird als JSON-Zeichenfolge protokolliert. Diese Protokollierung erfolgt nur, wenn `log-findings=true` und die Anfrage einen neuen Cache generiert.
 
 Wenn sowohl eine HTTP-Kopfzeile als auch ein entsprechender Abfrageparameter vorhanden sind, hat der Abfrageparameter Vorrang.
 
@@ -190,10 +190,10 @@ Nachdem eine Anfrage gestellt wurde, muss der Client nicht aktiv bleiben, damit 
 
 Die folgenden Antwortwerte sind möglich:
 
-* `200 OK`: Gibt an, dass die Antwort Ergebnisse des Musterdetektors enthält, die während der Frische des Zwischenspeichers generiert wurden.
-* `202 Accepted`: Wird verwendet, um anzugeben, dass der Cache veraltet ist. Wenn `respond-async=true` und `may-refresh-cache=true` diese Antwort darauf hinweist, dass eine Aufgabe zur Aktualisierung ausgeführt wird. Wenn `may-refresh-cache=false` diese Antwort darauf hinweist, dass der Cache veraltet ist.
+* `200 OK`: Gibt an, dass die Antwort Ergebnisse des Musterdetektors enthält, die während der Lebensdauer für die Aktualisierung des Caches generiert wurden.
+* `202 Accepted`: Wird verwendet, um anzugeben, dass der Cache veraltet ist. Wenn `respond-async=true` und `may-refresh-cache=true`, dann weist diese Antwort darauf hin, dass eine Aktualisierungsaufgabe ausgeführt wird. Wenn `may-refresh-cache=false`, gibt diese Antwort einfach an, dass der Cache veraltet ist.
 * `400 Bad Request`: Gibt an, dass bei der Anfrage ein Fehler aufgetreten ist. Eine Meldung im Format für Problemdetails (siehe [RFC 7807](https://tools.ietf.org/html/rfc7807)) enthält weitere Details.
-* `401 Unauthorized`: Gibt an, dass die Anforderung nicht autorisiert wurde.
+* `401 Unauthorized`: Gibt an, dass die Anfrage nicht genehmigt wurde.
 * `500 Internal Server Error`: Gibt an, dass ein interner Server-Fehler aufgetreten ist. Eine Meldung im Format für Problemdetails enthält weitere Details.
 * `503 Service Unavailable`: Zeigt an, dass der Server mit einer anderen Antwort beschäftigt ist und diese Anfrage nicht rechtzeitig bearbeiten kann. Dies tritt aller Wahrscheinlichkeit nach nur dann auf, wenn synchrone Anfragen gestellt werden. Eine Meldung im Format für Problemdetails enthält weitere Details.
 
@@ -212,8 +212,8 @@ Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administr
 
 BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Dieses Konto ist auf AEM 6.2 und höher verfügbar. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
-1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Dienstbenutzers](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
+1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
 
-2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
+2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
 
-3. Installieren Sie das BPA-Paket über Package Manager auf Ihrer AEM. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-Systemdienstbenutzer hinzugefügt.)
+3. Installieren Sie das BPA-Paket über Package Manager auf Ihrer AEM. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-System-Service-Benutzer hinzugefügt.)
