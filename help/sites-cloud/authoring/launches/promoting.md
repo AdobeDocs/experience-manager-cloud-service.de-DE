@@ -39,6 +39,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 >
 >* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch), wenn die Struktur mehrere Launches enthält.
 >* [Der Ablauf eines Launches](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
+
 >
 
 
@@ -62,6 +63,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
       * **Geänderte Seiten bewerben**
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
+
       Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
       ![Launch-Weiterleitung](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -103,6 +105,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
       * **Geänderte Seiten bewerben**
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
+
    ![Einstellungen zum Weiterleiten von Launches](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Wählen Sie **Weiter** aus.
