@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
-Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da Adobe Experience Manager as a Cloud Service ein Cloud-natives Bereitstellungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
+Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da Adobe Experience Manager as a Cloud Service ein Cloud-natives Implementierungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von AEM-Funktionen gelten die folgenden Regeln:
 
@@ -25,7 +25,7 @@ Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um i
 
 In diesem Abschnitt werden Funktionen aufgeführt, die in Adobe Experience Manager as a Cloud Service als veraltet gekennzeichnet wurden. In der Regel werden Funktionen, die in einer künftigen Version entfernt werden sollen, zuerst als veraltet gekennzeichnet, wobei eine Alternative bereitgestellt wird.
 
-Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
+Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Implementierung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
@@ -44,4 +44,4 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus Adobe Experience Mana
 | Dynamic Media | Frühere Integrationen mit [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/scene7.html) und dem [Dynamic Media-Hybridmodus](https://helpx.adobe.com/de/experience-manager/6-5/assets/using/config-dynamic.html) sind nicht in AEM as a Cloud Service verfügbar. | Verwenden Sie die mit Adobe Experience Manager as a Cloud Service bereitgestellte [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)-Funktion. |
 | Sites | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit AEM 6.4 als veraltet und wurden nun aus AEM entfernt. |
 | Sites | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des AEM-Repositorys nicht zur Laufzeit zugegriffen werden kann. |
-| Assets | [AEM Assets-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) ist nicht verfügbar. | Verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) zur Integration mit Creative Cloud. |
+| Assets | [AEM Assets-Freigabe für Experience Cloud Assets Core Service und Creative Cloud-Services](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/integration/configure-assets-cc-integration.html) ist nicht verfügbar. | Verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) zur Integration mit Creative Cloud. |
