@@ -1,24 +1,24 @@
 ---
-title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
-description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript-SPA-SDK für AEM erfolgt.
+title: Zuordnung dynamischer Modelle zu Komponenten für SPA
+description: In diesem Artikel wird beschrieben, wie das dynamische Modell zur Komponentenzuordnung im JavaScript SPA SDK für AEM erfolgt.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 21%
 
 ---
 
 
-# Zuordnung dynamischer Modelle zu Komponenten für SPAs {#dynamic-model-to-component-mapping-for-spas}
+# Zuordnung dynamischer Modelle zu Komponenten für SPA {#dynamic-model-to-component-mapping-for-spas}
 
 In diesem Dokument wird beschrieben, wie das dynamische Modell zur Komponentenzuordnung im JavaScript-SPA-SDK für AEM ausgeführt wird.
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
-The `ComponentMapping` module is provided as an NPM package to the front-end project. Es speichert Front-End-Komponenten und bietet der Einzelseitenanwendung die Möglichkeit, Frontend-Komponenten AEM Ressourcentypen zuzuordnen. Dies ermöglicht eine dynamische Auflösung von Komponenten beim Parsen des JSON-Modells der Anwendung.
+Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Front-End-Komponenten und bietet der Einzelseitenanwendung die Möglichkeit, Frontend-Komponenten AEM Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells der Anwendung eine dynamische Auflösung von Komponenten.
 
-Alle im Modell vorhandenen Elemente enthalten ein `:type` Feld, das einen AEM Ressourcentyp verfügbar macht. Bei der Bereitstellung kann sich die Front-End-Komponente mit dem Fragment des Modells wiedergeben, das sie von den zugrunde liegenden Bibliotheken erhalten hat.
+Alle im Modell vorhandenen Elemente enthalten ein `:type`-Feld, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
 
 Weitere Informationen zur Modellanalyse und zum Zugriff auf die Front-End-Komponenten finden Sie im Dokument [SPA Blueprint](blueprint.md) .
 
@@ -26,7 +26,7 @@ Weitere Informationen finden Sie im npm-Paket: [@adobe/aem-spa-component-mapping
 
 ## Modellgesteuerte Einzelseitenanwendung {#model-driven-single-page-application}
 
-Einzelseitenanwendungen, die das JavaScript-SPA-SDK für AEM nutzen, werden modellgesteuert:
+Einzelseitenanwendungen, die das JavaScript SPA SDK für AEM nutzen, werden modellgesteuert:
 
 1. Front-End-Komponenten registrieren sich im [Component Mapping Store](#componentmapping-module).
 1. Anschließend durchläuft der [Container](blueprint.md#container), sobald ihm ein Modell vom [Modellanbieter](blueprint.md#the-model-provider)zur Verfügung gestellt wurde, seinen Modellinhalt (`:items`).
