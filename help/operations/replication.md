@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Replikation {#replication}
 
-Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um den Inhalt zu verschieben, um ihn in einen Pipelineservice zu replizieren, der auf einer Adobe-I/O ausgeführt wird, die sich außerhalb der AEM Laufzeitumgebung befindet.
+Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um die Inhalte zu verschieben, um sie in einen Pipeline-Dienst zu replizieren, der auf Adobe I/O ausgeführt wird, das sich außerhalb der AEM Laufzeit befindet.
 
 >[!NOTE]
 >
@@ -34,25 +34,25 @@ Um die automatische Replizierung dafür zu realisieren, müssen Sie die **automa
 
 ### Aktivieren eines Baumes {#tree-activation}
 
-To perform a tree activation:
+So führen Sie eine Baumstruktur-Aktivierung durch:
 
-1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-3. Once in the forwardPublisher Web console UI, **select Distribute**
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
+2. Wählen Sie die Karte **forwardPublisher aus**
+3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die **Option &quot;Verteilen&quot;.**
 
-   ![Distribute](assets/distribute.png "Distribute")
-4. Select the path in the path browser, choose to add a node, tree or delete as required and select **Submit**
+   ![](assets/distribute.png "DistributeDistribute")
+4. Wählen Sie den Pfad im Pfadbrowser aus, fügen Sie einen Knoten, eine Struktur oder löschen Sie ihn nach Bedarf und wählen Sie **Senden**
 
 ## Fehlerbehebung {#troubleshooting}
 
-To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
+Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM Author-Dienstes:
 
-1. From the AEM Start Menu navigate to **Tools > Deployment > Distribution**
-2. Select the card **forwardPublisher**
-   ![Status](assets/status.png "Status")
-3. Check the queue status which should be green
-4. You can test the connection to the replication service
-5. Select the **Logs** tab which shows the history of content publications
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
+2. Wählen Sie die Karte **forwardPublisher aus**
+   ![](assets/status.png "StatusStatus")
+3. Überprüfen des Warteschlangenstatus, der grün sein sollte
+4. Sie können die Verbindung zum Replizierungsdienst testen
+5. Wählen Sie die Registerkarte &quot; **Protokolle** &quot;aus, auf der der Verlauf der Veröffentlichungen angezeigt wird
 
 ![](assets/logs.png "LogsLogs")
 
