@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -39,7 +39,7 @@ Smart-Tags sind nur für [!DNL Adobe Experience Manager Assets]-Kunden relevant.
 
 >[!IMPORTANT]
 >
->Die neuen [!DNL Experience Manager Assets] Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei älteren Bereitstellungen können Administratoren die Integration [von Smarttags manuell](/help/assets/smart-tags-configuration.md#aio-integration)konfigurieren.
+>Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig mit [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei älteren Bereitstellungen können Administratoren die Integration [von Smarttags manuell](/help/assets/smart-tags-configuration.md#aio-integration)konfigurieren.
 
 You can integrate [!DNL Adobe Experience Manager] with the Smart Tags using [!DNL Adobe Developer Console]. Verwenden Sie diese Konfiguration, um über [!DNL Experience Manager] auf den Smart-Tags-Service zuzugreifen. Informationen zu den Aufgaben zum Konfigurieren von Smart-Tags finden Sie unter [Konfigurieren von Experience Manager für das Smart-Tagging von Assets](smart-tags-configuration.md). Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Smart-Tags-Service weitergeleitet wird.
 
