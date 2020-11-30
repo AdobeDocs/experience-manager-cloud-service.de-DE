@@ -40,7 +40,7 @@ Siehe „Ändern von Live Copy-Inhalt“. <!--See [Changing Live Copy Content](/
 Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Referenzen** anzeigen und die Launch- mit der Quellseite vergleichen:
 
 1. Navigieren Sie in der **Sites-Konsole** [zur Quellseite Ihres Launches und wählen Sie sie aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie das Fenster **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**und wählen Sie **Launches**aus.
+1. Öffnen Sie das Fenster **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie **Launches** aus.
 1. Wählen Sie dann Ihren spezifischen Launch und **Mit Quelle vergleichen** aus:
 
    ![Vergleichen von Launch und Quelle](/help/sites-cloud/authoring/assets/launches-compare.png)
