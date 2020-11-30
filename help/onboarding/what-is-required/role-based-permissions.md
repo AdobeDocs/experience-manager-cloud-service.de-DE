@@ -20,7 +20,7 @@ Jede der Rollen verfügt über spezifische Berechtigungen, vorkonfigurierte Aufg
 
 | Berechtigung | Beschreibung | Business Owner | Bereitstellungsmanager | Programmmanager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
-| Programm hinzufügen | Hinzufügen ein neues Programm. | x |  |  |  |
+| Programm hinzufügen | hinzufügen ein neues Programm. | x |  |  |  |
 | Umgebung erstellen | Erstellen Sie Prod+Stage-, Dev- und Playground-Umgebung. | x | x |  |  |
 | Umgebung aktualisieren | Aktualisieren Sie die Umgebung Prod+Stage, Dev und Playground. | x | x |  |  |
 | Umgebung löschen | Löschen Sie Umgebung ohne Prod, Dev und Playground. | x | x |  |  |
@@ -35,7 +35,7 @@ Jede der Rollen verfügt über spezifische Berechtigungen, vorkonfigurierte Aufg
 | Pipeline-Ausführung | Produktionskanal fortsetzen. |  |  |  |  |
 | Pipeline löschen | Ermöglicht das Löschen einer Pipeline. |  | x |  |  |
 | Ausführung abbrechen | Aktuelle Ausführung abbrechen. |  | x |  |  |
-| Umgebung verwalten  | Hinzufügen Sie das Segment Publish-Dispatcher im Bildschirm &quot;Umgebung verwalten&quot;. | x | x |  |  |  |
+| Umgebung verwalten  | hinzufügen Sie das Segment Publish-Dispatcher im Bildschirm &quot;Umgebung verwalten&quot;. | x | x |  |  |  |
 | Push-Aktualisierung | Push-Update-Pipeline des Beginns |  |  |  |  |
 | Persönliches Zugriffs-Token erstellen | Zugriff auf Git. |  | x |  | x |
 
