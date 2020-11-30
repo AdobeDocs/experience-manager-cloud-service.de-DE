@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# Stil AEM CIF-Kernkomponenten {#style-aem-cif-core-components}
+# Style AEM CIF Core Components {#style-aem-cif-core-components}
 
 Das [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Codebasis für die Verwendung der [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial werden Sie das Venia-Referenzprojekt untersuchen und verstehen, wie CSS und JavaScript von AEM CIF-Kernkomponenten organisiert werden. Außerdem erstellen Sie mithilfe von CSS einen neuen Stil, um den Standardstil der Komponente **Product Teaser** zu aktualisieren.
 
@@ -72,7 +72,7 @@ Die CSS und JavaScript, die für die Wiedergabe des Themas/der Stile des Stores 
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Clientbibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Die Kenntnis, wie Client-Bibliotheken strukturiert und auf der Seite eingeschlossen sind, ist von entscheidender Bedeutung.
 
-Das [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) ist ein dediziertes [Webpack](https://webpack.js.org/) Projekt, um alle Front-End-Assets für ein Projekt zu verwalten. Dadurch können Front-End-Entwickler eine beliebige Anzahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr verwenden.
+Das [ui.frontend](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/uifrontend.html) ist ein dediziertes [Webpack](https://webpack.js.org/) Projekt, um alle Front-End-Assets für ein Projekt zu verwalten. Dadurch können Front-End-Entwickler eine beliebige Anzahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr verwenden.
 
 Das `ui.frontend` Modul ist auch ein Maven-Modul und mit dem größeren Projekt durch den Einsatz eines NPM-Moduls, dem [aem-clientlib-Generator](https://github.com/wcm-io-frontend/aem-clientlib-generator), integriert. Während eines Builds `aem-clientlib-generator` kopiert die kompilierte CSS- und JavaScript-Datei in eine Client-Bibliothek im `ui.apps` Modul.
 
@@ -481,8 +481,8 @@ Verwenden Sie das [AEM-Stilsystem](https://docs.adobe.com/content/help/de-DE/exp
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-* [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+* [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 * [Einrichten einer Umgebung zur lokalen AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-seitige Bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
-* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Entwickeln mit dem Stilsystem](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
