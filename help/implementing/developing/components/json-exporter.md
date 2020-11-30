@@ -70,7 +70,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
 Siehe auch:
 
-* Assets-HTTP-API  
+* Assets-HTTP-API
    * [Assets-HTTP-API](/help/assets/developer-reference-material-apis.md)
 * Sling-Modelle:
    * [Sling-Modelle – Zuweisung von Modellklassen und Ressourcentypen seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
