@@ -1,16 +1,16 @@
 ---
-title: Versionshinweise für die Version 2020.9.0 [!DNL Adobe Experience Manager] von als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als Cloud Service-Versionshinweise für 2020.9.0.'
+title: Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0.
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.9.0.
 translation-type: tm+mt
 source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
@@ -20,13 +20,13 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
 * Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
 * Wasserzeichen-Bilddateien werden für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden und verwendet eine PNG-Datei als Wasserzeichen. Siehe [Wasserzeichen für Ihre Assets](/help/assets/watermark-assets.md).
 
@@ -65,7 +65,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * Bei den Commerce Cloud-Konfigurationen wurde die Vererbung nicht berücksichtigt. Dieser Fehler wurde behoben, um sicherzustellen, dass die Konfiguration Werte erbt.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
@@ -107,7 +107,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Die CTT-Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
 
-* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* einfach abzurufen.
+* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* schnell abzurufen.
 
 * Beschreibende Überprüfungsmeldung hinzugefügt für *URL* und *Migrationssatzname*.
 
