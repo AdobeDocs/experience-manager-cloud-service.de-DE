@@ -1,5 +1,5 @@
 ---
-title: Verwenden von CRXDE Lite
+title: 'Verwenden von CRXDE Lite '
 description: CRXDE Lite ist Teil des AEM Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungs-Umgebung im Browser zuzugreifen und es zu ändern.
 translation-type: tm+mt
 source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
@@ -10,7 +10,7 @@ ht-degree: 21%
 ---
 
 
-# Verwenden von CRXDE Lite {#using-crxde-lite}
+# Verwenden von CRXDE Lite  {#using-crxde-lite}
 
 CRXDE Lite ist Teil des AEM Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungs-Umgebung im Browser zuzugreifen und es zu ändern. Mit der CRXDE Lite können Sie Dateien, Ordner, Knoten und Eigenschaften bearbeiten. Das gesamte Repository steht Ihnen in dieser benutzerfreundlichen Oberfläche zur Verfügung.
 
