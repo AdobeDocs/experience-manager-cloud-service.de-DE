@@ -1,9 +1,9 @@
 ---
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 100%
 
