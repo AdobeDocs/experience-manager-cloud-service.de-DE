@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service-SDK
-description: Überblick über die AEM als Cloud Service Software Development Kit
+description: Überblick über das AEM as a Cloud Service Software Development Kit
 translation-type: tm+mt
 source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Das AEM as a Cloud Service-SDK besteht aus den folgenden Artefakten:
 * **Javadoc-JAR**: die Javadocs für das Java-API-JAR.
 * **Dispatcher Tools**: der Satz von Tools, die der lokalen Entwicklung mit Dispatcher dienen. Separate Artefakte für Unix und Windows.
 
-Darüber hinaus werden manche Kunden, die zuvor AEM 6.5 oder frühere Versionen bereitgestellt haben, die unten stehenden Artefakte verwenden. Wenn eine lokale Kompilierung mit dem Schnellstart-JAR nicht funktioniert und Sie vermuten, dass dies mit Schnittstellen zusammenhängt, die aus als Cloud Service bereitgestelltem AEM entfernt wurden, wenden Sie sich an den Kunden-Support, um herauszufinden, ob Sie Zugriff benötigen. Das macht Änderungen im Backend erforderlich.
+Darüber hinaus werden manche Kunden, die zuvor AEM 6.5 oder frühere Versionen bereitgestellt haben, die unten stehenden Artefakte verwenden. Wenn eine lokale Kompilierung mit dem Schnellstart-JAR nicht funktioniert und Sie vermuten, dass dies mit Schnittstellen zusammenhängt, die aus as a Cloud Service bereitgestelltem AEM entfernt wurden, wenden Sie sich an den Kunden-Support, um herauszufinden, ob Sie Zugriff benötigen. Das macht Änderungen im Backend erforderlich.
 
 * **6.5 Veraltetes Java-API-JAR**: ein zusätzlicher Satz von Schnittstellen, die seit AEM 6.5 entfernt wurden.
 * **6.5 Veraltetes Javadoc-JAR**: die Javadocs für den zusätzlichen Satz an Schnittstellen.
@@ -38,7 +38,7 @@ Die gleichen Schritte werden von Cloud Manager bei der Bereitstellung in Cloud-U
 ## Zugriff auf das AEM as a Cloud Service-SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Sie können das Symbol **Über Adobe Experience Manager** der AEM Admin Console prüfen, um die Version von AEM zu ermitteln, die Sie in der Produktionsumgebung ausführen.
-* Das Schnellstart-JAR und die Dispatcher Tools können als ZIP-Datei aus dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)heruntergeladen werden. Beachten Sie, dass der Zugriff auf die SDK-Listen auf diejenigen mit AEM Managed Services- oder AEM as a Cloud Service-Umgebungen beschränkt ist.
+* Das Schnellstart-JAR und die Dispatcher Tools können als ZIP-Datei aus dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) heruntergeladen werden. Beachten Sie, dass der Zugriff auf die SDK-Listen auf diejenigen mit AEM Managed Services- oder AEM as a Cloud Service-Umgebungen beschränkt ist.
 * Die Java-API-JAR- und Javadoc-JAR-Pakete können über Maven-Tooling heruntergeladen werden, entweder mit der Befehlszeile oder mit Ihrer bevorzugten IDE.
 * Die Maven-Projekt-POMs sollten auf das folgende API-JAR-Paket verweisen. Auf diese Abhängigkeit muss auch in allen Teilpaket-POMs verwiesen werden.
 
@@ -86,11 +86,11 @@ Sie sollten das SDK häufig aktualisieren (z. B. alle zwei Wochen) und täglich 
 
 Wenn Sie CryptoSupport verwenden ([entweder durch Konfiguration der Anmeldeinformationen von Cloud Services oder des SMTP-Mail-Diensts in AEM bzw. durch Verwendung der CryptoSupport-API in Ihrer Anwendung](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), werden die verschlüsselten Eigenschaften durch einen Schlüssel verschlüsselt, der beim ersten Start einer AEM-Umgebung automatisch generiert wird. Während die Cloud-Implementierung dafür sorgt, dass der umgebungsspezifische CryptoKey automatisch wiederverwendet wird, muss der CryptoKey in die lokale Entwicklungsumgebung injiziert werden.
 
-Standardmäßig ist AEM so konfiguriert, dass die Schlüsseldaten im Datenordner eines Ordners gespeichert werden. Aus Gründen einer einfacheren Wiederverwendung in der Entwicklung kann der AEM-Prozess beim ersten Start mit &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot; initialisiert werden. Dadurch werden bei &quot;`/etc/key`&quot; die Verschlüsselungsdaten generiert.
+Standardmäßig ist AEM so konfiguriert, dass die Schlüsseldaten im Datenordner eines Ordners gespeichert werden. Aus Gründen einer einfacheren Wiederverwendung in der Entwicklung kann der AEM-Prozess beim ersten Start mit „`-Dcom.adobe.granite.crypto.file.disable=true`“ initialisiert werden. Dadurch werden bei „`/etc/key`“ die Verschlüsselungsdaten generiert.
 
 Damit Sie Inhaltspakete, die die verschlüsselten Werte enthalten, wiederverwenden können, müssen Sie die folgenden Schritte ausführen:
 
-* Wenn Sie die lokale Datei „quickstart.jar“ erstmals starten, müssen Sie den folgenden Parameter hinzufügen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Es ist optional, wird jedoch empfohlen, den Parameter immer hinzuzufügen.
-* Erstellen Sie beim ersten Starten einer Instanz ein Paket, das einen Filter für den Stammordner &quot;`/etc/key`&quot; enthält. Es wird das Geheimnis enthalten, das in allen Umgebungen wiederverwendet wird, in denen sie wiederverwendet werden sollen.
+* Wenn Sie die lokale Datei „quickstart.jar“ erstmals starten, müssen Sie den folgenden Parameter hinzufügen: „`-Dcom.adobe.granite.crypto.file.disable=true`“. Es ist optional, wird jedoch empfohlen, den Parameter immer hinzuzufügen.
+* Erstellen Sie beim ersten Starten einer Instanz ein Paket, das einen Filter für den Stammordner „`/etc/key`“ enthält. Es wird das Geheimnis enthalten, das in allen Umgebungen wiederverwendet wird, in denen sie wiederverwendet werden sollen.
 * Exportieren Sie alle veränderlichen Inhalte, die Geheimnisse enthalten, oder suchen Sie die verschlüsselten Werte über `/crx/de`, um sie dem Paket hinzuzufügen, das über verschiedene Installationen hinweg wiederverwendet werden soll.
 * Installieren Sie jedes Mal, wenn Sie eine neue Instanz starten (entweder um sie durch eine neue Version zu ersetzen oder weil mehrere Entwicklungsumgebungen die gleichen Anmeldeinformationen zum Testen verwenden sollten), das in den Schritten 2 und 3 erstellte Paket, um den Inhalt wiederverwenden zu können, ohne eine manuelle Neukonfiguration vorzunehmen müssen. Das liegt daran, dass der CryptoKey jetzt synchronisiert ist.
