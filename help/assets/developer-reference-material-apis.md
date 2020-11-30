@@ -1,12 +1,12 @@
 ---
 title: Entwicklerverweise für [!DNL Assets]
-description: '[!DNL Assets] APIs und Entwicklerverweisinhalte ermöglichen die Verwaltung von Assets, einschließlich Binärdateien, Metadaten, Darstellungen, Kommentaren und [!DNL Content Fragments]Kommentaren.'
+description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 50%
+source-wordcount: '1218'
+ht-degree: 51%
 
 ---
 
@@ -28,7 +28,7 @@ Der Artikel enthält Referenzmaterial und Ressourcen für Entwickler von [!DNL A
 Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-Uploads. Die Unterschiede gegenüber [!DNL Experience Manager] 6.5 sind:
 
 * Binaries do not go through [!DNL Experience Manager], which is now simply coordinating the upload process with the binary cloud storage configured for the deployment.
-* Die Binary Cloud-Datenspeicherung funktioniert mit einem Content Versand Network (CDN) oder Edge-Netzwerk. Ein CDN wählt einen Upload-Endpunkt aus, der für einen Client näher liegt. Wenn Daten kürzer zu einem nahe gelegenen Endpunkt transportiert werden, verbessern sich die Upload-Leistung und die Benutzerfreundlichkeit, insbesondere für geografisch verteilte Teams.
+* Die Binary Cloud-Datenspeicherung funktioniert mit einem Content Versand Network (CDN) oder Edge-Netzwerk. Ein CDN wählt einen Upload-Endpunkt aus, der für einen Client näher liegt. Wenn Daten einen kürzeren Abstand zu einem nahe gelegenen Endpunkt zurücklegen, verbessern sich die Upload-Leistung und die Benutzerfreundlichkeit, insbesondere für geografisch verteilte Teams.
 
 >[!NOTE]
 >
