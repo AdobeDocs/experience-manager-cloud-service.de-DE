@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt 
 
 ## Terminologie {#terminology}
 
-Während Sie mit Adobe Experience Manager (AEM) als Cloud Service arbeiten, können Sie auf unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung stoßen.
+Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie auf unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung stoßen.
 
 * **Veröffentlichen/Veröffentlichung rückgängig machen**
    * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
@@ -36,7 +36,7 @@ Während Sie mit Adobe Experience Manager (AEM) als Cloud Service arbeiten, kön
 
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
-* [Im Seiten-Editor](#publishing-from-the-editor)
+* [Im Seiteneditor](#publishing-from-the-editor)
 * [In der Sites-Konsole](#publishing-from-the-console)
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 
 >[!NOTE]
 >
-> For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Weitere Möglichkeiten finden Sie unter **Einschaltzeit** und **Ausschaltzeit** auf der [Registerkarte „Allgemein“ der Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
 ### Veröffentlichungen im Editor {#publishing-from-the-editor}
 
@@ -74,7 +74,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiten-Editor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
 
    ![Statusinfo-Banner veröffentlichen](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -93,11 +93,11 @@ In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 * [Quick Publish](#quick-publish)
 * [Veröffentlichung verwalten](#manage-publication)
 
-#### Quick Publish     {#quick-publish}
+#### Quick Publish  {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
-So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen“:
+So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 1. Wählen Sie die gewünschten Seiten in der Sites-Konsole aus und klicken Sie auf die Schaltfläche **Quick Publish**.
 
@@ -111,9 +111,9 @@ So veröffentlichen Sie eine Seite mit der Funktion „Schnell veröffentlichen�
 
 >[!NOTE]
 >
->Die Option „Schnell veröffentlichen“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten     {#manage-publication}
+#### Veröffentlichung verwalten  {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -144,7 +144,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    Durch Klicken auf die Schaltfläche „Inhalt hinzufügen“ wird der [Pfad-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) gestartet, mit dem Inhalte ausgewählt werden können.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   Wählen Sie die gewünschten Seiten aus und klicken Sie dann auf **Auswählen**, um den Inhalt dem Assistenten hinzuzufügen, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
    Im Assistenten können Sie dann ein Element in der Liste auswählen, um es weiter zu konfigurieren:
 
@@ -209,14 +209,14 @@ Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der
 
 [Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten rückgängig machen:
 
-* [Im Seiten-Editor](#unpublishing-from-the-editor)
+* [Im Seiteneditor](#unpublishing-from-the-editor)
 * [In der Sites-Konsole](#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor     {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor  {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole     {#unpublishing-from-the-console}
+### Rückgängigmachen der Veröffentlichung in der Konsole  {#unpublishing-from-the-console}
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
 
@@ -270,9 +270,9 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
    Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) angezeigt.
 
-* in der [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* in der [Zeitleistensegment](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Veröffentlichungsstatus in der Timeline-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+   ![Veröffentlichungsstatus in der Zeitleistensegment-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) beim Bearbeiten einer Seite
 
