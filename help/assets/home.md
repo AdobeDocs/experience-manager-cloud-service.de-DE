@@ -1,16 +1,16 @@
 ---
-title: Assets als Cloud-Service-Anleitung
+title: Anleitung zu Assets as a Cloud Service
 description: Adobe Experience Manager Assets as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 76%
+ht-degree: 80%
 
 ---
 
 
-# Assets als Cloud-Service-Anleitung {#aem-assets-guide}
+# Anleitung zu Assets as a Cloud Service {#aem-assets-guide}
 
 Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Assets as a Cloud Service.
 
@@ -36,7 +36,7 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Asset
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Anpassen, Entwickeln und Bereitstellen von Experience Manager as a Cloud Service. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
-| [Commerce-Benutzerhandbuch](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework auf AEM als Cloud Service. |
+| [Commerce-Benutzerhandbuch](/help/commerce-cloud/home.md) | Erfahren Sie mehr über das Commerce Integration Framework in AEM as a Cloud Service. |
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
