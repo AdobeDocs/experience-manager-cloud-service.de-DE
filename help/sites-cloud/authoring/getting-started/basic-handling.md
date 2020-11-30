@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,12 +52,12 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](#navigation-panel)**– dargestellt durch einen Kompass    und das Standardfenster bei der Anmeldung in AEM
-* **[Tools](#tools-panel)**– dargestellt durch einen Hammer
+* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass      und das Standardfenster bei der Anmeldung in AEM
+* **[Tools](#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster   {#navigation-panel}
+### Navigationsfenster     {#navigation-panel}
 
 Das Navigationsfenster:
 
@@ -155,11 +155,11 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
    >
    >Die Option **Ansichtseinstellungen** steht nur im Modus **Listenansicht** zur Verfügung.
 
-* Tastaturnavigation
+* Navigation über die Tastatur
 
-   Sie können auf einer Website nur mit der Tastatur navigieren. Dies verwendet die standardmäßige Browserfunktionalität des **TAB** -Schlüssels (oder **OPT+TAB**), um Sie zwischen fokussierbaren Elementen auf der Seite zu bewegen.
+   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen fokussierbaren Elementen auf der Seite zu wechseln.
 
-   In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie durch die Kopfzeilenoptionen navigieren, und beschleunigt die Navigation, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt führen.
+   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und direkt zum Hauptinhalt wechseln.
 
    ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -179,15 +179,15 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
    ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-* **Seiteneditor**
+* **Seiten-Editor**
 
-   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiteneditor durch eine Reihe von Folien vorgestellt.
+   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
 
    ![Editor-Tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
    Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](#product-navigation) beim erstmaligen Öffnen einer Konsole.
 
-   Im Menü [**Seiteninformationen **können Sie die Option** Hilfe **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)auswählen, um diese Folien jederzeit erneut anzuzeigen.
+   Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
 
 * **Tools-Konsole**
 
@@ -227,7 +227,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen   {#quick-actions}
+## Schnellaktionen     {#quick-actions}
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -249,7 +249,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >
 >Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen   {#selecting-resources}
+### Auswählen von Ressourcen     {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
