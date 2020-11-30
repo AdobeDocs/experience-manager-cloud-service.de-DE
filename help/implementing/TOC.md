@@ -4,10 +4,10 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 77%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 77%
    + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Benutzerspezifische Regeln für Codequalität](cloud-manager/custom-code-quality-rules.md)
+      + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
-      + [Test der Erlebnis-Prüfung](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
    + [Zugreifen auf und Verwalten von Protokollen](cloud-manager/manage-logs.md)
    + [Wissenswertes zu Benachrichtigungen](cloud-manager/notifications.md)
 + Verwalten von Code {#managing-code}
@@ -37,22 +37,25 @@ ht-degree: 77%
    + [AEM as a Cloud Service-SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Entwicklungsrichtlinien für AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
-   + [Struktur der AEM Benutzeroberfläche](developing/introduction/ui-structure.md)
+   + [Struktur der AEM-UI](developing/introduction/ui-structure.md)
    + [Sling-Schnellübersicht](developing/introduction/sling-cheatsheet.md)
    + [Verwenden von Sling-Adaptern](developing/introduction/sling-adapters.md)
    + [Verwenden des Sling Resource Mergers in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Überlagerungen in AEM as a Cloud Service](developing/introduction/overlays.md)
-   + [Verwendung clientseitiger Bibliotheken](developing/introduction/clientlibs.md)
+   + [Verwendung Client-seitiger Bibliotheken](developing/introduction/clientlibs.md)
    + [Konfigurationen und der Konfigurationsbrowser](developing/introduction/configurations.md)
    + [Protokollierung](developing/introduction/logging.md)
    + [Seitenvergleich](/help/implementing/developing/introduction/page-diff.md)
    + [Editor-Einschränkungen](/help/implementing/developing/introduction/editor-limitations.md)
    + [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md)
+   + [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md)
+   + [Erstellen von Tags in AEM Anwendungen](/help/implementing/developing/introduction/tagging-applications.md)
+   + [AEM Technische Stiftungen](/help/implementing/developing/introduction/aem-technologies.md)
 + Entwicklertools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
-   + [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
 + Komponenten und Vorlagen {#components-templates}
    + [Komponentenübersicht](developing/components/overview.md)
    + [Vorlagen](developing/components/templates.md)
@@ -60,28 +63,28 @@ ht-degree: 77%
    + [Stilsystem](/help/sites-cloud/authoring/features/style-system.md)
    + [JSON-Exporter für Content Services](developing/components/json-exporter.md)
    + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
-   + [Bild-Editor](developing/components/image-editor.md)
+   + [Bildeditor](developing/components/image-editor.md)
    + [Dekorations-Tags](developing/components/decoration-tag.md)
    + [Verwenden von Bedingungen zum Ausblenden](developing/components/hide-conditions.md)
 + Headless-Experience-Management {#headless}
-   + [Kopflos und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Headless und Hybrid mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
    + Einzelseiten-Webanwendungen {#spa}
-      + [SPA Einführung und exemplarische Vorgehensweise](developing/spa/introduction.md)
-      + [SPA WKND-Tutorial](developing/spa/wknd-tutorial.md)
+      + [Einführung in SPAs und exemplarische Anleitung](developing/spa/introduction.md)
+      + [SPA-WKND-Tutorial](developing/spa/wknd-tutorial.md)
       + [Erste Schritte mit React](developing/spa/getting-started-react.md)
       + [Erste Schritte mit Angular](developing/spa/getting-started-angular.md)
-      + [SPA Tauchgänge](developing/spa/deep-dives.md)
-      + [Entwicklung von SPA für AEM](developing/spa/developing.md)
+      + [Genaue Informationen zu SPAs](developing/spa/deep-dives.md)
+      + [Entwickeln von SPAs für AEM](developing/spa/developing.md)
       + [SPA-Editor – Überblick](developing/spa/editor-overview.md)
       + [SPA-Blueprint](developing/spa/blueprint.md)
-      + [SPA](developing/spa/page-component.md)
-      + [Zuordnung dynamischer Modelle zu Komponenten](developing/spa/model-to-component-mapping.md)
-      + [Model-Routing](developing/spa/routing.md)
-      + [Integration starten](developing/spa/launch-integration.md)
-      + [Serverseitiges Rendering](developing/spa/ssr.md)
-      + [SPA Referenz-Dokumente](developing/spa/reference-materials.md)
-+ Personalisierung   {#personalization}
+      + [SPA-Seitenkomponente](developing/spa/page-component.md)
+      + [Dynamisches Modell für die Komponentenzuordnung](developing/spa/model-to-component-mapping.md)
+      + [Modell-Routing](developing/spa/routing.md)
+      + [Launch-Integration](developing/spa/launch-integration.md)
+      + [Server-seitiges Rendering](developing/spa/ssr.md)
+      + [SPA-Referenzdokumente](developing/spa/reference-materials.md)
++ Personalisierung  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Konfigurieren von ContextHub](developing/personalization/configuring-contexthub.md)
    + [Hinzufügen von ContextHub zu Seiten](developing/personalization/adding-contexthub.md)
@@ -90,7 +93,7 @@ ht-degree: 77%
    + [ContextHub-Diagnosen](developing/personalization/contexthub-diagnostics.md)
    + [Erweitern von ContextHub](developing/personalization/extending-contexthub.md)
    + [ContextHub-API](developing/personalization/contexthub-api.md)
-   + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+   + [Integration mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
    + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
@@ -102,7 +105,7 @@ ht-degree: 77%
    + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Bereitstellen in AEM as a Cloud Service {#deploying}
    + [Bereitstellen in AEM as a Cloud Service](deploying/overview.md)
-   + [AEM](deploying/aem-version-updates.md)
+   + [Aktualisierungen der AEM-Version](deploying/aem-version-updates.md)
    + [Konfigurieren von OSGi für AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Autorenebene {#author-tier}
    + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
