@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
 source-wordcount: '1955'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
 # Versionshinweise für AEM as a Cloud Service 2020.6.0 {#release-notes}
 
-Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager als Cloud Service 2020.6.0 erläutert.
+Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.6.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
