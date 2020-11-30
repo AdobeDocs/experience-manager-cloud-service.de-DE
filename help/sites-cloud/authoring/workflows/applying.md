@@ -1,9 +1,9 @@
 ---
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
