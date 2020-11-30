@@ -34,7 +34,7 @@ AEM 6.5 befolgt die neuesten Best Practices für Paketverwaltung und Projektstru
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
 
 ## Abrufen des Inhaltspaket-Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
@@ -120,8 +120,8 @@ In addition to the following parameters, see the descriptions in the [Common Par
 | Name | Typ | Erforderlich | Standardwert | Beschreibung |
 |---|---|---|---|---|---|
 | `artifact` | `String` | Nein | The value of the `artifactId` property of the Maven project | A string of the form `groupId:artifactId:version[:packaging]` |
-| `artifactId` | `String` | Nein | Keine | Die ID des einzubettenden Artefakts. |
-| `groupId` | `String` | Nein | Keine | The `groupId` of the artifact to install |
+| `artifactId` | `String` | Nein | Kein | Die ID des einzubettenden Artefakts. |
+| `groupId` | `String` | Nein | Kein | The `groupId` of the artifact to install |
 | `install` | `boolean` | Nein | `true` | Bestimmt, ob das Paket beim Hochladen automatisch entpackt werden soll |
 | `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Nein | The value of the `localRepository` system variable | Das lokale Maven-Repository, das nicht mit der Plug-In-Konfiguration konfiguriert werden kann, da die Systemeigenschaft immer verwendet wird |
 | `packageFile` | `java.io.File` | Nein | Das für das Maven-Projekt definierte primäre Artefakt | Der Name der zu installierenden Paketdatei |
@@ -129,8 +129,8 @@ In addition to the following parameters, see the descriptions in the [Common Par
 | `pomRemoteRepositories` | `java.util.List` | Ja | The value of the `remoteArtifactRepositories` property that is defined for the Maven project | Dieser Wert kann nicht mit der Plug-in-Konfiguration konfiguriert werden und muss im Projekt angegeben werden. |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Das Projekt, für das das Plugin konfiguriert ist | Das Maven-Projekt, das implizit ist, weil das Projekt die Plugin-Konfiguration enthält |
 | `repositoryId` (POM), `repoID` (Befehlszeile) | `String` | Nein | `temp` | Die ID des Repositorys, vom dem das Artefakt abgerufen wird |
-| `repositoryUrl` (POM), `repoURL` (Befehlszeile) | `String` | Nein | Keine | Die URL des Repositorys, vom dem das Artefakt abgerufen wird |
-| Version | Zeichenfolge | Nein | Keine | Die Version des zu installierenden Artefakts |
+| `repositoryUrl` (POM), `repoURL` (Befehlszeile) | `String` | Nein | Kein | Die URL des Repositorys, vom dem das Artefakt abgerufen wird |
+| Version | Zeichenfolge | Nein | Kein | Die Version des zu installierenden Artefakts |
 
 ### ls {#ls}
 
@@ -166,22 +166,22 @@ In addition to the following parameters, see the description of the `name` param
 
 | Name | Typ | Erforderlich | Standardwert | Beschreibung |
 |---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | Nein | Keine | Die zu verwendende Archivkonfiguration |
+| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | Nein | Kein | Die zu verwendende Archivkonfiguration |
 | `builtContentDirectory` | `java.io.File` | Ja | Der Wert des Ausgabeverzeichnisses des Maven-Builds | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
-| `dependencies` | `java.util.List` | Nein | Keine |  |
-| `embeddedTarget` | `java.lang.String` | Nein | Keine |  |
-| `embeddeds` | `java.util.List` | Nein | Keine |  |
+| `dependencies` | `java.util.List` | Nein | Kein |  |
+| `embeddedTarget` | `java.lang.String` | Nein | Kein |  |
+| `embeddeds` | `java.util.List` | Nein | Kein |  |
 | `failOnMissingEmbed` | `boolean` | Ja | `false` | A value of `true` causes the build to fail when an embedded artifact is not found in the project dependencies. A value of `false` causes the build to ignore such errors. |
-| `filterSource` | `java.io.File` | Nein | Keine | Dieser Parameter definiert eine Datei, die die Quelle des Arbeitsbereichfilters angibt. Die in der Konfiguration angegebenen und über Einbettungen oder Teilpakete eingefügten Filter werden mit dem Dateiinhalt zusammengeführt. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Nein | Keine | Dieser Parameter enthält Filterelemente, die den Paketinhalt definieren. When executed, the filters are included in the `filter.xml` file. See the [Using Filters](#using-filters) section below. |
+| `filterSource` | `java.io.File` | Nein | Kein | Dieser Parameter definiert eine Datei, die die Quelle des Arbeitsbereichfilters angibt. Die in der Konfiguration angegebenen und über Einbettungen oder Teilpakete eingefügten Filter werden mit dem Dateiinhalt zusammengeführt. |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Nein | Kein | Dieser Parameter enthält Filterelemente, die den Paketinhalt definieren. When executed, the filters are included in the `filter.xml` file. See the [Using Filters](#using-filters) section below. |
 | `finalName` | `java.lang.String` | Ja | The `finalName` defined in the Maven project (build phase) | The name of the generated package ZIP file, without the `.zip` file extension |
 | `group` | `java.lang.String` | Ja | The `groupID` defined in the Maven project | Das `groupId` generierte Inhaltspaket, das zum Installationspfad der Zielgruppe für das Inhaltspaket gehört |
 | `outputDirectory` | `java.io.File` | Ja | Das im Maven-Projekt definierte Build-Verzeichnis | Das lokale Verzeichnis, in dem das Inhaltspaket gespeichert ist |
-| `prefix` | `java.lang.String` | Nein | Keine |  |
-| `project` | `org.apache.maven.project.MavenProject` | Ja | Keine | Das Maven-Projekt |
-| `properties` | `java.util.Map` | Nein | Keine | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der `properties.xml` Datei festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht überschreiben: `group` (zu `group` setzende Parameter verwenden), `name` ( `name` festzulegende Parameter verwenden), `version` ( `version` festzulegende Parameter verwenden), `description` (in Projektbeschreibung festlegen), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` `dependencies` `dependencies` `createdBy` `user.name` `created` `requiresRoot` `requiresRoot` `packagePath` des Maven-Projektdeskriptors), (zu setzende Parameter verwenden), (Wert der Eigenschaft des zu verwendenden Systems), (Angabe des richtigen Parameters), automatisch aus dem Gruppen- und Paketnamen generiert.) |
+| `prefix` | `java.lang.String` | Nein | Kein |  |
+| `project` | `org.apache.maven.project.MavenProject` | Ja | Kein | Das Maven-Projekt |
+| `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der `properties.xml` Datei festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht überschreiben: `group` (zu `group` setzende Parameter verwenden), `name` ( `name` festzulegende Parameter verwenden), `version` ( `version` festzulegende Parameter verwenden), `description` (in Projektbeschreibung festlegen), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` `dependencies` `dependencies` `createdBy` `user.name` `created` `requiresRoot` `requiresRoot` `packagePath` des Maven-Projektdeskriptors), (zu setzende Parameter verwenden), (Wert der Eigenschaft des zu verwendenden Systems), (Angabe des richtigen Parameters), automatisch aus dem Gruppen- und Paketnamen generiert.) |
 | `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist Dies wird zur `requiresRoot` Eigenschaft der `properties.xml` Datei. |
-| `subPackages` | `java.util.List` | Nein | Keine |  |
+| `subPackages` | `java.util.List` | Nein | Kein |  |
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Der im Maven-Projekt definierte Ordner (Build-Phase) | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
 
@@ -205,7 +205,7 @@ Im folgenden Filterbeispiel wird die zu verwendende XML-Struktur gezeigt:
 </filter>
 ```
 
-##### Import Mode {#import-mode}
+##### Importmodus {#import-mode}
 
 Das Element `mode` definiert, wie sich das Importieren des Pakets auf den Inhalt im Repository auswirkt. Die folgenden Werte können verwendet werden:
 
@@ -222,7 +222,7 @@ Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` ve
 | Name | Typ | Erforderlich | Standardwert | Beschreibung |
 |---|---|---|---|---|
 | `detail` | `boolean` | Nein | `false` | Bestimmt, ob alle festlegbaren Eigenschaften für jedes Ziel angezeigt werden sollen |
-| `goal` | `String` | Nein | Keine | Diese Parameter definieren den Namen des Ziels, für das die Hilfe angezeigt werden soll. Wenn kein Wert angegeben wird, wird die Hilfe für alle Ziele angezeigt. |
+| `goal` | `String` | Nein | Kein | Diese Parameter definieren den Namen des Ziels, für das die Hilfe angezeigt werden soll. Wenn kein Wert angegeben wird, wird die Hilfe für alle Ziele angezeigt. |
 | `indentSize` | `int` | Nein | `2` | Die Anzahl der Leerzeichen, die für die Einrückung jeder Ebene verwendet werden müssen (muss positiv sein, wenn definiert) |
 | `lineLength` | `int` | Nein | `80` | Die maximale Länge einer Anzeigelinie (muss positiv sein, wenn definiert) |
 
@@ -266,4 +266,4 @@ Das neueste AEM Project Archetype implementiert die Best-Practice-Paketstruktur 
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
