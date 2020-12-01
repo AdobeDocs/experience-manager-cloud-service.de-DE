@@ -2,10 +2,10 @@
 title: Rotationssets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 100%
+source-wordcount: '1835'
+ht-degree: 96%
 
 ---
 
@@ -22,11 +22,19 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 >[!NOTE]
 >
->Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md).
+>Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md) und wenden Sie sie auf einen neuen Ordner an, in den die Asset-Assets hochgeladen werden.
 
 ## Schnellstart: Rotationssets  {#quick-start-spin-sets}
 
 Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit mit Rotationssets zu schaffen:
+
+1. Optional. [Erstellen Sie eine Stapelsatzvorgabe ](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Asset-Ordner an.
+
+   Eine Stapelsatzvorgabe kann Ihnen dabei helfen, die Erstellung Ihres Rotationssets zu automatisieren.
+
+   >[!IMPORTANT]
+   >
+   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
 1. [Laden Sie die Bilder für mehrere Ansichten hoch.](#uploading-assets-for-spin-sets)
 
@@ -37,10 +45,6 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
    Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/dynamic-media/working-with-selectors.md).
-
-   >[!NOTE]
-   >
-   >Sie können Rotationssets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen. **Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
 1. Richten Sie [Rotationsset-Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md) nach Bedarf ein.
 
@@ -86,7 +90,7 @@ Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allge
 * Stellen Sie sicher, dass die Produktdetails gut beleuchtet und fokussiert sind.
 * Denken Sie z. B. an Rotationsbilder für Bekleidung an einer Schaufensterpuppe oder einem Modell. Die Schaufensterpuppe ist häufig entweder komplett maskiert (eine Schaufensterpuppe aus Glas) oder es wird eine stilisierte Schaufensterpuppe im Bild gezeigt. Sie können ein modellbezogenes Rotationsset erstellen, indem Sie die Anzahl der Winkel definieren. Markieren Sie jeden Winkel mit Klebeband auf dem Boden, um dem Modell anzugeben, einen Schritt zu machen und in die Richtung der jeweiligen Aufnahme zu schauen.
 
-## Erstellen von Rotationssets  {#creating-spin-sets}
+## Erstellen von Rotationssets   {#creating-spin-sets}
 
 In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
@@ -143,7 +147,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Rotationsset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Anzeigen von Rotationssets  {#viewing-spin-sets}
+## Anzeigen von Rotationssets   {#viewing-spin-sets}
 
 Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md) erstellen. Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Sie haben drei Möglichkeiten, auf Sets zuzugreifen, die mit Stapelsatzvorgaben erstellt wurden. (Diese Methoden sind auch verfügbar, wenn Sie die Rotationssets in der Benutzeroberfläche erstellt haben.)
 
@@ -202,10 +206,10 @@ Wenn Sie das in AEM als Miniaturansicht verwendete Bild löschen und durch ein a
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie fertig mit der Bearbeitung sind.
 
-## Anzeigen der Vorschau von Rotationssets  {#previewing-spin-sets}
+## Anzeigen der Vorschau von Rotationssets   {#previewing-spin-sets}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von Rotationssets  {#publishing-spin-sets}
+## Veröffentlichen von Rotationssets   {#publishing-spin-sets}
 
 Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
