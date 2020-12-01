@@ -2,10 +2,10 @@
 title: Zugehörige Inhalte
 description: 'Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden. '
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 100%
+source-wordcount: '227'
+ht-degree: 85%
 
 ---
 
@@ -26,14 +26,18 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
    ![Zugehörige Inhalte](assets/cfm-assoc-content-01.png)
 
-2. Wählen Sie **Inhalt zuordnen** oder **Sammlung zuordnen** (je nachdem, ob Sammlungen bereits verknüpft wurden oder nicht).
-3. Wählen Sie die erforderliche Sammlung aus.
+1. Je nachdem, ob bereits Sammlungen verknüpft wurden oder nicht - wählen Sie entweder:
+
+   * **Inhalt**  verknüpfen - dies ist die erste zugeordnete Sammlung
+   * **Sammlung**  verknüpfen - zugeordnete Sammlungen sind bereits konfiguriert
+
+1. Wählen Sie die erforderliche Sammlung aus.
 
    Optional können Sie das eigentliche Fragment zur ausgewählten Sammlung hinzufügen. Dies hilft bei der Nachverfolgung.
 
    ![Sammlung auswählen](assets/cfm-assoc-content-02.png)
 
-4. Bestätigen Sie den Vorgang (durch das Häkchen). Die Sammlung wird als verknüpft aufgeführt.
+1. Bestätigen (mit **Auswahl**). Die Sammlung wird als verknüpft aufgeführt.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
