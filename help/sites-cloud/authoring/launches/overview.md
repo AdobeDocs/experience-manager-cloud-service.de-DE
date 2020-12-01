@@ -2,10 +2,10 @@
 title: Launches
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 * [Erstellen von Launches](/help/sites-cloud/authoring/launches/creating.md)
 * [Bearbeiten von Launches](/help/sites-cloud/authoring/launches/editing.md)
+* [Verwalten von Seiten in Starts](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Verwenden von Zeitwarp zur Vorschau von Inhalten auf Grundlage von Starts](/help/sites-cloud/authoring/launches/preview.md)
 * [Weiterleiten von Launches](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Der Ablauf eines Launches {#launches-the-order-of-events}
