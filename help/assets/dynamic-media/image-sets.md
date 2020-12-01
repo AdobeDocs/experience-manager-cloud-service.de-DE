@@ -2,10 +2,10 @@
 title: Bildsets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 100%
+source-wordcount: '2069'
+ht-degree: 98%
 
 ---
 
@@ -32,21 +32,23 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 So schaffen Sie einen schnellen Einstieg:
 
+1. Optional. [Erstellen Sie eine Stapelsatzvorgabe ](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Ordner an, in den Ihre Rotationsset-Bilder hochgeladen werden.
+
+   Eine Stapelsatzvorgabe kann Ihnen dabei helfen, die Erstellung Ihres Bildsatzes zu automatisieren.
+
+   >[!IMPORTANT]
+   >
+   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
+
 1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
 
-   Laden Sie zunächst die Bilder für die Bildsets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
+   Laden Sie die Bilder für Ihre Bildsätze hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
 1. [Erstellen Sie Bildsets.](#creating-image-sets)
 
    In Bildsets klicken Benutzer im Bildset-Viewer auf Miniaturansichten.
 
    Tippen oder klicken Sie zum Erstellen eines Bildsets in Assets auf **[!UICONTROL Erstellen > Bildsets]**. Fügen Sie anschließend Bilder hinzu und klicken Sie auf **[!UICONTROL Speichern]**.
-
-   Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
-
-   >[!IMPORTANT]
-   >
-   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
    Siehe [Vorbereiten von Bildset-Assets auf das Hochladen und Hochladen von Dateien](#uploading-assets-in-image-sets).
 
@@ -105,13 +107,13 @@ Stellen Sie sicher, dass die Bilder in Bildsets mindestens 2.000 Pixel in der gr
 >* eine schwarze, braune und grüne Miniaturansicht
 
 
-## Erstellen von Bildsets  {#creating-image-sets}
+## Erstellen von Bildsets   {#creating-image-sets}
 
 Sie können Bildsets über die Benutzeroberfläche oder die API erstellen. In diesem Abschnitt wird beschrieben, wie Sie Bildsets in der Benutzeroberfläche erstellen.
 
 >[!NOTE]
 >
->Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
+>Sie können Bildsets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md) erstellen.
 >**Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets manuell neu anordnen oder sortieren, nachdem sie hinzugefügt wurden.
@@ -164,9 +166,9 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Bildset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Anzeigen von Bildsets  {#viewing-image-sets}
+## Anzeigen von Bildsets   {#viewing-image-sets}
 
-Sie können Bildsets entweder in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
+Sie können Bildsets entweder in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md) erstellen.
 
 >[!IMPORTANT]
 >
@@ -192,7 +194,7 @@ Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberf
 >
 >Sets können über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Bildsets](#editing-image-sets) beschrieben.
 
-## Bearbeiten von Bildsets  {#editing-image-sets}
+## Bearbeiten von Bildsets   {#editing-image-sets}
 
 Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die folgenden:
 
@@ -230,10 +232,10 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie die Bearbeitung abgeschlossen haben.
 
-## Anzeigen von Bildsets in einer Vorschau  {#previewing-image-sets}
+## Anzeigen von Bildsets in einer Vorschau   {#previewing-image-sets}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von Bildsets  {#publishing-image-sets}
+## Veröffentlichen von Bildsets   {#publishing-image-sets}
 
 Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
