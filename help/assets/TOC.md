@@ -5,10 +5,10 @@ breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 86%
+source-wordcount: '432'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 + [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
-+ [Wichtige Änderungen [!DNL Assets] als Cloud Service](assets-cloud-changes.md)
++ [Wichtige Änderungen  [!DNL Assets] als Cloud Service](assets-cloud-changes.md)
 + [[!DNL Assets] Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
@@ -32,7 +32,7 @@ ht-degree: 86%
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Intelligente Tags für Video-Assets](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
-   + [Verwenden von [!DNL Adobe Stock] Assets in AEM](aem-assets-adobe-stock.md)
+   + [Verwenden von  [!DNL Adobe Stock] Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
    + [Integrieren mit [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -82,12 +82,15 @@ ht-degree: 86%
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Best Practices für die Dateiverwaltung](dynamic-media/best-practices-for-file-management.md)
-   + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Verwalten von Bildvorgaben für Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Anwenden von Bildvorgaben für Dynamic Media](dynamic-media/image-presets.md)
    + [Bildprofile](dynamic-media/image-profiles.md)
    + [Videoprofile](dynamic-media/video-profiles.md)
+   + [Verwalten von Bildvorgaben für Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Anwenden von Bildvorgaben für Dynamic Media](dynamic-media/image-presets.md)
+   + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 86%
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Häufig gestellte Fragen zur Einstellung der Unterstützung für DHTML-Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Hinweis zur Einstellung von Flash-Viewer](dynamic-media/flash-viewers-eol.md)
