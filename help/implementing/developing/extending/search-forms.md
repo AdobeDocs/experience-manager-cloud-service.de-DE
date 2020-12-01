@@ -2,9 +2,9 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2043'
 ht-degree: 100%
 
 ---
@@ -33,9 +33,7 @@ Mit **Suchformularen** können Sie diese Bedienfelder entsprechend Ihren spezifi
 Die **Suchformulare** bieten eine vordefinierte Auswahl an [Prädikaten](#predicates-and-their-settings), die Sie kombinieren und definieren können. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
 * **Tools**
-
    * **Allgemein**
-
       * **Suchformulare**
 
 ## Standardformulare {#default-forms}
@@ -46,35 +44,24 @@ Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle
 
 Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 
-* **Asset-Admin-Suchleiste:**
-
-* **Seiten-Editor (Dokumentensuche):**
-
-* **Seiten-Editor (Experience Fragment-Suche):**
-
-* **Seiten-Editor (Bildsuche):**
-
-* **Seiten-Editor (Manuskriptsuche):**
-
-* **Seiten-Editor (Seitensuche):**
-
-* **Seiten-Editor (Absatzsuche):**
-
-* **Seiten-Editor (Produktsuche):**
-
-* **Seiten-Editor (Scene7-Suche)**:
-
-* **Seiten-Editor (Videosuche)**:
-
-* **Projekt-Admin-Suchleiste:**
-
-* **Projekt-Übersetzungs-Suchleiste:**
-
-* **Sites-Admin-Suchleiste**:
-
-* **Snippet-Admin-Suchleiste**:
-
-* **Stock-Admin-Suchleiste**:
+* **Asset-Admin-Suchleiste**
+* **Seiten-Editor (Dokumentensuche)**
+* **Seiten-Editor (Experience Fragment-Suche)**
+* **Seiten-Editor (Bildsuche)**
+* **Seiten-Editor (Manuskriptsuche)**
+* **Seiten-Editor (Seitensuche)**
+* **Seiten-Editor (Absatzsuche)**
+* **Seiten-Editor (Produktsuche)**
+* **Seiten-Editor (Scene7-Suche)**
+* **Seiten-Editor (Videosuche)**
+* **Projekt-Admin-Suchleiste**
+* **Projekt-Übersetzungs-Suchleiste**
+* **Sites-Admin-Suchleiste**
+* **Snippet-Admin-Suchleiste**
+* **Stock-Admin-Suchleiste**
+* **Suchschiene für Inhaltsfragment-Modelle**
+* **Projekt-Admin-Suchleiste**
+* **Projekt-Übersetzungs-Suchleiste**
 
 >[!NOTE]
 >
@@ -639,7 +626,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten       {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten        {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
