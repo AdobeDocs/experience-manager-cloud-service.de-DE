@@ -2,7 +2,7 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.9.0.
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 18%
@@ -12,30 +12,30 @@ ht-degree: 18%
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] als Cloud Service 2020.9.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 ist der 24. September 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/spa/reference-materials.md)
+* Das JavaScript-SDK für die Einzelseitenanwendung (SPA) Editor [ist jetzt Open Source.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* Wasserzeichen-Bilddateien werden für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden und verwendet eine PNG-Datei als Wasserzeichen. Siehe [Wasserzeichen für Ihre Assets](/help/assets/watermark-assets.md).
+* Wasserzeichen-Bilddateien werden für Darstellungen unterstützt, die mit Asset-Mikrodiensten generiert wurden. Es kann als verarbeitendes Profil konfiguriert werden und verwendet eine PNG-Datei als Wasserzeichen. Siehe [Wasserzeichen Ihrer Assets](/help/assets/watermark-assets.md).
 
-* Verbesserungen in [!DNL Dynamic Media]
+* Erweiterungen in [!DNL Dynamic Media]
 
-   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf synchronisierte [!DNL Dynamic Media] Bilder und dynamische Darstellungen zugreifen, um Werbematerial zu erstellen, ohne dass diese Assets für den weltweiten Versand veröffentlicht werden müssen. [!DNL Dynamic Media] [!DNL Dynamic Media] Dies ist möglich. [!DNL Experience Manager] und die [!DNL Dynamic Media] Veröffentlichung ist entkoppelt und kann separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
-   * Administratoren können jetzt das bei der Bereitstellung erhaltene [!DNL Dynamic Media] Cloud Service-Kennwort zurücksetzen. Das Zurücksetzen kann in der [!DNL Experience Manager] Benutzeroberfläche erfolgen, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss.
+   * Selektive Veröffentlichung - Ein Marketingteam kann nun auf [!DNL Dynamic Media]-Bilder mit intelligenten Zuschnitten und dynamische Darstellungen zugreifen, die mit [!DNL Dynamic Media] synchronisiert werden, damit sie Werbematerialien erstellen können, ohne diese Elemente für globalen Versand auf [!DNL Dynamic Media] veröffentlichen zu müssen. [!DNL Experience Manager] und die  [!DNL Dynamic Media] Veröffentlichung ist entkoppelt und kann separat erfolgen, um dies zu erreichen. Siehe [selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
+   * Administratoren können jetzt das [!DNL Dynamic Media]-Kennwort des Cloud Service zurücksetzen, das bei der Bereitstellung erhalten wird. Das Zurücksetzen kann in der [!DNL Experience Manager]-Benutzeroberfläche erfolgen, ohne dass die [!DNL Dynamic Media Classic] Desktop-App verwendet werden muss.
 
-* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen im Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
 
    * Verbesserte PDF-Vorschau mit Adobe Document Cloud Ansicht SDK-Integration.
    * Download-Funktion mit einem Klick.
@@ -51,7 +51,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Version 1.3.0 der CIF-Kernkomponenten Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) .
+* Version 1.3.0 der CIF-Kernkomponenten Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0).
 
 * Vorschau mit Produkt/Kategorie für Produkt- und Kategorie-Vorlagen ist jetzt verfügbar. Auf diese Weise können Geschäftsbenutzer/Marketingexperten in AEM die Produkt-/Kategorie-Vorlagen mit echten Daten Ansicht werden.
 
@@ -87,7 +87,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 ### Neue Funktionen {#what-is-new-cra}
 
-* Die CRA (Cloud Readiness Analyzer) verfügt über eine Beginn-Statuskonsole, die eine explizite Schaltfläche zum **Generieren eines Berichts** anzeigt, auf die der Benutzer klicken kann, um die CRA auszuführen.
+* Der Cloud-Bereitschaftsanalysator (CRA) verfügt über eine Beginn-Statuskonsole, die eine explizite Schaltfläche **Bericht erzeugen** anzeigt, auf die der Benutzer klicken kann, um die CRA auszuführen.
 
 * Die CRA-Benutzeroberfläche zeigt den Fortschritt während der Ausführung an. Es zeigt Elemente an, die analysiert werden, und die während der Ausführung gefundenen Ergebnisse.
 
@@ -107,7 +107,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Die CTT-Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
 
-* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* schnell abzurufen.
+* Schaltfläche zur CTT-Benutzeroberfläche hinzugefügt, um *Zugriffstoken* einfach abzurufen.
 
 * Beschreibende Überprüfungsmeldung hinzugefügt für *URL* und *Migrationssatzname*.
 
@@ -119,9 +119,9 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Das AIO-CLI-Plugin unterstützt Repository Modernizer und ermöglicht es Benutzern, das Tool mit dem Plugin auszuführen.
 
-   Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+   Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) für weitere Informationen.
 
 * Das Dienstprogramm &quot;Repository Moderner&quot;kann verwendet werden, um bestehende Projektpakete in Pakete umzustrukturieren, die mit der Projektstruktur kompatibel sind, die für AEM als Cloud Service definiert wurde.
 
-   Siehe [Git-Ressource: Repository Moderner](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für weitere Details.
+   Siehe [Git-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für weitere Details.
 
