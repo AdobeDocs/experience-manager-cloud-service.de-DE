@@ -99,7 +99,7 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `replace` | Boolesch | Optional | If `True` and an asset with the specified name exists, [!DNL Experience Manager] deletes the asset then re-create it. |
 
 >!![NOTE]
-If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
+>If the asset exists and neither `createVersion` nor `replace` is specified, then [!DNL Experience Manager] updates the asset&#39;s current version with the new binary.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
@@ -124,8 +124,9 @@ Die neue Upload-Methode wird nur [!DNL Adobe Experience Manager] als Cloud Servi
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
-* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
+>
+>* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+>* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
@@ -193,5 +194,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Das Experience Cloud als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>
+>* [Das Experience Cloud als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
