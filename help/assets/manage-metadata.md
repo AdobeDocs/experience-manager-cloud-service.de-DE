@@ -142,9 +142,9 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >
    >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Benutzerdefinierte Metadaten mit verarbeitendem Profil {#metadata-compute-service}
+## Benutzerspezifische Metadaten mit verarbeitendem Profil {#metadata-compute-service}
 
-Assets als Cloud Service können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie mit Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)arbeiten.
+Assets als Cloud Service können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Siehe [Verwendung von Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Metadaten-Darstellung im verarbeitenden Profil](assets/processing-profile-metadata.png)
 
