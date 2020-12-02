@@ -23,7 +23,7 @@ CRXDE Lite ist Teil des AEM Schnellstarts und steht Ihnen zur Verfügung, um auf
 Erste Schritte mit der CRXDE Lite:
 
 1. Beginn deinen örtlichen AEM Development Schnellstart.
-1. In your browser, open the URL `https://<host>:<port>/crx/de`.
+1. Öffnen Sie in Ihrem Browser die URL `https://<host>:<port>/crx/de`.
 1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein.
 1. Klicken Sie auf **OK**.
 
@@ -35,7 +35,7 @@ Jetzt können Sie CRXDE Lite verwenden, um Ihre Anwendung zu entwickeln.
 
 >[!TIP]
 >
->Sie können auch über das AEM Menü auf die CRXDE Lite zugreifen. Wählen Sie im Hauptmenü **Extras** -> **Allgemein** -> **CRXDE Lite**.
+>Sie können auch über das AEM Menü auf die CRXDE Lite zugreifen. Wählen Sie im Hauptmenü **Tools** -> **Allgemein** -> **CRXDE Lite**.
 
 ## Überblick über die Benutzeroberfläche {#overview-of-the-user-interface}
 
@@ -51,128 +51,128 @@ Das Node Path Widget zeigt den Pfad zum aktuell ausgewählten Knoten an.
 
 Sie können damit auch zu einem Knoten springen, indem Sie den Pfad manuell eingeben oder von einer anderen Stelle einfügen und die Eingabetaste drücken.
 
-Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens ein, den Sie suchen möchten, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite). Wenn ein oder mehrere Knoten in den Explorer-Bereich geladen werden, wird die Liste angezeigt. Sie können den Pfad auswählen und die Eingabetaste drücken, um zu ihm zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit in der CRXDE-Client-Anwendung im Browser geladen sind. If you want to search the whole repository, use **Tools** -&amp;gt: **Query**.
+Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens ein, den Sie suchen möchten, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite). Wenn ein oder mehrere Knoten in den Explorer-Bereich geladen werden, wird die Liste angezeigt. Sie können den Pfad auswählen und die Eingabetaste drücken, um zu ihm zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit in der CRXDE-Client-Anwendung im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** -&amp;gt: **Abfrage**.
 
-### Explorer Pane {#explorer-pane}
+### Explorer-Bereich {#explorer-pane}
 
-Im **Explorer-Bereich** wird eine Struktur aller Knoten im Repository angezeigt.
+Das **Explorer-Fenster** zeigt eine Struktur aller Knoten im Repository an.
 
 Klicken Sie auf einen Knoten, um seine Eigenschaften auf der Registerkarte **Eigenschaften** anzuzeigen. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten, um ihn umzubenennen.
 
 Mit dem Baumnavigationsfilter (dem Symbol &quot;Ferngläser&quot;) können Sie die Knoten im Repository filtern, für die der Name den Eingabetext enthält. Gilt nur für Knoten, die lokal geladen wurden.
 
-### Edit Pane {#edit-pane}
+### Bearbeitungsbereich {#edit-pane}
 
-Der **Bearbeitungsbereich** ermöglicht die Ansicht des Inhalts der aktuell ausgewählten Datei im Repository. Jede geöffnete Datei wird als eigene Registerkarte im Bereich dargestellt.
+Mit dem Bedienfeld **Bearbeiten** können Sie den Inhalt der aktuell ausgewählten Datei im Repository Ansicht haben. Jede geöffnete Datei wird als eigene Registerkarte im Bereich dargestellt.
 
-Auf der Registerkarte &quot; **Startseite** &quot;können Sie nach Inhalten und/oder Dokumentationen suchen und auf die Entwicklerdokumentation und Adobe zugreifen.
+Auf der Registerkarte **Home** können Sie nach Inhalten und/oder Dokumentationen suchen und auf die Entwicklerdokumentation und Adobe-Unterstützung zugreifen.
 
-Klicken Sie mit der Dublette auf eine Datei im **Explorer-Bereich** , um deren Inhalt im **Bearbeitungsbereich** anzuzeigen. Anschließend können Sie sie ändern und die Änderungen speichern.
+Klicken Sie mit der Dublette auf eine Datei im **Explorer-Bereich**, um deren Inhalt im **Bearbeitungsbereich** anzuzeigen. Anschließend können Sie sie ändern und die Änderungen speichern.
 
-Once a file is edited in the **Edit Pane**, the following tools are available on the toolbar:
+Nachdem eine Datei im Bereich **Bearbeiten** bearbeitet wurde, stehen in der Symbolleiste die folgenden Werkzeuge zur Verfügung:
 
-* **In Struktur** anzeigen: Zeigt die Datei im Repository-Baum an.
-* **Suchen/Ersetzen** - Führt eine Suche oder einen Austausch durch.
+* **In Baum**  anzeigen: Zeigt die Datei im Repository-Baum an.
+* **Suchen/Ersetzen**  - Führt eine Suche oder einen Austausch durch.
 
-Double-click on the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
+Klicken Sie mit der Dublette auf die Statuszeile des **Bearbeitungsbereichs** öffnet das Dialogfeld **Gehe zu Zeile**, damit Sie eine bestimmte Zeilennummer eingeben können.
 
 ### Registerkarte „Eigenschaften“ {#properties-tab}
 
-Auf der Registerkarte &quot; **Eigenschaften&quot;** werden die Eigenschaften des ausgewählten Knotens angezeigt. Sie können neue Eigenschaften hinzufügen oder die vorhandenen löschen.
+Das Register **Eigenschaften** zeigt die Eigenschaften des ausgewählten Knotens an. Sie können neue Eigenschaften hinzufügen oder die vorhandenen löschen.
 
-### Access Control Tab {#access-control-tab}
+### Registerkarte &quot;Zugriffskontrolle&quot; {#access-control-tab}
 
-Auf der Registerkarte &quot; **Zugriffskontrolle&quot;** werden Berechtigungen basierend auf dem aktuellen Pfad, Repository oder Prinzipal angezeigt.
+Die Registerkarte **Zugriffskontrolle** zeigt Berechtigungen basierend auf dem aktuellen Pfad, Repository oder Prinzipal an.
 
 Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 
-* **Anwendbare Richtlinie** zur Zugriffskontrolle - Richtlinien, die auf die aktuelle Auswahl angewendet werden können
-* **Lokale Zugriffskontrollen** - Die aktuellen Richtlinien, die lokal auf die aktuelle Auswahl angewendet werden
-* **Richtlinien** zur effektiven Zugriffskontrolle - Die aktuellen Richtlinien, die für die aktuelle Auswahl gelten und lokal festgelegt oder von übergeordneten Knoten übernommen werden können
+* **Anwendbare Richtlinie**  für die Zugriffskontrolle - Die Richtlinien, die auf die aktuelle Auswahl angewendet werden können
+* **Lokale Zugriffskontrollen**  - Die aktuellen Richtlinien, die lokal auf die aktuelle Auswahl angewendet werden
+* **Richtlinien**  zur effektiven Zugriffskontrolle - Die aktuellen Richtlinien, die für die aktuelle Auswahl gelten und lokal festgelegt oder von übergeordneten Knoten übernommen werden können
 
 >[!NOTE]
 Um Informationen zur Zugriffskontrolle anzeigen zu können, muss der bei der CRXDE Lite angemeldete Benutzer über die Rechte zum Lesen von ACL-Einträgen verfügen.
 
-### Replication Tab {#replication-tab}
+### Replikationsregister {#replication-tab}
 
-Auf der Registerkarte &quot; **Replikation&quot;** wird der Replikationsstatus des aktuellen Knotens angezeigt. Sie können den aktuellen Knoten nachbilden oder nachbilden und löschen.
+Das Register **Replikation** zeigt den Replizierungsstatus des aktuellen Knotens an. Sie können den aktuellen Knoten nachbilden oder nachbilden und löschen.
 
-###  Console Tab {#console-tab}
+###  Konsolenregisterkarte {#console-tab}
 
-Auf der Registerkarte &quot; **Konsole&quot;** werden Meldungen angezeigt. Sie können die Protokollebene konfigurieren, die Konsole löschen, an der ausgewählten Bildlaufposition anheften und die Anzeige von Meldungen aktivieren/deaktivieren.
+Auf der Registerkarte **Konsole** werden Protokollmeldungen angezeigt. Sie können die Protokollebene konfigurieren, die Konsole löschen, an der ausgewählten Bildlaufposition anheften und die Anzeige von Meldungen aktivieren/deaktivieren.
 
-### Build Info Tab {#build-info-tab}
+### Registerkarte &quot;Build Info&quot;{#build-info-tab}
 
-Auf der Registerkarte &quot; **Build Info&quot;** werden Informationen angezeigt, wenn ein Bundle erstellt wird.
+Die Registerkarte **Build Info** zeigt Informationen an, wenn ein Bundle erstellt wird.
 
-### Schaltfläche &quot;Aktualisieren&quot; {#refresh-button}
+### Schaltfläche {#refresh-button} aktualisieren
 
-Über die Schaltfläche &quot; **Aktualisieren&quot;** wird die aktuelle Auswahl aktualisiert. Änderungen von anderen Benutzern werden in Ihrer Ansicht des Repositorys aktualisiert. Änderungen, die Sie vorgenommen haben, sind nicht betroffen.
+Die Schaltfläche **Aktualisieren** aktualisiert die aktuelle Auswahl. Änderungen von anderen Benutzern werden in Ihrer Ansicht des Repositorys aktualisiert. Änderungen, die Sie vorgenommen haben, sind nicht betroffen.
 
-### Schaltfläche &quot;Alle speichern&quot; {#save-all-button}
+### Alle speichern-Schaltfläche {#save-all-button}
 
-Die Schaltfläche &quot;Alle **speichern&quot;** speichert alle Änderungen, die Sie vorgenommen haben. Bis Sie sich zum Speichern entscheiden, sind die Änderungen temporär und gehen verloren, wenn Sie die Konsole verlassen.
+Die Schaltfläche **Alle speichern** speichert alle vorgenommenen Änderungen. Bis Sie sich zum Speichern entscheiden, sind die Änderungen temporär und gehen verloren, wenn Sie die Konsole verlassen.
 
-* **Zurückkehren** - Verwirft alle Änderungen, die Sie seit der letzten Speicheraktion an dem ausgewählten Knoten vorgenommen haben, und lädt dann den aktuellen Status des Repository für den ausgewählten Knoten neu
-* **Alle** wiederherstellen: Verwirft alle Änderungen, die Sie seit der letzten Speicheraktion im gesamten Repository vorgenommen haben, und lädt dann den aktuellen Status des Repository neu
+* **Zurückkehren** : Verwirft alle Änderungen, die Sie seit der letzten Speicheraktion an dem ausgewählten Knoten vorgenommen haben, und lädt dann den aktuellen Status des Repository für den ausgewählten Knoten neu
+* **Alle**  wiederherstellen: Verwirft alle Änderungen, die Sie seit der letzten Speicheraktion im gesamten Repository vorgenommen haben, und lädt dann den aktuellen Status des Repositorys neu
 
 ### Schaltfläche „Erstellen“{#create-button}
 
-Die Schaltfläche **Erstellen** ist ein Dropdown-Menü, um unter dem ausgewählten Knoten Folgendes zu erstellen:
+Die Schaltfläche &quot;Erstellen&quot;**ist ein Dropdown-Menü, um unter dem ausgewählten Knoten Folgendes zu erstellen:**
 
 * Knoten - ein Knoten mit einem beliebigen Knotentyp
-* Datei - ein `nt:file` Knoten und dessen Unterknoten nt:resource
-* Ordner - ein `nt:folder` Knoten
+* Datei - ein `nt:file`-Knoten und der zugehörige nt:resource-Unterknoten
+* Ordner - ein `nt:folder`-Knoten
 
-### Delete Button {#delete-button}
+### Schaltfläche {#delete-button} löschen
 
-Die **Schaltfläche** &quot;Löschen&quot;löscht die ausgewählte Node.
+Die Schaltfläche **Löschen** löscht die ausgewählte Node.
 
-### Copy Button {#copy-button}
+### Schaltfläche &quot;Kopieren&quot; {#copy-button}
 
-Die **Schaltfläche** &quot;Kopieren&quot;kopiert die ausgewählte Node.
+Die **Schaltfläche Kopieren** kopiert die ausgewählte Node.
 
-## Paste Button {#paste-button}
+## Einfügen-Schaltfläche {#paste-button}
 
-Mit der **Schaltfläche** &quot;Einfügen&quot;wird der kopierte Knoten unter dem ausgewählten Knoten eingefügt.
+Die Schaltfläche **Einfügen** fügt den kopierten Knoten unter den ausgewählten Knoten ein.
 
-### Move Button {#move-button}
+### Schaltfläche {#move-button}
 
-The **Move Button** moves the selected node to the node that is set through the dialog.
+Die Schaltfläche **Verschieben** verschiebt den ausgewählten Knoten zu dem Knoten, der durch das Dialogfeld festgelegt wird.
 
 ### Umbenennen {#rename-button}
 
-Die Schaltfläche &quot; **Umbenennen&quot;** benennt die ausgewählte Node um.
+Die **Umbenennen-Schaltfläche** benennt den ausgewählten Knoten um.
 
 ### Mixins {#mixins-button}
 
-Mit der **Mixins-Schaltfläche** können Sie Mixin-Typen zum Knotentyp hinzufügen. Die Mixin-Typen werden meist verwendet, um erweiterte Funktionen hinzuzufügen.
+Mit der **Mixins-Schaltfläche** können Sie Mixin-Typen zum Node-Typ hinzufügen. Die Mixin-Typen werden meist verwendet, um erweiterte Funktionen hinzuzufügen.
 
 ### Tools {#tools-button}
 
 Die Schaltfläche **Tools** ist ein Dropdown-Menü mit den folgenden verfügbaren Tools:
 
-* **Serverkonfiguration** - Zugriff auf die Felix-Konsole (auch unter `https://<host>:<port>/system/console/configMgr`)
+* **Serverkonfiguration**  - Zugriff auf die Felix-Konsole (auch verfügbar unter  `https://<host>:<port>/system/console/configMgr`)
 * **Abfrage** - zur Abfrage des Repositorys
-* **Berechtigungen** - zur Ansicht und zum Hinzufügen von Berechtigungen
-* **Zugriffskontrolle** testen - Testen der Berechtigung für bestimmte Pfade und/oder Prinzipale
-* **Knotentyp** exportieren - um Knotentypen im System als CND-Notation zu exportieren
-* **Node Type** importieren - zum Importieren von Node-Typen mithilfe der CND-Notation.
+* **Berechtigungen**  - zur Ansicht und zum Hinzufügen von Berechtigungen
+* **Testen der Zugriffskontrolle** : Testen der Berechtigung für bestimmte Pfade und/oder Prinzipale
+* **Knotentyp**  exportieren - um Knotentypen im System als CND-Notation zu exportieren
+* **Node Type**  importieren - um Node-Typen mithilfe der CND-Notation zu importieren.
 
-### Login Widget {#login-widget}
+### Anmelde-Widget {#login-widget}
 
 Das **Anmelde-Widget** zeigt den derzeit angemeldeten Benutzer an.
 
-Klicken Sie darauf, um sich als ein anderer Benutzer anzumelden oder sich erneut anzumelden. Der `@crx.default` stellt dar, dass Sie sich im Standardarbeitsbereich (und nur) im Repository befinden.
+Klicken Sie darauf, um sich als ein anderer Benutzer anzumelden oder sich erneut anzumelden. `@crx.default` bedeutet, dass Sie sich im Standard-Arbeitsbereich (und nur) im Repository befinden.
 
-Mit der Option **Voreinstellungen** können Sie Ihre Benutzeroberflächensprache festlegen, die Hotkeys für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Notizen usw. Ansicht und anpassen.
+Die Option **Voreinstellungen** kann verwendet werden, um die Benutzeroberflächensprache festzulegen und die Hotkeys für verschiedene Aktionen wie Speichern, Suchen, Erstellen von Notizen usw. Ansicht und anzupassen.
 
 ## Erstellen eines Ordners {#creating-a-folder}
 
 So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
+1. Klicken Sie im Navigationsbereich mit der rechten Maustaste auf den Ordner, unter dem Sie den neuen Ordner erstellen möchten, und wählen Sie **Erstellen ...**, dann **Ordner erstellen ...**.
 
 1. Geben Sie den **Namen** des Ordners ein und klicken Sie auf **OK**.
 
@@ -183,42 +183,42 @@ So erstellen Sie einen Ordner mit CRXDE Lite:
 So erstellen Sie einen Knoten mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the node where you want to create the new node, select **Create**, then **Create Node**.
-1. Enter the **Name** and select the **Type**.
+1. Klicken Sie im Bereich [**Exploerer**,](#explorer-pane) mit der rechten Maustaste auf den Knoten, auf dem Sie den neuen Knoten erstellen möchten, wählen Sie **Erstellen** und dann **Knoten erstellen**.
+1. Geben Sie **Name** ein und wählen Sie **Typ**.
 1. Klicken Sie auf **OK**.
-1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
+1. Klicken Sie auf die Schaltfläche [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
 
 Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigenschaften ändern oder neue Knoten erstellen.
 
 >[!NOTE]
-Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). Einige Vorgänge wie Verschieben werden jedoch automatisch beibehalten.
-Die Überprüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. If you receive an error message while saving a node, please check if the content structure is valid (e.g. you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+Bei den meisten Bearbeitungsvorgängen, einschließlich **Knoten erstellen**, werden alle Änderungen im Arbeitsspeicher gespeichert und nur beim Speichern (unter Verwendung der Schaltfläche [**Alle speichern**](#save-all-button)) im Repository gespeichert. Einige Vorgänge wie Verschieben werden jedoch automatisch beibehalten.
+Die Überprüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch vom Repository beim Speichern von Änderungen durchgeführt. Wenn Sie beim Speichern einer Node eine Fehlermeldung erhalten, überprüfen Sie bitte, ob die Inhaltsstruktur gültig ist (z. B. können Sie keine `nt:unstructured`-Node als untergeordnetes Element der `nt:folder`-Node erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
 So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) select the node where you want to add the new property.
-1. In the [**Properties Tab**](#properties-tab) in the bottom pane, enter the **Name**, the **Type**, and the **Value**.
+1. Wählen Sie im Bereich [**Exploerer**](#explorer-pane) den Knoten aus, dem Sie die neue Eigenschaft hinzufügen möchten.
+1. Geben Sie im unteren Bereich unter der Registerkarte [**Eigenschaften**](#properties-tab) die Variablen **Name**, **Typ** und **Wert** ein.
 1. Klicken Sie auf **Hinzufügen**.
-1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
+1. Klicken Sie auf die Schaltfläche [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
 
 ## Erstellen einer Datei {#creating-a-file}
 
 So erstellen Sie eine neue Datei mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the [**Exploerer Pane**,](#explorer-pane) right-click the component where you want to create the file, select **Create**, then **Create File**.
-1. Enter the file **Name** including its extension.
+1. Klicken Sie im Bereich [**Exploerer**,](#explorer-pane) mit der rechten Maustaste auf die Komponente, in der Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen**.
+1. Geben Sie die Datei **Name** einschließlich der Erweiterung ein.
 1. Klicken Sie auf **OK**.
-1. The new file opens as a tab in the [**Edit Pane**.](#edit-pane)
+1. Die neue Datei wird als Registerkarte im Bereich [**Bearbeiten** geöffnet.](#edit-pane)
 1. Bearbeiten Sie die Datei.
-1. Click the [**Save All Button**](#save-all-button) to save the changes.
+1. Klicken Sie auf die Schaltfläche [**Alle speichern**](#save-all-button), um die Änderungen zu speichern.
 
 ## Exportieren und Importieren von Knotentypen {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [Compact Namespace and Node Type Definition (CND) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Mit der CRXDE Lite können Sie Knotentypdefinitionen in [Compact Namensraum and Node Type Definition (CND) Node](https://jackrabbit.apache.org/jcr/node-type-notation.html) importieren und/oder exportieren.
 
 So exportieren Sie eine Knotentypdefinition in CRXDE Lite:
 
@@ -232,22 +232,22 @@ So importieren Sie eine Knotentypdefinition:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie **Tools** und dann **Knotentyp importieren**.
-1. Eine neue Registerkarte wird im Bereich [**&quot;Bearbeiten&quot;**](#edit-pane) mit der Bezeichnung &quot; **Knotentyp** importieren&quot;geöffnet.
-1. Geben Sie die CND-Notation für die Definition in das Textfeld der Registerkarte &quot; **Knotentyp** importieren&quot;ein.
+1. Eine neue Registerkarte wird im Bereich [**Bearbeiten**](#edit-pane) mit der Bezeichnung **Knotentyp importieren** geöffnet.
+1. Geben Sie die CND-Notation für die Definition in das Textfeld der Registerkarte **Node-Typ importieren** ein.
 1. Aktivieren Sie **Aktualisierung zulassen**, wenn Sie eine vorhandene Definition aktualisieren.
 1. Wählen Sie **Importieren**.
 
 ## Protokollierung {#logging}
 
-With CRXDE Lite you can display the file `error.log` that is located on the file system at `<aem-install-dir>/crx-quickstart/logs` and filter it with the appropriate log level. Gehen Sie wie folgt vor:
+Mit der CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisystem unter `<aem-install-dir>/crx-quickstart/logs` befindet, und sie mit der entsprechenden Protokollierungsstufe filtern. Gehen Sie wie folgt vor:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie im Dropdown-Menü rechts neben der Registerkarte &quot; [**Konsole&quot;**](#console-tab) unten im Fenster die Option &quot; **Serverprotokolle**&quot;aus.
+1. Wählen Sie im Dropdown-Menü rechts neben der Registerkarte [**Konsole**](#console-tab) unten im Fenster **Serverprotokolle**.
 1. Klicken Sie auf das **Stopp-Symbol**, um die Nachrichten anzuzeigen.
 
 Sie haben folgende Möglichkeiten:
 
-* Adjust the log parameters in the Felix Console by clicking the **Logging Configurations** icon.
-* Clear the messages by clicking the **Clear Console** icon.
-* Pin the message at the current selection by clicking the **Pin Console** icon.
+* Passen Sie die Protokollparameter in der Felix-Konsole an, indem Sie auf das Symbol **Protokollierungskonfigurationen** klicken.
+* Löschen Sie die Meldungen, indem Sie auf das Symbol **Konsole löschen** klicken.
+* Veröffentlichen Sie die Nachricht an der aktuellen Auswahl, indem Sie auf das Symbol **Pin Console** klicken.
 * Aktivieren oder deaktivieren Sie die Anzeige von Meldungen, indem Sie auf das **Stopp-Symbol** klicken.
