@@ -3,17 +3,17 @@ title: Verarbeiten von Assets mit Asset-Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 99%
+source-wordcount: '833'
+ht-degree: 97%
 
 ---
 
 
 # Übersicht über die Erfassung und Verarbeitung von Assets mit Asset-Microservices {#asset-microservices-overview}
 
-Adobe Experience Manager as a Cloud Service bietet eine Cloud-native Möglichkeit, Experience Manager-Programme und -Funktionen zu nutzen. Eines der Schlüsselelemente dieser neuen Architektur ist die auf Asset-Microservices basierende Erfassung und Verarbeitung von Assets. Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Die wichtigsten Vorteile von Cloud-nativen Asset-Microservices sind:
+Adobe Experience Manager als [!DNL Cloud Service] bietet eine Cloud-native Methode zur Nutzung von Experience Manager-Anwendungen und -Funktionen. Eines der Schlüsselelemente dieser neuen Architektur ist die auf Asset-Microservices basierende Erfassung und Verarbeitung von Assets. Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Die wichtigsten Vorteile von Cloud-nativen Asset-Microservices sind:
 
 * Skalierbare Architektur, die eine nahtlose Verarbeitung für ressourcenintensive Vorgänge ermöglicht.
 * Effiziente Indizierung und Textextraktion, die die Leistung Ihrer Experience Manager-Umgebungen nicht beeinträchtigen.
