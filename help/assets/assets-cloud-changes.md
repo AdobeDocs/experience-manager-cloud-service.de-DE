@@ -1,18 +1,18 @@
 ---
-title: Wesentliche Änderungen an Adobe Experience Manager Assets as a Cloud Service
-description: Wesentliche Änderungen an Adobe Experience Manager Assets in AEM Cloud Service im Vergleich zu Adobe Experience Manager 6.5.
+title: Wesentliche Änderungen an Adobe Experience Manager Assets as a [!DNL Cloud Service]
+description: Bemerkenswerte Änderungen an Adobe Experience Manager Assets in AEM [!DNL Cloud Service] im Vergleich zu Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '601'
+ht-degree: 84%
 
 ---
 
 
-# Wesentliche Änderungen an Adobe Experience Manager Assets as a Cloud Service {#notable-changes}
+# Wesentliche Änderungen an Adobe Experience Manager Assets as a [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer AEM-Projekte. Allerdings gibt es viele Unterschiede zwischen der On-Premise- und der über Adobe Managed Service bereitgestellten Version von Adobe Experience Manager Assets und Adobe Experience Manager as a Cloud Service. In diesem Dokument werden die wichtigen Unterschiede bei den Funktionalitäten von Assets verdeutlicht.
+Adobe Experience Manager als [!DNL Cloud Service] bietet viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer AEM. Allerdings gibt es viele Unterschiede zwischen der On-Premise- und der über Adobe Managed Service bereitgestellten Version von Adobe Experience Manager Assets und Adobe Experience Manager as a [!DNL Cloud Service]. In diesem Dokument werden die wichtigen Unterschiede bei den Funktionalitäten von Assets verdeutlicht.
 
 Die Hauptunterschiede gegenüber Adobe Experience Manager 6.5 bestehen in den folgenden Bereichen:
 
@@ -22,14 +22,14 @@ Die Hauptunterschiede gegenüber Adobe Experience Manager 6.5 bestehen in den fo
 
 >[!NOTE]
 >
->In diesem Dokument werden die wesentlichen Änderungen an AEM Assets aufgeführt. Allgemeine Änderungen an AEM as a Cloud Service und anderen Modulen finden Sie unter:
+>In diesem Dokument werden die wesentlichen Änderungen an AEM Assets aufgeführt. Allgemeine Änderungen an Experience Manager als [!DNL Cloud Service] und anderen Modulen finden Sie unter:
 >
->* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Übersicht über AEM as a Cloud Service – neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
->* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
->* [Wesentliche Änderungen an AEM as a Cloud Service (Versionshinweise)](/help/release-notes/aem-cloud-changes.md)
->* [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Einführung zu Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* Ein [Überblick über AEM als [!DNL Cloud Service] - Was ist neu und Was ist anders](/help/overview/what-is-new-and-different.md)
+>* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a [!DNL Cloud Service]
+>* [Wichtige Änderungen an AEM als [!DNL Cloud Service]  Versionshinweise](/help/release-notes/aem-cloud-changes.md)
+>* [Bemerkenswerte Änderungen an AEM Sites als [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager als  [!DNL Cloud Service] Übungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Asset-Erfassung und -Upload {#asset-ingestion}
@@ -56,4 +56,4 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 
 ## Entfernung der klassischen Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche ist in Adobe Experience Manager as a Cloud Service nicht mehr verfügbar. Die Standardoberfläche ist die Touch-optimierte Benutzeroberfläche.
+Die klassische Benutzeroberfläche ist in Experience Manager nicht mehr als [!DNL Cloud Service] verfügbar. Die Standardoberfläche ist die Touch-optimierte Benutzeroberfläche.
