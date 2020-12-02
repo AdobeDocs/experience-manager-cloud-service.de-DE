@@ -213,11 +213,11 @@ Es werden nur HTTP- und HTTPS-Ports unterstützt. Dies schließt bei Verschlüss
 
 Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debug-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
 
-## E-Mail senden {#sending-email}
+## Senden der E-Mail {#sending-email}
 
 AEM als Cloud Service erfordert die Verschlüsselung von ausgehenden Postsendungen. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und versenden.
 
-### Zugriff anfordern {#requesting-access}
+### Anfordernder Zugriff {#requesting-access}
 
 Ausgehende E-Mails sind standardmäßig deaktiviert. Um es zu aktivieren, senden Sie ein Support-Ticket mit:
 
@@ -228,7 +228,7 @@ Ausgehende E-Mails sind standardmäßig deaktiviert. Um es zu aktivieren, senden
 
 ### Senden von E-Mails {#sending-emails}
 
-Der [Day CQ Mail Service OSGI-Dienst](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Supportanfrage angegebenen E-Mail-Server gesendet werden und nicht direkt an Empfänger.
+Der Dienst [Day CQ Mail Service OSGI](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Supportanfrage angegebenen E-Mail-Server gesendet werden, anstatt direkt an Empfänger.
 
 AEM CS erfordert, dass Post über Port 465 gesendet wird. Wenn ein Mail-Server Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
@@ -238,18 +238,18 @@ AEM CS erfordert, dass Post über Port 465 gesendet wird. Wenn ein Mail-Server P
 
 ### Konfiguration {#email-configuration}
 
-E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGi-Dienst](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)gesendet werden.
+E-Mails in AEM sollten mit dem Dienst [Day CQ Mail Service OSGi gesendet werden.](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) . Für AEM CS müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` Dienst vorgenommen werden:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html). Für AEM CS müssen die folgenden Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Dienst vorgenommen werden:
 
 Wenn Port 465 angefordert wurde:
 
-* setzen `smtp.port` auf `465`
-* setzen `smtp.ssl` auf `true`
-* setzen `smtp.starttls` auf `false`
+* `smtp.port` auf `465` setzen
+* `smtp.ssl` auf `true` setzen
+* `smtp.starttls` auf `false` setzen
 
 Wenn Port 587 angefordert wurde (nur zulässig, wenn der E-Mail-Server Port 465 nicht unterstützt):
 
-* setzen `smtp.port` auf `587`
-* setzen `smtp.ssl` auf `false`
-* setzen `smtp.starttls` auf `true`
+* `smtp.port` auf `587` setzen
+* `smtp.ssl` auf `false` setzen
+* `smtp.starttls` auf `true` setzen
