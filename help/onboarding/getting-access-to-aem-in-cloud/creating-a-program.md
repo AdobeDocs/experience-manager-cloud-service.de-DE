@@ -16,19 +16,19 @@ Die Cloud-native Lösung bietet dem Benutzer die erforderlichen Berechtigungen u
 
 Ein Assistent zum Erstellen von Programmen fordert den Benutzer auf, Details zu übermitteln, je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden oder Unternehmen zur Verfügung steht.
 
-Im Ereignis des erstmaligen Zugriffs auf Cloud Manager oder wenn keine Programm im Mieter vorhanden sind, wird der Bildschirm &quot;Erstes Programm **erstellen** &quot;angezeigt. Wenn der Benutzer *Esc* auswählt oder außerhalb des Dialogfelds klickt, wird der folgende Bildschirm angezeigt:
+Im Ereignis des erstmaligen Zugriffs auf Cloud Manager oder wenn keine Programm im Mieter vorhanden sind, wird dem Benutzer der Bildschirm **Erstellt Ihr erstes Programm** angezeigt. Wenn der Benutzer *Esc* auswählt oder außerhalb des Dialogfelds klickt, wird der folgende Bildschirm angezeigt:
 
 ![](assets/create-program1.png)
 
 
-## Verwenden des Assistenten zum Erstellen von Programmen {#using-create-program-wizard}
+## Erstellen des Programm-Assistenten {#using-create-program-wizard}
 
 Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der Grenzen dessen verfolgt, was dem jeweiligen Kunden/Unternehmen zur Verfügung steht, wird der Programm-Erstellungsassistent aufgefordert, eine oder mehrere Angaben zu übermitteln.
 
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Wenn bereits ein Programm vorhanden ist, sehen Sie **Hinzufügen Programm** oben rechts in der Landingpage, wie in der folgenden Abbildung dargestellt.
 
 ![](assets/create-program-add.png)
 
@@ -36,7 +36,7 @@ Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der
 
 Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
-1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Sandbox** einrichten. Der Benutzer sendet den Programm-Namen, bevor er &quot; **Erstellen**&quot;auswählt.
+1. Wählen Sie im Assistenten zum Erstellen von Programmen **Eine Sandbox** einrichten. Der Programm wird vor Auswahl von **Erstellen** gesendet.
 
    ![](assets/create-sandbox.png)
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Nachdem das Programm eingerichtet und der Projekterstellungsschritt abgeschlossen ist, kann der Benutzer auf den Link Git **** verwalten zugreifen, wie in der folgenden Abbildung dargestellt:
+1. Nachdem das Programm eingerichtet und der Projekterstellungsschritt abgeschlossen ist, kann der Benutzer auf den Link **Git** verwalten zugreifen, wie in der folgenden Abbildung dargestellt:
 
    ![](assets/create-program4.png)
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
    >Weitere Informationen zum Zugriff auf und zur Verwaltung des Git-Repositorys mithilfe der Self-Service-Git-Kontoverwaltung über die Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Nachdem die Entwicklungs-Umgebung erstellt wurde, kann der Benutzer **auf AEM** Link zugreifen, wie in der folgenden Abbildung dargestellt:
+1. Nachdem die Entwicklungs-Umgebung erstellt wurde, kann der Benutzer den Link **AEM** aufrufen, wie in der folgenden Abbildung dargestellt:
 
    ![](assets/create-program-5.png)
 
@@ -66,9 +66,9 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen:
 
    ![](assets/create-program-a1.png)
 
-## Deleting a Sandbox Program {#delete-sandbox-program}
+## Löschen eines Sandbox-Programms {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Ein Sandbox-Programm-Benutzer in der Rolle *Business Owner* oder *Deployment Manager* in Cloud Manager kann seine Produktions- und Stage-Umgebung löschen, die über die Benutzeroberfläche von Cloud Manager festgelegt wurde.
 
 >[!NOTE]
 >Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
@@ -79,18 +79,18 @@ Die Option zum Löschen ist in der Landingpage verfügbar, wie unten dargestellt
 
 Oder
 
-Wählen Sie **Programm** löschen auf der Seite **Programm-Übersicht** , um Ihr Sandbox-Programm zu löschen.
+Wählen Sie **Programm** auf der Seite **Programm-Übersicht** aus, um Ihr Sandbox-Programm zu löschen.
 
 ![](assets/delete-sandbox2.png)
 
 
-## Creating a Regular Program {#create-regular-program}
+## Erstellen eines regulären Programms {#create-regular-program}
 
-Ein *reguläres* Programm ist für Benutzer gedacht, die sich mit AEM und Cloud Manager auskennen und mit der Erstellung, dem Erstellen und dem Testen von Beginn-Code zur Bereitstellung in der Produktion vertraut sind.
+Ein *Reguläres*-Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und Beginn zum Schreiben, Erstellen und Testen von Code mit dem Ziel der Bereitstellung für die Produktion bereitstellen können.
 
 Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
-1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot; **Zur Produktion** einrichten&quot;, um ein normales Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er &quot; **Weiter**&quot;auswählt.
+1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option **Für Produktion einrichten**, um ein reguläres Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms annehmen oder bearbeiten, bevor er **Weiter** auswählt.
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
    ![](assets/set-up-prod2.png)
 
-1. Once you have selected the solutions, click **Create**.
+1. Klicken Sie nach Auswahl der Lösungen auf **Erstellen**.
 
    ![](assets/set-up-prod3.png)
 
-1. Sobald Sie Ihre Programm-Karte auf der Landingpage sehen, halten Sie den Mauszeiger darüber, um das Symbol Cloud Manager auszuwählen, um zur Seite &quot;Cloud Manager- **Übersicht** &quot;zu navigieren.
+1. Sobald Sie Ihre Programm-Karte auf der Landingpage sehen, halten Sie den Mauszeiger darüber, um das Cloud Manager-Symbol auszuwählen, um zur Seite **Übersicht** zu navigieren.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Ein reguläres Programm verfügt nicht über die Funktion **Automatisches Setup**.
 
 
 
