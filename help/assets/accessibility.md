@@ -1,11 +1,11 @@
 ---
 title: Barrierefreiheit in [!DNL Experience Manager Assets]
-description: Erkennen Sie, wie Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager] als Cloud Service Benutzern mit Behinderungen helfen.
+description: Erkennen Sie, wie Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Benutzern mit Behinderungen helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1dc278c85a1dabdd3e6ac4c0de95271d9da3260c
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1912'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager Assets] als Cloud Service {#accessibility-in-aem-assets}
+# Barrierefreiheitsfunktionen in [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] Ersteller und Herausgeber von Inhalten können beeindruckende Erlebnisse im Web bereitstellen. Adobe bemüht sich, die Schöpfer mit Behinderungen einzubeziehen, indem die Zugänglichkeit von [!DNL Experience Manager] verbessert wird. Die Software wird kontinuierlich erweitert, um den Anforderungen aller Benutzertypen gerecht zu werden und die weltweiten Standards einzuhalten, zu denen Personen mit Sehbehinderungen, Hörgeschäften, Mobilitäten oder anderen Beeinträchtigungen gehören.
 
