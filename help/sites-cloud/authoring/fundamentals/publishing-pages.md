@@ -113,7 +113,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 >
 >Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten  {#manage-publication}
+#### Veröffentlichung verwalten   {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -212,11 +212,11 @@ Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der
 * [Im Seiteneditor](#unpublishing-from-the-editor)
 * [In der Sites-Konsole](#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor  {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor   {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole  {#unpublishing-from-the-console}
+### Rückgängigmachen der Veröffentlichung in der Konsole   {#unpublishing-from-the-console}
 
 Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
 
