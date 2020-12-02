@@ -16,19 +16,19 @@ ht-degree: 72%
 
 Befolgen Sie den folgenden Abschnitt, um die wichtigen Überlegungen zum Ausführen des Best Practices-Analyzer (BPA) zu verstehen:
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/upgrading/pattern-detector.html). Die von BPA verwendete Version des Musterdetektors ist im BPA-Installationspaket enthalten.
+* Der BPA-Bericht wird mit der Ausgabe von Adobe Experience Manager (AEM) [Mustererkennung](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/upgrading/pattern-detector.html) erstellt. Die von BPA verwendete Version des Musterdetektors ist im BPA-Installationspaket enthalten.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA kann nur vom Benutzer **admin** oder einem Benutzer in der Gruppe **administrators** ausgeführt werden.
 
 * BPA wird auf AEM Instanzen mit Version 6.1 und höher unterstützt.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > Bitte lesen Sie [Installieren auf AEM 6.1](#installing-on-aem61) für spezielle Anforderungen für die Installation von BPA auf AEM 6.1.
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA kann auf jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, dass es auf einer *Stage*-Umgebung ausgeführt wird.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Alternativ kann CRA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
+   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA auf einer *Author*-Umgebung auszuführen, die der *Production*-Umgebung in den Bereichen Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen so nahe wie möglich ist. Alternativ kann CRA in einem Klon der *Autoren*-Produktionsumgebung ausgeführt werden.
 
 * Die Generierung von BPA-Berichtinhalten kann sehr lange dauern, von einigen Minuten bis zu einigen Stunden. Die benötigte Zeit hängt in hohem Maße von der Größe und Art des AEM-Repository-Inhalts, der AEM-Version und anderen Faktoren ab.
 
@@ -39,7 +39,7 @@ Befolgen Sie den folgenden Abschnitt, um die wichtigen Überlegungen zum Ausfüh
 Der Best Practices-Analyzer kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Laden Sie den Best Practices-Analyzer vom [Software-Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal herunter.
 
 ## Ansicht des Berichts &quot;Best Practices Analyzer&quot; {#viewing-report}
 
@@ -47,11 +47,11 @@ Der Best Practices-Analyzer kann als ZIP-Datei vom Software Distribution Portal 
 
 In diesem Abschnitt erfahren Sie, wie der Bericht Best Practices-Analyzer Ansicht wird:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Wählen Sie Adobe Experience Manager und navigieren Sie zu Tools -> **Vorgänge** -> **Best Practices Analyzer**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Click on **Generate Report** to execute the Best Practices Analyzer.
+1. Klicken Sie auf **Bericht erstellen**, um den Best Practices-Analyzer auszuführen.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -73,7 +73,7 @@ In diesem Abschnitt erfahren Sie, wie der Bericht Best Practices-Analyzer Ansich
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >Sie können die BPA zwingen, ihren Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -92,7 +92,7 @@ In Adobe Experience Manager 6.1 funktioniert das Tool nicht und es kann nur die 
 >[!NOTE]
 >In allen Versionen kann die enthaltene Mustererkennung unabhängig ausgeführt werden.
 
-## Interpretieren des Berichts &quot;Best Practices Analyzer&quot; {#cra-report}
+## Interpretieren des Berichts Best Practices Analyzer {#cra-report}
 
 Wenn das Analyzer-Tool für Best Practices in der AEM-Instanz ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
 
@@ -121,9 +121,9 @@ Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 | CRITICAL | Diese Ergebnisse stellen wahrscheinlich ein Problem bei der Aktualisierung dar, das behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
 
 
-## Interpretieren des CSV-Berichts &quot;Best Practices Analyzer&quot; {#cra-csv-report}
+## Interpretieren des CSV-Berichts zu Best Practices für Analyzer {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Abhängig von Ihren Browser-Einstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv` heruntergeladen.
+Wenn Sie in Ihrer AEM auf die Option **CSV** klicken, wird das CSV-Format des Berichts Best Practices Analyzer aus dem Inhaltscache erstellt und an Ihren Browser zurückgegeben. Abhängig von Ihren Browser-Einstellungen wird dieser Bericht automatisch als Datei mit dem Standardnamen `results.csv` heruntergeladen.
 
 Wenn der Cache abgelaufen ist, wird der Bericht erneut generiert, bevor die CSV-Datei erstellt und heruntergeladen wird.
 
@@ -147,7 +147,7 @@ Der Wert „\N“ in einer Spalte für ein einzelnes Ergebnis zeigt an, dass kei
 
 Die BPA stellt eine HTTP-Schnittstelle bereit, die als Alternative zur Benutzeroberfläche in AEM verwendet werden kann. Die Schnittstelle unterstützt sowohl HEAD- als auch GET-Befehle. Er kann zum Generieren des BPA-Berichts und zur Rückgabe in einem der drei folgenden Formate verwendet werden: JSON-, CSV- und tabulatorgetrennte Werte (TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+Die folgenden URLs stehen für HTTP-Zugriff zur Verfügung, wobei `<host>` Hostname und gegebenenfalls Anschluss des Servers ist, auf dem die BPA installiert ist:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` für das JSON-Format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` für das CSV-Format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` für das TSV-Format
@@ -210,7 +210,7 @@ Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administr
 
 ### Installieren in AEM 6.1 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Dieses Konto ist auf AEM 6.2 und höher verfügbar. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA verwendet ein Systemdienst-Benutzerkonto mit dem Namen `repository-reader-service`, um den Musterdetektor auszuführen. Dieses Konto ist auf AEM 6.2 und höher verfügbar. In AEM 6.1 muss dieses Konto vor der Installation von BPA wie folgt erstellt werden:**
 
 1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
 
