@@ -162,7 +162,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt   {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt    {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
