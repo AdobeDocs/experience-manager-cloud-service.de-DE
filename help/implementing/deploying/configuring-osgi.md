@@ -472,7 +472,7 @@ config.dev
 
 ## Cloud Manager-API-Format zum Festlegen von Eigenschaften {#cloud-manager-api-format-for-setting-properties}
 
-Auf [dieser Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) erfahren Sie, wie die API konfiguriert werden muss.
+Siehe [diese Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) darüber, wie die API konfiguriert werden muss.
 >[!NOTE]
 >
 >Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle &quot;Deployment Manager - Cloud Service&quot;zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
