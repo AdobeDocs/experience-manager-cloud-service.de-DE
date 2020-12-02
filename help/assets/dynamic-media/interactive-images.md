@@ -146,7 +146,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 **Beispiel**
 
-Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html) anwenden.
+Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html) anwenden.
 
 Die Demo-Webseite enthält mehrere Produkt-Miniaturansichten. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Back-End gesendeten Schnellansichtsanforderungen:
 
@@ -200,7 +200,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der S
 
    Sie sind nun bereit, einen Bildbanner hochzuladen.
 
-## Hochladen eines Bildbanners   {#uploading-an-image-banner}
+## Hochladen eines Bildbanners    {#uploading-an-image-banner}
 
 Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem nächsten Schritt fort: [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
 
@@ -212,7 +212,7 @@ Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem n
 
    Sie können jetzt dem Bildbanner Hotspots hinzuzufügen. Anweisungen dazu finden Sie in der folgenden Aufgabe.
 
-## Hinzufügen von Hotspots zu einem Bildbanner   {#adding-hotspots-to-an-image-banner}
+## Hinzufügen von Hotspots zu einem Bildbanner    {#adding-hotspots-to-an-image-banner}
 
 Sie können einem Bildbanner Hotspots hinzufügen, indem Sie den Editor auf der Seite „Hotspot-Verwaltung“ verwenden.
 
@@ -307,7 +307,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
    >
    >Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
-### (Optional) Anzeigen einer Vorschau für interaktive Bilder   {#optional-previewing-interactive-images}
+### (Optional) Anzeigen einer Vorschau für interaktive Bilder    {#optional-previewing-interactive-images}
 
 Mithilfe der Vorschau können Sie eine Darstellung des interaktiven Bildes aus der Perspektive der Kunden anzeigen und die Hotspots des Bildes testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
 
@@ -343,7 +343,7 @@ Der kopierte Einbettungs-Code ist für eine responsive Umgebung ausgelegt, sodas
 
 **Beispiel**
 
-Wenn Sie die [Demo-Website als Beispiel](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html) betrachten, beachten Sie, dass das Bild mit den drei Männern ein statisches `IMG`-Tag darstellt:
+Wenn Sie die [Demo-Website als Beispiel](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html) betrachten, beachten Sie, dass das Bild mit den drei Männern ein statisches `IMG`-Tag darstellt:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -363,7 +363,7 @@ Informationen finden Sie unter [Image-Serving-Befehl](https://docs.adobe.com/con
 
 Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihrer Website integrieren.
 
-## Integrieren eines interaktiven Bildes in einer Schnellansicht   {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrieren eines interaktiven Bildes in einer Schnellansicht    {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
