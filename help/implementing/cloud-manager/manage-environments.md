@@ -37,7 +37,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >[!NOTE]
    >Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt.  Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
 
-## Hinzufügen von Umgebung {#adding-environments}
+## Hinzufügen der Umgebung {#adding-environments}
 
 1. Klicken Sie auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm **Umgebungen** zugegriffen werden.
    ![](assets/environments-tab.png)
@@ -64,15 +64,15 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
 
-## Umgebung anzeigen {#viewing-environment}
+## Anzeigen der Umgebung {#viewing-environment}
 
-Die **Umgebung** -Karte auf der Seite Überblick Liste bis zu drei Umgebung.
+Die Karte **Umgebung** auf der Seite &quot;Überblick&quot;Liste bis zu drei Umgebung.
 
-1. Klicken Sie auf die Schaltfläche &quot;Alle **** anzeigen&quot;, um zur Zusammenfassungsseite für die **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
+1. Klicken Sie auf die Schaltfläche **Alle anzeigen**, um zur Zusammenfassungsseite **Umgebung** zu navigieren, um eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
 
    ![](assets/environment-view-1.png)
 
-1. Auf der Seite &quot; **Umgebung** &quot;wird die Liste aller vorhandenen Umgebung angezeigt.
+1. Auf der Seite **Umgebung** wird die Liste aller vorhandenen Umgebung angezeigt.
 
    ![](assets/environment-view-2.png)
 
@@ -138,13 +138,13 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 
 Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Entwicklerkonsole**.
 
-## Lokale Anmeldung {#login-locally}
+## Lokal anmelden {#login-locally}
 
-Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der Karte für **Umgebung** , um sich lokal bei Adobe Experience Manager anzumelden.
+Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in **Umgebung** Karte, um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![](assets/environ-login-locally.png)
 
-Darüber hinaus können Sie sich lokal über die Zusammenfassungsseite für **Umgebung** anmelden.
+Zusätzlich können Sie sich lokal über die Zusammenfassungsseite **Umgebung** anmelden.
 
 ![](assets/environ-login-locally-2.png)
 
