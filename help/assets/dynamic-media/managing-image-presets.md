@@ -77,7 +77,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 >
 >Im Workflow „DAM Update Asset“ generiert der Schritt **[!UICONTROL EPS-Miniaturansichten]** Miniaturansichten für EPS-Dateien.
 
-#### Metadateneigenschaften von PDF-/AI-/EPS-Assets  {#pdf-ai-eps-asset-metadata-properties}
+#### Metadateneigenschaften von PDF-/AI-/EPS-Assets   {#pdf-ai-eps-asset-metadata-properties}
 
 | **Metadateneigenschaft** | **Beschreibung** |
 |---|---|
@@ -130,7 +130,7 @@ Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Raste
 
 Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
-### InDesign-Dateiformat (INDD)  {#indesign-indd-file-format}
+### InDesign-Dateiformat (INDD)   {#indesign-indd-file-format}
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
@@ -182,8 +182,10 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 >[!NOTE]
 >
 >* Die Größe der Miniaturansichten für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturansichten“ konfiguriert.
->
->* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+   >
+   >
+* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+
 >
 
 
@@ -203,7 +205,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
 
-### Erhöhen oder Verringern der Anzahl der angezeigten Bildvorgaben  {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Erhöhen oder Verringern der Anzahl der angezeigten Bildvorgaben   {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabedarstellungen an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabedarstellung]** anzeigen. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
@@ -466,7 +468,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
 1. Nehmen Sie Änderungen vor und klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder auf **[!UICONTROL Abbrechen]**, um sie zu verwerfen.
 
-### Veröffentlichen von Bildvorgaben  {#publishing-image-presets}
+### Veröffentlichen von Bildvorgaben   {#publishing-image-presets}
 
 Bildvorgaben werden automatisch veröffentlicht.
 
