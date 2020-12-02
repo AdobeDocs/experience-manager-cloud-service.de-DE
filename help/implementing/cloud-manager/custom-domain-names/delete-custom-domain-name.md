@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Seite &quot;Domäneneinstellungen&quot;.
 1. Identifizieren Sie die Zeile, in der der benutzerdefinierte Domänenname aufgeführt ist, den Sie löschen möchten.
-1. Wählen Sie die **...** Menü ganz rechts in der Zeile
+1. Wählen Sie **...** Menü am äußersten rechten Ende der Zeile
 1. Wählen Sie die Option &quot;Löschen&quot;
 1. Senden bestätigen
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 1. Navigieren Sie auf der Seite &quot;Umgebung&quot;zum Bildschirm &quot;Umgebung Details&quot;der Umgebung von Interesse
 1. Identifizieren Sie in der Tabelle &quot;Domänennamen&quot;die Zeile, in der der benutzerdefinierte Domänenname, den Sie löschen möchten, aufgeführt ist.
-1. Wählen Sie die **...** Menü ganz rechts in der Zeile
+1. Wählen Sie **...** Menü am äußersten rechten Ende der Zeile
 1. Wählen Sie die Option &quot;Löschen&quot;
 1. Senden bestätigen
