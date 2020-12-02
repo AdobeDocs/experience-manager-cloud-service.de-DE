@@ -16,7 +16,7 @@ Der Best Practices-Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementi
 
 Dieses Tool generiert einen Bericht, in dem Bereiche mit potenziellen Überarbeitungen identifiziert werden. Dies ist der erste Schritt auf dem Weg zur Umstellung auf AEM as a Cloud Service.
 
-## Bericht zu Best Practices für Analyzer {#bpa-report}
+## Best Practices-Analyzer-Bericht {#bpa-report}
 
 Der Bericht &quot;Best Practices-Analyzer&quot;wird verwendet, um ein allgemeines Verständnis der allgemeinen Aktualisierungsbereitschaft zu gewinnen. Der Bericht enthält Feststellungen in Kategorien zu Problemen, die vor einer erfolgreichen Bereitstellung in AEM as a Cloud Service behandelt werden müssen.
 
@@ -33,4 +33,4 @@ Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösunge
 >[!NOTE]
 >Der Bericht &quot;Best Practices-Analyzer&quot;beschleunigt die Abschätzung der Zeit und Kosten, die für die Transition als Cloud Service erforderlich sind, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
 
-Sie können den Bericht &quot;Best Practices Analyzer&quot;auch von Ihrer AEM Instanz herunterladen. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+Sie können den Bericht &quot;Best Practices Analyzer&quot;auch von Ihrer AEM Instanz herunterladen. Weitere Informationen finden Sie unter [Ansicht des Berichts &quot;Best Practices für Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)&quot;.
