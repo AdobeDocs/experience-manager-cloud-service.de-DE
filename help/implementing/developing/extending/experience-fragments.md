@@ -22,7 +22,7 @@ Ein Experience Fragment-Master und/oder eine Experience Fragment-Variante verwen
 
 Da es kein `/libs/cq/experience-fragments/components/xfpage/xfpage.html` gibt, wird auf Folgendes zurückgegriffen:
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` :  `wcm/foundation/components/page`
 
 ## Einfache HTML-Ausgabe {#the-plain-html-rendition}
 
@@ -97,7 +97,7 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
 Dadurch können Benutzer Erlebnisfragmente in /content/experience-fragments als 
-`cq:allowedTemplates` enthält alle Vorlagen, deren Namen mit `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+`cq:allowedTemplates` enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
