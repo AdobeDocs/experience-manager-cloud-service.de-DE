@@ -14,7 +14,7 @@ ht-degree: 93%
 
 Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.  Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-These files can be downloaded through the UI, either from the **Overview**  page:
+Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Seite **Übersicht**:
 
 ![](assets/download-logs1.png)
 
