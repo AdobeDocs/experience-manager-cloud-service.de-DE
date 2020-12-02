@@ -47,7 +47,7 @@ Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffent
 >
 >Standardmäßig zeigt das System 15 Viewer-Vorgaben, wenn Sie in einer Detailansicht eines Assets „Viewer“ auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](#increasing-the-number-of-viewer-presets-that-display).
 
-### Viewer-Unterstützung für Web-Seiten mit responsivem Design  {#viewer-support-for-responsive-designed-web-pages}
+### Viewer-Unterstützung für Web-Seiten mit responsivem Design   {#viewer-support-for-responsive-designed-web-pages}
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Hostseite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
@@ -154,7 +154,7 @@ Siehe auch [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/
 
 Informationen zu unterstützten Webbrowsern und Betriebssystemversionen für Viewer finden Sie in den Viewer-Versionshinweisen.
 
-Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewer-Referenzhandbuchs](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/home.html).
+Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewer-Referenzhandbuchs](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 >[!NOTE]
 >
@@ -178,17 +178,17 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>Carousel_Dotted_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_dotted_light.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_dark</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_dark.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
@@ -263,7 +263,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>SpinSet_light</td>
-   <td>Spin_Set</td>
+   <td>Rotationsset</td>
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
@@ -303,7 +303,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertical_Zoom</td>
+   <td>Vertikal_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -419,13 +419,13 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
       Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest bzw. passen Sie diese an, um sofort anhand des Beispiels auf der linken Seite des Editors zu sehen, wie sich dies auf den Viewer auswirkt.
 
-      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/home.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) eine Aufstellung und Beschreibung jeder Eigenschaft.
+      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
    * Wenn Stileinstellungen in einer separaten CSS-Datei definiert sind, können Sie die CSS-Datei in AEM Assets hochladen. Tippen Sie auf **[!UICONTROL CSS importieren]** unter dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** (ggf. müssen Sie hierzu einen Bildlauf im Visual Editor durchführen), um nach der hochgeladenen CSS-Datei zu suchen und diese mit der Viewer-Vorgabe zu verknüpfen.
 
       Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema Anpassen des *&lt;Viewer-Name>*-Viewers im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/home.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema Anpassen des *&lt;Viewer-Name>*-Viewers im [Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
    >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, tippen Sie im Pulldown-Menü „Ausgewählter Typ“ auf **[!UICONTROL CSS ein-/ausblenden]** (Sie müssen ggf. im Visual Editor nach oben blättern, um diese Option anzuzeigen).
@@ -455,7 +455,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
-### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos  {#special-considerations-for-creating-an-interactive-viewer-preset}
+### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos   {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
@@ -528,7 +528,7 @@ Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon 
 
    Bei aktivierten Viewer-Vorgaben wird die Umschaltfläche rechts in einem blauen Feld angezeigt; bei deaktivierten Viewer-Vorgaben wird die Umschaltfläche links in einem hellgrauen Feld angezeigt.
 
-## Veröffentlichen von Viewer-Vorgaben  {#publishing-viewer-presets}
+## Veröffentlichen von Viewer-Vorgaben   {#publishing-viewer-presets}
 
 Wird der Status einer Viewer-Vorgabe aktiviert (auf „Ein“ gestellt), bedeutet dies, dass sie in der Dynamic Media-Komponente, in der Komponente für interaktive Medien und bei jeder Anzeige eines Assets sichtbar ist.
 
@@ -544,7 +544,7 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/dynamic-media/pr
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus.
 1. Tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichen]**.
 
-## Sortieren von Viewer-Vorgaben  {#sorting-viewer-presets}
+## Sortieren von Viewer-Vorgaben   {#sorting-viewer-presets}
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann links in der Leiste auf **[!UICONTROL Tools]**(Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 1. Klicken Sie auf **[!UICONTROL Vorgabentitel]**, **[!UICONTROL Typ]**, **[!UICONTROL Veröffentlicht]** oder **[!UICONTROL Status]**, um nach dieser Spaltenüberschrift zu sortieren. Klicken Sie beispielsweise auf **[!UICONTROL Typ]**, um die Viewer-Vorgabentypen in alphabetischer oder in umgekehrt alphabetischer Reihenfolge zu sortieren.
