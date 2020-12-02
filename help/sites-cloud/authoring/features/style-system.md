@@ -67,7 +67,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautor](#as-a-template-author) beschrieben.
 1. Inhaltsautoren können die Stile daraufhin wie im Abschnitt [Als Inhaltsautor](#as-a-content-author) beschrieben verwenden.
 
-### Als Inhaltsautor  {#as-a-content-author}
+### Als Inhaltsautor   {#as-a-content-author}
 
 1. Gehen Sie nach der Installation des WKND-Projekts zur englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` und bearbeiten Sie die Seite.
 1. Wählen Sie weiter unten auf der Seite eine Komponente **Titel** aus
@@ -82,7 +82,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
    >
    >In diesem Beispiel schließen sich die **Farbstile** (**Schwarz**, **Weiß** und **Grau**) gegenseitig aus, während die **Stiloptionen** (**Unterstrichen**, **Rechtsbündig ausrichten** und **Mini-Abstand**) kombiniert werden können. Dies kann [vom Vorlagenautor in der Vorlage konfiguriert werden](#as-a-template-author).
 
-### Als Vorlagenautor  {#as-a-template-author}
+### Als Vorlagenautor   {#as-a-template-author}
 
 1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
 
@@ -121,7 +121,6 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautoren festgelegten Stile automatisch in den Decoration-Element-Wrapper ein, der automatisch auf alle bearbeitbaren Komponenten angewendet wird. Dafür ist keine weitere Aktion der Komponente erforderlich.
@@ -136,14 +135,13 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 >[!NOTE]
 >
 >Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
 
-### Stile mit Elementnamen  {#styles-with-element-names}
+### Stile mit Elementnamen   {#styles-with-element-names}
 
 Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. In der Registerkarte „Stile“ für die Richtlinie im Dialogfeld „Design“ kann der Vorlagenautor außerdem Elementnamen auswählen, die für die einzelnen Stile festgelegt werden sollen. Dadurch wird der Elementname des Wrapper-Elements definiert.
 
@@ -158,6 +156,7 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 >1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+
 >
 
 
