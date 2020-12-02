@@ -25,11 +25,11 @@ Gehen Sie wie folgt vor, um ein AEM Anwendungsprojekt in Cloud Manager mithilfe 
 
    ![](assets/create-wizard2.png)
 
-1. Die Kachel &quot; **Projekterstellung in Bearbeitung** &quot;wird im Bildschirm &quot; *Programm-Übersicht* &quot;angezeigt.
+1. Die Kachel **Projekterstellung in Bearbeitung** wird im Bildschirm *Übersicht über Programme* angezeigt.
 
    ![](assets/create-wizard3.png)
 
 1. Sobald die Programmerstellung abgeschlossen ist, wird die Kachel **Umgebung hinzufügen** auf der Seite *Programmübersicht* angezeigt.
    ![](assets/create-wizard4.png)
 
-   Informationen zum Hinzufügen und Verwalten von Umgebung finden Sie unter [Verwalten Ihrer Umgebung](/help/implementing/cloud-manager/manage-environments.md) .
+   Informationen zum Hinzufügen und Verwalten von Umgebung finden Sie unter [Verwalten Ihrer Umgebung](/help/implementing/cloud-manager/manage-environments.md).
