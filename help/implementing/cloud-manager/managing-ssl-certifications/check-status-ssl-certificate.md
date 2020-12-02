@@ -16,8 +16,11 @@ Der Status Ihrer SSL-Zertifikate kann auf einen Blick von der SSL-Zertifikatssei
 
 Sie können den Status eines SSL-Zertifikats aus den folgenden Farbschemas identifizieren:
 
-* **Grün** Zeigt an, dass Ihr Zertifikat für die Zukunft mindestens 60 Tage gültig ist.
+* ****
+GreenGibt an, dass Ihr Zertifikat für die Zukunft mindestens 60 Tage gültig ist.
 
-* **Orange** Gibt an, dass Ihr Zertifikat in weniger als 60 Tagen ablaufen soll. Es ist an der Zeit, sicherzustellen, dass Sie planen, Ihr Zertifikat zu verlängern und es über die Benutzeroberfläche von Cloud Manager zu ersetzen, um möglichen Site-Zugriff oder Ausfällen vorzubeugen. Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren.
+* ****
+OrangeGibt an, dass Ihr Zertifikat in weniger als 60 Tagen abläuft. Es ist an der Zeit, sicherzustellen, dass Sie planen, Ihr Zertifikat zu verlängern und es über die Benutzeroberfläche von Cloud Manager zu ersetzen, um möglichen Site-Zugriff oder Ausfällen vorzubeugen. Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren.
 
-* **Rot** Gibt an, dass Ihr SSL-Zertifikat trotz mehrerer Benachrichtigungen abgelaufen ist.
+* ****
+RedGibt an, dass Ihr SSL-Zertifikat trotz mehrerer Benachrichtigungen abgelaufen ist.
