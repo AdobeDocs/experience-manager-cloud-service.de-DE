@@ -20,7 +20,7 @@ Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, frühe
 
 ## Vorgangsdetails {#operation-details}
 
-Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich](/help/sites-cloud/authoring/features/page-diff.md)nebeneinander gerendert werden kann.
+Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich nebeneinander](/help/sites-cloud/authoring/features/page-diff.md) gerendert werden kann.
 
 Dieser Erholungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert kein Eingreifen. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
 
