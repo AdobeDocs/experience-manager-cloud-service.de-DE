@@ -43,7 +43,7 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 >
 >Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view) angezeigt.
 
-## Öffnen des Posteingangs     {#opening-the-inbox}
+## Öffnen des Posteingangs      {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
