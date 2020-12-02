@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Anzeigen des Aktualisieren und Ersetzen eines SSL-Zertifikats  {#view-update-replace-ssl-certificate}
+# Anzeigen der Aktualisierung und Ersetzung eines SSL-Zertifikats {#view-update-replace-ssl-certificate}
 
 ## Anzeigen und Aktualisieren eines SSL-Zertifikats {#view-update}
 
