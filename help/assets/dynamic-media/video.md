@@ -23,6 +23,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 >Stellen Sie vor der Arbeit mit Videos in Dynamic Media sicher, dass der AEM-Administrator Dynamic Media Cloud Services bereits aktiviert und konfiguriert hat.
 >
 >* Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in „Konfigurieren von Dynamic Media“ und [Fehlerbehebung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -58,7 +59,6 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturansichten an:
-
          [Videos vorab anzeigen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) oder [Assets vorab anzeigen](/help/assets/dynamic-media/previewing-assets.md)
          [Videoausgabedarstellungen verwalten](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -78,7 +78,6 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
           [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
     * Bearbeiten der Eigenschaften von Video wie Titel, Beschreibung und Tags, benutzerdefinierte Metadatenfelder:
-
     [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
     
     * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
@@ -107,11 +106,9 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
-
          [Verknüpfen Sie URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
-
          [Betten Sie den Video-Viewer auf einer Web-Seite ein](/help/assets/dynamic-media/embed-code.md).
    * [Veröffentlichen Sie Videos auf YouTube](#publishing-videos-to-youtube).
    * [Generieren Sie Videoberichte](#viewing-video-reports).
@@ -120,7 +117,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
 
 
 
-## Arbeiten mit Video in Dynamic Media  {#working-with-video-in-dynamic-media}
+## Arbeiten mit Video in Dynamic Media   {#working-with-video-in-dynamic-media}
 
 „Video in Dynamic Media“ ist eine Komplettlösung, die das Veröffentlichen von qualitativ hochwertigen adaptiven Videos für das Streaming auf mehreren Bildschirmen vereinfacht, einschließlich Desktop und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Ein adaptives Videoset umfasst Versionen desselben Videos, die mit unterschiedlichen Bit-Raten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1.000 kBit/s. Der Desktop-Computer oder das Mobilgerät erkennt die verfügbare Bandbreite.
 
@@ -177,9 +174,9 @@ Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automa
 
 Indem Sie die Fähigkeiten, die Wiedergabekomponenten anhand von HTML5 und CSS zu entwerfen, eingebettete Wiedergabe zu ermöglichen und adaptives und progressives Streaming zu verwenden (je nach Browser-Funktionen), in einem einzelnen Player kombinieren, erreichen Sie mit Ihren Rich-Media-Inhalten mehr Desktop- und Mobilbenutzer und können für ein optimiertes Videoerlebnis sorgen.
 
-Weitere Informationen finden Sie auch im Abschnitt zu [HTML5-Viewern](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in der Referenzanleitung für Adobe Scene7 Viewer.
+Weitere Informationen finden Sie auch im Abschnitt zu [HTML5-Viewern](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in der Referenzanleitung für Adobe Scene7 Viewer.
 
-### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für den Bit-Ratenwechsel verwendeten Videos auf allen MP4-Videos im adaptiven Videoset.
 
@@ -266,7 +263,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
  </tbody>
 </table>
 
-## Architektur der Dynamic Media-Videolösung  {#architecture-of-dynamic-media-video-solution}
+## Architektur der Dynamic Media-Videolösung   {#architecture-of-dynamic-media-video-solution}
 
 Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die über DMGateway (im Hybridmodus von Dynamic Media) hochgeladen und kodiert sowie für die öffentliche Anzeige verfügbar gemacht werden.
 
@@ -326,7 +323,7 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 
 Beispiel: Ein Video mit einer Breite von 1440 x einer Höhe von 1080 hat ein Seitenverhältnis von 1440/1080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
 
-### Bitrate  {#bitrate}
+### Bitrate   {#bitrate}
 
 Die Bitrate ist die kodierte Menge an Daten für eine Videowiedergabe von einer einzigen Sekunde Dauer. Die Bitrate wird in Kilobit pro Sekunde (kBit/s) gemessen.
 
@@ -414,7 +411,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden. Da MP4-Dateien den H.264-Video-Codec nutzen, erhalten Sie damit hohe Videoqualität, aber auch eine komprimierte Dateigröße.
 
-## Veröffentlichen von Videos auf YouTube  {#publishing-videos-to-youtube}
+## Veröffentlichen von Videos auf YouTube   {#publishing-videos-to-youtube}
 
 Sie können in AEM Assets verwaltete Video-Assets direkt in einem zuvor erstellten YouTube-Kanal veröffentlichen.
 
@@ -583,14 +580,14 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### Einrichten von YouTube in AEM  {#setting-up-youtube-in-aem}
+### Einrichten von YouTube in AEM   {#setting-up-youtube-in-aem}
 
 Mit AEM 6.4 wurde eine neue Touch-Benutzeroberflächenmethode eingeführt, um YouTube Publishing in AEM einzurichten. Führen Sie je nach der installierten AEM-Instanz, die Sie verwenden, einen der folgenden Schritte aus:
 
 * Informationen zum Konfigurieren von YouTube in AEM vor Version 6.4 finden Sie unter [Einrichten von YouTube in AEM vor Version 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Informationen zum Konfigurieren von YouTube in AEM 6.4 oder neuer finden Sie im Abschnitt zum [Einrichten von YouTube in AEM 6.4 oder neuer](#setting-up-youtube-in-aem-and-later).
 
-#### Einrichten von YouTube in AEM 6.4 oder neuer  {#setting-up-youtube-in-aem-and-later}
+#### Einrichten von YouTube in AEM 6.4 oder neuer   {#setting-up-youtube-in-aem-and-later}
 
 1. Melden Sie sich als Administrator bei Ihrer Dynamic Media-Instanz an.
 1. Tippen Sie oben links in AEM auf das AEM-Logo und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration zur YouTube-Veröffentlichung]**.
@@ -746,7 +743,7 @@ Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen 
 
    Siehe [Metadatenprofile](/help/assets/metadata-profiles.md) und [Videoprofile](/help/assets/dynamic-media/video-profiles.md).
 
-### Veröffentlichen von Videos in Ihrem YouTube-Kanal  {#publishing-videos-to-your-youtube-channel}
+### Veröffentlichen von Videos in Ihrem YouTube-Kanal   {#publishing-videos-to-your-youtube-channel}
 
 Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben. So geben Sie AEM an, welche Assets in Ihrem YouTube-Kanal veröffentlicht werden sollen.
 
@@ -757,10 +754,9 @@ Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben.
 >**[!UICONTROL Sofort veröffentlichen]** bedeutet, dass das hochgeladene Asset nach dem Synchronisieren mit IPS automatisch im Bereitstellungssystem veröffentlicht wird. Das gilt zwar für Dynamic Media, aber nicht für YouTube. Um auf YouTube zu veröffentlichen, müssen Sie über die AEM-Autorenumgebung veröffentlichen.
 
 >[!NOTE]
->
->Um Inhalte über YouTube zu veröffentlichen, verwendet AEM den Workflow **[!UICONTROL In YouTube veröffentlichen]**, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
->Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
->Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter „Replikation“ entnehmen. Hinweis: Für die Überwachung solcher Informationen benötigen Sie Administratorzugriff.
+Um Inhalte über YouTube zu veröffentlichen, verwendet AEM den Workflow **[!UICONTROL In YouTube veröffentlichen]**, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
+Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
+Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter „Replikation“ entnehmen. Hinweis: Für die Überwachung solcher Informationen benötigen Sie Administratorzugriff.
 
 **So veröffentlichen Sie Videos in Ihrem YouTube-Kanal**:
 
@@ -795,8 +791,7 @@ Wenn nach acht Stunden noch immer die Statusmeldung **[!UICONTROL Hochgeladen (V
 Sie können nach dem Veröffentlichen des Videos eine YouTube-URL-Zeichenfolge abrufen, die durch Dynamic Media generiert wird. Wenn Sie die YouTube-URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder Anwendung einfügen können.
 
 >[!NOTE]
->
->Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube veröffentlicht haben.
+Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube veröffentlicht haben.
 
 So verknüpfen Sie YouTube-URLs mit einer Webanwendung:
 
@@ -808,18 +803,16 @@ So verknüpfen Sie YouTube-URLs mit einer Webanwendung:
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]**.
 1. Wählen und kopieren Sie unter der Überschrift „YouTube-Publishing“ in der YouTube-URL-Liste den URL-Text in Ihren Webbrowser, um das Asset in einer Vorschau anzuzeigen oder der Seite mit den Webinhalten hinzuzufügen.
 
-### Rückgängigmachen der Veröffentlichung von Videos und Entfernen aus YouTube  {#unpublishing-videos-to-remove-them-from-youtube}
+### Rückgängigmachen der Veröffentlichung von Videos und Entfernen aus YouTube   {#unpublishing-videos-to-remove-them-from-youtube}
 
 Wenn Sie die Veröffentlichung eines Video-Assets in AEM rückgängig machen, wird das Video aus YouTube entfernt.
 
 >[!CAUTION]
->
->Videos, die Sie direkt in YouTube entfernen, erkennt AEM nicht als gelöscht und verhält sich so, als wären sie auf YouTube weiterhin veröffentlicht. Machen Sie die Veröffentlichung von Video-Assets in YouTube immer über AEM rückgängig.
+Videos, die Sie direkt in YouTube entfernen, erkennt AEM nicht als gelöscht und verhält sich so, als wären sie auf YouTube weiterhin veröffentlicht. Machen Sie die Veröffentlichung von Video-Assets in YouTube immer über AEM rückgängig.
 
 >[!NOTE]
->
->Um Inhalte aus YouTube zu entfernen, verwendet AEM den Workflow **[!UICONTROL Veröffentlichung auf YouTube rückgängig machen]**, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
->Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
+Um Inhalte aus YouTube zu entfernen, verwendet AEM den Workflow **[!UICONTROL Veröffentlichung auf YouTube rückgängig machen]**, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
+Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 So machen Sie die Veröffentlichung von Videos rückgängig, um sie aus YouTube zu entfernen:
 
@@ -830,7 +823,7 @@ So machen Sie die Veröffentlichung von Videos rückgängig, um sie aus YouTube 
 1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Weiter]**.
 1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 
-## Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen  {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen   {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angewendet wurde, oder Ihr Video auf YouTube veröffentlichen, haben Sie vielfältige Möglichkeiten, den Fortschritt (oder die aufgetretenen Fehler) der Videokodierung/YouTube-Veröffentlichung zu überwachen. Der tatsächliche Fortschritt der YouTube-Veröffentlichung ist nur über die Protokolle einsehbar. Ob die Veröffentlichung erfolgreich war oder nicht, kann jedoch auch auf andere Weise geprüft werden, wie im folgenden Verfahren beschrieben. Darüber hinaus können Sie in einer E-Mail-Benachrichtigung darüber informiert werden, ob ein Workflow zur YouTube-Veröffentlichung oder Videokodierung abgeschlossen oder abgebrochen wurde.
 
@@ -859,19 +852,17 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
    Workflow-Informationen – z. B. zur Kodierung – werden in der Zeitleistensegment angezeigt. Bei YouTube-Veröffentlichungen enthält die Workflow-Zeitleistensegment auch den Namen des YouTube-Kanals und die URL zum YouTube-Video. In der Workflow-Zeitleistensegment werden Sie nach der Veröffentlichung auch über eventuelle Fehler benachrichtigt.
 
    >[!NOTE]
-   >
-   >Die endgültige Aufzeichnung von Ausfall-/Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
-   >* Konfiguration der Warteschlange für Apache Sling-Aufträge
-   >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
-   >* Granite-Workflow – Zeitlimit-Warteschlange
+   Die endgültige Aufzeichnung von Ausfall-/Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   * Konfiguration der Warteschlange für Apache Sling-Aufträge
+   * Handler für externe Prozessaufträge im Adobe Granite-Workflow
+   * Granite-Workflow – Zeitlimit-Warteschlange
 
    In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerungen]** und **[!UICONTROL Timeout]** anpassen.
 
 1. Informationen zu gestarteten Workflows finden Sie anhand der Workflow-Instanzen unter **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instanzen]**.
 
    >[!NOTE]
-   >
-   >Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
+   Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -884,25 +875,22 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
 1. Fehlgeschlagene Aufträge finden Sie unter „Workflowfehler“ unter **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Fehler]**. Unter **[!UICONTROL Workflowfehler]** werden alle fehlgeschlagenen Workflowaktivitäten aufgelistet.
 
    >[!NOTE]
-   >
-   >Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
+   Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >Die endgültige Aufzeichnung von Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
-   >* Konfiguration der Warteschlange für Apache Sling-Aufträge
-   >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
-   >* Granite-Workflow – Zeitlimit-Warteschlange
+   Die endgültige Aufzeichnung von Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   * Konfiguration der Warteschlange für Apache Sling-Aufträge
+   * Handler für externe Prozessaufträge im Adobe Granite-Workflow
+   * Granite-Workflow – Zeitlimit-Warteschlange
 
    In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerungen]** und **[!UICONTROL Timeout]** anpassen.
 
 1. Informationen zu abgeschlossenen Workflows finden Sie im Workflow-Archiv, das unter **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archiv]** zur Verfügung steht. Im **[!UICONTROL Workflow-Archiv]** sind alle abgeschlossenen Workflow-Aktivitäten aufgeführt.
 
    >[!NOTE]
-   >
-   >Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
+   Möglicherweise benötigen Sie Administratorrechte, um auf das Menü **[!UICONTROL Tools]** zugreifen zu können.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -957,8 +945,7 @@ For YouTube publishing jobs, do the following:
 ## Anzeigen von Videoberichten {#viewing-video-reports}
 
 >[!NOTE]
->
->Videoberichte sind nur verfügbar, wenn Sie Dynamic Media im Hybridmodus ausführen.
+Videoberichte sind nur verfügbar, wenn Sie Dynamic Media im Hybridmodus ausführen.
 
 Videoberichte enthalten mehrere aggregierte Metriken für einen angegebenen Zeitraum, anhand derer Sie überwachen können, dass veröffentlichte individuelle und aggregierte Videos die erwartete Leistung zeigen. Die folgenden wichtigsten Metrikdaten werden für alle veröffentlichten Videos auf der gesamten Website aggregiert:
 
@@ -975,8 +962,7 @@ Wenn Sie in der Liste auf einen Videonamen tippen, wird der Bericht zur Zielgrup
 Wenn das Video außerhalb von Adobe Experience Manager für Dynamic Media kodiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
 
 >[!NOTE]
->
->Nachverfolgungs- und Berichtsdaten basierend ausschließlich auf der Nutzung des eigenen Video-Players und der zugehörigen Video-Player-Vorgabe von Dynamic Media. Daher können Sie keine Videos nachverfolgen und in Berichte aufnehmen, die mit anderen Video-Playern wiedergegeben werden.
+Nachverfolgungs- und Berichtsdaten basierend ausschließlich auf der Nutzung des eigenen Video-Players und der zugehörigen Video-Player-Vorgabe von Dynamic Media. Daher können Sie keine Videos nachverfolgen und in Berichte aufnehmen, die mit anderen Video-Playern wiedergegeben werden.
 
 Wenn Sie die Funktion „Videoberichte“ zum ersten Mal aufrufen, enthält der Bericht standardmäßig Videodaten für den Zeitraum vom ersten Tag des aktuellen Monats bis zum aktuellen Datum. Sie können den standardmäßigen Datumsbereich aber außer Kraft setzen, indem Sie Ihren eigenen Datumsbereich angeben. Wenn Sie „Videoberichte“ das nächste Mal aufrufen, wird der angegebene Datumsbereich verwendet.
 
@@ -997,7 +983,7 @@ Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben  {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Scene7 HTML5 Viewer SDK erstellt haben   {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder anhand eines Standardvideo-Viewers eine benutzerdefinierte Viewer-Vorgabe erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie aber anhand des Scene7 HTML5 Viewer SDK einen eigenen Video-Viewer erstellt haben, gehen Sie wie folgt vor, um sicherzustellen, dass der Video-Viewer Tracking-Ereignisse an die Funktion „Videoberichte“ von Dynamic Media sendet.
 
@@ -1035,13 +1021,11 @@ Wenn der `config2`-Parameter `companypreset` lautet, benötigen Sie `&preset=par
 Wenn `config2` irgendeinen anderen Wert aufweist, setzen Sie den preset-Parameter auf denselben Wert wie den Parameter `config2`. Beispiel: Wenn `config2=companypreset-2` lautet, fügen Sie `&param2=companypreset-2` zur AppMeasurmentBridge.jsp-URL hinzu.
 
    * Fügen Sie dann das Skript „AppMeasurementBridge.jsp“ hinzu:
-
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
 1. Erstellen Sie die TrackingManager-Komponente wie folgt:
 
    * Erstellen Sie nach dem Aufruf von `s7sdk.Utils.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
-
       `var trackingManager = new s7sdk.TrackingManager();`
 
    * Verbinden Sie Komponenten wie folgt mit TrackingManager:
@@ -1062,7 +1046,6 @@ hinzu, um die Komponente an den TrackingManager anzuhängen. Um mehrere Viewer a
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-
    Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
    Weitere Informationen dazu finden Sie im Abschnitt *Verwenden der TrackingManager-Komponente* im *Benutzerhandbuch für Scene7 HTML5 Viewer SDK*, das Sie von [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) herunterladen können.
@@ -1074,8 +1057,7 @@ Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem
 Untertitel bieten zudem eine größere Barrierefreiheit, indem optional zuschaltbare Untertitel für Personen mit Hörbehinderung verwendet werden.
 
 >[!NOTE]
->
->Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
+Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
 Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kunden die Videos leichter finden können und zusätzliche Details zum Videoinhalt erhalten.
 
@@ -1100,8 +1082,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
    Folgen Sie jetzt auf der Website den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung .vtt.
 
    >[!NOTE]
-   >
-   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
    Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
@@ -1131,10 +1112,9 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Benutzer, die das Video abspielen, können dann in der Video-Zeitleistensegment (auch „Scrubber-Leiste“) auf eine Kapitelmarke klicken, um zu einer bestimmten Stelle im Video oder direkt zu neuen Inhalten, Demonstrationen, Übungen usw. zu springen.
 
 >[!NOTE]
->
->Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Video-Player von Dynamic Media unterstützten Kapitelmarken, die Video-Player von Drittanbietern jedoch möglicherweise nicht.
+Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Video-Player von Dynamic Media unterstützten Kapitelmarken, die Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
-Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie im Handbuch „Adobe Scene7 Viewer-SDK für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Das Adobe Scene7 Viewer-SDK ist als Download von [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) verfügbar.
+Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie im Handbuch „Adobe Scene7 Viewer-SDK für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Das Adobe Scene7 Viewer-SDK ist als Download von [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) verfügbar.
 
 Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
 
