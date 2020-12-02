@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# SSL-Zertifikat abrufen {#getting-an-ssl-certificate}
+# Abrufen eines SSL-Zertifikats {#getting-an-ssl-certificate}
 
 Unternehmen verwenden SSL-Zertifikate, um ihre Websites zu sichern und ihren Kunden das Vertrauen in sie zu geben. Um das SSL-Protokoll verwenden zu können, muss ein Webserver ein SSL-Zertifikat verwenden. Cloud Manager stellt keine SSL-Zertifikate oder privaten Schlüssel bereit. Diese müssen bei den Zertifizierungsstellen eingeholt werden.
 
