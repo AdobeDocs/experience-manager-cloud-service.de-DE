@@ -1,5 +1,5 @@
 ---
-title: Check In and Check Out files in [!DNL Assets]
+title: Ein- und Auschecken von Dateien in [!DNL Assets]
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
