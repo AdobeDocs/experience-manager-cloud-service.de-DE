@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
+description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als Cloud Service unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,15 +11,15 @@ ht-degree: 93%
 ---
 
 
-# [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
+# [!DNL Assets] unterstützte Dateiformate  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a Cloud Service unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
-In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
+Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
 Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zählen:
 
-* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
+* Schlüsseldateiformate [Adobe, die von Adobe-Anwendungen und -Diensten erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.](#adobe-formats)
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
 * Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
@@ -37,17 +37,17 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 | Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| IDEAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | they | - | they | they |
+| COLLAGE | - | - | they | - |
+| DN | they | - | they | they |
+| IDEAS | - | - | they | - |
+| INDD | they | - | they | ✓ * |
+| INDT | - | - | they | - |
+| PDF | they | they | they | they |
+| PROTO | - | - | they | - |
+| PSB | they | - | they | they |
+| PSD | they | - | they | they |
+| XD | they | - | they | they |
 
 \* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe des Ausgabeformats durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um ein größeres Ausgabeformat einzubetten.
 
@@ -55,29 +55,29 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RGB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | they | - | they | they |
+| EPS | - | they | - | - |
+| GIF | they | they | they | they |
+| JPEG | they | they | they | they |
+| PNG | they | they | they | they |
+| TIFF | they | they | they | - |
+| SVG | they | - | they | they |
+| SGI | they | they | they | they |
+| RGB | they | they | they | they |
+| RGBA | they | they | they | they |
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD   ‡ | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | they | they | they | they | they |
+| GIF | they | they | they | they | they |
+| TIFF | they | they | they | they | they |
+| JPEG | they | they | they | they | they |
+| BMP | they | - | - | - | - |
+| PSD   ‡ | they | - | - | - | - |
+| EPS | they | they | they | they | they |
+| PICT | they | - | - | - | - |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
@@ -98,44 +98,44 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/asset
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | they | they | they | - | they | they | - | - |
+| gLB | they | they | they | they | they | - | they | they |
+| gLTF | they | they | they | - | they | - | they | - |
+| OBJ | they | they | they | they | they | - | they | they |
+| STL | they | they | they | they | they | - | they | they |
+| USDz | they | they | they | they | they | - | - | they |
 
 ## [!DNL Camera RAW]-Formate {#camera-raw-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | they | they | they |
+| ARW | they | they | they |
+| CR2 | they | they | they |
+| CR3 | they | they | they |
+| CRW | they | they | they |
+| DCR | they | they | they |
+| DNG | they | they | they |
+| ERF | they | they | they |
+| FFF | they | they | they |
+| GPR | they | they | they |
+| IIQ | they | they | they |
+| KDC | they | they | they |
+| MEF | they | they | they |
+| MFW | they | they | they |
+| MOS | they | they | they |
+| MRW | they | they | they |
+| NEF | they | they | they |
+| NRW | they | they | they |
+| ORF | they | they | they |
+| PEF | they | they | they |
+| RAF | they | they | they |
+| RAW | they | they | they |
+| RW2 | they | they | they |
+| RWL | they | they | they |
+| SRF | they | they | they |
+| SRW | they | they | they |
+| X3F | they | they | they |
 
 ## Dokumentenformate {#document-formats}
 
@@ -143,60 +143,60 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | they | they | they | they | they |
+| DOCX | they | they | they | they | they |
+| DOC | - | - | - | they | they |
+| PPTX | they | they | they | they | they |
+| PPT | - | - | - | they | they |
+| XLSX | they | they | they | they | they |
+| XLS | - | - | - | they | they |
+| ODF | they | they | they | - | - |
+| OFG | they | they | they | - | - |
+| ODM | they | they | they | - | - |
+| ODP | they | they | they | - | - |
+| ODS | they | they | they | - | - |
+| ODT | they | they | they | they | they |
+| EPUB | - | they | - | - | - |
+| HTML | - | they | - | they | they |
+| PS | - | - | they | - | - |
+| RTF | - | they | - | they | they |
+| TXT | - | they | - | they | they |
+| XML | - | they | - | - | - |
 
 ## Dokumentenformate in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | they | - | - | - | - |
+| PDF | they | they | they | they | they |
+| INDD | they | - | - | - | - |
 
 ## Videoformate {#video-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | they | - |
+| 3GP | - | they | - |
+| AVI | they | they | they |
+| DIVX | they | - | they |
+| F4V | they | they | they |
+| FLV | they | they | they |
+| M2T | they | - | they |
+| M2TS | they | - | they |
+| M2V | they | - | they |
+| M4V | they | they | they |
+| MKV | they | - | they |
+| MOV | they | they | they |
+| MP4 | they | they | they |
+| MPEG | they | they | they |
+| MPG | they | they | they |
+| MTS | they | - | they |
+| OGV | they | - | they |
+| QT | they | - | they |
+| R3D | - | they | they |
+| SWF | they | - | they |
+| WebM | they | - | they |
+| WMV | they | they | they |
 
 ## Videoformate in [!DNL Dynamic Media] zum Transcodieren {#video-dynamic-media-transcoding}
 
