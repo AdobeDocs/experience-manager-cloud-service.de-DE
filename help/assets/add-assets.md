@@ -2,9 +2,9 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 33%
 
 ---
@@ -178,10 +178,6 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
    * [!UICONTROL Stopp]: Beenden Sie eine aktive Konfiguration.
    * [!UICONTROL Auftragsstatus]: Ansicht des Konfigurationsstatus, wenn er in einem laufenden Importauftrag verwendet oder für einen abgeschlossenen Auftrag verwendet wird.
    * [!UICONTROL Ansicht Assets]: Ansicht des Zielgruppen-Ordners, falls vorhanden.
-
->[!NOTE]
->
->Massenupload als Teil der Inhaltsmigration von anderen Systemen beim Einrichten und Bereitstellen auf [!DNL Experience Manager] erfordern sorgfältige Planung, Überlegung und Auswahl der Werkzeuge. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
