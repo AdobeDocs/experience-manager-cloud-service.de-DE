@@ -3,10 +3,10 @@ title: Assets-HTTP-API
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!NOTE]
 >
->Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für die Implementierung von AEM as a Cloud Service nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical).
+>Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Darstellungen) werden für AEM Bereitstellung als [!DNL Cloud Service] veraltet. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Inhaltsfragmente {#content-fragments}
 
