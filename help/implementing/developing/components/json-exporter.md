@@ -26,7 +26,7 @@ Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsd
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-Innerhalb AEM Versands wird mithilfe der Auswahl `model` und `.json` Erweiterung erreicht.
+Innerhalb AEM Versands wird mithilfe der Selektoren `model` und `.json` erreicht.
 
 `.model.json`
 
@@ -64,7 +64,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
    >[!NOTE]
    >
-   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](enabling-json-exporter.md#multiple-selectors) jedoch `model` müssen sie die erste sein.
+   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt, ](enabling-json-exporter.md#multiple-selectors), `model` muss jedoch die erste sein.
 
 ### Weiterführende Informationen {#further-information}
 
