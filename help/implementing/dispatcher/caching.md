@@ -1,6 +1,6 @@
 ---
 title: Caching in AEM as a Cloud Service
-description: 'Caching in AEM as a Cloud Service '
+description: 'Zwischenspeichern in AEM als Cloud Service '
 translation-type: tm+mt
 source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
@@ -48,7 +48,7 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
    { /glob "*" /type "allow" }
    ```
 
-* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
+* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie den Cache-Control-Header auf *private*. Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Ordner mit dem Namen **myfolder** zwischengespeichert werden:
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -57,7 +57,7 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
    ```
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >Die anderen Methoden, einschließlich des [dispatcher-ttl AEM ACS Commons-Projekts](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), setzen Werte nicht erfolgreich außer Kraft.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
@@ -78,7 +78,7 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
 
    Sehen Sie sich die oben stehende Diskussion im Abschnitt html/text an, um Vorsicht zu walten und nicht zu weit zwischenspeichern. Außerdem erfahren Sie, wie Sie AEM dazu zwingen, immer die Zwischenspeicherung mit der Option &quot;Immer&quot;anzuwenden.
 
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
+   Es muss sichergestellt werden, dass eine Datei unter `src/conf.dispatcher.d/`cache die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
 
    ```
    /0000
@@ -88,7 +88,7 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
    Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht Teil der Filter der LocationMatch-Anweisung sind.
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >Die anderen Methoden, einschließlich des [dispatcher-ttl AEM ACS Commons-Projekts](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), setzen Werte nicht erfolgreich außer Kraft.
 
 ### Andere Inhaltsdateitypen im Knotenspeicher {#other-content}
 
@@ -124,7 +124,7 @@ Das folgende Diagramm veranschaulicht dies.
 
 Wenn Bedenken bestehen, dass der Dispatcher-Cache nicht geleert wird, wenden Sie sich an den [Support](https://helpx.adobe.com/de/support.ec.html), der den Dispatcher-Cache ggf. leeren kann.
 
-Das von Adobe verwaltete CDN berücksichtigt TTLs und muss daher nicht geleert werden. Bei Verdacht auf ein Problem [wenden Sie sich an den Support](https://helpx.adobe.com/de/support.ec.html), der bei Bedarf einen von Adobe verwalteten CDN-Cache leeren kann.
+Das von Adobe verwaltete CDN berücksichtigt TTLs und muss daher nicht geleert werden. Bei Verdacht auf ein Problem [wenden Sie sich an den Support](https://helpx.adobe.com/support.ec.html), der bei Bedarf einen von Adobe verwalteten CDN-Cache leeren kann.
 
 ## Client-seitige Bibliotheken und Versionskonsistenz {#content-consistency}
 
