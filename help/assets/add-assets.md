@@ -1,11 +1,11 @@
 ---
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
-description: Hinzufügen digitaler Assets zu  [!DNL Adobe Experience Manager] as a Cloud Service.
+description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 73%
+source-wordcount: '1972'
+ht-degree: 44%
 
 ---
 
@@ -20,13 +20,23 @@ Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und L
 
 Sie können zwar jede beliebige Binärdatei in Experience Manager hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Dienste, wie z. B. die Extraktion von Metadaten oder die Vorschau/Ausgabegenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
-Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabeformate oder Bildbearbeitungsdienste hinzuzufügen. Weitere Informationen finden Sie unten unter [Zusätzliche Verarbeitung](#additional-processing).
+Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabeformate oder Bildbearbeitungsdienste hinzuzufügen. Siehe [Prozesselemente beim Hochladen](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager as a Cloud Service nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients, wie Experience Manager-Benutzeroberfläche, Adobe Asset Link, Experience Manager-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
+>Experience Manager als [!DNL Cloud Service] nutzt eine neue Methode zum Hochladen von Assets - direktes binäres Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients, wie Experience Manager-Benutzeroberfläche, Adobe Asset Link, Experience Manager-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
 >
 >Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
+
+Assets als [!DNL Cloud Service] stellen die folgenden Upload-Methoden bereit. Adobe empfiehlt, dass Sie Ihre Verwendungsart und Anwendbarkeit einer Upload-Option verstehen, bevor Sie sie verwenden.
+
+| Upload-Methode | Verwendungsbereiche? | Primär Persona |
+|---------------------|----------------|-----------------|
+| [Benutzeroberfläche der Assets Console](#upload-assets) | Gelegentliches Hochladen, einfache Drücken und Ziehen, Finder-Upload. Verwenden Sie diese Option nicht, um eine große Anzahl von Assets hochzuladen. | Alle Benutzer |
+| [Upload-API](#upload-using-apis) | Für dynamische Entscheidungen beim Hochladen. | Entwickler |
+| [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Asset-Erfassung mit niedrigem Volumen, jedoch zur Migration. | Administrator, Marketer |
+| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Apps arbeiten. | Kreativ, Marketer |
+| [Asset-Masseneingabe](#asset-bulk-ingestor) | Empfohlen für umfangreiche Migrationen und gelegentliche Massenvorgänge. Nur für unterstützte Datenspeicher. | Administrator, Entwickler |
 
 ## Hochladen von Assets {#upload-assets}
 
@@ -100,54 +110,74 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### Handhabung von Uploads, wenn das Asset bereits vorhanden ist {#handling-upload-existing-file}
 
-Wenn Sie ein Asset unter einem Namen hochladen, der bereits für ein Asset verwendet wird, das sich am Zielort befindet, wird eine Warnmeldung angezeigt.
+Sie können ein Asset mit demselben Pfad hochladen (demselben Namen und demselben Speicherort) wie ein vorhandenes Asset. Es wird jedoch ein Warndialogfeld mit den folgenden Optionen angezeigt:
 
-Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset und sämtliche vorherigen Änderungen daran (z. B. Anmerkungen, Zuschnitte usw.) gelöscht. Wenn Sie sich dafür entscheiden, beide Assets zu behalten, wird das neue Asset umbenannt und die Ziffer `1` an den Namen angehängt.
+* Vorhandenes Asset ersetzen: Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle zuvor vorgenommenen Änderungen (z. B. Anmerkungen, Zuschneiden usw.) gelöscht.
+* Eine andere Version erstellen: Eine neue Version des vorhandenen Assets wird im Repository erstellt. Sie können die beiden Versionen im Ordner [!UICONTROL Zeitschiene] Ansicht und bei Bedarf zur bereits vorhandenen Version zurückkehren.
+* Beibehalten: Wenn Sie beide Assets beibehalten möchten, wird das neue Asset mit der Zahl `1` umbenannt, die an seinen Namen angehängt wird.
 
 >[!NOTE]
 >
 >Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
 >
->Wenn Asset Insights zur Verfolgung von Impressions/Klicks mit Adobe Analytics aktiviert ist, werden die für das Asset in Analytics erfassten Daten durch die erneut generierte Asset-ID ungültig.
+>Wenn Asset Insights aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset erfassten Daten mit der neu generierten Asset-ID ungültig.[!DNL Analytics]
 
 Um das doppelte-Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-[!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+[!DNL Experience Manager Assets] versucht zu verhindern, dass Assets mit den verbotenen Zeichen in ihren Dateinamen hochgeladen werden. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen. Einige Methoden zum Hochladen halten Sie nicht daran, Assets mit verbotenen Zeichen in den Dateinamen hochzuladen, sondern ersetzen die Zeichen durch `-`.
 
-Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten.
+Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten. Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
 
-Allerdings werden die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) nicht unterstützt:
-
-* Der Asset-Dateiname darf nicht enthalten: `* / : [ \\ ] | # % { } ? &`
-* Der Asset-Ordnername darf nicht enthalten: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Ungültige Zeichen für den Asset-Dateinamen `* / : [ \\ ] | # % { } ? &`
+* Ungültige Zeichen für den Asset-Ordnernamen `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Massen-Upload von Assets {#bulk-upload}
+
+Die Erfassung von Massenelementen kann Tausende von Assets effizient handhaben. Eine großmaßstäbliche Erfassung ist jedoch nicht nur eine umfassende und große Datei-Dump- oder Blindmigration. Damit es sich um ein bedeutendes Projekt handelt, das Ihrem Geschäftszweck dient, führt die Planung und Kuratierung der Assets zu einer wesentlich effizienteren Erfassung. Alle Erfassung ist nicht gleich und Verallgemeinerungen können nicht ohne Berücksichtigung der nuancierten Repository-Zusammensetzung und der geschäftlichen Anforderungen vorgenommen werden. Im Folgenden finden Sie übergeordnete Vorschläge zur Planung und Ausführung einer Massenverarbeitung:
+
+* Assets kuratieren: Entfernen Sie Assets, die im DAM nicht benötigt werden. Sie sollten nicht verwendete, veraltete oder Duplikat-Assets entfernen. Dadurch werden die übertragenen Daten und die erfassten Assets reduziert, was zu schnelleren Datensätzen führt.
+* Assets organisieren: Sie sollten den Inhalt in einer logischen Reihenfolge organisieren, z. B. nach Dateigröße, Dateiformat, Anwendungsfall oder Priorität. Im Allgemeinen erfordern große komplexe Dateien mehr Verarbeitung. Sie können auch die separate Erfassung großer Dateien mit der Filteroption für die Dateigröße in Betracht ziehen (siehe Beschreibung unten).
+* Stärkere Eingaben: Erwägen Sie, Ihre Erfassung in mehrere Massenaufnahmen zu unterteilen. Auf diese Weise können Sie Inhalte früher anzeigen und Ihre Erfassung nach Bedarf aktualisieren. So können Sie beispielsweise verarbeitende, intensive Assets zu Zeiten ohne Spitzen oder allmählich in mehreren Abschnitten erfassen. Sie können jedoch kleinere und einfachere Assets erfassen, für die in einem Schritt keine große Verarbeitungsleistung erforderlich ist.
 
 Um eine größere Anzahl von Dateien hochzuladen, führen Sie einen der folgenden Schritte aus. Siehe auch [Anwendungsfälle und Methoden](#upload-methods-comparison)
 
 * [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical): Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das APIs nutzt, um bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzuzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
 * [Experience Manager-Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nützlich für Kreativprofis und Marketingexperten, die Assets aus ihrem lokalen Dateisystem hochladen. Verwenden Sie diese Option, um verschachtelte Ordner hochzuladen, die lokal verfügbar sind.
-* [Masseningenieurswerkzeug](#bulk-ingestion-tool): Wird zum Erfassen großer Mengen von Assets bei der Bereitstellung gelegentlich oder anfänglich verwendet  [!DNL Experience Manager].
+* [Masseningenieurswerkzeug](#asset-bulk-ingestor): Wird zum Erfassen großer Mengen von Assets bei der Bereitstellung gelegentlich oder anfänglich verwendet  [!DNL Experience Manager].
 
-### Massenspeicherungs-Erfassungswerkzeug {#bulk-ingestion-tool}
+### Asset-Masseningeting-Tool {#asset-bulk-ingestor}
 
-hinzufügen folgende Details:
-
-* Anwendungsfall der Verwendung dieser Methode.
-* Anwendbare Personas
-* Konfigurationsschritte
-* Verwalten von Erfassungsaufträgen und Anzeigen von Status
-* Zu beachtende Punkte zum Verwalten oder Kuratieren der zu ingetierenden Assets.
+Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Maßstab aus Azurblaus- oder S3-Datenspeichern zu verwenden.
 
 Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 
-1. Erstellen Sie eine Massenimportkonfiguration.  Navigieren Sie zu Werkzeuge > Asset > Massenimport > klicken Sie auf Erstellen.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]**. Wählen Sie die Option **[!UICONTROL Erstellen]**.
 
 ![Konfiguration des Massen-Importeurs](assets/bulk-import-config.png)
 
-1. Geben Sie geeignete Details ein.
+1. Geben Sie auf der Seite [!UICONTROL Massenimportkonfiguration] die erforderlichen Werte ein.
+
+   * [!UICONTROL Titel]: Ein beschreibender Titel.
+   * [!UICONTROL Quelle] importieren: Wählen Sie die entsprechende Datenquelle aus.
+   * [!UICONTROL Nach Mindestgröße] filtern: Geben Sie die Mindestdateigröße für Assets in MB an.
+   * [!UICONTROL Nach Maximalgröße] filtern: Geben Sie die maximale Dateigröße von Assets in MB an.
+   * [!UICONTROL Mime-Typen] ausschließen: Kommagetrennte Liste von MIME-Typen, die von der Erfassung ausgeschlossen werden sollen. Beispiel: `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Mime-Typen] einschließen: Kommagetrennte Liste von MIME-Typen, die in die Erfassung einbezogen werden sollen. Siehe [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
+   * [!UICONTROL Importmodus]: Wählen Sie Überspringen, Ersetzen oder Version erstellen. Der Modus &quot;Überspringen&quot;ist der Standardmodus. In diesem Modus überspringt der Benutzer den Import eines Assets, sofern es bereits vorhanden ist. Siehe die Bedeutung von [Ersetzen und Erstellen von Versionsoptionen](#handling-upload-existing-file).
+   * [!UICONTROL Asset Zielgruppe Folder]: Importieren Sie Ordner in DAM, in den Assets importiert werden sollen. Beispiel: `/content/dam/imported_assets`
+
+1. Sie können Ihre erstellten Ingestor-Konfigurationen löschen, ändern, ausführen und mehr tun. Wenn Sie eine Konfiguration für den Massenimport auswählen, steht die folgende Option in der Symbolleiste zur Verfügung.
+
+   * [!UICONTROL Bearbeiten]: Bearbeiten Sie die ausgewählte Konfiguration.
+   * [!UICONTROL Löschen]: Löscht die ausgewählte Konfiguration.
+   * [!UICONTROL Überprüfen]: Überprüfen Sie die Verbindung zum Datenspeicher.
+   * [!UICONTROL Trockenausführung]: Rufen Sie einen Testlauf der Massenaufnahme auf.
+   * [!UICONTROL Ausführen]: Führen Sie die ausgewählte Konfiguration aus.
+   * [!UICONTROL Stopp]: Beenden Sie eine aktive Konfiguration.
+   * [!UICONTROL Auftragsstatus]: Ansicht des Konfigurationsstatus, wenn er in einem laufenden Importauftrag verwendet oder für einen abgeschlossenen Auftrag verwendet wird.
+   * [!UICONTROL Ansicht Assets]: Ansicht des Zielgruppen-Ordners, falls vorhanden.
 
 >[!NOTE]
 >
@@ -160,18 +190,18 @@ Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager a
 * [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
 * Das [Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
-## Zusätzliche Verarbeitung {#additional-processing}
+## Verarbeiten von Assets beim Hochladen von {#process-when-uploaded}
 
-Um eine zusätzliche Verarbeitung der hochgeladenen Assets zu ermöglichen, können Sie die Verarbeitungsprofile von Assets im Ordner verwenden, in den die Assets hochgeladen werden. Sie sind im Dialogfeld **[!UICONTROL Eigenschaften]** des Ordners verfügbar.
+Um die hochgeladenen Assets weiter zu verarbeiten, können Sie Verarbeitungsordner auf die hochgeladenen Profil anwenden. Die Profil sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners unter [!DNL Assets] verfügbar.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-Die folgenden Profile sind verfügbar:
+Die folgenden Registerkarten stehen zur Verfügung:
 
 * [Mit Metadaten-](metadata-profiles.md) Profilen können Sie Standardmetadateneigenschaften auf Assets anwenden, die in diesen Ordner hochgeladen wurden
 * [Bei der Verarbeitung ](asset-microservices-configure-and-use.md) von Profilen können Sie mehr Darstellungen generieren, als standardmäßig möglich sind.
 
-Wenn Dynamic Media in Ihrer Umgebung aktiviert ist:
+Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerdem die folgenden Registerkarten zur Verfügung:
 
 * [Mit ](dynamic-media/image-profiles.md) Profilen für dynamische Medienbilder können Sie bestimmte Zuschnitten (**[!UICONTROL Smart-]** Zuschneiden und Pixelzuschneiden) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
 * [Mit Dynamic Media-Video-](dynamic-media/video-profiles.md) Profilen können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
@@ -186,22 +216,10 @@ Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Mini
 
 Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Source-SDK und Beispiel-Clients finden Sie im Abschnitt zum [Asset-Upload](developer-reference-material-apis.md#asset-upload-technical) in der Entwicklerreferenz.
 
-## Szenariobasierte Upload-Methoden {#upload-methods-comparison}
-
-| Upload-Methode | Verwendungsbereiche? | Primär Persona (Admin, Entwickler, Kreativer Benutzer, Marketingexperte) |
-|---------------------|-------------------------------------------------------------------------------------------|------------|
-| Assets-Konsole/Benutzeroberfläche | Gelegentliches Hochladen, einfache Drücken und Ziehen, Finder-Upload. Nicht für große Masseneingänge. | Alle |
-| Upload-API | Dynamische Entscheidung über Assets während des Hochladevorgangs | Entwickler |
-| Desktop App | Asset-Erfassung mit niedrigem Volumen, jedoch für Migration | Admin, Marketer |
-| Asset-Link | Damit Kreative und Marketingexperten über die unterstützten Creative Cloud-Desktop-Apps mit Assets zusammenarbeiten können. | Kreativ, Marketer |
-| Masseneinschluss-Werkzeug | Erfassung von Massenelementen aus Datenspeichern.  Empfohlen für Migration und gelegentliche Masseneingänge. | Admin, Entwickler |
-
-Beschreiben Sie, wann welche Methode verwendet werden soll.
-
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Über Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link-Dokumentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload-technical)
 
