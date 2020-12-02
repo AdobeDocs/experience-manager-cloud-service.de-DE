@@ -2,10 +2,10 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
-ht-degree: 89%
+source-wordcount: '4082'
+ht-degree: 88%
 
 ---
 
@@ -375,6 +375,8 @@ Das Skript führt Folgendes aus:
 
 1. Es führt den Validator aus dem vorherigen Abschnitt aus, um sicherzustellen, dass nur die unterstützten Direktiven einbezogen werden. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
 2. Es führt das `httpd -t command` aus, um zu testen, ob die Syntax so korrekt ist, dass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration für die Bereitstellung bereit sein
+
+Während einer Cloud Manager-Bereitstellung wird auch die `httpd -t syntax`-Prüfung ausgeführt und alle Fehler werden in das Cloud Manager `Build Images step failure`-Protokoll aufgenommen.
 
 ## Lokales Testen der Apache- und Dispatcher-Konfiguration {#testing-apache-and-dispatcher-configuration-locally}
 
