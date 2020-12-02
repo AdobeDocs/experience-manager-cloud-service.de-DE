@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Einführung {#introduction}
 
-Mit Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen in einer Selbstbedienungsmethode über die Benutzeroberfläche zu identifizieren. Ihr AEMaaCS wird ein Standarddomänenname bereitgestellt, der in `*.adobearmcloud.com`endet. Dieser Standarddomänenname bleibt erhalten, selbst wenn Sie Ihrer Website benutzerdefinierte Domänennamen hinzufügen.
+Mit Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen in einer Selbstbedienungsmethode über die Benutzeroberfläche zu identifizieren. Ihr AEMaaCS wird ein Standarddomänenname bereitgestellt, der auf `*.adobearmcloud.com` endet. Dieser Standarddomänenname bleibt erhalten, selbst wenn Sie Ihrer Website benutzerdefinierte Domänennamen hinzufügen.
 
 >[!NOTE]
 >Benutzerdefinierte Domänennamen werden nur im Cloud Manager für Sites Programm (Veröffentlichungsdienst) unterstützt. Jede CM-Umgebung kann bis zu 50 benutzerdefinierte Domänen pro Umgebung hosten.
