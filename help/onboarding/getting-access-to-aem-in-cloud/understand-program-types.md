@@ -18,10 +18,10 @@ Das folgende Diagramm zeigt die Hierarchie der Entitäten in Cloud Manager.
 
 ![image](assets/program-types1.png)
 
-## Programm {#program-types}
+## Programm-Typen {#program-types}
 
-Ein Benutzer kann eine **Sandbox** oder ein **reguläres** Programm erstellen.
+Ein Benutzer kann ein **Sandbox**- oder ein **Reguläres**-Programm erstellen.
 
-Eine *Sandbox* wird normalerweise für Schulungszwecke, die Ausführung von Demos, die Aktivierung, POCs oder Dokumentation erstellt. Es soll keinen Live-Traffic transportieren und wird Beschränkungen unterliegen, die ein reguläres Programm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Dev-Umgebung und eine Nicht-Produktions-Pipeline enthält.
+Eine *Sandbox* wird normalerweise für Schulungszwecke, die Ausführung von Demos, die Aktivierung, POCs oder die Dokumentation erstellt. Es soll keinen Live-Traffic transportieren und wird Beschränkungen unterliegen, die ein reguläres Programm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Dev-Umgebung und eine Nicht-Produktions-Pipeline enthält.
 
-Es wird ein *reguläres Programm* erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
+Es wird ein *Reguläres Programm* erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
