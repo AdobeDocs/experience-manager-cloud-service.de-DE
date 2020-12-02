@@ -20,7 +20,7 @@ ht-degree: 17%
 
 # Erstellen mehrerer Kategorien- und Produktseiten
 
-[AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) bieten Autoren von Inhalten die Möglichkeit, zusätzliche Kategorien- und Produktseiten zu erstellen. Diese Seiten können mit zusätzlichen Marketinginhalten bereichert und zur Zielgruppe bestimmter Kategorien und Produkte konfiguriert werden. Das folgende Video erläutert die Einrichtung dieser Funktion.
+[AEM CIF-Core-](https://github.com/adobe/aem-core-cif-components) Componentspbietet Inhaltserstellern die Möglichkeit, zusätzliche Kategorien- und Produktseiten zu erstellen. Diese Seiten können mit zusätzlichen Marketinginhalten bereichert und zur Zielgruppe bestimmter Kategorien und Produkte konfiguriert werden. Das folgende Video erläutert die Einrichtung dieser Funktion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
