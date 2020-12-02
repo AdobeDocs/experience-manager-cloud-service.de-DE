@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1234'
 ht-degree: 10%
 
 ---
@@ -33,7 +33,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Erfassung** von Massenelementen: Bieten Sie Kunden einen skalierbaren, Cloud-nativen Erfassungsdienst an, der  [!DNL Experience Manager] als Cloud Service-Architektur einschließlich Asset-Mikrodiensten genutzt wird. Zu den wichtigsten Anwendungsfällen zählen die Erfassung im Maßstab mit Überwachung, Berichte und Planung, während gleichzeitig die erstmalige Übertragung von Assets an Cloud-Datenspeicher mithilfe der üblichen Cloud-Upload-Werkzeuge ermöglicht wird. Siehe [Massenimport-Tool](/help/assets/add-assets.md#bulk-ingestion-tool).
+* **Erfassung** von Massenelementen: Bieten Sie Kunden einen skalierbaren, Cloud-nativen Erfassungsdienst an, der  [!DNL Experience Manager] als Cloud Service-Architektur einschließlich Asset-Mikrodiensten genutzt wird. Zu den wichtigsten Anwendungsfällen zählen die Erfassung im Maßstab mit Überwachung, Berichte und Planung, während gleichzeitig die erstmalige Übertragung von Assets an Cloud-Datenspeicher mithilfe der üblichen Cloud-Upload-Werkzeuge ermöglicht wird. Siehe [Asset Bulk Ingestor Tool](/help/assets/add-assets.md#asset-bulk-ingestor).
 Dieses Tool richtet sich an Systemadministratoren, Berater oder Implementierungspartner. Diese Funktion ermöglicht eine großflächige Aufnahme und wird ideal bei der anfänglichen Aufnahme oder gelegentlichen großen Aufnahme verwendet. Für kleinere Erfassungsaufträge verwenden Sie die [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [Hochladen mit der Assets-Benutzeroberfläche](/help/assets/add-assets.md#upload-assets).
 
    ![Konfiguration des Massen-Importeurs](/help/assets/assets/bulk-import-config-low-res.png)
