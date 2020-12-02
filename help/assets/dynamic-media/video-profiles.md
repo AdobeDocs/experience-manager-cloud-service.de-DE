@@ -425,6 +425,6 @@ Sie können aus dem Menü **[!UICONTROL Tools]** heraus ein Videoprofil aus eine
 ### Entfernen von Videoprofilen aus Ordnern über „Eigenschaften“{#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
-1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
+1. Tippen Sie im Ordner auf das Häkchen oder klicken Sie auf das Häkchen, um es auszuwählen, und tippen Sie dann auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
