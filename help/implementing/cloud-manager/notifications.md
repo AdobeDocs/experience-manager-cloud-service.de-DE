@@ -38,4 +38,4 @@ Auf diese Weise gelangen Anwender zum Bildschirm „Benachrichtigungseinstellung
 Anwender können E-Mail-Benachrichtigungen aktivieren und (optional) die Typen von Benachrichtigungen auswählen, die sie per E-Mail erhalten möchten.
 
 >[!NOTE]
->You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
+>Sie können auch die Option &quot;Digest&quot;aus der Adobe [!UICONTROL Experience Cloud] aktivieren.
