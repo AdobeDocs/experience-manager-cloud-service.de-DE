@@ -106,7 +106,7 @@ Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum
 
 1. Wählen Sie **Voranbringen**, um die Aktion zu bestätigen.
 
-### Delegieren eines Teilnehmerschritts   {#delegating-a-participant-step}
+### Delegieren eines Teilnehmerschritts    {#delegating-a-participant-step}
 
 Wenn Ihnen ein Schritt zugewiesen wurde, Sie aber aus irgendeinem Grund keine entsprechende Maßnahme ergreifen können, können Sie den Schritt an einen anderen Benutzer oder eine Gruppe delegieren.
 
