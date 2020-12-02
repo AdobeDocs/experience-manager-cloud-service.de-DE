@@ -22,11 +22,11 @@ Die Bereitstellung der erstellten Pakete für AEM wird vom Adobe Content Package
 * Besorgen Sie sich eine Liste von Paketen, die auf AEM installiert sind.
 * Entfernen Sie ein Paket aus AEM.
 
-In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit dem Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, [wie AEM Projekte und ihre Pakete strukturiert sind.](#aem-project-structure)
+In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit dem Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, wie AEM Projekte und ihre Pakete strukturiert sind.[](#aem-project-structure)
 
 >[!NOTE]
 >
->Die Paketerstellung ist jetzt Eigentum des [Apache Jackrabbit FileVault Package Maven Plugins](https://jackrabbit.apache.org/filevault-package-maven-plugin/). Die Bereitstellung der zu AEM erstellten Pakete wird vom Adobe Content Package Maven Plug-in wie hier beschrieben ausgeführt.
+>Die Paketerstellung ist jetzt im Besitz des Plugins [Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/). Die Bereitstellung der zu AEM erstellten Pakete wird vom Adobe Content Package Maven Plug-in wie hier beschrieben ausgeführt.
 
 ## Pakete und die AEM Projektstruktur {#aem-project-structure}
 
@@ -34,11 +34,11 @@ AEM 6.5 befolgt die neuesten Best Practices für Paketverwaltung und Projektstru
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der [AEM Projektarchiv](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
 
 ## Abrufen des Inhaltspaket-Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
-Das Plugin ist im [Maven Central Repository verfügbar.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+Das Plugin ist im Maven Central Repository verfügbar.[](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
 
 ## Inhaltspaket - Maven Plugin-Ziele und Parameter
 
@@ -63,7 +63,7 @@ Die durch das Inhaltspaket-Plug-in bereitgestellten Ziele und Zielparameter werd
 
 ### Plug-in-Präfix {#plugin-prefix}
 
-The plugin prefix is `content-package`. Verwenden Sie dieses Präfix, um ein Ziel über die Befehlszeile auszuführen, wie dies im folgenden Beispiel gezeigt wird:
+Das Plugin-Präfix ist `content-package`. Verwenden Sie dieses Präfix, um ein Ziel über die Befehlszeile auszuführen, wie dies im folgenden Beispiel gezeigt wird:
 
 ```shell
 mvn content-package:build
@@ -71,7 +71,7 @@ mvn content-package:build
 
 ### Parameterpräfix {#parameter-prefix}
 
-Unless otherwise noted, the plugin goals and parameters use the `vault` prefix, as in the following example:
+Sofern nicht anders angegeben, verwenden die Plug-in-Ziele und -Parameter das Präfix `vault`, wie im folgenden Beispiel:
 
 ```shell
 mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/packmgr/service.jsp"
@@ -79,23 +79,23 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### Proxys {#proxies}
 
-Ziele, die Proxys für AEM verwenden, verwenden die erste gültige Proxy-Konfiguration in den Maven-Einstellungen. Wenn keine Proxykonfiguration gefunden wird, wird kein Proxy verwendet. See the `useProxy` parameter in the [Common Parameters](#common-parameters) section.
+Ziele, die Proxys für AEM verwenden, verwenden die erste gültige Proxy-Konfiguration in den Maven-Einstellungen. Wenn keine Proxykonfiguration gefunden wird, wird kein Proxy verwendet. Siehe Parameter `useProxy` im Abschnitt [Allgemeine Parameter](#common-parameters).
 
 ### Allgemeine Parameter {#common-parameters}
 
-The parameters in the following table are common to all goals except when noted in the **Goals** column.
+Die Parameter in der folgenden Tabelle gelten für alle Ziele, außer wenn sie in der Spalte **Ziele** vermerkt sind.
 
 | Name | Typ | Erforderlich | Standardwert | Beschreibung | Ziele |
 |---|---|---|---|---|---|
-| `failOnError` | `boolean` | Nein | `false` | Der Wert `true` führt zum Fehlschlagen des Builds, wenn ein Fehler auftritt. Der Wert `false` führt dazu, dass der Build den Fehler ignoriert. | All goals except `package` |
-| `name` | `String` | `build`: Ja, `install`: Nein, `rm`: Ja | `build`: Keine Standardeinstellung `install`: Der Wert der `artifactId` Eigenschaft des Maven-Projekts | Der Name des zu bearbeitenden Pakets | All goals except `ls` |
-| `password` | `String` | Ja | `admin` | Das für die Authentifizierung mit AEM verwendete Kennwort | All goals except `package` |
-| `serverId` | `String` | Nein | Die Server-ID, über die der Benutzername und das Kennwort für die Authentifizierung abgerufen werden | All goals except `package` |
-| `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Dienst-API des AEM Paketmanagers | All goals except `package` |
-| `timeout` | `int` | Nein | `5` | Die Verbindungs-Zeitüberschreitung für die Kommunikation mit dem Paketmanagerdienst in Sekunden | All goals except `package` |
-| `useProxy` | `boolean` | Nein | `true` | A value of `true` causes Maven to use the first active proxy configuration found in order to proxy requests to the Package Manager. | All goals except `package` |
-| `userId` | `String` | Ja | `admin` | Der Benutzername, der bei AEM authentifiziert werden soll | All goals except `package` |
-| `verbose` | `boolean` | Nein | `false` | Aktiviert oder deaktiviert die ausführliche Protokollierung | All goals except `package` |
+| `failOnError` | `boolean` | Nein | `false` | Der Wert `true` führt zum Fehlschlagen des Builds, wenn ein Fehler auftritt. Der Wert `false` führt dazu, dass der Build den Fehler ignoriert. | Alle Ziele außer `package` |
+| `name` | `String` | `build`: Ja,  `install`: Nein,  `rm`: Ja | `build`: Keine Standardeinstellung  `install`: Der Wert der  `artifactId` Eigenschaft des Maven-Projekts | Der Name des zu bearbeitenden Pakets | Alle Ziele außer `ls` |
+| `password` | `String` | Ja | `admin` | Das für die Authentifizierung mit AEM verwendete Kennwort | Alle Ziele außer `package` |
+| `serverId` | `String` | Nein | Die Server-ID, über die der Benutzername und das Kennwort für die Authentifizierung abgerufen werden | Alle Ziele außer `package` |
+| `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Dienst-API des AEM Paketmanagers | Alle Ziele außer `package` |
+| `timeout` | `int` | Nein | `5` | Die Verbindungs-Zeitüberschreitung für die Kommunikation mit dem Paketmanagerdienst in Sekunden | Alle Ziele außer `package` |
+| `useProxy` | `boolean` | Nein | `true` | Der Wert `true` bewirkt, dass Maven die erste aktive Proxykonfiguration verwendet, die gefunden wurde, um Anforderungen an den Package Manager zu verändern. | Alle Ziele außer `package` |
+| `userId` | `String` | Ja | `admin` | Der Benutzername, der bei AEM authentifiziert werden soll | Alle Ziele außer `package` |
+| `verbose` | `boolean` | Nein | `false` | Aktiviert oder deaktiviert die ausführliche Protokollierung | Alle Ziele außer `package` |
 
 ### Build {#build}
 
@@ -107,29 +107,29 @@ Erstellt ein Inhaltspaket, das bereits für eine AEM Instanz definiert ist.
 
 #### Parameter {#parameters}
 
-All parameters for the build goal are described in the [Common Parameters](#common-parameters) section.
+Alle Parameter für das Erstellungsziel werden im Abschnitt [Allgemeine Parameter](#common-parameters) beschrieben.
 
 ### Installieren {#install}
 
-Installiert ein Paket im Repository. Für die Ausführung dieses Ziels ist kein Maven-Projekt erforderlich. The goal is bound to the `install` phase of the Maven build lifecycle.
+Installiert ein Paket im Repository. Für die Ausführung dieses Ziels ist kein Maven-Projekt erforderlich. Das Ziel ist an die `install`-Phase des Maven-Build-Lebenszyklus gebunden.
 
 #### Parameter {#parameters-1}
 
-In addition to the following parameters, see the descriptions in the [Common Parameters](#common-parameters) section.
+Weitere Informationen zu den folgenden Parametern finden Sie in den Beschreibungen im Abschnitt [Allgemeine Parameter](#common-parameters).
 
 | Name | Typ | Erforderlich | Standardwert | Beschreibung |
 |---|---|---|---|---|---|
-| `artifact` | `String` | Nein | The value of the `artifactId` property of the Maven project | A string of the form `groupId:artifactId:version[:packaging]` |
+| `artifact` | `String` | Nein | Der Wert der Eigenschaft `artifactId` des Maven-Projekts | Eine Zeichenfolge des Formulars `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | Nein | Kein | Die ID des einzubettenden Artefakts. |
-| `groupId` | `String` | Nein | Kein | The `groupId` of the artifact to install |
+| `groupId` | `String` | Nein | Kein | Das `groupId` des zu installierenden Artefakts |
 | `install` | `boolean` | Nein | `true` | Bestimmt, ob das Paket beim Hochladen automatisch entpackt werden soll |
-| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Nein | The value of the `localRepository` system variable | Das lokale Maven-Repository, das nicht mit der Plug-In-Konfiguration konfiguriert werden kann, da die Systemeigenschaft immer verwendet wird |
+| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Nein | Der Wert der Systemvariablen `localRepository` | Das lokale Maven-Repository, das nicht mit der Plug-In-Konfiguration konfiguriert werden kann, da die Systemeigenschaft immer verwendet wird |
 | `packageFile` | `java.io.File` | Nein | Das für das Maven-Projekt definierte primäre Artefakt | Der Name der zu installierenden Paketdatei |
 | `packaging` | `String` | Nein | `zip` | Der Verpackungstyp des zu installierenden Artefakts. |
-| `pomRemoteRepositories` | `java.util.List` | Ja | The value of the `remoteArtifactRepositories` property that is defined for the Maven project | Dieser Wert kann nicht mit der Plug-in-Konfiguration konfiguriert werden und muss im Projekt angegeben werden. |
+| `pomRemoteRepositories` | `java.util.List` | Ja | Der Wert der `remoteArtifactRepositories`-Eigenschaft, der für das Maven-Projekt definiert ist | Dieser Wert kann nicht mit der Plug-in-Konfiguration konfiguriert werden und muss im Projekt angegeben werden. |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Das Projekt, für das das Plugin konfiguriert ist | Das Maven-Projekt, das implizit ist, weil das Projekt die Plugin-Konfiguration enthält |
-| `repositoryId` (POM), `repoID` (Befehlszeile) | `String` | Nein | `temp` | Die ID des Repositorys, vom dem das Artefakt abgerufen wird |
-| `repositoryUrl` (POM), `repoURL` (Befehlszeile) | `String` | Nein | Kein | Die URL des Repositorys, vom dem das Artefakt abgerufen wird |
+| `repositoryId` (POM),  `repoID` (Befehlszeile) | `String` | Nein | `temp` | Die ID des Repositorys, vom dem das Artefakt abgerufen wird |
+| `repositoryUrl` (POM),  `repoURL` (Befehlszeile) | `String` | Nein | Kein | Die URL des Repositorys, vom dem das Artefakt abgerufen wird |
 | Version | Zeichenfolge | Nein | Kein | Die Version des zu installierenden Artefakts |
 
 ### ls {#ls}
@@ -138,7 +138,7 @@ Führt die im Paketmanager bereitgestellten Pakete auf.
 
 #### Parameter {#parameters-2}
 
-All parameters of the ls goal are described in the [Common Parameters](#common-parameters) section.
+Alle Parameter des ls-Ziels werden im Abschnitt [Allgemeine Parameter](#common-parameters) beschrieben.
 
 ### rm {#rm}
 
@@ -146,7 +146,7 @@ Entfernt ein Paket aus dem Paketmanager.
 
 #### Parameter {#parameters-3}
 
-All parameters of the rm goal are described in the [Common Parameters](#common-parameters) section.
+Alle Parameter des rm-Ziels werden im Abschnitt [Allgemeine Parameter](#common-parameters) beschrieben.
 
 ### Deinstallieren {#uninstall}
 
@@ -154,7 +154,7 @@ Deinstalliert ein Paket. Das Paket verbleibt auf dem Server mit dem deinstallier
 
 #### Parameter {#parameters-4}
 
-All parameters of the uninstall goal are described in the [Common Parameters](#common-parameters) section.
+Alle Parameter des Deinstallationsziels werden im Abschnitt [Allgemeine Parameter](#common-parameters) beschrieben.
 
 ### package {#package}
 
@@ -162,7 +162,7 @@ Erstellt ein Inhaltspaket. Die Standardkonfiguration des Paketziels umfasst die 
 
 #### Parameter {#parameters-5}
 
-In addition to the following parameters, see the description of the `name` parameter in the [Common Parameters](#common-parameters) section.
+Zusätzlich zu den folgenden Parametern finden Sie in der Beschreibung des Parameters `name` im Abschnitt [Allgemeine Parameter](#common-parameters) weitere Informationen.
 
 | Name | Typ | Erforderlich | Standardwert | Beschreibung |
 |---|---|---|---|---|
@@ -171,23 +171,23 @@ In addition to the following parameters, see the description of the `name` param
 | `dependencies` | `java.util.List` | Nein | Kein |  |
 | `embeddedTarget` | `java.lang.String` | Nein | Kein |  |
 | `embeddeds` | `java.util.List` | Nein | Kein |  |
-| `failOnMissingEmbed` | `boolean` | Ja | `false` | A value of `true` causes the build to fail when an embedded artifact is not found in the project dependencies. A value of `false` causes the build to ignore such errors. |
+| `failOnMissingEmbed` | `boolean` | Ja | `false` | Der Wert `true` führt dazu, dass der Build fehlschlägt, wenn kein eingebettetes Artefakt in den Projektabhängigkeiten gefunden wird. Der Wert `false` bewirkt, dass der Build diese Fehler ignoriert. |
 | `filterSource` | `java.io.File` | Nein | Kein | Dieser Parameter definiert eine Datei, die die Quelle des Arbeitsbereichfilters angibt. Die in der Konfiguration angegebenen und über Einbettungen oder Teilpakete eingefügten Filter werden mit dem Dateiinhalt zusammengeführt. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Nein | Kein | Dieser Parameter enthält Filterelemente, die den Paketinhalt definieren. When executed, the filters are included in the `filter.xml` file. See the [Using Filters](#using-filters) section below. |
-| `finalName` | `java.lang.String` | Ja | The `finalName` defined in the Maven project (build phase) | The name of the generated package ZIP file, without the `.zip` file extension |
-| `group` | `java.lang.String` | Ja | The `groupID` defined in the Maven project | Das `groupId` generierte Inhaltspaket, das zum Installationspfad der Zielgruppe für das Inhaltspaket gehört |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | Nein | Kein | Dieser Parameter enthält Filterelemente, die den Paketinhalt definieren. Bei Ausführung werden die Filter in die Datei `filter.xml` aufgenommen. Siehe den Abschnitt [Verwenden von Filtern](#using-filters) weiter unten. |
+| `finalName` | `java.lang.String` | Ja | Das im Maven-Projekt definierte `finalName` (Build-Phase) | Der Name der generierten ZIP-Datei des Pakets ohne die Dateierweiterung `.zip` |
+| `group` | `java.lang.String` | Ja | Das im Maven-Projekt definierte `groupID` | Das `groupId` des generierten Inhaltspakets, das zum Installationspfad der Zielgruppe für das Inhaltspaket gehört |
 | `outputDirectory` | `java.io.File` | Ja | Das im Maven-Projekt definierte Build-Verzeichnis | Das lokale Verzeichnis, in dem das Inhaltspaket gespeichert ist |
 | `prefix` | `java.lang.String` | Nein | Kein |  |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Kein | Das Maven-Projekt |
-| `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der `properties.xml` Datei festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht überschreiben: `group` (zu `group` setzende Parameter verwenden), `name` ( `name` festzulegende Parameter verwenden), `version` ( `version` festzulegende Parameter verwenden), `description` (in Projektbeschreibung festlegen), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` `dependencies` `dependencies` `createdBy` `user.name` `created` `requiresRoot` `requiresRoot` `packagePath` des Maven-Projektdeskriptors), (zu setzende Parameter verwenden), (Wert der Eigenschaft des zu verwendenden Systems), (Angabe des richtigen Parameters), automatisch aus dem Gruppen- und Paketnamen generiert.) |
-| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist Dies wird zur `requiresRoot` Eigenschaft der `properties.xml` Datei. |
+| `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der Datei `properties.xml` festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht überschreiben: `group` (set mithilfe des Parameters `group`), `name` (set mit dem Parameter `name`), `version` (set mit dem Parameter `version`), `description` (aus der Projektbeschreibung festgelegt), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` Maven-Projektdeskriptor), `dependencies` (verwenden Sie `dependencies`-Parameter festzulegen), `createdBy` (der Wert der `user.name`-Systemeigenschaft), `created` (die aktuelle Systemzeit), `requiresRoot` (verwenden Sie `requiresRoot`-Parameter, um festzulegen), &lt;a1 8/> (wird automatisch aus dem Gruppen- und Paketnamen generiert)`packagePath` |
+| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist Dies wird zur `requiresRoot`-Eigenschaft der `properties.xml`-Datei. |
 | `subPackages` | `java.util.List` | Nein | Kein |  |
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Der im Maven-Projekt definierte Ordner (Build-Phase) | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
 
 #### Verwenden von „filters“{#using-filters}
 
-Verwenden Sie das Element „filters“ zum Definieren des Paketinhalts. The filters are added to the `workspaceFilter` element in the `META-INF/vault/filter.xml` file of the package.
+Verwenden Sie das Element „filters“ zum Definieren des Paketinhalts. Die Filter werden dem Element `workspaceFilter` in der Datei `META-INF/vault/filter.xml` des Pakets hinzugefügt.
 
 Im folgenden Filterbeispiel wird die zu verwendende XML-Struktur gezeigt:
 
@@ -230,9 +230,9 @@ Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` ve
 
 Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket im Paketmanager und in Package Share voneinander zu unterscheiden.
 
-Die Quelldateien können sich überall in Ihrem Dateisystem befinden. In the POM file, define build resources to copy the source files to the `target/vault-work/META-INF` for inclusion in the package.
+Die Quelldateien können sich überall in Ihrem Dateisystem befinden. Definieren Sie in der POM-Datei Buildressourcen, um die Quelldateien in das `target/vault-work/META-INF` zu kopieren und in das Paket einzuschließen.
 
-The following POM code adds the files in the `META-INF` folder of the project source to the package:
+Mit dem folgenden POM-Code werden die Dateien im Ordner `META-INF` der Projektquelle zum Paket hinzugefügt:
 
 ```xml
 <build>
@@ -246,7 +246,7 @@ The following POM code adds the files in the `META-INF` folder of the project so
 </build>
 ```
 
-Im folgenden POM-Code wird nur ein Miniaturbild zum Paket hinzugefügt. The thumbnail image must be named `thumbnail.png`, and must be located in the `META-INF/vault/definition` folder of the package. In this example, the source file is located in the `/src/main/content/META-INF/vault/definition` folder of the project:
+Im folgenden POM-Code wird nur ein Miniaturbild zum Paket hinzugefügt. Das Miniaturbild muss den Namen `thumbnail.png` haben und sich im Ordner `META-INF/vault/definition` des Pakets befinden. In diesem Beispiel befindet sich die Quelldatei im Ordner `/src/main/content/META-INF/vault/definition` des Projekts:
 
 ```xml
 <build>
@@ -266,4 +266,4 @@ Das neueste AEM Project Archetype implementiert die Best-Practice-Paketstruktur 
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Projektarchiv. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der [AEM Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
