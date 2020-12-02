@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Empfohlene Paketstruktur](https://docs.a
 
 Es gibt einige zusätzliche Entwicklungsrichtlinien, die Sie beachten müssen, wenn Sie in AEM as a Cloud Service entwickeln. Weitere Informationen finden Sie in den [Entwicklungsrichtlinien für AEM as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
-Bereits in der Planungsphase sollten Sie über eine Liste von Bereichen verfügen, die überarbeitet werden müssen, damit sie mit Cloud Service kompatibel sind. Weitere Informationen zum Umgestalten und Optimieren von Code für die Umstellung auf Cloud Service finden Sie in den [Entwicklungsrichtlinien](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
+Bereits in der Planungsphase sollten Sie über eine Liste von Bereichen verfügen, die überarbeitet werden müssen, damit sie mit Cloud Service kompatibel sind. Weitere Informationen zum Umgestalten und Optimieren von Code für die Umstellung auf Cloud Service finden Sie in den [Entwicklungsrichtlinien](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
 Um einige Aufgaben zur Code-Umgestaltung zu beschleunigen, können Sie die folgenden Tools verwenden:
 
