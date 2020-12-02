@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Domäne überprüfen {#verify-domain-name}
+# Domäne {#verify-domain-name} überprüfen
 
 Ein DNS-TXT-Datensatz autorisiert die Hosting einer Domäne in einem CDN-Dienst. Der Kunde muss einen DNS-TXT-Datensatz in der Zone erstellen, die Cloud Manager autorisiert, den CDN-Dienst mit der benutzerdefinierten Domäne bereitzustellen und ihn mit dem Backend-Dienst zu verknüpfen. Diese Verbindung steht vollständig unter der Kontrolle des Kunden und autorisiert Cloud Manager ausdrücklich, Inhalte aus dem Dienst für eine Domäne bereitzustellen. Diese Genehmigung kann erteilt und entzogen werden. Der TXT-Datensatz ist spezifisch für die Domäne und die Cloud Manager-Umgebung.
 
@@ -18,4 +18,4 @@ Ein DNS-TXT-Datensatz autorisiert die Hosting einer Domäne in einem CDN-Dienst.
 1. Kopieren Sie den TXT-Eintrag in Ihre DNS-Zone, wo sich Ihre benutzerdefinierte Domäne befindet, genau wie er angezeigt wird. Wenn Sie einen &quot;Namen&quot; für Ihren Eintrag benötigen, geben Sie ihn `@`.
 
 >[!NOTE]
->Verschiedene DNS-Nachschlagewerkzeuge wie [DNS Lookup Tool](https://www.ultratools.com/tools/dnsLookup), Google DoH können verwendet werden, um TXT-Einträge nachzuschlagen und herauszufinden, ob der TXT-Datensatz fehlt oder fehlerhaft ist.
+>Verschiedene DNS-Nachschlagewerkzeuge wie [DNS-Nachschlagewerkzeug](https://www.ultratools.com/tools/dnsLookup), Google DoH können verwendet werden, um TXT-Datensatzeinträge nachzuschlagen und herauszufinden, ob der TXT-Datensatz fehlt oder fehlerhaft ist.
