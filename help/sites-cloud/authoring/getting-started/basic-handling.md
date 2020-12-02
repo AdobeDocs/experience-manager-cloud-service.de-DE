@@ -227,7 +227,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen     {#quick-actions}
+## Schnellaktionen      {#quick-actions}
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -249,7 +249,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >
 >Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen     {#selecting-resources}
+### Auswählen von Ressourcen      {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -450,7 +450,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten Folgendes angezeigt:
 
-* [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+* [Starts](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * Live Copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
 * Sprachkopien<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * Inhaltsverweise:
