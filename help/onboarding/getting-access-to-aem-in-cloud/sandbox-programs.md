@@ -51,13 +51,13 @@ Sandbox-Programme werden beim Erstellen des Programms automatisch an eine Entwic
 
 Der Satz aus Produktions- und Staging-Umgebung kann dem Sandbox-Programm manuell hinzugefügt werden, sobald der Anwender bereit ist, eine Produktions-Pipeline einzurichten.
 
-To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
+Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md).
 
 ### Löschen von Sandbox-Umgebungen {#deleting-sandbox-environments}
 
 Anwender mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Staging-Umgebung bzw. entsprechende Sätze löschen.
 
-To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
+Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Umgebung löschen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment).
 
 
 ## Ruhezustand und Reaktivieren von Sandbox-Umgebungen {#hibernating-introduction}
