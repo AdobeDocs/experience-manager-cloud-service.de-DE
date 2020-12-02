@@ -41,7 +41,7 @@ Das folgende Video bietet einen Überblick über die Implementierung von Code f�
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 >[!NOTE]
->Kunden mit vorhandener Code-Basis wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/de-DE/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
+>Kunden mit vorhandener Code-Basis wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
 
 ## Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
