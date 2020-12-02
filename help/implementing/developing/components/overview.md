@@ -27,7 +27,7 @@ Komponenten in AEM sind:
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Sie können das Bearbeitungsverhalten konfigurieren.
 * Verwenden Sie Dialogfelder, die mit Unterelementen basierend auf Granite-UI-Komponenten erstellt wurden.
-* werden mit [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)entwickelt.
+* werden mit [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
@@ -45,7 +45,7 @@ Für jede AEM-Komponente gilt Folgendes:
 
 ## AEM-Kernkomponenten {#aem-core-components}
 
-[Die AEM Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) sind eine Reihe standardisierter Webkomponenten (WCM), mit denen AEM die Entwicklungszeit verkürzen und die Wartungskosten Ihrer Websites senken können.
+[Die AEM Core ](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) Components sind eine Reihe standardisierter Web-Content-Management-Komponenten (WCM), mit denen AEM die Entwicklungszeit verkürzen und die Wartungskosten Ihrer Websites senken können.
 
 Die Kernkomponenten werden als Cloud Service AEM und das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) veranschaulicht, wie Komponenten implementiert und verwendet werden. Die Komponenten werden mit dem gesamten Quellcode bereitgestellt und können unverändert oder als Ausgangspunkte für geänderte oder erweiterte Komponenten genutzt werden.
 
@@ -55,7 +55,7 @@ Eine Übersicht über alle verfügbaren Komponenten Ihrer AEM-Instanz erhalten S
 
 Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen Komponenten abzurufen, die im Repository verfügbar sind.
 
-1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.
+1. Wählen Sie in **[!UICONTROL CRXDE Lite]** **[!UICONTROL Tools]** aus der Symbolleiste und **[!UICONTROL Abfrage]**. Dadurch wird die Registerkarte **[!UICONTROL Abfrage]** geöffnet.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Query]** (Abfrage) für `XPath`Type **[!UICONTROL (Typ) die Option]**.
 
@@ -63,5 +63,5 @@ Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen
 
    `//element(*, cq:Component)`
 
-1. Click **[!UICONTROL Execute]** and the components are listed.
+1. Klicken Sie auf **[!UICONTROL Ausführen]** und die Komponenten werden aufgelistet.
 
