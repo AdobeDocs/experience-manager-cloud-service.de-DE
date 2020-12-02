@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 94%
 
 ---
@@ -144,7 +144,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
 
 ## Benutzerspezifische Metadaten mit verarbeitendem Profil {#metadata-compute-service}
 
-Assets als Cloud Service können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Siehe [Verwendung von Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets als [!DNL Cloud Service] können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Siehe [Verwendung von Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Metadaten-Darstellung im verarbeitenden Profil](assets/processing-profile-metadata.png)
 
