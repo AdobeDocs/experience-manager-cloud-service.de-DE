@@ -17,7 +17,7 @@ Ein Benutzer muss Geschäftsinhaber oder Deployment Manager sein, um einen benut
 >[!NOTE]
 >Bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, muss ein gültiges SSL-Zertifikat mit dem benutzerdefinierten Domänennamen in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter Installieren eines SSL-Zertifikats (INSERT-LINK).
 
-Es kann jeweils nur ein Domänenname hinzugefügt werden. Die Benutzer können jedoch Platzhalter beispielsweise `*.wknd.com` als Domänennamen hinzufügen, sodass mehrere Subdomänen mit einem einzigen TXT-Datensatz gehostet werden können.
+Es kann jeweils nur ein Domänenname hinzugefügt werden. Benutzer können jedoch Platzhalter wie `*.wknd.com` als Domänennamen hinzufügen, sodass mehrere Subdomänen mit einem einzigen TXT-Datensatz gehostet werden können.
 Jede Cloud Manager-Umgebung kann bis zu 50 benutzerdefinierte Domänen pro Umgebung hosten.
 Derselbe Domänenname kann nicht auf mehr als einer Umgebung verwendet werden.
 
@@ -27,7 +27,8 @@ Gehen Sie wie folgt vor, um auf der Seite &quot;Domäneneinstellungen&quot;einen
 
 1. Navigieren Sie von der Seite &quot;Umgebung&quot;zur Seite &quot;Domäneneinstellungen&quot;.
 
-1. Wählen Sie Hinzufügen benutzerdefinierten DomänennamenDieser Befehl startet den Assistenten zum Hinzufügen benutzerdefinierter Domänennamen INSERT IMAGE
+1. Hinzufügen benutzerdefinierten Domänennamen auswählen
+Dadurch wird der Assistent zum Hinzufügen eines benutzerdefinierten Domänennamens &quot;IMAGE EINFÜGEN&quot;gestartet.
 
 1. Geben Sie den benutzerdefinierten Domänennamen ein. Hinweis: Setzen Sie bei der Eingabe in Ihre Domäne &quot;http://&#39;&quot;, &quot;https://&#39;&quot;oder &quot;Leerzeichen&quot;nicht ein.
 
@@ -46,12 +47,12 @@ Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebun
 >[!NOTE]
 >DNS-Testversand kann aufgrund von Verzögerungen bei der DNS-Verbreitung bis zu einigen Stunden erkennen. Cloud Manager überprüft die Eigentumsrechte und aktualisiert den Status, der in der Tabelle &quot;Domäneneinstellungen&quot;angezeigt werden kann. Weitere Informationen erhalten Sie unter Überprüfen des Domänennamenstatus INSERT LINK.
 
-## Hinzufügen eines benutzerdefinierten Domänennamens auf der Seite &quot;Umgebung&quot; {#adding-cdn-environments}
+## Hinzufügen eines benutzerdefinierten Domänennamens auf der Seite &quot;Umgebung&quot;{#adding-cdn-environments}
 
 1. Navigieren Sie zur Seite &quot;Umgebung-Detail&quot;für die Umgebung von Interesse.
 1. Verwenden Sie die Eingabefelder oben in der Tabelle &quot;Domänennamen&quot;, um den benutzerdefinierten Domänennamen (SSL-Zertifikat) zu senden. Wählen Sie Hinzufügen.
 1. Hiermit wird der Assistent für den Namen Hinzufügen benutzerdefinierten Domäne mit dem Namen der Umgebung gestartet, der bereits ausgefüllt wurde.
-1. Geben Sie den benutzerdefinierten Domänennamen ein. Hinweis: Bei der Eingabe in Ihre Domäne dürfen Sie keine `http://`Leerzeichen `https://`oder Leerzeichen einschließen. Wählen Sie Weiter.
+1. Geben Sie den benutzerdefinierten Domänennamen ein. Hinweis: Bei der Eingabe in Ihre Domäne dürfen Sie `http://`, `https://` oder Leerzeichen nicht einschließen. Wählen Sie Weiter.
 1. Dadurch gelangen Sie zur Domänennamenüberprüfung für Ihre Umgebung. Gehen Sie zur Domänenüberprüfung (Hinzufügen TXT Record), um mehr zu erfahren. BILD EINFÜGEN
 
 Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebung:
@@ -59,7 +60,7 @@ Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebun
 1. Wählen Sie Weiter.
 1. Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status &quot;Geprüft und bereitgestellt&quot;gekennzeichnet.
 
-An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und Sie können darauf verweisen `CNAME` . Wechseln Sie zum Domänennamenstatus, um mehr über verschiedene Status und Adressen zu erfahren.
+An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und ein `CNAME` zeigt darauf. Wechseln Sie zum Domänennamenstatus, um mehr über verschiedene Status und Adressen zu erfahren.
 
 >[!NOTE]
 >DNS-Testversand kann aufgrund von Verzögerungen bei der DNS-Verbreitung bis zu einigen Stunden erkennen. Cloud Manager überprüft die Eigentumsrechte und aktualisiert den Status, der in der Tabelle &quot;Domäneneinstellungen&quot;angezeigt werden kann. Weitere Informationen erhalten Sie unter Überprüfen des Domänennamenstatus INSERT LINK.
