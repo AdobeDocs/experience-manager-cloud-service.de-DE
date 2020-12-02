@@ -20,7 +20,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 * JcrUtil: die AEM-Implementierung der [JCR-Dienstprogramme](#jcr-utilities).
 * PageManager: der [Seitenmanager](#page-manager) stellt Methoden für Operationen auf Seitenebene bereit.
-* Innerhalb der AEM {#ui-behavior}
+* In der AEM-Benutzeroberfläche {#ui-behavior}
 
 ### JCR-Dienstprogramme {#jcr-utilities}
 
@@ -37,7 +37,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 [PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
 
-### Verhalten der AEM {#ui-behavior}
+### AEM Verhalten der Benutzeroberfläche {#ui-behavior}
 
 Beim Verwalten von Inhalten wird die AEM Benutzeroberfläche wie folgt verwendet:
 
