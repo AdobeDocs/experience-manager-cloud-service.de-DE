@@ -196,7 +196,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
-### Personalisierung  {#personalization}
+### Personalisierung   {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -236,14 +236,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
    * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    * Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur  {#site-structure}
+### Site-Struktur   {#site-structure}
 
 * Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
