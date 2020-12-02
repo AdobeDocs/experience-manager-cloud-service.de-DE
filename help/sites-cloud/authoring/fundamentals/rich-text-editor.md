@@ -38,7 +38,7 @@ In der Regel bietet die Symbolleiste die folgenden Optionen:
 
 Klicken Sie bei textbasierten Komponenten in der [Symbolleiste](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf die Schaltfläche ![RTE-Vollbild](/help/sites-cloud/authoring/assets/editing-full-screen.png) für den Vollbildmodus, um den Rich-Text-Editor zu öffnen und den Rest des Seiteninhalts auszublenden.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration](/help/implementing/developing/extending/rich-text-editor.md) ab.
 
 ![RTE im Vollbildmodus](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
