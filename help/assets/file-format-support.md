@@ -1,11 +1,11 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als Cloud Service unterstützt werden.
+description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als [!DNL Cloud Service] unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 93%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # [!DNL Assets] unterstützte Dateiformate  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a Cloud Service unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
+[!DNL Adobe Experience Manager] as a unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
 Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
@@ -221,7 +221,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Audioformate {#audio-formats}
 
-[!DNL Assets] as a Cloud Service unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
+[!DNL Assets] as a unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.[!DNL Cloud Service]
 
 >[!MORELIKETHIS]
 >
