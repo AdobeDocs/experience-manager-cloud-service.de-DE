@@ -18,7 +18,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Die Mindest-Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
 
-* Java muss auf der AEM Umgebung konfiguriert werden, damit der `java` Befehl von dem Benutzer ausgeführt werden kann, der Beginn AEM.
+* Java muss auf der AEM Umgebung konfiguriert werden, damit der Befehl `java` von dem Benutzer ausgeführt werden kann, der Beginn AEM.
 
 * Das Content Transfer Tool kann mit den folgenden Arten des Datenspeichers verwendet werden: Dateidatenspeicher, S3-Datenspeicher, freigegebener S3-Datenspeicher und Datenspeicher für die Blase.
 
@@ -28,22 +28,22 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Derzeit beträgt die Standardgröße von MongoDB für eine AEM als Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, dass Sie für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einreichen, um die MongoDB-Größe zu erhöhen.
 
-* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion* -Prozess kopiert den gesamten `/home` Migrationssatz und der *Ingestion* -Prozess kopiert alle Benutzer und Gruppen, auf die in den ACLs für migrierte Inhalte verwiesen wird.
+* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion*-Prozess kopiert das gesamte `/home` in den Migrationssatz und der *Ingestion*-Prozess kopiert alle Benutzer und Gruppen, auf die in den ACLs für migrierte Inhalte verwiesen wird.
 
 * Während der Extraktionsphase wird das Content Transfer-Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
-* Nachdem Sie die *Extraktion* des Inhaltsübermittlungsprozesses abgeschlossen haben und bevor Sie die *Übergangsphase* starten, um Inhalte in Ihre AEM als Cloud Service- *Stage* - oder *Produktionsinstanz* zu übernehmen, müssen Sie ein Support-Ticket protokollieren, um die Adobe über Ihre Absicht zu informieren, *Ingestion* ** auszuführen, damit die Adobe sicherstellen kann, dass während desIngestionProcess keine Unterbrechungen auftreten. Sie müssen das Support-Ticket 1 Woche vor dem geplanten *Ingestion* -Datum einloggen. Nachdem Sie das Support-Ticket übermittelt haben, gibt das Supportteam Ihnen Anleitungen zu den nächsten Schritten.
+* Nach Abschluss der *Extraktion*-Phase des Inhaltstransferprozesses und vor dem Starten der *Ingestion Phase* zur Inhaltsaufnahme in Ihre AEM als Cloud Service *Stage* oder *Produktions* müssen Sie ein Support-Ticket anmelden, um die Adobe Ihrer Absicht, *Ingestion auszuführen, zu benachrichtigen. a9/>, damit die Adobe sicherstellen kann, dass während des* Ingestion *-Prozesses keine Unterbrechungen auftreten.* Sie müssen das Support-Ticket 1 Woche vor dem geplanten *Ingestion*-Datum einloggen. Nachdem Sie das Support-Ticket übermittelt haben, gibt das Supportteam Ihnen Anleitungen zu den nächsten Schritten.
    * Protokollieren Sie ein Support-Ticket mit den folgenden Details:
-      * Genaues Datum und voraussichtliche Uhrzeit (mit Ihrer Zeitzone), zu der Sie die *Ingestion* -Phase Beginn beabsichtigen.
+      * Exaktes Datum und geschätzte Uhrzeit (mit Ihrer Zeitzone), wenn Sie planen, die *Ingestion*-Phase Beginn.
       * Umgebung-Typ (Phase oder Produktion), in den Sie Daten erfassen möchten.
       * Programm-ID.
 
-* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Bitte stellen Sie außerdem sicher, dass während der *Engpass* -Phase keine Cloud Manager-Pipelines ausgeführt werden.
+* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie außerdem sicher, dass während der Ausführung der *Ingestion*-Phase keine Cloud Manager-Pipeline ausgeführt wird.
 
 
 ## Verfügbarkeit {#availability}
 
-Das Content Transfer Tool kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+Das Content Transfer Tool kann als ZIP-Datei vom Software Distribution Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quelldistanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie unter [Versionshinweise](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Laden Sie das Content Transfer-Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
@@ -84,7 +84,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte 
    1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
 
       >[!NOTE]
-      >Sie können das Zugriffstoken über die Schaltfläche **Zugriffstoken** öffnen abrufen. Sie müssen sicherstellen, dass Sie in der Zielgruppe Cloud Service-Instanz zur Gruppe AEM Administratoren gehören.
+      >Sie können das Zugriffstoken über die Schaltfläche **Zugriffstoken öffnen** abrufen. Sie müssen sicherstellen, dass Sie in der Zielgruppe Cloud Service-Instanz zur Gruppe AEM Administratoren gehören.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
@@ -120,7 +120,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer-Tool Inhalte 
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool zu extrahieren:
 
-1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten. Das Dialogfeld **Migrationsset-Extraktion** wird angezeigt und klicken Sie auf **Extrahieren**, um die Extraktion Beginn.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool zu 
    >Sie haben die Möglichkeit, Staging-Container während der Extraktion zu überschreiben.
 
 
-1. Im Feld **EXTRAKTION** wird jetzt der Status **AUSGEFÜHRT** angezeigt, um anzuzeigen, dass die Extraktion ausgeführt wird.
+1. Das Feld **EXTRAKTION** zeigt jetzt den Status **WIRD AUSGEFÜHRT** an, um anzuzeigen, dass die Extraktion ausgeführt wird.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
@@ -161,11 +161,11 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer-Tool aufzunehmen:
 
-1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Click on **Ingest** to start the ingestion phase. Zu Demonstrationszwecken ist die Option **Inhalt in Autoreninstanz aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
+1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Erfassen**, um die Erfassungsphase Beginn. Zu Demonstrationszwecken ist die Option **Inhalt in Autoreninstanz aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Sobald die Erfassung abgeschlossen ist, wird der Status im Feld **PUBLISH INGESTION** auf **FINISHED** aktualisiert.
+1. Nach Abschluss der Erfassung wird der Status im Feld **PUBLISH INGESTION** auf **FINISHED** aktualisiert.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 
    >[!IMPORTANT]
    >
-   >Sie sollten die Option &quot;Vorhandenen Inhalt vor der Erfassung **löschen&quot;in der Cloud-Instanz deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird** .
+   >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aktivität gelöscht wird.
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
