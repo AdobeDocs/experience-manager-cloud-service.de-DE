@@ -20,9 +20,9 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion der Adobe auf Datenschutzfragen und was das für Sie als Adobe bedeutet, finden Sie im Datenschutzzentrum der [Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was das für Sie als Adobe bedeutet, finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
 
-## AEM Foundation-Unterstützung zum Datenschutz {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation Data Privacy and Protection support {#aem-foundation-data-privacy-and-protection-support}
 
 Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im User Profil gespeichert. Die Informationen in diesem Artikel behandeln daher in erster Linie das Zugreifen auf und Löschen von Profilen, das Ansprechen von Zugänglichkeits- bzw. Löschanforderungen.
 
@@ -30,7 +30,7 @@ Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im Use
 
 ### Manuelle Schritte {#manual-steps}
 
-1. Open the User Administration console, by browsing to **[!UICONTROL Tools - Security - Users]** or by browsing directly to `https://<serveraddress>:<serverport>/security/users.html`
+1. Öffnen Sie die Konsole &quot;Benutzerverwaltung&quot;, indem Sie zu **[!UICONTROL Tools - Sicherheit - Benutzer]** navigieren oder direkt zu `https://<serveraddress>:<serverport>/security/users.html` navigieren.
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -82,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Öffnen Sie die Konsole für die Benutzerverwaltung und suchen Sie nach dem entsprechenden Benutzer, wie oben beschrieben.
 2. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das ausgewählte Profil wird nun in grau angezeigt.
 
-3. Press the **Disable** button in the upper menu to disable the user:
+3. Drücken Sie die Taste **Deaktivieren** im oberen Menü, um den Benutzer zu deaktivieren:
 
    ![Konto deaktivieren](assets/dpp-foundation-03.png)
 
