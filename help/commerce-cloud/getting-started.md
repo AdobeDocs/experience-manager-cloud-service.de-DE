@@ -31,30 +31,30 @@ Das Einboarding für AEM Commerce als Cloud Service erfolgt in zwei Schritten:
 
 Der erste Schritt erfolgt durch Adobe. Sie müssen Informationen wie die IMS-Organisation, die GraphQL-Endpunkt-URL Ihrer Magento-Umgebung usw. angeben. als Teil des Bereitstellungsprozesses. Weitere Informationen zu Preisen und Bereitstellung erhalten Sie von Ihrem Vertriebsmitarbeiter.
 
-Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programm angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie ein neues erstellen. Weitere Informationen finden Sie unter [Einrichten des Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programm angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie ein neues erstellen. Weitere Informationen finden Sie unter [Programm](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) einrichten.
 
 Der zweite Schritt ist die Selbstbedienung für jede AEM als Cloud Service-Umgebung. Es gibt einige zusätzliche Konfigurationen, die Sie nach der anfänglichen Bereitstellung des CIF-Add-ons vornehmen müssen.
 
-## AEM Handel mit Magento verbinden {#magento}
+## AEM Commerce mit Magento {#magento} verbinden
 
-Um das CIF-Add-on und die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) mit Ihrer Magento-Umgebung zu verbinden, müssen Sie die Magento GraphQL-Endpunkt-URL über eine Cloud Manager-Umgebung-Variable angeben. Der Variablenname lautet `COMMERCE_ENDPOINT`. Eine sichere Verbindung über HTTPS muss konfiguriert werden.
+Um das CIF-Add-on und die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) mit Ihrer Magento-Umgebung zu verbinden, müssen Sie die Magento GraphQL-Endpunkt-URL über eine Cloud Manager-Umgebung-Variable angeben. Der Variablenname ist `COMMERCE_ENDPOINT`. Eine sichere Verbindung über HTTPS muss konfiguriert werden.
 Für jede AEM kann eine andere Magento GraphQL-Endpunkt-URL als Cloud Service-Umgebung verwendet werden. Auf diese Weise können AEM Staging-Umgebung mit Magento-Staging-Systemen und AEM Produktions-Umgebung mit einem Magento-Produktionssystem verbunden werden. Dieser Magento GraphQL-Endpunkt muss öffentlich verfügbar sein, private VPN- oder Ortsverbindungen werden nicht unterstützt.
 
 Gehen Sie wie folgt vor, um AEM Commerce mit Magento zu verbinden:
 
 1. Adobe I/O CLI mit dem Cloud Manager-Plugin
 
-   Informationen zum Herunterladen, Einrichten und Verwenden der [Adobe I/O CLI](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) mit dem CLI-Plug-in [für](https://github.com/adobe/aio-cli) Cloud Manager finden Sie in der Dokumentation [](https://github.com/adobe/aio-cli-plugin-cloudmanager)zu Adobe Cloud Manager.
+   Überprüfen Sie in der [Adobe Cloud Manager-Dokumentation ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html), wie Sie die [Adobe I/O CLI](https://github.com/adobe/aio-cli) mit dem [Cloud Manager CLI-Plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager) herunterladen, einrichten und verwenden.
 
 2. Authentifizieren Sie die CLI mit dem AEM als Cloud Service-Programm
 
-3. Festlegen der `COMMERCE_ENDPOINT` Variablen in Cloud Manager
+3. Variable `COMMERCE_ENDPOINT` in Cloud Manager festlegen
 
    ```bash
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable COMMERCE_ENDPOINT "<Magento GraphQL endpoint URL>"
    ```
 
-   Weitere Informationen finden Sie in den [CLI-Dokumenten](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) .
+   Weitere Informationen finden Sie unter [CLI-Dokumente](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
 
    Die Magento GraphQL-Endpunkt-URL muss auf den GraphQl-Dienst von Magento verweisen und eine sichere HTTPS-Verbindung verwenden. Beispiel: `https://demo.magentosite.cloud/graphql`.
 
@@ -68,6 +68,6 @@ Gehen Sie wie folgt vor, um AEM Commerce mit Magento zu verbinden:
 
 Damit können Sie AEM Commerce als Cloud Service verwenden und Ihr Projekt über Cloud Manager bereitstellen.
 
-## 3rd party commerce integrations {#integrations}
+## Drittanbieter-Commerce-Integrationen {#integrations}
 
 Bei Commerce-Integrationen von Drittanbietern ist eine [API-Zuordnungsebene](architecture/third-party.md) erforderlich, um AEM Commerce als Cloud Service und CIF-Kernkomponenten mit Ihrem Commerce-System zu verbinden. Diese API-Zuordnungsebene wird normalerweise auf Adobe I/O Runtime bereitgestellt. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um verfügbare Integrationen und Zugriff auf Adobe I/O Runtime zu erhalten.
