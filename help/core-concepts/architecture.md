@@ -71,7 +71,7 @@ Es stehen drei Arten von Umgebung zur Verfügung, die AEM als Cloud Service verw
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
+   Weitere Informationen finden Sie unter [Verwalten von Umgebung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
 
 ## Programme {#programs}
 
