@@ -22,6 +22,6 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen:
 
 1. Navigieren Sie auf der Seite &quot;Umgebung&quot;zum Bildschirm &quot;SSL-Zertifikate&quot;.
 1. Identifizieren Sie die Zeile, in der der SSL-Zertifikatname aufgeführt ist, den Sie löschen möchten.
-1. Wählen Sie die **...** Menü ganz rechts in der Zeile
-1. Löschen **auswählen**
+1. Wählen Sie **...** Menü am äußersten rechten Ende der Zeile
+1. Wählen Sie **Löschen**
 1. Senden bestätigen
