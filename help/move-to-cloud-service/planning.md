@@ -46,7 +46,7 @@ Der erste Schritt in der Planungsphase besteht darin, Ihre Bereitschaft für den
 
 Sie müssen eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen vornehmen, um den für die Umstellung erwarteten Aufwand zu bestimmen.
 
-Sie können den Bewertungsschritt beschleunigen, indem Sie den Best Practices-Analyzer für Ihre aktuelle AEM ausführen. Weitere Informationen finden Sie unter [Best Practices-Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Sie können den Bewertungsschritt beschleunigen, indem Sie den Best Practices-Analyzer für Ihre aktuelle AEM ausführen. Weitere Informationen finden Sie unter [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Wenn Sie bereits Zugriff auf Cloud Manager und eine Cloud Service-Umgebung haben, wird empfohlen, Ihren aktuellen Code in einer Cloud Manager-Pipeline für die Code-Qualität auszuführen, um die erforderlichen Code-Änderungen für die Kompatibilität mit Cloud Service zu bewerten.
