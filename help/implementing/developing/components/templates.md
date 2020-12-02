@@ -156,7 +156,7 @@ Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen 
 Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
-* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Verwenden des [Konfigurationsbrowsers](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Verwenden von CRXDE Lite  {#using-crxde-lite}
 
@@ -203,9 +203,9 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 >[!NOTE]
 >
->In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
+>Im [Konfigurationsbrowser können Sie den globalen Ordner bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie Vorlagen in diesem Ordner erstellen möchten. Dies wird jedoch nicht empfohlen.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-### ACLs und Gruppen  {#acls-and-groups}
+### ACLs und Gruppen   {#acls-and-groups}
 
 Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigurations-Browser), müssen ACLs für die entsprechenden Gruppen für die Vorlagenordner definiert werden, um ein angemessenes Maß an Sicherheit zu gewährleisten.
 
@@ -416,7 +416,7 @@ Die Hauptelemente sind:
 Dieser Knoten enthält Eigenschaften für die Vorlage:
 
 * **Name**: `jcr:title`
-* **Name**: `status`
+* **Name**:  `status`
    * **Typ**: `String`
    * **Wert**: `draft`, `enabled` oder `disabled`
 
@@ -470,7 +470,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) für die Seite (Hauptabsatzsystem) entweder in der Vorlage oder den resultierenden Seiten zu definieren.
 
-### Aktivieren und Zulassen einer Vorlage  {#enabling-and-allowing-a-template-for-use}
+### Aktivieren und Zulassen einer Vorlage   {#enabling-and-allowing-a-template-for-use}
 
 1. **Aktivieren Sie die Vorlage.**
 
