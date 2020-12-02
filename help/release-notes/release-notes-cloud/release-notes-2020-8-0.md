@@ -21,7 +21,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Möglichkeit, Seiten und Unterseiten (Seitenbäume) auf eine frühere Version wiederherzustellen.[](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)
 
-* Möglichkeit, Launches [in AEM [SPA Editor zu erstellen.](/help/implementing/developing/hybrid/introduction.md)](/help/sites-cloud/authoring/launches/overview.md)
+* Möglichkeit, [Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor zu erstellen.](/help/implementing/developing/hybrid/introduction.md)
 
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
