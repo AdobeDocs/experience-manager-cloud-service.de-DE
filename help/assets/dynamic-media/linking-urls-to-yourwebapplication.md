@@ -151,7 +151,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Dies ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Streaming (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
