@@ -3,9 +3,9 @@ title: Verwalten von Video-Assets
 description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seit
 
 ## Transkodieren mit Verarbeitungsprofil {#transcode-video}
 
-[!DNL Experience Manager] as a Cloud Service erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
+[!DNL Experience Manager][!DNL Cloud Service] as a erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
 
 ![Erstellen von Verarbeitungsprofilen zum Transkodieren von Videos in Experience Manager](assets/video-processing-profile-for-mp4.png)
 
