@@ -3,17 +3,17 @@ title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Adobe Experience Manager Assets als Hyperlink freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 96%
+source-wordcount: '896'
+ht-degree: 94%
 
 ---
 
 
 # Freigeben und Verteilen von in Experience Manager verwalteten Assets {#share-assets-from-aem}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets as a Cloud Service freizugeben:
+Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets als [!DNL Cloud Service] freizugeben:
 
 * Freigeben als Link.
 * Herunterladen von Assets und separates Freigeben.
@@ -187,6 +187,5 @@ Siehe [Konfigurieren von AEM für die Verwendung mit Adobe Asset Link](https://h
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
