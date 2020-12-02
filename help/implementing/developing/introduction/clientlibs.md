@@ -25,7 +25,7 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 
 >[!TIP]
 >
->Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/uifrontend.html) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
+>Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
@@ -35,7 +35,7 @@ AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
-Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/uifrontend.html) Die Flexibilität des Archetyps ermöglicht es Ihnen, ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
+Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) Die Flexibilität des Archetyps ermöglicht es Ihnen, ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
 
 Der Archetyp kann die Ressourcen dann in einzelne CSS- und JS-Dateien kompilieren und sie automatisch in einen `cq:clientLibraryFolder` im Repository einbetten.
 
@@ -90,7 +90,7 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
    * Wenn Sie statische Ressourcen im Ordner `resources` speichern, können diese nicht auf einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
-   * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
 1. Wählen Sie den Client-Bibliotheksordner aus und klicken Sie auf **Erstellen > Datei erstellen**.
 1. Geben Sie in das Dateinamenfeld einen der folgenden Dateinamen ein und klicken Sie auf „OK“:
@@ -341,7 +341,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-#### Festlegen des Systemstandard-Minimierers  {#set-system-default-minifier}
+#### Festlegen des Systemstandard-Minimierers   {#set-system-default-minifier}
 
 YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
