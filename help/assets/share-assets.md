@@ -107,7 +107,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Herunterladen und Freigeben von Assets {#download-and-share-assets}
 
-Users can download the required assets and share these outside of [!DNL Experience Manager]. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
+Benutzer können die erforderlichen Assets herunterladen und diese außerhalb von [!DNL Experience Manager] freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
 
 ## Freigeben von Assets für Kreativschaffende {#share-with-creatives}
 
