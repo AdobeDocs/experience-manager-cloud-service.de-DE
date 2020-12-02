@@ -26,7 +26,7 @@ Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlosse
 
 Beide enthalten sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der **Aufgabenkachel** erstellen.
 
-### Aufgabenkachel   {#task-tile}
+### Aufgabenkachel    {#task-tile}
 
 Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb des Projekts angezeigt. Die Aufgabenkachel zeigt den aktuellen Status des Projekts an. Die Anzeige basiert auf den vorhandenen Aufgaben innerhalb des Workflows und beinhaltet keine Aufgaben, die in der Zukunft erzeugt werden, während der Workflow fortgesetzt wird. Die folgenden Informationen sind in der Aufgabenkachel sichtbar:
 
@@ -40,7 +40,7 @@ Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb de
 
 Zusätzlich zur Verfolgung des Fortschritts möchten Sie vielleicht auch Informationen über das Projekt anzeigen oder es ändern.
 
-#### Aufgabenliste   {#task-list}
+#### Aufgabenliste    {#task-list}
 
 Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste der Aufgaben anzuzeigen, die mit dem Projekt verbunden sind. Die Aufgaben werden in übergeordnete Workflows aufgeteilt. Die Aufgabendetails werden zusammen mit Metadaten wie Fälligkeitsdatum, Verantwortlicher, Priorität und Status angezeigt.
 
@@ -71,7 +71,7 @@ So fügen Sie eine Aufgabe hinzu:
 
 1. Tippen oder klicken Sie auf **Erstellen**.
 
-## Arbeiten mit Aufgaben im Posteingang   {#working-with-tasks-in-the-inbox}
+## Arbeiten mit Aufgaben im Posteingang    {#working-with-tasks-in-the-inbox}
 
 Eine andere Möglichkeit, auf Aufgaben zuzugreifen, bietet der Posteingang. Sie können den Inhalt aus dem Posteingang öffnen, um die erforderlichen Änderungen vorzunehmen. Wenn Sie fertig sind, ändern Sie den Aufgabenstatus in „Fertig gestellt“. Aufgaben werden auch in Ihrem Posteingang angezeigt, wenn sie einer Benutzergruppe zugewiesen werden, der Sie angehören. In diesem Fall kann jedes Mitglied der Gruppe die erforderliche Bearbeitung durchführen und die Aufgabe fertigstellen.
 
