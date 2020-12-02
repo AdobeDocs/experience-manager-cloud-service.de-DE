@@ -265,7 +265,7 @@ Schließlich kann das Bild in `image.component.html` gerendert werden.
 
 ## Freigeben von Informationen zwischen SPA Komponenten {#sharing-information-between-spa-components}
 
-Es ist regelmäßig erforderlich, dass Komponenten in einer Einzelseitenanwendung Informationen austauschen. Es gibt mehrere empfohlene Methoden, um dies zu tun, wie folgt in steigender Reihenfolge der Komplexität aufgeführt.
+Es ist regelmäßig erforderlich, dass Komponenten in einer Einzelseitenanwendung Informationen austauschen. Es gibt mehrere empfohlene Methoden, um dies zu tun, wie folgt in zunehmender Reihenfolge der Komplexität aufgeführt.
 
 * **Option 1:** Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, indem Sie beispielsweise eine util-Klasse als reine objektorientierte Lösung verwenden.
 * **Option 2: Komponentenstatus mithilfe einer Statusbibliothek wie NgRx** freigeben
