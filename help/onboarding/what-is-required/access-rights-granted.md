@@ -12,7 +12,7 @@ ht-degree: 67%
 
 # Gewährte Zugriffsrechte {#access-rights-granted}
 
-Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **Adobe ID**.
+Adobe erstellt im Adobe Identity Management System (IMS) eine **Organisationskennung** für Ihre Firma, in der alle Ihre Benutzer und ihre Berechtigungen verwaltet werden können. Jeder Benutzer, der Mitglied dieser Organisation sein muss und Zugriff auf einen der [!UICONTROL Experience Cloud]-Dienste erhält, muss über ein eigenes **Adobe ID** verfügen.
 
 ## Anwenderidentitätstypen {#user-identity-types}
 
