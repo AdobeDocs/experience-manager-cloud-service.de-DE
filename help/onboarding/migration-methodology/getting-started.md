@@ -1,11 +1,11 @@
 ---
-title: Einseitige Migration zu Experience Manager als Cloud Service
-description: Einseitige Migration zu Experience Manager als Cloud Service
+title: Migration zum Experience Manager als Cloud Service
+description: Migration zum Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: 02e6581ec5a922d71c53e99212a1f8aecc405f6f
+source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 12%
+source-wordcount: '2070'
+ht-degree: 13%
 
 ---
 
@@ -167,7 +167,7 @@ Cloud Manager ermöglicht Unternehmen die Selbstverwaltung von Experience Manage
 1. [In Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) Management bereitstellen
 2. Führen Sie den Kundencode über die [Cloud Manager-Qualitätspipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) aus.
 3. [In Umgebung für Entwicklung bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Migration**] onlyContent transfer using packages or  [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration(CTT)
+4. [**Migration**] onlyContent transfer using packages or  [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)(CTT)
 5. Empfohlene Testzyklen durchführen (Rauch, QS und mehr)
 6. In die Cloud Manager-Produktionspipeline hochladen
 7. Rauchprüfung
