@@ -18,7 +18,7 @@ Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, u
 
 Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten möglicherweise mit den folgenden funktionalen Einschränkungen konfrontiert.
 
-### Links nicht aktiv  {#links-not-active}
+### Links nicht aktiv   {#links-not-active}
 
 Beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) sind Links nicht aktiv.
 
@@ -32,13 +32,13 @@ Seiten dürfen nicht `structure` genannt werden. Seiten mit dem Namen `structure
 
 Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglicherweise mit den folgenden Einschränkungen konfrontiert.
 
-### Absolut positionierte Elemente  {#absolutely-positioned-elements}
+### Absolut positionierte Elemente   {#absolutely-positioned-elements}
 
 Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
 
 * Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
 
-### vh-Einheiten  {#vh-units}
+### vh-Einheiten   {#vh-units}
 
 `vh`-Einheiten werden nicht unterstützt, da die iframe-Höhe von AEM automatisch angepasst werden muss.
 
