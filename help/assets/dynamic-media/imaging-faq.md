@@ -106,7 +106,7 @@ Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?        {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?         {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
