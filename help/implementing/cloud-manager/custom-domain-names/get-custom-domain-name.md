@@ -17,4 +17,4 @@ Sie können einen Domänennamen bei einer Domänennamenregistrierungsstelle, ein
 >[!NOTE]
 >Cloud Manager ist keine Domänennamenregistrierungsstelle und bietet keine DNS-Dienste an.
 
-DNS ermöglicht es uns, benutzerdefinierte Markendomänen an Websites anzuhängen, indem computerlesbare Computeradressen, wie z.B. `184.33.123.64` an unvergessliche Adressen wie `www.wknd.com`, übersetzt werden.
+DNS ermöglicht es uns, benutzerdefinierte Markendomänen an Websites anzuhängen, indem computerlesbare Computeradressen wie `184.33.123.64` in unvergessliche Adressen wie `www.wknd.com` übersetzt werden.
