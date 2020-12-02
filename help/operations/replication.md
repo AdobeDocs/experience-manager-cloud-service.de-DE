@@ -12,23 +12,23 @@ ht-degree: 3%
 
 # Replikation {#replication}
 
-Adobe Experience Manager als Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) -Funktion, um die Inhalte zu verschieben, um sie in einen Pipeline-Dienst zu replizieren, der auf Adobe I/O ausgeführt wird, das sich außerhalb der AEM Laufzeit befindet.
+Adobe Experience Manager als Cloud Service verwendet die Funktion [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html), um den Inhalt zu verschieben, um ihn in einen Pipelineservice zu replizieren, der auf Adobe I/O ausgeführt wird, der sich außerhalb der AEM Laufzeit befindet.
 
 >[!NOTE]
 >
->Lesen Sie [Distribution](/help/core-concepts/architecture.md#content-distribution) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Distribution](/help/core-concepts/architecture.md#content-distribution).
 
 ## Methoden zum Veröffentlichen von Inhalten {#methods-of-publishing-content}
 
-### Schnelle Veröffentlichung rückgängig machen/planen - Veröffentlichung rückgängig machen/veröffentlichen {#publish-unpublish}
+### Schnelles Aufheben/Veröffentlichen - Geplante Aufhebung/Veröffentlichung {#publish-unpublish}
 
 Diese Standard-AEM-Funktionen für die Autoren ändern sich nicht mit AEM Cloud Service.
 
-### An- und Ausschalten - Konfiguration auslösen {#on-and-off-times-trigger-configuration}
+### An- und Ausschalten - Auslöserkonfiguration {#on-and-off-times-trigger-configuration}
 
-Die zusätzlichen Möglichkeiten für **An- und** Ausschaltzeit **sind auf der Registerkarte** Grundeinstellungen der Seiteneigenschaften [](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)verfügbar.
+Die zusätzlichen Möglichkeiten von **On Time** und **Off Time** sind auf der Registerkarte [Einfach unter Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic) verfügbar.
 
-Um die automatische Replizierung dafür zu realisieren, müssen Sie die **automatische Replizierung** in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger-Konfiguration** aktivieren:
+Um die automatische Replizierung zu diesem Zweck zu realisieren, müssen Sie die Option **Automatische Replizierung** in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) **An-Aus-Auslöserkonfiguration** aktivieren:
 
 ![OSGi-On-Off-Auslöserkonfiguration](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -36,9 +36,9 @@ Um die automatische Replizierung dafür zu realisieren, müssen Sie die **automa
 
 So führen Sie eine Baumstruktur-Aktivierung durch:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
-2. Wählen Sie die Karte **forwardPublisher aus**
-3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die **Option &quot;Verteilen&quot;.**
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Distribution**
+2. Wählen Sie die Karte **forwardPublisher**
+3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die Option **Distribute**
 
    ![](assets/distribute.png "DistributeDistribute")
 4. Wählen Sie den Pfad im Pfadbrowser aus, fügen Sie einen Knoten, eine Struktur oder löschen Sie ihn nach Bedarf und wählen Sie **Senden**
@@ -47,12 +47,12 @@ So führen Sie eine Baumstruktur-Aktivierung durch:
 
 Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM Author-Dienstes:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Verteilung**
-2. Wählen Sie die Karte **forwardPublisher aus**
+1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Distribution**
+2. Wählen Sie die Karte **forwardPublisher**
    ![](assets/status.png "StatusStatus")
 3. Überprüfen des Warteschlangenstatus, der grün sein sollte
 4. Sie können die Verbindung zum Replizierungsdienst testen
-5. Wählen Sie die Registerkarte &quot; **Protokolle** &quot;aus, auf der der Verlauf der Veröffentlichungen angezeigt wird
+5. Wählen Sie die Registerkarte **Protokolle**, auf der der Verlauf der Veröffentlichungen angezeigt wird.
 
 ![](assets/logs.png "LogsLogs")
 
