@@ -323,7 +323,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
 
    Siehe [Hinzufügen eines Karussellsets zur Landingpage Ihrer Website](#adding-a-carousel-banner-to-your-website-page).
 
-## Bearbeiten von Karussellsets  {#editing-carousel-sets}
+## Bearbeiten von Karussellsets   {#editing-carousel-sets}
 
 >[!NOTE]
 Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
