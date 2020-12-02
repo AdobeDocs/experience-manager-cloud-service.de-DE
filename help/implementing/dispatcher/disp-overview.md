@@ -34,7 +34,7 @@ Die Dispatcher Tools sind Teil des gesamten AEM as a Cloud Service-SDK und biete
 
 ## Herunterladen und Extrahieren der Tools {#extracting-the-sdk}
 
-Die Dispatcher Tools, die Teil des [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)sind, können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) Portal heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Dispatcher-Tools-Version verfügbar ist, kann für die Bereitstellung auf Cloud-Umgebung verwendet werden, auf denen diese AEM in der Cloud oder höher ausgeführt werden.
+Die Dispatcher-Tools, die zum [AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) gehören, können von einer ZIP-Datei unter [Softwareverteilung](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Dispatcher-Tools-Version verfügbar ist, kann für die Bereitstellung auf Cloud-Umgebung verwendet werden, auf denen diese AEM in der Cloud oder höher ausgeführt werden.
 
 Entpacken Sie das SDK, das Dispatcher-Tools für macOS/Linux und Windows bündelt.
 
@@ -202,7 +202,7 @@ Das Validierungs-Tool ist im SDK `bin/validator` als macOS-, Linux- oder Windows
 
 Es wird wie folgt aufgerufen: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-Das Tool überprüft, ob die Dispatcher-Konfiguration die entsprechenden Anweisungen verwendet, die von AEM als Cloud-Dienst unterstützt werden, indem alle Dateien mit einem Muster überprüft werden `conf.d/enabled_vhosts/*.vhost`. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
+Das Tool überprüft, ob die Dispatcher-Konfiguration die entsprechenden Richtlinien verwendet, die von AEM als Cloud-Dienst unterstützt werden, indem alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` überprüft werden. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 
 ```
 $ validator whitelist
@@ -346,11 +346,11 @@ Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Zwar wird dies für Abwärtskompatibilität weiterhin unterstützt, doch sollten Sie zum neuen Layout wechseln.
 
-## Lokale Validierung der Konfigurationssyntax des Dispatchers, damit apache httpd Beginn ausführen kann {#local-validation}
+## Lokale Validierung der Konfigurationssyntax des Dispatchers, damit apache httpd Beginn {#local-validation}
 
 Sobald festgestellt wurde, dass die Konfiguration des Dispatcher-Moduls nur unterstützte Direktiven enthält, sollten Sie überprüfen, ob die Syntax korrekt ist, damit apache Beginn machen kann. Um dies zu testen, muss der Docker lokal installiert sein. Beachten Sie, dass AEM nicht laufen muss.
 
-Verwenden Sie das `validate.sh` Skript wie folgt:
+Verwenden Sie das Skript `validate.sh` wie folgt:
 
 ```
 $ validate.sh src/dispatcher
@@ -374,13 +374,13 @@ Phase 2 finished
 Das Skript führt Folgendes aus:
 
 1. Es führt den Validator aus dem vorherigen Abschnitt aus, um sicherzustellen, dass nur die unterstützten Direktiven einbezogen werden. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Es führt den `httpd -t command` to-Test aus, wenn die Syntax korrekt ist, sodass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration für die Bereitstellung bereit sein
+2. Es führt das `httpd -t command` aus, um zu testen, ob die Syntax so korrekt ist, dass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration für die Bereitstellung bereit sein
 
 ## Lokales Testen der Apache- und Dispatcher-Konfiguration {#testing-apache-and-dispatcher-configuration-locally}
 
 Sie können Ihre Apache- und Dispatcher-Konfiguration auch lokal testen. Dazu muss der Docker lokal installiert sein und Ihre Konfiguration, um die Validierung wie oben beschrieben zu bestehen.
 
-Führen Sie das Validator-Tool aus (beachten Sie, dass es sich von dem `validator.sh` oben genannten unterscheidet), indem Sie den `-d` Parameter verwenden, der einen Ordner mit allen Dispatcher-Konfigurationsdateien ausgibt. Führen Sie dann das `docker_run.sh` Skript aus und übergeben Sie diesen Ordner als Argument. Durch Angabe der Anschlussnummer (hier: 8080), um den Dispatcher-Endpunkt anzuzeigen, wird ein Docker-Container gestartet, der den Dispatcher mit Ihrer Konfiguration ausführt.
+Führen Sie das Validator-Tool aus (beachten Sie, dass es sich von dem zuvor erwähnten `validator.sh` unterscheidet), indem Sie den Parameter `-d` verwenden, der einen Ordner mit allen Dispatcher-Konfigurationsdateien ausgibt. Führen Sie dann das Skript `docker_run.sh` aus und übergeben Sie diesen Ordner als Argument. Durch Angabe der Anschlussnummer (hier: 8080), um den Dispatcher-Endpunkt anzuzeigen, wird ein Docker-Container gestartet, der den Dispatcher mit Ihrer Konfiguration ausführt.
 
 ```
 $ validator full -d out src/dispatcher
@@ -399,7 +399,7 @@ Dadurch wird Dispatcher in einem Container gestartet, wobei sein Backend auf ein
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+Die folgende Strategie kann verwendet werden, um die Protokollausgabe für das Dispatcher-Modul zu erhöhen und die Ergebnisse der `RewriteRule`-Auswertung sowohl in lokalen als auch in Cloud-Umgebung zu sehen.
 
 Die Protokollierungsstufen für diese Module werden durch die Variablen `DISP_LOG_LEVEL` und `REWRITE_LOG_LEVEL` definiert. Sie können in der Datei `conf.d/variables/global.vars` festgelegt werden. Ihr relevanter Teil lautet:
 
