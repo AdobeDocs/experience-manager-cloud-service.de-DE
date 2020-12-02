@@ -26,9 +26,9 @@ Durch die Verwendung von Bedingungen zum Ausblenden haben Administratoren, Entwi
 
 ## Implementierung und Nutzungsdetails {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` ist verantwortlich für das Filtern der Ressourcen basierend auf dem Vorhandensein und dem Wert der `granite:hide` Eigenschaft, die sich auf dem zu filternden Feld befinden. Die Implementierung `/libs/cq/gui/components/authoring/dialog/dialog.jsp` umfasst eine Instanz von `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` ist verantwortlich für das Filtern der Ressourcen basierend auf dem Vorhandensein und dem Wert der  `granite:hide` Eigenschaft, die sich auf dem zu filternden Feld befinden. Die Implementierung von `/libs/cq/gui/components/authoring/dialog/dialog.jsp` enthält eine Instanz von `FilteringResourceWrapper.`
 
-The implementation makes use of the Granite [ELResolver API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) and adds a `cqDesign` custom variable via the ExpressionCustomizer.
+Die Implementierung verwendet die Granite [ELResolver API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) und fügt über den ExpressionCustomizer eine benutzerdefinierte Variable `cqDesign` hinzu.
 
 Im Folgenden sind einige Beispiele für Bedingungen zum Ausblenden für einen Design-Knoten aufgeführt, die sich entweder unter `etc/design` befinden oder als Inhaltsrichtlinie vorliegen.
 
@@ -50,9 +50,9 @@ Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 ## Beispiel {#example}
 
-Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html), Betrachten Sie beispielsweise die [Liste-Kernkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html) , die im [WKND-Lernprogramm implementiert ist.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html), Betrachten Sie zum Beispiel die [Liste-Kernkomponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) wie im [WKND-Lernprogramm implementiert.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
-[Mithilfe des Vorlageneditors](/help/sites-cloud/authoring/features/templates.md)kann der Vorlagenautor im Entwurfsdialogfeld definieren, welche Optionen der Seitenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, können aktiviert oder deaktiviert werden.
+[Mithilfe des Vorlageneditors](/help/sites-cloud/authoring/features/templates.md) kann der Vorlagenautor im Entwurfsdialogfeld definieren, welche Optionen der Seitenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, können aktiviert oder deaktiviert werden.
 
 Wenn Vorlagenautoren die Option für die untergeordneten Seiten deaktivieren, wird eine Designeigenschaft festgelegt und eine Bedingung zum Ausblenden dagegen ausgewertet, was dazu führt, dass die Option für Seitenautoren nicht gerendert wird.
 
@@ -64,15 +64,15 @@ Wenn Vorlagenautoren die Option für die untergeordneten Seiten deaktivieren, wi
 
    ![Dialogfeld &quot;Entwurf von Listen&quot;](assets/hide-conditions-list-design.png)
 
-1. Eine Policy-Node wird unter `/conf/wknd/settings/wcm/policies/wknd/components/list` einer Eigenschaft erstellt, die auf `disableChildren` `true`festgelegt ist.
+1. Eine Richtlinienknoten wird unter `/conf/wknd/settings/wcm/policies/wknd/components/list` erstellt, wobei die Eigenschaft `disableChildren` auf `true` eingestellt ist.
 
    ![Knotenstruktur der Ausblendebedingung](assets/hide-conditions-node-structure.png)
 
-1. Die Ausblenden-Bedingung wird als Wert einer `granite:hide` Eigenschaft auf dem Knoten der dialog-Eigenschaft definiert `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
+1. Die Ausblenden-Bedingung ist als Wert einer `granite:hide`-Eigenschaft auf dem Knoten der dialog-Eigenschaft `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children` definiert
 
    ![Beurteilung der Ausblendebedingung](assets/hide-conditions-evaluation.png)
 
-1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
+1. Der Wert von `disableChildren` wird aus der Designkonfiguration gezogen und der Ausdruck `${cdDesign.disableChildren}` wird als `false` ausgewertet. Das bedeutet, dass die Option nicht als Teil der Komponente gerendert wird.
 
 1. Die Option **Untergeordnete Seiten** wird für Seitenautoren bei Verwendung der Listenkomponente nicht mehr gerendert.
 
