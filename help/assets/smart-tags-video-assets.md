@@ -2,9 +2,9 @@
 title: Intelligente Tags für Video-Assets
 description: Durch intelligentes Tagging von Video-Assets wird das Asset-Tagging automatisiert, indem kontextbezogene und beschreibende Tags mit Adobe Sensei-Diensten angewendet werden.
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Smart-Tags für Ihre Video-Assets {#video-smart-tags}
 
-Der wachsende Bedarf an neuen Inhalten erfordert geringere manuelle Anstrengungen, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als Cloud Service unterstützt automatisiertes Tagging von Video-Assets, unterstützt durch künstliche Intelligenz. Das manuelle Tagging der Videos kann zeitaufwendig sein. Die Adobe Sensei-basierte Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle für künstliche Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. Dadurch wird die Zeit für DAM-Benutzer verringert, ihren Kunden umfangreiche Erlebnisse bereitzustellen. Der maschinelle Lerndienst der Adobe generiert zwei Tags für ein Video. Ein Satz entspricht jedoch Objekten, Szenen und Attributen in diesem Video; Der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
+Der wachsende Bedarf an neuen Inhalten erfordert geringere manuelle Anstrengungen, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] Unterstützung für automatisiertes Tagging von Video-Assets, unterstützt durch künstliche Intelligenz. Das manuelle Tagging der Videos kann zeitaufwendig sein. Die Adobe Sensei-basierte Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle für künstliche Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. Dadurch wird die Zeit für DAM-Benutzer verringert, ihren Kunden umfangreiche Erlebnisse bereitzustellen. Der maschinelle Lerndienst der Adobe generiert zwei Tags für ein Video. Ein Satz entspricht jedoch Objekten, Szenen und Attributen in diesem Video; Der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
 
-Die Videodateiformate (und ihre Codecs), die für intelligentes Tagging unterstützt werden, sind MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) und WMV (WMV2). Darüber hinaus ermöglicht die Funktion das Tagging von Videos bis zu einer Größe von 300 MB. Das automatisierte Tagging von Video-Assets erfolgt als standardmäßige Asset-Verarbeitung (zusammen mit der Erstellung von Miniaturbildern und der Metadaten-Extraktion), nachdem ein Video hochgeladen wurde oder wenn eine erneute Verarbeitung ausgelöst wird. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt. Video-Tagging ist in [!DNL Adobe Experience Manager] als Cloud Service standardmäßig aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren.
+Die Videodateiformate (und ihre Codecs), die für intelligentes Tagging unterstützt werden, sind MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) und WMV (WMV2). Darüber hinaus ermöglicht die Funktion das Tagging von Videos bis zu einer Größe von 300 MB. Das automatisierte Tagging von Video-Assets erfolgt als standardmäßige Asset-Verarbeitung (zusammen mit der Erstellung von Miniaturbildern und der Metadaten-Extraktion), nachdem ein Video hochgeladen wurde oder wenn eine erneute Verarbeitung ausgelöst wird. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt. Video-Tagging ist in [!DNL Adobe Experience Manager] standardmäßig als [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren.
 
 ## Smart-Tagging-Videos beim Hochladen von {#smart-tag-assets-on-ingestion}
 
-Wenn Sie [Video-Assets](add-assets.md#upload-assets) als Cloud Service nach [!DNL Adobe Experience Manager] hochladen, werden die Videos ![einer Verarbeitung](assets/do-not-localize/assetprocessing.png) unterzogen. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Seite [!UICONTROL Einfach] des Assets [!UICONTROL Eigenschaften]. Intelligente Tags werden dem Video unter [!UICONTROL Smart Tags] automatisch hinzugefügt. asset compute Service nutzt Adobe Sensei, um diese Smarttags zu erstellen.
+Wenn Sie [Video-Assets](add-assets.md#upload-assets) als [!DNL Cloud Service] [!DNL Adobe Experience Manager] hochladen, werden die Videos einer ![Verarbeitung](assets/do-not-localize/assetprocessing.png) unterzogen. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Seite [!UICONTROL Einfach] des Assets [!UICONTROL Eigenschaften]. Intelligente Tags werden dem Video unter [!UICONTROL Smart Tags] automatisch hinzugefügt. asset compute Service nutzt Adobe Sensei, um diese Smarttags zu erstellen.
 
 ![Intelligente Tags werden Videos hinzugefügt und auf der Registerkarte &quot;Einfach&quot;der Asset-Eigenschaften angezeigt](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ So Opt-out Sie die Erstellung automatisierter Video-Smart-Tags für Assets, die 
 
 Der Standardschwellenwert für Aktions- und Objekt-Tags in [!DNL Adobe Experience Manager] ist 0,7 (sollte zwischen 0 und 1 liegen). Wenn einige Video-Assets nicht mit einem bestimmten Tag versehen sind, deutet dies darauf hin, dass der Algorithmus in den prognostizierten Tags weniger als 70 % sicher ist. Der Standardschwellenwert ist möglicherweise nicht immer optimal für alle Benutzer. Sie können daher den Wert des Konfidenzwerts in der OSGI-Konfiguration ändern.
 
-So fügen Sie die OSGI-Konfidenzwert-Konfiguration zum Projekt hinzu, das mit [!DNL Adobe Experience Manager] als Cloud Service über Cloud Manager bereitgestellt wird:
+So fügen Sie die OSGI-Konfiguration des Konfidenzwerts zum Projekt hinzu, das [!DNL Adobe Experience Manager] als [!DNL Cloud Service] bis [!DNL Cloud Manager] bereitgestellt wird:
 
 * Fügen Sie im [!DNL Adobe Experience Manager]-Projekt (`ui.config` seit Archetype 24 oder zuvor `ui.apps`) die `config.author` OSGi-Konfiguration eine Konfigurationsdatei mit dem Namen `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` mit folgendem Inhalt hinzu:
 
