@@ -23,7 +23,7 @@ Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zu d
 
 Produktfunktionstests werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt und nicht übersprungen werden kann.
 
-Beziehen Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) für Mustertests herunter.
+Beispieltests finden Sie unter [Produktfunktionelle Tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke).
 
 ## Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -32,7 +32,7 @@ Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vor
 Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
 
 >[!NOTE]
->Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+>Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugriff und Verwaltung von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
 
 
 ### Schreiben von Funktionstests {#writing-functional-tests}
