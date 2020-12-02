@@ -16,7 +16,7 @@ In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein
 
 * [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
-* [Verwalten von Assets](/help/assets/manage-digital-assets.md) für weitere Informationen zu Standardelementen.
+* [Verwalten von ](/help/assets/manage-digital-assets.md) Assets für weitere Informationen zu Standardelementen.
 
 <!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
 * [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
@@ -102,7 +102,7 @@ Integration mit dem Assets-Kern:
 >
 >Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
@@ -165,7 +165,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung         {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung          {#the-content-fragment-management-api-server-side}
 
 Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -175,7 +175,7 @@ Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwende
 >
 >Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen         {#key-interfaces}
+### Hauptschnittstellen          {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -235,7 +235,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()         {#adapting-using-adaptto}
+### Anpassen mit adaptTo()          {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -267,7 +267,7 @@ Beachten Sie Folgendes:
 
    * Durch das Entfernen vorhandener Varianten eines Elements mithilfe von `ContentElement.removeVariation()` werden die der Variante zugewiesenen globalen Datenstrukturen nicht aktualisiert. Verwenden Sie stattdessen `ContentFragment.removeVariation()`, um sicherzustellen, dass diese Datenstrukturen synchron bleiben, wodurch eine Variante global entfernt wird.
 
-## Client-seitige API für die Inhaltsfragmentverwaltung         {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung          {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -316,7 +316,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments         {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments          {#example-creating-a-new-content-fragment}
 
 Um programmgesteuert ein neues Inhaltsfragment zu erstellen, verwenden Sie eine `FragmentTemplate`, die von einer Modellressource angepasst wurde.
 
@@ -328,7 +328,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern         {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern          {#example-specifying-the-auto-save-interval}
 
 Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
@@ -351,4 +351,4 @@ Wenn Sie ein Intervall von 5 Minuten für das automatische Speichern festlegen m
 
 Weitere Informationen finden Sie unter
 
-* [Kernkomponenten – Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
+* [Kernkomponenten – Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
