@@ -270,7 +270,7 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 * Öffnen Sie das Dialogfeld [Komponente](#component-edit-dialog) für die Bearbeitung.
 * [Ziehen Sie ein Asset](#drag-and-drop-assets-into-component) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
 
-### Dialogfeld „Komponente bearbeiten“   {#component-edit-dialog}
+### Dialogfeld „Komponente bearbeiten“    {#component-edit-dialog}
 
 Über das [Symbol „Bearbeiten“ (Bleistift) in der Symbolleiste](#component-toolbar) können Sie eine Komponente öffnen, um deren Inhalt zu bearbeiten.
 
@@ -409,7 +409,7 @@ Beispiel:
 
 [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) bieten Reviewern und anderen Autoren die Möglichkeit, Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau   {#previewing-pages}
+## Anzeigen einer Seitenvorschau    {#previewing-pages}
 
 Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
