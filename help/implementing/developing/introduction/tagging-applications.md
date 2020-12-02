@@ -22,20 +22,20 @@ die mit der
 
 Weitere Informationen zum Tagging:
 
-* Informationen zum Taggen von Inhalten als Inhaltsautor finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md) .
+* Informationen zum Taggen von Inhalten als Inhaltsersteller finden Sie unter [Tags](/help/sites-cloud/authoring/features/tags.md) verwenden.
 * Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter Verwalten von Tags.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
-Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der `cq:tags` String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Dadurch werden `TagID`s entfernt, die auf nicht vorhandene Tags verweisen, und es werden Updates `TagID`für verschobene oder zusammengeführte Tags entfernt. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der  `cq:tags` String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Dadurch werden  `TagID`Seiten entfernt, die auf nicht vorhandene Tags verweisen, und es werden Updates  `TagID`für verschobene oder zusammengeführte Tags entfernt. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
-* `JcrTagManagerFactory` - gibt eine JCR-basierte Implementierung einer `TagManager`zurück. Es ist die Referenzimplementierung der Tagging-API.
+* `JcrTagManagerFactory` - gibt eine JCR-basierte Implementierung einer  `TagManager`zurück. Es ist die Referenzimplementierung der Tagging-API.
 * `TagManager` - ermöglicht das Auflösen und Erstellen von Tags anhand von Pfaden und Namen.
 * `Tag` - definiert das Tag-Objekt.
 
 ### Abrufen eines JCR-basierten TagManagers {#getting-a-jcr-based-tagmanager}
 
-To retrieve a `TagManager` instance, you need to have a JCR `Session` and to call `getTagManager(Session)`:
+Um eine `TagManager`-Instanz abzurufen, müssen Sie über eine JCR `Session`-Instanz verfügen und `getTagManager(Session)` aufrufen:
 
 ```java
 @Reference
@@ -60,7 +60,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
+Für die JCR-basierte Implementierung, die `Tags` JCR `Nodes` zuordnet, können Sie den `adaptTo`-Mechanismus von Sling direkt verwenden, wenn Sie über die Ressource verfügen (z. B. `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -75,7 +75,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Directly adapting from `Node` to `Tag` is not possible, because `Node` does not implement the Sling `Adaptable.adaptTo(Class)` method.
+>Die direkte Anpassung von `Node` an `Tag` ist nicht möglich, da `Node` die Sling `Adaptable.adaptTo(Class)`-Methode nicht implementiert.
 
 ### Abrufen und Festlegen von Tags {#getting-and-setting-tags}
 
@@ -114,7 +114,7 @@ tagManager.deleteTag(tag);
 
 ### Replizieren von Tags {#replicating-tags}
 
-It is possible to use the replication service (`Replicator`) with tags because tags are of type `nt:hierarchyNode`:
+Es ist möglich, den Replizierungsdienst (`Replicator`) mit Tags zu verwenden, da Tags vom Typ `nt:hierarchyNode` sind:
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -122,7 +122,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag-Müll-Collector ist ein Hintergrunddienst, der die Tags bereinigt, die ausgeblendet und nicht verwendet werden. Ausgeblendete und nicht verwendete Tags sind Tags unterhalb `/content/cq:tags` der Tags, die eine `cq:movedTo` Eigenschaft aufweisen und nicht auf einem Inhaltsknoten verwendet werden. Sie zählen Null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
+Der Tag-Müll-Collector ist ein Hintergrunddienst, der die Tags bereinigt, die ausgeblendet und nicht verwendet werden. Ausgeblendete und nicht verwendete Tags sind Tags unterhalb von `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft haben und nicht auf einem Inhaltsknoten verwendet werden. Sie zählen Null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
 
@@ -132,16 +132,16 @@ Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies k
 
 Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
-* The search for `TagID` searches for the tags that have the property `cq:movedTo` set to `TagID` and follows through the `cq:movedTo` `TagID`s.
-* The search for tag title only searches the tags that do not have a `cq:movedTo` property.
+* Die Suche nach `TagID` sucht nach den Tags, für die die Eigenschaft `cq:movedTo` auf `TagID` gesetzt ist, und folgt durch die `cq:movedTo` `TagID`s.
+* Bei der Suche nach Tag-Titel werden nur die Tags durchsucht, die keine `cq:movedTo`-Eigenschaft haben.
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-Ein Tag `title` kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft hat das Format `jcr:title.<locale>`, z.B. `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und den Unterstrich (`_`) anstelle von Bindestrich/Bindestrich (`-`) verwenden. Beispiel: `de_ch`.
+Ein Tag `title` kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft hat das Format `jcr:title.<locale>`, z.B. `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und den Unterstrich (`_`) anstelle von Bindestrich/Bindestrich (`-`) verwenden. Beispiel:  `de_ch`.
 
-Wenn beispielsweise der Seite &quot; **Produkte** &quot;das Tag &quot; **Tiere** &quot;hinzugefügt wird, `stockphotography:animals` wird der Wert der Eigenschaft `cq:tags` der Node hinzugefügt `/content/wknd/en/products/jcr:content`. Die Übersetzung wird vom Tag-Knoten referenziert.
+Wenn beispielsweise das Tag **Tiere** der Seite **Produkte** hinzugefügt wird, wird der Wert `stockphotography:animals` der Eigenschaft `cq:tags` des Knotens `/content/wknd/en/products/jcr:content` hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
 
-The server-side API has localized `title`-related methods:
+Die serverseitige API hat lokalisierte `title`-bezogene Methoden:
 
 * [`com.day.cq.tagging.Tag`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
@@ -156,17 +156,17 @@ The server-side API has localized `title`-related methods:
 
 In AEM kann die Sprache entweder aus der Seitensprache oder aus der Benutzersprache abgerufen werden.
 
-For tagging, localization depends on the context as tag `titles` can be displayed in the page language, in the user language or in any other language.
+Beim Tagging hängt die lokale Anpassung vom Kontext ab, da das Tag `titles` in der Seitensprache, in der Benutzersprache oder in jeder anderen Sprache angezeigt werden kann.
 
 ### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“{#adding-a-new-language-to-the-edit-tag-dialog}
 
-The following procedure describes how to add a new language (e.g. Finnish) to the **Tag Edit** dialog:
+Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (z. B. Finnisch) zum Dialogfeld **Tag bearbeiten** hinzufügen:
 
-1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
-1. Add `fi_fi`, which represents the Finnish locale, and save the changes.
+1. Bearbeiten Sie in **CRXDE** die Eigenschaft mit mehreren Werten `languages` des Knotens `/content/cq:tags`.
+1. hinzufügen `fi_fi`, das das finnische Gebietsschema darstellt, und speichern Sie die Änderungen.
 
-Finnish is now available in the tag dialog of the page properties and in the **Edit Tag** dialog when editing a tag in the **Tagging** console.
+Finnisch ist jetzt im Tag-Dialogfeld der Seiteneigenschaften und im Dialogfeld **Tag bearbeiten** verfügbar, wenn ein Tag in der Konsole **Tagging** bearbeitet wird.
 
 >[!NOTE]
 >
->The new language needs to be one of the AEM recognized languages, i.e. it needs to be available as a node below `/libs/wcm/core/resources/languages`.
+>Die neue Sprache muss eine der AEM erkannten Sprachen sein, d.h. sie muss als Knoten unterhalb von `/libs/wcm/core/resources/languages` verfügbar sein.
