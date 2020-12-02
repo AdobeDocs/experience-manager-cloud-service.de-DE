@@ -20,8 +20,10 @@ ht-degree: 100%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
->Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
+>
+Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern von Adobe Experience Manager as a Cloud Service den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
@@ -51,7 +53,7 @@ Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen 
 
 ## Schlüsselkonzepte {#key-concepts}
 
-Die Assets-REST-API bietet [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
+Die Assets-REST-API bietet [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
 
 Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das Asset dessen Pfad (ohne das Präfix `/content/dam`).
 
@@ -63,7 +65,6 @@ Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
 >[!NOTE]
->
 >Der Zugriff über:
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
 >* `/content/path/to/page` **erfordert keine** Verwendung des `.model`-Selektors.
@@ -147,6 +148,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -228,7 +230,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente           {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente            {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -379,7 +381,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz           {#api-reference}
+## API-Referenz            {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 <!--
