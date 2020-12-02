@@ -15,7 +15,7 @@ ht-degree: 96%
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
 * Informationen zur Erstellung und Verwaltung von Tags sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter „Verwalten von Tags“. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* See [Tagging for Developers](/help/implementing/developing/introduction/tagging-framework.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Informationen zum Tagging-Framework sowie zum Einschließen und Erweitern von Tags in benutzerdefinierten Anwendungen finden Sie unter [Tagging für Entwickler](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
 
