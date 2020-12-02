@@ -76,7 +76,7 @@ So erstellen Sie eine Adobe Target-Zielgruppe:
 1. Geben Sie einen Namen für die Zielgruppe ein und tippen oder klicken Sie auf **Speichern**.
 1. Tippen oder klicken Sie auf **Speichern**. Ihre Zielgruppe wird nun in der Zielgruppenliste angezeigt.
 
-### Attribute und zugehörige Optionen  {#attributes-and-their-options}
+### Attribute und zugehörige Optionen   {#attributes-and-their-options}
 
 Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 
