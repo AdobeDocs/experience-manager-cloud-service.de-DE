@@ -181,7 +181,7 @@ So bearbeiten Sie Ihre Seite:
    >
    >Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
-### Bearbeiten der Seiteneigenschaften   {#editing-the-page-properties}
+### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -233,7 +233,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
 
-### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite   {#move-copy-and-paste-or-delete-your-page}
+### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite    {#move-copy-and-paste-or-delete-your-page}
 
 Diese Aktionen können alle wie folgt ausgelöst werden:
 
@@ -284,7 +284,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-### Erstellen einer Seitenversion   {#creating-a-version-of-your-page}
+### Erstellen einer Seitenversion    {#creating-a-version-of-your-page}
 
 So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versions.md) Ihrer Seite:
 
