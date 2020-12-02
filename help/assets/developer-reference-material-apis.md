@@ -3,9 +3,9 @@ title: Entwicklerverweise für  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1208'
 ht-degree: 51%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 51%
 
 # [!DNL Assets] APIs und Referenzmaterial für Entwickler  {#assets-cloud-service-apis}
 
-Der Artikel enthält Referenzmaterial und Ressourcen für Entwickler von [!DNL Assets] als Cloud Service. Es enthält eine neue Upload-Methode, API-Referenz und Informationen zur Unterstützung, die in der Workflows nach der Verarbeitung bereitgestellt wird.
+Der Artikel enthält Referenzmaterial und Ressourcen für Entwickler von [!DNL Assets] als [!DNL Cloud Service]. Es enthält eine neue Upload-Methode, API-Referenz und Informationen zur Unterstützung, die in der Workflows nach der Verarbeitung bereitgestellt wird.
 
 ## Asset-Upload {#asset-upload-technical}
 
-[!DNL Experience Manager] als Cloud Service eine neue Methode zum Hochladen von Assets in das Repository bereitstellt. Die Benutzer können die Assets mit der HTTP-API direkt in die Cloud-Datenspeicherung hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
+[!DNL Experience Manager] als neue Methode zum Hochladen von Assets in das Repository  [!DNL Cloud Service] bereitgestellt. Die Benutzer können die Assets mit der HTTP-API direkt in die Cloud-Datenspeicherung hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
 1. [Senden Sie eine HTTP-Anforderung](#initiate-upload). Es informiert [!DNL Experience Manage]r Bereitstellung Ihrer Absicht, eine neue Binärdatei hochzuladen.
 1. [Posten des Inhalts der Binärdatei an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.](#upload-binary)
@@ -99,7 +99,7 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `replace` | Boolesch | optional | Wenn `True` und ein Asset mit dem angegebenen Namen vorhanden ist, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
 
 >!![NOTE]
->Wenn das Asset vorhanden ist und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
+Wenn das Asset vorhanden ist und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
@@ -118,15 +118,14 @@ Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripten und
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] als Cloud Service unterstützt. Die APIs von [!DNL Adobe Experience Manager] 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabeformaten (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
+Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] als [!DNL Cloud Service] unterstützt. Die APIs von [!DNL Adobe Experience Manager] 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabeformaten (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
->* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
@@ -139,7 +138,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 Kunden, die ein Upgrade von früheren Versionen von [!DNL Experience Manager] durchführen, können Asset-Mikrodienste verwenden, um Assets zu verarbeiten. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
 
-[!DNL Experience Manager] als Cloud Service die folgenden Arbeitsablaufschritte unterstützen:
+[!DNL Experience Manager] als  [!DNL Cloud Service] Unterstützung der folgenden Arbeitsablaufschritte:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -194,6 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Das Experience Cloud als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [Das Experience Cloud als  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
