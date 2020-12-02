@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 44%
+source-wordcount: '1930'
+ht-degree: 33%
 
 ---
 
@@ -14,17 +14,17 @@ ht-degree: 44%
 
 [!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
-Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browserupload gibt es noch weitere Methoden zum Hinzufügen von Assets zum Experience Manager-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder Experience Manager-Desktop-Programm, Upload- und Erfassungsskripte, die Kunden erstellen, und automatisierte Erfassungsintegrationen, die als Experience Manager-Erweiterungen hinzugefügt werden.
+Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager]-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager] Desktop-App, Upload- und Erfassungsskripten, die von Kunden erstellt werden, und automatisierte Erfassungsintegrationen, die als [!DNL Experience Manager]-Erweiterungen hinzugefügt werden.
 
-Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Erfassung von Assets mithilfe von Experience Manager-APIs und SDKs beschreiben.
+Wir werden uns hier auf Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladevorgangs und der Erfassung von Assets mit [!DNL Experience Manager]-APIs und -SDKs beschreiben.
 
-Sie können zwar jede beliebige Binärdatei in Experience Manager hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Dienste, wie z. B. die Extraktion von Metadaten oder die Vorschau/Ausgabegenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
+Während Sie Binärdateien in [!DNL Experience Manager] hochladen und verwalten können, unterstützen die am häufigsten verwendeten Dateiformate zusätzliche Dienste wie Metadaten-Extraktion oder Vorschau-/Darstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
 Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabeformate oder Bildbearbeitungsdienste hinzuzufügen. Siehe [Prozesselemente beim Hochladen](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager als [!DNL Cloud Service] nutzt eine neue Methode zum Hochladen von Assets - direktes binäres Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients, wie Experience Manager-Benutzeroberfläche, Adobe Asset Link, Experience Manager-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
+>[!DNL Experience Manager] als  [!DNL Cloud Service] neue Möglichkeit zum Hochladen von Assets - direkter binärer Upload. Es wird standardmäßig von den vordefinierten Produktfunktionen und Clients unterstützt, wie [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link], [!DNL Experience Manager] Desktop-App und somit für die Endbenutzer transparent.
 >
 >Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
 
@@ -35,7 +35,7 @@ Assets als [!DNL Cloud Service] stellen die folgenden Upload-Methoden bereit. Ad
 | [Benutzeroberfläche der Assets Console](#upload-assets) | Gelegentliches Hochladen, einfache Drücken und Ziehen, Finder-Upload. Verwenden Sie diese Option nicht, um eine große Anzahl von Assets hochzuladen. | Alle Benutzer |
 | [Upload-API](#upload-using-apis) | Für dynamische Entscheidungen beim Hochladen. | Entwickler |
 | [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Asset-Erfassung mit niedrigem Volumen, jedoch zur Migration. | Administrator, Marketer |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Apps arbeiten. | Kreativ, Marketer |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Apps arbeiten. | Kreativ, Marketer |
 | [Asset-Masseneingabe](#asset-bulk-ingestor) | Empfohlen für umfangreiche Migrationen und gelegentliche Massenvorgänge. Nur für unterstützte Datenspeicher. | Administrator, Entwickler |
 
 ## Hochladen von Assets {#upload-assets}
@@ -144,7 +144,7 @@ Die Erfassung von Massenelementen kann Tausende von Assets effizient handhaben. 
 Um eine größere Anzahl von Dateien hochzuladen, führen Sie einen der folgenden Schritte aus. Siehe auch [Anwendungsfälle und Methoden](#upload-methods-comparison)
 
 * [Asset-Upload-APIs](developer-reference-material-apis.md#asset-upload-technical): Verwenden Sie ein benutzerdefiniertes Upload-Skript oder -Tool, das APIs nutzt, um bei Bedarf zusätzliche Verarbeitungsschritte für Assets hinzuzufügen (z. B. Metadaten übersetzen oder Dateien umbenennen).
-* [Experience Manager-Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nützlich für Kreativprofis und Marketingexperten, die Assets aus ihrem lokalen Dateisystem hochladen. Verwenden Sie diese Option, um verschachtelte Ordner hochzuladen, die lokal verfügbar sind.
+* [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nützlich für Kreativprofis und Marketingexperten, die Assets aus ihrem lokalen Dateisystem hochladen. Verwenden Sie diese Option, um verschachtelte Ordner hochzuladen, die lokal verfügbar sind.
 * [Masseningenieurswerkzeug](#asset-bulk-ingestor): Wird zum Erfassen großer Mengen von Assets bei der Bereitstellung gelegentlich oder anfänglich verwendet  [!DNL Experience Manager].
 
 ### Asset-Masseningeting-Tool {#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 
 >[!NOTE]
 >
->Der Massen-Upload als Teil der Migration von Inhalten aus anderen Systemen bei der Einrichtung und Bereitstellung in Experience Manager erfordert eine sorgfältige Planung, Abwägung und Auswahl der Tools. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
+>Massenupload als Teil der Inhaltsmigration von anderen Systemen beim Einrichten und Bereitstellen auf [!DNL Experience Manager] erfordern sorgfältige Planung, Überlegung und Auswahl der Werkzeuge. Anleitungen zu den Ansätzen zur Inhaltsmigration finden Sie im [Implementierungshandbuch](/help/implementing/deploying/overview.md).
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
-Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt Experience Manager auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
+Neben der Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Manager] auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
-* [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
-* Das [Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
+* [[!DNL Experience Manager] Desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Verarbeiten von Assets beim Hochladen von {#process-when-uploaded}
 
@@ -218,8 +218,8 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Über Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Link-Dokumentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [Info [!DNL Adobe Asset Link]](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] Dokumentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload-technical)
 
