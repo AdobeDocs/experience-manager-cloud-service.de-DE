@@ -42,8 +42,8 @@ Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) kon
    Die **Staging-Bereitstellung** umfasst die folgenden Schritte:
 
    * Validierung: Dieser Schritt stellt sicher, dass die Pipeline so konfiguriert ist, dass die derzeit verfügbaren Ressourcen verwendet werden. So wird z. B. überprüft, ob die konfigurierte Verzweigung vorhanden ist und die Umgebungen verfügbar sind.
-   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. See [Build Environment Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) for details on the build environment.
-   * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Codequalitätstests](/help/implementing/cloud-manager/code-quality-testing.md) .
+   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Einzelheiten zur Build-Umgebung finden Sie unter [Build Umgebung Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md).
+   * Code-Scan: Dieser Schritt bewertet die Qualität Ihres Anwendungs-Codes. Weitere Informationen zum Testprozess finden Sie unter [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md).
    * Bilder erstellen: Dieser Schritt enthält eine Protokolldatei aus dem Prozess, der zum Erstellen von Bildern verwendet wird. Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Bilder und die Kubernetes-Konfiguration verantwortlich.
    * Bereitstellen in der Staging-Umgebung
 
@@ -51,13 +51,13 @@ Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) kon
    **Staging-Tests** umfassen die folgenden Schritte:
 
    * Produktfunktionstests: Cloud Manager-Pipeline-Hinrichtungen unterstützen die Ausführung von Tests, die mit der Umgebung der Phase ausgeführt werden.
-Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
+Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
    * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
-      Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
+      Weitere Informationen finden Sie unter [Benutzerspezifische Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
    * Erlebnis-Prüfung: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei der Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Prüfschritt eingefügt. Die konfigurierten Seiten werden an den Dienst gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
-Refer to [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+Weitere Informationen finden Sie unter [Die Ergebnisse der Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-testing.md).
 
       ![](assets/testing-tab.png)
 
