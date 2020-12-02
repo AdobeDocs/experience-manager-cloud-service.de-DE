@@ -207,7 +207,7 @@ Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf da
 >
 >Die Standard-Metadatenschemaformulare in AEM Assets können nicht gelöscht werden.
 
-## Schemaformulare für MIME-Typen   {#schema-forms-for-mime-types}
+## Schemaformulare für MIME-Typen    {#schema-forms-for-mime-types}
 
 AEM Assets stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
 
@@ -272,7 +272,7 @@ Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unt
 1. Klicken Sie auf **OK**, um die Erfolgsmeldung zu schließen.
 1. Navigieren Sie zu dem Ordner, auf den Sie das geänderte Metadatenschema angewendet haben.
 
-## Definieren erforderlicher Metadaten   {#defining-mandatory-metadata}
+## Definieren erforderlicher Metadaten    {#defining-mandatory-metadata}
 
 Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht ein entsprechender visueller Hinweis für die Assets angezeigt.
 
