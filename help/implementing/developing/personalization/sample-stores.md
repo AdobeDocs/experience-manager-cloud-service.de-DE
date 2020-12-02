@@ -108,7 +108,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 >
 >In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
-## Beispiel-Store-Kandidat „contexthub.surferinfo“  {#contexthub-surferinfo-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.surferinfo“   {#contexthub-surferinfo-sample-store-candidate}
 
 Speichert Informationen über die aktuelle Client-Umgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
@@ -308,7 +308,7 @@ Der Store-Datenbaum ähnelt dem folgenden Beispiel:
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.profile“  {#granite-profile-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.profile“   {#granite-profile-sample-store-candidate}
 
 Informationen über den aktuellen Benutzer.
 
