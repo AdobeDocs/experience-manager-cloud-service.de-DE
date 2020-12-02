@@ -1,6 +1,6 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM as a Cloud Service
+description: CDN in AEM als Cloud Service
 translation-type: tm+mt
 source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
