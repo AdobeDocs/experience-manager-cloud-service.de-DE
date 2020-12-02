@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# SSL-Zertifikat hinzufügen {#adding-an-ssl-certificate}
+# Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
 >[!NOTE]
 >Die Bereitstellung eines Zertifikats dauert einige Tage, und es wird empfohlen, das Zertifikat auch Monate im Voraus bereitzustellen. Gehen Sie zum Abrufen eines SSL-Zertifikats, um mehr zu erfahren.INSERT-LINK
@@ -33,7 +33,7 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Zertifikat hinzufügen {#adding-certificate}
+## Hinzufügen eines Zertifikats {#adding-certificate}
 
 >[!NOTE]
 >* Ein Benutzer muss sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befinden, um ein SSL-Zertifikat in Cloud Manager installieren zu können.
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 1. Melden Sie sich bei Cloud Manager an.
 1. Navigieren Sie auf der Seite &quot;Übersicht&quot;zum Bildschirm &quot;Umgebung&quot;.
 1. Navigieren Sie im linken Navigationsmenü zum Bildschirm &quot;SSL-Zertifikate&quot;. In diesem Bildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.INSERT IMAGE
-1. Klicken Sie auf die Schaltfläche **Hinzufügen Zertifikat** , um einen Assistenten zu starten.
+1. Klicken Sie auf die Schaltfläche **Hinzufügen Zertifikat**, um einen Assistenten zu starten.
 1. Geben Sie einen Namen für Ihr Zertifikat ein. Dabei kann es sich um einen beliebigen Namen handeln, mit dem Sie Ihr Zertifikat leicht referenzieren können.
 1. Fügen Sie den Inhalt des Zertifikats, des privaten Schlüssels und der Kette in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
 1. Wählen Sie **Speichern** aus.
@@ -57,20 +57,20 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 
 ### Richtige Zertifikatreihenfolge {#correct-certificate-order}
 
-Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge sind. Insbesondere müssen zwischengeschaltete Zertifikatdateien mit dem Stammzertifikat oder -zertifikat enden, das am nächsten zum Stammordner liegt, und sich in absteigender Reihenfolge vom `main/server` Zertifikat zum Stammordner befinden.
+Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge sind. Insbesondere müssen zwischengeschaltete Zertifikatdateien mit dem Stammzertifikat oder -zertifikat enden, das am nächsten zum Stammordner liegt, und sich in absteigender Reihenfolge vom `main/server`-Zertifikat zum Stammordner befinden.
 
 Sie können die Reihenfolge der Zwischendateien mithilfe des folgenden Befehls festlegen:
 
 `openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
 
-Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das Zertifikat übereinstimmen `main/server` :
+Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das `main/server`-Zertifikat übereinstimmen:
 
 `openssl x509 -noout -modulus -in certificate.pem | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server` Zertifikat finden können, müssen Sie das Zertifikat erneut signieren, indem Sie eine neue CSR generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
+>Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat erneut signieren, indem Sie eine neue CSR generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 
