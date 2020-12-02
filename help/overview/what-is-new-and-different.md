@@ -66,10 +66,10 @@ Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 ![Automatische Skalierung für verschiedene Nutzungsmuster](assets/introduction-04.png "Automatische Skalierung für verschiedene Nutzungsmuster")
 
 
-## AEM {#aem-updates}
+## AEM Updates {#aem-updates}
 
 >[!NOTE]
->Weitere Informationen finden Sie in den [AEM Updates](/help/implementing/deploying/aem-version-updates.md).
+>Weitere Informationen finden Sie unter [AEM Versionsupdates](/help/implementing/deploying/aem-version-updates.md).
 
 AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte die aktuellste AEM Version aufweisen. Das bedeutet, dass Produktions- und Stage-Instanzen auf die neueste AEM aktualisiert werden, ohne dass der Dienst für Benutzer unterbrochen wird.
 
@@ -113,11 +113,11 @@ Die Anzahl und die Art der AEM Programm, die mit Cloud Manager erstellt werden k
 
 Cloud Manager wurde zu einem Selbstbedienungsportal entwickelt, in dem die Hauptkomponenten von AEM als Cloud Service erstellt und konfiguriert werden können:
 
-* Erstellen und Verwalten neuer Programm. Weitere Informationen finden Sie unter [Einführung zu Programmen und Programmen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) .
+* Erstellen und Verwalten neuer Programm. Weitere Informationen finden Sie unter [Programm und Programm-Typen](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md).
 
-* Erstellen und Verwalten der AEM Umgebung in diesen Programmen. Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
+* Erstellen und Verwalten der AEM Umgebung in diesen Programmen. Weitere Informationen finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md).
 
-* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kundencodes und der zugehörigen Konfiguration auf einer bestimmten Umgebung. Weitere Informationen finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
+* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kundencodes und der zugehörigen Konfiguration auf einer bestimmten Umgebung. Weitere Informationen finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
 * werden über wichtige Lebenszykluskomponenten für diese Ereignis (z. B. Produktupdates) benachrichtigt.
 
@@ -130,13 +130,13 @@ Derzeit kann Cloud Manager Umgebung in drei geografischen Regionen erstellen (we
 * APAC (Australien)
 
 >[!NOTE]
->Informationen zum Einstieg in Cloud Manager in AEM Cloud Service finden Sie unter [Zugriff auf Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) .
+>Informationen zum Einstieg in Cloud Manager in AEM als Cloud Service finden Sie unter [Zugriff auf Experience Manager als Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md).
 
 ## Einstieg {#onboarding}
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Einstieg](/help/onboarding/home.md).
+>Weitere Informationen finden Sie unter [Onboarding](/help/onboarding/home.md).
 
 Das Starten und Verwalten eines AEM ist unkompliziert, wenn AEM als Cloud-Dienst verwendet wird, da die Adobe für viele Aspekte verantwortlich ist:
 
@@ -164,7 +164,7 @@ Er unterscheidet sich auch erheblich, da es jetzt Folgendes gibt:
 
 >[!NOTE]
 >
->Für weitere Informationen können Sie Beginn mit [Entwicklungsrichtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwicklungs-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)machen.
+>Für weitere Informationen können Sie mit [Entwicklungs-Richtlinien](/help/implementing/developing/introduction/development-guidelines.md) und [Entwickeln - Das WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) Beginn machen.
 
 Die neue Architektur, die AEM als Cloud Service unterstützt, umfasst einige wichtige Änderungen am Gesamterlebnis für Entwickler. Eines der Hauptziele von AEM als Cloud Service besteht darin, erfahrenen Kunden (die AEM entweder vor Ort oder im Rahmen der Adobe Managed Services verwendet haben) die Möglichkeit zu geben, so schnell wie möglich zu AEM, ohne den Großteil ihres benutzerspezifischen Codes umschreiben zu müssen. Es könnten jedoch noch einige Anpassungen erforderlich sein.
 
@@ -190,7 +190,7 @@ Eine weitere gängige Voraussetzung für Entwickler ist der schnelle Zugriff auf
 
 Aufgrund der klaren Trennung von Code und Inhalt können Entwickler einen bestimmten Prozess zum Aktualisieren von Inhalten im Rahmen einer Bereitstellung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
 
-* Standardmäßige *Standardinhalte* , die Teil des Kundenprojekts sind (z. B. Ordner, Vorlagen, Workflows usw.)
+* Standardinhalt *Standard*, der Teil des Kundenprojekts ist (z. B. Ordner, Vorlagen, Workflows usw.)
 
 * Suchindexdefinitionen
 
@@ -202,7 +202,7 @@ Aufgrund der klaren Trennung von Code und Inhalt können Entwickler einen bestim
 
 Um schnelle Iterationen und Entwicklung zu unterstützen, ist es auch möglich, AEM Applikationen außerhalb des AEM als Cloud Service zu entwickeln. Zu diesem Zweck werden die folgenden Artefakte den Entwicklern zur Verfügung gestellt:
 
-* Der AEM als Cloud Service QuickStart: ein `.jar` basiertes, eigenständiges Installationsprogramm der neuesten AEM Codebasis mit derselben funktionalen und API-Oberfläche.
+* Der AEM als Cloud Service QuickStart: ein unabhängiges `.jar` Installationsprogramm der neuesten AEM mit derselben funktionalen und API-Oberfläche.
 
 * AEM als Cloud Service-Dispatcher-SDK: ein bildbasierter Prozess zum lokalen Testen und Validieren von Dispatcher-Konfigurationen
 
@@ -232,11 +232,11 @@ Die AEM als Cloud Service werden auch durch eine neue Überwachungs-, Berichte- 
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Sicherheit - IMS-Unterstützung](/help/security/ims-support.md).
+>Weitere Informationen finden Sie unter [Sicherheit - IMS-Support](/help/security/ims-support.md).
 
 Eine wichtige Änderung an AEM als Cloud Service ist die vollständig integrierte Verwendung von Adoben-IDs für den Zugriff auf die Autorenebene.
 
-Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Dienste der Adobe, da die Benutzerinformationen im Adobe Identity Management System (IMS) zentralisiert sind und über alle Cloud-Profil hinweg freigegeben werden können. Nachdem AEM Zugriff zugewiesen wurde, können die Benutzerkonten in AEM als Cloud Service referenziert werden (wie zuvor). zum Beispiel zum Definieren von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
+Dies erfordert die Verwendung der Admin-Konsole [Adobe](https://helpx.adobe.com/de/enterprise/using/admin-console.html) für die Verwaltung von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Dienste der Adobe, da die Benutzerinformationen im Adobe Identity Management System (IMS) zentralisiert sind und über alle Cloud-Profil hinweg freigegeben werden können. Nachdem AEM Zugriff zugewiesen wurde, können die Benutzerkonten in AEM als Cloud Service referenziert werden (wie zuvor). zum Beispiel zum Definieren von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
 
 Dies kombiniert die Vorteile von:
 
