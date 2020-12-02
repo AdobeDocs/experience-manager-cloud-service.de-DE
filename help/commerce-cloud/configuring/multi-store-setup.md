@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Gehen Sie AEM zu Tools -> Allgemein -> [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
    * Erstellen Sie eine neue Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
