@@ -10,7 +10,7 @@ ht-degree: 18%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.8.0 {#release-notes}
 
 Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.8.0 erläutert.
 
@@ -20,17 +20,17 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.8.0
 
 ## Neue Funktionen {#whats-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Konfiguration der Produktionspipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Produktionspipelinekonfiguration für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
 
    >[!NOTE]
    >Content Audit wurde seither in Experience Audit umbenannt.
 
-   Refer to [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   Weitere Informationen finden Sie unter [Erlebnis-Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 * Neu erstellte Umgebung in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
-* Hibernated-Umgebung können auf der Seite &quot; **Übersicht** &quot;von Cloud Manager entfernt werden.
+* Hibernated-Umgebung können von der **Overview**-Seite des Cloud-Managers entfernt werden.
 
 * Möglichkeit zur Durchführung von Erlebnisprüfungen auf Seiten, powered by Google Lighthouse. Im Rahmen der Cloud Manager-Pipeline können bis zu 25 Seiten überprüft und anhand von Erlebnis-KPIs validiert werden. Die Ergebnisse werden in der Benutzeroberfläche von Cloud Manager angezeigt.
 
@@ -52,7 +52,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.8.0
 
 * Die Benutzeroberfläche erlaubte irrtümlicherweise den Versuch, Vorgänge auf einer Umgebung auszuführen, während diese gelöscht wurde.
 
-* There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
+* Auf der Seite **Übersicht** des Cloud-Managers ist eine Farbabweichung aufgetreten.
 
 ### Bekannte Probleme {#known-issues-cm}
 
