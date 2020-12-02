@@ -12,7 +12,7 @@ ht-degree: 48%
 
 # Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. See [Understanding Segmentation](segmentation.md) for information on how segmentation works and key terms.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen finden Sie unter [Die Segmentierung](segmentation.md).
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
@@ -22,7 +22,7 @@ AEM ermöglicht es Ihnen, die Benutzererfahrungen einfach zu personalisieren. Au
 
 ## Zugriff auf Segmente {#accessing-segments}
 
-The [Audiences](audiences.md) console is used to manage segments for ContextHub as well as audiences for your Adobe Target account. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
+Die Konsole [Audiencen](audiences.md) wird zum Verwalten von Segmenten für ContextHub sowie von Audiencen für Ihr Adobe Target-Konto verwendet. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
 
 Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus.
 
@@ -31,13 +31,13 @@ Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optione
 ## Segment-Editor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-The **Segment Editor** allows you to easily modify a segment. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Mit dem **Segment-Editor** können Sie ein Segment einfach ändern. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![Segment-Editor](../assets/contexthub-segment-editor.png)
 
-Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
+Mithilfe des Komponenten-Browsers können Sie **AND**- und **OR**-Container hinzufügen, um die Segmentlogik zu definieren, und dann zusätzliche Komponenten hinzufügen, um Eigenschaften und Werte zu vergleichen oder Referenzskripte und andere Segmente zu definieren, um die Auswahlkriterien zu definieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das genaue Szenario für die Segmentauswahl zu definieren.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. See [Creating a New Segment](#creating-a-new-segment) for details on the boost factor.
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Steigerungsfaktor finden Sie unter [Erstellen eines neuen Segments](#creating-a-new-segment).
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufge
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. See the following section [Using AND and OR Containers](#using-and-and-or-containers) for more information.
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden von AND- und ODER-Containern](#using-and-and-or-containers).
 
 |  |  |
 |---|---|
@@ -70,9 +70,9 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 >
 >`null < 30 // will return true`
 >
->Therefore when [creating a segment](#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. Beispiel:
+>Daher sollten Sie beim Erstellen eines Segments [ einen **Datentyp** auswählen, sobald die Typen der verglichenen Werte bekannt sind. ](#creating-a-new-segment) Beispiel:
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der Vergleichstyp **number** ist. Wenn `profile/age` also nicht eingestellt ist, gibt ein Vergleich `profile/age` weniger als 30 **false** zurück, wie Sie erwarten würden.
 
 ### Verweise {#references}
 
@@ -81,15 +81,15 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 |  |  |
 |---|---|
 | Segment-Verweis | Bewerten Sie das referenzierte Segment |
-| Skript-Referenz | Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden von Skriptverweisen](#using-script-references) . |
+| Skript-Referenz | Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt [Skriptverweise](#using-script-references) verwenden. |
 
 ## Erstellen eines neuen Segments {#creating-a-new-segment}
 
 So legen Sie Ihr neues Segment fest:
 
-1. Nach dem [Zugriff auf die Segmente](#accessing-segments)[navigieren Sie zu dem Ordner](#organizing-segments) , in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner.
+1. Nach dem Zugriff auf die Segmente [ navigieren Sie [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner liegen.](#accessing-segments)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie ContextHub-Segment **erstellen**.
+1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie **ContextHub-Segment** erstellen.
 
    ![hinzufügen](../assets/contexthub-create-segment.png)
 
@@ -110,7 +110,7 @@ So legen Sie Ihr neues Segment fest:
 
    Legen Sie möglichst immer einen **Datentyp** fest, um die ordnungsgemäße Bewertung Ihrer Vergleiche sicherzustellen. Weitere Informationen finden Sie unter [Vergleiche](#comparisons).
 
-1. Click **Done** to save your definition:
+1. Klicken Sie auf **Fertig**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) weiter unten). Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
@@ -140,9 +140,9 @@ Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis  {#defining-a-script-to-reference}
 
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. hinzufügen Datei in `contexthub.segment-engine.scripts` clientlib.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
 
    ```javascript
@@ -174,9 +174,9 @@ Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segm
    })();
    ```
 
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Registrieren Sie das Skript mit `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. For example if the script depends on `profile/age`:
+Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -188,20 +188,20 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
 1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
 
-## Segmente organisieren {#organizing-segments}
+## Organisieren von Segmenten {#organizing-segments}
 
 Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwalten sein. In solchen Fällen kann es nützlich sein, Ordner zur Verwaltung Ihrer Segmente zu erstellen.
 
-### Create a New Folder {#create-folder}
+### Neuen Ordner {#create-folder} erstellen
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. Klicken Sie nach dem Zugriff auf die Segmente](#accessing-segments) auf oder tippen Sie auf die Schaltfläche **Erstellen** und wählen Sie **Ordner**.[
 
    ![hinzufügen](../assets/contexthub-create-segment.png)
 
-1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner ein.
+1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Es wird automatisch auf der Grundlage des Titels generiert und entsprechend [AEM Benennungskonventionen angepasst.](/help/implementing/developing/introduction/naming-conventions.md)
+   * Der Knoten **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch basierend auf dem Titel generiert und entsprechend den Benennungskonventionen [AEM angepasst.](/help/implementing/developing/introduction/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/contexthub-create-folder.png)
@@ -215,13 +215,13 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
    * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
       ![Der neue Ordner](../assets/contexthub-folder.png)
 
-### Vorhandene Ordner ändern {#modify-folders}
+### Vorhandene Ordner {#modify-folders} ändern
 
-1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen** , um den Ordner umzubenennen.
+1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen**, um den Ordner umzubenennen.
 
 1. Geben Sie einen neuen **Ordnertitel** ein und tippen oder klicken Sie auf **Speichern**.
 
@@ -233,25 +233,25 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
 
 ### Ordner löschen
 
-1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](../assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen** , um den Ordner zu löschen.
+1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen**, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf **Löschen** .
-   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+   * Tippen oder klicken Sie zur Bestätigung auf **Löschen**.
+   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss der Löschvorgang bestätigt werden.
 
    ![Löschen von Kindern bestätigen](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf Löschen **erzwingen** .
-   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+   * Tippen oder klicken Sie zur Bestätigung auf **Löschen erzwingen**.
+   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
 
 >[!NOTE]
 >
@@ -286,6 +286,6 @@ Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Se
 1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt.
 1. Wechseln Sie zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
 
-## Verwenden Ihres Segments {#using-your-segment}
+## Verwenden Ihres Segments  {#using-your-segment}
 
-Segmente werden verwendet, um den tatsächlichen Inhalt zu steuern, der von bestimmten Audiencen der Zielgruppe gesehen wird. See [Managing Audiences](audiences.md) for more information about audiences and segments and [Authoring Targeted Content](targeted-content.md) about using audiences and segments to target content.
+Segmente werden verwendet, um den tatsächlichen Inhalt zu steuern, der von bestimmten Audiencen der Zielgruppe gesehen wird. Weitere Informationen über die Verwendung von Audiencen und Segmenten zur Zielgruppe von Inhalten finden Sie unter [Verwalten von Audiencen](audiences.md) und [Erstellen von zielgerichteten Inhalten](targeted-content.md).
