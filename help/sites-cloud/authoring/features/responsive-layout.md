@@ -231,8 +231,9 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
    >
    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Aufheben der Komponenten** Wählen Sie die übergeordneten Komponenten aus, um die Aktionsleiste mit der 
-**Option &quot;Ausgeblendete Komponenten** anzeigen&quot;. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+   * **Aufhebung der**
+KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
+**Option** für ausgeblendete Komponenten anzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
 
       ![Komponenten einblenden](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
