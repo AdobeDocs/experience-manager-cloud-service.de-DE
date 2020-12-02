@@ -10,7 +10,7 @@ ht-degree: 32%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.11.0 {#release-notes}
 
 Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.11.0 erläutert.
 
@@ -22,10 +22,10 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 
 ### Neue Funktionen {#what-is-new}
 
-* Eine neue Menüoption &quot; **Lokale Anmeldung** &quot;steht nun den Benutzern über die Menüoptionen &quot;Umgebung&quot;auf den Seiten &quot;Umgebung&quot;und &quot;Umgebung - Zusammenfassung&quot;zur Verfügung.
-Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+* Eine neue Menüoption **Lokale Anmeldung** steht nun den Benutzern über die Menüoptionen auf der Umgebung und den Zusammenfassungsseiten der Umgebung zur Verfügung.
+Weitere Informationen finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md##login-locally).
 
-* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
+* Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
