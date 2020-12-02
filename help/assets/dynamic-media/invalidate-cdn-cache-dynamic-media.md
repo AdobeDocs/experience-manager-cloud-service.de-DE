@@ -16,7 +16,7 @@ Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeiche
 
 >[!IMPORTANT]
 >
->This feature requires that you use the out-of-the-box CDN that is bundled with AEM Dynamic Media; any other custom CDN is not supported. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Für diese Funktion müssen Sie das im Lieferumfang von AEM Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. andere benutzerdefinierte CDN werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
