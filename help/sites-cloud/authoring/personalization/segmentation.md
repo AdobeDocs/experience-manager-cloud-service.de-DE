@@ -48,7 +48,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
    * Familienstand
    * Geschlecht
    * Ort
-* **Abgeleitete Eigenschaften** - Einige demografische Eigenschaften lassen sich nur schwer ohne Registrierung ermitteln, können aber durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
+* **Abgeleitete Eigenschaften** : Einige demografische Eigenschaften lassen sich ohne Registrierung nur schwer ermitteln, können aber durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
    * Beispielsweise können Besitzer von Sites durch Kombination der verweisenden URL (als Verhaltenseigenschaft) mit demografischen Informationen (ermittelt mithilfe von Tools wie [Google Ad Planner](https://www.google.com/adplanner/)) demografische Eigenschaften ihrer Besucher ableiten.
 * **Untersegment**: Ein Segment kann in mehrere Untersegmente unterteilt werden. Dies geschieht über das Definieren weiterer Eigenschaften.
 * **Teaser-Seite**: Eine Teaser-Seite richtet sich an eine bestimmte Zielgruppe. Sie enthält wiederverwendbare Inhalte, die in dem Teaser-Absatz verwendet werden können.
