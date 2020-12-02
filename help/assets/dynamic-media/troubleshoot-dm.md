@@ -45,7 +45,7 @@ Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ers
 
 * Das Erstellen einer Version wird in Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Implementierung.
 
-## Bilder und Sets  {#images-and-sets}
+## Bilder und Sets   {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
