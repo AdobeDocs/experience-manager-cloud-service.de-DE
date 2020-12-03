@@ -2,10 +2,10 @@
 title: Rotationssets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 96%
+source-wordcount: '1829'
+ht-degree: 94%
 
 ---
 
@@ -76,7 +76,7 @@ Bei Bedarf können Sie [Rotationssets bearbeiten](#editing-spin-sets). Darüber 
 
 ## Hochladen von Assets für Rotationssets {#uploading-assets-for-spin-sets}
 
-Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
+Sie benötigen mindestens 8 bis 12 Aufnahmen eines Objekts für ein eindimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Gegenstand gedreht und umgedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
 Bilder für Rotationssets können Sie [genauso wie alle anderen Assets in AEM Assets hochladen](/help/assets/manage-digital-assets.md).
 
