@@ -2,9 +2,9 @@
 title: Arbeiten mit mehreren Quell-Git-Repositorys
 description: Arbeiten mit mehreren Quell-Git-Repositorys - Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um eine neue (dritte) Quelle oder ein neues Repository 
 1. hinzufügen einen Verweis auf den neuen Ordner im Maven-Stammverzeichnis im Cloud Manager-Git-Repository.
 
 
-## Anlage A: Beispiel für eine GitHub-Aktion {#sample-github-action}
+## Beispiel für eine GitHub-Aktion {#sample-github-action}
 
 Hierbei handelt es sich um eine GitHub-Beispielaktion, die durch einen Push an die Hauptverzweigung ausgelöst wird und dann in ein Unterverzeichnis des Git-Repository von Cloud Manager verschoben wird. Die GitHub-Aktionen müssen mit zwei Geheimnissen versehen werden, `MAIN_USER` und `MAIN_PASSWORD`, um eine Verbindung herstellen und zum Git-Repository von Cloud Manager wechseln zu können.
 
@@ -117,7 +117,7 @@ Wie oben gezeigt, ist die Verwendung einer GitHub-Aktion sehr flexibel. Jede Zuo
 >[!NOTE]
 >Das obige Skript verwendet `git add`, um das Repository zu aktualisieren, bei dem davon ausgegangen wird, dass Entfernungen enthalten sind. Abhängig von der Standardkonfiguration von Git muss dies durch `git add --all` ersetzt werden.
 
-## Anlage B: Beispiel-Jenkins-Auftrag {#sample-jenkins-job}
+## Beispiel-Jenkins-Auftrag {#sample-jenkins-job}
 
 Dies ist ein Beispielskript, das in einem Jenkins-Auftrag oder Ähnlichem verwendet werden kann. Sie wird durch eine Änderung in einem Git-Repository ausgelöst. Der Jenkins-Auftrag überprüft den neuesten Status des Projekts oder der Verzweigung und löst dann dieses Skript aus.
 
