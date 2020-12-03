@@ -3,9 +3,9 @@ title: Stapelsatzvorgaben
 description: Erfahren Sie, wie Sie die Erstellung von Bildsätzen und Rotationssets mithilfe von Stapelsatzvorgaben in dynamischen Medien automatisieren.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: eba7216d6b70c15d7f8767358d1947e5dba1d802
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3521'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,12 @@ Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organis
 
 **Best Practice** : Beim Arbeiten mit Stapelsatzvorgaben empfiehlt die Adobe den folgenden Arbeitsablauf:
 
-1. Erstellen Sie eine Stapelsatzvorgabe.
-1. Erstellen Sie einen neuen Asset-Ordner oder verwenden Sie einen vorhandenen Asset-Ordner und stellen Sie sicher, dass dieser mit [!DNL Dynamic Media] synchronisiert wird.
-1. Wenden Sie die Stapelsatzvorgabe auf den Asset-Ordner an.
-1. Hochladen von Bildern in den Asset-Ordner.
-1. Erstellen Sie den Bildsatz oder das Rotationsset.
-1. Veröffentlichen Sie den Bildsatz oder das Rotationsset.
+1. Erstellen Sie eine Stapelsatzvorgabe. Siehe [Erstellen einer Stapelsatzvorgabe für einen Bildsatz oder einen Rotationsset](#creating-bsp).
+1. Erstellen Sie einen neuen Asset-Ordner oder verwenden Sie einen vorhandenen Asset-Ordner und stellen Sie sicher, dass dieser mit [!DNL Dynamic Media] synchronisiert wird. Siehe [Erstellen von Ordnern](/help/assets/manage-digital-assets.md#creating-folders).
+1. Wenden Sie die Stapelsatzvorgabe auf den Asset-Ordner an. Siehe [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
+1. Hochladen von Bildern in den Asset-Ordner. Siehe [Hochladen von Assets für Bildsätze](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Hochladen von Assets für Rotationssets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) oder [Hinzufügen digitalen Assets nach Adobe Experience Manager](#add-assets-to-experience-manager).
+1. Erstellen Sie den Bildsatz oder das Rotationsset. Siehe [Bildsätze](/help/assets/dynamic-media/image-sets.md) oder [Rotationssets](/help/assets/dynamic-media/spin-sets.md).
+1. Veröffentlichen Sie den Bildsatz oder das Rotationsset. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Erstellen einer Stapelsatzvorgabe für einen Bildsatz oder ein Rotationsset {#creating-bsp}
 
