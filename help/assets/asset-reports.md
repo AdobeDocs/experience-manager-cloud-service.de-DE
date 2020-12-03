@@ -3,10 +3,10 @@ title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] mit Informationen zur Nutzung, Aktivität und Freigabe Ihrer digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 50%
+source-wordcount: '928'
+ht-degree: 42%
 
 ---
 
@@ -48,17 +48,19 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
    ![Berichttyp auswählen](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >Bevor Sie einen Bericht vom Typ **[!UICONTROL Asset heruntergeladen]** generieren können, müssen Sie sicherstellen, dass der Asset-Download-Dienst aktiviert ist. Öffnen Sie in der Web-Konsole (`https://[aem_server]:[port]/system/console/configMgr`) die Konfiguration **[!UICONTROL Day CQ DAM Event Recorder]** und wählen Sie, falls noch nicht ausgewählt, unter „Ereignistypen“ die Option **[!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)]** aus.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >Standardmäßig sind Inhaltsfragmente und Linkfreigaben im Bericht &quot;Asset [!UICONTROL Download]&quot;enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
+>[!NOTE]
+>
+>Standardmäßig sind Inhaltsfragmente und Linkfreigaben im Bericht &quot;Asset [!UICONTROL Download]&quot;enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
 
-   >[!NOTE]
-   >
-   >Der Bericht [!UICONTROL Download] zeigt nur Details zu den Assets an, die heruntergeladen werden, nachdem sie einzeln ausgewählt wurden oder mit der Schnellaktion heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befinden.
+>[!NOTE]
+>
+>Der Bericht [!UICONTROL Download] zeigt nur Details zu den Assets an, die heruntergeladen werden, nachdem sie einzeln ausgewählt wurden oder mit der Schnellaktion heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befinden.
 
 1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der Ordnerpfad ist standardmäßig `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
@@ -139,11 +141,18 @@ Gehen Sie wie folgt vor, um benutzerspezifische Spalten zu diesen Berichten hinz
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 
-## Konfigurieren des Bereinigungsdiensts {#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-Um nicht mehr benötigte Berichte zu entfernen, konfigurieren Sie den Bereinigungsdienst für DAM-Berichte über die Web-Konsole, um vorhandene Berichte basierend auf Menge und Alter zu bereinigen.
+## Configure purging service {#configure-purging-service}
 
-1. Greifen Sie über `https://[aem_server]:[port]/system/console/configMgr` auf die Web-Konsole (Configuration Manager) zu.
-1. Öffnen Sie die Konfiguration für den **[!UICONTROL Bereinigungsdienst für DAM-Berichte]**.
-1. Geben Sie die Häufigkeit (Zeitintervall) für den Bereinigungsdienst in das Feld `scheduler.expression.name` ein. Sie können auch die Schwellenwerte für das Alter und die Menge der Berichte konfigurieren.
-1. Speichern Sie die Änderungen.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## Fehlerbehebung für Informationen, Tipps und Einschränkungen {#best-practices-and-limitations}
+
+* Wenn der Bericht &quot;Festplattennutzung&quot;nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie dann den Bericht erneut.
