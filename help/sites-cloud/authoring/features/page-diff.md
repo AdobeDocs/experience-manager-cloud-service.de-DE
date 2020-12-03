@@ -2,10 +2,10 @@
 title: 'Seitenvergleich  '
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 100%
+source-wordcount: '622'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Inhaltserstellung ist ein iterativer Vorgang. Damit ein Autor effizient arbeiten
 
 Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Der Benutzer muss über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
 >
@@ -54,10 +54,6 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 
 * Hellgrün – Komponente hinzugefügt
 * Rosa – Komponente entfernt
-* Blau – Komponente geändert
-* Blau – Komponente verschoben
-
-Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 
 **HTML-Änderungen** 
 
@@ -93,9 +89,7 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwartet.
 
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
-* Bei Versionen erstellt der Seitenvergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn Änderungen an einem Bild vorgenommen werden, z. B. eine Änderung der alt-, title- oder der src-Attribute, wird das geänderte Element blau hervorgehoben. In manchen Fällen weist ein Bild jedoch eine Base64-Darstellung des src-Attributs auf und selbst dann, wenn beide Bilder gleich aussehen, werden sie vom Seitenvergleich aufgrund der unterschiedlichen src-Attribute gekennzeichnet.
-* Der Seitenvergleich erkennt keine Bilddrehung.
+* Bei Zugriffskontrollen erstellt der Diff nicht die Richtlinie und Live-Kopierbeziehungen.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
