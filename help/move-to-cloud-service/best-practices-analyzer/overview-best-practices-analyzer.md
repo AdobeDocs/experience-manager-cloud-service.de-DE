@@ -2,15 +2,20 @@
 title: Überblick über Best Practices-Analyzer
 description: Überblick über Best Practices-Analyzer
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Überblick{#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Überblick über Best Practices-Analyzer"
+>abstract="Der Best Practices-Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche angibt, die AEM Best Practices nicht folgen. Er enthält auch Leitlinien für die nächsten Schritte zur Annahme AEM bewährten Verfahren. Darüber hinaus werden die Verfahren zur Bewertung der Bereitschaft, von einer bestehenden Adobe Experience Manager (AEM)-Bereitstellung auf AEM als Cloud Service umzustellen, beschleunigt."
 
 Der Best Practices-Analyzer bietet eine Bewertung Ihrer aktuellen AEM-Implementierung, indem er Bereiche angibt, die AEM Best Practices nicht folgen. Er enthält auch Leitlinien für die nächsten Schritte zur Annahme AEM bewährten Verfahren. Darüber hinaus werden die Verfahren zur Bewertung der Bereitschaft, von einer bestehenden Adobe Experience Manager (AEM)-Bereitstellung auf AEM als Cloud Service umzustellen, beschleunigt.
 
