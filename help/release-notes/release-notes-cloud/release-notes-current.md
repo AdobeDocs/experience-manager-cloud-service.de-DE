@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1269'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht
 
 * **[Startet Hierarchieverwaltung](/help/sites-cloud/authoring/launches/managing-pages.md)  und  [zukünftigen Timewarp](/help/sites-cloud/authoring/launches/preview.md)**: Die neue Benutzeroberfläche zum Hinzufügen/Entfernen von Seiten während eines Starts und das Browsen der Site mit &quot;Zeitverkrümmung&quot;zeigt den Zukunftsstatus von Launches an.
 
-* **Sortieren Sie die für die Aktualisierung** verfügbaren Live Copy-Seiten: Neue Option zum Sortieren der für die Aktualisierung verfügbaren Live Copy-Seiten mit den  [!UICONTROL Dateneigenschaften &quot;Name]&quot;, &quot; [!UICONTROL Zuletzt geändert&quot;] und &quot; [!UICONTROL Letzte ] Aktualisierung&quot;. Das [!UICONTROL Letzte Rollout-Datum] für eine Seite ist eine neue Eigenschaft eingeführt.
+* **[Erweiterte Inhaltsfragmentmodelle und Editor](/help/assets/content-fragments/content-fragments-models.md)**: Neue Optionen für die Eingabevalidierung für verschiedene Datentypen, verbesserter Datentyp für Auflistungen mit neuen Formularvisualisierungen und der Name des Inhaltsfragmentmodells wird in der Benutzeroberfläche &quot;Assets&quot;angezeigt und kann durchsucht werden.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **Sortieren Sie die für die Aktualisierung** verfügbaren Live Copy-Seiten: Neue Option zum Sortieren der für die Aktualisierung verfügbaren Live Copy-Seiten mit den  [!UICONTROL Dateneigenschaften &quot;Name]&quot;, &quot; [!UICONTROL Zuletzt geändert&quot;] und &quot; [!UICONTROL Letzte ] Aktualisierung&quot;. Das [!UICONTROL Letzte Rollout-Datum] für eine Seite ist eine neue Eigenschaft eingeführt.
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
