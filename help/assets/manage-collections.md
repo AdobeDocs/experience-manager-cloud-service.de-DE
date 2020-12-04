@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 100%
+source-wordcount: '2396'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ Die Suchfunktion für Sammlungen unterstützt sowohl das [Suchen nach Sammlunge
 
 ### Suchen nach Sammlungen {#search-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie die Suche mit Schlüsselwörtern im Suchfeld durchführen, sucht AEM Assets nach Sammlungsnamen, Sammlungsmetadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Suchbegriffen im Feld &quot;Omniture&quot;suchen, sucht [!DNL Experience Manager Assets] nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
@@ -148,7 +148,7 @@ Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen
 
 Tippen oder klicken Sie in der Konsole „Sammlungen“ auf eine Sammlung, um sie zu öffnen.
 
-Innerhalb einer Sammlung ist die Suche von AEM Assets auf Assets (sowie deren Tags und Metadaten) in der angezeigten Sammlung begrenzt. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
+Die [!DNL Experience Manager]-Suche innerhalb einer Sammlung ist auf Assets (und ihre Tags und Metadaten) innerhalb der Sammlung beschränkt, die Sie anzeigen. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
 
 ## Bearbeiten von Sammlungseinstellungen {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 ## Bearbeiten von Metadateneigenschaften von mehreren Sammlungen {#editing-metadata-properties-of-multiple-collections}
 
-Mit Adobe Enterprise Manager (AEM) Assets können Sie die Metadaten vieler Sammlungen in Massen bearbeiten. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadatenänderungen an mehreren Sammlungen durchführen, beispielsweise Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern.
+Mit Adobe Enterprise Manager Assets können Sie die Metadaten vieler Sammlungen stapelweise bearbeiten. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadatenänderungen an mehreren Sammlungen durchführen, beispielsweise Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern.
 
 Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Metadaten, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schemaeditor.
 
