@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -152,13 +152,16 @@ Assets als [!DNL Cloud Service] können benutzerdefinierte Metadaten für ein As
 >
 >Es kann nur ein verarbeitendes Profil auf einen Ordner angewendet werden. Um mehrere Verarbeitungsschritte auf Assets in einem Profil anzuwenden, fügen Sie einem einzelnen Verarbeitungsordner weitere Optionen hinzu. Beispielsweise kann ein einzelnes Profil Darstellungen generieren, Assets transkodieren, benutzerdefinierte Metadaten generieren usw. Sie können MIME-Filter für jede Aufgabe anwenden, damit die entsprechende Aufgabe für das erforderliche Dateiformat ausgelöst wird.
 
-## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configlimit}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-Um DoS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parameter, die in einer Sling-Anfrage unterstützt werden. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. AEM generiert die folgende Warnung in den Protokollen:
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Um den Grenzwert zu ändern, greifen Sie auf die Web-Konsole zu (**[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**) und ändern Sie den Wert für **[!UICONTROL Maximale POST-Parameter]** unter **[!UICONTROL Apache Sling Request Parameter Handling]** der OSGi-Konfiguration.
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## Metadatenschemata {#metadata-schemata}
 
