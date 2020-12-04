@@ -4,10 +4,10 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
-source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
+source-git-commit: fd3ab969d9fb433ca2db68a5919fd0a0e9181e14
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '567'
+ht-degree: 82%
 
 ---
 
@@ -65,6 +65,10 @@ ht-degree: 83%
          + [Verwenden von Bedingungen zum Ausblenden](developing/components/hide-conditions.md)
       + [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md)
       + [Erstellen von Tags in AEM Anwendungen](/help/implementing/developing/introduction/tagging-applications.md)
+      + Suche {#search}
+         + [Query-Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder-Eigenschaftsverweis](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [Implementieren eines benutzerspezifischen Predicate-Evaluators](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
    + Hybrid AEM Entwicklung {#hybrid}
       + [Hybrid und SPA mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
