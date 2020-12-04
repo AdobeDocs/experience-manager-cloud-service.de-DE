@@ -3,9 +3,9 @@ title: Herunterladen von Assets
 description: Laden Sie Assets von [!DNL Adobe Experience Manager Assets] herunter und aktivieren oder deaktivieren Sie die Downloadfunktion.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 66%
 
 ---
@@ -29,7 +29,7 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Herunterladen von Assets über AEM Oberfläche {#download-in-aem}
+## Herunterladen von Assets mithilfe der [!DNL Experience Manager]-Schnittstelle {#download-in-aem}
 
 Der asynchrone Download-Dienst bietet ein Framework für den nahtlosen Download von Assets mit großer Größe. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. Die großen Dateien werden asynchron heruntergeladen und die Benutzer werden über den Abschluss der Experience Manager-Benachrichtigungen im Posteingang informiert. Siehe [Verstehen des Experience Managers inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
