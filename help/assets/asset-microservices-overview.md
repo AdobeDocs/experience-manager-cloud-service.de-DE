@@ -3,10 +3,10 @@ title: Verarbeiten von Assets mit Asset-Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 97%
+source-wordcount: '827'
+ht-degree: 85%
 
 ---
 
@@ -50,14 +50,14 @@ Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Falls kon
 
 Der Aufnahme- und Verarbeitungsfluss sind Schlüsselkonzepte der Asset-Microservices-Architektur für Experience Manager.
 
-* **Direkter Binärzugriff**: Assets werden nach der Konfiguration für Experience Manager-Umgebungen in den binären Cloud-Speicher übertragen (und hochgeladen). Anschließend erhalten AEM, Asset-Microservices und schließlich Clients direkten Zugriff auf sie, um ihre Arbeit auszuführen. Dadurch wird die Belastung der Netzwerke und die Duplizierung der gespeicherten Binärdateien minimiert.
-* **Externalisierte Verarbeitung**: Die Verarbeitung von Assets erfolgt außerhalb der AEM-Umgebung und hält deren Ressourcen (CPU, Speicher) für die Bereitstellung der wichtigsten Digital-Asset-Management-Funktionen und die Unterstützung der interaktiven Arbeit mit dem System für Endbenutzer frei.
+* **Direkter binärer Zugriff**: Assets werden in den Cloud Binary Store übertragen (und hochgeladen), sobald sie für Experience Manager-Umgebung konfiguriert sind, und dann  [!DNL Experience Manager]Asset-Mikrodienste und schließlich erhalten Kunden direkten Zugriff darauf, um ihre Arbeit auszuführen. Dadurch wird die Belastung der Netzwerke und die Duplizierung der gespeicherten Binärdateien minimiert.
+* **Externalisierte Verarbeitung**: Die Verarbeitung von Assets erfolgt außerhalb der  [!DNL Experience Manager] Umgebung und spart ihre Ressourcen (CPU, Arbeitsspeicher), um wichtige Digital Asset Management-Funktionen bereitzustellen und die interaktive Arbeit mit dem System für Endbenutzer zu unterstützen.
 
 ## Asset-Upload mit direktem Binärzugriff {#asset-upload-with-direct-binary-access}
 
-Experience Manager-Clients, die Teil des Produktangebots sind, unterstützen standardmäßig alle Uploads mit direktem Binärzugriff. Dazu gehören das Hochladen über die Web-Oberfläche, Adobe Asset Link und das AEM-Desktop-Programm.
+Experience Manager-Clients, die Teil des Produktangebots sind, unterstützen standardmäßig alle Uploads mit direktem Binärzugriff. Dazu gehören das Hochladen mit der Weboberfläche, Adobe Asset Link und [!DNL Experience Manager] Desktop-App.
 
-Sie können benutzerdefinierte Upload-Tools verwenden, die direkt mit AEM-HTTP-APIs funktionieren. Sie können diese APIs direkt verwenden oder die folgenden Open-Source-Projekte verwenden und erweitern, die das Upload-Protokoll implementieren:
+Sie können benutzerdefinierte Upload-Tools verwenden, die direkt mit [!DNL Experience Manager]-HTTP-APIs funktionieren. Sie können diese APIs direkt verwenden oder die folgenden Open-Source-Projekte verwenden und erweitern, die das Upload-Protokoll implementieren:
 
 * [Open-Source-Upload-Bibliothek](https://github.com/adobe/aem-upload)
 * [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Weitere Informationen hierzu finden Sie unter [Hochladen von Assets](add-assets.
 
 Während die Anforderungen an die Asset-Verarbeitung der meisten Kunden von den konfigurierbaren Asset-Microservices erfüllt werden, benötigen einige Kunden möglicherweise zusätzliche Asset-Verarbeitungsschritte. Dies gilt insbesondere dann, wenn Assets auf der Grundlage von Informationen aus anderen Systemen über Integrationen verarbeitet werden müssen. In solchen Fällen können benutzerdefinierte Workflows für die Nachbearbeitung verwendet werden.
 
-Nacharbeitungs-Workflows sind reguläre AEM-Workflow-Modelle, die im AEM-Workflow-Editor erstellt und verwaltet werden. Kunden können die Workflows so konfigurieren, dass zusätzliche Verarbeitungsschritte für ein Asset ausgeführt werden, einschließlich der verfügbaren vordefinierten Workflow-Schritte und benutzerdefinierter Workflows.
+Nachbearbeitungs-Workflows sind normale [!DNL Experience Manager] Workflow-Modelle, die im [!DNL Experience Manager] Workflow-Editor erstellt und verwaltet werden. Kunden können die Workflows so konfigurieren, dass zusätzliche Verarbeitungsschritte für ein Asset ausgeführt werden, einschließlich der verfügbaren vordefinierten Workflow-Schritte und benutzerdefinierter Workflows.
 
 Adobe Experience Manager kann so konfiguriert werden, dass die Workflows nach Abschluss der Asset-Verarbeitung automatisch ausgelöst werden.
 
