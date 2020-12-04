@@ -3,17 +3,17 @@ title: Überprüfen von Assets in Ordnern und Sammlungen
 description: Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 94%
 
 ---
 
 
 # Überprüfen von Assets in Ordnern und Sammlungen {#review-folder-assets-and-collections}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Ad-hoc-Prüfungs-Workflows für Assets festlegen, die sich in einem Ordner oder in einer Sammlung befinden. Sie können sie für Prüfer oder kreative Partner freigeben, um deren Feedback einzuholen. Sie können einen Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
+Mit Adobe Experience Manager Assets können Sie Ad-hoc-Workflows für Assets festlegen, die sich in einem Ordner oder in einer Sammlung befinden. Sie können sie für Prüfer oder kreative Partner freigeben, um deren Feedback einzuholen. Sie können einen Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
 
 Wenn Sie die Assets freigeben, können Prüfer sie genehmigen oder ablehnen. Benachrichtigungen werden in verschiedenen Phasen des Workflows gesendet, um die beabsichtigten Empfänger über die Ausführung verschiedener Aufgaben zu informieren. Wenn Sie beispielsweise einen Ordner oder eine Sammlung freigeben, erhält der Prüfer eine Benachrichtigung, dass ein Ordner/eine Sammlung zur Prüfung freigegeben wurde.
 
@@ -47,7 +47,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
    ![Prüfungsname](assets/review_name.png)
 
 1. Tippen/klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
-1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Assets-Benutzeroberfläche. Um Assets zu genehmigen, klicken/tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
+1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;. Um Assets zu genehmigen, klicken/tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
 
    ![Benachrichtigung](assets/notification.png)
 
@@ -91,7 +91,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
    ![Aufgabendetails-Sammlung](assets/task_details-collection.png)
 
 1. Tippen/klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
-1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Konsole „Assets“. Um Assets zu genehmigen, tippen/klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
+1. Melden Sie sich bei [!DNL Experience Manager Assets] als Genehmiger an und navigieren Sie zur Assets-Konsole. Um Assets zu genehmigen, tippen/klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]** und wählen Sie die Prüfungsaufgabe aus der Liste aus.
 1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Überprüfen]**.
 1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Wählen Sie die Assets aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Genehmigen/Ablehnen]**, um die Assets je nach Bedarf zu genehmigen bzw. abzulehnen.
 
