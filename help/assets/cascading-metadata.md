@@ -3,10 +3,10 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Nachfolgend finden Sie einige Anwendungsfälle, für die Sie kaskadierende Metad
 * Ändern Sie die für ein bestimmtes Feld angezeigten Optionen basierend auf dem in einem anderen Wert angegebenen Wert.
 * Legen Sie den standardmäßigen Metadatenwert in einem bestimmten Feld basierend auf dem in einem anderen Feld angegebenen Wert fest.
 
-## Erstellen kaskadierender Metadaten in AEM   {#configure-cascading-metadata-in-aem}
+## Kaskadenmetadaten in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem} konfigurieren
 
 Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen möchten, die auf dem ausgewählten Assettyp basieren. Beispiele
 
@@ -35,7 +35,7 @@ Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen 
 
 Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schemata]**.
+1. Tippen/klicken Sie auf das [!DNL Experience Manager]-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Schemaformulare]** ein Schemaformular aus und tippen/klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Schema zu bearbeiten.
 
    ![Auswahlformular](assets/select_form.png)
@@ -54,7 +54,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    * Um die Werte manuell anzugeben, wählen Sie **[!UICONTROL Manuell hinzufügen]** aus, tippen/klicken Sie auf **[!UICONTROL Auswahl hinzufügen]** und geben Sie den Optionstext und -wert an. Legen Sie z. B. die Assettypen „Video“, „PDF“, „Word“ und „Bild“ fest.
 
-   * Um die Werte dynamisch aus einer JSON-Datei abzurufen, wählen Sie **[!UICONTROL Über JSON-Pfad hinzufügen]** aus und geben Sie den Pfad einer JSON-Datei an. AEM ruft die Schlüssel-Wert-Paare in Echtzeit ab, wenn das Formular dem Benutzer angezeigt wird.
+   * Um die Werte dynamisch aus einer JSON-Datei abzurufen, wählen Sie **[!UICONTROL Über JSON-Pfad hinzufügen]** aus und geben Sie den Pfad einer JSON-Datei an. [!DNL Experience Manager] ruft die Schlüssel-Wert-Paare in Echtzeit ab, wenn das Formular dem Benutzer angezeigt wird.
 
    Es kann immer nur eine der beiden Optionen aktiv sein. Sie können keine Optionen aus einer JSON-Datei importieren und sie manuell bearbeiten.
 
