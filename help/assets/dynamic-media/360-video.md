@@ -2,10 +2,10 @@
 title: 360-Grad-/VR-Video
 description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality (VR)-Videos in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '964'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 
 ## Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf der Asset-Seite als **Multimedia** gekennzeichnet.
+360 Video-Assets, die in den Experience Manager hochgeladen werden, werden auf einer Asset-Seite mit **Multimedia** beschriftet, ähnlich wie bei normalen Video-Assets.
 
 ![6_5_360Videoauswahl zur Vorschau](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
@@ -97,7 +97,7 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Linkmethode nicht möglich ist, wenn Ihr interaktiver Inhalt Links mit relativen URLs, insbesondere Links zu Experience Manager-Siteseiten, enthält.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **So zeigen Sie eine Vorschau von 360-Grad-Videos an**
@@ -133,5 +133,5 @@ Sie müssen das 360-Grad-Video veröffentlichen, um es zu verwenden. Die Veröff
 
 Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) finden Sie Details zum Veröffentlichen von 360-Grad-Videos.
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Linkmethode nicht möglich ist, wenn Ihr interaktiver Inhalt Links mit relativen URLs, insbesondere Links zu Experience Manager-Siteseiten, enthält.
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
