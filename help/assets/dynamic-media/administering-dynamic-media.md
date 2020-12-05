@@ -2,10 +2,10 @@
 title: 'Einrichten von Dynamic Media  '
 description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 69%
 
 ---
 
@@ -18,9 +18,9 @@ Mithilfe von [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-m
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Sobald Sie AEM eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten AEM-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie Assets ggf. erneut verarbeiten, um Dynamic Media für die Assets verwenden zu können.
+>* Nach dem Ausführen des Experience Managers ist für jedes hochgeladene Asset die Option &quot;Dynamische Medien&quot;automatisch aktiviert (es sei denn, es wurde explizit von Ihrem Systemadministrator deaktiviert). Wenn Sie eine aktualisierte Instanz von Experience Manager verwenden und neu für dynamische Medien sind, müssen Sie Ihre Assets möglicherweise neu verarbeiten, um sie für dynamische Medien aktivieren zu lassen.
