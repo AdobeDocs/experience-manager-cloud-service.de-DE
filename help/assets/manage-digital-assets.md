@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4429'
-ht-degree: 99%
+source-wordcount: '4408'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ In diesem Artikel wird das Verwalten und Bearbeiten von Assets in Adobe Experien
 
 ## Erstellen von Ordnern {#creating-folders}
 
-Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei AEM Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
+Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager Assets]Bei müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und drücken Sie anschließend die Eingabetaste. Das neue Tag wird in AEM gespeichert.
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und drücken Sie anschließend die Eingabetaste. Das neue Tag wird unter [!DNL Experience Manager] gespeichert.
 
    YouTube erfordert Tags zur Veröffentlichung und einen YouTube-Link (wenn ein geeigneter Link gefunden werden kann).
 
@@ -139,7 +139,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    >[!NOTE]
    >
-   >Wenn Sie ein Asset in denselben Speicherort kopieren, generiert AEM automatisch eine Variation des Namens. Beispiel: Wenn Sie ein Asset mit dem Namen `Square` kopieren, generiert AEM automatisch den Namen `Square1` für die Kopie.
+   >Wenn Sie ein Asset am selben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variation des Namens. Wenn Sie beispielsweise ein Asset mit dem Titel `Square` kopieren, generiert [!DNL Experience Manager] automatisch den Titel für die Kopie mit dem Namen `Square1`.
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einfügen]**. Die Assets werden an diesen Speicherort kopiert.
 
@@ -203,7 +203,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    >[!NOTE]
    >
-   >Standardmäßig zeigt AEM Assets im Vorschaumodus nicht das ursprüngliche Wiedergabeformat des Assets an. Wenn Sie ein Administrator sind, können Sie Überlagerungen verwenden, um AEM Assets so zu konfigurieren, dass ursprüngliche Wiedergabeformate im Vorschaumodus angezeigt werden.
+   >Standardmäßig zeigt [!DNL Experience Manager Assets] nicht die ursprüngliche Darstellung des Assets im Modus &quot;Vorschau&quot;an. Als Administrator können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass Originaldarstellungen im Modus &quot;Vorschau&quot;angezeigt werden.
 
 1. Wählen Sie ein Ausgabeformat aus, um es anzuzeigen oder zu löschen.
 
@@ -223,7 +223,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Wenn Sie ein Ausgabeformat im Bedienfeld **[!UICONTROL Ausgabeformate]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für das Ausgabeformat relevanten Aktionen angezeigt werden. Optionen wie das Symbol „Ausgabeformat hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
-   Sie können die Dimensionen für das anzuzeigende Ausgabeformat auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. AEM Assets zeigt anhand der von Ihnen angegebenen Abmessungen das Ausgabeformat mit den genauen oder möglichst genauen Abmessungen an.
+   Sie können die Dimensionen für das anzuzeigende Ausgabeformat auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Je nach den angegebenen Abmessungen zeigt Assets die Darstellung mit den exakten oder engsten Abmessungen an.
 
    Überlagern Sie zum Konfigurieren der Ausgabeformatabmessungen eines Bildes auf der Asset-Detailebene den Knoten `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) und konfigurieren Sie den Wert für die width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um das Ausgabeformat auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft `preferOriginal` der Originalgröße den Vorzug, wenn das angepasste Ausgabeformat größer ist als das Original.
 
@@ -270,7 +270,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 ## Herunterladen von Assets {#download-assets}
 
-Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.md).
+Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Veröffentlichen von Assets {#publish-assets}
 
@@ -323,7 +323,7 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
 ## Geschlossene Benutzergruppe {#closed-user-group}
 
-Eine geschlossene Benutzergruppe (Closed User Group, CUG) wird verwendet, um den Zugriff auf bestimmte aus AEM veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
+Eine geschlossene Benutzergruppe (CUG) wird verwendet, um den Zugriff auf bestimmte Asset-Ordner zu beschränken, die von [!DNL Experience Manager] veröffentlicht wurden. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
 
 CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
@@ -332,22 +332,22 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 
    ![add_user](assets/add_user.png)
 
-1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie anschließend den Pfad zur Anmeldeseite in AEM aus und speichern Sie die Änderungen.
+1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie dann den Pfad zu einer Anmeldeseite in [!DNL Experience Manager] und speichern Sie die Änderungen.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt AEM die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
+   >Wenn Sie den Pfad zu einer Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die Standard-Anmeldeseite in der Veröffentlichungsinstanz an.
 
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
-1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
+1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Der Ordner wird angezeigt, nachdem [!DNL Experience Manager] Sie authentifiziert hat.
 
 ## Suchen von Assets         {#search-assets}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
-Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in AEM suchen](/help/assets/search-assets.md).
+Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in suchen [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Schnellaktionen {#quick-actions}
 
@@ -358,7 +358,7 @@ Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je
 
 ## Bearbeiten von Bildern {#editing-images}
 
-Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kleine Bearbeitungsaktionen in Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+Mit den Bearbeitungswerkzeugen in der [!DNL Experience Manager Assets]-Oberfläche können Sie kleine Bearbeitungsaufträge für Bild-Assets ausführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
 
 >[!NOTE]
 >
@@ -429,7 +429,7 @@ In der Timeline können Sie diverse Ereignisse für ein ausgewähltes Objekt ans
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
-Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von AEM Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
+Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von  Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
 
 >[!NOTE]
 >
@@ -466,7 +466,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Schließen]**, um den Anmerkungsmodus zu verlassen.
-1. Um die Benachrichtigung zu sehen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei AEM Assets an und klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**.
+1. Um die Benachrichtigung zu sehen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei  Assets an und klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**.
 
    >[!NOTE]
    >
@@ -558,9 +558,9 @@ Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bes
 
 In folgenden Szenarien werden Versionen erstellt:
 
-* Sie ändern ein Bild in einer anderen Anwendung und laden es in AEM Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
+* Sie ändern ein Bild in einer anderen Anwendung und laden es in Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
 * Sie können die Metadaten eines Assets bearbeiten.
-* Sie verwenden das AEM-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Es wird nicht bei jedem Speichern des Assets eine neue Version erstellt.
+* Verwenden Sie die [!DNL Experience Manager]-Desktop-App, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Eine neue Version wird jedes Mal erstellt, wenn das Asset gespeichert wird.
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabeformate gemeinsam mit der Version gespeichert. Ausgabeformate sind gerenderte Alternativen für dieselben Bilder, z. B. ein PNG-Ausgabeformat einer hochgeladenen JPEG-Datei.
 
