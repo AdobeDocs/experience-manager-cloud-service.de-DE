@@ -2,10 +2,10 @@
 title: Verwalten von Bildvorgaben
 description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '3648'
-ht-degree: 100%
+source-wordcount: '3608'
+ht-degree: 97%
 
 ---
 
@@ -182,8 +182,10 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 >[!NOTE]
 >
 >* Die Größe der Miniaturansichten für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturansichten“ konfiguriert.
->
->* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+   >
+   >
+* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+
 >
 
 
@@ -392,7 +394,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Bildmodifikator</strong></td>
-   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bildmodifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
+   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bildmodifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
     <ul>
      <li>Grundlegende Befehle zur Vorlagenerstellung und Textdarstellung: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> und <code>textPs=</code></li>
      <li>Lokalisierungsbefehle: <code>locale=</code> und <code>req=xlate</code></li>
@@ -409,7 +411,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 ### Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
-Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Rendern von Bildern basiert auf der Scene7-Image-Rendering-API und wird ausführlich in der [HTTP-Protokollreferenz](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html) beschrieben.
+Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Die Image Rendering-Funktion basiert auf der Dynamic Media Image Rendering API und wird im [HTTP Protocol Reference](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api) detailliert definiert.
 
 Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modifikatoren.
 
@@ -417,7 +419,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 >
 >Einige Bildmodifikatoren [können nicht in AEM verwendet werden](#advanced-tab-options).
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
+* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
 
    ```xml
    &op_invert=1
@@ -425,7 +427,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html): Wendet einen Weichzeichenfilter auf das Bild an.
+* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html): Wendet einen Weichzeichenfilter auf das Bild an.
 
    ```xml
    &op_blur=7
@@ -441,7 +443,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [Op_brightness:](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html): Verringert oder erhöht die Helligkeit.
+* [Op_brightness:](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html): Verringert oder erhöht die Helligkeit.
 
    ```xml
    &op_brightness=58
@@ -449,7 +451,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) – Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
+* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) – Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
 
    ```xml
    opac=29
