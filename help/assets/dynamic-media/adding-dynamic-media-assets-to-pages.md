@@ -1,11 +1,11 @@
 ---
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
-description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für dynamische Medien hinzufügen können.
+description: Hinzufügen von Komponenten für dynamische Medien zu einer Seite in Experience Manager
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 98%
+source-wordcount: '3134'
+ht-degree: 93%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 98%
 
 Wenn Sie den Assets auf Ihren Websites Dynamic Media-Funktionen hinzufügen möchten, können Sie die Komponente für **dynamische Medien**,**interaktive Medien**, **Panoramamedien** oder **360-Grad-Videomedien** direkt auf der Seite hinzufügen. Wechseln Sie dazu in den Layoutmodus und aktivieren Sie die Komponenten für dynamische Medien. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. Die Komponenten für dynamische Medien sind smart – sie erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Konfigurationsoptionen ändern sich entsprechend.
 
-Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren WCM verwenden. Wenn Sie einen Drittanbieter für Ihr WCM verwenden, [verknüpfen](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) Sie Ihre Assets oder [betten](/help/assets/dynamic-media/embed-code.md) Sie sie ein. Eine responsive Website von Drittanbietern finden Sie unter [Bereitstellen optimierter Bilder für eine responsive Site](/help/assets/dynamic-media/responsive-site.md).
+Wenn Sie Experience Manager als WCM verwenden, fügen Sie der Seite Dynamische Medien-Assets direkt hinzu. Wenn Sie einen Drittanbieter für Ihr WCM verwenden, [verknüpfen](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) Sie Ihre Assets oder [betten](/help/assets/dynamic-media/embed-code.md) Sie sie ein. Eine responsive Website von Drittanbietern finden Sie unter [Bereitstellen optimierter Bilder für eine responsive Site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Sie müssen Assets veröffentlichen, um sie Seiten in AEM hinzufügen zu können. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Sie müssen Assets veröffentlichen, bevor Sie sie in Experience Manager zu Seiten hinzufügen können. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Hinzufügen einer Dynamic Media-Komponente zu einer Seite         {#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,7 +26,7 @@ Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Med
 
 **Hinzufügen einer Dynamic Media-Komponente zu einer Seite**
 
-1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Komponente &quot;Dynamische Medien&quot;hinzufügen möchten.
 1. Tippen Sie im linken Bereich auf das Symbol **[!UICONTROL Komponenten]** und filtern Sie nach „Dynamic Media“.
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
@@ -53,7 +53,7 @@ Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Med
 
 Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar sind, bedeutet dies wahrscheinlich, dass Sie zunächst die zu verwendenden Komponenten aktivieren müssen.
 
-1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
+1. Öffnen Sie in Experience Manager die Seite, auf der Sie die Komponente &quot;Dynamische Medien&quot;hinzufügen möchten.
 1. Tippen Sie links oben auf der Seite in der Symbolleiste auf das Symbol „Seiteninformationen“ und dann in der Dropdown-Liste auf **[!UICONTROL Vorlage bearbeiten]**.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 >[!NOTE]
 >
->Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. Nachdem sie im Vorlageneditor zur Verfügung gestellt wurden, können Sie die Komponenten wie jede andere AEM-Komponente Ihrer Seite hinzufügen.
+>Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. Nachdem die Komponenten im Vorlageneditor verfügbar gemacht wurden, können Sie sie wie jede andere Experience Manager-Komponente zu Ihrer Seite hinzufügen.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -117,8 +117,10 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
->Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
+>
+Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
 >
 >Sie können jedoch dieselbe Viewer-Vorgabe für alle Dynamic Media-Komponenten, die Assets desselben Typs verwenden, auf der Seite verwenden.
 
@@ -208,7 +210,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
 Verwenden Sie die Dynamic Media-Komponente, um Bild-Assets für smartes Zuschneiden zu Ihren Web-Seiten hinzuzufügen. Beim Bearbeiten der Komponente können Sie eine vordefinierte Video-Viewer-Vorgabe für das Wiedergeben des Videos auf der Seite verwenden.
 
-Siehe [Verwenden von smartem Zuschneiden mit AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Siehe [Verwenden der intelligenten Zuschneiden mit Experience Manager Assets Dynamische Medien](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Weitere Informationen finden Sie unter [Bildprofile](/help/assets/dynamic-media/image-profiles.md).
 
@@ -254,8 +256,10 @@ Die Komponente „Interaktive Medien“ ist eine intelligente Komponente. Je nac
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
->Beachten Sie, dass Sie den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
+>
+Beachten Sie, dass Sie den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
 >
 >Sie können jedoch dieselbe Viewer-Vorgabe für alle interaktiven Medienkomponenten, die Assets desselben Typs verwenden, auf der Seite verwenden.
 
@@ -294,8 +298,10 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
->Beachten Sie, dass Sie den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
+>
+Beachten Sie, dass Sie den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
 >
 >Sie können jedoch dieselbe Viewer-Vorgabe für alle Komponenten für Panoramamedien, die Assets desselben Typs verwenden, auf der Seite verwenden.
 
@@ -331,10 +337,10 @@ Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic
 
 >[!MORELIKETHIS]
 >
->* [Verwenden des Video-Players in AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Verwenden von interaktiven Videos mit AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Verwenden des Asset-Viewers mit AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Verwenden der benutzerdefinierten Videominiatur mit AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Farb-Management mit AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Verwenden des Scharfzeichnens von Bildern mit AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Verwenden des Videoplayers in Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Interaktive Videos mit Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Erläuterungen zum Asset Viewer mit Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Verwenden der benutzerdefinierten Videominiatur mit Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Farbmanagement mit Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Verwenden des Scharfzeichnens von Bildern mit dynamischen Experience Managern](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
