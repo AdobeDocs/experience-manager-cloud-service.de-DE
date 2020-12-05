@@ -2,10 +2,10 @@
 title: Verwalten von Viewer-Vorgaben
 description: Erstellen und Verwalten von Viewer-Vorgaben
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '4255'
-ht-degree: 100%
+source-wordcount: '4258'
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffent
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Hostseite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
-Weitere Informationen zum Einbetten responsiver Viewer auf Web-Seiten finden Sie unter [Bibliothek responsiver Bilder](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in der *Scene7 Image Serving-API-Hilfe*.
+Weitere Informationen zum Einbetten von interaktiven Viewern in Ihre Webseiten finden Sie unter [Responsive Static Image Library](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in der *Hilfe zur dynamischen Medienverwaltung und -wiedergabe-API*.
 
 >[!NOTE]
 >
