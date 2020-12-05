@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Dynamische Medien unterstützen Tastatursteuerungs- und Hilfstechnologien wie JA
 
 ## Unterstützung der Barrierefreiheit von Tastaturen in dynamischen Medien
 
-Da Dynamic Media ein Plug-in für AEM Assets ist, ist das Verhalten der Tastatursteuerung im Wesentlichen dasselbe wie in AEM Assets. Beispielsweise hat die Schaltfläche `Cancel` in dynamischen Medien dieselbe Fokushervorhebung wie in AEM Assets und reagiert auf die Taste `Spacebar` wie in AEM Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Da es sich bei dynamischen Medien um ein Plug-in für Experience Manager Assets handelt, ist das Verhalten der Tastatursteuerung im Wesentlichen mit dem von Experience Manager Assets identisch. Beispielsweise hat die Schaltfläche `Cancel` in dynamischen Medien dieselbe Fokushervorhebung wie in Experience Manager Assets und reagiert auf die Taste `Spacebar` wie in Experience Manager Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in dynamischen Medien unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu entdecken. Die Tastatursteuerung in dynamischen Medien umfasst Folgendes:
 
