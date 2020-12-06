@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 97%
+source-wordcount: '2393'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +73,7 @@ Sie können Assets aus der Assets-Benutzeroberfläche ziehen und in einer Sammlu
 Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie können eine Smart-Sammlung erstellen, indem Sie Dateien und Ordner oder nur Dateien nutzen.
 
 1. Navigieren Sie zur Assets-Benutzeroberfläche und tippen oder klicken Sie auf das Symbol **[!UICONTROL Suchen]**.
-1. Geben Sie im OmniSearch-Feld den Suchbegriff ein und drücken Sie die Eingabetaste. Tippen/Klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen, und wenden Sie einen Suchfilter aus dem Suchbereich an.
+1. Geben Sie den Suchbegriff in das Feld Omni Suche ein und wählen Sie `Enter`. Tippen/Klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen, und wenden Sie einen Suchfilter aus dem Suchbereich an.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 1. Tippen oder klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**.
 1. Geben Sie einen Namen für die Sammlung an. Aktivieren Sie **[!UICONTROL Öffentlich]**, um die DAM-Benutzergruppe mit der Rolle „Betrachter“ zur Smart-Sammlung hinzuzufügen.
@@ -103,7 +103,7 @@ Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Ass
 Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt, Sie können den Inhalt ändern, indem Sie die Suchparameter der [gespeicherten Suche](#saved-searches) ändern.
 
 1. Tippen oder klicken Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Symbol **[!UICONTROL Suchen]**.
-1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
+1. Wählen Sie mit dem Cursor im Feld Omniture die `Enter`-Taste aus.
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol, um den Filterbereich anzuzeigen.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
@@ -238,7 +238,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. Tippen oder klicken Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Suchsymbol.
 
-1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
+1. Wählen Sie mit dem Cursor im Feld Omniture die `Enter`-Taste aus.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen.
 1. Tippen oder klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** neben der Smart-Sammlung, die Sie löschen möchten, auf **[!UICONTROL Löschen]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]**, um die gespeicherte Suche zu löschen.
@@ -249,7 +249,7 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine Sammlung aus, für die Sie einen Workflow ausführen möchten.
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus der Liste aus.
-1. Tippen/klicken Sie in der Timeline auf das Caret-Symbol am unteren Rand und dann auf **[!UICONTROL Workflow starten]**.
+1. Wählen Sie in der Zeitleiste unten das Symbol &quot;Karriere&quot;aus oder tippen Sie auf und tippen/klicken Sie dann auf **[!UICONTROL Beginn Workflow]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste aus. Wählen Sie beispielsweise das **[!UICONTROL DAM Update Asset]**-Modell aus.
 1. Geben Sie einen Titel für den Workflow ein und tippen oder klicken Sie auf **[!UICONTROL Start]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Fortfahren]**. Der Workflow wird für alle Assets in der Sammlung ausgeführt.
