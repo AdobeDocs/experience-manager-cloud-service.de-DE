@@ -2,9 +2,9 @@
 title: Indexkonverter
 description: Indexkonverter
 translation-type: tm+mt
-source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 4%
 
 ---
@@ -34,5 +34,5 @@ Es gibt zwei Möglichkeiten, benutzerdefinierte Oak-Indexdefinitionen zu erstell
 >[!NOTE]
 >Es wird empfohlen, das Index Converter-Tool über das [AIO CLI-Plugin für die Quellmigration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) zu verwenden. Es kann aber auch eigenständig ausgeführt werden.
 
-Siehe **[Git-Ressource: aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)**, um zu erfahren, wie das Plugin installiert und verwendet wird.
+Siehe **[Git-Ressource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**, um zu erfahren, wie das Plugin installiert und verwendet wird.
 
