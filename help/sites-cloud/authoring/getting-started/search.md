@@ -2,10 +2,10 @@
 title: Suchen
 description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 
-![Schaltfläche „Suchen“](/help/sites-cloud/authoring/assets/search-button.png)
+![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
