@@ -2,9 +2,9 @@
 title: Verwalten von Seiten in Ihrem Start
 description: 'Sie können neue Seiten in Ihrem Start erstellen. Sie können auch unerwünschte Seiten löschen. '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
@@ -54,6 +54,8 @@ All diese Einstiegspunkte öffnen den Start in der Sites-Konsole, wo Sie Folgend
 * Wählen Sie vorhandene Seiten aus und gehen Sie vor. Beispiel: **Bearbeiten**, **Eigenschaften**, **Sperren**, **Kopieren**, **Einfügen** und **Löschen**
 
    ![Navigieren Sie in der Sites-Konsole über Inhalt verwalten.](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Verwenden Sie die Leiste **Referenzen**, um zu den Seiten **Quelle starten** zurückzukehren:
+   ![Site-Konsole - Startquelle](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## hinzufügen Seiten für Ihren Start {#add-pages-to-launch}
 
