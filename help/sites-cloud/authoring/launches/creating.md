@@ -2,10 +2,10 @@
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 97%
 
 ---
 
@@ -120,13 +120,15 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
 1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
-1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie zur Launch-Verzweigung, indem Sie `/content/launches` im Filter angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
+1. Wählen Sie **Hinzufügen Seiten** und navigieren Sie dann zur Verzweigung &quot;Launches&quot;, indem Sie `/content/launches` in der Leiste **Filter** angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
    ![Erstellen von verschachtelten Launches](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Klicken Sie auf **Weiter**, um fortzufahren. Geben Sie die **Eigenschaften** dann wie bei jedem anderen Launch an.
+1. Fahren Sie mit **Weiter** fort.
 
-   ![Auswählen einer Quelle für einen verschachtelten Launch](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Füllen Sie **Eigenschaften** wie bei jedem anderen Start aus.
+
+1. Füllen Sie **Create** aus.
 
 #### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
 
