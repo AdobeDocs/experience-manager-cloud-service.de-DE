@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: 'Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
@@ -39,6 +39,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 >
 >* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch), wenn die Struktur mehrere Launches enthält.
 >* [Der Ablauf eines Launches](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
+
 >
 
 
@@ -46,11 +47,14 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Launches** weiterleiten:
 
 1. Öffnen Sie:
-   * In der **Sites**-Konsole:
+   * Die Konsole **Sites** beim Navigieren auf Quellseiten:
       1. Öffnen Sie die Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
       1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
+   * Die Konsole **Sites** beim Navigieren auf Startseiten:
+      1. Wählen Sie die erforderliche Startseite mit [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus.
+      1. Die Aktion **Promote** steht in der Symbolleiste zur Verfügung.
    * In der **Launches**-Konsole:
       1. Wählen Sie den Launch aus (indem Sie auf die Miniatur tippen/klicken).
       1. Wählen Sie **Bewerben**.
