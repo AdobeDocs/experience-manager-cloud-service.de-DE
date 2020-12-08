@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
-ht-degree: 87%
+source-wordcount: '2239'
+ht-degree: 86%
 
 ---
 
@@ -122,7 +122,7 @@ Die Protokollebenen lauten wie folgt:
 
 Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
-## CRX/DE Lite und Systemkonsole {#crxde-lite-and-system-console}
+## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
 
 ### Lokale Entwicklung {#local-development}
 
@@ -132,7 +132,7 @@ Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellst
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Kunden können in der Entwicklungsumgebung auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
+Kunden können auf CRXDE Lite in der Entwicklungs-Umgebung der Autorenebene zugreifen, jedoch nicht auf die Stufe oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
 Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungsdienst-URLs wie folgt festgelegt werden:
 
