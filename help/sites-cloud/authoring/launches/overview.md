@@ -2,10 +2,10 @@
 title: Launches
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 98%
+source-wordcount: '878'
+ht-degree: 90%
 
 ---
 
@@ -84,22 +84,31 @@ Launches ermöglichen Folgendes:
 >
 >Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-### Die Konsole „Launches“ {#the-launches-console}
-
-Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
-
-* über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
-
-* oder direkt mit `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 
 1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
 1. Öffnen Sie die Leiste **Verweise** und wählen Sie die Quellseite aus.
-1. Wählen Sie **Launches** aus. Die vorhandenen Launches werden aufgeführt:
+1. Wählen Sie **Launches**, die vorhandenen Launches werden aufgelistet, zusammen mit dem Zugriff auf die **Launches-Konsole**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Tippen/klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
 
    ![Aktionen für Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## Die Konsole „Launches“ {#the-launches-console}
+
+Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
+
+* über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
+
+* **Startet** Consolare the bottom of the  **** Launchessection of  **** ReferencesRail, wenn durch Quellinhalte in der Site-Konsole navigiert wird.
+
+   ![Startet die Konsole in Verweise auf Starts in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* Die Schaltfläche **Starts** oben rechts beim Navigieren in Startinhalt in der Sites-Konsole:
+
+   ![Option &quot;Starts&quot;in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* oder direkt; zum Beispiel mit:
+   `https://<host>:<port>/libs/launches/content/launches.html`
