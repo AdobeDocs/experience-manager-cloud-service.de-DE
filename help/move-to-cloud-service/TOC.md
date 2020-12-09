@@ -4,10 +4,10 @@ user-guide-title: Wechseln zu AEM as a Cloud Service
 breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: 4ded4f7da78c42f28cf8e472f88d18918f8cf1d0
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 88%
+source-wordcount: '83'
+ht-degree: 89%
 
 ---
 
@@ -24,11 +24,12 @@ ht-degree: 88%
       + [Überblick](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Verwenden von Best Practices-Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Content Transfer-Tool {#content-transfer-tool}
-      + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Verwenden des Content Transfer-Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+      + [Überblick](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Verwenden des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code-Refaktorierungs-Tools {#refactoring-tools}
    + [Einheitliches Erlebnis](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [Asset-Workflow-Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
+   + [Indexkonverter](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [AEM-Modernisierungs-Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
