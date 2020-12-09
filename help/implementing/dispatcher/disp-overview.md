@@ -2,9 +2,9 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
+source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4050'
 ht-degree: 88%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 88%
 
 ## Konfiguration und Testen von Apache und Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-In diesem Abschnitt wird beschrieben, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben. Weitere Informationen zu Dispatcher finden Sie in der [AEM Dispatcher-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html).
+In diesem Abschnitt wird beschrieben, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben. Weitere Informationen zu Dispatcher finden Sie in der [AEM Dispatcher-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
 >
 >Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer. Folgende Abschnitte enthalten Befehle mit den Mac- oder Linux-Versionen des SDK, das Windows SDK kann jedoch auf ähnliche Weise verwendet werden.
-
+<!--
 >[!WARNING]
 >
->Windows-Benutzer: Die aktuelle Version der lokalen Dispatcher Tools (v2.0.20) von AEM as a Cloud Service ist mit Windows inkompatibel. Wenden Sie sich an den [Adobe Support](https://daycare.day.com/home.html), um Updates zur Windows-Kompatibilität zu erhalten.
+>Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
