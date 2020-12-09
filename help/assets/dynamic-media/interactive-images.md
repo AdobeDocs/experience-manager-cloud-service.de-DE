@@ -1,8 +1,8 @@
 ---
 title: Interaktive Bilder
-description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten
+description: Erfahren Sie, wie Sie mit Interactive Images in Dynamic Media arbeiten.
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4253'
 ht-degree: 99%
