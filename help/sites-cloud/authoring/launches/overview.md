@@ -2,10 +2,10 @@
 title: Launches
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 90%
+source-wordcount: '907'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,11 @@ Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Qu
 
 * Änderungen an den Quellseiten, die die Folge normaler Wartungsarbeiten sind. Diese Änderungen werden automatisch in den Launch-Seiten dupliziert.
 * Bearbeitungen, die in Vorbereitung auf das nächste Quartal direkt an den Launch-Seiten vorgenommen werden.
+
+Sie können auch Folgendes durchführen:
+
+* Navigieren in Inhalten in der Startverzweigung; Seiten nach Bedarf hinzufügen oder entfernen.
+* Vorschau, wie veröffentlichte Inhalte zukünftig ein bestimmtes Datum/einen bestimmten Zeitraum betrachten.
 
 Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie die Quellseiten veröffentlichen können, die den aktualisierten Inhalt enthalten. Sie können entweder alle Seiten weiterleiten oder nur die Seiten, die Sie geändert haben.
 
