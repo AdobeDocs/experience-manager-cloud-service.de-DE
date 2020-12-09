@@ -1,10 +1,10 @@
 ---
 title: Verwalten von Viewer-Vorgaben
-description: Erstellen und Verwalten von Viewer-Vorgaben
+description: Erstellen und Verwalten von Viewer-Vorgaben in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 99%
 
 ---
@@ -51,7 +51,7 @@ Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffent
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Hostseite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
-Weitere Informationen zum Einbetten von interaktiven Viewern in Ihre Webseiten finden Sie unter [Responsive Static Image Library](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in der *Hilfe zur dynamischen Medienverwaltung und -wiedergabe-API*.
+Weitere Informationen zum Einbetten von interaktiven Viewern in Ihre Webseiten finden Sie unter [Responsive Static Image library](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) in der *Dynamic Media Image Serving and Rendering API Help*.
 
 >[!NOTE]
 >
