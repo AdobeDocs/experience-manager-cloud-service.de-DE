@@ -1,11 +1,11 @@
 ---
 title: Verwalten von Dynamic Media-Assets
-description: Informationen zum Arbeiten mit Dynamic Media-Assets
+description: Informationen zum Arbeiten mit Dynamic Media-Assets.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
