@@ -1,12 +1,12 @@
 ---
-title: Veröffentlichen von Dynamic Media-Assets
-description: Anleitung zum Veröffentlichen von Asset mit Dynamic Media
+title: 'Veröffentlichen von Dynamic Media-Assets '
+description: Hier erfahren Sie, wie Sie Dynamic Media-Assets veröffentlichen.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,7 @@ Siehe auch [Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-S
 >
 >* Assets müssen zunächst veröffentlicht werden, bevor Sie die URL verwenden können. Wenn Assets nicht veröffentlicht sind, können Sie die URL nicht kopieren und in einen Webbrowser einfügen.
 >* Bild- und Viewer-Vorgaben müssen für die Live-Bereitstellung aktiviert und veröffentlicht sein.
+
 >
 
 
