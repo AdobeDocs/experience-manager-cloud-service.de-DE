@@ -2,10 +2,10 @@
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 97%
+source-wordcount: '1045'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,18 @@ Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehende
 * Standardmäßig aktualisiert die Live Copy automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. Das **Launch-Datum** funktioniert allerdings nur in Kombination mit der Kennzeichnung **Produktionsbereit** (siehe [Bearbeiten einer Launch-Konfiguration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Damit die Aktionen automatisch erfolgen, muss beides festgelegt werden.
+
+>[!NOTE]
+>
+>Wenn Sie einen Start erstellen, sind Seiten, die höher oben in der Hierarchie liegen, keine Kopien der Quellseiten. Sie sind Platzhalter, die mit der Vorlage erstellt werden:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Diese Seiten können nicht bearbeitet werden. Die folgende Meldung wird angezeigt:
+>
+>* **Diese Seite ist nicht Teil des Starts. Gehe zu Produktions-Seite**
+
 
 ## Erstellen eines Launches {#creating-a-launch}
 
