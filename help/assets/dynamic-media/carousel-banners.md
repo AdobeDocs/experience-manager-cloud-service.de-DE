@@ -1,8 +1,8 @@
 ---
 title: Karussellbanner
-description: Informationen zum Arbeiten mit Karussellbannern in Dynamic Media
+description: Erfahren Sie, wie Sie mit Karussell-Bannern in Dynamic Media arbeiten.
 translation-type: tm+mt
-source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 99%
