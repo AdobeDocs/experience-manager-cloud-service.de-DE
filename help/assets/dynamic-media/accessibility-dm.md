@@ -1,27 +1,27 @@
 ---
 title: Barrierefreiheit in [!DNL Dynamic Media]
-description: Informationen zur Barrierefreiheit in Viewern für dynamische Medien und dynamische Medien
+description: Erfahren Sie mehr über Barrierefreiheit in Dynamic Media- und Dynamic Media-Viewern.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Barrierefreiheit in dynamischen Medien {#working-with-three-d-assets-dm}
+# Barrierefreiheit in Dynamic Media {#working-with-three-d-assets-dm}
 
-Dynamische Medien unterstützen Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
+Dynamic Media unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
 
-## Unterstützung der Barrierefreiheit von Tastaturen in dynamischen Medien
+## Barrierefreiheit über Tastaturen in Dynamic Media
 
-Da es sich bei dynamischen Medien um ein Plug-in für Experience Manager Assets handelt, ist das Verhalten der Tastatursteuerung im Wesentlichen mit dem von Experience Manager Assets identisch. Beispielsweise hat die Schaltfläche `Cancel` in dynamischen Medien dieselbe Fokushervorhebung wie in Experience Manager Assets und reagiert auf die Taste `Spacebar` wie in Experience Manager Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Da es sich bei Dynamic Media um ein Plug-in für Experience Manager Assets handelt, ist das Verhalten der Tastatursteuerung im Wesentlichen mit dem von Experience Manager Assets identisch. Beispielsweise hat die Schaltfläche `Cancel` in Dynamic Media dieselbe Fokushervorhebung wie in Experience Manager Assets und reagiert auf die Taste `Spacebar` wie in Experience Manager Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in dynamischen Medien unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu entdecken. Die Tastatursteuerung in dynamischen Medien umfasst Folgendes:
+Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in Dynamic Media unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu entdecken. Die Tastatursteuerung in Dynamic Media umfasst Folgendes:
 
 * Möglichkeit zur Verwendung von `Tab`- und `Shift+Tab`-Tastenanschlägen zum Navigieren zwischen interaktiven Elementen auf der Seite.
 Mithilfe von `Tab` wird der Eingabefokus auf das nächste Element der Benutzeroberfläche in der Tab-Reihenfolge weitergeleitet. Durch die Verwendung von `Shift+Tab` wird der Eingabefokus wieder auf das vorherige Element der Benutzeroberfläche zurückgesetzt.
@@ -44,20 +44,20 @@ Siehe [Bearbeiten des intelligenten Zuschnitts oder intelligenten Farbfelds eine
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Unterstützung von Technologien in dynamischen Medien {#assistive-technology=support-for-dm}
+## Unterstützung bei der Technologie in Dynamic Media {#assistive-technology=support-for-dm}
 
-Die Elemente der Benutzeroberfläche für dynamische Medien arbeiten mit Hilfstechnologien wie Bildschirmlesehilfen. Beispielsweise werden Landmarks auf einer Seite erkannt, wenn Sie mithilfe des Tastaturbefehls `D` oder mit dem Tastaturbefehl `R` durch Bereiche navigieren. Die Überschrift wird auch beim Navigieren mit dem Tastaturbefehl für Überschriften `H` erläutert.
+Die Elemente der Dynamic Media-Benutzeroberfläche arbeiten mit Hilfstechnologien wie Bildschirmlesehilfen. Beispielsweise werden Landmarks auf einer Seite erkannt, wenn Sie mithilfe des Tastaturbefehls `D` oder mit dem Tastaturbefehl `R` durch Bereiche navigieren. Die Überschrift wird auch beim Navigieren mit dem Tastaturbefehl für Überschriften `H` erläutert.
 
-## Unterstützung für die Barrierefreiheit von Tastaturen in Viewern für dynamische Medien {#keyboard-accessibility-for-dm-viewers}
+## Unterstützung für die Barrierefreiheit von Tastaturen in Dynamic Media-Viewern {#keyboard-accessibility-for-dm-viewers}
 
-Alle vordefinierten Komponenten von Dynamic Media Viewern unterstützen die Barrierefreiheit der Tastatur für Ihre Kunden.
+Alle vordefinierten Dynamic Media-Viewer-Komponenten unterstützen die Barrierefreiheit der Tastatur für Ihre Kunden.
 
-Siehe [Barrierefreiheit und Navigation](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Viewer-Referenzhandbuch für dynamische Medien.
+Siehe [Barrierefreiheit und Navigation](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) im Dynamic Media Viewer-Referenzhandbuch.
 
-## Unterstützung von Technologien in Viewern für dynamische Medien {#assistive-technology=support-for-dm-viewers}
+## Unterstützung von Technologien in Dynamic Media-Viewern {#assistive-technology=support-for-dm-viewers}
 
-Alle Dynamic Media Viewer-Komponenten unterstützen ARIA-Rollen und -Attribute (Accessible Rich Internet Applications), um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
-Weitere Informationen finden Sie im Hilfethema **Unterstützung bei der Hilfstechnologie** im Abschnitt zum Anpassen von Viewern im Referenzhandbuch für dynamische Medien. Siehe z. B. [Unterstützung bei der Hilfstechnologie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) für den Video-Viewer oder [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
+Alle Dynamic Media-Viewer-Komponenten unterstützen ARIA-Rollen und -Attribute (Accessible Rich Internet Applications), um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
+Weitere Informationen finden Sie im Hilfethema **Support für Hilfstechnologien** im Dynamic Media Viewer-Referenzhandbuch. Siehe z. B. [Unterstützung bei der Hilfstechnologie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) für den Video-Viewer oder [Unterstützung bei der Hilfstechnologie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
 
 >[!MORELIKETHIS]
 >
