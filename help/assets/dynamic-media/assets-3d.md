@@ -1,16 +1,14 @@
 ---
 title: Arbeiten mit 3D-Assets in Dynamic Media
-seo-title: Arbeiten mit 3D-Assets in Dynamic Media
-description: Erfahren Sie, wie Sie in Dynamic Media mit 3D-Assets arbeiten.
-seo-description: Erfahren Sie, wie Sie in Dynamic Media mit 3D-Assets arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit 3D-Assets arbeiten..
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 72bf52ca97b9c3cac84361207e53093fc69c0b43
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2270'
 ht-degree: 90%
 
 ---
@@ -47,7 +45,7 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, 3D-Assets in Dynamic Media einzurichten und schnell auszuführen.
 
-Bevor Sie mit 3D-Assets in dynamischen Medien arbeiten, stellen Sie sicher, dass Ihr Experience Manager-Administrator die Cloud Services für dynamische Medien bereits aktiviert und konfiguriert hat.
+Bevor Sie mit 3D-Assets in Dynamic Media arbeiten, stellen Sie sicher, dass Ihr Experience Manager-Administrator Dynamic Media-Cloud Services bereits aktiviert und konfiguriert hat.
 
 Informationen hierzu finden Sie unter [Konfigurieren der Cloud Services für Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -170,7 +168,7 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 
-Dynamische Medien enthalten eine 3D-Medienkomponente für dynamische Medien, die Sie auf Experience Manager-Sites verwenden können, um die interaktive Anzeige von 3D-Modellen auf Ihren Webseiten zu ermöglichen.
+Dynamic Media enthält eine Dynamic Media 3D-Medienkomponente, die Sie auf Experience Manager-Sites verwenden können, um die interaktive Anzeige von 3D-Modellen auf Ihren Webseiten zu ermöglichen.
 
 * [Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage](#adding-three-d-media-component-to-page-template)
 * [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-three-d-media-component-to-a-web-page)
@@ -200,7 +198,7 @@ Wenn Sie Adobe Experience Manager als Web Content Management-System verwenden, k
 
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-1. Öffnen Sie Experience Manager-Sites und wählen Sie die Webseite aus, der Sie die Komponente &quot;Dynamische Medien - 3D-Medien&quot;hinzufügen möchten.
+1. Öffnen Sie Experience Manager-Sites und wählen Sie die Webseite aus, der Sie die Dynamic Media 3D-Medienkomponente hinzufügen möchten.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]** (Stift), um die Seite im Seiteneditor zu öffnen. Stellen Sie sicher, dass rechts oben auf der Seite der **[!UICONTROL Bearbeitungsmodus]** ausgewählt ist.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -255,7 +253,7 @@ Siehe auch [Abrufen einer URL für ein statisches Asset](/help/assets/dynamic-me
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
-Wenn Sie Experience Manager als WCM verwenden, verwenden Sie diese Veröffentlichungsmethode, um die 3D-Elemente für dynamische Medien direkt auf Ihrer Webseite hinzuzufügen.
+Wenn Sie Experience Manager als WCM verwenden, verwenden Sie diese Veröffentlichungsmethode, um die Dynamic Media 3D-Elemente direkt auf Ihrer Webseite hinzuzufügen.
 
 Siehe auch [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -284,7 +282,7 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
 ### Alternative Methoden zum Veröffentlichen von Dynamic Media-3D-Assets mit dem Dimensional-Viewer {#alternate-publish-methods}
 
-Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamischen Medien-3D-Assets, wenn Sie *nicht* mit Experience Manager als WCM verwenden.
+Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamic Media 3D-Assets, wenn Sie *nicht* mit Experience Manager als WCM verwenden.
 
 * **[!UICONTROL URL]** – Verwenden Sie **[!UICONTROL URL]**, wenn Sie ein Drittanbieter-Web-Content-Management-System verwenden und mit dem Dimensional-Viewer Dynamic Media-3D-Assets mit Ihren Web-Seiten verknüpfen möchten.
 
