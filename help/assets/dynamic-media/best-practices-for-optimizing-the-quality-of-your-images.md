@@ -1,11 +1,11 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
-description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in Dynamic Media.
+description: Erfahren Sie, welche Best Practices Sie in Dynamic Media zur Optimierung der Qualität Ihrer Bild-Assets verwenden können.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1497'
+ht-degree: 98%
 
 ---
 
