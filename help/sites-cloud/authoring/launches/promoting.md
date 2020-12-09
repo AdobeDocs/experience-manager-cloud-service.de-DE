@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: 'Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 96%
+source-wordcount: '817'
+ht-degree: 91%
 
 ---
 
@@ -64,6 +64,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    * **Umfang**
       * **Vollständigen Launch bewerben**
       * **Geänderte Seiten bewerben**
+      * **Fördern Sie genehmigte Seiten**  - abhängig vom Genehmigungsvorgang.
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
 
@@ -75,7 +76,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
       >
       >Hier wird ein individueller Launch beschrieben. Informationen zu verschachtelten Launches finden Sie unter [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
 1. Klicken Sie auf **Weiter**, um den Vorgang fortzusetzen.
-1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
+1. Sie können die zu fördernden Seiten überprüfen. hängt davon ab, welchen Seitenbereich Sie ausgewählt haben:
 
    ![Weiterleitung überprüfen](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
    * **Umfang**: Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. In der Standardkonfiguration werden nur Seitenänderungen für die aktuelle Seite weitergeleitet:
       * **Vollständigen Launch bewerben**
       * **Geänderte Seiten bewerben**
+      * **Fördern Sie genehmigte Seiten**  - abhängig vom Genehmigungsvorgang.
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
 
