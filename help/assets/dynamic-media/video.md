@@ -1,8 +1,8 @@
 ---
 title: Video
-description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '10081'
 ht-degree: 97%
@@ -146,7 +146,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
 
-Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
 
 Sehen Sie das Beispiel für [Dynamische Videowiedergabe](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) an.
 
-Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) und [Viewer nur für AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) im [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Siehe auch [Viewer für AEM Assets und Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) und [Viewer nur für AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Best Practice: Verwenden des HTML5-Video-Viewers {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automa
 
 Indem Sie die Fähigkeiten, die Wiedergabekomponenten anhand von HTML5 und CSS zu entwerfen, eingebettete Wiedergabe zu ermöglichen und adaptives und progressives Streaming zu verwenden (je nach Browser-Funktionen), in einem einzelnen Player kombinieren, erreichen Sie mit Ihren Rich-Media-Inhalten mehr Desktop- und Mobilbenutzer und können für ein optimiertes Videoerlebnis sorgen.
 
-Siehe auch [Viewer nur für AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) im [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Siehe auch [Viewer nur für AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS ist ein Apple-Standard für adaptives Videostreaming, der die Wiedergabe aut
 
 Progressives Video wird bereitgestellt, indem das Video lokal auf ein Desktopsystem oder Mobilgerät eines Benutzers heruntergeladen und gespeichert wird.
 
-In der folgenden Tabelle sind die Geräte-, Browser- und Wiedergabemethoden von Videos auf Desktop-Computern und Mobilgeräten mit dem HTML5-Video-Viewer für dynamische Medien [beschrieben.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)
+In der folgenden Tabelle sind das Gerät, der Browser und die Wiedergabe von Videos auf Desktop-Computern und Mobilgeräten mit dem HTML5-Video-Viewer [Dynamic Media beschrieben.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video)
 
 <table>
  <tbody>
@@ -402,9 +402,9 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 3 |
+| Quelle | 1920 x 1080 | 1 | 1 |
 | Kodiert | 960 x 540 | 2 | 2 |
-| Kodiert | 640 x 360 | 3 | 1 |
+| Kodiert | 640 x 360 | 3 | 3 |
 | Kodiert | 480 x 270 | 4 | 4 |
 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
@@ -983,13 +983,13 @@ Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem HTML5-Viewer-SDK für dynamische Medien {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} erstellt haben
+### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} erstellt haben
 
-Wenn Sie einen vordefinierten Video-Viewer verwenden, der von dynamischen Medien bereitgestellt wird, oder wenn Sie eine benutzerdefinierte Viewer-Vorgabe basierend auf einem vordefinierten Video-Viewer erstellt haben, sind keine weiteren Schritte zur Ansicht von Videoberichten erforderlich. Wenn Sie jedoch Ihren eigenen Video-Viewer auf Grundlage des HTML5-Viewer-SDK für dynamische Medien erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an dynamische Medienvideoberichte sendet.
+Wenn Sie einen vordefinierten Video-Viewer verwenden, der von Dynamic Media bereitgestellt wird, oder wenn Sie eine benutzerdefinierte Viewer-Vorgabe basierend auf einem vordefinierten Video-Viewer erstellt haben, sind keine weiteren Schritte zur Ansicht von Videoberichten erforderlich. Wenn Sie jedoch Ihren eigenen Video-Viewer auf Grundlage des Dynamic Media HTML5 Viewer-SDK erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an Dynamic Media-Videoberichte sendet.
 
-Verwenden Sie die Dynamic Media Viewer-Referenz und das HTML5-Viewer-SDK für dynamische Medien, um eigene Video-Viewer zu erstellen.
+Verwenden Sie die Dynamic Media Viewer-Referenz und das Dynamic Media HTML5 Viewer-SDK, um eigene Video-Viewer zu erstellen.
 
-Siehe [Referenzhandbuch für Viewer für dynamische Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+Siehe [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 <!-- 
 
@@ -1001,7 +1001,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-**So erstellen Sie Videoberichte basierend auf einem Video-Viewer, den Sie mit dem HTML5-Viewer-SDK für dynamische Medien erstellt haben:**
+**So erstellen Sie Videoberichte basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer SDK erstellt haben:**
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
