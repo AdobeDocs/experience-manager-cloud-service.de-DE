@@ -2,9 +2,9 @@
 title: IP-Zulassungslisten-Status überprüfen
 description: IP-Zulassungslisten-Status überprüfen
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Die folgenden Statusdefinitionen werden in einer IP-Zulassungsliste angezeigt:
 
 * **Fehlgeschlagen**: Ein oder mehrere Vorgänge zum Anwenden oder Aufheben der Anwendung bei einer Aktualisierung sind fehlgeschlagen. Alle &quot;Anwenden&quot;und &quot;Rückgängig&quot;werden zusammen mit &quot;Abgeschlossen&quot;oder &quot;Fehlgeschlagen&quot;aufgelistet.
    * Der Status ist &quot;Fehlgeschlagen&quot;, auch wenn eine Anwendung/Aufhebung in der Aktualisierung fehlschlägt.
-   * Der Status &quot;Fehlgeschlagen&quot;bleibt bestehen, bis alle Fehler gelöscht wurden. Der Benutzer muss das Symbol &quot;Wiederholen&quot;neben dem Status auswählen, um den Fehler zu löschen.
+   * Der Status &quot;Fehlgeschlagen&quot;bleibt bestehen, bis alle Fehler gelöscht wurden. Der Benutzer muss das Symbol zum Wiederholen neben dem Status auswählen, um den Fehler zu löschen.
    * Der Benutzer kann die IP-Zulassungsliste nicht aktualisieren oder löschen, während der Status Fehlgeschlagen ist.
 
 * **Löschen**: Die Löschanforderung wird ausgeführt. Dies bedeutet, dass alle Dienste nicht angewendet werden. Jede Aufhebung wird zusammen mit &quot;Nicht gestartet/Wird ausgeführt/Abgeschlossen&quot;oder &quot;Fehlgeschlagen&quot;aufgeführt.
