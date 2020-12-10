@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 67%
+source-wordcount: '380'
+ht-degree: 66%
 
 ---
 
@@ -61,11 +61,11 @@ ht-degree: 67%
       + [Anzeigen und Aktualisieren eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [SSL-Zertifikat des benutzerdefinierten Domänennamens aktualisieren](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Löschen des benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + Verwalten der IP-Listen {#ip-allow-lists}
+   + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Anwenden der IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Anwenden einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Anwenden einer IP-Zulassungsliste aufheben](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
