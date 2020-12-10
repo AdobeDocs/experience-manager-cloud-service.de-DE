@@ -2,9 +2,9 @@
 title: SSL-Zertifikat hinzufügen - Verwalten von SSL-Zertifikaten
 description: SSL-Zertifikat hinzufügen - Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installi
 
 Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 
-1. PFX in PEM konvertieren
+* PFX in PEM konvertieren
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. P7B in PEM konvertieren
+* P7B in PEM konvertieren
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. DER in PEM konvertieren
+* DER in PEM konvertieren
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Wichtige Überlegungen {#important-considerations}
 
@@ -50,9 +50,11 @@ Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen:
 1. Klicken Sie im linken Navigationsmenü auf **SSL Certificates**. In diesem Bildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Klicken Sie auf die Schaltfläche **Hinzufügen Zertifikat**, um das Dialogfeld **Hinzufügen SSL-Zertifikat** zu öffnen.
+
+1. Klicken Sie auf **Hinzufügen SSL-Zertifikat**, um das Dialogfeld **Hinzufügen SSL-Zertifikat** zu öffnen.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Geben Sie unter **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dabei kann es sich um einen beliebigen Namen handeln, mit dem Sie Ihr Zertifikat leicht referenzieren können.
    1. Fügen Sie die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
 Alle drei Felder sind nicht optional und müssen einbezogen werden.
@@ -84,6 +86,4 @@ Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüss
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 
-Cloud Manager erwartet, dass das SSL-Zertifikat in Zukunft mindestens 90 Tage gültig sein wird
-
-Überprüfen Sie die Gültigkeit der Zertifikatskette.
+Cloud Manager erwartet, dass das SSL-Zertifikat in Zukunft mindestens 90 Tage gültig ist. Sie sollten die Gültigkeit der Zertifikatskette überprüfen.
