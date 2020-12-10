@@ -15,5 +15,5 @@ ht-degree: 100%
 # Sicherheit {#security}
 
 + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
-+ [Überblick über Sicherheit für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
++ [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [IMS-Unterstützung für AEM as a Cloud Service](ims-support.md)
