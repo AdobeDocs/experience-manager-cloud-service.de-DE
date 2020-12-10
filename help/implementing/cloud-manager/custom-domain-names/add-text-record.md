@@ -2,7 +2,7 @@
 title: Hinzufügen eines TXT-Datensatzes
 description: Hinzufügen eines benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie einen TXT-Datensatz erstellen:
 * Sie haben die Möglichkeit, die DNS-Einträge für die Domäne Ihres Unternehmens zu ändern, oder wenden Sie sich an die entsprechende Person, die dies kann.
 * Identifizieren Sie Ihren Domänenhost oder Ihre Registrierungsstelle, wenn Sie ihn noch nicht kennen.
 
-Wenn Sie die Domänenüberprüfung starten, gibt Ihnen Cloud Manager den Namen und den TXT-Wert, der zur Überprüfung verwendet werden soll. hinzufügen einen TXT-Datensatz mit dem angegebenen Namen und Wert an den DNS-Server Ihrer Domäne.
+Wenn Sie die Domänenüberprüfung starten, gibt Ihnen Cloud Manager den Namen und den TXT-Wert zur Überprüfung an. hinzufügen einen TXT-Datensatz mit dem angegebenen Namen und Wert an den DNS-Server Ihrer Domäne.
 
 1. Melden Sie sich bei Ihrem Domänenhost an und besuchen Sie den Abschnitt DNS-Datensätze.
 1. hinzufügen `_aemverification.[yourdomainname]` als Name und fügen Sie den TXT-Wert genau so hinzu, wie er angezeigt wird.
