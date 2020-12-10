@@ -5,21 +5,20 @@ translation-type: tm+mt
 source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Grundlegendes zu Benachrichtigungen {#notifications}
 
-[!UICONTROL Cloud Manager] ermöglicht es dem Benutzer, zu Beginn einer Produktionsbereitstellung Benachrichtigungen beim Start und beim Abschluss (erfolgreich oder nicht erfolgreich) der Produktions-Pipeline zu erhalten. Diese Benachrichtigungen werden über das Adobe [!UICONTROL Experience Cloud]-Benachrichtigungssystem gesendet.
+[!UICONTROL Cloud Manager] ermöglicht es dem Benutzer, zu Beginn einer Produktionsimplementierungen Benachrichtigungen beim Start und beim Abschluss (erfolgreich oder nicht erfolgreich) der Produktions-Pipeline zu erhalten. Diese Benachrichtigungen werden über das Adobe [!UICONTROL Experience Cloud]-Benachrichtigungssystem gesendet.
 
 >[!NOTE]
 >
->Die Genehmigung und geplanten Benachrichtigungen werden nur an Anwender mit den Rollen „Business Owner“, „Programmmanager“ und „Bereitstellungsmanager“ gesendet.
+>Die Genehmigung und geplanten Benachrichtigungen werden nur an Anwender mit den Rollen „Business Owner“, „Programm-Manager“ und „Implementierungs-Manager“ gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt.
-
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. 
 ![](assets/notify-1.png)
 
 Klicken Sie in der Kopfzeile auf das Glockensymbol, um die Seitenleiste zu öffnen und Benachrichtigungen anzuzeigen, wie in der Abbildung unten dargestellt:
@@ -38,4 +37,4 @@ Auf diese Weise gelangen Anwender zum Bildschirm „Benachrichtigungseinstellung
 Anwender können E-Mail-Benachrichtigungen aktivieren und (optional) die Typen von Benachrichtigungen auswählen, die sie per E-Mail erhalten möchten.
 
 >[!NOTE]
->Sie können auch die Option &quot;Digest&quot;aus der Adobe [!UICONTROL Experience Cloud] aktivieren.
+>Sie können auch eine Digest-Option in Adobe [!UICONTROL Experience Cloud] aktivieren.
