@@ -1,5 +1,5 @@
 ---
-title: 'Arbeiten mit Selektoren '
+title: Arbeiten mit Selektoren
 description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussell-Banner in Dynamic Media auswählen können.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
@@ -109,5 +109,4 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-asset
 
 1. Tippen Sie auf das Häkchen, um das Asset auszuwählen. Das Asset wird angezeigt.
 
-   ![chlimage_1-536](assets/chlimage_1-536.png)
--->
+   ![chlimage_1-536](assets/chlimage_1-536.png)-->
