@@ -2,7 +2,7 @@
 title: 'Anzeigen des Aktualisieren und Ersetzen eines SSL-Zertifikats - Verwalten von SSL '
 description: Anzeigen des Aktualisieren und Ersetzen eines SSL-Zertifikats - Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Wann werden diese Optionen in der Benutzeroberfläche von Cloud Manager verwende
 
 ## Aktualisierung eines SSL-Zertifikats zum Ablaufzeitpunkt {#update-ssl-certificate}
 
-Wenn ein Zertifikat abläuft, funktionieren Domänen, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Um ein abgelaufenes Zertifikat zu aktualisieren, müssen Sie die folgenden Schritte ausführen. Dadurch wird sichergestellt, dass Ihre Domäne weiterhin wie gewünscht funktioniert. Das Hinzufügen eines neuen Zertifikats erfordert die Aktualisierung des benutzerdefinierten Domänennamens mit dem neuen Zertifikat, bevor die Domänen wie gewünscht funktionieren. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+Wenn ein Zertifikat abläuft, funktionieren Domänen, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Um ein abgelaufenes Zertifikat zu aktualisieren, müssen Sie die folgenden Schritte ausführen. Dadurch wird sichergestellt, dass Ihre Domäne weiterhin wie gewünscht funktioniert. Das Hinzufügen eines neuen Zertifikats erfordert die Aktualisierung des benutzerdefinierten Domänennamens mit dem neuen Zertifikat, bevor die Domänen wie gewünscht funktionieren. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md).
 
 Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu aktualisieren:
 
