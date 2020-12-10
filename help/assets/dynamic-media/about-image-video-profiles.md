@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-Assets in einem Ordner erneut verarbeiten**:
-1. Navigieren Sie in Adobe Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Dynamischen Medien-Assets, dem ein Image-Profil oder ein Video-Profil zugewiesen wurde und für den Sie das Scene7 **anwenden möchten: Arbeitsablauf für Asset** erneut verarbeiten,
+1. Navigieren Sie in Adobe Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Dynamic Media-Assets, dem ein Image-Profil oder ein Video-Profil zugewiesen wurde und für den Sie das Scene7 **anwenden möchten: Arbeitsablauf für Asset** erneut verarbeiten,
 
    Bei Ordnern, denen bereits ein Bildprofil oder ein Videoprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
