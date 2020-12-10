@@ -2,7 +2,7 @@
 title: 'IP-Zulassungsliste aufheben '
 description: IP-Zulassungsliste aufheben
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Beim Anwenden einer IP-Zulassungsliste wird der gesamte IP-Bereich, der in der A
 
 Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
 
-1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Navigieren Sie auf der Seite **Umgebung** zur Detailseite der jeweiligen Umgebung und navigieren Sie zur IP-Zulassungsliste.
 1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste, die Sie aufheben möchten, aufgeführt ist.
 1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
-1. Wählen Sie die Option &quot;Anwendung aufheben&quot;und bestätigen Sie Ihre Übermittlung.
+1. Wählen Sie die Option **Unapply** und bestätigen Sie Ihre Übermittlung.
