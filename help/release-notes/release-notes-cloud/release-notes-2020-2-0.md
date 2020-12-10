@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für AEM as a Cloud Service 2020.2.0 {#release-notes}
 
-Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.2.0 beschrieben.
+Auf dieser Seite finden Sie die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.2.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
