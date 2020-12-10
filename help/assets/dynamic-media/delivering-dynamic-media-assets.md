@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Dynamic Media-Assets bereitstellen.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 91%
 
 ---
 
