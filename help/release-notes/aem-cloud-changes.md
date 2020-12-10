@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltu
 >[!NOTE]
 >In diesem Dokument werden die wesentlichen Änderungen an AEM als Ganzes hervorgehoben. Weitere Informationen und lösungsspezifische Änderungen finden Sie unter:
 >
->* [Einführung zu Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
 >* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
 >* [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
@@ -103,13 +103,13 @@ Die klassische Benutzeroberfläche ist in AEM Cloud Service nicht mehr verfügba
 
 ## Bereitstellung auf Publishing-Seite {#publish-side-delivery}
 
-HTTP-Beschleunigung einschließlich CDN und Traffic-Management für Autoren- und Veröffentlichungsdienste werden standardmäßig in AEM Cloud Service bereitgestellt.
+HTTP-Beschleunigung einschließlich CDN und Traffic-Management für Autoren- und Veröffentlichungs-Services werden standardmäßig in AEM Cloud Service bereitgestellt.
 
 Für den Projektübergang von AMS oder eine On-Premise-Installation empfiehlt Adobe dringend, das integrierte CDN zu nutzen, da die Funktionen in AEM Cloud Service für das bereitgestellte CDN optimiert sind.
 
 ## Asset-Handhabung und -Bereitstellung {#asset-handling}
 
-Asset-Uploads, -Behandlungen und -Downloads wurden in Assets als Cloud Service optimiert, um eine bessere Skalierung und schnellere Uploads und Downloads zu ermöglichen. Allerdings kann es Auswirkungen auf vorhandenen benutzerspezifischen Code geben.
+Asset-Uploads, -Handhabung und -Downloads wurden in Assets as a Cloud Service optimiert, um eine effizientere Skalierung und schnellere Uploads und Downloads zu ermöglichen. Allerdings kann es Auswirkungen auf vorhandenen benutzerspezifischen Code geben.
 
 * Der Standard-Workflow **DAM-Update-Asset** vorheriger AEM-Versionen ist nicht mehr verfügbar.
 * Website-Komponenten, die eine Binärdatei **ohne Umwandlung** bereitstellen, sollten den direkten Download verwenden.
