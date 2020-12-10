@@ -1,35 +1,36 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.11.0
-description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.11.0
+title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
+description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 32%
+source-wordcount: '128'
+ht-degree: 6%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.11.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.12.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.11.0 erläutert.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.12.0 erläutert.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.0 ist der 12. November 2020.
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.0 ist der 10. Dezember 2020.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
-### Neue Funktionen {#what-is-new}
+### Neuerungen {#what-is-new}
 
-* Eine neue Menüoption **Lokale Anmeldung** steht nun den Benutzern über die Menüoptionen auf der Umgebung und den Zusammenfassungsseiten der Umgebung zur Verfügung.
-Weitere Informationen finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+* Selbstbedienungs-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
+* Selbstbedienungs-Management von [IP Allow-Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-### Fehlerbehebungen {#bug-fixes-cloud-manager}
+* Die Detailseite **Umgebung** wurde aktualisiert und ermöglicht es Benutzern nun, benutzerdefinierte Domänennamen und IP-Listen auf ihren Umgebung zu verwalten.
 
-* Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plug-ins.
-* Über den Link in der Fußzeile von Cloud Manager zur Sprachauswahl wird jetzt an die richtige Stelle navigiert.
-* Manchmal startete der SonarQube-Prozess während des Code-Scannens nicht. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
-* Alle vorhandenen Produktionslinien werden automatisch mit dem Experience Audit-Schritt aktiviert.
+
+### Fehlerbehebungen {#bug-fixes}
+
+* Einige Fehler beim Scannen von Code, ohne Ergebnisse bereitzustellen, wurden behoben.
+
+* Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
