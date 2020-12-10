@@ -2,7 +2,7 @@
 title: Anzeigen und Aktualisieren - IP-Zulassungslisten im Konnektivitäts-Manager
 description: Anzeigen und Aktualisieren - IP-Zulassungslisten im Konnektivitäts-Manager
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Depl
 
 Gehen Sie wie folgt vor, um eine IP-Zulassungsliste zu aktualisieren:
 
-1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Seite &quot;IP-Zulassungsliste&quot;.
+1. Navigieren Sie zur Seite **IP-Zulassungslisten** im Bildschirm **Umgebung**.
 1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste, die Sie Ansicht/Aktualisierung vornehmen möchten, aufgeführt ist.
 1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
-1. Wählen Sie die Option &quot;Ansicht und Aktualisierung&quot;.
+1. Wählen Sie die Option **Ansicht und Aktualisieren**.
 1. Nehmen Sie Änderungen am Namen oder an den IPs vor und bestätigen Sie Ihre Übermittlung.
 
 ## Wichtige Überlegungen beim Hinzufügen, Aktualisieren oder Entfernen von IP-Zulassungslisten {#considerations}
@@ -41,4 +41,4 @@ Gehen Sie wie folgt vor, um eine IP-Zulassungsliste zu aktualisieren:
 * Wenn Sie einen IP-Bereich aus der IP-Zulassungsliste entfernen, wird die Anwendung automatisch von allen entsprechenden Umgebung-Diensten aufgehoben.
 * Aktualisierungen an einer IP-Zulassungsliste können nicht vorgenommen werden, solange eine vorherige Aktualisierung noch nicht abgeschlossen ist.
 * Eine IP-Zulassungsliste kann nicht aktualisiert werden, wenn Fehler aus einer vorherigen Aktualisierung vorliegen. Fehler müssen durch Wiederholung des Updates gelöscht werden.
-Weitere Informationen finden Sie unter IP-Zulassungsliste prüfen.
+Weitere Informationen finden Sie unter [IP-Zulassungsliste-Status](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) überprüfen.
