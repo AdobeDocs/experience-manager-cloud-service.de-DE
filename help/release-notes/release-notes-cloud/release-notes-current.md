@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -52,7 +52,7 @@ Dieses Tool richtet sich an Systemadministratoren, Berater oder Implementierungs
    * Wenn Sie eine Rasterzelle aus dem Raster auf der Seite auswählen, wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm angezeigt wird.
    * Visuelle Benutzer können zwischen normalem Text und einem Link unterscheiden, da visuelle Hinweise (Unterstreichung und Chevron-Symbol) für Links zu allen Lösungen in der [!DNL Experience Manager]-Startseite angezeigt werden.
 
-* **Stapelsatzvorgaben in dynamischen Medien**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bildsatz oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit Massenaufnahmen in einen Ordner hochladen.
+* **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bildsatz oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit Massenaufnahmen in einen Ordner hochladen.
 
    Siehe [Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -75,13 +75,13 @@ Dieses Tool richtet sich an Systemadministratoren, Berater oder Implementierungs
 
 * CIF Venia-Referenzseite - 2020.11.05, die die aktuellste CIF-Core-Komponenten Version v1.5.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
 
-* Version 1.5.0 der CIF-Kernkomponenten Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
+* Version 1.5.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
 * Die Konfiguration des GraphQL-Clients wurde nicht korrekt gelesen, wenn die Konfiguration nicht direkt in der Sling CA-Konfiguration, sondern in einer der übergeordneten Konfigurationen angegeben wurde. Das wurde behoben.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
@@ -90,7 +90,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht nun Benutzern über die Menüoptionen &quot;Umgebung&quot;auf den Zusammenfassungsseiten **Umgebung** und **Umgebung** zur Verfügung.
-Weitere Informationen finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md##login-locally).
 
 * Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
