@@ -2,9 +2,9 @@
 title: Einführung - Benutzerdefinierte Domänennamen
 description: Einführung - Benutzerdefinierte Domänennamen
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Mit Cloud Manager können Sie eine benutzerdefinierte Domäne hinzufügen, um Ih
 
 Auf der Seite &quot;Benutzeroberflächen-Domäneneinstellungen&quot;oder &quot;Umgebung-Details&quot;von Cloud Manager kann ein Benutzer mit Berechtigungen mehrere Aufgaben ausführen, um benutzerdefinierte Domänennamen für Ihre Umgebung zu verwalten, darunter:
 
-* Hinzufügen eines benutzerdefinierten Domänennamens
-* Anzeigen oder Aktualisieren eines benutzerdefinierten Domänennamens, der es dem Benutzer ermöglicht, Ansichten auszuführen oder ein demnächst ablaufendes Zertifikat zu ersetzen.
-* Löschen des benutzerdefinierten Domänennamens
+* [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [Anzeigen oder Aktualisieren eines benutzerdefinierten ](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) Domänennamens, der es dem Benutzer ermöglicht, Ansichten vorzunehmen oder ein demnächst ablaufendes Zertifikat zu ersetzen
+* [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
