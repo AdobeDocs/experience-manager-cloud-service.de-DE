@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Verfassen einer Seite für Mobilgeräte {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. [Durch ein responsives Layout werden Ihre Inhalte automatisch an das jeweilige Zielgerät angepasst, sodass Inhalte nicht speziell für bestimmte Geräte erstellt werden müssen.](/help/sites-cloud/authoring/features/responsive-layout.md)
+Adobe Experience Manager-Seiten basieren auf einem responsiven Layout. Durch ein [responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md) werden Ihre Inhalte automatisch an das jeweilige Zielgerät angepasst, sodass Inhalte nicht speziell für bestimmte Geräte erstellt werden müssen.
 
 Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um zu sehen, was der Endbenutzer sieht, wenn auf er die Seite zugreift.
 
