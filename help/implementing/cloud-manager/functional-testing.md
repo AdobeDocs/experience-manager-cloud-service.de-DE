@@ -1,11 +1,11 @@
 ---
-title: Funktionstests - Cloud Services
-description: Funktionstests - Cloud Services
+title: Funktionstests – Cloud Services
+description: Funktionstests – Cloud Services
 translation-type: tm+mt
 source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Funktionstests werden in zwei Typen eingeteilt:
 
 ## Funktionstests für das Produkt {#product-functional-testing}
 
-Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) zu den Kernfunktionen in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Anwendungscode bereitgestellt werden, wenn diese Kernfunktionalität nicht mehr funktioniert.
+Funktionstests für das Produkt sind eine Reihe stabiler HTTP-Integrationstests (ITs) rund um die Kernfunktionalität in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Anwendungs-Code bereitgestellt werden, wenn diese Kernfunktionalität verletzt wird.
 
-Produktfunktionstests werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt und nicht übersprungen werden kann.
+Funktionstests für das Produkt werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt, und können nicht übersprungen werden.
 
-Beispieltests finden Sie unter [Produktfunktionelle Tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke).
+Beispieltests finden Sie unter [Funktionstests für das Produkt](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke).
 
 ## Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
@@ -32,7 +32,7 @@ Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vor
 Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.
 
 >[!NOTE]
->Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugriff und Verwaltung von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
+>Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
 
 
 ### Schreiben von Funktionstests {#writing-functional-tests}
@@ -82,7 +82,7 @@ Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so k
 
 Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden.
 
-Bei der Durchführung dieser Tests müssen jedoch verschiedene Systemeigenschaften festgelegt werden, die von den aem-testing-clients (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
+Wenn diese Tests jedoch ausgeführt werden, müssen verschiedene Systemeigenschaften festgelegt werden, die von den aem-testing-clients (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
 
 Die Systemeigenschaften lauten wie folgt:
 
