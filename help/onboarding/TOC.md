@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 67%
+source-wordcount: '368'
+ht-degree: 66%
 
 ---
 
@@ -63,12 +63,12 @@ ht-degree: 67%
       + [Löschen des benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Verwalten der IP-Listen {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Hinzufügen einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Anzeigen und Aktualisieren einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Anwenden der IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Aufheben der Anwendung einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Löschen einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [IP-Allow-List-Status überprüfen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Anwenden der IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Anwenden einer IP-Zulassungsliste aufheben](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
       + [Aktuelle Versionshinweise (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Versionshinweise für 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
