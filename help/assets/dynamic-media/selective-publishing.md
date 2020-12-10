@@ -238,7 +238,7 @@ Optional können Sie diese Kontrollkästchen zusammen mit dem Suchprädikat **[!
    | Sofort oder <br>bei Aktivierung | Veröffentlichung rückgängig machen | AEM und Dynamic Media |
    | Sofort oder <br>bei Aktivierung | Veröffentlichung in Dynamic Media rückgängig machen | Kein |
    | Selektive Veröffentlichung | Veröffentlichung rückgängig machen | AEM |
-   | Selektive Veröffentlichung | Veröffentlichung in Dynamic Media rückgängig machen | Dynamische Medien |
+   | Selektive Veröffentlichung | Veröffentlichung in Dynamic Media rückgängig machen | Dynamic Media |
 
 1. Führen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten – Umfang]** einen der folgenden Schritte aus:
    * Wählen Sie ein oder mehrere Assets aus, die Sie aus der Veröffentlichung oder dem Rückgängigmachen der Veröffentlichung entfernen möchten.
