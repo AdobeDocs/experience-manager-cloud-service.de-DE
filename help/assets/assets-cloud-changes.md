@@ -24,7 +24,7 @@ Die Hauptunterschiede gegenüber Adobe Experience Manager 6.5 bestehen in den fo
 >
 >In diesem Dokument werden die wesentlichen Änderungen an AEM Assets aufgeführt. Allgemeine Änderungen an Experience Manager als [!DNL Cloud Service] und anderen Modulen finden Sie unter:
 >
->* [Einführung zu Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* [Einführung in Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
 >* Ein [Überblick über AEM als [!DNL Cloud Service] - Was ist neu und Was ist anders](/help/overview/what-is-new-and-different.md)
 >* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a [!DNL Cloud Service]
 >* [Wichtige Änderungen an AEM als [!DNL Cloud Service]  Versionshinweise](/help/release-notes/aem-cloud-changes.md)
