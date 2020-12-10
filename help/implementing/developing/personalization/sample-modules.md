@@ -1,63 +1,63 @@
 ---
-title: Mustertypen von ContextHub-Benutzeroberflächenmodulen
-description: ContextHub bietet mehrere Musterbenutzeroberflächenmodule, die Sie in Ihren Lösungen verwenden können
+title: Mustertypen von ContextHub-UI-Modulen
+description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Mustertypen von ContextHub-Benutzeroberflächenmodulen {#sample-contexthub-ui-module-types}
+# Mustertypen von ContextHub-UI-Modulen  {#sample-contexthub-ui-module-types}
 
-ContextHub bietet mehrere Musterbenutzeroberflächenmodule, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
+ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
 
-* Die Hauptfunktionen des Benutzeroberflächenmoduls.
-* Gibt an, wo der Quellcode zu finden ist, damit Sie ihn zum Lernen öffnen können.
-* So wird das Benutzeroberflächenmodul konfiguriert.
+* Die Hauptfunktionen des UI-Moduls.
+* Gibt an, wo der Quell-Code zu finden ist, damit Sie ihn zum Lernen öffnen können.
+* So wird das UI-Modul konfiguriert.
 
-Informationen zum Hinzufügen von Benutzeroberflächenmodulen zu ContextHub finden Sie unter [Hinzufügen eines Benutzeroberflächenmoduls](configuring-contexthub.md#adding-a-ui-module). Informationen zum Entwickeln von Benutzeroberflächenmodulen finden Sie unter [Erstellen von ContextHub-Benutzeroberflächenmodultypen](extending-contexthub.md#creating-contexthub-ui-module-types).
+Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hinzufügen eines UI-Moduls](configuring-contexthub.md#adding-a-ui-module). Informationen zum Entwickeln von UI-Modulen finden Sie unter [Erstellen von ContextHub-UI-Modultypen](extending-contexthub.md#creating-contexthub-ui-module-types).
 
-## Benutzeroberflächenmodultyp contexthub.base  {#contexthub-base-ui-module-type}
+## UI-Modultyp contexthub.base   {#contexthub-base-ui-module-type}
 
-Der Benutzeroberflächenmodultyp contexthub.base ist der Basistyp für alle anderen Benutzeroberflächenmodultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
+Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
 
 Die folgenden Eigenschaften sind verfügbar:
 
-* **Titel und Symbol:** Geben Sie einen Titel für das Benutzeroberflächenmodul und ein Symbol an. Das Symbol kann über eine URL oder über die Coral-Benutzeroberflächensymbolbibliothek referenziert werden.
+* **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Das Symbol kann über eine URL oder über die Coral-Benutzeroberflächensymbolbibliothek referenziert werden.
 * **Storedaten:** Identifizieren Sie einen oder mehrere Stores, von denen Daten abgerufen werden sollen.
-* **Inhalt:** Geben Sie den Inhalt an, der im Benutzeroberflächenmodul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
-* **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das Benutzeroberflächenmodul geklickt oder getippt wird.
+* **Inhalt:** Geben Sie den Inhalt an, der im UI-Modul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
+* **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
 * **Vollbildmodus:** Kontrollieren Sie, ob der Vollbildmodus erlaubt ist.
 
-Der Quellcode befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
+Der Quell-Code befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
 ### Konfiguration {#configuration}
 
-Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der Benutzeroberflächenmodulfunktionen hinzu:
+Konfigurieren Sie das UI-Modul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
 
-* **image:** Eine URL zu einem Bild, das als Symbol angezeigt wird.
-* **icon:** Der Name einer  [Coral UI-](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Ikonklasse. Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
-* **title:** Ein Titel für das UI-Modul. Der Titel wird angezeigt, wenn der Mauszeiger auf dem Benutzeroberflächenmodulsymbol platziert wird.
-* **fullscreen:** Ein boolescher Wert, der angibt, ob das UI-Modul den Vollbildmodus unterstützt. Verwenden Sie `true`, um den Vollbildmodus zu unterstützen, und `false`, um den Vollbildmodus zu verhindern.
-* **template:** Eine [Handlebars-Vorlage](https://handlebarsjs.com/), die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Verwenden Sie höchstens zwei `<p>`-Tags.
-* **storeMapping:** Ein Schlüssel-/Storediagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Speicherdaten zuzugreifen.
-* **liste:** Ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popup angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit folgenden Schlüsseln:
+* **image:** eine URL zu einem Bild, das als Symbol angezeigt werden soll.
+* **icon:** der Name einer [Coral-Benutzeroberflächensymbolklasse](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
+* **title:** ein Titel für das UI-Modul. Der Titel wird angezeigt, wenn der Mauszeiger auf dem UI-Modulsymbol platziert wird.
+* **fullscreen:** ein boolescher Wert, der angibt, ob das UI-Modul den Vollbildmodus unterstützt. Verwenden Sie `true`, um Vollbilder zu unterstützen, und `false`, um den Vollbildmodus zu verhindern.
+* **template:** Eine [Handlebars](https://handlebarsjs.com/)-Vorlage, die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Verwenden Sie höchstens zwei `<p>`-Tags.
+* **storeMapping:** Ein Schlüssel-/Store-Diagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Store-Daten zuzugreifen.
+* **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit folgenden Schlüsseln:
    * title: Der Text, der für diesen Artikel angezeigt werden soll
    * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
    * icon: (optional) Eine CUI-Symbolklasse, die auf der linken Seite angezeigt werden soll. wird ignoriert, wenn ein Bild angegeben wird
    * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
    * checkmark
-   * Kontrollkästchen 
+   * checkbox
    * radio
-* **popoverTemplate:** Eine Handlebars-Vorlage, die den Inhalt angibt, der im Popupfenster wiedergegeben wird, wenn auf das UI-Modul geklickt wird. Wenn Sie diesen Artikel einschließen, schließen Sie das `list`-Element nicht ein.
+* **popoverTemplate:** eine Handlebar-Vorlage, die den Inhalt angibt, der im Popover gerendert werden soll, wenn auf das UI-Modul geklickt wird. Wenn Sie dieses Element einschließen, schließen Sie das `list`-Element nicht ein.
 
 ### Beispiel {#example}
 
-Im folgenden Beispiel wird ein UI-Modul c`ontexthub.base` konfiguriert, um Informationen aus einem [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate)-Store anzuzeigen. Das `template`-Element veranschaulicht, wie Daten aus dem Store mithilfe des Schlüssels abgerufen werden, den das `storeMapping`-Element erstellt.
+Im folgenden Beispiel wird ein c`ontexthub.base`-UI-Modul zum Anzeigen von Informationen aus einem [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate)-Store konfiguriert. Das `template`-Element veranschaulicht, wie Daten aus dem Store mithilfe des Schlüssels abgerufen werden, den das `storeMapping`-Element erstellt.
 
 ```javascript
 {
@@ -72,17 +72,17 @@ Im folgenden Beispiel wird ein UI-Modul c`ontexthub.base` konfiguriert, um Infor
 
 ![contexthub.base-Modul](assets/base-module.png)
 
-## Benutzeroberflächenmodultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
+## UI-Modultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-Das Benutzeroberflächen-Modul `contexthub.browserinfo` zeigt Informationen zum Webbrowser und Betriebssystem des Clients an. Informationen werden vom Store „surferinfo“ bezogen, der auf dem Storekandidaten [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) basiert.
+Das UI-Modul `contexthub.browserinfo` zeigt Informationen über den Client-Webbrowser und das Betriebssystem an. Informationen werden vom Store „surferinfo“ bezogen, der auf dem Store-Kandidaten [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) basiert.
 
 ![contexthub.browserinfo-Modul](assets/browserinfo-module.png)
 
-Der Quellcode für das UI-Modul befindet sich unter `/libs/granite/contexthub/components/modules/browserinfo`. Auch wenn `contexthub.browserinfo` das UI-Modul `contexthub.base` erweitert, wird es nicht überschrieben oder stellt zusätzliche Funktionen bereit. Die Implementierung stellt eine Standardkonfiguration zum Rendern von Browserinformationen bereit.
+Der Quell-Code für das UI-Modul befindet sich unter `/libs/granite/contexthub/components/modules/browserinfo`. Obwohl `contexthub.browserinfo` das UI-Modul `contexthub.base` erweitert, werden keine zusätzlichen Funktionen überschrieben oder bereitgestellt. Die Implementierung stellt eine Standardkonfiguration zum Rendern von Browser-Informationen bereit.
 
 ### Konfiguration {#configuration-1}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.browserinfo benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
+Instanzen des UI-Moduls contexthub.browserinfo benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
 
 ```javascript
 {
@@ -93,19 +93,19 @@ Instanzen des Benutzeroberflächenmoduls contexthub.browserinfo benötigen keine
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.datetime   {#contexthub-datetime-ui-module-type}
+## UI-Modultyp contexthub.datetime   {#contexthub-datetime-ui-module-type}
 
-Das Modul `contexthub.datetime` der Benutzeroberfläche zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert werden, der auf dem `contexthub.datetime` Store-Kandidaten basiert.
+Das UI-Modul `contexthub.datetime` zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen „datetime“ gespeichert sind, der auf dem Store-Kandidaten `contexthub.datetime` basiert.
 
 ![contexthub.datetime-Modul](assets/datetime-module.png)
 
 Das Modul enthält ein Popover-Formular, mit dem Sie Datum und Uhrzeit im Store ändern können.
 
-Die Quelle des Benutzeroberflächenmoduls `contexthub.datetime` befindet sich unter `/libs/granite/contexthub/components/modules/datetime`.
+Die Quelle des UI-Moduls `contexthub.datetime` befindet sich unter `/libs/granite/contexthub/components/modules/datetime`.
 
 ### Konfiguration {#configuration-2}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.datetime benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
+Instanzen des UI-Moduls contexthub.datetime benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
 
 ```javascript
 {
@@ -118,9 +118,9 @@ Instanzen des Benutzeroberflächenmoduls contexthub.datetime benötigen keinen W
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.location {#contexthub-location-ui-module-type}
+## UI-Modultyp contexthub.location {#contexthub-location-ui-module-type}
 
-Das UI-Modul `contexthub.location` zeigt den Längen- und Breitengrad des Clients an. Das Modul bietet ein Popover mit einer Google-Karte, auf die Sie klicken können, um den aktuellen Standort zu ändern. Das Modul erhält Informationen von einem ContextHub-Store namens Geolocation, der auf dem Storekandidaten [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) basiert.
+Das UI-Modul `contexthub.location` zeigt den Längen- und Breitengrad des Clients an. Das Modul bietet ein Popover mit einer Google-Karte, auf die Sie klicken können, um den aktuellen Standort zu ändern. Das Modul erhält Informationen von einem ContextHub-Store namens Geolocation, der auf dem Store-Kandidaten [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) basiert.
 
 ![contexthub.location-Modul](assets/location-module.png)
 
@@ -128,7 +128,7 @@ Die Quelle des UI-Moduls befindet sich unter `/etc/cloudsettings/default/context
 
 ### Konfiguration {#configuration-4}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.location erfordern keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
+Instanzen des UI-Moduls contexthub.location erfordern keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
 
 ```javascript
 {
@@ -161,9 +161,9 @@ Instanzen des Benutzeroberflächenmoduls contexthub.location erfordern keinen We
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
+## UI-Modultyp contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
 
-Das UI-Modul `contexthub.screen-orientation` zeigt die aktuelle Bildschirmausrichtung des Clients an. Obwohl standardmäßig deaktiviert, bietet das Modul ein Popover, mit dem Sie eine Ausrichtung auswählen können. Das Modul erhält Informationen von einem ContextHub-Store namens Emulatoren, der auf dem Storekandidaten [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) basiert.
+Das UI-Modul `contexthub.screen-orientation` zeigt die aktuelle Bildschirmausrichtung des Clients an. Obwohl standardmäßig deaktiviert, bietet das Modul ein Popover, mit dem Sie eine Ausrichtung auswählen können. Das Modul erhält Informationen von einem ContextHub-Store namens „emulators“, der auf dem Store-Kandidaten [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) basiert.
 
 ![contexthub.screen-orientation-Modul](assets/screen-orientation-module.png)
 
@@ -171,7 +171,7 @@ Die Quelle des UI-Moduls befindet sich unter `/libs/granite/contexthub/component
 
 ### Konfiguration {#configuration-5}
 
-Instanzen des UI-Moduls `contexthub.screen-orientation` erfordern keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Beachten Sie, dass die Eigenschaft `clickable` standardmäßig `false` lautet. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` festzulegen, wird durch Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
+Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Beachten Sie, dass die `clickable`-Eigenschaft standardmäßig `false` ist. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` zu setzen, wird beim Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
 
 ```javascript
 {
@@ -185,9 +185,9 @@ Instanzen des UI-Moduls `contexthub.screen-orientation` erfordern keinen Wert f�
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
+## UI-Modultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens tagcloud ab, der auf dem der Storekandidat `contexthub.tagcloud` basiert.
+Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
 
 ![contexthub.tagcloud-Modul](assets/tagcloud-module.png)
 
@@ -195,7 +195,7 @@ Die Quelle des UI-Moduls befindet sich unter `/libs/granite/contexthub/component
 
 ### Konfiguration {#configuration-6}
 
-Instanzen des UI-Moduls `contexthub.tagcloud` erfordern keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
+Instanzen des UI-Moduls `contexthub.tagcloud` benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
 
 ```javascript
 {
@@ -209,17 +209,17 @@ Instanzen des UI-Moduls `contexthub.tagcloud` erfordern keinen Wert für die Det
 }
 ```
 
-## Benutzeroberflächenmodultyp granite.profile   {#granite-profile-ui-module-type}
+## UI-Modultyp granite.profile   {#granite-profile-ui-module-type}
 
-Das Modul `granite.profile` ContextHub-Benutzeroberfläche zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das Benutzeroberflächenmodul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Storekandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
 
-![granite.Profil-Modul](assets/profile-module.png)
+![granite.profile-Modul](assets/profile-module.png)
 
-Die Quelle des UI-Moduls ist `/libs/granite/contexthub/components/modules/profile`.
+Die Quelle des UI-Moduls befindet sich unter `/libs/granite/contexthub/components/modules/profile`.
 
 ### Konfiguration {#configuration-7}
 
-Instanzen des UI-Moduls `granite.profile` erfordern keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
+Instanzen des UI-Moduls `granite.profile` benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls.
 
 ```javascript
 {
