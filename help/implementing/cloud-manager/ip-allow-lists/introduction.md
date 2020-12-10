@@ -2,9 +2,9 @@
 title: Einführung - IP-Zulassungslisten im Konnektivitäts-Manager
 description: Einführung - IP-Zulassungslisten im Konnektivitäts-Manager
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM als Cloud-Dienst ist für das Internet zugänglich und die Sicherheit wird d
 IP-Zulassungslisten können ein- und mehrmals als Einheit oder Entität einem Autor- und/oder Publisher-Dienst in einer Umgebung hinzugefügt und angewendet/nicht angewendet werden.
 
 >[!NOTE]
->IP-Listen-Namen werden in Cloud Manager für den Autor- und/oder Veröffentlichungsdienst in einer Umgebung unterstützt.
+>IP-Zulassungslisten werden in Cloud Manager für den Autor- und/oder Veröffentlichungsdienst in einer Umgebung unterstützt.
 
 Auf der Seite &quot;IP-Zulassungsliste&quot;der Benutzeroberfläche von Cloud Manager oder auf der Seite &quot;Umgebung-Details&quot;kann ein Benutzer mit Berechtigungen mehrere Aufgaben zur Verwaltung von IP-Zulassungslisten für Ihre Umgebung ausführen, darunter:
 
