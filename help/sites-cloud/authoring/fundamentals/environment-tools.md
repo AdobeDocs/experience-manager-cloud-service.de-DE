@@ -16,7 +16,7 @@ Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisiere
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
-Die **Sites-Konsole** bietet Ihnen die Möglichkeit, auf Ihrer Website zu navigieren und diese zu verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Timeline und Verweise) zur Verfügung.
+Die **Sites-Konsole** bietet Ihnen die Möglichkeit, auf Ihrer Website zu navigieren und diese zu verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Zeitleiste und Verweise) zur Verfügung.
 
 Zum Beispiel in der Spaltenansicht:
 
@@ -24,7 +24,7 @@ Zum Beispiel in der Spaltenansicht:
 
 ## Bearbeiten des Seiteninhalts {#editing-page-content}
 
-Sie können eine Seite mit dem Seiten-Editor bearbeiten. Beispiel:
+Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -45,7 +45,7 @@ Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zu
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Komponenten-Browser   {#components-browser}
+## Komponenten-Browser  {#components-browser}
 
 Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um mit AEM Ihre Inhaltsseite zu erstellen.
 
@@ -123,7 +123,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 >[!NOTE]
 >
->Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser ](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser).
+>Dies ist für spezielle Assets und Komponententypen verfügbar. Weitere Einzelheiten finden Sie unter [Einfügen einer Komponente mit dem Asset-Browser](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser).
 
 In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriterien filtern:
 
@@ -159,7 +159,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Inhaltsstruktur        {#content-tree}
+## Inhaltsstruktur   {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -179,7 +179,7 @@ Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechen
 
 ![Pfeilerweiterung für Inhaltsstruktur ](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
-Durch Klicken auf die Komponente wird diese im Seiten-Editor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab:
+Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab:
 
 * Zum Beispiel bei einer einfachen Seite:
 
@@ -199,7 +199,7 @@ Durch Klicken auf die Komponente wird diese im Seiten-Editor markiert. Die verf�
 
 ## Fragmente: Browser für zugehörige Inhalte {#fragments-associated-content-browser}
 
-Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content). 
+Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Browser für zugehörige Inhalte](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content).
 
 ## Verweise {#references}
 
@@ -222,24 +222,24 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
 * „Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
 * „Blueprint“ bietet Details und verschiedene Aktionen. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
 * „Sprachkopien“ bietet Details und verschiedene Aktionen. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
-## Ereignisse: Timeline {#events-timeline}
+## Ereignisse: Zeitleiste {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Zeitleiste dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
-Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Timeline** wie folgt:
+Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
-![Option „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
+![Option „Zeitleiste“](/help/sites-cloud/authoring/assets/timeline.png)
 
 [Wählen Sie die gewünschte Ressource ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die auf die ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
 
-![Timeline-Details](/help/sites-cloud/authoring/assets/timeline-detail.png)
+![Zeitleisten-Details](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
 ## Seiteninformationen {#page-information}
 
@@ -261,7 +261,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi    {#page-modes}
+## Seitenmodi   {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -283,6 +283,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
