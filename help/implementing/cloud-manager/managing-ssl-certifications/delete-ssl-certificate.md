@@ -2,9 +2,9 @@
 title: Löschen eines SSL-Zertifikats - Verwalten von SSL-Zertifikaten
 description: Löschen eines SSL-Zertifikats - Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: 84c8204d257de4ecdee3728176f6d4ef545346f5
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >Das Entfernen von Zertifikaten aus Cloud Manager ist eine dauerhafte Aktion, die nicht rückgängig gemacht werden kann. Es empfiehlt sich, alle erforderlichen SSL-Dateien lokal zu speichern, bevor Sie sie in der Benutzeroberfläche von Cloud Manager löschen.
 
 >[!NOTE]
->Ein Benutzer muss sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befinden, um ein SSL-Zertifikat in Cloud Manager zu löschen. Cloud Manager erlaubt Ihnen nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domänen zugeordnet sind.  Alle verknüpften Domänen müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen zu diesem Thema finden Sie unter INSERT-LINK zum Löschen benutzerdefinierter Domänennamen.
+>Ein Benutzer muss sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befinden, um ein SSL-Zertifikat in Cloud Manager zu löschen. Cloud Manager erlaubt Ihnen nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domänen zugeordnet sind.  Alle verknüpften Domänen müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
 Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen:
 
