@@ -2,7 +2,7 @@
 title: Einführung - Verwalten von SSL-Zertifikaten
 description: Einführung - Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Einführung {#introduction}
 
-Cloud Manager bietet Kunden die Selbstbedienungsfunktion zum Installieren von SSL-Zertifikaten über die Cloud Manager-Benutzeroberfläche. Cloud Manager verwendet einen Platform TLS-Dienst, um SSL-Zertifikate und private Schlüssel zu verwalten, die Kunden gehören und die normalerweise von Zertifizierungsstellen von Drittanbietern bezogen werden, z. B. Let’s Encrypt.
+Cloud Manager bietet Kunden die Selbstbedienungsfunktion zum Installieren von SSL-Zertifikaten über die Cloud Manager-Benutzeroberfläche. Cloud Manager verwendet einen Plattform-TLS-Dienst zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und die üblicherweise von Zertifizierungsstellen von Drittanbietern bezogen werden, z. B. *Let&#39;s Encrypt*.
 
 ## Wichtige Überlegungen {#important-considerations}
 
