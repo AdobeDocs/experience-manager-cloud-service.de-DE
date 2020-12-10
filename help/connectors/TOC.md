@@ -16,5 +16,5 @@ ht-degree: 100%
 
 + [Implementieren von Connectoren für AEM as a Cloud Service](/help/connectors/home.md)
 + [Implementieren von AEM-Connectoren](implement.md)
-+ [Übermitteln von AEM-Connectoren](submit.md)
++ [Übermitteln eines AEM-Connectors](submit.md)
 + [Warten von AEM-Connectoren](maintain.md)
