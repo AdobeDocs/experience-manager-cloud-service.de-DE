@@ -5,52 +5,52 @@ translation-type: tm+mt
 source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 48%
+ht-degree: 80%
 
 ---
 
 
 # Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen finden Sie unter [Die Segmentierung](segmentation.md).
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Grundlagen zur Segmentierung](segmentation.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte bereitzustellen. Hier festgelegte [Aktivitäten](activities.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
+Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Hier festgelegte [Aktivitäten](activities.md) können auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
 
-AEM ermöglicht es Ihnen, die Benutzererfahrungen einfach zu personalisieren. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
+AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Außerdem können Sie damit die Ergebnisse Ihrer Segmentdefinitionen überprüfen.
 
 ## Zugriff auf Segmente {#accessing-segments}
 
-Die Konsole [Audiencen](audiences.md) wird zum Verwalten von Segmenten für ContextHub sowie von Audiencen für Ihr Adobe Target-Konto verwendet. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
+Die [Zielgruppen](audiences.md)-Konsole dient dazu, Segmente für ContextHub sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
 
 Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus.
 
-![Verwalten von Audiencen](../assets/contexthub-segmentation-audiences.png)
+![Verwalten von Zielgruppen](../assets/contexthub-segmentation-audiences.png)
 
-## Segment-Editor {#segment-editor}
+## Segmenteditor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-Mit dem **Segment-Editor** können Sie ein Segment einfach ändern. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segments. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der Liste von Segmenten aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
-![Segment-Editor](../assets/contexthub-segment-editor.png)
+![Segmenteditor](../assets/contexthub-segment-editor.png)
 
-Mithilfe des Komponenten-Browsers können Sie **AND**- und **OR**-Container hinzufügen, um die Segmentlogik zu definieren, und dann zusätzliche Komponenten hinzufügen, um Eigenschaften und Werte zu vergleichen oder Referenzskripte und andere Segmente zu definieren, um die Auswahlkriterien zu definieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das genaue Szenario für die Segmentauswahl zu definieren.
+Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Steigerungsfaktor finden Sie unter [Erstellen eines neuen Segments](#creating-a-new-segment).
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Unter [Erstellen eines neuen Segments](#creating-a-new-segment) finden Sie weitere Details zum Faktor „Verstärken“.
 
 >[!CAUTION]
 >
->Der Segment-Editor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine kreisförmigen Verweise enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden von AND- und ODER-Containern](#using-and-and-or-containers).
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) erhalten Sie weitere Informationen.
 
 |  |  |
 |---|---|
-| UND-Container | Der boolesche AND-Operator |
-| ODER-Container | Der boolesche OR-Operator |
+| UND-Container | Der boolesche UND-Operator |
+| ODER-Container | Der boolesche ODER-Operator |
 
 ### Vergleiche {#comparisons}
 
@@ -58,21 +58,21 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 
 |  |  |
 |---|---|
-| property-value | Vergleicht eine Eigenschaft eines Stores mit einem definierten Wert |
-| property-property | Vergleicht eine Eigenschaft eines Stores mit einer anderen Eigenschaft |
-| Eigenschafts-/Segmentreferenz | Vergleicht eine Eigenschaft eines Stores mit einem anderen referenzierten Segment |
-| PropertyScript-Referenz | Vergleicht eine Eigenschaft eines Stores mit den Ergebnissen eines Skripts |
-| Segmentreferenz - Skriptreferenz | Vergleicht ein referenziertes Segment mit den Ergebnissen eines Skripts |
+| Eigenschaft-Wert | Vergleicht eine Eigenschaft eines Geschäfts mit einem definierten Wert |
+| Eigenschaft-Eigenschaft | Vergleicht eine Eigenschaft eines Geschäfts mit einer anderen Eigenschaft |
+| Eigenschaft-Segment-Referenz | Vergleicht eine Eigenschaft eines Geschäfts mit einem anderen referenzierten Segment |
+| Eigenschaft-Skript-Referenz | Vergleicht eine Eigenschaft eines Geschäfts mit den Ergebnissen eines Skripts |
+| Segment-Referenz-Skript-Referenz | Vergleicht ein referenziertes Segment mit den Ergebnissen eines Skripts |
 
 >[!NOTE]
 >
->Wenn beim Vergleich von Werten der Datentyp des Vergleichs nicht festgelegt ist (d. h. automatisch erkannt wird), vergleicht die ContextHub-Segmentierungsengine die Werte einfach wie JavaScript. Sie verteilt keine Werte an die erwarteten Typen, was zu irreführenden Ergebnissen führen kann. Beispiel:
+>Ist der Datentyp beim Vergleich von Werten nicht festgesetzt (d. h. auf „auto detect“ eingestellt), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach auf die Art und Weise, wie auch JavaScript es tun würde. Sie verteilt keine Werte an die erwarteten Typen, was zu irreführenden Ergebnissen führen kann. Beispiel:
 >
 >`null < 30 // will return true`
 >
->Daher sollten Sie beim Erstellen eines Segments [ einen **Datentyp** auswählen, sobald die Typen der verglichenen Werte bekannt sind. ](#creating-a-new-segment) Beispiel:
+>Daher sollten Sie beim [Erstellen eines Segments](#creating-a-new-segment) immer einen **Datentyp** auswählen, wenn die Typen der verglichenen Werte bekannt sind. Beispiel:
 >
->Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der Vergleichstyp **number** ist. Wenn `profile/age` also nicht eingestellt ist, gibt ein Vergleich `profile/age` weniger als 30 **false** zurück, wie Sie erwarten würden.
+>Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der verglichene Typ **number** sein wird. Selbst wenn `profile/age` nicht festgelegt ist, wird ein Vergleich von `profile/age` unter 30 wie erwartet **false** ergeben.
 
 ### Verweise {#references}
 
@@ -80,8 +80,8 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 |  |  |
 |---|---|
-| Segment-Verweis | Bewerten Sie das referenzierte Segment |
-| Skript-Referenz | Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt [Skriptverweise](#using-script-references) verwenden. |
+| Segment-Referenz | Bewerten Sie das referenzierte Segment. |
+| Skript-Referenz | Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden von Skript-Referenzen](#using-script-references). |
 
 ## Erstellen eines neuen Segments {#creating-a-new-segment}
 
@@ -91,36 +91,36 @@ So legen Sie Ihr neues Segment fest:
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie **ContextHub-Segment** erstellen.
 
-   ![hinzufügen](../assets/contexthub-create-segment.png)
+   ![Segment hinzufügen](../assets/contexthub-create-segment.png)
 
 1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
 
    ![Neues Segment](../assets/contexthub-new-segment.png)
 
-   Jedes Segment verfügt über einen Boost-Parameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
+   Jedes Segment verfügt über einen Verstärkungsparameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Bearbeiten Sie in der Segmentkonsole Ihr neu erstelltes Segment, um es im Segment-Editor zu öffnen.
-1. Ziehen Sie einen Vergleich oder Verweis in den Segment-Editor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
-1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel testen wir Menschen in Basel.
+1. Bearbeiten Sie in der Segment-Konsole Ihr neu erstelltes Segment, um es im Segmenteditor zu öffnen.
+1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
+1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
 
-   ![Tests für Menschen in Basel](../assets/contexthub-comparing-property-value.png)
+   ![Prüfungen für Personen in Basel](../assets/contexthub-comparing-property-value.png)
 
    Legen Sie möglichst immer einen **Datentyp** fest, um die ordnungsgemäße Bewertung Ihrer Vergleiche sicherzustellen. Weitere Informationen finden Sie unter [Vergleiche](#comparisons).
 
 1. Klicken Sie auf **Fertig**, um Ihre Definition zu speichern:
-1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) weiter unten). Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
-* Die oberste Ebene der Definition ist immer der UND-Container, der ursprünglich erstellt wurde. Dies kann nicht geändert werden, hat aber keine Auswirkungen auf den Rest Ihrer Segmentdefinition.
+* Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
 * Stellen Sie sicher, dass die Verschachtelung Ihrer Container Sinn ergibt. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
-Im folgenden Beispiel werden Besucher ausgewählt, die in unserer Schweizer Zielpopulation berücksichtigt werden:
+Das folgende Beispiel wird zur Auswahl von Besuchern verwendet, die zu unserer schweizerischen Zielgruppe gehören:
 
 ```text
  People in Basel
@@ -130,7 +130,7 @@ Im folgenden Beispiel werden Besucher ausgewählt, die in unserer Schweizer Ziel
  People in Zürich
 ```
 
-Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers können Sie die Eigenschaften- oder Referenzkomponenten hinzufügen.
+Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßigen UND-Containers zu platzieren. Innerhalb des ODER-Containers können Sie die Eigenschafts- oder Referenzkomponenten hinzufügen.
 
 ![Segment mit ODER-Operator](../assets/contexthub-or-operator.png)
 
@@ -140,9 +140,9 @@ Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis  {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis   {#defining-a-script-to-reference}
 
-1. hinzufügen Datei in `contexthub.segment-engine.scripts` clientlib.
+1. Fügen Sie die Datei zur clientlib `contexthub.segment-engine.scripts` hinzu.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
 
    ```javascript
@@ -174,9 +174,9 @@ Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segm
    })();
    ```
 
-1. Registrieren Sie das Skript mit `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Registrieren Sie das Skript bei `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
+Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -257,7 +257,7 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
 >
 > Es ist nicht möglich, ein Segment von einem Ordner in einen anderen zu verschieben.
 
-## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md) getestet werden.**
 
@@ -268,11 +268,11 @@ Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe
 
 Beispielsweise basiert unsere einfache Segmentdefinition zur Identifizierung von Benutzern in Basel auf dem Standort des Benutzers. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
 
-![Segment, das aufgelöst wird](../assets/contexthub-segment-resolve.png)
+![Segment, das aufgelöst wurde](../assets/contexthub-segment-resolve.png)
 
 Oder ob es nicht aufgelöst wurde:
 
-![Segment, das nicht aufgelöst wird](../assets/contexthub-segment-doesnt-resolve.png)
+![Segment, das nicht aufgelöst wurde](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
@@ -280,12 +280,12 @@ Oder ob es nicht aufgelöst wurde:
 
 Solche Tests können auch zu Inhaltsseiten und in Kombination mit gezieltem Inhalt und damit verbundenen **Aktivitäten** und **Erlebnissen** durchgeführt werden.
 
-Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment einfach mit der Aktivität testen. Weitere Details zur Einrichtung einer Aktivität finden Sie in der entsprechenden [Dokumentation zur Bearbeitung gezielter Inhalte](targeted-content.md).
+Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Details zur Einrichtung einer Aktivität finden Sie in der entsprechenden [Dokumentation zur Bearbeitung gezielter Inhalte](targeted-content.md).
 
 1. Im Bearbeitungsmodus einer Seite, auf der Sie gezielte Inhalte eingerichtet haben, können Sie anhand des Pfeilsymbols auf dem Inhalt erkennen, dass es sich um gezielten Inhalt handelt.
 1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt.
 1. Wechseln Sie zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
 
-## Verwenden Ihres Segments  {#using-your-segment}
+## Verwenden Ihres Segments   {#using-your-segment}
 
-Segmente werden verwendet, um den tatsächlichen Inhalt zu steuern, der von bestimmten Audiencen der Zielgruppe gesehen wird. Weitere Informationen über die Verwendung von Audiencen und Segmenten zur Zielgruppe von Inhalten finden Sie unter [Verwalten von Audiencen](audiences.md) und [Erstellen von zielgerichteten Inhalten](targeted-content.md).
+Segmente dienen zur Steuerung des tatsächlichen Inhalts, der spezifischen Zielgruppen angezeigt wird. Unter [Verwalten von Zielgruppen](audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](targeted-content.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.
