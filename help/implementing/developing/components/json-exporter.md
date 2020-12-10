@@ -1,32 +1,32 @@
 ---
-title: JSON-Exporter für Content Services
-description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Webseiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Webseiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
+title: 'JSON-Exporter für Content Services '
+description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 translation-type: tm+mt
 source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
-# JSON-Exporter für Content Services {#json-exporter-for-content-services}
+# JSON-Exporter für Content Services  {#json-exporter-for-content-services}
 
-AEM Content Services wurden entwickelt, um die Beschreibung und den Versand von Inhalten in/von AEM jenseits des Fokus von Webseiten zu verallgemeinern.
+AEM Content Services sollen die Beschreibung und Bereitstellung von Inhalten in/aus AEM über den Fokus von Websites hinaus verallgemeinern.
 
-Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Webseiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
+Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
 
-* Einzelseiten-Webanwendungen
+* Single Page Applications
 * native Mobile Apps
-* Andere Kanal und Berührungspunkte außerhalb von AEM
+* Andere Kanäle und Touchpoints außerhalb von AEM
 
-Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON-Exporter verwenden, um den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitzustellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Über Inhaltsfragmente, die strukturierte Inhalte verwenden, können Sie Content Services zur Verfügung stellen, indem Sie die Inhalte mit JSON Exporter auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
+## JSON Exporter mit Inhaltsfragment-Kernkomponenten   {#json-exporter-with-content-fragment-core-components}
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-Innerhalb AEM Versands wird mithilfe der Selektoren `model` und `.json` erreicht.
+In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erweiterung.
 
 `.model.json`
 
@@ -56,7 +56,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
 * Inhalte der folgenden Art bereitgestellt:
 
-   ![JSON-Modell des WKND-Inhaltsfragments](assets/json-model-wknd-content-fragment.png)
+   ![JSON-Modell für WKND-Inhaltsfragmente](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
    >[!NOTE]
    >
-   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt, ](enabling-json-exporter.md#multiple-selectors), `model` muss jedoch die erste sein.
+   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](enabling-json-exporter.md#multiple-selectors) jedoch muss `model` der erste sein.
 
 ### Weiterführende Informationen {#further-information}
 
@@ -81,7 +81,7 @@ Siehe auch:
 
 Weitere Informationen finden Sie unter:
 
-* [Inhaltsfragmente im Benutzerhandbuch &quot;Assets&quot;](/help/assets/content-fragments/content-fragments.md)
+* [Inhaltsfragmente im Assets-Benutzerhandbuch](/help/assets/content-fragments/content-fragments.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html)
