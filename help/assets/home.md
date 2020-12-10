@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 38%
+ht-degree: 40%
 
 ---
 
@@ -16,17 +16,17 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Asset
 
 ## Wichtige Artikel zu Assets {#key-articles}
 
-* [Übersicht und neue Funktionen](overview.md)
-* [Wichtige Änderungen](/help/assets/assets-cloud-changes.md)
+* [Überblick und neue Funktionen](overview.md)
+* [Wesentliche Änderungen](/help/assets/assets-cloud-changes.md)
 * [Architektur von Assets als [!DNL Cloud Service]](architecture.md)
-* [Übersicht über Asset-Microservices](/help/assets/asset-microservices-overview.md)
+* [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
 
 ## Handbücher für Experience Manager {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager als  [!DNL Cloud Service] Startseite](/help/landing/home.md) | Vollständige Dokumentation des Experience Managers als [!DNL Cloud Service]. |
-| [Übersicht](/help/overview/home.md) | Einführender Überblick und Glossar zu Experience Manager as a Cloud Service. |
+| [Überblick](/help/overview/home.md) | Einführender Überblick und Glossar zu Experience Manager as a Cloud Service. |
 | [Versionshinweise](/help/release-notes/home.md) | Versionshinweise, neue Funktionen, veraltete und entfernte Funktionen und bekannte Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieser Leitfaden bietet eine Einführung in die Kernkonzepte von Experience Manager als [!DNL Cloud Service], einschließlich der Architektur des neuen Dienstes. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a [!DNL Cloud Service]. |
@@ -36,7 +36,7 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Asset
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Anpassen, Entwickeln und Bereitstellen von Experience Manager as a [!DNL Cloud Service]. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Connectors als [!DNL Cloud Service] in Experience Manager integriert werden. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager als [!DNL Cloud Service], wie z.B. Indexierung und Wartungsarbeiten. |
-| [Commerce-Benutzerhandbuch](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework unter [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework unter [!DNL Experience Manager] als [!DNL Cloud Service]. |
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
