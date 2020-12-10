@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 89%
+source-wordcount: '1254'
+ht-degree: 63%
 
 ---
 
@@ -147,4 +147,45 @@ Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in **Umgebung** Karte, u
 Zusätzlich können Sie sich lokal über die Zusammenfassungsseite **Umgebung** anmelden.
 
 ![](assets/environ-login-locally-2.png)
+
+## Verwalten von benutzerdefinierten Domänennamen {#manage-cdn}
+
+Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailseite &quot;Umgebung&quot;.
+
+Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungsdienst ausgeführt werden:
+
+1. **Hinzufügen eines benutzerdefinierten Domänennamens**: Siehe  [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **Anzeigen und Aktualisieren des benutzerdefinierten Domänennamens**: Siehe  [Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen und SSL-Zertifikaten](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **Löschen des benutzerdefinierten Domänennamens**: Siehe  [Löschen von benutzerdefinierten Domänennamen und SSL-Zertifikaten](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## Verwalten der IP-Listen {#manage-ip-allow-lists}
+
+Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailseite &quot;Umgebung&quot;. Hier können Sie die folgenden Aktionen für den/die Veröffentlichungs- und/oder Autor-Dienst/Dienste für Ihre Umgebung durchführen.
+
+### Anwenden einer IP-Allow-List {#apply-ip-allow-list}
+
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
+
+>[!NOTE]
+>Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf einen Umgebung-Service angewendet werden kann. Weitere Informationen zu IP-Listen mit Zugriffsrechten in Cloud Manager finden Sie unter [Einführung in IP-Listen mit Zugriffsrechten unter Konnektivitäts-Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+Führen Sie dazu folgende Schritte durch:
+
+1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autor- oder Veröffentlichungsdienst auszuwählen, auf den Sie sie anwenden möchten.
+1. Wählen Sie dann Übernehmen und bestätigen Sie Ihre Übermittlung.
+
+### Aufheben der Anwendung einer IP-Allow-List {#unapply-ip-allow-list}
+
+Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Vorgang, bei dem alle IP-Bereiche, die in der Allow-List-Definition enthalten sind, von einem Autor-/Publisher-Dienst in einer Umgebung getrennt werden.  Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste aufheben zu können.
+
+Führen Sie dazu folgende Schritte durch:
+
+1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste, die Sie aufheben möchten, aufgeführt ist.
+1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
+1. Wählen Sie die Option &quot;Anwendung aufheben&quot;und bestätigen Sie Ihre Übermittlung.
+
 
