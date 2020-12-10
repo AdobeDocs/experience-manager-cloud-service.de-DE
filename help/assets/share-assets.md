@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -107,13 +107,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Herunterladen und Freigeben von Assets {#download-and-share-assets}
 
-Benutzer können die erforderlichen Assets herunterladen und diese außerhalb von [!DNL Experience Manager] freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
+Benutzer können benötigte Assets herunterladen und diese außerhalb von [!DNL Experience Manager] freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
 
 ## Freigeben von Assets für Kreativschaffende {#share-with-creatives}
 
 Marketing-Experten und Anwender aus der Branche können genehmigte Assets problemlos für ihre Kreativschaffenden freigeben.
 
-* **AEM-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Übersicht über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Die Kreativschaffenden können Assets direkt in Adobe InDesign, Adobe Illustrator und Adobe Photoshop suchen und verwenden.
 
@@ -129,7 +129,7 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 
 >[!NOTE]
 >
->Wenn Sie Links von Ihrer AEM-Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anforderungen bereitstellen. Blockieren Sie andere URLs, um den Schutz Ihrer AEM-Autoreninstanz sicherzustellen.
+>Wenn Sie Links von Ihrer AEM-Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anfragen bereitstellen. Blockieren Sie andere URLs, um den Schutz Ihrer AEM-Autoreninstanz sicherzustellen.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
