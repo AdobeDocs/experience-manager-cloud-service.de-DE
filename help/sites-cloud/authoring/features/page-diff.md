@@ -1,5 +1,5 @@
 ---
-title: 'Seitenvergleich  '
+title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 translation-type: tm+mt
 source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
@@ -10,7 +10,7 @@ ht-degree: 97%
 ---
 
 
-# Seitenvergleich   {#page-diff}
+# Seitenvergleich  {#page-diff}
 
 ## Einführung {#introduction}
 
@@ -35,7 +35,7 @@ Folgendes kann verglichen werden:
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden    {#presentation-of-differences}
+### Darstellung von Unterschieden   {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -44,7 +44,7 @@ Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede glei
 
 Wenn Sie z. B. Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die Vorversion auf der rechten Seite angezeigt.
 
-Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browserfensters angezeigt.
+Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
 ![Seitenvergleich der Versionen](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
@@ -55,7 +55,7 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 * Hellgrün – Komponente hinzugefügt
 * Rosa – Komponente entfernt
 
-**HTML-Änderungen** 
+**HTML-Änderungen**
 
 * Dunkelgrün – HTML hinzugefügt
 * Rot – HTML entfernt
@@ -64,7 +64,7 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden    {#fullscreen-and-exiting}
+### Vollbild und Beenden   {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
@@ -91,7 +91,7 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
 * Bei Zugriffskontrollen erstellt der Diff nicht die Richtlinie und Live-Kopierbeziehungen.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
-   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 >[!NOTE]
 >
@@ -99,4 +99,4 @@ In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwar
 
 >[!NOTE]
 >
->Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/implementing/developing/introduction/page-diff.md) zu dieser Funktion. 
+>Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/implementing/developing/introduction/page-diff.md) zu dieser Funktion.
