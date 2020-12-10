@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
 source-wordcount: '1895'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
 
 
 # Hinzufügen digitaler Assets zu Adobe Experience Manager {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabeformaten und anderen DAM (Digital Asset Management)-Diensten erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
+[!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
 Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager]-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager] Desktop-App, Upload- und Erfassungsskripten, die von Kunden erstellt werden, und automatisierte Erfassungsintegrationen, die als [!DNL Experience Manager]-Erweiterungen hinzugefügt werden.
 
@@ -20,7 +20,7 @@ Wir werden uns hier auf Upload-Methoden für Endbenutzer konzentrieren und Links
 
 Während Sie Binärdateien in [!DNL Experience Manager] hochladen und verwalten können, unterstützen die am häufigsten verwendeten Dateiformate zusätzliche Dienste wie Metadaten-Extraktion oder Vorschau-/Darstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
-Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabeformate oder Bildbearbeitungsdienste hinzuzufügen. Siehe [Prozesselemente beim Hochladen](#process-when-uploaded).
+Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabedarstellungen oder Bildbearbeitungs-Service hinzuzufügen. Siehe [Prozesselemente beim Hochladen](#process-when-uploaded).
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das letzte hochgelad
 
 >[!NOTE]
 >
->Informationen zum Hochladen verschachtelter Ordnerhierarchien finden Sie unter [Massen-Upload-Assets](#bulk-upload).
+>Informationen zum Hochladen verschachtelter Ordnerhierarchien finden Sie unter [Massen-Upload von Assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -183,7 +183,7 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 
 Neben der Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Manager] auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] bietet den Zugriff auf Assets aus in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) bietet den Zugriff auf Assets aus [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Anwendungen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Anwendungen in [!DNL Experience Manager] hochladen.
 * [[!DNL Experience Manager] Desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder der nativen Anwendung, die diese verarbeitet. Es ist besonders nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browserupload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Verarbeiten von Assets beim Hochladen von {#process-when-uploaded}
@@ -194,13 +194,13 @@ Um die hochgeladenen Assets weiter zu verarbeiten, können Sie Verarbeitungsordn
 
 Die folgenden Registerkarten stehen zur Verfügung:
 
-* [Mit Metadaten-](metadata-profiles.md) Profilen können Sie Standardmetadateneigenschaften auf Assets anwenden, die in diesen Ordner hochgeladen wurden
-* [Bei der Verarbeitung ](asset-microservices-configure-and-use.md) von Profilen können Sie mehr Darstellungen generieren, als standardmäßig möglich sind.
+* Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
+* Mit [Verarbeitungsprofilen](asset-microservices-configure-and-use.md) können Sie mehr Ausgabedarstellungen generieren, als standardmäßig möglich sind.
 
 Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerdem die folgenden Registerkarten zur Verfügung:
 
-* [Mit ](dynamic-media/image-profiles.md) Profilen für dynamische Medienbilder können Sie bestimmte Zuschnitten (**[!UICONTROL Smart-]** Zuschneiden und Pixelzuschneiden) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* [Mit Dynamic Media-Video-](dynamic-media/video-profiles.md) Profilen können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
+* Mit [Dynamic Media-Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* Mit [Dynamic Media-Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
