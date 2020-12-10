@@ -1,6 +1,6 @@
 ---
 sub-product: Adobe Experience Manager Assets as a Cloud Service
-user-guide-title: Anleitung zu Assets as a Cloud Service
+user-guide-title: Handbuch zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
@@ -8,12 +8,12 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 80%
+ht-degree: 87%
 
 ---
 
 
-# [!DNL Assets] Guide {#assets}
+# [!DNL Assets]-Anleitung {#assets}
 
 + [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
@@ -21,7 +21,7 @@ ht-degree: 80%
 + [[!DNL Assets] Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
-+ [Zugänglichkeit in [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
 + Verwalten digitaler Assets {#manage}
    + [Freigeben von Assets](share-assets.md)
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
@@ -32,10 +32,10 @@ ht-degree: 80%
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Intelligente Tags für Video-Assets](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
-   + [Verwenden von  [!DNL Adobe Stock] Assets in AEM](aem-assets-adobe-stock.md)
+   + [Verwenden von  [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
-   + [Integrieren mit [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Integrieren mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Verwenden und Konfigurieren von Asset Insights](assets-insights.md)
@@ -47,14 +47,14 @@ ht-degree: 80%
    + [Digital Rights Management für Assets](drm.md)
    + [Wasserzeichen-Assets](watermark-assets.md)
 + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
-   + [Referenz zu Dokumenten und APIs für Entwickler](developer-reference-material-apis.md)
+   + [Verweise auf Entwicklerdokumente und APIs](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
-   + [Arbeiten mit Bild- und Video-Profilen](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Intelligente Tagging von Bildern konfigurieren](smart-tags-configuration.md)
-   + [Mehrsprachige Assets und Übersetzungen](translate-assets.md)
+   + [Mehrsprachige Assets und Übersetzung](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Assets-HTTP-API](mac-api-assets.md)
-   + [Unterstützung von Inhaltsfragmenten in der Asset-HTTP-API](content-fragments/assets-api-content-fragments.md)
+   + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
    + [AEM GraphQL API mit Inhaltsfragmenten - Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
@@ -64,8 +64,8 @@ ht-degree: 80%
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
 + Freigeben und Verteilen von Assets {#brand-portal}
-   + [ [!DNL Assets] Configurewith [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets auf [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Konfigurieren von [!DNL Assets] mit  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Kopfloser Versand mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
@@ -85,7 +85,7 @@ ht-degree: 80%
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
    + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
    + [Fehlerbehebung bei Dynamic Media](dynamic-media/troubleshoot-dm.md)
-   + [Barrierefreiheit in dynamischen Medien](dynamic-media/accessibility-dm.md)
+   + [Zugänglichkeit in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Best Practices für die Dateiverwaltung](dynamic-media/best-practices-for-file-management.md)
@@ -96,22 +96,22 @@ ht-degree: 80%
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
    + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
-   + [Bild-Sets](dynamic-media/image-sets.md)
+   + [Bildsets](dynamic-media/image-sets.md)
    + [Panoramabilder](dynamic-media/panoramic-images.md)
    + [Sets für gemischte Medien](dynamic-media/mixed-media-sets.md)
-   + [Rotations-Sets](dynamic-media/spin-sets.md)
+   + [Rotationssets](dynamic-media/spin-sets.md)
    + [Video](dynamic-media/video.md)
    + [Karussellbanner](dynamic-media/carousel-banners.md)
    + [Interaktive Bilder](dynamic-media/interactive-images.md)
    + [Interaktive Videos](dynamic-media/interactive-videos.md)
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](dynamic-media/launch.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform Launch](dynamic-media/launch.md)
    + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](dynamic-media/custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](dynamic-media/previewing-assets.md)
