@@ -4,9 +4,9 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '362'
 ht-degree: 67%
 
 ---
@@ -70,7 +70,8 @@ ht-degree: 67%
       + [Löschen einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP-Allow-List-Status überprüfen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
-      + [Aktuelle Versionshinweise (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Aktuelle Versionshinweise (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Versionshinweise für 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
       + [Versionshinweise für 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Versionshinweise für 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
       + [Versionshinweise für 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
