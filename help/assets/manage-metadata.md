@@ -1,13 +1,13 @@
 ---
-title: Metadaten für digitale Assets verwalten
+title: Verwalten von Metadaten für digitale Assets
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1850'
+ht-degree: 99%
 
 ---
 
@@ -142,15 +142,15 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >
    >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Benutzerspezifische Metadaten mit verarbeitendem Profil {#metadata-compute-service}
+## Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils {#metadata-compute-service}
 
-Assets als [!DNL Cloud Service] können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein verarbeitendes Profil, um benutzerdefinierte Metadaten zu generieren. Siehe [Verwendung von Profil](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets als [!DNL Cloud Service] können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein Verarbeitungsprofil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie Verarbeitungsprofile verwenden](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
-![Metadaten-Darstellung im verarbeitenden Profil](assets/processing-profile-metadata.png)
+![Metadaten-Ausgabedarstellung im Verarbeitungsprofil](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
->Es kann nur ein verarbeitendes Profil auf einen Ordner angewendet werden. Um mehrere Verarbeitungsschritte auf Assets in einem Profil anzuwenden, fügen Sie einem einzelnen Verarbeitungsordner weitere Optionen hinzu. Beispielsweise kann ein einzelnes Profil Darstellungen generieren, Assets transkodieren, benutzerdefinierte Metadaten generieren usw. Sie können MIME-Filter für jede Aufgabe anwenden, damit die entsprechende Aufgabe für das erforderliche Dateiformat ausgelöst wird.
+>Auf einen Ordner kann nur ein Verarbeitungsprofil angewendet werden. Fügen Sie einem einzelnen Verarbeitungsprofil weitere Optionen hinzu, um mehrere Verarbeitungsschritte auf Assets in einem Ordner anzuwenden. Ein einzelnes Profil kann beispielsweise Ausgabedarstellungen generieren, Assets umkodieren, benutzerdefinierte Metadaten generieren usw. Sie können für jede Aufgabe MIME-Filter anwenden, sodass die entsprechende Aufgabe für das erforderliche Dateiformat ausgelöst wird.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
