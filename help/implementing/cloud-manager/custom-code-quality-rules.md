@@ -91,7 +91,7 @@ public class DoThis implements Runnable {
 
 **Seit**: Version 2018.4.0
 
-Durch die Verwendung einer Formatzeichenfolge aus einer externen Quelle (z. B. einem Abfrageparameter oder benutzergenerierten Inhalten) kann eine Anwendung für Denial-of-Service-Angriffe anfällig werden. In einigen Situationen wird eine Formatzeichenfolge extern kontrolliert. In diesem Fall darf sie jedoch nur aus vertrauenswürdigen Quellen verwendet werden.
+Durch die Verwendung einer Formatzeichenfolge aus einer externen Quelle (z. B. einem Anbfrageparameter oder benutzergenerierten Inhalten) kann eine Anwendung für Denial-of-Service-Angriffe anfällig werden. In einigen Situationen wird eine Formatzeichenfolge extern kontrolliert. In diesem Fall darf sie jedoch nur aus vertrauenswürdigen Quellen verwendet werden.
 
 #### Nicht konformer Code {#non-compliant-code-1}
 
@@ -698,7 +698,7 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 **Seit**: Version 2020.5.0
 
-AEM-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen, um ein optimales Authoring-Erlebnis zu erzielen und mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, bei dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
+AEM-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen, um ein optimales Authoring-Erlebnis zu erzielen und mit dem Cloud Service-Implementierungsmodell kompatibel zu sein, bei dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
 
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche (d. h. einem untergeordneten Dialogfeldknoten) muss über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:dialog`-Knoten).
 * Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. einen Knoten „design_dialog“) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:design_dialog`-Knoten).
@@ -716,9 +716,9 @@ Die Dokumentation zu den AEM-Modernisierungs-Tools enthält Dokumentation und To
 
 **Seit**: Version 2020.5.0
 
-Um mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, müssen die einzelnen Inhaltspakete entweder Inhalte für die unveränderlichen Bereiche des Repositorys (`/apps and /libs, although /libs` sollte also nicht durch Kunden-Code geändert werden und einen separaten Verstoß verursachen) oder den veränderlichen Bereich (d. h. alles andere) enthalten, jedoch nicht beides. Beispielsweise ist ein Paket, das beide `/apps/myco/components/text and /etc/clientlibs/myco` enthält, nicht mit Cloud Service kompatibel und führt dazu, dass ein Problem gemeldet wird.
+Um mit dem Cloud Service-Implementierungsmodell kompatibel zu sein, müssen die einzelnen Inhaltspakete entweder Inhalte für die unveränderlichen Bereiche des Repositorys (`/apps and /libs, although /libs` sollte also nicht durch Kunden-Code geändert werden und einen separaten Verstoß verursachen) oder den veränderlichen Bereich (d. h. alles andere) enthalten, jedoch nicht beides. Beispielsweise ist ein Paket, das beide `/apps/myco/components/text and /etc/clientlibs/myco` enthält, nicht mit Cloud Service kompatibel und führt dazu, dass ein Problem gemeldet wird.
 
-Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
+Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
 
 ### Rückwärtsreplikations-Agenten sollten nicht verwendet werden {#oakpal-reverse-replication}
 
@@ -730,7 +730,7 @@ Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://docs.adobe.
 
 **Seit**: Version 2020.5.0
 
-Cloud Service-Bereitstellungen unterstützen keine Rückwärtsreplikation. Weitere Informationen finden Sie unter [Versionshinweisen: Entfernung von Replikations-Agenten](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+Cloud Service-Implementierungen unterstützen keine Rückwärtsreplikation. Weitere Informationen finden Sie unter [Versionshinweisen: Entfernung von Replikations-Agenten](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
