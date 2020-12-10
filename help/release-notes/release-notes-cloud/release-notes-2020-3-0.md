@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für AEM as a Cloud Service 2020.3.0 {#release-notes}
 
-Auf dieser Seite werden die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.3.0 beschrieben.
+Auf dieser Seite finden Sie die allgemeinen Versionshinweise für Experience Manager as a Cloud Service 2020.3.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -25,12 +25,12 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 ### Neuerungen {#what-is-new}
 
 * Das Protokoll für den Build-Schritt ist jetzt verfügbar, während der Build-Schritt ausgeführt wird.
-* Einige der Meldungen auf der Seite mit Details zur Pipelineausführung wurden für bessere Übersichtlichkeit geändert.
+* Einige der Meldungen auf der Seite mit Details zur Pipeline-Ausführung wurden für bessere Übersichtlichkeit geändert.
 
 ### Fehlerbehebungen {#bug-fixes}
 
 * Protokolldateien für die benutzerdefinierten und produktspezifischen Testschritte konnten nicht über die Benutzeroberfläche heruntergeladen werden.
-* Wenn das git-Repository für ein Cloud-Service-Programm nicht erstellt werden konnte, war bei Benutzern mit der Rolle „Bereitstellungs-Manager“ manchmal keine Wiederherstellung möglich.
+* Wenn das git-Repository für ein Cloud Service-Programm nicht erstellt werden konnte, war bei Benutzern mit der Rolle „Implementierungs-Manager“ manchmal keine Wiederherstellung möglich.
 * Bestimmte Benutzeraktivitäten während der Erstellung eines Sandbox-Programms konnten dazu führen, dass die Programmerstellung fehlschlug, bevor die produktionsfremde Pipeline erstellt wurde.
 * Die im Build-Schritt verwendete temporäre SonarQube-Instanz konnte gelegentlich nicht innerhalb des konfigurierten Timeouts gestartet werden.
 * Bei der gleichzeitigen Erstellung von Entwicklungsumgebungen im selben Cloud Service-Programm konnte es zu einer Bedingung kommen, bei der nur eine erfolgreich erstellt werden konnte.
