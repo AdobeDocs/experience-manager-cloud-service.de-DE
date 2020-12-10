@@ -2,9 +2,9 @@
 title: SSL-Zertifikat hinzufügen - Verwalten von SSL-Zertifikaten
 description: SSL-Zertifikat hinzufügen - Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM als Cloud Service akzeptiert nur OV-(Organisationsüberprüfung) oder EV-(erweiterte Validierung) Zertifikate. DV(Domain Validation)-Zertifikate werden nicht akzeptiert.
+>AEM als Cloud Service akzeptiert nur OV-(Organisationsüberprüfung) oder EV-(erweiterte Validierung) Zertifikate. DV(Domain Validation)-Zertifikate werden nicht akzeptiert. Darüber hinaus muss jedes Zertifikat ein X.509 TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel sein.
 
 Die Bereitstellung eines Zertifikats dauert einige Tage, und es wird empfohlen, das Zertifikat auch Monate im Voraus bereitzustellen. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) abrufen.
 
@@ -59,11 +59,12 @@ Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen:
    1. Fügen Sie die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
 Alle drei Felder sind nicht optional und müssen einbezogen werden.
 
+      >[!NOTE]
+      >Alle erkannten Fehler werden angezeigt. Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
+
 1. Klicken Sie auf **Speichern**, um das Zertifikat zu senden. Es wird als neue Zeile in der Tabelle angezeigt.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >Alle erkannten Fehler werden angezeigt. Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
 
 ## Zertifikatfehler {#certificate-errors}
 
