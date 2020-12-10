@@ -1,18 +1,18 @@
 ---
 title: Replikation
-description: Distribution und Fehlerbehebung bei der Replikation.
+description: Distribution  und Fehlerbehebung bei der Replikation.
 translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Replikation {#replication}
 
-Adobe Experience Manager als Cloud Service verwendet die Funktion [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html), um den Inhalt zu verschieben, um ihn in einen Pipelineservice zu replizieren, der auf Adobe I/O ausgeführt wird, der sich außerhalb der AEM Laufzeit befindet.
+Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html)-Funktion, um den zu replizierenden Inhalt in einen Pipeline-Service zu verschieben, der unter Adobe I/O außerhalb der AEM-Laufzeit ausgeführt wird.
 
 >[!NOTE]
 >
@@ -20,41 +20,41 @@ Adobe Experience Manager als Cloud Service verwendet die Funktion [Sling Content
 
 ## Methoden zum Veröffentlichen von Inhalten {#methods-of-publishing-content}
 
-### Schnelles Aufheben/Veröffentlichen - Geplante Aufhebung/Veröffentlichung {#publish-unpublish}
+### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
-Diese Standard-AEM-Funktionen für die Autoren ändern sich nicht mit AEM Cloud Service.
+Diese Standard-AEM-Funktionen für Autoren ändern sich mit AEM Cloud Service nicht.
 
-### An- und Ausschalten - Auslöserkonfiguration {#on-and-off-times-trigger-configuration}
+### Einschalt- und Ausschaltzeiten – Trigger-Konfiguration {#on-and-off-times-trigger-configuration}
 
-Die zusätzlichen Möglichkeiten von **On Time** und **Off Time** sind auf der Registerkarte [Einfach unter Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic) verfügbar.
+Die zusätzlichen Möglichkeiten für **Einschaltzeit** und **Ausschaltzeit** sind auf der [Registerkarte „Standard“ der Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic) verfügbar.
 
-Um die automatische Replizierung zu diesem Zweck zu realisieren, müssen Sie die Option **Automatische Replizierung** in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) **An-Aus-Auslöserkonfiguration** aktivieren:
+Um die entsprechende automatische Replikation zu realisieren, müssen Sie die **automatische Replikation** in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md) **Ein-Aus-Trigger-Konfiguration** aktivieren:
 
-![OSGi-On-Off-Auslöserkonfiguration](/help/operations/assets/replication-on-off-trigger.png)
+![OSGi-Ein-Aus-Trigger-Konfiguration](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Aktivieren eines Baumes {#tree-activation}
 
-So führen Sie eine Baumstruktur-Aktivierung durch:
+Aktivieren eines Baumes:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Distribution**
-2. Wählen Sie die Karte **forwardPublisher**
-3. Wählen Sie in der Benutzeroberfläche der Web-Konsole &quot;forwardPublisher&quot;die Option **Distribute**
+1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
+2. Wählen Sie die Karte **forwardPublisher** aus.
+3. Wählen Sie in der Benutzeroberfläche der forwardPublisher-Web-Konsole **Verteilen** aus.
 
-   ![](assets/distribute.png "DistributeDistribute")
-4. Wählen Sie den Pfad im Pfadbrowser aus, fügen Sie einen Knoten, eine Struktur oder löschen Sie ihn nach Bedarf und wählen Sie **Senden**
+   ![Verteilen](assets/distribute.png "Verteilen")
+4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
 
 ## Fehlerbehebung {#troubleshooting}
 
-Zur Fehlerbehebung bei der Replikation navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM Author-Dienstes:
+Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Autoren-Service:
 
-1. Navigieren Sie im Menü AEM Beginn zu **Tools > Bereitstellung > Distribution**
-2. Wählen Sie die Karte **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
-3. Überprüfen des Warteschlangenstatus, der grün sein sollte
-4. Sie können die Verbindung zum Replizierungsdienst testen
-5. Wählen Sie die Registerkarte **Protokolle**, auf der der Verlauf der Veröffentlichungen angezeigt wird.
+1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
+2. Wählen Sie die Karte **forwardPublisher** aus.
+   ![Status](assets/status.png "Status")
+3. Überprüfen des Warteschlangenstatus, der grün sein sollte.
+4. Sie können die Verbindung zum Replikations-Service testen.
+5. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird.
 
-![](assets/logs.png "LogsLogs")
+![Protokolle](assets/logs.png "Protokolle")
 
-Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM Publish-Dienst zurückgesetzt.
-In diesem Fall sollten die Warteschlangen überprüft werden, um festzustellen, welche Elemente die Löschung der Veröffentlichung verursacht haben. Wenn Sie auf eine Warteschlange mit einem roten Status klicken, wird die Warteschlange mit ausstehenden Elementen angezeigt, von der aus einzelne oder alle Elemente bei Bedarf gelöscht werden können.
+Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Veröffentlichungs-Service zurückgesetzt.
+In diesem Fall sollten die Warteschlangen überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf eine Warteschlange mit rotem Status klicken, wird die Warteschlange mit ausstehenden Elementen angezeigt, von der aus einzelne oder alle Elemente bei Bedarf gelöscht werden können.
