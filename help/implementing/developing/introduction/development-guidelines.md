@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
 source-wordcount: '2239'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit alte
 
 -->
 
-Wenn der Master im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um ihn zu erkennen.
+Wenn die Primärinstanz im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um sie zu erkennen.
 
 ## Status im Speicher {#state-in-memory}
 
@@ -32,7 +32,7 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
-Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Dienst gesendet werden.
+Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Service gesendet werden.
 
 ## Überwachung {#observation}
 
@@ -70,9 +70,9 @@ Der Code kann zur Laufzeit keine Binärdateien herunterladen oder ändern. Beisp
 
 ## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
-Auf Binärdateien sollte über das CDN zugegriffen werden, das Binärdateien außerhalb der AEM-Kerndienste bereitstellt.
+Auf Binärdateien sollte über das CDN zugegriffen werden, das Binärdateien außerhalb der AEM-Kern-Services bereitstellt.
 
-Verwenden Sie zum Beispiel nicht `asset.getOriginal().getStream()`, wodurch das Herunterladen einer Binärdatei auf den temporären Datenträger des AEM-Dienstes ausgelöst wird.
+Verwenden Sie zum Beispiel nicht `asset.getOriginal().getStream()`, wodurch das Herunterladen einer Binärdatei auf den temporären Datenträger des AEM-Service ausgelöst wird.
 
 ## Keine Rückwärtsreplikations-Agenten {#no-reverse-replication-agents}
 
@@ -86,13 +86,13 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien           im `/crx-quickstart/logs`-Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs`-Ordner geschrieben.
 
 In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGI-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu implementiert werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellst
 
 Kunden können auf CRXDE Lite in der Entwicklungs-Umgebung der Autorenebene zugreifen, jedoch nicht auf die Stufe oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungsdienst-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie auf [dieser Seite](/help/release-notes/home.md)
 
 Entwickler können Statusinformationen generieren und verschiedene Ressourcen auflösen.
 
-Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGI-Konfigurationen, Oak-Indizes, OSGI-Dienste und Sling-Jobs.
+Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGi-Konfigurationen, Oak-Indizes, OSGi-Services und Sling-Jobs.
 
 ![Entwicklerkonsole 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -160,10 +160,10 @@ Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen L
 
 ![Entwicklerkonsole 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungsdienste definiert werden, um Status-Dump-Daten von beiden Diensten anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
-### AEM Staging- und Produktionsdienst {#aem-staging-and-production-service}
+### AEM Staging- und Produktions-Service {#aem-staging-and-production-service}
 
 Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
 
@@ -177,7 +177,7 @@ Auf Anfrage stellt AEM as a Cloud Service eine dedizierte statische IP-Adresse f
 
 ### Vorteile {#benefits}
 
-Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service, die eine Zulassungsliste von IP-Adressen anbieten, erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud Service des Kunden in den externen Dienst fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
+Diese dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbietern (wie z. B. einem CRM-Anbieter) oder anderen Integrationen außerhalb von AEM as a Cloud Service, die eine Zulassungsliste von IP-Adressen anbieten, erhöhen. Durch Hinzufügen der dedizierten IP-Adresse zur Zulassungsliste wird sichergestellt, dass nur Traffic vom AEM Cloud Service des Kunden in den externen Service fließen darf. Dies geschieht zusätzlich zum Traffic von allen anderen zulässigen IPs.
 
 Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von IPs, die mit anderen Kunden gemeinsam genutzt werden.
 
@@ -205,51 +205,51 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Organisation und auf alle Umgebungen in jedem seiner Programme angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungsdienste.
+Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Organisation und auf alle Umgebungen in jedem seiner Programme angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungs-Services.
 
 Es werden nur HTTP- und HTTPS-Ports unterstützt. Dies schließt bei Verschlüsselung HTTP/1.1 sowie HTTP/2 ein.
 
 ### Überlegungen zum Debuggen {#debugging-considerations}
 
-Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debug-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
+Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Ziel-Service, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debug-Service wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
 
-## Senden der E-Mail {#sending-email}
+## Senden von E-Mails {#sending-email}
 
-AEM als Cloud Service erfordert die Verschlüsselung von ausgehenden Postsendungen. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und versenden.
+AEM as a Cloud Service erfordert die Verschlüsselung von ausgehenden E-Mails. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und senden.
 
-### Anfordernder Zugriff {#requesting-access}
+### Anfordern des Zugriffs {#requesting-access}
 
-Ausgehende E-Mails sind standardmäßig deaktiviert. Um es zu aktivieren, senden Sie ein Support-Ticket mit:
+Ausgehende E-Mails sind standardmäßig deaktiviert. Um sie zu aktivieren, senden Sie ein Support-Ticket mit:
 
-1. Der vollständig qualifizierte Domänenname für den E-Mail-Server (z. B. `smtp.sendgrid.net`)
-1. Der zu verwendende Anschluss. Es sollte Port 465 sein, wenn vom Mail-Server unterstützt, andernfalls Port 587 Beachten Sie, dass Port 587 nur verwendet werden kann, wenn der Mail-Server TLS an diesem Anschluss erfordert und erzwingt
-1. Programm-ID und Umgebung-ID für die Umgebung, von denen sie per E-Mail senden möchten
-1. Ob SMTP-Zugriff bei Autor, Veröffentlichung oder beidem erforderlich ist.
+1. dem vollständig qualifizierten Domain-Namen für den E-Mail-Server (z. B. `smtp.sendgrid.net`),
+1. dem zu verwendenden Port. Es sollte Port 465 sein, wenn er vom Mailserver unterstützt wird, andernfalls Port 587. Beachten Sie, dass Port 587 nur verwendet werden kann, wenn der Mailserver TLS für diesen Port erfordert und erzwingt,
+1. Programmkennung und Umgebungskennung für die Umgebungen, von denen sie E-Mail senden möchten,
+1. Ob SMTP-Zugriff für die Autoren-, Veröffentlichungs- oder beide Instanzen erforderlich ist.
 
 ### Senden von E-Mails {#sending-emails}
 
-Der Dienst [Day CQ Mail Service OSGI](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Supportanfrage angegebenen E-Mail-Server gesendet werden, anstatt direkt an Empfänger.
+Der [Day CQ-E-Mail-Service-OSGi-Service](https://docs.adobe.com/content/help/de/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
-AEM CS erfordert, dass Post über Port 465 gesendet wird. Wenn ein Mail-Server Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
+AEM CS erfordert, dass E-Mails über Port 465 gesendet werden. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
 >[!NOTE]
 >
->Beachten Sie, dass Adobe keine SMTP-Speicherung über eine eindeutige dedizierte IP-Adresse unterstützt.
+>Beachten Sie, dass Adobe keine SMTP-Regression über eine eindeutige dedizierte IP-Adresse unterstützt.
 
 ### Konfiguration {#email-configuration}
 
-E-Mails in AEM sollten mit dem Dienst [Day CQ Mail Service OSGi gesendet werden.](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html). Für AEM CS müssen die folgenden Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Dienst vorgenommen werden:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/de/experience-manager-65/administering/operations/notification.html). Für AEM CS müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service vorgenommen werden:
 
 Wenn Port 465 angefordert wurde:
 
-* `smtp.port` auf `465` setzen
-* `smtp.ssl` auf `true` setzen
-* `smtp.starttls` auf `false` setzen
+* `smtp.port` auf `465` festlegen
+* `smtp.ssl` auf `true` festlegen
+* `smtp.starttls` auf `false` festlegen
 
-Wenn Port 587 angefordert wurde (nur zulässig, wenn der E-Mail-Server Port 465 nicht unterstützt):
+Wenn Port 587 angefordert wurde (nur zulässig, wenn der Mailserver Port 465 nicht unterstützt):
 
-* `smtp.port` auf `587` setzen
-* `smtp.ssl` auf `false` setzen
-* `smtp.starttls` auf `true` setzen
+* `smtp.port` auf `587` festlegen
+* `smtp.ssl` auf `false` festlegen
+* `smtp.starttls` auf `true` festlegen
