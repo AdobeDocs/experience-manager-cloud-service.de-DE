@@ -49,7 +49,7 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | PSD | they | - | they | they |
 | XD | they | - | they | they |
 
-\* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe des Ausgabeformats durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um ein größeres Ausgabeformat einzubetten.
+\* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe der Ausgabedarstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um eine größere Ausgabedarstellung einzubetten.
 
 ## Bildformate {#image-formats}
 
@@ -68,14 +68,14 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
-| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | PNG | they | they | they | they | they |
 | GIF | they | they | they | they | they |
 | TIFF | they | they | they | they | they |
 | JPEG | they | they | they | they | they |
 | BMP | they | - | - | - | - |
-| PSD   ‡ | they | - | - | - | - |
+| PSD ‡ | they | - | - | - | - |
 | EPS | they | they | they | they | they |
 | PICT | they | - | - | - | - |
 
@@ -165,7 +165,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Dokumentenformate in [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischem Ausgabeformat anzeigen | Dynamisches Ausgabeformat bereitstellen | Dynamisches Ausgabeformat herunterladen |
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | they | - | - | - | - |
 | PDF | they | they | they | they | they |
