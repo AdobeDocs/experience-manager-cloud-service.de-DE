@@ -4,9 +4,9 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 68%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 68%
       + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [SSL-Zertifikat abrufen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Anzeigen und Aktualisieren oder Ersetzen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Anzeigen und Aktualisieren und Ersetzen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Überprüfen des Status eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Löschen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + Verwalten von benutzerdefinierten Domänennamen {#custom-domain-names}
