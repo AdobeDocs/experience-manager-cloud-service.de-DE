@@ -1,41 +1,41 @@
 ---
-title: Aktualisierungen der AEM-Version
-description: 'Aktualisierungen der AEM-Version '
+title: AEM-Versionsaktualisierungen
+description: 'AEM-Versionsaktualisierungen '
 translation-type: tm+mt
 source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
-# Aktualisierungen der AEM-Version {#aem-version-updates}
+# AEM-Versionsaktualisierungen {#aem-version-updates}
 
 ## Einführung {#introduction}
 
-AEM als Cloud Service verwendet jetzt Continuous Integration und Continuous Versand (CI/CD), um sicherzustellen, dass Ihre Projekte die aktuellste AEM Version aufweisen. Das bedeutet, dass Produktions- und Stage-Instanzen auf die neueste AEM aktualisiert werden, ohne dass der Dienst für Benutzer unterbrochen wird.
+AEM as a Cloud Service verwendet jetzt CI/CD (Continuous Integration und Continuous Delivery), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Service für Benutzer auf die aktuelle AEM-Version aktualisiert werden.
 
 >[!NOTE]
->Wenn die Aktualisierung der Produktions-Umgebung fehlschlägt, führt Cloud Manager automatisch eine Rollback-Umgebung durch. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss des Updates die Umgebung für die Phase und Produktion AEM gleichen Version sind.
+>Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager automatisch auf die Staging-Umgebung zurück. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss der Aktualisierung die Staging- und Produktionsumgebung auf derselben AEM-Version basieren.
 
-AEM Updates der Version umfassen zwei Typen:
+Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
-* **AEM Push-Updates**
+* **AEM-Push-Aktualisierungen**
 
-   * Kann täglich freigegeben werden.
+   * Können täglich veröffentlicht werden.
 
-   * Meistens Wartung, einschließlich der neuesten Fehlerbehebungen und Sicherheitsaktualisierungen.
+   * Vor allem zu Wartungszwecken, einschließlich der neuesten Fehlerkorrekturen und Sicherheitsaktualisierungen.
 
-      Da Änderungen regelmäßig vorgenommen werden, ist der Einfluss inkrementell, was die Auswirkungen auf Ihren Dienst verringert.
+      Da die Änderungen regelmäßig durchgeführt werden, sind die Auswirkungen inkrementell, was die Auswirkungen auf Ihren Service verringert.
 
-* **Neue Funktionen**
+* **Neue Funktionsaktualisierungen**
 
-   * Veröffentlicht über einen vorhersehbaren Monatszeitplan.
+   * Werden über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
 
-AEM Updates durchlaufen eine intensive und vollautomatisierte Produktvalidierungspipeline, die mehrere Schritte umfasst, um eine Unterbrechung des Service für alle in der Produktion befindlichen Systeme zu vermeiden. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen während eines AEM als Cloud Service-Update fehlschlagen, wird die Veröffentlichung nicht fortgesetzt und die Adobe wird prüfen, warum das Update zu diesem unerwarteten Verhalten geführt hat.
+AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Service für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
-[Produkttests und Funktionstests ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) des Kunden, die verhindern, dass Produktaktualisierungen und Kundencode-Push die Produktion unterbrechen, werden auch während einer AEM Aktualisierung der Version überprüft.
+[Produkttests und Kundenfunktionstests](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing), die verhindern, dass Produktaktualisierungen und Kunden-Codepushes die Produktion unterbrechen, werden ebenfalls während einer AEM-Versionsaktualisierung validiert.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ AEM Updates durchlaufen eine intensive und vollautomatisierte Produktvalidierung
 
 ## Composite Node Store {#composite-node-store}
 
-Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Rollierende Aktualisierungen sind möglich, da die Funktion *Composite Node Store* in Oak verfügbar ist.
+Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Dank der Funktion *Composite Node Store* in Oak sind rollierende Aktualisierungen möglich.
 
-Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue Green AEM-Version ihr eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren Blue AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf`, `/etc` und andere umfasst. Da sowohl die Blue- als auch die Green-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde. 
+Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue grüne AEM-Version ihr eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren blauen AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf`, `/etc` und andere umfasst. Da sowohl die Blau- als auch die Grün-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde.
 
