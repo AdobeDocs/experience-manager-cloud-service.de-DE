@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren der Kontoumgebung  '
+title: Konfigurieren der Kontoumgebung
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# Konfigurieren der Kontoumgebung   {#configuring-your-account-environment}
+# Konfigurieren der Kontoumgebung  {#configuring-your-account-environment}
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
-Mit der Option [Benutzer](#user-settings) in der [Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) und dem verbundenen Dialogfeld [Eigene Voreinstellungen](#my-preferences) können Sie Benutzeroptionen bearbeiten.
+Mit der Option [Benutzer](#user-settings) in der [Kopfzeile](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) und dem verbundenen Dialogfeld [Benutzereinstellungen](#my-preferences) können Sie Benutzeroptionen bearbeiten.
 
 Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](#user-settings) aufrufen.
 
@@ -22,22 +22,22 @@ Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](#user-settings) a
 
 Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
-* Stellvertretend agieren
-   * Mit der Funktion „Stellvertretend agieren“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+* Identität annehmen als
+   * Mit der Funktion „Identität annehmen als“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profil
    * Über das Profil können Sie bequem über einen Link auf Ihre Benutzereinstellungen zugreifen. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
-* [Eigene Voreinstellungen](#my-preferences)
+* [Benutzereinstellungen](#my-preferences)
    * Hier können verschiedene auf den jeweiligen Benutzer zugeschnittene Einstellungen festgelegt werden.
 
 ![Benutzereinstellungen](/help/sites-cloud/authoring/assets/user-settings.png)
 
-### Eigene Voreinstellungen {#my-preferences}
+### Benutzereinstellungen{#my-preferences}
 
-Auf das Dialogfeld **Eigene Voreinstellungen** kann über die Option [Benutzer](#user-settings) in der Kopfzeile zugegriffen werden.
+Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](#user-settings) in der Kopfzeile zugegriffen werden.
 
 Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
-![Eigene Voreinstellungen](/help/sites-cloud/authoring/assets/user-preferences.png)
+![Benutzereinstellungen](/help/sites-cloud/authoring/assets/user-preferences.png)
 
 * **Sprache**
 
@@ -94,4 +94,4 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Stock-Konfiguration**
 
-   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat. 
+   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat.
