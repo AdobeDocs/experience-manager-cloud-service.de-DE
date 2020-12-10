@@ -37,26 +37,26 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Wählen Sie **Timeline** und dann ein Projekt, um seine Timeline anzuzeigen.
+* Wählen Sie **Zeitleiste** und dann ein Projekt, um seine Zeitleiste anzuzeigen.
 * Klicken/tippen Sie auf **Auswählen**, um den Auswahlmodus zu aktivieren.
 * Klicken Sie auf **Erstellen**, um Projekte hinzuzufügen.
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln   {#project-tiles}
+## Projektkacheln  {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
 Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in den folgenden Abschnitten beschrieben:
 
 * Assets und Asset-Sammlungen
-* Erlebnisse  
+* Erlebnisse
 * Links
 * Projektinformationen
 * Team
-* Einstiegsseiten
+* Landing Pages
 * E-Mails
-* Workflows  
+* Workflows
 * Launches
 * Aufgaben
 
@@ -66,13 +66,13 @@ In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für e
 
 ![Assets-Kachel](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für dynamische Medien verfügen.
+Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für Dynamic Media verfügen.
 
 ![Bildset](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Asset-Sammlungen {#asset-collections}
 
-[Asset-Sammlungen](/help/assets/manage-collections.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“. 
+[Asset-Sammlungen](/help/assets/manage-collections.md) können Ihrem Projekt ähnlich wie Assets direkt hinzugefügt werden. Sie definieren die Sammlungen unter „Assets“.
 
 ![Asset-Sammlung](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -122,7 +122,7 @@ Klicken Sie auf die Auslassungszeichen unten auf der Karte **Übersetzungsauftra
 
 ### Team {#team}
 
-In dieser Kachel können Sie die Mitglieder des Projektteams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
+In dieser Kachel können Sie die Mitglieder des Projekt-Teams angeben. Geben Sie die Namen der Team-Mitglieder ein und weisen Sie Benutzerrollen zu.
 
 ![Kachel „Team“](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
@@ -142,7 +142,7 @@ Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/
 
 ### Launches {#launches}
 
-Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anforderung](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
+Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
 
 ![Launches](/help/sites-cloud/authoring/assets/project-launches.png)
 
@@ -162,7 +162,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt    {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt   {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
