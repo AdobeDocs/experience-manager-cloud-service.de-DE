@@ -2,9 +2,9 @@
 title: Hinzufügen eines benutzerdefinierten Domänennamens
 description: Hinzufügen eines benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: 9d5f7d633ac8dfaadf315e85666479c87a0afa04
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -20,29 +20,37 @@ Ein Benutzer muss Geschäftsinhaber oder Deployment Manager sein, um einen benut
 
 * Es kann jeweils nur ein Domänenname hinzugefügt werden. Benutzer können jedoch Platzhalter wie `*.wknd.com` als Domänennamen hinzufügen, sodass mehrere Subdomänen mit einem einzigen TXT-Datensatz gehostet werden können.
 
-* Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domänen pro Umgebung hosten. Derselbe Domänenname kann nicht auf mehr als einer Umgebung verwendet werden.
+* Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domänen pro Umgebung hosten.
+
+* Derselbe Domänenname kann nicht auf mehr als einer Umgebung verwendet werden.
 
 ## Hinzufügen eines benutzerdefinierten Domänennamens über die Seite &quot;Domäneneinstellungen&quot; {#adding-cdn-settings}
 
 Gehen Sie wie folgt vor, um auf der Seite &quot;Domäneneinstellungen&quot;einen benutzerdefinierten Domänennamen hinzuzufügen:
 
-1. Navigieren Sie auf der Seite **Umgebung** zur Seite &quot;Domäneneinstellungen&quot;.
+1. Navigieren Sie zum Bildschirm **Umgebung** von **Übersicht**.
 
-1. Wählen Sie **Hinzufügen benutzerdefinierten Domänennamen** aus, um den Assistenten zum Hinzufügen benutzerdefinierter Domänennamen zu starten.
+1. Klicken Sie im linken Navigationsmenü auf **Domäneneinstellungen**.
 
-1. Geben Sie den benutzerdefinierten Domänennamen ein.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
+
+1. Klicken Sie auf die Schaltfläche **Hinzufügen Domäne**, um das Dialogfeld **Hinzufügen Domänenname** zu öffnen.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+
+1. Geben Sie unter **Domänenname** den benutzerdefinierten Domänennamen ein.
 
    >[!NOTE]
    >Bei der Eingabe in Ihre Domäne sollten Sie weder `http://` noch `https://` noch Leerzeichen einschließen.
 
-1. Wählen Sie die Umgebung aus, deren Veröffentlichungsdienst mit dem Domänennamen verknüpft werden soll.
+1. Wählen Sie die Umgebung **aus, deren Veröffentlichungsdienst mit dem Domänennamen verknüpft wird.**
 
-1. Wählen Sie das SSL-Zertifikat aus der Dropdown-Liste aus und wählen Sie Weiter.
+1. Wählen Sie in der Dropdownliste **SSL-Domänenzertifikat** aus und wählen Sie **Weiter**.
 
-1. Dadurch gelangen Sie zur Domänennamenüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+1. **hinzufügen Feld** Domänenname wird angezeigt. Dadurch gelangen Sie zur Domänennamenüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebung.
 
-1. Wählen Sie Weiter.
+1. Klicken Sie auf **Erstellen**.
 1. Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** gekennzeichnet.
 1. Navigieren Sie zum Überprüfen des Status des benutzerdefinierten Domänennamens, um weitere Informationen zu verschiedenen Status und Adressen zu erhalten.
 
@@ -56,8 +64,7 @@ Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebun
 1. Hiermit wird der Assistent für den Namen Hinzufügen benutzerdefinierten Domäne mit dem Namen der Umgebung gestartet, der bereits ausgefüllt wurde.
 1. Geben Sie den benutzerdefinierten Domänennamen ein. Hinweis: Bei der Eingabe in Ihre Domäne dürfen Sie `http://`, `https://` oder Leerzeichen nicht einschließen. Wählen Sie Weiter.
 1. Dadurch gelangen Sie zur Domänennamenüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Domänenüberprüfung](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md). Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebung.
-
-1. Wählen Sie Weiter.
+1. Wählen Sie **Weiter**.
 1. Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** gekennzeichnet.
 
 An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und ein `CNAME` zeigt darauf. Weitere Informationen zu verschiedenen Status und Adressen finden Sie unter Domänennamenstatus.
