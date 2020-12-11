@@ -2,15 +2,15 @@
 title: 'IP-Zulassungsliste anwenden '
 description: IP-Zulassungsliste anwenden
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
 
-# Anwenden der IP-Zulassungsliste {#apply-allow-list}
+# Anwenden einer IP-Zulassungsliste {#apply-allow-list}
 
 Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Publisher-Dienst in einer Umgebung verknüpft. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
 
@@ -19,7 +19,7 @@ Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition 
 
 Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden:
 
-1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Navigieren Sie auf der Seite **Umgebung** zur Detailseite der jeweiligen Umgebung und navigieren Sie zur IP-Zulassungsliste.
 1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autor- oder Veröffentlichungsdienst auszuwählen, auf den Sie sie anwenden möchten.
-1. Wählen Sie Übernehmen und bestätigen Sie Ihre Übermittlung.
+1. Wählen Sie **Apply** und bestätigen Sie Ihre Übermittlung.
 
