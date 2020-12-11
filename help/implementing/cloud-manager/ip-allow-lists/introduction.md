@@ -2,9 +2,9 @@
 title: Einführung - IP-Zulassungslisten im Konnektivitäts-Manager
 description: Einführung - IP-Zulassungslisten im Konnektivitäts-Manager
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ IP-Zulassungslisten können ein- und mehrmals als Einheit oder Entität einem Au
 
 Auf der Seite &quot;IP-Zulassungsliste&quot;der Benutzeroberfläche von Cloud Manager oder auf der Seite &quot;Umgebung-Details&quot;kann ein Benutzer mit Berechtigungen mehrere Aufgaben zur Verwaltung von IP-Zulassungslisten für Ihre Umgebung ausführen, darunter:
 
-* IP-Zulassungsliste hinzufügen
+* [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Sie können die Regel einmalig Hinzufügen und beliebig oft über Umgebung-Dienste im Programm hinweg wiederverwenden oder anwenden.
-* Anzeigen oder Aktualisieren einer IP-Zulassungsliste
-* Anwenden oder Aufheben der Anwendung einer IP-Zulassungsliste
-* Löschen einer IP-Zulassungsliste
+* [Anzeigen oder Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [Anwenden oder Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
