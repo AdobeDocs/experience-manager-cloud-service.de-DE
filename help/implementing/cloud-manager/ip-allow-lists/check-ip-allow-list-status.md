@@ -2,7 +2,7 @@
 title: IP-Zulassungslisten-Status überprüfen
 description: IP-Zulassungslisten-Status überprüfen
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Die folgenden Statusdefinitionen werden in einer IP-Zulassungsliste angezeigt:
 
 * **Löschen**: Die Löschanforderung wird ausgeführt. Dies bedeutet, dass alle Dienste nicht angewendet werden. Jede Aufhebung wird zusammen mit &quot;Nicht gestartet/Wird ausgeführt/Abgeschlossen&quot;oder &quot;Fehlgeschlagen&quot;aufgeführt.
 Nach Abschluss des Löschvorgangs wird die IP-Zulassungsliste wie folgt ausgeführt:
-   * Wird nicht mehr in der Tabelle &quot;IP-Zulassungsliste&quot;angezeigt * Nicht mehr auf einen Dienst im Programm in Cloud Manager angewendet
+   * Wird nicht mehr in der Tabelle &quot;IP-Zulassungsliste&quot;angezeigt.
+   * Auf keinen Dienst im Programm in Cloud Manager mehr angewendet werden.
 
 * **Löschen fehlgeschlagen**: Ein oder mehrere Vorgänge zum Rückgängigmachen der Anwendung bei einem Löschvorgang sind fehlgeschlagen. Jede Aufhebung wird zusammen mit &quot;Abgeschlossen&quot;oder &quot;Fehlgeschlagen&quot;angezeigt.
 
