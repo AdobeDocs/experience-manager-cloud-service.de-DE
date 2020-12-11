@@ -4,9 +4,9 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
-source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '701'
 ht-degree: 68%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 68%
       + [Aufheben der Anwendung einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 + Verwalten von Code {#managing-code}
    + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
