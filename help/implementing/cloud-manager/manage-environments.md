@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 62%
+source-wordcount: '1248'
+ht-degree: 63%
 
 ---
 
@@ -154,18 +154,11 @@ Navigieren Sie zur Detailseite **Umgebung** auf der Seite &quot;Umgebung - Zusam
 
 Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungsdienst ausgeführt werden:
 
-1. **Hinzufügen eines benutzerspezifischen**
-DomänennamensWeitere Informationen zum  [Hinzufügen eines benutzerspezifischen Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen und SSL-**
-ZertifikatenWeitere Informationen finden Sie unter
-   * [Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [Anzeigen und Aktualisieren von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [Anzeigen und Aktualisieren eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **Löschen von benutzerdefinierten Domänennamen und SSL-**
-ZertifikatenSiehe
-   * [Löschen von benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [SSL-Zertifikate](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -176,23 +169,23 @@ Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailsei
 Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
 
 >[!NOTE]
->Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf einen Umgebung-Service angewendet werden kann. Weitere Informationen zu IP-Listen mit Zugriffsrechten in Cloud Manager finden Sie unter [Einführung in IP-Listen mit Zugriffsrechten unter Konnektivitäts-Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf einen Umgebung-Service angewendet werden kann. Weitere Informationen zu IP-Listen in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten unter Konnte-Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Führen Sie dazu folgende Schritte durch:
+Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden:
 
-1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Navigieren Sie zur gewünschten Umgebung auf der Detailseite **Umgebung** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
 1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autor- oder Veröffentlichungsdienst auszuwählen, auf den Sie sie anwenden möchten.
-1. Wählen Sie dann Übernehmen und bestätigen Sie Ihre Übermittlung.
+1. Klicken Sie auf **Übernehmen** und bestätigen Sie Ihre Übermittlung.
 
-### Aufheben der Anwendung einer IP-Allow-List {#unapply-ip-allow-list}
+### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Vorgang, bei dem alle IP-Bereiche, die in der Allow-List-Definition enthalten sind, von einem Autor-/Publisher-Dienst in einer Umgebung getrennt werden.  Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste aufheben zu können.
+Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Vorgang, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autor- oder Publisher-Dienst in einer Umgebung getrennt werden. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste aufheben zu können.
 
-Führen Sie dazu folgende Schritte durch:
+Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
 
-1. Navigieren Sie auf dem Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details der jeweiligen Umgebung&quot;und navigieren Sie zur Tabelle &quot;IP-Zulassungsliste&quot;.
+1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Detailseite **Umgebung** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
 1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste, die Sie aufheben möchten, aufgeführt ist.
 1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
-1. Wählen Sie die Option &quot;Anwendung aufheben&quot;und bestätigen Sie Ihre Übermittlung.
+1. Wählen Sie die Option **Unapply** und bestätigen Sie Ihre Übermittlung.
 
 
