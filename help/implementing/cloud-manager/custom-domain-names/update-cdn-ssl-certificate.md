@@ -2,9 +2,9 @@
 title: 'Aktualisierung des SSL-Zertifikats des benutzerdefinierten Domänennamens '
 description: Aktualisierung des SSL-Zertifikats des benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: 9ed20c4b93875742be75a1e7072fd9c70fa6d371
+source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Die Aktualisierungsaktion kann an zwei verschiedenen Stellen der Benutzeroberfläche durchgeführt werden:
 
-1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Seite &quot;Domäneneinstellungen&quot;.
-1. Sie können auch im Bildschirm &quot;Umgebung&quot;zur Seite &quot;Details zu bestimmten Umgebung&quot;navigieren und zur Tabelle &quot;Domänennamen&quot;navigieren.
+1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Seite **Domäneneinstellungen**.
+1. Sie können auch im Bildschirm **Umgebung** zur Seite &quot;Details zu bestimmten Umgebung&quot;navigieren und zur Tabelle &quot;Domänennamen&quot;navigieren.
    >[!NOTE]
    >Identifizieren Sie die Zeile, in der der benutzerdefinierte Domänenname aufgeführt ist, der Ansicht oder aktualisiert werden soll.
 1. Wählen Sie **...** Menü am äußersten rechten Ende der Zeile
-1. Wählen Sie die Option &quot;Ansicht&quot;und &quot;Aktualisieren&quot;.
-1. Nehmen Sie bei Bedarf Änderungen am SSL-Zertifikat vor und bestätigen Sie Ihre Übermittlung.
+1. Wählen Sie die Option **Ansicht und Aktualisieren**.
+1. Nehmen Sie bei Bedarf Änderungen am SSL-Zertifikat vor und bestätigen Sie die Übermittlung.
