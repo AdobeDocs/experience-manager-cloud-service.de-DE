@@ -2,9 +2,9 @@
 title: Überprüfen des Domänennamenstatus
 description: Überprüfen des Domänennamenstatus
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,24 @@ Sie können feststellen, ob Ihr Domänenname erfolgreich überprüft wurde, inde
 Cloud Manager überprüft den Domänenbesitz über den TXT-Wert und zeigt eine der folgenden Statusmeldungen an:
 
 * **Der Wert für**
-die Domänenüberprüfung &quot;FehlgeschlagenTXT&quot;fehlt oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wenn Sie bereit sind, müssen Sie das Symbol &quot;Erneut überprüfen&quot;neben dem Status auswählen.
+die Domänenüberprüfung &quot;FehlgeschlagenTXT&quot;fehlt oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wenn Sie bereit sind, müssen Sie die 
+*überprüfen Sie* das Symbol neben dem Status.
 
 * **Domänenüberprüfung**
-läuftÜberprüfung läuft. Dieser Status wird in der Regel angezeigt, nachdem Sie das Symbol &quot;Erneut überprüfen&quot;neben dem Status ausgewählt haben.
+läuftÜberprüfung läuft. Dieser Status wird normalerweise angezeigt, nachdem Sie die Variable 
+*überprüfen Sie* das Symbol neben dem Status.
 
 * **Geprüft,**
 fehlgeschlagene Bereitstellung TXT-Überprüfung erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Ein Vertreter der Adobe wird automatisch benachrichtigt.
 
 * **Domäne überprüft und**
-bereitgestelltDieser Status gibt an, dass Ihr benutzerdefinierter Domänenname einsatzbereit ist. Hinweis: An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und wird auf den Domänennamen von Cloud Manager verwiesen. Informationen dazu finden Sie unter Konfigurieren von DNS-Einstellungen.
+bereitgestelltDieser Status gibt an, dass Ihr benutzerdefinierter Domänenname einsatzbereit ist.
+   >[!NOTE]
+   >An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und wird auf den Domänennamen von Cloud Manager verwiesen. Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 * **Das**
 Löschen des Namens der benutzerdefinierten Domäne wird ausgeführt.
 
 * **Löschen**
-fehlgeschlagenLöschen des Namens der benutzerdefinierten Domäne fehlgeschlagen. Du musst es erneut versuchen. Wechseln Sie zu &quot;Benutzerdefinierten Domänennamen löschen&quot;, um weitere Informationen zum Thema zu erhalten.
+fehlgeschlagenLöschen des Namens der benutzerdefinierten Domäne fehlgeschlagen. Du musst es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
