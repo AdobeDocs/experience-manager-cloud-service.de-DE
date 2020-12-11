@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 63%
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -150,21 +150,28 @@ Zusätzlich können Sie sich lokal über die Zusammenfassungsseite **Umgebung** 
 
 ## Verwalten von benutzerdefinierten Domänennamen {#manage-cdn}
 
-Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailseite &quot;Umgebung&quot;.
+Navigieren Sie zur Detailseite **Umgebung** auf der Seite &quot;Umgebung - Zusammenfassung&quot;.
 
 Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungsdienst ausgeführt werden:
 
-1. **Hinzufügen eines benutzerdefinierten Domänennamens**: Siehe  [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Hinzufügen eines benutzerspezifischen**
+DomänennamensWeitere Informationen zum  [Hinzufügen eines benutzerspezifischen Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Anzeigen und Aktualisieren des benutzerdefinierten Domänennamens**: Siehe  [Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen und SSL-Zertifikaten](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen und SSL-**
+ZertifikatenWeitere Informationen finden Sie unter
+   * [Anzeigen und Aktualisieren von benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Anzeigen und Aktualisieren von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Löschen des benutzerdefinierten Domänennamens**: Siehe  [Löschen von benutzerdefinierten Domänennamen und SSL-Zertifikaten](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Löschen von benutzerdefinierten Domänennamen und SSL-**
+ZertifikatenSiehe
+   * [Löschen von benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL-Zertifikate](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Verwalten der IP-Listen {#manage-ip-allow-lists}
+## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
 Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailseite &quot;Umgebung&quot;. Hier können Sie die folgenden Aktionen für den/die Veröffentlichungs- und/oder Autor-Dienst/Dienste für Ihre Umgebung durchführen.
 
-### Anwenden einer IP-Allow-List {#apply-ip-allow-list}
+### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
 Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
 
