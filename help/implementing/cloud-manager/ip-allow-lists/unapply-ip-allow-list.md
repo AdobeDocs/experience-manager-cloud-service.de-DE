@@ -2,15 +2,15 @@
 title: 'IP-Zulassungsliste aufheben '
 description: IP-Zulassungsliste aufheben
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Anwendung der IP-Zulassungsliste {#apply-allow-list} aufheben
+# Aufheben der Anwendung einer IP-Zulassungsliste {#apply-allow-list}
 
 Beim Anwenden einer IP-Zulassungsliste wird der gesamte IP-Bereich, der in der Allow-List-Definition enthalten ist, von einem Autor-/Publisher-Dienst in einer Umgebung getrennt.
 
