@@ -2,15 +2,15 @@
 title: Anzeigen und Aktualisieren - IP-Zulassungslisten im Konnektivitäts-Manager
 description: Anzeigen und Aktualisieren - IP-Zulassungslisten im Konnektivitäts-Manager
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# Anzeigen und Aktualisieren von IP-Zulassungslisten {#view-update}
+# Anzeigen und Aktualisieren einer IP-Zulassungsliste {#view-update}
 
 Sie können IP-Zulassungslisten in den folgenden Szenarien Ansicht und Aktualisierung durchführen:
 
