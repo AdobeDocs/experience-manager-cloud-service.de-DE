@@ -2,9 +2,9 @@
 title: Hinzufügen eines benutzerdefinierten Domänennamens
 description: Hinzufügen eines benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Ein Benutzer muss Geschäftsinhaber oder Deployment Manager sein, um einen benut
 
 * Bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, muss ein gültiges SSL-Zertifikat mit dem benutzerdefinierten Domänennamen in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
 
-* Es kann jeweils nur ein Domänenname hinzugefügt werden. Benutzer können jedoch Platzhalter wie `*.wknd.com` als Domänennamen hinzufügen, sodass mehrere Subdomänen mit einem einzigen TXT-Datensatz gehostet werden können.
+* Es kann jeweils nur ein Domänenname hinzugefügt werden. Domänen können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domänen auf der Autorenseite werden nicht unterstützt.
 
 * Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domänen pro Umgebung hosten.
 
