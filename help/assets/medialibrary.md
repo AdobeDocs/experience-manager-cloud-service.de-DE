@@ -3,10 +3,10 @@ title: AEM Assets und AEM Media Library
 description: Häufig gestellte Fragen zu AEM Assets und AEM Media Library, einschließlich den Unterschieden zwischen den beiden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '694'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Wenn Sie auch andere Metadaten als Titel, Beschreibung und Tags bearbeiten möch
 
 ## Ich möchte die Kategorie-Eigenschaft auf meiner Website verwenden. Benötige ich AEM Assets?   {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Ja. Die Kategorie-Eigenschaft sowie alle anderen im Geometrixx-Pressezentrum verwendeten Komponenten sind Teil von AEM Assets und erfordern eine AEM Assets-Lizenz. 
+Ja, die Kategorie sagt voraus, zusammen mit allen anderen Komponenten gehören zu AEM Assets und benötigen eine AEM Assets-Lizenz.
 
 ## Ich möchte, dass die Bildgröße beim Import automatisch geändert wird. Benötige ich AEM Assets?   {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
