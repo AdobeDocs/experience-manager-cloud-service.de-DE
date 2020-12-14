@@ -2,7 +2,7 @@
 title: Erstellen eines Asset-Ordners - Kurzanleitung ohne Kopfzeilen im Beginn
 description: Inhaltsfragmentmodelle definieren die Struktur von Inhaltsfragmenten. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -53,5 +53,6 @@ Wenn Sie eine lokalisierte Sitestruktur verwenden, können Sie unter Ihrem neuen
 
 Nachdem Sie jetzt einen Ordner für Ihre Inhaltsfragmente erstellt haben, können Sie zum vierten Teil des Beginns-Handbuchs wechseln und [Inhaltsfragmente erstellen.](create-content-fragment.md)
 
->!![TIP]
-Ausführliche Informationen zum Verwalten von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Ausführliche Informationen zum Verwalten von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
