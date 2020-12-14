@@ -2,7 +2,7 @@
 title: Erstellen von Inhaltsfragmentmodellen - Kurzanleitung ohne Kopfzeilen im Beginn
 description: Inhaltsfragmentmodelle definieren die Struktur des Inhalts, den Sie mithilfe AEM kopflosen Funktionen erstellen und bereitstellen.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -63,5 +63,6 @@ Sie können mehrere Modelle erstellen. Modelle können auf andere Inhaltsfragmen
 
 Nachdem Sie nun die Strukturen der Inhaltsfragmente durch Erstellen von Modellen definiert haben, können Sie zum dritten Teil des Beginnungshandbuchs wechseln und [Ordner erstellen, in denen Sie die Fragmente selbst speichern.](create-assets-folder.md)
 
->!![TIP]
-Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie in der Dokumentation [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
+>[!TIP]
+>
+>Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie in der Dokumentation [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
