@@ -2,7 +2,7 @@
 title: Erstellen von Inhaltsfragmenten - Kurzanleitung ohne Kopfzeilen im Beginn
 description: Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte, die AEM ohne Probleme bereitstellen können.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
@@ -53,5 +53,6 @@ Inhaltsfragmente können auch auf andere Assets in AEM verweisen. [Diese Assets 
 
 Nachdem Sie jetzt ein Inhaltsfragment erstellt haben, können Sie zum letzten Teil des Handbuchs &quot;Erste Schritte&quot;wechseln und [API-Anforderungen erstellen, um auf Inhaltsfragmente zuzugreifen und diese bereitzustellen.](create-api-request.md)
 
->!![TIP]
-Ausführliche Informationen zum Verwalten von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Ausführliche Informationen zum Verwalten von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
