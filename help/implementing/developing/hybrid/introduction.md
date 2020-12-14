@@ -2,10 +2,10 @@
 title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 97%
 
 ---
 
@@ -80,8 +80,10 @@ Durch das Client-seitige Rendern reagieren Seitenelemente schneller; Interaktion
 >Technische Einzelheiten zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Artikeln:
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von React](getting-started-react.md)
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md)
+
 >
->Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
+>
+Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
 >* [SPA-Editor – Überblick](editor-overview.md).
 
 
@@ -151,7 +153,7 @@ Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) w
 
 ### Laden einer SPA-Anwendung {#loading-a-spa-application}
 
-1. Laden Sie, falls noch nicht geschehen, die Anwendung „We.Retail Journal“ entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
+1. Laden Sie die WKND SPA Project-App entweder auf dem Veröffentlichungsserver oder unter Verwendung der Option **Ansicht als Veröffentlicht** aus dem Menü **Seiteninformationen** im Seiteneditor.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -252,7 +254,7 @@ Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) w
 
 1. Das Modell kann Seiten auch zusammen gruppieren, damit sie synchron geladen werden. Dadurch verringert sich die Zahl der erforderlichen Seitenneuladungen.
 
-   Im Beispiel von „We.Retail Journal“ werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher in der Regel alle diese Seiten besuchen.
+   Im Beispiel der WKND SPA Project-App werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher normalerweise alle diese Seiten besuchen.
 
    Dieses Verhalten ist nicht obligatorisch und kann umfassend definiert werden.
 
