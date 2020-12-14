@@ -2,7 +2,7 @@
 title: Zugriff und Bereitstellung von Inhaltsfragmenten - Kurzanleitung ohne Beginn
 description: Die Assets REST API ermöglicht die Verwaltung von Inhaltsfragmenten und die GraphQL API ermöglicht einen einfachen, kopflosen Versand von Inhaltsfragmentinhalten.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Informationsarchitekten müssen Abfragen für ihre Kanal-Endpunkte entwerfen, um
 
 1. Unter der Annahme, dass das von uns erstellte Modell mit den Feldern `person`, `lastName` und `position` mit den Feldern `firstName` und &lt;a3/> benannt wurde, können wir eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
 
-   ```
+   ```text
    query {
      persons {
        items {
