@@ -2,7 +2,7 @@
 title: Erstellen einer Kurzanleitung zum Beginn "Configuration Headless"
 description: Als ersten Schritt zu den ersten Schritten mit dem Kopflosen in AEM als Cloud Service müssen Sie eine Konfiguration erstellen.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 3%
@@ -42,12 +42,14 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selber erstellen,
 
 Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen können auch verschachtelt werden.
 
->!![NOTE]
-Abhängig von Ihren Implementierungsanforderungen können Konfigurationsoptionen zusätzlich zu **Inhaltsfragmentmodellen** und **GraphQL Persistente Abfragen** erforderlich sein.
+>[!NOTE]
+>
+>Abhängig von Ihren Implementierungsanforderungen können Konfigurationsoptionen zusätzlich zu **Inhaltsfragmentmodellen** und **GraphQL Persistente Abfragen** erforderlich sein.
 
 ## Nächste Schritte {#next-steps}
 
 Mithilfe dieser Konfiguration können Sie nun zum zweiten Teil der Anleitung für die ersten Schritte wechseln und [Inhaltsfragmentmodelle erstellen.](create-content-model.md)
 
->!![TIP]
-Ausführliche Informationen zum Konfigurationsbrowser finden Sie in der Dokumentation zum Konfigurationsbrowser.[](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>Ausführliche Informationen zum Konfigurationsbrowser finden Sie in der Dokumentation zum Konfigurationsbrowser.[](/help/implementing/developing/introduction/configurations.md)
