@@ -125,7 +125,7 @@ Die Felder zur Definition einer Stadt sind:
 |--- |--- |--- |
 | Name | Einzeilentext |  |
 | Land | Einzeilentext |  |
-| Bevölkerung | Nummer |  |
+| Bevölkerung | Zahl |  |
 | Kategorien | Tags |  |
 
 ### Beispielinhalt-Fragmente {#sample-content-fragments}
