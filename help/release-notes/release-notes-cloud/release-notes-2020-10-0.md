@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0.
-description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.10.0.
+title: Versionshinweise für die Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0
 translation-type: tm+mt
 source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1044'
+ht-degree: 24%
 
 ---
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] als Cloud Service 2020.10.0 beschrieben.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] as a Cloud Service 2020.10.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -50,7 +50,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * CIF-Referenzseite Venia - 2020.10.2, die die aktuellste CIF-Kernkomponenten Version v1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2).
 
-* Version 1.4.0 der CIF-Kernkomponenten Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0).
+* Version 1.4.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0).
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -58,7 +58,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * In der Benutzeroberfläche der CIF Cloud-Konfiguration wurden Schaltflächen zum Speichern und Schließen für Konfigurationen in /lib und /apps/ angezeigt. Diese sind jedoch schreibgeschützt und daher wurde die Benutzeroberfläche so eingestellt, dass nur die Schaltfläche &quot;Schließen&quot;angezeigt wird.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
