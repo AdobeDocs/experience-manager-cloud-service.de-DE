@@ -1,11 +1,11 @@
 ---
 title: Struktur von AEM-Projekten
-description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
+description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 75%
 
 >[!TIP]
 >
->Machen Sie sich mit der grundlegenden [Verwendung des AEM-Projektarchetyps](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) vertraut und dem [FileVault Content Maven-Plug-in](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html), da dieser Artikel auf diesen Erkenntnissen und Konzepten aufbaut.
+>Machen Sie sich mit der grundlegenden [Verwendung des AEM-Projektarchetyps](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html) und dem [FileVault Content Maven-Plug-in](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) vertraut, da dieser Artikel auf diesen Erkenntnissen und Konzepten aufbaut.
 
-In diesem Artikel werden die Änderungen erläutert, die erforderlich sind, damit Adobe Experience Manager Maven-Projekte als Cloud Service-kompatibel AEM werden, indem sichergestellt wird, dass sie die Aufteilung veränderlicher und unveränderlicher Inhalte respektieren, Abhängigkeiten geschaffen werden, um widersprüchliche, deterministische Bereitstellungen zu erstellen und dass sie in einer bereitstellbaren Struktur zusammengefasst werden.
+In diesem Artikel werden die Änderungen erläutert, die erforderlich sind, damit Adobe Experience Manager-Maven-Projekte mit AEM as a Cloud Service kompatibel sind, indem sichergestellt wird, dass sie die Aufteilung von veränderlichem und unveränderlichem Inhalt respektieren, dass Abhängigkeiten zur Schaffung nicht widersprüchlicher, deterministischer Implementierungen festgelegt werden und dass sie in einer implementierbaren Struktur zusammengefasst sind.
 
 AEM-Anwendungsimplementierungen müssen aus einem einzigen AEM-Paket bestehen. Dieses Paket sollte wiederum Unterpakete enthalten, die alles enthalten, was die Anwendung benötigt, um zu funktionieren, einschließlich Code, Konfiguration und unterstützenden Basisinhalten.
 
-AEM erfordert eine Trennung von **Inhalt** und **Code**. Dies bedeutet, dass ein einzelnes Inhaltspaket **nicht** für **beide** `/apps` und für Laufzeitbereiche (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) des Repositorys bereitstellen kann. Stattdessen muss die Anwendung Code und Inhalt in separate Pakete für die Bereitstellung in AEM trennen.
+AEM erfordert eine Trennung von **Inhalt** und **Code**. Dies bedeutet, dass ein einzelnes Inhaltspaket **nicht** für **beide** `/apps` und für Laufzeitbereiche (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) des Repositorys bereitstellen kann. Stattdessen muss die Anwendung Code und Inhalt in separate Pakete für die Implementierung in AEM trennen.
 
-Die in diesem Dokument beschriebene Paketstruktur ist mit lokalen Entwicklungsbereitstellungen **und** AEM Cloud Service-Bereitstellungen kompatibel.
+Die in diesem Dokument beschriebene Paketstruktur ist mit lokalen Entwicklungsimplementierungen **und** AEM Cloud Service-Implementierungen kompatibel.
 
 >[!TIP]
 >
@@ -30,7 +30,7 @@ Die in diesem Dokument beschriebene Paketstruktur ist mit lokalen Entwicklungsbe
 
 ## Veränderliche und nicht veränderliche Bereiche des Repositorys {#mutable-vs-immutable}
 
-`/apps` und `/libs` werden als **unveränderliche** Bereiche von AEM betrachtet, da sie nach dem Start von AEM (d. h. zur Laufzeit) nicht mehr geändert (erstellt, aktualisiert, gelöscht) werden können . Jeder Versuch, einen unveränderlichen Bereich zur Laufzeit zu ändern, schlägt fehl.
+`/apps` und `/libs` werden als **unveränderliche** Bereiche von AEM betrachtet, da sie nach dem Start von AEM (d. h. zur Laufzeit) nicht mehr geändert (erstellt, aktualisiert, gelöscht) werden können. Jeder Versuch, einen unveränderlichen Bereich zur Laufzeit zu ändern, schlägt fehl.
 
 Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp` usw. sind alles **veränderliche** Bereiche, d. h. sie können zur Laufzeit geändert werden.
 
@@ -40,9 +40,9 @@ Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `
 
 ### Oak-Indizes {#oak-indexes}
 
-Oak-Indizes (`/oak:index`) werden spezifisch vom AEM als Cloud Service-Bereitstellungsprozess verwaltet. Dies liegt daran, dass der Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu indiziert ist, bevor zum neuen Codebild gewechselt wird.
+Oak-Indizes (`/oak:index`) werden speziell vom AEM Cloud as a Cloud Service-Implementierungsprozess verwaltet. Dies liegt daran, dass Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu indiziert wird, bevor zum neuen Code-Bild gewechselt wird.
 
-Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind, als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderbare Pakete installiert werden. Daher sind `/oak:index`-Konfigurationen Teil des Code-Pakets und nicht Teil des Content-Pakets, [wie unten beschrieben](#recommended-package-structure).
+Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind, als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderbare Pakete installiert werden. Daher sind `/oak:index`-Konfigurationen Teil des Code-Pakets und nicht Teil des Inhaltspakets, [wie unten beschrieben](#recommended-package-structure).
 
 >[!TIP]
 >
@@ -52,20 +52,20 @@ Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind,
 
 ![Experience Manager-Projektpaketstruktur](assets/content-package-organization.png)
 
-Dieses Diagramm bietet eine Übersicht über die empfohlene Projektstruktur und die empfohlenen Artefakte zur Paketbereitstellung.
+Dieses Diagramm bietet einen Überblick über die empfohlene Projektstruktur und die empfohlenen Artefakte zur Paketimplementierung.
 
-Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
+Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
 
 ### Code-Pakete/OSGi-Pakete
 
-+ Die OSGi Bundle Jar-Datei wird generiert und direkt in das gesamte Projekt eingebettet.
++ Die Jar-Datei des OSGi-Pakets wird generiert und direkt in das gesamte Projekt eingebettet.
 
-+ Das `ui.apps`-Paket enthält den gesamten bereitzustellenden Code und stellt nur `/apps` bereit. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
-   + [Komponentendefinitionen und ](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) HTML-Skripten
++ Das `ui.apps`-Paket enthält den ganzen bereitzustellenden Code und wird nur für `/apps` bereitgestellt. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
+   + [Komponentendefinitionen und HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)-Skripte
       + `/apps/my-app/components`
-   + JavaScript und CSS (über [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
+   + JavaScript und CSS (über [Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [Überlagerungen ](/help/implementing/developing/introduction/overlays.md) von  `/libs`
+   + [Überlagerungen](/help/implementing/developing/introduction/overlays.md) von `/libs`
       + `/apps/cq`, `/apps/dam/` usw.
    + Kontextabhängige Ausweichkonfigurationen
       + `/apps/settings`
@@ -73,72 +73,72 @@ Die empfohlene Bereitstellungsstruktur für Anwendungen lautet wie folgt:
       + Alle `rep:policy` für einen Pfad unter `/apps`
 
 + Das `ui.config`-Paket enthält alle [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md):
-   + Organisatorischer Ordner mit ausführmodusspezifischen OSGi-Konfigurationsdefinitionen
+   + Organisatorischer Ordner mit für den Ausführungsmodus spezifischen OSGi-Konfigurationsdefinitionen
       + `/apps/my-app/osgiconfig`
-   + Allgemeiner OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM als Cloud Service-Bereitstellungs-Zielgruppen gelten
+   + Allgemeiner OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
       + `/apps/my-app/osgiconfig/config`
-   + Ausführen modusspezifischer OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle Zielgruppen AEM als Cloud Service-Bereitstellungs-Zielgruppen gelten
+   + Für den Ausführungsmodus spezifische OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi-Konfigurationsskripte
-      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil des AEM-Programms sind. Die Repo Init OSGi-Konfigurationen sollten sich wie oben beschrieben im entsprechenden Ordner `config.<runmode>` befinden und zur Definition folgender Elemente verwendet werden:
+      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil der AEM-Anwendung sind. Die Repo Init OSGi-Konfigurationen sollten wie oben beschrieben im entsprechenden `config.<runmode>`-Ordner platziert und zur Definition folgender Elemente verwendet werden:
          + Grundlegende Inhaltsstrukturen
          + Benutzer
-         + Dienstbenutzer
+         + Service-Benutzer
          + Gruppen
          + ACLs (Berechtigungen)
 
 ### Inhaltspakete
 
-+ Das `ui.content`-Paket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket enthält alle Knotendefinitionen, die nicht in den Paketen `ui.apps` oder `ui.config` enthalten sind, oder in anderen Worten alles, was nicht in `/apps` oder `/oak:index` enthalten ist. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
++ Das `ui.content`-Paket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket umfasst alle Knotendefinitionen, die nicht in den `ui.apps`- oder `ui.config`-Paketen enthalten sind, bzw. alles, was nicht in `/apps` oder `/oak:index` enthalten ist. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
    + Kontextabhängige Konfigurationen
       + `/conf`
    + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltserstellungen, die auf in Repo Init definierten Inhaltsstrukturen aufbauen und diese erweitern)
       + `/content`, `/content/dam` usw.
    + Geregelte Tagging-Taxonomien
       + `/content/cq:tags`
-   + Ältere Knoten usw. (idealerweise migrieren Sie diese an Nicht-/usw.-Orte)
+   + Ältere etc-Knoten (idealerweise migrieren Sie diese an Nicht-etc-Speicherorte)
       + `/etc`
 
-### Container Packages
+### Container-Pakete
 
-+ Das `all`-Paket ist ein Container-Paket, das NUR bereitstellbare Artefakte, die OSGI-Bundle-Jar-Datei, `ui.apps`-, `ui.config`- und `ui.content`-Pakete als Einbettungen enthält. Das `all`-Paket darf keinen eigenen Inhalt oder Code **haben, sondern die gesamte Bereitstellung an das Repository an seine Unterpakete oder OSGi-Bundle-Jar-Dateien delegieren.**
++ Das `all`-Paket ist ein Container-Paket, das NUR bereitstellbare Artefakte, die Jar-Datei des OSGi-Pakets sowie die `ui.apps`-, `ui.config`- und `ui.content`-Pakete als Einbettungen enthält. Das `all`-Paket darf **keinen eigenen Inhalt oder Code** haben, sondern muss die Implementierung an das Repository an seine Unterpakete oder Jar-Dateien des OSGi-Pakets delegieren.
 
    Pakete werden jetzt mit der [eingebetteten Konfiguration des FileVault Package Maven-Plug-ins](#embeddeds) eingebunden, anstatt mit der `<subPackages>`-Konfiguration.
 
-   Bei komplexen Bereitstellungen von Experience Managern ist es möglicherweise wünschenswert, mehrere `ui.apps`-, `ui.config`- und `ui.content`-Projekte/Pakete zu erstellen, die bestimmte Sites oder Mieter in AEM darstellen. Ist dies der Fall, stellen Sie sicher, dass die Aufteilung zwischen veränderlichem und unveränderlichem Inhalt eingehalten wird und dass die erforderlichen Inhaltspakete und OSGi Bundle-Jar-Dateien als Unterpakete im Inhaltspaket `all` des Containers eingebettet werden.
+   Bei komplexen Experience Manager-Implementierungen ist es möglicherweise wünschenswert, mehrere `ui.apps`-, `ui.config`- und `ui.content`-Projekte/-Pakete zu erstellen, die bestimmte Sites oder Mandanten in AEM darstellen. Ist dies der Fall, stellen Sie sicher, dass die Aufteilung zwischen veränderlichem und unveränderlichem Inhalt eingehalten wird und die erforderlichen Inhaltspakete und Jar-Dateien des OSGi-Pakets als Unterpakete im Container-Inhaltspaket `all` hinzugefügt werden.
 
-   Beispielsweise könnte eine komplexe Struktur eines Inhaltspakets für die Bereitstellung wie folgt aussehen:
+   Beispielsweise könnte eine komplexe Struktur eines Inhaltspakets für die Implementierung wie folgt aussehen:
 
-   + Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Bereitstellungsartefakt zu erstellen
+   + Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Implementierungsartefakt zu erstellen
       + `common.ui.apps` stellt Code bereit, der **sowohl** für Site A als auch für Site B erforderlich ist
-      + `site-a.core` OSGi Bundle Jar erforderlich für Website A
+      + `site-a.core` Jar-Datei des OSGi-Pakets, erforderlich für Site A
       + `site-a.ui.apps` stellt Code bereit, der für Site A erforderlich ist
-      + `site-a.ui.config` stellt OSGi-Konfigurationen bereit, die für Site A erforderlich sind.
+      + `site-a.ui.config` stellt OSGi-Konfigurationen bereit, die für Site A erforderlich sind
       + `site-a.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site A erforderlich sind
-      + `site-b.core` OSGi Bundle Jar erforderlich für Website B
+      + `site-b.core` Jar-Datei des OSGi-Pakets, erforderlich für Site B
       + `site-b.ui.apps` stellt Code bereit, der für Site B erforderlich ist
-      + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Website B erforderlich sind.
+      + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Site B erforderlich sind
       + `site-b.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
-### Extra-Anwendungspakete{#extra-application-packages}
+### Zusätzliche Anwendungspakete{#extra-application-packages}
 
-Wenn andere AEM Projekte, die selbst aus eigenen Code- und Inhaltspaketen bestehen, von der AEM-Bereitstellung verwendet werden, sollten ihre Container-Pakete im `all`-Paket des Projekts eingebettet werden.
+Wenn andere AEM-Projekte, die selbst aus eigenen Code- und Inhaltspaketen bestehen, von der AEM-Implementierung verwendet werden, sollten ihre Container-Pakete in das `all`-Paket des Projekts eingebettet werden.
 
-Beispielsweise könnte ein AEM Projekt mit zwei AEM Anwendungen von Anbietern wie folgt aussehen:
+Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Anwendungen enthält, wie folgt aussehen:
 
-+ Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Bereitstellungsartefakt zu erstellen
-   + `core` OSGi Bundle Jar erforderlich für die AEM
-   + `ui.apps` stellt Code bereit, der für die AEM erforderlich ist
-   + `ui.config` stellt OSGi-Konfigurationen bereit, die für die AEM Anwendung erforderlich sind.
-   + `ui.content` Bereitstellung der für die AEM erforderlichen Inhalte und Konfigurationen
-   + `vendor-x.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die von der vendor X-Anwendung benötigt werden.
-   + `vendor-y.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die von der Y-Anwendung des Anbieters benötigt werden.
++ Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Implementierungsartefakt zu erstellen
+   + `core` Jar-Datei des OSGi-Pakets, erforderlich für die AEM-Anwendung
+   + `ui.apps` stellt Code bereit, der für die AEM-Anwendung erforderlich ist
+   + `ui.config` stellt OSGi-Konfigurationen bereit, die für die AEM-Anwendung erforderlich sind
+   + `ui.content` stellt Inhalte und Konfigurationen bereit, die für die AEM-Anwendung erforderlich sind
+   + `vendor-x.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für die Anwendung von Anbieter X benötigt werden
+   + `vendor-y.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für die Anwendung von Anbieter Y benötigt werden
 
 ## Pakettypen {#package-types}
 
 Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen.
 
-+ Container-Pakete müssen ihre `packageType` auf `container` setzen.
++ Container-Pakete müssen ihren `packageType` auf `container` setzen.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
@@ -148,9 +148,9 @@ Weitere Informationen finden Sie in der [Dokumentation zum Apache Jackrabbit Fil
 >
 >Ein vollständiges Snippet finden Sie im Abschnitt [POM XML-Snippets](#xml-package-types) unten.
 
-## Markieren von Paketen für die Bereitstellung durch Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
+## Markieren von Paketen für die Implementierung durch Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Bereitstellungs-Artefakt ist, das alle Code- und Inhaltspakete enthält, müssen wir sicherstellen, dass **nur** das Container-Paket (`all`) bereitgestellt wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plug-in-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
+Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Implementierungs-Artefakt ist, das alle Code- und Inhaltspakete enthält, müssen wir sicherstellen, dass **nur** das Container-Paket (`all`) bereitgestellt wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plug-in-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
 
 >[!TIP]
 >
@@ -158,21 +158,21 @@ Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pake
 
 ## Repo Init{#repo-init}
 
-Repo Init enthält Anweisungen oder Skripte, mit denen JCR-Strukturen definiert werden, von allgemeinen Knotenstrukturen wie Ordnerbäumen bis hin zu Benutzern, Dienstbenutzern, Gruppen und ACL-Definitionen.
+Repo Init enthält Anweisungen oder Skripte, mit denen JCR-Strukturen definiert werden, von allgemeinen Knotenstrukturen wie Ordnerbäumen bis hin zu Benutzern, Service-Benutzern, Gruppen und ACL-Definitionen.
 
-Die Hauptvorteile von Repo Init sind, dass sie implizite Berechtigungen zum Ausführen aller durch ihre Skripte definierten Aktionen haben und früh im Bereitstellungslebenszyklus aufgerufen werden, um sicherzustellen, dass alle erforderlichen JCR-Strukturen zum Zeitpunkt der Ausführung des Codes vorhanden sind.
+Die Hauptvorteile von Repo Init sind, dass sie implizite Berechtigungen zum Ausführen aller durch ihre Skripte definierten Aktionen haben und früh im Implementierungslebenszyklus aufgerufen werden, um sicherzustellen, dass alle erforderlichen JCR-Strukturen zum Zeitpunkt der Ausführung des Codes vorhanden sind.
 
 Während Repo Init-Skripte selbst als Skripte im `ui.config`-Projekt vorhanden sind, können und sollten sie zum Definieren der folgenden veränderbaren Strukturen verwendet werden:
 
 + Grundlegende Inhaltsstrukturen
-+ Dienstbenutzer
++ Service-Benutzer
 + Benutzer
 + Gruppen
 + ACLs
 
-Repo-Init-Skripten werden als `scripts`-Einträge von `RepositoryInitializer` OSGi-Werkskonfigurationen gespeichert und können daher implizit vom Ausführungsmodus bestimmt werden. Dies ermöglicht Unterschiede zwischen den Repo-Init-Skripten von AEM Author und AEM Publish Services oder sogar zwischen Umgebung (Dev, Stage und Prod).
+Repo Init-Skripte werden als `scripts`-Einträge von `RepositoryInitializer`-OSGi-Werkskonfigurationen gespeichert und können daher implizit vom Ausführungsmodus angesprochen werden, wodurch Unterschiede zwischen den Repo Init-Skripten der AEM-Autoren- und AEM-Veröffentlichungs-Services oder auch zwischen Umgebungen (Entwicklung, Staging und Produktion) berücksichtigt werden.
 
-Repo Init OSGi-Konfigurationen werden am besten in das OSGi-Konfigurationsformat [`.config` geschrieben, da sie mehrzeilige Konfigurationen unterstützen. Dies ist eine Ausnahme zu den Best Practices der Verwendung von [`.cfg.json` zum Definieren von OSGi-Konfigurationen](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1)
+Repo Init OSGi-Konfigurationen werden am besten im [`.config` OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) geschrieben, da es mehrere Zeilen unterstützt. Dies stellt eine Ausnahme bei den Best Practices dar, [`.cfg.json` zur Definition von OSGi-Konfigurationen](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1) zu verwenden.
 
 Beachten Sie, dass beim Definieren von Benutzern und Gruppen nur Gruppen als Teil der Anwendung betrachtet werden und hier als integraler Bestandteil ihrer Funktion definiert werden sollten. Organisationsbenutzer und -gruppen sollten weiterhin zur Laufzeit in AEM definiert werden. Wenn ein benutzerdefinierter Workflow beispielsweise einer benannten Gruppe Arbeit zuweist, sollte diese Gruppe über Repo Init in der AEM-Anwendung definiert werden. Wenn die Gruppierung jedoch nur organisatorisch ist, z. B. „Petras Team“ und „Stefans Team“, sollten diese am besten zur Laufzeit in AEM definiert und verwaltet werden.
 
@@ -226,23 +226,23 @@ Aufschlüsselung dieser Ordnerstruktur:
 
    >[!WARNING]
    >
-   >Konventionell werden eingebettete Unterpakete mit dem Suffix `-packages` benannt. Dadurch wird sichergestellt, dass der Bereitstellungs-Code und die Inhaltspakete **nicht** in den Zielordnern eines Unterpakets `/apps/<app-name>/...` bereitgestellt werden, was zu destruktiven und zyklischen Installationsverhalten führt.
+   >Konventionell werden eingebettete Unterpakete mit dem Suffix `-packages` benannt. Dadurch wird sichergestellt, dass der Implementierungs-Code und die Inhaltspakete **nicht** in den Zielordnern eines Unterpakets `/apps/<app-name>/...` bereitgestellt werden, was zu destruktiven und zyklischen Installationsverhalten führt.
 
 + Der Ordner der dritten Ebene muss
    `application`, `content` oder `container`
    + Der `application`-Ordner enthält Code-Pakete
-   + Der Ordner `content` enthält Inhaltspakete
-   + Der Ordner `container` enthält alle [zusätzlichen Anwendungspakete](#extra-application-packages), die möglicherweise in der AEM enthalten sind.
-Dieser Ordnername entspricht den [Pakettypen](#package-types) der darin enthaltenen Pakete.
+   + Der `content`-Ordner enthält Inhaltspakete
+   + Der `container`-Ordner enthält alle [zusätzlichen Anwendungspakete](#extra-application-packages), die ggf. in der AEM-Anwendung enthalten sind.
+Der Name des Ordners entspricht den [Pakettypen](#package-types) der darin enthaltenen Pakete.
 + Der Ordner der vierten Ebene enthält die Unterpakete und muss einer der folgenden sein:
    + `install` zur Installation auf **beiden**, AEM Author und AEM Publish
    + `install.author` zur Installation **nur** auf AEM Author
    + `install.publish` zur Installation **nur** auf AEM Publish
 Beachten Sie, dass nur `install.author` und `install.publish` unterstützte Ziele sind. Andere Ausführungsmodi werden **nicht** unterstützt.
 
-Beispielsweise kann eine Bereitstellung, die AEM Author- und Publish-spezifische Pakete enthält, wie folgt aussehen:
+Beispielsweise kann eine Implementierung, die AEM Author- und Publish-spezifische Pakete enthält, wie folgt aussehen:
 
-+ Container-Paket `all` bettet die folgenden Pakete ein, um ein einzelnes Bereitstellungsartefakt zu erstellen
++ Container-Paket `all` bettet die folgenden Pakete ein, um ein einzelnes Implementierungsartefakt zu erstellen
    + `ui.apps` eingebettet in `/apps/my-app-packages/application/install` stellt Code für AEM Author und AEM Publish bereit
    + `ui.apps.author` eingebettet in `/apps/my-app-packages/application/install.author` stellt Code nur für AEM Author bereit
    + `ui.content` eingebettet in `/apps/my-app-packages/content/install` stellt Inhalte und Konfiguration für AEM Author und AEM Publish bereit
@@ -270,7 +270,7 @@ Wenn sich die Pakete von Drittanbietern im **öffentlichen Maven-Artefakt-Reposi
 
 Wenn sich die Pakete von Drittanbietern in einem **öffentlichen Maven-Artefakt-Repository von Drittanbietern** befinden, muss dieses Repository in der `pom.xml` des Projekts registriert und gemäß der [oben beschriebenen](#embeddeds) Methode eingebettet werden.
 
-Anwendungen/Connectors von Drittanbietern sollten mit dem `all`-Paket als Container im Projektpaket (`all`) eingebettet werden.
+Anwendungen/Connectoren von Drittanbietern sollten mit ihrem `all`-Paket als Container im Container-Paket (`all`) Ihres Projekts eingebettet werden.
 
 Das Hinzufügen von Maven-Abhängigkeiten folgt den Standardpraktiken von Maven, und das Einbetten von Artefakten von Drittanbietern (Code- und Inhaltspakete) ist [oben beschrieben](#embedding-3rd-party-packages).
 
@@ -292,7 +292,7 @@ Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderlic
 
 Die üblichen Muster für Abhängigkeiten von Inhaltspaketen sind:
 
-### Abhängigkeiten von einfachen Bereitstellungspaketen {#simple-deployment-package-dependencies}
+### Abhängigkeiten von einfachen Implementierungspaketen {#simple-deployment-package-dependencies}
 
 Im einfachen Fall hängt das veränderliche Inhaltspaket `ui.content` vom unveränderlichen Code-Paket `ui.apps` ab.
 
@@ -300,7 +300,7 @@ Im einfachen Fall hängt das veränderliche Inhaltspaket `ui.content` vom unver�
    + `ui.apps` hat keine Abhängigkeiten
    + `ui.content` hängt von `ui.apps` ab
 
-### Abhängigkeiten von komplexen Bereitstellungspaketen {#complex-deploxment-package-dependencies}
+### Abhängigkeiten von komplexen Implementierungspaketen {#complex-deploxment-package-dependencies}
 
 Komplexe Implementierungen gehen über den einfachen Fall hinaus und legen Abhängigkeiten zwischen den entsprechenden veränderbaren Inhalten und unveränderlichen Code-Paketen fest. Abhängigkeiten können bei Bedarf auch zwischen unveränderlichen Code-Paketen festgelegt werden.
 
@@ -311,7 +311,7 @@ Komplexe Implementierungen gehen über den einfachen Fall hinaus und legen Abhä
    + `site-b.ui.apps` hängt von `common.ui.apps` ab
    + `site-b.ui.content` hängt von `site-b.ui.apps` ab
 
-## Lokale Entwicklung und Bereitstellung {#local-development-and-deployment}
+## Lokale Entwicklung und Implementierung {#local-development-and-deployment}
 
 Die in diesem Artikel beschriebenen Projektstrukturen und -organisationen sind mit AEM-Instanzen für die lokale Entwicklung **vollständig kompatibel**.
 
@@ -381,7 +381,7 @@ In der `ui.content/pom.xml` deklariert die `<packageType>content</packageType>`-
     ...
 ```
 
-### Markieren von Paketen für die Bereitstellung über Adobe Cloud Manager {#cloud-manager-target}
+### Markieren von Paketen für die Implementierung über Adobe Cloud Manager {#cloud-manager-target}
 
 Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Container-Projekts (`all`), `<cloudManagerTarget>none</cloudManagerTarget>` der `<properties>`-Konfiguration der `filevault-package-maven-plugin`-Plug-in-Deklaration hinzu, um sicherzustellen, dass sie **nicht** von Adobe Cloud Manager bereitgestellt werden. Das Container-Paket (`all`) sollte das Einzelpaket sein, das über Cloud Manager bereitgestellt wird. Dadurch werden alle erforderlichen Code- und Inhaltspakete eingebettet.
 
@@ -405,9 +405,9 @@ Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Conta
 
 ### Repo Init{#snippet-repo-init}
 
-Repo Init-Skripte, die die Repo Init-Skripte enthalten, werden in der `RepositoryInitializer`-OSGi-Werkskonfiguration über die `scripts`-Eigenschaft definiert. Beachten Sie, dass diese Skripte, die in OSGi-Konfigurationen definiert sind, einfach im Ausführungsmodus mit der üblichen `../config.<runmode>` Ordnersemantik erfasst werden können.
+Repo Init-Skripte, die die Repo Init-Skripte enthalten, werden in der `RepositoryInitializer`-OSGi-Werkskonfiguration über die `scripts`-Eigenschaft definiert. Da diese Skripte in OSGi-Konfigurationen definiert sind, können sie mithilfe der üblichen `../config.<runmode>`-Ordnersemantik problemlos vom Ausführungsmodus erfasst werden.
 
-Da Skripten normalerweise mehrzeilige Deklarationen sind, ist es einfacher, sie in der Datei `.config` zu definieren als im JSON-basierten `.cfg.json`-Format.
+Da es sich bei Skripten normalerweise um mehrzeilige Deklarationen handelt, ist es einfacher, sie in der `.config`-Datei zu definieren als im JSON-Basisformat `.cfg.json`.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
