@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '71'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 63%
 + [Wesentliche Änderungen](changes.md)
 + Architektur {#architecture}
    + [Magento-Integration](architecture/magento.md)
-   + [Drittanbieter-Commerce-Integration](architecture/third-party.md)
+   + [Integration mit Commerce-Systemen von Drittanbietern ](architecture/third-party.md)
 + [Erste Schritte](getting-started.md)
-+ [Entwickeln mit AEM Cloud Service SDK](develop.md)
++ [Mit dem AEM Cloud Service-SDK entwickeln](develop.md)
 + Konfigurieren {#configure}
    + [Verwendung mehrerer Vorlagen](configuring/multi-template-usage.md)
-   + [Multi-Store-Setup](configuring/multi-store-setup.md)
-   + [URLs für SEO konfigurieren](configuring/advanced-url-configuration.md)
+   + [Multi-Store-Einrichtung](configuring/multi-store-setup.md)
+   + [Konfigurieren von URLs für SEO](configuring/advanced-url-configuration.md)
    + [Zwischenspeicheroptionen](configuring/caching.md)
 + Anpassen {#customize}
-   + [Formatieren von CIF-Komponenten](customizing/style-cif-component.md)
-   + [CIF-Komponenten anpassen](customizing/customize-cif-components.md)
+   + [Festlegen des Stils von CIF-Komponenten](customizing/style-cif-component.md)
+   + [Anpassen von CIF-Komponenten](customizing/customize-cif-components.md)
 + [Häufig gestellte Fragen (FAQ)](faq.md)
