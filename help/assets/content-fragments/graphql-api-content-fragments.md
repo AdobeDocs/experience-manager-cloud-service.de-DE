@@ -145,7 +145,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datenart
 |--- |--- |--- |
 | Einzelzeilentext | Zeichenfolge, [Zeichenfolge] |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet |
 | Mehrzeiliger Text | Zeichenfolge |  Dient zum Ausgeben von Text, z. B. der Textkörper eines Artikels |
-| Nummer |  Float, [Float] | Zur Anzeige von Gleitkommazahlen und regelmäßigen Zahlen |
+| Zahl |  Float, [Float] | Zur Anzeige von Gleitkommazahlen und regelmäßigen Zahlen |
 | Boolesch |  Boolesch |  Dient zum Anzeigen von Kontrollkästchen → einfache true/false-Anweisungen |
 | Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen |
 | Aufzählung |  Zeichenfolge |  Dient zum Anzeigen einer Option aus einer Liste von Optionen, die bei der Modellerstellung definiert wurden |
