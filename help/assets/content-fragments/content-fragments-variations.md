@@ -230,13 +230,12 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
->
->Englisch ist standardmäßig verfügbar.
->Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
->* [Französisch (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Deutsch (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italienisch (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanisch (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+Englisch ist standardmäßig verfügbar.
+Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
+* [Französisch (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Deutsch (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italienisch (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [Spanisch (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -310,8 +309,7 @@ Anmerkungen:
 * Werden sowohl im Vollbildmodus als auch im Normalmodus des Editors als hervorgehobener Text angezeigt. Die vollständigen Details einer Anmerkung können dann angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den hervorgehobenen Text klicken. Dann wird das Dialogfeld erneut geöffnet.
 
    >[!NOTE]
-   >
-   >Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
+   Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
 
 * Wenn Sie den gesamten Text löschen, auf den die Anmerkung angewendet wurde, wird der Kommentar ebenfalls gelöscht.
 
@@ -332,13 +330,11 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/h
 Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Die Formatierung kann erfolgen, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
->
->Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
->Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
->
->Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
+Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor über der Position, an der Sie das Bild hinzufügen möchten.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Asset einfügen**.
@@ -355,10 +351,9 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
-   >
-   >Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
-   >* **Klartext:** Das Asset geht im Fragment vollständig verloren.
-   >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
+   Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
+   * **Klartext:** Das Asset geht im Fragment vollständig verloren.
+   * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
 <!--
@@ -418,8 +413,7 @@ So erstellen Sie eine neue Variante:
 1. Wählen Sie **Hinzufügen** aus. Das Fragment **Master**[ wird in die neue Variante kopiert, die nun zur Bearbeitung geöffnet ist](#editing-a-variation).
 
    >[!NOTE]
-   >
-   >Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
+   Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
 
 ### Bearbeiten einer Variante      {#editing-a-variation}
 
@@ -443,8 +437,7 @@ So benennen Sie eine vorhandene Variante um:
 1. Bestätigen Sie die Aktion **Umbenennen**.
 
 >[!NOTE]
->
->Dies wirkt sich nur auf den **Namen** der Variante aus.
+Dies wirkt sich nur auf den **Namen** der Variante aus.
 
 ### Löschen einer Variante {#deleting-a-variation}
 
@@ -457,8 +450,7 @@ So löschen Sie eine vorhandene Variante:
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
 >[!NOTE]
->
->**Master** kann nicht gelöscht werden.
+**Master** kann nicht gelöscht werden.
 
 ### Mit Master synchronisieren {#synchronizing-with-master}
 
@@ -467,11 +459,10 @@ So löschen Sie eine vorhandene Variante:
 Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der Master-Version. Dadurch können Sie an Master vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
->
->Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variante* zu kopieren.
->Es wird nur das aktuelle Element der Variante synchronisiert.
->Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
->Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übertragen.
+Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variante* zu kopieren.
+Es wird nur das aktuelle Element der Variante synchronisiert.
+Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
+Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übertragen.
 
 1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass **Master** bearbeitet wurde.
 1. Es gibt folgende Möglichkeiten, eine bestimmte Variante sowie die entsprechende Synchronisierung auszuwählen:
