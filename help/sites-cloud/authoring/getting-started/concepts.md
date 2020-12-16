@@ -15,7 +15,7 @@ ht-degree: 100%
 Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
 
 * Autor
-* Veröffentlichen
+* Veröffentlichung
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher darauf zuzugreifen können.
 
