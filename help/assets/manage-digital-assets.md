@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '4407'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 
 >[!NOTE]
 >
->* Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Marketing Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht [!UICONTROL Geordnet] aus.
+>* Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Experience Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht [!UICONTROL Geordnet] aus.
 >* In Experience Manager ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dies ist ein Keyword, das für Knoten reserviert ist, die Teil-Assets für ebenenübergreifende Assets enthalten.
 
 
@@ -47,7 +47,7 @@ Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Reposito
 
 ![OSGi-Konfiguration zur Erkennung doppelter Assets](assets/duplicate-detection.png)
 
-Sie können die Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` im benutzerdefinierten Code hinzufügen und die Datei kann Folgendes enthalten:
+Sie können die Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in benutzerdefiniertem Code hinzufügen und die Datei kann Folgendes enthalten:
 
 ```json
 {
@@ -91,7 +91,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabeformate weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
+1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -125,7 +125,7 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 
 * Asset-ID, Erstellungsdatum und -zeitpunkt sowie Versionen und Versionsverlauf. Einige dieser Eigenschaften sind an den Eigenschaften `jcr:uuid`, `jcr:created` und `cq:name` zu erkennen.
 
-* Der Erstellungszeitpunkt und referenzierte Pfade sind für jedes Asset und jede seiner Wiedergaben eindeutig.
+* Der Erstellungszeitpunkt und referenzierte Pfade sind für jedes Asset und jede seiner Ausgabedarstellungen eindeutig.
 
 Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
 
@@ -185,19 +185,19 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
-### Verwalten von Ausgabeformaten {#managing-renditions}
+### Verwalten von Ausgabedarstellungen {#managing-renditions}
 
-1. Sie können Ausgabeformate für ein Asset hinzufügen oder entfernen, mit Ausnahme des Originals. Navigieren Sie zum Speicherort des Assets, für das Sie Ausgabeformate hinzufügen oder entfernen möchten.
+1. Sie können Ausgabedarstellungen für ein Asset hinzufügen oder entfernen, mit Ausnahme des Originals. Navigieren Sie zum Speicherort des Assets, für das Sie Ausgabedarstellungen hinzufügen oder entfernen möchten.
 
 1. Tippen oder klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie in der Liste **[!UICONTROL Ausgabeformate]** aus.
+1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie in der Liste **[!UICONTROL Ausgabedarstellungen]** aus.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. Im Bereich **[!UICONTROL Ausgabeformate]** wird die Liste der für das Asset generierten Ausgabeformate angezeigt.
+1. Im Bereich **[!UICONTROL Ausgabedarstellungen]** wird die Liste der für das Asset generierten Ausgabedarstellungen angezeigt.
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -205,33 +205,33 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Standardmäßig zeigt [!DNL Experience Manager Assets] nicht die ursprüngliche Darstellung des Assets im Modus &quot;Vorschau&quot;an. Als Administrator können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass Originaldarstellungen im Modus &quot;Vorschau&quot;angezeigt werden.
 
-1. Wählen Sie ein Ausgabeformat aus, um es anzuzeigen oder zu löschen.
+1. Wählen Sie eine Ausgabedarstellung aus, um sie anzuzeigen oder zu löschen.
 
-   **Löschen eines Ausgabeformats**
+   **Löschen einer Ausgabedarstellung**
 
    Wählen Sie im Bereich **[!UICONTROL Ausgabedarstellungen]** eine Ausgabedarstellung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung löschen]**. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Ein neues Ausgabeformat hochladen**
+   **Eine neue Ausgabedarstellung hochladen**
 
-   Navigieren Sie zur Seite mit Asset-Details und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabeformat hinzufügen]**, um ein neues Ausgabeformat für das Asset hochzuladen.
+   Navigieren Sie zur Seite mit Asset-Details und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabedarstellung hinzufügen]**, um eine neue Ausgabedarstellung für das Asset hochzuladen.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >Wenn Sie ein Ausgabeformat im Bedienfeld **[!UICONTROL Ausgabeformate]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für das Ausgabeformat relevanten Aktionen angezeigt werden. Optionen wie das Symbol „Ausgabeformat hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
+   >Wenn Sie eine Ausgabedarstellung im Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für die Ausgabedarstellung relevanten Aktionen angezeigt werden. Optionen wie das Symbol „Ausgabedarstellungen hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
-   Sie können die Dimensionen für das anzuzeigende Ausgabeformat auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Je nach den angegebenen Abmessungen zeigt Assets die Darstellung mit den exakten oder engsten Abmessungen an.
+   Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Je nach den angegebenen Abmessungen zeigt Assets die Darstellung mit den exakten oder engsten Abmessungen an.
 
-   Überlagern Sie zum Konfigurieren der Ausgabeformatabmessungen eines Bildes auf der Asset-Detailebene den Knoten `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) und konfigurieren Sie den Wert für die width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um das Ausgabeformat auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft `preferOriginal` der Originalgröße den Vorzug, wenn das angepasste Ausgabeformat größer ist als das Original.
+   Überlagern Sie zum Konfigurieren der Ausgabedarstellungsabmessungen eines Bildes auf der Asset-Detailebene den Knoten `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) und konfigurieren Sie den Wert für die width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft `preferOriginal` der Originalgröße den Vorzug, wenn die angepasste Ausgabedarstellung größer ist als das Original.
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern von `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` anpassen.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   Navigieren Sie zur Konfiguration der Ausgabeformatabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
+   Navigieren Sie zur Konfiguration der Ausgabedarstellungsabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/down
 
 >[!CAUTION]
 >
->Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Wiedergabeformate fehlen. Warten Sie entweder bis, die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann bzw. veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
+>Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungenen fehlen. Warten Sie entweder bis, die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann bzw. veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Rückgängigmachen der Veröffentlichung von Assets {#unpublishing-assets}
 
@@ -343,7 +343,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Der Ordner wird angezeigt, nachdem [!DNL Experience Manager] Sie authentifiziert hat.
 
-## Suchen von Assets         {#search-assets}
+## Suchen von Assets  {#search-assets}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -381,7 +381,7 @@ Mit den Bearbeitungswerkzeugen in der [!DNL Experience Manager Assets]-Oberfläc
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
-1. Verwenden Sie das Symbol **Fertig** (in der rechten oberen Ecke), um das Bild zu beschneiden. Durch Klicken auf **Fertigstellen** wird auch die Neuerstellung von Ausgabeformaten ausgelöst.
+1. Verwenden Sie das Symbol **Fertig** (in der rechten oberen Ecke), um das Bild zu beschneiden. Durch Klicken auf **Fertigstellen** wird auch die Neuerstellung von Ausgabedarstellungen ausgelöst.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -411,19 +411,19 @@ Mit den Bearbeitungswerkzeugen in der [!DNL Experience Manager Assets]-Oberfläc
 >
 >Zum Bearbeiten einer TXT-Datei verwenden Sie **Day CQ Link Externalizer** in Configuration Manager.
 
-## Timeline {#timeline}
+## Zeitleiste {#timeline}
 
-In der Timeline können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
+In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
 
-![Sortieren von Timeline-Einträgen für ein Asset](assets/sort_timeline.gif)*Abbildung: Sortieren von Timeline-Einträgen für ein Asset*
-
->[!NOTE]
->
->In der [Konsole für Sammlungen](/help/assets/manage-collections.md#navigate-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Timeline nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
+![Sortieren von Zeitleisten-Einträgen für ein Asset](assets/sort_timeline.gif) *Abbildung: Sortieren von Zeitleisten-Einträgen für ein Asset*
 
 >[!NOTE]
 >
->Die Timeline enthält mehrere [inhaltsfragmentspezifische Optionen](content-fragments/content-fragments.md).
+>In der [Konsole für Sammlungen](/help/assets/manage-collections.md#navigate-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
+
+>[!NOTE]
+>
+>Die Zeitleiste enthält mehrere [inhaltsfragmentspezifische Optionen](content-fragments/content-fragments.md).
 
 ## Anmerken {#annotating}
 
@@ -433,17 +433,17 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 >[!NOTE]
 >
->Bei Inhaltsfragmenten werden [Anmerkungen im Fragment-Editor erstellt](content-fragments/content-fragments.md).
+>Bei Inhaltsfragmenten werden [Anmerkungen im Fragmenteditor erstellt](content-fragments/content-fragments.md).
 
 1. Navigieren Sie zum Speicherort des Assets, dem Sie Anmerkungen hinzufügen möchten.
 1. Tippen oder klicken Sie in einem der folgenden Elemente auf das Symbol **[!UICONTROL Anmerken]**:
 
    * [Schnellaktionen](#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
+1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -472,7 +472,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >
    >Sie können Video-Assets auch Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](manage-video-assets.md).
 
-1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Eigene Voreinstellungen]**.
+1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Benutzereinstellungen]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -488,15 +488,15 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus der Liste aus.
+1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus der Liste aus.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
+1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Tippen oder klicken Sie im Bedienfeld **[!UICONTROL Timeline]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
+   Tippen oder klicken Sie im Bedienfeld **[!UICONTROL Zeitleiste]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
@@ -514,13 +514,13 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Zum Drucken aller Anmerkungen und des Prüfungsstatus überspringen Sie Schritt 3. Dann fahren Sie direkt mit Schritt 4 fort.
-   * Zum Drucken bestimmter Anmerkungen und des Prüfungsstatus öffnen Sie die [Timeline](/help/assets/manage-digital-assets.md#timeline) und fahren Sie mit Schritt 3 fort.
+   * Zum Drucken bestimmter Anmerkungen und des Prüfungsstatus öffnen Sie die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) und fahren Sie mit Schritt 3 fort.
 
-1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Timeline aus.
+1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Zeitleiste aus.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Timeline aus.
+   Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Zeitleiste aus.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -546,7 +546,7 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farbcode. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/manage-digital-assets.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -562,7 +562,7 @@ In folgenden Szenarien werden Versionen erstellt:
 * Sie können die Metadaten eines Assets bearbeiten.
 * Verwenden Sie die [!DNL Experience Manager]-Desktop-App, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Eine neue Version wird jedes Mal erstellt, wenn das Asset gespeichert wird.
 
-Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabeformate gemeinsam mit der Version gespeichert. Ausgabeformate sind gerenderte Alternativen für dieselben Bilder, z. B. ein PNG-Ausgabeformat einer hochgeladenen JPEG-Datei.
+Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabedarstellungen gemeinsam mit der Version gespeichert. Ausgabedarstellungen sind gerenderte Alternativen für dieselben Bilder, z. B. eine PNG-Ausgabedarstellung einer hochgeladenen JPEG-Datei.
 
 Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
@@ -572,9 +572,9 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
 1. Navigieren Sie zum Speicherort des Assets, von dem Sie eine Version erstellen möchten, und klicken/tippen Sie darauf, um seine Asset-Seite zu öffnen.
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus.
+1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus.
 
-   ![Timeline](assets/timeline.png)
+   ![Zeitleiste](assets/timeline.png)
 
 1. Tippen oder klicken Sie unten auf das Symbol **[!UICONTROL Aktionen]** (Pfeil), um die verfügbaren Aktionen anzuzeigen, die Sie am Asset durchführen können.
 
@@ -588,7 +588,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Um die neue Version anzuzeigen, öffnen Sie in der Timeline die Liste **[!UICONTROL Alle anzeigen]** auf der Detailseite für Assets oder der Assets-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Timeline“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
+1. Um die neue Version anzuzeigen, öffnen Sie in der Zeitleiste die Liste **[!UICONTROL Alle anzeigen]** auf der Detailseite für Assets oder der Assets-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Zeitleiste“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
 
    ![versions_option](assets/versions_option.png)
 
@@ -606,14 +606,14 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. Wählen Sie in der Timeline die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
+1. Wählen Sie in der Zeitleiste die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
 
    ![compare_versions](assets/compare_versions.png)
 
 ### Starten eines Workflows für ein Asset {#starting-a-workflow-on-an-asset}
 
 1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und tippen/klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie im Menü die Option **[!UICONTROL Timeline]**, um die Timeline anzuzeigen.
+1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie im Menü die Option **[!UICONTROL Zeitleiste]**, um die Zeitleiste anzuzeigen.
 
    ![timeline-1](assets/timeline-1.png)
 
@@ -633,7 +633,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Um zu bestätigen, tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Start]** und anschließend auf **[!UICONTROL Weiter]**. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
+1. Um zu bestätigen, tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Start]** und anschließend auf **[!UICONTROL Weiter]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
