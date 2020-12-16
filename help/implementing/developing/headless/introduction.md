@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die Grafik-QL-API können AEM als Cloud Service Ihre Erlebnisse zentral verwalten und sie über Kanal hinweg bereitstellen.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Implementierung ohne Kopf wird immer wichtiger, wenn Sie Erlebnisse für Ihre Audience bereitstellen möchten, egal wo sie sich befinden und unabhängig vom Kanal.
 
@@ -37,7 +37,7 @@ AEM als Cloud Service ist ein flexibles Instrument für das kostenlose Implement
 1. Content API für Versand
    * Die AEM GraphQL API unterstützt Content Fragment Versand.
    * Die AEM Assets REST API unterstützt Content Fragment CRUD-Vorgänge.
-   * Der Versand für direkte Inhalte ist auch beim JSON-Export der [Inhaltsfragment-Core-Komponente möglich.](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
+   * Der Versand für direkte Inhalte ist auch beim JSON-Export der [Inhaltsfragment-Core-Komponente möglich.](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Kopflose Erste Schritte - Guides {#getting-started}
 
