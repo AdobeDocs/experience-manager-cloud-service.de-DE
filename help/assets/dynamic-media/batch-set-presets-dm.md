@@ -1,6 +1,6 @@
 ---
 title: Stapelsatzvorgaben
-description: Erfahren Sie, wie Sie die Erstellung von Bildsätzen und Rotationssets mithilfe von Stapelsatzvorgaben in dynamischen Medien automatisieren.
+description: Erfahren Sie, wie Sie die Erstellung von Bildsätzen und Rotationssets mithilfe von Stapelsatzvorgaben in Dynamic Media automatisieren.
 contentOwner: Rick Brough
 translation-type: tm+mt
 source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
@@ -26,7 +26,7 @@ Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organis
 1. Wenden Sie die Stapelsatzvorgabe auf den Asset-Ordner an. Siehe [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
 1. Hochladen von Bildern in den Asset-Ordner. Siehe [Hochladen von Assets für Bildsätze](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Hochladen von Assets für Rotationssets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) oder [Hinzufügen digitalen Assets nach Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Erstellen Sie den Bildsatz oder das Rotationsset. Siehe [Bildsätze](/help/assets/dynamic-media/image-sets.md) oder [Rotationssets](/help/assets/dynamic-media/spin-sets.md).
-1. Veröffentlichen Sie den Bildsatz oder das Rotationsset. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Veröffentlichen Sie den Bildsatz oder das Rotationsset. Siehe [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Erstellen einer Stapelsatzvorgabe für einen Bildsatz oder ein Rotationsset {#creating-bsp}
 
@@ -153,7 +153,7 @@ Es ist ggf. erforderlich, Assets in einem Ordner neu zu verarbeiten, wenn eines 
 1. Navigieren Sie zu einem Ordner, auf den Sie eine oder mehrere Stapelsatzvorgaben anwenden möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen der Variablen
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
-1. Tippen Sie auf der Seite Eigenschaften des Ordners auf die Registerkarte **[!UICONTROL Dynamische Medienverarbeitung]**.
+1. Tippen Sie auf der Seite Eigenschaften des Ordners auf die Registerkarte **[!UICONTROL Dynamic Media Processing]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -230,7 +230,7 @@ Es gibt zwei Methoden, mit denen Sie Stapelsatzvorgaben aus Ordnern entfernen k�
 1. Navigieren Sie zu einem Ordner, in den Sie eine oder mehrere Stapelsatzvorgaben entfernen möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen eines Ordners.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
-1. Tippen Sie auf der Seite Eigenschaften des Ordners auf **[!UICONTROL Dynamische Medienverarbeitung]**.
+1. Tippen Sie auf der Seite Eigenschaften des Ordners auf **[!UICONTROL Dynamic Media Processing]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -240,7 +240,7 @@ Es gibt zwei Methoden, mit denen Sie Stapelsatzvorgaben aus Ordnern entfernen k�
 
 ## Löschen von Stapelsatzvorgaben {#delete-bsp}
 
-Sie können Stapelsatzvorgaben löschen, um sie dauerhaft von [!DNL Dynamic Media] zu entfernen. Das heißt, sie werden nicht mehr auf der Seite [!UICONTROL Stapelsatzvorgabe] angezeigt und auch nicht in der Dropdown-Liste **[!UICONTROL Stapelsatzvorgabe(en)]** der Registerkarte **[!UICONTROL Dynamische Medienverarbeitung]** auf der Seite **[!UICONTROL Eigenschaften]** des Ordners. Daher wird die Vorgabe nicht auf vorhandene Assets angewendet, die bei einer Ordnerneuverarbeitung oder beim Hochladen neuer Assets in den Ordner erneut verarbeitet werden.
+Sie können Stapelsatzvorgaben löschen, um sie dauerhaft von [!DNL Dynamic Media] zu entfernen. Das heißt, sie werden nicht mehr auf der Seite [!UICONTROL Stapelsatzvorgabe] angezeigt und auch nicht in der Dropdown-Liste **[!UICONTROL Dynamic Media-Verarbeitung]** auf der Ordnerseite **[!UICONTROL Eigenschaften]**. ]****[!UICONTROL  Daher wird die Vorgabe nicht auf vorhandene Assets angewendet, die bei einer Ordnerneuverarbeitung oder beim Hochladen neuer Assets in den Ordner erneut verarbeitet werden.
 
 Wenn Sie eine Vorgabe löschen, die zuvor auf einen oder mehrere Ordner angewendet wurde, werden Bildsätze oder Rotationssets, die aus Assets in diesen Ordnern erstellt wurden, weiterhin unverändert angezeigt.
 
@@ -262,7 +262,7 @@ Wenn Sie stattdessen nur *Vorgaben aus Ordnern entfernen möchten, lesen Sie [En
 
 >[!MORELIKETHIS]
 >
->* [Bild-Sets](/help/assets/dynamic-media/image-sets.md)
->* [Rotations-Sets](/help/assets/dynamic-media/spin-sets.md)
->* [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in dynamischen Medien](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Weitere Informationen zum Synchronisieren eines einzelnen Ordners mit finden Sie unter &quot;Synchronisierungsmodus&quot;im Thema  [!DNL Dynamic Media].
->* [Erstellen einer neuen Konfiguration für dynamische Medien in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Weitere Informationen zum Synchronisieren aller Ordner mit finden Sie unter &quot;Synchronisierungsmodus für dynamische Medien&quot; [!DNL Dynamic Media].
+>* [Bildsets](/help/assets/dynamic-media/image-sets.md)
+>* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
+>* [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Weitere Informationen zum Synchronisieren eines einzelnen Ordners mit finden Sie unter &quot;Synchronisierungsmodus&quot; [!DNL Dynamic Media].
+>* [Erstellen einer neuen Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Weitere Informationen zum Synchronisieren aller Ordner mit finden Sie unter &quot;Dynamic Media-Synchronisierungsmodus&quot; [!DNL Dynamic Media].
