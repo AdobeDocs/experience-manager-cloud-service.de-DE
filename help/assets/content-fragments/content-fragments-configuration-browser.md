@@ -2,10 +2,10 @@
 title: Inhaltsfragmente - Konfigurationsbrowser
 description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 42%
+source-wordcount: '263'
+ht-degree: 38%
 
 ---
 
@@ -42,19 +42,25 @@ Um [bestimmte Inhaltsfragment-Funktionen zu verwenden, müssen Sie ](#creating-a
 >
 >Weitere Informationen finden Sie unter [Konfigurationsbrowser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
+>[!CAUTION]
+>
+>Unterkonfigurationen (eine in einer Konfiguration verschachtelte Konfiguration) werden für die Verwendung mit Inhaltsfragmenten nicht unterstützt.
+
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
-2. Wählen Sie den entsprechenden Speicherort für Ihre Web-Seite aus.
-3. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
+
+1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
-   2. Um ihre Verwendung zu aktivieren, wählen Sie
+   1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
       * **GraphQL Persistente Abfragen**
 
       ![Konfiguration definieren](assets/cfm-conf-01.png)
 
 
-4. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
+1. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Wenden Sie die Konfiguration auf Ihren Assets-Ordner an {#apply-the-configuration-to-your-assets-folder}
 
