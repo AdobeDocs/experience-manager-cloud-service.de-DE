@@ -10,7 +10,7 @@ ht-degree: 29%
 ---
 
 
-# Überblick{#overview-best-practices-analyzer}
+# Überblick {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
