@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '423'
-ht-degree: 18%
+ht-degree: 84%
 
 ---
 
@@ -18,21 +18,21 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.8.0 ist der 06. August 2020.
 
-## Neue Funktionen {#whats-new-cloud-manager}
+## Neuerungen {#whats-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die auf den Produktionslinien der Cloud Manager-Sites aktiviert ist. Die Produktionspipelinekonfiguration für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content-Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
 
    >[!NOTE]
-   >Content Audit wurde seither in Experience Audit umbenannt.
+   >Content Audit wurde inzwischen in Experience Audit umbenannt.
 
-   Weitere Informationen finden Sie unter [Erlebnis-Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
+   Weitere Informationen finden Sie unter [Experience Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
 
-* Neu erstellte Umgebung in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
+* Neu erstellte Umgebungen in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
-* Hibernated-Umgebung können von der **Overview**-Seite des Cloud-Managers entfernt werden.
+* Der Ruhezustand von im Ruhezustand befindlichen Umgebungen kann auf der Seite **Überblick** von Cloud Manager aufgehoben werden.
 
-* Möglichkeit zur Durchführung von Erlebnisprüfungen auf Seiten, powered by Google Lighthouse. Im Rahmen der Cloud Manager-Pipeline können bis zu 25 Seiten überprüft und anhand von Erlebnis-KPIs validiert werden. Die Ergebnisse werden in der Benutzeroberfläche von Cloud Manager angezeigt.
+* Möglichkeit zur Durchführung von Erlebnisprüfungen auf Seiten, die über Google Lighthouse bereitgestellt werden. Als Teil der Cloud Manager-Pipeline können bis zu 25 Seiten anhand von Erlebnis-KPIs geprüft und validiert werden. Die Bewertungen werden in der Cloud Manager-Benutzeroberfläche angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -44,20 +44,20 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.8.0
 
 * Pipeline-Ausführungen blieben gelegentlich aufgrund interner Kommunikationsprobleme *stecken*.
 
-* Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit Administratorrollen, die keine Systemadministratoren waren, fälschlicherweise Zugriff auf Cloud Manager.
+* Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit anderen administrativen Rollen als Systemadministratoren fälschlicherweise Zugriff auf Cloud Manager.
 
-* Unter bestimmten Umständen wurde der Aktualisierungsindexauftrag mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
+* Unter bestimmten Umständen wurde der Vorgang zur Indexaktualisierung mehrmals parallel gestartet, was zu einem Implementierungsfehler führte.
 
 * Die QuickInfo auf den Programmkarten war nicht immer korrekt.
 
-* Die Benutzeroberfläche erlaubte irrtümlicherweise den Versuch, Vorgänge auf einer Umgebung auszuführen, während diese gelöscht wurde.
+* Die Benutzeroberfläche erlaubte fälschlicherweise, dass Vorgänge in einer Umgebung gestartet wurden, während sie gelöscht wurde.
 
-* Auf der Seite **Übersicht** des Cloud-Managers ist eine Farbabweichung aufgetreten.
+* Auf der **Übersichtsseite von Cloud Manager** traten Farbabweichungen auf.
 
 ### Bekannte Probleme {#known-issues-cm}
 
-* Es sind ungültige Seiten enthalten, die die durchschnittliche Inhaltsprüfung unter den gewünschten Werten bringen.
+* Es sind ungültige Seiten enthalten, die den Content Audit-Durchschnittswert unter den erwarteten Wert bringen.
 
-* Auf der Registerkarte &quot;Content Audit&quot;wird die Basis-URL fälschlicherweise unter Verwendung der Autorendomäne anstelle der Veröffentlichungsdomäne angezeigt.
+* Auf der Registerkarte „Content Audit“ wird die Basis-URL unter Verwendung der Autoren-Domain anstelle der Veröffentlichungs-Domain falsch angezeigt.
 
-* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
+* Um den Schritt „Content Audit“ zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
