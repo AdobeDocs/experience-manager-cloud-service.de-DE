@@ -33,7 +33,7 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Sets für gemischte Medien](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
 
-* [Rotations-Sets](spin-sets.md)
+* [Rotationssets](spin-sets.md)
 * [Video](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
