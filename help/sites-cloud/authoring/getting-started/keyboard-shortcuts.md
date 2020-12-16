@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Ort | Kürzel | Beschreibung |
+| Standort | Kürzel | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl |
 | Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
@@ -72,7 +72,7 @@ Für Benutzer, die keine Tastaturbefehle verwenden oder bei denen bestimmte Anfo
 
 Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 
-* [Eigene Voreinstellungen](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
+* [Benutzereinstellungen](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [Hilfemenü](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 
 >[!NOTE]
