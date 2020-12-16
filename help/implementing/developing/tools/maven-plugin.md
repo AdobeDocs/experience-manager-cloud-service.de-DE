@@ -34,7 +34,7 @@ AEM 6.5 befolgt die neuesten Best Practices für Paketverwaltung und Projektstru
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der [AEM Projektarchiv](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM als Cloud Service-Dokumentation sowie in der [AEM Projektarchiv](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/archetype/overview.html)-Dokumentation. Beide werden für AEM 6.5 vollständig unterstützt.
 
 ## Abrufen des Inhaltspaket-Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
