@@ -1,5 +1,5 @@
 ---
-title: Barrierefreiheit in [!DNL Dynamic Media]
+title: Barrierefreiheit in  [!DNL Dynamic Media]
 description: Erfahren Sie mehr über Barrierefreiheit in Dynamic Media- und Dynamic Media-Viewern.
 contentOwner: Rick Brough
 topic-tags: introduction
@@ -7,8 +7,8 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
