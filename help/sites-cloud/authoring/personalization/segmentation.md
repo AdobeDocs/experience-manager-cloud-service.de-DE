@@ -1,6 +1,6 @@
 ---
 title: Grundlegendes zur Segmentierung
-description: Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss.
+description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 96%
 
 # Grundlegendes zur Segmentierung {#understanding-segmentation}
 
-Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
 
 Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing.
 
@@ -47,7 +47,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
    * Größe der Familie
    * Familienstand
    * Geschlecht
-   * Ort
+   * Standort
 * **Abgeleitete Eigenschaften** : Einige demografische Eigenschaften lassen sich ohne Registrierung nur schwer ermitteln, können aber durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
    * Beispielsweise können Besitzer von Sites durch Kombination der verweisenden URL (als Verhaltenseigenschaft) mit demografischen Informationen (ermittelt mithilfe von Tools wie [Google Ad Planner](https://www.google.com/adplanner/)) demografische Eigenschaften ihrer Besucher ableiten.
 * **Untersegment**: Ein Segment kann in mehrere Untersegmente unterteilt werden. Dies geschieht über das Definieren weiterer Eigenschaften.
