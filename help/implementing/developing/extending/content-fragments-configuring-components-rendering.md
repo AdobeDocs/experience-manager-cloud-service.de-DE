@@ -26,12 +26,15 @@ Es wird empfohlen, die Kernkomponenten zu verwenden.
 >[!CAUTION]
 >
 >* **Wenn Sie die unten beschriebenen [erweiterten Dienste](#definition-of-advanced-services-that-need-configuration)** nicht benötigen, können Sie diese Konfiguration ignorieren.
+   >
+   >
+* **Wenn Sie die vordefinierte(n) Komponente(n) erweitern oder verwenden**, wird eine Änderung der OSGi-Konfiguration nicht empfohlen.
+   >
+   >
+* **Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Dienste zu nutzen**. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
 >
->* **Wenn Sie die vordefinierte(n) Komponente(n) erweitern oder verwenden**, wird eine Änderung der OSGi-Konfiguration nicht empfohlen.
 >
->* **Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Dienste zu nutzen**. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
->
->Es wird daher empfohlen, die Kernkomponenten zu verwenden.
+Es wird daher empfohlen, die Kernkomponenten zu verwenden.
 
 ## Definition erweiterter Dienste, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
 
