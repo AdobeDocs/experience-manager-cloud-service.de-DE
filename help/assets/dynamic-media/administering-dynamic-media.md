@@ -4,8 +4,8 @@ description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigur
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 60%
 
 ---
 
