@@ -14,7 +14,7 @@ ht-degree: 49%
 
 In diesem Dokument wird beschrieben, wie Sie den [Abfrage-Builder](query-builder-api.md) durch Implementierung eines benutzerdefinierten Prädikat-Evaluators erweitern.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Der [Abfrage Builder](query-builder-api.md)-Angebot bietet eine einfache Möglichkeit, das Inhalts-Repository Abfrage. AEM enthält [eine Reihe von Prognoseauswertern](#query-builder-predicates.md), die Ihnen bei der Abfrage Ihrer Daten helfen.
 
