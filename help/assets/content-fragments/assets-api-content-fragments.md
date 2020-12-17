@@ -2,10 +2,10 @@
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
-ht-degree: 100%
+source-wordcount: '1862'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,10 @@ ht-degree: 100%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
->Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
+>
+Die aktuelle Implementierung der Assets-TTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern von Adobe Experience Manager as a Cloud Service den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
@@ -63,8 +65,8 @@ Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
 >[!NOTE]
->
 >Der Zugriff über:
+>
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
 >* `/content/path/to/page` **erfordert keine** Verwendung des `.model`-Selektors.
 
@@ -147,6 +149,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -304,32 +307,28 @@ Nutzung erfolgt über:
 
 Es gibt einige Beschränkungen:
 
-* **Varianten können weder geschrieben noch aktualisiert werden.** Werden diese Varianten einer Payload hinzugefügt (z. B. für Aktualisierungen), werden sie ignoriert. Jedoch ist die Variante über die Bereitstellung verfügbar (`GET`).
-
 * **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## Status-Codes und Fehlermeldungen {#status-codes-and-error-messages}
 
 Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden Status-Codes angezeigt:
 
-* **200** (OK)
-
-   Wird zurückgegeben, wenn:
+* **200** (OK) Zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `GET` angefordert wurde
-
    * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
-* **201** (Erstellt)
-
-   Wird zurückgegeben, wenn:
+* **201** (Erstellt) wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
 * **404** (Nicht gefunden)
-
-   Wird zurückgegeben, wenn:
+Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 
@@ -339,8 +338,8 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    >
    >Dieser Fehler wird zurückgegeben:
    >
-   >    * wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
-   >    * wenn als Payload „null“ angegeben ist
+   >* wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
+   >* wenn als Payload „null“ angegeben ist
 
 
    Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
@@ -382,6 +381,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 ## API-Referenz   {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
