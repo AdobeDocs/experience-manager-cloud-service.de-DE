@@ -1,19 +1,17 @@
 ---
 title: Hinweis zur Einstellung von Flash-Viewer
-description: Mit Wirkung vom 31. Januar 2017 wird die Flash-Viewer-Plattform nicht mehr offiziell von Adobe Scene7 unterstützt.
+description: Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell nicht mehr unterstützt.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# Hinweis zur Einstellung von Flash-Viewer{#flash-viewers-end-of-life-notice}
+# Flash-Viewer-Ende{#flash-viewers-end-of-life-notice}
 
-*Ab dem 31. Januar 2017 hat Adobe Dynamic Media Classic (Scene7) offiziell die Unterstützung für die Flash Viewer-Plattform beendet.*
+Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell nicht mehr unterstützt.
 
-*Weitere Informationen zu dieser wichtigen Änderung finden Sie auf der folgenden FAQ-Website:*
-
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch[.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
