@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
-ht-degree: 35%
+source-wordcount: '3464'
+ht-degree: 34%
 
 ---
 
@@ -67,10 +67,6 @@ Diese (optionale) Logik kann auf unterschiedliche Weise implementiert werden und
 * Mit Java - [Die HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) ermöglicht einer HTML-Datei den Zugriff auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse. Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 * Verwenden von JavaScript - [Die HTML-JavaScript-Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) aktiviert eine HTML-Datei, um auf in JavaScript geschriebenen Helfercode zuzugreifen. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 * Verwendung clientseitiger Bibliotheken - Moderne Websites basieren in hohem Maße auf clientseitiger Verarbeitung, die durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie im Dokument [Verwenden clientseitiger Bibliotheken auf AEM als Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
-
-### Entwickeln eigener Komponenten {#developing-your-own-components}
-
-Dev Content here?
 
 ## Komponentenstruktur {#structure}
 
@@ -409,6 +405,14 @@ Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Kompone
 ### Feldüberprüfung {#field-validation}
 
 Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-UI-Widgets erfolgt mit der API `foundation-validation`. Weitere Informationen finden Sie in der Granite-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html).[`foundation-valdiation`
+
+### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
+
+Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis achten.
+
+Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h. wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
+
+`dialog-ready` kann verwendet werden, um in JavaScript benutzerspezifischen Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnlichen Aufgaben durchführt.
 
 ## Verhalten der Vorschau {#preview-behavior}
 
