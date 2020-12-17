@@ -3,10 +3,10 @@ title: Verarbeiten von Assets mit Asset-Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 85%
+source-wordcount: '829'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager als [!DNL Cloud Service] bietet eine Cloud-native Metho
 * Gegebenenfalls werden native Adobe-Dateiverarbeitungsdienste verwendet, um eine Ausgabe mit hoher Wiedergabetreue und einen [effizienten Umgang mit proprietären Adobe-Formaten](file-format-support.md) zu ermöglichen.
 * Möglichkeit, den Nachbearbeitungs-Workflow so zu konfigurieren, dass benutzerspezifische Aktionen und Integrationen hinzugefügt werden können.
 
-Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick und FFmpeg-Transcodierung) zu vermeiden, die Konfiguration des Systems zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen.
+Asset-Mikrodienste helfen, die Notwendigkeit von Rendering-Werkzeugen und -Methoden von Drittanbietern (z. B. ImageMagick- und FFmpeg-Transkodierung) zu vermeiden und Konfigurationen zu vereinfachen, bieten aber standardmäßig grundlegende Funktionen für gängige Dateitypen.
 
 ## Umfangreiche Architektur {#asset-microservices-architecture}
 
