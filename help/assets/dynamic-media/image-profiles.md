@@ -2,7 +2,7 @@
 title: Dynamic Media-Bildprofile
 description: Erstellen Sie Dynamic Media-Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 99%
@@ -93,7 +93,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
  </tbody>
 </table>
 
-Das Scharfzeichnen wird im Thema über das [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird im Thema über das [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
