@@ -2,10 +2,10 @@
 title: 'Verwenden von Regelsätzen zum Konvertieren von URLs '
 description: In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 98%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -17,11 +17,11 @@ In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Dienste und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
 
-   Siehe [Wie Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
+   Siehe [Wie Adobe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
 
 * Hinzufügen von Metadaten zur URL für SEO (Search Engine Optimization)
 
-   Siehe [Wie Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
+   Siehe [Wie Adobe Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
 
 * Einstellen der Content-Disposition zum Auslösen eines Downloads
 * Vereinfachen der URLs für Vorlagen zur Bildbearbeitung für die Personalisierung. Ändern Sie beispielsweise `rgb{XX,YY,ZZ}` in die RTF-fähige `\redXX\greenYY\blueZZ`
@@ -45,9 +45,11 @@ Siehe auch [Fehlerbehebung in Regelsätzen](https://helpx.adobe.com/de/experienc
 Stellen Sie außerdem sicher, dass der Regelsatz zunächst in einer Staging-Umgebung getestet wurde, die sich nicht auf die Live-Produktionsumgebung auswirkt.
 Für Produktions- und Testumgebungen sind in der Regel unterschiedliche Anmeldungen erforderlich.
 
-* Anmeldeseite **NA-Staging-Umgebung**: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* Anmeldeseite **EMEA-Staging-Umgebung**: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* Anmeldeseite **JAPAC-Staging-Umgebung**: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Informationen zum Anmelden finden Sie unter [Adobe Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regelsatz](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
