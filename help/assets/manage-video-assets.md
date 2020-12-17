@@ -3,10 +3,10 @@ title: Verwalten von Video-Assets
 description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '616'
+ht-degree: 80%
 
 ---
 
@@ -28,17 +28,17 @@ Lernen Sie, wie Sie die Video-Assets in [!DNL Adobe Experience Manager Assets] v
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
 
-Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seite einbeziehen oder die Assets direkt einbetten. Weitere Informationen finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seite einbeziehen oder die Assets direkt einbetten. Weitere Informationen finden Sie unter [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transkodieren mit Verarbeitungsprofil {#transcode-video}
 
 [!DNL Experience Manager][!DNL Cloud Service] as a erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
 
-![Erstellen von Verarbeitungsprofilen zum Transkodieren von Videos in Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Erstellen Sie ein Profil zur Verarbeitung für die Videotranskodierung in  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Abbildung: Ein Verarbeitungsprofil zur Videotranskodierung in [!DNL Experience Manager].*
 
-Wenn Sie nur die Breite oder Höhe angeben und das andere Feld leer lassen, wird das Seitenverhältnis bei den Ausgabedarstellungen beibehalten. Derzeit steht nur der H264-Codec für die Transkodierung zur Verfügung.
+Wenn Sie nur die Breite oder Höhe angeben und das andere Feld leer lassen, wird das Seitenverhältnis bei den Ausgabedarstellungen beibehalten. Der H.264-Videocodec ist für die Transkodierung verfügbar.
 
 Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner ein Profil hinzu. Siehe [Verwenden von Verarbeitungsprofilen zur Verarbeitung von Assets](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,8 +52,18 @@ Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner 
 
 ## Best Practices und Einschränkungen {#tips-limitations}
 
-* Ohne Dynamic Media-Lizenz können Sie MP4-Dateien nur mit Verarbeitungsprofilen verarbeiten.
-* Informationen zur grundlegenden Transkodierung mit
+* Ohne die Lizenz [!DNL Dynamic Media] können Sie nur MP4-Dateien mit verarbeitenden Profilen verarbeiten.
+* Beim Transkodieren von MP4-Dateien mit Verarbeitungsdateien gelten die folgenden Richtlinien und Einschränkungen:
+
+   * Apple ProRes-Dateien können nur bis zu einer maximalen Auflösung von 1080p transkodiert werden.
+   * Wenn die Quelldatei eine Bitrate > 200 Mbit/s aufweist, können Sie nur bis zu einer maximalen Auflösung von 1080p transkodieren.
+   * Wenn dann die Quelldatei >= 60 fps ist, können Sie die maximale Dateigröße verwenden.
+
+      * 400 MB für die Transkodierung von 4 k.
+      * 800 MB für 1080p Transkodierung.
+      * 8 GB für Transkodierung mit 720p.
+   * Die maximale Dateigröße für die Transkodierung in eine Auflösung von 4.55 GB beträgt eine Auflösung von 4.000 MB, eine Bitrate von 12 Mbit/s und 23 fps.
+
 
 >[!MORELIKETHIS]
 >
