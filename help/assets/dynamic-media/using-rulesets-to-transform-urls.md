@@ -2,10 +2,10 @@
 title: 'Verwenden von Regelsätzen zum Konvertieren von URLs '
 description: In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +17,11 @@ In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Dienste und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
 
-    Siehe [Unterstützung von SEO durch Adobe Scene7 Publishing System](/help/assets/dynamic-media/assets/s7_seo.pdf)
+   Siehe [Wie Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
 
 * Hinzufügen von Metadaten zur URL für SEO (Search Engine Optimization)
 
-    Siehe [Unterstützung von SEO durch Adobe Scene7 Publishing System](/help/assets/dynamic-media/assets/s7_seo.pdf)
+   Siehe [Wie Dynamic Media Classic SEO](/help/assets/dynamic-media/assets/s7_seo.pdf) unterstützt.
 
 * Einstellen der Content-Disposition zum Auslösen eines Downloads
 * Vereinfachen der URLs für Vorlagen zur Bildbearbeitung für die Personalisierung. Ändern Sie beispielsweise `rgb{XX,YY,ZZ}` in die RTF-fähige `\redXX\greenYY\blueZZ`
