@@ -2,10 +2,10 @@
 title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie, welche Best Practices Sie in Dynamic Media zur Optimierung der Qualität Ihrer Bild-Assets verwenden können.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 98%
+source-wordcount: '1475'
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-Das Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image-Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) gilt auch für AEM.
+Das Whitepaper Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für AEM.
 
 Sehen Sie sich [Scharfzeichnen von Bildern mit der Unschärfemaske](https://helpx.adobe.com/de/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html) in Adobe TV an.
 
@@ -65,7 +65,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       AEM-Hilfethema zum Scharfzeichnen von Bildern.
 
-      Whitepaper zu Best Practices [Scharfzeichnen von Bildern in Adobe Scene7 Publishing System und Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      White Paper Best Practices [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
    * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
@@ -117,7 +117,7 @@ Wenn die Scharfzeichnungsergebnisse noch immer nicht den Erwartungen entsprechen
 
 Beim Experimentieren können auch die folgenden allgemeinen Empfehlungen nützlich sein, um Ihren Workflow zu optimieren:
 
-* Testen Sie verschiedene Parameter in Echtzeit, entweder direkt in einer URL oder mit der Bildanpassungsfunktion von Scene7 Publishing System, die eine Echtzeitvorschau für Anpassungsvorgänge bereitstellt.
+* Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerspezifische Vorgabename in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
 * AEM bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Bei erweiterten Anwendungsfällen, bei denen dies eine Option sein könnte, um die angezeigten Ergebnisse abzustimmen und zu optimieren, kann [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) Ihnen mit kundenspezifischen Einblicken und Best Practices behilflich sein.
 
