@@ -2,10 +2,10 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '10081'
-ht-degree: 97%
+source-wordcount: '9538'
+ht-degree: 98%
 
 ---
 
@@ -402,7 +402,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 3 |
+| Quelle | 1920 x 1080 | 1 | 1 |
 | Kodiert | 960 x 540 | 2 | 2 |
 | Kodiert | 640 x 360 | 3 | 3 |
 | Kodiert | 480 x 270 | 4 | 4 |
@@ -983,72 +983,69 @@ Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-### Anzeigen von Videoberichten basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} erstellt haben
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Wenn Sie einen vordefinierten Video-Viewer verwenden, der von Dynamic Media bereitgestellt wird, oder wenn Sie eine benutzerdefinierte Viewer-Vorgabe basierend auf einem vordefinierten Video-Viewer erstellt haben, sind keine weiteren Schritte zur Ansicht von Videoberichten erforderlich. Wenn Sie jedoch Ihren eigenen Video-Viewer auf Grundlage des Dynamic Media HTML5 Viewer-SDK erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Verfolgungsdaten an Dynamic Media-Videoberichte sendet.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Verwenden Sie die Dynamic Media Viewer-Referenz und das Dynamic Media HTML5 Viewer-SDK, um eigene Video-Viewer zu erstellen.
+Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-Siehe [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
-
-<!-- 
-
-SDK ONLY AVAILABLE INTERNALLY NOW
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
--->
+**To view Video Reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK:**
 
-**So erstellen Sie Videoberichte basierend auf einem Video-Viewer, den Sie mit dem Dynamic Media HTML5 Viewer SDK erstellt haben:**
-
-1. Navigieren Sie zu einem veröffentlichten Video-Asset.
-1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
-1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Integrations-Code.
-1. Suchen Sie im Integrations-Code die folgende Zeile:
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers]**.
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Integrations-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   The correct value for the config2 parameter is found in both the **[!UICONTROL Embed Code]** and in the copy **[!UICONTROL URL]** function. In the URL from the copy **[!UICONTROL URL]** command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * Bestimmen Sie zunächst, ob Sie den Parameter `&preset` benötigen.
-Wenn der `config2`-Parameter `companypreset` lautet, benötigen Sie `&preset=parameter` *nicht*.
-Wenn `config2` irgendeinen anderen Wert aufweist, setzen Sie den preset-Parameter auf denselben Wert wie den Parameter `config2`. Beispiel: Wenn `config2=companypreset-2` lautet, fügen Sie `&param2=companypreset-2` zur AppMeasurmentBridge.jsp-URL hinzu.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * Fügen Sie dann das Skript „AppMeasurementBridge.jsp“ hinzu:
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Erstellen Sie die TrackingManager-Komponente wie folgt:
+1. Create the TrackingManager component by doing the following:
 
-   * Erstellen Sie nach dem Aufruf von `s7sdk.Utils.init();` eine TrackingManager-Instanz, um Ereignisse zu verfolgen. Fügen Sie dazu Folgendes hinzu:
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Verbinden Sie Komponenten wie folgt mit TrackingManager:
-Ordnen Sie im Ereignis-Handler `s7sdk.Event.SDK_READY` die zu verfolgende Komponente dem TrackingManager zu.
-Wenn die Komponente beispielsweise `videoPlayer` lautet, fügen Sie
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-hinzu, um die Komponente an den TrackingManager anzuhängen. Um mehrere Viewer auf einer Seite zu verfolgen, verwenden Sie mehrere TrackingManager-Komponenten.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * Erstellen Sie das Objekt „AppMeasurementBridge“, indem Sie Folgendes hinzufügen:
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Fügen Sie die Nachverfolgungsfunktion hinzu, indem Sie Folgendes hinzufügen:
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
-   Weitere Informationen dazu finden Sie im Abschnitt *Verwenden der TrackingManager-Komponente* im *Benutzerhandbuch für Scene7 HTML5 Viewer SDK*, das Sie von [Adobe Developer Connection](https://help.adobe.com/de_DE/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) herunterladen können.
+   The appMeasurementBridge object has a built-in track function. OBSOLETE However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+ -->
 
 ## Hinzufügen von Untertiteln zu Videos {#adding-captions-to-video}
 
@@ -1114,7 +1111,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 >[!NOTE]
 Der verwendete Video-Player muss die Verwendung von Kapitelmarken unterstützen. Video-Player von Dynamic Media unterstützten Kapitelmarken, die Video-Player von Drittanbietern jedoch möglicherweise nicht.
 
-Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie im Handbuch „Adobe Scene7 Viewer-SDK für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Das Adobe Scene7 Viewer-SDK ist als Download von [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) verfügbar.
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
 
