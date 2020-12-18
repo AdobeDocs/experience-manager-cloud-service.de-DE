@@ -2,9 +2,9 @@
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: So fügen Sie Dynamic Media-Komponenten einer Seite in Adobe Experience Manager als Cloud Service hinzu.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3135'
 ht-degree: 94%
 
 ---
@@ -195,8 +195,8 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
-   * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://docs.adobe.com/content/help/de/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://docs.adobe.com/content/help/de/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
