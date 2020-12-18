@@ -2,7 +2,7 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 37%
@@ -150,6 +150,8 @@ Um eine größere Anzahl von Dateien hochzuladen, führen Sie einen der folgende
 ### Asset-Masseningeting-Tool {#asset-bulk-ingestor}
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Maßstab aus Azurblaus- oder S3-Datenspeichern zu verwenden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 
