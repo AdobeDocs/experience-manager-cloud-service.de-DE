@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als [!DNL Cloud Service] unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 93%
+source-wordcount: '807'
+ht-degree: 91%
 
 ---
 
@@ -222,6 +222,10 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 ## Audioformate {#audio-formats}
 
 [!DNL Assets] as a unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.[!DNL Cloud Service]
+
+## Tipps und Einschränkungen {#limitations-and-tips}
+
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 10 GB. Beim Hochladen sehr großer Assets schlägt der Vorgang der Metadaten-Extraktion manchmal fehl.
 
 >[!MORELIKETHIS]
 >
