@@ -2,7 +2,7 @@
 title: Dynamic Media-Bildprofile
 description: Erstellen Sie Dynamic Media-Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 translation-type: tm+mt
-source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 99%
