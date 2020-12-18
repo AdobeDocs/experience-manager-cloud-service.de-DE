@@ -3,9 +3,9 @@ title: Asset-Microservices konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Microservices, um Assets mit hoher Skalierung zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 94%
 
 ---
@@ -221,6 +221,7 @@ Weitere Informationen dazu, welcher standardmäßige Workflow-Schritt im Nachbea
 
 * Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
 * Derzeit ist die Unterstützung auf das Erzeugen von Ausgabedarstellungen beschränkt. Das Erstellen neuer Assets wird nicht unterstützt.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 10 GB. Beim Hochladen sehr großer Assets schlägt der Vorgang der Metadaten-Extraktion manchmal fehl.
 
 >[!MORELIKETHIS]
 >
