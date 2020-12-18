@@ -2,9 +2,9 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
 ### Generieren des JWT-Bearer-Tokens {#generating-the-jwt-bearer-token}
 
-Benutzer mit der Administratorrolle für ein Unternehmen sehen die Registerkarte &quot;Integrationen&quot;in der Entwicklerkonsole für eine bestimmte Umgebung sowie zwei Schaltflächen. Durch Klicken auf die Schaltfläche **Dienstberechtigungen abrufen** wird der private Schlüssel, das Zertifikat und die Konfiguration generiert.
+Benutzer mit der Administratorrolle für ein Unternehmen sehen die Registerkarte &quot;Integrationen&quot;in der Entwicklerkonsole für eine bestimmte Umgebung sowie zwei Schaltflächen. Wenn Sie auf die Schaltfläche **Dienstberechtigungen abrufen** klicken, werden der private Schlüssel, das Zertifikat und die Konfiguration für Autoren- und Veröffentlichungsstufen der Umgebung generiert, unabhängig von der Pod-Auswahl.
 
 ![JWT-Erzeugung](assets/JWTtoken3.png)
 
