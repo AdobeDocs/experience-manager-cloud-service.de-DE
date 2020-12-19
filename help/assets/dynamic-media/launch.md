@@ -2,10 +2,10 @@
 title: Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch
 description: Mit der Erweiterung für Dynamic Media-Viewer für Adobe Launch und der Dynamic Media-Viewer-Version 5.13 können Kunden von Dynamic Media, Adobe Analytics und Adobe Launch Ereignisse und Daten verwenden, die für die Dynamic Media-Viewer in ihrer Adobe Launch-Konfiguration spezifisch sind.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '6647'
-ht-degree: 100%
+source-wordcount: '6628'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Mit der Erweiterung für *Dynamic Media-Viewer* für Adobe Launch und der neue
 
 Diese Integration sorgt dafür, dass Sie die Nutzung von Dynamic Media-Viewern auf Ihrer Website mit Adobe Analytics verfolgen können. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Launch-Erweiterung von Adobe oder einem anderen Drittanbieter verwenden.
 
-Weitere Informationen zu Erweiterungen finden Sie unter [Adobe-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/overview.html) im Experience Platform Launch-Benutzerhandbuch.
+Weitere Informationen zu Erweiterungen finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) im Experience Platform Launch-Benutzerhandbuch.
 
 **Zielgruppe dieser Dokumentation:** Site-Administratoren, Entwickler, die auf der AEM-Plattform entwickeln, und Betriebsexperten.
 
@@ -27,7 +27,7 @@ Weitere Informationen zu Erweiterungen finden Sie unter [Adobe-Erweiterung](http
 * Die Adobe Launch-Integration für Dynamic Media-Viewer funktioniert nicht im AEM-Autorenmodus. Sie können keine Verfolgung einer WCM-Seite anzeigen, bis diese veröffentlicht wurde.
 * Die Adobe Launch-Integration für Dynamic Media-Viewer wird im Popup-Betriebsmodus, bei dem die Viewer-URL über die Schaltfläche „URL“ auf der Seite „Asset-Details“ abgerufen wird, nicht unterstützt.
 * Die Adobe Launch-Integration kann nicht gleichzeitig mit der Analytics-Integration älterer Viewer verwendet werden (mit dem Parameter `config2=`).
-* Unterstützung für das Video-Tracking ist auf das Core-Wiedergabe-Tracking beschränkt, wie unter [Tracking-Übersicht](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
+* Unterstützung für das Video-Tracking ist auf das Core-Wiedergabe-Tracking beschränkt, wie unter [Tracking-Übersicht](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
 * Die Konfiguration der Speicherdauer für Datenelemente wird bei Datenelementen, die die Erweiterung *Dynamic Media-Viewer* verwenden, nicht unterstützt. Die Speicherdauer muss auf **[!UICONTROL Ohne]** eingestellt sein.
 
 ### Anwendungsbeispiele für die Integration {#use-cases-for-the-integration}
@@ -62,7 +62,7 @@ Die Erweiterung „Dynamic Media-Viewer“ sorgt dafür, dass die Werte der Date
 
 Nachdem Sie ein Datenelement definiert haben, können Sie es an anderen Stellen der Adobe Launch-Benutzeroberfläche verwenden. Nutzen Sie dazu das Widget zur Auswahl von Datenelementen. Insbesondere wird von der Aktion „Variablen festlegen“ der Adobe Analytics-Erweiterung in Regel auf Datenelemente verwiesen, die für die Verfolgung von Dynamic Media-Viewern definiert werden (siehe unten).
 
-Weitere Informationen dazu finden Sie unter [Datenelemente](https://docs.adobe.com/content/help/de-DE/launch/using/reference/manage-resources/data-elements.html) im Experience Platform Launch-Benutzerhandbuch.
+Weitere Informationen dazu finden Sie unter [Datenelemente](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) im Experience Platform Launch-Benutzerhandbuch.
 
 #### Regeln in Adobe Launch {#about-rules-in-adobe-launch}
 
@@ -88,7 +88,7 @@ Im Abschnitt „Aktionen“ müssen Sie über die Aktion *Variablen festlegen* v
 
 Auf die Aktion *Variablen festlegen* muss eine Aktion vom Typ *Beacon senden* folgen. Mit der Aktion *Beacon senden* werden tatsächlich Daten an den Analytics-Tracking-Server gesendet. Beide Aktionen (*Variablen festlegen* und *Beacon senden*) kommen aus der Adobe Analytics-Erweiterung.
 
-Weitere Informationen finden Sie unter [Regeln](https://docs.adobe.com/content/help/de-DE/launch/using/reference/manage-resources/rules.html) im Experience Platform Launch-Benutzerhandbuch.
+Weitere Informationen finden Sie unter [Regeln](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference) im Experience Platform Launch-Benutzerhandbuch.
 
 #### Beispielkonfiguration {#sample-configuration}
 
@@ -122,7 +122,7 @@ Wenn für die Verwendung von Adobe Analytics for Audio and Video ein Experience 
 
 Siehe [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions).
 
-Derzeit ist die Unterstützung für Video-Tracking auf das Tracking „Core-Wiedergabe“ beschränkt, wie in der [Tracking-Übersicht](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
+Derzeit ist die Unterstützung für Video-Tracking auf das Tracking „Core-Wiedergabe“ beschränkt, wie in der [Tracking-Übersicht](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events) beschrieben. Insbesondere wird die Verfolgung von QoS, Anzeigen, Kapiteln/Segmenten oder Fehlern nicht unterstützt.
 
 ## Verwenden der Erweiterung „Dynamic Media-Viewer“ {#using-the-dynamic-media-viewers-extension}
 
@@ -144,7 +144,7 @@ Sie müssen die Konfigurationsschritte im Abschnitt [Konfigurieren von Adobe Ana
 
 Nach der ordnungsgemäßen Konfiguration können Sie mit einem Dynamic Media-Viewer Adobe Launch-Unterstützung zu einer Web-Seite hinzufügen.
 
-Weitere Informationen zur Verwendung des Einbettungs-Codes für die Adobe Launch-Bibliothek finden Sie unter [Einbettungs-Code für Launch hinzufügen](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html).
+Weitere Informationen zur Verwendung des Einbettungs-Codes für die Adobe Launch-Bibliothek finden Sie unter [Einbettungs-Code für Launch hinzufügen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch).
 
 Weitere Informationen zur Verwendung der Einbettungs-Code-Funktion von AEM Dynamic Media finden Sie unter [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md) .
 
@@ -190,7 +190,7 @@ Wenn diese Option aktiviert ist, rendert der Datenelement-Editor ein Formular mi
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media-Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/de-DE/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html). Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics“. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media-Viewer nicht dokumentiert.
+Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media-Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html). Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics“. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media-Viewer nicht dokumentiert.
 
 Betrachten wir nun den Lebenszyklus des *Datenelements* von „Dynamic Media-Viewer“. Der Wert dieses Datenelements wird ausgefüllt, nachdem das entsprechende Dynamic Media-Viewers-Ereignis auf der Seite eintritt. Wenn das Datenelement beispielsweise auf das **[!UICONTROL LOAD]**-Ereignis und dessen „asset“-Argument verweist, erhält der Wert dieses Datenelements gültige Daten, sobald der Viewer das LOAD-Ereignis zum ersten Mal ausführt. Wenn das Datenelement auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument verweist, bleibt der Wert dieses Datenelements leer, bis der Viewer zum ersten Mal ein **[!UICONTROL ZOOM]**-Ereignis sendet.
 
@@ -210,8 +210,7 @@ Der jeweilige vom Datenelement zurückgegebene Wert hängt vom Kontext ab. Wenn 
    * Verwendet das Dynamic Media-Viewer-Ereignis **[!UICONTROL PAN]** als Auslöser.
    * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
 
-* 
-   * **[!UICONTROL TrackKey]**-Regel mit folgenden Eigenschaften:
+* **[!UICONTROL TrackKey]**-Regel mit folgenden Eigenschaften:
 
    * Verwendet das Tastendruckereignis der Adobe Launch-Core-Erweiterung als Auslöser.
    * Sendet den Wert des **[!UICONTROL ZoomScale]**-Datenelements an Adobe Analytics.
@@ -227,7 +226,7 @@ Das oben aufgestellte Beispiel wirkt sich auch auf die Lebensdauer des Datenelem
 
 In jedem Fall werden Werte von Datenelementen, die von Dynamic Media-Viewern gesteuert werden, nicht im lokalen Speicher oder auf dem Server gespeichert. Sie werden stattdessen nur in der Client-seitigen Adobe Launch-Bibliothek gespeichert. Die Werte solcher Datenelemente verschwinden, wenn die Web-Seite neu geladen wird.
 
-Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://docs.adobe.com/content/help/de-DE/launch/using/reference/manage-resources/data-elements.html#create-a-data-element). Datenelemente, die die Erweiterung „Dynamic Media-Viewer“ verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
+Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Datenelemente, die die Erweiterung „Dynamic Media-Viewer“ verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
 
 ### Über Regeln in der Erweiterung „Dynamic Media-Viewer“ {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -421,7 +420,7 @@ Nach der Konfiguration von Adobe Analytics wird Folgendes für die Integration e
 * Analytics-Variablen stehen zum Empfang von Verfolgungsdaten zur Verfügung.
 * Es gibt Berichte zur Anzeige der in Adobe Analytics erfassten Daten.
 
-Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/help/de-DE/analytics/implementation/home.html).
+Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
 **So konfigurieren Sie Adobe Analytics für die Integration**:
 
@@ -439,7 +438,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/h
 
    Wenn keine Report Suite verfügbar ist, müssen Sie oder Ihr Adobe Analytics-Administrator eine erstellen, bevor Sie mit der Konfiguration fortfahren können.
 
-   Siehe [Berichte und Report Suites](https://docs.adobe.com/content/help/de-DE/analytics/implementation/analytics-basics/ref-reports-report-suites.html) und [Report Suite erstellen](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-console/create-report-suite.html).
+   Siehe [Berichte und Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) und [Report Suite erstellen](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console).
 
    In Adobe Analytics werden Report Suites unter **[!UICONTROL Admin > Report Suites]** verwaltet.
 
@@ -453,7 +452,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/h
 
    Es lassen sich beliebige Variablentypen verwenden, die von Adobe Analytics unterstützt werden. Die Entscheidung über den Variablentyp (z. B. Custom Traffic [props] und Konversion [eVar]) sollte von spezifischen Anforderungen Ihrer Analytics-Implementierung abhängen.
 
-   Siehe [Übersicht über props und eVars](https://docs.adobe.com/content/help/de-DE/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   Siehe [Übersicht über props und eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
    Für die Zwecke dieser Dokumentation wird nur eine Variable „Custom Traffic (props)“ verwendet, da diese in einem Analytics-Bericht innerhalb weniger Minuten nach dem Ausführen einer Aktion auf einer Web-Seite verfügbar ist.
 
@@ -501,7 +500,7 @@ Nachdem Sie Adobe Launch konfiguriert haben, werden für die Integration folgend
 
 Bei einer Eigenschaft in Adobe Launch handelt es sich um eine benannte Konfiguration, die alle Ihre Einstellungen zusammenhält. Es wird eine Bibliothek der Konfigurationseinstellungen erstellt und in verschiedenen Umgebungsebenen (Entwicklung, Staging und Produktion) veröffentlicht.
 
-Siehe auch [Eigenschaft erstellen](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html).
+Siehe auch [Eine Starteigenschaft erstellen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
 1. Klicken Sie in Adobe Launch auf **[!UICONTROL Neue Eigenschaft]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Eigenschaft erstellen]** im Feld **[!UICONTROL Name]** einen beschreibenden Namen ein, z. B. den Titel Ihrer Website. Beispiel: `DynamicMediaViewersProp.`
@@ -526,7 +525,7 @@ Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguri
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Speichern]**.
 
-Siehe [Experience Cloud ID Service-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html).
+Siehe [Experience Cloud ID Service-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
 
 * (Erforderlich) *Adobe Analytics*-Erweiterung
 
@@ -546,7 +545,7 @@ Erweitern Sie auf der Seite **[!UICONTROL Erweiterung installieren]** den Eintra
 
 Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Siehe [Adobe Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
+Siehe [Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
 * (Optional; nur erforderlich, wenn Video-Tracking benötigt wird) Erweiterung *Adobe Media Analytics for Audio and Video*
 
@@ -554,7 +553,7 @@ Füllen Sie das Feld für den Tracking-Server aus. Der Tracking-Server für die 
 
 Alle anderen Felder sind optional.
 
-Siehe [Erweiterung Adobe Media Analytics for Audio and Video](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html).
+Siehe [Erweiterung Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
 
 * (Erforderlich) Erweiterung *Dynamic Media-Viewer*
 
@@ -584,7 +583,7 @@ Um Änderungen an der Adobe Launch-Konfiguration vorzunehmen (einschließlich ei
 
 Adobe Launch kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Adobe Launch-Cloud-Konfiguration in AEM den AEM-Autorenknoten auf die Staging-Umgebung von Adobe Launch und den AEM-Veröffentlichungsknoten auf die Produktionsumgebung von Adobe Launch. Dies bedeutet, dass mit den AEM-Standardeinstellungen die Adobe Launch-Bibliothek in der Staging-Umgebung veröffentlicht werden muss, damit sie im AEM-Autorenknoten verwendet werden kann, und dann in der Produktionsumgebung veröffentlicht werden muss, damit sie im AEM-Veröffentlichungsknoten genutzt werden kann.
 
-Weitere Informationen zu Adobe Launch-Umgebungen finden Sie unter [Umgebungen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/environments.html).
+Weitere Informationen zu Adobe Launch-Umgebungen finden Sie unter [Umgebungen](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types).
 
 Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 
@@ -642,7 +641,7 @@ Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Weitere Informationen zum Veröffentlichungsverfahren in Adobe Launch finden Sie unter [Veröffentlichung](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
+   Weitere Informationen zum Veröffentlichungsverfahren in Adobe Launch finden Sie unter [Veröffentlichung](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference).
 
 ## Konfigurieren von Adobe Experience Manager für die Integration {#configuring-adobe-experience-manager-for-the-integration}
 
