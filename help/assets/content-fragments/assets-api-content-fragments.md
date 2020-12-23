@@ -2,10 +2,10 @@
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
 translation-type: tm+mt
-source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
+source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 99%
+source-wordcount: '1914'
+ht-degree: 98%
 
 ---
 
@@ -82,9 +82,7 @@ Die HTTP-Methode ermittelt den auszuführenden Vorgang:
 >
 >Mit dem Anfragetext und/oder den URL-Parametern können Sie einige dieser Vorgänge konfigurieren. Sie definieren damit beispielsweise, dass ein Ordner oder ein Asset über eine **POST**-Anfrage erstellt werden soll.
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+Das genaue Format der unterstützten Anforderungen ist in der [API-Referenzdokumentation](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) definiert.
 
 ### Transaktionsverhalten {#transactional-behavior}
 
@@ -256,11 +254,9 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 >
 >Die Dispatcher-Konfiguration auf AEM-Cloud-Instanzen blockiert möglicherweise den Zugriff auf `/api`.
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>Weitere Informationen finden Sie in der [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lesen/Bereitstellen {#read-delivery}
 
@@ -309,10 +305,6 @@ Es gibt einige Beschränkungen:
 
 * **Inhaltsfragmentmodelle werden derzeit nicht unterstützt**: sie können weder gelesen noch erstellt werden. Zum Erstellen eines neuen oder Aktualisieren eines vorhandenen Inhaltsfragments müssen Entwickler den richtigen Pfad zum Inhaltsfragmentmodell kennen. Derzeit ist dies lediglich über die Verwaltungsoberfläche möglich.
 * **Verweise werden ignoriert**. Zurzeit sind keine Überprüfungen für Verweise auf vorhandene Inhaltsfragmente verfügbar. Wenn Sie beispielsweise ein Inhaltsfragment löschen, treten möglicherweise Probleme auf einer Seite auf, die einen Verweis auf das gelöschte Inhaltsfragment enthält.
-
-<!--
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
--->
 
 ## Status-Codes und Fehlermeldungen {#status-codes-and-error-messages}
 
