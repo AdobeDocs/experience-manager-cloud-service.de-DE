@@ -2,9 +2,9 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 37%
 
 ---
@@ -135,7 +135,7 @@ Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, kö
 
 ## Massen-Upload von Assets {#bulk-upload}
 
-Die Erfassung von Massenelementen kann Tausende von Assets effizient handhaben. Eine großmaßstäbliche Erfassung ist jedoch nicht nur eine umfassende und große Datei-Dump- oder Blindmigration. Damit es sich um ein bedeutendes Projekt handelt, das Ihrem Geschäftszweck dient, führt die Planung und Kuratierung der Assets zu einer wesentlich effizienteren Erfassung. Alle Erfassung ist nicht gleich und Verallgemeinerungen können nicht ohne Berücksichtigung der nuancierten Repository-Zusammensetzung und der geschäftlichen Anforderungen vorgenommen werden. Im Folgenden finden Sie übergeordnete Vorschläge zur Planung und Ausführung einer Massenverarbeitung:
+Die Massenaufnahme von Assets kann sehr viele Assets effizient handhaben. Eine groß angelegte Erfassung ist jedoch nicht nur eine umfangreiche Datei-Deponie oder eine gelegentliche Migration. Damit eine umfangreiche Erfassung ein aussagekräftiges Projekt ist, das Ihrem Geschäftszweck entspricht und effizient ist, planen Sie die Migration und kuratieren Sie die Organisation der Assets. Alle Einträge sind unterschiedlich, sodass statt zu verallgemeinern, Faktor in der nuancierten Repository Zusammensetzung und geschäftlichen Anforderungen. Im Folgenden finden Sie einige übergreifende Vorschläge zur Planung und Ausführung einer Massenverarbeitung:
 
 * Assets kuratieren: Entfernen Sie Assets, die im DAM nicht benötigt werden. Sie sollten nicht verwendete, veraltete oder Duplikat-Assets entfernen. Dadurch werden die übertragenen Daten und die erfassten Assets reduziert, was zu schnelleren Datensätzen führt.
 * Assets organisieren: Sie sollten den Inhalt in einer logischen Reihenfolge organisieren, z. B. nach Dateigröße, Dateiformat, Anwendungsfall oder Priorität. Im Allgemeinen erfordern große komplexe Dateien mehr Verarbeitung. Sie können auch die separate Erfassung großer Dateien mit der Filteroption für die Dateigröße in Betracht ziehen (siehe Beschreibung unten).
@@ -149,7 +149,7 @@ Um eine größere Anzahl von Dateien hochzuladen, führen Sie einen der folgende
 
 ### Asset-Masseningeting-Tool {#asset-bulk-ingestor}
 
-Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Maßstab aus Azurblaus- oder S3-Datenspeichern zu verwenden.
+Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Maßstab aus Azurblaus- oder S3-Datenspeichern zu verwenden. Sehen Sie sich einen Video-Durchgang der Konfiguration und Erfassung an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
