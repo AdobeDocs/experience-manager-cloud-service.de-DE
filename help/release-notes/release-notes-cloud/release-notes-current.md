@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
+source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -37,7 +37,7 @@ Die folgende Version (2021.1.0) wird am 28. Januar 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* CIF Venia-Referenzseite - 2020.12.01, die die aktuellste CIF-Core-Komponenten Version v1.6.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01).
+* CIF-Referenzseite Venia - 2020.12.01, die die neueste CIF-Kernkomponenten Version v1.6.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01).
 
 * Version 1.6.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0).
 
@@ -57,7 +57,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Einige Fehler beim Scannen von Code, ohne Ergebnisse bereitzustellen, wurden behoben.
+* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
 
 * Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
 
