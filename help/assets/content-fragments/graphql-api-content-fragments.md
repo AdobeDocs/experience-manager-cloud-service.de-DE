@@ -594,7 +594,7 @@ Beispiel:
 
    * **Methoden** (`sling.servlet.methods^)
 
-      Die HTTP-Methode, auf die das Servlet achten sollte; gewöhnlich `GET`.
+      Die HTTP-Methode, die das Servlet überwachen soll; gewöhnlich `GET`.
 
    * **Erweiterungen** (`sling.servlet.extensions`)
 
