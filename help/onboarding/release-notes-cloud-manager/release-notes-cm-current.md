@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
@@ -31,6 +31,6 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Einige Fehler beim Scannen von Code, ohne Ergebnisse bereitzustellen, wurden behoben.
+* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
 
 * Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
