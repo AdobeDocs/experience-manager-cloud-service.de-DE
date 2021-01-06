@@ -3,10 +3,10 @@ title: Stapelweises Importieren und Exportieren von Asset-Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Massen importieren und exportieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen i
 
 ## Importieren von Metadaten      {#import-metadata}
 
-Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
+Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund XMP Schreibback-Aktivität mit Asset-Mikrodiensten möglicherweise ressourcenintensiv sein. Adobe empfiehlt, Massenvorgänge während der schlanken Servernutzung zu planen, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
 
 >[!NOTE]
 >
@@ -29,16 +29,16 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
 1. Geben Sie die folgenden Parameter an:
 
    | Parameter | Beschreibung |
-   | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+   | ---------------------- | ------- |
    | Batch-Größe | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
    | Feldtrennzeichen | Der Standardwert ist `,` (ein Komma). Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
    | Mehrfachtrennzeichen | Trennzeichen für Metadatenwerte. Der Standardwert ist `|`. |
    | Workflows starten | Lautet standardmäßig „False“. Wenn hier `true` festgelegt wird und die standardmäßigen Launcher-Einstellungen für den Workflow „DAM-Metadaten-WriteBack“ aktiv sind (der Metadaten in die binären XMP-Daten schreibt). Die Aktivierung von Start-Workflows verlangsamt das System. |
    | Asset-Pfad-Spaltenname | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
 
-Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
+Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T`, `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
 >[!CAUTION]
 >
@@ -46,7 +46,7 @@ Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden
 
 ## Exportieren von Metadaten {#export-metadata}
 
-Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht AEM die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
+Sie können Metadaten für mehrere Assets in ein CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht AEM die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
 
 Einige Anwendungsfälle für den Massenexport von Metadaten:
 
@@ -68,4 +68,5 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 1. Öffnen Sie die Posteingangsbenachrichtigung für den Exportauftrag. Wählen Sie den Auftrag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**. Um die CSV-Datei mit den Metadaten herunterzuladen, tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL CSV-Download]**. Klicken Sie auf **[!UICONTROL Schließen]**.
 
    ![Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden](assets/csv_download.png)
-   *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden*
+
+   *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden.*
