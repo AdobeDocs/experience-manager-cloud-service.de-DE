@@ -39,12 +39,10 @@ Aktivitäten werden mit einer Beschriftung versehen, die beschreibt, um welche A
 >Welche Aktivitätstypen zur Verfügung stehen, hängt von folgenden Faktoren ab:
 >
 >* Bei Aktivierung der Option `xt_only` im Adobe Target-Mandanten (Client-Code), der auf AEM-Seite für die Verbindung zu Adobe Target verwendet wird, können Sie in AEM ausschließlich **XT-Aktivitäten** erstellen.
-   >
-   >
-* Ist die Option `xt_only` im Adobe Target-Mandanten (Client-Code) **nicht** aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
 >
+>* Ist die Option `xt_only` im Adobe Target-Mandanten (Client-Code) **nicht** aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
 >
-**Zusätzlicher Hinweis:** Bei der Option `xt_only` handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
+>**Zusätzlicher Hinweis:** Bei der Option `xt_only` handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
 
 >[!CAUTION]
 >
