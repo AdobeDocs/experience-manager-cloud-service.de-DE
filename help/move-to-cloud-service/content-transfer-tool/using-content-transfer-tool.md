@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 84%
+source-wordcount: '1915'
+ht-degree: 83%
 
 ---
 
@@ -257,12 +257,6 @@ Die Dateien, die im oben angegebenen Verzeichnis *OUT_DIR* erstellt wurden, um K
 ### Verhalten der Benutzeroberfläche {#ui-behavior}
 
 Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in der Benutzeroberfläche für das Content Transfer Tool:
-
-* Der Benutzer erstellt einen Migrationssatz für eine Autoren-URL (Entwicklung/Staging/Produktion) und führt Extraktion und Aufnahme erfolgreich durch.
-
-* Der Benutzer erstellt dann einen neuen Migrationssatz für dieselbe Autoren-URL und führt Extraktion und Aufnahme für den neuen Migrationssatz durch. Die Benutzeroberfläche zeigt an, dass sich der Aufnahmestatus des ersten Migrationssatzes in **FEHLGESCHLAGEN** ändert und keine Protokolle verfügbar sind.
-
-* Dies bedeutet nicht, dass die Aufnahme für den ersten Migrationssatz fehlgeschlagen ist. Dieses Verhalten tritt auf, weil beim Starten eines neuen Aufnahmevorgangs der vorherige Aufnahmevorgang gelöscht wird. Daher sollte der Änderungsstatus des ersten Migrationssatzes ignoriert werden.
 
 * Die Symbole in der Benutzeroberfläche des Content Transfer Tool unterscheiden sich möglicherweise von den in diesem Handbuch gezeigten Screenshots oder werden je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt.
 
