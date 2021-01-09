@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 89%
+source-wordcount: '2018'
+ht-degree: 84%
 
 ---
 
@@ -25,6 +25,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, müssen Sie dafür sorgen, dass Ihre Umgebung aktuell ist bzw. auf die neueste Version aktualisiert wird. Wenn Sie eine *Produktionsumgebung* nutzen, wird diese automatisch aktualisiert.
 
 * Um das Content Transfer Tool verwenden zu können, müssen Sie ein Administratorbenutzer in Ihrer Quellinstanz sein und zur lokalen AEM-Administratorengruppe in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tool nicht abrufen.
+
+* Das Zugriffstoken kann regelmäßig ablaufen, entweder nach einem bestimmten Zeitraum oder nach der Aktualisierung der Umgebung des Cloud Service. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffstoken abrufen. Das Statussymbol, das einem vorhandenen Migrationssatz zugeordnet ist, ändert sich in eine rote Cloud und zeigt eine Meldung an, wenn Sie den Mauszeiger darüber halten.
 
 * Derzeit beträgt die Standardgröße von MongoDB für eine AEM as a Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einzureichen, um die MongoDB-Größe zu erhöhen.
 
@@ -162,6 +164,9 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 
 1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten. Zu Demonstrationszwecken ist die Option **Inhalt in Autoreninstanz aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
+
+   >[!IMPORTANT]
+   >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
