@@ -2,7 +2,7 @@
 title: Hinzufügen eines benutzerdefinierten Domänennamens
 description: Hinzufügen eines benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Gehen Sie wie folgt vor, um auf der Seite &quot;Domäneneinstellungen&quot;einen
 1. Wählen Sie in der Dropdownliste **SSL-Domänenzertifikat** aus und wählen Sie **Weiter**.
 
 1. **hinzufügen Feld** Domänenname wird angezeigt. Dadurch gelangen Sie zur Domänennamenüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
-Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebung.
+
+   Befolgen Sie die Anweisungen zum Nachweis des Domänenbesitzes für Ihre Umgebung:
 
 1. Klicken Sie auf **Erstellen**.
 1. Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** gekennzeichnet.
