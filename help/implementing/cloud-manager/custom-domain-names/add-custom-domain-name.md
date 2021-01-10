@@ -2,9 +2,9 @@
 title: Hinzufügen eines benutzerdefinierten Domänennamens
 description: Hinzufügen eines benutzerdefinierten Domänennamens
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Ein Benutzer muss Geschäftsinhaber oder Deployment Manager sein, um einen benut
 ## Wichtige Überlegungen {#important-considerations}
 
 * Bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, muss ein gültiges SSL-Zertifikat mit dem benutzerdefinierten Domänennamen in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
+
+* Domänennamen können nicht zu Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
 
 * Es kann jeweils nur ein Domänenname hinzugefügt werden. Domänen können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domänen auf der Autorenseite werden nicht unterstützt.
 
