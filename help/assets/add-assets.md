@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: hinzufügen Sie Ihre digitalen Assets auf [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 37%
+source-wordcount: '1950'
+ht-degree: 32%
 
 ---
 
@@ -44,17 +44,13 @@ Assets als [!DNL Cloud Service] stellen die folgenden Upload-Methoden bereit. Ad
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ Neben der Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Manager] 
 
 ## Verarbeiten von Assets beim Hochladen von {#process-when-uploaded}
 
-Um die hochgeladenen Assets weiter zu verarbeiten, können Sie Verarbeitungsordner auf die hochgeladenen Profil anwenden. Die Profil sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners unter [!DNL Assets] verfügbar.
+Um die hochgeladenen Assets weiter zu verarbeiten, können Sie Verarbeitungsordner auf die hochgeladenen Profil anwenden. Die Profil sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners unter [!DNL Assets] verfügbar. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![Eigenschaften eines Asset-Ordners mit Optionen zum Hinzufügen eines verarbeitenden Profils](assets/assets-folder-properties.png)
 
 Die folgenden Registerkarten stehen zur Verfügung:
 
-* Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
+* [Mit Metadaten-](metadata-profiles.md) Profilen können Sie Standardmetadateneigenschaften auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
 * Mit [Verarbeitungsprofilen](asset-microservices-configure-and-use.md) können Sie mehr Ausgabedarstellungen generieren, als standardmäßig möglich sind.
 
 Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerdem die folgenden Registerkarten zur Verfügung:
 
-* Mit [Dynamic Media-Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* Mit [Dynamic Media-Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
+* [[!DNL Dynamic Media] Mit ](dynamic-media/image-profiles.md) Bildprofilen können Sie bestimmte Zuschnitten (**[!UICONTROL Smart-]** Beschneidung und Pixelbeschneiden) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* [[!DNL Dynamic Media] Mit Video-](dynamic-media/video-profiles.md) Profilen können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
->Das von Dynamic Media unterstützte Zuschneiden und andere Operationen an Assets sind zerstörungsfrei, d. h. sie ändern nicht das hochgeladene Original, sondern stellen Parameter für das Zuschneiden oder die Medientransformation bereit, die bei der Bereitstellung der Assets durchgeführt werden müssen.
+>[!DNL Dynamic Media] Zuschneiden und andere Vorgänge auf Assets sind nicht zerstörerisch, d. h. die Vorgänge ändern das hochgeladene Original nicht. Stattdessen stellt es Parameter bereit, die beim Bereitstellen der Assets beschnitten oder transformiert werden können.
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
 
