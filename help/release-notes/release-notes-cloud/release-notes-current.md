@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 19%
+source-wordcount: '694'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experi
 ## Veröffentlichungsdatum {#release-date}
 
 Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2020.12.0 ist der 17. Dezember 2020.
-Die folgende Version (2021.1.0) wird am 28. Januar 2020 veröffentlicht.
+Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -74,3 +74,20 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 ### Fehlerbehebungen {#crt-bug-fixes}
 
 * Mehrere Fehlerkorrekturen, die mit den Werkzeugen AEM Dispatcher Converter und Repository Modernizer vorgenommen wurden. Weitere Informationen finden Sie unter [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## Cloud-Umstellungs-Tools {#code-transition-tools}
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.1.20 ist der 08. Januar 2021.
+
+### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Die Benutzer können nun erfahren, ob ihr Zugriffstoken abgelaufen ist, indem sie auf das Statussymbol in der Benutzeroberfläche des Content Transfer Tool (CTT) zeigen. Sie werden auch in der Benutzeroberfläche &quot;Migrationssatzdetails&quot;darüber informiert, dass sie keine Verbindung zu ihrer Cloud Service-Instanz herstellen können.
+
+### Fehlerbehebungen {#ctt-bug-fixes}
+
+* Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Das wurde behoben.
+* Die Option zum Ansicht von Protokollen wurde deaktiviert, wenn die Protokolle nicht verfügbar waren. Dieser Fehler wurde behoben und es wurde eine Nachricht hinzugefügt, die den Benutzer darüber informiert, warum Protokolle fehlen.
+* Der Benutzeroberflächenstatus des Inhaltsübertragungstools wurde als FEHLGESCHLAGEN angezeigt, wenn der Benutzer eine Erfassung stoppte. Dieses Problem wurde behoben, um stattdessen *STOPPED* anzuzeigen.
+
