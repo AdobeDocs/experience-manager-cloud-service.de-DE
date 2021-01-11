@@ -1,18 +1,18 @@
 ---
-title: Wesentliche Änderungen an Adobe Experience Manager Assets as a [!DNL Cloud Service]
-description: Bemerkenswerte Änderungen an Adobe Experience Manager Assets in Experience Manager [!DNL Cloud Service] im Vergleich zu Adobe Experience Manager 6.5.
+title: Wichtige Änderungen in  [!DNL Adobe Experience Manager Assets] als a [!DNL Cloud Service]
+description: Bemerkenswerte Änderungen zu [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 61%
+source-wordcount: '605'
+ht-degree: 41%
 
 ---
 
 
-# Wesentliche Änderungen an Adobe Experience Manager Assets as a [!DNL Cloud Service] {#notable-changes}
+# Notable Änderungen zu [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager als [!DNL Cloud Service] bietet viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer Experience Manager-Projekte. Es gibt viele Unterschiede zwischen Experience Manager Assets vor Ort oder als Adobe Managed Service gehostet im Vergleich zu [!DNL Experience Manager] als [!DNL Cloud Service]. In diesem Artikel werden die wichtigen Unterschiede bei den Funktionen von [!DNL Assets] hervorgehoben.
+[!DNL Adobe Experience Manager] als  [!DNL Cloud Service] bringt viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer Experience Manager-Projekte. Es gibt viele Unterschiede zwischen [!DNL Experience Manager Assets] lokal oder als Adobe Managed Service gehostet im Vergleich zu [!DNL Experience Manager] als [!DNL Cloud Service]. In diesem Artikel werden die wichtigen Unterschiede bei den Funktionen von [!DNL Assets] hervorgehoben.
 
 Die Hauptunterschiede zu [Experience Manager] 6.5 bestehen in den folgenden Bereichen:
 
@@ -22,16 +22,17 @@ Die Hauptunterschiede zu [Experience Manager] 6.5 bestehen in den folgenden Bere
 
 ## Asset-Erfassung und -Verarbeitung {#asset-ingestion}
 
-Das Hochladen von Assets wurde für die Effizienz optimiert, da die Asset-Erfassung besser skaliert, die Uploads beschleunigt, die Verarbeitung mithilfe von Mikrodiensten beschleunigt und Massenaufnahmen erfasst werden können. Produktfunktionen (Web-Benutzeroberflächen, Desktopclients) wurden aktualisiert. Dies kann sich jedoch auf einige bestehende Anpassungen auswirken.
+Das Hochladen von Assets wurde für die Effizienz optimiert, indem die Erfassung besser skaliert, Uploads beschleunigt, die Verarbeitung mithilfe von Mikrodiensten beschleunigt und Massenaufnahmen erfasst werden. Produktfunktionen (Webbenutzerschnittstellen, Desktop-Clients) werden aktualisiert. Dies kann sich auch auf einige bestehende Anpassungen auswirken.
 
-* Adobe Experience Manager wendet das Prinzip des direkten binären Zugriffs für den Upload und Download sowie für Asset-Microservices zur Asset-Verarbeitung an. Siehe [Übersicht über die Asset-Erfassung](/help/assets/asset-microservices-overview.md)..
+* [!DNL Experience Manager] verwendet das Prinzip des direkten binären Zugriffs, um Assets hochzuladen und herunterzuladen, und verwendet Asset-Mikrodienste zur Verarbeitung von Assets. Siehe [Übersicht über Microservices](/help/assets/asset-microservices-overview.md).
    * Asset-Upload [mit direktem Binärzugriff](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-   * Weitere technische Daten finden Sie im Abschnitt [Protokoll und APIs für den direkten Binär-Upload](/help/assets/developer-reference-material-apis.md#upload-binary).
+   * Technische Details finden Sie unter [Direct Binary Upload-Protokoll und APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Einen Vergleich der verfügbaren API-Methoden für grundlegende CRUD-Vorgänge finden Sie unter [APIs und Asset-Vorgänge](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
 * Der Standardarbeitsablauf **[!UICONTROL DAM Asset Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Mikrodienste einen skalierbaren, leicht verfügbaren Dienst, der den Großteil der standardmäßigen Asset-Verarbeitung abdeckt (Darstellungen, Metadaten-Extraktion und Text-Extraktion für die Indizierung).
-   * Siehe [Konfigurieren und Verwenden von Asset Microservices](/help/assets/asset-microservices-configure-and-use.md).
-   * Um bei der Verarbeitung benutzerdefinierte Workflow-Schritte durchzuführen, können Sie [Nachbearbeitungsarbeitsabläufe](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwenden..
-* Für Assets, die über Package Manager eingehen, ist eine manuelle erneute Verarbeitung mithilfe der Aktion **[!UICONTROL Assets erneut verarbeiten]** über die AEM Assets-Benutzeroberfläche erforderlich.
+   * Siehe [Asset-Mikrodienste konfigurieren und verwenden](/help/assets/asset-microservices-configure-and-use.md)
+   * Um benutzerdefinierte Workflow-Schritte in der Verarbeitung zu haben, können [Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwendet werden.
+* Für Assets, die mit Package Manager hochgeladen werden, ist eine manuelle Neuverarbeitung mithilfe der Aktion **[!UICONTROL Asset]** in der [!DNL Assets]-Schnittstelle erforderlich.
+* Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
 
 Mit Asset-Microservices generierte Standardausgabedarstellungen werden in abwärtskompatibler Form im Asset-Repository-Knoten gespeichert (gleiche Benennungskonventionen).
 
