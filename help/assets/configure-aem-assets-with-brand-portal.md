@@ -3,10 +3,10 @@ title: AEM Assets als [!DNL Cloud Service] mit Markenportal konfigurieren
 description: Konfigurieren von AEM Assets mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -71,7 +71,7 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Profil in der Adobe
 
    ![Zertifikat erstellen](assets/ims-config2.png)
 
-1. Klicken Sie auf das Symbol **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Public-Key-Datei (.crt) auf Ihrem Computer.
+1. Klicken Sie auf das Symbol **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die CRT-Datei auf Ihrem Computer.
 
    Der öffentliche Schlüssel wird später zum Konfigurieren der API für Ihren Brand Portal-Mandanten und zum Generieren von Anmeldedaten für Service-Konten in der Adobe Developer Console verwendet.
 
