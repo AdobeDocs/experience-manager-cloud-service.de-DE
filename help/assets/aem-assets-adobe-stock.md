@@ -3,10 +3,10 @@ title: Verwalten Sie  [!DNL Adobe Stock] -Assets in  [!DNL Assets].
 description: Suchen, lizenzieren, verwalten und rufen Sie  [!DNL Adobe Stock] -Assets in  [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 >[!NOTE]
 >
->Wenn mehrere [!DNL Adobe Stock]-Konfigurationen vorhanden sind, wählen Sie im Feld „Benutzereinstellungen“ die gewünschte Konfiguration aus. Um von der Experience Manager-Startseite aus auf das Bedienfeld zuzugreifen, klicken Sie auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Stock-Konfiguration]**.
+>Wenn mehrere [!DNL Adobe Stock]-Konfigurationen vorhanden sind, wählen Sie im Feld „Benutzereinstellungen“ die gewünschte Konfiguration aus. Klicken Sie zum Aufrufen des Bedienfelds von der Startseite Experience Manager auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Lagerkonfiguration]**.
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock]-Assets in [!DNL Experience Manager] {#usemanage}
 
