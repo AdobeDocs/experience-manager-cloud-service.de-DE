@@ -1,19 +1,19 @@
 ---
 title: Freigeben von Assets, Ordnern und Sammlungen als Link
-description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Adobe Experience Manager Assets als Hyperlink freigeben.
+description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen innerhalb von [!DNL Experience Manager Assets] als Hyperlink freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 95%
+source-wordcount: '683'
+ht-degree: 63%
 
 ---
 
 
-# Freigeben und Verteilen von in Experience Manager verwalteten Assets {#share-assets-from-aem}
+# Freigeben und Verteilen von Assets, die in [!DNL Experience Manager] {#share-assets-from-aem} verwaltet werden
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus Experience Manager Assets als [!DNL Cloud Service] freizugeben:
+[!DNL Adobe Experience Manager Assets] Ermöglicht die Freigabe von Assets, Ordnern und Sammlungen für Mitglieder Ihres Unternehmens und externe Entitäten, einschließlich Partner und Anbieter. Verwenden Sie die folgenden Methoden, um Assets von [!DNL Experience Manager Assets] als [!DNL Cloud Service] freizugeben:
 
 * Freigeben als Link.
 * Herunterladen von Assets und separates Freigeben.
@@ -23,7 +23,7 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlun
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
+Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Möglichkeit, um Ressourcen für externe Parteien bereitzustellen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen.
 
 >[!NOTE]
 >
@@ -31,8 +31,8 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 >* Bevor Sie einen Link für andere Benutzer freigeben, stellen Sie sicher, dass Day CQ Mail Service konfiguriert ist. Andernfalls tritt ein Fehler auf.
 
 
-1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Link freigeben]**. Im Feld **[!UICONTROL Link freigeben]** wird automatisch ein Asset-Link erstellt. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
+1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] das Asset aus, das als Link freigegeben werden soll.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**. Im Feld **[!UICONTROL Link freigeben]** wird automatisch ein Asset-Link erstellt. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
    >[!NOTE]
    >
@@ -113,9 +113,9 @@ Benutzer können benötigte Assets herunterladen und diese außerhalb von [!DNL 
 
 Marketing-Experten und Anwender aus der Branche können genehmigte Assets problemlos für ihre Kreativschaffenden freigeben.
 
-* **AEM-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager-Desktop-App**: Die App funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre AEM-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe Asset Link**: Die Kreativschaffenden können Assets direkt in Adobe InDesign, Adobe Illustrator und Adobe Photoshop suchen und verwenden.
+* **Adobe Asset-Link**: Die Kreativprofis können Assets direkt aus  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]und  [!DNL Adobe Photoshop]innerhalb suchen und verwenden.
 
 ## Konfigurieren der Asset-Freigabe {#configure-sharing}
 
@@ -125,11 +125,11 @@ Die verschiedenen Optionen zum Freigeben der Assets erfordern eine spezifische K
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei AEM Assets anmelden müssen.
+Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Möglichkeit, um Ressourcen für externe Parteien bereitzustellen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen.
 
 >[!NOTE]
 >
->Wenn Sie Links von Ihrer AEM-Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anfragen bereitstellen. Blockieren Sie andere URLs, um den Schutz Ihrer AEM-Autoreninstanz sicherzustellen.
+>Wenn Sie Links von Ihrer Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anforderungen bereitstellen. Blockieren Sie andere URLs, um sicherzustellen, dass Ihre Autoreninstanz sicher ist.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -169,15 +169,15 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
 
-Über die Assets-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder Assets auschecken und öffnen, um sie in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der AEM-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+In der [!DNL Assets]-Benutzeroberfläche eines Browsers können Sie die Asset-Speicherorte erkunden oder das Asset auschecken und zur Bearbeitung in Ihrer Desktop-Anwendung öffnen. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der AEM-Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Aktivieren von Desktop-Aktionen aktivieren, die beim Arbeiten mit dem Desktop-Programm als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
-### Konfigurationen zur Verwendung von Adobe Asset Link {#configure-asset-link}
+### Zu verwendende Konfigurationen: [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Damit wird Adobe Experience Manager (AEM) Assets mit den Creative Cloud-Desktop-Programmen Adobe InDesign, Adobe Photoshop und Adobe Illustrator verbunden. Über das Adobe Asset-Link-Bedienfeld können Kreative auf in AEM Assets gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
+Adobe Asset Link optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Es verbindet [!DNL Adobe Experience Manager Assets] mit [!DNL Creative Cloud] Desktop-Apps [!DNL Adobe InDesign], [!DNL Adobe Photoshop] und [!DNL Adobe Illustrator]. Das Bedienfeld [!DNL Adobe Asset Link] ermöglicht es kreativen Benutzern, auf in [!DNL Assets] gespeicherte Inhalte zuzugreifen und sie zu ändern, ohne die Kreativapplikationen zu verlassen, mit denen sie am besten vertraut sind.
 
-Siehe [Konfigurieren von AEM für die Verwendung mit Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
+Siehe [Konfigurieren [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Best Practices und Fehlerbehebung {#bestpractices}
 
