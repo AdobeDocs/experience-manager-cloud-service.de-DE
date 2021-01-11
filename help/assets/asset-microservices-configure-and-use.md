@@ -3,10 +3,10 @@ title: Asset-Microservices konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Microservices, um Assets mit hoher Skalierung zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -68,9 +68,9 @@ Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfig
 
 Das Verarbeitungsprofil kann eine FPO-Ausgabedarstellung (nur für Platzierung) enthalten. In der [!DNL Adobe Asset Link] [Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) erfahren Sie, ob Sie es für Ihr Verarbeitungsprofil aktivieren müssen. Weitere Informationen finden Sie in der [vollständigen Dokumentation von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
 
-### Standardprofil erstellen {#create-standard-profile}
+### Standardmäßige Profil {#create-standard-profile} erstellen
 
-Gehen Sie wie folgt vor, um ein Standardverarbeitungsprofil zu erstellen:
+Gehen Sie wie folgt vor, um ein Profil für die Standardverarbeitung zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen hilft, das Profil beim Anwenden auf einen Ordner eindeutig zu identifizieren.
@@ -108,7 +108,7 @@ Der [!DNL Asset Compute Service] unterstützt eine Vielzahl von Anwendungsfälle
 
 Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Ausgabedarstellungen umwandeln, einschließlich Miniaturansichten, extrahiertem Text und Metadaten sowie Archiven.
 
-Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefinierte Anwendungen](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) zu erstellen, die den unterstützten Anwendungsfällen gerecht werden. [!DNL Experience Manager] kann diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem benutzerdefinierte Profile verwendet werden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Services:
+Entwickler können die [!DNL Asset Compute Service] bis [benutzerdefinierte Anwendungen](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) für die unterstützten Anwendungsfälle erstellen. [!DNL Experience Manager] kann diese benutzerdefinierten Anwendungen über die Benutzeroberfläche aufrufen, indem benutzerdefinierte Profile verwendet werden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Services:
 
 * Verwenden Sie die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) von [!DNL Adobe Photoshop] und speichern Sie das Ergebnis als Ausgabedarstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
@@ -123,7 +123,7 @@ Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefin
 
 Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 
-1. Administratoren greifen auf **[!UICONTROL Tools > Assets > Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Benutzerdefiniert]**. Klicken Sie auf **[!UICONTROL Neu hinzufügen]**. Geben Sie den gewünschten Dateinamen der Ausgabedarstellung ein.
 1. Geben Sie die folgenden Informationen ein.
 
@@ -145,6 +145,8 @@ Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-[Project Fir
 Zur Veranschaulichung der Nutzung eines benutzerdefinierten Profils sollten wir uns einen Anwendungsfall ansehen, bei dem Kampagnenbilder mit benutzerdefiniertem Text versehen werden. Sie können ein Verarbeitungsprofil erstellen, das die Photoshop-API zum Bearbeiten der Bilder verwendet.
 
 Die Asset Compute-Service-Integration ermöglicht es Experience Managern, diese Parameter mithilfe des Felds [!UICONTROL Dienstparameter] an die benutzerdefinierte Anwendung zu übergeben. Die benutzerdefinierte Anwendung ruft dann die Photoshop-API auf und übergibt die Werte an die API. Sie können beispielsweise Schriftartname, Textfarbe, Textstärke und Textgröße übergeben, um den benutzerdefinierten Text Kampagnenbildern hinzuzufügen.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
