@@ -4,9 +4,9 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: 064ef219702e45695413dad21388b513627a3cf5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '379'
 ht-degree: 66%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 66%
    + [Hinzufügen von Anwendern und Rollen](what-is-required/add-users-roles.md)
    + [Rollenbasierte Berechtigungen](what-is-required/role-based-permissions.md)
    + [Quell-Code-Repository](what-is-required/source-code-repository.md)
++ Phasen der Umstellung {#phases}
+   + [Planung](/help/move-to-cloud-service/planning.md)
+   + [Ausführung](/help/move-to-cloud-service/execution.md)
+   + [Nach der Live-Schaltung](/help/move-to-cloud-service/post-go-live.md)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
    + [Zugriff auf Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service-Programme {#cloud-service-programs}
