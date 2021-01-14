@@ -2,9 +2,9 @@
 title: Inhaltsfragmentmodelle
 description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
 translation-type: tm+mt
-source-git-commit: 287e2cec425c2fd7e80618d247dc658ae1280066
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 45%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 45%
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->Die AEM GraphQL API für Content Fragment Versand wird Anfang 2021 veröffentlicht.
->
->Die entsprechende Dokumentation steht bereits zur Vorschau zur Verfügung.
+>Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md).
 
