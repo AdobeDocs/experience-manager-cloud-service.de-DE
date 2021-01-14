@@ -2,17 +2,17 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 98%
+source-wordcount: '3296'
+ht-degree: 95%
 
 ---
 
 
 # Seitenvorlagen {#page-templates}
 
-Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften). Das hat mehrere Vorteile:
+Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften). Dies hat mehrere Vorteile:
 
 * Seitenvorlagen sollen spezialisierten Autoren das [Erstellen und Bearbeiten von Vorlagen](/help/sites-cloud/authoring/features/templates.md) ermöglichen.
    * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
@@ -61,7 +61,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zu den Strukturen werden in diesem Dokument unter [Struktur](#structure) erläutert.
+   Technische Details zur Struktur finden Sie in diesem Dokument unter [Struktur](#structure).
 
    **Richtlinien**
 
@@ -72,7 +72,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zu den Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](#content-policies) erläutert.
+   Technische Details zu Richtlinien finden Sie in diesem Dokument unter [Inhaltsrichtlinien](#content-policies).
 
    **Anfänglicher Inhalt**
 
@@ -99,7 +99,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Vorlagen aktivieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Technische Details zu den Richtlinien werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](#enabling-and-allowing-a-template-for-use) erläutert.
+   Technische Informationen zum Aktivieren einer Vorlage finden Sie in diesem Dokument unter [Aktivieren und Zulassen einer Vorlage für uns](#enabling-and-allowing-a-template-for-use)e
 
 1. Verwenden Sie sie, um Inhaltsseiten zu erstellen.
 
@@ -110,6 +110,16 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Technische Details zu den Richtlinien werden in diesem Dokument unter [Resultierende Inhaltsseiten](#resultant-content-pages) erläutert.
 
+>[!TIP]
+>
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internalisierung werden die [lokale Anpassung-Funktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) empfohlen.
+
+>[!NOTE]
+>
+>Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
+
 >[!NOTE]
 >
 >Die Client-Bibliothek des Editors setzt voraus, dass der Namespace `cq.shared` in den Inhaltsseiten vorhanden ist. Wenn er nicht vorhanden ist, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` gemeldet.
@@ -118,9 +128,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 >
 >Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken](/help/implementing/developing/introduction/clientlibs.md).
 
->[!CAUTION]
->
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen.
+
 
 ## Vorlagenordner {#template-folders}
 
