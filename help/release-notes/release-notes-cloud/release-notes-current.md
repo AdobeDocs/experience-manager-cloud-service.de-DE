@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 16%
+source-wordcount: '692'
+ht-degree: 14%
 
 ---
 
@@ -23,7 +23,7 @@ Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 * **[Content Fragment HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)**: hinzufügen die Möglichkeit, Inhaltsfragmentvarianten mithilfe der HTTP-API hinzuzufügen/zu aktualisieren und zu löschen.
 
-## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 * Die Integration mit [!DNL Adobe InDesign Server] ist jetzt für [!DNL Experience Manager] als [!DNL Cloud Service] verfügbar. Es bietet Automatisierung zur Verarbeitung von [!DNL Adobe InDesign]-Dateien mithilfe von [!DNL Adobe InDesign Server]-Skripten und ermöglicht Benutzern die Verwendung der [!DNL Assets]-Vorlagen-Benutzeroberfläche zum Erstellen von Prospekten oder Anzeigen. Für [!DNL Experience Manager as a Cloud Service] wird nur [!DNL InDesign Server] unterstützt, wenn [!DNL Adobe Managed Services] gehostet wird. <!-- TBD: Add link to article. -->
 
@@ -45,21 +45,15 @@ Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.0 ist der 10. Dezember 2020.
-
-### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Selbstbedienungs-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Selbstbedienungs-Management von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* Die Detailseite **Umgebung** wurde aktualisiert und ermöglicht Benutzern nun, benutzerdefinierte Domänennamen und IP-Zulassungslisten auf ihren Umgebung zu verwalten.
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0 ist der 14. Januar 2021.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
+* Die Assets Production-Instanz kann gelegentlich den Markenportalstatus auf der Detailseite **Umgebung** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
 
-* Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
+* Beim Auslösen einer Dehibernate aus Cloud Manager wurde manchmal eine Fehlermeldung angezeigt, auch wenn die Deaktivierung erfolgreich gestartet wurde.
+
+* Seltene Fälle von Fehlern beim Erstellen oder Löschen von Umgebung wurden behoben.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
