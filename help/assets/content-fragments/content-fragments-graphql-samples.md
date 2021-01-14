@@ -2,9 +2,9 @@
 title: Verwendung von GraphQL mit AEM - Beispielinhalt und Abfragen
 description: GraphQL mit AEM - Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->Die AEM GraphQL API für Content Fragment Versand wird Anfang 2021 veröffentlicht.
+>Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
 >
->Die entsprechende Dokumentation steht bereits zur Vorschau zur Verfügung.
+>Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 Für die ersten Schritte mit GraphQL-Abfragen und wie sie mit AEM Inhaltsfragmenten funktionieren, ist es hilfreich, einige praktische Beispiele zu sehen.
 
