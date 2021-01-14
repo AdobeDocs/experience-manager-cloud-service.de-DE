@@ -2,31 +2,21 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 88%
+source-wordcount: '2012'
+ht-degree: 87%
 
 ---
 
 
 # Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->Die AEM GraphQL API für Content Fragment Versand wird Anfang 2021 veröffentlicht.
->
->Die entsprechende Dokumentation steht bereits zur Vorschau zur Verfügung.
+>Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
 
@@ -292,7 +282,7 @@ Zum Erstellen von Inhaltsfragmenten benötigen Sie Folgendes:
 * **Inhaltsmodell**
 
    * Sind [mithilfe des Konfigurationsbrowsers aktiviert](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * werden mit Tools[ erstellt.](/help/assets/content-fragments/content-fragments-models.md)
+   * werden mit Tools](/help/assets/content-fragments/content-fragments-models.md) erstellt.[
    * Erforderlich zum [Erstellen eines Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments). 
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. alles andere ist optional.
