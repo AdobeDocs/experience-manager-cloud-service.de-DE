@@ -2,9 +2,9 @@
 title: Vorschau - JSON-Vertretung
 description: Vorschau der JSON-Darstellung des Fragments.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '132'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Die AEM GraphQL API für Content Fragment Versand wird Anfang 2021 veröffentlicht.
+>Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
 >
->Die entsprechende Dokumentation steht bereits zur Vorschau zur Verfügung.
+>Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 Beim Entwickeln der Modelle für Inhaltsfragmente sollten Sie eventuell eine JSON-Musterausgabe für ein Inhaltsfragment auf der Grundlage eines Modells Ansicht haben. So erhalten Sie zum Beispiel eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der JSON-Modellstruktur hilfreich sein, möglicherweise mit Standardinhalt pro Datentyp.
 
