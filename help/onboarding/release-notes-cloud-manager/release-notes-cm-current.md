@@ -1,36 +1,29 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
-description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
+title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2021.1.0
+description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2021.1.0
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 15%
+ht-degree: 4%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.12.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2021.1.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.12.0 erläutert.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.1.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.0 ist der 10. Dezember 2020.
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0 ist der 14. Januar 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-### Neuerungen {#what-is-new}
-
-* Selbstbedienungs-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Selbstbedienungs-Management von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* Die Detailseite **Umgebung** wurde aktualisiert und ermöglicht Benutzern nun, benutzerdefinierte Domänennamen und IP-Zulassungslisten auf ihren Umgebung zu verwalten.
-
-
 ### Fehlerbehebungen {#bug-fixes}
 
-* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
+* Die Assets Production-Instanz kann gelegentlich den Markenportalstatus auf der Detailseite **Umgebung** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
 
-* Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
+* Beim Auslösen einer Dehibernate aus Cloud Manager wurde manchmal eine Fehlermeldung angezeigt, auch wenn die Deaktivierung erfolgreich gestartet wurde.
+
+* Seltene Fälle von Fehlern beim Erstellen oder Löschen von Umgebung wurden behoben.
