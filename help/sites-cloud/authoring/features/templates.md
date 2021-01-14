@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 100%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 >
 >Die **zugelassenen Vorlagen** werden häufig vordefiniert, wenn Sie Ihre Website erstmals einrichten.
 
->[!CAUTION]
+>[!TIP]
 >
 >Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    >[!NOTE]
    >
    >Wenn eine neue Vorlage erstellt wird, wird sie in der Konsole als **Entwurf** markiert, was bedeutet, dass sie noch nicht für Seitenautoren zur Verfügung steht.
+
+>[!NOTE]
+>
+>Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
 
 ### Definieren von Vorlageneigenschaften – Vorlagenautor   {#defining-template-properties-template-author}
 
