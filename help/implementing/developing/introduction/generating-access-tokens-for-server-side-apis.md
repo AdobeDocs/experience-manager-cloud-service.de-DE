@@ -2,7 +2,7 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Entwicklerfluss {#developer-flow}
 
-Entwickler möchten wahrscheinlich eine Entwicklungsinstanz ihrer Nicht-AEM-Anwendung testen (entweder auf ihrem Laptop ausgeführt oder gehostet), die Anforderungen an eine Entwicklungs-AEM als Cloud Service-dev-Umgebung stellt. Da Entwickler jedoch nicht unbedingt als Cloud Service-Dev-Umgebung Zugriff auf die AEM haben, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Träger generieren können. So bieten wir einem Entwickler einen Mechanismus, um ein Zugriffstoken direkt zu generieren, das in Anforderungen zur AEM als Cloud Service-Umgebung verwendet werden kann, auf die er Zugriff hat. Informationen zu den erforderlichen Berechtigungen zur Verwendung des AEM als Cloud Service-Entwicklerkonsole finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md).
+Entwickler möchten wahrscheinlich eine Entwicklungsinstanz ihrer Nicht-AEM-Anwendung testen (entweder auf ihrem Laptop ausgeführt oder gehostet), die Anforderungen an eine Entwicklungs-AEM als Cloud Service-dev-Umgebung stellt. Da Entwickler jedoch nicht unbedingt als Cloud Service-Dev-Umgebung Zugriff auf die AEM haben, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Träger generieren können. So bieten wir einem Entwickler einen Mechanismus, um ein Zugriffstoken direkt zu generieren, das in Anforderungen zur AEM als Cloud Service-Umgebung verwendet werden kann, auf die er Zugriff hat.
+
+Informationen zu den erforderlichen Berechtigungen zur Verwendung des AEM als Cloud Service-Entwicklerkonsole finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
