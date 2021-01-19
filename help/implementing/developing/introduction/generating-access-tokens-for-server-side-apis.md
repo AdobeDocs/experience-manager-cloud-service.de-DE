@@ -2,9 +2,9 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
+source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
-Ein Benutzer mit der Administratorrolle kann eine AEM als Berechtigung für Cloud Service generieren, die auf dem Server installiert werden sollte und sorgfältig als geheimer Schlüssel behandelt werden sollte. Diese JSON-Formatdatei enthält alle Daten, die zur Integration mit einer AEM als Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS für ein IMS-Zugriffstoken ausgetauscht wird. Dieses Zugriffstoken kann dann als Interaktionskennzeichen verwendet werden, um Anforderungen an AEM als Cloud Service zu stellen.
+Ein Benutzer mit IMS-Organisationsadministrator-Rolle kann eine AEM als Cloud Service-Berechtigung generieren, die dann von einem Benutzer mit der AEM als Administrator-Rolle der Cloud Service-Umgebung abgerufen werden kann und auf dem Server installiert werden sollte und sorgfältig als geheimer Schlüssel behandelt werden muss. Diese JSON-Formatdatei enthält alle Daten, die zur Integration mit einer AEM als Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS für ein IMS-Zugriffstoken ausgetauscht wird. Dieses Zugriffstoken kann dann als Interaktionskennzeichen verwendet werden, um Anforderungen an AEM als Cloud Service zu stellen.
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
@@ -30,10 +30,11 @@ Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 * Installieren Sie das AEM als Cloud Service-Anmeldeinformationen auf einem Nicht-AEM-Server, der Aufrufe an AEM
 * Erstellen Sie ein JWT-Token und tauschen Sie dieses Token mit den IMS-APIs der Adobe für ein Zugriffstoken aus
 * Aufrufen der AEM-API mit dem Zugriffstoken als Interaktionsauthentifizierungstoken
+* Legen Sie die entsprechenden Berechtigungen für den technischen Kontobenutzer in der AEM Umgebung fest
 
 ### Abrufen des AEM als Cloud Service-Anmeldeinformationen {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Benutzer mit der Administratorrolle für ein IMS-Unternehmen sehen die Registerkarte Integrationen in der Developer Console für eine bestimmte Umgebung sowie zwei Schaltflächen. Wenn Sie auf die Schaltfläche **Dienstberechtigungen abrufen** klicken, werden die Dienstberechtigungen generiert. Diese enthalten alle für den Nicht-AEM-Server erforderlichen Informationen, einschließlich Client-ID, Clientgeheimnis, privater Schlüssel, Zertifikat und Konfiguration für Autoren- und Veröffentlichungsstufen der Umgebung, unabhängig von der Pod-Auswahl.
+Für Benutzer mit Zugriff auf die AEM als Cloud Service-Entwicklerkonsole werden die Registerkarte Integrationen in der Developer Console für eine bestimmte Umgebung sowie zwei Schaltflächen angezeigt. Ein Cloud Service, der die Rolle &quot;Administrator&quot;AEM, kann auf die Schaltfläche **Get Service Credentials** klicken, um die Dienstanmeldeinformationen anzuzeigen. Diese enthalten alle für den Nicht-AEM-Server erforderlichen Informationen, einschließlich Client-ID, Clientgeheimnis, privater Schlüssel, Zertifikat und Konfiguration für Autoren- und Veröffentlichungsebenen der Umgebung, unabhängig von der Pod-Auswahl.
 
 ![JWT-Erzeugung](assets/JWTtoken3.png)
 
@@ -59,6 +60,10 @@ Die Ausgabe ähnelt der folgenden:
 }
 ```
 
+>[!IMPORTANT]
+>
+>Ein IMS-Organisationsadministrator (in der Regel derselbe Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat) muss zuerst auf die Developer Console zugreifen und auf die Schaltfläche **Dienstanmeldeinformationen abrufen** klicken, damit die Anmeldeinformationen von einem Benutzer mit Administratorrechten für die AEM als Cloud Service-Umgebung generiert und später abgerufen werden können. Wenn der IMS-Organisationsadministrator dies nicht getan hat, wird er in einer Meldung darauf hingewiesen, dass er die IMS-Organisationsadministrator-Rolle benötigt.
+
 ### Installieren Sie die AEM Dienstberechtigungen auf einem Nicht-AEM-Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 Die AEM, die AEM aufrufen, sollten in der Lage sein, auf die AEM als Anmeldedaten des Cloud Service zuzugreifen, und sie als geheim behandeln.
@@ -67,7 +72,7 @@ Die AEM, die AEM aufrufen, sollten in der Lage sein, auf die AEM als Anmeldedate
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf des IMS-Dienstes der Adobe zu erstellen, um ein Zugriffstoken abzurufen, das 24 Stunden gültig ist.
 
-Die AEM-CS-Dienstberechtigungen können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken für ein Zugriffstoken ausgetauscht werden. Die Client-Bibliotheken sind im öffentlichen GitHub-Repository der Adobe [verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.](https://github.com/adobe/aemcs-api-client-lib)
+Die AEM CS-Dienst-Anmeldeinformationen können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken für ein Zugriffstoken ausgetauscht werden. Die Client-Bibliotheken sind im öffentlichen GitHub-Repository der Adobe [verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.](https://github.com/adobe/aemcs-api-client-lib)
 
 ```
 /*jshint node:true */
@@ -99,15 +104,23 @@ Nehmen Sie die entsprechenden Server-zu-Server-API-Aufrufe an eine AEM als Cloud
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
+### Legen Sie die entsprechenden Berechtigungen für den Benutzer des technischen Kontos in AEM fest.{#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
+
+Sobald der technische Kontobenutzer in AEM erstellt wurde (dies erfolgt nach der ersten Anforderung mit dem entsprechenden Zugriffstoken), muss der technische Kontobenutzer in **der AEM ordnungsgemäß autorisiert sein.**
+
+Beachten Sie, dass der Benutzer des technischen Kontos im AEM Author-Dienst standardmäßig zur Benutzergruppe der Mitarbeiter hinzugefügt wird, die Leserechte AEM.
+
+Dieser technische Kontobenutzer in AEM kann mit den üblichen Methoden weitere Berechtigungen erhalten.
+
 ## Entwicklerfluss {#developer-flow}
 
-Entwickler möchten wahrscheinlich eine Entwicklungsinstanz ihrer Nicht-AEM-Anwendung testen (entweder auf ihrem Laptop ausgeführt oder gehostet), die Anforderungen an eine Entwicklungs-AEM als Cloud Service-dev-Umgebung stellt. Da Entwickler jedoch nicht unbedingt als Cloud Service-Dev-Umgebung Zugriff auf die AEM haben, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Träger generieren können. So bieten wir einem Entwickler einen Mechanismus, um ein Zugriffstoken direkt zu generieren, das in Anforderungen zur AEM als Cloud Service-Umgebung verwendet werden kann, auf die er Zugriff hat.
+Entwickler möchten wahrscheinlich eine Entwicklungsinstanz ihrer Nicht-AEM-Anwendung testen (entweder auf ihrem Laptop ausgeführt oder gehostet), die Anforderungen an eine Entwicklungs-AEM als Cloud Service-dev-Umgebung stellt. Da Entwickler jedoch nicht unbedingt über Berechtigungen für IMS-Administratorrollen verfügen, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Träger generieren können. So bieten wir einem Entwickler einen Mechanismus, um ein Zugriffstoken direkt zu generieren, das in Anforderungen zur AEM als Cloud Service-Umgebung verwendet werden kann, auf die er Zugriff hat.
 
 Informationen zu den erforderlichen Berechtigungen zur Verwendung des AEM als Cloud Service-Entwicklerkonsole finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
->Das Token ist 24 Stunden gültig, danach muss es mit derselben Methode neu generiert werden.
+>Das lokale Entwicklungs-Zugriffstoken ist 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
 
 Entwickler können dieses Token verwenden, um Aufrufe von ihrer Nicht-AEM-Testanwendung an eine AEM als Cloud Service-Umgebung durchzuführen. Normalerweise verwendet der Entwickler dieses Token mit der Nicht-AEM-Anwendung auf seinem eigenen Laptop. Außerdem ist die AEM als Cloud normalerweise eine Nicht-Produktions-Umgebung.
 
