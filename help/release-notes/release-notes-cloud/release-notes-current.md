@@ -2,7 +2,7 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 14%
@@ -84,4 +84,3 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.1.20 ist der 0
 * Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Das wurde behoben.
 * Die Option zum Ansicht von Protokollen wurde deaktiviert, wenn die Protokolle nicht verfügbar waren. Dieser Fehler wurde behoben und es wurde eine Nachricht hinzugefügt, die den Benutzer darüber informiert, warum Protokolle fehlen.
 * Der Benutzeroberflächenstatus des Inhaltsübertragungstools wurde als FEHLGESCHLAGEN angezeigt, wenn der Benutzer eine Erfassung stoppte. Dieses Problem wurde behoben, um stattdessen *STOPPED* anzuzeigen.
-
