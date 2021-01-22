@@ -46,7 +46,7 @@ Als Benutzer in der Rolle &quot;SysAdmin&quot;haben Sie 1-Klick Zugriff auf die 
 >[!NOTE]
 >Für einige Organisationen, die vor Januar 2020 Zugang zu AEM als Cloud Service erhalten haben, werden diese in die Adobe Admin Console gebracht und das Produkt- und Umgebung-Profil ausgewählt.
 
-Weitere Informationen finden Sie unter Zugriff auf eine Instanz in AEM als Cloud Service[.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service)
+Weitere Informationen finden Sie unter Zugriff auf eine Instanz in AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service).[
 
 1. Navigieren Sie zur Karte **Umgebung** von **Programm-Übersicht** und klicken Sie auf **Zugriff verwalten**.
 
