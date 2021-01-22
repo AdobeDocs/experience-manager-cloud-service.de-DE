@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Abschnitte helfen Ihnen bei der Bestimmung, welcher Datensatz für
 
 Ein kanonischer Name oder `CNAME`-Datensatz ist ein DNS-Datensatz, der einen Aliasnamen einem wahren oder kanonischen Domänennamen zuordnet. CNAME-Einträge werden normalerweise dazu verwendet, eine Subdomäne wie `www.example.com` der Domäne zuzuordnen, in der der Inhalt dieser Subdomäne gehostet wird.
 
-Melden Sie sich bei Ihrem Domänenregistrierer an und erstellen Sie einen CNAME-Eintrag, um Ihren benutzerspezifischen Domänennamen auf die Zielgruppe zu verweisen, wie nachfolgend gezeigt:
+Melden Sie sich bei Ihrer Domain-Registrierungsstelle an und erstellen Sie einen CNAME-Eintrag, um Ihren benutzerdefinierten Domain-Namen wie unten gezeigt auf das Ziel zu verweisen:
 
 | CNAME | Benutzerdefinierter Domänenname verweist auf die Zielgruppe |
 |--- |--- |
