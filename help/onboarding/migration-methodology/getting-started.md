@@ -57,7 +57,7 @@ Informationen zum Anpassen des Experience Managers als Cloud Service finden Sie 
 | <ol><li>Weitere Informationen finden Sie in der Dokumentation zu [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing).</li><li>Sehen Sie sich [Dispatcher SDK](https://video.tv.adobe.com/v/30601?captions=ger) installieren an, um zu erfahren, wie Sie Dispatcher SDK installieren.</li><li>Sehen Sie sich [Dispatcher-SDK konfigurieren](https://video.tv.adobe.com/v/30602?captions=ger) an, um zu erfahren, wie Sie Dispatcher-SDK konfigurieren</li><li>Weitere Informationen finden Sie in der Dokumentation zu [Lokale Entwicklungseinstellungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)</li><li>Konfigurieren des Zugriffs auf Experience Manager [Durchlaufen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Entwicklungsgrundlagen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Entwicklungsrichtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Die Projektstruktur des Experience Managers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)</li><li>[Konzept der Digital Foundation](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Überlagerungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Experience Manager als Cloud Service-API-Referenz](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
 
 >[!TIP]
-> Siehe Lernprogramm zum Entwickeln und Bereitstellen von WKND auf dem lokalen Experience Manager-SDK[](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+> Siehe Lernprogramm zum Entwickeln und Bereitstellen von WKND auf dem lokalen Experience Manager-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)[
 
 ### Bereitstellung
 
@@ -80,7 +80,7 @@ Informationen zum Konfigurieren und Bereitstellen auf AEM als Cloud Service-Umge
    * [Sichern und Wiederherstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> Siehe Übung zum Bereitstellen von WKND für Experience Manager Cloud Service[](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)
+> Siehe Übung zum Bereitstellen von WKND für Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)[
 
 ### Hilfe und Ressourcen
 
@@ -122,7 +122,7 @@ Die nachstehende Abbildung zeigt eine bildliche Darstellung der empfohlenen Umst
 
 ### Planung
 
-Bevor Sie mit der Transition zum Cloud Service beginnen, sollten Sie sich mit dem Experience Manager als Cloud Service vertraut machen und die wesentlichen Änderungen daran überprüfen sowie die Funktionen überprüfen, die ersetzt oder veraltet wurden.
+Bevor Sie mit dem Journey der Transition zum Cloud Service beginnen, sollten Sie sich mit dem Experience Manager als Cloud Service vertraut machen und die wesentlichen Änderungen überprüfen, die daran vorgenommen wurden, und auch die Funktionen überprüfen, die ersetzt oder nicht mehr unterstützt wurden.
 
 <table>
 <tr>
