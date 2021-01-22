@@ -18,7 +18,7 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.8.0 ist der 06. August 2020.
 
-## Neuerungen {#whats-new-cloud-manager}
+## Neue Funktionen {#whats-new-cloud-manager}
 
 * Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
