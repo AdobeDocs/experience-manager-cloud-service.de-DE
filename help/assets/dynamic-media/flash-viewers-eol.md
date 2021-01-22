@@ -14,4 +14,4 @@ ht-degree: 8%
 
 Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell nicht mehr unterstützt.
 
-Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch[.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+Die neuesten unterstützten Viewer finden Sie im Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).[
