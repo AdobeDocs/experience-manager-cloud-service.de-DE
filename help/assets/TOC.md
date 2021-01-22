@@ -8,14 +8,14 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
 
 # [!DNL Assets]-Anleitung {#assets}
 
-+ [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
 + [Wichtige Änderungen  [!DNL Assets] in [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] Architektur](architecture.md)
