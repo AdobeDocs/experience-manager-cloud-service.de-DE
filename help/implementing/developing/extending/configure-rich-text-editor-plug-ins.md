@@ -393,8 +393,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
    Wiederholen Sie die Schritte für jedes erforderliche Format.
 
 >[!CAUTION]
->
->Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
+Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
 ## Konfigurieren von Sonderzeichen {#spchar}
 
@@ -403,8 +402,7 @@ Wenn in einer [!DNL Experience Manager]-Standardinstallation das Plug-in `miscto
 Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeichen zur Verfügung steht, entweder indem Sie einzelne Zeichen oder eine ganze Sequenz definieren.
 
 >[!CAUTION]
->
->Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
+Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer Auswahl neu.
 
 ### Definieren einzelner Zeichen   {#definesinglechar}
 
@@ -479,12 +477,10 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 Neben der Definition von Stilen, die auf normalen Text angewendet werden, können Sie auch Stile (einen separaten Satz) für eine ganze Tabelle oder einzelne Tabellenzellen definieren. Diese können dann im Dialogfeld „Zellen-Eigenschaften“ oder „Tabelleneigenschaften“ im Auswahlfeld „Stil“ ausgewählt werden. Diese Stile sind nur verfügbar, wenn eine Tabelle in einer Textkomponente (oder einer abgeleiteten Komponente davon) und nicht in der standardmäßigen Tabellenkomponente bearbeitet wird.
 
 >[!NOTE]
->
->Sie können Stile für Tabellen und Tabellenzellen nur in der klassischen Benutzeroberfläche definieren.
+Sie können Stile für Tabellen und Tabellenzellen nur in der klassischen Benutzeroberfläche definieren.
 
 >[!NOTE]
->
->Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Sie wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können die Ergebnisse unterschiedlich ausfallen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
+Die Funktion zum Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Sie wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser können die Ergebnisse unterschiedlich ausfallen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `table`:
@@ -494,9 +490,8 @@ Neben der Definition von Stilen, die auf normalen Text angewendet werden, könne
    * **Wert** `*`
 
    >[!NOTE]
-   >
-   >Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
-   >* **Typ** `String[]`
+   Wenn Sie nicht alle Tabellen-Features aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
+   * **Typ** `String[]`
 
    * **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
       * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
@@ -562,8 +557,7 @@ Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. So wird beispielsweise für den `/en/`-Zweig das englische und für den `/de/`-Zweig das deutsche Wörterbuch für die Überprüfung verwendet.
 
 >[!NOTE]
->
->Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
+Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
 
 Eine AEM-Standardinstallation umfasst die Wörterbücher für:
 
@@ -571,8 +565,7 @@ Eine AEM-Standardinstallation umfasst die Wörterbücher für:
 * Britisches Englisch (en_gb)
 
 >[!NOTE]
->
->Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
+Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
 Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
 
@@ -580,17 +573,15 @@ Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
 1. Wählen Sie die gewünschte Sprache aus und laden Sie die ZIP-Datei mit den Rechtschreibedefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
 
    >[!CAUTION]
-   >
-   >Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da die Wörterbücher jetzt Archivdateien sind, ist es ratsam, eine vollständige Prüfung nach dem Herunterladen durchzuführen.
+   Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da die Wörterbücher jetzt Archivdateien sind, ist es ratsam, eine vollständige Prüfung nach dem Herunterladen durchzuführen.
 
 1. Suchen Sie nach den *.aff- und *.dic-Dateien. Der Dateiname darf nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
->
->Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
->Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf die Schaltfläche „Rechtschreibprüfung“ tippen/klicken. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
->Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
+Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf die Schaltfläche „Rechtschreibprüfung“ tippen/klicken. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
+Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
 
@@ -625,8 +616,7 @@ So definieren Sie die Tabulator-Schrittweite:
 Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Einzugsgröße definieren:
 
 >[!NOTE]
->
->Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
+Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/lists`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im `lists`-Knoten den `identSize`-Parameter:
@@ -658,11 +648,10 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
    * **Typ** `nt:unstructured`
 
    >[!NOTE]
-   >
-   >Der Knoten `../items/text` hat die Eigenschaft:
-   >* **Name** `xtype`
-   >* **Typ** `String`
-   >* **Wert** `richtext`
+   Der Knoten `../items/text` hat die Eigenschaft:
+   * **Name** `xtype`
+   * **Typ** `String`
+   * **Wert** `richtext`
 
    Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Zwei Beispiele sind `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
