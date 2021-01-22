@@ -22,7 +22,7 @@ Die Bereitstellung der erstellten Pakete für AEM wird vom Adobe Content Package
 * Besorgen Sie sich eine Liste von Paketen, die auf AEM installiert sind.
 * Entfernen Sie ein Paket aus AEM.
 
-In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit dem Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, wie AEM Projekte und ihre Pakete strukturiert sind.[](#aem-project-structure)
+In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit dem Maven verwalten können. Es ist jedoch auch wichtig zu verstehen, wie AEM Projekte und ihre Pakete strukturiert sind.](#aem-project-structure)[
 
 >[!NOTE]
 >
