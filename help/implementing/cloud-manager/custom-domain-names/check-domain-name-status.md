@@ -15,7 +15,7 @@ ht-degree: 0%
 Sie können feststellen, ob Ihr Domänenname erfolgreich überprüft wurde, indem Sie auf der Seite &quot;Domäneneinstellungen&quot;auf der Umgebung in der Tabelle auf das Statussymbol für den Domänennamen klicken.
 
 >[!NOTE]
->Cloud Manager löst automatisch eine TXT-Überprüfung aus, wenn Sie im Überprüfungsschritt des Assistenten für Hinzufügen benutzerdefinierte Domäne &quot;Speichern&quot;wählen. Für spätere Überprüfungen müssen Sie das Symbol **verify wiederum** neben dem Status aktiv auswählen.
+>Cloud Manager wird automatisch eine TXT-Überprüfung Trigger, wenn Sie im Überprüfungsschritt des Assistenten für benutzerdefinierte Domänen die Option Speichern auswählen. Für spätere Überprüfungen müssen Sie das Symbol **verify wiederum** neben dem Status aktiv auswählen.
 
 Cloud Manager überprüft den Domänenbesitz über den TXT-Wert und zeigt eine der folgenden Statusmeldungen an:
 
