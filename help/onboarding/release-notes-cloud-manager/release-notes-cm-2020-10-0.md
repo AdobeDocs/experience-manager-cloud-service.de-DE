@@ -20,7 +20,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.10.
 
 ## Cloud Manager {#cloud-manager}
 
-### Neuerungen {#what-is-new}
+### Neue Funktionen {#what-is-new}
 
 * Die Seite &quot;Umgebung&quot;wurde neu gestaltet.
 
