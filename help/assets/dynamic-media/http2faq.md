@@ -2,10 +2,10 @@
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
 description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 78%
+source-wordcount: '762'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +43,7 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 * Sie verwenden das im Adobe-Bundle enthaltene CDN (Content Delivery Network) im Rahmen Ihrer Dynamic Media Classic-Lizenz.
 * Verwenden Sie eine dedizierte Domäne (d. h. `images.company.com` oder `mycompany.scene7.com`), nicht eine generische Dynamic Media-Domäne (d. h. `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com`).
 
-   Um Ihre Domänen zu finden, melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.[
+   Um Ihre Domänen zu finden, öffnen Sie die [Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an.
 
     Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **Veröffentlichungs-Server-Name**. Wenn Sie derzeit eine generische Dynamic Media-Domäne verwenden, können Sie im Rahmen dieser Transition den Übergang zu Ihrer eigenen benutzerdefinierten Domäne anfordern.
 
@@ -56,7 +56,7 @@ Sie müssen [die Admin Console verwenden, um einen Support Case](https://helpx.a
    * Name, E-Mail-Adresse und Telefonnummer des Primärkontakts
    * Alle Domänen, die auf HTTP/2 umgestellt werden sollen. Das heißt, `images.company.com` oder `mycompany.scene7.com`.
 
-   Um Ihre Domänen zu finden, melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.[
+   Um Ihre Domänen zu finden, öffnen Sie die [Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an.
 
     Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
 
@@ -64,7 +64,7 @@ Sie müssen [die Admin Console verwenden, um einen Support Case](https://helpx.a
    * Stellen Sie sicher, dass Sie das CDN über Adobe und nicht über eine direkte Beziehung verwenden.
    * Stellen Sie sicher, dass Sie eine dedizierte Domäne verwenden. Das heißt, `images.company.com` oder `mycompany.scene7.com` ist keine generische Dynamic Media-Domäne wie `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Um Ihre Domänen zu finden, melden Sie sich für jedes Firmen-Konto bei Ihrer Instanz von Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) an.[
+   Um Ihre Domänen zu finden, öffnen Sie die [Dynamic Media Classic Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an.
 
     Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domäne verwenden, können Sie im Rahmen dieser Transition den Übergang zu Ihrer eigenen benutzerdefinierten Domäne anfordern.
 
