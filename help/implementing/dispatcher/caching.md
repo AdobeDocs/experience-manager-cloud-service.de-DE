@@ -2,10 +2,10 @@
 title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeichern in AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 86%
+source-wordcount: '1535'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,15 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird 
 
 ### HTML/Text {#html-text}
 
-* Standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf der Cache-Steuerungskopfzeile, die von der Apache-Ebene ausgegeben wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf der `cache-control`-Kopfzeile, die von der Apache-Ebene ausgestrahlt wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* Die standardmäßige Einstellung für die HTML/Text-Zwischenspeicherung kann deaktiviert werden, indem die Variable `DISABLE_DEFAULT_CACHING` in `global.vars` definiert wird:
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabstimmung der Altersüberschrift erfordert (mit einem Wert, der auf dem Kalendertag basiert), da die Altersüberschrift standardmäßig auf 0 eingestellt ist. Allerdings sollten Sie beim Deaktivieren der Standard-Zwischenspeicherung vorsichtig sein.****
+
 * Kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME`-Variable in `global.vars` mithilfe der Dispatcher Tools des AEM as a Cloud Service-SDK definiert wird.
 * Kann auf einer feineren Ebene durch die folgenden Anweisungen von apache mod_headers überschrieben werden:
 
