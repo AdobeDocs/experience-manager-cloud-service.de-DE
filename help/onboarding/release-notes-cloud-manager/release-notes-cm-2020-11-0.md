@@ -20,7 +20,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 
 ## Cloud Manager {#cloud-manager}
 
-### Neuerungen {#what-is-new}
+### Neue Funktionen {#what-is-new}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht nun den Benutzern über die Menüoptionen auf der Umgebung und den Zusammenfassungsseiten der Umgebung zur Verfügung.
 Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md##login-locally).
