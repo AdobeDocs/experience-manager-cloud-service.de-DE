@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Sie können feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihrer AEM als Cloud Service-Website aufgelöst wird, indem Sie in der Tabelle auf der Seite &quot;Domäneneinstellungen&quot;auf das Statussymbol für den DNS-Datensatz klicken.
 
-Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerspezifischer Domänenname zum ersten Mal überprüft und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol **resolve** neben dem Status aktiv auswählen.
+Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerspezifischer Domänenname zum ersten Mal erfolgreich überprüft und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol **resolve** neben dem Status aktiv auswählen.
 
 Cloud Manager führt eine DNS-Suche nach Ihrem Domänennamen durch und zeigt eine der folgenden Statusmeldungen an:
 
