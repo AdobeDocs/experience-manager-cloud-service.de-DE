@@ -152,7 +152,7 @@ Einige andere zu beachtende Punkte sind:
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skriptmaschinen wird in der Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`) aufgelistet.
 
-Wenn das `sling:resourceType` `hr/jobs` &lt;a1/> ist, gehen Sie wie folgt vor:
+Wenn das `sling:resourceType` `hr/jobs`  ist, gehen Sie wie folgt vor:
 
 * GET/HEAD-Anforderungen und URLs, die auf `.html` enden (Standardanforderungstypen, Standardformat)
    * Das Skript ist `/apps/hr/jobs/jobs.esp`; Der letzte Abschnitt von `sling:resourceType` bildet den Dateinamen.
@@ -281,7 +281,7 @@ Dies ermöglicht es Ihnen, die folgenden Handlungen innerhalb Ihrer Installation
 * Siehe Aktuellen Status
 * Greifen Sie auf detailliertere Informationen (z.B. symbolischer Name, Version, Speicherort usw.) zu den jeweiligen Bundles zu
 
-Weitere Informationen finden Sie unter Konfigurieren von OSGi für AEM als Cloud Service[.](/help/implementing/deploying/configuring-osgi.md)
+Weitere Informationen finden Sie unter Konfigurieren von OSGi für AEM als Cloud Service](/help/implementing/deploying/configuring-osgi.md).[
 
 ## Struktur innerhalb des Repositorys {#structure-within-the-repository}
 
