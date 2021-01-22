@@ -60,7 +60,7 @@ Die Anmeldung kann mit den folgenden beiden Methoden implementiert werden:
 Kunden können eigene benutzerdefinierte Komponenten schreiben. Um mehr zu erfahren, sollten Sie sich mit Folgendem vertraut machen:
 
 * [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* Überlegen Sie sich, ob Sie sich bei der AEM Community Experts Session [ zur Anmeldung fragen möchten.](http://bit.ly/ATACEFeb15)
+* Überlegen Sie sich, ob Sie sich bei der AEM Community Experts Session ](http://bit.ly/ATACEFeb15) zur Anmeldung fragen möchten.[
 
 ### Integration mit einem Identitätsanbieter {#integration-with-an-idp}
 
