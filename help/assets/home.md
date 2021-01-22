@@ -32,7 +32,7 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für Experience Manager Asset
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a [!DNL Cloud Service]. |
 | [Einstieg](/help/onboarding/home.md) | Beginnen Sie mit dem Experience Manager als [!DNL Cloud Service] — Zugriff und Schutz wichtiger Daten. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Verstehen Sie, wie Sie mit Experience Manager-Sites als [!DNL Cloud Service] erstellen und verwalten. |
-| [Wechsel zum Experience Manager als [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Verstehen Sie die Transition zu Experience Manager als [!DNL Cloud Service]. |
+| [Wechsel zum Experience Manager als [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Verstehen Sie die Journey der Transition zum Experience Manager als [!DNL Cloud Service]. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Anpassen, Entwickeln und Bereitstellen von Experience Manager as a [!DNL Cloud Service]. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Connectors als [!DNL Cloud Service] in Experience Manager integriert werden. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Back-End-Vorgänge von Experience Manager als [!DNL Cloud Service], wie z.B. Indexierung und Wartungsarbeiten. |
