@@ -18,7 +18,7 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.9.0 ist der 3. September 2020.
 
-## Neuerungen {#whats-new-cloud-manager}
+## Neue Funktionen {#whats-new-cloud-manager}
 
 * Inhaltsprüfung wurde in Erlebnisprüfung umbenannt.
 * Der Build-Prozess wurde in drei separate Maven-Befehle unterteilt.
