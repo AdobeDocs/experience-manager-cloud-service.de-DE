@@ -82,7 +82,7 @@ Ein AEM-Programm ist der Container, der Folgendes enthält:
 |  Programmelement |  Nummer |
 |--- |--- |
 | Code-Repository (Git) |  1 |
-| Grundlinienbild (Sites oder Assets) |  3 |
+| Grundlinienbild (Sites oder Assets) |  1 |
 | Staging- und Produktionsumgebung eingestellt (1:1) | 0 oder 1 |
 | Produktionsfremde Umgebungen (Entwicklung oder Demonstration) | 0 bis N |
 | Pipeline für jede Umgebung | 0 oder 1 |
