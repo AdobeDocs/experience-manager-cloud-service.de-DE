@@ -36,7 +36,7 @@ Informationsarchitekten müssen Abfragen für ihre Kanal-Endpunkte entwerfen, um
    * Der Abfrage-Editor bietet Codevervollständigung und Hotkeys, um die Abfrage einfach auszuführen.
       ![GraphiQL-Editor](../assets/graphiql.png)
 
-1. Unter der Annahme, dass das von uns erstellte Modell mit den Feldern `person`, `lastName` und `position` mit den Feldern `firstName` und &lt;a3/> benannt wurde, können wir eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
+1. Unter der Annahme, dass das von uns erstellte Modell mit den Feldern `person`, `lastName` und `position` mit den Feldern `firstName` und  benannt wurde, können wir eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
 
    ```text
    query {
