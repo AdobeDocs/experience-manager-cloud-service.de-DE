@@ -2,10 +2,10 @@
 title: 'Verwenden von Regelsätzen zum Konvertieren von URLs '
 description: In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 94%
+source-wordcount: '767'
+ht-degree: 89%
 
 ---
 
@@ -55,11 +55,9 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
 **So stellen Sie XML-Regelsätze bereit:**
 
-1. Melden Sie sich bei Ihrem Dynamic Media Classic-Konto an:
+1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an.
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
+   Ihre Anmeldeinformationen und Anmeldedaten wurden zum Zeitpunkt der Bereitstellung von der Adobe bereitgestellt. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
 1. Laden Sie Ihre Regelsatzdatei wie folgt hoch:
 
