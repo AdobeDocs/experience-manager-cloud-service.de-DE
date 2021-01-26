@@ -3,9 +3,9 @@ title: Verwalten von Video-Assets
 description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 80%
 
 ---
@@ -53,11 +53,11 @@ Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner 
 ## Best Practices und Einschränkungen {#tips-limitations}
 
 * Ohne die Lizenz [!DNL Dynamic Media] können Sie nur MP4-Dateien mit verarbeitenden Profilen verarbeiten.
-* Beim Transkodieren von MP4-Dateien mit Verarbeitungsdateien gelten die folgenden Richtlinien und Einschränkungen:
+* Beim Transkodieren von MP4-Profilen mit Verarbeitungsregeln gelten die folgenden Richtlinien und Einschränkungen:
 
    * Apple ProRes-Dateien können nur bis zu einer maximalen Auflösung von 1080p transkodiert werden.
    * Wenn die Quelldatei eine Bitrate > 200 Mbit/s aufweist, können Sie nur bis zu einer maximalen Auflösung von 1080p transkodieren.
-   * Wenn dann die Quelldatei >= 60 fps ist, können Sie die maximale Dateigröße verwenden.
+   * Wenn dann die Quelldatei >=60 fps ist, ist die maximale Größe der Quelldatei, die Sie verwenden können,
 
       * 400 MB für die Transkodierung von 4 k.
       * 800 MB für 1080p Transkodierung.
