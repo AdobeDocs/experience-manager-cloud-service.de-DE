@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 84%
+source-wordcount: '567'
+ht-degree: 68%
 
 ---
 
@@ -51,3 +51,24 @@ Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen,
 Aufgrund des zusätzlichen Wechsels kann zu einem kleinen Leistungseinbruch kommen, obwohl Wechsel vom Kunden-CDN zum von Adobe verwalteten CDN wahrscheinlich effizient sind.
 
 Beachten Sie, dass diese kundenspezifische CDN-Konfiguration für die Veröffentlichungsebene unterstützt wird, jedoch nicht vor der Autorenebene.
+
+## Geolocation-Kopfzeilen {#geo-headers}
+
+Das von der Adobe verwaltete CDN fügt jeder Anforderung Kopfzeilen hinzu mit:
+
+* Ländercode: `x-aem-client-country`
+* Kontinentalcode: `x-aem-client-continent`
+
+Die Werte für die Ländercodes sind die Alpha-2-Codes, die [hier](https://en.wikipedia.org/wiki/ISO_3166-1) beschrieben werden.
+
+Die Werte für die Kontinentalcodes lauten:
+
+* AF Afrika
+* AN Antarktika
+* AS Asien
+* Europa
+* NA Nordamerika
+* OC Ozeanien
+* SA Südamerika
+
+Diese Informationen können in Anwendungsfällen nützlich sein, z. B. bei der Weiterleitung auf eine andere URL, die auf der Herkunft (Land) der Anforderung basiert. In diesem speziellen Anwendungsfall sollte die Weiterleitung jedoch nicht zwischengespeichert werden, da sie variiert. Bei Bedarf können Sie `Cache-Control: private` verwenden, um die Zwischenspeicherung zu verhindern. Siehe auch [Zwischenspeicherung](/help/implementing/dispatcher/caching.md#html-text).
