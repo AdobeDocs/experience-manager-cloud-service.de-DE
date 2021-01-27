@@ -2,10 +2,10 @@
 title: Verwenden des Tools für die Benutzerzuordnung
 description: Verwenden des Tools für die Benutzerzuordnung
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 6%
+source-wordcount: '757'
+ht-degree: 5%
 
 ---
 
@@ -35,17 +35,17 @@ Das Benutzerzuordnungstool verwendet eine API, mit der IMS-Benutzer per E-Mail s
 Führen Sie die folgenden Schritte aus, um dies einzurichten:
 
 1. Navigieren Sie mit Ihrem Adobe ID zu [Adobe Developer Console](https://console.adobe.io).
-1. Neues Projekt erstellen oder vorhandenes Projekt öffnen
-1. hinzufügen einer API
-1. User Management-API auswählen
-1. JWT-Berechtigung erstellen
-1. Generieren Sie ein Schlüsselpaar oder Hochladen eines öffentlichen Schlüssels (rsa ist nicht gut)
+1. Erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes Projekt.
+1. hinzufügen einer API.
+1. Wählen Sie User Management API.
+1. Erstellen Sie eine JWT-Berechtigung.
+1. Generieren Sie ein Schlüsselpaar oder Laden Sie einen öffentlichen Schlüssel (rsa ist nicht gut).
 1. Erstellen Sie ein Zugriffstoken (oder ein JWT-Token oder ein Inhabertoken).
-1. Speichern Sie alle diese Informationen (Client-ID, geheimer Clientschlüssel, technische Konto-ID, E-Mail-Adresse des technischen Kontos, Organisations-ID, Zugriffstoken) an einem sicheren Ort.
+1. Speichern Sie alle diese Informationen wie **Client-ID**, **geheimer Clientschlüssel**, **Technische Konto-ID**, **Technische Konto-E-Mail**, **Organisations-ID** und **Zugriffstoken** sicher.
 
 ## Benutzeroberfläche {#user-interface}
 
-Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. Sie können das Content Transfer Tool vom Software Distribution Portal herunterladen. Weitere Informationen zur neuesten Version finden Sie in den Versionshinweisen.
+Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. Sie können das Content Transfer Tool vom Software Distribution Portal herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuelle Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Wählen Sie &quot;Adobe Experience Manager auswählen&quot;und navigieren Sie zu &quot;tools -> **Operations** -> **Content Transfer**&quot;.
 1. Klicken Sie auf **Benutzerzuordnungskonfiguration erstellen**.
