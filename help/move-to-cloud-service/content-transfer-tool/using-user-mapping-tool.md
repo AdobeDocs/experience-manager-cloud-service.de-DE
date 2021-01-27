@@ -2,9 +2,9 @@
 title: Verwenden des Tools für die Benutzerzuordnung
 description: Verwenden des Tools für die Benutzerzuordnung
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,11 @@ Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. 
    >[!NOTE]
    >Wenn Sie diesen Schritt überspringen, wird die Zuordnung von Benutzern und Gruppen während der Extraktion übersprungen.
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Füllen Sie die Felder in User Management API Configuration wie unten beschrieben aus:
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **Organisations-ID**: Geben Sie die IMS-Organisations-ID für das Unternehmen ein, das migriert wird.
 
@@ -67,12 +71,17 @@ Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. 
       >[!NOTE]
       >Das Zugriffstoken läuft alle 24 Stunden ab und es muss ein neues erstellt werden. Um ein neues Token zu erstellen, gehen Sie zurück zu [Adobe Developer Console](https://console.adobe.io), wählen Sie Ihr Projekt aus, klicken Sie auf User Management API und fügen Sie denselben privaten Schlüssel in das Feld ein.
 
-1. Klicken Sie nach Eingabe der obigen Informationen auf Speichern.
+1. Klicken Sie nach Eingabe der obigen Informationen auf **Speichern**.
 
-1. Erstellen Sie ein Migrationsset, indem Sie auf &quot;Migrationsset erstellen&quot;klicken, die Felder ausfüllen und dann auf &quot;Speichern&quot;klicken. Weitere Informationen finden Sie unter Ausführen des Inhaltsübermittlungstools.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Erstellen Sie einen Migrationssatz, indem Sie auf **Migrationsset erstellen** klicken, die Felder ausfüllen und dann auf **Speichern** klicken. Weitere Informationen finden Sie unter Ausführen des Inhaltsübermittlungstools.
 
    >[!NOTE]
    >Der Umschalter zum Einschließen der Zuordnung von Benutzern aus IMS-Benutzern und -Gruppen ist standardmäßig aktiviert. Bei dieser Einstellung wird das Benutzerzuordnungstool während der Extraktion ausgeführt, wenn eine Extraktion für diesen Migrationssatz durchgeführt wird. Dies ist die empfohlene Methode zum Ausführen der Extraktion des Inhaltsübermittlungstools. Wenn dieser Umschalter deaktiviert ist und/oder keine Benutzerzuordnungskonfiguration erstellt wurde, wird die Zuordnung von Benutzern und Gruppen während der Extraktion übersprungen.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Informationen zum Ausführen der Extraktion finden Sie unter [Ausführen des Inhaltsübermittlungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
