@@ -2,10 +2,10 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
-ht-degree: 88%
+source-wordcount: '4119'
+ht-degree: 87%
 
 ---
 
@@ -369,7 +369,8 @@ Phase 2 finished
 Das Skript führt Folgendes aus:
 
 1. Es führt den Validator aus dem vorherigen Abschnitt aus, um sicherzustellen, dass nur die unterstützten Direktiven einbezogen werden. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Es führt das `httpd -t command` aus, um zu testen, ob die Syntax so korrekt ist, dass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration für die Bereitstellung bereit sein
+2. Es führt das `httpd -t command` aus, um zu testen, ob die Syntax so korrekt ist, dass apache httpd Beginn kann. Bei erfolgreichem Abschluss sollte die Konfiguration bereit für die Bereitstellung sein.
+3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistruktur](#file-structure) beschrieben unveränderlich sein sollen, nicht geändert wurde. Dies ist eine neue Prüfung, die mit AEM SDK-Version v2021.1.4738 eingeführt wurde und die auch Dispatcher Tools Version 2.0.36 enthält. Vor dieser Aktualisierung haben Kunden möglicherweise fälschlicherweise angenommen, dass alle lokalen SDK-Änderungen dieser unveränderlichen Dateien auch auf die Cloud-Umgebung angewendet werden.
 
 Während einer Cloud Manager-Bereitstellung wird auch die `httpd -t syntax`-Prüfung ausgeführt und alle Fehler werden in das Cloud Manager `Build Images step failure`-Protokoll aufgenommen.
 
