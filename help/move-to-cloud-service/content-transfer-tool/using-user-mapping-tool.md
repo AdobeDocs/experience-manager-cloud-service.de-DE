@@ -2,10 +2,10 @@
 title: Verwenden des Tools für die Benutzerzuordnung
 description: Verwenden des Tools für die Benutzerzuordnung
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '783'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Als Cloud Service der Transition Journey nach Adobe Experience Manager (AEM) müssen Sie Benutzer und Gruppen von Ihrem bestehenden AEM als Cloud Service AEM. Dies erfolgt über das Inhaltsübermittlungstool.
 
-Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.  Dies erfordert die Verwendung des Adobe Admin Console zur Verwaltung von Benutzern und Benutzergruppen. Die Benutzerinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das eine einmalige Anmeldung für alle Adobe Cloud-Anwendungen ermöglicht. Weitere Informationen finden Sie unter Identity Management. Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um Duplikat-Benutzer und -Gruppen in der Autoreninstanz des Cloud Service zu vermeiden.
+Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.  Dies erfordert die Verwendung von [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zur Verwaltung von Benutzern und Benutzergruppen. Die Benutzerinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das eine einmalige Anmeldung für alle Adobe Cloud-Anwendungen ermöglicht. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um Duplikat-Benutzer und -Gruppen in der Autoreninstanz des Cloud Service zu vermeiden.
 
 ## Wichtige Überlegungen {#important-considerations}
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um dies einzurichten:
 
 ## Benutzeroberfläche {#user-interface}
 
-Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. Sie können das Content Transfer Tool vom Software Distribution Portal herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuelle Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. Sie können das Content Transfer Tool von [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuelle Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Wählen Sie &quot;Adobe Experience Manager auswählen&quot;und navigieren Sie zu &quot;tools -> **Operations** -> **Content Transfer**&quot;.
 1. Klicken Sie auf **Benutzerzuordnungskonfiguration erstellen**.
