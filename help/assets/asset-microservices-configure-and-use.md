@@ -3,10 +3,10 @@ title: Asset-Microservices konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Microservices, um Assets mit hoher Skalierung zu verarbeiten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 93%
+source-wordcount: '2576'
+ht-degree: 88%
 
 ---
 
@@ -180,18 +180,18 @@ Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Au
 
 ## Nachbearbeitungs-Workflows {#post-processing-workflows}
 
-In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden können, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Dies ermöglicht es, zusätzlich zu der konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzuzufügen.
+In Situationen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den verarbeitenden Profilen nicht erreicht werden können, können zusätzliche Workflows zur Konfiguration hinzugefügt werden. Dies ermöglicht es, zusätzlich zu der konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzuzufügen.
 
-Workflows werden, sofern konfiguriert, nach Abschluss der Verarbeitung von microservices automatisch von [!DNL Experience Manager] ausgeführt. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um sie auszulösen. Zu den Beispielen gehören:
+Workflows werden, sofern konfiguriert, nach Abschluss der Verarbeitung von microservices automatisch von [!DNL Experience Manager] ausgeführt. Es ist nicht erforderlich, Workflow-Starter manuell zum Trigger der Workflows hinzuzufügen. Zu den Beispielen gehören:
 
 * Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
 * Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
 * Zusätzliche Verarbeitung durch externe Services.
 
-Das Hinzufügen einer Workflow-Konfiguration für die Nachbearbeitung zu Experience Manager umfasst die folgenden Schritte:
+Gehen Sie wie folgt vor, um [!DNL Experience Manager] eine Workflow-Konfiguration für die Nachbearbeitung hinzuzufügen:
 
-* Erstellen eines oder mehrerer Workflow-Modelle. In den Dokumenten wird dies als *Workflow-Modelle für die Nachbearbeitung* erwähnt, bei denen es sich jedoch um normale Workflow-Modelle für Experience Manager handelt.
-* Hinzufügen spezifischer Workflow-Schritte zu diesen Modellen. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt.
+* Erstellen eines oder mehrerer Workflow-Modelle. Diese benutzerdefinierten Modelle werden in dieser Dokumentation als *Workflow-Modelle nach der Verarbeitung* bezeichnet. Dies sind normale [!DNL Experience Manager] Workflow-Modelle.
+* hinzufügen Sie die erforderlichen Workflow-Schritte an diese Modelle an. Überprüfen Sie die Schritte aus dem Standardarbeitsablauf und fügen Sie dem benutzerdefinierten Workflow alle erforderlichen Standardschritte hinzu. Die Schritte werden basierend auf einer Workflow-Modellkonfiguration für die Assets ausgeführt. Wenn beispielsweise intelligentes Tagging beim Hochladen von Assets automatisch erfolgen soll, fügen Sie den Schritt zum benutzerdefinierten Workflow-Modell für die Nachbearbeitung hinzu.
 * Fügen Sie am Ende den Schritt [!UICONTROL Abgeschlosser Prozess zum DAM-Workflow eines Asset-Updates] hinzu. Durch Hinzufügen dieses Schritts wird sichergestellt, dass Experience Manager weiß, wann die Verarbeitung abgeschlossen ist, und das Asset als verarbeitet markiert werden kann, d. h., dass beim Asset der Wert *Neu* angezeigt wird.
 * Erstellen Sie eine Konfiguration für den Custom Workflow Runner Service, mit der die Ausführung eines Nachbearbeitungs-Workflow-Modells entweder nach Pfad (Speicherort für Ordner) oder nach regulären Ausdrücken konfiguriert werden kann.
 
@@ -207,7 +207,7 @@ Stellen Sie sicher, dass der letzte Schritt jedes Nachbearbeitungs-Workflows `DA
 
 Um die Nachbearbeitungs-Workflow-Modelle zu konfigurieren, die für Assets ausgeführt werden sollen, die nach Abschluss der Verarbeitung der Asset-Microservices in das System hochgeladen oder aktualisiert werden, muss der Custom Workflow Runner-Service konfiguriert werden.
 
-Der Custom Workflow Runner-Service (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) ist ein OSGi-Service und bietet zwei Konfigurationsoptionen:
+Der Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) ist ein OSGi-Dienst und bietet zwei Konfigurationsoptionen:
 
 * Nachbearbeitungs-Workflows nach Pfad (`postProcWorkflowsByPath`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen Repository-Pfaden aufgeführt werden. Pfade und Modelle sollten durch einen Doppelpunkt voneinander getrennt werden. Einfache Repository-Pfade werden unterstützt und sollten einem Workflow-Modell im `/var`-Pfad zugeordnet werden. Beispiel: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Nachbearbeitungs-Workflows nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Ausdrücke und Modelle sollten durch einen Doppelpunkt getrennt werden. Der reguläre Ausdruck sollte direkt auf den Asset-Knoten verweisen und nicht auf eine der Ausgabedarstellungen oder Dateien. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
