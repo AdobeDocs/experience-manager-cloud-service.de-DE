@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 83%
+source-wordcount: '1906'
+ht-degree: 82%
 
 ---
 
@@ -28,9 +28,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Das Zugriffstoken kann regelmäßig ablaufen, entweder nach einem bestimmten Zeitraum oder nach der Aktualisierung der Umgebung des Cloud Service. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffstoken abrufen. Das Statussymbol, das einem vorhandenen Migrationssatz zugeordnet ist, ändert sich in eine rote Cloud und zeigt eine Meldung an, wenn Sie den Mauszeiger darüber halten.
 
-* Derzeit beträgt die Standardgröße von MongoDB für eine AEM as a Cloud Service-Autoreninstanz 32 GB. Es wird empfohlen, für eine Segmentspeichergröße von mehr als 20 GB ein Support-Ticket einzureichen, um die MongoDB-Größe zu erhöhen.
-
-* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion*-Prozess kopiert das gesamte `/home` in den Migrationssatz und der *Ingestion*-Prozess kopiert alle Benutzer und Gruppen, auf die in den ACLs für migrierte Inhalte verwiesen wird.
+* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion*-Prozess kopiert das gesamte `/home` in den Migrationssatz und der *Ingestion*-Prozess kopiert alle Benutzer und Gruppen, auf die in den ACLs für migrierte Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
