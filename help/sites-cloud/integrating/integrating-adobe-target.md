@@ -2,9 +2,9 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,6 @@ Um die Target-Konfiguration zu deaktivieren, führen Sie die folgenden Schritte 
 1. Wählen Sie eine vorhandene Konfiguration aus und klicken Sie auf **Eigenschaften**.
 2. Bearbeiten Sie die Eigenschaften.
 3. Wählen Sie **Erneute Verbindung zu Adobe Target herstellen** aus.
-   ![Erneut verbinden](assets/edit_config_page1.png "Erneut verbinden")
 4. Wählen Sie **Speichern und schließen** aus.
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
