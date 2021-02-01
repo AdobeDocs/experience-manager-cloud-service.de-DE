@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 14%
+source-wordcount: '649'
+ht-degree: 15%
 
 ---
 
@@ -73,14 +73,10 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.1.20 ist der 08. Januar 2021.
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.20 ist der 1. Februar 2021.
 
 ### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Die Benutzer können nun erfahren, ob ihr Zugriffstoken abgelaufen ist, indem sie auf das Statussymbol in der Benutzeroberfläche des Content Transfer Tool (CTT) zeigen. Sie werden auch in der Benutzeroberfläche &quot;Migrationssatzdetails&quot;darüber informiert, dass sie keine Verbindung zu ihrer Cloud Service-Instanz herstellen können.
-
-### Fehlerbehebungen {#ctt-bug-fixes}
-
-* Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Das wurde behoben.
-* Die Option zum Ansicht von Protokollen wurde deaktiviert, wenn die Protokolle nicht verfügbar waren. Dieser Fehler wurde behoben und es wurde eine Nachricht hinzugefügt, die den Benutzer darüber informiert, warum Protokolle fehlen.
-* Der Benutzeroberflächenstatus des Inhaltsübertragungstools wurde als FEHLGESCHLAGEN angezeigt, wenn der Benutzer eine Erfassung stoppte. Dieses Problem wurde behoben, um stattdessen *STOPPED* anzuzeigen.
+* Neue Funktion und Benutzeroberfläche zum Inhaltsübermittlungstool - Benutzerzuordnungswerkzeug hinzugefügt. Diese Funktion ordnet bestehende Benutzer und Gruppen im Rahmen der Aktivität zur Inhaltsmigration automatisch ihrer Adobe Identity Management System-IDs zu. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+* Content Transfer Tool migriert jetzt alle Gruppen und Benutzer, auf die im Migrationsset verwiesen wird, einschließlich untergeordneter Elemente.
+* Benutzer können beim Erstellen von Migrationssätzen bestimmte Pfade unter `/etc` auswählen.
