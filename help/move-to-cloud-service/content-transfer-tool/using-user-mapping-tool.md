@@ -2,10 +2,10 @@
 title: Verwenden des Tools für die Benutzerzuordnung
 description: Verwenden des Tools für die Benutzerzuordnung
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 6%
+source-wordcount: '782'
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um dies einzurichten:
 
 Das Tool zur Benutzerzuordnung ist in das Inhaltsübermittlungstool integriert. Sie können das Content Transfer Tool von [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuelle Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Wählen Sie &quot;Adobe Experience Manager auswählen&quot;und navigieren Sie zu &quot;tools -> **Operations** -> **Content Transfer**&quot;.
+1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu Tools > **Vorgänge** > **Inhaltstransfer**.
 1. Klicken Sie auf **Benutzerzuordnungskonfiguration erstellen**.
 
    >[!NOTE]
