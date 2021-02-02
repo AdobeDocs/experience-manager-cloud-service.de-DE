@@ -2,7 +2,7 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
+source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 15%
@@ -73,7 +73,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.20 ist der 1. Februar 2021.
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.2 ist der 1. Februar 2021.
 
 ### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
