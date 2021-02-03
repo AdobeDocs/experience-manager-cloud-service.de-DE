@@ -2,21 +2,15 @@
 title: Verwalten von Inhaltsfragmenten
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 95%
+source-wordcount: '1593'
+ht-degree: 88%
 
 ---
 
 
 # Verwalten von Inhaltsfragmenten{#managing-content-fragments}
-
->[!CAUTION]
->
->Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
->
->Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
@@ -39,8 +33,8 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
 1. Navigieren Sie zum Ordner **Assets**, in dem Sie das Fragment erstellen möchten.
-2. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
-3. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
+1. Wählen Sie **Erstellen** und danach **Inhaltsfragment** aus, um den Assistenten zu öffnen.
+1. Im ersten Schritt des Assistenten müssen Sie die Grundlage des neuen Fragments angeben.
 
    * [Modell](/help/assets/content-fragments/content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Abenteuer**-Modell
 
@@ -50,7 +44,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
    ![Fragmentbasis](assets/cfm-managing-01.png)
 
-4. Geben Sie im Schritt **Eigenschaften** Folgendes an:
+1. Geben Sie im Schritt **Eigenschaften** Folgendes an:
 
    * **Allgemein**
 
@@ -72,9 +66,12 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
          Obligatorisch. Wird automatisch aus dem Titel abgeleitet, kann jedoch aktualisiert werden.
 
 
-5. Wählen Sie **Erstellen** aus, um den Vorgang abzuschließen, und **öffnen** Sie das Fragment zur Bearbeitung oder wechseln Sie über **Fertig** wieder zur Konsole.
+1. Wählen Sie **Erstellen** aus, um den Vorgang abzuschließen, und **öffnen** Sie das Fragment zur Bearbeitung oder wechseln Sie über **Fertig** wieder zur Konsole.
 
-## Aktionen für ein Inhaltsfragment {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >Im Konsolenmodus **Liste** können Sie die **Ansicht Settings** aktualisieren, um die Spalte **Inhaltsfragmentmodell** zu aktivieren.
+
+## Aktionen für ein Inhaltsfragment in der Asset-Konsole {#actions-for-a-content-fragment-assets-console}
 
 In der **Assets-Konsole** können Sie eine Reihe von Aktionen für Ihre Inhaltsfragmente vornehmen, die Sie wie folgt erreichen:
 
@@ -125,7 +122,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie die entsprechenden Berechtigungen. Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
 1. Navigieren Sie in der Konsole **Assets** zum Speicherort des gewünschten Inhaltsfragments.
-2. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
+1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
@@ -140,23 +137,49 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >2. Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
 
-3. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
-
-   * Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
-
-   * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-   * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![Modi](assets/cfm-managing-04.png)
-
-4. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**.
+1. Wenn Sie Ihre Änderungen vorgenommen haben, verwenden Sie je nach Bedarf entweder **Speichern** oder **Abbrechen**.
 
    >[!NOTE]
    >
    >Sowohl **Speichern** als auch **Abbrechen** schließen den Editor – siehe [Speichern, Abbrechen und Versionen](#save-cancel-and-versions) für ausführliche Informationen zur Funktionsweise beider Optionen für Inhaltsfragmente.
+
+## Modi und Aktionen im Inhaltsfragment-Editor {#modes-actions-content-fragment-editor}
+
+Im Inhaltsfragment-Editor stehen verschiedene Modi und Aktionen zur Verfügung.
+
+### Modi im Inhaltsfragment-Editor {#modes-in-the-content-fragment-editor}
+
+Navigieren Sie mithilfe der Symbole im Seitenbedienfeld durch die verschiedenen Modi:
+
+* Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
+
+* [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Zugehörige Inhalte](#associating-content-with-your-fragment)
+* [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![Modi](assets/cfm-managing-04.png)
+
+### Symbolleistenaktionen im Inhaltsfragment-Editor {#toolbar-actions-in-the-content-fragment-editor}
+
+Einige Funktionen in der Symbolleiste oben stehen in mehreren Modi zur Verfügung:
+
+![Modi](assets/cfm-managing-top-toolbar.png)
+
+* Unter dem Fragmentnamen sehen Sie den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des aktuellen Fragments verwendet wird:
+
+   * Der Name ist auch ein Link, über den der Modelleditor geöffnet wird.
+
+* Siehe Status des Fragments; zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung. Der Status ist auch farbkodiert:
+
+   * Neu: grau
+   * Entwurf: blau
+   * Veröffentlicht: green
+   * Geändert: orange
+   * Deaktiviert: red
+
+* **[Veröffentlichen](#publishing-and-referencing-a-fragment)** Sie das Fragment.
 
 ## Speichern, Abbrechen und Versionen   {#save-cancel-and-versions}
 
@@ -304,7 +327,8 @@ Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentli
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Sie können folgendermaßen veröffentlicht werden:
 
-* Nach der Erstellung in der Konsole **Assets**.
+* Nach der Erstellung; mit [Aktionen, die in der Assets-Konsole](#actions-for-a-content-fragment-assets-console) verfügbar sind.
+* Klicken Sie im Inhaltsfragment-Editor [a1/>.](#toolbar-actions-in-the-content-fragment-editor)
 * Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
