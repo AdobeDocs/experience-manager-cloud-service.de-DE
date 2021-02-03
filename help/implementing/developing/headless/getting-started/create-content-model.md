@@ -2,9 +2,9 @@
 title: Erstellen von Inhaltsfragmentmodellen - Kurzanleitung ohne Kopfzeilen im Beginn
 description: Inhaltsfragmentmodelle definieren die Struktur des Inhalts, den Sie mithilfe AEM kopflosen Funktionen erstellen und bereitstellen.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 
    ![Ordner &quot;models&quot;](../assets/models-folder.png)
 1. Tippen oder klicken Sie auf **Erstellen**.
-1. Geben Sie einen **Modelltitel** und **Beschreibung** ein.
+1. Geben Sie einen **Modelltitel**, **Tags** und **Beschreibung** an. Sie können auch **Modell** aktivieren bzw. deaktivieren, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert ist.
 
    ![Erstellen eines Modells](../assets/models-create.png)
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **Öffnen**, um Ihr Modell zu konfigurieren.
@@ -45,7 +45,7 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 1. Wenn Sie mit dem Erstellen des Modells fertig sind, tippen oder klicken Sie auf **Speichern**. Das neu erstellte Modell wird im Modus **Entwurf** gespeichert.
 
    ![Modell im Entwurfsmodus](../assets/models-draft.png)
-1. Das Modell muss aktiviert sein, damit es verwendet werden kann. Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
+1. Das Modell muss aktiviert sein, damit es verwendet werden kann (falls es noch nicht aktiviert ist). Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
 
    ![Aktivieren des Modells](../assets/models-enable.png)
 1. Bestätigen Sie die Aktivierung des Modells, indem Sie im Bestätigungsdialogfeld auf **Aktivieren** tippen oder klicken.
