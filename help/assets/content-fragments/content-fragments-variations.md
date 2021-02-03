@@ -2,10 +2,10 @@
 title: Varianten – Erstellen von Fragmentinhalten
 description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 91%
+source-wordcount: '2186'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,6 @@ In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 
 * [Eingeben des Inhalts](#authoring-your-content) für das Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **Master**-Inhalts,
-* Siehe den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des Fragments verwendet wurde; wird in der Symbolleiste oben unter dem Fragmentnamen angezeigt.
 
 Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp; z. B.:
 
@@ -54,11 +53,9 @@ Sie haben folgende Möglichkeiten:
    * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
    * auf eine Reihe von [Aktionen](#actions)zuzugreifen
 
-<!--
-For example:
+Beispiel:
 
-![full screen editor](assets/cfm-variations-02.png)
--->
+![Vollbild-Editor](assets/cfm-variations-02.png)
 
 ### Vollbildeditor {#full-screen-editor}
 
@@ -66,11 +63,9 @@ Beim Bearbeiten eines mehrzeiligen Textfelds können Sie den Editor für den Vol
 
 ![Symbol für den Vollbild-Editor](assets/cfm-variations-03.png)
 
-<!--
-This will open the full screen text editor:
+Dadurch wird der Texteditor im Vollbildmodus geöffnet:
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
--->
+![Vollbild-Editor](assets/cfm-variations-fullscreentexteditor.png)
 
 Der Texteditor im Vollbildmodus bietet:
 
@@ -122,10 +117,7 @@ Die Rich-Text-Bearbeitung ermöglicht folgende Formatierungen:
    * Suchen/Ersetzen
    * Rechtschreibprüfung
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-
-<!--
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
--->
+* [Inhaltsfragment](#inserting-content-fragment-into-your-fragment) einfügen verfügbar, wenn Ihr  **mehrzeiliges** Textfeld mit  **Fragmentverweis** zulassen konfiguriert wurde.
 
 Die [Aktionen](#actions) sind ebenfalls über den Vollbild-Editor verfügbar.
 
@@ -161,35 +153,33 @@ Für weitere [Aktionen](#actions) können Sie auch den Vollbild-Editor öffnen.
 >
 >Wenn Sie zwischen **Rich-Text** und **Markdown** umschalten, treten möglicherweise unerwartete Effekte mit Blockzitaten und Code-Blöcken auf, da diese beiden Formate unterschiedlich verarbeitet werden.
 
-<!--
-### Fragment References {#fragment-references}
+### Fragmentverweise {#fragment-references}
 
-If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
+Wenn das Inhaltsfragmentmodell Fragmentverweise enthält, stehen Ihren Fragmentverfassern möglicherweise zusätzliche Optionen zur Verfügung:
 
-* [Edit Content Fragment](#fragment-references-edit-content-fragment)
-* [New Content Fragment](#fragment-references-new-content-fragment)
+* [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)
+* [Neues Inhaltsfragment](#fragment-references-new-content-fragment)
 
-![Fragment References](assets/cfm-variations-12.png)
+![Fragmentverweise](assets/cfm-variations-12.png)
 
-#### Edit Content Fragment {#fragment-references-edit-content-fragment}
+#### Inhaltsfragment bearbeiten {#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open
-a new browser tab, with the content fragment open in the content fragment editor.
+Die Option **Inhaltsfragment bearbeiten** wird geöffnet
+eine neue Registerkarte des Browsers mit geöffnetem Inhaltsfragment im Inhaltsfragmenteditor.
 
-#### New Content Fragment {#fragment-references-new-content-fragment}
+#### Neues Inhaltsfragment {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+Mit der Option **Neues Inhaltsfragment** können Sie ein komplett neues Fragment erstellen. Um dies zu erreichen, wird eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten im Editor geöffnet.
 
-You will then be able to create a new fragment by:
+Anschließend können Sie ein neues Fragment erstellen, indem Sie:
 
-1. Navigating to, and selecting the required folder.
-1. Selecting **Next**.
-1. Specifying properties; for example **Title**.
-1. Selecting **Create**.
-1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
--->
+1. Navigieren zum gewünschten Ordner und Auswählen des entsprechenden Ordners
+1. Wählen Sie **Weiter**.
+1. Festlegen von Eigenschaften; zum Beispiel **Title**.
+1. Wählen Sie **Erstellen**.
+1. Abschließend:
+   1. **Geben Sie** das Fragment zurück (zum ursprünglichen Fragment) und verweisen Sie auf das neue Fragment.
+   1. **** Open referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browserregisterkarte.
 
 ### Anzeigen von Schlüsselstatistiken {#viewing-key-statistics}
 
@@ -245,23 +235,25 @@ Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
 
 1. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
 
-<!--
-1. The original text is displayed side-by-side with the proposed summarization:
+1. Der Originaltext wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+   * Zu beseitigende Sätze werden rot und durchgestrichen hervorgehoben.
+   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, um ihn im zusammengefassten Inhalt zu behalten.
+   * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, um ihn zu beseitigen.
 
-   ![summarization comparison](assets/cfm-variations-06.png)
--->
+   ![Zusammenfassungsvergleich](assets/cfm-variations-06.png)
 
 ### Anmerkungen zu Inhaltsfragmenten {#annotating-a-content-fragment}
 
 So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
 1. Wählen Sie **Master** oder die erforderliche Variante aus.
+
 1. Öffnen Sie den Vollbild-Editor.
+
 1. Das Symbol **Anmerken** ist in der Symbolleiste oben verfügbar. Sie können bei Bedarf Text auswählen.
+
+   ![Anmerken](assets/cfm-variations-07.png)
 
 1. Ein Dialogfeld wird geöffnet. Hier können Sie Ihre Anmerkungen eingeben.
 
@@ -279,18 +271,9 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
 1. Wählen Sie **Speichern** aus.
 
-<!--
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+1. Schließen Sie den Editor für den Vollbildmodus, Anmerkungen werden weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
-   ![annotate](assets/cfm-variations-07.png)
--->
-
-<!--
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
-
-   ![annotate](assets/cfm-variations-07c.png)
-
--->
+   ![Anmerken](assets/cfm-variations-07c.png)
 
 ### Anzeigen, Bearbeiten und Löschen von Anmerkungen {#viewing-editing-deleting-annotations}
 
@@ -305,13 +288,9 @@ Anmerkungen:
 
 * Kann durch das Auswählen der Registerkarte **Anmerkungen** im Fragment-Editor aufgeführt und gelöscht werden.
 
+   ![Anmerkungen](assets/cfm-variations-08.png)
+
 * Kann in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
-
-<!--
-* Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
-
-  ![annotations](assets/cfm-variations-08.png)
--->
 
 ### Einfügen von Assets in das Fragment {#inserting-assets-into-your-fragment}
 
@@ -346,47 +325,41 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-<!--
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### Einfügen eines Inhaltsfragments in Ihr Fragment {#inserting-content-fragment-into-your-fragment}
 
-To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+Um das Authoring von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
 
-They will be added as a reference, in your current location in your fragment.
--->
-
-<!--
->[!CAUTION]
->
->These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
->
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+Sie werden als Referenz an Ihrer aktuellen Position im Fragment hinzugefügt.
 
 >[!NOTE]
->
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
--->
+Diese Option ist verfügbar, wenn Ihr **mehrzeiliger Text** mit **Fragmentverweis zulassen** konfiguriert ist.
 
-<!--
-1. Position the cursor at the position you want to add the fragment.
-1. Use the **Insert Content Fragment** icon to open the search dialog.
+>[!CAUTION]
+Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
-   ![insert Content Fragment icon](assets/cfm-variations-13.png)
+>[!NOTE]
+Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
-1. In the dialog you can either:
+1. Positionieren Sie den Cursor an der Position, an der Sie das Fragment hinzufügen möchten.
+1. Verwenden Sie das Symbol **Inhaltsfragment** einfügen, um das Suchdialogfeld zu öffnen.
 
-    * navigate to the required fragment in the Assets folder
-    * search for the fragment
+   ![Inhaltsfragment-Symbol einfügen](assets/cfm-variations-13.png)
 
-   Once located, select the required fragment by clicking on the thumbnail.
+1. In diesem Dialogfeld haben Sie folgende Möglichkeiten:
 
-1. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
+   * zum erforderlichen Fragment im Ordner &quot;Assets&quot;navigieren
+   * Suche nach dem Fragment
+
+   Wählen Sie das gewünschte Fragment aus, indem Sie auf die Miniaturansicht klicken.
+
+1. Verwenden Sie **Wählen Sie**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) einen Verweis auf das ausgewählte Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   >
-   >If, after adding an reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
-   >* **Markdown**: the reference will remain.
--->
+   Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
+   * **Text**: der Verweis wird vollständig aus dem Fragment verloren.
+   * **Markdown**: der Verweis bleibt bestehen.
+
 
 ## Verwalten von Varianten      {#managing-variations}
 
@@ -455,9 +428,12 @@ Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
 Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übertragen.
 
 1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass **Master** bearbeitet wurde.
+
 1. Es gibt folgende Möglichkeiten, eine bestimmte Variante sowie die entsprechende Synchronisierung auszuwählen:
 
    * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit Master synchronisieren**
+
+      ![Mit Master synchronisieren](assets/cfm-variations-11a.png)
 
    * über die Symbolleiste des Vollbild-Editors – **Mit Master synchronisieren**
 
@@ -472,26 +448,3 @@ Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übert
    ![Mit Master synchronisieren](assets/cfm-variations-11c.png)
 
 1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
-
-<!--
-1. Select a specific variation, then the appropriate synchronization action from either:
-
-   * the **Actions** drop down selector - **Sync current element with master**
-
-      ![synchronizing with master](assets/cfm-variations-11a.png)
-
-   * the toolbar of the full-screen editor - **Sync with master**
-
-      ![synchronizing with master](assets/cfm-variations-11b.png)
-
-1. Master and the variation will be shown side-by-side:
-
-   * green indicates content added (to the variation)
-   * red indicates content removed (from the variation)
-   * blue indicates replaced text
-
-   ![synchronizing with master](assets/cfm-variations-11c.png)
-
-1. Select **Synchronize**, the variation will updated and shown.
-
--->
