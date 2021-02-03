@@ -2,21 +2,24 @@
 title: Verwendung von GraphQL mit AEM - Beispielinhalt und Abfragen
 description: GraphQL mit AEM - Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 6%
+source-wordcount: '1708'
+ht-degree: 5%
 
 ---
 
 
 # Verwendung von GraphQL mit AEM - Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
+>Diese Seite sollte zusammen gelesen werden mit:
 >
->Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
+>* [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
+>* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 Für die ersten Schritte mit GraphQL-Abfragen und wie sie mit AEM Inhaltsfragmenten funktionieren, ist es hilfreich, einige praktische Beispiele zu sehen.
 
@@ -26,7 +29,7 @@ Hilfe hierzu finden Sie unter
 
 * Und einige [Beispiel-GraphQL-Abfragen](#graphql-sample-queries) basieren auf der Fragmentstruktur des Beispielinhalts (Inhaltsfragmentmodelle und zugehörige Inhaltsfragmente).
 
-## GraphQL für AEM - Einige Erweiterungen {#graphql-some-extensions}
+## GraphQL für AEM - Zusammenfassung der Erweiterungen {#graphql-extensions}
 
 Die Grundfunktion von Abfragen mit GraphQL für AEM Einhaltung der Standard GraphQL Spezifikation. Für GraphQL-Abfragen mit AEM gibt es einige Erweiterungen:
 
@@ -34,148 +37,59 @@ Die Grundfunktion von Abfragen mit GraphQL für AEM Einhaltung der Standard Grap
    * den Modellnamen verwenden; eg-Stadt
 
 * Wenn Sie eine Liste der Ergebnisse erwarten:
-   * dem Modellnamen &quot;Liste&quot;hinzufügen; zum Beispiel `cityList`
+   * dem Modellnamen `List` hinzufügen; zum Beispiel `cityList`
+   * Siehe [Beispielseite - Alle Informationen zu allen Abfragen](#sample-all-information-all-cities)
 
 * Wenn Sie ein logisches ODER verwenden möchten:
-   * Verwenden Sie &quot;_logOp: OR&quot;
+   * Verwenden Sie ` _logOp: OR`
+   * Siehe [Beispieldaten - Alle Abfragen mit dem Namen &quot;Aufträge&quot;oder &quot;Schmidt&quot;](#sample-all-persons-jobs-smith)
 
 * Logisches UND existiert auch, ist jedoch (oft) implizit
 
 * Sie können Abfragen zu Feldnamen vornehmen, die den Feldern im Inhaltsfragmentmodell entsprechen.
+   * Siehe [Beispieldatei - Vollständige Abfrage der Geschäftsführer und Mitarbeiter einer Firma](#sample-full-details-company-ceos-employees)
 
 * Zusätzlich zu den Feldern Ihres Modells gibt es einige systemgenerierte Felder (denen ein Unterstrich vorangestellt wird):
 
    * Für Inhalte:
 
       * `_locale` : die Sprache offen zu legen; auf Basis von Language Manager
-
+         * Siehe [Abfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : , um Metadaten für Ihr Fragment anzuzeigen
-
+         * Siehe [Beispieldatei-Abfrage für Metadaten - Liste der Metadaten für Prämien mit dem Titel GB](#sample-metadata-awards-gb)
+      * `_model` : Suchen nach einem Inhaltsfragmentmodell zulassen (Pfad und Titel)
+         * Siehe [Abfrage eines Inhaltsfragmentmodells eines Modells](#sample-wknd-content-fragment-model-from-model)
       * `_path` : den Pfad zu Ihrer Inhaltsfragment im Repository
-
-      * `_references` : Verweise anzuzeigen; einschließlich Inline-Verweise im Rich Text Editor
-
-      * `_variations` : um bestimmte Variationen in Ihrem Inhaltsfragment anzuzeigen
+         * Siehe [Abfrage eines Beispiels - Ein einzelnes spezifisches Stadtfragment](#sample-single-specific-city-fragment)
+      * `_reference` : Verweise anzuzeigen; einschließlich Inline-Verweise im Rich Text Editor
+         * Siehe [Abfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Referenzen](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : um bestimmte Variationen in Ihrem Inhaltsfragment anzuzeigen
+         * Siehe [Beispielstadt - Alle Abfragen mit einer benannten Variation](#sample-cities-named-variation)
    * Und Operationen:
 
-      * `_operator` : spezifische Betreiber anwenden;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
-
+      * `_operator` : spezifische Betreiber anwenden;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+         * Siehe [Beispieldaten - Alle Abfragen ohne den Namen &quot;Aufträge&quot;](#sample-all-persons-not-jobs)
       * `_apply` : Anwendung spezifischer Bedingungen; zum Beispiel   `AT_LEAST_ONCE`
-
+         * Siehe [Beispielfilter - Abfrage eines Arrays mit einem Element, das mindestens einmal auftreten muss](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : die Groß-/Kleinschreibung bei der Abfrage ignorieren
+         * Siehe [BeispielAbfrage - Alle Städte mit SAN im Namen, unabhängig von case](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * GraphQL-Vereinigungen werden unterstützt:
 
-   * Verwenden Sie `...on`
-
-
-## Eine Beispielinhaltsfragmentstruktur zur Verwendung mit GraphQL {#content-fragment-structure-graphql}
-
-Ein einfaches Beispiel:
-
-* Ein oder mehrere [Muster-Inhaltsfragmentmodelle](#sample-content-fragment-models-schemas) - bilden die Grundlage für die GraphQL-Schema
-
-* [Beispielinhalt-](#sample-content-fragments) Fragmente basierend auf den oben genannten Modellen
-
-### Musterinhalt-Fragmentmodelle (Schema) {#sample-content-fragment-models-schemas}
-
-Für die Abfragen mit Beispielen verwenden wir die folgenden Inhaltsmodelle und deren Zusammenhänge (Referenzen ->):
-
-* [Firma](#model-company)
-->  [Person](#model-person)
-    ->  [Prämie](#model-award)
-
-* [Ort](#model-city)
-
-#### Unternehmen {#model-company}
-
-Die Grundfelder, die die Firma definieren, sind:
-
-| Feldname | Datentyp | Verweis  |
-|--- |--- |--- |
-| Name der Firma | Einzeilentext |  |
-| CEO | Fragmentverweis (Single) | [Person](#model-person) |
-| ArbeitnehmerInnen | Fragmentverweis (multifield) | [Person](#model-person) |
-
-#### Person {#model-person}
-
-Die Felder, die eine Person definieren, die auch Angestellte sein kann:
-
-| Feldname | Datentyp | Verweis  |
-|--- |--- |--- |
-| Name | Einzeilentext |  |
-| Vorname | Einzeilentext |  |
-| Awards | Fragmentverweis (multifield) | [Award](#model-award) |
-
-#### Award {#model-award}
-
-Die Felder, in denen eine Auszeichnung definiert wird, sind:
-
-| Feldname | Datentyp | Verweis  |
-|--- |--- |--- |
-| Tastenkombination/ID | Einzeilentext |  |
-| Titel | Einzeilentext |  |
-
-#### Ort {#model-city}
-
-Die Felder zur Definition einer Stadt sind:
-
-| Feldname | Datentyp | Verweis  |
-|--- |--- |--- |
-| Name | Einzeilentext |  |
-| Land | Einzeilentext |  |
-| Bevölkerung | Zahl |  |
-| Kategorien | Tags |  |
-
-### Beispielinhalt-Fragmente {#sample-content-fragments}
-
-Die folgenden Fragmente werden für das entsprechende Modell verwendet.
-
-#### Unternehmen {#fragment-company}
-
-| Name der Firma | CEO | ArbeitnehmerInnen |
-|--- |--- |--- |
-| Apple | Aufträge verschieben | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Aufträge verschieben | Joe Smith<br>Abe Lincoln |
-
-#### Person {#fragment-person}
-
-| Name | Vorname | Awards |
-|--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Sklade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Überlappend |  Lara | Gamestar |
-| Caulfield |  Maximal |  Gameblitz |
-|  Aufträge |  Steve |   |
-
-#### Award {#fragment-award}
-
-| Tastenkombination/ID | Titel |
-|--- |--- |
-| GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
-
-#### Ort {#fragment-city}
-
-| Name | Land | Bevölkerung | Kategorien |
-|--- |--- |--- |--- |
-| Basel | Schweiz | 172258 | Ort:emea |
-| Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
-| Bukarest | Rumänien | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  USA |  883306 |  Ort:Strand<br>Stadt:na |
-| San José |  USA |  102635 |  Ort:na |
-| Stuttgart |  Deutschland |  634830 |  Ort:emea |
-|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
+   * Verwenden Sie `... on`
+      * Siehe [BeispielAbfrage für ein Inhaltsfragment eines bestimmten Modells mit einem Inhaltsverweis](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Abfragen mit Beispielinhalt-Fragmentstruktur {#graphql-sample-queries-sample-content-fragment-structure}
 
-In den Beispielergebnissen finden Sie Abfragen zu Abbildungen der Abfragen zum Erstellen sowie Beispielergebnisse.
+In diesen Beispielergebnissen finden Sie Abfragen zur Veranschaulichung von Abfragen und Beispielergebnissen.
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ In den Beispielergebnissen finden Sie Abfragen zu Abbildungen der Abfragen zum E
 >
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>Die Abfragen basieren auf der Struktur des Musterinhaltsfragments für die Verwendung mit GraphQL](#content-fragment-structure-graphql)[
+
 ### Beispielversion - Alle verfügbaren Schema und Datentypen {#sample-all-schemes-datatypes}
 
-Dadurch werden alle Typen für alle verfügbaren Schema zurückgegeben.
+Dadurch werden alle `types` für alle verfügbaren Schema zurückgegeben.
 
 **Abfrage**
 
@@ -269,134 +187,6 @@ Dadurch werden alle Typen für alle verfügbaren Schema zurückgegeben.
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### Abfrage des Beispiels - Vollständige Angaben zum CEO und zu den Mitarbeitern einer Firma{#sample-full-details-company-ceos-employees}
-
-Anhand der Struktur der verschachtelten Fragmente liefert diese Abfrage alle Details zum CEO einer Firma und allen Mitarbeitern.
-
-**Abfrage**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**Beispielergebnisse**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### Beispiel-Abfrage - Ein Einzelstadtfragment {#sample-single-city-fragment}
+### Beispiel-Abfrage - Ein einzelnes spezifisches Stadtfragment {#sample-single-specific-city-fragment}
 
 Dies ist eine Abfrage, um die Details zu einem einzelnen Fragment an einem bestimmten Speicherort im Repository zurückzugeben.
 
@@ -613,6 +403,134 @@ Wenn Sie eine neue Variante mit dem Namen &quot;Berlin Center&quot; (`berlin_cen
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Abfrage des Beispiels - Vollständige Angaben zum CEO und zu den Mitarbeitern einer Firma{#sample-full-details-company-ceos-employees}
+
+Anhand der Struktur der verschachtelten Fragmente liefert diese Abfrage alle Details zum CEO einer Firma und allen Mitarbeitern.
+
+**Abfrage**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Beispielergebnisse**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## Beispielprojekte für Abfragen mit dem WKND-Projekt {#sample-queries-using-wknd-project}
 
-Diese Abfragen basieren auf dem WKND-Projekt.
+Diese Abfragen basieren auf dem WKND-Projekt. Dies hat Folgendes:
+
+* Inhaltsfragmentmodelle verfügbar unter:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Inhaltsfragmente (und andere Inhalte) verfügbar unter:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ Diese Abfrage durchläuft:
 
 Diese Abfrage des Beispiels fragt ab:
 
-* für ein einzelnes Inhaltsfragment eines bestimmten Modells
-* für alle Inhaltsformate:
-   * HTML
-   * Markdown
-   * Nur Text
-   * JSON
+* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
+   * innerhalb dieses Rahmens alle Inhaltsformate:
+      * HTML
+      * Markdown
+      * Nur Text
+      * JSON
 
 **Abfrage**
 
@@ -1303,7 +1227,40 @@ Diese Abfrage des Beispiels fragt ab:
 }
 ```
 
+### Abfrage eines Beispiels für ein Inhaltsfragmentmodell aus einem Modell {#sample-wknd-content-fragment-model-from-model}
+
+Diese Abfrage des Beispiels fragt ab:
+
+* für ein einzelnes Inhaltsfragment
+   * Details des zugrunde liegenden Inhaltsfragmentmodells
+
+**Abfrage**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### Abfrage eines Beispiels für ein verschachteltes Inhaltsfragment - Einzelmodelltyp{#sample-wknd-nested-fragment-single-model}
+
+Diese Abfrage durchläuft:
+
+* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
+   * in diesem Abschnitt der Pfad und der Autor des referenzierten (verschachtelten) Fragments
+
+>[!NOTE]
+>
+>Das Feld `referencearticle` hat den Datentyp `fragment-reference`.
 
 **Abfrage**
 
@@ -1324,6 +1281,15 @@ Diese Abfrage des Beispiels fragt ab:
 
 ### Abfrage für ein verschachteltes Inhaltsfragment - Modelltyp mit mehreren Varianten{#sample-wknd-nested-fragment-multiple-model}
 
+Diese Abfrage durchläuft:
+
+* für mehrere Inhaltsfragmente des Typs `bookmark`
+   * mit Fragmentverweisen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
+
+>[!NOTE]
+>
+>Das Feld `fragments` enthält den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ Diese Abfrage des Beispiels fragt ab:
 }
 ```
 
-### Abfrage eines Beispiels für ein Inhaltsfragment eines bestimmten Modells mit einem Inhaltsverweis{#sample-wknd-fragment-specific-model-content-reference}
+### Abfrage eines Beispiels für ein Inhaltsfragment eines bestimmten Modells mit Inhaltsverweisen{#sample-wknd-fragment-specific-model-content-reference}
+
+Es gibt zwei Varianten dieser Abfrage:
+
+1. So geben Sie alle Inhaltsverweise zurück.
+1. So geben Sie die spezifischen Inhaltsreferenzen des Typs `attachments` zurück.
+
+Diese Abfragen durchlaufen:
+
+* für mehrere Inhaltsfragmente des Typs `bookmark`
+   * mit Inhaltsverweisen auf andere Fragmente
+
+#### Abfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Referenzen {#sample-wknd-multiple-fragments-prefetched-references}
+
+Die folgende Abfrage gibt alle Inhaltsverweise mit `_references` zurück:
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Abfrage für mehrere Inhaltsfragmente mit Anhängen {#sample-wknd-multiple-fragments-attachments}
+
+Die folgende Abfrage gibt alle `attachments` - ein bestimmtes Feld (Untergruppe) des Typs `content-reference` zurück:
+
+>[!NOTE]
+>
+>Für das Feld `attachments` ist der Datentyp `content-reference` ausgewählt, wobei verschiedene Formulare ausgewählt sind.
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ Diese Abfrage des Beispiels fragt ab:
 }
 ```
 
-### Abfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Referenzen {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Abfrage eines Beispiels für eine einzelne Inhaltsfragmentvariation eines bestimmten Modells {#sample-wknd-single-fragment-given-model}
-
-**Abfrage**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Abfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas {#sample-wknd-multiple-fragments-given-locale}
-
-**Abfrage**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Abfrage für ein einzelnes Inhaltsfragment mit RTE Inline-Verweis {#sample-wknd-single-fragment-rte-inline-reference}
+
+Diese Abfrage durchläuft:
+
+* für ein einzelnes Inhaltsfragment des Typs `bookmark` an einem bestimmten Pfad
+   * in diesem Fall RTE Inline-Referenzen
+
+>[!NOTE]
+>
+>Die Inline-Referenzen von RTE werden in `_references` hydriert.
 
 **Abfrage**
 
@@ -1486,7 +1442,37 @@ Diese Abfrage des Beispiels fragt ab:
 }
 ```
 
+### Abfrage eines Beispiels für eine einzelne Inhaltsfragmentvariation eines bestimmten Modells {#sample-wknd-single-fragment-given-model}
+
+Diese Abfrage durchläuft:
+
+* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
+   * innerhalb dessen die Daten im Zusammenhang mit der Änderung: `variation1`
+
+**Abfrage**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Abfrage eines Beispiels für eine benannte Variation mehrerer Inhaltsfragmente eines bestimmten Modells {#sample-wknd-variation-multiple-fragment-given-model}
+
+Diese Abfrage durchläuft:
+
+* für Inhaltsfragmente des Typs `article` mit einer bestimmten Variante: `variation1`
 
 **Abfrage**
 
@@ -1506,3 +1492,131 @@ Diese Abfrage des Beispiels fragt ab:
   }
 }
 ```
+
+### Abfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas {#sample-wknd-multiple-fragments-given-locale}
+
+Diese Abfrage durchläuft:
+
+* für Inhaltsfragmente des Typs `article` innerhalb des Gebietsschemas `fr`
+
+**Abfrage**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## Die Struktur des Beispielinhaltsfragments (verwendet mit GraphQL) {#content-fragment-structure-graphql}
+
+Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
+
+* Ein oder mehrere [Muster-Inhaltsfragmentmodelle](#sample-content-fragment-models-schemas) - bilden die Grundlage für die GraphQL-Schema
+
+* [Beispielinhalt-](#sample-content-fragments) Fragmente basierend auf den oben genannten Modellen
+
+### Musterinhalt-Fragmentmodelle (Schema) {#sample-content-fragment-models-schemas}
+
+Für die Abfragen mit Beispielen verwenden wir die folgenden Inhaltsmodelle und deren Zusammenhänge (Referenzen ->):
+
+* [Firma](#model-company)
+->  [Person](#model-person)
+    ->  [Prämie](#model-award)
+
+* [Ort](#model-city)
+
+#### Unternehmen {#model-company}
+
+Die Grundfelder, die die Firma definieren, sind:
+
+| Feldname | Datentyp | Verweis  |
+|--- |--- |--- |
+| Name der Firma | Einzeilentext |  |
+| CEO | Fragmentverweis (Single) | [Person](#model-person) |
+| ArbeitnehmerInnen | Fragmentverweis (multifield) | [Person](#model-person) |
+
+#### Person {#model-person}
+
+Die Felder, die eine Person definieren, die auch Angestellte sein kann:
+
+| Feldname | Datentyp | Verweis  |
+|--- |--- |--- |
+| Name | Einzeilentext |  |
+| Vorname | Einzeilentext |  |
+| Awards | Fragmentverweis (multifield) | [Award](#model-award) |
+
+#### Award {#model-award}
+
+Die Felder, in denen eine Auszeichnung definiert wird, sind:
+
+| Feldname | Datentyp | Verweis  |
+|--- |--- |--- |
+| Tastenkombination/ID | Einzeilentext |  |
+| Titel | Einzeilentext |  |
+
+#### Ort {#model-city}
+
+Die Felder zur Definition einer Stadt sind:
+
+| Feldname | Datentyp | Verweis  |
+|--- |--- |--- |
+| Name | Einzeilentext |  |
+| Land | Einzeilentext |  |
+| Bevölkerung | Zahl |  |
+| Kategorien | Tags |  |
+
+### Beispielinhalt-Fragmente {#sample-content-fragments}
+
+Die folgenden Fragmente werden für das entsprechende Modell verwendet.
+
+#### Unternehmen {#fragment-company}
+
+| Name der Firma | CEO | ArbeitnehmerInnen |
+|--- |--- |--- |
+| Apple | Aufträge verschieben | Duke Marsh<br>Max Caulfield |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| NextStep Inc. | Aufträge verschieben | Joe Smith<br>Abe Lincoln |
+
+#### Person {#fragment-person}
+
+| Name | Vorname | Awards |
+|--- |--- |--- |
+| Lincoln |  Abe |  |
+| Smith | Adam |   |
+| Sklade |  Cutter |  Gameblitz<br>Gamestar |
+| Marsh |  Duke |   |   |
+|  Smith |  Joe |   |
+| Überlappend |  Lara | Gamestar |
+| Caulfield |  Maximal |  Gameblitz |
+|  Aufträge |  Steve |   |
+
+#### Award {#fragment-award}
+
+| Tastenkombination/ID | Titel |
+|--- |--- |
+| GB | Gameblitz |
+|  GS | Gamestar |
+|  OSC | Oscar |
+
+#### Ort {#fragment-city}
+
+| Name | Land | Bevölkerung | Kategorien |
+|--- |--- |--- |--- |
+| Basel | Schweiz | 172258 | Ort:emea |
+| Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
+| Bukarest | Rumänien | 1821000 |  city:capital<br>city:emea |
+| San Francisco |  USA |  883306 |  Ort:Strand<br>Stadt:na |
+| San José |  USA |  102635 |  Ort:na |
+| Stuttgart |  Deutschland |  634830 |  Ort:emea |
+|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
