@@ -2,7 +2,7 @@
 title: Versionshinweise für die Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 13%
@@ -91,7 +91,7 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht nun Benutzern über die Menüoptionen &quot;Umgebung&quot;auf den Zusammenfassungsseiten **Umgebung** und **Umgebung** zur Verfügung.
-Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md##login-locally).
+Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
 * Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
