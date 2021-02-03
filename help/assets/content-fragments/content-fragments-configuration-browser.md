@@ -2,21 +2,15 @@
 title: Inhaltsfragmente - Konfigurationsbrowser
 description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 36%
+source-wordcount: '241'
+ht-degree: 42%
 
 ---
 
 
 # Inhaltsfragmente - Konfigurationsbrowser{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
->
->Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 ## Inhaltsfragmentfunktionen für Ihre Instanz aktivieren {#enable-content-fragment-functionality-instance}
 
