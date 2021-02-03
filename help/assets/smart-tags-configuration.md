@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Wenden Sie mithilfe der KI- und ML-Services von Adobe Sensei kontextbezogene und beschreibende Unternehmens-Tags an, um die Asset-Erkennung und Content Velocity zu verbessern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben wer
 
 >[!IMPORTANT]
 >
->Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig mit [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktion beschleunigt. Bei vorhandenen Implementierungen führen Administratoren folgende Schritte aus, um sie zu konfigurieren.
+>Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig mit [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei den vorhandenen Bereitstellungen führen Administratoren die folgenden Schritte aus, um die Integration zu konfigurieren.
 
 ## Integration mit der Adobe Developer Console {#aio-integration}
 
