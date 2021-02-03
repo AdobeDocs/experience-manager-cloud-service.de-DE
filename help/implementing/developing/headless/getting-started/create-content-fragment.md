@@ -2,10 +2,10 @@
 title: Erstellen von Inhaltsfragmenten - Kurzanleitung ohne Kopfzeilen im Beginn
 description: Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte, die AEM ohne Probleme bereitstellen können.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Inhaltsersteller erstellen eine beliebige Anzahl von Inhaltsfragmenten, um den v
 1. Geben Sie die Details des Inhaltsfragments im Inhaltsfragment-Editor an.
 
    ![Inhaltsfragmente-Editor](../assets/content-fragment-edit.png)
-1. Tippen oder klicken Sie auf **Speichern**.
+1. Tippen oder klicken Sie auf **Speichern und Schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 
