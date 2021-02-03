@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 19%
+source-wordcount: '691'
+ht-degree: 16%
 
 ---
 
@@ -74,3 +74,17 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 ### Fehlerbehebungen {#crt-bug-fixes}
 
 * Mehrere Fehlerkorrekturen, die mit den Werkzeugen AEM Dispatcher Converter und Repository Modernizer vorgenommen wurden. Weitere Informationen finden Sie unter [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.1.20 ist der 08. Januar 2021.
+
+### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Die Benutzer können nun erfahren, ob ihr Zugriffstoken abgelaufen ist, indem sie auf das Statussymbol in der Benutzeroberfläche des Content Transfer Tool (CTT) zeigen. Sie werden auch in der Benutzeroberfläche &quot;Migrationssatzdetails&quot;darüber informiert, dass sie keine Verbindung zu ihrer Cloud Service-Instanz herstellen können.
+
+### Fehlerbehebungen {#ctt-bug-fixes}
+
+* Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Das wurde behoben.
+* Die Option zum Ansicht von Protokollen wurde deaktiviert, wenn die Protokolle nicht verfügbar waren. Dieser Fehler wurde behoben und es wurde eine Nachricht hinzugefügt, die den Benutzer darüber informiert, warum Protokolle fehlen.
+* Der Benutzeroberflächenstatus des Inhaltsübermittlungstools wurde angezeigt, als *FAILED* angezeigt wurde, wenn der Benutzer eine Erfassung stoppte. Dieses Problem wurde behoben, um stattdessen *STOPPED* anzuzeigen.
