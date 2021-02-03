@@ -1,10 +1,10 @@
 ---
 title: Intelligente Tags für Video-Assets
-description: Durch intelligentes Tagging von Video-Assets wird das Asset-Tagging automatisiert, indem kontextbezogene und beschreibende Tags mit Adobe Sensei-Diensten angewendet werden.
+description: Experience Manager fügt Videos mit [!DNL Adobe Sensei] automatisch kontextbezogene und beschreibende Smart-Tags hinzu.
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Smart-Tags für Ihre Video-Assets {#video-smart-tags}
 
-Der wachsende Bedarf an neuen Inhalten erfordert geringere manuelle Anstrengungen, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] Unterstützung für automatisiertes Tagging von Video-Assets, unterstützt durch künstliche Intelligenz. Das manuelle Tagging der Videos kann zeitaufwendig sein. Die Adobe Sensei-basierte Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle für künstliche Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. Dadurch wird die Zeit für DAM-Benutzer verringert, ihren Kunden umfangreiche Erlebnisse bereitzustellen. Der maschinelle Lerndienst der Adobe generiert zwei Tags für ein Video. Ein Satz entspricht jedoch Objekten, Szenen und Attributen in diesem Video; Der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
+Der wachsende Bedarf an neuen Inhalten erfordert geringere manuelle Anstrengungen, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] Unterstützung für das automatische Tagging von Video-Assets mit künstlicher Intelligenz. Das manuelle Tagging der Videos kann zeitaufwendig sein. Die Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle mit künstlicher Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. [!DNL Adobe Sensei] Dadurch wird die Zeit für DAM-Benutzer verringert, ihren Kunden umfangreiche Erlebnisse bereitzustellen. Der maschinelle Lerndienst der Adobe generiert zwei Tags für ein Video. Ein Satz entspricht jedoch Objekten, Szenen und Attributen in diesem Video; Der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
 
-Die Videodateiformate (und ihre Codecs), die für intelligentes Tagging unterstützt werden, sind MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) und WMV (WMV2). Darüber hinaus ermöglicht die Funktion das Tagging von Videos bis zu einer Größe von 300 MB. Das automatisierte Tagging von Video-Assets erfolgt als standardmäßige Asset-Verarbeitung (zusammen mit der Erstellung von Miniaturbildern und der Metadaten-Extraktion), nachdem ein Video hochgeladen wurde oder wenn eine erneute Verarbeitung ausgelöst wird. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt. Video-Tagging ist in [!DNL Adobe Experience Manager] standardmäßig als [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren.
+Das automatische Tagging von Video-Assets erfolgt als standardmäßige Asset-Verarbeitung (zusammen mit der Erstellung von Miniaturbildern und der Metadaten-Extraktion), nachdem ein Video hochgeladen wurde oder wenn eine erneute Verarbeitung ausgelöst wird. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt. Video-Tagging ist in [!DNL Adobe Experience Manager] standardmäßig als [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren.
 
 ## Smart-Tagging-Videos beim Hochladen von {#smart-tag-assets-on-ingestion}
 
-Wenn Sie [Video-Assets](add-assets.md#upload-assets) als [!DNL Cloud Service] [!DNL Adobe Experience Manager] hochladen, werden die Videos einer ![Verarbeitung](assets/do-not-localize/assetprocessing.png) unterzogen. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Seite [!UICONTROL Einfach] des Assets [!UICONTROL Eigenschaften]. Intelligente Tags werden dem Video unter [!UICONTROL Smart Tags] automatisch hinzugefügt. asset compute Service nutzt Adobe Sensei, um diese Smarttags zu erstellen.
+Wenn Sie [Video-Assets](add-assets.md#upload-assets) als [!DNL Adobe Experience Manager] [!DNL Cloud Service] hochladen, werden die Videos verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Seite [!UICONTROL Einfach] des Assets [!UICONTROL Eigenschaften]. Intelligente Tags werden dem Video unter [!UICONTROL Smart Tags] automatisch hinzugefügt. Asset Microservices verwendet [!DNL Adobe Sensei], um diese Smarttags zu erstellen.
 
 ![Intelligente Tags werden Videos hinzugefügt und auf der Registerkarte &quot;Einfach&quot;der Asset-Eigenschaften angezeigt](assets/smart-tags-added-to-videos.png)
 
@@ -44,7 +44,9 @@ Gehen Sie wie folgt vor, um Video-Assets oder Ordner (einschließlich Unterordne
 
 1. Wählen Sie das Symbol ![Assets neu verarbeiten](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Assets neu verarbeiten] und wählen Sie die Option [!UICONTROL Vollständiger Prozess].
 
-![Assets neu verarbeiten, um Videos im DAM-Repository Tags hinzuzufügen](assets/reprocess.gif)
+<!-- TBD: Limit size -->
+
+![Assets neu verarbeiten, um dem vorhandenen DAM-Repository Tags hinzuzufügen](assets/reprocess.gif)
 
 Nach Abschluss des Vorgangs navigieren Sie zur Seite [!UICONTROL Eigenschaften] eines Videoassets im Ordner. Die automatisch hinzugefügten Tags werden im Abschnitt [!UICONTROL Smart Tags] auf der Registerkarte [!UICONTROL Einfach] angezeigt. Diese angewendeten Smarttags werden in absteigender Reihenfolge nach [Konfidenzwert](#confidence-score-video-tag) sortiert.
 
@@ -123,13 +125,13 @@ So fügen Sie die OSGI-Konfiguration des Konfidenzwerts zum Projekt hinzu, das [
 
 ## Beschränkungen {#video-smart-tagging-limitations}
 
-* Die Schulung des Smart-Tag-Dienstes (oder der verbesserten Smart-Tags) zum Taggen Ihrer Video-Assets wird noch nicht unterstützt.
+* Sie können den Dienst, der intelligente Tags auf Videos anwendet, nicht mit bestimmten Videos ausbilden. Es funktioniert mit Standardeinstellungen für [!DNL Adobe Sensei].
 
-* Tagging-Fortschritt wird nicht angezeigt.
+* Der Tag-Fortschritt wird nicht angezeigt.
 
-* Nur Videos mit einer Größe von nicht mehr als 300 MB eignen sich für Tagging. Der Adobe Sensei-Dienst markiert die Videos, die diese Kriterien erfüllen, und überspringt das Tagging anderer Videos in einem Ordner.
+* Nur Videos mit einer Dateigröße von weniger als 300 MB werden automatisch mit Tags versehen. Der Dienst [!DNL Adobe Sensei] überspringt Videodateien, die größer sind.
 
-* Nur die Videos in diesen Dateiformaten (und unterstützten Codecs): MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) und WMV (MV2) - kann mit Tags versehen werden.
+* Nur die Videos in den Dateiformaten und unterstützten Codecs, die unter [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) erwähnt werden, werden mit Tags versehen.
 
 >[!MORELIKETHIS]
 >
