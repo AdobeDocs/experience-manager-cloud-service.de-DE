@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als [!DNL Cloud Service] unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 91%
+source-wordcount: '806'
+ht-degree: 90%
 
 ---
 
@@ -60,24 +60,24 @@ In der folgenden Legende wird der Grad der Unterstützung beschrieben.
 | GIF | they | they | they | they |
 | JPEG | they | they | they | they |
 | PNG | they | they | they | they |
-| TIFF | they | they | they | - |
-| SVG | they | - | they | they |
-| SGI | they | they | they | they |
 | RGB | they | they | they | they |
 | RGBA | they | they | they | they |
+| SGI | they | they | they | they |
+| SVG | they | - | they | they |
+| TIFF | they | they | they | - |
 
 ## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | they | they | they | they | they |
-| GIF | they | they | they | they | they |
-| TIFF | they | they | they | they | they |
-| JPEG | they | they | they | they | they |
 | BMP | they | - | - | - | - |
-| PSD ‡ | they | - | - | - | - |
 | EPS | they | they | they | they | they |
+| GIF | they | they | they | they | they |
+| JPEG | they | they | they | they | they |
 | PICT | they | - | - | - | - |
+| PNG | they | they | they | they | they |
+| PSD ‡ | they | - | - | - | - |
+| TIFF | they | they | they | they | they |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
@@ -92,7 +92,7 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media
 
 ## 3D-Formate {#support-3d-formats}
 
-Die folgende Liste von 3D-Formaten wird unterstützt:
+Die folgenden 3D-Formate werden unterstützt.
 
 Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
@@ -143,24 +143,24 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | they | they | they | they | they |
-| DOCX | they | they | they | they | they |
 | DOC | - | - | - | they | they |
-| PPTX | they | they | they | they | they |
-| PPT | - | - | - | they | they |
-| XLSX | they | they | they | they | they |
-| XLS | - | - | - | they | they |
+| DOCX | they | they | they | they | they |
+| EPUB | - | they | - | - | - |
+| HTML | - | they | - | they | they |
 | ODF | they | they | they | - | - |
-| OFG | they | they | they | - | - |
 | ODM | they | they | they | - | - |
 | ODP | they | they | they | - | - |
 | ODS | they | they | they | - | - |
 | ODT | they | they | they | they | they |
-| EPUB | - | they | - | - | - |
-| HTML | - | they | - | they | they |
+| OFG | they | they | they | - | - |
+| PDF | they | they | they | they | they |
+| PPT | - | - | - | they | they |
+| PPTX | they | they | they | they | they |
 | PS | - | - | they | - | - |
 | RTF | - | they | - | they | they |
 | TXT | - | they | - | they | they |
+| XLS | - | - | - | they | they |
+| XLSX | they | they | they | they | they |
 | XML | - | they | - | - | - |
 
 ## Dokumentenformate in [!DNL Dynamic Media] {#document-support-dynamic-media}
@@ -168,8 +168,8 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | they | - | - | - | - |
-| PDF | they | they | they | they | they |
 | INDD | they | - | - | - | - |
+| PDF | they | they | they | they | they |
 
 ## Videoformate {#video-formats}
 
@@ -191,6 +191,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | MPEG | they | they | they |
 | MPG | they | they | they |
 | MTS | they | - | they |
+| MXF | they | - | they |
 | OGV | they | - | they |
 | QT | they | - | they |
 | R3D | - | they | they |
