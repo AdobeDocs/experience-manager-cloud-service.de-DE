@@ -2,21 +2,15 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 87%
+source-wordcount: '2027'
+ht-degree: 86%
 
 ---
 
 
 # Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
-
->[!CAUTION]
->
->Die AEM GraphQL-API für den Versand &quot;Inhaltsfragmente&quot;steht auf Anfrage zur Verfügung.
->
->Bitte wenden Sie sich an [Adobe Support](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support), um die API für Ihre AEM als Cloud Service-Programm zu aktivieren.
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten. 
 
@@ -30,12 +24,9 @@ Inhaltsfragmente enthalten strukturierten Inhalt:
    * Komplex
       * Eine Kombination aus vielen Feldern unterschiedlicher Datentypen, darunter Text, Zahl, Boolescher Wert, Daten und Uhrzeit.
       * Kann entweder zum Vorbereiten strukturierterer Inhalte für das Erstellen von Seiten oder zum Versand zu Ihrer Anwendung verwendet werden.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * Verschachtelt
+      * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
+      * Gibt für den Versand zu Ihrer Anwendung zu verwenden.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
@@ -78,10 +69,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 * Inhaltspools für mehrere Kanäle erstellen 
 * Inhaltsvarianten für bestimmte Kanäle entwerfen 
 * Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen 
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* Erstellen Sie verschachtelte Inhalte, die die Komplexität Ihrer Daten widerspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen. 
 
@@ -121,11 +109,9 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >
 >AEM unterstützt auch die Übersetzung von Fragmentinhalten.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten.  Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
 
 ## Inhaltstyp {#content-type}
 
@@ -306,6 +292,12 @@ Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohäre
 
 ### WKND-Beispiel {#wknd-sample}
 
-Die Beispiele der [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) helfen Ihnen dabei, mehr über AEM as a Cloud Service zu erfahren. Darin sind Musterfragmente enthalten, die Sie unter folgender Adresse sehen können:
+Die Beispiele der [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) helfen Ihnen dabei, mehr über AEM as a Cloud Service zu erfahren.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+Das WKND-Projekt umfasst:
+
+* Inhaltsfragmentmodelle verfügbar unter:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Inhaltsfragmente (und andere Inhalte) verfügbar unter:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
