@@ -2,10 +2,10 @@
 title: Zugriff und Bereitstellung von Inhaltsfragmenten - Kurzanleitung ohne Beginn
 description: Die Assets REST API ermöglicht die Verwaltung von Inhaltsfragmenten und die GraphQL API ermöglicht einen einfachen, kopflosen Versand von Inhaltsfragmentinhalten.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,14 @@ Der Rest dieses Handbuchs konzentriert sich auf GraphQL-Zugriff und Content Frag
 
 Informationsarchitekten müssen Abfragen für ihre Kanal-Endpunkte entwerfen, um Inhalte bereitstellen zu können. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt pro Modell berücksichtigt werden. Für die Zwecke dieses Beginns-Leitfadens müssen wir nur einen erstellen.
 
-1. Melden Sie sich bei AEM als Cloud Service an und wählen Sie im Hauptmenü **Tools -> Assets -> GraphQL**
-   * Alternativ können Sie die Seite direkt unter `https://<host>:<port>/content/graphiql.html` öffnen.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Melden Sie sich bei AEM als Cloud Service an und greifen Sie auf die GraphiQL-Oberfläche zu:
+   * Beispiel: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei direkt bereitzustellen.
    * Im linken Bereich können Sie Ihre Abfrage erstellen.
@@ -39,8 +45,9 @@ Informationsarchitekten müssen Abfragen für ihre Kanal-Endpunkte entwerfen, um
 1. Unter der Annahme, dass das von uns erstellte Modell mit den Feldern `person`, `lastName` und `position` mit den Feldern `firstName` und  benannt wurde, können wir eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
