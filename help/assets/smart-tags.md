@@ -1,29 +1,54 @@
 ---
-title: Bilder mit AI-generierten Tags automatisch taggen
-description: Taggen Sie Bilder mit künstlich intelligenten Diensten, die kontextuelle und beschreibende Geschäftstags mit [!DNL Adobe Sensei] Diensten anwenden.
+title: Automatisches Taggen von Assets mit AI-generierten Tags
+description: Taggen Sie Assets mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit dem Dienst [!DNL Adobe Sensei] verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
-ht-degree: 86%
+source-wordcount: '2557'
+ht-degree: 78%
 
 ---
 
 
-# Train Smart Content Service und automatische Tags Ihrer Bilder {#train-service-tag-assets}
+# hinzufügen Sie Smart-Tags zu Ihren Assets für schnellere Suchvorgänge {#smart-tag-assets-for-faster-search}
 
-Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Keywords, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass die Assets im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können.
+Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Keywords, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets zu beziehen und nach diesen zu suchen. Durch das Taggen von Assets mit einem taxonomisch gesteuerten Vokabular wird sichergestellt, dass die Assets bei Suchvorgängen leicht identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging anhand einer Unternehmenstaxonomie dabei, die Assets am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller für das Erstellen einer Werbekampagne Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass bei einer Suche nur relevante Bilder angezeigt werden.
 
-Im Hintergrund verwenden Smart-Tags ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwenden die intelligenten Tags das künstlich intelligente Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus in Ihrer Tag-Struktur und Ihrer Geschäftstaxonomie zu schulen. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Führen Sie die folgenden Aufgaben aus, um Smart-Tagging zu verwenden:
+## Unterstützte Asset-Typen {#smart-tags-supported-file-formats}
+
+Intelligente Tags werden nur auf die unterstützten Dateitypen angewendet, die Darstellungen im JPG- und PNG-Format generieren. Die Funktion wird für die folgenden Assets unterstützt:
+
+| Bilder (MIME-Typen) | Textbasierte Assets (Dateiformate) | Video-Assets (Dateiformate und Codecs) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI (indeo4) |
+| image/gif | JSON | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] fügt die intelligenten Tags standardmäßig den textbasierten Assets und Videos hinzu. Führen Sie die folgenden Aufgaben aus, um Bilder automatisch mit intelligenten Tags zu versehen.
 
 * [ [!DNL Adobe Experience Manager] Integration mit der Adobe Developer Console](#integrate-aem-with-aio).
 * [Grundlegendes zu Tag-Modellen und Richtlinien](#understand-tag-models-guidelines).
@@ -31,7 +56,9 @@ Führen Sie die folgenden Aufgaben aus, um Smart-Tagging zu verwenden:
 * [Tagging digitaler Assets](#tag-assets)
 * [Verwalten von Tags und Suchvorgängen](#manage-smart-tags-and-searches)
 
-Smart-Tags sind nur für [!DNL Adobe Experience Manager Assets]-Kunden relevant. Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben werden.
+>[!TIP]
+>
+>Smart-Tags sind nur für [!DNL Adobe Experience Manager Assets]-Kunden relevant. Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben werden.
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ Die Bilder im Trainings-Satz sollten folgende Richtlinien einhalten:
    * ein Tag-Modell, das in den Jahren 2019 und 2020 auf den Markt gekommene Automodelle enthält.
    * mehrere Tag-Modelle, die dieselben Automodelle enthalten.
 
-**Zum Trainieren verwendete Bilder**: Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Daher ist es möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
+**Zum Trainieren verwendete Bilder**: Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Verknüpfen Sie jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell. Es ist möglich, das gleiche Bild mit verschiedenen Tags zu kennzeichnen, die zu verschiedenen Tag-Modellen gehören.
 
 Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
 
@@ -125,7 +152,7 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 1. Geben Sie einen Titel und eine Beschreibung für den Bericht an. Lassen Sie unter **[!UICONTROL Berichtplanen]** die Option **[!UICONTROL Jetzt]** aktiviert. Wenn Sie den Bericht für einen späteren Zeitpunkt planen möchten, wählen Sie **[!UICONTROL Später]** und geben Sie ein Datum und eine Uhrzeit an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Asset-Berichte]** den erstellten Bericht aus. Um den Bericht anzuzeigen, klicken Sie in der Symbolleiste auf **[!UICONTROL Ansicht]**.
 1. Prüfen Sie die Details des Berichts. Der Bericht zeigt den Trainings-Status der von Ihnen trainierten Tags an. Grün gibt in der Spalte **[!UICONTROL Trainings-Status]** an, dass der Smart-Tages-Service für das Tag trainiert wurde. Gelb bedeutet, dass der Service für ein bestimmtes Tag nicht vollständig trainiert ist. Fügen Sie in diesem Fall weitere Bilder mit dem jeweiligen Tag hinzu und führen Sie den Trainings-Workflow aus, um den Service vollständig für das Tag zu trainieren. Wenn Ihre Tags nicht im Bericht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
-1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht wird als [!DNL Microsoft Excel]-Tabelle heruntergeladen.
+1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht wird als Tabelle [!DNL Microsoft Excel] heruntergeladen.
 
 ## Tagging von Assets {#tag-assets}
 
@@ -154,15 +181,17 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
    ![start_workflow](assets/start_workflow.png)
 
 1. Wählen Sie den Workflow **[!UICONTROL DAM Smart-Tag-Assets]** aus und geben Sie einen Titel für den Workflow an.
-1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass Ihre Assets ordnungsgemäß mit Tags versehen sind. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](#manage-smart-tags-and-searches).
+1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und überprüfen Sie die Tags, um sicherzustellen, dass Ihre Assets ordnungsgemäß getaggt sind. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags markiert. Selbst unveränderte Assets werden jedoch markiert, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus des Tagging-Workflows 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
+>In zukünftigen Tagging-Zyklen werden nur geänderte Assets mit neu trainierten Tags versehen. Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
 
 ### Tagging hochgeladener Assets {#tag-uploaded-assets}
 
 Experience Manager kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Zu diesem Zweck konfigurieren Administratoren einen Workflow, um einen Schritt hinzuzufügen, um die Assets mit Smart-Tags zu versehen. Erfahren Sie, [wie Sie Smart-Tagging für hochgeladene Assets aktivieren](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## Verwalten von Smart-Tags und Asset-Suchen {#manage-smart-tags-and-searches}
 
@@ -190,7 +219,7 @@ So moderieren Sie die Smarttags Ihrer Assets
 
 ### AEM-Suchergebnisse mit Smart-Tags  {#understandsearch}
 
-Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch Verwendung von Smarttags wird eine zusätzliche `OR`-Klausel hinzugefügt, um Suchbegriffe in den angewendeten Smarttags zu finden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten.
 
@@ -209,6 +238,8 @@ Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugeh�
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
 * Tagging wird in den von Experience Manager unterstützten Sprachen unterstützt. Eine Liste der Sprachen finden Sie unter [Versionshinweise zum Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 Verwenden Sie Asset-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 
