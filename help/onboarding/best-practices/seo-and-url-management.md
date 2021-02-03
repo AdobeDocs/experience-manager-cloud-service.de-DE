@@ -1,8 +1,8 @@
 ---
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
-seo-title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
+description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+source-git-commit: d1e789527bed9e846dfc265c757889fcd96feaf5
 workflow-type: tm+mt
 source-wordcount: '3124'
 ht-degree: 100%
@@ -47,7 +47,6 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
    * Selektoren, die einen semantischen Wert bieten, sind auf Seiten, die Selektoren verwenden, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine das auch nicht.
    * Beispiel:
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 wird  vorgezogen 
 `mybrand.com/products/product-detail.1234.html`
@@ -365,8 +364,8 @@ Um eine Sitemap programmatisch zu generieren, registrieren Sie einen Sling-Servl
 >
 >Sie können ein Sling-Servlet registrieren, um auf den `sitemap`-Selektor mit der Endung `xml` zu warten. Dies führt zur Verarbeitung der Anfrage durch das Servlet, wenn eine URL angefordert wird, die wie folgt endet:
 >    `/<path-to>/page.sitemap.xml`
->Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
->Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
+Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
+Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
