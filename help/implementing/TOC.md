@@ -4,10 +4,10 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 translation-type: tm+mt
-source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
+source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 66%
+source-wordcount: '869'
+ht-degree: 55%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 66%
          + [Komponentenübersicht](developing/components/overview.md)
          + [Vorlagen](developing/components/templates.md)
          + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-         + [Stilsystem](/help/sites-cloud/authoring/features/style-system.md)
+         + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [JSON-Exporter für Content Services](developing/components/json-exporter.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
          + [Bildeditor](developing/components/image-editor.md)
@@ -103,6 +103,7 @@ ht-degree: 66%
       + [Java API-Richtlinien](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Hybrid AEM Entwicklung {#hybrid}
       + [Hybrid und SPA mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Einführung in SPAs und exemplarische Anleitung](developing/hybrid/introduction.md)
       + [SPA-WKND-Tutorial](developing/hybrid/wknd-tutorial.md)
       + [Erste Schritte mit React](developing/hybrid/getting-started-react.md)
@@ -117,7 +118,7 @@ ht-degree: 66%
       + [Die RemotePage-Komponente](developing/hybrid/remote-page.md)
       + [Bearbeiten eines externen SPA in AEM](developing/hybrid/editing-external-spa.md)
       + [Server-seitiges Rendering](developing/hybrid/ssr.md)
-      + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
+      + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch-Integration](developing/hybrid/launch-integration.md)
       + [SPA-Referenzdokumente](developing/hybrid/reference-materials.md)
    + Headless-Experience-Management {#headless}
@@ -129,22 +130,22 @@ ht-degree: 66%
          + [Erstellen eines Inhaltsfragments](developing/headless/getting-started/create-content-fragment.md)
          + [Zugriff auf Inhaltsfragmente und Bereitstellung](developing/headless/getting-started/create-api-request.md)
       + Inhaltsfragmente {#content-fragments}
-         + [Kopfloser Versand mit Inhaltsfragmenten und GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
-         + [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
-         + [Inhaltsfragmentfunktionen für Ihre Instanz aktivieren](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-         + [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
-         + [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)           
-         + [Varianten – Erstellen von Fragmentinhalten](/help/assets/content-fragments/content-fragments-variations.md)
-         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
-         + [Verwenden von zugehörigen Inhalten        ](/help/assets/content-fragments/content-fragments-assoc-content.md)
-         + [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
-         + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
-         + [Vorschau - JSON-Vertretung](/help/assets/content-fragments/content-fragments-json-preview.md)
+         + [Kopfloser Versand mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [Arbeiten mit Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+         + [Inhaltsfragmentfunktionen für Ihre Instanz aktivieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
+         + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+         + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)           
+         + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [Verwenden von zugehörigen Inhalten        ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+         + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+         + [Vorschau - JSON-Vertretung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
       + Versand-API {#delivery-api}
-         + [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
-         + [Inhaltsfragmente, GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-         + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-         + [AEM GraphQL API mit Inhaltsfragmenten - Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [Inhaltsfragmente, GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [AEM GraphQL API mit Inhaltsfragmenten - Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
 + Entwicklertools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
@@ -160,7 +161,7 @@ ht-degree: 66%
    + [Erweitern von ContextHub](developing/personalization/extending-contexthub.md)
    + [ContextHub-API](developing/personalization/contexthub-api.md)
    + [Integration mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
-   + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
