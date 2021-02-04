@@ -2,9 +2,9 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Einführung {#introduction}
 
->[!IMPORTANT]
->
->Diese Funktion ist noch nicht verfügbar. Eine aktuelle Liste der Funktionen finden Sie in den [Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Einige Architekturen sind darauf angewiesen, AEM als Cloud Service von einer Anwendung aufzurufen, die auf einem Server außerhalb AEM Infrastruktur gehostet wird. Beispielsweise eine Mobilanwendung, die einen Server aufruft und dann API-Anfragen als Cloud Service AEM.
 
 Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfachten Fluss für die Entwicklung. Der AEM als Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) wird verwendet, um Token zu generieren, die für den Authentifizierungsprozess benötigt werden.
+
+>[!NOTE]
+>
+>Zusätzlich zu dieser Dokumentation können Sie auch das Tutorial zur [Token-basierten Authentifizierung für AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) lesen.
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
