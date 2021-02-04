@@ -2,10 +2,10 @@
 title: Eigenständige Entwicklung für AEM Sites als Cloud Service
 description: Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die Grafik-QL-API können AEM als Cloud Service Ihre Erlebnisse zentral verwalten und sie über Kanal hinweg bereitstellen.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 5%
+source-wordcount: '573'
+ht-degree: 4%
 
 ---
 
@@ -21,6 +21,14 @@ Die Implementierung ohne Kopf wird immer wichtiger, wenn Sie Erlebnisse für Ihr
 Die Implementierung ohne Kopf verzichtet auf das Seiten- und Komponentenmanagement, wie es bei Vollstapel- und Hybridlösungen üblich ist, und konzentriert sich auf die Erstellung von Kanal-neutralen, wiederverwendbaren Inhaltsfragmenten und deren Cross-Kanal-Versand. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
 
 ![AEM](assets/aem-implementation-models.png)
+
+## Vergleich von Headful und Headless {#headful-headless}
+
+Dieses Dokument konzentriert sich auf das vollständige, kostenlose Implementierungsmodell von AEM. Egal, ob Kopf- oder Kopflos eine binäre Wahl in AEM sein müssen. Kopflose Funktionen können verwendet werden, um Inhalte zu verwalten und an verschiedene Endpunkte bereitzustellen und Ihren Inhaltserstellern gleichzeitig die Bearbeitung von Einzelseitenanwendungen zu ermöglichen. Alles in AEM.
+
+>[!TIP]
+>
+>Weitere Informationen finden Sie im Dokument [Kopflos und Kopflos in AEM](/help/implementing/developing/headful-headless.md).
 
 ## AEM als Cloud Service und ohne Kopf {#aem-headless}
 
