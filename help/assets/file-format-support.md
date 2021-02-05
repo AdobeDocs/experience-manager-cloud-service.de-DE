@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als [!DNL Cloud Service] unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 90%
+source-wordcount: '818'
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 
 Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
-Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zählen:
+Zu den Highlights für die Asset-Konvertierung mithilfe von Asset-Mikrodiensten zählen:
 
 * Schlüsseldateiformate [Adobe, die von Adobe-Anwendungen und -Diensten erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.](#adobe-formats)
 * Gängige [Bildformate](#image-formats).
@@ -25,7 +25,7 @@ Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zä
 * Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
 * Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten](#audio-formats).
 
-In der folgenden Legende wird der Grad der Unterstützung beschrieben.
+In der folgenden Legende wird beschrieben, wie gut die einzelnen Formate unterstützt werden.
 
 | Unterstützungsebene | Beschreibung |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 >[!MORELIKETHIS]
 >
 >* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md)
+>* [Unterstützte Dateiformate für intelligentes Tagging textbasierter Assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
