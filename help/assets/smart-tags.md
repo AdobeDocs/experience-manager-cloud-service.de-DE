@@ -3,15 +3,15 @@ title: Automatisches Taggen von Assets mit AI-generierten Tags
 description: Taggen Sie Assets mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit dem Dienst [!DNL Adobe Sensei] verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 78%
+source-wordcount: '2799'
+ht-degree: 68%
 
 ---
 
 
-# hinzufügen Sie Smart-Tags zu Ihren Assets für schnellere Suchvorgänge {#smart-tag-assets-for-faster-search}
+# hinzufügen Sie Smart-Tags zu Ihren Assets, um die Sucherfahrung zu verbessern.{#smart-tag-assets-for-faster-search}
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Keywords, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets zu beziehen und nach diesen zu suchen. Durch das Taggen von Assets mit einem taxonomisch gesteuerten Vokabular wird sichergestellt, dass die Assets bei Suchvorgängen leicht identifiziert und abgerufen werden können.
 
@@ -23,25 +23,31 @@ Im Hintergrund verwenden die intelligenten Tags das künstlich intelligente Fram
 ![flowchart](assets/flowchart.gif) 
 -->
 
+Sie können die folgenden Assettypen taggen:
+
+* **Bilder**: Bilder in vielen Formaten werden mit den intelligenten Inhaltsdiensten des Adobe Sensei getaggt. [Erstellen Sie ein Schulungsmodell](#train-model) und wenden Sie dann [Smarttags](#tag-assets) auf Bilder an.
+* **Video-Assets**: Video-Tagging ist standardmäßig in  [!DNL Adobe Experience Manager] als  [!DNL Cloud Service]. [Videos werden automatisch ](/help/assets/smart-tags-video-assets.md) getaggt, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten.
+* **Textbasierte Assets**:  [!DNL Experience Manager Assets] Tags automatisch für die unterstützten textbasierten Assets beim Hochladen.
+
 ## Unterstützte Asset-Typen {#smart-tags-supported-file-formats}
 
-Intelligente Tags werden nur auf die unterstützten Dateitypen angewendet, die Darstellungen im JPG- und PNG-Format generieren. Die Funktion wird für die folgenden Assets unterstützt:
+Intelligente Tags werden auf die unterstützten Dateitypen angewendet, die Darstellungen im JPG- und PNG-Format generieren. Die Funktion wird für die folgenden Assets unterstützt:
 
 | Bilder (MIME-Typen) | Textbasierte Assets (Dateiformate) | Video-Assets (Dateiformate und Codecs) |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI (indeo4) |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI (indeo4) |
 | image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV (WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV (WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ Intelligente Tags werden nur auf die unterstützten Dateitypen angewendet, die D
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## Intelligentes Tagging von textbasierten Assets {#smart-tag-text-based-assets}
+
+Die unterstützten textbasierten Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] getaggt. Es ist standardmäßig aktiviert. Die Wirksamkeit intelligenter Tags hängt nicht von der Textmenge im Asset ab, sondern von den relevanten Suchbegriffen oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die intelligenten Tags die Suchbegriffe, die im Text angezeigt werden, aber die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert wird und zum Suchen nach den Assets verwendet wird. Intelligente Tags, die auf Suchbegriffen im Text basieren, bieten jedoch eine dedizierte, strukturierte und mit höherer Priorität versehene Suchfacette, mit der die Ermittlung von Assets im Vergleich zum Index für die vollständige Suche verbessert wird.
+
+Im Vergleich dazu werden die Smart-Tags für Bilder und Videos visuell abgeleitet.
+
 ## Integrieren von [!DNL Experience Manager] mit der Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ Sie können [!DNL Adobe Experience Manager] mithilfe der [!DNL Adobe Developer C
 
 ## Grundlegendes zu Tag-Modellen und Richtlinien {#understand-tag-models-guidelines}
 
-Ein Tag-Modell ist eine Gruppe verwandter Tags, die sich auf einen visuellen Aspekt des Bildes beziehen. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Tags können sich nur auf deutlich unterschiedliche visuelle Aspekte von Bildern beziehen. Um die inhaltliche Darstellung eines Trainings-Modells in [!DNL Experience Manager] zu verstehen, stellen Sie sich ein Trainings-Modell als eine Entität der obersten Ebene vor, die aus einer Gruppe manuell hinzugefügter Tags und Beispielbildern für jedes Tag besteht. Jedes Tag kann ausschließlich auf ein Bild angewendet werden.
-
-Tags, die realistisch nicht gehandhabt werden können, beziehen sich auf:
-
-* Nicht visuelle, abstrakte Aspekte wie das Jahr oder die Jahreszeit der Veröffentlichung eines Produkts, die Stimmung oder die Emotionen, die durch ein Bild hervorgerufen werden.
-* Feine visuelle Unterschiede bei Produkten wie Hemden mit und ohne Kragen oder kleinen Produktlogos, die in Produkte eingebettet sind.
+Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags bei der Suche nach bestimmten Bildtypen helfen, wenn sie angewendet werden. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Wenn diese Tags angewendet werden, können Sie verschiedene Schuhtypen finden, z. B. nach Farbe, Design oder nach Verwendung. Um die inhaltliche Darstellung eines Trainings-Modells in [!DNL Experience Manager] zu verstehen, stellen Sie sich ein Trainings-Modell als eine Entität der obersten Ebene vor, die aus einer Gruppe manuell hinzugefügter Tags und Beispielbildern für jedes Tag besteht. Jedes Tag kann ausschließlich auf ein Bild angewendet werden.
 
 Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Sie einen Satz eindeutiger Tags, die die Objekte in den Bildern im Kontext Ihres Unternehmens am besten beschreiben. Stellen Sie sicher, dass die Assets in Ihrem Satz den [Trainings-Richtlinien](#training-guidelines) entsprechen.
 
@@ -189,9 +196,7 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 
 ### Tagging hochgeladener Assets {#tag-uploaded-assets}
 
-Experience Manager kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Zu diesem Zweck konfigurieren Administratoren einen Workflow, um einen Schritt hinzuzufügen, um die Assets mit Smart-Tags zu versehen. Erfahren Sie, [wie Sie Smart-Tagging für hochgeladene Assets aktivieren](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Zu diesem Zweck konfigurieren Administratoren einen Workflow, um einen Schritt hinzuzufügen, um die Assets mit Smart-Tags zu versehen. Erfahren Sie, [wie Sie Smart-Tagging für hochgeladene Assets aktivieren](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Verwalten von Smart-Tags und Asset-Suchen {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 1. Treffer von `woman running` in den Smart-Tags.
 1. Treffer von `woman` oder `running` in Smart-Tags.
 
-### Einschränkungen beim Tagging {#limitations}
+## Tagging-Beschränkungen und Best Practices {#limitations}
 
-Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version der Smart-Tags gibt es folgende Einschränkungen:
+Das erweiterte intelligente Tagging basiert auf Lernmodellen von Bildern und deren Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version der Smart-Tags gibt es folgende Einschränkungen:
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-* Tagging wird in den von Experience Manager unterstützten Sprachen unterstützt. Eine Liste der Sprachen finden Sie unter [Versionshinweise zum Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tagging wird in den Sprachen unterstützt, die [!DNL Experience Manager] unterstützt. Eine Liste der Sprachen finden Sie unter [Versionshinweise zum Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tags, die nicht realistisch behandelt werden, beziehen sich auf:
+
+   * Nicht visuelle, abstrakte Aspekte wie das Jahr oder die Saison der Veröffentlichung eines Produkts, Stimmung oder Emotion, die durch ein Bild ausgelöst wird, subjektive Konnotation eines Videos usw.
+   * Feine visuelle Unterschiede bei Produkten wie Hemden mit und ohne Kragen oder kleinen Produktlogos, die in Produkte eingebettet sind.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Verwenden Sie Asset-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
+Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie die [!DNL Assets] Omniture-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!NOTE]
 >
