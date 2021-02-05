@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Wenden Sie mithilfe der KI- und ML-Services von Adobe Sensei kontextbezogene und beschreibende Unternehmens-Tags an, um die Asset-Erkennung und Content Velocity zu verbessern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 98%
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben wer
 
 >[!IMPORTANT]
 >
->Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig mit [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei den vorhandenen Bereitstellungen führen Administratoren die folgenden Schritte aus, um die Integration zu konfigurieren.
+>[!DNL Experience Manager Assets] Bereitstellungen, die nach  [August 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) erstellt wurden, werden  [!DNL Adobe Developer Console] standardmäßig in integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die folgenden Schritte ausführen, um die Integration zu konfigurieren.
 
 ## Integration mit der Adobe Developer Console {#aio-integration}
 
@@ -109,7 +109,7 @@ Wenn das Zertifikat abläuft, wird es nicht mehr als vertrauenswürdig eingestuf
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie im Projekt zum vorhandenen Service. Laden Sie das neue Zertifikat hoch und konfigurieren Sie es. Weitere Informationen zur Konfiguration finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-aio-integration).
 
-## Aktivieren von Smart-Tagging für neu hochgeladene Assets (optional) {#enable-smart-tagging-for-uploaded-assets}
+## Automatisches Tagging beim Hochladen von Assets aktivieren (Optional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools > Workflow > Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** das Workflow-Modell **[!UICONTROL DAM Update Asset]** aus.
