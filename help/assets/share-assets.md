@@ -3,10 +3,10 @@ title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen innerhalb von [!DNL Experience Manager Assets] als Hyperlink freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 63%
+source-wordcount: '681'
+ht-degree: 61%
 
 ---
 
@@ -28,7 +28,7 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 >[!NOTE]
 >
 >* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung „ACL bearbeiten“.
->* Bevor Sie einen Link für andere Benutzer freigeben, stellen Sie sicher, dass Day CQ Mail Service konfiguriert ist. Andernfalls tritt ein Fehler auf.
+>* Bevor Sie einen Link für Benutzer freigeben, stellen Sie sicher, dass [ausgehende E-Mail aktiviert ist](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Andernfalls tritt ein Fehler auf.
 
 
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] das Asset aus, das als Link freigegeben werden soll.
