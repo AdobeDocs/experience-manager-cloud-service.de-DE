@@ -3,9 +3,9 @@ title: Automatisches Taggen von Assets mit AI-generierten Tags
 description: Taggen Sie Assets mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit dem Dienst [!DNL Adobe Sensei] verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 68%
 
 ---
@@ -27,7 +27,7 @@ Sie können die folgenden Assettypen taggen:
 
 * **Bilder**: Bilder in vielen Formaten werden mit den intelligenten Inhaltsdiensten des Adobe Sensei getaggt. [Erstellen Sie ein Schulungsmodell](#train-model) und wenden Sie dann [Smarttags](#tag-assets) auf Bilder an.
 * **Video-Assets**: Video-Tagging ist standardmäßig in  [!DNL Adobe Experience Manager] als  [!DNL Cloud Service]. [Videos werden automatisch ](/help/assets/smart-tags-video-assets.md) getaggt, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten.
-* **Textbasierte Assets**:  [!DNL Experience Manager Assets] Tags automatisch für die unterstützten textbasierten Assets beim Hochladen.
+* **Textbasierte Assets**:  [!DNL Experience Manager Assets] Tags automatisch für die unterstützten textbasierten Assets beim Hochladen. Erfahren Sie mehr über [intelligentes Tagging von textbasierten Assets](#smart-tag-text-based-assets).
 
 ## Unterstützte Asset-Typen {#smart-tags-supported-file-formats}
 
