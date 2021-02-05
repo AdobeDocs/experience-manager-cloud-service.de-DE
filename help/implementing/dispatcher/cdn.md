@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 68%
+source-wordcount: '604'
+ht-degree: 64%
 
 ---
 
@@ -28,6 +28,10 @@ Führen Sie die folgenden Schritte aus, um die Selbstbedienungs-Benutzeroberflä
 Standardmäßig kann bei einem von Adobe verwalteten CDN-Setup der gesamte öffentliche Traffic zum Publish-Service geleitet werden, sowohl für Produktions- als auch für Nicht-Produktions-Umgebungen (Entwicklung und Staging). Wenn Sie den Traffic auf den Veröffentlichungsdienst für eine bestimmte Umgebung beschränken möchten (z. B. die Staging-Aktivität auf eine Reihe von IP-Adressen begrenzen), können Sie dies über die Benutzeroberfläche von Cloud Manager als Selbstbedienung durchführen.
 
 Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+>[!CAUTION]
+>
+>Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN AEM bearbeitet. Wenn Sie Ihre eigene CDN auf die AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihrer CDN in die Zulassungsliste aufgenommen werden.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
