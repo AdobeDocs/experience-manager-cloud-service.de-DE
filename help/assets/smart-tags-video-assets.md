@@ -2,9 +2,9 @@
 title: Intelligente Tags für Video-Assets
 description: Experience Manager fügt Videos mit [!DNL Adobe Sensei] automatisch kontextbezogene und beschreibende Smart-Tags hinzu.
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Der wachsende Bedarf an neuen Inhalten erfordert geringere manuelle Anstrengungen, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] Unterstützung für das automatische Tagging von Video-Assets mit künstlicher Intelligenz. Das manuelle Tagging der Videos kann zeitaufwendig sein. Die Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle mit künstlicher Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. [!DNL Adobe Sensei] Dadurch wird die Zeit für DAM-Benutzer verringert, ihren Kunden umfangreiche Erlebnisse bereitzustellen. Der maschinelle Lerndienst der Adobe generiert zwei Tags für ein Video. Ein Satz entspricht jedoch Objekten, Szenen und Attributen in diesem Video; Der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
 
-Das automatische Tagging von Video-Assets erfolgt als standardmäßige Asset-Verarbeitung (zusammen mit der Erstellung von Miniaturbildern und der Metadaten-Extraktion), nachdem ein Video hochgeladen wurde oder wenn eine erneute Verarbeitung ausgelöst wird. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt. Video-Tagging ist in [!DNL Adobe Experience Manager] standardmäßig als [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren.
+Video-Tagging ist in [!DNL Adobe Experience Manager] standardmäßig als [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tagging für Videos](#opt-out-video-smart-tagging) in einem Ordner deaktivieren. Videos werden automatisch mit Tags versehen, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten. [!DNL Experience Manager] erstellt außerdem die Miniaturansichten und extrahiert Metadaten der Videodateien. Die Smarttags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in Asset [!UICONTROL Eigenschaften] angezeigt.
 
 ## Smart-Tagging-Videos beim Hochladen von {#smart-tag-assets-on-ingestion}
 
