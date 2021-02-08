@@ -2,9 +2,9 @@
 title: Markdown
 description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ Umgekehrte Schrägstriche als Escape-Zeichen sind für die folgenden Zeichen ver
 
     `\ backslash`
 
-    ` Einfaches Anführungszeichen (Backtick)
+    `` ` backtick``
 
     `* asterisk`
 
