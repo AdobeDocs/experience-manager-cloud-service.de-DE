@@ -1,18 +1,18 @@
 ---
-title: 'IP-Zulassungsliste hinzufügen '
-description: IP-Zulassungsliste hinzufügen
+title: 'Hinzufügen einer IP-Zulassungsliste '
+description: Hinzufügen einer IP-Zulassungsliste
 translation-type: tm+mt
 source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 0%
+ht-degree: 51%
 
 ---
 
 
 # Hinzufügen einer IP-Zulassungsliste {#add-ip-allow-list}
 
-Ein Benutzer, der der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;angehört, muss angemeldet sein, um eine IP-Zulassungsliste hinzufügen zu können.
+Ein Benutzer mit der Rolle „Business Owner“ oder „Deployment Manager“ muss angemeldet sein, um eine IP-Zulassungsliste hinzuzufügen.
 
 Gehen Sie wie folgt vor, um eine IP-Zulassungsliste hinzuzufügen:
 
@@ -27,6 +27,6 @@ Gehen Sie wie folgt vor, um eine IP-Zulassungsliste hinzuzufügen:
 
 1. Geben Sie einen IP- oder IP-CIDR-Block(e) ein, der durch ein Komma oder eine TAB in **IP-Adresse/CIDR** getrennt ist.
 
-1. Wählen Sie **Speichern**, um Ihre Übermittlung zu bestätigen. Wenn Fehler erkannt werden, müssen Sie eine Adresse angeben, bevor die Regel gespeichert werden kann.
+1. Wählen Sie **Speichern**, um Ihre Übermittlung zu bestätigen. Wenn Fehler festgestellt werden, müssen Sie diese beheben, bevor die Regel gespeichert werden kann.
 
-1. Beim Speichern wird die neu erstellte IP-Zulassungsliste als Zeile in der Tabelle auf der Seite &quot;IP-Zulassungsliste&quot;angezeigt.
+1. Nach dem Speichern erscheint die neu erstellte Regel für IP-Zulassungslisten als Zeile in der Tabelle auf der Seite „IP-Zulassungsliste“.
