@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 
 >[!NOTE]
 >
->Wenn Sie einen Start erstellen, sind Seiten, die höher oben in der Hierarchie liegen, keine Kopien der Quellseiten. Sie sind Platzhalter, die mit der Vorlage erstellt werden:
+>Wenn Sie einen Launch erstellen, sind die in der Hierarchie höher gelegenen Seiten keine Kopien der Ausgangsseiten. Sie sind Platzhalter, die mit der Vorlage erstellt werden:
 >
 >* `/libs/launches/templates/outofscope`
 >
 >
-Diese Seiten können nicht bearbeitet werden. Die folgende Meldung wird angezeigt:
+Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
->* **Diese Seite ist nicht Teil des Starts. Gehe zu Produktions-Seite**
+>* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
 
 
 ## Erstellen eines Launches {#creating-a-launch}
@@ -51,7 +51,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    >[!NOTE]
    >
-   >In der **Sites** Console können Sie auch den [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
+   >In der **Sites**-Konsole können Sie auch den [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
    >
    >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
@@ -119,7 +119,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
-### Erstellen von verschachtelten Launches   {#creating-a-nested-launch}
+### Erstellen von verschachtelten Launches  {#creating-a-nested-launch}
 
 Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Launches) bietet Ihnen die Möglichkeit, einen Launch aus einem vorhandenen Launch zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vornehmen zu müssen.
 
@@ -132,15 +132,15 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
 1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
-1. Wählen Sie **Hinzufügen Seiten** und navigieren Sie dann zur Verzweigung &quot;Launches&quot;, indem Sie `/content/launches` in der Leiste **Filter** angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
+1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie dann zur Launch-Verzweigung, indem Sie `/content/launches` in der Leiste **Filter** angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
    ![Erstellen von verschachtelten Launches](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
 1. Fahren Sie mit **Weiter** fort.
 
-1. Füllen Sie **Eigenschaften** wie bei jedem anderen Start aus.
+1. Füllen Sie **Eigenschaften** wie bei jedem anderen Launch aus.
 
-1. Füllen Sie **Create** aus.
+1. Schließen Sie den Vorgang mit **Erstellen** ab.
 
 #### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
 
