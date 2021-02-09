@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -59,9 +59,9 @@ ht-degree: 92%
    + Launches {#launches}
       + [Arbeiten mit Launches](authoring/launches/overview.md)
       + [Erstellen von Launches](authoring/launches/creating.md)
-      + [Verwalten von Seiten in Starts](authoring/launches/managing-pages.md)
+      + [Verwalten von Seiten in Launches](authoring/launches/managing-pages.md)
       + [Bearbeiten von Launches](authoring/launches/editing.md)
-      + [Vorschau von Starts mit Zeitwarp](authoring/launches/preview.md)
+      + [Anzeigen von Launches in der Vorschau mit Timewarp](authoring/launches/preview.md)
       + [Weiterleiten von Launches](authoring/launches/promoting.md)
    + Workflows {#workflows}
       + [Arbeiten mit Workflows](authoring/workflows/overview.md)
@@ -78,7 +78,7 @@ ht-degree: 92%
       + [Erstellen und Verwalten von Angeboten](authoring/personalization/offers.md)
       + [Grundlegendes zur Segmentierung](authoring/personalization/segmentation.md)
       + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [Registrierung, Anmeldung und User Profil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Verwalten {#administering}
    + [Verwalten von Workflows](administering/workflows-administering.md)
 + Integration mit AEM as a Cloud Service {#integrations}
