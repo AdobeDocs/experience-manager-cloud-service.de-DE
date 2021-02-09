@@ -1,16 +1,16 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können in Dynamic Media.
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können  in Dynamic Media.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Vorschau von 3D-Assets in AEM{#previewing-3d-assets}
+# Vorschau von 3D-Assets in AEM {#previewing-3d-assets}
 
 Adobe Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
@@ -18,7 +18,7 @@ Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügba
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Unterstützte Formate für die 3D-Vorschau in AEM{#supported-3d-previewing-assets}
+## Unterstützte Formate für die 3D-Vorschau in AEM {#supported-3d-previewing-assets}
 
 Die interaktive 3D-Vorschau in AEM unterstützt die folgenden Dateiformate:
 
@@ -40,7 +40,7 @@ Die interaktive 3D-Vorschau in AEM unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets in AEM{#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in AEM {#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
