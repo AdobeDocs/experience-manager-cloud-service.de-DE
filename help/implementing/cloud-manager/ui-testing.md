@@ -2,22 +2,21 @@
 title: Testen der Benutzeroberfläche – Cloud Services
 description: Testen der Benutzeroberfläche – Cloud Services
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 100%
+source-wordcount: '997'
+ht-degree: 96%
 
 ---
 
 
 # Testen der Benutzeroberfläche {#ui-testing}
 
->[!CAUTION]
->
->Diese Funktion ist noch nicht allgemein verfügbar.
-
-
 Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Das Docker-Image kann mit Standard-Tools erstellt werden, muss jedoch bei der Ausführung bestimmte Konventionen einhalten. Beim Ausführen des Docker-Images wird automatisch ein Selenium-Server bereitgestellt. Die unten beschriebenen Laufzeitkonventionen ermöglichen es Ihrem Test-Code, sowohl auf den Selenium-Server als auch auf die AEM-Instanzen zuzugreifen, die derzeit getestet werden.
+
+>[!NOTE]
+> Die vor dem 10. Februar 2021 erstellten Phasen- und Produktionslinien müssen aktualisiert werden, damit die auf dieser Seite beschriebenen UI-Tests verwendet werden können.
+> Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren der CI-CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
