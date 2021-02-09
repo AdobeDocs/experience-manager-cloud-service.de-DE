@@ -5,19 +5,19 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 78%
+ht-degree: 85%
 
 ---
 
 
-# Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
+# Varianten – Erstellen von Fragmentinhalten {#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des Master-Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
 
 In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 
 * [Eingeben des Inhalts](#authoring-your-content) für das Fragment,
-* [Erstellen und Verwalten von Varianten](#managing-variations) des **Master**-Inhalts,
+* [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
 
 Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp; z. B.:
 
@@ -31,7 +31,7 @@ Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp;
 
 * [Zusammenfassen von Text](#summarizing-text)
 
-* [Synchronisieren von Varianten mit dem Master-Inhalt](#synchronizing-with-master)
+* [Synchronisieren von Varianten mit dem primären Inhalt](#synchronizing-with-master)
 
 >[!CAUTION]
 >
@@ -39,15 +39,15 @@ Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp;
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der Master-Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder verschiedener Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
 Sie haben folgende Möglichkeiten:
 
 * Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
 
-   * Jeder Datentyp bietet verschiedene Bearbeitungsoptionen
+   * Jeder Datentyp bietet verschiedene Bearbeitungsoptionen.
 
-* Für die Felder **Mehrzeiliger Text** können Sie auch den [Vollbildeditor](#full-screen-editor) öffnen für:
+* Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
    * das [Format](#formats) auszuwählen
    * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
@@ -57,9 +57,9 @@ Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
 
-### Vollbildeditor {#full-screen-editor}
+### Vollbild-Editor {#full-screen-editor}
 
-Beim Bearbeiten eines mehrzeiligen Textfelds können Sie den Editor für den Vollbildmodus öffnen. Tippen Sie auf oder klicken Sie in den eigentlichen Text und wählen Sie dann das folgende Aktionssymbol aus:
+Beim Bearbeiten eines mehrzeiligen Textfelds können Sie den Vollbild-Editor öffnen. Tippen oder klicken Sie in den eigentlichen Text und wählen Sie dann das folgende Aktionssymbol aus:
 
 ![Symbol für den Vollbild-Editor](assets/cfm-variations-03.png)
 
@@ -72,7 +72,7 @@ Der Texteditor im Vollbildmodus bietet:
 * Zugriff auf verschiedene [Aktionen](#actions)
 * Je nach [Format](#formats) weitere Formatierungsoptionen ([Rich-Text](#rich-text))
 
-### Aktionen    {#actions}
+### Aktionen  {#actions}
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
@@ -82,13 +82,13 @@ Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#for
 
 * [Textstatistiken anzeigen](#viewing-key-statistics)
 
-* [Mit Master synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
+* [Mit primärer Version synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
 
 * [Zusammenfassen von Text](#summarizing-text)
 
 ### Formate {#formats}
 
-Die Optionen für das Bearbeiten von mehrzeiligem Text hängen vom ausgewählten Format ab: 
+Die Optionen für das Bearbeiten von mehrzeiligem Text hängen vom ausgewählten Format ab:
 
 * [Rich-Text](#rich-text)
 * [Nur Text](#plain-text)
@@ -153,14 +153,14 @@ Für weitere [Aktionen](#actions) können Sie auch den Vollbild-Editor öffnen.
 >
 >Wenn Sie zwischen **Rich-Text** und **Markdown** umschalten, treten möglicherweise unerwartete Effekte mit Blockzitaten und Code-Blöcken auf, da diese beiden Formate unterschiedlich verarbeitet werden.
 
-### Fragmentverweise {#fragment-references}
+### Fragmentreferenzen {#fragment-references}
 
 Wenn das Inhaltsfragmentmodell Fragmentverweise enthält, stehen Ihren Fragmentverfassern möglicherweise zusätzliche Optionen zur Verfügung:
 
 * [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)
 * [Neues Inhaltsfragment](#fragment-references-new-content-fragment)
 
-![Fragmentverweise](assets/cfm-variations-12.png)
+![Fragmentreferenzen](assets/cfm-variations-12.png)
 
 #### Inhaltsfragment bearbeiten {#fragment-references-edit-content-fragment}
 
@@ -219,14 +219,14 @@ Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
 
 
 
-1. Wählen Sie **Master** oder die erforderliche Variante aus.
+1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
 1. Öffnen Sie den Vollbild-Editor.
 
 1. Wählen Sie in der Symbolleiste die Option **Text zusammenfassen** aus.
 
    ![Zusammenfassung](assets/cfm-variations-05.png)
 
-1. Geben Sie den Zielwert der Wörter an und wählen Sie **Start**:
+1. Geben Sie den Zielwert der Wörter an und wählen Sie **Starten**:
 1. Der Originaltext wird neben der vorgeschlagenen Zusammenfassung angezeigt:
 
    * Zu beseitigende Sätze werden rot und durchgestrichen hervorgehoben.
@@ -247,7 +247,7 @@ Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
 
 So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
-1. Wählen Sie **Master** oder die erforderliche Variante aus.
+1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
 
 1. Öffnen Sie den Vollbild-Editor.
 
@@ -259,7 +259,7 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
    ![Anmerken](assets/cfm-variations-07a.png)
 
-1. Wählen Sie **Apply** im Dialogfeld.
+1. Wählen Sie **Anwenden** im Dialogfeld aus.
 
    ![Anmerken](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -267,11 +267,11 @@ So fügen Sie Anmerkungen zu Fragmenten hinzu:
 
    ![Anmerken](assets/cfm-variations-07b.png)
 
-1. Schließen Sie den Editor für den Vollbildmodus, Anmerkungen werden weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
 1. Wählen Sie **Speichern** aus.
 
-1. Schließen Sie den Editor für den Vollbildmodus, Anmerkungen werden weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
+1. Schließen Sie den Editor für den Vollbildmodus. Die Anmerkungen sind weiterhin hervorgehoben. Wenn diese Option aktiviert ist, wird ein Dialogfeld geöffnet, in dem Sie die Anmerkung weiter bearbeiten können.
 
    ![Anmerken](assets/cfm-variations-07c.png)
 
@@ -361,11 +361,11 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * **Markdown**: der Verweis bleibt bestehen.
 
 
-## Verwalten von Varianten      {#managing-variations}
+## Verwalten von Varianten   {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
-Varianten ermöglichen die Abänderung von **Master**-Inhalt für einen bestimmten Zweck (sofern notwendig).
+Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen bestimmten Zweck (sofern notwendig).
 
 So erstellen Sie eine neue Variante:
 
@@ -373,12 +373,12 @@ So erstellen Sie eine neue Variante:
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Wählen Sie **Variante erstellen** aus.
 1. Daraufhin wird ein Dialogfeld geöffnet, in dem der **Titel** und die **Beschreibung** für die neue Variante angegeben werden.
-1. Wählen Sie **Hinzufügen** aus. Das Fragment **Master**[ wird in die neue Variante kopiert, die nun zur Bearbeitung geöffnet ist](#editing-a-variation).
+1. Wählen Sie **Hinzufügen** aus. Das Fragment **Primäre Version** wird in die neue Variante kopiert, die nun zur [Bearbeitung](#editing-a-variation) geöffnet ist.
 
    >[!NOTE]
-   Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
+   Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante      {#editing-a-variation}
+### Bearbeiten einer Variante   {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -413,38 +413,38 @@ So löschen Sie eine vorhandene Variante:
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
 >[!NOTE]
-**Master** kann nicht gelöscht werden.
+**Primäre Version** kann nicht gelöscht werden.
 
-### Mit Master synchronisieren {#synchronizing-with-master}
+### Mit primärer Version synchronisieren {#synchronizing-with-master}
 
-**Master** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die Masterkopie des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn Master aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
+**Primäre Version** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die primäre Version des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn die primäre Version aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
-Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der Master-Version. Dadurch können Sie an Master vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
+Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
-Die Synchronisierung ist nur verfügbar, um Änderungen *vom **Master**in die Variante* zu kopieren.
+Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 Es wird nur das aktuelle Element der Variante synchronisiert.
 Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
-Es ist nicht möglich, Änderungen *von einer Variante auf **Master*** zu übertragen.
+Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
-1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass **Master** bearbeitet wurde.
+1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass die **primäre Version** bearbeitet wurde.
 
 1. Es gibt folgende Möglichkeiten, eine bestimmte Variante sowie die entsprechende Synchronisierung auszuwählen:
 
-   * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit Master synchronisieren**
+   * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit primärer Version synchronisieren**
 
-      ![Mit Master synchronisieren](assets/cfm-variations-11a.png)
+      ![Mit primärer Version synchronisieren](assets/cfm-variations-11a.png)
 
-   * über die Symbolleiste des Vollbild-Editors – **Mit Master synchronisieren**
+   * über die Symbolleiste des Vollbild-Editors – **Mit primärer Version synchronisieren**
 
-      ![Mit Master synchronisieren](assets/cfm-variations-11b.png)
+      ![Mit primärer Version synchronisieren](assets/cfm-variations-11b.png)
 
-1. Master und Variante werden nebeneinander angezeigt:
+1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt      wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt  wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
-   ![Mit Master synchronisieren](assets/cfm-variations-11c.png)
+   ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
 1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
