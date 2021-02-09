@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
 source-wordcount: '4358'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ In diesem Artikel wird das Verwalten und Bearbeiten von Assets in Adobe Experien
 
 ## Erstellen von Ordnern {#creating-folders}
 
-Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager Assets]Bei müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
+Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei [!DNL Experience Manager Assets] müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] das Duplikat und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets die Leistung beeinträchtigen kann. Um die Funktion zu aktivieren, konfigurieren Sie die [!UICONTROL Duplikaterkennung für Cloud-Assets in Adobe AEM]. Erfahren Sie, [wie man OSGi-Konfigurationen durchführt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). Die Duplikaterkennung basiert auf dem eindeutigen Wert `dam:sha1`, der unter `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass doppelte Assets erkannt werden, selbst wenn die Dateinamen unterschiedlich sind.
+Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] das Duplikat und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets die Leistung beeinträchtigen kann. Um die Funktion zu aktivieren, konfigurieren Sie die [!UICONTROL Duplikaterkennung für Cloud-Assets in Adobe AEM]. Erfahren Sie, [wie man OSGi-Konfigurationen durchführt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de). Die Duplikaterkennung basiert auf dem eindeutigen Wert `dam:sha1`, der unter `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass doppelte Assets erkannt werden, selbst wenn die Dateinamen unterschiedlich sind.
 
 ![OSGi-Konfiguration zur Erkennung doppelter Assets](assets/duplicate-detection.png)
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie die `Enter`-Taste. Das neue Tag wird unter [!DNL Experience Manager] gespeichert.
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie anschließend die `Enter`-Taste aus. Das neue Tag wird in [!DNL Experience Manager] gespeichert.
 
    YouTube erfordert Tags zur Veröffentlichung und einen YouTube-Link (wenn ein geeigneter Link gefunden werden kann).
 
@@ -141,11 +141,11 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Wenn Sie die Schnellaktion [!UICONTROL Kopieren] verwenden, können Sie immer nur ein Asset gleichzeitig kopieren.
 
-1. Navigieren Sie zum Speicherort, in den Sie die Assets kopieren möchten.
+1. Navigieren Sie zum Speicherort, an den Sie die Assets kopieren möchten.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Asset am selben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variation des Namens. Wenn Sie beispielsweise ein Asset mit dem Titel `Square` kopieren, generiert [!DNL Experience Manager] automatisch den Titel für die Kopie mit dem Namen `Square1`.
+   >Wenn Sie ein Asset an denselben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variante des Namens. Beispiel: Wenn Sie ein Asset mit dem Namen `Square` kopieren, generiert [!DNL Experience Manager] automatisch den Namen `Square1` für die Kopie.
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einfügen]**. Die Assets werden an diesen Speicherort kopiert.
 
@@ -209,7 +209,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    >[!NOTE]
    >
-   >Standardmäßig zeigt [!DNL Experience Manager Assets] nicht die ursprüngliche Darstellung des Assets im Modus &quot;Vorschau&quot;an. Als Administrator können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass Originaldarstellungen im Modus &quot;Vorschau&quot;angezeigt werden.
+   >Standardmäßig zeigt [!DNL Experience Manager Assets] im Vorschaumodus nicht die ursprüngliche Ausgabedarstellung des Assets an. Wenn Sie ein Administrator sind, können Sie Überlagerungen verwenden, um [!DNL Assets] so zu konfigurieren, dass ursprüngliche Ausgabedarstellungen im Vorschaumodus angezeigt werden.
 
 1. Wählen Sie eine Ausgabedarstellung aus, um sie anzuzeigen oder zu löschen.
 
@@ -229,7 +229,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >Wenn Sie eine Ausgabedarstellung im Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für die Ausgabedarstellung relevanten Aktionen angezeigt werden. Optionen wie das Symbol „Ausgabedarstellungen hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
-   Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Je nach den angegebenen Abmessungen zeigt Assets die Darstellung mit den exakten oder engsten Abmessungen an.
+   Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Assets zeigt anhand der von Ihnen angegebenen Abmessungen die Ausgabedarstellung mit den genauen oder möglichst genauen Abmessungen an.
 
    Überlagern Sie zum Konfigurieren der Ausgabedarstellungsabmessungen eines Bildes auf der Asset-Detailebene den Knoten `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) und konfigurieren Sie den Wert für die width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft `preferOriginal` der Originalgröße den Vorzug, wenn die angepasste Ausgabedarstellung größer ist als das Original.
 
@@ -329,7 +329,7 @@ Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/down
 
 ## Geschlossene Benutzergruppe {#closed-user-group}
 
-Eine geschlossene Benutzergruppe (CUG) wird verwendet, um den Zugriff auf bestimmte Asset-Ordner zu beschränken, die von [!DNL Experience Manager] veröffentlicht wurden. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
+Eine geschlossene Benutzergruppe (Closed User Group, CUG) wird verwendet, um den Zugriff auf bestimmte aus [!DNL Experience Manager] veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
 
 CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
@@ -338,22 +338,22 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 
    ![add_user](assets/add_user.png)
 
-1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie dann den Pfad zu einer Anmeldeseite in [!DNL Experience Manager] und speichern Sie die Änderungen.
+1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie anschließend den Pfad zur Anmeldeseite in [!DNL Experience Manager] aus und speichern Sie die Änderungen.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Wenn Sie den Pfad zu einer Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die Standard-Anmeldeseite in der Veröffentlichungsinstanz an.
+   >Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
 
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
-1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Der Ordner wird angezeigt, nachdem [!DNL Experience Manager] Sie authentifiziert hat.
+1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
 ## Suchen von Assets  {#search-assets}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
-Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in suchen [!DNL Experience Manager]](/help/assets/search-assets.md).
+Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in  [!DNL Experience Manager]](/help/assets/search-assets.md) suchen.
 
 ## Schnellaktionen {#quick-actions}
 
@@ -364,7 +364,7 @@ Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je
 
 ## Bearbeiten von Bildern {#editing-images}
 
-Mit den Bearbeitungswerkzeugen in der [!DNL Experience Manager Assets]-Oberfläche können Sie kleine Bearbeitungsaufträge für Bild-Assets ausführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Experience Manager Assets] können Sie kleine Bearbeitungsaktionen in Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
 
 >[!NOTE]
 >
@@ -435,7 +435,7 @@ In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt a
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
-Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von  Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
+Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
 
 >[!NOTE]
 >
@@ -472,7 +472,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Schließen]**, um den Anmerkungsmodus zu verlassen.
-1. Um die Benachrichtigung zu sehen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei  Assets an und klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**.
+1. Um die Benachrichtigung zu sehen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei Assets an und klicken Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**.
 
    >[!NOTE]
    >
@@ -566,7 +566,7 @@ In folgenden Szenarien werden Versionen erstellt:
 
 * Sie ändern ein Bild in einer anderen Anwendung und laden es in Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
 * Sie können die Metadaten eines Assets bearbeiten.
-* Verwenden Sie die [!DNL Experience Manager]-Desktop-App, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Eine neue Version wird jedes Mal erstellt, wenn das Asset gespeichert wird.
+* Sie verwenden das [!DNL Experience Manager]-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Bei jedem Speichern des Assets wird eine neue Version erstellt.
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabedarstellungen gemeinsam mit der Version gespeichert. Ausgabedarstellungen sind gerenderte Alternativen für dieselben Bilder, z. B. eine PNG-Ausgabedarstellung einer hochgeladenen JPEG-Datei.
 
