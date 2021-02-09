@@ -1,34 +1,34 @@
 ---
-title: DNS-Datensatzstatus überprüfen
-description: DNS-Datensatzstatus überprüfen
+title: Überprüfen des Status von DNS-Einträgen
+description: Überprüfen des Status von DNS-Einträgen
 translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# DNS-Datensatzstatus {#check-dns-record-status} überprüfen
+# Überprüfen des Status von DNS-Einträgen {#check-dns-record-status}
 
-Sie können feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihrer AEM als Cloud Service-Website aufgelöst wird, indem Sie in der Tabelle auf der Seite &quot;Domäneneinstellungen&quot;auf das Statussymbol für den DNS-Datensatz klicken.
+Sie können feststellen, ob Ihr Domain-Name ordnungsgemäß in Ihre AEM as a Cloud Service-Website aufgelöst wird, indem Sie auf das Statussymbol für den DNS-Eintrag in der Tabelle der Umgebungen auf der Seite „Domain-Einstellungen“ klicken.
 
-Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerspezifischer Domänenname zum ersten Mal erfolgreich überprüft und bereitgestellt wurde. Bei nachfolgenden Versuchen müssen Sie das Symbol **resolve** neben dem Status aktiv auswählen.
+Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv auswählen.
 
-Cloud Manager führt eine DNS-Suche nach Ihrem Domänennamen durch und zeigt eine der folgenden Statusmeldungen an:
+Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine der folgenden Statusmeldungen an:
 
-* **DNS-Status nicht**
-erkanntDNS-Status wird erst erkannt, wenn der benutzerdefinierte Domänenname erfolgreich überprüft und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domäne gelöscht wird.
+* **DNS-Status nicht erkannt**
+Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
 
-* **DNS löst**
-Unrichtig auf. Dies weist darauf hin, dass die DNS-Datensatzkonfiguration noch nicht aufgelöst/verzeichnet wurde oder fehlerhaft ist. Ein Vertreter der Adobe wird automatisch benachrichtigt.
+* **DNS wird falsch aufgelöst**
+Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöst/übertragen wurde oder fehlerhaft ist. Ein Adobe-Support-Mitarbeiter wird automatisch benachrichtigt.
 
    >[!NOTE]
-   >Sie müssen entweder ein `CNAME` oder ein `A-record` konfigurieren, indem Sie die entsprechenden Anweisungen befolgen. Weitere Informationen finden Sie unter Konfigurieren von DNS-Einstellungen. Wenn Sie bereit sind, müssen Sie das Symbol **resolve** neben dem Status erneut auswählen.
+   >Sie müssen entweder einen `CNAME` oder einen `A-record` konfigurieren, indem Sie die entsprechenden Anweisungen befolgen. Weitere Informationen finden Sie unter „Konfigurieren von DNS-Einstellungen“. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status auswählen.
 
-* **DNS-Auflösung In**
-ProgressResolution wird ausgeführt. Dieser Status wird normalerweise angezeigt, nachdem Sie das Symbol &quot;Erneut auflösen&quot;neben dem Status ausgewählt haben.
+* **DNS-Auflösung in Bearbeitung**
+Die Auflösung ist im Gange. Dieser Status wird normalerweise angezeigt, nachdem Sie neben dem Status das Symbol zum erneuten Auflösen ausgewählt haben.
 
-* **DNS löst**
-korrekt aufIhre DNS-Einstellungen sind richtig konfiguriert. Ihre Website dient Besuchern.
+* **DNS wird korrekt aufgelöst**
+Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert. Ihre Website bedient Besucher.
