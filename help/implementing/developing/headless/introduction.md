@@ -1,26 +1,26 @@
 ---
-title: Eigenständige Entwicklung für AEM Sites als Cloud Service
-description: Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die Grafik-QL-API können AEM als Cloud Service Ihre Erlebnisse zentral verwalten und sie über Kanal hinweg bereitstellen.
+title: Headless-Entwicklung für AEM Sites as a Cloud Service
+description: Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API können Sie mit AEM as a Cloud Service Ihre Erlebnisse zentral verwalten und kanalübergreifend bereitstellen.
 translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 4%
+ht-degree: 88%
 
 ---
 
 
-# Headless Development for AEM Sites as Cloud Service {#headless-development}
+# Headless-Entwicklung für AEM Sites as a Cloud Service {#headless-development}
 
-Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die Grafik-QL-API können AEM als Cloud Service Ihre Erlebnisse zentral verwalten und sie über Kanal hinweg bereitstellen.
+Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API können Sie mit AEM as a Cloud Service Ihre Erlebnisse zentral verwalten und kanalübergreifend bereitstellen.
 
 ## Überblick {#overview}
 
-Die Implementierung ohne Kopf wird immer wichtiger, wenn Sie Erlebnisse für Ihre Audience bereitstellen möchten, egal wo sie sich befinden und unabhängig vom Kanal.
+Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
 
-Die Implementierung ohne Kopf verzichtet auf das Seiten- und Komponentenmanagement, wie es bei Vollstapel- und Hybridlösungen üblich ist, und konzentriert sich auf die Erstellung von Kanal-neutralen, wiederverwendbaren Inhaltsfragmenten und deren Cross-Kanal-Versand. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
+Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack- und Hybrid-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
 
-![AEM](assets/aem-implementation-models.png)
+![AEM-Implementierungsmodelle](assets/aem-implementation-models.png)
 
 ## Vergleich von Headful und Headless {#headful-headless}
 
@@ -30,45 +30,45 @@ Dieses Dokument konzentriert sich auf das vollständige, kostenlose Implementier
 >
 >Weitere Informationen finden Sie im Dokument [Kopflos und Kopflos in AEM](/help/implementing/developing/headful-headless.md).
 
-## AEM als Cloud Service und ohne Kopf {#aem-headless}
+## AEM as a Cloud Service und Headless {#aem-headless}
 
-AEM als Cloud Service ist ein flexibles Instrument für das kostenlose Implementierungsmodell, das drei leistungsstarke Dienste anbietet:
+AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungsmodell, das drei leistungsstarke Dienste bietet:
 
 1. Inhaltsmodelle
    * Inhaltsmodelle sind strukturierte Darstellungen von Inhalten.
-   * Diese werden von Informationsarchitekten im Editor AEM Content Fragment Model definiert.
+   * Diese werden von Informationsarchitekten im Inhaltsfragmentmodell-Editor in AEM definiert.
    * Inhaltsmodelle dienen als Grundlage für Inhaltsfragmente.
 1. Inhaltsfragmente
    * Inhaltsfragmente sind Instanziierungen von Inhaltsmodellen.
-   * Diese werden von Inhaltserstellern mit dem Content Fragment-Editor AEM.
-   * Sie werden in AEM Assets gespeichert und in der Admin-Benutzeroberfläche von Assets verwaltet.
-1. Content API für Versand
-   * Die AEM GraphQL API unterstützt Content Fragment Versand.
-   * Die AEM Assets REST API unterstützt Content Fragment CRUD-Vorgänge.
-   * Der Versand für direkte Inhalte ist auch beim JSON-Export der [Inhaltsfragment-Core-Komponente möglich.](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html)
+   * Diese werden von Inhaltsautoren mit dem Inhaltsfragmente-Editor in AEM erstellt.
+   * Sie werden in AEM Assets gespeichert und in der Administrator-Benutzeroberfläche von Assets verwaltet.
+1. Inhalts-API für die Bereitstellung
+   * Die AEM-GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
+   * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
+   * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Kernkomponenten für Inhaltsfragmente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/content-fragment-component.html) möglich.
 
-## Kopflose Erste Schritte - Guides {#getting-started}
+## Erste Schritte für Headless {#getting-started}
 
-Die Kopflosen-Anleitungen für erste Schritte beschreiben einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mithilfe von AEM als Cloud Service in fünf Schritten. Jeder Leitfaden baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der Reihenfolge zu erkunden.
+Die ersten Schritte für Headless zeigen einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten auf. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](getting-started/create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](getting-started/create-content-model.md)
 1. [Erstellen eines Asset-Ordners](getting-started/create-assets-folder.md)
 1. [Erstellen eines Inhaltsfragments](getting-started/create-content-fragment.md)
-1. [Zugriff auf Inhaltsfragmente und Bereitstellung](getting-started/create-api-request.md)
+1. [Aufrufen und Bereitstellen von Inhaltsfragmenten](getting-started/create-api-request.md)
 
 ## Audience {#audience}
 
-Die unter [Kopflose Erste Schritte](#getting-started) beschriebenen Aufgaben sind erforderlich für eine grundlegende durchgängige Demonstration AEM Kopflosen Funktionen. Jeder Benutzer mit Administratorzugriff auf eine AEM Testinstanz kann diesen Leitfäden folgen, um den Kopflosen Versand in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
+Die in den [ersten Schritten für Headless](#getting-started) beschriebenen Aufgaben sind für eine grundlegende durchgängige Demonstration der Headless-Funktionen von AEM erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
 In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen unterschiedlich oft ausgeführt. Beispiel:
 
-* **** Administratoren müssen die anfängliche Konfigurations- und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
-* **Informationsarchitekten** werden im Allgemeinen neue Modelle hinzufügen, wenn sich die Bedürfnisse der Organisation entwickeln.
+* **Administratoren** müssen die anfängliche Konfiguration und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
+* **Informationsarchitekten** fügen im Allgemeinen neue Modelle hinzu, wenn sich die Anforderungen der Organisation ändern.
 * **Inhaltsautoren** erstellen kontinuierlich neue Inhalte als Inhaltsfragmente basierend auf den von den Architekten definierten Modellen.
 
-In den Kopflosen-Handbüchern &quot;Erste Schritte&quot;wird darauf hingewiesen, wer im Allgemeinen die beschriebenen Aufgaben durchführen würde und wie häufig.
+In den ersten Schritten für Headless wird aufgezeigt, wer die beschriebenen Aufgaben in der Regel und wie häufig durchführt.
 
 ## Nächster Schritt {#next-step}
 
-Sind Sie bereit, mehr zu erfahren? Beginnen Sie dann mit dem ersten Teil des Leitfadens zu den kostenlosen Einstieg: [Erstellen einer Konfiguration.](getting-started/create-configuration.md)
+An weiteren Informationen interessiert? Dann lesen Sie zunächst den ersten Teil der ersten Schritte für Headless: [Erstellen einer Konfiguration.](getting-started/create-configuration.md)
