@@ -1,21 +1,21 @@
 ---
-title: Domäne überprüfen
-description: Domäne überprüfen
+title: Überprüfen der Domain
+description: Überprüfen der Domain
 translation-type: tm+mt
 source-git-commit: d2a98cf340dc755407250a9a9649addb75ad87d2
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Domäne {#verify-domain-name} überprüfen
+# Überprüfen der Domain {#verify-domain-name}
 
-Ein DNS-TXT-Datensatz autorisiert die Hosting einer Domäne in einem CDN-Dienst. Der Kunde muss einen DNS-TXT-Datensatz in der Zone erstellen, die Cloud Manager autorisiert, den CDN-Dienst mit der benutzerdefinierten Domäne bereitzustellen und ihn mit dem Backend-Dienst zu verknüpfen. Diese Verbindung steht vollständig unter der Kontrolle des Kunden und autorisiert Cloud Manager ausdrücklich, Inhalte aus dem Dienst für eine Domäne bereitzustellen. Diese Genehmigung kann erteilt und entzogen werden. Der TXT-Datensatz ist spezifisch für die Domäne und die Cloud Manager-Umgebung.
+Ein DNS-TXT-Datensatz autorisiert das Hosting einer Domain durch einen CDN-Service. Der Kunde muss einen DNS-TXT-Datensatz in der Zone erstellen, die Cloud Manager autorisiert, um den CDN-Service mit der benutzerdefinierten Domain bereitzustellen, und ihn dem Backend-Service zuordnen. Diese Zuordnung steht vollständig unter der Kontrolle des Kunden und autorisiert Cloud Manager ausdrücklich, Inhalte aus dem Service für eine Domain bereitzustellen. Diese Autorisierung kann erteilt und entzogen werden. Der TXT-Datensatz ist spezifisch für die Domain und die Cloud Manager-Umgebung.
 
-1. Melden Sie sich bei Ihrem Domänenhost an und besuchen Sie den Abschnitt DNS-Datensätze.
-1. Kopieren Sie den TXT-Eintrag in Ihre DNS-Zone, wo sich Ihre benutzerdefinierte Domäne befindet, genau wie er angezeigt wird. Wenn Sie einen &quot;Namen&quot; für Ihren Eintrag benötigen, geben Sie ihn `@`.
+1. Melden Sie sich bei Ihrem Domain-Host an und wechseln Sie zum Abschnitt mit den DNS-Datensätzen.
+1. Kopieren Sie den TXT-Eintrag und fügen Sie ihn so, wie er angezeigt wird, in die DNS-Zone ein. Wenn Sie einen Namen für Ihren Eintrag benötigen, verwenden Sie `@`.
 
 >[!NOTE]
->Verschiedene DNS-Nachschlagewerkzeuge wie [DNS-Nachschlagewerkzeug](https://www.ultratools.com/tools/dnsLookup), Google DoH können verwendet werden, um TXT-Datensatzeinträge nachzuschlagen und herauszufinden, ob der TXT-Datensatz fehlt oder fehlerhaft ist.
+>Verschiedene [DNS-Lookup-Tools](https://www.ultratools.com/tools/dnsLookup) wie Google DoH können verwendet werden, um TXT-Datensatzeinträge zu suchen und zu erkennen, ob der TXT-Datensatz fehlt oder fehlerhaft ist.
