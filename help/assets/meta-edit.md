@@ -1,23 +1,23 @@
 ---
 title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
-description: Erfahren Sie mehr über Asset-Metadaten unter  [!DNL Experience Manager Assets] und verschiedene Möglichkeiten zum Bearbeiten von Asset-Metadaten.
+description: Erfahren Sie mehr über Asset-Metadaten in [!DNL Experience Manager Assets] und lernen Sie die verschiedenen Bearbeitungsmöglichkeiten kennen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Anleitung zum Bearbeiten oder Hinzufügen von Metadaten{#how-to-edit-or-add-metadata}
+# Anleitung zum Bearbeiten oder Hinzufügen von Metadaten {#how-to-edit-or-add-metadata}
 
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Da Firmen gesteuerte und zuverlässige Metadaten-Vokabeln benötigen, ist das Hinzufügen neuer Metadateneigenschaften durch Ad-hoc-Vorgänge nicht möglich. [!DNL Experience Manager Assets] Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
+Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, lässt [!DNL Experience Manager Assets] das Adhoc-Hinzufügen von neuen Metadateneigenschaften nicht zu. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
 
-## Bearbeiten von Metadaten für ein Asset   {#editing-metadata-for-an-asset}
+## Bearbeiten von Metadaten für ein Asset  {#editing-metadata-for-an-asset}
 
 So bearbeiten Sie Metadaten:
 
@@ -33,7 +33,7 @@ So bearbeiten Sie Metadaten:
 
    >[!NOTE]
    >
-   >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen. 
+   >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen.
 
 Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Dies geschieht über den Writeback-Workflow der AEM-Metadaten. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) werden überschrieben und neu erstellte Eigenschaften (einschließlich benutzerdefinierten Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
 
