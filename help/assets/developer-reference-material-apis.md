@@ -6,22 +6,22 @@ translation-type: tm+mt
 source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Adobe Experience Manager Assets]APIs und Entwicklerreferenzmaterial {#assets-cloud-service-apis}
 
-Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwickler von [!DNL Assets] als [!DNL Cloud Service]. Es enthält ein neues Modul zum Hochladen von Assets, API-Referenz und Informationen zur Unterstützung, die in der Workflows nach der Verarbeitung bereitgestellt wird.
+Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwickler von [!DNL Assets] as a [!DNL Cloud Service]. Er enthält ein neues Modul für den Asset-Upload, eine API-Referenz und Informationen über die Unterstützung, die in Nachbearbeitungs-Workflows bereitgestellt wird.
 
-## [!DNL Experience Manager Assets] APIs und Vorgänge  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets]-APIs und -Vorgänge {#use-cases-and-apis}
 
-[!DNL Assets] als  [!DNL Cloud Service] Bereitstellung mehrerer APIs für die programmgesteuerte Interaktion mit digitalen Assets. Jede API unterstützt spezifische Anwendungsfälle, wie in der folgenden Tabelle beschrieben. Die [!DNL Assets]-Benutzeroberfläche, [!DNL Experience Manager] Desktop-App und [!DNL Adobe Asset Link] unterstützen alle oder einige der Vorgänge.
+[!DNL Assets] as a [!DNL Cloud Service] bietet mehrere APIs für die programmgesteuerte Interaktion mit digitalen Assets. Jede API unterstützt spezifische Anwendungsfälle, wie in der folgenden Tabelle beschrieben. Die [!DNL Assets]-Benutzeroberfläche, das [!DNL Experience Manager]-Desktop-Programm und [!DNL Adobe Asset Link] unterstützen alle oder einige der Vorgänge.
 
 >[!CAUTION]
 >
->Einige APIs bestehen weiterhin, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet) und dürfen nicht verwendet werden.
+>Einige APIs bleiben bestehen, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet) und dürfen nicht verwendet werden.
 
 | Unterstützungsebene | Beschreibung |
 | ------------- | --------------------------- |
@@ -29,9 +29,9 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | × | Nicht unterstützt. Nicht verwenden. |
 | - | Nicht verfügbar |
 
-| Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [AEM/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava-APIs | [Asset compute-Dienst](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Vorschau)_ |
+| Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Original** |  |  |  |  |  |  |
+| **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
 | Original erstellen | they | × | - | × | × | - |
 | Original lesen | - | × | they | they | they | - |
 | Original aktualisieren | they | × | they | × | × | - |
@@ -39,19 +39,19 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | Original kopieren | - | they | - | they | they | - |
 | Original verschieben | - | they | - | they | they | - |
 | **Metadaten** |  |  |  |  |  |  |
-| Erstellen von Metadaten | - | they | they | they | they | - |
+| Metadaten erstellen | - | they | they | they | they | - |
 | Metadaten lesen | - | they | - | they | they | - |
-| Aktualisieren von Metadaten | - | they | they | they | they | - |
+| Metadaten aktualisieren | - | they | they | they | they | - |
 | Metadaten löschen | - | they | they | they | they | - |
-| Kopieren von Metadaten | - | they | - | they | they | - |
-| Verschieben von Metadaten | - | they | - | they | they | - |
-| **Inhaltsfragmente (CF)** |  |  |  |  |  |  |
-| CF erstellen | - | they | - | they | - | - |
-| CF lesen | - | they | - | they | - | they |
-| CF aktualisieren | - | they | - | they | - | - |
-| CF löschen | - | they | - | they | - | - |
-| CF kopieren | - | they | - | they | - | - |
-| CF verschieben | - | they | - | they | - | - |
+| Metadaten kopieren | - | they | - | they | they | - |
+| Metadaten verschieben | - | they | - | they | they | - |
+| **Inhaltsfragmente** |  |  |  |  |  |  |
+| Inhaltsfragmente erstellen | - | they | - | they | - | - |
+| Inhaltsfragmente lesen | - | they | - | they | - | they |
+| Inhaltsfragmente aktualisieren | - | they | - | they | - | - |
+| Inhaltsfragmente löschen | - | they | - | they | - | - |
+| Inhaltsfragmente kopieren | - | they | - | they | - | - |
+| Inhaltsfragmente verschieben | - | they | - | they | - | - |
 | **Versionen** |  |  |  |  |  |  |
 | Version erstellen | they | they | - | - | - | - |
 | Version lesen | - | they | - | - | - | - |
@@ -65,7 +65,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 ## Asset-Upload {#asset-upload-technical}
 
-[!DNL Experience Manager][!DNL Cloud Service] as a bietet eine neue Methode zum Hochladen von Assets in das Repository. Die Benutzer können die Assets über die HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
+[!DNL Experience Manager] as a [!DNL Cloud Service] bietet eine neue Methode zum Hochladen von Assets in das Repository. Die Benutzer können die Assets über die HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
 1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
@@ -165,7 +165,7 @@ Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripte und 
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] als [!DNL Cloud Service] unterstützt. Die APIs aus [!DNL Adobe Experience Manager] 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabedarstellungen (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
+Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt. Die APIs aus [!DNL Adobe Experience Manager] 6.5 werden nicht mehr unterstützt. Die Methoden im Zusammenhang mit dem Hochladen oder Aktualisieren von Assets oder Ausgabedarstellungen (alle binären Uploads) werden in den folgenden APIs nicht mehr unterstützt:
 
 * [Experience Manager Assets-HTTP-API](mac-api-assets.md)
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
@@ -185,7 +185,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 Kunden, die ein Upgrade von früheren Versionen von [!DNL Experience Manager] durchführen, können Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
 
-[!DNL Experience Manager] als  [!DNL Cloud Service] Unterstützung der folgenden Arbeitsablaufschritte:
+[!DNL Experience Manager] as a [!DNL Cloud Service] unterstützt die folgenden Workflow-Schritte:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Das Experience Cloud als  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [Das Experience Cloud as a  [!DNL Cloud Service] -SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
