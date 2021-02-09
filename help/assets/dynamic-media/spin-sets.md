@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Rotationssets{#spin-sets}
+# Rotationssets {#spin-sets}
 
 Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchung. Mit Rotationssets können Artikel aus jedem Winkel betrachtet werden, um die wesentlichen visuellen Details von allen Seiten sehen zu können.
 
@@ -22,13 +22,13 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 >[!NOTE]
 >
->Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md) und wenden Sie sie auf einen neuen Ordner an, in den die Asset-Assets hochgeladen werden.
+>Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md). Wenden Sie sie auf einen neuen Ordner an, in den die Bild-Set-Assets hochgeladen werden.
 
 ## Schnellstart: Rotationssets  {#quick-start-spin-sets}
 
 Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit mit Rotationssets zu schaffen:
 
-1. Optional. [Erstellen Sie eine Stapelsatzvorgabe ](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Asset-Ordner an.
+1. Optional. [Erstellen Sie eine Stapelsatzvorgabe](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Asset-Ordner an.
 
    Eine Stapelsatzvorgabe kann Ihnen dabei helfen, die Erstellung Ihres Rotationssets zu automatisieren.
 
@@ -76,7 +76,7 @@ Bei Bedarf können Sie [Rotationssets bearbeiten](#editing-spin-sets). Darüber 
 
 ## Hochladen von Assets für Rotationssets {#uploading-assets-for-spin-sets}
 
-Sie benötigen mindestens 8 bis 12 Aufnahmen eines Objekts für ein eindimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Gegenstand gedreht und umgedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
+Sie benötigen mindestens acht bis zwölf Aufnahmen eines Artikels für ein eindimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
 Bilder für Rotationssets können Sie [genauso wie alle anderen Assets in AEM Assets hochladen](/help/assets/manage-digital-assets.md).
 
