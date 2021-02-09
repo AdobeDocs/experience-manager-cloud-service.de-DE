@@ -1,24 +1,24 @@
 ---
 title: Komponenten-Referenzhandbuch
-description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur
+description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 translation-type: tm+mt
 source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
 source-wordcount: '3720'
-ht-degree: 31%
+ht-degree: 90%
 
 ---
 
 
 # Komponenten-Referenzhandbuch {#components-reference-guide}
 
-Komponenten sind das Herzstück des Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und das [AEM Projektarchiv](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) machen es einfach, mit einem Werkzeugsatz vorgefertigter, robuster Komponenten zu beginnen. Das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) erläutert dem Entwickler, wie diese Tools verwendet werden und wie benutzerdefinierte Komponenten erstellt werden, um eine neue AEM zu erstellen.
+Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erleichtern den Einstieg mit einem Toolset aus vorgefertigten, robusten Komponenten. Das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) führt den Entwickler durch die Verwendung dieser Tools und das Erstellen benutzerdefinierter Komponenten, um eine neue AEM-Site zu erstellen.
 
 >[!TIP]
 >
->Bevor Sie auf dieses Dokument verweisen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und daher mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und dem [AEM Projektarchiv vertraut sind.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Bevor Sie sich auf dieses Dokument beziehen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und somit mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) vertraut sind.
 
-Da das WKND-Tutorial die meisten Anwendungsfälle abdeckt, ist dieses Dokument nur als Ergänzung zu diesen Ressourcen gedacht. Es enthält detaillierte technische Details darüber, wie Komponenten in AEM strukturiert und konfiguriert sind und nicht als Anleitung zum Einstieg gedacht sind.
+Da das WKND-Tutorial die meisten Anwendungsfälle abdeckt, ist dieses Dokument nur als Ergänzung zu diesen Ressourcen gedacht. Es enthält ausführliche technische Details zur Struktur und Konfiguration von Komponenten in AEM und ist nicht als Anleitung für die ersten Schritte gedacht.
 
 ## Überblick {#overview}
 
@@ -26,7 +26,7 @@ In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er 
 
 ### Planung {#planning}
 
-Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten Sie sich fragen:
+Vor dem Konfigurieren bzw. Programmieren einer Komponente sollten Sie die folgenden Fragen beantworten:
 
 * Was genau soll die neue Komponente tun?
 * Müssen Sie die Komponente komplett neu entwickeln oder können Sie die Grundlagen von einer vorhandenen Komponente übernehmen?
@@ -34,25 +34,25 @@ Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten
    * Die Logik sollte getrennt von der Ebene der Benutzeroberfläche aufbewahrt werden. HTL dient dazu, dies sicherzustellen.
 * Benötigt Ihre Komponente eine CSS-Formatierung?
    * Eine CSS-Formatierung sollte getrennt von den Komponentendefinitionen aufbewahrt werden. Legen Sie Konventionen für die Benennung der HTML-Elemente fest, damit Sie sie über externe CSS-Dateien modifizieren können.
-* Welche Sicherheitsauswirkungen kann Ihre neue Komponente haben?
+* Welche Auswirkungen auf die Sicherheit kann Ihre neue Komponente haben?
 
 ### Wiederverwenden vorhandener Komponenten {#reusing-components}
 
-Bevor Sie Zeit in die Erstellung einer völlig neuen Komponente investieren, sollten Sie die Anpassung oder Erweiterung vorhandener Komponenten in Erwägung ziehen. [Die Core ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Component bietet eine Reihe flexibler, robuster und bewährter produktionsfähiger Komponenten.
+Bevor Sie Zeit in die Erstellung einer völlig neuen Komponente investieren, sollten Sie die Anpassung oder Erweiterung vorhandener Komponenten in Erwägung ziehen. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieten eine Reihe flexibler, robuster und bewährter produktionstauglicher Komponenten.
 
 #### Erweitern der Kernkomponenten {#extending-core-components}
 
-Die Kernkomponenten werden auch mit dem Angebot [clear customization patterns](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) versehen, das Sie verwenden können, um sie an die Anforderungen Ihres eigenen Projekts anzupassen.
+Die Kernkomponenten bieten auch [klare Anpassungsmuster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de), die Sie verwenden können, um sie an die Bedürfnisse Ihres eigenen Projekts anzupassen.
 
-#### Komponenten überlagern {#overlying-components}
+#### Überlagern von Komponenten {#overlying-components}
 
-Komponenten können auch mit einer [Überlagerung](/help/implementing/developing/introduction/overlays.md) neu definiert werden, basierend auf der Suchpfadlogik. In diesem Fall wird jedoch der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) nicht ausgelöst und `/apps` muss die gesamte Überlagerung definieren.
+Komponenten können mit einer [Überlagerung](/help/implementing/developing/introduction/overlays.md) ebenfalls neu definiert werden, die auf der Suchpfadlogik basiert. In diesem Fall wird der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) nicht ausgelöst und `/apps` muss die gesamte Überlagerung definieren.
 
 #### Erweitern von Komponentendialogen {#extending-component-dialogs}
 
 Es ist auch möglich, ein Komponentendialogfeld mithilfe des Sling Resource Mergers zu überschreiben und die Eigenschaft `sling:resourceSuperType` zu definieren.
 
-Das bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt den gesamten Dialog neu zu definieren.
+Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt das gesamte Dialogfeld neu zu definieren.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
@@ -60,89 +60,89 @@ Ihre Komponente wird mit [HTML gerendert.](https://www.w3schools.com/htmL/html_i
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
-Dieser Ansatz wird durch [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
+Dieser Ansatz wird durch [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de) unterstützt, eine Vorlagensprache, die dazu dient sicherzustellen, dass eine echte Programmiersprache für die Definition der zugrunde liegenden Geschäftslogik genutzt wird. Dieser Mechanismus kennzeichnet den Code, der für eine bestimmte Ansicht aufgerufen wird, und lässt bei Bedarf eine spezifische Logik für unterschiedliche Ansichten derselben Komponente zu.
 
-Diese (optionale) Logik kann auf unterschiedliche Weise implementiert werden und wird von HTML mit bestimmten Befehlen aufgerufen:
+Diese (optionale) Logik kann auf verschiedene Arten implementiert werden und wird von HTL mit bestimmten Befehlen aufgerufen:
 
-* Mit Java - [Die HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) ermöglicht einer HTML-Datei den Zugriff auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse. Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
-* Verwenden von JavaScript - [Die HTML-JavaScript-Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) aktiviert eine HTML-Datei, um auf in JavaScript geschriebenen Helfercode zuzugreifen. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
-* Verwendung clientseitiger Bibliotheken - Moderne Websites basieren in hohem Maße auf clientseitiger Verarbeitung, die durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie im Dokument [Verwenden clientseitiger Bibliotheken auf AEM als Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+* Verwenden von Java – [Die HTL Java Use-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api-java.html) ermöglicht es einer HTL-Datei, auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zuzugreifen. Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+* Verwenden von JavaScript – [Die HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=de) ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+* Verwenden von Client-seitigen Bibliotheken – Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Weitere Informationen finden Sie im Dokument [Verwenden Client-seitiger Bibliotheken in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Komponentenstruktur {#structure}
 
-Die Struktur einer AEM Komponente ist leistungsstark und flexibel. Die wichtigsten Bestandteile sind:
+Die Struktur einer AEM-Komponente ist leistungsstark und flexibel. Die Hauptbestandteile sind:
 
 * [Ressourcentyp](#resource-type)
 * [Komponentendefinition](#component-definition)
 * [Eigenschaften und untergeordnete Knoten einer Komponente](#properties-and-child-nodes-of-a-component)
 * [Dialogfelder](#dialogs)
-* [Designdialogfelder](#design-dialogs)
+* [Design-Dialogfelder](#design-dialogs)
 
 ### Ressourcentyp {#resource-type}
 
 Ein zentrales Element der Struktur ist der Ressourcentyp.
 
-* Die Inhaltsstruktur erklärt Absichten.
+* Die Inhaltsstruktur deklariert Absichten.
 * Der Ressourcentyp implementiert sie.
 
-Dies ist eine Abstraktion, die hilft sicherzustellen, dass selbst wenn sich das Aussehen und Gefühl im Laufe der Zeit ändert, dass die Absicht bleibt die Zeit.
+Dies ist eine Abstraktion, die sicherstellen soll, dass die Absicht unverändert bleibt, auch wenn sich das Erscheinungsbild ändert.
 
 ### Komponentendefinition {#component-definition}
 
 Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
 * AEM-Komponenten basieren auf [Sling.](https://sling.apache.org/documentation.html)
-* AEM Komponenten befinden sich unter `/libs/core/wcm/components`.
-* Projekt-/Site-spezifische Komponenten befinden sich unter `/apps/<myApp>/components`.
+* AEM-Komponenten befinden sich unter `/libs/core/wcm/components`.
+* Projekt- bzw. Website-spezifische Komponenten befinden sich unter `/apps/<myApp>/components`.
 * AEM-Standardkomponenten sind als `cq:Component` definiert und haben die folgenden zentralen Elemente:
-   * jcr-Eigenschaften - Eine Liste von jcr-Eigenschaften. Diese sind variabel und einige können optional sein, wenn die Basisstruktur eines Komponentenknotens, seine Eigenschaften und Unterknoten durch die Definition von `cq:Component` definiert werden.
-   * Ressourcen: Diese definieren Statische Element, die von der Komponente verwendet werden.
-   * Skripten - Diese werden verwendet, um das Verhalten der resultierenden Instanz der Komponente zu implementieren.
+   * JCR-Eigenschaften – Eine Liste von JCR-Eigenschaften. Diese sind variabel und einige von ihnen können optional sein, obwohl die grundlegende Struktur eines Komponentenknotens, seiner Eigenschaften und untergeordneten Knoten in der `cq:Component`-Definition festgelegt ist.
+   * Ressourcen – Sie definieren statische Elemente, die von der Komponente genutzt werden.
+   * Skripte – Sie werden verwendet, um das Verhalten der entstandenen Instanz der Komponente zu implementieren.
 
 #### Wichtige Eigenschaften {#vital-properties}
 
 * **Stammknoten**:
-   * `<mycomponent> (cq:Component)` - Hierarchie-Knoten der Komponente.
+   * `<mycomponent> (cq:Component)` – Hierarchieknoten der Komponente.
 * **Wichtige Eigenschaften**:
-   * `jcr:title` - Titel der Komponente; wird beispielsweise als Bezeichnung verwendet, wenn die Komponente in der  [Komponenten-](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Browser- und  [Komponentenkonsole aufgeführt wird](/help/sites-cloud/authoring/features/components-console.md)
-   * `jcr:description` - Beschreibung der Komponente; als Mauszeiger im Komponentenbrowser und in der Komponentenkonsole verwendet
-   * Weitere Informationen finden Sie im Abschnitt [Komponentensymbol](#component-icon)
+   * `jcr:title` – Komponententitel; wird beispielsweise als Titel genutzt, wenn die Komponente im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) oder in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) aufgeführt wird.
+   * `jcr:description` – Beschreibung der Komponente; wird als Mouseover-Hinweis im Komponenten-Browser oder in der Komponentenkonsole genutzt.
+   * Weitere Informationen finden Sie im Abschnitt [Komponentensymbol](#component-icon).
 * **Wichtige untergeordnete Knoten**:
-   * `cq:editConfig (cq:EditConfig)` - Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht die Anzeige der Komponente im Komponentenbrowser
-      * Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder im Sidekick angezeigt, auch wenn cq:editConfig nicht vorhanden ist.
-   * `cq:childEditConfig (cq:EditConfig)` - Steuert die Aspekte der Autorenbenutzeroberfläche für untergeordnete Komponenten, die keine eigenen definieren  `cq:editConfig`.
-   * `cq:dialog (nt:unstructured)` - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
-   * `cq:design_dialog (nt:unstructured)` - Designbearbeitung für diese Komponente
+   * `cq:editConfig (cq:EditConfig)` – Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht es, dass die Komponente im Komponenten-Browser aufgeführt wird.
+      * Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
+   * `cq:childEditConfig (cq:EditConfig)` – Steuert Aspekte der Autoren-Benutzeroberfläche für untergeordnete Komponenten, die keine eigene `cq:editConfig` definieren.
+   * `cq:dialog (nt:unstructured)` – Dialogfeld für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
+   * `cq:design_dialog (nt:unstructured)` – Design-Bearbeitung für diese Komponente
 
 #### Komponentensymbol {#component-icon}
 
-Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
+Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der  [Coral UI-Bibliothek verweist und im Komponenten-Browser angezeigt ](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wird
+1. `cq:icon` – Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verweist, das im Komponenten-Browser angezeigt werden soll.
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
-1. `abbreviation` - String-Eigenschaft zum Anpassen der Abkürzung des Komponentennamens im Komponenten-Browser
+1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
-   * Bei einem leeren String wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
+   * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
       * Beispiel: „Gr“ für „Grafik“.
       * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
-1. `cq:icon.png` oder  `cq:icon.svg` - Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird
+1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
-      * Größere Symbole werden verkleinert (clientseitig).
-   * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070
+      * Größere Symbole werden verkleinert (Client-seitig).
+   * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
-   * Es werden nur die Dateien `.png` und `.svg` unterstützt.
-   * Beim Import aus dem Dateisystem über das Eclipse-Plugin müssen Dateinamen beispielsweise mit `_cq_icon.png` oder `_cq_icon.svg` gekennzeichnet werden.
-   * `.png` hat Vorrang,  `.svg` wenn beide vorhanden sind.
+   * Es werden nur `.png`- und `.svg`-Dateien unterstützt.
+   * Beim Importieren aus dem Dateisystem über das Eclipse-Plug-in müssen die Dateinamen nach folgendem Schema geändert werden: z. B. `_cq_icon.png` oder `_cq_icon.svg`.
+   * Wenn beide Formate vorliegen, hat `.png` Vorrang vor `.svg`.
 
-Wenn keine der oben genannten Eigenschaften (`cq:icon`, `abbreviation`, `cq:icon.png` oder `cq:icon.svg`) für die Komponente gefunden wird:
+Wenn keine der o. g. Eigenschaften (`cq:icon`, `abbreviation`, `cq:icon.png` oder `cq:icon.svg`) bei der Komponente gefunden wird:
 
 * Das System sucht nach denselben Eigenschaften bei den übergeordneten Komponenten, die der Eigenschaft `sling:resourceSuperType` folgen.
-* Wenn auf der Superkomponentenebene nichts oder eine leere Abkürzung gefunden wird, erstellt das System die Abkürzung aus den ersten Buchstaben der `jcr:title`-Eigenschaft der aktuellen Komponente.
+* Wenn auf der Ebene der übergeordneten Komponente nichts oder eine leere Abkürzung gefunden wird, erstellt das System die Abkürzung aus den ersten beiden Zeichen der Eigenschaft `jcr:title` der aktuellen Komponente.
 
 Um die Vererbung von Symbolen von übergeordneten Komponenten zu deaktivieren, legen Sie eine leere Eigenschaft `abbreviation` für die Komponente fest. Das Standardverhalten wird daraufhin erneut aktiviert.
 
-Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert wird.
+Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert ist.
 
 #### Beispiel: SVG-Symbol {#svg-icon-example}
 
@@ -166,53 +166,53 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 
 | Name | Typ | Beschreibung |
 |---|---|---|
-| `.` | `cq:Component` | Dies stellt die aktuelle Komponente dar. Eine Komponente ist vom Knotentyp `cq:Component`. |
-| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Ein Wert, der mit beginnt,  `.` wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
-| `cq:isContainer` | `Boolean` | Dies gibt an, ob es sich bei der Komponente um eine Container-Komponente handelt, die daher andere Komponenten wie ein Absatzsystem enthalten kann. |
-| `cq:dialog` | `nt:unstructured` | Dies ist die Definition des Dialogfelds zum Bearbeiten der Komponente. |
-| `cq:design_dialog` | `nt:unstructured` | Dies ist die Definition des Designdialogs für die Komponente. |
-| `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente definiert.](#edit-behavior) |
-| `cq:htmlTag` | `nt:unstructured` | Dadurch werden zusätzliche Tag-Attribute zurückgegeben, die dem umgebenden HTML-Tag hinzugefügt werden. Ermöglicht das Hinzufügen von Attributen zu den automatisch generierten div-Tags. |
+| `.` | `cq:Component` | Dies stellt die aktuelle Komponente dar. Eine Komponente weist den Knotentyp `cq:Component` auf. |
+| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Ein Wert, der mit `.` beginnt, wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
+| `cq:isContainer` | `Boolean` | Dies zeigt an, ob es sich bei der Komponente um eine Containerkomponente handelt, die andere Komponenten wie ein Absatzsystem enthalten kann. |
+| `cq:dialog` | `nt:unstructured` | Dies ist die Definition des Bearbeitungsdialogs der Komponente. |
+| `cq:design_dialog` | `nt:unstructured` | Dies ist die Definition des Design-Dialogs der Komponente. |
+| `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente](#edit-behavior) definiert. |
+| `cq:htmlTag` | `nt:unstructured` | Dies gibt zusätzliche Tag-Attribute zurück, die zum umgebenden HTML-Tag hinzugefügt werden. Ermöglicht das Hinzufügen von Attributen zu den automatisch generierten div-Tags. |
 | `cq:noDecoration` | `Boolean` | Bei „true“ wird die Komponente nicht mit automatisch erstellten div- und CSS-Klassen gerendert. |
-| `cq:template` | `nt:unstructured` | Wenn dieser Knoten gefunden wird, wird er als Inhaltsvorlage verwendet, wenn die Komponente aus dem Komponentenbrowser hinzugefügt wird. |
+| `cq:template` | `nt:unstructured` | Wenn vorhanden, wird dieser Knoten als Inhaltsvorlage genutzt, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
 | `jcr:created` | `Date` | Dies ist das Erstellungsdatum der Komponente. |
 | `jcr:description` | `String` | Dies ist die Beschreibung der Komponente. |
 | `jcr:title` | `String` | Dies ist der Titel der Komponente. |
 | `sling:resourceSuperType` | `String` | Wenn dieser Wert festgelegt ist, erbt die Komponente von dieser Komponente. |
-| `component.html` | `nt:file` | Dies ist die HTML-Skriptdatei der Komponente. |
-| `cq:icon` | `String` | Dieser Wert verweist auf das [Symbol der Komponente](#component-icon) und wird im Komponentenbrowser angezeigt. |
+| `component.html` | `nt:file` | Dies ist die HTL-Skriptdatei der Komponente. |
+| `cq:icon` | `String` | Dieser Wert verweist auf das [Symbol der Komponente](#component-icon) und wird im Komponenten-Browser angezeigt. |
 
-Wenn wir die Komponente **Text** betrachten, sehen wir eine Reihe dieser Elemente:
+Wenn wir uns die **Textkomponente** ansehen, sehen wir eine Reihe dieser Elemente:
 
-![Textkomponentenstruktur](assets/components-text.png)
+![Struktur der Textkomponente](assets/components-text.png)
 
 Zu den wichtigen Eigenschaften gehören:
 
-* `jcr:title` - Dies ist der Titel der Komponente, die zur Identifizierung der Komponente im Komponenten-Browser verwendet wird.
-* `jcr:description` - Dies ist die Beschreibung der Komponente.
-* `sling:resourceSuperType` - Dies zeigt den Pfad der Vererbung an, wenn eine Komponente erweitert wird (durch Überschreiben einer Definition).
+* `jcr:title` – Dies ist der Titel der Komponente, der zur Identifizierung der Komponente im Komponenten-Browser verwendet wird.
+* `jcr:description` – Dies ist die Beschreibung der Komponente.
+* `sling:resourceSuperType` – Dies gibt den Pfad der Vererbung bei der Erweiterung einer Komponente an (durch Überschreiben einer Definition).
 
 Zu den wichtigen untergeordneten Knoten gehören:
 
-* `cq:editConfig` - Hiermit werden visuelle Aspekte der Komponente bei der Bearbeitung gesteuert.
-* `cq:dialog` - Hiermit wird der Dialog zum Bearbeiten des Inhalts dieser Komponente definiert.
-* `cq:design_dialog` - Hiermit werden die Designbearbeitungsoptionen für diese Komponente festgelegt.
+* `cq:editConfig` – Dies steuert visuelle Aspekte der Komponente beim Bearbeiten.
+* `cq:dialog` – Dies definiert den Dialog zum Bearbeiten des Inhalts dieser Komponente.
+* `cq:design_dialog` – Dies legt die Design-Bearbeitungsoptionen für diese Komponente fest.
 
 ### Dialogfelder {#dialogs}
 
-Dialoge sind ein Schlüsselelement Ihrer Komponente, da sie eine Schnittstelle für Autoren zur Konfiguration der Komponente auf einer Inhaltsseite und zur Eingabe für diese Komponente bieten. Weitere Informationen zur Interaktion von Inhaltserstellern mit Komponenten finden Sie in der [Authoring-Dokumentation](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Dialogfelder sind ein wichtiges Element einer Komponente: Sie stellen den Autoren eine Oberfläche für die Konfiguration der Komponente auf einer Inhaltsseite und für Eingaben für diese Komponente bereit. Weitere Informationen zur Interaktion von Inhaltsautoren mit Komponenten finden Sie in der [Authoring-Dokumentation](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 Je nach Komplexität der Komponente benötigen Sie eventuell eine oder mehrere Registerkarten.
 
-Dialoge für AEM Komponenten:
+Dialoge für AEM-Komponenten:
 
-* Sind `cq:dialog` Knoten des Typs `nt:unstructured`.
-* befinden sich unter ihren `cq:Component`-Knoten und neben ihren Komponentendefinitionen.
-* Definieren Sie das Dialogfeld zum Bearbeiten des Inhalts dieser Komponente.
-* werden mit Granite-UI-Komponenten definiert.
-* werden serverseitig (als Sling-Komponenten) basierend auf ihrer Inhaltsstruktur und der `sling:resourceType`-Eigenschaft gerendert.
-* Enthält eine Knotenstruktur, die die Felder im Dialogfeld beschreibt
-   * Diese Knoten sind `nt:unstructured` mit der erforderlichen `sling:resourceType`-Eigenschaft.
+* sind `cq:dialog`-Knoten vom Typ `nt:unstructured`,
+* befinden sich unter ihrem `cq:Component`-Knoten und neben ihrer Komponentendefinitionen,
+* definieren das Dialogfeld für die Bearbeitung von Inhalten dieser Komponente,
+* werden mit Komponenten der Granite-Benutzeroberfläche definiert,
+* werden Server-seitig (als Sling-Komponenten) basierend auf ihrer Inhaltsstruktur und der Eigenschaft `sling:resourceType` gerendert,
+* enthalten eine Knotenstruktur, die die Felder im Dialogfeld beschreibt.
+   * Diese Knoten sind `nt:unstructured` mit der erforderlichen Eigenschaft `sling:resourceType`.
 
 ![Dialogfelddefinition der Titelkomponente](assets/components-title-dialog.png)
 
@@ -220,46 +220,46 @@ In diesem Dialogfeld werden einzelne Felder definiert:
 
 ![Felder der Dialogdefinition der Titel-Komponente](assets/components-title-dialog-items.png)
 
-### Designdialogfelder {#design-dialogs}
+### Design-Dialogfelder {#design-dialogs}
 
-Designdialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten verwendet werden. Sie bieten jedoch die Oberfläche, über die Vorlagenautoren Designdetails für diese Komponente in einer Seitenvorlage konfigurieren und bereitstellen können. Seitenvorlagen werden dann von den Inhaltserstellern zum Erstellen von Inhaltsseiten verwendet. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
+Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
-[Beim Bearbeiten einer Seitenvorlage](/help/sites-cloud/authoring/features/templates.md) werden Designdialogfelder verwendet, die jedoch nicht für alle Komponenten benötigt werden. Beispielsweise verfügen die Komponenten **title** und **Image Components** über Designdialogfelder, die Komponente **Social Media Sharing** nicht.
+[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponenten** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** über keine verfügt.
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-and-granite}
 
-Die Benutzeroberfläche von Korallen und Granite definieren das Aussehen und Erscheinungsbild von AEM.
+Die Coral-Benutzeroberfläche und die Granite-Benutzeroberfläche definieren das Erscheinungsbild von AEM.
 
-* [Die Coral-](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) Benutzeroberfläche bietet eine einheitliche Benutzeroberfläche für alle Cloud-Lösungen.
-* [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) UIstellt Coral UI-Markup bereit, das in Sling-Komponenten eingeschlossen ist, um UI-Konsolen und -Dialoge zu erstellen.
+* Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen.
+* Die [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) bietet ein in Sling-Komponenten eingebettetes Coral-Benutzeroberflächen-Markup zum Erstellen von Konsolen und Dialogen für Benutzeroberflächen.
 
-Die Granite-Benutzeroberfläche bietet eine große Auswahl an grundlegenden Widgets, die zum Erstellen Ihres Dialoges auf der Authoring-Umgebung benötigt werden. Falls erforderlich, können Sie diese Auswahl erweitern und Ihr eigenes Widget erstellen.
+Die Granite-Benutzeroberfläche bietet einen großen Bereich der grundlegenden Widgets, die zum Erstellen Ihres Dialogfelds in der Authoring-Umgebung benötigt werden. Falls erforderlich, können Sie diese Auswahl erweitern und Ihr eigenes Widget erstellen.
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Dokumentattion zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-* [Struktur der AEM-UI](/help/implementing/developing/introduction/ui-structure.md)
+* [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [Struktur der AEM-Benutzeroberfläche](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Anpassen von Dialogfeldern {#customizing-dialog-fields}
 
 >[!TIP]
 >
->Informationen zum Anpassen von Dialogfeldern finden Sie unter [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>Weitere Informationen zum Anpassen von Dialogfeldern finden Sie in der [Sitzung zu AEM Gems](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
-Zum Erstellen eines neuen Widgets zur Verwendung in einem Komponentendialogfeld müssen Sie eine neue Granite-UI-Feldkomponente erstellen.
+Um ein neues Widget zur Verwendung in einem Komponentendialogfeld zu erstellen, müssen Sie eine neue Granite-Benutzeroberflächenfeldkomponente erstellen.
 
 Wenn Sie das Dialogfeld für einen einfachen Container für ein Formularelement halten, können Sie den Primärinhalt Ihres Dialogfeldinhalts als auch Formularfelder sehen. Um ein neues Formularfeld zu erstellen, müssen Sie einen Ressourcentyp erstellen. Dies entspricht dem Erstellen einer neuen Komponente. Um Ihnen bei dieser Aufgabe zu helfen, bietet die Granite-Benutzeroberfläche eine generische Feldkomponente, von der eine Vererbung möglich ist (mithilfe von `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Die Granite-Benutzeroberfläche bietet eine Reihe von Feldkomponenten, die für die Verwendung in Dialogen oder allgemein in [Formularen geeignet sind.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Genauer gesagt bietet die Granite-Benutzeroberfläche eine Reihe von Feldkomponenten, die für die Verwendung in Dialogfeldern, oder allgemeiner gesagt in [Formularen](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html), geeignet sind.
 
 Sobald Sie Ihren Ressourcentyp erstellt haben, können Sie Ihr Feld instanziieren, indem Sie in Ihrem Dialogfeld einen neuen Knoten hinzufügen, wobei die Eigenschaft `sling:resourceType` auf den Ressourcentyp verweist, den Sie gerade eingeführt haben.
 
 #### Zugriff auf Dialogfelder {#access-to-dialog-fields}
 
-Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulegen, wer Zugriff auf bestimmte Registerkarten/Felder in Ihrem Dialogfeld hat. beispielsweise:
+Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulegen, wer Zugriff auf bestimmte Registerkarten/Felder in Ihrem Dialogfeld hat. Beispielsweise:
 
 ```text
 + mybutton
@@ -271,50 +271,50 @@ Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulege
 
 ## Verwenden von Komponenten {#using-components}
 
-Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie verwenden zu können. Es zeigt, wie die Struktur der Komponente mit der Struktur des resultierenden Inhalts im Repository zusammenhängt.
+Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie verwenden zu können. Bei der Verwendung zeigt sich, wie sich die Struktur der Komponente auf die Struktur des resultierenden Inhalts im Repository bezieht.
 
-### Hinzufügen der Komponente zur Vorlage {#adding-your-component-to-the-template}
+### Hinzufügen einer Komponente zur Vorlage {#adding-your-component-to-the-template}
 
-Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Damit eine Komponente in einer Vorlage verwendet werden kann, müssen Sie sie in der Richtlinie des Layout-Containers der Vorlage aktivieren.
+Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
 
 Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
 ### Komponenten und die von ihnen erstellten Inhalte {#components-and-the-content-they-create}
 
-Wenn Sie eine Instanz der Komponente **Title** auf der Seite erstellen und konfigurieren: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
+Wir erstellen und konfigurieren eine Instanz der **Titelkomponente** auf der Seite: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
-![Titel bearbeiten, Dialogfeld](assets/components-title-dialog.png)
+![Bearbeitungsdialogfeld ](assets/components-title-dialog.png)
 
 Dann sehen wir die Struktur des Inhalts, der innerhalb des Repositorys erstellt wurde:
 
 ![Knotenstruktur der Titelkomponente](assets/components-title-content-nodes.png)
 
-Insbesondere wenn Sie sich den tatsächlichen Text einer **Title-Komponente** ansehen:
+Insbesondere, wenn Sie sich den tatsächlichen Text einer **Titelkomponente** ansehen:
 
-* Der Inhalt enthält eine `jcr:title`-Eigenschaft mit dem tatsächlichen Text des Titels, den der Autor eingegeben hat.
-* Es enthält auch einen `sling:resourceType` Verweis auf die Komponentendefinition.
+* Der Inhalt enthält eine `jcr:title`-Eigenschaft, die den tatsächlichen Text des vom Autor eingegebenen Titels enthält.
+* Er enthält auch eine `sling:resourceType`-Referenz auf die Komponentendefinition.
 
 Die definierten Eigenschaften sind von den einzelnen Definitionen abhängig. Zwar können sie komplexer als oben dargestellt sein, folgen aber dennoch denselben grundlegenden Prinzipien.
 
-## Komponentenhierarchie und Vererbung {#component-hierarchy-and-inheritance}
+## Komponentenhierarchie und Vererbung  {#component-hierarchy-and-inheritance}
 
-Komponenten in AEM unterliegen der **Ressourcentyp-Hierarchie**. Dies wird zum Erweitern von Komponenten mithilfe der Eigenschaft `sling:resourceSuperType` verwendet. Dadurch kann die Komponente von einer anderen Komponente geerbt werden.
+Komponenten in AEM unterliegen der **Ressourcentyphierarchie**. Diese wird verwendet, um Komponenten mit der `sling:resourceSuperType`-Eigenschaft zu erweitern. Dies ermöglicht es der Komponente, von einer anderen Komponente zu erben.
 
-Weitere Informationen finden Sie im Abschnitt [Komponenten wiederverwenden](#reusing-components).
+Weitere Informationen finden Sie im Abschnitt [Wiederverwenden von Komponenten](#reusing-components).
 
 ## Bearbeitungsverhalten {#edit-behavior}
 
-In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Dazu gehören Attribute wie für die Komponente verfügbare Aktionen, Eigenschaften des In.place-Editors und Listener für Ereignis in der Komponente.
+In diesem Abschnitt wird beschrieben, wie Sie das Bearbeitungsverhalten einer Komponente konfigurieren. Dies umfasst Attribute wie für die Komponente verfügbare Aktionen, Merkmale des Kontext-Editors und die Listener, die sich auf Ereignisse in der Komponente beziehen.
 
 Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen `cq:editConfig`-Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (des Typs `cq:Component`) hinzu sowie spezifische Eigenschaften und untergeordnete Knoten. Die folgenden Funktionen und untergeordneten Knoten sind verfügbar:
 
-* `cq:editConfig` Knoteneigenschaften
-* [`cq:editConfig` untergeordnete Knoten](#configuring-with-cq-editconfig-child-nodes):
-   * `cq:dropTargets` (Knotentyp  `nt:unstructured`): definiert eine Liste von Dropdown-Zielgruppen, die das Ablegen eines Assets der Inhaltssuche akzeptieren können (eine einzelne Dropdown-Zielgruppe ist zulässig).
-   * `cq:inplaceEditing` (Knotentyp  `cq:InplaceEditingConfig`): definiert eine ersetzende Bearbeitungskonfiguration für die Komponente
-   * `cq:listeners` (Knotentyp  `cq:EditListenersConfig`): definiert, was vor oder nach einer Aktion für die Komponente geschieht
+* `cq:editConfig`-Knoteneigenschaften
+* Untergeordnete [`cq:editConfig`-Knoten](#configuring-with-cq-editconfig-child-nodes):
+   * `cq:dropTargets` (Knotentyp `nt:unstructured`): Legt eine Liste von Ablagezielen fest, die eine Ablage von einem Asset aus dem Content Finder akzeptieren können (ein einzelnes Ablageziel ist zulässig)
+   * `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`): Legt eine Kontextbearbeitungsfunktion für die Komponente fest
+   * `cq:listeners` (Knotentyp `cq:EditListenersConfig`): Legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet
 
-Es gibt viele bestehende Konfigurationen in AEM. Mit dem Tool Abfrage in **CRXDE Lite** können Sie ganz einfach nach bestimmten Eigenschaften oder untergeordneten Knoten suchen.
+In AEM sind viele Konfigurationen vorhanden. Sie können mit dem Abfrage-Tool in **CRXDE Lite** einfach nach bestimmten Eigenschaften oder untergeordneten Knoten suchen.
 
 ### Komponentenplatzhalter {#component-placeholders}
 
@@ -351,27 +351,27 @@ Ein Beispiel für die Verwendung dieser Vorlage ist in den Hauptkomponenten, [wi
 
 ### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 
-#### Löschen von Assets in einem Dialogfeld - cq:dropTargets {#cq-droptargets}
+#### Ablegen von Assets in einem Dialogfeld – cq:dropTargets {#cq-droptargets}
 
-Der Knoten `cq:dropTargets` (Knotentyp `nt:unstructured`) definiert die Dropdown-Zielgruppe, die ein Ablegen eines aus der Inhaltssuche gezogenen Assets akzeptieren kann. Es ist ein Knoten des Typs `cq:DropTargetConfig`.
+Der Knoten `cq:dropTargets` (Knotentyp `nt:unstructured`) legt die Ablageziele fest, die eine Ablage von einem Asset aus dem Content Finder akzeptieren können. Er ist ein Knoten vom Typ `cq:DropTargetConfig`.
 
-Die untergeordnete Node des Typs `cq:DropTargetConfig` definiert eine Drop-Zielgruppe in der Komponente.
+Der untergeordnete Knoten vom Typ `cq:DropTargetConfig` definiert ein Ablageziel in der Komponente.
 
-### In-Place-Bearbeitung - cq:inplaceEditing {#cq-inplaceediting}
+### Bearbeitung im Kontext – cq:inplaceEditing {#cq-inplaceediting}
 
-Mit einem ersetzenden Editor können Benutzer Inhalte direkt im Inhaltsfluss bearbeiten, ohne dass ein Dialogfeld geöffnet werden muss. Beispielsweise verfügen die Standardkomponenten **Text** und **Titel** über einen Inp-Lace-Editor.
+Ein Editor für die Bearbeitung im Kontext ermöglicht es dem Benutzer, Inhalte direkt im Inhaltsfluss zu bearbeiten, ohne dass ein Dialogfeld geöffnet werden muss. Zum Beispiel haben die Standardkomponenten **Text** und **Titel** beide einen Editor für die Bearbeitung im Kontext.
 
-Ein ersetzender Editor ist nicht für jeden Komponententyp erforderlich/sinnvoll.
+Ein Editor für die Bearbeitung im Kontext ist nicht für jeden Komponententyp notwendig/sinnvoll.
 
-Der Knoten `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`) definiert eine ersetzende Bearbeitungskonfiguration für die Komponente. Er kann die folgenden Eigenschaften aufweisen:
+Der Knoten `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`) legt eine Kontextbearbeitungsfunktion für die Komponente fest. Er kann die folgenden Eigenschaften aufweisen:
 
 | Eigenschaftsname | Eigenschaftstyp | Eigenschaftswert |
 |---|---|---|
-| `active` | `Boolean` | `true` , um die ersetzende Bearbeitung der Komponente zu aktivieren. |
-| `configPath` | `String` | Pfad der Editorkonfiguration, der von einem Konfigurationsknoten angegeben werden kann |
-| `editorType` | `String` | Die verfügbaren Typen sind: `plaintext` für Nicht-HTML-Inhalte konvertiert `title` grafische Titel vor Beginn der Bearbeitung in einen Klartext und `text` verwendet den Rich-Text-Editor |
+| `active` | `Boolean` | `true`, um die Bearbeitung im Kontext zu aktivieren. |
+| `configPath` | `String` | Pfad der Editor-Konfiguration, der von einem Konfigurationsknoten angegeben werden kann. |
+| `editorType` | `String` | Die verfügbaren Typen sind: `plaintext` für Nicht-HTML-Inhalte, `title` wandelt grafische Titel in einen Klartext um, bevor die Bearbeitung beginnt, und `text` verwendet den Rich-Text-Editor. |
 
-Die folgende Konfiguration ermöglicht die Bearbeitung der Komponente im Inp-Space und definiert `plaintext` als Editortyp:
+Die folgende Konfiguration aktiviert die Bearbeitung der Komponente im Kontext und legt `plaintext` als Editor-Typ fest:
 
 ```text
     <cq:inplaceEditing
@@ -380,18 +380,18 @@ Die folgende Konfiguration ermöglicht die Bearbeitung der Komponente im Inp-Spa
         editorType="plaintext"/>
 ```
 
-### Verarbeiten von Field-Ereignissen - cq:listeners {#cq-listeners}
+### Handhabung von Feldereignissen – cq:listeners {#cq-listeners}
 
-Die Methode zum Umgang mit Ereignissen in Dialogfeldern erfolgt mit Listenern in einer benutzerdefinierten [Client-Bibliothek.](/help/implementing/developing/introduction/clientlibs.md)
+Die Methode zur Handhabung von Ereignissen in Dialogfeldern wird jetzt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) ausgeführt.
 
 Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 
 * Lassen Sie Ihr Feld mit einer bestimmten CSS-Klasse (dem Hook) markieren.
-* Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der auf diesem CSS-Klassennamen basiert (dies stellt sicher, dass Ihre benutzerdefinierte Logik nur auf Ihr Feld angewendet wird und keine Auswirkungen auf andere Felder desselben Typs hat).
+* Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der mit diesem CSS-Klassennamen verknüpft ist (dadurch wird sichergestellt, dass Ihre benutzerdefinierte Logik nur für Ihr Feld gilt und andere Felder desselben Typs nicht betroffen sind).
 
-Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. [Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html).
+Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html).
 
-Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) definiert, was vor oder nach einer Aktion für die Komponente geschieht. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
+Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
 
 | Eigenschaftsname | Eigenschaftswert |
 |---|---|
@@ -437,7 +437,7 @@ Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Kompone
 
 ### Feldüberprüfung {#field-validation}
 
-Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-UI-Widgets erfolgt mit der API `foundation-validation`. Weitere Informationen finden Sie in der Granite-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html).[`foundation-valdiation`
+Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutzeroberflächen-Widgets erfolgt mithilfe der `foundation-validation`-API. Weitere Informationen finden Sie in der [`foundation-valdiation` Granite-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html).
 
 ### Erkennen der Verfügbarkeit des Dialogfelds {#dialog-ready}
 
@@ -447,15 +447,15 @@ Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut gelade
 
 `dialog-ready` kann verwendet werden, um in JavaScript benutzerspezifischen Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnlichen Aufgaben durchführt.
 
-## Verhalten der Vorschau {#preview-behavior}
+## Vorschauverhalten {#preview-behavior}
 
-Der [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
+Der [WCM-Modus](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
 
 Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müssen so definiert werden, dass sie sich selbst aktualisieren und sich dann auf den Wert des Cookies verlassen.
 
-## Dokumentationskomponenten {#documenting-components}
+## Dokumentieren von Komponenten {#documenting-components}
 
-Als Entwickler benötigen Sie einen einfachen Zugriff auf die Komponentendokumentation, damit Sie die Komponenten schnell verstehen können:
+Als Entwickler möchten Sie einfachen Zugriff auf die Komponentendokumentation, damit Sie Folgendes der Komponente schnell verstehen können:
 
 * Beschreibung
 * Beabsichtigter Verwendungszweck
@@ -469,8 +469,8 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![README.md in der Komponentenstruktur](assets/components-documentation.png)
 
-Diese Markierung wird dann in der [Komponentenkonsole angezeigt.](/help/sites-cloud/authoring/features/components-console.md)
+Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) angezeigt.
 
-![README.md in der Komponentenkonsole sichtbar](assets/components-documentation-console.png)
+![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 
-Das unterstützte Markdown ist dasselbe wie bei [Inhaltsfragmenten.](/help/assets/content-fragments/content-fragments.md)
+Der unterstützte Markdown ist derselbe wie der für [Inhaltsfragmente.](/help/assets/content-fragments/content-fragments.md)
