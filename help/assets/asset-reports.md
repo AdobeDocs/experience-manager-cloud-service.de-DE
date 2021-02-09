@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -153,6 +153,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Fehlerbehebung für Informationen, Tipps und Einschränkungen {#best-practices-and-limitations}
+## Informationen zur Fehlerbehebung, Tipps und Einschränkungen {#best-practices-and-limitations}
 
-* Wenn der Bericht &quot;Festplattennutzung&quot;nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie dann den Bericht erneut.
+* Wenn der Bericht zur Speichernutzung nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
