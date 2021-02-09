@@ -10,9 +10,9 @@ ht-degree: 100%
 ---
 
 
-# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial {#getting-started-developing-aem-sites-wknd-tutorial}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Steigen Sie gerade in die Entwicklung mit Adobe Experience Manager as a Cloud Service ein? Benötigen Sie einen Auffrischungskurs zu den Best Practices? Dann sind Sie hier richtig!
 
@@ -22,15 +22,15 @@ In diesem mehrteiligen Tutorial lernen Entwickler, die gerade mit AEM beginnen, 
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[Das WKND-Entwickler-Tutorial ist hier verfügbar](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) und leitet Sie durch die Erstellung eines AEM-Projekts mithilfe der neuesten Technologien und Best Practices.
+[Das WKND-Entwickler-Tutorial ist hier verfügbar](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) und leitet Sie durch die Erstellung eines AEM-Projekts mithilfe der neuesten Technologien und Best Practices.
 
 ## Grundlegende Konzepte {#core-concepts}
 
 Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von AEM. Die Site wird mit folgenden Funktionen implementiert:
 
-* [Maven-AEM-Projektarchetyp](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
+* [Maven-AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/getting-started/getting-started.html)
 * [Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
-* [Bearbeitbare Vorlagen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Stilsystem](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [Bearbeitbare Vorlagen](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Stilsystem](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
