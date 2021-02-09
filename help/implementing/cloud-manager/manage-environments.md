@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 63%
+ht-degree: 81%
 
 ---
 
@@ -37,7 +37,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >[!NOTE]
    >Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt.  Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
 
-## Hinzufügen der Umgebung {#adding-environments}
+## Hinzufügen von Umgebungen {#adding-environments}
 
 1. Klicken Sie auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm **Umgebungen** zugegriffen werden.
    ![](assets/environments-tab.png)
@@ -64,19 +64,19 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
 
-## Anzeigen der Umgebung {#viewing-environment}
+## Anzeigen von Umgebungen {#viewing-environment}
 
-Die Karte **Umgebung** auf der Seite &quot;Überblick&quot;Liste bis zu drei Umgebung.
+Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebungen auf.
 
-1. Klicken Sie auf die Schaltfläche **Alle anzeigen**, um zur Zusammenfassungsseite **Umgebung** zu navigieren, um eine Tabelle mit einer vollständigen Liste der Umgebung Ansicht.
+1. Klicken oder tippen Sie auf die Schaltfläche **Alles anzeigen**, um zur Zusammenfassungsseite der **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste von Umgebungen anzuzeigen.
 
    ![](assets/environment-view-1.png)
 
-1. Auf der Seite **Umgebung** wird die Liste aller vorhandenen Umgebung angezeigt.
+1. Auf der Seite **Umgebungen** wird die Liste aller vorhandenen Umgebung angezeigt.
 
    ![](assets/environment-view-2.png)
 
-1. Wählen Sie eine der Umgebung aus der Liste aus, um die Details zur Umgebung Ansicht.
+1. Wählen Sie eine der Umgebung aus der Liste aus, um die Details zur Umgebung anzuzeigen.
 
    ![](assets/environment-view-3.png)
 
@@ -138,13 +138,13 @@ Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den 
 
 Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Entwicklerkonsole**.
 
-## Lokal anmelden {#login-locally}
+## Lokale Anmeldung {#login-locally}
 
-Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in **Umgebung** Karte, um sich lokal bei Adobe Experience Manager anzumelden.
+Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der **Umgebungskarte** aus, um sich lokal bei Adobe Experience Manager anzumelden.
 
 ![](assets/environ-login-locally.png)
 
-Zusätzlich können Sie sich lokal über die Zusammenfassungsseite **Umgebung** anmelden.
+Zusätzlich können Sie sich lokal über die Zusammenfassungsseite für die **Umgebungen** anmelden.
 
 ![](assets/environ-login-locally-2.png)
 
@@ -154,11 +154,11 @@ Navigieren Sie zur Detailseite **Umgebung** auf der Seite &quot;Umgebung - Zusam
 
 Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungsdienst ausgeführt werden:
 
-1. [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
 1. [Anzeigen und Aktualisieren eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -166,26 +166,26 @@ Navigieren Sie auf der Seite &quot;Umgebung - Zusammenfassung&quot;zur Detailsei
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Allow-List-Definition enthaltenen IP-Bereiche mit einem Autor- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben und angemeldet sein.
 
 >[!NOTE]
->Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf einen Umgebung-Service angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie für einen Umgebungs-Service übernommen werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden:
+Gehen Sie folgendermaßen vor, um eine IP-Zulassungsliste zu übernehmen:
 
 1. Navigieren Sie zur gewünschten Umgebung auf der Detailseite **Umgebung** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autor- oder Veröffentlichungsdienst auszuwählen, auf den Sie sie anwenden möchten.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autor- oder Publish-Service auszuwählen, für den Sie sie übernehmen möchten.
 1. Klicken Sie auf **Übernehmen** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Vorgang, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autor- oder Publisher-Dienst in einer Umgebung getrennt werden. Ein Benutzer, der sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befindet, muss angemeldet sein, um eine IP-Zulassungsliste aufheben zu können.
+Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Vorgang, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autor- oder Publisher-Dienst in einer Umgebung getrennt werden. Ein Benutzer mit der Rolle „Business Owner“ oder „Deployment Manager“ muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufzuheben.
 
 Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
 
 1. Navigieren Sie im Bildschirm &quot;Umgebung&quot;zur Detailseite **Umgebung** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
-1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste, die Sie aufheben möchten, aufgeführt ist.
-1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
+1. Identifizieren die Zeile, in der die Regel der IP-Zulassungsliste aufgeführt ist, deren Anwendung Sie aufheben möchten.
+1. Wählen Sie das Menü **...** ganz rechts in der Zeile aus.
 1. Wählen Sie die Option **Unapply** und bestätigen Sie Ihre Übermittlung.
 
 
