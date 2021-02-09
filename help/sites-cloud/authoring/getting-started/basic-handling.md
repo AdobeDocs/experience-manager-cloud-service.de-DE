@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,12 +52,12 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass      und das Standardfenster bei der Anmeldung in AEM
+* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass  und das Standardfenster bei der Anmeldung in AEM
 * **[Tools](#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster     {#navigation-panel}
+### Navigationsfenster  {#navigation-panel}
 
 Das Navigationsfenster:
 
@@ -73,7 +73,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Sites | Mit der Konsole „Sites“ können Sie [Websites erstellen, anzeigen und verwalten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md), die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsole können Sie Seiten erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen sowie Workflows starten. |
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
 | Assets | In der Konsole „Assets“ können Sie digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien, importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird.<!--add some kind of assets link--> |
-| Personalisierung  | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
+| Personalisierung | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 
 ## Tools-Bereich {#tools-panel}
 
@@ -117,11 +117,11 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![Schaltfläche „Benutzereigenschaften“](/help/sites-cloud/authoring/assets/user-properties.png)
 
-* [Schienenauswahl](#rail-selector) 
+* [Schienenauswahl](#rail-selector)
 
    ![Schaltfläche „Schienenauswahl“](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
    ![Beispiel für Schienenauswahl](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
@@ -227,7 +227,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen      {#quick-actions}
+## Schnellaktionen   {#quick-actions}
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -247,9 +247,9 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 
 >[!NOTE]
 >
->Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
+>Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen      {#selecting-resources}
+### Auswählen von Ressourcen   {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -261,7 +261,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 #### Alle auswählen {#select-all}
 
-Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.  
+Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.
 
 * In der **Kartenansicht** sind alle Karten ausgewählt.
 * In der **Listenansicht** sind alle Elemente in der Liste ausgewählt.
@@ -346,7 +346,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 ![Listenansicht](/help/sites-cloud/authoring/assets/list-view.png)
 
 * In der Listenansicht werden Informationen für jede Ressource auf der aktuellen Ebene aufgelistet.
-* Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](#the-header) wieder nach oben navigieren. 
+* Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](#the-header) wieder nach oben navigieren.
 * Um alle Elemente in der Liste auszuwählen, verwenden Sie das Kontrollkästchen links oben in der Liste.
 
    ![Gesamte Listenansicht auswählen](/help/sites-cloud/authoring/assets/list-view-select-all.png)
@@ -366,7 +366,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
+   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
    * **Seitenanalyse**
    * **Individuelle Besucher**
    * **Zeit auf Seite**
@@ -392,7 +392,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![Schienenauswahl erweitert](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-So können Sie z. B. in **Sites** nur Inhalt (Standard), die Inhaltsstruktur, die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+So können Sie z. B. in **Sites** nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -414,13 +414,13 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 >
 >Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
-### Timeline {#timeline}
+### Zeitleiste {#timeline}
 
-Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte über die Schienenauswahl:
+Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Zeitleisten-Spalte über die Schienenauswahl:
 
-![Timeline-Struktur](/help/sites-cloud/authoring/assets/timeline.png)
+![Zeitleisten-Struktur](/help/sites-cloud/authoring/assets/timeline.png)
 
-Die Timeline-Spalte bietet folgende Möglichkeiten:
+Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
 
 * Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element
 
@@ -437,7 +437,7 @@ Die Timeline-Spalte bietet folgende Möglichkeiten:
 
 * Hinzufügen/Anzeigen von Kommentaren zum gewählten Element Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
 
-* Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole 
+* Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole
 
    * [eine Version speichern](/help/sites-cloud/authoring/features/page-versions.md)
    * [einen Workflow starten](/help/sites-cloud/authoring/workflows/applying.md)
