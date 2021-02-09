@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
 source-wordcount: '2156'
-ht-degree: 26%
+ht-degree: 55%
 
 ---
 
@@ -16,9 +16,9 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 So verwenden Sie Inhaltsfragmentmodelle:
 
-1. [Funktionalität des Inhaltsfragmentmodells für Ihre Instanz aktivieren](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [Erstellen](#creating-a-content-fragment-model) und  [konfigurieren](#defining-your-content-fragment-model) Sie Ihre Inhaltsfragmentmodelle
-1. [Inhaltsfragmentmodelle ](#enabling-disabling-a-content-fragment-model) zur Verwendung beim Erstellen von Inhaltsfragmenten zur Verwendung beim Erstellen von Inhaltsfragmenten aktivieren
+1. [Aktivieren Sie die Funktion für Inhaltsfragmentmodelle für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Erstellen](#creating-a-content-fragment-model) und [konfigurieren](#defining-your-content-fragment-model) Sie Ihre Inhaltsfragmentmodelle.
+1. [Aktivieren Sie Ihre Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zur Verwendung bei der Erstellung von Inhaltsfragmenten.
 1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-](#allowing-content-fragment-models-assets-folder) Ordnern zu, indem Sie  **Richtlinien** konfigurieren.
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
@@ -31,15 +31,15 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **Modelltitel** an. Sie können auch **Tags**, eine **Beschreibung** hinzufügen und **Modell** aktivieren, um [das Modell](#enabling-disabling-a-content-fragment-model) bei Bedarf zu aktivieren.
+1. Geben Sie den **Modell-Titel** an. Sie können auch **Tags**, eine **Beschreibung** hinzufügen und **Modell** aktivieren, um [das Modell](#enabling-disabling-a-content-fragment-model) bei Bedarf zu aktivieren.
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
 1. Speichern Sie das leere Modell über **Erstellen**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **Öffnen** direkt bearbeiten oder über **Fertig** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells   {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells  {#defining-your-content-fragment-model}
 
-Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragmente effektiv mithilfe einer Auswahl von **[Datentypen](#data-types)**. Mithilfe des Modelleditors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
+Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inhaltsfragmente unter Verwendung unterschiedlicher **[Datentypen](#data-types)**. Mithilfe des Modell-Editors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Anwendungssymbolleiste aus.
+1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
 
    Wenn das Modell geöffnet ist, finden Sie Folgendes im Editor:
 
@@ -83,7 +83,7 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
    ![Entfernen](assets/cfm-models-06.png)
 
-1. hinzufügen Sie alle erforderlichen Felder und definieren Sie die entsprechenden Eigenschaften nach Bedarf. Beispiel:
+1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Beispiel:
 
    ![Speichern](assets/cfm-models-07.png)
 
@@ -91,24 +91,24 @@ Das Inhaltsfragmentmodell definiert die Struktur der resultierenden Inhaltsfragm
 
 ## Datentypen {#data-types}
 
-Eine Auswahl an Datentypen steht zur Definition Ihres Modells zur Verfügung:
+Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
 * **Einzeilentext**
-   * hinzufügen eines oder mehrere Felder einer einzelnen Textzeile; die maximale Länge kann definiert werden
+   * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
 * **Mehrzeilentext**
-   * Ein Textbereich, bei dem es sich um Rich Text, Nur-Text oder Markierungen handeln kann
+   * Ein Textbereich, der den Modus „Rich-Text“, „Nur-Text“ oder „Markdown“ aufweisen kann.
 * **Zahl**
-   * hinzufügen eines oder mehrere numerische Felder
+   * Fügen Sie ein oder mehrere numerische Felder hinzu.
 * **Boolesch**
-   * hinzufügen eines booleschen Kontrollkästchens
+   * Fügen Sie ein boolesches Kontrollkästchen hinzu.
 * **Datum und Uhrzeit**
-   * Datum und/oder Uhrzeit Hinzufügen
+   * Fügen Sie ein Datum und/oder eine Uhrzeit hinzu.
 * **Aufzählung**
-   * hinzufügen einer Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern
+   * Fügen Sie eine Reihe von Kontrollkästchen, Optionsfeldern oder Dropdown-Feldern hinzu.
 * **Tags**
-   * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Bereichen von Tags
+   * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
-   * Verweise auf andere Inhalte jeder Art; kann für [Erstellung verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden
+   * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
 * **Fragmentreferenz**
    * Verweise auf andere Inhaltsfragmente; kann für [Erstellung verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren Folgendes zulassen:
@@ -122,17 +122,17 @@ Eine Auswahl an Datentypen steht zur Definition Ihres Modells zur Verfügung:
 
 ## Eigenschaften {#properties}
 
-Viele Eigenschaften sind selbsterklärend. Für bestimmte Eigenschaften sind folgende weitere Details verfügbar:
+Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Informationen zu bestimmten Eigenschaften:
 
-* **Rendern**
-alsDie verschiedenen Optionen zum Realisieren/Rendern des Felds in einem Fragment. Auf diese Weise können Sie häufig festlegen, ob dem Autor eine einzelne Instanz des Felds angezeigt wird oder ob mehrere Instanzen erstellt werden dürfen.
+* **Rendern als**
+Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
 
-* **Feldbeschriftung**
-Eingeben eines 
-**Feldbezeichnungen** generieren automatisch einen  **Eigenschaftsnamen**, der bei Bedarf manuell aktualisiert werden kann.
+* **Feldbezeichnung**
+Durch die Eingabe einer 
+**Feldbezeichnungen** wird automatisch ein **Eigenschaftsnamen** generiert, der bei Bedarf manuell aktualisiert werden kann.
 
-* **Die**
-ValidationBasic-Validierung steht für Mechanismen wie die  **** Requiredproperty zur Verfügung. Einige Datentypen verfügen über zusätzliche Überprüfungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
+* **Validierung**
+Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
 
 * Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
 
@@ -167,10 +167,10 @@ TranslatableKontrollkästchen &quot;Translatable&quot;in einem Feld im CF-Modell
 
 ## Validierung {#validation}
 
-Verschiedene Datentypen bieten jetzt die Möglichkeit, Prüfanforderungen für den Zeitpunkt zu definieren, an dem Inhalt in das resultierende Fragment eingegeben wird:
+Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen für den Zeitpunkt zu definieren, an dem Inhalt in das resultierende Fragment eingefügt wird:
 
 * **Einzeilentext**
-   * Vergleichen Sie mit einem vordefinierten Regex.
+   * Führen Sie einen Vergleich mit einem vordefinierten Regex durch.
 * **Zahl**
    * Suchen Sie nach bestimmten Werten.
 * **Inhaltsreferenz**
@@ -277,46 +277,46 @@ Gibt einen Stammpfad für alle referenzierten Fragmente an.
 Es gibt einen Mechanismus zum Wiederholungsschutz. Er untersagt dem Benutzer, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
 Es gibt auch einen Wiederholungsschutz für Fragmentverweise in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die sich gegenseitig referenzieren, wird null zurückgegeben.
 
-## Aktivieren oder Deaktivieren eines Inhaltsfragmentmodells {#enabling-disabling-a-content-fragment-model}
+## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
-Zur vollständigen Kontrolle über die Verwendung Ihrer Inhaltsfragmentmodelle haben sie einen Status, den Sie festlegen können.
+Zur vollständigen Kontrolle über die Verwendung Ihrer Inhaltsfragmentmodelle können Sie deren Status festlegen.
 
 ### Aktivieren eines Inhaltsfragmentmodells {#enabling-a-content-fragment-model}
 
-Nachdem ein Modell erstellt wurde, muss es aktiviert werden, damit es:
+Nachdem ein Modell erstellt wurde, muss es aus folgenden Gründen aktiviert werden:
 
-* Ist zur Auswahl verfügbar, wenn ein neues Inhaltsfragment erstellt wird.
-* Kann in einem Inhaltsfragmentmodell referenziert werden.
-* ist für GraphQL verfügbar; damit das Schema generiert wird.
+* Damit es zur Auswahl steht, wenn ein neues Inhaltsfragment erstellt wird.
+* Damit es in einem Inhaltsfragmentmodell referenziert werden kann.
+* Damit es für GraphQL verfügbar ist, sodass das Schema generiert wird.
 
-So aktivieren Sie ein Modell, das entweder als
+So aktivieren Sie ein Modell, das folgendermaßen gekennzeichnet ist:
 
-* **Entwurf** : mew (nie aktiviert).
-* **Deaktiviert** : speziell deaktiviert wurde.
+* **Entwurf**: neu (noch nie aktiviert).
+* **Deaktiviert**: wurde eigens deaktiviert.
 
-Sie verwenden die Option **Aktivieren** aus einem der folgenden Schritte:
+Sie verwenden die Option **Aktivieren** aus einem der folgenden Bereiche:
 
-* Die obere Symbolleiste, wenn das gewünschte Modell ausgewählt ist.
-* Die entsprechende Schnellaktion (Bewegen Sie den Mauszeiger über das gewünschte Modell).
+* Die obere Symbolleiste, wenn das erforderliche Modell ausgewählt ist.
+* Die entsprechende Schnellaktion (bewegen Sie den Mauszeiger über das entsprechende Modell).
 
-![Entwurf oder deaktiviertes Modell aktivieren](assets/cfm-status-enable.png)
+![Aktivieren eines Entwurfs oder deaktivierten Modells](assets/cfm-status-enable.png)
 
 ### Deaktivieren eines Inhaltsfragmentmodells {#disabling-a-content-fragment-model}
 
-Ein Modell kann auch deaktiviert werden, sodass:
+Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
 
-* Das Modell ist nicht mehr als Grundlage für die Erstellung von Inhaltsfragmenten verfügbar.**
-* However:
+* Das Modell ist nicht mehr als Grundlage für die Erstellung *neuer* Inhaltsfragmente verfügbar.
+* Beachten Sie jedoch Folgendes:
    * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um eine Beeinträchtigung der JSON-API zu vermeiden).
    * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
-* Das Modell kann nicht mehr referenziert werden, vorhandene Referenzen bleiben jedoch unberührt und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
+* Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
-Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** entweder:
+Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwenden Sie die Option **Deaktivieren** aus einem der folgenden Bereiche:
 
-* Die obere Symbolleiste, wenn das gewünschte Modell ausgewählt ist.
-* Die entsprechende Schnellaktion (Bewegen Sie den Mauszeiger über das gewünschte Modell).
+* Die obere Symbolleiste, wenn das erforderliche Modell ausgewählt ist.
+* Die entsprechende Schnellaktion (bewegen Sie den Mauszeiger über das entsprechende Modell).
 
-![Ein aktiviertes Modell deaktivieren](assets/cfm-status-disable.png)
+![Deaktivieren eines aktivierten Modells](assets/cfm-status-disable.png)
 
 ## Zulassen von Inhaltsfragmentmodellen im Asset-Ordner {#allowing-content-fragment-models-assets-folder}
 
@@ -362,12 +362,12 @@ So löschen Sie ein Inhaltsfragmentmodell:
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Anwendungssymbolleiste aus.
+1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Symbolleiste aus.
 
    >[!NOTE]
    Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells    {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
@@ -376,8 +376,8 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell und anschließen die Option **Löschen** aus der Anwendungssymbolleiste aus.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
    >[!NOTE]
    Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
@@ -391,5 +391,5 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell aus, gefolgt von **Veröffentlichung rückgängig machen** aus der Symbolleiste.
-Der veröffentlichte Status wird in der Konsole angezeigt.
+1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung rückgängig machen** aus der Symbolleiste aus.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
