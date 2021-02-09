@@ -2,10 +2,10 @@
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 100%
+source-wordcount: '2915'
+ht-degree: 99%
 
 ---
 
@@ -52,6 +52,7 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 >
 >* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
+
 >
 
 
@@ -188,9 +189,9 @@ So erstellen Sie ein Gebiet als Live Copy:
 
 1. Wählen Sie im Dropdown-Menü **Rollout-Konfigurationen** die entsprechende Konfiguration aus.
 
-   Beschreibungen der verschiedenen Optionen finden Sie unter „Installierte Rollout-Konfigurationen“. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Beschreibungen der verschiedenen Optionen finden Sie unter [Installierte Rollout-Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations).
 
-   Weitere Informationen zu Live Copys finden Sie unter „Erstellen und Synchronisieren von Live Copys“. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Weitere Informationen zu Live Copys finden Sie unter [Erstellen und Synchronisieren von Live Copys](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html).
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >
 >* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
+
 >
 
 
