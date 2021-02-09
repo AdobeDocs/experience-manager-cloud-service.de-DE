@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
    </LocationMatch>
    ```
 
-   Gehen Sie beim Festlegen von Headern für globale Cachesteuerelemente oder solchen, die einem breiten Regex entsprechen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die Sie möglicherweise privat halten möchten. Erwägen Sie, mehrere Richtlinien zu verwenden, um sicherzustellen, dass die Regeln in einer feinen Weise angewendet werden. AEM als Cloud Service entfernt den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was er als nicht erreichbar erkennt, wie in der Dispatcher-Dokumentation beschrieben. Damit AEM immer die Zwischenspeicherung anwenden, können Sie die Option &quot;immer&quot;wie folgt hinzufügen:
+   Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, das Caching immer anzuwenden, können Sie folgendermaßen die Option „immer“ hinzufügen:
 
    ```
    <LocationMatch "\.(html)$">
@@ -56,7 +56,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
    { /glob "*" /type "allow" }
    ```
 
-* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie den Cache-Control-Header auf *private*. Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Ordner mit dem Namen **myfolder** zwischengespeichert werden:
+* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf *privat*. Folgendes würde beispielsweise verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **myfolder** zwischengespeichert werden:
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -65,7 +65,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
    ```
 
    >[!NOTE]
-   >Die anderen Methoden, einschließlich des [dispatcher-ttl AEM ACS Commons-Projekts](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), setzen Werte nicht erfolgreich außer Kraft.
+   >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
@@ -84,7 +84,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
       </LocationMatch>
    ```
 
-   Sehen Sie sich die oben stehende Diskussion im Abschnitt html/text an, um Vorsicht zu walten und nicht zu weit zwischenspeichern. Außerdem erfahren Sie, wie Sie AEM dazu zwingen, immer die Zwischenspeicherung mit der Option &quot;Immer&quot;anzuwenden.
+   Lesen Sie die Erörterungen im Abschnitt „HTML/Text“, um darauf zu achten, dass nicht zu viel zwischengespeichert wird, und auch, wie Sie AEM mit der Option „immer“ dazu zwingen, das Caching immer anzuwenden.
 
    Es muss sichergestellt werden, dass eine Datei unter `src/conf.dispatcher.d/`cache die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
 
@@ -96,7 +96,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
    Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht Teil der Filter der LocationMatch-Anweisung sind.
 
    >[!NOTE]
-   >Die anderen Methoden, einschließlich des [dispatcher-ttl AEM ACS Commons-Projekts](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), setzen Werte nicht erfolgreich außer Kraft.
+   >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
 ### Andere Inhaltsdateitypen im Knotenspeicher {#other-content}
 
@@ -124,7 +124,7 @@ Vor AEM as a Cloud Service gab es zwei Möglichkeiten, den Dispatcher-Cache zu i
 2. Direkter Aufruf der `invalidate.cache`-API (z. B. `POST /dispatcher/invalidate.cache`)
 
 Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Dienstebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/page-invalidate.html) für AEM as a Cloud Service nicht mehr gültig.
-Stattdessen sollte der Replikations-Flush-Agent verwendet werden. Dies kann über die Replikations-API durchgeführt werden. Die Replikations-API-Dokumentation ist [hier](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/de/experience-manager/using/aem64_replication_api.html) und insbesondere im `CustomStep`-Beispiel, bei dem eine Replikationsaktion des Typs ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Publish-Dienst, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
+Stattdessen sollte der Replikations-Flush-Agent verwendet werden. Dies kann über die Replikations-API durchgeführt werden. Die Replikations-API-Dokumentation ist [hier](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/de/experience-manager/using/aem64_replication_api.html) und insbesondere im `CustomStep`-Beispiel, bei dem eine Replikationsaktion des Typs ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Publish-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
 
 Das folgende Diagramm veranschaulicht dies.
 
