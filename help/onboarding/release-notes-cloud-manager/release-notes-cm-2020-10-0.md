@@ -1,37 +1,37 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
-description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.10.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.10.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.10.0 beschrieben.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.10.0 ist der 01. Oktober 2020.
+Die Version 2020.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 1. Oktober 2020 veröffentlicht.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Neue Funktionen {#what-is-new}
 
-* Die Seite &quot;Umgebung&quot;wurde neu gestaltet.
+* Die Seite „Umgebungen“ wurde neu gestaltet.
 
 * Im Ruhezustand befindliche Umgebungen verfügen jetzt über einen separaten Status.
 
-* Der Cloud Manager Build Container unterstützt jetzt das Kompilieren von Projekten mit Java 8 oder Java 11. Java 11 wird vom Maven Toolchain-System unterstützt.
+* Der Cloud Manager-Build-Container unterstützt jetzt die Kompilierung von Projekten mit Java 8 und Java 11. Die Unterstützung für Java 11 wird durch das Maven Toolchains-System bereitgestellt.
 
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
-* Die Umgebung auf der Übersichtsseite wird jetzt bis zu drei Umgebung Liste. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite der Umgebung zu navigieren und eine Tabelle mit einer vollständigen Liste von Umgebung Ansicht.
-Weitere Informationen finden Sie unter [Umgebung anzeigen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
+* Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
+Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie unter [Umgebung anzeigen](/help/implementing/cl
 
 * Die Verknüpfung zur Developer Console direkt aus Cloud Manager zeigte die Option zum Versetzen der Umgebung eines Sandbox-Programms in den Ruhezustand und zum Aufheben des Ruhezustands nicht an.
 
-* Die Schaltflächen &quot;Abbrechen&quot;und &quot;Speichern&quot;auf der Seite &quot;Bearbeiten in der Nicht-Produktionsumgebung&quot;waren nicht immer sichtbar.
+* Die Schaltflächen „Abbrechen“ und „Speichern“ auf der Seite „Bearbeiten“ für produktionsfremde Pipelines waren nicht immer sichtbar.
 
 * Bestimmte Fehler im Code-Qualitätsprozess konnten dazu führen, dass die Protokolldatei nicht korrekt erzeugt wurde.
 
