@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,13 +51,13 @@ Sandbox-Programme werden beim Erstellen des Programms automatisch an eine Entwic
 
 Der Satz aus Produktions- und Staging-Umgebung kann dem Sandbox-Programm manuell hinzugefügt werden, sobald der Anwender bereit ist, eine Produktions-Pipeline einzurichten.
 
-Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md).
+Weitere Informationen zum manuellen Erstellen einer Umgebung finden Sie unter [Hinzufügen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
 ### Löschen von Sandbox-Umgebungen {#deleting-sandbox-environments}
 
 Anwender mit den erforderlichen Berechtigungen können eine Entwicklungs- oder Produktions-/Staging-Umgebung bzw. entsprechende Sätze löschen.
 
-Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Umgebung löschen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment).
+Weitere Informationen zum Löschen einer Umgebung finden Sie unter [Löschen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#deleting-environment).
 
 
 ## Ruhezustand und Reaktivieren von Sandbox-Umgebungen {#hibernating-introduction}
@@ -73,7 +73,7 @@ Der Ruhezustand kann entweder automatisch oder manuell aktiviert werden. Es kann
 
 Der Ruhezustand wird wie folgt kategorisiert:
 
-* **Automatisch:** Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt, d. h. weder der Erstellungs- noch der Veröffentlichungsdienst erhalten Anfragen.
+* **Automatisch:** Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt, d. h. weder der Erstellungs- noch der Veröffentlichungs-Service erhalten Anfragen.
 
 * **Manuell**: Als Anwender können Sie eine Sandbox-Programmumgebung manuell löschen; dies ist jedoch nicht erforderlich, da nach einer bestimmten Inaktivitätsdauer (acht Stunden) automatisch der Ruhezustand eintritt.
 
@@ -125,7 +125,7 @@ Unter [Zugreifen auf die Developer Console](/help/implementing/cloud-manager/man
    >Wenn Sie die **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie keine Option, um den Ruhezustand einer Sandbox-Programmumgebung zu deaktivieren. Fügen Sie zur Problemumgehung in der Developer Console das folgende Muster am Ende der URL `#release-cm-p1234-e5678 where 1234` hinzu: 1234 ist Ihre *Programm-ID* und 5678 Ihre *Umgebungs-ID*.
 
    >[!NOTE]
-   >Alternativ können Sie zur **Developer Console** navigieren, um den Ruhezustand zu deaktivieren, indem Sie auf den Erstellungs- oder Veröffentlichungsdienst einer bereits im Ruhestand befindlichen Umgebung zugreifen. In dem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie unten im Abschnitt „Zugreifen auf eine im Ruhezustand befindliche Umgebung“.
+   >Alternativ können Sie zur **Developer Console** navigieren, um den Ruhezustand zu deaktivieren, indem Sie auf den Erstellungs- oder Veröffentlichungs-Service einer bereits im Ruhestand befindlichen Umgebung zugreifen. In dem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie unten im Abschnitt „Zugreifen auf eine im Ruhezustand befindliche Umgebung“.
 
    >[!IMPORTANT]
    >Zugriff auf die Developer Console wird über die **Cloud Manager – Entwicklerrolle** in der **Admin Console** definiert. Ein Anwender mit den Berechtigungen der Entwicklerrolle kann den Ruhezustand einer Sandbox-Programmumgebung deaktivieren.
