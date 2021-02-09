@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
 source-wordcount: '1593'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -16,10 +16,10 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 
 >[!NOTE]
 >
->Inhaltsfragmente können verwendet werden:
+>Inhaltsfragmente können in folgenden Fällen verwendet werden:
 >
->* beim Erstellen von Seiten; Siehe [Seitenverfassen mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
->* für [Versand ohne Kopfzeileninhalt mit Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
 ## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
@@ -101,7 +101,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Veröffentlichung verwalten**
 * **Tags verwalten**
 * **Zu Sammlung**
-* **Kopieren** (und  **Einfügen**)
+* **Kopieren** (und **einfügen**)
 * **Verschieben**
 * **Löschen**
 
@@ -124,7 +124,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 1. Navigieren Sie in der Konsole **Assets** zum Speicherort des gewünschten Inhaltsfragments.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
-   * Klicken/tippen Sie auf das Fragment oder den Fragmentlink (abhängig von der Konsolenansicht).
+   * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
    * Wählen Sie das Fragment und anschließend in der Symbolleiste die Option **Bearbeiten** aus.
 
    Der Fragmenteditor wird geöffnet:
