@@ -1,41 +1,41 @@
 ---
-title: 'DNS-Einstellungen konfigurieren '
-description: DNS-Einstellungen konfigurieren
+title: 'Konfigurieren von DNS-Einstellungen '
+description: Konfigurieren von DNS-Einstellungen
 translation-type: tm+mt
 source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren von DNS-Einstellungen {#configure-dns}
 
-Nachdem der benutzerdefinierte Domänenname erfolgreich überprüft und bereitgestellt wurde, können Sie die DNS-Datensätze für Ihren benutzerdefinierten Domänennamen mit Ihrem DNS-Anbieter aktualisieren. Dadurch kann Ihre Site Besuchern dienen. Diese Aktivität wird daher in der Regel vor Go-Live durchgeführt.
+Nachdem der benutzerdefinierte Domain-Name erfolgreich überprüft und bereitgestellt wurde, können Sie die DNS-Datensätze für Ihren benutzerdefinierten Domain-Namen mit Ihrem DNS-Anbieter aktualisieren. Dies ermöglicht es Ihrer Site, Besuchern Inhalte bereitzustellen. Diese Aktivität wird daher in der Regel vor einem Go-Live durchgeführt.
 
 >[!NOTE]
->Sie oder die entsprechende Person in Ihrer Organisation müssen sich bei Ihrem DNS-Provider (der Firma, von der Sie die Domäne gekauft haben) anmelden oder sich mit ihm in Verbindung setzen können und die DNS-Einstellungen aktualisieren können.
+>Sie bzw. entsprechende Personen in Ihrem Unternehmen müssen sich bei Ihrem DNS-Anbieter (der Firma, von der Sie die Domain erworben haben) anmelden oder sich mit ihm in Verbindung setzen und die DNS-Einstellungen aktualisieren können.
 
-Dazu müssen Sie festlegen, ob Sie Ihre DNS-Einstellungen auf einen `CNAME`- oder Apex-Datensatz konfigurieren müssen, der Ihren benutzerdefinierten Domänennamen auf den Domänennamen von Cloud Manager verweist. Ein `CNAME`- oder ein Datensatz, sobald er bereitgestellt ist, leitet den gesamten Internetverkehr für die Domäne an den Punkt, an den er verweist. Wenn dieser Ort nicht für den Verkehr vorgesehen ist, wird es zu einem Ausfall kommen. Wenn der Inhalt nicht getestet wurde, kann es zu Fehlern im Inhalt kommen. Deshalb erfolgt dieser Schritt immer nach Abschluss des Tests und der Kunde ist bereit für Go-Live.
+Dazu müssen Sie ermitteln, ob Sie Ihre DNS-Einstellungen für einen `CNAME`- oder Apex-Datensatz konfigurieren müssen, der Ihren benutzerdefinierten Domain-Namen auf den Domain-Namen von Cloud Manager verweist. Ein `CNAME`- oder Apex-Datensatz leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Deshalb erfolgt dieser Schritt immer nach Abschluss der Tests. Der Kunde ist dann bereit für den Go-Live.
 
-## CNAME-Eintrag {#cname-record}
+## CNAME-Datensatz {#cname-record}
 
-Die folgenden Abschnitte helfen Ihnen bei der Bestimmung, welcher Datensatz für Ihre DNS-Konfiguration geeignet ist.
+Die folgenden Abschnitte helfen Ihnen dabei, zu ermitteln, welcher Datensatz für Ihre DNS-Konfiguration geeignet ist.
 
-Ein kanonischer Name oder `CNAME`-Datensatz ist ein DNS-Datensatz, der einen Aliasnamen einem wahren oder kanonischen Domänennamen zuordnet. CNAME-Einträge werden normalerweise dazu verwendet, eine Subdomäne wie `www.example.com` der Domäne zuzuordnen, in der der Inhalt dieser Subdomäne gehostet wird.
+Ein kanonischer Name oder `CNAME`-Datensatz ist ein DNS-Datensatz, der einen Aliasnamen einem wahren oder kanonischen Domain-Namen zuordnet. CNAME-Datensätze werden normalerweise dazu verwendet, eine Unter-Domain wie `www.example.com` der Domain zuzuordnen, in der der Inhalt dieser Unter-Domain gehostet wird.
 
-Melden Sie sich bei Ihrer Domain-Registrierungsstelle an und erstellen Sie einen CNAME-Eintrag, um Ihren benutzerdefinierten Domain-Namen wie unten gezeigt auf das Ziel zu verweisen:
+Melden Sie sich bei Ihrer Domain-Registrierungsstelle an und erstellen Sie einen CNAME-Datensatz, um dafür zu sorgen, dass Ihr benutzerdefinierter Domain-Namen auf das Ziel verweist, wie nachfolgend gezeigt:
 
-| CNAME | Benutzerdefinierter Domänenname verweist auf die Zielgruppe |
+| CNAME | benutzerdefinierter Domain-Name, der auf das Ziel verweist |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
 
-## APEX Record {#apex-record}
+## APEX-Datensatz {#apex-record}
 
-Eine ex-Domäne ist eine benutzerdefinierte Domäne, die keine Subdomäne enthält, z. B. example.com. Eine ex-Domäne wird mit einem `A`-, `ALIAS`- oder `ANAME`-Datensatz über Ihren DNS-Provider konfiguriert. Die Apex-Domänen müssen auf bestimmte IP-Adressen verweisen.
+Eine Apex-Domain ist eine benutzerdefinierte Domain, die keine Unter-Domain enthält, z. B. „example.com“. Eine Apex-Domain wird mit einem `A`-, `ALIAS`- oder `ANAME`-Datensatz über Ihren DNS-Anbieter konfiguriert. Die Apex-Domains müssen auf bestimmte IP-Adressen verweisen.
 
-hinzufügen alle folgenden A-Datensätze über Ihren Domänenanbieter an die DNS-Einstellungen Ihrer Domäne:
+Fügen Sie alle der folgenden Apex-Datensätze über Ihren Domain-Anbieter zu Ihren DNS-Einstellungen Ihrer Domain hinzu:
 
 * `A RECORD`
 
