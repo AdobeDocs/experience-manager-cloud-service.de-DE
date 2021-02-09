@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang {#aem-and-the-web-accessibility-guidelines}
 
 Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Die Web-Zugänglichkeit mit Adobe Experience Manager (AEM) as a Cloud Service ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
 
