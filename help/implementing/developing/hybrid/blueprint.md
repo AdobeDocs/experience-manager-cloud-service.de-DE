@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Damit der Autor den AEM-SPA-Editor zum Bearbeiten des Inhalts einer SPA verwende
 
 In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework erfüllen sollte (d. h. die Art der AEM-Support-Ebene), damit sich in AEM bearbeitbare SPA-Komponenten implementieren lassen.
 
-Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für eine Anwendung im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
+Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für ein Programm im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Beim Initialisieren des `PageModelManager` lädt die Bibliothek zunächst das be
 
 ### ComponentMapping {#componentmapping}
 
-Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet eine Möglichkeit für die SPA, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells der Anwendung eine dynamische Auflösung von Komponenten.
+Das `ComponentMapping`-Modul wird dem Frontend-Projekt als NPM-Paket bereitgestellt. Es speichert Frontend-Komponenten und bietet eine Möglichkeit für die SPA, Frontend-Komponenten AEM-Ressourcentypen zuzuordnen. Dies ermöglicht beim Parsen des JSON-Modells des Programms eine dynamische Auflösung von Komponenten.
 
 Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Ressourcentyp verfügbar macht. Bei der Implementierung kann sich die Frontend-Komponente mit dem Fragment des Modells, das sie von den zugrunde liegenden Bibliotheken erhalten hat, selbst rendern.
 
@@ -64,7 +64,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
-Die SPA Komponenten müssen mit dem Seitenmodell synchronisiert sein und entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
+Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
 ### Meta-Felder  {#meta-fields}
 
@@ -267,7 +267,7 @@ Die App ist für das Routing verantwortlich. Der Frontend-Entwickler muss zunäc
 
 Die zugrunde liegende [`PageModelManager`](#pagemodelmanager)-Bibliothek und ihr (standardmäßig aktiviertes) [`ModelRouter`](routing.md)-Modul sind für den Vorababruf und das Gewähren von Zugriff auf das mit einem bestimmten Ressourcenpfad verknüpfte Modell verantwortlich.
 
-Beide Entitäten beziehen sich auf den Begriff Routing; der [`ModelRouter`](routing.md) ist jedoch nur für das Laden des [`PageModelManager`](#pagemodelmanager) mit einem Datenmodell verantwortlich, das synchron zum aktuellen Anwendungszustand strukturiert ist.
+Beide Entitäten beziehen sich auf den Begriff Routing; der [`ModelRouter`](routing.md) ist jedoch nur für das Laden des [`PageModelManager`](#pagemodelmanager) mit einem Datenmodell verantwortlich, das synchron zum aktuellen Programmzustand strukturiert ist.
 
 Weitere Informationen dazu finden Sie im Artikel [SPA-Modell-Routing](routing.md).
 
