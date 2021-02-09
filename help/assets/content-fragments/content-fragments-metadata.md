@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 77%
+ht-degree: 88%
 
 ---
 
 
-# Metadaten – Fragmenteigenschaften{#metadata-fragment-properties}
+# Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
@@ -24,10 +24,10 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 
    ![Metadaten](assets/cfm-metadata-01.png)
 
-3. Auf der Registerkarte **Einfach** können Sie die folgenden Optionen anzeigen oder bearbeiten:
+3. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
 
    * Miniaturansicht, für die Sie ein **Bild hochladen** können
-   * **Inhaltsfragment-** Modell gibt das Modell an, das zum Erstellen des aktuellen Fragments verwendet wird
+   * **Inhaltsfragmentmodell**, womit das zum Erstellen des aktuellen Fragments verwendete Modell angegeben wird
    * **Titel**
    * **Beschreibung**
    * **Tags**
