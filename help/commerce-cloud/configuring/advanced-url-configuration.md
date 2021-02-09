@@ -1,6 +1,6 @@
 ---
 title: Erweiterte URL-Konfigurationen
-description: Erfahren Sie, wie Sie die URLs für Produkt- und Kategorien-Seiten anpassen. Dies ermöglicht Implementierungen, URLs für Suchmaschinen zu optimieren und die Erkennung zu fördern.
+description: Informationen dazu, wie Sie die URLs für Produkt- und Kategorien-Seiten anpassen. Dies ermöglicht es, dass Implementierungen URLs für Suchmaschinen optimieren und ihr Auffinden fördern.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Um den `UrlProvider`-Service gemäß den SEO-Anforderungen zu konfigurieren, mus
 
 >[!NOTE]
 >
-> Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) (siehe unten) enthält Beispielkonfigurationen, um die Verwendung anwenderdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren.
+> Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) (siehe unten) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren.
 
 ### URL-Vorlage für Produktseiten {#product}
 
@@ -53,9 +53,9 @@ Damit werden die URLs der Kategorie- oder Produktlistenseiten mit den folgenden 
 * **Speicherort der Kategoriekennung**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `SELECTOR`, der andere mögliche Wert `SUFFIX`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kennung `3` zum Abrufen der Produktdaten verwendet wird.
 * **Kategoriekennungstyp**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert und derzeit einzige unterstützte Wert ist `ID`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kategoriedaten mit einem Magento-GraphQL-Filter wie `category(id:3)` abgerufen werden.
 
-Es ist möglich, anwenderdefinierte Eigenschaften für jede Vorlage hinzuzufügen, sofern die entsprechenden Daten von den Komponenten, die die Vorlage verwenden, mithilfe des `UrlProvider` festgelegt werden. Überprüfen Sie beispielsweise den Code der Klasse `ProductListItemImpl`, um herauszufinden, wie dieser implementiert wird.
+Es ist möglich, benutzerdefinierte Eigenschaften für jede Vorlage hinzuzufügen, sofern die entsprechenden Daten von den Komponenten, die die Vorlage verwenden, mithilfe des `UrlProvider` festgelegt werden. Überprüfen Sie beispielsweise den Code der Klasse `ProductListItemImpl`, um herauszufinden, wie dieser implementiert wird.
 
-Es ist auch möglich, den `UrlProvider`-Service durch einen vollständig anwenderdefinierten OSGi-Service zu ersetzen. In diesem Fall muss die `UrlProvider`-Oberfläche implementiert und mit einem höheren Service-Rang registriert werden, um die Standardimplementierung zu ersetzen.
+Es ist auch möglich, den `UrlProvider`-Service durch einen vollständig benutzerdefinierten OSGi-Service zu ersetzen. In diesem Fall muss die `UrlProvider`-Oberfläche implementiert und mit einem höheren Service-Rang registriert werden, um die Standardimplementierung zu ersetzen.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
@@ -67,7 +67,7 @@ URL-Neuschreibungen können auch mithilfe des AEM Dispatcher-HTTP-Servers mit de
 
 ## Beispiel
 
-Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung anwenderdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch können für jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen eingerichtet werden. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
+Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch können für jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen eingerichtet werden. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
 
 >[!NOTE]
 >
