@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem 360-Grad-/VR-Video-Viewer ein 
 
 Räumliches Audio wird derzeit nicht unterstützt. Falls Audio in Stereo gemischt wird, ändert sich die Balance (L/R) nicht, wenn der Kunde den Anzeigewinkel der Kamera ändert.
 
-Siehe [Verwenden von Dynamic Media-360-Grad-Videos und benutzerdefinierten Videominiaturen mit AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Siehe [Verwenden von Dynamic Media-360-Grad-Videos und benutzerdefinierten Videominiaturen mit AEM Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## 360-Grad-Video in Aktion   {#video-in-action}
+## 360-Grad-Video in Aktion  {#video-in-action}
 
 Tippen Sie auf [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Mauszeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
@@ -38,9 +38,9 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 
 ## Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-360 Video-Assets, die in den Experience Manager hochgeladen werden, werden auf einer Asset-Seite mit **Multimedia** beschriftet, ähnlich wie bei normalen Video-Assets.
+Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie normale Video-Assets auf der Asset-Seite als **Multimedia** gekennzeichnet.
 
-![6_5_360Videoauswahl zur Vorschau](assets/6_5_360video-selecttopreview.png)
+![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
 **So laden Sie Assets für die Verwendung mit dem 360-Grad-Video-Viewer hoch:**
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabeformate verbunden als Standard-Videoinhalte.
+   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabedarstellungen verbunden als Standard-Videoinhalte.
 
    Sie können das vordefinierte adaptive Videoprofil von Dynamic Media verwenden. Mit diesem erzielen Sie jedoch eine etwas schlechtere Qualität bei 360-Grad-Videos als bei normalen Videos, die mit den gleichen Einstellungen kodiert und mit einem normalen Video-Viewer gerendert wurden. Wenn Sie hochwertige 360-Grad-Videos benötigen, gehen Sie wie folgt vor:
 
@@ -56,7 +56,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
       * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese besonders hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
-   * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabeformaten. Angenommen, Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
+   * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Angenommen, Sie möchten ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
@@ -97,7 +97,7 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Linkmethode nicht möglich ist, wenn Ihr interaktiver Inhalt Links mit relativen URLs, insbesondere Links zu Experience Manager-Siteseiten, enthält.
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **So zeigen Sie eine Vorschau von 360-Grad-Videos an**
@@ -108,7 +108,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
    Tippen Sie auf das 360-Grad-Videoasset, um die Videovorschau anzuzeigen.
 
-1. Tippen Sie links oben auf der Vorschauseite auf die Dropdownliste und wählen Sie **[!UICONTROL Viewer]** aus.
+1. Tippen Sie links oben auf der Vorschauseite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer]** aus.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -133,5 +133,5 @@ Sie müssen das 360-Grad-Video veröffentlichen, um es zu verwenden. Die Veröff
 
 Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) finden Sie Details zum Veröffentlichen von 360-Grad-Videos.
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Linkmethode nicht möglich ist, wenn Ihr interaktiver Inhalt Links mit relativen URLs, insbesondere Links zu Experience Manager-Siteseiten, enthält.
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
