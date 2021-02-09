@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
->title="Planen Ihrer Transition"
->abstract="Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder veraltet wurden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices-Analyzer"
+>title="Planen Ihrer Umstellung"
+>abstract="Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder eingestellt wurden."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=de" text="Best Practices Analyzer"
 
-Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder veraltet wurden.
+Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit AEM as a Cloud Service vertraut machen und die wichtigen Änderungen und Funktionen einsehen, die ersetzt oder eingestellt wurden.
 
-## Wichtige Änderungen {#notable-changes}
+## Wesentliche Änderungen {#notable-changes}
 
 AEM as a Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer AEM-Projekte.
 
@@ -46,7 +46,7 @@ Der erste Schritt in der Planungsphase besteht darin, Ihre Bereitschaft für den
 
 Sie müssen eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen vornehmen, um den für die Umstellung erwarteten Aufwand zu bestimmen.
 
-Sie können den Bewertungsschritt beschleunigen, indem Sie den Best Practices-Analyzer für Ihre aktuelle AEM ausführen. Weitere Informationen finden Sie unter [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Sie können den Bewertungsschritt beschleunigen, indem Sie Best Practices Analyzer für Ihre aktuelle AEM-Version ausführen. Weitere Informationen finden Sie unter [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Wenn Sie bereits Zugriff auf Cloud Manager und eine Cloud Service-Umgebung haben, wird empfohlen, Ihren aktuellen Code in einer Cloud Manager-Pipeline für die Code-Qualität auszuführen, um die erforderlichen Code-Änderungen für die Kompatibilität mit Cloud Service zu bewerten.
