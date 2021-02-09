@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 39%
+ht-degree: 48%
 
 ---
 
@@ -49,19 +49,19 @@ ht-degree: 39%
       + [Grundlagen zur Build-Umgebung](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Verwalten von SSL-Zertifikaten {#manage-ssl-certificates}
       + [Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html)
-      + [SSL-Zertifikat abrufen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
-      + [SSL-Zertifikat hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
+      + [Abrufen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
+      + [Hinzufügen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
       + [Anzeigen und Aktualisieren oder Ersetzen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html)
       + [Überprüfen des Status eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html)
       + [Löschen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html)
    + Verwalten von benutzerdefinierten Domänennamen {#custom-domain-names}
       + [Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html)
-      + [Abrufen eines benutzerdefinierten Domänennamens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
-      + [Hinzufügen eines benutzerdefinierten Domänennamens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
+      + [Abrufen eines benutzerdefinierten Domain-Namens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
+      + [Hinzufügen eines benutzerdefinierten Domain-Namens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
       + [Hinzufügen eines TXT-Datensatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
       + [Status des benutzerdefinierten Domänennamens überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
-      + [DNS-Einstellungen konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
-      + [DNS-Datensatzstatus überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
+      + [Konfigurieren von DNS-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
+      + [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
       + [Anzeigen und Aktualisieren eines benutzerdefinierten Domänennamens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
       + [SSL-Zertifikat des benutzerdefinierten Domänennamens aktualisieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
       + [Löschen des benutzerdefinierten Domänennamens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
@@ -94,7 +94,7 @@ ht-degree: 39%
    + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](accessibility/web-accessibility.md)
    + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Migrationsmethode {#migration-methodology}
-   + [Migration nach Adobe Experience Manager als Cloud Service](migration-methodology/getting-started.md)
+   + [Migration zu Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
    + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
 + [Überblick über die Tools-Konsolen](tools-consoles.md)
