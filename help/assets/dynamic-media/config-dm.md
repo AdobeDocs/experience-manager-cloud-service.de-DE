@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von Dynamic Media Cloud Service
-description: Informationen zur Konfiguration von Dynamic Media in Adobe Experience Manager als Cloud Service.
+description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -169,7 +169,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie auf **[!UICONTROL Speichern]*
 
 1. Tippen Sie oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.
 
-## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
@@ -191,7 +191,7 @@ Bei einigen der oben genannten Aufgaben müssen Sie die Desktopanwendung [Dynami
 Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
 * [Veröffentlichungseinstellungen für Image-Server](#publishing-setup-for-image-server)
-* [Konfigurieren der allgemeinen Anwendungseinstellungen](#configuring-application-general-settings)
+* [Konfigurieren der allgemeinen Programmeinstellungen](#configuring-application-general-settings)
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
@@ -214,7 +214,7 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
 **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[!UICONTROL Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
-#### Konfigurieren der allgemeinen Anwendungseinstellungen {#configuring-application-general-settings}
+#### Konfigurieren der allgemeinen Programmeinstellungen {#configuring-application-general-settings}
 
 Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic klicken Sie auf **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen]**.
 
@@ -258,12 +258,12 @@ Dies hat folgende Auswirkungen:
 
 #### Bearbeiten von MIME-Typen für unterstützte Formate {#editing-mime-types-for-supported-formats}
 
-Sie können definieren, welche Asset-Typen von Dynamic Media verarbeitet werden, und erweiterte Parameter zur Verarbeitung von Assets anpassen. Beispielsweise können Sie Asset-Verarbeitungsparameter für folgende Aktionen festlegen:
+Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden, und erweiterte Asset-Verarbeitungsparameter anpassen. Beispielsweise können Sie Asset-Verarbeitungsparameter für folgende Aktionen festlegen:
 
 * Konvertieren eines Adobe PDF-Dokuments in ein E-Katalog-Asset
 * Konvertieren eines Adobe Photoshop-Dokuments (.PSD) in ein Bannervorlagen-Asset für Personalisierung
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated Postscript-Datei (.EPS)
-* [Mithilfe von ](/help/assets/dynamic-media/video-profiles.md) Videoprofilen und  [Bildprofilen können ](/help/assets/dynamic-media/image-profiles.md) Sie die Verarbeitung von Videos bzw. Bildern definieren.
+* [Videoprofile](/help/assets/dynamic-media/video-profiles.md) und [Bilddarstellungsprofile](/help/assets/dynamic-media/image-profiles.md) können jeweils zum Definieren der Verarbeitung von Videos und Bildern verwendet werden.
 
 Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/add-assets.md).
 
@@ -279,9 +279,9 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/add-as
 1. Wählen Sie unter dem Ordner „mimeTypes“ einen MIME-Typ aus:
 1. Im rechten unteren Bereich der Seite „CRXDE Lite“:
 
-   * Klicken Sie bei gedrückter Dublette auf das Feld **[!UICONTROL enabled]**. Alle Asset-MIME-Typen sind standardmäßig aktiviert (auf **[!UICONTROL true]** festgelegt). Dies bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-Mime-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
+   * Doppelklicken Sie auf das Feld **[!UICONTROL Aktiviert]**. Alle Asset-MIME-Typen sind standardmäßig aktiviert (auf **[!UICONTROL true]** festgelegt). Dies bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-MIME-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
 
-   * Klicken Sie mit der Dublette auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/file-format-support.md) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
+   * Doppelklicken Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/file-format-support.md) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
    * Wiederholen Sie die Schritte 3–4, um weitere MIME-Typen zu bearbeiten.
@@ -380,7 +380,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
 
-   Sie können **[!UICONTROL Maximale Anzahl paralleler Aufträge]** erhöhen, um das Hochladen von Dateien nach Dynamic Media ausreichend zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
+   Sie können **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** erhöhen, um das Hochladen von Dateien zu Dynamic Media angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien – z. B. bei einer ersten Migration oder einem einmaligen Massen-Upload – können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines großen Werts (z. B. die doppelte Anzahl an Kernen) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert basierend auf Ihrem jeweiligen Anwendungsfalls testen und anpassen.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
