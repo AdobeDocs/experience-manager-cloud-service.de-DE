@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
@@ -40,13 +40,13 @@ Mit Asset-Microservices generierte Standardausgabedarstellungen werden in abwär
 
 Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick) zu vermeiden, die Konfiguration des Systems zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren. Sie können die komplexen Konfigurationen von ImageMagick nicht für die Konfiguration von [!UICONTROL Verarbeitungsprofilen] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und verwenden Sie Verarbeitungsvideos für die [einfache Transkodierung von MP4-Profile](/help/assets/manage-video-assets.md#transcode-video).
 
-Asset-Microservices sind ein Cloud-nativer Dienst, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit Adobe Experience Manager vernetzt wird. Um Experience Manager zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
+Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit Adobe Experience Manager vernetzt wird. Um Experience Manager zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
 Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
 
 ## Entfernung der klassischen Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche ist in Experience Manager nicht mehr als [!DNL Cloud Service] verfügbar. Die Standardoberfläche ist die Touch-optimierte Benutzeroberfläche.
+Die klassische Benutzeroberfläche ist in Adobe Experience Manager as a [!DNL Cloud Service] nicht mehr verfügbar. Die Standardoberfläche ist die Touch-optimierte Benutzeroberfläche.
 
 >[!MORELIKETHIS]
 >
@@ -55,5 +55,5 @@ Die klassische Benutzeroberfläche ist in Experience Manager nicht mehr als [!DN
 >* Die [Architektur](/help/core-concepts/architecture.md) von [!DNL Experience Manager] als [!DNL Cloud Service]
 >* [Bemerkenswerte Änderungen  [!DNL Experience Manager] zu [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
 >* [Bemerkenswerte Änderungen  [!DNL Experience Manager Sites] zu [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 
