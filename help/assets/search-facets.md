@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat `Ful
 
 1. Ziehen Sie auf der Seite „Suchformulare bearbeiten“ ein Prädikat von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Auswählen und Verschieben einer Vorhersage zum Anpassen der Filter](assets/drag_predicate.png)
+   ![Auswählen und Verschieben eines Prädikats, um die Suchfilter anzupassen](assets/drag_predicate.png)
 
-   *Abbildung: Wählen Sie ein Prädikat aus und verschieben Sie es, um die Filter anzupassen.*
+   *Abbildung: Wählen Sie ein Prädikat aus und verschieben Sie es, um die Suchfilter anzupassen.*
 
 1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Mit der Kopfzeilenbeschriftung auf der Registerkarte „Einstellungen“ wird der Typ des gewählten Prädikats identifiziert.
 
@@ -102,7 +102,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
-   * Tippen Sie auf das Symbol ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld Options, um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf ![Symbol zum Hinzufügen von Assets](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
+   * Tippen Sie auf das Symbol ![Assets hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld „Optionen“, um den Anzeigetext und den Wert für die Optionen festzulegen, die im Bedienfeld „Filter“ bereitgestellt werden sollen. Um eine weitere Option hinzuzufügen, tippen oder klicken Sie auf das Symbol ![Assets hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie diesen Schritt.
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
@@ -144,7 +144,7 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. AEM Ass
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen anderer Eigenschaften      {#adding-other-predicates}
+## Hinzufügen anderer Eigenschaften  {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -167,7 +167,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad           Browser</td>
+   <td>Pfad  Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -177,7 +177,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Pfad          </p> </td>
+   <td><p>Pfad</p> </td>
    <td><p>Verwenden Sie dieses Suchprädikat, um Ergebnisse am Speicherort zu filtern. Sie können verschiedene Pfade als Optionen angeben.</p> </td>
    <td>
     <ul>
@@ -217,7 +217,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum            Bereich</p> </td>
+   <td><p>Datum  Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>
