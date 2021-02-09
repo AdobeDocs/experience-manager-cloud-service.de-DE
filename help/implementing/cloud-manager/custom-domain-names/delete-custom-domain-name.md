@@ -1,26 +1,26 @@
 ---
-title: Löschen eines benutzerdefinierten Domänennamens
-description: Löschen eines benutzerdefinierten Domänennamens
+title: Löschen eines benutzerderdefinierten Domain-Namens
+description: Löschen eines benutzerderdefinierten Domain-Namens
 translation-type: tm+mt
 source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 80%
 
 ---
 
 
-# Löschen eines benutzerdefinierten Domänennamens {#deleting-cdn}
+# Löschen eines benutzerderdefinierten Domain-Namens {#deleting-cdn}
 
-Ein Benutzer muss sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Deployment Manager&quot;befinden, um einen benutzerdefinierten Domänennamen in Cloud Manager löschen zu können.
+Ein Anwender muss die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben, um einen benutzerdefinierten Domain-Namen in Cloud Manager löschen zu können.
 
-## Löschen eines benutzerdefinierten Domänennamens aus allen zugehörigen Umgebung {#delete-cdn-all}
+## Löschen eines benutzerdefinierten Domain-Namens aus allen zugehörigen Umgebungen {#delete-cdn-all}
 
 1. Navigieren Sie zur Seite **Domäneneinstellungen** im Bildschirm **Umgebung**.
 
-1. Identifizieren Sie die Zeile, in der der benutzerdefinierte Domänenname aufgeführt ist, den Sie löschen möchten.
+1. Identifizieren Sie die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie löschen möchten.
 
-1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
+1. Wählen Sie das Menü **...** ganz rechts in der Zeile aus.
 
 1. Wählen Sie die Option **Löschen**.
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
@@ -28,10 +28,10 @@ Ein Benutzer muss sich in der Rolle &quot;Geschäftsinhaber&quot;oder &quot;Depl
 1. Bestätigen Sie Ihre Übermittlung.
 
 
-## Löschen eines benutzerdefinierten Domänennamens aus einer bestimmten Umgebung {#delete-cdn-specific}
+## Löschen eines benutzerdefinierten Domain-Namens aus einer bestimmten Umgebung {#delete-cdn-specific}
 
 1. Navigieren Sie auf der Seite **Umgebung** zum Bildschirm &quot;Umgebung Details&quot;der Umgebung, die von Interesse ist.
-1. Identifizieren Sie in der Tabelle &quot;Domänennamen&quot;die Zeile, in der der benutzerdefinierte Domänenname aufgeführt ist, den Sie löschen möchten.
-1. Wählen Sie **...**-Menü am äußersten rechten Ende der Zeile.
-1. Wählen Sie die Option &quot;Löschen&quot;.
+1. Identifizieren Sie in der Tabelle mit den Domain-Namen die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie löschen möchten.
+1. Wählen Sie das Menü **...** ganz rechts in der Zeile aus.
+1. Wählen Sie die Option „Löschen“ aus.
 1. Bestätigen Sie Ihre Übermittlung.
