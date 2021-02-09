@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeiche
 
 >[!IMPORTANT]
 >
->Für diese Funktion müssen Sie das im Lieferumfang von AEM Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. andere benutzerdefinierte CDN werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Für die Funktion müssen Sie das vorkonfigurierte CDN verwenden, das im Lieferumfang von AEM Dynamic Media enthalten ist. Andere benutzerdefinierte CDNs werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -79,7 +79,7 @@ In jedem Fall wird entweder der gesamte Batch zur Invalidierung verarbeitet oder
 
 | Fehler | Erklärung |
 | --- | --- |
-| *URLs für ausgewählte Assets konnten nicht abgerufen werden.* | Tritt auf, wenn eines der folgenden Szenarien erfüllt ist:<br>– Es wurde keine Dynamic Media-Konfiguration gefunden.<br>– Beim Abrufen eines Dienstbenutzers, über den die Dynamic Media-Konfiguration gelesen wird, gibt es eine Ausnahme.<br>– Der Veröffentlichungs-Server bzw. Stammordner des Unternehmens, der zum Erstellen der URLs verwendet wird, fehlt in der Dynamic Media-Konfiguration. |
+| *URLs für ausgewählte Assets konnten nicht abgerufen werden.* | Tritt auf, wenn eines der folgenden Szenarien erfüllt ist:<br>– Es wurde keine Dynamic Media-Konfiguration gefunden.<br>– Beim Abrufen eines Service-Benutzers, über den die Dynamic Media-Konfiguration gelesen wird, gibt es eine Ausnahme.<br>– Der Veröffentlichungs-Server bzw. Stammordner des Unternehmens, der zum Erstellen der URLs verwendet wird, fehlt in der Dynamic Media-Konfiguration. |
 | *Einige URLs sind nicht richtig definiert. Bitte korrigieren und übermitteln Sie sie erneut.* | Tritt auf, wenn die IPS CDN-Cache-Invalidierungs-API einen Fehler zurückgibt, dass die URL auf ein anderes Unternehmen verweist, oder die URL laut der von der IPS cdnCacheInvalidation-API durchgeführten Überprüfung ungültig ist. |
 | *CDN-Cache konnte nicht ungültig gemacht werden.* | Tritt auf, wenn die Anfrage zur Invalidierung des CDN-Cache aus einem anderen Grund fehlschlägt. |
 | *Keine Angabe von URLs, die ungültig gemacht werden sollen.* | Tritt auf, wenn auf der Seite **[!UICONTROL CDN-Invalidierung]** – **[!UICONTROL Bestätigen]** keine URLs vorhanden sind und Sie auf **[!UICONTROL Übermitteln]** tippen. |
