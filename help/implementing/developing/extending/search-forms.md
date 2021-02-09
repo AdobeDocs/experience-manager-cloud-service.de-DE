@@ -44,7 +44,7 @@ Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle
 
 Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 
-* **Asset-Admin-Suchleiste**
+* **Asset-Admin-Suchschiene**
 * **Seiten-Editor (Dokumentensuche)**
 * **Seiten-Editor (Experience Fragment-Suche)**
 * **Seiten-Editor (Bildsuche)**
@@ -54,14 +54,14 @@ Die Standardkonfigurationen (alphabetisch aufgelistet) sind verfügbar:
 * **Seiten-Editor (Produktsuche)**
 * **Seiten-Editor (Scene7-Suche)**
 * **Seiten-Editor (Videosuche)**
-* **Projekt-Admin-Suchleiste**
-* **Projekt-Übersetzungs-Suchleiste**
-* **Sites-Admin-Suchleiste**
-* **Snippet-Admin-Suchleiste**
-* **Stock-Admin-Suchleiste**
-* **Suchschiene für Inhaltsfragment-Modelle**
-* **Projekt-Admin-Suchleiste**
-* **Projekt-Übersetzungs-Suchleiste**
+* **Projekt-Admin-Suchschiene**
+* **Projekt-Übersetzungs-Suchschiene**
+* **Sites-Admin-Suchschiene**
+* **Snippet-Admin-Suchschiene**
+* **Stock-Admin-Suchschiene**
+* **Inhaltsfragmentmodelle-Suchschiene**
+* **Projekt-Admin-Suchschiene**
+* **Projekt-Übersetzungs-Suchschiene**
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum            Bereich</td>
+   <td>Datum  Bereich</td>
    <td>Suche nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -211,7 +211,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet       Filter</td>
+   <td>Ausgeblendet  Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -256,7 +256,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Optionen     </td>
+   <td>Optionen</td>
    <td><p>Die Optionen sind vom Benutzer erstellte Inhaltsknoten.</p> <p>Weitere Informationen finden Sie unter <a href="#addinganoptionspredicate">Hinzufügen eines Optionsprädikats</a>.</p> </td>
    <td>
     <ul>
@@ -269,7 +269,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Optionen      Eigenschaft</td>
+   <td>Optionen  Eigenschaft</td>
    <td>Suche nach einer oder mehreren Eigenschaften der Option.</td>
    <td>
     <ul>
@@ -282,7 +282,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite       Status</td>
+   <td>Seite  Status</td>
    <td>Filtern von Seiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -293,7 +293,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad          </td>
+   <td>Pfad</td>
    <td>Filtern nach einem bestimmten Pfad. Sie können mehrere Pfade als Optionen angeben.</td>
    <td>
     <ul>
@@ -303,7 +303,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad           Browser</td>
+   <td>Pfad  Browser</td>
    <td>Stellen Sie einen Pfad-Browser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>
@@ -314,7 +314,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Pfad      Ausgeblendet</td>
+   <td>Pfad  Ausgeblendet</td>
    <td>Ein Filter für den Pfad, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -542,7 +542,7 @@ Identisch mit dem
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
-* Der Asterisk (*) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt.
+* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt.
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -568,7 +568,7 @@ Identisch mit dem
 Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren/aktualisieren:
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Eigenschaft auswählen** und ziehen Sie das benötigte Prädikat an den erforderlichen Ort. Beispiel: das **Datumsbereichsprädikat**:
+1. Um ein neues Feld hinzuzufügen, öffnen Sie die Registerkarte **Eigenschaft auswählen** und ziehen Sie das benötigte Prädikat an den erforderlichen Ort. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![Hinzufügen von Prädikaten](assets/csf-add-predicate.png)
 
@@ -581,7 +581,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
    * Sie aktualisieren ein vorhandenes Prädikat:
 
       Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
-   Beispiel: die Einstellungen für das **Datumsbereichsprädikat**:
+   Beispiel: die Einstellungen für die **Datumsbereich-Eigenschaft**:
 
    ![Ändern eines Prädikats](assets/csf-modify-predicate.png)
 
@@ -599,7 +599,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds       {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds  {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -626,7 +626,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten        {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten   {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
@@ -638,7 +638,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 
-   * `jcr:title` – die Feldbezeichnung, die in der Suchleiste angezeigt werden soll
+   * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
 
    ![Definition eines Prädikats](assets/csf-options-predicate-01.png)
@@ -656,7 +656,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
 
 
-1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**. Wählen Sie dann **Bearbeiten** aus.
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**. Wählen Sie dann **Bearbeiten** aus.
 
 1. Fügen Sie je nach Konfiguration **Optionen** oder eine **Optionseigenschaft** zur Konfiguration hinzu.
 1. Aktualisieren Sie die Felder, vor allem:
