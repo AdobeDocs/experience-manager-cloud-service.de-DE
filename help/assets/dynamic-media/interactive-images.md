@@ -1,16 +1,16 @@
 ---
 title: Interaktive Bilder
-description: Erfahren Sie, wie Sie mit Interactive Images in Dynamic Media arbeiten.
+description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten.
 translation-type: tm+mt
 source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '4249'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
-# Interaktive Bilder{#interactive-images}
+# Interaktive Bilder {#interactive-images}
 
 Sie können statische Bilder mühelos in umfassende, begeisternde Erlebnisse für Kunden umwandeln, indem Sie Shop-fähige Hotspots per Drag-and-Drop auf ein Bild ziehen. In Shop-fähigen Hotspots werden zusätzliche Informationen über ein Produkt oder einen Service mit einer direkten Point-of-Sale-Funktion vom Typ „Zu Warenkorb hinzufügen“ oder „Kaufen“ kombiniert. Kunden können auf diese Hotspots tippen oder klicken und können direkt mit dem Produkt oder Service eine Verbindung herstellen, es zum Warenkorb hinzufügen oder es mit einer Web-Seite verknüpfen. Direkte Erlebnisse wie diese erhöhen die Kundeninteraktion bzw. -konversion auf Ihrer Website.
 
@@ -18,7 +18,7 @@ Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnella
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Siehe [Interaktive Bilder in Aktion](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) auf der oben abgebildeten Web-Seite.
+Siehe [Interaktive Bilder in Aktion](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) auf der oben abgebildeten Web-Seite.
 
 ## Sehen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
@@ -28,7 +28,7 @@ Hier erhalten Sie eine Einführung (10 Min., 33 Sek.) in die [Erstellung inter
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in die Arbeit mit interaktiven Bildern in AEM Assets ermöglichen.
 
-Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden [Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-0.html).
+Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden [Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -102,7 +102,7 @@ Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit versc
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der SKU-Wert das einzige Datenteil, das Sie benötigen, um dem Bannerbild Hotspots hinzuzufügen.
 
-In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farbcode, Größen-Code usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot-Datendefinition der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets.
+In komplexen Fällen hat die Schnellansichts-URL allerdings mehrere verschiedene Elemente zusätzlich zur SKU, wie Kategorie-ID, Farb-Code, Größen-Code usw. In diesen Fällen ist jedes Element eine separate Variable in der Hotspot-Datendefinition der Funktion für interaktive Bilder mit Shopping-Funktion in AEM Assets.
 
 Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resultierenden Hotspot-Variablen:
 
@@ -134,7 +134,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>In diesem Fall liegen zwei abweichende Teile in der URL vor. Die SKU wird im <code>prodId</code> Parameter  gespeichert, während die Kategorie-ID<code></code> im <code>category=</code> Parameter gespeichert wird.</p> <p>Im eigentlichen Sinne handelt es sich bei Hotspot-Definitionen um Paare, d. h. um einen SKU-Wert und eine zusätzliche Variable mit dem Namen <code>categoryId</code>. Die resultierenden Paare lauten wie folgt:</p>
+    </ul> <p>In diesem Fall liegen zwei abweichende Teile in der URL vor. Die SKU wird im <code>prodId</code> Parameter gespeichert, während die Kategorie-ID<code></code> im <code>category=</code> Parameter gespeichert wird.</p> <p>Im eigentlichen Sinne handelt es sich bei Hotspot-Definitionen um Paare, d. h. um einen SKU-Wert und eine zusätzliche Variable mit dem Namen <code>categoryId</code>. Die resultierenden Paare lauten wie folgt:</p>
     <ul>
       <li><p>Die SKU lautet <strong><code>305466</code></strong> und <code>categoryId</code> lautet <code>1100004</code>.</p> </li>
       <li><p>Die SKU lautet <strong><code>310181</code></strong> und <code>categoryId</code> lautet <strong><code>1100004</code></strong>.</p> </li>
@@ -349,7 +349,7 @@ Wenn Sie die [Demo-Website als Beispiel](https://marketing.adobe.com/resources/h
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsprechende Ersetzung durch den kopierten Integrations-Code aus AEM Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-1.html).
+Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen entsprechende Ersetzung durch den kopierten Integrations-Code aus AEM Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
@@ -496,8 +496,8 @@ Im Folgenden finden Sie den vollständigen Quell-Code:
  s7interactiveimageviewer.init();
 ```
 
-Die [endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-banner/we-fashion/landing-3.html).
+Die [endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups{#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
 
 Siehe [Popups mithilfe von benutzerspezifischen Schnellansichten erstellen](/help/assets/dynamic-media/custom-pop-ups.md).
