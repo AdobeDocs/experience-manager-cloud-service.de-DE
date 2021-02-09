@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Gehen Sie wie folgt vor, um [!DNL Experience Manager] so zu konfigurieren, dass 
 
 1. Eine PNG-Datei wird als Wasserzeichen angewendet. Laden Sie diese Datei in Ihr DAM-Repository hoch.
 
-1. Greifen Sie auf das [!DNL Cloud Manager]-Git-Repository zu, das Ihrer Umgebung zugeordnet ist. Komprimieren Sie eine Datei mit dem Namen `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` im Repository mit folgendem Inhalt. Anweisungen finden Sie unter [OSGi-Konfiguration unter [!DNL Experience Manager] als a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+1. Greifen Sie auf das [!DNL Cloud Manager]-Git-Repository zu, das Ihrer Umgebung zugeordnet ist. Binden Sie eine Datei namens `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` im Repository mit folgendem Inhalt. Weitere Informationen finden Sie unter [OSGi-Konfiguration in [!DNL Experience Manager]  as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
