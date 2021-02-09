@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
 source-wordcount: '2737'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ OSGi-Konfigurationen zielen auf OSGi-Komponenten über ihre PID (Persistent Iden
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
-implementierten OSGi-Dienst bereitzustellen, wird eine OSGi-Konfigurationsdatei unter
+implementierten OSGi-Service bereitzustellen, wird eine OSGi-Konfigurationsdatei unter
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
@@ -52,7 +52,7 @@ Wenn AEM beispielsweise die Runmodes „author“ und „dev“ verwendet, werde
 
 Wenn mehrere Konfigurationen für dieselbe PID anwendbar sind, wird die Konfiguration mit der höchsten Anzahl an passenden Ausführungsmodi angewendet.
 
-Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich, für dieselbe PID einige Eigenschaften in `/apps/example/config.author/` und spezifischere in `/apps/example/config.author.dev/` zu definieren. Die Konfiguration mit der höchsten Anzahl von übereinstimmenden Ausführungsmodi tritt für die gesamte PID in Kraft.
+Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich, für dieselbe PID einige Eigenschaften in `/apps/example/config.author/` und spezifischere in `/apps/example/config.author.dev/` zu definieren.  Die Konfiguration mit der höchsten Anzahl von übereinstimmenden Ausführungsmodi tritt für die gesamte PID in Kraft.
 
 Bei der lokalen Entwicklung kann ein Runmode-Startparameter übergeben werden, um anzugeben, welche Runmode-OSGI-Konfiguration verwendet werden soll.
 
@@ -119,7 +119,7 @@ Beginnen Sie bei der Definition eines OSGi-Konfigurationswerts mit Inline-Werten
 Verwenden Sie für nicht geheime Konfigurationswerte nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`), wenn die Werte in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von AEM as a Cloud Service. Vermeiden Sie die Verwendung von nicht geheimen umgebungsspezifischen Konfigurationen für Staging- und Produktionsumgebungen von AEM as a Cloud Service.
 
 * Verwenden Sie nicht geheime umgebungsspezifische Konfigurationen nur für Konfigurationswerte, die sich zwischen Entwicklungsumgebungen, einschließlich lokaler Entwicklungsinstanzen, unterscheiden.
-* Verwenden Sie stattdessen die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte in Staging- und Produktionsumgebungen. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
+* Verwenden Sie stattdessen die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte in Staging- und Produktionsumgebungen.  In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
 
 ### Verwendung geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -273,7 +273,7 @@ Es wird empfohlen, ein einfaches Bash-Skript zu schreiben, das die in den Konfig
 
 Die Werte für Geheimnisse werden aus Dateien gelesen. Daher muss für jeden Platzhalter, der einen geheimen Schlüssel verwendet, eine Textdatei mit dem geheimen Wert erstellt werden.
 
-Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textdatei mit dem Namen **server_password** erstellt werden. Alle diese geheimen Dateien müssen im selben Ordner gespeichert werden und die Framework-Eigenschaft `org.apache.felix.configadmin.plugin.interpolation.secretsdir` muss mit diesem lokalen Ordner konfiguriert werden. 
+Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textdatei mit dem Namen **server_password** erstellt werden. Alle diese geheimen Dateien müssen im selben Ordner gespeichert werden und die Framework-Eigenschaft `org.apache.felix.configadmin.plugin.interpolation.secretsdir` muss mit diesem lokalen Ordner konfiguriert werden.
 
 ### Vergleich von Autoren- und Veröffentlichungskonfiguration {#author-vs-publish-configuration}
 
@@ -472,14 +472,14 @@ config.dev
 
 ## Cloud Manager-API-Format zum Festlegen von Eigenschaften {#cloud-manager-api-format-for-setting-properties}
 
-Siehe [diese Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) darüber, wie die API konfiguriert werden muss.
+Auf [dieser Seite](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) finden Sie Informationen zum Konfigurieren der API.
 >[!NOTE]
 >
->Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle &quot;Deployment Manager - Cloud Service&quot;zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
+>Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle „Deployment Manager - Cloud Service“ zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
 
 ### Festlegen von Werten über API {#setting-values-via-api}
 
-Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungsdienste werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten.
+Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungs-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -556,7 +556,7 @@ Pro Umgebung können bis zu 200 Variablen deklariert werden.
 
 Da die geheimen und umgebungsspezifischen Konfigurationswerte außerhalb von Git bestehen und daher nicht Teil der formellen AEM as a Cloud Service-Bereitstellungsmechanismen sind, sollte der Kunde sie verwalten, steuern und in den AEM as a Cloud Service-Bereitstellungsprozess integrieren.
 
-Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungsdienste werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten. Beachten Sie, dass die Qualitäts-Gates und Tests, die von Cloud Manager während einer regulären Code-Bereitstellung ausgeführt werden, während dieses Prozesses nicht ausgeführt werden.
+Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungs-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten. Beachten Sie, dass die Qualitäts-Gates und Tests, die von Cloud Manager während einer regulären Code-Bereitstellung ausgeführt werden, während dieses Prozesses nicht ausgeführt werden.
 
 Normalerweise würden Kunden die API aufrufen, um Umgebungsvariablen zu setzen, bevor sie Code bereitstellen, der sich in Cloud Manager auf diese Variablen verlässt. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 
