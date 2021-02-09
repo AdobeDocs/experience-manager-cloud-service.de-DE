@@ -1,43 +1,43 @@
 ---
-title: Überprüfen des Domänennamenstatus
-description: Überprüfen des Domänennamenstatus
+title: Überprüfen des Domain-Namenstatus
+description: Überprüfen des Domain-Namenstatus
 translation-type: tm+mt
 source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 0%
+ht-degree: 72%
 
 ---
 
 
-# Überprüfen des Domänennamenstatus {#check-status}
+# Überprüfen des Domain-Namenstatus {#check-status}
 
-Sie können feststellen, ob Ihr Domänenname erfolgreich überprüft wurde, indem Sie auf der Seite &quot;Domäneneinstellungen&quot;auf der Umgebung in der Tabelle auf das Statussymbol für den Domänennamen klicken.
+Sie können feststellen, ob Ihr Domain-Name erfolgreich überprüft wurde, indem Sie auf der Seite mit den Domain-Einstellungen auf das Statussymbol für den Domain-Namen in der Tabelle für Umgebungen klicken.
 
 >[!NOTE]
->Cloud Manager wird automatisch eine TXT-Überprüfung Trigger, wenn Sie im Überprüfungsschritt des Assistenten für benutzerdefinierte Domänen die Option Speichern auswählen. Für spätere Überprüfungen müssen Sie das Symbol **verify wiederum** neben dem Status aktiv auswählen.
+>Cloud Manager löst automatisch eine TXT-Überprüfung aus, wenn Sie im Überprüfungsschritt des Assistenten zum Hinzufügen benutzerdefinierter Domains auf „Speichern“ klicken oder tippen. Für spätere Überprüfungen müssen Sie das Symbol **Erneut überprüfen** neben dem Status aktiv auswählen.
 
-Cloud Manager überprüft den Domänenbesitz über den TXT-Wert und zeigt eine der folgenden Statusmeldungen an:
+Cloud Manager überprüft den Domain-Besitz über den TXT-Wert und zeigt eine der folgenden Statusmeldungen an:
 
-* **Der Wert für**
-die Domänenüberprüfung &quot;FehlgeschlagenTXT&quot;fehlt oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wenn Sie bereit sind, müssen Sie die 
+* **Fehler bei der Domain-Überprüfung**
+TXT-Wert fehlt entweder oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wenn Sie bereit sind, müssen Sie die 
 *überprüfen Sie* das Symbol neben dem Status.
 
-* **Domänenüberprüfung**
-läuftÜberprüfung läuft. Dieser Status wird normalerweise angezeigt, nachdem Sie die Variable 
+* **Die Domain-Überprüfung wird durchgeführt**
+Die Überprüfung erfolgt. Dieser Status wird normalerweise angezeigt, nachdem Sie die Variable 
 *überprüfen Sie* das Symbol neben dem Status.
 
-* **Geprüft,**
-fehlgeschlagene Bereitstellung TXT-Überprüfung erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Ein Vertreter der Adobe wird automatisch benachrichtigt.
+* **Überprüft, Fehler bei der Bereitstellung**
+TXT-Überprüfung war erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Ein Adobe-Support-Mitarbeiter wird automatisch benachrichtigt.
 
-* **Domäne überprüft und**
-bereitgestelltDieser Status gibt an, dass Ihr benutzerdefinierter Domänenname einsatzbereit ist.
+* **Domain überprüft und bereitgestellt**
+Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.
    >[!NOTE]
    >An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und wird auf den Domänennamen von Cloud Manager verwiesen. Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
-* **Das**
-Löschen des Namens der benutzerdefinierten Domäne wird ausgeführt.
+* **Wird gelöscht**
+Die Löschung des benutzerdefinierten Domain-Namens wird durchgeführt.
 
-* **Löschen**
-fehlgeschlagenLöschen des Namens der benutzerdefinierten Domäne fehlgeschlagen. Du musst es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
+* **Löschen fehlgeschlagen**
+Die Löschung des benutzerdefinierten Domain-Namens ist fehlgeschlagen. Sie müssen es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
