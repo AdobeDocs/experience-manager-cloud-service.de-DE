@@ -1,6 +1,6 @@
 ---
 title: Multi-Store-Setup
-description: Erfahren Sie, wie Sie mehrere Store-Ansichten von Magento zu AEM zuordnen. Dadurch können Projekte auch mehrsprachige und mehrsprachige Anwendungsfälle unterstützen.
+description: Informationen dazu, wie Sie mehrere Store-Ansichten von Magento AEM zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
 3. Erstellen Sie eine untergeordnete Konfiguration der CIF-Cloud Service-Konfiguration wie folgt:
 
-   * Gehen Sie AEM zu Tools -> Allgemein -> [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * Wechseln Sie in AEM zu „Tools“ > „Allgemein“ > [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus.
    * Erstellen Sie eine neue Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
