@@ -1,29 +1,29 @@
 ---
 title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder
-description: Der Abfrage Builder in AEM Angeboten bietet eine einfache und anpassbare Möglichkeit zur Abfrage des Inhalts-Repository
+description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichkeit, das Inhalts-Repository abzufragen.
 translation-type: tm+mt
 source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
 # Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-In diesem Dokument wird beschrieben, wie Sie den [Abfrage-Builder](query-builder-api.md) durch Implementierung eines benutzerdefinierten Prädikat-Evaluators erweitern.
+In diesem Dokument wird beschrieben, wie Sie den [Query Builder](query-builder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
 
 ## Überblick {#overview}
 
-Der [Abfrage Builder](query-builder-api.md)-Angebot bietet eine einfache Möglichkeit, das Inhalts-Repository Abfrage. AEM enthält [eine Reihe von Prognoseauswertern](#query-builder-predicates.md), die Ihnen bei der Abfrage Ihrer Daten helfen.
+Mit dem [Query Builder](query-builder-api.md) können Sie problemlos das Inhalts-Repository abfragen. AEM enthält [eine Reihe von Prädikat-Auswertern](#query-builder-predicates.md), die Ihnen bei der Abfrage Ihrer Daten helfen.
 
 Sie möchten jedoch vielleicht Abfragen vereinfachen, indem Sie einen benutzerdefinierten Prädikat-Auswerter implementieren, der weniger komplex ist und für eine bessere Semantik sorgt.
 
 Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die nicht direkt mit XPath ausgeführt werden können, z. B.:
 
-* Daten von einem anderen Dienst abfragen
-* Benutzerdefinierte Filterung basierend auf einer Berechnung
+* Abfragen von Daten aus einem anderen Service
+* Benutzerdefiniertes Filtern basierend auf einer Berechnung
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die n
 
 >[!TIP]
 >
->Beispiele für Abfragen finden Sie im Dokument [Abfrage-Aufbau](query-builder-api.md).
+>Beispiele für Abfragen finden Sie im Dokument zum [Query Builder](query-builder-api.md).
 
 >[!TIP]
 >
->Den Code dieser Seite finden Sie auf GitHub
+>Den Code dieser Seite finden Sie auf GitHub.
 >
->* [Öffnen Sie das Projekt aem-search-custom-Predicate-evaluation auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+>* [Öffnen Sie das Projekt „aem-search-custom-predicate-evaluator“ auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator).
 >* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip) herunter.
 
 
@@ -49,15 +49,15 @@ Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die n
 
 Ein Prädikat-Auswerter ist für die Auswertung bestimmter Prädikate zuständig, die eine Abfrage einschränken.
 
-Es ordnet eine übergeordnete Sucheinschränkung (z. B. `width>200`) einer bestimmten JCR-Abfrage zu, die dem eigentlichen Inhaltsmodell (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
+Dabei wird eine allgemeinere Sucheinschränkung (z. B. `width>200`) einer spezifischen JCR-Abfrage zugeordnet, die mit dem tatsächlichen Inhaltsmodell übereinstimmt (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
 
 >[!TIP]
 >
->Weitere Informationen zum `PredicateEvaluator`- und zum `com.day.cq.search`-Paket finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Weitere Informationen zum `PredicateEvaluator` und dem Paket `com.day.cq.search` finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementieren eines benutzerdefinierten Prädikat-Auswerters für Replikationsmetadaten {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
-In diesem Beispiel wird in diesem Abschnitt beschrieben, wie ein benutzerdefinierter Prädikate-Evaluator erstellt wird, der Daten basierend auf den Replikationsmetadaten unterstützt:
+In diesem Abschnitt wird anhand eines Beispiels beschrieben, wie Sie einen benutzerdefinierten Prädikat-Auswerter erstellen, der die Verarbeitung von Daten basierend auf Replikationsmetadaten erleichtert:
 
 * `cq:lastReplicated` speichert die Daten der letzten Replikationsaktion.
 * `cq:lastReplicatedBy` speichert die ID des Benutzers, der die letzte Replikationsaktion ausgelöst hat.
@@ -65,7 +65,7 @@ In diesem Beispiel wird in diesem Abschnitt beschrieben, wie ein benutzerdefinie
 
 #### Abfragen von Replikationsmetadaten mit Standard-Prädikat-Auswertern {#querying-replication-metadata-with-default-predicate-evaluators}
 
-Die folgende Abfrage ruft die Liste der Knoten in der `/content`-Verzweigung ab, die seit Jahresbeginn von `admin` aktiviert wurden.
+Mit folgender Abfrage wird die Liste der Knoten im Zweig `/content`abgerufen, die vom Benutzer `admin` seit Jahresanfang aktiviert wurden.
 
 ```xml
 path=/content
@@ -95,21 +95,21 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Durch die Gruppierung von Replikationsmetadaten wird eine aussagekräftige Abfrage mit einem benutzerdefinierten Prädikat-Evaluator ermöglicht.
+Das Gruppieren von Metadatenprädikaten einer Replikation mit einem benutzerdefinierten Prädikat-Auswerter erleichtert das Erstellen einer aussagekräftigen Abfrage.
 
 #### Aktualisieren von Maven-Abhängigkeiten {#updating-maven-dependencies}
 
 >[!TIP]
 >
->Die Einrichtung neuer AEM Projekte, einschließlich der Verwendung von maven, wird im Detail durch [das WKND-Tutorial erklärt.](develop-wknd-tutorial.md)
+>Die Einrichtung neuer AEM-Projekte, einschließlich der Verwendung von Maven, wird im [WKND-Tutorial](develop-wknd-tutorial.md) ausführlich erklärt.
 
 Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `PredicateEvaluator` ist Teil des `cq-search`-Artefakts und muss zur POM-Datei von Maven hinzugefügt werden.
 
 >[!NOTE]
 >
->Der Gültigkeitsbereich der `cq-search`-Abhängigkeit ist auf `provided` eingestellt, da `cq-search` vom `OSGi`-Container bereitgestellt wird.
+>Für den Bereich der Abhängigkeit `cq-search` ist `provided` festgelegt, da `cq-search` vom `OSGi`-Container bereitgestellt wird.
 
-Das folgende Codefragment zeigt die Unterschiede in der Datei `pom.xml` im Format [Unified Diff](https://en.wikipedia.org/wiki/Diff#Unified_format)
+Der folgende Ausschnitt verdeutlicht die Unterschiede in der `pom.xml`-Datei im [Unified Diff-Format](https://de.wikipedia.org/wiki/Diff#Unified_format).
 
 ```text
 @@ -120,6 +120,12 @@
@@ -126,16 +126,16 @@ Das folgende Codefragment zeigt die Unterschiede in der Datei `pom.xml` im Forma
              <version>3.8.1</version></dependency>
 ```
 
-#### Schreiben von ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
+#### Schreiben des Prädikat-Auswerters für eine Replikation {#writing-the-replicationpredicateevaluator}
 
-Das `cq-search`-Projekt enthält die abstrakte Klasse `AbstractPredicateEvaluator`. Dies kann um einige Schritte erweitert werden, um Ihre eigenen benutzerdefinierten Prognoseauswerter `(PredicateEvaluator` zu implementieren.
+Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvaluator`. Diese kann in wenigen Schritten mit einem benutzerdefinierten Prädikat-Auswerter `(PredicateEvaluator`) erweitert werden.
 
 >[!NOTE]
 >
->Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Möglichkeit wäre die Implementierung der `includes`-Methode, mit der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Erstellen Sie eine neue Java-Klasse zum Erweitern von `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Kommentieren Sie Ihre Klasse mit einem `@Component`-ähnlichen Codefragment in [Unified Diff-Format](https://en.wikipedia.org/wiki/Diff#Unified_format)
+1. Kommentieren Sie Ihre Klasse mit einem `@Component`-ähnlichen Code-Ausschnitt im [Unified Diff-Format](https://en.wikipedia.org/wiki/Diff#Unified_format).
 
    ```text
    @@ -19,8 +19,11 @@
@@ -153,13 +153,13 @@ Das `cq-search`-Projekt enthält die abstrakte Klasse `AbstractPredicateEvaluato
 
    >[!NOTE]
    >
-   >Die `factory`muss eine eindeutige Zeichenfolge sein, die mit `com.day.cq.search.eval.PredicateEvaluator/`beginnt und mit dem Namen Ihres benutzerspezifischen `PredicateEvaluator` endet.
+   >`factory` muss eine eindeutige Zeichenfolge sein, die mit `com.day.cq.search.eval.PredicateEvaluator/` beginnt und mit dem Namen des benutzerdefinierten `PredicateEvaluator` endet.
 
    >[!NOTE]
    >
    >Der Name des `PredicateEvaluator` ist der Name des Prädikats, das zum Erstellen von Abfragen verwendet wird.
 
-1. Überschreibung:
+1. Überschreiben:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
@@ -167,7 +167,7 @@ Das `cq-search`-Projekt enthält die abstrakte Klasse `AbstractPredicateEvaluato
 
    Bei der Überschreibmethode erstellen Sie einen `Xpath`-Ausdruck basierend auf dem im Argument angegebenen `Predicate`.
 
-### Beispiel für einen benutzerdefinierten Predicate-Evaluator für Replikationsmetadaten {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### Beispiel für einen benutzerdefinierten Prädikat-Auswerter für Replikationsmetadaten {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 Die vollständige Implementierung dieses `PredicateEvaluator` kann der folgenden Klasse ähnlich sein.
 
