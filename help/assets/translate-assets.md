@@ -191,7 +191,7 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->
 
-## Erstellen von Übersetzungsprojekten{#creating-translation-projects}
+## Erstellen von Übersetzungsprojekten {#creating-translation-projects}
 
 Lösen Sie zum Erstellen einer Sprachkopie einen der folgenden Sprachkopie-Workflows aus, die in der Benutzeroberfläche von Assets in der Leiste „Verweise“ verfügbar sind:
 
