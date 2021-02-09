@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -164,7 +164,7 @@ Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen 
 Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 * Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
-* Verwenden des [Konfigurationsbrowsers](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Verwenden des [Konfigurations-Browsers ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Verwenden von CRXDE Lite  {#using-crxde-lite}
 
@@ -211,7 +211,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 >[!NOTE]
 >
->Im [Konfigurationsbrowser können Sie den globalen Ordner bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie Vorlagen in diesem Ordner erstellen möchten. Dies wird jedoch nicht empfohlen.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+>Im [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
 
 ### ACLs und Gruppen   {#acls-and-groups}
 
@@ -219,7 +219,7 @@ Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigur
 
 Die Vorlagenordner für das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“{#the-template-authors-group}
+#### Die Gruppe „template-authors“ {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -364,7 +364,7 @@ Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitba
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub
+Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter.
@@ -563,7 +563,7 @@ Die Bewertung funktioniert wie folgt:
 
 * Wenn `T` eine nicht leere `allowedPaths`-Eigenschaft hat, aber keiner der Werte mit dem Pfad von `P` übereinstimmt, wird `T` zurückgewiesen.
 
-* Wenn beide oben genannten Eigenschaften entweder leer oder nicht vorhanden sind, wird `T` abgelehnt, es sei denn, es gehört zu derselben Anwendung wie `P`. `T` gehört genau dann zur selben Anwendung wie `P`, wenn der Name der zweiten Ebene des Pfades von `T` mit dem Namen der zweiten Ebene des Pfades von `P` übereinstimmt. Zum Beispiel gehört die Vorlage `/apps/wknd/templates/foo` zur selben Anwendung wie die Seite `/content/wknd`.
+* Wenn beide oben genannten Eigenschaften entweder leer oder nicht vorhanden sind, wird `T` abgelehnt, es sei denn, es gehört zum selben Programm wie `P`. `T` gehört genau dann zum selben Programm wie `P`, wenn der Name der zweiten Ebene des Pfades von `T` mit dem Namen der zweiten Ebene des Pfades von `P` übereinstimmt. Zum Beispiel gehört die Vorlage `/apps/wknd/templates/foo` zum selben Programm wie die Seite `/content/wknd`.
 
 * Wenn `T` eine nicht leere `allowedParents`-Eigenschaft hat, aber keiner der Werte mit dem Pfad von `P` übereinstimmt, wird `T` zurückgewiesen.
 
