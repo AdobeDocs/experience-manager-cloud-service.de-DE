@@ -1,11 +1,11 @@
 ---
 title: Bereitstellen von optimierten Bildern für eine responsive Site
-description: Erfahren Sie, wie Sie mit der Funktion für reaktionsfähigen Code optimierte Bilder aus Dynamic Media bereitstellen können.
+description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte Bilder von Dynamic Media bereitstellen.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,6 +45,6 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
 
 ## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Die Bereitstellung von Dynamic Media-Assets kann über HTTP/2 erfolgen, das schnellere Antwort- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Die Bereitstellung von Dynamic Media-Assets kann über HTTP/2 erfolgen, das schnellere Antwort- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2faq.md).
