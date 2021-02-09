@@ -7,14 +7,14 @@ translation-type: tm+mt
 source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 55%
+ht-degree: 73%
 
 ---
 
 
 # Implementieren {#implementing}
 
-+ [Implementieren von Anwendungen für AEM as a Cloud Service](/help/implementing/home.md)
++ [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
 + Verwenden von Cloud Manager {#using-cloud-manager}
    + [Verwalten von Umgebungen](cloud-manager/manage-environments.md)
    + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
@@ -25,27 +25,27 @@ ht-degree: 55%
       + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
       + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
-      + [UI-Tests](/help/implementing/cloud-manager/ui-testing.md)
+      + [Benutzeroberflächen-Tests](/help/implementing/cloud-manager/ui-testing.md)
    + [Zugreifen auf und Verwalten von Protokollen](cloud-manager/manage-logs.md)
    + [Wissenswertes zu Benachrichtigungen](cloud-manager/notifications.md)
    + Verwalten von SSL-Zertifikaten {#manage-ssl-certificates}
       + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [SSL-Zertifikat abrufen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
-      + [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Abrufen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [Anzeigen und Aktualisieren und Ersetzen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Überprüfen des Status eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Löschen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + Verwalten von benutzerdefinierten Domänennamen {#custom-domain-names}
       + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [Abrufen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
-      + [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Abrufen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
       + [Status des benutzerdefinierten Domänennamens überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [DNS-Datensatzstatus überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Aktualisieren des SSL-Zertifikats eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -58,19 +58,19 @@ ht-degree: 55%
    + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
    + [Integration von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-   + [Arbeiten mit mehreren Quell-Git-Repositorys](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
    + [Struktur von AEM-Projekten](developing/introduction/aem-project-content-package-structure.md)
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service-SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Entwicklungsrichtlinien für AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Protokollierung](developing/introduction/logging.md)
-   + [Konfigurationen und der Konfigurationsbrowser](developing/introduction/configurations.md)
-   + [AEM Technische Stiftungen](/help/implementing/developing/introduction/aem-technologies.md)
+   + [Konfigurationen und der Konfigurations-Browser](developing/introduction/configurations.md)
+   + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Erstellen von Zugriffstoken für serverseitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Kopflos und Kopflos in AEM](developing/headful-headless.md)
-   + AEM Entwicklung des vollständigen Stapels {#full-stack}
+   + Full-Stack-AEM-Entwicklung {#full-stack}
       + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
       + [Struktur der AEM-UI](developing/introduction/ui-structure.md)
       + [Sling-Schnellübersicht](developing/introduction/sling-cheatsheet.md)
@@ -93,16 +93,16 @@ ht-degree: 55%
          + [Verwenden von Bedingungen zum Ausblenden](developing/components/hide-conditions.md)
          + [Komponenten-Referenzhandbuch](developing/components/reference.md)
       + [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md)
-      + [Erstellen von Tags in AEM Anwendungen](/help/implementing/developing/introduction/tagging-applications.md)
+      + [Einbinden von Tagging in AEM-Programme](/help/implementing/developing/introduction/tagging-applications.md)
       + Suche {#search}
-         + [Query-Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
          + [Query Builder-Eigenschaftsverweis](/help/implementing/developing/introduction/query-builder-predicates.md)
-         + [Implementieren eines benutzerspezifischen Predicate-Evaluators](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
-      + [Benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
-      + [AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Java API-Richtlinien](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + Hybrid AEM Entwicklung {#hybrid}
-      + [Hybrid und SPA mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Implementieren einer benutzerdefinierten Auswertung von Eigenschaften](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+      + [benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
+      + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
+      + [Java-API-Richtlinien](/help/implementing/developing/introduction/java-api-guidelines.md)
+   + Hybride AEM-Entwicklung {#hybrid}
+      + [Hybrid-Architektur und SPAs mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Einführung in SPAs und exemplarische Anleitung](developing/hybrid/introduction.md)
       + [SPA-WKND-Tutorial](developing/hybrid/wknd-tutorial.md)
@@ -122,33 +122,33 @@ ht-degree: 55%
       + [Launch-Integration](developing/hybrid/launch-integration.md)
       + [SPA-Referenzdokumente](developing/hybrid/reference-materials.md)
    + Headless-Experience-Management {#headless}
-      + [Kopflos und AEM](developing/headless/introduction.md)
-      + Erste Schritte - Guides {#getting-started}
+      + [Headless und AEM](developing/headless/introduction.md)
+      + Anleitungen für den Einstieg {#getting-started}
          + [Erstellen einer Konfiguration](developing/headless/getting-started/create-configuration.md)
          + [Erstellen eines Inhaltsfragmentmodells](developing/headless/getting-started/create-content-model.md)
          + [Erstellen eines Asset-Ordners](developing/headless/getting-started/create-assets-folder.md)
          + [Erstellen eines Inhaltsfragments](developing/headless/getting-started/create-content-fragment.md)
-         + [Zugriff auf Inhaltsfragmente und Bereitstellung](developing/headless/getting-started/create-api-request.md)
+         + [Zugreifen auf und Bereitstellen von Inhaltsfragmenten](developing/headless/getting-started/create-api-request.md)
       + Inhaltsfragmente {#content-fragments}
-         + [Kopfloser Versand mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
          + [Arbeiten mit Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-         + [Inhaltsfragmentfunktionen für Ihre Instanz aktivieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
+         + [Aktivieren der Funktion für Inhaltsfragmente für Ihre Instanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
          + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-         + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)           
+         + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
          + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
          + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-         + [Verwenden von zugehörigen Inhalten        ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [Verwenden von zugehörigen Inhalten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
          + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
          + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-         + [Vorschau - JSON-Vertretung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-      + Versand-API {#delivery-api}
-         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-         + [Inhaltsfragmente, GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-         + [AEM GraphQL API mit Inhaltsfragmenten - Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [Anzeigen in der Vorschau – JSON-Repräsentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + Bereitstellungs-API {#delivery-api}
+         + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
-+ Entwicklertools {#developer-tools}
++ Entwickler-Tools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
-   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
+   + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
 + Personalisierung  {#personalization}
