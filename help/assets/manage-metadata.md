@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
 
 ## Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils {#metadata-compute-service}
 
-Assets als [!DNL Cloud Service] können benutzerdefinierte Metadaten für ein Asset mit Cloud-nativen Diensten generieren. Konfigurieren Sie ein Verarbeitungsprofil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie Verarbeitungsprofile verwenden](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] kann mithilfe von Cloud-nativen Services benutzerdefinierte Metadaten für ein Asset generieren. Konfigurieren Sie ein Verarbeitungsprofil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie Verarbeitungsprofile verwenden](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Metadaten-Ausgabedarstellung im Verarbeitungsprofil](assets/processing-profile-metadata.png)
 
