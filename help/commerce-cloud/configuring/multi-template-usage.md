@@ -1,6 +1,6 @@
 ---
 title: Erstellen mehrerer Kategorie- und Produktseiten
-description: Erfahren Sie, wie Sie die Kategorie-Einstiegs- und Produktdetailseiten mit zielgerichteten Marketinginhalten bereichern.
+description: Erfahren Sie, wie Sie die Kategorieeinstiegs- und Produktdetailseiten mit zielgerichteten Marketing-Inhalten bereichern.
 sub-product: Commerce
 version: cloud-service
 doc-type: feature-video
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
