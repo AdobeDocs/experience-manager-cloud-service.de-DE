@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ Darüber hinaus werden manche Kunden, die zuvor AEM 6.5 oder frühere Versionen 
 
 ## Erstellen für das SDK {#building-for-the-sdk}
 
-Das AEM als Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Weitere Informationen finden Sie in der [AEM Dokumentation zum Projektarchiv](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Auf hoher Ebene werden die folgenden Schritte ausgeführt:
+Das AEM as a Cloud Service-SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Weitere Informationen finden Sie in der [Dokumentation zum AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de). Im Allgemeinen werden die folgenden Schritte ausgeführt:
 
-* **Kompilieren Sie Code**. Wie erwartet wird Quellcode kompiliert und die resultierenden Inhaltspakete generiert
-* **Bauen Sie Artefakte** auf. Während dieses Prozesses werden Artefakte erstellt
-* **Analysieren von Bundles**. Bundles werden mithilfe des Maven Analyzer-Plugins analysiert, das nach Problemen im Maven-Projekt sucht, z. B. fehlende Abhängigkeiten
-* **Bereitstellen von Artefakten**. Artefakte werden auf dem lokalen Server bereitgestellt.
+* **Kompilieren von Code**. Wie erwartet, wird der Quell-Code kompiliert, wodurch die resultierenden Inhaltspakete erzeugt werden.
+* **Erstellen von Artefakten**. Während dieses Prozesses werden Artefakte erstellt.
+* **Analysieren von Bundles**. Bundles werden mithilfe des Maven-Analyzer-Plug-ins analysiert, das nach Problemen im Maven-Projekt sucht, z. B. fehlende Abhängigkeiten.
+* **Bereitstellen von Artefakten**. Auf dem lokalen Server werden Artefakte bereitgestellt.
 
-Die gleichen Schritte werden von Cloud Manager bei der Bereitstellung in Cloud-Umgebung ausgeführt. Die Ausführung von Builds auf lokaler Ebene ermöglicht lokale Entwicklung und Tests, sodass Entwickler Code- oder Strukturprobleme effizient erkennen können, lange bevor sie sich zur Quellcodeverwaltung verpflichten und Cloud Manager-Bereitstellungen auslösen, was länger dauern kann.
+Die gleichen Schritte werden von Cloud Manager bei der Bereitstellung in Cloud-Umgebung ausgeführt. Die Ausführung von Builds auf lokaler Ebene ermöglicht lokale Entwicklung und Tests, sodass Entwickler Code- oder Strukturprobleme effizient erkennen können, lange bevor sie in die Versionskontrolle übernommen werden und Cloud Manager-Bereitstellungen auslösen, was länger dauern kann.
 
 ## Zugriff auf das AEM as a Cloud Service-SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
@@ -62,7 +62,7 @@ Wann sollte das lokale Projekt mit einem neuen SDK aktualisiert werden?
 
 Es wird *empfohlen*, das Projekt mindestens nach jeder monatlichen Wartungsversion zu aktualisieren.
 
-Es ist *optional*, nach jeder täglichen Wartungsversion zu aktualisieren. Kunden werden darüber informiert, wenn ihre Produktionsinstanz erfolgreich auf eine neue AEM-Version aktualisiert wurde. Bei den täglichen Wartungsversionen ist nicht zu erwarten, dass sich das neue SDK erheblich verändert hat (wenn überhaupt). Es wird dennoch empfohlen, die lokale AEM-Entwicklungsumgebung gelegentlich mit dem neuesten SDK zu aktualisieren und benutzerspezifische Anwendungen neu zu erstellen und zu testen. Die monatliche Wartungsversion umfasst in der Regel wirkungsvollere Änderungen, sodass Entwickler umgehend aktualisieren, neu erstellen und testen sollten.
+Es ist *optional*, nach jeder täglichen Wartungsversion zu aktualisieren. Kunden werden darüber informiert, wenn ihre Produktionsinstanz erfolgreich auf eine neue AEM-Version aktualisiert wurde. Bei den täglichen Wartungsversionen ist nicht zu erwarten, dass sich das neue SDK erheblich verändert hat (wenn überhaupt). Es wird dennoch empfohlen, die lokale AEM-Entwicklungsumgebung gelegentlich mit dem neuesten SDK zu aktualisieren und benutzerspezifische Programme neu zu erstellen und zu testen. Die monatliche Wartungsversion umfasst in der Regel wirkungsvollere Änderungen, sodass Entwickler umgehend aktualisieren, neu erstellen und testen sollten.
 
 Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lokalen Umgebung:
 
@@ -75,16 +75,16 @@ Nachfolgend finden Sie die empfohlene Vorgehensweise zum Aktualisieren einer lok
 1. Erstellen Sie einen ganz neuen Ordner und platzieren Sie darin das neue Schnellstart-JAR-Paket.
 1. Starten Sie den neuen Schnellstart mit den gewünschten Ausführungsmodi (entweder durch Umbenennen der Datei oder Übergabe an Ausführungsmodi per `-r`).
    * Sorgen Sie dafür, dass keine Reste des alten Schnellstarts im Ordner verbleiben.
-1. Erstellen Sie die AEM-Anwendung.
-1. Stellen Sie Ihre AEM-Anwendung via Package Manager im lokalen AEM bereit.
+1. Erstellen Sie das AEM-Programm.
+1. Stellen Sie Ihr AEM-Programm via Package Manager im lokalen AEM bereit.
 1. Installieren Sie über Package Manager alle Pakete mit veränderlichem Inhalt, die für lokale Umgebungstests benötigt werden.
 1. Entwickeln Sie nach Bedarf weiter und stellen Sie Änderungen bereit.
 
 Wenn es Inhalte gibt, die mit jeder neuen AEM-Schnellstartversion installiert werden sollen, fügen Sie sie in einem Inhaltspaket und der Quell-Code-Verwaltung des Projekts hinzu. Installieren Sie sie dann jedes Mal.
 
-Sie sollten das SDK häufig aktualisieren (z. B. alle zwei Wochen) und täglich den ganzen lokalen Status verwerfen, um in der Anwendung nicht versehentlich von Stateful-Daten abzuhängen.
+Sie sollten das SDK häufig aktualisieren (z. B. alle zwei Wochen) und täglich den ganzen lokalen Status verwerfen, um im Programm nicht versehentlich von Stateful-Daten abzuhängen.
 
-Wenn Sie CryptoSupport verwenden ([entweder durch Konfiguration der Anmeldeinformationen von Cloud Services oder des SMTP-Mail-Diensts in AEM bzw. durch Verwendung der CryptoSupport-API in Ihrer Anwendung](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), werden die verschlüsselten Eigenschaften durch einen Schlüssel verschlüsselt, der beim ersten Start einer AEM-Umgebung automatisch generiert wird. Während die Cloud-Implementierung dafür sorgt, dass der umgebungsspezifische CryptoKey automatisch wiederverwendet wird, muss der CryptoKey in die lokale Entwicklungsumgebung injiziert werden.
+Wenn Sie CryptoSupport verwenden ([entweder durch Konfiguration der Anmeldeinformationen von Cloud Services oder des SMTP-Mail-Diensts in AEM bzw. durch Verwendung der CryptoSupport-API in Ihrem Programm](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), werden die verschlüsselten Eigenschaften durch einen Schlüssel verschlüsselt, der beim ersten Start einer AEM-Umgebung automatisch generiert wird. Während die Cloud-Implementierung dafür sorgt, dass der umgebungsspezifische CryptoKey automatisch wiederverwendet wird, muss der CryptoKey in die lokale Entwicklungsumgebung injiziert werden.
 
 Standardmäßig ist AEM so konfiguriert, dass die Schlüsseldaten im Datenordner eines Ordners gespeichert werden. Aus Gründen einer einfacheren Wiederverwendung in der Entwicklung kann der AEM-Prozess beim ersten Start mit „`-Dcom.adobe.granite.crypto.file.disable=true`“ initialisiert werden. Dadurch werden bei „`/etc/key`“ die Verschlüsselungsdaten generiert.
 
