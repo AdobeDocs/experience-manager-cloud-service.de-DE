@@ -23,7 +23,7 @@ Lernen Sie, wie Sie die Video-Assets in [!DNL Adobe Experience Manager Assets] v
 
 1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. Um Assets hochzuladen, klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen dann **[!UICONTROL Dateien]** aus. Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen. Weitere Informationen finden Sie unter [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
-1. Rufen Sie die Vorschau eines Videos in der Kartenansicht auf, indem Sie auf die Schaltfläche **[!UICONTROL Wiedergabe]** im Video-Asset klicken. ![](assets/do-not-localize/play.png) Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. Die Optionen [!UICONTROL Wiedergabe] und [!UICONTROL Pause] sind in der Listenansicht nicht verfügbar.
+1. Rufen Sie die Vorschau eines Videos in der Kartenansicht auf, indem Sie auf die Schaltfläche **[!UICONTROL Wiedergabe]** ![Schaltfläche Wiedergabe](assets/do-not-localize/play.png) im Video-Asset klicken. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. Die Optionen [!UICONTROL Wiedergabe] und [!UICONTROL Pause] sind in der Listenansicht nicht verfügbar.
 1. Wählen Sie auf der Karte die Option **[!UICONTROL Bearbeiten]**, um eine Vorschau des Videos auf der Seite mit den Asset-Details anzuzeigen. Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
@@ -32,7 +32,7 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seit
 
 ## Transkodieren mit Verarbeitungsprofil {#transcode-video}
 
-[!DNL Experience Manager][!DNL Cloud Service] as a erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
+[!DNL Experience Manager] as a [!DNL Cloud Service] erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
 
 ![Erstellen Sie ein Profil zur Verarbeitung für die Videotranskodierung in  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
