@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Qu
 
 Sie können auch Folgendes durchführen:
 
-* Navigieren in Inhalten in der Startverzweigung; Seiten nach Bedarf hinzufügen oder entfernen.
-* Vorschau, wie veröffentlichte Inhalte zukünftig ein bestimmtes Datum/einen bestimmten Zeitraum betrachten.
+* Navigieren durch Inhalte in der Launch-Verzweigung; Hinzufügen oder Entfernen von Seiten nach Bedarf
+* Anzeigen in der Vorschau, wie veröffentlichte Inhalte zu einem bestimmten Zeitpunkt in der Zukunft aussehen werden
 
 Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie die Quellseiten veröffentlichen können, die den aktualisierten Inhalt enthalten. Sie können entweder alle Seiten weiterleiten oder nur die Seiten, die Sie geändert haben.
 
@@ -37,8 +37,8 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 * [Erstellen von Launches](/help/sites-cloud/authoring/launches/creating.md)
 * [Bearbeiten von Launches](/help/sites-cloud/authoring/launches/editing.md)
-* [Verwalten von Seiten in Starts](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Verwenden von Zeitwarp zur Vorschau von Inhalten auf Grundlage von Starts](/help/sites-cloud/authoring/launches/preview.md)
+* [Verwalten von Seiten in Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Verwenden von Timewarp zur Vorschau von Inhalten basierend auf Launches](/help/sites-cloud/authoring/launches/preview.md)
 * [Weiterleiten von Launches](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Der Ablauf eines Launches {#launches-the-order-of-events}
@@ -93,7 +93,7 @@ Launches ermöglichen Folgendes:
 
 1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
 1. Öffnen Sie die Leiste **Verweise** und wählen Sie die Quellseite aus.
-1. Wählen Sie **Launches**, die vorhandenen Launches werden aufgelistet, zusammen mit dem Zugriff auf die **Launches-Konsole**:
+1. Wählen Sie **Launches** aus. Die vorhandenen Launches werden aufgelistet – mit Zugriff auf die **Launches-Konsole**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -107,13 +107,13 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 
-* **Startet** Consolare the bottom of the  **** Launchessection of  **** ReferencesRail, wenn durch Quellinhalte in der Site-Konsole navigiert wird.
+* **Launches-Konsole** unten im Abschnitt **Launches** der Leiste **Verweise**, wenn Sie durch Quellinhalte in der Sites-Konsole navigieren.
 
-   ![Startet die Konsole in Verweise auf Starts in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Launches-Konsole in Verweisen auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* Die Schaltfläche **Starts** oben rechts beim Navigieren in Startinhalt in der Sites-Konsole:
+* Die Schaltfläche **Launch** oben rechts beim Navigieren in Launch-Inhalten in der Sites-Konsole:
 
-   ![Option &quot;Starts&quot;in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![Launches-Option in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
-* oder direkt; zum Beispiel mit:
+* Oder direkt, beispielsweise mit:
    `https://<host>:<port>/libs/launches/content/launches.html`
