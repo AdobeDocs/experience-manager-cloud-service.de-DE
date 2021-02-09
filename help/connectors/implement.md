@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Um fortlaufende Bereitstellungen zu unterstützen, wird bei AEM as a Cloud Servi
 * `/apps`
 * `/content` und `/conf`
 
-Connectoren sollten sich an die in [diesem Artikel](/help/implementing/developing/introduction/aem-project-content-package-structure.md)beschriebenen Richtlinien zur Paketerstellung halten. Bestehende Connectoren sollten ebenfalls entsprechend umgestaltet werden.
+Connectoren sollten sich an die in [diesem Artikel](/help/implementing/developing/introduction/aem-project-content-package-structure.md) beschriebenen Richtlinien zur Paketerstellung halten. Bestehende Connectoren sollten ebenfalls entsprechend umgestaltet werden.
 
 Darüber hinaus sollte nur Adobe Code in `/libs` schreiben, während Kunden und Partner in `/apps` schreiben.
 
@@ -69,7 +69,7 @@ Es wird empfohlen, den Großteil des Connector-Codes unter `/apps/connectors/<ve
 Cloud Services-Konfigurationen
 -----------------------------
 
-Ein Aspekt der Connector-Implementierung ist der Code, der die Konfiguration des Connectors unterstützt. Durch diesen Code wird eine Karte mit dem Namen des Connectors unter „Tools“ > „Vorgänge“ > „Cloud Services“ angezeigt. Beim Klicken wird ein [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) angezeigt, in dem der Kunde den übergeordneten Ordner für die Connector-Konfiguration auswählt. Der Code des Connectors sollte zu einem Formular mit allen zu konfigurierenden Eigenschaften führen und die Werte letztendlich in einem Konfigurationsordner unter `/conf` speichern. Dieser Ordner kann später auf der Registerkarte „Sites-Eigenschaften“ oder auf der Registerkarte „Asset-Eigenschaften“ ausgewählt werden.
+Ein Aspekt der Connector-Implementierung ist der Code, der die Konfiguration des Connectors unterstützt. Durch diesen Code wird eine Karte mit dem Namen des Connectors unter „Tools“ > „Vorgänge“ > „Cloud Services“ angezeigt. Beim Klicken wird ein [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) geöffnet, in dem der Kunde den übergeordneten Ordner für die Connector-Konfiguration auswählt. Der Code des Connectors sollte zu einem Formular mit allen zu konfigurierenden Eigenschaften führen und die Werte letztendlich in einem Konfigurationsordner unter `/conf` speichern. Dieser Ordner kann später auf der Registerkarte „Sites-Eigenschaften“ oder auf der Registerkarte „Asset-Eigenschaften“ ausgewählt werden.
 
 
 Kontextabhängige Konfigurationen
@@ -87,4 +87,4 @@ Da AEM as a Cloud Service eine Cloud-native Lösung ist, gibt es einige Richtlin
 Testen von AEM-Connectoren
 -------------------------
 
-Neue Connectoren sollten mithilfe lokaler Entwicklungstechniken erstellt (oder vorhandene Connectoren modifiziert) werden. Das Partner-Team stellt ISV-Partnern eine Sandbox-Umgebung zur Verfügung, in der sie ihren AEM-Connector in einer Vanilla-Anwendung bereitstellen können, um sicherzustellen, dass er funktioniert.
+Neue Connectoren sollten mithilfe lokaler Entwicklungstechniken erstellt (oder vorhandene Connectoren modifiziert) werden. Das Partner-Team stellt ISV-Partnern eine Sandbox-Umgebung zur Verfügung, in der sie ihren AEM-Connector in einem Basisprogramm bereitstellen können, um sicherzustellen, dass er funktioniert.
