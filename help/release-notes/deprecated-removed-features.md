@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus Adobe Experience Mana
 | Bereich | Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
 | Benutzeroberfläche | Während einige Dialogfelder der klassischen Benutzeroberfläche für ausgewählte Funktionen wie Prüfer für externe Links, Versionsbereinigung und einige Cloud Service-Konfigurationen vorerst weiterhin verfügbar sind, kann generell nicht mehr auf die klassische Benutzeroberfläche in der AEM-Produkt-Benutzeroberfläche zugegriffen werden. | Standard-Benutzeroberfläche |
-| Dynamic Media | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) und [Dynamic Media Hybrid-Modus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) sind in AEM als Cloud Service nicht verfügbar. | Verwenden Sie die mit Adobe Experience Manager as a Cloud Service bereitgestellte [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)-Funktion. |
+| Dynamic Media | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=de#integration) und dem [Dynamic Media-Hybridmodus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=de#dynamic) sind nicht in AEM as a Cloud Service verfügbar. | Verwenden Sie die mit Adobe Experience Manager as a Cloud Service bereitgestellte [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)-Funktion. |
 | Sites | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit AEM 6.4 als veraltet und wurden nun aus AEM entfernt. |
 | Sites | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des AEM-Repositorys nicht zur Laufzeit zugegriffen werden kann. |
 | Assets | [AEM Assets-Freigabe für Experience Cloud Assets Core Service und Creative Cloud-Services](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/integration/configure-assets-cc-integration.html) ist nicht verfügbar. | Verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) zur Integration mit Creative Cloud. |
