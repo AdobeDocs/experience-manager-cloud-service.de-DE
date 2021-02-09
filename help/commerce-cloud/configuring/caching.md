@@ -1,11 +1,11 @@
 ---
 title: Caching und Leistung
-description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Content-Caching zu aktivieren, um die Leistung Ihrer Commerce-Implementierung zu optimieren.
+description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '848'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die vo
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
-Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist und gibt ggf. die zwischengespeicherte Antwort zurück. Für diese Zuordnung muss die GraphQL-Anfrage exakt übereinstimmen, d. h. die Abfrage, der Vorgangsname (falls vorhanden), die Variablen (falls vorhanden) müssen der zwischengespeicherten Anfrage entsprechen, und auch alle anwenderdefinierten HTTP-Header, die möglicherweise festgelegt wurden, müssen ebenfalls identisch sein. Beispielsweise muss beim Magento-`Store`-Header eine Übereinstimmung vorliegen.
+Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist und gibt ggf. die zwischengespeicherte Antwort zurück. Für diese Zuordnung muss die GraphQL-Anfrage exakt übereinstimmen, d. h. die Abfrage, der Vorgangsname (falls vorhanden), die Variablen (falls vorhanden) müssen der zwischengespeicherten Anfrage entsprechen, und auch alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt wurden, müssen ebenfalls identisch sein. Beispielsweise muss beim Magento-`Store`-Header eine Übereinstimmung vorliegen.
 
 ### Beispiele
 
