@@ -6,14 +6,14 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Assets-HTTP-API {#assets-http-api}
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -28,7 +28,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!NOTE]
 >
->Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Darstellungen) werden für AEM Bereitstellung als [!DNL Cloud Service] veraltet. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical).
+>Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für die Implementierung von AEM as a [!DNL Cloud Service] nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Inhaltsfragmente {#content-fragments}
 
