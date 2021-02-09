@@ -1,16 +1,16 @@
 ---
 title: Arbeiten mit Selektoren
-description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussell-Banner in Dynamic Media auswählen können.
+description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussellbanner in Dynamic Media auswählen können.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Arbeiten mit Selektoren in Dynamic Media {#working-with-selectors}
+# Arbeiten mit Selektoren in Dynamic Media {#working-with-selectors}
 
 Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bildsets, Rotationssets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
 
