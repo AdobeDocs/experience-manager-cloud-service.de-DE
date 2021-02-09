@@ -1,18 +1,18 @@
 ---
-title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
-description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
+title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 8%
+ht-degree: 21%
 
 ---
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] als Cloud Service beschrieben.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -83,16 +83,16 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0
 
 * Authentifizierte API-Aufrufe von Server zu Server - Generieren Sie die entsprechenden Zugriffstoken, um authentifizierte Server-zu-Server-API-Aufrufe zwischen Ihren externen Anwendungen und AEM als Cloud Service-Umgebung durchzuführen. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) oder im [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
-### SDK Build Analyzers {#sdk-build-analyzers}
+### SDK Build Analyzer {#sdk-build-analyzers}
 
-Das AEM als Cloud Service SDK Build Analyzer Maven Plugin erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es bietet Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu erkennen, lange vor der Bereitstellung in Cloud-Umgebung mit Cloud Manager.
+Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es gibt Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu entdecken, lange bevor sie mit Cloud Manager in Cloud-Umgebungen bereitgestellt werden.
 
 Für diese Version wurden zwei neue Analyzer hinzugefügt:
 
 * Repoinit Analyzer
 * bundle-nativecode
 
-Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
+Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing).
 
 ## Cloud-Umstellungs-Tools {#code-transition-tools}
 
