@@ -1,58 +1,58 @@
 ---
-title: Erstellen von Inhaltsfragmenten - Kurzanleitung ohne Kopfzeilen im Beginn
-description: Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte, die AEM ohne Probleme bereitstellen können.
+title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
+description: Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten, die von AEM per Headless-Implementierung bereitgestellt werden können.
 translation-type: tm+mt
 source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen von Inhaltsfragmenten - Kurzanleitung zum Beginn ohne Kopfzeilen {#creating-content-fragments}
+# Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung {#creating-content-fragments}
 
-Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte, die AEM ohne Probleme bereitstellen können.
+Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten, die von AEM per Headless-Implementierung bereitgestellt werden können.
 
 ## Was sind Inhaltsfragmente? {#what-are-content-fragments}
 
-[Nachdem Sie einen Asset-](create-assets-folder.md) Ordner erstellt haben, in dem Sie Ihre Inhaltsfragmente speichern können, können Sie die Fragmente jetzt erstellen!
+[Nachdem Sie einen Asset-Ordner erstellt haben](create-assets-folder.md), in dem Ihre Inhaltsfragmente gespeichert werden sollen, können Sie nun Fragmente erstellten.
 
-Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Orten und über mehrere Kanal hinweg verwendet werden können.
+Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
 
 Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bereitgestellt werden.
 
 ## Erstellen eines Inhaltsfragments {#how-to-create-a-content-fragment}
 
-Inhaltsersteller erstellen eine beliebige Anzahl von Inhaltsfragmenten, um den von ihnen erstellten Inhalt darzustellen. Das wird ihre wichtigste Aufgabe in AEM sein. Für die Zwecke dieses Beginns-Leitfadens müssen wir nur einen erstellen.
+Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
 
-1. Melden Sie sich bei AEM als Cloud Service an und wählen Sie im Hauptmenü **Navigation -> Assets**.
-1. Tippen Sie auf den zuvor erstellten Ordner [oder klicken Sie auf diesen.](create-assets-folder.md)
-1. Tippen oder klicken Sie auf **Erstellen -> Inhaltsfragment**.
-1. Die Erstellung eines Inhaltsfragments wird in zwei Schritten als Assistent dargestellt. Wählen Sie zuerst das Modell aus, das Sie zum Erstellen des Inhaltsfragments verwenden möchten, und tippen oder klicken Sie auf **Weiter**.
-   * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Elementordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.
-   * Wenn Sie die Meldung `We could not find any models` erhalten, überprüfen Sie die Konfiguration Ihres Elementordners.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools > Assets** aus.
+1. Tippen oder klicken Sie auf den [zuvor von Ihnen erstellten Ordner](create-assets-folder.md).
+1. Tippen oder klicken Sie auf **Erstellen > Inhaltsfragment**.
+1. Die Erstellung eines Inhaltsfragments erfolgt mithilfe eines Assistenten in zwei Schritten. Wählen Sie zuerst das Modell aus, das Sie zum Erstellen des Inhaltsfragments verwenden möchten, und tippen oder klicken Sie dann auf **Weiter**.
+   * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Asset-Ordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.
+   * Wenn Ihnen die Meldung `We could not find any models` angezeigt wird, überprüfen Sie die Konfiguration Ihres Asset-Ordners.
 
-   ![Inhaltsfragmentmodell auswählen](../assets/content-fragment-model-select.png)
-1. Geben Sie nach Bedarf **Title**, **Description** und **Tags** ein und tippen oder klicken Sie auf **Create**.
+   ![Auswählen des Inhaltsfragmentmodells](../assets/content-fragment-model-select.png)
+1. Geben Sie nach Bedarf einen **Titel**, eine **Beschreibung** und **Tags** ein und tippen oder klicken Sie auf **Erstellen**.
 
    ![Inhaltsfragment erstellen](../assets/content-fragment-create.png)
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **Öffnen**.
 
-   ![Inhaltsfragment-erstellte Bestätigung](../assets/content-fragment-confirmation.png)
-1. Geben Sie die Details des Inhaltsfragments im Inhaltsfragment-Editor an.
+   ![Bestätigung der Inhaltsfragment-Erstellung ](../assets/content-fragment-confirmation.png)
+1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](../assets/content-fragment-edit.png)
-1. Tippen oder klicken Sie auf **Speichern und Schließen**.
+1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 
-Inhaltsfragmente können auch auf andere Assets in AEM verweisen. [Diese Assets müssen in ](/help/assets/manage-digital-assets.md) AEM gespeichert werden, bevor ein Verweis auf das Inhaltsfragment erstellt wird.
+Inhaltsfragmente können auch auf andere Assets in AEM verweisen. [Diese Assets müssen in AEM gespeichert werden](/help/assets/manage-digital-assets.md), bevor ein Verweis auf das Inhaltsfragment erstellt wird.
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie jetzt ein Inhaltsfragment erstellt haben, können Sie zum letzten Teil des Handbuchs &quot;Erste Schritte&quot;wechseln und [API-Anforderungen erstellen, um auf Inhaltsfragmente zuzugreifen und diese bereitzustellen.](create-api-request.md)
+Nachdem Sie nun ein Inhaltsfragment erstellt haben, können Sie zum letzten Teil der Anleitung für den Einstieg übergehen und [API-Anfragen erstellen, um auf Inhaltsfragmente zuzugreifen und diese bereitzustellen](create-api-request.md).
 
 >[!TIP]
 >
->Ausführliche Informationen zum Verwalten von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>Ausführliche Informationen zur Verwaltung von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md).
