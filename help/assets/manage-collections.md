@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2393'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Sie können Assets aus der Assets-Benutzeroberfläche ziehen und in einer Sammlu
 Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie können eine Smart-Sammlung erstellen, indem Sie Dateien und Ordner oder nur Dateien nutzen.
 
 1. Navigieren Sie zur Assets-Benutzeroberfläche und tippen oder klicken Sie auf das Symbol **[!UICONTROL Suchen]**.
-1. Geben Sie den Suchbegriff in das Feld Omni Suche ein und wählen Sie `Enter`. Tippen/Klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen, und wenden Sie einen Suchfilter aus dem Suchbereich an.
+1. Geben Sie im OmniSearch-Feld das Keyword ein und drücken Sie die `Enter`-Taste. Tippen/Klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen, und wenden Sie einen Suchfilter aus dem Suchbereich an.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 1. Tippen oder klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**.
 1. Geben Sie einen Namen für die Sammlung an. Aktivieren Sie **[!UICONTROL Öffentlich]**, um die DAM-Benutzergruppe mit der Rolle „Betrachter“ zur Smart-Sammlung hinzuzufügen.
@@ -103,7 +103,7 @@ Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Ass
 Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt, Sie können den Inhalt ändern, indem Sie die Suchparameter der [gespeicherten Suche](#saved-searches) ändern.
 
 1. Tippen oder klicken Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Symbol **[!UICONTROL Suchen]**.
-1. Wählen Sie mit dem Cursor im Feld Omniture die `Enter`-Taste aus.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die `Enter`-Taste.
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol, um den Filterbereich anzuzeigen.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
@@ -140,7 +140,7 @@ Die Suchfunktion für Sammlungen unterstützt sowohl das [Suchen nach Sammlunge
 
 ### Suchen nach Sammlungen {#search-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Suchbegriffen im Feld &quot;Omniture&quot;suchen, sucht [!DNL Experience Manager Assets] nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie die Suche mit Keywords im Suchfeld durchführen, sucht [!DNL Experience Manager Assets] nach Sammlungsnamen, Sammlungsmetadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
@@ -148,7 +148,7 @@ Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen
 
 Tippen oder klicken Sie in der Konsole „Sammlungen“ auf eine Sammlung, um sie zu öffnen.
 
-Die [!DNL Experience Manager]-Suche innerhalb einer Sammlung ist auf Assets (und ihre Tags und Metadaten) innerhalb der Sammlung beschränkt, die Sie anzeigen. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
+Innerhalb einer Sammlung ist die Suche von [!DNL Experience Manager] auf Assets (sowie deren Tags und Metadaten) in der angezeigten Sammlung begrenzt. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
 
 ## Bearbeiten von Sammlungseinstellungen {#edit-collection-settings}
 
@@ -173,13 +173,13 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine oder mehrere Sammlungen für den Download aus.
 1. Tippen oder klicken Sie in der Symbolleiste auf das Symbol zum Herunterladen.
-1. Tippen oder klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabeformate des Assets in der Sammlung herunterladen möchten. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
+1. Tippen oder klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabeformate]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
 ## Bearbeiten von Metadateneigenschaften von mehreren Sammlungen {#editing-metadata-properties-of-multiple-collections}
 
-Mit Adobe Enterprise Manager Assets können Sie die Metadaten vieler Sammlungen stapelweise bearbeiten. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadatenänderungen an mehreren Sammlungen durchführen, beispielsweise Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern.
+Mit Adobe Enterprise Manager Assets können Sie die Metadaten vieler Sammlungen in Massen bearbeiten. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadatenänderungen an mehreren Sammlungen durchführen, beispielsweise Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern.
 
 Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Metadaten, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schemaeditor.
 
@@ -222,11 +222,11 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge       {#saved-searches}
+## Gespeicherte Suchvorgänge  {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt. 
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage der gespeicherten Suche für die Sammlung wird in der Eigenschaft `dam:query` in CRXDE unter dem relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt.
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. Tippen oder klicken Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Suchsymbol.
 
-1. Wählen Sie mit dem Cursor im Feld Omniture die `Enter`-Taste aus.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die `Enter`-Taste.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen.
 1. Tippen oder klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** neben der Smart-Sammlung, die Sie löschen möchten, auf **[!UICONTROL Löschen]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]**, um die gespeicherte Suche zu löschen.
@@ -248,8 +248,8 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets in den verschachtelten Sammlungen ausgeführt. Wenn jedoch die Sammlung und die verschachtelte Sammlung doppelte Assets enthalten, wird der Workflow nur einmal für solche Assets ausgeführt.
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine Sammlung aus, für die Sie einen Workflow ausführen möchten.
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus der Liste aus.
-1. Wählen Sie in der Zeitleiste unten das Symbol &quot;Karriere&quot;aus oder tippen Sie auf und tippen/klicken Sie dann auf **[!UICONTROL Beginn Workflow]**.
+1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Zeitleiste]** aus der Liste aus.
+1. Tippen oder klicken Sie in der Zeitleiste auf das Caret-Symbol am unteren Rand und dann auf **[!UICONTROL Workflow starten]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste aus. Wählen Sie beispielsweise das **[!UICONTROL DAM Update Asset]**-Modell aus.
 1. Geben Sie einen Titel für den Workflow ein und tippen oder klicken Sie auf **[!UICONTROL Start]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Fortfahren]**. Der Workflow wird für alle Assets in der Sammlung ausgeführt.
