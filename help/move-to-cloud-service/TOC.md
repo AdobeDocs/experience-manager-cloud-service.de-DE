@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 85%
    + [Ausführung](/help/move-to-cloud-service/execution.md)
    + [Nach der Live-Schaltung](/help/move-to-cloud-service/post-go-live.md)
 + Cloud-Umstellungs-Tools {#cloud-migration}
-   + Best Practices-Analyzer {#best-practices-analyzer}
+   + Best Practices Analyzer {#best-practices-analyzer}
       + [Überblick](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-      + [Verwenden von Best Practices-Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
-   + Content Transfer-Tool {#content-transfer-tool}
+      + [Verwenden von Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+   + Content Transfer Tool {#content-transfer-tool}
       + [Überblick](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Verwenden des Tools für die Benutzerzuordnung](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Verwenden des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code-Refaktorierungs-Tools {#refactoring-tools}
    + [Einheitliches Erlebnis](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-   + [Indexkonverter](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
+   + [Index Converter](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [Asset-Workflow-Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM-Modernisierungs-Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
