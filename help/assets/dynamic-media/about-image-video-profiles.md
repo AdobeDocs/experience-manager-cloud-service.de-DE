@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
 source-wordcount: '1301'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Siehe auch [Metadaten-Profile](/help/assets/metadata-profiles.md).
 
 Sie müssen über Administratorrechte verfügen, um Dynamic Media-Bildprofile oder Dynamic Media-Videoprofile zu erstellen, zu bearbeiten und zu löschen.
 
-Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
+Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Dynamic Media-Assets verwenden.
 
 Siehe auch [Best Practices zum Organisieren Ihrer digitalen Assets für die Verwendung von Bild- oder Videoprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -47,7 +47,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 >[!NOTE]
 >
->Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu Experience Manager durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
+>Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu Adobe Experience Manager durchführen, müssen Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server aktivieren. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
 >
 >Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-Assets in einem Ordner erneut verarbeiten**:
-1. Navigieren Sie in Adobe Experience Manager auf der Seite &quot;Assets&quot;zu einem Ordner mit Dynamic Media-Assets, dem ein Image-Profil oder ein Video-Profil zugewiesen wurde und für den Sie das Scene7 **anwenden möchten: Arbeitsablauf für Asset** erneut verarbeiten,
+1. Navigieren Sie in Adobe Experience Manager auf der Seite „Assets“ zu einem Ordner mit Dynamic Media-Assets, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie den Workflow **Scene7: Assets erneut verarbeiten** anwenden möchten.
 
    Bei Ordnern, denen bereits ein Bildprofil oder ein Videoprofil zugewiesen wurde, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
-   Klicken Sie auf der Hauptseite der Hauptkonsole des Experience Managers auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   Klicken Sie auf der Hauptseite der Adobe Experience Manager-Konsole auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die Mime-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend bleibt das Verarbeitungsbanner länger auf den Assets des Experience Managers. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die Mime-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend wird das Verarbeitungsbanner länger für Adobe Experience Manager-Assets angezeigt. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**
 
