@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
 source-wordcount: '2807'
-ht-degree: 68%
+ht-degree: 77%
 
 ---
 
@@ -78,7 +78,7 @@ Im Vergleich dazu werden die Smart-Tags für Bilder und Videos visuell abgeleite
 
 >[!IMPORTANT]
 >
->Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die Smart-Tags-Integration manuell konfigurieren.[](/help/assets/smart-tags-configuration.md#aio-integration)
+>Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Implementierungen können Administratoren die [Integration von Smart-Tags manuell konfigurieren](/help/assets/smart-tags-configuration.md#aio-integration).
 
 Sie können [!DNL Adobe Experience Manager] mithilfe der [!DNL Adobe Developer Console] mit Smart-Tags integrieren. Verwenden Sie diese Konfiguration, um über [!DNL Experience Manager] auf den Smart-Tags-Service zuzugreifen. Informationen zu den Aufgaben zum Konfigurieren von Smart-Tags finden Sie unter [Konfigurieren von Experience Manager für das Smart-Tagging von Assets](smart-tags-configuration.md). Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Smart-Tags-Service weitergeleitet wird.
 
@@ -198,29 +198,29 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 
 [!DNL Experience Manager] kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Zu diesem Zweck konfigurieren Administratoren einen Workflow, um einen Schritt hinzuzufügen, um die Assets mit Smart-Tags zu versehen. Erfahren Sie, [wie Sie Smart-Tagging für hochgeladene Assets aktivieren](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
-## Verwalten von Smart-Tags und Asset-Suchen {#manage-smart-tags-and-searches}
+## Verwalten von Smart-Tags und Asset-Suchvorgängen {#manage-smart-tags-and-searches}
 
-Sie können Smart-Tags kuratieren, um alle falschen Tags zu entfernen, die Ihren Markenelementen zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
+Sie können Smart-Tags kuratieren, um ungenaue Tags zu entfernen, die möglicherweise Ihren Marken-Assets zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
 
-Die Moderation intelligenter Tags hilft auch bei der Feinabstimmung tagbasierter Suchen nach Assets, indem sichergestellt wird, dass Ihre Assets in den Suchergebnissen nach den relevantesten Tags angezeigt werden. Im Wesentlichen trägt sie dazu bei, die Wahrscheinlichkeit zu vermeiden, dass nicht verwandte Assets in Suchergebnissen angezeigt werden.
+Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Assets verfeinern, indem Sie sicherstellen, dass Ihr Asset nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Assets ohne Bezug angezeigt werden.
 
-Sie können einem Tag auch einen höheren Rang zuweisen, um seine Relevanz in Bezug auf ein Asset zu erhöhen. Wenn Sie ein Tag für ein Asset bewerben, erhöht sich die Wahrscheinlichkeit, dass das Asset in den Suchergebnissen angezeigt wird, wenn eine Suche basierend auf dem jeweiligen Tag durchgeführt wird.
+Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Asset zu erhöhen. Je höher der Rang eines Tags für ein Asset desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Assets in die Suchergebnisse.
 
-So moderieren Sie die Smarttags Ihrer Assets
+So moderieren Sie die Smart-Tags Ihrer Assets:
 
-1. Suchen Sie im Feld Omniture nach Assets, die auf einem Tag basieren.
+1. Suchen Sie im OmniSearch-Feld nach Assets, die auf einem Tag basieren.
 
-1. Inspect Sie die Suchergebnisse, um die Assets zu identifizieren, die Sie für Ihre Suche nicht relevant finden.
+1. Prüfen Sie die Suchergebnisse auf Assets, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
 
-1. Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf das Symbol ![Tags verwalten](assets/do-not-localize/manage-tags-icon.png).
+1. Wählen Sie ein solches Asset aus und wählen Sie dann in der Symbolleiste ![Symbol „Tags verwalten“](assets/do-not-localize/manage-tags-icon.png) aus.
 
-1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn das Asset nicht anhand eines bestimmten Tags durchsucht werden soll, wählen Sie das Tag aus und wählen Sie ![Symbol ](assets/do-not-localize/delete-icon.png) löschen aus der Symbolleiste. Alternativ können Sie `X`-Symbol neben der Beschriftung auswählen.
+1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn Sie ein spezifisches Tag für ein Asset ausschließen möchten, wählen Sie das Tag und anschießend in der Symbolleiste ![Löschsymbol](assets/do-not-localize/delete-icon.png) aus. Alternativ können Sie `X`-Symbol neben der Beschriftung auswählen.
 
-1. Um einem Tag einen höheren Rang zuzuweisen, wählen Sie das Tag aus und wählen Sie ![Symbol ](assets/do-not-localize/promote-icon.png) fördern aus der Symbolleiste. Das Tag, das Sie bewerben, wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
+1. Um einem Tag einen höheren Rang zuzuweisen, wählen Sie das Tag und anschließend in der Symbolleiste ![Symbol „Höherstufen“](assets/do-not-localize/promote-icon.png) aus. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
 
-1. Wählen Sie **[!UICONTROL Speichern]** und dann **[!UICONTROL OK]**, um das Dialogfeld [!UICONTROL Erfolg] zu schließen.
+1. Wählen Sie **[!UICONTROL Speichern]** und dann **[!UICONTROL OK]** au, um das Dialogfeld [!UICONTROL Erfolg] zu schließen.
 
-1. Navigieren Sie zur Seite [!UICONTROL Eigenschaften] für das Asset. Beachten Sie, dass das beworbene Tag eine hohe Relevanz erhält und es aus diesem Grund höher in den Suchergebnissen angezeigt wird.
+1. Gehen Sie zur Seite „[!UICONTROL Eigenschaften]“ des betreffenden Assets. Beachten Sie, dass das beworbene Tag eine hohe Relevanz erhält und es aus diesem Grund höher in den Suchergebnissen angezeigt wird.
 
 ### AEM-Suchergebnisse mit Smart-Tags  {#understandsearch}
 
@@ -242,7 +242,7 @@ Das erweiterte intelligente Tagging basiert auf Lernmodellen von Bildern und der
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-* Tagging wird in den Sprachen unterstützt, die [!DNL Experience Manager] unterstützt. Eine Liste der Sprachen finden Sie unter [Versionshinweise zum Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tagging wird in den Sprachen unterstützt, die [!DNL Experience Manager] unterstützt. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de#languages).
 * Tags, die nicht realistisch behandelt werden, beziehen sich auf:
 
    * Nicht visuelle, abstrakte Aspekte wie das Jahr oder die Saison der Veröffentlichung eines Produkts, Stimmung oder Emotion, die durch ein Bild ausgelöst wird, subjektive Konnotation eines Videos usw.
@@ -261,5 +261,5 @@ Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie
 >
 >* [Konfigurieren von Experience Manager für Smart-Tagging ](smart-tags-configuration.md)
 >* [Grundlegendes, wie Smart-Tags die Verwaltung von Assets unterstützen](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Smart-Tagging von Video-Assets](smart-tags-video-assets.md)
+>* [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
 
