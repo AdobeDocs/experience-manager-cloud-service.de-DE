@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
-+ [Wichtige Änderungen  [!DNL Assets] in [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Wesentliche Änderungen an [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
@@ -30,7 +30,7 @@ ht-degree: 86%
    + [Suchen von Assets](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags für Bilder](smart-tags.md)
-   + [Intelligente Tags für Video-Assets](smart-tags-video-assets.md)
+   + [Tagging Ihrer Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
    + [Verwenden von  [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
@@ -50,14 +50,14 @@ ht-degree: 86%
    + [Verweise auf Entwicklerdokumente und APIs](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Intelligente Tagging von Bildern konfigurieren](smart-tags-configuration.md)
+   + [Konfigurieren von Smart-Tags für Bilder](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Assets-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
+   + [AEM GraphQL-API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
    + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL API mit Inhaltsfragmenten - Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Asset-Berichte](asset-reports.md)
    + [Kaskadierende Metadaten](cascading-metadata.md)
@@ -65,13 +65,13 @@ ht-degree: 86%
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
 + Freigeben und Verteilen von Assets {#brand-portal}
-   + [Konfigurieren von [!DNL Assets] mit  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in  [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
-   + [Kopfloser Versand mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)           
-   + [Inhaltsfragmentfunktionen für Ihre Instanz aktivieren](content-fragments/content-fragments-configuration-browser.md)
+   + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
+   + [Aktivieren der Inhaltsfragmentfunktion für Ihre Instanz](content-fragments/content-fragments-configuration-browser.md)
    + [Inhaltsfragmentmodelle](content-fragments/content-fragments-models.md)
    + [Varianten – Erstellen von Fragmentinhalten](content-fragments/content-fragments-variations.md)
    + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments/content-fragments-assoc-content.md)
@@ -79,14 +79,14 @@ ht-degree: 86%
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [Vorschau - JSON-Vertretung](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [Vorschau – JSON-Darstellung](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Dynamic Media Newsletter von Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
    + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
    + [Fehlerbehebung bei Dynamic Media](dynamic-media/troubleshoot-dm.md)
-   + [Zugänglichkeit in Dynamic Media](dynamic-media/accessibility-dm.md)
+   + [Barrierefreiheit in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Best Practices für die Dateiverwaltung](dynamic-media/best-practices-for-file-management.md)
@@ -97,9 +97,9 @@ ht-degree: 86%
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
    + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
-   + [Smart Imaging](dynamic-media/imaging-faq.md)
+   + [Invalidierung des CDN-Cache über Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache über von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
