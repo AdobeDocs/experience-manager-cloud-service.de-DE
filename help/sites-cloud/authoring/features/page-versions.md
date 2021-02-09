@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 >[!NOTE]
 >
->[Timewarp kann auch mit Launches verwendet werden, um die Zukunft](/help/sites-cloud/authoring/launches/preview.md) zu Vorschau.
+>[Timewarp kann auch mit Launches verwendet werden, um die Zukunft in der Vorschau anzuzeigen](/help/sites-cloud/authoring/launches/preview.md).
 
 Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Publishing-Umgebung zu bestimmen.
 
