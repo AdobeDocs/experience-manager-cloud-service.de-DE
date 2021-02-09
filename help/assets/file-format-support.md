@@ -1,25 +1,25 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: Dateiformate und MIME-Typen, die von [!DNL Experience Manager Assets] als [!DNL Cloud Service] unterstützt werden.
+description: Von [!DNL Experience Manager Assets] as a [!DNL Cloud Service] unterstützte Dateiformate und MIME-Typen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
 
-# [!DNL Assets] unterstützte Dateiformate  {#supported-file-formats}
+# Von [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Cloud Service] [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
-Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Darstellungen sowie zum Extrahieren von Metadaten und Text für die Indexierung im Volltext. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
+Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Ausgabedarstellungen sowie zum Extrahieren von Metadaten und Text für die Volltextindizierung. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
 Zu den Highlights für die Asset-Konvertierung mithilfe von Asset-Mikrodiensten zählen:
 
-* Schlüsseldateiformate [Adobe, die von Adobe-Anwendungen und -Diensten erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.](#adobe-formats)
+* Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Diensten erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
 * Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
@@ -35,7 +35,7 @@ In der folgenden Legende wird beschrieben, wie gut die einzelnen Formate unterst
 
 ## Adobe-Formate {#adobe-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Metadatenextraktion | Breite/Höhe |
+| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | they | - | they | they |
 | COLLAGE | - | - | they | - |
@@ -141,7 +141,7 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/asset
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
-| Dateiformat | Generierung von Miniaturansichten | Extraktion im Volltext | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | they | they |
 | DOCX | they | they | they | they | they |
@@ -222,7 +222,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Audioformate {#audio-formats}
 
-[!DNL Assets] as a unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.[!DNL Cloud Service]
+[!DNL Assets] as a [!DNL Cloud Service] unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
