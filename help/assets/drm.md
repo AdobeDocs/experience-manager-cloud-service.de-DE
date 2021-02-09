@@ -1,12 +1,12 @@
 ---
 title: Digital Rights Management in [!DNL Assets]
-description: Erfahren Sie, wie Sie Asset-Ablaufstatus und Informationen für lizenzierte Assets unter [!DNL Experience Manager] als a [!DNL Cloud Service] verwalten.
+description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in  [!DNL Experience Manager]  as a  [!DNL Cloud Service] verwalten.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
 1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suchen]**, um das Omnisearch-Feld anzuzeigen.
 
-1. Wählen Sie mit dem Cursor im Feld &quot;Omniture&quot;die `Enter`-Taste aus, um die Suchergebnisseite anzuzeigen.
+1. Wählen Sie bei in das Omnisearch-Feld gesetztem Cursor die Eingabetaste `Enter` aus, um die Seite mit den Suchergebnissen anzuzeigen.
 
 1. Klicken Sie auf das GlobalNav-Symbol, um das Suchfeld anzuzeigen.
 
@@ -95,7 +95,7 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
 1. Um nach Assets auf Grundlage ihres Status zu suchen, klicken Sie auf **[!UICONTROL Suchen]**, um die Omnisearch-Leiste anzuzeigen.
 
-1. Wählen Sie `Return` und klicken Sie auf [!DNL Experience Manager], um das Suchfeld anzuzeigen.
+1. Wählen Sie die Eingabetaste `Return` aus und klicken Sie auf [!DNL Experience Manager], um das Suchbedienfeld anzuzeigen.
 1. Klicken Sie im Suchbedienfeld auf **[!UICONTROL Veröffentlichungsstatus]** und wählen Sie **[!UICONTROL Veröffentlicht]** aus, um in [!DNL Assets] nach veröffentlichten Assets zu suchen.
 
 1. Klicken Sie auf **[!UICONTROL Genehmigungsstatus]** und danach auf die entsprechende Option, um nach bestätigten oder abgelehnten Assets zu suchen.
