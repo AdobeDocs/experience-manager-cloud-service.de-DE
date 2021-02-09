@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Anzeigen von Assets in einer Vorschau{#previewing-assets}
+# Anzeigen von Assets in einer Vorschau {#previewing-assets}
 
 Mit der Vorschau können Sie prüfen, wie ein von Ihnen hochgeladenes digitales Asset aussieht, wenn es von einem Kunden im eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
 
