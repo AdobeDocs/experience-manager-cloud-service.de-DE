@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Wenn Sie Administrator sind und Viewer-Vorgaben verwalten, erstellen, sortieren 
 Siehe auch [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
 Je nach Veröffentlichungsmodus müssen Sie möglicherweise keine Viewer-Vorgaben veröffentlichen.
-Probleme mit Viewer-Vorgaben finden Sie unter [Fehlerbehebung für Dynamic Media](troubleshoot-dm.md#viewers).
+Informationen zu Problemen mit Viewer-Vorgaben finden Sie unter [Dynamic Media – ](troubleshoot-dm.md#viewers).
 
 ## Anwenden von Dynamic Media-Viewer-Vorgaben auf ein Asset {#applying-a-viewer-preset-to-an-asset}
 
