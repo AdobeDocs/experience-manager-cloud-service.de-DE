@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 ## Konfigurieren von Asset Insights {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] Ruft Nutzungsdaten zu digitalen Assets ab, die von Websites von Drittanbietern verwendet werden  [!DNL Adobe Analytics]. Um Asset Insights zu aktivieren und diese Daten abzurufen und Statistiken zu erzeugen, konfigurieren Sie zuerst die Funktion zur Integration mit [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] ruft Nutzungsdaten zu digitalen Assets, die von Websites Dritter verwendet werden, von [!DNL Adobe Analytics] ab. Um Asset Insights zu aktivieren und diese Daten abzurufen und Statistiken zu erzeugen, konfigurieren Sie zuerst die Funktion zur Integration mit [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
@@ -103,12 +103,12 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Abbildung: Konfigurieren von Adobe Analytics für Asset Insights in[!DNL Experience Manager]*
 
-1. Klicken/tippen Sie auf **[!UICONTROL Authentifizieren]**. Nachdem [!DNL Experience Manager] Ihre Anmeldedaten authentifiziert hat, wählen Sie in der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite, aus der Sie Daten abrufen möchten. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
-1. Nachdem [!DNL Experience Manager] Ihre Report Suite eingerichtet hat, tippen Sie auf **[!UICONTROL Fertig]**.
+1. Klicken/tippen Sie auf **[!UICONTROL Authentifizieren]**. Nachdem [!DNL Experience Manager] Ihre Anmeldedaten authentifiziert hat, wählen Sie aus der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics-Report Suite aus, aus der Asset Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Nach der Report Suite-Einrichtung durch [!DNL Experience Manager] tippen Sie auf **[!UICONTROL Fertig]**.
 
 ### Seitenverfolgung {#page-tracker}
 
-Nachdem Sie Ihr Adobe Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Damit Assets Insights die in Websites von Drittanbietern verwendeten [!DNL Experience Manager]-Assets verfolgen kann, fügen Sie den Seiten-Trackercode im Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in Assets, um den Seitenverfolgungscode zu erzeugen. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Nachdem Sie Ihr Adobe Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Um Asset Insights zur Verfolgung von [!DNL Experience Manager]-Assets in Websites von Drittanbietern zu aktivieren, beziehen Sie den Seitenverfolgungs-Code in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in Assets, um den Seitenverfolgungs-Code zu erzeugen. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
