@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 So schaffen Sie einen schnellen Einstieg:
 
-1. Optional. [Erstellen Sie eine Stapelsatzvorgabe ](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Ordner an, in den Ihre Rotationsset-Bilder hochgeladen werden.
+1. Optional. [Erstellen Sie eine Stapelsatzvorgabe](/help/assets/dynamic-media/batch-set-presets-dm.md) und wenden Sie sie auf einen neuen Ordner an, in den Ihre Rotationsset-Bilder hochgeladen werden.
 
-   Eine Stapelsatzvorgabe kann Ihnen dabei helfen, die Erstellung Ihres Bildsatzes zu automatisieren.
+   Eine Stapelsatzvorgabe kann Ihnen dabei helfen, die Erstellung Ihres Bild-Sets zu automatisieren.
 
    >[!IMPORTANT]
    >
@@ -42,7 +42,7 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
 
-   Laden Sie die Bilder für Ihre Bildsätze hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
+   Laden Sie die Bilder für Ihre Bild-Sets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. AEM Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
 1. [Erstellen Sie Bildsets.](#creating-image-sets)
 
@@ -81,9 +81,9 @@ Informationen zum Bearbeiten von Bildsets finden Sie unter [Bearbeiten von Bilds
 
 Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie den Abschnitt zu Bildern und Sets unter [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
-## Hochladen von Assets für Bildsätze {#uploading-assets-in-image-sets}
+## Hochladen von Assets für Bild-Sets {#uploading-assets-in-image-sets}
 
-Beginn durch Hochladen der Bild-Assets für Ihre Bildsätze. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat, um optimale Zoom-Details zu erzielen. Mit Dynamic Media können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixel gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixel oder eine beliebige andere Größenkombination mit bis zu 25 Megapixel verwenden.
+Laden Sie zunächst die Bild-Assets für die Bild-Sets hoch. Berücksichtigen Sie den Zoom bei der Auswahl von Bildern, da Benutzer Bilder im Bildset-Viewer einzoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat, um optimale Zoom-Details zu erzielen. Mit Dynamic Media können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixel gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixel oder eine beliebige andere Größenkombination mit bis zu 25 Megapixel verwenden.
 
 Bildsets unterstützen zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
@@ -162,7 +162,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
    * Wenn Sie eine Vorgabe anwenden möchten, tippen Sie oben rechts auf **[!UICONTROL Voreingestellt]**. Wählen Sie anschließend eine Vorgabe aus, um sie auf alle Elemente gleichzeitig anzuwenden.
    >[!NOTE]
    >
-   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, tippen Sie auf **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bildset-Editors und wählen Sie ein Bild aus (Sie können auch zu anderen Ordnern navigieren, um Bilder zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, wählen Sie ******[!UICONTROL Zu automatischer Miniatur wechseln]**.
+   >Beim Erstellen des Bildsets können Sie die Miniaturansicht des Bildsets ändern oder zulassen, dass AEM die Miniaturansicht anhand der Assets im Bildset automatisch auswählt. Wenn Sie eine Miniaturansicht auswählen möchten, tippen Sie auf **[!UICONTROL Miniatur ändern]** über dem Feld „Titel“ auf der Seite des Bildset-Editors und wählen Sie ein Bild aus (Sie können auch zu anderen Ordnern navigieren, um Bilder zu suchen). Wenn Sie eine Miniaturansicht ausgewählt haben und dann festlegen möchten, dass AEM eine aus dem Bildset generiert, **[!UICONTROL wählen Sie]** **[!UICONTROL Zu automatischer Miniatur wechseln]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Bildset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
