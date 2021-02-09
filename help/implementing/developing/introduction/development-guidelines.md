@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs`-Ordner geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien  im `/crx-quickstart/logs`-Ordner geschrieben.
 
 In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -122,7 +122,7 @@ Die Protokollebenen lauten wie folgt:
 
 Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
-## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
+## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
 
 ### Lokale Entwicklung {#local-development}
 
@@ -132,13 +132,13 @@ Beachten Sie, dass bei der lokalen Entwicklung (mit dem Cloud-fähigen Schnellst
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Kunden können auf CRXDE Lite in der Entwicklungs-Umgebung der Autorenebene zugreifen, jedoch nicht auf die Stufe oder Produktion. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
+Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Entwicklerkonsole auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
+Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Developer Console auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -148,19 +148,19 @@ Entwickler können Statusinformationen generieren und verschiedene Ressourcen au
 
 Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGi-Konfigurationen, Oak-Indizes, OSGi-Services und Sling-Jobs.
 
-![Entwicklerkonsole 1](/help/implementing/developing/introduction/assets/devconsole1.png)
+![Developer Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
 Wie unten dargestellt, können Entwickler Paketabhängigkeiten und Servlets auflösen:
 
-![Entwicklerkonsole 2](/help/implementing/developing/introduction/assets/devconsole2.png)
+![Developer Console 2](/help/implementing/developing/introduction/assets/devconsole2.png)
 
-![Entwicklerkonsole 3](/help/implementing/developing/introduction/assets/devconsole3.png)
+![Developer Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
+Die Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
 
-![Entwicklerkonsole 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei regulären Programmen wird der Zugriff auf die Entwicklerkonsole durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Bei regulären Programmen wird der Zugriff auf die Developer Console durch die „Cloud Manager-Entwicklerrolle“ in Admin Console definiert. Bei Sandbox-Programmen steht die Developer Console jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- und Produktions-Service {#aem-staging-and-production-service}
