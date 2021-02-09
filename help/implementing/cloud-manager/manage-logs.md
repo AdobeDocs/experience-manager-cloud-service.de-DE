@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.  Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Seite **Übersicht**:
+Diese Dateien können über die Benutzeroberfläche heruntergeladen werden. Dies kann über die Seite **Übersicht** erfolgen:
 
 ![](assets/download-logs1.png)
 
@@ -44,7 +44,7 @@ Der folgende Befehl ermöglicht das Tailing von Protokollen:
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Um die Umgebungs-ID (in diesem Fall „1884“) und die verfügbaren Dienst- oder Protokollnamenoptionen abzurufen, können Sie den folgenden Befehl verwenden:
+Um die Umgebungs-ID (in diesem Fall „1884“) und die verfügbaren Service- oder Protokollnamenoptionen abzurufen, können Sie den folgenden Befehl verwenden:
 
 ```java
 $ aio cloudmanager:list-environments
