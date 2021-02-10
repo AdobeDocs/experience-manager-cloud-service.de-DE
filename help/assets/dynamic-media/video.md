@@ -2,9 +2,9 @@
 title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 99%
 
 ---
@@ -772,7 +772,7 @@ Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter 
 1. Klicken Sie in der rechten oberen Ecke der Seite „Eigenschaften“ auf **[!UICONTROL Speichern und schließen]**.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
 
-   Weitere Informationen finden Sie im Abschnitt zum [Verwalten von Veröffentlichungen mit AEM Sites](https://helpx.adobe.com/de/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Weitere Informationen finden Sie im Abschnitt zum [Verwalten von Veröffentlichungen mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Optional können Sie das veröffentlichte Video in Ihrem YouTube-Kanal überprüfen.
 
@@ -983,7 +983,7 @@ Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten
 
 1. Tippen Sie in der Tabelle mit den am häufigsten veröffentlichten Videos auf einen Videonamen, um das Video abzuspielen und den Bericht zur Zielgruppentreue (Abbruch) des Videos anzuzeigen.
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
