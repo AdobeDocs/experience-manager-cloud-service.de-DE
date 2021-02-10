@@ -2,10 +2,10 @@
 title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie, mit welchen Best Practices Sie in Dynamic Media die Qualität Ihrer Bild-Assets optimieren können.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 97%
+source-wordcount: '1474'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-Das Whitepaper Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für AEM.
+* Das Whitepaper Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für AEM.
 
-Sehen Sie sich [Scharfzeichnen von Bildern mit der Unschärfemaske](https://helpx.adobe.com/de/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html) in Adobe TV an.
+* Sehen Sie sich [Verwenden des Scharfzeichnens mit AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media) an.
 
 In AEM können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder an beiden Zeitpunkten scharfzeichnen. In den meisten Fällen sollten Sie Bilder aber nur mit einer Methode, nicht mit beiden scharfzeichnen. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
