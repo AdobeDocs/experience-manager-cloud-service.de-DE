@@ -174,7 +174,6 @@ Beispiel:
 >
 >* `"new section"`: Zeigt an, dass das aktuelle Element der Platzhalter des Containers ist
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
-
 >
 
 
