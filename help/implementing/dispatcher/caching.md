@@ -2,7 +2,7 @@
 title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeichern in AEM als Cloud Service '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 95%
@@ -34,7 +34,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
 * Kann auf einer feineren Ebene durch die folgenden Anweisungen von apache mod_headers überschrieben werden:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
    Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, das Caching immer anzuwenden, können Sie folgendermaßen die Option „immer“ hinzufügen:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
 * Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf *privat*. Folgendes würde beispielsweise verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **myfolder** zwischengespeichert werden:
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Dies kann beispielsweise nützlich sein, wenn Ihre Geschäftslogik eine Feinabst
 * Können durch die folgenden Apache-Anweisungen `mod_headers` auf eine feinere Ebene gesetzt werden:
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
