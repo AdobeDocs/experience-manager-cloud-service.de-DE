@@ -1,11 +1,13 @@
 ---
 title: Aktivieren der progressiven Web-App-Funktionen
 description: AEM Sites ermöglicht es dem Autor von Inhalten, progressive Web-App-Funktionen über eine einfache Konfiguration zu aktivieren, anstatt zu kodieren.
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -78,7 +80,7 @@ Der Entwickler muss außerdem den folgenden Link zur Datei `customfooterlibs.htm
 
 >[!NOTE]
 >
->Zukünftige Versionen von [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) enthalten diese Funktionen automatisch. Wenn Sie jedoch benutzerdefinierte Komponenten anstelle der Hauptkomponenten verwenden, sind diese Anpassungen immer erforderlich.
+>Zukünftige Versionen von [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) enthalten diese Funktionen automatisch. Wenn Sie jedoch benutzerdefinierte Komponenten anstelle der Hauptkomponenten verwenden, sind diese Anpassungen immer erforderlich.
 
 ### Anpassen des Dispatchers {#adjust-dispatcher}
 
@@ -93,7 +95,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 
 >[!NOTE]
 >
->Zukünftige Versionen des [AEM Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#developing) enthalten diese Konfiguration.
+>Zukünftige Versionen des [AEM Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#develop) enthalten diese Konfiguration.
 
 ## Aktivieren von PWA für Ihre Site {#enabling-pwa-for-your-site}
 
@@ -122,7 +124,7 @@ Wenn [die Voraussetzungen](#prerequisites) erfüllt sind, ist es für einen Inha
       ![Definieren von PWA-Offline-Pfaden](../assets/pwa-offline.png)
 
 
-1. Tippen oder klicken Sie auf **Speichern und Schließen**.
+1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
 Ihre Site ist jetzt konfiguriert und Sie können sie als lokale App installieren.[](#using-pwa-enabled-site)
 
