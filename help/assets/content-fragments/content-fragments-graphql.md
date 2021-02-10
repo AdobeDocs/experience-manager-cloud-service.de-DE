@@ -2,10 +2,10 @@
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit GraphQL für die Headless-Bereitstellung von Inhalten verwenden.
 translation-type: tm+mt
-source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
+source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 85%
+source-wordcount: '723'
+ht-degree: 78%
 
 ---
 
@@ -17,6 +17,14 @@ Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmen
 >[!NOTE]
 >
 >Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/implementing/developing/headless/introduction.md).
+
+>[!NOTE]
+>
+>GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) als Cloud Service verwendet:
+>
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Inhaltsfragmente arbeiten mit der AEM GraphQL API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Anwendungen](/help/assets/content-fragments/graphql-api-content-fragments.md) bereitzustellen.
+
 
 ## Headless-CMS {#headless-cms}
 
