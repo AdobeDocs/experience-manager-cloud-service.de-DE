@@ -2,10 +2,10 @@
 title: Verwalten von Bildvorgaben
 description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 98%
+source-wordcount: '3647'
+ht-degree: 96%
 
 ---
 
@@ -374,7 +374,8 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
     <div>
-      Das Scharfzeichnen wird unter <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Scharfzeichnen von Bildern</a> beschrieben.
+      Scharfzeichnen wird beschrieben unter
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit AEM Videos von Dynamic Media</a>, in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Scharfzeichnen eines Bildes</a>-Onlinehilfethema und in <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Bewährte Verfahren zum Scharfzeichnen von Bildern in der herunterladbaren PDF-Datei von Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
