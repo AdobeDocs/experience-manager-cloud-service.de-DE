@@ -1,11 +1,12 @@
 ---
 title: Einrichten von Dynamic Media
-description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
+description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- und Viewer-Vorgaben verwalten.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 100%
+source-wordcount: '179'
+ht-degree: 76%
 
 ---
 
@@ -40,4 +41,4 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Sobald Sie Experience Manager eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich in einer aktualisierten Experience Manager-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie die Assets ggf. erneut verarbeiten, um Dynamic Media für die Assets verwenden zu können.
+>* Sobald Sie Experience Manager eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie auf einer aktualisierten Instanz von Experience Manager und neu auf Dynamic Media arbeiten, müssen Sie Ihre Assets wahrscheinlich neu verarbeiten, um sie Dynamic Media-fähig zu machen. Siehe [Erneutes Verarbeiten von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
