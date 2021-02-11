@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 95%
 
 ---
 
@@ -55,6 +55,9 @@ Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementin
 
    * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
       Weitere Informationen finden Sie unter [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
+
+   * Benutzerdefinierte UI-Tests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Benutzerdefinierte UI-Tests können geschrieben werden und ermöglichen es Kunden, schnell Test-Automatisierungs-Suites zu erstellen, um Web- und mobile Apps zu validieren, die auf AEM basieren.
+Weitere Informationen finden Sie unter [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
    * Erlebnisprüfung: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt. Die konfigurierten Seiten werden an den Service gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen zu prüfen. Diese Erkenntnisse sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
 Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-testing.md).
