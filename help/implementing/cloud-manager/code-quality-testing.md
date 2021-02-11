@@ -2,7 +2,7 @@
 title: Testen der Code-Qualität – Cloud Services
 description: Testen der Code-Qualität – Cloud Services
 translation-type: tm+mt
-source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfiguri
 Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Derzeit ist dies durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mithilfe von OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) bezeichnet.
 
 >[!NOTE]
->Sie können die vollständige Liste der Regeln [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx) herunterladen.
+>Sie können die vollständige Liste der Regeln [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen.
 
 **Dreistufige Akzeptanztests**
 
