@@ -2,7 +2,7 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: 'Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 100%
@@ -262,7 +262,7 @@ Weitere Informationen finden Sie in der Übersicht über die [Änderungen an Sit
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native SaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital-Asset-Management- und Dynamic-Media-Vorgänge schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
+Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native PaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital-Asset-Management- und Dynamic-Media-Vorgänge schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
 
 Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation in der Cloud sowie die hochleistungsfähige Erfassung und Suche von Assets.
 
