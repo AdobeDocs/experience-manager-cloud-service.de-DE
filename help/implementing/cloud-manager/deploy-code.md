@@ -2,7 +2,7 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementin
    * Erlebnisprüfung: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt. Die konfigurierten Seiten werden an den Service gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen zu prüfen. Diese Erkenntnisse sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
 Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-testing.md).
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
