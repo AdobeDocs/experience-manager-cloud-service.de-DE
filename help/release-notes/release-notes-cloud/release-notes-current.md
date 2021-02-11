@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 21%
+source-wordcount: '978'
+ht-degree: 17%
 
 ---
 
@@ -69,15 +69,37 @@ Die folgende Version (2021.2.0) wird am 25. Februar 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0 ist der 14. Januar 2021.
+Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. Februar 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-cloud-manager}
+
+* Die Cloud Manager-Produktionspipeline umfasst jetzt benutzerdefinierte Testfunktionen für die Benutzeroberfläche.
+
+* Assets, die Kunden jetzt über die Benutzeroberfläche von Cloud Manager auswählen können, wann und wo sie ihre Brand Portal-Instanz auf Self-Service-Weise bereitstellen. Für ein normales (nicht Sandbox-)Programm mit Assets-Lösung kann nun das Markenportal auf der Umgebung Produktion bereitgestellt werden. Die Bereitstellung kann nur einmal auf der Produktions-Umgebung erfolgen.
+
+* Der AEM Projektarchiv, der in Project und Sandbox Creation verwendet wird, wurde auf Version 25 aktualisiert.
+
+* Die Liste veralteter APIs, die während der Codeprüfung identifiziert wurden, wurde optimiert und enthält nun weitere Klassen und Methoden, die in den neuesten Cloud Service SDK-Versionen nicht mehr unterstützt werden.
+
+* SonarQube-Profil für Cloud Manager aktualisiert, um die Sonar-Regel squid:S2142 zu entfernen. Dies steht nicht mehr in Konflikt mit Thread-Unterbrechungsüberprüfungen.
+
+* Die Benutzeroberfläche von Cloud Manager informiert den Benutzer, der vorübergehend keinen Domänennamen hinzufügen/aktualisieren kann, da an der zugehörigen Umgebung entweder eine laufende Pipeline angehängt ist oder derzeit auf den Genehmigungsvorgang wartet.
+
+* Eigenschaften, die in benutzerdefinierten `pom.xml`-Dateien mit dem Präfix Sonar festgelegt wurden, werden jetzt dynamisch entfernt, um Fehler beim Erstellen und Überprüfen von Qualität zu vermeiden.
+
+* Die Benutzeroberfläche von Cloud Manager informiert den Benutzer, der vorübergehend kein SSL-Zertifikat auswählen kann, wenn es von einem Domänennamen verwendet wird, der derzeit bereitgestellt wird.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Die Assets Production-Instanz kann gelegentlich den Markenportalstatus auf der Detailseite **Umgebung** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
+* Beim Abgleichen des SSL-Zertifikats mit einem Domänennamen wird nicht mehr zwischen Groß- und Kleinschreibung unterschieden.
 
-* Beim Auslösen einer Dehibernate aus Cloud Manager wurde manchmal eine Fehlermeldung angezeigt, auch wenn die Deaktivierung erfolgreich gestartet wurde.
+* Die Benutzeroberfläche von Cloud Manager informiert nun einen Benutzer, wenn die privaten Schlüssel des Zertifikats die 2048-Bit-Grenze nicht erfüllen, und gibt eine entsprechende Fehlermeldung aus.
 
-* Seltene Fälle von Fehlern beim Erstellen oder Löschen von Umgebung wurden behoben.
+* Die Benutzeroberfläche von Cloud Manager informiert den Benutzer, der vorübergehend kein SSL-Zertifikat auswählen kann, wenn es von einem Domänennamen verwendet wird, der derzeit bereitgestellt wird.
+
+* In einigen Fällen kann ein internes Problem dazu führen, dass der Löschvorgang der Umgebung blockiert wird.
+
+* Einige Pipeline-Fehler wurden fälschlicherweise als Pipeline-Fehler gemeldet.
 
 ## AEM als Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
