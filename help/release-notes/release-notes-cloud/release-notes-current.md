@@ -2,7 +2,7 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
+source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 17%
@@ -124,7 +124,7 @@ Weitere Informationen finden Sie in der Dokumentation [hier](https://experiencel
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungs-Tool v1.2.4 ist der 10. Februar 2021.
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.4 ist der 10. Februar 2021.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
