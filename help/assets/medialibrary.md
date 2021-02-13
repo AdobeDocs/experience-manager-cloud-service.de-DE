@@ -3,10 +3,10 @@ title: AEM Assets und AEM Media Library
 description: Häufig gestellte Fragen zu AEM Assets und AEM Media Library, einschließlich den Unterschieden zwischen den beiden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 97%
+source-wordcount: '693'
+ht-degree: 91%
 
 ---
 
@@ -27,10 +27,10 @@ Die Medienbibliothek AEM Media Library ist ein bestimmter Teil des AEM WCM-Inhal
 
 Die folgenden einzigartigen Funktionen stehen AEM Assets-Kunden exklusiv zur Verfügung:
 
-1. Extrahieren und Bearbeiten von zusätzlichen Metadaten neben Titel, Tags und Beschreibung
-1. AEM Assets-Admin, im Begrüßungsbildschirm durch Klicken auf die zweite Schaltfläche neben der Website-Administration aufrufbar
+1. Die Möglichkeit, andere Metadaten als Titel, Tags und Beschreibungen zu extrahieren und zu bearbeiten.
+1. Der AEM Assets Admin, der über den Startbildschirm verfügbar ist, indem Sie auf die zweite Option neben `siteadmin` klicken.
 1. Alle Workflow-Schritte im Zusammenhang mit Digital Asset Management, und zwar AEM Assets-Erfassung, AEM Assets-Löschung, AEM Assets-Verarbeitung von Teil-Assets, AEM Assets-Metadatenextraktion
-1. Bibliotheken mit „dam“ im Paket
+1. Bibliotheken einschließlich &quot;dam&quot;im Paketraum.
 
 Zur Nutzung dieser Funktionen ist eine gültige AEM Assets-Lizenz erforderlich. 
 
