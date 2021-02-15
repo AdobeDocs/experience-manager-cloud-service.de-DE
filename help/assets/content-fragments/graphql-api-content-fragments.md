@@ -2,10 +2,10 @@
 title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 71%
+source-wordcount: '3296'
+ht-degree: 67%
 
 ---
 
@@ -202,7 +202,7 @@ Dieses Archiv enthält sowohl [die erforderliche zusätzliche Konfiguration](#ad
 
 Dieses Paket soll als Entwurf für Ihre eigenen GraphQL Projekte dienen. Einzelheiten zur Verwendung des Pakets finden Sie im Paket **README**.
 
-Wenn Sie die erforderliche Konfiguration lieber manuell erstellen möchten, stellt Adobe auch ein dediziertes [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip) bereit. Dieses Inhaltspaket enthält nur den GraphQL-Endpunkt ohne Konfiguration.
+Sollten Sie es vorziehen, die erforderliche Konfiguration manuell zu erstellen, stellt Adobe auch ein dediziertes [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip) bereit. Dieses Inhaltspaket enthält nur den GraphQL-Endpunkt ohne Konfiguration.
 
 ## GraphiQL-Schnittstelle {#graphiql-interface}
 
@@ -725,23 +725,90 @@ Die folgenden Schritte sind erforderlich, um eine bestimmte Abfrage beizubehalte
 
 ## Abfragen des GraphQL-Endpunkts von einer externen Website {#query-graphql-endpoint-from-external-website}
 
+Für den Zugriff auf den GraphQL-Endpunkt über eine externe Website müssen Sie Folgendes konfigurieren:
+
+* [CORS-Filter](#cors-filter)
+* [Werber-Filter](#referrer-filter)
+
+### CORS-Filter {#cors-filter}
+
 >[!NOTE]
 >
 >Einen detaillierten Überblick über die CORS-Richtlinie zur gemeinsamen Nutzung von Ressourcen in AEM finden Sie unter [Grundlegendes zur gemeinsamen Nutzung gemeinsamer Ressourcen (Cross-Origin Resource Sharing – CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors)).
 
-Damit eine Website eines Drittanbieters JSON-Ausgaben nutzen kann, muss eine CORS-Richtlinie im Git-Repository des Kunden konfiguriert werden. Dazu wird eine entsprechende OSGi-CORS-Konfigurationsdatei für den gewünschten Endpunkt hinzugefügt. Diese Konfiguration sollte einen vertrauenswürdigen Website-Namen (oder regex) angeben, für den der Zugriff gewährt werden soll.
+Um auf den GraphQL-Endpunkt zugreifen zu können, muss eine CORS-Richtlinie im Customer Git-Repository konfiguriert werden. Dazu fügen Sie eine entsprechende OSGi CORS-Konfigurationsdatei für den/die gewünschten Endpunkt/en hinzu.
 
-* Zugriff auf den GraphQL-Endpunkt:
+Diese Konfiguration muss eine vertrauenswürdige Website-Herkunft `alloworigin` oder `alloworiginregexp` angeben, für die der Zugriff gewährt werden muss.
 
-   * alloworigin: [Ihre domain] oder alloworiginregexp: [Ihr Domain-Regex]
-   * supportedmethods: [POST]
-   * zulässige Pfade: [&quot;/content/graphql/global/endpoint.json&quot;]
+Um beispielsweise Zugriff auf den GraphQL-Endpunkt und den Endpunkt für beständige Abfragen für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
 
-* Zugriff auf den Endpunkt für persistente GraphQL-Abfragen:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworigin: [Ihre domain] oder alloworiginregexp: [Ihr Domain-Regex]
-   * supportedmethods: [GET]
-   * allowedpaths: [&quot;/graphql/execute.json/.*&quot;]
+Wenn Sie einen Vanity-Pfad für den Endpunkt konfiguriert haben, können Sie ihn auch in `allowedpaths` verwenden.
+
+### Werber-Filter {#referrer-filter}
+
+Zusätzlich zur CORS-Konfiguration muss ein Werber-Filter konfiguriert werden, um den Zugriff von Drittanbieterhosts zu ermöglichen.
+
+Dazu fügen Sie eine entsprechende OSGi-Werber-Konfigurationsdatei hinzu, die Folgendes beinhaltet:
+
+* gibt einen Hostnamen der vertrauenswürdigen Website an. entweder `allow.hosts` oder `allow.hosts.regexp`,
+* gewährt Zugriff auf diesen Hostnamen.
+
+Wenn Sie beispielsweise mit dem Werber `my.domain` Zugriff auf Anforderungen gewähren möchten, können Sie:
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
