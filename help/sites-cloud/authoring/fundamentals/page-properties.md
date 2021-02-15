@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 100%
+source-wordcount: '1894'
+ht-degree: 67%
 
 ---
 
@@ -20,49 +20,43 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 ### Allgemein {#basic}
 
-* **Titel**
+* **Titel und Tags**
 
-   * Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
-   * Dies ist ein Pflichtfeld.
+   * **Titel**  - Der Titel der Seite wird an verschiedenen Stellen angezeigt. Beispielsweise die Liste &quot; **** webtestab&quot;und die Ansichten &quot; **** Sitescard/Liste&quot;.
+      * Dies ist ein Pflichtfeld.
+   * **Tags** - Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren.
+      * Wenn Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
+      * Ein vollkommen neues Tag kann angegeben werden, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+         * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
+         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
+      * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
+      * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
+      * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+   * **In Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
 
-* **Tags**
+* **Branding**
 
-   * Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren.
-   * Wenn Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-   * Ein vollkommen neues Tag kann angegeben werden, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
-      * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-      * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
-   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
-   * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
-   * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+   Wenden Sie eine konsistente Markenidentität über mehrere Seiten hinweg an, indem Sie an jeden Seitentitel ein Markenmuster anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-* **In Navigation ausblenden**
-
-   * Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
+   * **Außerkraftsetzen**  - Markenslug auf dieser Seite definieren.
+      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, sie haben auch ihre **Override**-Werte eingestellt.
+   * **Wert**  außer Kraft setzen: Der Text der Markenfolie, der an den Seitentitel angehängt wird.
+      * Der Wert wird nach einem Pipe-Zeichen wie &quot;Radfahren in der Toskana&quot;an den Seitentitel angehängt | Immer bereit für die WKND&quot;
 
 * **HTML-ID**
 
-   * HTML-ID, die auf die Komponente angewandt wird.
+   * **ID**  - HTML-ID, die auf die Komponente angewendet wird.
 
-* **Seitentitel**
+* **Weitere Titel und Beschreibungen**
 
-   * Ein Titel zur Verwendung auf der Seite. Dieser wird üblicherweise von Titel-Komponenten verwendet. Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   * **Seitentitel**  - Ein Titel, der auf der Seite verwendet wird. Dieser wird üblicherweise von Titel-Komponenten verwendet. Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   * **Navigationstitel**  - Sie können einen eigenen Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie etwas präzisere wünschen). Wenn leer, wird der  **** Titel verwendet.
+   * **Untertitel**  - Ein Untertitel, der auf der Seite verwendet werden soll.
+   * **Beschreibung** : Beschreibung der Seite, ihres Zwecks oder anderer hinzuzufügender Details.
 
-* **Navigationstitel**
+* **Einschaltzeit/Ausschaltzeit**
 
-   * Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
-
-* **Untertitel**
-
-   * Ein Untertitel zur Verwendung auf der Seite.
-
-* **Beschreibung**
-
-   * Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
-
-* **Einschaltzeit**
-
-   * Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
+   * **Zeit**  - Das Datum und die Uhrzeit, zu der die veröffentlichte Umgebung auf der Veröffentlichungsseite sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
       >[!NOTE]
       >
@@ -71,12 +65,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
       * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
       * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+   * **Off Time**  - Ähnlich wie und häufig in Kombination mit  **On Time** wird hier der Zeitpunkt festgelegt, zu dem die veröffentlichte Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
+
    * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
-* **Ausschaltzeit**
-
-   * Parallel zur **Einschaltzeit** wird hiermit der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
-   * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
 * **Vanity-URL**
 
@@ -92,31 +84,24 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 
-* **Vanity-URL umleiten**
+   * **hinzufügen** - Tippen oder klicken Sie auf , um ein Feld anzuzeigen, um eine Vanity-URL für die Seite zu definieren.
+      * Tippen oder klicken Sie erneut, um mehrere hinzuzufügen.
+      * Tippen oder klicken Sie auf das Symbol **Entfernen**, um die Vanity-URL zu löschen.
+   * **Umleitungs-Vanity-URL** : Gibt an, ob die Seite die Vanity-URL verwenden soll.
 
-   * Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
+
+
 
 ### Erweitert {#advanced}
 
-* **Sprache**
+* **Einstellungen**
 
-   * Die Seitensprache.
+   * **Sprache**  - Die Seitensprache
+   * **Sprachstamm** : Muss überprüft werden, wenn die Seite der Stamm einer Sprachkopie ist.
+   * **Umleitung** : Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll
+   * **Design**  - Gibt an, ob die Seite im Seitennavigationsnavigationsnavigationder resultierenden Site ein- oder ausgeblendet wird.
+   * **Alias**  - Gibt einen Alias an, der für diese Seite verwendet werden soll
 
-* **Sprach-Stamm**
-
-   * Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-
-* **Umleiten**
-
-   * Geben Sie eine Seite an, zu der die Seite automatisch umgeleitet werden soll.
-
-* **Design**
-
-   * Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
-
-* **Alias**
-
-   * Geben Sie einen Alias an, der für diese Seite verwendet werden soll.
    >[!NOTE]
    >
    >Alias legt die Eigenschaft `sling:alias` fest, um einen Alias für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
@@ -129,52 +114,36 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Vererbt von &lt;Pfad>**
+* **Konfiguration**
 
-   * Gibt an, ob die Seite vererbt wurde und von wo.
+   * **Cloud-Konfiguration**  - Der Pfad zur Konfiguration
 
-* **Cloud-Konfiguration**
+* **Vorlageneinstellungen**
 
-   * Der Pfad zur Konfiguration.
+   * **Zulässige Vorlagen**  -  [Definiert die Liste von Vorlagen, die in dieser Unterverzweigung ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) verfügbar sind
 
-* **Zugelassene Vorlagen**
+* **Authentifizierungspflicht**
 
-   * [Definieren Sie die Liste der Vorlagen, die in dieser](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) Zweigstelle verfügbar sein werden.
+   * **Aktivieren**  - Aktivieren Sie die Authentifizierung, um auf die Seite zuzugreifen.
 
-* **Aktivieren** (Authentifizierungspflicht)
+      >[!NOTE]
+      >
+      >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
 
-   * Aktivieren (oder deaktivieren) Sie die Verwendung der Authentifizierung für den Zugriff auf die Seite.
-   >[!NOTE]
-   >
-   >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
+   * **Anmeldeseite**  - Die für die Anmeldung zu verwendende Seite
 
-* **Anmeldeseite**
+* **Export**
 
-   * Die für die Anmeldung zu verwendende Seite.
-
-* **Konfiguration exportieren**
-
-   * Geben Sie eine Exportkonfiguration an.
+   * **Exportkonfiguration**  - Gibt eine Exportkonfiguration an
 
 ### Miniaturansicht  {#thumbnail}
 
-Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
+Konfigurieren der Miniaturansicht der Seite
 
-* **Vorschau generieren**
-
-   * Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
-
-* **Bild hochladen**
-
-   * Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
-
-* **Bild auswählen**
-
-   * Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
-
-* **Zurück zur letzten Version**
-
-   * Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
+* **Vorschau**  generieren: Generieren Sie eine Vorschau der Seite, die als Miniaturansicht verwendet werden soll
+* **Bild**  hochladen - Hochladen eines Bildes zur Verwendung als Miniaturansicht
+* **Bild**  auswählen: Wählen Sie ein vorhandenes Asset aus, das als Miniaturansicht verwendet werden soll
+* **Zurücksetzen** : Diese Option wird verfügbar, nachdem Sie die Miniaturansicht geändert haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
 ### Social Media {#social-media}
 
@@ -189,9 +158,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen**
-
-   * Legen Sie Eigenschaften für Cloud Services fest.
+* **Cloud Service-Konfigurationen** - Legen Sie Eigenschaften für Cloud Services fest
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **ContextHub-Konfigurationen**
 
-   * Wählen Sie die ContextHub-Konfiguration und den Segmentpfad aus.
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **ContextHub-Pfad**  - Definieren der  [ContextHub-Konfiguration](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Segmentpfad**  - Definieren des  [Segmentpfads](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Konfiguration für Targeting**
 
-   * Wählen Sie eine [Marke, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marke** : Definiert eine  [Marke, um einen Bereich für das Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) festzulegen.
    >[!NOTE]
-   >Für diese Option muss das Benutzerkonto der `Target Adminstrators`-Gruppe angehören.
+   >Für diese Option muss das Benutzerkonto der `Target Administrators`-Gruppe angehören.
 
 ### Berechtigungen {#permissions}
 
@@ -227,25 +192,33 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen.
 
-   * Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird.
+* **Aktuelle Live Copies**  - Listen, die auf dieser Blueprint-Seite basieren (d.h. Live Copies)
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-
-   * Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
-
+* **Rollout-Konfigurationen** : Steuert die Umstände, unter denen Änderungen an die Live Copy weitergegeben werden
 
 ### Live Copy   {#live-copy}
 
-* **Live Copy**
+* **Synchronisieren**  - Live Copy mit Blueprint synchronisieren, lokale Änderungen beibehalten
+* **Zurücksetzen**  - &quot;Live Copy auf Blueprint zurücksetzen&quot;und lokale Änderungen entfernen
+* **Aussetzen**  - Live Copy von weiteren Änderungen bei der Einführung aussetzen
+* **Abtrennen**  - Live Copy von Blueprint trennen
 
-   * Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die Verwaltung mehrerer Websites verwendet wird. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
+* **Quelle**
 
-### Site-Struktur   {#site-structure}
+   * Zeigt den Pfad des Entwurfs für diese Live Copy an
 
-* Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
+* **Status**
+
+   * Listen Aktueller Live Copy-Status der Seite
+
+* **Konfiguration**
+
+   * **Live Copy-Vererbung** : Wenn diese Option aktiviert ist, ist die Live Copy-Konfiguration für alle untergeordneten Elemente wirksam
+   * **Rollout-Konfigurationen von übergeordneter Seite**  übernehmen - Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
+   * **Rollout-Konfiguration**  auswählen: Definiert die Umstände, unter denen Änderungen aus dem Blueprint übernommen werden und nur verfügbar sind, wenn &quot;Rollout-Konfigurationen  **übernehmen&quot;von nicht ausgewählten** Parentis nicht ausgewählt ist
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
