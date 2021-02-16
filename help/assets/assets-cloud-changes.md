@@ -2,10 +2,10 @@
 title: Wichtige Änderungen in  [!DNL Adobe Experience Manager Assets] als a [!DNL Cloud Service]
 description: Bemerkenswerte Änderungen zu [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 44%
+source-wordcount: '697'
+ht-degree: 36%
 
 ---
 
@@ -28,13 +28,17 @@ Das Hochladen von Assets wurde für die Effizienz optimiert, indem die Erfassung
    * Asset-Upload [mit direktem Binärzugriff](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Technische Details finden Sie unter [Direct Binary Upload-Protokoll und APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Einen Vergleich der verfügbaren API-Methoden für grundlegende CRUD-Vorgänge finden Sie unter [APIs und Asset-Vorgänge](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* Der Standardarbeitsablauf **[!UICONTROL DAM Asset Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Mikrodienste einen skalierbaren, leicht verfügbaren Dienst, der den Großteil der standardmäßigen Asset-Verarbeitung abdeckt (Darstellungen, Metadaten-Extraktion und Text-Extraktion für die Indizierung).
+* Der Standardarbeitsablauf **[!UICONTROL DAM Asset Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Mikrodienste einen skalierbaren, leicht verfügbaren Dienst, der den Großteil der standardmäßigen Asset-Verarbeitung abdeckt (Darstellungen, Metadaten-Extraktion und Text-Extraktion für die Indexierung).
    * Siehe [Asset-Mikrodienste konfigurieren und verwenden](/help/assets/asset-microservices-configure-and-use.md)
    * Um benutzerdefinierte Workflow-Schritte in der Verarbeitung zu haben, können [Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwendet werden.
+* Die Metadaten-Schreibablage wird nicht unterstützt.
 * Für Assets, die mit Package Manager hochgeladen werden, ist eine manuelle Neuverarbeitung mithilfe der Aktion **[!UICONTROL Asset]** in der [!DNL Assets]-Schnittstelle erforderlich.
-* Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
+* Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. [Automatische MIME-Typerkennung ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) ist nicht verfügbar. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern.
+* [[!DNL Assets] Es ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) liegen keine Erfahrungen zur Startseite vor.
+* Die Erkennung von Duplikat-Assets funktioniert anders als [wie sie in Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) funktioniert hat.
+* Nur für Platzierung (FPO) werden Darstellungen anders generiert als in früheren [!DNL Experience Manager] Versionen. Siehe [FPO-Darstellung für Experience Manager als Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Mit Asset-Microservices generierte Standardausgabedarstellungen werden in abwärtskompatibler Form im Asset-Repository-Knoten gespeichert (gleiche Benennungskonventionen).
+Mit Asset-Mikrodiensten generierte Standarddarstellungen werden auf kompatible Weise in den Asset-Repository-Knoten unter Verwendung derselben Benennungskonventionen gespeichert.
 
 ## Entwickeln und Testen von Asset-Microservices {#asset-microservices}
 
