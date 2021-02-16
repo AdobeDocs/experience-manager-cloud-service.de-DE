@@ -2,10 +2,10 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 89%
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,6 @@ Funktionstests werden in zwei Typen eingeteilt:
 
 * Funktionstests für das Produkt
 * Benutzerdefinierte Funktionstests
-* Benutzerdefinierte Benutzeroberflächentests
 
 ## Funktionstests für das Produkt {#product-functional-testing}
 
@@ -34,12 +33,6 @@ Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig
 
 >[!NOTE]
 >Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
-
-## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
-
-Benutzerdefinierte UI-Tests können geschrieben werden und ermöglichen es Kunden, schnell Test-Automatisierungs-Suites zu erstellen, um Web- und mobile Apps zu validieren, die auf AEM basieren.
-
-Weitere Informationen zum Schreiben benutzerdefinierter UI-Tests finden Sie unter [Erstellen von UI-Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Schreiben von Funktionstests {#writing-functional-tests}
