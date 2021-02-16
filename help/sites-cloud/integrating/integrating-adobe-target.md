@@ -2,9 +2,9 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 81%
 
 ---
@@ -54,7 +54,7 @@ Wie bereits erwähnt, ist der erste Fall der häufigste Fall für AEM Cloud Serv
 
 >[!NOTE]
 >
-> Wenn Sie eine bereits vorhandene Konfiguration einer Zielgruppe bearbeiten möchten:
+> Wenn Sie eine bestehende Konfiguration der Zielgruppe ändern möchten:
 >
 > 1. Geben Sie die Tenant-ID erneut ein.
 > 2. Stellen Sie eine erneute Verbindung zur Zielgruppe her.
