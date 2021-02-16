@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1097'
 ht-degree: 17%
 
 ---
@@ -73,7 +73,6 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
-* Die Cloud Manager-Produktionspipeline umfasst jetzt benutzerdefinierte Testfunktionen für die Benutzeroberfläche.
 
 * Assets, die Kunden jetzt über die Benutzeroberfläche von Cloud Manager auswählen können, wann und wo sie ihre Brand Portal-Instanz auf Self-Service-Weise bereitstellen. Für ein normales (nicht Sandbox-)Programm mit Assets-Lösung kann nun das Markenportal auf der Umgebung Produktion bereitgestellt werden. Die Bereitstellung kann nur einmal auf der Produktions-Umgebung erfolgen.
 
