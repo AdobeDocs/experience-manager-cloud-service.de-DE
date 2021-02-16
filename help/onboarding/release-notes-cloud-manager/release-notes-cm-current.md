@@ -2,10 +2,10 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.2.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.2.0
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 18%
+source-wordcount: '388'
+ht-degree: 19%
 
 ---
 
@@ -21,8 +21,6 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 ## Cloud Manager {#cloud-manager}
 
 ### Neue Funktionen {#what-is-new}
-
-* Die Cloud Manager-Produktionspipeline umfasst jetzt benutzerdefinierte Testfunktionen für die Benutzeroberfläche.
 
 * Assets, die Kunden jetzt über die Benutzeroberfläche von Cloud Manager auswählen können, wann und wo sie ihre Brand Portal-Instanz auf Self-Service-Weise bereitstellen. Für ein normales (nicht Sandbox-)Programm mit Assets-Lösung kann nun das Markenportal auf der Umgebung Produktion bereitgestellt werden. Die Bereitstellung kann nur einmal auf der Produktions-Umgebung erfolgen.
 
