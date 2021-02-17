@@ -162,8 +162,7 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
 Die Anfragen werden in der Reihenfolge ihres Eingangs beim technischen Support gemäß Warteliste bearbeitet.
 
 >[!NOTE]
->
->Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
+Die Vorlaufzeit kann lang sein, da zum Aktivieren der Funktion „Intelligente Bildbearbeitung“ der Cache von Adobe gelöscht werden muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden.
 
 ## Welche Risiken bestehen bei der Umstellung auf die intelligente Bildbearbeitung? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -185,8 +184,7 @@ Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder di
 1. Wiederholen Sie diesen Test auf verschiedenen Browsern und bei unterschiedlichen Benutzerbedingungen.
 
 >[!NOTE]
->
->Nicht alle Bilder werden konvertiert. Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
+Nicht alle Bilder werden konvertiert. Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
