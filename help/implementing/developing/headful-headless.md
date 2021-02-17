@@ -22,7 +22,7 @@ AEM können auch zur einfachen Verwaltung von Inhalten verwendet werden, sodass 
 
 Aber das muss keine binäre Entscheidung sein. AEM Angebot haben eine beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
 
-![AEM](headless/assets/aem-implementation-models.png)
+![AEM-Implementierungsmodelle](headless/assets/aem-implementation-models.png)
 
 In einem schlagkräftigen oder vollständigen Stapelmodell wird der Inhalt im AEM Repository und AEM Komponenten auf der Grundlage von Java, HTL usw. verwaltet. werden verwendet, um den Inhalt für die Benutzererfahrung wiederzugeben. In diesem Modell erfolgt die Erstellung des Inhalts, die Formatierung, Präsentation und Bereitstellung des Inhalts in AEM.
 
