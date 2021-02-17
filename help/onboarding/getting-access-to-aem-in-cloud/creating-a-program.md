@@ -86,11 +86,11 @@ Wählen Sie **Programm** auf der Seite **Programm-Übersicht** aus, um Ihr Sandb
 
 ## Erstellen eines regulären Programms {#create-regular-program}
 
-Ein *Reguläres*-Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und Beginn zum Schreiben, Erstellen und Testen von Code mit dem Ziel der Bereitstellung für die Produktion bereitstellen können.
+Ein *Reguläres*-Programm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und Beginn zum Schreiben, Erstellen und Testen von Code mit dem Ziel der Bereitstellung in der Produktion bereitstellen können.
 
 Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
 
-1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option **Für Produktion einrichten**, um ein reguläres Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms annehmen oder bearbeiten, bevor er **Weiter** auswählt.
+1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option **Für Produktion einrichten**, um ein reguläres Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er **Weiter** auswählt.
 
    ![](assets/create-prod1.png)
 
