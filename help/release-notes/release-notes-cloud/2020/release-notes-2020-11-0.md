@@ -1,138 +1,138 @@
 ---
-title: Versionshinweise für die Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für die Version 2020.11.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 translation-type: tm+mt
 source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 13%
+ht-degree: 99%
 
 ---
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] als Cloud Service beschrieben.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2020.11.0 ist der 2. Dezember 2020.
-Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht
+Die Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 2. Dezember 2020 veröffentlicht.
+Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* **[Startet Hierarchieverwaltung](/help/sites-cloud/authoring/launches/managing-pages.md)  und  [zukünftigen Timewarp](/help/sites-cloud/authoring/launches/preview.md)**: Die neue Benutzeroberfläche zum Hinzufügen/Entfernen von Seiten während eines Starts und das Browsen der Site mit &quot;Zeitverkrümmung&quot;zeigt den Zukunftsstatus von Launches an.
+* **[Hierarchieverwaltung für Launches](/help/sites-cloud/authoring/launches/managing-pages.md) und [Timewarp für Zeitpunkte in der Zukunft](/help/sites-cloud/authoring/launches/preview.md)**: Neue Benutzeroberfläche zum Hinzufügen/Entfernen von Sites innerhalb eines Launches und das Durchsuchen der Site mit Timewarp zeigt den zukünftigen Status von Launches an.
 
-* **[Erweiterte Inhaltsfragmentmodelle und Editor](/help/assets/content-fragments/content-fragments-models.md)**: Neue Optionen für die Eingabevalidierung für verschiedene Datentypen, verbesserter Datentyp für Auflistungen mit neuen Formularvisualisierungen und der Name des Inhaltsfragmentmodells wird in der Benutzeroberfläche &quot;Assets&quot;angezeigt und kann durchsucht werden.
+* **[Erweiterte Inhaltsfragmentmodelle und Editor](/help/assets/content-fragments/content-fragments-models.md)**: Neue Optionen für die Eingabevalidierung bei verschiedenen Datentypen, verbesserter Datentyp für Aufzählungen mit neuen Formularvisualisierungen und der Name des Inhaltsfragmentmodells wird in der Assets-Benutzeroberfläche angezeigt und ist durchsuchbar.
 
-* **Sortieren Sie die für die Aktualisierung** verfügbaren Live Copy-Seiten: Neue Option zum Sortieren der für die Aktualisierung verfügbaren Live Copy-Seiten mit den  [!UICONTROL Dateneigenschaften &quot;Name]&quot;, &quot; [!UICONTROL Zuletzt geändert&quot;] und &quot; [!UICONTROL Letzte ] Aktualisierung&quot;. Das [!UICONTROL Letzte Rollout-Datum] für eine Seite ist eine neue Eigenschaft eingeführt.
+* **Sortieren der für den Rollout verfügbaren Live Copy-Seiten**: Neue Option zum Sortieren der für den Rollout verfügbaren Live Copy-Seiten mit den Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes Änderungsdatum] und [!UICONTROL Letztes Rollout-Datum]. [!UICONTROL Letztes Rollout-Datum] für eine Seite ist eine neu eingeführte Eigenschaft.
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Erfassung** von Massenelementen: Bieten Sie Kunden einen skalierbaren, Cloud-nativen Erfassungsdienst an, der  [!DNL Experience Manager] als Cloud Service-Architektur einschließlich Asset-Mikrodiensten genutzt wird. Zu den wichtigsten Anwendungsfällen zählen die Erfassung im Maßstab mit Überwachung, Berichte und Planung, während gleichzeitig die erstmalige Übertragung von Assets an Cloud-Datenspeicher mithilfe der üblichen Cloud-Upload-Werkzeuge ermöglicht wird. Siehe [Asset Bulk Ingestor Tool](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Massenaufnahme von Assets**: Bieten Sie Ihren Kunden einen skalierbaren, Cloud-nativen Aufnahme-Service, der die [!DNL Experience Manager] as a Cloud Service-Architektur einschließlich Asset-Microservices nutzt. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Dieses Tool richtet sich an Systemadministratoren, Berater oder Implementierungspartner. Diese Funktion ermöglicht eine großflächige Aufnahme und wird ideal bei der anfänglichen Aufnahme oder gelegentlichen großen Aufnahme verwendet. Für kleinere Erfassungsaufträge verwenden Sie die [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [Hochladen mit der Assets-Benutzeroberfläche](/help/assets/add-assets.md#upload-assets).
+   Dieses Tool ist für Systemadministratoren, Berater und Implementierungspartner gedacht. Diese Funktion ermöglicht die Aufnahme in großem Umfang und wird idealerweise bei der ersten Aufnahme oder gelegentlicher großer Aufnahme verwendet. Für kleinere Aufnahmeaufträge verwenden Sie das [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [laden Sie über die Assets-Benutzeroberfläche hoch](/help/assets/add-assets.md#upload-assets).
 
-   ![Konfiguration des Massen-Importeurs](/help/assets/assets/bulk-import-config-low-res.png)
+   ![Konfiguration des Massenimport-Tools](/help/assets/assets/bulk-import-config-low-res.png)
 
-* Die Benutzer können die digitalen Assets jetzt in den Ansichten &quot;Karte&quot;und &quot;Spalte&quot;sortieren.
+* Die Benutzer können die digitalen Assets jetzt in den Karten- und Spaltenansichten sortieren.
 
    ![Assets sortieren](/help/assets/assets/asset-sort-options.png)
 
-* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Barrierefreiheitsfunktionen in [!DNL Assets]](/help/assets/accessibility.md).
+* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md).
 
-   * Beim Navigieren in der Zeitleiste mit einer Tastatur kann die Esc-Taste die Option &quot;Alle anzeigen&quot;ausblenden, ohne den Fokus zu verlieren.
-   * Beim Navigieren mit der Tabulatortaste für die Tastatur bleibt der Fokus beim Entfernen des letzten Tags aus den hinzugefügten Tags erhalten.
-   * [!DNL Experience Manager] Komponenten enthalten nun die entsprechenden Informationen für Namen, Rollen und Werte, die von Bildschirmlesehilfen verwendet werden sollen.
-   * Nachdem Sie das Kombinationsfeld &quot;Typ/Größe&quot;, das Kombinationsfeld &quot;Verknüpfen&quot;, das Sprachkombinationsfeld oder das Textfeld zum Bearbeiten von Text gelöscht haben, kehrt der Tastaturfokus zu den nächsten oder vorherigen Elementen der Benutzeroberfläche oder zu einem relevanteren Element der Benutzeroberfläche zurück.
-   * Wenn Sie den Mauszeiger über Optionen bewegen, werden Tipps wie &quot;Auswählen&quot;und &quot;Herunterladen&quot;angezeigt. Benutzer, die eine Vergrößerung verwenden, sehen aufgrund dieser Tipps möglicherweise keine Dateiminiaturen. Jetzt ist es möglich, den Fokus beizubehalten, nachdem die Option mit der `Escape`-Taste entfernt wurde.
-   * Wenn Sie eine Rasterzelle aus dem Raster auf der Seite auswählen, wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm angezeigt wird.
-   * Visuelle Benutzer können zwischen normalem Text und einem Link unterscheiden, da visuelle Hinweise (Unterstreichung und Chevron-Symbol) für Links zu allen Lösungen in der [!DNL Experience Manager]-Startseite angezeigt werden.
+   * Beim Navigieren in der Zeitleiste mit einer Tastatur können Sie mit der Esc-Taste die Option „Alle anzeigen“ ausblenden, ohne den Fokus zu verlieren.
+   * Beim Navigieren mit der Tabulator-Taste der Tastatur behält das Tag-Feld nach dem Entfernen des letzten Tags aus den hinzugefügten Tags den Fokus.
+   * [!DNL Experience Manager]-Komponenten enthalten jetzt entsprechende Informationen für Name, Rolle und Wert, die von Bildschirmlesehilfen verwendet werden können.
+   * Nachdem Sie das Kombinationsfeld „Typ/Größe“, das Kombinationsfeld „Link“, das Kombinationsfeld „Sprache“ oder das Textbearbeitungsfeld gelöscht haben, kehrt der Tastaturfokus zum nächsten oder vorherigen Element der Benutzeroberfläche oder zu einem relevanteren Element der Benutzeroberfläche zurück.
+   * Wenn Sie den Mauszeiger über Optionen bewegen, werden Tipps wie „Auswählen“ und „Herunterladen“ angezeigt. Benutzer, die eine Bildschirmlupe verwenden, können die Miniaturansichten der Dateien wegen dieser Tipps möglicherweise nicht sehen. Es ist jetzt möglich, den Fokus beizubehalten, nachdem die Option mit der `Escape`-Taste entfernt wurde.
+   * Bei der Auswahl einer Rasterzelle aus dem auf der Seite vorhandenen Raster wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm erscheint.
+   * Visuelle Benutzer können zwischen normalem Text und einem Link unterscheiden, da visuelle Hinweise (Unterstrich und Pfeilsymbol) für Links zu allen Lösungen auf der [!DNL Experience Manager]-Startseite angezeigt werden.
 
-* **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bildsatz oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit Massenaufnahmen in einen Ordner hochladen.
+* **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen.
 
-   Siehe [Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
+   Weitere Information finden Sie unter [Über Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
-* Die folgenden Barrierefreiheitsverbesserungen sind jetzt in [!DNL Dynamic Media] verfügbar:
+* Die folgenden Erweiterungen für die Barrierefreiheit sind jetzt in [!DNL Dynamic Media] verfügbar:
 
-   * Bildschirmlesehilfen (JAWS, Erzähler) beschreiben den Namen, die Rolle und den Status der Menüelemente in der Menüoption &quot;Größe einbetten&quot;.
-   * Benutzer können mit der `Tab`-Taste durch das Dialogfeld &quot;E-Mail-Link&quot;navigieren.
-   * Der Arbeitsablauf zum Erstellen von Videokodierungs-Profilen ist benutzerfreundlicher, da die Bildschirmlesehilfe verbessert wurde.
+   * Bildschirmlesehilfen (JAWS, Sprachausgabe) beschreiben den Namen, die Rolle und den Status der Menüelemente in der Menüoption „Einbettungsgröße“.
+   * Benutzer können mit der `Tab`-Taste durch das Dialogfeld „E-Mail-Link“ navigieren.
+   * Der Workflow zum Erstellen von Videokodierungsprofilen ist durch die Verbesserungen bei den Bildschirmlesehilfen benutzerfreundlicher geworden.
    * Beim Navigieren mit der `Tab`-Taste wird der Fokus auf die entsprechenden Elemente der Benutzeroberfläche im Workflow verschoben, um ein interaktives Video zu erstellen.
-   * Die Seiten &quot;Veröffentlichen&quot;, &quot;Asset bearbeiten&quot;, &quot;Smart Crops bearbeiten&quot;und &quot;Bildsatz-Editor&quot;wurden verbessert, um Webstandards zu entsprechen. Hilfstechnologie (AT)-Benutzer können nun einfach durch diese Seiten navigieren und Aktionen wie das Beschneiden von Bildern ausführen.
+   * Die Seiten „Veröffentlichen“, „Asset bearbeiten“, „Smartes Zuschneiden bearbeiten“ und „Bildset-Editor“ wurden verbessert, um den Web-Standards zu entsprechen. Benutzer, die Hilfstechnologien verwenden, können jetzt problemlos durch diese Seiten navigieren und Aktionen wie das Zuschneiden von Bildern ausführen.
    * Die Viewer wurden verbessert, sodass Benutzer mit der Tastatur navigieren können.
-   * Die Benutzer der Tastatur und der Bildschirmlesehilfe können die Funktion zum Beschneiden verwenden.
-   * Die Tastaturbenutzer können die Hotspots besser verwalten.
+   * Benutzer, die Tastatur und Bildschirmlesehilfe verwenden, können die Funktion zum Zuschneiden verwenden.
+   * Tastaturbenutzer können die Hotspots besser verwalten.
 
-   Siehe [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+   Weitere Informationen finden Sie unter [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* CIF Venia-Referenzseite - 2020.11.05, die die aktuellste CIF-Core-Komponenten Version v1.5.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
+* Die CIF Venia-Referenz-Website – 2020.11.05, die die aktuelle CIF-Kernkomponenten Version 1.5.0 enthält, wurde veröffentlicht. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
 
 * Version 1.5.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
-* Die Konfiguration des GraphQL-Clients wurde nicht korrekt gelesen, wenn die Konfiguration nicht direkt in der Sling CA-Konfiguration, sondern in einer der übergeordneten Konfigurationen angegeben wurde. Das wurde behoben.
+* Die GraphQL-Client-Konfiguration wurde nicht korrekt gelesen, wenn die Konfiguration nicht direkt in der Sling CA-Konfiguration, sondern in einer der übergeordneten Konfigurationen angegeben wurde. Dies wurde behoben.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.11.0 ist der 12. November 2020.
+Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2020.11.0 ist der Donnerstag, 12. November 2020.
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Eine neue Menüoption **Lokale Anmeldung** steht nun Benutzern über die Menüoptionen &quot;Umgebung&quot;auf den Zusammenfassungsseiten **Umgebung** und **Umgebung** zur Verfügung.
+* Eine neue Menüoption **Lokale Anmeldung** steht Benutzern jetzt über die Umgebungsmenüoptionen auf der Karte **Umgebungen** und auf den Zusammenfassungsseiten **Umgebungen** zur Verfügung.
 Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
-* Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
+* Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
 * Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plug-ins.
 * Über den Link in der Fußzeile von Cloud Manager zur Sprachauswahl wird jetzt an die richtige Stelle navigiert.
 * Manchmal startete der SonarQube-Prozess während des Code-Scannens nicht. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
-* Alle vorhandenen Produktionslinien werden automatisch mit dem Experience Audit-Schritt aktiviert.
+* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
 ### Workflows {#workflows}
 
-* Es wurde Unterstützung für die Suche von Workflow-Instanzen auf Grundlage von Workflow-Titel, Workflow-Modell, Status, Initiator, Nutzlastpfad und Beginn-Datum hinzugefügt. Siehe [Instanzen des Sucharbeitsablaufs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Weitere Informationen finden Sie unter [Nach Workflow-Instanzen suchen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ### Synchronisierung von Benutzerdaten auf Veröffentlichungsebene {#user-sync}
 
-* Benutzerdaten, einschließlich Profil- und Gruppenattributen, können auf der Veröffentlichungsebene beibehalten werden. Weitere Informationen zu dieser Funktion finden Sie in der [Profil-, Anmelde- und Benutzerdokumentation](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
+* Benutzerdaten, einschließlich Profilattributen und Gruppenmitgliedschaften, können auf der Veröffentlichungsebene beibehalten werden. Weitere Informationen zu dieser Funktion finden Sie in der [Dokumentation zu Registrierung, Anmeldung und Benutzerprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
 
-### SDK Build Analyzers {#analyzers}
+### SDK Build Analyzer {#analyzers}
 
-Das AEM als Cloud Service SDK Build Analyzer Maven Plugin erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es bietet Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu erkennen, lange vor der Bereitstellung in Cloud-Umgebung mit Cloud Manager. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) und [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es gibt Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu entdecken, lange bevor sie mit Cloud Manager in Cloud-Umgebungen bereitgestellt werden. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing) und [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### Andere {#others-foundation}
 
-Neue Syntax [&quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) sucht nach Apache- und Dispatcher-Konfiguration, die während der Cloud Manager-Erstellung ausgeführt wird. Diese kann auch mit AEM als Cloud Service-SDKs Dispatcher Tools ausgeführt werden.
+Neue Prüfung der [„httpd-t“-Syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) für die Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher Tools des AEM as a Cloud Service-SDK ausgeführt werden kann.
 
-## Content Transfer-Tool {#content-transfer-tool}
+## Content Transfer Tool {#content-transfer-tool}
 
-Folgen Sie diesem Abschnitt, um mehr über die neuen Funktionen und die Aktualisierungen für [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12 zu erfahren.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Benutzerfreundlichkeit für Protokolle verbessert. Zeitstempel zu Extraktionen- und Ingestion-Protokollen hinzugefügt. Meldung hinzugefügt, die angibt, ob die Protokolle leer sind.
+* Anwendererlebnis für Protokolle verbessert. Zeitstempel zu Extraktions- und Aufnahmeprotokollen hinzugefügt. Meldung hinzugefügt, die angibt, ob Protokolle leer sind.
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Content Transfer Tool übersprungen Inhaltsdateien, wenn der Migrationssatz Pfade mit teilweise ähnlichen Dateinamen enthielt. Das wurde behoben.
+* Das Content Transfer Tool übersprang Inhaltsdateien, wenn der Migrationssatz Pfade enthielt, die teilweise ähnliche Dateinamen hatten. Dies wurde behoben.
 
-## Best Practices-Analyzer {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
@@ -140,10 +140,10 @@ Das Veröffentlichungsdatum für Best Practices Analyzer ist der 13. November 20
 
 ### Neue Funktionen in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
-* Cloud Readiness Analyzer ist jetzt Best Practices Analyzer (BPA). BPA bietet eine Best Practices-Bewertung Ihrer aktuellen AEM-Implementierung und hilft bei der Beurteilung der Bereitschaft, von einer vorhandenen AEM zu AEM als Cloud Service zu wechseln.
+* Cloud Readiness Analyzer ist jetzt Best Practices Analyzer (BPA). BPA bietet eine Best Practices-Bewertung Ihrer aktuellen AEM-Implementierung und hilft bei der Beurteilung, ob von einer vorhandenen AEM-Instanz zu AEM as a Cloud Service gewechselt werden kann.
 
-* Ein neuer Detektor wurde hinzugefügt, um die Verwendung von `java.io.InputStream` zu erkennen, was Probleme verursachen kann, wenn AEM als Cloud Service verwendet wird.
+* Es wurde ein neues Erkennungs-Tool hinzugefügt, um die Verwendung von `java.io.InputStream` zu erkennen, was Probleme verursachen kann, wenn AEM as a Cloud Service verwendet wird.
 
 ### Fehlerbehebungen {#bpa-bug-fixes}
 
-* Es wurde ein Fehler behoben, der dazu führte, dass die Positivwerte für die Komponente *textfield foundation* behoben wurden.
+* Der Fehler, der die Positivmeldungen im Zusammenhang mit der *Foundation-Komponente für Textfelder* verursacht hat, wurde behoben.
