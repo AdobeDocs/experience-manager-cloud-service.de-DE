@@ -1,22 +1,22 @@
 ---
-title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
-description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] als Cloud Service.
+title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 16%
+ht-degree: 29%
 
 ---
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] als Cloud Service beschrieben.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2020.12.0 ist der 17. Dezember 2020.
+Die Version 2020.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 17. Dezember 2020 veröffentlicht.
 Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
@@ -31,7 +31,7 @@ Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 * [!DNL Dynamic Media] Funktionen sind jetzt über  [!DNL Sites] bildbasierte Core-Komponenten verfügbar. Autoren können Komponenten beim Erstellen von Webseiten schnell für die Verwendung von Bildvorgaben, intelligentem Beschneiden und Bildmodifikatoren konfigurieren. Siehe [Kernkomponenten 2.13.0 Release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* [!DNL Experience Manager] Mit der Desktop-App können Benutzer Dateien und Ordner hochladen, indem sie die Dateien aus dem Windows Explorer oder dem Mac Finder in die Benutzeroberfläche der Desktop-App ziehen. Siehe [Hinzufügen von Assets mit der Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* [!DNL Experience Manager] Mit der Desktop-App können Benutzer Dateien und Ordner hochladen, indem sie die Dateien aus dem Windows Explorer oder dem Mac Finder in die Benutzeroberfläche der Desktop-App ziehen. Siehe [Hinzufügen von Assets mit der Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -45,7 +45,7 @@ Die folgende Version (2021.1.0) wird am 28. Januar 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.0 ist der 10. Dezember 2020.
+Die Version 2020.12.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
@@ -57,15 +57,15 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
+* Einige Fehler beim Scannen von Code ohne Bereitstellung von Ergebnissen wurden behoben.
 
-* Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
+* Die Schaltfläche **Hinzufügen** wurde auf der Umgebungskarte nicht konsistent angezeigt.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI Plugins veröffentlicht. Die neueste Version dieses Plugins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - den Index Converter. Weitere Informationen zu diesem Plugin finden Sie unter [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits).
+* Neue Version des AIO-CLI Plugins veröffentlicht. Die neueste Version dieses Plugins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - Index Converter. Weitere Informationen zu diesem Plugin finden Sie unter [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits).
 
 * Index Converter ist ein Dienstprogramm, das verwendet werden kann, um die benutzerdefinierten OAK-Indexdefinitionen eines Kunden in AEM als Cloud Service kompatible OAK-Indexdefinitionen umzuwandeln. Weitere Informationen finden Sie unter [Indexkonverter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 
@@ -85,6 +85,6 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.1.20 ist der 0
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Das wurde behoben.
+* Der Status der Benutzeroberfläche des Content Transfer Tool (CTT) für einen Migrationssatz wurde nach einer Inaktivität nicht beibehalten und geändert. Dies wurde behoben.
 * Die Option zum Ansicht von Protokollen wurde deaktiviert, wenn die Protokolle nicht verfügbar waren. Dieser Fehler wurde behoben und es wurde eine Nachricht hinzugefügt, die den Benutzer darüber informiert, warum Protokolle fehlen.
 * Der Benutzeroberflächenstatus des Inhaltsübermittlungstools wurde angezeigt, als *FAILED* angezeigt wurde, wenn der Benutzer eine Erfassung stoppte. Dieses Problem wurde behoben, um stattdessen *STOPPED* anzuzeigen.
