@@ -402,9 +402,9 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 1 |
+| Quelle | 1920 x 1080 | 1 | 3 |
 | Kodiert | 960 x 540 | 2 | 2 |
-| Kodiert | 640 x 360 | 3 | 1 |
+| Kodiert | 640 x 360 | 3 | 3 |
 | Kodiert | 480 x 270 | 4 | 4 |
 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
