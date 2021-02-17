@@ -2,10 +2,10 @@
 title: Wichtige Änderungen in  [!DNL Adobe Experience Manager Assets] als a [!DNL Cloud Service]
 description: Bemerkenswerte Änderungen zu [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
+source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 26%
+source-wordcount: '714'
+ht-degree: 25%
 
 ---
 
@@ -34,6 +34,7 @@ Das Hochladen von Assets wurde für die Effizienz optimiert, indem die Erfassung
 * Die Metadaten-Schreibablage wird nicht unterstützt. Siehe [Metadaten-Schreibback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
 * Für Assets, die mit Package Manager hochgeladen werden, ist eine manuelle Neuverarbeitung mithilfe der Aktion **[!UICONTROL Asset]** in der [!DNL Assets]-Benutzeroberfläche erforderlich.
 * [!DNL Assets] erkennt nicht automatisch den MIME-Typ der hochgeladenen Assets. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
+* [!DNL Experience Manager] als  [!DNL Cloud Service] keine Teilassets für zusammengesetzte Assets generiert. Siehe [Erstellen von Unterelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
 * [!DNL Assets] Startseite ist nicht verfügbar. Siehe [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * Die Erkennung von Duplikat-Assets funktioniert anders als [wie sie unter  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) funktioniert hat.
 * Nur für Platzierung (FPO) werden Darstellungen anders generiert als frühere [!DNL Experience Manager] Versionen. Siehe [FPO-Darstellung für [!DNL Experience Manager] als a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
