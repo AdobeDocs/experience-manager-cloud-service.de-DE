@@ -160,7 +160,7 @@ UniqueContent (für das spezifische Feld) muss für alle Inhaltsfragmente, die v
 * ****
 TranslatableKontrollkästchen &quot;Translatable&quot;in einem Feld im CF-Modell-Editor aktivieren
 
-   * Stellen Sie sicher, dass der Eigenschaftsname des Felds in der Konvertierungskonfiguration hinzugefügt wird, Kontext `/content/dam/<tenant>`, falls noch nicht vorhanden.
+   * Stellen Sie sicher, dass der Eigenschaftsname des Felds in der Konvertierungskonfiguration hinzugefügt wird, Kontext `/content/dam/<tenant>`, falls nicht bereits vorhanden.
    * Für GraphQL: Legen Sie im Feld Inhaltsfragment die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfrage-Filter für die JSON-Ausgabe mit nur übersetzbarem Inhalt zuzulassen.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentverweis (Verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
