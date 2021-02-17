@@ -54,7 +54,7 @@ Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerda
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**Sling API**
+**Sling-API**
 
 **Ermitteln der Benutzerstartseite:**
 
