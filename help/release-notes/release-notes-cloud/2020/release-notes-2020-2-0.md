@@ -22,7 +22,7 @@ Die Version 2020.2.0 von Experience Manager as a Cloud Service wurde am Donners
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für Cloud Manager in Version 2020.2.0 von AEM as a Cloud Service.
 
-### Neuerungen {#what-is-new}
+### Neue Funktionen {#what-is-new}
 
 * Die Archetypversion von Adobe Experience Manager wurde auf Version 22 aktualisiert.
 * Die Staging- und Produktionsumgebungen in Sandbox-/Demoprogrammen können jetzt über die Benutzeroberfläche von Cloud Manager aktualisiert werden.
