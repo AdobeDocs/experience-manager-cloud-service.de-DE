@@ -16,7 +16,7 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 
 Die folgenden Tools stehen zur Fehlerbehebung in AEM as a Cloud Service-Umgebungen zur Verfügung:
 
-* **Entwicklerkonsole**
+* **Developer Console**
 * **CRX/DE Lite**
 * **Verwalten von Protokollen**
 
