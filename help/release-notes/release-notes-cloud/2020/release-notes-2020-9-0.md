@@ -71,7 +71,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 03. September 2020 veröffentlicht.
 
-### Neuerungen {#what-is-new-cloud-manager}
+### Neue Funktionen {#what-is-new-cloud-manager}
 
 * Inhaltsprüfung wurde in Erlebnisprüfung umbenannt.
 * Der Build-Prozess wurde in drei separate Maven-Befehle unterteilt.
