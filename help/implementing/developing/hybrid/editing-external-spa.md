@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bb8ab907dbeb422db410328f9c559c6794c16a8f
 workflow-type: tm+mt
 source-wordcount: '2127'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -151,7 +151,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leeres `ModelStore`
 
 #### hinzufügen von autorisierten Komponenten auf der Seite {#add-authorable-component-to-page}
 
-Nachdem die aussagekräftigen React-Komponenten erstellt wurden, können wir sie in der gesamten Anwendung verwenden.
+Sobald die verlässlichen React-Komponenten erstellt wurden, können wir sie in der gesamten Anwendung verwenden.
 
 Nehmen wir eine Beispielseite, auf der wir einen Text aus dem WKND SPA Projekt hinzufügen müssen. In diesem Beispiel möchten wir den Text &quot;Hello World!&quot;anzeigen. Beim `/content/wknd-spa-react/us/en/home.html`.
 
@@ -333,5 +333,5 @@ Das folgende Referenzmaterial kann hilfreich sein, um SPA im Kontext der AEM zu 
 * [Erste Schritte mit SPAs in AEM unter Verwendung von React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA Referenzmaterialien (API-Referenzen)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint und PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [SPA-Modell-Routing](/help/implementing/developing/hybrid/routing.md)
-* [Single Page Applications (SPAs) und Server-seitiges Rendering](/help/implementing/developing/hybrid/ssr.md)
+* [SPA-Modell-Routing ](/help/implementing/developing/hybrid/routing.md)
+* [Single Page Applications (SPAs) und Server-seitiges Rendering ](/help/implementing/developing/hybrid/ssr.md)
