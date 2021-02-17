@@ -93,7 +93,7 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
    <td>Fügen Sie eine Texteigenschaft mit mehreren Werten hinzu. Diese wird als Zeichenfolgen-Array gespeichert.</td>
   </tr>
   <tr>
-   <td>Nummer</td>
+   <td>Zahl</td>
    <td>Fügen Sie eine Zahlenkomponente hinzu.</td>
   </tr>
   <tr>
