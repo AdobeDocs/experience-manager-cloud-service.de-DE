@@ -1,22 +1,22 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
-description: Versionshinweise für Cloud Manager in AEM als Cloud Service Release 2020.12.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.12.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.12.0
 translation-type: tm+mt
 source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 15%
+ht-degree: 72%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager als Cloud Service 2020.12.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.12.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2020.12.0 erläutert.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.12.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.0 ist der 10. Dezember 2020.
+Die Version 2020.12.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. Dezember 2020 veröffentlicht.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -31,6 +31,6 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2020.12.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Ein Fehler, bei dem beim Codescan gelegentlich keine Ergebnisse bereitgestellt wurden, wurden behoben.
+* Einige Fehler beim Scannen von Code ohne Bereitstellung von Ergebnissen wurden behoben.
 
-* Die Schaltfläche **Hinzufügen** wurde auf der Umgebung nicht einheitlich angezeigt.
+* Die Schaltfläche **Hinzufügen** wurde auf der Umgebungskarte nicht konsistent angezeigt.
