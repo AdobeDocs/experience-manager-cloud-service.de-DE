@@ -77,7 +77,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Benutzer mit der SysAdmin-Rolle hat jetzt 1-Klick-Zugriff auf den Speicherort in Admin Console, von der aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können. Eine Schaltfläche **Zugriff verwalten** ist jetzt auf der Landingpage neben der Schaltfläche **Programm hinzufügen** verfügbar.
 
-   Weitere Informationen finden Sie unter [SysAdmin-Aufgaben](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
+   Weitere Informationen finden Sie unter [SysAdmin-Aufgaben](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
 
 * Ein Benutzer mit der SysAdmin-Rolle hat kann jetzt direkt aus Cloud Manager per 1-Klick-Zugriff auf die Autoreninstanz zugreifen.
 
