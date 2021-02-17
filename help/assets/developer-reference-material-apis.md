@@ -79,8 +79,7 @@ Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-U
 * Der binäre Cloud-Speicher funktioniert mit einem Content Delivery Network (CDN) oder einem Edge-Netzwerk. Ein CDN wählt einen Upload-Endpunkt aus, der für einen Client näher liegt. Wenn Daten eine kürzere Entfernung zu einem nahe gelegenen Endpunkt zurücklegen, verbessern sich die Upload-Leistung und das Benutzererlebnis, insbesondere für geografisch verteilte Teams.
 
 >[!NOTE]
->
->Informationen zum Implementieren dieses Ansatzes finden Sie im Client-Code in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload).
+Informationen zum Implementieren dieses Ansatzes finden Sie im Client-Code in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Initiieren des Uploads {#initiate-upload}
 
@@ -147,7 +146,7 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `replace` | Boolesch | optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
 
 >!![NOTE]
->Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
+Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
@@ -172,9 +171,8 @@ Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] as a [!DNL
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
->* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
@@ -242,6 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Das Experience Cloud as a  [!DNL Cloud Service] -SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [Das Experience Cloud as a  [!DNL Cloud Service] -SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
