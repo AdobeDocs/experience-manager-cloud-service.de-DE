@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: 39c7679e390067b520f36c4053133caeb9541875
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 49%
+source-wordcount: '673'
+ht-degree: 48%
 
 ---
 
@@ -98,4 +98,7 @@ ht-degree: 49%
    + [Migration zu Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
    + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
+   + [Bewertung der KPIs](best-practices/assessing-kpis.md)
+   + [KPIs ausrichten](best-practices/aligning-kpis.md)
+   + [Wählen Sie das rechte Team](best-practices/choose-right-team.md)
 + [Überblick über die Tools-Konsolen](tools-consoles.md)
