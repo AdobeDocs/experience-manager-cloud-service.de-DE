@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 17%
+source-wordcount: '1103'
+ht-degree: 16%
 
 ---
 
@@ -133,9 +133,10 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.4 ist der 10
 
 Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.2 ist der 1. Februar 2021.
 
-### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Neue Funktionen in Content Transfer Tool {#what-is-new-ctt}
 
-* Neue Funktion und Benutzeroberfläche zum Inhaltsübermittlungstool - Benutzerzuordnungswerkzeug hinzugefügt. Diese Funktion ordnet bestehende Benutzer und Gruppen im Rahmen der Aktivität zur Inhaltsmigration automatisch ihrer Adobe Identity Management System-IDs zu. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+* Neue Funktion und Benutzeroberfläche zum Inhaltsübermittlungstool - Benutzerzuordnungswerkzeug hinzugefügt. Diese Funktion ordnet bestehende Benutzer und Gruppen im Rahmen der Aktivität zur Inhaltsmigration automatisch ihrer Adobe Identity Management System-IDs zu.
+Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 * Content Transfer Tool migriert jetzt alle Gruppen und Benutzer, auf die im Migrationsset verwiesen wird, einschließlich untergeordneter Elemente.
 * Benutzer können beim Erstellen von Migrationssätzen bestimmte Pfade unter `/etc` auswählen.
 
@@ -145,7 +146,7 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.2 ist der 1.
 
 Das Veröffentlichungsdatum für Best Practices Analyzer v2.1.0 ist der 11. Februar 2021.
 
-### Neue Funktionen in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### Neue Funktionen in Best Practices Analyzer {#what-is-new-bpa}
 
 * Möglichkeit, den Einsatz der AEM Forms- und AEM Forms-Implementierung zu ermitteln und Bereiche anzugeben, die für die Migration nach AEM Forms als Cloud Service relevant sind.
 * Möglichkeit, benutzerdefinierte Komponenten und Vorlagen zu erkennen und darüber zu berichten.
