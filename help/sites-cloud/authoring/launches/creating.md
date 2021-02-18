@@ -26,8 +26,7 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >
 >* `/libs/launches/templates/outofscope`
 >
->
-Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
+>Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
 >* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
 
