@@ -2,10 +2,10 @@
 title: Protokollierung
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 100%
+source-wordcount: '2314'
+ht-degree: 95%
 
 ---
 
@@ -598,6 +598,12 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 >[!NOTE]
 >
 >Die Splunk-Weiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
+
+Achten Sie darauf, dass die ursprüngliche Anforderung neben den stage-/prod-Umgebung alle dev-Umgebung enthält, die aktiviert werden sollten.
+
+Wenn neue dev-Umgebung, die nach der ursprünglichen Anforderung erstellt wurden, Splunk-Weiterleitung haben sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anforderung gesendet werden.
+
+Beachten Sie außerdem, dass bei Anforderung von dev-Umgebung möglicherweise bei anderen dev-Umgebung, die nicht in der Anforderung enthalten sind, oder auch bei Sandbox-Umgebung Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam verwendet wird. Kunden können mithilfe des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
 
 Unten finden Sie ein Beispiel für eine Support-Anfrage:
 
