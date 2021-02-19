@@ -2,9 +2,9 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 Derselbe Austausch kann in jeder Sprache durchgeführt werden, die ein signiertes JWT-Token mit dem richtigen Format generieren und die IMS Token Exchange-APIs aufrufen kann.
 
-Das Zugriffstoken legt fest, wann es abläuft, was in der Regel 12 Stunden beträgt. Es gibt Beispielcode im Git-Repository, um ein Zugriffstoken zu verwalten und zu aktualisieren, bevor es abläuft.
+Das Zugriffstoken legt fest, wann es abläuft, was in der Regel 24 Stunden beträgt. Es gibt Beispielcode im Git-Repository, um ein Zugriffstoken zu verwalten und zu aktualisieren, bevor es abläuft.
 
 ### Aufrufen der AEM-API {#calling-the-aem-api}
 
@@ -120,7 +120,7 @@ Informationen zu den erforderlichen Berechtigungen zur Verwendung des AEM als Cl
 
 >[!NOTE]
 >
->Das lokale Entwicklungs-Zugriffstoken ist 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
+>Das lokale Entwicklungs-Zugriffstoken ist maximal 24 Stunden gültig, danach muss es mit derselben Methode regeneriert werden.
 
 Entwickler können dieses Token verwenden, um Aufrufe von ihrer Nicht-AEM-Testanwendung an eine AEM als Cloud Service-Umgebung durchzuführen. Normalerweise verwendet der Entwickler dieses Token mit der Nicht-AEM-Anwendung auf seinem eigenen Laptop. Außerdem ist die AEM als Cloud normalerweise eine Nicht-Produktions-Umgebung.
 
