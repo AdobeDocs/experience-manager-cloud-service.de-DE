@@ -2,9 +2,9 @@
 title: KPIs ausrichten
 description: KPIs ausrichten
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # Zur Auswahl der richtigen KPIs, Beginn mit Ihren Geschäftszielen
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="KPIs ausrichten"
+>abstract="In einer digitalen Welt kann man fast alles messen. Die Wahl der richtigen KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf das zu konzentrieren, was am wichtigsten ist."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Bewertung der KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Auswahl des richtigen Teams"
 
 In einer digitalen Welt kann man fast alles messen. Die Auswahl von drei KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf das zu konzentrieren, was am wichtigsten ist.
 
