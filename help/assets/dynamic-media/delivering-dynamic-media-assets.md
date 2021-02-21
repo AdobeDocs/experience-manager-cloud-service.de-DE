@@ -2,10 +2,10 @@
 title: Bereitstellen von Dynamic Media-Assets
 description: Informationen zum Bereitstellen von Dynamic Media-Assets.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen können, ist davon abhängig, wie Ihre Website implementiert ist.
 
-Mit Dynamic Media haben Sie mehrere Optionen:
+Dynamic Media bietet mehrere Optionen:
 
 * Wenn Ihre Website auf AEM gehostet ist, können Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
 * Wenn sich Ihre Website nicht in AEM befindet, können Sie eine der folgenden Aktionen ausführen:
@@ -25,7 +25,7 @@ Mit Dynamic Media haben Sie mehrere Optionen:
 
 >[!NOTE]
 >
->Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert im letzten Moment abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
+>Intelligente Bildbearbeitung funktioniert mit Ihren vorhandenen Bildvorgaben. Es verwendet Intelligenz in der letzten Millisekunde des Versands, um die Dateigröße je nach Browser- oder Netzwerkverbindungsgeschwindigkeit weiter zu reduzieren. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -43,4 +43,4 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
-Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur Bereitstellung von Inhalten über HTTP/2](/help/assets/dynamic-media/http2faq.md).
+Weitere Informationen finden Sie unter [HTTP/2 Versand of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md).
