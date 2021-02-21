@@ -2,10 +2,10 @@
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in eine Web-Seite einbetten.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und tippen Sie auf **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste die Dropdown-Liste aus und tippen Sie auf **[!UICONTROL Viewer]**.
 1. Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Tippen Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und tippen Sie dann auf **[!UICONTROL Schließen]**.
