@@ -2,10 +2,10 @@
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 71%
+source-wordcount: '1707'
+ht-degree: 68%
 
 ---
 
@@ -49,7 +49,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 * Sie können Feldnamen abfragen, die den Feldern im Inhaltsfragmentmodell entsprechen.
    * Siehe [Beispieldatei - Vollständige Abfrage der Geschäftsführer und Mitarbeiter einer Firma](#sample-full-details-company-ceos-employees)
 
-* Zusätzlich zu den Feldern aus Ihrem Modell gibt es einige vom System generierte Felder (denen ein Unterstrich vorangestellt ist):
+* Zusätzlich zu den Feldern Ihres Modells gibt es einige systemgenerierte Felder (vor dem Unterstrich):
 
    * Für Inhalte:
 
@@ -59,7 +59,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Siehe [Beispieldatei-Abfrage für Metadaten - Liste der Metadaten für Prämien mit dem Titel GB](#sample-metadata-awards-gb)
       * `_model` : Suchen nach einem Inhaltsfragmentmodell zulassen (Pfad und Titel)
          * Siehe [Abfrage eines Inhaltsfragmentmodells eines Modells](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : der Pfad zu Ihrem Inhaltsfragment im Repository
+      * `_path` : den Pfad zu Ihrem Inhaltsfragment im Repository
          * Siehe [Abfrage eines Beispiels - Ein einzelnes spezifisches Stadtfragment](#sample-single-specific-city-fragment)
       * `_reference` : Verweise anzeigen; einschließlich Inline-Verweise im Rich-Text-Editor
          * Siehe [Abfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Referenzen](#sample-wknd-multiple-fragments-prefetched-references)
