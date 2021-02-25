@@ -2,10 +2,10 @@
 title: Invalidierung des CDN-Cache über Dynamic Media
 description: Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Cache warten.
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 97%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeichert, um eine schnelle Bereitstellung an Ihre Kunden zu ermöglichen. Wenn Sie diese Assets aktualisieren, wollen Sie jedoch möglicherweise, dass die Änderungen auf Ihrer Website sofort wirksam werden. Durch Löschen oder Invalidierung des CDN-Cache können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Anstatt darauf warten zu müssen, dass der Cache mit einem TTL-Wert (Time To Live) abläuft (Standardwert: 10 Stunden), können Sie in der Benutzeroberfläche von Dynamic Media eine Anfrage senden, damit der Cache innerhalb von Minuten abläuft.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Für die Funktion müssen Sie das vorkonfigurierte CDN verwenden, das im Lieferumfang von AEM Dynamic Media enthalten ist. Andere benutzerdefinierte CDNs werden nicht unterstützt. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
