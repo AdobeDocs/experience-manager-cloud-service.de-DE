@@ -2,10 +2,10 @@
 title: 'Aktivieren des Hotlink-Schutzes in Dynamic Media  '
 description: Informationen zum Aktivieren des Hotlink-Schutzes in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 58%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -16,4 +16,8 @@ Bei Hotlinks handelt es sich um Websites von Drittanbietern, die HTML-Code verwe
 
 [Adobe Customer ](https://helpx.adobe.com/de/support.html) Care kann einen Werber-Filter auf CDN-Ebene konfigurieren. Dadurch wird sichergestellt, dass Dynamic Media-Inhalte nur Websites zur Verfügung gestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domäne stehen.
 
-Um vom Hotlink-Schutz zu profitieren, müssen Sie das gebündelte CDN von Adobe verwenden. Um den Hotlink-Schutz zu aktivieren, muss ein Administrator ein Support-Ticket erstellen, um die Konfigurationsänderung an Ihrem Dynamic Media-Konto anzufordern. Mit der Aktivierung des Hotlink-Schutzes sind keine zusätzlichen Kosten verbunden.
+>[!NOTE]
+>
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
+
+Zur Aktivierung des Hotlink-Schutzes muss ein Administrator ein Support-Ticket erstellen, um die Konfigurationsänderung bei Ihrem Dynamic Media-Konto anzufordern. Es fallen keine zusätzlichen Kosten für die Aktivierung des Schutzes von Hotlinks an.
