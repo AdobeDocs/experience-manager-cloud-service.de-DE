@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
+source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
 workflow-type: tm+mt
-source-wordcount: '4358'
-ht-degree: 100%
+source-wordcount: '4336'
+ht-degree: 99%
 
 ---
 
@@ -538,13 +538,9 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   Sie können auch andere Einstellungen wählen, je nach der von Ihnen gewünschten Position der Anmerkungen oder des Status in der gedruckten PDF-Datei. Wenn sich die von Ihnen gewünschte Position der Anmerkungen/des Status auf einer Seite befindet, die nicht zum gedruckten Asset gehört, wählen Sie **[!UICONTROL Nächste Seite]**.
+   Sie können auch andere Einstellungen wählen, je nach der von Ihnen gewünschten Position der Anmerkungen oder des Status in der gedruckten PDF-Datei. Wenn Anmerkungen/Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
 
-   >[!NOTE]
-   >
-   >Längere Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig gerendert. Für optimales Rendering wird empfohlen, Anmerkungen auf 50 Wörter zu begrenzen.
-
-1. Tippen oder klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
+1. Klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
