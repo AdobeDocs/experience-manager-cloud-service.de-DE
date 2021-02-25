@@ -2,10 +2,10 @@
 title: Intelligente Bildbearbeitung
 description: Die intelligente Bildbearbeitung wendet die individuellen Anzeigeeigenschaften der einzelnen Benutzer an, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
-ht-degree: 55%
+source-wordcount: '1856'
+ht-degree: 54%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 55%
 ## Was ist die intelligente Bildbearbeitung? {#what-is-smart-imaging}
 
 Die Smart Imaging-Technologie nutzt Adobe Sensei AI-Funktionen und arbeitet mit vorhandenen &quot;Bildvorgaben&quot;. Es verbessert die Leistung von Image Versand durch die automatische Optimierung von Bildformat, -größe und -qualität je nach Browserfunktionen des Clients.
+
+>[!NOTE]
+>
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 Smart Imaging profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen CDN-Dienst (Content Versand Network) der Adobe. Dieser Dienst findet die optimale Internetverbindung zwischen Servern, Netzwerken und Peering Points. Er betrachtet die niedrigste Latenz oder die niedrigste Paketverlustrate oder beides, anstatt einfach die Standardroute im Internet zu verwenden.
 
