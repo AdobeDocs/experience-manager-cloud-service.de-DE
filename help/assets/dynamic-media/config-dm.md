@@ -2,10 +2,10 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3827'
-ht-degree: 65%
+source-wordcount: '3893'
+ht-degree: 64%
 
 ---
 
@@ -18,13 +18,26 @@ Wenn Sie Adobe Experience Manager für verschiedene Umgebung wie Entwicklung, St
 
 Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media.
 
-Mit der neuen Architektur ist AEM für primäre Quellelemente und für die Synchronisierung mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
+Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und für die Synchronisierung mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
 
 1. Wenn das Asset aus einer Primärquelle in AEM hochgeladen wurde, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
 1. Nachdem die Ausgaben erstellt wurden, kann AEM sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau dafür anzeigen (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 1. Nachdem die Inhalte veröffentlicht und genehmigt werden können, wird der Dynamic Media-Dienst Trigger, Inhalte an die Versand-Server zu übertragen und Inhalte im CDN zu zwischenspeichern.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>Für die folgende Liste von Funktionen ist es erforderlich, dass Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
+>
+>* [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
+>* [Cache-Ungültigmachung](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-Schutz](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2-Versand des Inhalts](/help/assets/dynamic-media/http2faq.md)
+>* [Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch](/help/assets/dynamic-media/launch.md)
+>* URL-Umleitung auf CDN-Ebene
+>* Akamai ChinaCDN (für optimalen Versand in China)
+
 
 <!-- OBSOLETE CONTENT
 
