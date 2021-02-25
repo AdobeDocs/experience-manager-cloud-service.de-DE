@@ -2,9 +2,9 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Informationen zum Konfigurieren von Dynamic Media in Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 64%
 
 ---
@@ -28,13 +28,12 @@ Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und
 
 >[!NOTE]
 >
->Für die folgende Liste von Funktionen ist es erforderlich, dass Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
+>Für die folgende Liste von Funktionen müssen Sie das im Lieferumfang von Adobe Experience Manager - Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. Andere benutzerdefinierte CDN werden von diesen Funktionen nicht unterstützt.
 >
 >* [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
 >* [Cache-Ungültigmachung](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink-Schutz](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2-Versand des Inhalts](/help/assets/dynamic-media/http2faq.md)
->* [Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* URL-Umleitung auf CDN-Ebene
 >* Akamai ChinaCDN (für optimalen Versand in China)
 
@@ -151,7 +150,7 @@ Weitere Informationen finden Sie unter [Ihr Posteingang](/help/sites-cloud/autho
 
 1. Überprüfen Sie auf der Seite **[!UICONTROL DMSETUP]** die Konfigurationsdetails, die den Fehler beschreiben. Beachten Sie insbesondere alle Fehlermeldungen oder Fehler-Codes. Wenden Sie sich mit diesen Informationen an die Kundenunterstützung der Adobe.
 
-   ![Dynamic Media Setup-Seite](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Seite &quot;Dynamic Media einrichten&quot;](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Ändern des Kennworts für Dynamic Media {#change-dm-password}
 
