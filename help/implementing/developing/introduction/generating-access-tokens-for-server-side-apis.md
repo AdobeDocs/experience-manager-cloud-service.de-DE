@@ -2,9 +2,9 @@
 title: Erstellen von Zugriffstoken für serverseitige APIs
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieter-Server und AEM als Cloud Service durch Generieren eines sicheren JWT-Tokens erleichtern.
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ Führen Sie die entsprechenden Server-zu-Server-API-Aufrufe von der Nicht-AEM-An
 
 ## Dienstanmeldeinformationen - Widerruf {#service-credentials-revocation}
 
-Bitte senden Sie eine Anfrage an den Kundensupport, wenn das JWT-Inhabertoken widerrufen werden muss.
+Wenn die Anmeldeinformationen widerrufen werden müssen, müssen Sie eine Anfrage an den Kundensupport senden, indem Sie folgende Schritte durchführen:
+
+1. Deaktivieren Sie den technischen Kontobenutzer für das Adobe Admin Console in der Benutzeroberfläche:
+   * Drücken Sie in Cloud Manager die Taste **...** neben Ihrer Umgebung. Dadurch wird die Seite mit den Profilen des Produkts geöffnet.
+   * Klicken Sie jetzt auf das Profil **AEM Benutzer**, um eine Liste der Benutzer anzuzeigen
+   * Klicken Sie auf die Registerkarte **API-Anmeldeinformationen**, suchen Sie den entsprechenden Benutzer des technischen Kontos und löschen Sie ihn.
+2. Wenden Sie sich an den Kundensupport und fordern Sie an, dass die Dienstberechtigungen für diese Umgebung gelöscht werden.
+3. Schließlich können Sie die Anmeldeinformationen erneut generieren, wie in dieser Dokumentation beschrieben. Vergewissern Sie sich auch, dass der neu erstellte Benutzer des technischen Kontos über die entsprechenden Berechtigungen verfügt.
