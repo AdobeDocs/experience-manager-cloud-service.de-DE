@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 93%
 
 ---
 
@@ -65,11 +65,10 @@ Die Web-Konsole, die in früheren Versionen von AEM zum Ändern der OSGi-Einstel
 
 ## Änderungen am Publishing-Repository sind nicht zulässig {#changes-to-publish-repo}
 
-Direkte Änderungen am Publishing-Repository sind in AEM Cloud Service nicht zulässig. In früheren Versionen von AEM On-Premise oder AEM in AMS können Code-Änderungen direkt am Publishing-Repository vorgenommen werden, um beispielsweise Benutzer zu erstellen, das Benutzerprofil zu aktualisieren und Knoten zu erstellen. Dies ist nicht mehr möglich und kann wie folgt gehandhabt werden:
+Außer Änderungen im Ordner `/home` auf der Veröffentlichungsstufe sind direkte Änderungen am Veröffentlichungs-Repository auf AEM Cloud Service nicht zulässig. In früheren Versionen von lokalen AEM oder AEM auf AMS können Codeänderungen direkt am Veröffentlichungs-Repository vorgenommen werden. Einige Einschränkungen lassen sich wie folgt reduzieren:
 
 * Für Inhalts- und inhaltsbasierte Konfiguration: Nehmen Sie die Änderungen an der Autoreninstanz vor und veröffentlichen Sie diese.
 * Für Code und Konfiguration: Nehmen Sie die Änderungen im GIT-Repository vor und führen Sie die CI/CD-Pipeline aus, um sie einzuführen.
-* Für benutzerbezogene Daten, z. B. Formularübermittlungen oder Profildaten: Verwenden Sie den Unified Profile Service aus Experience Cloud Platform oder einen anderen sitzungsbasierten Speicher eines Drittanbieters.
 
 ## Benutzerdefinierte Ausführungsmodi sind nicht zulässig {#custom-runmodes}
 
