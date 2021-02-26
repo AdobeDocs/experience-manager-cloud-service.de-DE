@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 45%
+source-wordcount: '644'
+ht-degree: 44%
 
 ---
 
@@ -75,4 +75,4 @@ Die Werte für die Kontinentalcodes lauten:
 * OC Ozeanien
 * SA Südamerika
 
-Diese Informationen können in Anwendungsfällen nützlich sein, z. B. bei der Weiterleitung auf eine andere URL, die auf der Herkunft (Land) der Anforderung basiert. In diesem speziellen Anwendungsfall sollte die Weiterleitung jedoch nicht zwischengespeichert werden, da sie variiert. Bei Bedarf können Sie `Cache-Control: private` verwenden, um die Zwischenspeicherung zu verhindern. Siehe auch [Zwischenspeicherung](/help/implementing/dispatcher/caching.md#html-text).
+Diese Informationen können in Anwendungsfällen nützlich sein, z. B. bei der Weiterleitung auf eine andere URL, die auf der Herkunft (Land) der Anforderung basiert. Verwenden Sie den Header &quot;Vary&quot;zum Zwischenspeichern von Antworten, die von geografischen Informationen abhängig sind. Umleitungen zu einer bestimmten Landingpage sollten beispielsweise immer `Vary: x-aem-client-country` enthalten. Bei Bedarf können Sie `Cache-Control: private` verwenden, um die Zwischenspeicherung zu verhindern. Siehe auch [Zwischenspeicherung](/help/implementing/dispatcher/caching.md#html-text).
