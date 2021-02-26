@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 11%
+source-wordcount: '1017'
+ht-degree: 10%
 
 ---
 
@@ -53,22 +53,18 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 ## Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* Assets können mit [!DNL Experience Manager Assets Brand Portal] bezogen werden. Es hilft, Assets von Agenturbenutzern für neue Marketing-Kampagnen, Fotoaufnahmen und Projekte zu beziehen.
+* In [!DNL Brand Portal] wird eine neue Downloadeinstellung eingeführt, mit der Sie separate Ordner für jedes Asset erstellen können, wenn Sie Ordner, Sammlungen usw. herunterladen. Siehe [Download-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Fehlerbehebungen in [!DNL Assets] {#bug-fixes-assets}
 
 * Wenn nach dem Auflösen des Namenskonflikts eine neue Version eines vorhandenen Assets erstellt wird, werden die Metadaten des ursprünglichen Assets überschrieben. (CQ-4313594)
 * Wenn ein Asset mit langem Anmerkungstext gedruckt wird, wird der Anmerkungstext abgeschnitten, auch wenn Leerzeichen vorhanden sind. (CQ-4314101)
+* Wenn mehrere Assets ausgewählt sind, um die Eigenschaften zu aktualisieren, tritt manchmal entweder ein Fehler auf oder Eigenschaften eines nicht ausgewählten Assets werden aktualisiert. (CQ-4316532)
+* Beim Versuch, [!UICONTROL Assets Admin Search Rail] zu öffnen, bleibt die Seite leer, und wenn Sie auf [!UICONTROL Bearbeiten] > [!UICONTROL Einstellungen] klicken, wird ein Fehler ausgegeben. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
