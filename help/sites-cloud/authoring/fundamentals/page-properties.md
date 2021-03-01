@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 67%
+source-wordcount: '1909'
+ht-degree: 66%
 
 ---
 
@@ -192,11 +192,10 @@ Konfigurieren der Miniaturansicht der Seite
 
 ### Blueprint {#blueprint}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen.
+Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copies sind Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Aktuelle Live Copies**  - Listen, die auf dieser Blueprint-Seite basieren (d.h. Live Copies)
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **Rollout-Konfigurationen** : Steuert die Umstände, unter denen Änderungen an die Live Copy weitergegeben werden
 
 ### Live Copy   {#live-copy}
