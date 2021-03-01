@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
    ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Eine Seite, die Teil einer Live Copy ist und auf der Komponenten von einer anderen Seite übernommen werden, verfügt über eine eingeschränkte Auswahl an Optionen, einschließlich der Vererbungsoptionen. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Eine Seite, die Teil einer [livecopy](/help/sites-cloud/administering/msm/overview.md) ist, auf der Komponenten von einer anderen Seite geerbt werden.
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 * **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
-* „Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* „Blueprint“ bietet Details und verschiedene Aktionen. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* „Sprachkopien“ bietet Details und verschiedene Aktionen. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), enthält Details und verschiedene Aktionen
+* [Sprachenkopien](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel) bietet Details und verschiedene Aktionen
 
 ## Ereignisse: Zeitleiste {#events-timeline}
 
@@ -248,7 +248,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 ![Option „Seiteninformationen“](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Eigenschaften öffnen](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Seiten-Rollout <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Seiten-Rollout](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Seite sperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
