@@ -2,10 +2,10 @@
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 99%
+source-wordcount: '2900'
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,7 @@ Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse 
 
 >[!NOTE]
 >
->Bei der Multisite-Unterstützung für zielgerichtete Inhalte handelt es sich um eine erweiterte Funktion. Damit Sie diese Funktion verwenden können, sollten Sie sich mit Multi Site Manager und der Adobe Target-Integration in AEM vertraut machen.
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>Bei der Multisite-Unterstützung für zielgerichtete Inhalte handelt es sich um eine erweiterte Funktion. Damit Sie diese Funktion verwenden können, sollten Sie sich mit [Site-Manager](/help/sites-cloud/administering/msm/overview.md) und der [Adobe Target-Integration](/help/sites-cloud/integrating/integrating-adobe-target.md) in AEM vertraut machen.
 
 In diesem Dokument wird Folgendes beschrieben:
 
@@ -110,7 +107,7 @@ Nach Aktualisierung der Registerkarte erscheint auch auf der Site für Kanada da
 
 ![Ändern von Versionen](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-Der Marketing-Experte möchte diese Änderungen auf das europäische Gebiet übertragen und aktiviert die Live Copy, indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom Master-Gebiet bezieht. <!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+Der Marketingexperte möchte diese Änderungen auf das europäische Gebiet übertragen und [aktiviert die Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md), indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom Master-Gebiet bezieht. 
 
 ![Rollout einer Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -189,9 +186,9 @@ So erstellen Sie ein Gebiet als Live Copy:
 
 1. Wählen Sie im Dropdown-Menü **Rollout-Konfigurationen** die entsprechende Konfiguration aus.
 
-   Beschreibungen der verschiedenen Optionen finden Sie unter [Installierte Rollout-Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations).
+   Beschreibungen der verschiedenen Optionen finden Sie unter [Installierte Rollout-Konfigurationen](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations).
 
-   Weitere Informationen zu Live Copys finden Sie unter [Erstellen und Synchronisieren von Live Copys](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html).
+   Weitere Informationen zu Live Copys finden Sie unter [Erstellen und Synchronisieren von Live Copys](/help/sites-cloud/administering/msm/creating-live-copies.md).
 
    >[!NOTE]
    >
