@@ -5,10 +5,10 @@ user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
 translation-type: tm+mt
-source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
+source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 97%
+source-wordcount: '307'
+ht-degree: 93%
 
 ---
 
@@ -81,6 +81,25 @@ ht-degree: 97%
       + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Verwalten {#administering}
    + [Verwalten von Workflows](administering/workflows-administering.md)
+   + Wiederverwenden von Inhalt {#reusing-content}
+      + [MSM und Übersetzung](administering/msm-and-translation.md)
+      + Multi-Site-Manager {#msm}
+         + [Übersicht über MSM und Live Copy](administering/msm/overview.md)
+         + [Konfigurieren der Synchronisierung von Live Copies](administering/msm/live-copy-sync-config.md)
+         + [Erstellen und Synchronisieren von Live Copies](administering/msm/creating-live-copies.md)
+         + [Konsole „Live Copy-Übersicht“](administering/msm/live-copy-overview.md)
+         + [Rollout-Konflikte](administering/msm/rollout-conflicts.md)
+         + [Best Practices für MSM](administering/msm/best-practices.md)
+         + [Fehlerbehebung und häufig gestellte Fragen](administering/msm/troubleshooting.md)
+      + Übersetzung {#translation}
+         + [Übersetzen von Inhalten für mehrsprachige Sites](administering/translation/overview.md)
+         + [Vorbereiten von Inhalten auf die Übersetzung](administering/translation/preparation.md)
+         + [Verwalten von Übersetzungsprojekten](administering/translation/managing-projects.md)
+         + [Assistent „Sprachkopie erstellen“](administering/translation/wizard.md)
+         + [Identifizieren zu übersetzender Inhalte](administering/translation/rules.md)
+         + [Konfigurieren des Frameworks für die Übersetzungsintegration](administering/translation/integration-framework.md)
+         + [Herstellen einer Verbindung mit Microsoft Translator](administering/translation/connect-ms-translator.md)
+         + [Best Practices für die Übersetzung](administering/translation/best-practices.md)
 + Integration mit AEM as a Cloud Service {#integrations}
    + [Integration mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integration mit Adobe Target](integrating/integrating-adobe-target.md)
