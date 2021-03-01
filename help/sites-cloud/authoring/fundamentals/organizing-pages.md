@@ -2,7 +2,7 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
@@ -130,10 +130,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 >
 >Sie sollten es vermeiden, einen Zwei-Buchstaben-Code gemäß ISO-639-1 als Seitennamen zu verwenden, sofern es sich nicht um einen Sprachstamm handelt.
 >
->Weitere Informationen finden Sie unter „Vorbereiten von Inhalten für die Übersetzung“.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Weitere Informationen finden Sie unter [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Vorlagen {#templates}
 
