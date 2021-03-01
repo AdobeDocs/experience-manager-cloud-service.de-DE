@@ -2,10 +2,10 @@
 title: Bearbeiten von Launches
 description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleist
 
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
 
-Wenn Ihr Launch auf einer Live Copy basiert, sehen Sie Folgendes: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+Wenn Ihr Start auf einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) basiert, werden Sie Folgendes tun:
 
 * Schlosssymbole (kleine Vorhängeschlösser), wenn Sie eine Komponente bearbeiten (Inhalt und/oder Eigenschaften)
 * die Registerkarte **Live Copy** in den **Seiteneigenschaften**
@@ -37,7 +37,7 @@ Sie können Änderungen auf dieselbe Weise vornehmen wie bei einer Standard-Live
 * Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht von Änderungen überschrieben, die am selben Ort innerhalb der Startverzweigung vorgenommen werden.
 * Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
-Siehe „Ändern von Live Copy-Inhalt“. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+Siehe [Ändern des Live-Copy-Inhalts](/help/sites-cloud/administering/msm/creating-live-copies.md).
 
 ## Vergleichen einer Launch-Seite mit ihrer Quellseite {#comparing-a-launch-page-to-its-source-page}
 
