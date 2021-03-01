@@ -2,10 +2,10 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -158,7 +158,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* Ein Übersetzungsprojekt: ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* Ein [Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md) - Ein Referenzbeispiel für die Verwaltung übersetzungsbezogener Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
