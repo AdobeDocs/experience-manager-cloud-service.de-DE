@@ -6,14 +6,14 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Commerce-Integrationsrahmen
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 99%
 
 ---
 
@@ -59,4 +59,4 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 * [Websites, Stores und Ansichten](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM-CIF-Kernkomponenten – Multi-Store-/Multi-Site-Konfiguration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Verwenden von Multi-Site-Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/msm.html)
+* [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](/help/sites-cloud/administering/msm/overview.md)
