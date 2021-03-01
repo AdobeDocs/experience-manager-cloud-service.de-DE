@@ -2,7 +2,7 @@
 title: Arbeiten mit Projekt-Workflows
 description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -35,10 +35,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 
 >[!NOTE]
 >
->&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter „Erstellen von Sprachkopien für Assets“.
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-cloud/administering/translation/managing-projects.md). 
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte dazwischen ändern sich.
 
@@ -48,7 +45,7 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
 * [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md) 
 * [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md) 
-* Konfigurieren von Workflows<!--* [Configuring workflows](/help/sites-administering/workflows.md)--> 
+* [Konfigurieren von Workflows](/help/sites-cloud/administering/workflows-administering.md)
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
