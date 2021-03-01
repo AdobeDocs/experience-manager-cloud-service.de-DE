@@ -3,10 +3,10 @@ title: Automatisches Taggen von Assets mit AI-generierten Tags
 description: Taggen Sie Assets mit künstlich intelligenten Diensten, die kontextbezogene und beschreibende Geschäftstags mit dem Dienst [!DNL Adobe Sensei] verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '2807'
-ht-degree: 77%
+source-wordcount: '2800'
+ht-degree: 69%
 
 ---
 
@@ -17,7 +17,7 @@ Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomie
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging anhand einer Unternehmenstaxonomie dabei, die Assets am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller für das Erstellen einer Werbekampagne Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass bei einer Suche nur relevante Bilder angezeigt werden.
 
-Im Hintergrund verwenden die intelligenten Tags das künstlich intelligente Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus in Ihrer Tag-Struktur und Ihrer Geschäftstaxonomie zu schulen. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet die Funktion das künstlich intelligente Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Business-Taxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -27,7 +27,7 @@ Sie können die folgenden Assettypen taggen:
 
 * **Bilder**: Bilder in vielen Formaten werden mit den intelligenten Inhaltsdiensten des Adobe Sensei getaggt. [Erstellen Sie ein Schulungsmodell](#train-model) und wenden Sie dann [Smarttags](#tag-assets) auf Bilder an.
 * **Video-Assets**: Video-Tagging ist standardmäßig in  [!DNL Adobe Experience Manager] als  [!DNL Cloud Service]. [Videos werden automatisch ](/help/assets/smart-tags-video-assets.md) getaggt, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten.
-* **Textbasierte Assets**:  [!DNL Experience Manager Assets] Tags automatisch für die unterstützten textbasierten Assets beim Hochladen. Erfahren Sie mehr über [intelligentes Tagging von textbasierten Assets](#smart-tag-text-based-assets).
+* **Textbasierte Assets**:  [!DNL Experience Manager Assets] Tags automatisch für die unterstützten textbasierten Assets beim Hochladen. Erfahren Sie mehr über [Tagging textbasierter Assets](#smart-tag-text-based-assets).
 
 ## Unterstützte Asset-Typen {#smart-tags-supported-file-formats}
 
@@ -68,7 +68,7 @@ Intelligente Tags werden auf die unterstützten Dateitypen angewendet, die Darst
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
-## Intelligentes Tagging von textbasierten Assets {#smart-tag-text-based-assets}
+## Tagging textbasierter Assets mit intelligenten Tags {#smart-tag-text-based-assets}
 
 Die unterstützten textbasierten Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] getaggt. Es ist standardmäßig aktiviert. Die Wirksamkeit intelligenter Tags hängt nicht von der Textmenge im Asset ab, sondern von den relevanten Suchbegriffen oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die intelligenten Tags die Suchbegriffe, die im Text angezeigt werden, aber die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert wird und zum Suchen nach den Assets verwendet wird. Intelligente Tags, die auf Suchbegriffen im Text basieren, bieten jedoch eine dedizierte, strukturierte und mit höherer Priorität versehene Suchfacette, mit der die Ermittlung von Assets im Vergleich zum Index für die vollständige Suche verbessert wird.
 
@@ -80,7 +80,7 @@ Im Vergleich dazu werden die Smart-Tags für Bilder und Videos visuell abgeleite
 >
 >Die neuen [!DNL Experience Manager Assets]-Implementierungen sind standardmäßig in [!DNL Adobe Developer Console] integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Implementierungen können Administratoren die [Integration von Smart-Tags manuell konfigurieren](/help/assets/smart-tags-configuration.md#aio-integration).
 
-Sie können [!DNL Adobe Experience Manager] mithilfe der [!DNL Adobe Developer Console] mit Smart-Tags integrieren. Verwenden Sie diese Konfiguration, um über [!DNL Experience Manager] auf den Smart-Tags-Service zuzugreifen. Informationen zu den Aufgaben zum Konfigurieren von Smart-Tags finden Sie unter [Konfigurieren von Experience Manager für das Smart-Tagging von Assets](smart-tags-configuration.md). Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Smart-Tags-Service weitergeleitet wird.
+Sie können [!DNL Adobe Experience Manager] mithilfe der [!DNL Adobe Developer Console] mit Smart-Tags integrieren. Verwenden Sie diese Konfiguration, um über [!DNL Experience Manager] auf den Smart-Tags-Service zuzugreifen. Aufgaben zum Konfigurieren der intelligenten Tags finden Sie unter [configure [!DNL Experience Manager] to tag assets](smart-tags-configuration.md). Im Backend authentifiziert der [!DNL Experience Manager]-Server Ihre Service-Anmeldedaten mit dem Gateway der Adobe Developer Console, bevor Ihre Anfrage an den Smart-Tags-Service weitergeleitet wird.
 
 ## Grundlegendes zu Tag-Modellen und Richtlinien {#understand-tag-models-guidelines}
 
@@ -90,11 +90,11 @@ Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Si
 
 ### Trainings-Richtlinien {#training-guidelines}
 
-Die Bilder im Trainings-Satz sollten folgende Richtlinien einhalten:
+Stellen Sie sicher, dass die Bilder im Schulungssatz den folgenden Richtlinien entsprechen:
 
 **Menge und Größe:** Mindestens 10 Bilder und maximal 50 Bilder pro Tag.
 
-**Kohärenz**: Bilder für ein Tag sollten visuell ähnlich sein. Es ist am besten, die Tags zu denselben visuellen Aspekten (z. B. demselben Objekttyp in einem Bild) zu einem einzigen Tag-Modell zusammenzufassen. So ist es beispielsweise nicht empfehlenswert, all diese Bilder mit dem Tag `my-party` zu versehen (zu Trainings-Zwecken), da sie einander visuell nicht ähnlich sind.
+**Kohärenz**: Stellen Sie sicher, dass die Bilder für ein Tag visuell ähnlich sind. Am besten sollten Sie die Tags zu denselben visuellen Aspekten (z. B. zum gleichen Objekttyp in einem Bild) zu einem einzelnen Tag-Modell hinzufügen. So ist es beispielsweise nicht empfehlenswert, all diese Bilder mit dem Tag `my-party` zu versehen (zu Trainings-Zwecken), da sie einander visuell nicht ähnlich sind.
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coherence.png)
 
@@ -110,9 +110,9 @@ Die Bilder im Trainings-Satz sollten folgende Richtlinien einhalten:
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/completeness.png)
 
-**Anzahl der Tags**: Adobe empfiehlt, dass Sie ein Modell mit mindestens zwei verschiedenen Tags und mindestens 10 verschiedenen Bildern für jedes Tag trainieren. Fügen Sie in einem einzelnen Tag-Modell nicht mehr als 50 Tags hinzu.
+**Anzahl der Tags**: Adobe empfiehlt, dass Sie ein Modell mit mindestens zwei verschiedenen Tags und mindestens zehn verschiedenen Bildern für jedes Tag ausbilden. Fügen Sie in einem einzelnen Tag-Modell nicht mehr als 50 Tags hinzu.
 
-**Anzahl der Beispiele**: Fügen Sie für jedes Tag mindestens 10 Beispiele hinzu. Adobe empfiehlt jedoch etwa 30 Beispiele. Es werden maximal 50 Beispiele pro Tag unterstützt.
+**Anzahl der Beispiele**: Fügen Sie für jedes Tag mindestens zehn Beispiele hinzu. Adobe empfiehlt jedoch etwa 30 Beispiele. Es werden maximal 50 Beispiele pro Tag unterstützt.
 
 **Vermeidung falscher positiver Werte und von Konflikte**: Adobe empfiehlt die Erstellung eines einzelnen Tag-Modells für einen einzelnen visuellen Aspekt. Strukturieren Sie die Tag-Modelle so, dass überlappende Tags zwischen den Modellen vermieden werden. Verwenden Sie beispielsweise keine gemeinsamen Tags wie `sneakers` in zwei verschiedenen Tag-Modellen, die `shoes` und `footwear` heißen. Der Trainings-Prozess überschreibt ein trainiertes Tag-Modell mit dem anderen für ein gemeinsames Keyword.
 
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um ein Modell für Ihre geschäftsspezifischen Ta
 1. Um eine Vorschau der Miniaturansichten der ausgewählten Bilder anzuzeigen, klicken Sie auf das Akkordeon vor einem Tag. Sie können Ihre Auswahl ändern, indem Sie auf **[!UICONTROL Assets hinzufügen]** klicken. Wenn Sie mit der Auswahl zufrieden sind, klicken Sie auf **[!UICONTROL Senden]**. Die Benutzeroberfläche zeigt unten auf der Seite eine Benachrichtigung an, die angibt, dass das Training gestartet wurde.
 1. Überprüfen Sie den Status des Trainings in der Spalte **[!UICONTROL Status]** für jedes Tag-Modell. Mögliche Status sind [!UICONTROL Ausstehend], [!UICONTROL Trainiert] und [!UICONTROL Fehlgeschlagen].
 
-![Workflow zum Trainieren von Tagging-Modellen für das Smart-Tagging](assets/smart-tag-model-training-flow.png)
+![Arbeitsablauf zur Schulung des Tagging-Modells für intelligente Tags](assets/smart-tag-model-training-flow.png)
 
 *Abbildung: Schritte des Trainings-Workflows zum Trainieren des Tagging-Modells.*
 
@@ -167,7 +167,7 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 
 ### Tagging von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
 
-1. Gehen Sie in der Experience Manager-Benutzeroberfläche zu **[!UICONTROL Tools > Workflow > Modelle]**.
+1. Wechseln Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** den Workflow **[!UICONTROL DAM Smart Tags Assets]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]**.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -177,11 +177,11 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass Ihre Assets ordnungsgemäß mit Tags versehen sind. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](#manage-smart-tags-and-searches).
+   *Abbildung: Navigieren Sie zum Asset-Ordner und überprüfen Sie die Tags, um zu überprüfen, ob Ihre Assets ordnungsgemäß getaggt wurden. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](#manage-smart-tags-and-searches).*
 
 ### Tagging von Assets über die Zeitleiste {#tagging-assets-from-the-timeline}
 
-1. Wählen Sie über die Assets-Benutzeroberfläche den Ordner mit Assets bzw. bestimmte Assets aus, auf die Sie Smart-Tags anwenden möchten.
+1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] den Ordner aus, der Assets oder bestimmte Assets enthält, auf die Sie Smarttags anwenden möchten.
 1. Öffnen Sie die **[!UICONTROL Zeitleiste]** oben links.
 1. Öffnen Sie die Aktionen unten in der linken Seitenleiste und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
@@ -192,11 +192,11 @@ Wenn Sie den Smart-Tags-Service trainiert haben, können Sie den Tagging-Workflo
 
 >[!NOTE]
 >
->In zukünftigen Tagging-Zyklen werden nur geänderte Assets mit neu trainierten Tags versehen. Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
+>In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu geschulten Tags versehen. Selbst unveränderte Assets werden jedoch mit Tags versehen, wenn die Lücke zwischen der letzten und der aktuellen Tagging-Zykluszeit für den Tag-Arbeitsablauf 24 Stunden überschreitet. Beim regelmäßigen Tagging Workflows werden unveränderte Assets mit Tags versehen, wenn die Zeitspanne sechs Monate überschreitet.
 
 ### Tagging hochgeladener Assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Zu diesem Zweck konfigurieren Administratoren einen Workflow, um einen Schritt hinzuzufügen, um die Assets mit Smart-Tags zu versehen. Erfahren Sie, [wie Sie Smart-Tagging für hochgeladene Assets aktivieren](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+[!DNL Experience Manager] kann die Assets, die Benutzer in DAM hochladen, automatisch mit Tags versehen. Dazu konfigurieren Administratoren einen Workflow, um einen verfügbaren Schritt hinzuzufügen, der Assets taggt. Siehe [So aktivieren Sie intelligente Tags für hochgeladene Assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Verwalten von Smart-Tags und Asset-Suchvorgängen {#manage-smart-tags-and-searches}
 
@@ -204,11 +204,11 @@ Sie können Smart-Tags kuratieren, um ungenaue Tags zu entfernen, die möglicher
 
 Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Assets verfeinern, indem Sie sicherstellen, dass Ihr Asset nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Assets ohne Bezug angezeigt werden.
 
-Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Asset zu erhöhen. Je höher der Rang eines Tags für ein Asset desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Assets in die Suchergebnisse.
+Sie können einem Tag auch einen höheren Rang zuweisen, um die Relevanz des Tags für das Asset zu erhöhen. Je höher der Rang eines Tags für ein Asset desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Assets in die Suchergebnisse.
 
 So moderieren Sie die Smart-Tags Ihrer Assets:
 
-1. Suchen Sie im OmniSearch-Feld nach Assets, die auf einem Tag basieren.
+1. Suchen Sie im Suchfeld nach Assets, die auf einem Tag basieren.
 
 1. Prüfen Sie die Suchergebnisse auf Assets, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
 
@@ -224,7 +224,7 @@ So moderieren Sie die Smart-Tags Ihrer Assets:
 
 ### AEM-Suchergebnisse mit Smart-Tags  {#understandsearch}
 
-Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch Verwendung von Smarttags wird eine zusätzliche `OR`-Klausel hinzugefügt, um Suchbegriffe in den angewendeten Smarttags zu finden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch Verwendung von Smarttags wird eine `OR`-Klausel hinzugefügt, um Suchbegriffe in den angewendeten Smarttags zu finden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten.
 
@@ -245,12 +245,12 @@ Das erweiterte intelligente Tagging basiert auf Lernmodellen von Bildern und der
 * Tagging wird in den Sprachen unterstützt, die [!DNL Experience Manager] unterstützt. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de#languages).
 * Tags, die nicht realistisch behandelt werden, beziehen sich auf:
 
-   * Nicht visuelle, abstrakte Aspekte wie das Jahr oder die Saison der Veröffentlichung eines Produkts, Stimmung oder Emotion, die durch ein Bild ausgelöst wird, subjektive Konnotation eines Videos usw.
+   * Nicht visuelle, abstrakte Aspekte. Zum Beispiel das Jahr oder die Saison der Veröffentlichung eines Produkts, Stimmung oder Emotion, die durch ein Bild ausgelöst wird, subjektive Konnotation eines Videos usw.
    * Feine visuelle Unterschiede bei Produkten wie Hemden mit und ohne Kragen oder kleinen Produktlogos, die in Produkte eingebettet sind.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie die [!DNL Assets] Omniture-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
+Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie die [!DNL Assets]-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Um nach Assets mit Smart-Tags zu suchen (regulär oder erweitert), verwenden Sie
 
 >[!MORELIKETHIS]
 >
->* [Konfigurieren von Experience Manager für Smart-Tagging ](smart-tags-configuration.md)
+>* [ [!DNL Experience Manager] Konfigurierung für intelligentes Tagging](smart-tags-configuration.md)
 >* [Grundlegendes, wie Smart-Tags die Verwaltung von Assets unterstützen](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
 
