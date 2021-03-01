@@ -2,10 +2,10 @@
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehende
 
 * Der Titel wird in der Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) angezeigt. Von dort aus haben Autoren Zugriff zur Bearbeitung.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
-* Standardmäßig aktualisiert die Live Copy automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* Standardmäßig aktualisiert [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird.
 
 Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. Das **Launch-Datum** funktioniert allerdings nur in Kombination mit der Kennzeichnung **Produktionsbereit** (siehe [Bearbeiten einer Launch-Konfiguration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Damit die Aktionen automatisch erfolgen, muss beides festgelegt werden.
 
@@ -26,7 +26,8 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >
 >* `/libs/launches/templates/outofscope`
 >
->Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
+>
+Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
 >* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
 
@@ -83,7 +84,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Dies erfolgt, indem diese Option den Launch zu einer Live Copy macht. Standardmäßig ist diese Option aktiviert. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Start als [Live Copy](/help/sites-cloud/administering/msm/overview.md) festgelegt wird. Standardmäßig ist diese Option aktiviert.-->
    * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Launch-Eigenschaften](/help/sites-cloud/authoring/assets/launches-properties.png)
