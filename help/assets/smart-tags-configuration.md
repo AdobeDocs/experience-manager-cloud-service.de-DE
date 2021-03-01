@@ -3,17 +3,17 @@ title: Optimierte Smart-Tags
 description: Wenden Sie mithilfe der KI- und ML-Services von Adobe Sensei kontextbezogene und beschreibende Unternehmens-Tags an, um die Asset-Erkennung und Content Velocity zu verbessern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 97%
+source-wordcount: '1031'
+ht-degree: 86%
 
 ---
 
 
-# Konfigurieren von Experience Manager für das Smart-Tagging von Assets {#configure-aem-for-smart-tagging}
+# [!DNL Experience Manager] für intelligentes Tagging von Assets {#configure-aem-for-smart-tagging} konfigurieren
 
-Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass die Assets im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können. Adobe stellt Smart-Tags bereit, die Algorithmen für künstliche Intelligenz und maschinelles Lernen verwenden, um Bilder zu trainieren. Smart-Tags verwenden ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren.
+Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass die Assets im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können. Adobe bietet intelligente Tags, die künstliche Intelligenz und maschinelles Lernen verwenden, um Bilder zu trainieren. Smart-Tags verwenden ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren.
 
 Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zur Adobe Developer Console an den Administrator Ihres Unternehmens gesendet. Der Administrator greift auf den Link zu, um die Smart-Tags mit der Adobe Developer Console in [!DNL Experience Manager] zu integrieren.
 
@@ -25,7 +25,7 @@ Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben wer
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] Bereitstellungen, die nach  [August 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) erstellt wurden, werden  [!DNL Adobe Developer Console] standardmäßig in integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die folgenden Schritte ausführen, um die Integration zu konfigurieren.
+>Wenn Ihre [!DNL Experience Manager Assets]-Bereitstellungen nach [August 2020 Release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) erstellt wurden, wird [!DNL Adobe Developer Console] standardmäßig integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die Integration anhand der folgenden Anweisungen manuell konfigurieren.
 
 ## Integration mit der Adobe Developer Console {#aio-integration}
 
@@ -56,7 +56,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]**.
 
-   ![Smart-Tags in Experience Manager – Erstellen eines öffentlichen Schlüssels](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Intelligente Tags erstellen öffentlichen Schlüssel](assets/aem_smarttags-config1.png)
 
 ### Erstellen einer Integration {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Um Smart-Tags zu verwenden, erstellen Sie eine Integration in der Adobe Develope
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 1. Erstellen Sie ein Projekt mit einem beliebigen Namen. Klicken Sie auf **[!UICONTROL API hinzufügen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL API hinzufügen]** die Option **[!UICONTROL Experience Cloud]** und dann **[!UICONTROL Smart Content]** aus. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Hinzufügen eine API]** **[!UICONTROL Experience Cloud]** und dann **[!UICONTROL Smart Content]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie **[!UICONTROL Öffentlichen Schlüssel hochladen]** aus. Stellen Sie die von [!DNL Experience Manager] heruntergeladenen Zertifikatdatei bereit. Die Meldung [!UICONTROL Öffentliche(r) Schlüssel erfolgreich hochgeladen] wird angezeigt. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Die Seite [!UICONTROL Neue Dienstkonto (JWT)-Anmeldedaten erstellen] zeigt den öffentlichen Schlusselle für das Dienstkonto an, das Sie gerade konfiguriert haben. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Produktprofile auswählen]** die Option **[!UICONTROL Smart Content Services]** aus. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite offen, um diese Werte zu kopieren und in Experience Manager hinzuzufügen, wenn Sie Smart-Tags in [!DNL Experience Manager] weiter konfigurieren.
+1. [!UICONTROL Auf der ] Seite &quot;Neues Dienstkonto erstellen&quot;wird der öffentliche Schlüssel für das Dienstkonto angezeigt. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Produktprofile auswählen]** die Option **[!UICONTROL Smart Content Services]** aus. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Auf einer Seite werden weitere Informationen zur Konfiguration angezeigt. Lassen Sie diese Seite geöffnet, um diese Werte zu kopieren und in [!DNL Experience Manager] hinzuzufügen, wenn Sie Smart-Tags in [!DNL Experience Manager] weiter konfigurieren.
 
    ![Auf der Registerkarte „Übersicht“ können Sie die für die Integration bereitgestellten Informationen überprüfen.](assets/integration_details.png)
 
@@ -94,16 +94,16 @@ Nachdem Sie die Konfiguration abgeschlossen haben, führen Sie die folgenden Sch
 
 ### Neu konfigurieren, wenn ein Zertifikat abläuft {#certrenew}
 
-Wenn das Zertifikat abläuft, wird es nicht mehr als vertrauenswürdig eingestuft. Um ein neues Zertifikat hinzuzufügen, führen Sie diese Schritte aus. Sie können ein abgelaufenes Zertifikat nicht verlängern.
+Wenn das Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen. Sie können ein abgelaufenes Zertifikat nicht verlängern.
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager]-Implementierung als Administrator an. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
 1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken Sie auf die Registerkarte **[!UICONTROL Keystore]**.
 1. Löschen Sie den vorhandenen **[!UICONTROL similaritysearch]**-Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-   ![Löschen Sie den vorhandenen Eintrag „similaritysearch“ (Ähnlichkeitssuche) in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Löschen Sie den vorhandenen Eintrag für die Ähnlichkeitssuche in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Abbildung: Löschen des vorhandenen Eintrags `similaritysearch` in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.*
+   *Abbildung: Löschen Sie den vorhandenen  `similaritysearch` Eintrag in Keystore, um ein Sicherheitszertifikat hinzuzufügen.*
 
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]** auf. Öffnen Sie die verfügbare Smart-Tags-Konfiguration. Um ein öffentliches Zertifikat herunterzuladen, klicken Sie auf **[!UICONTROL Öffentliches Zertifikat herunterladen]**.
 
@@ -126,7 +126,7 @@ Wenn das Zertifikat abläuft, wird es nicht mehr als vertrauenswürdig eingestuf
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Argumente]** die Option **[!UICONTROL Fehler ignorieren]** aus, wenn der Workflow Fehler bei der Vorhersage von Tags ignorieren soll. Um Assets unabhängig davon mit Tags zu versehen, ob die Smart-Tagging-Funktion für Ordner aktiviert ist, wählen Sie **[!UICONTROL Smart-Tag-Markierung ignorieren]** aus.
 
-1. Klicken Sie auf **[!UICONTROL OK]**, um den Prozessschritt zu schließen, und speichern Sie dann den Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
+1. Klicken Sie auf **[!UICONTROL OK]**. Schließt den Prozessschritt. Speichern Sie den Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
 >[!MORELIKETHIS]
 >
