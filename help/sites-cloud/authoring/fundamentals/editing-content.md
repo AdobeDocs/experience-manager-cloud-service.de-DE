@@ -2,7 +2,7 @@
 title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 Vererbung ist der Mechanismus, bei dem Inhalte automatisch von einer Komponente in eine andere verschoben werden können. Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
-* Multi-Site-Management <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Multi-Site-Management](/help/sites-cloud/administering/msm/overview.md)
 * [Launch](/help/sites-cloud/authoring/launches/overview.md) (wenn auf einer Live Copy basierend).
 
 Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Je nach Komponente kann dies über die Komponenten-Symbolleiste erfolgen, wenn sich die Komponente auf einer Seite befindet, die Teil einer Live Copy oder eines Launch ist (wenn auf einer Live Copy basierend).
