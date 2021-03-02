@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
+source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1142'
 ht-degree: 9%
 
 ---
@@ -59,6 +59,10 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
+
+* Unternehmen können jetzt Assets mit [!DNL Brand Portal] ausgeben. Die Asset-Sourcing-Funktion nutzt [!DNL Brand Portal], um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotografien und Projekte zu beziehen. Siehe [Asset-Sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+
+* Der Nutzungsbericht zeigt jetzt nur die aktiven Benutzer an. [!DNL Brand Portal] Die inaktiven Benutzer werden jetzt nicht angezeigt. Aktive Benutzer sind diejenigen, deren Konto einem Profil im [!DNL Admin Console] zugewiesen ist. Siehe [[!DNL Brand Portal] Berichte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
 * In [!DNL Brand Portal] wird eine neue Downloadeinstellung eingeführt, mit der Sie separate Ordner für jedes Asset erstellen können, wenn Sie Ordner, Sammlungen usw. herunterladen. Siehe [Download-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
