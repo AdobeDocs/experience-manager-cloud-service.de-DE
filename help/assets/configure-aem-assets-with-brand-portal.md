@@ -3,10 +3,10 @@ title: Konfigurieren von AEM Assets as a  [!DNL Cloud Service]  mit Brand Portal
 description: Konfigurieren von AEM Assets mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 99%
+source-wordcount: '1651'
+ht-degree: 97%
 
 ---
 
@@ -277,6 +277,7 @@ Sie haben nun die folgenden Möglichkeiten:
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](publish-to-brand-portal.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Veröffentlichen von Assets vom Markenportal nach AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Asset-Beschaffung im Markenportal
 * [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Veröffentlichen von Tags in Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
