@@ -2,10 +2,10 @@
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 87%
 
 ---
 
@@ -62,7 +62,7 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
    * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, tippen Sie auf **[!UICONTROL Ausgabedarstellungen]**.
 
-      Tippen Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Möglicherweise müssen Sie in der Liste der Ausgabedarstellungen einen Bildlauf durchführen, um die Überschrift „Dynamisch“ anzuzeigen.
+      Tippen Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Führen Sie bei Bedarf einen Bildlauf in der Liste &quot;Darstellungen&quot;durch, um die Überschrift &quot;Dynamisch&quot;anzuzeigen.
 
       Tippen Sie unten in der linken Seitenleiste auf **[!UICONTROL URL]**.
 
@@ -76,13 +76,13 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Markieren Sie den Text und kopieren Sie ihn in den Webbrowser, um eine Vorschau des Assets anzuzeigen oder es der Web-Inhaltsseite hinzuzufügen.
+1. Um das Asset Vorschau oder es Ihrer Webseite hinzuzufügen, wählen Sie den gewünschten Text aus und kopieren Sie ihn in Ihren Webbrowser.
 
    Um das URL-Fenster zu verlassen, tippen Sie auf das **[!UICONTROL X]** oder auf **[!UICONTROL Schließen]**.
 
 ## Abrufen einer URL für ein statisches Asset {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen es sich neben Bildern und Videos um zusätzliche Assets handelt. Folgende unterstützte Formate von statischen Assets sind für die Bereitstellung verfügbar:
+Dynamic Media unterstützt den Versand von statischen Assets, bei denen es sich um andere Assets handelt, die über Bilder und Videos hinausgehen. Folgende unterstützte Formate von statischen Assets sind für die Bereitstellung verfügbar:
 
 * 3D-Dateien
 * Animiertes GIF
@@ -120,9 +120,9 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 
-1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Der kopierte URL-Pfad wird in nachfolgenden Schritten benötigt.
+1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Sie benötigen den kopierten URL-Pfad später in den Schritten.
 
-   Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
+   Der URL-Pfad könnte z. B. wie folgt aussehen:
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
@@ -135,13 +135,13 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Tippen Sie links oben auf der Seite auf **[!UICONTROL Cloud Services]** und dann auf das AEM-Symbol. Navigieren Sie anschließend zu **[!UICONTROL Allgemein > CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java Content Repository).
 
-   Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
+   Der Darstellungspfad des Videos könnte beispielsweise wie folgt aussehen:
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
    (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
-1. Ordnen Sie die kopierten Informationen in der folgenden Reihenfolge an, um einen vollständigen URL-Pfad anzulegen:
+1. Um einen vollständigen URL-Pfad zu erstellen, ordnen Sie die kopierten Informationen in der folgenden Reihenfolge an:
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,7 +149,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   Dies ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
+   Dieser Pfad ist die vollständige Video-URL für eine veröffentlichte Videowiedergabe.
 
 ## Abrufen einer Video-URL für adaptives Streaming (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
@@ -158,18 +158,18 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
 
-   * Unter **[!UICONTROL Videodienst-URL]** kopieren Sie den gesamten URL-Pfad. Der kopierte URL-Pfad wird in den nachfolgenden Schritten benötigt. Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
+   * Unter **[!UICONTROL Videodienst-URL]** kopieren Sie den gesamten URL-Pfad. Sie benötigen den kopierten URL-Pfad später in diesen Schritten. Der URL-Pfad könnte z. B. wie folgt aussehen:
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
-   * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später bei diesen Schritten.
+   * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später in diesen Schritten.
 
       Beispiel: Für die Registrierungs-ID `87654321|demoCo` lautet der Name des Kunden, den Sie kopieren, `demoCo`.
 
 
-1. Je nachdem, welches Videobereitstellungsprotokoll Sie verwenden möchten, kopieren Sie den entsprechenden Protokollselektor. Der kopierte Protokollselektor wird in den nachfolgenden Schritten benötigt.
+1. Je nachdem, welches Videobereitstellungsprotokoll Sie verwenden möchten, kopieren Sie den entsprechenden Protokollselektor. Sie benötigen die kopierte Protokollauswahl später in diesen Schritten.
 
    <table>
     <tbody>
@@ -188,7 +188,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
     </tbody>
    </table>
 
-1. Kopieren Sie den vollständigen Video-Asset-Pfad in AEM, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.
+1. Kopieren Sie den vollständigen Video-Asset-Pfad in AEM, wie mit Dynamic Media verarbeitet. Sie benötigen diesen kopierten Pfad für Video-Assets später in diesen Schritten.
 
    Beispiel:
 
