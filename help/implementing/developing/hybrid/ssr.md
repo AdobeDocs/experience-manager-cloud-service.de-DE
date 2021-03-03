@@ -2,10 +2,10 @@
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Dies geschieht über den **RemoteContentRenderer – Configuration Factory OSGi-
 Folgende Felder stehen für die Konfiguration zur Verfügung:
 
 * **Inhaltspfadmuster**: Regulärer Ausdruck, um bei Bedarf einen Inhaltsbereich zuzuordnen
-* **Remote-Endpunkt-URL**: URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
+* **Remote-Endpunkt-URL**  - URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
    * Verwenden Sie das gesicherte HTTPS-Protokoll, wenn Sie sich nicht im lokalen Netzwerk befinden.
 * **Zusätzliche Anfrage-Header**: Zusätzliche Header, die der an den Remote-Endpunkt gesendeten Anfrage hinzugefügt werden.
    * Muster: `key=value`
