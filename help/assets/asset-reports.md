@@ -3,10 +3,10 @@ title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
+source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '939'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,7 @@ Das [!DNL Assets]-Berichterstellungs-Framework nutzt [!DNL Sling]-Aufträge, um 
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional) and --> einer Benachrichtigung im Posteingang benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
+Wenn ein Bericht generiert wird, erhalten Sie eine Benachrichtigung über <!-- through an email (optional) and --> eine Posteingangsbenachrichtigung. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Erstellen von Berichten {#generate-reports}
 
@@ -56,7 +56,7 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
 >[!NOTE]
 >
->Standardmäßig sind die Inhaltsfragmente und Link-Freigaben im Bericht [!UICONTROL Download] für das Asset enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Link-Freigaben zu erstellen oder Inhaltsfragmente aus dem Download-Bericht auszuschließen.
+>Standardmäßig sind Inhaltsfragmente und Linkfreigaben im Bericht [!UICONTROL Download] enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Link-Freigaben zu erstellen oder Inhaltsfragmente aus dem Download-Bericht auszuschließen.
 
 >[!NOTE]
 >
@@ -66,9 +66,7 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
-   Wählen Sie den Datumsbereich für Ihren Bericht aus.
-
-   Sie können den Bericht wahlweise sofort oder zu einem zukünftigen Zeitpunkt generieren lassen.
+   Wählen Sie den Datumsbereich für Ihren Bericht aus. Sie können den Bericht wahlweise sofort oder zu einem zukünftigen Zeitpunkt generieren lassen.
 
    >[!NOTE]
    >
@@ -109,7 +107,7 @@ Wenn ein Bericht generiert wird, werden Sie mit <!-- through an email (optional)
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten  zu Berichten {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -126,10 +124,11 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 1. Klicken Sie in der [!DNL Manager interface] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 1. Klicken Sie auf der Seite [!UICONTROL Asset-Berichte] in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 
-1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Konfigurieren Sie je nach Bedarf Berichtdetails wie den Titel, eine Beschreibung, eine Miniaturansicht, den Ordnerpfad und den Datumsbereich.
+1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** einen zu erstellenden Bericht aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
+1. Konfigurieren Sie die Berichtsdetails wie Titel, Beschreibung, Miniaturansicht, Ordnerpfad und Datumsbereich entsprechend. Klicken Sie auf **[!UICONTROL Weiter]**.
+
+1. Wählen Sie die entsprechenden Informationen aus der Liste **[!UICONTROL Standardspalten]**. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
 
    ![Namen für benutzerdefinierte Berichtsspalte angeben](assets/custom_columns-1.png)
 
@@ -137,9 +136,9 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
    ![Den Eigenschaftspfad in den Pfaden in jcr:content zuordnen](assets/property_picker.png)
 
-   Klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 5 und 6, um weitere benutzerdefinierte Spalten hinzuzufügen.
+   Um weitere benutzerdefinierte Spalten hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die oben genannten Schritte.
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung weist darauf hin, dass die Berichtgenerierung eingeleitet wurde.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -153,6 +152,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Informationen zur Fehlerbehebung, Tipps und Einschränkungen {#best-practices-and-limitations}
+## Fehlerbehebung für Informationen und Tipps {#tips-troubleshoot}
 
-* Wenn der Bericht zur Speichernutzung nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
+* Wenn der [!UICONTROL Disk Usage Report] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets korrekt ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie den Bericht erneut.
