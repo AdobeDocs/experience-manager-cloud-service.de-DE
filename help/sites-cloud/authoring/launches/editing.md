@@ -2,10 +2,10 @@
 title: Bearbeiten von Launches
 description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 97%
+source-wordcount: '555'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleiste, zusammen mit den Optionen **Verlassen** und **Navigieren**:
 
 ![Launch über den Seiten-Editor verlassen und navigieren](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>Es ist nicht zulässig, eine Seite innerhalb eines Startvorgangs zu verschieben. Beim Versuch, diese Aktion durchzuführen, wird eine Warnmeldung Trigger:
+>
+>* Warnung: Diese Seite ist die Quelle eines Launches. Das Verschieben der Seite ist nicht zulässig.
+
 
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
 
