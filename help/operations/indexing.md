@@ -2,7 +2,7 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 translation-type: tm+mt
-source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
+source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
@@ -38,14 +38,6 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 1. Einschränkungen: Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs Lucene unterstützt.
 
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
-
 ## Verwendung {#how-to-use}
 
 Eine Definition von Indizes kann drei Anwendungsfälle umfassen:
@@ -63,8 +55,6 @@ Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Ind
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 das dann unter `ui.apps/src/main/content/jcr_root` aufgeführt werden muss. Unterstammordner werden ab sofort nicht mehr unterstützt.
-
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
 Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` erstellt.
 
