@@ -2,7 +2,7 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 84%
@@ -178,7 +178,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    >[!IMPORTANT]
    >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
