@@ -2,10 +2,10 @@
 title: Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch
 description: Mit der Dynamic Media Viewer-Erweiterung für Platform launch und Dynamic Media Viewer 5.13 können Adobe Analytics- und Platform launch-Kunden in ihrer Platform launch-Konfiguration Ereignis und spezifische Daten für die Viewer verwenden.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 50%
+source-wordcount: '6658'
+ht-degree: 49%
 
 ---
 
@@ -34,11 +34,11 @@ Weitere Informationen zu Erweiterungen finden Sie unter [Adobe-Erweiterungen](ht
 
 Der primäre Anwendungsfall für die Integration mit Experience Platform Launch sind Kunden, die sowohl Experience Manager-Assets als auch Experience Manager-Sites verwenden. In solchen Fällen können Sie eine Standardintegration zwischen dem Autorenknoten und dem Experience Platform Launch Ihres Experience Managers einrichten und dann Ihre Sites-Instanz mit der Experience Platform Launch-Eigenschaft verknüpfen. Danach verfolgt jede Dynamic Media-WCM-Komponente, die einer Sites-Seite hinzugefügt wird, Daten und Ereignisse von Viewern.
 
-Siehe [Informationen zum Verfolgen von Dynamic Media-Viewern in Experience Manager-Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Siehe [Verfolgen von Dynamic Media-Viewern in Experience Manager-Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Ein sekundärer Anwendungsfall, den die Integration unterstützt, sind diejenigen Kunden, die nur Experience Manager Assets oder Dynamic Media Classic verwenden. In solchen Fällen können Sie den Einbettungs-Code für Ihren Viewer abrufen und der Web-Seite hinzufügen. Rufen Sie dann die Produktions-URL der Experience Platform Launch-Bibliothek von Experience Platform Launch ab und fügen Sie sie manuell zum Webseitencode hinzu.
 
-Siehe [Informationen zum Verfolgen von Dynamic Media-Viewern mit Einbettungs-Code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Siehe [Verfolgen von Dynamic Media-Viewern mit Einbettungscode](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Funktionsweise der Daten- und Ereignisverfolgung in der Integration {#how-data-and-event-tracking-works-in-the-integration}
 
