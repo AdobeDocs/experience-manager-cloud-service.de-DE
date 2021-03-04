@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 91%
+source-wordcount: '1969'
+ht-degree: 88%
 
 ---
 
@@ -19,6 +19,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
 
 * Java muss in der AEM-Umgebung konfiguriert werden, damit der `java`-Befehl vom Benutzer, der AEM startet, ausgeführt werden kann.
+
+* Es wird empfohlen, ältere Versionen des Content Transfer Tool bei der Installation der Version 1.3.0 zu deinstallieren, da es eine wesentliche architektonische Änderung im Tool gab. Mit 1.3.0 sollten Sie außerdem neue Migrationssets erstellen und die Extraktion und Erfassung der neuen Migrationssätze erneut ausführen.
 
 * Das Content Transfer Tool kann mit den folgenden Arten von Datenspeicher genutzt werden: Dateispeicher, S3-Datenspeicher, freigegebener S3-Datenspeicher und Azure Blob-Datenspeicher.
 
@@ -101,7 +103,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (einige  `/etc` Pfade dürfen in CTT ausgewählt werden)
 
 
 1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Details zum Inhaltsmigrationssatz** ausgefüllt haben.
