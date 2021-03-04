@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 88%
+source-wordcount: '2055'
+ht-degree: 84%
 
 ---
 
@@ -65,16 +65,23 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >Wenn Sie bereits über Migrationssätze verfügen, zeigt die Konsole die Liste der vorhandenen Migrationssätze mit ihrem aktuellen Status an.
 
-1. Füllen Sie die Felder im Bildschirm **Details zum Inhaltsmigrationssatz** aus, wie nachfolgend beschrieben.
+   Klicken Sie außerdem auf **Konfiguration der Benutzerzuordnung erstellen**, um auf das [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) zuzugreifen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Füllen Sie die Felder im Bildschirm **Content Migration Set** aus, wie unten beschrieben.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Wählen Sie **Zuordnung von IMS-Benutzern und -Gruppen** einschließen, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
@@ -119,7 +126,6 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
 1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Migrationssatzeigenschaften anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den Namen des Containers oder die Service-URL zu ändern.
-
 
 
 ### Extraktionsvorgang beim Inhaltstransfer {#extraction-process}
@@ -174,6 +180,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 
 1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird.
-   >
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   Weitere Informationen zum Hinzufügen zum Ticket für die Kundenunterstützung finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs).
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
 
