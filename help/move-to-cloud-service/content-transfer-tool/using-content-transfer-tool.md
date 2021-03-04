@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 92%
+source-wordcount: '1916'
+ht-degree: 91%
 
 ---
 
@@ -55,9 +55,13 @@ Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Porta
 
 In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
-1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu Tools > **Vorgänge** > **Inhaltstransfer**.
+1. Wählen Sie das Adobe Experience Manager und navigieren Sie zu Tools -> **Vorgänge** -> **Inhaltsmigration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. Wählen Sie im Assistenten **Inhaltsmigration** die Option **Inhaltsübertragung**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
