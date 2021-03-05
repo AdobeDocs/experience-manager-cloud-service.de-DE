@@ -2,9 +2,9 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2049'
 ht-degree: 84%
 
 ---
@@ -76,13 +76,9 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
    Klicken Sie außerdem auf **Konfiguration der Benutzerzuordnung erstellen**, um auf das [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) zuzugreifen.
 
-1. Füllen Sie die Felder im Bildschirm **Content Migration Set** aus, wie unten beschrieben.
+1. Füllen Sie die Felder im Bildschirm **Migrationsset erstellen** aus, wie unten beschrieben.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Wählen Sie **Zuordnung von IMS-Benutzern und -Gruppen** einschließen, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
-
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
@@ -102,6 +98,8 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
       1. **Version einschließen**: Aktivieren Sie die Option.
+
+      1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option aus. Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 
       1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
 
@@ -178,7 +176,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    >[!IMPORTANT]
    >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
