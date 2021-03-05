@@ -2,9 +2,9 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 84%
 
 ---
@@ -172,13 +172,14 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 
-1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten. Zu Demonstrationszwecken ist die Option **Inhalt in Autoreninstanz aufnehmen** deaktiviert. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
+1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
 
    >[!IMPORTANT]
    >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   Klicken Sie außerdem auf **Kundendienst**, um ein Ticket zu protokollieren, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Inhaltsübermittlungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs).
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
 
@@ -199,10 +200,8 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird.
 
-   Klicken Sie außerdem auf **Kundendienst**, um ein Ticket zu protokollieren, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Inhaltsübermittlungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs).
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
 
