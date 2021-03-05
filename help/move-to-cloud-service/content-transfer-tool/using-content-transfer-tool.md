@@ -2,9 +2,9 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2057'
 ht-degree: 84%
 
 ---
@@ -99,7 +99,8 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
       1. **Version einschließen**: Aktivieren Sie die Option.
 
-      1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option aus. Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+      1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option, um die Zuordnung aus IMS-Benutzern und -Gruppen einzuschließen.
+Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
 
       1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
 
