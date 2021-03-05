@@ -2,10 +2,10 @@
 title: Die RemotePage-Komponente
 description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPA in AEM.
 translation-type: tm+mt
-source-git-commit: 6a88b93a4005b858eec222fd7ae15df9db269d31
+source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 2%
+source-wordcount: '261'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,12 @@ Bei der Entscheidung darüber, welche Integrationsstufe](/help/implementing/deve
 ## Überblick {#overview}
 
 Die RemotePage-Komponente ruft alle erforderlichen Elemente aus dem generierten Element `asset-manifest.json` der Anwendung ab und verwendet diese zum Rendern des SPA in AEM.
+
+* Mit RemotePage können Sie die Skripte und Stylesheets eines SPA im Textkörper einer AEM Seitenkomponente einfügen.
+* Die Virtual Frontend-Komponenten ermöglichen es, Abschnitte im AEM SPA Editor als bearbeitbar zu markieren.
+* Gemeinsam kann eine SPA, die auf einer anderen Domäne gehostet wird, in AEM editierbar gemacht werden.
+
+Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artikel [Bearbeiten eines externen SPA innerhalb AEM](editing-external-spa.md).
 
 ## Voraussetzungen {#requirements}
 
