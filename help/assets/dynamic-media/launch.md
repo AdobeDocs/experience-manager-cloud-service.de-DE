@@ -2,7 +2,7 @@
 title: Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch
 description: Mit der Dynamic Media Viewer-Erweiterung für Platform launch und Dynamic Media Viewer 5.13 können Adobe Analytics- und Platform launch-Kunden in ihrer Platform launch-Konfiguration Ereignis und spezifische Daten für die Viewer verwenden.
 translation-type: tm+mt
-source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
+source-git-commit: 0f20bf7de87fb3635f77a45f532c3ffe2f361adf
 workflow-type: tm+mt
 source-wordcount: '6658'
 ht-degree: 49%
@@ -13,6 +13,8 @@ ht-degree: 49%
 # Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Was ist die Integration von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
 
 Mit der neuen Erweiterung *Dynamic Media Viewers* für Platform launch und Dynamic Media Viewers 5.13 können Kunden von Adobe Analytics und Platform launch Ereignis und Daten, die für die Viewer spezifisch sind, in ihrer Platform launch-Konfiguration verwenden.
 
@@ -60,7 +62,7 @@ Für die Adobe Analytics-Verfolgung müssen mehrere weitere Erweiterungen instal
 
 Die Dynamic Media Viewer-Erweiterung hält die Werte der Datenelemente automatisch auf dem neuesten Stand.
 
-Nachdem Sie es definiert haben, kann ein Datenelement an anderen Stellen der Benutzeroberfläche des Experience Platform Launchs mithilfe des Widgets &quot;Datenelementauswahl&quot;verwendet werden. Insbesondere werden Datenelemente, die für die Verfolgung von Dynamic Media-Viewern definiert wurden, in der Regel unter &quot;Variablenaktion von Adobe Analytics-Erweiterung festlegen&quot;referenziert (siehe unten).
+Nachdem Sie es definiert haben, kann ein Datenelement an anderen Stellen der Benutzeroberfläche des Experience Platform Launchs mithilfe des Widgets &quot;Datenelementauswahl&quot;verwendet werden. Insbesondere werden Datenelemente, die für die Verfolgung von Dynamic Media-Viewern definiert werden, in der Regel unter &quot;Variablenaktion von Adobe Analytics-Erweiterung festlegen&quot;referenziert (siehe unten).
 
 Siehe [Datenelemente](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) im Experience Platform Launch-Benutzerhandbuch.
 
