@@ -2,10 +2,10 @@
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wen
 
 ## Verwendung von SSR {#when-to-use-ssr}
 
-SSR ist nicht bei allen Projekten erforderlich. Obwohl JS SSR für SPAs von AEM voll unterstützt wird, empfiehlt Adobe nicht, sie systematisch für jedes Projekt einzuführen.
+SSR ist nicht bei allen Projekten erforderlich. Obwohl AEM JS SSR für SPA vollständig unterstützt, empfiehlt Adobe nicht, es systematisch für jedes Projekt zu implementieren.
 
 Wenn Sie sich für die Implementierung von SSR entscheiden, müssen Sie zunächst abschätzen, welche zusätzliche Komplexität, welchen Aufwand und welche Kosten das Hinzufügen von SSR für das Projekt realistisch darstellt, einschließlich der langfristigen Wartung. Eine SSR-Architektur sollte nur dann gewählt werden, wenn der Mehrwert die geschätzten Kosten deutlich übersteigt.
 
