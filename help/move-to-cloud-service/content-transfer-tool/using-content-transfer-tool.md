@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -112,7 +112,7 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
          >* `/etc` (einige  `/etc` Pfade dürfen in CTT ausgewählt werden)
 
 
-1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Details zum Inhaltsmigrationssatz** ausgefüllt haben.
+1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Detailbildschirm **Migrationsset erstellen** ausgefüllt haben.
 
 1. Der Migrationssatz erscheint auf der Seite *Übersicht*.
 
