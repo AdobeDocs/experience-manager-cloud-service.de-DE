@@ -3,10 +3,10 @@ title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform) für die Metadatenverwaltung. Er wird von AEM als standardisiertes Format für die Erstellung, Verarbeitung und den Austausch von Metadaten verwendet.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
+source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 93%
+source-wordcount: '1000'
+ht-degree: 76%
 
 ---
 
@@ -72,23 +72,34 @@ Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen,
 
 ## XMP-Writeback in Ausgabeformaten {#xmp-writeback-to-renditions}
 
-Diese XMP Funktion zum Schreiben von Rückgabefunktionen in Adobe Experience Manager (AEM) Assets repliziert Änderungen an Asset-Metadaten in den Darstellungen des Assets.
-
-Wenn Sie die Metadaten eines Assets in AEM Assets ändern oder das Asset hochladen, werden die Änderungen zunächst im Asset-Knoten in CRXDE gespeichert.
-
-Die XMP Funktion zum Schreiben von Dateien leitet die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiter.
+Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets. Wenn Sie die Metadaten eines Assets von [!DNL Assets] oder beim Hochladen des Assets ändern, werden die Änderungen zunächst innerhalb des Asset-Knotens im Repository gespeichert. Die XMP Funktion zum Schreiben von Dateien leitet die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiter.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
 ![Metadaten](assets/metadata.png)
 
-In diesem Fall speichert AEM Assets die Änderungen an der Eigenschaft **[!UICONTROL Titel]** im Parameter `dc:title` der in der Elementhierarchie gespeicherten Asset-Metadaten.
+In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UICONTROL Title]** im Parameter `dc:title` für die in der Asset-Hierarchie gespeicherten Asset-Metadaten.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-AEM Assets propagiert die Metadatenänderungen jedoch nicht automatisch in die Ausgabeformate eines Assets.
+[!DNL Assets] propagiert jedoch nicht automatisch Änderungen der Metadaten an den Darstellungen eines Assets.
 
-Mit der XMP Funktion zum Erstellen einer Rückmeldung können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
+Mit der XMP Funktion zum Erstellen einer Rückmeldung können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen bettet diese Funktion die Änderungen in den Binärdateien der Darstellungen ein.
+
+Die Funktion zum Zurückschreiben ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die Metadaten-Schreibweise [aktivieren.](#enable-xmp-writeback)
+
+### Aktivieren XMP Schreibback {#enable-xmp-writeback}
+
+[!UICONTROL DAM Metadata ] Writebackworkflow wird zum Schreiben der Metadaten eines Assets verwendet. Gehen Sie wie folgt vor, um die Rückgabe zu aktivieren:
+
+1. Als Administrator greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** zu.
+1. Wählen Sie die Spalte [!UICONTROL Starter] aus, für die **[!UICONTROL Workflow]** **[!UICONTROL DAM MetaData Writeback]** angezeigt wird. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
+
+   ![Wählen Sie DAM metadata writeback launcher, um seine Eigenschaften zu ändern und zu aktivieren](assets/launcher-properties-metadata-writeback1.png)
+
+1. Wählen Sie **[!UICONTROL Aktivieren]** auf der Seite [!UICONTROL Startereigenschaften]. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+
+Um diesen Workflow nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an. Um den Workflow auf die hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem nachbearbeitenden Profil hinzu.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
@@ -125,8 +136,3 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
-
->[!MORELIKETHIS]
->
->* [XMP-Spezifikation von Adobe](https://www.adobe.com/devnet/xmp.html)
-
