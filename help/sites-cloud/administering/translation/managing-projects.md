@@ -2,10 +2,10 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
-ht-degree: 38%
+source-wordcount: '3825'
+ht-degree: 37%
 
 ---
 
@@ -52,6 +52,10 @@ Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung d
 Sie können festlegen, dass die untergeordneten Seiten der ausgewählten Seite ebenfalls ausgewählt werden. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn untergeordnete Seiten unterschiedlichen Konfigurationen des Translation-Integration-Frameworks zugeordnet sind, erstellt AEM zusätzliche Projekte.
 
 Sie können auch [Übersetzungsprojekte manuell erstellen](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `project-administrators` sein.
 
 ### Erstübersetzungen und Aktualisieren von Übersetzungen {#initial-and-updating}
 
@@ -208,6 +212,10 @@ Verwenden Sie die Befehle und die Auslassungsschaltflächen am oberen bzw. unter
 ### Erstellen von Übersetzungsprojekten mithilfe der Projektekonsole {#creating-a-translation-project-using-the-projects-console}
 
 Sie können ein Übersetzungsprojekt manuell erstellen, wenn Sie lieber die Projektkonsole anstelle der Sites-Konsole verwenden möchten.
+
+>[!NOTE]
+>
+>Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `project-administrators` sein.
 
 Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grundlegenden Eigenschaften](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) Werte für die folgenden übersetzungsspezifischen Eigenschaften angeben:
 
