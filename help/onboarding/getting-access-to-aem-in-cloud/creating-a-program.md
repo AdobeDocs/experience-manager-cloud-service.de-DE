@@ -2,9 +2,9 @@
 title: Erstellen eines Programms - Cloud Service
 description: Erstellen eines Programms - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
+source-git-commit: d85c0e9035ee09cf86aeea1cae20d545823eaca0
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,6 @@ Je nachdem, welches Ziel der Benutzer beim Erstellen des Programms innerhalb der
 
 ![](assets/create-sandbox.png)
 
->[!NOTE]
->Wenn bereits ein Programm vorhanden ist, sehen Sie **Hinzufügen Programm** oben rechts in der Landingpage, wie in der folgenden Abbildung dargestellt.
-
-![](assets/create-program-add.png)
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox-program}
 
