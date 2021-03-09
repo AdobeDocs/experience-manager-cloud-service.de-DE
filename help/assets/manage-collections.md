@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '2393'
-ht-degree: 100%
+source-wordcount: '2397'
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie
 
    >[!NOTE]
    >
-   >Bei Auswahl von **[!UICONTROL Öffentlich]** wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
+   >Bei Auswahl von **[!UICONTROL Öffentlich]** wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** abbrechen, wird die DAM-Benutzergruppe nicht mehr mit der intelligenten Sammlung verknüpft.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**, um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfenster, um den Vorgang abzuschließen. Die neue Smart-Sammlung wird auch zur Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt.
 Die Bezeichnung der Schaltfläche **[!UICONTROL Smart-Sammlung erstellen]** wird in **[!UICONTROL Smart-Sammlung bearbeiten]** geändert. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Tippen oder klicken Sie dann auf die Schaltfläche **[!UICONTROL Smart-Sammlung bearbeiten]**.
@@ -195,11 +195,11 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
    >
    >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen, außer für Tags. Alle Tags, die Sie im Feld **[!UICONTROL Tags]** hinzufügen, werden der vorhandenen Liste der Tags in den Metadaten anhängt.
 
-1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
+1. Um die Metadateneigenschaften für eine bestimmte Sammlung Ansicht, brechen Sie die Auswahl der verbleibenden Sammlungen in der Liste &quot;Sammlungen&quot;ab. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
 
    >[!NOTE]
    >
-   >* Auf der Sammlungseigenschaftenseite können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl aufheben. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
+   >* Auf der Seite mit den Sammlungseigenschaften können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl abbrechen. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
    >* Aktivieren Sie über der Sammlungsliste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Sammlungen und dem Deaktivieren der Liste umzuschalten.
 
 
