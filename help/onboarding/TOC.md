@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
+source-git-commit: cef1cba48c70b6bd8d488040ed80ee0c4d6d814c
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 47%
+source-wordcount: '655'
+ht-degree: 48%
 
 ---
 
@@ -20,10 +20,6 @@ ht-degree: 47%
    + [Hinzufügen von Anwendern und Rollen](what-is-required/add-users-roles.md)
    + [Rollenbasierte Berechtigungen](what-is-required/role-based-permissions.md)
    + [Quell-Code-Repository](what-is-required/source-code-repository.md)
-+ Phasen der Umstellung {#phases}
-   + [Planung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
-   + [Ausführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
-   + [Nach der Live-Schaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
    + [Übersicht über den Bereitstellungsprozess](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Zugriff auf Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
