@@ -4,9 +4,9 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
+source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 47%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 47%
    + [Ausführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
    + [Nach der Live-Schaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
-   + [AEM als Cloud Service: Übersicht über den Bereitstellungsprozess](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+   + [Übersicht über den Bereitstellungsprozess](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Zugriff auf Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service-Programme {#cloud-service-programs}
       + [Aufrufen von Programmen](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -88,7 +88,8 @@ ht-degree: 47%
       + [Versionshinweise für 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [Versionshinweise für 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Versionshinweise für 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + [Rollen und Zuständigkeiten](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+   + Rollen und Zuständigkeiten {#getting-access-to-aem-in-cloud}
+      + [Rollen und Zuständigkeiten](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Einhaltung von Datenschutzbestimmungen {#data-privacy}
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
