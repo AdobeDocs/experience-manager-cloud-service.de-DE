@@ -6,6 +6,7 @@ source-wordcount: '334'
 ht-degree: 13%
 
 ---
+
 # AEM als Cloud Service: Einstieg und Zugriff
 
 Auf dieser Seite werden die Selbsthilfe-Ressourcen zur Bereitstellung für Experience Manager als Cloud Service Liste.
@@ -47,7 +48,7 @@ Weitere Informationen finden Sie unter [An-Bord-Experience Manager als Cloud Ser
 ### 2. fahrzeugseitige Organisationen nach Adobe Admin Console:
 
 >   ![processouview2.jpg](./assets/processOverview2.jpg)
-* Systemadministrator:
+>* Systemadministrator:
    * Bereitstellung AEM Programme und Umgebung.
    * Navigieren Sie zur Admin Console für administrative Aufgaben.
    * Fordert eine Domäne zur Bestätigung des Eigentums an der jeweiligen Domäne an
