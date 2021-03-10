@@ -1,11 +1,14 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: Bereitstellungsprozess - Übersicht
+description: Bereitstellungsprozess - Übersicht
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 13%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # AEM als Cloud Service: Einstieg und Zugriff
 
@@ -47,7 +50,7 @@ Weitere Informationen finden Sie unter [An-Bord-Experience Manager als Cloud Ser
 
 ### 2. fahrzeugseitige Organisationen nach Adobe Admin Console:
 
-  >   ![processouview2.jpg](./assets/processOverview2.jpg)
+>   ![processouview2.jpg](./assets/processOverview2.jpg)
 * Systemadministrator:
    * Bereitstellung AEM Programme und Umgebung.
    * Navigieren Sie zur Admin Console für administrative Aufgaben.
@@ -71,5 +74,5 @@ Verzeichnis
 
 ## Hilfe und Ressourcen
 
-[Erstmalige Anmeldung – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[Zugriff auf AEM als Cloud Service konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Erstmalige Anmeldung – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [Zugriff auf AEM als Cloud Service konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
