@@ -2,9 +2,9 @@
 title: 'Bearbeiten eines Sandbox-Programms '
 description: 'Bearbeiten eines Sandbox-Programms '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ Benutzer mit entsprechender Berechtigung können jetzt ein Production-Programm b
 
 Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
 
-1. Navigieren Sie zur Seite **Programm bearbeiten**.
+1. Navigieren Sie zur Seite **Programm bearbeiten** auf der Seite *Übersicht* des Cloud-Managers.
 
 1. Auf der Seite **Programm bearbeiten** werden zwei Registerkarten (Allgemein und Projektmappen) für Produktions- und Sandbox-Programm angezeigt.
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >Während sowohl Sites als auch Assets angezeigt werden, kann eine davon je nach dem, was gekauft und nicht verwendet wurde, deaktiviert werden. Insbesondere wenn das Unternehmen über keine nicht verwendeten Berechtigungen für eine bestimmte Lösung verfügt, wird diese Lösung angezeigt, aber deaktiviert.
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
 
