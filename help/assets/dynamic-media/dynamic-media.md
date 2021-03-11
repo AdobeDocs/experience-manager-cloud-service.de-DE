@@ -2,10 +2,10 @@
 title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-Dynamic Media ermöglicht interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
+Dynamic Media bietet interaktive Anzeigeerlebnisse wie Zoom, 360-Grad-Rotationsset und Video. Dynamic Media verfügt über die Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um die digitale Kampagnenverwaltung zu vereinfachen und zu optimieren.
 
 <!-- >[!NOTE]
 >
@@ -74,7 +74,7 @@ Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar, wenn D
 
 ### PTIFF-Ausgabeformate {#ptiff-renditions}
 
-Assets mit aktivierter Dynamic Media-Funktion umfassen `pyramid.tiffs`.
+Zu den für Dynamic Media aktivierten Assets zählen `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
