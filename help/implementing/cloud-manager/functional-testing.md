@@ -2,17 +2,17 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 57%
+source-wordcount: '847'
+ht-degree: 56%
 
 ---
 
 
 # Funktionstests {#functional-testing}
 
-Funktionstests werden in zwei Typen eingeteilt:
+Funktionstests werden in drei Typen eingeteilt:
 
 * Funktionstests für das Produkt
 * Benutzerdefinierte Funktionstests
@@ -39,7 +39,7 @@ Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig
 
 AEM bietet seinen Kunden eine integrierte Suite mit Cloud Manager-Qualitätsterminen, um eine reibungslose Aktualisierung ihrer Anwendungen sicherzustellen. Vor allem IT-Testgates ermöglichen es Kunden bereits, eigene Tests zu erstellen und zu automatisieren, die AEM APIs verwenden.
 
-Die Testfunktion der benutzerdefinierten Benutzeroberfläche ist eine optionale Funktion, mit der unsere Kunden Benutzeroberflächentests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von UI-Tests und zum Schreiben von UI-Tests finden Sie hier. Zusätzlich kann ein UI-Tests-Projekt einfach mithilfe des AEM Project Archetype erstellt werden.
+Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion [Kunden-Teilnahme](#customer-opt-in), mit der unsere Kunden UI-Tests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von UI-Tests und zum Schreiben von UI-Tests finden Sie hier. Zusätzlich kann ein UI-Tests-Projekt einfach mithilfe des AEM Project Archetype erstellt werden.
 
 Die Kunden können (über GIT) benutzerdefinierte Tests und Testsuite für die Benutzeroberfläche erstellen. Der UI-Test wird als Teil eines bestimmten Qualitätsgate für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
 
