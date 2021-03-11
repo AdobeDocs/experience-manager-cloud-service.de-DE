@@ -2,10 +2,10 @@
 title: Bereitstellen von Dynamic Media-Assets
 description: Informationen zum Bereitstellen von Dynamic Media-Assets.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen könn
 
 Dynamic Media bietet mehrere Optionen:
 
-* Wenn Ihre Website auf AEM gehostet ist, können Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
+* Wenn Ihre Website auf AEM gehostet wird, möchten Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
 * Wenn sich Ihre Website nicht in AEM befindet, können Sie eine der folgenden Aktionen ausführen:
 
    * Betten Sie Ihr Video oder Bild auf Ihrer Website ein.
