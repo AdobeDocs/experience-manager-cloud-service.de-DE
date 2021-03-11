@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
+source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 94%
+source-wordcount: '969'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Die Entwicklung von AEM Commerce-Projekten basierend auf Commerce Integration Fr
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohlen. Das für AEM as a Cloud Service-Umgebungen bereitgestellte CIF-Add-on ist auch für die lokale Entwicklung verfügbar. Es kann vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) heruntergeladen werden.
+Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohlen. Das für AEM als Cloud Service vorgesehene CIF-Hinzufügen ist auch für die lokale Entwicklung verfügbar. Es kann vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) heruntergeladen werden.
 
 Das CIF-Add-on wird als Sling Feature-Archiv bereitgestellt. Die im Software Distribution-Portal verfügbare Zip-Datei enthält zwei Sling Feature-Archivdateien, eine für AEM-Autoren- und eine für AEM-Veröffentlichungsinstanzen.
 
@@ -137,6 +137,12 @@ CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder da
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
     <type>zip</type>
     <version>x.y.z</version>
 </dependency>
