@@ -2,10 +2,10 @@
 title: Cloud Manager-Homepage
 description: Cloud Manager-Homepage
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 47%
+source-wordcount: '280'
+ht-degree: 34%
 
 ---
 
@@ -33,11 +33,10 @@ Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, k�
 Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, zeigt die Landingpage die Karte f체r alle vorhandenen Programm in Ihrer Organisation an.
 
 >[!NOTE]
->
->Programme, die sich in Cloud Service befinden, werden durch den Untertitel **Experience Manager Cloud** (im Gegensatz zu **Experience Manager** bei AMS-Programmen) angezeigt (wie unten dargestellt).
+>Programme, die sich in Cloud Service befinden, sind durch den Untertitel **Experience Manager Cloud** gekennzeichnet (im Gegensatz zu **Experience Manager** bei AMS-Programmen).
+>In der folgenden Abbildung ist **We.Retail Global** ein AMS-Programm und **We.Retail-Prod-Programm - Prod** ein Programm, das 체ber den Cloud Service verf체gbar ist.
 
 ![](assets/first_timelogin1.png)
-
 
 Je nach Ihren Umst채nden sehen Sie eine der beiden Optionen:
 
@@ -54,9 +53,6 @@ Wenn in Ihrer Organisation bereits Programme vorhanden sind, weist Ihre Landingp
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Programme, die sich in Cloud Service befinden, sind durch den Untertitel **Experience Manager Cloud** gekennzeichnet (im Gegensatz zu **Experience Manager** bei AMS-Programmen).
->Im folgenden Screenshot ist **We.Retail Global** ein AMS-Programm, w채hrend **We.Retail-Prod-Programm - Prod** ein Programm ist, das 체ber Cloud Service verf체gbar ist.
 
 Informationen zum Hinzuf체gen eines Programms in Cloud Manager finden Sie unter:
 
