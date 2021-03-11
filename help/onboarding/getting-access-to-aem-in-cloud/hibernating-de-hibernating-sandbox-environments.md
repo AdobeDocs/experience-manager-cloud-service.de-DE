@@ -2,10 +2,10 @@
 title: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
 description: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Sandbox-Programmumgebungen werden in den *Ruhezustand* versetzt, wenn in einem bestimmten Zeitraum keine Aktivität erkannt wurde.
 
 >[!NOTE]
->Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Bei regulären Programmumgebungen gibt es keinen Ruhezustand.
+>Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Umgebung des Produktions-Programms führen nicht zu Hibernationen.
 
 ## Ruhezustand {#hibernation-introduction}
 
