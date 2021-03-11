@@ -4,10 +4,10 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 translation-type: tm+mt
-source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
+source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 48%
+source-wordcount: '691'
+ht-degree: 45%
 
 ---
 
@@ -15,19 +15,26 @@ ht-degree: 48%
 # Einstieg {#onboarding}
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
-+ Was ist erforderlich? {#what-is-required}
++ Erste Schritte mit AEM als Cloud Service {#what-is-required}
    + [Gewährte Zugriffsrechte](what-is-required/access-rights-granted.md)
    + [Hinzufügen von Anwendern und Rollen](what-is-required/add-users-roles.md)
    + [Rollenbasierte Berechtigungen](what-is-required/role-based-permissions.md)
    + [Quell-Code-Repository](what-is-required/source-code-repository.md)
 + Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
-   + [Übersicht über den Bereitstellungsprozess](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-   + [Zugriff auf Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
+   + [Zugriff auf Cloud Manager für AEM als Cloud Service erhalten](getting-access-to-aem-in-cloud/navigation.md)
    + Zugriff auf Cloud Manager {#cloud-service-programs}
       + [Cloud Manager-Homepage](getting-access-to-aem-in-cloud/first-time-login.md)
       + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + [Erstellen eines Programms](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [Sandbox-Programme](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + Produktions-Programm {#production-programs}
+         + [Einführung](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [Erstellen eines Production-Programms](getting-access-to-aem-in-cloud/creating-production-program.md)
+         + [Bearbeiten eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + Sandbox-Programme {#sandbox-programs}
+         + [Einführung](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [Erstellen eines Sandbox-Programms](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+         + [Bearbeiten eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+         + [Löschen eines Sandbox-Programms](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+         + [Ruhezustand und Reaktivieren von Sandbox-Umgebungen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de)
       + [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -71,7 +78,8 @@ ht-degree: 48%
       + [Löschen einer IP-Zulassungsliste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [Überprüfen des Status einer IP-Zulassungsliste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
-      + [Aktuelle Versionshinweise (2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Aktuelle Versionshinweise (2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Versionshinweise für 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [Versionshinweise für 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [Versionshinweise für 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [Versionshinweise für 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
