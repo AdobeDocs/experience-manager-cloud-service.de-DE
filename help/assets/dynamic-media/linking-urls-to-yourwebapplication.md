@@ -2,10 +2,10 @@
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platz
 
 >[!NOTE]
 >
->URL-Zeichenfolgen sind nur für dynamische Ausgabedarstellungen von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die in DAM und nicht im Server für Dynamic Media aufbewahrt werden. Für statische Ausgabedarstellungen wird die URL-Schaltfläche nicht angezeigt.
+>URL-Zeichenfolgen stehen nur für dynamische Darstellungen von Assets zur Verfügung. Sie sind derzeit nicht für statische Assets verfügbar, die sich in DAM befinden und nicht auf dem Dynamic Media-Server. Die URL-Schaltfläche wird nicht für statische Darstellungen angezeigt.
 
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
