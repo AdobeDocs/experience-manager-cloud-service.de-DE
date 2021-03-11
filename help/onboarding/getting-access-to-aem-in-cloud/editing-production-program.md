@@ -2,9 +2,9 @@
 title: 'Bearbeiten eines Production-Programms '
 description: 'Bearbeiten eines Production-Programms '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ Benutzer mit erforderlichen Berechtigungen können jetzt ein Production-Programm
 
 Gehen Sie wie folgt vor, um ein Production-Programm zu bearbeiten:
 
-1. Navigieren Sie zur Seite **Programm bearbeiten**.
+1. 
+   1. Navigieren Sie zur Seite **Programm bearbeiten** von der Seite *Übersicht* des Cloud-Managers.
 
 1. Auf der Seite **Programm bearbeiten** werden zwei Registerkarten (Allgemein und Lösungen) für Produktions- und Sandbox-Programm angezeigt.
 
