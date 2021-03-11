@@ -2,17 +2,19 @@
 title: Cloud Manager-Homepage
 description: Cloud Manager-Homepage
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 70%
+source-wordcount: '306'
+ht-degree: 47%
 
 ---
 
 
-# Cloud Manager-Homepage {#first-time-login}
+# Cloud Manager-Landingpage {#first-time-login}
 
-So greifen Sie auf Cloud Manager zu:
+Sobald Ihr Systemadministrator Ihnen Zugriff auf Cloud Manager gewährt hat, erhalten Sie eine E-Mail, über die Sie zur Anmeldeseite von Cloud Manager gelangen.
+
+Gehen Sie wie folgt vor, um auf Cloud Manager zuzugreifen:
 
 1. Navigieren Sie mit Ihrem Adobe ID zu [Experience Cloud](https://experience.adobe.com/).
 1. Wählen Sie **Experience Manager**.
@@ -26,7 +28,7 @@ Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, k�
    >
    >Je nach den in [!UICONTROL Cloud Manager] zugewiesenen Rollen und dem Anwendungsstatus werden bei der Verwendung der [!UICONTROL Cloud Manager]-Benutzeroberfläche unterschiedliche Bildschirme angezeigt.
 
-## Cloud Manager-Landingpage {#landing-page}
+## Programm in Cloud Manager {#cloud-manager-landing-page}
 
 Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, zeigt die Landingpage die Karte für alle vorhandenen Programm in Ihrer Organisation an.
 
@@ -44,28 +46,21 @@ Je nach Ihren Umständen sehen Sie eine der beiden Optionen:
 * **In Cloud Manager gibt es bereits Programme**
 
 
-## Hinzufügen eines neuen Programms in Cloud Service ohne vorhandene Programme {#no-program}
-
-
-Die Landingpage weist Sie dazu an, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
+Wenn in Ihrer Organisation keine Programme vorhanden sind, weist Ihre Landingpage Sie an, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
 ![](assets/first_timelogin0.png)
 
 
-## Hinzufügen eines neuen Programms in Cloud Service bei vorhandenen Programmen {#existing-program}
+Wenn in Ihrer Organisation bereits Programme vorhanden sind, weist Ihre Landingpage Sie an, ein weiteres Programm hinzuzufügen, und zeigt auch alle vorhandenen Programm an, wie in der folgenden Abbildung dargestellt.
 
+![](assets/first_timelogin1.png)
 
-1. Melden Sie sich bei **Adobe [!UICONTROL Experience Cloud]** an und sehen Sie sich die Liste der **Programme und Produkte** an.
+>[!NOTE]
+>Programme, die sich in Cloud Service befinden, sind durch den Untertitel **Experience Manager Cloud** gekennzeichnet (im Gegensatz zu **Experience Manager** bei AMS-Programmen).
+>Im folgenden Screenshot ist **We.Retail Global** ein AMS-Programm, während **We.Retail-Prod-Programm - Prod** ein Programm ist, das über Cloud Service verfügbar ist.
 
-   ![](assets/first_timelogin1.png)
+Informationen zum Hinzufügen eines Programms in Cloud Manager finden Sie unter:
 
-   Programme, die sich in Cloud Service befinden, sind durch den Untertitel **Experience Manager Cloud** gekennzeichnet (im Gegensatz zu **Experience Manager** bei AMS-Programmen).
-
-   >[!NOTE]
-   >Im folgenden Screenshot ist **We.Retail Global** ein AMS-Programm, während **We.Retail-Prod-Programm - Prod** ein Programm ist, das über Cloud Service verfügbar ist.
-
-1. Informationen zum Hinzufügen eines Programms aus dem Bildschirm **Programm und Produkte** zum Erstellen eines neuen Programms in Cloud Service finden Sie unter:
-
-   * [Erstellen eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-   * [Erstellen eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [Erstellen eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [Erstellen eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
