@@ -2,7 +2,7 @@
 title: 'Erstellen eines Production-Programms '
 description: 'Erstellen eines Production-Programms '
 translation-type: tm+mt
-source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Ein *Production*-Programm ist für einen Benutzer gedacht, der mit AEM und Cloud Manager vertraut ist und in der Lage ist, Beginn zum Schreiben, Erstellen und Testen von Code zu erstellen, um ihn in der Produktion bereitzustellen.
 
-Gehen Sie wie folgt vor, um ein reguläres Programm zu erstellen:
+Gehen Sie wie folgt vor, um ein Production-Programm zu erstellen:
 
-1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option **Für Produktion einrichten**, um ein reguläres Programm zu erstellen. Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er **Weiter** auswählt.
+1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot;Für Produktion einrichten **&quot;aus, um ein Programm für die Produktion zu erstellen.** Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er **Weiter** auswählt.
 
    ![](assets/create-prod1.png)
 
