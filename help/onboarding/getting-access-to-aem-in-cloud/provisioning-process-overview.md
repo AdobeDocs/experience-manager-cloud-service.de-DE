@@ -51,6 +51,7 @@ Weitere Informationen finden Sie unter [An-Bord-Experience Manager als Cloud Ser
 ### 2. fahrzeugseitige Organisationen nach Adobe Admin Console:
 
 >   ![processouview2.jpg](./assets/processOverview2.jpg)
+
 * Systemadministrator:
    * Bereitstellung AEM Programme und Umgebung.
    * Navigieren Sie zur Admin Console für administrative Aufgaben.
