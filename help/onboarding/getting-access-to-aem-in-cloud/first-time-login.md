@@ -1,26 +1,34 @@
 ---
-title: Erstmalige Anmeldung – Cloud Service
-description: Erstmalige Anmeldung – Cloud Service
+title: Cloud Manager-Homepage
+description: Cloud Manager-Homepage
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 70%
 
 ---
 
 
-# Aufrufen von Programmen {#first-time-login}
+# Cloud Manager-Homepage {#first-time-login}
 
+So greifen Sie auf Cloud Manager zu:
+
+1. Navigieren Sie mit Ihrem Adobe ID zu [Experience Cloud](https://experience.adobe.com/).
+1. Wählen Sie **Experience Manager**.
+   ![](assets/landing-page1.png)
+
+1. Klicken Sie auf **Launch** von der Cloud Manager-Karte.
 Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, können Sie die Benutzeroberfläche verwenden.
+   ![](assets/landing-page2.png)
 
->[!NOTE]
->
->Je nach den in [!UICONTROL Cloud Manager] zugewiesenen Rollen und dem Anwendungsstatus werden bei der Verwendung der [!UICONTROL Cloud Manager]-Benutzeroberfläche unterschiedliche Bildschirme angezeigt.
+   >[!NOTE]
+   >
+   >Je nach den in [!UICONTROL Cloud Manager] zugewiesenen Rollen und dem Anwendungsstatus werden bei der Verwendung der [!UICONTROL Cloud Manager]-Benutzeroberfläche unterschiedliche Bildschirme angezeigt.
 
 ## Cloud Manager-Landingpage {#landing-page}
 
-Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, sehen Sie die Landingpage wie unten dargestellt.
+Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, zeigt die Landingpage die Karte für alle vorhandenen Programm in Ihrer Organisation an.
 
 >[!NOTE]
 >
@@ -34,6 +42,7 @@ Je nach Ihren Umständen sehen Sie eine der beiden Optionen:
 * **Es gibt keine Programme in Cloud Manager**
 
 * **In Cloud Manager gibt es bereits Programme**
+
 
 ## Hinzufügen eines neuen Programms in Cloud Service ohne vorhandene Programme {#no-program}
 
@@ -54,6 +63,9 @@ Die Landingpage weist Sie dazu an, Ihr erstes Programm zu erstellen, wie in der 
    >[!NOTE]
    >Im folgenden Screenshot ist **We.Retail Global** ein AMS-Programm, während **We.Retail-Prod-Programm - Prod** ein Programm ist, das über Cloud Service verfügbar ist.
 
-1. Informationen zum Hinzufügen eines Programms über den Bildschirm **Programme und Produkte** zum Erstellen eines neuen Programms in Cloud Service finden Sie unter [Programm erstellen](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
+1. Informationen zum Hinzufügen eines Programms aus dem Bildschirm **Programm und Produkte** zum Erstellen eines neuen Programms in Cloud Service finden Sie unter:
+
+   * [Erstellen eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [Erstellen eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
