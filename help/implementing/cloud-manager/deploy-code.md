@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 92%
 
 ---
 
@@ -50,15 +50,20 @@ Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) kon
       ![](assets/stage-deployment.png)
    **Staging-Tests** umfassen die folgenden Schritte:
 
-   * Produktfunktionstests: Cloud Manager-Pipeline-Ausführungen unterstützen die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden.
+   * **Produktfunktionstests**: Cloud Manager-Pipeline-Hinrichtungen unterstützen die Ausführung von Tests, die mit der Umgebung der Phase ausgeführt werden.
 Weitere Informationen finden Sie unter [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing).
 
-   * Benutzerdefinierte Funktionstests: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
+   * **Benutzerdefinierte Funktionstests**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig erfolgreich durchgeführt.\
       Weitere Informationen finden Sie unter [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).
 
+   * **Benutzerdefinierte UI-Tests**: Dieser Schritt ist eine optionale Funktion, mit der unsere Kunden UI-Tests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
+Weitere Informationen finden Sie unter Benutzerdefinierte UI-Tests.
 
-   * Erlebnisprüfung: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt. Die konfigurierten Seiten werden an den Service gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen zu prüfen. Diese Erkenntnisse sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
+
+   * **Erlebnis-Prüfung**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt. Die konfigurierten Seiten werden an den Service gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen zu prüfen. Diese Erkenntnisse sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
 Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-testing.md).
+
+      ![](assets/stage-testing.png)
 
 
 
