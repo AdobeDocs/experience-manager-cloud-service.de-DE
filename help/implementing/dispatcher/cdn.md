@@ -2,10 +2,10 @@
 title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 41%
+source-wordcount: '695'
+ht-degree: 33%
 
 ---
 
@@ -31,7 +31,7 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 >[!CAUTION]
 >
->Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN AEM bearbeitet. Wenn Sie Ihre eigene CDN auf die AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihrer CDN in die Zulassungsliste aufgenommen werden.
+>Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN AEM bearbeitet. Wenn Sie Ihre eigene CDN auf die AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihrer CDN in der Zulassungsliste enthalten sind.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
@@ -47,10 +47,10 @@ Konfigurationsanweisungen:
 
 1. Legen Sie die `X-Forwarded-Host`-Kopfzeile mit dem Domain-Namen fest.
 1. Legen Sie Host-Header mit der Herkunft-Domäne fest, die die AEM CDN-Adresse ist. Der Wert sollte von Adobe stammen.
-1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie die Host-Kopfzeile muss der SNI-Kopfzeile die Ursprungs-Domain sein.
+1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie der Host-Header muss der SNI-Header die Domäne der Herkunft sein.
 1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN X-Edge-* abschneidet), was erforderlich ist, um den Traffic ordnungsgemäß zu den AEM-Servern zu leiten. Der Wert sollte von Adobe stammen. Bitte informieren Sie die Adobe, wenn Sie direkten Zugriff auf die Adobe CDN&#39;s Ingress (zu blockieren, wenn `X-Edge-Key` nicht vorhanden).
 
-Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
+Bevor Sie Live-Traffic akzeptieren, sollten Sie sich beim Kundensupport der Adobe vergewissern, dass das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen,
 
 Es gibt möglicherweise einen kleinen Leistungsschlag aufgrund des zusätzlichen Hofes, obwohl Hopfen vom Kunden CDN bis zum AEM verwalteten CDN wahrscheinlich effizient sein werden.
 
-Beachten Sie, dass diese kundenspezifische CDN-Konfiguration für die Veröffentlichungsebene unterstützt wird, jedoch nicht vor der Autorenebene.
+Beachten Sie, dass diese CDN-Konfiguration des Kunden für die Veröffentlichungsstufe unterstützt wird, jedoch nicht vor der Autorenebene.
 
 ## Geolocation-Kopfzeilen {#geo-headers}
 
