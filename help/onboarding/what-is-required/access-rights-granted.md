@@ -2,7 +2,7 @@
 title: Zuerkannte Zugriffsrechte - Erforderlich
 description: Zuerkannte Zugriffsrechte - Erforderlich
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 51%
@@ -36,8 +36,8 @@ Sobald Adobe eine Organisation für Ihr Unternehmen erstellt hat, wird Ihr Admin
    * [Rollen verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [Zugriff auf Autorinstanz verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->Weitere Informationen zu Benutzern und Rollendefinitionen in Cloud Manager finden Sie im Abschnitt [Benutzer und Rollen](#users-roles).
+      >[!NOTE]
+      >Weitere Informationen zu Benutzern und Rollendefinitionen in Cloud Manager finden Sie im Abschnitt [Benutzer und Rollen](#users-roles).
 
 Mit diesen Rechten kann Ihr Administrator nun per Single Sign-on (mit der Adobe ID) auf [!UICONTROL Experience Cloud]-Dienste zugreifen, sich bei Ihren AEM-Cloud-Umgebungen anmelden und [!UICONTROL Cloud Manager] verwenden.
 
