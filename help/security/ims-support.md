@@ -2,7 +2,7 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 40ea422718a3613889d73fcf30d6482e9c82907d
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -203,7 +203,7 @@ Wie unten gezeigt, erbt die Gruppe **AEM-GRP_008** die Berechtigungen und Rechte
 
 Um auf Cloud Manager oder AEM as a Cloud Service-Umgebungen zugreifen zu können, müssen Sie Profilen des Cloud Manager-Produkts zugewiesen sein.
 
-Unter [Rollendefinitionen](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) finden Sie weitere Informationen zu Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
+Unter [Rollendefinitionen](/help/onboarding/what-is-required/access-rights-granted.md##role-definitions) finden Sie weitere Informationen zu Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
 
 >[!NOTE]
 >Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder dem Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
