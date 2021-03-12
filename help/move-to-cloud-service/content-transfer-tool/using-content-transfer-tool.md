@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tool
 description: Verwenden des Content Transfer Tool
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 73%
+source-wordcount: '2307'
+ht-degree: 72%
 
 ---
 
@@ -209,6 +209,8 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
 
+Überprüfen Sie nach Abschluss der einzelnen Schritte (Extraktion und Erfassung) die Protokolle und suchen Sie nach Fehlern.  Eventuelle Fehler sollten sofort behoben werden, entweder durch Behandlung der gemeldeten Probleme oder durch Kontaktaufnahme mit der Adobe.
+
 Auf der Seite *Übersicht* können Sie die Protokolle für einen vorhandenen Migrationssatz anzeigen.
 Führen Sie dazu folgende Schritte durch:
 
@@ -268,6 +270,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 Weitere Informationen finden Sie unter [Ausführbare Jar für Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
 
 Die Dateien, die im oben angegebenen Verzeichnis *OUT_DIR* erstellt wurden, um Konsistenz zu gewährleisten, können dann auf Pfade ohne Binärdateien überprüft werden. Anschließend können geeignete Maßnahmen ergriffen werden, wie das Wiederherstellen aus einer Sicherung, das Löschen der Pfade, die Neuindizierung usw.
+
 
 ### Verhalten der Benutzeroberfläche {#ui-behavior}
 
