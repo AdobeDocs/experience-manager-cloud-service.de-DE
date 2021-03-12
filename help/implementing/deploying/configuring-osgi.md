@@ -2,7 +2,7 @@
 title: Konfigurieren von OSGI für AEM as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 translation-type: tm+mt
-source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 100%
@@ -164,11 +164,11 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Erstellen von OSGi-Konfigurationen
+## Erstellen von OSGi-Konfigurationen {#creating-sogi-configurations}
 
 Es gibt zwei Möglichkeiten, neue OSGi-Konfigurationen zu erstellen, wie unten beschrieben. Der erste Ansatz wird typischerweise für die Konfiguration von benutzerdefinierten OSGi-Komponenten verwendet, die dem Entwickler bekannte OSGi-Eigenschaften und -Werte haben, und der zweite für von AEM bereitgestellte OSGi-Komponenten.
 
-### Schreiben von OSGi-Konfigurationen
+### Schreiben von OSGi-Konfigurationen  {#writing-osgi-configurations}
 
 OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entworfen und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch genutzt werden, um Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ausführungsmodus-Ordnern zu kopieren, einzufügen und zu aktualisieren.
 
@@ -180,7 +180,7 @@ Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<PID>-<factor
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
 
-### Generieren von OSGi-Konfigurationen mit AEM SDK QuickStart
+### Generieren von OSGi-Konfigurationen mit AEM SDK QuickStart  {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}
 
 Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, deren OSGi-Eigenschaften und deren Werteformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht gut verstanden werden. Beachten Sie, dass die Verwendung der Konfigurationsoberfläche der AEM Web-Konsole `.cfg.json`-Dateien in das Repository schreibt. Seien Sie sich dessen bewusst, um potenziell unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die im AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
 
@@ -203,7 +203,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git.
 
 
-## OSGi-Konfigurationseigenschaftsformate
+## OSGi-Konfigurationseigenschaftsformate  {#osgi-configuration-property-formats}
 
 ### Inline-Werte {#inline-values}
 
