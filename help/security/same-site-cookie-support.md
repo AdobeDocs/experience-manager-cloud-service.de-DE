@@ -2,7 +2,7 @@
 title: Selbe Site-Cookie-Unterstützung für Adobe Experience Manager als Cloud Service
 description: ISame-Site-Cookie-Unterstützung für Adobe Experience Manager als Cloud Service
 translation-type: tm+mt
-source-git-commit: d9a7836034134fac91529a1996c8f05a48a5f4fd
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -26,5 +26,5 @@ Gehen Sie dazu wie folgt vor:
 1. Setzen Sie das Attribut **SameSite für das Cookie login-token** auf `None`, wie in der Abbildung unten dargestellt
    ![samesite](/help/security/assets/samesite1.png)
 1. Klicken Sie auf „Speichern“.
-1. Generieren Sie die JSON-Formatkonfigurationen für diese bestimmte Einstellung, indem Sie die unter [OSGi-Konfigurationen mit dem AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart) beschriebenen Schritte ausführen.
+1. Generieren Sie die JSON-Formatkonfigurationen für diese bestimmte Einstellung, indem Sie die unter [OSGi-Konfigurationen mit dem AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart) beschriebenen Schritte ausführen.
 1. Wenden Sie die Einstellungen an, indem Sie die Schritte in der Dokumentation [Cloud Manager-API-Format für das Festlegen von Eigenschaften](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi befolgen.
