@@ -4,10 +4,10 @@ user-guide-title: Sicherheit für AEM as a Cloud Service
 breadcrumb-title: Sicherheitsanleitung
 user-guide-description: Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 100%
+source-wordcount: '62'
+ht-degree: 83%
 
 ---
 
@@ -17,3 +17,4 @@ ht-degree: 100%
 + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
 + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [IMS-Unterstützung für AEM as a Cloud Service](ims-support.md)
++ [Selbe Site-Cookie-Unterstützung für AEM als Cloud Service](/help/security/same-site-cookie-support.md)
