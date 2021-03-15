@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Überprüfen des Domain-Namenstatus
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 59%
+source-wordcount: '306'
+ht-degree: 79%
 
 ---
 
@@ -20,12 +20,12 @@ Sie können feststellen, ob Ihr Domain-Name erfolgreich überprüft wurde, indem
 Cloud Manager überprüft den Domain-Besitz über den TXT-Wert und zeigt eine der folgenden Statusmeldungen an:
 
 * **Fehler bei der Domain-Überprüfung**
-TXT-Wert fehlt entweder oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wenn Sie bereit sind, müssen Sie die 
-*überprüfen Sie* das Symbol neben dem Status.
+TXT-Wert fehlt entweder oder wird mit Fehlern erkannt. Befolgen Sie die Anweisungen und versuchen Sie es erneut. Wählen Sie das Symbol 
+*Erneut überprüfen* neben dem Status aus.
 
 * **Die Domain-Überprüfung wird durchgeführt**
-Die Überprüfung erfolgt. Dieser Status wird normalerweise angezeigt, nachdem Sie die Variable 
-*überprüfen Sie* das Symbol neben dem Status.
+Die Überprüfung erfolgt. Dieser Status wird normalerweise angezeigt, nachdem Sie das Symbol 
+*Erneut überprüfen* neben dem Status aus.
 
 * **Überprüft, Fehler bei der Bereitstellung**
 TXT-Überprüfung war erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Ein Adobe-Support-Mitarbeiter wird automatisch benachrichtigt.
@@ -33,20 +33,22 @@ TXT-Überprüfung war erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschla
 * **Domain überprüft und bereitgestellt**
 Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.
    >[!NOTE]
-   >An dieser Stelle steht Ihr benutzerdefinierter Domänenname zum Testen bereit und wird auf den Domänennamen von Cloud Manager verwiesen. Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   >An dieser Stelle steht Ihr benutzerdefinierter Domain-Name zum Testen bereit und verweist auf den Domain-Namen von Cloud Manager. Weitere Informationen finden Sie unter [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 * **Wird gelöscht**
 Die Löschung des benutzerdefinierten Domain-Namens wird durchgeführt.
 
 * **Löschen fehlgeschlagen**
-Die Löschung des benutzerdefinierten Domain-Namens ist fehlgeschlagen. Sie müssen es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
+Die Löschung des benutzerdefinierten Domain-Namens ist fehlgeschlagen. Sie müssen es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
 
 ## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
 
-Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Auf die Zulassungsliste setzte (SSL-Zertifikate oder benutzerdefinierte Domänennamen) enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**.
+Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
-Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden.
+>[!NOTE]
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden, wie in der folgenden Abbildung dargestellt.
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
