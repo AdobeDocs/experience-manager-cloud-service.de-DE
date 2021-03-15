@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
 source-wordcount: '3720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Dieser Ansatz wird durch [HTL](https://experienceleague.adobe.com/docs/experienc
 Diese (optionale) Logik kann auf verschiedene Arten implementiert werden und wird von HTL mit bestimmten Befehlen aufgerufen:
 
 * Verwenden von Java – [Die HTL Java Use-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api-java.html) ermöglicht es einer HTL-Datei, auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zuzugreifen. Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
-* Verwenden von JavaScript – [Die HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=de) ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+* Verwenden von JavaScript – [Die HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=de) ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfs-Code zuzugreifen. Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 * Verwenden von Client-seitigen Bibliotheken – Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Weitere Informationen finden Sie im Dokument [Verwenden Client-seitiger Bibliotheken in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Komponentenstruktur {#structure}
@@ -316,18 +316,18 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
 
 In AEM sind viele Konfigurationen vorhanden. Sie können mit dem Abfrage-Tool in **CRXDE Lite** einfach nach bestimmten Eigenschaften oder untergeordneten Knoten suchen.
 
-### Komponentenplatzhalter {#component-placeholders}
+### Komponenten-Platzhalter {#component-placeholders}
 
-Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte es visuell aus der Benutzeroberfläche des Editors verschwinden, sodass es technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
+Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter wiedergeben, solange sie keine sichtbare Ausgabe wiedergeben, wenn die Seite im Seiteneditor wiedergegeben wird (wenn der WCM-Modus `edit` oder `preview` ist).
-Das typische HTML-Markup für einen Platzhalter ist Folgendes:
+Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiten-Editor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
+Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-Das typische HTML-Skript, das den obigen Platzhalter-HTML-Code wiedergibt, lautet wie folgt:
+Das typische HTL-Skript, das den obigen Platzhalter-HTML-Code rendert, lautet wie folgt:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -336,18 +336,18 @@ Das typische HTML-Skript, das den obigen Platzhalter-HTML-Code wiedergibt, laute
 
 Im vorherigen Beispiel ist `isEmpty` eine Variable, die nur dann wahr ist, wenn die Komponente keinen Inhalt hat und für den Autor unsichtbar ist.
 
-Um Wiederholungen zu vermeiden, empfiehlt Adobe, dass Komponentenimplementierer für diese Platzhalter eine HTML-Vorlage verwenden, [wie die von den Hauptkomponenten bereitgestellten.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Um Wiederholungen zu vermeiden, empfiehlt Adobe den Implementierern von Komponenten, eine HTL-Vorlage für diese Platzhalter zu verwenden, [wie sie von den Kernkomponenten bereitgestellt wird.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
-Die Verwendung der Vorlage im vorherigen Link erfolgt dann mit der folgenden HTML-Zeile:
+Die Verwendung der Vorlage im vorherigen Link erfolgt dann mit der folgenden HTL-Zeile:
 
 ```HTML
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
      data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
 ```
 
-Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wenn der Inhalt Inhalte enthält und sichtbar ist.
+Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wenn die Komponente einen Inhalt hat und sichtbar ist.
 
-Ein Beispiel für die Verwendung dieser Vorlage ist in den Hauptkomponenten, [wie in der Titelkomponente zu finden.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Eine beispielhafte Verwendung dieser Vorlage ist in den Kernkomponenten zu sehen, [wie z. B. in der Titelkomponente.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 
@@ -443,9 +443,9 @@ Die Feldüberprüfung in der Granite-Benutzeroberfläche und den Granite-Benutze
 
 Wenn Sie über ein benutzerdefiniertes JavaScript verfügen, das nur ausgeführt werden muss, wenn das Dialogfeld verfügbar und bereit ist, sollten Sie auf das `dialog-ready`-Ereignis achten.
 
-Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h. wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
+Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut geladen) wird und einsatzbereit ist, d. h., wenn eine Änderung (Erstellen/Aktualisieren) im DOM des Dialogfelds erfolgt.
 
-`dialog-ready` kann verwendet werden, um in JavaScript benutzerspezifischen Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnlichen Aufgaben durchführt.
+`dialog-ready` kann verwendet werden, um in JavaScript benutzerdefinierten Code einzubinden, der Anpassungen an den Feldern in einem Dialogfeld oder ähnliche Aufgaben durchführt.
 
 ## Vorschauverhalten {#preview-behavior}
 
