@@ -16,13 +16,13 @@ ht-degree: 100%
 >id="aemcloud_cam_overview"
 >title="Über Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager ist Ihr persönlicher Leitfaden durch den gesamten Prozess der Umstellung auf AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=de" text="Wesentliche Änderungen an AEM Sites as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=de" text="Wesentliche Änderungen in AEM Sites as a Cloud Service"
 
 ## Vorteile beim Wechseln zu AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
 AEM as a Cloud Service bietet eine technologische Grundlage für Experience Manager Sites und Assets, sodass sich Marketing-Experten und IT darauf konzentrieren können, skaliert wirkungsvolle Erlebnisse bereitzustellen.
 
-Mit AEM as a Cloud Service können sich Ihre Teams auf Innovationen konzentrieren, anstatt Produktaktualisierungen planen zu müssen. Neue Produktfunktionen werden umfassend getestet und ohne Unterbrechungen an Ihre Teams geliefert, sodass sie immer Zugriff auf die neueste Anwendung haben.
+Mit AEM as a Cloud Service können sich Ihre Teams auf Innovationen konzentrieren, anstatt Produktaktualisierungen planen zu müssen. Neue Produktfunktionen werden umfassend getestet und ohne Unterbrechungen an Ihre Teams geliefert, sodass sie immer Zugriff auf das neueste Programm haben.
 
 ## Grundlegendes zur Umstellung auf den Cloud Service-Prozess {#understanding-move}
 
@@ -46,7 +46,7 @@ Erfahren Sie mehr über die verschiedenen Phasen der Umstellung auf Cloud Servic
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Überblick](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
+| [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
