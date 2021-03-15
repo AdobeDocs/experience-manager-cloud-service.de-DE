@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 94%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
-+ [Wesentliche Änderungen an [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
-+ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in [!DNL Assets]](accessibility.md)
 + Verwalten digitaler Assets {#manage}
    + [Freigeben von Assets](share-assets.md)
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
@@ -32,10 +32,10 @@ ht-degree: 94%
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Tagging Ihrer Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
-   + [Verwenden von  [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
+   + [Verwenden von [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
-   + [Integrieren mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Integrieren mit [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Verwenden und Konfigurieren von Asset Insights](assets-insights.md)
@@ -56,7 +56,7 @@ ht-degree: 94%
    + [Assets-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL-API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
-   + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
+   + [Authentifizierung für Remote-AEM GraphQL-Abfragen zu Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Asset-Berichte](asset-reports.md)
@@ -66,13 +66,13 @@ ht-degree: 94%
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
 + Freigeben und Verteilen von Assets {#brand-portal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Veröffentlichen von Assets  [!DNL Brand Portal] von [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
    + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
-   + [Aktivieren der Inhaltsfragmentfunktion für Ihre Instanz](content-fragments/content-fragments-configuration-browser.md)
+   + [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](content-fragments/content-fragments-configuration-browser.md)
    + [Inhaltsfragmentmodelle](content-fragments/content-fragments-models.md)
    + [Varianten – Erstellen von Fragmentinhalten](content-fragments/content-fragments-variations.md)
    + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments/content-fragments-assoc-content.md)
@@ -125,5 +125,5 @@ ht-degree: 94%
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](dynamic-media/http2faq.md)
-   + [Flash-Viewer - Ende der Lebensdauer](dynamic-media/flash-viewers-eol.md)
+   + [Einstellung von Flash-Viewer](dynamic-media/flash-viewers-eol.md)
    + [DHTML-Viewer - Ende der Lebensdauer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
