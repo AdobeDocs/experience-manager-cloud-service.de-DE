@@ -5,26 +5,26 @@ translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
-# Anzeigen und Aktualisieren und Ersetzen eines SSL-Zertifikats {#view-update-replace-ssl-certificate}
+# Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats {#view-update-replace-ssl-certificate}
 
 ## Anzeigen und Aktualisieren eines SSL-Zertifikats {#view-update}
 
-Wann werden diese Optionen in der Benutzeroberfläche von Cloud Manager verwendet?
+Verwendungszweck dieser Optionen in der Cloud Manager-Benutzeroberfläche:
 
 * Ein vorhandenes Zertifikat läuft bald ab. Der Benutzer hat das Zertifikat beim Zertifikatanbieter erneuert und möchte das vorhandene Zertifikat, das demnächst abläuft, ersetzen. Hinweis: Nur Benutzer mit den entsprechenden Berechtigungen können Aktualisierungen vornehmen.
-* Verwenden Sie das Menü **Ansicht &amp; Aktualisierung**, um die SSL-Zertifikatdetails einfach Ansicht.
+* Verwenden Sie das Menü zum **Anzeigen und Aktualisieren**, um die Details des SSL-Zertifikats anzuzeigen.
 * Alternativ können Sie von diesem Bildschirm aus den Namen ändern, der zur Referenzierung eines Zertifikats verwendet wurde.
 * Nur Benutzer mit den entsprechenden Berechtigungen können Aktualisierungen vornehmen.
 
 
 ## Aktualisieren eines SSL-Zertifikats, das demnächst abläuft {#update-ssl-certificate}
 
-Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Um ein abgelaufenes Zertifikat zu aktualisieren, müssen Sie die folgenden Schritte ausführen. Dadurch wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert. Wenn Sie ein neues Zertifikat hinzufügen, müssen Sie den benutzerdefinierten Domain-Namen mit dem neuen Zertifikat aktualisieren, bevor die Domains wie gewünscht funktionieren. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md).
+Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Um ein abgelaufenes Zertifikat zu aktualisieren, müssen Sie die folgenden Schritte ausführen. Dadurch wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert. Wenn Sie ein neues Zertifikat hinzufügen, müssen Sie den benutzerdefinierten Domain-Namen mit dem neuen Zertifikat aktualisieren, bevor die Domains wie gewünscht funktionieren. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren benutzerdefinierter Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md).
 
 Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu aktualisieren:
 
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu aktualisieren:
 1. Navigieren Sie auf der Seite **Umgebungen** zum Bildschirm „SSL-Zertifikate“.
 1. Es wird eine Tabelle mit einer Zeile für jedes SSL-Zertifikat angezeigt, das erfolgreich in Ihrem Programm installiert wurde.
 1. Sie können auf die Menüoptionen für jede Zeile zugreifen, indem Sie die drei Schaltflächen ganz rechts in der gewünschten Zeile auswählen.
-1. Wählen Sie **Ansicht und Aktualisierung**. Die Zertifikatdetails können von hier aus angezeigt werden.
+1. Wählen Sie **Anzeigen und Aktualisieren** aus. Die Details des Zertifikats können von hier aus angezeigt werden.
 
 ## Ersetzen eines SSL-Zertifikats {#replace-ssl-certificate}
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu ersetzen:
 1. Navigieren Sie auf der Seite **Umgebungen** zum Bildschirm „SSL-Zertifikate“.
 1. Es wird eine Tabelle mit einer Zeile für jedes SSL-Zertifikat angezeigt, das erfolgreich in Ihrem Programm installiert wurde.
 1. Sie können auf die Menüoptionen für jede Zeile zugreifen, indem Sie die drei Schaltflächen ganz rechts in der gewünschten Zeile auswählen.
-1. Wählen Sie **Ansicht und Aktualisierung**.
+1. Wählen Sie **Anzeigen und Aktualisieren** aus.
 1. Um das Zertifikat zu ersetzen, fügen Sie den neuen Inhalt in die entsprechenden Eingabefelder ein und klicken Sie auf **Speichern**. Dabei müssen Sie eventuell auftretende Fehler beheben.
 
-   Lesen Sie [Zertifikatfehler](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-error), um häufig auftretende Probleme zu beheben.
+   Im Abschnitt [Zertifikatfehler](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-error) finden Sie Informationen zu häufig auftretenden Problemen.
