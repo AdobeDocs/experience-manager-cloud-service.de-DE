@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zum Einstieg in Experienc
 
 Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
-* Anforderungen für den Zugriff auf Experience Manager as a Cloud Service
+* Erste Schritte mit AEM als Cloud Service
 * Grundlegendes zu den Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen steuern
 * Einrichten des Git-Repository für Cloud Manager
 * Zugriff auf Experience Manager as a Cloud Service
