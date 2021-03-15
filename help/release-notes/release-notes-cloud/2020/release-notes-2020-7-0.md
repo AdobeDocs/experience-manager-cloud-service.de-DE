@@ -1,5 +1,5 @@
 ---
-title: Versionshinweise für  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0.
+title: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.7.0.
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
@@ -16,7 +16,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am Donnerstag, 30. Juli 2020 veröffentlicht.
+Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 30. Juli 2020 veröffentlicht.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
@@ -126,9 +126,9 @@ Weitere Informationen finden Sie unter [Java 11-Unterstützung verwenden](/help/
 
 * [Eine statische, dedizierte Ausgangs-IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
 
-* Die Benutzeroberfläche von AEM Analytics Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort von AEM Analytics Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM-Cloud-Services verschoben.
+* Die Benutzeroberfläche von AEM Analytics Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort von AEM Analytics Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
 
-* Die Benutzeroberfläche von AEM Target Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort des AEM Target Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM-Cloud-Services verschoben.
+* Die Benutzeroberfläche von AEM Target Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort des AEM Target Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
