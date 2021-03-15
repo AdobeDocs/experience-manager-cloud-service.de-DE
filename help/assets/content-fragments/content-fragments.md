@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
 source-wordcount: '2027'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Arbeiten mit Inhaltsfragmenten{#working-with-content-fragments}
+# Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
 
@@ -26,7 +26,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt:
       * Kann entweder zur Vorbereitung von strukturierteren Inhalten für die Seitenerstellung oder zur Bereitstellung für Ihr Programm verwendet werden.
    * Verschachtelt
       * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
-      * Gibt für den Versand zu Ihrer Anwendung zu verwenden.
+      * Wird in der Regel für die Bereitstellung an Ihr Programm verwendet.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
@@ -35,7 +35,7 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 
 Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurieren, Verwalten und Verwenden von Inhaltsfragmenten beschrieben:
 
-* [Aktivieren der Funktion für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+* [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
 * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)  – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
@@ -58,7 +58,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
 * Physische Kanäle, z. B. Desktop, Mobilgerät
-* Bereitstellung in einem physischen Kanal, z. B. als „Produktdetailseite“ oder „Produktkategorieseite“ für Desktops bzw. als „mobiles Internet“ oder „mobile App“ für mobile Geräte
+* Bereitstellung in einem physischen Kanal, z. B. als „Produktdetailseite“ oder „Produktkategorieseite“ für Desktops bzw. als „mobiles Internet“ oder „Mobile App“ für mobile Geräte
 
 Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle verwenden. Daher müssen Sie Ihre Inhalte je nach Kanal optimieren.
 
@@ -69,7 +69,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 * Inhaltspools für mehrere Kanäle erstellen
 * Inhaltsvarianten für bestimmte Kanäle entwerfen
 * Bilder durch Einfügen von Assets (Fragmente mit gemischten Medien) zu Texten hinzufügen
-* Erstellen Sie verschachtelte Inhalte, die die Komplexität Ihrer Daten widerspiegeln.
+* Erstellen Sie verschachtelte Inhalte, um die Komplexität Ihrer Daten widerzuspiegeln.
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
 
@@ -111,7 +111,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 >[!NOTE]
 >
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.  Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
 
 ## Inhaltstyp {#content-type}
 
@@ -292,12 +292,12 @@ Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohäre
 
 ### WKND-Beispiel {#wknd-sample}
 
-Die Beispiele der [WKND Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) helfen Ihnen dabei, mehr über AEM as a Cloud Service zu erfahren.
+Die Beispiele der [WKND-Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) helfen Ihnen dabei, mehr über AEM as a Cloud Service zu erfahren.
 
 Das WKND-Projekt umfasst:
 
 * Inhaltsfragmentmodelle verfügbar unter:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* Inhaltsfragmente (und andere Inhalte) verfügbar unter:
+* Inhaltsfragmente (und anderere Inhalte) verfügbar unter:
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
