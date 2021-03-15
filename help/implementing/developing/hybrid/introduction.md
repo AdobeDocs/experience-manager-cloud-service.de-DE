@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '1986'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM
 
 ### Ziel des Artikels {#article-objective}
 
-In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser eine exemplarische Anleitung zum SPA-Editor erhält, indem eine einfache SPA-Anwendung zum Demonstrieren der grundlegenden Inhaltsbearbeitung verwendet wird. Dann folgen Details zum Aufbau der Seite und zu der Frage, wie die SPA mit dem AEM-SPA-Editor in Beziehung steht und interagiert.
+In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser eine exemplarische Anleitung zum SPA-Editor erhält, indem ein einfaches SPA-Programm zum Demonstrieren der grundlegenden Inhaltsbearbeitung verwendet wird. Dann folgen Details zum Aufbau der Seite und zu der Frage, wie die SPA mit dem AEM-SPA-Editor in Beziehung steht und interagiert.
 
-Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM-Entwickler zu demonstrieren, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie SPAs vom AEM-SPA-Editor gehandhabt werden und wie sie sich von einer standardmäßigen AEM-Anwendung unterscheiden.
+Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM-Entwickler zu demonstrieren, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie SPAs vom AEM-SPA-Editor gehandhabt werden und wie sie sich von einem standardmäßigen AEM-Programm unterscheiden.
 
 Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplarischen WKND-SPA-Projekt-App. Zum Fortfahren [laden Sie bitte hier die WKND-SPA-Projekt-App von GitHub herunter und installieren Sie sie](https://github.com/adobe/aem-guides-wknd-spa).
 
@@ -44,7 +44,7 @@ Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die s
 
 ### Warum eine SPA? {#why-a-spa}
 
-Da SPAs schneller, nahtloser und eher wie eine native Anwendung sind, sind sie nicht nur für Besucher der Web-Seite, sondern auch für Marketing-Experten und Entwickler attraktiv. Das hängt mit der Art und Weise zusammen, wie SPAs funktionieren.
+Da SPAs schneller, nahtloser und eher wie ein natives Programm sind, sind sie nicht nur für Besucher der Web-Seite, sondern auch für Marketing-Experten und Entwickler attraktiv. Das hängt mit der Art und Weise zusammen, wie SPAs funktionieren.
 
 ![Vorteile von SPAs](assets/spa-benefits.png)
 
@@ -65,7 +65,7 @@ Da SPAs schneller, nahtloser und eher wie eine native Anwendung sind, sind sie n
 
 ### Wie funktioniert eine SPA? {#how-does-a-spa-work}
 
-Die Grundidee hinter einer SPA besteht darin, dass Aufrufe an und Abhängigkeiten von einem Server verringert werden, um Verzögerungen zu minimieren, die durch Server-Latenz verursacht werden. So kommen SPAs der Reaktionsgeschwindigkeit einer nativen Anwendung nahe.
+Die Grundidee hinter einer SPA besteht darin, dass Aufrufe an und Abhängigkeiten von einem Server verringert werden, um Verzögerungen zu minimieren, die durch Server-Latenz verursacht werden. So kommen SPAs der Reaktionsgeschwindigkeit eines nativen Programms nahe.
 
 Bei einer herkömmlichen, sequenziellen Web-Seite werden nur die für die aktuelle Seite benötigten Daten geladen. Das bedeutet, dass beim Wechseln des Besuchers zu einer anderen Seite der Server für die zusätzlichen Ressourcen aufgerufen werden muss. Weitere Aufrufe können erforderlich sein, wenn der Besucher mit Elementen auf der Seite interagiert. Diese Mehrfachaufrufe können zu einer Wahrnehmung von Verzögerungen führen, da die Seite die Anfragen des Besuchers erfüllen muss.
 
@@ -113,11 +113,11 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
 
    ![Bild persistiert](assets/wknd-change-persisted.png)
 
-Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten auf der Seite, das Neuanordnen von Komponenten und das Ändern des Layouts werden wie in jeder Nicht-SPA-AEM-Anwendung unterstützt.
+Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten auf der Seite, das Neuanordnen von Komponenten und das Ändern des Layouts werden wie in jedem Nicht-SPA-AEM-Programm unterstützt.
 
 >[!NOTE]
 >
->Der SPA-Editor ändert das DOM der Anwendung nicht. Die SPA selbst ist für das DOM verantwortlich.
+>Der SPA-Editor ändert das DOM des Programms nicht. Die SPA selbst ist für das DOM verantwortlich.
 >
 >Um zu erfahren, wie das funktioniert, fahren Sie mit dem nächsten Abschnitt des Artikels [SPAs und der AEM-SPA-Editor](#spa-apps-and-the-aem-spa-editor) fort.
 
@@ -125,9 +125,9 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 
 Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-Seite prüfen, können Sie besser verstehen, wie eine SAP-App mit dem SPA-Editor in AEM zusammenarbeitet.
 
-### Verwenden einer SPA-Anwendung {#using-an-spa-application}
+### Verwenden eines SPA-Programms {#using-an-spa-application}
 
-1. Laden Sie die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
+1. Laden Sie das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -149,11 +149,11 @@ Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-S
 
 Wenn die Seite beim Navigieren durch die untergeordneten Seiten nicht neu geladen wird: Wie wird sie dann geladen?
 
-Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) werden die Methoden zum Laden der SPA sowie zum synchronen und asynchronen Laden von Inhalten genauer erläutert.
+Im nächsten Abschnitt [Laden eines SPA-Programms](#loading-a-spa-application) werden die Methoden zum Laden der SPA sowie zum synchronen und asynchronen Laden von Inhalten genauer erläutert.
 
-### Laden einer SPA-Anwendung {#loading-a-spa-application}
+### Laden eines SPA-Programms {#loading-a-spa-application}
 
-1. Laden Sie die WKND SPA Project-App entweder auf dem Veröffentlichungsserver oder unter Verwendung der Option **Ansicht als Veröffentlicht** aus dem Menü **Seiteninformationen** im Seiteneditor.
+1. Laden Sie, falls noch nicht geschehen, das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiten-Editors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -162,7 +162,7 @@ Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) w
 1. Verwenden Sie das integrierte Tool Ihres Browsers, um die Quelle der Seiten anzuzeigen.
 1. Beachten Sie, dass der Inhalt der Quelle begrenzt ist.
    * Die Seite enthält im Hauptteil keine Inhalte. Sie besteht hauptsächlich aus Stylesheets und einem Aufruf an verschiedene Skripte wie `clientlib-react.min.js`.
-   * Diese Skripte sind die Hauptelemente der Anwendung und für das Rendern sämtlicher Inhalte verantwortlich.
+   * Diese Skripte sind die Hauptelemente des Programms und für das Rendern sämtlicher Inhalte verantwortlich.
 
 1. Nutzen Sie die integrierten Tools Ihres Browsers, um die Seite zu überprüfen. Sehen Sie sich den Inhalt des vollständig geladenen DOM an.
 
@@ -188,7 +188,7 @@ Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) w
 
 1. Das Modell kann Seiten auch zusammen gruppieren, damit sie synchron geladen werden. Dadurch verringert sich die Zahl der erforderlichen Seitenneuladungen.
 
-   Im Beispiel der WKND SPA Project-App werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher normalerweise alle diese Seiten besuchen.
+   Im Beispiel des WKND-SPA-Projekt-Programms werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher in der Regel alle diese Seiten besuchen.
 
    Dieses Verhalten ist nicht obligatorisch und kann umfassend definiert werden.
 
@@ -200,13 +200,13 @@ Im nächsten Abschnitt [Laden einer SPA-Anwendung](#loading-a-spa-application) w
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe der exemplarischen WKND-SPA-Projekt-Anwendung wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhaltsdienste für die JSON-Inhaltsbereitstellung sowie das asynchrone Laden von Ressourcen zum Einsatz.
+Mithilfe des exemplarischen WKND-SPA-Projekt-Programms wird deutlich, wie sich die App verhält und beim Veröffentlichen geladen wird. Dabei kommen Inhalts-Services für die JSON-Inhaltsbereitstellung sowie das asynchrone Laden von Ressourcen zum Einsatz.
 
 Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
 
 Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor erlaubt, Komponenten innerhalb der SPA mit AEM-Komponenten zu verbinden und so für ein nahtloses Bearbeitungserlebnis zu sorgen.
 
-1. Laden Sie die WKND-SPA-Projekt-Anwendung im Editor und wechseln Sie in den **Vorschau**-Modus.
+1. Laden Sie das WKND-SPA-Projekt-Programm im Editor und wechseln Sie in den **Vorschau**-Modus.
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
@@ -232,13 +232,13 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
    >
    >Durch diesen Ansatz im SPA-Editor müssen benutzerdefinierte Elemente nicht mehr injiziert werden, da nur ein zusätzliches Datenattribut erforderlich ist. Dadurch wird das Markup-Verfahren für Frontend-Entwickler vereinfacht.
 
-## Kopflos und Kopflos in AEM {#headful-headless}
+## Headful und Headless in AEM {#headful-headless}
 
-SPA können mit flexiblen Integrationsstufen innerhalb von AEM einschließlich SPA außerhalb von AEM aktiviert werden. Darüber hinaus können SPA innerhalb von AEM genutzt werden, während AEM auch genutzt werden, um Inhalte an zusätzliche Endpunkte kopfüber bereitzustellen.
+SPAs können mit flexiblen Integrationsstufen innerhalb von AEM aktiviert werden, einschließlich SPAs, die außerhalb von AEM entwickelt und gepflegt werden. Darüber hinaus können SPAs innerhalb von AEM genutzt werden und gleichzeitig AEM verwenden, um Inhalte an zusätzliche Endpunkte headless bereitzustellen.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument [Kopflos und Kopflos in AEM](/help/implementing/developing/headful-headless.md).
+>Weitere Informationen finden Sie im Dokument [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md).
 
 ## Nächste Schritte {#next-steps}
 
