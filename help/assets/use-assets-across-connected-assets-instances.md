@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
+source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2707'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. Weitere Informationen zur Funktionsweise dieser Funktionalität in [!DNL Experience Manager] 6.5 finden Sie unter [Connected Assets in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
+* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] 6.5 finden Sie unter [Verbundene Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -45,7 +45,7 @@ Autoren können in Content Finder nach Bildern und den folgenden Dokumenten such
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
-Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurieren und Verwenden der Funktionen und entsprechenden Benutzergruppen beteiligt sind. Der lokale Umfang wird für den Anwendungsfall verwendet, in dem ein Autor eine Web-Seite erstellt. Der Remote-Umfang wird für die DAM-Bereitstellung verwendet. Der [!DNL Sites]-Autor ruft diese Remote-Assets ab.
+Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurieren und Verwenden der Funktionen und entsprechenden Benutzergruppen beteiligt sind. Der lokale Umfang wird für den Anwendungsfall verwendet, in dem ein Autor eine Web-Seite erstellt. Der Remote-Umfang wird für die DAM-Implementierung verwendet, die die erforderlichen Assets hostet. Der [!DNL Sites]-Autor ruft diese Remote-Assets ab.
 
 | Rolle | Anwendungsbereich | Benutzergruppe | Benutzername im Beispiel | Anforderung |
 |------|--------|-----------|-----|----------|
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
 1. Stellen Sie sicher, dass die Benutzer und Rollen im entsprechenden Bereich der [!DNL Sites]-Implementierung und in der [!DNL Assets]-Implementierung auf AMS vorhanden sind. Erstellen Sie einen technischen Benutzer in der [!DNL Assets]-Implementierung und fügen Sie ihn der in [Beteiligte Benutzer und Gruppen](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved) erwähnten Benutzergruppe hinzu.
 
-1. Greifen Sie auf die lokale [!DNL Sites]-Implementierung unter `https://[sites_servername]:port` zu. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets-Konfiguration]**. Geben Sie die folgenden Werte ein:
+1. Greifen Sie auf die lokale [!DNL Sites]-Implementierung unter `https://[sites_servername]:port` zu. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Connected Assets-Konfiguration]** und geben Sie die folgenden Werte ein:
 
    1. Einen **[!UICONTROL Titel]** der Konfiguration.
    1. Die **[!UICONTROL Remote-DAM-URL]** ist die URL des Speicherorts von [!DNL Assets] im Format `https://[assets_servername]:[port]`.
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
    *Abbildung: Eine typische Konfiguration für die Connected Assets-Funktionen.*
 
-1. Die vorhandenen digitalen Assets bei [!DNL Assets]-Bereitstellung werden bereits verarbeitet und die Darstellungen werden generiert. Diese werden mit dieser Funktion abgerufen, sodass keine erneute Generierung der Darstellungen erforderlich ist. Deaktivieren Sie die Workflow-Starter, um die erneute Generierung von Darstellungen zu verhindern. Passen Sie die Konfigurationen der Starter in der ([!DNL Sites]-)Bereitstellung an, um den Ordner `connectedassets` auszuschließen (die Assets werden in diesem Ordner abgerufen).
+1. Die vorhandenen digitalen Assets bei [!DNL Assets]-Bereitstellung werden bereits verarbeitet und die Darstellungen werden generiert. Diese Darstellungen werden mit dieser Funktion abgerufen, sodass keine erneute Generierung der Darstellungen erforderlich ist. Deaktivieren Sie die Workflow-Starter, um die erneute Generierung von Darstellungen zu verhindern. Passen Sie die Konfigurationen der Starter in der ([!DNL Sites]-)Bereitstellung an, um den Ordner `connectedassets` auszuschließen (die Assets werden in diesem Ordner abgerufen).
 
    1. Klicken Sie in einer [!DNL Sites]-Implementierung auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Starter]**.
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    1. Ändern Sie im [!UICONTROL Eigenschaften]-Assistenten die **[!UICONTROL Pfad]**-Felder in die folgenden Zuordnungen, um ihre regulären Ausdrücke zu aktualisieren und den Bereitstellungspunkt **[!UICONTROL connectedassets]** auszuschließen.
 
    | Vorher | Nachher |
-   | ------------------------------------------------------- | -------------------------------------------------------------------------- |
+   | ------ | ------------ |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
