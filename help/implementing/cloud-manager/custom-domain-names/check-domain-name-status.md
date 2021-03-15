@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Überprüfen des Domain-Namenstatus
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 72%
+source-wordcount: '298'
+ht-degree: 59%
 
 ---
 
@@ -41,3 +41,12 @@ Die Löschung des benutzerdefinierten Domain-Namens wird durchgeführt.
 * **Löschen fehlgeschlagen**
 Die Löschung des benutzerdefinierten Domain-Namens ist fehlgeschlagen. Sie müssen es erneut versuchen. Weitere Informationen finden Sie unter [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md).
 
+
+## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
+
+Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Auf die Zulassungsliste setzte (SSL-Zertifikate oder benutzerdefinierte Domänennamen) enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
