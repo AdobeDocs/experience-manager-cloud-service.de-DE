@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 48%
+ht-degree: 51%
 
 ---
 
@@ -26,11 +26,11 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.ado
 
 **So machen Sie Ihren CDN-Cache mit Dynamic Media Classic ungültig:**
 
-1. Öffnen Sie die Desktopanwendung [Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich dann bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
    Ihre Anmeldeinformationen und Anmeldedaten wurden von der Adobe zum Zeitpunkt der Bereitstellung bereitgestellt. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-1.  Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
+1. Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
 1. Suchen Sie auf der Seite „Allgemeine Programmeinstellungen“ unter der Überschrift für Server-Gruppen das Textfeld **[!UICONTROL Vorlage für CDN-Invalidierung]**.
 
 1. Geben Sie die Vorlage an, die zur Invalidierung des CDN (Content Delivery Network)-Cache verwendet wird.
@@ -42,7 +42,7 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.ado
    Wenn die Vorlage nur `<ID>` enthält, füllt Dynamic Media `https://<server>/is/image` aus, wobei `<server>` der Name des Veröffentlichungsservers ist, der in den allgemeinen Einstellungen definiert ist, und &lt;ID> die Assets, die für ungültig erklärt wurden.
 
 1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Schließen]**.
-1. Wählen Sie in der Benutzeroberfläche von Dynamic Media Classic (Scene7) ein oder mehrere Assets aus und tippen Sie dann auf **[!UICONTROL Datei > Ungültiges CDN]**. Es wird eine Liste von einer oder mehreren URLs angezeigt, die aus der erstellten Vorlage und den ausgewählten Assets generiert wurden. Dabei werden die Server-URL-Einträge unter „Veröffentlichungsservername“ in den allgemeinen Programmeinstellungen verwendet.
+1. Wählen Sie in der Benutzeroberfläche von Dynamic Media Classic (Scene7) ein oder mehrere Assets aus und tippen Sie dann auf **[!UICONTROL Datei > Ungültiges CDN]**. Es wird eine Liste von einer oder mehreren URLs angezeigt, die aus der erstellten Vorlage und den ausgewählten Assets generiert wurden. Dabei werden die Server-URL-Einträge unter „Veröffentlichungs-Servername“ in den allgemeinen Programmeinstellungen verwendet.
 
    Angenommen Sie haben mit der im vorherigen Schritt festgelegten Vorlage für CDN-Invalidierung ein Bild-Asset mit der Bezeichnung `Backpack_B` ausgewählt. Wenn Sie auf **[!UICONTROL Datei > Ungültiges CDN]** tippen, wird die folgende generierte URL in der Benutzeroberfläche &quot;CDN-Ungültigmachung&quot;angezeigt:
 
