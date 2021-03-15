@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Die Version 2020.12.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. 
 
 ### Neue Funktionen {#what-is-new}
 
-* Selbstbedienungs-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Self-Service-Verwaltung von [SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Selbstbedienungs-Management von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Self-Service-Verwaltung von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* Die Detailseite **Umgebung** wurde aktualisiert und ermöglicht Benutzern nun, benutzerdefinierte Domänennamen und IP-Zulassungslisten auf ihren Umgebung zu verwalten.
+* Auf der aktualisierten Seite mit den Informationen zur **Umgebung** können Benutzer jetzt benutzerdefinierte Domain-Namen und IP-Zulassungslisten für ihre Umgebungen verwalten.
 
 
 ### Fehlerbehebungen {#bug-fixes}
