@@ -52,4 +52,4 @@ Mit dieser Konfiguration können Sie nun mit dem zweiten Teil der ersten Schritt
 
 >[!TIP]
 >
->Ausführliche Informationen zum Konfigurationsbrowser finden Sie in der [Dokumentation zum Konfigurationsbrowser.](/help/implementing/developing/introduction/configurations.md)
+>Ausführliche Informationen zum Konfigurations-Browser finden Sie in der [Dokumentation zum Konfigurations-Browser.](/help/implementing/developing/introduction/configurations.md)
