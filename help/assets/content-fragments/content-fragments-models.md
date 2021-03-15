@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
 source-wordcount: '2156'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 1. [Aktivieren Sie die Funktion für Inhaltsfragmentmodelle für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. [Erstellen](#creating-a-content-fragment-model) und [konfigurieren](#defining-your-content-fragment-model) Sie Ihre Inhaltsfragmentmodelle.
 1. [Aktivieren Sie Ihre Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zur Verwendung bei der Erstellung von Inhaltsfragmenten.
-1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-](#allowing-content-fragment-models-assets-folder) Ordnern zu, indem Sie  **Richtlinien** konfigurieren.
+1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-Ordnern zu](#allowing-content-fragment-models-assets-folder), indem Sie **Richtlinien** konfigurieren.
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
@@ -31,7 +31,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
    >
    >Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
 
-1. Geben Sie den **Modell-Titel** an. Sie können auch **Tags**, eine **Beschreibung** hinzufügen und **Modell** aktivieren, um [das Modell](#enabling-disabling-a-content-fragment-model) bei Bedarf zu aktivieren.
+1. Geben Sie den **Modell-Titel** an. Sie können auch **Tags** und eine **Beschreibung** hinzufügen sowie **Modell aktivieren** auswählen, um das [Modell bei Bedarf zu aktivieren](#enabling-disabling-a-content-fragment-model).
 
    ![Titel und Beschreibung](assets/cfm-models-02.png)
 
@@ -70,7 +70,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
    * Wenn ein Feld zum Modell hinzugefügt wurde, werden im rechten Fenster die **Eigenschaften** angezeigt, die für diesen speziellen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist.
 
       * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften](#properties).
-      * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt - wenn leer, und sie kann anschließend manuell aktualisiert werden.
+      * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt, wenn das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
       Beispiel:
 
@@ -110,15 +110,15 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
 * **Fragmentreferenz**
-   * Verweise auf andere Inhaltsfragmente; kann für [Erstellung verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden
-   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren Folgendes zulassen:
-      * Bearbeiten Sie das referenzierte Fragment direkt.
-      * Erstellen Sie ein neues Inhaltsfragment, basierend auf dem entsprechenden Modell
+   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
+      * Direktes Bearbeiten des referenzierten Fragments
+      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 * **JSON-Objekt**
-   * Ermöglicht dem Autor des Inhaltsfragments, die JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
-      * Damit AEM direkte JSON speichern können, die Sie von einem anderen Dienst kopiert/eingefügt haben.
-      * Der JSON wird übergeben und als JSON in GraphQL ausgegeben.
-      * Schließt JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmenteditor ein.
+   * Ermöglicht es dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
+      * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Service kopiert/eingefügt haben.
+      * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
+      * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmente-Editor.
 
 ## Eigenschaften {#properties}
 
@@ -144,26 +144,26 @@ Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erford
 
    Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
 
-* ****
-UniqueContent (für das spezifische Feld) muss für alle Inhaltsfragmente, die vom aktuellen Modell erstellt werden, eindeutig sein.
+* **Eindeutiger**
+Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand des aktuellen Modells erstellt werden, eindeutig sein.
 
-   Dadurch wird sichergestellt, dass Inhaltsersteller Inhalte, die bereits in einem anderen Fragment desselben Modells hinzugefügt wurden, nicht wiederholen können.
+   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
-   Beispielsweise kann ein **Einzelzeilentext**-Feld mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Eine Warnung wird ausgegeben, wenn der Versuch der zweiten Instanz unternommen wird.
-
-   >[!NOTE]
-   Die Eindeutigkeit ist pro Sprachstamm gewährleistet.
+   Beispielsweise kann ein **einzeiliges Textfeld** mit dem Namen `Country` im Inhaltsfragmentmodell nicht den Wert `Japan` in zwei abhängigen Inhaltsfragmenten haben. Eine Warnung wird ausgegeben, wenn versucht wird, eine zweite Instanz zu erstellen.
 
    >[!NOTE]
-   Variationen können denselben Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie bei anderen Fragmenten.**
+   Die Eindeutigkeit wird pro Sprachstamm gewährleistet.
 
-* ****
-TranslatableKontrollkästchen &quot;Translatable&quot;in einem Feld im CF-Modell-Editor aktivieren
+   >[!NOTE]
+   Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
 
-   * Stellen Sie sicher, dass der Eigenschaftsname des Felds in der Konvertierungskonfiguration hinzugefügt wird, Kontext `/content/dam/<tenant>`, falls nicht bereits vorhanden.
-   * Für GraphQL: Legen Sie im Feld Inhaltsfragment die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfrage-Filter für die JSON-Ausgabe mit nur übersetzbarem Inhalt zuzulassen.
+* **Übersetzbar**
+Durch Aktivieren des Kontrollkästchens „Übersetzbar“ in einem Feld im CF-Modell-Editor
 
-* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentverweis (Verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
+   * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<tenant>` hinzugefügt wird, falls er noch nicht vorhanden ist.
+   * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
+
+* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentreferenz (verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
 
 ## Validierung {#validation}
 
@@ -174,8 +174,8 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
 * **Zahl**
    * Suchen Sie nach bestimmten Werten.
 * **Inhaltsreferenz**
-   * Testen Sie, ob bestimmte Inhaltstypen vorhanden sind.
-   * Es können nur Assets mit einer bestimmten Dateigröße oder einer kleineren Größe referenziert werden.
+   * Testen Sie, ob bestimmte Content-Typen vorhanden sind.
+   * Es können nur Assets bis zur angegebenen maximalen Dateigröße referenziert werden.
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
@@ -186,51 +186,51 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
   * No more than the predefined number of fragments can be referenced.
 -->
 
-## Verwenden von Verweisen zum Formular &quot;Verschachtelter Inhalt&quot;{#using-references-to-form-nested-content}
+## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
-Inhaltsfragmente können verschachtelte Inhalte mit einem der folgenden Datentypen bilden:
+Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhalte bilden:
 
 * **[Inhaltsreferenz](#content-reference)**
-   * Bietet einen einfachen Verweis auf andere Inhalte; jedes Typs.
-   * Kann für eine oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+   * Bietet einen einfachen Verweis auf anderen Content jedes Typs.
+   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
-* **[Fragmentverweis](#fragment-reference-nested-fragments)** (Verschachtelte Fragmente)
+* **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
-   * Ermöglicht Ihnen, strukturierte Daten einzuschließen/abzurufen.
+   * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
 
       >[!NOTE]
-      Diese Methode ist in Verbindung mit [Headless Content Versand, der Inhaltsfragmente mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) verwendet, besonders interessant.
-   * Kann für eine oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+      Diese Methode ist in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
+   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 >[!NOTE]
-AEM hat einen wiederkehrenden Schutz für:
+AEM bietet einen Wiederholungsschutz für:
 * Inhaltsreferenzen
-Dadurch wird verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
+Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 
-* Fragmentverweise in GraphQL
-Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, auf die sich gegenseitig verwiesen wird, gibt sie beim ersten Auftreten null zurück.
+* Fragmentreferenzen in GraphQL
+Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern. zum Beispiel Bild oder Inhaltsfragment.
+Mit der Inhaltsreferenz können Sie Content aus einer anderen Quelle rendern, zum Beispiel ein Bild oder Inhaltsfragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
-* Der **Stammpfad** für alle referenzierten Inhalte.
+* Den **Stammpfad** für referenzierten Content.
 * Die Inhaltstypen, auf die verwiesen werden kann.
-* Einschränkungen für Dateigrößen.
-* Bildeinschränkungen.
+* Einschränkungen bezüglich der Dateigrößen.
+* Einschränkungen für Bilder.
    <!-- Check screenshot - might need update -->
    ![Inhaltsreferenz](assets/cfm-content-reference.png)
 
-### Fragmentverweis (Verschachtelte Fragmente) {#fragment-reference-nested-fragments}
+### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Der Fragmentverweis verweist auf ein oder mehrere Inhaltsfragmente. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer App interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
+Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Content für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
 Beispiel:
 
-* Ein Modell, das Details für einen Mitarbeiter definiert; Dazu gehören:
+* Ein Modell, das Details für einen Mitarbeiter definiert, beispielsweise:
    * Ein Verweis auf das Modell, das den Arbeitgeber definiert (Firma)
 
 ```xml
@@ -248,34 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
-Dies ist besonders in Verbindung mit [Headless Content Versand, der Inhaltsfragmente mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) verwendet, von Interesse.
+Dies ist besonders in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) von Interesse.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
 
 * **Rendern als**:
 
-   * **multifield**  - der Fragmentautor kann mehrere, einzelne Verweise erstellen
+   * **multifield**: Der Fragmentautor kann mehrere einzelne Verweise erstellen.
 
-   * **Fragmentverweis** : Hiermit kann der Fragmentautor einen einzelnen Verweis auf ein Fragment auswählen
+   * **fragmentreference**: Der Fragmentautor kann einen einzelnen Verweis auf ein Fragment auswählen.
 
 * **Modelltyp**
-Es können mehrere Modelle ausgewählt werden. Beim Authoring des Inhaltsfragments müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
+Es können mehrere Modelle ausgewählt werden. Beim Erstellen des Inhaltsfragments müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
 
 * **Stammpfad**
-Gibt einen Stammpfad für alle referenzierten Fragmente an.
+Gibt einen Stammpfad für referenzierte Fragmente an.
 
 * **Fragmenterstellung zulassen**
 
    Auf diese Weise kann der Fragmentautor ein neues Fragment erstellen, das auf dem entsprechenden Modell basiert.
 
-   * **fragmentreferencecomposite** : Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente
+   * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
    <!-- Check screenshot - might need update -->
    ![Fragmentreferenz](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
-Es gibt einen Mechanismus zum Wiederholungsschutz. Er untersagt dem Benutzer, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
-Es gibt auch einen Wiederholungsschutz für Fragmentverweise in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente erstellen, die sich gegenseitig referenzieren, wird null zurückgegeben.
+Es gibt einen Mechanismus zum Wiederholungsschutz. Dieser verhindert, dass Benutzer in der Fragmentreferenz das aktuelle Inhaltsfragment auswählen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine Deep-Abfrage über zwei Inhaltsfragmente erstellen, die gegenseitig aufeinander verweisen, wird NULL zurückgegeben.
 
 ## Aktivieren oder Deaktivieren von Inhaltsfragmentmodellen {#enabling-disabling-a-content-fragment-model}
 
@@ -320,10 +320,10 @@ Um ein Modell zu deaktivieren, das als **Aktiviert** gekennzeichnet ist, verwend
 
 ## Zulassen von Inhaltsfragmentmodellen im Asset-Ordner {#allowing-content-fragment-models-assets-folder}
 
-Zur Implementierung der Inhaltsverwaltung können Sie **Richtlinien** im Ordner &quot;Assets&quot;konfigurieren, um zu steuern, welche Inhaltsfragmentmodelle für die Fragmenterstellung in diesem Ordner zulässig sind.
+Zur Implementierung der Inhaltsverwaltung können Sie **Richtlinien** im Asset-Ordner konfigurieren, um zu steuern, welche Inhaltsfragmentmodelle für die Fragmenterstellung in diesem Ordner zulässig sind.
 
 >[!NOTE]
-Der Mechanismus ähnelt [dem Zulassen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) für eine Seite und deren untergeordnete Elemente in erweiterten Eigenschaften einer Seite.
+Der Mechanismus ähnelt dem [Zulassen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) für eine Seite und deren untergeordnete Elemente in den erweiterten Eigenschaften einer Seite.
 
 So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodelle**:
 
@@ -333,24 +333,24 @@ So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodell
 
    * **Vererbt von`<folder>`**
 
-      Richtlinien werden beim Erstellen neuer untergeordneter Ordner automatisch übernommen. Die Richtlinie kann neu konfiguriert werden (und die Vererbung ist beschädigt), wenn Unterordner Modelle zulassen müssen, die vom übergeordneten Ordner abweichen.
+      Richtlinien werden beim Erstellen neuer untergeordneter Ordner automatisch übernommen. Die Richtlinie kann neu konfiguriert (und die Vererbung aufgehoben) werden, wenn Unterordner Modelle zulassen müssen, die vom übergeordneten Ordner abweichen.
 
    * **Zugelassene Inhaltsfragmentmodelle nach Pfad**
 
       Es können mehrere Modelle zugelassen werden.
 
-   * **Zulässige Inhaltsfragmentmodelle nach Tag**
+   * **Zugelassene Inhaltsfragmentmodelle nach Tag**
 
       Es können mehrere Modelle zugelassen werden.
-   ![Richtlinie zum Inhaltsfragmentmodell](assets/cfm-model-policy-assets-folder.png)
+   ![Richtlinie für Inhaltsfragmentmodell](assets/cfm-model-policy-assets-folder.png)
 
-1. **Änderungen** speichern.
+1. **Speichern** Sie die Änderungen.
 
 Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgelöst:
 * Die **Richtlinien** für **Zulässige Inhaltsfragmentmodelle**.
 * Falls leer, versuchen Sie, die Richtlinie mithilfe der Vererbungsregeln zu bestimmen.
 * Wenn die Vererbungskette kein Ergebnis liefert, prüfen Sie die **Cloud Services**-Konfiguration für diesen Ordner (auch zuerst direkt und dann über Vererbung).
-* Wenn keine der oben genannten Ergebnisse zu liefern ist, gibt es keine zulässigen Modelle für diesen Ordner.
+* Wenn keines der oben genannten Verfahren Ergebnisse liefert, gibt es keine zulässigen Modelle für diesen Ordner.
 
 ## Löschen eines Inhaltsfragmentmodells {#deleting-a-content-fragment-model}
 
