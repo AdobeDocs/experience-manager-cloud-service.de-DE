@@ -6,22 +6,22 @@ translation-type: tm+mt
 source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
 source-wordcount: '1000'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
 
 # XMP-Metadaten {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von AEM Assets für die gesamte Metadatenverwaltung eingesetzt wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Anwendungen.
+XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von AEM Assets für die gesamte Metadatenverwaltung eingesetzt wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 
 XMP bietet nicht nur universelle Metadatenkodierung, die in alle Dateiformate eingebettet werden kann, sondern auch ein [Rich-Content-Modell](#xmp-core-concepts). Außerdem wird XMP [von Adobe](#advantages-of-xmp) und anderen Unternehmen unterstützt, sodass Benutzer, die XMP in Kombination mit AEM Assets einsetzen, über eine leistungsstarke Plattform verfügen.
 
 ## XMP-Übersicht und Ökosystem {#xmp-ecosystem}
 
-AEM Assets unterstützt nativ den XMP-Metadatenstandard. XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Anwendungen effektiv mit Metadaten arbeiten können.
+AEM Assets unterstützt nativ den XMP-Metadatenstandard. XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Programme effektiv mit Metadaten arbeiten können.
 
-Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Anwendungen, um Informationen über mehrere Dateiformate hinweg zu übergeben. Das AEM Assets-Repository extrahiert die XMP-Metadaten und verwaltet damit den Inhaltslebenszyklus. Außerdem wird die Erstellung von Automatisierungs-Workflows ermöglicht.
+Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. Das AEM Assets-Repository extrahiert die XMP-Metadaten und verwaltet damit den Inhaltslebenszyklus. Außerdem wird die Erstellung von Automatisierungs-Workflows ermöglicht.
 
 XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet werden, indem ein Datenmodell, ein Speichermodell und Schemata bereitgestellt werden. Diese Grundlagen werden alle in diesem Abschnitt behandelt.
 
@@ -33,7 +33,7 @@ XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), da
 
 XMP wird am häufigsten mit einer Untergruppe des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert, das wiederum in [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt wird.
 
-### Vorteile von XMP       {#advantages-of-xmp}
+### Vorteile von XMP  {#advantages-of-xmp}
 
 XMP bietet die folgenden Vorteile gegenüber anderen Kodierungsstandards und Schemata:
 
@@ -55,11 +55,11 @@ Das XMP-Standardformat ist erweiterbar, sodass Sie den XMP-Daten benutzerdefinie
 Ein XMP-Schema ist ein Set aus Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der
 den Datentyp und beschreibende Informationen umfasst. Ein XMP-Schema wird durch die zugehörige XML-Namespace-URI identifiziert. Durch Verwendung von Namespaces werden Konflikte zwischen Eigenschaften in verschiedenen Schemata verhindert, die denselben Namen, aber eine andere Bedeutung haben.
 
-Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für die Anwendung, von der das Asset erstellt wurde (z. B. Adobe Photoshop).
+Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für das Programm, von dem das Asset erstellt wurde (z. B. Adobe Photoshop).
 
 **XMP-Eigenschaften und -Werte**
 
-XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen. Viele Adobe-Anwendungen verwenden beispielsweise Folgendes:
+XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen. Viele Adobe-Programme verwenden beispielsweise Folgendes:
 
 * Dublin Core-Schema: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
 * XMP-Basisschema: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
@@ -70,9 +70,9 @@ XMP kann Eigenschaften von einem oder mehreren der Schemata umfassen. Viele Adob
 
 Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen, um die Sprache des Textes anzugeben.
 
-## XMP-Writeback in Ausgabeformaten {#xmp-writeback-to-renditions}
+## XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
-Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets. Wenn Sie die Metadaten eines Assets von [!DNL Assets] oder beim Hochladen des Assets ändern, werden die Änderungen zunächst innerhalb des Asset-Knotens im Repository gespeichert. Die XMP Funktion zum Schreiben von Dateien leitet die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiter.
+Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets. Wenn Sie die Metadaten eines Assets von [!DNL Assets] oder beim Hochladen des Assets ändern, werden die Änderungen zunächst innerhalb des Asset-Knotens im Repository gespeichert. Die XMP-Writeback-Funktion kopiert die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -84,7 +84,7 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 
 [!DNL Assets] propagiert jedoch nicht automatisch Änderungen der Metadaten an den Darstellungen eines Assets.
 
-Mit der XMP Funktion zum Erstellen einer Rückmeldung können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen bettet diese Funktion die Änderungen in den Binärdateien der Darstellungen ein.
+Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen bettet diese Funktion die Änderungen in den Binärdateien der Darstellungen ein.
 
 Die Funktion zum Zurückschreiben ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die Metadaten-Schreibweise [aktivieren.](#enable-xmp-writeback)
 
