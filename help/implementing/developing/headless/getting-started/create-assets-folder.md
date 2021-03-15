@@ -35,7 +35,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
-1. Wählen Sie den soeben erstellten Ordner aus und dann in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p` ).
+1. Wählen Sie den soeben erstellten Ordner und dann in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
 
