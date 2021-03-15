@@ -2,17 +2,17 @@
 title: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 87%
+source-wordcount: '200'
+ht-degree: 69%
 
 ---
 
 
 # Überprüfen des Status eines SSL-Zertifikats {#checking-status-an-ssl-certificate}
 
-Der Status Ihrer SSL-Zertifikate kann auf einen Blick von der SSL-Zertifikatsseite aus verstanden werden.
+Der Status Ihrer SSL-Zertifikate ist auf der SSL-Zertifikatsseite auf einen Blick ersichtlich.
 
 Sie können den Status eines SSL-Zertifikats anhand der folgenden Farbschemata erkennen:
 
@@ -24,3 +24,14 @@ Zeigt an, dass Ihr Zertifikat in weniger als 60 Tagen abläuft. Sie sollten sich
 
 * **Rot**
 Zeigt an, dass Ihr SSL-Zertifikat trotz mehrfacher Benachrichtigungen abgelaufen ist.
+
+## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
+
+Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden, wie in der folgenden Abbildung dargestellt.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
