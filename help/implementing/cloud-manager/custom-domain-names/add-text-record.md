@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie einen TXT-Datensatz erstellen:
 * Sie haben die Möglichkeit, die DNS-Datensätze für die Domain Ihres Unternehmens zu ändern oder sich an eine entsprechende Person zu wenden, die dies kann.
 * Identifizieren Sie Ihren Domain-Host oder Ihre Registrierungsstelle, falls Sie sie noch nicht kennen.
 
-Wenn Sie die Domänenüberprüfung starten, gibt Ihnen Cloud Manager den Namen und den TXT-Wert zur Überprüfung an. Fügen Sie dem DNS-Server Ihrer Domain einen TXT-Datensatz mit dem angegebenen Namen und Wert hinzu.
+Wenn Sie die Domain-Überprüfung starten, erhalten Sie von Cloud Manager den Namen und den TXT-Wert, die zur Überprüfung verwendet werden sollen. Fügen Sie dem DNS-Server Ihrer Domain einen TXT-Datensatz mit dem angegebenen Namen und Wert hinzu.
 
 1. Melden Sie sich bei Ihrem Domain-Host an und wechseln Sie zum Abschnitt mit den DNS-Datensätzen.
 1. Fügen Sie `_aemverification.[yourdomainname]` als Namen und den TXT-Wert genau so hinzu, wie er angezeigt wird.
