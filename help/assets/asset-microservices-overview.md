@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] bietet eine Cloud-native Mög
 * Gegebenenfalls werden native Adobe-Dateiverarbeitungs-Services verwendet, um eine Ausgabe mit hoher Wiedergabetreue und einen [effizienten Umgang mit proprietären Adobe-Formaten](file-format-support.md) zu ermöglichen.
 * Möglichkeit, den Nachbearbeitungs-Workflow so zu konfigurieren, dass benutzerspezifische Aktionen und Integrationen hinzugefügt werden können.
 
-Asset-Mikrodienste helfen, die Notwendigkeit von Rendering-Werkzeugen und -Methoden von Drittanbietern (z. B. ImageMagick- und FFmpeg-Transkodierung) zu vermeiden und Konfigurationen zu vereinfachen, bieten aber standardmäßig grundlegende Funktionen für gängige Dateitypen.
+Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick und FFmpeg-Transkodierung) zu vermeiden, die Konfiguration des Systems zu vereinfachen und standardmäßig einfache Funktionen für gängige Dateitypen bereitzustellen.
 
 ## Umfangreiche Architektur {#asset-microservices-architecture}
 
@@ -68,7 +68,7 @@ Weitere Informationen hierzu finden Sie unter [Hochladen von Assets](add-assets.
 
 Während die Anforderungen an die Asset-Verarbeitung der meisten Kunden von den konfigurierbaren Asset-Microservices erfüllt werden, benötigen einige Kunden möglicherweise zusätzliche Asset-Verarbeitungsschritte. Dies gilt insbesondere dann, wenn Assets auf der Grundlage von Informationen aus anderen Systemen über Integrationen verarbeitet werden müssen. In solchen Fällen können benutzerdefinierte Workflows für die Nachbearbeitung verwendet werden.
 
-Nacharbeitungs-Workflows sind reguläre [!DNL Experience Manager]-Workflow-Modelle, die im [!DNL Experience Manager]-Workflow-Editor erstellt und verwaltet werden. Kunden können die Workflows so konfigurieren, dass zusätzliche Verarbeitungsschritte für ein Asset ausgeführt werden, einschließlich der verfügbaren vordefinierten Workflow-Schritte und benutzerdefinierter Workflows.
+Nachbearbeitungs-Workflows sind reguläre [!DNL Experience Manager]-Workflow-Modelle, die im [!DNL Experience Manager]-Workflow-Editor erstellt und verwaltet werden. Kunden können die Workflows so konfigurieren, dass zusätzliche Verarbeitungsschritte für ein Asset ausgeführt werden, einschließlich der verfügbaren vordefinierten Workflow-Schritte und benutzerdefinierter Workflows.
 
 Adobe Experience Manager kann so konfiguriert werden, dass die Workflows nach Abschluss der Asset-Verarbeitung automatisch ausgelöst werden.
 
