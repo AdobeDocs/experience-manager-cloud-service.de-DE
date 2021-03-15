@@ -22,9 +22,9 @@ Die Version 2020.6.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für AEM Sites in Version 2020.6.0 von AEM as a Cloud Service.
 
-### Neuerungen {#whats-new-2020.6.0}
+### Neue Funktionen {#whats-new-2020.6.0}
 
-Version 2.9.0 der [Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) ist jetzt als Teil von AEM Sites verfügbar, einschließlich folgenden Optionen:
+Version 2.9.0 der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) ist jetzt als Teil von AEM Sites verfügbar, einschließlich folgenden Optionen:
 
 * Integration zwischen der [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer) und den Kernkomponenten
 * Konfigurierbare HTML-ID-Attribute für alle Komponenten
@@ -57,11 +57,11 @@ Das AEM as a Cloud Service-SDK-API-Jar, das zuvor an diesem Speicherort gehostet
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für Cloud Manager in AEM as a Cloud Service Version 2020.6.0.
 
-### Neuerungen {#what-is-new-cloud-manager}
+### Neue Funktionen {#what-is-new-cloud-manager}
 
 * Ein Benutzer mit der Rolle *Business Owner* in Cloud Manager kann jetzt ein Sandbox-Programm von der Landingpage (über die Schaltfläche für den Schnellzugriff auf der Programmkarte) oder aus dem Programm heraus löschen.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt sowohl auf der Umgebungskarte auf der Seite **Programmübersicht** als auch auf der Seite **Umgebungen** verfügbar. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
@@ -81,7 +81,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Benutzer mit der SysAdmin-Rolle hat kann jetzt direkt aus Cloud Manager per 1-Klick-Zugriff auf die Autoreninstanz zugreifen.
 
-   Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Autoreninstanz](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
+   Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Autoreninstanz](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
 
 * Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte einschließlich übersprungener Inhaltspakete.
 
@@ -126,19 +126,19 @@ Mit dieser Version können kreative Benutzer und Designer in [!DNL AEM Assets] v
 
 [!DNL Adobe Experience Manager Assets] ist mit den Richtlinien der Web Content Accessibility Guidelines (WCAG) V2.1 kompatibel und leichter zugänglich. Die Barrierefreiheit wurde für folgende Anwendungsfälle oder Schnittstellen verbessert:
 
-Die Elemente der Benutzeroberfläche sind für Vorlese-Anwendungen benutzerfreundlich, können über eine Tastatur aufgerufen werden und haben einen besseren Kontrast. Im Folgenden finden Sie eine detaillierte Liste der Verbesserungen:
+Die Elemente der Benutzeroberfläche sind für Vorlese-Progrmme benutzerfreundlich, können über eine Tastatur aufgerufen werden und haben einen besseren Kontrast. Im Folgenden finden Sie eine detaillierte Liste der Verbesserungen:
 
-* Die Fortschrittsanzeigen für [!UICONTROL Optionen], [!UICONTROL Umfang] und [!UICONTROL Workflows] auf der Seite [!UICONTROL Veröffentlichung verwalten] werden von der Vorlese-Anwendung nicht als Fortschrittsanzeigen ausgelesen. Stattdessen nehmen die Benutzer der Sprachausgabe diese Statusanzeigen als eine Registerkartenliste wahr. (CQ-4273015)
+* Die Fortschrittsanzeigen für [!UICONTROL Optionen], [!UICONTROL Umfang] und [!UICONTROL Workflows] auf der Seite [!UICONTROL Veröffentlichung verwalten] werden vom Vorlese-Programm nicht als Fortschrittsanzeigen ausgelesen. Stattdessen nehmen die Benutzer der Sprachausgabe diese Statusanzeigen als eine Registerkartenliste wahr. (CQ-4273015)
 
 * Beim Hinzufügen von Tags auf der Seite [!UICONTROL Eigenschaften] eines Assets navigieren Benutzer durch eine Baumstruktur von Tags. Die Baumstruktur ist nicht barrierefrei, da die Benutzer der Sprachausgabe beim Navigieren nichts hören. (CQ-4272964)
 
 * Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
-   * liest die Vorlese-Anwendung die Tabelleninformationen sofort beim Laden des Dialogs.
-   * kann die Vorlese-Anwendung nicht zu allen aufgelisteten automatischen Vorschlägen navigieren.
-   * liest die Vorlese-Anwendung nicht die automatischen Vorschläge für das Kombinationsfeld [!UICONTROL E-Mail-Adresse hinzufügen/Suchen]. (CQ-4294232)
+   * liest das Vorlese-Programm die Tabelleninformationen sofort beim Laden des Dialogs.
+   * kann das Vorlese-Programm nicht zu allen aufgelisteten automatischen Vorschlägen navigieren.
+   * liest das Vorlese-Programm nicht die automatischen Vorschläge für das Kombinationsfeld [!UICONTROL E-Mail-Adresse hinzufügen/Suchen]. (CQ-4294232)
 
-* Die Seite [!UICONTROL Metadatenschema-Editor] und deren Elemente können nicht über die Tastatur aufgerufen werden und sind nicht für die Vorlese-Anwendung geeignet. (CQ-4272953) Benutzer können die Komponenten über die Tastatur im NVDA-Modus „Durchsuchen“ ziehen. (CQ-4296326)
+* Die Seite [!UICONTROL Metadatenschema-Editor] und deren Elemente können nicht über die Tastatur aufgerufen werden und sind nicht für das Vorlese-Programm geeignet. (CQ-4272953) Benutzer können die Komponenten über die Tastatur im NVDA-Modus „Durchsuchen“ ziehen. (CQ-4296326)
 
 * Auf der Assets-Benutzeroberfläche sind die Ansichtseinstellungen nicht über die Tastatur zugänglich. (CQ-4289038)
 
@@ -146,23 +146,23 @@ Die Elemente der Benutzeroberfläche sind für Vorlese-Anwendungen benutzerfreun
 
 * Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sehkraft oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Symbole für die Bewertung von Sternen im Abschnitt [!UICONTROL Bewertung] auf der Registerkarte [!UICONTROL Erweitert] in den [!UICONTROL Eigenschaften] eines Assets und in der Kartenansicht für einen angemessenen Kontrast geändert. (CQ-4295106)
 
-* Die Vorlese-Anwendungen können nun die Einträge des Popup-Menüs „Liste“ des Kombinationsfelds (in verschiedenen Feldern auf verschiedenen Seiten) als Liste der Optionen lesen. (CQ-4294017)
+* Die Vorlese-Programme können nun die Einträge des Popup-Menüs „Liste“ des Kombinationsfelds (in verschiedenen Feldern auf verschiedenen Seiten) als Liste der Optionen lesen. (CQ-4294017)
 
 * Um einen Workflow auf ein Asset anzuwenden, können Sie über eine Tastatur auf den Richtungspfeil in der [!UICONTROL Zeitleiste] zugreifen. (CQ-4289268)
 
-* Benutzer können ausgewählte Tags im Feld [!UICONTROL Tags] auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets mit dem Symbol `x` entfernen. Die Vorlese-Anwendungen geben nun den Zweck und die Anzahl der ausgewählten Tags an (CQ-4273033).
+* Benutzer können ausgewählte Tags im Feld [!UICONTROL Tags] auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets mit dem Symbol `x` entfernen. Die Vorlese-Programme geben nun den Zweck und die Anzahl der ausgewählten Tags an (CQ-4273033).
 
 * Die schreibgeschützten Formularfelder können mithilfe einer Tastatur ausgewählt werden. Beispielsweise die deaktivierten Felder auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets. (CQ-4273031)
 
 * Greifen Sie jetzt über eine Tastatur auf die Optionen zum Filtern von Assets in der linken Seitenleiste zu. (CQ-4273018)
 
-* Die Vorlese-Anwendung kündigt den Zweck verschiedener Kombinationsfeldelemente wie das Feld „Pfad“ und die Option zum Öffnen des Dialogfelds „Auswahl“ auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets an. (CQ-4273016)
+* Das Vorlese-Programm kündigt den Zweck verschiedener Kombinationsfeldelemente wie das Feld „Pfad“ und die Option zum Öffnen des Dialogfelds „Auswahl“ auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets an. (CQ-4273016)
 
 * Auf die Lautstärkeregler für Videos kann über eine Tastatur zugegriffen werden. (CQ-4272696)
 
 * Viele ausführbare Optionen auf der Assets-Benutzeroberfläche zeigen bei der Verwendung der Tastatur keinen Fokus an. (CQ-4272694)
 
-* Benutzer von Vorlese-Anwendungen erfahren jetzt, wenn die Zeilen in der Ansicht der Liste über eine Tastatur ausgewählt werden können. Die Informationen werden nur angesagt, wenn der Mauszeiger über die Zeilen bewegt wird. (CQ-4271824)
+* Benutzer von Vorlese-Programmen erfahren jetzt, wenn die Zeilen in der Ansicht der Liste über eine Tastatur ausgewählt werden können. Die Informationen werden nur angesagt, wenn der Mauszeiger über die Zeilen bewegt wird. (CQ-4271824)
 
 * Einige Formularfelder, wie z. B. die Felder für Benutzername und Kennwort auf der Anmeldeseite, benötigen Platzhalterwerte, um eine zugängliche Bezeichnung anzubieten. (CQ-4271716)
 
