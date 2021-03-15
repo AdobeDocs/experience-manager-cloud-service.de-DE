@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Seitenvorlagen {#page-templates}
 
-Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften). Dies hat mehrere Vorteile:
+Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlage wird als Basis für die neue Seite genutzt. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können (Design-Eigenschaften). Das hat mehrere Vorteile:
 
 * Seitenvorlagen sollen spezialisierten Autoren das [Erstellen und Bearbeiten von Vorlagen](/help/sites-cloud/authoring/features/templates.md) ermöglichen.
    * Diese spezialisierten Autoren werden als **Vorlagenautoren** bezeichnet.
@@ -61,7 +61,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zur Struktur finden Sie in diesem Dokument unter [Struktur](#structure).
+   Technische Details zur Struktur werden in diesem Dokument unter [Struktur](#structure) erläutert.
 
    **Richtlinien**
 
@@ -72,7 +72,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Technische Details zu Richtlinien finden Sie in diesem Dokument unter [Inhaltsrichtlinien](#content-policies).
+   Technische Details zu Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](#content-policies) erläutert.
 
    **Anfänglicher Inhalt**
 
@@ -99,7 +99,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
    Einzelheiten dazu, wie Vorlagenautoren Vorlagen aktivieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Technische Informationen zum Aktivieren einer Vorlage finden Sie in diesem Dokument unter [Aktivieren und Zulassen einer Vorlage für uns](#enabling-and-allowing-a-template-for-use)e
+   Technische Details zum Aktivieren von Vorlagen werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](#enabling-and-allowing-a-template-for-use) erläutert.
 
 1. Verwenden Sie sie, um Inhaltsseiten zu erstellen.
 
@@ -112,13 +112,13 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internalisierung werden die [lokale Anpassung-Funktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
 
 >[!NOTE]
 >
->Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>Vorlagen sind leistungsstarke Tools zur Optimierung des Seitenerstellungs-Workflows. Allerdings können zu viele Vorlagen die Autoren überwältigen und das Erstellen von Seiten unübersichtlich machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
 >
->Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1.000 Vorlagen zu verwenden.
 
 >[!NOTE]
 >
@@ -366,7 +366,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type).
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter.
 
 ## Vorlagendefinitionen {#template-definitions}
@@ -547,7 +547,7 @@ Beim Rendern einer Seite:
 
 Beim Erstellen einer neuen Seite in der Website-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
 
-Die folgenden Eigenschaften bestimmen, ob eine Vorlage `T` für eine neue Seite verwendet werden darf, die der Seite `P` untergeordnet platziert werden kann. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere regulärere Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
+Die folgenden Eigenschaften bestimmen, ob eine Vorlage `T` für eine neue Seite verwendet werden darf, die der Seite `P` untergeordnet platziert werden kann. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere reguläre Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
 
 * Die Eigenschaft `cq:allowedTemplates` des Unterknotens `jcr:content` von `P` oder ein Vorgänger von `P`.
 
