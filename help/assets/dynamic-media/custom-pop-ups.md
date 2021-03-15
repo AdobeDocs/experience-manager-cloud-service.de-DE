@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 39%
+ht-degree: 45%
 
 ---
 
@@ -49,7 +49,7 @@ Während die Funktionen der einzelnen Viewer unterschiedlich sind, erfolgt die E
     </tbody>
    </table>
 
-1. Rufen Sie den Einbettungscode für den Viewer ab, um den Viewer in Ihre Website zu integrieren.
+1. Rufen Sie den Einbettungs-Code für den Viewer ab, um den Viewer in Ihre Website zu integrieren.
 
    <table>
     <tbody>
@@ -62,7 +62,7 @@ Während die Funktionen der einzelnen Viewer unterschiedlich sind, erfolgt die E
     <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Integrieren eines interaktiven Bildes auf Ihrer Website</a>.<br /> </td>
     </tr>
     <tr>
-    <td>Interaktive Videos<br /> </td>
+    <td>Interaktives Video<br /> </td>
     <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrieren eines interaktiven Videos mit Ihrer Website</a>.<br /> </td>
     </tr>
     <tr>
@@ -100,8 +100,8 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
 
-   * Interaktiver Bild-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Interaktiver Video-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Interaktiver Bild-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
+   * Interaktiver Video-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
 
 1. Konfigurieren Sie jetzt den `quickViewActivate`-Handler.
 
@@ -124,7 +124,7 @@ Zuordnen von Variablen zur Verwendung auf Ihrer Webseite zum SKU-Wert und zu gen
    ```
 
    **Funktionsaufruf**
-Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funktioniert. Die Hostseite muss auf diese Funktion zugreifen können. Der Einbettungscode bietet ein Beispiel für einen Funktionsaufruf:
+Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funktioniert. Die Host-Seite muss auf diese Funktion zugreifen können. Der Einbettungs-Code bietet ein Beispiel für einen Funktionsaufruf:
 
    `loadQuickView(sku)`
 
@@ -132,13 +132,13 @@ Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funkti
 
    Hier finden Sie weitere Informationen zur Methode `quickViewActivate`:
 
-   * Interaktiver Bild-Viewer – [Ereignisrückrufe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Interaktiver Video-Viewer – [Ereignisrückrufe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Unterstützung interaktiver Daten im interaktiven Video-Viewer – [Unterstützung interaktiver Daten](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * Interaktiver Bild-Viewer – [Ereignisrückrufe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=de)
+   * Interaktiver Video-Viewer – [Ereignisrückrufe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=de)
+   * Unterstützung interaktiver Daten im interaktiven Video-Viewer – [Unterstützung interaktiver Daten](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=de)
 
 1. Gehen Sie folgendermaßen vor:
 
-   * Entfernen Sie im Einbettungscode die Auskommentierung des Abschnitts „setHandlers“.
+   * Entfernen Sie im Einbettungs-Code die Auskommentierung des Abschnitts „setHandlers“.
    * Ordnen Sie alle weiteren Variablen zu, die in der Quick-Ansicht enthalten sind.
 
       * Aktualisieren Sie den `loadQuickView(sku,*var1*,*var2*)`-Aufruf, wenn Sie weitere Variablen hinzufügen.
@@ -198,7 +198,7 @@ Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funkti
 1. Laden Sie eine HTML-Testseite auf Ihren Webserver hoch und öffnen Sie sie. Der Viewer zeigt das Popup `DIV` an, wenn ein Benutzer eine Quick-Ansicht aufruft.
 1. **Anzeigen des benutzerdefinierten Popup-Fensters im Vollbildmodus**
 
-   Einige Viewer, wie der interaktive Video-Viewer, unterstützen die Anzeige im Vollbildmodus. Wenn Sie das Popupfenster jedoch verwenden, wie in den vorherigen Schritten beschrieben, wird es im Vollbildmodus hinter dem Viewer angezeigt.
+   Einige Viewer, wie der interaktive Video-Viewer, unterstützen die Anzeige im Vollbildmodus. Wenn Sie das Popup-Fenster jedoch verwenden, wie in den vorherigen Schritten beschrieben, wird es im Vollbildmodus hinter dem Viewer angezeigt.
 
    Damit das Popup-Fenster im Standard- und Vollbildmodus angezeigt wird, hängen Sie das Popup-Fenster an den Viewer-Container an. Verwenden Sie in diesem Fall eine zweite Handler-Methode, `initComplete`.
 
@@ -210,8 +210,8 @@ Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funkti
 
    Hier finden Sie weitere Informationen zur Methode `init()`:
 
-   * Interaktiver Bild-Viewer – [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * Interaktiver Video-Viewer – [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * Interaktiver Bild-Viewer – [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=de)
+   * Interaktiver Video-Viewer – [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=de)
 
 1. Um das in den vorherigen Schritten beschriebene Popup-Fenster mit dem Viewer zu verbinden, verwenden Sie den folgenden Code:
 
@@ -255,7 +255,8 @@ Der Handler erfordert auch einen Funktionsaufruf, damit die Quick-Ansicht funkti
 
    `*viewerInstance.*init()`
 
-   **Beispiel** Dieses Beispiel verwendet den interaktiven Bild-Viewer.
+   **Beispiel**
+Dieses Beispiel verwendet den interaktiven Bild-Viewer.
 
    `s7interactiveimageviewer.init()`
 
