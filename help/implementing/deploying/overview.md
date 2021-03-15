@@ -2,10 +2,10 @@
 title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
+source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
 workflow-type: tm+mt
-source-wordcount: '3210'
-ht-degree: 100%
+source-wordcount: '3229'
+ht-degree: 99%
 
 ---
 
@@ -62,6 +62,8 @@ Sämtlicher Inhalt und Code, der im unveränderlichen Repository persistent ist,
 Da Anwendungsänderungen aufgrund des Blue-Green-Implementierungsmusters durch einen Schalter aktiviert werden, dürfen sie nicht von Änderungen im veränderlichen Repository abhängig sein, mit Ausnahme von Service-Benutzern, ihren ACLs, Knotentypen und Änderungen der Indexdefinition.
 
 Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
+
+Für diese Codepakete gelten einige zusätzliche Einschränkungen, z. B. werden [Installationshoke](http://jackrabbit.apache.org/filevault/installhooks.html) nicht unterstützt.
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
