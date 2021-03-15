@@ -1,36 +1,36 @@
 ---
-title: Wichtige Änderungen in  [!DNL Adobe Experience Manager Assets] als a [!DNL Cloud Service]
-description: Bemerkenswerte Änderungen zu [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5.
+title: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
+description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5].
 translation-type: tm+mt
 source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
 source-wordcount: '743'
-ht-degree: 24%
+ht-degree: 61%
 
 ---
 
 
-# Notable Änderungen zu [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#notable-changes}
+# Wesentliche Änderungen in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
-[!DNL Adobe Experience Manager] als  [!DNL Cloud Service] bringt viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer Experience Manager-Projekte. Es gibt viele Unterschiede zwischen [!DNL Experience Manager Assets] lokal oder als Adobe Managed Service gehostet im Vergleich zu [!DNL Experience Manager] als [!DNL Cloud Service]. In diesem Artikel werden die wichtigen Unterschiede bei den Funktionen von [!DNL Assets] hervorgehoben.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer Experience Manager-Projekte. Es gibt viele Unterschiede zwischen [!DNL Experience Manager Assets] On-Premise oder als Adobe Managed Service (gehostet) im Vergleich zu [!DNL Experience Manager] as a [!DNL Cloud Service]. In diesem Artikel werden wichtige Unterschiede bei den Funktionalitäten von [!DNL Assets] verdeutlicht.
 
-Die Hauptunterschiede zu [Experience Manager] 6.5 bestehen in den folgenden Bereichen:
+Die Hauptunterschiede gegenüber Adobe [Experience Manager] 6.5 bestehen in den folgenden Bereichen:
 
-* [Asset-Erfassung, -Upload und -Verarbeitung](#asset-ingestion).
+* [Asset-Aufnahme, -Upload und -Verarbeitung](#asset-ingestion).
 * [Asset-Microservices für Cloud-native Verarbeitung](#asset-microservices).
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui).
 
-## Asset-Erfassung und -Verarbeitung {#asset-ingestion}
+## Asset-Aufnahme und -Verarbeitung {#asset-ingestion}
 
-Das Hochladen von Assets wurde für die Effizienz optimiert, indem die Erfassung besser skaliert, Uploads beschleunigt, die Verarbeitung mithilfe von Mikrodiensten beschleunigt und Massenaufnahmen erfasst werden. Produktfunktionen (Webbenutzerschnittstellen, Desktop-Clients) werden aktualisiert. Dies kann sich auch auf einige bestehende Anpassungen auswirken.
+Der Asset-Upload wurde auf Effizienz optimiert, indem eine bessere Skalierung der Aufnahme, schnellere Uploads, eine schnellere Verarbeitung mithilfe von Microservices und eine Massenaufnahme ermöglicht wurden. Produktfunktionen (Web-Benutzeroberflächen, Desktop-Clients) wurden aktualisiert. Dies kann sich auch auf einige bestehende Anpassungen auswirken.
 
-* [!DNL Experience Manager] verwendet das Prinzip des direkten binären Zugriffs, um Assets hochzuladen und herunterzuladen, und verwendet Asset-Mikrodienste zur Verarbeitung von Assets. Siehe [Übersicht über Microservices](/help/assets/asset-microservices-overview.md).
+* [!DNL Experience Manager] verwendet das Prinzip des direkten Binärzugriffs zum Hoch- und Herunterladen von Assets und verwendet Asset-Microservices zur Verarbeitung von Assets. Weitere Informationen finden Sie unter [Überblick über Microservices](/help/assets/asset-microservices-overview.md).
    * Asset-Upload [mit direktem Binärzugriff](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-   * Technische Details finden Sie unter [Direct Binary Upload-Protokoll und APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
+   * Weitere technische Daten finden Sie im Abschnitt [Protokoll und APIs für den direkten Binär-Upload](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Einen Vergleich der verfügbaren API-Methoden für grundlegende CRUD-Vorgänge finden Sie unter [APIs und Asset-Vorgänge](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* Der Standardarbeitsablauf **[!UICONTROL DAM Asset Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Mikrodienste einen skalierbaren, leicht verfügbaren Dienst, der den Großteil der standardmäßigen Asset-Verarbeitung abdeckt (Darstellungen, Metadaten-Extraktion und Text-Extraktion für die Indexierung).
-   * Siehe [Asset-Mikrodienste konfigurieren und verwenden](/help/assets/asset-microservices-configure-and-use.md)
-   * Um benutzerdefinierte Workflow-Schritte in der Verarbeitung zu haben, können [Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwendet werden.
+* Der standardmäßige Workflow **[!UICONTROL DAM-Asset-Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Microservices einen skalierbaren, jederzeit nutzbaren Service, der den Großteil der standardmäßigen Asset-Verarbeitung (Ausgabedarstellungen, Metadatenextraktion, Textextraktion für die Indizierung) abdeckt.
+   * Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md).
+   * Um bei der Verarbeitung benutzerdefinierte Workflow-Schritte durchzuführen, können Sie [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwenden.
 * Die Metadaten-Schreibablage wird nicht unterstützt. Siehe [Metadaten-Schreibback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
 * Für Assets, die mit Package Manager hochgeladen werden, ist eine manuelle Neuverarbeitung mithilfe der Aktion **[!UICONTROL Asset]** in der [!DNL Assets]-Benutzeroberfläche erforderlich.
 * [!DNL Assets] erkennt nicht automatisch den MIME-Typ der hochgeladenen Assets. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
@@ -44,7 +44,7 @@ Mit Asset-Mikrodiensten generierte Standarddarstellungen werden auf abwärtskomp
 
 ## Entwickeln und Testen von Asset-Microservices {#asset-microservices}
 
-Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick) zu vermeiden, die Konfiguration des Systems zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren. Sie können die komplexen Konfigurationen von ImageMagick nicht für die Konfiguration von [!UICONTROL Verarbeitungsprofilen] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und verwenden Sie Verarbeitungsvideos für die [einfache Transkodierung von MP4-Profile](/help/assets/manage-video-assets.md#transcode-video).
+Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick) zu vermeiden, die Konfiguration des Systems zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren. Sie können die komplexen Konfigurationen von ImageMagick nicht für die Konfiguration von [!UICONTROL Verarbeitungsprofilen] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und Verarbeitungsprofile für die [einfache Transkodierung von MP4-Videos](/help/assets/manage-video-assets.md#transcode-video).
 
 Asset Microservices ist ein Cloud-nativer Dienst, der in Programmen und Umgebung, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und an [!DNL Experience Manager] verkabelt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können die Entwickler den vorhandenen Inhalt oder die vorhandenen Assets mit in einer Cloud-Umgebung generierten Darstellungen verwenden, um den Code zu testen und zu validieren, indem sie Assets anzeigen, herunterladen.
 
