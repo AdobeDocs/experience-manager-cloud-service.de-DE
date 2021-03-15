@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise für die Version 2020.11.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 translation-type: tm+mt
 source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
    ![Assets sortieren](/help/assets/assets/asset-sort-options.png)
 
-* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md).
+* Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in [!DNL Assets]](/help/assets/accessibility.md).
 
    * Beim Navigieren in der Zeitleiste mit einer Tastatur können Sie mit der Esc-Taste die Option „Alle anzeigen“ ausblenden, ohne den Fokus zu verlieren.
    * Beim Navigieren mit der Tabulator-Taste der Tastatur behält das Tag-Feld nach dem Entfernen des letzten Tags aus den hinzugefügten Tags den Fokus.
@@ -53,7 +53,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
    * Bei der Auswahl einer Rasterzelle aus dem auf der Seite vorhandenen Raster wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm erscheint.
    * Visuelle Benutzer können zwischen normalem Text und einem Link unterscheiden, da visuelle Hinweise (Unterstrich und Pfeilsymbol) für Links zu allen Lösungen auf der [!DNL Experience Manager]-Startseite angezeigt werden.
 
-* **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen.
+* **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bild- oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen.
 
    Weitere Information finden Sie unter [Über Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -80,13 +80,13 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
-* Die GraphQL-Client-Konfiguration wurde nicht korrekt gelesen, wenn die Konfiguration nicht direkt in der Sling CA-Konfiguration, sondern in einer der übergeordneten Konfigurationen angegeben wurde. Dies wurde behoben.
+* Die GraphQL-Client-Konfiguration wurde nicht korrekt gelesen, wenn die Konfiguration nicht direkt in der Sling CA-Konfiguration, sondern in einer der übergeordneten Konfigurationen angegeben wurde. Dieses Problem wurde behoben.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2020.11.0 ist der Donnerstag, 12. November 2020.
+Die Version 2020.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. November 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implemen
 
 ### SDK Build Analyzer {#analyzers}
 
-Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es gibt Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu entdecken, lange bevor sie mit Cloud Manager in Cloud-Umgebungen bereitgestellt werden. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing) und [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme in einem Maven-Projekt, einschließlich fehlender Abhängigkeiten. Es gibt Entwicklern die Möglichkeit, Probleme während der lokalen Entwicklung zu entdecken, lange bevor sie mit Cloud Manager in Cloud-Umgebungen bereitgestellt werden. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing) und [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de#building-for-the-sdk).
 
 ### Andere {#others-foundation}
 
@@ -130,13 +130,13 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Das Content Transfer Tool übersprang Inhaltsdateien, wenn der Migrationssatz Pfade enthielt, die teilweise ähnliche Dateinamen hatten. Dies wurde behoben.
+* Das Content Transfer Tool übersprang Inhaltsdateien, wenn der Migrationssatz Pfade enthielt, die teilweise ähnliche Dateinamen hatten. Dieses Problem wurde behoben.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Das Veröffentlichungsdatum für Best Practices Analyzer ist der 13. November 2020.
+Best Practices Analyzer wurde am 13. November 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
