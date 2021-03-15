@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 93%
       + [Komponentenkonsole](authoring/features/components-console.md)
       + [Responsives Layout](authoring/features/responsive-layout.md)
       + [Verwenden von Tags](authoring/features/tags.md)
-      + [Aktivieren der progressiven Web-App-Funktionen](authoring/features/enable-pwa.md)
+      + [Aktivieren der Progressive Web App-Funktionen](authoring/features/enable-pwa.md)
    + Projekte {#projects}
       + [Arbeiten mit Projekten](authoring/projects/overview.md)
       + [Verwalten von Projekten](authoring/projects/managing.md)
