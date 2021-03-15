@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
 workflow-type: tm+mt
 source-wordcount: '1951'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten
 
 Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Aufnahme von Assets mithilfe von [!DNL Experience Manager]-APIs und SDKs beschreiben.
 
-Sie können zwar jede beliebige Binärdatei in [!DNL Experience Manager] hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Dienste, wie z. B. die Extraktion von Metadaten oder die Vorschau-/Ausgabedarstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
+Sie können zwar jede beliebige Binärdatei in [!DNL Experience Manager] hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Services, wie z. B. die Extraktion von Metadaten oder die Vorschau-/Ausgabedarstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
 Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabedarstellungen oder Bildbearbeitungs-Service hinzuzufügen. Weitere Informationen finden Sie unter [Verarbeiten von Assets beim Hochladen](#process-when-uploaded).
 
@@ -131,7 +131,7 @@ Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, kö
 
 ## Massen-Upload von Assets {#bulk-upload}
 
-Die Massenaufnahme von Assets kann sehr viele Assets effizient handhaben. Eine groß angelegte Erfassung ist jedoch nicht nur eine umfangreiche Datei-Deponie oder eine gelegentliche Migration. Damit eine umfangreiche Erfassung ein aussagekräftiges Projekt ist, das Ihrem Geschäftszweck entspricht und effizient ist, planen Sie die Migration und kuratieren Sie die Organisation der Assets. Alle Einträge sind unterschiedlich, sodass statt zu verallgemeinern, Faktor in der nuancierten Repository Zusammensetzung und geschäftlichen Anforderungen. Im Folgenden finden Sie einige übergreifende Vorschläge zur Planung und Ausführung einer Massenverarbeitung:
+Das Tool zur Asset-Massenaufnahme kann eine sehr große Anzahl von Assets effizient verarbeiten. Eine Aufnahme in großem Umfang ist jedoch nicht nur ein großer Datei-Dump oder eine gelegentliche Migration. Damit eine umfangreiche Aufnahme ein aussagekräftiges Projekt ist, das Ihrem Geschäftszweck dient und effizient ist, müssen Sie die Migration planen und die Organisation der Assets kuratieren. Alle Aufnahmen sind unterschiedlich. Berücksichtigen Sie daher anstelle einer Verallgemeinerung die differenzierte Zusammensetzung des Repositorys und die Geschäftsanforderungen. Im Folgenden finden Sie einige übergreifende Vorschläge zum Planen und Ausführen einer Massenaufnahme:
 
 * Assets kuratieren: Entfernen Sie Assets, die im DAM nicht benötigt werden. Sie sollten nicht verwendete, veraltete oder doppelte Assets entfernen. Dadurch werden die übertragenen Daten und die aufgenommenen Assets reduziert, was zu schnelleren Aufnahmen führt.
 * Assets organisieren: Sie sollten den Inhalt in einer logischen Reihenfolge organisieren, z. B. nach Dateigröße, Dateiformat, Anwendungsfall oder Priorität. Im Allgemeinen erfordern große, komplexe Dateien mehr Verarbeitung. Sie können auch in Betracht ziehen, große Dateien mithilfe der Dateigrößenfilteroption (siehe unten) separat aufzunehmen.
@@ -145,7 +145,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 ### Tool zur Asset-Massenaufnahme {#asset-bulk-ingestor}
 
-Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich einen Video-Durchgang der Konfiguration und Erfassung an.
+Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -188,21 +188,21 @@ Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Man
 
 Um zusätzliche Verarbeitungsschritte für die hochgeladenen Assets durchzuführen, können Sie Verarbeitungsprofile auf die Upload-Ordner anwenden. Die Profile sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners in [!DNL Assets] verfügbar. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
 
-![Eigenschaften eines Asset-Ordners mit Optionen zum Hinzufügen eines verarbeitenden Profils](assets/assets-folder-properties.png)
+![Eigenschaften eines Asset-Ordners mit Optionen zum Hinzufügen eines Verarbeitungsprofils](assets/assets-folder-properties.png)
 
 Die folgenden Registerkarten sind verfügbar:
 
-* [Mit Metadaten-](metadata-profiles.md) Profilen können Sie Standardmetadateneigenschaften auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
+* Mit [Metadatenprofilen](metadata-profiles.md) können Sie Standardeigenschaften für Metadaten auf Assets anwenden, die in diesen Ordner hochgeladen wurden.
 * Mit [Verarbeitungsprofilen](asset-microservices-configure-and-use.md) können Sie mehr Ausgabedarstellungen generieren, als standardmäßig möglich sind.
 
 Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerdem die folgenden Registerkarten zur Verfügung:
 
-* [[!DNL Dynamic Media] Mit ](dynamic-media/image-profiles.md) Bildprofilen können Sie bestimmte Zuschnitten (**[!UICONTROL Smart-]** Beschneidung und Pixelbeschneiden) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
-* [[!DNL Dynamic Media] Mit Video-](dynamic-media/video-profiles.md) Profilen können Sie bestimmte Videokodierungs-Profil (Auflösung, Format, Parameter) anwenden.
+* Mit [[!DNL Dynamic Media] Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* Mit [[!DNL Dynamic Media] Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]
 >
->[!DNL Dynamic Media] Zuschneiden und andere Vorgänge auf Assets sind nicht zerstörerisch, d. h. die Vorgänge ändern das hochgeladene Original nicht. Stattdessen stellt es Parameter bereit, die beim Bereitstellen der Assets beschnitten oder transformiert werden können.
+>[!DNL Dynamic Media]-Zuschnitt und andere Vorgänge für Assets sind zerstörungsfrei. Die Vorgänge ändern das hochgeladene Original nicht. Stattdessen werden Parameter zum Zuschneiden oder Transformieren bei der Übergabe der Assets bereitgestellt.
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
 
