@@ -3,10 +3,10 @@ title: Konfigurieren von AEM Assets as a  [!DNL Cloud Service]  mit Brand Portal
 description: Konfigurieren von AEM Assets mit Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 71%
+source-wordcount: '2411'
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ Durch das Konfigurieren von Adobe Experience Manager Assets mit Brand Portal kö
 
 ## Aktivieren des Markenportals mit Cloud Manager {#activate-brand-portal}
 
-Der Cloud Manager-Benutzer aktiviert das Markenportal für ein AEM Assets als [!DNL Cloud Service]-Instanz. Der Arbeitsablauf für die Aktivierung erstellt die erforderlichen Konfigurationen (Autorisierungstoken, IMS-Konfiguration und den Markenportal-Cloud-Dienst) am Backend und gibt den Status des Markenportal-Mandanten in Cloud Manager wieder.
+Der Cloud Manager-Benutzer aktiviert das Markenportal für ein AEM Assets als [!DNL Cloud Service]-Instanz. Der Arbeitsablauf für die Aktivierung erstellt die erforderlichen Konfigurationen (Autorisierungstoken, IMS-Konfiguration und den Markenportal-Cloud-Dienst) am Backend und gibt den Status des Markenportal-Mandanten in Cloud Manager wieder. Durch die Aktivierung des Markenportals können die AEM Assets-Benutzer Assets im Markenportal veröffentlichen und an die Benutzer des Markenportals verteilen.
 
 **Voraussetzungen**
 
@@ -28,7 +28,7 @@ Sie benötigen Folgendes, um das Markenportal auf Ihrem AEM Assets als [!DNL Clo
 
 >[!NOTE]
 >
->Ein AEM Assets als [!DNL Cloud Service]-Instanz ist berechtigt, nur einen Markenportal-Mandanten zu verbinden. Sie können mehrere Umgebung (Entwicklung, Produktion und Phase) für Ihr AEM Assets als [!DNL Cloud Service]-Instanz erstellen, wobei das Markenportal nur auf einer Umgebung aktiviert wird.
+>Ein AEM Assets als [!DNL Cloud Service]-Instanz ist berechtigt, nur eine Verbindung mit einem Markenportal-Mandanten herzustellen. Sie können mehrere Umgebung (Entwicklung, Produktion und Phase) für Ihr AEM Assets als [!DNL Cloud Service]-Instanz haben, wobei das Markenportal auf einer Umgebung aktiviert wird.
 
 **Schritte zur Aktivierung des Markenportals**
 
@@ -46,9 +46,18 @@ Sie können das Markenportal aktivieren, während Sie die Umgebung für Ihr AEM 
 
    ![Brand Portal aktivieren](assets/create-environment4.png)
 
-1. Es kann einige Minuten dauern, bis der Markenportal-Mieter aktiviert ist, da der Arbeitsablauf für die Aktivierung die erforderlichen Konfigurationen am Backend erstellt. Sobald der Pächter des Markenportals aktiviert ist, wird der Status aktiviert.
+1. Die Aktivierung des Markenportal-Mandanten dauert wenige Minuten, da der Arbeitsablauf für die Aktivierung die erforderlichen Konfigurationen am Backend erstellt. Sobald der Pächter des Markenportals aktiviert ist, wird der Status aktiviert.
 
    ![Status der Ansicht](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>Markenportal muss auf demselben IMS-Org aktiviert werden wie AEM Assets als [!DNL Cloud Service]-Instanz.
+>
+>Wenn Sie eine bestehende Markenportal-Cloud-Konfiguration ([manuell mithilfe der Adobe Developer Console](#manual-configuration) konfiguriert haben) für ein IMS-Org (org1-existing) und Ihr AEM Assets als [!DNL Cloud Service]-Instanz für ein anderes IMS-Org (org2-new) konfiguriert ist, wird das Markenportal aus Cloud Manager bei Aktivierung des Markenportals auf `org2-new` zurückgesetzt. Obwohl die manuell konfigurierte Cloud-Konfiguration auf `org1-existing` in der AEM Assets-Autoreninstanz sichtbar ist, wird sie nach der Aktivierung des Markenportals aus dem Cloud Manager nicht mehr verwendet.
+>
+>Wenn die bestehende Markenportal-Cloud-Konfiguration und AEM Assets als [!DNL Cloud Service]-Instanz dasselbe IMS-Org (org1) verwenden, müssen Sie nur das Markenportal aus Cloud Manager aktivieren.
 
 **Siehe auch**:
 * [hinzufügen und Rollen in AEM Assets als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Nach der Aktivierung Ihres Markenportal-Mandanten in Cloud Manager können Sie s
 
 Die Standard-URL Ihres Markenportal-Mandanten lautet: `https://<tenant-id>.brand-portal.adobe.com/`.
 
+In diesem Fall ist die Tenant-ID der IMS-Code.
+
 Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die URL des Markenportals aussieht:
 
 1. Melden Sie sich bei [Admin Console](http://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
 1. Wählen Sie in der linken Leiste **[!UICONTROL Adobe Experience Manager Markenportal - Markenportal]** aus.
 1. Klicken Sie auf **[!UICONTROL Zu Markenportal]**, um das Markenportal direkt im Browser zu öffnen.
 
-   Oder kopieren Sie die URL des Markenportals-Mieters und fügen Sie sie in Ihren Browser ein, um die Oberfläche des Markenportals zu öffnen.
+   Oder kopieren Sie die URL des Markenportals-Mieters aus dem Link **[!UICONTROL Gehe zu Markenportal]** und fügen Sie sie in Ihren Browser ein, um die Oberfläche des Markenportals zu öffnen.
 
    ![Markenportal aufrufen](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://
 
 Sie können die Verteilungsagenten-Protokolle für den Asset-Veröffentlichungs-Workflow überwachen.
 
-Beispielsweise haben wir ein Asset aus AEM Assets in Brand Portal veröffentlicht, um die Konfiguration zu validieren.
+Lassen Sie uns nun ein Asset von AEM Assets im Brand Portal veröffentlichen und die Protokolle sehen.
 
-1. Führen Sie die Schritte (1–4) aus, wie im Abschnitt [Konfiguration testen](#test-configuration) gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
+1. Führen Sie die Schritte (von 1 bis 4) aus, wie im Abschnitt **Testverbindung** gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
 1. Klicken Sie auf **[!UICONTROL Protokolle]**, um die Verarbeitungs- und Fehlerprotokolle anzuzeigen.
 
    ![](assets/test-bpconfig5.png)
 
 Der Verteilungsagent hat die folgenden Protokolle generiert:
 
-* INFO: Dies ist ein vom System erstelltes Protokoll, das bei einer erfolgreichen Konfiguration des Verteilungsagenten ausgelöst wird.
+* INFO: Es handelt sich um ein vom System generiertes Protokoll, das bei einer erfolgreichen Konfiguration des Distributionsagenten Trigger wird.
 * DSTRQ1 (Anfrage 1): Wird bei der Testverbindung ausgelöst.
 
 Beim Veröffentlichen des Assets werden die folgenden Anfrage- und Antwortprotokolle generiert:
@@ -164,7 +175,7 @@ Neben dem Automatisierungs-Workflow zur Aktivierung des Markenportals unter AEM 
 
 >[!NOTE]
 >
->Wenden Sie sich an den Kundendienst, wenn Sie während der Aktivierung Ihres Markenportal-Mandanten Probleme haben.
+>Wenden Sie sich an den Support für Adoben, wenn beim Aktivieren des Markenportal-Mandanten Probleme auftreten.
 
 ## Manuelle Konfiguration mit Adobe Developer Console {#manual-configuration}
 
@@ -225,7 +236,7 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Profil in der Adobe
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die CRT-Datei auf Ihrem Computer.
 
-   Der öffentliche Schlüssel wird später zum Konfigurieren der API für Ihren Brand Portal-Mandanten und zum Generieren von Anmeldedaten für Service-Konten in der Adobe Developer Console verwendet.
+   Der öffentliche Schlüssel wird später verwendet, um die API für Ihren Markenportal-Mandanten zu konfigurieren und Anmeldeinformationen für das Dienstkonto in der Adobe Developer Console zu generieren.
 
    ![Zertifikat herunterladen](assets/ims-config3.png)
 
