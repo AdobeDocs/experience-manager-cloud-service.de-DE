@@ -1,5 +1,5 @@
 ---
-title: Versionshinweise für die Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
@@ -37,7 +37,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
    * Asynchroner Download für große Downloads, damit Benutzer nicht warten müssen.
    * Eine neue modulare API für die Erweiterbarkeit für Entwickler.
 
-* Die Leistung der Metadaten-Extraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
+* Die Leistung der Metadatenextraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
 
 * Verwenden eines Verarbeitungsprofils, um benutzerdefinierte Metadaten mithilfe des Compute Service zu generieren. Weitere Informationen finden Sie unter [Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils](/help/assets/manage-metadata.md#metadata-compute-service).
 
@@ -63,7 +63,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
-### Neuerungen {#what-is-new-commerce}
+### Neue Funktionen {#what-is-new-commerce}
 
 * Die Funktion Product Console ist jetzt verfügbar. Damit können Marketing-Experten/Autoren in AEM Kategorien und Produkte, die im Handels-Backend gespeichert sind, anzeigen und durchsuchen. Die Product Console unterstützt auch Eigenschaften für Kategorien und Produkte.
 
@@ -73,9 +73,9 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am Donnerstag, 6. August 2020 veröffentlicht.
+Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am 6. August 2020 veröffentlicht.
 
-### Neuerungen {#what-is-new-cloud-manager}
+### Neue Funktionen {#what-is-new-cloud-manager}
 
 * Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
@@ -119,11 +119,11 @@ Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am Donnerstag, 6. Aug
 
 * Um den Schritt „Content Audit“ zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
 
-## Content Transfer-Tool {#content-transfer-tool}
+## Content Transfer Tool {#content-transfer-tool}
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für Content Transfer Tool Version 1.0.4.
 
-### Neuerungen {#what-is-new-ctt}
+### Neue Funktionen {#what-is-new-ctt}
 
 * Das Content Transfer Tool unterstützt jetzt den freigegebenen S3-Datenspeicher.
 
@@ -137,7 +137,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für die Code-Refaktorierungs-Tools.
 
-### Neuerungen {#what-is-new-refactoring}
+### Neue Funktionen {#what-is-new-refactoring}
 
 * Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere Informationen finden Sie unter [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
