@@ -1,12 +1,12 @@
 ---
-title: Verwalten Sie  [!DNL Adobe Stock] -Assets in  [!DNL Assets].
-description: Suchen, lizenzieren, verwalten und rufen Sie  [!DNL Adobe Stock] -Assets in  [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
+title: Verwalten Sie [!DNL Adobe Stock] -Assets in [!DNL Assets].
+description: Suchen, lizenzieren, verwalten und rufen Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 >[!NOTE]
 >
->Wenn mehrere [!DNL Adobe Stock]-Konfigurationen vorhanden sind, wählen Sie im Feld „Benutzereinstellungen“ die gewünschte Konfiguration aus. Klicken Sie zum Aufrufen des Bedienfelds von der Startseite Experience Manager auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Lagerkonfiguration]**.
+>Wenn mehrere [!DNL Adobe Stock]-Konfigurationen vorhanden sind, wählen Sie im Feld „Benutzereinstellungen“ die gewünschte Konfiguration aus. Um von der Experience Manager-Startseite aus auf das Bedienfeld zuzugreifen, klicken Sie auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]** > **[!UICONTROL Stock-Konfiguration]**.
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock]-Assets in [!DNL Experience Manager] {#usemanage}
 
 Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit [!DNL Adobe Stock]-Assets in [!DNL Experience Manager Assets] ermöglichen. Benutzer können aus der [!DNL Experience Manager]-Benutzeroberfläche heraus nach [!DNL Adobe Stock]-Assets suchen und die erforderlichen Assets lizenzieren.
 
-Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können Assets in [!DNL Experience Manager] suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] teilen, Assets per [!DNL Experience Manager] Desktop App aufrufen und verwenden und vieles mehr.
+Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können Assets in [!DNL Experience Manager] suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, Assets in [!DNL Brand Portal] teilen, Assets per [!DNL Experience Manager]-Desktop-Programm aufrufen und verwenden und vieles mehr.
 
 <!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
