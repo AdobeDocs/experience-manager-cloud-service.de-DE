@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Inhaltsfragmente – Konfigurations-Browser {#content-fragments-configuration-browser}
 
-## Aktivieren der Inhaltsfragmentfunktion für Ihre Instanz {#enable-content-fragment-functionality-instance}
+## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
 Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-Browser** verwenden, um Folgendes zu aktivieren:
 
-* **Inhaltsfragmentmodelle – obligatorisch**
+* **Inhaltsfragmentmodelle** – obligatorisch
 * **Persistente GraphQL-Abfragen** – optional
 
 >[!CAUTION]
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
 * Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurations-Browser.
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
-### Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
+### Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
 Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragment-model), **müssen** Sie diese zunächst über den **Konfigurations-Browser** aktivieren:
 
