@@ -1,12 +1,12 @@
 ---
 title: Verwalten von Video-Assets
-description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in  [!DNL Adobe Experience Manager].
+description: Hochladen, Anzeigen einer Vorschau, Kommentieren und Veröffentlichen von Video-Assets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,17 +28,17 @@ Lernen Sie, wie Sie die Video-Assets in [!DNL Adobe Experience Manager Assets] v
 
 ## Veröffentlichen von Video-Assets {#publish-video-assets}
 
-Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seite einbeziehen oder die Assets direkt einbetten. Weitere Informationen finden Sie unter [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Web-Seite einbeziehen oder die Assets direkt einbetten. Details finden Sie unter [Veröffentlichen von [!DNL Dynamic Media] -Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transkodieren mit Verarbeitungsprofil {#transcode-video}
 
 [!DNL Experience Manager] as a [!DNL Cloud Service] erlaubt Ihnen, mithilfe von Verarbeitungsprofilen eine grundlegende Transkodierung von MP4-Videodateien durchführen. Die Funktion ermöglicht Ihnen nicht nur das Hochladen, sondern auch das Anzeigen einer Vorschau und Skalieren einer MP4-Videodatei.
 
-![Erstellen Sie ein Profil zur Verarbeitung für die Videotranskodierung in  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
+![Erstellen von Verarbeitungsprofilen zum Transkodieren von Videos in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Abbildung: Ein Verarbeitungsprofil zur Videotranskodierung in [!DNL Experience Manager].*
 
-Wenn Sie nur die Breite oder Höhe angeben und das andere Feld leer lassen, wird das Seitenverhältnis bei den Ausgabedarstellungen beibehalten. Der H.264-Videocodec ist für die Transkodierung verfügbar.
+Wenn Sie nur die Breite oder Höhe angeben und das andere Feld leer lassen, wird das Seitenverhältnis bei den Ausgabedarstellungen beibehalten. Der H.264-Video-Codec ist für die Transkodierung verfügbar.
 
 Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner ein Profil hinzu. Siehe [Verwenden von Verarbeitungsprofilen zur Verarbeitung von Assets](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,17 +52,17 @@ Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner 
 
 ## Best Practices und Einschränkungen {#tips-limitations}
 
-* Ohne die Lizenz [!DNL Dynamic Media] können Sie nur MP4-Dateien mit verarbeitenden Profilen verarbeiten.
-* Beim Transkodieren von MP4-Profilen mit Verarbeitungsregeln gelten die folgenden Richtlinien und Einschränkungen:
+* Ohne [!DNL Dynamic Media]-Lizenz können Sie MP4-Dateien nur mit Verarbeitungsprofilen verarbeiten.
+* Beim Transkodieren von MP4-Dateien mit Verarbeitungsprofilen gelten die folgenden Richtlinien und Einschränkungen:
 
    * Apple ProRes-Dateien können nur bis zu einer maximalen Auflösung von 1080p transkodiert werden.
-   * Wenn die Quelldatei eine Bitrate > 200 Mbit/s aufweist, können Sie nur bis zu einer maximalen Auflösung von 1080p transkodieren.
-   * Wenn dann die Quelldatei >=60 fps ist, ist die maximale Größe der Quelldatei, die Sie verwenden können,
+   * Wenn die Quelldatei eine Bitrate von mehr als 200 Mbit/s aufweist, können Sie nur bis zu einer maximalen Auflösung von 1080p transkodieren.
+   * Wenn die Quelldatei >=60 FPS ist, gelten folgende Maximalgrößen für die Quelldatei:
 
-      * 400 MB für die Transkodierung von 4 k.
-      * 800 MB für 1080p Transkodierung.
-      * 8 GB für Transkodierung mit 720p.
-   * Die maximale Dateigröße für die Transkodierung in eine Auflösung von 4.55 GB beträgt eine Auflösung von 4.000 MB, eine Bitrate von 12 Mbit/s und 23 fps.
+      * 400 MB für 4k-Transkodierung
+      * 800 MB für 1080p-Transkodierung
+      * 8 GB für 720p-Transkodierung
+   * Die maximale Dateigröße für die Transkodierung mit 4k-Auflösung liegt bei 2,55 GB für eine MP4-Datei mit 4k-Auflösung, einer Bitrate von 12 Mbit/s und 23 FPS.
 
 
 >[!MORELIKETHIS]
