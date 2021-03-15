@@ -22,7 +22,7 @@ Die Version 2020.3.0 von Experience Manager as a Cloud Service wurde am 5. Mär
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für Cloud Manager in Version 2020.3.0 von AEM as a Cloud Service.
 
-### Neuerungen {#what-is-new}
+### Neue Funktionen {#what-is-new}
 
 * Das Protokoll für den Build-Schritt ist jetzt verfügbar, während der Build-Schritt ausgeführt wird.
 * Einige der Meldungen auf der Seite mit Details zur Pipeline-Ausführung wurden für bessere Übersichtlichkeit geändert.
