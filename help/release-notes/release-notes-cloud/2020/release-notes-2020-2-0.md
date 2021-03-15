@@ -16,7 +16,7 @@ Auf dieser Seite finden Sie die allgemeinen Versionshinweise für Experience Man
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2020.2.0 von Experience Manager as a Cloud Service wurde am Donnerstag, 13. Februar 2020 veröffentlicht.
+Die Version 2020.2.0 von Experience Manager as a Cloud Service wurde am 13. Februar 2020 veröffentlicht.
 
 ## Cloud Manager {#cloud-manager}
 
