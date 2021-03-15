@@ -1,20 +1,20 @@
 ---
-title: Verwenden des Content Transfer Tool
-description: Verwenden des Content Transfer Tool
+title: Verwenden des Content Transfer Tools
+description: Verwenden des Content Transfer Tools
 translation-type: tm+mt
 source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
 source-wordcount: '2307'
-ht-degree: 72%
+ht-degree: 79%
 
 ---
 
 
-# Verwenden des Content Transfer Tool {#using-content-transfer-tool}
+# Verwenden des Content Transfer Tools {#using-content-transfer-tool}
 
-## Wichtige Überlegungen zur Verwendung des Content Transfer Tool {#pre-reqs}
+## Wichtige Überlegungen zur Verwendung des Content Transfer Tools {#pre-reqs}
 
-Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tool:
+Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
 * Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
 
@@ -26,15 +26,15 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, müssen Sie dafür sorgen, dass Ihre Umgebung aktuell ist bzw. auf die neueste Version aktualisiert wird. Wenn Sie eine *Produktionsumgebung* nutzen, wird diese automatisch aktualisiert.
 
-* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und der lokalen AEM **administrators** in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tool nicht abrufen.
+* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und der lokalen AEM **administrators** in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tools nicht abrufen.
 
-* Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden.** Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden. Der Benutzer muss der Gruppe **administratoren** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
+* Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden.** Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden. Der Benutzer muss der Gruppe **administratoren** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
 
-* Das Zugriffstoken kann regelmäßig ablaufen, entweder nach einem bestimmten Zeitraum oder nach der Aktualisierung der Umgebung des Cloud Service. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffstoken abrufen. Das Statussymbol, das einem vorhandenen Migrationssatz zugeordnet ist, ändert sich in eine rote Cloud und zeigt eine Meldung an, wenn Sie den Mauszeiger darüber halten.
+* Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffs-Token abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffs-Token abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
 
 * Das Inhaltsübermittlungstool führt keine Analyse von Inhalten durch, bevor Inhalte von der Quellinstanz in die Zielgruppe übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, während Inhalte in eine Publish-Umgebung eingefügt werden. Der Inhalt, der im Migrationsset angegeben ist, wird in die ausgewählte Instanz der Zielgruppe aufgenommen. Benutzer haben die Möglichkeit, einen Migrationssatz in einer Autorinstanz oder Veröffentlichungsinstanz oder in beiden Instanzen zu erfassen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz eine CTT-Instanz als Quell-Autoreninstanz zu installieren, um Inhalte in die Zielgruppe-Autoreninstanz zu verschieben und auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Zielgruppe-Veröffentlichungsinstanz zu verschieben.
 
-* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Inhalt zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktion*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktions*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration).
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
@@ -54,7 +54,7 @@ Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Porta
 >[!NOTE]
 >Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
 
-## Ausführen des Content Transfer Tool {#running-tool}
+## Ausführen des Content Transfer Tools {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
@@ -104,7 +104,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
       1. **Version einschließen**: Aktivieren Sie die Option.
 
       1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option, um die Zuordnung aus IMS-Benutzern und -Gruppen einzuschließen.
-Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
+Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de).
 
       1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
 
@@ -179,7 +179,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
 
    >[!IMPORTANT]
-   >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich Berechtigungen für die Zielgruppe Cloud Service-Instanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden.
+   >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
@@ -246,7 +246,7 @@ Führen Sie dazu folgende Schritte durch:
 
 ### Fehlende Blob-IDs {#missing-blobs}
 
-Wenn, wie unten erwähnt, fehlende Blob-IDs gemeldet werden, müssen Sie eine Konsistenzprüfung im bestehenden Repository durchführen und die fehlenden Blobs wiederherstellen.
+Wenn, wie unten erwähnt, fehlende Blob-IDs gemeldet werden, müssen Sie eine Konsistenzprüfung im bestehenden Repository durchführen und die fehlenden BLOBs wiederherstellen.
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
 
 Der folgende Befehl wird ausgeführt
@@ -276,6 +276,6 @@ Die Dateien, die im oben angegebenen Verzeichnis *OUT_DIR* erstellt wurden, um K
 
 Als Benutzer sehen Sie möglicherweise die folgenden Verhaltensänderungen in der Benutzeroberfläche für das Content Transfer Tool:
 
-* Die Symbole in der Benutzeroberfläche des Content Transfer Tool unterscheiden sich möglicherweise von den in diesem Handbuch gezeigten Screenshots oder werden je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt.
+* Die Symbole in der Benutzeroberfläche des Content Transfer Tools unterscheiden sich möglicherweise von den in diesem Handbuch gezeigten Screenshots oder werden je nach Version der AEM-Quellinstanz überhaupt nicht angezeigt.
 
 
