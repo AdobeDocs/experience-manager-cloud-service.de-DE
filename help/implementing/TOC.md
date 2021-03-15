@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 73%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 73%
    + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-      + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
@@ -35,25 +35,25 @@ ht-degree: 73%
       + [Anzeigen und Aktualisieren und Ersetzen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Überprüfen des Status eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Löschen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + Verwalten von benutzerdefinierten Domänennamen {#custom-domain-names}
+   + Verwalten von benutzerdefinierten Domain-Namen {#custom-domain-names}
       + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Abrufen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [Status des benutzerdefinierten Domänennamens überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [Aktualisieren des SSL-Zertifikats eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [Aktualisieren des SSL-Zertifikats des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [Anwenden einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Aufheben der Anwendung einer IP-Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Überprüfen des IP-Zulassungslistenstatus](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Verwalten von Code {#managing-code}
    + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
@@ -68,9 +68,9 @@ ht-degree: 73%
    + [Protokollierung](developing/introduction/logging.md)
    + [Konfigurationen und der Konfigurations-Browser](developing/introduction/configurations.md)
    + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [Erstellen von Zugriffstoken für serverseitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + [Kopflos und Kopflos in AEM](developing/headful-headless.md)
+   + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
       + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
       + [Struktur der AEM-UI](developing/introduction/ui-structure.md)
@@ -86,7 +86,7 @@ ht-degree: 73%
          + [Komponentenübersicht](developing/components/overview.md)
          + [Vorlagen](developing/components/templates.md)
          + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-         + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
+         + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de)
          + [JSON-Exporter für Content Services](developing/components/json-exporter.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
          + [Bildeditor](developing/components/image-editor.md)
@@ -104,7 +104,7 @@ ht-degree: 73%
       + [Java-API-Richtlinien](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Hybride AEM-Entwicklung {#hybrid}
       + [Hybrid-Architektur und SPAs mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
       + [Einführung in SPAs und exemplarische Anleitung](developing/hybrid/introduction.md)
       + [SPA-WKND-Tutorial](developing/hybrid/wknd-tutorial.md)
       + [Erste Schritte mit React](developing/hybrid/getting-started-react.md)
@@ -117,7 +117,7 @@ ht-degree: 73%
       + [Dynamisches Modell für die Komponentenzuordnung](developing/hybrid/model-to-component-mapping.md)
       + [Modell-Routing](developing/hybrid/routing.md)
       + [Die RemotePage-Komponente](developing/hybrid/remote-page.md)
-      + [Bearbeiten eines externen SPA in AEM](developing/hybrid/editing-external-spa.md)
+      + [Bearbeiten einer externen SPA in AEM](developing/hybrid/editing-external-spa.md)
       + [Server-seitiges Rendering](developing/hybrid/ssr.md)
       + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch-Integration](developing/hybrid/launch-integration.md)
@@ -129,24 +129,24 @@ ht-degree: 73%
          + [Erstellen eines Inhaltsfragmentmodells](developing/headless/getting-started/create-content-model.md)
          + [Erstellen eines Asset-Ordners](developing/headless/getting-started/create-assets-folder.md)
          + [Erstellen eines Inhaltsfragments](developing/headless/getting-started/create-content-fragment.md)
-         + [Zugreifen auf und Bereitstellen von Inhaltsfragmenten](developing/headless/getting-started/create-api-request.md)
+         + [Aufrufen und Bereitstellen von Inhaltsfragmenten](developing/headless/getting-started/create-api-request.md)
       + Inhaltsfragmente {#content-fragments}
-         + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-         + [Arbeiten mit Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-         + [Aktivieren der Funktion für Inhaltsfragmente für Ihre Instanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
-         + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-         + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
-         + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-         + [Verwenden von zugehörigen Inhalten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-         + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-         + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-         + [Anzeigen in der Vorschau – JSON-Repräsentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=de)
+         + [Arbeiten mit Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=de)
+         + [Aktivieren der Funktion für Inhaltsfragmente für Ihre Instanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=de)
+         + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=de)
+         + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=de)
+         + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=de)
+         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=de)
+         + [Verwenden von zugehörigen Inhalten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=de)
+         + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=de)
+         + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=de)
+         + [Anzeigen in der Vorschau – JSON-Repräsentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=de)
       + Bereitstellungs-API {#delivery-api}
-         + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-         + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-         + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-         + [Authentifizierung für Remote AEM GraphQL-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+         + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
+         + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=de)
+         + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=de)
+         + [Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=de)
 + Entwickler-Tools {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
@@ -162,7 +162,7 @@ ht-degree: 73%
    + [Erweitern von ContextHub](developing/personalization/extending-contexthub.md)
    + [ContextHub-API](developing/personalization/contexthub-api.md)
    + [Integration mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
-   + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+   + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
