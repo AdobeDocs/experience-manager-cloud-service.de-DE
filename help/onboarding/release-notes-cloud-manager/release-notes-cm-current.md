@@ -2,7 +2,7 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 16%
@@ -26,8 +26,8 @@ Die nächste Version ist für den 08. April 2021 geplant.
 * Kunden mit Umgebung mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre vorherigen Konfigurationen und können sich über die Benutzeroberfläche selbst versorgen.
 
 * Benutzer mit erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
-   * hinzufügen Sites-Lösung für ein vorhandenes Programm mit Assets (oder umgekehrt).
-   * Entfernen Sie Sites (oder Assets) aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
+   * hinzufügen Sites-Lösung auf ein vorhandenes Programm mit Assets oder umgekehrt.
+   * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
    * hinzufügen zweite, nicht verwendete Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 
 * **AEM Push-** Aktualisierungsbildschirm wird jetzt sowohl für die Ausführung als auch für die Aktivität der Pipeline angezeigt.
