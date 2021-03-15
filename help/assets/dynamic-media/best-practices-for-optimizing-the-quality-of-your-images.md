@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
 source-wordcount: '1452'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in AEM vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-* Das Whitepaper Best Practices [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für AEM.
+* Das Whitepaper mit Best Practices für das [Scharfzeichnen von Bildern in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für AEM.
 
 * Sehen Sie sich [Verwenden des Scharfzeichnens mit AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media) an.
 
@@ -66,7 +66,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       AEM-Hilfethema zum Scharfzeichnen von Bildern.
 
-      White Paper Best Practices [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      Whitepaper mit [Best Practices für Bildqualität und Scharfzeichnen in Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
       * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
