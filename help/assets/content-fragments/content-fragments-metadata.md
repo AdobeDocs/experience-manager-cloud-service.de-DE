@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 2. Führen Sie einen der folgenden Schritte durch:
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-digital-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
-   * Öffnen Sie das Inhaltsfragment zur Bearbeitung und wählen Sie dann **Metadaten** aus dem Seitenbedienfeld.
+   * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.
 
    ![Metadaten](assets/cfm-metadata-01.png)
 
