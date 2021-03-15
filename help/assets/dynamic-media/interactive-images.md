@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
 source-wordcount: '4245'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -350,9 +350,9 @@ Die Hotspots auf dem interaktiven Bild der Demo-Website dienen daher nur zur Anz
 
 Um ein &quot;Beschneiden&quot;auf ein interaktives Bild für eine interaktive Umgebung anzuwenden, fügen Sie dem Pfad das Konfigurationsattribut Interaktives Bild `ZoomView.iscommand` hinzu. In diesem Fall wird die Komponente `ZoomView` aufgerufen und `iscommand` ist der Befehl zum Entfernen von Bildern, den Sie anwenden.
 
-Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Informationen hierzu finden Sie im Thema über das Konfigurationsattribut [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=de).
 
-Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Informationen finden Sie unter [Image-Serving-Befehl](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=de).
 
 Sie können das interaktive Bild jetzt mit einer vorhandenen Quick-Ansicht auf Ihrer Website integrieren.
 
