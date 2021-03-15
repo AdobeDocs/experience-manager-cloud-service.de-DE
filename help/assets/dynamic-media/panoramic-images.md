@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# Panoramabilder{#panoramic-images}
+# Panoramabilder {#panoramic-images}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
-Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
+Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
@@ -79,6 +79,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern  {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
