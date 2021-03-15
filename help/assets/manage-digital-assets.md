@@ -301,7 +301,7 @@ Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/down
 
 >[!CAUTION]
 >
->Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungenen fehlen. Warten Sie entweder bis, die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann bzw. veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
+>Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Rückgängigmachen der Veröffentlichung von Assets {#unpublishing-assets}
 
@@ -353,7 +353,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
-Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in  [!DNL Experience Manager]](/help/assets/search-assets.md) suchen.
+Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung der am besten geeigneten Assets finden Sie unter [Assets in [!DNL Experience Manager]](/help/assets/search-assets.md) suchen.
 
 ## Schnellaktionen {#quick-actions}
 
@@ -421,7 +421,8 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Experience Manager A
 
 In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
 
-![Sortieren von Zeitleisten-Einträgen für ein Asset](assets/sort_timeline.gif) *Abbildung: Sortieren von Zeitleisten-Einträgen für ein Asset*
+![Sortieren von Zeitleisten-Einträgen für ein Asset](assets/sort_timeline.gif)
+*Abbildung: Sortieren von Zeitleisten-Einträgen für ein Asset*
 
 >[!NOTE]
 >
@@ -560,7 +561,7 @@ Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bes
 
 In folgenden Szenarien werden Versionen erstellt:
 
-* Sie ändern ein Bild in einer anderen Anwendung und laden es in Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
+* Sie ändern ein Bild in einem anderen Programm und laden es in Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
 * Sie können die Metadaten eines Assets bearbeiten.
 * Sie verwenden das [!DNL Experience Manager]-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Bei jedem Speichern des Assets wird eine neue Version erstellt.
 
