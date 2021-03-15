@@ -44,7 +44,7 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 ### Fehlerbehebungen {#assets-bug-fixes}
 
 * Fehlerbehebungen bei Problemen mit der Asset-Verarbeitung.
-* Fehlerbehebungen bei der [!DNL Dynamic Media]-Konfiguration und der Veröffentlichung von Assets im [!DNL Dynamic Media]-Bereitstellungsdienst.
+* Fehlerbehebungen bei der [!DNL Dynamic Media]-Konfiguration und der Veröffentlichung von Assets im [!DNL Dynamic Media]-Bereitstellungs-Service.
 
 >[!MORELIKETHIS]
 >
@@ -63,7 +63,7 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 * Bessere Verständlichkeit der Pipeline-Ausführungsseite. Dazu gehören die Anzeige des Pipeline-Namens (nur produktionsfremde Pipelines) und des Typs sowie ein Abzeichen mit dem Pipeline-Status (In Bearbeitung/Abgebrochen/Fehlgeschlagen).
 * QuickInfos zur Verbesserung des Kundenerlebnisses und der Verständlichkeit, warum die Schaltfläche „Programm/Umgebung hinzufügen“ deaktiviert ist.
 * Fehlgeschlagene Umgebungen können jetzt über die Benutzeroberfläche und die API gelöscht werden.
-* Der zur Erstellung von Git-Kennwörtern Prozess ist jetzt weniger anfällig für Probleme in der zugrunde liegenden Service-Ebene.
+* Der zur Erstellung von Git-Kennwörtern verwendete Prozess ist jetzt weniger anfällig für Probleme in der zugrunde liegenden Service-Ebene.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
