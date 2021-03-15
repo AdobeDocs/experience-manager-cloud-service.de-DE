@@ -40,7 +40,7 @@ Nutzen Sie während des Design-Vorgangs die **Emulator**-Symbolleiste, um Vorsch
 
 ## Vor dem Entwicklungsvorgang {#before-you-develop}
 
-Vor der Entwicklung einer AEM-Anwendung, die Ihre Web-Seiten unterstützt, müssen Sie einige Designentscheidungen treffen. Beispielsweise benötigen Sie die folgenden Informationen:
+Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müssen Sie einige Design-Entscheidungen treffen. Beispielsweise benötigen Sie die folgenden Informationen:
 
 * Auf welche Geräte der Entwicklungsprozess ausgerichtet ist
 * Die Größe der Zieldarstellungsfelder
@@ -55,7 +55,7 @@ Die typische AEM-Programmstruktur unterstützt alle Implementierungen responsive
 
 ## Nutzung von Medienabfragen {#using-media-queries}
 
-Medienabfragen ermöglichen die selektive Nutzung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Anwendungen.
+Medienabfragen ermöglichen die selektive Nutzung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Programmen.
 
 Die W3C-Gruppe stellt die [Medienabfragen](https://www.w3.org/TR/css3-mediaqueries/)-Empfehlung zur Verfügung, die diese CSS3-Funktion und die Syntax beschreibt.
 
