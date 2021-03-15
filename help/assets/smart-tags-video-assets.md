@@ -5,20 +5,20 @@ translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Tagging von Video-Assets mit Smart-Tags {#video-smart-tags}
 
-Der wachsende Bedarf an neuen Inhalten verlangt nach einem geringeren manuellen Aufwand, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] als  [!DNL Cloud Service] Unterstützung für das automatische Tagging von Video-Assets mit künstlicher Intelligenz. Das manuelle Tagging von Videos kann sich zeitaufwendig gestalten. Die Funktion für intelligentes Tagging von Videos verwendet jedoch Modelle mit künstlicher Intelligenz, um Videoinhalte zu analysieren und den Video-Assets Tags hinzuzufügen. [!DNL Adobe Sensei] Dadurch wird der Zeitaufwand für DAM-Anwender bei der Bereitstellung vielfältiger Erlebnisse verringert. Der Service für maschinelles Lernen von Adobe generiert zwei Tags für ein Video. Ein Satz entspricht Objekten, Szenen und Attributen in diesem Video. Der andere Satz hingegen bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
+Der wachsende Bedarf an neuen Inhalten verlangt nach einem geringeren manuellen Aufwand, um in kürzester Zeit überzeugende digitale Erlebnisse bereitzustellen. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt das automatische Tagging von Video-Assets mit künstlicher Intelligenz. Das manuelle Tagging von Videos kann sich zeitaufwendig gestalten. Die [!DNL Adobe Sensei]-basierte Funktion für das Tagging von Videos mit Smart-Tags verwendet jedoch Modelle für künstliche Intelligenz, um Video-Content zu analysieren und den Video-Assets Tags hinzuzufügen. Dadurch wird der Zeitaufwand für DAM-Anwender bei der Bereitstellung vielfältiger Erlebnisse verringert. Der Service für maschinelles Lernen von Adobe generiert zwei Tags für ein Video. Ein Satz entspricht Objekten, Szenen und Attributen in diesem Video. Der andere Satz hingegen bezieht sich auf Aktionen wie Trinken, Laufen und Joggen.
 
-Video-Tagging ist standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tags für Videos für einen Ordner deaktivieren. ](#opt-out-video-smart-tagging) Videos werden automatisch mit Tags versehen, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten. [!DNL Experience Manager] erstellt außerdem die Miniaturansichten und extrahiert Metadaten der Videodateien. Die Smart-Tags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in den Asset-[!UICONTROL Eigenschaften] angezeigt.
+Video-Tagging ist standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktiviert. Sie können jedoch [Smart-Tags für Videos für einen Ordner deaktivieren](#opt-out-video-smart-tagging). Videos werden beim Hochladen oder erneuten Verarbeiten automatisch mit Tags versehen. [!DNL Experience Manager] erstellt außerdem die Miniaturansichten und extrahiert Metadaten der Videodateien. Die Smart-Tags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score-video-tag) in den Asset-[!UICONTROL Eigenschaften] angezeigt.
 
 ## Taggen von Videos mit Smart-Tags beim Hochladen {#smart-tag-assets-on-ingestion}
 
-Wenn Sie [Video-Assets](add-assets.md#upload-assets) als [!DNL Adobe Experience Manager] [!DNL Cloud Service] hochladen, werden die Videos verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden unter [!UICONTROL Smart-Tags] automatisch zum Video hinzugefügt. Asset Microservices verwendet [!DNL Adobe Sensei], um diese Smarttags zu erstellen.
+Wenn Sie [Video-Assets in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] hochladen](add-assets.md#upload-assets), werden die Videos verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Asset-Eigenschaften]. Smart-Tags werden unter [!UICONTROL Smart-Tags] automatisch zum Video hinzugefügt. Asset Microservices verwendet [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
 
 ![Smart-Tags werden Videos hinzugefügt und auf der Registerkarte „Allgemein“ der Asset-Eigenschaften angezeigt.](assets/smart-tags-added-to-videos.png)
 
@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor, um Video-Assets oder Ordner (einschließlich Unterordne
 
 <!-- TBD: Limit size -->
 
-![Assets neu verarbeiten, um dem vorhandenen DAM-Repository Tags hinzuzufügen](assets/reprocess.gif)
+![Erneutes Verarbeiten von Assets, um Videos im DAM-Repository Tags hinzuzufügen](assets/reprocess.gif)
 
 Nach Abschluss des Vorgangs navigieren Sie zur Seite [!UICONTROL Eigenschaften] eines Video-Assets im Ordner. Die automatisch hinzugefügten Tags werden auf der Registerkarte [!UICONTROL Allgemein] im Abschnitt [!UICONTROL Smart-Tags] angezeigt. Diese angewendeten Smart-Tags werden in absteigender Reihenfolge nach [Konfidenzwert](#confidence-score-video-tag) sortiert.
 
@@ -62,7 +62,7 @@ Verwenden Sie [OmniSearch](search-assets.md#search-assets-in-aem), um nach Video
 
 Die Suchergebnisse zeigen die Video-Assets basierend auf dem von Ihnen angegebenen Tag an.
 
-Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets mit gesuchten Keywords in den Metadaten und den Video-Assets, die mit den gesuchten Keywords mit Smart-Tags gekennzeichnet sind. Allerdings werden die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Keywords in den Smart-Tags entsprechen. Weitere Informationen finden Sie unter [Grundlegendes zu  [!DNL Experience Manager] -Suchergebnissen mit Smart-Tags](smart-tags.md#understandsearch).
+Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets mit gesuchten Keywords in den Metadaten und den Video-Assets, die mit den gesuchten Keywords mit Smart-Tags gekennzeichnet sind. Allerdings werden die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Keywords in den Smart-Tags entsprechen. Weitere Informationen finden Sie unter [Grundlegendes zu [!DNL Experience Manager] -Suchergebnissen mit Smart-Tags](smart-tags.md#understandsearch).
 
 ## Moderieren von Video-Smart-Tags {#moderate-video-smart-tags}
 
@@ -125,13 +125,13 @@ Gehen Sie folgendermaßen vor, um den Konfidenzwert für die OSGi-Konfiguration 
 
 ## Beschränkungen {#video-smart-tagging-limitations}
 
-* Sie können den Dienst, der intelligente Tags auf Videos anwendet, nicht mit bestimmten Videos ausbilden. Es funktioniert mit Standardeinstellungen für [!DNL Adobe Sensei].
+* Es gibt keine Möglichkeit, den Smart-Tagging-Service mit bestimmten Videos zu trainieren. Er funktioniert mit den Standardeinstellungen von [!DNL Adobe Sensei].
 
-* Der Tag-Fortschritt wird nicht angezeigt.
+* Der Tagging-Fortschritt wird nicht angezeigt.
 
-* Nur Videos mit einer Dateigröße von weniger als 300 MB werden automatisch mit Tags versehen. Der Dienst [!DNL Adobe Sensei] überspringt Videodateien, die größer sind.
+* Nur Videos mit einer Dateigröße von weniger als 300 MB werden automatisch mit Tags versehen. Der [!DNL Adobe Sensei]-Service überspringt Videodateien, die größer sind.
 
-* Nur die Videos in den Dateiformaten und unterstützten Codecs, die unter [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) erwähnt werden, werden mit Tags versehen.
+* Nur Videos in den unter [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) aufgeführten Dateiformaten und unterstützten Codecs werden mit Tags versehen.
 
 >[!MORELIKETHIS]
 >
