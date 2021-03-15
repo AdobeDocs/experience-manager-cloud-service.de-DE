@@ -23,7 +23,7 @@ Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfiguriere
 
 >[!NOTE]
 >
->Einblicke werden nur für Bilder unterstützt und bereitgestellt.
+>Insights werden nur für Bilder unterstützt und bereitgestellt.
 
 ## Anzeigen von Statistiken für Bilder {#viewing-statistics-for-an-image}
 
@@ -40,7 +40,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
 
    * **[!UICONTROL Asset]**: Wie oft war das Asset Teil einer Sammlung oder eines zusammengesetzten Assets.
-   * **[!UICONTROL Web und Mobile]**: Wie oft wurde das Asset in Websites und Apps verwendet.
+   * **[!UICONTROL Web und Mobile]**: Wie oft wurde das Asset in Websites und Mobile Apps verwendet.
    * **[!UICONTROL Social]**: Wie oft wurde das Asset in Lösungen wie Adobe Social und Adobe Campaign verwendet.
    * **[!UICONTROL E-Mail]**: Wie oft wurde das Asset in E-Mail-Kampagnen verwendet.
 
@@ -90,7 +90,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 >[!NOTE]
 >
->Einblicke werden nur für Bilder unterstützt und bereitgestellt.
+>Insights werden nur für Bilder unterstützt und bereitgestellt.
 
 1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
