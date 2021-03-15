@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
 source-wordcount: '3640'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -313,7 +313,10 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <li><strong>Farbliste</strong>: Geben Sie eine durch Komma getrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „000000,888888,ffffff“ ein.</li>
     </ul>
     <div>
-      Bei Auswahl von <strong>PDF</strong>, <strong>TIFF</strong> oder <strong>TIFF mit Alpha</strong> erhalten Sie die folgende zusätzliche Option:
+      Bei Auswahl von
+     <strong>PDF</strong>,
+     <strong>TIFF</strong> oder
+     <strong>TIFF mit Alpha</strong> erhalten Sie die folgende zusätzliche Option:
     </div>
     <ul>
      <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten <strong>Kein</strong>, <strong>ZIP</strong> und <strong>JPEG</strong>. Für TIFF lauten sie <strong>Kein</strong>, <strong>LZW</strong>, <strong>JPEG</strong> und <strong>ZIP</strong>. Für TIFF mit Alpha lauten sie <strong>Kein</strong>, <strong>LZW</strong> und <strong>ZIP</strong>.</li>
@@ -381,7 +384,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Resampling-Modus</strong></td>
-   <td>Wählen Sie eine Option für den <strong>Resamplingmodus</strong>. Diese Optionen sorgen dafür, dass das Bild beim Downsampling scharf bleibt:
+   <td>Wählen Sie eine Option für den <strong>Resampling-Modus</strong>. Diese Optionen sorgen dafür, dass das Bild beim Downsampling scharf bleibt:
     <ul>
      <li><strong>Bilinear</strong>: Die schnellste Resampling-Methode. Einige Aliasing-Artefakte sind sichtbar.</li>
      <li><strong>Bikubisch</strong>: Erhöht die CPU-Auslastung, bietet jedoch schärfere Bilder mit weniger deutlichen Aliasing-Artefakten.</li>
@@ -396,7 +399,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Bildmodifikator</strong></td>
-   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bild-Modifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
+   <td><p>Neben den allgemeinen Bildeinstellungen in der Benutzeroberfläche unterstützt Dynamic Media zahlreiche erweiterte Bearbeitungsoptionen für Bilder, die Sie im Feld <strong>Bild-Modifikatoren</strong> festlegen können. Diese Parameter werden in der <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html?lang=de">Befehlsreferenz für das Image Server-Protokoll</a> definiert.</p> <p>Wichtig: Die folgenden in der API aufgelisteten Funktionen werden nicht unterstützt:</p>
     <ul>
      <li>Grundlegende Befehle zur Vorlagenerstellung und Textdarstellung: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> und <code>textPs=</code></li>
      <li>Lokalisierungsbefehle: <code>locale=</code> und <code>req=xlate</code></li>
@@ -413,7 +416,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 ### Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
-Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Image Rendering basiert auf der Dynamic Media Image Rendering API und wird im [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api) detailliert definiert.
+Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Image Rendering basiert auf der Dynamic Media Image Rendering API und wird im [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html?lang=de#image-rendering-api) detailliert definiert.
 
 Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modifikatoren.
 
@@ -421,7 +424,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 >
 >Einige Bildmodifikatoren [können in Experience Manager](#advanced-tab-options) nicht verwendet werden.
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=de): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
 
    ```xml
    &op_invert=1
@@ -429,7 +432,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html): Wendet einen Weichzeichenfilter auf das Bild an.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=de): Wendet einen Weichzeichenfilter auf das Bild an.
 
    ```xml
    &op_blur=7
@@ -445,7 +448,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [Op_brightness:](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html): Verringert oder erhöht die Helligkeit.
+* [Op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=de): Verringert oder erhöht die Helligkeit.
 
    ```xml
    &op_brightness=58
@@ -453,7 +456,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) – Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=de): Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
 
    ```xml
    opac=29
