@@ -1,21 +1,21 @@
 ---
 title: Die RemotePage-Komponente
-description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPA in AEM.
+description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPAs in AEM.
 translation-type: tm+mt
 source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 1%
+ht-degree: 74%
 
 ---
 
 # Die RemotePage-Komponente {#remote-page-component}
 
-Bei der Entscheidung darüber, welche Integrationsstufe](/help/implementing/developing/headful-headless.md) Sie zwischen Ihren externen SPA und AEM haben möchten, ist häufig klar, dass Sie in der Lage sein müssen, die SPA innerhalb AEM zu bearbeiten. [ Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente, die nur zu diesem Zweck verwendet wird.
+Wenn Sie entscheiden, [welchen Grad der Integration](/help/implementing/developing/headful-headless.md) Sie zwischen Ihrer externen SPA und AEM haben möchten, wird oft klar, dass Sie die SPA in AEM anzeigen und bearbeiten können müssen. Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente genau für diesen Zweck.
 
 ## Überblick {#overview}
 
-Die RemotePage-Komponente ruft alle erforderlichen Elemente aus dem generierten Element `asset-manifest.json` der Anwendung ab und verwendet diese zum Rendern des SPA in AEM.
+Die RemotePage-Komponente ruft alle erforderlichen Assets aus dem generierten `asset-manifest.json` des Programms ab und verwendet diese zum Rendern der SPA in AEM.
 
 * Mit RemotePage können Sie die Skripte und Stylesheets eines SPA im Textkörper einer AEM Seitenkomponente einfügen.
 * Die Virtual Frontend-Komponenten ermöglichen es, Abschnitte im AEM SPA Editor als bearbeitbar zu markieren.
@@ -25,15 +25,15 @@ Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artike
 
 ## Voraussetzungen {#requirements}
 
-* Aktivieren von CORS in der Entwicklung
-* Remote-URL in Seiteneigenschaften konfigurieren
-* SPA in AEM wiedergeben
+* CORS in der Entwicklung aktivieren
+* Remote-URL in den Seiteneigenschaften konfigurieren
+* SPA in AEM rendern
 
 ## Beschränkungen {#limitations}
 
-* Die aktuelle Implementierung der RemotePage-Komponente unterstützt nur Remote React-Anwendungen.
-* Internes CSS, das in der Stamm-HTML-Datei der Anwendung definiert ist, sowie Inline-CSS auf dem Stamm-DOM-Knoten sind beim Remote-Rendering in AEM nicht verfügbar.
+* Die aktuelle Implementierung der RemotePage-Komponente unterstützt nur Remote React-Programme.
+* Internes CSS, das in der Stamm-HTML-Datei des Programms definiert ist, sowie Inline-CSS im Stamm-DOM-Knoten sind beim Remote-Rendering in AEM nicht verfügbar.
 
 ## Technische Details {#technical-details}
 
-Wie der Rest des AEM SPA ist die RemotePage-Komponente eine Open Source-Komponente. Die vollständigen technischen Details der RemotePage-Komponente finden Sie im GitHub-Repository.[](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Wie der Rest des AEM-SPA-Projekts ist die RemotePage-Komponente eine Open Source-Komponente. Die vollständigen technischen Details der RemotePage-Komponente [finden Sie im GitHub-Repository.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
