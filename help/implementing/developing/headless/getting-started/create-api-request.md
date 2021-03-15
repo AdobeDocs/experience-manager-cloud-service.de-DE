@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um 
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
 -->
 
-1. Melden Sie sich bei AEM als Cloud Service an und greifen Sie auf die GraphiQL-Oberfläche zu:
+1. Melden Sie sich bei AEM as a Cloud Service an und rufen Sie die GraphiQL-Oberfläche auf:
    * Beispiel: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei direkt bereitzustellen.
@@ -69,7 +69,7 @@ Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um 
 
 GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte und verschachtelte Ergebnisse bereitstellen, Unterstützung für Abfragevariablen bieten und vieles mehr.
 
-GraphQL kann sowohl iterative API-Anfragen als auch Überbereitstellungen vermeiden und ermöglicht stattdessen eine Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Abfrage benötigt wird. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Apps bereitzustellen.
+GraphQL kann sowohl iterative API-Anfragen als auch Überbereitstellungen vermeiden und ermöglicht stattdessen eine Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Abfrage benötigt wird. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Mobile Apps bereitzustellen.
 
 ## Nächste Schritte {#next-steps}
 
