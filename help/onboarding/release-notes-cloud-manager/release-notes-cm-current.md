@@ -2,7 +2,7 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 16%
@@ -30,21 +30,21 @@ Die nächste Version ist für den 08. April 2021 geplant.
    * Entfernen Sie Sites (oder Assets) aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
    * hinzufügen zweite, nicht verwendete Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 
-* AEM &quot;Push Update&quot;-Beschriftung wird jetzt sowohl für die Ausführung als auch für die Aktivität der Pipeline angezeigt.
+* **AEM Push-** Aktualisierungsbildschirm wird jetzt sowohl für die Ausführung als auch für die Aktivität der Pipeline angezeigt.
 
-* Wenn eine Umgebung ausgeblendet wird, aber auch ein AEM Update verfügbar ist, hat der Status &quot;Hibernated&quot;Vorrang vor &quot;Update available&quot;.
+* Wenn eine Umgebung ausgeblendet wird, aber auch ein AEM Update verfügbar ist, hat der Status **Hibernated** Vorrang vor **Update available**.
 
 * Die Benutzer können nun ihre Cloud Manager-Rolle(en) anzeigen, indem sie die Option &quot;Ansicht Cloud Manager-Rolle(en)&quot;wählen, nachdem sie zum Symbol &quot;User Profil&quot;(oben rechts) von Unified Shell navigiert sind.
 
-* Das Etikett &quot;Antrag auf Genehmigung&quot;wurde aus Gründen der Klarheit in &quot;Genehmigung für die Produktion&quot;umbenannt.
+* Die Beschriftung **Antrag auf Genehmigung** wurde zur besseren Klarheit in **Produktionsgenehmigung** umbenannt.
 
-* Das Etikett &quot;Version&quot;wurde im Produktionsbildschirm in &quot;Git-Tag&quot;umbenannt.
+* Die Beschriftung **Version** wurde im Bildschirm &quot;Produktions-Pipeline-Ausführung&quot;in **Git-Tag** umbenannt.
 
-* Die Beschriftungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr wahres Verhalten widerzuspiegeln - Sofort abbrechen und Sofort genehmigen.
+* Die Beschriftungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr wahres Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
 
 * Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
 
-* Die Cloud Manager-Produktionspipeline umfasst jetzt benutzerdefinierte Testfunktionen für die Benutzeroberfläche.
+* Die Cloud Manager-Produktionspipeline umfasst jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Fehlerbehebungen {#bug-fixes}
 
