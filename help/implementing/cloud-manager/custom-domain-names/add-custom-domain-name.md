@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 
 ## Wichtige Überlegungen {#important-considerations}
 
-* Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
+* Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
-* Domänennamen können nicht zu Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
+* Domain-Namen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
 
-* Es kann jeweils nur ein Domain-Name hinzugefügt werden. Domänen können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domänen auf der Autorenseite werden nicht unterstützt.
+* Es kann jeweils nur ein Domain-Name hinzugefügt werden. Domains können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domains werden auf der Autorenseite nicht unterstützt.
 
 * Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domains pro Umgebung hosten.
 
@@ -30,64 +30,64 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 
 Gehen Sie wie folgt vor, um über die Seite mit den Domain-Einstellungen einen benutzerdefinierten Domain-Namen hinzuzufügen:
 
-1. Navigieren Sie zum Bildschirm **Umgebung** von **Übersicht**.
+1. Navigieren Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsmenü auf **Domäneneinstellungen**.
+1. Klicken Sie im linken Navigationsmenü auf **Domain-Einstellungen**.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Klicken Sie auf die Schaltfläche **Hinzufügen Domäne**, um das Dialogfeld **Hinzufügen Domänenname** zu öffnen.
+1. Klicken Sie auf die Schaltfläche **Domain hinzufügen**, um das Dialogfeld **Domain-Name hinzufügen** zu öffnen.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
 
-1. Geben Sie unter **Domänenname** den benutzerdefinierten Domänennamen ein.
+1. Geben Sie unter **Domain-Name** den benutzerdefinierten Domain-Namen ein.
 
    >[!NOTE]
-   >Bei der Eingabe Ihrer Domain sollten Sie keine `http://`, `https://` oder Leerzeichen verwenden.
+   >Bei der Eingabe Ihrer Domain sollten Sie weder `http://`, noch `https://` oder Leerzeichen verwenden.
 
-1. Wählen Sie die Umgebung **aus, deren Veröffentlichungsdienst mit dem Domänennamen verknüpft wird.**
+1. Wählen Sie die **Umgebung** aus, deren Veröffentlichungs-Service mit dem Domain-Namen verknüpft werden soll.
 
-1. Wählen Sie in der Dropdownliste **SSL-Domänenzertifikat** aus und wählen Sie **Weiter**.
+1. Wählen Sie aus der Dropdown-Liste das **SSL-Zertifikat der Domain** und anschließend **Weiter** aus.
 
-1. **hinzufügen Feld** Domänenname wird angezeigt. Dadurch gelangen Sie zum Bildschirm mit der Domain-Namensüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+1. Das Dialogfeld **Domain-Name hinzufügen** wird angezeigt. Dadurch gelangen Sie zum Bildschirm mit der Domain-Namensüberprüfung für Ihre Umgebung. Weitere Informationen finden Sie unter [Hinzufügen eines TXT-Eintrags](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
    Befolgen Sie die Anweisungen, um die Domain-Eigentümerschaft für Ihre Umgebung nachzuweisen:
 
 1. Klicken Sie auf **Erstellen**.
 1. Für die CDN-Implementierung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
-Navigieren Sie zu [Überprüfen Sie den Status der benutzerdefinierten Domäne](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md), um weitere Informationen zu verschiedenen Status und Adressen zu erhalten.
+Unter [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) erhalten Sie weitere Informationen zu den verschiedenen Status und dem Umgang damit.
 
    >[!NOTE]
    >Der DNS-Testversand kann aufgrund von Verzögerungen bei der DNS-Verbreitung bis zu einigen Stunden dauern. Cloud Manager überprüft die Eigentümerschaft und aktualisiert den Status, der in der Tabelle der Domain-Einstellungen zu sehen ist. Weitere Informationen finden Sie unter „Überprüfen des Status eines Domain-Namens“.
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Umgebungen {#adding-cdn-environments}
 
-1. Navigieren Sie zur Detailseite &quot;Umgebung&quot;für die Umgebung von Interesse.
+1. Navigieren Sie zur Seite mit den Umgebungsdetails für die gewünschte Umgebung.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
-1. Verwenden Sie die Eingabefelder oben in der Tabelle &quot;Domänennamen&quot;, um den benutzerdefinierten Domänennamen zu senden, und wählen Sie das SSL-Zertifikat in der Dropdown-Liste aus. Klicken Sie auf **+ Hinzufügen**.
+1. Verwenden Sie die Eingabefelder oben in der Domain-Namenstabelle, um den benutzerdefinierten Domain-Namen zu senden, und wählen Sie das SSL-Zertifikat in der Dropdown-Liste aus. Klicken Sie auf **+ Hinzufügen**.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Markieren Sie die Felder im Dialogfeld **Hinzufügen Domänenname** und klicken Sie auf **Weiter**.
+1. Markieren Sie die Felder im Dialogfeld **Domain-Namen hinzufügen** und klicken Sie auf **Weiter**.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
-   >Bei der Eingabe in Ihre Domäne dürfen Sie `http://`, `https://` oder Leerzeichen nicht einschließen.
+   >Verwenden Sie bei der Eingabe Ihrer Domain weder `http://`, noch `https://` oder Leerzeichen.
 
-1. Die Überprüfung des Domänennamens für Ihre Umgebung wird angezeigt.
+1. Der Bildschirm mit der Domain-Namensüberprüfung für Ihre Umgebung wird angezeigt.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-   Weitere Informationen finden Sie unter [Domänenüberprüfung](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md). Befolgen Sie die Anweisungen, um die Domain-Eigentümerschaft für Ihre Umgebung nachzuweisen.
+   Weitere Informationen finden Sie unter [Domain-Überprüfung](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md). Befolgen Sie die Anweisungen, um die Domain-Eigentümerschaft für Ihre Umgebung nachzuweisen.
 
 1. Klicken Sie auf **Erstellen**.
 
-1. Für die Bereitstellung benutzerdefinierter Domänennamen sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
+1. Für die Implementierung eines benutzerdefinierten Domain-Namens sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
 
-Zu diesem Zeitpunkt ist Ihr benutzerdefinierter Domain-Name bereit zum Testen und ein `CNAME`, der auf ihn verweist. Weitere Informationen zu verschiedenen Status und zur Adressierung finden Sie unter [Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+Zu diesem Zeitpunkt ist Ihr benutzerdefinierter Domain-Name bereit zum Testen und ein `CNAME`, der auf ihn verweist. Unter [Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) erhalten Sie weitere Informationen zu den verschiedenen Status und dem Umgang damit.
 
 >[!NOTE]
 >Der DNS-Testversand kann aufgrund von Verzögerungen bei der DNS-Verbreitung bis zu einigen Stunden dauern. Cloud Manager überprüft die Eigentümerschaft und aktualisiert den Status, der in der Tabelle der Domain-Einstellungen zu sehen ist. Weitere Informationen finden Sie unter „Überprüfen des Status eines Domain-Namens“.
