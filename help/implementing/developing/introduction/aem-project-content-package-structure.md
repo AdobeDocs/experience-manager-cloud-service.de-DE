@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
-ht-degree: 100%
+source-wordcount: '2850'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,7 @@ Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
          + Gruppen
          + ACLs (Berechtigungen)
 
+
 ### Inhaltspakete
 
 + Das `ui.content`-Paket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket umfasst alle Knotendefinitionen, die nicht in den `ui.apps`- oder `ui.config`-Paketen enthalten sind, bzw. alles, was nicht in `/apps` oder `/oak:index` enthalten ist. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
@@ -138,9 +139,10 @@ Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Anwendu
 
 Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` setzen.
++ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen OSGi-Pakete und OSGi-Konfigurationen nicht direkt enthalten und dürfen nicht [Installationshinweise](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
+
 
 Weitere Informationen finden Sie in der [Dokumentation zum Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) und dem [Konfigurations-Snippet für FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
 
