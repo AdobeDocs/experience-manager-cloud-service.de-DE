@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -160,7 +160,7 @@ Die Developer Console ist auch für das Debugging nützlich und enthält einen L
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktions-Programmen wird der Zugriff auf die Developer Console durch den &quot;Cloud Manager - Developer Role&quot;in der Admin Console definiert, während bei Sandbox-Programmen die Developer Console für alle Benutzer mit einem Produkt-Profil verfügbar ist, über das sie Zugriff auf AEM als Cloud Service erhalten. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Bei Produktions-Programmen wird der Zugriff auf die Developer Console durch den &quot;Cloud Manager - Developer Role&quot;in der Admin Console definiert, während bei Sandbox-Programmen die Developer Console für alle Benutzer mit einem Produkt-Profil verfügbar ist, über das sie Zugriff auf AEM als Cloud Service erhalten. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM Staging- und Produktions-Service {#aem-staging-and-production-service}
@@ -222,13 +222,13 @@ AEM as a Cloud Service erfordert die Verschlüsselung von ausgehenden E-Mails. I
 Ausgehende E-Mails sind standardmäßig deaktiviert. Um sie zu aktivieren, senden Sie ein Support-Ticket mit:
 
 1. dem vollständig qualifizierten Domain-Namen für den E-Mail-Server (z. B. `smtp.sendgrid.net`),
-1. dem zu verwendenden Port. Es sollte Port 465 sein, wenn vom Mail-Server unterstützt, ansonsten Port 587. Beachten Sie, dass Port 587 nur verwendet werden kann, wenn der E-Mail-Server TLS an diesem Anschluss erfordert und erzwingt
-1. Programm-ID und Umgebung-ID für die Umgebung, von denen sie per E-Mail senden möchten
-1. Ob SMTP-Zugriff für die Autoren-, Veröffentlichungs- oder beide Instanzen erforderlich ist.
+1. dem zu verwendenden Port. Es sollte Port 465 sein, wenn er vom Mailserver unterstützt wird, andernfalls Port 587. Beachten Sie, dass Port 587 nur verwendet werden kann, wenn der Mailserver TLS für diesen Port erfordert und erzwingt
+1. Programmkennung und Umgebungskennung für die Umgebungen, von denen sie E-Mail senden möchten
+1. Angabe, ob SMTP-Zugriff für die Autoren-, Veröffentlichungs- oder beide Instanzen erforderlich ist.
 
 ### Senden von E-Mails {#sending-emails}
 
-Der [Day CQ-E-Mail-Service-OSGi-Service](https://docs.adobe.com/content/help/de/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
+Der [Day CQ-E-Mail-Service-OSGi-Service](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
 AEM CS erfordert, dass E-Mails über Port 465 gesendet werden. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
@@ -240,7 +240,7 @@ AEM CS erfordert, dass E-Mails über Port 465 gesendet werden. Wenn ein Mailserv
 
 E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/de/experience-manager-65/administering/operations/notification.html). Für AEM als Cloud Service müssen die folgenden Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Dienst vorgenommen werden:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/operations/notification.html). Für AEM as a Cloud Service müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service vorgenommen werden:
 
 Wenn Port 465 angefordert wurde:
 
@@ -252,4 +252,4 @@ Wenn Port 587 angefordert wurde (nur zulässig, wenn der Mailserver Port 465 nic
 * `smtp.port` auf `587` festlegen
 * `smtp.ssl` auf `false` festlegen
 
-Die `smtp.starttls`-Eigenschaft wird automatisch von AEM als Cloud Service zur Laufzeit auf einen entsprechenden Wert eingestellt. Wenn `smtp.tls` auf &quot;true&quot;gesetzt ist, wird `smtp.startls` ignoriert. Ist `smtp.ssl` auf &quot;false&quot;gesetzt, ist `smtp.starttls` auf &quot;true&quot;gesetzt. Dies gilt unabhängig von den `smtp.starttls`-Werten, die in Ihrer OSGI-Konfiguration festgelegt sind.
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.tls` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
