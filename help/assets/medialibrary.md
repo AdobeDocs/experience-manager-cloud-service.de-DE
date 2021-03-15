@@ -36,7 +36,7 @@ Für die Verwendung dieser Funktionen ist eine gültige Lizenz von [!DNL Assets]
 
 ## Ist [!DNL Assets] als separates Paket verfügbar? {#is-aem-assets-available-as-a-separate-package}
 
-Nein. Um die Installation und Bereitstellung zu erleichtern, werden alle [!DNL Experience Manager]-Anwendungen und Add-ons in einem Paket mit allen Funktionen bereitgestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt. 
+Nein. Um die Installation und Bereitstellung zu erleichtern, werden alle [!DNL Experience Manager]-Anwendungen und Add-ons in einem Paket mit allen Funktionen bereitgestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt.
 
 ## Ich möchte die Metadaten digitaler Assets bearbeiten. Benötige ich [!DNL Assets]? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
