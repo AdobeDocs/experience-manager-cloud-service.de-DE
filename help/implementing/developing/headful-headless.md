@@ -1,86 +1,86 @@
 ---
-title: Kopflos und Kopflos in AEM
-description: AEM Projekte können in einem schlagkräftigen und kopflosen Modell implementiert werden, aber die Wahl ist nicht binär. AEM Angebote haben die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
+title: Headful und Headless in AEM
+description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 translation-type: tm+mt
 source-git-commit: 772717b7ad3baa17a58e251c128663035eb89931
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Kopflos und Kopflos in AEM {#headful-headless}
+# Headful und Headless in AEM {#headful-headless}
 
-Adobe Experience Manager-Projekte können sowohl in Headful- als auch in Headless-Modellen implementiert werden, aber die Wahl ist nicht binär. AEM Angebote haben die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen. Dieses Dokument bietet einen Überblick über die verschiedenen Modelle und beschreibt die Stufen SPA Integration.
+Adobe Experience Manager-Projekte können sowohl als Headful- als auch als Headless-Modell implementiert werden, Sie müsse sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen. Dieses Dokument bietet einen Überblick über die verschiedenen Modelle und beschreibt die Stufen der SPA-Integration.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-AEM Angeboten leistungsstarke Tools zur Verwaltung der Inhaltserstellung und des Versands auf einer Plattform. Dies ist ein traditionelles &quot;schlagkräftiges&quot;Content-Management-Modell, bei dem Autoren und Entwickler von Inhalten auf derselben Plattform arbeiten, um die Erlebnisse für die Nutzer bereitzustellen.
+AEM bietet leistungsstarke Tools zur Verwaltung der Inhaltserstellung und der Bereitstellung auf einer Plattform. Dies ist ein traditionelles „Headful“-Modell für das Content-Management, bei dem Autoren und Entwickler von Content auf derselben Plattform arbeiten, um die Erlebnisse für Nutzer bereitzustellen.
 
-AEM können auch zur einfachen Verwaltung von Inhalten verwendet werden, sodass Präsentation und Versand der Inhalte von einer anderen Plattform verwaltet werden können. Dies ist das &quot;Headless&quot;-Modell des Content-Managements, bei dem Autoren und Entwickler von Inhalten auf verschiedenen Plattformen arbeiten, um den Nutzern von Inhalten ein Erlebnis zu bieten.
+AEM kann auch zur einfachen Verwaltung von Inhalten verwendet werden, sodass ihre Präsentation und Bereitstellung über eine andere Plattform verwaltet werden können. Dies ist das „Headless“-Modell für das Content-Management, bei dem Autoren und Entwickler von Content auf verschiedenen Plattformen arbeiten, um Erlebnisse für Nutzer bereitzustellen.
 
-Aber das muss keine binäre Entscheidung sein. AEM Angebot haben eine beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
+Das muss aber keine Entweder-Oder-Entscheidung sein. AEM bietet beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
 
 ![AEM-Implementierungsmodelle](headless/assets/aem-implementation-models.png)
 
-In einem schlagkräftigen oder vollständigen Stapelmodell wird der Inhalt im AEM Repository und AEM Komponenten auf der Grundlage von Java, HTL usw. verwaltet. werden verwendet, um den Inhalt für die Benutzererfahrung wiederzugeben. In diesem Modell erfolgt die Erstellung des Inhalts, die Formatierung, Präsentation und Bereitstellung des Inhalts in AEM.
+In einem Headful- oder Full-Stack-Modell wird der Content im AEM-Repository verwaltet. AEM-Komponenten auf der Grundlage von Java, HTL usw. werden verwendet, um den Content für das Anwendererlebnis wiederzugeben. In diesem Modell erfolgen die Erstellung, Formatierung, Präsentation und Bereitstellung des Contents in AEM.
 
-Bei einem kopflosen Modell wird der Inhalt im AEM Repository verwaltet, jedoch über APIs wie REST und GraphQL an ein anderes System gesendet, um den Inhalt für die Benutzererfahrung wiederzugeben. In diesem Modell werden Inhalte in AEM erstellt, aber die Formatierung, Präsentation und Bereitstellung erfolgt auf einer anderen Plattform.
+Bei einem Headless-Modell wird der Content im AEM-Repository verwaltet, aber über APIs wie REST und GraphQL an ein anderes System gesendet, um ihn für das Anwendererlebnis wiederzugeben. In diesem Modell wird Content in AEM erstellt, aber die Formatierung, Präsentation und Bereitstellung erfolgen auf einer anderen Plattform.
 
-Einzelseitenanwendungen (SPA) sind häufig das Ziel für Inhalte, die von AEM ohne Kopfhörer bereitgestellt werden. Diese SPA müssen jedoch nicht völlig extern zu AEM sein. AEM ermöglicht Ihnen zu entscheiden, in welchem Ausmaß Ihre SPA in AEM integriert sind. Nehmen wir ein Beispiel.
+Single Page Applications (SPAs) sind häufig das Ziel für Content, der von AEM im Headless-Modell bereitgestellt wird. Diese SPAs müssen jedoch nicht vollständig von AEM abgekoppelt sein. AEM ermöglicht es Ihnen, zu entscheiden, in welchem Umfang Ihre SPAs in AEM integriert sind. Nehmen wir ein Beispiel.
 
 ## Webshop-Beispiel {#web-shop-example}
 
-Nehmen wir an, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend stellen Sie AEM vor, um Ihre Marketingbemühungen wie Werbe-Sites, Blogs und Kampagnen-Inhalte zu unterstützen. Wie integrieren Sie die beiden? AEM bietet eine Reihe von Optionen:
+Angenommen, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend führen Sie AEM ein, um Ihre Marketing-Bemühungen wie Werbe-Websites, Blogs und Kampagnen-Content zu unterstützen. Wie integrieren Sie beides? AEM bietet eine Reihe von Optionen:
 
 * **Die Systeme können unabhängig betrieben werden.**
-* **Bieten Sie den Webshop mit eingeschränktem Inhalt von AEM über GraphQL an.** Inhalte können von Autoren in AEM erstellt werden, jedoch nur über den Webshop SPA.
-* **Betten Sie den Webshop SPA in AEM ein.** Inhalte können von Autoren in AEM erstellt und im Kontext des Webshops AEM angezeigt werden, jedoch nicht manipuliert.
-* **Betten Sie den Webshop SPA in AEM ein und aktivieren Sie bearbeitbare Punkte.** Inhalte können von Autoren in AEM erstellt und im Kontext des Webshops AEM angezeigt werden, und die Autoren haben nur begrenzte Möglichkeiten, den Inhalt des Webshops SPA innerhalb AEM zu manipulieren.
-* **Betten Sie den Webshop SPA in AEM ein und aktivieren Sie ganze Zonen für die Bearbeitung.** Inhalte können von Autoren in AEM erstellt und im Kontext des Webshops AEM angezeigt werden, und die Autoren haben nur begrenzte Möglichkeiten, den Inhalt des Webshops SPA innerhalb AEM zu manipulieren.
+* **Der Webshop wird mit eingeschränktem Inhalt von AEM über GraphQL versorgt.** Content kann von Autoren in AEM erstellt, aber nur über die Webshop-SPA angezeigt werden.
+* **Die Webshop-SPA wird in AEM eingebettet.** Content kann von Autoren in AEM erstellt und in AEM im Kontext des Webshops angezeigt, aber nicht bearbeitet werden.
+* **Die Webshop-SPA wird in AEM eingebettet und bearbeitbare Punkte werden aktiviert.** Content kann von Autoren in AEM erstellt und in AEM im Kontext des Webshops angezeigt werden. Die Autoren haben nur begrenzte Möglichkeiten, den Content der Webshop-SPA in AEM zu manipulieren.
+* **Die Webshop-SPA wird in AEM eingebettet und ganze Zonen werden für die Bearbeitung aktiviert.** Content kann von Autoren in AEM erstellt und in AEM im Kontext des Webshops angezeigt werden. Die Autoren haben nur begrenzte Möglichkeiten, den Content der Webshop-SPA in AEM zu manipulieren.
 
 Im nächsten Abschnitt werden diese Integrationsstufen genauer untersucht.
 
 >[!NOTE]
 >
->Natürlich können Sie auch die Web-Shop-SPA als voll funktionierende AEM SPA [mit dem AEM SPA Editor-Framework neu implementieren.](/help/implementing/developing/hybrid/introduction.md) Wenn Sie bereits AEM haben und einen neuen Webshop oder andere SPA erstellen möchten, ist dies die empfohlene Methode, die jedoch nicht in den Anwendungsbereich dieses Dokuments fällt.
+>Natürlich könnten Sie die Webshop-SPA als voll funktionsfähige AEM-SPA erneut implementieren. [Dafür verwenden Sie das AEM-SPA Editor-Framework.](/help/implementing/developing/hybrid/introduction.md) Wenn Sie bereits AEM haben und einen neuen Webshop oder eine andere SPA erstellen möchten, ist dies die empfohlene Methode. Diese würde den Umfang dieses Dokuments allerdings sprengen.
 
-## SPA Integrationsstufen {#integration-levels}
+## SPA-Integrationsstufen {#integration-levels}
 
-SPA Integration fällt in AEM auf vier Ebenen.
+In AEM gibt es vier Stufen der SPA-Integration.
 
-* **Ebene 0: Keine Integration**
-   * Die SPA und AEM existieren getrennt und tauschen keine Informationen aus.
-   * Inhalte werden in zwei separaten Systemen erstellt, verwaltet und bereitgestellt.
+* **Stufe 0: Keine Integration**
+   * Die SPA und AEM sind getrennt und tauschen keine Informationen aus.
+   * Content wird in zwei separaten Systemen erstellt, verwaltet und bereitgestellt.
 * **Ebene 1: Integration von Inhaltsfragmenten**
-   * [Inhaltsfragmente ](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Inhalt über AEM [GraphQL API ab.](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * Einige Inhalte werden in AEM und andere in einem externen System verwaltet.
-   * Inhalte können nur im SPA angezeigt werden.
-* **Ebene 2: SPA in AEM einbetten**
-   * [Inhaltsfragmente ](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Inhalte für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Inhalt über AEM [GraphQL API ab.](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * Einige Inhalte werden in AEM und andere in einem externen System verwaltet.
-   * Inhalte können im Kontext innerhalb von AEM angezeigt werden.
-   * Eingeschränkte Inhalte können innerhalb von AEM bearbeitet werden.
-* **Ebene 3: SPA in AEM einbetten und vollständig aktivieren**
-   * [Inhaltsfragmente ](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Inhalte für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Inhalt über AEM [GraphQL API ab.](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * Inhalte können im Kontext innerhalb von AEM angezeigt werden.
-   * Die meisten Inhalte können innerhalb von AEM bearbeitet werden.
+   * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
+   * Content kann nur in der SPA angezeigt werden.
+* **Ebene 2: Einbetten der SPA in AEM**
+   * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
+   * Content kann in AEM im Kontext angezeigt werden.
+   * Eingeschränkter Content kann in AEM bearbeitet werden.
+* **Ebene 3: Einbetten und vollständiges Aktivieren der SPA in AEM**
+   * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Content kann in AEM im Kontext angezeigt werden.
+   * Die meisten Inhalte können in AEM bearbeitet werden.
 
-Stufe 1 ist ein Beispiel für eine typische Implementierung ohne Kopfdaten. Inhaltsersteller können ihre Inhalte jedoch nur im Kontext innerhalb der SPA Ansichten. AEM ist nur ein Authoring-Tool.
+Stufe 1 ist ein Beispiel für eine typische Headless-Implementierung. Autoren können ihren Content jedoch nur innerhalb der SPA im Kontext anzeigen. AEM ist nur ein Authoring-Tool.
 
-Der Vorteil und die Flexibilität der AEM werden mit den Stufen 2 und 3 deutlich, während die Vorteile der SPA erhalten bleiben. Autoren können ihre Inhalte in AEM erstellen, sie sehen sie aber auch im Kontext innerhalb von AEM. Die SPA erhalten die Fähigkeit, in AEM verfasst zu werden, aber dennoch als SPA geliefert werden.
+Die Vorteile und die Flexibilität von AEM machen sich auf Stufe 2 und 3 bemerkbar, während die Vorteile der SPA erhalten bleiben. Autoren können ihren Content in AEM erstellen, aber auch in AEM im Kontext anzeigen. Die SPA kann in AEM erstellt und dennoch als SPA bereitgestellt werden.
 
 ## Implementieren der Integrationsstufen {#implementing}
 
-Es stehen verschiedene Tools in AEM zur Verfügung, je nachdem, welche Integrationsstufe Sie wählen. Jede Ebene baut auf den zuvor verwendeten Werkzeugen auf. In der folgenden Liste finden Sie Links zu den entsprechenden Ressourcen.
+In AEM stehen verschiedene Tools zur Verfügung, je nach gewählter Integrationsstufe. Jede Stufe baut auf den zuvor verwendeten Werkzeugen auf. In der folgenden Liste finden Sie Links zu den entsprechenden Ressourcen.
 
-* **Ebene 1:** Inhaltsfragmente und der  [AEM ](/help/implementing/developing/headless/introduction.md) Rahmen ohne Kopfdaten können verwendet werden, um AEM Inhalte für die SPA bereitzustellen.
-* **Ebene 2:** Zusätzlich zu Stufe 1:
-   * [Die RemotePage-](/help/implementing/developing/hybrid/remote-page.md) Komponente kann verwendet werden, um die externe SPA in AEM einzubetten, wo AEM Inhalt im Kontext angezeigt werden kann.
-   * Bestimmte Punkte auf der SPA können auch auf [Eingeschränkte Bearbeitung in AEM zulassen aktiviert werden.](/help/implementing/developing/hybrid/editing-external-spa.md)
-* **Ebene 3:** Zusätzlich zu Stufe 2:
-   * Ganze Bereiche des SPA können aktiviert werden, um eine umfassende Bearbeitung in AEM zu ermöglichen.
+* **Stufe 1:** Inhaltsfragmente und das [AEM-Headless-Framework](/help/implementing/developing/headless/introduction.md) können verwendet werden, um AEM-Content für die SPA bereitzustellen.
+* **Stufe 2:** Zusätzlich zu Stufe 1:
+   * [Die RemotePage-Komponente](/help/implementing/developing/hybrid/remote-page.md) kann verwendet werden, um die externe SPA in AEM einzubetten, wo AEM-Content im Kontext angezeigt werden kann.
+   * Bestimmte Punkte auf der SPA können auch aktiviert werden, um eine [eingeschränkte Bearbeitung in AEM zuzulassen](/help/implementing/developing/hybrid/editing-external-spa.md).
+* **Stufe 3:** Zusätzlich zu Stufe 2:
+   * Ganze Bereiche der SPA können aktiviert werden, um eine umfassende Bearbeitung in AEM zu ermöglichen.
