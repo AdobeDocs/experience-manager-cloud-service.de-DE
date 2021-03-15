@@ -25,7 +25,7 @@ Die Smart-Tag-Funktion kann als Add-on zu [!DNL Experience Manager] erworben wer
 
 >[!IMPORTANT]
 >
->Wenn Ihre [!DNL Experience Manager Assets]-Bereitstellungen nach [August 2020 Release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) erstellt wurden, wird [!DNL Adobe Developer Console] standardmäßig integriert. Dadurch wird die Konfiguration der Smart-Tags-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die Integration anhand der folgenden Anweisungen manuell konfigurieren.
+>Wenn Ihre [!DNL Experience Manager Assets]-Bereitstellungen nach [August 2020 Release](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) erstellt wurden, wird [!DNL Adobe Developer Console] standardmäßig integriert. Dadurch wird die Konfiguration der Smart-Tag-Funktionalität beschleunigt. Bei älteren Bereitstellungen können Administratoren die Integration anhand der folgenden Anweisungen manuell konfigurieren.
 
 ## Integration mit der Adobe Developer Console {#aio-integration}
 
@@ -77,7 +77,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder „Payload�
 
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]** auf.
 1. Rufen Sie die Seite **[!UICONTROL Konfiguration des technischen Adobe IMS-Kontos]** auf und geben Sie den gewünschten **[!UICONTROL Titel]** ein.
-1. Geben Sie im Feld **[!UICONTROL Autorisierungsserver]** die `https://ims-na1.adobelogin.com`-URL ein.
+1. Geben Sie im Feld **[!UICONTROL Autorisierungs-Server]** die `https://ims-na1.adobelogin.com`-URL ein.
 1. Geben Sie im Feld **[!UICONTROL API-Schlüssel]** die **[!UICONTROL Client-ID]** aus der [!DNL Adobe Developer Console] ein.
 1. Geben Sie im Feld **[!UICONTROL Client-Geheimnis]** den geheimen **[!UICONTROL Client-Schlüssel]** aus der [!DNL Adobe Developer Console] ein. Klicken Sie auf die Option **[!UICONTROL Client-Geheimnis abrufen]**, um es anzuzeigen.
 1. Klicken Sie in der [!DNL Adobe Developer Console] in Ihrem Projekt am linken Rand auf **[!UICONTROL Dienstkonto (JWT)]**. Klicken Sie auf die Registerkarte **[!UICONTROL JWT generieren]**. Klicken Sie auf **[!UICONTROL Kopieren]**, um die angezeigte **[!UICONTROL JWT-Payload]** zu kopieren. Geben Sie diesen Wert im Feld **[!UICONTROL Payload]** in [!DNL Experience Manager] ein. Klicken Sie auf **[!UICONTROL Erstellen]**.
@@ -109,7 +109,7 @@ Wenn das Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Gehen Sie wie
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie im Projekt zum vorhandenen Service. Laden Sie das neue Zertifikat hoch und konfigurieren Sie es. Weitere Informationen zur Konfiguration finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-aio-integration).
 
-## Automatisches Tagging beim Hochladen von Assets aktivieren (Optional) {#enable-smart-tagging-for-uploaded-assets}
+## Aktivieren des automatischen Tagging beim Hochladen von Assets (optional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools > Workflow > Modelle]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** das Workflow-Modell **[!UICONTROL DAM Update Asset]** aus.
