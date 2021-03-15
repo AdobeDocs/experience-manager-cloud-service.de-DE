@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 
    ![Der Ordner „Modelle“](../assets/models-folder.png)
 1. Tippen oder klicken Sie auf **Erstellen**.
-1. Geben Sie einen **Modelltitel**, **Tags** und **Beschreibung** an. Sie können auch **Modell** aktivieren bzw. deaktivieren, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert ist.
+1. Geben Sie einen **Modell-Titel**, **Tags** und eine **Beschreibung** an. Sie können auch **Modell aktivieren** aus- oder abwählen, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert wird.
 
    ![Erstellen eines Modells](../assets/models-create.png)
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **Öffnen**, um Ihr Modell zu konfigurieren.
