@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
 source-wordcount: '4600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,9 +129,9 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
 
 >[!NOTE]
 >
->Vorlagen sind leistungsstarke Tools zur Optimierung Ihres Arbeitsablaufs bei der Seitenerstellung. Allerdings können zu viele Vorlagen die Autoren überwältigen und die Erstellung von Seiten verwirrend machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
+>Vorlagen sind leistungsstarke Tools zur Optimierung des Seitenerstellungs-Workflows. Allerdings können zu viele Vorlagen die Autoren überwältigen und das Erstellen von Seiten unübersichtlich machen. Eine gute Faustregel ist, die Anzahl der Vorlagen unter 100 zu halten.
 >
->Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1000 Vorlagen zu verwenden.
+>Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1.000 Vorlagen zu verwenden.
 
 ### Definieren von Vorlageneigenschaften – Vorlagenautor   {#defining-template-properties-template-author}
 
@@ -592,7 +592,7 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 ![Seiteneigenschaften](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliothekn**.
+* Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliotheken**.
 
    ![Client-seitige Bibliotheken](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
