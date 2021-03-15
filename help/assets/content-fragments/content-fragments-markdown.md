@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
 Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragment-Editor die *Markdown*-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern:
 
@@ -18,7 +18,7 @@ Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/conte
 
 Sie können Folgendes definieren:
 
-* [Überschriftsnotation ](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation) 
+* [Überschriftsnotation ](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Absätze und Zeilenumbrüche](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Bilder](/help/assets/content-fragments/content-fragments-markdown.md#images)
@@ -28,7 +28,7 @@ Sie können Folgendes definieren:
 * [Code-Blöcke](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
 * [Umgekehrter Schrägstrich als Escape-Zeichen](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
-## Überschriftsnotation {#heading-notation} 
+## Überschriftsnotation {#heading-notation}
 
 Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Rautezeichen (#) wird für Ü1, zwei Rautezeichen (# #) werden für Ü2 usw. verwendet. Sie können bis zu 6 Rautezeichen verwenden. Beispiel:
 
@@ -172,7 +172,7 @@ Beispiel:
 
 ## Code-Blöcke {#code-blocks}
 
-Codeblöcke werden in der Regel verwendet, um den Quellcode zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
 
     `This is a normal paragraph.`
 
