@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmente zusammen mit der AEM GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme bereitzustellen. Die Möglichkeit, eine einzelne API-Abfrage anzupassen, ermöglicht Ihnen, den spezifischen Inhalt abzurufen und bereitzustellen, den Sie wiedergeben möchten/müssen (als Antwort auf die einzelne API-Abfrage).
+Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmente zusammen mit der AEM GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmen
 
 Ein Headless-Content-Management-System (CMS) ist:
 
-* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Back-End-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*
+* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Back-End-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
 
    Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
@@ -44,7 +44,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 GraphQL ist:
 
-* &quot;*...eine Abfrage für APIs und eine Laufzeitumgebung zum Erfüllen dieser Abfragen mit Ihren vorhandenen Daten.*&quot;
+* „*... eine Abfragesprache für APIs und eine Laufzeitumgebung zur Erfüllung dieser Abfragen mit Ihren vorhandenen Daten.*“
 
    Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
@@ -52,7 +52,7 @@ Mit der [AEM GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für
 
 ## AEM GraphQL-API {#aem-graphql-api}
 
-Für Adobe Experience as a Cloud Experience wurde eine benutzerdefinierte Implementierung der Standard-GraphQL-API entwickelt. Weitere Informationen finden Sie unter [AEM GraphQL API für die Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md).
+Für Adobe Experience as a Cloud Service wurde eine benutzerdefinierte Implementierung der Standard-GraphQL-API entwickelt. Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 Die Implementierung der AEM GraphQL-API basiert auf den [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java).
 
@@ -78,7 +78,7 @@ Inhaltsfragmente:
 
 Diese [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md):
 
-* Werden zum Generieren der [Schema](https://graphql.org/learn/schema/) verwendet, sobald **Aktiviert**.
+* werden verwendet, um die [Schemas](https://graphql.org/learn/schema/) zu erzeugen, sobald sie **aktiviert** sind.
 
 * stellen die für GraphQL erforderlichen Datentypen und Felder bereit. Sie stellen sicher, dass Ihr Programm nur das anfordert, was möglich ist, und das erhält, was erwartet wird.
 
@@ -100,7 +100,7 @@ Die **[Fragmentreferenz](/help/assets/content-fragments/content-fragments-models
 
 ### JSON-Vorschau {#json-preview}
 
-Um beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu helfen, können Sie die Vorschau [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md) durchführen.
+Als Hilfe beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle können Sie eine Vorschau der [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md) anzeigen.
 
 ## Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
