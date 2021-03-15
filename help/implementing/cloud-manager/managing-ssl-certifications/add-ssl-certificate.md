@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 74%
 # Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Darüber hinaus muss jedes Zertifikat ein X.509 TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel sein.
+>AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
 
-Die Bereitstellung eines Zertifikats dauert einige Tage und es wird empfohlen, Monate im Voraus für die Bereitstellung des Zertifikats zu sorgen. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) abrufen.
+Die Bereitstellung eines Zertifikats dauert einige Tage und es wird empfohlen, Monate im Voraus für die Bereitstellung des Zertifikats zu sorgen. Weitere Informationen finden Sie unter [Beziehen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
 
 ## Zertifikatformat {#certificate-format}
 
@@ -46,24 +46,24 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen:
 
 1. Melden Sie sich bei Cloud Manager an.
-1. Navigieren Sie zum Bildschirm **Umgebung** von **Übersicht**.
-1. Klicken Sie im linken Navigationsmenü auf **SSL Certificates**. Auf diesem Bildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
+1. Navigieren Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
+1. Klicken Sie im linken Navigationsmenü auf **SSL-Zertifikate**. Auf diesem Bildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Klicken Sie auf **Hinzufügen SSL-Zertifikat**, um das Dialogfeld **Hinzufügen SSL-Zertifikat** zu öffnen.
+1. Klicken Sie auf **SSL-Zertifikat hinzufügen**, um das Dialogfeld **SSL-Zertifikat hinzufügen** zu öffnen.
 
-   * Geben Sie unter **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dabei kann es sich um einen beliebigen Namen handeln, mit dem Sie Ihr Zertifikat einfach referenzieren können.
-   * Fügen Sie die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
+   * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dabei kann es sich um einen beliebigen Namen handeln, mit dem Sie Ihr Zertifikat einfach referenzieren können.
+   * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
 Alle drei Felder sind nicht optional und müssen ausgefüllt werden.
 
       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
 
       >[!NOTE]
-      >Alle erkannten Fehler werden angezeigt. Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
+      >Eventuell erkannte Fehler werden angezeigt. Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
 
-1. Klicken Sie auf **Speichern**, um das Zertifikat zu senden. Es wird als neue Zeile in der Tabelle angezeigt.
+1. Klicken Sie auf **Speichern**, um das Zertifikat zu übermitteln. Es wird als neue Zeile in der Tabelle angezeigt.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
@@ -88,4 +88,4 @@ Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüss
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 
-Cloud Manager erwartet, dass das SSL-Zertifikat mindestens 90 Tage gültig ist.: Sie sollten die Gültigkeit der Zertifikatskette überprüfen.
+Cloud Manager erwartet, dass das SSL-Zertifikat mindestens 90 Tage gültig ist. Sie sollten die Gültigkeit der Zertifikatkette überprüfen.
