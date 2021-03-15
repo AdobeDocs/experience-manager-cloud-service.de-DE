@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Die Rich-Text-Bearbeitung ermöglicht folgende Formatierungen:
    * Suchen/Ersetzen
    * Rechtschreibprüfung
    * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Inhaltsfragment](#inserting-content-fragment-into-your-fragment) einfügen verfügbar, wenn Ihr  **mehrzeiliges** Textfeld mit  **Fragmentverweis** zulassen konfiguriert wurde.
+* [Inhaltsfragment einfügen](#inserting-content-fragment-into-your-fragment); verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
 
 Die [Aktionen](#actions) sind ebenfalls über den Vollbild-Editor verfügbar.
 
@@ -155,7 +155,7 @@ Für weitere [Aktionen](#actions) können Sie auch den Vollbild-Editor öffnen.
 
 ### Fragmentreferenzen {#fragment-references}
 
-Wenn das Inhaltsfragmentmodell Fragmentverweise enthält, stehen Ihren Fragmentverfassern möglicherweise zusätzliche Optionen zur Verfügung:
+Wenn das Inhaltsfragmentmodell Fragmentreferenzen enthält, stehen Ihren Fragmentautoren möglicherweise zusätzliche Optionen zur Verfügung:
 
 * [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)
 * [Neues Inhaltsfragment](#fragment-references-new-content-fragment)
@@ -164,22 +164,22 @@ Wenn das Inhaltsfragmentmodell Fragmentverweise enthält, stehen Ihren Fragmentv
 
 #### Inhaltsfragment bearbeiten {#fragment-references-edit-content-fragment}
 
-Die Option **Inhaltsfragment bearbeiten** wird geöffnet
-eine neue Registerkarte des Browsers mit geöffnetem Inhaltsfragment im Inhaltsfragmenteditor.
+Die Option **Inhaltsfragment bearbeiten** öffnet
+eine neue Browser-Registerkarte mit geöffnetem Inhaltsfragment im Inhaltsfragment-Editor.
 
 #### Neues Inhaltsfragment {#fragment-references-new-content-fragment}
 
-Mit der Option **Neues Inhaltsfragment** können Sie ein komplett neues Fragment erstellen. Um dies zu erreichen, wird eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten im Editor geöffnet.
+Mit der Option **Neues Inhaltsfragment** können Sie ein komplett neues Fragment erstellen. Dazu öffnet sich im Editor eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten.
 
-Anschließend können Sie ein neues Fragment erstellen, indem Sie:
+Anschließend können Sie wie folgt ein neues Fragment erstellen:
 
-1. Navigieren zum gewünschten Ordner und Auswählen des entsprechenden Ordners
-1. Wählen Sie **Weiter**.
-1. Festlegen von Eigenschaften; zum Beispiel **Title**.
-1. Wählen Sie **Erstellen**.
+1. Navigieren Sie zum gewünschten Ordner und wählen Sie ihn aus.
+1. Wählen Sie **Weiter** aus.
+1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
+1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
-   1. **Geben Sie** das Fragment zurück (zum ursprünglichen Fragment) und verweisen Sie auf das neue Fragment.
-   1. **** Open referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browserregisterkarte.
+   1. Mit **Fertig** kehren Sie (zum ursprünglichen Fragment) zurück und verweisen auf das neue Fragment.
+   1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browser-Registerkarte.
 
 ### Anzeigen von Schlüsselstatistiken {#viewing-key-statistics}
 
@@ -290,7 +290,7 @@ Anmerkungen:
 
    ![Anmerkungen](assets/cfm-variations-08.png)
 
-* Kann in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
+* Kann in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
 
 ### Einfügen von Assets in das Fragment {#inserting-assets-into-your-fragment}
 
@@ -327,12 +327,12 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
 ### Einfügen eines Inhaltsfragments in Ihr Fragment {#inserting-content-fragment-into-your-fragment}
 
-Um das Authoring von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
+Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
 
-Sie werden als Referenz an Ihrer aktuellen Position im Fragment hinzugefügt.
+Es wird an der aktuellen Position in Ihrem Fragment als Referenz hinzugefügt.
 
 >[!NOTE]
-Diese Option ist verfügbar, wenn Ihr **mehrzeiliger Text** mit **Fragmentverweis zulassen** konfiguriert ist.
+Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
@@ -341,24 +341,24 @@ Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiten
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
-1. Positionieren Sie den Cursor an der Position, an der Sie das Fragment hinzufügen möchten.
-1. Verwenden Sie das Symbol **Inhaltsfragment** einfügen, um das Suchdialogfeld zu öffnen.
+1. Positionieren Sie den Cursor über der Position, an der Sie das Fragment hinzufügen möchten.
+1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Inhaltsfragment einfügen**.
 
-   ![Inhaltsfragment-Symbol einfügen](assets/cfm-variations-13.png)
+   ![Symbol „Inhaltsfragment einfügen“](assets/cfm-variations-13.png)
 
 1. In diesem Dialogfeld haben Sie folgende Möglichkeiten:
 
-   * zum erforderlichen Fragment im Ordner &quot;Assets&quot;navigieren
-   * Suche nach dem Fragment
+   * Navigieren zum gewünschten Fragment im Assets-Ordner,
+   * Suchen nach dem Fragment,
 
-   Wählen Sie das gewünschte Fragment aus, indem Sie auf die Miniaturansicht klicken.
+   Nachdem Sie das gewünschte Fragment gefunden haben, klicken Sie auf die Miniaturansicht, um es auszuwählen.
 
-1. Verwenden Sie **Wählen Sie**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) einen Verweis auf das ausgewählte Inhaltsfragment hinzuzufügen.
+1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
-   * **Text**: der Verweis wird vollständig aus dem Fragment verloren.
-   * **Markdown**: der Verweis bleibt bestehen.
+   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern in:
+   * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
+   * **Markdown**: Die Referenz bleibt bestehen.
 
 
 ## Verwalten von Varianten   {#managing-variations}
