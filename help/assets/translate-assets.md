@@ -19,7 +19,7 @@ Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdiens
 
 Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in AEM importiert. Wenn Ihr Übersetzungsanbieter mit AEM integriert ist, werden die Assets automatisch zwischen AEM und dem Übersetzungsanbieter gesendet.
 
-Maschinelle Übersetzung: Der Dienst für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
+Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -78,12 +78,12 @@ Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vor
 
 ### Erstellen eines Sprachstamms {#create-a-language-root}
 
-Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprachcode als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder beliebigen Ebene im Sprachstamm erstellen.
+Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprach-Code als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder beliebigen Ebene im Sprachstamm erstellen.
 
-Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Assetknotens im Repository verwendet und bestimmt daher den Pfad des Assets. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
+Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Asset-Knotens im Repository verwendet und bestimmt daher den Pfad des Assets. (*&lt;Server>:&lt;Port>/assets.html/content/dam/it/*)
 
 1. Tippen/klicken Sie in der Assets-Konsole auf **[!UICONTROL Erstellen]** und wählen Sie im Menü die Option **[!UICONTROL Ordner]** aus.
-1. Geben Sie in den Namensfeldtyp den Ländercode im Format `<language-code>` ein.
+1. Geben Sie in den Namensfeldtyp den Länder-Code im Format `<language-code>` ein.
 1. Klicken oder tippen Sie auf **[!UICONTROL Erstellen]**. Der Sprachstamm wird in der Konsole „Assets“ erstellt.
 
 ### Anzeigen von Sprachstämmen {#view-language-roots}
@@ -221,7 +221,7 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 ### Nur Struktur erstellen  {#create-structure-only}
 
-Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
+Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
 1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
 1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
@@ -233,21 +233,21 @@ Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchi
 
 ## Anwenden von Übersetzungs-Cloud-Services auf Ordner {#applying-translation-cloud-services-to-folders}
 
-Mit Adobe Experience Manager (AEM) können Sie von cloudbasierten Übersetzungsdiensten von Ihrem bevorzugten Übersetzungsanbieter Gebrauch machen, um sicherzustellen, dass Ihre Assets basierend auf Ihren Anforderungen übersetzt werden.
+Mit Adobe Experience Manager (AEM) können Sie von Cloud-basierten Übersetzungs-Services von Ihrem bevorzugten Übersetzungsanbieter Gebrauch machen, um sicherzustellen, dass Ihre Assets basierend auf Ihren Anforderungen übersetzt werden.
 
 Sie können den Übersetzungs-Cloud-Service direkt auf Ihren Asset-Ordner anwenden, sodass die Assets in den Übersetzungs-Workflows verwendet werden können.
 
-### Anwenden von Übersetzungsdiensten {#applying-the-translation-services}
+### Anwenden von Übersetzungs-Services {#applying-the-translation-services}
 
-Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Ordner entfällt die Notwendigkeit, Übersetzungsdienste zu konfigurieren, wenn Sie Übersetzungs-Workflows erstellen oder aktualisieren.
+Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Ordner entfällt die Notwendigkeit, Übersetzungs-Services zu konfigurieren, wenn Sie Übersetzungs-Workflows erstellen oder aktualisieren.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, auf den Sie die Übersetzungsdienste anwenden möchten.
+1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, auf den Sie die Übersetzungs-Services anwenden möchten.
 1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]**, um die Seite **[!UICONTROL Ordnereigenschaften]** anzuzeigen.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Cloud-Services]**.
-1. Wählen Sie aus der Liste „Cloud-Service-Konfigurationen“ den gewünschten Übersetzungsanbieter aus. Wenn Sie beispielsweise Übersetzungsdienste von Microsoft nutzen möchten, wählen Sie **[!UICONTROL Microsoft Translator]** aus.
+1. Wählen Sie aus der Liste „Cloud-Service-Konfigurationen“ den gewünschten Übersetzungsanbieter aus. Wenn Sie beispielsweise Übersetzungs-Services von Microsoft nutzen möchten, wählen Sie **[!UICONTROL Microsoft Translator]** aus.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -255,7 +255,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Klicken/tippen Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und klicken Sie anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Der Übersetzungsdienst wird auf den Ordner angewendet.
+1. Klicken/tippen Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und klicken Sie anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Der Übersetzungs-Service wird auf den Ordner angewendet.
 
 ### Anwenden eines benutzerdefinierten Übersetzungs-Connectors {#applying-custom-translation-connector}
 
@@ -271,7 +271,7 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwe
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Geben Sie einen Titel und einen Namen für den Connector ein und klicken/tippen Sie dann auf **[!UICONTROL Erstellen]**. Der benutzerdefinierte Connector ist in der Connector-Liste in der Registerkarte **[!UICONTROL Cloud Services]** verfügbar. Die Beschreibung hierzu finden Sie in Schritt 5 von [Anwenden der Übersetzungsdienste](#applying-the-translation-services).
+1. Geben Sie einen Titel und einen Namen für den Connector ein und klicken/tippen Sie dann auf **[!UICONTROL Erstellen]**. Der benutzerdefinierte Connector ist in der Connector-Liste in der Registerkarte **[!UICONTROL Cloud Services]** verfügbar. Die Beschreibung hierzu finden Sie in Schritt 5 von [Anwenden der Übersetzungs-Services](#applying-the-translation-services).
 1. Führen Sie einen beliebigen unter „Erstellen von Übersetzungsprojekten“ beschriebenen Übersetzungs-Workflow aus, wenn Sie den benutzerdefinierten Connector angewendet haben. Überprüfen Sie die Details des Connectors in der Kachel **[!UICONTROL Zusammenfassung der Übersetzung]** des Übersetzungsprojekts in der **[!UICONTROL Projektekonsole]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
