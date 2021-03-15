@@ -1,6 +1,6 @@
 ---
 title: Versionshinweise für Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service – Versionshinweise für Version 2020.9.0.'
+description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experi
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am Donnerstag, 24. September 2020 veröffentlicht.
+Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 24. September 2020 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -69,7 +69,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 03. September 2020 veröffentlicht.
+Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 3. September 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
@@ -97,7 +97,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * In bestimmten Fällen wurde der CRA-Bericht nach einer erzwungenen Aktualisierung nicht aktualisiert. Dieses Problem wurde in dieser Version behoben.
 
-## Content Transfer-Tool {#content-transfer-tool}
+## Content Transfer Tool {#content-transfer-tool}
 
 In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für das Content Transfer Tool Version 1.1.10.
 
