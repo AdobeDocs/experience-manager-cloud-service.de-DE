@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
 source-wordcount: '1593'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Verwalten von Inhaltsfragmenten{#managing-content-fragments}
+# Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
 Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
@@ -69,7 +69,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 1. Wählen Sie **Erstellen** aus, um den Vorgang abzuschließen, und **öffnen** Sie das Fragment zur Bearbeitung oder wechseln Sie über **Fertig** wieder zur Konsole.
 
    >[!NOTE]
-   >Im Konsolenmodus **Liste** können Sie die **Ansicht Settings** aktualisieren, um die Spalte **Inhaltsfragmentmodell** zu aktivieren.
+   >Im **Listenmodus** der Konsole können Sie die **Anzeigeeinstellungen** aktualisieren, um die Spalte **Inhaltsfragmentmodell** zu aktivieren.
 
 ## Aktionen für ein Inhaltsfragment in der Asset-Konsole {#actions-for-a-content-fragment-assets-console}
 
@@ -149,7 +149,7 @@ Im Inhaltsfragment-Editor stehen verschiedene Modi und Aktionen zur Verfügung.
 
 ### Modi im Inhaltsfragment-Editor {#modes-in-the-content-fragment-editor}
 
-Navigieren Sie mithilfe der Symbole im Seitenbedienfeld durch die verschiedenen Modi:
+Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die vier Modi:
 
 * Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
 
@@ -163,21 +163,21 @@ Navigieren Sie mithilfe der Symbole im Seitenbedienfeld durch die verschiedenen 
 
 ### Symbolleistenaktionen im Inhaltsfragment-Editor {#toolbar-actions-in-the-content-fragment-editor}
 
-Einige Funktionen in der Symbolleiste oben stehen in mehreren Modi zur Verfügung:
+Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfügung:
 
 ![Modi](assets/cfm-managing-top-toolbar.png)
 
-* Unter dem Fragmentnamen sehen Sie den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des aktuellen Fragments verwendet wird:
+* Unter dem Fragmentnamen sehen Sie den Namen des [Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md), das zum Erstellen des aktuellen Fragments verwendet wurde:
 
-   * Der Name ist auch ein Link, über den der Modelleditor geöffnet wird.
+   * Der Name ist auch ein Link, über den der Modell-Editor geöffnet wird.
 
-* Siehe Status des Fragments; zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung. Der Status ist auch farbkodiert:
+* Zeigen Sie den Status des Fragments an, zum Beispiel Informationen zum Zeitpunkt der Erstellung, Änderung oder Veröffentlichung. Der Status ist auch farbcodiert:
 
    * Neu: grau
    * Entwurf: blau
-   * Veröffentlicht: green
+   * Veröffentlicht: grün
    * Geändert: orange
-   * Deaktiviert: red
+   * Deaktiviert: rot
 
 * **[Veröffentlichen](#publishing-and-referencing-a-fragment)** Sie das Fragment.
 
@@ -327,8 +327,8 @@ Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentli
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Sie können folgendermaßen veröffentlicht werden:
 
-* Nach der Erstellung; mit [Aktionen, die in der Assets-Konsole](#actions-for-a-content-fragment-assets-console) verfügbar sind.
-* Klicken Sie im Inhaltsfragment-Editor [a1/>.](#toolbar-actions-in-the-content-fragment-editor)
+* Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
+* Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
 * Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
