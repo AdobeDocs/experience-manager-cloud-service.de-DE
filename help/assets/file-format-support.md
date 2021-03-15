@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 93%
 
 Darüber hinaus bietet [!DNL Experience Manager Assets] erweiterte Unterstützung zum Generieren von Vorschauen und Ausgabedarstellungen sowie zum Extrahieren von Metadaten und Text für die Volltextindizierung. Diese erweiterte Unterstützung wird mithilfe von [Asset-Microservices](asset-microservices-configure-and-use.md) bereitgestellt.
 
-Zu den Highlights für die Asset-Konvertierung mithilfe von Asset-Mikrodiensten zählen:
+Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zählen:
 
-* Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Diensten erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.
+* Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Services erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
 * Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
 * Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten](#audio-formats).
 
-In der folgenden Legende wird beschrieben, wie gut die einzelnen Formate unterstützt werden.
+Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt wird.
 
 | Unterstützungsebene | Beschreibung |
 | ------------- | --------------------------- |
@@ -92,7 +92,7 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media
 
 ## 3D-Formate {#support-3d-formats}
 
-Die folgenden 3D-Formate werden unterstützt.
+Die folgenden 3D-Formate werden unterstützt:
 
 Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
@@ -226,10 +226,10 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
-* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 10 GB. Beim Hochladen sehr großer Assets schlägt der Vorgang der Metadaten-Extraktion manchmal fehl.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 10 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
 
 >[!MORELIKETHIS]
 >
 >* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md)
->* [Unterstützte Dateiformate für intelligentes Tagging textbasierter Assets](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Unterstützte Dateiformate für das Tagging textbasierter Assets mit Smart-Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
