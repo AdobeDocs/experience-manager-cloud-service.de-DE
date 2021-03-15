@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 68%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->Diese Seite sollte zusammen gelesen werden mit:
+>Diese Seite sollte zusammen mit folgenden Themen gelesen werden:
 >
 >* [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
 >* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
@@ -29,7 +29,7 @@ Sehen Sie dazu:
 
 * und einige [GraphQL-Beispielabfragen](#graphql-sample-queries), die auf der Beispielstruktur für Inhaltsfragmente basieren (Inhaltsfragmentmodelle und verwandte Inhaltsfragmente).
 
-## GraphQL für AEM - Zusammenfassung der Erweiterungen {#graphql-extensions}
+## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 
 Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der Standard-GraphQL-Spezifikation. Für GraphQL-Abfragen mit AEM gibt es einige Erweiterungen:
 
@@ -37,42 +37,42 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Verwenden Sie den Modellnamen, z. B. „city“
 
 * Wenn Sie eine Ergebnisliste erwarten:
-   * dem Modellnamen `List` hinzufügen; zum Beispiel `cityList`
-   * Siehe [Beispielseite - Alle Informationen zu allen Abfragen](#sample-all-information-all-cities)
+   * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
+   * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](#sample-all-information-all-cities)
 
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
-   * Siehe [Beispieldaten - Alle Abfragen mit dem Namen &quot;Aufträge&quot;oder &quot;Schmidt&quot;](#sample-all-persons-jobs-smith)
+   * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](#sample-all-persons-jobs-smith)
 
 * Es gibt ebenfalls ein logisches UND, es ist aber (oft) implizit.
 
 * Sie können Feldnamen abfragen, die den Feldern im Inhaltsfragmentmodell entsprechen.
-   * Siehe [Beispieldatei - Vollständige Abfrage der Geschäftsführer und Mitarbeiter einer Firma](#sample-full-details-company-ceos-employees)
+   * [Beispielabfrage – Vollständige Details über den CEO und die Mitarbeiter eines Unternehmens](#sample-full-details-company-ceos-employees)
 
 * Zusätzlich zu den Feldern Ihres Modells gibt es einige systemgenerierte Felder (vor dem Unterstrich):
 
    * Für Inhalte:
 
-      * `_locale` : die Sprache anzeigen; basierend auf dem Language Manager
-         * Siehe [Abfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : Metadaten für Ihr Fragment anzeigen
-         * Siehe [Beispieldatei-Abfrage für Metadaten - Liste der Metadaten für Prämien mit dem Titel GB](#sample-metadata-awards-gb)
-      * `_model` : Suchen nach einem Inhaltsfragmentmodell zulassen (Pfad und Titel)
-         * Siehe [Abfrage eines Inhaltsfragmentmodells eines Modells](#sample-wknd-content-fragment-model-from-model)
+      * `_locale`: Anzeigen der Sprache; basierend auf Language Manager
+         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata`: Anzeigen von Metadaten für Ihr Fragment
+         * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](#sample-metadata-awards-gb)
+      * `_model`: Zulassen von Abfragen nach einem Inhaltsfragmentmodell (Pfad und Titel)
+         * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](#sample-wknd-content-fragment-model-from-model)
       * `_path` : den Pfad zu Ihrem Inhaltsfragment im Repository
-         * Siehe [Abfrage eines Beispiels - Ein einzelnes spezifisches Stadtfragment](#sample-single-specific-city-fragment)
-      * `_reference` : Verweise anzeigen; einschließlich Inline-Verweise im Rich-Text-Editor
-         * Siehe [Abfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Referenzen](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : bestimmte Varianten in Ihrem Inhaltsfragment anzeigen
+         * Siehe [Beispielabfrage – ein Einzelstadtfragment](#sample-single-specific-city-fragment)
+      * `_reference`: Anzeigen von Verweisen; einschließlich Inline-Verweisen im Rich-Text-Editor
+         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation`: Anzeige bestimmter Varianten in Ihrem Inhaltsfragment
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](#sample-cities-named-variation)
    * Und Operationen:
 
-      * `_operator` : bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`
-         * Siehe [Beispieldaten - Alle Abfragen ohne den Namen &quot;Aufträge&quot;](#sample-all-persons-not-jobs)
-      * `_apply` : bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
-         * Siehe [Beispielfilter - Abfrage eines Arrays mit einem Element, das mindestens einmal auftreten muss](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : die Groß-/Kleinschreibung bei der Abfrage ignorieren
-         * Siehe [BeispielAbfrage - Alle Städte mit SAN im Namen, unabhängig von case](#sample-all-cities-san-ignore-case)
+      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`
+         * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
+      * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
+         * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
+         * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](#sample-all-cities-san-ignore-case)
 
 
 
@@ -85,11 +85,11 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 * GraphQL-Vereinigungstypen werden unterstützt:
 
    * Verwenden Sie `... on`
-      * Siehe [BeispielAbfrage für ein Inhaltsfragment eines bestimmten Modells mit einem Inhaltsverweis](#sample-wknd-fragment-specific-model-content-reference)
+      * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL – Beispielabfragen unter Verwendung der Beispielstruktur für Inhaltsfragmente {#graphql-sample-queries-sample-content-fragment-structure}
 
-In diesen Beispielergebnissen finden Sie Abfragen zur Veranschaulichung von Abfragen und Beispielergebnissen.
+In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispielergebnissen veranschaulicht.
 
 >[!NOTE]
 >
@@ -99,11 +99,11 @@ In diesen Beispielergebnissen finden Sie Abfragen zur Veranschaulichung von Abfr
 
 >[!NOTE]
 >
->Die Abfragen basieren auf der Struktur des Musterinhaltsfragments für die Verwendung mit GraphQL](#content-fragment-structure-graphql)[
+>Die Beispielabfragen basieren auf der [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](#content-fragment-structure-graphql).
 
 ### Beispielabfrage – Alle verfügbaren Schemas und Datentypen {#sample-all-schemes-datatypes}
 
-Dadurch werden alle `types` für alle verfügbaren Schema zurückgegeben.
+Dadurch werden alle `types` für alle verfügbaren Schemas zurückgegeben.
 
 **Beispielabfrage**
 
@@ -327,7 +327,7 @@ query {
 }
 ```
 
-### Beispiel-Abfrage - Ein einzelnes spezifisches Stadtfragment {#sample-single-specific-city-fragment}
+### Beispielabfrage – ein Einzelstadtfragment {#sample-single-specific-city-fragment}
 
 Dies ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem bestimmten Speicherort im Repository zurückzugeben.
 
@@ -1104,12 +1104,12 @@ query {
 
 ## Beispielabfragen unter Verwendung des WKND-Projekts {#sample-queries-using-wknd-project}
 
-Diese Beispielabfragen basieren auf dem WKND-Projekt. Dies hat Folgendes:
+Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
 
 * Inhaltsfragmentmodelle verfügbar unter:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* Inhaltsfragmente (und andere Inhalte) verfügbar unter:
+* Inhaltsfragmente (und anderere Inhalte) verfügbar unter:
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
@@ -1120,8 +1120,8 @@ Diese Beispielabfragen basieren auf dem WKND-Projekt. Dies hat Folgendes:
 
 Diese Beispielabfrage untersucht:
 
-* alle Inhaltsfragmente des Typs `article`
-* mit den Eigenschaften `path`und `author`.
+* Alle Inhaltsfragmente vom Typ `article`
+* Mit den Eigenschaften `path`und `author`.
 
 **Beispielabfrage**
 
@@ -1140,7 +1140,7 @@ Diese Beispielabfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* alle Inhaltsfragmente des Typs `adventure`
+* Alle Inhaltsfragmente vom Typ `adventure`
 * metadata
 
 **Beispielabfrage**
@@ -1201,8 +1201,8 @@ Diese Abfrage untersucht:
 
 Diese Beispielabfrage untersucht:
 
-* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
-   * innerhalb dieses Rahmens alle Inhaltsformate:
+* Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
+   * Darin alle Content-Formate:
       * HTML
       * Markdown
       * Nur Text
@@ -1227,11 +1227,11 @@ Diese Beispielabfrage untersucht:
 }
 ```
 
-### Abfrage eines Beispiels für ein Inhaltsfragmentmodell aus einem Modell {#sample-wknd-content-fragment-model-from-model}
+### Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells {#sample-wknd-content-fragment-model-from-model}
 
 Diese Beispielabfrage untersucht:
 
-* für ein einzelnes Inhaltsfragment
+* Für ein einzelnes Inhaltsfragment
    * Details des zugrunde liegenden Inhaltsfragmentmodells
 
 **Beispielabfrage**
@@ -1255,8 +1255,8 @@ Diese Beispielabfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
-   * in diesem Abschnitt der Pfad und der Autor des referenzierten (verschachtelten) Fragments
+* Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
+   * Darin den Pfad und Autor des referenzierten (verschachtelten) Fragments
 
 >[!NOTE]
 >
@@ -1283,12 +1283,12 @@ Diese Abfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* für mehrere Inhaltsfragmente des Typs `bookmark`
-   * mit Fragmentverweisen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
+* Mehrere Inhaltsfragmente vom Typ `bookmark`
+   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
 
 >[!NOTE]
 >
->Das Feld `fragments` enthält den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
 
 ```xml
 {
@@ -1309,21 +1309,21 @@ Diese Abfrage untersucht:
 }
 ```
 
-### Abfrage eines Beispiels für ein Inhaltsfragment eines bestimmten Modells mit Inhaltsverweisen{#sample-wknd-fragment-specific-model-content-reference}
+### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit Inhaltsreferenzen {#sample-wknd-fragment-specific-model-content-reference}
 
 Es gibt zwei Varianten dieser Abfrage:
 
-1. So geben Sie alle Inhaltsverweise zurück.
-1. So geben Sie die spezifischen Inhaltsreferenzen des Typs `attachments` zurück.
+1. Zurückgeben aller Inhaltsreferenzen.
+1. Zurückgeben der spezifischen Inhaltsreferenzen vom Typ `attachments`
 
-Diese Abfragen durchlaufen:
+Diese Abfragen untersuchen:
 
-* für mehrere Inhaltsfragmente des Typs `bookmark`
-   * mit Inhaltsverweisen auf andere Fragmente
+* Mehrere Inhaltsfragmente vom Typ `bookmark`
+   * Mit Inhaltsreferenzen auf andere Fragmente.
 
 #### Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen {#sample-wknd-multiple-fragments-prefetched-references}
 
-Die folgende Abfrage gibt alle Inhaltsverweise mit `_references` zurück:
+Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_references` zurück:
 
 ```xml
 {
@@ -1357,13 +1357,13 @@ Die folgende Abfrage gibt alle Inhaltsverweise mit `_references` zurück:
 }
 ```
 
-#### Abfrage für mehrere Inhaltsfragmente mit Anhängen {#sample-wknd-multiple-fragments-attachments}
+#### Beispielabfrage für mehrere Inhaltsfragmente mit Anhängen {#sample-wknd-multiple-fragments-attachments}
 
-Die folgende Abfrage gibt alle `attachments` - ein bestimmtes Feld (Untergruppe) des Typs `content-reference` zurück:
+Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Untergruppe) vom Typ `content-reference`:
 
 >[!NOTE]
 >
->Für das Feld `attachments` ist der Datentyp `content-reference` ausgewählt, wobei verschiedene Formulare ausgewählt sind.
+>Das Feld `attachments` hat den Datentyp `content-reference`, wobei verschiedene Formen ausgewählt sind.
 
 ```xml
 {
@@ -1400,12 +1400,12 @@ Die folgende Abfrage gibt alle `attachments` - ein bestimmtes Feld (Untergruppe)
 
 Diese Abfrage untersucht:
 
-* für ein einzelnes Inhaltsfragment des Typs `bookmark` an einem bestimmten Pfad
-   * in diesem Fall RTE Inline-Referenzen
+* Ein einzelnes Inhaltsfragment vom Typ `bookmark` an einem bestimmten Pfad
+   * Darin die RTE-Inline-Verweise
 
 >[!NOTE]
 >
->Die Inline-Referenzen von RTE werden in `_references` hydriert.
+>Die RTE-Inline-Verweise werden in `_references` realisiert.
 
 **Beispielabfrage**
 
@@ -1446,8 +1446,8 @@ Diese Abfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* für ein einzelnes Inhaltsfragment des Typs `article` an einem bestimmten Pfad
-   * innerhalb dessen die Daten im Zusammenhang mit der Änderung: `variation1`
+* Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
+   * Darin die Daten im Zusammenhang mit der Variante: `variation1`
 
 **Beispielabfrage**
 
@@ -1472,7 +1472,7 @@ Diese Abfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* für Inhaltsfragmente des Typs `article` mit einer bestimmten Variante: `variation1`
+* Inhaltsfragmente vom Typ `article` mit einer bestimmten Variante: `variation1`
 
 **Beispielabfrage**
 
@@ -1497,7 +1497,7 @@ Diese Abfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* für Inhaltsfragmente des Typs `article` innerhalb des Gebietsschemas `fr`
+* Inhaltsfragmente vom Typ `article` innerhalb des Gebietsschemas `fr`
 
 **Beispielabfrage**
 
@@ -1543,8 +1543,8 @@ Die grundlegenden Felder, die das Unternehmen definieren, sind:
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
 | Unternehmensname | Einzeilentext |  |
-| CEO | Fragmentverweis (Einzelfeld) | [Person](#model-person) |
-| Mitarbeiter | Fragmentverweis (Mehrfeld) | [Person](#model-person) |
+| CEO | Fragmentreferenz (Einzelfeld) | [Person](#model-person) |
+| Mitarbeiter | Fragmentreferenz (Mehrfeld) | [Person](#model-person) |
 
 #### Person {#model-person}
 
@@ -1554,7 +1554,7 @@ Die Felder, die eine Person definieren, die auch ein Mitarbeiter sein kann:
 |--- |--- |--- |
 | Name | Einzeilentext |  |
 | Vorname | Einzeilentext |  |
-| Auszeichnungen | Fragmentverweis (Mehrfeld) | [Auszeichnung](#model-award) |
+| Auszeichnungen | Fragmentreferenz (Mehrfeld) | [Auszeichnung](#model-award) |
 
 #### Auszeichnung {#model-award}
 
