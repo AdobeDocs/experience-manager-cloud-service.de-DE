@@ -146,7 +146,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
 * Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
 
-Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=de).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -187,7 +187,7 @@ In AEM 6.3 und höheren Versionen werden die Videos nun über HTTPS gestreamt (
 * Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut.
 * Wenn Sie eine HTTP-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut und es gibt keine Probleme mit gemischten Inhalten im Webbrowser.
 
-HLS ist ein Apple-Standard für adaptives Videostreaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Darüber hinaus können Kunden einen beliebigen Punkt im Video „suchen“, ohne auf den Download des restlichen Videos zu warten.
+HLS ist ein Apple-Standard für adaptives Video-Streaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Darüber hinaus können Kunden einen beliebigen Punkt im Video „suchen“, ohne auf den Download des restlichen Videos zu warten.
 
 Progressives Video wird bereitgestellt, indem das Video lokal auf ein Desktop-System oder Mobilgerät eines Anwenders heruntergeladen und gespeichert wird.
 
@@ -404,7 +404,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 |--- |--- |--- |--- |
 | Quelle | 1920 x 1080 | 1 | 3 |
 | Kodiert | 960 x 540 | 2 | 2 |
-| Kodiert | 640 x 360 | 3 | 1 |
+| Kodiert | 640 x 360 | 3 | 3 |
 | Kodiert | 480 x 270 | 4 | 4 |
 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
@@ -1058,7 +1058,7 @@ Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
 Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kunden die Videos leichter finden können und zusätzliche Details zum Videoinhalt erhalten.
 
-Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api).
+Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api).
 
 **So fügen Sie einem Video Untertitel hinzu:**
 
