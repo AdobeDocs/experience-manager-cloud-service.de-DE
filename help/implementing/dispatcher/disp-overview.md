@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
 source-wordcount: '4119'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Die folgenden Dateien sind anpassbar und werden bei der Bereitstellung in Ihre C
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domänen-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus den `.vhost`-Dateien werden andere Dateien wie Neuschreibungen und Variablen einbezogen.
+Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus den `.vhost`-Dateien werden andere Dateien wie Neuschreibungen und Variablen einbezogen.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -370,7 +370,7 @@ Das Skript führt Folgendes aus:
 
 1. Es führt den Validator aus dem vorherigen Abschnitt aus, um sicherzustellen, dass nur die unterstützten Anweisungen enthalten sind. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
 2. Es führt den Befehl `httpd -t command` aus, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd gestartet werden kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein..
-3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistruktur](#file-structure) beschrieben unveränderlich sein sollen, nicht geändert wurde. Dies ist eine neue Prüfung, die mit AEM SDK-Version v2021.1.4738 eingeführt wurde und die auch Dispatcher Tools Version 2.0.36 enthält. Vor dieser Aktualisierung haben Kunden möglicherweise fälschlicherweise angenommen, dass alle lokalen SDK-Änderungen dieser unveränderlichen Dateien auch auf die Cloud-Umgebung angewendet werden.
+3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die, wie im Abschnitt [Dateistruktur](#file-structure) beschrieben, unveränderlich sein sollen, nicht geändert wurde. Dies ist eine neue Prüfung, die mit AEM SDK-Version v2021.1.4738 eingeführt wurde und die auch Dispatcher Tools Version 2.0.36 enthält. Vor dieser Aktualisierung haben Kunden möglicherweise fälschlicherweise angenommen, dass alle lokalen SDK-Änderungen dieser unveränderlichen Dateien auch auf die Cloud-Umgebung angewendet werden.
 
 Während einer Cloud Manager-Bereitstellung wird auch die `httpd -t syntax`-Prüfung ausgeführt und alle Fehler werden in das Protokoll `Build Images step failure` von Cloud Manager aufgenommen.
 
