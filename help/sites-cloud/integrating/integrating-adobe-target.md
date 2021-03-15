@@ -10,7 +10,7 @@ ht-degree: 81%
 ---
 
 
-# Integrieren mit Adobe Target{#integrating-with-adobe-target}
+# Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
 Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesserung der Content-Relevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
 
@@ -25,7 +25,7 @@ Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaft
 
 ## Erstellen der Adobe Target-Konfiguration {#create-configuration}
 
-1. Navigieren Sie zu **Tools** > **Cloud-Services**.
+1. Navigieren Sie zu **Tools** > **Cloud Services**.
    ![Navigation](assets/cloudservice1.png "Navigation")
 2. Wählen Sie **Adobe Target** aus.
 3. Klicken Sie auf die Schaltfläche **Erstellen**.
