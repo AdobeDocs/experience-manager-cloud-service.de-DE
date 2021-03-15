@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API können Sie mit AEM as a Cloud Service Ihre Erlebnisse zentral verwalten und kanalübergreifend bereitstellen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
 
@@ -24,15 +24,15 @@ Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Manageme
 
 ## Vergleich von Headful und Headless {#headful-headless}
 
-Dieses Dokument konzentriert sich auf das vollständige, kostenlose Implementierungsmodell von AEM. Egal, ob Kopf- oder Kopflos eine binäre Wahl in AEM sein müssen. Kopflose Funktionen können verwendet werden, um Inhalte zu verwalten und an verschiedene Endpunkte bereitzustellen und Ihren Inhaltserstellern gleichzeitig die Bearbeitung von Einzelseitenanwendungen zu ermöglichen. Alles in AEM.
+Dieses Dokument konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. In AEM muss die Entscheidung zwischen Headful und Headless aber keine Entweder-Oder-Entscheidung sein. Headless-Funktionen können verwendet werden, um Content zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Single Page Applications zu ermöglichen. Alles in AEM.
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument [Kopflos und Kopflos in AEM](/help/implementing/developing/headful-headless.md).
+>Weitere Informationen finden Sie im Dokument [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md).
 
 ## AEM as a Cloud Service und Headless {#aem-headless}
 
-AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungsmodell, das drei leistungsstarke Dienste bietet:
+AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungsmodell, das drei leistungsstarke Services bietet:
 
 1. Inhaltsmodelle
    * Inhaltsmodelle sind strukturierte Darstellungen von Inhalten.
@@ -40,7 +40,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
    * Inhaltsmodelle dienen als Grundlage für Inhaltsfragmente.
 1. Inhaltsfragmente
    * Inhaltsfragmente sind Instanziierungen von Inhaltsmodellen.
-   * Diese werden von Inhaltsautoren mit dem Inhaltsfragmente-Editor in AEM erstellt.
+   * Diese werden von Inhaltsautoren mit dem Inhaltsfragment-Editor in AEM erstellt.
    * Sie werden in AEM Assets gespeichert und in der Administrator-Benutzeroberfläche von Assets verwaltet.
 1. Inhalts-API für die Bereitstellung
    * Die AEM-GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
