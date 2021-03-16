@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1704'
 ht-degree: 20%
 
 ---
@@ -41,6 +41,8 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
+
+* [!DNL Experience Manager Assets] als eine  [!DNL Cloud Service] berechtigt ist, über eine vorkonfigurierte  [!DNL Brand Portal] Instanz zu verfügen. Der [!DNL Cloud Manager]-Benutzer kann [!DNL Brand Portal] unter [!DNL Experience Manager Assets] als [!DNL Cloud Service] aktivieren. Siehe [Aktivieren des Markenportals](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
 * Unternehmen können jetzt Assets mit [!DNL Brand Portal] ausgeben. Die Asset-Sourcing-Funktion nutzt [!DNL Brand Portal], um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotografien und Projekte zu beziehen. Siehe [Asset-Sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
