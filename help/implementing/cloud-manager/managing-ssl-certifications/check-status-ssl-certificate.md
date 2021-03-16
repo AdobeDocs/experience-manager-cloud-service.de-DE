@@ -2,10 +2,10 @@
 title: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 59%
+source-wordcount: '236'
+ht-degree: 58%
 
 ---
 
@@ -29,9 +29,9 @@ Zeigt an, dass Ihr SSL-Zertifikat trotz mehrfacher Benachrichtigungen abgelaufen
 
 Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**. Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden, wie in der folgenden Abbildung dargestellt.
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
