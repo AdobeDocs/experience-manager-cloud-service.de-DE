@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
+source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1748'
 ht-degree: 20%
 
 ---
@@ -227,12 +227,29 @@ Das Veröffentlichungsdatum für Best Practices Analyzer v2.1.2 ist der 18. Febr
    * Möglichkeit, sowohl den Ordnerpfad von vhosts als auch den Pfad zu vhost-Dateien zu verarbeiten.
    * Generieren von Bauerndateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.
 
+## [!DNL Adobe Experience Manager] als Cloud Service Foundation  {#aem-as-a-cloud-service-foundation}
 
+### Bekannte Probleme {#known-issues-foundation}
 
+**Beschreibung des Problems**
 
+In bestimmten Fällen kann ein lokaler Projekbuild während der Ausführung von `aemanalyser-maven-plugin` mit der folgenden Fehlermeldung fehlschlagen:
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**Problemumgehung**
 
+Um dieses Problem zu umgehen, wählen Sie die neueste Version von `aemanalyser-maven-plugin` in der übergeordneten `pom.xml`-Datei aus:
 
-
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 
