@@ -2,10 +2,10 @@
 title: Überprüfen des IP-Zulassungslistenstatus
 description: Überprüfen des IP-Zulassungslistenstatus
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 79%
+source-wordcount: '463'
+ht-degree: 78%
 
 ---
 
@@ -46,10 +46,11 @@ Sobald der Löschvorgang abgeschlossen ist, wird die IP-Zulassungsliste:
 
 Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**. Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
 
+>[!NOTE]
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
->[!NOTE]
->Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden, wie in der folgenden Abbildung dargestellt.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
