@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 translation-type: tm+mt
-source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
+source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 1. Konfigurieren Sie die Implementierungsoptionen.
 
-   ![](assets/setup-2.png)
+   ![](assets/setup-pipeline.png)
 
    Sie können den Auslöser definieren, mit dem die Pipeline gestartet wird:
 
@@ -74,8 +74,8 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    Das ist für Kunden nützlich, die die Prozesse stärker automatisieren möchten. Die verfügbaren Optionen sind:
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Fehler sofort**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
+   * **Sofort**  abbrechen: Wenn diese Option aktiviert ist, wird die Pipeline bei Auftreten eines wichtigen Fehlers abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort**  genehmigen: Bei Auswahl dieser Option wird die Pipeline automatisch fortgesetzt, sobald ein Fehler &quot;Wichtig&quot;auftritt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
 1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Experience Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die im Experience Audit stets enthalten sein sollten.
