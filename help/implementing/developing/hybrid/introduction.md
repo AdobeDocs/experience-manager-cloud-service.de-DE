@@ -80,10 +80,8 @@ Durch das Client-seitige Rendern reagieren Seitenelemente schneller; Interaktion
 >Technische Einzelheiten zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Artikeln:
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von React](getting-started-react.md)
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md)
-
 >
->
-Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
+>Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
 >* [SPA-Editor – Überblick](editor-overview.md).
 
 

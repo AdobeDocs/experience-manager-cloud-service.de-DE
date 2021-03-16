@@ -489,6 +489,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
+
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * die Eigenschaft:
@@ -501,6 +502,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
+
       `cq:allowedTemplates`
 Im 
 `jcr:content`-Knoten der erforderlichen Verzweigung.
@@ -582,12 +584,10 @@ Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 >Daher empfiehlt Adobe, einfach anzufangen, indem Sie Folgendes definieren:
 >
 >* nur die `cq:allowedTemplates`-Eigenschaft
-   >
-   >
-* nur im Site-Stamm
 >
+>* nur im Site-Stamm
 >
-Ein Beispiel finden Sie im Inhalt des [WKND-Tutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md): `/content/wknd/jcr:content`
+>Ein Beispiel finden Sie im Inhalt des [WKND-Tutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md): `/content/wknd/jcr:content`
 >
 >Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >
