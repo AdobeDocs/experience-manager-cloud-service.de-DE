@@ -2,7 +2,7 @@
 title: Überprüfen des Domain-Namenstatus
 description: Überprüfen des Domain-Namenstatus
 translation-type: tm+mt
-source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 71%
@@ -49,6 +49,6 @@ Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassun
 >[!NOTE]
 >Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
