@@ -2,7 +2,7 @@
 title: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 58%
@@ -32,6 +32,6 @@ Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassun
 >[!NOTE]
 >Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
