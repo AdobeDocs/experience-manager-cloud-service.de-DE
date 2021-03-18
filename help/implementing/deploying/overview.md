@@ -2,10 +2,10 @@
 title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 99%
+source-wordcount: '3246'
+ht-degree: 97%
 
 ---
 
@@ -102,7 +102,7 @@ Nach der Umstellung auf die neue Anwendungsversion:
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
    * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen)
 
-Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Details zur empfohlenen Projektumstrukturierung finden Sie in der [AEM-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html).
+Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Die Umstrukturierung zur Berücksichtigung dieser Trennung erfolgte in AEM 6.5 und Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Implementierung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über Package Manager installiert werden.
@@ -111,7 +111,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandener Code-Basis die in der [AEM-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/repository-restructuring.html) beschriebenen Repository-Umstrukturierung durchführen.
+Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Basen der Repository-Restrukturierung entsprechen, die durch die 6.5-Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
