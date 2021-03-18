@@ -2,10 +2,10 @@
 title: Phase nach der Migration
 description: Phase nach der Migration
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Als ein Benutzer können Sie in der Entwicklungsumgebung auf **CRXDE Lite** zugr
 >[!IMPORTANT]
 >Das Schreiben in unveränderliche Repositorys wie `/libs` und `/apps` zur Laufzeit führt zu Fehlern. Darüber hinaus haben Sie als Kunde keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
 
-Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](https://docs.adobe.com/help/de-DE/experience-manager-65/developing/devtools/developing-with-crxde-lite.html).
+Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
 ## Verwalten von Protokollen {#managing-logs}
 
