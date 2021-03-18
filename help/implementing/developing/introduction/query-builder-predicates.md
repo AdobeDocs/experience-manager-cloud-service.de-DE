@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 translation-type: tm+mt
-source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '2221'
-ht-degree: 100%
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -201,7 +201,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 ### memberOf {#memberof}
 
-Dieses Prädikat sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Dieses Prädikat sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
