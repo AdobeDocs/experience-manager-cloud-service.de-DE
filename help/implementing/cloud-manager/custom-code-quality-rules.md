@@ -2,9 +2,9 @@
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 73%
 
 ---
@@ -747,7 +747,7 @@ Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative 
 
 **Seit**: Version 2021.2.0
 
-AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie unter [Verwenden von Präprozessoren](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von geteilten Client-Bibliotheken in einem untergeordneten Ordner namens &quot;resources&quot;enthalten sein, damit sie effektiv in den Veröffentlichungsinstanzen referenziert werden können.
+AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie unter [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von geteilten Client-Bibliotheken in einem untergeordneten Ordner namens &quot;resources&quot;enthalten sein, damit sie effektiv in den Veröffentlichungsinstanzen referenziert werden können.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ Mit der Umstellung auf Asset-Mikrodienste für die Asset-Verarbeitung auf AEM Cl
 
 **Seit**: Version 2021.2.0
 
-Die Verwendung von statischen Vorlagen ist in AEM Projekten schon immer sehr häufig vorkommen, editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen - Bearbeitbar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). Die Migration von statischen zu bearbeitbaren Vorlagen kann weitgehend automatisiert werden, indem die [AEM Moderationstools](https://opensource.adobe.com/aem-modernize-tools/) verwendet werden.
+Die Verwendung von statischen Vorlagen ist in AEM Projekten schon immer sehr häufig vorkommen, editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen.](/help/implementing/developing/components/templates.md) Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der  [AEM Moderationstools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
 ### OakPAL - Verwendung älterer Foundation-Komponenten wird nicht empfohlen{#oakpal-usage-legacy}
 
