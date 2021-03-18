@@ -2,10 +2,10 @@
 title: Benennungskonventionen
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### JCR-Service-Programme {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
+[JcrUtil](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
 
 * `isValidName`
    * Stellt sicher, dass der Name nicht leer ist und nur gültige Zeichen enthält.
@@ -35,7 +35,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### Seiten-Manager {#page-manager}
 
-[PageManager](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
+[PageManager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
 
 ### Verhalten der AEM-Benutzeroberfläche {#ui-behavior}
 
