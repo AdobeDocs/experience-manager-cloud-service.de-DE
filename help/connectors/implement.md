@@ -2,10 +2,10 @@
 title: Implementieren von AEM-Connectoren
 description: Implementieren von AEM-Connectoren
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '968'
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,7 @@ Connectoren sollten sich an die in [diesem Artikel](/help/implementing/developin
 
 Darüber hinaus sollte nur Adobe Code in `/libs` schreiben, während Kunden und Partner in `/apps` schreiben.
 
-Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Dies wird in der [AEM-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/repository-restructuring.html) beschrieben.
+Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Diese Umstrukturierung erfolgte im Rahmen von AEM 6.5 und wird in der [AEM 6.5 Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) beschrieben.
 
 Es wird empfohlen, den Großteil des Connector-Codes unter `/apps/connectors/<vendor>` zu platzieren, um eine saubere Repository-Struktur für Kunden mit mehreren Connectoren zu unterstützen.
 
