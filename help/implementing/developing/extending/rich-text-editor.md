@@ -3,9 +3,9 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in  [!DNL Adobe Experi
 description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in  [!DNL Adobe Experience Manager]  as a Cloud Service zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1969'
 ht-degree: 100%
 
 ---
@@ -131,8 +131,10 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
+
 >
->Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
+>
+Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeldbearbeitungsmodus verfügbar sind:
 
@@ -159,8 +161,10 @@ Die [Text-Kernkomponente](https://docs.adobe.com/content/help/de-DE/experience-m
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
->Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
+>
+Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
 
 ## RTE-Symbolleiste konfigurieren     {#dialogfullscreen}
 
@@ -283,5 +287,4 @@ Unten finden Sie einen Beispielausschnitt zur Zuordnung des Befehls `Bold` zum C
 >* [Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md)
 >* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Konfigurieren des RTE für barrierefreie Websites](rte-accessible-content.md)
->* [Tutorial-Beispiel für die Erstellung von kombinierten Mehrfeld-Komponenten](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
 
