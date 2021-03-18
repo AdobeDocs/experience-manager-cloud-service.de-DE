@@ -2,9 +2,9 @@
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
 description: Erfahren Sie, wie Sie das Translation Integration Framework für die Integration mit Übersetzungsdiensten von Drittanbietern konfigurieren.
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1381'
 ht-degree: 43%
 
 ---
@@ -37,7 +37,6 @@ Die folgenden Übersetzungsanbieter stellen eine Implementierung der AEM-API fü
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloudkonfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungsdienst angeben. Weitere Informationen zum Hinzufügen einer Cloudkonfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](connect-ms-translator.md).
 
