@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 100%
+source-wordcount: '3675'
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
 Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` – Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verweist, das im Komponenten-Browser angezeigt werden soll.
+1. `cq:icon` – Zeichenfolgeneigenschaft, die auf ein Standardsymbol in der [Bibliothek der Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/examples/#icon) verweist, das im Komponenten-Browser angezeigt werden soll.
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
 1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
@@ -230,15 +230,13 @@ Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurie
 
 Die Coral-Benutzeroberfläche und die Granite-Benutzeroberfläche definieren das Erscheinungsbild von AEM.
 
-* Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen.
+* Die [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen.
 * Die [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) bietet ein in Sling-Komponenten eingebettetes Coral-Benutzeroberflächen-Markup zum Erstellen von Konsolen und Dialogen für Benutzeroberflächen.
 
 Die Granite-Benutzeroberfläche bietet einen großen Bereich der grundlegenden Widgets, die zum Erstellen Ihres Dialogfelds in der Authoring-Umgebung benötigt werden. Falls erforderlich, können Sie diese Auswahl erweitern und Ihr eigenes Widget erstellen.
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-* [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Struktur der AEM-Benutzeroberfläche](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Anpassen von Dialogfeldern {#customizing-dialog-fields}
@@ -389,7 +387,7 @@ Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 * Lassen Sie Ihr Feld mit einer bestimmten CSS-Klasse (dem Hook) markieren.
 * Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der mit diesem CSS-Klassennamen verknüpft ist (dadurch wird sichergestellt, dass Ihre benutzerdefinierte Logik nur für Ihr Feld gilt und andere Felder desselben Typs nicht betroffen sind).
 
-Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html).
+Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/).
 
 Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
 
@@ -449,7 +447,7 @@ Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut gelade
 
 ## Vorschauverhalten {#preview-behavior}
 
-Der [WCM-Modus](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
+Der [WCM-Modus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
 
 Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müssen so definiert werden, dass sie sich selbst aktualisieren und sich dann auf den Wert des Cookies verlassen.
 
