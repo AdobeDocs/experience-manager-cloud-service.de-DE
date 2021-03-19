@@ -1,12 +1,14 @@
 ---
 title: Best Practices zum Organisieren digitaler Assets für die Verwendung von Dynamic Media-Bildprofilen oder -Videoprofilen
-description: Tipps und Best Practices für das Benennen, Organisieren und Verwalten von Dynamic Media-Bild- und -Videodateien.
+description: '"Tipps und Best Practices zum Benennen, Organisieren und Verwalten von Dynamic Media-Bilddateien und -Videoassets-Dateien."'
 contentOwner: Rick Brough
+feature: Asset-Verwaltung, Bild-Profile, Video-Profile
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: a64a7274f0037789be1a5e2f7427aba551f14ed7
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 67%
+source-wordcount: '501'
+ht-degree: 62%
 
 ---
 
