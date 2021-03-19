@@ -1,10 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
+feature: Versionshinweise
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---
@@ -27,7 +28,7 @@ Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 
 * Bessere Verständlichkeit der Pipeline-Ausführungsseite. Dazu gehören die Anzeige des Pipeline-Namens (nur produktionsfremde Pipelines) und des Typs sowie ein Abzeichen mit dem Pipeline-Status (In Bearbeitung/Abgebrochen/Fehlgeschlagen).
 * QuickInfos zur Verbesserung des Kundenerlebnisses und der Verständlichkeit, warum die Schaltfläche „Programm/Umgebung hinzufügen“ deaktiviert ist.
 * Fehlgeschlagene Umgebungen können jetzt über die Benutzeroberfläche und die API gelöscht werden.
-* Der zur Erstellung von Git-Kennwörtern Prozess ist jetzt weniger anfällig für Probleme in der zugrunde liegenden Service-Ebene.
+* Der zur Erstellung von Git-Kennwörtern verwendete Prozess ist jetzt weniger anfällig für Probleme in der zugrunde liegenden Service-Ebene.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
