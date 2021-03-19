@@ -1,10 +1,12 @@
 ---
 title: Interaktive Bilder
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten.
+feature: Interaktive Bilder
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4249'
 ht-degree: 47%
 
 ---
