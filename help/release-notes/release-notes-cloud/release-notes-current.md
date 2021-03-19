@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 20%
 
 ---
@@ -163,6 +163,15 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 ## Content Transfer Tool {#content-transfer-tool}
 
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Veröffentlichungsdatum für das Inhaltsübermittlungswerkzeug v1.3.4 ist der 19. März 2021.
+
+### Fehlerbehebungen {#bug-fixes-ctt}
+
+* CTT übersprungen Inhalte aus Ordnern mit demselben Namen, jedoch mit einem Bindestrich im Namen. Dieses Problem wurde behoben.
+
+
 ### Veröffentlichungsdatum {#release-date-ctt-march}
 
 Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.3.0 ist der 04. März 2021.
@@ -177,15 +186,15 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.3.0 ist der 04
 * Beim Migrieren von Inhalten aus einem bestimmten Pfad zog CTT nicht verwandte Ressourcen ein. Dieses Problem wurde behoben
 
 
-### Veröffentlichungsdatum {#release-date-ctt}
+### Veröffentlichungsdatum {#release-date-ctt-feb}
 
 Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.4 ist der 10. Februar 2021.
 
-### Fehlerbehebungen {#bug-fixes-ctt}
+### Fehlerbehebungen {#bug-fixes-ctt-feb}
 
 * Beim Zuordnen mehrerer Benutzer wurden die IMS-IDs einiger Benutzer falsch zugeordnet. Dieses Problem wurde behoben.
 
-### Veröffentlichungsdatum {#release-date-ctt-feb}
+### Veröffentlichungsdatum {#release-date-ctt-feb01}
 
 Das Content Transfer Tool 1.2.2 wurde am 1. Februar 2021 veröffentlicht.
 
