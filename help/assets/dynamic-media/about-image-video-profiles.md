@@ -1,11 +1,13 @@
 ---
 title: Informationen zu Dynamic Media – Bild- und Videoprofile
 description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
+feature: Asset-Verwaltung, Bild-Profile, Video-Profile
+topic: '"Administrator, Business Practitioner"'
 translation-type: tm+mt
-source-git-commit: dfaaafce8e9a7f0d90e4c3d6967c8236d48e6e40
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 76%
+source-wordcount: '1287'
+ht-degree: 75%
 
 ---
 
