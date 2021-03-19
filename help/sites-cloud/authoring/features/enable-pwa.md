@@ -4,9 +4,9 @@ description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 75%
 
 ---
@@ -208,7 +208,6 @@ Mit diesen Einstellungen werden Teile der Website offline und lokal auf dem Ger�
 
 Nicht alle PWA-Funktionen sind für AEM Sites verfügbar. Hier sind einige nennenswerte Einschränkungen.
 
-* Ein Benutzer muss die Seite mindestens einmal durchsuchen, bevor sie offline zwischengespeichert wird.
 * Seiten werden nicht automatisch synchronisiert oder aktualisiert, wenn der Benutzer die App nicht verwendet.
 
 Bei der Implementierung von PWA gibt Adobe außerdem die folgenden Empfehlungen ab.
