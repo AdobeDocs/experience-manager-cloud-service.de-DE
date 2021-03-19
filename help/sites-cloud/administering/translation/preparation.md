@@ -1,11 +1,13 @@
 ---
 title: Vorbereiten von Inhalten für die Übersetzung
 description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
+feature: Sprachkopie
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 47%
+source-wordcount: '733'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +83,7 @@ Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen 
 
 1. Klicken oder tippen Sie auf **Erstellen**. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
 
-## Anzeigen des Status der Sprachstämme  {#seeing-the-status-of-language-roots}
+## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
 AEM bietet eine Leiste **References**, die eine Liste der erstellten Sprachwurzeln anzeigt.
 
