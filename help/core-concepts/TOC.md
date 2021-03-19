@@ -3,10 +3,13 @@ sub-product: Grundlegende Konzepte von AEM as a Cloud Service
 user-guide-title: Grundlegende Konzepte von AEM as a Cloud Service
 breadcrumb-title: Hauptkonzeptanleitung
 user-guide-description: Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service.
+feature-set: Experience Manager
+feature: Versionshinweise
+role: Architekt
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '66'
 ht-degree: 100%
 
 ---
