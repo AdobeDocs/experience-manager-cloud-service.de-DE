@@ -1,10 +1,12 @@
 ---
 title: Verwalten von Bildvorgaben
-description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie mehr über das Erstellen, Bearbeiten und Verwalten von Bildvorgaben.
+description: '"Erfahren Sie mehr über Bildvorgaben und wie Sie Bildvorgaben erstellen, ändern und verwalten."'
+feature: Bildvorgaben,Viewer,Darstellungen
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 72%
 
 ---
