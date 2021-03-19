@@ -1,10 +1,12 @@
 ---
 title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
+feature: Verwalten
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '936'
 ht-degree: 100%
 
 ---
