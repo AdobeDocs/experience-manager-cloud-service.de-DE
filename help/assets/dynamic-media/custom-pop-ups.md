@@ -1,11 +1,12 @@
 ---
 title: Erstellen benutzerdefinierter Popup-Ansichten
-description: Die standardmäßige Quick-Ansicht wird in E-Commerce-Erlebnissen verwendet, bei denen ein Popup mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
+description: '"Erfahren Sie, wie die standardmäßige Quick-Ansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu veranlassen. Sie können benutzerspezifischen Trigger zur Anzeige in den Popup-Fenstern verwenden."'
+topic: '"Entwickler,Administrator,Geschäftspraktiker"'
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 45%
+source-wordcount: '1032'
+ht-degree: 44%
 
 ---
 
