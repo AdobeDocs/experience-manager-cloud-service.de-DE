@@ -1,10 +1,12 @@
 ---
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
 description: Erfahren Sie, wie Sie das Translation Integration Framework für die Integration mit Übersetzungsdiensten von Drittanbietern konfigurieren.
+feature: Sprachkopie
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1384'
 ht-degree: 43%
 
 ---
