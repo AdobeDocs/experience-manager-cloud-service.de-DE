@@ -1,10 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.6.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.6.0
+feature: Versionshinweise
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '614'
 ht-degree: 100%
 
 ---
@@ -18,7 +19,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2020.6.0 ist der 4. Juni 2020.
 
-## Neuerungen {#whats-new-cloud-manager}
+## Neue Funktionen {#whats-new-cloud-manager}
 
 * Ein Benutzer mit der Rolle *Business Owner* in Cloud Manager kann jetzt ein Sandbox-Programm von der Landingpage (über die Schaltfläche für den Schnellzugriff auf der Programmkarte) oder aus dem Programm heraus löschen.
 
