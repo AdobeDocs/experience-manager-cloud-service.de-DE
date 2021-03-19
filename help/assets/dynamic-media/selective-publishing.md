@@ -1,15 +1,16 @@
 ---
 title: Arbeiten mit selektiver Veröffentlichung in Dynamic Media
-description: Informationen zum Arbeiten mit selektiver Veröffentlichung in Dynamic Media.
+description: Erfahren Sie, wie Sie mit Selektiver Veröffentlichung in Dynamic Media arbeiten.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 04f40452ca89bc5298341b4338bc1d7762b908c2
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2922'
-ht-degree: 100%
+source-wordcount: '2923'
+ht-degree: 99%
 
 ---
 
