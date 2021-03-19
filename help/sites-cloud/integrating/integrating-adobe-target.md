@@ -2,10 +2,10 @@
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 81%
+source-wordcount: '1042'
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesser
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/intro/get-started/quick-start.html)
 
-Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. Für den Export von Experience Fragments in Target benötigen Sie nur die Adobe Target-Konfiguration und IMS.
+Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Um eine Konfiguration für die Touch-optimierte Benutzeroberfläche auf eine Sit
 
 ## Integrieren von Adobe Target mit AEM Sites mithilfe von Adobe Experience Platform Launch {#integrate-target-launch}
 
-AEM bietet eine vorkonfigurierte Integration mit Experience Platform Launch. Wenn Sie die Adobe Target-Erweiterung zu Experience Platform Launch hinzufügen, können Sie die Funktionen von Adobe Target auf AEM-Web-Seiten verwenden. Target-Bibliotheken werden nur mit Experience Platform Launch gerendert.
+AEM bietet eine vorkonfigurierte Integration mit Experience Platform Launch. Durch Hinzufügen der Adobe Target-Erweiterung zu Experience Platform Launch können Sie die Funktionen von Adobe Target auf AEM Webseiten verwenden. Zielgruppen-Bibliotheken werden nur mithilfe von Launch gerendert.
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ Die Schritte zur Integration als allgemeine Übersicht:
 
 ### Erstellen einer Experience Platform Launch-Eigenschaft {#create-property}
 
-Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Datenelementen gefüllt wird.
+Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Datenelementen gefüllt ist.
 
 1. Klicken Sie auf die Schaltfläche **Neue Eigenschaft**.
 2. Geben Sie einen Namen für die Eigenschaft an.
-3. Geben Sie als Domain die IP/den Host ein, auf dem Sie die Experience Platform Launch-Bibliothek laden möchten.
+3. Geben Sie als Domäne die IP/Hostadresse ein, auf der Sie die Startbibliothek laden möchten.
 4. Klicken Sie auf die Schaltfläche **Speichern**.
    ![Experience Platform Launch-Eigenschaft](assets/properties_newproperty1.png "Experience Platform Launch-Eigenschaft")
 
 ### Hinzufügen der erforderlichen Erweiterungen {#add-extension}
 
-**Erweiterungen** ist der Name des Containers, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Sie müssen sowohl die **Adobe Target**- als auch die **Adobe ContextHub**-Erweiterung hinzufügen.
+**Erweiterungen** ist der Name des Containers, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Sie müssen die Erweiterungen **Adobe Target** und **Adobe ContextHub** hinzufügen.
 
 1. Wählen Sie die Option „Erweiterungskatalog“ aus und suchen Sie im Filter nach Target.
 2. Wählen Sie **Adobe Target at.js** aus und klicken Sie auf die Option „Installieren“.
@@ -124,7 +124,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Erstellen einer Seitenregel {#page-rule}
 
-Unter **Regel** können Folgen von Aktionen definiert und geordnet werden, die auf der Site zum Targeting ausgeführt werden.
+In **Regel** definieren und ordnen wir eine Folge von Aktionen an, die auf der Site ausgeführt werden, um Targeting zu erreichen.
 
 1. Fügen Sie eine Reihe Aktionen hinzu, wie im Screenshot dargestellt.
    ![Aktionen](assets/rules1.png "Aktionen")
@@ -139,8 +139,8 @@ Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [
 
 | **Änderung** | **Konfiguration der klassischen Benutzeroberfläche** | **Konfiguration der Touch-optimierten Benutzeroberfläche** | **Folgen** |
 |---|---|---|---|
-| Speicherort der Target-Konfiguration | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Zuvor waren unter „/etc/cloudservices/testandtarget“ mehrere Konfigurationen vorhanden. Inzwischen ist unter einem Mandanten nur jeweils eine Konfiguration zu finden. |
+| Speicherort der Target-Konfiguration | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Früher waren unter /etc/cloudservices/testandtarget mehrere Konfigurationen vorhanden, jetzt ist jedoch eine einzige Konfiguration unter einem Mieter vorhanden. |
 
 >[!NOTE]
 >
->Ältere Konfigurationen werden für die bestehenden Kunden weiterhin unterstützt (ohne die Möglichkeit, neue zu erstellen oder zu bearbeiten). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mithilfe von VSTS hochgeladen werden.
+>Ältere Konfigurationen werden für bestehende Kunden weiterhin unterstützt (ohne die Option, neue zu bearbeiten oder zu erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.
