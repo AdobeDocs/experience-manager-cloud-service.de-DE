@@ -1,10 +1,12 @@
 ---
 title: Gemischte Mediensets
 description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden..
+feature: Gemischte Mediensets
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 75%
 
 ---
