@@ -1,10 +1,12 @@
 ---
 title: Herstellen einer Verbindung mit Microsoft Translator
 description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden können, um Ihren Übersetzungs-Workflow zu automatisieren.
+feature: Sprachkopie
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '479'
 ht-degree: 41%
 
 ---
