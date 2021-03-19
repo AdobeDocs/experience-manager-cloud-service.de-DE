@@ -1,10 +1,12 @@
 ---
 title: Verwalten von Viewer-Vorgaben
-description: Erstellen und Verwalten von Viewer-Vorgaben  in Dynamic Media.
+description: Erfahren Sie, wie Sie Viewer-Vorgaben in Dynamic Media erstellen und verwalten.
+feature: Viewer-Vorgaben,Viewer
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 71%
 
 ---
