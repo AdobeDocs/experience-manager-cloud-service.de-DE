@@ -2,10 +2,10 @@
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 97%
+source-wordcount: '1742'
+ht-degree: 95%
 
 ---
 
@@ -67,12 +67,14 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](#sample-cities-named-variation)
    * Und Operationen:
 
-      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`
+      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
+         * Siehe [Beispielversion - Alle Abenteuer, deren `_path` mit einem bestimmten Präfix](#sample-wknd-all-adventures-cycling-path-filter) beginnt
       * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
          * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Beispielanwendung - Alle Abenteuer, deren `_path` mit einem bestimmten Präfix {#sample-wknd-all-adventures-cycling-path-filter} beginnt
+
+Alle `adventures`, deren `_path` mit einem bestimmten Präfix (`/content/dam/wknd/en/adventures/cycling`) beginnt.
+
+**Beispielabfrage**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**Beispielergebnisse**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
