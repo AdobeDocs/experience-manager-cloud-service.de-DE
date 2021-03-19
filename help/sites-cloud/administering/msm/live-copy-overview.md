@@ -1,11 +1,13 @@
 ---
 title: Konsole „Live Copy-Übersicht“
 description: Erfahren Sie mehr über die Grundlagen der Live Copy-Übersichtskonsole, um den Status Ihrer Live-Kopien schnell zu verstehen und Inhalte zu synchronisieren.
+feature: Multi-Site-Manager
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 22%
+source-wordcount: '739'
+ht-degree: 23%
 
 ---
 
