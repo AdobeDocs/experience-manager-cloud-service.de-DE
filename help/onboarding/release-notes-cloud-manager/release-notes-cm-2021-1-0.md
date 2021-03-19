@@ -1,11 +1,12 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.1.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.1.0
+feature: Versionshinweise
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 44%
+source-wordcount: '132'
+ht-degree: 100%
 
 ---
 
@@ -16,14 +17,14 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0 ist der 14. Januar 2021.
+Die Version 2021.1.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. Januar 2021 veröffentlicht.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Die Assets Production-Instanz kann gelegentlich den Markenportalstatus auf der Detailseite **Umgebung** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
+* Die Assets-Produktionsinstanz kann gelegentlich den Brand Portal-Status auf der Seite **Umgebungsdetails** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
 
-* Beim Auslösen einer Dehibernate aus Cloud Manager wurde manchmal eine Fehlermeldung angezeigt, auch wenn die Deaktivierung erfolgreich gestartet wurde.
+* Wenn das Zurückholen aus dem Ruhezustand in Cloud Manager ausgelöst wurde, wurde manchmal eine Fehlermeldung angezeigt, obwohl der Vorgang erfolgreich gestartet wurde.
 
-* Seltene Fälle von Fehlern beim Erstellen oder Löschen von Umgebung wurden behoben.
+* Seltene Fälle von Fehlern beim Erstellen oder Löschen der Umgebung wurden behoben.
