@@ -1,11 +1,13 @@
 ---
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in eine Web-Seite einbetten.
+feature: Asset-Verwaltung
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 97%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
