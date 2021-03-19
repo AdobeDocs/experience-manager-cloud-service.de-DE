@@ -1,10 +1,12 @@
 ---
 title: Best Practices für MSM
 description: Lernen Sie die Best Practices kennen, die von Adobe Engineering- und Consulting-Teams zusammengestellt wurden, um sich mit dem AEM Multi-Site-Manager vertraut zu machen.
+feature: Multi-Site-Manager
+role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1413'
 ht-degree: 34%
 
 ---
