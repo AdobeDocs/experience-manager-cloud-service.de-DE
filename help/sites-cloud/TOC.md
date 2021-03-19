@@ -4,10 +4,13 @@ sub-product: Inhaltserstellung in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
+feature-set: Experience Manager Sites
+feature: 'Authoring – '
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 95%
 
 ---
