@@ -2,10 +2,12 @@
 title: Stapelsatzvorgaben
 description: Erfahren Sie, wie Sie die Erstellung von Bildsets und Rotationssets mithilfe von Stapelsatzvorgaben in Dynamic Media automatisieren.
 contentOwner: Rick Brough
+feature: Bildvorgaben,Viewer-Vorgaben
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3433'
 ht-degree: 65%
 
 ---
