@@ -2,9 +2,9 @@
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 95%
 
 ---
@@ -69,7 +69,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
-         * Siehe [Beispielversion - Alle Abenteuer, deren `_path` mit einem bestimmten Präfix](#sample-wknd-all-adventures-cycling-path-filter) beginnt
+         * Siehe [Beispielversion - Alle Abenteuer, bei denen die `_path`-Beginn mit einem bestimmten Präfix](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
@@ -664,7 +664,7 @@ query {
 
 ### Beispielanwendung - Alle Abenteuer, deren `_path` mit einem bestimmten Präfix {#sample-wknd-all-adventures-cycling-path-filter} beginnt
 
-Alle `adventures`, deren `_path` mit einem bestimmten Präfix (`/content/dam/wknd/en/adventures/cycling`) beginnt.
+Alle `adventures`-Beginn mit `_path`-Präfix (`/content/dam/wknd/en/adventures/cycling`).
 
 **Beispielabfrage**
 
