@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media-Bildprofile
-description: Erstellen Sie Dynamic Media Image-Profil mit Einstellungen für Unschärfemaske und/oder Smart-Schnittmuster. Wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
+description: '"Erfahren Sie, wie Sie Dynamic Media Image-Profil erstellen, die Einstellungen für Unschärfemaske, intelligente Beschneidung oder intelligente Muster oder beides enthalten. Wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an."'
+feature: Asset-Verwaltung, Image-Profil, Darstellungen
+topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2705'
 ht-degree: 75%
 
 ---
