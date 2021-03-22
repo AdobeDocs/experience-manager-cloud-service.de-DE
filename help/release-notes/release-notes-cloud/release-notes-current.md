@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
+source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 20%
+source-wordcount: '1837'
+ht-degree: 19%
 
 ---
 
@@ -202,6 +202,14 @@ Weitere Informationen finden Sie unter [Verwenden des User Mapping Tools](https:
 * Benutzer können beim Erstellen von Migrationssätzen bestimmte Pfade unter `/etc` auswählen.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
+
+### Veröffentlichungsdatum {#release-date-bpa-march}
+
+Das Veröffentlichungsdatum für Best Practices Analyzer v2.1.8 ist der 22. März 2021.
+
+### Neue Funktionen in Best Practices Analyzer {#what-is-new-bpa-march}
+
+* Möglichkeit, ACS-Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche sowie aus dem als CSV-Datei exportierten Bericht herauszufiltern.
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
