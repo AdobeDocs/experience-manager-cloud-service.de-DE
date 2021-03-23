@@ -2,12 +2,12 @@
 title: Anwenden von Dynamic Media-Viewer-Vorgaben
 description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden..
 feature: Viewer-Vorgaben,Viewer
-topic: Geschäftspraktiker
+topic: Administrator, Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Eine Viewer-Vorgabe ist eine Sammlung aus Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten anzeigen. Sie können alle vom Administrator erstellten Viewer-Vorgaben auf ein Asset anwenden.
 
-Wenn Sie Administrator sind und Viewer-Vorgaben verwalten, erstellen, sortieren und löschen müssen, finden Sie die entsprechenden Informationen unter [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
+Wenn Sie Administrator sind und Viewer-Vorgaben verwalten, erstellen, sortieren und löschen müssen, finden Sie weitere Informationen unter [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
 
 Siehe auch [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
