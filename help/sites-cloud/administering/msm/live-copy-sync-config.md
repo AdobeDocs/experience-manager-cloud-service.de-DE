@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi-Site-Manager
 role: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2340'
 ht-degree: 33%
 
 ---
@@ -43,7 +43,11 @@ Jede Rollout-Konfiguration nutzt einen Rollout-Auslöser, der den Rollout auslö
 
 ### Rollout-Konfigurationen {#rollout-configurations}
 
-In der folgenden Tabelle werden die Rollout-Konfigurationen Liste, die standardmäßig mit AEM bereitgestellt werden. Auslöser und Synchronisierungsaktionen jeder Rollout-Konfigurationen werden ebenfalls angegeben. Wenn die Aktionen der installierten Rollout-Konfigurationen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Rollout-Konfiguration erstellen](#creating-a-rollout-configuration).
+In der folgenden Tabelle werden die Rollout-Konfigurationen Liste, die standardmäßig mit AEM bereitgestellt werden. Auslöser und Synchronisierungsaktionen jeder Rollout-Konfigurationen werden ebenfalls angegeben.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | Name | Beschreibung | Auslöser | [Synchronisierungsaktionen](#synchronization-actions) |
 |---|---|---|---|
