@@ -3,10 +3,10 @@ title: Assets-HTTP-API
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 70%
+source-wordcount: '1489'
+ht-degree: 71%
 
 ---
 
@@ -267,7 +267,7 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 * Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
-* Verwenden Sie nicht `/adobe` als URL oder JCR-Pfad. Registrieren Sie keine Servlets unter dieser Struktur oder erstellen Sie Inhalte in JCR.
+* Einige Eigenschaften von Ordnern oder Assets werden einem anderen Präfix zugeordnet, wenn sie mithilfe von APIs aktualisiert werden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
 >[!MORELIKETHIS]
 >
