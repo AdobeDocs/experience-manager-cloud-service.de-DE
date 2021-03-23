@@ -1,19 +1,19 @@
 ---
 title: Verwenden von Regelsätzen zum Konvertieren von URLs
-description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs zu transformieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
+description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs zu transformieren. Regelsätze sind Richtliniensätze, die in einer Skriptsprache (z. B. JavaScript™) geschrieben wurden und XML-Daten auswerten und bestimmte Aktionen ausführen, wenn diese Daten bestimmte Bedingungen erfüllen.
 topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 98%
+source-wordcount: '768'
+ht-degree: 85%
 
 ---
 
 
 # Verwenden von Regelsätzen zum Konvertieren von URLs {#using-rulesets-to-transform-urls}
 
-In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
+In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Richtliniensätze, die in einer Skriptsprache (z. B. JavaScript™) geschrieben wurden und XML-Daten auswerten und bestimmte Aktionen ausführen, wenn diese Daten bestimmte Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Services und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
@@ -67,8 +67,8 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
    * Navigieren Sie im Dialogfeld **[!UICONTROL Öffnen]** zu Ihrer Regelsatzdatei (XML).
    * Wählen Sie die Datei aus und klicken Sie auf **[!UICONTROL Öffnen]**.
    * Wählen Sie rechts auf der Seite **[!UICONTROL Hochladen]** einen Zielordner für die Regelsatzdatei aus.
-   * Stellen Sie am unteren Rand der Seite sicher, dass die Option **[!UICONTROL Nach Hochladen veröffentlichen]** aktiviert ist.
-   * Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Upload starten]**.
+   * Stellen Sie sicher, dass unten auf der Seite die Option Nach dem Hochladen veröffentlichen aktiviert ist.
+   * Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hochladen senden]**.
    * Klicken Sie in der globalen Navigationsleiste auf **[!UICONTROL Aufträge]**, um den Status der Upload-Aufträge zu prüfen. Wenn in der Spalte **[!UICONTROL Status]** auf der Seite **[!UICONTROL Auftrag]** der Status „Hochladen abgeschlossen“ angezeigt wird, fahren Sie mit den nächsten Schritten fort.
 
 1. Klicken Sie in der Navigationsleiste oben auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
@@ -79,5 +79,5 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
    Die Bedingungen des Regelsatzes werden auf die Anforderungen an die Live-Image-Server von Dynamic Media angewendet.
 
-   Wenn Sie Änderungen an der Regelsatzdatei vornehmen, werden die Änderungen sofort angewendet, wenn Sie die aktualisierte Regelsatzdatei erneut hochladen oder veröffentlichen.
+   Wenn Sie die Regelsatzdatei ändern, werden die Änderungen sofort übernommen, wenn Sie die aktualisierte Regelsatzdatei erneut hochladen und veröffentlichen.
 
