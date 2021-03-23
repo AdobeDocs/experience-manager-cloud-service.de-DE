@@ -3,10 +3,10 @@ title: Entwicklerreferenzen für  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1388'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 >[!CAUTION]
 >
->Einige APIs bleiben bestehen, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet) und dürfen nicht verwendet werden.
+>Einige APIs bestehen weiterhin, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet). Verwenden Sie diese APIs nach Möglichkeit nicht.
 
 | Unterstützungsebene | Beschreibung |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 ## Asset-Upload {#asset-upload-technical}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] bietet eine neue Methode zum Hochladen von Assets in das Repository. Die Benutzer können die Assets über die HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
+Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mit der HTTP-API direkt in die Cloud-Datenspeicherung hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
 1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
@@ -79,8 +79,7 @@ Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-U
 * Der binäre Cloud-Speicher funktioniert mit einem Content Delivery Network (CDN) oder einem Edge-Netzwerk. Ein CDN wählt einen Upload-Endpunkt aus, der für einen Client näher liegt. Wenn Daten eine kürzere Entfernung zu einem nahe gelegenen Endpunkt zurücklegen, verbessern sich die Upload-Leistung und das Benutzererlebnis, insbesondere für geografisch verteilte Teams.
 
 >[!NOTE]
->
->Informationen zum Implementieren dieses Ansatzes finden Sie im Client-Code in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload).
+Informationen zum Implementieren dieses Ansatzes finden Sie im Client-Code in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Initiieren des Uploads {#initiate-upload}
 
@@ -117,8 +116,8 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 * `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie der Initiierungsanfrage angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadURIs` (Array): Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, in die der binäre Inhalt hochgeladen werden soll (siehe [Hochladen der Binärdatei](#upload-binary)).
-* `minPartSize` (Zahl): Die Mindestlänge (in Bytes) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
-* `maxPartSize` (Zahl): Die maximale Länge (in Bytes) der Daten, die für einen der uploadURIs bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
+* `minPartSize` (Nummer): Die Mindestlänge (in Byte) der Daten, die einem der  `uploadURIs`bei mehr als einem URI bereitgestellt werden können.
+* `maxPartSize` (Nummer): Die maximale Länge (in Byte) von Daten, die für einen der URI bereitgestellt werden können,  `uploadURIs`wenn mehrere URI vorhanden sind.
 
 ### Hochladen der Binärdatei {#upload-binary}
 
@@ -147,8 +146,7 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `replace` | Boolesch | optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
 
 >[!NOTE]
->
->Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
+Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
@@ -173,9 +171,8 @@ Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] as a [!DNL
 * `AssetManager` Java-API, z. B. `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
->
->* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
->* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
+* [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
+* [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
@@ -243,6 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Das Experience Cloud as a  [!DNL Cloud Service] -SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
