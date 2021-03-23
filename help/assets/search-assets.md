@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Adobe Expe
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4741'
-ht-degree: 100%
+source-wordcount: '4755'
+ht-degree: 98%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 [!DNL Experience Manager Assets] unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
 
-| Suchen von Assets | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
+| Suchen nach Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Suchergebnissen |
 |---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
-| [Benutzeroberfläche für Suchen](#searchui) |  | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
+| [Benutzeroberfläche für Suchen](#searchui) | [Textextraktion](#extracttextupload) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und -verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Massenaktualisierung von Metadaten](#metadataupdates) |
-| [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
-| [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpectedresults) |
-| [Suche aus anderen Lösungen und Apps heraus](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-Programm](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
+| [Such-Ranking und -Optimierung](#searchrank) | [Benutzerdefinierte Prädikate](#custompredicates) | [Smart-Sammlungen](#collections) |
+| [Erweiterte Suche: Filtern und Suchbereich](#scope) |  | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpectedresults) |
+| [Suche aus anderen Lösungen und Apps heraus](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-Desktop-Programm](#desktop-app)</li><li>[Adobe Stock-Fotos](#adobe-stock)</li><li>[Dynamic Media-Assets](#search-dynamic-media-assets)</li></ul> |  |  |
 | [Asset-Wähler](#assetselector) |  |  |
 | [Einschränkungen](#tips) und [Tipps](#limitations) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock-Fotos {#adobestock}
+### Adobe Stock-Fotos {#adobe-stock}
 
 Benutzer können aus der AEM-Benutzeroberfläche heraus nach [Adobe Stock-Assets](/help/assets/aem-assets-adobe-stock.md) suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` in der OmniSearch-Leiste hinzu. Sie können auch das Bedienfeld „Filter“ verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen.
 
@@ -147,9 +147,9 @@ Benutzer können aus der AEM-Benutzeroberfläche heraus nach [Adobe Stock-Assets
 
 Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media > Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt.
 
-### Mit bestimmten Werten in Metadatenfeldern suchen {#gqlsearch}
+### GQL-Suche mit bestimmten Werten in Metadatenfeldern {#gql-search}
 
-Sie können anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Autor nach Assets suchen. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Sie können Assets auf Grundlage exakter Werte von Metadatenfeldern wie Titel, Beschreibung und Ersteller suchen. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (Ersteller, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 | Metadatenfeld | Facettenwert und Nutzung |
 |---|---|
@@ -175,7 +175,10 @@ Sie können anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreib
 | Bildhöhe | height:lowerbound.upperbound |
 | Person | person:John |
 
-Die Eigenschaften „path“, „limit“, „size“ und „orderby“ können nicht über OR mit einer anderen Eigenschaft verknüpft werden.
+Die Eigenschaften `path`, `limit`, `size` und `orderby` können mit keiner anderen Eigenschaft ODERed werden.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
@@ -197,19 +200,19 @@ Adobe Experience Manager (AEM) verbindet das DAM-Repository mit verschiedenen an
 
 Mit Adobe Asset Link können Kreativprofis jetzt auf in AEM Assets gespeicherte Inhalte zugreifen, ohne die unterstützten Adobe Creative Cloud-Programme verlassen zu müssen. Kreative können mit dem In-App-Bedienfeld in folgenden Creative Cloud-Programmen Assets nahtlos suchen, durchsuchen sowie ein- und auschecken: Photoshop, Illustrator und InDesign. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
 
-### Suchen nach Assets im AEM-Desktop-Programm {#desktopapp}
+### Suchen von Assets in der Experience Manager-Desktop-App {#desktop-app}
 
 Kreativprofis verwenden das Desktop-Programm, um AEM Assets auf ihrem lokalen Desktop (Windows oder Mac) bequem zu durchsuchen und verfügbar zu machen. Kreative können die gewünschten Assets in Mac Finder oder Windows Explorer leicht anzeigen, in Desktop-Programmen öffnen und lokal ändern. Die Änderungen werden dann wiederum unter einer neuen, im Repository erstellten Version in AEM gespeichert. Das Programm unterstützt grundlegende Suchvorgänge mit einem oder mehreren Keywords, den Platzhaltern „*“ und „?“ sowie dem AND-Operator. Siehe [Assets durchsuchen und suchen sowie Vorschau für Assets anzeigen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) im Desktop-Programm.
 
-### Suchen von Assets in Brand Portal {#brandportal}
+### Suchen von Assets in Brand Portal {#brand-portal}
 
 Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte digitale Assets effizient und sicher mit erweiterten internen Teams, Partnern und Wiederverkäufern zu teilen. Siehe [Suchen von Assets in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=de).
 
-### Suchen nach Adobe Stock-Fotos {#adobestock-1}
+### Suchen nach Adobe Stock-Fotos {#adobe-stock2}
 
 Benutzer können aus der AEM-Benutzeroberfläche heraus nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen. Siehe [Verwalten von Adobe Stock-Fotos in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Suchen nach Dynamic Media-Assets {#dynamicmedia}
+### Suchen nach Dynamic Media-Assets {#search-dynamic-media-assets}
 
 Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
 
@@ -255,6 +258,7 @@ Die Suchfunktion in [!DNL Experience Manager Assets] unterliegt folgenden Einsch
 * [!DNL Experience Manager] zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern bzw. Dateien und Ordnern können die Suchergebnisse mit keinem anderen Parameter sortiert werden.
 * Wenn Sie `Return` auswählen, ohne etwas in die OmniSearch-Leiste einzugeben, gibt [!DNL Experience Manager] eine Liste mit Dateien und nicht mit Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne ein Keyword zu verwenden, gibt [!DNL Experience Manager] keine Ergebnisse zurück.
+* Sie können eine Volltextsuche in Ordnern durchführen. Geben Sie einen Suchbegriff für die zu funktionierende Suche an.
 
 Visuelle Suchen oder Ähnlichkeitssuchen weisen die folgenden Einschränkungen auf:
 
