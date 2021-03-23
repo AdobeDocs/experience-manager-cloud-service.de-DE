@@ -2,9 +2,9 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service]-Anleitung '
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] Selbsthilfe-Ressourcen und Links zur Dokumentation'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 54%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 54%
 
 # [!DNL Assets] als  [!DNL Cloud Service] Handbuch  {#aem-assets-guide}
 
-Im Folgenden finden Sie die Selbsthilfe-Ressourcen für [!DNL Experience Manager Assets] als [!DNL Cloud Service].
+Die folgenden Selbsthilferessourcen stehen für [!DNL Experience Manager Assets] als [!DNL Cloud Service] zur Verfügung.
 
 ## Schlüssel [!DNL Assets] Artikel {#key-articles}
 
@@ -26,7 +26,7 @@ Im Folgenden finden Sie die Selbsthilfe-Ressourcen für [!DNL Experience Manager
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] Home](/help/landing/home.md) | Vollständige Dokumentation von [!DNL Experience Manager] als [!DNL Cloud Service]. |
-| [Überblick](/help/overview/home.md) | Einführungsübersicht und Glossar von [!DNL Experience Manager] als [!DNL Cloud Service]. |
+| [Übersicht](/help/overview/home.md) | Einführungsübersicht und Glossar von [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Versionshinweise](/help/release-notes/home.md) | Versionshinweise, neue Funktionen, veraltete und entfernte Funktionen und bekannte Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieser Leitfaden bietet eine Einführung in die Kernkonzepte von [!DNL Experience Manager] als [!DNL Cloud Service], einschließlich der Architektur des neuen Dienstes. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu [!DNL Experience Manager] als [!DNL Cloud Service]. |
