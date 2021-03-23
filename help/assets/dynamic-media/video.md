@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 feature: Videoprofile
 topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -551,9 +551,9 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 So erstellen Sie einen YouTube-Kanal:
 
 1. Rufen Sie [https://www.youtube.com](https://www.youtube.com/) auf und melden Sie sich mithilfe Ihrer Google-Kontoanmeldeinformationen an.
-1. Klicken Sie oben rechts auf der YouTube-Seite auf das Profil-Bild (es kann auch als Buchstabe in einem farbigen Kreis angezeigt werden) und klicken Sie dann auf **[!UICONTROL YouTube-Einstellungen]** (Zahnradsymbol).
-1. Klicken Sie auf der Seite „Überblick“ unter der Überschrift „Zusätzliche Funktionen“ auf **[!UICONTROL „Alle meine Kanäle anzeigen“ oder „Neuen Kanal erstellen“]**.
-1. Klicken Sie auf der Seite „Kanal“ auf **[!UICONTROL Neuen Kanal erstellen]**.
+1. Klicken Sie oben rechts auf der YouTube-Seite auf das Profil-Bild (es kann auch als Buchstabe in einem farbigen Kreis angezeigt werden) und tippen Sie dann auf **[!UICONTROL YouTube-Einstellungen]** (Zahnradsymbol).
+1. Tippen Sie auf der Seite Überblick unter der Überschrift Zusätzliche Funktionen auf **[!UICONTROL Alle meine Kanal anzeigen oder erstellen Sie einen neuen Kanal]**.
+1. Tippen Sie auf der Seite &quot;Kanal&quot;auf **[!UICONTROL Neuen Kanal erstellen]**.
 1. Geben Sie auf der Seite „Markenkonto“ im Feld „Name Markenkonto“ einen Unternehmensnamen oder den Namen eines anderen beliebigen Kanals ein, in dem Ihre Video-Assets veröffentlicht werden sollen. Klicken Sie dann auf **[!UICONTROL Erstellen]**.
 
    Vergessen Sie nicht den hier eingegebenen Namen, da Sie ihn erneut eingeben müssen, wenn Sie YouTube in Experience Manager einrichten.
