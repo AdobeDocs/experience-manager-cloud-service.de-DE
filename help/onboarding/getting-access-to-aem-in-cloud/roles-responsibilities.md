@@ -2,15 +2,22 @@
 title: Aufgaben und Zuständigkeiten
 description: Aufgaben und Zuständigkeiten
 translation-type: tm+mt
-source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+source-git-commit: 34eecf5d210376c534ad3c1918db466226c2f9c5
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 21%
+source-wordcount: '500'
+ht-degree: 17%
 
 ---
 
 
 # Adobe Experience Manager als Cloud Service: Rollen und Zuständigkeiten {#roles-responsibilities}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_raci"
+>title="Rollen und Zuständigkeiten"
+>abstract="Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager als Cloud Service. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Kunden ihre Rollen verstehen und erfüllen, wie hier beschrieben."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Richtige Personen auswählen, Rechte Rollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPIs ausrichten"
 
 <br></br>
 Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager als Cloud Service. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Kunden ihre Rollen verstehen und erfüllen, wie nachfolgend beschrieben.
