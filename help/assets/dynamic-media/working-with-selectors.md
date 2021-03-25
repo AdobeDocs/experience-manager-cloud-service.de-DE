@@ -3,7 +3,7 @@ title: Arbeiten mit Selektoren
 description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussellbanner in Dynamic Media auswählen können.
 topic: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 52%
@@ -87,7 +87,7 @@ Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn ein Hotspot
 
 Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** tippen. In Karussellsätzen ist die Asset-Auswahl verfügbar, wenn Sie eine Folie erstellen. In Bildsätzen, gemischten Mediensets und Rotationssets ist die Asset-Auswahl verfügbar, wenn Sie einen Bildsatz, ein gemischtes Medienset oder ein Rotationsset erstellen.
 
-Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-assets.md#assetselector).
+Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-assets.md#asset-selector).
 
 1. Navigieren Sie zum Karussellsatz und erstellen Sie eine Folie. Sie können auch zum interaktiven Video navigieren, die Registerkarte **[!UICONTROL Inhalt]** aufrufen und dann Assets auswählen. Erstellen Sie alternativ ein gemischtes Medienset, Bildset oder Rotationsset.
 1. Tippen Sie auf das Symbol **[!UICONTROL Asset-Selektor]** (Ordner mit Lupe) und gehen Sie zu einem Asset.
