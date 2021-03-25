@@ -6,7 +6,7 @@ user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Clo
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 96%
@@ -72,9 +72,9 @@ ht-degree: 96%
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
    + [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](content-fragments/content-fragments-configuration-browser.md)
    + [Inhaltsfragmentmodelle](content-fragments/content-fragments-models.md)
+   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
    + [Varianten – Erstellen von Fragmentinhalten](content-fragments/content-fragments-variations.md)
    + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments/content-fragments-assoc-content.md)
    + [Metadaten – Fragmenteigenschaften](content-fragments/content-fragments-metadata.md)
