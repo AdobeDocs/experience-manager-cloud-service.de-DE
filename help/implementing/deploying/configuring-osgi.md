@@ -3,9 +3,9 @@ title: OSGi für Adobe Experience Manager als Cloud Service konfigurieren
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 feature: Bereitstellen
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 60%
 
 ---
@@ -113,7 +113,7 @@ Inline-Konfigurationswerte werden als Standardansatz betrachtet und sollten nach
 * Werte sind implizit an Code-Bereitstellungen gebunden.
 * Sie erfordern keine zusätzlichen Überlegungen zur Bereitstellung oder Koordinierung.
 
-Beim Definieren eines OSGi-Konfigurationswerts, Beginn mit Inline-Werten, wählen Sie nur geheime oder Umgebung-spezifische Konfigurationen aus, wenn dies für den Anwendungsfall erforderlich ist.
+Beim Definieren eines OSGi-Konfigurationswerts sollten Sie Beginn mit Inline-Werten verwenden und nur geheime oder Umgebung-spezifische Konfigurationen auswählen, wenn dies für den Anwendungsfall erforderlich ist.
 
 ### Verwendung nicht geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 Kunden sollten diese Technik nur für OSGI-Konfigurationseigenschaften im Zusammenhang mit ihrem benutzerspezifischen Code verwenden. darf nicht verwendet werden, um die von der Adobe definierte OSGI-Konfiguration zu überschreiben.
+
+>[!NOTE]
+>
+>Platzhalter können nicht in [repoinit-Anweisungen](/help/implementing/deploying/overview.md#repoinit) verwendet werden.
 
 ### Geheime Konfigurationswerte {#secret-configuration-values}
 
