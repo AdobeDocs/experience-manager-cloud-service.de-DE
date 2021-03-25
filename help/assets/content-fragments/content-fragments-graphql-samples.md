@@ -2,10 +2,10 @@
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen.
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 95%
+source-wordcount: '1396'
+ht-degree: 97%
 
 ---
 
@@ -29,65 +29,6 @@ Sehen Sie dazu:
 
 * und einige [GraphQL-Beispielabfragen](#graphql-sample-queries), die auf der Beispielstruktur für Inhaltsfragmente basieren (Inhaltsfragmentmodelle und verwandte Inhaltsfragmente).
 
-## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
-
-Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der Standard-GraphQL-Spezifikation. Für GraphQL-Abfragen mit AEM gibt es einige Erweiterungen:
-
-* Wenn Sie ein einzelnes Ergebnis benötigen:
-   * Verwenden Sie den Modellnamen, z. B. „city“
-
-* Wenn Sie eine Ergebnisliste erwarten:
-   * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
-   * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](#sample-all-information-all-cities)
-
-* Wenn Sie ein logisches ODER verwenden möchten:
-   * Verwenden Sie ` _logOp: OR`
-   * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](#sample-all-persons-jobs-smith)
-
-* Es gibt ebenfalls ein logisches UND, es ist aber (oft) implizit.
-
-* Sie können Feldnamen abfragen, die den Feldern im Inhaltsfragmentmodell entsprechen.
-   * [Beispielabfrage – Vollständige Details über den CEO und die Mitarbeiter eines Unternehmens](#sample-full-details-company-ceos-employees)
-
-* Zusätzlich zu den Feldern Ihres Modells gibt es einige systemgenerierte Felder (vor dem Unterstrich):
-
-   * Für Inhalte:
-
-      * `_locale`: Anzeigen der Sprache; basierend auf Language Manager
-         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata`: Anzeigen von Metadaten für Ihr Fragment
-         * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](#sample-metadata-awards-gb)
-      * `_model`: Zulassen von Abfragen nach einem Inhaltsfragmentmodell (Pfad und Titel)
-         * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : den Pfad zu Ihrem Inhaltsfragment im Repository
-         * Siehe [Beispielabfrage – ein Einzelstadtfragment](#sample-single-specific-city-fragment)
-      * `_reference`: Anzeigen von Verweisen; einschließlich Inline-Verweisen im Rich-Text-Editor
-         * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation`: Anzeige bestimmter Varianten in Ihrem Inhaltsfragment
-         * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](#sample-cities-named-variation)
-   * Und Operationen:
-
-      * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
-         * Siehe [Beispielversion - Alle Abenteuer, bei denen die `_path`-Beginn mit einem bestimmten Präfix](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
-         * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
-         * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* GraphQL-Vereinigungstypen werden unterstützt:
-
-   * Verwenden Sie `... on`
-      * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL – Beispielabfragen unter Verwendung der Beispielstruktur für Inhaltsfragmente {#graphql-sample-queries-sample-content-fragment-structure}
 
