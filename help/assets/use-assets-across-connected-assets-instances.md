@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 98%
+source-wordcount: '2898'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 Autoren können in Content Finder nach Bildern und den folgenden Dokumenten suchen und die gefundenen Assets im Seiteneditor verwenden. Dokumente werden der Komponente `Download` und Bilder der Komponente `Image` hinzugefügt. Autoren können die Remote-Assets auch zu jeder benutzerdefinierten [!DNL Experience Manager]-Komponente hinzufügen, die die standardmäßigen `Download`- oder `Image`-Komponenten erweitert. Folgende Formate werden unterstützt:
 
-* **Bildformate**: Die Formate, die von der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) unterstützt werden. [!DNL Dynamic Media]-Bilder werden nicht unterstützt.
+* **Bildformate**: Die Formate, die von der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) unterstützt werden.
 * **Dokumentenformate**: Siehe [Unterstützte Dokumentformate](file-format-support.md#document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
@@ -111,6 +111,23 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 ![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## Konfigurieren einer Verbindung zwischen [!DNL Sites]- und [!DNL Dynamic Media]-Implementierungen {#sites-dynamic-media-connected-assets}
+
+Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!DNL Dynamic Media]-Bereitstellung konfigurieren, die es Webseitenverfassern ermöglicht, [!DNL Dynamic Media]-Bilder auf ihren Webseiten zu verwenden. Beim Erstellen von Webseiten bleiben Remote-Assets und Remote-Bereitstellungen von [!DNL Dynamic Media] gleich. Auf diese Weise können Sie die [!DNL Dynamic Media]-Funktion über die Funktion &quot;Verbundene Assets&quot;nutzen, z. B. über Smart-Beschneidungs- und Bildvorgaben.
+
+Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
+
+1. Erstellen Sie die Konfiguration für verbundene Assets, wie oben beschrieben. Aktivieren Sie im Dialogfeld das Kontrollkästchen **[!UICONTROL Ursprüngliche Darstellung für [!DNL Dynamic Media] Verbundene Assets]** abrufen.
+
+1. Konfigurieren Sie [!DNL Dynamic Media] für lokale [!DNL Sites]- und Remote [!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen unter [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+
+   * Verwenden Sie in allen Konfigurationen denselben Firmen-Namen.
+   * Wählen Sie auf lokaler [!DNL Sites] im [!UICONTROL Dynamic Media-Synchronisierungsmodus] **[!UICONTROL standardmäßig deaktiviert]**. Die Sites-Bereitstellung erfordert nur Lesezugriff auf das [!DNL Dynamic Media]-Konto.
+   * Wählen Sie bei lokalem [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** **[!UICONTROL Selektive Veröffentlichung]**. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]**.
+   * Wählen Sie bei der Remote-Bereitstellung [!DNL Assets] im [!UICONTROL Dynamic Media-Synchronisierungsmodus] **[!UICONTROL standardmäßig aktiviert]**.
+
+1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Image-Core-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Diese Funktion ermöglicht es der Standard-Bildkomponente, [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Webseiten bei der lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
 ## Verwenden von Remote-Assets  {#use-remote-assets}
 
@@ -184,7 +201,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 * Lokale Assets werden nicht mit den ursprünglichen Assets auf der Remote-Implementierung synchronisiert. Das Ändern, Löschen oder Widerrufen von Berechtigungen auf der DAM-Implementierung wird nicht auf absteigende Hierarchien angewendet.
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
-* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Dynamic Media]-Assets, Inhaltsfragmente und Experience Fragments werden nicht unterstützt.
+* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. Inhaltsfragmente und Erlebnisfragmente werden nicht unterstützt.
 * [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn das Schema separat aktualisiert wird, werden alle Eigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
