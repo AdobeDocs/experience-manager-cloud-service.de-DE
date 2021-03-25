@@ -3,10 +3,10 @@ title: Konfigurieren von Dynamic Media Cloud Service
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager als Cloud Service konfigurieren.
 topic: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: eb00eb6edaebc4dd0a16a99e1223bb806fa7abd9
+source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
 workflow-type: tm+mt
-source-wordcount: '4017'
-ht-degree: 57%
+source-wordcount: '4030'
+ht-degree: 56%
 
 ---
 
@@ -366,7 +366,11 @@ Für die reibungslose Ausführung von Dynamic Media mit dem Ausführungsmodus <
 
 #### Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
 
-Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese jedoch nicht als Vorlagen verarbeiten möchten, können Sie die Ebenenextraktion auf „false“ (falsch/aus) setzen. In diesem Fall würden die angepassten Auftragsparameter als `process=None&createTemplate=false` angezeigt.
+Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese aber nicht als Vorlagen verarbeiten möchten, können Sie die Ebenendatei auf &quot;false&quot;(Aus) setzen. In diesem Fall wird der Parameter für den angepassten Auftrag wie folgt angezeigt: `process=None&createTemplate=false`.
+
+Wenn Sie die Vorlagenerstellung aktivieren möchten, verwenden Sie die folgenden Parameter: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
+
+<!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
 Adobe empfiehlt die Verwendung der folgenden &quot;angepassten&quot;Auftragsparameter für PDF-, PostScript®- und PSD-Dateien:
 
@@ -374,9 +378,11 @@ Adobe empfiehlt die Verwendung der folgenden &quot;angepassten&quot;Auftragspara
 | ---| ---|
 | PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
 | PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
-| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+| PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+<!-- CQDOC-17657 for PSD entry in table above -->
+
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
 
