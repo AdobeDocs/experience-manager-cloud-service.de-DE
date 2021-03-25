@@ -2,10 +2,10 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2017'
+ht-degree: 95%
 
 ---
 
@@ -174,8 +174,20 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
    * [!UICONTROL Probelauf]: Ruft einen Testlauf der Massenaufnahme auf.
    * [!UICONTROL Ausführen]: Führt die ausgewählte Konfiguration aus.
    * [!UICONTROL Stopp]: Beendet eine aktive Konfiguration.
+   * [!UICONTROL Plan]: Legen Sie einen einmaligen oder wiederkehrenden Zeitplan fest, um Assets zu erfassen.
    * [!UICONTROL Vorgangsstatus]: Zeigt den Status der Konfiguration an, wenn sie in einem laufenden Importauftrag oder für einen abgeschlossenen Auftrag verwendet wird.
+   * [!UICONTROL Auftragsverlauf]: Frühere Instanzen des Auftrags.
    * [!UICONTROL Assets anzeigen]: Zeigt den Zielordner an, falls vorhanden.
+
+   ![Symbolleistenoptionen für Gesten oder Konfigurationen](assets/bulk-ingest-toolbar-options.png)
+
+Gehen Sie wie folgt vor, um einen einmaligen oder wiederholten Massenimport zu planen:
+
+1. Erstellen Sie eine Massenimportkonfiguration.
+1. Wählen Sie die Konfiguration aus und wählen Sie **[!UICONTROL Plan]** aus der Symbolleiste.
+1. Legen Sie eine einmalige Erfassung fest oder planen Sie einen stündlichen, täglichen oder wöchentlichen Plan. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+
+   ![Massenaufgabenauftrag planen](assets/bulk-ingest-schedule1.png)
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
