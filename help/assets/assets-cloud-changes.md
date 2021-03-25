@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5].
 translation-type: tm+mt
-source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
+source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 61%
+source-wordcount: '757'
+ht-degree: 57%
 
 ---
 
@@ -31,16 +31,8 @@ Der Asset-Upload wurde auf Effizienz optimiert, indem eine bessere Skalierung de
 * Der standardmäßige Workflow **[!UICONTROL DAM-Asset-Update]** in früheren Versionen von [!DNL Experience Manager] ist nicht mehr verfügbar. Stattdessen bieten Asset-Microservices einen skalierbaren, jederzeit nutzbaren Service, der den Großteil der standardmäßigen Asset-Verarbeitung (Ausgabedarstellungen, Metadatenextraktion, Textextraktion für die Indizierung) abdeckt.
    * Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md).
    * Um bei der Verarbeitung benutzerdefinierte Workflow-Schritte durchzuführen, können Sie [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwenden.
-* Die Metadaten-Schreibablage wird nicht unterstützt. Siehe [Metadaten-Schreibback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
-* Für Assets, die mit Package Manager hochgeladen werden, ist eine manuelle Neuverarbeitung mithilfe der Aktion **[!UICONTROL Asset]** in der [!DNL Assets]-Benutzeroberfläche erforderlich.
-* [!DNL Assets] erkennt nicht automatisch den MIME-Typ der hochgeladenen Assets. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
-* [!DNL Experience Manager] als  [!DNL Cloud Service] keine Teilassets für zusammengesetzte Assets generiert. Siehe [Erstellen von Unterelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
-* [!DNL Assets] Startseite ist nicht verfügbar. Siehe [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
-* Die Erkennung von Duplikat-Assets funktioniert anders als [wie sie unter  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html) funktioniert hat.
-* Nur für Platzierung (FPO) werden Darstellungen anders generiert als frühere [!DNL Experience Manager] Versionen. Siehe [FPO-Darstellung für [!DNL Experience Manager] als a [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
-* Wenn ein ZIP-Archiv hochgeladen wird, extrahiert [!DNL Experience Manager] als [!DNL Cloud Service] nicht die im Archiv gebündelten Elemente. Siehe [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip).
 
-Mit Asset-Mikrodiensten generierte Standarddarstellungen werden auf abwärtskompatible Weise in den Asset-Repository-Knoten unter Verwendung derselben Benennungskonventionen gespeichert.
+Die mit Asset-Mikrodiensten generierten Standarddarstellungen werden auf abwärtskompatible Weise in den Asset-Repository-Knoten unter Verwendung derselben Benennungskonventionen gespeichert.
 
 ## Entwickeln und Testen von Asset-Microservices {#asset-microservices}
 
@@ -50,9 +42,22 @@ Asset Microservices ist ein Cloud-nativer Dienst, der in Programmen und Umgebung
 
 Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
 
-## Entfernung der klassischen Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche ist in [!DNL Experience Manager] nicht mehr als [!DNL Cloud Service] verfügbar. Es ist nur die Touch-aktivierte Benutzeroberfläche verfügbar.
+## Funktionsparität mit [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
+
+[!DNL Experience Manager] als  [!DNL Cloud Service] Einführung vieler neuer Funktionen und leistungsfähigerer Methoden, um vorhandene Funktionen zu nutzen. Wenn Sie jedoch von [!DNL Experience Manager] 6.5 auf [!DNL Experience Manager] als [!DNL Cloud Service] umstellen, werden Sie möglicherweise feststellen, dass einige Funktionen unterschiedlich funktionieren, nicht verfügbar sind oder teilweise verfügbar sind. Die folgenden Funktionen stellen eine Liste dar:
+
+| Funktionalität oder Anwendungsfall | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Kommentare |
+|-----|-----|-----|
+| [Duplikat-Asset-Erkennung](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funktioniert anders. | Siehe [Funktionsweise unter  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [Nur für Platzierungsdarstellungen (FPO)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | unterschiedlich |  |
+| Metadaten-Writeback | Nicht unterstützt. | Siehe [Metadaten-Schreibback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Verarbeitung von Assets, die mit Package Manager hochgeladen wurden | Benötigt manuelles Eingreifen. | Manuelle Neuverarbeitung mit der Aktion **[!UICONTROL Asset]** erneut verarbeiten. |
+| MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| Erstellen von Teilassets für zusammengesetzte Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Beispielsweise wird die Anmerkung von mehrseitigen PDF-Dateien beeinträchtigt. Siehe [Erstellen von Unterelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Startseite | Nicht unterstützt. | Siehe [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Siehe [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur eine Touch-aktivierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
 >
