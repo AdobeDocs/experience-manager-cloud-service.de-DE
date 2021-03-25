@@ -3,10 +3,10 @@ title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
-ht-degree: 75%
+source-wordcount: '4169'
+ht-degree: 74%
 
 ---
 
@@ -198,7 +198,21 @@ Das Validierungs-Tool ist im SDK `bin/validator` als macOS-, Linux- oder Windows
 
 Es wird wie folgt aufgerufen: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-Das Tool überprüft, ob die Dispatcher-Konfiguration die entsprechenden Richtlinien verwendet, die von AEM als Cloud-Dienst unterstützt werden, indem alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` überprüft werden. Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
+Das Tool überprüft, ob die Dispatcher-Konfiguration die entsprechenden Richtlinien verwendet, die von AEM als Cloud-Dienst unterstützt werden, indem alle Dateien mit dem Muster `conf.d/enabled_vhosts/*.vhost` überprüft werden.
+
+Unter Windows unterscheidet der Dispatcher-Validator zwischen Groß- und Kleinschreibung. Daher kann es bei der Überprüfung der Konfiguration fehlschlagen, wenn Sie die Groß-/Kleinschreibung des Pfads, in dem sich Ihre Konfiguration befindet, nicht berücksichtigen, z. B.:
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren und einfügen und dann an der Eingabeaufforderung einen Befehl `cd` in diesen Pfad eingeben.
+
+Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 
 ```
 $ validator allowlist
