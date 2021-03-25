@@ -3,9 +3,9 @@ title: Konfigurieren von Dynamic Media Cloud Service
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager als Cloud Service konfigurieren.
 topic: 'Administrator  '
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4054'
 ht-degree: 56%
 
 ---
@@ -23,7 +23,7 @@ Mit der neuen Architektur ist Experience Manager für primäre Quellelemente und
 
 1. Wenn das primäre Quellelement als Cloud Service nach Adobe Experience Manager hochgeladen wird, wird es nach Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und Ausgabenerstellung, z. B. Videokodierung und dynamische Varianten eines Bilds.
 1. Nachdem die Darstellungen generiert wurden, kann Experience Manager als Cloud Service sicher auf die Dynamic Media-Remote-Darstellungen zugreifen und diese Vorschau durchführen (keine Binärdateien werden als Cloud Service-Instanz an den Experience Manager zurückgesendet).
-1. Nachdem die Inhalte veröffentlicht und genehmigt werden können, wird der Dynamic Media-Dienst Trigger, Inhalte an die Versand-Server zu übertragen und Inhalte im CDN zu zwischenspeichern.
+1. Nachdem die Inhalte veröffentlicht und genehmigt werden können, wird der Dynamic Media-Dienst Trigger, Inhalte an die Versand-Server zu übertragen und Inhalte im CDN (Content Versand Network) zu zwischenspeichern.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -382,7 +382,9 @@ Adobe empfiehlt die Verwendung der folgenden &quot;angepassten&quot;Auftragspara
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Informationen zum Aktualisieren dieser Parameter finden Sie unter [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats).
+
+Siehe auch [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats).
 
 #### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
 
