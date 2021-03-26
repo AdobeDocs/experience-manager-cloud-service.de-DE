@@ -2,10 +2,10 @@
 title: Zuerkannte Zugriffsrechte - Erforderlich
 description: Zuerkannte Zugriffsrechte - Erforderlich
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 51%
+source-wordcount: '576'
+ht-degree: 50%
 
 ---
 
@@ -41,8 +41,6 @@ Sobald Adobe eine Organisation für Ihr Unternehmen erstellt hat, wird Ihr Admin
 
 Mit diesen Rechten kann Ihr Administrator nun per Single Sign-on (mit der Adobe ID) auf [!UICONTROL Experience Cloud]-Dienste zugreifen, sich bei Ihren AEM-Cloud-Umgebungen anmelden und [!UICONTROL Cloud Manager] verwenden.
 
-## Anwender und Rollen {#users-roles}
-
 Für viele Funktionen in [!UICONTROL Cloud Manager] sind spezielle Berechtigungen erforderlich.
 
 In [!UICONTROL Cloud Manager] sind derzeit vier Rollen für Anwender definiert, die die Verfügbarkeit bestimmter Funktionen steuern:
@@ -53,7 +51,6 @@ In [!UICONTROL Cloud Manager] sind derzeit vier Rollen für Anwender definiert, 
 * Entwickler
 
 >[!CAUTION]
->
 >Um [!UICONTROL Cloud Manager] verwenden zu können, müssen Sie über ein Adobe ID und das Adobe Experience Manager als Cloud Service-Produktkontext verfügen.
 
 ### Rollendefinitionen {#role-definitions}
