@@ -2,7 +2,7 @@
 title: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5].
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 57%
@@ -56,7 +56,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Erstellen von Teilassets für zusammengesetzte Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Beispielsweise wird die Anmerkung von mehrseitigen PDF-Dateien beeinträchtigt. Siehe [Erstellen von Unterelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Startseite | Nicht unterstützt. | Siehe [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Siehe [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Siehe [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur eine Touch-aktivierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
