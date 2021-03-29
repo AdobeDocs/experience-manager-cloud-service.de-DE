@@ -1,18 +1,18 @@
 ---
 title: Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten
-description: Erfahren Sie mehr über die erforderliche Authentifizierung für AEM GraphQL-Remote-Abfragen.
+description: Verstehen Sie die erforderliche Authentifizierung für Remote AEM GraphQL-Abfragen, um Ihren kopflosen Content Versand zu sichern.
 translation-type: tm+mt
-source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 86%
 
 ---
 
 
 # Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services.  Für diese Remote-Abfragen ist möglicherweise ein authentifizierter API-Zugriff erforderlich.
+Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um den Versand von kostenlosen Inhalten zu sichern.
 
 >[!NOTE]
 >
