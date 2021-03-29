@@ -1,18 +1,18 @@
 ---
 title: Zugehörige Inhalte
-description: Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden.
+description: Verstehen Sie, wie AEM Inhaltsfunktion die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dadurch wird der Versand ohne Kopfdaten flexibler gestaltet.
 translation-type: tm+mt
-source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 60%
 
 ---
 
 
 # Zugehörige Inhalte {#associated-content}
 
-Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden soll](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert.
+AEM Funktion &quot;Verknüpfter Inhalt&quot;stellt die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können, wenn es einer Inhaltsseite hinzugefügt wird. Dies bietet Flexibilität für Ihren Versand ohne Kopfdaten, indem [eine Reihe von Assets bereitgestellt wird, auf die Sie zugreifen können, wenn Sie das Inhaltsfragment auf einer Seite verwenden,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), und gleichzeitig die für die Suche nach dem entsprechenden Asset erforderliche Zeit verkürzt wird.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 
