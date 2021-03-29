@@ -1,18 +1,18 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
-description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
+description: Verstehen Sie, wie Varianten Ihren Kopflosen Inhalt in AEM noch flexibler machen können, indem Sie Inhalte für das Fragment erstellen und dann je nach Zweck Variationen des Inhalts erstellen.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 95%
+source-wordcount: '2255'
+ht-degree: 92%
 
 ---
 
 
 # Varianten – Erstellen von Fragmentinhalten {#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
+[Die ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Variationen sind ein wichtiges Merkmal AEM Inhaltsfragmente, da sie es Ihnen ermöglichen, Kopien des Übergeordnet Inhalts zu erstellen und zu bearbeiten, um ihn auf bestimmten Kanälen zu verwenden, und/oder Szenarien auszuführen, wodurch der Versand von kostenlosen Inhalten noch flexibler wird.
 
 In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 
