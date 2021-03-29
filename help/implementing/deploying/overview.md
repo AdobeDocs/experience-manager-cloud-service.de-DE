@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Bereitstellen
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Das folgende Video bietet einen Überblick über die Implementierung von Code f�
 
 Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt umwandelt. So wird eine AEM as a Cloud Service-Anwendung beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie also die Pakete im Package Manager für Cloud-Umgebungen betrachten, enthält der Name „cp2fm“ und wurden alle Metadaten der transformierten Pakete entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Inhaltspakete, die für AEM as a Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichen und veränderlichen Inhalten aufweisen. Cloud Manager erzwingt dies, indem der Build ggf. fehlschlägt und eine Meldung wie die folgende ausgibt:
+Inhaltspakete, die für AEM als Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderbarem und veränderbarem Inhalt aufweisen. Cloud Manager installiert dann nur den veränderbaren Inhalt und gibt eine Meldung wie die folgende aus:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
