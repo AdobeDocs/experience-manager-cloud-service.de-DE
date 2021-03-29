@@ -2,17 +2,17 @@
 title: AEM-Modernisierungs-Tools
 description: 'AEM-Modernisierungs-Tools '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
 
 # AEM-Modernisierungs-Tools {#aem-moderization-tools}
 
-Die AEM-Modernisierungs-Tool-Suite bietet AEM-Entwicklungs-Teams Tools, um ältere AEM-Funktionen in die aktuell unterstützten Funktionen zu konvertieren.
+Die AEM Moderationstools bieten eine Reihe von Hilfsprogrammen, mit denen ältere AEM in die modernen und unterstützten Funktionen von AEM als Cloud Service konvertiert werden können.
 
 
 ## Einführung {#introduction}
