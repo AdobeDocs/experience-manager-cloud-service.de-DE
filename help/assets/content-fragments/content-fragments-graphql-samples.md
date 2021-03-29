@@ -1,16 +1,18 @@
 ---
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
-description: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen.
+description: Lernen Sie, GraphQL mit AEM zu verwenden, um Inhalte ohne Probleme bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 97%
+source-wordcount: '1418'
+ht-degree: 95%
 
 ---
 
 
 # Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
+
+Lernen Sie, GraphQL mit AEM zu verwenden, um Inhalte ohne Probleme bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
 >[!NOTE]
 >
