@@ -1,18 +1,18 @@
 ---
 title: Headless-Entwicklung für AEM Sites as a Cloud Service
-description: Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API können Sie mit AEM as a Cloud Service Ihre Erlebnisse zentral verwalten und kanalübergreifend bereitstellen.
+description: Erfahren Sie, wie AEM leistungsstarke, kopflose Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren Bereitstellung über Kanal hinweg zu ermöglichen.
 translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 88%
 
 ---
 
 
 # Headless-Entwicklung für AEM Sites as a Cloud Service {#headless-development}
 
-Mithilfe leistungsstarker Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API können Sie mit AEM as a Cloud Service Ihre Erlebnisse zentral verwalten und kanalübergreifend bereitstellen.
+Erfahren Sie, wie AEM leistungsstarke, kopflose Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren Bereitstellung über Kanal hinweg zu ermöglichen.
 
 ## Übersicht {#overview}
 
