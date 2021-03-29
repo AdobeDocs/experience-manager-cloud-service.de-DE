@@ -1,16 +1,18 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
+description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 84%
 
 ---
 
 
 # Inhaltsfragmente – Konfigurations-Browser {#content-fragments-configuration-browser}
+
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
