@@ -1,18 +1,18 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung
-description: Inhaltsfragmentmodelle definieren die Struktur von Inhaltsfragmenten. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
+description: Verwenden Sie AEM Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren, die die Grundlage Ihres kostenlosen Inhalts bilden.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 90%
 
 ---
 
 
 # Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung {#creating-an-assets-folder}
 
-Inhaltsfragmentmodelle definieren die Struktur von Inhaltsfragmenten. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
+Verwenden Sie AEM Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren, die die Grundlage Ihres kostenlosen Inhalts bilden. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
 
 ## Was ist ein Asset-Ordner? {#what-is-an-assets-folder}
 
