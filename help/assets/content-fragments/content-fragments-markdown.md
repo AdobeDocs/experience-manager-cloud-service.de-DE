@@ -1,18 +1,18 @@
 ---
 title: Markdown
-description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
+description: Verstehen Sie, wie der Content Fragment-Editor mit der Markdown-Syntax arbeitet, damit Sie problemlos ohne Kopf Inhalte erstellen können.
 translation-type: tm+mt
-source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
 # Markdown {#markdown}
 
-Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragment-Editor die *Markdown*-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern:
+Wenn Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) verwenden, verwendet der Inhaltsfragmenteditor die Syntax *markdown*, damit Sie ohne Kopfdaten Inhalte schreiben können:
 
 ![Markdown-Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
