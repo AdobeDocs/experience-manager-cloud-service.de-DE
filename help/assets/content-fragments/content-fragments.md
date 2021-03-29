@@ -1,18 +1,18 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) als Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für den kostenlosen Versand eignen.
 translation-type: tm+mt
-source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
+Mit Adobe Experience Manager (AEM) als Cloud Service ermöglichen Inhaltsfragmente das Entwerfen, Erstellen, Kuratieren und Veröffentlichen seitenunabhängiger Inhalte](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Diese ermöglichen es Ihnen, Inhalte vorzubereiten, die an mehreren Orten/über mehrere Kanal hinweg verwendet werden können und somit ideal für den kostenlosen Versand geeignet sind.[
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -78,8 +78,10 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
->Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>
+Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
