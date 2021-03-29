@@ -1,11 +1,11 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
-description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API.
+description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Asset HTTP-API, einem wichtigen Teil AEM kostenlosen Versand-Funktion.
 translation-type: tm+mt
-source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 98%
 
 ---
 
@@ -14,14 +14,18 @@ ht-degree: 100%
 
 ## Überblick {#overview}
 
+Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Asset HTTP-API, einem wichtigen Teil AEM kostenlosen Versand-Funktion.
+
 >[!NOTE]
 >
 >Die [Assets-HTTP-API](/help/assets/mac-api-assets.md) umfasst:
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
->Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
+>
+Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern von Adobe Experience Manager as a Cloud Service den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
@@ -63,7 +67,6 @@ Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
 >[!NOTE]
->
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
@@ -146,6 +149,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
