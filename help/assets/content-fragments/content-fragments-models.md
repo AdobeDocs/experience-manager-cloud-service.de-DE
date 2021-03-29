@@ -1,18 +1,18 @@
 ---
 title: Inhaltsfragmentmodelle
-description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
+description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre kostenlosen Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 96%
+source-wordcount: '2199'
+ht-degree: 94%
 
 ---
 
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md).
+Inhaltsfragmentmodelle in AEM definieren die Struktur des Inhalts Ihrer [Inhaltsfragmente,](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren kopflosen Inhalt dienen.
 
 So verwenden Sie Inhaltsfragmentmodelle:
 
