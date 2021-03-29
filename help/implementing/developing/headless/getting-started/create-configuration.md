@@ -1,11 +1,11 @@
 ---
 title: 'Schnellstartanleitung für Headless: Erstellen einer Konfiguration'
-description: Als ersten Schritt für den Einstieg in Headless in AEM as a Cloud Service müssen Sie eine Konfiguration erstellen.
+description: Erstellen Sie eine Konfiguration als ersten Schritt zu den ersten Schritten mit dem Kopflosen in AEM als Cloud Service.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '333'
+ht-degree: 94%
 
 ---
 
