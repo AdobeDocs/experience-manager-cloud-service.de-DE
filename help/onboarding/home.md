@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -19,17 +19,21 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zum Einstieg in Experienc
 Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 * Erste Schritte mit AEM als Cloud Service
-* Grundlegendes zu den Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen steuern
-* Einrichten des Git-Repository für Cloud Manager
+
+* Die Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen steuern
+
+* Einrichten des Git-Repositorys von Cloud Manager
+
 * Zugriff auf Experience Manager as a Cloud Service
-* Grundlagen für den Datenschutz und Datenschutzvorschriften
+
+* Grundlagen für Datenschutz- und Datenschutzvorschriften
 
 ## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Überblick](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
+| [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
