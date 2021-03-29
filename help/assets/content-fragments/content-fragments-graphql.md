@@ -1,18 +1,18 @@
 ---
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
-description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit GraphQL für die Headless-Bereitstellung von Inhalten verwenden.
+description: Erfahren Sie, wie Sie AEM Inhaltsfragmente mit GraphQL für den Versand ohne Kopfdaten verwenden.
 translation-type: tm+mt
-source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 92%
+source-wordcount: '716'
+ht-degree: 85%
 
 ---
 
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmente zusammen mit der AEM GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Mit Adobe Experience Manager (AEM) als Cloud Service können Sie Inhaltsfragmente zusammen mit der AEM GraphQL API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um ohne Probleme strukturierte Inhalte für Ihre Anwendungen bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 >[!NOTE]
 >
