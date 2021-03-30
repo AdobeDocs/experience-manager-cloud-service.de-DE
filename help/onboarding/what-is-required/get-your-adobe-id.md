@@ -2,7 +2,7 @@
 title: Adobe ID
 description: Adobe ID
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe ID abrufen {#adobe-id}
+# Adobe ID {#adobe-id} abrufen
 
 In diesem Handbuch finden Sie eine Checkliste, mit der Sie und Ihr Team schnell mit Cloud Manager beginnen können. Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer zu Cloud Manager ihren zugewiesenen Rollen (in der Admin Console als &quot;Product Profils&quot;bezeichnet) und den zugehörigen Berechtigungen hinzuzufügen. Die Anweisungen, wie der Systemadministrator dies über die Admin Console durchführen kann, werden beschrieben.
 
