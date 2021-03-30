@@ -2,7 +2,7 @@
 title: 'Erstellen eines Production-Programms '
 description: 'Erstellen eines Production-Programms '
 translation-type: tm+mt
-source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Gehen Sie wie folgt vor, um ein Production-Programm zu erstellen:
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >Weitere Informationen zum Zugriff auf Cloud Manager finden Sie unter [Cloud Manager-Landingpage](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md).
+   >Weitere Informationen zum Zugriff auf Cloud Manager finden Sie unter [Cloud Manager-Landingpage](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
 1. Wählen Sie im Assistenten &quot;Programm erstellen&quot;die Option &quot;Für Produktion einrichten **&quot;aus, um ein Programm für die Produktion zu erstellen.** Der Benutzer kann den Standardnamen des Programms akzeptieren oder bearbeiten, bevor er **Weiter** auswählt.
 
