@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Bereitstellen
 role: Architekt, Entwickler
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 92%
+source-wordcount: '674'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
    + [Benutzerrollen und Berechtigungen](what-is-required/user-roles-permissions.md)
    + [Systemadministrator-Aufgaben](what-is-required/add-users-assign-cm-roles.md)
    + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
-   + [Zugriff auf AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Gewähren von Benutzerzugriff auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager-Programme {#getting-access}
    + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Produktions-Programm {#production-programs}
