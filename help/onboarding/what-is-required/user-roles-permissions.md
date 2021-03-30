@@ -2,10 +2,10 @@
 title: Benutzerrollen und Berechtigungen
 description: Auf dieser Seite werden Benutzerrollen und Berechtigungen beschrieben. Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen.
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 54%
+source-wordcount: '624'
+ht-degree: 44%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe erstellt im Adobe Identity Management System (IMS) eine **Organisationsken
 
 Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich.
 
+Viele Funktionen in Cloud Manager erfordern spezifische Berechtigungen zum Betrieb und schränken die Aktionen ein, die Sie in der Benutzeroberfläche je nach zugewiesenen Rollen und Berechtigungen durchführen. Wenn Sie nicht berechtigt sind, eine Aktion durchzuführen, ist in einigen Fällen das Steuerelement der Benutzeroberfläche zwar vorhanden, aber deaktiviert.
+
+Wenn eine Aktion durchgeführt werden soll, die jedoch nicht durchgeführt werden kann, überprüfen Sie [die Berechtigungen, die mit den Rollendefinitionen](#permissions) verknüpft sind. Je nach Ziel können Sie sich an den Systemadministrator wenden und die gewünschte Rolle anfordern.
+
 In Cloud Manager sind derzeit vier Rollen für Anwender definiert, die die Verfügbarkeit bestimmter Funktionen steuern:
 
 * Business Owner
@@ -28,6 +32,8 @@ In Cloud Manager sind derzeit vier Rollen für Anwender definiert, die die Verf�
 >[!NOTE]
 >Die Entwicklerrolle in Admin Console ist nicht mit der Entwicklerrolle in [!UICONTROL Cloud Manager] verbunden.
 
+## Rollendefinitionen {#role-definitions}
+
 In der folgenden Tabelle finden Sie eine Zusammenfassung der Rollen:
 
 | [!UICONTROL Cloud Manager]-Rollen | Beschreibung |
@@ -37,6 +43,12 @@ In der folgenden Tabelle finden Sie eine Zusammenfassung der Rollen:
 | Bereitstellungsmanager | Verwaltet Bereitstellungsvorgänge. Kann mit [!UICONTROL Cloud Manager] Staging-/Produktionsbereitstellungen ausführen. Kann CI/CD Pipelines bearbeiten. Kann bedeutende 3-Tier-Fehler genehmigen. Kann Zugriff auf das Git-Repository erhalten. |
 | Entwickler | Entwickelt und testet anwenderspezifischen Anwendungscode. Nutzt [!UICONTROL Cloud Manager] hauptsächlich, um den Status anzuzeigen. Kann Zugriff auf das Git-Repository für Codecommits erhalten. |
 | Inhaltsautor | Interagiert im Allgemeinen nicht mit [!UICONTROL Cloud Manager]. Kann über den [!UICONTROL Cloud Manager]-Programmumschalter (nach Navigation über [!UICONTROL Experience Cloud]) auf AEM zugreifen. |
+
+### Anzeigen Ihrer Rollen {#view-roles}
+
+Melden Sie sich zur Ansicht Ihrer Rolle in Cloud Manager bei der Benutzeroberfläche von Cloud Manager an, wählen Sie oben rechts das Profil-Symbol und dann **Benutzerrollen** aus, wie in der folgenden Abbildung dargestellt.
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Das Profil für das Integrationsprodukt {#integration-product-profile}
 
