@@ -2,7 +2,7 @@
 title: 'Zugriff auf AEM Instanzen '
 description: Auf dieser Seite erfahren Sie, wie Sie auf eine AEM zugreifen
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Zugriff auf eine AEM Instanz {#accessing-aem-instance}
+# Zugriff auf AEM Instanz {#accessing-aem-instance}
 
 Gehen Sie wie folgt vor, um von Cloud Manager aus auf eine AEM Instanz zuzugreifen:
 
