@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Bereitstellen
 role: Architekt, Entwickler
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 93%
+source-wordcount: '672'
+ht-degree: 91%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 93%
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
 + Erste Schritte mit AEM als Cloud Service {#what-is-required}
-   + [Gewährte Zugriffsrechte](what-is-required/access-rights-granted.md)
-   + [Rollenbasierte Berechtigungen](what-is-required/role-based-permissions.md)
-   + [Quell-Code-Repository](what-is-required/source-code-repository.md)
-+ Erhalten von Zugriff auf AEM in der Cloud {#getting-access}
-   + [Zugriff auf Cloud Manager für AEM als Cloud Service erhalten](getting-access-to-aem-in-cloud/navigation.md)
-   + Zugriff auf Cloud Manager {#cloud-service-programs}
-      + [Cloud Manager-Landingpage](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + Produktions-Programm {#production-programs}
-         + [Einführung](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [Erstellen eines Production-Programms](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [Bearbeiten eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + Sandbox-Programme {#sandbox-programs}
-         + [Einführung](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Erstellen eines Sandbox-Programms](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [Bearbeiten eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [Löschen eines Sandbox-Programms](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [Ruhezustand und Reaktivieren von Sandbox-Umgebungen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [Adobe ID abrufen](what-is-required/get-your-adobe-id.md)
+   + [Hinzufügen von Benutzern und Zuweisen zu Cloud Manager-Rollen](what-is-required/add-users-assign-cm-roles.md)
+   + [Navigieren zu Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+   + [Zugreifen auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ Cloud Manager-Programme {#getting-access}
+   + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + Produktions-Programm {#production-programs}
+      + [Einführung](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Erstellen eines Production-Programms](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Bearbeiten eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + Sandbox-Programme {#sandbox-programs}
+      + [Einführung](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Erstellen eines Sandbox-Programms](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Bearbeiten eines Sandbox-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Löschen eines Sandbox-Programms](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Ruhezustand und Reaktivieren von Sandbox-Umgebungen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de)
       + [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de)
