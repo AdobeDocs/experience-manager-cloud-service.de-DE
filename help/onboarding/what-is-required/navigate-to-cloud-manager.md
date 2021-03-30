@@ -2,7 +2,7 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Cloud Manager-Landingpage navigieren
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 15%
@@ -54,7 +54,7 @@ Daraufhin wird eine der drei folgenden Optionen angezeigt:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Von hier aus kann ein Benutzer mit den richtigen Berechtigungen, z. B. eine Rolle als Geschäftsinhaber in Cloud Manager, **Hinzufügen Programm** auswählen, um den Assistenten zu starten.
+Von hier aus kann ein Benutzer mit den richtigen Berechtigungen, z. B. eine Rolle als Geschäftsinhaber in Cloud Manager, **Hinzufügen Programm** auswählen, um den [Wizard](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md) zu starten.
 
 Informationen zum Hinzufügen eines Programms in Cloud Manager finden Sie unter:
 
