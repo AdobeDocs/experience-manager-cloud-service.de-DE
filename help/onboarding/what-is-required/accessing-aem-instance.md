@@ -1,18 +1,18 @@
 ---
-title: 'Zugriff auf AEM Instanzen '
-description: Auf dieser Seite erfahren Sie, wie Sie auf eine AEM zugreifen
+title: 'Gewähren von Benutzerzugriff auf eine AEM Instanz '
+description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator einem Benutzer Zugriff auf eine AEM Instanz gewährt.
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
 
 
-# Zugriff auf AEM Instanz {#accessing-aem-instance}
+# Gewähren Sie dem Benutzer Zugriff auf eine AEM Instanz {#accessing-aem-instance}
 
-Gehen Sie wie folgt vor, um von Cloud Manager aus auf eine AEM Instanz zuzugreifen:
+Als Systemadministrator führen Sie die folgenden Schritte aus, um dem Benutzer Zugriff auf eine AEM Instanz zu gewähren:
 
 1. Navigieren Sie zum Cloud Manager und klicken Sie auf die Schaltfläche **Zugriff verwalten** aus der **Umgebung**-Karte, wie unten dargestellt.
 
