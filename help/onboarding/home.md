@@ -2,7 +2,7 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: b3f9d750c2103f2af97b8348dcdb24a80a06fa06
+source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 52%
@@ -13,6 +13,8 @@ ht-degree: 52%
 # Einstieg in Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
 Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung auf dem Cloud Service optimiert und für den Erfolg gerüstet ist.
+
+![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
 
 ## Wichtige Artikel zum Einstieg {#key-articles}
 
