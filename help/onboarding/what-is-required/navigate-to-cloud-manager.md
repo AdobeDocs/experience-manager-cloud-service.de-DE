@@ -2,10 +2,10 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Cloud Manager-Landingpage navigieren
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 16%
+source-wordcount: '344'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,8 @@ Sobald Ihr Systemadministrator Ihnen Zugriff auf Cloud Manager gewährt hat, erh
 >[!NOTE]
 >Sie müssen als Benutzer hinzugefügt und von Ihrem Systemadministrator einer Cloud Manager-Rolle (Produkt-Profil in Admin Console) zugewiesen werden.
 
-1. Wählen Sie in Ihrer Begrüßungs-E-Mail **Erste Schritte** oder navigieren Sie zu [Cloud Manager](https://experience.adobe.com) und melden Sie sich mit Ihrem Adobe ID an.
+1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, wie in der Abbildung unten dargestellt, oder navigieren Sie zu [Cloud Manager](https://experience.adobe.com) und melden Sie sich mit Ihrem Adobe ID an.\
+   ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. Wählen Sie **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
