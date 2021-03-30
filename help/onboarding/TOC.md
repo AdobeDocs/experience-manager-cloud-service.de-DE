@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Bereitstellen
 role: Architekt, Entwickler
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 91%
+source-wordcount: '671'
+ht-degree: 92%
 
 ---
 
@@ -19,10 +19,11 @@ ht-degree: 91%
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
 + Erste Schritte mit AEM als Cloud Service {#what-is-required}
-   + [Adobe ID abrufen](what-is-required/get-your-adobe-id.md)
-   + [Hinzufügen von Benutzern und Zuweisen zu Cloud Manager-Rollen](what-is-required/add-users-assign-cm-roles.md)
-   + [Navigieren zu Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [Zugreifen auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [Benutzerrollen und Berechtigungen](what-is-required/user-roles-permissions.md)
+   + [Systemadministrator-Aufgaben](what-is-required/add-users-assign-cm-roles.md)
+   + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
+   + [Zugriff auf AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager-Programme {#getting-access}
    + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Produktions-Programm {#production-programs}
