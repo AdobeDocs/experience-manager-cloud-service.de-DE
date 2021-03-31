@@ -1,11 +1,13 @@
 ---
 title: Anzeigen in der Vorschau – JSON-Repräsentation
 description: Erfahren Sie, wie Sie bei der Implementierung Ihrer AEM Lösung ohne Kopf die JSON-Darstellung Ihrer Inhaltsfragmente ganz einfach Vorschau haben.
+feature: Inhaltsfragmente
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 57%
+source-wordcount: '117'
+ht-degree: 58%
 
 ---
 
