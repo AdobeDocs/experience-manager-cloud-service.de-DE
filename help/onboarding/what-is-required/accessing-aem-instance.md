@@ -2,9 +2,9 @@
 title: 'Gewähren von Benutzerzugriff auf eine AEM Instanz '
 description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator einem Benutzer Zugriff auf eine AEM Instanz gewährt.
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Als Systemadministrator führen Sie die folgenden Schritte aus, um dem Benutzer 
 1. Navigieren Sie zum Cloud Manager und klicken Sie auf die Schaltfläche **Zugriff verwalten** aus der **Umgebung**-Karte, wie unten dargestellt.
 
    >[!NOTE]
-   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur Geschäftseigentümer- oder Deployment Manager-Rollen sind berechtigt, eine Umgebung zu erstellen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Hinzufügen von Benutzern und Zuweisen von Cloud Manager-Rollen](/help/onboarding/what-is-required/add-users-assign-cm-roles.md).
+   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur Geschäftseigentümer- oder Deployment Manager-Rollen sind berechtigt, eine Umgebung zu erstellen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Benutzerrollen und -berechtigungen](/help/onboarding/what-is-required/user-roles-permissions.md). Weitere Informationen zu Umgebung finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md).
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
