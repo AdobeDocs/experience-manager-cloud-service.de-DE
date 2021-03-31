@@ -2,15 +2,21 @@
 title: 'Systemadministrator-Aufgaben '
 description: Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie als Systemadministrator Cloud Manager-Rollen zuweisen
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # Systemadministrator-Aufgaben {#add-users-assign}
+
+Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff auf Berechtigungen. Dieser Benutzer hat als erster Zugriff auf Beginn, die Aufgaben in Admin Console und Cloud Manager durchführen.
+Ein Systemadministrator führt die folgenden organisatorischen Aufgaben durch:
+
+* Hinzufügen von Benutzern
+* Zuweisen von Benutzern zu Cloud Manager-Rollen und -Berechtigungen
 
 ## Hinzufügen von Benutzern {#add-users}
 
