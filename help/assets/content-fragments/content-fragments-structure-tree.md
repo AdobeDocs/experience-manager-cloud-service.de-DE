@@ -1,11 +1,13 @@
 ---
 title: Strukturbaum der Inhaltsfragmente
 description: Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um den Inhalt ohne Kopf besser zu verstehen.
+feature: Inhaltsfragmente
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 53%
+source-wordcount: '82'
+ht-degree: 56%
 
 ---
 
