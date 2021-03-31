@@ -2,9 +2,9 @@
 title: 'Gewähren von Benutzerzugriff auf eine AEM Instanz '
 description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator einem Benutzer Zugriff auf eine AEM Instanz gewährt.
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
