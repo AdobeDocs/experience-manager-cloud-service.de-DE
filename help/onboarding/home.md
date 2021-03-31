@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 98d840cf618052dd0fab5e1e6bfce6cb1bee441b
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 44%
+source-wordcount: '904'
+ht-degree: 43%
 
 ---
 
@@ -14,9 +14,11 @@ ht-degree: 44%
 
 Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung auf dem Cloud Service optimiert und für den Erfolg gerüstet ist.
 
-In diesem Handbuch finden Sie eine Checkliste, mit der Sie und Ihr Team schnell mit Cloud Manager beginnen können. Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer, die in der Admin Console als Produktberechtigungen bezeichnet werden, zu Cloud Manager hinzufügen zu können. Die Anweisungen, wie der Systemadministrator dies über die Admin Console durchführen kann, werden beschrieben. Die Liste der Rollen von Cloud Manager, die in der Admin Console als &quot;Product Profils&quot;bezeichnet werden, und die damit verbundenen Berechtigungen sind detailliert, damit Sie bestimmen können, welche Rollen für verschiedene Benutzer in Ihrem Unternehmen erforderlich sein können.
+In diesem Handbuch finden Sie eine Checkliste, mit der Sie und Ihr Team schnell mit Cloud Manager beginnen können. Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer, die in der Admin Console als Produktberechtigungen bezeichnet werden, zu Cloud Manager hinzufügen zu können. Die Anweisungen, wie der Systemadministrator dies über die Admin Console tun kann, werden [hier](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) beschrieben. Die Liste der Rollen von Cloud Manager, die in der Admin Console als &quot;Product Profils&quot;bezeichnet werden, und die damit verbundenen Berechtigungen sind detailliert, damit Sie bestimmen können, welche Rollen für verschiedene Benutzer in Ihrem Unternehmen erforderlich sein können.
 
-![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
+Die folgende Abbildung zeigt Ihre Onboarding-Journey und beginnt mit der Begrüßungs-E-Mail, die Ihr Systemadministrator erhalten hat, und gipfelt in Benutzern, die als Cloud Service auf Cloud Manager zugreifen, um AEM zu erhalten.
+
+![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
 ## Wichtige Artikel zum Einstieg {#key-articles}
 
