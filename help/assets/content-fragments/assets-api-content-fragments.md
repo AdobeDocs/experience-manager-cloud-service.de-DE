@@ -1,11 +1,12 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Asset HTTP-API, einem wichtigen Teil AEM kostenlosen Versand-Funktion.
+feature: Inhaltsfragmente, Assets HTTP-API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 98%
+source-wordcount: '1958'
+ht-degree: 97%
 
 ---
 
