@@ -2,10 +2,12 @@
 title: Metadatenschemata
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
+feature: 'Metadaten  '
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2513'
 ht-degree: 100%
 
 ---
