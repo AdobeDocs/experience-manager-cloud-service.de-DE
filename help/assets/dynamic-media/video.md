@@ -3,10 +3,11 @@ title: Video
 description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 feature: Videoprofile
 topic: Geschäftspraktiker
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9514'
 ht-degree: 70%
 
 ---
@@ -404,7 +405,7 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 
 | Videotyp | Breite x Höhe | Breitenverhältnis | Höhenverhältnis |
 |--- |--- |--- |--- |
-| Quelle | 1920 x 1080 | 1 | 3 |
+| Quelle | 1920 x 1080 | 1 | 1 |
 | Kodiert | 960 x 540 | 2 | 2 |
 | Kodiert | 640 x 360 | 3 | 1 |
 | Kodiert | 480 x 270 | 4 | 4 |
