@@ -2,10 +2,10 @@
 title: Benutzerrollen und Berechtigungen
 description: Auf dieser Seite werden Benutzerrollen und Berechtigungen beschrieben. Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen.
 translation-type: tm+mt
-source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 30%
+source-wordcount: '449'
+ht-degree: 28%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 30%
 
 ## Anwenderrollen {#user-roles}
 
-Für viele Funktionen in Cloud Manager sind spezielle Berechtigungen erforderlich.
-
 Viele Funktionen in Cloud Manager erfordern spezifische Berechtigungen zum Betrieb und schränken die Aktionen ein, die Sie in der Benutzeroberfläche je nach zugewiesenen Rollen und Berechtigungen durchführen. Wenn Sie nicht berechtigt sind, eine Aktion durchzuführen, ist in einigen Fällen das Steuerelement der Benutzeroberfläche zwar vorhanden, aber deaktiviert.
 
-Wenn eine Aktion durchgeführt werden soll, die jedoch nicht durchgeführt werden kann, überprüfen Sie [die Berechtigungen, die mit den Rollendefinitionen](#permissions) verknüpft sind. Je nach Ziel können Sie sich an den Systemadministrator wenden und die gewünschte Rolle anfordern.
+Wenn Sie eine Aktion ausführen möchten, die Sie jedoch nicht ausführen können, prüfen Sie den folgenden Abschnitt: [Benutzerrollen und -berechtigungen](#permissions). Je nach Ziel können Sie sich an den Systemadministrator wenden und die gewünschte Rolle anfordern.
 
 In Cloud Manager sind derzeit vier Rollen für Anwender definiert, die die Verfügbarkeit bestimmter Funktionen steuern:
 
@@ -34,6 +32,9 @@ In Cloud Manager sind derzeit vier Rollen für Anwender definiert, die die Verf�
 
 Melden Sie sich zur Ansicht Ihrer Rolle in Cloud Manager bei der Benutzeroberfläche von Cloud Manager an, wählen Sie oben rechts das Profil-Symbol und dann **Benutzerrollen** aus, wie in der folgenden Abbildung dargestellt.
 
+>[!NOTE]
+>Weitere Informationen zur Anmeldung bei Cloud Manager finden Sie unter [Navigieren Sie zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### Das Profil für das Integrationsprodukt {#integration-product-profile}
@@ -41,7 +42,7 @@ Melden Sie sich zur Ansicht Ihrer Rolle in Cloud Manager bei der Benutzeroberfl�
 Zusätzlich zu den oben genannten Funktionen erstellt Cloud Manager automatisch ein Profil mit dem Namen &quot;Integrationen - Cloud Service&quot;. Dieses Profil wird für die Integration zwischen Adobe Experience Manager und anderen Produkten der Adobe verwendet. Dieses Profil **darf** nicht gelöscht werden. Wenn Sie dieses Profil versehentlich löschen, muss es manuell neu erstellt werden. Der Anzeigename für dieses Profil **muss** `CM_CS_DEFAULT` sein.
 
 
-## Berechtigungen in Verbindung mit Rollendefinitionen {#permissions}
+## Benutzerrollen und Berechtigungen {#permissions}
 
 [!UICONTROL Cloud Manager] verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Beispielsweise schreibt ein Entwickler Code und ist berechtigt, den Code per Push an das **Git-Repository** zu übertragen. Alternativ dazu verfügt ein Geschäftsinhaber über andere Berechtigungen, mit denen er Programm hinzufügen und bearbeiten, Umgebung hinzufügen und Bereitstellungen genehmigen kann.
 
