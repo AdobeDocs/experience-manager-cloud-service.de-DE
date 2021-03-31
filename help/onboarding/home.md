@@ -2,7 +2,7 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 42%
@@ -28,7 +28,7 @@ In diesem Abschnitt werden die wichtigsten Artikel behandelt, die sich auf Ihr J
 
 Nach Vertragsunterzeichnung finden die folgenden Ereignis statt:
 
-1. Die Adobe schließt die Bereitstellung für Ihr Unternehmen ab. Danach erhält der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail, die es ihm ermöglicht, [Aufgaben des Systemadministrators](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) auszuführen, einschließlich des Hinzufügens von Benutzern, der Zuweisung zu Rollen und der Gewährung des entsprechenden [Zugriffs auf Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. Die Adobe schließt die Bereitstellung für Ihr Unternehmen ab, woraufhin der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail erhält, die es ihm ermöglicht, [Aufgaben des Systemadministrators](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) auszuführen, einschließlich des Hinzufügens von Benutzern, der Zuweisung zu Rollen und der Gewährung des entsprechenden Zugriffs auf Cloud Manager.
 
 1. Benutzer, die von Ihrem Systemadministrator hinzugefügt werden, erhalten wiederum eine Begrüßungs-E-Mail, damit sie erfolgreich [Navigieren Sie zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Benutzer können sich jetzt mit ihrem Adobe ID anmelden und mit der Journey mit Cloud Manager beginnen.
 
