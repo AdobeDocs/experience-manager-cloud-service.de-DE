@@ -2,11 +2,13 @@
 title: Assets mit Wasserzeichen versehen
 description: Hinzufügen von Wasserzeichen zu digitalen Assets.
 contentOwner: AG
+feature: Asset-Verwaltung, Veröffentlichen
+role: Geschäftspraktiker, Administrator
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 100%
+source-wordcount: '200'
+ht-degree: 98%
 
 ---
 
