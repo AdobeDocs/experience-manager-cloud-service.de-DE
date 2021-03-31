@@ -2,11 +2,13 @@
 title: Digitale Assets in mehreren Sprachen erstellen und verwalten
 description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
+feature: Asset-Verwaltung, Übersetzung
+role: Administrator, Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 100%
+source-wordcount: '2593'
+ht-degree: 99%
 
 ---
 
