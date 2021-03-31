@@ -1,10 +1,12 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
 description: Verstehen Sie, wie Varianten Ihren Kopflosen Inhalt in AEM noch flexibler machen können, indem Sie Inhalte für das Fragment erstellen und dann je nach Zweck Variationen des Inhalts erstellen.
+feature: Inhaltsfragmente
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2259'
 ht-degree: 92%
 
 ---
