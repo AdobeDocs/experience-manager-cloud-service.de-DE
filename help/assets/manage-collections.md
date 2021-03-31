@@ -3,10 +3,12 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Manager Assets vertraut. Erfahren Sie, wie Sie Sammlungen verwalten, bearbeiten und mit anderen Benutzern teilen können.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Sammlungen, Asset-Verwaltung
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2402'
 ht-degree: 97%
 
 ---
