@@ -2,11 +2,13 @@
 title: Asset-Microservices konfigurieren und verwenden
 description: Konfigurieren und verwenden Sie die Cloud-nativen Asset-Microservices, um Assets mit hoher Skalierung zu verarbeiten.
 contentOwner: AG
+feature: asset compute-Mikrodienste, Workflow, Asset-Verarbeitung
+role: Architekt, Administrator
 translation-type: tm+mt
-source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 100%
+source-wordcount: '2584'
+ht-degree: 99%
 
 ---
 
