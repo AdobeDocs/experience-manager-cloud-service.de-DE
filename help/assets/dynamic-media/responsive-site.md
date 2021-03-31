@@ -3,11 +3,12 @@ title: Bereitstellen von optimierten Bildern für eine responsive Site
 description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte Bilder von Dynamic Media bereitstellen.
 feature: Asset-Verwaltung
 topic: Geschäftspraktiker
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 98%
+source-wordcount: '328'
+ht-degree: 99%
 
 ---
 
