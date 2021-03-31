@@ -3,10 +3,11 @@ title: Intelligente Bildbearbeitung
 description: '"Erfahren Sie, wie bei der intelligenten Bildbearbeitung die individuellen Anzeigeeigenschaften der einzelnen Benutzer angewendet werden, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt."'
 feature: Asset-Verwaltung, Darstellungen
 topic: Geschäftspraktiker
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 54%
 
 ---
