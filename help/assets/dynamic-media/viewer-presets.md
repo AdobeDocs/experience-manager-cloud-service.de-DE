@@ -3,10 +3,11 @@ title: Anwenden von Dynamic Media-Viewer-Vorgaben
 description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden..
 feature: Viewer-Vorgaben,Viewer
 topic: Administrator, Geschäftspraktiker
+role: Geschäftspraktiker
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '223'
 ht-degree: 89%
 
 ---
