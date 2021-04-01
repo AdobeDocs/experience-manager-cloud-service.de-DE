@@ -2,9 +2,9 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 6ce8b5c53de45d6466c5a835eea27a5acfff0a40
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 42%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 42%
 
 Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung auf dem Cloud Service optimiert und für den Erfolg gerüstet ist.
 
-Diese Anleitung hilft Ihnen und Ihrem Team, mit Cloud Manager schnell zu beginnen. Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer, die in der Admin Console als Produktberechtigungen bezeichnet werden, zu Cloud Manager hinzufügen zu können. Die Anweisungen, wie der Systemadministrator dies über die Admin Console durchführen kann, werden beschrieben. Die Liste der Rollen von Cloud Manager, die in der Admin Console als &quot;Product Profils&quot;bezeichnet werden, und die damit verbundenen Berechtigungen sind detailliert, damit Sie bestimmen können, welche Rollen für verschiedene Benutzer in Ihrem Unternehmen erforderlich sein können.
+Diese Anleitung hilft Ihnen und Ihrem Team, mit Cloud Manager schnell zu beginnen. Sie benötigen die Hilfe Ihres Adobe ID und Ihres Systemadministrators, um Benutzer, die in der Admin Console als Produktberechtigungen bezeichnet werden, zu Cloud Manager hinzufügen zu können. Die Anweisungen, wie der Systemadministrator dies über die Admin Console durchführen kann, werden beschrieben. Die Liste der Rollen von Cloud Manager, die in der Admin Console als &quot;Product Profils&quot;bezeichnet werden, und die damit verbundenen Berechtigungen sind detailliert, damit Sie bestimmen können, welche Rollen für verschiedene Benutzer in Ihrem Unternehmen erforderlich sein können.
 
 Die folgende Abbildung zeigt Ihre Onboarding-Journey, angefangen mit der Begrüßungs-E-Mail, die Sie von Ihrem Systemadministrator erhalten haben, und gipfelt in Benutzern, die als Cloud Service auf Cloud Manager AEM zugreifen.
 
@@ -30,13 +30,13 @@ Nach Vertragsunterzeichnung finden die folgenden Ereignis statt:
 
 1. Die Adobe schließt die Bereitstellung für Ihr Unternehmen ab, woraufhin der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail erhält, die es ihm ermöglicht, [Aufgaben des Systemadministrators](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) auszuführen, einschließlich des Hinzufügens von Benutzern, der Zuweisung zu Rollen und der Gewährung des entsprechenden Zugriffs auf Cloud Manager.
 
-1. Benutzer, die von Ihrem Systemadministrator hinzugefügt werden, erhalten wiederum eine Begrüßungs-E-Mail, damit sie erfolgreich [Navigieren Sie zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Benutzer können sich jetzt mit ihrem Adobe ID anmelden und mit der Journey mit Cloud Manager beginnen.
+1. Benutzer, die von Ihrem Systemadministrator hinzugefügt werden, erhalten wiederum eine Begrüßungs-E-Mail, damit sie erfolgreich [zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) navigieren können. Benutzer können sich jetzt mit ihrem Adobe ID anmelden und mit der Journey mit Cloud Manager beginnen.
 
 1. Ein Systemadministrator kann Benutzern zu Entwicklungszwecken Zugriff auf eine AEM Instanz gewähren.[](/help/onboarding/what-is-required/accessing-aem-instance.md)
 
 **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
 
-Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer zu den ihnen zugewiesenen Rollen hinzuzufügen.
+Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer zu den zugewiesenen Rollen hinzuzufügen.
 
 **[Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
