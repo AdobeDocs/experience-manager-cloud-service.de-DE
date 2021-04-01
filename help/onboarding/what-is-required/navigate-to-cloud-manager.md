@@ -2,10 +2,10 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Cloud Manager-Landingpage navigieren
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 24%
+source-wordcount: '458'
+ht-degree: 23%
 
 ---
 
@@ -58,7 +58,7 @@ Daraufhin wird eine der drei folgenden Optionen angezeigt:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Von hier aus kann ein Benutzer mit den richtigen Berechtigungen, z. B. eine Rolle als Geschäftsinhaber in Cloud Manager, **Hinzufügen Programm** auswählen, um den [Wizard](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md) zu starten.
+Von hier aus kann ein Benutzer mit den richtigen Berechtigungen, z. B. eine Rolle als Geschäftsinhaber in Cloud Manager, **Hinzufügen Programm** auswählen, um den [Hinzufügen Programm-Assistenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access) zu starten.
 
 Informationen zum Hinzufügen eines Programms in Cloud Manager finden Sie unter:
 
