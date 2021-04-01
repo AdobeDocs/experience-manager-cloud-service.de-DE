@@ -2,7 +2,7 @@
 title: Cloud Manager-Rollen
 description: Auf dieser Seite werden Benutzerrollen und Berechtigungen beschrieben. Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 19%
@@ -65,7 +65,7 @@ Die folgende Tabelle fasst die Rollen zusammen mit den zugehörigen Berechtigung
 | hinzufügen Programm<br>Programm bearbeiten | hinzufügen ein neues Programm.<br>Bearbeiten eines Programms - Hinzufügen oder Entfernen von Lösungen oder Add-ons | x |  |  |  |
 | Umgebung erstellen | Erstellen Sie Prod+Stage, Dev, Umgebung. | x | x |  |  |
 | Umgebung aktualisieren | Aktualisieren Sie Prod+Stage, Dev, Umgebung. | x | x |  |  |
-| Umgebung löschen | Löschen Sie Umgebung ohne Prod, Dev und Dev. | x | x |  |  |
+| Dev-Umgebung löschen | Löschen Sie Dev-Umgebung. | x | x |  |  |
 | Pipeline-Einrichtung | Einrichten oder Bearbeiten der Pipeline. |  | x |  |  |
 | Pipeline-Ausführung | Beginn der Pipeline. | x | x |  |  |
 | Pipeline-Ausführung | Ablehnen/Genehmigen Sie wichtige 3-Stufen-Fehler. | x | x | x |  |
