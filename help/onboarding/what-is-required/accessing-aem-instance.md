@@ -2,9 +2,9 @@
 title: 'Gewähren von Benutzerzugriff auf eine AEM Instanz '
 description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator einem Benutzer Zugriff auf eine AEM Instanz gewährt.
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,13 @@ Als Systemadministrator führen Sie die folgenden Schritte aus, um dem Benutzer 
 1. Navigieren Sie zum Cloud Manager und klicken Sie auf die Schaltfläche **Zugriff verwalten** aus der **Umgebung**-Karte, wie unten dargestellt.
 
    >[!NOTE]
-   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur Geschäftseigentümer- oder Deployment Manager-Rollen sind berechtigt, eine Umgebung zu erstellen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Benutzerrollen und -berechtigungen](/help/onboarding/what-is-required/user-roles-permissions.md). Weitere Informationen zu Umgebung finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md).
+   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur Geschäftseigentümer- oder Deployment Manager-Rollen sind berechtigt, eine Umgebung zu erstellen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md). Weitere Informationen zu Umgebung finden Sie unter [Verwalten von Umgebung](/help/implementing/cloud-manager/manage-environments.md).
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Oder
 
-   **Verwalten Sie** Accessis auch über die  **** Registerkarte Management verfügbar, wenn Sie auf  **** Details aus der  **** Umgebungskarte klicken.
+   Wählen Sie auf der Seite **Umgebung** **Verwalten** —> **Zugriff verwalten**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
