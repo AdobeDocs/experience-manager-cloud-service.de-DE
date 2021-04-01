@@ -2,9 +2,9 @@
 title: 'Systemadministrator-Aufgaben '
 description: Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie als Systemadministrator Cloud Manager-Rollen zuweisen
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ Ein Systemadministrator führt die folgenden organisatorischen Aufgaben durch:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Lesen Sie die Abschnitte [Benutzerrollen und -berechtigungen](#user-roles) und [Berechtigungen, die mit Rollendefinitionen](#permissions) verknüpft sind, um sicherzustellen, dass den richtigen Benutzern die richtige(n) Rolle(en) in der **Admin Console** zugewiesen wird.
+   >Vergewissern Sie sich unter [Benutzerrollen und -berechtigungen](#user-roles) und [Berechtigungen, die mit Rollendefinitionen](#permissions) verknüpft sind, dass den richtigen Benutzern die richtige Rolle(en) in der **Admin Console** zugewiesen wurde.
 
    Jetzt haben Sie Benutzer zu Adobe Experience Manager als Cloud Service-Produktkontext hinzugefügt und sind mit den richtigen Rollen oder Profilen eingerichtet.
 
-   Wenn Sie z. B. die Rolle eines
-
-   * ***Geschäftsinhaber*** haben Sie die Berechtigung, ein neues Programm zu Hinzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, die Pipeline hinzuzufügen/zu bearbeiten/zu löschen, Pipeline auszuführen und Code für AEM Umgebung oder Codequalität bereitzustellen.
-
-   * ***Deployment Manager*** verfügen Sie über die Berechtigung zum Hinzufügen oder Aktualisieren einer Umgebung, zum Ausführen einer beliebigen Pipeline und zum Bereitstellen von Code für AEM Umgebung oder Codequalität.
-
-   * ***Entwickler*** haben Sie die Berechtigung, Personal Zugriffstoken zu generieren, um auf Git zuzugreifen.
-
-      >[!NOTE]
-      > Ein Benutzer kann mehreren Rollen zugewiesen werden. Wenn einem Benutzer beispielsweise die Rollen &quot;Geschäftsinhaber&quot;und &quot;Deployment Manager&quot;zugewiesen werden, erhalten diese Benutzer die Kombination oder Summe dieser Berechtigungen.
