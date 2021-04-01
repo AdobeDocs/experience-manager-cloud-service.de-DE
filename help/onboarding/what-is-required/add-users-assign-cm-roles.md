@@ -2,9 +2,9 @@
 title: 'Systemadministrator-Aufgaben '
 description: Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie als Systemadministrator Cloud Manager-Rollen zuweisen
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Ein Systemadministrator führt die folgenden organisatorischen Aufgaben durch:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Vergewissern Sie sich unter [Benutzerrollen und -berechtigungen](#user-roles) und [Berechtigungen, die mit Rollendefinitionen](#permissions) verknüpft sind, dass den richtigen Benutzern die richtige Rolle(en) in der **Admin Console** zugewiesen wurde.
+   >Weitere Informationen zu den in Cloud Manager angebotenen Rollen und Berechtigungen finden Sie unter [Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md).
 
    Jetzt haben Sie Benutzer zu Adobe Experience Manager als Cloud Service-Produktkontext hinzugefügt und sind mit den richtigen Rollen oder Profilen eingerichtet.
 
