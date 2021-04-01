@@ -2,15 +2,15 @@
 title: Benutzerrollen und Berechtigungen
 description: Auf dieser Seite werden Benutzerrollen und Berechtigungen beschrieben. Auf dieser Seite erfahren Sie, wie Sie Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen.
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 28%
+source-wordcount: '568'
+ht-degree: 19%
 
 ---
 
 
-# Benutzerrollen und Berechtigungen {#user-roles-permissions}
+# Cloud Manager-Rollen {#user-roles-permissions}
 
 ## Anwenderrollen {#user-roles}
 
@@ -44,13 +44,25 @@ Zusätzlich zu den oben genannten Funktionen erstellt Cloud Manager automatisch 
 
 ## Benutzerrollen und Berechtigungen {#permissions}
 
-[!UICONTROL Cloud Manager] verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Beispielsweise schreibt ein Entwickler Code und ist berechtigt, den Code per Push an das **Git-Repository** zu übertragen. Alternativ dazu verfügt ein Geschäftsinhaber über andere Berechtigungen, mit denen er Programm hinzufügen und bearbeiten, Umgebung hinzufügen und Bereitstellungen genehmigen kann.
+[!UICONTROL Cloud Manager] verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Ein Entwickler entwickelt beispielsweise Code und hat die Berechtigung, den Code an das Git-Repository zu senden. Alternativ dazu verfügt ein Geschäftsinhaber über andere Berechtigungen, mit denen er Programm hinzufügen und bearbeiten, Umgebung hinzufügen und Bereitstellungen genehmigen kann.
 
-Jede der Rollen hat spezifische Berechtigungen für jede Rolle. In der folgenden Tabelle sind die Rollen, die verfügbaren Funktionen und die Rollen, die die Funktion ausführen können, zusammengefasst.
+Jeder der Rollen sind spezifische Berechtigungen zugeordnet. Wenn Sie z. B. die Rolle eines
+
+* ***Geschäftsinhaber*** haben Sie die Berechtigung, ein neues Programm zu Hinzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, die Pipeline hinzuzufügen/zu bearbeiten/zu löschen, Pipeline auszuführen und Code für AEM Umgebung oder Codequalität bereitzustellen.
+
+* ***Deployment Manager*** verfügen Sie über die Berechtigung zum Hinzufügen oder Aktualisieren einer Umgebung, zum Ausführen einer beliebigen Pipeline und zum Bereitstellen von Code für AEM Umgebung oder Codequalität.
+
+* ***Entwickler*** haben Sie die Berechtigung, Personal Zugriffstoken zu generieren, um auf Git zuzugreifen.
+
+   >[!NOTE]
+   > Ein Benutzer kann mehreren Rollen zugewiesen werden. Wenn einem Benutzer beispielsweise die Rollen &quot;Geschäftsinhaber&quot;und &quot;Deployment Manager&quot;zugewiesen werden, erhalten diese Benutzer die Kombination oder Summe dieser Berechtigungen.
+
+
+Die folgende Tabelle fasst die Rollen zusammen mit den zugehörigen Berechtigungen in Cloud Manager zusammen.
 
 | Berechtigung | Beschreibung | Geschäftsinhaber | Bereitstellungsmanager | Programmmanager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
-| Programm hinzufügen | hinzufügen ein neues Programm. | x |  |  |  |
+| hinzufügen Programm<br>Programm bearbeiten | hinzufügen ein neues Programm.<br>Bearbeiten eines Programms - Hinzufügen oder Entfernen von Lösungen oder Add-ons | x |  |  |  |
 | Umgebung erstellen | Erstellen Sie Prod+Stage, Dev, Umgebung. | x | x |  |  |
 | Umgebung aktualisieren | Aktualisieren Sie Prod+Stage, Dev, Umgebung. | x | x |  |  |
 | Umgebung löschen | Löschen Sie Umgebung ohne Prod, Dev und Dev. | x | x |  |  |
@@ -62,3 +74,4 @@ Jede der Rollen hat spezifische Berechtigungen für jede Rolle. In der folgenden
 | Pipeline löschen | Ermöglicht das Löschen einer Pipeline. |  | x |  |  |
 | Ausführung abbrechen | Aktuelle Ausführung abbrechen. |  | x |  |  |
 | Persönliches Zugriffs-Token erstellen | Zugriff auf Git. |  | x |  | x |
+
