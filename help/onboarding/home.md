@@ -2,9 +2,9 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 42%
 
 ---
@@ -38,7 +38,7 @@ Nach Vertragsunterzeichnung finden die folgenden Ereignis statt:
 
 Sie benötigen Ihr Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzer zu den ihnen zugewiesenen Rollen hinzuzufügen.
 
-**[Benutzerrollen und Berechtigungen](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 Ihr Systemadministrator kann Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen. In diesem Abschnitt erfahren Sie, welche *Cloud Manager-Rollen* und welche Berechtigungen mit den Rollen verknüpft sind, bevor Sie beginnen.
 
