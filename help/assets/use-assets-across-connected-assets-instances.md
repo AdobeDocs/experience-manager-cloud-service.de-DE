@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset-Verwaltung, verbundene Assets, Asset-Verteilung
 role: Administrator,Geschäftspraktiker,Architekt
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 91%
+source-wordcount: '2902'
+ht-degree: 92%
 
 ---
 
@@ -120,9 +120,9 @@ Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!D
 
 Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
 
-1. Erstellen Sie die Konfiguration für verbundene Assets, wie oben beschrieben. Aktivieren Sie im Dialogfeld das Kontrollkästchen **[!UICONTROL Ursprüngliche Darstellung für [!DNL Dynamic Media] Verbundene Assets]** abrufen.
+1. Erstellen Sie die Konfiguration für verbundene Assets, wie oben beschrieben. Wählen Sie beim Konfigurieren der Funktion die Option **[!UICONTROL Original-Darstellung für Dynamic Media Connected Assets abrufen]**.
 
-1. Konfigurieren Sie [!DNL Dynamic Media] für lokale [!DNL Sites]- und Remote [!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen unter [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Konfigurieren Sie [!DNL Dynamic Media] für lokale [!DNL Sites]- und Remote [!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen unter [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Verwenden Sie in allen Konfigurationen denselben Firmen-Namen.
    * Wählen Sie auf lokaler [!DNL Sites] im [!UICONTROL Dynamic Media-Synchronisierungsmodus] **[!UICONTROL standardmäßig deaktiviert]**. Die Sites-Bereitstellung erfordert nur Lesezugriff auf das [!DNL Dynamic Media]-Konto.
