@@ -4,14 +4,14 @@ description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale A
 contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Entwickler, Architekt, Administrator
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 70%
+source-wordcount: '1522'
+ht-degree: 69%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets]-HTTP-API {#assets-http-api}
 
@@ -268,6 +268,8 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 ## Tipps, Best Practices und Einschränkungen {#tips-limitations}
 
 * Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
+
+* Assets HTTP API gibt nicht die vollständigen Metadaten zurück. Die Namensraum sind hartcodiert und nur diese Namensraum werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
 
 * Einige Eigenschaften von Ordnern oder Assets werden einem anderen Präfix zugeordnet, wenn sie mithilfe von APIs aktualisiert werden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
