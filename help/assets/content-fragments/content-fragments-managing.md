@@ -3,20 +3,30 @@ title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihre kostenlosen Inhalte bilden.
 feature: Inhaltsfragmente
 role: Geschäftspraktiker
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 91%
+source-wordcount: '1748'
+ht-degree: 78%
 
 ---
-
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
 Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihre kostenlosen Inhalte bilden.
 
-Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
+Nachdem Sie die [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
+
+Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [Modi](#modes-in-the-content-fragment-editor), um Ihnen Folgendes zu ermöglichen:
+
+* [Bearbeiten des ](#editing-the-content-of-your-fragment) Inhalts und  [Verwalten von Variationen](#creating-and-managing-variations-within-your-fragment)
+* [Fragmente kommentieren](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Verknüpfen von Inhalten mit Ihrem Fragment](#associating-content-with-your-fragment)
+* [Konfigurieren der Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Ansicht der Struktur](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vorschau der JSON-Vertretung](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich übe
 >* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
+
+>[!NOTE]
+>
+>Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
 ## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    ![Fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf **Speichern &amp; Schließen** oder **Abbrechen**.
+1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf **Speichern**, **Speichern und schließen** oder **Schließen**.
 
    >[!NOTE]
    >
-   >Sowohl **Save &amp; Close** als auch **Cancel** beenden den Editor - siehe [Save, Cancel and Versions](#save-cancel-and-versions), um ausführliche Informationen darüber zu erhalten, wie beide Optionen für Inhaltsfragmente funktionieren.
+   >**Speichern und** Schließen über den  **** Savedropdown verfügbar.
+
+   >[!NOTE]
+   >
+   >Sowohl **Save &amp; Close** als auch **Close** beenden den Editor - siehe [Save, Close and Versions](#save-close-and-versions), um ausführliche Informationen darüber zu erhalten, wie die verschiedenen Optionen für Inhaltsfragmente funktionieren.
 
 ## Modi und Aktionen im Inhaltsfragment-Editor {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Geändert**: orange
    * **Deaktiviert**: red
 
+* **Mit** Save haben Sie Zugriff auf die Option  **Speichern und** Schließen.
+
 * Die drei Punkte (**...**)-Dropdown bietet Zugriff auf zusätzliche Aktionen:
+   * **Aktualisieren von Seitenverweisen**
+      * Dadurch werden alle Seitenverweise aktualisiert.
    * **[Quick Publish](#publishing-and-referencing-a-fragment)**
    * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
 
-## Speichern, Abbrechen und Versionen   {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Speichern, Schließen und Versionen {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Versionen können [über die Zeitleiste auch erstellt, verglichen und zurückgesetzt werden](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-Der Editor bietet zwei Optionen:
+Der Editor verfügt über verschiedene Optionen:
 
-* **Speichern**
+* **Speichern** und  **Speichern &amp; Schließen**
 
-   Die aktuellen Änderungen werden gespeichert und der Editor wird beendet.
+   * **Speichern** Sie die neuesten Änderungen und bleiben Sie im Editor.
+   * **Speichern und** schließen Sie die neuesten Änderungen und schließen Sie den Editor.
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ Der Editor bietet zwei Optionen:
 
    >[!NOTE]
    >
-   >Es ist möglich, im Fragmenteditor zu bleiben und vor Auswahl von **Speichern** eine Reihe von Änderungen vorzunehmen.
+   >Es ist möglich, im Editor zu bleiben, eine Reihe von Änderungen vorzunehmen, bevor Sie speichern.
 
    >[!CAUTION]
    >
-   >Neben dem einfachen Speichern Ihrer Änderungen werden auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf gefiltert wird. **** Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
+   >Neben dem einfachen Speichern der Änderungen werden bei den Aktionen auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geflaut wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
    >
-   >
-   >Beachten Sie das, wenn Sie die Option **Speichern** auswählen und den Fragmenteditor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
+   >Beachten Sie dies bei der Verwendung von **Speichern &amp; Schließen** und der schnellen erneuten Eingabe des Fragmenteditors, um weitere Änderungen vorzunehmen und zu speichern.
 
-* **Abbrechen**
+* **Schließen**
 
-   Der Editor wird beendet und die letzten Änderungen werden nicht gespeichert.
+   Beendet den Editor, ohne die neuesten Änderungen zu speichern (d. h. seit dem letzten **Speichern**).
 
-Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte wiederhergestellt werden können, falls Sie Ihre Änderungen über **Abbrechen** verwerfen:
+Beim Bearbeiten des Inhaltsfragments AEM automatisch Versionen erstellt, um sicherzustellen, dass vorherige Inhalte wiederhergestellt werden können, wenn Sie Ihre Änderungen abbrechen (ohne Speichern unter **Schließen** verwenden):
 
 1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
 
@@ -232,7 +257,7 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
    >Den Standardwert finden Sie unter:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Wird **Abbrechen** ausgewählt, um die Bearbeitung abzubrechen, wird die am Anfang der Bearbeitungssitzung erstellte Version wiederhergestellt und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
+3. Wenn der Benutzer die Bearbeitung abbricht, wird die am Beginn der Bearbeitungssitzung erstellte Version wiederhergestellt und das Token wird entfernt, um die Bearbeitungssitzung zu beenden.
 4. Werden die Bearbeitungen über die Option **Speichern** gespeichert, werden die aktualisierten Elemente/Varianten beibehalten und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
 
 ## Bearbeiten des Inhalts Ihres Fragments {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ Folgendes wird geöffnet:
 
 * die ausgewählte Version **v&lt;*x.y*>** (rechts)
 
-Sie werden nebeneinander angezeigt:
+Sie werden nebeneinander angezeigt, wo:
 
 * Unterschiede werden hervorgehoben
 
