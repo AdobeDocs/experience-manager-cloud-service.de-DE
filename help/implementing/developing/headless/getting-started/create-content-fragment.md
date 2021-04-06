@@ -1,14 +1,14 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
 description: Erfahren Sie, wie Sie AEM Inhaltsfragmente zum Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte für kostenlosen Versand verwenden.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '392'
+ht-degree: 89%
 
 ---
-
 
 # Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung {#creating-content-fragments}
 
@@ -43,7 +43,7 @@ Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre I
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](../assets/content-fragment-edit.png)
-1. Tippen oder klicken Sie auf **Speichern und schließen**.
+1. Tippen oder klicken Sie auf **Speichern** oder **Speichern und schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 
