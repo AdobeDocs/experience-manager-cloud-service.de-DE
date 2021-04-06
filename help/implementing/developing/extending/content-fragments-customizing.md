@@ -1,14 +1,14 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Anpassen und Erweitern von Inhaltsfragmenten {#customizing-and-extending-content-fragments}
 
@@ -294,7 +294,7 @@ Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment i
 Technisch gesehen werden alle Änderungen an *Live*-Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung an *Live*-Inhalten ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medien-Assets).
 
 Es gibt einige Sicherheitsmaßnahmen für Randfälle, beispielsweise, wenn der Benutzer versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
-Beachten Sie, dass zwei Benutzer möglicherweise dasselbe Inhaltsfragment gleichzeitig bearbeiten und daher gegenseitig die Änderungen überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die *Checkout*-Aktion der DAM-Verwaltung auf das Fragment angewendet wird.
+Beachten Sie, dass zwei Benutzer dasselbe Inhaltsfragment gleichzeitig bearbeiten können und daher die Änderungen der anderen Benutzer überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Checkout* der DAM-Administration auf das Fragment angewendet wird.
 
 ## Beispiele {#examples}
 
@@ -330,7 +330,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Beispiel: Angeben des Intervalls für das automatische Speichern   {#example-specifying-the-auto-save-interval}
 
-Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
+Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
 * Knoten: `<conf-root>/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`
