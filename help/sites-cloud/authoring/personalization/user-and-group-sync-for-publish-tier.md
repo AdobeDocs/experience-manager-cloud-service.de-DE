@@ -1,20 +1,20 @@
 ---
 title: 'Registrierung, Anmeldung und Anwenderprofil '
-description: Informationen zu Registrierung, Anmeldung und Anwenderprofil auf der Veröffentlichungsebene
+description: Informationen zur Registrierung, Anmeldung, Benutzerdaten und Gruppensynchronisierung für AEM als Cloud Service
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 94%
 
 ---
-
 
 # Registrierung, Anmeldung und Anwenderprofil {#registration-login-and-userprofile}
 
 ## Einführung {#introduction}
 
-Web-Programme bieten häufig Funktionen zur Kontoverwaltung, mit denen sich Endanwender auf einer Website registrieren können. Dadurch werden ihre Profildaten beibehalten, sodass sie sich auch künftig anmelden und von einem einheitlichen Anwendererlebnis profitieren können. In diesem Artikel wird Folgendes beschrieben:
+Webanwendungen bieten oft Funktionen zur Kontoverwaltung, mit denen sich Endbenutzer auf einer Website registrieren können, wodurch ihre Benutzerdaten erhalten bleiben, sodass sie sich in Zukunft anmelden und eine einheitliche Benutzererfahrung genießen können. In diesem Artikel werden die folgenden Konzepte für AEM als Cloud Service beschrieben:
 
 * Registrierung
 * Anmeldung
