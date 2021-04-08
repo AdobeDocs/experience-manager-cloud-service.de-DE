@@ -3,15 +3,15 @@ title: Rotationssets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten..
 feature: Rotationssets
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 77%
 
 ---
-
 
 # Rotationssets {#spin-sets}
 
@@ -39,11 +39,11 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
    >
    >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
-1. [Laden Sie die Bilder für mehrere Ansichten hoch.](#uploading-assets-for-spin-sets)
+1. [Laden Sie die Bilder für mehrere Ansichten hoch](#uploading-assets-for-spin-sets).
 
    Sie benötigen mindestens 8 bis 12 Aufnahmen eines Objekts für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Gegenstand gedreht und umgedreht wird. Wenn ein eindimensionales Rotationsset beispielsweise 12 Aufnahmen enthält, drehen Sie das Objekt für jede Aufnahme um 30° (360/12).
 
-1. [Erstellen Sie Rotationssets.](#creating-spin-sets)
+1. [Erstellen Sie Rotationssets](#creating-spin-sets).
 
    Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
 
@@ -55,15 +55,15 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Werkzeuge > Assets > Viewer-Vorgaben]**.
 
-   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    Es gibt drei verschiedene Arten, über Stapelsatzvorgaben erstellte Sätze anzuzeigen und darauf zuzugreifen. (In der Benutzeroberfläche werden *keine* mit Stapelsatzvorgaben erstellten Sets angezeigt.)
 
-1. [Zeigen Sie eine Vorschau der Rotationssets an.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Zeigen Sie eine Vorschau der Rotationssets an](/help/assets/dynamic-media/previewing-assets.md).
 
    Wählen Sie das Rotationsset aus, um dessen Vorschau anzuzeigen. Drehen Sie das Rotationsset. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie Rotationssets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Veröffentlichen Sie Rotationssets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Rotationssets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
    Ziehen Sie bei Bedarf das Symbol &quot;Neu anordnen&quot;eines Assets nach rechts neben dem Dateinamen des Assets, um die Anordnung der Bilder in der Liste zu ändern.
 
-   ![Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen.](assets/6_5_spinset-reorderassets.png)
+   ![Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen](assets/6_5_spinset-reorderassets.png)
 
    Ordnen Sie Frame 11 im Rotationsset neu an, indem Sie ihn an eine neue Position ziehen.
 
