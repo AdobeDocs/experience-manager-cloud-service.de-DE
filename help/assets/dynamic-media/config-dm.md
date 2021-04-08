@@ -2,15 +2,15 @@
 title: Konfigurieren von Dynamic Media Cloud Service
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager als Cloud Service konfigurieren.
 topic: 'Administrator  '
-role: Administrator, Geschäftspraktiker
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 56%
 
 ---
-
 
 # Wissenswertes über Dynamic Media Cloud Service {#configuring-dynamic-media}
 
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Pfad zum Stammordner des Unternehmens | Pfad zum Stammordner Ihres Unternehmens. |
    | Veröffentlichen von Assets | Sie können aus den folgenden drei Optionen auswählen:<br>**[!UICONTROL Sofort ]**: Wenn Assets hochgeladen werden, nimmt das System die Assets auf und stellt die URL/den Link zur Einbettung sofort bereit. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.<br>**[!UICONTROL Bei Aktivierung]**: Sie müssen das Asset explizit zuerst veröffentlichen, bevor ein URL-/Einbettungslink bereitgestellt wird.<br>**[!UICONTROL Selektive Veröffentlichung ]**: Assets werden nur zur sicheren Vorschau automatisch veröffentlicht. Sie können auch explizit als Cloud Service in Experience Manager veröffentlicht werden, ohne dass sie für den Versand in DMS7 veröffentlicht werden. Bei dieser Option sollen künftig Assets als Cloud Service in Experience Manager veröffentlicht und Assets in Dynamic Media veröffentlicht werden, wobei sich die beiden Optionen gegenseitig ausschließen. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Ausgabedarstellungen verwenden können. Sie können Assets auch ausschließlich in Experience Manager als Cloud Service für die Vorschau veröffentlichen. Diese Assets werden nicht in DMS7 für den Versand in der Öffentlichkeit veröffentlicht. |
    | Sicherer Vorschau-Server | Damit haben Sie die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgabedarstellungen anzugeben. Das heißt, nach der Generierung von Darstellungen kann Experience Manager als Cloud Service sicher auf die Dynamic Media-Remote-Darstellungen zugreifen und diese Vorschau durchführen (keine Binärdateien werden als Cloud Service-Instanz an den Experience Manager zurückgesendet).<br>Wenn Sie keine spezielle Vereinbarung zur Verwendung des Servers Ihrer eigenen Firma oder eines Spezialservers haben, empfiehlt Adobe, diese Einstellung wie angegeben zu belassen. |
-   | Alle Inhalte synchronisieren | Standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:<br>**[!UICONTROL Synchronisierungsmodus für Dynamic Media]**<br>**[!UICONTROL Standardmäßig aktiviert ]**: Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Standardmäßig deaktiviert]**: Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.<br>Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf  **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **Alle Inhalte synchronisieren**ausgewählt haben.* Weitere Informationen finden Sie unter [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Vererbt ]**: Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Inhalte wird als QuickInfo angezeigt.<br>**[!UICONTROL Für Unterordner]** aktivieren: Schließen Sie alle Elemente in dieser Unterstruktur für die Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.<br>**[!UICONTROL Deaktiviert für Unterordner ]**: Schließen Sie alle Elemente in diesem Unterbaum von der Synchronisierung mit Dynamic Media aus. |
+   | Alle Inhalte synchronisieren | Standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:<br>**[!UICONTROL Synchronisierungsmodus für Dynamic Media]**<br>**[!UICONTROL Standardmäßig aktiviert ]**: Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Standardmäßig deaktiviert]**: Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.<br>Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf  **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **Alle Inhalte synchronisieren**ausgewählt haben.* Weitere Informationen finden Sie unter [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Vererbt ]**: Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Inhalte wird als QuickInfo angezeigt.<br>**[!UICONTROL Für Unterordner]** aktivieren: Schließen Sie alle Elemente in dieser Unterstruktur für die Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.<br>**[!UICONTROL Deaktiviert für Unterordner ]**: Schließen Sie alle Elemente in diesem Unterbaum von der Synchronisierung mit Dynamic Media aus. |
 
    >[!NOTE]
    >
@@ -169,8 +169,8 @@ Bei Bedarf können Sie die Schreibweise eines von Ihnen eingegebenen oder erneut
 Das geänderte Kennwort wird gespeichert, wenn Sie auf **[!UICONTROL Speichern]** oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** tippen.
 
 1. Tippen Sie in Experience Manager als Cloud Service auf den Experience Manager als Cloud Service-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf der linken Konsolenkonsole auf das Symbol Tools und dann auf **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
-1. Tippen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich auf **[!UICONTROL global]**. Tippen oder wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]**. Tippen Sie dann auf **[!UICONTROL Bearbeiten.]**
+1. Tippen Sie auf der linken Seite der Konsole auf das Symbol Tools und dann auf **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. Tippen Sie auf der Seite &quot;Dynamic Media Configuration Browser&quot;im linken Bereich auf **[!UICONTROL global]**. Tippen oder wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]**. Tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** direkt unter dem Feld **[!UICONTROL Kennwort]** auf **[!UICONTROL Kennwort ändern]**.
 1. Gehen Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** wie folgt vor:
 
@@ -229,7 +229,7 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 
 #### Konfigurieren der allgemeinen Programmeinstellungen {#configuring-application-general-settings}
 
-Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic klicken Sie auf **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen]**.
+Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic klicken Sie auf **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen]**.
 
 **[!UICONTROL Server]**: Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugeordneten Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Anwendungen zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keinen der Servernamen, es sei denn, Experience Manager hat dies ausdrücklich als Cloud Service-Support angewiesen.
 **[!UICONTROL Bilder überschreiben]**: Dynamic Media lässt zwei Dateien mit denselben Namen nicht zu. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen legen fest, wie Ersatz-Assets hochgeladen werden, d. h. ob sie das Original ersetzen oder doppelt vorhanden sind. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen wirken sich auf Assets aus, die in einen anderen Ordner hochgeladen wurden als das Original oder auf Assets mit einer anderen Dateierweiterung als das Original.
@@ -255,7 +255,7 @@ Sie können die folgenden Farbkorrektureigenschaften festlegen:
    | CMYK-Standardfarbraum | Name des standardmäßigen CMYK-Farbprofils. |
    | Graustufen-Standardfarbraum | Name des standardmäßigen grauen Farbprofils. |
    | RGB-Standardfarbraum | Name des standardmäßigen RGB-Profils. |
-   | Rendering-Absicht der Farbkonvertierung | Gibt die Rendering-Absicht an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt **[!UICONTROL relativ]** als Standard. |
+   | Rendering-Absicht der Farbkonvertierung | Gibt die Rendering-Absicht an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch]**. Adobe empfiehlt **[!UICONTROL relativ]** als Standard. |
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -308,7 +308,7 @@ Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in Ex
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu**
 
-1. Tippen Sie in Experience Manager als Cloud Service auf **[!UICONTROL Tools > Vorgänge > Web-Konsole.]**
+1. Tippen Sie in Experience Manager als Cloud Service auf **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -554,4 +554,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
