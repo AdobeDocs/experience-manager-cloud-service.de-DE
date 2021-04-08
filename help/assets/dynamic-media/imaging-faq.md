@@ -6,7 +6,7 @@ topic: Geschäftspraktiker
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 46%
@@ -137,7 +137,7 @@ Für Ihre erste benutzerdefinierte Domain fallen mit einer Dynamic Media-Lizenz 
 
 Sie initiieren die Anforderung, intelligente Bildbearbeitung zu verwenden. nicht automatisch aktiviert ist.
 
-1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen.](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
