@@ -3,15 +3,15 @@ title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten..
 feature: Interaktive Videos
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 51%
 
 ---
-
 
 # Interaktive Videos {#interactive-videos}
 
@@ -87,7 +87,7 @@ Informationen hierzu finden Sie unter [Hochladen eines Videos und der zugehörig
 Schließen Sie den Vorgang ab, indem Sie die interaktiven Video-Assets veröffentlichen. Beim Veröffentlichen wird der Einbettungscode oder die URL erstellt, den Sie kopieren und auf Ihre Website-Landingpage anwenden. Informationen hierzu finden Sie unter [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video).
 Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Hinzufügen eines interaktiven Videos zu Ihrer Website oder Ihrer Website in Experience Manager**  - Wenn Sie Experience Manager-Sites, Experience Manager-E-Commerce oder beides verwenden, können Sie das interaktive Video direkt zu einer Webseite in Experience Manager hinzufügen. Ziehen Sie die Komponente Interaktive Medien auf die Seite. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Hinzufügen eines interaktiven Videos zu Ihrer Website oder Ihrer Website in Experience Manager**  - Wenn Sie Experience Manager-Sites, Experience Manager-E-Commerce oder beides verwenden, können Sie das interaktive Video direkt zu einer Webseite in Experience Manager hinzufügen. Ziehen Sie die Komponente Interaktive Medien auf die Seite. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Verwenden Sie den Einbettungs-Code, um das interaktive Video auf Ihrer Website zu integrieren. Siehe [Integrieren eines interaktiven Videos auf Ihrer Website](#integrating-an-interactive-video-with-your-website).
 Wenn Sie einen WCM (Web Content Manager) eines Drittanbieters verwenden, müssen Sie das neue interaktive Video in die vorhandene Implementierung der Schnellfunktion integrieren, die auf Ihrer Website verwendet wird. Siehe [Integrieren eines interaktiven Videos mit einer vorhandenen Quick-Ansicht](#integrating-an-interactive-video-with-an-existing-quickview).
    [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -503,7 +503,7 @@ Weitere Informationen zum Veröffentlichen interaktiver Video-Assets finden Sie 
 
 Nachdem Sie ein Video hochgeladen, zu diesem Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie nun in der Lage, es zu Ihrer vorhandenen Website hinzuzufügen.
 
-Wenn Sie Experience Manager-Sites sind, können Sie das interaktive Video hinzufügen, indem Sie die Komponente Interaktive Medien auf Ihre Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Wenn Sie Experience Manager-Sites sind, können Sie das interaktive Video hinzufügen, indem Sie die Komponente Interaktive Medien auf Ihre Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Wenn Sie ein eigenständiger Experience Manager-Asset-Kunde sind, können Sie das interaktive Video manuell zu Ihrer Website hinzufügen, wie in diesem Abschnitt beschrieben.
 
