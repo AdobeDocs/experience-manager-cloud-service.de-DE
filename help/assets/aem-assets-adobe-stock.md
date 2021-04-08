@@ -3,15 +3,15 @@ title: Verwalten Sie [!DNL Adobe Stock] -Assets in [!DNL Assets].
 description: Suchen, lizenzieren, verwalten und rufen Sie [!DNL Adobe Stock] -Assets in [!DNL Adobe Experience Manager] ab. Nutzen Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 feature: Search, Adobe Stock
-role: Administrator, Geschäftspraktiker
+role: Administrator,Business Practitioner
+exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 0da8eb0eac0c58b5212aa264c9042523460e474e
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 99%
+source-wordcount: '995'
+ht-degree: 93%
 
 ---
-
 
 # Verwenden von [!DNL Adobe Stock]-Assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
@@ -31,11 +31,11 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
-1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Fügen Sie den heruntergeladenen Schlüssel zu Ihrem [!DNL Adobe Developer Console]-Service-Konto hinzu. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Konfiguration des technischen Adobe IMS-Kontos] geöffnet, um die Werte in Kürze anzugeben.
+1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] geöffnet, um die erforderlichen Werte in Kürze bereitzustellen.
 1. Greifen Sie auf die [Adobe Developer Console](https://console.adobe.io) zu. Stellen Sie sicher, dass Ihr Konto über Administratorrechte für die Organisation verfügt, für die die Integration benötigt wird.
-1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web]. Konfigurieren und kopieren Sie die verschiedenen angezeigten Werte.
-1. Geben Sie in [!DNL Experience Manager] in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungs-Server]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL Payload]** die entsprechenden Werte ein. Genaue Informationen zu diesen Werten finden Sie in der [Schnellanleitung zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web].
+1. Geben Sie die Werte **[!UICONTROL Standard-Umleitungs-URI]** und **[!UICONTROL Umleitungs-URI-Muster]** an. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Kopieren Sie die generierte ID und den geheimen Schlüssel.
+1. Geben Sie im Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] die Werte in den Feldern **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** und **[!UICONTROL Payload]** ein>. Ausführliche Informationen zu diesen Werten finden Sie unter [Schnellauthentifizierung mit JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
