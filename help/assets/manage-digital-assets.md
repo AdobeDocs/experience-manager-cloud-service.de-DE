@@ -4,15 +4,15 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Be
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset-Verwaltung, Veröffentlichung, Zusammenarbeit, Asset-Verarbeitung
-role: Geschäftspraktiker,Architekt,Administrator
+role: Business Practitioner,Architect,Administrator
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4342'
 ht-degree: 99%
 
 ---
-
 
 # Verwalten von Assets {#manage-assets}
 
@@ -285,7 +285,7 @@ Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/down
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 -->
 
 1. Navigieren Sie zum Speicherort der Assets/Ordner, die Sie veröffentlichen möchten.
