@@ -3,15 +3,15 @@ title: Dynamic Media-Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
 feature: Asset-Verwaltung, Video-Profil, Darstellungen
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 70%
 
 ---
-
 
 # Dynamic Media-Videoprofile {#video-profiles}
 
@@ -37,7 +37,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 >
 >Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie werden vom Experience Manager-System benötigt und in der Benutzeroberfläche verwendet, um Videos in der Ansicht Karten, der Ansicht Suchergebnisse und der Ansicht zur Asset-Liste visuell zu identifizieren. Sie können die generierten Miniaturansichten anzeigen, wenn Sie auf das Symbol &quot;Darstellungen&quot;(eine Malerpalette) eines kodierten Videos tippen.
 
-Wenn Sie mit der Erstellung des Video-Profils fertig sind, wenden Sie es auf einen oder mehrere Ordner an. Siehe [Anwenden eines Video-Profils auf Ordner.](#applying-a-video-profile-to-folders)
+Wenn Sie mit der Erstellung des Video-Profils fertig sind, wenden Sie es auf einen oder mehrere Ordner an. Siehe [Anwenden eines Video-Profils auf Ordner](#applying-a-video-profile-to-folders).
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -429,4 +429,3 @@ Sie können aus dem Menü **[!UICONTROL Tools]** heraus ein Videoprofil aus eine
 1. Tippen oder klicken Sie auf das Logo des Experience Managers und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Video-Profil entfernen möchten.
 1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
-
