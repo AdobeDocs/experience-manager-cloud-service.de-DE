@@ -1,14 +1,14 @@
 ---
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
+source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 14%
+source-wordcount: '1585'
+ht-degree: 12%
 
 ---
-
 
 # Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
@@ -82,12 +82,49 @@ Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder s
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.3.0 beschrieben.
+In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.4.0 und 2021.3.0 beschrieben.
+
+### Veröffentlichungsdatum {#release-date-cm-april}
+
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.4.0 ist der 08. April 2021.
+Die nächste Version ist für den 06. Mai 2021 geplant.
+
+### Neue Funktionen {#what-is-new-april}
+
+* Die Benutzeroberfläche wird aktualisiert, um das Hinzufügen- und Bearbeiten-Programm-Workflows intuitiver zu gestalten.
+
+* Ein Benutzer mit erforderlichen Berechtigungen kann jetzt den Commerce-Endpunkt über die Benutzeroberfläche senden.
+
+* Umgebung können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autor oder auf Veröffentlichung. Erfordert AEM Version `2021.03.5104.20210328T185548Z` oder höher.
+
+* Die Schaltfläche **Git** verwalten wird auf der Pipelines-Karte angezeigt, auch wenn keine Pipelines konfiguriert wurden.
+
+* Die Version des von Cloud Manager verwendeten AEM Projektarchivs wurde auf Version 27 aktualisiert.
+
+* Projekte, die in der Adobe I/O Developer Console von Cloud Manager erstellt wurden, können nicht mehr unbeabsichtigt bearbeitet oder gelöscht werden.
+
+* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird ihm mitgeteilt, dass eine Umgebung nach dem Erstellen nicht in einen anderen Bereich verschoben werden kann.
+
+* Umgebung können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autor oder auf Veröffentlichung. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder höher.
+
+* Die Fehlermeldung beim Starten einer Pipeline beim Löschen einer Umgebung wurde geklärt.
+
+* OSGi-Pakete, die von Eclipse-Projekten bereitgestellt werden, sind nun von der Regel `CQBP-84--dependencies` ausgeschlossen.
+
+### Fehlerbehebungen {#bug-fixes-cm-april}
+
+* Beim Bearbeiten der Experience Audit-Seite einer Pipeline führt ein Eingabepfad, der mit einem Schrägstrich `( / )` beginnt, nicht mehr dazu, dass der Schritt im ausstehenden Status blockiert wird.
+
+* Wenn eine neue Produktions-Pipeline erstellt wird und der Benutzer keine Überschreibung der Inhaltsprüfung hinzufügt, wurde die Standard-Homepage nicht geprüft.
+
+* Bei Problemen mit `CloudServiceIncompatibleWorkflowProcess` war die CSV-Datei für die herunterladbare Ausgabe nicht korrekt.
+
+* Die `Runmode`-Prüfung ergab Falsch-Positiv-Werte für Nicht-Ordner-Knoten.
+
 
 ### Veröffentlichungsdatum {#release-date-cm-march}
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.3.0 ist der 11. März 2021.
-Die nächste Version ist für den 08. April 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-march}
 
