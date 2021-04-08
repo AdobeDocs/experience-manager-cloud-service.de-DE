@@ -3,15 +3,15 @@ title: Karussellbanner
 description: Informationen zum Arbeiten mit Karussellbannern in Dynamic Media.
 feature: Karussellbanner
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 49%
 
 ---
-
 
 # Karussellbanner {#carousel-banners}
 
@@ -74,7 +74,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Um ein Karussellset in Assets zu erstellen, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Karussellsets]**. Fügen Sie den Folien dann Assets hinzu und tippen Sie auf **[!UICONTROL Speichern]**. Sie können das Erscheinungsbild und Verhalten des Karussells auch direkt im Editor bearbeiten.
 
-1. [Fügen Sie Hotspots oder Imagemaps in einem Bildbanner hinzu.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Fügen Sie Hotspots oder Imagemaps in einem Bildbanner hinzu](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    hinzufügen einem oder mehreren Hotspots oder Imagemaps zu einem Bildbanner. Verknüpfen Sie dann jede der beiden Aktionen mit einem Link, einer Quick-Ansicht oder einem Erlebnisfragment. Nachdem Sie Hotspots oder Imagemaps hinzugefügt haben, schließen Sie diese Aufgabe ab, indem Sie das Karussellset veröffentlichen. Durch das Veröffentlichen wird der Einbettungs-Code erstellt, den Sie kopieren und auf die Landingpage Ihrer Website anwenden können.
 
@@ -92,7 +92,7 @@ So schaffen Sie einen schnellen Einstieg:
    * [hinzufügen ein Karussellbanner auf Ihrer Website in Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Wenn Sie Experience Manager-Sites sind, können Sie das Karussellset direkt mit der interaktiven Medienkomponente hinzufügen.
 
 
-Wenn Sie Karussell-Sets bearbeiten müssen, lesen Sie [Karussell-Sets bearbeiten.](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussellsets](/help/assets/manage-digital-assets.md#editing-properties) anzeigen und bearbeiten.
+Wenn Sie Karussellsätze bearbeiten müssen, lesen Sie [Karussellsätze bearbeiten](#editing-carousel-sets). . Darüber hinaus können Sie [Eigenschaften von Karussellsets](/help/assets/manage-digital-assets.md#editing-properties) anzeigen und bearbeiten.
 
 ## Ermitteln von Hotspot- und Imagemap-Variablen {#identifying-hotspot-and-image-map-variables}
 
@@ -407,7 +407,7 @@ Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/pub
 Nachdem Sie Bannerbilder hochgeladen haben, um ein Karussell zu erstellen, Hotspots oder Imagemaps oder beides zum Banner hinzugefügt haben. Karussellsatz veröffentlicht. Sie können sie jetzt Ihrer vorhandenen Website-Seite hinzufügen.
 
 >[!NOTE]
-Wenn Sie AEM Sites-Kunde sind, können Sie das Karussellbanner direkt Ihrer Seite hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Wenn Sie AEM Sites-Kunde sind, können Sie das Karussellbanner direkt Ihrer Seite hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Als eigenständiger Experience Manager-Asset-Kunde können Sie das Karussellbanner jedoch manuell zu Ihrer Website-Landingpage hinzufügen.
 
