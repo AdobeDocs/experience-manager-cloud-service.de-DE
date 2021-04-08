@@ -4,15 +4,15 @@ description: '"Tipps und Best Practices zum Benennen, Organisieren und Verwalten
 contentOwner: Rick Brough
 feature: Asset-Verwaltung, Bild-Profile, Video-Profile
 topic: Geschäftspraktiker
-role: Administrator, Geschäftspraktiker
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 62%
+source-wordcount: '501'
+ht-degree: 63%
 
 ---
-
 
 # Best Practices zum Organisieren digitaler Assets für die Verwendung von Bild- oder Videoprofilen{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -44,4 +44,3 @@ Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen
 
 * Erstellen Sie ein Ordnerverzeichnis, das voraussichtlich nicht geändert werden muss, damit zugewiesene Profile nicht ungültig werden.
 * Angenommen, ein Asset wurde bereits veröffentlicht. Anschließend verschieben Sie das Asset mit Adobe Experience Manager in einen anderen Ordner und veröffentlichen es erneut. Der ursprüngliche Speicherort des veröffentlichten Assets sowie das neu veröffentlichte Asset sind weiterhin verfügbar. Das ursprünglich veröffentlichte Asset geht jedoch an den Experience Manager verloren und kann nicht rückgängig gemacht werden. Daher sollten Sie die Veröffentlichung von Assets zuerst rückgängig machen, bevor Sie sie in einen anderen Ordner verschieben.
-
