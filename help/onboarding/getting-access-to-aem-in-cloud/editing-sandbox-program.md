@@ -3,9 +3,9 @@ title: 'Bearbeiten eines Sandbox-Programms '
 description: Bearbeiten eines Sandbox-Programms
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,14 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
 
 1. Navigieren Sie zur Seite **Programm bearbeiten** auf der Seite *Übersicht* des Cloud-Managers.
 
-1. Die Seite **Programm bearbeiten** enthält drei Optionen (**Sites**, **Commerce** und **Assets**) für Produktions- und Sandbox-Programm.
+1. Auf der Seite **Programm bearbeiten** werden drei Optionen (**Sites** und **Assets**) für Produktions- und Sandbox-Programm angezeigt. Zusätzlich können Sie die Option **Commerce** Add-On auswählen, die unter **Sites** verfügbar ist, wie in der folgenden Abbildung dargestellt.
+
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Das heißt, während des Arbeitsablaufs &quot;Programm bearbeiten&quot;kann die Projektmappe nicht deaktiviert werden.
+
+1. Klicken Sie auf **Speichern**, um den Bearbeitungsprozess abzuschließen.
 
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
