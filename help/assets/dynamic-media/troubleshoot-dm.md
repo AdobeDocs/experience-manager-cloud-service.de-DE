@@ -2,15 +2,15 @@
 title: Fehlerbehebung bei Dynamic Media
 description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
 topic: '"Administrator, Business Practitioner"'
-role: Administrator, Geschäftspraktiker
+role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 77%
+source-wordcount: '993'
+ht-degree: 78%
 
 ---
-
 
 # Fehlerbehebung bei Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
@@ -221,4 +221,3 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
   </tr>
  </tbody>
 </table>
-
