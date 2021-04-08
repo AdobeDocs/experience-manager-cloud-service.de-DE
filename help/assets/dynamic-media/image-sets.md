@@ -3,15 +3,15 @@ title: Bildsets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten..
 feature: Bildsets
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 68%
+source-wordcount: '2051'
+ht-degree: 67%
 
 ---
-
 
 # Bildsets {#image-sets}
 
@@ -43,11 +43,11 @@ So schaffen Sie einen schnellen Einstieg:
    >
    >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
 
-1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch.](#uploading-assets-in-image-sets)
+1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch](#uploading-assets-in-image-sets).
 
    Laden Sie die Bilder für Ihre Bild-Sets hoch. Denken Sie daran, dass Benutzer im Bildsatz-Viewer auf Bilder zoomen können. Wählen Sie daher Ihre Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. Experience Manager Assets unterstützt viele Bilddateiformate, es werden jedoch verlustfreie TIFF-, PNG- und EPS-Bilder empfohlen.
 
-1. [Erstellen Sie Bildsets.](#creating-image-sets)
+1. [Erstellen Sie Bildsets](#creating-image-sets).
 
    In Bildsets klicken Benutzer im Bildset-Viewer auf Miniaturansichten.
 
@@ -64,11 +64,11 @@ So schaffen Sie einen schnellen Einstieg:
    Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Werkzeuge > Assets > Viewer-Vorgaben]**.
 
 1. (Optional) [Anzeigen von Bildsets](/help/assets/dynamic-media/image-sets.md#viewing-image-sets), die mit Stapelsatzvorgaben erstellt wurden.
-1. [Zeigen Sie Bildsets in einer Vorschau an.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Zeigen Sie Bildsets in einer Vorschau an](/help/assets/dynamic-media/previewing-assets.md).
 
    Wählen Sie das Bildset aus, um dessen Vorschau anzuzeigen. Um den Bildsatz im ausgewählten Viewer zu überprüfen, tippen Sie auf die Miniaturansicht-Symbole. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** auswählen, das Sie in der Dropdown-Liste für die linke Leiste finden.
 
-1. [Veröffentlichen Sie Bildsets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Veröffentlichen Sie Bildsets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Bildsets wird die URL- und Einbettungszeichenfolge aktiviert. Darüber hinaus müssen Sie alle [benutzerdefinierten Viewer-Vorgaben veröffentlichen](/help/assets/dynamic-media/managing-viewer-presets.md), die Sie erstellt haben. Standardmäßig vorhandene Viewer-Vorgaben sind bereits veröffentlicht.
 
@@ -80,7 +80,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Siehe [Verknüpfen von Bildsets mit Web-Seiten](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](/help/assets/dynamic-media/embed-code.md).
 
-Informationen zum Bearbeiten von Bildsets finden Sie unter [Bearbeiten von Bildsets](#editing-image-sets). Darüber hinaus können Sie [Eigenschaften von Bildsets](/help/assets/manage-digital-assets.md#editing-properties) anzeigen und bearbeiten.
+Informationen zum Bearbeiten von Bildsätzen finden Sie unter [Bearbeiten von Bildsätzen](#editing-image-sets). . Darüber hinaus können Sie [Eigenschaften von Bildsets](/help/assets/manage-digital-assets.md#editing-properties) anzeigen und bearbeiten.
 
 Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie den Abschnitt zu Bildern und Sets unter [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
