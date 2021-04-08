@@ -3,15 +3,15 @@ title: Dynamic Media-Bildprofile
 description: '"Erfahren Sie, wie Sie Dynamic Media Image-Profil erstellen, die Einstellungen für Unschärfemaske, intelligente Beschneidung oder intelligente Muster oder beides enthalten. Wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an."'
 feature: Asset-Verwaltung, Image-Profil, Darstellungen
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 75%
 
 ---
-
 
 # Dynamic Media-Bildprofile {#image-profiles}
 
@@ -96,7 +96,8 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
  </tbody>
 </table>
 
-Das Scharfzeichnen wird im Thema über das [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird unter
+     [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -248,7 +249,7 @@ Sie können die intelligente Beschneidung erneut ausführen, um bei Bedarf weite
       * Wenn das Bild nur über eine intelligente Beschneidung oder ein intelligentes Farbfeld verfügt, ziehen Sie auf dem Bild den Eckgriff des Maskenrahmens. Passen Sie die Größe des sichtbaren Bereichs der Beschneidung an.
       * Wenn das Bild sowohl über eine intelligente Beschneidung als auch über ein intelligentes Farbfeld verfügt, ziehen Sie auf dem Bild den Eckgriff des Maskenrahmens. Passen Sie die Größe des sichtbaren Bereichs der Beschneidung an. Oder tippen Sie auf das intelligente Farbfeld unter dem Bild (Farbfelder sind statisch) und ziehen Sie dann den Eckgriff des Maskenrahmens. Passen Sie die Größe des sichtbaren Bereichs des Farbfelds an.
 
-      ![Größenänderung des smarten Zuschnitts eines Bildes.](assets/edit_smart_crops-resize.png)
+      ![Größenänderung des smarten Zuschnitts eines Bildes](assets/edit_smart_crops-resize.png).
 
    * Verschieben Sie das smarte Zuschnittsfeld. Führen Sie einen der folgenden Schritte aus:
 
