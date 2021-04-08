@@ -1,14 +1,14 @@
 ---
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 73%
 
 ---
-
 
 # Benutzerspezifische Regeln für Codequalität {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ Es ist eine lange bestehende Best Practice, dass die /libs-Inhaltsstruktur im AE
 Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dadurch ist nicht mehr eindeutig, welche Konfiguration gelten soll. Diese Regel ist „Laufzeitmodus-fokussiert“, da sie nur Probleme erkennt, bei denen dieselbe Komponente mehrmals im gleichen Laufzeitmodus (oder mit der gleichen Kombination aus Laufzeitmodi) konfiguriert ist.
 
 >[!NOTE]
->Diese Regel führt zu Problemen, bei denen dieselbe Konfiguration auf demselben Pfad in mehreren Paketen definiert ist, einschließlich der Fälle, in denen dasselbe Paket in der gesamten Liste der erstellten Pakete dupliziert wird. Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all`, wobei `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` einbettet, erstellt, werden alle Konfigurationen innerhalb `com.myco:com.myco.ui.apps` als Duplikat gemeldet. Dies ist im Allgemeinen der Fall, wenn Sie die [Content Package Structure Guidelines](/help/implementing/developing/aem-project-content-package-structure.md) nicht befolgen. in diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die `<cloudManagerTarget>none</cloudManagerTarget>`-Eigenschaft.
+>Diese Regel führt zu Problemen, bei denen dieselbe Konfiguration auf demselben Pfad in mehreren Paketen definiert ist, einschließlich der Fälle, in denen dasselbe Paket in der gesamten Liste der erstellten Pakete dupliziert wird. Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all`, wobei `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` einbettet, erstellt, werden alle Konfigurationen innerhalb `com.myco:com.myco.ui.apps` als Duplikat gemeldet. Dies ist im Allgemeinen der Fall, wenn Sie die [Content Package Structure Guidelines](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht befolgen. in diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die `<cloudManagerTarget>none</cloudManagerTarget>`-Eigenschaft.
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEM Cloud Service verbietet, dass benutzerdefinierte Suchindexdefinitionen (d. h
 **Seit**: Version 2021.2.0
 
 AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) eine Eigenschaft namens reindex enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
-
-
-
-
-
-
