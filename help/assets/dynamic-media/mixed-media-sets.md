@@ -3,15 +3,15 @@ title: Gemischte Mediensets
 description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden..
 feature: Gemischte Mediensets
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 75%
 
 ---
-
 
 # Gemischte Mediensets {#mixed-media-sets}
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Da die Benutzer im Viewer für gemischte Mediensets Bilder heranzoomen können, sollten Sie beim Auswählen von Bildern sicherstellen, dass das Zoomen berücksichtigt wird. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat.
 
-1. [Erstellen Sie gemischte Mediensets.](#creating-mixed-media-sets)
+1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
 
    Zum Erstellen eines gemischten Mediensets tippen Sie auf der Seite „Assets“ auf **[!UICONTROL Erstellen > Gemischtes Medienset]**. Benennen Sie dann das Set, wählen Sie die Assets und die Reihenfolge der Bilder aus.
 
@@ -45,13 +45,13 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Werkzeuge > Assets > Viewer-Vorgaben]**.
 
-   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Zeigen Sie eine Vorschau der gemischten Mediensets an.](#previewing-mixed-media-sets)
+1. [Zeigen Sie eine Vorschau der gemischten Mediensets an](#previewing-mixed-media-sets).
 
    Wenn Sie das gemischte Medienset auswählen, können Sie eine Vorschau davon anzeigen. Um Ihr gemischtes Medienset im ausgewählten Viewer zu überprüfen, klicken Sie auf die Miniaturansicht-Symbole. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie gemischte Mediensets.](#publishing-mixed-media-sets)
+1. [Veröffentlichen Sie gemischte Mediensets](#publishing-mixed-media-sets).
 
    Beim Veröffentlichen eines gemischten Mediensets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -174,4 +174,3 @@ Weitere Informationen zum Veröffentlichen von Sets für gemischte Medien finden
 >[!NOTE]
 >
 >Wenn das gemischte Medienset beim ersten Veröffentlichen nicht vollständig im Versand-Dienst landet, veröffentlichen Sie den gemischten Mediensatz erneut.
-
