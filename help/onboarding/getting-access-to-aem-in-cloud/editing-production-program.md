@@ -3,9 +3,9 @@ title: 'Bearbeiten eines Production-Programms '
 description: Bearbeiten eines Production-Programms
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ Gehen Sie wie folgt vor, um ein Production-Programm zu bearbeiten:
 
 Beim Bearbeiten eines Programms sollten nur wenige Überlegungen überprüft werden:
 
-* Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Während des Arbeitsablaufs &quot;Programm bearbeiten&quot;ist es dem Benutzer nicht möglich, die Auswahl aller Projektmappen aufzuheben.
+* Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Die Auswahl aller Programme während des Workflows zum Bearbeiten ist nicht zulässig.
 
 * Wenn Sie auf die Schaltfläche **Speichern** klicken, werden Lösungsaktualisierungen zu Umgebung nach der nächsten Bereitstellung wirksam.
