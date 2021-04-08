@@ -7,15 +7,15 @@ topic-tags: introduction
 content-type: reference
 feature: 3D-Assets
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2271'
 ht-degree: 79%
 
 ---
-
 
 # Arbeiten mit 3D-Assets in Dynamic Media {#working-with-three-d-assets-dm}
 
@@ -29,7 +29,7 @@ Für die Verwendung von 3D-Assets in Dynamic Media ist keine zusätzliche Instal
 
 ![Schuh in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
+<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
 ## Unterstützte 3D-Formate in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
@@ -107,7 +107,7 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 
-   Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media.](/help/assets/add-assets.md#upload-assets)
+   Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
 1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
 1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
