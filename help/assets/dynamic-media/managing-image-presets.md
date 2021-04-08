@@ -3,15 +3,15 @@ title: Verwalten von Bildvorgaben
 description: '"Erfahren Sie mehr über Bildvorgaben und wie Sie Bildvorgaben erstellen, ändern und verwalten."'
 feature: Bildvorgaben,Viewer,Darstellungen
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 72%
 
 ---
-
 
 # Verwalten von Bildvorgaben {#managing-image-presets}
 
