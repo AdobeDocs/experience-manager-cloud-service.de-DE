@@ -3,7 +3,7 @@ title: 'Bearbeiten eines Sandbox-Programms '
 description: Bearbeiten eines Sandbox-Programms
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,12 +33,12 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
 
    ![](assets/edit-program-general.png)
 
-   Auf der Registerkarte **Lösungen und Hinzufügen** werden zwei Optionen angezeigt, z. B. **Sites** und **Assets** für Produktions- und Sandbox-Programm. Zusätzlich können Sie die Option **Commerce** Add-On auswählen, die unter **Sites** verfügbar ist, wie in der folgenden Abbildung dargestellt.
+   Auf der Registerkarte **Lösungen und Hinzufügen** werden zwei Optionen angezeigt, z. B. **Sites** und **Assets** für Produktions- und Sandbox-Programm. Sie können auch die Add-On-Option **Commerce** auswählen, die unter **Sites** verfügbar ist, wie in der folgenden Abbildung dargestellt.
 
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Das heißt, während des Arbeitsablaufs &quot;Programm bearbeiten&quot;kann die Projektmappe nicht deaktiviert werden.
+   >Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Das heißt, die Auswahl aller Projektmappen während des Arbeitsablaufs &quot;Programm bearbeiten&quot;darf nicht aufgehoben werden.
 
 1. Klicken Sie auf **Speichern**, um den Bearbeitungsprozess abzuschließen.
 
