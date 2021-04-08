@@ -3,7 +3,7 @@ title: 'Bearbeiten eines Sandbox-Programms '
 description: Bearbeiten eines Sandbox-Programms
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
+source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,13 +40,13 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
    >[!NOTE]
    >Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Das heißt, die Auswahl aller Projektmappen während des Arbeitsablaufs &quot;Programm bearbeiten&quot;darf nicht aufgehoben werden.
 
-1. Klicken Sie auf **Speichern**, um den Bearbeitungsprozess abzuschließen.
+1. Klicken Sie auf **Speichern**, um den Arbeitsablauf zum Bearbeiten des Programms abzuschließen.
 
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
 
 Beim Bearbeiten eines Programms sollten nur wenige Überlegungen überprüft werden:
 
-* Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Die Auswahl aller Programme während des Workflows zum Bearbeiten ist nicht zulässig.
+* Für ein Programm muss mindestens eine Projektmappe ausgewählt werden. Das heißt, die Auswahl aller Projektmappen während des Arbeitsablaufs &quot;Programm bearbeiten&quot;darf nicht aufgehoben werden.
 
 * Wenn Sie auf die Schaltfläche **Speichern** klicken, werden Lösungsaktualisierungen zu Umgebung nach der nächsten Bereitstellung wirksam.
