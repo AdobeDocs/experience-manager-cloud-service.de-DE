@@ -3,9 +3,9 @@ title: 'Erstellen eines Production-Programms '
 description: Erstellen eines Production-Programms
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ Gehen Sie wie folgt vor, um ein Production-Programm zu erstellen:
 
    ![](assets/create-prod1.png)
 
-1. Der Benutzer wählt die Lösungen aus, die in das Programm auf dem Bildschirm, der nach oben angezeigt wird, aufgenommen werden sollen.
+1. Der Benutzer wählt die Lösungen aus, die in das Programm auf dem Bildschirm, der nach oben angezeigt wird, aufgenommen werden sollen. Klicken Sie nach Auswahl der gewünschten Lösung bzw. Lösungen auf **Erstellen**.
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. Klicken Sie nach Auswahl der Lösungen auf **Erstellen**.
+   Darüber hinaus können Sie die Add-On-Option **Commerce** unter **Sites** auswählen, wie in der Abbildung unten dargestellt, und auf **Erstellen** klicken.
 
+   ![](assets/setup-prod-commerce.png)
 
 1. Sobald Sie Ihre Programm-Karte auf der Landingpage sehen, halten Sie den Mauszeiger darüber, um das Cloud Manager-Symbol auszuwählen, um zur Seite **Übersicht** zu navigieren.
 
