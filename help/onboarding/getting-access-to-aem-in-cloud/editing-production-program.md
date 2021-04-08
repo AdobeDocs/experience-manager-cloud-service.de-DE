@@ -1,14 +1,14 @@
 ---
 title: 'Bearbeiten eines Production-Programms '
-description: 'Bearbeiten eines Production-Programms '
+description: Bearbeiten eines Production-Programms
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Bearbeiten eines Production-Programms {#create-production-program}
 
@@ -25,12 +25,10 @@ Gehen Sie wie folgt vor, um ein Production-Programm zu bearbeiten:
 
 1. Navigieren Sie zur Seite **Programm bearbeiten** von der Seite *Übersicht* des Cloud-Managers.
 
-1. Auf der Seite **Programm bearbeiten** werden zwei Registerkarten (Allgemein und Lösungen) für Produktions- und Sandbox-Programm angezeigt.
+1. Auf der Seite **Programm bearbeiten** werden drei Optionen (**Sites**, **Commerce** und **Assets**) für Produktions- und Sandbox-Programm angezeigt.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >Während sowohl Sites als auch Assets angezeigt werden, kann eine davon je nach dem, was gekauft und nicht verwendet wurde, deaktiviert werden. Insbesondere wenn das Unternehmen über keine nicht verwendeten Berechtigungen für eine bestimmte Lösung verfügt, wird diese Lösung angezeigt, aber deaktiviert.
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
 
