@@ -4,31 +4,31 @@ description: Erfahren Sie, wie Sie die Erstellung von Bildsets und Rotationssets
 contentOwner: Rick Brough
 feature: Bildvorgaben,Viewer-Vorgaben
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 65%
+source-wordcount: '3446'
+ht-degree: 58%
 
 ---
 
-
 # Über Stapelsatzvorgaben {#about-bsp}
 
-Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset zu erleichtern, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen. Sie können die Vorgaben zusammen mit den von Ihnen in [!DNL Dynamic Media] eingeplanten Asset-Importaufträgen ausführen lassen. Jede Vorgabe ist ein eindeutig benannter, in sich abgeschlossener Satz von Anweisungen, die definieren, wie das Bildset oder Rotationsset mithilfe von Bildern erstellt wird, die den definierten Namenskonventionen im Vorgabenrezept entsprechen.
+Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um mehrere Assets in einem Bildsatz oder Rotationsset zu erstellen und zu organisieren, wenn Sie Asset-Dateien entweder einzeln oder mit Massenaufnahmen in einen Ordner hochladen. Sie können die Vorgaben zusammen mit den von Ihnen in [!DNL Dynamic Media] eingeplanten Asset-Importaufträgen ausführen lassen. Jede Vorgabe ist ein eindeutig benannter, in sich abgeschlossener Satz von Anweisungen, die definieren, wie das Bildset oder Rotationsset mithilfe von Bildern erstellt wird, die den definierten Namenskonventionen im Vorgabenrezept entsprechen.
 
 >[!IMPORTANT]
 >
->Wenn Sie Stapelsatzvorgaben in [!DNL Dynamic Media Classic] verwendet haben und als Cloud Service von [!DNL Dynamic Media Classic] zu Adobe Experience Manager migrieren, müssen Sie Ihre Stapelsatzvorgaben-Definitionen in [!DNL Adobe Experience Manager as a Cloud Service] manuell neu erstellen.
+>Wenn Sie Stapelsatzvorgaben in [!DNL Dynamic Media Classic] verwendet haben und als Cloud Service von [!DNL Dynamic Media Classic] zu Adobe Experience Manager migrieren, erstellen Sie Ihre Stapelsatzvorgaben-Definitionen manuell in [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Best Practice**: Beim Arbeiten mit Stapelsatzvorgaben empfiehlt Adobe den folgenden Workflow:
+**Best Practice** : Beim Arbeiten mit Stapelsatzvorgaben empfiehlt die Adobe den folgenden Arbeitsablauf:
 
 1. Erstellen Sie eine Stapelsatzvorgabe. Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp).
 1. Erstellen Sie einen Asset-Ordner oder verwenden Sie einen vorhandenen Asset-Ordner und stellen Sie sicher, dass dieser mit [!DNL Dynamic Media] synchronisiert wird. Weitere Informationen finden Sie unter [Erstellen von Ordnern](/help/assets/manage-digital-assets.md#creating-folders).
 1. Wenden Sie die Stapelsatzvorgabe auf den Asset-Ordner an. Weitere Informationen finden Sie unter [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
 1. Laden Sie Bilder in den Asset-Ordner hoch. Weitere Informationen finden Sie unter [Hochladen von Assets für Bildsets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Hochladen von Assets für Rotationssets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) oder [Hinzufügen digitalen Assets zu Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
-1. Erstellen Sie Ihr Bildset oder Rotationsset. Weitere Informationen finden Sie unter [Bildsets](/help/assets/dynamic-media/image-sets.md) oder [Rotationssets](/help/assets/dynamic-media/spin-sets.md).
+1. Bildsatz oder Rotationsset wird automatisch im gewünschten Ordner generiert.
 1. Veröffentlichen Sie Ihr Bildset oder Rotationsset. Weitere Informationen finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset {#creating-bsp}
@@ -60,7 +60,7 @@ In Bezug auf die Automatisierung der Sequenzreihenfolge geben Sie Regeln an, um 
 
 `.*_main,.*_alt[0-9]`
 
-Obwohl eine Sortierungssequenz möglich ist, sollten Sie sich bei der Sequenzreihenfolge möglichst auf die alphanumerische Nummerierung verlassen. Darüber hinaus können Sie die Editor-Tools für Bildsets und Rotationssets in [!DNL Dynamic Media] verwenden, um die Reihenfolge der Assets einfach zu ändern, oder neue Assets im Set per Drag-and-Drop hinzufügen und zu löschen.
+Obwohl eine Sortierungssequenz möglich ist, sollten Sie sich bei der Sequenzreihenfolge möglichst auf die alphanumerische Nummerierung verlassen. Darüber hinaus können Sie die Bildsatz- oder Rotationsset-Editor-Werkzeuge in [!DNL Dynamic Media] verwenden, um die Reihenfolge der Assets neu anzuordnen oder neue Assets im Satz mithilfe eines Drag &amp; Drop-Vorgangs hinzuzufügen und zu löschen.
 
 Nach dem Erstellen einer Stapelsatzvorgabe wenden Sie diese auf einen oder mehrere von Ihnen erstellte Ordner an. Weitere Informationen finden Sie unter [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
 
@@ -87,7 +87,7 @@ Weitere Informationen zu den bearbeitbaren Optionen, die Ihnen zur Verfügung st
    * Tippen Sie links auf der Seite **[!UICONTROL Stapelsatzvorgabe bearbeiten]** unter **[!UICONTROL Übereinstimmung]**, **[!UICONTROL Basisname]** oder **[!UICONTROL Sequenzreihenfolge]** auf **[!UICONTROL Hinzufügen Gruppe]**.
    * Das Feld **[!UICONTROL Übereinstimmung]** ist erforderlich. **[!UICONTROL Basisnamen]** sind nur dann obligatorisch, wenn im  **** Feld &quot;Übereinstimmung&quot;nicht bereits ein Basisname mithilfe einer Klammergruppierung angegeben wurde. **[!UICONTROL Sequenzreihenfolge]** ist optional.
    * Geben Sie mithilfe der Dropdown-Listen und Textfelder im Gruppenformular eine Ausdrucksgruppe an, die Sie zur Definition der Benennungskriterien für die Assets des Bildsets oder des Rotationsets verwenden möchten.
-      * Wenn Sie Ausdruck für eine Ausdruck-Gruppe auswählen und angeben, beachten Sie, dass die tatsächliche Syntax des regulären  in der rechten unteren Ecke der Seite unter der Überschrift **[!UICONTROL Regelergebnisse - RegX]** angezeigt wird (tippen Sie auf eine beliebige Stelle außerhalb des Formularbereichs, um die Zeichenfolge des regulären Ausdrucks unten rechts anzuzeigen). Diese Zeichenfolgen für reguläre Ausdrücke stellen das Muster dar, mit dem Sie bei der Suche nach [!DNL Dynamic Media]-Assets übereinstimmen möchten, um Ihr Bildset oder Rotationsset zu erstellen.
+      * Wenn Sie Ausdruck für eine Gruppe auswählen und angeben, beachten Sie, dass die tatsächliche Syntax des regulären Ausdrucks unten rechts auf der Seite unter der Überschrift **[!UICONTROL Regelergebnisse - RegX]** angezeigt wird. Um die Zeichenfolge des regulären Ausdrucks unten rechts zu aktualisieren, tippen Sie auf eine beliebige Stelle außerhalb des Formularbereichs. Diese Zeichenfolgen für reguläre Ausdrücke stellen das Muster dar, mit dem Sie bei der Suche nach [!DNL Dynamic Media]-Assets übereinstimmen möchten, um Ihr Bildset oder Rotationsset zu erstellen.
       * Um eine hinzugefügte Gruppe zu entfernen, tippen Sie auf **[!UICONTROL X]**.
    * Wenn Sie zwei oder mehr Gruppen hinzufügen, wählen Sie in der Dropdown-Liste **[!UICONTROL Und]** die Option **[!UICONTROL Und]** aus, um eine neu hinzugefügte Gruppe mit einer zuvor hinzugefügten Ausdrucksgruppe zu verbinden. Oder wählen Sie **[!UICONTROL Oder]** aus, um die vorherige Ausdrucksgruppe und die neu erstellte Gruppe abwechselnd hinzuzufügen. Der Operand **[!UICONTROL Oder]** wird durch die Verwendung eines vertikalen Linienzeichens `|` in der Syntax des regulären Ausdrucks selbst definiert.
 
@@ -99,7 +99,7 @@ Weitere Informationen zu den bearbeitbaren Optionen, die Ihnen zur Verfügung st
 
 1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
-Sie können die Stapelsatzvorgabe jetzt auf einen oder mehrere Asset-Ordner anwenden, Assets in den Ordner hochladen und dann Ihr Bildset oder Rotationsset erstellen. Weitere Informationen finden Sie unter [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
+Sie können die Stapelsatzvorgabe jetzt auf einen Asset-Ordner anwenden. Anschließend laden Sie Assets in diesen Ordner hoch. Dieser Arbeitsablauf führt zur automatischen Erstellung Ihres Bildsatzes oder Rotationssets. Siehe [Informationen zum Anwenden von Stapelsatzvorgaben auf Asset-Ordner](#apply-bsp).
 
 ### Optionen „Vorgabendetails“, „Benennungskonvention festlegen“ und „Regelresultate – RegX“ {#features-options-bsp}
 
@@ -112,7 +112,7 @@ Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für e
 | Vorgabenname | Schreibgeschützt. Der Name, den Sie beim ersten Erstellen des Stapelsatzes angegeben haben. Wenn Sie die Vorgabe umbenennen müssen, können Sie die vorhandene Stapelsatzvorgabe kopieren und einen neuen Namen angeben. Weitere Informationen finden Sie unter [Kopieren einer vorhandenen Stapelsatzvorgabe](#copy-bsp). |
 | Typ | Schreibgeschützt. Der Typ wurde beim ersten Erstellen des Stapelsatzes angegeben. Durch Kopieren einer vorhandenen Stapelsatzvorgabe können Sie deren [!UICONTROL Typ] nicht ändern. Sie müssen stattdessen eine Vorgabe erstellen. |
 | Abgeleitete Assets einschließen | Optional. Wenn die IPS von [!DNL Dynamic Media] generierte oder abgeleitete Bilder mit dem Rotationsset oder Bildsatz enthalten sollen, wählen Sie **[!UICONTROL Ja]** (Standard). Ein abgeleitetes Asset ist ein Bild, das nicht direkt von einem Benutzer hochgeladen wurde. Stattdessen wurde das Asset vom IPS erzeugt, wenn ein primäres Asset hochgeladen wurde. Zum Beispiel wird ein Bild-Asset, das IPS aus einer Seite in einer PDF-Datei generiert hat, als die PDF-Datei in [!DNL Dynamic Media] hochgeladen wurde, als abgeleitetes Asset betrachtet. |
-| Zielordner | Optional. Wenn Sie eine große Anzahl von Bildsätzen oder Rotationssets definieren, empfiehlt Adobe, diese Bildsätze von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Erstellen Sie daher einen Ordner &quot;Bildsätze&quot;oder &quot;Rotationssets&quot;und leiten Sie die Anwendung an die Stelle, an der die Stapelsätze erstellt wurden.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Ordnerstruktur &quot;Experience Manager Assets&quot;(`/content/dam`) die Stapelsatzvorgabe aktiv ist. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, um ihn als Zielordner zuzulassen. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Es kann mehreren Ordnern eine bestimmte Stapelsatzvorgabe zugewiesen werden, wenn Sie die Vorgabe mithilfe der  **[!UICONTROL Eigenschaften]** des Ordners anwenden. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird die Stapelsatzvorgabe im selben Ordner wie der Ordner zum Hochladen von Assets erstellt. |
+| Zielordner | Optional. Wenn Sie eine große Anzahl von Bildsätzen oder Rotationssets definieren, empfiehlt Adobe, diese Bildsätze von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Erstellen Sie daher einen Ordner &quot;Bildsätze&quot;oder &quot;Rotationssets&quot;und leiten Sie die Anwendung an die Stelle, an der die Stapelsätze erstellt wurden.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Ordnerstruktur &quot;Experience Manager Assets&quot;(`/content/dam`) die Stapelsatzvorgabe aktiv ist. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, um ihn als Zielordner zuzulassen. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Es kann mehreren Ordnern eine bestimmte Stapelsatzvorgabe zugewiesen werden, wenn Sie die Vorgabe mithilfe der  **[!UICONTROL Eigenschaften]** des Ordners anwenden. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird der mit der Stapelsatzvorgabe erstellte Bildsatz oder Rotationsset im selben Ordner erstellt, in den Sie den Asset-Ordner hochgeladen haben. |
 | **[!UICONTROL Benennungskonvention festlegen]** |  |
 | Präfix<br>oder<br>Suffix | Optional. Geben Sie entweder ein Präfix, ein Suffix oder beide in die entsprechenden Felder ein.<br>Mit den Feldern &quot;Präfix&quot;und &quot;Suffix&quot;können Sie so viele Stapelsatzvorgaben mit einer alternativen, benutzerdefinierten Dateibenennungsregel für einen bestimmten Inhaltssatz erstellen. Diese Methode ist besonders in Fällen nützlich, in denen es eine Ausnahme vom definierten Standardbenennungsschema eines Unternehmens gibt.<br>Das Präfix oder Suffix wird dem **[!UICONTROL Grundnamen]** hinzugefügt, den Sie im Bereich **[!UICONTROL Asset-Benennungskonvention]** festlegen. Durch Hinzufügen eines Präfix oder Suffixs stellen Sie sicher, dass der Bildsatz oder das Rotationsset ausschließlich und unabhängig von anderen Assets erstellt wird. Dies kann auch dazu dienen, anderen bei der Identifizierung von Dateitypen zu helfen. Um beispielsweise einen verwendeten Farbmodus zu bestimmen, können Sie `rgb` oder `cmyk` als Präfix oder Suffix hinzufügen.<br>Es ist nicht erforderlich, eine Benennungsregel für Stapelsatzvorgaben festzulegen. Es empfiehlt sich jedoch, die Benennungsregel für Stapelsätze zu verwenden. Auf diese Weise können Sie so viele Elemente Ihrer Benennungsregel definieren, die Sie in einem Satz gruppieren möchten, um die Erstellung von Stapelsätzen zu optimieren. |
 | **[!UICONTROL Regelresultate – RegX]** |  |
@@ -120,15 +120,15 @@ Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für e
 | Asset-Benennungskonvention – Grundname | Schreibgeschützt. Zeigt die Syntax des regulären Ausdrucks basierend auf den von Ihnen gewählten Formularoptionen „Grundname“ oder dem eingegebenen Raw-Code an. |
 | Sequenzreihenfolge – Übereinstimmung | Schreibgeschützt. Zeigt die Syntax des regulären Ausdrucks basierend auf den von Ihnen gewählten Optionen des Formulars oder dem eingegebenen Raw-Code an. |
 
-## Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner {#apply-bsp}
+## Stapelsatzvorgaben auf Asset-Ordner {#apply-bsp} anwenden
 
-Wenn Sie einem oder mehreren Ordnern Stapelsatzvorgaben zuweisen, erben alle Unterordner automatisch die Vorgaben aus ihrem übergeordneten Ordner.
+Wenn Sie Stapelsatzvorgaben einem oder mehreren Asset-Ordnern zuweisen, übernehmen alle Unterordner automatisch die Vorgaben aus dem übergeordneten Ordner.
 
-Sie können mehrere Stapelsatzvorgaben auf einen Ordner anwenden.
+Sie können mehrere Stapelsatzvorgaben auf einen Asset-Ordner anwenden.
 
 Ordner, denen eine Stapelvorgabe zugewiesen ist, werden in der Benutzeroberfläche mit dem Namen der Vorgabe angezeigt, die im Ordner in der Ansicht **[!UICONTROL Card]** aufgeführt ist.
 
-Um Stapelsatzvorgaben auf Ordner anzuwenden, verwenden Sie eine der beiden folgenden Methoden:
+Um Stapelsatzvorgaben auf Asset-Ordner anzuwenden, verwenden Sie eine der beiden folgenden Methoden:
 
 * [Anwenden der Stapelsatzvorgaben auf Asset-Ordner auf der Seite „Stapelsatzvorgabe“](#apply-bsp-to-folders-via-bsp-page) – Diese Methode bietet Ihnen die größte Flexibilität. Sie können eine oder mehrere Vorgaben auf einen oder mehrere Ordner anwenden.
 * [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties) – Mit dieser Methode können Sie eine oder mehrere Stapelsatzvorgaben auf einen Ordner anwenden.
@@ -160,7 +160,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. Wählen Sie unter **[!UICONTROL Stapelsatzvorgaben]** aus dem Dropdown-Feld **[!UICONTROL Vorgabenname]** den Liste einer Stapelsatzvorgabe aus, die Sie anwenden möchten. Der Screenshot oben zeigt zwei ausgewählte Stapelsatzvorgaben, die auf den Ordner angewendet wurden.
+1. Wählen Sie unter **[!UICONTROL Stapelsatzvorgaben]** aus dem Dropdown-Feld **[!UICONTROL Vorgabenname]** den Liste einer Stapelsatzvorgabe aus, die Sie anwenden möchten. Der Screenshot oben zeigt zwei ausgewählte Stapelsatzvorgaben, die auf den Asset-Ordner angewendet werden.
 
    Wenn im Dropdown-Listenfeld **[!UICONTROL Vorgabename]** keine Stapelsatzvorgaben vorhanden sind, bedeutet dies, dass Sie noch keine Stapelsatzvorgaben erstellt haben. Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp).
 
@@ -172,17 +172,17 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 Sie können eine von Ihnen bereits erstellte Stapelsatzvorgabe bearbeiten. Sie können jede der Ausdrucksgruppen ändern, die Sie für die Asset-Benennungskonvention oder die Asset-Reihenfolge erstellt haben. Bei Bedarf können Sie auch den Zielordner aktualisieren und Namenskonventionen festlegen.
 
-Der Name und der Vorgabetyp der Vorgabe (Bildset oder Rotationsset) können jedoch nicht geändert werden. Wenn der Name einer Vorgabe geändert werden muss, können Sie die vorhandene Vorgabe kopieren und einen neuen Namen angeben. Weitere Informationen finden Sie unter [Kopieren einer Stapelsatzvorgabe](#copy-bsp).
+Der Name und der Vorgabetyp der Vorgabe (Bildset oder Rotationsset) können jedoch nicht geändert werden. Wenn der Name einer Vorgabe geändert werden muss, kopieren Sie die vorhandene Vorgabe und geben Sie einen neuen Namen an. Weitere Informationen finden Sie unter [Kopieren einer Stapelsatzvorgabe](#copy-bsp).
 
-Wenn Sie eine Stapelsatzvorgabe bearbeiten, die zuvor auf einen Ordner angewendet wurde, wird die neu bearbeitete Vorgabe nur auf neue Assets angewendet, die in den Ordner hochgeladen werden.
+Wenn Sie eine Stapelsatzvorgabe bearbeiten, die zuvor auf einen Ordner angewendet wurde, wird die neu bearbeitete Stapelsatzvorgabe nur auf neue Assets angewendet, die in diesen Ordner hochgeladen wurden.
 
-Wenn die neu bearbeitete Vorgabe erneut auf die vorhandenen Assets im Ordner angewendet werden soll, müssen Sie den Ordner erneut verarbeiten. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Auf diese Weise können die vorhandenen Assets nun als Teil eines Bildsets oder Rotationssets betrachtet und hinzugefügt werden. Darüber hinaus werden die vorhandenen Assets, die bereits auf der Grundlage der zuvor verwendeten Stapelsatzvorgabe im Bildsatz oder Rotationsset enthalten waren, nicht entfernt (sofern sie sich nicht mehr auf der Grundlage der neu bearbeiteten Vorgabe qualifizieren) und wie besehen angezeigt.
+Wenn die neu bearbeitete Vorgabe erneut auf die vorhandenen Assets im Ordner angewendet werden soll, müssen Sie den Ordner erneut verarbeiten. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Auf diese Weise können die vorhandenen Assets nun als Teil eines Bildsets oder Rotationssets betrachtet und hinzugefügt werden. Darüber hinaus werden die vorhandenen Assets, die bereits im Bildsatz oder Rotationsset enthalten waren - basierend auf der zuvor verwendeten Stapelsatzvorgabe - nicht entfernt und unverändert angezeigt. Bei diesem Szenario wird davon ausgegangen, dass sie sich nicht mehr auf der Grundlage der neu bearbeiteten Vorgabe qualifizieren.
 
 **So bearbeiten Sie eine Stapelsatzvorgabe:**
 
 1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** die Stapelsatzvorgabe, die Sie ändern möchten.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgabe bearbeiten.]**
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgabe bearbeiten]**.
 1. Bearbeiten Sie die Vorgabe nach Bedarf.
 1. Tippen Sie oben rechts auf der Seite **[!UICONTROL Stapelsatzvorgabe]** auf **[!UICONTROL Speichern]**.
 
@@ -269,3 +269,4 @@ Wenn Sie stattdessen *Vorgaben aus Ordnern entfernen möchten, finden Sie weiter
 >* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
 >* [Konfigurieren der selektiven Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Weitere Informationen zum Synchronisieren eines einzelnen Ordners finden Sie unter &quot;Synchronisierungsmodus&quot; [!DNL Dynamic Media].
 >* [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Weitere Informationen zum Synchronisieren aller Ordner mit finden Sie unter &quot;Dynamic Media-Synchronisierungsmodus&quot; [!DNL Dynamic Media].
+
