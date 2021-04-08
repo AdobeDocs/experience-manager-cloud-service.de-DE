@@ -3,15 +3,15 @@ title: Invalidierung des CDN-Cache über Dynamic Media
 description: '"Erfahren Sie, wie Sie Ihre zwischengespeicherten CDN-Inhalte (Content Versand Network) für ungültig erklären, damit Sie die von Dynamic Media bereitgestellten Assets schnell aktualisieren können, anstatt darauf zu warten, dass der Cache abläuft."'
 feature: Asset-Verwaltung
 topic: Geschäftspraktiker
-role: Administrator, Geschäftspraktiker
+role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 64%
+source-wordcount: '1303'
+ht-degree: 63%
 
 ---
-
 
 # Invalidierung des CDN-Cache über Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
@@ -40,7 +40,7 @@ Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/d
 
    ![Vorlage für CDN-Invalidierung – Erstellen](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Tippen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Vorlage für CDN-Invalidierung]** auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK.]**<br>
+1. Tippen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Vorlage für CDN-Invalidierung]** auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]**.<br>
 
    *Teil 2 von 2: Einrichten von CDN-Invalidierunsoptionen*
    <br>
@@ -85,7 +85,7 @@ In jedem Fall wird entweder der gesamte Batch zur Invalidierung verarbeitet oder
 | *URLs für ausgewählte Assets konnten nicht abgerufen werden.* | Tritt auf, wenn eines der folgenden Szenarien erfüllt ist:<br>– Es wurde keine Dynamic Media-Konfiguration gefunden.<br>- Beim Abrufen eines Dienstbenutzers, über den die Dynamic Media-Konfiguration gelesen wird, ist eine Ausnahme aufgetreten.<br>– Der Veröffentlichungs-Server bzw. Stammordner des Unternehmens, der zum Erstellen der URLs verwendet wird, fehlt in der Dynamic Media-Konfiguration. |
 | *Einige URLs sind nicht richtig definiert. Korrigieren und erneut senden.* | Tritt auf, wenn die IPS CDN-Cache-Ungültigungs-API einen Fehler zurückgibt. Der Fehler gibt an, dass die URL auf eine andere Firma verweist oder dass die URL gemäß der von der IPS cdnCacheInvalidation API durchgeführten Überprüfung ungültig ist. |
 | *CDN-Cache konnte nicht ungültig gemacht werden.* | Tritt auf, wenn die Anfrage zur Invalidierung des CDN-Cache aus einem anderen Grund fehlschlägt. |
-| *Keine URLs, die als ungültig eingegeben wurden.* | Tritt auf, wenn auf der Seite **[!UICONTROL CDN-Invalidierung]** – **[!UICONTROL Bestätigen]** keine URLs vorhanden sind und Sie auf **[!UICONTROL Übermitteln]** tippen. |
+| *Keine URLs, die als ungültig eingegeben wurden.* | Tritt auf, wenn auf der Seite **[!UICONTROL CDN-Ungültigmachung]** - **[!UICONTROL Bestätigen]** keine URLs vorhanden sind, und Sie tippen auf **[!UICONTROL Senden]**. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
