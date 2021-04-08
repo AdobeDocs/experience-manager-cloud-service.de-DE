@@ -4,21 +4,21 @@ description: Informationen zum Veröffentlichen von Dynamic Media-Assets.
 contentOwner: Rick Brough
 feature: Asset-Verwaltung
 topic: Geschäftspraktiker
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '465'
 ht-degree: 59%
 
 ---
-
 
 # Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
 
 Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nach dem Veröffentlichen Ihrer Dynamic Media-Assets können diese auf einer Web-Seite über eine URL eingebunden oder mittels Code eingebettet werden.
 
-Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Sie können diese Assets auch selektiv veröffentlichen. Informationen hierzu finden Sie unter [Konfigurieren von Dynamic Media.](config-dm.md) Sie können Assets auch selektiv auf Dynamic Media oder Adobe Experience Manager veröffentlichen und sich gegenseitig ausschließen, indem Sie auf Ordnerebene  **[!UICONTROL Selektive]** Veröffentlichung verwenden. Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. Sie können diese Assets auch selektiv veröffentlichen. Informationen hierzu finden Sie unter [Konfigurieren von Dynamic Media](config-dm.md). Oder Sie können Assets selektiv auf Dynamic Media oder Adobe Experience Manager veröffentlichen und sich gegenseitig ausschließen, indem Sie **[!UICONTROL Selektive Veröffentlichung]** auf Ordnerebene verwenden. Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
@@ -30,7 +30,7 @@ Wenn Sie Video-Assets unmittelbar nach der Kodierung veröffentlichen möchten, 
 
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-Siehe auch [Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
+Siehe auch [Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
 >[!NOTE]
 >
