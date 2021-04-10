@@ -3,15 +3,15 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
 feature: Asset-Verwaltung, verbundene Assets, Asset-Verteilung
-role: Administrator,Geschäftspraktiker,Architekt
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2902'
-ht-degree: 92%
+source-wordcount: '2922'
+ht-degree: 86%
 
 ---
-
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -108,9 +108,12 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
 1. Fügen Sie die [!DNL Sites]-Bereitstellung als zulässigen Ursprung in der CORS-Konfiguration der [!DNL Assets]-Bereitstellung hinzu. Weitere Informationen finden Sie unter [Grundlegendes zu CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de).
 
-Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen und der [!DNL Assets]-Bereitstellung überprüfen.
+1. Konfigurieren Sie [dieselbe Site-Cookie-Unterstützung](/help/security/same-site-cookie-support.md).
 
-![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png)
+Sie können die Verbindung zwischen den konfigurierten [!DNL Sites]-Bereitstellungen und der [!DNL Assets]-Bereitstellung überprüfen.
+
+![Verbindungstest für konfigurierte verbundene Assets  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Abbildung: Verbindungstest für konfigurierte verbundene Assets  [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
    * Wählen Sie bei lokalem [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** **[!UICONTROL Selektive Veröffentlichung]**. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]**.
    * Wählen Sie bei der Remote-Bereitstellung [!DNL Assets] im [!UICONTROL Dynamic Media-Synchronisierungsmodus] **[!UICONTROL standardmäßig aktiviert]**.
 
-1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Image-Core-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Diese Funktion ermöglicht es der Standard-Bildkomponente, [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Webseiten bei der lokalen [!DNL Sites]-Bereitstellung verwendet werden.
+1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Image-Core-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Webseiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
 ## Verwenden von Remote-Assets  {#use-remote-assets}
 
@@ -231,11 +234,13 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben:
 
 * Wenn Sie im [!UICONTROL Content Finder] nicht nach Remote-Assets suchen können, überprüfen Sie erneut, ob die erforderlichen Rollen und Berechtigungen eingerichtet sind.
-* Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/operations/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
-* Wenn Sie von der lokalen [!DNL Sites]-Bereitstellung aus nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass seitenübergreifende Cookies erlaubt sind. Wenn seitenübergreifende Cookies blockiert werden, werden die beiden Bereitstellungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise kann [!DNL Google Chrome] im Inkognito-Modus Cookies von Drittanbietern blockieren. Um Cookies im [!DNL Chrome]-Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, navigieren Sie zu „Site funktioniert nicht“ > „Blockiert“, wählen Sie die Remote-DAM-URL aus und lassen Sie das Anmelde-Token-Cookie zu. Alternativ finden Sie in der Hilfe Informationen zum [Aktivieren von Cookies von Drittanbietern](https://support.google.com/chrome/answer/95647).
 
-   ![Cookie-Fehler in Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
+* Ein Asset, das vom Remote-DAM abgerufen wird, kann aus einem oder mehreren Gründen nicht auf einer Webseite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/operations/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
 
-* Wenn keine Remote-Referenzen abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die Sites-Bereitstellung verfügbar ist und ob es Probleme mit der Netzwerkverbindung gibt. Versuchen Sie es später erneut. Bei der [!DNL Assets]-Bereitstellung wird zweimal versucht, eine Verbindung zur [!DNL Sites]-Bereitstellung herzustellen. Anschließend wird ein Fehler ausgegeben.
+* Wenn Sie von der lokalen [!DNL Sites]-Bereitstellung aus nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Site-übergreifende Cookies zulässig sind und [dieselbe Site-Cookie-Unterstützung](/help/security/same-site-cookie-support.md) konfiguriert ist. Wenn Site-übergreifende Cookies blockiert werden, kann die Bereitstellung von [!DNL Experience Manager] nicht authentifiziert werden. Beispielsweise kann [!DNL Google Chrome] im Inkognito-Modus Cookies von Drittanbietern blockieren. Um Cookies im [!DNL Chrome]-Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, navigieren Sie zu **Site funktioniert nicht** > **Blocked**, wählen Sie die Remote DAM-URL aus und lassen Sie das Cookie login-token zu. Weitere Informationen finden Sie unter [wie Sie Drittanbieter-Cookies aktivieren](https://support.google.com/chrome/answer/95647).
+
+   ![Cookie-Fehler im Chrome-Browser im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
+
+* Wenn Remote-Referenzen nicht abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob [!DNL Sites] Bereitstellung verfügbar ist, und prüfen Sie, ob Probleme mit der Netzwerkverbindung auftreten. Versuchen Sie es später erneut. Bei der [!DNL Assets]-Bereitstellung wird zweimal versucht, eine Verbindung zur [!DNL Sites]-Bereitstellung herzustellen. Anschließend wird ein Fehler ausgegeben.
 
 ![Fehler beim erneuten Abrufen von Asset-Remote-Referenzen](assets/reference-report-failure.png)
