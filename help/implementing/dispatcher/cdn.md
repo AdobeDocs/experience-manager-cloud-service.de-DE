@@ -4,10 +4,10 @@ description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
+source-git-commit: 16a0f4de0d7a32032abd4742cc06a086038d032b
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -46,10 +46,10 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 Konfigurationsanweisungen:
 
-1. Legen Sie die `X-Forwarded-Host`-Kopfzeile mit dem Domain-Namen fest. Beispiel: `X-Forwarded-Host: example.com`.
-1. Legen Sie die Host-Kopfzeile mit der Ursprungs-Domain fest, bei der es sich um den CDN-Eingang von AEM handelt. Beispiel: `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Legen Sie die `X-Forwarded-Host`-Kopfzeile mit dem Domain-Namen fest. Beispiel:`X-Forwarded-Host:example.com`.
+1. Legen Sie die Host-Kopfzeile mit der Ursprungs-Domain fest, bei der es sich um den CDN-Eingang von AEM handelt. Beispiel:`Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie der Host-Header muss der SNI-Header die Domäne der Herkunft sein.
-1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN `X-Edge-*` entfernt). Der Wert sollte von der Adobe stammen.
+1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN `X-Edge-*` entfernt). Der Wert sollte von Adobe stammen.
    * Dies ist erforderlich, damit das Adobe-CDN die Quelle der Anforderungen überprüfen und die `X-Forwarded-*`-Header an die AEM weiterleiten kann. Beispielsweise wird `X-Forwarded-Host` von AEM verwendet, um den Host-Header zu bestimmen, und `X-Forwarded-For` wird zur Bestimmung der Client-IP verwendet. Daher ist es die Verantwortung des vertrauenswürdigen Anrufers (d.h. des vom Kunden verwalteten CDN), die Richtigkeit der `X-Forwarded-*`-Kopfzeilen sicherzustellen (siehe unten stehende Anmerkung).
    * Optional kann der Zugriff auf die Adobe CDNs Adresse blockiert werden, wenn kein `X-Edge-Key` vorhanden ist. Bitte informieren Sie die Adobe, wenn Sie direkten Zugriff auf die Adobe CDN&#39;s Ingress (zu blockieren) benötigen.
 
