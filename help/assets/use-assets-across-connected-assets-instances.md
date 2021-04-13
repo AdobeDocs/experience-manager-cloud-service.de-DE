@@ -2,14 +2,14 @@
 title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Sites]
 description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
 contentOwner: AG
-feature: Asset-Verwaltung, verbundene Assets, Asset-Verteilung
+feature: Asset-Verwaltung, verbundene Assets, Asset-Verteilung, Benutzer und Gruppen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2922'
-ht-degree: 86%
+source-wordcount: '2932'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] 6.5 finden Sie unter [Verbundene Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
+* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] als Cloud Service  [!DNL Assets] funktioniert mit  [!DNL Experience Manager] 6.5. Weitere Informationen zur Funktionsweise dieser Funktion in  [!DNL Experience Manager] 6.5 finden Sie unter  [Verbundene Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -42,7 +42,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 Autoren können in Content Finder nach Bildern und den folgenden Dokumenten suchen und die gefundenen Assets im Seiteneditor verwenden. Dokumente werden der Komponente `Download` und Bilder der Komponente `Image` hinzugefügt. Autoren können die Remote-Assets auch zu jeder benutzerdefinierten [!DNL Experience Manager]-Komponente hinzufügen, die die standardmäßigen `Download`- oder `Image`-Komponenten erweitert. Folgende Formate werden unterstützt:
 
-* **Bildformate**: Die Formate, die von der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) unterstützt werden.
+* **Bildformate**: Die Formate, die von der [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) unterstützt werden.
 * **Dokumentenformate**: Siehe [Unterstützte Dokumentformate](file-format-support.md#document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
@@ -189,7 +189,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 1. Wählen Sie ein Asset in der [!DNL Assets]-Konsole aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Referenzen]**. Unter **[!UICONTROL Lokale Referenzen]** finden Sie weitere Informationen zur Verwendung des Assets in der [!DNL Assets]-Bereitstellung. Siehe [!UICONTROL Remote-Referenzen] für die Verwendung des Assets bei der [!DNL Sites]-Bereitstellung, bei der das Asset mithilfe der Funktionen für Connected Assets abgerufen wurde.
 
-   ![Remote-Referenzen in den Asset-Eigenschaften](assets/connected-assets-remote-reference.png)
+   ![Remote-Verweise auf der Seite &quot;Asset-Eigenschaften&quot;](assets/connected-assets-remote-reference.png)
 
 1. Die Referenzen für [!DNL Sites]-Seiten zeigen die Gesamtzahl der Referenzen für jede lokale [!DNL Sites] an. Es kann einige Zeit dauern, bis alle Referenzen gefunden und die Gesamtzahl der Referenzen angezeigt werden.
 1. Die Liste der Referenzen ist interaktiv und DAM-Benutzer können auf eine Referenz klicken, um die verweisende Seite zu öffnen. Wenn Remote-Referenzen aus irgendeinem Grund nicht abgerufen werden können, wird eine Benachrichtigung angezeigt, die den Benutzer über den Fehler informiert.
@@ -243,4 +243,4 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 
 * Wenn Remote-Referenzen nicht abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob [!DNL Sites] Bereitstellung verfügbar ist, und prüfen Sie, ob Probleme mit der Netzwerkverbindung auftreten. Versuchen Sie es später erneut. Bei der [!DNL Assets]-Bereitstellung wird zweimal versucht, eine Verbindung zur [!DNL Sites]-Bereitstellung herzustellen. Anschließend wird ein Fehler ausgegeben.
 
-![Fehler beim erneuten Abrufen von Asset-Remote-Referenzen](assets/reference-report-failure.png)
+   ![Abrufen von Remote-Referenzen für Assets fehlgeschlagen](assets/reference-report-failure.png)
