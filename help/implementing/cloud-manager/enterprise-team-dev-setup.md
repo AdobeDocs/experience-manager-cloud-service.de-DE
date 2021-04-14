@@ -2,7 +2,7 @@
 title: Einrichten der Enterprise Team-Entwicklung - Cloud Services
 description: Auf dieser Seite erfahren Sie mehr über die Einrichtung des Enterprise-Teams
 translation-type: tm+mt
-source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
+source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Das Setup im Git-Repository von Cloud Manager besteht aus zwei Zweigen:
 * Eine *Stable-Release-Verzweigung*, die den Produktionscode aller Teams enthält
 * Eine *Entwicklungsabteilung*, die den Entwicklungscode aller Teams enthält
 
-Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen dem gleichen Setup für den stabilen Zweig. Ein Push-Vorgang auf den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Cloud Manager-Git-Repository gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
+Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen dem gleichen Setup für den stabilen Zweig. Ein Push-Vorgang auf den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Git-Repository von Cloud Manager gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
 
 ![](assets/team-setup2.png)
 
