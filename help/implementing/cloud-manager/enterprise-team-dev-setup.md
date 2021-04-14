@@ -2,9 +2,9 @@
 title: Einrichten der Enterprise Team-Entwicklung - Cloud Services
 description: Auf dieser Seite erfahren Sie mehr über die Einrichtung des Enterprise-Teams
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -63,12 +63,12 @@ Jedes Team verwendet einen vereinfachten Git-Arbeitsablauf mit zwei + N-Zweigen 
 
 Die Entwicklung erfolgt in einem Funktionszweig, wenn die Funktion reif ist, wird sie in den Entwicklungszweig zusammengeführt. Abgeschlossene und validierte Funktionen werden aus dem Entwicklungszweig ausgewählt und in den stabilen Zweig zusammengeführt. Alle Änderungen werden durch Pull Requests (PR) vorgenommen. Jeder PR wird automatisch durch Qualitätstore validiert. Sonar wird zur Qualitätskontrolle des Codes verwendet und eine Reihe von Testsuiten werden ausgeführt, um sicherzustellen, dass der neue Code keine Regression einleitet.
 
-Das Setup im Cloud Manager-Git-Repository besteht aus zwei Zweigen:
+Das Setup im Git-Repository von Cloud Manager besteht aus zwei Zweigen:
 
 * Eine *Stable-Release-Verzweigung*, die den Produktionscode aller Teams enthält
 * Eine *Entwicklungsabteilung*, die den Entwicklungscode aller Teams enthält
 
-Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen demselben Setup für die Stable-Verzweigung: Ein Push-Vorgang für den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Cloud Manager-Git-Repository gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
+Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen dem gleichen Setup für den stabilen Zweig. Ein Push-Vorgang auf den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Cloud Manager-Git-Repository gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
 
 ![](assets/team-setup2.png)
 
