@@ -2,9 +2,9 @@
 title: Einrichten der Enterprise Team-Entwicklung - Cloud Services
 description: Auf dieser Seite erfahren Sie mehr über die Einrichtung des Enterprise-Teams
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Diese Einrichtung in der realen Welt kann als Entwurf verwendet und dann an die 
 
 ### Überlegungen zu einem Multi-Team-Setup {#considerations}
 
-Der oben skizzierte Entwurf für ein Multi-Team-Setup ermöglicht die Skalierung über eine größere Anzahl von Teams. Mit dem Git-Repository von Cloud Manager und der Produktions-Pipeline wird immer der gesamte Produktionscode durch alle Qualitätstore ausgeführt und als eine Bereitstellungseinheit behandelt. Auf diese Weise wird das Produktionssystem *immer auf* ohne Unterbrechung oder Ausfallzeiten gehalten.
-Ohne ein solches System dagegen besteht die Gefahr, dass ein Update eines einzelnen Teams zu Problemen mit der Produktionsstabilität führen kann, da jedes Team separat bereitstellen kann. Darüber hinaus sind Koordination und geplante Ausfallzeiten erforderlich, um Updates bereitzustellen. Mit zunehmender Anzahl von Teams werden die Koordinierungsanstrengungen viel komplexer und schnell unkontrollierbar.
-Wenn ein Problem in den Qualitätsräumen erkannt wird, ist die Produktion nicht betroffen, und das Problem kann ohne Adobe erkannt und behoben werden. Ohne Cloud Service und ohne immer die gesamte Bereitstellung zu testen, können partielle Bereitstellungen zu Ausfällen führen, die eine Rollback-Anforderung oder sogar eine vollständige Wiederherstellung aus einer Sicherung erfordern. Die partielle Prüfung kann auch zu anderen Problemen führen, die dann nach der erneuten Abstimmung und Unterstützung durch das Personal der Adobe behoben werden müssen.
+>[!NOTE]
+>Für jedes Multi-Team-Setup ist es von entscheidender Bedeutung, ein Governance-Modell und eine Reihe von Standards festzulegen, die alle Teams einhalten müssen. Der oben skizzierte Entwurf für ein Multi-Team-Setup ermöglicht die Skalierung über eine größere Anzahl von Teams und Sie können diesen Entwurf als Ausgangspunkt verwenden.
 
-Für jedes Multi-Team-Setup ist es von entscheidender Bedeutung, ein Governance-Modell und eine Reihe von Standards festzulegen, die alle Teams einhalten müssen. Sie können den Entwurf als Ausgangspunkt verwenden.
+Mit dem Git-Repository von Cloud Manager und der Produktions-Pipeline wird immer der gesamte Produktionscode durch alle Qualitätstore ausgeführt und als eine Bereitstellungseinheit behandelt. Auf diese Weise wird das Produktionssystem *immer auf* ohne Unterbrechung oder Ausfallzeiten gehalten.
+Ohne ein solches System dagegen besteht die Gefahr, dass ein Update eines einzelnen Teams zu Problemen mit der Produktionsstabilität führen kann, da jedes Team separat bereitstellen kann. Darüber hinaus sind Koordination und geplante Ausfallzeiten erforderlich, um Updates bereitzustellen. Mit zunehmender Anzahl von Teams werden die Koordinierungsanstrengungen viel komplexer und schnell unkontrollierbar.
+
+Wenn ein Problem in den Qualitätsräumen erkannt wird, ist die Produktion nicht betroffen, und das Problem kann ohne Adobe erkannt und behoben werden. Ohne Cloud Service und ohne immer die gesamte Bereitstellung zu testen, können partielle Bereitstellungen zu Ausfällen führen, die eine Rollback-Anforderung oder sogar eine vollständige Wiederherstellung aus einer Sicherung erfordern. Die partielle Prüfung kann auch zu anderen Problemen führen, die dann nach der erneuten Abstimmung und Unterstützung durch das Personal der Adobe behoben werden müssen.
