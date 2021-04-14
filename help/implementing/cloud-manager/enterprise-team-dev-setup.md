@@ -2,10 +2,10 @@
 title: Einrichten der Enterprise Team-Entwicklung - Cloud Services
 description: Auf dieser Seite erfahren Sie mehr über die Einrichtung des Enterprise-Teams
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 0%
+source-wordcount: '1525'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager unterstützt flexible Multi-Team-Setups, die an die Anforderungen 
 
 Jedes Unternehmen hat unterschiedliche Anforderungen, einschließlich der Einrichtung, der Prozesse und der Workflows. Das unten beschriebene Setup wird von der Adobe für mehrere Projekte verwendet, die Erlebnisse zusätzlich zu AEM als Cloud Service bereitstellen.
 
-Beispielsweise enthalten die Adobe Creative Cloud-Anwendungen wie Adobe Photoshop oder Adobe Illustrator Inhaltsressourcen wie Tutorials, Beispiele und Leitfäden, die den Endbenutzern zur Verfügung stehen. Diese Inhalte werden von den Clientanwendungen verwendet, die AEM als Cloud Service auf eine *kopflose*-Weise verwenden, indem API-Aufrufe an die AEM Cloud-Veröffentlichungsstufe gesendet werden, um den strukturierten Inhalt als JSON-Streams abzurufen, und indem das AEM Cloud Service-CDN genutzt wird, um strukturierte und unstrukturierte Inhalte mit optimaler Leistung bereitzustellen.
+Beispielsweise enthalten die Adobe Creative Cloud-Anwendungen wie Adobe Photoshop oder Adobe Illustrator Inhaltsressourcen wie Tutorials, Beispiele und Leitfäden, die den Endbenutzern zur Verfügung stehen. Diese Inhalte werden von den Clientanwendungen verwendet, die AEM als Cloud Service auf eine *kopflose*-Weise verwenden, indem API-Aufrufe an die AEM Cloud-Veröffentlichungsstufe gesendet werden, um den strukturierten Inhalt als JSON-Streams abzurufen, und indem das [Content Versand Network (CDN) in AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=de#content-delivery) genutzt wird, um strukturierte und unstrukturierte Inhalte mit optimaler Leistung bereitzustellen.
 
 Die an diesem Projekt beteiligten Teams folgen dem nachstehend beschriebenen Prozess.
 
@@ -68,13 +68,13 @@ Das Setup im Git-Repository von Cloud Manager besteht aus zwei Zweigen:
 * Eine *Stable-Release-Verzweigung*, die den Produktionscode aller Teams enthält
 * Eine *Entwicklungsabteilung*, die den Entwicklungscode aller Teams enthält
 
-Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen dem gleichen Setup für den stabilen Zweig. Ein Push-Vorgang auf den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Git-Repository von Cloud Manager gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
+Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder stabilen Verzweigung löst eine [github-Aktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code) aus. Alle Projekte folgen dem gleichen Setup für den stabilen Zweig. Ein Push-Vorgang an den stabilen Zweig eines Projekts wird automatisch an die stabile Zweigstelle im Git-Repository von Cloud Manager gesendet. Die Produktionsleitung in Cloud Manager ist so konfiguriert, dass sie durch einen Push an den stabilen Zweig ausgelöst wird. Die Produktionsleitung wird daher von jedem Push eines Teams in einen stabilen Zweig ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Qualitätstore bestehen.
 
 ![](assets/team-setup2.png)
 
 Schubsen in den Entwicklungszweig werden anders behandelt. Während ein Push an eine Entwicklerzweigung im Git-Repository eines Teams auch eine Git-Aktion auslöst und der Code automatisch in die Entwicklungsabteilung im Git-Repository von Cloud Manager verschoben wird, wird die Nicht-Produktion-Pipeline nicht automatisch durch den Code-Push ausgelöst. Sie wird durch einen Aufruf der API von Cloud Manager ausgelöst.
 Das Ausführen der Produktionsleitung beinhaltet die Überprüfung des Codes aller Teams über die bereitgestellten Qualitätsgates. Sobald der Code für stage bereitgestellt wurde, werden die Tests und Prüfungen durchgeführt, um sicherzustellen, dass alles wie erwartet funktioniert. Sobald alle Tore übergeben sind, werden die Änderungen ohne Unterbrechung oder Ausfallzeiten in die Produktion übernommen.
-Für die lokale Entwicklung wird das SDK für Cloud Service verwendet. Das SDK ermöglicht die Einrichtung eines lokalen Autors, Veröffentlichungs- und Dispatchers. Dies ermöglicht die Offline-Entwicklung und schnelle Bearbeitungszeiten. Manchmal wird nur der Autor für die Entwicklung verwendet, aber die schnelle Einrichtung des Dispatchers und der Veröffentlichung erlaubt es, alles lokal zu testen, bevor in das git-Repository gedrängt wird. Mitglieder der einzelnen Teams checken in der Regel den Code aus der freigegebenen Git sowie ihren eigenen Projektcode ein. Es besteht keine Notwendigkeit, andere Projekte auszuchecken, da die Projekte unabhängig sind.
+Für die lokale Entwicklung wird das [SDK für AEM als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de#developing) verwendet. Das SDK ermöglicht die Einrichtung eines lokalen Autors, Veröffentlichungs- und Dispatchers. Dies ermöglicht die Offline-Entwicklung und schnelle Bearbeitungszeiten. Manchmal wird nur der Autor für die Entwicklung verwendet, aber die schnelle Einrichtung des Dispatchers und der Veröffentlichung erlaubt es, alles lokal zu testen, bevor in das git-Repository gedrängt wird. Mitglieder der einzelnen Teams checken in der Regel den Code aus der freigegebenen Git sowie ihren eigenen Projektcode ein. Es besteht keine Notwendigkeit, andere Projekte auszuchecken, da die Projekte unabhängig sind.
 
 ![](assets/team-setup3.png)
 
