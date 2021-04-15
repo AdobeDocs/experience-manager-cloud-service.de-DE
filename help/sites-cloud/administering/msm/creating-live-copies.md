@@ -2,15 +2,15 @@
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live-Kopien erstellen und synchronisieren, um Ihre Inhalte auf Ihrer Website wiederzuverwenden.
 feature: Multi-Site-Manager
-role: 'Administrator  '
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 41%
 
 ---
-
 
 # Erstellen und Synchronisieren von Live Copies {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Rollouts werden als asynchrone Aufträge verarbeitet und können auf der Seite [
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Wählen Sie in der Konsole **Sites** die Seite im Blueprint aus und öffnen Sie das Bedienfeld **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (aus der Symbolleiste).
+1. Wählen Sie in der Konsole **Sites** die Seite in der Live-Kopie aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (aus der Symbolleiste).
 1. Wählen Sie die Option **Blueprint** aus der Liste, um die mit dieser Seite verbundenen Blueprints anzuzeigen.
 1. Wählen Sie den erforderlichen Blueprint aus der Liste aus.
 1. Klicken oder tippen Sie auf **Rollout**.
