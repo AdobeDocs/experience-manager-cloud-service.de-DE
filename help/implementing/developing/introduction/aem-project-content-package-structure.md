@@ -3,7 +3,7 @@ title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
+source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 97%
@@ -89,7 +89,7 @@ Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
 
 >[!NOTE]
 >
->Derselbe Code muss auf allen Umgebung bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch bei der Umgebung der Stufe ein hohes Maß an Vertrauensvalidierungen erstellt wird. Weitere Informationen finden Sie unter [Konservative Kodierung für Datenrückflüsse](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
+>Derselbe Code muss auf allen Umgebung bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch bei der Umgebung der Stufe ein hohes Maß an Vertrauensvalidierungen erstellt wird. Weitere Informationen finden Sie im Abschnitt zu [Laufmodi](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Inhaltspakete
