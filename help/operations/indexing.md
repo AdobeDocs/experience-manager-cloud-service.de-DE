@@ -1,14 +1,14 @@
 ---
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 73%
 
 ---
-
 
 # Inhaltssuche und -indizierung {#indexing}
 
@@ -169,7 +169,7 @@ Die neue Version der Anwendung nutzt die folgende (geänderte) Konfiguration:
 
 ### Rückgängigmachen einer Änderung {#undoing-a-change}
 
-Manchmal muss eine Änderung der Indexdefinition rückgängig gemacht werden. Der Grund könnte sein, dass eine Änderung versehentlich vorgenommen wurde oder eine Änderung nicht mehr erforderlich ist. Beispielsweise wurde die Indexdefinition `damAssetAssetLucene-8-custom-3` versehentlich erstellt und ist bereits bereitgestellt. Aus diesem Grund können Sie die vorherige Indexdefinition `damAssetAssetLucene-8-custom-2` wiederherstellen. Dazu müssen Sie einen neuen Index mit dem Namen `damAssetAssetLucene-8-custom-4` hinzufügen, der die Definition des vorherigen Indexes `damAssetAssetLucene-8-custom-2` enthält.
+Manchmal muss eine Änderung der Indexdefinition rückgängig gemacht werden. Der Grund könnte sein, dass eine Änderung versehentlich vorgenommen wurde oder eine Änderung nicht mehr erforderlich ist. Beispielsweise wurde die Indexdefinition `damAssetLucene-8-custom-3` versehentlich erstellt und ist bereits bereitgestellt. Aus diesem Grund können Sie die vorherige Indexdefinition `damAssetLucene-8-custom-2` wiederherstellen. Dazu müssen Sie einen neuen Index mit dem Namen `damAssetLucene-8-custom-4` hinzufügen, der die Definition des vorherigen Indexes `damAssetLucene-8-custom-2` enthält.
 
 ### Entfernen eines Index {#removing-an-index}
 
@@ -198,7 +198,7 @@ Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, k�
     </acme.product-custom-3>
 ```
 
-Wenn es nicht mehr erforderlich ist, einen vordefinierten Index anzupassen, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen Index `damAssetAssetLucene-8-custom-4` hinzufügen, der die Indexdefinition von `damAssetAssetLucene-8` enthält.
+Wenn es nicht mehr erforderlich ist, einen vordefinierten Index anzupassen, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen Index `damAssetLucene-8-custom-4` hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
 
 ### Indexverfügbarkeit und Fehlertoleranz {#index-availability-and-fault-tolerance}
 
