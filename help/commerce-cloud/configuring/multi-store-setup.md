@@ -1,24 +1,24 @@
 ---
-title: Multi-Store-Setup
+title: Commerce-Multi-Store-Einrichtung
 description: Informationen dazu, wie Sie mehrere Store-Ansichten von Magento AEM zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce-Integrationsrahmen
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 99%
+source-wordcount: '382'
+ht-degree: 90%
 
 ---
 
-
-# Multi-Store-Setup {#multi-store}
+# Commerce-Multi-Store-Einrichtung {#multi-store}
 
 Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet werden und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Magento-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
@@ -45,6 +45,10 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
    * Erstellen Sie eine neue Konfiguration mithilfe der unter Punkt 2 beschriebenen Schritte.
 
    Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ -> „Allgemein“ -> „Konfigurationsbrowser“ erstellen.
+
+   >[!TIP]
+   >
+   > Commerce-Kataloge können mit IDs oder UIDs adressiert werden. UIDs wurden in Magento 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
