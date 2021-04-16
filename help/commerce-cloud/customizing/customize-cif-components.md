@@ -10,11 +10,12 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +28,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 >
 > Verwenden Sie den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype), wenn Sie Ihre eigene Commerce-Implementierung starten.
 
-## Was Sie erstellen werden
+## Build
 
 Die Marke Venia hat vor kurzem begonnen, Produkte mit nachhaltigen Materialien zu produzieren, und das Unternehmen möchte als Teil des Produkt-Teasers ein Zeichen für **Umweltfreundlich** anzeigen. In Magento wird ein neues benutzerspezifisches Attribut erstellt, um anzugeben, ob ein Produkt das **umweltfreundliche** Material verwendet. Dieses benutzerspezifische Attribut wird dann als Teil der GraphQL-Abfrage hinzugefügt und im Produkt-Teaser bei bestimmten Produkten angezeigt.
 
@@ -84,13 +85,13 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
    >[!NOTE]
    >
-   > Beachten Sie, dass Sie das angezeigte Produkt auch konfigurieren können, indem Sie die Komponente mithilfe des Dialogfelds konfigurieren (durch Klicken auf das *Schraubenschlüsselsymbol*).
+   > Beachten Sie, dass Sie das angezeigte Produkt auch konfigurieren können, indem Sie die Komponente mithilfe des Dialogfelds konfigurieren (durch Klicken auf das _Schraubenschlüsselsymbol_).
 
 4. Sie sollten nun sehen, dass der Produkt-Teaser ein Produkt anzeigt. Name und Preis des Produkts sind standardmäßig angezeigte Attribute.
 
    ![Produkt-Teaser – Standardstil](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Benutzerdefiniertes Attribut in Magento hinzufügen {#add-custom-attribute}
+## hinzufügen eines benutzerdefinierten Attributs in Magento {#add-custom-attribute}
 
 Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. Als Nächstes fügen Sie als Teil des Produktattributs, das mithilfe der Magento-Benutzeroberfläche definiert wird, ein neues Attribut für **Umweltfreundlich** hinzu.
 
@@ -108,7 +109,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. 
 1. Füllen Sie das Formular **Neues Attribut** mit den folgenden Werten aus (bei anderen Werten bleiben die Standardeinstellungen erhalten).
 
    | Feldsatz | Feldbezeichnung | Wert |
-   |-----------|-------------|---------|
+   | ----------------------------- | ------------------ | ---------------- |
    | Attributeigenschaften | Attributbezeichnung | **Umweltfreundlich** |
    | Attributeigenschaften | Katalogeingabetyp | **Ja/Nein** |
    | Erweiterte Attributeigenschaften | Attribut-Code | **eco_friendly** |
@@ -136,7 +137,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. 
    >
    > Weitere Informationen zur [Cache-Verwaltung finden Sie im Magento-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## GraphQL-IDE zur Überprüfung von Attribut verwenden {#use-graphql-ide}
+## GraphQL IDE verwenden, um Attribut {#use-graphql-ide} zu überprüfen
 
 Bevor Sie mit dem AEM-Code anfangen, sollten Sie [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) mit einer GraphQL-IDE erkunden. Die Magento-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
@@ -163,17 +164,17 @@ Verwenden Sie anschließend eine GraphQL-IDE, um zu prüfen, ob das `eco_friendl
 
    ```json
    {
-   "data": {
+     "data": {
        "products": {
-           "items": [
-               {
-               "name": "Valeria Two-Layer Tank",
-               "sku": "VT11",
-               "eco_friendly": 1
-               }
-           ]
+         "items": [
+           {
+             "name": "Valeria Two-Layer Tank",
+             "sku": "VT11",
+             "eco_friendly": 1
            }
+         ]
        }
+     }
    }
    ```
 
@@ -331,7 +332,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/ex
 
    Nachdem das Sling-Modell aktualisiert wurde, muss das Komponenten-Markup aktualisiert werden, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
-## Anpassen des Markups für den Produkt-Teaser {#customize-markup-product-teaser}
+## Anpassen der Markup-Funktion des Produkt-Teasers {#customize-markup-product-teaser}
 
 Eine gebräuchliche Erweiterung von AEM-Komponenten besteht darin, das von der Komponente erstellte Markup zu ändern. Dies geschieht durch Überschreiben des [HTL-Skripts](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), das die Komponente zum Rendern des Markups verwendet. HTML Template Language (HTL) ist eine einfache Vorlagensprache, die AEM-Komponenten nutzen, um Markup basierend auf erstellten Inhalten dynamisch zu rendern, sodass sich die Komponenten wiederverwenden lassen. So kann z. B. der Produkt-Teaser immer wieder neu verwendet werden, um verschiedene Produkte anzuzeigen.
 
@@ -357,11 +358,13 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
 
    ```html
    <!--/* productteaser.html */-->
-   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
-       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-       data-sly-use.actionsTpl="actions.html"
-       data-sly-test.isConfigured="${properties.selection}"
-       data-sly-test.hasProduct="${product.url}">
+   <sly
+     data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.actionsTpl="actions.html"
+     data-sly-test.isConfigured="${properties.selection}"
+     data-sly-test.hasProduct="${product.url}"
+   ></sly>
    ```
 
    Beachten Sie, dass das Sling-Modell für `MyProductTeaser` verwendet und der `product`-Variablen zugewiesen wird.
@@ -370,15 +373,21 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
 
    ```html
    ...
-   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
-       <div data-sly-test="${product.showBadge}" class="item__badge">
-           <span>${properties.text || 'New'}</span>
-       </div>
-       <!--/* Insert call to Eco Friendly here */-->
-       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
-           <span>Eco Friendly</span>
-       </div>
-   ...
+   <div
+     data-sly-test="${isConfigured && hasProduct}"
+     class="item__root"
+     data-cmp-is="productteaser"
+     data-virtual="${product.virtualProduct}"
+   >
+     <div data-sly-test="${product.showBadge}" class="item__badge">
+       <span>${properties.text || 'New'}</span>
+     </div>
+     <!--/* Insert call to Eco Friendly here */-->
+     <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+       <span>Eco Friendly</span>
+     </div>
+     ...
+   </div>
    ```
 
    Beim Aufrufen einer Sling-Modellmethode in HTL werden der `get`- und `is`-Abschnitt der Methode verworfen; der erste Buchstabe wird zu einem Kleinbuchstaben. Aus `isShowBadge()` wird so `.showBadge`, aus `isEcoFriendly` wird `.ecoFriendly`. Basierend auf dem booleschen Wert, der von `.isEcoFriendly()` zurückgegeben wird, wird ermittelt, ob `<span>Eco Friendly</span>` angezeigt wird.
@@ -423,7 +432,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
    >
    > Es können auch Stapelspuren angezeigt werden, wenn das im Teaser verwendete Produkt als Teil seines Attributsatzes nicht über das `eco_friendly`-Attribut verfügt.
 
-## Stile für Zeichen „Umweltfreundlich“ hinzufügen {#add-styles}
+## hinzufügen Stile für das Eco Friendly Badge {#add-styles}
 
 An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundlich** angezeigt werden soll, bereits, der Text könnte aber noch mehr Stil vertragen. Fügen Sie dem `ui.frontend`-Modul als Nächstes ein Symbol und Stile hinzu, um die Implementierung abzuschließen.
 
@@ -453,7 +462,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
            width: 45px;
            height: 45px;
            text-indent: -9999px;
-           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           background: no-repeat center center url('../resources/images/eco_friendly.svg');
            }
        }
    ...
@@ -487,8 +496,8 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertige
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [AEM-Archetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
-* [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [Anpassen der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/customizing.html)
-* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM-Archetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+- [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [Anpassen der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/customizing.html)
+- [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
