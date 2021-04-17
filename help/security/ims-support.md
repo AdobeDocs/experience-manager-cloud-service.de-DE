@@ -1,14 +1,14 @@
 ---
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # IMS-Unterstützung für Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Nachfolgend sind die wichtigsten OSGI-Konfigurationen aufgeführt, die geändert
 
 ### Verwalten von Produkten und Benutzerzugriff in der Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wenn sich der Produktadministrator bei der Admin Console anmeldet, sieht er wie unten gezeigt mehrere Instanzen des AEM Managed Services-Produktkontexts:
+Wenn sich der Produktadministrator bei der Admin Console anmeldet, werden mehrere Instanzen des AEM als Produktkontext des Cloud Service angezeigt, wie unten dargestellt. Wählen Sie beispielsweise eines der Produkte auf der Seite **Übersicht** aus:
 
 ![Anmeldung von Instanzen](/help/security/assets/ims6.png)
 
-In diesem Beispiel hat **AEM-MS-Onboard** der Organisation 32 Instanzen mit unterschiedlichen Topologien und Umgebungen wie Staging oder Produktion.
+Es wird eine Liste der vorhandenen Instanzen angezeigt:
 
 ![Anmeldung von Instanzen2](/help/security/assets/ims7.png)
 
-Unter jeder Produktkontextinstanz gibt es zugehörige Produktprofile. Mit diesen Produktprofilen wird Benutzern und Gruppen der Zugriff mit den erforderlichen Berechtigungen zugewiesen.
+Unter jeder Produktkontextinstanz gibt es Instanzen, die die Authoring- oder Veröffentlichungsdienste über Produktions-, Stage- oder Entwicklungs-Umgebung verteilen. Jede Instanz wird Produkt- oder Cloud Manager-Profilen zugeordnet. Mit diesen Profilen wird Benutzern und Gruppen mit den erforderlichen Berechtigungen der Zugriff zugewiesen.
 
 Das Profil **Administrator_xxx** wird verwendet, um Administratorberechtigungen in der zugehörigen AEM-Instanz zu gewähren, während das Profil **User_xxx** zum Hinzufügen regulärer Benutzer verwendet wird.
 
@@ -241,4 +241,3 @@ Um Zugriff auf AEM-Instanzen zu erhalten, muss der Benutzer einer Gruppe des ent
 Jede Autoreninstanz verfügt über einen AEM-Administrator und ein AEM-Benutzerprofil und jede Veröffentlichungsinstanz über ein AEM-Profil. Sie können bei Bedarf weitere Profile hinzufügen.
 
 Um Zugriff auf die AEM-Instanz auf Administratorebene zu erhalten, fügen Sie den Benutzer dem AEM-Administratorprofil für das jeweilige Produkt hinzu.
-
