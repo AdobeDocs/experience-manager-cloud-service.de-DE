@@ -7,9 +7,9 @@ feature: Asset-Verwaltung, Veröffentlichung, Zusammenarbeit, Asset-Verarbeitung
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 91%
 
 ---
@@ -47,8 +47,6 @@ Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 
 Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Repository vorhanden sind, erkennt [!DNL Experience Manager] das Duplikat und benachrichtigt den Benutzer. Die Erkennung von Duplikaten ist standardmäßig deaktiviert, da sie je nach Größe des Repositorys und der Anzahl der hochgeladenen Assets die Leistung beeinträchtigen kann. Um die Funktion zu aktivieren, konfigurieren Sie die [!UICONTROL Duplikaterkennung für Cloud-Assets in Adobe AEM]. Erfahren Sie, [wie man OSGi-Konfigurationen durchführt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de). Die Duplikaterkennung basiert auf dem eindeutigen Wert `dam:sha1`, der unter `jcr:content/metadata/dam:sha1`gespeichert wird. Das bedeutet, dass doppelte Assets erkannt werden, selbst wenn die Dateinamen unterschiedlich sind.
 
-![OSGi-Konfiguration zur Erkennung doppelter Assets](assets/duplicate-detection.png)
-
 Sie können die Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` in benutzerdefiniertem Code hinzufügen und die Datei kann Folgendes enthalten:
 
 ```json
@@ -58,7 +56,7 @@ Sie können die Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.as
 }
 ```
 
-Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte Assets an den Posteingang. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
+Nach der Aktivierung sendet Experience Manager Benachrichtigungen über Duplikat-Assets an den Experience Manager-Posteingang. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
 
 ![Posteingangsbenachrichtigung für doppelte Assets](assets/duplicate-detect-inbox-notification.png)
 
