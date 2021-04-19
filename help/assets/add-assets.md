@@ -2,15 +2,15 @@
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset-Verwaltung, Hochladen
-role: Geschäftspraktiker, Administrator
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 95%
+source-wordcount: '2059'
+ht-degree: 93%
 
 ---
-
 
 # Hinzufügen digitaler Assets zu Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Mini
 ## Hochladen oder Aufnehmen von Assets mit APIs {#upload-using-apis}
 
 Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Source-SDK und Beispiel-Clients finden Sie im Abschnitt zum [Asset-Upload](developer-reference-material-apis.md#asset-upload-technical) in der Entwicklerreferenz.
+
+## Tipps, Best Practices und Einschränkungen {#tips-limitations}
+
+* Adobe empfiehlt, bis zu 1000 Assets in jedem Ordner in [!DNL Experience Manager Assets] hinzuzufügen. Es ist zwar möglich, einem Ordner weitere Assets hinzuzufügen, es treten jedoch möglicherweise Leistungsprobleme auf, z. B. eine langsamere Navigation zu diesen Ordnern.
 
 >[!MORELIKETHIS]
 >
