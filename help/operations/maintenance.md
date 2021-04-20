@@ -3,9 +3,9 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
+source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1004'
 ht-degree: 96%
 
 ---
@@ -144,3 +144,7 @@ Code-Beispiel 3
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+| Konfiguration von Wartungsfenstern | Wer ist für die Konfiguration verantwortlich | Konfigurationstyp | Standort | Beispiel | Parameter |
+|---|---|---|---|---|---|
+| Täglich | Kunde | JCR-Knotendefinition | Siehe unten Position 2 | Siehe Code-Beispiel 2 unten | **** windowSchedule = daily (dieser Wert sollte nicht geändert werden). <br> **** windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll. <br> **** windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind. |
