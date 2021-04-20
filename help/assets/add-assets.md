@@ -5,32 +5,26 @@ feature: Asset-Verwaltung, Hochladen
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 93%
+source-wordcount: '2065'
+ht-degree: 85%
 
 ---
 
-# Hinzufügen digitaler Assets zu Adobe Experience Manager {#add-assets-to-experience-manager}
+# hinzufügen digitale Assets als [!DNL Adobe Experience Manager] [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager} 
+
+[!DNL Adobe Experience Manager Assets] akzeptiert viele Arten digitaler Assets aus vielen Quellen. Es speichert die Binärdateien und erstellten Darstellungen, kann die Asset-Verarbeitung mit einer Vielzahl von Workflows und [!DNL Adobe Sensei]-Dienste durchführen, ermöglicht die Verteilung durch viele Kanal über viele Oberflächen.
 
 [!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
-Es steht eine Reihe von Upload-Methoden zur Verfügung. Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager]-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager]-Desktop-Programm, Upload- und Aufnahmeskripte, die Kunden erstellen, und automatisierte Aufnahmeintegrationen, die als [!DNL Experience Manager]-Erweiterungen hinzugefügt werden.
-
-Wir werden uns hier auf die Upload-Methoden für Endbenutzer konzentrieren und Links zu Artikeln bereitstellen, die technische Aspekte des Hochladens und der Aufnahme von Assets mithilfe von [!DNL Experience Manager]-APIs und SDKs beschreiben.
+Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager]-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager]-Desktop-Programm, Upload- und Aufnahmeskripte, die Kunden erstellen, und automatisierte Aufnahmeintegrationen, die als [!DNL Experience Manager]-Erweiterungen hinzugefügt werden.
 
 Sie können zwar jede beliebige Binärdatei in [!DNL Experience Manager] hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Services, wie z. B. die Extraktion von Metadaten oder die Vorschau-/Ausgabedarstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
 
 Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Für den Ordner, in den die Assets hochgeladen werden, kann eine Reihe von Asset-Verarbeitungsprofilen konfiguriert werden, um spezifische Metadaten, Ausgabedarstellungen oder Bildbearbeitungs-Service hinzuzufügen. Weitere Informationen finden Sie unter [Verarbeiten von Assets beim Hochladen](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] as a [!DNL Cloud Service] nutzt eine neue Methode zum Hochladen von Assets: das direkte binäre Hochladen. Sie wird standardmäßig von den vordefinierten Produktfunktionen und Clients wie [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link], [!DNL Experience Manager]-Desktop-Programm und somit für die Endbenutzer transparent unterstützt.
->
->Uploadcode, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und Protokolle verwenden.
-
-Assets as a [!DNL Cloud Service] stellt die folgenden Upload-Methoden bereit. Adobe empfiehlt, dass Sie Ihren Anwendungsfall und die Anwendbarkeit einer Upload-Option verstehen, bevor Sie sie verwenden.
+[!DNL Assets] stellt die folgenden Methoden zum Hochladen bereit. Adobe empfiehlt, dass Sie Ihren Anwendungsfall und die Anwendbarkeit einer Upload-Option verstehen, bevor Sie sie verwenden.
 
 | Upload-Methode | Anwendungsfall | Primärpersonen |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ Sie können ein Asset mit demselben Pfad (demselben Namen und demselben Speicher
 
 * Vorhandenes Asset ersetzen: Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset und sämtliche vorherigen Änderungen daran (z. B. Anmerkungen, Zuschnitte usw.) gelöscht.
 * Eine andere Version erstellen: Eine neue Version des vorhandenen Assets wird im Repository erstellt. Sie können die beiden Versionen in der [!UICONTROL Zeitleiste] anzeigen und bei Bedarf zur bereits vorhandenen Version zurückkehren.
-* Beide behalten: Wenn Sie sich dafür entscheiden, beide Assets zu behalten, wird das neue Asset umbenannt und die Ziffer `1` an den Namen angehängt.
-
->[!NOTE]
->
->Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets.
->
->Wenn Asset Insights zur Verfolgung von Impressionen oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
+* Beibehalten: Wenn Sie beide Assets beibehalten möchten, wird das neue Asset umbenannt.
 
 Um das doppelte-Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Klicken Sie zum Löschen des hochgeladenen Duplikat-Assets auf **[!UICONTROL Löschen]**.
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-[!DNL Experience Manager Assets] versucht zu verhindern, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen. Einige Upload-Methoden verhindern nicht das Hochladen von Assets mit verbotenen Zeichen in den Dateinamen, sondern ersetzen die Zeichen durch `-`.
+[!DNL Experience Manager Assets] versucht zu verhindern, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
 Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten. Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
 
@@ -226,7 +214,18 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 ## Tipps, Best Practices und Einschränkungen {#tips-limitations}
 
+* Das direkte binäre Hochladen ist eine neue Methode zum Hochladen von Assets. Es wird standardmäßig von den Produktfunktionen und Clients wie [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und [!DNL Experience Manager] Desktop-App unterstützt. Jeder benutzerspezifische Code, der von technischen Teams von Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und -Protokolle verwenden.
+
 * Adobe empfiehlt, bis zu 1000 Assets in jedem Ordner in [!DNL Experience Manager Assets] hinzuzufügen. Es ist zwar möglich, einem Ordner weitere Assets hinzuzufügen, es treten jedoch möglicherweise Leistungsprobleme auf, z. B. eine langsamere Navigation zu diesen Ordnern.
+
+* Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, macht die neu generierte Asset-ID die für das Asset erfassten Daten für [!DNL Analytics] ungültig.
+
+* Einige Methoden zum Hochladen hindern Sie nicht daran, Assets mit [verbotenen Zeichen](#filename-handling) in die Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
+
+* Beim Hochladen von Assets mit dem Browser werden nur einfache Listen und nicht verschachtelte Ordnerhierarchien unterstützt. Um alle Assets innerhalb des verschachtelten Ordners hochzuladen, sollten Sie [Desktop-App](#upload-assets-desktop-clients) verwenden.
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
