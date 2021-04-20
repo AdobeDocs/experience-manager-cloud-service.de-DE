@@ -2,8 +2,8 @@
 title: Organisieren von digitalen Assets
 description: Organisieren Sie Ihre digitalen Assets mithilfe der unterschiedlichen Methoden, die Adobe Experience Manager Assets bietet.
 contentOwner: AG
-feature: Asset-Verwaltung, Tagging, Asset-Verteilung
-role: Geschäftspraktiker
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Erfahren Sie, wie Sie URLs mit Ihrer Webanwendung in Dynamic Media verknüpfen.
-topic: Geschäftspraktiker
-role: Geschäftspraktiker
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

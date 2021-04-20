@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Bildvorgaben
 description: '"Erfahren Sie mehr über Bildvorgaben und wie Sie Bildvorgaben erstellen, ändern und verwalten."'
-feature: Bildvorgaben,Viewer,Darstellungen
-topic: Geschäftspraktiker
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

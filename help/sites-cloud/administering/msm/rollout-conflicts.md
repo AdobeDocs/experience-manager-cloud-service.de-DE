@@ -1,8 +1,8 @@
 ---
 title: Rollout-Konflikte
 description: Erfahren Sie, wie Sie Multi-Site-Manager-Rollout-Konflikte verwalten und lösen.
-feature: Multi-Site-Manager
-role: 'Administrator  '
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

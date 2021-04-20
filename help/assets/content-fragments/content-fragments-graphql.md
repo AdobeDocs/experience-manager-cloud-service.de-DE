@@ -1,7 +1,7 @@
 ---
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
 description: Erfahren Sie, wie Sie AEM Inhaltsfragmente mit GraphQL für den Versand ohne Kopfdaten verwenden.
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

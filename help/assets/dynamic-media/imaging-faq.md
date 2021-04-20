@@ -1,8 +1,8 @@
 ---
 title: Intelligente Bildbearbeitung
 description: '"Erfahren Sie, wie bei der intelligenten Bildbearbeitung die individuellen Anzeigeeigenschaften der einzelnen Benutzer angewendet werden, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt."'
-feature: Asset-Verwaltung, Darstellungen
-topic: Geschäftspraktiker
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

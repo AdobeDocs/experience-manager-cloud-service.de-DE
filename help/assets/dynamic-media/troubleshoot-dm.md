@@ -1,7 +1,7 @@
 ---
 title: Fehlerbehebung bei Dynamic Media
 description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
-topic: '"Administrator, Business Practitioner"'
+topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt

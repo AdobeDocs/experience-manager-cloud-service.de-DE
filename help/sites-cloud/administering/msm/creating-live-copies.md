@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live-Kopien erstellen und synchronisieren, um Ihre Inhalte auf Ihrer Website wiederzuverwenden.
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt

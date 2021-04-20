@@ -1,7 +1,7 @@
 ---
 title: Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten
 description: Verstehen Sie die erforderliche Authentifizierung für Remote AEM GraphQL-Abfragen, um Ihren kopflosen Content Versand zu sichern.
-feature: Inhaltsfragmente, GraphQL-API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Ein- und Auschecken von Dateien in [!DNL Assets]
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Geschäftspraktiker
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

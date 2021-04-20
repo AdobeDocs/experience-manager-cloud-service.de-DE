@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre kostenlosen Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
-feature: Inhaltsfragmente
-role: Geschäftspraktiker
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

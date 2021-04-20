@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihre kostenlosen Inhalte bilden.
-feature: Inhaltsfragmente
-role: Geschäftspraktiker
+feature: Content Fragments
+role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562

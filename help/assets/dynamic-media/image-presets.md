@@ -1,9 +1,9 @@
 ---
 title: Anwenden von Dynamic Media-Bildvorgaben
 description: Erfahren Sie, wie Sie in Dynamic Media Bildvorgaben anwenden..
-feature: Bildvorgaben,Viewer,Darstellungen
-topic: Geschäftspraktiker
-role: Geschäftspraktiker
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

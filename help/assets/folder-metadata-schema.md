@@ -2,8 +2,8 @@
 title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie ein Metadatenschema für Asset-Ordner in  [!DNL Experience Manager Assets] erstellen.
 contentOwner: AG
-feature: 'Metadaten  '
-role: Geschäftspraktiker, Administrator
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

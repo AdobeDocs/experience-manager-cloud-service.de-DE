@@ -1,7 +1,7 @@
 ---
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Lernen Sie, GraphQL mit AEM zu verwenden, um Inhalte ohne Probleme bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
-feature: Inhaltsfragmente, GraphQL-API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

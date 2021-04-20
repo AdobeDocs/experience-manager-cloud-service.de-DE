@@ -1,8 +1,8 @@
 ---
 title: Zugehörige Inhalte
 description: Verstehen Sie, wie AEM Inhaltsfunktion die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dadurch wird der Versand ohne Kopfdaten flexibler gestaltet.
-feature: Inhaltsfragmente
-role: Geschäftspraktiker
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

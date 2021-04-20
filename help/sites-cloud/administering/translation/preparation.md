@@ -1,8 +1,8 @@
 ---
 title: Vorbereiten von Inhalten für die Übersetzung
 description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
-feature: Sprachkopie
-role: 'Administrator  '
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

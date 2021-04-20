@@ -1,9 +1,9 @@
 ---
 title: Erstellen benutzerdefinierter Popup-Ansichten
 description: '"Erfahren Sie, wie die standardmäßige Quick-Ansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu veranlassen. Sie können benutzerspezifischen Trigger zur Anzeige in den Popup-Fenstern verwenden."'
-topic: '"Entwickler,Administrator,Geschäftspraktiker"'
-feature: Interaktive Bilder,Interaktive Videos,Karussell-Banner
-role: Administrator, Geschäftspraktiker
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

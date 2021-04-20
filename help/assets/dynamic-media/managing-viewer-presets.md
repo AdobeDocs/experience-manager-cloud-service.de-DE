@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Viewer-Vorgaben
 description: Erfahren Sie, wie Sie Viewer-Vorgaben in Dynamic Media erstellen und verwalten.
-feature: Viewer-Vorgaben,Viewer
-topic: Geschäftspraktiker
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

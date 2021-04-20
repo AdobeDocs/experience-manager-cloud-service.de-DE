@@ -2,9 +2,9 @@
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie einer Seite in Adobe Experience Manager Dynamic Media-Komponenten als Cloud Service hinzufügen.
 contentOwner: Rick Brough
-feature: Asset-Verwaltung
-topic: Geschäftspraktiker
-role: Geschäftspraktiker
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

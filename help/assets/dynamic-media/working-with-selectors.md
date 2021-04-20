@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Selektoren
 description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussellbanner in Dynamic Media auswählen können.
-topic: Geschäftspraktiker
-role: Geschäftspraktiker
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

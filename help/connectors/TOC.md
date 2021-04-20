@@ -4,8 +4,8 @@ user-guide-title: Connectoren für AEM as a Cloud Service
 breadcrumb-title: Connectoren-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren.
 feature-set: Experience Manager
-feature: Entwicklertools
-role: Entwickler
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

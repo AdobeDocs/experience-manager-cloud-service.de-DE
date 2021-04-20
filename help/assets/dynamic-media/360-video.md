@@ -1,8 +1,8 @@
 ---
 title: 360-Grad-/VR-Video
 description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality (VR)-Videos in Dynamic Media.
-feature: 360-Grad-VR-Video
-topic: Geschäftspraktiker
+feature: 360 VR Video
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt

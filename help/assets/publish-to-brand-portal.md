@@ -2,7 +2,7 @@
 title: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal
 description: Veröffentlichen von Assets, Ordnern und Sammlungen in Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Markenportal, Asset-Verteilung, Konfiguration
+feature: Brand Portal,Asset Distribution,Configuration
 role: Business Practitioner
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in [!DNL Experience Manager Assets] als Hyperlink freigeben.
 contentOwner: AG
-feature: Asset-Management, Zusammenarbeit, Asset-Verteilung
-role: Geschäftspraktiker, Administrator
+feature: Asset Management,Collaboration,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt

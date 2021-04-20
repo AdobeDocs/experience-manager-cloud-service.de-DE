@@ -1,8 +1,8 @@
 ---
 title: Karussellbanner
 description: Informationen zum Arbeiten mit Karussellbannern in Dynamic Media.
-feature: Karussellbanner
-topic: Geschäftspraktiker
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

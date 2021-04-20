@@ -2,8 +2,8 @@
 title: Automatisches Tagging von Assets mit KI-generierten Tags
 description: Tagging von Assets mithilfe von KI-Services, die kontextbezogene und beschreibende Unternehmens-Tags mithilfe des [!DNL Adobe Sensei] -Service anwenden.
 contentOwner: AG
-feature: Smart-Tags,Tagging
-role: Administrator, Geschäftspraktiker
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

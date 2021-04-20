@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
 description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
-feature: Inhaltsfragmente
-role: Geschäftspraktiker
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

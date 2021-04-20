@@ -4,8 +4,8 @@ user-guide-title: Betrieb und Wartung für AEM as a Cloud Service
 breadcrumb-title: Verfahrensanleitung
 user-guide-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben.
 feature-set: Experience Manager Sites
-feature: Konfiguration
-role: 'Administrator  '
+feature: Configuring
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

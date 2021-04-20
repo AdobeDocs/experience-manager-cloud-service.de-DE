@@ -3,8 +3,8 @@ title: Verwalten von Metadaten für digitale Assets
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Verwaltung, Metadaten
-role: Geschäftspraktiker,Architekt,Administrator
+feature: Asset Management,Metadata
+role: Business Practitioner,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

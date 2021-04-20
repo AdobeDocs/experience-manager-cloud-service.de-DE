@@ -2,7 +2,7 @@
 title: Asset Insights
 description: Verfolgen Sie Benutzerbewertungen und Nutzungsstatistiken zu Bildern, die auf Websites von Drittanbietern, in Marketing-Kampagnen und in kreativen Lösungen der Adobe verwendet werden.
 contentOwner: AG
-feature: Asset Insights,Asset-Berichte
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

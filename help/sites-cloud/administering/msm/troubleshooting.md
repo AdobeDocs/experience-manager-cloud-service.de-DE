@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung bei MSM-Problemen und häufig gestellte Fragen
 description: Erfahren Sie, wie Sie die häufigsten MSM-bezogenen Probleme beheben können, und erhalten Sie Antworten auf die häufigsten MSM-bezogenen Fragen.
-feature: Multi-Site-Manager
-role: 'Administrator  '
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

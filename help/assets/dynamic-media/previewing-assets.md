@@ -1,9 +1,9 @@
 ---
 title: Anzeigen von Assets in einer Vorschau
 description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anzeigen..
-feature: Asset-Verwaltung
-topic: Geschäftspraktiker
-role: Geschäftspraktiker
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

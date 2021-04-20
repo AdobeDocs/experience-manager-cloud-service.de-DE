@@ -3,7 +3,7 @@ title: Verwalten digitaler Assets
 description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Verwaltung, Veröffentlichung, Zusammenarbeit, Asset-Verarbeitung
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt

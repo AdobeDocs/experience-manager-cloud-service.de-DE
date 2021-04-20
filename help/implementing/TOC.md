@@ -4,7 +4,7 @@ user-guide-title: Implementieren für AEM as a Cloud Service
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature-set: Experience Manager
-feature: Entwicklertools
+feature: Developer Tools
 role: Developer, Architect
 translation-type: tm+mt
 source-git-commit: cef4c40a0a4af7b3cc7cbe696ceb1a197bbef56a
