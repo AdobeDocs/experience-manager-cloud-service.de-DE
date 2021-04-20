@@ -3,10 +3,10 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
+source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 96%
+source-wordcount: '999'
+ht-degree: 95%
 
 ---
 
@@ -147,4 +147,4 @@ Code-Beispiel 3
 
 | Konfiguration von Wartungsfenstern | Wer ist für die Konfiguration verantwortlich | Konfigurationstyp | Standort | Beispiel | Parameter |
 |---|---|---|---|---|---|
-| Täglich | Kunde | JCR-Knotendefinition | Siehe unten Position 2 | Siehe Code-Beispiel 2 unten | **** windowSchedule = daily (dieser Wert sollte nicht geändert werden). <br> **** windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll. <br> **** windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind. |
+| Täglich | Kunde | JCR-Knotendefinition | Siehe unten Position 2 | Siehe Code-Beispiel 2 unten | `windowSchedule= daily` (dieser Wert sollte nicht geändert werden).  <br> `windowStartTime=HH:MM` mit 24-Stunden-Uhr. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll. <br> **** windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind. |
