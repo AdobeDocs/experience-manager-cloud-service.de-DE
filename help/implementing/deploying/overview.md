@@ -2,14 +2,14 @@
 title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Bereitstellen
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 96%
 
 ---
-
 
 # Bereitstellen in AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Nach der Umstellung auf die neue Anwendungsversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen)
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen). Informationen zu Installationshaken, die Benutzern die Ausführung erlauben, finden Sie in der [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html).
 
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Die Umstrukturierung zur Berücksichtigung dieser Trennung erfolgte in AEM 6.5 und Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -112,7 +112,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Basen der Repository-Restrukturierung entsprechen, die durch die 6.5-Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Basen der Repository-Restrukturierung entsprechen, die durch die 6.5-Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
 ## Repoinit {#repoinit}
 
