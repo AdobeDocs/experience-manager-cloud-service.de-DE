@@ -3,7 +3,7 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 96%
@@ -57,11 +57,10 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Siehe unten stehende Position 1</td>
     <td>Siehe Code-Beispiel 1 unten</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (dieser Wert sollte nicht geändert werden)</li>
-    <li><strong>windowStartTime</strong> = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</li>
-    <li><strong>windowEndTime</strong> = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily (dieser Wert sollte nicht geändert werden)
+    <strong>windowStartTime</strong> = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.
+    <strong>windowEndTime</strong> = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.
+    </td> 
   </tr>
   <tr>
     <td>Wöchentlich</td>
