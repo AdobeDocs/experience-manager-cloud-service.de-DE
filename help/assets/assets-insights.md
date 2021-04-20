@@ -1,17 +1,17 @@
 ---
 title: Asset Insights
-description: Erfahren Sie, wie Sie mit der Funktion „Asset Insights“ Benutzerbewertungen und Nutzungsstatistiken von Bildern nachverfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen von Adobe verwendet werden.
+description: Verfolgen Sie Benutzerbewertungen und Nutzungsstatistiken zu Bildern, die auf Websites von Drittanbietern, in Marketing-Kampagnen und in kreativen Lösungen der Adobe verwendet werden.
 contentOwner: AG
 feature: Asset Insights,Asset-Berichte
-role: Geschäftspraktiker
+role: Business Practitioner
+exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 99%
+source-wordcount: '795'
+ht-degree: 96%
 
 ---
-
 
 # Asset Insights {#asset-insights}
 
