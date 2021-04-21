@@ -1,16 +1,15 @@
 ---
 title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung dynamischer Medien zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 86%
+source-wordcount: '397'
+ht-degree: 87%
 
 ---
-
 
 # Arbeiten mit Dynamic Media {#working-with-dynamic-media}
 
