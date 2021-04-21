@@ -1,17 +1,16 @@
 ---
 title: 'Aktivieren des Hotlink-Schutzes in Dynamic Media  '
 description: Erfahren Sie, wie Sie den Hotlink-Schutz in Dynamic Media aktivieren.
-feature: Asset Management
-topic: Business Practitioner
+feature: Asset-Verwaltung
 role: Business Practitioner
+exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 27%
+source-wordcount: '192'
+ht-degree: 26%
 
 ---
-
 
 # Aktivieren des Hotlink-Schutzes in Dynamic Media   {#activating-hotlink-protection-in-dynamic-media}
 
