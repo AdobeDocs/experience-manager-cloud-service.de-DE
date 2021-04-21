@@ -2,17 +2,16 @@
 title: Best Practices für die Optimierung der Bildqualität
 description: Erfahren Sie, mit welchen Best Practices Sie in Dynamic Media die Qualität Ihrer Bild-Assets optimieren können.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: Asset-Verwaltung
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 92%
 
 ---
-
 
 # Best Practices für die Optimierung der Bildqualität {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ Beim Experimentieren sind die folgenden allgemeinen Vorschläge hilfreich, um Ih
 * Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerdefinierte Vorgabenname in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
 * Experience Manager bietet außerdem erweiterte Möglichkeiten zum Einstellen der Bildqualität, z. B. das Anwenden von Scharfzeichnen von Bildern bei der Erfassung. Zur Abstimmung und Optimierung der Renderergebnisse können Sie mit [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) benutzerdefinierte Einblicke und Best Practices erhalten.
-
