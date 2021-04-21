@@ -1,17 +1,16 @@
 ---
 title: Verwalten von Dynamic Media-Assets
 description: Informationen zum Arbeiten mit Dynamic Media-Assets.
-feature: Asset Management
-topic: Business Practitioner
+feature: Asset-Verwaltung
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 69%
+source-wordcount: '121'
+ht-degree: 70%
 
 ---
-
 
 # Verwalten von Dynamic Media-Assets {#managing-assets}
 
@@ -27,4 +26,3 @@ In den folgenden Themen wird beschrieben, wie Sie Dynamic Media-Assets verwalten
 * [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
 * [Veröffentlichen von Dynamic Media-Assets ](publishing-dynamicmedia-assets.md)
 * [Arbeiten mit Selektoren](working-with-selectors.md)
-
