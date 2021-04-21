@@ -1,16 +1,15 @@
 ---
 title: Verwenden von Regelsätzen zum Konvertieren von URLs
 description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs zu transformieren. Regelsätze sind Richtliniensätze, die in einer Skriptsprache (z. B. JavaScript™) geschrieben wurden und XML-Daten auswerten und bestimmte Aktionen ausführen, wenn diese Daten bestimmte Bedingungen erfüllen.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 85%
 
 ---
-
 
 # Verwenden von Regelsätzen zum Konvertieren von URLs {#using-rulesets-to-transform-urls}
 
@@ -81,4 +80,3 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
    Die Bedingungen des Regelsatzes werden auf die Anforderungen an die Live-Image-Server von Dynamic Media angewendet.
 
    Wenn Sie die Regelsatzdatei ändern, werden die Änderungen sofort übernommen, wenn Sie die aktualisierte Regelsatzdatei erneut hochladen und veröffentlichen.
-
