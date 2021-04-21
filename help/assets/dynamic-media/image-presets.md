@@ -1,17 +1,16 @@
 ---
 title: Anwenden von Dynamic Media-Bildvorgaben
 description: Erfahren Sie, wie Sie in Dynamic Media Bildvorgaben anwenden..
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: Bildvorgaben,Viewer,Darstellungen
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '309'
 ht-degree: 70%
 
 ---
-
 
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
@@ -51,4 +50,3 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
    >Wenn das Asset *und* noch nicht veröffentlicht sind, steht die Schaltfläche **[!UICONTROL URL]** (oder die URL- und die REST-Schaltfläche (falls zutreffend) nicht zur Verfügung.
    >
    >Beachten Sie auch, dass Bildvorgaben automatisch auf einem S7-Server für Dynamic Media veröffentlicht werden.
-
