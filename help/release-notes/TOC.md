@@ -3,14 +3,13 @@ sub-product: Versionshinweise für AEM as a Cloud Service
 user-guide-title: Versionshinweise für AEM as a Cloud Service
 breadcrumb-title: Versionshinweise
 user-guide-description: Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme.
-feature-set: Experience Manager
-feature: Release Information
+feature: Versionshinweise
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 91%
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
