@@ -1,17 +1,16 @@
 ---
 title: Anwenden von Dynamic Media-Viewer-Vorgaben
 description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden..
-feature: Viewer Presets,Viewers
-topic: Administrator,Business Practitioner
+feature: Viewer-Vorgaben,Viewer
 role: Business Practitioner
+exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 89%
+source-wordcount: '218'
+ht-degree: 90%
 
 ---
-
 
 # Anwenden von Dynamic Media-Viewer-Vorgaben {#applying-viewer-presets}
 
