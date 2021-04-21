@@ -1,17 +1,16 @@
 ---
 title: Erstellen benutzerdefinierter Popup-Ansichten
 description: '"Erfahren Sie, wie die standardmäßige Quick-Ansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu veranlassen. Sie können benutzerspezifischen Trigger zur Anzeige in den Popup-Fenstern verwenden."'
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: Interaktive Bilder,Interaktive Videos,Karussell-Banner
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 44%
 
 ---
-
 
 # Verwenden von Quick-Ansichten zum Erstellen benutzerdefinierter Popup-Fenster {#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ Dieses Beispiel verwendet den interaktiven Bild-Viewer.
    `s7interactiveimageviewer.init()`
 
    Nachdem Sie den Viewer in Ihre Hostseite eingebettet haben, stellen Sie sicher, dass die Viewer-Instanz erstellt wurde. Stellen Sie außerdem sicher, dass die Handler geladen werden, bevor der Viewer mit `init()` aufgerufen wird.
-
