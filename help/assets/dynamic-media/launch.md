@@ -1,17 +1,16 @@
 ---
 title: Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch
 description: Erfahren Sie mehr über die Dynamic Media Viewers Extension for Platform launch und Dynamic Media Viewers 5.13. Dadurch können Kunden von Adobe Analytics und Platform launch Ereignis und Daten, die für die Viewer spezifisch sind, in ihrer Platform launch-Konfiguration verwenden.
-feature: Asset Reports
-topic: "Data Engineer,Administrator,Business Practitioner"
+feature: 'Asset-Berichte '
 role: Administrator,Business Practitioner
+exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6671'
+source-wordcount: '6663'
 ht-degree: 52%
 
 ---
-
 
 # Integration von Dynamic Media Viewern mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
@@ -65,7 +64,7 @@ Für die Adobe Analytics-Verfolgung müssen mehrere weitere Erweiterungen instal
 
 Die Dynamic Media Viewer-Erweiterung hält die Werte der Datenelemente automatisch auf dem neuesten Stand.
 
-Nachdem Sie es definiert haben, kann ein Datenelement an anderen Stellen der Benutzeroberfläche des Experience Platform Launchs mithilfe des Widgets &quot;Datenelementauswahl&quot;verwendet werden. Insbesondere werden Datenelemente, die für die Verfolgung von Dynamic Media-Viewern definiert werden, in der Regel unter &quot;Variablenaktion von Adobe Analytics-Erweiterung festlegen&quot;referenziert (siehe unten).
+Nachdem Sie es definiert haben, kann ein Datenelement an anderen Stellen der Benutzeroberfläche des Experience Platform Launchs mithilfe des Widgets &quot;Datenelementauswahl&quot;verwendet werden. Insbesondere werden Datenelemente, die für die Verfolgung von Dynamic Media-Viewern definiert wurden, in der Regel unter &quot;Variablenaktion von Adobe Analytics-Erweiterung festlegen&quot;referenziert (siehe unten).
 
 Siehe [Datenelemente](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=de#reference) im Experience Platform Launch-Benutzerhandbuch.
 
