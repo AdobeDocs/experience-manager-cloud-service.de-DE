@@ -1,16 +1,16 @@
 ---
-title: Protokollierung
-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für einzelne Dienste festlegen oder eine Datenprotokollierung anfordern können.
+title: Protokollierung für AEM als Cloud Service
+description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokolldienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder wie Sie die Datenanmeldung als Cloud Service AEM anfordern.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 95%
+source-wordcount: '2332'
+ht-degree: 94%
 
 ---
 
-
-# Protokollierung {#logging}
+# Anmeldung für AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
