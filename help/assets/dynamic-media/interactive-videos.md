@@ -1,14 +1,13 @@
 ---
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten..
-feature: Interactive Videos
-topic: Business Practitioner
+feature: Interaktive Videos
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 51%
 
 ---
@@ -55,7 +54,7 @@ Hier erhalten Sie eine Einführung (7 Min., 30 Sek.) in die [Erstellung intera
 
 ### Kundenerfolgs-Webinar von Adobe {#adobe-customer-success-webinar}
 
-Das Webinar [Verwenden von interaktivem Video, Linkfreigabe und YouTube-Freigabe in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) lehrt Sie, wie Sie interaktive Videos und andere Funktionen verwenden, um konversionsgesteuerte Ereignis mit Ihren Videomarketinginhalten zu verknüpfen.
+Das Webinar [Verwenden von interaktivem Video, Linkfreigabe und YouTube-Freigabe in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) zeigt Ihnen, wie Sie interaktive Videos und andere Funktionen verwenden können, um konversionsgesteuerte Ereignis mit Ihren Videomarketing-Inhalten zu verknüpfen.
 
 ## Schnellstart: interaktive Videos {#quick-start-interactive-videos}
 
