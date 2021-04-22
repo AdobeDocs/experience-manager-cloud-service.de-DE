@@ -1,13 +1,13 @@
 ---
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-feature: Asset Management,Upload
+feature: Asset-Verwaltung, Hochladen
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2067'
 ht-degree: 85%
 
 ---
@@ -216,7 +216,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Das direkte binäre Hochladen ist eine neue Methode zum Hochladen von Assets. Es wird standardmäßig von den Produktfunktionen und Clients wie [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und [!DNL Experience Manager] Desktop-App unterstützt. Jeder benutzerspezifische Code, der von technischen Teams von Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und -Protokolle verwenden.
 
-* Adobe empfiehlt, bis zu 1000 Assets in jedem Ordner in [!DNL Experience Manager Assets] hinzuzufügen. Es ist zwar möglich, einem Ordner weitere Assets hinzuzufügen, es treten jedoch möglicherweise Leistungsprobleme auf, z. B. eine langsamere Navigation zu diesen Ordnern.
+* Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] nicht mehr als 1000 Assets hinzuzufügen. Sie können zwar weitere Assets zu einem Ordner hinzufügen, es kann jedoch zu Leistungsproblemen wie einer langsameren Navigation in diesen Ordnern kommen.
 
 * Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, macht die neu generierte Asset-ID die für das Asset erfassten Daten für [!DNL Analytics] ungültig.
 
