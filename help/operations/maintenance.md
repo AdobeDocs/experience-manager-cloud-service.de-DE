@@ -3,10 +3,10 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 81%
+source-wordcount: '914'
+ht-degree: 82%
 
 ---
 
@@ -42,6 +42,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
 Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgabenbereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Quell-Code-Verwaltung bearbeitet werden. In der folgenden Tabelle werden die verfügbaren Konfigurationsparameter der einzelnen Fenster beschrieben.
 
 <table>
+ <tbody>
   <tr>
     <th>Konfiguration von Wartungsfenstern</th>
     <th>Wer ist für die Konfiguration verantwortlich</th>
@@ -54,12 +55,11 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Täglich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td>Siehe unten stehende Position 1</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Siehe Code-Beispiel 1 unten</td>
-  <td>
-  <strong>windowSchedule= daily</strong> (dieser Wert sollte nicht geändert werden) 
-  <strong>windowStartTime= HH:</strong> MMusing as 24 hour clock. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.
-  <strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.
+  <td><p><code>windowSchedule= daily</code></p> (dieser Wert sollte nicht geändert werden)
+  <p><code>windowStartTime= HH:MM</code> mit 24-Stunden-Uhr. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+  <p><code>windowEndTime= HH:MM</code> mit 24-Stunden-Uhr. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <strong>windowFirstLastStartDay= 0/1</strong> 0, um einen Zeitplan für die erste Woche des Monats bzw. 1 für die letzte Woche des Monats zu erstellen. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Standorte:
