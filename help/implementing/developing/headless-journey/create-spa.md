@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 34%
@@ -19,7 +19,7 @@ ht-degree: 34%
 >
 >ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
 
-In dieser optionalen Fortsetzung der [AEM Headless Developer-Journey erfahren Sie, wie AEM kopflosen Versand mit herkömmlichen CMS-Funktionen kombinieren können und wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen und externe SPA integrieren können, um die Bearbeitungsfunktionen nach Bedarf zu ermöglichen.](#overview.md)
+In dieser optionalen Fortsetzung der [AEM Headless Developer-Journey erfahren Sie, wie AEM kopflosen Versand mit herkömmlichen CMS-Funktionen kombinieren können und wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen und externe SPA integrieren können, um die Bearbeitungsfunktionen nach Bedarf zu ermöglichen.](overview.md)
 
 ## Die Meldung bisher {#story-so-far}
 
