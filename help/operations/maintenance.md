@@ -3,10 +3,10 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
+source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 85%
+source-wordcount: '920'
+ht-degree: 84%
 
 ---
 
@@ -39,7 +39,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
 | Workflow-Bereinigung | Kunde | Muss in github vorgenommen werden. <br> Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. <br> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_WorkflowPurgeTask`). <br> Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der [AEM 6.5-Dokumentation zu Wartungsaufgaben](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html). |
 | Projektbereinigung | Kunde | Muss in github vorgenommen werden. <br> Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. <br> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_ProjectPurgeTask`). <br> Informationen zum Konfigurieren von OSGi-Eigenschaften finden Sie in der [AEM 6.5-Dokumentation zu Wartungsaufgaben](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html). |
 
-Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgabenbereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Quell-Code-Verwaltung bearbeitet werden. In der folgenden Tabelle werden die verfügbaren Konfigurationsparameter der einzelnen Fenster beschrieben. Sehen Sie sich auch die Speicherorte und Codebeispiele an, die nach der Tabelle bereitgestellt werden.
+Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgabenbereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Quellcodeverwaltung bearbeitet werden. In der folgenden Tabelle werden die verfügbaren Konfigurationsparameter der einzelnen Fenster beschrieben. Sehen Sie sich auch die Speicherorte und Codebeispiele an, die nach der Tabelle bereitgestellt werden.
 
 <table>
  <tbody>
