@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Die Komplexität der Abhängigkeiten innerhalb des Stapels wird schnell sichtbar
 
 ## Beschränkungen des Vollstapel-Versands {#limits}
 
-Der Vollstapelansatz erzeugt automatisch ein Silo, bei dem alle Erlebnisse in einem System landen. Änderungen oder Ergänzungen auf einer Silo-Ebene erfordern Änderungen auf anderen Ebenen, sodass Änderungen zeitintensiv und kostenintensiv erfolgen.
+Der Vollstapelansatz erzeugt automatisch ein Silo, bei dem alle Erlebnisse in einem System landen. Änderungen oder Ergänzungen der Silo-Komponente erfordern Änderungen anderer Komponenten, die Änderungen zeitintensiv und kostenintensiv vornehmen.
 
 Dies gilt insbesondere für die Präsentationsebene, die in traditionellen Systemen oft eng an das CMS gebunden ist. Jeder neue Kanal bedeutet im Allgemeinen eine Aktualisierung der Präsentationsebene, die alle anderen Kanal betrifft.
 
@@ -80,7 +80,7 @@ Ein Headless-Versand ist möglich, indem Sie eine Reihe robuster und flexibler A
 
 Headless ist ein Beispiel für die Entkopplung Ihres Inhalts von seiner Präsentation. Oder in einem allgemeineren Sinne, entkoppeln Sie das Front-End vom Back-End Ihres Service-Stapels. Bei einem Headless-Setup wird die Präsentationsebene (der Kopf) vom Content-Management (der Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
 
-Diese Entkopplung bedeutet, dass jeder konsumierende Dienst (das Front-End) sein Erlebnis auf der Grundlage desselben Inhalts aufbauen kann, der über die APIs bereitgestellt wird, um die Wiederverwendung und Konsistenz von Inhalten zu gewährleisten. Verbrauchsdienste können dann eigene Präsentationsebenen implementieren, sodass die Content-Management-Ebene (das Back-End) einfach horizontal skaliert werden kann.
+Diese Entkopplung bedeutet, dass jeder konsumierende Dienst (das Front-End) sein Erlebnis auf der Grundlage desselben Inhalts aufbauen kann, der über die APIs bereitgestellt wird, um die Wiederverwendung und Konsistenz von Inhalten zu gewährleisten. Verbrauchsdienste können dann ihre eigenen Präsentationsebenen implementieren, sodass der Content-Management-Stapel (das Back-End) einfach horizontal skaliert werden kann.
 
 ## Technologische Grundlagen {#technology}
 
