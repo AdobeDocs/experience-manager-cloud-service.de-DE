@@ -3,9 +3,9 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '902'
 ht-degree: 87%
 
 ---
@@ -47,16 +47,12 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <th>Konfiguration von Wartungsfenstern</th>
     <th>Wer ist für die Konfiguration verantwortlich</th>
     <th>Konfigurationstyp</th>
-    <th>Standort</th>
-    <th>Beispiel</th>
     <th>Parameter</th>
   </tr>
   <tr>
     <td>Täglich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td>1</td>
-    <td>3</td>
   <td>
   <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
   <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
@@ -67,8 +63,6 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Wöchentlich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td>Siehe unten Position 2</td>
-    <td>Siehe Code-Beispiel 2 unten</td>
     <td>
     <p><strong></strong>windowSchedule = weekly (dieser Wert sollte nicht geändert werden)</p>
     <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
@@ -80,8 +74,6 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Monatlich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td>Siehe unten Position 3</td>
-    <td>Siehe Code-Beispiel 3 unten</td>
     <td>
     <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
     <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
