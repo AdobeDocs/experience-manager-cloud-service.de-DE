@@ -3,10 +3,10 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
+source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 82%
+source-wordcount: '920'
+ht-degree: 87%
 
 ---
 
@@ -55,9 +55,10 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Täglich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td>Siehe unten stehende Position 1</td>
-    <td>Siehe Code-Beispiel 1 unten</td>
-  <td><p><strong>windowSchedule= daily</strong></p> (dieser Wert sollte nicht geändert werden)
+    <td>1</td>
+    <td>3</td>
+  <td>
+  <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
   <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
   <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
   </td> 
@@ -69,11 +70,11 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Siehe unten Position 2</td>
     <td>Siehe Code-Beispiel 2 unten</td>
     <td>
-    <strong>windowSchedule= weekly</strong> (dieser Wert sollte nicht geändert werden) 
-    <strong>windowStartTime= HH:</strong> MMusing as 24 hour clock. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.
-    <strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.
-    <strong>windowScheduleWeekdays= Array mit 2 Werten von 1-7 (z. B. [5,5])</strong>  Der erste Wert des Arrays ist der Tag des Beginns, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag beendet werden soll. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.
-    </td> 
+    <p><strong></strong>windowSchedule = weekly (dieser Wert sollte nicht geändert werden)</p>
+    <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+    <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowScheduleWeekdays= Array mit 2 Werten von 1-7 (z. B. [5,5])</strong>  Der erste Wert des Arrays ist der Tag des Beginns, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag beendet werden soll. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
+    </td>
   </tr>
   <tr>
     <td>Monatlich</td>
@@ -82,11 +83,11 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Siehe unten Position 3</td>
     <td>Siehe Code-Beispiel 3 unten</td>
     <td>
-    <strong>windowSchedule= daily</strong> (dieser Wert sollte nicht geändert werden) 
-    <strong>windowStartTime= HH:</strong> MMusing as 24 hour clock. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.
-    <strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.
-    <strong>windowScheduleWeekdays = Array von 2 Werten von 1-7 (z. B. [5,5])</strong>  Der erste Wert des Arrays ist der Tag des Beginns, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag beendet werden soll. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.
-    <strong>windowFirstLastStartDay= 0/1</strong> 0, um einen Zeitplan für die erste Woche des Monats bzw. 1 für die letzte Woche des Monats zu erstellen. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).
+    <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
+    <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+    <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowScheduleWeekdays = Array von 2 Werten von 1-7 (z. B. [5,5])</strong>  Der erste Wert des Arrays ist der Tag des Beginns, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag beendet werden soll. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um einen Zeitplan für die erste Woche des Monats bzw. 1 für die letzte Woche des Monats zu erstellen. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).</p>
     </td> 
     </tr>
     </tbody>
