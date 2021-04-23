@@ -3,9 +3,9 @@ title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 82%
 
 ---
@@ -55,11 +55,11 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Täglich</td>
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>Siehe unten stehende Position 1</td>
     <td>Siehe Code-Beispiel 1 unten</td>
-  <td><p><code>windowSchedule= daily</code></p> (dieser Wert sollte nicht geändert werden)
-  <p><code>windowStartTime= HH:MM</code> mit 24-Stunden-Uhr. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-  <p><code>windowEndTime= HH:MM</code> mit 24-Stunden-Uhr. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (dieser Wert sollte nicht geändert werden)
+  <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+  <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
   </td> 
   </tr>
   <tr>
