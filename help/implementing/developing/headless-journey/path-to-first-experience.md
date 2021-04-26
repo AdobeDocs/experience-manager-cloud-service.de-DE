@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
 
-In diesem Teil der [AEM Headless Developer-Journey,](#overview.md) werden Sie die Schritte zur Implementierung Ihrer ersten nutzlosen Erfahrung in AEM einschließlich Planungshinweise verstehen und außerdem Best Practices lernen, um Ihren Pfad so reibungslos wie möglich zu gestalten.
+In diesem Teil der [AEM Headless Developer-Journey,](overview.md) werden Sie die Schritte zur Implementierung Ihrer ersten nutzlosen Erfahrung in AEM einschließlich Planungshinweise verstehen und außerdem Best Practices lernen, um Ihren Pfad so reibungslos wie möglich zu gestalten.
 
 ## Die Meldung bisher {#story-so-far}
 
