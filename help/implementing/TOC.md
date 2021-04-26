@@ -6,9 +6,9 @@ user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experienc
 feature: Entwickler-Tools
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
+source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 89%
 
 ---
@@ -168,6 +168,7 @@ ht-degree: 89%
    + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
+   + [Der Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + Personalisierung  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Konfigurieren von ContextHub](developing/personalization/configuring-contexthub.md)
