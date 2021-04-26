@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
 
-In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie Ihr Headless-Erlebnis erhalten.](#overview.md)
+In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie Ihr Headless-Erlebnis erhalten.](overview.md)
 
 ## Die Meldung bisher {#story-so-far}
 
