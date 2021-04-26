@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 54%
+source-wordcount: '764'
+ht-degree: 52%
 
 ---
 
@@ -130,6 +130,7 @@ Als Hilfe beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle können Sie
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Erste Schritte mit AEMHeadless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) - Eine kurze Videoschulung mit einem Überblick über die Verwendung AEM kopflosen Funktionen, einschließlich Datenmodellierung und GraphQL
 * [GraphQL.org](https://graphql.org)
    * [Schemas](https://graphql.org/learn/Schema/)
    * [GraphQL Java-Bibliotheken](https://graphql.org/code/#java)
