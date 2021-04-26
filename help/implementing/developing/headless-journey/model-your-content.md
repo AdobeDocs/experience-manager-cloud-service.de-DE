@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1671'
 ht-degree: 4%
 
 ---
@@ -244,6 +244,7 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Erste Schritte mit AEMHeadless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) - Eine kurze Videoschulung mit einem Überblick über die Verwendung AEM kopflosen Funktionen, einschließlich Datenmodellierung und GraphQL
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)  - die Interessentenseite für Inhaltsfragmente
    * [Inhaltsfragmente im Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) : Aktivieren Sie die Funktion &quot;Inhaltsfragment&quot;im Konfigurationsbrowser
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)  - Erstellen und Bearbeiten von Inhaltsfragmentmodellen
