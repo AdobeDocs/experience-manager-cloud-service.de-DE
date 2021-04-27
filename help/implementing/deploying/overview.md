@@ -1,13 +1,13 @@
 ---
 title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
-feature: Deploying
+feature: Bereitstellen
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
-ht-degree: 96%
+source-wordcount: '3334'
+ht-degree: 94%
 
 ---
 
@@ -163,6 +163,12 @@ Weitere Informationen zu „repoinit“ finden Sie in der [Sling-Dokumentation](
 above appears to be internal, to confirm with Brian -->
 
 ### Package Manager-„one offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Package Manager - Migrieren von Paketen mit veränderlichen Inhalten"
+>abstract="Untersuchen Sie die Verwendung des Paketmanagers für Anwendungsfälle, bei denen ein Inhaltspaket als &quot;Einzel&quot; installiert werden sollte. Dazu gehören der Import bestimmter Inhalte von der Produktion bis zur Staging-Phase, um ein Produktionsproblem zu debuggen, die Übertragung kleiner Inhaltspakete von der lokalen Umgebung auf AEM Cloud-Umgebung und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann Package Manager in AEM as a Cloud Service-Umgebungen verwendet werden.
 
