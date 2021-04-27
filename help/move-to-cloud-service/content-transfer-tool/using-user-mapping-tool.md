@@ -1,18 +1,26 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 62%
+source-wordcount: '1185'
+ht-degree: 58%
 
 ---
-
 
 # Verwenden des User Mapping Tools {#user-mapping-tool}
 
 ## Übersicht {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Benutzerzuordnungstool"
+>abstract="Mit dem Content Transfer Tool können Sie Benutzer und Gruppen von Ihrem bestehenden AEM als Cloud Service in AEM verschieben. Bestehende Benutzer und Gruppen müssen ihren IMS-IDs zugeordnet werden, um zu vermeiden, dass Benutzer und Gruppen in der Autoreninstanz des Cloud Service Duplikat haben."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Verwenden des User Mapping Tools"
+
 
 Im Rahmen der Umstellung auf Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzer und Gruppen aus Ihrem bestehenden AEM-System in AEM as a Cloud Service überführen. Verwenden Sie hierzu das Content Transfer Tool.
 
@@ -102,4 +110,3 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Informationen zum Ausführen der Extraktion finden Sie unter [Ausführen des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
