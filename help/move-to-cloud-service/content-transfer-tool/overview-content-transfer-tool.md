@@ -1,16 +1,23 @@
 ---
 title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '813'
+ht-degree: 84%
 
 ---
 
-
 # Übersicht {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="Überblick"
+>abstract="Content Transfer Tool ist ein von der Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer Quellinstanz (lokal oder AMS) in die Zielgruppe AEM Cloud Service-Instanz verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraktion"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Einstiegsprozess"
 
 Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können.
 
@@ -49,6 +56,12 @@ In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta
 
 
 ## Richtlinien und Best Practices {#best-practices}
+
+>id=&quot;aemcloud_ctt_guidelines&quot;
+>title=&quot;Richtlinien und bewährte Verfahren&quot;
+>abstract=&quot;Überprüfen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer-Tools, einschließlich Aufgaben zur Bereinigung von Revisionen, Überlegungen zum Festplattenspeicherplatz und mehr.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Wichtige Überlegungen zur Verwendung des Content Transfer Tool&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung&quot;
 
 Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools:
 
