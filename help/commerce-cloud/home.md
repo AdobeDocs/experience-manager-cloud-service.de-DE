@@ -3,16 +3,21 @@ title: AEM Content und Commerce
 description: AEM- und Commerce-Selbsthilfe und Links zur Dokumentation
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 85%
+source-wordcount: '377'
+ht-degree: 80%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
 Auf dieser Seite werden die Selbsthilfe-Ressourcen in Bezug auf AEM Content und Commerce Liste.
+
+>[!NOTE]
+>
+>Informationen zu AEM Content and Commerce mit AEM 6.5 und klassischem CIF finden Sie unter [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+
 
 ## Wichtige Inhalte und Commerce-Artikel {#key-articles}
 
@@ -39,7 +44,7 @@ Auf dieser Seite werden die Selbsthilfe-Ressourcen in Bezug auf AEM Content und 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
-* [HTL-Dokumentation](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)
+* [HTL-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Dokumentation für Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Einhaltung der DSGVO](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
