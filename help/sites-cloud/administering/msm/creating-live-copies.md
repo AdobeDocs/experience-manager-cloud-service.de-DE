@@ -1,14 +1,14 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live-Kopien erstellen und synchronisieren, um Ihre Inhalte auf Ihrer Website wiederzuverwenden.
-feature: Multi Site Manager
+feature: Multi-Site-Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
-ht-degree: 41%
+source-wordcount: '4277'
+ht-degree: 40%
 
 ---
 
@@ -42,7 +42,15 @@ Nachdem Sie die Blueprint-Konfiguration erstellt haben, können Sie die folgende
 
 Wenn Ihre Blueprint-Konfiguration verwendet wird, können Sie sie mit einer Rollout-Konfiguration verknüpfen, die bestimmt, wie die Live-Kopien der Quelle/des Blueprints synchronisiert werden. Siehe [Angeben der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Erstellen von Blueprint-Konfigurationen {#creating-a-blueprint-configuration}
+### Erstellen und Bearbeiten von Blueprint-Konfigurationen {#creating-editing-blueprint-configurations}
+
+Blueprint-Konfigurationen gelten als unveränderliche Daten und können daher zur Laufzeit nicht bearbeitet werden. Aus diesem Grund müssen alle Konfigurationsänderungen über Git mithilfe der CI/CD-Pipeline bereitgestellt werden.
+
+Weitere Informationen finden Sie im Artikel [Wichtige Änderungen an Adobe Experience Manager (AEM) als Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+
+Die folgenden Schritte stehen einem Administrator auf einer lokalen Entwicklungsinstanz nur zu Test- und Entwicklungszwecken zur Verfügung. Diese Optionen stehen in keiner AEMaaCS-Cloud-Instanz zur Verfügung.
+
+#### Erstellen einer Blueprint-Konfiguration lokal {#creating-a-blueprint-configuration}
 
 So erstellen Sie eine Blueprint-Konfiguration:
 
@@ -61,7 +69,7 @@ So erstellen Sie eine Blueprint-Konfiguration:
 
 1. Mit **Erstellen** wird die Blueprint-Konfiguration basierend auf Ihren Angaben erstellt.
 
-### Bearbeiten oder Löschen von Blueprint-Konfigurationen  {#editing-or-deleting-a-blueprint-configuration}
+### Bearbeiten oder Löschen von Blueprint-Konfigurationen Lokal{#editing-or-deleting-a-blueprint-configuration}
 
 Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
@@ -130,7 +138,7 @@ So erstellen Sie eine Live Copy:
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy anzugeben, wählen Sie diese mit der Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
 1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hierüber können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
-### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Erstellen Sie eine Live Copy mit einer Blueprint-Konfiguration, um eine Site basierend auf dem Blueprint-(Quell-)Inhalt zu erstellen. Wenn Sie eine Live Copy aus einer Blueprint-Konfiguration erstellen, wählen Sie eine oder mehrere Sprachverzweigungen der zu kopierenden Blueprint-Quelle aus und wählen Sie dann die zu kopierenden Kapitel aus den Sprachverzweigungen aus. Siehe [Erstellen einer Blueprint-Konfiguration](#creating-a-blueprint-configuration).
 
