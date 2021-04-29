@@ -1,14 +1,14 @@
 ---
 title: 'Verwenden von Bedingungen zum Ausblenden '
 description: Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird.
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden von Bedingungen zum Ausblenden  {#using-hide-conditions}
 
@@ -72,7 +72,7 @@ Wenn Vorlagenautoren die Option für die untergeordneten Seiten deaktivieren, wi
 
    ![Auswertung der Bedingung zum Ausblenden](assets/hide-conditions-evaluation.png)
 
-1. Der Wert von `disableChildren` wird aus der Design-Konfiguration gezogen und der Ausdruck `${cdDesign.disableChildren}` wird als `false` ausgewertet, was bedeutet, dass die Option nicht als Teil der Komponente gerendert wird.
+1. Der Wert von `disableChildren` wird aus der Design-Konfiguration gezogen und der Ausdruck `${cqDesign.disableChildren}` wird als `false` ausgewertet, was bedeutet, dass die Option nicht als Teil der Komponente gerendert wird.
 
 1. Die Option **Untergeordnete Seiten** wird für Seitenautoren bei Verwendung der Listenkomponente nicht mehr gerendert.
 
