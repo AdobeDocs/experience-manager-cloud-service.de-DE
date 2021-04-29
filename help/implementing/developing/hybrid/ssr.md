@@ -1,14 +1,14 @@
 ---
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 97%
+source-wordcount: '1502'
+ht-degree: 92%
 
 ---
-
 
 # Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR 
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede AEM-Umgebung eine separate Adobe I/O Runtime-Instanz (Autor, Veröffentlichung, Staging usw.).
+>Adobe empfiehlt einen separaten Adobe I/O Runtime Workspace pro Umgebung (Phase, Test, Test usw.). Dies ermöglicht typische Lebenszyklusmuster für die Systementwicklung (SDLC) mit verschiedenen Versionen einer einzelnen Anwendung, die auf verschiedenen Umgebung bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>
+>Eine separate Arbeitsfläche ist nicht pro Instanz (Autor, Veröffentlichung) erforderlich, es sei denn, die Implementierung der Laufzeitumgebung unterscheidet sich je Instanztyp.
 
 ## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 
