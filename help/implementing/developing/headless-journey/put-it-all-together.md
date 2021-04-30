@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 1%
 
 ---
@@ -31,9 +31,9 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr 
 
 ## Vorgabe {#objective}
 
+* Verstehen Sie, für welchen lokalen Entwicklungsarbeitsablauf AEM
 * Installieren Sie das AEM SDK, um eine lokale Entwicklungslaufzeit zu erhalten, die Sie zum Testen Ihres Inhalts verwenden können.
-* Informationen zu den benötigten Entwicklungs-Tools
-* Testen Sie Code und Inhalt lokal, bevor Sie live gehen
+* Erfahren Sie mehr über die Entwicklungstools, die Sie neben der lokalen Entwicklungslaufzeit benötigen
 
 ## Lokaler Entwicklungsarbeitsablauf {#the-local-development-workflow}
 
