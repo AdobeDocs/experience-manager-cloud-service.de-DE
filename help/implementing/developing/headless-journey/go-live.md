@@ -4,14 +4,14 @@ description: In diesem Teil der AEM Headless Developer-Journey erfahren Sie, wie
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
-
 
 # Wie Sie mit Ihrer Headless-Anwendung live gehen können {#go-live}
 
@@ -63,6 +63,8 @@ Das häufigste Bereitstellungsmuster bei AEM kostenlosen Anwendungen besteht dar
 3. Zwischenspeicherung und Skalierbarkeit konfigurieren
 
 ## Bereitstellung für Produktion {#deploy-to-production}
+
+Nachdem Sie den gesamten Code und Inhalt lokal getestet haben, können Sie jetzt mit der Bereitstellung einer Produktion mit AEM beginnen.
 
 ### Modellstruktur vs. GraphQL-Ausgabe {#structure-vs-output}
 
