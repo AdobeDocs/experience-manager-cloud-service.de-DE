@@ -4,14 +4,14 @@ description: In diesem Teil der AEM Developer-Journey lernen Sie, wie Sie mit de
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '327'
 ht-degree: 3%
 
 ---
-
 
 # Aktualisierung Ihrer Inhalte über AEM Assets APIs {#update-your-content}
 
@@ -23,12 +23,13 @@ In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie mit der R
 
 ## Die Meldung bisher {#story-so-far}
 
-Im vorherigen Dokument der AEM-Journey [Wie Sie über AEM Versand-APIs ](access-your-content.md) auf Ihre Inhalte zugreifen können, haben Sie gelernt, wie Sie über die API auf Ihre kostenlosen Inhalte in AEM zugreifen können. Jetzt sollten Sie:
+Im vorherigen Dokument der AEM-Journey [Wie Sie über AEM Versand-APIs ](access-your-content.md) auf Ihre Inhalte zugreifen können, haben Sie gelernt, wie Sie über die AEM GraphQL-API auf Ihre kostenlosen Inhalte in AEM zugreifen können. Jetzt sollten Sie:
 
-* Verstehen Sie, was GraphQL ist und wie AEM GraphQL API funktioniert.
+* Sie haben ein fundiertes Verständnis von GraphQL.
+* Verstehen Sie, wie die AEM GraphQL API funktioniert.
 * Machen Sie sich mit einigen praktischen Abfragen vertraut.
 
-Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihre vorhandenen Kopflosen Inhalte in AEM über API aktualisieren.
+Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihre vorhandenen Kopflosen Inhalte in AEM über die REST-API aktualisieren können.
 
 ## Vorgabe {#objective}
 
@@ -44,7 +45,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihre
 Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, sollten Sie:
 
 * Machen Sie sich mit der AEM Assets HTTP API vertraut.
-* Verstehen Sie, wie Inhaltsfragmente in der API unterstützt werden.
+* Verstehen Sie, wie Inhaltsfragmente in dieser API unterstützt werden.
 * Sie haben Erfahrung mit Beispielcode und wissen, wie die API in der Praxis funktioniert.
 
 Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Wie Sie alles zusammenstellen - Ihre App und Ihr Inhalt in AEM Headless](put-it-all-together.md) ansehen, in dem Sie lernen, wie Sie Ihr AEM Headless-Projekt umsetzen und es für das Live-Leben vorbereiten können.
