@@ -3,16 +3,23 @@ title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: faf48392bd842d2706b9a07b92e9a3e60eefcdc7
+source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
 workflow-type: tm+mt
-source-wordcount: '2616'
-ht-degree: 75%
+source-wordcount: '2675'
+ht-degree: 73%
 
 ---
 
 # Verwenden des Content Transfer Tools {#using-content-transfer-tool}
 
 ## Wichtige Überlegungen zur Verwendung des Content Transfer Tools {#pre-reqs}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="Wichtige Überlegungen zur Verwendung des Content Transfer Tool"
+>abstract="Beachten Sie die wichtigen Aspekte, um das Content Transfer-Tool zu verwenden, einschließlich Java- und AEM-Versionen, unterstützte Datastore-Typen, Überlegungen zu Benutzergruppen und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices und Leitlinien"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Tool zum Übertragen von Inhalten herunterladen"
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
