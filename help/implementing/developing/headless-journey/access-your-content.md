@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 36%
+source-wordcount: '2181'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 36%
 >
 >ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
 
-In diesem Teil der [AEM Headless Developer-Journey, ](overview.md) erfahren Sie, wie Sie mit den GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen können.
+In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie mit den GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen und sie in Ihre App einspeisen können (kopfloser Versand).](overview.md)
 
 ## Die Meldung bisher {#story-so-far}
 
@@ -135,9 +135,7 @@ Diese Inhaltsfragmentmodelle:
 
 Die **Fragmentreferenz**:
 
-* ist vor allem in Verbindung mit GraphQL von Interesse,
-
-* ist ein spezifischer Datentyp, der bei der Definition eines Inhaltsfragmentmodells verwendet werden kann,
+* Ist ein bestimmter Datentyp verfügbar, wenn ein Inhaltsfragmentmodell definiert wird.
 
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
 
@@ -148,6 +146,24 @@ Die **Fragmentreferenz**:
 ### JSON-Vorschau {#json-preview}
 
 Um beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu helfen, können Sie die JSON-Ausgabe im Inhaltsfragment-Editor Vorschau haben.
+
+### Erstellen von Inhaltsfragmentmodellen und Inhaltsfragmenten {#creating-content-fragment-models-and-content-fragments}
+
+Erstens sind Inhaltsfragmentmodelle für Ihre Site aktiviert. Dies geschieht im Konfigurationsbrowser:
+
+![Konfiguration definieren](assets/cfm-configuration.png)
+
+Anschließend können die Inhaltsfragmentmodelle modelliert werden:
+
+![Inhaltsfragmentmodell](assets/cfm-model.png)
+
+Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
+
+![Inhaltsfragmente-Editor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Siehe Arbeiten mit Inhaltsfragmenten.
 
 ## GraphQL-Schema-Generierung aus Inhaltsfragmenten {#graphql-schema-generation-content-fragments}
 
@@ -239,9 +255,98 @@ Es bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung und
 
 ![GraphiQL-Schnittstelle](assets/graphiql-interface.png "GraphiQL-Schnittstelle")
 
-## Verwenden der AEM GraphQL API {#using-aem-graphiql}
+## Tatsächlich mit der AEM GraphQL API {#actually-using-aem-graphiql}
 
-Einzelheiten zur Verwendung der AEM GraphQL API sowie zur Konfiguration der erforderlichen Elemente finden Sie unter:
+Um die AEM GraphQL-API in einer Abfrage zu verwenden, können wir die beiden grundlegenden Inhaltsfragmentmodellstrukturen verwenden:
+
+* Unternehmen
+   * Name
+   * CEO (Person)
+   * Arbeitnehmer/innen
+* Person
+   * Name
+   * Vorname
+
+Wie Sie sehen können, verweisen die Felder CEO und Mitarbeiter auf die Fragmente Person.
+
+Die Fragmentmodelle werden verwendet:
+
+* beim Erstellen des Inhalts im Inhaltsfragment-Editor
+* zur Generierung der GraphQL-Schema, die Sie Abfrage
+
+Die Abfragen können in die GraphiQL-Oberfläche eingegeben werden, z. B. unter:
+
+* `http://localhost:4502/content/graphiql.html `
+
+Eine einfache Abfrage ist, den Namen aller Einträge im Schema Firma zurückzugeben. Hier fordern Sie eine Liste aller Firmen an:
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+Eine etwas komplexere Abfrage besteht darin, alle Personen auszuwählen, die nicht den Namen &quot;Aufträge&quot;haben. Dadurch werden alle Personen nach Personen gefiltert, die nicht den Namen Aufträge haben. Dies wird mit dem Operator EQUALS_NOT erreicht (es gibt viele weitere):
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+Sie können auch komplexere Abfragen erstellen. Abfrage für alle Firmen, die mindestens einen Mitarbeiter mit dem Namen &quot;Smith&quot;haben. Diese Abfrage veranschaulicht das Filtern nach allen Personen mit dem Namen &quot;Smith&quot;und gibt Informationen aus den verschachtelten Fragmenten zurück:
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+Die vollständigen Informationen zur Verwendung der AEM GraphQL API sowie zur Konfiguration der erforderlichen Elemente finden Sie unter:
 
 * Verwendung von GraphQL mit AEM
 * Die Struktur des Musterinhaltsfragments
