@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
+source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,14 +140,53 @@ Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 
 * Das Feld &quot;Stamm-Kategorie&quot;wurde nicht auf der Registerkarte &quot;Handel&quot;in den Seiteneigenschaften der Kategorien angezeigt
 
+
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.4.0 beschrieben.
+In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.5.0 und 2021.4.0 erläutert.
+
+### Veröffentlichungsdatum {#release-date-cm-may}
+
+Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.5.0 ist der 06. Mai 2021.
+Die nächste Version ist für den 03. Juni 2021 geplant.
+
+### Neue Funktionen {#what-is-new-may}
+
+* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, und zwar in demselben bereitgestellten Paketsatz.
+
+* Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
+
+* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarien.
+
+* Zwischenweise auftretende Fehler beim Verschieben von Code in Adobe git wurden nun behoben.
+
+* Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programm angewendet werden.
+
+* Das Erlebnis &quot;Programm bearbeiten&quot;wurde aktualisiert.
+
+* Die Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebung-Details&quot;zeigt bis zu 250 Domänennamen per Paginierung an.
+
+* Auf der Registerkarte &quot;Lösungen&quot;in Hinzufügen Programm und im Workflows &quot;Programm bearbeiten&quot;wird die Lösung angezeigt, auch wenn nur eine Lösung für das Programm verfügbar ist.
+
+* Die Fehlermeldung im Protokoll des Buildschritts, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
+
+### Fehlerbehebungen {#bug-fixes-cm-may}
+
+* Gelegentlich wird dem Benutzer neben einer IP-Zulassungsliste ein grüner &quot;Aktiv&quot;-Status angezeigt, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
+
+* Statt &#39;gelöschte&#39; Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **DELETED**.
+
+* Einige Qualitätsprobleme mit Code-Geruch haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
+
+* Da Platzhalterdomänen nicht unterstützt werden, verhindert die Benutzeroberfläche, dass der Benutzer eine Platzhalterdomäne sendet.
+
+* Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1am UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als eine Version, die am Vortag erstellt wurde.
+
+* Während der Einrichtung des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode Git verwalten als Link von der Heldenkarte auf der Seite Überblick angezeigt.
 
 ### Veröffentlichungsdatum {#release-date-cm-april}
 
 Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.4.0 ist der 08. April 2021.
-Die nächste Version ist für den 06. Mai 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-april}
 
