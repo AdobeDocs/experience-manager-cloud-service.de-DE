@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Versionshinweise
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '386'
 ht-degree: 17%
 
 ---
@@ -35,11 +35,11 @@ Die nächste Version ist für den 03. Juni 2021 geplant.
 
 * Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programm angewendet werden.
 
-* Das Erlebnis &quot;Programm bearbeiten&quot;wurde aktualisiert.
+* Das Erlebnis *Programm bearbeiten* wurde aktualisiert.
 
 * Die Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebung-Details&quot;zeigt bis zu 250 Domänennamen per Paginierung an.
 
-* Auf der Registerkarte &quot;Lösungen&quot;in Hinzufügen Programm und im Workflows &quot;Programm bearbeiten&quot;wird die Lösung angezeigt, auch wenn nur eine Lösung für das Programm verfügbar ist.
+* Die Registerkarte **Lösungen und Hinzufügen** in **Hinzufügen Programm** und **Programm bearbeiten** wird angezeigt, auch wenn nur eine Lösung für das Programm verfügbar ist.
 
 * Die Fehlermeldung im Protokoll des Buildschritts, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
 
