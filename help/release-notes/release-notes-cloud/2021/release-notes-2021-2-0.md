@@ -1,14 +1,14 @@
 ---
 title: Versionshinweise für Version 2021.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 translation-type: tm+mt
-source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
-
 
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -56,13 +56,13 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * Assets können mit [!DNL Experience Manager Assets Brand Portal] bezogen werden. Es hilft, Assets von Agenturbenutzern für neue Marketing-Kampagnen, Fotoaufnahmen und Projekte zu beziehen.
 
-* [!DNL Experience Manager Assets] als eine  [!DNL Cloud Service] berechtigt ist, über eine vorkonfigurierte  [!DNL Brand Portal] Instanz zu verfügen. Der [!DNL Cloud Manager]-Benutzer kann [!DNL Brand Portal] unter [!DNL Experience Manager Assets] als [!DNL Cloud Service] aktivieren. Siehe [Aktivieren des Markenportals](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+* [!DNL Experience Manager Assets] als eine  [!DNL Cloud Service] berechtigt ist, über eine vorkonfigurierte  [!DNL Brand Portal] Instanz zu verfügen. Der [!DNL Cloud Manager]-Benutzer kann [!DNL Brand Portal] unter [!DNL Experience Manager Assets] als [!DNL Cloud Service] aktivieren. Siehe [Aktivieren des Markenportals](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de).
 
 * Unternehmen können jetzt Assets mit [!DNL Brand Portal] ausgeben. Die Asset-Sourcing-Funktion nutzt [!DNL Brand Portal], um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotografien und Projekte zu beziehen. Siehe [Asset-Sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * Der Nutzungsbericht zeigt jetzt nur die aktiven Benutzer an. [!DNL Brand Portal] Die inaktiven Benutzer werden jetzt nicht angezeigt. Aktive Benutzer sind diejenigen, deren Konto einem Profil im [!DNL Admin Console] zugewiesen ist. Siehe [[!DNL Brand Portal] Berichte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
-* In [!DNL Brand Portal] wird eine neue Downloadeinstellung eingeführt, mit der Sie separate Ordner für jedes Asset erstellen können, wenn Sie Ordner, Sammlungen usw. herunterladen. Siehe [Download-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* In [!DNL Brand Portal] wird eine neue Downloadeinstellung eingeführt, mit der Sie separate Ordner für jedes Asset erstellen können, wenn Sie Ordner, Sammlungen usw. herunterladen. Weitere Informationen finden Sie unter [Download-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 ## Fehlerbehebungen in [!DNL Assets] {#bug-fixes-assets}
 
@@ -166,4 +166,3 @@ Weitere Informationen zu diesem Plugin finden Sie unter [Unified Experience](htt
 
 * Mehrere Fehlerkorrekturen, die im Repository Modernizer vorgenommen wurden.
 Siehe [GitHub-Ressource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für weitere Informationen.
-
