@@ -1,11 +1,12 @@
 ---
-title: Versionshinweise für die Version 2021.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Versionshinweise für Version 2021.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0
+exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 translation-type: tm+mt
-source-git-commit: 361b90b2d6bbd8f9fc141743fb80aa60faec3598
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
@@ -16,33 +17,33 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für [!DNL Experi
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2021.1.0 ist der 3. Februar 2021.
+Die Version 2021.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 3. Februar 2021 veröffentlicht.
 Die folgende Version (2021.2.0) wird am 25. Februar 2021 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[Content Fragment HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)**: hinzufügen die Möglichkeit, Inhaltsfragmentvarianten mithilfe der HTTP-API hinzuzufügen/zu aktualisieren und zu löschen.
+* **[HTTP-API für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md)**: Hinzufügen der Möglichkeit zum Hinzufügen/Aktualisieren und Löschen von Varianten von Inhaltsfragmenten über die HTTP-API.
 
-* **[GraphQL API für Content Fragment Versand](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Möglichkeit zur Abfrage von Inhaltsfragmenten mithilfe der GraphQL-Syntax und von auf Inhaltsfragmentmodellen basierenden Schemas für die Ausgabe im JSON-Format.
+* **[GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Möglichkeit zur Abfrage von Inhaltsfragmenten mithilfe der GraphQL-Syntax und von auf Inhaltsfragmentmodellen basierenden Schemas für die Ausgabe im JSON-Format.
 
-* **[Authentifizierungsunterstützung für GraphQL-API-Anfragen](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Möglichkeit, GraphQL API-Anfragen mit Zugriffstoken für serverseitige APIs zu authentifizieren.
+* **[Authentifizierungsunterstützung für GraphQL-API-Anfragen](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Möglichkeit, Anfragen der GraphQL-API mit Zugriffs-Token für Server-seitige APIs zu authentifizieren.
 
-* Verbesserte JSON-Ausgabe aus der GraphQL API, einschließlich der Möglichkeit, Rich-Text im JSON-Format und in Gebietsschemas auszugeben.
+* Verbesserte JSON-Ausgabe aus der GraphQL-API, einschließlich der Möglichkeit, Rich-Text im JSON-Format und in Gebietsschemas auszugeben.
 
-* Unterstützung für die Verschachtelung von Inhaltsfragmentmodellen, damit verschachtelte Inhaltsfragmentstrukturen über dedizierte Content Fragment Reference-Datentypen oder Inhaltsfragmentverweise inline in mehrzeiligen Textfeldern erstellt werden können.
+* Unterstützung für die Verschachtelung von Inhaltsfragmentmodellen, damit verschachtelte Inhaltsfragmentstrukturen über dedizierte Inhaltsfragmentreferenz-Datentypen oder Inhaltsfragmentreferenzen inline in mehrzeiligen Textfeldern erstellt werden können.
 
-* Zusätzliche Validierungsregeln, die in den Datentypen des Inhaltsfragmentmodells verfügbar sind, einschließlich &quot;eindeutig&quot;, &quot;erforderlich&quot;und &quot;übersetzbar&quot;.
+* Zusätzliche Validierungsregeln in den Datentypen des Inhaltsfragmentmodells verfügbar, einschließlich „unique“, „required“ und „translatable“.
 
-* Möglichkeit, Content Fragment-Modelle zu taggen und die Erstellung von Inhaltsfragmenten in einem Ordner mit Richtlinien durch Tags oder Pfade zu ermöglichen.
+* Möglichkeit, Inhaltsfragmentmodelle zu taggen und das Erstellen von Inhaltsfragmenten in einem Ordner mit Richtlinien durch Tags oder Pfade zu ermöglichen.
 
-* Verbesserungen der Benutzerfreundlichkeit im Inhaltsfragment-Editor, einschließlich Veröffentlichungsaktion und Anzeige des Modells, auf dem ein Fragment basiert.
+* Verbesserungen der Benutzerfreundlichkeit im Inhaltsfragmente-Editor, einschließlich Veröffentlichungsaktion und Anzeige des Modells, auf dem ein Fragment basiert.
 
-* Möglichkeit zur Vorschau der JSON-Ausgabe direkt im Inhaltsfragment-Editor.
+* Möglichkeit zur Vorschau der JSON-Ausgabe direkt im Inhaltsfragmente-Editor.
 
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] als  [!DNL Cloud Service] Erweiterung der Funktion für intelligente Tags, um die Identifizierung von Suchbegriffen und Entitäten in textbasierten Assets zu unterstützen. Der Text wird identifiziert, indiziert und als Metadaten zur Verbesserung der Sucherfahrung bereitgestellt, ohne dass eine Konfiguration erforderlich ist. Siehe [Smart Tags](/help/assets/smart-tags.md).
+* [!DNL Experience Manager] as a [!DNL Cloud Service] erweitert die Smart-Tags-Funktion, um die Identifizierung von Suchbegriffen und Entitäten in textbasierten Assets zu unterstützen. Der Text wird identifiziert, indiziert und in Form von Metadaten zur Verbesserung der Sucherfahrung bereitgestellt, ohne dass eine Konfiguration erforderlich ist. Siehe [Smart-Tags](/help/assets/smart-tags.md).
 
 * Das MXF-Dateiformat wird jetzt unterstützt. Siehe [Unterstützte Dateiformate](/help/assets/file-format-support.md#video-formats).
 
@@ -50,9 +51,9 @@ Die folgende Version (2021.2.0) wird am 25. Februar 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Produkt-Experience-Management: Neue Registerkarte &quot;Commerce&quot;-Eigenschaften für Assets und Erlebnisfragmente. Auf dieser Registerkarte können Sie Produkte/Kategorien mit Assets und Erlebnisfragmenten verknüpfen. Auf der Registerkarte werden auch Echtzeitdaten für verknüpfte Produkte/Kategorien sowie ein Link zur Anzeige von Details in der Produktkonsole angezeigt.
+* Produkterlebnis-Management: Neue Eigenschaftenseite „Commerce“ für Assets und Experience Fragments. Auf dieser Registerkarte können Sie Produkte/Kategorien mit Assets und Experience Fragments verknüpfen. Auf der Registerkarte werden auch Echtzeitdaten für verknüpfte Produkte/Kategorien sowie ein Link zur Anzeige von Details in der Produktkonsole angezeigt.
 
-* CIF Venia-Referenzseite - 2021.02.02, die die neueste CIF-Kernkomponenten Version v1.7.0 enthält. Weitere Informationen finden Sie unter [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02).
+* Freigabe der CIF Venia-Referenz-Website 2021.02.02, die die aktuelle CIF-Kernkomponenten Version 1.7.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02).
 
 * Version 1.7.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0).
 
@@ -60,35 +61,35 @@ Die folgende Version (2021.2.0) wird am 25. Februar 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.1.0 ist der 14. Januar 2021.
+Die Version 2021.1.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. Januar 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 
-* Die Assets Production-Instanz kann gelegentlich den Markenportalstatus auf der Detailseite **Umgebung** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
+* Die Assets-Produktionsinstanz kann gelegentlich den Brand Portal-Status auf der Seite **Umgebungsdetails** als *Ausstehend* anzeigen, ohne dass der Benutzer aktiv werden kann.
 
-* Beim Auslösen einer Dehibernate aus Cloud Manager wurde manchmal eine Fehlermeldung angezeigt, auch wenn die Deaktivierung erfolgreich gestartet wurde.
+* Wenn das Zurückholen aus dem Ruhezustand in Cloud Manager ausgelöst wurde, wurde manchmal eine Fehlermeldung angezeigt, obwohl der Vorgang erfolgreich gestartet wurde.
 
-* Seltene Fälle von Fehlern beim Erstellen oder Löschen von Umgebung wurden behoben.
+* Seltene Fälle von Fehlern beim Erstellen oder Löschen der Umgebung wurden behoben.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI Plugins veröffentlicht. Die neueste Version dieses Plugins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - Index Converter. Weitere Informationen zu diesem Plugin finden Sie unter [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits).
+* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - den Index Converter. Weitere Informationen zu diesem Plug-in finden Sie unter [Einheitliches Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits).
 
-* Index Converter ist ein Dienstprogramm, das verwendet werden kann, um die benutzerdefinierten OAK-Indexdefinitionen eines Kunden in AEM als Cloud Service kompatible OAK-Indexdefinitionen umzuwandeln. Weitere Informationen finden Sie unter [Indexkonverter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
+* Index Converter ist ein Dienstprogramm, das verwendet werden kann, um die benutzerdefinierten OAK-Indexdefinitionen eines Kunden in mit AEM as a Cloud Service kompatible OAK-Indexdefinitionen umzuwandeln. Weitere Informationen finden Sie unter [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 
 * Neue Funktion zu [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) hinzugefügt, die ein separates Paket `ui.config` erstellt, das alle OSGi-Konfigurationen enthält.
 
 ### Fehlerbehebungen {#crt-bug-fixes}
 
-* Mehrere Fehlerkorrekturen, die mit den Werkzeugen AEM Dispatcher Converter und Repository Modernizer vorgenommen wurden. Weitere Informationen finden Sie unter [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Es wurden mehrere Fehlerkorrekturen an den Tools AEM Dispatcher Converter und Repository Modernizer durchgeführt. Weitere Informationen finden Sie unter [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-## AEM als Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Authentifizierte API-Aufrufe von Server zu Server - Generieren Sie die entsprechenden Zugriffstoken, um authentifizierte Server-zu-Server-API-Aufrufe zwischen Ihren externen Anwendungen und AEM als Cloud Service-Umgebung durchzuführen. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) oder im [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+* Authentifizierte API-Aufrufe von Server zu Server: Generieren Sie die entsprechenden Zugriffs-Tokens, um authentifizierte Server-zu-Server-API-Aufrufe zwischen Ihren externen Programmen und AEM as a Cloud Service-Umgebungen durchzuführen. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) oder im [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication).
 
 ### SDK Build Analyzer {#sdk-build-analyzers}
 
@@ -105,10 +106,10 @@ Weitere Informationen finden Sie in der Dokumentation [hier](https://experiencel
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.2.2 ist der 1. Februar 2021.
+Das Content Transfer Tool 1.2.2 wurde am 1. Februar 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Neue Funktion und Benutzeroberfläche zum Inhaltsübermittlungstool - Benutzerzuordnungswerkzeug hinzugefügt. Diese Funktion ordnet bestehende Benutzer und Gruppen im Rahmen der Aktivität zur Inhaltsmigration automatisch ihrer Adobe Identity Management System-IDs zu. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html).
-* Content Transfer Tool migriert jetzt alle Gruppen und Benutzer, auf die im Migrationsset verwiesen wird, einschließlich untergeordneter Elemente.
+* Neue Funktion und Benutzeroberfläche zum Content Transfer Tool – User Mapping Tool hinzugefügt. Diese Funktion ordnet bestehende Benutzer und Gruppen im Rahmen der Inhaltsmigration automatisch ihren Adobe Identity Management System-IDs zu. Weitere Informationen finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de).
+* Das Content Transfer Tool migriert jetzt alle Gruppen und Benutzer, auf die im Migrationssatz verwiesen wird, einschließlich untergeordneter Elemente.
 * Benutzer können beim Erstellen von Migrationssätzen bestimmte Pfade unter `/etc` auswählen.
