@@ -1,16 +1,16 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
 description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 84%
+source-wordcount: '287'
+ht-degree: 73%
 
 ---
-
 
 # Inhaltsfragmente – Konfigurations-Browser {#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 
 >[!CAUTION]
 >
->Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren, haben Sie keinen Zugriff auf die Option **Erstellen** für das Erstellen neuer Modelle.
+>Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
+>
+>* Die Option **Create** steht nicht zur Erstellung neuer Modelle zur Verfügung.
+>* können Sie nicht [den Mieter auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
+
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
 
