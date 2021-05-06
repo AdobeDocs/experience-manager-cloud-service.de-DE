@@ -3,12 +3,13 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
+source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 13%
+source-wordcount: '1473'
+ht-degree: 6%
 
 ---
+
 
 # Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
@@ -23,66 +24,125 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2021.3.0 ist der 25. März 2021.
-Die folgende Version (2021.4.0) wird am 29. April 2021 veröffentlicht.
+Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2021.4.0 ist der 6. Mai 2021.
+Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
-* [Eine PWA-Version einer Website](/help/sites-cloud/authoring/features/enable-pwa.md) kann jetzt über eine einfache Konfiguration auf Projektebene aktiviert werden.
-* Erweiterungen des Inhaltsfragmentmodells - jetzt können mehrzeilige Textdatentypen als Listen mit mehreren Feldern definiert werden.
-* UX-Erweiterungen im Content Fragment Editor - verschachtelte untergeordnete Fragmente werden jetzt in Breadcrumb angezeigt und die Ansicht der Aktionen zum Veröffentlichen, Speichern und Speichern und Beenden wurde verbessert.
+### Neue Funktionen {#what-is-new-foundation}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+* [Arbeitsablauf](/help/operations/replication.md#publish-content-tree-workflow)  zum Veröffentlichen der Inhaltsstruktur - Ein neues Workflow-Modell und ein Schritt bieten eine höhere Leistung beim Veröffentlichen von tiefen Hierarchien von Inhalten.
+
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
+
+* GraphQL Endpoints - jetzt ist es möglich, die AEM GraphQL API für einzelne AEM Sites Konfigurationen zu aktivieren und benutzerdefinierte GraphQL Endpunkte für diese Konfigurationen zu erstellen, indem eine neue GraphQL-Konsolenschnittstelle verwendet wird. Die Benutzeroberfläche ermöglicht auch die Verwaltung von GraphQL-Endpunkten.
+
+* Inhaltsmodelle, erweiterter Datums- und Uhrzeitdatentyp - es ist jetzt möglich, den Datums- und Uhrzeittyp so zu konfigurieren, dass nur Daten zu Datum, Uhrzeit oder Uhrzeit und Uhrzeit erstellt werden können.
+
+* Inhaltsmodelle, verbesserter Tag-Datentyp - der Datentyp Tags kann jetzt so konfiguriert werden, dass das Authoring von einzelnen oder mehreren Tags möglich ist.
+
+* Inhaltsmodelle, neuer Datentyp &quot;Tabstoppplatzhalter&quot;- der neue Datentyp &quot;Tabulatorplatzhalter&quot;ermöglicht die Gruppierung von Datentypen in Abschnitte, die im Inhaltsfragmenteditor unter Registerkarten gerendert werden.
+
+### Fehlerbehebungen in [!DNL Sites] {#bug-fixes-sites}
+
+* Inhaltsfragmente - Durch Verschieben von Inhaltsfragmenten oder Ordnern werden jetzt verschachtelte Verweise innerhalb des Fragments aktualisiert (CQ-4320815)
+
+* GraphQL - Fortbestehende Abfragen unterstützen jetzt benutzerdefinierte Endpunkte, die für AEM Sites-Konfigurationen spezifisch sind (CQ-4315928)
+
+## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, bei denen die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* Wenn ein Asset über die Option &quot;linkshare&quot;heruntergeladen wird, können Sie jetzt festlegen, ob die Darstellungen heruntergeladen oder nicht heruntergeladen werden sollen. Zuvor wurden alle Asset-Darstellungen heruntergeladen.
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* Administratoren können [!DNL Experience Manager] so konfigurieren, dass die Quelle von Assets nach der Erfassung von Massenelementen gelöscht wird. Siehe [Erfassung von Massenelementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* Beim Durchführen einer Gesundheitsprüfung zum Massenimport von Assets bietet Experience Manager jetzt weitere Informationsgründe für Fehler. Siehe [Erfassung von Massenelementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* Beim Importieren von Assets mit dem Massenimport-Tool haben Administratoren jetzt die Möglichkeit, die Quelldateien zu löschen, nachdem der Import erfolgreich war. Siehe [Erfassung von Massenelementen](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* [!DNL Experience Manager] erweitert die Funktion &quot;Connected Assets&quot;, um die Verwendung von  [!DNL Dynamic Media] Bildern in den unterstützten Kernkomponenten zu unterstützen. Siehe [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md) verwenden.
-* Experience Manager-Administratoren können die Erfassung von Massenelementen zu einem bestimmten Zeitpunkt planen. Administratoren können außerdem wiederholte Erfassungsvorgänge auf der Grundlage von Datum und Uhrzeit planen. Siehe [Erfassung von Massenelementen](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Beim Bearbeiten eines Metadaten-Schemas ermöglicht ein neues Stammpfadauswahl-Feld Administratoren eine schnelle und einfache Auswahl, wodurch die Konfigurationszeit verkürzt wird.
+
+* Metadaten vieler Assets können stapelweise mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift aktualisieren. Fügen Sie beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift in der CSV-Datei anstelle des Wortes `Date` hinzu.
+
+* Beim Durchsuchen von Assets in der Ansicht &quot;Spalte&quot;zeigt ein visueller Indikator den Status der einzelnen Assets an, die genehmigt oder abgelehnt wurden.
+
+* Beim Durchsuchen von Assets in der Ansicht &quot;Spalte&quot;wird ein visueller Indikator für abgelaufene Assets angezeigt.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bug-fixes-assets}
 
-* Die Copyright-Seite wird nicht angezeigt, wenn versucht wird, mehrere durch Rechte verwaltete Assets herunterzuladen. (CQ-4314403)
-* Wenn Sie sich entscheiden, eine INDD-Datei zu bearbeiten, ändert sich die Auflösung unerwartet. (CQ-4317376)
-* Nur die letzte Seite der InDesign-Vorlage befindet sich in der PDF-Darstellung. (CQ-4317305)
-* Die Tag-Auswahl dauert lange, bis sie geöffnet wird, wenn die Auswahl zu einem komplexen Metadaten-Schema gehört. (CQ-4316426)
-* Beim Hochladen von Assets mit demselben Dateinamen wie eine vorhandene wird das Dialogfeld zum Namenskonflikt nicht angezeigt, um den Benutzer zum Erstellen einer Version aufzufordern. (CQ-4315424)
-* Eigenschaften von Ordnern-Metadaten können im Popupmenü auf der Seite Eigenschaften eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie nicht angezeigt, wenn die Metadateneigenschaften des Ordners erneut geöffnet werden. (CQ-4314429)
-* Assets mit Dateinamen, die Leerzeichen oder Sonderzeichen enthalten, werden über den Browser hochgeladen. (CQ-4318381)
+* Beim Versuch, mehrere Assets oder Ordner zu verschieben, wird ein Fehler in der Konsole protokolliert und der Vorgang zum Verschieben ist nicht abgeschlossen. Der Verschieben-Vorgang schlägt fehl, wenn der Titel nicht aktualisiert werden kann. (CQ-4322080)
+
+* Ein Metadatenfeld kann basierend auf einer Regel ausgeblendet werden, die besagt, dass die Metadaten bei Erfüllung einer vordefinierten Bedingung nicht obligatorisch sind. Solche unsichtbaren Metadatenfelder werden jedoch als erforderliche Felder angezeigt. (CQ-4321285)
+
+* Der Import von Massenmetadaten schlägt fehl, weil das Datumsformat nicht korrekt ist. (CQ-4319014)
+
+* Wenn auf der Seite &quot;Eigenschaften&quot;eine Auswahl zum Aktualisieren von Metadaten vorgenommen wird, reagiert die Benutzeroberfläche nur langsam, wenn das Schema viele Optionen bereitstellt. (CQ-4318538)
+
+* Beim Aktualisieren und Speichern von Metadatenwerten in einem einzeiligen Textfeld werden die Werte im Dropdown-Menü gelöscht, auch wenn Bearbeitungen im Dropdown-Menü deaktiviert sind. (CQ-4317077)
+
+* Sie können Auslassungspunkte als Anmerkung verwenden, um Assets zu überprüfen. Wenn eine kleine Ellipse verwendet wird, überschneidet sich die Ellipse mit der Nummer der Anmerkung in der Druckversion. (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
-AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Einstiegs- und Registrierungserfahrungen zu machen. Diese Erlebnisse haben Unternehmen dabei unterstützt, Interessenten in Verkäufe umzuwandeln, erfasste Kundendaten zu verarbeiten, reaktionsfähige Erlebnisse basierend auf dem Profil der Audience bereitzustellen und vieles mehr. AEM Forms ist jetzt als Cloud-Dienst verfügbar.
+### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-Sie können [AEM Forms als Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren und E-Signaturen zu Formularen hinzuzufügen, Dokument aus Datensatz (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre vorhandenen PDF forms in digitale Formulare konvertieren. Zusätzlich zu den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, kostenlose Ausfallzeiten für Upgrades und Cloud-native Umgebung für die Entwicklung. Lesen Sie [diesen Blog-Beitrag](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html), um mehr über die Funktionen und Funktionen von AEM Forms als Cloud Service zu erfahren.
+* **Authentifizierungsmethode zur Identitätsauthentifizierung mit einer öffentlichen ID in Adobe Sign-aktiviertem adaptiven Forms verwenden**
 
-Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Service zu registrieren.
+   Mit fortschrittlichen maschinellen Lernalgorithmen ermöglicht der Adobe Sign-ID-Prozess Firmen auf der ganzen Welt eine hochwertige Authentifizierung der Identität ihres Empfängers. Jetzt können Sie die Authentifizierungsmethode für die Identitätsauthentifizierung mit einer Behördenkennung in Adobe Sign-aktiviertem adaptiven Forms verwenden.
+
+   Öffentliche ID ist eine Premium-Identitätsauthentifizierungsmethode, die den Empfänger anweist, [das Dokument eines staatlich ausgestellten Identitätsnachweises (Führerschein, nationale ID, Reisepass)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) hochzuladen und dieses Dokument dann zu bewerten, um seine Authentizität sicherzustellen.
+
+* **Unterstützung für die Verwendung von In-Form-Signaturen für asynchrone Übermittlungen von adaptiven Formularen**
+
+   Sie können jetzt die Formularsignaturerfahrung für asynchrone adaptive Formularübermittlungen verwenden. Sie können ein adaptives Formular auch in eine [!DNL Experience Manager Sites]-Seite einbetten und das Formular-Signaturerlebnis für adaptive Formularübermittlungen verwenden.
+
+* **Unterstützung für die Verwendung einer Variablen zum Angeben einer Anlage beim Vorausfüllen eines adaptiven Formulars für einen Zuweisungsschritt**
+
+   Beim Vorausfüllen eines adaptiven Formulars für einen Zuweisungsschritt können Sie jetzt eine Dokument-Typvariable verwenden, um eine Eingabehilfe für das adaptive Formular auszuwählen.
+
+* **Unterstützung für die Verwendung der Literaloption zum Festlegen des Werts für eine JSON-Typvariable**
+
+   Sie können mit der Option &quot;Literal&quot;Werte für eine JSON-Typvariable im Schritt &quot;Set Variable&quot;eines AEM Arbeitsablaufs festlegen. Mit der Option &quot;Literal&quot;können Sie eine JSON in Form einer Zeichenfolge angeben.
+
+* **Dokument of Record (DoR) mithilfe der Umgebung für die lokale Entwicklung erstellen**
+
+   Sie können eine XDP als Dokument einer Datensatzvorlage für Cloud Service-Instanzen und AEM Forms als Cloud Service-SDK (Local Development Umgebung) verwenden. Zuvor war die Unterstützung nur auf Cloud Service-Instanzen beschränkt.
+
+### Fehlerbehebungen in [!DNL Forms] {#bug-fixes-forms}
+
+* Wenn ein adaptives Formular, das so konfiguriert wurde, dass kein Dokument aus Datensatz generiert wird, an einen AEM Workflow gesendet wird, der zum Generieren des Dokuments aus Datensatz konfiguriert ist, wird keine Fehlermeldung angezeigt und die Aufgabe kann nicht gesendet werden.
+
+### Weitere Updates {#misc-2021-04-0-forms}
+
+* Um die Erkennung von Inhalten zu vereinfachen, generiert der Dienst jetzt eine Live-Miniaturansicht für XDP-, Dynamische PDF- und Schema-Dateien.
+* hinzufügen Möglichkeit, eine PDF-Datei in einen Ordner in der AEM Forms-Benutzeroberfläche zu verschieben.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Unterstützung für Magento 2.4.2
+* Unterstützung für Kategorie-UID - Hierdurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Strings für Kategorien-IDs verwenden
 
-* Die Produktdetailkomponente kann jetzt auf jeder Inhaltsseite verwendet und konfiguriert werden
+* AEM Erweiterung für PWA Studio incl. Beispielintegration
 
-* Freigabe der CIF Venia-Referenz-Website 2021.03.25, die die aktuelle CIF-Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25).
+* Neue CIF-Navigationskernkomponente, die die WCM-Navigationskernkomponente erweitert
 
-* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0).
+* Visueller Indikator für gestaffelte Katalogdaten im AEM Store
 
+* Der Commerce-Endpunkt kann jetzt über die Benutzeroberfläche von Cloud Manager konfiguriert werden.
+
+### Fehlerbehebungen {#bug-fixes-commerce}
+
+* Das Feld &quot;Stamm-Kategorie&quot;wurde nicht auf der Registerkarte &quot;Handel&quot;in den Seiteneigenschaften der Kategorien angezeigt
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.4.0 und 2021.3.0 beschrieben.
+In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.4.0 beschrieben.
 
 ### Veröffentlichungsdatum {#release-date-cm-april}
 
@@ -121,76 +181,6 @@ Die nächste Version ist für den 06. Mai 2021 geplant.
 
 * Die `Runmode`-Prüfung ergab Falsch-Positiv-Werte für Nicht-Ordner-Knoten.
 
-
-### Veröffentlichungsdatum {#release-date-cm-march}
-
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.3.0 ist der 11. März 2021.
-
-### Neue Funktionen {#what-is-new-march}
-
-* Kunden mit Umgebung mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre vorherigen Konfigurationen und können sich über die Benutzeroberfläche selbst versorgen.
-
-* Benutzer mit erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
-
-   * hinzufügen Sites-Lösung auf ein vorhandenes Programm mit Assets oder umgekehrt.
-   * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
-   * hinzufügen zweite, nicht verwendete Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
-
-* **AEM Push-** Aktualisierungsbildschirm wird jetzt sowohl für  *Pipeline-* Ausführung als auch für  ** Aktivitäten angezeigt.
-
-* Wenn eine Umgebung ausgeblendet wird, aber auch ein AEM Update verfügbar ist, hat der Status **Hibernated** Vorrang vor **Update available**.
-
-* Die Benutzer können nun ihre Cloud Manager-Rolle(en) anzeigen, indem sie die Option &quot;Ansicht Cloud Manager-Rolle(en)&quot;wählen, nachdem sie zum Symbol &quot;User Profil&quot;(oben rechts) von Unified Shell navigiert sind.
-
-* Die Beschriftung **Antrag auf Genehmigung** wurde zur besseren Klarheit in **Produktionsgenehmigung** umbenannt.
-
-* Die Beschriftung **Version** wurde im Bildschirm &quot;Produktions-Pipeline-Ausführung&quot;in **Git-Tag** umbenannt.
-
-* Die Beschriftungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr wahres Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
-
-* Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
-
-* Die Cloud Manager-Produktionspipeline umfasst jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
-
-### Fehlerbehebungen {#bug-fixes-cm-march}
-
-* Die Paketversion wurde in einigen Fällen während AEM Push-Aktualisierung übersprungen.
-
-* Einige Qualitätsprobleme wurden nicht richtig erkannt, wenn Pakete in andere Pakete eingebettet wurden.
-
-* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds &quot;Hinzufügen Programm&quot;generierte Standardname für das Programm ein Duplikat eines vorhandenen Programms sein.
-
-* Wenn der Benutzer unmittelbar nach dem Start einer Pipeline von der Seite für die Ausführung der Pipeline wegnavigiert, wird gelegentlich eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich Beginn ist.
-
-* Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kundenbuilds zu ungültigen Paketen führten.
-
-* Gelegentlich wird dem Benutzer auch dann ein grüner &quot;aktiver&quot;Status neben einer IP-Zulassungsliste angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
-
-* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
-
-## Content Transfer Tool {#content-transfer-tool}
-
-### Veröffentlichungsdatum {#release-date-ctt}
-
-Das Veröffentlichungsdatum für das Inhaltsübermittlungswerkzeug v1.3.4 ist der 19. März 2021.
-
-### Fehlerbehebungen {#bug-fixes-ctt}
-
-* CTT übersprungen Inhalte aus Ordnern mit demselben Namen, jedoch mit einem Bindestrich im Namen. Dieses Problem wurde behoben.
-
-### Veröffentlichungsdatum {#release-date-ctt-march}
-
-Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.3.0 ist der 04. März 2021.
-
-### Neue Funktionen in Content Transfer Tool {#what-is-new-ctt-march}
-
-* CTT installiert nun auf `/apps` anstelle von `/libs` Browser-Lesezeichen auf bestimmten Seiten möglicherweise nicht mehr gültig.
-* Wenn CTT installiert ist, muss der Benutzer eine zusätzliche Ebene aufrufen, um zur Seite &quot;Content Transfer&quot;zu gelangen. Weitere Informationen finden Sie unter [Inhaltsübermittlungstool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) verwenden.
-
-### Fehlerbehebungen {#bug-fixes-ctt-march}
-
-* Beim Migrieren von Inhalten aus einem bestimmten Pfad zog CTT nicht verwandte Ressourcen ein. Dieses Problem wurde behoben
-
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
@@ -202,18 +192,3 @@ Das Veröffentlichungsdatum für Best Practices Analyzer v2.1.12 ist der 12. Apr
 * Duplikat-Zeilen wurden in den BPA-Berichten angezeigt. Dieses Problem wurde behoben.
 * Die BPA-Benutzeroberfläche in AEM Version 6.4.2 gab einen JS-Fehler aus, der die Schaltfläche Bericht erstellen deaktiviert hatte. Dieses Problem wurde behoben
 
-
-## Code-Refaktorierungs-Tools {#code-refactoring-tools}
-
-### Neue Funktionen in den Code Refactoring Tools {#what-is-new-crt}
-
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Siehe [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für die neueste Version.
-   * Normalisieren Sie OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
-   * Benennen Sie OSGi-Konfigurationsordner in das angegebene Format um.
-   * Generieren Sie das Projekt ui.apps.structure.
-   * Erstellen Sie das Analysemodul.
-
-* Neue Funktionen und Verbesserungen für Dispatcher Converter. Siehe [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * Erstellen von separaten Dateien für verschiedene Einschlüsse anstelle der Auskleidung des Inhalts.
-   * Möglichkeit, sowohl den Ordnerpfad von vhosts als auch den Pfad zu vhost-Dateien zu verarbeiten.
-   * Generieren von Bauerndateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.
