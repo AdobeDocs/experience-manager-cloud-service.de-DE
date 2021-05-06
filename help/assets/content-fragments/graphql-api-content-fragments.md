@@ -1,15 +1,16 @@
 ---
 title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud Service mit der AEM GraphQL API für Versand ohne Kopfzeileninhalte verwenden.
-feature: Content Fragments,GraphQL API
+feature: Inhaltsfragmente, GraphQL-API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
-source-wordcount: '3257'
-ht-degree: 83%
+source-wordcount: '3901'
+ht-degree: 72%
 
 ---
+
 
 # AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten {#graphql-api-for-use-with-content-fragments}
 
@@ -101,11 +102,12 @@ Mit GraphQL können Sie Abfragen für Folgendes durchführen:
 
 * Eine **[Liste von Einträgen](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
-You can also perform:
+Sie können auch Folgendes ausführen:
 
-* [Persisted Queries, that are cached](#persisted-queries-caching)
--->
+* [Persistente Abfragen, die zwischengespeichert werden](#persisted-queries-caching)
+
+>[!NOTE]
+>Sie können GraphQL-Abfragen mit der [GraphiQL IDE](#graphiql-interface) testen und debuggen.
 
 ## Der GraphQL-Endpunkt für AEM {#graphql-aem-endpoint}
 
@@ -115,77 +117,83 @@ Der Endpunkt ist der Pfad, der für den Zugriff auf GraphQL für AEM verwendet w
 * Ihre GraphQL-Abfragen senden,
 * Antworten (auf Ihre GraphQL-Abfragen) empfangen.
 
-Der Repository-Pfad des GraphQL-Endpunkts für AEM lautet:
+Es gibt zwei Arten von Endpunkten in AEM:
+
+* Global
+   * Verfügbar für alle Sites.
+   * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aller Mieter verwenden.
+   * Wenn es Inhaltsfragmentmodelle gibt, die unter Mieter geteilt werden sollten, sollten diese unter dem globalen Mieter erstellt werden.
+* Mandant:
+   * Entspricht einer Mandantenkonfiguration, wie im [Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) definiert.
+   * Spezifisch für eine bestimmte Site/ein bestimmtes Projekt.
+   * Ein Mandanten-spezifischer Endpunkt verwendet die Inhaltsfragmentmodelle dieses bestimmten Mandanten zusammen mit denen des globalen Mandanten.
+
+>[!CAUTION]
+>
+>Der Inhaltsfragment-Editor kann zulassen, dass ein Inhaltsfragment eines Mandanten (über Richtlinien) auf ein Inhaltsfragment eines anderen Mandanten verweist.
+>
+>In einem solchen Fall sind nicht alle Inhalte über einen Pächter-spezifischen Endpunkt abrufbar.
+>
+>Der Autor des Inhalts sollte dieses Szenario steuern. Es kann beispielsweise nützlich sein, die Platzierung von gemeinsamen Inhaltsfragmentmodellen unter den globalen Mandanten zu erwägen.
+
+Der Repository-Pfad des GraphQL für AEM globalen Endpunkt lautet:
 
 `/content/cq:graphql/global/endpoint`
 
-Ihr Programm kann den folgenden Pfad in der Anfrage-URL verwenden:
+Für die Ihre App den folgenden Pfad in der Anforderungs-URL verwenden kann:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-Um den GraphQL-Endpunkt für AEM zu aktivieren, gehen Sie folgendermaßen vor:
-
->[!CAUTION]
->
->Diese Schritte können sich in naher Zukunft ändern.
+Um einen Endpunkt für GraphQL für AEM zu aktivieren, müssen Sie:
 
 * [Aktivieren des GraphQL-Endpunkts](#enabling-graphql-endpoint)
-* [Durchführen weiterer Konfigurationen](#additional-configurations-graphql-endpoint)
+* [Veröffentlichen des GraphQL-Endpunkts](#publishing-graphql-endpoint)
 
 ### Aktivieren des GraphQL-Endpunkts {#enabling-graphql-endpoint}
 
->[!NOTE]
->
->Unter [Unterstützende Pakete](#supporting-packages) finden Sie Informationen zu den Paketen, die Adobe bereitstellt, um diese Schritte zu vereinfachen.
-
-Um GraphQL-Abfragen in AEM zu ermöglichen, erstellen Sie einen Endpunkt unter `/content/cq:graphql/global/endpoint`:
-
-* Die Knoten `cq:graphql` und `global` müssen vom Typ `sling:Folder` sein.
-* Der Knoten `endpoint` muss vom Typ `nt:unstructured` sein und ein `sling:resourceType` von `graphql/sites/components/endpoint` enthalten.
+Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprechende Konfiguration. Siehe [Inhaltsfragmente - Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Der Endpunkt ist für jeden zugänglich. Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
+>Wenn die [Verwendung von Inhaltsfragmentmodellen nicht aktiviert wurde](/help/assets/content-fragments/content-fragments-configuration-browser.md), ist die Option **Erstellen** nicht verfügbar.
+
+So aktivieren Sie den entsprechenden Endpunkt:
+
+1. Navigieren Sie zu **Tools**, **Sites** und wählen Sie **GraphQL**.
+1. Wählen Sie **Erstellen**.
+1. Das Dialogfeld **Create new GraphQL Endpoint** wird geöffnet. Hier können Sie Folgendes angeben:
+   * **Name**: Name des Endpunkts; Sie können beliebigen Text eingeben.
+   * **GraphQL-Schema verwenden, bereitgestellt von**: Verwenden Sie das Dropdownmenü, um die gewünschte Site/das gewünschte Projekt auszuwählen.
+
+   >[!NOTE]
+   >
+   >Die folgende Warnung wird im Dialogfeld angezeigt:
+   >
+   >* *GraphQL-Endpunkte können Datensicherheits- und Leistungsprobleme hervorrufen, wenn sie nicht sorgfältig verwaltet werden. Stellen Sie sicher, dass nach dem Erstellen eines Endpunkts die entsprechenden Berechtigungen festgelegt werden.*
+
+
+1. Bestätigen Sie mit **Create**.
+1. Das Dialogfeld **Nächste Schritte** stellt einen direkten Link zur Sicherheitskonsole bereit, damit Sie sicherstellen können, dass der neu erstellte Endpunkt über die entsprechenden Berechtigungen verfügt.
+
+   >[!CAUTION]
+   >
+   >Der Endpunkt ist für jeden zugänglich. Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
+   >
+   >Sie können am Endpunkt geeignete ACLs für Ihre Anwendung einrichten.
+
+### Veröffentlichen des GraphQL-Endpunkts {#publishing-graphql-endpoint}
+
+Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umgebung vollständig verfügbar zu machen.
+
+>[!CAUTION]
 >
->Sie können am Endpunkt geeignete ACLs für Ihre Anwendung einrichten.
-
->[!NOTE]
+>Der Endpunkt ist für jeden zugänglich.
 >
->Ihr Endpunkt ist nicht vorkonfiguriert. Sie müssen [Zusätzliche Konfigurationen für den GraphQL-Endpunkt](#additional-configurations-graphql-endpoint) separat angeben.
-
->[!NOTE]
->Zusätzlich können Sie GraphQL-Abfragen mit der [GraphiQL-IDE](#graphiql-interface) testen und debuggen.
-
-### Zusätzliche Konfigurationen für den GraphQL-Endpunkt {#additional-configurations-graphql-endpoint}
-
->[!NOTE]
+>Bei Veröffentlichungsinstanzen kann dies Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Serverbelastung verursachen können.
 >
->Unter [Unterstützende Pakete](#supporting-packages) finden Sie Informationen zu den Paketen, die Adobe bereitstellt, um diese Schritte zu vereinfachen.
-
-Weitere Konfigurationen sind erforderlich:
-
-* Dispatcher:
-   * Zulassen erforderlicher URLs
-   * Obligatorisch
-* Vanity-URL:
-   * Zuweisen einer vereinfachten URL für den Endpunkt
-   * Optional
-
-### Unterstützende Pakete {#supporting-packages}
-
-Um die Einrichtung eines GraphQL-Endpunkts zu vereinfachen, stellt Adobe das Paket [GraphQL-Beispielprojekt (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) bereit.
-
-Dieses Archiv enthält sowohl [die erforderliche zusätzliche Konfiguration](#additional-configurations-graphql-endpoint) als auch [den GraphQL-Endpunkt](#enabling-graphql-endpoint). Wenn es auf einer einfachen AEM-Instanz installiert wird, wird ein vollständig funktionsfähiger GraphQL-Endpunkt unter `/content/cq:graphql/global/endpoint` verfügbar gemacht.
-
-Dieses Paket soll als Blueprint für Ihre eigenen GraphQL-Projekte dienen. Einzelheiten zur Verwendung des Pakets finden Sie in der **README-Datei** zum Paket.
-
-Wenn Sie die erforderliche Konfiguration lieber manuell erstellen möchten, stellt Adobe auch ein dediziertes [GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip) bereit. Dieses Inhaltspaket enthält nur den GraphQL-Endpunkt ohne Konfiguration.
+>Sie müssen ACLs entsprechend Ihrer Anwendungsfälle am Endpunkt einrichten.
 
 ## GraphiQL-Schnittstelle {#graphiql-interface}
-
-<!--
-AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
--->
 
 Eine Implementierung der [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-Standardschnittstelle steht zur Verwendung mit AEM GraphQL zur Verfügung. Sie kann [mit AEM installiert werden](#installing-graphiql-interface).
 
@@ -202,10 +210,6 @@ Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, 
 ### AEM GraphiQL-Schnittstelle installieren {#installing-graphiql-interface}
 
 Die GraphiQL-Benutzeroberfläche kann mit einem dedizierten Paket auf AEM installiert werden: das [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)-Paket.
-
-<!--
-See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
--->
 
 ## Anwendungsfälle für Autoren- und Veröffentlichungsumgebungen {#use-cases-author-publish-environments}
 
@@ -255,14 +259,6 @@ Wenn ein Benutzer beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Articl
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL für AEM ist das Schema flexibel. Dies bedeutet, dass es jedes Mal automatisch generiert wird, wenn ein Inhaltsfragmentmodell erstellt, aktualisiert oder gelöscht wird. Die Datenschema-Caches werden auch aktualisiert, wenn Sie ein Inhaltsfragmentmodell aktualisieren.
-
-<!--
->[!NOTE]
->
->AEM does not use the concept of namespacing for Content Fragment Models. 
->
->If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
--->
 
 Der Sites GraphQL-Service überwacht (im Hintergrund) alle Änderungen, die an einem Inhaltsfragmentmodell vorgenommen werden. Wenn Aktualisierungen erkannt werden, wird nur dieser Teil des Schemas neu generiert. Diese Optimierung spart Zeit und bietet Stabilität.
 
@@ -318,7 +314,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Mehrzeiliger Text | Zeichenfolge |  Dient zum Ausgeben von Text, wie z. B. den Text eines Artikels |
 | Zahl |  Gleitkommazahl, [Gleitkommazahl] | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
 | Boolesch |  Boolesch |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
-| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen |
+| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ sind in AEM GraphQL drei Varianten verfügbar: `onlyDate`, `onlyTime`, `dateTime` |
 | Aufzählung |  Zeichenfolge |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  [Zeichenfolge] |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  Zeichenfolge |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
@@ -437,7 +433,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 ## GraphQL-Variablen {#graphql-variables}
 
-Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation für GraphiQL](https://graphql.org/learn/queries/#variables).
+Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation für Variablen](https://graphql.org/learn/queries/#variables).
 
 Um beispielsweise alle Inhaltsfragmente vom Typ `Article` abzurufen, die eine bestimmte Variante aufweisen, können Sie die Variable `variation` in GraphiQL angeben.
 
@@ -580,27 +576,50 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 
 
-
 * GraphQL-Vereinigungstypen werden unterstützt:
 
    * Verwenden Sie `... on`
       * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
 
-<!--
-## Persisted Queries (Caching) {#persisted-queries-caching}
+## Persistente Abfragen (Caching) {#persisted-queries-caching}
 
-After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
+Nachdem eine Abfrage mit einer POST-Anfrage vorbereitet wurde, kann sie mit einer GET-Anfrage ausgeführt werden, die von HTTP-Caches oder einem CDN zwischengespeichert werden kann.
 
-This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
+Dies ist erforderlich, da POST-Abfragen normalerweise nicht zwischengespeichert werden. Wenn Sie GET mit der Abfrage als Parameter verwenden, besteht ein erhebliches Risiko, dass der Parameter für HTTP-Services und Vermittler zu groß wird.
 
-Here are the steps required to persist a given query:
+Beständige Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden (Mandant-)Konfiguration](#graphql-aem-endpoint) in Verbindung steht; damit sie entweder
+
+* Globale Konfiguration und Endpunkt
+Die Abfrage hat Zugriff auf alle Inhaltsfragmentmodelle.
+* Spezifische Mandantenkonfiguration(en) und Endpunkte
+Zum Erstellen einer beständigen Abfrage für eine bestimmte Mandantenkonfiguration ist ein entsprechender tendenzieller Endpunkt erforderlich (um Zugriff auf die entsprechenden Inhaltsfragmentmodelle zu gewähren).
+Um beispielsweise eine persistente Abfrage speziell für den WKND-Mandanten zu erstellen, müssen im Voraus eine entsprechende WKND-spezifische Mandantenkonfiguration und ein WKND-spezifischer Endpunkt erstellt werden.
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>Weitere Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+>
+>Die **GraphQL Persistence Abfragen** müssen für die entsprechende Mandantenkonfiguration aktiviert werden.
 
-1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
+Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein Modell `my-model` aus der Mandant-Konfiguration `my-conf` verwendet:
 
-   For example, create a persisted query:
+* Sie können eine Abfrage mit dem spezifischen Endpunkt `my-conf` erstellen und die Abfrage wird wie folgt gespeichert:
+   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* Sie können die gleiche Abfrage mit dem Endpunkt `global` erstellen. Anschließend wird die Abfrage jedoch wie folgt gespeichert:
+   `/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>Dies sind zwei verschiedene Abfragen - die unter verschiedenen Pfaden gespeichert werden.
+>
+>Sie verwenden zufällig das gleiche Modell - aber über verschiedene Endpunkte.
+
+
+Die folgenden Schritte sind erforderlich, um eine bestimmte Abfrage beizubehalten:
+
+1. Bereiten Sie die Abfrage mittels einer PUT-Anfrage an die neue Endpunkt-URL `/graphql/persist.json/<config>/<persisted-label>` vor.
+
+   Erstellen Sie beispielsweise eine persistente Abfrage:
 
    ```xml
    $ curl -X PUT \
@@ -621,32 +640,32 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. At this point, check the response.
+1. Überprüfen Sie an dieser Stelle die Antwort.
 
-   For example, check for success:
+   Prüfen Sie zum Beispiel auf Erfolg:
 
-     ```xml
-     {
-       "action": "create",
-       "configurationName": "wknd",
-       "name": "plain-article-query",
-       "shortPath": "/wknd/plain-article-query",
-       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-     }
-     ```
+   ```xml
+   {
+     "action": "create",
+     "configurationName": "wknd",
+     "name": "plain-article-query",
+     "shortPath": "/wknd/plain-article-query",
+     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+   }
+   ```
 
-1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
+1. Sie können die persistente Abfrage dann erneut ausführen, indem Sie die URL `/graphql/execute.json/<shortPath>` per GET-Anfrage abrufen.
 
-   For example, use the persisted query:
+   Verwenden Sie zum Beispiel die persistente Abfrage:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Update a persisted query by POSTing to an already existing query path.
+1. Aktualisieren Sie eine persistente Abfrage mittels POST-Anfrage an einen bereits vorhandenen Abfragepfad.
 
-   For example, use the persisted query:
+   Verwenden Sie zum Beispiel die persistente Abfrage:
 
    ```xml
    $ curl -X POST \
@@ -670,9 +689,9 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. Create a wrapped plain query.
+1. Erstellen Sie eine umschlossene einfache Abfrage.
 
-   For example:
+   Beispiel:
 
    ```xml
    $ curl -X PUT \
@@ -683,9 +702,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Create a wrapped plain query with cache control.
+1. Erstellen Sie eine umschlossene Abfrage mit Cache-Steuerung.
 
-   For example:
+   Beispiel:
 
    ```xml
    $ curl -X PUT \
@@ -696,9 +715,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Create a persisted query with parameters:
+1. Erstellen Sie eine persistente Abfrage mit Parametern:
 
-   For example:
+   Beispiel:
 
    ```xml
    $ curl -X PUT \
@@ -722,62 +741,62 @@ Here are the steps required to persist a given query:
      }'
    ```
 
-1. Executing a query with parameters.
+1. Ausführen einer Abfrage mit Parametern.
 
-   For example:
+   Beispiel:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
+   
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. To execute the query on publish, the related persist tree need to replicated
+1. Um die Abfrage bei der Veröffentlichung auszuführen, muss der zugehörige Persistenzbaum repliziert werden
 
-   * Using a POST for replication:
+   * Verwenden einer POST-Anfrage für die Replikation:
 
-     ```xml
-     $curl -X POST   http://localhost:4502/bin/replicate.json \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-       -F cmd=activate
-     ```
+      ```xml
+      $curl -X POST   http://localhost:4502/bin/replicate.json \
+        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+        -F cmd=activate
+      ```
 
-   * Using a package:
-     1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-     1. Build the package.
-     1. Replicate the package.
+   * Verwenden eines Pakets:
+      1. Erstellen Sie eine neue Paketdefinition.
+      1. Fügen Sie die Konfiguration ein (z. B. `/conf/wknd/settings/graphql/persistentQueries`).
+      1. Erstellen Sie das Paket.
+      1. Replizieren Sie das Paket.
+   * Verwenden eines Replikations-/Verteilungs-Tools:
+      1. Wechseln Sie zum Verteilungs-Tool.
+      1. Wählen Sie die Baumaktivierung für die Konfiguration (z. B. `/conf/wknd/settings/graphql/persistentQueries`) aus.
+   * Verwenden eines Workflows (über die Workflow-Starter-Konfiguration):
+      1. Definieren Sie eine Workflow-Starterregel zum Ausführen eines Workflow-Modells, das die Konfiguration für verschiedene Ereignisse repliziert (z. B. Erstellen, Ändern).
 
-   * Using replication/distribution tool.
-     1. Go to the Distribution tool.
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-   * Using a workflow (via workflow launcher configuration):
-     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
-
-   >[!NOTE]
-   >
-   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
-   >
-   >If that is not the case it will not be able to execute.
+1. Sobald die Abfragekonfiguration veröffentlicht wurde, gelten dieselben Prinzipien, nur unter Verwendung des Veröffentlichungsendpunkts.
 
    >[!NOTE]
    >
-   >Any semicolons (";") in the URLs need to be encoded.
+   >Für den anonymen Zugriff geht das System davon aus, dass „jeder“ über die ACL Zugriff auf die Abfragekonfiguration hat.
    >
-   >For example, as in the request to Execute a persisted query:
+   >Ist dies nicht der Fall, kann sie nicht ausgeführt werden.
+
+   >[!NOTE]
    >
-   >```xml
+   >Alle Semikolons („;“) in den URLs müssen kodiert werden.
+   >
+   >Beispiel: Wie in der Anfrage zum Ausführen einer persistenten Abfrage:
+   >
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
--->
 
 ## Abfragen des GraphQL-Endpunkts von einer externen Website {#query-graphql-endpoint-from-external-website}
 
@@ -796,13 +815,8 @@ Um auf den GraphQL-Endpunkt zugreifen zu können, muss eine CORS-Richtlinie im C
 
 Diese Konfiguration muss eine vertrauenswürdige Website-Herkunft `alloworigin` oder `alloworiginregexp` angeben, für die der Zugriff gewährt werden muss.
 
-<!--
-For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
--->
+Um beispielsweise Zugriff auf den GraphQL-Endpunkt und den Endpunkt für beständige Abfragen für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
 
-Um beispielsweise den Zugriff auf den GraphQL-Endpunkt für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
-
-<!--
 ```xml
 {
   "supportscredentials":true,
@@ -832,39 +846,6 @@ Um beispielsweise den Zugriff auf den GraphQL-Endpunkt für `https://my.domain` 
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
-  ]
-}
-```
--->
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
