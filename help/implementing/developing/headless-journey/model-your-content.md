@@ -1,14 +1,14 @@
 ---
 title: So gestalten Sie Ihren Inhalt
-description: In diesem Teil der AEM Developer-Journey lernen Sie, wie Sie Ihre Inhalte für AEM Headless-Versand mit Datenmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
+description: In diesem Teil der AEM Developer-Journey lernen Sie, wie Sie Ihre Inhalte für AEM Headless-Versand mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 4%
 
 ---
@@ -38,10 +38,10 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr 
 
 * **Audience**: Anfänger
 * **Zielsetzung**: Erfahren Sie, wie Sie Ihre Inhaltsstruktur modellieren und diese Struktur dann mithilfe von AEM Inhaltsfragmentmodellen und Inhaltsfragmenten realisieren:
-   * Einführung von Konzepten und Terminologie für [Datenmodellierung](#data-modeling).
-   * Lernen Sie [warum Datenmodellierung für den Versand mit Headless-Inhalt](#data-modeling-for-aem-headless) erforderlich ist.
-   * Lernen Sie [wie Sie diese Struktur mit AEM Inhaltsfragmentmodellen](#create-structure-content-fragment-models) (und mit [Inhaltsfragmenten](#use-content-to-author-content) erstellen) realisieren.
-   * Lernen Sie [wie Sie Ihren Inhalt modellieren](#getting-started-examples); Grundprinzipien mit Basisproben.
+   * Einführung von Konzepten und Terminologie für die Daten-/Inhaltsmodellierung.
+   * Erfahren Sie, warum Inhaltsmodellierung für den Versand von Headless-Inhalten erforderlich ist.
+   * Erfahren Sie, wie Sie diese Struktur mithilfe von AEM Inhaltsfragmentmodellen (und Autoren von Inhalten mit Inhaltsfragmenten) realisieren.
+   * Erfahren Sie, wie Sie Ihre Inhalte modellieren können. Grundprinzipien mit Basisproben.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr 
 >
 >Wir werden nur die Aspekte berücksichtigen, die bei der Modellierung von Daten für die Verwendung mit AEM Headless von Interesse sind.
 
-## Datenmodellierung {#data-modeling}
+## Inhaltsmodellierung {#content-modeling}
 
 *Es ist eine große, schlechte Welt da draußen*.
 
 Vielleicht nicht, aber es ist sicherlich eine große ***komplizierte*** Welt da draußen und Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, unter Verwendung der spezifischen Informationen, die für einen bestimmten Zweck benötigt werden.
+
+>[!NOTE]
+>
+>AEM befasst sich mit Inhalten. Wir bezeichnen Datenmodellierung als Inhaltsmodellierung.
 
 Beispiel:
 
@@ -91,7 +95,7 @@ Die Informationen, die wir über sie speichern möchten, sind die **Attribute** 
 
 Dann gibt es zwischen den Entitäten verschiedene **Beziehungen**. Zum Beispiel hat eine Schule normalerweise nur einen Schulleiter und viele Lehrer (und normalerweise ist der Schulleiter auch Lehrer).
 
-Der Prozess der Analyse und Definition dieser Informationen zusammen mit den Beziehungen zwischen ihnen wird als **Datenmodellierung** bezeichnet.
+Der Prozess der Analyse und Definition dieser Informationen zusammen mit den Beziehungen zwischen ihnen wird als **Inhaltsmodellierung** bezeichnet.
 
 ### Grundlagen {#basics}
 
@@ -128,9 +132,9 @@ Alles ist ein Balanceakt, aber die Schaffung einer Struktur, die zu komplex ist 
 
 * Schwere Auswirkungen auf die Leistung, wenn die Abfrage auf mehrere verschachtelte (referenzierte) Inhaltsfragmente zugreifen muss, um den erforderlichen Inhalt abzurufen.
 
-## Datenmodellierung für AEM Headless {#data-modeling-for-aem-headless}
+## Inhaltsmodellierung für AEM Headless {#content-modeling-for-aem-headless}
 
-Datenmodellierung ist eine Reihe etablierter Techniken, oft verwendet, wenn entwickelte Beziehungsdatenbanken, also was bedeutet es für AEM Headless?
+Die Datenmodellierung ist eine Reihe etablierter Techniken, die oft verwendet werden, wenn Datenbanken über Beziehungen entwickelt werden. Was bedeutet die Inhaltsmodellierung für AEM Headless?
 
 ### Warum? {#why}
 
@@ -142,7 +146,7 @@ Das bedeutet, dass Ihre Anwendung die Form der Antwort im Voraus kennt und daher
 
 AEM verwendet Inhaltsfragmente, um die Strukturen bereitzustellen, die für den kopflosen Versand Ihrer Inhalte in Ihren Anwendungen erforderlich sind.
 
-Die Struktur Ihres Datenmodells lautet:
+Die Struktur Ihres Inhaltsmodells lautet:
 
 * durch die Definition Ihres Inhaltsfragmentmodells,
 * als Grundlage der Inhaltsfragmente verwendet, die für Ihre Inhaltsgenerierung verwendet werden.
@@ -173,7 +177,7 @@ In einem Modell:
 1. **Mit** Datentypen können Sie die einzelnen Attribute definieren.
 Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** und dessen Dienstjahre als **Zahl**.
 1. Mit den Datentypen **Content Reference** und **Fragmentverweis** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
-1. Mit dem Datentyp **Fragmentverweis** können Sie mehrere Strukturebenen realisieren, indem Sie Ihre Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Datenmodellierung von entscheidender Bedeutung.
+1. Mit dem Datentyp **Fragmentverweis** können Sie mehrere Strukturebenen realisieren, indem Sie Ihre Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
 
 Beispiel:
 ![Inhaltsmodellierung mit Inhaltsfragmenten](assets/headless-modeling-01.png "Inhaltsmodellierung mit Inhaltsfragmenten")
@@ -250,4 +254,4 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
    * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)  - Erstellen und Erstellen von Inhaltsfragmenten; Diese Seite führt Sie zu anderen detaillierten Abschnitten
 * [AEM GraphQL-Schema](/help/implementing/developing/headless-journey/access-your-content.md)  - wie GraphQL Modelle realisiert
 * [Die Struktur des Musterinhaltsfragments](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)  - Eine kurze Videoschulung mit einem Überblick über die Verwendung AEM Funktionen ohne Kopfdaten, einschließlich Datenmodellierung und GraphQL
+* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)  - Eine kurze Videoschulung mit einem Überblick über die Verwendung AEM Funktionen ohne Kopfdaten, einschließlich Inhaltsmodellierung und GraphQL
