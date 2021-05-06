@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 31%
+source-wordcount: '2120'
+ht-degree: 32%
 
 ---
 
@@ -146,24 +146,6 @@ Die **Fragmentreferenz**:
 ### JSON-Vorschau {#json-preview}
 
 Um beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu helfen, können Sie die JSON-Ausgabe im Inhaltsfragment-Editor Vorschau haben.
-
-### Erstellen von Inhaltsfragmentmodellen und Inhaltsfragmenten {#creating-content-fragment-models-and-content-fragments}
-
-Erstens sind Inhaltsfragmentmodelle für Ihre Site aktiviert. Dies geschieht im Konfigurationsbrowser:
-
-![Konfiguration definieren](assets/cfm-configuration.png)
-
-Anschließend können die Inhaltsfragmentmodelle modelliert werden:
-
-![Inhaltsfragmentmodell](assets/cfm-model.png)
-
-Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
-
-![Inhaltsfragmente-Editor](assets/cfm-editor.png)
-
->[!NOTE]
->
->Siehe Arbeiten mit Inhaltsfragmenten.
 
 ## GraphQL-Schema-Generierung aus Inhaltsfragmenten {#graphql-schema-generation-content-fragments}
 
