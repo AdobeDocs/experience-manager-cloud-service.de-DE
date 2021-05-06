@@ -1,16 +1,16 @@
 ---
 title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre kostenlosen Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
-feature: Content Fragments
+feature: Inhaltsfragmente
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 94%
+source-wordcount: '2309'
+ht-degree: 90%
 
 ---
-
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
@@ -61,7 +61,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
    >
    >Wenn ein Feld ein **Pflichtfeld** ist, wird die **Bezeichnung** im linken Bereich mit einem Stern markiert (*****).
 
-   ![Eigenschaften](assets/cfm-models-03.png)
+![Eigenschaften](assets/cfm-models-03.png)
 
 1. **So fügen Sie ein Feld hinzu**
 
@@ -111,6 +111,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+   * Wenn auf ein Bild verwiesen wird, können Sie eine Miniaturansicht anzeigen
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -121,6 +122,13 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Damit AEM direktes JSON speichern kann, das Sie von einem anderen Service kopiert/eingefügt haben.
       * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
       * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmente-Editor.
+* **Registerkarten-Platzhalter**
+   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhaltsfragmentinhalts.
+Dies wird als Trennlinie im Modelleditor angezeigt, wobei Abschnitte der Liste von Inhaltsdatentypen getrennt werden. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+Im Fragmenteditor wird jede Instanz als Registerkarte angezeigt.
+
+      >[!NOTE]
+      Dieser Datentyp wird ausschließlich zur Formatierung verwendet und wird vom AEM GraphQL-Schema ignoriert.
 
 ## Eigenschaften {#properties}
 
@@ -165,6 +173,8 @@ Durch Aktivieren des Kontrollkästchens „Übersetzbar“ in einem Feld im CF-M
    * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<tenant>` hinzugefügt wird, falls er noch nicht vorhanden ist.
    * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
 
+* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Content Reference](#content-reference)**.
+
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentreferenz (verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
 
 ## Validierung {#validation}
@@ -181,12 +191,6 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
    * Es können nur Bilder in einem vordefinierten Bereich von Breite und/oder Höhe (in Pixel) referenziert werden.
 * **Fragmentreferenz**
    * Testen Sie, ob ein bestimmtes Inhaltsfragmentmodell vorhanden ist.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Verwenden von Verweisen, um verschachtelten Inhalt zu bilden {#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ Mit der Inhaltsreferenz können Sie Content aus einer anderen Quelle rendern, zu
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
-* Den **Stammpfad** für referenzierten Content.
-* Die Inhaltstypen, auf die verwiesen werden kann.
-* Einschränkungen bezüglich der Dateigrößen.
-* Einschränkungen für Bilder.
-   <!-- Check screenshot - might need update -->
-   ![Inhaltsreferenz](assets/cfm-content-reference.png)
+* Den **Stammpfad** für referenzierten Content
+* Die Inhaltstypen, auf die verwiesen werden kann
+* Einschränkungen bezüglich der Dateigrößen
+* Wenn auf ein Bild verwiesen wird:
+   * Miniatur anzeigen
+   * Bildbegrenzungen für Höhe und Breite
+
+![Inhaltsreferenz](assets/cfm-content-reference.png)
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
-   <!-- Check screenshot - might need update -->
    ![Fragmentreferenz](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ Sie können die **Eigenschaften** eines Inhaltsfragmentmodells bearbeiten:
    * **Tags**
    * **Beschreibung**
    * **Bild hochladen**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
