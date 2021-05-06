@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -212,6 +212,20 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
    * Direktes Bearbeiten des referenzierten Fragments
    * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 
+### Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
+
+Erstens sind Inhaltsfragmentmodelle für Ihre Site aktiviert. Dies geschieht im Konfigurationsbrowser:
+
+![Konfiguration definieren](assets/cfm-configuration.png)
+
+Anschließend können die Inhaltsfragmentmodelle modelliert werden:
+
+![Inhaltsfragmentmodell](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>Siehe Arbeiten mit Inhaltsfragmenten.
+
 ## Verwenden des Modells zum Erstellen von Inhalten mit Inhaltsfragmenten {#use-content-to-author-content}
 
 Inhaltsfragmente basieren immer auf einem Inhaltsfragmentmodell. Das Modell stellt die Struktur bereit, das Fragment enthält den Inhalt.
@@ -231,6 +245,16 @@ Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragment-Editor ö
 * Bearbeiten Sie die Metadaten.
 * Baumstruktur anzeigen.
 * Vorschau der JSON-Vertretung.
+
+### Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
+
+Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
+
+![Inhaltsfragmente-Editor](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Siehe Arbeiten mit Inhaltsfragmenten.
 
 ## Erste Schritte mit einigen Beispielen {#getting-started-examples}
 
