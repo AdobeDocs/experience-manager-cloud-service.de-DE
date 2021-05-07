@@ -1,16 +1,21 @@
 ---
 title: Testen mit Experience Audit – Cloud Services
 description: Testen mit Experience Audit – Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 100%
 
 ---
 
-
 # Testen mit Experience Audit {#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="Testen mit Experience Audit"
+>abstract="Experience Audit ist eine Funktion, die in Cloud Manager-Sites-Produktions-Pipelines verfügbar ist, und wird von Google Lighthouse, einem Open-Source-Tool von Google, unterstützt. Die Funktion ist in allen Cloud Manager-Produktions-Pipelines aktiviert."
 
 Experience Audit ist eine Funktion, die in Cloud Manager-Sites-Produktions-Pipelines verfügbar ist, und wird von Google Lighthouse, einem Open-Source-Tool von Google, unterstützt. Die Funktion ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
@@ -61,4 +66,3 @@ Durch das Aufrufen der Details in einem Test kann eine detailliertere Bewertung 
 Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden. Die Details der Tests und damit verbundene Anleitungen werden von Google Lighthouse bereitgestellt.
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
