@@ -2,16 +2,21 @@
 title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 feature: Dispatcher
+exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 translation-type: tm+mt
-source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '4169'
+source-wordcount: '4211'
 ht-degree: 74%
 
 ---
 
-
 # Dispatcher in der Cloud {#Dispatcher-in-the-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispoverview"
+>title="Dispatcher in der Cloud"
+>abstract="In diesem Abschnitt wird beschrieben, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben."
 
 ## Konfiguration und Testen von Apache und Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
