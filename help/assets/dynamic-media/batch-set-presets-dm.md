@@ -6,10 +6,10 @@ feature: Bildvorgaben,Viewer-Vorgaben
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
-ht-degree: 58%
+source-wordcount: '3435'
+ht-degree: 57%
 
 ---
 
@@ -39,9 +39,9 @@ Um Ihnen die Bedeutung der Verwendung einer Namenskonvention zu verdeutlichen, n
 
 Auf der Seite **[!UICONTROL Stapelsatzvorgabe]** in [!DNL Dynamic Media] können Sie Stapelsatzvorgaben erstellen, bearbeiten oder löschen und Stapelsatzvorgaben auf Asset-Ordner anwenden oder daraus entfernen. Sie können entweder die Dropdown-Listen für Formularfelder verwenden, um eine Stapelsatzvorgabe zu definieren, oder das Feld **[!UICONTROL Raw-Code]** verwenden, mit dem Sie die Syntax für reguläre Ausdrücke eingeben können.
 
-Sie können so viele Stapelsatzvorgaben wie nötig erstellen, um alle erforderlichen Asset-Aufnahmeaufträge abzudecken.
+Sie können viele Stapelsatzvorgaben erstellen, damit Sie alle erforderlichen Asset-Inhabesaufträge abdecken können.
 
-**Über Asset-Benennungskonventionen**
+### Über Asset-Benennungskonventionen
 
 Der Bereich **[!UICONTROL Asset-Benennungsregel]** auf der Seite **[!UICONTROL Stapelsatzvorgabe]** enthält zwei Elemente, die Sie zum Definieren Ihrer Stapelsatzvorgabe verwenden können: **[!UICONTROL Übereinstimmung]** und **[!UICONTROL Basisname]**. Mit diesen Elementen können Sie eine Namenskonvention definieren und den Teil der Konvention identifizieren, der zum Benennen des Sets verwendet wird, der diese Elemente enthält. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,11 +51,11 @@ Beispielsweise könnte die Syntax für einen regulären Ausdruck mit einer wört
 
 `(\w+)-\w+-\w+`
 
-**Über die Sequenzreihenfolge**
+### Über die Sequenzreihenfolge
 
 Sie können optional die Reihenfolge definieren, in der Bilder angezeigt werden, nachdem der Bildsatz oder das Rotationsset in [!DNL Dynamic Media] gruppiert wurde. Die Assets werden standardmäßig in alphanumerischer Reihenfolge angeordnet. Sie können jedoch auch eine durch Kommas getrennte Liste mit regulären Ausdrücken verwenden, um die Reihenfolge anzupassen.
 
-In Bezug auf die Automatisierung der Sequenzreihenfolge geben Sie Regeln an, um bei Bedarf eine bestimmte Sortierung von Assets zu erzwingen. Nehmen Sie zum Beispiel an, dass Ihr erstes Asset immer `_main` heißt und Sie möchten, dass darauf `_alt1`, `_alt2`, `_alt3` usw. folgen. In solchen Fällen können Sie eine Regel für die Sequenzreihenfolge mit der folgenden Syntax erstellen:
+In Bezug auf die Automatisierung der Sequenzreihenfolge geben Sie Regeln an, um bei Bedarf eine bestimmte Sortierung von Assets zu erzwingen. Nehmen Sie zum Beispiel an, dass Ihr erstes Asset immer `_main` heißt und Sie möchten, dass darauf `_alt1`, `_alt2`, `_alt3` usw. folgen. In solchen Fällen können Sie eine Regel zur Sequenzreihenfolge mit der folgenden Syntax erstellen:
 
 `.*_main,.*_alt[0-9]`
 
@@ -67,7 +67,7 @@ Nach dem Erstellen einer Stapelsatzvorgabe wenden Sie diese auf einen oder mehre
 
 **So erstellen Sie eine Stapelsatzvorgabe für ein Bildset oder Rotationsset:**
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für e
 | Abgeleitete Assets einschließen | Optional. Wenn die IPS von [!DNL Dynamic Media] generierte oder abgeleitete Bilder mit dem Rotationsset oder Bildsatz enthalten sollen, wählen Sie **[!UICONTROL Ja]** (Standard). Ein abgeleitetes Asset ist ein Bild, das nicht direkt von einem Benutzer hochgeladen wurde. Stattdessen wurde das Asset vom IPS erzeugt, wenn ein primäres Asset hochgeladen wurde. Zum Beispiel wird ein Bild-Asset, das IPS aus einer Seite in einer PDF-Datei generiert hat, als die PDF-Datei in [!DNL Dynamic Media] hochgeladen wurde, als abgeleitetes Asset betrachtet. |
 | Zielordner | Optional. Wenn Sie eine große Anzahl von Bildsätzen oder Rotationssets definieren, empfiehlt Adobe, diese Bildsätze von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Erstellen Sie daher einen Ordner &quot;Bildsätze&quot;oder &quot;Rotationssets&quot;und leiten Sie die Anwendung an die Stelle, an der die Stapelsätze erstellt wurden.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Ordnerstruktur &quot;Experience Manager Assets&quot;(`/content/dam`) die Stapelsatzvorgabe aktiv ist. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, um ihn als Zielordner zuzulassen. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Es kann mehreren Ordnern eine bestimmte Stapelsatzvorgabe zugewiesen werden, wenn Sie die Vorgabe mithilfe der  **[!UICONTROL Eigenschaften]** des Ordners anwenden. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird der mit der Stapelsatzvorgabe erstellte Bildsatz oder Rotationsset im selben Ordner erstellt, in den Sie den Asset-Ordner hochgeladen haben. |
 | **[!UICONTROL Benennungskonvention festlegen]** |  |
-| Präfix<br>oder<br>Suffix | Optional. Geben Sie entweder ein Präfix, ein Suffix oder beide in die entsprechenden Felder ein.<br>Mit den Feldern &quot;Präfix&quot;und &quot;Suffix&quot;können Sie so viele Stapelsatzvorgaben mit einer alternativen, benutzerdefinierten Dateibenennungsregel für einen bestimmten Inhaltssatz erstellen. Diese Methode ist besonders in Fällen nützlich, in denen es eine Ausnahme vom definierten Standardbenennungsschema eines Unternehmens gibt.<br>Das Präfix oder Suffix wird dem **[!UICONTROL Grundnamen]** hinzugefügt, den Sie im Bereich **[!UICONTROL Asset-Benennungskonvention]** festlegen. Durch Hinzufügen eines Präfix oder Suffixs stellen Sie sicher, dass der Bildsatz oder das Rotationsset ausschließlich und unabhängig von anderen Assets erstellt wird. Dies kann auch dazu dienen, anderen bei der Identifizierung von Dateitypen zu helfen. Um beispielsweise einen verwendeten Farbmodus zu bestimmen, können Sie `rgb` oder `cmyk` als Präfix oder Suffix hinzufügen.<br>Es ist nicht erforderlich, eine Benennungsregel für Stapelsatzvorgaben festzulegen. Es empfiehlt sich jedoch, die Benennungsregel für Stapelsätze zu verwenden. Auf diese Weise können Sie so viele Elemente Ihrer Benennungsregel definieren, die Sie in einem Satz gruppieren möchten, um die Erstellung von Stapelsätzen zu optimieren. |
+| Präfix<br>oder<br>Suffix | Optional. Geben Sie entweder ein Präfix, ein Suffix oder beide in die entsprechenden Felder ein.<br>Mit den Feldern &quot;Präfix&quot;und &quot;Suffix&quot;können Sie viele Stapelsatzvorgaben mit einer alternativen, benutzerdefinierten Dateibenennungsregel für einen bestimmten Inhaltssatz erstellen. Diese Methode ist besonders in Fällen nützlich, in denen es eine Ausnahme vom definierten Standardbenennungsschema eines Unternehmens gibt.<br>Das Präfix oder Suffix wird dem **[!UICONTROL Grundnamen]** hinzugefügt, den Sie im Bereich **[!UICONTROL Asset-Benennungskonvention]** festlegen. Durch Hinzufügen eines Präfix oder Suffixs stellen Sie sicher, dass der Bildsatz oder das Rotationsset ausschließlich und unabhängig von anderen Assets erstellt wird. Dies kann auch dazu dienen, anderen bei der Identifizierung von Dateitypen zu helfen. Um beispielsweise einen verwendeten Farbmodus zu bestimmen, können Sie `rgb` oder `cmyk` als Präfix oder Suffix hinzufügen.<br>Es ist nicht erforderlich, eine Benennungsregel für Stapelsatzvorgaben festzulegen. Es empfiehlt sich jedoch, die Benennungsregel für Stapelsätze zu verwenden. Auf diese Weise können Sie so viele Elemente Ihrer Benennungsregel definieren, die Sie in einem Satz gruppieren möchten, um die Erstellung von Stapelsätzen zu optimieren. |
 | **[!UICONTROL Regelresultate – RegX]** |  |
 | Asset-Benennungskonvention – Übereinstimmung | Schreibgeschützt. Zeigt die Syntax des regulären Ausdrucks basierend auf den von Ihnen gewählten Formularoptionen „Übereinstimmung“ oder dem eingegebenen Raw-Code an. |
 | Asset-Benennungskonvention – Grundname | Schreibgeschützt. Zeigt die Syntax des regulären Ausdrucks basierend auf den von Ihnen gewählten Formularoptionen „Grundname“ oder dem eingegebenen Raw-Code an. |
@@ -143,7 +143,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 ### Anwenden von Stapelsatzvorgaben auf Asset-Ordner auf der Seite „Stapelsatzvorgabe“ {#apply-bsp-to-folders-via-bsp-page}
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen jeder Stapelsatzvorgabe, die Sie auf Ordner anwenden möchten.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelvorgabe auf Ordner]** anwenden.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Ordner auswählen]** das Kontrollkästchen jedes Ordners, auf den die Stapelsatzvorgaben angewendet werden sollen.
@@ -151,7 +151,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 ### Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners {#apply-bsp-to-folders-via-properties}
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Navigieren Sie zu einem Ordner, auf den Sie eine oder mehrere Stapelsatzvorgaben anwenden möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen eines Ordners.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
@@ -179,7 +179,7 @@ Wenn die neu bearbeitete Vorgabe erneut auf die vorhandenen Assets im Ordner ang
 
 **So bearbeiten Sie eine Stapelsatzvorgabe:**
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** die Stapelsatzvorgabe, die Sie ändern möchten.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgabe bearbeiten]**.
 1. Bearbeiten Sie die Vorgabe nach Bedarf.
@@ -193,7 +193,7 @@ Wenn Sie eine vorhandene Vorgabe kopieren, die von Asset-Ordnern referenziert wi
 
 **So kopieren Sie eine vorhandene Stapelsatzvorgabe:**
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen der Stapelsatzvorgabe, die Sie kopieren möchten.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Stapelsatzvorgabe kopieren]** im Textfeld **[!UICONTROL Titel]** einen neuen Namen für die Vorgabe ein.
@@ -215,7 +215,7 @@ Es gibt zwei Methoden, mit denen Sie Stapelsatzvorgaben aus Ordnern entfernen k�
 
 ### Entfernen von Stapelsatzvorgaben aus Ordnern über die Seite „Stapelsatzvorgaben“ {#remove-bsp-from-folders-via-bsp-page}
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen für eine oder mehrere Stapelsatzvorgaben, die Sie aus einem oder mehreren Ordnern entfernen möchten.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelvorgabe aus Ordner]** entfernen.
 
@@ -228,7 +228,7 @@ Es gibt zwei Methoden, mit denen Sie Stapelsatzvorgaben aus Ordnern entfernen k�
 
 ### Entfernen von Stapelsatzvorgaben von der Seite „Eigenschaften“ eines Ordners {#remove-bsp-from-folders-via-properties}
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Navigieren Sie zu einem Ordner, aus dem Sie eine oder mehrere Stapelsatzvorgaben entfernen möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen eines Ordners.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
@@ -250,7 +250,7 @@ Wenn Sie stattdessen *Vorgaben aus Ordnern entfernen möchten, finden Sie weiter
 
 **So löschen Sie Stapelsatzvorgaben:**
 
-1. Tippen Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen für eine oder mehrere Stapelsatzvorgaben, die Sie löschen möchten.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgaben löschen]**.
 
