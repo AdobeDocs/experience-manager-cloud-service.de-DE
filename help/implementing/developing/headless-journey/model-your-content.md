@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 5%
 
 ---
@@ -214,17 +214,21 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 ### Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Erstens sind Inhaltsfragmentmodelle für Ihre Site aktiviert. Dies geschieht im Konfigurationsbrowser:
+Im Beginn, dass Sie Inhaltsfragmentmodelle für Ihre Site aktivieren müssen, erfolgt dies im Konfigurationsbrowser. unter Tools -> Allgemein -> Konfigurationsbrowser. Sie können entweder den globalen Eintrag konfigurieren oder eine neue Konfiguration erstellen. Beispiel:
 
 ![Konfiguration definieren](assets/cfm-configuration.png)
 
-Anschließend können die Inhaltsfragmentmodelle modelliert werden:
+>[!NOTE]
+>
+>Siehe Zusätzliche Ressourcen - Inhaltsfragmente im Konfigurationsbrowser
+
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter Tools -> Assets -> Inhaltsfragmentmodelle erfolgen. Beispiel:
 
 ![Inhaltsfragmentmodell](assets/cfm-model.png)
 
 >[!NOTE]
 >
->Siehe Arbeiten mit Inhaltsfragmenten.
+>Siehe Zusätzliche Ressourcen - Inhaltsfragmentmodelle.
 
 ## Verwenden des Modells zum Erstellen von Inhalten mit Inhaltsfragmenten {#use-content-to-author-content}
 
@@ -232,7 +236,9 @@ Inhaltsfragmente basieren immer auf einem Inhaltsfragmentmodell. Das Modell stel
 
 ### Auswählen des entsprechenden Modells {#select-model}
 
-Der erste Schritt zum Erstellen Ihres Inhalts besteht darin, ein Inhaltsfragment zu erstellen. Dies basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie als ersten Schritt des Erstellungsprozesses auswählen.
+Der erste Schritt zum Erstellen Ihres Inhalts besteht darin, ein Inhaltsfragment zu erstellen. Dies geschieht mit Erstellen -> Inhaltsfragment im erforderlichen Ordner unter Assets -> Dateien. Der Assistent führt Sie durch die Schritte.
+
+Ein Inhaltsfragment basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie als ersten Schritt des Erstellungsprozesses auswählen.
 
 ### Erstellen und Bearbeiten von strukturierten Inhalten {#create-edit-structured-content}
 
@@ -254,7 +260,7 @@ Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung
 
 >[!NOTE]
 >
->Siehe Arbeiten mit Inhaltsfragmenten.
+>Siehe Zusätzliche Ressourcen - Arbeiten mit Inhaltsfragmenten.
 
 ## Erste Schritte mit einigen Beispielen {#getting-started-examples}
 
