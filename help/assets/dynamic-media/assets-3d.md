@@ -9,9 +9,9 @@ feature: 3D-Assets
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2248'
 ht-degree: 74%
 
 ---
@@ -250,8 +250,8 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
 **Veröffentlichen von statischen Dynamic Media-3D-Assets:**
 
-1. Öffnen Sie ein 3D-Asset (GLB-, OBJ- oder STL-Dateiformat), um es auf der Detailseite Ansicht.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
+1. Öffnen Sie ein 3D-Asset (Dateiformat GLB, OBJ oder STL).
+1. Tippen Sie auf der Seite &quot;Details&quot;in der Symbolleiste auf **[!UICONTROL Schnellveröffentlichung]**.
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
