@@ -1,16 +1,16 @@
 ---
 title: Informationen zu Dynamic Media – Bild- und Videoprofile
 description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
-feature: Asset Management,Image Profiles,Video Profiles
+feature: Asset-Verwaltung, Bild-Profile, Video-Profile
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 75%
+source-wordcount: '1282'
+ht-degree: 68%
 
 ---
-
 
 # Informationen zu Dynamic Media – Bild- und Videoprofile {#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner 
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Auch wenn Sie kein Image-Profil oder Video-Profil bearbeitet haben oder bereits ein Image-Profil oder Video-Profil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung immer noch für einen Asset-Ordner ausführen.
 
-Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie das Scene7 _ausführen: Assets in einem Ordner neu verarbeiten, werden Assets in Stapeln gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet._ Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch auf AEM aktualisiert. Wenn die Stapelgröße groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Oder wenn die Stapelgröße zu klein ist, kann dies zu vielen Rundungen zum Dynamic Media-Server führen.
+Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie das Scene7 _ausführen: Assets in einem Ordner neu verarbeiten, werden Assets in Stapeln gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet._ Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Stapelsatz auf Adobe Experience Manager aktualisiert. Wenn die Stapelgröße groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Oder wenn die Stapelgröße zu klein ist, kann dies zu vielen Rundungen zum Dynamic Media-Server führen.
 
 Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-load).
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Dynamic Media-Assets in einem Ordner erneut verarbeiten**:
-1. Navigieren Sie in Adobe Experience Manager auf der Seite „Assets“ zu einem Ordner mit Dynamic Media-Assets, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie den Workflow **Scene7: Assets erneut verarbeiten** anwenden möchten.
+**Dynamic Media-Assets in einem Ordner erneut verarbeiten:**
+1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Image-Profil oder ein Video-Profil zugeordnet ist und für den Sie das Scene7 **anwenden möchten: Arbeitsablauf für Element** neu verarbeiten.
 
    Bei Ordnern, denen ein Image-Profil oder ein Video-Profil zugewiesen ist, wird der Name des Profils direkt unter dem Ordnernamen in der Card-Ansicht angezeigt.
 
@@ -68,7 +68,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    * Der Workflow berücksichtigt rekursiv alle Dateien in dem ausgewählten Ordner.
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
-   * Es empfiehlt sich, diesen Workflow nicht auf einer Ordnerhierarchie auszuführen, die mehr als 1000 Assets enthält.
+   * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie auszuführen, die über 1000 Assets verfügt.
 
 1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste]**.
 1. Tippen Sie in der linken unteren Ecke der Seite rechts neben dem Feld [!UICONTROL Kommentar] auf das Karussymbol ( **^** ).
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Stapelgröße wird durch die durchschnittliche Asset-Größe und die MIME-Typen von Assets bestimmt, auf denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass Sie viele Dateien in einem einzigen Wiederaufbereitungsauftrag haben. Das Verarbeitungsbanner bleibt also länger auf den Assets des Experience Managers. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Stapelgröße wird durch die durchschnittliche Asset-Größe und die MIME-Typen von Assets bestimmt, auf denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass Sie viele Dateien in einem einzigen Wiederaufbereitungsauftrag haben. Das Verarbeitungsbanner bleibt also länger auf den Assets des Experience Managers. Wenn die durchschnittliche Dateigröße kleiner/gleich 1 MB oder kleiner Adobe ist, sollten Sie den Wert auf mehrere 100 erhöhen, jedoch nie auf mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabytes beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**:
 
