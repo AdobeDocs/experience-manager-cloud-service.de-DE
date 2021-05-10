@@ -20,7 +20,7 @@ Die RemotePage-Komponente ruft alle erforderlichen Assets aus dem generierten `a
 
 * Mit RemotePage können Sie die Skripte und Stylesheets eines SPA im Textkörper einer AEM Seitenkomponente einfügen.
 * Die Virtual Frontend-Komponenten ermöglichen es, Abschnitte im AEM SPA Editor als bearbeitbar zu markieren.
-* Gemeinsam kann eine SPA, die auf einer anderen Domäne gehostet wird, in AEM editierbar gemacht werden.
+* Gemeinsam kann ein SPA, der auf einer anderen Domäne gehostet wird, in AEM editierbar gemacht werden.
 
 Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artikel [Bearbeiten eines externen SPA innerhalb AEM](editing-external-spa.md).
 
