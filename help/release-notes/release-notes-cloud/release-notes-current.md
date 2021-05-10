@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1879'
+ht-degree: 5%
 
 ---
 
@@ -90,6 +90,8 @@ Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 ## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
+
+Sie können [AEM Forms als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren und E-Signaturen zu Formularen hinzuzufügen, Dokument aus Datensatz (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre vorhandenen PDF forms in digitale Formulare konvertieren. Zusätzlich zu den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, kostenlose Ausfallzeiten für Upgrades und Cloud-native Umgebung für die Entwicklung. Lesen Sie [diesen Blog-Beitrag](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html), um mehr über die Funktionen und Funktionen von AEM Forms als Cloud Service zu erfahren.
 
 * **Authentifizierungsmethode zur Identitätsauthentifizierung mit einer öffentlichen ID in Adobe Sign-aktiviertem adaptiven Forms verwenden**
 
