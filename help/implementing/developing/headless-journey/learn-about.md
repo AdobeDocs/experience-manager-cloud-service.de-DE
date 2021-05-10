@@ -4,14 +4,14 @@ description: In diesem Teil der AEM Headless Developer Journey erfahren Sie mehr
 hide: true
 hidefromtoc: true
 index: false
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
-
 
 # Weitere Informationen zu CMS Headless Development {#learn-about}
 
@@ -50,15 +50,15 @@ Die Komplexität der Abhängigkeiten innerhalb des Stapels wird schnell sichtbar
 
 ## Beschränkungen des Vollstapel-Versands {#limits}
 
-Der Vollstapelansatz erzeugt automatisch ein Silo, bei dem alle Erlebnisse in einem System landen. Änderungen oder Ergänzungen der Silo-Komponente erfordern Änderungen anderer Komponenten, die Änderungen zeitintensiv und kostenintensiv vornehmen.
+Der Vollstapelansatz erzeugt automatisch ein Silo, bei dem alle Erlebnisse in einem System landen. Änderungen oder Ergänzungen an einer Komponente des Silo erfordern Änderungen an anderen Komponenten, die Änderungen zeitintensiv und kostenintensiv machen können.
 
-Dies gilt insbesondere für die Präsentationsebene, die in traditionellen Systemen oft eng an das CMS gebunden ist. Jeder neue Kanal bedeutet im Allgemeinen eine Aktualisierung der Präsentationsebene, die alle anderen Kanal betrifft.
+Dies gilt insbesondere für das Präsentationssystem, das in traditionellen Setups oft eng an das CMS gebunden ist. Jeder neue Kanal bedeutet im Allgemeinen eine Aktualisierung des Präsentationssystems, die alle anderen Kanal betreffen kann.
 
 ![Komplexität wächst, wenn Kanal zu einem Stapel hinzugefügt werden](assets/presentation-complexity.png)
 
-Die Einschränkungen dieses natürlichen Silo sind offensichtlich, da Sie erkennen, wie viel Aufwand und Zeit erforderlich ist, um Änderungen über alle Komponenten Ihres Stapels hinweg zu koordinieren.
+Die Einschränkungen dieses natürlichen Silos können sichtbar werden, wenn Sie sich mehr Mühe geben, Änderungen über alle Komponenten Ihres Stapels hinweg zu koordinieren.
 
-Die Benutzer erwarten Interaktionen, ganz gleich, welche Plattform oder welcher Touchpoint sie erwarten, und benötigen mehr Flexibilität bei der Bereitstellung Ihrer Erlebnisse.  Dieser Mehrkanal-Ansatz ist der Standard digitaler Erlebnisse, und ein Vollstapelansatz kann sich manchmal als unflexibel erweisen.
+Die Benutzer erwarten Interaktionen, ganz gleich, welche Plattform oder welcher Touchpoint sie erwarten, und benötigen mehr Flexibilität bei der Bereitstellung Ihrer Erlebnisse.  Dieser Mehrkanalansatz ist der Standard digitaler Erlebnisse, und ein Vollstapelansatz kann sich unter bestimmten Umständen als unflexibel erweisen.
 
 ## Der Head in Headless {#the-head}
 
@@ -72,15 +72,15 @@ Wenn wir von einem kopflosen CMS sprechen, verwaltet das CMS die Inhalte und lie
 
 Die konsumierenden Dienste, ob es sich nun um AR-Erlebnisse, einen Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw. handelt, nehmen Inhalte aus dem kopflosen CMS auf und bieten eine eigene Wiedergabe. Sie kümmern sich darum, ihre eigenen Köpfe für Ihre Inhalte bereitzustellen.
 
-Das Auslassen des Kopfes vereinfacht das CMS erheblich, indem es erhebliche Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Dienste verlagert, die tatsächlich den Inhalt benötigen und oft besser für eine solche Wiedergabe geeignet sind.
+Das Auslassen des Kopfes vereinfacht das CMS, indem es Komplexität beseitigt. Auf diese Weise wird auch die Verantwortung für die Wiedergabe der Inhalte auf die Dienste verlagert, die den Inhalt tatsächlich benötigen und für diese Darstellung oft besser geeignet sind.
 
 ## Entkoppelung {#decoupling}
 
 Ein Headless-Versand ist möglich, indem Sie eine Reihe robuster und flexibler Anwendungsprogrammierschnittstellen (APIs) verfügbar machen, auf die alle Ihre Erlebnisse zugreifen können. Die API dient als gemeinsame Sprache der Dienste und verbindet diese auf Inhaltsebene durch standardisierten Content-Versand, ermöglicht ihnen jedoch die Flexibilität, eigene Lösungen zu implementieren.
 
-Headless ist ein Beispiel für die Entkopplung Ihres Inhalts von seiner Präsentation. Oder in einem allgemeineren Sinne, entkoppeln Sie das Front-End vom Back-End Ihres Service-Stapels. Bei einem Headless-Setup wird die Präsentationsebene (der Kopf) vom Content-Management (der Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
+Headless ist ein Beispiel für die Entkopplung Ihres Inhalts von seiner Präsentation. Oder in einem allgemeineren Sinne, entkoppeln Sie das Front-End vom Back-End Ihres Service-Stapels. Bei einem Headless-Setup wird das Präsentationssystem (der Kopf) vom Content-Management (der Schwanz) entkoppelt. Die beiden interagieren nur über API-Aufrufe.
 
-Diese Entkopplung bedeutet, dass jeder konsumierende Dienst (das Front-End) sein Erlebnis auf der Grundlage desselben Inhalts aufbauen kann, der über die APIs bereitgestellt wird, um die Wiederverwendung und Konsistenz von Inhalten zu gewährleisten. Verbrauchsdienste können dann ihre eigenen Präsentationsebenen implementieren, sodass der Content-Management-Stapel (das Back-End) einfach horizontal skaliert werden kann.
+Diese Entkopplung bedeutet, dass jeder konsumierende Dienst (das Front-End) sein Erlebnis auf der Grundlage desselben Inhalts aufbauen kann, der über die APIs bereitgestellt wird, um die Wiederverwendung und Konsistenz von Inhalten zu gewährleisten. Verbrauchsdienste können dann ihre eigenen Präsentationssysteme implementieren, sodass der Content-Management-Stapel (das Back-End) einfach horizontal skaliert werden kann.
 
 ## Technologische Grundlagen {#technology}
 
@@ -88,7 +88,7 @@ Mit einem kopflosen Ansatz können Sie einen Technologiestapel erstellen, der si
 
 In der Vergangenheit waren die APIs für CMS in der Regel REST-basiert. Repräsentativer Staatstransfer (REST) bietet Ressourcen als Text in statusloser Weise. Dadurch können die Ressourcen mit einem vordefinierten Satz von Vorgängen gelesen und geändert werden. REST ermöglichte eine große Interoperabilität zwischen den Diensten im Internet, indem sichergestellt wurde, dass die Inhalte staatenlos dargestellt werden.
 
-Und es sind noch robuste REST-APIs erforderlich. REST-Anfragen können jedoch umfangreich und ausführlich sein. Wenn Sie mehrere Kunden haben, die REST-Aufrufe für all Ihre Kanal tätigen, kann dies zu einer Beeinträchtigung der Ausführlichkeit und Leistung führen.
+Es sind noch robuste REST-APIs erforderlich. REST-Anfragen können jedoch umfangreich und ausführlich sein. Wenn Sie mehrere Kunden haben, die REST-Aufrufe für all Ihre Kanal tätigen, kann dies zu einer Beeinträchtigung der Ausführlichkeit und Leistung führen.
 
 Versand ohne Kopfdaten verwendet häufig GraphQL-APIs. GraphQL ermöglicht eine ähnliche statuslose Übertragung, ermöglicht jedoch zielgerichtetere Abfragen, reduziert die Gesamtzahl der erforderlichen Abfragen und verbessert die Leistung. Es ist üblich zu sehen, Lösungen verwenden eine Mischung aus REST und GraphQL, im Wesentlichen die Wahl der besten Werkzeug für den jeweiligen Auftrag.
 
@@ -116,9 +116,9 @@ Es ist unmöglich, die Zukunft vorherzusagen, aber ohne Kopf gibt man die Agilit
 
 Wenn Sie mit der Developer Journey fortfahren, erfahren Sie, wie AEM kopflosen Versand neben den Vollstapel-Versand-Funktionen unterstützt.
 
-Als Branchenführer im Bereich des digitalen Erfahrungsmanagements erkennt die Adobe, dass die ideale Lösung für echte Herausforderungen, denen sich Erfinder gegenübersehen, selten eine binäre Lösung ist. Deshalb unterstützt AEM nicht nur beide Modelle, sondern ermöglicht auch die nahtlose Hybrid-Kombination der beiden Modelle, damit Sie die Konsumenten Ihrer Inhalte am besten bedienen können. Wo immer sie sind.
+Als Branchenführer im Bereich des digitalen Erfahrungsmanagements erkennt die Adobe, dass die ideale Lösung für echte Herausforderungen, vor denen Erfinder stehen, selten eine binäre Lösung ist. Deshalb unterstützt AEM nicht nur beide Modelle, sondern ermöglicht auch die nahtlose Hybrid-Kombination der beiden Modelle, indem die Vorteile von Headless und Full Stack kombiniert werden, um Ihnen zu helfen, die Verbraucher Ihrer Inhalte am besten zu bedienen, egal wo sie sich befinden.
 
-Diese Journey konzentriert sich auf das reine Headless-Modell von Content Versand. Sobald Sie jedoch diese Wissensgrundlage gelegt haben, können Sie weiter untersuchen, wie Sie die Kraft beider Modelle nutzen können.
+Diese Journey konzentriert sich auf das reine Headless-Modell von Content Versand. Sobald Sie dieses grundlegende Wissen haben, können Sie jedoch weiter untersuchen, wie Sie die Kraft beider Modelle nutzen können.
 
 ## Wie geht es weiter {#what-is-next}
 
