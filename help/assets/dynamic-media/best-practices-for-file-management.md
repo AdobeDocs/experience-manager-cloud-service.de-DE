@@ -6,10 +6,10 @@ feature: Asset-Verwaltung, Bild-Profile, Video-Profile
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 63%
+source-wordcount: '498'
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 63%
 
 Wichtig für die Verwendung von Dynamic Media-Bildprofilen oder -Videoprofilen ist, dass sie Ordnern zugewiesen werden. In einem Profil befinden sich Einstellungen für ein Bild oder Video. Diese Einstellungen verarbeiten den Inhalt eines Ordners zusammen mit einem seiner Unterordner. Die Benennung von Dateien und Ordnern, die Anordnung von Unterordnern und die Handhabung der Dateien in diesen Ordnern wirken sich daher darauf aus, wie diese Assets vom Profil verarbeitet werden.
 
-Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
+Durch die Verwendung konsistenter und geeigneter Strategien zur Benennung von Dateien und Ordnern sowie durch eine gute Metadatenpraxis können Sie Ihre digitale Asset-Sammlung optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
 
 Siehe [Informationen zu Dynamic Media-Bildprofilen und -Videoprofilen](about-image-video-profiles.md).
 
@@ -31,15 +31,15 @@ Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen
 * Normalerweise wächst Ihre Sammlung digitaler Assets immer. Daher ist es wichtig, dass die Metadatennutzung, die Ordnerstruktur und die Dateibenennung für alle hochgeladenen Assets bereits frühzeitig formalisiert werden. Indem Sie diese Aspekte standardisieren, wird sichergestellt, dass Sie auch bei einem stets wachsenden Pool mit digitalen Assets Verarbeitungsprofile präziser und konsistenter auf Ordner anwenden können.
 * Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Zu den Ordnerstrukturen, die Ihnen dabei helfen können, die zuzuweisenden Profil zu verfeinern, gehören beispielsweise die folgenden:
 
-   * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
-   * **Kundenordner** – enthalten digitale Assets basierend auf Kunden oder Projektnamen.
-   * **Primäre Ordner:** enthalten digitale Quell-Assets in ihrer Originalform.
-   * **Ausgabeformatordner** – enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
-   * **Dateigrößenordner** – enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
-   * **Bereitstellungsordner** – enthalten digitale Assets, die für die Veröffentlichung auf Ihrer Website bereit sind.
+   * **Entwicklungsordner**  - enthält digitale Assets, an denen Sie derzeit arbeiten.
+   * **** Kundenordner: Enthalten digitale Assets basierend auf Kunden oder Projektnamen.
+   * **Primär-Quellordner**  - enthält digitale Originalelemente.
+   * **** Ausgabeformatordner: Enthalten Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
+   * **** Dateigrößenordner: Enthalten digitale Assets basierend auf kleinen, mittleren oder großen Dateien.
+   * **Staging-Ordner**  - enthält digitale Assets, die live auf Ihrer Website veröffentlicht werden können.
    * **Mime-Type-Ordner**  - enthält digitale Assets, die für MIME-Typen wie Bilder, Dokumente und Multimedia spezifisch sind.
-   * **Archivordner** – enthalten veraltete digitale Assets.
-   * **Datumsbasierte Ordner** – enthalten digitale Assets basierend auf einem Erstellungsdatum oder dem letzten Änderungsdatum.
+   * **Archivordner**  - enthält zurückgestellte digitale Assets.
+   * **Datumsbasierte Ordner**  - enthält digitale Assets, die auf einem Erstellungsdatum oder einem Datum der letzten Änderung basieren.
 
 * Erstellen Sie ein Ordnerverzeichnis, das voraussichtlich nicht geändert werden muss, damit zugewiesene Profile nicht ungültig werden.
 * Angenommen, ein Asset wurde bereits veröffentlicht. Anschließend verschieben Sie das Asset mit Adobe Experience Manager in einen anderen Ordner und veröffentlichen es erneut. Der ursprüngliche Speicherort des veröffentlichten Assets sowie das neu veröffentlichte Asset sind weiterhin verfügbar. Das ursprünglich veröffentlichte Asset geht jedoch an den Experience Manager verloren und kann nicht rückgängig gemacht werden. Daher sollten Sie die Veröffentlichung von Assets zuerst rückgängig machen, bevor Sie sie in einen anderen Ordner verschieben.
