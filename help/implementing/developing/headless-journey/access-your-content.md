@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 32%
 
 ---
@@ -239,6 +239,14 @@ Es bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung und
 
 ## Tatsächlich mit der AEM GraphQL API {#actually-using-aem-graphiql}
 
+Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
+
+* Endpunkt aktivieren
+   * Tools -> Sites -> GraphQL
+
+* GraphiQL installieren (falls erforderlich)
+   * Als dediziertes Paket installiert
+
 Um die AEM GraphQL-API in einer Abfrage zu verwenden, können wir die beiden grundlegenden Inhaltsfragmentmodellstrukturen verwenden:
 
 * Unternehmen
@@ -346,6 +354,8 @@ Nachdem Sie nun gelernt haben, wie Sie mit der AEM GraphQL API auf Ihre kostenlo
    * [GraphQL Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Verwendung von GraphQL mit AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [AEM GraphiQL-Schnittstelle installieren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [Die Struktur des Musterinhaltsfragments](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
