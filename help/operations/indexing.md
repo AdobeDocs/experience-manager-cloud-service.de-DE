@@ -3,10 +3,10 @@ title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 73%
+source-wordcount: '1761'
+ht-degree: 72%
 
 ---
 
@@ -57,6 +57,12 @@ Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Ind
 das dann unter `ui.apps/src/main/content/jcr_root` aufgeführt werden muss. Unterstammordner werden ab sofort nicht mehr unterstützt.
 
 Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` erstellt.
+
+>[!NOTE]
+>
+>Für jedes Inhaltspaket, das Indexdefinitionen enthält, sollte die folgende Eigenschaft in der Eigenschaftendatei des Inhaltspakets unter `/META-INF/vault/properties.xml` festgelegt sein:
+>
+>`noIntermediateSaves=true`
 
 ### Bereitstellen von Indexdefinitionen {#deploying-index-definitions}
 
