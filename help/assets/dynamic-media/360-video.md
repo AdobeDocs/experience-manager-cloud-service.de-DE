@@ -5,10 +5,10 @@ feature: 360-Grad-VR-Video
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 63%
+source-wordcount: '941'
+ht-degree: 59%
 
 ---
 
@@ -28,7 +28,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 ## 360-Grad-Video in Aktion  {#video-in-action}
 
-Tippen Sie auf [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie den Zeiger bei der Videowiedergabe an eine neue Position, um den Anzeigewinkel zu ändern.
+Tippen Sie auf [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie den Zeiger bei der Videowiedergabe an eine neue Position, um den Anzeigewinkel zu ändern.
 
 ![360-Grad-Video-Beispiel](assets/6_5_360videoiss_simplified.png)-*Videoframe aus Space Station 360*
 
@@ -92,7 +92,7 @@ Start by uploading 360 Videos.
 
 ## Anzeigen einer Vorschau für 360-Grad-Videos {#previewing-video}
 
-Mit der Vorschau können Sie prüfen, wie das 360-Grad-Video bei Ihren Kunden aussieht, und sicherstellen, dass es sich wie erwartet verhält.
+Sie können Vorschau verwenden, um zu sehen, wie Ihr 360-Video für Kunden angezeigt wird und sicherzustellen, dass es sich wie erwartet verhält.
 
 Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
