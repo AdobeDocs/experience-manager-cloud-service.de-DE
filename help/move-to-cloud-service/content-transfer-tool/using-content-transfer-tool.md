@@ -3,10 +3,10 @@ title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 73%
+source-wordcount: '2731'
+ht-degree: 72%
 
 ---
 
@@ -53,6 +53,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
 
+* Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher auf dem AEM-Quellsystem sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (Garbage Collector). Damit soll die Integrität der Indexdaten gewährleistet werden. Wird sie nicht so konfiguriert, kann dies zu fehlerhaften Extraktionen führen, da diese Indexdaten nicht einwandfrei sind.
 
 ## Verfügbarkeit {#availability}
 
