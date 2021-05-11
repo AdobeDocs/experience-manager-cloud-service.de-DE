@@ -1,14 +1,14 @@
 ---
 title: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
-description: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
+description: Ruhezustand und Reaktivieren von Sandbox-Umgebungen
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 99%
+source-wordcount: '855'
+ht-degree: 95%
 
 ---
-
 
 # Ruhezustand und Reaktivieren von Sandbox-Umgebungen {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ Für im Ruhezustand befindliche oder reaktivierte Umgebungen gelten einige wicht
 
 * AEM-Upgrades können auf im Ruhezustand befindliche Umgebungen angewendet werden; sie können von Kunden in Cloud Manager manuell ausgelöst werden. Die Umgebung verbleibt im Ruhezustand; die neue Version erscheint in der Umgebung, sobald der Ruhezustand deaktiviert wurde.
 
->[!NOTE]
->Derzeit gibt Cloud Manager nicht an, ob sich eine Umgebung im Ruhezustand befindet.
+* Sandboxen werden nach 8 Stunden Inaktivität in den Hibernation-Knoten gesetzt, danach können sie entstellt werden.
+
+* Sandboxen werden nach 6 Monaten kontinuierlicher Ruhezeit gelöscht, danach können sie neu erstellt werden.
+
+   >[!NOTE]
+   >Derzeit gibt Cloud Manager nicht an, ob sich eine Umgebung im Ruhezustand befindet.
 
 ## AEM-Updates für Sandbox-Umgebungen {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren v
 >[!NOTE]
 >* Ein manuelles Update ist nur möglich, wenn die Zielumgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.
 >* Bei einem manuellen Update der *Produktions*- oder *Staging*-Umgebung wird jeweils automatisch auch die andere Umgebung aktualisiert. Der Satz aus Produktions- und Staging-Umgebung muss sich in derselben AEM-Version befinden.
-
-
-
-
-
 
