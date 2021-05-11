@@ -1,14 +1,14 @@
 ---
 title: 'Einführung in Sandbox-Programm '
-description: 'Einführung in Sandbox-Programm '
+description: Einführung in Sandbox-Programm
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 79%
+source-wordcount: '303'
+ht-degree: 69%
 
 ---
-
 
 # Einführung in Sandbox-Programm {#sandbox-programs}
 
@@ -38,5 +38,7 @@ Sandbox-Programme haben die folgenden Attribute:
 1. **AEM-Updates:** AEM-Updates können in Sandbox-Programmen manuell auf Umgebungen angewendet werden und werden nicht automatisch gesendet.
 Weitere Informationen finden Sie unter [AEM Updates zu Sandbox-Umgebung](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox).
 
-1. **Ruhezustand:** Umgebungen in einem Sandbox-Programm werden automatisch in den Ruhezustand versetzt, wenn in einem bestimmten Zeitraum keine Aktivität erkannt wurde. In den Ruhezustand versetzte Umgebungen können manuell wieder aktiviert werden.
+1. **Ruhezustand:** Umgebungen in einem Sandbox-Programm werden automatisch in den Ruhezustand versetzt, wenn in einem bestimmten Zeitraum keine Aktivität erkannt wurde. Sandboxen werden nach 8 Stunden Inaktivität in den Hibernation-Knoten gesetzt, danach können sie entstellt werden. In den Ruhezustand versetzte Umgebungen können manuell wieder aktiviert werden.
 Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md).
+
+1. **Löschen**: Sandboxen werden nach 6 Monaten kontinuierlicher Ruhezeit gelöscht, danach können sie neu erstellt werden.
