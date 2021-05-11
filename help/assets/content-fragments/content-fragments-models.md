@@ -5,7 +5,7 @@ feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 90%
@@ -170,7 +170,7 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 * **Übersetzbar**
 Durch Aktivieren des Kontrollkästchens „Übersetzbar“ in einem Feld im CF-Modell-Editor
 
-   * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<tenant>` hinzugefügt wird, falls er noch nicht vorhanden ist.
+   * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<sites-configuration>` hinzugefügt wird, falls er noch nicht vorhanden ist.
    * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Content Reference](#content-reference)**.
