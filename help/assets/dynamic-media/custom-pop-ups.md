@@ -1,18 +1,18 @@
 ---
 title: Erstellen benutzerdefinierter Popup-Ansichten
-description: '"Erfahren Sie, wie die standardmäßige Quick-Ansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu veranlassen. Sie können benutzerspezifischen Trigger zur Anzeige in den Popup-Fenstern verwenden."'
+description: '"Erfahren Sie, wie die standardmäßige Quick-Ansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu veranlassen. Sie können benutzerdefinierte Inhalte für die Anzeige im Popup-Fenster unter Windows® Trigger verwenden."'
 feature: Interaktive Bilder,Interaktive Videos,Karussell-Banner
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
-# Verwenden von Quick-Ansichten zum Erstellen benutzerdefinierter Popup-Fenster {#using-quickviews-to-create-custom-pop-ups}
+# Verwenden von Quick-Ansichten zum Erstellen eines benutzerdefinierten Popup-Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 Die standardmäßige Quick-Ansicht wird in E-Commerce-Erlebnissen verwendet, bei denen ein Popup mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig vom verwendeten Viewer können Kunden auf einen Hotspot, ein Miniaturbild oder eine Imagemap tippen, um Informationen oder verwandte Inhalte anzuzeigen.
 
@@ -24,7 +24,7 @@ Schnellere Ansichten werden von den folgenden Viewern in Dynamic Media unterstü
 
 Während die Funktionen der einzelnen Viewer unterschiedlich sind, erfolgt die Erstellung einer Quick-Ansicht in allen drei unterstützten Viewern gleich.
 
-**So erstellen Sie benutzerdefinierte Popup-Fenster mit den Schnelleinstellungen**
+**So erstellen Sie mit den Quick-Ansichten ein benutzerdefiniertes Popup-Windows®:**
 
 1. Erstellen Sie eine Quick-Ansicht für ein hochgeladenes Asset.
 
@@ -102,8 +102,8 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
 
-   * Interaktiver Bild-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
-   * Interaktiver Video-Viewer: [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
+   * Interactive Image Viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
+   * Interaktiver Video-Viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
 
 1. Konfigurieren Sie jetzt den `quickViewActivate`-Handler.
 
