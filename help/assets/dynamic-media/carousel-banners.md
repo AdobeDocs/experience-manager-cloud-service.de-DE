@@ -5,9 +5,9 @@ feature: Karussellbanner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 49%
 
 ---
@@ -26,7 +26,7 @@ Auf Ihrer Website kann ein Karussellbanner wie folgt aussehen:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Hier können Sie durch die Bilder navigieren, indem Sie auf die Zahlen klicken. Zusätzlich drehen sich die Folien automatisch basierend auf einem Intervall, das Sie anpassen können. Bilder, die Sie im Karussell-Banner hinzufügen, unterstützen sowohl Hotspots als auch Imagemaps. Die Benutzer können entweder auf einen Hyperlink tippen, zu einem Hyperlink wechseln oder auf ein Quick Ansicht-Fenster zugreifen.
+Hier können Sie durch die Bilder navigieren, indem Sie auf die Zahlen klicken. Zusätzlich drehen sich die Folien automatisch basierend auf einem Intervall, das Sie anpassen können. Bilder in Karussell-Bannern unterstützen sowohl Hotspots als auch Imagemaps. Die Benutzer können entweder auf einen Hyperlink tippen, zu einem Hyperlink wechseln oder auf ein Quick Ansicht-Fenster zugreifen.
 
 In diesem Beispiel hat ein Benutzer auf eine Imagemap getippt oder geklickt und für Handschuhe auf das Fenster &quot;Schnelle Ansicht&quot;zugegriffen:
 
@@ -34,7 +34,7 @@ In diesem Beispiel hat ein Benutzer auf eine Imagemap getippt oder geklickt und 
 
 ## Video zur Erstellung von Karussellbannern {#watch-how-carousel-banners-are-created}
 
-Sehen Sie sich eine exemplarische Vorgehensweise (10 Minuten und 33 Sekunden) zur [Erstellung von Karussellbannern](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) an. Außerdem erfahren Sie, wie Karussell-Banner Vorschau, bearbeitet und bereitgestellt werden.
+Sehen Sie sich eine exemplarische Vorgehensweise an zu [wie Karussellbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Dauer: 10 Minuten und 33 Sekunden). Außerdem erfahren Sie, wie Karussell-Banner Vorschau, bearbeitet und bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ Bei den meisten Implementierungen der schnellen Ansicht wird das folgende Paradi
 * Die Daten zur schnellen Ansicht werden in den Inhalt übersetzt, um die Wiedergabe auf der Webseite vorzubereiten.
 * Schließlich zeigt der Frontend-Code diesen Inhalt visuell auf dem Bildschirm an.
 
-Der Ansatz besteht dann darin, verschiedene Bereiche der bestehenden Website zu besuchen, in denen die Schnellfunktion zur Ansicht implementiert ist. Trigger dann die Quick-Ansicht und erfassen Sie die Ajax-URL, die von der Webseite zum Laden der Quick-Ansicht-Daten oder -Inhalte gesendet wird.
+Der Ansatz besteht dann darin, verschiedene Bereiche der bestehenden Website zu besuchen, in denen die Schnellfunktion zur Ansicht implementiert ist. Anschließend können Sie die Quick-Ansicht abrufen und die Ajax-URL abrufen, die von der Webseite zum Laden der Daten oder des Inhalts der Quick-Ansicht gesendet wird.
 
 Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Die folgenden Webbrowser beispielsweise umfassen Web-Inspektoren:
 
-* Um alle ausgehenden HTTP-Anfragen in Google Chrome anzuzeigen, drücken Sie F12 (Windows) oder Command-Option-I (Mac), um das Developer Tool-Bedienfeld zu öffnen. Tippen Sie auf die Registerkarte Netzwerk.
-* In Firefox können Sie das Firebug-Plug-in entweder durch Drücken von F12 (Windows) oder Befehl-Option-I (Mac) aktivieren. Verwenden Sie die Registerkarte &quot;Netzwerk&quot;oder das integrierte Inspektor-Tool und dessen Registerkarte &quot;Netzwerk&quot;.
+* Um alle ausgehenden HTTP-Anfragen in Google Chrome anzuzeigen, drücken Sie F12 (Windows®) oder Command-Option-I (Mac), um das Developer Tool-Bedienfeld zu öffnen. Tippen Sie auf die Registerkarte Netzwerk.
+* In Firefox können Sie das Firebug-Plug-in entweder durch Drücken von F12 (Windows®) oder Befehl-Option-I (Mac) aktivieren. Verwenden Sie die Registerkarte &quot;Netzwerk&quot;oder das integrierte Inspektor-Tool und dessen Registerkarte &quot;Netzwerk&quot;.
 
 Wenn die Netzwerküberwachung im Browser aktiviert ist, Trigger die Schnellseite der Ansicht.
 
@@ -191,7 +191,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
 >
 >Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Wenn Sie Probleme beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
 
-**So erstellen Sie ein Karussellset**
+**So erstellen Sie ein Karussellset:**
 
 1. Navigieren Sie in Assets zu dem Ordner, in dem Sie das Karussellset erstellen möchten, und tippen Sie auf **[!UICONTROL Erstellen > Karussellset]**.
 1. Tippen Sie im Karussellbanner-Editor auf **[!UICONTROL Tippen, um die Asset-Auswahl zu öffnen]**, um das Bild für die erste Folie auszuwählen.
@@ -217,19 +217,20 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
    Um eine Folie zu löschen, tippen oder klicken Sie auf die Folie und tippen und klicken Sie auf **[!UICONTROL Folie löschen]** in der Symbolleiste. Um eine Folie zu verschieben, tippen Sie auf das Symbol &quot;Neu anordnen&quot;, halten Sie die Taste gedrückt und verschieben Sie sie an die gewünschte Position.
 
 1. Nachdem Sie die Bilder in den Folien hinzugefügt haben, können Sie einen Hotspot, eine Imagemap oder beides in die Bilder einfügen. Siehe [Hinzufügen von Hotspots oder Imagemaps](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Sie können das visuelle Design und das Verhalten von Karussellsätzen ändern. Tippen oder klicken Sie auf die Registerkarten Verhalten und Erscheinungsbild und passen Sie an, wie das Karussellbanner aussieht oder wie sich bestimmte Komponenten verhalten. Weitere Informationen zum Verwenden des Viewer-Editors finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/viewer-presets.md).
+1. Sie können das visuelle Design und das Verhalten von Karussellsätzen ändern. Tippen oder klicken Sie auf die Registerkarten **[!UICONTROL Verhalten]** und **[!UICONTROL Erscheinungsbild]** und passen Sie an, wie das Karussellbanner angezeigt wird oder wie sich bestimmte Komponenten verhalten. Weitere Informationen zum Verwenden des Viewer-Editors finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/viewer-presets.md).
 
    >[!NOTE]
    >
    >Für Karussellbanner können Sie Folgendes anpassen:
-   >    * Dauer der Anzeige eines Bildes Standardmäßig wird jedes Bild für 9 Sekunden angezeigt.
-   >    * Animation. Standardmäßig sind alle Folienübergänge Überblendungen. Sie können einen anderen Übergang auswählen.
-   >    * Stil der Schaltflächen Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen tippen. Sie können ändern, wo die Set-Indikatoren angezeigt werden (und ob es sich um einen numerischen oder Punktstil handelt). Sie können auch ihre Größe bestimmen.
-   >    * Ändern des Markierungsstils einer Imagemap oder des Symbols für Hotspots.
-   >    * Bevor Sie eine Viewer-Vorgabe bearbeiten, wählen Sie den Stil, auf dem die Vorgabe basieren soll. Wenn Sie keinen Stil auswählen und die Viewer-Vorgabe bearbeiten möchten, gehen alle Änderungen verloren, wenn Sie zu einer anderen Vorgabe wechseln.
+   >
+   >* Dauer der Anzeige eines Bildes Standardmäßig wird jedes Bild für 9 Sekunden angezeigt.
+   >* Animation. Standardmäßig sind alle Folienübergänge Überblendungen. Sie können einen anderen Übergang auswählen.
+   >* Stil der Schaltflächen Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen tippen. Sie können ändern, wo die Set-Indikatoren angezeigt werden (und ob es sich um einen numerischen oder Punktstil handelt). Sie können auch ihre Größe bestimmen.
+   >* Ändern des Markierungsstils einer Imagemap oder des Symbols für Hotspots.
+   >* Bevor Sie eine Viewer-Vorgabe bearbeiten, wählen Sie den Stil, auf dem die Vorgabe basieren soll. Wenn Sie keinen Stil auswählen und die Viewer-Vorgabe bearbeiten möchten, gehen alle Änderungen verloren, wenn Sie zu einer anderen Vorgabe wechseln.
 
 
-   Sie können auch Vorschauen darüber vornehmen, wie das Karussell-Banner aussieht. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
+   Sie können auch das Erscheinungsbild des Karussell-Banners Vorschau haben. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie fertig sind.
 
@@ -263,7 +264,7 @@ Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden,
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**So fügen Sie Hotspots oder Imagemaps in einem Bildbanner hinzu**
+**So fügen Sie Hotspots oder Imagemaps in einem Bildbanner hinzu:**
 
 1. Navigieren Sie in Assets zu dem Karussellset, das interaktiv werden soll.
 1. Wählen Sie das Karussellset aus und tippen Sie auf **[!UICONTROL Bearbeiten]**. Der Karussell-Viewer-Editor wird geöffnet.
@@ -316,7 +317,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
          Um diesen Punkt zu umgehen, können Sie Viewer-Vorgaben verwenden oder erstellen, für die keine Social Media-Sharing-Werkzeuge zur Verfügung stehen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   Sie können auch Vorschauen darüber vornehmen, wie das Karussell-Banner aussieht. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
+   Sie können auch das Erscheinungsbild des Karussell-Banners Vorschau haben. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 1. Veröffentlichen Sie das Karussellset. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, den/die Sie auf der Web-Seite verwenden können. Wenn Sie Experience Manager-Sites sind, fügen Sie das Karussellset direkt zu Ihrer Webseite hinzu.
@@ -339,7 +340,7 @@ Sie können verschiedene Aufgaben zum Bearbeiten von Karussellsätzen durchführ
 * das Karussellset löschen.
 * Hotspots und Imagemaps hinzufügen oder bearbeiten. Siehe auch [Arbeiten mit Selektoren](/help/assets/dynamic-media/working-with-selectors.md).
 
-**So bearbeiten Sie ein Karussellset**
+**So bearbeiten Sie ein Karussellset:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -364,7 +365,7 @@ Sie können verschiedene Aufgaben zum Bearbeiten von Karussellsätzen durchführ
 
 ## (Optional) Anzeigen einer Vorschau für Karussellbanner {#optional-previewing-carousel-banners}
 
-Sie können Vorschau verwenden, um zu sehen, wie Ihr Karussellbanner für Ihre Kunden aussieht. Mithilfe der Vorschau können Sie außerdem die Hotspots und Imagemaps des Karussell-Banners testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
+Sie können Vorschau verwenden, um zu sehen, wie das Karussellbanner den Kunden angezeigt wird. Mithilfe der Vorschau können Sie außerdem die Hotspots und Imagemaps des Karussell-Banners testen, um sicherzustellen, dass sie sich wie erwartet verhalten.
 
 Wenn das Karussellbanner Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
 Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den Karusselleditor (bevorzugte Methode) oder die **[!UICONTROL Viewer]**-Liste.
 
-**So erstellen Sie eine Vorschau von Karussellbannern**
+**So erstellen Sie eine Vorschau von Karussellbannern:**
 
 1. In **[!UICONTROL Assets]** navigieren Sie zu einem vorhandenen Karussellbanner, das Sie erstellt haben, und tippen Sie darauf, um das Banner zu öffnen.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
@@ -384,7 +385,7 @@ Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den
 1. Tippen Sie auf **[!UICONTROL Vorschau]**.
 1. Um die zugehörigen Aktionen zu testen, tippen Sie auf die Hotspots oder Imagemaps im Bild.
 
-**So zeigen Sie eine Vorschau für Karussellbanner über die Viewer-Liste an**
+**So zeigen Sie eine Vorschau für Karussellbanner über die Viewer-Liste an:**
 
 1. In **[!UICONTROL Assets]** navigieren Sie zu einem vorhandenen Karussellbanner, das Sie erstellt haben, und tippen Sie darauf, um das Banner zu öffnen.
 1. Klicken Sie in der linken oberen Ecke der Seite „Vorschau“ auf das Symbol „Inhalt“.
@@ -452,6 +453,6 @@ Siehe [Ermitteln von Hotspot- und Imagemap-Variablen](#identifying-hotspot-and-i
 
 Der letzte Schritt zum Trigger der URL für die schnelle Ansicht und zur Aktivierung des Bedienfelds für die schnelle Ansicht erfordert höchstwahrscheinlich die Unterstützung eines IT-Mitarbeiters von Ihrer IT-Abteilung. Sie verfügen über die nötigen Kenntnisse, um die Implementierung der Quick-Ansicht mit einer benutzerfreundlichen URL für die schnelle Ansicht vom richtigen Schritt aus genau Trigger.
 
-## Verwenden von Quick-Ansichten zum Erstellen benutzerdefinierter Popup-Fenster {#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Quick-Ansichten zum Erstellen eines benutzerdefinierten Popup-Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Siehe [Verwenden von Quick-Ansichten zum Erstellen benutzerdefinierter Popup-Fenster](/help/assets/dynamic-media/custom-pop-ups.md).
+Siehe [Verwenden von Quick-Ansichten zum Erstellen eines benutzerdefinierten Popup-Fensters unter Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
