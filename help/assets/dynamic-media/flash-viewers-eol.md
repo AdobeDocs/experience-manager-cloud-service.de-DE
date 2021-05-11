@@ -4,10 +4,10 @@ description: Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell ni
 role: Administrator,Business Practitioner
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 53%
+source-wordcount: '45'
+ht-degree: 42%
 
 ---
 
@@ -15,4 +15,4 @@ ht-degree: 53%
 
 Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell nicht mehr unterstützt.
 
-Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
