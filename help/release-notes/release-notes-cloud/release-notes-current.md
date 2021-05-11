@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 5%
 
 ---
@@ -72,6 +72,8 @@ Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 * Beim Durchsuchen von Assets in der Ansicht &quot;Spalte&quot;zeigt ein visueller Indikator den Status der einzelnen Assets an, die genehmigt oder abgelehnt wurden.
 
 * Beim Durchsuchen von Assets in der Ansicht &quot;Spalte&quot;wird ein visueller Indikator für abgelaufene Assets angezeigt.
+
+* Ein Textbereich-Datentyp wird im Metadateneditor für [!DNL Assets] bereitgestellt. Sie können diese Option verwenden, um Ihren Benutzern die Eingabe von Metadaten in ein Textfeld ohne Formulare zu ermöglichen.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bug-fixes-assets}
 
