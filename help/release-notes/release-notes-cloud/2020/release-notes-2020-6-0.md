@@ -1,14 +1,14 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
-
 
 # Versionshinweise für AEM as a Cloud Service 2020.6.0 {#release-notes}
 
@@ -110,7 +110,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 Mit den optimierten Smart Tags können Unternehmen Smart-Tagging-Modelle trainieren, um neben generischen Smart-Tags auch Bilder zu erkennen, die auf kundenspezifischen Unternehmens-Tags basieren.
 
 In dieser Version gibt es ein neues, geführtes Benutzererlebnis, mit dessen Hilfe Smart-Tags-Training für Sätze kundenspezifischer Tags eingerichtet und mit Assets trainiert werden kann, die in Zukunft erkannt und mit diesen versehen werden sollen. Das Erlebnis ist jetzt intuitiver.
-Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Erfahren Sie, [wie Sie Assets Smart-Tags hinzufügen](/help/assets/smart-tags.md) und [Smart-Tagging konfigurieren](/help/assets/smart-tags-configuration.md).
+Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Siehe [So fügen Sie Assets Smart-Tags hinzu](/help/assets/smart-tags.md).
 
 **Unterstützung der Erfassung, Vorschau und Bereitstellung von 3D-Inhalten**
 
