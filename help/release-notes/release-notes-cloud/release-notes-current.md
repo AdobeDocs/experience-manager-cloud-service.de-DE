@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 5%
+source-wordcount: '2002'
+ht-degree: 6%
 
 ---
 
@@ -223,6 +223,22 @@ Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.4.0
 * Bei Problemen mit `CloudServiceIncompatibleWorkflowProcess` war die CSV-Datei für die herunterladbare Ausgabe nicht korrekt.
 
 * Die `Runmode`-Prüfung ergab Falsch-Positiv-Werte für Nicht-Ordner-Knoten.
+
+## Content Transfer Tool {#content-transfer-tool}
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.4.0 ist der 11. Mai 2021.
+
+### Neue Funktionen {#what-is-new-ctt-may}
+
+* Mit dieser Version des Inhaltsübermittlungstools werden Textdarstellungen für Assets erstellt, die in Cloud Service migriert werden. Textdarstellungen sind erforderlich, um die Volltextsuche in erfassten Assets zu unterstützen.
+* Die maximale Anzahl von Inhaltsübermittlungssätzen, die ein Benutzer erstellen kann, wurde von 4 auf 10 erhöht.
+
+### Fehlerbehebungen {#bug-fixes-ctt-may}
+
+* Mehrere Fehlerkorrekturen im Zusammenhang mit der Funktion zur automatischen Aktualisierung in der Benutzeroberfläche des Inhaltsübertragungstools.
+* Content Transfer Tool mit `wipe=true` führte zu einem falschen Zählerindex auf der Zielgruppe. Dieses Problem wurde behoben.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
