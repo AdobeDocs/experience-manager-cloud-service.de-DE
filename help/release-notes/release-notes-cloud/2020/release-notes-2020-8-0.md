@@ -1,14 +1,14 @@
 ---
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
@@ -30,7 +30,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Die Videotranscodierung wird jetzt mit Asset-Microservices unterstützt. In einem neuen Abschnitt in der Konfiguration der [!UICONTROL Verarbeitungsprofile] können Sie die Bitrate und die Abmessungen des Videos festlegen. Das Ausgabeformat ist MP4 mit H.264-Codec. Weitere Informationen finden Sie unter [Verwalten von Video-Assets](/help/assets/manage-video-assets.md#transcode-video). Verwenden Sie das [!DNL Dynamic Media]-Add-on für weitere Transkodierungsoptionen und den Videoversand.
 
-* Bei neuen [!DNL Experience Manager Assets]-Implementierungen ist die Funktion für Smart-Tagging jetzt standardmäßig konfiguriert. Die manuelle Integration mit [!DNL Adobe Developer Console] ist nicht erforderlich. Bei vorhandenen Implementierungen [konfigurieren Administratoren die Integration von Smart-Tags](/help/assets/smart-tags-configuration.md#aio-integration) wie zuvor.
+* Bei neuen [!DNL Experience Manager Assets]-Implementierungen ist die Funktion für Smart-Tagging jetzt standardmäßig konfiguriert. Die manuelle Integration mit [!DNL Adobe Developer Console] ist nicht erforderlich. Bei vorhandenen Implementierungen konfigurieren Administratoren die Integration von Smart-Tags wie zuvor.
 
 * Ein neues [Asset-Download-Erlebnis](/help/assets/download-assets-from-aem.md) ermöglicht Folgendes:
 
