@@ -5,10 +5,10 @@ breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 96%
+source-wordcount: '482'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 96%
    + [Verweise auf Entwicklerdokumente und APIs](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Konfigurieren von Smart-Tags für Bilder](smart-tags-configuration.md)
    + [Mehrsprachige Assets und Übersetzung](translate-assets.md)
    + [Suchfacetten](search-facets.md)
    + [Assets-HTTP-API](mac-api-assets.md)
@@ -67,7 +66,7 @@ ht-degree: 96%
 + Freigeben und Verteilen von Assets {#brand-portal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Veröffentlichen von Assets  [!DNL Brand Portal] von [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [Veröffentlichen von Assets  [!DNL Brand Portal] von [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
