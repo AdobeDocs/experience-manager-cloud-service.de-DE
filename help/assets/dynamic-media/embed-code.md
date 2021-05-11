@@ -5,10 +5,10 @@ feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 96%
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video wiedergeben oder ein Asset anzeigen möchten, das auf einer Web-Seite eingebettet wurde. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in die Web-Seiten einfügen können. Der Code kann im Dialogfeld **[!UICONTROL Einbettungs-Code]** nicht bearbeitet werden.
 
-Sie betten URLs nur dann ein, wenn Sie AEM _nicht_ als Ihren WCM verwenden. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
+Sie können URLs nur einbetten, wenn Sie _nicht_ mit Adobe Experience Manager als WCM arbeiten. Wenn Sie Experience Manager als WCM verwenden, fügen Sie die Elemente [direkt auf Ihrer Seite](adding-dynamic-media-assets-to-pages.md) hinzu.
 
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
@@ -32,7 +32,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 >
 >Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-**So betten Sie den Dynamic Media-Video- oder Bild-Viewer auf einer Web-Seite ein**
+**So betten Sie den Dynamic Media-Video- oder Bild-Viewer auf einer Web-Seite ein:**
 
 1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
