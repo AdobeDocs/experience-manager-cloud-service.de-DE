@@ -1,14 +1,14 @@
 ---
 title: Dynamic Media Newsletter
-description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Wert realisieren können. In diesem One-Stopp-Shop-Newsletter stehen wertvolle Ressourcen zum Wissensaufbau zur Verfügung. Es gibt beispielsweise Anleitungen zu Videos und Lösungsübersichten. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Video-Profile und mehr. '
+description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Es wurde so konzipiert, dass Sie sich mit Dynamic Media und Dynamic Media Classic auf den neuesten Stand bringen können, sodass Sie sofort einen Nutzen daraus ziehen können. In diesem One-Stopp-Shop-Newsletter stehen wertvolle Ressourcen zum Wissensaufbau zur Verfügung. Es gibt beispielsweise Anleitungen zu Videos und Lösungsübersichten. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Video-Profile und mehr. '
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 69%
+source-wordcount: '1147'
+ht-degree: 67%
 
 ---
 
@@ -104,7 +104,7 @@ Erfahren Sie mehr über wertvolle Ressourcen zum Wissensaufbau, z. B. Anleitunge
    * Erfahren Sie, wie Sie sich mit dem Dynamic Media-Team auf einen Tag mit überdurchschnittlich hohem Besucher-Traffic vorbereiten können.
    * Eine zweite Chance, zwei kürzlich durchgeführte Skill Builder-Webinare zu besuchen.
    * Sehen Sie sich das On-Demand-Webinar zum Schutz Ihrer digitalen Assets vor Piraterie an.
-   * Im Blickpunkt: Bridget Roman, Senior Product Marketing Manager für Adobe Experience Manager Assets.
+   * Im Blickpunkt: Bridget Roman, Senior Product Marketing Manager für Experience Manager Assets.
    * Machen Sie sich mit Dynamic Media und Dynamic Media Classic in Experience League vertraut.
 
 * **[August 2019, Ausgabe 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -112,7 +112,7 @@ Erfahren Sie mehr über wertvolle Ressourcen zum Wissensaufbau, z. B. Anleitunge
    In dieser Ausgabe:
 
    * Erfahren Sie, welche nützlichen Funktionen nur bei einem Upgrade auf Dynamic Media verfügbar sind.
-   * Informieren Sie sich über eine Webinar-Reihe, mit der Sie sich mit Adobe Experience Manager Assets und Dynamic Media vertraut machen können.
+   * Informieren Sie sich über eine Webinar-Reihe, mit der Sie sich mit Experience Manager Assets und Dynamic Media vertraut machen können.
    * Profitieren Sie von Anfang an von dem Vorteilen von Dynamic Media in Experience League.
    * Erhalten Sie eine Vorschau auf eine leistungsstarke Integration im September, mit der Sie analysieren können, wie Besucher mit Ihren Rich-Media-Inhalten interagieren.
    * Im Blickpunkt: PieterJan Pieper, Technischer Support für Dynamic Media
@@ -124,7 +124,7 @@ Erfahren Sie mehr über wertvolle Ressourcen zum Wissensaufbau, z. B. Anleitunge
    * Ressourcen und Informationen, mit denen Sie Ihre hochwertigen Assets ordnungsgemäß verwalten können, damit Sie Ihren Besuchern Erlebnisse bieten können, die sie immer wieder zurückkommen lassen.
    * Informieren Sie sich über ein bevorstehendes Webinar zum Schutz Ihrer digitalen Ressourcen.
    * Die nächsten Stationen der informativen Adobe Insider Tour.
-   * Mit Dynamic Media in Adobe Experience Manager Assets (AEM Assets) stehen Ihnen interessante Funktionen zur Verfügung.
+   * Mit Dynamic Media in Experience Manager Assets (AEM Assets) stehen Ihnen interessante Funktionen zur Verfügung.
    * Hinzufügen von 360-Grad-Videos und benutzerdefinierten Videominiaturen zu Ihrer Website.
    * Im Blickpunkt: Andrew Hathaway, Principal Solutions Consultant für Dynamic Media in AEM Assets.
 
@@ -151,7 +151,7 @@ Erfahren Sie mehr über wertvolle Ressourcen zum Wissensaufbau, z. B. Anleitunge
 
 * **[April 2019, Ausgabe 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Willkommen bei der Eröffnungsausgabe des Dynamic Media Newsletters. Der neue monatliche Newsletter der Adobe enthält Neuigkeiten, Ereignisse und Ressourcen. Die Inhalte richten sich an Benutzer von Dynamic Media in Adobe Experience Manager Assets und der Adobe Dynamic Media Classic.
+   Willkommen bei der Eröffnungsausgabe des Dynamic Media Newsletters. Der neue monatliche Newsletter der Adobe enthält Neuigkeiten, Ereignisse und Ressourcen. Der Inhalt richtet sich an Benutzer von Dynamic Media in Experience Manager Assets und Adobe Dynamic Media Classic.
 
    In dieser Ausgabe:
 
