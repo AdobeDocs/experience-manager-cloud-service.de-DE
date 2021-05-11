@@ -5,10 +5,10 @@ feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 77%
+source-wordcount: '321'
+ht-degree: 67%
 
 ---
 
@@ -18,8 +18,8 @@ Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen könn
 
 Dynamic Media bietet mehrere Optionen:
 
-* Wenn Ihre Website auf AEM gehostet wird, möchten Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
-* Wenn sich Ihre Website nicht in AEM befindet, können Sie eine der folgenden Aktionen ausführen:
+* Wenn Ihre Website auf Adobe Experience Manager gehostet wird, möchten Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
+* Wenn Ihre Website nicht im Experience Manager ist, haben Sie die Wahl zwischen:
 
    * Betten Sie Ihr Video oder Bild auf Ihrer Website ein.
    * Verknüpfen Sie URLs mit Ihrer Web-Anwendung. Verwenden Sie die Verknüpfung, wenn Sie einen Video-Player als Popup- oder modales Fenster bereitstellen möchten.
@@ -43,6 +43,6 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
-AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
+Experience Manager unterstützt jetzt den Versand aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
 Weitere Informationen finden Sie unter [HTTP/2 Versand of Content Frequently Asked Questions](/help/assets/dynamic-media/http2faq.md).
