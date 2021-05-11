@@ -3,10 +3,10 @@ title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 85%
+source-wordcount: '865'
+ht-degree: 77%
 
 ---
 
@@ -39,10 +39,11 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein *Migrationssatz* hat die folgenden Attribute:
 
-* Während der Aktivität zum Inhaltstransfer können maximal vier Migrationssätze erstellt und gepflegt werden.
+* Während der Aktivität zur Inhaltsübertragung können maximal zehn Migrationssets erstellt und gepflegt werden.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
 * Wenn ein Migrationssatz länger als 30 Tage inaktiv war, wird er automatisch gelöscht.
 * Wenn Sie einen Migrationssatz erstellen, wird er einer bestimmten Umgebung zugeordnet. Sie können nur in eine Autoren- oder Veröffentlichungsinstanz derselben Umgebung aufnehmen.
+
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
@@ -81,3 +82,5 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Festplattenspeich
    * *Datenspeichergröße*: Das Content Transfer Tool verwendet 64 GB, auch wenn der eigentliche Datenspeicher größer ist.
    * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
+
+* Ein Migrationssatz muss während der gesamten Aktivität der Inhaltsübertragung beibehalten werden, um Inhaltsaktualisierungen zu unterstützen. Da während der Aktivität der Inhaltsübertragung maximal zehn Migrationssätze erstellt und gepflegt werden können, wird empfohlen, das Inhalts-Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen die Migrationssätze nicht ausgehen.  während/Struktur der Migration entsprechend festgelegt.
