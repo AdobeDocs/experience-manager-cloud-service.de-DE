@@ -5,9 +5,9 @@ feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 73%
 
 ---
@@ -28,7 +28,7 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
 >* Die Option **Create** steht nicht zur Erstellung neuer Modelle zur Verfügung.
->* können Sie nicht [den Mieter auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
+>* können Sie nicht [die Sites-Konfiguration auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
 
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
