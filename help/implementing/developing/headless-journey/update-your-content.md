@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 51%
+source-wordcount: '1130'
+ht-degree: 49%
 
 ---
 
@@ -324,11 +324,10 @@ Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, 
 
 Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Wie Sie alles zusammenstellen - Ihre App und Ihr Inhalt in AEM Headless](put-it-all-together.md) ansehen, in dem Sie lernen, wie Sie Ihr AEM Headless-Projekt umsetzen und es für das Live-Leben vorbereiten können.
 
+[Wie Sie Einzelseitenanwendungen (SPA) mit ](create-spa.md) AEM erstellen, zeigt Ihnen auch, wie Sie bearbeitbare SPA mit AEM SPA Editor-Framework erstellen und externe SPA integrieren können, sodass Sie bei Bedarf Bearbeitungsfunktionen aktivieren können.
+
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)
-* [HATEOAS-Grundsatz](https://de.wikipedia.org/wiki/HATEOAS)
-* [SIREN-Format](https://github.com/kevinswiber/siren)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 * [Inhaltsfragment-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API-Referenz ](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
