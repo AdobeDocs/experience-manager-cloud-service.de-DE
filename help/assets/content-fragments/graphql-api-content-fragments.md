@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Inhaltsfragmente, GraphQL-API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 72%
 
 ---
@@ -121,20 +121,20 @@ Es gibt zwei Arten von Endpunkten in AEM:
 
 * Global
    * Verfügbar für alle Sites.
-   * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aller Mieter verwenden.
-   * Wenn es Inhaltsfragmentmodelle gibt, die unter Mieter geteilt werden sollten, sollten diese unter dem globalen Mieter erstellt werden.
-* Mandant:
-   * Entspricht einer Mandantenkonfiguration, wie im [Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) definiert.
+   * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aus allen Sites-Konfigurationen verwenden (definiert im [Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Wenn es Inhaltsfragmentmodelle gibt, die unter Sites-Konfigurationen freigegeben werden sollten, sollten diese unter den globalen Sites-Konfigurationen erstellt werden.
+* Sites-Konfigurationen:
+   * Entspricht einer Sites-Konfiguration, wie im [Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) definiert.
    * Spezifisch für eine bestimmte Site/ein bestimmtes Projekt.
-   * Ein Mandanten-spezifischer Endpunkt verwendet die Inhaltsfragmentmodelle dieses bestimmten Mandanten zusammen mit denen des globalen Mandanten.
+   * Ein konfigurationsspezifischer Endpunkt für Sites verwendet die Inhaltsfragmentmodelle dieser bestimmten Sites-Konfiguration zusammen mit denen der globalen Sites-Konfiguration.
 
 >[!CAUTION]
 >
->Der Inhaltsfragment-Editor kann zulassen, dass ein Inhaltsfragment eines Mandanten (über Richtlinien) auf ein Inhaltsfragment eines anderen Mandanten verweist.
+>Der Inhaltsfragment-Editor kann zulassen, dass ein Inhaltsfragment einer Sites-Konfiguration (über Richtlinien) auf ein Inhaltsfragment einer anderen Sites-Konfiguration verweist.
 >
->In einem solchen Fall sind nicht alle Inhalte über einen Pächter-spezifischen Endpunkt abrufbar.
+>In diesem Fall sind nicht alle Inhalte über einen konfigurationsspezifischen Endpunkt der Sites abrufbar.
 >
->Der Autor des Inhalts sollte dieses Szenario steuern. Es kann beispielsweise nützlich sein, die Platzierung von gemeinsamen Inhaltsfragmentmodellen unter den globalen Mandanten zu erwägen.
+>Der Autor des Inhalts sollte dieses Szenario steuern. Es kann beispielsweise nützlich sein, zu erwägen, freigegebene Inhaltsfragmentmodelle in die Konfiguration globaler Sites einzufügen.
 
 Der Repository-Pfad des GraphQL für AEM globalen Endpunkt lautet:
 
@@ -196,6 +196,10 @@ Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umg
 ## GraphiQL-Schnittstelle {#graphiql-interface}
 
 Eine Implementierung der [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-Standardschnittstelle steht zur Verwendung mit AEM GraphQL zur Verfügung. Sie kann [mit AEM installiert werden](#installing-graphiql-interface).
+
+>[!NOTE]
+>
+>GraphiQL ist an den globalen Endpunkt gebunden (und funktioniert nicht mit anderen Endpunkten für bestimmte Sites-Konfigurationen).
 
 Über diese Schnittstelle können Sie Abfragen direkt eingeben und testen.
 
@@ -587,21 +591,21 @@ Nachdem eine Abfrage mit einer POST-Anfrage vorbereitet wurde, kann sie mit eine
 
 Dies ist erforderlich, da POST-Abfragen normalerweise nicht zwischengespeichert werden. Wenn Sie GET mit der Abfrage als Parameter verwenden, besteht ein erhebliches Risiko, dass der Parameter für HTTP-Services und Vermittler zu groß wird.
 
-Beständige Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden (Mandant-)Konfiguration](#graphql-aem-endpoint) in Verbindung steht; damit sie entweder
+Beständige Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](#graphql-aem-endpoint) in Verbindung steht; damit sie entweder
 
 * Globale Konfiguration und Endpunkt
 Die Abfrage hat Zugriff auf alle Inhaltsfragmentmodelle.
-* Spezifische Mandantenkonfiguration(en) und Endpunkte
-Zum Erstellen einer beständigen Abfrage für eine bestimmte Mandantenkonfiguration ist ein entsprechender tendenzieller Endpunkt erforderlich (um Zugriff auf die entsprechenden Inhaltsfragmentmodelle zu gewähren).
-Um beispielsweise eine persistente Abfrage speziell für den WKND-Mandanten zu erstellen, müssen im Voraus eine entsprechende WKND-spezifische Mandantenkonfiguration und ein WKND-spezifischer Endpunkt erstellt werden.
+* Konfiguration(en) und Endpunkte bestimmter Sites
+Das Erstellen einer beständigen Abfrage für eine bestimmte Sites-Konfiguration erfordert einen entsprechenden Sites-Konfigurationsspezifischen Endpunkt (um Zugriff auf die entsprechenden Inhaltsfragmentmodelle zu gewähren).
+Um beispielsweise eine persistente Abfrage speziell für die WKND Sites-Konfiguration zu erstellen, müssen im Voraus eine entsprechende WKND-spezifische Sites-Konfiguration und ein WKND-spezifischer Endpunkt erstellt werden.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->Die **GraphQL Persistence Abfragen** müssen für die entsprechende Mandantenkonfiguration aktiviert werden.
+>Die **GraphQL Persistence Abfragen** müssen für die entsprechende Sites-Konfiguration aktiviert werden.
 
-Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein Modell `my-model` aus der Mandant-Konfiguration `my-conf` verwendet:
+Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein Modell `my-model` aus der Sites-Konfiguration `my-conf` verwendet:
 
 * Sie können eine Abfrage mit dem spezifischen Endpunkt `my-conf` erstellen und die Abfrage wird wie folgt gespeichert:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
