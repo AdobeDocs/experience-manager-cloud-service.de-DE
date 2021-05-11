@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 57%
+source-wordcount: '1115'
+ht-degree: 51%
 
 ---
 
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 Inhaltsfragmente werden für einen kopflosen Versand verwendet, und ein Inhaltsfragment ist ein spezieller Asset-Typ. Sie werden zum Zugriff auf strukturierte Daten wie Texte, Zahlen, Daten usw. verwendet.
 
-Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### Darstellung  {#representation}
+### Representation {#representation}
 
-Inhaltsfragmente:
+Content fragments:
 
-* stellen keine Binärdaten bereit.
-* sind vollständig in der JSON-Ausgabe enthalten (innerhalb der Eigenschaft `properties`).
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-### Inhaltsmodelle und Inhaltsfragmente   {#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-Zum Erstellen eines neuen Inhaltsfragments muss der Pfad (des internen Repositorys) für das Modell angegeben werden.
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### Zugehörige Inhalte {#associated-content}
+### Associated Content {#associated-content}
 
-Zugehöriger Inhalt wird derzeit nicht bereitgestellt.
+Associated content is currently not exposed.
+-->
 
 ## Verwenden der Asset REST API {#using-aem-assets-rest-api}
 
