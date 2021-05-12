@@ -4,14 +4,14 @@ description: In diesem Teil der AEM Headless Developer-Journey erfahren Sie, wie
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Pfad zu Ihrem ersten Erlebnis mit AEM Headless {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, 
 * Erkennen Sie die erforderlichen Werkzeuge und AEM Konfigurationen.
 * Machen Sie sich mit Best Practices vertraut, um die Journey ohne Kopf zu glätten, die Inhaltserstellung effizient zu gestalten und sicherzustellen, dass Inhalte schnell bereitgestellt werden.
 
-Sie sollten Ihre AEM Journey ohne Kopfdaten fortsetzen, indem Sie das Dokument [Wie Sie Ihren Inhalt als AEM Inhaltsmodelle](model-your-content.md) modellieren, in dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
+Wir möchten, dass Sie auf diesem Grundlagenwissen aufbauen, um die Macht und Flexibilität AEM Headless vollständig zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können. Dazu haben Sie Optionen.
+
+### Wählen Sie Ihr eigenes Abenteuer {#choose-your-path}
+
+Egal, welchen Lernstil Sie haben, die Adobe möchte, dass Sie erfolgreich mit Ihrem AEM Headless-Projekt beginnen können.
+
+* Wenn Sie weiterhin mit den kostenlosen Konzepten und AEM praxislosen Technologien **arbeiten möchten, sollten Sie Ihre AEM kopflosen Journey fortsetzen, indem Sie das Dokument [Wie Sie Ihre Inhalte als AEM-Inhaltsmodelle modellieren](model-your-content.md) überprüfen. Hier erfahren Sie, wie Sie Ihre Inhaltsstruktur in AEM modellieren.**
+* Wenn Sie lieber **lernen möchten, indem Sie** ausführen, können Sie zum [Erste Schritte mit AEM praxisnahen Lernprogramm ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen, in dem Sie direkt in AEM Headless-Entwicklung springen, indem Sie ein einfaches Projekt implementieren, um AEM kostenlose Inhalte bereitzustellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
