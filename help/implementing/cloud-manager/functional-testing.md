@@ -2,10 +2,9 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 55%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Funktionstests sind in drei Typen eingeteilt: Produktfunktionstests, benutzerdefinierte Funktionstests, benutzerdefinierte UI-Tests"
+>abstract="Funktionstests werden in drei Typen eingeteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests"
 
 Funktionstests werden in drei Typen eingeteilt:
 
