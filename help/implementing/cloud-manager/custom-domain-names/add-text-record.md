@@ -1,14 +1,14 @@
 ---
 title: Hinzufügen eines TXT-Datensatzes
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
+exl-id: d441de29-af41-4d3e-9155-531af9702841
 translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 100%
 
 ---
-
 
 # Hinzufügen eines TXT-Datensatzes {#adding-txt}
 
@@ -27,8 +27,8 @@ Beispiele finden Sie in der nachfolgenden Tabelle.
 
 | Domain | Name | TXT-Wert |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Wird in der Benutzeroberfläche von Cloud Manager angezeigt und ist spezifisch für die Domain und die Cloud Manager-Umgebung. |
-| `test.example.com` | `_aemverification.test.example.com` | Wird in der Benutzeroberfläche von Cloud Manager angezeigt und ist spezifisch für die Domain und die Cloud Manager-Umgebung. |
+| `example.com` | `_aemverification` | Wird in der Benutzeroberfläche von Cloud Manager angezeigt und ist spezifisch für die Domain und die Cloud Manager-Umgebung. |
+| `test.example.com` | `_aemverification` | Wird in der Benutzeroberfläche von Cloud Manager angezeigt und ist spezifisch für die Domain und die Cloud Manager-Umgebung. |
 
 Abschließend können Sie das Ergebnis überprüfen, indem Sie Folgendes ausführen: `dig _aemverification.[yourdomainname] -t txt`.
 Das erwartete Ergebnis sollte den in der Benutzeroberfläche von Cloud Manager bereitgestellten TXT-Wert anzeigen.
@@ -37,4 +37,3 @@ Wenn Ihre Domain beispielsweise `example.com` lautet, führen Sie Folgendes aus:
 
 >[!NOTE]
 >Es gibt auch verschiedene [DNS-Lookup-Tools](https://www.ultratools.com/tools/dnsLookup). Google DoH kann verwendet werden, um TXT-Datensätze zu suchen und zu erkennen, ob der TXT-Datensatz fehlt oder fehlerhaft ist.
-
