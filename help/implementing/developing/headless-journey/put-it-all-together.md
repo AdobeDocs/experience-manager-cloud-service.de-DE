@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-translation-type: tm+mt
-source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
+source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
@@ -34,60 +33,6 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr 
 * Verstehen Sie, für welchen lokalen Entwicklungsarbeitsablauf AEM
 * Installieren Sie das AEM SDK, um eine lokale Entwicklungslaufzeit zu erhalten, die Sie zum Testen Ihres Inhalts verwenden können.
 * Erfahren Sie mehr über die Entwicklungstools, die Sie neben der lokalen Entwicklungslaufzeit benötigen
-
-## Lokaler Entwicklungsarbeitsablauf {#the-local-development-workflow}
-
-Das lokale Entwicklungsprojekt basiert auf Apache Maven und nutzt Git zur Quellcodeverwaltung. Um das Projekt zu aktualisieren, können Entwickler unter anderem ihre bevorzugte integrierte Entwicklungs-Umgebung wie Eclipse, Visual Studio Code oder IntelliJ verwenden.
-
-Zum Testen von Code- oder Inhaltsaktualisierungen, die von Ihrer Anwendung ohne Kopfdaten erfasst werden, müssen Sie die Updates für eine lokale AEM-Laufzeit bereitstellen, die lokale Instanzen des AEM-Autoren- und Veröffentlichungsinstanzen enthält.
-
-Achten Sie darauf, die Unterschiede zwischen den einzelnen Komponenten in der lokalen AEM-Laufzeit zu beachten, da es wichtig ist, Ihre Updates dort zu testen, wo sie am wichtigsten sind - zum Beispiel Inhaltsaktualisierungen beim Autor zu testen oder neuen Code in der Veröffentlichungsinstanz zu testen.
-
-In einem Produktionssystem sitzen ein Dispatcher und ein HTTP-Apache-Server immer vor einer AEM Veröffentlichungsinstanz. Sie bieten Caching- und Sicherheitsdienste für das AEM System, daher ist es von größter Bedeutung, auch Code- und Inhaltsupdates für den Dispatcher zu testen.
-
-Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Codeaktualisierungen an ein zentralisiertes Git-Repository in Cloud Manager übertragen.
-
-Nachdem die Updates in Cloud Manager hochgeladen wurden, können sie mithilfe der CI/CD-Pipeline von Cloud Manager AEM als Cloud Service bereitgestellt werden.
-
-
-## Das AEM SDK {#the-aem-sdk}
-
-Das AEM SDK wird zum Erstellen und Bereitstellen von benutzerspezifischem Code verwendet. Es enthält die folgenden Artefakte:
-
-* Die Schnellstart-JAR-Datei - eine ausführbare JAR-Datei, mit der sowohl eine Autoren- als auch eine Veröffentlichungsinstanz eingerichtet werden kann
-* Dispatcher-Tools - das Dispatcher-Modul und seine Abhängigkeiten für Windows- und UNIX-basierte Systeme
-* Java-API-JAR - Die Java-Jar-/Maven-Abhängigkeit, die alle zulässigen Java-APIs verfügbar macht, die für die Entwicklung gegen AEM verwendet werden können
-* Javadoc jar - die JavaScript-Dateien für die Java API-JAR
-
-## Umgebung für lokale Entwicklung {#local-development-environment}
-
-Um Ihr AEM freizügiges Projekt auf den Start vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts gut funktionieren.
-
-Dazu müssen Sie alles zusammenstellen - Code, Inhalt und Konfiguration und es in einer lokalen Entwicklungs-Umgebung testen, um live bereitzugehen.
-
-Die örtliche Umgebung umfasst drei Schwerpunkte:
-
-1. Das AEM Projekt - enthält den gesamten benutzerspezifischen Code, die Konfiguration und den Inhalt, an dem die AEM Entwickler arbeiten werden
-1. Die lokale AEM Runtime - lokale Versionen der AEM Autoren- und Veröffentlichungsdienste, die zum Bereitstellen des Codes aus dem AEM Projekt verwendet werden
-1. Die lokale Dispatcher-Laufzeit - eine lokale Version des Apache htttpd-Webservers, der das Dispatcher-Modul enthält
-
-## Entwicklungstools {#development-tools}
-
-Zusätzlich zum AEM SDK benötigen Sie zusätzliche Werkzeuge, mit denen Sie Code und Inhalte lokal entwickeln und testen können:
-
-* Java
-* Git
-* Apache Maven
-* Die Node.js-Bibliothek
-* Die IDE Ihrer Wahl
-
-Da AEM eine Java-Anwendung ist, müssen Sie Java und das Java-SDK installieren, um die Entwicklung von AEM als Cloud Service zu unterstützen.
-
-Git ist das Tool, mit dem Sie Quellcodeverwaltung verwalten sowie die Änderungen in Cloud Manager einchecken und diese dann in einer Produktionsinstanz bereitstellen können.
-
-AEM nutzt Apache Maven zum Erstellen von Projekten, die aus dem AEM Maven Project Archetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
-
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Front-End-Elementen des ui.frontend-Unterprojekts eines AEM Projekts verwendet wird. Node.js wird mit npm verteilt, ist der De-facto-Paketmanager von Node.js, der zum Verwalten von JavaScript-Abhängigkeiten verwendet wird.
 
 ## Wie geht es weiter {#what-is-next}
 
