@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1836'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,8 @@ Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Erste Schritte mit AEM Implementierung der kostenlosen Produktion](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Übersicht über die Bereitstellung auf AEM als Cloud Service](/help/implementing/deploying/overview.md)
 * [Lokale AEM Umgebung einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Das AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Übersicht über die Bereitstellung auf AEM als Cloud Service](/help/implementing/deploying/overview.md)
 * [Verwenden Sie Cloud Manager, um Ihren Code bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Integrieren Sie das Cloud Manager-Git-Repository in ein externes Git-Repository und stellen Sie ein Projekt bereit, um es als Cloud Service zu AEM](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
