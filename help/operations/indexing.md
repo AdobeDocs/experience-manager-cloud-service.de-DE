@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 69%
+source-wordcount: '1780'
+ht-degree: 71%
 
 ---
 
@@ -208,7 +208,3 @@ Wenn ein Index in einer späteren Version der Anwendung entfernt werden soll, k�
 ```
 
 Wenn es nicht mehr erforderlich ist, einen vordefinierten Index anzupassen, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen Index `damAssetLucene-8-custom-4` hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
-
-### Indexverfügbarkeit und Fehlertoleranz {#index-availability-and-fault-tolerance}
-
-Es wird empfohlen, Duplikat-Indizes für wichtige Funktionen zu erstellen (unter Berücksichtigung der oben genannten Benennungsregel für Indizes). Bei Indexbeschädigung oder einem solchen unvorhergesehenen Ereignis ist ein Fallback-Index verfügbar, um auf Abfragen zu reagieren.
