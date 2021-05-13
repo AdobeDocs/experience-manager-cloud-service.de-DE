@@ -2,10 +2,9 @@
 title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 77%
 
 ---
@@ -83,4 +82,4 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Festplattenspeich
    * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Ein Migrationssatz muss während der gesamten Aktivität der Inhaltsübertragung beibehalten werden, um Inhaltsaktualisierungen zu unterstützen. Da während der Aktivität der Inhaltsübertragung maximal zehn Migrationssätze erstellt und gepflegt werden können, wird empfohlen, das Inhalts-Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen die Migrationssätze nicht ausgehen.  während/Struktur der Migration entsprechend festgelegt.
+* Ein Migrationssatz muss während der gesamten Aktivität der Inhaltsübertragung beibehalten werden, um Inhaltsaktualisierungen zu unterstützen. Da während der Aktivität der Inhaltsübertragung maximal zehn Migrationssätze erstellt und gepflegt werden können, wird empfohlen, das Inhalts-Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen die Migrationssätze nicht ausgehen.
