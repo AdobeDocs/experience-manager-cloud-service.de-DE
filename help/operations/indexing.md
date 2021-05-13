@@ -2,11 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 72%
+source-wordcount: '1829'
+ht-degree: 69%
 
 ---
 
@@ -49,6 +48,10 @@ Die Definition von Indizes kann aus drei Anwendungsfällen bestehen:
 Für die Punkte 1 und 2 müssen Sie als Teil Ihrer benutzerspezifischen Code-Basis im jeweiligen Release-Plan für Cloud Manager eine neue Indexdefinition erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>Wenn Sie einen Out-of-the-Box-Index, z. B. `damAssetLucene-6`, anpassen, kopieren Sie die neueste Out-of-the-Box-Indexdefinition aus einer *Cloud Service-Umgebung* und fügen Sie Ihre Anpassungen oben hinzu. Dies stellt sicher, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispielsweise ist der Knoten `tika` unter `/oak:index/damAssetLucene-6/tika` ein erforderlicher Knoten und sollte ebenfalls Teil Ihres benutzerdefinierten Indexes sein und nicht im Cloud SDK vorhanden sein.
 
 Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Indexdefinition gemäß folgendem Benennungsmuster enthält:
 
