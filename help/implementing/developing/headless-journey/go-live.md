@@ -5,11 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 2%
+source-wordcount: '1811'
+ht-degree: 1%
 
 ---
 
@@ -33,38 +32,97 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr 
 
 Dieses Dokument hilft Ihnen, die AEM freizügige Veröffentlichungspipeline und die Leistungsaspekte zu verstehen, die Sie beachten müssen, bevor Sie mit der Anwendung live gehen.
 
+* Erfahren Sie mehr über das AEM SDK und die erforderlichen Entwicklungswerkzeuge
+* Richten Sie eine lokale Entwicklungs-Laufzeit ein, um Ihre Inhalte zu simulieren, bevor Sie live gehen
 * Grundlagen zur AEM Content-Replikation und -Zwischenspeicherung
-* Konfigurieren Sie die Werkzeuge, die zum Simulieren der Funktion &quot;Los&quot;für Ihre kostenlose Anwendung erforderlich sind.
 * Sichern und skalieren Sie Ihre Anwendung vor dem Start
 * Leistungs- und Debugprobleme überwachen
 
-## Grundlagen zur Inhaltsreplikation und -zwischenspeicherung {#content-replication-and-caching}
+## Das AEM SDK {#the-aem-sdk}
 
-Eine vollständige AEM Umgebung besteht aus einem Autor, einem Veröffentlichen und einem Dispatcher.
+Es enthält die folgenden Artefakte:
+
+* Die Schnellstart-JAR-Datei - eine ausführbare JAR-Datei, mit der sowohl eine Autoren- als auch eine Veröffentlichungsinstanz eingerichtet werden kann
+* Dispatcher-Tools - das Dispatcher-Modul und seine Abhängigkeiten für Windows- und UNIX-basierte Systeme
+* Java-API-JAR - Die Java-Jar-/Maven-Abhängigkeit, die alle zulässigen Java-APIs verfügbar macht, die für die Entwicklung gegen AEM verwendet werden können
+* Javadoc jar - die JavaScript-Dateien für die Java API-JAR
+
+## Entwicklungstools {#development-tools}
+
+Zusätzlich zum AEM SDK benötigen Sie zusätzliche Werkzeuge, mit denen Sie Code und Inhalte lokal entwickeln und testen können:
+
+* Java
+* Das AEM SDK
+* Git
+* Apache Maven
+* Die Node.js-Bibliothek
+* Die IDE Ihrer Wahl
+
+Da AEM eine Java-Anwendung ist, müssen Sie Java und das Java-SDK installieren, um die Entwicklung von AEM als Cloud Service zu unterstützen.
+
+Das AEM SDK wird zum Erstellen und Bereitstellen von benutzerspezifischem Code verwendet. Es ist das Hauptwerkzeug, das Sie benötigen, um Ihre kostenlose Anwendung zu testen, bevor Sie live gehen.
+
+Git wird verwendet, um Quellcodeverwaltung zu verwalten, die Änderungen in Cloud Manager einzuchecken und sie dann in einer Produktionsinstanz bereitzustellen.
+
+AEM nutzt Apache Maven zum Erstellen von Projekten, die aus dem AEM Maven Project Archetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
+
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Front-End-Elementen des ui.frontend-Unterprojekts eines AEM Projekts verwendet wird. Node.js wird mit npm verteilt, ist der De-facto-Paketmanager von Node.js, der zum Verwalten von JavaScript-Abhängigkeiten verwendet wird.
+
+## Komponenten eines AEM Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
+
+Eine vollständige AEM Umgebung besteht aus einem Autor, einem Veröffentlichen und einem Dispatcher. Diese Komponenten werden in der lokalen Entwicklungslaufzeit bereitgestellt, um Ihnen die Vorschau Ihres Codes und Inhalts vor der Live-Schaltung zu erleichtern.
 
 * **Der Authoring-** Dienst, bei dem interne Benutzer Inhalte erstellen, verwalten und Vorschauen erstellen.
 
-* **Der Publish-** Dienst wird als &quot;Live&quot;-Umgebung betrachtet und ist in der Regel das, mit dem Endbenutzer interagieren. Nach der Bearbeitung und Genehmigung im Autorendienst werden Inhalte an den Veröffentlichungsdienst verteilt.
+* **Der Publish-** Dienst wird als &quot;Live&quot;-Umgebung betrachtet und ist in der Regel das, mit dem Endbenutzer interagieren. Nach der Bearbeitung und Genehmigung im Autorendienst werden Inhalte an den Veröffentlichungsdienst verteilt. Das häufigste Bereitstellungsmuster bei AEM kostenlosen Anwendungen besteht darin, dass die Produktionsversion der Anwendung mit einem AEM Publish-Dienst verbunden wird.
 
 * **Der** Dispatcher ist ein statischer Webserver, der mit dem AEM Dispatcher-Modul erweitert wird. Er speichert durch die Veröffentlichungsinstanz generierte Webseiten zwischen, um die Leistung zu verbessern.
 
-Das häufigste Bereitstellungsmuster bei AEM kostenlosen Anwendungen besteht darin, dass die Produktionsversion der Anwendung mit einem AEM Publish-Dienst verbunden wird.
+## Lokaler Entwicklungsarbeitsablauf {#the-local-development-workflow}
 
-## Anforderungen und Konfiguration {#requirements-and-configuration}
+Das lokale Entwicklungsprojekt basiert auf Apache Maven und nutzt Git zur Quellcodeverwaltung. Um das Projekt zu aktualisieren, können Entwickler unter anderem ihre bevorzugte integrierte Entwicklungs-Umgebung wie Eclipse, Visual Studio Code oder IntelliJ verwenden.
 
-1. Richten Sie eine [Lokale Laufzeitumgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java) mit [AEM als Cloud-Dienst-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ein.
-2. Installieren Sie den [WKND-Beispielinhalt](/help/implementing/developing/introduction/develop-wknd-tutorial.md) und die folgenden GraphQL-Endpunkte
-3. Stellen Sie einen [statischen Knoten Server](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server) bereit und konfigurieren Sie ihn.
+Zum Testen von Code- oder Inhaltsaktualisierungen, die von Ihrer Anwendung ohne Kopfdaten erfasst werden, müssen Sie die Updates für die lokale AEM bereitstellen, die lokale Instanzen des AEM-Autors und der Veröffentlichungsdienste enthält.
 
-## Sichern und skalieren Sie Ihre Headless-Anwendung vor dem Start von {#secure-and-scale-before-launch}
+Achten Sie darauf, die Unterschiede zwischen den einzelnen Komponenten in der lokalen AEM zu beachten, da es wichtig ist, Ihre Updates dort zu testen, wo sie am wichtigsten sind. Testen Sie beispielsweise Inhaltsaktualisierungen beim Autor oder testen Sie neuen Code in der Veröffentlichungsinstanz.
 
-1. [Token-basierte Authentifizierung](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) konfigurieren
-2. Sichere Webhows
-3. Zwischenspeicherung und Skalierbarkeit konfigurieren
+In einem Produktionssystem sitzen ein Dispatcher und ein HTTP-Apache-Server immer vor einer AEM Veröffentlichungsinstanz. Sie bieten Caching- und Sicherheitsdienste für das AEM System, daher ist es von größter Bedeutung, auch Code- und Inhaltsupdates für den Dispatcher zu testen.
+
+Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Codeaktualisierungen an ein zentralisiertes Git-Repository in Cloud Manager übertragen.
+
+Nachdem die Updates in Cloud Manager hochgeladen wurden, können sie mithilfe der CI/CD-Pipeline von Cloud Manager AEM als Cloud Service bereitgestellt werden.
+
+## Lokale Vorschau von Code und Inhalt mit der Umgebung für lokale Entwicklung {#previewing-your-code-and-content-locally-with-the-local-development-environment}
+
+Um Ihr AEM freizügiges Projekt auf den Start vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts gut funktionieren.
+
+Dazu müssen Sie alles zusammensetzen: Code, Inhalt und Konfiguration und testen Sie es in einer lokalen Entwicklungs-Umgebung für die Live-Bereitschaft.
+
+Die örtliche Umgebung umfasst drei Schwerpunkte:
+
+1. Das AEM Projekt - enthält den gesamten benutzerspezifischen Code, die Konfiguration und den Inhalt, an dem die AEM Entwickler arbeiten werden
+1. Die lokale AEM Runtime - lokale Versionen der AEM Autoren- und Veröffentlichungsdienste, die zum Bereitstellen des Codes aus dem AEM Projekt verwendet werden
+1. Die lokale Dispatcher-Laufzeit - eine lokale Version des Apache htttpd-Webservers, der das Dispatcher-Modul enthält
+
+Nachdem die lokale Entwicklungs-Umgebung eingerichtet wurde, können Sie Inhalte simulieren, die für die React-App bereitgestellt werden, indem Sie einen lokalen statischen Node-Server bereitstellen.
+
+Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und zu allen für die Content-Vorschau erforderlichen Abhängigkeiten finden Sie unter [Produktionsimplementierung mit einem AEM Publish-Dienst](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
 ## Bereitstellung für Produktion {#deploy-to-production}
 
-Nachdem Sie den gesamten Code und Inhalt lokal getestet haben, können Sie jetzt mit der Bereitstellung einer Produktion mit AEM beginnen.
+Sobald Sie Ihren gesamten Code und Inhalt lokal getestet haben, können Sie mit der Bereitstellung einer Produktion mit AEM beginnen.
+
+Sie können Beginn bei der Codebereitstellung mit der Cloud Manager CI/CD-Pipeline erstellen, die ausführlich unter [hier](/help/implementing/deploying/overview.md) behandelt wird.
+
+## Bereiten Sie Ihre AEM Headless-Anwendung für Go-Live {#prepare-your-aem-headless-application-for-golive} vor
+
+Jetzt ist es an der Zeit, Ihre AEM kostenlose Anwendung für den Start bereitzustellen, indem Sie die unten beschriebenen Best Practices befolgen.
+
+### Sichern und skalieren Sie Ihre Headless-Anwendung vor dem Start von {#secure-and-scale-before-launch}
+
+1. [Token-basierte Authentifizierung](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) konfigurieren
+1. Sichere Webhows
+1. Zwischenspeicherung und Skalierbarkeit konfigurieren
 
 ### Modellstruktur vs. GraphQL-Ausgabe {#structure-vs-output}
 
@@ -89,9 +147,9 @@ Nachdem Sie den gesamten Code und Inhalt lokal getestet haben, können Sie jetzt
 * Nutzen Sie `Last-modified-since`, um Ressourcen zu aktualisieren.
 * Verwenden Sie `_reference`-Ausgabe in der JSON-Datei, um Beginn beim Herunterladen von Assets zu verwenden, ohne vollständige JSON-Dateien analysieren zu müssen.
 
-## Überwachung {#monitoring}
+## Leistungsüberwachung {#performance-monitoring}
 
-### So überprüfen Sie die Gesamtleistung {#check-overall-performance}
+Damit Benutzer bei der Verwendung der AEM Anwendung ohne Kopfdaten das bestmögliche Erlebnis erhalten, müssen Sie die wichtigsten Leistungsmetriken wie unten beschrieben überwachen:
 
 * Vorschauen- und Produktionsversionen der App überprüfen
 * Statusseiten AEM aktuellen Status der Dienstverfügbarkeit überprüfen
@@ -111,7 +169,7 @@ Nachdem Sie den gesamten Code und Inhalt lokal getestet haben, können Sie jetzt
 
 ### Debugging {#debugging}
 
-Um sicherzustellen, dass Ihre Anwendung vor dem Start ordnungsgemäß funktioniert, sollten Sie folgende Schritte als allgemeine Vorgehensweise zum Debugging ausführen:
+Beachten Sie beim Debugging folgende Best Practices:
 
 * Funktionalität und Leistung mit der Anwendungsversion der Vorschau überprüfen
 * Funktionalität und Leistung mit der Produktionsversion der Anwendung überprüfen
@@ -140,3 +198,8 @@ Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, 
 Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Post Launch](post-launch.md) ansehen, in dem Sie lernen, wie Sie Ihr Headless-Erlebnis erhalten.
 
 ## Zusätzliche Ressourcen {#additional-resources}
+
+* [Erste Schritte mit AEM Implementierung der kostenlosen Produktion](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Übersicht über die Bereitstellung auf AEM als Cloud Service](/help/implementing/deploying/overview.md)
+* [Lokale AEM Umgebung einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Verwenden Sie Cloud Manager, um Ihren Code bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
