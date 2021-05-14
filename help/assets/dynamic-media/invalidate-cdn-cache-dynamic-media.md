@@ -1,14 +1,13 @@
 ---
-title: Invalidierung des CDN-Cache über Dynamic Media
+title: Ungültigmachen des CDN (Content Versand Network)-Cache über Dynamic Media
 description: '"Erfahren Sie, wie Sie Ihre zwischengespeicherten CDN-Inhalte (Content Versand Network) für ungültig erklären, damit Sie die von Dynamic Media bereitgestellten Assets schnell aktualisieren können, anstatt darauf zu warten, dass der Cache abläuft."'
 feature: Asset-Verwaltung
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 63%
+source-wordcount: '1308'
+ht-degree: 59%
 
 ---
 
@@ -22,11 +21,11 @@ Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeiche
 
 Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**So machen Sie den CDN-Cache über Dynamic Media ungültig**
+**So machen Sie den CDN-Cache über Dynamic Media ungültig:**
 
 *Teil 1 von 2: Erstellen einer Vorlage für die CDN-Invalidierung*
 
-1. Tippen Sie in AEM as a Cloud Service auf **[!UICONTROL Tools > Assets > Vorlage für CDN-Invalidierung]**.
+1. Tippen Sie in Adobe Experience Manager als Cloud Service auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN-Ungültigtenvorlage]**.
 
    ![CDN-Validierungsfunktion](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/d
    | Szenario | Option |
    | --- | --- |
    | Ich habe mit Dynamic Media Classic bereits früher eine Vorlage für CDN-Invalidierung erstellt. | Das Textfeld **[!UICONTROL Vorlage erstellen]** wird vorab mit Ihren Vorlagendaten ausgefüllt. In diesem Fall können Sie entweder die Vorlage bearbeiten oder mit dem nächsten Schritt fortfahren. |
-   | Ich muss eine Vorlage erstellen. Was gebe ich ein? | Geben Sie im Textfeld **[!UICONTROL Vorlage erstellen]** eine Bild-URL (einschließlich Bildvorgaben oder Modifikatoren) ein, die auf `<ID>` verweist, anstatt einer bestimmten Bild-ID wie im folgenden Beispiel:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Wenn die Vorlage nur `<ID>` enthält, füllt Dynamic Media `https://<publishserver_name>/is/image/<company_name>/<ID>` ein, wobei `<publishserver_name>` der Name Ihres Publish-Servers ist, der in &quot;Allgemeine Einstellungen&quot;in Dynamic Media Classic definiert ist.. `<company_name>` ist der Name des Stammordners Ihrer Firma, der mit dieser AEM verknüpft ist, und `<ID>` sind die ausgewählten Assets, die über die Elementauswahl ungültig werden sollen.<br>Alle Vorgaben/Modifikatoren `<ID>` werden im Istzustand in die URL-Definition kopiert.<br>Das heißt, dass nur Bilder `/is/image` basierend auf der Vorlage automatisch erstellt werden können.<br>Wenn bei `/is/content/` mit der Asset-Auswahl Assets wie Videos oder PDFs hinzugefügt werden, werden keine automatischen URLs generiert. Stattdessen müssen Sie diese Assets entweder in der Vorlage für CDN-Invalidierung angeben oder die URL den Assets manuell hinzufügen in *Teil 2 von 2: Festlegen von CDN-Invalidierungsoptionen*.<br>**Beispiele:**<br> In diesem ersten Beispiel enthält die Vorlage für die Invalidierung `<ID>` zusammen mit der Asset-URL, die `/is/content` aufweist. Beispiel: `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media bildet die URL auf Grundlage dieses Pfades, wobei `<ID>` die über die Elementauswahl ausgewählten Assets sind, die ungültig werden sollen.<br>In diesem zweiten Beispiel enthält die Vorlage für die Invalidierung die vollständige URL des Assets, das in Ihren Web-Eigenschaften verwendet wird, mit `/is/content` (unabhängig von der Asset-Auswahl). Beispiel: `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`, wobei „backpack“ die Asset-ID ist.<br>Asset-Formate, die in Dynamic Media unterstützt werden, können ungültig gemacht werden. Zu den Asset-Dateitypen, die für die CDN-Ungültigmachung nicht unterstützt werden, zählen PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word und Rich Text Format.**<br>Achten Sie beim Erstellen der Vorlage genau auf Syntax und mögliche Rechtschreibfehler. Dynamic Media nimmt keine Vorlagenüberprüfung vor.<br>Geben Sie URLs für intelligente Imagemaps entweder in dieser Vorlage für die CDN-Ungültigmachung oder im Textfeld  **[!UICONTROL Hinzufügen]** URLs in  *Teil 2 an: Einstellen der Optionen für die CDN-Ungültigmachung.*<br>**Wichtig:** Jeder Eintrag in einer Vorlage für CDN-Invalidierung muss sich in einer eigenen Zeile befinden.<br>*Das folgende Vorlagenbeispiel dient nur zur Veranschaulichung.* |
+   | Ich muss eine Vorlage erstellen. Was gebe ich ein? | Geben Sie im Textfeld **[!UICONTROL Vorlage erstellen]** eine Bild-URL (einschließlich Bildvorgaben oder Modifikatoren) ein, die auf `<ID>` verweist, anstatt einer bestimmten Bild-ID wie im folgenden Beispiel:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Wenn die Vorlage nur `<ID>` enthält, füllt Dynamic Media `https://<publishserver_name>/is/image/<company_name>/<ID>` ein, wobei `<publishserver_name>` der Name Ihres Publish-Servers ist, der in &quot;Allgemeine Einstellungen&quot;in Dynamic Media Classic definiert ist.. `<company_name>` ist der Name des Stammordners Ihrer Firma, der dieser Experience Manager-Instanz zugeordnet ist, und `<ID>` sind die ausgewählten Assets, die über die Asset-Auswahl ungültig werden sollen.<br>Alle nachfolgenden Vorgaben/Modifikatoren  `<ID>` werden wie vorgesehen in die URL-Definition kopiert.<br>Das heißt, dass nur Bilder `/is/image` basierend auf der Vorlage automatisch erstellt werden können.<br>Wenn bei `/is/content/` mit der Asset-Auswahl Assets wie Videos oder PDFs hinzugefügt werden, werden keine automatischen URLs generiert. Stattdessen müssen Sie diese Assets entweder in der Vorlage für CDN-Invalidierung angeben oder die URL den Assets manuell hinzufügen in *Teil 2 von 2: Festlegen von CDN-Invalidierungsoptionen*.<br>**Beispiele:**<br> In diesem ersten Beispiel enthält die Vorlage für die Invalidierung `<ID>` zusammen mit der Asset-URL, die `/is/content` aufweist. Beispiel: `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media bildet die URL auf Grundlage dieses Pfades, wobei `<ID>` die über die Elementauswahl ausgewählten Assets sind, die ungültig werden sollen.<br>In diesem zweiten Beispiel enthält die Vorlage für die Invalidierung die vollständige URL des Assets, das in Ihren Web-Eigenschaften verwendet wird, mit `/is/content` (unabhängig von der Asset-Auswahl). Beispiel: `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack`, wobei „backpack“ die Asset-ID ist.<br>Asset-Formate, die in Dynamic Media unterstützt werden, können ungültig gemacht werden. Zu den Asset-Dateitypen, die für die CDN-Ungültigmachung nicht unterstützt werden, zählen PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word und Rich Text Format.**<br>Achten Sie beim Erstellen der Vorlage genau auf Syntax und mögliche Rechtschreibfehler. Dynamic Media nimmt keine Vorlagenüberprüfung vor.<br>Geben Sie URLs für intelligente Imagemaps entweder in dieser Vorlage für die CDN-Ungültigmachung oder im Textfeld  **[!UICONTROL Hinzufügen]** URLs in  *Teil 2 an: Einstellen der Optionen für die CDN-Ungültigmachung.*<br>**Wichtig:** Jeder Eintrag in einer Vorlage für CDN-Invalidierung muss sich in einer eigenen Zeile befinden.<br>*Das folgende Vorlagenbeispiel dient nur zu erläuternden Zwecken.* |
 
    ![Vorlage für CDN-Invalidierung – Erstellen](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Siehe auch [Übersicht über Caching in Dynamic Media](https://helpx.adobe.com/d
    *Teil 2 von 2: Einrichten von CDN-Invalidierunsoptionen*
    <br>
 
-1. Tippen Sie in AEM as a Cloud Service auf **[!UICONTROL Tools> Assets > CDN-Invalidierung]**.
+1. Tippen Sie in Experience Manager als Cloud Service auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN-Invalidierung]**.
 
    ![CDN-Validierungsfunktion](/help/assets/assets-dm/cdn-invalidation-path.png)
 
