@@ -4,11 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten..
 feature: Bildsets
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 67%
+source-wordcount: '2050'
+ht-degree: 64%
 
 ---
 
@@ -44,7 +43,7 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch](#uploading-assets-in-image-sets).
 
-   Laden Sie die Bilder für Ihre Bild-Sets hoch. Denken Sie daran, dass Benutzer im Bildsatz-Viewer auf Bilder zoomen können. Wählen Sie daher Ihre Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. Experience Manager Assets unterstützt viele Bilddateiformate, es werden jedoch verlustfreie TIFF-, PNG- und EPS-Bilder empfohlen.
+   Laden Sie die Bilder für Ihre Bild-Sets hoch. Denken Sie daran, dass Benutzer im Bildsatz-Viewer auf Bilder zoomen können. Wählen Sie daher Ihre Bilder sorgfältig aus. Achten Sie darauf, dass die Bilder die größte Größe von mindestens 2000 Pixel haben. Experience Manager Assets unterstützt viele Bilddateiformate, es werden jedoch verlustfreie TIFF-, PNG- und EPS-Bilder empfohlen.
 
 1. [Erstellen Sie Bildsets](#creating-image-sets).
 
@@ -85,7 +84,7 @@ Wenn Sie beim Erstellen von Sets Probleme haben, lesen Sie den Abschnitt zu Bild
 
 ## Hochladen von Assets für Bild-Sets {#uploading-assets-in-image-sets}
 
-Laden Sie zunächst die Bild-Assets für die Bild-Sets hoch. Denken Sie daran, dass Benutzer im Bildsatz-Viewer auf Bilder zoomen können. Wählen Sie daher Ihre Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat, um optimale Zoom-Details zu erzielen. Mit Dynamic Media können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixel gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixel oder eine beliebige andere Größenkombination mit bis zu 25 Megapixel verwenden.
+Laden Sie zunächst die Bild-Assets für die Bild-Sets hoch. Denken Sie daran, dass Benutzer im Bildsatz-Viewer auf Bilder zoomen können. Wählen Sie daher Ihre Bilder sorgfältig aus. Stellen Sie sicher, dass die Bilder die größte Größe von mindestens 2000 Pixel haben, um optimale Zoomdetails zu erzielen. Mit Dynamic Media können Bilder mit einer Auflösung von jeweils bis zu 25 Megapixel gerendert werden. Sie können beispielsweise ein Bild mit 5000 x 5000 Megapixel oder eine beliebige andere Größenkombination mit bis zu 25 Megapixel verwenden.
 
 Bildsets unterstützen zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
@@ -95,9 +94,9 @@ Sie laden Bilder für Bild­Sets genauso wie [alle anderen Assets in Assets](/he
 
 Bevor Sie Bildsets erstellen, achten Sie darauf, dass die Bilder die richtige Größe und das richtige Format aufweisen.
 
-Um ein Bildset mit mehreren Ansichten zu erstellen, benötigen Sie Bilder, die einen Artikel aus unterschiedlichen Blickwinkeln zeigen oder unterschiedliche Aspekte desselben Artikels darstellen. Ziel ist es, die wichtigen Merkmale eines Artikels so hervorzuheben, dass Benutzer einen umfassen Einblick in das Aussehen oder die Funktion des Gegenstands erhalten.
+Um ein Bildset mit mehreren Ansichten zu erstellen, benötigen Sie Bilder, die einen Artikel aus unterschiedlichen Blickwinkeln zeigen oder unterschiedliche Aspekte desselben Artikels darstellen. Das Ziel besteht darin, die wichtigen Funktionen eines Elements hervorzuheben, damit die Betrachter ein vollständiges Bild davon haben, wie es angezeigt wird oder was es tut.
 
-Stellen Sie sicher, dass die Bilder in Bildsets mindestens 2.000 Pixel in der größten Abmessung aufweisen, da Benutzer sie einzoomen können. Experience Manager Assets unterstützt viele Bilddateiformate, es werden jedoch verlustfreie TIFF-, PNG- und EPS-Bilder empfohlen.
+Da Benutzer Bilder in Bildsätzen heranzoomen können, sollten Sie sicherstellen, dass die Bilder die größte Größe von mindestens 2000 Pixel haben. Experience Manager Assets unterstützt viele Bilddateiformate, es werden jedoch verlustfreie TIFF-, PNG- und EPS-Bilder empfohlen.
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 >
 >Bildsätze werden nicht für Assets mit dem Komma &quot;,&quot;im Dateinamen unterstützt.
 
-**So erstellen Sie ein Bildset**
+**So erstellen Sie ein Bildset:**
 
 1. Tippen Sie in Adobe Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen.
 1. Tippen Sie auf **[!UICONTROL Navigation > Assets]**. Navigieren Sie zu dem Verzeichnis, an dem Sie ein Bildset erstellen möchten, und tippen Sie dann auf **[!UICONTROL Erstellen > Bildset]**, um die Seite mit dem Bildset-Editor zu öffnen.
@@ -207,7 +206,7 @@ Sie können verschiedene Aufgaben zum Bearbeiten von Bildsätzen durchführen, z
 * Wenden Sie Viewer-Vorgaben an.
 * Löschen Sie das Bildset.
 
-**So bearbeiten Sie Bildsets**
+**So bearbeiten Sie Bildsets:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
