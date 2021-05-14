@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anz
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 82%
+source-wordcount: '1214'
+ht-degree: 78%
 
 ---
 
 # Anzeigen von Assets in einer Vorschau {#previewing-assets}
 
-Mit der Vorschau können Sie prüfen, wie ein von Ihnen hochgeladenes digitales Asset aussieht, wenn es von einem Kunden im eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
+Mit Vorschau können Sie sehen, wie ein hochgeladenes digitales Asset angezeigt wird, wenn es von einem Kunden in einem eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
 
 Ein Viewer ist eine Sammlung verschiedener Einstellungen oder &quot;Vorgaben&quot;. Beispielsweise werden im Viewer die Anzeigegröße, das Zoomverhalten, Farbschemata, Ränder und Schriftarten angezeigt, die bestimmen, wie Rich-Media-Assets auf Computerbildschirmen und Mobilgeräten Ansicht werden.
 
@@ -25,11 +24,11 @@ Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bilds
 
 >[!NOTE]
 >
->Wenn Sie sich auf einer Webseite (Sites) in Adobe Experience Manager befinden, können Sie Assets nicht im Modus **Bearbeiten** Vorschau durchführen. Gehen Sie stattdessen zum Modus **Vorschau**, indem Sie auf **Vorschau** oben rechts auf der Seite klicken.
+>Wenn Sie sich auf einer Webseite (Sites) in Adobe Experience Manager befinden, können Sie Assets nicht im Modus **[!UICONTROL Bearbeiten]** Vorschau durchführen. Gehen Sie stattdessen zum Seitenmodus, indem Sie oben rechts auf der Vorschau auf **[!UICONTROL Vorschau]** klicken.
 
 Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutzeroberfläche finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**So zeigen Sie die Asset-Vorschau an**
+**So zeigen Sie die Asset-Vorschau an:**
 
 1. Tippen Sie in **[!UICONTROL Experience Manager]** auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets]** und dann auf **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
@@ -58,7 +57,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <ul>
       <li><p><strong>3D-Kamera drehen</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Klicken und ziehen Sie mit der linken Maustaste.</p> Touchscreen: Drücken und ziehen Sie.</p></li>
       <li><p><strong>Kamera schwenken</strong>: Schwenken Sie die Ansicht nach links, rechts, oben und unten.</p> Maus: Klicken Sie mit der rechten Maustaste und ziehen Sie.</p> Touchscreen: Drücken und ziehen Sie mit zwei Fingern.</p></li>
-      <li><p><strong>Kamera zoomen</strong>: Zoomen Sie Ihre Kamera, um sich in Bereiche in der 3D-Szene hinein- und herauszubewegen.</p> Maus: Scrollen Sie mit dem Mausrad.</p> Touchscreen: Führen Sie mit den Fingern Pinch-Gesten aus.</p></li>
+      <li><p><strong>Zoomen Sie Ihre Kamera</strong>  - Zoomen Sie Ihre Kamera, wenn Sie sich in der 3D-Szene in- und ausbewegen möchten.</p> Maus: Scrollen Sie mit dem Mausrad.</p> Touchscreen: Führen Sie mit den Fingern Pinch-Gesten aus.</p></li>
       <li><p><strong>Kamera neu zentrieren</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Doppelklicken Sie.</p> Touchscreen: Doppeltippen Sie.</li></ul></td>
       </tr>
       <tr>
