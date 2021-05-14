@@ -4,11 +4,10 @@ description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte 
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 99%
+source-wordcount: '328'
+ht-degree: 77%
 
 ---
 
@@ -16,13 +15,13 @@ ht-degree: 99%
 
 Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für responsive Verarbeitung für Ihren Web-Entwickler freigeben möchten. Kopieren Sie den responsiven Code (**[!UICONTROL RESS]**) in die Zwischenablage, damit Sie ihn für Ihren Web-Entwickler freigeben können.
 
-Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch auf AEM befindet, rendert ein Offsite-Image-Server das Bild und stellt es der Webseite bereit.
+Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch stattdessen auf Adobe Experience Manager befindet, rendert ein Offsite-Image-Server das Bild und stellt es für die Webseite bereit.
 
 Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-**So stellen Sie optimierte Bilder für eine responsive Site bereit**:
+**So stellen Sie optimierte Bilder für eine responsive Site bereit:**
 
 1. Wechseln Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und tippen Sie im Dropdown-Menü auf **[!UICONTROL Ausgabeformate]**.
 
@@ -42,8 +41,8 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Responsive Bilder einbetten]** den responsiven Code-Text aus und fügen Sie ihn in Ihre Website ein, um auf das responsive Asset zuzugreifen.
-1. Bearbeiten Sie die Standard-Breakpoints im Integrationscode, damit sie denen der responsiven Website direkt im Code entsprechen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
+1. Wählen Sie im Dialogfeld **[!UICONTROL Responsive Image]** einbetten den Responsive-Code-Text aus, kopieren Sie ihn und fügen Sie ihn in Ihre Website ein, um auf das responsive Asset zuzugreifen.
+1. Bearbeiten Sie die Standard-Haltepunkte im Einbettungscode so, dass sie mit denen auf der responsive Website direkt im Code übereinstimmen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
 
 ## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
 
