@@ -3,10 +3,9 @@ title: Arbeiten mit Selektoren
 description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussellbanner in Dynamic Media auswählen können.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 52%
 
 ---
@@ -59,7 +58,7 @@ Verwenden Sie die Produktauswahl, um ein Produkt auszuwählen, wenn Sie einen Ho
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Im **[!UICONTROL Vorschau]**-Modus können Sie auf den Hotspot oder die Imagemap tippen und sehen, wie die Schnellansicht-Ansicht aussieht.
+1. Im **[!UICONTROL Vorschau]**-Modus können Sie auf den Hotspot oder die Imagemap tippen und sehen, wie die Schnellansicht-Ansicht angezeigt wird.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
