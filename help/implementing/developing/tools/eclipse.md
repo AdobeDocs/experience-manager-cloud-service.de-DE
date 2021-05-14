@@ -174,6 +174,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
             <filter root="/etc/designs/foo"/>
          </workspaceFilter>
          ```
+
    1. Öffnen Sie dann `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Ersetzen Sie die Regeln durch die Ihres Pakets, die mit `/content` beginnen.
       * Beispiel:
