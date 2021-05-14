@@ -4,11 +4,10 @@ description: '"Erfahren Sie mehr über Bildvorgaben und wie Sie Bildvorgaben ers
 feature: Bildvorgaben,Viewer,Darstellungen
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 72%
+source-wordcount: '3653'
+ht-degree: 69%
 
 ---
 
@@ -38,7 +37,7 @@ Administratoren können Bildvorgaben erstellen. Sie können völlig neue Bildvor
 
 ## Verwalten von Bildvorgaben {#managing-image-presets-1}
 
-Sie verwalten Ihre Bildvorgaben in Experience Manager, indem Sie auf das Logo des Experience Managers tippen oder klicken, um auf die globale Navigationskonsole zuzugreifen. Tippen oder klicken Sie dann auf das Symbol &quot;Extras&quot;und navigieren Sie zu **[!UICONTROL Assets > Bildvorgaben]**.
+Sie verwalten Ihre Bildvorgaben in Experience Manager, indem Sie auf das Logo des Experience Managers tippen oder klicken, um auf die globale Navigationskonsole zuzugreifen. Tippen oder klicken Sie dann auf das Symbol &quot;Extras&quot;und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Das Dateiformat von Adobe Illustrator ist eine Variante von PDF. Die wichtigsten
 * Adobe Illustrator-Dokumente bestehen aus einer einzelnen Seite mit mehreren Ebenen. Jede Ebene wird als PNG-Unterelement unter dem Illustrator-Hauptasset extrahiert.
 * PDF-Dokumente bestehen aus einer oder mehreren Seiten. Jede Seite wird als einseitiges PDF-Unterelement unter dem mehrseitigen PDF-Dokument extrahiert.
 
-Die Teilassets werden von der Komponente `Create Sub Asset process` innerhalb des Gesamtarbeitsablaufs `DAM Update Asset` erstellt. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten]**.
+Die Teilassets werden von der Komponente `Create Sub Asset process` innerhalb des Gesamtarbeitsablaufs `DAM Update Asset` erstellt. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, tippen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition`, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
+Tippen Sie oben links auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition`, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
 
 #### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UIC
 
 Argumente zum Rastern von PDF- oder AI-Workflows
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Prozessargument</strong></td>
-   <td><strong>Standardeinstellung</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td>MIME-Typen</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>Liste der Dokument-MIME-Typen, die als PDF- oder Illustrator-Dokumente gelten.<br /> </td>
-  </tr>
-  <tr>
-   <td>Max. Breite</td>
-   <td>2048</td>
-   <td>Maximale Breite der generierten Vorschaudarstellung in Pixel.<br /> </td>
-  </tr>
-  <tr>
-   <td>Max. Höhe</td>
-   <td>2048</td>
-   <td>Maximale Höhe der generierten Vorschaudarstellung in Pixel.<br /> </td>
-  </tr>
-  <tr>
-   <td>Auflösung</td>
-   <td>72</td>
-   <td>Auflösung zum Rastern der ersten Seite in ppi (Pixel pro Zoll).</td>
-  </tr>
- </tbody>
-</table>
+| Prozessargument | Standardeinstellung | Beschreibung |
+|---|---|---|
+| MIME-Typen | application/pdf<br>application/postscript<br>application/illustrator | Liste der Dokument-MIME-Typen, die als PDF- oder Illustrator-Dokumente gelten. |
+| Max. Breite | 2048 | Maximale Breite der generierten Vorschaudarstellung in Pixel. |
+| Max. Höhe | 2048 | Maximale Höhe der generierten Vorschaudarstellung in Pixel. |
+| Auflösung | 72 | Auflösung zum Rastern der ersten Seite in ppi (Pixel pro Zoll). |
 
 Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Bei einer typischen Bereitstellung können Sie die Auflösung auf mindestens 150 ppi erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
 
 Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Rasterung erfolgt. Wenn z. B. die Maximalwerte unverändert bleiben und die Auflösung auf 300 ppi festgelegt wird, wird ein US Letter-Dokument mit 186 ppi gerastert. Das Dokument ist demnach 1581 x 2046 Pixel groß.
 
-Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
+Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Solch große Bilder können den für die JVM (Java™ Virtual Machine) bereitgestellten Speicher überlaufen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
 ### InDesign-Dateiformat (INDD)   {#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zum Extrahieren v
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript-Name</strong></td>
-   <td><strong>Default</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>Ja</td>
-   <td>Erstellt eine 300 ppi große <code>thumbnail.jpg</code>-Darstellung, die von der Prozesskomponente <code>Dynamic Media Process Image Assets</code> optimiert und in eine PTIFF-Darstellung umgewandelt wird.<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>Ja</td>
-   <td>Generiert ein JPEG-Unterasset mit 300 ppi pro Seite. Das JPEG-Teilasset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow <code>DAM Update Asset</code> optimiert und in eine PTIFF-Darstellung umgewandelt.<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>Nein</td>
-   <td>Generiert ein PDF-Unterasset für jede Seite. Das PDF-Teilasset wird wie oben beschrieben verarbeitet. Da die PDF-Datei nur eine Seite enthält, werden keine Teilassets generiert.<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| ExtendScript-Name | Default | Beschreibung |
+|---|---|---|
+| ThumbnailExport.jsx | Ja | Erstellt eine 300 ppi große `thumbnail.jpg`-Darstellung, die von der Prozesskomponente `Dynamic Media Process Image Assets` optimiert und in eine PTIFF-Darstellung umgewandelt wird. |
+| JPEGPagesExport.jsx | Ja | Generiert ein JPEG-Unterasset mit 300 ppi pro Seite. Das JPEG-Teilasset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Es wird auch vom Workflow `DAM Update Asset` optimiert und in eine PTIFF-Darstellung umgewandelt. |
+| PDFPagesExport.jsx | Nein | Generiert ein PDF-Unterasset für jede Seite. Das PDF-Teilasset wird wie oben beschrieben verarbeitet. Da die PDF-Datei nur eine Seite enthält, werden keine Teilassets generiert. |
 
 ### Konfigurieren der Größe der Miniaturansicht {#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 **So konfigurieren Sie die Größe von Miniaturansichten**:
 
-1. Tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten]**.
+1. Tippen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. Experience Manager zeigt verschiedene dynamische Darstellungen an, wenn ein Asset von **[!UICONTROL Detail-Ansicht > Darstellungen]** angezeigt wird. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
-**So erhöhen oder verringern Sie die Anzahl der angezeigten Bildvorgaben**::
+**So erhöhen oder verringern Sie die Anzahl der angezeigten Bildvorgaben:**
 
 1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
@@ -239,11 +197,12 @@ Wenn Sie die Erfassung von AI-, PDF- und EPS-Dateien unterstützen möchten, dam
 Siehe [Adobe Illustrator (AI), PostScript® (EPS) und PDF-Dateiformate](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Wenn Sie die Erfassung von INDD-Dateien unterstützen möchten, damit Sie eine dynamische Darstellung dieses Dateiformats generieren können, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+
 Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
-**So erstellen Sie eine Bildvorgabe**::
+**So erstellen Sie eine Bildvorgabe:**
 
-1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben]**.
+1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -321,7 +280,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
      <strong>TIFF mit Alpha</strong> erhalten Sie die folgende zusätzliche Option:
     </div>
     <ul>
-     <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten <strong>Kein</strong>, <strong>ZIP</strong> und <strong>JPEG</strong>. Für TIFF lauten sie <strong>Kein</strong>, <strong>LZW</strong>, <strong>JPEG</strong> und <strong>ZIP</strong>. Für TIFF mit Alpha lauten sie <strong>Kein</strong>, <strong>LZW</strong> und <strong>ZIP</strong>.</li>
+     <li><strong>Komprimierung</strong>: Wählen Sie einen Komprimierungsalgorithmus. Algorithmusoptionen für PDF sind <strong>Keine</strong>, <strong>Zip</strong> und <strong>Jpeg</strong>; Für TIFF sind sie <strong>Keine</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> und <strong>Zip</strong>; und für TIFF mit Alpha sind <strong>Keine</strong>, <strong>LZW</strong> und <strong>Zip</strong>.</li>
     </ul> <p>Die Auswahl <strong>PNG</strong>, <strong>PNG mit Alpha</strong> oder <strong>EPS</strong> ergibt keine zusätzlichen Optionen.</p> </td>
   </tr>
   <tr>
@@ -353,7 +312,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     <ul>
      <li>Wählen Sie <strong>Wahrnehmungsoptimiert</strong> aus, damit die gesamte Farbskala von einem Farbraum in einen anderen Farbraum komprimiert wird, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
      <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Zielgruppe im aktuellen Farbraum im Farbraum nicht größer als der Farbraum ist. Und Sie möchten sie der nächstmöglichen Zielgruppe innerhalb des Farbraums zuordnen, ohne dass sich dies auf andere Farben auswirkt. </li>
-     <li>Wählen Sie <strong>Sättigung</strong> aus, um die Sättigung des Originalbilds beim Konvertieren in den Zielfarbraum zu übernehmen. </li>
+     <li>Wählen Sie <strong>Sättigung</strong>, wenn Sie die ursprüngliche Bildfarbsättigung beim Konvertieren in den Farbraum der Zielgruppe reproduzieren möchten. </li>
      <li>Wählen Sie <strong>Absolut farbmetrisch</strong> aus, um Farben exakt und ohne Weißpunkt- oder Schwarzpunktanpassung abzubilden, wodurch die Helligkeit verändert würde.</li>
     </ul> </td>
   </tr>
@@ -369,9 +328,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
    <td><strong>Scharfzeichnungstyp</strong></td>
    <td><p>Wählen Sie <strong>Kein</strong>, <strong>Scharfzeichnen</strong> oder <strong>Unschärfemaske</strong> aus. </p>
     <ul>
-     <li>Wählen Sie <strong>Kein</strong>, um die Scharfzeichnung zu deaktivieren.</li>
+     <li>Wählen Sie <strong>Keine</strong>, wenn Sie das Scharfzeichnen deaktivieren möchten.</li>
      <li>Aktivieren Sie <strong>Scharfzeichnen</strong>, um einen einfachen Scharfzeichnungsfilter auf das Bild anzuwenden, nachdem die Skalierung abgeschlossen ist. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. </li>
-     <li>Wählen Sie<strong> Unschärfemaske</strong> aus, um einen Scharfzeichnungsfiltereffekt auf das endgültige neu berechnete Bild anzupassen. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert wird. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
+     <li>Wählen Sie<strong> Unschärfemaske</strong> aus, wenn Sie einen Scharfzeichnungsfiltereffekt auf das endgültige neu berechnete Bild präzisieren möchten. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert wird. Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter „Unscharf maskieren“.</li>
     </ul> <p>In <strong>Unschärfemaske</strong> sind die folgenden Optionen verfügbar:</p>
     <ul>
      <li><strong>Betrag</strong>: Steuert den auf die Kantenpixel angewendeten Kontrastwert. Der Standardwert für die reelle Zahl ist 1,0. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5,0 erhöhen. Der Wert dient hierbei als ein Maß für die Filterintensität.</li>
@@ -468,7 +427,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 ### Bearbeiten von Bildvorgaben {#modifying-image-presets}
 
-1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben]**.
+1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -481,5 +440,5 @@ Bildvorgaben werden automatisch veröffentlicht.
 
 ### Löschen von Bildvorgaben {#deleting-image-presets}
 
-1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, oder klicken Sie auf das Symbol &quot;Extras&quot;und navigieren Sie zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Tippen Sie in Experience Manager auf das Logo des Experience Managers, um auf die globale Navigationskonsole zuzugreifen, oder klicken Sie auf das Symbol &quot;Extras&quot;und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
