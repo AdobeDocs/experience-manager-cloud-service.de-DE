@@ -1,11 +1,10 @@
 ---
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können  in Dynamic Media.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 63%
+source-wordcount: '562'
+ht-degree: 55%
 
 ---
 
@@ -25,7 +24,7 @@ Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dat
 | 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary |  |
-| GLTF | GL-Übertragungsformat | model/gltf+json | Siehe **Hinweis** unten. |
+| GLTF | GL-Übertragungsformat | model/gltf+json | Siehe **Hinweis** weiter unten. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Unterstützung nur für die Erfassung; Vorschau nicht verfügbar. |
@@ -46,19 +45,19 @@ Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dat
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
-Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
+Darüber hinaus sind die Funktionen des Client-Computers - wie eine Workstation, ein Notebook oder ein mobiles Touch-Gerät - auch bei einer interaktiven Manipulation der Kamera wichtig. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
 **Vorschau von 3D-Assets in Experience Manager:**
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 
    ![Navigationsseite](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste „Ansicht“ auf **[!UICONTROL Kartenansicht]** und navigieren Sie dann zu einem 3D-Asset, das Sie in der Vorschau anzeigen möchten.
 
-   ![3D-Kartenauswahl](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Auswahl der 3D-Karte](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Tippen Sie in der Kartenansicht auf die Karte des 3D-Assets, das Sie in der Vorschau anzeigen möchten._
 
 1. Tippen Sie auf die Karte des 3D-Assets.
