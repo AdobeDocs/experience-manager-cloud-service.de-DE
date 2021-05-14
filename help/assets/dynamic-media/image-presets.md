@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Sie in Dynamic Media Bildvorgaben anwenden..
 feature: Bildvorgaben,Viewer,Darstellungen
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 70%
+source-wordcount: '306'
+ht-degree: 56%
 
 ---
 
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
-Anhand von Bildvorgaben können Assets Bilder mit unterschiedlichen Größen und Formaten oder anderen Bildeigenschaften, die dynamisch generiert werden, dynamisch bereitstellen. Sie können eine Vorgabe auswählen, wenn Sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
+Mithilfe von Bildvorgaben können Assets Bilder in unterschiedlichen Größen in unterschiedlichen Formaten dynamisch bereitstellen oder mit anderen Bildeigenschaften dynamisch generiert werden. Sie können beim Exportieren eine Vorgabe auswählen, um Bilder entsprechend den vom Administrator festgelegten Spezifikationen neu zu formatieren.
 
 Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Auswahl durch die Schaltfläche **[!UICONTROL RESS]** gekennzeichnet).
 
@@ -26,7 +25,7 @@ Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Aus
 
 Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwenden.
 
-**So wenden Sie Dynamic Media-Bildvorgaben an**
+**So wenden Sie Dynamic Media-Bildvorgaben an:**
 
 1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf die Dropdown-Liste und dann auf **[!UICONTROL Darstellungen]**.
 
