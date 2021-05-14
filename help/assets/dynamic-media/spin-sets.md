@@ -4,11 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
 feature: Rotationssets
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 77%
+source-wordcount: '1830'
+ht-degree: 74%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 77%
 
 Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchung. Mit Rotationssets können Artikel aus jedem Winkel betrachtet werden, um die wesentlichen visuellen Details von allen Seiten sehen zu können.
 
-Ein Rotationsset simuliert die 360-Grad-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer alle Ansichten mit nur wenigen Mausklicks frei zoomen und schwenken. So können Benutzer einen Artikel aus einem bestimmten Blickwinkel genauer untersuchen.
+Ein Rotationsset simuliert eine 360°-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer alle Ansichten mit nur wenigen Mausklicks frei zoomen und schwenken. So können Benutzer einen Artikel aus einem bestimmten Blickwinkel genauer untersuchen.
 
 Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** gekennzeichnet. Darüber hinaus wird bei veröffentlichten Rotationssets das Veröffentlichungsdatum (durch das **[!UICONTROL Welt]**-Symbol gekennzeichnet) zusammen mit dem Datum der letzten Änderung (durch das **[!UICONTROL Bleistift]**-Symbol gekennzeichnet) im Banner angezeigt.
 
@@ -44,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Erstellen Sie Rotationssets](#creating-spin-sets).
 
-   Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
+   Um ein Rotationsset zu erstellen, wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Rotationsset]** und geben Sie dann einen Namen für das Set ein. Wählen Sie dann die Assets aus und wählen Sie die Reihenfolge, in der die Bilder angezeigt werden.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -52,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Administratoren können Rotationsset-Viewer-Voreinstellungen erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und Sie wählen im Dropdown-Menü der linken Seitenleiste die Option **Viewer**.
 
-   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Werkzeuge > Assets > Viewer-Vorgaben]**.
+   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
 
    Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allge
 * Verwenden Sie ein verlustfreies Format: TIFF und PNG werden empfohlen.
 * Maskieren Sie alle Bilder so, dass der Artikel vor einem rein weißen oder kontrastreichen Hintergrund erscheint. Fügen Sie optional Schatten hinzu.
 * Stellen Sie sicher, dass die Produktdetails gut beleuchtet und fokussiert sind.
-* Denken Sie z. B. an Rotationsbilder für Bekleidung an einer Schaufensterpuppe oder einem Modell. Oft wird das Mannequin entweder maskiert (mit einem Glasmannequin) oder eine stilisierte Mannequin/Dressform im Bild dargestellt. Sie können ein modellbezogenes Rotationsset erstellen, indem Sie die Anzahl der Winkel definieren. Markieren Sie jeden Winkel mit Klebeband auf dem Boden, um dem Modell anzugeben, einen Schritt zu machen und in die Richtung der jeweiligen Aufnahme zu schauen.
+* Denken Sie z. B. an Rotationsbilder für Bekleidung an einer Schaufensterpuppe oder einem Modell. Oft wird das Mannequin entweder maskiert (mit einem Glasmannequin) oder eine stilisierte Mannequin/Dressform im Bild dargestellt. Sie können ein modellbezogenes Rotationsset erstellen, indem Sie die Anzahl der Winkel definieren. Markieren Sie jeden Winkel mit Klebeband auf dem Boden, damit Sie das Modell zu Schritt und Blick in die Richtung jeder Aufnahme führen können.
 
 ## Erstellen von Rotationssets   {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 >
 >Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so zu ordnen, dass die Rotation eine glatte 360-Grad-Ansicht ist.
 
-**So erstellen Sie Rotationssets**
+**So erstellen Sie Rotationssets:**
 
 1. Navigieren Sie in Assets an die Stelle, an der Sie ein Rotationsset erstellen möchten, klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Rotationsset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Rotationsset-Editor wird angezeigt.
 
@@ -157,7 +156,7 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 >
 >Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Rotationssets](#editing-spin-sets) beschrieben.
 
-**So zeigen Sie Rotationssets an**
+**So zeigen Sie Rotationssets an:**
 
 1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**). Um den gesamten Satz anzuzeigen, tippen Sie auf den Namen des Sets.
 
@@ -183,7 +182,7 @@ Sie können verschiedene Aufgaben zum Bearbeiten von Rotationssets durchführen,
 * Wenden Sie Viewer-Vorgaben an.
 * Löschen Sie das Rotationsset.
 
-**So bearbeiten Sie ein Rotationsset**
+**So bearbeiten Sie ein Rotationsset:**
 
 1. Führen Sie einen der folgenden Schritte aus:
 
