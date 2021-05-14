@@ -4,11 +4,10 @@ description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive
 feature: Asset-Verwaltung, Video-Profil, Darstellungen
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
-ht-degree: 70%
+source-wordcount: '3665'
+ht-degree: 69%
 
 ---
 
@@ -101,7 +100,7 @@ Für die maximal unterstützte Videodateigröße beim smarten Zuschneiden gelten
 
 * Dauer von fünf Minuten.
 * 30 Frames pro Sekunde (FPS).
-* 300 MB Dateigröße.
+* Dateigröße von 300 MB.
 
 Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe Sensei und Smart Cards unterstützt werden kann.
 
@@ -211,7 +210,7 @@ Tippen Sie auf das Informationssymbol neben jeder Option, um weitere Beschreibun
 1. Gehen Sie folgendermaßen vor:
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein.
    * Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-Tippen Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Wenn Sie damit fertig sind, tippen Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
+Tippen Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Verwenden Sie die Seite **[!UICONTROL Größenberechnung]**, um die Videogröße (blaues Feld) weiter einzustellen. Wenn Sie damit fertig sind, tippen Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** aktiviert ist (empfohlen).
@@ -244,7 +243,7 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 Sie können ein vorhandenes Videokodierungs-Profil bearbeiten, um erweiterte Videokodierungsparameter zu nutzen, die nicht in der Benutzeroberfläche vorhanden sind, wenn Sie ein Video-Profil in Experience Manager erstellen oder bearbeiten. Sie können einen oder mehrere erweiterte Parameter, wie z. B. minBitrate und maxBitrate, zu Ihrem vorhandenen Profil hinzufügen.
 
-**So verwenden Sie benutzerdefinierte Videokodierungsparameter**:
+**So verwenden Sie benutzerdefinierte Videokodierungsparameter:**
 
 1. Tippen Sie auf das Logo des Experience Managers und navigieren Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie auf der Seite „CRXDE Lite“ im linken Bereich des Explorers in das folgende Verzeichnis:
@@ -271,7 +270,7 @@ Sie können ein vorhandenes Videokodierungs-Profil bearbeiten, um erweiterte Vid
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, um alle 2–10 Sekunden einen Keyframe zu generieren. Bei 30 Bildern pro Sekunde beträgt das Schlüsselbildintervall beispielsweise 60-300.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Stream-Suchverhalten und das Stream-Switching-Verhalten für adaptive Videokodierungen und können auch die Qualität von Videos verbessern, die viel Bewegung haben. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
+   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit Sie alle 2-10 Sekunden einen Keyframe generieren können. Bei 30 Bildern pro Sekunde beträgt das Schlüsselbildintervall beispielsweise 60-300.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Stream-Suchverhalten und das Stream-Switching-Verhalten für adaptive Videokodierungen und können auch die Qualität von Videos verbessern, die viel Bewegung haben. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
    <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist 60–90.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Siehe auch [Best Practices für Videokodierung](/help/assets/dynamic-media/video
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**So bearbeiten Sie ein Videoprofil**:
+**So bearbeiten Sie ein Videoprofil:**
 
 1. Tippen Sie auf das Logo des Experience Managers und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video-Profil]**.
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
@@ -383,7 +382,7 @@ Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen
 
 #### Anwenden eines Videoprofils auf Ordner aus „Eigenschaften“ {#applying-video-profiles-to-folders-from-properties}
 
-1. Tippen oder klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Video-Profil anwenden möchten.
+1. Tippen Sie auf das Logo des Experience Managers und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, auf den Sie ein Video-Profil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
@@ -396,7 +395,7 @@ Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global 
 
 Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**So wenden Sie ein Videoprofil global an**:
+**So wenden Sie ein Video-Profil global an**
 
 * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und tippen Sie auf **[!UICONTROL Alle speichern]**.
 
