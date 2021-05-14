@@ -4,8 +4,7 @@ description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche O
 feature: Asset-Verwaltung, Bild-Profile, Video-Profile
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 68%
@@ -89,7 +88,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 (Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Stapelgröße wird durch die durchschnittliche Asset-Größe und die MIME-Typen von Assets bestimmt, auf denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass Sie viele Dateien in einem einzigen Wiederaufbereitungsauftrag haben. Das Verarbeitungsbanner bleibt also länger auf den Assets des Experience Managers. Wenn die durchschnittliche Dateigröße kleiner/gleich 1 MB oder kleiner Adobe ist, sollten Sie den Wert auf mehrere 100 erhöhen, jedoch nie auf mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabytes beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
-**Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**:
+**Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
 1. Tippen Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
