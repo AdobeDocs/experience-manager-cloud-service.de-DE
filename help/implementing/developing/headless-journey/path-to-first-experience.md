@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -74,7 +73,7 @@ In der Produktion erstellen und verwalten Inhaltsersteller ihre tatsächlichen I
 
 Während der Entwicklungsphase wird empfohlen, mit einer Entwicklungs- und Staging-Umgebung zu arbeiten. Wenn Sie zu Leistungstests übergehen, sollten Sie zur Produktions-Umgebung wechseln.
 
-### Zusammenarbeit von Entwicklern und Inhaltserstellern {#cooperation}
+### Zusammenarbeit von Entwicklern und Autoren von Inhalten {#cooperation}
 
 Entwickler benötigen eine AEM Umgebung zur Entwicklung mit den ausgefüllten Inhaltsmodellen. Der Entwickler entwickelt den Client, der Inhalte aus AEM kopflosen nutzt, da die Inhaltsersteller den Inhalt noch erstellen. Deshalb sind die API-Definitionen wirklich wichtig. Durch die Nutzung des AEM SDK kann der Entwickler einen Test-Haken erstellen, damit Client- und Komponententests erstellt werden können, um sicherzustellen, dass der Client den Inhalt ordnungsgemäß wiedergeben kann.
 
@@ -116,7 +115,7 @@ Ein übersichtliches Projekt ist nicht nur erfolgreich, weil die Technologie imp
    * AEM erlaubt das Festlegen erlaubter Modelle pro Ordner, sodass die Schaltfläche **Neu erstellen** nur die Modelle anzeigt, die an diesem Speicherort unterstützt werden.
 * Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann muss der Praktiker keinen Ort auswählen, sondern nur einen Namen angeben und den neuen Verweis bearbeiten können.
 
-### Erstellen von Inhalten {#authoring}
+### Inhaltserstellung {#authoring}
 
 * Bei Kanal-spezifischen Inhaltsversionen sollten Sie Inhaltsfragmentvarianten verwenden. Variationen werden mit dem Übergeordnet Inhalt synchronisiert, um die Verwaltung von Inhaltsänderungen zu optimieren.
 * Laden Sie andere Inhaltshersteller ein, Inhalte zu überprüfen und Feedback mit Anmerkungen und Kommentaren zu geben, die im Inhaltsfragmenteditor verfügbar sind und global über Fragmente in Inhaltsfragmenten in der Admin-Konsole verfügbar sind.
@@ -141,9 +140,9 @@ Wir möchten, dass Sie auf diesem Grundlagenwissen aufbauen, um die Macht und Fl
 
 ### Wählen Sie Ihr eigenes Abenteuer {#choose-your-path}
 
-Egal, welchen Lernstil Sie haben, die Adobe möchte, dass Sie erfolgreich mit Ihrem AEM Headless-Projekt beginnen können.
+Egal, welchen Lernstil Sie haben, die Adobe möchte, dass Sie beim Einstieg in Ihr AEM Headless-Projekt erfolgreich sind.
 
-* Wenn Sie weiterhin mit den kostenlosen Konzepten und AEM praxislosen Technologien **arbeiten möchten, sollten Sie Ihre AEM kopflosen Journey fortsetzen, indem Sie das Dokument [Wie Sie Ihre Inhalte als AEM-Inhaltsmodelle modellieren](model-your-content.md) überprüfen. Hier erfahren Sie, wie Sie Ihre Inhaltsstruktur in AEM modellieren.**
+* Wenn Sie weiterhin **mit den kostenlosen Konzepten und AEM kostenlosen Technologien** arbeiten möchten, sollten Sie Ihre AEM kopflosen Journey fortsetzen, indem Sie das Dokument [Wie Sie Ihren Inhalt als AEM Content-Modelle modellieren](model-your-content.md) überprüfen, in dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
 * Wenn Sie lieber **lernen möchten, indem Sie** ausführen, können Sie zum [Erste Schritte mit AEM praxisnahen Lernprogramm ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen, in dem Sie direkt in AEM Headless-Entwicklung springen, indem Sie ein einfaches Projekt implementieren, um AEM kostenlose Inhalte bereitzustellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
