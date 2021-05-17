@@ -4,14 +4,13 @@ description: Beginn hier für eine geführte Journey durch die leistungsstarken 
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 4%
 
 ---
-
 
 # AEM Developer Journey {#aem-headless-developer-journey}
 
@@ -19,11 +18,11 @@ ht-degree: 8%
 >
 >ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
 
-Beginn hier für eine geführte Journey durch die leistungsstarken und flexiblen, kopflosen Funktionen von AEM, deren Fähigkeiten und wie man sie bei Ihrem ersten Entwicklungsprojekt einsetzt.
+Beginn hier für eine geführte Journey durch die leistungsstarken und flexiblen, kopflosen Funktionen von AEM, deren Fähigkeiten und wie man sie bei Ihrem ersten, kopflosen Entwicklungsprojekt einsetzt.
 
 ## Einführung {#introduction}
 
-Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
+Die Implementierung ohne Kopf wird immer wichtiger, wenn Sie Erlebnisse für Ihre Audience bereitstellen möchten, egal wo sie sich befinden und unabhängig vom Kanal.
 
 Bei der Implementierung ohne Kopfdaten wird das Seiten- und Komponentenmanagement verloren, wie es bei Vollstapellösungen üblich ist, und der Schwerpunkt liegt auf der Erstellung von Kanal-neutralen, wiederverwendbaren Inhaltsfragmenten und deren Cross-Kanal-Versand. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
 
@@ -52,3 +51,14 @@ Obwohl Sie direkt zu einem bestimmten Teil der Journey wechseln können, basiere
 | 8 | [Wie Sie mit Ihrem kostenlosen Programm live gehen](go-live.md) | Erfahren Sie, wie Sie die Anwendung live bereitstellen und Ihren lokalen Code in Git übernehmen und in die Cloud Manager Git for CI/CD-Pipeline verschieben. |
 | 9 | [Post-Start](post-launch.md) | Erfahren Sie, wie Sie Ihr kostenloses Erlebnis erhalten. |
 | 10 | [Optional - Erstellen von Einzelseitenanwendungen (SPA) mit AEM](create-spa.md) | Sobald Sie AEM Funktionen ohne Kopfdaten kennen, erfahren Sie, wie Sie mit dem kostenlosen und kostenlosen Versand kombinieren und wie Sie editierbare SPA mit AEM Editor-Framework erstellen könnenSPA. |
+
+## Wie geht es weiter {#what-is-next}
+
+Sie sind jetzt bereit, mit Ihrer Adobe Headless Journey zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel [Weitere Informationen zu CMS Headless Development.](learn-about.md)
+
+### Wählen Sie Ihr eigenes Abenteuer {#choose-your-path}
+
+Die Adobe möchte jedoch, dass Sie beim Einstieg in Ihr AEM Headless-Projekt Erfolg haben, unabhängig von Ihrem Lernstil. Überlegen Sie daher bitte diese beiden Optionen.
+
+* Wenn Sie weiterhin **mit den kostenlosen Konzepten und AEM kostenlosen Technologien** arbeiten möchten, sollten Sie Ihre AEM kopflosen Journey fortsetzen, wie empfohlen, indem Sie das Dokument [Wie Sie Ihren Inhalt als AEM Inhaltsmodelle modellieren](model-your-content.md) überprüfen, in dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
+* Wenn Sie lieber **lernen möchten, indem Sie** ausführen, können Sie zum [Erste Schritte mit AEM praxisnahen Lernprogramm ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) springen, in dem Sie direkt in AEM Headless-Entwicklung springen, indem Sie ein einfaches Projekt implementieren, um AEM kostenlose Inhalte bereitzustellen.
