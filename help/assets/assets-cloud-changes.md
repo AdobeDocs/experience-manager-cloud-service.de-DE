@@ -1,16 +1,15 @@
 ---
 title: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager 6.5].
-feature: Release Information
+feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 57%
 
 ---
-
 
 # Wesentliche Änderungen in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
@@ -53,7 +52,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 |-----|-----|-----|
 | [Duplikat-Asset-Erkennung](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funktioniert anders. | Siehe [Funktionsweise unter  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Nur für Platzierungsdarstellungen (FPO)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | unterschiedlich |  |
-| Metadaten-Writeback | Nicht unterstützt. | Siehe [Metadaten-Schreibback in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| Metadaten-Writeback | unterschiedlich | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Das Schriftstück wird von Asset Microservices verarbeitet. |
 | Verarbeitung von Assets, die mit Package Manager hochgeladen wurden | Benötigt manuelles Eingreifen. | Manuelle Neuverarbeitung mit der Aktion **[!UICONTROL Asset]** erneut verarbeiten. |
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Erstellen von Teilassets für zusammengesetzte Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Beispielsweise wird die Anmerkung von mehrseitigen PDF-Dateien beeinträchtigt. Siehe [Erstellen von Unterelementen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
@@ -66,10 +65,10 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 >Die folgenden Ressourcen stehen für [!DNL Experience Manager] als [!DNL Cloud Service] zur Verfügung:
 >
 >* [Liste veralteter und entfernter Funktionen](/help/release-notes/deprecated-removed-features.md)
->* [Einführung](/help/overview/introduction.md)
->* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
->* [Die Architektur](/help/core-concepts/architecture.md)
->* [Wesentliche Änderungen](/help/release-notes/aem-cloud-changes.md)
->* [Wesentliche Änderungen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [Videoschulungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
+* [Einführung](/help/overview/introduction.md)
+* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
+* [Die Architektur](/help/core-concepts/architecture.md)
+* [Wesentliche Änderungen](/help/release-notes/aem-cloud-changes.md)
+* [Wesentliche Änderungen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [Videoschulungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 
