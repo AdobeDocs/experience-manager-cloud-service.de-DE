@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
+source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
 workflow-type: tm+mt
-source-wordcount: '2769'
-ht-degree: 71%
+source-wordcount: '2762'
+ht-degree: 66%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 71%
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
-* Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
+* Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM Version verwenden, müssen Sie Ihr Inhalts-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
 
-* Java muss in der AEM-Umgebung konfiguriert werden, damit der `java`-Befehl vom Benutzer, der AEM startet, ausgeführt werden kann.
+* Java muss auf der AEM Umgebung konfiguriert werden, damit der Befehl `java` von dem Benutzer ausgeführt werden kann, der Beginn AEM.
 
 * Es wird empfohlen, ältere Versionen des Content Transfer Tool bei der Installation der Version 1.3.0 zu deinstallieren, da es eine wesentliche architektonische Änderung im Tool gab. Mit 1.3.0 sollten Sie außerdem neue Migrationssets erstellen und die Extraktion und Erfassung der neuen Migrationssätze erneut ausführen.
 
@@ -36,9 +36,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden.** Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden. Der Benutzer muss der Gruppe **administratoren** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
 
-* Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffs-Token abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffs-Token abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
+* Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffstoken abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
 
-* Das Inhaltsübermittlungstool führt keine Analyse von Inhalten durch, bevor Inhalte von der Quellinstanz in die Zielgruppe übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, während Inhalte in eine Publish-Umgebung eingefügt werden. Der Inhalt, der im Migrationsset angegeben ist, wird in die ausgewählte Instanz der Zielgruppe aufgenommen. Benutzer haben die Möglichkeit, einen Migrationssatz in einer Autorinstanz oder Veröffentlichungsinstanz oder in beiden Instanzen zu erfassen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz eine CTT-Instanz als Quell-Autoreninstanz zu installieren, um Inhalte in die Zielgruppe-Autoreninstanz zu verschieben und auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Zielgruppe-Veröffentlichungsinstanz zu verschieben.
+* Das Content Transfer Tool (CTT) führt keine Content-Analyse durch, bevor Inhalte von der Quellinstanz in die Zielgruppe-Instanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Publish-Umgebung eingefügt werden. Der Inhalt, der im Migrationsset angegeben ist, wird in die ausgewählte Instanz der Zielgruppe aufgenommen. Benutzer haben die Möglichkeit, einen Migrationssatz in einer Autorinstanz oder Veröffentlichungsinstanz oder in beiden Instanzen zu erfassen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz die CTT auf der Quellautorinstanz zu installieren, um Inhalte in die Zielgruppe Author-Instanz zu verschieben. Installieren Sie auf ähnliche Weise die CTT auf der Quell-Veröffentlichungsinstanz, um Inhalte in die Zielgruppe Publish-Instanz zu verschieben.
 
 * Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktions*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration).
 
@@ -50,7 +50,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
       * Umgebungstyp (Phase oder Produktion), in den Sie Daten aufnehmen möchten.
       * Programm-ID.
 
-* In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
+* Die *Ingestion Phase* für den Autor skaliert die gesamte Autorenbereitstellung. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
 
 * Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher auf dem AEM-Quellsystem sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (Garbage Collector). Auf diese Weise wird die Integrität der Indexdaten sichergestellt, und ein Fehler bei der Konfiguration dieser Art kann zu fehlerhaften Extraktionen führen, da diese Indexdaten nicht einwandfrei sind.
 
@@ -120,7 +120,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
 
       >[!NOTE]
-      >Sie können das Zugriffs-Token über die Schaltfläche **Zugriffs-Token öffnen** abrufen. Sie müssen dabei sicherstellen, dass Sie in der Cloud Service-Zielinstanz zur Gruppe der AEM-Administratoren gehören.
+      >Sie können das Zugriffs-Token über die Schaltfläche **Zugriffs-Token öffnen** abrufen. Sie müssen sicherstellen, dass Sie in der Zielgruppe Cloud Service-Instanz zur Gruppe AEM Administratoren gehören.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
@@ -145,10 +145,10 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle auf diesem Bildschirm vorhandenen Migrationssätze werden auf der Seite *Übersicht* mit ihren aktuellen Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
+   Alle auf diesem Bildschirm vorhandenen Migrationssets werden auf der Seite *Übersicht* mit ihren aktuellen Status- und Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
    * Eine *rote Wolke* bedeutet, dass Sie den Extraktionsvorgang nicht abschließen können.
-   * Eine *grüne Wolke* bedeutet, dass Sie den Extraktionsvorgang abschließen können.
+   * Eine *grüne Cloud* gibt an, dass Sie die Extraktion abschließen können.
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
 1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Migrationssatzeigenschaften anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den Namen des Containers oder die Service-URL zu ändern.
