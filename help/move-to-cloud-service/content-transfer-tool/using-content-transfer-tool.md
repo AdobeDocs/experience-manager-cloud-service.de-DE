@@ -2,11 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 72%
+source-wordcount: '2769'
+ht-degree: 71%
 
 ---
 
@@ -54,6 +53,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * In der *Aufnahmephase* für die Autoreninstanz wird die gesamte Autorenimplementierung herabgesetzt. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
 
 * Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher auf dem AEM-Quellsystem sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (Garbage Collector). Auf diese Weise wird die Integrität der Indexdaten sichergestellt, und ein Fehler bei der Konfiguration dieser Art kann zu fehlerhaften Extraktionen führen, da diese Indexdaten nicht einwandfrei sind.
+
+* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass die benutzerdefinierten Indizes mit dem Knoten `tika` konfiguriert werden, bevor Sie Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition).
 
 ## Verfügbarkeit {#availability}
 
