@@ -1,18 +1,17 @@
 ---
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 91%
+source-wordcount: '1071'
+ht-degree: 90%
 
 ---
 
-
 # Bereitstellen des Codes {#deploy-your-code}
 
-## Bereitstellen von Code mit Cloud Manager {#deploying-code-with-cloud-manager}
+## Bereitstellen von Code mit Cloud Manager in AEM als Cloud Service {#deploying-code-with-cloud-manager}
 
 Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) konfiguriert haben, können Sie Ihren Code bereitstellen.
 
@@ -126,5 +125,3 @@ Produktionsimplementierungen nutzen im Allgemeinen die oben beschriebenen Schrit
 1. AEM-Pakete werden in publish2 und das Dispatcher-Paket in dispatcher2 bereitgestellt und der Dispatcher-Cache geleert
 1. dispatcher2 wird in den Lastenausgleich zurückgesetzt
 Dieser Vorgang wird fortgesetzt, bis die Implementierung alle Publisher und Dispatcher in der Topologie erreicht hat.
-
-
