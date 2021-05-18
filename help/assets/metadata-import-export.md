@@ -2,16 +2,15 @@
 title: Stapelweises Importieren und Exportieren von Asset-Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Massen importieren und exportieren können.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
-
 
 # Stapelweises Importieren und Exportieren von Asset-Metadaten  {#import-and-export-asset-metadata-in-bulk}
 
@@ -19,7 +18,7 @@ Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen i
 
 ## Importieren von Metadaten   {#import-metadata}
 
-Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität unter Verwendung von Asset-Microservices möglicherweise ressourcenintensiv sein. Adobe empfiehlt, dass Sie alle Massenvorgänge bei geringer Serverauslastung planen, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann ressourcenintensiv sein, da die Metadaten-Schreibback-Aktivität mit Asset-Mikrodiensten erfolgt. Adobe empfiehlt, dass Sie alle Massenvorgänge bei geringer Serverauslastung planen, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
 
 >[!NOTE]
 >
@@ -35,7 +34,7 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
    | Batch-Größe | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
    | Feldtrennzeichen | Der Standardwert ist `,` (ein Komma). Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
    | Mehrfachtrennzeichen | Trennzeichen für Metadatenwerte. Der Standardwert ist `|`. |
-   | Workflows starten | Lautet standardmäßig „False“. Wenn hier `true` festgelegt wird und die standardmäßigen Launcher-Einstellungen für den Workflow „DAM-Metadaten-WriteBack“ aktiv sind (der Metadaten in die binären XMP-Daten schreibt). Die Aktivierung von Start-Workflows verlangsamt das System. |
+   | Workflows starten | Lautet standardmäßig „False“. Wenn `true` festgelegt ist, sind die standardmäßigen Launcher-Einstellungen für den DAM-Metadaten-WriteBack-Workflow (der Metadaten in die binären XMP schreibt) in Kraft. Die Aktivierung von Start-Workflows verlangsamt das System. |
    | Asset-Pfad-Spaltenname | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
