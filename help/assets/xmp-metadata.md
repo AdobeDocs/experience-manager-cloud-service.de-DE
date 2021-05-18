@@ -2,16 +2,15 @@
 title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform) für die Metadatenverwaltung. Er wird von AEM als standardisiertes Format für die Erstellung, Verarbeitung und den Austausch von Metadaten verwendet.
 contentOwner: AG
-feature: Metadata
+feature: 'Metadaten  '
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 76%
+source-wordcount: '1000'
+ht-degree: 73%
 
 ---
-
 
 # XMP-Metadaten {#xmp-metadata}
 
@@ -75,9 +74,7 @@ Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen,
 ## XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
 Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets.
-Wenn Sie die Metadaten für ein Asset aus Assets ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
-
-Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namensraum `jcr` verwenden, d. h., eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
+Wenn Sie die Metadaten eines Assets von [!DNL Assets] oder beim Hochladen des Assets ändern, werden die Änderungen zunächst im Metadaten-Knoten in der Asset-Hierarchie gespeichert. Mit der Funktion zum Erstellen einer Sicherungskopie können Sie die Änderungen an den Metadaten an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namensraum `jcr` verwenden, d. h., eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
 
 Angenommen, Sie ändern die Eigenschaft [!UICONTROL Title] des Assets mit dem Titel `Classic Leather` in `Nylon`.
 
@@ -95,6 +92,12 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 
 [!UICONTROL DAM Metadata ] Writebackworkflow wird zum Schreiben der Metadaten eines Assets verwendet. Gehen Sie wie folgt vor, um die Rückgabe zu aktivieren:
 
+* Verwenden Sie Launchers.
+* Manueller Beginn `DAM MetaData Writeback`-Arbeitsablauf.
+* Konfigurieren Sie den Arbeitsablauf für die Nachbearbeitung.
+
+Gehen Sie wie folgt vor, um Launchers zu verwenden:
+
 1. Als Administrator greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** zu.
 1. Wählen Sie die Spalte [!UICONTROL Starter] aus, für die **[!UICONTROL Workflow]** **[!UICONTROL DAM MetaData Writeback]** angezeigt wird. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
 
@@ -102,16 +105,14 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 
 1. Wählen Sie **[!UICONTROL Aktivieren]** auf der Seite **[!UICONTROL Startereigenschaften]**. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-Um diesen Workflow nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an. Um den Workflow auf alle hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem nachbearbeitenden Profil hinzu.
+Um den Workflow manuell nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an.
+
+Um den Workflow auf alle hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem nachbearbeitenden Profil hinzu.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
