@@ -5,10 +5,9 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 89%
 
 ---
@@ -22,14 +21,14 @@ ht-degree: 89%
    + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
+      + [Benutzerspezifische Regeln für Codequalität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
       + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
-      + [Benutzeroberflächen-Tests](/help/implementing/cloud-manager/ui-testing.md)
+      + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
    + [Zugreifen auf und Verwalten von Protokollen](cloud-manager/manage-logs.md)
-   + [Wissenswertes zu Benachrichtigungen](cloud-manager/notifications.md)
+   + [Grundlegendes zu Benachrichtigungen](cloud-manager/notifications.md)
    + Verwalten von SSL-Zertifikaten {#manage-ssl-certificates}
       + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Abrufen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
@@ -47,7 +46,7 @@ ht-degree: 89%
       + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Aktualisieren des SSL-Zertifikats des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -58,9 +57,9 @@ ht-degree: 89%
       + [Überprüfen des IP-Zulassungslistenstatus](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Verwalten von Code {#managing-code}
-   + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
+   + [Umgang mit Maven-Projektversionen ](cloud-manager/project-version-handling.md)
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
-   + [Integration von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
+   + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [Einrichten der Enterprise Team Development für AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
@@ -83,7 +82,6 @@ ht-degree: 89%
       + [Aktualisieren von Inhalten über AEM Assets-APIs](developing/headless-journey/update-your-content.md)
       + [Wie man alles zusammensetzt](developing/headless-journey/put-it-all-together.md)
       + [Wie Sie mit Ihrem kostenlosen Programm live gehen](developing/headless-journey/go-live.md)
-      + [Post-Start](developing/headless-journey/post-launch.md)
       + [Optional - Erstellen von Einzelseitenanwendungen mit AEM](developing/headless-journey/create-spa.md)
    + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
@@ -94,7 +92,7 @@ ht-degree: 89%
       + [Verwenden des Sling Resource Mergers in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
       + [Überlagerungen in AEM as a Cloud Service](developing/introduction/overlays.md)
       + [Verwendung Client-seitiger Bibliotheken](developing/introduction/clientlibs.md)
-      + [Seitenvergleich](/help/implementing/developing/introduction/page-diff.md)
+      + [Seitenvergleich ](/help/implementing/developing/introduction/page-diff.md)
       + [Editor-Einschränkungen](/help/implementing/developing/introduction/editor-limitations.md)
       + [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md)
       + Komponenten und Vorlagen {#components-templates}
@@ -102,17 +100,17 @@ ht-degree: 89%
          + [Vorlagen](developing/components/templates.md)
          + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
          + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de)
-         + [JSON-Exporter für Content Services](developing/components/json-exporter.md)
+         + [JSON-Exporter für Content Services ](developing/components/json-exporter.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
          + [Bildeditor](developing/components/image-editor.md)
          + [Dekorations-Tags](developing/components/decoration-tag.md)
-         + [Verwenden von Bedingungen zum Ausblenden](developing/components/hide-conditions.md)
+         + [Verwenden von Bedingungen zum Ausblenden ](developing/components/hide-conditions.md)
          + [Komponenten-Referenzhandbuch](developing/components/reference.md)
       + [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md)
       + [Einbinden von Tagging in AEM-Programme](/help/implementing/developing/introduction/tagging-applications.md)
       + Suche {#search}
-         + [Query Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
-         + [Query Builder-Eigenschaftsverweis](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [Query-Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder-Prädikatsreferenz](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [Implementieren einer benutzerdefinierten Auswertung von Eigenschaften](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
@@ -124,7 +122,7 @@ ht-degree: 89%
       + [SPA-WKND-Tutorial](developing/hybrid/wknd-tutorial.md)
       + [Erste Schritte mit React](developing/hybrid/getting-started-react.md)
       + [Erste Schritte mit Angular](developing/hybrid/getting-started-angular.md)
-      + [Genaue Informationen zu SPAs](developing/hybrid/deep-dives.md)
+      + [Einzelheiten zu SPAs](developing/hybrid/deep-dives.md)
       + [Entwickeln von SPAs für AEM](developing/hybrid/developing.md)
       + [SPA-Editor – Überblick](developing/hybrid/editor-overview.md)
       + [SPA-Blueprint](developing/hybrid/blueprint.md)
@@ -171,14 +169,14 @@ ht-degree: 89%
    + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + Personalisierung  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
-   + [Konfigurieren von ContextHub](developing/personalization/configuring-contexthub.md)
+   + [Konfigurieren von ContextHub ](developing/personalization/configuring-contexthub.md)
    + [Hinzufügen von ContextHub zu Seiten](developing/personalization/adding-contexthub.md)
    + [Beispiele für Store-Kandidaten](developing/personalization/sample-stores.md)
    + [Beispiel-Store-Module](developing/personalization/sample-modules.md)
    + [ContextHub-Diagnosen](developing/personalization/contexthub-diagnostics.md)
    + [Erweitern von ContextHub](developing/personalization/extending-contexthub.md)
    + [ContextHub-API](developing/personalization/contexthub-api.md)
-   + [Integration mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+   + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
    + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
@@ -189,9 +187,9 @@ ht-degree: 89%
    + [Konfigurieren der RTE-Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Bereitstellen in AEM as a Cloud Service {#deploying}
-   + [Bereitstellen in AEM as a Cloud Service](deploying/overview.md)
-   + [Aktualisierungen der AEM-Version](deploying/aem-version-updates.md)
-   + [Konfigurieren von OSGi für AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [Bereitstellen für AEM as a Cloud Service](deploying/overview.md)
+   + [AEM-Versionsaktualisierungen](deploying/aem-version-updates.md)
+   + [Konfigurieren von OSGI für AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Autorenebene {#author-tier}
    + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Sichern der Autorenebene](/help/implementing/author-tier/securing-the-author-tier.md)
