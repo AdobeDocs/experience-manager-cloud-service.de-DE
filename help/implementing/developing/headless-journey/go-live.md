@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,23 @@ Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, 
 * Erfahren Sie, wie Sie Ihre Anwendung vor dem Start sichern und skalieren können.
 * Verstehen Sie, wie Sie Leistungs- und Debugprobleme überwachen.
 
-Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Post Launch](post-launch.md) ansehen, in dem Sie lernen, wie Sie Ihr Headless-Erlebnis erhalten.
+## Die Journey endet - oder nicht? {#journey-ends}
+
+Herzlichen Glückwunsch! Sie haben die AEM Headless Developer Journey abgeschlossen! Sie sollten jetzt Folgendes verstehen:
+
+* Der Unterschied zwischen dem Versand für kostenlose und kostenlose Inhalte.
+* AEM Funktionen ohne Kopf.
+* So organisieren und AEM Headless-Projekt.
+* So erstellen Sie kostenlose Inhalte in AEM.
+* So können Sie kostenlose Inhalte in AEM abrufen und aktualisieren.
+* Wie man mit einem AEM Headless-Projekt live geht.
+* Was macht man nach dem Go-Live?
+
+Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder haben jetzt alle erforderlichen Kenntnisse. Gute Arbeit!
+
+Die unbedachten Läden in AEM müssen hier aber nicht aufhören. Vielleicht erinnern Sie sich an den Teil [Erste Schritte der Journey](getting-started.md#integration-levels), in dem wir kurz besprochen haben, wie AEM nicht nur kopflosen Versand und herkömmliche Vollstapelmodelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
+
+Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der Journey fort, [So erstellen Sie Einzelseitenanwendungen (SPA) mit AEM.](create-spa.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
