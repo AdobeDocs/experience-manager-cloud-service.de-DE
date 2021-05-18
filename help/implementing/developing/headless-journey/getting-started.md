@@ -4,14 +4,13 @@ description: Lernen Sie in diesem Teil der AEM Headless Developer-Journey die AE
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 4%
 
 ---
-
 
 # Erste Schritte mit AEM Headless als Cloud Service {#getting-started}
 
@@ -50,7 +49,7 @@ Am einfachsten besteht AEM aus einer Autoreninstanz und einer [Veröffentlichung
 
 Der Inhalt beginnt in der Autoreninstanz. Hier erstellen Sie die Inhalte von Autoren. Die Authoring-Umgebung stellt Autoren verschiedene Tools zum Erstellen, Organisieren und Wiederverwenden ihrer Inhalte zur Verfügung.
 
-### Instanz im Veröffentlichungsmodus {#publish}
+### Veröffentlichungsinstanz {#publish}
 
 Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlicht werden, damit sie für andere Dienste verfügbar sind, um sie zu nutzen. Eine Veröffentlichungsinstanz enthält alle veröffentlichten Inhalte.
 
@@ -63,7 +62,8 @@ Replizierung ist der Vorgang der Übertragung von Inhalten von der Autoreninstan
 Um digitale Erlebnisse in AEM auf der einfachsten Ebene zu erstellen, müssen die folgenden Schritte ausgeführt werden:
 
 1. Ihre Inhaltsersteller erstellen Ihren kopflosen Inhalt in der Autoreninstanz.
-1. Wenn dieser Inhalt fertig ist, wird er in die Veröffentlichungsinstanz repliziert. Anschließend können APIs aufgerufen werden, um diesen Inhalt abzurufen.
+1. Wenn dieser Inhalt fertig ist, wird er in die Veröffentlichungsinstanz repliziert.
+1. Anschließend können APIs aufgerufen werden, um diesen Inhalt abzurufen.
 
 AEM Headless baut diese technische Grundlage auf, indem es leistungsstarke Tools zur Verwaltung von kostenlosen Inhalten anbietet, die im nächsten Abschnitt [beschrieben werden.](#aem-headless-basics)
 
