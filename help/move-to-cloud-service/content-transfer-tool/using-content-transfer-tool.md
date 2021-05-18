@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
+source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 65%
+source-wordcount: '2721'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 65%
 >title="Wichtige Überlegungen zur Verwendung des Content Transfer Tool"
 >abstract="Beachten Sie die wichtigen Aspekte, um das Content Transfer-Tool zu verwenden, einschließlich Java- und AEM-Versionen, unterstützte Datastore-Typen, Überlegungen zu Benutzergruppen und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices und Leitlinien"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Tool zum Übertragen von Inhalten herunterladen"
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
@@ -160,7 +159,6 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
 >id="aemcloud_ctt_extraction"
 >title="Content Extraktion"
 >abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der Quell-AEM-Instanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Einstiegsprozess"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraktion oben"
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
@@ -207,8 +205,7 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
->abstract="&quot;Einzug&quot;bezieht sich auf das Einfügen von Inhalten aus dem *Migrationsset* in die Zielgruppe Cloud Service-Instanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraktion"
+>abstract="&quot;Einschluss&quot;bezieht sich auf die Inhaltsaufnahme aus der Migration, die in der Zielgruppe Cloud Service-Instanz festgelegt ist. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
