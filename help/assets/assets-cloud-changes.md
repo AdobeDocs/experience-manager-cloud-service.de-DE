@@ -4,10 +4,10 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 57%
+source-wordcount: '778'
+ht-degree: 56%
 
 ---
 
@@ -46,7 +46,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 
 ## Funktionsparität mit [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] als  [!DNL Cloud Service] Einführung vieler neuer Funktionen und leistungsfähigerer Methoden, um vorhandene Funktionen zu nutzen. Wenn Sie jedoch von [!DNL Experience Manager] 6.5 auf [!DNL Experience Manager] als [!DNL Cloud Service] umstellen, werden Sie möglicherweise feststellen, dass einige Funktionen unterschiedlich funktionieren, nicht verfügbar sind oder teilweise verfügbar sind. Die folgenden Funktionen stellen eine Liste dar:
+[!DNL Experience Manager] als  [!DNL Cloud Service] Einführung vieler neuer Funktionen und leistungsfähigerer Methoden, um vorhandene Funktionen zu nutzen. Wenn Sie jedoch von [!DNL Experience Manager] 6.5 auf [!DNL Experience Manager] als [!DNL Cloud Service] umstellen, werden Sie möglicherweise feststellen, dass einige Funktionen unterschiedlich funktionieren, nicht verfügbar sind oder teilweise verfügbar sind. Im Folgenden finden Sie eine Liste solcher Funktionen. Weitere Informationen finden Sie unter [nicht mehr unterstützte und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
 
 | Funktionalität oder Anwendungsfall | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Kommentare |
 |-----|-----|-----|
