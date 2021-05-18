@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 4%
+source-wordcount: '782'
+ht-degree: 3%
 
 ---
 
@@ -29,10 +29,16 @@ Bei der Implementierung ohne Kopfdaten wird das Seiten- und Komponentenmanagemen
 Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss des Projekts:
 
 * Verstehen Sie, was Versand ohne Inhalt ist und welche Vorteile es bringt.
-* Verstehen Sie AEM überflüssige Funktionen und wie Sie zusammenarbeiten, um ein abwertendes Erlebnis zu bieten.
+* Verstehen Sie AEM überflüssige Funktionen und wie sie zusammenarbeiten, um ein abwertendes Erlebnis zu bieten.
 * Sie haben die Möglichkeit, die ersten Schritte zur Implementierung Ihres ersten AEM ohne Kopf durchzuführen.
 
-## Die Headless-Journey {#the-journey}
+## Audience {#audience}
+
+Diese Journey wurde für die Entwickler-Persona konzipiert, um die Anforderungen, Schritte und den Ansatz eines AEM Headless-Projekts aus Entwicklersicht darzustellen. Die Journey definiert zusätzliche Personen, mit denen der Entwickler für ein erfolgreiches Projekt interagieren muss, aber die Ansicht für die Journey ist die des Entwicklers.
+
+Informationen in dieser Journey können natürlich für andere Personen nützlich sein, aber einige Informationen werden für bestimmte Rollen überflüssig sein. Bleiben Sie dran für kommende Journey, die weitere Rollen übernehmen.
+
+## Die Headless-Entwickler-Journey {#the-journey}
 
 Sie werden viele Themen in dieser Journey untersuchen. Die folgenden Artikel vermitteln Ihnen grundlegende Kenntnisse über Kopfloses in AEM und verweisen auf eine detaillierte technische Dokumentation.
 
