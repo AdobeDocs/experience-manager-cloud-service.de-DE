@@ -3,26 +3,19 @@ title: Verwalten von Metadaten für digitale Assets
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: Asset-Verwaltung, Metadaten
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 97%
 
 ---
 
-
 # Verwalten von Metadaten für digitale Assets {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Damit können Assets einfacher kategorisiert und organisiert und bestimmte Assets leichter von Benutzern gefunden werden. Metadaten können aus in [!DNL Experience Manager Assets] hochgeladenen Dateien extrahiert werden. Damit lässt sich die Metadatenverwaltung in den kreativen Workflow integrieren. Da Sie Metadaten mit den Assets speichern und verwalten können, können Sie Assets basierend auf ihren Metadaten automatisch organisieren und verarbeiten.
-
->[!MORELIKETHIS]
->
->* [XMP-Metadaten](xmp-metadata.md)
->* [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ Mit der Erstellung von metadatengesteuerten Workflows können Sie einige Prozess
 * Der Workflow kann prüfen, ob ein Bild einen Titel aufweist. Falls nicht, fordert das System auf, einen Titel hinzuzufügen.
 * Der Workflow kann prüfen, ob ein Copyright-Hinweis für ein Asset dessen Verteilung zulässt. Das System sendet das Asset also an den einen oder den anderen Server.
 * Ein Workflow kann auf Assets ohne vordefinierte, obligatorische Metadaten oder Assets mit *ungültigen* Metadaten prüfen.
+
+>[!MORELIKETHIS]
+>
+>* [XMP-Metadaten](xmp-metadata.md)
+* [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md)
+
