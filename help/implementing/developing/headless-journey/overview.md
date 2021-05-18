@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 3%
 
 ---
@@ -55,8 +55,7 @@ Obwohl Sie direkt zu einem bestimmten Teil der Journey wechseln können, basiere
 | 6 | [Aktualisieren von Inhalten über AEM Assets-APIs](update-your-content.md) | Erfahren Sie, wie Sie mit der REST-API auf Ihre Inhalte für Inhaltsfragmente zugreifen und diese aktualisieren können. |
 | 7 | [Wie Sie alles zusammenstellen - Ihre App und Ihr Inhalt in AEM Kopflos](put-it-all-together.md) | Erfahren Sie, wie Sie Ihr AEM Projekt, einschließlich Inhaltsfragmente, Ihre GraphQL-Aufrufe, Ihre REST API-Aufrufe und Ihre Anwendung, durchführen und es für den Live-Betrieb vorbereiten. |
 | 8 | [Wie Sie mit Ihrem kostenlosen Programm live gehen](go-live.md) | Erfahren Sie, wie Sie die Anwendung live bereitstellen und Ihren lokalen Code in Git übernehmen und in die Cloud Manager Git for CI/CD-Pipeline verschieben. |
-| 9 | [Post-Start](post-launch.md) | Erfahren Sie, wie Sie Ihr kostenloses Erlebnis erhalten. |
-| 10 | [Optional - Erstellen von Einzelseitenanwendungen (SPA) mit AEM](create-spa.md) | Sobald Sie AEM Funktionen ohne Kopfdaten kennen, erfahren Sie, wie Sie mit dem kostenlosen und kostenlosen Versand kombinieren und wie Sie editierbare SPA mit AEM Editor-Framework erstellen könnenSPA. |
+| 9 | [Optional - Erstellen von Einzelseitenanwendungen (SPA) mit AEM](create-spa.md) | Sobald Sie AEM Funktionen ohne Kopfdaten kennen, erfahren Sie, wie Sie mit dem kostenlosen und kostenlosen Versand kombinieren und wie Sie editierbare SPA mit AEM Editor-Framework erstellen könnenSPA. |
 
 ## Wie geht es weiter {#what-is-next}
 
