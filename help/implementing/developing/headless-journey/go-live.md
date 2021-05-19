@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie eine kost
 
 ## Die Meldung bisher {#story-so-far}
 
-Im vorherigen Dokument der AEM koplosen Journey [Wie Sie alles zusammenstellen - Ihre App und Ihr Inhalt in AEM Headless](put-it-all-together.md) haben Sie gelernt, wie Sie Ihr eigenes AEM kopflosen Projekt für die Live-Veröffentlichung vorbereiten können. Jetzt sollten Sie:
+Im vorherigen Dokument der AEM-Journey [So aktualisieren Sie Ihre Inhalte über AEM Assets APIs](update-your-content.md), haben Sie gelernt, wie Sie Ihre vorhandenen, kopflosen Inhalte in AEM über API aktualisieren können. Sie sollten jetzt:
 
-* Machen Sie sich mit den Anforderungen vertraut, die Sie erfüllen müssen.
+* Machen Sie sich mit der AEM Assets HTTP API vertraut.
 
-Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr AEM Headless-Projekt tatsächlich aktivieren können.
+Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr eigenes, AEM kopfloses Projekt live vorbereiten können.
 
 ## Vorgabe {#objective}
 
@@ -151,13 +151,13 @@ Damit Benutzer bei der Verwendung der AEM Anwendung ohne Kopfdaten das bestmögl
 * Statusseiten AEM aktuellen Status der Dienstverfügbarkeit überprüfen
 * Zugriff auf Leistungsberichte
    * Leistung des Versands
-      * Fastly (CDN) - Überprüfung der Anzahl der Aufrufe, Cache-Rate, Fehlerraten, Nutzlastverkehr
+      * CDN (Fastly)-Leistung - Überprüfung der Anzahl der Aufrufe, Cache-Rate, Fehlerraten und Nutzlastverkehr
       * Herkunft-Server - Anzahl der Aufrufe, Fehlerquoten, CPU-Lasten, Nutzlastverkehr
    * Autorenleistung
       * Anzahl der Benutzer, Anforderungen und Ladevorgänge prüfen
 * Zugriff auf App- und Space-spezifische Leistungsberichte
    * Überprüfen Sie, ob die allgemeinen Metriken grün/orange/rot sind, und identifizieren Sie dann spezifische App-Probleme.
-   * Öffnen Sie dieselben oben gefilterten Berichte nach App/Raum (z. B. Photoshop Desktop, Paywall usw.)
+   * Öffnen Sie dieselben Berichte, die oben nach App oder Leerzeichen gefiltert wurden (z. B. Photoshop Desktop, Paywall)
    * Verwenden Sie Splunk-Protokoll-APIs, um auf Dienst- und Anwendungsleistung zuzugreifen
    * Wenden Sie sich an den Kundensupport, falls es andere Probleme gibt.
 
@@ -181,15 +181,6 @@ Gehen Sie wie folgt vor, um einen Fehler beim Support effizient zu protokolliere
 * Dokument zur Reproduktion des Problems
 * Dokument des Inhalts, mit dem das Problem wiedergegeben wird
 * Melden Sie ein Problem mit der entsprechenden Priorität über das AEM Support-Portal an
-
-## Wie geht es weiter {#what-is-next}
-
-Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, sollten Sie:
-
-* Grundlegendes zur AEM Inhaltsreplikation und -zwischenspeicherung.
-* Erfahren Sie, wie Sie die Werkzeuge konfigurieren, die für die Simulation erforderlich sind, gehen Sie live für Ihre kopflose Anwendung.
-* Erfahren Sie, wie Sie Ihre Anwendung vor dem Start sichern und skalieren können.
-* Verstehen Sie, wie Sie Leistungs- und Debugprobleme überwachen.
 
 ## Die Journey endet - oder nicht? {#journey-ends}
 
