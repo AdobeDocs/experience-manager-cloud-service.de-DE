@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 49%
 
 ---
@@ -322,7 +321,11 @@ Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, 
 * Have experience with sample code and know how the API works in practice.
 -->
 
-Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Wie Sie alles zusammenstellen - Ihre App und Ihr Inhalt in AEM Headless](put-it-all-together.md) ansehen, in dem Sie lernen, wie Sie Ihr AEM Headless-Projekt umsetzen und es für das Live-Leben vorbereiten können.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie das Dokument [Wie Sie mit Ihrer Headless-Anwendung leben](go-live.md) überprüfen, wo Sie Ihr AEM Headless-Projekt tatsächlich live mitnehmen!
 
 [Wie Sie Einzelseitenanwendungen (SPA) mit ](create-spa.md) AEM erstellen, zeigt Ihnen auch, wie Sie bearbeitbare SPA mit AEM SPA Editor-Framework erstellen und externe SPA integrieren können, sodass Sie bei Bedarf Bearbeitungsfunktionen aktivieren können.
 
