@@ -1,14 +1,13 @@
 ---
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 99%
 
 ---
-
 
 # Autorenumgebung und Tools {#authoring-the-environment-and-tools}
 
@@ -191,7 +190,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
    ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Eine Seite, die Teil einer [livecopy](/help/sites-cloud/administering/msm/overview.md) ist, auf der Komponenten von einer anderen Seite geerbt werden.
+* Eine Seite, die Teil einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) ist, auf der Komponenten von einer anderen Seite übernommen werden.
 
 >[!NOTE]
 >
@@ -226,7 +225,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
 * [](/help/sites-cloud/administering/msm/overview.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
-* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), enthält Details und verschiedene Aktionen
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), bietet Details und verschiedene Aktionen
 * [Sprachenkopien](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel) bietet Details und verschiedene Aktionen
 
 ## Ereignisse: Zeitleiste {#events-timeline}
@@ -250,7 +249,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Eigenschaften öffnen](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Seiten-Rollout](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
-* [Seite sperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
+* [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Veröffentlichen einer Seite rückgängig machen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Vorlage bearbeiten](/help/sites-cloud/authoring/features/templates.md)
