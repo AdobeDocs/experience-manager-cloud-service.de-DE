@@ -1,15 +1,14 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.9.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.9.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Versionshinweise
+exl-id: 874ece8d-206a-4081-94c4-c82a375720c5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.9.0 {#release-notes}
 
