@@ -1,14 +1,13 @@
 ---
 title: Verwalten von Zielgruppen
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten von Zielgruppen{#managing-audiences}
 
