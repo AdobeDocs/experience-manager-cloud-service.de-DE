@@ -1,10 +1,9 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4,feb7592e-7b41-43d0-84a1-e92d76a049b3
-translation-type: tm+mt
-source-git-commit: 388a21f7740a3a598f905fc433f54e37df799e6d
+feature: Versionshinweise
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 16%
@@ -17,47 +16,47 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.3.0 ist der 11. März 2021.
+Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. März 2021 veröffentlicht.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Neue Funktionen {#what-is-new}
 
-* Kunden mit Umgebung mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre vorherigen Konfigurationen und können sich über die Benutzeroberfläche selbst versorgen.
+* Kunden mit Umgebungen mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) sehen eine Meldung über ihre bisherigen Konfigurationen und können über die Benutzeroberfläche selbst versorgen.
 
-* Benutzer mit erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
-   * hinzufügen Sites-Lösung auf ein vorhandenes Programm mit Assets oder umgekehrt.
+* Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig erledigen können:
+   * Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets hinzu oder umgekehrt.
    * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
-   * hinzufügen zweite, nicht verwendete Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
+   * Fügen Sie eine zweite, nicht verwendete Lösungsberechtigung hinzu, entweder zu einem vorhandenen Programm oder als neues Programm.
 
-* **AEM Push-** Aktualisierungsbildschirm wird jetzt sowohl für die Ausführung als auch für die Aktivität der Pipeline angezeigt.
+* **AEM** Aktualisierungsfeld Push wird jetzt sowohl für die Pipelineausführung als auch für die Aktivitätsbildschirme angezeigt.
 
-* Wenn eine Umgebung ausgeblendet wird, aber auch ein AEM Update verfügbar ist, hat der Status **Hibernated** Vorrang vor **Update available**.
+* Wenn eine Umgebung in den Ruhezustand versetzt wird, aber auch eine AEM Aktualisierung verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
 
-* Die Benutzer können nun ihre Cloud Manager-Rolle(en) anzeigen, indem sie die Option &quot;Ansicht Cloud Manager-Rolle(en)&quot;wählen, nachdem sie zum Symbol &quot;User Profil&quot;(oben rechts) von Unified Shell navigiert sind.
+* Benutzer können nun ihre Cloud Manager-Rollen sehen, indem sie die Option &quot;Cloud Manager-Rolle(n) anzeigen&quot;auswählen, nachdem sie zum Benutzerprofilsymbol (oben rechts) von Unified Shell navigiert sind.
 
-* Die Beschriftung **Antrag auf Genehmigung** wurde zur besseren Klarheit in **Produktionsgenehmigung** umbenannt.
+* Der Titel **Antrag auf Genehmigung** wurde zur besseren Übersichtlichkeit in **Produktionsgenehmigung** umbenannt.
 
-* Die Beschriftung **Version** wurde im Bildschirm &quot;Produktions-Pipeline-Ausführung&quot;in **Git-Tag** umbenannt.
+* Der Titel **Version** wurde im Bildschirm zur Ausführung der Produktions-Pipeline in **Git-Tag** umbenannt.
 
-* Die Beschriftungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr wahres Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
+* Die Bezeichnungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr tatsächliches Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
 
-* Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
+* Die Listen zur veralteten Klasse und Methode wurden basierend auf der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
 
-* Die Cloud Manager-Produktionspipeline umfasst jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+* Die Cloud Manager-Produktions-Pipeline enthält jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Die Paketversion wurde in einigen Fällen während AEM Push-Aktualisierung übersprungen.
+* Die Paketversionierung wurde in einigen Fällen während AEM Push-Upgrades übersprungen.
 
 * Einige Qualitätsprobleme wurden nicht richtig erkannt, wenn Pakete in andere Pakete eingebettet wurden.
 
-* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds &quot;Hinzufügen Programm&quot;generierte Standardname für das Programm ein Duplikat eines vorhandenen Programms sein.
+* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds Programm hinzufügen generierte Standard-Programmname ein Duplikat eines vorhandenen Programmnamens sein.
 
-* Wenn der Benutzer unmittelbar nach dem Start einer Pipeline von der Seite für die Ausführung der Pipeline wegnavigiert, wird gelegentlich eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich Beginn ist.
+* Wenn der Benutzer die Pipeline-Ausführungsseite gelegentlich unmittelbar nach dem Start einer Pipeline verlässt, wird eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich gestartet wird.
 
-* Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kundenbuilds zu ungültigen Paketen führten.
+* Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kunden-Builds zu ungültigen Paketen führten.
 
-* Gelegentlich wird dem Benutzer auch dann ein grüner &quot;aktiver&quot;Status neben einer IP-Zulassungsliste angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
+* Gelegentlich kann der Benutzer einen grünen &quot;aktiven&quot;Status neben einer IP-Zulassungsliste sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
 * Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
