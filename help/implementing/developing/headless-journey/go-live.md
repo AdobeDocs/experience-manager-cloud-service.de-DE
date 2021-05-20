@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- 
 
 * **Der Autorendienst,** bei dem interne Benutzer Inhalte erstellen, verwalten und in der Vorschau anzeigen.
 
-* **Der Veröffentlichungsdienst** gilt als &quot;Live&quot;-Umgebung und ist in der Regel die Aufgabe, mit der Endbenutzer interagieren. Inhalte, die nach der Bearbeitung und Genehmigung im Autorendienst erstellt wurden, werden an den Veröffentlichungsdienst verteilt. Das häufigste Bereitstellungsmuster bei AEM Headless-Anwendungen besteht darin, die Produktionsversion der Anwendung mit einem AEM Publish-Dienst zu verbinden.
+* **Der Veröffentlichungsdienst** gilt als &quot;Live&quot;-Umgebung und ist in der Regel die Aufgabe, mit der Endbenutzer interagieren. Inhalte werden nach der Bearbeitung und Anwendung im Autorendienst an den Veröffentlichungsdienst verteilt. Das häufigste Bereitstellungsmuster bei AEM Headless-Anwendungen besteht darin, die Produktionsversion der Anwendung mit einem AEM Publish-Dienst zu verbinden.
 
 * **Der** Dispatcher ist ein statischer Webserver, der mit dem AEM Dispatcher-Modul erweitert wird. Er speichert durch die Veröffentlichungsinstanz generierte Webseiten zwischen, um die Leistung zu verbessern.
 
@@ -99,15 +99,15 @@ Die lokale Entwicklungsumgebung umfasst drei Hauptbereiche:
 1. Die lokale AEM Runtime - lokale Versionen der AEM Autoren- und Veröffentlichungsdienste, die zum Bereitstellen von Code aus dem AEM Projekt verwendet werden
 1. Die lokale Dispatcher Runtime - eine lokale Version des Apache httpd-Webservers, der das Dispatcher-Modul enthält
 
-Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für die React-App simulieren, indem Sie lokal einen statischen Knotenserver bereitstellen.
+Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für die React-Anwendung simulieren, indem Sie lokal einen statischen Knotenserver bereitstellen.
 
 Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Bereiten Sie Ihre AEM Headless-Anwendung für Go-Live vor {#prepare-your-aem-headless-application-for-golive}
+## Bereiten Sie Ihre AEM Headless-Anwendung für GoLive vor {#prepare-your-aem-headless-application-for-golive}
 
 Jetzt ist es an der Zeit, Ihre AEM Headless App für den Start bereitzustellen, indem Sie die unten beschriebenen Best Practices befolgen.
 
-### Sichern und Skalieren der Headless-Anwendung vor dem Start {#secure-and-scale-before-launch}
+### Sichern und skalieren Sie Ihre Headless-Anwendung vor Launch {#secure-and-scale-before-launch}
 
 1. [Token-basierte Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) mit Ihren GraphQL-Anforderungen konfigurieren
 1. Konfigurieren Sie [Caching](/help/implementing/dispatcher/caching.md).
@@ -147,7 +147,7 @@ Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pip
 
 Damit Benutzer bei der Verwendung der AEM Headless-Anwendung das bestmögliche Erlebnis erhalten, müssen Sie die wichtigsten Leistungsmetriken überwachen, wie unten beschrieben:
 
-* Vorschau- und Produktionsversionen der App überprüfen
+* Vorschau- und Produktionsversionen der Anwendung überprüfen
 * Überprüfen AEM Statusseiten für den aktuellen Status der Dienstverfügbarkeit
 * Leistungsberichte aufrufen
    * Versandleistung
@@ -155,10 +155,10 @@ Damit Benutzer bei der Verwendung der AEM Headless-Anwendung das bestmögliche E
       * Herkunftsserver - Anzahl der Aufrufe, Fehlerraten, CPU-Auslastung, Nutzlastverkehr
    * Autorenleistung
       * Anzahl der Benutzer, Anforderungen und Ladevorgänge überprüfen
-* Auf App- und Space-spezifische Leistungsberichte zugreifen
-   * Sobald der Server eingerichtet ist, überprüfen Sie, ob die allgemeinen Metriken grün/orange/rot sind, und identifizieren Sie dann spezifische App-Probleme.
-   * Öffnen Sie dieselben Berichte, die oben nach App oder Leerzeichen gefiltert wurden (z. B. Photoshop-Desktop, Paywall).
-   * Splunk-Protokoll-APIs verwenden, um auf die Leistung von Diensten und Anwendungen zuzugreifen
+* Auf Anwendungs- und Space-spezifische Leistungsberichte zugreifen
+   * Sobald der Server eingerichtet ist, überprüfen Sie, ob die allgemeinen Metriken grün/orange/rot sind, und identifizieren Sie dann spezifische Anwendungsprobleme.
+   * Öffnen Sie die oben genannten Berichte, filtern Sie sie jedoch nach der Anwendung oder dem Bereich (z. B. Photoshop-Desktop, Paywall).
+   * [Splunk-Protokoll-](/help/implementing/developing/introduction/logging.md#splunk-logs) APIs verwenden, um auf Dienst- und Anwendungsleistung zuzugreifen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 
 ## Fehlerbehebung {#troubleshooting}
@@ -169,7 +169,7 @@ Befolgen Sie diese Best Practices als allgemeinen Ansatz zum Debugging:
 
 * Validieren der Funktionalität und Leistung mit der Vorschauversion der Anwendung
 * Validieren der Funktionalität und Leistung mit der Produktionsversion der Anwendung
-* Validieren mit der JSON-Vorschau des Inhaltsfragment-Editors
+* Validieren Sie mit der [JSON-Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md) des Inhaltsfragment-Editors.
 * Inspect Sie die JSON-Datei in der Clientanwendung, um zu überprüfen, ob es Probleme mit der Clientanwendung oder dem Versand gibt.
 * Inspect der JSON, die GraphQL verwendet, um zu überprüfen, ob Probleme im Zusammenhang mit zwischengespeicherten Inhalten oder AEM vorliegen
 
@@ -180,7 +180,7 @@ Gehen Sie wie folgt vor, um einen Fehler effizient mit dem Support zu protokolli
 * Erstellen Sie bei Bedarf Screenshots des Problems.
 * Dokumentieren einer Möglichkeit, das Problem zu reproduzieren
 * Dokumentieren des Inhalts, mit dem das Problem reproduziert
-* Melden Sie ein Problem über das AEM Support-Portal mit der entsprechenden Priorität.
+* Melden Sie ein Problem über das AEM Support-Portal mit der Anwendungspriorität an.
 
 ## Die Journey endet - oder nicht? {#journey-ends}
 
