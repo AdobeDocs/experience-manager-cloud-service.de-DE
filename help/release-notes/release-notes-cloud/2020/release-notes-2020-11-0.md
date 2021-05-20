@@ -1,14 +1,13 @@
 ---
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
-translation-type: tm+mt
-source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
+exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -29,7 +28,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 * **Sortieren der für den Rollout verfügbaren Live Copy-Seiten**: Neue Option zum Sortieren der für den Rollout verfügbaren Live Copy-Seiten mit den Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes Änderungsdatum] und [!UICONTROL Letztes Rollout-Datum]. [!UICONTROL Letztes Rollout-Datum] für eine Seite ist eine neu eingeführte Eigenschaft.
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
