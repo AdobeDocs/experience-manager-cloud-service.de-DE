@@ -2,7 +2,6 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1951'
@@ -39,7 +38,7 @@ Version 2.9.0 der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/e
 
 * Es wurde die Möglichkeit hinzugefügt, das Routing von reinen Angular-Seiten und AEM-/Angular-Seiten zu verwalten.
 
-### Barrierefreiheit {#accessibility}
+### Erreichbarkeit {#accessibility}
 
 * Rolle und Status des Erzählenden sind jetzt für die Masonry-Elemente im Dialogfeld **Seite erstellen** möglich, während Sie im Browser-Modus mit dem Abwärtspfeil navigieren.
 
@@ -110,7 +109,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 Mit den optimierten Smart Tags können Unternehmen Smart-Tagging-Modelle trainieren, um neben generischen Smart-Tags auch Bilder zu erkennen, die auf kundenspezifischen Unternehmens-Tags basieren.
 
 In dieser Version gibt es ein neues, geführtes Benutzererlebnis, mit dessen Hilfe Smart-Tags-Training für Sätze kundenspezifischer Tags eingerichtet und mit Assets trainiert werden kann, die in Zukunft erkannt und mit diesen versehen werden sollen. Das Erlebnis ist jetzt intuitiver.
-Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Siehe [So fügen Sie Assets Smart-Tags hinzu](/help/assets/smart-tags.md).
+Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Siehe [Hinzufügen von Smart-Tags zu Assets](/help/assets/smart-tags.md).
 
 **Unterstützung der Erfassung, Vorschau und Bereitstellung von 3D-Inhalten**
 
