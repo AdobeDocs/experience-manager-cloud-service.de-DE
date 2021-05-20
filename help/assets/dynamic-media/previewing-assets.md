@@ -13,9 +13,9 @@ ht-degree: 78%
 
 # Anzeigen von Assets in einer Vorschau {#previewing-assets}
 
-Mit Vorschau können Sie sehen, wie ein hochgeladenes digitales Asset angezeigt wird, wenn es von einem Kunden in einem eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
+Mit der Vorschau können Sie sehen, wie ein von Ihnen hochgeladenes digitales Asset angezeigt wird, wenn es von einem Kunden in seinem eigenen Webbrowser angezeigt wird. Die Vorschau erfolgt über den eingebetteten, geräteübergreifenden Standard-Viewer, der dem Asset zugewiesen ist.
 
-Ein Viewer ist eine Sammlung verschiedener Einstellungen oder &quot;Vorgaben&quot;. Beispielsweise werden im Viewer die Anzeigegröße, das Zoomverhalten, Farbschemata, Ränder und Schriftarten angezeigt, die bestimmen, wie Rich-Media-Assets auf Computerbildschirmen und Mobilgeräten Ansicht werden.
+Ein Viewer ist eine Sammlung verschiedener Einstellungen oder &quot;Vorgaben&quot;. Beispielsweise die Viewer-Anzeigegröße, das Zoom-Verhalten, Farbschemata, Rahmen und Schriftarten, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten anzeigen.
 
 Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bildsets verwenden, Assets aber auch über von Ihnen erstellte Viewer-Vorgaben in der Vorschau anzeigen. Alternativ dazu können Sie auch Bildvorgaben verwenden, um Ausgabedarstellungen von Bildern anzuzeigen.
 
@@ -24,7 +24,7 @@ Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bilds
 
 >[!NOTE]
 >
->Wenn Sie sich auf einer Webseite (Sites) in Adobe Experience Manager befinden, können Sie Assets nicht im Modus **[!UICONTROL Bearbeiten]** Vorschau durchführen. Gehen Sie stattdessen zum Seitenmodus, indem Sie oben rechts auf der Vorschau auf **[!UICONTROL Vorschau]** klicken.
+>Wenn Sie sich auf einer Webseite (Sites) in Adobe Experience Manager befinden, können Sie keine Asset-Vorschau im Modus **[!UICONTROL Bearbeiten]** anzeigen. Wechseln Sie stattdessen in den Vorschaumodus, indem Sie in der oberen rechten Ecke der Seite auf **[!UICONTROL Vorschau]** klicken.
 
 Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutzeroberfläche finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -50,14 +50,14 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Vorschau eines 3D-Assets im Dimensional-Viewer</strong></p>
       <ul>
       <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong> und wählen Sie dann den Dimensional-Viewer aus.</li>
-      <li>Um das Bild zur ursprünglichen Zoomap zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.</li>
+      <li>Um das Bild zur ursprünglichen Zoomap zurückzugeben, tippen Sie auf <strong>Zurücksetzen</strong>.</li>
       <li>Um den Viewer auf dem Anzeigegerät zu maximieren, tippen Sie auf <strong>Vollbild</strong>.</li>
       </ul>
       <p><strong>Navigieren in der 3D-Szene</strong></p>
       <ul>
       <li><p><strong>3D-Kamera drehen</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Klicken und ziehen Sie mit der linken Maustaste.</p> Touchscreen: Drücken und ziehen Sie.</p></li>
       <li><p><strong>Kamera schwenken</strong>: Schwenken Sie die Ansicht nach links, rechts, oben und unten.</p> Maus: Klicken Sie mit der rechten Maustaste und ziehen Sie.</p> Touchscreen: Drücken und ziehen Sie mit zwei Fingern.</p></li>
-      <li><p><strong>Zoomen Sie Ihre Kamera</strong>  - Zoomen Sie Ihre Kamera, wenn Sie sich in der 3D-Szene in- und ausbewegen möchten.</p> Maus: Scrollen Sie mit dem Mausrad.</p> Touchscreen: Führen Sie mit den Fingern Pinch-Gesten aus.</p></li>
+      <li><p><strong>Kamera zoomen</strong> : Zoomen Sie Ihre Kamera, wenn Sie sich in Bereiche der 3D-Szene hinein- und ausbewegen möchten.</p> Maus: Scrollen Sie mit dem Mausrad.</p> Touchscreen: Führen Sie mit den Fingern Pinch-Gesten aus.</p></li>
       <li><p><strong>Kamera neu zentrieren</strong>: Drehen Sie Ihre Ansicht in der 3D-Szene um die Objekte herum.</p> Maus: Doppelklicken Sie.</p> Touchscreen: Doppeltippen Sie.</li></ul></td>
       </tr>
       <tr>
@@ -70,7 +70,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-        </ul><p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.<br />Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+        </ul><p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild wieder in den ursprünglichen Zoom zu versetzen, tippen Sie auf <strong>Zurücksetzen</strong>.<br />Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -79,7 +79,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Asset-Vorschau in bestimmter Ausgabedarstellung</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Ausgabedarstellungen</strong> und wählen Sie dann die Ausgabedarstellung, die Sie in einer Vorschau anzeigen möchten.</li>
-        </ul><p>Wenn Sie eine Videowiedergabe mit höherer Auflösung für die Vorschau auswählen, wird das Video möglicherweise abgeschnitten angezeigt. Der Grund dafür ist, dass die Vorschau der Darstellung Ihnen die exakte Auflösung zeigt, die Ihre Kunden sehen, und zwar im Kontext des eingebetteten Viewers, der für die Vorschau verwendet wird.</p><p>Wenn Sie ein adaptives Videoset auf Asset-Ebene Vorschau haben, werden die Darstellungen in einem Wiedergabeerlebnis gruppiert. Das heißt, das adaptive Video wird entsprechend für die Anzeige skaliert und mit der optimalen Auflösung im Kontext des Anzeigegeräts und der Verbindungsgeschwindigkeit wiedergegeben.<br /></p><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
+        </ul><p>Wenn Sie eine Videoausgabedarstellung mit höherer Auflösung für die Vorschau auswählen, wird das Video möglicherweise abgeschnitten angezeigt. Der Grund dafür ist, dass die Vorschau der Ausgabedarstellung die genaue Auflösung anzeigt, die Ihre Kunden sehen, alles im Kontext des eingebetteten Viewers, der für die Vorschau verwendet wird.</p><p>Wenn Sie eine Vorschau eines adaptiven Videosets auf Asset-Ebene anzeigen, werden die Ausgabedarstellungen in ein Wiedergabeerlebnis gruppiert. Das heißt, das adaptive Video wird entsprechend für die Anzeige skaliert und mit der optimalen Auflösung im Kontext des Anzeigegeräts und der Verbindungsgeschwindigkeit wiedergegeben.<br /></p><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
         </ul> </td>
@@ -91,7 +91,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p></td>
+        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild wieder in den ursprünglichen Zoom zu versetzen, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p></td>
       </tr>
       <tr>
       <td>Rotationsset</td>
@@ -100,7 +100,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-        </ul><p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+        </ul><p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild wieder in den ursprünglichen Zoom zu versetzen, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
       <td>Sets für gemischte Medien</td>
@@ -109,7 +109,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
         <ul>
         <li>Klicken Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Klicken Sie in der Liste auf <strong>Viewer</strong>. Wählen Sie dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild wieder in den ursprünglichen Zoom zu versetzen, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
       <td>Karussellset</td>
@@ -130,7 +130,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p><strong>Asset-Vorschau in bestimmtem Viewer</strong></p>
         <ul>
         <li>Tippen Sie oben links auf der Seite auf das Symbol, damit die Dropdown-Liste angezeigt wird. Wählen Sie <strong>Viewer</strong> und dann einen Viewer aus, den Sie auf das Asset anwenden möchten.</li>
-        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzukehren, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
+        </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild wieder in den ursprünglichen Zoom zu versetzen, tippen Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild in Schritten einzoomen. Wenn Sie den maximalen Zoom erreicht haben, doppeltippen Sie erneut auf das Bild, um den Zoomstatus zurückzusetzen. Streichen Sie mit dem Finger über das Bild, um es zu schwenken.</p> </td>
       </tr>
     </tbody>
     </table>
