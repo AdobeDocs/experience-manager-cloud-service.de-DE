@@ -1,14 +1,13 @@
 ---
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden des Sling Resource Merger in AEM     as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
@@ -48,10 +47,12 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >Der Grund dafür ist, dass der Inhalt von `/libs` ggf. überschrieben werden kann, wenn Upgrades auf Ihre Instanz angewendet werden.
 >
 >* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths) abhängig.
+   >
+   >
+* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
 >
->* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
 >
->Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
+Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 
 ### Eigenschaften {#properties}
 
