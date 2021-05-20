@@ -1,14 +1,13 @@
 ---
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '14060'
 ht-degree: 100%
 
 ---
-
 
 # Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) {#creating-accessible-content-wcag-conformance}
 
@@ -272,7 +271,7 @@ Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch
 ### Audiobeschreibung (aufgezeichnet) (1.2.5) {#audio-description-prerecorded}
 
 * Erfolgskriterium 1.2.5
-* Stufe AA
+* Level AA
 * Audiobeschreibung (aufgezeichnet): Audiobeschreibungen werden für alle aufgezeichneten Videoinhalte in synchronisierten Medien bereitgestellt.
 
 #### Zweck: Audiobeschreibung (aufgezeichnet) (1.2.5) {#purpose-audio-description-prerecorded}
@@ -288,7 +287,7 @@ Befolgen Sie die Anweisungen für [Audiobeschreibung oder Medienalternative (auf
 * [Erfolgskriterien 1.2.5 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Erfolgskriterien 1.2.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Anpassbar (1.3)   {#adaptable}
+### Anpassbar (1.3)  {#adaptable}
 
 [Richtlinie 1.3 Anpassbar: Erstellen von Inhalten, die auf verschiedene Arten präsentiert werden können (zum Beispiel mit einfacherem Layout) ohne Informationen oder die Struktur zu verlieren.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -359,6 +358,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
       >
       >* `<b>` für `<strong>`
       >* `<i>` für `<em>`
+
       >
       >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 
@@ -460,7 +460,7 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 * [Erfolgskriterien 1.3.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Erfolgskriterien 1.3.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Unterscheidbar (1.4)   {#distinguishable}
+### Unterscheidbar (1.4)  {#distinguishable}
 
 [Richtlinie 1.4 Unterscheidbar: Erleichtern Sie den Benutzern das Sehen und Hören von Inhalt einschließlich der Unterscheidung von Vorder- und Hintergrund.](https://www.w3.org/TR/WCAG/#distinguishable)
 
@@ -525,7 +525,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.4.2 erfüllen](https://ww
 ### Kontrast (Minimum) (1.4.3)   {#contrast-minimum}
 
 * Erfolgskriterium 1.4.3
-* Stufe AA
+* Level AA
 * Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit folgenden Ausnahmen:
    * Großer Text: Großer Text und Bilder von großem Text haben ein Kontrastverhältnis von mindestens 3:1.
    * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die [reine Dekoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration) darstellen, die für niemanden sichtbar sind oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
@@ -602,7 +602,7 @@ Neben den Richtlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.or
 ### Bilder von Text (1.4.5)   {#images-of-text}
 
 * Erfolgskriterium 1.4.5
-* Stufe AA
+* Level AA
 * Bilder von Text: Falls die verwendeten Technologien die visuelle Präsentation realisieren können, wird für die Vermittlung von Informationen Text verwendet – keine Bilder von Text. Dabei gelten folgende Ausnahmen:
    * Anpassbar: Das Bild des Texts kann visuell an die Anforderungen des Benutzers angepasst werden.
    * Erforderlich: Eine bestimmte Präsentation von Text ist für die zu vermittelnden Informationen erforderlich.
@@ -634,7 +634,7 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 
 Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktionen zugreifen können.
 
-### Tastatur (2.1.1) {#keyboard}
+### Tastatur (2.1.1)   {#keyboard}
 
 * Erfolgskriterium 2.1.1
 * Stufe A
@@ -898,7 +898,7 @@ Alternativ können Skripts verwendet werden. Dabei wird im Link selbst ein minim
 ### Verschiedene Methoden (2.4.5) {#multiple-ways}
 
 * Erfolgskriterium 2.4.5
-* Stufe AA
+* Level AA
 * Verschiedene Methoden: Es gibt mehr als eine Methode, um eine Web-Seite innerhalb eines Satzes von Web-Seiten zu finden, außer die Web-Seite ist das Ergebnis oder ein Schritt innerhalb eines Prozesses.
 
 #### Zweck: Verschiedene Methoden (2.4.5) {#purpose-multiple-ways}
@@ -919,7 +919,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.5 erfüllen](https://ww
 ### Überschriften und Beschriftungen (2.4.6) {#headings-and-labels}
 
 * Erfolgskriterium 2.4.6
-* Stufe AA
+* Level AA
 * Überschriften und Beschriftungen: Überschriften und Beschriftungen beschreiben ein Thema oder einen Zweck.
 
 #### Zweck: Überschriften und Beschriftungen (2.4.6) {#purpose-headings-and-labels}
@@ -938,7 +938,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.6 erfüllen](https://ww
 ### Fokus sichtbar (2.4.7) {#focus-visible}
 
 * Erfolgskriterium 2.4.7
-* Stufe AA
+* Level AA
 * Fokus sichtbar: Jede durch die Tastatur bedienbare Benutzerschnittstelle hat einen Bedienmodus, bei dem der Tastaturfokus sichtbar ist.
 
 #### Zweck: Fokus sichtbar (2.4.7) {#purpose-focus-visible}
@@ -1001,7 +1001,7 @@ Im AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt.
 ### Sprache von Teilen (3.1.2)     {#language-of-parts}
 
 * Erfolgskriterium 3.1.2
-* Stufe AA
+* Level AA
 * Sprache von Teilen: Die menschliche Sprache aller Abschnitte und Sätze im Inhalt kann programmatisch bestimmt werden. Ausgenommen sind Eigennamen, technische Fachbegriffe, Wörter einer unbestimmten Sprache und Wörter oder Wendungen, die Teil des Jargons des direkt umliegenden Textes sind.
 
 #### Zweck - Sprache von Teilen (3.1.2)   {#purpose-language-of-parts}
@@ -1098,7 +1098,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.2 erfüllen](https://ww
 ### Konsistente Navigation (3.2.3) {#consistent-navigation}
 
 * Erfolgskriterium 3.2.3
-* Stufe AA
+* Level AA
 * Konsistente Navigation: Navigationsmechanismen, die auf mehreren Web-Seiten innerhalb eines Satzes von Web-Seiten wiederholt werden, treten jedes Mal, wenn sie wiederholt werden, in der gleichen relativen Reihenfolge auf, außer eine Änderung wird durch den Benutzer ausgelöst.
 
 #### Zweck: Konsistente Navigation (3.2.3) {#purpose-consistent-navigation}
@@ -1227,7 +1227,7 @@ In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schal
 ### Fehlerempfehlung (3.3.3) {#error-suggestion}
 
 * Erfolgskriterium 3.3.3
-* Stufe AA
+* Level AA
 * Tastatur: Wenn ein Eingabefehler automatisch erkannt wird und Korrekturempfehlungen bekannt sind, werden diese Empfehlungen dem Benutzer bereitgestellt, es sei denn, dies würde die Sicherheit oder den Zweck des Inhalts gefährden.
 
 #### Zweck: Fehlerempfehlung (3.3.3) {#purpose-error-suggestion}
@@ -1250,7 +1250,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.3 erfüllen](https://ww
 ### Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#error-prevention-legal-financial-data}
 
 * Erfolgskriterium 3.3.4
-* Stufe AA
+* Level AA
 * Fehlervermeidung (rechtliche, finanzielle, Daten): Für Web-Seiten, die eine für den Benutzer auftretende rechtliche Verpflichtung oder finanzielle Transaktion zur Folge haben, die Benutzer-gesteuerte Daten in Datenspeicherungssystemen ändern oder löschen oder die Testantworten des Benutzers abschicken, gilt mindestens eines der Folgenden:
 
    * Reversibel
@@ -1287,7 +1287,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.4 erfüllen](https://ww
 
 Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragenten, einschließlich Hilfstechnologien.
 
-### Syntaxanalyse (4.1.1) {#parsing}
+### Syntaxanalyse (4.1.1)   {#parsing}
 
 * Erfolgskriterium 4.1.1
 * Stufe A
