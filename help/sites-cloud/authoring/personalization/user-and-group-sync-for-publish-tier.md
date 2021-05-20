@@ -1,8 +1,7 @@
 ---
 title: 'Registrierung, Anmeldung und Anwenderprofil '
-description: Informationen zur Registrierung, Anmeldung, Benutzerdaten und Gruppensynchronisierung für AEM als Cloud Service
+description: Erfahren Sie mehr über Registrierung, Anmeldung, Benutzerdaten und Gruppensynchronisierung für AEM als Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-translation-type: tm+mt
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
 source-wordcount: '1177'
@@ -14,7 +13,7 @@ ht-degree: 94%
 
 ## Einführung {#introduction}
 
-Webanwendungen bieten oft Funktionen zur Kontoverwaltung, mit denen sich Endbenutzer auf einer Website registrieren können, wodurch ihre Benutzerdaten erhalten bleiben, sodass sie sich in Zukunft anmelden und eine einheitliche Benutzererfahrung genießen können. In diesem Artikel werden die folgenden Konzepte für AEM als Cloud Service beschrieben:
+Webanwendungen bieten häufig Kontoverwaltungsfunktionen, mit denen sich Endbenutzer auf einer Website registrieren können, auf der ihre Benutzerdaten gespeichert werden. Dadurch können sie sich in Zukunft anmelden und ein konsistentes Erlebnis genießen. In diesem Artikel werden die folgenden Konzepte für AEM als Cloud Service beschrieben:
 
 * Registrierung
 * Anmeldung
