@@ -3,7 +3,6 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '808'
@@ -11,7 +10,7 @@ ht-degree: 66%
 
 ---
 
-# CDN in AEM as a Cloud Service {#cdn}
+# CDN in AEM als Cloud Service {#cdn}
 
 
 >[!CONTEXTUALHELP]
@@ -29,7 +28,7 @@ Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanford
 Befolgen Sie die nachstehenden Abschnitte, um mithilfe der Cloud Manager-Self-Service-Benutzeroberfläche die Bereitstellung von Inhalten mit dem vorkonfigurierten CDN von AEM vorzubereiten:
 
 1. [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [Verwalten benutzerdefinierter Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+1. [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Beschränken des Traffic**
 
@@ -39,7 +38,7 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 >[!CAUTION]
 >
->Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN von AEM bearbeitet. Wenn Sie Ihre eigene CDN auf die AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihrer CDN in der Zulassungsliste enthalten sind.
+>Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN von AEM bearbeitet. Wenn Sie Ihr eigenes CDN auf das AEM verwaltete CDN verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
@@ -55,24 +54,24 @@ Konfigurationsanweisungen:
 
 1. Legen Sie die `X-Forwarded-Host`-Kopfzeile mit dem Domain-Namen fest. Beispiel: `X-Forwarded-Host:example.com`.
 1. Legen Sie die Host-Kopfzeile mit der Ursprungs-Domain fest, bei der es sich um den CDN-Eingang von AEM handelt. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie der Host-Header muss der SNI-Header die Domäne der Herkunft sein.
-1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN `X-Edge-*` entfernt). Der Wert sollte von Adobe stammen.
-   * Dies ist erforderlich, damit das Adobe-CDN die Quelle der Anforderungen überprüfen und die `X-Forwarded-*`-Header an die AEM weiterleiten kann. Beispielsweise wird `X-Forwarded-Host` von AEM verwendet, um den Host-Header zu bestimmen, und `X-Forwarded-For` wird zur Bestimmung der Client-IP verwendet. Daher ist es die Verantwortung des vertrauenswürdigen Anrufers (d.h. des vom Kunden verwalteten CDN), die Richtigkeit der `X-Forwarded-*`-Kopfzeilen sicherzustellen (siehe unten stehende Anmerkung).
-   * Optional kann der Zugriff auf die Adobe CDNs Adresse blockiert werden, wenn kein `X-Edge-Key` vorhanden ist. Bitte informieren Sie die Adobe, wenn Sie direkten Zugriff auf die Adobe CDN&#39;s Ingress (zu blockieren) benötigen.
+1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie der Host-Header muss der SNI-Header die Ursprungsdomäne sein.
+1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN `X-Edge-*` abschneidet). Der Wert sollte von Adobe stammen.
+   * Dies ist erforderlich, damit das Adobe-CDN die Anforderungsquelle überprüfen und die `X-Forwarded-*`-Header an die AEM übergeben kann. Beispielsweise wird `X-Forwarded-Host` von AEM verwendet, um die Host-Kopfzeile zu bestimmen, und `X-Forwarded-For` wird verwendet, um die Client-IP zu bestimmen. Daher ist es Sache des vertrauenswürdigen Aufrufers (d. h. des kundenverwalteten CDN), die Richtigkeit der `X-Forwarded-*`-Kopfzeilen sicherzustellen (siehe Hinweis unten).
+   * Optional kann der Zugriff auf den Eingang des Adobe CDN blockiert werden, wenn kein `X-Edge-Key` vorhanden ist. Bitte informieren Sie die Adobe, wenn Sie direkten Zugriff auf den Eingang von Adobe CDN benötigen (um blockiert zu werden).
 
-Bevor Sie Live-Traffic akzeptieren, sollten Sie sich beim Kundensupport der Adobe vergewissern, dass das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
+Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Kundensupport von Adobe überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
->Kunden, die ihr eigenes CDN verwalten, sollten die Integrität der Header sicherstellen, die an AEM CDN gesendet werden. Es wird beispielsweise empfohlen, dass Kunden alle `X-Forwarded-*`-Kopfzeilen löschen und sie auf bekannte und kontrollierte Werte setzen. Beispiel: `X-Forwarded-For` sollte die IP-Adresse des Kunden enthalten, während `X-Forwarded-Host` den Host der Site enthalten sollte.
+>Kunden, die ihr eigenes CDN verwalten, sollten die Integrität der Header sicherstellen, die an AEM CDN gesendet werden. Es wird beispielsweise empfohlen, dass Kunden alle `X-Forwarded-*`-Kopfzeilen löschen und sie auf bekannte und gesteuerte Werte setzen. `X-Forwarded-For` sollte beispielsweise die IP-Adresse des Kunden enthalten, während `X-Forwarded-Host` den Host der Site enthalten sollte.
 
 Aufgrund des zusätzlichen Wechsels kann zu einem kleinen Leistungseinbruch kommen, obwohl Wechsel vom Kunden-CDN zum von AEM verwalteten CDN wahrscheinlich effizient sind.
 
-Beachten Sie, dass diese CDN-Konfiguration des Kunden für die Veröffentlichungsstufe unterstützt wird, jedoch nicht vor der Autorenebene.
+Beachten Sie, dass diese Kunden-CDN-Konfiguration für die Veröffentlichungsstufe unterstützt wird, jedoch nicht vor der Autorenstufe.
 
 ## Geolocation-Kopfzeilen {#geo-headers}
 
-Das AEM verwaltete CDN fügt jeder Anforderung Kopfzeilen hinzu mit:
+Das AEM verwaltete CDN fügt jeder Anfrage Kopfzeilen mit folgenden Eigenschaften hinzu:
 
 * Länder-Code: `x-aem-client-country`
 * Kontinental-Code: `x-aem-client-continent`
@@ -89,4 +88,4 @@ Die Werte für die Kontinental-Codes lauten:
 * OC Ozeanien
 * SA Südamerika
 
-Diese Informationen können für Anwendungsfälle nützlich sein, wie z. B. die Weiterleitung zu einer anderen URL basierend auf dem Ursprung (Land) der Anfrage. Verwenden Sie den Header &quot;Vary&quot;zum Zwischenspeichern von Antworten, die von geografischen Informationen abhängig sind. Umleitungen zu einer bestimmten Landingpage sollten beispielsweise immer `Vary: x-aem-client-country` enthalten. Bei Bedarf können Sie `Cache-Control: private` verwenden, um das Caching zu verhindern. Weitere Informationen finden Sie unter [Caching](/help/implementing/dispatcher/caching.md#html-text).
+Diese Informationen können für Anwendungsfälle nützlich sein, wie z. B. die Weiterleitung zu einer anderen URL basierend auf dem Ursprung (Land) der Anfrage. Verwenden Sie den Header Vary zum Zwischenspeichern von Antworten, die von geografischen Informationen abhängig sind. Umleitungen zu einer bestimmten Landingpage eines Landes sollten beispielsweise immer `Vary: x-aem-client-country` enthalten. Bei Bedarf können Sie `Cache-Control: private` verwenden, um das Caching zu verhindern. Weitere Informationen finden Sie unter [Caching](/help/implementing/dispatcher/caching.md#html-text).
