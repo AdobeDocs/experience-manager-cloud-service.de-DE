@@ -5,7 +5,6 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Bereitstellen
 role: Architect, Developer
-translation-type: tm+mt
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
 source-wordcount: '677'
@@ -18,17 +17,17 @@ ht-degree: 92%
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
 + Erste Schritte mit AEM als Cloud Service {#what-is-required}
-   + [Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [Adobe ID herunterladen](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager-Rollen](what-is-required/user-roles-permissions.md)
-   + [Systemadministrator-Aufgaben](what-is-required/add-users-assign-cm-roles.md)
+   + [Systemadministratoraufgaben](what-is-required/add-users-assign-cm-roles.md)
    + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
-   + [Gewähren von Benutzerzugriff auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Gewähren des Benutzerzugriffs auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager-Programme {#getting-access}
    + [Grundlegendes zu Programmen und Programmtypen](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + Produktions-Programm {#production-programs}
+   + Produktionsprogramme {#production-programs}
       + [Einführung](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Erstellen eines Production-Programms](getting-access-to-aem-in-cloud/creating-production-program.md)
-      + [Bearbeiten eines Production-Programms](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + [Erstellen eines Produktionsprogramms](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Bearbeiten eines Produktionsprogramms](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
    + Sandbox-Programme {#sandbox-programs}
       + [Einführung](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Erstellen eines Sandbox-Programms](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
@@ -105,7 +104,7 @@ ht-degree: 92%
    + [Migration zu Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
    + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
-   + [Bewertung der KPIs](best-practices/assessing-kpis.md)
+   + [Bewerten von KPIs](best-practices/assessing-kpis.md)
    + [KPIs ausrichten](best-practices/aligning-kpis.md)
-   + [Wählen Sie das rechte Team](best-practices/choose-right-team.md)
+   + [Auswahl des richtigen Teams](best-practices/choose-right-team.md)
 + [Überblick über die Tools-Konsolen](tools-consoles.md)
