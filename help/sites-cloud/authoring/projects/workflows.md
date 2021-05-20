@@ -1,14 +1,13 @@
 ---
 title: Arbeiten mit Projekt-Workflows
 description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Projekt-Workflows {#working-with-project-workflows}
 
@@ -43,8 +42,8 @@ Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachko
 
 Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
-* [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md) 
-* [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md) 
+* [Teilnehmen an Workflows ](/help/sites-cloud/authoring/workflows/participating.md)
+* [Anwenden von Workflows auf Seiten ](/help/sites-cloud/authoring/workflows/applying.md)
 * [Konfigurieren von Workflows](/help/sites-cloud/administering/workflows-administering.md)
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
