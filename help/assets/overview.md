@@ -2,16 +2,15 @@
 title: Einführung in Assets as a [!DNL Cloud Service]
 description: Neue Funktionen in Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management
+feature: Asset-Verwaltung
 role: Business Practitioner,Leader,Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 98%
+source-wordcount: '467'
+ht-degree: 99%
 
 ---
-
 
 # Neu: Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
