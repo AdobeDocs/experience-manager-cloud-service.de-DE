@@ -2,7 +2,6 @@
 title: Hinzufügen eines TXT-Datensatzes
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-translation-type: tm+mt
 source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
