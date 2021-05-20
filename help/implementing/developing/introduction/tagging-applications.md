@@ -1,14 +1,13 @@
 ---
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: a106dce1-5d51-406a-a563-4dea83987343
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 97%
 
 ---
-
 
 # Einbinden von Tagging in AEM-Programme {#building-tagging-into-aem-applications}
 
@@ -18,7 +17,7 @@ Zum Zwecke von programmatischem Arbeiten mit Tags oder zum Erweitern von Tags in
 
 die mit dem
 
-* [Tagging-Framework](tagging-framework.md) interagiert, beschrieben.
+* [Tagging-Framework interagiert, beschrieben.](tagging-framework.md)
 
 Weitere Informationen zum Tagging finden Sie unter:
 
