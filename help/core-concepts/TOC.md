@@ -5,7 +5,6 @@ breadcrumb-title: Hauptkonzeptanleitung
 user-guide-description: Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service.
 feature: Versionshinweise
 role: Architect
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '65'
