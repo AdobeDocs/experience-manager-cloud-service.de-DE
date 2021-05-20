@@ -1,14 +1,13 @@
 ---
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 96%
 
 ---
-
 
 # Konfigurieren der CI/CD-Pipeline {#configure-ci-cd-pipeline}
 
@@ -74,8 +73,8 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    Das ist für Kunden nützlich, die die Prozesse stärker automatisieren möchten. Die verfügbaren Optionen sind:
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Sofort**  abbrechen: Wenn diese Option aktiviert ist, wird die Pipeline bei Auftreten eines wichtigen Fehlers abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort**  genehmigen: Bei Auswahl dieser Option wird die Pipeline automatisch fortgesetzt, sobald ein Fehler &quot;Wichtig&quot;auftritt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
+   * **Sofort**  abbrechen - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort genehmigen**  - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
 
 1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Experience Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die im Experience Audit stets enthalten sein sollten.
