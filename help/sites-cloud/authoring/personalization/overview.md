@@ -1,14 +1,13 @@
 ---
 title: Personalisierung und Content-Targeting
 description: Erfahren Sie, wie AEM personalisierte Inhalte erstellen kann
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Personalisierung und Content-Targeting {#personalization}
 
@@ -20,7 +19,7 @@ AEM stellt eine Reihe von Werkzeugen zur Bearbeitung von Inhalten für eine best
 
 [Verfassen Sie zielgerichtete Inhalte](/help/sites-cloud/authoring/personalization/targeted-content.md) im Targeting-Modus von AEM. Der Targeting-Modus und die Targeting-Komponente sind wichtige Werkzeuge für die Erstellung von Erlebnisinhalten für Ihre Marketingaktivitäten.
 
-## Aktivitäten   {#activities}
+## Aktivitäten  {#activities}
 
 Mit Aktivitäten lassen sich Ihre Marketingprojekte definieren und organisieren. Teil der Aktivitäten sind die gewünschten Zielgruppen sowie der Zeitraum, in dem das Targeting durchgeführt wird.
 
@@ -40,7 +39,7 @@ Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zi
 
 Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt. Sie können hierzu die [Aktivitätskonsole](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) oder den [Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) verwenden und Aktivitäten Erlebnisse hinzufügen.
 
-## Angebote    {#offers}
+## Angebote   {#offers}
 
 Angebote sind Inhalte, die an einem Ort auf einer Seite angezeigt werden, die für ein Erlebnis festgelegt wurde. Verwenden Sie für verschiedene Erlebnisse verschiedene Angebote, um Inhalte optimal auf Ihre Zielgruppen zuzuschneiden.
 
