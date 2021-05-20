@@ -1,20 +1,19 @@
 ---
 title: Zugehörige Inhalte
-description: Verstehen Sie, wie AEM Inhaltsfunktion die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dadurch wird der Versand ohne Kopfdaten flexibler gestaltet.
-feature: Content Fragments
+description: Erfahren Sie, wie AEM Funktion für verknüpfte Inhalte die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet zusätzliche Flexibilität bei der Bereitstellung Headless Content.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 60%
 
 ---
 
-
 # Zugehörige Inhalte {#associated-content}
 
-AEM Funktion &quot;Verknüpfter Inhalt&quot;stellt die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können, wenn es einer Inhaltsseite hinzugefügt wird. Dies bietet Flexibilität für Ihren Versand ohne Kopfdaten, indem [eine Reihe von Assets bereitgestellt wird, auf die Sie zugreifen können, wenn Sie das Inhaltsfragment auf einer Seite verwenden,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), und gleichzeitig die für die Suche nach dem entsprechenden Asset erforderliche Zeit verkürzt wird.
+AEM Funktion Zugehörige Inhalte stellt die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen mehr Flexibilität bei der Bereitstellung Headless Content, indem [Sie eine Reihe von Assets bereitstellen, auf die bei Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden kann,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) und gleichzeitig dazu beitragen, die für die Suche nach dem entsprechenden Asset erforderliche Zeit zu reduzieren.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 
