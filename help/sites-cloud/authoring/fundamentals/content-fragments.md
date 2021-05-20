@@ -1,14 +1,13 @@
 ---
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
-translation-type: tm+mt
-source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
+exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 100%
 
 ---
-
 
 # Inhaltsfragmente {#content-fragments}
 
@@ -24,8 +23,10 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
->Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>
+Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
 >[!CAUTION]
 >
@@ -70,8 +71,8 @@ Inhaltsfragmente ermöglichen:
    >
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
-   >* [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Responsives Layout  ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   * [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
@@ -79,8 +80,7 @@ Inhaltsfragmente ermöglichen:
 Öffnen Sie das Dialogfeld **Konfiguration** des Fragments, um das Fragment für die Verwendung auf der aktuellen Seite zu konfigurieren. Das Dialogfeld kann von der verwendeten Komponente abhängig sein.
 
 >[!NOTE]
->
->Siehe auch [Kernkomponenten, die Inhaltsfragment-Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
+Siehe auch [Kernkomponenten, die Inhaltsfragment-Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter auswählen, einschließlich:
 
@@ -93,8 +93,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    * Je nach verwendetem Modell ist eine Auswahl verfügbar.
 
    >[!NOTE]
-   >
-   >Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
+   Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
 
 * **Variante**
    * Der Standard-**Master** ist immer verfügbar.
@@ -109,8 +108,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
->
->Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
+Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
 ### Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
 
@@ -125,27 +123,21 @@ Bei Zwischeninhalten können Sie:
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]
->
->Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
+Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
 
 ![Komponente einfügen](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
->
->Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
->
->Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
->
->Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
->
->Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
->
->* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.
->
->  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
->* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
+Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
+* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.
+
+Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
+* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
 
 ### Verwenden von zugehörigen Inhalten          {#using-associated-content}
@@ -153,12 +145,10 @@ Bei Zwischeninhalten können Sie:
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
->
->Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
 
 >[!NOTE]
->
->Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **Zugehörige Inhalte** die Assets angezeigt, die für alle Fragmente geeignet sind.
+Wenn auf einer Seite mehrere Inhaltsfragmente vorhanden sind, werden in der Registerkarte **Zugehörige Inhalte** die Assets angezeigt, die für alle Fragmente geeignet sind.
 
 Nachdem Sie ein Fragment mit zugehörigen Inhalten zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
 
