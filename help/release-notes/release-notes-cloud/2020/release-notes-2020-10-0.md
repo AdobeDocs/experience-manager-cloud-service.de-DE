@@ -1,14 +1,13 @@
 ---
 title: Versionshinweise für die Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
@@ -29,7 +28,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[ContextHub-Ordner](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Möglichkeit zum Erstellen von Zielgruppenordnern zur einfachen Organisation, Suche und Auswahl von Zielgruppensegmenten, die für Funktionen zum Targeting von ContextHub-Angeboten verwendet werden.
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
 * **[!DNL Adobe Sensei]-basierte Funktion für das Tagging von Videos**: Durch die Nutzung von KI-Modellen zur Analyse von Videoinhalten für objekt- und aktionsspezifische Tags verbringen DAM-Anwender weniger Zeit mit dem Hinzufügen von Tags und haben mehr Zeit, die umfangreichen Informationen zu verwerten, um dem Kunden das passende Erlebnis zu bieten. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-video-assets.md).
 
