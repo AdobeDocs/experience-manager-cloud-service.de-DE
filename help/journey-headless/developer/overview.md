@@ -1,9 +1,9 @@
 ---
 title: AEM Headless-Entwickler-Journey
 description: Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ Obwohl Sie direkt zu einem bestimmten Teil der Journey wechseln können, basiere
 | 4 | [So modellieren Sie Ihren Inhalt](model-your-content.md) | Erfahren Sie, wie Sie Ihre Inhaltsstruktur modellieren. Machen Sie sich dann mit dieser Struktur für Adobe Experience Manager (AEM) vertraut, die Inhaltsfragmentmodelle und Inhaltsfragmente verwendet, um sie kanalübergreifend wiederzuverwenden. |
 | 5 | [Zugriff auf Ihren Inhalt über AEM Versand-APIs](access-your-content.md) | Erfahren Sie, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen können. |
 | 6 | [Aktualisieren Ihres Inhalts über AEM Assets-APIs](update-your-content.md) | Erfahren Sie, wie Sie mit der REST-API auf Ihre Inhaltsfragmente zugreifen und diese aktualisieren können. |
-| 7 | [So verbinden Sie alles - Ihre App und Ihren Inhalt in AEM Headless](put-it-all-together.md) | Erfahren Sie, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmente, Ihre GraphQL-Aufrufe, Ihre REST-API-Aufrufe und Ihre Anwendung, für die Live-Schaltung vorbereiten. |
+| 7 | [So verbinden Sie alles - Ihre App und Ihren Inhalt in AEM Headless](put-it-all-together.md) | Erfahren Sie, wie Sie Ihr AEM-Projekt für die Live-Schaltung mit dem AEM Headless-SDK vorbereiten. |
 | 8 | [Wie Sie mit Ihrer Headless-Anwendung live gehen](go-live.md) | Erfahren Sie, wie Sie die Anwendung live bereitstellen, Ihren lokalen Code in Git übernehmen und für die CI/CD-Pipeline in Cloud Manager Git verschieben. |
 | 9 | [Optional - So erstellen Sie Einzelseitenanwendungen (SPA) mit AEM](create-spa.md) | Sobald Sie AEM Headless-Funktionen kennen, sollten Sie sich ansehen, wie Sie eine Headful- und Headless-Bereitstellung kombinieren und erfahren, wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen könnenSPA. |
 
