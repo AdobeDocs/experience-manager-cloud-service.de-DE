@@ -1,11 +1,10 @@
 ---
 title: Phase nach der Migration
 description: Phase nach der Migration
-translation-type: tm+mt
 source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 100%
 
 ---
 
