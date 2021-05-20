@@ -1,7 +1,6 @@
 ---
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0
-translation-type: tm+mt
 source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
 workflow-type: tm+mt
 source-wordcount: '1318'
@@ -12,25 +11,25 @@ ht-degree: 14%
 
 # Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (aktuelle) Version von [!DNL Experience Manager] als Cloud Service erläutert.
+Im folgenden Abschnitt finden Sie allgemeine Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] als Cloud Service.
 
 >[!NOTE]
->Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2020, 2021 usw.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die 2020, 2021 usw.
 
 >[!NOTE]
 >
->Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Letzte Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
+>Weitere Informationen zu Dokumentationsaktualisierungen, die nicht direkt mit einer Version in Zusammenhang stehen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für [!DNL Adobe Experience Manager] als Cloud Service 2021.3.0 ist der 25. März 2021.
+Die Version 2021.3.0 von [!DNL Adobe Experience Manager] wurde am 25. März 2021 veröffentlicht.
 Die folgende Version (2021.4.0) wird am 29. April 2021 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * [Eine PWA-Version einer Website](/help/sites-cloud/authoring/features/enable-pwa.md) kann jetzt über eine einfache Konfiguration auf Projektebene aktiviert werden.
-* Erweiterungen des Inhaltsfragmentmodells - jetzt können mehrzeilige Textdatentypen als Listen mit mehreren Feldern definiert werden.
-* UX-Erweiterungen im Content Fragment Editor - verschachtelte untergeordnete Fragmente werden jetzt in Breadcrumb angezeigt und die Ansicht der Aktionen zum Veröffentlichen, Speichern und Speichern und Beenden wurde verbessert.
+* Inhaltsfragmentmodellerweiterungen - jetzt ist es möglich, mehrzeilige Textdatentypen als Listen mit mehreren Feldern zu definieren.
+* Verbesserungen des Inhaltsfragmente-Editors - verschachtelte untergeordnete Fragmente werden jetzt im Breadcrumb angezeigt und die Ansicht von Veröffentlichungs-, Speichern- und Speichern- und Ausstiegsaktionen wurde verbessert.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -46,26 +45,26 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] erweitert die Funktion &quot;Connected Assets&quot;, um die Verwendung von  [!DNL Dynamic Media] Bildern in den unterstützten Kernkomponenten zu unterstützen. Siehe [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md) verwenden.
-* Experience Manager-Administratoren können die Erfassung von Massenelementen zu einem bestimmten Zeitpunkt planen. Administratoren können außerdem wiederholte Erfassungsvorgänge auf der Grundlage von Datum und Uhrzeit planen. Siehe [Erfassung von Massenelementen](/help/assets/add-assets.md#asset-bulk-ingestor).
+* [!DNL Experience Manager] erweitert die Funktion &quot;Connected Assets&quot;, um die Verwendung von  [!DNL Dynamic Media] Bildern in den unterstützten Kernkomponenten zu unterstützen. Siehe [Verwenden von Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
+* Experience Manager-Administratoren können die Erfassung von Assets zu einem bestimmten Zeitpunkt planen. Administratoren können außerdem wiederkehrende Erfassungsvorgänge basierend auf Datum und Uhrzeit planen. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 ### Fehlerbehebungen in [!DNL Assets] {#bug-fixes-assets}
 
-* Die Copyright-Seite wird nicht angezeigt, wenn versucht wird, mehrere durch Rechte verwaltete Assets herunterzuladen. (CQ-4314403)
-* Wenn Sie sich entscheiden, eine INDD-Datei zu bearbeiten, ändert sich die Auflösung unerwartet. (CQ-4317376)
-* Nur die letzte Seite der InDesign-Vorlage befindet sich in der PDF-Darstellung. (CQ-4317305)
-* Die Tag-Auswahl dauert lange, bis sie geöffnet wird, wenn die Auswahl zu einem komplexen Metadaten-Schema gehört. (CQ-4316426)
-* Beim Hochladen von Assets mit demselben Dateinamen wie eine vorhandene wird das Dialogfeld zum Namenskonflikt nicht angezeigt, um den Benutzer zum Erstellen einer Version aufzufordern. (CQ-4315424)
-* Eigenschaften von Ordnern-Metadaten können im Popupmenü auf der Seite Eigenschaften eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie nicht angezeigt, wenn die Metadateneigenschaften des Ordners erneut geöffnet werden. (CQ-4314429)
+* Die Copyright-Seite wird nicht angezeigt, wenn versucht wird, mehrere Assets herunterzuladen, die mit Rechten verwaltet werden. (CQ-4314403)
+* Bei der Auswahl, eine INDD-Datei zu bearbeiten, ändert sich die Auflösung unerwartet. (CQ-4317376)
+* Nur die letzte Seite der InDesign-Vorlage befindet sich in der PDF-Ausgabe. (CQ-4317305)
+* Die Tag-Auswahl dauert lange, bis sie geöffnet wird, wenn die Auswahl Teil eines komplexen Metadatenschemas ist. (CQ-4316426)
+* Beim Hochladen eines Assets mit demselben Dateinamen wie ein vorhandener wird das Dialogfeld für den Namenskonflikt nicht angezeigt, um den Benutzer aufzufordern, eine Version zu erstellen. (CQ-4315424)
+* Die Eigenschaften von Ordnermetadaten können über das Popup-Menü auf der Eigenschaftsseite eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie nicht angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
 * Assets mit Dateinamen, die Leerzeichen oder Sonderzeichen enthalten, werden über den Browser hochgeladen. (CQ-4318381)
 
-## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
-AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Einstiegs- und Registrierungserfahrungen zu machen. Diese Erlebnisse haben Unternehmen dabei unterstützt, Interessenten in Verkäufe umzuwandeln, erfasste Kundendaten zu verarbeiten, reaktionsfähige Erlebnisse basierend auf dem Profil der Audience bereitzustellen und vieles mehr. AEM Forms ist jetzt als Cloud-Dienst verfügbar.
+AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserfahrungen zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Verkäufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt als Cloud-Service verfügbar.
 
-Sie können [AEM Forms als Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren und E-Signaturen zu Formularen hinzuzufügen, Dokument aus Datensatz (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre vorhandenen PDF forms in digitale Formulare konvertieren. Zusätzlich zu den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, kostenlose Ausfallzeiten für Upgrades und Cloud-native Umgebung für die Entwicklung. Lesen Sie [diesen Blog-Beitrag](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html), um mehr über die Funktionen und Funktionen von AEM Forms als Cloud Service zu erfahren.
+Sie können [AEM Forms as a Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen, Datensatzdokument (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre bestehenden PDF forms in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen. Lesen Sie [diesen Blogpost](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) , um mehr über die Funktionen und Funktionen von AEM Forms as a Cloud Service zu erfahren.
 
-Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Service zu registrieren.
+Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Dienst anzumelden.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -82,52 +81,52 @@ Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder s
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM als Cloud Service 2021.3.0 beschrieben.
+In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0 beschrieben.
 
 ## Veröffentlichungsdatum {#release-date-cm-march}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.3.0 ist der 11. März 2021.
-Die nächste Version ist für den 08. April 2021 geplant.
+Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. März 2021 veröffentlicht.
+Die nächste Version ist für den 8. April 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-march}
 
-* Kunden mit Umgebung mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerspezifische Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre vorherigen Konfigurationen und können sich über die Benutzeroberfläche selbst versorgen.
+* Kunden mit Umgebungen mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) sehen eine Meldung über ihre bisherigen Konfigurationen und können über die Benutzeroberfläche selbst versorgen.
 
-* Benutzer mit erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
+* Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig erledigen können:
 
-   * hinzufügen Sites-Lösung auf ein vorhandenes Programm mit Assets oder umgekehrt.
+   * Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets hinzu oder umgekehrt.
    * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
-   * hinzufügen zweite, nicht verwendete Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
+   * Fügen Sie eine zweite, nicht verwendete Lösungsberechtigung hinzu, entweder zu einem vorhandenen Programm oder als neues Programm.
 
-* **AEM Push-** Aktualisierungsbildschirm wird jetzt sowohl für  *Pipeline-* Ausführung als auch für  ** Aktivitäten angezeigt.
+* **AEM** Aktualisierungsfeld Push wird jetzt sowohl für die  *Pipeline-* Ausführung als auch für die  ** Aktivitätsbildschirme angezeigt.
 
-* Wenn eine Umgebung ausgeblendet wird, aber auch ein AEM Update verfügbar ist, hat der Status **Hibernated** Vorrang vor **Update available**.
+* Wenn eine Umgebung in den Ruhezustand versetzt wird, aber auch eine AEM Aktualisierung verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
 
-* Die Benutzer können nun ihre Cloud Manager-Rolle(en) anzeigen, indem sie die Option &quot;Ansicht Cloud Manager-Rolle(en)&quot;wählen, nachdem sie zum Symbol &quot;User Profil&quot;(oben rechts) von Unified Shell navigiert sind.
+* Benutzer können nun ihre Cloud Manager-Rollen sehen, indem sie die Option &quot;Cloud Manager-Rolle(n) anzeigen&quot;auswählen, nachdem sie zum Benutzerprofilsymbol (oben rechts) von Unified Shell navigiert sind.
 
-* Die Beschriftung **Antrag auf Genehmigung** wurde zur besseren Klarheit in **Produktionsgenehmigung** umbenannt.
+* Der Titel **Antrag auf Genehmigung** wurde zur besseren Übersichtlichkeit in **Produktionsgenehmigung** umbenannt.
 
-* Die Beschriftung **Version** wurde im Bildschirm &quot;Produktions-Pipeline-Ausführung&quot;in **Git-Tag** umbenannt.
+* Der Titel **Version** wurde im Bildschirm zur Ausführung der Produktions-Pipeline in **Git-Tag** umbenannt.
 
-* Die Beschriftungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr wahres Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
+* Die Bezeichnungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr tatsächliches Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
 
-* Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
+* Die Listen zur veralteten Klasse und Methode wurden basierend auf der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
 
-* Die Cloud Manager-Produktionspipeline umfasst jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+* Die Cloud Manager-Produktions-Pipeline enthält jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Fehlerbehebungen {#bug-fixes-cm-march}
 
-* Die Paketversion wurde in einigen Fällen während AEM Push-Aktualisierung übersprungen.
+* Die Paketversionierung wurde in einigen Fällen während AEM Push-Upgrades übersprungen.
 
 * Einige Qualitätsprobleme wurden nicht richtig erkannt, wenn Pakete in andere Pakete eingebettet wurden.
 
-* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds &quot;Hinzufügen Programm&quot;generierte Standardname für das Programm ein Duplikat eines vorhandenen Programms sein.
+* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds Programm hinzufügen generierte Standard-Programmname ein Duplikat eines vorhandenen Programmnamens sein.
 
-* Wenn der Benutzer unmittelbar nach dem Start einer Pipeline von der Seite für die Ausführung der Pipeline wegnavigiert, wird gelegentlich eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich Beginn ist.
+* Wenn der Benutzer die Pipeline-Ausführungsseite gelegentlich unmittelbar nach dem Start einer Pipeline verlässt, wird eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich gestartet wird.
 
-* Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kundenbuilds zu ungültigen Paketen führten.
+* Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kunden-Builds zu ungültigen Paketen führten.
 
-* Gelegentlich wird dem Benutzer auch dann ein grüner &quot;aktiver&quot;Status neben einer IP-Zulassungsliste angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
+* Gelegentlich kann der Benutzer einen grünen &quot;aktiven&quot;Status neben einer IP-Zulassungsliste sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
 * Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
@@ -135,20 +134,20 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungswerkzeug v1.3.4 ist der 19. März 2021.
+Die Version 1.3.4 des Content Transfer Tool wurde am 19. März 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
-* CTT übersprungen Inhalte aus Ordnern mit demselben Namen, jedoch mit einem Bindestrich im Namen. Dieses Problem wurde behoben.
+* CTT übersprungen Inhalte aus Ordnern mit demselben Namen, aber mit einem Bindestrich im Namen. Dieses Problem wurde behoben.
 
 ### Veröffentlichungsdatum {#release-date-ctt-march}
 
-Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.3.0 ist der 04. März 2021.
+Die Version 1.3.0 des Content Transfer Tool wurde am 4. März 2021 veröffentlicht.
 
-### Neue Funktionen in Content Transfer Tool {#what-is-new-ctt-march}
+### Neue Funktionen im Content Transfer Tool {#what-is-new-ctt-march}
 
-* CTT installiert nun auf `/apps` anstelle von `/libs` Browser-Lesezeichen auf bestimmten Seiten möglicherweise nicht mehr gültig.
-* Wenn CTT installiert ist, muss der Benutzer eine zusätzliche Ebene aufrufen, um zur Seite &quot;Content Transfer&quot;zu gelangen. Weitere Informationen finden Sie unter [Inhaltsübermittlungstool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) verwenden.
+* Die CTT installiert jetzt auf `/apps` anstelle von `/libs` Browser-Lesezeichen für bestimmte Seiten, möglicherweise sind sie nicht mehr gültig.
+* Wenn CTT installiert ist, muss der Benutzer eine zusätzliche Ebene navigieren, um zur Seite Inhaltstransfer zu gelangen. Weitere Informationen finden Sie unter [Verwenden des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) .
 
 ### Fehlerbehebungen {#bug-fixes-ctt-march}
 
@@ -158,23 +157,23 @@ Das Veröffentlichungsdatum für das Inhaltsübermittlungstool v1.3.0 ist der 04
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Das Veröffentlichungsdatum für Best Practices Analyzer v2.1.8 ist der 22. März 2021.
+Die Version 2.1.8 von Best Practices Analyzer wurde am 22. März 2021 veröffentlicht.
 
 ### Neue Funktionen in Best Practices Analyzer {#what-is-new-bpa}
 
-* Möglichkeit, ACS-Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche sowie aus dem als CSV-Datei exportierten Bericht herauszufiltern.
+* Möglichkeit, ACS Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche sowie aus dem als CSV-Datei exportierten Bericht herauszufiltern.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
-### Neue Funktionen in den Code Refactoring Tools {#what-is-new-crt}
+### Neue Funktionen in Code-Refaktorierungs-Tools {#what-is-new-crt}
 
 * Neue Funktionen und Verbesserungen für Repository Modernizer. Siehe [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für die neueste Version.
-   * Normalisieren Sie OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
-   * Benennen Sie OSGi-Konfigurationsordner in das angegebene Format um.
-   * Generieren Sie das Projekt ui.apps.structure.
+   * Normalisieren Sie OSGi-Konfigurationen (außer RepoInit-Konfigurationen) in das bevorzugte .cfg.json-Format.
+   * Benennen Sie die OSGi-Konfigurationsordner in das angegebene Format um.
+   * Generieren Sie das Projekt ui.apps.structure .
    * Erstellen Sie das Analysemodul.
 
 * Neue Funktionen und Verbesserungen für Dispatcher Converter. Siehe [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * Erstellen von separaten Dateien für verschiedene Einschlüsse anstelle der Auskleidung des Inhalts.
+   * Erstellung separater Dateien für verschiedene Einschlüsse anstelle des Auskleidens des Inhalts.
    * Möglichkeit, sowohl den Ordnerpfad von vhosts als auch den Pfad zu vhost-Dateien zu verarbeiten.
-   * Generieren von Bauerndateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.
+   * Generieren von Farm-Dateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.
