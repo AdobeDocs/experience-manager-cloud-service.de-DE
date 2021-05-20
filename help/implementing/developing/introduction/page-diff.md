@@ -1,14 +1,13 @@
 ---
 title: Entwicklung und Seitenvergleich
 description: Verstehen Sie, wie die Seitenvergleichsfunktion funktioniert und wie sie sich auf einen Entwickler auswirken kann.
-translation-type: tm+mt
-source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
+exl-id: 03c08616-2203-4b90-bed6-4836266e2507
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
-
 
 # Entwicklung und Seitenvergleich {#developing-and-page-diff}
 
