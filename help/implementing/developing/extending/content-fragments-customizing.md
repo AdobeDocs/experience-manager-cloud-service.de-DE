@@ -2,7 +2,6 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-translation-type: tm+mt
 source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
@@ -294,7 +293,7 @@ Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment i
 Technisch gesehen werden alle Änderungen an *Live*-Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung an *Live*-Inhalten ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medien-Assets).
 
 Es gibt einige Sicherheitsmaßnahmen für Randfälle, beispielsweise, wenn der Benutzer versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
-Beachten Sie, dass zwei Benutzer dasselbe Inhaltsfragment gleichzeitig bearbeiten können und daher die Änderungen der anderen Benutzer überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Checkout* der DAM-Administration auf das Fragment angewendet wird.
+Beachten Sie, dass zwei Benutzer möglicherweise dasselbe Inhaltsfragment gleichzeitig bearbeiten und daher die Änderungen der anderen Benutzer überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Checkout* der DAM-Verwaltung auf das Fragment angewendet wird.
 
 ## Beispiele {#examples}
 
