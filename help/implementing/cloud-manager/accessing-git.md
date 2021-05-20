@@ -3,14 +3,13 @@ title: Zugriff auf Git
 seo-title: Zugriff auf Git
 description: Auf dieser Seite wird beschrieben, wie Sie auf das Git-Repository zugreifen und es verwalten können.
 seo-description: Auf dieser Seite erfahren Sie, wie Sie auf Ihr Git-Repository zugreifen und es verwalten.
-translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
-
 
 # Zugriff auf Git {#accessing-git}
 
@@ -45,4 +44,3 @@ Wichtige Aspekte bei der Verwaltung Ihres Git-Repositorys in Cloud Manager:
 >[!NOTE]
 >
 >Ein Benutzer kann eine Kopie seines Codes auschecken und Änderungen am lokalen Code-Repository vornehmen. Sobald die Änderungen vorgenommen wurden, kann der Benutzer die Code-Änderungen wieder in das Remote-Code-Repository in Cloud Manager übertragen.
-
