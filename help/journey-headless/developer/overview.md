@@ -1,10 +1,10 @@
 ---
 title: AEM Headless-Entwickler-Journey
 description: Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
+source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und fle
 
 Die Implementierung ohne Headless wird immer wichtiger für die Bereitstellung von Erlebnissen für Ihre Zielgruppe, unabhängig vom Kanal und wo immer sie sich befinden.
 
-Die Headless-Implementierung verlässt die Seiten- und Komponentenverwaltung wie üblich in Vollstapellösungen und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
+Die Headless-Implementierung verlässt die Seiten- und Komponentenverwaltung wie üblich in Vollstapellösungen und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster für die Implementierung digitaler Erlebnisse.
 
 Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss:
 
