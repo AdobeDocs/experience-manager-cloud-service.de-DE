@@ -30,17 +30,17 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 
 >[!NOTE]
 >
->Das Bearbeiten von vordefinierten, sofort einsetzbaren Viewer-Vorgaben *wird nicht unterstützt.* Wenn Sie versuchen, eine standardmäßig vorhandene Viewer-Vorgabe zu bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern.
+>Die Bearbeitung von *vordefinierten, nativen Viewer-Vorgaben* wird nicht unterstützt. Wenn Sie versuchen, eine standardmäßig vorhandene Viewer-Vorgabe zu bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern.
 
 ## Möglichkeit des Zugriffs auf die Tastatur im Viewer  {#keyboard-accessibility-for-viewers}
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
-Siehe auch [Barrierefreiheit und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de).
+Siehe auch [Barrierefreiheit und Navigation über die Tastatur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de).
 
 ## Verwalten von Viewer-Vorgaben {#managing-viewer-presets-1}
 
-Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten, löschen, veröffentlichen, veröffentlichen und die Veröffentlichung rückgängig machen, indem Sie auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]** tippen.
+Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten, löschen, veröffentlichen, Veröffentlichung rückgängig machen und eine Vorschau davon anzeigen, indem Sie auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]** tippen.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -50,13 +50,13 @@ Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten,
 
 ### Viewer-Unterstützung für Web-Seiten mit responsivem Design   {#viewer-support-for-responsive-designed-web-pages}
 
-Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen ist es erforderlich, den HTML5-Viewer direkt auf der Hostingseite einzubetten. Im letzteren Fall hat die Webseite ein statisches Layout. Sie reagiert auch auf &quot;responsiv&quot;und wird auf verschiedenen Geräten oder für unterschiedliche Browserfenster-Größen unterschiedlich angezeigt. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
+Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen ist es erforderlich, den HTML5-Viewer direkt auf der Hosting-Seite einzubetten. Im letzteren Fall weist die Webseite ein statisches Layout auf. Oder sie ist &quot;responsiv&quot;und wird auf verschiedenen Geräten oder für verschiedene Browser-Fenstergrößen unterschiedlich angezeigt. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
 Weitere Informationen zum Einbetten responsiver Viewer auf Web-Seiten finden Sie unter [Bibliothek responsiver und statischer Bilder](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=de#about-responsive-image-library) in der *Hilfe zur Dynamic Media Image Serving and Rendering-API*.
 
 >[!NOTE]
 >
->Veröffentlichen Sie alle standardmäßigen Viewer, bevor Sie sie für die ersten verwenden.
+>Veröffentlichen Sie alle standardmäßig vorhandenen Viewer, bevor Sie sie für die ersten Viewer verwenden.
 >Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
@@ -66,7 +66,7 @@ Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitge
 * Desktops
 * Apple iPhones
 * Apple iPads
-* Android™ Smartphone
+* Android™-Smartphone
 * Android™ Tablet
 * Für Videos wird eine zusätzliche Unterstützung für die MP4-Wiedergabe für [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx) bereitgestellt.
 
@@ -78,7 +78,7 @@ Administratoren können beim Erstellen von Viewer-Vorgaben die folgenden Rich-Me
  <tbody>
   <tr>
    <td><strong>Karussellset</strong><br /> </td>
-   <td><p>Hotspots, Imagemaps oder beide werden zu einer Serie von mindestens zwei Bildern hinzugefügt. Ein Kunde kann die Bilder nach links oder rechts verschieben und dann auf einen Hotspot auf einem Bild klicken, um weitere Informationen zu erhalten oder direkt von der Landingpage, Kategorie oder Startseite einer Website zu erwerben.</p> </td>
+   <td><p>Hotspots, Imagemaps oder beide werden zu einer Serie von mindestens zwei Bildern hinzugefügt. Ein Kunde kann die Bilder nach links oder rechts schwenken und dann auf einen Hotspot auf einem Bild klicken, um weitere Details zu erhalten oder direkt über die Landingpage, Kategorie oder Startseiten einer Website zu kaufen.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensional</strong><br /> </td>
@@ -98,11 +98,11 @@ Administratoren können beim Erstellen von Viewer-Vorgaben die folgenden Rich-Me
   </tr>
   <tr>
    <td><strong>Interaktives Bild</strong></td>
-   <td>Hotspots werden zu Bildteilen hinzugefügt, auf die ein Kunde klicken kann, um weitere Informationen zu erhalten oder direkt von der Landingpage, Kategorie oder Startseite einer Website zu erwerben.</td>
+   <td>Hotspots werden zu Teilen eines Bildes hinzugefügt, auf die ein Kunde dann klicken kann, um weitere Details zu erhalten oder direkt über die Landingpage, Kategorie oder Startseiten einer Website zu kaufen.</td>
   </tr>
   <tr>
    <td><strong>Interaktives Video</strong></td>
-   <td>Miniaturansichten werden zu Zeitschienensegmenten in einem Video hinzugefügt, auf das ein Kunde klicken kann, um weitere Informationen zu erhalten oder direkt von der Landingpage, Kategorie oder Startseite einer Website zu erwerben.</td>
+   <td>Miniaturansichten werden Zeitleistensegmenten in einem Video hinzugefügt, auf das ein Kunde anschließend klicken kann, um weitere Details zu erhalten oder direkt über die Landingpage, Kategorie oder Startseiten einer Website zu erwerben.</td>
   </tr>
   <tr>
    <td><strong>Gemischte Medien</strong></td>
@@ -126,7 +126,7 @@ Administratoren können beim Erstellen von Viewer-Vorgaben die folgenden Rich-Me
   </tr>
   <tr>
    <td><strong>360-Grad-Video</strong></td>
-   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Während der Wiedergabe auf einem Flachbildschirm hat der Benutzer die Kontrolle über den Anzeigewinkel. Die Wiedergabe auf Mobilgeräten erfolgt mit den integrierten gyroskopischen Steuerelementen.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.</p> </td>
+   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Während der Wiedergabe auf einer flachen Anzeige hat der Benutzer die Kontrolle über den Anzeigewinkel. Die Wiedergabe auf Mobilgeräten verwendet die integrierten gyroskopischen Steuerelemente.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.</p> </td>
   </tr>
   <tr>
    <td><strong>Video</strong></td>
@@ -136,7 +136,7 @@ Administratoren können beim Erstellen von Viewer-Vorgaben die folgenden Rich-Me
    <td><strong>Vertikaler Zoom</strong></td>
    <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
     <ul>
-     <li>Stellt sicher, dass die Muster "über der Kante"liegen.<br/> Bei horizontalen Farbfeldern sind die Farbfelder je nach Bildschirmgröße des Benutzers erst sichtbar, wenn der Benutzer einen Bildlauf nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
+     <li>Stellt sicher, dass die Farbfelder "über der Kante"liegen.<br/> Bei horizontalen Farbfeldern sind abhängig von der Bildschirmgröße des Benutzers keine Farbfelder sichtbar, bis der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
      <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
     </ul> </td>
   </tr>
@@ -159,7 +159,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 
 >[!NOTE]
 >
->Alle vordefinierten Viewer-Vorgaben in Dynamic Media werden aktiviert (ein), müssen jedoch veröffentlicht werden.
+>Alle nativen Viewer-Vorgaben in Dynamic Media werden aktiviert (ein), müssen jedoch veröffentlicht werden.
 >Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 >
 >Alle neuen Viewer-Vorgaben, die Sie erstellen und hinzufügen, müssen aktiviert *und* veröffentlicht werden.
@@ -214,7 +214,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>InlineMixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -224,12 +224,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>MixedMedia_dark</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>MixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -239,7 +239,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>Panoramic_Image</td>
+   <td>panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -304,7 +304,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertikal_Zoom</td>
+   <td>Vertikaler_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -312,7 +312,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 
 ### Matrix unterstützter Mobile Viewer-Gesten {#supported-mobile-viewers-gestures-matrix}
 
-Die folgende Tabelle zeigt die Gesten des mobilen Viewers, die auf iOS-, Android™ 2.x- und Android™ 3.x-Geräten unterstützt werden.
+In der folgenden Tabelle sind die Handy-Viewer-Gesten aufgeführt, die auf iOS-, Android™ 2.x- und Android™ 3.x-Geräten unterstützt werden.
 
 <table>
  <tbody>
@@ -343,14 +343,14 @@ Die folgende Tabelle zeigt die Gesten des mobilen Viewers, die auf iOS-, Android
   <tr>
    <td><p><strong>Aufziehen</strong></p> </td>
    <td><p>Trifft nicht zu</p> </td>
-   <td><p>Vergrößert (nur iOS und Android™ 3x)</p> </td>
-   <td><p>Vergrößert (nur iOS und Android™ 3x)</p> </td>
+   <td><p>Zoomt ein (nur iOS und Android™ 3x)</p> </td>
+   <td><p>Zoomt ein (nur iOS und Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Zuziehen</strong></p> </td>
    <td><p>Trifft nicht zu</p> </td>
-   <td><p>Verkleinert (nur iOS und Android™ 3x)</p> </td>
-   <td><p>Verkleinert (nur iOS und Android™ 3x)</p> </td>
+   <td><p>Zoomt aus (nur iOS und Android™ 3x)</p> </td>
+   <td><p>Zoomt aus (nur iOS und Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Streichen</strong></p> </td>
@@ -369,9 +369,9 @@ Die folgende Tabelle zeigt die Gesten des mobilen Viewers, die auf iOS-, Android
 
 ## Erhöhen der Anzahl angezeigter Viewer-Vorgaben {#increasing-the-number-of-viewer-presets-that-display}
 
-Experience Manager zeigt eine Vielzahl von Viewer-Vorgaben an, wenn Assets von **[!UICONTROL Detail-Ansicht > Viewer]** angezeigt werden. Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
+Experience Manager zeigt eine Vielzahl von Viewer-Vorgaben an, wenn Assets aus **[!UICONTROL Detailansicht > Viewer]** angezeigt werden. Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
 
-**So erhöhen Sie die Anzahl der angezeigten Viewer-Vorgaben:**
+**So erhöhen Sie die Anzahl angezeigter Viewer-Vorgaben:**
 
 1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten mit der Viewer-Vorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -388,9 +388,9 @@ Experience Manager zeigt eine Vielzahl von Viewer-Vorgaben an, wenn Assets von *
 
 ## Erstellen einer Viewer-Vorgabe {#creating-a-new-viewer-preset}
 
-Durch Erstellen von Viewer-Vorgaben können Sie verschiedene Einstellungen anwenden, um Assets anzuzeigen und mit diesen zu interagieren. Sie müssen jedoch keine Viewer-Vorgaben erstellen. Bei Bedarf können Sie die standardmäßigen, standardmäßigen Viewer-Vorgaben verwenden, die bereits im Lieferumfang von Experience Manager Assets enthalten sind.
+Durch Erstellen von Viewer-Vorgaben können Sie verschiedene Einstellungen anwenden, um Assets anzuzeigen und mit diesen zu interagieren. Sie müssen jedoch keine Viewer-Vorgaben erstellen. Sie können bei Bedarf die standardmäßigen Viewer-Vorgaben verwenden, die bereits mit Experience Manager-Assets geliefert wurden.
 
-Wenn Sie sich dafür entscheiden, eine Viewer-Vorgabe zu erstellen, wird der Status des Viewers auf der Seite &quot;Viewer-Vorgaben&quot;automatisch aktiviert (auf **[!UICONTROL Ein]** eingestellt). Dieser Status bedeutet, dass die Vorgabe in der Komponente für Dynamic Media und in der Komponente für interaktive Medien sowie bei jeder Bild- oder Videovorschau sichtbar ist.
+Wenn Sie eine Viewer-Vorgabe erstellen möchten, wird nach dem Speichern der Viewer-Status auf der Seite &quot;Viewer-Vorgaben&quot;automatisch aktiviert (auf **[!UICONTROL On]** gesetzt). Dieser Status bedeutet, dass die Vorgabe in der Komponente für Dynamic Media und in der Komponente für interaktive Medien sowie bei jeder Bild- oder Videovorschau sichtbar ist.
 
 Bestimmte Viewer-Vorgaben weisen exklusive Einstellungen auf, die die Nutzung und das Gesamtverhalten des Viewers beeinflussen können. Abhängig von der von Ihnen erstellten Viewer-Vorgabe sollten Sie diese besonderen Aspekte beachten.
 
@@ -400,7 +400,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 **So erstellen Sie eine Viewer-Vorgabe:**
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -418,23 +418,23 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    * Wählen Sie aus dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren visuelles Design angepasst werden soll. Sie können auch auf ein beliebiges visuelles Element im Viewer tippen oder klicken, um es zum Konfigurieren auszuwählen.
 
-      Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine Eigenschaft fest oder passen Sie sie an, um sofort zu sehen, welche Auswirkungen sie auf den Viewer hat, indem Sie das Beispiel links neben dem Editor verwenden.
+      Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest oder passen Sie sie an, um mithilfe des Beispiels links neben dem Editor sofort zu sehen, wie sich dies auf den Viewer auswirkt.
 
-      Die CSS-Stileigenschaften für jeden Viewer-Vorgabentyp werden im Hilfethema &quot;Anpassen von *`<viewer name>`* Viewer&quot;im [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
+      Die CSS-Stileigenschaften für jeden Viewer-Vorgabetyp werden im Hilfethema Anpassen des *`<viewer name>`* Viewers im [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
-   * Wenn Sie die Stileinstellungen in einer separaten CSS-Datei definiert haben, können Sie die CSS-Datei in Experience Manager Assets hochladen. Um die hochgeladene CSS-Datei zu suchen und sie mit der Viewer-Vorgabe zu verknüpfen, tippen Sie unter dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** auf **[!UICONTROL CSS importieren]** (gegebenenfalls scrollen Sie im Visual Editor nach oben, um sie anzuzeigen).
+   * Wenn Sie Stileinstellungen in einer separaten CSS-Datei definiert haben, können Sie die CSS-Datei in Experience Manager Assets hochladen. Um die hochgeladene CSS-Datei zu suchen und sie mit der Viewer-Vorgabe zu verknüpfen, tippen Sie auf **[!UICONTROL CSS importieren]** unter dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** (führen Sie ggf. einen Bildlauf im Visual Editor durch, um sie anzuzeigen).
 
       Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
       Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor einige CSS-Werte nicht versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
-   >Wenn Sie die CSS lieber direkt im Rohformat bearbeiten möchten, tippen Sie unter dem Pulldown-Menü &quot;Ausgewählter Typ&quot;auf **[!UICONTROL CSS anzeigen/ausblenden]** (ggf. scrollen Sie im Visual Editor nach oben).
-   >Wie der visuelle Editor können Sie beim direkten Ändern einer Eigenschaft im CSS sofort sehen, welche Auswirkungen sie auf das Viewer-Beispiel hat. Außerdem wird zur gleichen Zeit genau diese Eigenschaft automatisch im Visual Editor aktualisiert. Daher können Sie entweder den CSS-Editor, den Visual Editor oder beide abwechselnd verwenden.
+   >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, tippen Sie unter dem Pulldown-Menü Ausgewählter Typ auf **[!UICONTROL CSS ein-/ausblenden]** (scrollen Sie ggf. im Visual Editor nach oben, um es anzuzeigen).
+   >Wie der Visual Editor können Sie beim direkten Ändern einer Eigenschaft im CSS sofort sehen, welche Auswirkungen dies auf das Viewer-Beispiel hat. Außerdem wird zur gleichen Zeit genau diese Eigenschaft automatisch im Visual Editor aktualisiert. Daher können Sie entweder den CSS-Editor, den Visual Editor oder beide abwechselnd verwenden.
 
    >[!NOTE]
    >
-   >Wählen Sie für Schaltflächengrafiken das 2fache Bild und laden Sie hochauflösendes Bildmaterial hoch. Beim Arbeiten mit interaktiven Bildern und Bannern können Sie auch aus verschiedenen vordefinierten Hotspot-Schaltflächen wählen.
+   >Wählen Sie für Schaltflächengrafiken das 2x-Bild aus und laden Sie hochauflösende Kunstwerke hoch. Beim Arbeiten mit interaktiven Bildern und Bannern mit Shopping-Funktion können Sie auch aus verschiedenen vordefinierten Hotspot-Schaltflächen auswählen.
 
 1. (Optional) Tippen Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Telefon]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
 1. Tippen Sie auf der Seite „Viewer-Vorgabe bearbeiten“ auf die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer tippen oder klicken, um es zum Konfigurieren auszuwählen.
@@ -470,11 +470,11 @@ Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, 
   </tr>
   <tr>
    <td>Segment</td>
-   <td><p><code>Segment </code>ist der Standardanzeigemodus für die vordefinierten Viewer-Vorgaben für interaktive Videos <code>Shoppable_Video_light</code> und <code>Shoppable_Video_dark</code> sowie alle Viewer-Vorgaben für interaktive Videos, die Sie selbst erstellen.</p> <p>Angenommen, in diesem Modus werden einem Videosegment weniger Miniaturansichten zugewiesen als die Anzahl der sichtbaren Stellen im Anzeigebereich. In solchen Fällen werden Miniaturansichten aus den nächsten oder vorherigen Untersegmenten <i>nicht </i>eingezogen, um leere Stellen im Bedienfeld zu füllen. So bleibt die Anzeige von einem bestimmten Videosegment zugewiesenen Mustern erhalten.</p> </td>
+   <td><p><code>Segment </code>ist der Standardanzeigemodus für die vordefinierten Viewer-Vorgaben für interaktive Videos <code>Shoppable_Video_light</code> und <code>Shoppable_Video_dark</code> sowie alle Viewer-Vorgaben für interaktive Videos, die Sie selbst erstellen.</p> <p>Angenommen, einem Videosegment sind weniger Miniaturansichten zugewiesen als die Anzahl der sichtbaren Spots im Anzeigefeld. In solchen Fällen werden Miniaturansichten aus den nächsten oder vorherigen Untersegmenten <i>nicht </i>herangezogen, um leere Spots im Bedienfeld auszufüllen. So bleibt die Anzeige von einem bestimmten Videosegment zugewiesenen Mustern erhalten.</p> </td>
   </tr>
   <tr>
    <td>Kontinuierlich</td>
-   <td><p>Nehmen Sie im Anzeigemodus <code>continuous </code>an, die Anzahl der Miniaturansichten in einem Segment ist geringer als die Zahl, die im Bedienfeld sichtbar ist. In solchen Fällen enthält der Viewer automatisch die Anzeige von Miniaturansichten des nächsten Segments oder des vorherigen Segments, in dem die letzte Miniaturansicht angezeigt wird.</p> <p>Das <a href="/help/assets/dynamic-media/interactive-videos.md">Video in diesem Thema</a> ist ein Beispiel für den Anzeigemodus <code>continuous </code>.</p> </td>
+   <td><p>Im Anzeigemodus <code>continuous </code>nehmen wir an, dass die Anzahl der Miniaturansichten in einem Segment kleiner ist als die Anzahl, die im Bedienfeld sichtbar ist. In solchen Fällen schließt der Viewer automatisch die Anzeige von Miniaturansichten aus dem nächsten oder vorherigen Segment ein, in dem die letzte Miniaturansicht angezeigt wird.</p> <p>Das <a href="/help/assets/dynamic-media/interactive-videos.md">Video in diesem Thema</a> ist ein Beispiel für den Anzeigemodus <code>continuous </code>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -489,26 +489,26 @@ Wenn Sie in der Viewer-Vorgabe bei der Videowiedergabe durch den Benutzer die Op
 
 Wenn Sie während der Videowiedergabe die Option **[!UICONTROL Automatischer Bildlauf]** in der Viewer-Vorgabe aktivieren (auswählen), werden die Miniaturbilder, die einem Videosegment zugewiesen sind, zu Beginn eines Segments in die Ansicht verschoben. Es gibt jedoch Fälle, in denen bestimmte Miniaturansichten innerhalb eines Segments doppelt so lange angezeigt werden wie andere Miniaturansichten vor oder nach dem Segment. Dieses Verhalten tritt auf, weil die Anzahl der Miniaturansichten in einem Segment größer ist als die Zahl, die im Bedienfeld sichtbar ist, und diese nicht gleichmäßig teilbar ist.
 
-Angenommen, Sie haben ein 30-Sekunden-Videosegment. Insgesamt gibt es neun Miniaturansichten, die im Laufe dieser 30 Sekunden angezeigt werden. Die Größe Ihres Browsers wird dergestalt geändert, dass vier verfügbare Miniaturpositionen im Anzeigefeld vorliegen. Das 30-Sekunden-Videozeitsegment ist in drei Untersegmente unterteilt. Die folgende Tabelle zeigt die Aufschlüsselung, welche Miniaturansichten für ein bestimmtes Zeituntersegment angezeigt werden:
+Angenommen, Sie verfügen über ein 30-Sekunden-Videosegment. Insgesamt gibt es neun Miniaturansichten, die im Laufe dieser 30 Sekunden angezeigt werden. Die Größe Ihres Browsers wird dergestalt geändert, dass vier verfügbare Miniaturpositionen im Anzeigefeld vorliegen. Das 30-Sekunden-Videozeitsegment ist in drei Untersegmente unterteilt. Die folgende Tabelle zeigt die Aufschlüsselung, welche Miniaturansichten für ein bestimmtes Zeituntersegment angezeigt werden:
 
-| **Videountersegment** | **Zeit des Teilsegments in Sekunden** | **Im Feld sichtbare Miniaturen** |
+| **Videountersegment** | **Zeit des Untersegments in Sekunden** | **Im Feld sichtbare Miniaturen** |
 |---|---|---|
 | 1 | 0–10 | 1, 2, 3, 4 |
 | 2 | 10-20 | 4, 5, 6, 7 |
 | 3 | 20-30 | 6, 7, 8, 9 |
 
-Video-Untersegment 3 geht nicht über die ihm zugewiesenen Miniaturansichten hinaus. Beachten Sie, dass die Miniaturansichten 4, 6 und 7 im Anzeigefeld doppelt so lang sichtbar sind wie die anderen.
+Das Videountersegment 3 wird nicht über die Miniaturansichten hinaus erweitert, die ihm zugewiesen sind. Beachten Sie, dass die Miniaturansichten 4, 6 und 7 im Anzeigefeld doppelt so lang sichtbar sind wie die anderen.
 
 Die durch den Viewer zum Bestimmen der Anzahl der im seitlichen Bedienfeld angezeigten Miniaturansichten verwendete Logik basiert wie folgt auf der Anzahl der verfügbaren Positionen:
 
-* Anzahl der Untersegmente = Aufrunden bis zum nächsten Untersegment (Anzahl der Miniaturansichten / Anzahl der sichtbaren Slots im Miniaturansicht-Bedienfeld, je nach Größe des Browserfensters).
-Mit dem Beispiel in der oben stehenden Tabelle 9 Miniaturansichten / 4 Slots = 2,25; Die Viewer-Logik rundet sie bis zu drei Untersegmente ab.
+* Anzahl der Untersegmente = Aufrundung auf das nächste Untersegment (Anzahl der Miniaturen / Anzahl der sichtbaren Slots im Miniaturansichtsfeld, basierend auf der Größe des Browserfensters).
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten / 4 Slots = 2,25; Die Viewer-Logik rundet sie auf drei Untersegmente auf.
 
-* Anzahl der Miniaturansichten = Aufrunden bis zur nächsten Miniaturansicht (Anzahl der Miniaturansichten / Anzahl der Videountersegmente).
-Mit dem Beispiel in der oben stehenden Tabelle 9 Miniaturansichten / 3 Videountersegmente = 3 Miniaturansichten.
+* Anzahl der Miniaturansichten = Aufrundung auf die nächste Miniaturansicht (Anzahl der Miniaturansichten / Anzahl der Videountersegmente).
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten / 3 Videountersegmente = 3 Miniaturansichten.
 
-* Dauer des Teilsegments = Gesamtdauer des Videos / Anzahl der Videountersegmente.
-Anhand des Beispiels in der oben stehenden Tabelle werden 30 Sekunden / 3 Videountersegmente = 10 Sekunden für jedes Videountersegment angezeigt.
+* Dauer des Untersegments = Gesamtvideodauer/Anzahl der Videountersegmente.
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden / 3 Videountersegmente = 10 Sekunden anhaltende Anzeige jedes Videountersegments.
 
 #### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
@@ -520,11 +520,11 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 
 ## Aktivieren oder Deaktivieren von Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
 
-Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie ein- oder ausgeschaltet ist. Deaktivieren Sie Viewer-Vorgaben, wenn die Liste zu schwerfällig wird oder wenn keine Viewer-Vorgabe zur Verfügung gestellt werden soll.
+Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert ist. Deaktivieren Sie Viewer-Vorgaben, wenn die Liste zu schwierig wird oder Sie nicht möchten, dass eine Viewer-Vorgabe zur Verfügung gestellt wird.
 
 **So aktivieren oder deaktivieren Sie Viewer-Vorgaben:**
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 1. Tippen Sie auf der Seite „Viewer-Vorgabe“ unter der Spaltenüberschrift **[!UICONTROL Status]** auf die Umschaltfläche zum Aktivieren bzw. Deaktivieren einer Viewer-Vorgabe.
 
    Bei aktivierten Viewer-Vorgaben wird der Umschalter rechts in einem blauen Feld angezeigt. Bei deaktivierten Viewer-Vorgaben wird der Umschalter links in einem hellgrauen Feld angezeigt.
@@ -533,7 +533,7 @@ Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon 
 
 Wird der Status einer Viewer-Vorgabe aktiviert (auf „Ein“ gestellt), bedeutet dies, dass sie in der Dynamic Media-Komponente, in der Komponente für interaktive Medien und bei jeder Anzeige eines Assets sichtbar ist.
 
-Um jedoch ein Asset mit einer Viewer-Vorgabe bereitzustellen, muss die Viewer-Vorgabe auch veröffentlicht werden. ** Alle Viewer-Vorgaben müssen aktiviert werden, um URL- oder Einbettungscode für ein Asset abzurufen. ** Aktivieren und veröffentlichen Sie alle im Lieferumfang von Dynamic Media enthaltenen vordefinierten Viewer-Vorgaben. Benutzerdefinierte Viewer-Voreinstellungen, die Sie erstellen und hinzufügen, werden automatisch aktiviert, müssen aber auch veröffentlicht werden.
+Um jedoch *ein Asset mit einer Viewer-Vorgabe bereitzustellen, muss die Viewer-Vorgabe ebenfalls veröffentlicht werden.* Alle Viewer-Vorgaben müssen aktiviert *und* veröffentlicht werden, um URL- oder Einbettungscode für ein Asset zu erhalten. Aktivieren und veröffentlichen Sie alle im Lieferumfang von Dynamic Media enthaltenen vordefinierten Viewer-Vorgaben. Benutzerdefinierte Viewer-Voreinstellungen, die Sie erstellen und hinzufügen, werden automatisch aktiviert, müssen aber auch veröffentlicht werden.
 
 Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets).
 
@@ -541,25 +541,25 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/dynamic-media/pr
 
 **So veröffentlichen Sie Viewer-Vorgaben:** 
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus.
 1. Tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichen]**.
 
 ## Sortieren von Viewer-Vorgaben   {#sorting-viewer-presets}
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 1. Klicken Sie auf **[!UICONTROL Vorgabentitel]**, **[!UICONTROL Typ]**, **[!UICONTROL Veröffentlicht]** oder **[!UICONTROL Status]**, um nach dieser Spaltenüberschrift zu sortieren. Klicken Sie beispielsweise auf **[!UICONTROL Typ]**, um die Viewer-Vorgabentypen in alphabetischer oder in umgekehrt alphabetischer Reihenfolge zu sortieren.
 
 ## Bearbeiten von Viewer-Vorgaben {#editing-viewer-presets}
 
-Das Bearbeiten von vordefinierten, sofort einsetzbaren Viewer-Vorgaben *wird nicht unterstützt.* Wenn Sie eine standardmäßig vorhandene Viewer-Vorgabe bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern.
+Die Bearbeitung von *vordefinierten, nativen Viewer-Vorgaben* wird nicht unterstützt. Wenn Sie eine standardmäßig vorhandene Viewer-Vorgabe bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern.
 
 **So bearbeiten Sie Viewer-Vorgaben:**
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Asset] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Asset] > [!UICONTROL Viewer-Vorgaben]**.
 1. Wählen Sie eine Vorgabe aus, indem Sie das Kontrollkästchen links neben dem Viewer-Vorgabentitel aktivieren.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
-1. Nehmen Sie auf der Seite **[!UICONTROL Viewer-Vorgabeneditor]** die gewünschten Änderungen an der Viewer-Vorgabe vor. Verwenden Sie dazu die Optionen auf den Registerkarten **[!UICONTROL Erscheinungsbild]** und **[!UICONTROL Verhalten]**.
+1. Nehmen Sie auf der Seite **[!UICONTROL Viewer-Vorgabe-Editor]** die gewünschten Änderungen an der Viewer-Vorgabe vor. Verwenden Sie dazu die Optionen auf den Registerkarten **[!UICONTROL Erscheinungsbild]** und **[!UICONTROL Verhalten]** .
 
    Tippen Sie auf der Registerkarte **[!UICONTROL Erscheinungsbild]** in der oberen linken Ecke der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Telefon]**, um den Präsentationsmodus des Assets zu ändern.
 
@@ -574,7 +574,7 @@ Sie können Viewer-Vorgaben löschen, die Sie erstellt und Dynamic Media hinzuge
 
 **So löschen Sie benutzerdefinierte Viewer-Vorgaben:**
 
-1. Tippen Sie in der linken oberen Ecke des Experience Managers auf das Logo des Experience Managers und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
+1. Tippen Sie oben links im Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]**.
 1. Wählen Sie auf der Seite „Viewer-Vorgaben“ einen Vorgabentitel aus und tippen Sie dann auf das Symbol **[!UICONTROL Papierkorb]**.
 1. Tippen Sie auf **[!UICONTROL Löschen]**.
 
@@ -590,7 +590,7 @@ Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, w
    >
    >Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, werden nach Auswahl einer Viewer-Vorgabe die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL Einbetten]** angezeigt.
 
-1. Um sie auf das Asset anzuwenden, wählen Sie im linken Bereich eine Viewer-Vorgabe aus.
+1. Um sie auf das Asset anzuwenden, wählen Sie eine Viewer-Vorgabe aus dem linken Bereich aus.
 
    Sie können die [URL kopieren, um sie für andere Benutzer freizugeben](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
