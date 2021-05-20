@@ -2,7 +2,6 @@
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '3302'
@@ -617,7 +616,7 @@ Es ist eine lange bestehende Best Practice, dass die /libs-Inhaltsstruktur im AE
 Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dadurch ist nicht mehr eindeutig, welche Konfiguration gelten soll. Diese Regel ist „Laufzeitmodus-fokussiert“, da sie nur Probleme erkennt, bei denen dieselbe Komponente mehrmals im gleichen Laufzeitmodus (oder mit der gleichen Kombination aus Laufzeitmodi) konfiguriert ist.
 
 >[!NOTE]
->Diese Regel führt zu Problemen, bei denen dieselbe Konfiguration auf demselben Pfad in mehreren Paketen definiert ist, einschließlich der Fälle, in denen dasselbe Paket in der gesamten Liste der erstellten Pakete dupliziert wird. Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all`, wobei `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` einbettet, erstellt, werden alle Konfigurationen innerhalb `com.myco:com.myco.ui.apps` als Duplikat gemeldet. Dies ist im Allgemeinen der Fall, wenn Sie die [Content Package Structure Guidelines](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht befolgen. in diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die `<cloudManagerTarget>none</cloudManagerTarget>`-Eigenschaft.
+>Diese Regel führt zu Problemen, bei denen dieselbe Konfiguration im selben Pfad in mehreren Paketen definiert ist, einschließlich Fällen, in denen dasselbe Paket in der Gesamtliste der erstellten Pakete dupliziert wird. Wenn der Build beispielsweise Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` erstellt, wobei `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` einbettet, werden alle Konfigurationen innerhalb `com.myco:com.myco.ui.apps` als Duplikate gemeldet. Dies ist im Allgemeinen der Fall, dass die [Richtlinien für die Inhaltspaketstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht befolgt werden. in diesem speziellen Beispiel fehlt dem Paket `com.myco:com.myco.ui.apps` die Eigenschaft `<cloudManagerTarget>none</cloudManagerTarget>` .
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 
@@ -741,7 +740,7 @@ Cloud Service-Implementierungen unterstützen keine Rückwärtsreplikation. Weit
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
-### OakPAL - In proxyaktivierten Client-Bibliotheken enthaltene Ressourcen sollten sich in einem Ordner mit dem Namen resources befinden. {#oakpal-resources-proxy}
+### OakPAL - In Proxy-aktivierten Client-Bibliotheken enthaltene Ressourcen sollten sich in einem Ordner mit dem Namen Ressourcen befinden {#oakpal-resources-proxy}
 
 **Schlüssel**: ClientlibProxyResource
 
@@ -751,7 +750,7 @@ Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative 
 
 **Seit**: Version 2021.2.0
 
-AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie unter [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von geteilten Client-Bibliotheken in einem untergeordneten Ordner namens &quot;resources&quot;enthalten sein, damit sie effektiv in den Veröffentlichungsinstanzen referenziert werden können.
+AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie unter [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von geproxidierten Client-Bibliotheken in einem untergeordneten Ordner namens Ressourcen enthalten sein, damit sie effektiv auf den Veröffentlichungsinstanzen referenziert werden können.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
@@ -775,7 +774,7 @@ AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten
         + myimage.jpg
 ```
 
-### OakPAL - Verwendung von nicht kompatiblen Workflow-Prozessen des Cloud Service {#oakpal-usage-cloud-service}
+### OakPAL - Verwendung von Cloud Service Inkompatible Workflow-Prozesse {#oakpal-usage-cloud-service}
 
 **Schlüssel**: CloudServiceInkompatibleWorkflowProcess
 
@@ -785,9 +784,9 @@ AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten
 
 **Seit**: Version 2021.2.0
 
-Mit der Umstellung auf Asset-Mikrodienste für die Asset-Verarbeitung auf AEM Cloud Service werden verschiedene Workflow-Prozesse, die in lokalen und AMS-Versionen von AEM verwendet wurden, entweder nicht unterstützt oder nicht mehr erforderlich. Das Migrationswerkzeug unter [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) kann verwendet werden, um Arbeitsablaufmodelle während der Migration AEM Cloud Service zu aktualisieren.
+Mit der Umstellung auf Asset-Microservices für die Asset-Verarbeitung auf AEM Cloud Service wurden mehrere Workflow-Prozesse, die in On-Premise- und AMS-Versionen von AEM verwendet wurden, entweder nicht unterstützt oder nicht mehr erforderlich. Das Migrationstool unter [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) kann verwendet werden, um Workflow-Modelle während der Migration AEM Cloud Service zu aktualisieren.
 
-### OakPAL - Verwendung von statischen Vorlagen wird zugunsten bearbeitbarer Vorlagen {#oakpal-static-template}
+### OakPAL - Von der Verwendung statischer Vorlagen wird abgeraten, bearbeitbare Vorlagen {#oakpal-static-template} zu verwenden.
 
 **Schlüssel**: StaticTemplateUsage
 
@@ -797,9 +796,9 @@ Mit der Umstellung auf Asset-Mikrodienste für die Asset-Verarbeitung auf AEM Cl
 
 **Seit**: Version 2021.2.0
 
-Die Verwendung von statischen Vorlagen ist in AEM Projekten schon immer sehr häufig vorkommen, editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen.](/help/implementing/developing/components/templates.md) Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der  [AEM Moderationstools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
+Die Verwendung statischer Vorlagen war in AEM Projekten zwar seit jeher sehr üblich, doch wird dringend empfohlen, bearbeitbare Vorlagen zu verwenden, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen .](/help/implementing/developing/components/templates.md) Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der  [AEM Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
-### OakPAL - Verwendung älterer Foundation-Komponenten wird nicht empfohlen{#oakpal-usage-legacy}
+### OakPAL - Die Verwendung älterer Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
 
 **Schlüssel**: LegacyFoundationComponentUsage
 
@@ -809,7 +808,7 @@ Die Verwendung von statischen Vorlagen ist in AEM Projekten schon immer sehr hä
 
 **Seit**: Version 2021.2.0
 
-Die alten Grundkomponenten (d.h. Komponenten unter `/libs/foundation`) wurden für mehrere AEM Versionen zugunsten der WCM-Kernkomponenten veraltet. Die Verwendung der alten Basiskomponenten als Grundlage für benutzerdefinierte Komponenten - sei es durch Überlagerung oder Vererbung - wird nicht empfohlen und sollte in die entsprechende Kernkomponente konvertiert werden. Diese Konvertierung kann durch die [AEM Moderationstools](https://opensource.adobe.com/aem-modernize-tools/) erleichtert werden.
+Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden seit mehreren AEM Versionen zugunsten der WCM-Kernkomponenten nicht mehr unterstützt. Die Verwendung der Legacy-Foundation-Komponenten als Grundlage für benutzerdefinierte Komponenten - ob durch Überlagerung oder Vererbung - wird empfohlen und sollte in die entsprechende Kernkomponente konvertiert werden. Diese Konvertierung kann durch die [AEM Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) erleichtert werden.
 
 ### OakPAL - Nur unterstützte Runmode-Namen und -Reihenfolge sollten verwendet werden {#oakpal-supported-runmodes}
 
@@ -821,9 +820,9 @@ Die alten Grundkomponenten (d.h. Komponenten unter `/libs/foundation`) wurden f�
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erzwingt eine strikte Benennungsrichtlinie für die Namen des Ausführungsmodus und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi kann unter [Runmodi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#runmodes) gefunden werden und jede Abweichung davon wird als Problem identifiziert.
+AEM Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführungsmodusnamen und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi finden Sie unter [Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#runmodes) und jede Abweichung davon wird als Problem identifiziert.
 
-### OakPAL - Custom Search Index Definition Nodes must be Direct Children of /oak:index {#oakpal-custom-search}
+### OakPAL - Definitionsknoten für benutzerdefinierte Suchindex müssen direkte untergeordnete Elemente von /oak:index {#oakpal-custom-search} sein.
 
 **Schlüssel**: OakIndexLocation
 
@@ -833,9 +832,9 @@ AEM Cloud Service erzwingt eine strikte Benennungsrichtlinie für die Namen des 
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) direkt untergeordnete Knoten von `/oak:index` sind. Indizes an anderen Orten müssen verschoben werden, um mit AEM Cloud Service kompatibel zu sein. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de).
+AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) direkt untergeordnete Knoten von `/oak:index` sind. Indizes an anderen Orten müssen verschoben werden, um mit AEM Cloud Service kompatibel zu sein. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de).
 
-### OakPAL - Custom Search Index Definition Nodes Muss eine compatVersion von 2 {#oakpal-custom-search-compatVersion} haben
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex müssen eine compatVersion von 2 {#oakpal-custom-search-compatVersion} aufweisen.
 
 **Schlüssel**: IndexCompatVersion
 
@@ -845,9 +844,9 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. 
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erfordert, dass die Eigenschaft compatVersion für benutzerdefinierte Suchindexdefinitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) auf 2 gesetzt werden muss. Andere Werte werden von AEM Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+AEM Cloud Service erfordert, dass die Eigenschaft compatVersion für benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) auf 2 gesetzt ist. Andere Werte werden von AEM Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - Absteigende Knoten von benutzerdefinierten Suchindex-Definitionsknoten müssen vom Typ nt:unstructured {#oakpal-descendent-nodes} sein
+### OakPAL - Nachstehende Knoten von benutzerdefinierten Suchindex-Definitionsknoten müssen vom Typ nt:unstructured sein {#oakpal-descendent-nodes}
 
 **Schlüssel**: IndexDescendantNodeType
 
@@ -857,9 +856,9 @@ AEM Cloud Service erfordert, dass die Eigenschaft compatVersion für benutzerdef
 
 **Seit**: Version 2021.2.0
 
-Probleme können schwer zu beheben sein, wenn ein Knoten mit einer benutzerdefinierten Suchindexdefinition ungeordnete untergeordnete Knoten enthält. Um dies zu vermeiden, wird empfohlen, dass alle untergeordneten Knoten eines `oak:QueryIndexDefinition`-Knotens vom Typ nt:unstructured sein sollten.
+Die Problembehebung kann schwierig sein, wenn ein benutzerdefinierter Suchindex-Definitionsknoten ungeordnete untergeordnete Knoten aufweist. Um dies zu vermeiden, wird empfohlen, dass alle untergeordneten Knoten eines `oak:QueryIndexDefinition`-Knotens vom Typ nt:unstructured sind.
 
-### OakPAL - Custom Search Index Definition Nodes muss einen untergeordneten Knoten mit dem Namen indexRules enthalten, der untergeordnete Knoten enthält.{#oakpal-custom-search-index}
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex müssen einen untergeordneten Knoten namens indexRules enthalten, der untergeordnete Elemente enthält {#oakpal-custom-search-index}
 
 **Schlüssel**: IndexRulesNode
 
@@ -869,9 +868,9 @@ Probleme können schwer zu beheben sein, wenn ein Knoten mit einer benutzerdefin
 
 **Seit**: Version 2021.2.0
 
-Ein ordnungsgemäß definierter Knoten zur Definition des benutzerdefinierten Suchindex muss einen untergeordneten Knoten mit dem Namen indexRules enthalten, der wiederum mindestens ein untergeordnetes Element aufweisen muss. Weitere Informationen finden Sie unter [Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Ein ordnungsgemäß definierter benutzerdefinierter Suchindex-Definitionsknoten muss einen untergeordneten Knoten namens indexRules enthalten, der wiederum mindestens ein untergeordnetes Element aufweisen muss. Weitere Informationen finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL - Custom Search Index Definition Nodes muss Benennungskonventionen folgen {#oakpal-custom-search-definitions}
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex müssen Benennungskonventionen folgen {#oakpal-custom-search-definitions}
 
 **Schlüssel**: IndexName
 
@@ -881,9 +880,9 @@ Ein ordnungsgemäß definierter Knoten zur Definition des benutzerdefinierten Su
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) beschrieben wird.
+AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) beschrieben wird.
 
-### OakPAL - Custom Search Index Definition Nodes muss den Index Type lucene {#oakpal-index-type-lucene} verwenden
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex müssen den Indextyp lucene {#oakpal-index-type-lucene} verwenden
 
 **Schlüssel**: IndexType
 
@@ -893,9 +892,9 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. 
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erfordert, dass benutzerdefinierte Suchindexdefinitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) eine Typeigenschaft mit dem Wert **lucene** aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs oak:QueryIndexDefinition) eine type-Eigenschaft mit dem Wert **lucene** aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) .
 
-### OakPAL - Custom Search Index Definition Nodes darf keine Eigenschaft namens seed {#oakpal-property-name-seed} enthalten
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex dürfen keine Eigenschaft mit dem Namen seed {#oakpal-property-name-seed} enthalten.
 
 **Schlüssel**: IndexSeedProperty
 
@@ -905,9 +904,9 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindexdefinitionen (d. h
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service verbietet, dass benutzerdefinierte Suchindexdefinitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen Seed enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service untersagt benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), eine Eigenschaft namens Seed zu enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) .
 
-### OakPAL - Custom Search Index Definition Nodes darf keine Eigenschaft namens reindex enthalten.{#oakpal-reindex-property}
+### OakPAL - Definitionsknoten des benutzerdefinierten Suchindex dürfen keine Eigenschaft mit dem Namen reindex {#oakpal-reindex-property} enthalten.
 
 **Schlüssel**: IndexReindexProperty
 
@@ -917,4 +916,4 @@ AEM Cloud Service verbietet, dass benutzerdefinierte Suchindexdefinitionen (d. h
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) eine Eigenschaft namens reindex enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service untersagt benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), eine Eigenschaft namens reindex zu enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) .
