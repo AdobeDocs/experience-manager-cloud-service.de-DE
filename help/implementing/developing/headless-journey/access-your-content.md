@@ -1,67 +1,66 @@
 ---
-title: Zugriff auf Ihre Inhalte über AEM Versand-APIs
-description: Erfahren Sie in diesem Teil der AEM Headless Developer-Journey, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen können.
+title: Zugriff auf Ihre Inhalte über AEM Bereitstellungs-APIs
+description: In diesem Teil der Journey für Entwickler ohne AEM Headless erfahren Sie, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen können.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1367'
 ht-degree: 18%
 
 ---
 
-# Zugriff auf Ihre Inhalte über AEM Versand-APIs {#access-your-content}
+# Zugriff auf Ihre Inhalte über AEM Bereitstellungs-APIs {#access-your-content}
 
 >[!CAUTION]
 >
->ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
+>OUTDATED - Dieser Inhaltsentwurf wurde durch die neue [Headless-Entwickler-Journey-Dokumentation ersetzt.](/help/journey-headless/developer/overview.md)
 
-In diesem Teil der [AEM Headless Developer-Journey lernen Sie, wie Sie mit den GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen und sie in Ihre App einspeisen können (kopfloser Versand).](overview.md)
+In diesem Teil der [AEM Headless-Entwickler-Journey,](overview.md) erfahren Sie, wie Sie mit GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen und ihn an Ihre App weiterleiten können (Headless-Bereitstellung).
 
-## Die Meldung bisher {#story-so-far}
+## Die Geschichte bisher {#story-so-far}
 
-Im vorherigen Dokument der AEM Journey [So modellieren Sie Ihren Inhalt](model-your-content.md), haben Sie die Grundlagen der Inhaltsmodellierung in AEM gelernt. Sie sollten nun verstehen, wie Sie Ihre Inhaltsstruktur modellieren, und diese Struktur dann mithilfe AEM Inhaltsfragmentmodelle und Inhaltsfragmente realisieren:
+Im vorherigen Dokument der AEM Headless-Journey [So modellieren Sie Ihre Inhalte](model-your-content.md) haben Sie die Grundlagen der Inhaltsmodellierung in AEM gelernt. Daher sollten Sie jetzt verstehen, wie Sie Ihre Inhaltsstruktur modellieren, und dann diese Struktur mithilfe von AEM Inhaltsfragmentmodellen und Inhaltsfragmenten realisieren:
 
-* Erkennen Sie die Konzepte und Terminologie im Zusammenhang mit der Inhaltsmodellierung.
-* Verstehen Sie, warum Inhaltsmodellierung für den Versand von Headless-Inhalten erforderlich ist.
-* Verstehen Sie, wie Sie diese Struktur mithilfe von AEM Inhaltsfragmentmodellen (und Erstellen von Inhalten mit Inhaltsfragmenten) realisieren.
-* Verstehen Sie, wie Sie Ihren Inhalt modellieren können. Grundprinzipien mit Basisproben.
+* Erkennen Sie Konzepte und Terminologie zur Inhaltsmodellierung.
+* Erfahren Sie, warum eine Inhaltsmodellierung für die Bereitstellung Headless-Inhalts erforderlich ist.
+* Erfahren Sie, wie Sie diese Struktur mithilfe von AEM Inhaltsfragmentmodellen (und Erstellern von Inhalten mit Inhaltsfragmenten) realisieren.
+* Verstehen Sie, wie Sie Ihren Inhalt modellieren können. Grundprinzipien mit Grundproben.
 
-Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie mit der AEM GraphQL-API auf Ihre vorhandenen Kopflosen-Inhalte in AEM zugreifen können.
+Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie mit der GraphQL-API auf Ihre vorhandenen Headless-Inhalte in AEM zugreifen können.
 
-* **Audience**: Anfänger
+* **Zielgruppe**: Anfänger
 * **Zielsetzung**: Erfahren Sie, wie Sie mithilfe AEM GraphQL-Abfragen auf den Inhalt Ihrer Inhaltsfragmente zugreifen können:
-   * Einführung in GraphQL und die AEM GraphQL API.
-   * Tauchen Sie ein in die Details der AEM GraphQL API.
-   * Sehen Sie sich einige Abfragen an, um zu sehen, wie die Dinge in der Praxis funktionieren.
+   * Einführung in GraphQL und die AEM GraphQL-API.
+   * Informieren Sie sich über die Details der AEM GraphQL-API.
+   * Sehen Sie sich einige Beispielabfragen an, um zu sehen, wie Dinge in der Praxis funktionieren.
 
 ## Sie möchten also auf Ihre Inhalte zugreifen? {#so-youd-like-to-access-your-content}
 
-Also...Sie haben all diesen Inhalt, ordentlich strukturiert (in Inhaltsfragmenten), und warten darauf, Ihre neue App mit Feeds zu versehen. Frage ist - wie man es dorthin bringt?
+Also...Sie haben all diesen Inhalt, sauber strukturiert (in Inhaltsfragmenten) und warten nur darauf, Ihre neue App mit Feeds zu versehen. Frage ist: Wie kommt man dorthin?
 
-Sie benötigen eine Möglichkeit, bestimmte Inhalte Zielgruppe, auszuwählen, was Sie benötigen, und diese zur weiteren Verarbeitung an Ihre App zurückzugeben.
+Sie benötigen eine Möglichkeit, bestimmte Inhalte gezielt anzusprechen, auszuwählen, was Sie benötigen, und diese zur weiteren Verarbeitung an Ihre App zurückzugeben.
 
-Mit Adobe Experience Manager (AEM) als Cloud Service können Sie mithilfe der AEM GraphQL API selektiv auf Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Dies bedeutet, dass Sie den kopflosen Versand von strukturierten Inhalten zur Verwendung in Ihren Anwendungen realisieren können.
+Mit Adobe Experience Manager (AEM) als Cloud Service können Sie mithilfe der AEM GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Dies bedeutet, dass Sie die Headless-Bereitstellung von strukturierten Inhalten zur Verwendung in Ihren Anwendungen realisieren können.
 
 >[!NOTE]
 >
->AEM GraphQL API ist eine benutzerdefinierte Implementierung, die auf der Standard-GraphQL API-Spezifikation basiert.
+>AEM GraphQL-API ist eine benutzerdefinierte Implementierung, die auf der standardmäßigen GraphQL-API-Spezifikation basiert.
 
 ## GraphQL - Eine Einführung {#graphql-introduction}
 
 GraphQL ist eine Open-Source-Spezifikation, die Folgendes bietet:
 
-* eine Abfrage, mit der Sie bestimmte Inhalte aus strukturierten Objekten auswählen können.
+* Abfragesprache, mit der Sie bestimmte Inhalte aus strukturierten Objekten auswählen können.
 * eine Laufzeit, um diese Abfragen mit Ihrem strukturierten Inhalt zu erfüllen.
 
-GraphQL ist eine *stark* eingegebene API. Das bedeutet, dass *alle*-Inhalte klar strukturiert und nach Typ geordnet sein müssen, sodass GraphQL *versteht, was auf* zugegriffen und wie es funktioniert. Die Datenfelder werden in GraphQL-Schemas definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
+GraphQL ist eine *stark* eingegebene API. Das bedeutet, dass *alle*-Inhalte klar strukturiert und nach Typ organisiert sein müssen, sodass GraphQL *versteht*, was aufgerufen werden und wie. Die Datenfelder werden in GraphQL-Schemata definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
 
-GraphQL-Endpunkte stellen dann die Pfade bereit, die auf die GraphQL-Abfragen reagieren.
+GraphQL-Endpunkte geben dann die Pfade an, die auf die GraphQL-Abfragen reagieren.
 
-Dies bedeutet, dass Ihre App den benötigten Inhalt präzise, zuverlässig und effizient auswählen kann - genau das, was Sie bei AEM benötigen.
+Das bedeutet, dass Ihre App genau, zuverlässig und effizient den benötigten Inhalt auswählen kann - genau das, was Sie bei AEM benötigen.
 
 >[!NOTE]
 >
@@ -87,19 +86,19 @@ GraphQL is used in various locations in AEM; for example:
 
 ## AEM GraphQL-API {#aem-graphql-api}
 
-Die AEM GraphQL API ist eine benutzerdefinierte Version, die auf der standardmäßigen GraphQL API-Spezifikation basiert und speziell so konfiguriert wurde, dass Sie (komplexe) Abfragen an Inhaltsfragmenten durchführen können.
+Die AEM GraphQL-API ist eine angepasste Version, die auf der standardmäßigen GraphQL-API-Spezifikation basiert und speziell so konfiguriert wurde, dass Sie (komplexe) Abfragen Ihrer Inhaltsfragmente durchführen können.
 
-Inhaltsfragmente werden verwendet, da der Inhalt nach Inhaltsfragmentmodellen strukturiert ist. Dies erfüllt eine Grundvoraussetzung für GraphQL.
+Inhaltsfragmente werden verwendet, da der Inhalt nach Inhaltsfragmentmodellen strukturiert ist. Dies erfüllt eine Grundanforderung von GraphQL.
 
 * Ein Inhaltsfragmentmodell besteht aus einem oder mehreren Feldern.
-   * Jedes Feld wird entsprechend einem Datentyp definiert.
-* Mithilfe von Inhaltsfragmentmodellen werden die entsprechenden AEM GraphQL-Schema generiert.
+   * Jedes Feld wird anhand eines Datentyps definiert.
+* Inhaltsfragmentmodelle werden verwendet, um die entsprechenden GraphQL-Schemas AEM.
 
 Um tatsächlich auf GraphQL für AEM (und den Inhalt) zuzugreifen, wird ein Endpunkt verwendet, um den Zugriffspfad bereitzustellen.
 
-Die über die AEM GraphQL API zurückgegebenen Inhalte können dann von Ihren Anwendungen verwendet werden.
+Der über die AEM GraphQL-API zurückgegebene Inhalt kann dann von Ihren Anwendungen verwendet werden.
 
-Zur direkten Eingabe und zum Testen von Abfragen steht auch eine Implementierung der Standard-GraphiQL-Schnittstelle zur Verwendung mit AEM GraphQL zur Verfügung (diese kann mit AEM installiert werden). Es bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung und automatische Empfehlung sowie einen Verlauf und eine Online-Dokumentation.
+Um Ihnen beim direkten Eingeben und Testen von Abfragen zu helfen, ist auch eine Implementierung der standardmäßigen GraphiQL-Schnittstelle für die Verwendung mit AEM GraphQL verfügbar (kann mit AEM installiert werden). Es bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung und automatische Vorschläge sowie einen Verlauf und eine Online-Dokumentation.
 
 >[!NOTE]
 >
@@ -121,11 +120,11 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ## Inhaltsfragmente zur Verwendung mit der AEM GraphQL-API {#content-fragments-use-with-aem-graphql-api}
 
-Inhaltsfragmente können als Grundlage für GraphQL für AEM Schema und Abfragen wie:
+Inhaltsfragmente können als Grundlage für GraphQL für AEM Schemas und Abfragen wie folgt verwendet werden:
 
-* Sie ermöglichen es Ihnen, seitenunabhängige Inhalte zu entwerfen, zu erstellen, zu kuratieren und zu veröffentlichen, die ohne weiteres bereitgestellt werden können.
-* Sie basieren auf einem Inhaltsfragmentmodell, das die Struktur für das resultierende Fragment mithilfe einer Auswahl von Datentypen vordefiniert.
-* Mit dem Datentyp &quot;Fragmentverweis&quot;können weitere Strukturebenen erstellt werden, die beim Definieren eines Modells verfügbar sind.
+* Sie ermöglichen es Ihnen, seitenunabhängige Inhalte zu entwerfen, zu erstellen, zu kuratieren und zu veröffentlichen, die ohne Probleme bereitgestellt werden können.
+* Sie basieren auf einem Inhaltsfragmentmodell, das die Struktur für das daraus entstehende Fragment mithilfe einer Auswahl von Datentypen vordefiniert.
+* Zusätzliche Strukturebenen können mit dem Fragment-Referenzdatentyp erreicht werden, der beim Definieren eines Modells verfügbar ist.
 
 ### Inhaltsfragmentmodelle {#content-fragments-models}
 
@@ -139,17 +138,17 @@ Diese Inhaltsfragmentmodelle:
 
 Die **Fragmentreferenz**:
 
-* Ist ein bestimmter Datentyp verfügbar, wenn ein Inhaltsfragmentmodell definiert wird.
+* Ist ein bestimmter Datentyp, der beim Definieren eines Inhaltsfragmentmodells verfügbar ist.
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
-* Ermöglicht Ihnen das Erstellen und Abrufen strukturierter Daten.
+* Ermöglicht das Erstellen und anschließende Abrufen strukturierter Daten.
 
    * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 
 ### JSON-Vorschau {#json-preview}
 
-Um beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu helfen, können Sie die JSON-Ausgabe im Inhaltsfragment-Editor Vorschau haben.
+Um Sie beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle zu unterstützen, können Sie die JSON-Ausgabe im Inhaltsfragment-Editor in der Vorschau anzeigen.
 
-![JSON ](assets/cfm-model-json-preview.png "PreviewJSON-Vorschau")
+![JSON-](assets/cfm-model-json-preview.png "Vorschau JSON-Vorschau")
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
@@ -243,42 +242,42 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 -->
 
-## Tatsächlich mit der AEM GraphQL API {#actually-using-aem-graphiql}
+## Verwenden der AEM GraphQL-API {#actually-using-aem-graphiql}
 
-### Initial-Setup {#initial-setup}
+### Ersteinrichtung {#initial-setup}
 
-Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
+Bevor Sie mit Abfragen zu Ihrem Inhalt beginnen, müssen Sie Folgendes tun:
 
 * Endpunkt aktivieren
-   * Tools -> Sites -> GraphQL
+   * Verwenden Sie Tools > Sites > GraphQL
    * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
-* GraphiQL installieren (falls erforderlich)
+* Installieren Sie GraphiQL (falls erforderlich)
    * Als dediziertes Paket installiert
    * [AEM GraphiQL-Schnittstelle installieren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 
 ### Beispielstruktur {#sample-structure}
 
-Um die AEM GraphQL-API in einer Abfrage zu verwenden, können wir die beiden grundlegenden Inhaltsfragmentmodellstrukturen verwenden:
+Um die AEM GraphQL-API in einer Abfrage zu verwenden, können wir die beiden sehr grundlegenden Strukturen des Inhaltsfragmentmodells verwenden:
 
 * Unternehmen
    * Name - Text
-   * CEO (Person) - Fragmentverweis
+   * CEO (Person) - Fragmentreferenz
    * Arbeitnehmer (Personen) - Fragmentverweis(e)
 * Person
    * Name - Text
    * Vorname - Text
 
-Wie Sie sehen können, verweisen die Felder CEO und Mitarbeiter auf die Fragmente Person.
+Wie Sie sehen können, verweisen die Felder CEO und Mitarbeiter auf die Personenfragmente.
 
 Die Fragmentmodelle werden verwendet:
 
 * beim Erstellen des Inhalts im Inhaltsfragment-Editor
-* zur Generierung der GraphQL-Schema, die Sie Abfrage
+* , um die von Ihnen abgefragten GraphQL-Schemas zu generieren.
 
 ### Testen Ihrer Abfragen {#where-to-test-your-queries}
 
-Die Abfragen können in die GraphiQL-Oberfläche eingegeben werden, z. B. unter:
+Die Abfragen können in der Benutzeroberfläche von GraphiQL eingegeben werden, z. B. unter:
 
 * `http://localhost:4502/content/graphiql.html `
 
@@ -286,7 +285,7 @@ Die Abfragen können in die GraphiQL-Oberfläche eingegeben werden, z. B. unter:
 
 ### Erste Schritte mit Abfragen {#getting-Started-with-queries}
 
-Eine einfache Abfrage ist, den Namen aller Einträge im Schema Firma zurückzugeben. Hier fordern Sie eine Liste aller Firmen an:
+Eine einfache Abfrage besteht darin, den Namen aller Einträge im Unternehmensschema zurückzugeben. Hier fordern Sie eine Liste aller Firmennamen an:
 
 ```xml
 query {
@@ -298,7 +297,7 @@ query {
 }
 ```
 
-Eine etwas komplexere Abfrage besteht darin, alle Personen auszuwählen, die nicht den Namen &quot;Aufträge&quot;haben. Dadurch werden alle Personen nach Personen gefiltert, die nicht den Namen Aufträge haben. Dies wird mit dem Operator EQUALS_NOT erreicht (es gibt viele weitere):
+Eine etwas komplexere Abfrage besteht darin, alle Personen auszuwählen, die nicht den Namen &quot;Aufträge&quot;haben. Dadurch werden alle Personen nach Personen gefiltert, die nicht den Namen &quot;Jobs&quot;haben. Dies wird mit dem Operator EQUALS_NOT erreicht (es gibt viele weitere):
 
 ```xml
 query {
@@ -320,7 +319,7 @@ query {
 }
 ```
 
-Sie können auch komplexere Abfragen erstellen. Abfrage für alle Firmen, die mindestens einen Mitarbeiter mit dem Namen &quot;Smith&quot;haben. Diese Abfrage veranschaulicht das Filtern nach allen Personen mit dem Namen &quot;Smith&quot;und gibt Informationen aus den verschachtelten Fragmenten zurück:
+Sie können auch komplexere Abfragen erstellen. Abfrage beispielsweise für alle Unternehmen, die mindestens einen Mitarbeiter mit dem Namen &quot;Smith&quot;haben. Diese Abfrage zeigt die Filterung nach einer beliebigen Person mit dem Namen &quot;Smith&quot;und gibt Informationen aus allen verschachtelten Fragmenten zurück:
 
 ```xml
 query {
@@ -354,15 +353,15 @@ query {
 
 <!-- need code / curl / cli examples-->
 
-Die vollständigen Informationen zur Verwendung der AEM GraphQL API sowie zur Konfiguration der erforderlichen Elemente finden Sie unter:
+Ausführliche Informationen zur Verwendung der AEM GraphQL-API sowie zur Konfiguration der erforderlichen Elemente finden Sie unter:
 
-* Verwendung von GraphQL mit AEM
-* Die Struktur des Musterinhaltsfragments
+* Verwenden von GraphQL mit AEM
+* Die Struktur von Beispielinhaltsfragmenten
 * Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun gelernt haben, wie Sie mit der AEM GraphQL API auf Ihre kostenlosen Inhalte zugreifen und diese Abfrage durchführen können, können Sie jetzt [lernen, wie Sie mit der REST-API auf den Inhalt Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.](/help/implementing/developing/headless-journey/update-your-content.md)
+Nachdem Sie nun gelernt haben, wie Sie mit der AEM GraphQL-API auf Ihren Headless Content zugreifen und ihn abfragen können, können Sie jetzt [erfahren, wie Sie mit der REST-API auf den Inhalt Ihrer Inhaltsfragmente zugreifen und diesen aktualisieren können.](/help/implementing/developing/headless-journey/update-your-content.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -371,10 +370,10 @@ Nachdem Sie nun gelernt haben, wie Sie mit der AEM GraphQL API auf Ihre kostenlo
    * [Variablen](https://graphql.org/learn/queries/#variables)
    * [GraphQL Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Verwendung von GraphQL mit AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [Verwenden von GraphQL mit AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
    * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
    * [AEM GraphiQL-Schnittstelle installieren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [Die Struktur des Musterinhaltsfragments](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Die Struktur von Beispielinhaltsfragmenten](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
    * [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“ ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
@@ -383,6 +382,6 @@ Nachdem Sie nun gelernt haben, wie Sie mit der AEM GraphQL API auf Ihre kostenlo
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [Verstehen Sie Cross-Herkunft Resource Sharing (CORS).](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
+* [Verstehen Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors))
 * [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)  - Eine kurze Videoschulung mit einem Überblick über die Verwendung AEM Funktionen ohne Kopfdaten, einschließlich Inhaltsmodellierung und GraphQL.
+* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)  - Eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL.
