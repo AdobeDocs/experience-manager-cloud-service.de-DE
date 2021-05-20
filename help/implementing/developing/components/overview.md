@@ -1,14 +1,13 @@
 ---
 title: Komponentenübersicht
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 
 ---
-
 
 # Komponentenübersicht {#components-overview}
 
@@ -64,4 +63,3 @@ Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen
    `//element(*, cq:Component)`
 
 1. Wenn Sie auf **[!UICONTROL Ausführen]** klicken, werden die Komponenten aufgelistet.
-
