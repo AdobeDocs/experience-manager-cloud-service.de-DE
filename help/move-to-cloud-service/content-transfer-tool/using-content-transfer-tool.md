@@ -16,28 +16,28 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Wichtige Überlegungen zur Verwendung des Content Transfer Tool"
->abstract="Beachten Sie die wichtigen Aspekte, um das Content Transfer-Tool zu verwenden, einschließlich Java- und AEM-Versionen, unterstützte Datastore-Typen, Überlegungen zu Benutzergruppen und mehr."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices und Leitlinien"
+>abstract="Beachten Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools, einschließlich Java- und AEM-Versionen, unterstützte Datenspeichertypen, Überlegungen zu Benutzergruppen und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices und Richtlinien"
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
-* Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM Version verwenden, müssen Sie Ihr Inhalts-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
+* Die Mindest-Systemanforderungen für das Content Transfer Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM verwenden, müssen Sie Ihr Inhalts-Repository auf AEM 6.5 aktualisieren, um das Content Transfer Tool verwenden zu können.
 
-* Java muss auf der AEM Umgebung konfiguriert werden, damit der Befehl `java` von dem Benutzer ausgeführt werden kann, der Beginn AEM.
+* Java muss in der AEM-Umgebung konfiguriert werden, damit der Befehl `java` vom Benutzer ausgeführt werden kann, der AEM startet.
 
-* Es wird empfohlen, ältere Versionen des Content Transfer Tool bei der Installation der Version 1.3.0 zu deinstallieren, da es eine wesentliche architektonische Änderung im Tool gab. Mit 1.3.0 sollten Sie außerdem neue Migrationssets erstellen und die Extraktion und Erfassung der neuen Migrationssätze erneut ausführen.
+* Es wird empfohlen, ältere Versionen des Content Transfer Tool bei der Installation der Version 1.3.0 zu deinstallieren, da es eine wesentliche Änderung der Architektur des Tools gab. Mit Version 1.3.0 sollten Sie auch neue Migrationssätze erstellen und Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen.
 
 * Das Content Transfer Tool kann mit den folgenden Arten von Datenspeicher genutzt werden: Dateispeicher, S3-Datenspeicher, freigegebener S3-Datenspeicher und Azure Blob-Datenspeicher.
 
 * Wenn Sie eine *Sandbox-Umgebung* verwenden, müssen Sie dafür sorgen, dass Ihre Umgebung aktuell ist bzw. auf die neueste Version aktualisiert wird. Wenn Sie eine *Produktionsumgebung* nutzen, wird diese automatisch aktualisiert.
 
-* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator Ihrer Quellinstanz sein und der lokalen AEM **administrators** in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tools nicht abrufen.
+* Um das Content Transfer Tool verwenden zu können, müssen Sie Administrator-Benutzer in Ihrer Quellinstanz sein und zur lokalen AEM **administrators** in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tools nicht abrufen.
 
-* Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte erfasst werden.** Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden. Der Benutzer muss der Gruppe **administratoren** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
+* Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das Inhalte aufgenommen werden können. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für einen Admin-Benutzer, der der Gruppe **administrators** hinzugefügt wurde. Der Benutzer muss der Gruppe **administrators** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
 
-* Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffstoken abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
+* Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffstoken abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und das neue Zugriffstoken abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
 
-* Das Content Transfer Tool (CTT) führt keine Content-Analyse durch, bevor Inhalte von der Quellinstanz in die Zielgruppe-Instanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Publish-Umgebung eingefügt werden. Der Inhalt, der im Migrationsset angegeben ist, wird in die ausgewählte Instanz der Zielgruppe aufgenommen. Benutzer haben die Möglichkeit, einen Migrationssatz in einer Autorinstanz oder Veröffentlichungsinstanz oder in beiden Instanzen zu erfassen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz die CTT auf der Quellautorinstanz zu installieren, um Inhalte in die Zielgruppe Author-Instanz zu verschieben. Installieren Sie auf ähnliche Weise die CTT auf der Quell-Veröffentlichungsinstanz, um Inhalte in die Zielgruppe Publish-Instanz zu verschieben.
+* Das Content Transfer Tool (CTT) führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz an die Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT beim Erfassen von Inhalten in einer Veröffentlichungsumgebung nicht zwischen veröffentlichten und nicht veröffentlichten Inhalten. Welche Inhalte im Migrationssatz angegeben werden, wird in die ausgewählte Zielinstanz aufgenommen. Benutzer können einen Migrationssatz in eine Autoren- oder Veröffentlichungsinstanz aufnehmen oder beides. Es wird empfohlen, beim Verschieben von Inhalten auf eine Produktionsinstanz die CTT auf der Quell-Autoreninstanz zu installieren, um Inhalte in die Ziel-Autoreninstanz zu verschieben, und auf ähnliche Weise CTT auf der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben.
 
 * Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktions*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration).
 
@@ -49,11 +49,11 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
       * Umgebungstyp (Phase oder Produktion), in den Sie Daten aufnehmen möchten.
       * Programm-ID.
 
-* Die *Ingestion Phase* für den Autor skaliert die gesamte Autorenbereitstellung. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
+* Die *Aufnahmephase* für den Autor skaliert die gesamte Autorenbereitstellung. In anderen Worten, die Autoreninstanz von AEM ist während des gesamten Aufnahmevorgangs nicht verfügbar. Stellen Sie auch sicher, dass keine Cloud Manager-Pipelines ausgeführt werden, während Sie die *Aufnahmephase* ausführen.
 
-* Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher auf dem AEM-Quellsystem sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (Garbage Collector). Auf diese Weise wird die Integrität der Indexdaten sichergestellt, und ein Fehler bei der Konfiguration dieser Art kann zu fehlerhaften Extraktionen führen, da diese Indexdaten nicht einwandfrei sind.
+* Bei Verwendung von `Amazon S3` oder `Azure` als Datenspeicher im Quell-AEM-System sollte der Datenspeicher so konfiguriert werden, dass die gespeicherten Blobs nicht gelöscht werden können (Speicherbereinigung). Dadurch wird die Integrität der Indexdaten sichergestellt, und ein Fehler bei der Konfiguration auf diese Weise kann zu fehlgeschlagenen Extraktionen führen, da diese Indexdaten nicht integrieren können.
 
-* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass die benutzerdefinierten Indizes mit dem Knoten `tika` konfiguriert werden, bevor Sie Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition).
+* Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) .
 
 ## Verfügbarkeit {#availability}
 
@@ -62,7 +62,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 >title="Download"
 >abstract="Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter."
 >additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Versionshinweise"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
 Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
@@ -73,21 +73,21 @@ Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Porta
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
->title="Ausführen des Inhaltsübermittlungstools"
->abstract="Erfahren Sie, wie Sie mit dem Inhaltsübermittlungstool Inhalte als Cloud Service (Autor/Veröffentlichen) in AEM migrieren können."
+>title="Ausführen des Content Transfer Tool"
+>abstract="Erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte in AEM als Cloud Service migrieren können (Author/Publish)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Siehe Demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Übung - Verwenden des Inhaltsübermittlungstools"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial - Verwendung des Content Transfer Tool"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 
 In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
-1. Wählen Sie das Adobe Experience Manager und navigieren Sie zu Tools -> **Vorgänge** -> **Inhaltsmigration**.
+1. Wählen Sie die Adobe Experience Manager aus und navigieren Sie zu &quot;Tools&quot;-> **Vorgänge** -> **Inhaltsmigration**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
-1. Wählen Sie im Assistenten **Inhaltsmigration** die Option **Inhaltsübertragung**.
+1. Wählen Sie im Assistenten **Inhaltsmigration** die Option **Inhaltstransfer** aus.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
@@ -100,9 +100,9 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    >[!NOTE]
    >Wenn Sie bereits über Migrationssätze verfügen, zeigt die Konsole die Liste der vorhandenen Migrationssätze mit ihrem aktuellen Status an.
 
-   Klicken Sie außerdem auf **Konfiguration der Benutzerzuordnung erstellen**, um auf das [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) zuzugreifen.
+   Klicken Sie außerdem auf **Benutzerzuordnungs-Konfiguration erstellen** , um auf das [Benutzerzuordnungs-Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool) zuzugreifen.
 
-1. Füllen Sie die Felder im Bildschirm **Migrationsset erstellen** aus, wie unten beschrieben.
+1. Füllen Sie die Felder im Bildschirm **Migrationssatz erstellen** aus, wie unten beschrieben.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
 
@@ -113,20 +113,20 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Cloud Service-Konfiguration**: Geben Sie die Ziel-URL der Autoreninstanz von AEM as a Cloud Service an.
 
       >[!NOTE]
-      >Sie können während der Aktivität der Inhaltsübertragung maximal zehn Migrationssätze gleichzeitig erstellen und verwalten.
+      >Sie können während der Inhaltstransferaktivität maximal zehn Migrationssätze gleichzeitig erstellen und verwalten.
       >Darüber hinaus müssen Sie für jede der spezifischen Umgebungen – *Staging*, *Entwicklung* und *Produktion* – eine separate Migration erstellen.
 
    1. **Zugriffs-Token**: Geben Sie das Zugriffs-Token ein.
 
       >[!NOTE]
-      >Sie können das Zugriffs-Token über die Schaltfläche **Zugriffs-Token öffnen** abrufen. Sie müssen sicherstellen, dass Sie in der Zielgruppe Cloud Service-Instanz zur Gruppe AEM Administratoren gehören.
+      >Sie können das Zugriffs-Token über die Schaltfläche **Zugriffs-Token öffnen** abrufen. Sie müssen sicherstellen, dass Sie in der Ziel-Cloud Service-Instanz zur Gruppe der AEM-Administratoren gehören.
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
       1. **Version einschließen**: Aktivieren Sie die Option.
 
-      1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option, um die Zuordnung aus IMS-Benutzern und -Gruppen einzuschließen.
-Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de).
+      1. **Zuordnung von IMS-Benutzern und -Gruppen** einschließen: Wählen Sie die Option aus, um die Zuordnung aus IMS-Benutzern und -Gruppen einzubeziehen.
+Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de) .
 
       1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
 
@@ -135,19 +135,19 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (einige  `/etc` Pfade dürfen in CTT ausgewählt werden)
+         >* `/etc` (einige  `/etc` Pfade können in CTT ausgewählt werden)
 
 
-1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Detailbildschirm **Migrationsset erstellen** ausgefüllt haben.
+1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Detailbildschirm **Migrationssatz erstellen** ausgefüllt haben.
 
 1. Der Migrationssatz erscheint auf der Seite *Übersicht*.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle auf diesem Bildschirm vorhandenen Migrationssets werden auf der Seite *Übersicht* mit ihren aktuellen Status- und Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
+   Alle auf diesem Bildschirm vorhandenen Migrationssätze werden auf der Seite *Übersicht* mit ihren aktuellen Status- und Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
    * Eine *rote Wolke* bedeutet, dass Sie den Extraktionsvorgang nicht abschließen können.
-   * Eine *grüne Cloud* gibt an, dass Sie die Extraktion abschließen können.
+   * Eine *grüne Cloud* gibt an, dass Sie den Extraktionsvorgang abschließen können.
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
 1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Migrationssatzeigenschaften anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den Namen des Containers oder die Service-URL zu ändern.
@@ -157,9 +157,9 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
->title="Content Extraktion"
+>title="Inhaltsextrahierung"
 >abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der Quell-AEM-Instanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extraktion oben"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Auffüllextraktion"
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 
@@ -205,7 +205,7 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
->abstract="&quot;Einschluss&quot;bezieht sich auf die Inhaltsaufnahme aus der Migration, die in der Zielgruppe Cloud Service-Instanz festgelegt ist. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
+>abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Ziel-Cloud Service-Instanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
@@ -213,11 +213,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten. Es ist möglich, Inhalte gleichzeitig in der Autoren- und Veröffentlichungsinstanz aufzunehmen.
 
    >[!IMPORTANT]
-   >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **administrators** hinzugefügt werden.
+   >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für einen Admin-Benutzer, der der Gruppe **administrators** hinzugefügt wurde.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   Klicken Sie außerdem auf **Kundendienst**, um ein Ticket zu protokollieren, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Inhaltsübermittlungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs).
+   Klicken Sie außerdem auf **Kundenunterstützung** , um ein Ticket zu protokollieren, wie in der obigen Abbildung dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) .
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
 
@@ -238,7 +238,7 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird. Klicken Sie außerdem auf **Kundendienst**, um ein Ticket zu protokollieren, wie in der Abbildung oben dargestellt.
+   >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird. Klicken Sie außerdem auf **Kundenunterstützung** , um ein Ticket zu protokollieren, wie in der obigen Abbildung dargestellt.
 
 
 ### Anzeigen von Protokollen für einen Migrationssatz {#viewing-logs-migration-set}
@@ -246,11 +246,11 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="Anzeigen von Protokollen"
->abstract="Nach Abschluss der Extraktion der Ingestion überprüfen Sie die Protokolle auf Fehler/Warnungen. Eventuelle Fehler sollten sofort behoben werden, entweder durch Behandlung der gemeldeten Probleme oder durch Kontaktaufnahme mit der Adobe."
+>abstract="Überprüfen Sie nach Abschluss der Extraktion der Aufnahme die Protokolle auf Fehler/Warnungen. Etwaige Fehler sollten sofort behoben werden, indem entweder die gemeldeten Probleme behandelt werden oder der Support der Adobe kontaktiert wird."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="Fehlerbehebung"
 >additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Kontaktaufnahme mit dem Adobe-Support"
 
-Überprüfen Sie nach Abschluss der einzelnen Schritte (Extraktion und Erfassung) die Protokolle und suchen Sie nach Fehlern.  Eventuelle Fehler sollten sofort behoben werden, entweder durch Behandlung der gemeldeten Probleme oder durch Kontaktaufnahme mit der Adobe.
+Überprüfen Sie nach Abschluss jedes Schritts (Extraktion und Aufnahme) die Protokolle und suchen Sie nach Fehlern.  Etwaige Fehler sollten sofort behoben werden, indem entweder die gemeldeten Probleme behandelt werden oder der Support der Adobe kontaktiert wird.
 
 Auf der Seite *Übersicht* können Sie die Protokolle für einen vorhandenen Migrationssatz anzeigen.
 Führen Sie dazu folgende Schritte durch:
