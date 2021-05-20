@@ -1,14 +1,13 @@
 ---
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4600'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen von Seitenvorlagen  {#creating-page-templates}
 
@@ -390,7 +389,7 @@ Unter der Überschrift **Eigenschaften** können Sie die Einstellungen der Kompo
 * Allgemein
 * Funktionen
 
-###### Allgemein {#main}
+###### Main {#main}
 
 Auf der Registerkarte **Allgemein** sind die wichtigsten Einstellungen der Komponente definiert.
 
