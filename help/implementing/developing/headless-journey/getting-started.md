@@ -1,14 +1,14 @@
 ---
 title: Erste Schritte mit AEM Headless als Cloud Service
-description: Lernen Sie in diesem Teil der AEM Headless Developer-Journey die AEM Voraussetzungen ohne Kopfdaten kennen.
+description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie mehr über AEM Headless-Voraussetzungen.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 4%
+source-wordcount: '3073'
+ht-degree: 5%
 
 ---
 
@@ -16,60 +16,60 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->ARBEITEN IN FORTSCHRITTEN - Die Schaffung dieses Dokuments ist im Gange und sollte nicht als vollständig oder endgültig betrachtet werden und auch nicht für Produktionszwecke verwendet werden.
+>OUTDATED - Dieser Inhaltsentwurf wurde durch die neue [Headless-Entwickler-Journey-Dokumentation ersetzt.](/help/journey-headless/developer/overview.md)
 
-In diesem Teil der [AEM Headless Developer-Journey erfahren Sie, was erforderlich ist, um Ihr eigenes Projekt mit AEM Headless zu starten.](overview.md)
+In diesem Teil der [AEM Headless-Entwickler-Journey,](overview.md) erfahren Sie, was erforderlich ist, um Ihr eigenes Projekt mit AEM Headless zu starten.
 
-## Die Meldung bisher {#story-so-far}
+## Die Geschichte bisher {#story-so-far}
 
-Im vorherigen Dokument der AEM kopless-Journey, [Informationen zu CMS Headless Development](learn-about.md) haben Sie die Grundtheorie gelernt, was ein Headless-CMS ist und sollten Sie jetzt:
+Im vorherigen Dokument der AEM Headless-Journey, [Informationen zur Headless-Entwicklung von CMS](learn-about.md) haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist und sollten jetzt:
 
-* Grundlegende Konzepte und Terminologie von Versand ohne Inhalt verstehen
-* Verstehen Sie, warum und wann Kopflosigkeit erforderlich ist
-* Auf hoher Ebene wissen, wie Headless-Konzepte verwendet werden und wie sie miteinander verknüpft werden
+* Grundlegende Konzepte und Terminologie der Bereitstellung Headless Content
+* Verstehen, warum und wann Headless erforderlich ist
+* Erfahren Sie auf hoher Ebene, wie Headless-Konzepte verwendet werden und wie sie miteinander verknüpft sind
 
-Dieser Artikel basiert auf diesen Grundlagen, damit Sie verstehen, wie Sie AEM verwenden können, um eine kopflose Lösung zu implementieren.
+Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie AEM verwenden können, um eine Headless-Lösung zu implementieren.
 
 ## Vorgabe {#objective}
 
 Dieses Dokument hilft Ihnen, AEM Headless im Kontext Ihres eigenen Projekts zu verstehen. Nach dem Lesen sollten Sie:
 
-* Machen Sie sich mit den Grundlagen AEM kostenlosen Funktionen vertraut.
-* Erkennen Sie die Voraussetzungen für die Verwendung AEM kostenlosen Funktionen.
-* Achten Sie auf AEM Ebene der kostenlosen Integration.
+* Machen Sie sich mit den Grundlagen AEM Headless-Funktionen vertraut.
+* Machen Sie sich mit den Voraussetzungen für die Verwendung AEM Headless-Funktionen vertraut.
+* Beachten Sie AEM Headless-Integrationsstufen.
 * Sie können Ihr Projekt in Bezug auf den Umfang definieren.
 
 ## AEM Grundlagen {#aem-basics}
 
-Bevor Sie Ihr kopfloses Projekt in AEM definieren können, sollten Sie einige grundlegende AEM Konzepte verstehen.
+Bevor Sie Ihr Headless-Projekt in AEM definieren können, müssen Sie einige grundlegende AEM verstehen.
 
 ### Autoreninstanz {#author}
 
-Am einfachsten besteht AEM aus einer Autoreninstanz und einer [Veröffentlichungsinstanz](#publish), die zusammenarbeiten, um Ihre Inhalte zu erstellen, zu verwalten und zu veröffentlichen.
+Am einfachsten besteht AEM aus einer Autoreninstanz und einer [Veröffentlichungsinstanz](#publish), die zusammenarbeiten, um Inhalte zu erstellen, zu verwalten und zu veröffentlichen.
 
-Der Inhalt beginnt in der Autoreninstanz. Hier erstellen Sie die Inhalte von Autoren. Die Authoring-Umgebung stellt Autoren verschiedene Tools zum Erstellen, Organisieren und Wiederverwenden ihrer Inhalte zur Verfügung.
+Der Inhalt beginnt in der Autoreninstanz. Hier erstellen Ihre Inhaltsautoren ihren Inhalt. Die Autorenumgebung bietet verschiedene Tools für Autoren zum Erstellen, Organisieren und Wiederverwenden ihrer Inhalte.
 
 ### Veröffentlichungsinstanz {#publish}
 
-Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlicht werden, damit sie für andere Dienste verfügbar sind, um sie zu nutzen. Eine Veröffentlichungsinstanz enthält alle veröffentlichten Inhalte.
+Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlicht werden, damit sie für andere Dienste verfügbar sind. Eine Veröffentlichungsinstanz enthält alle veröffentlichten Inhalte.
 
 ### Replikation {#replication}
 
-Replizierung ist der Vorgang der Übertragung von Inhalten von der Autoreninstanz auf die Veröffentlichungsinstanz. Dies erfolgt automatisch durch AEM, wenn ein Autor oder ein anderer Benutzer mit entsprechenden Rechten Inhalte veröffentlicht.
+Die Replikation ist der Vorgang der Übertragung von Inhalten von der Autoreninstanz auf die Veröffentlichungsinstanz. Dies erfolgt automatisch durch AEM, wenn ein Autor oder ein anderer Benutzer mit entsprechenden Berechtigungen Inhalte veröffentlicht.
 
-### AEM Zusammenfassung {#aem-basics-summary}
+### AEM Grundlagen Zusammenfassung {#aem-basics-summary}
 
-Um digitale Erlebnisse in AEM auf der einfachsten Ebene zu erstellen, müssen die folgenden Schritte ausgeführt werden:
+Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM die folgenden Schritte:
 
-1. Ihre Inhaltsersteller erstellen Ihren kopflosen Inhalt in der Autoreninstanz.
-1. Wenn dieser Inhalt fertig ist, wird er in die Veröffentlichungsinstanz repliziert.
+1. Ihre Inhaltsautoren erstellen Ihren Headless-Inhalt in der Autoreninstanz.
+1. Wenn dieser Inhalt fertig ist, wird er auf die Veröffentlichungsinstanz repliziert.
 1. Anschließend können APIs aufgerufen werden, um diesen Inhalt abzurufen.
 
-AEM Headless baut diese technische Grundlage auf, indem es leistungsstarke Tools zur Verwaltung von kostenlosen Inhalten anbietet, die im nächsten Abschnitt [beschrieben werden.](#aem-headless-basics)
+AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die im nächsten Abschnitt beschrieben werden.](#aem-headless-basics)[
 
-## AEM Grundlagen ohne Kopfdaten {#aem-headless-basics}
+## AEM Headless-Grundlagen {#aem-headless-basics}
 
-Die nutzlosen Funktionen von AEM basieren auf einigen wichtigen Funktionen. Diese werden in späteren Abschnitten der Journey ausführlich erläutert. Es ist jetzt wichtig, nur die Grundlagen dessen zu kennen, was sie tun und was sie genannt werden.
+Die Headless-Funktionen von AEM basieren auf einigen wichtigen Funktionen. Diese werden in späteren Teilen der Journey ausführlich erläutert. Es ist jetzt wichtig, nur die Grundlagen zu kennen, was sie tun und wie sie genannt werden.
 
 ### Inhaltsfragmentmodelle {#content-fragment-models}
 
@@ -83,218 +83,218 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 ### GraphQL- und REST-APIs {#apis}
 
-Um Ihre Inhalte ohne Probleme zu ändern, AEM Angebot zwei robuste APIs.
+Um Inhalte Headless zu ändern, bietet AEM zwei robuste APIs.
 
 * Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-Sie erfahren mehr über diese APIs und wie sie in einem späteren Teil der Journey ohne AEM verwendet werden. Weitere Dokumentation finden Sie im Abschnitt [Weitere Ressourcen](#additional-resources) weiter unten.
+Sie erfahren mehr über diese APIs und deren Verwendung in einem späteren Teil der Journey ohne Kopfzeilenfunktion AEM. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) weiter unten.
 
 ## Headless-Integrationsstufen {#integration-levels}
 
-AEM unterstützt sowohl den kompletten Headless- als auch den traditionellen Vollstapel- oder Headful-Modellen eines CMS. AEM Angebote jedoch nicht nur diese beiden exklusiven Optionen, sondern auch die Möglichkeit, Hybridmodelle zu unterstützen, die die Vorteile beider Modelle kombinieren und Ihnen eine einzigartige Flexibilität für Ihr Headless-Projekt bieten.
+AEM unterstützt sowohl den kompletten Headless- als auch den herkömmlichen Full Stack oder Headful-Modelle eines CMS. AEM bietet jedoch nicht nur diese beiden exklusiven Optionen, sondern auch die Möglichkeit, Hybridmodelle zu unterstützen, die die Vorteile beider Modelle kombinieren und Ihnen eine einzigartige Flexibilität für Ihr Headless-Projekt bieten.
 
-Um Ihr Verständnis von Headless-Konzepten sicherzustellen, konzentriert sich diese AEM Headless Developer-Journey auf das reine Headless-Modell, um Sie so schnell wie möglich ohne Programmierung in AEM in die Laufbahn zu bringen.
+Um Ihr Verständnis von Headless-Konzepten sicherzustellen, konzentriert sich dieses AEM Headless-Entwickler-Journey auf das reine Headless-Modell, um Sie so schnell wie möglich ohne Programmierung in AEM zum Laufen zu bringen.
 
-Sie sollten sich jedoch der zusätzlichen Hybrid-Möglichkeiten bewusst sein, die Ihnen zur Verfügung stehen, sobald Sie AEM Kopfloses verstehen. Wir legen diese Fälle unten für Ihr Bewusstsein dar. Am Ende der Journey werden Sie detaillierter in diese Konzepte aufgenommen, falls eine solche Flexibilität für Ihr Projekt erforderlich ist.
+Sie sollten sich jedoch der zusätzlichen Hybridmöglichkeiten bewusst sein, die Ihnen zur Verfügung stehen, sobald Sie AEM Headless-Funktionen verstehen. Wir legen diese Fälle für Ihr Bewusstsein weiter unten. Am Ende der Journey werden Sie detaillierter zu diesen Konzepten vorgestellt, falls eine solche Flexibilität für Ihr Projekt erforderlich ist.
 
-### Sie haben bereits einen externen Konsum von kostenlosen Inhalten, wie z. B. eine Einzelseitenanwendung (SPA). {#already-have-a-spa}
+### Sie verfügen bereits über einen externen Verbrauch von Headless-Inhalten, wie z. B. eine Einzelseitenanwendung (SPA). {#already-have-a-spa}
 
-Gehen wir davon aus, dass Ihre grundlegende Anforderung mindestens darin besteht, Inhalte von AEM an einen vorhandenen externen Dienst bereitzustellen.
+Nehmen wir einmal an, dass Ihre Grundanforderung mindestens darin besteht, Inhalte von AEM an einen bestehenden externen Dienst zu senden.
 
-#### Ebene 1: Integration von Inhaltsfragmenten - Traditionelles Headless-Modell {#level-1}
+#### Ebene 1: Integration von Inhaltsfragmenten - Herkömmliches Headless-Modell {#level-1}
 
-Diese Integrationsstufe ist das herkömmliche, kopflose Modell und ermöglicht es Ihren Inhaltserstellern, Inhalte in AEM zu erstellen und diese mit GraphQL problemlos an eine beliebige Anzahl externer Dienste zu senden oder mithilfe der Assets API aus externen Diensten zu bearbeiten. In AEM ist keine Kodierung erforderlich.
+Diese Integrationsstufe ist das herkömmliche Headless-Modell und ermöglicht es Ihren Inhaltsautoren, Inhalte in AEM zu erstellen und diese mithilfe von GraphQL für eine beliebige Anzahl externer Dienste bereitzustellen oder mithilfe der Assets-API über externe Dienste zu bearbeiten. In AEM ist keine Kodierung erforderlich.
 
-In diesem Modell wird AEM nur zum Erstellen und Bereitstellen von Inhalten mithilfe von AEM Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die anspruchsvolle externe Anwendung delegiert, häufig an eine einseitige Anwendung (SPA).
+In diesem Modell wird AEM nur zum Erstellen und Bereitstellen des Inhalts mithilfe von AEM Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die nutzende externe Anwendung delegiert, häufig an eine Einzelseitenanwendung (SPA).
 
-#### Ebene 2: SPA in AEM - Hybridmodell {#level-2} einbetten
+#### Ebene 2: Einbetten des SPA in AEM - Hybridmodell {#level-2}
 
-Diese Integrationsstufe baut auf der ersten Ebene auf, ermöglicht aber auch die Einbettung der externen Anwendung (SPA) in AEM, sodass die Inhaltsersteller den Inhalt im Kontext der externen Anwendung innerhalb AEM Ansicht können. Die Anwendung kann auch eine eingeschränkte Bearbeitung der externen Anwendung innerhalb von AEM unterstützen.
+Diese Integrationsstufe baut auf der ersten Ebene auf, ermöglicht jedoch auch die Einbettung der externen Anwendung (SPA) in AEM, sodass die Inhaltsautoren den Inhalt im Kontext der externen Anwendung in AEM anzeigen können. Die Anwendung kann auch eine eingeschränkte Bearbeitung der externen Anwendung in AEM unterstützen.
 
-Diese Ebene hat den Vorteil, dass Autoren Inhalte auf kostenlose Weise flexibel AEM erstellen können, wobei ihre Inhalte im Kontext mit einer eingebetteten externen SPA dargestellt werden, ohne dass die Inhalte kopfüber bereitgestellt werden.
+Diese Ebene bietet den Vorteil, dass Autoren von Inhalten Inhalte in AEM dynamisch erstellen können, wobei ihre Inhalte kontextbezogen mit einer eingebetteten externen SPA präsentiert werden, während sie die Inhalte dennoch Headless bereitstellen.
 
-#### Ebene 3: SPA in AEM einbetten und vollständig aktivieren - Hybridmodell {#level-3}
+#### Ebene 3: Einbetten und vollständige Aktivierung von SPA in AEM - Hybridmodell {#level-3}
 
-Diese Integrationsstufe baut auf Stufe zwei auf, indem die meisten Inhalte in der externen SPA innerhalb AEM bearbeitet werden können.
+Diese Integrationsstufe baut auf Stufe zwei auf, indem die meisten Inhalte in der externen SPA innerhalb von AEM bearbeitbar sind.
 
-### Sie haben noch keinen externen Benutzer des kostenlosen Inhalts, z. B. eine Einzelseitenanwendung (SPA). {#do-not-have-a-spa}
+### Sie haben noch keinen externen Benutzer des Headless-Inhalts, z. B. eine Single Page Application (SPA). {#do-not-have-a-spa}
 
-Wenn Ihr Ziel darin besteht, eine neue SPA zu erstellen, die Inhalte aus AEM nutzlos verbraucht, können Sie Funktionen wie Inhaltsfragmente verwenden, um Ihre kostenlosen Inhalte zu verwalten, und auch eine SPA mit SPA Editor-Framework erstellen.
+Wenn Sie ein neues SPA erstellen möchten, das Inhalte von AEM nutzlos nutzt, können Sie Funktionen wie Inhaltsfragmente verwenden, um Ihre Headless-Inhalte zu verwalten, und auch eine SPA mit AEM Editor-Framework erstellen.
 
-Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern kann auch innerhalb AEM von Autoren vollständig bearbeitet werden, sodass Sie sowohl die Flexibilität von kostenlosem Versand als auch die Bearbeitung im Kontext innerhalb AEM haben.
+Mit dem SPA-Editor nutzt die SPA nicht nur Inhalte aus AEM, sondern ist auch AEM von Ihren Inhaltsautoren vollständig bearbeitbar, sodass Sie sowohl die Flexibilität der Headless-Bereitstellung als auch der kontextbezogenen Bearbeitung innerhalb AEM haben.
 
 ## Anforderungen und Voraussetzungen {#requirements-prerequisites}
 
-Bevor Sie mit Ihrem kopflosen AEM Projekt beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
+Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
 
 ### Wissen {#knowledge}
 
 * GraphQL
-* Entwicklungs-Erfahrung beim Erstellen von SPA mit React- oder Angular-Frameworks
-* Grundlegende AEM zum Erstellen von Inhaltsfragmenten und zum Verwenden des Editors
+* Entwicklungs-Erlebnis beim Erstellen von SPA mit React- oder Angular-Frameworks
+* Grundlegende AEM beim Erstellen von Inhaltsfragmenten und Verwenden des Editors
 
 ### Tools {#tools}
 
 * Sandbox-Zugriff zum Testen der Bereitstellung Ihres Projekts
-* Lokale Entwicklungsinstanz für Datenmodellierung und Tests
-* Bestehende externe SPA oder andere Verbraucher Ihrer kostenlosen AEM
+* Lokale Entwicklungsinstanz für Datenmodellierung und -tests
+* Bestehende externe SPA oder andere Verbraucher Ihres Headless-AEM-Inhalts
 
 ## Definieren Ihres Projekts {#defining-your-project}
 
-Für jedes erfolgreiche Projekt ist es wichtig, nicht nur die Anforderungen des Projekts, sondern auch die Rollen und Verantwortlichkeiten klar zu definieren.
+Für ein erfolgreiches Projekt ist es wichtig, nicht nur die Anforderungen des Projekts, sondern auch die Rollen und Verantwortlichkeiten klar zu definieren.
 
 ### Anwendungsbereich {#scope}
 
-Es ist sehr wichtig, einen klar definierten Anwendungsbereich für das Projekt zu haben. Scope informiert über die Akzeptanzkriterien und ermöglicht es Ihnen, eine Definition von done festzulegen.
+Es ist sehr wichtig, einen klar definierten Umfang für das Projekt zu haben. Der Umfang informiert über die Akzeptanzkriterien und ermöglicht es Ihnen, eine Definition des Erfüllten zu erstellen.
 
-Die erste Frage, die Sie sich stellen müssen, ist: &quot;Was versuche ich mit AEM Kopflos zu erreichen?&quot; Die Antwort sollte im Allgemeinen sein, dass Sie über eine Erlebnisanwendung verfügen oder in Zukunft verfügen werden, die Sie mit Ihren eigenen Entwicklungstools erstellt haben, nicht mit AEM. Bei dieser Erlebnisanwendung kann es sich um eine mobile App, eine Website oder eine andere Erlebnisanwendung für Endbenutzer handeln. Das Ziel der Verwendung AEM Headless besteht darin, Ihrer Erlebnisanwendung Inhalte zuzuführen, die in AEM mit den neuesten APIs erstellt, gespeichert und verwaltet werden, die AEM Headless aufrufen, um Inhalte oder sogar vollständig CRUD-Inhalte direkt aus Ihrer Erlebnisanwendung abzurufen. Wenn dies nicht der Fall ist, sollten Sie [zurück zur AEM Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) gehen und den Abschnitt finden, der besser zu dem passt, was Sie erreichen möchten.
+Die erste Frage, die Sie sich stellen müssen, lautet: &quot;Was versuche ich mit AEM Headless zu erreichen?&quot; Die Antwort sollte im Allgemeinen sein, dass Sie eine Erlebnisanwendung haben oder in Zukunft haben werden, die Sie mit Ihren eigenen Entwicklungs-Tools erstellt haben, nicht in Verbindung mit AEM. Bei dieser Erlebnisanwendung kann es sich um eine mobile App, eine Website oder eine andere Erlebnisanwendung für Endbenutzer handeln. Das Ziel der Verwendung von AEM Headless besteht darin, Ihre Erlebnisanwendung mit Inhalten zu versorgen, die in AEM erstellt, gespeichert und verwaltet werden, mit hochmodernen APIs, die AEM Headless aufrufen, um Inhalte oder sogar vollständig CRUD-Inhalte direkt aus Ihrer Erlebnisanwendung abzurufen. Wenn dies nicht das ist, was Sie tun möchten, sollten Sie [zurück zur AEM Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) gehen und den Abschnitt finden, der besser zu dem passt, was Sie erreichen möchten.
 
 ### Rollen und Zuständigkeiten {#roles-responsibilities}
 
-Die Rollen für jedes einzelne Projekt werden unterschiedlich sein, aber wichtige Aspekte, die im Inhalt AEM kostenlosen Entwicklung zu berücksichtigen sind, sind:
+Die Rollen für jedes einzelne Projekt variieren, aber wichtige Aspekte, die im Inhalt AEM Headless-Entwicklung zu berücksichtigen sind, sind:
 
 * [Administrator](#administrator)
 * [Inhaltsautor](#content-author)
-* [Content-Modeler](#content-modeler)
+* [Inhaltsmodellierung](#content-modeler)
 * [Entwickler](#developer)
 
 #### Administrator {#administrator}
 
-Der Administrator ist für die Basiskonfiguration und -konfiguration Ihres Systems verantwortlich. Der Administrator richtet beispielsweise Ihr Unternehmen im Benutzerverwaltungssystem der Adobe ein, das auf Identity Management System (IMS) verwiesen wird. Der Administrator ist der erste Benutzer des Unternehmens, der eine E-Mail-Einladung von der Adobe erhält, sobald Ihr Unternehmen von der Adobe innerhalb des IMS erstellt wurde. Der Administrator kann sich bei IMS anmelden und Benutzer anderer Personen hinzufügen.
+Der Administrator ist für die Basiseinrichtung und -konfiguration Ihres Systems verantwortlich. Beispielsweise richtet der Administrator Ihr Unternehmen im User Management-System der Adobe ein, auf das Identity Management System (IMS) verwiesen wird. Der Administrator ist der erste Benutzer des Unternehmens, der eine Einladung per E-Mail von Adobe erhält, sobald Ihre Organisation von Adobe in IMS erstellt wurde. Der Administrator kann sich bei IMS anmelden und Benutzer anderer Personen hinzufügen.
 
-Sobald die Benutzer vom Administrator konfiguriert wurden, erhalten sie Zugriff auf alle AEM Ressourcen, um ihre Arbeit als Mitarbeiter für die Bereitstellung der Erlebnisanwendung mit AEM Headless zu erledigen.
+Sobald die Benutzer vom Administrator konfiguriert wurden, erhalten sie die Berechtigungen für den Zugriff auf alle AEM Ressourcen, um ihre Arbeit als Beitragende für die Bereitstellung der Erlebnisanwendung mit AEM Headless durchzuführen.
 
-Der Administrator sollte der Benutzer sein, der AEM einrichtet und die Laufzeit-Umgebung vorbereitet, damit [Inhaltsersteller](#content-author) Inhalte erstellen und aktualisieren können und [Entwickler](#developer) APIs verwenden können, die Inhalte für ihre Experience-Anwendungen abrufen oder ändern.
+Der Administrator sollte der Benutzer sein, der AEM eingerichtet und die Laufzeitumgebung vorbereitet, damit [Inhaltsautoren](#content-author) Inhalte erstellen und aktualisieren können und [Entwickler](#developer) APIs verwenden können, die Inhalte für ihre Erlebnisanwendungen abrufen oder ändern.
 
 #### Inhaltsautor {#content-author}
 
-Inhaltsersteller erstellen und verwalten die Inhalte, die von der AEM kopfüber bereitgestellt werden. Inhaltsautoren verwenden AEM Funktionen wie Inhaltsfragmente und die Asset-Konsole, um ihre Inhalte zu verwalten.
+Inhaltsautoren erstellen und verwalten die Inhalte, die von AEM Headless bereitgestellt werden. Inhaltsautoren verwenden AEM Funktionen wie Inhaltsfragmente und die Konsole &quot;Assets&quot;, um ihren Inhalt zu verwalten.
 
-Autoren von Inhalten sollten die folgenden Best Practices beachten.
+Inhaltsautoren sollten die folgenden Best Practices beachten.
 
-#### Plan für die Lokale Anpassung {#localization}
+#### Lokalisierungsplan {#localization}
 
-Planung der Übersetzung und lokale Anpassung zu Beginn des Projektes. Betrachten Sie &quot;Internationalisierungs-Projektmanager&quot;als eine separate Person, deren Aufgabe es ist, zu definieren, welche Inhalte übersetzt werden sollen und welche nicht und welche übersetzten Inhalte von regionalen oder lokalen Inhaltsproduzenten geändert werden können.
+Planen Sie die Übersetzung und Lokalisierung am Anfang des Projekts. Betrachten Sie &quot;Internationalisierungs-Projektmanager&quot;als eine separate Person, deren Aufgabe es ist zu definieren, welche Inhalte übersetzt werden sollen und welche nicht und welche übersetzten Inhalte von regionalen oder lokalen Inhaltserstellern geändert werden können.
 
-Erstellen Sie einen Plan für die gewünschte Content-lokale Anpassung.
+Erstellen Sie einen Plan zur benötigten Lokalisierung von Inhalten.
 
-* Benötigen Sie nur verschiedene Sprachen oder auch eine Sprache, um regionale Besonderheiten zu berücksichtigen?
-* Benötigen Sie Rich-Media-Inhalte wie Bilder oder Videos, um für verschiedene Gebietsschemata unterschiedlich zu sein?
+* Benötigen Sie nur verschiedene Sprachen oder auch Sprachen, um regionale Besonderheiten zu übernehmen?
+* Benötigen Sie Rich-Media-Inhalte wie Bilder oder Videos, damit sie sich von Land zu Land unterscheiden?
 
-Achten Sie auf einen klaren Arbeitsablauf für Inhaltsaktualisierungen. Welchen Genehmigungsprozess muss das System unterstützen? Kann AEM genutzt Workflows werden, um diesen Prozess zu automatisieren?
+Machen Sie sich mit Ihrem Inhaltsaktualisierungs-Workflow vertraut. Was ist der Genehmigungsprozess, den das System unterstützen muss? Können AEM Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
-Beachten Sie, dass Ihre [Inhaltshierarchie](#content-hierarchy) genutzt werden kann, um die lokale Anpassung zu vereinfachen.
+Beachten Sie, dass Ihre [Inhaltshierarchie](#content-hierarchy) genutzt werden kann, um die Lokalisierung zu vereinfachen.
 
-Weitere Informationen zu AEM Tools für Workflows und lokale Anpassung finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+Weitere Informationen zu AEM Workflows und Lokalisierungs-Tools finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) .
 
-##### Nutzen Sie die Inhaltshierarchie {#content-hierarchy}
+##### Verwenden der Inhaltshierarchie {#content-hierarchy}
 
-Die Ordnerhierarchie kann zwei wichtige Probleme in Bezug auf Content-Management lösen:
+Die Ordnerhierarchie kann zwei wesentliche Probleme im Zusammenhang mit dem Content Management lösen:
 
-* [lokale Anpassung](#localization) : AEM verwaltet die lokale Anpassung von Inhalten durch Beibehaltung von Inhaltskopien in Gebietsschema-spezifischen Ordnern.
-* Unternehmen - Ordner werden verwendet, um eine Inhaltshierarchie zu definieren, die zur Unterstützung der lokale Anpassung und zur logischen Verwaltung von Inhaltsfragmenten erforderlich ist.
+* [Lokalisierung](#localization)  - AEM verwaltet die Lokalisierung von Inhalten, indem Kopien von Inhalten in gebietsschemaspezifischen Ordnern verwaltet werden.
+* Organisation - Ordner werden verwendet, um eine Inhaltshierarchie zu definieren, die zur Unterstützung der Lokalisierungsanforderungen sowie zur logischen Verwaltung von Inhaltsfragmenten erforderlich ist.
 
-AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu erkennen, dass Änderungen in der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind.](#developer) Daher kann eine klar definierte Hierarchie, die im Voraus klar festgelegt ist, für Ihre Autoren sehr hilfreich sein.
+AEM ermöglicht eine sehr flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu erkennen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind.](#developer) Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Ihre Inhaltsautoren äußerst hilfreich sein.
 
-Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzulassen (basierend auf Inhaltsfragmentmodellen). Es wird generell empfohlen, immer explizit anzugeben, welche Modelle für alle Ordner in der Hierarchie zulässig sind. Zulässige Inhalte für einen bestimmten Ordner angeben:
+Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzulassen (basierend auf Inhaltsfragmentmodellen). Es wird allgemein empfohlen, immer explizit anzugeben, welche Modelle für alle Ordner in der Hierarchie zulässig sind. Zulässige Inhalte für einen bestimmten Ordner angeben:
 
-* Verhindert, dass Inhaltsersteller Inhalte erstellen, die nicht in den Ordner gehören.
-* Optimiert den Inhaltserstellungsprozess durch Filtern der Inhaltstypen, die im Ordner während der Erstellung zulässig sind, sodass nur gültige Inhaltstypen angezeigt werden.
+* Verhindert, dass Inhaltsautoren Inhalte erstellen, die nicht zum Ordner gehören.
+* Optimiert den Inhaltserstellungsprozess, indem die Inhaltstypen gefiltert werden, die im Ordner während der Erstellung zulässig sind, sodass nur gültige Inhaltstypen angezeigt werden.
 
-Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Erstellen von kostenlosen Inhalten über Kanal hinweg zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Die Nutzung von Inhalten über mehrere Kanal hinweg verbessert die Effizienz der Inhaltsproduktion und das Änderungsmanagement erheblich.
+Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Headless-Content-Authoring kanalübergreifend zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungsmanagement erheblich verbessert.
 
-##### Gute Benennungskonventionen {#naming-conventions} einrichten
+##### Einrichten guter Benennungskonventionen {#naming-conventions}
 
-Inhaltsfragmentnamen müssen für Inhaltsersteller beschreibend sein. AEM behandelt das Escape- und/oder Abschneiden der verwendeten IDs auf Repository-Ebene transparent. Daher sollten die von den Autoren bereitgestellten logischen Namen immer lesbar sein und den Inhalt darstellen.
+Inhaltsfragmentnamen müssen für Inhaltsautoren beschreibend sein. AEM behandelt das Escapen und/oder Abschneiden der verwendeten IDs auf Repository-Ebene transparent. Daher sollten die von den Inhaltsautoren bereitgestellten logischen Namen immer lesbar sein und den Inhalt darstellen.
 
-* Ungültiger Name: `cta_btn_1`
+* Unangemessener Name: `cta_btn_1`
 * Guten Namen: `Call To Action Button`
 
-Weitere Dokumentation zu AEM Seitenbenennungskonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+Weitere Informationen zu AEM Seitenbenennungskonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) .
 
-##### Inhaltsverschachtelung nicht überschreiben {#content-nesting}
+##### Nicht überschreiben Inhalt verschachteln {#content-nesting}
 
-[Inhaltsfragmente ](#content-fragments) werden in AEM verwendet, um kopflosen Inhalt zu erstellen. AEM unterstützt bis zu zehn Ebenen der Verschachtelung von Inhalten für Inhaltsfragmente. Es ist jedoch wichtig zu beachten, dass AEM jeden im übergeordneten Inhaltsfragment definierten Verweis iterativ auflösen und dann prüfen müssen, ob in allen Geschwistern untergeordnete Verweise vorhanden sind. Diese Vorgänge können sich schnell ergänzen und zu einem Leistungsproblem werden.
+[Inhaltsfragmente ](#content-fragments) werden in AEM verwendet, um Headless-Inhalte zu erstellen. AEM unterstützt bis zu zehn Verschachtelungsebenen von Inhalten für Inhaltsfragmente. Beachten Sie jedoch, dass AEM alle im übergeordneten Inhaltsfragment definierten Verweise iterativ auflösen und dann überprüfen müssen, ob in allen gleichrangigen Elementen untergeordnete Verweise vorhanden sind. Diese Vorgänge können sich schnell addieren und zu einem Leistungsproblem werden.
 
-Als allgemeine Faustregel sollten Inhaltsfragmentverweise nicht über fünf Ebenen verschachtelt werden.
+Als allgemeine Faustregel gilt, dass Inhaltsfragmentverweise nicht über fünf Ebenen verschachtelt werden sollten.
 
-#### Content Modeler {#content-modeler}
+#### Inhaltsmodellierung {#content-modeler}
 
-Inhaltsmodellierer analysieren die Anforderungen für die Daten, die ohne Überschneidung bereitgestellt werden müssen, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM als [Inhaltsfragmentmodelle](#content-fragment-models) bezeichnet. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsersteller erstellen.
+Inhaltsmodellierer analysieren die Anforderungen an die Daten, die Headless-Bereitstellung erfordern, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM [Inhaltsfragmentmodelle](#content-fragment-models) genannt. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsautoren erstellen.
 
-Ein nützlicher Ansatz beim Definieren von Inhaltsfragmentmodellen besteht darin, Modelle zu erstellen, die den UX-Komponenten der Anwendung(en) zugeordnet sind, die den Inhalt verbrauchen.
+Ein nützlicher Ansatz bei der Definition von Inhaltsfragmentmodellen besteht darin, Modelle zu erstellen, die den UX-Komponenten der Anwendungen zugeordnet sind, die den Inhalt nutzen.
 
-Da die Inhaltsersteller bei der Erstellung neuer Inhalte kontinuierlich mit den Modellen interagieren, hilft ihnen die Ausrichtung der Modelle an der UX dabei, die daraus resultierende digitale Erfahrung zu visualisieren. Wenn Sie diese Ausrichtung einen Schritt weiter vorantreiben, können Sie den Inhaltsfragmentmodellen Symbole zuweisen, die das UX-Element darstellen, damit die Autoren intuitiv das richtige Modell anhand visueller Hinweise auswählen können.
+Da die Inhaltsautoren bei der Erstellung neuer Inhalte kontinuierlich mit den Modellen interagieren, hilft ihnen die Ausrichtung der Modelle an der UX dabei, das daraus resultierende digitale Erlebnis zu visualisieren. Wenn Sie diese Ausrichtung weiter vorantreiben, können Sie den Inhaltsfragmentmodellen, die das UX-Element darstellen, Symbole zuweisen, damit die Autoren anhand visueller Hinweise intuitiv das richtige Modell auswählen können.
 
 #### Entwickler {#developer}
 
-Entwickler sind dafür verantwortlich, die Inhalte, die kopfüber erstellt werden, in AEM für den Verbraucher zusammenzuführen, was oft eine einseitige Anwendung (SPA), progressive Web-App (PWA), ein Webshop oder ein anderer Dienst außerhalb von AEM sein kann.
+Entwickler sind dafür verantwortlich, die Inhalte, die direkt erstellt werden, AEM für den Verbraucher dieser Inhalte zusammenzuführen. Dabei kann es sich häufig um eine Einzelseiten-App (SPA), eine progressive Web-App (PWA), einen Webshop oder einen anderen AEM externen Dienst handeln.
 
-GraphQL dient als &quot;Kleber&quot; zwischen AEM und den Konsumenten von Kopflosen Inhalt. GraphQL ist die Sprache, die Abfragen für den erforderlichen Inhalt AEM.
+GraphQL dient als &quot;Kleber&quot;zwischen AEM und den Verbrauchern von Headless Content. GraphQL ist die Sprache, in der Abfragen für den erforderlichen Inhalt AEM.
 
 Entwickler sollten bei der Planung ihrer Abfragen einige grundlegende Empfehlungen beachten:
 
-* Abfragen sollten sich nicht auf einen festen Pfad (`ByPath`) zum Abrufen von Inhaltsfragmenten verlassen.
-   * [Inhaltsersteller haben vollständige Kontrolle über die ](#content-hierarchy) Hierarchie von Inhaltsfragmenten und können Änderungen vornehmen, die eine solche Abfrage unterbrechen würden.
-   * Abfragen sollten stattdessen auf Inhaltsfragmentmodellverweise mit dynamischen Abfragen zurückgreifen, um die Ergebnisse zu filtern und die gewünschte Nutzlast zu generieren.
-* Verwenden Sie für eine optimale Abfrage stets die beibehaltenen Abfragen in AEM. Diese werden später im Journey diskutiert.
-* GraphQL ist deklarativ nach dem Motto &quot;Fragen Sie genau, was Sie brauchen, und bekommen Sie genau das.&quot; Das bedeutet, dass Sie beim Erstellen von GraphQL-Abfragen immer `select *`-Abfragen vermeiden müssen, die Sie eventuell in einer relationalen Datenbank erstellen.
+* Bei Abfragen sollte kein fester Pfad (`ByPath`) zum Abrufen von Inhaltsfragmenten verwendet werden.
+   * [Inhaltsautoren haben vollständige Kontrolle über die ](#content-hierarchy) Hierarchie von Inhaltsfragmenten und können Änderungen vornehmen, die eine solche Abfrage unterbrechen würden.
+   * Bei Abfragen sollten stattdessen Inhaltsfragmentmodellverweise mit dynamischen Abfrageparametern verwendet werden, um die Ergebnisse zu filtern und die gewünschte Payload zu generieren.
+* Verwenden Sie für eine optimale Abfrageleistung immer persistente Abfragen in AEM. Diese werden später im Journey erläutert.
+* GraphQL ist deklarativ und folgt dem Motto &quot;Fragen Sie genau, was Sie benötigen und erhalten Sie genau das.&quot; Dies bedeutet, dass Sie beim Erstellen von GraphQL-Abfragen immer `select *`-Abfragen vermeiden, die Sie möglicherweise in einer relationalen Datenbank erstellen.
 
-Bei einer [typischen Implementierung ohne Kopfdaten mit AEM benötigt der Entwickler keine Programmierkenntnisse zu AEM.](#level-1)
+Für eine [typische Headless-Implementierung mit AEM,](#level-1) benötigt der Entwickler keine Programmierkenntnisse zu AEM.
 
 ### Leistungsanforderungen {#performance-requirements}
 
-Damit ein Projekt erfolgreich sein kann, muss die Leistung vor der Erstellung von Inhalten berücksichtigt werden.
+Damit ein Projekt erfolgreich ist, muss die Leistung berücksichtigt werden, bevor Inhalte erstellt werden.
 
-Sie müssen die Erwartungen Ihrer Benutzer/Besucher und deren Design verstehen. Legen Sie Ziele auf Dienstebene (SLOs) fest und messen Sie diese, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
+Sie müssen die Erwartungen Ihrer Benutzer/Besucher und deren Design verstehen. Legen Sie Service-Level-Ziele (SLOs) fest und messen Sie sie, um zu verstehen, ob Sie die Erwartungen Ihrer Benutzer erfüllen.
 
 #### Traffic-Muster {#traffic-patterns}
 
-Um Traffic- und Traffic-Muster zu verstehen, Beginn mit dem Sammeln, was Sie aus der Vergangenheit kennen, und dann Projektieren Sie das erwartete Wachstum in den nächsten Jahren. Einige der wichtigsten Variablen, die zu berücksichtigen sind:
+Um Traffic- und Traffic-Muster zu verstehen, beginnen Sie damit, das zu erfassen, was Sie aus der Vergangenheit kennen, und projizieren Sie dann in den nächsten Jahren das erwartete Wachstum. Zu beachten sind einige der wichtigsten Variablen:
 
-* Wie viele API-Aufrufe pro Stunde/Tag/Monat erwarten Sie und besteht Potenzial für Spitzen und Saisonabhängigkeit?
-* Wie viele verschiedene Inhaltsersteller gibt es?
-* Wie viele Autoren von Inhalten werden voraussichtlich gleichzeitig arbeiten?
-* Wie oft werden Inhaltsaktualisierungen vorgenommen?
-* Wie viele Inhaltsmodelle sind erforderlich?
+* Wie viele API-Aufrufe pro Stunde/Tag/Monat erwarten Sie und besteht ein Potenzial für Spitzen und Saisonabhängigkeit?
+* Wie viele verschiedene Inhaltsautoren gibt es?
+* Wie viele Inhaltsautoren erwarten Sie, dass sie gleichzeitig arbeiten?
+* Wie häufig werden Inhaltsaktualisierungen vorgenommen?
+* Wie viele Inhaltsmodelle werden benötigt?
 * Wie viele Instanzen von Modellen werden benötigt?
 
-#### Aktualisierungsfrequenz {#update-frequency}
+#### Aktualisierungshäufigkeit {#update-frequency}
 
-Oft gibt es verschiedene Abschnitte mit unterschiedlichen Häufigkeit von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen genau abstimmen zu können, ist es wichtig, dies zu verstehen. Dies ist auch für die [Inhaltsmodelle](#content-modeler) wichtig, da sie Modelle zur Darstellung Ihres Inhalts entwerfen. Betrachten Sie Folgendes:
+Oft gibt es bei verschiedenen Bereichen von Erlebnissen unterschiedliche Häufigkeit von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen optimieren zu können, ist es wichtig, dies zu verstehen. Dies ist auch für die [Inhaltsmodelle](#content-modeler) wichtig, da sie Modelle zur Darstellung Ihres Inhalts entwerfen. Beachten Sie:
 
-* Müssen einige Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
+* Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie nun die AEM Journey zum kostenlosen Entwickler abgeschlossen haben, sollten Sie:
+Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Journey abgeschlossen haben, sollten Sie:
 
-* Machen Sie sich mit den Grundlagen AEM kostenlosen Funktionen vertraut.
-* Erkennen Sie die Voraussetzungen für die Verwendung AEM kostenlosen Funktionen.
-* Achten Sie auf AEM Ebene der kostenlosen Integration.
+* Machen Sie sich mit den Grundlagen AEM Headless-Funktionen vertraut.
+* Machen Sie sich mit den Voraussetzungen für die Verwendung AEM Headless-Funktionen vertraut.
+* Beachten Sie AEM Headless-Integrationsstufen.
 * Sie können Ihr Projekt in Bezug auf den Umfang definieren.
 
-Sie sollten Ihre AEM kopflosen Journey fortsetzen, indem Sie sich das Dokument [Pfad zu Ihrem Erlebnis mit AEM Headless](path-to-first-experience.md) ansehen, in dem Sie erfahren, wie Sie die erforderlichen Tools einrichten und wie Sie beginnen, über die Modellierung Ihrer Daten in AEM nachzudenken.
+Sie sollten Ihre AEM Headless-Journey fortsetzen, indem Sie sich das Dokument [Pfad zu Ihrem Erlebnis mit AEM Headless](path-to-first-experience.md) ansehen. Hier erfahren Sie, wie Sie die erforderlichen Tools einrichten und mit der Modellierung Ihrer Daten in AEM beginnen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, zum nächsten Teil der Journey für die Entwicklung ohne Kopfdaten zu wechseln, indem Sie das Dokument [Pfad zu Ihrem ersten Erlebnis mit AEM Headless überprüfen. Es folgen jedoch einige zusätzliche optionale Ressourcen, die einen tieferen Einstieg in einige der in diesem Dokument erwähnten Konzepte ermöglichen, die jedoch nicht weiter auf der Journey ohne Kopfdaten ausgeführt werden müssen.](path-to-first-experience.md)
+Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Journey zu wechseln, indem Sie das Dokument [Pfad zu Ihrem ersten Erlebnis mit AEM Headless,](path-to-first-experience.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie müssen jedoch nicht mit der Headless-Journey weitermachen.
 
-* [Eine Einführung in die Architektur von Adobe Experience Manager als Cloud Service](/help/core-concepts/architecture.md)  - Verstehen AEM als Struktur eines Cloud Service
-* [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)  ohne Kopf - Nutzen Sie diese praktischen Übungen, um zu untersuchen, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an kopflosen Endpunkten mit AEM nutzen können, und zu entscheiden, was für Sie am besten geeignet ist.
-* [Headless-Content-Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Die Authentifizierung über AdobeID ist erforderlich.
-* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Dieses GitHub-Projekt enthält Beispielanwendungen, die AEM GraphQL APIs hervorheben.
-* [Authoring-Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)  - Technische Dokumentation für die Authoring-Umgebung von AEM, einschließlich Informationen zum Einrichten der Autoren-Veröffentlichung
-* [Veröffentlichungsseiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  - Technische Dokumentation für die Veröffentlichung von Inhalten auf AEM
-* [Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md)  - Technische Dokumentation der Seitenbenennungsbeschränkungen in AEM
+* [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md)  - Grundlegendes zur AEM als Cloud Service-Struktur
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)  - Nutzen Sie diese praxisnahen Tutorials, um zu untersuchen, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM nutzen können, und wählen Sie aus, was für Sie am besten geeignet ist.
+* [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
+* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Dieses GitHub-Projekt enthält Beispielanwendungen, die AEM GraphQL-APIs hervorheben.
+* [Authoring Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)  - Technische Dokumentation für die Authoring-Umgebung von AEM einschließlich Details zur Einrichtung von Autoren- und Veröffentlichungsinstanzen
+* [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  - Technische Dokumentation zur Veröffentlichung von Inhalten auf AEM
+* [Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md)  - Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM
 * [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md)  - Technische Dokumentation zu AEM leistungsstarken Übersetzungsfunktionen
 * [AEM Workflows](/help/sites-cloud/authoring/workflows/overview.md)  - Technische Dokumentation zur Automatisierung von Workflows in AEM
 * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)  - Technische Dokumentation für Inhaltsfragmente.
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)  - Technische Dokumentation für Inhaltsfragmentmodelle.
-* [GraphQL Technische Dokumentation](https://graphql.org)  - Die GraphQL-Definition (externer Link)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)  - Technische Dokumentation, die erklärt, wie Anforderungen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)  - Technische Dokumentation, in der das Erstellen und Ändern von Inhaltsfragmenten (und anderen Assets) erläutert wird
-* [Beständige Abfragen](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching)  - Technische Dokumentation zu beständigen Abfragen in AEM
-* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)  - Eine vollständige Diskussion über die in AEMverfügbaren Stufen der Integration ohne Kopf
+* [Technische Dokumentation zu GraphQL](https://graphql.org)  - Die GraphQL-Definition (externer Link)
+* [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md)  - Technische Dokumentation, in der erläutert wird, wie Anforderungen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden
+* [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md)  - Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden
+* [Beständige Abfragen](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching)  - Technische Dokumentation zu persistenten Abfragen in AEM
+* [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md)  - Eine vollständige Diskussion der Headless-Integration-Ebenen, die in AEM verfügbar sind
