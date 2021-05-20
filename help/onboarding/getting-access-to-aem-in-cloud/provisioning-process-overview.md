@@ -1,25 +1,24 @@
 ---
 title: Bereitstellungsprozess - Übersicht
 description: Bereitstellungsprozess - Übersicht
-translation-type: tm+mt
 source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 12%
 
 ---
 
 
-# AEM als Cloud Service: Einstieg und Zugriff
+# AEM als Cloud Service: Onboarding und Zugriff
 
-Auf dieser Seite werden die Selbsthilfe-Ressourcen zur Bereitstellung für Experience Manager als Cloud Service Liste.
+Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zum Bereitstellungsprozess für Experience Manager as a Cloud Service.
 
-## Übersicht über AEM als Cloud Service-Bereitstellungsprozess
+## Übersicht über AEM as a Cloud Service-Bereitstellungsprozess
 
 Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 * Zugriff auf AEM als Cloud Service
-* Adobe Experience Manager als Cloud Service für den An- und Bereitstellungsprozess
+* Adobe Experience Manager as a Cloud Service Onboarding and Provisioning Process
 * Hilfe und Ressourcen
 
 
@@ -27,15 +26,15 @@ Dieser Abschnitt behandelt wichtige Artikel zu folgenden Themen:
 
 Sobald die automatische Bereitstellung abgeschlossen ist:
 
-* Zugriffsrechte gewährt - Adobe wird eine Organisation innerhalb der Adobe Identity Management System (IMS) erstellen
-* Der festgelegte Administrator hat standardmäßig Administratorberechtigungen
-* Administratoren können über die Admin Console Benutzer und Rollen für weitere Teammitglieder hinzufügen
-* Überprüfen Sie rollenbasierte Berechtigungen für Benutzer, um Berechtigungszuweisungen in Cloud Manager festzulegen.
+* Gewährte Zugriffsrechte - Adobe erstellt ein Unternehmen innerhalb des Adobe Identity Management Systems (IMS).
+* Der angegebene Administrator hat standardmäßig Administratorberechtigungen
+* Administratoren können über die Admin Console Benutzer und Rollen für zusätzliche Teammitglieder hinzufügen
+* Überprüfen rollenbasierter Berechtigungen für Benutzer, um Berechtigungszuweisungen in Cloud Manager zu bestimmen
 
 > ![processouview.jpg](./assets/processOverview.jpg)
 
 
-Weitere Informationen finden Sie unter [An-Bord-Experience Manager als Cloud Service auf Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+Weitere Informationen finden Sie unter [Einstieg in Experience Manager als Cloud Service auf Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### Ressourcen und Links
 
@@ -44,34 +43,33 @@ Weitere Informationen finden Sie unter [An-Bord-Experience Manager als Cloud Ser
 • [Zugriff auf Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
-## Adobe Experience Manager als Cloud Service-Onboarding-Prozess
+## Adobe Experience Manager as a Cloud Service Onboarding-Prozess
 
-### 1. Trigger für die automatische Bereitstellung von Bestellungen
+### 1. Trigger für die automatische Bereitstellung von Bestellungen.
 
-### 2. fahrzeugseitige Organisationen nach Adobe Admin Console:
+### 2. Integrierte Organisationen für Adobe Admin Console:
 
 >   ![processouview2.jpg](./assets/processOverview2.jpg)
-
 * Systemadministrator:
-   * Bereitstellung AEM Programme und Umgebung.
-   * Navigieren Sie zur Admin Console für administrative Aufgaben.
-   * Fordert eine Domäne zur Bestätigung des Eigentums an der jeweiligen Domäne an
-   * Richtet Benutzerordner ein.
+   * Bereitstellung AEM Programme und Umgebungen.
+   * Navigieren Sie zu Admin Console für Verwaltungsaufgaben.
+   * Fordert eine Domain zur Bestätigung des Eigentums an der jeweiligen Domain an
+   * Richtet Benutzerverzeichnisse ein.
    * IDP-Konfiguration.
 * AEM-Administrator:
-   * Verwalten Sie lokale Gruppen, Berechtigungen und Berechtigungen.
+   * Verwalten lokaler Gruppen, Berechtigungen und Berechtigungen
 
-### 3. Integrierte Benutzer und Zugriff in Admin Console verwalten:
+### 3. Benutzer einbinden und Zugriff in Admin Console verwalten:
 
 >   ![processouview3.jpg](./assets/processOverview3.jpg)
 
-Drei Methoden, um Benutzer je nach Größe und Präferenz zu berücksichtigen:
-* Manuelles Erstellen von Benutzern in der Admin Console
+Je nach Größe und Voreinstellung können Benutzer mit drei Methoden integriert werden:
+* Manuelles Erstellen von Benutzern in Admin Console
 * .csv-Datei hochladen
-* Synchronisieren Sie Benutzer von Enterprise Active
+* Synchronisieren von Benutzern von Enterprise Active
 Verzeichnis
 
-### 4. Admin konfiguriert die Organisation und gewährt Benutzern und Gruppen Zugriff auf Umgebung
+### 4. Der Administrator konfiguriert Organisationen und gewährt Benutzern und Gruppen Zugriff auf Umgebungen
 
 ## Hilfe und Ressourcen
 
