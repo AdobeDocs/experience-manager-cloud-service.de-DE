@@ -5,10 +5,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 89%
+source-wordcount: '981'
+ht-degree: 88%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 89%
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
    + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Einrichten der Enterprise Team Development für AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [Einrichten der Enterprise-Team-Entwicklung für AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
    + [Struktur von AEM-Projekten](developing/introduction/aem-project-content-package-structure.md)
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)
@@ -72,17 +72,17 @@ ht-degree: 89%
    + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + Headless Developer Journey {#headless-journey}
-      + [Verstehen Sie die Kopflose in AEM](developing/headless-journey/overview.md)
-      + [Weitere Informationen zur CMS-Headless-Entwicklung](developing/headless-journey/learn-about.md)
+   + Headless-Entwickler-Journey {#headless-journey}
+      + [Grundlegendes zu Headless in AEM](developing/headless-journey/overview.md)
+      + [Erfahren Sie mehr über die Entwicklung von CMS Headless](developing/headless-journey/learn-about.md)
       + [Erste Schritte mit AEM Headless als Cloud Service](developing/headless-journey/getting-started.md)
-      + [Pfad zum ersten Erlebnis mit AEM Kopflos](developing/headless-journey/path-to-first-experience.md)
-      + [So modellieren Sie Ihren Inhalt AEM Inhaltsmodelle](developing/headless-journey/model-your-content.md)
-      + [Zugriff auf Ihre Inhalte über AEM Versand-APIs](developing/headless-journey/access-your-content.md)
-      + [Aktualisieren von Inhalten über AEM Assets-APIs](developing/headless-journey/update-your-content.md)
+      + [Pfad Ihres ersten Erlebnisses mit AEM Headless](developing/headless-journey/path-to-first-experience.md)
+      + [So modellieren Sie Ihren Inhalt als AEM Inhaltsmodelle](developing/headless-journey/model-your-content.md)
+      + [Zugriff auf Ihren Inhalt über AEM Versand-APIs](developing/headless-journey/access-your-content.md)
+      + [Aktualisieren Ihres Inhalts über AEM Assets-APIs](developing/headless-journey/update-your-content.md)
       + [Wie man alles zusammensetzt](developing/headless-journey/put-it-all-together.md)
-      + [Wie Sie mit Ihrem kostenlosen Programm live gehen](developing/headless-journey/go-live.md)
-      + [Optional - Erstellen von Einzelseitenanwendungen mit AEM](developing/headless-journey/create-spa.md)
+      + [Wie Sie mit Ihrer Headless-Anwendung live gehen](developing/headless-journey/go-live.md)
+      + [Optional - So erstellen Sie Einzelseitenanwendungen mit AEM](developing/headless-journey/create-spa.md)
    + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
       + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](developing/introduction/develop-wknd-tutorial.md)
@@ -138,7 +138,9 @@ ht-degree: 89%
       + [SPA-Referenzdokumente](developing/hybrid/reference-materials.md)
    + Headless-Experience-Management {#headless}
       + [Headless und AEM](developing/headless/introduction.md)
+      + [Headless-Entwickler-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + Anleitungen für den Einstieg {#getting-started}
+         + [Einführung](developing/headless/getting-started/introduction.md)
          + [Erstellen einer Konfiguration](developing/headless/getting-started/create-configuration.md)
          + [Erstellen eines Inhaltsfragmentmodells](developing/headless/getting-started/create-content-model.md)
          + [Erstellen eines Asset-Ordners](developing/headless/getting-started/create-assets-folder.md)
@@ -166,7 +168,7 @@ ht-degree: 89%
    + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
-   + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
+   + [Der Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + Personalisierung  {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Konfigurieren von ContextHub ](developing/personalization/configuring-contexthub.md)
