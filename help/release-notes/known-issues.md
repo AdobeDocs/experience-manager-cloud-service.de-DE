@@ -1,14 +1,13 @@
 ---
 title: Bekannte Probleme
 description: Spezifische Versionshinweise zu bekannte Problemen mit Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
-
 
 # Bekannte Probleme {#known-issues}
 
@@ -44,6 +43,6 @@ Einige Funktionen von Adobe Experience Manager-Assets, die von den grundlegenden
 >[!MORELIKETHIS]
 >
 >* [Wichtige Änderungen an AEM](aem-cloud-changes.md)
->* [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
->* [Versionshinweise](home.md)
+* [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
+* [Versionshinweise](home.md)
 
