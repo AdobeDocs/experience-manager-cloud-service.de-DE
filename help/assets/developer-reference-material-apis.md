@@ -2,16 +2,15 @@
 title: Entwicklerreferenzen für  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets HTTP API
+feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1394'
 ht-degree: 92%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] Anwendungsfälle, APIs und Referenzmaterial für Entwickler  {#assets-cloud-service-apis}
 
@@ -23,7 +22,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 >[!CAUTION]
 >
->Einige APIs bestehen weiterhin, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet). Verwenden Sie diese APIs nach Möglichkeit nicht.
+>Einige APIs existieren weiterhin, werden jedoch nicht aktiv unterstützt (mit einem × gekennzeichnet). Verwenden Sie diese APIs nach Möglichkeit nicht.
 
 | Unterstützungsebene | Beschreibung |
 | ------------- | --------------------------- |
@@ -34,40 +33,40 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
-| Original erstellen | they | × | - | × | × | - |
-| Original lesen | - | × | they | they | they | - |
-| Original aktualisieren | they | × | they | × | × | - |
-| Original löschen | - | they | - | they | they | - |
-| Original kopieren | - | they | - | they | they | - |
-| Original verschieben | - | they | - | they | they | - |
+| Original erstellen | verwalten | × | - | × | × | - |
+| Original lesen | - | × | verwalten | verwalten | verwalten | - |
+| Original aktualisieren | verwalten | × | verwalten | × | × | - |
+| Original löschen | - | verwalten | - | verwalten | verwalten | - |
+| Original kopieren | - | verwalten | - | verwalten | verwalten | - |
+| Original verschieben | - | verwalten | - | verwalten | verwalten | - |
 | **Metadaten** |  |  |  |  |  |  |
-| Metadaten erstellen | - | they | they | they | they | - |
-| Metadaten lesen | - | they | - | they | they | - |
-| Metadaten aktualisieren | - | they | they | they | they | - |
-| Metadaten löschen | - | they | they | they | they | - |
-| Metadaten kopieren | - | they | - | they | they | - |
-| Metadaten verschieben | - | they | - | they | they | - |
+| Metadaten erstellen | - | verwalten | verwalten | verwalten | verwalten | - |
+| Metadaten lesen | - | verwalten | - | verwalten | verwalten | - |
+| Metadaten aktualisieren | - | verwalten | verwalten | verwalten | verwalten | - |
+| Metadaten löschen | - | verwalten | verwalten | verwalten | verwalten | - |
+| Metadaten kopieren | - | verwalten | - | verwalten | verwalten | - |
+| Metadaten verschieben | - | verwalten | - | verwalten | verwalten | - |
 | **Inhaltsfragmente** |  |  |  |  |  |  |
-| Inhaltsfragmente erstellen | - | they | - | they | - | - |
-| Inhaltsfragmente lesen | - | they | - | they | - | they |
-| Inhaltsfragmente aktualisieren | - | they | - | they | - | - |
-| Inhaltsfragmente löschen | - | they | - | they | - | - |
-| Inhaltsfragmente kopieren | - | they | - | they | - | - |
-| Inhaltsfragmente verschieben | - | they | - | they | - | - |
+| Inhaltsfragmente erstellen | - | verwalten | - | verwalten | - | - |
+| Inhaltsfragmente lesen | - | verwalten | - | verwalten | - | verwalten |
+| Inhaltsfragmente aktualisieren | - | verwalten | - | verwalten | - | - |
+| Inhaltsfragmente löschen | - | verwalten | - | verwalten | - | - |
+| Inhaltsfragmente kopieren | - | verwalten | - | verwalten | - | - |
+| Inhaltsfragmente verschieben | - | verwalten | - | verwalten | - | - |
 | **Versionen** |  |  |  |  |  |  |
-| Version erstellen | they | they | - | - | - | - |
-| Version lesen | - | they | - | - | - | - |
-| Version löschen | - | they | - | - | - | - |
+| Version erstellen | verwalten | verwalten | - | - | - | - |
+| Version lesen | - | verwalten | - | - | - | - |
+| Version löschen | - | verwalten | - | - | - | - |
 | **Ordner** |  |  |  |  |  |  |
-| Ordner erstellen | they | they | - | they | - | - |
-| Ordner lesen | - | they | - | they | - | - |
-| Ordner löschen | they | they | - | they | - | - |
-| Ordner kopieren | they | they | - | they | - | - |
-| Ordner verschieben | they | they | - | they | - | - |
+| Ordner erstellen | verwalten | verwalten | - | verwalten | - | - |
+| Ordner lesen | - | verwalten | - | verwalten | - | - |
+| Ordner löschen | verwalten | verwalten | - | verwalten | - | - |
+| Ordner kopieren | verwalten | verwalten | - | verwalten | - | - |
+| Ordner verschieben | verwalten | verwalten | - | verwalten | - | - |
 
 ## Asset-Upload {#asset-upload-technical}
 
-Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mit der HTTP-API direkt in die Cloud-Datenspeicherung hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
+Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
 1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
@@ -118,8 +117,8 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 * `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie der Initiierungsanfrage angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadURIs` (Array): Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, in die der binäre Inhalt hochgeladen werden soll (siehe [Hochladen der Binärdatei](#upload-binary)).
-* `minPartSize` (Nummer): Die Mindestlänge (in Byte) der Daten, die einem der  `uploadURIs`bei mehr als einem URI bereitgestellt werden können.
-* `maxPartSize` (Nummer): Die maximale Länge (in Byte) von Daten, die für einen der URI bereitgestellt werden können,  `uploadURIs`wenn mehrere URI vorhanden sind.
+* `minPartSize` (Zahl): Die Mindestlänge (in Bytes) der Daten, die für eine der  `uploadURIs`bereitgestellt werden können, wenn mehr als eine URI vorhanden ist.
+* `maxPartSize` (Zahl): Die maximale Länge (in Bytes) der Daten, die für eine der  `uploadURIs`bereitgestellt werden können, wenn mehr als eine URI vorhanden ist.
 
 ### Hochladen der Binärdatei {#upload-binary}
 
@@ -143,9 +142,9 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `mimeType` | Zeichenfolge | Erforderlich | Der HTTP-Content-Typ der Binärdatei, wie in den Initiierungsdaten angegeben. |
 | `uploadToken` | Zeichenfolge | Erforderlich | Upload-Token für die Binärdatei, wie in den Initiierungsdaten angegeben. |
 | `createVersion` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, erstellt [!DNL Experience Manager] eine neue Version des Assets. |
-| `versionLabel` | Zeichenfolge | optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
-| `versionComment` | Zeichenfolge | optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
-| `replace` | Boolesch | optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
+| `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
+| `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
+| `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
 
 >[!NOTE]
 Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
