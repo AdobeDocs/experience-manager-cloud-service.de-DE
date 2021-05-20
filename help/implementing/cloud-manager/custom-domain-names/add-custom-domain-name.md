@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 * Domain-Namen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
 
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden. Domains können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domains werden auf der Autorenseite nicht unterstützt.
+
+* AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
 
 * Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domains pro Umgebung hosten.
 
