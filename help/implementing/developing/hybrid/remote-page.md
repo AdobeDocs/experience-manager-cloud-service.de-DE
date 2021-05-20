@@ -2,7 +2,6 @@
 title: Die RemotePage-Komponente
 description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPAs in AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-translation-type: tm+mt
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
@@ -20,21 +19,21 @@ Die RemotePage-Komponente ruft alle erforderlichen Assets aus dem generierten `a
 
 * Mit RemotePage können Sie die Skripte und Stylesheets eines SPA im Textkörper einer AEM Seitenkomponente einfügen.
 * Die Virtual Frontend-Komponenten ermöglichen es, Abschnitte im AEM SPA Editor als bearbeitbar zu markieren.
-* Gemeinsam kann ein SPA, der auf einer anderen Domäne gehostet wird, in AEM editierbar gemacht werden.
+* Gemeinsam kann ein auf einer anderen Domäne gehosteter SPA in AEM bearbeitbar gemacht werden.
 
-Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artikel [Bearbeiten eines externen SPA innerhalb AEM](editing-external-spa.md).
+Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artikel [Bearbeiten eines externen SPA in AEM](editing-external-spa.md) .
 
 ## Voraussetzungen {#requirements}
 
 * CORS in der Entwicklung aktivieren
 * Remote-URL in den Seiteneigenschaften konfigurieren
 * SPA in AEM rendern
-* Die Webanwendung muss ein Bundler-Asset-Manifest wie eine der folgenden verwenden und eine `asset-manifest.json`-Datei im Domänenstamm bereitstellen, die in einer `entrypoints property`-Liste aller zu ladenden CSS- und JS-Dateien  wird:
+* Die Webanwendung muss ein Bundler-Asset-Manifest wie eines der folgenden verwenden und eine `asset-manifest.json`-Datei im Domänenstamm bereitstellen, die in einem `entrypoints property` alle zu ladenden CSS- und JS-Dateien auflistet:
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-      ![Beispiel für Einstiegspunkte-Eigenschaft](assets/asset-manifest-entrypoints.png)
-* Die Anwendung muss in der Lage sein, unter dem `body`-Element in einem `<div id="root"></div>` zu initialisieren. Wenn ein anderes Markup erwartet wird, damit die App instanziiert wird, muss dies in den HTML-Skripten der Proxykomponente mit einem `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
+      ![Beispiel für Einstiegspunkteigenschaft](assets/asset-manifest-entrypoints.png)
+* Die Anwendung muss in der Lage sein, unter dem Element `body` in einem `<div id="root"></div>` zu initialisieren. Wenn für die Instanziierung der App ein anderes Markup erwartet wird, muss dies in den HTL-Skripten der Proxy-Komponente mit dem Wert `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
 
 ## Beschränkungen {#limitations}
 
