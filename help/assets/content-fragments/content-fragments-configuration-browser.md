@@ -1,10 +1,9 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
+description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um AEM leistungsstarken Funktionen für die Headless-Bereitstellung zu nutzen.
 feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '288'
@@ -14,7 +13,7 @@ ht-degree: 73%
 
 # Inhaltsfragmente – Konfigurations-Browser {#content-fragments-configuration-browser}
 
-Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren können, um AEM leistungsstarken Funktionen für kostenlose Versand zu nutzen.
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um AEM leistungsstarken Funktionen für die Headless-Bereitstellung zu nutzen.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
@@ -27,8 +26,8 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
->* Die Option **Create** steht nicht zur Erstellung neuer Modelle zur Verfügung.
->* können Sie nicht [die Sites-Konfiguration auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
+>* Die Option **Erstellen** steht nicht zum Erstellen neuer Modelle zur Verfügung.
+>* Sie können nicht [die Sites-Konfiguration auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
 
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
