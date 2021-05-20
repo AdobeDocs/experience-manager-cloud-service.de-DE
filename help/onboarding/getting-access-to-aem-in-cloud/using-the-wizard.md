@@ -1,14 +1,13 @@
 ---
 title: Verwenden des Assistenten
 description: Verwenden des Assistenten – Cloud Services
-translation-type: tm+mt
-source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
+exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden des Assistenten {#using-wizard-to-create-an-aem-application-project}
 
