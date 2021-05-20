@@ -1,14 +1,13 @@
 ---
 title: Arbeiten mit Workflows
 description: Workflows in AEM ermöglichen es Ihnen, eine Reihe von Schritten zu automatisieren, die auf einer Seite oder bei einem Asset durchgeführt werden.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Workflows {#working-with-workflows}
 
@@ -27,5 +26,5 @@ In der Regel gilt:
 
 Die folgenden Seiten behandeln:
 
-* [Anwenden von Workflows auf Seiten ](/help/sites-cloud/authoring/workflows/applying.md)
+* [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md)
 * [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
