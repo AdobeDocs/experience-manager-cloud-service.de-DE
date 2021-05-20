@@ -8,7 +8,6 @@ content-type: reference
 feature: 3D-Assets
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '2248'
@@ -22,11 +21,11 @@ Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als e
 
 * Veröffentlichen von 3D-Assets mit einem Klick (mithilfe von **[!UICONTROL Quick Publish]** in der Symbolleiste) zum Generieren einer URL.
 * Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Viewer-Vorgabe „Dimensional“, bereitgestellt von Adobe Dimension.
-* Mit der 3D-Media-WCM-Komponente können Sie Ihren Adobe Experience Manager Sites-Seiten ganz einfach 3D-Elemente hinzufügen.
+* Mit der 3D-Medien-WCM-Komponente können Sie Ihren Adobe Experience Manager Sites-Seiten einfach 3D-Assets hinzufügen.
 
 Für die Verwendung von 3D-Assets in Dynamic Media ist keine zusätzliche Installation erforderlich.
 
-![Schuh in 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
+![Schuhe in 3D](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -84,7 +83,7 @@ In diesem Abschnitt wird beschrieben, wie Sie 3D-Assets auf zwei verschiedene Ar
 
 Der interaktive 3D-Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
-Die zum Öffnen eines 3D-Assets in der Ansicht der Seite &quot;Asset-Details&quot;benötigte Zeit hängt von verschiedenen Faktoren ab. den folgenden Faktoren abhängt:
+Die Zeit, die zum Öffnen eines 3D-Assets in der Seitenansicht &quot;Asset-Details&quot;benötigt wird, hängt von verschiedenen Faktoren ab. den folgenden Faktoren abhängt:
 
 * Bandbreite zum Server.
 * Latenzen zum Server.
@@ -102,7 +101,7 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 
 Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-media/previewing-assets.md).
 
-**So können Sie ein 3D-Asset auf der Seite mit den Asset-Details Ansicht und damit interagieren:**
+**So zeigen Sie ein 3D-Asset auf der Seite &quot;Asset-Details&quot;an und interagieren mit ihm:**
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 
@@ -112,16 +111,16 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-
 1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 1. Navigieren Sie zu einem 3D-Asset, das Sie anzeigen möchten.
 1. Um das Asset auf der Seite &quot;Details&quot;zu öffnen, tippen Sie auf die Karte des 3D-Assets.
-1. Führen Sie auf der Seite &quot;Details&quot;für das 3D-Asset einen der folgenden Schritte aus:
+1. Führen Sie auf der Detailseite für das 3D-Asset einen der folgenden Schritte aus:
 
-   | Anzeigen | Beschreibung | Mausaktion | Touch-Screen-Aktion |
+   | Anzeigen | Beschreibung | Mausaktion | Aktion auf dem Touchscreen |
    | --- | --- | --- | --- |
-   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken Sie mit der linken Maustaste und ziehen Sie. | Drücken Sie mit einem Finger und ziehen Sie. |
-   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken Sie mit der rechten Maustaste und ziehen Sie. | Drücken Sie die Zwei-Finger-Taste und ziehen Sie. |
-   | **Zoomen der Kamera** | Verschieben Sie die Bereiche in der 3D-Szene ein- und aus. | Bildlaufrad | Zweifinger-Pinch-Gesten. |
-   | **Kamera neu einstellen** | Setzen Sie die Kamera auf einen Punkt auf einem Objekt in der 3D-Szene zurück. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie unten rechts auf der Seite auf das Symbol &quot;Zurücksetzen&quot;, um die Zielgruppe der Ansicht in der Mitte des 3D-Assets wiederherzustellen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
+   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
+   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Pinch mit zwei Fingern. |
+   | **Kamera neu zentrieren** | Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
+   | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
 
 1. Tippen Sie in der linken oberen Ecke der Seite auf **[!UICONTROL Schließen]**, um zur Seite „Assets“ zurückzukehren.
 
@@ -139,7 +138,7 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-
 
 1. Führen Sie während sich die Web-Seite im **[!UICONTROL Bearbeitungsmodus]** befindet, einen der folgenden Schritte aus:
 
-   * Klicken Sie rechts oben auf der Seite auf **[!UICONTROL Vorschau]**, um **[!UICONTROL Vorschau]** zu starten.
+   * Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Vorschau]** , um den Modus **[!UICONTROL Vorschau]** aufzurufen.
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
 
 Ein vollständig interaktives 3D-Asset, wie im    ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
@@ -147,14 +146,14 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
 
-   | Anzeigen | Beschreibung | Mausaktion | Touch-Screen-Aktion |
+   | Anzeigen | Beschreibung | Mausaktion | Aktion auf dem Touchscreen |
    | --- | --- | --- | --- |
-   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken Sie mit der linken Maustaste und ziehen Sie. | Drücken Sie mit einem Finger und ziehen Sie. |
-   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken Sie mit der rechten Maustaste und ziehen Sie. | Drücken Sie die Zwei-Finger-Taste und ziehen Sie. |
-   | **Zoomen der Kamera** | Verschieben Sie die Bereiche in der 3D-Szene ein- und aus. | Bildlaufrad | Zweifinger-Pinch-Gesten. |
-   | **Kamera neu einstellen** | Setzen Sie die Kamera auf einen Punkt auf einem Objekt in der 3D-Szene zurück. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie unten rechts auf der Seite auf das Symbol &quot;Zurücksetzen&quot;, um die Zielgruppe der Ansicht in der Mitte des 3D-Assets wiederherzustellen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
+   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
+   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Verschieben Sie Bereiche in die 3D-Szene ein- und aus ihnen. | Scrollen Sie mit dem Mausrad. | Pinch mit zwei Fingern. |
+   | **Kamera neu zentrieren** | Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
+   | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 
@@ -162,7 +161,7 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 
 * [Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage](#adding-three-d-media-component-to-page-template)
 * [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-three-d-media-component-to-a-web-page)
-   * [Optional - Konfigurieren der 3D-Medienkomponente](#configuring-the-three-d-component)
+   * [Optional - Konfigurieren der 3D-Medien-Komponente](#configuring-the-three-d-component)
 * [Zuweisen eines 3D-Assets zur 3D-Medien-Komponente](#assigning-a-three-d-asset-to-the-component)
 
 ## Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage {#adding-three-d-media-component-to-page-template}
@@ -170,11 +169,11 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 1. Öffnen Sie **[!UICONTROL Tools > Allgemein > Vorlagen]**.
 1. Navigieren Sie zu der Seitenvorlage, in der Sie die 3D-Komponente aktivieren möchten, und wählen Sie sie aus.
 1. Um die Vorlage zu öffnen, tippen Sie auf **[!UICONTROL Bearbeiten]**.
-1. Wählen Sie rechts oben auf der Seite im Dropdown-Menü **[!UICONTROL Struktur]** aus, falls noch nicht aktiv.
+1. Wählen Sie rechts oben auf der Seite im Dropdown-Menü den Modus **[!UICONTROL Struktur]** aus, falls er noch nicht aktiv ist.
 
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
-1. Um einen leeren Bereich auszuwählen und die zugehörige Symbolleiste zu öffnen, tippen Sie auf den leeren Bereich im Container **[!UICONTROL Layout]**.
+1. Um einen leeren Bereich auszuwählen und die zugehörige Symbolleiste zu öffnen, tippen Sie im Bereich **[!UICONTROL Layout-Container]** auf den leeren Bereich.
 1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Richtlinie]**, um den **[!UICONTROL Richtlinien-Editor]** zu öffnen.
 1. Scrollen Sie im Abschnitt **[!UICONTROL Eigenschaften]** auf der Registerkarte **[!UICONTROL Zulässige Komponenten]** zu **[!UICONTROL Dynamic Media]**, erweitern Sie dann die Liste und aktivieren Sie die Option **[!UICONTROL 3D-Medien]**.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern und den **[!UICONTROL Richtlinien-Editor]** zu schließen.
@@ -183,12 +182,12 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 
 ## Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite {#adding-the-three-d-media-component-to-a-web-page}
 
-Wenn Sie Experience Manager als Web-Content-Management-System verwenden, können Sie Ihren Webseiten mithilfe der 3D-Medienkomponente 3D-Elemente hinzufügen.
+Wenn Sie Experience Manager als Web Content Management-System verwenden, können Sie Ihren Web-Seiten mithilfe der 3D-Medien-Komponente 3D-Assets hinzufügen.
 
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 1. Öffnen Sie Adobe Experience Manager Sites und wählen Sie die Web-Seite aus, der Sie die Dynamic Media-3D-Medien-Komponente hinzufügen möchten.
-1. Um die Seite im Seiteneditor zu öffnen, tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** (Stiftsymbol). Stellen Sie sicher, dass der Modus **[!UICONTROL Bearbeiten]** rechts oben auf der Seite ausgewählt ist.
+1. Um die Seite im Seiteneditor zu öffnen, tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** (Stift). Stellen Sie sicher, dass rechts oben auf der Seite der Modus **[!UICONTROL Bearbeiten]** ausgewählt ist.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
@@ -202,9 +201,9 @@ Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic
 
 Sie können der Komponente jetzt ein 3D-Asset zuweisen.
 
-Siehe [Zuweisen eines 3D-Assets zur 3D-Medienkomponente](#assigning-a-three-d-asset-to-the-component)
+Siehe [Zuweisen eines 3D-Assets zur 3D-Medien-Komponente](#assigning-a-three-d-asset-to-the-component)
 
-### Optional - Konfigurieren der 3D-Medienkomponente {#configuring-the-three-d-component}
+### Optional - Konfigurieren der 3D-Medien-Komponente {#configuring-the-three-d-component}
 
 1. Wählen Sie im Seiten-Editor in Adobe Experience Manager Sites die Komponente **[!UICONTROL 3D Media Viewer]** aus, die Sie zuvor zur Seite hinzugefügt haben.
 1. Um das Dialogfeld für die Komponentenkonfiguration zu öffnen, tippen Sie auf das Symbol **[!UICONTROL Konfiguration]** (Schraubenschlüssel).
@@ -236,7 +235,7 @@ Siehe [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-thre
 
 ## Veröffentlichen von statischen Dynamic Media-3D-Assets {#publishing-three-d-assets}
 
-Dynamic Media akzeptiert verschiedene 3D-Dateiformate, die in Dynamic Media als *statischer Inhalt* unterstützt werden. Statischer Inhalt bedeutet, dass Sie 3D-Assets hochladen und veröffentlichen können, aber es gibt keine Unterstützung für die *dynamische* Bildbearbeitung oder Bildnachbearbeitung, die mit dem 3D-Asset verbunden ist. Der Grund dafür ist, dass der Dynamic Media-Bildbearbeitungs-Server keine 3D-Formate erkennt. Nach der Veröffentlichung eines 3D-Assets in Dynamic Media haben Sie daher eine sofortige URL, die Sie kopieren können. Die URL für das 3D-Asset entspricht der üblichen URL-Struktur für Dynamic Media. Im Gegensatz zu herkömmlichen Bild-Assets in Dynamic Media können Sie jedoch keine Parameter in der URL des Assets bearbeiten.
+Dynamic Media akzeptiert verschiedene 3D-Dateiformate, die in Dynamic Media als *statische Inhalte* unterstützt werden. Statischer Inhalt bedeutet, dass Sie 3D-Assets hochladen und veröffentlichen können, aber es gibt keine Unterstützung für die *dynamische* Bildbearbeitung oder Bildnachbearbeitung, die mit dem 3D-Asset verbunden ist. Der Grund dafür ist, dass der Dynamic Media-Bildbearbeitungs-Server keine 3D-Formate erkennt. Nach der Veröffentlichung eines 3D-Assets in Dynamic Media haben Sie daher eine sofortige URL, die Sie kopieren können. Die URL für das 3D-Asset entspricht der üblichen URL-Struktur für Dynamic Media. Im Gegensatz zu herkömmlichen Bild-Assets in Dynamic Media können Sie jedoch keine Parameter in der URL des Assets bearbeiten.
 
 Siehe auch [Abrufen einer URL für ein statisches Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
@@ -251,7 +250,7 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 **Veröffentlichen von statischen Dynamic Media-3D-Assets:**
 
 1. Öffnen Sie ein 3D-Asset (Dateiformat GLB, OBJ oder STL).
-1. Tippen Sie auf der Seite &quot;Details&quot;in der Symbolleiste auf **[!UICONTROL Schnellveröffentlichung]**.
+1. Tippen Sie auf der Detailseite in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
@@ -260,7 +259,7 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. Tippen Sie auf **[!UICONTROL Original]**. Wenn ein 3D-Asset veröffentlicht (oder aktiviert) wird, wird die Schaltfläche **[!UICONTROL URL]** links unten auf der Seite angezeigt, wenn alle folgenden 3D-Asset-Bedingungen erfüllt sind:
+1. Tippen Sie auf **[!UICONTROL Original]**. Wenn ein 3D-Asset veröffentlicht (oder &quot;aktiviert&quot;) wird, wird die Schaltfläche **[!UICONTROL URL]** unten links auf der Seite angezeigt, wenn alle folgenden 3D-Asset-Bedingungen erfüllt sind:
    * Das 3D-Asset ist ein unterstütztes Format (GLB, OBJ, STL und USDZ).
    * Das 3D-Asset wurde in das Dynamic Media Image Production System (IPS) erfasst.
    * Das 3D-Asset ist veröffentlicht.
@@ -273,10 +272,10 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
 Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamic Media-3D-Assets, wenn Sie Adobe Experience Manager *nicht* als WCM verwenden.
 
-* **[!UICONTROL URL]** : Verwenden Sie die  **** URL, wenn Sie ein Drittanbieter-Web-Content-Management-System verwenden und Dynamic Media 3D-Assets mit dem Dimensions-Viewer mit Ihren Webseiten verknüpfen möchten.
+* **[!UICONTROL URL]**  - Verwenden Sie die  **** URL, wenn Sie ein Drittanbieter-Web Content Management-System verwenden und Dynamic Media 3D-Assets mit dem Dimensional-Viewer mit Ihren Web-Seiten verknüpfen möchten.
 
    Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Einbetten]** : Verwenden Sie &quot; **** Einbetten&quot;, wenn Sie ein Dynamic Media 3D-Asset, das mit dem Dimensions-Viewer in eine Webseite eingebettet ist, Ansicht haben möchten. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in Ihre Web-Seiten einfügen können. Die Bearbeitung des Codes ist im Dialogfeld **[!UICONTROL Eingebettet]** nicht zulässig.
+* **[!UICONTROL Einbetten]**  - Verwenden Sie  **** Einbetten , wenn Sie ein Dynamic Media 3D-Asset anzeigen möchten, das mit dem Dimensional-Viewer auf einer Web-Seite eingebettet ist. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in Ihre Web-Seiten einfügen können. Die Bearbeitung des Codes ist im Dialogfeld **[!UICONTROL Eingebettet]** nicht zulässig.
 
    Siehe [Einbetten des Dynamic Media-Video-, Bild- oder Dimensional-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
