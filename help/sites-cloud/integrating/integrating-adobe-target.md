@@ -1,16 +1,15 @@
 ---
 title: Integrieren mit Adobe Target
 description: 'Integrieren mit Adobe Target '
-feature: Administering
+feature: Verwalten
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1043'
 ht-degree: 67%
 
 ---
-
 
 # Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
@@ -19,7 +18,7 @@ Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesser
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/intro/get-started/quick-start.html)
 
-Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. Für den Export von Erlebnisfragmenten in die Zielgruppe benötigen Sie nur die Adobe Target-Konfiguration und das IMS.
+Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. Für den Export von Experience Fragments nach Target benötigen Sie nur die Adobe Target-Konfiguration und IMS.
 
 >[!NOTE]
 >
@@ -39,27 +38,27 @@ Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaft
 
 Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Sehen Sie sich [dieses Video](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) und [diese Seite](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/integration/integration-ims-adobe-io.html) an, um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
-### Adobe Target Tenant ID und Adobe Target Client Code {#tenant-client}
+### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
-Beachten Sie beim Konfigurieren der Adobe Target Tenant ID- und Adobe Target Client Code-Felder Folgendes:
+Beachten Sie beim Konfigurieren der Felder Adobe Target Mandanten-ID und Adobe Target Client Code Folgendes:
 
-1. Für die meisten Kunden sind die Mandant-ID und der Client-Code identisch. Das bedeutet, dass beide Felder die gleichen Informationen enthalten und identisch sind. Vergewissern Sie sich, dass Sie die Mandant-ID in beide Felder eingeben.
-2. Zu älteren Zwecken können Sie auch verschiedene Werte in die Felder &quot;Mandant-ID&quot;und &quot;Client-Code&quot;eingeben.
+1. Für die meisten Kunden sind die Mandanten-ID und der Client-Code identisch. Das bedeutet, dass beide Felder die gleichen Informationen enthalten und identisch sind. Geben Sie die Mandantenkennung in beide Felder ein.
+2. Aus Legacy-Gründen können Sie auch verschiedene Werte in die Felder Mandanten-ID und Client-Code eingeben.
 
 Beachten Sie in beiden Fällen Folgendes:
 
-* Standardmäßig wird auch der Client-Code (wenn er zuerst hinzugefügt wird) automatisch in das Feld &quot;Mandant-ID&quot;kopiert.
-* Sie haben die Möglichkeit, den Standardsatz für die Mandant-ID zu ändern.
-* Dementsprechend basieren die Backend-Aufrufe zur Zielgruppe auf der Mandanten-ID und die clientseitigen Aufrufe zur Zielgruppe basieren auf dem Client-Code.
+* Standardmäßig wird auch der Client-Code (wenn er zuerst hinzugefügt wird) automatisch in das Feld Mandanten-ID kopiert.
+* Sie haben die Möglichkeit, den standardmäßigen Mandanten-ID-Satz zu ändern.
+* Dementsprechend basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die clientseitigen Aufrufe an Target basieren auf dem Client-Code.
 
-Wie bereits erwähnt, ist der erste Fall der häufigste Fall für AEM Cloud Service. Stellen Sie in beiden Fällen sicher, dass die Felder **beide** je nach Bedarf die richtigen Informationen enthalten.
+Wie bereits erwähnt, ist der erste Fall der häufigste Fall für AEM als Cloud Service. Stellen Sie in beiden Fällen sicher, dass die Felder **beide** je nach Ihren Anforderungen die richtigen Informationen enthalten.
 
 >[!NOTE]
 >
-> Wenn Sie eine bestehende Konfiguration der Zielgruppe ändern möchten:
+> Wenn Sie eine vorhandene Target-Konfiguration ändern möchten:
 >
-> 1. Geben Sie die Tenant-ID erneut ein.
-> 2. Stellen Sie eine erneute Verbindung zur Zielgruppe her.
+> 1. Geben Sie die Mandantenkennung erneut ein.
+> 2. Stellen Sie eine erneute Verbindung zu Target her.
 > 3. Speichern Sie die Konfiguration.
 
 
@@ -78,7 +77,7 @@ Um eine Konfiguration für die Touch-optimierte Benutzeroberfläche auf eine Sit
 
 ## Integrieren von Adobe Target mit AEM Sites mithilfe von Adobe Experience Platform Launch {#integrate-target-launch}
 
-AEM bietet eine vorkonfigurierte Integration mit Experience Platform Launch. Durch Hinzufügen der Adobe Target-Erweiterung zu Experience Platform Launch können Sie die Funktionen von Adobe Target auf AEM Webseiten verwenden. Zielgruppen-Bibliotheken werden nur mithilfe von Launch gerendert.
+AEM bietet eine vorkonfigurierte Integration mit Experience Platform Launch. Durch Hinzufügen der Adobe Target-Erweiterung zu Experience Platform Launch können Sie die Funktionen von Adobe Target auf AEM Webseiten verwenden. Target-Bibliotheken werden nur mit Launch gerendert.
 
 >[!NOTE]
 >
@@ -98,7 +97,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 1. Klicken Sie auf die Schaltfläche **Neue Eigenschaft**.
 2. Geben Sie einen Namen für die Eigenschaft an.
-3. Geben Sie als Domäne die IP/Hostadresse ein, auf der Sie die Startbibliothek laden möchten.
+3. Geben Sie als Domäne die IP/den Host ein, auf dem Sie die Launch-Bibliothek laden möchten.
 4. Klicken Sie auf die Schaltfläche **Speichern**.
    ![Experience Platform Launch-Eigenschaft](assets/properties_newproperty1.png "Experience Platform Launch-Eigenschaft")
 
@@ -126,7 +125,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Erstellen einer Seitenregel {#page-rule}
 
-In **Regel** definieren und ordnen wir eine Folge von Aktionen an, die auf der Site ausgeführt werden, um Targeting zu erreichen.
+In **Regel** definieren und ordnen wir eine Abfolge von Aktionen an, die auf der Site ausgeführt werden, um Targeting zu erreichen.
 
 1. Fügen Sie eine Reihe Aktionen hinzu, wie im Screenshot dargestellt.
    ![Aktionen](assets/rules1.png "Aktionen")
@@ -141,8 +140,8 @@ Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [
 
 | **Änderung** | **Konfiguration der klassischen Benutzeroberfläche** | **Konfiguration der Touch-optimierten Benutzeroberfläche** | **Folgen** |
 |---|---|---|---|
-| Speicherort der Target-Konfiguration | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Früher waren unter /etc/cloudservices/testandtarget mehrere Konfigurationen vorhanden, jetzt ist jedoch eine einzige Konfiguration unter einem Mieter vorhanden. |
+| Speicherort der Target-Konfiguration | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Zuvor waren unter /etc/cloudservices/testandtarget mehrere Konfigurationen vorhanden, jetzt ist jedoch unter einem Mandanten eine einzelne Konfiguration vorhanden. |
 
 >[!NOTE]
 >
->Ältere Konfigurationen werden für bestehende Kunden weiterhin unterstützt (ohne die Option, neue zu bearbeiten oder zu erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.
+>Alte Konfigurationen werden weiterhin für bestehende Kunden unterstützt (ohne die Möglichkeit, neue zu bearbeiten oder zu erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.
