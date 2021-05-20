@@ -1,14 +1,13 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.5.0
 description: Versionshinweise für Experience Manager 2020.5.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für AEM as a Cloud Service 2020.5.0 {#release-notes}
 
@@ -49,5 +48,3 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 * Das Dialogfeld „Umgebung erstellen“ wurde in Safari nicht korrekt dargestellt.
 * Auf bestimmten Karten auf der Übersichtsseite wurden die Entitätsnamen nicht korrekt angezeigt.
 * In einigen Fällen konnte die Bilderstellung die Kundenpakete nicht erfolgreich herunterladen.
-
-
