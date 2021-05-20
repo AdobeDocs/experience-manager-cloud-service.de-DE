@@ -1,14 +1,13 @@
 ---
 title: Verfassen einer Seite für Mobilgeräte
 description: Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um festzustellen, welche Darstellung der Endbenutzer sieht.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: fabd4468-3304-402f-9522-342da3bbae94
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 98%
 
 ---
-
 
 # Verfassen einer Seite für Mobilgeräte {#authoring-a-page-for-mobile-devices}
 
@@ -20,7 +19,7 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe [Erstellen von Live-Kopien.](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. Siehe [Erstellen von Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >AEM-Entwickler können neue Gerätegruppen erstellen. Siehe „Erstellen von Gerätegruppen-Filtern“.
 
