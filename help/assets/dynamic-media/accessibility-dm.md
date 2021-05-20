@@ -6,7 +6,6 @@ topic-tags: introduction
 content-type: reference
 feature: Erreichbarkeit
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '612'
@@ -21,20 +20,20 @@ Dynamic Media unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- u
 
 ## Unterstützung der Tastaturbedienung in Dynamic Media {#keyboard-support-in-dm}
 
-Da es sich bei Dynamic Media um ein Plug-in für Experience Manager Assets handelt, ist das Verhalten der Tastatursteuerung im Wesentlichen dasselbe wie bei Experience Manager Assets. Beispielsweise hat die Schaltfläche `Cancel` in Dynamic Media dieselbe Fokushervorhebung wie in Experience Manager Assets. Es reagiert auch auf den Schlüssel `Spacebar` wie in Experience Manager Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Da Dynamic Media ein Plug-in für Experience Manager Assets ist, ist das meiste Tastatursteuerungsverhalten mit dem von Experience Manager Assets identisch. Beispielsweise weist die Schaltfläche `Cancel` in Dynamic Media dieselbe Fokushervorhebung auf wie in Experience Manager Assets. Sie reagiert auch auf den `Spacebar`-Schlüssel wie in Experience Manager Assets. Siehe [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Tastenanschläge, die von einzelnen Benutzeroberflächenelementen in Dynamic Media unterstützt werden, sind in den meisten Fällen offensichtlich und leicht zu finden. Die Tastatursteuerung in Dynamic Media umfasst Folgendes:
 
 * Möglichkeit zur Verwendung von `Tab`- und `Shift+Tab`-Tastenkombinationen zum Navigieren zwischen interaktiven Elementen auf der Seite.
 Mithilfe von `Tab` wird der Eingabefokus auf das nächste Element der Benutzeroberfläche in der Tabulatorreihenfolge weitergeschaltet. Durch die Verwendung von `Shift+Tab` wird der Eingabefokus wieder auf das vorherige Element der Benutzeroberfläche zurückgesetzt.
 Die Fokusverschiebung folgt der natürlichen Position der Elemente der Benutzeroberfläche auf dem Bildschirm und bewegt sich in einer Reihenfolge von links nach rechts und dann von oben nach unten. Wenn in einem Feld ein Fehler auftritt, können Sie außerdem `Tab` drücken, um den Fokus darauf zu verschieben.
-* Möglichkeit zur Aktivierung standardmäßiger Benutzeroberflächenelemente wie Schaltflächen und Dropdown-Listen mit den Tasten `Spacebar` und `Enter`.
+* Möglichkeit zur Verwendung der `Spacebar`- und `Enter`-Taste zum Aktivieren standardmäßiger Elemente der Benutzeroberfläche, wie z. B. Schaltflächen und Dropdown-Listen.
 * Möglichkeit, die Tastaturfokushervorhebung auf dem aktiven Element anzuzeigen. Das Element der Benutzeroberfläche, das den Eingabefokus hat, erhielt eine visuelle Fokusanzeige als Rahmen, der um das Element der Benutzeroberfläche gerendert wird.
 * Im Hotspot-Editor können Sie einige benutzerdefinierte Tastenkombinationen wie Pfeiltasten verwenden, um mit komplexen Elementen der Benutzeroberfläche zu interagieren und Hotspots neu zu positionieren.
-* Im interaktiven Video-Editor können Sie mit dem `Spacebar` ein Bild auswählen und es einem Segment hinzufügen. Darüber hinaus können Sie mit der Taste `Backspace` das ausgewählte Element aus der Registerkarte **[!UICONTROL Inhalt]** löschen. Drücken Sie nach Wunsch auch die Taste `Tab`, um zwischen interaktiven Elementen auf der Seite zu navigieren.
-* Im Editor für Bildzuschneiden/intelligente Zuschneiden können Sie Folgendes ausführen:
-   * Verwenden Sie die Pfeiltasten, um die Rahmengröße zu beschneiden oder das Bild neu zu positionieren.
-   * Der erste `Tab`-Stopp markiert den gesamten Bildrahmen. Mit den Pfeiltasten auf der Tastatur können Sie den Rahmen dann neu positionieren.
+* Im interaktiven Video-Editor können Sie mit dem `Spacebar` ein Bild auswählen und es einem Segment hinzufügen. Darüber hinaus können Sie die `Backspace`-Taste verwenden, um das ausgewählte Element aus der Registerkarte **[!UICONTROL Inhalt]** zu löschen. Drücken Sie nach Wunsch auch die Taste `Tab`, um zwischen interaktiven Elementen auf der Seite zu navigieren.
+* Im Editor &quot;Bildbeschneiden/Smartes Zuschneiden&quot;haben Sie folgende Möglichkeiten:
+   * Verwenden Sie die Pfeiltasten, um die Rahmengröße zu beschneiden, das Bild neu zu positionieren oder beides.
+   * Der erste `Tab`-Stopp markiert den gesamten Bildrahmen. Sie können den Rahmen dann mithilfe der Pfeiltasten auf der Tastatur neu positionieren.
    * Die folgenden vier `Tab`-Stopps sind die vier Ecken des Rahmens. Wenn der Fokus auf eine Rahmenecke gelegt wird, wird die Ecke hervorgehoben. Auch hier können Sie die fokussierte Ecke mit den Pfeiltasten auf der Tastatur verschieben.
 Weitere Informationen finden Sie unter [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image).
 
@@ -48,13 +47,13 @@ Weitere Informationen finden Sie unter [Bearbeiten von smarten Zuschnitten oder 
 
 ## Unterstützung der Hilfstechnologien in Dynamic Media {#assistive-technology=support-for-dm}
 
-Die Elemente der Dynamic Media-Benutzeroberfläche arbeiten mit Hilfstechnologien wie Bildschirmlesehilfen. Beispielsweise werden Landmarks auf einer Seite erkannt, wenn Sie mithilfe des Tastaturbefehls `D` oder mit dem Tastaturbefehl `R` durch Bereiche navigieren. Außerdem wird die Überschrift vorgelesen, wenn Sie mit dem Tastaturbefehl für Überschriften `H` navigieren.
+Die Elemente der Dynamic Media-Benutzeroberfläche arbeiten mit Hilfstechnologien wie Bildschirmlesehilfen. Beispielsweise erkennt es Landmarkierungen auf einer Seite, wenn Sie mithilfe des Tastaturbefehls `D` durch Landmarken navigieren, oder Bereiche mit dem Tastaturbefehl `R`. Außerdem wird die Überschrift vorgelesen, wenn Sie mit dem Tastaturbefehl für Überschriften `H` navigieren.
 
 ## Unterstützung der Tastaturbedienung in Dynamic Media-Viewern {#keyboard-accessibility-for-dm-viewers}
 
 Alle vordefinierten Dynamic Media-Viewer-Komponenten unterstützen die Tastaturbedienung für Ihre Kunden.
 
-Siehe [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch.
+Siehe [Barrierefreiheit und Navigation über die Tastatur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch.
 
 ## Unterstützung der Hilfstechnologien in Dynamic Media-Viewern {#assistive-technology=support-for-dm-viewers}
 
