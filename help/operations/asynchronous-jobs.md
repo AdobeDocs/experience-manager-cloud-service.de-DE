@@ -1,14 +1,13 @@
 ---
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
@@ -144,6 +143,6 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >[!MORELIKETHIS]
 >
 >* [Erstellen und Organisieren von Seiten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
->* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
->* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
+* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
+* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).
 
