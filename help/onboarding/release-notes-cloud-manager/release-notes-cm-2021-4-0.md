@@ -2,7 +2,6 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.4.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.4.0
 feature: Versionshinweise
-translation-type: tm+mt
 source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
 source-wordcount: '327'
@@ -17,37 +16,37 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.4.0 ist der 08. April 2021.
-Die nächste Version ist für den 06. Mai 2021 geplant.
+Die Version 2021.4.0 von Cloud Manager in AEM as a Cloud Service wurde am 8. April 2021 veröffentlicht.
+Die nächste Version ist für den 6. Mai 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Die Benutzeroberfläche wird aktualisiert, um das Hinzufügen- und Bearbeiten-Programm-Workflows intuitiver zu gestalten.
+* Die Benutzeroberfläche aktualisiert die Workflows Programm hinzufügen und bearbeiten , um sie intuitiver zu gestalten.
 
-* Ein Benutzer mit erforderlichen Berechtigungen kann jetzt den Commerce-Endpunkt über die Benutzeroberfläche senden.
+* Ein Benutzer mit den erforderlichen Berechtigungen kann jetzt den Commerce-Endpunkt über die Benutzeroberfläche senden.
 
-* Umgebung können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autor oder auf Veröffentlichung. Erfordert AEM Version `2021.03.5104.20210328T185548Z` oder höher.
+* Umgebungsvariablen können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autoren- oder auf Veröffentlichungsinstanz. Erfordert AEM Version `2021.03.5104.20210328T185548Z` oder höher.
 
-* Die Schaltfläche **Git** verwalten wird auf der Pipelines-Karte angezeigt, auch wenn keine Pipelines konfiguriert wurden.
+* Die Schaltfläche **Git** verwalten wird auch dann auf der Pipelines-Karte angezeigt, wenn keine Pipelines konfiguriert wurden.
 
-* Die Version des von Cloud Manager verwendeten AEM Projektarchivs wurde auf Version 27 aktualisiert.
+* Die Version des von Cloud Manager verwendeten AEM Projektarchetyps wurde auf Version 27 aktualisiert.
 
 * Projekte, die in der Adobe I/O Developer Console von Cloud Manager erstellt wurden, können nicht mehr unbeabsichtigt bearbeitet oder gelöscht werden.
 
-* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird ihm mitgeteilt, dass eine Umgebung nach dem Erstellen nicht in einen anderen Bereich verschoben werden kann.
+* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird er darüber informiert, dass eine Umgebung nach ihrer Erstellung nicht mehr in eine andere Region verschoben werden kann.
 
-* Umgebung können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autor oder auf Veröffentlichung. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder höher.
+* Umgebungsvariablen können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autoren- oder auf Veröffentlichungsinstanz. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder höher.
 
 * Die Fehlermeldung beim Starten einer Pipeline beim Löschen einer Umgebung wurde geklärt.
 
-* OSGi-Pakete, die von Eclipse-Projekten bereitgestellt werden, sind nun von der Regel `CQBP-84--dependencies` ausgeschlossen.
+* Von Eclipse-Projekten bereitgestellte OSGi-Bundles sind jetzt von der Regel `CQBP-84--dependencies` ausgeschlossen.
 
 ### Fehlerbehebungen {#bug-fixes-cm-april}
 
-* Beim Bearbeiten der Experience Audit-Seite einer Pipeline führt ein Eingabepfad, der mit einem Schrägstrich `( / )` beginnt, nicht mehr dazu, dass der Schritt im ausstehenden Status blockiert wird.
+* Beim Bearbeiten der Seite Erlebnisprüfung einer Pipeline führt ein Eingabepfad, der mit einem Schrägstrich `( / )` beginnt, nicht mehr dazu, dass der Schritt im Status &quot;Ausstehend&quot;feststeckt.
 
-* Wenn eine neue Produktions-Pipeline erstellt wird und der Benutzer keine Überschreibung der Inhaltsprüfung hinzufügt, wurde die Standard-Homepage nicht geprüft.
+* Wenn beim Erstellen einer neuen Produktions-Pipeline vom Benutzer keine Überschreibung bei der Inhaltsprüfung hinzugefügt wird, wurde die standardmäßige Homepage nicht geprüft.
 
-* Bei Problemen mit `CloudServiceIncompatibleWorkflowProcess` war die CSV-Datei für die herunterladbare Ausgabe nicht korrekt.
+* Probleme für `CloudServiceIncompatibleWorkflowProcess` hatten den falschen Schweregrad in der herunterladbaren CSV-Datei des Problems.
 
-* Die `Runmode`-Prüfung ergab Falsch-Positiv-Werte für Nicht-Ordner-Knoten.
+* Die `Runmode`-Prüfung erzeugte Fehlalarme auf Nicht-Ordner-Knoten.
