@@ -1,14 +1,13 @@
 ---
 title: Mustertypen von ContextHub-UI-Modulen
 description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
-translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 100%
 
 ---
-
 
 # Mustertypen von ContextHub-UI-Modulen  {#sample-contexthub-ui-module-types}
 
