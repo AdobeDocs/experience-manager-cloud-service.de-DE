@@ -1,27 +1,26 @@
 ---
-title: AEM Content und Commerce
-description: AEM- und Commerce-Selbsthilfe und Links zur Dokumentation
+title: Handbuch zu Adobe Experience Manager Content and Commerce
+description: AEM Content und Commerce - Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-translation-type: tm+mt
-source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 80%
+source-wordcount: '402'
+ht-degree: 73%
 
 ---
 
-# AEM Content and Commerce {#commerce-guide}
+# Handbuch zu Adobe Experience Manager Content and Commerce {#commerce-guide}
 
-Auf dieser Seite werden die Selbsthilfe-Ressourcen in Bezug auf AEM Content und Commerce Liste.
+Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Content und Commerce.
 
 >[!NOTE]
 >
->Informationen zu AEM Content and Commerce mit AEM 6.5 und klassischem CIF finden Sie unter [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Informationen zu AEM Content and Commerce mit AEM 6.5 und dem klassischen CIF finden Sie unter [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 
 ## Wichtige Inhalte und Commerce-Artikel {#key-articles}
 
-* [Einführung von AEM und Handel](introduction.md)
+* [Einführung von AEM Content und Commerce](introduction.md)
 * [Erste Schritte mit AEM Content und Commerce](/help/commerce-cloud/getting-started.md)
 * [Entwicklung von AEM Content und Commerce](/help/commerce-cloud/develop.md)
 
@@ -37,7 +36,8 @@ Auf dieser Seite werden die Selbsthilfe-Ressourcen in Bezug auf AEM Content und 
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten. |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zur Implementierung von Entwicklungsumgebungen. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mithilfe AEM leistungsstarken Funktionen erstellen und anpassen können, indem Sie diese Themen zu Entwicklung und Implementierung kennenlernen. |
+| [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) | Entdecken Sie diese geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Lösungen in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 
