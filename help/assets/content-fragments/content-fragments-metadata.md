@@ -1,20 +1,19 @@
 ---
 title: Metadaten – Fragmenteigenschaften
-description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM bearbeiten und bearbeiten können, um den Inhalt ohne Kopf anzupassen.
-feature: Content Fragments
+description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Inhalt anzupassen.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 72%
+source-wordcount: '142'
+ht-degree: 71%
 
 ---
 
-
 # Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
 
-Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM bearbeiten und bearbeiten können, um den Inhalt ohne Kopf anzupassen.
+Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragmente in AEM anzeigen und bearbeiten können, um Ihren Headless-Inhalt anzupassen.
 
 ## Bearbeiten von Eigenschaften/Metadaten {#editing-properties-meta-data}
 
