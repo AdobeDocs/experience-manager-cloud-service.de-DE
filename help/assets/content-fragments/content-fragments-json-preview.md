@@ -1,20 +1,19 @@
 ---
 title: Anzeigen in der Vorschau – JSON-Repräsentation
-description: Erfahren Sie, wie Sie bei der Implementierung Ihrer AEM Lösung ohne Kopf die JSON-Darstellung Ihrer Inhaltsfragmente ganz einfach Vorschau haben.
-feature: Content Fragments
+description: Erfahren Sie, wie Sie bei der Implementierung Ihrer AEM Headless-Lösung einfach eine Vorschau der JSON-Darstellung Ihrer Inhaltsfragmente anzeigen können.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '115'
 ht-degree: 58%
 
 ---
 
-
 # Anzeigen in der Vorschau – JSON-Repräsentation {#preview-json-representation}
 
-Wenn Sie die Modelle für Inhaltsfragmente als Teil Ihrer AEM Implementierung ohne Kopfdaten entwickeln, sollten Sie die JSON-Musterausgabe für ein Inhaltsfragment auf der Grundlage eines Modells Ansicht haben. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.
+Beim Entwickeln der Modelle für Inhaltsfragmente als Teil Ihrer AEM Headless-Implementierung möchten Sie möglicherweise die JSON-Beispielausgabe für ein Inhaltsfragment anzeigen, da diese auf einem Modell basiert. So erhalten Sie beispielsweise eine Vorstellung davon, wie die endgültige Ausgabe aussehen wird. Dies könnte bei der Validierung der Modell-JSON-Struktur hilfreich sein, ggf. mit standardmäßigen Beispielinhalten pro Datentyp.
 
 Verwendung des **Vorschau**-Symbols:
 
