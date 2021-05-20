@@ -1,14 +1,13 @@
 ---
 title: Phase nach der Live-Schaltung
 description: Phase nach der Live-Schaltung
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # Nach der Live-Schaltung {#post-go-live}
 
