@@ -2,7 +2,6 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
@@ -89,7 +88,7 @@ Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
 
 >[!NOTE]
 >
->Derselbe Code muss auf allen Umgebung bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch bei der Umgebung der Stufe ein hohes Maß an Vertrauensvalidierungen erstellt wird. Weitere Informationen finden Sie im Abschnitt zu [Laufmodi](/help/implementing/deploying/overview.md#runmodes).
+>Derselbe Code muss in allen Umgebungen bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch in der Staging-Umgebung ein Maß an Konfidenzvalidierungen erstellt wird. Weitere Informationen finden Sie im Abschnitt zu [Runmodes](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Inhaltspakete
@@ -143,7 +142,7 @@ Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Anwendu
 
 Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen OSGi-Pakete und OSGi-Konfigurationen nicht direkt enthalten und dürfen nicht [Installationshinweise](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
++ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen keine OSGi-Bundles und OSGi-Konfigurationen enthalten und dürfen nicht [Installations-Hooks](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
