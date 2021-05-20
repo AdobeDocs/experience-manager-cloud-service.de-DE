@@ -1,8 +1,7 @@
 ---
 title: Protokollierung für AEM als Cloud Service
-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokolldienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder wie Sie die Datenanmeldung als Cloud Service AEM anfordern.
+description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder wie Sie die Datenprotokollierung AEM als Cloud Service anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
 source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
 source-wordcount: '2332'
@@ -10,7 +9,7 @@ ht-degree: 94%
 
 ---
 
-# Anmeldung für AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
+# Protokollierung für AEM als Cloud Service {#logging-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
@@ -599,11 +598,11 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 >
 >Die Splunk-Weiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
 
-Achten Sie darauf, dass die ursprüngliche Anforderung neben den stage-/prod-Umgebung alle dev-Umgebung enthält, die aktiviert werden sollten.
+Sie sollten sicherstellen, dass die ursprüngliche Anfrage neben den Staging-/Produktionsumgebungen alle Entwicklungsumgebungen enthält, die aktiviert werden sollen.
 
-Wenn neue dev-Umgebung, die nach der ursprünglichen Anforderung erstellt wurden, Splunk-Weiterleitung haben sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anforderung gesendet werden.
+Wenn neue Entwicklungsumgebungen, die nach der ursprünglichen Anfrage erstellt wurden, die Splunk-Weiterleitung verwenden sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anfrage gestellt werden.
 
-Beachten Sie außerdem, dass bei Anforderung von dev-Umgebung möglicherweise bei anderen dev-Umgebung, die nicht in der Anforderung enthalten sind, oder auch bei Sandbox-Umgebung Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam verwendet wird. Kunden können mithilfe des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
+Beachten Sie außerdem, dass bei Anforderung von Entwicklungsumgebungen es möglich ist, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage- oder sogar Sandbox-Umgebung enthalten sind, die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam verwendet wird. Kunden können das Feld `aem_env_id` verwenden, um zwischen diesen Umgebungen zu unterscheiden.
 
 Unten finden Sie ein Beispiel für eine Support-Anfrage:
 
