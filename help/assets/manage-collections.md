@@ -3,16 +3,15 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Manager Assets vertraut. Erfahren Sie, wie Sie Sammlungen verwalten, bearbeiten und mit anderen Benutzern teilen können.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
+feature: Sammlungen,Asset-Verwaltung
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2400'
 ht-degree: 97%
 
 ---
-
 
 # Verwalten von Sammlungen {#manage-collections}
 
@@ -82,7 +81,7 @@ Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie
 
    >[!NOTE]
    >
-   >Bei Auswahl von **[!UICONTROL Öffentlich]** wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** abbrechen, wird die DAM-Benutzergruppe nicht mehr mit der intelligenten Sammlung verknüpft.
+   >Bei Auswahl von **[!UICONTROL Öffentlich]** wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** abbrechen, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**, um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfenster, um den Vorgang abzuschließen. Die neue Smart-Sammlung wird auch zur Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt.
 Die Bezeichnung der Schaltfläche **[!UICONTROL Smart-Sammlung erstellen]** wird in **[!UICONTROL Smart-Sammlung bearbeiten]** geändert. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Tippen oder klicken Sie dann auf die Schaltfläche **[!UICONTROL Smart-Sammlung bearbeiten]**.
@@ -136,7 +135,7 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
    >
    >Der Anlagenmodus funktioniert nur für Felder, die mehrere Werte enthalten können. Für Felder, die nur einen einzigen Wert enthalten können, werden neue Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie den **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Suche {#searching}
+## Suchen {#searching}
 
 Die Suchfunktion für Sammlungen unterstützt sowohl das [Suchen nach Sammlungen](#search-collections) als auch das [Suchen nach Assets in Sammlungen](#search-within-collections).
 
@@ -197,7 +196,7 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
    >
    >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen, außer für Tags. Alle Tags, die Sie im Feld **[!UICONTROL Tags]** hinzufügen, werden der vorhandenen Liste der Tags in den Metadaten anhängt.
 
-1. Um die Metadateneigenschaften für eine bestimmte Sammlung Ansicht, brechen Sie die Auswahl der verbleibenden Sammlungen in der Liste &quot;Sammlungen&quot;ab. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
+1. Um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen, brechen Sie die Auswahl der verbleibenden Sammlungen in der Sammlungsliste ab. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
 
    >[!NOTE]
    >
