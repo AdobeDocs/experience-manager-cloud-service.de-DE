@@ -1,14 +1,13 @@
 ---
 title: Abrufen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Abrufen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
-translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+exl-id: a3a247e5-164a-4c9c-aeed-bde882635e6f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
 ---
-
 
 # Abrufen eines SSL-Zertifikats {#getting-an-ssl-certificate}
 
@@ -19,4 +18,3 @@ Wenn eine Entität ein Zertifikat von einer Zertifizierungsstelle anfordert, fü
 >[!NOTE]
 >AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-(Domain Validation) oder selbst signierte Zertifikate werden nicht akzeptiert. OV- und EV-Zertifikate bieten Benutzern zusätzliche, von der Zertifizierungsstelle validierte Informationen, anhand derer sie entscheiden können, ob der Eigentümer einer Website, der Absender einer E-Mail oder der digitale Unterzeichner von ausführbarem Code oder PDF-Dokumenten vertrauenswürdig ist. DV-Zertifikate sind weit verbreitet und kostengünstig. Sie ermöglichen jedoch keine Überprüfung der Eigentümerschaft.
 >Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
-
