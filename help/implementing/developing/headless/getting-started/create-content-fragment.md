@@ -1,8 +1,7 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
-description: Erfahren Sie, wie Sie AEM Inhaltsfragmente zum Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte für kostenlosen Versand verwenden.
+description: Erfahren Sie, wie Sie AEM Inhaltsfragmente verwenden können, um seitenunabhängige Inhalte für die Headless-Bereitstellung zu entwerfen, zu erstellen, zu kuratieren und zu verwenden.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-translation-type: tm+mt
 source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
 source-wordcount: '392'
@@ -12,7 +11,7 @@ ht-degree: 89%
 
 # Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung {#creating-content-fragments}
 
-Erfahren Sie, wie Sie AEM Inhaltsfragmente zum Entwerfen, Erstellen, Kuratieren und Verwenden seitenunabhängiger Inhalte für kostenlosen Versand verwenden.
+Erfahren Sie, wie Sie AEM Inhaltsfragmente verwenden können, um seitenunabhängige Inhalte für die Headless-Bereitstellung zu entwerfen, zu erstellen, zu kuratieren und zu verwenden.
 
 ## Was sind Inhaltsfragmente? {#what-are-content-fragments}
 
