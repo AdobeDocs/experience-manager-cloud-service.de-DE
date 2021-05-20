@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 'Metadaten  '
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 73%
+source-wordcount: '1016'
+ht-degree: 72%
 
 ---
 
@@ -84,9 +84,9 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 
 ![im Asset-Knoten im Repository gespeicherte Metadaten](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Die Funktion zum Zurückschreiben ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die Metadaten-Schreibweise [aktivieren.](#enable-xmp-writeback)
+>Die Funktion zum Zurückschreiben ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die Metadaten-Schreibweise [aktivieren. ](#enable-xmp-writeback) MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Schreibback. Beim Zurückschreiben bricht das Erbe.
 
 ### Aktivieren XMP Schreibback {#enable-xmp-writeback}
 
