@@ -1,14 +1,13 @@
 ---
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 100%
 
 ---
-
 
 # Veröffentlichen von Seiten {#publishing-pages}
 
@@ -90,8 +89,8 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
-* [Quick Publish](#quick-publish)
-* [Veröffentlichung verwalten](#manage-publication)
+* [Quick Publish ](#quick-publish)
+* [Veröffentlichung verwalten ](#manage-publication)
 
 #### Quick Publish  {#quick-publish}
 
