@@ -4,7 +4,6 @@ description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dy
 feature: Panoramabilder
 role: Business Practitioner
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '149'
