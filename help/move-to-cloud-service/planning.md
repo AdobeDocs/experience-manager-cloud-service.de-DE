@@ -1,14 +1,13 @@
 ---
 title: Planungsphase
 description: Planungsphase
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
 ---
-
 
 # Planung {#planning-phase}
 
@@ -60,4 +59,3 @@ Nachdem Sie den für die Umstellung auf Cloud Service erforderlichen Arbeitsaufw
 Wenn Sie zuvor noch keine Bewertungsparameter (Key Performance Indicators, KPIs) festgelegt haben, wird empfohlen, KPIs für Ihre Adobe Experience Manager (AEM)-Implementierung festzulegen, damit sich Ihr Team auf das Wesentliche konzentrieren kann.
 
 Unter [Entwickeln von KPIs](https://guided.adobe.com/welcome/aem/part6.html) erfahren Sie, wie Sie die richtigen KPIs für Ihre Geschäftsziele auswählen.
-
