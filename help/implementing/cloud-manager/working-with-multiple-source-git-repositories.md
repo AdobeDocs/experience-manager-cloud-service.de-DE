@@ -1,14 +1,13 @@
 ---
 title: Arbeiten mit Git-Repositorys aus mehreren Quellen
 description: Arbeiten mit Git-Repositorys aus mehreren Quellen – Cloud Services
-translation-type: tm+mt
-source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
+exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Git-Repositorys aus mehreren Quellen {#working-with-multiple-source-git-repos}
 
