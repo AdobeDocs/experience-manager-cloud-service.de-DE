@@ -2,7 +2,6 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Versionshinweise
-translation-type: tm+mt
 source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
 source-wordcount: '386'
@@ -16,43 +15,43 @@ ht-degree: 17%
 Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Um die aktuellen Versionshinweise für Adobe Experience Manager als Cloud Service anzuzeigen, klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+>Um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen, klicken Sie auf [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für Cloud Manager in AEM als Cloud Service 2021.5.0 ist der 06. Mai 2021.
-Die nächste Version ist für den 03. Juni 2021 geplant.
+Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
+Die nächste Version ist für den 3. Juni 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
-* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, und zwar in demselben bereitgestellten Paketsatz.
+* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, in demselben bereitgestellten Paketsatz.
 
 * Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
-* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarien.
+* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarios.
 
-* Zwischenweise auftretende Fehler beim Verschieben von Code in Adobe git wurden nun behoben.
+* Beim Pushen von Code an Adobe Git wurden zeitweise auftretende Fehler behoben.
 
-* Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programm angewendet werden.
+* Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programme angewendet werden.
 
 * Das Erlebnis *Programm bearbeiten* wurde aktualisiert.
 
-* Die Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebung-Details&quot;zeigt bis zu 250 Domänennamen per Paginierung an.
+* In der Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebungsdetails&quot;werden bis zu 250 Domänennamen per Paginierung angezeigt.
 
-* Die Registerkarte **Lösungen und Hinzufügen** in **Hinzufügen Programm** und **Programm bearbeiten** wird angezeigt, auch wenn nur eine Lösung für das Programm verfügbar ist.
+* Auf der Registerkarte **Lösungen und Add-ons** in **Hinzufügen von Programmen** und **Programm bearbeiten** -Workflows wird die Lösung angezeigt, auch wenn für das Programm nur eine Lösung verfügbar ist.
 
-* Die Fehlermeldung im Protokoll des Buildschritts, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
+* Die Fehlermeldung im Build-Schrittprotokoll, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Gelegentlich wird dem Benutzer neben einer IP-Zulassungsliste ein grüner &quot;Aktiv&quot;-Status angezeigt, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
+* Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste einen grünen &quot;aktiven&quot;Status sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Statt &#39;gelöschte&#39; Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **DELETED**.
+* Anstatt &quot;gelöschte&quot;Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **DELETED**.
 
-* Einige Qualitätsprobleme mit Code-Geruch haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
+* Einige Qualitätsprobleme vom Typ Code Smell wirkten sich fälschlicherweise auf die Zuverlässigkeitsbewertung aus.
 
-* Da Platzhalterdomänen nicht unterstützt werden, verhindert die Benutzeroberfläche, dass der Benutzer eine Platzhalterdomäne sendet.
+* Da Wildcard-Domänen nicht unterstützt werden, verhindert die Benutzeroberfläche das Senden einer Wildcard-Domäne durch den Benutzer.
 
-* Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1am UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als eine Version, die am Vortag erstellt wurde.
+* Wenn die Pipelineausführung zwischen Mitternacht und 1 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als die am Vortag erstellte Version.
 
-* Während der Einrichtung des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode Git verwalten als Link von der Heldenkarte auf der Seite Überblick angezeigt.
+* Während der Einrichtung des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode Git verwalten auf der Seite Überblick als Link von der Heldenkarte angezeigt.
