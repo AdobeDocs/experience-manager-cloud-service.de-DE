@@ -1,18 +1,17 @@
 ---
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
-description: Erfahren Sie, wie Sie AEM Assets REST API zum Verwalten von Inhaltsfragmenten und die GraphQL API für den kopflosen Versand von Inhaltsfragmentinhalten verwenden.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+description: Erfahren Sie, wie Sie AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten verwenden.
+exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 90%
 
 ---
 
-
 # Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten {#accessing-delivering-content-fragments}
 
-Erfahren Sie, wie Sie AEM Assets REST API zum Verwalten von Inhaltsfragmenten und die GraphQL API für den kopflosen Versand von Inhaltsfragmentinhalten verwenden.
+Erfahren Sie, wie Sie AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten verwenden.
 
 ## Was sind GraphQL- und Assets-REST-APIs? {#what-are-the-apis}
 
