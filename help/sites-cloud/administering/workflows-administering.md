@@ -1,16 +1,15 @@
 ---
 title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
-feature: Administering
+feature: Verwalten
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten der Workflow-Instanzen {#administering-workflow-instances}
 
@@ -167,4 +166,3 @@ Sie können die maximale Größe des Posteingangs durch die Konfiguration des **
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname |
 |---|---|
 | Max. Größe für Posteingangsabfrage | granite.workflow.inboxQuerySize |
-
