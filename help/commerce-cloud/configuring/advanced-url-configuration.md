@@ -9,9 +9,8 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
@@ -32,7 +31,7 @@ Um den `UrlProvider`-Service gemäß den SEO-Anforderungen zu konfigurieren, mus
 >
 > Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) (siehe unten) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren.
 
-### URL-Vorlage der Produktseite {#product}
+### URL-Vorlage für Produktseiten {#product}
 
 Damit werden die URLs der Produktseiten mit den folgenden Eigenschaften konfiguriert:
 
@@ -43,7 +42,7 @@ Damit werden die URLs der Produktseiten mit den folgenden Eigenschaften konfigur
 * **Speicherort der Produktkennung**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `SELECTOR`, der andere mögliche Wert `SUFFIX`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Kennung `chaz-kangeroo-hoodie` zum Abrufen der Produktdaten verwendet wird.
 * **Produktkennungstyp**: definiert den Speicherort der Kennung, die zum Abrufen der Produktdaten verwendet wird. Der Standardwert lautet `URL_KEY`, der andere mögliche Wert `SKU`. In Bezug auf die vorherige Beispiel-URL bedeutet dies, dass die Produktdaten mit einem Magento-GraphQL-Filter wie `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` abgerufen werden.
 
-### URL-Vorlage für Produktseiten-Listen {#product-list}
+### URL-Vorlage für Produktlisten-Seite {#product-list}
 
 Damit werden die URLs der Kategorie- oder Produktlistenseiten mit den folgenden Eigenschaften konfiguriert:
 
