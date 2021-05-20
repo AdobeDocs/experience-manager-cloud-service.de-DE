@@ -1,14 +1,13 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen und Organisieren von Seiten {#creating-and-organizing-pages}
 
@@ -153,7 +152,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-cloud/authoring/features/templates.md).
 
-### Komponenten {#components}
+### Komponenten  {#components}
 
 Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einsatzbereiten Komponenten ausgestattet, die umfangreiche Funktionen bieten, wie:
 
