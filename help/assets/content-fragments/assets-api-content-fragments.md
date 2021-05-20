@@ -1,21 +1,20 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
-description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Asset HTTP-API, einem wichtigen Teil AEM kostenlosen Versand-Funktion.
-feature: Content Fragments,Assets HTTP API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einer wichtigen AEM Funktion für die Headless-Bereitstellung.
+feature: Inhaltsfragmente,Assets-HTTP-API
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 97%
 
 ---
 
-
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Überblick {#overview}
 
-Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Asset HTTP-API, einem wichtigen Teil AEM kostenlosen Versand-Funktion.
+Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einer wichtigen AEM Funktion für die Headless-Bereitstellung.
 
 >[!NOTE]
 >
@@ -232,7 +231,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente   {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente  {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -392,4 +391,3 @@ Weitere Informationen finden Sie unter:
 
 * [Assets-HTTP-API – Dokumentation ](/help/assets/mac-api-assets.md)
 * [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
