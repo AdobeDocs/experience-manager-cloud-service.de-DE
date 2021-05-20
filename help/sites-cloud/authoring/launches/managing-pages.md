@@ -1,14 +1,13 @@
 ---
 title: Verwalten von Seiten in Ihrem Launch
-description: 'Sie können neue Seiten in Ihrem Launch erstellen. Sie können auch unerwünschte Seiten löschen. '
-translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+description: Sie können neue Seiten in Ihrem Launch erstellen. Sie können auch unerwünschte Seiten löschen.
+exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten von Seiten in Ihrem Launch {#managing-pages-in-launch}
 
