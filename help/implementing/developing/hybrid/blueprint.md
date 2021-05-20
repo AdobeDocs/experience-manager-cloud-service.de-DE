@@ -1,14 +1,13 @@
 ---
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
-translation-type: tm+mt
-source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
+exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 100%
 
 ---
-
 
 # SPA-Blueprint {#spa-blueprint}
 
@@ -141,7 +140,7 @@ Ein Container ist eine Komponente, die untergeordnete Komponenten enthält und r
 
 Der Container ruft die untergeordneten Komponenten dynamisch aus dem Speicher der [`ComponentMapping`](#componentmapping)-Bibliothek ab. Der Container erweitert dann die untergeordnete Komponente mit den Modellanbieterfunktionen und instanziiert sie schließlich.
 
-### Seite {#page}
+### Seite  {#page}
 
 Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist eine Komponente, die untergeordnete Komponenten wie untergeordnete Seiten enthält und rendert. Dazu durchläuft der Container die `:itemsOrder`-, `:items`- und `:children`-Eigenschaften seines Modells. Die `Page`-Komponente ruft die untergeordneten Komponenten aus dem Speicher der [`ComponentMapping`](#componentmapping)-Bibliothek dynamisch ab. Die `Page` ist für die Instanziierung untergeordneter Komponenten verantwortlich.
 
@@ -174,6 +173,7 @@ Beispiel:
 >
 >* `"new section"`: Zeigt an, dass das aktuelle Element der Platzhalter des Containers ist
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
+
 >
 
 
