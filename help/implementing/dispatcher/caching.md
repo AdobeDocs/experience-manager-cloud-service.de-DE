@@ -1,15 +1,14 @@
 ---
 title: Caching in AEM as a Cloud Service
-description: 'Zwischenspeichern in AEM als Cloud Service '
+description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 99%
 
 ---
-
 
 # Einführung {#intro}
 
