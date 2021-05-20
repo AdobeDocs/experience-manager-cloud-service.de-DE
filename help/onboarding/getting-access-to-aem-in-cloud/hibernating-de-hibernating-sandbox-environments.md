@@ -2,7 +2,6 @@
 title: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
 description: Ruhezustand und Reaktivieren von Sandbox-Umgebungen
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-translation-type: tm+mt
 source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
 source-wordcount: '855'
@@ -15,7 +14,7 @@ ht-degree: 95%
 Sandbox-Programmumgebungen werden in den *Ruhezustand* versetzt, wenn in einem bestimmten Zeitraum keine Aktivität erkannt wurde.
 
 >[!NOTE]
->Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Umgebung des Produktions-Programms führen nicht zu Hibernationen.
+>Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Produktionsumgebungen werden nicht in den Ruhezustand versetzt.
 
 ## Ruhezustand {#hibernation-introduction}
 
@@ -121,9 +120,9 @@ Für im Ruhezustand befindliche oder reaktivierte Umgebungen gelten einige wicht
 
 * AEM-Upgrades können auf im Ruhezustand befindliche Umgebungen angewendet werden; sie können von Kunden in Cloud Manager manuell ausgelöst werden. Die Umgebung verbleibt im Ruhezustand; die neue Version erscheint in der Umgebung, sobald der Ruhezustand deaktiviert wurde.
 
-* Sandboxen werden nach 8 Stunden Inaktivität in den Hibernation-Knoten gesetzt, danach können sie entstellt werden.
+* Sandboxes werden nach 8 Stunden Inaktivität in den Ruhezustand versetzt. Danach können sie wieder aus dem Ruhezustand geholt werden.
 
-* Sandboxen werden nach 6 Monaten kontinuierlicher Ruhezeit gelöscht, danach können sie neu erstellt werden.
+* Sandboxes werden nach 6 Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
 
    >[!NOTE]
    >Derzeit gibt Cloud Manager nicht an, ob sich eine Umgebung im Ruhezustand befindet.
