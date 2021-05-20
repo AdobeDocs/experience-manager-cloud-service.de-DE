@@ -1,14 +1,13 @@
 ---
 title: Bearbeiten von Launches
-description: 'Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten. '
-translation-type: tm+mt
-source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
+description: Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 91%
 
 ---
-
 
 # Bearbeiten von Launches {#editing-launches}
 
@@ -25,14 +24,14 @@ Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleist
 
 >[!NOTE]
 >
->Es ist nicht zulässig, eine Seite innerhalb eines Startvorgangs zu verschieben. Beim Versuch, diese Aktion durchzuführen, wird eine Warnmeldung Trigger:
+>Sie dürfen eine Seite nicht innerhalb eines Launches verschieben. Bei diesem Versuch wird eine Warnmeldung Trigger:
 >
 >* Warnung: Diese Seite ist die Quelle eines Launches. Das Verschieben der Seite ist nicht zulässig.
 
 
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
 
-Wenn Ihr Start auf einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) basiert, werden Sie Folgendes tun:
+Wenn Ihr Launch auf einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) basiert, werden Sie Folgendes tun:
 
 * Schlosssymbole (kleine Vorhängeschlösser), wenn Sie eine Komponente bearbeiten (Inhalt und/oder Eigenschaften)
 * die Registerkarte **Live Copy** in den **Seiteneigenschaften**
