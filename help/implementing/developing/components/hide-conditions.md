@@ -2,7 +2,6 @@
 title: 'Verwenden von Bedingungen zum Ausblenden '
 description: Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-translation-type: tm+mt
 source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
