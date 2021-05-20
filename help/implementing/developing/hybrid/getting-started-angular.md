@@ -1,14 +1,13 @@
 ---
 title: Erste Schritte mit SPAs in AEM unter Verwendung von Angular
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des Angular-Frameworks rasch mit Ihrer eigenen SPA zu arbeiten.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit SPAs in AEM unter Verwendung von Angular {#getting-started-with-spas-in-aem-using-angular}
 
@@ -26,7 +25,7 @@ Dieser Artikel fasst die grundlegenden Funktionen einer einfachen SPA und die Gr
 
 Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Dokumenten:
 
-* [SPA-Einführung und exemplarische Vorgehensweise](introduction.md)
+* [Einführung in SPAs und exemplarische Anleitung](introduction.md)
 * [SPA-Editor – Überblick](editor-overview.md)
 * [SPA-Blueprint](blueprint.md)
 
