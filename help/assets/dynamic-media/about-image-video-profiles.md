@@ -1,7 +1,7 @@
 ---
 title: Informationen zu Dynamic Media – Bild- und Videoprofile
 description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
-feature: Asset-Verwaltung, Bild-Profile, Video-Profile
+feature: Asset-Management, Bildprofile, Videoprofile
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
@@ -24,7 +24,7 @@ Siehe auch [Metadaten-Profile](/help/assets/metadata-profiles.md).
 
 Sie müssen über Administratorrechte verfügen, um Dynamic Media-Bildprofile oder Dynamic Media-Videoprofile zu erstellen, zu bearbeiten und zu löschen.
 
-Nachdem Sie Ihr Image-Profil oder Video-Profil erstellt haben, weisen Sie es einem oder mehreren Ordnern zu, die Sie für neu hochgeladene Dynamic Media-Assets verwenden.
+Nachdem Sie Ihr Bildprofil oder Videoprofil erstellt haben, weisen Sie es einem oder mehreren Ordnern zu, die Sie für neu hochgeladene Dynamic Media-Assets verwenden.
 
 Siehe auch [Best Practices zum Organisieren Ihrer digitalen Assets für die Verwendung von Bild- oder Videoprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -40,15 +40,15 @@ Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geä
 
 Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für smartes Zuschneiden hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Scene7: Assets erneut verarbeiten* aus.
 
-Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Auch wenn Sie kein Image-Profil oder Video-Profil bearbeitet haben oder bereits ein Image-Profil oder Video-Profil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung immer noch für einen Asset-Ordner ausführen.
+Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Bild- oder Videoprofil bearbeitet haben oder bereits ein Bild- oder Videoprofil angewendet haben, können Sie den Neuverarbeitungs-Workflow jederzeit für einen Asset-Ordner ausführen.
 
-Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie das Scene7 _ausführen: Assets in einem Ordner neu verarbeiten, werden Assets in Stapeln gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet._ Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Stapelsatz auf Adobe Experience Manager aktualisiert. Wenn die Stapelgröße groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Oder wenn die Stapelgröße zu klein ist, kann dies zu vielen Rundungen zum Dynamic Media-Server führen.
+Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie _Scene7 ausführen: Neuverarbeitung des Workflows Assets_ für einen Ordner, Assets werden in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch-Satz auf Adobe Experience Manager aktualisiert. Wenn die Batch-Größe groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Oder wenn die Batch-Größe zu klein ist, kann dies zu vielen Rundfahrten zum Dynamic Media-Server führen.
 
 Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-load).
 
 >[!NOTE]
 >
->Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu Experience Manager durchführen, aktivieren Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
+>Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic nach Experience Manager durchführen, aktivieren Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
 >
 >Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
 
@@ -59,18 +59,18 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-Assets in einem Ordner erneut verarbeiten:**
-1. Navigieren Sie in Experience Manager auf der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Image-Profil oder ein Video-Profil zugeordnet ist und für den Sie das Scene7 **anwenden möchten: Arbeitsablauf für Element** neu verarbeiten.
+1. Navigieren Sie in Experience Manager von der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie die Scene7 **anwenden möchten: Neuverarbeitung des Workflows Asset** .
 
-   Bei Ordnern, denen ein Image-Profil oder ein Video-Profil zugewiesen ist, wird der Name des Profils direkt unter dem Ordnernamen in der Card-Ansicht angezeigt.
+   Bei Ordnern, denen ein Bildprofil oder ein Videoprofil zugewiesen ist, wird der Name des Profils direkt unter dem Ordnernamen in der Kartenansicht angezeigt.
 
 1. Wählen Sie einen Ordner aus.
 
    * Der Workflow berücksichtigt rekursiv alle Dateien in dem ausgewählten Ordner.
-   * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
-   * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie auszuführen, die über 1000 Assets verfügt.
+   * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie erneut.
+   * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1000 Assets auszuführen.
 
 1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste]**.
-1. Tippen Sie in der linken unteren Ecke der Seite rechts neben dem Feld [!UICONTROL Kommentar] auf das Karussymbol ( **^** ).
+1. Tippen Sie unten links auf der Seite rechts neben dem Feld [!UICONTROL Kommentar] auf das Karussymbol ( **^** ).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -86,7 +86,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Stapelgröße wird durch die durchschnittliche Asset-Größe und die MIME-Typen von Assets bestimmt, auf denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass Sie viele Dateien in einem einzigen Wiederaufbereitungsauftrag haben. Das Verarbeitungsbanner bleibt also länger auf den Assets des Experience Managers. Wenn die durchschnittliche Dateigröße kleiner/gleich 1 MB oder kleiner Adobe ist, sollten Sie den Wert auf mehrere 100 erhöhen, jedoch nie auf mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabytes beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen von Assets bestimmt, für die die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthält. Das Verarbeitungsbanner bleibt also länger auf Experience Manager-Assets. Wenn die durchschnittliche Dateigröße jedoch kleiner als 1 MB oder kleiner ist, empfiehlt es sich, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
@@ -97,7 +97,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
 1. Tippen Sie oben rechts auf der Workflow-Seite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
-1. Wählen Sie im Workflow die Komponente Scene7 Batch Upload aus, um die Symbolleiste zu öffnen, und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Configure]**.
+1. Wählen Sie im Workflow die Komponente Scene7 Batch-Upload aus, um die Symbolleiste zu öffnen, und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]** .
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
