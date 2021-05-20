@@ -1,14 +1,13 @@
 ---
 title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
-translation-type: tm+mt
-source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
 
 ---
-
 
 # Arbeiten mit Seitenversionen {#working-with-page-versions}
 
@@ -116,6 +115,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >Wenn Sie:
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
+
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 
@@ -189,7 +189,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-cloud/authoring/features/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp   {#timewarp}
+## Timewarp  {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
