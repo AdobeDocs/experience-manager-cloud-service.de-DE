@@ -1,16 +1,15 @@
 ---
 title: Übersetzen von Inhalten für mehrsprachige Sites
 description: Verschaffen Sie sich einen Überblick darüber, wie Inhalte für mehrsprachige Sites übersetzt werden.
-feature: Language Copy
+feature: Sprachkopie
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 61%
 
 ---
-
 
 # Übersetzen von Inhalten für mehrsprachige Sites {#translating-content-for-multilingual-sites}
 
@@ -25,15 +24,15 @@ Die Übersetzung der Inhalte umfasst die folgenden Schritte:
 1. [Verknüpfen Sie die Seiten Ihres Sprach-Masters](integration-framework.md#configuring-pages-for-translation) mit dem Übersetzungsdienstleister und den Framework-Konfigurationen.
 1. [Identifizieren Sie den Typ des zu übersetzenden ](rules.md) Inhalts.
 1. [Bereiten Sie die Inhalte für die Übersetzung vor](preparation.md), indem Sie die Sprach-Master und die Stammseiten der Sprachkopien erstellen.
-1. [Erstellen Sie Übersetzungsprojekte, ](managing-projects.md) um die zu übersetzenden Inhalte zu sammeln und den Übersetzungsprozess vorzubereiten.
+1. [Erstellen Sie ](managing-projects.md) Übersetzungsprojekte, um die zu übersetzenden Inhalte zusammenzustellen und den Übersetzungsprozess vorzubereiten.
 1. Verwenden Sie die Übersetzungsprojekte, um [den Prozess zur Übersetzung der Inhalte zu verwalten](managing-projects.md).
 
 Wenn Ihr Übersetzungsdienstleister keinen Connector für die Integration in AEM bereitstellt, unterstützt AEM auch die manuelle Extrahierung und das erneute Einfügen von Übersetzungsinhalten im XML-Format.
 
 >[!NOTE]
 >
->Ihr Benutzer muss Mitglied der Gruppe `project-administrators` sein, um die Funktionen der Sprachkopie verwenden zu können.
+>Ihr Benutzer muss Mitglied der Gruppe `project-administrators` sein, um die Sprachkopie-Funktionen verwenden zu können.
 
 ## Best Practices {#best-practices}
 
-Die Seite [Best Practices für Übersetzung](best-practices.md) enthält wichtige Informationen zu Ihrer Implementierung.
+Die Seite [Best Practices für die Übersetzung](best-practices.md) enthält wichtige Informationen zu Ihrer Implementierung.
