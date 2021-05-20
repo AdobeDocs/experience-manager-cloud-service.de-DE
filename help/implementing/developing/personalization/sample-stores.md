@@ -1,14 +1,13 @@
 ---
 title: 'Beispiele für ContextHub-Store-Kandidaten '
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
-translation-type: tm+mt
-source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
+exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
-
 
 # Beispiele für ContextHub-Store-Kandidaten  {#sample-contexthub-store-candidates}
 
