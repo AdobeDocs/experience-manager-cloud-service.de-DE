@@ -2,20 +2,19 @@
 title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: Asset-Berichte ,Asset Management
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '873'
 ht-degree: 78%
 
 ---
 
-
 # Asset-Berichte {#asset-reports}
 
-Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte enthalten nützliche Informationen zur Verwendung Ihres Systems, zur Interaktion der Benutzer mit Assets und zu den freigegebenen Elementen.<!-- downloaded and -->
+Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte enthalten nützliche Informationen zur Nutzung Ihres Systems, zur Interaktion der Benutzer mit Assets und zu den freigegebenen Assets.<!-- downloaded and -->
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
@@ -23,7 +22,7 @@ Das [!DNL Assets]-Berichterstellungs-Framework nutzt [!DNL Sling]-Aufträge, um 
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Wenn ein Bericht generiert wird, erhalten Sie eine Benachrichtigung über <!-- through an email (optional) and --> eine Posteingangsbenachrichtigung. Sie können einen Bericht auf der Berichtslistenseite, auf der alle zuvor erstellten Berichte angezeigt werden, Ansicht, herunterladen oder löschen.
+Wenn ein Bericht generiert wird, werden Sie über eine Inbox-Benachrichtigung benachrichtigt. <!-- through an email (optional) and --> Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen, auf der alle zuvor erstellten Berichte angezeigt werden.
 
 ## Erstellen von Berichten {#generate-reports}
 
@@ -93,11 +92,11 @@ Wenn ein Bericht generiert wird, erhalten Sie eine Benachrichtigung über <!-- t
 
 1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Abbrechen der Auswahl einer Spalte, um sie im Bericht auszuschließen.
 
-   ![Auswahl der Berichtspalten auswählen oder abbrechen](assets/configure_columns.png)
+   ![Auswahl der Berichtsspalten auswählen oder abbrechen](assets/configure_columns.png)
 
    Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im `jcr:content`-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
-   ![Auswahl der Berichtspalten auswählen oder abbrechen](assets/custom_columns.png)
+   ![Auswahl der Berichtsspalten auswählen oder abbrechen](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
@@ -135,9 +134,9 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
 1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** einen zu erstellenden Bericht aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Konfigurieren Sie die Berichtsdetails wie Titel, Beschreibung, Miniaturansicht, Ordnerpfad und Datumsbereich entsprechend. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Konfigurieren Sie die Berichtsdetails wie Titel, Beschreibung, Miniatur, Ordnerpfad und Datumsbereich wie gewünscht. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wählen Sie die entsprechenden Informationen aus der Liste **[!UICONTROL Standardspalten]**. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
+1. Wählen Sie die entsprechenden Informationen aus der Liste von **[!UICONTROL Standardspalten]** aus. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
 
    ![Namen für benutzerdefinierte Berichtsspalte angeben](assets/custom_columns-1.png)
 
@@ -147,7 +146,7 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
    Um weitere benutzerdefinierte Spalten hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die oben genannten Schritte.
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung weist darauf hin, dass die Berichtgenerierung eingeleitet wurde.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung informiert Sie darüber, dass die Berichterstellung eingeleitet wurde.
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -163,7 +162,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Fehlerbehebungsinformationen {#tips-troubleshoot}
 
-* Wenn der [!UICONTROL Disk Usage Report] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets korrekt ausgeführt werden. Verarbeiten Sie zum Auflösen die Assets erneut und erstellen Sie den Bericht erneut.
+* Wenn der [!UICONTROL Festplattenverwendungsbericht] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets korrekt verarbeitet werden. Um das Problem zu beheben, verarbeiten Sie die Assets erneut und generieren Sie den Bericht erneut.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
