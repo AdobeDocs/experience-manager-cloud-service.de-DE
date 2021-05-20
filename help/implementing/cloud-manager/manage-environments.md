@@ -1,14 +1,13 @@
 ---
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 97%
 
 ---
-
 
 # Verwalten von Umgebungen {#manage-environments}
 
@@ -114,7 +113,7 @@ Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebung
 
 >[!NOTE]
 >
->Diese Funktion steht nicht für Produktions-/Stage-Umgebung zur Verfügung, die in einem für Produktionszwecke eingerichteten Programm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
+>Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten Produktionsprogramm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
 
 ## Zugriffsverwaltung {#managing-access}
 
@@ -158,11 +157,11 @@ Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Publi
 
 1. [Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Überprüfen Sie den Status des benutzerdefinierten ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) Domänennamens oder eines  [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+1. [Überprüfen des Status des benutzerdefinierten Domain-](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) Namens oder eines  [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
 
-1. [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+1. [Überprüfen des Status von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -191,5 +190,3 @@ Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
 1. Identifizieren die Zeile, in der die Regel der IP-Zulassungsliste aufgeführt ist, deren Anwendung Sie aufheben möchten.
 1. Wählen Sie das Menü **...** ganz rechts in der Zeile aus.
 1. Wählen Sie die Option **Anwendung aufheben** aus und bestätigen Sie Ihre Übermittlung.
-
-
