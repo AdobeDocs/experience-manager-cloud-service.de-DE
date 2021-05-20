@@ -1,15 +1,14 @@
 ---
 title: AEM-Versionsaktualisierungen
 description: 'AEM-Versionsaktualisierungen '
-feature: Deploying
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Bereitstellen
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
 ---
-
 
 # AEM-Versionsaktualisierungen {#aem-version-updates}
 
@@ -47,4 +46,3 @@ AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktva
 Wie oben erwähnt, verursachen Aktualisierungen in den meisten Fällen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Dank der Funktion *Composite Node Store* in Oak sind rollierende Aktualisierungen möglich.
 
 Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue grüne AEM-Version ihr eigenes Repository `/libs` (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren blauen AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content`, `/conf`, `/etc` und andere umfasst. Da sowohl die Blau- als auch die Grün-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde.
-
