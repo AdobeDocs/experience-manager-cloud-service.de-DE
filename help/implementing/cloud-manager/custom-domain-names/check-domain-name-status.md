@@ -1,14 +1,13 @@
 ---
 title: Überprüfen des Domain-Namenstatus
 description: Überprüfen des Domain-Namenstatus
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 71%
 
 ---
-
 
 # Überprüfen des Domain-Namenstatus {#check-status}
 
@@ -44,10 +43,10 @@ Die Löschung des benutzerdefinierten Domain-Namens ist fehlgeschlagen. Sie müs
 
 ## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
 
-Kunden mit Umgebung, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung**. Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
+Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Nachricht verschwindet, sobald der Kunde alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
 
 >[!NOTE]
->Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) .
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
