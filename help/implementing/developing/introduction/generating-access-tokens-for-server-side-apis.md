@@ -1,14 +1,13 @@
 ---
 title: Erstellen von Zugriffs-Tokens für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
-translation-type: tm+mt
-source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
+exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 88%
 
 ---
-
 
 # Einführung {#introduction}
 
@@ -120,7 +119,7 @@ Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwickler
 
 >[!NOTE]
 >
->Das lokale Entwicklungs-Zugriffstoken ist maximal 24 Stunden gültig, danach muss es mit derselben Methode regeneriert werden.
+>Das Zugriffs-Token für die lokale Entwicklung ist für maximal 24 Stunden gültig. Danach muss es mit derselben Methode neu generiert werden.
 
 Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. Normalerweise verwenden Entwickler dieses Token mit dem Nicht-AEM-Programm auf dem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
 
@@ -141,11 +140,11 @@ Senden Sie die entsprechenden Server-zu-Server-API-Aufrufe vom Nicht-AEM-Program
 
 ## Widerruf der Service-Anmeldedaten {#service-credentials-revocation}
 
-Wenn die Anmeldeinformationen widerrufen werden müssen, müssen Sie eine Anfrage an den Kundensupport senden, indem Sie folgende Schritte durchführen:
+Wenn die Anmeldeinformationen widerrufen werden müssen, müssen Sie mithilfe der folgenden Schritte eine Anfrage an den Support senden:
 
-1. Deaktivieren Sie den technischen Kontobenutzer für das Adobe Admin Console in der Benutzeroberfläche:
-   * Drücken Sie in Cloud Manager die Taste **...** neben Ihrer Umgebung. Dadurch wird die Seite mit den Profilen des Produkts geöffnet.
-   * Klicken Sie jetzt auf das Profil **AEM Benutzer**, um eine Liste der Benutzer anzuzeigen
-   * Klicken Sie auf die Registerkarte **API-Anmeldeinformationen**, suchen Sie den entsprechenden Benutzer des technischen Kontos und löschen Sie ihn.
-2. Wenden Sie sich an den Kundensupport und fordern Sie an, dass die Dienstberechtigungen für diese Umgebung gelöscht werden.
-3. Schließlich können Sie die Anmeldeinformationen erneut generieren, wie in dieser Dokumentation beschrieben. Vergewissern Sie sich auch, dass der neu erstellte Benutzer des technischen Kontos über die entsprechenden Berechtigungen verfügt.
+1. Deaktivieren Sie den Benutzer des technischen Kontos für die Adobe Admin Console in der Benutzeroberfläche:
+   * Drücken Sie in Cloud Manager die Taste **...** neben Ihrer Umgebung. Dadurch wird die Seite mit den Produktprofilen geöffnet.
+   * Klicken Sie nun auf das Profil **AEM Benutzer** , um eine Liste der Benutzer anzuzeigen.
+   * Klicken Sie auf die Registerkarte **API-Anmeldeinformationen**, suchen Sie den entsprechenden Benutzer für das technische Konto und löschen Sie ihn.
+2. Wenden Sie sich an den Support und bitten Sie darum, die Anmeldedaten für den Dienst für diese spezifische Umgebung zu löschen.
+3. Schließlich können Sie die Anmeldeinformationen erneut generieren, wie in dieser Dokumentation beschrieben. Stellen Sie außerdem sicher, dass der neue Benutzer des technischen Kontos, der erstellt wird, über die entsprechenden Berechtigungen verfügt.
