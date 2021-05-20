@@ -1,10 +1,9 @@
 ---
 title: Einrichten von Dynamic Media
-description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- und Viewer-Vorgaben verwalten.
+description: Um Dynamic Media einzurichten, müssen Sie Dynamic Media konfigurieren und Bild- und Viewer-Vorgaben verwalten.
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '181'
@@ -30,7 +29,7 @@ Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant
 
 * [Konfigurieren von Dynamic Media ](config-dm.md)
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
-* [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
+* [Verwalten von Viewer-Vorgaben ](managing-viewer-presets.md)
 * [Fehlerbehebung bei Dynamic Media](troubleshoot-dm.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
@@ -42,5 +41,5 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Nachdem Sie Adobe Experience Manager ausgeführt haben, ist Dynamic Media für jedes hochgeladene Asset automatisch aktiviert (es sei denn, es wurde explizit vom Systemadministrator deaktiviert). Wenn Sie auf einer aktualisierten Instanz von Experience Manager und neu auf Dynamic Media arbeiten, müssen Sie Ihre Assets wahrscheinlich neu verarbeiten, um sie Dynamic Media-fähig zu machen. Informationen hierzu finden Sie unter [Neuverarbeitung von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Nachdem Sie Adobe Experience Manager eingerichtet und ausgeführt haben, ist Dynamic Media für jedes hochgeladene Asset automatisch aktiviert (es sei denn, es wurde explizit vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten Instanz von Experience Manager befinden und Dynamic Media noch nicht kennen, müssen Sie Ihre Assets wahrscheinlich erneut verarbeiten, damit sie für Dynamic Media aktiviert sind. Informationen hierzu finden Sie unter [Neuverarbeitung von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
