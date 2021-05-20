@@ -1,14 +1,13 @@
 ---
 title: Entwickeln von SPAs für AEM
 description: Dieser Artikel behandelt wichtige Aspekte, die zu beachten sind, wenn ein Frontend-Entwickler damit beauftragt wird, eine SPA für AEM zu entwickeln. Zudem erhalten Sie einen Überblick über die Architektur von AEM mit Blick auf SPAs, die bei der Implementierung einer entwickelten SPA in AEM zu berücksichtigen ist.
-translation-type: tm+mt
-source-git-commit: dc6dc07fe62d3387e2c4bd9459734247dfe9c9b0
+exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 100%
 
 ---
-
 
 # Entwickeln von SPAs für AEM {#developing-spas-for-aem}
 
