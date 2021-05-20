@@ -1,14 +1,13 @@
 ---
 title: 'Löschen einer IP-Zulassungsliste '
 description: Löschen einer IP-Zulassungsliste
-translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+exl-id: 34414915-0078-4acb-94df-b84043ce63d8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 100%
 
 ---
-
 
 # Löschen einer IP-Zulassungsliste {#delete-allow-list}
 
@@ -22,4 +21,3 @@ Gehen Sie wie folgt vor, um eine IP-Zulassungsliste zu löschen:
 
 >[!NOTE]
 >Beim Löschen einer IP-Zulassungsliste werden automatisch alle Services entfernt und die Liste wird aus der Tabelle gelöscht.
-
