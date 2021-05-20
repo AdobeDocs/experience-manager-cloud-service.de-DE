@@ -1,31 +1,30 @@
 ---
 title: Verwalten von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihre kostenlosen Inhalte bilden.
-feature: Content Fragments
+description: Erfahren Sie, wie Sie mit der Konsole "Assets"Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless Content bilden.
+feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 78%
+source-wordcount: '1746'
+ht-degree: 79%
 
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
-Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihre kostenlosen Inhalte bilden.
+Erfahren Sie, wie Sie mit der Konsole &quot;Assets&quot;Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless Content bilden.
 
-Nachdem Sie die [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
+Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
 
-Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [Modi](#modes-in-the-content-fragment-editor), um Ihnen Folgendes zu ermöglichen:
+Der [Inhaltsfragmente-Editor](#opening-the-fragment-editor) bietet verschiedene [Modi](#modes-in-the-content-fragment-editor), mit denen Sie:
 
-* [Bearbeiten des ](#editing-the-content-of-your-fragment) Inhalts und  [Verwalten von Variationen](#creating-and-managing-variations-within-your-fragment)
-* [Fragmente kommentieren](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Bearbeiten des ](#editing-the-content-of-your-fragment) Inhalts und  [Verwalten von Varianten](#creating-and-managing-variations-within-your-fragment)
+* [Anmerkungen zu Fragmenten](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Verknüpfen von Inhalten mit Ihrem Fragment](#associating-content-with-your-fragment)
 * [Konfigurieren der Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-* [Ansicht der Struktur](/help/assets/content-fragments/content-fragments-structure-tree.md)
-* [Vorschau der JSON-Vertretung](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [Strukturbaum anzeigen](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vorschau der JSON-Darstellung](/help/assets/content-fragments/content-fragments-json-preview.md)
 
 
 >[!NOTE]
@@ -149,15 +148,15 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
    ![Fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie nach Bedarf **Speichern**, **Speichern und schließen** oder **Schließen**.
+1. Nachdem Sie Änderungen vorgenommen haben, verwenden Sie **Speichern**, **Speichern und schließen** oder **Schließen** nach Bedarf.
 
    >[!NOTE]
    >
-   >**Speichern und** Schließen über den  **** Savedropdown verfügbar.
+   >**Speichern und** schließen Sie über das  **** Dropdown-Menü &quot;Speichern&quot;.
 
    >[!NOTE]
    >
-   >Sowohl **Save &amp; Close** als auch **Close** beenden den Editor - siehe [Save, Close and Versions](#save-close-and-versions), um ausführliche Informationen darüber zu erhalten, wie die verschiedenen Optionen für Inhaltsfragmente funktionieren.
+   >Sowohl **Speichern und schließen** als auch **Schließen** schließen den Editor - siehe [Speichern, Schließen und Versionen](#save-close-and-versions) für ausführliche Informationen zur Funktionsweise der verschiedenen Optionen für Inhaltsfragmente.
 
 ## Modi und Aktionen im Inhaltsfragment-Editor {#modes-actions-content-fragment-editor}
 
@@ -171,7 +170,7 @@ Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die vier Modi:
 
 * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-* [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Metadaten  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
 
@@ -183,7 +182,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 ![Modi](assets/cfm-managing-top-toolbar.png)
 
-* Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird. Sie können die Nachricht **Schließen** schließen.
+* Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird. Sie können die Nachricht **Schließen**.
 
 * Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
@@ -199,10 +198,10 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **Geändert**: orange
    * **Deaktiviert**: red
 
-* **Mit** Save haben Sie Zugriff auf die Option  **Speichern und** Schließen.
+* **** Save bietet Zugriff auf die Option  **Speichern und** Schließen.
 
-* Die drei Punkte (**...**)-Dropdown bietet Zugriff auf zusätzliche Aktionen:
-   * **Aktualisieren von Seitenverweisen**
+* Die drei Punkte (**...**) bietet Zugriff auf zusätzliche Aktionen:
+   * **Seitenverweise aktualisieren**
       * Dadurch werden alle Seitenverweise aktualisiert.
    * **[Quick Publish](#publishing-and-referencing-a-fragment)**
    * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
@@ -216,12 +215,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 >Versionen können [über die Zeitleiste auch erstellt, verglichen und zurückgesetzt werden](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-Der Editor verfügt über verschiedene Optionen:
+Der Editor bietet verschiedene Optionen:
 
-* **Speichern** und  **Speichern &amp; Schließen**
+* **** Speichern und  **Speichern und schließen**
 
-   * **Speichern** Sie die neuesten Änderungen und bleiben Sie im Editor.
-   * **Speichern und** schließen Sie die neuesten Änderungen und schließen Sie den Editor.
+   * **** Speichern speichert die neuesten Änderungen und bleibt im Editor.
+   * **Speichern und schließen Sie** die neuesten Änderungen und beenden Sie den Editor.
 
    >[!CAUTION]
    >
@@ -229,19 +228,19 @@ Der Editor verfügt über verschiedene Optionen:
 
    >[!NOTE]
    >
-   >Es ist möglich, im Editor zu bleiben, eine Reihe von Änderungen vorzunehmen, bevor Sie speichern.
+   >Es ist möglich, vor dem Speichern im Editor zu bleiben und eine Reihe von Änderungen vorzunehmen.
 
    >[!CAUTION]
    >
-   >Neben dem einfachen Speichern der Änderungen werden bei den Aktionen auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geflaut wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
+   >Zusätzlich zum bloßen Speichern Ihrer Änderungen aktualisieren die Aktionen auch alle Verweise und stellen sicher, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
    >
-   >Beachten Sie dies bei der Verwendung von **Speichern &amp; Schließen** und der schnellen erneuten Eingabe des Fragmenteditors, um weitere Änderungen vorzunehmen und zu speichern.
+   >Beachten Sie dies bei der Verwendung von **Speichern und schließen** und der anschließenden schnellen erneuten Eingabe des Fragmenteditors, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **Schließen**
 
    Beendet den Editor, ohne die neuesten Änderungen zu speichern (d. h. seit dem letzten **Speichern**).
 
-Beim Bearbeiten des Inhaltsfragments AEM automatisch Versionen erstellt, um sicherzustellen, dass vorherige Inhalte wiederhergestellt werden können, wenn Sie Ihre Änderungen abbrechen (ohne Speichern unter **Schließen** verwenden):
+Beim Bearbeiten des Inhaltsfragments AEM automatisch Versionen erstellt, um sicherzustellen, dass der vorherige Inhalt wiederhergestellt werden kann, wenn Sie Ihre Änderungen abbrechen (unter Verwendung von **Close** ohne Speichern):
 
 1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
 
@@ -257,7 +256,7 @@ Beim Bearbeiten des Inhaltsfragments AEM automatisch Versionen erstellt, um sich
    >Den Standardwert finden Sie unter:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Wenn der Benutzer die Bearbeitung abbricht, wird die am Beginn der Bearbeitungssitzung erstellte Version wiederhergestellt und das Token wird entfernt, um die Bearbeitungssitzung zu beenden.
+3. Wenn der Benutzer die Bearbeitung abbricht, wird die zu Beginn der Bearbeitungssitzung erstellte Version wiederhergestellt und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
 4. Werden die Bearbeitungen über die Option **Speichern** gespeichert, werden die aktualisierten Elemente/Varianten beibehalten und das Token wird zum Beenden der Bearbeitungssitzung entfernt.
 
 ## Bearbeiten des Inhalts Ihres Fragments {#editing-the-content-of-your-fragment}
@@ -321,7 +320,7 @@ Folgendes wird geöffnet:
 
 * die ausgewählte Version **v&lt;*x.y*>** (rechts)
 
-Sie werden nebeneinander angezeigt, wo:
+Sie werden nebeneinander angezeigt, wobei:
 
 * Unterschiede werden hervorgehoben
 
@@ -354,7 +353,7 @@ Sie können eine frühere Version wiederherstellen.
 Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-Inhaltsfragmente müssen zur Verwendung in der Umgebung &quot;Veröffentlichen&quot;veröffentlicht werden. Sie können folgendermaßen veröffentlicht werden:
+Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung verwendet werden zu können. Sie können folgendermaßen veröffentlicht werden:
 
 * Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
 * Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
