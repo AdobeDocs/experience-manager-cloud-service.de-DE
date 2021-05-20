@@ -1,14 +1,13 @@
 ---
 title: Einzelheiten zu SPAs
 description: Das AEM SPA Editor SDK wurde in einer Reihe von AEM Gems-Sitzungen vorgestellt. Diese von Adobe-Mitarbeitern moderierte Reihe kann als Leitfaden für ein tieferes Verständnis des AEM SPA Editor SDK auf niedriger Ebene dienen.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%
 
 ---
-
 
 # Einzelheiten zu SPAs {#spa-deep-dives}
 
