@@ -1,10 +1,9 @@
 ---
 title: Inhaltsfragmentmodelle
-description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre kostenlosen Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
+description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihren Headless Content dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
@@ -14,11 +13,11 @@ ht-degree: 90%
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-Inhaltsfragmentmodelle in AEM definieren die Struktur des Inhalts Ihrer [Inhaltsfragmente,](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren kopflosen Inhalt dienen.
+Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente,](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Inhalt dienen.
 
 So verwenden Sie Inhaltsfragmentmodelle:
 
-1. [Aktivieren Sie die Funktion für Inhaltsfragmentmodelle für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Aktivieren Sie die Funktion für Inhaltsfragmentmodelle für Ihre Instanz.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Erstellen](#creating-a-content-fragment-model) und [konfigurieren](#defining-your-content-fragment-model) Sie Ihre Inhaltsfragmentmodelle.
 1. [Aktivieren Sie Ihre Inhaltsfragmentmodelle](#enabling-disabling-a-content-fragment-model) zur Verwendung bei der Erstellung von Inhaltsfragmenten.
 1. [Lassen Sie Ihre Inhaltsfragmentmodelle in den erforderlichen Asset-Ordnern zu](#allowing-content-fragment-models-assets-folder), indem Sie **Richtlinien** konfigurieren.
@@ -111,7 +110,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Wenn auf ein Bild verwiesen wird, können Sie eine Miniaturansicht anzeigen
+   * Wenn ein Bild referenziert wird, können Sie eine Miniaturansicht anzeigen
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -124,15 +123,15 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmente-Editor.
 * **Registerkarten-Platzhalter**
    * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhaltsfragmentinhalts.
-Dies wird als Trennlinie im Modelleditor angezeigt, wobei Abschnitte der Liste von Inhaltsdatentypen getrennt werden. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
-Im Fragmenteditor wird jede Instanz als Registerkarte angezeigt.
+Dies wird als Trennzeichen im Modell-Editor angezeigt, der Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
+Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
       >[!NOTE]
-      Dieser Datentyp wird ausschließlich zur Formatierung verwendet und wird vom AEM GraphQL-Schema ignoriert.
+      Dieser Datentyp wird ausschließlich zur Formatierung verwendet und wird vom GraphQL-AEM ignoriert.
 
 ## Eigenschaften {#properties}
 
-Viele Eigenschaften sind selbsterklärend. Für bestimmte Eigenschaften sind unten weitere Details aufgeführt:
+Viele Eigenschaften sind selbsterklärend. Für bestimmte Eigenschaften sind im Folgenden zusätzliche Details aufgeführt:
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
@@ -173,7 +172,7 @@ Durch Aktivieren des Kontrollkästchens „Übersetzbar“ in einem Feld im CF-M
    * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<sites-configuration>` hinzugefügt wird, falls er noch nicht vorhanden ist.
    * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
 
-* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Content Reference](#content-reference)**.
+* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)** .
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentreferenz (verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
 
@@ -214,7 +213,7 @@ AEM bietet einen Wiederholungsschutz für:
 Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 
 * Fragmentverweise in GraphQL
-Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, auf die sich die anderen verweisen, wird beim ersten Auftreten null zurückgegeben.
+Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
 
 
 ### Inhaltsreferenz {#content-reference}
@@ -228,7 +227,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 * Einschränkungen bezüglich der Dateigrößen
 * Wenn auf ein Bild verwiesen wird:
    * Miniatur anzeigen
-   * Bildbegrenzungen für Höhe und Breite
+   * Bildbegrenzungen von Höhe und Breite
 
 ![Inhaltsreferenz](assets/cfm-content-reference.png)
 
@@ -314,7 +313,7 @@ Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
 
 * Das Modell ist nicht mehr als Grundlage für die Erstellung *neuer* Inhaltsfragmente verfügbar.
 * Beachten Sie jedoch Folgendes:
-   * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um eine Beeinträchtigung der JSON-API zu vermeiden).
+   * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um Auswirkungen auf die JSON-API zu vermeiden).
    * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 * Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
