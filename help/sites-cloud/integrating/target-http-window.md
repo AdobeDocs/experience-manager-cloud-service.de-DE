@@ -1,7 +1,6 @@
 ---
 title: Adobe AEM Target-HTTP-Fenster
 description: 'Adobe AEM Target-HTTP-Fenster '
-translation-type: tm+mt
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
 workflow-type: tm+mt
 source-wordcount: '195'
