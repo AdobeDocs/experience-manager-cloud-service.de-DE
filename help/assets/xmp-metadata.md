@@ -73,41 +73,41 @@ Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen,
 
 ## XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
-Diese XMP Funktion für die Rückgabe von Metadaten in [!DNL Adobe Experience Manager Assets] repliziert die Änderungen an den Darstellungen des ursprünglichen Assets.
-Wenn Sie die Metadaten eines Assets von [!DNL Assets] oder beim Hochladen des Assets ändern, werden die Änderungen zunächst im Metadaten-Knoten in der Asset-Hierarchie gespeichert. Mit der Funktion zum Erstellen einer Sicherungskopie können Sie die Änderungen an den Metadaten an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namensraum `jcr` verwenden, d. h., eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
+Diese XMP Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert die Metadatenänderungen an den Ausgabeformaten des ursprünglichen Assets.
+Wenn Sie die Metadaten für ein Asset in [!DNL Assets] ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadatenknoten in der Asset-Hierarchie gespeichert. Mit der Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabeformate des Assets übertragen. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
 
 Angenommen, Sie ändern die Eigenschaft [!UICONTROL Title] des Assets mit dem Titel `Classic Leather` in `Nylon`.
 
 ![Metadaten](assets/metadata.png)
 
-In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UICONTROL Title]** im Parameter `dc:title` für die in der Asset-Hierarchie gespeicherten Asset-Metadaten.
+In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UICONTROL Titel]** im Parameter `dc:title` für die in der Asset-Hierarchie gespeicherten Asset-Metadaten.
 
 ![im Asset-Knoten im Repository gespeicherte Metadaten](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->Die Funktion zum Zurückschreiben ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die Metadaten-Schreibweise [aktivieren. ](#enable-xmp-writeback) MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Schreibback. Beim Zurückschreiben bricht das Erbe.
+>Die Writeback-Funktion ist in [!DNL Assets] standardmäßig nicht aktiviert. Erfahren Sie, wie Sie [die Metadaten-Writeback](#enable-xmp-writeback) aktivieren. MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben bricht die Vererbung.
 
-### Aktivieren XMP Schreibback {#enable-xmp-writeback}
+### Aktivieren XMP Writeback {#enable-xmp-writeback}
 
-[!UICONTROL DAM Metadata ] Writebackworkflow wird zum Schreiben der Metadaten eines Assets verwendet. Gehen Sie wie folgt vor, um die Rückgabe zu aktivieren:
+[!UICONTROL DAM-Metadaten-] Writeback-Workflow wird verwendet, um die Metadaten eines Assets zu speichern. Um das Writeback zu aktivieren, führen Sie eine der folgenden drei Methoden aus:
 
-* Verwenden Sie Launchers.
-* Manueller Beginn `DAM MetaData Writeback`-Arbeitsablauf.
-* Konfigurieren Sie den Arbeitsablauf für die Nachbearbeitung.
+* Verwenden Sie Launcher.
+* Starten Sie den Workflow `DAM MetaData Writeback` manuell.
+* Konfigurieren Sie den Workflow als Teil der Nachbearbeitung.
 
-Gehen Sie wie folgt vor, um Launchers zu verwenden:
+Gehen Sie wie folgt vor, um Launcher zu verwenden:
 
-1. Als Administrator greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** zu.
-1. Wählen Sie die Spalte [!UICONTROL Starter] aus, für die **[!UICONTROL Workflow]** **[!UICONTROL DAM MetaData Writeback]** angezeigt wird. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
+1. Als Administrator greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Starter]** zu.
+1. Wählen Sie den [!UICONTROL Starter] aus, für den die Spalte **[!UICONTROL Workflow]** **[!UICONTROL DAM-Metadaten-Writeback]** anzeigt. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]**
 
-   ![Wählen Sie DAM metadata Writeback Launcher, um seine Eigenschaften zu ändern und zu aktivieren](assets/launcher-properties-metadata-writeback1.png)
+   ![Wählen Sie DAM-Metadaten-Writeback-Starter aus, um seine Eigenschaften zu ändern und zu aktivieren](assets/launcher-properties-metadata-writeback1.png)
 
-1. Wählen Sie **[!UICONTROL Aktivieren]** auf der Seite **[!UICONTROL Startereigenschaften]**. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Wählen Sie **[!UICONTROL Activate]** auf der Seite **[!UICONTROL Starter Properties]** aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-Um den Workflow manuell nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an.
+Um den Workflow nur einmal manuell auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an.
 
-Um den Workflow auf alle hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem nachbearbeitenden Profil hinzu.
+Um den Workflow auf alle hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem Nachbearbeitungsprofil hinzu.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
