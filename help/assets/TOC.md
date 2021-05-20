@@ -4,16 +4,15 @@ user-guide-title: Handbuch zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 98%
 
 ---
 
 
-# [!DNL Assets]-Anleitung {#assets}
+# [!DNL Assets]-Anleitung  {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
@@ -27,10 +26,10 @@ ht-degree: 98%
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
    + [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
-   + [Suchen von Assets](search-assets.md)
+   + [Suchen von Assets ](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags für Bilder](smart-tags.md)
-   + [Tagging Ihrer Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
+   + [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
    + [Verwenden von [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
@@ -41,7 +40,7 @@ ht-degree: 98%
    + [Verwenden und Konfigurieren von Asset Insights](assets-insights.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Metadatenschema](metadata-schemas.md)
-   + [Verwalten von Video-Assets](manage-video-assets.md)
+   + [Verwalten von Video-Assets ](manage-video-assets.md)
    + [Herunterladen von Assets](download-assets-from-aem.md)
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
@@ -55,7 +54,7 @@ ht-degree: 98%
    + [Assets-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der Assets-HTTP-API](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL-API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
-   + [Authentifizierung für Remote-AEM GraphQL-Abfragen zu Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
+   + [Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Asset-Berichte](asset-reports.md)
@@ -66,7 +65,7 @@ ht-degree: 98%
 + Freigeben und Verteilen von Assets {#brand-portal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Veröffentlichen von Assets  [!DNL Brand Portal] von [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
+   + [Veröffentlichen von Assets  [!DNL Brand Portal] von in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
@@ -79,12 +78,12 @@ ht-degree: 98%
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [Vorschau – JSON-Darstellung](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Dynamic Media Newsletter von Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
-   + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
+   + [Konfigurieren von Dynamic Media ](dynamic-media/config-dm.md)
    + [Fehlerbehebung bei Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Barrierefreiheit in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
@@ -93,29 +92,29 @@ ht-degree: 98%
    + [Bildprofile](dynamic-media/image-profiles.md)
    + [Videoprofile](dynamic-media/video-profiles.md)
    + [Verwalten von Bildvorgaben für Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Anwenden von Bildvorgaben für Dynamic Media](dynamic-media/image-presets.md)
+   + [Anwenden von Dynamic Media-Bildvorgaben](dynamic-media/image-presets.md)
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
    + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
    + [Invalidierung des CDN-Cache über Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidierung des CDN-Cache über von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
-   + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
+   + [Aktivieren des Hotlink-Schutzes in Dynamic Media  ](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
    + [Bildsets](dynamic-media/image-sets.md)
    + [Panoramabilder](dynamic-media/panoramic-images.md)
-   + [Sets für gemischte Medien](dynamic-media/mixed-media-sets.md)
+   + [Gemischte Mediensets](dynamic-media/mixed-media-sets.md)
    + [Rotationssets](dynamic-media/spin-sets.md)
    + [Video](dynamic-media/video.md)
    + [Karussellbanner](dynamic-media/carousel-banners.md)
    + [Interaktive Bilder](dynamic-media/interactive-images.md)
    + [Interaktive Videos](dynamic-media/interactive-videos.md)
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform Launch](dynamic-media/launch.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](dynamic-media/launch.md)
    + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](dynamic-media/custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
-   + [Anzeigen einer Vorschau von Dynamic Media-Assets](dynamic-media/previewing-assets.md)
+   + [Anzeigen von Dynamic Media-Assets in der Vorschau](dynamic-media/previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
    + [Verknüpfen von URLs mit einer Web-Anwendung](dynamic-media/linking-urls-to-yourwebapplication.md)
@@ -125,4 +124,4 @@ ht-degree: 98%
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](dynamic-media/http2faq.md)
    + [Einstellung von Flash-Viewer](dynamic-media/flash-viewers-eol.md)
-   + [DHTML-Viewer - Ende der Lebensdauer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
+   + [Ende der Unterstützung für DHTML-Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
