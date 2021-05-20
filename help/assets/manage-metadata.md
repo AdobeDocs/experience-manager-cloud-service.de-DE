@@ -3,7 +3,7 @@ title: Verwalten von Metadaten für digitale Assets
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Verwaltung, Metadaten
+feature: Asset-Management,Metadaten
 role: Business Practitioner,Architect,Administrator
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
@@ -122,7 +122,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >Wenn Sie mehrere Assets auswählen, wird die niedrigste gemeinsame übergeordnete Form für die Assets ausgewählt. Das heißt, die Seite [!UICONTROL Eigenschaften] zeigt nur Metadatenfelder an, die auf den Seiten [!UICONTROL Eigenschaften] aller individuellen Assets vorhanden sind.
 
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.
-1. Um den Metadaten-Editor für ein bestimmtes Asset Ansicht, brechen Sie die Auswahl der verbleibenden Assets in der Liste ab. Die Metadateneditorfelder werden mit den Metadaten für das jeweilige Asset gefüllt.
+1. Um den Metadaten-Editor für ein bestimmtes Asset anzuzeigen, brechen Sie die Auswahl der verbleibenden Assets in der Liste ab. Die Metadateneditorfelder werden mit den Metadaten für das jeweilige Asset gefüllt.
 
    >[!NOTE]
    >
