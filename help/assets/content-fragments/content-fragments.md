@@ -1,20 +1,19 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) als Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für den kostenlosen Versand eignen.
-feature: Content Fragments
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) als Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Headless-Bereitstellung eignen.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2037'
 ht-degree: 96%
 
 ---
 
-
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) als Cloud Service ermöglichen Inhaltsfragmente das Entwerfen, Erstellen, Kuratieren und Veröffentlichen seitenunabhängiger Inhalte](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Diese ermöglichen es Ihnen, Inhalte vorzubereiten, die an mehreren Orten/über mehrere Kanal hinweg verwendet werden können und somit ideal für den kostenlosen Versand geeignet sind.[
+Mit Adobe Experience Manager (AEM) als Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und [veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Diese ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Orten/über mehrere Kanäle hinweg verwendet werden können und ideal für die Headless-Bereitstellung sind.
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -52,9 +51,9 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 >
 >* [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
->* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
->* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API ](/help/assets/content-fragments/assets-api-content-fragments.md)
+* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
@@ -76,16 +75,12 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
 
 >[!NOTE]
->
->**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
->* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
->* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
+* **Inhaltsfragmente** sind redaktionelle Inhalte, mit denen u. a. auf strukturierte Daten wie Texte, Zahlen und Daten zugegriffen werden kann. Es handelt sich um reine Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout.
+* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 
->
->
 Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
->
->Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
 
 ## Inhaltsfragmente und Content Services  {#content-fragments-and-content-services}
 
@@ -104,16 +99,13 @@ AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inha
 Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser strukturierte Inhalt dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
 
 >[!NOTE]
->
->Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/implementing/developing/headless/introduction.md).
+Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/implementing/developing/headless/introduction.md).
 
 >[!NOTE]
->
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.
+AEM unterstützt auch die Übersetzung von Fragmentinhalten.
 
 >[!NOTE]
->
->AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
+AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
 
 ## Inhaltstyp {#content-type}
 
@@ -152,8 +144,7 @@ Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden
    * Weitere Informationen finden Sie unter [Einfügen von Assets in Fragmente](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) im Fragment-Editor.
 
    >[!NOTE]
-   >
-   >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
+   Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
 
 * **Zugehörige Inhalte**
 
@@ -197,12 +188,10 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * werden mit dem vorangehenden Text (Absatz) verbunden;
 
       >[!CAUTION]
-      >
-      >Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
+      Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
 
       >[!NOTE]
-      >
-      >Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
+      Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
 
 * **Zugehörige Inhalte**
 
@@ -226,8 +215,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
          * Durch Bearbeiten der **Metadaten** im Fragment-Editor
 
    >[!CAUTION]
-   >
-   >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
+   Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
 
 * **Vorlage**
 
@@ -260,8 +248,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 * Zugehörige Inhalte sowie Assets und/oder Komponenten des entsprechenden Browsers können eingesetzt werden.
 
 >[!CAUTION]
->
->Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
+Bei Zwischeninhalten handelt es sich um Seiteninhalte. Sie werden nicht im Inhaltsfragment gespeichert.
 
 ### Voraussetzungen für Fragmente {#required-by-fragments}
 
