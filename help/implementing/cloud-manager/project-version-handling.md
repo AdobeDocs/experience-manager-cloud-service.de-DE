@@ -2,10 +2,10 @@
 title: Umgang mit Maven-Projektversionen
 description: Umgang mit Maven-Projektversionen  - Cloud Services
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4761d93fe4fc186dd92ba897f62b8de967d8b890
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 91%
 
 ---
 
@@ -19,6 +19,9 @@ Für Staging- und Produktionsumgebungen generiert Cloud Manager eine eindeutige,
 Diese Version wird auf der Seite mit den Details zur Pipelineausführung sowie auf der Aktivitätsseite angezeigt. Wenn ein Build ausgeführt wird, wird das Maven-Projekt aktualisiert, um diese Version zu verwenden. Außerdem wird im Git-Repository ein Tag mit dieser Version als Name erstellt.
 
 Wenn die Originalversion des Projekts bestimmte Kriterien erfüllt, führt die aktualisierte Maven-Projektversion sowohl die Originalversion des Projekts als auch die von Cloud Manager generierte Version zusammen. Das Tag verwendet jedoch immer die generierte Version. Für diese Zusammenführung muss die ursprüngliche Projektversion mit genau drei Versionssegmenten erstellt werden (z. B. 1.0.0 oder 1.2.3, nicht jedoch 1.0 oder 1) und darf die Originalversion nicht mit -SNAPSHOT enden.
+
+>[!NOTE]
+>Dieser ursprüngliche Projektversionswert muss im `<version>`-Element der obersten Ebene `pom.xml`-Datei in der Git-Repository-Verzweigung statisch festgelegt werden.
 
 Wenn die Originalversion diese Kriterien erfüllt, wird die generierte Version als neues Versionssegment an die Originalversion angehängt. Die generierte Version wird außerdem geringfügig geändert, um eine ordnungsgemäße Sortierung und Versionsverwaltung einzuschließen. Nehmen wir als Beispiel eine generierte Version von 2019.926.121356.0000020490:
 
