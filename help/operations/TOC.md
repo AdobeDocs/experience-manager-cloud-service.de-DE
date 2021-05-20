@@ -5,7 +5,6 @@ breadcrumb-title: Verfahrensanleitung
 user-guide-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben.
 feature: Konfiguration
 role: Administrator
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '63'
