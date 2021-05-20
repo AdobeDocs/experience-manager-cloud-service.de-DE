@@ -5,7 +5,6 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Bereitstellen
 role: Architect, Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '88'
@@ -23,12 +22,12 @@ ht-degree: 100%
    + [Nach der Live-Schaltung](/help/move-to-cloud-service/post-go-live.md)
 + Cloud-Umstellungs-Tools {#cloud-migration}
    + Best Practices Analyzer {#best-practices-analyzer}
-      + [Übersicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [Überblick](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Verwenden von Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Content Transfer Tool {#content-transfer-tool}
-      + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Verwenden des Benutzerzuordnungs-Tools](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
-      + [Verwenden des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+      + [Überblick](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Verwenden des User Mapping Tools](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + [Verwenden des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code-Refaktorierungs-Tools {#refactoring-tools}
    + [Einheitliches Erlebnis](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
