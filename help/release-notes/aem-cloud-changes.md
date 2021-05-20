@@ -1,14 +1,13 @@
 ---
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 93%
 
 ---
-
 
 # Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
@@ -18,10 +17,10 @@ AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltu
 >In diesem Dokument werden die wesentlichen Änderungen an AEM als Ganzes hervorgehoben. Weitere Informationen und lösungsspezifische Änderungen finden Sie unter:
 >
 >* [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
->* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
->* [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
+* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
+* [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
@@ -65,7 +64,7 @@ Die Web-Konsole, die in früheren Versionen von AEM zum Ändern der OSGi-Einstel
 
 ## Änderungen am Publishing-Repository sind nicht zulässig {#changes-to-publish-repo}
 
-Außer Änderungen im Ordner `/home` auf der Veröffentlichungsstufe sind direkte Änderungen am Veröffentlichungs-Repository auf AEM Cloud Service nicht zulässig. In früheren Versionen von lokalen AEM oder AEM auf AMS können Codeänderungen direkt am Veröffentlichungs-Repository vorgenommen werden. Einige Einschränkungen lassen sich wie folgt reduzieren:
+Abgesehen von Änderungen im Ordner `/home` auf der Veröffentlichungsstufe sind direkte Änderungen am Veröffentlichungs-Repository auf AEM Cloud Service nicht zulässig. In früheren Versionen von On-Premise-AEM oder AEM auf AMS können Codeänderungen direkt am Publishing-Repository vorgenommen werden. Einige Einschränkungen können wie folgt reduziert werden:
 
 * Für Inhalts- und inhaltsbasierte Konfiguration: Nehmen Sie die Änderungen an der Autoreninstanz vor und veröffentlichen Sie diese.
 * Für Code und Konfiguration: Nehmen Sie die Änderungen im GIT-Repository vor und führen Sie die CI/CD-Pipeline aus, um sie einzuführen.
