@@ -1,14 +1,13 @@
 ---
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
-translation-type: tm+mt
-source-git-commit: d4c031e17c0c83e44b687474502252c89ed37922
+exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 100%
 
 ---
-
 
 # Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -292,7 +291,7 @@ Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.
 >
 >Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
 
-#### Verwendung {#usage}
+#### Nutzung {#usage}
 
 Sie können die Präprozessorkonfiguration pro Client-Bibliothek oder systemweit festlegen.
 
