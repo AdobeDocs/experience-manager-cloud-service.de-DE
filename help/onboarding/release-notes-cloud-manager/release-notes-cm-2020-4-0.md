@@ -1,15 +1,14 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Versionshinweise
+exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
@@ -38,4 +37,3 @@ Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 
 * In einigen Fällen konnte der Schritt zur Bilderstellung die Kundenpakete nicht erfolgreich herunterladen.
 * Bestimmte selten auftretende Bedingungen verhinderten, dass Umgebungen gelöscht wurden.
 * Experience Cloud-Benachrichtigungen wurden nicht konsistent empfangen.
-
