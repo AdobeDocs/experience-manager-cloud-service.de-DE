@@ -5,7 +5,6 @@ breadcrumb-title: Sicherheitsanleitung
 user-guide-description: Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service.
 feature: Konfiguration
 role: Administrator
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '63'
