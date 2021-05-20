@@ -1,14 +1,13 @@
 ---
 title: 'Konfigurieren von ContextHub '
 description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
-translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurieren von ContextHub  {#configuring-contexthub}
 
@@ -113,7 +112,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Speichert den Breiten- und Längengrad des Browser-Standorts. |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Definiert Eigenschaften und Funktionen für eine Reihe von Geräten und erkennt das aktuelle Client-Gerät. |
-| [granite.Profil](sample-stores.md#granite-profile-sample-store-candidate) | Speichert die Profildaten für den aktuellen Benutzer. |
+| [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Speichert die Profildaten für den aktuellen Benutzer. |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Speichert die Informationen zum Client, z. B. Geräteinformationen, Browser-Typ und Fensterausrichtung. |
 
 1. Klicken oder tippen Sie auf der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
