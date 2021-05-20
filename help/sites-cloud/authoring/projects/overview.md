@@ -1,14 +1,13 @@
 ---
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
-translation-type: tm+mt
-source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
+exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 97%
 
 ---
-
 
 # Projekte {#projects}
 
@@ -60,7 +59,7 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in d
 * Launches
 * Aufgaben
 
-### Assets {#assets}
+### Assets  {#assets}
 
 In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für ein bestimmtes Projekt verwenden.
 
@@ -78,7 +77,7 @@ Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets
 
 Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung in der Liste auswählen.
 
-### Erlebnisse {#experiences}
+### Erlebnisse   {#experiences}
 
 Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
 
@@ -140,7 +139,7 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen ve
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md) beschrieben.
 
-### Launches {#launches}
+### Starts {#launches}
 
 Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
 
@@ -158,7 +157,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* Ein [Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md) - Ein Referenzbeispiel für die Verwaltung übersetzungsbezogener Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
+* Ein [Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md) - Ein Referenzbeispiel für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
@@ -175,7 +174,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
-| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users` Gruppe (um ein Projekt erstellen zu können) mit Projektadministratoren (um ein Projekt erstellen und Assets verschieben zu können) |
+| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users` -Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um ein Projekt erstellen und Assets verschieben zu können) |
 
 >[!NOTE]
 >
