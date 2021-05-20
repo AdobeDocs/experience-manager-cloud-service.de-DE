@@ -2,7 +2,6 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-translation-type: tm+mt
 source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
 workflow-type: tm+mt
 source-wordcount: '1855'
@@ -30,7 +29,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
-AEM als Cloud Service befolgt die neuesten Best Practices für Paketverwaltung und Projektstruktur, wie sie vom neuesten AEM Projekt Archetype implementiert wurden.
+AEM as a Cloud Service hält sich an die neuesten Best Practices für Package Management und Projektstruktur, die vom neuesten AEM Projektarchetyp implementiert wurden.
 
 >[!TIP]
 >
