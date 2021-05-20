@@ -1,9 +1,8 @@
 ---
 title: Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten
-description: Verstehen Sie die erforderliche Authentifizierung für Remote AEM GraphQL-Abfragen, um Ihren kopflosen Content Versand zu sichern.
+description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote-AEM-GraphQL-Abfragen erforderlich ist, um Ihre Headless-Content-Bereitstellung zu sichern.
 feature: Inhaltsfragmente, GraphQL-API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-translation-type: tm+mt
 source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -13,13 +12,13 @@ ht-degree: 75%
 
 # Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um den Versand von kostenlosen Inhalten zu sichern.
+Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung Headless Content sicherzustellen.
 
 >[!NOTE]
 >
 >Für Tests und Entwicklung können Sie auch direkt über die [GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) auf die AEM GraphQL-API zugreifen.
 
-Zur Authentifizierung muss der Drittanbieter-Dienst [ein Zugriffstoken](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anforderung](#use-access-token-in-graphql-request) verwendet werden kann.
+Für die Authentifizierung muss der Drittanbieterdienst [ein Zugriffstoken](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anfrage](#use-access-token-in-graphql-request) verwendet werden kann.
 
 ## Abrufen eines Zugriffs-Tokens {#retrieving-access-token}
 
