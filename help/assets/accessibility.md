@@ -2,16 +2,15 @@
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
 description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  Benutzern mit Behinderungen helfen.
 contentOwner: AG
-feature: Accessibility,Asset Management
+feature: Barrierefreiheit,Asset-Verwaltung
 role: Business Practitioner,Architect,Leader
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1915'
 ht-degree: 99%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -98,7 +97,7 @@ Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tast
 | Asset oder Ordner ist ausgewählt | `e` | Bearbeiten Sie das ausgewählte Asset. |
 | Asset oder Ordner ist ausgewählt | `m` | Verschieben Sie das ausgewählte Asset. |
 | Asset oder Ordner ist ausgewählt | `Ctrl + c` | Kopieren Sie das ausgewählte Asset. |
-| Asset oder Ordner ist ausgewählt | `Esc` | Auswahl abbrechen. |
+| Asset oder Ordner ist ausgewählt | `Esc` | Abbrechen der Auswahl. |
 | Das Dialogfeld wird geöffnet und befindet sich im Fokus. | `Esc` | Schließen Sie das Dialogfeld. |
 | Innerhalb eines Ordners in DAM | `Ctrl + v` | Fügen Sie das kopierte Asset ein. |
 | [!DNL Assets]-Konsole | `Ctrl + A` | Wählen Sie alle Assets aus. |
