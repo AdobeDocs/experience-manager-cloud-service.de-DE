@@ -1,34 +1,33 @@
 ---
-title: Datenschutzbestimmungen und Datenschutzbestimmungen - Adobe Experience Manager als Cloud Service Sitebereitschaft
-description: 'Erfahren Sie mehr über Adobe Experience Manager als Cloud Service-Sites, die die verschiedenen Datenschutzbestimmungen unterstützen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Verbraucherschutzgesetzes und der Frage, wie bei der Umsetzung eines neuen AEM als Cloud Service-Projekt einzuhalten ist. '
-translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+title: Datenschutzbestimmungen - Adobe Experience Manager as a Cloud Service Sites - Einhaltung von Datenschutzbestimmungen
+description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen. darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM als Cloud Service.
+exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 43%
 
 ---
 
-
-# Adobe Experience Manager als Cloud Service Sites - Bereitschaft für Datenschutz und Datenschutzvorschriften {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Sites - Einhaltung von Datenschutzbestimmungen {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
 >Der Inhalt dieses Dokuments stellt keine Rechtsberatung dar und ist nicht als Ersatz für Rechtsberatung gedacht.
 >
->Für Informationen zu Datenschutzbestimmungen und Datenschutzbestimmungen wenden Sie sich bitte an die Rechtsabteilung Ihrer Firma.
+>Wenden Sie sich an die Rechtsabteilung Ihres Unternehmens, um Ratschläge zu Datenschutzbestimmungen zu erhalten.
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was das für Sie als Adobe bedeutet, finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was dies für Sie als Adobe bedeutet, finden Sie im [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
 
-Adobe Experience Manager als Cloud Service Sites sind bereit, Kunden bei ihren Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Diese Seite führt Kunden durch die Verfahren zur Bearbeitung solcher Anfragen in AEM Sites. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
+Adobe Experience Manager as a Cloud Service Sites ist bereit, Kunden bei der Erfüllung ihrer Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Diese Seite führt Kunden durch die Verfahren zur Verarbeitung solcher Anfragen in AEM Sites. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
 Weitere Informationen finden Sie im [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Adobe Experience Manager als Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+>Weitere Informationen finden Sie unter [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) .
 
 ## AEM-Autorenebene {#aem-author-tier}
 
@@ -36,7 +35,7 @@ Benutzerkonten und UGC-Inhalte auf dem Autorenserver werden in der [AEM Foundati
 
 ## AEM-Veröffentlichungsebene {#aem-publish-tier}
 
-Benutzerkonten, die zum Authentifizieren von Besuchern auf der Site verwendet werden, und UGC-Inhalte auf dem Veröffentlichungsserver werden in der [AEM Foundation-Dokumentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) behandelt.
+Benutzerkonten, die zur Authentifizierung von Besuchern auf der Site verwendet werden, und benutzergenerierte Inhalte auf dem Veröffentlichungsserver werden in der [AEM Foundation-Dokumentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) behandelt.
 
 Standardmäßig speichern AEM Sites-Komponenten keine Formulardaten, die von Besuchern auf dem Veröffentlichungsserver eingegeben wurden. Es wird empfohlen, diese Daten zur weiteren Verarbeitung an ein Drittanbietersystem oder an Adobe Campaign zu übermitteln.
 
@@ -46,43 +45,43 @@ Standardmäßig speichern AEM Sites-Komponenten keine Formulardaten, die von Bes
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Manager unterliegt einem Ausschluss-Service für Cookies, der für die Verwaltung der Ausschluss-/Abmeldeoption für Benutzer verwendet wird.
+Adobe Experience Manager unterliegt einem Cookie-Opt-out-Dienst, der zur Verwaltung des Opt-in-/Opt-outs für Benutzer verwendet wird.
 
-So wählen Sie aus:
+Opt-out:
 
 1. Navigieren Sie zu:
-   [Datenschutzzentrum für Adoben - Abmeldung](https://www.adobe.com/privacy/opt-out.html)
+   [Adobe Privacy Center - Opt-out](https://www.adobe.com/privacy/opt-out.html)
 
-1. Blättern Sie nach unten zu **Dienste** - **Experience Cloud-Dienst-Nutzungsdaten**.
+1. Scrollen Sie nach unten zu **Services** - **Experience Cloud Service-Nutzungsdaten**.
 
-1. Wählen Sie den referenzierten Link aus. derzeit mit dem Titel **here**.
+1. Wählen Sie den referenzierten Link aus. Aktuell mit dem Titel **hier**.
 
-1. Sie erhalten die folgenden Details sowie die Optionen zum Opt-out oder in:
+1. Ihnen werden die folgenden Details sowie die Optionen zum Opt-out oder An angezeigt:
 
-   * Um die Aggregation und Analyse von Daten über Ihren Besuch auf dieser Site abzuwählen, müssen Sie ein Cookie in Ihrem Browser installieren. Dieses Cookie identifiziert, dass Sie sich abgemeldet haben.
+   * Um die Aggregation und Analyse von Daten zu Ihrem Besuch auf dieser Website abzuwählen, müssen Sie ein Cookie in Ihrem Browser installieren. Dieses Cookie identifiziert, dass Sie sich abgemeldet haben.
 
-      Wenn Sie das Ausschluss-Cookie löschen oder Computer oder Webbrowser wechseln, müssen Sie die Abmeldung erneut vornehmen.
+      Wenn Sie das Opt-out-Cookie löschen oder Computer oder Webbrowser wechseln, müssen Sie sich erneut abmelden.
 
-      Ausschluss - Ausschluss von der Aggregation und Analyse der Besucher-Sitzung (`amcglobal.sc.omtrdc.net` Ausschluss-Cookie installieren) - Klicken Sie hier.
+      Opt-out - Schließen Sie mich aus der Aggregation und Analyse der Besuchersitzung aus (installieren Sie das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) - Klicken Sie hier.
 
-      Teilnahme - Schließen Sie mich in die Aggregation und Analyse der Besucher-Sitzung ein (installieren Sie nicht das `amcglobal.sc.omtrdc.net` Ausschluss-Cookie) - Klicken Sie hier.
-   Gehen Sie wie oben beschrieben vor, um auf die eigentlichen Links zuzugreifen.
+      Opt-in - Schließen Sie mich in die Aggregation und Analyse der Besuchersitzung ein (installieren Sie nicht das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) - Klicken Sie hier.
+   Führen Sie die oben genannten Schritte aus, um auf die tatsächlichen Links zuzugreifen.
 
    >[!NOTE]
    >
-   > Eine weitere Beschreibung finden Sie unter **2. Datenschutz.** Abschnitt der Allgemeinen Nutzungsbedingungen der  [Adobe](https://www.adobe.com/de/legal/terms.html).
+   > Eine weitere Beschreibung finden Sie in **2. Datenschutz.** Abschnitt der allgemeinen Nutzungsbedingungen der  [Adobe](https://www.adobe.com/de/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sites bietet eine optionale Integration mit Analytics Foundation, die Funktionen des Adobe Analytics On-Demand-Dienstes nutzt.
+AEM Sites bietet eine optionale Integration in Analytics Foundation, die Funktionen des On-Demand-Dienstes von Adobe Analytics verwendet.
 
-Weitere Informationen zum Verwalten von Datenanfragen im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Weitere Informationen zum Verwalten von Anfragen von Datensubjekten im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Personalization Foundation nach Zielgruppe {#personalization-foundation-by-target}
+## Personalization Foundation by Target {#personalization-foundation-by-target}
 
-AEM Sites bietet eine optionale Integration mit Personalization Foundation nach Zielgruppe, die Funktionen des Adobe Target On-Demand-Dienstes nutzt.
+AEM Sites bietet eine optionale Integration in Personalization Foundation by Target, die Funktionen innerhalb des On-Demand-Dienstes von Adobe Target verwendet.
 
-Weitere Informationen zur Verwaltung von Anfragen von Betroffenen im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Datenschutz und Datenschutzverordnung](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Weitere Informationen zur Verwaltung von Anfragen von Datensubjekten im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Privatsphäre und Datenschutz-Grundverordnung](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -98,7 +97,7 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM übermi
 
 Der Website-Inhaber muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
 
-Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Daher muss ein Besucher der Website eindeutig zustimmen, bevor personenbezogene Daten in der (clientseitigen) Persistenz des Browsers gespeichert werden.
+Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Daher muss ein Besucher einer Website eindeutig zustimmen, bevor personenbezogene Daten in der (clientseitigen) Persistenz des Browsers gespeichert werden.
 
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
 * Die Geschäftsbedingungen, die sich auf den Datenschutz und die Privatsphäre der Website beziehen, müssen dem Besucher der Website angezeigt werden, damit er:
