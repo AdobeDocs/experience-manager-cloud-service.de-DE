@@ -2,16 +2,15 @@
 title: Freigeben von Assets, Ordnern und Sammlungen als Link
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in [!DNL Experience Manager Assets] als Hyperlink freigeben.
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: Asset-Management, Zusammenarbeit, Asset-Verteilung
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 88%
 
 ---
-
 
 # Freigeben und Verteilen von in verwalteten Assets in [!DNL Experience Manager] {#share-assets-from-aem}
 
@@ -19,7 +18,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 * Freigeben als Link.
 * [Herunterladen von Assets und separates Freigeben.](/help/assets/download-assets-from-aem.md)
-* Freigeben mit [[!DNL Experience Manager] Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de).
+* Freigeben mit dem [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de).
 * Freigeben mit [[!DNL Adobe Asset Link]](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html).
 * Freigeben mit [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=de).
 
@@ -171,7 +170,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
 
-Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als &quot;Desktop-Aktionen&quot;bezeichnet und um sie zu aktivieren, finden Sie unter [Aktivieren von Desktop-Aktionen in [!DNL Assets] Webschnittstelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
+Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Um sie zu aktivieren, lesen Sie [Aktivieren von Desktop-Aktionen in [!DNL Assets] Web-Schnittstelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
 
 ![Aktivieren von Desktop-Aktionen, die beim Arbeiten mit dem Desktop-Programm als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
@@ -185,8 +184,8 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 
 * Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
 * Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem AEM-Administrator nach den [Download-Beschränkungen](#maxdatasize).
-* Damit ein Benutzer ein Video, das mithilfe der Linkfreigabe freigegeben wird, Vorschau, muss für das Video eine statische Videowiedergabe am Speicherort `/jcr:content/renditions` im Knoten des Videos im Repository verfügbar sein. Die Vorschau ist nicht von der Verfügbarkeit einer Darstellung [!DNL Dynamic Media] abhängig.
-* Beim Herunterladen eines Video-Assets über die Linkfreigabe werden die Darstellungen [!DNL Dynamic Media] nicht im heruntergeladenen Archiv enthalten.
+* Damit ein Benutzer eine Vorschau eines Videos anzeigen kann, das über die Linkfreigabe freigegeben wird, muss das Video über eine statische Videowiedergabe verfügen, die unter `/jcr:content/renditions` im Videoknoten im Repository verfügbar ist. Die Vorschau hängt nicht von der Verfügbarkeit eines [!DNL Dynamic Media] -Ausgabeformats ab.
+* Beim Herunterladen eines Video-Assets über die Linkfreigabe werden die [!DNL Dynamic Media]-Ausgabeformate nicht im heruntergeladenen Archiv enthalten.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
