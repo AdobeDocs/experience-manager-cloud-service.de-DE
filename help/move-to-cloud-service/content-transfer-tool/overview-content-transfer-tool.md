@@ -14,9 +14,9 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Überblick"
->abstract="Content Transfer Tool ist ein von der Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer Quellinstanz (lokal oder AMS) in die Zielgruppe AEM Cloud Service-Instanz verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraktion"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Einstiegsprozess"
+>abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie bestehende Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Ziel-AEM-Cloud Service-Instanz verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraktionsprozess"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Aufnahmevorgang"
 
 Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können.
 
@@ -38,7 +38,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein *Migrationssatz* hat die folgenden Attribute:
 
-* Während der Aktivität zur Inhaltsübertragung können maximal zehn Migrationssets erstellt und gepflegt werden.
+* Es können maximal zehn Migrationssätze gleichzeitig während der Aktivität Inhaltstransfer erstellt und verwaltet werden.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
 * Wenn ein Migrationssatz länger als 30 Tage inaktiv war, wird er automatisch gelöscht.
 * Wenn Sie einen Migrationssatz erstellen, wird er einer bestimmten Umgebung zugeordnet. Sie können nur in eine Autoren- oder Veröffentlichungsinstanz derselben Umgebung aufnehmen.
@@ -60,9 +60,9 @@ In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Richtlinien und Best Practices"
->abstract="Lesen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer-Tools, einschließlich Aufgaben zur Bereinigung von Revisionen, Überlegungen zum Festplattenspeicherplatz und mehr."
+>abstract="Lesen Sie die Richtlinien und Best Practices zur Verwendung des Content Transfer-Tools, einschließlich Revisionsbereinigungsaufgaben, Überlegungen zum Festplattenspeicher und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Wichtige Überlegungen zur Verwendung des Benutzerzuordnungs-Tools"
 
 Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools:
 
@@ -82,4 +82,4 @@ Die allgemeine Formel zur Berechnung des erforderlichen freien Festplattenspeich
    * *Knotenspeichergröße*: Größe des Segmentspeicherverzeichnisses oder der MongoDB-Datenbank.
 Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherplatz erforderlich.
 
-* Ein Migrationssatz muss während der gesamten Aktivität der Inhaltsübertragung beibehalten werden, um Inhaltsaktualisierungen zu unterstützen. Da während der Aktivität der Inhaltsübertragung maximal zehn Migrationssätze erstellt und gepflegt werden können, wird empfohlen, das Inhalts-Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen die Migrationssätze nicht ausgehen.
+* Ein Migrationssatz muss während der gesamten Inhaltstransferaktivität beibehalten werden, um die Auffüllung von Inhalten zu unterstützen. Da während der Inhaltstransferaktivität maximal zehn Migrationssätze gleichzeitig erstellt und gepflegt werden können, wird empfohlen, das Inhalts-Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen die Migrationssätze nicht ausgehen.
