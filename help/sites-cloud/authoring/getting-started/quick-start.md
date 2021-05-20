@@ -1,14 +1,13 @@
 ---
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
-
 
 # Schnellstartanleitung zum Verfassen von Seiten (Authoring) {#quick-guide-to-authoring-pages}
 
@@ -52,7 +51,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Suchen nach Seiten {#finding-your-page}
@@ -161,8 +160,7 @@ So bearbeiten Sie Ihre Seite:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
    >[!NOTE]
-   >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
@@ -178,8 +176,7 @@ So bearbeiten Sie Ihre Seite:
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   >
-   >Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
 ### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
@@ -255,8 +252,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
    >[!NOTE]
-   >
-   >Löschen ist nicht als Schnellaktion verfügbar.
+   Löschen ist nicht als Schnellaktion verfügbar.
 
 ### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
