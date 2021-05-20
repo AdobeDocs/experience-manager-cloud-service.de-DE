@@ -1,14 +1,13 @@
 ---
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
-translation-type: tm+mt
-source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
+exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3296'
 ht-degree: 100%
 
 ---
-
 
 # Seitenvorlagen {#page-templates}
 
@@ -489,7 +488,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * die Eigenschaft:
@@ -502,7 +500,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-
       `cq:allowedTemplates`
 Im 
 `jcr:content`-Knoten der erforderlichen Verzweigung.
@@ -584,10 +581,12 @@ Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 >Daher empfiehlt Adobe, einfach anzufangen, indem Sie Folgendes definieren:
 >
 >* nur die `cq:allowedTemplates`-Eigenschaft
+   >
+   >
+* nur im Site-Stamm
 >
->* nur im Site-Stamm
 >
->Ein Beispiel finden Sie im Inhalt des [WKND-Tutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md): `/content/wknd/jcr:content`
+Ein Beispiel finden Sie im Inhalt des [WKND-Tutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md): `/content/wknd/jcr:content`
 >
 >Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >
