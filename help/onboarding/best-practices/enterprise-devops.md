@@ -1,7 +1,6 @@
 ---
 title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
@@ -65,7 +64,7 @@ Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein - Konfi
 * Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
-### Produktion - Autoren- und Veröffentlichungsumgebung    {#production-author-and-publish}
+### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
 
 Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-cloud/authoring/getting-started/concepts.md) der Implementierung notwendigen Umgebungen.
 
@@ -89,7 +88,7 @@ Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Au
 
 Um die in der Veröffentlichungsumgebung erstellten Daten umgekehrt zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung und fragt solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Veröffentlichungsumgebung ab.
 
-#### Veröffentlichen    {#publish}
+#### Veröffentlichen   {#publish}
 
 Die Veröffentlichungsumgebung befindet sich normalerweise innerhalb der demilitarisierten Zone (DMZ). Dies ist die Umgebung, in der die Besucher auf Ihren Inhalt zugreifen (beispielsweise über die Website oder über eine App) und damit interagieren, sei es öffentlich oder innerhalb Ihres Intranets. Die Veröffentlichungsumgebung:
 
