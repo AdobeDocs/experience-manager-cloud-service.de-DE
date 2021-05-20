@@ -3,7 +3,6 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Bereitstellen
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '3334'
@@ -50,7 +49,7 @@ Das folgende Video bietet einen Überblick über die Implementierung von Code f�
 
 Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt umwandelt. So wird eine AEM as a Cloud Service-Anwendung beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie also die Pakete im Package Manager für Cloud-Umgebungen betrachten, enthält der Name „cp2fm“ und wurden alle Metadaten der transformierten Pakete entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Inhaltspakete, die für AEM als Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderbarem und veränderbarem Inhalt aufweisen. Cloud Manager installiert dann nur den veränderbaren Inhalt und gibt eine Meldung wie die folgende aus:
+Inhaltspakete, die für AEM as a Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichem und veränderlichem Inhalt aufweisen. Cloud Manager installiert dann nur den veränderlichen Inhalt und gibt außerdem eine Meldung wie die folgende aus:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -64,7 +63,7 @@ Da Anwendungsänderungen aufgrund des Blue-Green-Implementierungsmusters durch e
 
 Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
 
-Für diese Codepakete gelten einige zusätzliche Einschränkungen, z. B. werden [Installationshoke](http://jackrabbit.apache.org/filevault/installhooks.html) nicht unterstützt.
+Für diese Code-Pakete gelten einige zusätzliche Einschränkungen, z. B. [install hooks](http://jackrabbit.apache.org/filevault/installhooks.html) werden nicht unterstützt.
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
@@ -101,9 +100,9 @@ Nach der Umstellung auf die neue Anwendungsversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen). Informationen zu Installationshaken, die Benutzern die Ausführung erlauben, finden Sie in der [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html).
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen). Informationen zu Installationshaken, die Benutzern die Ausführung ermöglichen, finden Sie in der [Dokumentation zu Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) .
 
-Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Die Umstrukturierung zur Berücksichtigung dieser Trennung erfolgte in AEM 6.5 und Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Implementierung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über Package Manager installiert werden.
@@ -112,7 +111,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandenen Code-Basen der Repository-Restrukturierung entsprechen, die durch die 6.5-Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
+Wie oben erwähnt, sollten Kunden mit vorhandener Code-Basis die Repository-Umstrukturierung durchführen, die durch die 6.5 Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
 ## Repoinit {#repoinit}
 
@@ -167,7 +166,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrieren von Paketen mit veränderlichen Inhalten"
->abstract="Untersuchen Sie die Verwendung des Paketmanagers für Anwendungsfälle, bei denen ein Inhaltspaket als &quot;Einzel&quot; installiert werden sollte. Dazu gehören der Import bestimmter Inhalte von der Produktion bis zur Staging-Phase, um ein Produktionsproblem zu debuggen, die Übertragung kleiner Inhaltspakete von der lokalen Umgebung auf AEM Cloud-Umgebung und mehr."
+>abstract="Erkunden Sie die Verwendung des Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als &quot;Einzel&quot; installiert werden sollte. Dazu gehört der Import bestimmter Inhalte aus der Produktion in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung kleiner Inhaltspakete von der On-Premise-Umgebung auf AEM Cloud-Umgebungen und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann Package Manager in AEM as a Cloud Service-Umgebungen verwendet werden.
