@@ -1,14 +1,13 @@
 ---
 title: Benennungskonventionen
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '223'
+ht-degree: 94%
 
 ---
-
 
 # Benennungskonventionen{#naming-conventions}
 
