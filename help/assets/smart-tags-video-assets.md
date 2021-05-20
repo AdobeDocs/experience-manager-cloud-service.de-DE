@@ -1,10 +1,9 @@
 ---
 title: Tagging von Video-Assets mit Smart-Tags
 description: Experience Manager fügt Videos mit [!DNL Adobe Sensei] automatisch kontextbezogene und beschreibende Smart-Tags hinzu.
-feature: Smart-Tags,Tagging
+feature: Smart-Tags, Tagging
 role: Administrator,Business Practitioner
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
 source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
 source-wordcount: '1186'
@@ -138,5 +137,5 @@ Gehen Sie folgendermaßen vor, um den Konfidenzwert für die OSGi-Konfiguration 
 >[!MORELIKETHIS]
 >
 >* [Verwalten von Smart-Tags und Asset-Suchvorgängen](smart-tags.md#manage-smart-tags-and-searches)
->* [Trainieren des Smart-Tag-Service und Tagging von Bildern](smart-tags.md)
+* [Trainieren des Smart-Tag-Service und Tagging von Bildern](smart-tags.md)
 
