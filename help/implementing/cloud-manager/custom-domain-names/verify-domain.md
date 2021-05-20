@@ -1,7 +1,6 @@
 ---
 title: Überprüfen der Domain
 description: Überprüfen der Domain
-translation-type: tm+mt
 source-git-commit: d2a98cf340dc755407250a9a9649addb75ad87d2
 workflow-type: tm+mt
 source-wordcount: '171'
