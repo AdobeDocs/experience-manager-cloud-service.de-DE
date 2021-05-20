@@ -15,9 +15,9 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Funktionstests werden in drei Typen eingeteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests"
+>abstract="Funktionstests sind in drei Typen unterteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests"
 
-Funktionstests werden in drei Typen eingeteilt:
+Funktionstests sind in drei Typen unterteilt:
 
 
 * Funktionstests für das Produkt
@@ -43,32 +43,32 @@ Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig
 
 ## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
 
-AEM bietet seinen Kunden eine integrierte Suite mit Cloud Manager-Qualitätsterminen, um eine reibungslose Aktualisierung ihrer Anwendungen sicherzustellen. Vor allem IT-Testgates ermöglichen es Kunden bereits, eigene Tests zu erstellen und zu automatisieren, die AEM APIs verwenden.
+AEM bietet seinen Kunden eine integrierte Suite von Cloud Manager-Quality-Gates, um eine reibungslose Aktualisierung ihrer Anwendungen sicherzustellen. Insbesondere ermöglichen IT-Test-Gate Kunden bereits die Erstellung und Automatisierung eigener Tests, die AEM APIs verwenden.
 
-Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion [Kunden-Teilnahme](#customer-opt-in), mit der unsere Kunden UI-Tests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von UI-Tests und zum Schreiben von UI-Tests finden Sie hier. Zusätzlich kann ein UI-Tests-Projekt einfach mithilfe des AEM Project Archetype erstellt werden.
+Die Testfunktion der benutzerdefinierten Benutzeroberfläche ist eine optionale Funktion [Customer Opt-in](#customer-opt-in), mit der unsere Kunden Benutzeroberflächentests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von UI- und Schreiben von UI-Tests finden Sie hier. Darüber hinaus kann ein UI-Tests-Projekt einfach mithilfe des AEM Projektarchetyps generiert werden.
 
-Die Kunden können (über GIT) benutzerdefinierte Tests und Testsuite für die Benutzeroberfläche erstellen. Der UI-Test wird als Teil eines bestimmten Qualitätsgate für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
+Die Kunden können (über GIT) benutzerdefinierte Tests und eine Test-Suite für die Benutzeroberfläche erstellen. Der UI-Test wird als Teil eines bestimmten Quality Gate für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
 
-Die Benutzeroberflächentests des Kunden werden automatisch auf der Produktionsleitung unter dem Schritt &quot;Tests der benutzerdefinierten Benutzeroberfläche&quot;ausgeführt.
+Die Tests der Kundenbenutzeroberfläche werden automatisch in der Produktions-Pipeline im Schritt &quot;Testen der benutzerdefinierten Benutzeroberfläche&quot;ausgeführt.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Dockerbild mit Tests in jeder Sprache sein, sofern sie den unter [Erstellen von UI-Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests) definierten Konventionen entsprechen.
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um in Java geschriebene HTTP-Tests handelt, können die UI-Tests ein Docker-Bild mit Tests sein, die in einer beliebigen Sprache geschrieben wurden, sofern sie den Konventionen entsprechen, die unter [Erstellen von UI-Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests) definiert wurden.
 
 >[!NOTE]
->Es wird empfohlen, die Struktur und Sprache *(js und wdio)* bequem im [AEM Projekt Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) als Ausgangspunkt zu verwenden.
+>Es wird empfohlen, die Struktur und Sprache *(js und wdio)* zu befolgen, die Sie bequem im [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) als Ausgangspunkt erhalten.
 
-### Kunden-Teilnahme {#customer-opt-in}
+### Kunden-Opt-in {#customer-opt-in}
 
-Um ihre UI-Tests erstellen und ausführen zu können, müssen Kunden eine &quot;opt-in&quot;-Datei hinzufügen, indem sie eine Datei zu ihrem Code-Repository hinzufügen, unter dem maven Untermodul für UI-Tests (neben der Datei pom.xml des Untermoduls UI-Tests) und sicherstellen, dass diese Datei sich im Stammverzeichnis der erstellten Datei befindet.`tar.gz`
+Um ihre UI-Tests erstellen und ausführen zu können, müssen Kunden eine &quot;Opt-in&quot;-Option einrichten, indem sie eine Datei zum Code-Repository hinzufügen, unter dem Maven-Untermodul für UI-Tests (neben der Datei &quot;pom.xml&quot;des UI-Tests-Untermoduls) und sicherstellen, dass sich diese Datei im Stammverzeichnis der erstellten `tar.gz`-Datei befindet.
 
 *Dateiname*: `testing.properties`
 
 *Inhalt*: `one line: ui-tests.version=1`
 
-Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von UI-Tests übersprungen
+Wenn dies nicht in der erstellten `tar.gz`-Datei enthalten ist, werden der Build und die Ausführungen der Benutzeroberflächentests übersprungen
 
 >[!NOTE]
->Produktionspipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen UI-Tests verwendet werden können. Das bedeutet, dass der Benutzer die Produktionsleitung bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
->Weitere Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren der CI-CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de#using-cloud-manager).
+>Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen UI-Tests verwendet werden können. Dies bedeutet im Wesentlichen, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
+>Weitere Informationen zur Pipelinekonfiguration finden Sie unter [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de#using-cloud-manager) .
 
 ### Schreiben von Funktionstests {#writing-functional-tests}
 
