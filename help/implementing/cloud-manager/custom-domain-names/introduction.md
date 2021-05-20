@@ -1,14 +1,13 @@
 ---
 title: Einführung – benutzerdefinierte Domain-Namen
 description: Einführung – benutzerdefinierte Domain-Namen
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 100%
 
 ---
-
 
 # Einführung {#introduction}
 
@@ -21,4 +20,4 @@ Auf der Seite mit den Domain-Einstellungen für die Benutzeroberfläche von Clou
 
 * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 * [Anzeigen oder Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md), der es Anwendern ermöglicht, Details anzuzeigen oder ein demnächst ablaufendes Zertifikat zu ersetzen
-* [Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
