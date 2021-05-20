@@ -1,25 +1,24 @@
 ---
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 100%
 
 ---
 
-
 # Teilnehmen an Workflows {#participating-in-workflows}
 
 Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt einen Benutzer oder eine Gruppe zum Durchführen der Aktivität aus und weist dieser Person oder Gruppe ein Arbeitselement zu. Der Benutzer erhält eine Benachrichtigung und kann dann die entsprechende Aktion ausführen:
 
 * [Ansehen der Benachrichtigungen](#notifications-of-available-workflow-actions)
-* [Fertigstellen eines Teilnehmerschritts](#completing-a-participant-step) 
-* [Delegieren eines Teilnehmerschritts](#delegating-a-participant-step) 
+* [Fertigstellen eines Teilnehmerschritts ](#completing-a-participant-step)
+* [Delegieren eines Teilnehmerschritts ](#delegating-a-participant-step)
 * [Wechseln zu einem vorherigen Teilnehmerschritt: ](#performing-step-back-on-a-participant-step)
-* [Öffnen eines Workflow-Elements, um Details anzuzeigen (und Maßnahmen zu ergreifen)](#opening-a-workflow-item-to-view-details-and-take-actions) 
-* [Anzeigen der Workflow-Nutzlast (mehrere Ressourcen)](#viewing-the-workflow-payload-multiple-resources) 
+* [Öffnen eines Workflow-Elements, um Details anzuzeigen (und Maßnahmen zu ergreifen) ](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Anzeigen der Workflow-Nutzlast (mehrere Ressourcen) ](#viewing-the-workflow-payload-multiple-resources)
 
 ## Benachrichtigungen über verfügbare Workflow-Aktionen   {#notifications-of-available-workflow-actions}
 
@@ -65,7 +64,7 @@ Bei dieser Aktion können Sie Folgendes angeben:
 Die Durchführung eines Teilnehmerschritts ist möglich:
 
 * [im Posteingang](#completing-a-participant-step-inbox)
-* [im Seiten-Editor](#completing-a-participant-step-page-editor)
+* [Dem Seiten-Editor](#completing-a-participant-step-page-editor)
 * [in der Timeline](#completing-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions).
 
@@ -124,7 +123,7 @@ Bei dieser Aktion können Sie Folgendes angeben:
 Das Delegieren eines Teilnehmerschritts ist möglich:
 
 * [im Posteingang](#delegating-a-participant-step-inbox)
-* [im Seiten-Editor](#delegating-a-participant-step-page-editor)
+* [Dem Seiten-Editor](#delegating-a-participant-step-page-editor)
 * [in der Timeline](#delegating-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions).
 
@@ -174,7 +173,7 @@ Bei dieser Aktion können Sie Folgendes angeben:
 Das Wechseln zu einem vorherigen Teilnehmerschritt ist möglich:
 
 * [im Posteingang](#performing-step-back-on-a-participant-step-inbox)
-* [im Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor)
+* [Dem Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor)
 * [in der Timeline](#performing-step-back-on-a-participant-step-timeline)
 * beim [Öffnen eines Workflow-Elements zur Ansicht von Details](#opening-a-workflow-item-to-view-details-and-take-actions).
 
@@ -237,7 +236,7 @@ Die Workflow-Details werden in Registerkarten angezeigt und die entsprechenden A
 Das Öffnen der Details der Arbeitselemente ist möglich:
 
 * [im Posteingang](#performing-step-back-on-a-participant-step-inbox)
-* [im Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor)
+* [Dem Seiten-Editor](#performing-step-back-on-a-participant-step-page-editor)
 
 #### Öffnen der Workflow-Details: Posteingang {#opening-workflow-details-inbox}
 
