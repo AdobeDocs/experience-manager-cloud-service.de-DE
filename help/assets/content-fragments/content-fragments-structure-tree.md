@@ -1,20 +1,19 @@
 ---
 title: Strukturbaum der Inhaltsfragmente
-description: Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um den Inhalt ohne Kopf besser zu verstehen.
-feature: Content Fragments
+description: Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um Ihren Headless Content besser zu verstehen.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 56%
+source-wordcount: '80'
+ht-degree: 55%
 
 ---
 
-
 # Strukturbaum der Inhaltsfragmente {#content-fragment-structure-tree}
 
-Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um den Inhalt ohne Kopf besser zu verstehen.
+Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um Ihren Headless Content besser zu verstehen.
 
 Im Inhaltsfragment-Editor können Sie das Strukturbaumsymbol auswählen:
 
