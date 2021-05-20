@@ -1,14 +1,13 @@
 ---
 title: 'Hinzufügen einer IP-Zulassungsliste '
 description: Hinzufügen einer IP-Zulassungsliste
-translation-type: tm+mt
-source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
+exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
 ---
-
 
 # Hinzufügen einer IP-Zulassungsliste {#add-ip-allow-list}
 
