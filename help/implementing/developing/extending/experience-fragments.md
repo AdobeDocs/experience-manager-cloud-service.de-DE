@@ -1,14 +1,13 @@
 ---
 title: Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
-source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 97%
 
 ---
-
 
 # Experience Fragments{#experience-fragments}
 
@@ -96,8 +95,8 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Benutzer Erlebnisfragmente in /content/experience-fragments als 
-`cq:allowedTemplates` enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+Dadurch können Benutzer Experience Fragments in /content/experience-fragments als 
+`cq:allowedTemplates` -Eigenschaft dieses Ordners enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
@@ -291,7 +290,7 @@ Als Eingabe erhält die Methode die folgenden Parameter:
 
 * `link`
 Die 
-`String` Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
+`String` -Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
 
 * `tag`
 Der Name des HTML-Elements, das derzeit verarbeitet wird.
