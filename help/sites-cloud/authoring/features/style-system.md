@@ -1,14 +1,13 @@
 ---
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 100%
 
 ---
-
 
 # Stilsystem{#style-system}
 
@@ -29,7 +28,7 @@ Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorla
 
 Die Stilklasse wird daraufhin in das Decoration-Wrapper-Element der Komponente eingefügt, sodass sich der Komponentenentwickler nicht mit der Handhabung der Stile über die Bereitstellung der CSS-Regeln hinaus befassen muss.
 
-## Überblick{#overview}
+## Überblick {#overview}
 
 Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
@@ -55,7 +54,7 @@ Das folgende Diagramm veranschaulicht die Architektur des Stilsystems.
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## Verwenden {#use}
+## Verwenden Sie {#use}
 
 Zur Veranschaulichung der Funktion werden wir die [WKND](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-Implementierung der Komponente [Titel](https://www.adobe.com/go/aem_cmp_title_v2_de) der Kernkomponente als Beispiel verwenden.
 
@@ -121,7 +120,6 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautoren festgelegten Stile automatisch in den Decoration-Element-Wrapper ein, der automatisch auf alle bearbeitbaren Komponenten angewendet wird. Dafür ist keine weitere Aktion der Komponente erforderlich.
@@ -136,7 +134,6 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 >[!NOTE]
@@ -158,6 +155,7 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 >1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+
 >
 
 
