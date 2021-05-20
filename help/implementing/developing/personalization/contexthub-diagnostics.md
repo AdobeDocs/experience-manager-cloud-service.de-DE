@@ -1,14 +1,13 @@
 ---
 title: ContextHub-Diagnosen
 description: ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub-Diagnosen {#contexthub-diagnostics}
 
@@ -31,7 +30,7 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Storetyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Storetyp implementieren.
 
-## Modules   {#modules}
+## Modules  {#modules}
 
 Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule auf, die konfiguriert wurden. Jedes Element in der Liste besteht aus folgenden Informationen:
 
@@ -40,7 +39,7 @@ Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule au
 * **resourceType:** Der Pfad des Repository-Knotens, in dem der Benutzeroberflächenmodultyp definiert ist.
 * **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Benutzeroberflächenmodultyp implementieren.
 
-## Clientlibs   {#clientlibs}
+## Clientlibs  {#clientlibs}
 
 Der Abschnitt „Clientlibs“ listet alle [Ordner der Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) auf, die ContextHub geladen hat. Die Client-Bibliotheken werden wie folgt kategorisiert:
 
@@ -48,7 +47,7 @@ Der Abschnitt „Clientlibs“ listet alle [Ordner der Client-Bibliothek](/help/
 * **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.
 * **style.css:** CSS-Dateien, die aus Client-Bibliotheken geladen werden.
 
-## URLs   {#urls}
+## URLs  {#urls}
 
 Der Abschnitt „URLs“ enthält Links zu ContextHub-Features:
 
