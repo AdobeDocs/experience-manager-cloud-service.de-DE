@@ -2,11 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-translation-type: tm+mt
-source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '402'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +37,8 @@ ht-degree: 100%
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mithilfe AEM leistungsstarken Funktionen erstellen und anpassen können, indem Sie diese Themen zu Entwicklung und Implementierung kennenlernen. |
+| [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) | Entdecken Sie diese geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 | [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM as a Cloud Service. |
