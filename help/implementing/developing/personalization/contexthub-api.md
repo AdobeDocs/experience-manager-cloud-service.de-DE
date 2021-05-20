@@ -1,14 +1,13 @@
 ---
 title: 'Referenz zur ContextHub-JavaScript-API '
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde
-translation-type: tm+mt
-source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
+exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 100%
 
 ---
-
 
 # Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference}
 
@@ -118,7 +117,7 @@ Stellt ein ContextHub-Segment dar. Verwenden Sie `ContextHub.SegmentEngine.Segme
 
 Gibt den Namen des Segments als Stringwert zurück.
 
-#### getPath()   {#getpath}
+#### getPath()  {#getpath}
 
 Gibt den Repository-Pfad der Segmentdefinition als String-Wert zurück.
 
@@ -198,7 +197,7 @@ Ein `boolean`-Wert:
 
 Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Parameter und gibt keinen Wert zurück.
 
-#### clean()   {#clean}
+#### clean()  {#clean}
 
 Entfernt alle Daten aus dem Store. Die Funktion hat keine Parameter und keinen Rückgabewert.
 
@@ -402,7 +401,7 @@ Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Di
 
 Ein Objekt, das die unbearbeitete Antwort darstellt.
 
-#### getServiceDetails()   {#getservicedetails}
+#### getServiceDetails()  {#getservicedetails}
 
 Ruft das Dienstobjekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Dienstobjekt enthält alle Informationen, die zum Erstellen der Service-URL erforderlich sind.
 
@@ -843,7 +842,7 @@ Erstellt eine Kopie eines Datenobjekts und fügt die Datenstruktur aus einem zwe
 
 Ein Objekt, das die zusammengeführten Daten enthält.
 
-#### cleanup()   {#cleanup}
+#### cleanup()  {#cleanup}
 
 Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruktur, die keine Werte, Nullwerte oder undefinierten Werte enthalten, und gibt die Kopie zurück.
 
@@ -855,7 +854,7 @@ Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruk
 
 Eine Kopie der Struktur, die bereinigt wird.
 
-#### getItem()   {#getitem}
+#### getItem()  {#getitem}
 
 Ruft den Wert eines Objekts für den a-Schlüssel ab.
 
@@ -912,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys()   {#getkeys}
+#### getKeys()  {#getkeys}
 
 Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können optional auch eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
@@ -1097,7 +1096,7 @@ Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein
 
 Ein Objekt, das den registrierten Storekandidaten darstellt. Wenn der angeforderte Storetyp nicht registriert ist, wird ein Fehler ausgelöst.
 
-#### getSupportedStoreTypes()   {#getsupportedstoretypes}
+#### getSupportedStoreTypes()  {#getsupportedstoretypes}
 
 Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion erfordert keine Parameter.
 
