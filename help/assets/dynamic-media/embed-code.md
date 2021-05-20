@@ -4,7 +4,6 @@ description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in ein
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-translation-type: tm+mt
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
@@ -16,7 +15,7 @@ ht-degree: 88%
 
 Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video wiedergeben oder ein Asset anzeigen möchten, das auf einer Web-Seite eingebettet wurde. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in die Web-Seiten einfügen können. Der Code kann im Dialogfeld **[!UICONTROL Einbettungs-Code]** nicht bearbeitet werden.
 
-Sie können URLs nur einbetten, wenn Sie _nicht_ mit Adobe Experience Manager als WCM arbeiten. Wenn Sie Experience Manager als WCM verwenden, fügen Sie die Elemente [direkt auf Ihrer Seite](adding-dynamic-media-assets-to-pages.md) hinzu.
+Sie betten URLs nur ein, wenn Sie _nicht_ Adobe Experience Manager als WCM verwenden. Wenn Sie Experience Manager als WCM verwenden, [fügen Sie die Assets direkt auf Ihrer Seite](adding-dynamic-media-assets-to-pages.md) hinzu.
 
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
@@ -44,7 +43,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste die Dropdown-Liste aus und tippen Sie auf **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste die Dropdownliste aus und tippen Sie auf **[!UICONTROL Viewer]**.
 1. Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Tippen Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und tippen Sie dann auf **[!UICONTROL Schließen]**.
