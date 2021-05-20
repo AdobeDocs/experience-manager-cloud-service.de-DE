@@ -1,16 +1,15 @@
 ---
 title: Herstellen einer Verbindung mit Microsoft Translator
 description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden können, um Ihren Übersetzungs-Workflow zu automatisieren.
-feature: Language Copy
+feature: Sprachkopie
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 41%
 
 ---
-
 
 # Herstellen einer Verbindung mit Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -18,12 +17,12 @@ Erstellen Sie eine Konfiguration für den Cloud-Dienst [Microsoft Translator](ht
 
 >[!NOTE]
 >
->AEM bietet ein Testkonto für Microsoft Translation, das maximal 2 000 000 kostenlose Übersetzungen pro Monat erlaubt. Informationen zum Abrufen eines Kontos, das für Produktionssysteme geeignet ist, finden Sie unter [Aktualisieren der Microsoft Translator-Testlizenzkonfiguration](#upgrading-the-microsoft-translator-trial-license-configuration).
+>AEM bietet ein Microsoft Translation-Testkonto, das maximal 2.000.000 kostenlose übersetzte Zeichen pro Monat ermöglicht. Informationen zum Abrufen eines Kontoabonnements, das für Produktionssysteme geeignet ist, finden Sie unter [Aktualisieren der Microsoft Translator-Testlizenzkonfiguration](#upgrading-the-microsoft-translator-trial-license-configuration).
 
 | Eigenschaft | Beschreibung |
 |---|---|
 | Übersetzungsetikett | Der Anzeigename für den Übersetzungsdienst |
-| Übersetzungszuteilung | (Optional) Bei benutzergenerierten Inhalten wird die Zuordnung neben dem übersetzten Text angezeigt, z. B. `Translations by Microsoft` |
+| Übersetzungszuteilung | (Optional) Bei benutzergenerierten Inhalten die Attribution, die neben übersetztem Text erscheint, z. B. `Translations by Microsoft` |
 | Workspace-ID | (Optional) Die ID Ihrer angepassten Microsoft Translator-Engine, die verwendet werden soll |
 | Mitgliedschaftsschlüssel | Ihr Mitgliedschaftsschlüssel für Microsoft Translator |
 
@@ -31,38 +30,38 @@ Nachdem Sie die Konfiguration erstellt haben, müssen Sie [sie aktivieren](#acti
 
 Im folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Klicken Sie im Navigationsbereich [auf oder tippen Sie auf **Tools** -> **Cloud Services** -> **Übersetzungsserver**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)
-1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration erstellen möchten. Normalerweise befindet sich dies in Ihrem Site-Stammordner oder kann eine globale Standardkonfiguration sein.
-1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen**.
+1. Klicken oder tippen Sie im Navigationsfenster [a1/> auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)
+1. Navigieren Sie zu der Stelle, an der Sie die Konfiguration erstellen möchten. Normalerweise befindet sich dies im Stammverzeichnis Ihrer Site oder es kann sich um eine globale Standardkonfiguration handeln.
+1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** .
 1. Definieren Sie Ihre Konfiguration.
-   1. Wählen Sie **Microsoft Translator** in der Dropdownliste aus.
+   1. Wählen Sie **Microsoft Translator** in der Dropdown-Liste aus.
    1. Geben Sie einen Titel für Ihre Konfiguration ein. Mit dem Titel wird die Konfiguration auf der Cloud-Services-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
    1. Geben Sie optional einen Namen für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
-   ![Konvertierungskonfiguration erstellen](../assets/create-translation-config.png)
+   ![Erstellen einer Übersetzungskonfiguration](../assets/create-translation-config.png)
 
 1. Klicken Sie auf **Erstellen**.
-1. Geben Sie im Fenster **Konfiguration bearbeiten** die Werte für den in der vorherigen Tabelle beschriebenen Übersetzungsdienst ein.
+1. Geben Sie im Fenster **Konfiguration bearbeiten** die Werte für den Übersetzungsdienst an, die in der vorherigen Tabelle beschrieben sind.
 
    ![Übersetzungskonfiguration bearbeiten](../assets/edit-translation-config.png)
 
-1. Tippen oder klicken Sie auf **Verbinden**, um die Verbindung zu überprüfen.
+1. Tippen oder klicken Sie auf **Verbinden** , um die Verbindung zu überprüfen.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
 ## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“{#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
-1. Tippen Sie im Navigationsbereich [auf ](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) oder klicken Sie auf **Tools** -> **Cloud Services** -> **Übersetzungsserver**.
+1. Tippen oder klicken Sie im Navigationsfenster [a1/> auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)
 1. Tippen oder klicken Sie auf Ihre vorhandene Microsoft Translator-Konfiguration.
 1. Tippen oder klicken Sie auf **Bearbeiten**.
-1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Abonnement aktualisieren**. Eine Microsoft-Webseite mit weiteren Details zum Dienst wird geöffnet.
+1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Upgrade-Abonnement**. Eine Microsoft-Webseite mit weiteren Details zum Dienst wird geöffnet.
 
 ## Anpassen der Microsoft Translator-Engine {#customizing-your-microsoft-translator-engine}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, auf der die Microsoft Translator-Engine angepasst werden kann.
 
-1. Tippen Sie im Navigationsbereich [auf ](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) oder klicken Sie auf **Tools** -> **Cloud Services** -> **Übersetzungsserver**.
+1. Tippen oder klicken Sie im Navigationsfenster [a1/> auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps)
 1. Tippen oder klicken Sie auf Ihre vorhandene Microsoft Translator-Konfiguration.
 1. Tippen oder klicken Sie auf **Bearbeiten**.
 1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Dienst anzupassen.
