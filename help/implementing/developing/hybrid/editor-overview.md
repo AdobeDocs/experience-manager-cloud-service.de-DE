@@ -1,14 +1,13 @@
 ---
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 100%
 
 ---
-
 
 # SPA-Editor – Überblick {#spa-editor-overview}
 
