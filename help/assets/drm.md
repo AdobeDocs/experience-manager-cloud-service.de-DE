@@ -2,10 +2,9 @@
 title: Digital Rights Management in [!DNL Assets]
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in  [!DNL Experience Manager]  as a  [!DNL Cloud Service] verwalten.
 contentOwner: AG
-feature: Asset Management,DRM
+feature: Asset Management, DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-translation-type: tm+mt
 source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
 source-wordcount: '1345'
@@ -37,7 +36,7 @@ Sie können den Ablaufstatus eines Assets an den folgenden Stellen einsehen:
 
 Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Teil-Assets suchen.
 
-1. Klicken Sie in der Konsole [!DNL Assets] in der Symbolleiste auf **[!UICONTROL Suchen]**, um das Suchfeld [!DNL Experience Manager] anzuzeigen.
+1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suchen]** , um das Suchfeld [!DNL Experience Manager] anzuzeigen.
 
 1. Wählen Sie bei in das Omnisearch-Feld gesetztem Cursor die Eingabetaste `Enter` aus, um die Seite mit den Suchergebnissen anzuzeigen.
 
