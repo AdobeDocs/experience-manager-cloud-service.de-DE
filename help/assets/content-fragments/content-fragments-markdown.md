@@ -1,26 +1,25 @@
 ---
 title: Markdown
-description: Verstehen Sie, wie der Content Fragment-Editor mit der Markdown-Syntax arbeitet, damit Sie problemlos ohne Kopf Inhalte erstellen können.
-feature: Content Fragments
+description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Inhalten zu ermöglichen.
+feature: Inhaltsfragmente
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 93%
 
 ---
 
-
 # Markdown {#markdown}
 
-Wenn Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) verwenden, verwendet der Inhaltsfragmenteditor die Syntax *markdown*, damit Sie ohne Kopfdaten Inhalte schreiben können:
+Wenn Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) verwenden, verwendet der Inhaltsfragment-Editor die Syntax *markdown* , um Ihnen das einfache Schreiben von Headless-Inhalten zu ermöglichen:
 
 ![Markdown-Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 Sie können Folgendes definieren:
 
-* [Überschriftsnotation ](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Überschriftsnotation](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Absätze und Zeilenumbrüche](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Bilder](/help/assets/content-fragments/content-fragments-markdown.md#images)
