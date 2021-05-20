@@ -1,14 +1,13 @@
 ---
 title: Erweitern von ContextHub
 description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '628'
 ht-degree: 100%
 
 ---
-
 
 # Erweitern von ContextHub {#extending-contexthub}
 
