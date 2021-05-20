@@ -1,17 +1,21 @@
 ---
-title: Wie Sie alles zusammenstellen - Ihre App und Ihre Inhalte ohne Kopf AEM
-description: Erfahren Sie in diesem Teil der AEM Headless Developer-Journey, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmente, Ihre GraphQL-Aufrufe, Ihre REST-API-Aufrufe und Ihre Anwendung, mitnehmen und es für die Live-Schaltung vorbereiten.
+title: So legen Sie alles zusammen - Ihre App und Ihren Inhalt in AEM Headless
+description: In diesem Teil der Journey für Entwickler ohne AEM Headless erfahren Sie, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmente, Ihre GraphQL-Aufrufe, Ihre REST-API-Aufrufe und Ihre Anwendung, für die Live-Schaltung vorbereiten.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 5932ece1297512e726ece09217565957da4bda75
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
-# AEM Headless SDK - Bald {#coming-soon}
+# AEM Headless SDK - in Kürze {#coming-soon} verfügbar
 
-Auf dieser Seite finden Sie Anleitungen zum Einrichten eines lokalen Entwicklungsprojekts mit dem neuen AEM Headless SDK. Wenn das SDK öffentlich verfügbar ist, bleiben Sie immer auf dem Laufenden.
+>[!CAUTION]
+>
+>OUTDATED - Dieser Inhaltsentwurf wurde durch die neue [Headless-Entwickler-Journey-Dokumentation ersetzt.](/help/journey-headless/developer/overview.md)
+
+Auf dieser Seite finden Sie Anleitungen zum Einrichten eines lokalen Entwicklungsprojekts mit dem neuen AEM Headless SDK. Wenn das SDK öffentlich verfügbar ist, bleiben Sie auf weitere Details eingestellt.
