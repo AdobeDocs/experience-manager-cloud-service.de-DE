@@ -1,36 +1,35 @@
 ---
-title: Datenschutzvorschriften und Datenschutzvorschriften - Adobe Experience Manager als Cloud Service Foundation Readiness
-description: 'Erfahren Sie mehr über Adobe Experience Manager als Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen und Datenschutzbestimmungen. einschließlich der EU-Datenschutzverordnung (GDPR), des kalifornischen Verbraucherschutzgesetzes und der Frage, wie bei der Umsetzung eines neuen AEM als Cloud Service-Projekt einzuhalten ist. '
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+title: Datenschutzbestimmungen - Adobe Experience Manager as a Cloud Service Foundation - Einhaltung von Datenschutzbestimmungen
+description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen. darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM als Cloud Service.
+exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 32%
 
 ---
 
-
-# Adobe Experience Manager als Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Foundation - Einhaltung von Datenschutzbestimmungen {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
 >Der Inhalt dieses Dokuments stellt keine Rechtsberatung dar und ist nicht als Ersatz für Rechtsberatung gedacht.
 >
->Für Informationen zu Datenschutzbestimmungen und Datenschutzbestimmungen wenden Sie sich bitte an die Rechtsabteilung Ihrer Firma.
+>Wenden Sie sich an die Rechtsabteilung Ihres Unternehmens, um Ratschläge zu Datenschutzbestimmungen zu erhalten.
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was das für Sie als Adobe bedeutet, finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was dies für Sie als Adobe bedeutet, finden Sie im [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
 
-## AEM Foundation Data Privacy and Protection support {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation-Unterstützung für Datenschutz und Schutz {#aem-foundation-data-privacy-and-protection-support}
 
-Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im User Profil gespeichert. Die Informationen in diesem Artikel behandeln daher in erster Linie das Zugreifen auf und Löschen von Profilen, das Ansprechen von Zugänglichkeits- bzw. Löschanforderungen.
+Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im Benutzerprofil gespeichert. Daher wird in diesem Artikel hauptsächlich beschrieben, wie Sie auf Benutzerprofile zugreifen und diese löschen, um Zugriffs- bzw. Löschanfragen zu beantworten.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
 ### Manuelle Schritte {#manual-steps}
 
-1. Öffnen Sie die Konsole &quot;Benutzerverwaltung&quot;, indem Sie zu **[!UICONTROL Tools - Sicherheit - Benutzer]** navigieren oder direkt zu `https://<serveraddress>:<serverport>/security/users.html` navigieren.
+1. Öffnen Sie die Konsole Benutzerverwaltung , indem Sie zu **[!UICONTROL Tools - Sicherheit - Benutzer]** navigieren oder direkt zu `https://<serveraddress>:<serverport>/security/users.html` navigieren.
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -42,7 +41,7 @@ Auf AEM Foundation-Ebene werden die gespeicherten personenbezogenen Daten im Use
 
 1. Klicken Sie nun auf das Benutzerprofil, um es zu öffnen, und rufen Sie die Registerkarte **[!UICONTROL Details]** auf.
 
-   ![user Profil](assets/dpp-foundation-02.png)
+   ![Benutzerprofil](assets/dpp-foundation-02.png)
 
 ### HTTP-API {#http-api}
 
@@ -65,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Abrufen von Benutzerdaten:**
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom oben genannten Befehl zurückgegeben wird:
+Verwenden des Knotenpfads aus der Starteigenschaft der JSON-Payload, der vom obigen Befehl zurückgegeben wird:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -82,13 +81,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Öffnen Sie die Konsole für die Benutzerverwaltung und suchen Sie nach dem entsprechenden Benutzer, wie oben beschrieben.
 2. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das ausgewählte Profil wird nun in grau angezeigt.
 
-3. Drücken Sie die Taste **Deaktivieren** im oberen Menü, um den Benutzer zu deaktivieren:
+3. Drücken Sie die Schaltfläche **Deaktivieren** im oberen Menü, um den Benutzer zu deaktivieren:
 
    ![Konto deaktivieren](assets/dpp-foundation-03.png)
 
 4. Bestätigen Sie abschließend die Aktion.
 
-   Die Benutzeroberfläche weist dann darauf hin, dass das Benutzerkonto deaktiviert wurde, indem die Profil-Karte abgegraut und eine Sperre hinzugefügt wurde:
+   Die Benutzeroberfläche weist dann darauf hin, dass das Benutzerkonto deaktiviert wurde, indem es ausgegraut wurde und der Profilkarte eine Sperre hinzufügt:
 
    ![Konto deaktiviert](assets/dpp-foundation-04.png)
 
@@ -96,7 +95,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Für AEM als Cloud Service ist kein manuelles Verfahren in der Benutzeroberfläche zum Löschen eines Profils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
+>Für AEM als Cloud Service ist kein manuelles Verfahren über die Benutzeroberfläche zum Löschen eines Benutzerprofils verfügbar, da auf CRXDE nicht zugegriffen werden kann.
 
 ### HTTP-API {#http-api-1}
 
@@ -111,7 +110,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Deaktivieren des Benutzers:**
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom oben genannten Befehl zurückgegeben wird:
+Verwenden des Knotenpfads aus der Starteigenschaft der JSON-Payload, der vom obigen Befehl zurückgegeben wird:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -119,7 +118,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **Löschen von Benutzerprofilen**
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profil-Knotenpunkte:
+Verwenden Sie den Knotenpfad der Starteigenschaft der JSON-Payload, der vom Konto-Erkennungsbefehl zurückgegeben wird, und die bekannten Out-of-the-box-Knoten-Speicherorte:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
