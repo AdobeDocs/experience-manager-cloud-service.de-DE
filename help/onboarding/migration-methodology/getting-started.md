@@ -1,14 +1,13 @@
 ---
 title: Migration zu Experience Manager as a Cloud Service
 description: Migration zu Experience Manager as a Cloud Service
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2117'
 ht-degree: 100%
 
 ---
-
 
 # Migration zu Adobe Experience Manager as a Cloud Service {#Overview}
 
@@ -186,7 +185,7 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 
 >[!TIP]
 > Es stehen Tools zur Fehlerbehebung in AEM as a Cloud Service-Umgebungen zur Verfügung.
->1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools)
+>1. [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools)
 >2. [CRX/DE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=en#debugging)
 >3. [Verwalten von Protokollen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=en#using-cloud-manager)
 
