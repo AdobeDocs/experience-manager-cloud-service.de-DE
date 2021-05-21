@@ -5,7 +5,7 @@ exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -17,11 +17,11 @@ Wenn Sie entscheiden, [welchen Grad der Integration](/help/implementing/developi
 
 Die RemotePage-Komponente ruft alle erforderlichen Assets aus dem generierten `asset-manifest.json` des Programms ab und verwendet diese zum Rendern der SPA in AEM.
 
-* Mit RemotePage können Sie die Skripte und Stylesheets eines SPA im Textkörper einer AEM Seitenkomponente einfügen.
-* Die Virtual Frontend-Komponenten ermöglichen es, Abschnitte im AEM SPA Editor als bearbeitbar zu markieren.
-* Gemeinsam kann ein auf einer anderen Domäne gehosteter SPA in AEM bearbeitbar gemacht werden.
+* Mit RemotePage können Sie die Skripte und Stylesheets einer SPA im Hauptteil einer AEM Seitenkomponente einfügen.
+* Mit Virtual Frontend-Komponenten können Abschnitte im AEM-SPA-Editor als bearbeitbar markiert werden.
+* Gemeinsam stellen sie sicher, dass eine SPA, die auf einer anderen Domain gehostet wird, in AEM bearbeitet werden kann.
 
-Weitere Informationen zu bearbeitbaren, externen SPA in AEM finden Sie im Artikel [Bearbeiten eines externen SPA in AEM](editing-external-spa.md) .
+Weitere Informationen zu bearbeitbaren externen SPAs in AEM finden Sie im Artikel zum [Bearbeiten einer externen SPA in AEM](editing-external-spa.md).
 
 ## Voraussetzungen {#requirements}
 
