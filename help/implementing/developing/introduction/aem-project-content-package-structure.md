@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 97%
 
 In diesem Artikel werden die Änderungen erläutert, die erforderlich sind, damit Adobe Experience Manager-Maven-Projekte mit AEM as a Cloud Service kompatibel sind, indem sichergestellt wird, dass sie die Aufteilung von veränderlichem und unveränderlichem Inhalt respektieren, dass Abhängigkeiten zur Schaffung nicht widersprüchlicher, deterministischer Implementierungen festgelegt werden und dass sie in einer implementierbaren Struktur zusammengefasst sind.
 
-AEM-Anwendungsimplementierungen müssen aus einem einzigen AEM-Paket bestehen. Dieses Paket sollte wiederum Unterpakete enthalten, die alles enthalten, was die Anwendung benötigt, um zu funktionieren, einschließlich Code, Konfiguration und unterstützenden Basisinhalten.
+AEM-Programmimplementierungen müssen aus einem einzigen AEM-Paket bestehen. Dieses Paket sollte wiederum Unterpakete enthalten, die alles enthalten, was das Programm benötigt, um zu funktionieren, einschließlich Code, Konfiguration und unterstützenden Basisinhalten.
 
-AEM erfordert eine Trennung von **Inhalt** und **Code**. Dies bedeutet, dass ein einzelnes Inhaltspaket **nicht** für **beide** `/apps` und für Laufzeitbereiche (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) des Repositorys bereitstellen kann. Stattdessen muss die Anwendung Code und Inhalt in separate Pakete für die Implementierung in AEM trennen.
+AEM erfordert eine Trennung von **Inhalt** und **Code**. Dies bedeutet, dass ein einzelnes Inhaltspaket **nicht** für **beide** `/apps` und für Laufzeitbereiche (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) des Repositorys bereitstellen kann. Stattdessen muss das Programm Code und Inhalt in separate Pakete für die Implementierung in AEM trennen.
 
 Die in diesem Dokument beschriebene Paketstruktur ist mit lokalen Entwicklungsimplementierungen **und** AEM Cloud Service-Implementierungen kompatibel.
 
@@ -53,14 +53,14 @@ Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind,
 
 Dieses Diagramm bietet einen Überblick über die empfohlene Projektstruktur und die empfohlenen Artefakte zur Paketimplementierung.
 
-Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
+Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
 
 ### Code-Pakete/OSGi-Pakete
 
 + Die Jar-Datei des OSGi-Pakets wird generiert und direkt in das gesamte Projekt eingebettet.
 
 + Das `ui.apps`-Paket enthält den ganzen bereitzustellenden Code und wird nur für `/apps` bereitgestellt. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
-   + [Komponentendefinitionen und HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html)-Skripte
+   + [Komponentendefinitionen und HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)-Skripte
       + `/apps/my-app/components`
    + JavaScript und CSS (über [Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -79,7 +79,7 @@ Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
    + Für den Ausführungsmodus spezifische OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init OSGi-Konfigurationsskripte
-      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil der AEM-Anwendung sind. Die Repo Init OSGi-Konfigurationen sollten wie oben beschrieben im entsprechenden `config.<runmode>`-Ordner platziert und zur Definition folgender Elemente verwendet werden:
+      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil des AEM-Programms sind. Die Repo Init OSGi-Konfigurationen sollten wie oben beschrieben im entsprechenden `config.<runmode>`-Ordner platziert und zur Definition folgender Elemente verwendet werden:
          + Grundlegende Inhaltsstrukturen
          + Benutzer
          + Service-Benutzer
@@ -124,25 +124,25 @@ Die empfohlene Implementierungsstruktur für Anwendungen lautet wie folgt:
       + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Site B erforderlich sind
       + `site-b.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
-### Zusätzliche Anwendungspakete{#extra-application-packages}
+### Zusätzliche Anwendungspakete {#extra-application-packages}
 
 Wenn andere AEM-Projekte, die selbst aus eigenen Code- und Inhaltspaketen bestehen, von der AEM-Implementierung verwendet werden, sollten ihre Container-Pakete in das `all`-Paket des Projekts eingebettet werden.
 
-Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Anwendungen enthält, wie folgt aussehen:
+Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Programme enthält, wie folgt aussehen:
 
 + Inhaltspaket `all` bettet die folgenden Pakete ein, um ein einzelnes Implementierungsartefakt zu erstellen
-   + `core` Jar-Datei des OSGi-Pakets, erforderlich für die AEM-Anwendung
-   + `ui.apps` stellt Code bereit, der für die AEM-Anwendung erforderlich ist
-   + `ui.config` stellt OSGi-Konfigurationen bereit, die für die AEM-Anwendung erforderlich sind
-   + `ui.content` stellt Inhalte und Konfigurationen bereit, die für die AEM-Anwendung erforderlich sind
-   + `vendor-x.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für die Anwendung von Anbieter X benötigt werden
-   + `vendor-y.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für die Anwendung von Anbieter Y benötigt werden
+   + `core` Jar-Datei des OSGi-Pakets, erforderlich für das AEM-Programm
+   + `ui.apps` stellt Code bereit, der für das AEM-Programm erforderlich ist
+   + `ui.config` stellt OSGi-Konfigurationen bereit, die für das AEM-Programm erforderlich sind
+   + `ui.content` stellt Inhalte und Konfigurationen bereit, die für das AEM-Programm erforderlich sind
+   + `vendor-x.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für das Programm von Anbieter X benötigt werden
+   + `vendor-y.all` stellt alle erforderlichen Elemente (Code und Inhalt) bereit, die für das Programm von Anbieter Y benötigt werden
 
 ## Pakettypen {#package-types}
 
 Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen keine OSGi-Bundles und OSGi-Konfigurationen enthalten und dürfen nicht [Installations-Hooks](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
++ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen OSGi-Pakete und OSGi-Konfigurationen nicht direkt enthalten und keine [Installationshaken](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
@@ -161,7 +161,7 @@ Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pake
 >
 >Ein vollständiges Snippet finden Sie im Abschnitt [POM XML-Snippets](#pom-xml-snippets) unten.
 
-## Repo Init{#repo-init}
+## Repo Init {#repo-init}
 
 Repo Init enthält Anweisungen oder Skripte, mit denen JCR-Strukturen definiert werden, von allgemeinen Knotenstrukturen wie Ordnerbäumen bis hin zu Benutzern, Service-Benutzern, Gruppen und ACL-Definitionen.
 
@@ -179,7 +179,7 @@ Repo Init-Skripte werden als `scripts`-Einträge von `RepositoryInitializer`-OSG
 
 Repo Init OSGi-Konfigurationen werden am besten im [`.config` OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) geschrieben, da es mehrere Zeilen unterstützt. Dies stellt eine Ausnahme bei den Best Practices dar, [`.cfg.json` zur Definition von OSGi-Konfigurationen](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1) zu verwenden.
 
-Beachten Sie, dass beim Definieren von Benutzern und Gruppen nur Gruppen als Teil der Anwendung betrachtet werden und hier als integraler Bestandteil ihrer Funktion definiert werden sollten. Organisationsbenutzer und -gruppen sollten weiterhin zur Laufzeit in AEM definiert werden. Wenn ein benutzerdefinierter Workflow beispielsweise einer benannten Gruppe Arbeit zuweist, sollte diese Gruppe über Repo Init in der AEM-Anwendung definiert werden. Wenn die Gruppierung jedoch nur organisatorisch ist, z. B. „Petras Team“ und „Stefans Team“, sollten diese am besten zur Laufzeit in AEM definiert und verwaltet werden.
+Beachten Sie, dass beim Definieren von Benutzern und Gruppen nur Gruppen als Teil des Programms betrachtet werden und hier als integraler Bestandteil ihrer Funktion definiert werden sollten. Organisationsbenutzer und -gruppen sollten weiterhin zur Laufzeit in AEM definiert werden. Wenn ein benutzerdefinierter Workflow beispielsweise einer benannten Gruppe Arbeit zuweist, sollte diese Gruppe über Repo Init im AEM-Programm definiert werden. Wenn die Gruppierung jedoch nur organisatorisch ist, z. B. „Petras Team“ und „Stefans Team“, sollten diese am besten zur Laufzeit in AEM definiert und verwaltet werden.
 
 >[!TIP]
 >
@@ -197,7 +197,7 @@ Code-Pakete müssen das FileVault Maven-Plug-in so konfigurieren, dass auf ein `
 
 Dies ist **nur für Code-Pakete erforderlich**, d. h. für alle Pakete, die mit `<packageType>application</packageType>` gekennzeichnet sind.
 
-Informationen zum Erstellen eines Repository-Strukturpakets für Ihre Anwendung finden Sie unter [Entwickeln eines Repository-Strukturpakets](repository-structure-package.md).
+Informationen zum Erstellen eines Repository-Strukturpakets für Ihr Programm finden Sie unter [Entwickeln eines Repository-Strukturpakets](repository-structure-package.md).
 
 Beachten Sie, dass dieses Repository-Strukturpaket für Inhaltspakete (`<packageType>content</packageType>`) **nicht** erforderlich ist.
 
@@ -224,7 +224,7 @@ Um AEM Author, AEM Publish oder beides als Ziel festzulegen, wird das Paket in d
 Aufschlüsselung dieser Ordnerstruktur:
 
 + Der Ordner der ersten Ebene **muss** `/apps` sein.
-+ Der Ordner der zweiten Ebene stellt die Anwendung dar, wobei `-packages` an den Ordnernamen angehängt wird. Häufig gibt es nur einen einzigen Ordner der zweiten Ebene, unter dem alle Unterpakete eingebettet sind. Es können jedoch beliebig viele Ordner der zweiten Ebene erstellt werden, um die logische Struktur der Anwendung bestmöglich darzustellen:
++ Der Ordner der zweiten Ebene stellt das Programm dar, wobei `-packages` an den Ordnernamen angehängt wird. Häufig gibt es nur einen einzigen Ordner der zweiten Ebene, unter dem alle Unterpakete eingebettet sind. Es können jedoch beliebig viele Ordner der zweiten Ebene erstellt werden, um die logische Struktur des Programms bestmöglich darzustellen:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
@@ -237,7 +237,7 @@ Aufschlüsselung dieser Ordnerstruktur:
    `application`, `content` oder `container`
    + Der `application`-Ordner enthält Code-Pakete
    + Der `content`-Ordner enthält Inhaltspakete
-   + Der `container`-Ordner enthält alle [zusätzlichen Anwendungspakete](#extra-application-packages), die ggf. in der AEM-Anwendung enthalten sind.
+   + Der `container`-Ordner enthält alle [zusätzlichen Programmpakete](#extra-application-packages), die ggf. im AEM-Programm enthalten sind.
 Der Name des Ordners entspricht den [Pakettypen](#package-types) der darin enthaltenen Pakete.
 + Der Ordner der vierten Ebene enthält die Unterpakete und muss einer der folgenden sein:
    + `install` zur Installation auf **beiden**, AEM Author und AEM Publish
@@ -275,7 +275,7 @@ Wenn sich die Pakete von Drittanbietern im **öffentlichen Maven-Artefakt-Reposi
 
 Wenn sich die Pakete von Drittanbietern in einem **öffentlichen Maven-Artefakt-Repository von Drittanbietern** befinden, muss dieses Repository in der `pom.xml` des Projekts registriert und gemäß der [oben beschriebenen](#embeddeds) Methode eingebettet werden.
 
-Anwendungen/Connectoren von Drittanbietern sollten mit ihrem `all`-Paket als Container im Container-Paket (`all`) Ihres Projekts eingebettet werden.
+Programme/Connectoren von Drittanbietern sollten mit ihrem `all`-Paket als Container im Container-Paket (`all`) Ihres Projekts eingebettet werden.
 
 Das Hinzufügen von Maven-Abhängigkeiten folgt den Standardpraktiken von Maven, und das Einbetten von Artefakten von Drittanbietern (Code- und Inhaltspakete) ist [oben beschrieben](#embedding-3rd-party-packages).
 
@@ -408,7 +408,7 @@ Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Conta
     ...
 ```
 
-### Repo Init{#snippet-repo-init}
+### Repo Init {#snippet-repo-init}
 
 Repo Init-Skripte, die die Repo Init-Skripte enthalten, werden in der `RepositoryInitializer`-OSGi-Werkskonfiguration über die `scripts`-Eigenschaft definiert. Da diese Skripte in OSGi-Konfigurationen definiert sind, können sie mithilfe der üblichen `../config.<runmode>`-Ordnersemantik problemlos vom Ausführungsmodus erfasst werden.
 
