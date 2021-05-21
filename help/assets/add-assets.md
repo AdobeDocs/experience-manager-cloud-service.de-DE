@@ -15,7 +15,7 @@ ht-degree: 85%
 
 [!DNL Adobe Experience Manager Assets] können viele Arten digitaler Assets aus vielen Quellen verwenden. Es speichert die Binärdateien und die erstellten Ausgabeformate, kann die Asset-Verarbeitung mithilfe einer Vielzahl von Workflows durchführen und die [!DNL Adobe Sensei]-Dienste ermöglichen die Verteilung über viele Kanäle über viele Oberflächen.
 
-[!DNL Adobe Experience Manager]In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
+[!DNL Adobe Experience Manager] In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
 Neben dem am häufigsten verwendeten Browser-Upload gibt es noch weitere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager]-Repository, einschließlich Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager]-Desktop-Programm, Upload- und Aufnahmeskripte, die Kunden erstellen, und automatisierte Aufnahmeintegrationen, die als [!DNL Experience Manager]-Erweiterungen hinzugefügt werden.
 
@@ -29,7 +29,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 |---------------------|----------------|-----------------|
 | [Benutzeroberfläche der Assets-Konsole](#upload-assets) | Gelegentliches Hochladen, einfaches Drücken und Ziehen, Finder-Upload. Verwenden Sie diese Option nicht, um eine große Anzahl von Assets hochzuladen. | Alle Benutzer |
 | [Upload-API](#upload-using-apis) | Für dynamische Entscheidungen beim Hochladen. | Entwickler |
-| [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | Asset-Erfassung mit geringem Volumen, jedoch nicht für die Migration. | Administrator, Marketingexperte |
+| [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | Asset-Aufnahme mit niedrigem Volumen, jedoch nicht zur Migration. | Administrator, Marketingexperte |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Programmen arbeiten. | Kreative, Marketingexperte |
 | [Tool zur Asset-Massenaufnahme](#asset-bulk-ingestor) | Empfohlen für umfangreiche Migrationen und gelegentliche Massenaufnahmen. Nur für unterstützte Datenspeicher. | Administrator, Entwickler |
 
