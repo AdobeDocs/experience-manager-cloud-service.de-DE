@@ -64,7 +64,7 @@ Cloud Manager ist ein wichtiger Bestandteil von AEM as a Cloud Service. Unterneh
 
 In diesem Abschnitt erfahren Sie, wie ein Systemadministrator oder ein Benutzer, der eine Umgebung erstellt hat, anderen Benutzern Zugriff auf eine AEM gewähren kann.
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
