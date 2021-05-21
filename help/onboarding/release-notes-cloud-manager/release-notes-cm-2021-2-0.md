@@ -5,7 +5,7 @@ exl-id: 281f9523-dec2-44f1-9459-5a45d48489d9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
@@ -21,30 +21,30 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 ### Neue Funktionen {#what-is-new}
 
-* Assets-Kunden können jetzt über die Cloud Manager-Benutzeroberfläche festlegen, wann und wo sie ihre Brand Portal-Instanz auf Self-Service-Weise bereitstellen. Für ein reguläres (Nicht-Sandbox-)Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung erfolgen.
+* Assets-Kunden können jetzt selbst entscheiden, wann und wo sie ihre Brand Portal-Instanz über die Cloud Manager-Benutzeroberfläche bereitstellen möchten. Für ein reguläres (nicht Sandbox-)Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung durchgeführt werden.
 
-* Der AEM Projektarchetyp, der bei der Projekt- und Sandbox-Erstellung verwendet wird, wurde auf Version 25 aktualisiert.
+* Der AEM-Projektarchetyp, der bei der Projekt- und Sandbox-Erstellung verwendet wird, wurde auf Version 25 aktualisiert.
 
-* Die Liste veralteter APIs, die beim Codescan identifiziert werden, wurde verfeinert und enthält jetzt zusätzliche Klassen und Methoden, die in den neuesten Cloud Service SDK-Versionen nicht mehr unterstützt werden.
+* Die Liste der veralteten APIs, die beim Code-Scanning identifiziert wurden, wurde verfeinert und enthält nun zusätzliche Klassen und Methoden, die in den neuesten Cloud Service SDK-Versionen nicht mehr unterstützt werden.
 
-* Das SonarQube-Profil für Cloud Manager wurde aktualisiert, um die Sonar-Regel squid:S2142 zu entfernen. Dies steht nicht mehr in Konflikt mit den Thread-Unterbrechungsprüfungen.
+* Das SonarQube-Profil für Cloud Manager wurde aktualisiert, um die Sonar-Regel squid:S2142 zu entfernen. Diese führt nicht mehr zu Konflikten mit Thread-Unterbrechungsprüfungen.
 
-* Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der vorübergehend nicht in der Lage ist, den Domänennamen hinzuzufügen/zu aktualisieren, da der zugehörigen Umgebung entweder eine laufende Pipeline angehängt ist oder sich derzeit auf den Genehmigungsschritt wartet.
+* Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend keinen Domain-Namen hinzufügen/aktualisieren kann, weil der zugehörigen Umgebung entweder eine laufende Pipeline angehängt ist oder sie sich derzeit im Schritt „Warten auf die Genehmigung“ befindet.
 
-* Eigenschaften, die in kundenspezifischen `pom.xml` -Dateien mit dem Präfix sonar festgelegt sind, werden jetzt dynamisch entfernt, um Fehler bei der Build- und Qualitätsprüfung zu vermeiden.
+* Eigenschaften, die in den `pom.xml`-Dateien des Kunden mit dem Präfix „sonar“ festgelegt wurden, werden jetzt dynamisch entfernt, um Fehler beim Build und beim Scannen der Qualität zu vermeiden.
 
-* Die Benutzeroberfläche von Cloud Manager informiert den Benutzer, der möglicherweise vorübergehend kein SSL-Zertifikat auswählen kann, wenn dieses von einem Domänennamen verwendet wird, der derzeit bereitgestellt wird.
+* Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend ein SSL-Zertifikat nicht auswählen kann, wenn es von einem Domain-Namen verwendet wird, der gerade bereitgestellt wird.
 
-* Es wurden zusätzliche Regeln für die Codequalität hinzugefügt, um Probleme mit der Kompatibilität von Cloud Services abzudecken.
+* Es wurden zusätzliche Regeln zur Code-Qualität hinzugefügt, um Probleme mit der Kompatibilität von Cloud Services abzudecken.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Beim Abgleichen des SSL-Zertifikats mit einem Domänennamen wird nicht mehr zwischen Groß- und Kleinschreibung unterschieden.
+* Beim Abgleichen des SSL-Zertifikats mit einem Domain-Namen wird nicht mehr zwischen Groß- und Kleinschreibung unterschieden.
 
-* Die Benutzeroberfläche von Cloud Manager informiert Benutzer jetzt darüber, ob die privaten Zertifikatschlüssel die 2048-Bit-Grenze nicht mit einer entsprechenden Fehlermeldung erfüllen.
+* Die Cloud Manager-Benutzeroberfläche informiert jetzt einen Benutzer mit einer entsprechenden Fehlermeldung, wenn die privaten Schlüssel des Zertifikats nicht dem 2048-Bit-Limit entsprechen.
 
-* Die Benutzeroberfläche von Cloud Manager informiert den Benutzer, der möglicherweise vorübergehend kein SSL-Zertifikat auswählen kann, wenn es von einem Domänennamen verwendet wird, der derzeit bereitgestellt wird.
+* Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend ein SSL-Zertifikat nicht auswählen kann, wenn es von einem Domain-Namen verwendet wird, der gerade bereitgestellt wird.
 
-* In einigen Fällen kann ein internes Problem dazu führen, dass der Löschvorgang der Umgebung blockiert wird.
+* In einigen Fällen kann ein internes Problem dazu führen, dass der Löschvorgang der Umgebung stecken bleibt.
 
-* Einige Pipeline-Fehler wurden fälschlicherweise als Pipeline-Fehler gemeldet.
+* Einige Pipeline-Ausfälle wurden fälschlicherweise als Pipeline-Fehler gemeldet.
