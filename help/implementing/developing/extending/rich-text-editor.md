@@ -130,10 +130,8 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
-
 >
->
-Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
+>Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeldbearbeitungsmodus verfügbar sind:
 
@@ -160,10 +158,8 @@ Die [Text-Kernkomponente](https://docs.adobe.com/content/help/de-DE/experience-m
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
+>Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
 
 ## RTE-Symbolleiste konfigurieren     {#dialogfullscreen}
 
@@ -284,6 +280,6 @@ Unten finden Sie einen Beispielausschnitt zur Zuordnung des Befehls `Bold` zum C
 >[!MORELIKETHIS]
 >
 >* [Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md)
-* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-* [Konfigurieren des RTE für barrierefreie Websites](rte-accessible-content.md)
+>* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Konfigurieren des RTE für barrierefreie Websites](rte-accessible-content.md)
 

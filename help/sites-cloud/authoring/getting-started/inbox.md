@@ -28,8 +28,8 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >Weitere Informationen zu den Elementtypen finden Sie außerdem unter:
 >
 >* [Projekte](/help/sites-cloud/authoring/projects/overview.md)
-* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
-* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
+>* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
+>* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
@@ -39,7 +39,8 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 ![Übersicht über Posteingang in der Kopfzeile](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
-Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view) angezeigt.
+>
+>Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view) angezeigt.
 
 ## Öffnen des Posteingangs      {#opening-the-inbox}
 
@@ -55,7 +56,8 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
    ![Anzeigeeinstellungen für den Posteingang](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
-Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) oder die [Suche](/help/sites-cloud/authoring/getting-started/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
+>
+>Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) oder die [Suche](/help/sites-cloud/authoring/getting-started/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
@@ -108,7 +110,8 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
 >[!NOTE]
-Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
+>
+>Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
 
@@ -128,8 +131,9 @@ Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen imme
    * Erstellen eines Projekts auf Basis des Elements
 
    >[!NOTE]
-   Weitere Informationen finden Sie unter:
-   * Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
+   >
+   >Weitere Informationen finden Sie unter:
+   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
@@ -184,8 +188,9 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniatur tippen/klicken.
 
    >[!NOTE]
-   Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
-   Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
+   >
+   >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
+   >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
@@ -201,8 +206,10 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    * **Erweitert**
 
       * **Name**
+
    >[!NOTE]
-   Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
+   >
+   >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
 
 1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
 
@@ -221,4 +228,5 @@ Sie können die aufgeführten Elemente filtern:
    ![Posteingang – Suchfilter](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
-   Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.
+   >
+   >Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.

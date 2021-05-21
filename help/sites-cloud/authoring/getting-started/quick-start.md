@@ -51,7 +51,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Suchen nach Seiten {#finding-your-page}
@@ -159,8 +159,10 @@ So bearbeiten Sie Ihre Seite:
    * Eine Komponente [kopieren (und einfügen):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
+
    >[!NOTE]
-   Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   >
+   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
@@ -176,7 +178,8 @@ So bearbeiten Sie Ihre Seite:
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   >
+   >Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
 ### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
 
@@ -251,8 +254,10 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
    * Löschen:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
+
    >[!NOTE]
-   Löschen ist nicht als Schnellaktion verfügbar.
+   >
+   >Löschen ist nicht als Schnellaktion verfügbar.
 
 ### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 

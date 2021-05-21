@@ -50,7 +50,7 @@ Weitere Informationen finden Sie unter [Einstieg in Experience Manager als Cloud
 ### 2. Integrierte Organisationen für Adobe Admin Console:
 
 >   ![processouview2.jpg](./assets/processOverview2.jpg)
-* Systemadministrator:
+>* Systemadministrator:
    * Bereitstellung AEM Programme und Umgebungen.
    * Navigieren Sie zu Admin Console für Verwaltungsaufgaben.
    * Fordert eine Domain zur Bestätigung des Eigentums an der jeweiligen Domain an
