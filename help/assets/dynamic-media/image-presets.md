@@ -7,7 +7,7 @@ exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 56%
+ht-degree: 85%
 
 ---
 
@@ -21,13 +21,13 @@ Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Aus
 
 >[!NOTE]
 >
->Intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben. Es verwendet Intelligenz in der letzten Millisekunde des Versands, um die Größe der Bilddatei je nach Browser- oder Netzwerkverbindungsgeschwindigkeit weiter zu reduzieren. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](imaging-faq.md).
+>Die intelligente Bildbearbeitung funktioniert mit Ihren vorhandenen Bildvorgaben. Sie nutzt die intelligenten Funktionen ganz zum Schluss, um die Größe der Bilddatei abhängig vom Browser oder der Geschwindigkeit der Netzverbindung noch weiter zu verringern. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](imaging-faq.md).
 
 Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwenden.
 
 **So wenden Sie Dynamic Media-Bildvorgaben an:**
 
-1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf die Dropdownliste und dann auf **[!UICONTROL Ausgabeformate]**.
+1. Öffnen Sie das Asset und tippen Sie in der linken Schiene auf die Dropdown-Liste und anschließend auf **[!UICONTROL Ausgabeformate]**.
 
    >[!NOTE]
    >
@@ -41,11 +41,11 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um eine Vorschau der Bildvorgabe anzuzeigen, wählen Sie eine dynamische Ausgabedarstellung aus.
-   * Um das Popup-Fenster anzuzeigen, tippen Sie auf **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**.
+   * Um eine Vorschau der Bildvorgabe anzuzeigen, wählen Sie ein dynamisches Ausgabeformat aus.
+   * Um das Popupfenster anzuzeigen, tippen Sie auf **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (oder die Schaltflächen URL und RESS , falls zutreffend) nicht verfügbar.
+   >Wenn das Asset *und* die Bildvorgabe noch nicht veröffentlicht wurden, ist die Schaltfläche **[!UICONTROL URL]** (bzw. die Schaltflächen „URL“ und „RESS“, falls zutreffend) nicht verfügbar.
    >
    >Beachten Sie auch, dass Bildvorgaben automatisch auf einem S7-Server für Dynamic Media veröffentlicht werden.
