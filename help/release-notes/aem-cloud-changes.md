@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Die Web-Konsole, die in früheren Versionen von AEM zum Ändern der OSGi-Einstel
 
 ## Änderungen am Publishing-Repository sind nicht zulässig {#changes-to-publish-repo}
 
-Abgesehen von Änderungen im Ordner `/home` auf der Veröffentlichungsstufe sind direkte Änderungen am Veröffentlichungs-Repository auf AEM Cloud Service nicht zulässig. In früheren Versionen von On-Premise-AEM oder AEM auf AMS können Codeänderungen direkt am Publishing-Repository vorgenommen werden. Einige Einschränkungen können wie folgt reduziert werden:
+Abgesehen von Änderungen unter dem Ordner `/home` auf der Veröffentlichungsebene sind direkte Änderungen am Veröffentlichungs-Repository in AEM Cloud Service nicht zulässig. In früheren Versionen von On-Premise-AEM oder AEM auf AMS konnten Code-Änderungen direkt am Veröffentlichungs-Repository vorgenommen werden. Einige Einschränkungen können auf die folgenden Arten gemildert werden:
 
 * Für Inhalts- und inhaltsbasierte Konfiguration: Nehmen Sie die Änderungen an der Autoreninstanz vor und veröffentlichen Sie diese.
 * Für Code und Konfiguration: Nehmen Sie die Änderungen im GIT-Repository vor und führen Sie die CI/CD-Pipeline aus, um sie einzuführen.
