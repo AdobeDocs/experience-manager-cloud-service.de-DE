@@ -5,7 +5,7 @@ exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -41,9 +41,9 @@ Sobald der Löschvorgang abgeschlossen ist, wird die IP-Zulassungsliste:
    * Der Status bleibt „Löschen fehlgeschlagen“, bis alle Fehler behoben sind. Der Benutzer muss „Löschen“ aus dem Menü **...** ganz rechts in der Zeile in der Tabelle auswählen, um Fehler zu beheben.
    * Der Benutzer darf die IP-Zulassungsliste nicht aktualisieren, während der Status „Fehlgeschlagen“ ist.
 
-## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
+## Vorhandene CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
 
-Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Nachricht verschwindet, sobald der Kunde alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
+Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann ein bis zwei Werktage dauern, bis die Meldung ausgeblendet wird.
 
 >[!NOTE]
 >Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) .
