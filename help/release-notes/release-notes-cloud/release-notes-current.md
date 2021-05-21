@@ -5,21 +5,21 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
 source-wordcount: '1996'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt finden Sie allgemeine Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] als Cloud Service.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >Von hier aus können Sie zu den Versionshinweisen früherer Versionen navigieren. z. B. für die 2020, 2021 usw.
 
 >[!NOTE]
 >
->Weitere Informationen zu Dokumentationsaktualisierungen, die nicht direkt mit einer Version in Zusammenhang stehen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
+>Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
 
 ## Veröffentlichungsdatum {#release-date}
 
