@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -158,7 +158,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Inhaltsstruktur   {#content-tree}
+## Inhaltsstruktur  {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -176,7 +176,7 @@ Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sp
 
 Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechende Ebene ein- bzw. ausgeblendet.
 
-![Pfeilerweiterung für Inhaltsstruktur ](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
+![Pfeilerweiterung für Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
 Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfügbaren Aktionen hängen vom Status der Seite ab:
 
@@ -190,7 +190,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
    ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Eine Seite, die Teil einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) ist, auf der Komponenten von einer anderen Seite übernommen werden.
+* Bei einer Seite, die Teil einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) ist, wobei Komponenten von einer anderen Seite übernommen werden.
 
 >[!NOTE]
 >
@@ -224,8 +224,8 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 * **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 * Instanzen von geliehenen und verliehenen Inhalten, die die **Referenz**-Komponente verwenden. Sie können von hier aus zur referenzierten Seite navigieren.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
-* [](/help/sites-cloud/administering/msm/overview.md)„Live Copies“ zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren. 
-* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), bietet Details und verschiedene Aktionen
+* [Live Copies](/help/sites-cloud/administering/msm/overview.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md) bietet Details und verschiedene Aktionen.
 * [Sprachenkopien](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel) bietet Details und verschiedene Aktionen
 
 ## Ereignisse: Zeitleiste {#events-timeline}
@@ -260,7 +260,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi  {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -289,7 +289,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 
 ## Pfadauswahl {#path-selection}
 
-Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfadbrowser](#path-browser) zur Verfügung.
+Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](#path-browser) zur Verfügung.
 
 ### Pfadfelder {#path-fields}
 
