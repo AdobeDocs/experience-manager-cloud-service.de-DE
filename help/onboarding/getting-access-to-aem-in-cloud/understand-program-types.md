@@ -1,19 +1,19 @@
 ---
-title: Grundlegendes zu Programm- und Programmtypen
-description: Grundlegendes zu Programm- und Programmtypen - Cloud Services
+title: Grundlegendes zu Programmen und Programmtypen
+description: Grundlegendes zu Programmen und Programmtypen – Cloud-Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 13%
+ht-degree: 63%
 
 ---
 
 # Grundlegendes zu Programmen und Programmtypen {#understanding-programs}
 
-In Cloud Manager befindet sich die Mandantenentität ganz oben, die mehrere Programme enthalten kann. Jedes Programm kann nicht mehr als eine Produktionsumgebung und mehrere Nicht-Produktionsumgebungen enthalten.
+In Cloud Manager befindet sich die Mandantenentität ganz oben. Sie kann mehrere Programme enthalten. Jedes Programm kann maximal eine Produktionsumgebung und mehrere produktionsfremde Umgebungen enthalten.
 
-Das folgende Diagramm zeigt die Hierarchie der Entitäten in Cloud Manager.
+Das folgende Diagramm zeigt die Hierarchie der Entitäten in Cloud Manager.
 
 ![image](assets/program-types1.png)
 
@@ -36,11 +36,11 @@ $ git clone {URL}
 
 ## Programmtypen {#program-types}
 
-Ein Benutzer kann ein **Sandbox**- oder **Production**-Programm erstellen.
+Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 
-* Es wird ein *Produktionsprogramm* erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
-Weitere Informationen finden Sie unter [Einführung in Produktionsprogramme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) .
+* Ein *Produktionsprogramm* wird erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
+Weitere Informationen finden Sie unter [Einführung in Produktionsprogramme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 
-* Ein *Sandbox-Programm* wird normalerweise erstellt, um Schulungen, Demos, Aktivierungen, POCs oder Dokumentationen durchzuführen. Es ist nicht für die Übertragung von Live-Traffic vorgesehen und wird Einschränkungen aufweisen, die ein Produktionsprogramm nicht hat. Sie umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung bereitgestellt, die Beispielcode, eine Entwicklungsumgebung und eine Nicht-Produktions-Pipeline enthält.
-Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) .
+* Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
