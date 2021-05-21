@@ -25,7 +25,7 @@ ht-degree: 89%
 * [Bekannte Probleme](known-issues.md)
 * [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
