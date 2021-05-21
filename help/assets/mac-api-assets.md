@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 69%
+ht-degree: 79%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 69%
 
 ## Überblick {#overview}
 
-Die HTTP-API [!DNL Assets] ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager] Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
+Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
 1. Öffnen Sie das Dokument zum API-Service unter `https://[hostname]:[port]/api.json`.
-1. Folgen Sie dem Dienstlink [!DNL Assets], der zu `https://[hostname]:[server]/api/assets.json` führt.
+1. Folgen Sie dem Link zum [!DNL Assets]-Service, der zu `https://[hostname]:[server]/api/assets.json` führt.
 
 Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwort-Code für weitere Analysen oder Aktionen.
 
@@ -31,13 +31,13 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 ## Inhaltsfragmente {#content-fragments}
 
-Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Sie kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
+Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Sie kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
-Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der  [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
+Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der [!DNL Experience Manager Assets] -HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Datenmodell {#data-model}
 
-Die HTTP-API [!DNL Assets] stellt zwei wichtige Elemente, Ordner und Assets bereit (für Standard-Assets). Außerdem werden detailliertere Elemente für die benutzerdefinierten Datenmodelle bereitgestellt, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie unter [Inhaltsfragmentdatenmodelle](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) .
+Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets). Außerdem werden detailliertere Elemente für die benutzerdefinierten Datenmodelle bereitgestellt, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Ordner {#folders}
 
@@ -79,7 +79,7 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
 ## Verfügbare Funktionen {#available-features}
 
-Die HTTP-API [!DNL Assets] umfasst die folgenden Funktionen:
+Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
 * [Abrufen von Ordnerauflistungen](#retrieve-a-folder-listing).
 * [Erstellen eines Ordners](#create-a-folder).
@@ -147,11 +147,11 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Informationen zum Erstellen eines Assets finden Sie unter [Asset-Upload](developer-reference-material-apis.md) . Sie können ein Asset nicht mit der HTTP-API erstellen.
+Informationen zum Erstellen eines Assets finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Mit der HTTP-API kann kein Asset erstellt werden.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Informationen zum Aktualisieren von Asset-Binärdateien finden Sie unter [Asset-Upload](developer-reference-material-apis.md) . Sie können eine Asset-Binärdatei nicht mit der HTTP-API aktualisieren.
+Informationen zum Aktualisieren von Asset-Binärdateien finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Mit der HTTP-API kann keine Asset-Binärdatei aktualisiert werden.
 
 ## Aktualisieren von Metadaten eines Assets {#update-asset-metadata}
 
@@ -274,5 +274,5 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 >[!MORELIKETHIS]
 >
->* [Referenzdokumente für Entwickler für  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Referenzdokumente für Entwickler für [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 
