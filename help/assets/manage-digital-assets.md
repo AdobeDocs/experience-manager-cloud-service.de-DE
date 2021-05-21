@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset-Management, Publishing, Zusammenarbeit, Asset-Verarbeitung
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
-ht-degree: 92%
+source-wordcount: '4502'
+ht-degree: 90%
 
 ---
 
@@ -250,9 +250,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie löschen möchten.
 
-1. Wählen Sie das Asset und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Löschen]**.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Löschen]** ![Löschen-Symbol](assets/do-not-localize/delete-icon.png) .
 
 1. Klicken Sie im Bestätigungsdialogfeld auf:
 
@@ -260,7 +258,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
    * **[!UICONTROL Löschen]**, um die Aktion zu bestätigen:
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
-      * Wenn die Seite Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+      * Wenn das Asset Verweise aufweist, werden Sie durch eine Fehlermeldung darüber informiert, dass **[!UICONTROL ein oder mehrere Assets referenziert werden]**. Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
 
    >[!NOTE]
    >
@@ -268,14 +266,11 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
    >[!NOTE]
    >
-   >Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen.
-   >
-   >
-   >Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe einer Überlagerung, um zu verhindern, dass Benutzer referenzierte Assets löschen und fehlerhafte Links hinterlassen.
+   >Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Sie können das Löschen referenzierter Assets verweigern, da dies fehlerhafte Links verursacht. Deaktivieren Sie die Schaltfläche Löschen erzwingen mit einer Überlagerung.
 
 ## Herunterladen von Assets {#download-assets}
 
-Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Siehe [Herunterladen von Assets von [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets {#publish-assets}
 
