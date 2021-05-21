@@ -7,7 +7,7 @@ exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 56%
+ht-degree: 73%
 
 ---
 
@@ -39,7 +39,7 @@ Die mit Asset-Microservices generierten Standardausgabeformate werden in abwärt
 
 Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick) zu vermeiden, die Konfiguration des Systems zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt das Extrahieren von Miniaturansichten von PSD- und PSB-Formaten möglich, für die zuvor Lösungen von Drittanbietern wie ImageMagick erforderlich waren. Sie können die komplexen Konfigurationen von ImageMagick nicht für die Konfiguration von [!UICONTROL Verarbeitungsprofilen] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und Verarbeitungsprofile für die [einfache Transkodierung von MP4-Videos](/help/assets/manage-video-assets.md#transcode-video).
 
-Asset-Microservices sind ein Cloud-nativer Dienst, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] verkabelt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können die Entwickler den vorhandenen Inhalt oder die Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen verwenden, um ihren Code mithilfe von Assets zu testen und zu validieren, ihn anzuzeigen und herunterzuladen.
+Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] vernetzt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
 Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
 
@@ -50,24 +50,24 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 
 | Funktion oder Anwendungsfall | Status in [!DNL Experience Manager] als [!DNL Cloud Service] | Kommentare |
 |-----|-----|-----|
-| [Duplizieren der Asset-Erkennung](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funktioniert anders. | Siehe [Funktionsweise in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
-| [Nur für Platzierungsausgaben (FPO)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Funktionsweise unterschiedlich |  |
+| [Duplizieren der Asset-Erkennung](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funktioniert anders. | Siehe [Funktionsweise in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=de). |
+| [Nur für Platzierungsausgaben (FPO)](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Funktionsweise unterschiedlich |  |
 | Metadaten-Writeback | Funktionsweise unterschiedlich | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Writeback wird von Asset-Microservices verarbeitet. |
 | Verarbeitung der mit Package Manager hochgeladenen Assets | Benötigt manuelles Eingreifen. | Manuelle Neuverarbeitung mit der Aktion **[!UICONTROL Asset erneut verarbeiten]**. |
-| MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder falsche Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Siehe [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Teilasset-Generierung für ebenenübergreifende Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Dies betrifft beispielsweise die Anmerkung mehrseitiger PDF-Dateien. Siehe [Erstellung von Unter-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
-| Startseite | Nicht unterstützt. | Siehe [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Siehe [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder falsche Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Weitere Informationen finden Sie unter [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=de). |
+| Teilasset-Generierung für ebenenübergreifende Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Dies betrifft beispielsweise die Anmerkung mehrseitiger PDF-Dateien. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
+| Startseite | Nicht unterstützt. | Weitere Informationen finden Sie unter [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=de) |
+| Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
 >
->Die folgenden Ressourcen sind für [!DNL Experience Manager] als [!DNL Cloud Service] verfügbar:
+>Die folgenden Ressourcen stehen für [!DNL Experience Manager] as a [!DNL Cloud Service] zur Verfügung:
 >
 >* [Liste veralteter und entfernter Funktionen](/help/release-notes/deprecated-removed-features.md)
 * [Einführung](/help/overview/introduction.md)
 * [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
-* [Architektur](/help/core-concepts/architecture.md)
+* [Die Architektur](/help/core-concepts/architecture.md)
 * [Wesentliche Änderungen](/help/release-notes/aem-cloud-changes.md)
 * [Wesentliche Änderungen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 * [Video-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
