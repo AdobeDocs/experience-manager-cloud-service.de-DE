@@ -62,4 +62,4 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 * [Websites, Stores und Ansichten](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM-CIF-Kernkomponenten – Multi-Store-/Multi-Site-Konfiguration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Verwenden von Multi-Site-Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-cloud/administering/msm/overview.md)
