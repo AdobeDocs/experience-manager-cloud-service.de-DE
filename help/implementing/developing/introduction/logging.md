@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -15,14 +15,14 @@ AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Co
 
 Die Protokollierung und Protokollierungsebenen in AEM werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
-* AEM-Protokollierung, die die Protokollierung auf AEM-Anwendungsebene durchführt,
+* AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
 
 ## AEM-Protokollierung {#aem-loggin}
 
-Die Protokollierung auf der AEM-Anwendungsebene erfolgt über drei Protokolle:
+Die Protokollierung auf der AEM-Programmebene erfolgt über drei Protokolle:
 
-1. AEM-Java-Protokolle, die Java-Protokolleinträge für die AEM-Anwendung darstellen.
+1. AEM-Java-Protokolle, die Java-Protokolleinträge für das AEM-Programm darstellen.
 1. HTTP-Anfrageprotokolle, die Informationen zu HTTP-Anfragen und deren von AEM bereitgestellten Antworten protokollieren
 1. HTTP-Zugriffsprotokolle, in denen zusammengefasste Informationen und von AEM bereitgestellte HTTP-Anfragen protokolliert werden
 
@@ -32,7 +32,7 @@ Die Protokollierung auf der AEM-Anwendungsebene erfolgt über drei Protokolle:
 
 ## AEM-Java-Protokollierung {#aem-java-logging}
 
-AEM as a Cloud Service bietet Zugriff auf Java-Protokolleinträge. Entwickler von Anwendungen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Einträge zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
+AEM as a Cloud Service bietet Zugriff auf Java-Protokolleinträge. Entwickler von Programmen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Einträge zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Entwicklung</td>
 <td>
 DEBUG</td>
 <td>
-Beschreibt, was in der Anwendung geschieht.<br>
+Beschreibt, was im Programm geschieht.<br>
 Wenn die DEBUG-Protokollierung aktiv ist, werden Einträge protokolliert, die ein klares Bild davon vermitteln, welche Aktivitäten stattfinden, sowie alle Schlüsselparameter, die die Verarbeitung beeinflussen.</td>
 <td>
 <ul>
@@ -94,7 +94,7 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Einträge protokolliert, di
 
 Während die Java-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der drei oben beschriebenen Ebenen.
 
-Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neuimplementierung der Anwendung für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
+Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neuimplementierung des Programms für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
 
 **Beispiel einer Protokollausgabe**
 
@@ -318,7 +318,7 @@ AEM as a Cloud Service stellt drei Protokolle für die Apache-Webserver- und Dis
 
 Beachten Sie, dass diese Protokolle nur für die Veröffentlichungsstufe verfügbar sind.
 
-Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentlichungsstufe von AEM as a Cloud Service, bevor diese Anfragen die AEM-Anwendung erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anfragen an die Server der Veröffentlichungsstufe von Inhalten bereitgestellt werden, die von Apache HTTPD Web Server und AEM Dispatcher zwischengespeichert werden und niemals die AEM Anwendung selbst erreichen. Daher gibt es keine Protokolleinträge für diese Anfragen in Java-, Anfrage- oder Zugriffsprotokollen in AEM.
+Dieser Satz an Protokollen bietet Einblicke in HTTP-Anfragen an die Veröffentlichungsstufe von AEM as a Cloud Service, bevor diese Anfragen das AEM-Programm erreichen. Dies ist wichtig, da im Idealfall die meisten HTTP-Anfragen an die Server der Veröffentlichungsstufe von Inhalten bereitgestellt werden, die von Apache HTTPD Web Server und AEM Dispatcher zwischengespeichert werden und niemals das AEM-Programm selbst erreichen. Daher gibt es keine Protokolleinträge für diese Anfragen in Java-, Anfrage- oder Zugriffsprotokollen in AEM.
 
 ### Apache HTTPD Web Server-Zugriffsprotokoll {#apache-httpd-web-server-access-log}
 
@@ -579,7 +579,7 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 
 ## Splunk-Protokolle {#splunk-logs}
 
-Kunden mit Splunk-Konten können über das Kundensupport-Ticket anfordern, dass ihre AEM-Cloud-Services-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokoll-Downloads verfügbar sind. Kunden können es jedoch hilfreich finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu nutzen.
+Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokoll-Downloads verfügbar sind. Kunden können es jedoch hilfreich finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu nutzen.
 
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der Netzwerk-E/A-Nutzung des Kunden betrachtet.
 
@@ -598,11 +598,11 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 >
 >Die Splunk-Weiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
 
-Sie sollten sicherstellen, dass die ursprüngliche Anfrage neben den Staging-/Produktionsumgebungen alle Entwicklungsumgebungen enthält, die aktiviert werden sollen.
+Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen.
 
-Wenn neue Entwicklungsumgebungen, die nach der ursprünglichen Anfrage erstellt wurden, die Splunk-Weiterleitung verwenden sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anfrage gestellt werden.
+Wenn für neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, eine Splunk-Weiterleitung vorgesehen ist, diese jedoch nicht aktiviert ist, sollte eine zusätzliche Anfrage gestellt werden.
 
-Beachten Sie außerdem, dass bei Anforderung von Entwicklungsumgebungen es möglich ist, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage- oder sogar Sandbox-Umgebung enthalten sind, die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam verwendet wird. Kunden können das Feld `aem_env_id` verwenden, um zwischen diesen Umgebungen zu unterscheiden.
+Beachten Sie außerdem, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage enthalten sind, oder sogar in Sandbox-Umgebungen die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam nutzt, wenn Entwicklungsumgebungen angefordert wurden. Kunden können anhand des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
 
 Unten finden Sie ein Beispiel für eine Support-Anfrage:
 
@@ -611,21 +611,21 @@ Programm 123, Produktionsumgebung
 * Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123prod (der Kunde kann auswählen, welche Namenskonvention er wünscht)
 * Splunk-Port: 443
-* Splunk-HEC-Token: ABC 123
+* Splunk-HEC-Token: ABC123
 
 Programm 123, Staging-Umgebung
 
 * Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123stage
 * Splunk-Port: 443
-* Splunk-HEC-Token: ABC 123
+* Splunk-HEC-Token: ABC123
 
 Programm 123, Entwicklungsumgebung
 
 * Splunk-HEC-Endpunktadresse: `splunk-hec-ext.acme.com`
 * Splunk-Index: acme_123dev
 * Splunk-Port: 443
-* Splunk-HEC-Token: ABC 123
+* Splunk-HEC-Token: ABC123
 
 Es kann ausreichen, für jede Umgebung denselben Splunk-Index zu verwenden. In diesem Fall kann das `aem_env_type`-Feld zur Differenzierung auf der Grundlage der Werte „dev“, „stage“ und „prod“ verwendet werden. Wenn mehrere Entwicklungsumgebungen vorhanden sind, kann auch das `aem_env_id`-Feld verwendet werden. Einige Organisationen wählen möglicherweise einen separaten Index für die Protokolle der Produktionsumgebung, wenn der zugehörige Index den Zugriff auf eine reduzierte Gruppe von Splunk-Benutzern beschränkt.
 
