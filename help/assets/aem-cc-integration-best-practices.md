@@ -41,13 +41,13 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Geschäftsbenutzer vereinfachen das Öffnen und Verwenden von Assets, führen Bearbeitungen durch und laden AEM-Änderungen sowie neue Dateien aus der Desktop-Umgebung in AEM hoch. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Programmen, auch Adobe-fremden, zu öffnen. | [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | AEM-Desktop-Programm auf Windows- und Mac-Desktop |
 | Marketer und Geschäftsbenutzer können Adobe Stock-Assets in AEM entdecken, in einer Vorschau anzeigen, lizenzieren sowie speichern und verwalten. Lizenzierte und gespeicherte Assets liefern ausgewählte Adobe Stock-Metadaten für eine bessere Governance. | [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md) | AEM-Web-Oberfläche |
 
-Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte der Zusammenarbeit. Die Verteilung und Beschaffung von Vermögenswerten im entsprechende Maß wird kurz als Verwendungsfall genannt. Für solche Lösungen sollten Sie Adobe Brand Portal oder Asset Share Commons beachten. Alternative Lösungen wie [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), Lösungen, die basierend auf [Asset Share](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Komponenten erstellt werden können, und [Link-Freigabe](share-assets.md), die allesamt die [AEM Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) verwenden, sind auf Grundlagen bestimmter Anforderungen zu prüfen.
+Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte der Zusammenarbeit. Die Verteilung und Beschaffung von Vermögenswerten im entsprechende Maß wird kurz als Verwendungsfall genannt. Für solche Lösungen sollten Sie Adobe Brand Portal oder Asset Share Commons beachten. Alternative Lösungen wie [AEM Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), Lösungen, die basierend auf [Asset Share](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Komponenten erstellt werden können, und [Linkfreigabe](share-assets.md), die allesamt die [AEM Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) verwenden, sind auf Grundlagen bestimmter Anforderungen zu prüfen.
 
 ![Creative Cloud-Verbindungen für AEM: Festlegen der zu verwendenden Funktion](assets/creative-connections-aem.png)
 
 Festlegen der zu verwendenden Funktion
 
-### Zuordnen von Nutzungsszenarien und Adobe-Lösungen   {#mapping-of-use-cases-and-adobe-solutions}
+### Zuordnen von Nutzungsszenarien und Adobe-Lösungen  {#mapping-of-use-cases-and-adobe-solutions}
 
 | Anwendungsfall | Adobe Asset Link | AEM-Desktop-Programm | Bemerkungen oder alternative Methoden |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Festlegen der zu verwendenden Funktion
 
 Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere Lösungen in Betracht gezogen werden:
 
-* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal für ein konfigurierbares Add-on zu Assets zum Veröffentlichen von Assets.
+* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) für ein konfigurierbares Add-on für AEM Assets, um Assets zu veröffentlichen
 
 * Benutzerdefinierte Lösungen, erstellt auf Grundlage der [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Code-Basis
 * AEM-[Linkfreigabe](/help/assets/share-assets.md), um Assets ad hoc mithilfe von Links freizugeben
@@ -85,7 +85,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 * **Fertige Kreativ-Assets:** Assets, die für ein breiteres Team freigegeben werden können oder die vom Kreativ-Team für die Freigabe mit Marketing- oder LOB-Teams ausgewählt/genehmigt wurden.
 
 * **Asset-Genehmigungen:** Der Genehmigungsprozess, der für Assets ausgeführt wird, die bereits auf DAM hochgeladen wurden. Dazu gehören in der Regel Markengenehmigungen, Genehmigungen usw.
-* **Abgeschlossenes Asset:** Ein Asset, für das alle    Genehmigungen/Metadaten-Tagging durchgeführt wurden und das bereit für die Verwendung durch das breitere Team ist. Ein solches Asset wird in DAM gespeichert und allen (bzw. allen interessierten) Benutzern zur Verfügung gestellt. Es kann in Marketing-Kanälen oder von Kreativ-Teams verwendet werden, um Designs zu erstellen.
+* **Abgeschlossenes Asset:** Ein Asset, für das alle Genehmigungen/Metadaten-Tagging durchgeführt wurden und das bereit für die Verwendung durch das breitere Team ist. Ein solches Asset wird in DAM gespeichert und allen (bzw. allen interessierten) Benutzern zur Verfügung gestellt. Es kann in Marketing-Kanälen oder von Kreativ-Teams verwendet werden, um Designs zu erstellen.
 
 * **Kleinere Asset-Aktualisierung/-Änderung:** Schnelle, kleine Änderung an einem digitalen Asset. Diese wird häufig aufgrund einer Retuschieranfrage oder einer kleineren Bearbeitungsanfrage, einer Asset-Überprüfung oder einer Genehmigung (z. B. Neupositionierung, Änderung der Textgröße, Anpassung der Sättigung/Helligkeit, Farbe usw.) durchgeführt.
 * **Größere Asset-Aktualisierung/-Änderung:** Änderung eines digitalen Assets, die viel Arbeit erfordert und manchmal über einen längeren Zeitraum erfolgen muss. Diese umfasst in der Regel mehrere Änderungen. Das Asset muss während der Aktualisierung mehrmals gespeichert werden. Bei umfangreichen Asset-Aktualisierungen wird das Asset in der Regel in eine WIP-Phase versetzt.
@@ -130,7 +130,7 @@ Lizenzierte und in AEM gespeicherte Assets aus Adobe Stock werden breiter gefass
 
 Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marketing-/Branchen-Teams sowie für die Auswahl der besten Begleitfunktionen ist es wichtig zu verstehen, wann und warum Assets in DAM gespeichert werden.
 
-### Warum Assets in DAM gespeichert werden   {#why-assets-are-stored-in-dam}
+### Warum Assets in DAM gespeichert werden  {#why-assets-are-stored-in-dam}
 
 Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
 
@@ -140,7 +140,7 @@ Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Asp
 
 Häufig ist das Speichern aller Assets und Aktualisierungen nicht empfehlenswert. Beispiel: Wenn Aktualisierungen von schlechter Qualität sind und einen unverhältnismäßigen Ressourcenverbrauch aufweisen, sollten die Assets nicht in DAM gespeichert werden.
 
-#### Wann Assets in DAM gespeichert werden   {#when-assets-are-stored-in-dam}
+#### Wann Assets in DAM gespeichert werden  {#when-assets-are-stored-in-dam}
 
 Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Beispielsweise vermeiden sie das Speichern von Assets in den folgenden Fällen:
 
@@ -154,7 +154,7 @@ In der Regel werden Assets der folgenden Klassen in DAM gespeichert:
 * Assets, die vorab vom Kreativ-Team ausgewählt wurden
 * Bestimmte Asset-Formate, die vom Marketing-Team verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien)
 
-#### Wann Aktualisierungen von Assets in DAM gespeichert werden   {#when-updates-to-assets-are-stored-in-dam}
+#### Wann Aktualisierungen von Assets in DAM gespeichert werden  {#when-updates-to-assets-are-stored-in-dam}
 
 In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzer relevant sind. Dadurch wird sichergestellt, dass Benutzern (Marketing- und ähnliche Funktionen) in der DAM-Asset-Zeitleiste nur relevante Versionen angezeigt werden.
 
@@ -171,7 +171,7 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 AEM Assets unterstützt zwei Arten von Benutzern, die auf deren Zugriff auf die AEM Assets-Implementierung basieren. Normalerweise haben Benutzer innerhalb des Unternehmensnetzwerks (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks haben dagegen keinen direkten Zugriff. Der Benutzertyp bestimmt, welche Integrationen aus technischer Sicht verwendet werden können.
 
-#### Kreative Benutzer mit direktem Zugriff auf DAM   {#creative-users-with-direct-access-to-dam}
+#### Kreative Benutzer mit direktem Zugriff auf DAM  {#creative-users-with-direct-access-to-dam}
 
 In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich AEM-Anmeldung. Die AEM- und Netzwerkinfrastruktur kann eingerichtet werden, um externen Parteien – normalerweise vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten – direkten Zugriff zu ermöglichen, damit diese über das Netzwerk (z. B. über VPN oder IP-Zulassungsliste) auf AEM zugreifen können
 
@@ -208,11 +208,11 @@ In diesem Fall wird empfohlen, die AEM-Desktop-Programm-Option zum Deaktivieren 
 
 In einigen Szenarien müssen Sie möglicherweise eine größere Anzahl von Dateien gleichzeitig in DAM hochladen. Beispiele dafür sind:
 
-* Hochladen der Ergebnisse von  Fotoshootings oder größeren Projekten
+* Hochladen der Ergebnisse von Fotoshootings oder größeren Projekten
 * Hochladen von Assets von Kreativagenturen
 * Hochladen von Assets aus einem größeren Satz, wenn die Auswahl außerhalb von DAM erfolgt
 
-Hinweis: Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem    Fotoshooting) als normaler Vorgang im Workflow eines Desktop-Benutzers. Das Migrieren großer Assets wird hier nicht behandelt.
+Hinweis: Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem Fotoshooting) als normaler Vorgang im Workflow eines Desktop-Benutzers. Das Migrieren großer Assets wird hier nicht behandelt.
 
 Sie können die folgenden Upload-Funktionen nutzen:
 
