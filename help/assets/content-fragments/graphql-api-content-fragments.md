@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 72%
+ht-degree: 78%
 
 ---
 
@@ -25,10 +25,10 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) als Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
 >* [AEM Commerce nutzt Daten aus einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
->* AEM Inhaltsfragmente arbeiten mit der GraphQL-AEM-API (einer angepassten Implementierung, die auf GraphQL basiert) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen.
+>* AEM-Inhaltsfragmente arbeiten mit der AEM GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Programmen bereitzustellen.
 
 
 ## Die GraphQL-API {#graphql-api}
@@ -178,7 +178,7 @@ So aktivieren Sie den entsprechenden Endpunkt:
    >
    >Der Endpunkt ist für jeden zugänglich. Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
    >
-   >Sie können am Endpunkt geeignete ACLs für Ihre Anwendung einrichten.
+   >Sie können am Endpunkt geeignete ACLs für Ihr Programm einrichten.
 
 ### Veröffentlichen des GraphQL-Endpunkts {#publishing-graphql-endpoint}
 
@@ -257,13 +257,13 @@ Wenn ein Benutzer beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Articl
 
    * Drei davon wurden vom Benutzer kontrolliert: `author`, `main` und `referencearticle`.
 
-   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel `_path`, `_metadata` und `_variations`. Diese [Helper-Felder](#helper-fields) sind mit einem vorangestellten `_` markiert, um zu unterscheiden, was vom Benutzer definiert wurde und was automatisch generiert wurde.
+   * Die anderen Felder wurden automatisch von AEM hinzugefügt und stellen hilfreiche Methoden dar, um Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel `_path`, `_metadata` und `_variations`. Diese [Hilfsfelder](#helper-fields) sind mit einem vorangestellten `_` gekennzeichnet, um zu unterscheiden, was vom Benutzer definiert und was automatisch generiert wurde.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL für AEM ist das Schema flexibel. Dies bedeutet, dass es jedes Mal automatisch generiert wird, wenn ein Inhaltsfragmentmodell erstellt, aktualisiert oder gelöscht wird. Die Datenschema-Caches werden auch aktualisiert, wenn Sie ein Inhaltsfragmentmodell aktualisieren.
 
-Der Sites GraphQL-Service überwacht (im Hintergrund) alle Änderungen, die an einem Inhaltsfragmentmodell vorgenommen werden. Wenn Aktualisierungen erkannt werden, wird nur dieser Teil des Schemas neu generiert. Diese Optimierung spart Zeit und bietet Stabilität.
+Der Sites GraphQL-Service überwacht (im Hintergrund) alle Änderungen, die an einem Inhaltsfragmentmodell vorgenommen werden. Wenn Aktualisierungen erkannt werden, wird nur dieser Teil des Schemas neu generiert. Diese Optimierung spart Zeit und sorgt für Stabilität.
 
 Wenn Sie zum Beispiel:
 
@@ -314,7 +314,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Datentyp für Inhaltsfragmentmodelle | GraphQL-Typ | Beschreibung |
 |--- |--- |--- |
 | Einzelzeilentext | Zeichenfolge, [Zeichenfolge] |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
-| Mehrzeiliger Text | Zeichenfolge |  Wird für die Ausgabe von Text wie dem Text eines Artikels verwendet |
+| Mehrzeiliger Text | Zeichenfolge |  Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl |  Gleitkommazahl, [Gleitkommazahl] | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
 | Boolesch |  Boolesch |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
 | Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ stehen in GraphQL drei Varianten zur Verwendung AEM GraphQL zur Verfügung: `onlyDate`, `onlyTime`, `dateTime` |
@@ -377,7 +377,7 @@ Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
+| `booleanArrayMetadata:[booleanArrayMetadata]!` |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
@@ -545,7 +545,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 * Sie können Feldnamen abfragen, die den Feldern im Inhaltsfragmentmodell entsprechen.
    * [Beispielabfrage – Vollständige Details über den CEO und die Mitarbeiter eines Unternehmens](#sample-full-details-company-ceos-employees)
 
-* Neben den Feldern Ihres Modells gibt es einige systemgenerierte Felder (vor dem Unterstrich):
+* Zusätzlich zu den Feldern aus Ihrem Modell gibt es einige vom System generierte Felder (denen ein Unterstrich vorangestellt ist):
 
    * Für Inhalte:
 
@@ -555,7 +555,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](#sample-metadata-awards-gb)
       * `_model`: Zulassen von Abfragen nach einem Inhaltsfragmentmodell (Pfad und Titel)
          * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : den Pfad zu Ihrem Inhaltsfragment im Repository
+      * `_path`: Der Pfad zu Ihrem Inhaltsfragment im Repository
          * Siehe [Beispielabfrage – ein Einzelstadtfragment](#sample-single-specific-city-fragment)
       * `_reference`: Anzeigen von Verweisen; einschließlich Inline-Verweisen im Rich-Text-Editor
          * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](#sample-wknd-multiple-fragments-prefetched-references)
@@ -803,10 +803,10 @@ Die folgenden Schritte sind erforderlich, um eine bestimmte Abfrage beizubehalte
 
 ## Abfragen des GraphQL-Endpunkts von einer externen Website {#query-graphql-endpoint-from-external-website}
 
-Um von einer externen Website aus auf den GraphQL-Endpunkt zuzugreifen, müssen Sie Folgendes konfigurieren:
+Für den Zugriff auf den GraphQL-Endpunkt über eine externe Website müssen Sie Folgendes konfigurieren:
 
 * [CORS-Filter](#cors-filter)
-* [Referrer Filter](#referrer-filter)
+* [Referrer-Filter](#referrer-filter)
 
 ### CORS-Filter {#cors-filter}
 
@@ -814,9 +814,9 @@ Um von einer externen Website aus auf den GraphQL-Endpunkt zuzugreifen, müssen 
 >
 >Einen detaillierten Überblick über die CORS-Richtlinie zur gemeinsamen Nutzung von Ressourcen in AEM finden Sie unter [Grundlegendes zur gemeinsamen Nutzung gemeinsamer Ressourcen (Cross-Origin Resource Sharing – CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de#understand-cross-origin-resource-sharing-(cors)).
 
-Um auf den GraphQL-Endpunkt zuzugreifen, muss eine CORS-Richtlinie im Git-Repository des Kunden konfiguriert werden. Dies geschieht durch Hinzufügen einer entsprechenden OSGi-CORS-Konfigurationsdatei für die gewünschten Endpunkte.
+Um auf den GraphQL-Endpunkt zugreifen zu können, muss eine CORS-Richtlinie im Git-Repository des Kunden konfiguriert werden. Dazu wird eine entsprechende OSGi-CORS-Konfigurationsdatei für den/die gewünschten Endpunkt(e) hinzugefügt.
 
-Diese Konfiguration muss einen vertrauenswürdigen Website-Ursprung `alloworigin` oder `alloworiginregexp` angeben, für den Zugriff gewährt werden muss.
+Diese Konfiguration muss eine vertrauenswürdige Website-Herkunft `alloworigin` oder `alloworiginregexp` angeben, für die der Zugriff gewährt werden muss.
 
 Um beispielsweise Zugriff auf den GraphQL-Endpunkt und den Endpunkt für persistente Abfragen für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
 
@@ -857,14 +857,14 @@ Wenn Sie einen Vanity-Pfad für den Endpunkt konfiguriert haben, können Sie ihn
 
 ### Referrer-Filter {#referrer-filter}
 
-Zusätzlich zur CORS-Konfiguration muss ein Referrer-Filter konfiguriert werden, um den Zugriff von Drittanbieter-Hosts zuzulassen.
+Zusätzlich zur CORS-Konfiguration muss ein Referrer-Filter konfiguriert werden, um den Zugriff von Drittanbieter-Hosts zu ermöglichen.
 
-Dies geschieht durch Hinzufügen einer entsprechenden OSGi Referrer Filter-Konfigurationsdatei, die:
+Dazu fügen Sie eine entsprechende OSGi-Referrer-Filter-Konfigurationsdatei hinzu, die:
 
-* gibt einen Hostnamen der vertrauenswürdigen Website an; entweder `allow.hosts` oder `allow.hosts.regexp`,
-* gewährt Zugriff auf diesen Hostnamen.
+* einen vertrauenswürdigen Website-Hostnamen angibt (entweder `allow.hosts` oder `allow.hosts.regexp`),
+* Zugriff auf diesen Hostnamen gewährt.
 
-Um beispielsweise mit dem Referrer `my.domain` Zugriff auf Anfragen zu gewähren, können Sie:
+Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren, können Sie:
 
 ```xml
 {
