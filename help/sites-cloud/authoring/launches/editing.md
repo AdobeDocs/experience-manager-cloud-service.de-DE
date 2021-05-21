@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleist
 
 >[!NOTE]
 >
->Sie dürfen eine Seite nicht innerhalb eines Launches verschieben. Bei diesem Versuch wird eine Warnmeldung Trigger:
+>Es ist nicht zulässig, eine Seite innerhalb eines Launchs zu verschieben. Der Versuch, diese Aktion auszuführen, löst eine Warnmeldung aus:
 >
->* Warnung: Diese Seite ist die Quelle eines Launches. Das Verschieben der Seite ist nicht zulässig.
+>* Warnung: Bei dieser Seite handelt es sich um die Quellseite eines Launches. Das Verschieben der Seite ist nicht zulässig.
 
 
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy  {#editing-launch-pages-subject-to-a-live-copy}
 
-Wenn Ihr Launch auf einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) basiert, werden Sie Folgendes tun:
+Wenn Ihr Launch auf einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) basiert, sehen Sie Folgendes:
 
 * Schlosssymbole (kleine Vorhängeschlösser), wenn Sie eine Komponente bearbeiten (Inhalt und/oder Eigenschaften)
 * die Registerkarte **Live Copy** in den **Seiteneigenschaften**
@@ -75,7 +75,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
 >
 >Damit Seiten zu einem Launch hinzugefügt werden können, müssen sich diese unter einem gemeinsamen Sprachstamm befinden, d. h. innerhalb einer einzelnen Website.
 
-## Bearbeiten einer Launch-Konfiguration   {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration  {#editing-a-launch-configuration}
 
 Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
@@ -88,7 +88,7 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
    * Unter [Launches – Reihenfolge der Ereignisse](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
-## Ermitteln des Launch-Status einer Seite   {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite  {#discovering-the-launch-status-of-a-page}
 
 Der Status wird angezeigt, wenn Sie einen bestimmten Launch auf der Registerkarte „Verweise“ auswählen (siehe [Launches in Verweisen (Sites-Konsole))](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console).
 
