@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -1298,7 +1298,7 @@ Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `A
 Es gibt zwei Varianten dieser Abfrage:
 
 1. Zurückgeben aller Inhaltsreferenzen.
-1. Zurückgeben der spezifischen Inhaltsreferenzen vom Typ `attachments`
+1. Zurückgeben der spezifischen Inhaltsreferenzen vom Typ `attachments`.
 
 Diese Abfragen untersuchen:
 
