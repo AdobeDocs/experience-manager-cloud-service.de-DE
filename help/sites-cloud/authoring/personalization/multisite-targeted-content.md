@@ -48,11 +48,12 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 >
 >* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
+
 >
 
 
 
-## Anwendungsfälle   {#use-cases}
+## Anwendungsfälle  {#use-cases}
 
 Sie können die Multisite-Unterstützung für zielgerichtete Inhalte auf verschiedene Art einrichten, je nachdem, welches Szenario sich für Ihre Zwecke am besten eignet. In diesem Abschnitt wird beschrieben, wie diese Einrichtung theoretisch für eine Marke funktioniert. Zudem finden Sie in unserem [Beispiel: Inhalts-Targeting basierend auf geografischen Angaben](#example-targeting-content-based-on-geography) eine Darstellung zur praktischen Anwendung von Inhalts-Targeting auf mehreren Sites.
 
@@ -105,7 +106,7 @@ Nach Aktualisierung der Registerkarte erscheint auch auf der Site für Kanada da
 
 ![Ändern von Versionen](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-Der Marketingexperte möchte diese Änderungen auf das europäische Gebiet übertragen und [aktiviert die Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md), indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom primären Gebiet bezieht. 
+Der Marketingexperte möchte diese Änderungen auf das europäische Gebiet übertragen und [aktiviert die Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md), indem er auf **Seiten-Rollout** tippt oder klickt. Nach Aktualisierung der Registerkarte erscheint auf der Site für Großbritannien das neue Bild, da das europäische Gebiet dieses (nach dem Rollout) vom primären Gebiet bezieht.
 
 ![Rollout einer Live Copy](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -140,7 +141,7 @@ Gehen Sie wie folgt vor, um diese Konfiguration in AEM nachzustellen:
 * Site C ist mit dem vererbten Gebiet verknüpft, das wiederum eine Live Copy des primären Gebiets ist – erstellen Sie ein neues Gebiet als Live Copy, wenn eine Live Copy erstellt werden soll, die auf dem primären Gebiet beruht. Im Rahmen des Rollouts übernimmt das erbende Gebiet Aktivitäten aus dem primären Gebiet.
 * Site D ist mit einem eigenen, separaten Gebiet verknüpft – erstellen Sie ein Gebiet, das keine bereits festgelegten Aktivitäten erhält. Dieses isolierte Gebiet übernimmt keine Aktivitäten der anderen Sites.
 
-## Erstellen neuer Gebiete   {#creating-new-areas}
+## Erstellen neuer Gebiete  {#creating-new-areas}
 
 Gebiete können aktivitäten- und angebotsübergreifend gelten. Nach der Erstellung eines Gebiets in einer der Kategorien (beispielsweise in den Aktivitäten), kann dieses Gebiet auch in der anderen (beispielsweise in den Angeboten) verfügbar gemacht werden.
 
@@ -235,11 +236,12 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >
 >* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
+
 >
 
 
 
-### Aussetzen der Vererbung   {#suspending-inheritance}
+### Aussetzen der Vererbung  {#suspending-inheritance}
 
 So deaktivieren Sie die Vererbung zielgerichteter Inhalte oder setzen sie aus:
 
@@ -281,7 +283,7 @@ So stellen Sie die Vererbung zielgerichteter Inhalte wieder her:
 
 1. Tippen oder klicken Sie auf **Fortsetzen**, um zu bestätigen, dass Sie die Vererbung an die Live Copy wieder aufnehmen möchten. Alle Änderungen, die an der aktuellen Aktivität vorgenommen wurden, gehen bei Wiederherstellung der Vererbung verloren.
 
-## Löschen von Gebieten   {#deleting-areas}
+## Löschen von Gebieten  {#deleting-areas}
 
 Löschen Sie ein Gebiet, werden sämtliche Aktivitäten dieses Gebiets ebenfalls gelöscht. Vor dem Löschen eines Gebiets werden Sie von AEM gewarnt. Sollten Sie ein Gebiet löschen, das mit einer Site verknüpft ist, wird die Marke stattdessen automatisch mit dem primären Gebiet verknüpft.
 
