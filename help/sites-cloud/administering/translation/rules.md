@@ -1,13 +1,13 @@
 ---
 title: Identifizieren zu übersetzender Inhalte
-description: Erfahren Sie, wie Übersetzungsregeln Inhalte identifizieren, die übersetzt werden müssen.
+description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte identifizieren.
 feature: Sprachkopie
 role: Administrator
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 59%
 
 Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten, Komponenten und Assets, die in die Übersetzungsprojekte integriert oder von diesen ausgeschlossen sind. Wenn eine Seite oder ein Asset übersetzt wird, extrahiert AEM diese Inhalte, sodass sie an den Übersetzungsdienstleister gesendet werden können.
 
-Die Seiten und Assets werden als Knoten im JCR-Repository dargestellt. Bei dem extrahierten Inhalt handelt es sich um einen oder mehrere Eigenschaftswerte des Knotens. Übersetzungsregeln identifizieren die Eigenschaften, die den zu extrahierenden Inhalt enthalten.
+Die Seiten und Assets werden als Knoten im JCR-Repository dargestellt. Bei dem extrahierten Inhalt handelt es sich um einen oder mehrere Eigenschaftswerte des Knotens. Die Übersetzungsregeln identifizieren die Eigenschaften, die den zu extrahierenden Inhalt enthalten.
 
 Übersetzungsregeln werden im XML-Format ausgedrückt und an folgenden Orten gespeichert:
 
@@ -32,15 +32,15 @@ Die Regeln umfassen die folgenden Informationen:
 * Die Namen der Knoteneigenschaften, die den zu übersetzenden Inhalt enthalten
    * Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen.
 
-Sie können beispielsweise eine Regel erstellen, die den Inhalt, den Autoren zu allen Textkomponenten auf Ihren Seiten hinzufügen, übersetzt. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `core/wcm/components/text/v2/text` identifizieren.
+Sie können zum Beispiel eine Regel erstellen, die den von den Autoren hinzugefügten Inhalt für alle Textkomponenten auf Ihren Seiten übersetzt. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `core/wcm/components/text/v2/text` identifizieren.
 
 Es gibt eine eigene [Konsole](#translation-rules-ui), die für die Konfiguration von Übersetzungsregeln hinzugefügt wurde. Die Definitionen in der Benutzeroberfläche füllen die Datei für Sie auf.
 
-Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
+Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhalten Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
 
 >[!NOTE]
 >
->AEM unterstützt die 1-zu-1-Zuordnung zwischen Ressourcentypen und Bezugsattributen für die Übersetzung von referenziertem Inhalt auf einer Seite. 
+>AEM unterstützt die 1-zu-1-Zuordnung zwischen Ressourcentypen und Bezugsattributen für die Übersetzung von referenziertem Inhalt auf einer Seite.
 
 ## Regelsyntax für Seiten, Komponenten und Assets {#rule-syntax-for-pages-components-and-assets}
 
@@ -55,17 +55,17 @@ Eine Regel ist ein `node`-Element mit einem oder mehreren untergeordneten `prope
 </node>
 ```
 
-Jedes dieser `node` -Elemente hat die folgenden Eigenschaften:
+Jedes dieser `node`-Elemente hat die folgenden Eigenschaften:
 
 * Das `path`-Attribut enthält den Pfad zum Stammknoten des Zweigs, für den die Regeln gelten.
 * Die untergeordneten `property`-Elemente identifizieren die Knoteneigenschaften, die für alle Ressourcentypen zu übersetzen sind:
    * Das Attribut `name` enthält den Eigenschaftsnamen.
-   * Das optionale Attribut `translate` ist `false` , wenn die Eigenschaft nicht übersetzt ist. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
+   * Das optionale Attribut `translate` ist gleich `false`, wenn die Eigenschaft nicht übersetzt ist. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
 * Die untergeordneten `node`-Elemente identifizieren die Knoteneigenschaften, die für bestimmte Ressourcentypen zu übersetzen sind:
    * Das Attribut `resourceType` enthält den Pfad, der zu der für die Implementierung des Ressourcentyps verantwortlichen Komponente führt.
    * Die untergeordneten `property`-Elemente identifizieren die zu übersetzende Knoteneigenschaft. Verwenden Sie diesen Knoten auf dieselbe Art und Weise wie die untergeordneten `property`-Elemente zu den Knotenregeln.
 
-Die folgende Beispielregel bewirkt, dass der Inhalt aller `text`-Eigenschaften für alle Seiten unter dem Knoten `/content` übersetzt wird. Die Regel gilt für alle Komponenten, die Inhalte in einer `text` -Eigenschaft speichern, z. B. die Textkomponente.
+Die folgende Beispielregel veranlasst, dass alle `text`-Eigenschaften für alle Seiten unter dem Knoten `/content` übersetzt werden. Die Regel ist für alle Komponenten wirksam, die Inhalte in einer `text`-Eigenschaft speichern, wie z. B. die Textkomponente.
 
 ```xml
 <node path="/content">
@@ -73,7 +73,7 @@ Die folgende Beispielregel bewirkt, dass der Inhalt aller `text`-Eigenschaften f
 </node>
 ```
 
-Im folgenden Beispiel wird der Inhalt aller `text`-Eigenschaften übersetzt und auch andere Eigenschaften der Bildkomponente übersetzt. Wenn andere Komponenten über Eigenschaften mit demselben Namen verfügen, gilt die Regel nicht für sie.
+Das folgende Beispiel übersetzt den Inhalt aller `text`-Eigenschaften sowie andere Eigenschaften der Bildkomponente. Wenn andere Komponenten über Eigenschaften mit demselben Namen verfügen, gilt die Regel nicht für sie.
 
 ```xml
 <node path="/content">
@@ -86,7 +86,7 @@ Im folgenden Beispiel wird der Inhalt aller `text`-Eigenschaften übersetzt und 
 </node>
 ```
 
-## Regelsyntax für die Extrahierung von Assets von Seiten  {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntax für die Extrahierung von Assets von Seiten   {#rule-syntax-for-extracting-assets-from-pages}
 
 Verwenden Sie die folgende Regelsyntax, um in andere Komponenten integrierte oder durch andere Komponenten referenzierte Assets einzubeziehen:
 
@@ -99,7 +99,7 @@ Jedes `assetNode`-Element hat die folgenden Merkmale:
 * Ein `resourceType`-Attribut, das dem zu der Komponente führenden Pfad entspricht
 * Ein dem Namen der Eigenschaft entsprechendes `assetReferenceAttribute`, das (bei integrierten Assets) die Binärdaten des Assets oder den Pfad zum referenzierten Asset enthält
 
-Im folgenden Beispiel werden Bilder aus der Bildkomponente extrahiert:
+Das folgende Beispiel extrahiert Bilder aus der Bildkomponente:
 
 ```xml
 <assetNode resourceType="core/wcm/components/image/v2/image" assetReferenceAttribute="fileReference"/>
@@ -107,7 +107,7 @@ Im folgenden Beispiel werden Bilder aus der Bildkomponente extrahiert:
 
 ## Außerkraftsetzungsregeln {#overriding-rules}
 
-Die Datei `translation_rules.xml` besteht aus einem `nodelist` -Element mit mehreren untergeordneten `node` -Elementen. AEM liest die Knotenliste von oben nach unten. Wenn mehrere Regeln auf denselben Knoten abzielen, wird die in der Datei weiter unten aufgeführte Regel verwendet. Beispielsweise führen die folgenden Regeln dazu, dass alle Inhalte in den Eigenschaften `text` übersetzt werden, mit Ausnahme des Zweigs `/content/mysite/en` der Seiten:
+Die Datei `translation_rules.xml` besteht aus einem `nodelist`-Element mit mehreren untergeordneten `node`-Elementen. AEM liest die Knotenliste von oben nach unten. Wenn mehrere Regeln auf denselben Knoten abzielen, wird die in der Datei weiter unten aufgeführte Regel verwendet. Beispielsweise veranlassen die folgenden Regeln, dass alle Inhalte in den `text`-Eigenschaften übersetzt werden, außer dem Seitenzweig `/content/mysite/en`:
 
 ```xml
 <nodelist>
@@ -122,7 +122,7 @@ Die Datei `translation_rules.xml` besteht aus einem `nodelist` -Element mit mehr
 
 ## Filtern von Eigenschaften {#filtering-properties}
 
-Mit dem`filter` --Element können Sie auf Knoten mit einer spezifischen Eigenschaft filtern.
+Mit dem`filter`-Element können Sie auf Knoten mit einer spezifischen Eigenschaft filtern.
 
 Beispielsweise veranlassen die folgenden Regeln, dass alle Inhalte in `text`-Eigenschaften übersetzt werden – mit Ausnahme der Knoten, bei denen die Eigenschaft `draft` auf `true` eingestellt ist.
 
@@ -147,17 +147,17 @@ So können Sie darauf zugreifen:
 
 1. Wählen Sie **Übersetzungskonfiguration** aus.
 
-In der Benutzeroberfläche für Übersetzungsregeln haben Sie folgende Möglichkeiten:
+In der Benutzeroberfläche für Übersetzungsregeln können Sie:
 
-1. **Fügen Sie Kontext** hinzu, über den Sie einen Pfad hinzufügen können.
+1. **Kontext hinzufügen**, mit dem Sie einen Pfad hinzufügen können.
 
    ![Übersetzungskontext hinzufügen](../assets/add-translation-context.png)
 
-1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen** .
+1. Verwenden Sie den Pfad-Browser, um den erforderlichen Kontext auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen**.
 
    ![Kontext auswählen](../assets/select-context.png)
 
-1. Wählen Sie dann Ihren Kontext aus und klicken Sie auf **Bearbeiten**. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
+1. Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** klicken. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
 
    ![Editor für Übersetzungsregeln](../assets/translation-rules-editor.png)
 
@@ -170,15 +170,15 @@ Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können:
 
 ### isDeep {#isdeep}
 
-**`isDeep`**  gilt für Knotenfilter und ist standardmäßig &quot;true&quot;. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
+**`isDeep`** lässt sich auf Knotenfilter anwenden und ist standardmäßig auf „true“ eingestellt. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-Beispielsweise werden einem Übersetzungsauftrag untergeordnete Knoten hinzugefügt, selbst wenn der übergeordnete Knoten die Eigenschaft `draftOnly` auf &quot;true&quot;gesetzt hat, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden untergeordnete Knoten einem Übersetzungsauftrag selbst dann hinzugefügt, wenn beim übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
 
-Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
+Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
 
 ![Filterregeln](../assets/translation-rules-editor-filters.png)
 
-Im Folgenden finden Sie ein Beispiel der resultierenden XML-Datei, wenn **Is Deep** in der Benutzeroberfläche deaktiviert ist:
+Im folgenden Beispiel ist die XML dargestellt, die generiert wird, wenn **Is Deep** in der Benutzeroberfläche deaktiviert ist:
 
 ```xml
  <filter>
@@ -188,25 +188,25 @@ Im Folgenden finden Sie ein Beispiel der resultierenden XML-Datei, wenn **Is Dee
 
 ### inherit {#inherit}
 
-**`inherit`** gilt für Eigenschaften. Standardmäßig wird jede Eigenschaft vererbt. Wenn Sie jedoch möchten, dass einige Eigenschaften nicht vom untergeordneten Element übernommen werden, können Sie diese Eigenschaft als &quot;false&quot;markieren, damit sie nur auf diesen Knoten angewendet wird.
+**`inherit`** ist auf Eigenschaften anwendbar. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
 ### translate {#translate}
 
-**`translate`** wird einfach verwendet, um anzugeben, ob eine Eigenschaft übersetzt werden soll oder nicht.
+**`translate`** wird einfach verwendet, um anzugeben, ob eine Eigenschaft zu übersetzen ist oder nicht.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B.  `jcr:language`. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**`updateDestinationLanguage`** wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel `jcr:language`. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
-In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, um diesen Wert zu ändern, jedoch für die spezifischen Eigenschaften, für die Sprachcodes als Wert gelten.
+In der Benutzeroberfläche können Sie auf der Registerkarte **Eigenschaften** die Option **Übersetzen** aktivieren/deaktivieren, um diesen Wert zu ändern, allerdings nur für die spezifischen Eigenschaften, die Sprach-Codes als Wert haben.
 
 Der Unterschied zwischen `updateDestinationLanguage` und `translate` lässt sich hier anhand eines einfachen Beispiels für einen Kontext mit zwei Regeln veranschaulichen:
 
-![updateDestinationLanguage-Beispiel](../assets/translation-rules-updatedestinationlanguage.png)
+![Beispiel: updateDestinationLanguage](../assets/translation-rules-updatedestinationlanguage.png)
 
 Das Ergebnis in der xml sieht wie folgt aus:
 
@@ -215,11 +215,11 @@ Das Ergebnis in der xml sieht wie folgt aus:
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Manuelles Bearbeiten der Regeldatei {#editing-the-rules-file-manually}
+## Manuelles Bearbeiten der Regeldatei  {#editing-the-rules-file-manually}
 
-Die `translation_rules.xml`-Datei, die mit AEM installiert wird, enthält einen Standardsatz von Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
+Die in AEM installierte Datei `translation_rules.xml` enthält einen Standardsatz an Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
 
-Wenn Sie die Datei `translation_rules.xml` bearbeiten, behalten Sie eine Sicherungskopie in einem Inhaltspaket bei. Die Neuinstallation bestimmter AEM-Pakete kann die aktuelle `translation_rules.xml`-Datei durch das Original ersetzen. Um in dieser Situation die Regeln wiederherzustellen, können Sie das Paket installieren, das Ihre Sicherungskopie enthält.
+Wenn Sie die Datei `translation_rules.xml` bearbeiten, speichern Sie zuvor eine Sicherungskopie im Inhaltspaket. Mit der Neuinstallation bestimmter AEM-Packages kann die aktuelle `translation_rules.xml`-Datei durch das Original ersetzt werden. Um in dieser Situation die Regeln wiederherzustellen, können Sie das Paket installieren, das Ihre Sicherungskopie enthält.
 
 >[!NOTE]
 >
