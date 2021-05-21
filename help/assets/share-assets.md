@@ -8,7 +8,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -170,7 +170,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
 
-Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Um sie zu aktivieren, lesen Sie [Aktivieren von Desktop-Aktionen in [!DNL Assets] Web-Schnittstelle](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
+Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der  [!DNL Assets] -Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
 
 ![Aktivieren von Desktop-Aktionen, die beim Arbeiten mit dem Desktop-Programm als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
@@ -184,8 +184,8 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 
 * Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
 * Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem AEM-Administrator nach den [Download-Beschränkungen](#maxdatasize).
-* Damit ein Benutzer eine Vorschau eines Videos anzeigen kann, das über die Linkfreigabe freigegeben wird, muss das Video über eine statische Videowiedergabe verfügen, die unter `/jcr:content/renditions` im Videoknoten im Repository verfügbar ist. Die Vorschau hängt nicht von der Verfügbarkeit eines [!DNL Dynamic Media] -Ausgabeformats ab.
-* Beim Herunterladen eines Video-Assets über die Linkfreigabe werden die [!DNL Dynamic Media]-Ausgabeformate nicht im heruntergeladenen Archiv enthalten.
+* Damit ein Benutzer eine Vorschau eines Videos anzeigen kann, das über die Link-Freigabe freigegeben wurde, muss für das Video eine statische Videoausgabe an der `/jcr:content/renditions`-Position im Knoten des Videos im Repository verfügbar sein. Die Vorschau ist nicht von der Verfügbarkeit einer [!DNL Dynamic Media]-Ausgabedarstellung abhängig.
+* Beim Herunterladen eines Video-Assets über die Linkfreigabe sind die [!DNL Dynamic Media]-Ausgabedarstellungen nicht im heruntergeladenen Archiv enthalten.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
