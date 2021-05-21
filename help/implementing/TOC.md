@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
 + Verwenden von Cloud Manager {#using-cloud-manager}
    + [Verwalten von Umgebungen](cloud-manager/manage-environments.md)
-   + [Konfigurieren Ihrer CI/CD-Pipeline](cloud-manager/configure-pipeline.md)
+   + [Konfigurieren Ihrer CI/CD Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
       + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
@@ -92,7 +92,7 @@ ht-degree: 88%
       + [Verwenden des Sling Resource Mergers in AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
       + [Überlagerungen in AEM as a Cloud Service](developing/introduction/overlays.md)
       + [Verwendung Client-seitiger Bibliotheken](developing/introduction/clientlibs.md)
-      + [Seitenvergleich ](/help/implementing/developing/introduction/page-diff.md)
+      + [Seitenvergleich](/help/implementing/developing/introduction/page-diff.md)
       + [Editor-Einschränkungen](/help/implementing/developing/introduction/editor-limitations.md)
       + [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md)
       + Komponenten und Vorlagen {#components-templates}
@@ -154,7 +154,7 @@ ht-degree: 88%
          + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=de)
          + [Varianten – Erstellen von Fragmentinhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=de)
          + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=de)
-         + [Verwenden von zugehörigen Inhalten ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=de)
+         + [Verwenden von zugehörigen Inhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=de)
          + [Metadaten – Fragmenteigenschaften](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=de)
          + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=de)
          + [Anzeigen in der Vorschau – JSON-Repräsentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=de)
@@ -188,7 +188,7 @@ ht-degree: 88%
    + [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md)
    + [Konfigurieren der RTE-Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
-+ Bereitstellen in AEM as a Cloud Service {#deploying}
++ Bereitstellen für AEM as a Cloud Service {#deploying}
    + [Bereitstellen für AEM as a Cloud Service](deploying/overview.md)
    + [AEM-Versionsaktualisierungen](deploying/aem-version-updates.md)
    + [Konfigurieren von OSGI für AEM as a Cloud Service](deploying/configuring-osgi.md)
