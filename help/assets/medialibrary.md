@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -35,11 +35,11 @@ Kunden, die über eine [!DNL Sites] -Lizenz verfügen, sind berechtigt, Media Li
 
 Media Library wird als Teil von Sites installiert. Über die Sites-Lizenz und -Installation hinaus ist keine zusätzliche Lizenz oder kein Paket erforderlich.
 
-## [!DNL Assets] versus Media Library  {#assets-and-media-library}
+## [!DNL Assets] im Vergleich mit der  Media Library {#assets-and-media-library}
 
 Experience Manager Assets bietet DAM-Funktionen von Unternehmensklassen. Die Asset-Funktionalität wird mit [!DNL Experience Manager] in einem einzigen Paket bereitgestellt. Benutzer, die keine Assets-Lizenz erworben haben, sind jedoch nicht berechtigt, die erweiterten DAM-Funktionen zu verwenden. Ohne Assets-Lizenz sind nur [Media Library-Funktionen](#use-media-library) verfügbar.
 
-Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Funktionen verhindern möchten, entfernen Sie alle [!DNL Assets]-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den [!DNL Assets]-Administrator aus [!DNL Experience Manager]. Dadurch wird verhindert, dass Ihre Benutzer versehentlich [!DNL Assets] Funktionen verwenden, die Sie nicht lizenziert haben.
+Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Funktionen verhindern möchten, entfernen Sie alle [!DNL Assets]-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den [!DNL Assets]-Administrator aus [!DNL Experience Manager]. Hierdurch verhindern Sie, dass Benutzer versehentlich [!DNL Assets]-Funktionen nutzen, für die Sie keine Lizenz haben.
 
 ## Media Library {#use-media-library} verwenden
 
@@ -92,5 +92,5 @@ Um die Media Library-Funktion zu verwenden, können Sie die Standardbenutzerober
 >[!MORELIKETHIS]
 >
 >* [DAM-Funktionen in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] Produktbeschreibung](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 
