@@ -403,7 +403,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-cloud/authoring/features/page-versions.md)
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * Mit **Abbrechen** können Sie den Vorgang abbrechen.
-   * **Löschen** bestätigen Sie die Aktion.
+   * Mit **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Referenzen aufweist, wird die Seite gelöscht.
       * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
