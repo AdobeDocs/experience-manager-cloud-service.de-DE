@@ -79,7 +79,7 @@ Indexdefinitionen werden jetzt als benutzerdefiniert und versioniert gekennzeich
 
 Um einen Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) daher via `ui.apps` über Git und das Cloud Manager-Implementierungsverfahren bereitgestellt werden.
 
-Nachdem die neue Indexdefinition hinzugefügt wurde, muss die neue Anwendung über Cloud Manager bereitgestellt werden. Bei der Implementierung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB und Azure Segment Store verantwortlich sind (für Erstellungs- bzw. Veröffentlichungszwecke). Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu indiziert, bevor die Blau/Grün-Umstellung stattfindet.
+Nachdem die neue Indexdefinition hinzugefügt wurde, muss das neue Programm über Cloud Manager bereitgestellt werden. Bei der Implementierung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB und Azure Segment Store verantwortlich sind (für Erstellungs- bzw. Veröffentlichungszwecke). Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu indiziert, bevor die Blau/Grün-Umstellung stattfindet.
 
 >[!TIP]
 >
@@ -93,11 +93,11 @@ Bei der Indexverwaltung geht es darum, Indizes hinzuzufügen, zu entfernen und z
 
 ### Was ist eine Blau/Grün-Implementierung? {#what-is-blue-green-deployment}
 
-Eine Blau/Grün-Implementierung kann Ausfallzeiten reduzieren. Sie ermöglicht Upgrades ohne Ausfallzeiten sowie schnelle Rollbacks. Die alte Version der Anwendung (blau) wird gleichzeitig mit der neuen Version der Anwendung (grün) ausgeführt.
+Eine Blau/Grün-Implementierung kann Ausfallzeiten reduzieren. Sie ermöglicht Upgrades ohne Ausfallzeiten sowie schnelle Rollbacks. Die alte Version des Programms (blau) wird gleichzeitig mit der neuen Version des Programms (grün) ausgeführt.
 
 ### Schreibgeschützte Bereiche und Bereiche mit Lese-Schreib-Zugriff {#read-only-and-read-write-areas}
 
-Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) können sich in der alten (blauen) und der neuen (grünen) Version der Anwendung unterscheiden. Die schreibgeschützten Bereiche des Repositorys sind in der Regel `/app` und `/libs`. Im folgenden Beispiel wird Kursivschrift verwendet, um schreibgeschützte Bereiche zu markieren, während Fettschrift für Bereiche mit Lese-Schreib-Zugriff steht.
+Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) können sich in der alten (blauen) und der neuen (grünen) Version des Programms unterscheiden. Die schreibgeschützten Bereiche des Repositorys sind in der Regel `/app` und `/libs`. Im folgenden Beispiel wird Kursivschrift verwendet, um schreibgeschützte Bereiche zu markieren, während Fettschrift für Bereiche mit Lese-Schreib-Zugriff steht.
 
 * **/**
 * */apps (schreibgeschützt)*
@@ -109,15 +109,15 @@ Bestimmte Bereiche des Repositorys (schreibgeschützte Teile des Repositorys) k�
 * **/system**
 * **/var**
 
-Die Bereiche mit Lese- und Schreibzugriff des Repositorys werden von allen Versionen der Anwendung gemeinsam genutzt, während es für jede Version der Anwendung einen spezifischen Satz von `/apps` und `/libs` gibt.
+Die Bereiche mit Lese- und Schreibzugriff des Repositorys werden von allen Versionen des Programms gemeinsam genutzt, während es für jede Version des Programms einen spezifischen Satz von `/apps` und `/libs` gibt.
 
 ### Indexverwaltung ohne Blau/Grün-Implementierung {#index-management-without-blue-green-deployment}
 
-Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indizes zur Laufzeit hinzugefügt, entfernt oder geändert werden. Indizes werden verwendet, sobald sie verfügbar sind. Wenn ein Index noch nicht in der alten Version der Anwendung verwendet werden soll, wird der Index normalerweise während einer geplanten Ausfallzeit erstellt. Dasselbe gilt, wenn ein Index entfernt oder ein vorhandener Index geändert wird. Wenn Sie einen Index entfernen, steht er sofort nach der Entfernung nicht mehr zur Verfügung.
+Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indizes zur Laufzeit hinzugefügt, entfernt oder geändert werden. Indizes werden verwendet, sobald sie verfügbar sind. Wenn ein Index noch nicht in der alten Version des Programms verwendet werden soll, wird der Index normalerweise während einer geplanten Ausfallzeit erstellt. Dasselbe gilt, wenn ein Index entfernt oder ein vorhandener Index geändert wird. Wenn Sie einen Index entfernen, steht er sofort nach der Entfernung nicht mehr zur Verfügung.
 
 ### Indexverwaltung mit Blau/Grün-Implementierung {#index-management-with-blue-green-deployment}
 
-Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Für die Indexverwaltung ist es jedoch erforderlich, dass Indizes nur von bestimmten Versionen der Anwendung verwendet werden. Wenn Sie beispielsweise einen Index in Version 2 der Anwendung hinzufügen, sollte dieser noch nicht von Version 1 der Anwendung genutzt werden. Das Gegenteil ist der Fall, wenn ein Index entfernt wird: Ein in Version 2 entfernter Index wird in Version 1 weiterhin benötigt. Beim Ändern einer Indexdefinition soll die alte Version des Index nur für Version 1 verwendet werden; die neue Version des Index soll nur für Version 2 genutzt werden.
+Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Für die Indexverwaltung ist es jedoch erforderlich, dass Indizes nur von bestimmten Versionen des Programms verwendet werden. Wenn Sie beispielsweise einen Index in Version 2 des Programms hinzufügen, sollte dieser noch nicht von Version 1 des Programms genutzt werden. Das Gegenteil ist der Fall, wenn ein Index entfernt wird: Ein in Version 2 entfernter Index wird in Version 1 weiterhin benötigt. Beim Ändern einer Indexdefinition soll die alte Version des Index nur für Version 1 verwendet werden; die neue Version des Index soll nur für Version 2 genutzt werden.
 
 Die folgende Tabelle zeigt fünf Indexdefinitionen: index `cqPageLucene` wird in beiden Versionen verwendet, während index `damAssetLucene-custom-1` nur in Version 2 verwendet wird.
 
@@ -158,17 +158,17 @@ Um einen Index mit dem Namen `/oak:index/acme.product-custom-1` hinzuzufügen, d
 
 Dies funktioniert, indem dem Indexnamen eine benutzerdefinierte Kennung vorangestellt wird, gefolgt von einem Punkt (**`.`**). Die Kennung muss zwischen 2 und 5 Zeichen lang sein.
 
-Wie oben gezeigt, wird sichergestellt, dass der Index nur von der neuen Version der Anwendung verwendet wird.
+Wie oben gezeigt, wird sichergestellt, dass der Index nur von der neuen Version des Programms verwendet wird.
 
 ### Ändern eines Index {#changing-an-index}
 
 Wenn ein vorhandener Index geändert wird, muss ein neuer Index mit der geänderten Indexdefinition hinzugefügt werden. Betrachten Sie beispielsweise, dass der vorhandene Index `/oak:index/acme.product-custom-1` geändert wird. Der alte Index wird unter `/oak:index/acme.product-custom-1`, der neue Index unter `/oak:index/acme.product-custom-2` gespeichert.
 
-Die alte Version der Anwendung nutzt die folgende Konfiguration:
+Die alte Version des Programms nutzt die folgende Konfiguration:
 
 `/oak:index/acme.product-custom-1`
 
-Die neue Version der Anwendung nutzt die folgende (geänderte) Konfiguration:
+Die neue Version des Programms nutzt die folgende (geänderte) Konfiguration:
 
 `/oak:index/acme.product-custom-2`
 
