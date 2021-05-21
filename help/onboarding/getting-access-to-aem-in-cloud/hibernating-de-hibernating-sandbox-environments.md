@@ -14,7 +14,7 @@ ht-degree: 95%
 Sandbox-Programmumgebungen werden in den *Ruhezustand* versetzt, wenn in einem bestimmten Zeitraum keine Aktivität erkannt wurde.
 
 >[!NOTE]
->Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Produktionsumgebungen werden nicht in den Ruhezustand versetzt.
+>Ruhezustand gibt es nur bei Sandbox-Programmumgebungen. Bei Produktions-Programmumgebungen gibt es keinen Ruhezustand.
 
 ## Ruhezustand {#hibernation-introduction}
 
