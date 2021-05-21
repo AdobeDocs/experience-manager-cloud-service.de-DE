@@ -8,7 +8,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '1478'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager umfasst mehr als 100 Dynamic Media-Bildbereitstellungsb
 
 * JPG oder PNG ist die optimale Auswahl für die Bereitstellung von Bildern in guter Qualität und mit angemessener Größe.
 * Wenn kein Formatsbefehl in der URL angegeben ist, wird standardmäßig JPG bei der Bildbereitstellung von Dynamic Media verwendet.
-* JPG nutzt ein Komprimierungsverhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateien. PNG komprimiert im Verhältnis von etwa 2:1, es sei denn, Bilder enthalten einen weißen Hintergrund. Normalerweise sind PNG-Dateien aber größer als JPG-Dateien.
+* JPG nutzt ein Komprimierungsverhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateien. PNG-Dateien werden mit einem Verhältnis von etwa 2:1 komprimiert, es sei denn, Bilder enthalten einen weißen Hintergrund. Normalerweise sind PNG-Dateien aber größer als JPG-Dateien.
 * JPG nutzt verlustreiche Komprimierung. Das heißt, dass Bildelemente (Pixel) bei der Komprimierung verloren gehen. PNG verwendet dagegen die verlustfreie Komprimierung.
 * JPG komprimiert Fotos oft mit größerer Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
 * Wenn Bilder transparent sind, verwenden Sie PNG, da JPG keine Transparenz unterstützt.
@@ -44,9 +44,9 @@ Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bi
 
 * Das Whitepaper zu Best Practices [Adobe Dynamic Media Classic - Bildqualität und Scharfzeichnen Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
-* Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media) an.
+* Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media) an.
 
-Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder nur mit der einen oder anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
+Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder mit nur einer oder der anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
 Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
@@ -118,8 +118,8 @@ Wenn das Bild weiter optimiert werden muss, passen Sie die Parameter für die Sc
 
 Wenn die Scharfzeichnungsergebnisse noch immer nicht den Erwartungen entsprechen, erhöhen Sie den Radius in Dezimalschritten. Beginnen Sie den Wert bei jedem Dezimalschritt bei 1,75 und erhöhen Sie diesen schrittweise auf 4. Wiederholen Sie diesen Vorgang, bis Sie das gewünschte Ergebnis erzielen. Die oben genannten Werte stellen zwar einen von Kreativstudios anerkannten Ansatz dar, Sie können aber auch mit anderen Werten beginnen und andere Strategien verfolgen. Sie entscheiden subjektiv, wann die Ergebnisse zufriedenstellend sind. Daher ist das strukturierte Experimentieren entscheidend.
 
-Beim Experimentieren sind die folgenden allgemeinen Vorschläge zur Optimierung Ihres Workflows hilfreich:
+Beim Experimentieren sind die folgenden allgemeinen Vorschläge hilfreich, um Ihren Workflow zu optimieren:
 
 * Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerdefinierte Vorgabenname in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
-* Experience Manager bietet außerdem erweiterte Möglichkeiten zum Optimieren der Bildqualität, z. B. das Anwenden von Scharfzeichnen von Bildern bei der Aufnahme. Um die Rendering-Ergebnisse zu optimieren, können Ihnen die Beratungsdienste von [Adobe](https://business.adobe.com/customers/consulting-services/main.html) bei benutzerdefinierten Einblicken und Best Practices helfen.
+* Experience Manager bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Um die Rendering-Ergebnisse zu optimieren, können Ihnen die Beratungsdienste von [Adobe](https://business.adobe.com/customers/consulting-services/main.html) bei benutzerdefinierten Einblicken und Best Practices helfen.
