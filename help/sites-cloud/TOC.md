@@ -9,7 +9,7 @@ role: Business Practitioner
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,14 +40,14 @@ ht-degree: 95%
       + [Exportieren in CSV  ](authoring/fundamentals/csv-export.md)
       + [Komponenten ](authoring/fundamentals/components.md)
       + [Authoring für Mobilgeräte](authoring/fundamentals/mobile.md)
-      + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) ](authoring/fundamentals/accessible-content.md)
+      + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](authoring/fundamentals/accessible-content.md)
       + [Fehlerbehebung](authoring/fundamentals/troubleshooting.md)
       + [Tastaturbefehle](authoring/fundamentals/keyboard-shortcuts.md)
    + Authoring – Funktionen {#features}
       + [Seitenvorlagen](authoring/features/templates.md)
       + [Stilsystem](authoring/features/style-system.md)
       + [Seitenversionen](authoring/features/page-versions.md)
-      + [Seitenvergleich ](authoring/features/page-diff.md)
+      + [Seitenvergleich](authoring/features/page-diff.md)
       + [Komponentenkonsole](authoring/features/components-console.md)
       + [Responsives Layout  ](authoring/features/responsive-layout.md)
       + [Verwenden von Tags](authoring/features/tags.md)
@@ -82,10 +82,10 @@ ht-degree: 95%
       + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Verwalten {#administering}
    + [Verwalten von Workflows](administering/workflows-administering.md)
-   + Wiederverwenden von Inhalten {#reusing-content}
+   + Wiederverwenden von Inhalt {#reusing-content}
       + [MSM und Übersetzung](administering/msm-and-translation.md)
       + Multi-Site-Manager {#msm}
-         + [Überblick über MSM und Live Copy](administering/msm/overview.md)
+         + [Übersicht über MSM und Live Copy](administering/msm/overview.md)
          + [Konfigurieren der Synchronisierung von Live Copies](administering/msm/live-copy-sync-config.md)
          + [Erstellen und Synchronisieren von Live Copies](administering/msm/creating-live-copies.md)
          + [Konsole „Live Copy-Übersicht“](administering/msm/live-copy-overview.md)
