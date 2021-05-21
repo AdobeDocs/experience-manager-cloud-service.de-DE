@@ -11,7 +11,7 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -26,7 +26,7 @@ Das Onboarding für AEM Commerce as a Cloud Service erfolgt in zwei Schritten:
 1. AEM Commerce as a Cloud Service aktivieren und das CIF-Add-on bereitstellen
 2. Verbinden AEM Commerce as a Cloud Service mit Ihrer Commerce-Lösung
 
-Der erste Einstieg erfolgt durch Adobe. Weitere Informationen zu Preisen und Bereitstellung erhalten Sie von Ihrem Vertriebsmitarbeiter.
+Der erste Onboarding-Schritt wird von Adobe ausgeführt. Weitere Informationen zu Preisen und Bereitstellung erhalten Sie von Ihrem Vertriebsmitarbeiter.
 
 Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programme angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie ein neues erstellen. Weitere Informationen finden Sie unter [Ihr Programm einrichten](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
@@ -67,7 +67,7 @@ Nachdem der Endpunkt (optional ein Authentifizierungstoken für die Unterstützu
 
 Gehen Sie wie folgt vor, um AEM über die Adobe I/O-CLI mit einer Commerce-Lösung zu verbinden:
 
-1. Adobe I/O-CLI mit dem Cloud Manager-Plug-in abrufen
+1. Adobe I/O CLI mit dem Cloud Manager-Plug-in abrufen
 
    Lesen Sie die [Adobe Cloud Manager-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html), um zu erfahren, wie Sie die [Adobe I/O-CLI](https://github.com/adobe/aio-cli) mit dem [Cloud Manager-CLI-Plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager) herunterladen, einrichten und verwenden.
 
