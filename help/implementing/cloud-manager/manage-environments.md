@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
 
-## Anzeigen von Umgebungen {#viewing-environment}
+## Umgebungsdetails {#viewing-environment}
 
 Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebungen auf.
 
@@ -112,7 +112,6 @@ Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebung
 
 
 >[!NOTE]
->
 >Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten Produktionsprogramm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
 
 ## Zugriffsverwaltung {#managing-access}
