@@ -5,7 +5,7 @@ exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -17,9 +17,9 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zur Sicherheit in Experie
 
 * [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 * [IMS-Unterstützung für AEM as a Cloud Service](ims-support.md)
-* [Selbe Site-Cookie-Unterstützung für AEM als Cloud Service](same-site-cookie-support.md)
+* [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](same-site-cookie-support.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
