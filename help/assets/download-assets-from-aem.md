@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 93%
+source-wordcount: '921'
+ht-degree: 88%
 
 ---
 
@@ -24,14 +24,14 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien�
 
 Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
-* [Experience Manager-Benutzeroberfläche](#download-in-aem)
+* [Experience Manager-Benutzeroberfläche](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=de)
 * [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#download-assets)
 
-## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-in-aem}
+## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. Große Dateien werden asynchron heruntergeladen und die Benutzer werden über Experience Manager-Benachrichtigungen im Posteingang über den Abschluss informiert. Weitere Informationen finden Sie unter [Grundlegendes zum Experience Manager-Posteingang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=de).
+Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, in die die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads. Die großen Dateien werden asynchron heruntergeladen und [!DNL Experience Manager] benachrichtigt über Benachrichtigungen im Posteingang über den Abschluss. Siehe [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download-Benachrichtigung](assets/download-notification.png)
 
@@ -51,7 +51,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
    *Abbildung: Optionen des Dialogfelds „Herunterladen“.*
 
-1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
+1. Wählen Sie im Dialogfeld &quot;Download&quot;die gewünschten Download-Optionen aus.
 
    | Download-Option | Beschreibung |
    |---|---|
