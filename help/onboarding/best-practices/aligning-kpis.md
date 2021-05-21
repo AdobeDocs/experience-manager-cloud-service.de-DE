@@ -1,42 +1,42 @@
 ---
-title: KPIs ausrichten
-description: KPIs ausrichten
+title: Ausrichten von KPIs
+description: Ausrichten von KPIs
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Um die richtigen KPIs auszuwählen, beginnen Sie mit Ihren Geschäftszielen
+# Definieren Sie zunächst Ihre Unternehmensziele, um die richtigen KPIs auszuwählen.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
->title="KPIs ausrichten"
->abstract="In einer digitalen Welt kann man fast alles messen. Die Auswahl der richtigen KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf das zu konzentrieren, was am wichtigsten ist."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Bewerten von KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Auswählen des richtigen Teams"
+>title="Ausrichten von KPIs"
+>abstract="In unserer digitalen Welt kann fast alles gemessen werden. Die Wahl der richtigen KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf das zu konzentrieren, was am wichtigsten ist."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=de" text="Bewerten von KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=de" text="Auswahl des richtigen Teams"
 
-In einer digitalen Welt kann man fast alles messen. Die Auswahl von drei KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf die wichtigsten Punkte zu konzentrieren.
-
-
-## **Führen Sie diese 6 Schritte aus, um zu entscheiden, was gemessen und wie**
+In unserer digitalen Welt kann fast alles gemessen werden. Die Auswahl von drei KPIs für Ihre Adobe Experience Manager-Implementierung hilft Ihrem Team, sich auf das zu konzentrieren, was am wichtigsten ist.
 
 
-1. **Beginnen Sie mit Ihren Geschäftszielen.** So können Ihre geschäftlichen Ziele beispielsweise darin bestehen, den Online-Umsatz zu steigern, Betriebskosten zu senken oder die mit Verstößen gegen das digitale Rechtemanagement (DRM) verbundenen Kosten zu senken.
+## **Führen Sie die folgenden sechs Schritte aus, um zu entscheiden, was wie gemessen werden soll.**
 
-1. **Legen Sie anhand Ihrer Ziele Ihre Ziele fest.** Ihre Ziele sind die spezifischen Ergebnisse, die Sie durch die Übernahme von Experience Manager als Content Management-Plattform erzielen möchten. Wenn Ihr Ziel darin besteht, den Online-Umsatz zu steigern, könnte Ihr Ziel darin bestehen, eine Konversionsrate von 2 Punkten für alle Seiten mit Marketinginhalten zu erzielen. Wenn Ihr Ziel darin besteht, die Betriebskosten zu senken, könnte Ihr Ziel darin bestehen, die Produktivität von Teams, die digitale Inhalte erstellen, um 20 % zu steigern.
 
-   Idealerweise sollte jedes Ziel über eine Grundlinie verfügen, z. B. Ihre aktuelle Konversionsrate für eine bestimmte Seitenkategorie. Grundlinien-Zahlen in Bezug auf Site-Besuche oder Konversion oder Online-Umsatz sind relativ leicht zu finden. Bei Zielen in Bezug auf Produktivität oder Markteinführungszeit wird es wahrscheinlich einige Arbeit dauern, bis eine Grundlinie berechnet wird. Es lohnt sich jedoch, sich zu bemühen, denn klare Ziele helfen Ihnen dabei, mehr Wert aus Ihrer Investition in Experience Manager zu ziehen.
+1. **Beginnen Sie mit Ihren Unternehmenszielen.** So könnten Sie beispielsweise Ihre Unternehmensziele darin sehen, den Online-Umsatz zu steigern, Betriebskosten zu senken oder die mit Verstößen gegen das Digital Rights Management (DRM) verbundenen Rechtskosten zu senken.
 
-1. **Identifizieren Sie für jedes Ziel Leistungsindikatoren.** Wenn Ihr Ziel beispielsweise darin besteht, die mit DRM-Verstößen verbundenen rechtlichen Kosten um 100.000 US-Dollar zu senken, kann ein guter Leistungsindikator sein: &quot;100 % der abgelaufenen Assets werden am oder vor dem Ablaufdatum aus den digitalen Eigenschaften entfernt.&quot; Versuchen Sie, für jedes Ziel mehrere Indikatoren zu erstellen. Wenn Sie mit 2-3 Geschäftszielen und 3-5 Zielen begonnen haben, haben Sie möglicherweise eine Liste mit 15-20 Leistungsindikatoren.
+1. **Bestimmen Sie anhand Ihrer Unternehmensziele Ihre Produktziele.** Ihre Produktziele sind die spezifischen Ergebnisse, die Sie durch die Verwendung von Experience Manager als Content-Management-Plattform erreichen möchten. Wenn Ihr Unternehmensziel darin besteht, den Online-Umsatz zu steigern, könnte Ihr Produktziel sein, eine 2-Punkt-Steigerung der Konversion für alle Seiten mit Marketing-Inhalten zu erreichen. Wenn Ihr Unternehmensziel lautet, die Betriebskosten zu senken, könnte Ihr Produktziel darin bestehen, die Produktivität von Teams, die digitale Inhalte erstellen, um 20 % zu steigern.
 
-1. **Wählen Sie die drei Indikatoren aus, die für Ihr Unternehmen am wichtigsten sind.** Dies sind Ihre KPIs. Sie könnten sich an drei Unternehmenszielen orientieren - von denen jeder von einem anderen Führungsgremium auf C-Ebene unterstützt wird - oder alle 3 KPIs könnten dasselbe Ziel unterstützen, wenn alle zustimmen, dass es das wichtigste ist.
+   Idealerweise sollte jedes Produktziel eine Basiszahl haben, wie z. B. Ihre aktuelle Konversionsrate für eine bestimmte Kategorie von Seiten. Die Basiszahlen für Website-Besuche, Konversions oder Online-Einnahmen sind relativ einfach zu ermitteln. Bei Produktzielen für die Produktivität oder die Markteinführungszeit wird es wahrscheinlich einige Arbeit erfordern, um eine Basiszahl zu berechnen. Das lohnt sich aber, denn mit klaren Produktzielen können Sie mehr Nutzen aus Ihren Investitionen in Experience Manager ziehen.
 
-1. **Erstellen Sie für jeden KPI eine messbare Methode.** Laden Sie nach Auswahl Ihrer KPIs unsere KPI-Methodenvorlage herunter, die Sie durch den Rest des Prozesses führt.
+1. **Definieren Sie für jedes Produktziel Leistungsindikatoren.** Wenn Ihr Produktziel beispielsweise darin besteht, die mit DRM-Verstößen verbundenen Rechtskosten um 100.000 US-Dollar zu senken, könnte ein guter Leistungsindikator sein: „100 % der abgelaufenen Assets werden am oder vor dem Ablaufdatum aus den digitalen Properties entfernt.“ Versuchen Sie, für jedes Produktziel mehrere Indikatoren zu definieren. Wenn Sie beispielsweise mit zwei bis drei Unternehmenszielen und drei bis fünf Produktzielen begonnen haben, haben Sie eine Liste von 15 bis 20 Leistungsindikatoren.
 
-1. **Definieren Sie die Zielgruppe für jeden KPI.** Ihr letzter Schritt in dieser Woche besteht darin, die Gruppe der Interessengruppen zu ermitteln, die sich am meisten für die einzelnen KPIs interessieren. Nächste Woche arbeiten Sie mit jeder Gruppe zusammen, um die KPI zu bestätigen, die Methodik zu verfeinern und sich auf das Format und die Uhrzeit Ihrer Berichte zu einigen.
+1. **Wählen Sie die drei Indikatoren aus, die für Ihr Unternehmen am wichtigsten sind.** Dies sind Ihre KPIs. Möglicherweise entsprechen sie drei Unternehmenszielen, wobei jedes von einem anderen Manager beaufsichtigt wird. Oder aber alle drei KPIs haben dasselbe Unternehmensziel, wenn sich alle einig sind, dass es das wichtigste ist.
+
+1. **Erstellen Sie für jeden KPI eine messbare Methodik.** Wenn Sie Ihre KPIs ausgewählt haben, laden Sie unsere KPI-Methodenvorlage herunter, die Sie durch den Rest des Prozesses führt.
+
+1. **Definieren Sie die Zielgruppe für jeden KPI.** Ihr letzter Schritt für diese Woche besteht darin, die Gruppe der Stakeholder zu ermitteln, für die jeder KPI am wichtigsten ist. In der darauffolgenden Woche bestätigen Sie in Zusammenarbeit mit jeder Gruppe den KPI, verfeinern die Methodik und vereinbaren das Format und den Zeitpunkt Ihrer Berichte.
 
 >[!TIP]
 >
