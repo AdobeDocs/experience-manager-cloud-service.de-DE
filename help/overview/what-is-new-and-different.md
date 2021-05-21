@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1885'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 
 * Benachrichtigung über wichtige Lebenszyklusereignisse für diese Komponenten (z. B. Produktaktualisierungen).
 
-Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN-Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit geringer Latenz für Kunden auf der ganzen Welt.
+Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
 >[!NOTE]
 >Informationen zu den ersten Schritten mit Cloud Manager in AEM as a Cloud Service finden Sie unter [Zugriff auf Experience Manager as a Cloud Service](/help/onboarding/what-is-required/accessing-aem-instance.md).
@@ -255,7 +255,7 @@ Weitere Informationen finden Sie in der Übersicht über die [Änderungen an Sit
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native PaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Digital-Asset-Management- und Dynamic-Media-Vorgänge schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
+Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native PaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Vorgänge in Digital Asset Management und Dynamic Media schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
 
 Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation in der Cloud sowie die hochleistungsfähige Erfassung und Suche von Assets.
 
@@ -271,4 +271,4 @@ Weitere Informationen finden Sie unter:
 * [Wesentliche Änderungen an AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Einführung in AEM Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/de/experience-manager-learn/cloud-service/overview.html)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/overview.html)
