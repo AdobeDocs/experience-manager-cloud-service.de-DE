@@ -7,7 +7,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -21,17 +21,17 @@ Mit Adobe Experience Manager (AEM) als Cloud Service können Sie Inhaltsfragment
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) als Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
->* [AEM Commerce nutzt Daten aus einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [AEM Inhaltsfragmente arbeiten mit der GraphQL-AEM-API (einer angepassten Implementierung, die auf GraphQL basiert) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Anwendungen](/help/assets/content-fragments/graphql-api-content-fragments.md) bereitzustellen.
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/assets/content-fragments/graphql-api-content-fragments.md) bereit.
 
 
 ## Headless-CMS {#headless-cms}
 
 Ein Headless-Content-Management-System (CMS) ist:
 
-* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Back-End-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
+* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Backend-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
 
    Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
