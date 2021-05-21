@@ -32,7 +32,7 @@ AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Auto
 
 ## Architektur {#architecture}
 
-Die IMS-Authentifizierung verwendet das OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Wenn Benutzer zu IMS hinzugefügt wurden und eine Adobe ID haben, können sie sich mit den IMS-Anmeldeinformationen bei AEM-Autorendiensten anmelden.
+Die IMS-Authentifizierung verwendet das OAuth-Protokoll zwischen AEM und dem Adobe IMS-Endpunkt. Wenn Benutzer zu IMS hinzugefügt wurden und eine Adobe ID haben, können sie sich mit den IMS-Anmeldeinformationen bei AEM-Autoren-Services anmelden.
 
 Die Schritte zur Benutzeranmeldung werden unten gezeigt. Der Benutzer wird zu IMS und optional zum Kunden-IDP für SSO und anschließend zurück zu AEM weitergeleitet.
 
@@ -53,7 +53,7 @@ Sobald ein Kunde als IMS-Organisation existiert, muss er sein System wie folgt k
 ![IMS-Onboarding](/help/security/assets/ims2.png)
 
 1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung bei Cloud Manager können die Systemadministratoren entweder AEM-Programme und -Umgebungen bereitstellen oder für Verwaltungsaufgaben zur Admin Console navigieren.
-1. Der Systemadministrator beansprucht eine Domäne, um die Eigentümerschaft der Domäne zu bestätigen (beispielsweise acme.com).
+1. Der Systemadministrator beansprucht eine Domäne, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator führt die IDP-Konfiguration in der Admin Console aus, um Single-Sign-On einzurichten.
 1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
@@ -80,7 +80,7 @@ Zur einfachen Handhabung der Benutzererstellung können Sie eine `.csv`-Datei ho
 
 **Tool zur Benutzersynchronisierung**
 
-Mit dem Tool zur Benutzersynchronisierung (kurz UST) können unsere Unternehmenskunden Adobe-Benutzer mithilfe von Active Directory erstellen und verwalten. Dies funktioniert auch für andere getestete OpenLDAP-Verzeichnisdienste. Die Zielbenutzer sind IT-Identitätsadministratoren (Enterprise-Verzeichnis- oder Systemadministratoren), die das Tool installieren und konfigurieren können. Das Open Source-Tool ist anpassbar, sodass Sie das Tool an die eigenen Anforderungen anpassen können.
+Mit dem Tool zur Benutzersynchronisierung (kurz UST) können unsere Unternehmenskunden Adobe-Benutzer mithilfe von Active Directory erstellen und verwalten. Dies funktioniert auch für andere getestete OpenLDAP-Verzeichnis-Services. Die Zielbenutzer sind IT-Identitätsadministratoren (Enterprise-Verzeichnis- oder Systemadministratoren), die das Tool installieren und konfigurieren können. Das Open Source-Tool ist anpassbar, sodass Sie das Tool an die eigenen Anforderungen anpassen können.
 
 Wenn die Benutzersynchronisierung ausgeführt wird, ruft das Tool eine Liste der Benutzer aus dem Active Directory des Unternehmens ab und vergleicht sie mit der Liste der Benutzer in der Admin Console.  Anschließend ruft es die Adobe User Management-API auf, damit die Admin Console mit dem Verzeichnis der Organisation synchronisiert wird. Der Änderungsfluss ist einseitig. Änderungen, die in der Admin Console vorgenommen wurden, werden nicht in das Verzeichnis übertragen.
 
