@@ -5,7 +5,7 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken u
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, mobile Anwendung oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Pluszeichen (+) oder auf **Erlebnis hinzufügen** klicken und den Erlebnistyp auswählen.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Pluszeichen (+) oder auf **Erlebnis hinzufügen** klicken und den Erlebnistyp auswählen.
 
 ![Erlebnis hinzufügen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -157,11 +157,11 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* Ein [Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md) - Ein Referenzbeispiel für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
+* [Ein Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt   {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt  {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
@@ -174,7 +174,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
-| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users` -Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um ein Projekt erstellen und Assets verschieben zu können) |
+| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users`-Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um ein Projekt erstellen und Assets verschieben zu können) |
 
 >[!NOTE]
 >
