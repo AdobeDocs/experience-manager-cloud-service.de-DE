@@ -8,7 +8,7 @@ role: Administrator
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,4 +18,4 @@ ht-degree: 84%
 + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
 + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [IMS-Unterstützung für AEM as a Cloud Service](ims-support.md)
-+ [Selbe Site-Cookie-Unterstützung für AEM als Cloud Service](/help/security/same-site-cookie-support.md)
++ [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
