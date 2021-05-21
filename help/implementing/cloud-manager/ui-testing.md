@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Testen der Benutzeroberfläche"
->abstract="Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Das Docker-Image kann mit Standard-Tools erstellt werden, muss jedoch bei der Ausführung bestimmte Konventionen einhalten. Beim Ausführen des Docker-Images wird automatisch ein Selenium-Server bereitgestellt. Die unten beschriebenen Laufzeitkonventionen ermöglichen es Ihrem Test-Code, sowohl auf den Selenium-Server als auch auf die AEM-Instanzen zuzugreifen, die derzeit getestet werden."
+>abstract="Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Das Docker-Image kann mit Standard-Tools erstellt werden, muss jedoch bei der Ausführung bestimmte Konventionen einhalten. Beim Ausführen des Docker-Images wird automatisch ein Selenium-Server bereitgestellt. Die unten beschriebenen Laufzeitkonventionen ermöglichen es Ihrem Test-Code, sowohl auf den Selenium-Server als auch auf die AEM-Instanzen zuzugreifen, die derzeit getestet werden."
 
-Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl in Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Das Docker-Image kann mit Standard-Tools erstellt werden, muss jedoch bei der Ausführung bestimmte Konventionen einhalten. Beim Ausführen des Docker-Images wird automatisch ein Selenium-Server bereitgestellt. Die unten beschriebenen Laufzeitkonventionen ermöglichen es Ihrem Test-Code, sowohl auf den Selenium-Server als auch auf die AEM-Instanzen zuzugreifen, die derzeit getestet werden.
+Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Das Docker-Image kann mit Standard-Tools erstellt werden, muss jedoch bei der Ausführung bestimmte Konventionen einhalten. Beim Ausführen des Docker-Images wird automatisch ein Selenium-Server bereitgestellt. Die unten beschriebenen Laufzeitkonventionen ermöglichen es Ihrem Test-Code, sowohl auf den Selenium-Server als auch auf die AEM-Instanzen zuzugreifen, die derzeit getestet werden.
 
 >[!NOTE]
-> Die vor dem 10. Februar 2021 erstellten Staging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen UI-Tests verwendet werden können.
-> Informationen zur Pipelinekonfiguration finden Sie unter [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) .
+> Die vor dem 10. Februar 2021 erstellten Straging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen Benutzeroberflächentests verwendet werden können.
+> Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
@@ -111,7 +111,7 @@ Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu e
 
 Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dies garantiert ein kleineres Archiv und schnellere Builds.
 
-Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, der das Docker-Image mit Ihren Tests während der Bereitstellungs-Pipelines erstellt. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für Ihre Anwendung auszuführen.
+Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, der das Docker-Image mit Ihren Tests während der Bereitstellungs-Pipelines erstellt. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für das Programm auszuführen.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 
@@ -149,7 +149,7 @@ Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von
 
 ### Hochladen von Dateien (#upload-files)
 
-Tests müssen manchmal Dateien in die zu testende Anwendung hochladen. Um den Einsatz von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen durchläuft das Hochladen einer Datei einige Zwischenschritte:
+Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Einsatz von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen durchläuft das Hochladen einer Datei einige Zwischenschritte:
 
 1. Laden Sie die Datei unter der von der Umgebungsvariablen `UPLOAD_URL` angegebenen URL hoch. Der Upload muss in einer POST-Anfrage mit einem mehrteiligen Formular durchgeführt werden. Das mehrteilige Formular muss über ein einziges Dateifeld verfügen. Dies entspricht `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Informationen zum Ausführen einer solchen HTTP-Anfrage finden Sie in der Dokumentation und in den Bibliotheken der im Docker-Image verwendeten Programmiersprache.
-2. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle. Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrer Anwendung zu testen.
+2. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle. Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
