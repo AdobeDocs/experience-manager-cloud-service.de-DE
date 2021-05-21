@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2032'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team
 
 >[!NOTE]
 >
->Die in diesem Dokument beschriebenen Funktionen sollen mit der AEM-Version von [März 2021 als Cloud Service verfügbar gemacht werden.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
+>Die in diesem Dokument beschriebenen Funktionen werden voraussichtlich mit der AEM as a Cloud Service-Version [vom März 2021 verfügbar gemacht werden.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
 
 ## Einführung {#introduction}
 
@@ -47,20 +47,20 @@ Mit PWA verfügt der Benutzer über eine lokale Kopie der Website, die auch ohne
 
 ## Voraussetzungen {#prerequisites}
 
-Damit Sie die PWA-Funktionen für Ihre Site nutzen können, muss Ihre Projektumgebung 2 Voraussetzungen erfüllen:
+Damit Sie die PWA-Funktionen für Ihre Site nutzen können, muss Ihre Projektumgebung zwei Voraussetzungen erfüllen:
 
-1. [Verwenden Sie ](#adjust-components) Kernkomponenten, um diese Funktion zu nutzen.
+1. [Verwenden der Kernkomponenten](#adjust-components), um diese Funktion zu nutzen.
 1. [Anpassen der Dispatcher-Regeln](#adjust-dispatcher), um die erforderlichen Dateien verfügbar zu machen.
 
 Dies sind technische Schritte, die der Autor mit dem Entwicklungs-Team koordinieren muss. Diese Schritte sind nur einmal pro Site erforderlich.
 
-### Verwenden Sie die Kernkomponenten {#adjust-components}
+### Verwenden der Kernkomponenten {#adjust-components}
 
-Kernkomponentenversion 2.15.0 und höher unterstützt vollständig die PWA-Funktionen von AEM Sites. Da AEMaaCS immer die neueste Version der Kernkomponenten enthält, können Sie PWA-Funktionen sofort nutzen. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
+Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AEM Sites vollständig. Da AEMaaCS immer die neueste Version der Hauptkomponenten enthält, können Sie die PWA-Funktionen sofort nutzen. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
 
 >[!NOTE]
 >
->Adobe rät von der Verwendung der PWA-Funktionen für benutzerdefinierte Komponenten oder Komponenten ab, die nicht [von den Kernkomponenten erweitert wurden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
+>Es wird nicht empfohlen, die PWA-Funktionen für benutzerdefinierte Komponenten oder Komponenten zu verwenden, die nicht [ausgehend von den Kernkomponenten erweitert wurden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -97,7 +97,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-Abhängig von Ihrem Projekt können Sie verschiedene Arten von Erweiterungen zu den Neuschreibungsregeln hinzufügen. Die `webmanifest`-Erweiterung kann nützlich sein, um sie in die Umschreibungsbedingungen einzubeziehen, wenn Sie eine Regel eingeführt haben, die Anforderungen an `/content/<projectName>` ausblendet und umleitet.
+Je nach Projekt sollten Sie verschiedene Arten von Erweiterungen in die Rewrite-Regeln einbeziehen. Es kann nützlich sein, die Erweiterung `webmanifest` in die Rewrite-Bedingungen einzuschließen, wenn Sie eine Regel zum Ausblenden und Weiterleiten von Anfragen an `/content/<projectName>` einführen.
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -139,8 +139,8 @@ Ihre Site ist jetzt konfiguriert und Sie können sie [als lokale App installiere
 Nachdem Sie [Ihre Site für die Unterstützung von PWA konfiguriert haben](#enabling-pwa-for-your-site), können Sie sie selbst ausprobieren.
 
 1. Rufen Sie die Site in einem [unterstützten Browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary) auf.
-1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das angibt, dass die Site als lokale App installiert werden kann.
-   * Je nach Browser kann das Symbol variieren und der Browser kann auch eine Benachrichtigung anzeigen (z. B. ein Banner oder ein Dialogfeld), die angibt, dass eine Installation als lokale App möglich ist.
+1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das darauf hinweist, dass die Site als lokale App installiert werden kann.
+   * Je nach Browser kann das Symbol variieren und im Browser wird möglicherweise auch eine Benachrichtigung angezeigt (z. B. ein Banner oder ein Dialogfeld), die darauf hinweist, dass eine Installation als lokale App möglich ist.
 1. Installieren Sie das Programm.
 1. Die App wird auf dem Startbildschirm Ihres Geräts installiert.
 1. Öffnen Sie die App, navigieren Sie ein wenig und stellen Sie sicher, dass die Seiten offline verfügbar sind.
@@ -178,7 +178,7 @@ Mit diesen Einstellungen kann sich die Website wie eine native Mobile App verhal
    * Verwenden Sie das Farbfeld-Popup, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
    * Bestimmte Browser [bauen einen Startbildschirm automatisch](https://developer.mozilla.org/de-DE/docs/Web/Manifest#Splash_screens) aus dem App-Namen, der Hintergrundfarbe und dem Symbol auf.
-* **Symbol**: Hiermit wird [das Symbol](https://developer.mozilla.org/de-DE/docs/Web/Manifest/icons) definiert, das die App auf dem Gerät des Benutzers darstellt.
+* **Symbol**: Hiermit wird [das Symbol](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) definiert, das die App auf dem Gerät des Benutzers darstellt.
    * Das Symbol muss eine PNG-Datei mit einer Größe von 512 x 512 Pixeln sein.
    * Das Symbol muss [im DAM gespeichert sein.](/help/assets/overview.md)
 
@@ -201,31 +201,31 @@ Mit diesen Einstellungen werden Teile der Website offline und lokal auf dem Ger�
 >
 >Ihr Entwickler-Team hat wahrscheinlich wertvolle Hinweise dazu, wie Ihre Offline-Konfiguration eingerichtet werden sollte.
 
-## Einschränkungen und Recommendations {#limitations-recommendations}
+## Einschränkungen und Empfehlungen {#limitations-recommendations}
 
 Nicht alle PWA-Funktionen sind für AEM Sites verfügbar. Hier sind einige nennenswerte Einschränkungen.
 
 * Seiten werden nicht automatisch synchronisiert oder aktualisiert, wenn der Benutzer die App nicht verwendet.
 
-Adobe gibt auch die folgenden Empfehlungen aus, wenn Sie PWA implementieren.
+Bei der Implementierung von PWA empfiehlt Adobe außerdem Folgendes.
 
 ### Minimieren Sie die Anzahl der Ressourcen, die vorab zwischengespeichert werden sollen. {#minimize-precache}
 
-Adobe empfiehlt, die Anzahl der Seiten zu begrenzen, die vorab zwischengespeichert werden sollen.
+Adobe empfiehlt, die Anzahl der Seiten, die vorab zwischengespeichert werden, zu begrenzen.
 
-* Betten Sie Bibliotheken ein, um die Anzahl der Einträge zu reduzieren, die bei der Zwischenspeicherung verwaltet werden sollen.
-* Begrenzen Sie die Anzahl der Bildvarianten auf die Zwischenspeicherung.
+* Betten Sie Bibliotheken ein, um die Anzahl der Einträge zu reduzieren, die beim Vorab-Caching verwaltet werden müssen.
+* Schränken Sie die Anzahl der Bildvarianten ein, die vorab zwischengespeichert werden sollen.
 
 ### Aktivieren Sie PWA, nachdem die Projektskripte und Stylesheets stabilisiert wurden. {#pwa-stabilized}
 
-Client-Bibliotheken werden mit dem Hinzufügen eines Cache-Selektors bereitgestellt, der das folgende Muster `lc-<checksumHash>-lc` berücksichtigt. Jedes Mal, wenn sich eine der Dateien (und Abhängigkeiten), aus denen eine Bibliothek besteht, ändert sich dieser Selektor. Wenn Sie eine Client-Bibliothek aufgelistet haben, die vom Service-Worker vorab zwischengespeichert werden soll, und auf eine neue Version verweisen möchten, rufen Sie den Eintrag manuell ab und aktualisieren Sie ihn. Daher empfehlen wir Ihnen, Ihre Website so zu konfigurieren, dass sie nach der Stabilisierung der Projektskripte und Stylesheets als PWA fungiert.
+Client-Bibliotheken werden mit dem Zusatz eines Cache-Selektors bereitgestellt, der dem folgenden Muster `lc-<checksumHash>-lc` folgt. Jedes Mal, wenn eine der Dateien (und Abhängigkeiten), aus denen eine Bibliothek besteht, geändert wird, ändert sich auch dieser Selektor. Wenn Sie eine Client-Bibliothek aufgelistet haben, die vom Service Worker vorab zwischengespeichert werden soll, und Sie auf eine neue Version verweisen möchten, rufen Sie den Eintrag manuell ab und aktualisieren Sie ihn. Daher empfehlen wir Ihnen, Ihre Site nach der Stabilisierung der Projektskripte und Stylesheets als PWA zu konfigurieren.
 
 ### Minimieren Sie die Anzahl der Bildvarianten. {#minimize-variations}
 
-Die Bildkomponente der AEM Kernkomponenten legt fest, welches Frontend die beste Ausgabedarstellung ist, die abgerufen werden soll. Dieser Mechanismus enthält auch einen Zeitstempel, der dem Zeitpunkt der letzten Änderung dieser Ressource entspricht. Dieser Mechanismus kompliziert die Konfiguration des PWA-Pre-Cache.
+Die Bildkomponente der AEM-Kernkomponenten bestimmt eine der Frontend-Ausgabedarstellungen, die Sie am besten abrufen können. Dieser Mechanismus enthält auch einen Zeitstempel, der den Zeitpunkt der letzten Änderung dieser Ressource angibt. Durch diesen Mechanismus wird die Konfiguration des PWA-Vorab-Cachings komplizierter.
 
-Beim Konfigurieren des Pre-Cache muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird dringend empfohlen, die Anzahl dieser Varianten auf maximal drei - kleine, mittlere, große - zu reduzieren. Dies ist über das Dialogfeld &quot;content-policy&quot;der [Bildkomponente.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) möglich.
+Beim Konfigurieren des Vorab-Cachings muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird dringend empfohlen, die Anzahl dieser Varianten auf maximal drei zu beschränken: klein, mittel, groß. Dies können Sie über das Dialogfeld für die Inhaltsrichtlinie der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) angeben.
 
-Wenn Sie nicht sorgfältig konfiguriert sind, kann der Speicher- und Netzwerkverbrauch die Leistung Ihrer PWA stark beeinträchtigen. Wenn Sie z. B. 50 Bilder zwischenspeichern möchten und 3 Breiten pro Bild haben möchten, muss der Benutzer, der die Site verwaltet, eine Liste mit bis zu 150 Einträgen im Bereich PWA vor dem Cache der Seiteneigenschaften verwalten.
+Wenn der Speicher- und Netzwerkverbrauch nicht sorgfältig konfiguriert wird, kann dies die Leistung Ihrer PWA erheblich beeinträchtigen. Wenn Sie z. B. 50 Bilder vorab zwischenspeichern möchten und pro Bild drei Breiten haben, muss der Benutzer, der die Site wartet, eine Liste von bis zu 150 Einträgen im Bereich des PWA-Vorab-Cachings der Seiteneigenschaften verwalten.
 
-Adobe empfiehlt Ihnen auch, Ihre Website als PWA zu konfigurieren, nachdem die Projektnutzung von Bildern stabilisiert wurde.
+Adobe empfiehlt Ihnen auch, Ihre Site so zu konfigurieren, dass sie eine PWA ist, nachdem sich die Verwendung der Bilder im Projekt stabilisiert hat.
