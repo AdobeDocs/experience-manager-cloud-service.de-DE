@@ -7,12 +7,12 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# [!DNL Assets]-Anleitung  {#assets}
+# [!DNL Assets]-Anleitung {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
@@ -26,7 +26,7 @@ ht-degree: 98%
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
    + [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
-   + [Suchen von Assets ](search-assets.md)
+   + [Suchen von Assets](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
@@ -65,7 +65,7 @@ ht-degree: 98%
 + Freigeben und Verteilen von Assets {#brand-portal}
    + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Veröffentlichen von Assets  [!DNL Brand Portal] von in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
+   + [Veröffentlichen von Assets von [!DNL Brand Portal] zu [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
    + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](content-fragments/content-fragments-graphql.md)
@@ -83,7 +83,7 @@ ht-degree: 98%
    + [Dynamic Media Newsletter von Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
-   + [Konfigurieren von Dynamic Media ](dynamic-media/config-dm.md)
+   + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
    + [Fehlerbehebung bei Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Barrierefreiheit in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
@@ -100,7 +100,7 @@ ht-degree: 98%
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Smart Imaging](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Aktivieren des Hotlink-Schutzes in Dynamic Media  ](dynamic-media/hotlink-protection.md)
+   + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
    + [Bildsets](dynamic-media/image-sets.md)
    + [Panoramabilder](dynamic-media/panoramic-images.md)
@@ -123,5 +123,5 @@ ht-degree: 98%
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](dynamic-media/http2faq.md)
-   + [Einstellung von Flash-Viewer](dynamic-media/flash-viewers-eol.md)
-   + [Ende der Unterstützung für DHTML-Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
+   + [Einstellung von Flash Viewer](dynamic-media/flash-viewers-eol.md)
+   + [Einstellung von DHTML Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
