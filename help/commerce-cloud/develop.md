@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Die Entwicklung von AEM Commerce-Projekten basierend auf Commerce Integration Fr
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohlen. Das CIF-Add-on für AEM als Cloud Service steht auch für die lokale Entwicklung zur Verfügung. Es kann vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) heruntergeladen werden.
+Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohlen. Das für AEM as a Cloud Service bereitgestellte CIF-Add-on ist auch für die lokale Entwicklung verfügbar. Es kann vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) heruntergeladen werden.
 
 Das CIF-Add-on wird als Sling Feature-Archiv bereitgestellt. Die im Software Distribution-Portal verfügbare Zip-Datei enthält zwei Sling Feature-Archivdateien, eine für AEM-Autoren- und eine für AEM-Veröffentlichungsinstanzen.
 
