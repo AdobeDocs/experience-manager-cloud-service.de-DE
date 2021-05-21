@@ -5,7 +5,7 @@ exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 58%
+ht-degree: 75%
 
 ---
 
@@ -26,7 +26,7 @@ Zeigt an, dass Ihr SSL-Zertifikat trotz mehrfacher Benachrichtigungen abgelaufen
 
 ## Vorbestehende CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
 
-Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Nachricht verschwindet, sobald der Kunde alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche vollständig migriert hat. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
+Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann ein bis zwei Werktage dauern, bis die Meldung ausgeblendet wird.
 
 >[!NOTE]
 >Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
