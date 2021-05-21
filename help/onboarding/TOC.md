@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 # Einstieg {#onboarding}
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
-+ Erste Schritte mit AEM als Cloud Service {#what-is-required}
++ Erste Schritte mit AEM as a Cloud Service {#what-is-required}
    + [Adobe ID herunterladen](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager-Rollen](what-is-required/user-roles-permissions.md)
    + [Systemadministratoraufgaben](what-is-required/add-users-assign-cm-roles.md)
@@ -36,7 +36,7 @@ ht-degree: 92%
       + [Ruhezustand und Reaktivieren von Sandbox-Umgebungen](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de)
-      + [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de)
+      + [Konfigurieren Ihrer CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de)
       + [Bereitstellen des Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
       + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=de)
@@ -105,6 +105,6 @@ ht-degree: 92%
 + Best Practices {#best-practices}
    + [SEO und URL-Verwaltung](best-practices/seo-and-url-management.md)
    + [Bewerten von KPIs](best-practices/assessing-kpis.md)
-   + [KPIs ausrichten](best-practices/aligning-kpis.md)
-   + [Auswahl des richtigen Teams](best-practices/choose-right-team.md)
+   + [Ausrichten von KPIs](best-practices/aligning-kpis.md)
+   + [Wählen des richtigen Teams](best-practices/choose-right-team.md)
 + [Überblick über die Tools-Konsolen](tools-consoles.md)
