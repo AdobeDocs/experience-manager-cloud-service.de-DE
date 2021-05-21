@@ -5,7 +5,7 @@ exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wen
 
 ## Verwendung von SSR {#when-to-use-ssr}
 
-SSR ist nicht bei allen Projekten erforderlich. Obwohl AEM JS SSR für SPA vollständig unterstützt, empfiehlt Adobe nicht, es systematisch für jedes Projekt zu implementieren.
+SSR ist nicht bei allen Projekten erforderlich. Obwohl JS SSR für SPAs von AEM voll unterstützt wird, empfiehlt Adobe nicht, sie systematisch für jedes Projekt zu implementieren.
 
 Wenn Sie sich für die Implementierung von SSR entscheiden, müssen Sie zunächst abschätzen, welche zusätzliche Komplexität, welchen Aufwand und welche Kosten das Hinzufügen von SSR für das Projekt realistisch darstellt, einschließlich der langfristigen Wartung. Eine SSR-Architektur sollte nur dann gewählt werden, wenn der Mehrwert die geschätzten Kosten deutlich übersteigt.
 
@@ -59,7 +59,7 @@ Dies geschieht über den **RemoteContentRenderer – Configuration Factory OSGi-
 Folgende Felder stehen für die Konfiguration zur Verfügung:
 
 * **Inhaltspfadmuster**: Regulärer Ausdruck, um bei Bedarf einen Inhaltsbereich zuzuordnen
-* **Remote-Endpunkt-URL**  - URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
+* **Remote-Endpunkt-URL**: URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
    * Verwenden Sie das gesicherte HTTPS-Protokoll, wenn Sie sich nicht im lokalen Netzwerk befinden.
 * **Zusätzliche Anfrage-Header**: Zusätzliche Header, die der an den Remote-Endpunkt gesendeten Anfrage hinzugefügt werden.
    * Muster: `key=value`
