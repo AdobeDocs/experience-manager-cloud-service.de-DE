@@ -5,7 +5,7 @@ exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 58%
+ht-degree: 94%
 
 ---
 
@@ -23,39 +23,39 @@ ht-degree: 58%
 
 Im Rahmen der Umstellung auf Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzer und Gruppen aus Ihrem bestehenden AEM-System in AEM as a Cloud Service überführen. Verwenden Sie hierzu das Content Transfer Tool.
 
-Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene. Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerprofilinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das eine einmalige Anmeldung für alle Adobe Cloud-Programme ermöglicht. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzer und Gruppen in der Cloud Service-Autoreninstanz zu vermeiden.
+Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.  Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerprofilinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das eine einmalige Anmeldung für alle Adobe Cloud-Programme ermöglicht. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzer und Gruppen in der Cloud Service-Autoreninstanz zu vermeiden.
 
 ## Wichtige Überlegungen {#important-considerations}
 
 ### Ausnahmefälle {#exceptional-cases}
 
-Die folgenden spezifischen Fälle werden protokolliert:
+Die folgenden Sonderfälle werden protokolliert:
 
-1. Wenn ein Benutzer keine E-Mail-Adresse im `profile/email`-Feld seines *jcr*-Knotens hat, wird der betreffende Benutzer oder die fragliche Gruppe migriert, aber nicht zugeordnet.
+1. Wenn ein Benutzer keine E-Mail-Adresse im `profile/email`-Feld seines *jcr*-Knotens hat, wird der betreffende Benutzer oder die betreffende Gruppe migriert, jedoch nicht zugeordnet.
 
-1. Wenn eine E-Mail nicht im Adobe Identity Management System (IMS) für die verwendete Organisations-ID gefunden wird (oder wenn die IMS-ID aus einem anderen Grund nicht abgerufen werden kann), wird der betreffende Benutzer oder die betroffene Gruppe migriert, aber nicht zugeordnet.
+1. Wenn eine bestimmte E-Mail im Adobe Identity Management System (IMS) für die verwendete Organisations-ID nicht gefunden wird (oder wenn die IMS-ID aus einem anderen Grund nicht abgerufen werden kann), wird der betreffende Benutzer oder die betreffende Gruppe migriert, aber nicht zugeordnet.
 
 1. Wenn der Benutzer derzeit deaktiviert ist, wird er genauso behandelt, als wäre er nicht deaktiviert. Er wird normal zugeordnet und migriert und bleibt in der Cloud-Instanz deaktiviert.
 
-1. Wenn ein Cloud Service in der Ziel-AEM-Instanz mit demselben Benutzernamen (rep:principalName) wie einer der  in der Quell-AEM-Instanz vorhanden ist, wird der betreffende Benutzer bzw. die betreffende Gruppe nicht migriert.
+1. Wenn auf der Ziel-AEM Cloud Service-Instanz ein Benutzer mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer in der Quell-AEM-Instanz vorhanden ist, wird der betreffende Benutzer oder die betreffende Gruppe nicht migriert.
 
 ### Weitere Überlegungen {#additional-considerations}
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** festgelegt ist, werden bereits übertragene Cloud Service in der-Instanz zusammen mit dem gesamten vorhandenen Repository gelöscht und ein neues Repository erstellt, in das Inhalte aufgenommen werden. Dadurch werden auch alle Einstellungen zurückgesetzt, einschließlich Berechtigungen für die Ziel-Cloud Service-Instanz, und der Administratorbenutzer, der der Gruppe **administrators** hinzugefügt wurde, erhält die Berechtigung &quot;true&quot;. Der Admin-Benutzer muss der Gruppe **administrators** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** festgelegt ist, werden bereits übertragene Benutzer in der Cloud Service-Instanz gelöscht und das gesamte vorhandene Repository wird neu erstellt, um Inhalte zu erfassen. Dadurch werden auch alle Einstellungen einschließlich der Berechtigungen für die Ziel-Cloud Service-Instanz zurückgesetzt. Dies gilt für einen Administrator, der der Gruppe **Administratoren** hinzugefügt wurde. Der Administrator muss der Gruppe **Administratoren** erneut hinzugefügt werden, um das Zugriffs-Token für CTT abzurufen.
 
-* Es wird empfohlen, bestehende Cloud Service aus der Ziel-AEM-Instanz zu entfernen, bevor CTT mit User Mapping ausgeführt wird. Dadurch soll ein Konflikt zwischen der Migration von Benutzern aus der Quell-AEM-Instanz in die Ziel-AEM-Instanz verhindert werden. Konflikte treten während der Aufnahme auf, wenn der gleiche Benutzer in der Quell-AEM-Instanz und in der Ziel-AEM-Instanz vorhanden ist.
+* Es wird empfohlen, alle vorhandenen Benutzer aus der Ziel-AEM Cloud Service-Instanz zu entfernen, bevor CTT mit Benutzerzuordnung ausgeführt wird. Dies dient dazu, Konflikte zwischen migrierenden Benutzern der Quell-AEM-Instanz und der Ziel-AEM-Instanz zu vermeiden. Die Konflikte treten während der Aufnahme auf, wenn derselbe Benutzer in der Quell-AEM-Instanz und in der Zielgruppe-AEM-Instanz vorhanden ist.
 
-* Wenn Content-Auffüllungen durchgeführt werden und Inhalte nicht übertragen werden, da sie sich seit der vorherigen Übertragung nicht geändert haben, werden Benutzer und Gruppen, die mit diesem Inhalt verknüpft sind, auch dann nicht übertragen, wenn sich die Benutzer und Gruppen zwischenzeitlich geändert haben. Dies liegt daran, dass Benutzer und Gruppen zusammen mit den Inhalten, mit denen sie verknüpft sind, migriert werden.
+* Wenn beim Auffüllen von Inhalten der Inhalt nicht übertragen wird, weil er sich seit der vorherigen Übertragung nicht geändert hat, werden auch die mit diesem Inhalt verknüpften Benutzer und Gruppen nicht übertragen, selbst wenn sich die Benutzer und Gruppen in der Zwischenzeit geändert haben. Dies liegt daran, dass Benutzer und Gruppen zusammen mit dem Inhalt, mit dem sie verknüpft sind, migriert werden.
 
 * Die Aufnahme schlägt in den folgenden Szenarien fehl:
 
-1. Wenn die Ziel-AEM-Cloud Service-Instanz einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz hat.
+1. Wenn die Ziel-AEM Cloud Service-Instanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer auf der Quell-AEM-Instanz verfügt.
 
-1. Wenn es in der Quell-AEM-Instanz zwei Benutzer mit unterschiedlichen Benutzernamen, aber derselben E-Mail-Adresse gibt. AEM als Cloud Service erlaubt es zwei Benutzern nicht, dieselbe E-Mail-Adresse zu haben.
+1. Wenn sich in der Quell-AEM-Instanz zwei Benutzer mit unterschiedlichen Benutzernamen, aber derselben E-Mail-Adresse befinden. Mit AEM as a Cloud Service können nicht zwei Benutzer dieselbe E-Mail-Adresse haben.
 
 ## Verwenden des User Mapping Tools {#using-user-mapping-tool}
 
-Das Tool für die Benutzerzuordnung verwendet eine API, mit der Adobe Identity Management System (IMS)-Benutzer per E-Mail nachschlagen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
+Das User Mapping Tool verwendet eine API, über die Sie anhand der E-Mail-Adresse nach Benutzern im Adobe Identity Management System (IMS) suchen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
 
 Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
@@ -87,7 +87,7 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
    * **Org ID**: Geben Sie die Organisations-ID aus dem Adobe Identity Management System (IMS) für das Unternehmen ein, deren Anwender migriert werden.
 
       >[!NOTE]
-      >Um die Organisations-ID abzurufen, melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und wählen Sie rechts oben Ihr Unternehmen, wenn Sie zu mehren gehören. Die Organisations-ID befindet sich in der URL der Seite und hat das Format `xx@AdobeOrg`, wobei xx die IMS-Organisations-ID ist. Alternativ können Sie die Organisations-ID auf der Seite [Adobe Developer Console](https://console.adobe.io) suchen, auf der Sie das Zugriffs-Token generieren.
+      >Um die Organisations-ID abzurufen, melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und wählen Sie rechts oben Ihr Unternehmen, wenn Sie zu mehren gehören. Die Organisations-ID befindet sich in der URL der Seite und hat das Format `xx@AdobeOrg`, wobei xx die IMS-Organisations-ID ist.  Alternativ können Sie die Organisations-ID auf der Seite [Adobe Developer Console](https://console.adobe.io) suchen, auf der Sie das Zugriffs-Token generieren.
 
    * **Client ID**: Geben Sie die Client-ID ein, die Sie im Setup-Schritt gespeichert haben.
 
