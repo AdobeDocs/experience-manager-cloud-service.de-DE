@@ -7,7 +7,7 @@ exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 67%
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen können, ist davon abhängig, wie Ihre Website implementiert ist.
 
-Dynamic Media bietet mehrere Optionen:
+Mit Dynamic Media haben Sie mehrere Optionen:
 
 * Wenn Ihre Website auf Adobe Experience Manager gehostet wird, möchten Sie die Dynamic Media-Assets direkt zu Ihrer Seite hinzufügen.
 * Wenn Ihre Website nicht auf einem Experience Manager ist, können Sie eine der folgenden Optionen wählen:
@@ -26,13 +26,13 @@ Dynamic Media bietet mehrere Optionen:
 
 >[!NOTE]
 >
->Intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben. Es verwendet Intelligenz in der letzten Millisekunde des Versands, um die Größe der Bilddatei je nach Browser- oder Netzwerkverbindungsgeschwindigkeit weiter zu reduzieren. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
+>Die intelligente Bildbearbeitung funktioniert mit Ihren vorhandenen Bildvorgaben. Sie nutzt die intelligenten Funktionen ganz zum Schluss, um die Größe der Bilddatei abhängig vom Browser oder der Geschwindigkeit der Netzverbindung noch weiter zu verringern. Weitere Informationen finden Sie unter [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Hinzufügen von Dynamic Media-Assets zu Web-Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md)
-* [Aktivieren des Hotlink-Schutzes in Dynamic Media  ](/help/assets/dynamic-media/hotlink-protection.md)
+* [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/dynamic-media/responsive-site.md)
 * [Bereitstellung von Inhalt über HTTP/2 ](/help/assets/dynamic-media/http2faq.md)
@@ -44,4 +44,4 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
-Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur Bereitstellung von Inhalten über HTTP/2](/help/assets/dynamic-media/http2faq.md).
+Weitere Informationen finden Sie unter [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/assets/dynamic-media/http2faq.md).
