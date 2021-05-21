@@ -7,7 +7,7 @@ exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste die Dropdownliste aus und tippen Sie auf **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste die Dropdown-Liste aus und tippen Sie auf **[!UICONTROL Viewer]**.
 1. Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Tippen Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und tippen Sie dann auf **[!UICONTROL Schließen]**.
@@ -51,6 +51,6 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
 ## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 ist das neue, aktualisierte Webprotokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
+HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
 Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic Media-Konto finden Sie unter [Bereitstellung von Inhalt über HTTP/2](http2faq.md).
