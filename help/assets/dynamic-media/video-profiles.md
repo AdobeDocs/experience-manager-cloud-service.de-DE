@@ -7,7 +7,7 @@ exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '3665'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -55,7 +55,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate  (Kbit/s)</strong></td>
+   <td><strong>Audiobitrate (Kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
