@@ -97,7 +97,7 @@ Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tast
 | Asset oder Ordner ist ausgewählt | `e` | Bearbeiten Sie das ausgewählte Asset. |
 | Asset oder Ordner ist ausgewählt | `m` | Verschieben Sie das ausgewählte Asset. |
 | Asset oder Ordner ist ausgewählt | `Ctrl + c` | Kopieren Sie das ausgewählte Asset. |
-| Asset oder Ordner ist ausgewählt | `Esc` | Abbrechen der Auswahl. |
+| Asset oder Ordner ist ausgewählt | `Esc` | Brechen Sie die Auswahl ab. |
 | Das Dialogfeld wird geöffnet und befindet sich im Fokus. | `Esc` | Schließen Sie das Dialogfeld. |
 | Innerhalb eines Ordners in DAM | `Ctrl + v` | Fügen Sie das kopierte Asset ein. |
 | [!DNL Assets]-Konsole | `Ctrl + A` | Wählen Sie alle Assets aus. |
