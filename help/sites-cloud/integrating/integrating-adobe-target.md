@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 67%
+ht-degree: 82%
 
 ---
 
@@ -34,31 +34,31 @@ Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaft
 4. Geben Sie die Details ein (siehe unten) und wählen Sie **Verbinden** aus.
    ![Verbinden](assets/open_screen1.png "Verbinden")
 
-### IMS-Konfiguration {#ims-configuration}
+### IMS-Konfiguration  {#ims-configuration}
 
 Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Sehen Sie sich [dieses Video](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) und [diese Seite](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/integration/integration-ims-adobe-io.html) an, um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
 ### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
-Beachten Sie beim Konfigurieren der Felder Adobe Target Mandanten-ID und Adobe Target Client Code Folgendes:
+Beachten Sie beim Konfigurieren der Felder für die Adobe Target-Mandanten-ID und den Adobe Target-Clientcode Folgendes:
 
-1. Für die meisten Kunden sind die Mandanten-ID und der Client-Code identisch. Das bedeutet, dass beide Felder die gleichen Informationen enthalten und identisch sind. Geben Sie die Mandantenkennung in beide Felder ein.
-2. Aus Legacy-Gründen können Sie auch verschiedene Werte in die Felder Mandanten-ID und Client-Code eingeben.
+1. Für die meisten Kunden sind die Mandanten-ID und der Clientcode identisch. Das bedeutet, dass beide Felder die gleichen Werte enthalten. Achten Sie darauf, dass Sie die Mandanten-ID in beide Felder eingeben.
+2. Sollten Sie über ältere Werte verfügen, können Sie auch verschiedene Werte in die Felder „Mandanten-ID“ und „Clientcode“ eingeben.
 
 Beachten Sie in beiden Fällen Folgendes:
 
 * Standardmäßig wird auch der Client-Code (wenn er zuerst hinzugefügt wird) automatisch in das Feld Mandanten-ID kopiert.
-* Sie haben die Möglichkeit, den standardmäßigen Mandanten-ID-Satz zu ändern.
-* Dementsprechend basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die clientseitigen Aufrufe an Target basieren auf dem Client-Code.
+* Sie haben die Möglichkeit, den Standardwert für die Mandanten-ID zu ändern.
+* Dementsprechend basieren die Backend-Target-Aufrufe auf der Mandanten-ID und die Client-seitigen Target-Aufrufe auf dem Clientcode.
 
-Wie bereits erwähnt, ist der erste Fall der häufigste Fall für AEM als Cloud Service. Stellen Sie in beiden Fällen sicher, dass die Felder **beide** je nach Ihren Anforderungen die richtigen Informationen enthalten.
+Wie bereits erwähnt, tritt der erste Fall in AEM as a Cloud Service häufiger auf. Stellen Sie in beiden Fällen sicher, dass die Felder **beide** je nach Ihren Anforderungen die richtigen Informationen enthalten.
 
 >[!NOTE]
 >
-> Wenn Sie eine vorhandene Target-Konfiguration ändern möchten:
+> Wenn Sie eine bestehende Target-Konfiguration ändern möchten:
 >
-> 1. Geben Sie die Mandantenkennung erneut ein.
-> 2. Stellen Sie eine erneute Verbindung zu Target her.
+> 1. Geben Sie die Mandanten-ID erneut ein.
+> 2. Stellen Sie zu Target eine neue Verbindung her.
 > 3. Speichern Sie die Konfiguration.
 
 
