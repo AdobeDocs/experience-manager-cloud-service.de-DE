@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 6%
 
 ---
@@ -54,19 +54,17 @@ Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, in die die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads.
+* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, in die die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md).
 
-* Wenn ein Asset über die Option &quot;linkshare&quot;heruntergeladen wird, können Sie jetzt auswählen, ob Sie die Ausgabedarstellungen herunterladen oder nicht. Zuvor wurden alle Asset-Ausgabedarstellungen heruntergeladen.
-
-* Administratoren können [!DNL Experience Manager] so konfigurieren, dass die Quelle von Assets nach der Erfassung von Assets in Batches gelöscht wird. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Wenn Sie ein Asset über eine Linkfreigabe-Option herunterladen, können Sie jetzt auswählen, ob Sie die Ausgabedarstellungen herunterladen oder nicht. Zuvor wurden alle Asset-Ausgabedarstellungen heruntergeladen. Siehe [Download-Optionen](/help/assets/download-assets-from-aem.md).
 
 * Beim Ausführen einer Konsistenzprüfung zum Massenimport von Assets bietet Experience Manager jetzt weitere Informationen zu Fehlern. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Beim Importieren von Assets mit dem Tools für den Massenimport haben Administratoren jetzt die Möglichkeit, die Quelldateien zu löschen, nachdem der Import erfolgreich war. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Beim Bearbeiten eines Metadatenschemas ermöglicht ein neues Stammpfadauswahlfeld Administratoren die schnelle und einfache Auswahl, wodurch die Konfigurationszeit verkürzt wird.
+* Beim Bearbeiten eines Metadatenschemas ermöglicht ein neues Stammpfadauswahlfeld Administratoren die schnelle und einfache Auswahl. Diese Verbesserung trägt dazu bei, die Metadatenkonfigurationszeit zu reduzieren.
 
-* Metadaten vieler Assets können stapelweise mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift aktualisieren. Fügen Sie beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift in der CSV-Datei anstelle des Wortes `Date` hinzu.
+* Metadaten vieler Assets können stapelweise mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift aktualisieren. Fügen Sie beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift in der CSV-Datei anstelle des Wortes `Date` hinzu. Siehe [Metadaten importieren](/help/assets/metadata-import-export.md).
 
 * Beim Durchsuchen von Assets in der Spaltenansicht zeigt ein visueller Indikator den Status Genehmigt oder Zurückgewiesen für jedes Asset an.
 
