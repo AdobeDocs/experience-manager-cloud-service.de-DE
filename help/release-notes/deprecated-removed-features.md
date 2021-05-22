@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 46%
+source-wordcount: '448'
+ht-degree: 45%
 
 ---
 
@@ -43,4 +43,4 @@ In diesem Abschnitt werden Funktionen aufgelistet, die aus [!DNL Experience Mana
 | [!DNL Dynamic Media] | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=de#integration) und [Dynamic Media Hybridmodus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=de#dynamic) sind in [!DNL Experience Manager] nicht als [!DNL Cloud Service] verfügbar. | Verwenden Sie [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md), das mit [!DNL Experience Manager] als [!DNL Cloud Service] bereitgestellt wird. |
 | [!DNL Sites] | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen wurden in [!DNL Experience Manager] 6.4 nicht mehr unterstützt und wurden nun aus [!DNL Experience Manager] entfernt. |
 | [!DNL Sites] | Design-Import-Tool | Diese Funktion wurde entfernt, da unveränderliche Abschnitte des [!DNL Experience Manager]-Repositorys zur Laufzeit nicht verfügbar sind. |
-| [!DNL Assets] | [[!DNL Assets] Die Freigabe für Marketing Cloud Assets Core Service und Creative Cloud ](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/integration/configure-assets-cc-integration.html) Service ist nicht verfügbar. | Verwenden Sie für die Integration mit [!DNL Adobe Creative Cloud] [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). |
+| [!DNL Assets] | [!DNL Assets] Die Freigabe für Marketing Cloud Assets Core Service und Creative Cloud Services ist nicht verfügbar. | Verwenden Sie für die Integration mit [!DNL Adobe Creative Cloud] [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). |
