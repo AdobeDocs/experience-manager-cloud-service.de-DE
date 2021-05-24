@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 84%
+source-wordcount: '3242'
+ht-degree: 80%
 
 ---
 
@@ -165,6 +165,17 @@ Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** tippen.
 
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Beachten Sie, dass alle DSGVO-Werte für die intelligente Bildbearbeitung von Adobe Experience Manager Dynamic Media ignoriert werden.
+
+   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+   * Unter &quot;Vorgabetyp&quot;ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
+
+   ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Bildes.
 
 * **[!UICONTROL Alternativer Text]**  - Fügen Sie dem Bild einen Titel für die Benutzer hinzu, deren Grafiken deaktiviert sind.
@@ -178,7 +189,6 @@ Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie
 * **[!UICONTROL Breite]**  - Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
 * **[!UICONTROL Höhe]**  - Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
-
 
 #### Arbeiten mit Videos {#when-working-with-video}
 
@@ -232,6 +242,18 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**  - Damit Dynamic Media eine intelligente Zuschnittwiedergabe mit einem Seitenverhältnis wählen kann, das dem Seitenverhältnis des Originalbilds am besten entspricht, wählen Sie diese Option aus.
+
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Beachten Sie, dass alle DSGVO-Werte für die intelligente Bildbearbeitung von Adobe Experience Manager Dynamic Media ignoriert werden.
+
+   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+
+   * Unter &quot;Vorgabetyp&quot;ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
+
+   ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Smart-Zuschnitt-Bildes.
 
