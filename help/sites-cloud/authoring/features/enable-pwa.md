@@ -21,10 +21,8 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 >* Kenntnis der Site- und Inhaltsstruktur
 >* Verständnis von Caching-Strategien
 >* Unterstützung durch Ihr Entwicklungs-Team
-
 >
->
-Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team besprechen, um herauszufinden, wie Sie sie am besten für Ihr Projekt nutzen können.
+>Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team besprechen, um herauszufinden, wie Sie sie am besten für Ihr Projekt nutzen können.
 
 >[!NOTE]
 >
