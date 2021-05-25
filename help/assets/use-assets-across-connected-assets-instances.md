@@ -5,18 +5,18 @@ contentOwner: AG
 feature: Asset-Management,Connected Assets,Asset-Verteilung, Benutzer und Gruppen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 81%
+source-wordcount: '2966'
+ht-degree: 78%
 
 ---
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Implementierungen. Ein Grund kann die geografisch verteilte vorhandene Bereitstellung sein, die für die Zusammenarbeit erforderlich ist. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, die die übergeordnete Firma gemeinsam nutzen möchte.
+In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Implementierungen. Ein Grund kann die geografisch verteilte vorhandene Bereitstellung sein, die für die Zusammenarbeit erforderlich ist. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, einschließlich verschiedener [!DNL Experience Manager]-Versionen, die das übergeordnete Unternehmen gemeinsam nutzen möchte.
 
-Benutzer können Web-Seiten in [!DNL Experience Manager Sites] erstellen. [!DNL Experience Manager Assets] ist das DAM (Digital Asset Management)-System, das die erforderlichen Assets für Websites bereitstellt. [!DNL Experience Manager] unterstützt nun dank Integration von [!DNL Sites] und [!DNL Assets] das obige Nutzungsszenario.
+Die Funktion &quot;Connected Assets&quot;unterstützt den oben genannten Anwendungsfall durch die Integration von [!DNL Experience Manager Sites] und [!DNL Experience Manager Assets]. Benutzer können Web-Seiten in [!DNL Sites] erstellen, die die digitalen Assets aus einer separaten [!DNL Assets] -Bereitstellung verwenden.
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
@@ -127,13 +127,13 @@ Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
 1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote [!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen unter [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Verwenden Sie in allen Konfigurationen denselben Unternehmensnamen.
-   * Wählen Sie unter local [!DNL Sites] im Dynamic Media-Synchronisierungsmodus ] **[!UICONTROL Standardmäßig deaktiviert]** aus. [!UICONTROL  Die Sites-Bereitstellung benötigt nur schreibgeschützten Zugriff auf das [!DNL Dynamic Media]-Konto.
+   * Wählen Sie unter local [!DNL Sites] im Dynamic Media-Synchronisierungsmodus ] **[!UICONTROL Standardmäßig deaktiviert]** aus. [!UICONTROL  Die [!DNL Sites]-Implementierung benötigt nur schreibgeschützten Zugriff auf das [!DNL Dynamic Media]-Konto.
    * Wählen Sie unter local [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** die Option **[!UICONTROL Selektive Veröffentlichung]**. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]** aus.
    * Wählen Sie in der Remote-Bereitstellung [!DNL Assets] im Dynamic Media-Synchronisierungsmodus ] die Option **[!UICONTROL Standardmäßig aktiviert]**.[!UICONTROL 
 
 1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Webseiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
-## Verwenden von Remote-Assets  {#use-remote-assets}
+## Verwenden von Remote-Assets   {#use-remote-assets}
 
 Die Website-Autoren verwenden Content Finder zum Verbinden mit der DAM-Implemetierung. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
 
@@ -205,8 +205,9 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 * Lokale Assets werden nicht mit den ursprünglichen Assets auf der Remote-Implementierung synchronisiert. Das Ändern, Löschen oder Widerrufen von Berechtigungen auf der DAM-Implementierung wird nicht auf absteigende Hierarchien angewendet.
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
-* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. Inhaltsfragmente und Experience Fragments werden nicht unterstützt.
-* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn das Schema separat aktualisiert wird, werden alle Eigenschaften angezeigt.
+* Bei Verwendung von [!DNL Dynamic Media] auf [!DNL Sites] Seiten wird das ursprüngliche Asset nicht abgerufen und in der lokalen Implementierung gespeichert. Der Knoten `dam:Asset`, die Metadaten und Ausgabeformate, die von der [!DNL Assets]-Implementierung generiert werden, werden alle in der [!DNL Sites]-Implementierung abgerufen.
+* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Content Fragments] und  [!DNL Experience Fragments] werden nicht unterstützt.
+* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn das Schema bei der [!DNL Sites]-Bereitstellung separat aktualisiert wird, werden alle Metadateneigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren.
@@ -216,8 +217,8 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 * Die [!DNL Assets]-Implementierung auf [!DNL Adobe Managed Services] wird unterstützt.
 * [!DNL Sites] kann jeweils nur eine Verbindung zu einem [!DNL Assets]-Repository herstellen.
-* Eine Lizenz für [!DNL Assets], die als Remote-Repository dient.
-* Eine oder mehrere Lizenzen für [!DNL Sites], die als lokale Autorenimplementierung dienen.
+* Eine Lizenz von [!DNL Assets], die als Remote-Repository verwendet wird, ist erforderlich.
+* Eine oder mehrere Lizenzen von [!DNL Sites], die als lokale Autorenbereitstellung dienen, sind erforderlich.
 
 ### Nutzung {#usage}
 
