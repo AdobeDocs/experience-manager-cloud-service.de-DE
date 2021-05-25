@@ -2,9 +2,9 @@
 title: Externalisieren von URLs
 description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert in eine externe und absolute URL umwandeln können.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 15%
 
 ---
@@ -19,7 +19,7 @@ In diesem Artikel wird beschrieben, wie Sie den Externalizer-Dienst konfiguriere
 
 ## Standardverhalten des Externalizers und Überschreiben von {#default-behavior}
 
-Standardmäßig sind für den Externalizer-Dienst Werte wie `author-p12345-e6789.adobeaemcloud.com` und `publish-p12345-e6789.adobeaemcloud.com` bereits festgelegt, sodass Ihre AEM als Cloud Service-Installation ohne Eingriff Ihre benutzerdefinierte Domäne verwendet.
+Standardmäßig verfügt der Externalizer-Dienst über Werte wie `author-p12345-e6789.adobeaemcloud.com` und `publish-p12345-e6789.adobeaemcloud.com`.
 
 Um diese Werte zu überschreiben, verwenden Sie Cloud Manager-Umgebungsvariablen, wie im Artikel [Konfigurieren von OSGi für AEM als Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) beschrieben, und legen Sie die vordefinierten Variablen `AEM_CDN_DOMAIN_AUTHOR` und `AEM_CDN_DOMAIN_PUBLISH` fest.
 
