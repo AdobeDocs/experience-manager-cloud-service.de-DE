@@ -3,10 +3,10 @@ title: Arbeiten mit Selektoren
 description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive Videos und Karussellbanner in Dynamic Media auswählen können.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 52%
+source-wordcount: '731'
+ht-degree: 59%
 
 ---
 
@@ -22,7 +22,7 @@ In diesem Karussellbanner verwenden Sie beispielsweise die Produktselektor, wenn
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie Adobe Experience Manager Sites-Kunde sind. Für den Produktselektor ist auch Experience Manager Commerce erforderlich.
+Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie ein [!DNL Adobe Experience Manager Sites]-Kunde sind. Für den Produktselektor ist auch [!DNL Experience Manager Commerce] erforderlich.
 
 ## Auswählen von Produkten in Dynamic Media {#selecting-products}
 
@@ -42,11 +42,11 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Sie können ändern, wo Experience Manager nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner navigieren.
+   Sie können ändern, wo [!DNL Experience Manager] nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner navigieren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tippen Sie auf **[!UICONTROL Sortieren nach]** , um zu ändern, ob der Experience Manager von neu nach alt oder von alt nach neu sortiert wird.
+   Tippen Sie auf **** Sortieren nach, um zu ändern, ob von neu nach alt oder von alt nach neu sortiert.[!DNL Experience Manager]
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
 ## Auswählen von Sites in Dynamic Media {#selecting-sites}
 
-Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap mit einer Webseite verknüpft wird, die in Experience Manager-Sites verwaltet wird.
+Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn ein Hotspot oder eine Imagemap mit einer Webseite verknüpft werden soll, die innerhalb von [!DNL Experience Manager] Sites verwaltet wird.
 
 1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und tippen oder klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
@@ -72,7 +72,7 @@ Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn Sie möchte
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und navigieren Sie zu einer Seite in Ihren Experience Manager-Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
+1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn Sie möchte
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Wenn Sie im Modus **[!UICONTROL Vorschau]** auf den Hotspot oder die Imagemap tippen, navigieren Sie zur angegebenen Experience Manager-Site-Seite.
+1. Wenn Sie im Modus **[!UICONTROL Vorschau]** auf den Hotspot oder die Imagemap tippen, navigieren Sie zur von Ihnen angegebenen [!DNL Experience Manager]-Site-Seite.
 
 ## Auswählen von Assets in Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-asset
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Sie können ändern, wo Experience Manager nach Assets suchen, indem Sie zu einem anderen Ordner im Feld **[!UICONTROL Pfad]** navigieren.
+   Sie können ändern, wo [!DNL Experience Manager] nach Assets sucht, indem Sie zu einem anderen Ordner im Feld **[!UICONTROL Pfad]** navigieren.
 
    Tippen Sie auf **[!UICONTROL Sammlung]**, um nur in Sammlungen nach Assets zu suchen.
 
