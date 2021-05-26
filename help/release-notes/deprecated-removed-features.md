@@ -2,14 +2,20 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 45%
+source-wordcount: '484'
+ht-degree: 41%
 
 ---
 
 # Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="Eingestellte und entfernte Funktionen in AEM as a Cloud Service"
+>abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen und Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
+
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] als [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell bereitstellt, wurden bestimmte Funktionen und Funktionen durch Cloud-native Entsprechungen ersetzt.
 
