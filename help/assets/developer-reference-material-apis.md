@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 92%
+source-wordcount: '1420'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 ## Asset-Upload {#asset-upload}
 
-Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
+Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
 1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
