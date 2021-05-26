@@ -2,9 +2,9 @@
 title: Replikation
 description: Distribution  und Fehlerbehebung bei der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 39%
 
 ---
@@ -82,7 +82,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
 * `replicateAsParticipant` (boolescher Wert, Standard:  `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
 * `enableVersion` (boolescher Wert, Standard:  `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
-* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass alle aktivierten Agenten verwendet werden).
+* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass alle aktivierten Agenten verwendet werden). Es wird empfohlen, explizit über die agentId zu sein. Legen Sie ihn beispielsweise auf den Wert fest: publish
 * `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
    * `onlyActivated` - Nur Pfade, die nicht als aktiviert markiert sind, werden aktiviert.
    * `onlyModified` - Nur Pfade aktivieren, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
