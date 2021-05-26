@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Re
 feature: 360-Grad-VR-Video
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 96%
+source-wordcount: '933'
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 
 ## Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-Beim Hochladen in Adobe Experience Manager werden 360-Grad-Video-Assets wie normale Video-Assets auf der Asset-Seite als **Multimedia** gekennzeichnet.
+360 Video-Assets, die in [!DNL Experience Manager] hochgeladen werden, werden auf einer Asset-Seite wie normale Video-Assets als **Multimedia** gekennzeichnet.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
@@ -98,7 +98,7 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu [!DNL Experience Manager Sites] Seiten.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **So zeigen Sie eine Vorschau von 360-Grad-Videos an**
@@ -134,5 +134,5 @@ Um das 360-Grad-Video verwenden zu können, müssen Sie es veröffentlichen. Die
 
 Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) finden Sie Details zum Veröffentlichen von 360-Grad-Videos.
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu [!DNL Experience Manager Sites] Seiten.
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
