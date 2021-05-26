@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D-Assets
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 74%
+source-wordcount: '2217'
+ht-degree: 68%
 
 ---
 
@@ -21,7 +21,7 @@ Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als e
 
 * Veröffentlichen von 3D-Assets mit einem Klick (mithilfe von **[!UICONTROL Quick Publish]** in der Symbolleiste) zum Generieren einer URL.
 * Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Viewer-Vorgabe „Dimensional“, bereitgestellt von Adobe Dimension.
-* Mit der 3D-Medien-WCM-Komponente können Sie Ihren Adobe Experience Manager Sites-Seiten einfach 3D-Assets hinzufügen.
+* Mit der 3D-Medien-WCM-Komponente können Sie Ihren [!DNL Adobe Experience Manager Sites]-Seiten einfach 3D-Assets hinzufügen.
 
 Für die Verwendung von 3D-Assets in Dynamic Media ist keine zusätzliche Installation erforderlich.
 
@@ -46,7 +46,7 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, 3D-Assets in Dynamic Media einzurichten und schnell auszuführen.
 
-Stellen Sie vor der Arbeit mit 3D-Assets in Dynamic Media sicher, dass der Adobe Experience Manager-Administrator Cloud Services für Dynamic Media bereits aktiviert und konfiguriert hat.
+Bevor Sie mit 3D-Assets in Dynamic Media arbeiten, stellen Sie sicher, dass Ihr [!DNL Experience Manager]-Administrator Dynamic Media-Cloud Services bereits aktiviert und konfiguriert hat.
 
 Informationen hierzu finden Sie unter [Konfigurieren der Cloud Services für Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -103,11 +103,11 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/dynamic-
 
 **So zeigen Sie ein 3D-Asset auf der Seite &quot;Asset-Details&quot;an und interagieren mit ihm:**
 
-1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
+1. Stellen Sie sicher, dass Sie 3D-Assets in [!DNL Experience Manager] hochgeladen haben.
 
    Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media](/help/assets/add-assets.md#upload-assets).
 
-1. Tippen Sie in Adobe Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie von [!DNL Experience Manager] auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets > Dateien]**.
 1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht]**.
 1. Navigieren Sie zu einem 3D-Asset, das Sie anzeigen möchten.
 1. Um das Asset auf der Seite &quot;Details&quot;zu öffnen, tippen Sie auf die Karte des 3D-Assets.
@@ -157,7 +157,7 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 
-Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe Experience Manager Sites verwenden können, um die interaktive Anzeige von 3D-Modellen auf Ihren Web-Seiten zu ermöglichen.
+Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in [!DNL Experience Manager Sites] verwenden können, um die interaktive Anzeige von 3D-Modellen auf Ihren Webseiten zu ermöglichen.
 
 * [Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage](#adding-three-d-media-component-to-page-template)
 * [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-three-d-media-component-to-a-web-page)
@@ -166,7 +166,7 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 
 ## Hinzufügen der 3D-Medien-Komponente zur Seitenvorlage {#adding-three-d-media-component-to-page-template}
 
-1. Öffnen Sie **[!UICONTROL Tools > Allgemein > Vorlagen]**.
+1. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Vorlagen]**.
 1. Navigieren Sie zu der Seitenvorlage, in der Sie die 3D-Komponente aktivieren möchten, und wählen Sie sie aus.
 1. Um die Vorlage zu öffnen, tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie rechts oben auf der Seite im Dropdown-Menü den Modus **[!UICONTROL Struktur]** aus, falls er noch nicht aktiv ist.
@@ -182,11 +182,11 @@ Dynamic Media enthält eine Dynamic Media-3D-Medien-Komponente, die Sie in Adobe
 
 ## Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite {#adding-the-three-d-media-component-to-a-web-page}
 
-Wenn Sie Experience Manager als Web Content Management-System verwenden, können Sie Ihren Web-Seiten mithilfe der 3D-Medien-Komponente 3D-Assets hinzufügen.
+Wenn Sie [!DNL Experience Manager] als Web Content Management-System verwenden, können Sie Ihren Web-Seiten mithilfe der 3D-Medien-Komponente 3D-Assets hinzufügen.
 
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-1. Öffnen Sie Adobe Experience Manager Sites und wählen Sie die Web-Seite aus, der Sie die Dynamic Media-3D-Medien-Komponente hinzufügen möchten.
+1. Öffnen Sie [!DNL Experience Manager Sites] und wählen Sie die Webseite aus, der Sie die Dynamic Media 3D-Medien-Komponente hinzufügen möchten.
 1. Um die Seite im Seiteneditor zu öffnen, tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** (Stift). Stellen Sie sicher, dass rechts oben auf der Seite der Modus **[!UICONTROL Bearbeiten]** ausgewählt ist.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -205,7 +205,7 @@ Siehe [Zuweisen eines 3D-Assets zur 3D-Medien-Komponente](#assigning-a-three-d-a
 
 ### Optional - Konfigurieren der 3D-Medien-Komponente {#configuring-the-three-d-component}
 
-1. Wählen Sie im Seiten-Editor in Adobe Experience Manager Sites die Komponente **[!UICONTROL 3D Media Viewer]** aus, die Sie zuvor zur Seite hinzugefügt haben.
+1. Wählen Sie im Seiteneditor [!DNL Experience Manager Sites] die Komponente **[!UICONTROL 3D-Medien-Viewer]** aus, die Sie der Seite zuvor hinzugefügt haben.
 1. Um das Dialogfeld für die Komponentenkonfiguration zu öffnen, tippen Sie auf das Symbol **[!UICONTROL Konfiguration]** (Schraubenschlüssel).
 
    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
@@ -222,7 +222,7 @@ Nachdem Sie einer Web-Seite eine 3D-Medien-Komponente hinzugefügt haben, könne
 
 Siehe [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-three-d-media-component-to-a-web-page).
 
-1. Klicken Sie im Seiten-Editor in Adobe Experience Manager Sites auf das Symbol **[!UICONTROL Assets]**, um **[!UICONTROL Assets]** im Seitenbedienfeld zu öffnen.
+1. Klicken Sie im Seiteneditor [!DNL Experience Manager Sites] auf das Symbol **[!UICONTROL Assets]** , um **[!UICONTROL Assets]** im Seitenbereich zu öffnen.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL 3D]** aus, um nur 3D-Asset-Dateitypen anzuzeigen.
 1. Suchen Sie im Seitenbedienfeld nach dem 3D-Asset, das Sie auf der entsprechenden Seite anzeigen möchten, oder scrollen Sie zu diesem.
 1. Ziehen Sie das 3D-Asset aus dem Seitenbedienfeld „Assets“ und legen Sie es auf der Komponente **[!UICONTROL 3D-Medien]** ab, die Sie der Seite zuvor hinzugefügt haben.
@@ -231,7 +231,7 @@ Siehe [Hinzufügen der 3D-Medien-Komponente zu einer Web-Seite](#adding-the-thre
 
 >[!NOTE]
 >
->Während sich eine Web-Seite im Modus **[!UICONTROL Bearbeiten]** für Adobe Experience Manager Sites befindet, zeigt die 3D-Medien-Komponente das 3D-Asset an, jedoch ist keine Interaktion mit dem Asset möglich. Um das Asset interaktiv zu gestalten, können Sie die Web-Seite im Seiteneditor mithilfe der **[!UICONTROL Vorschaufunktion]** mit vollem Zugriff auf die Funktionen der 3D-Medien-Komponente anzeigen.
+>Während sich eine Web-Seite im Modus [!DNL Experience Manager Sites]**[!UICONTROL Bearbeiten]** für Adobe befindet, zeigt die 3D-Medien-Komponente das 3D-Asset an, jedoch ist keine Interaktion mit dem Asset möglich. Um das Asset interaktiv zu gestalten, können Sie die Web-Seite im Seiteneditor mithilfe der **[!UICONTROL Vorschaufunktion]** mit vollem Zugriff auf die Funktionen der 3D-Medien-Komponente anzeigen.
 
 ## Veröffentlichen von statischen Dynamic Media-3D-Assets {#publishing-three-d-assets}
 
@@ -241,7 +241,7 @@ Siehe auch [Abrufen einer URL für ein statisches Asset](/help/assets/dynamic-me
 
 In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
-Wenn Sie Adobe Experience Manager als WCM verwenden, verwenden Sie diese Veröffentlichungsmethode, um die Dynamic Media-3D-Assets direkt auf Ihrer Web-Seite hinzuzufügen.
+Wenn Sie [!DNL Experience Manager] als WCM verwenden, verwenden Sie diese Veröffentlichungsmethode, um die Dynamic Media 3D-Assets direkt auf Ihrer Web-Seite hinzuzufügen.
 
 Siehe auch [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -270,7 +270,7 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamental
 
 ### Alternative Methoden zum Veröffentlichen von Dynamic Media-3D-Assets mit dem Dimensional-Viewer {#alternate-publish-methods}
 
-Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamic Media-3D-Assets, wenn Sie Adobe Experience Manager *nicht* als WCM verwenden.
+Verwenden Sie die folgenden beiden Methoden zum Veröffentlichen von Dynamic Media-3D-Assets, wenn Sie Adobe *nicht* als WCM verwenden.[!DNL Experience Manager]
 
 * **[!UICONTROL URL]**  - Verwenden Sie die  **** URL, wenn Sie ein Drittanbieter-Web Content Management-System verwenden und Dynamic Media 3D-Assets mit dem Dimensional-Viewer mit Ihren Web-Seiten verknüpfen möchten.
 
