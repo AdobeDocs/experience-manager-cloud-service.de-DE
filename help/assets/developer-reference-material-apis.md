@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 92%
 
 ---
@@ -75,7 +75,7 @@ Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
+Führen Sie die oben genannten Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-Uploads. Die Unterschiede im Vergleich zu [!DNL Experience Manager] 6.5 sind:
 
