@@ -4,10 +4,10 @@ description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche O
 feature: Asset-Management, Bildprofile, Videoprofile
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 91%
+source-wordcount: '1269'
+ht-degree: 86%
 
 ---
 
@@ -42,13 +42,13 @@ Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner 
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Bildprofil oder Videoprofil bearbeitet haben oder bereits ein Bildprofil oder ein Videoprofil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
 
-Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch-Satz auf Adobe Experience Manager aktualisiert. Wenn der Batch groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn der Batch klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
+Sie können optional die Batch-Größe des Neuverarbeitungs-Workflows von 50 Assets bis zu 1000 Assets anpassen. Wenn Sie den Workflow _Scene7: Assets erneut verarbeiten_ für einen Ordner ausführen, werden die Assets in Batches gruppiert und zur Verarbeitung an den Dynamic Media-Server gesendet. Nach der Verarbeitung werden die Metadaten der einzelnen Assets im gesamten Batch-Satz auf [!DNL Adobe Experience Manager] aktualisiert. Wenn der Batch groß ist, kann es zu einer Verzögerung bei der Verarbeitung kommen. Wenn der Batch klein ist, kann dies zu vielen Umläufen zum Dynamic Media-Server führen.
 
 Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-load).
 
 >[!NOTE]
 >
->Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu Adobe Experience Manager durchführen, aktivieren Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
+>Wenn Sie eine Massenmigration von Assets von Dynamic Media Classic zu [!DNL Experience Manager] durchführen, aktivieren Sie den Migrationsreplikationsagenten auf dem Dynamic Media-Server. Stellen Sie nach Abschluss der Migration sicher, dass Sie den Agenten deaktivieren.
 >
 >Der Migrationsveröffentlichungsagent muss auf dem Dynamic Media-Server deaktiviert werden, damit der Neuverarbeitungs-Workflow erwartungsgemäß funktioniert.
 
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-Assets in einem Ordner erneut verarbeiten:**
-1. Navigieren Sie in Experience Manager von der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie die Scene7 **anwenden möchten: Neuverarbeitung des Workflows Asset** .
+1. Navigieren Sie in [!DNL Experience Manager] von der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie die Scene7 **anwenden möchten: Neuverarbeitung des Workflows Asset** .
 
    Bei Ordnern, denen ein Bildprofil oder ein Videoprofil zugewiesen ist, wird der Name des Profils in der Kartenansicht direkt unter dem Ordnernamen angezeigt.
 
@@ -82,15 +82,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
-   Klicken Sie auf der Hauptseite der Adobe Experience Manager-Konsole auf **[!UICONTROL Tools > Workflow]**, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, klicken Sie auf der Hauptseite [!DNL Experience Manager] auf **[!UICONTROL Tools > Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend wird das Verarbeitungsbanner länger für Adobe Experience Manager-Assets angezeigt. Wenn die durchschnittliche Dateigröße jedoch kleiner als 1 MB oder kleiner ist, empfiehlt es sich, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Das Verarbeitungsbanner bleibt also länger bei [!DNL Experience Manager]-Assets. Wenn die durchschnittliche Dateigröße jedoch kleiner als 1 MB oder kleiner ist, empfiehlt es sich, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
-1. Tippen Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Tippen Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
+1. Tippen Sie in [!DNL Experience Manager] auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
    ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/dynamic-media/assets/reprocess-assets7.png)
