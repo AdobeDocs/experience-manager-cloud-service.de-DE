@@ -6,10 +6,10 @@ topic-tags: introduction
 content-type: reference
 feature: Erreichbarkeit
 role: Administrator,Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ Dynamic Media unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- u
 
 ## Unterstützung der Tastaturbedienung in Dynamic Media  {#keyboard-support-in-dm}
 
-Da es sich bei Dynamic Media um ein Plug-in für Experience Manager Assets handelt, ist das Verhalten der Tastatursteuerung im Wesentlichen mit dem von Experience Manager Assets identisch. Beispielsweise verfügt die Schaltfläche `Cancel` in Dynamic Media über dieselbe Fokushervorhebung wie in Experience Manager Assets. Die Reaktion auf die Taste `Spacebar` ist ebenfalls mit der in Experience Manager Assets identisch. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Da Dynamic Media ein Plug-in für [!DNL Experience Manager Assets] ist, ist der Großteil des Tastatursteuerungsverhaltens mit dem von [!DNL Experience Manager Assets] identisch. Beispielsweise verfügt die Schaltfläche `Cancel` in Dynamic Media über dieselbe Fokushervorhebung wie in [!DNL Experience Manager Assets]. Sie reagiert auch auf den `Spacebar`-Schlüssel wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Tastenkombinationen, die von einzelnen Elementen der Benutzeroberfläche in Dynamic Media unterstützt werden, sind – in den meisten Fällen – offensichtlich und leicht zu finden. Die Tastatursteuerung in Dynamic Media umfasst Folgendes:
 
