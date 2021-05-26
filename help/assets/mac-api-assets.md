@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Assets-HTTP-API,APIs
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 79%
@@ -27,7 +27,7 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 >[!NOTE]
 >
->Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für [!DNL Experience Manager] als [!DNL Cloud Service]-Bereitstellung nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload-technical).
+>Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für [!DNL Experience Manager] als [!DNL Cloud Service]-Bereitstellung nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload).
 
 ## Inhaltsfragmente {#content-fragments}
 
