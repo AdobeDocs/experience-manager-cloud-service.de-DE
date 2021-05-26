@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1406'
 ht-degree: 92%
 
 ---
@@ -64,7 +64,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | Ordner kopieren | verwalten | verwalten | - | verwalten | - | - |
 | Ordner verschieben | verwalten | verwalten | - | verwalten | - | - |
 
-## Asset-Upload {#asset-upload-technical}
+## Asset-Upload {#asset-upload}
 
 Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei sind:
 
@@ -73,6 +73,9 @@ Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets 
 1. [Senden einer HTTP-Anfrage](#complete-upload), um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.
 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-Uploads. Die Unterschiede im Vergleich zu [!DNL Experience Manager] 6.5 sind:
 
