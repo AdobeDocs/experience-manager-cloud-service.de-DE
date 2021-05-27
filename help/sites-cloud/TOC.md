@@ -6,10 +6,10 @@ breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
 feature: 'Authoring – '
 role: Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 100%
       + [Bearbeiten des Seiteninhalts](authoring/fundamentals/editing-content.md)
       + [Rich-Text-Editor](authoring/fundamentals/rich-text-editor.md)
       + [Seiteneigenschaften](authoring/fundamentals/page-properties.md)
+      + [Vorschau des Inhalts](authoring/fundamentals/previewing-content.md)
       + [Veröffentlichen von Seiten](authoring/fundamentals/publishing-pages.md)
       + [Inhaltsfragmente](authoring/fundamentals/content-fragments.md)
       + [Experience Fragments](authoring/fundamentals/experience-fragments.md)
