@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 88%
 
 ---
 
@@ -24,8 +24,9 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien�
 
 Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Experience Manager-Benutzeroberfläche](#download-assets)
-* [Link-Freigabe](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=de)
 * [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#download-assets)
@@ -65,15 +66,17 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
-## Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe {#link-share-download}
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um sie für interessierte Personen verfügbar zu machen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-Wenn Benutzer Assets von freigegebenen Links herunterladen, verwendet [!DNL Assets] einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in einem Posteingang in ZIP-Archive mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB unterteilt.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-Der Posteingang zeigt den Verarbeitungsstatus jedes Archivs an. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![Posteingang herunterladen](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
