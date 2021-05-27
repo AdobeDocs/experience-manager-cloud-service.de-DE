@@ -2,7 +2,7 @@
 title: Asset-Workflow-Migrations-Tool
 description: Asset-Workflow-Migrations-Tool
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
-source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
+source-git-commit: d443ab32e5d2dddded58693483a2bda825ea3048
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 76%
@@ -36,4 +36,4 @@ Die Workflows bieten in unterschiedlichem Maß Unterstützung für Migrationen. 
 
 * **[!DNL Adobe I/O]CLI**: Adobe empfiehlt die Verwendung des Asset-Workflow-Migrationstools über  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] als  [!DNL Cloud Service] Code-Refaktorierungs-Plug-in für die  [!DNL Adobe I/O] CLI). Informationen zur Installation und Verwendung des Plug-ins finden Sie unter [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
-* **Eigenständiges Dienstprogramm**: Das Asset Workflow-Migrations-Tool kann auch als eigenständiges Dienstprogramm ausgeführt werden. Weitere Informationen zum Installieren und Erstellen von Code aus der Quelle finden Sie unter **[Git-Ressource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Workflow-Migration](https://github.com/adobe/aem-cloud-migration)**.
+* **Eigenständiges Dienstprogramm**: Das Asset Workflow-Migrations-Tool kann auch als eigenständiges Dienstprogramm ausgeführt werden. Weitere Informationen zum Installieren und Erstellen von Code aus der Quelle finden Sie unter [Git-Ressource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Workflow-Migration](https://github.com/adobe/aem-cloud-migration).
