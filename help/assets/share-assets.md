@@ -1,14 +1,14 @@
 ---
-title: Freigeben von Assets, Ordnern und Sammlungen als Link
-description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in [!DNL Experience Manager Assets] als Hyperlink freigeben.
+title: Verteilen und Freigeben von Assets, Ordnern und Sammlungen
+description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigeben als Link, Herunterladen und über [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Asset-Management, Zusammenarbeit, Asset-Verteilung
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus [!DNL Experience Manager Assets] as a [!DNL Cloud Service] freizugeben:
 
-* Freigeben als Link.
+* [Freigeben als Link](#sharelink).
 * [Herunterladen von Assets und separates Freigeben.](/help/assets/download-assets-from-aem.md)
 * Freigeben mit dem [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de).
 * Freigeben mit [[!DNL Adobe Asset Link]](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -26,10 +26,12 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
+![Dialogfeld &quot;Linkfreigabe&quot;](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung „ACL bearbeiten“.
->* Bevor Sie einen Link für Benutzer freigeben, stellen Sie sicher, dass [ausgehende E-Mails aktiviert sind](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Andernfalls tritt ein Fehler auf.
+>* Bevor Sie einen Link für Benutzer freigeben, [aktivieren Sie ausgehende E-Mails](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Andernfalls tritt ein Fehler auf.
 
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
