@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 13%
+source-wordcount: '939'
+ht-degree: 14%
 
 ---
 
@@ -61,9 +61,9 @@ Die folgende Version (2021.6.0) wird am 24. Juni 2021 veröffentlicht.
 * Das Hochladen sehr großer Dateien stürzt die [!DNL Experience Manager desktop app] ab. (CQ-4320942)
 * Die Symbolleistenoptionen unterscheiden sich, wenn dieselbe Sammlung aus einem Ordner ausgewählt und in einem Suchergebnis ausgewählt wird. (CQ-4321406)
 
-#### Neue Funktionen in Dynamic Media {#what-is-new-dm}
+#### Neue Funktionen in [!DNL Dynamic Media] {#what-is-new-dm}
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
+* Mit der DSGVO (Smart Imaging Device Pixel Ratio) und der Optimierung der Netzwerkbandbreite können Sie effizient hochwertige Bilder auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite bereitstellen. Siehe [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ Die folgende Version (2021.6.0) wird am 24. Juni 2021 veröffentlicht.
    * Asien-Pazifik 19. Juli 2021.
 
 
-* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator).
+* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der [!DNL Dynamic Media]-Bereitstellung (Fmt-URL-Modifikator).
 
    >[!NOTE]
    >
