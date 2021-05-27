@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Herunterladen von Assets aus [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstellungen herunterladen. Sie haben auch die Möglichkeit, eine E-Mail mit Links zu Assets direkt von [!DNL Adobe Experience Manager Assets] aus zu senden. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. Die komprimierte ZIP-Datei hat eine maximale Dateigröße von 1 GB für den Exportauftrag. Es sind maximal 500 Assets pro Exportauftrag zulässig.
+Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstellungen herunterladen. Sie haben auch die Möglichkeit, eine E-Mail mit Links zu Assets direkt von [!DNL Adobe Experience Manager Assets] aus zu senden. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien�
 Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
 * [Experience Manager-Benutzeroberfläche](#download-assets)
+* [Link-Freigabe](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=de)
 * [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#download-assets)
@@ -63,6 +64,16 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](/help/assets/dynamic-media/image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
+
+## Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe {#link-share-download}
+
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um sie für interessierte Personen verfügbar zu machen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
+
+Wenn Benutzer Assets von freigegebenen Links herunterladen, verwendet [!DNL Assets] einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in einem Posteingang in ZIP-Archive mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB unterteilt.
+
+Der Posteingang zeigt den Verarbeitungsstatus jedes Archivs an. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
+
+![Posteingang herunterladen](assets/download-inbox.png)
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
