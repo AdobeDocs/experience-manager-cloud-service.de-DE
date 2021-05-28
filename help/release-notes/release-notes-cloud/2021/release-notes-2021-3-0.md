@@ -1,24 +1,24 @@
 ---
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0
-source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
+source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 14%
+ht-degree: 58%
 
 ---
 
 
-# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt finden Sie allgemeine Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] als Cloud Service.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
->Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die 2020, 2021 usw.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2020, 2021 usw.
 
 >[!NOTE]
 >
->Weitere Informationen zu Dokumentationsaktualisierungen, die nicht direkt mit einer Version in Zusammenhang stehen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
+>Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
 
 ## Veröffentlichungsdatum {#release-date}
 
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserfahrungen zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Verkäufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt als Cloud-Service verfügbar.
 
-Sie können [AEM Forms as a Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen, Datensatzdokument (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre bestehenden PDF forms in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen. Lesen Sie [diesen Blogpost](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) , um mehr über die Funktionen und Funktionen von AEM Forms as a Cloud Service zu erfahren.
+Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen, Datensatzdokument (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Dienst kann auch Ihre bestehenden PDF forms in digitale Formulare konvertieren. Neben den standardmäßigen AEM Forms-Funktionen bietet der Dienst mehrere Cloud-native Funktionen wie automatische Skalierung, Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen. Lesen Sie [diesen Blogpost](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) , um mehr über die Funktionen und Funktionen von AEM Forms as a Cloud Service zu erfahren.
 
 Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder sich für den Dienst anzumelden.
 
@@ -81,52 +81,52 @@ Sie können sich an Ihren Kundenbetreuer wenden, um eine Demo zu erhalten oder s
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0 beschrieben.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
 ## Veröffentlichungsdatum {#release-date-cm-march}
 
-Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. März 2021 veröffentlicht.
-Die nächste Version ist für den 8. April 2021 geplant.
+Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. März 2021 veröffentlicht.
+Die nächste Version ist für den 08. April 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-march}
 
-* Kunden mit Umgebungen mit bereits vorhandenen Konfigurationen für benutzerdefinierte Domänennamen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [Benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) sehen eine Meldung über ihre bisherigen Konfigurationen und können über die Benutzeroberfläche selbst versorgen.
+* Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
 
-* Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig erledigen können:
+* Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
 
    * Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets hinzu oder umgekehrt.
    * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
-   * Fügen Sie eine zweite, nicht verwendete Lösungsberechtigung hinzu, entweder zu einem vorhandenen Programm oder als neues Programm.
+   * Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 
-* **AEM** Aktualisierungsfeld Push wird jetzt sowohl für die  *Pipeline-* Ausführung als auch für die  ** Aktivitätsbildschirme angezeigt.
+* Die Bezeichnung **AEM-Push-Updates** wird jetzt sowohl für die Bildschirme *Pipeline-Ausführung* als auch *Aktivität* angezeigt.
 
-* Wenn eine Umgebung in den Ruhezustand versetzt wird, aber auch eine AEM Aktualisierung verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
+* Wenn eine Umgebung in den Ruhezustand versetzt wurde, aber auch ein AEM-Update verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
 
-* Benutzer können nun ihre Cloud Manager-Rollen sehen, indem sie die Option &quot;Cloud Manager-Rolle(n) anzeigen&quot;auswählen, nachdem sie zum Benutzerprofilsymbol (oben rechts) von Unified Shell navigiert sind.
+* Die Benutzer können nun ihre Cloud Manager-Rolle(n) anzeigen, indem sie die Option „Cloud Manager-Rolle(n) anzeigen“ auswählen, nachdem sie zum Symbol „Benutzerprofil“ (oben rechts) der Unified Shell navigiert sind.
 
-* Der Titel **Antrag auf Genehmigung** wurde zur besseren Übersichtlichkeit in **Produktionsgenehmigung** umbenannt.
+* Die Bezeichnung **Antrag auf Genehmigung** wurde aus Gründen der Klarheit in **Produktionsgenehmigung** umbenannt.
 
-* Der Titel **Version** wurde im Bildschirm zur Ausführung der Produktions-Pipeline in **Git-Tag** umbenannt.
+* Die Bezeichnung **Version** wurde im Ausführungsbildschirm der Produktions-Pipeline in **Git-Tag** umbenannt.
 
 * Die Bezeichnungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr tatsächliches Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
 
-* Die Listen zur veralteten Klasse und Methode wurden basierend auf der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
+* Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
 
 * Die Cloud Manager-Produktions-Pipeline enthält jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Fehlerbehebungen {#bug-fixes-cm-march}
 
-* Die Paketversionierung wurde in einigen Fällen während AEM Push-Upgrades übersprungen.
+* Die Paketversionierung wurde in einigen Fällen während AEM-Push-Aktualisierung übersprungen.
 
 * Einige Qualitätsprobleme wurden nicht richtig erkannt, wenn Pakete in andere Pakete eingebettet wurden.
 
-* In undurchsichtigen Situationen kann der beim Öffnen des Dialogfelds Programm hinzufügen generierte Standard-Programmname ein Duplikat eines vorhandenen Programmnamens sein.
+* In unklaren Situationen kann der Standardprogrammname, der beim Öffnen des Dialogfelds „Programm hinzufügen“ generiert wird, ein Duplikat eines vorhandenen Programmnamens sein.
 
-* Wenn der Benutzer die Pipeline-Ausführungsseite gelegentlich unmittelbar nach dem Start einer Pipeline verlässt, wird eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich gestartet wird.
+* Wenn der Benutzer unmittelbar nach dem Start einer Pipeline von der Seite für die Pipeline-Ausführung weg navigiert, wird gelegentlich eine Fehlermeldung angezeigt, die besagt, dass die Aktion fehlgeschlagen ist, obwohl die Ausführung tatsächlich startet.
 
 * Der Build-Schritt wurde unnötigerweise neu gestartet, wenn Kunden-Builds zu ungültigen Paketen führten.
 
-* Gelegentlich kann der Benutzer einen grünen &quot;aktiven&quot;Status neben einer IP-Zulassungsliste sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
+* Gelegentlich wird dem Benutzer neben einer IP-Zulassungsliste möglicherweise ein grüner „aktiver“ Status angezeigt, auch wenn diese Konfiguration nicht bereitgestellt wurde.
 
 * Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
 
@@ -142,12 +142,12 @@ Die Version 1.3.4 des Content Transfer Tool wurde am 19. März 2021 veröffentli
 
 ### Veröffentlichungsdatum {#release-date-ctt-march}
 
-Die Version 1.3.0 des Content Transfer Tool wurde am 4. März 2021 veröffentlicht.
+Das Content Transfer Tool 1.3.0 wurde am 4. März 2021 veröffentlicht.
 
 ### Neue Funktionen im Content Transfer Tool {#what-is-new-ctt-march}
 
-* Die CTT installiert jetzt auf `/apps` anstelle von `/libs` Browser-Lesezeichen für bestimmte Seiten, möglicherweise sind sie nicht mehr gültig.
-* Wenn CTT installiert ist, muss der Benutzer eine zusätzliche Ebene navigieren, um zur Seite Inhaltstransfer zu gelangen. Weitere Informationen finden Sie unter [Verwenden des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) .
+* CTT wird jetzt in `/apps` anstatt in `/libs` installiert. Browser-Lesezeichen zu bestimmten Seiten sind möglicherweise nicht mehr gültig.
+* Wenn CTT installiert ist, muss der Benutzer eine zusätzliche Ebene aufrufen, um zur Seite für den Inhaltstransfer zu gelangen. Weitere Informationen finden Sie unter [Verwenden des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de).
 
 ### Fehlerbehebungen {#bug-fixes-ctt-march}
 
@@ -165,15 +165,15 @@ Die Version 2.1.8 von Best Practices Analyzer wurde am 22. März 2021 veröffent
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
-### Neue Funktionen in Code-Refaktorierungs-Tools {#what-is-new-crt}
+### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Siehe [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für die neueste Version.
-   * Normalisieren Sie OSGi-Konfigurationen (außer RepoInit-Konfigurationen) in das bevorzugte .cfg.json-Format.
-   * Benennen Sie die OSGi-Konfigurationsordner in das angegebene Format um.
-   * Generieren Sie das Projekt ui.apps.structure .
-   * Erstellen Sie das Analysemodul.
+* Neue Funktionen und Verbesserungen für Repository Modernizer. Die neueste Version finden Sie in der [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+   * Normalisieren von OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
+   * Umbenennen von OSGi-Konfigurationsordnern in das angegebene Format.
+   * Generieren des Projekts „ui.apps.structure“.
+   * Erstellen des Analysemoduls.
 
-* Neue Funktionen und Verbesserungen für Dispatcher Converter. Siehe [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * Erstellung separater Dateien für verschiedene Einschlüsse anstelle des Auskleidens des Inhalts.
+* Neue Funktionen und Verbesserungen für Dispatcher Converter. Weitere Informationen finden Sie in der [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+   * Erstellen von separaten Dateien für verschiedene Einschlüsse, anstatt Inhalte einzufügen.
    * Möglichkeit, sowohl den Ordnerpfad von vhosts als auch den Pfad zu vhost-Dateien zu verarbeiten.
    * Generieren von Farm-Dateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.
