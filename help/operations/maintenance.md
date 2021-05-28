@@ -2,14 +2,21 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 84%
+source-wordcount: '992'
+ht-degree: 85%
 
 ---
 
 # Wartungsaufgaben in AEM as a Cloud Service
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="Wartungsaufgaben"
+>abstract="Wartungsaufgaben sind Prozesse, die planmäßig ausgeführt werden, um das Repository zu optimieren. Bei AEM as a Cloud Service ist der Kundenaufwand der Konfiguration von Betriebseigenschaften für Wartungsaufgaben minimal. Kunden können ihre Ressourcen auf Angelegenheiten in der Anwendungsebene konzentrieren und die Infrastrukturvorgänge Adobe überlassen."
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM-Wartungsleitfaden"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="Vorgangs-Dashboard für Wartungsaufgaben"
 
 Wartungsaufgaben sind Prozesse, die planmäßig ausgeführt werden, um das Repository zu optimieren. Bei AEM as a Cloud Service ist der Kundenaufwand der Konfiguration von Betriebseigenschaften für Wartungsaufgaben minimal. Kunden können ihre Ressourcen auf Angelegenheiten in der Anwendungsebene konzentrieren und die Infrastrukturvorgänge Adobe überlassen.
 
