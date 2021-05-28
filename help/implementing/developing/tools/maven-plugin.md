@@ -2,9 +2,9 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1847'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ AEM as a Cloud Service hält sich an die neuesten Best Practices für Package Ma
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
 
 ## Abrufen des Content Package Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
 
@@ -56,7 +56,7 @@ Fügen Sie zum Verwenden des Inhaltspaket-Maven-Plug-ins das folgende Plug-in-El
 
 Verwenden Sie das im Abschnitt [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite angegebene Profil, um Maven für das Herunterladen des Plug-ins zu aktivieren.
 
-## Ziele des Inhaltspaket-Maven-Plug-ins  {#goals-of-the-content-package-maven-plugin}
+## Ziele des Inhaltspaket-Maven-Plug-ins   {#goals-of-the-content-package-maven-plugin}
 
 Die durch das Inhaltspaket-Plug-in bereitgestellten Ziele und Zielparameter werden in den folgenden Abschnitten beschrieben. Die im Abschnitt „Allgemeine Parameter“ beschriebenen Parameter können für die meisten der Ziele verwendet werden. Parameter, die für ein Ziel zutreffen, werden im Abschnitt für das jeweilige Ziel beschrieben.
 
@@ -265,4 +265,4 @@ Der aktuelle AEM-Projektarchetyp implementiert die Best Practice-Paketstruktur s
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.
