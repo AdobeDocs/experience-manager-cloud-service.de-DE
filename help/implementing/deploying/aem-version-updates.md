@@ -3,10 +3,10 @@ title: AEM-Versionsaktualisierungen
 description: 'AEM-Versionsaktualisierungen '
 feature: Bereitstellen
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Service für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
-[Produkttests und Kundenfunktionstests](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing), die verhindern, dass Produktaktualisierungen und Kunden-Codepushes die Produktion unterbrechen, werden ebenfalls während einer AEM-Versionsaktualisierung validiert.
+[Produkttests und Kundenfunktionstests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing), die verhindern, dass Produktaktualisierungen und Kunden-Codepushes die Produktion unterbrechen, werden ebenfalls während einer AEM-Versionsaktualisierung validiert.
 
 >[!NOTE]
 >
