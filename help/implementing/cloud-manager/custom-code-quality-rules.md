@@ -2,9 +2,9 @@
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 99%
 
 ---
@@ -724,7 +724,7 @@ Die Dokumentation zu den AEM-Modernisierungs-Tools enthält Dokumentation und To
 
 Um mit dem Cloud Service-Implementierungsmodell kompatibel zu sein, müssen die einzelnen Inhaltspakete entweder Inhalte für die unveränderlichen Bereiche des Repositorys (`/apps and /libs, although /libs` sollte also nicht durch Kunden-Code geändert werden und einen separaten Verstoß verursachen) oder den veränderlichen Bereich (d. h. alles andere) enthalten, jedoch nicht beides. Beispielsweise ist ein Paket, das beide `/apps/myco/components/text and /etc/clientlibs/myco` enthält, nicht mit Cloud Service kompatibel und führt dazu, dass ein Problem gemeldet wird.
 
-Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
+Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de).
 
 ### Rückwärtsreplikations-Agenten sollten nicht verwendet werden {#oakpal-reverse-replication}
 
@@ -736,7 +736,7 @@ Weitere Informationen finden Sie unter [AEM-Projektstruktur](https://docs.adobe.
 
 **Seit**: Version 2020.5.0
 
-Cloud Service-Implementierungen unterstützen keine Rückwärtsreplikation. Weitere Informationen finden Sie unter [Versionshinweisen: Entfernung von Replikations-Agenten](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+Cloud Service-Implementierungen unterstützen keine Rückwärtsreplikation. Weitere Informationen finden Sie unter [Versionshinweisen: Entfernung von Replikations-Agenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=de#replication-agents).
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
