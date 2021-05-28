@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 93%
+source-wordcount: '2506'
+ht-degree: 92%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 93%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best Practices Analyzer (BPA):
 
-* Der BPA-Bericht wird mit der Ausgabe der Adobe Experience Manager (AEM)-[Mustererkennung](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/upgrading/pattern-detector.html) erstellt. Die von BPA verwendete Version der Mustererkennung ist im BPA-Installationspaket enthalten.
+* Der BPA-Bericht wird mit der Ausgabe der Adobe Experience Manager (AEM)-[Mustererkennung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) erstellt. Die von BPA verwendete Version der Mustererkennung ist im BPA-Installationspaket enthalten.
 
 * BPA kann nur vom **Administrator** oder einem Anwender **Administratorgruppe** ausgeführt werden.
 
@@ -247,8 +247,8 @@ Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administr
 
 BPA verwendet ein System-Service-Anwenderkonto mit dem Namen `repository-reader-service` zum Ausführen der Mustererkennung. Dieses Konto ist auf AEM 6.2 und höher verfügbar. In AEM 6.1 muss dieses Konto *vor* der Installation von BPA wie folgt erstellt werden:
 
-1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
+1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
 
-2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
+2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
 
 3. Installieren Sie das BPA-Paket über den Package Manager auf Ihrer AEM-Quellinstanz. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-System-Service-Anwender hinzugefügt.)
