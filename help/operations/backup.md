@@ -2,14 +2,20 @@
 title: Backup und Wiederherstellung in AEM as a Cloud Service
 description: Backup und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 92%
 
 ---
 
 # Backup und Wiederherstellung in AEM as a Cloud Service
+
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_backuprestore"
+>title="Sicherung und Wiederherstellung"
+>abstract="AEM als Cloud Service kann die vollständige Anwendung (Code und Inhalt) eines Kunden auf bestimmte, vordefinierte Zeiten in den letzten sieben Tagen zurücksetzen, wodurch die Produktionsumgebung ersetzt wird. Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die neuesten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt."
 
 Sollte es zu Inhalts- oder Datenbeschädigungen kommen, kann AEM as a Cloud Service die vollständige Anwendung eines Kunden (Code und Inhalt) auf bestimmte, vordefinierte Zeitpunkte in den letzten sieben Tagen zurücksetzen, wodurch Inhalte in der Produktion ersetzt werden.
 Wenn die Implementierung eines Kunden beschädigt ist (d. h. der bereitgestellte Anwendungs-Code beschädigt oder fehlerhaft ist), sollten Sie sie beheben und zu einer neuen Version wechseln, anstatt die Implementierung aus dem Backup wiederherzustellen. Das Backup wird so durchgeführt, dass es keine Auswirkungen auf die Laufzeitleistung einer Anwendung hat.
