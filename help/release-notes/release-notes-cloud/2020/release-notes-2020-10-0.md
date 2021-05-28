@@ -2,10 +2,10 @@
 title: Versionshinweise für die Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -32,11 +32,11 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL Adobe Sensei]-basierte Funktion für das Tagging von Videos**: Durch die Nutzung von KI-Modellen zur Analyse von Videoinhalten für objekt- und aktionsspezifische Tags verbringen DAM-Anwender weniger Zeit mit dem Hinzufügen von Tags und haben mehr Zeit, die umfangreichen Informationen zu verwerten, um dem Kunden das passende Erlebnis zu bieten. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-video-assets.md).
 
-* **Brand Portal-Verbesserungen**: In [!DNL Brand Portal] sind u. a die nachfolgend aufgeführten neuen Funktionen verfügbar. Weitere Details finden Sie in den [[!DNL Brand Portal] Versionshinweisen](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+* **Brand Portal-Verbesserungen**: In [!DNL Brand Portal] sind u. a die nachfolgend aufgeführten neuen Funktionen verfügbar. Weitere Details finden Sie in den [[!DNL Brand Portal] Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * [Verbessertes Download-Erlebnis](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) mit einfacheren, schnellen Downloads. Administratoren können zusätzliche Download-Konfigurationen vornehmen, um ein Erlebnis zu bieten, das den Anforderungen der Anwender und Unternehmen entspricht.
-   * Die Navigation zu Dateien, [Sammlungen](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) und geteilten Links ist jetzt von jeder Seite aus möglich.
-   * Anwender können jetzt [bestimmte Ausgabedarstellungen auswählen und herunterladen](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). Die neue Option zum Herunterladen der Ausgabedarstellung ist auf der Seite mit den Asset-Details im Bedienfeld „Ausgabedarstellung“ verfügbar.
+   * [Verbessertes Download-Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=de) mit einfacheren, schnellen Downloads. Administratoren können zusätzliche Download-Konfigurationen vornehmen, um ein Erlebnis zu bieten, das den Anforderungen der Anwender und Unternehmen entspricht.
+   * Die Navigation zu Dateien, [Sammlungen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) und geteilten Links ist jetzt von jeder Seite aus möglich.
+   * Anwender können jetzt [bestimmte Ausgabedarstellungen auswählen und herunterladen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). Die neue Option zum Herunterladen der Ausgabedarstellung ist auf der Seite mit den Asset-Details im Bedienfeld „Ausgabedarstellung“ verfügbar.
    * Eine Zeitüberschreitung von 15 Minuten für Anwendersitzungen gewährleistet ein besseres Anwendererlebnis für alle gleichzeitigen Anwender.
 
 * **[!DNL Adobe Asset Link]Version 2.1**: Es ist eine neue Version der [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)-Erweiterung für [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign] verfügbar. Sie sorgt für Kompatibilität der neuesten [!DNL Adobe Creative Cloud]-Programme mit Version 2021, die im Oktober 2020 veröffentlicht wurde.
@@ -98,11 +98,11 @@ Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implement
 
 ### Workflows {#workflows}
 
-* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Siehe [Suchen nach Workflow-Instanzen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Siehe [Suchen nach Workflow-Instanzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
