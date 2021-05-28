@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 100%
+source-wordcount: '1907'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Konfigurieren der Miniaturansicht der Seite
 
 * **Freigabe in Social Media**
 
-   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/sharing.html) zur Verfügung stehen.
+   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html) zur Verfügung stehen.
 
    * **Benutzerfreigabe aktivieren für Facebook**
    * **Benutzerfreigabe aktivieren für Pinterest**
