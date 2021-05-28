@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implemen
 
 ### Workflows {#workflows}
 
-* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Weitere Informationen finden Sie unter [Nach Workflow-Instanzen suchen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Weitere Informationen finden Sie unter [Nach Workflow-Instanzen suchen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ### Synchronisierung von Benutzerdaten auf Veröffentlichungsebene {#user-sync}
 
@@ -121,7 +121,7 @@ Neue Prüfung der [„httpd-t“-Syntax](/help/implementing/dispatcher/disp-over
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
