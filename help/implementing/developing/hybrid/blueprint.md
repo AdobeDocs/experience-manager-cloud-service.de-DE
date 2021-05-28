@@ -2,9 +2,9 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird
 
 Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
-### Meta-Felder  {#meta-fields}
+### Meta-Felder   {#meta-fields}
 
 Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-API basiert. Die exportierbaren Sling-Modelle machen die folgende Liste von Feldern verfügbar, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
 
@@ -77,7 +77,7 @@ Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Mod
 * `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt garantiert die Reihenfolge seiner Felder nicht. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
 * `:path`: Inhaltspfad eines Elements (vorhanden bei Elementen, die eine Seite darstellen)
 
-Siehe auch [Erste Schritte mit AEM Content Services](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-with-aem-headless/overview.html).
+Siehe auch [Erste Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).
 
 ### Framework-spezifisches Modul {#framework-specific-module}
 
@@ -140,7 +140,7 @@ Ein Container ist eine Komponente, die untergeordnete Komponenten enthält und r
 
 Der Container ruft die untergeordneten Komponenten dynamisch aus dem Speicher der [`ComponentMapping`](#componentmapping)-Bibliothek ab. Der Container erweitert dann die untergeordnete Komponente mit den Modellanbieterfunktionen und instanziiert sie schließlich.
 
-### Seite  {#page}
+### Seite {#page}
 
 Die `Page`-Komponente erweitert die `Container`-Komponente. Ein Container ist eine Komponente, die untergeordnete Komponenten wie untergeordnete Seiten enthält und rendert. Dazu durchläuft der Container die `:itemsOrder`-, `:items`- und `:children`-Eigenschaften seines Modells. Die `Page`-Komponente ruft die untergeordneten Komponenten aus dem Speicher der [`ComponentMapping`](#componentmapping)-Bibliothek dynamisch ab. Die `Page` ist für die Instanziierung untergeordneter Komponenten verantwortlich.
 
@@ -173,6 +173,7 @@ Beispiel:
 >
 >* `"new section"`: Zeigt an, dass das aktuelle Element der Platzhalter des Containers ist
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
+
 >
 
 
