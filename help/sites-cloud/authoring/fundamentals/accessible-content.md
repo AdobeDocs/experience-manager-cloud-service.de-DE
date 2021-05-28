@@ -2,10 +2,10 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
-ht-degree: 100%
+source-wordcount: '14050'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 >* Die [Nummerierung der WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) zur Erleichterung von Querverweisen zur WCAG-Website.
 
 
-## Grundsatz 1: Erkennbar  {#principle-perceivable}
+## Grundsatz 1: Erkennbar   {#principle-perceivable}
 
 [Grundsatz 1: Erkennbar – Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG/#perceivable)
 
@@ -68,15 +68,15 @@ Ein nützlicher weiterer Vorteil besteht darin, dass es durch Textalternativen m
 
 #### Erfüllen: Nichttextlicher Inhalt (1.1.1)   {#how-to-meet-non-text-content}
 
-Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** erfolgen. Siehe zum Beispiel die Kernkomponente **[Bild](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html)**.
+Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** erfolgen. Siehe zum Beispiel die Kernkomponente **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de)**.
 
 >[!NOTE]
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
+>Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
 >
 >Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe „Hinzufügen von Support für weitere HTML-Elemente und -Attribute“).
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
+>Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
 >
 >Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Support für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -243,7 +243,7 @@ Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rah
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### Untertitel (live) (1.2.4)    {#captions-live}
+### Untertitel (live) (1.2.4)     {#captions-live}
 
 * Erfolgskriterium 1.2.4
 * Level AA
@@ -358,6 +358,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
       >
       >* `<b>` für `<strong>`
       >* `<i>` für `<em>`
+
       >
       >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 
