@@ -2,14 +2,21 @@
 title: Einführung – benutzerdefinierte Domain-Namen
 description: Einführung – benutzerdefinierte Domain-Namen
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 94%
+source-wordcount: '257'
+ht-degree: 85%
 
 ---
 
 # Einführung {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_domains"
+>title="Benutzerdefinierte Domänennamen verwalten"
+>abstract="Mit Cloud Manager können Sie per Self-Service über die Benutzeroberfläche eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren. Ihr Adobe Experience Manager as a Cloud Service hat einen standardmäßigen Domänennamen, der auf *.adobeaemcloud.com endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen hinzufügen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=de" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html?lang=de" text="Benutzerdefinierten Domänennamen anzeigen und aktualisieren"
 
 Mit Cloud Manager können Sie per Self-Service über die Benutzeroberfläche eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren. Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen hinzufügen.
 
