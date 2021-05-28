@@ -2,9 +2,9 @@
 title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-## Allgemeine Verwendung   {#general-usage}
+## Allgemeine Verwendung    {#general-usage}
 
 Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
@@ -39,7 +39,7 @@ Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console
 
 ## Kernkomponenten {#core-components}
 
-Die [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
+Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
 
 Sie werden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das AEM-Authoring. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
 
