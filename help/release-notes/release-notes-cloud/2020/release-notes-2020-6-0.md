@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Versionshinweise für Experience Manager 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 99%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Neue Funktionen {#whats-new-2020.6.0}
 
-Version 2.9.0 der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) ist jetzt als Teil von AEM Sites verfügbar, einschließlich folgenden Optionen:
+Version 2.9.0 der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) ist jetzt als Teil von AEM Sites verfügbar, einschließlich folgenden Optionen:
 
 * Integration zwischen der [Adobe Client-Datenschicht](https://github.com/adobe/adobe-client-data-layer) und den Kernkomponenten
 * Konfigurierbare HTML-ID-Attribute für alle Komponenten
@@ -60,11 +60,11 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Benutzer mit der Rolle *Business Owner* in Cloud Manager kann jetzt ein Sandbox-Programm von der Landingpage (über die Schaltfläche für den Schnellzugriff auf der Programmkarte) oder aus dem Programm heraus löschen.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt sowohl auf der Umgebungskarte auf der Seite **Programmübersicht** als auch auf der Seite **Umgebungen** verfügbar. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Coachmarks auf der Landingpage, die dem Benutzer grundlegende Informationen zur Navigation liefern.
 
@@ -76,11 +76,11 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Benutzer mit der SysAdmin-Rolle hat jetzt 1-Klick-Zugriff auf den Speicherort in Admin Console, von der aus Benutzerrollen oder Berechtigungen für Cloud Manager verwaltet werden können. Eine Schaltfläche **Zugriff verwalten** ist jetzt auf der Landingpage neben der Schaltfläche **Programm hinzufügen** verfügbar.
 
-   Weitere Informationen finden Sie unter [SysAdmin-Aufgaben](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
+   Weitere Informationen finden Sie unter [SysAdmin-Aufgaben](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks).
 
 * Ein Benutzer mit der SysAdmin-Rolle hat kann jetzt direkt aus Cloud Manager per 1-Klick-Zugriff auf die Autoreninstanz zugreifen.
 
-   Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Autoreninstanz](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
+   Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem).
 
 * Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte einschließlich übersprungener Inhaltspakete.
 
