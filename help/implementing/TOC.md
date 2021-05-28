@@ -5,10 +5,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 96%
+source-wordcount: '900'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 96%
    + [Protokollierung](developing/introduction/logging.md)
    + [Konfigurationen und der Konfigurations-Browser](developing/introduction/configurations.md)
    + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
@@ -87,7 +87,7 @@ ht-degree: 96%
       + Komponenten und Vorlagen {#components-templates}
          + [Komponentenübersicht](developing/components/overview.md)
          + [Vorlagen](developing/components/templates.md)
-         + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+         + [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
          + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de)
          + [JSON-Exporter für Content Services ](developing/components/json-exporter.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
