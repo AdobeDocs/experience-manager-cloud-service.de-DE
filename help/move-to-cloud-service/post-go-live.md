@@ -2,10 +2,10 @@
 title: Phase nach der Live-Schaltung
 description: Phase nach der Live-Schaltung
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 79%
+source-wordcount: '314'
+ht-degree: 73%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 79%
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
 >abstract="Überprüfen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie Developer Console und CRXDE Lite, um Ihnen bei der Fehlerbehebung von Problemen mit AEM zu helfen."
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Zugreifen auf und Verwalten von Protokollen"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Zugreifen auf und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
 
 In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dateien sicherstellen, Best Practices für die kontinuierliche Entwicklung überprüfen und Protokolle verwalten.
@@ -32,7 +32,7 @@ Die folgenden Tools stehen zur Fehlerbehebung in AEM as a Cloud Service-Umgebung
 
 AEM as a Cloud Service-Entwicklungsumgebungen zum Debuggen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar.
 
-Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementieren für AEM as a Cloud Service](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools).
+Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementieren für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools).
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ Informationen zum Entwickeln Ihrer AEM-Anwendung mit CRX/DE Lite finden Sie unte
 
 Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Unter [Zugreifen auf und Verwalten von Protokollen](https://docs.adobe.com/content/help/de/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) erfahren Sie, wie Sie über die Benutzeroberfläche oder über die API über Cloud Manager auf Protokolle zugreifen und diese verwalten.
+Unter [Zugreifen auf und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=de) erfahren Sie, wie Sie über die Benutzeroberfläche oder über die API über Cloud Manager auf Protokolle zugreifen und diese verwalten.
 
 ### Zusätzliche Unterstützung {#additional-support}
 
