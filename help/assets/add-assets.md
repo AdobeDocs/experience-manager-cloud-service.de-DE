@@ -4,7 +4,7 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset-Verwaltung,Hochladen
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 85%
@@ -217,7 +217,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar weitere Assets zu einem Ordner hinzufügen, es können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
 
-* Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset unter [!DNL Analytics] erfassten Daten durch die neu generierte Asset-ID invalidiert.
+* Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Assets Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset unter [!DNL Analytics] erfassten Daten durch die neu generierte Asset-ID invalidiert.
 
 * Einige Upload-Methoden halten Sie nicht davon ab, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 
