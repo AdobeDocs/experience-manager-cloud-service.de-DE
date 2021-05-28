@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '752'
+ht-degree: 3%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] as a Cloud Service bietet monatlich neue Funktionen, entsprechend der Roadmap für  [Experience Manager-Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Um sich mit den für den folgenden Monat geplanten Funktionen vertraut zu machen, können Kunden den Kanal für die Vorabversion abonnieren, auf den über eine entsprechende Konfiguration in standardmäßigen Programmentwicklungsumgebungen oder in beliebigen Sandbox-Programmumgebungen zugegriffen werden kann. Kunden können eine Vorschau von Änderungen an der Sites-Konsole anzeigen sowie Code für alle neuen Vorabversions-APIs erstellen.
 
 Die Liste der Funktionen der Vorabversion für einen bestimmten Monat wird in den [monatlichen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) veröffentlicht.
+
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Aktivieren der Vorabversion {#enable-prerelease}
 
@@ -110,8 +112,7 @@ So erstellen Sie mit dem Vorabversions-SDK:
 1. Wenn Sie sich davon überzeugt haben, dass sie lokal wie erwartet funktioniert, übertragen Sie den Code auf eine Entwicklungsverzweigung und verwenden Sie eine Nicht-Produktions-Pipeline von Cloud Manager, um sie in einer Umgebung bereitzustellen, die den Vorabversionskanal abonniert
 
 >[!CAUTION]
-> 
-> Die `aem-prerelease-sdk-api` artifactId darf bei der Bereitstellung in der Staging- oder Produktionsumgebung nie verwendet werden. Verwenden Sie immer aem-sdk-api bei der Bereitstellung über die Produktions-Pipeline. Ebenso sollten Code, der auf Vorabversions-APIs verweist, nicht über die Produktions-Pipeline bereitgestellt werden.
+Die `aem-prerelease-sdk-api` artifactId darf bei der Bereitstellung in der Staging- oder Produktionsumgebung nie verwendet werden. Verwenden Sie immer aem-sdk-api bei der Bereitstellung über die Produktions-Pipeline. Ebenso sollten Code, der auf Vorabversions-APIs verweist, nicht über die Produktions-Pipeline bereitgestellt werden.
 
 Das [AEM CS SDK-Build Analyzer-Maven-Plug-in v1.0 und höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing) erkennt, ob die Vorabversion-API in einem Projekt verwendet wird, indem die Abhängigkeiten überprüft werden. Wenn der Analyzer es findet, verwendet er die Vorabversion-SDK-API, um das Projekt zu analysieren.
 
