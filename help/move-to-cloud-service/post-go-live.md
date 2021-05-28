@@ -2,14 +2,22 @@
 title: Phase nach der Live-Schaltung
 description: Phase nach der Live-Schaltung
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 79%
 
 ---
 
 # Nach der Live-Schaltung {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="Beheben von Fehlern in AEM"
+>abstract="Überprüfen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie Developer Console und CRXDE Lite, um Ihnen bei der Fehlerbehebung von Problemen mit AEM zu helfen."
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Zugreifen auf und Verwalten von Protokollen"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
+
 
 In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dateien sicherstellen, Best Practices für die kontinuierliche Entwicklung überprüfen und Protokolle verwalten.
 
@@ -43,4 +51,10 @@ Unter [Zugreifen auf und Verwalten von Protokollen](https://docs.adobe.com/conte
 
 ### Zusätzliche Unterstützung {#additional-support}
 
-Wenden Sie sich bei Fragen zum Zugriff auf Cloud Service an Ihren Adobe-Support-Mitarbeiter oder das Adobe AEM CQ-Support-Portal.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Hilfe und Support"
+>abstract="Wenden Sie sich an unser AEM Support-Team, um nähere Informationen zu erhalten oder um etwaige Bedenken auszuräumen."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
+
+Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Kundenbetreuer oder [Support für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html), um weitere Informationen zu erhalten.
