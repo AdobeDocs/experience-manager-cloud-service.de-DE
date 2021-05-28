@@ -1,10 +1,10 @@
 ---
 title: Eingestellte APIs
 description: Spezifische Versionshinweise für veraltete und entfernte APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 7%
 
 ---
 
@@ -46,7 +46,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.apache.sling.settings</td>
     <td>AEM as a Cloud Service unterstützt keine Ausführungsmodi oder Dateisystemzugriff zur Laufzeit. </td>
     <td>05.10.20</td>
-    <td>01.06.21</td>
+    <td>Ende 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
