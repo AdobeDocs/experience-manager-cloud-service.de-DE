@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 97%
+source-wordcount: '1796'
+ht-degree: 92%
 
 ---
 
@@ -75,7 +75,7 @@ z. B. `jcr:content/data/myvariation`
 * Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
 `jcr:content`
 
-#### Asset-Speicherort  {#asset-location}
+#### Asset-Speicherort   {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -99,9 +99,9 @@ Integration mit dem Assets-Kern:
 
 >[!CAUTION]
 >
->Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
+>Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
@@ -168,7 +168,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
-* **Inhaltsfragment** ([ContentFragment](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhaltsfragment** ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
@@ -204,7 +204,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
    Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
-   * **Inhaltselement** ([ContentElement](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Inhaltselement** ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -216,7 +216,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
          * Entfernen von Varianten (siehe [Einschränkungen](#caveats))
          * Zugriff auf Variantendaten (siehe `ContentVariation`)
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
-   * **Inhaltsvariante** ([ContentVariation](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Inhaltsvariante** ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -246,9 +246,9 @@ Folgendes kann angepasst werden:
 
 * `ContentElement` kann angepasst werden an:
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) – für den Zugriff auf die Strukturdaten des Elements.
+   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) – für den Zugriff auf die Strukturdaten des Elements.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` kann angepasst werden an:
 
@@ -350,4 +350,4 @@ Wenn Sie ein Intervall von 5 Minuten für das automatische Speichern festlegen m
 
 Weitere Informationen finden Sie unter
 
-* [Kernkomponenten – Inhaltsfragmentkomponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
+* [Kernkomponenten – Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
