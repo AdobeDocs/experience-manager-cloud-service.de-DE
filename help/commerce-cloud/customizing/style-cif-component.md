@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 96%
+source-wordcount: '2549'
+ht-degree: 94%
 
 ---
 
@@ -71,7 +71,7 @@ Die CSS- und JavaScript-Dateien, die für das Rendern der Designs/Stile der Stor
 
 Markenspezifische Stile können auf AEM CIF-Kernkomponenten angewendet werden, indem das von diesen Client-Bibliotheken verwaltete CSS hinzugefügt und überschrieben wird. Kenntnisse dazu, wie Client-Bibliotheken strukturiert sind und auf der Seite eingeschlossen werden, sind von entscheidender Bedeutung.
 
-Das [ui.frontend](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/uifrontend.html) ist ein dediziertes [webpack](https://webpack.js.org/)-Projekt für die Verwaltung aller Frontend-Assets eines Projekts. Dadurch können Frontend-Entwickler eine beliebige Zahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr nutzen.
+Das [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) ist ein dediziertes [webpack](https://webpack.js.org/)-Projekt für die Verwaltung aller Frontend-Assets eines Projekts. Dadurch können Frontend-Entwickler eine beliebige Zahl von Sprachen und Technologien wie [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) und vieles mehr nutzen.
 
 Das `ui.frontend`-Modul ist ebenfalls ein Maven-Modul und mit dem größeren Projekt durch Einsatz eines NPM-Moduls (dem [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)) integriert. Während eines Builds kopiert der `aem-clientlib-generator` die kompilierten CSS- und JavaScript-Dateien im `ui.apps`-Modul in eine Client-Bibliothek.
 
@@ -81,7 +81,7 @@ Das `ui.frontend`-Modul ist ebenfalls ein Maven-Modul und mit dem größeren Pro
 
 ## Teaser-Stil aktualisieren {#ui-frontend-module}
 
-Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, wie das `ui.frontend`-Modul und die Client-Bibliotheken funktionieren. Verwenden Sie [eine IDE Ihrer Wahl](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide), um das Venia-Projekt zu importieren. Die verwendeten Screenshots stammen aus der [Visual Studio Code-IDE](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, wie das `ui.frontend`-Modul und die Client-Bibliotheken funktionieren. Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide), um das Venia-Projekt zu importieren. Die verwendeten Screenshots stammen aus der [Visual Studio Code-IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navigieren Sie zum Modul **ui.frontend** und erweitern Sie es. Erweitern Sie dann die Ordnerhierarchie zu: `ui.frontend/src/main/styles/commerce`:
 
@@ -178,7 +178,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    Diese Client-Bibliotheken werden nicht vom `ui.frontend`-Modul verwaltet. Stattdessen enthalten sie CSS- und JavaScript-Abhängigkeiten, die von Adobe bereitgestellt werden. Die Definitionen für diese Client-Bibliotheken befinden sich in der `.content.xml`-Datei unter dem jeweiligen Ordner.
 
-   **clientlib-base** – Dies ist eine leere Client-Bibliothek, die die erforderlichen Abhängigkeiten von [AEM-Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) einfach einbettet. Die Kategorie lautet `venia.base`.
+   **clientlib-base** – Dies ist eine leere Client-Bibliothek, die die erforderlichen Abhängigkeiten von [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) einfach einbettet. Die Kategorie lautet `venia.base`.
 
    **clientlib-cif** – Dies ist ebenfalls eine leere Client-Bibliothek, die die erforderlichen Abhängigkeiten von [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) einfach einbettet. Die Kategorie lautet `venia.cif`.
 
@@ -445,7 +445,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
    ```
 
    >[!NOTE]
-   >Es gibt zusätzliche [IDE-Einstellungen und -Tools](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment), die Projektdateien direkt mit einer lokalen AEM-Instanz synchronisieren können, ohne dass ein vollständiger Maven-Build erforderlich ist.
+   >Es gibt zusätzliche [IDE-Einstellungen und -Tools](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment), die Projektdateien direkt mit einer lokalen AEM-Instanz synchronisieren können, ohne dass ein vollständiger Maven-Build erforderlich ist.
 
 ## Aktualisierten Produkt-Teaser anzeigen {#view-updated-product-teaser}
 
@@ -473,7 +473,7 @@ Sie haben gerade den Stil Ihrer ersten AEM CIF-Kernkomponente festgelegt und daf
 
 ## Bonusaufgabe {#bonus-challenge}
 
-Verwenden Sie das [AEM-Stilsystem](/help/sites-cloud/authoring/features/style-system.md), um zwei Stile einzurichten, die von einem Inhaltsautor aktiviert bzw. deaktiviert werden können. [Entwickeln mit dem Stilsystem](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) umfasst detaillierte Schritte und Informationen dazu, wie es funktioniert.
+Verwenden Sie das [AEM-Stilsystem](/help/sites-cloud/authoring/features/style-system.md), um zwei Stile einzurichten, die von einem Inhaltsautor aktiviert bzw. deaktiviert werden können. [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) umfasst detaillierte Schritte und Informationen dazu, wie es funktioniert.
 
 ![Bonusaufgabe – Stilsystem](../assets/style-cif-component/bonus-challenge.png)
 
@@ -481,7 +481,7 @@ Verwenden Sie das [AEM-Stilsystem](/help/sites-cloud/authoring/features/style-sy
 
 * [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 * [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
-* [Lokale AEM-Entwicklungsumgebung einrichten](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Lokale AEM-Entwicklungsumgebung einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-seitige Bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
-* [Erste Schritte mit AEM Sites](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [Entwickeln mit dem Stilsystem](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
