@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset-Verwaltung
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
-ht-degree: 78%
+source-wordcount: '3084'
+ht-degree: 80%
 
 ---
 
@@ -112,7 +112,7 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 ### Komponente: Dynamic Media {#dynamic-media-component}
 
-Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die Dynamic Media-Komponente ist intelligent. Unabhängig davon, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** tippen.
 
-* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Beachten Sie, dass alle [!DNL Experience Manager] Dynamic Media Smart Imaging-DPR-Werte ignoriert werden.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
-   * Unter &quot;Vorgabetyp&quot;ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Bildes.
 
@@ -243,17 +243,17 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
 * **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**  - Damit Dynamic Media eine intelligente Zuschnittwiedergabe mit einem Seitenverhältnis wählen kann, das dem Seitenverhältnis des Originalbilds am besten entspricht, wählen Sie diese Option aus.
 
-* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Beachten Sie, dass alle [!DNL Experience Manager] Dynamic Media Smart Imaging-DPR-Werte ignoriert werden.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * Unter &quot;Vorgabetyp&quot;ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Smart-Zuschnitt-Bildes.
 
@@ -273,7 +273,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
 Die Komponente „Interaktive Medien“ ist für Assets mit interaktiven Elementen wie Hotspots oder Imagemaps vorgesehen. Verwenden Sie bei interaktiven Bildern, interaktiven Videos oder Karussellbannern die Komponente **[!UICONTROL Interaktive Medien]**.
 
-Die Komponente „Interaktive Medien“ ist eine intelligente Komponente. Je nachdem, ob Sie ein Bild oder Video hinzufügen, werden Ihnen unterschiedliche Optionen zur Verfügung gestellt. Darüber hinaus ist der Viewer responsiv - die Größe des Bildschirms ändert sich automatisch entsprechend der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die interaktive Medienkomponente ist intelligent. Unabhängig davon, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Darüber hinaus ist der Viewer responsiv - die Größe des Bildschirms ändert sich automatisch entsprechend der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
