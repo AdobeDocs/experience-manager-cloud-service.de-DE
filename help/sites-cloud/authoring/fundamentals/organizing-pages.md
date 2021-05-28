@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 100%
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Die Titel werden zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
+Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
