@@ -2,9 +2,9 @@
 title: Datenschutzbestimmungen - Adobe Experience Manager as a Cloud Service Sites - Einhaltung von Datenschutzbestimmungen
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen. darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM als Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1032'
 ht-degree: 43%
 
 ---
@@ -75,13 +75,13 @@ Opt-out:
 
 AEM Sites bietet eine optionale Integration in Analytics Foundation, die Funktionen des On-Demand-Dienstes von Adobe Analytics verwendet.
 
-Weitere Informationen zum Verwalten von Anfragen von Datensubjekten im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Weitere Informationen zum Verwalten von Anfragen von Datensubjekten im Zusammenhang mit Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bietet eine optionale Integration in Personalization Foundation by Target, die Funktionen innerhalb des On-Demand-Dienstes von Adobe Target verwendet.
 
-Weitere Informationen zur Verwaltung von Anfragen von Datensubjekten im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Privatsphäre und Datenschutz-Grundverordnung](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Weitere Informationen zur Verwaltung von Anfragen von Datensubjekten im Zusammenhang mit Adobe Target finden Sie unter [Adobe Target - Privatsphäre und Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -125,7 +125,7 @@ Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Daher 
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Vorschau der ContextHub-Persistenz {#previewing-persistence-of-contexthub}
+### Vorschau der ContextHub-Persistenz  {#previewing-persistence-of-contexthub}
 
 Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglichkeiten:
 
