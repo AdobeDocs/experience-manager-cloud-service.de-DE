@@ -2,10 +2,10 @@
 title: Planungsphase
 description: Planungsphase
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 98%
 
 ---
 
@@ -25,13 +25,13 @@ AEM as a Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwa
 
 Es gibt jedoch eine Reihe von Unterschieden zwischen AEM On-Premise oder in Adobe Managed Services im Vergleich zu AEM as a Cloud Service.
 
-Die wichtigen Unterschiede finden Sie unter [Wichtige Änderungen in AEM Cloud Service](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/aem-cloud-changes.html).
+Die wichtigen Unterschiede finden Sie unter [Wichtige Änderungen in AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=de).
 
 ## Veraltete Funktionen {#deprecated-features}
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
-Weitere Informationen zu Funktionen, die in Experience Manager as a Cloud Service als veraltet markiert wurden, finden Sie unter [Veraltete Funktionen](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Weitere Informationen zu Funktionen, die in Experience Manager as a Cloud Service als veraltet markiert wurden, finden Sie unter [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
 
 ## Grundlegendes zur Planungsphase {#introduction}
 
