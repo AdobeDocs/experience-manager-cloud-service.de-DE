@@ -2,10 +2,10 @@
 title: Protokollierung für AEM als Cloud Service
 description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder wie Sie die Datenprotokollierung AEM als Cloud Service anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 98%
+source-wordcount: '2330'
+ht-degree: 97%
 
 ---
 
@@ -549,7 +549,7 @@ AEM-Protokolle befinden sich im Ordner `crx-quickstart/logs`, in dem die folgend
 * AEM-Protokollierung von HTTP-Anfragen: `request.log`
 * AEM-Protokollierung von HTTP-Zugriffen: `access.log`
 
-Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
+Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
 
 Abrufen der Protokolle:
 
