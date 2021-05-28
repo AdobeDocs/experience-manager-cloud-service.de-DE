@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset-Management,Connected Assets,Asset-Verteilung, Benutzer und Gruppen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -198,7 +198,7 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Asset-Einblicke](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insight](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
