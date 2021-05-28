@@ -2,10 +2,10 @@
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 97%
+source-wordcount: '750'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Zum Zwecke von programmatischem Arbeiten mit Tags oder zum Erweitern von Tags in einem benutzerdefinierten AEM-Programm wird in diesem Dokument die Verwendung der
 
-* [Tagging-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html),
+* [Tagging-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html),
 
 die mit dem
 
@@ -26,7 +26,7 @@ Weitere Informationen zum Tagging finden Sie unter:
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
-Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der `cq:tags`String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Er entfernt `TagID`, die auf nicht vorhandene Tags verweisen, und aktualisiert `TagID`für verschobene oder zusammengefügte Tags. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html):
+Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der `cq:tags`String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Er entfernt `TagID`, die auf nicht vorhandene Tags verweisen, und aktualisiert `TagID`für verschobene oder zusammengefügte Tags. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html):
 
 * `JcrTagManagerFactory` – gibt eine JCR-basierte Implementierung eines `TagManager`s zurück. Es ist die Referenzimplementierung der Tagging-API.
 * `TagManager` – ermöglicht das Auflösen und Erstellen von Tags nach Pfaden und Namen.
@@ -142,13 +142,13 @@ Wird beispielsweise der Seite **Produkte** das Tag **Tiere** hinzugefügt wird, 
 
 Die Server-seitige API verfügt über lokalisierte `title`-bezogene Methoden:
 
-* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
