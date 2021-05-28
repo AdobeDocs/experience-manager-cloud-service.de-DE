@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud Service mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
 feature: Inhaltsfragmente, GraphQL-API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 78%
@@ -158,7 +158,7 @@ Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprech
 
 So aktivieren Sie den entsprechenden Endpunkt:
 
-1. Navigieren Sie zu **Tools**, **Sites** und wählen Sie **GraphQL** aus.
+1. Navigieren Sie zu **Tools**, **Assets** und wählen Sie **GraphQL** aus.
 1. Wählen Sie **Erstellen**.
 1. Das Dialogfeld **GraphQL-Endpunkt** erstellen wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; können Sie einen beliebigen Text eingeben.
