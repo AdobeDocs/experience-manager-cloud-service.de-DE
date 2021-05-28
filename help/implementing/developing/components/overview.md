@@ -2,9 +2,9 @@
 title: Komponentenübersicht
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '387'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Komponenten in AEM:
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Verfügen über ein konfigurierbares Bearbeitungsverhalten.
 * Verwenden Dialogfelder, die basierend auf Granite-UI-Komponenten mit Unterelementen erstellt werden.
-* Werden mit [HTL](https://docs.adobe.com/content/help/de/experience-manager-htl/using/overview.html) entwickelt.
+* Werden mit [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de) entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
@@ -44,7 +44,7 @@ Für jede AEM-Komponente gilt Folgendes:
 
 ## AEM-Kernkomponenten {#aem-core-components}
 
-[AEM-Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html) sind eine Reihe standardisierter Web-Content-Management-Komponenten (WCM) für AEM, um die Entwicklungszeit zu verkürzen und die Wartungskosten Ihrer Websites zu senken.
+[AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe standardisierter Web-Content-Management-Komponenten (WCM) für AEM, um die Entwicklungszeit zu verkürzen und die Wartungskosten Ihrer Websites zu senken.
 
 Die Kernkomponenten werden mit AEM as a Cloud Service bereitgestellt; das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) veranschaulicht, wie Komponenten implementiert und verwendet werden. Die Komponenten werden mit dem gesamten Quell-Code bereitgestellt und können unverändert oder als Ausgangspunkte für geänderte oder erweiterte Komponenten genutzt werden.
 
