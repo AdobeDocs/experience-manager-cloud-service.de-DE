@@ -2,14 +2,14 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 100%
 
 ---
 
-# Erstellen von Seitenvorlagen  {#creating-page-templates}
+# Erstellen von Seitenvorlagen   {#creating-page-templates}
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
@@ -91,7 +91,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 >
 >Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, sollten Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/get-started/localization.html) nutzen.
+>Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, sollten Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
@@ -532,7 +532,7 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 >
 >Der ursprüngliche Inhalt dient zum Vorbereiten von Komponenten und dem Seitenlayout, die als Ausgangspunkt für die Erstellung des Inhalts dienen. Dies soll nicht der eigentliche Inhalt sein, der unverändert bleibt. Aus diesem Grund kann der anfängliche Inhalt nicht übersetzt werden.
 >
->Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html) verwenden.
+>Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) verwenden.
 
 ### Bearbeiten einer Vorlage – Layout – Vorlagenautor {#editing-a-template-layout-template-author}
 
