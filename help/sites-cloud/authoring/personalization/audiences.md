@@ -2,10 +2,10 @@
 title: Verwalten von Zielgruppen
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 100%
+source-wordcount: '964'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Zielgruppen werden mit einer Beschriftung versehen, die beschreibt, um welche Zi
 * CH – ContextHub-Segment
 * AT – Adobe Target-Zielgruppe
 
-## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“  {#creating-a-contexthub-segment-in-the-audiences-console}
+## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“   {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Sie können ContextHub-Segmente entweder in der Konsole „Zielgruppen“ oder während des Targeting-Verfahrens erstellen.
 
@@ -81,13 +81,13 @@ Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 
 | **Attribut** | **Beschreibung** | **Für weitere Informationen** |
 |---|---|---|
-| **Mobilgerät** | Target-Mobilgeräte auf Basis von Parametern wie Mobilgerät, Gerätetyp, Geräteanbieter, Bildschirmmaße (in Pixeln) usw. | Weitere Informationen finden Sie in der [Dokumentation](https://docs.adobe.com/content/help/de-DE/target/using/audiences/create-audiences/categories-audiences/mobile.html) von Adobe Target. |
-| **Benutzerdefiniert** | Benutzerdefinierte Parameter sind Mbox-Parameter. Wenn Sie Mbox-Parameter an Mboxes übergeben oder die Funktion „targetPageParams“ verwenden, werden diese Parameter hier angezeigt und können in Zielgruppen verwendet werden. | Weitere Informationen finden Sie in der [Dokumentation zu benutzerdefinierten Parametern](https://docs.adobe.com/content/help/de-DE/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) für Adobe Target. |
+| **Mobilgerät** | Target-Mobilgeräte auf Basis von Parametern wie Mobilgerät, Gerätetyp, Geräteanbieter, Bildschirmmaße (in Pixeln) usw. | Weitere Informationen finden Sie in der [Dokumentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) von Adobe Target. |
+| **Benutzerdefiniert** | Benutzerdefinierte Parameter sind Mbox-Parameter. Wenn Sie Mbox-Parameter an Mboxes übergeben oder die Funktion „targetPageParams“ verwenden, werden diese Parameter hier angezeigt und können in Zielgruppen verwendet werden. | Weitere Informationen finden Sie in der [Dokumentation zu benutzerdefinierten Parametern](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) für Adobe Target. |
 | **BS** | Sie können Benutzer, die ein bestimmtes Betriebssystem verwenden, als Ziel auswählen. | Richten Sie ihre Inhalte auf Benutzer aus, die Linux, Macintosh oder Windows verwenden. |
-| **Seiten der Site** | Targeting von Besuchern, die sich auf einer bestimmten Seite befinden oder die einen bestimmten Mbox-Parameter aufweisen. | Weitere Informationen finden Sie in der [Dokumentation für Website-Seiten](https://docs.adobe.com/content/help/de-DE/target/using/audiences/create-audiences/categories-audiences/site-pages.html) für Adobe Target. |
-| **Browser** | Sie können Benutzer, die einen speziellen Browser oder spezielle Browseroptionen beim Besuch Ihrer Seite verwenden, als Ziel auswählen. | Weitere Informationen finden Sie in der [Dokumentation für Browser-Optionen](https://docs.adobe.com/help/de-DE/target/using/audiences/create-audiences/categories-audiences/browser.html) für Adobe Target. |
-| **Besucherprofil** | Target-Besucher, die bestimmte Profilparameter erfüllen. | Weitere Informationen finden Sie in der [Dokumentation für Besucherprofile](https://docs.adobe.com/content/help/de-DE/target/using/audiences/visitor-profiles/visitor-profile.html) für Adobe Target. |
-| **Traffic-Quellen** | Targeting von Besuchern auf Grundlage der Suchmaschine oder Landingpage, von der sie auf Ihre Site geleitet werden | Weitere Informationen finden Sie in der [Dokumentation für Traffic-Quellen](https://docs.adobe.com/content/help/de-DE/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) für Adobe Target. |
+| **Seiten der Site** | Targeting von Besuchern, die sich auf einer bestimmten Seite befinden oder die einen bestimmten Mbox-Parameter aufweisen. | Weitere Informationen finden Sie in der [Dokumentation für Website-Seiten](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) für Adobe Target. |
+| **Browser** | Sie können Benutzer, die einen speziellen Browser oder spezielle Browseroptionen beim Besuch Ihrer Seite verwenden, als Ziel auswählen. | Weitere Informationen finden Sie in der [Dokumentation für Browser-Optionen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) für Adobe Target. |
+| **Besucherprofil** | Target-Besucher, die bestimmte Profilparameter erfüllen. | Weitere Informationen finden Sie in der [Dokumentation für Besucherprofile](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) für Adobe Target. |
+| **Traffic-Quellen** | Targeting von Besuchern auf Grundlage der Suchmaschine oder Landingpage, von der sie auf Ihre Site geleitet werden | Weitere Informationen finden Sie in der [Dokumentation für Traffic-Quellen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) für Adobe Target. |
 
 ## Bearbeiten von Zielgruppen mithilfe der Konsole „Zielgruppen“ {#modifying-an-audience-in-the-audiences-console}
 
