@@ -3,9 +3,9 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Bereitstellen
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 94%
 
 ---
@@ -20,8 +20,10 @@ Die Aktualisierung der [AEM-Version](/help/implementing/deploying/aem-version-up
 
 In diesem Dokument wird beschrieben, wie Entwickler ihr Vorgehen anpassen sollten, um sowohl mit Aktualisierungen der AEM as a Cloud Service-Version als auch mit benutzerspezifischen Aktualisierungen zu arbeiten.
 
+<!--
 >[!NOTE]
->Kunden mit vorhandener Code-Basis wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/de-DE/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Benutzerspezifische Versionen {#customer-releases}
 
@@ -40,8 +42,10 @@ Das folgende Video bietet einen Überblick über die Implementierung von Code f�
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->Kunden mit vorhandener Code-Basis wird empfohlen, die in der [AEM-Dokumentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html) beschriebene Repository-Umstrukturierung ausführen.
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Nach der Umstellung auf die neue Programmversion:
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
    * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen). Informationen zu Installationshaken finden Sie in der [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) . Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
 
-Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Implementierung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über Package Manager installiert werden.
@@ -111,7 +115,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandener Code-Basis die Repository-Umstrukturierung durchführen, die durch die 6.5 Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
+Wie oben erwähnt, sollten Kunden mit vorhandener Code-Basis die Repository-Umstrukturierung durchführen, die durch die 6.5 Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repoinit {#repoinit}
 
