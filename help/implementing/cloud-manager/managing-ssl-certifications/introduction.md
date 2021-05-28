@@ -2,14 +2,22 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Einführung – Verwalten von SSL-Zertifikaten
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 95%
+source-wordcount: '386'
+ht-degree: 86%
 
 ---
 
 # Einführung {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_sslcert"
+>title="Verwalten von SSL-Zertifikaten"
+>abstract="Cloud Manager bietet Kunden die Self-Service-Funktion zum Installieren von SSL-Zertifikaten über die Cloud Manager-Benutzeroberfläche. Cloud Manager verwendet einen Platform TLS-Dienst zur Verwaltung von SSL-Zertifikaten und privaten Schlüsseln, die im Besitz von Kunden sind und normalerweise von Zertifizierungsstellen von Drittanbietern bezogen werden."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html?lang=de" text="Anzeigen, Aktualisieren und Ersetzen eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html?lang=de" text="Status eines SSL-Zertifikats überprüfen"
+
 
 Cloud Manager bietet Kunden die Self-Service-Funktion zum Installieren von SSL-Zertifikaten über die Cloud Manager-Benutzeroberfläche. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und normalerweise von Zertifizierungsstellen Dritter bezogen werden, z. B. *Let&#39;s Encrypt*.
 
