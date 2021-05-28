@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 description: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 97%
 
 ---
 
@@ -14,16 +14,15 @@ ht-degree: 100%
 AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie der Cloud-nativen Skalierbarkeit, der Betriebszeit und der Aktualität, bietet AEM Sites as a Cloud Service auch eine Reihe von Sites-spezifischen Änderungen und Ergänzungen.
 
 >[!NOTE]
->
 >In diesem Dokument werden die wesentlichen Änderungen an AEM Sites aufgeführt. Allgemeine Änderungen an AEM as a Cloud Service und anderen Modulen finden Sie unter:
 >
 >* [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Übersicht über AEM as a Cloud Service – neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
->* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
->* [Wesentliche Änderungen an AEM as a Cloud Service (Versionshinweise)](/help/release-notes/aem-cloud-changes.md)
->* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
->* [Einführung in AEM Assets as a Cloud Service](/help/assets/overview.md)
->* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Übersicht über AEM as a Cloud Service – neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
+* [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
+* [Wesentliche Änderungen an AEM as a Cloud Service (Versionshinweise)](/help/release-notes/aem-cloud-changes.md)
+* [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Einführung in AEM Assets as a Cloud Service](/help/assets/overview.md)
+* [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 
 
 Änderungen und Ergänzungen an AEM Sites as a Cloud Service:
@@ -41,14 +40,13 @@ In AEM Cloud Service wurden Vorgänge, die die Benutzeroberfläche zuvor blockie
 Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberfläche unter `/mnt/overlay/dam/gui/content/asyncjobs.html` überprüfen.
 
 >[!NOTE]
->
->Der Benutzer muss keine Änderungen am System vornehmen, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
+Der Benutzer muss keine Änderungen am System vornehmen, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
 
 ## Neue Referenz-Site und Tutorial{#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM sowie die umfassenden Funktionen, Komponenten und Bereitstellungsmodelle widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Site und das [dazugehörige Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
+[WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM sowie die umfassenden Funktionen, Komponenten und Bereitstellungsmodelle widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Site und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
 
-Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). Von nun an erfolgt keine standardmäßige Installation einer Referenz-Site mehr. Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) mit dem aktualisierten Code der WKND-Referenz-Site bereitgestellt.
+Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). Von nun an erfolgt keine standardmäßige Installation einer Referenz-Site mehr. Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) mit dem aktualisierten Code der WKND-Referenz-Site bereitgestellt.
 
 ## Funktionen zur Laufzeit nicht verfügbar {#capabilities-not-available-at-runtime}
 
