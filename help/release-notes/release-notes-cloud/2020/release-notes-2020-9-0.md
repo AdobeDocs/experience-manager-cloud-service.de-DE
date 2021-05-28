@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wur
    * Selektive Veröffentlichung – Marketing-Teams können nun auf mit [!DNL Dynamic Media] synchronisierte Smart-Crop-Bilder und dynamische Ausgabedarstellungen von [!DNL Dynamic Media] zurückgreifen, um Werbematerial zu erstellen, ohne dass diese Assets für den weltweiten Versand in [!DNL Dynamic Media] veröffentlicht werden müssen. Die [!DNL Experience Manager]- und die [!DNL Dynamic Media]-Veröffentlichung sind entkoppelt und können separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
    * Administratoren können jetzt das bei der Bereitstellung erhaltene [!DNL Dynamic Media] Cloud Service-Passwort zurücksetzen. Das Zurücksetzen kann in der Benutzeroberfläche von [!DNL Experience Manager] erfolgen, ohne dass das [!DNL Dynamic Media Classic]-Desktop-Programm verwendet werden muss.
 
-* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen in Brand Portal](https://docs.adobe.com/content/help/de/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
    * Verbesserte PDF-Vorschau mit Adobe Document Cloud View SDK-Integration.
    * Funktion für Downloads mit einem Klick.
