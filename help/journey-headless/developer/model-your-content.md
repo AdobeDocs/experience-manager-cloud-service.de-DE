@@ -1,9 +1,9 @@
 ---
 title: Modell Ihres Inhalts
 description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie, wie Sie Ihre Inhalte für AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1830'
 ht-degree: 5%
 
 ---
@@ -277,3 +277,4 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
 * [AEM GraphQL-Schemas](access-your-content.md)  - So realisiert GraphQL Modelle
 * [Die Struktur von Beispielinhaltsfragmenten](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)  - Eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL
+   * [GraphQL-Modellierungsgrundlagen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) für die Verwendung mit GraphQL definieren und verwenden.
