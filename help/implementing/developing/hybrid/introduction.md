@@ -78,7 +78,7 @@ Durch das Client-seitige Rendern reagieren Seitenelemente schneller; Interaktion
 >
 >Technische Einzelheiten zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Artikeln:
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von React](getting-started-react.md)
-* [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md)
+>* [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md)
 
 Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
 * [SPA-Editor – Überblick](editor-overview.md).
@@ -113,8 +113,9 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
 Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten auf der Seite, das Neuanordnen von Komponenten und das Ändern des Layouts werden wie in jedem Nicht-SPA-AEM-Programm unterstützt.
 
 >[!NOTE]
-Der SPA-Editor ändert das DOM des Programms nicht. Die SPA selbst ist für das DOM verantwortlich.
-Um zu erfahren, wie das funktioniert, fahren Sie mit dem nächsten Abschnitt des Artikels [SPAs und der AEM-SPA-Editor](#spa-apps-and-the-aem-spa-editor) fort.
+>
+>Der SPA-Editor ändert das DOM des Programms nicht. Die SPA selbst ist für das DOM verantwortlich.
+>Um zu erfahren, wie das funktioniert, fahren Sie mit dem nächsten Abschnitt des Artikels [SPAs und der AEM-SPA-Editor](#spa-apps-and-the-aem-spa-editor) fort.
 
 ## SPAs und der AEM-SPA-Editor {#spa-apps-and-the-aem-spa-editor}
 
@@ -222,15 +223,17 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
    Einige spezifische Klassennamen werden auch für die Kennzeichnung von Platzhaltern und für die Drag-and-Drop-Funktion von Assets hinzugefügt.
 
    >[!NOTE]
-   Dieses Verhalten unterscheidet sich von Server-seitig gerenderten Seiten in AEM, wo für jede bearbeitbare Komponente ein `cq`-Element eingefügt wird.
-   Durch diesen Ansatz im SPA-Editor müssen benutzerdefinierte Elemente nicht mehr injiziert werden, da nur ein zusätzliches Datenattribut erforderlich ist. Dadurch wird das Markup-Verfahren für Frontend-Entwickler vereinfacht.
+   >
+   >Dieses Verhalten unterscheidet sich von Server-seitig gerenderten Seiten in AEM, wo für jede bearbeitbare Komponente ein `cq`-Element eingefügt wird.
+   >Durch diesen Ansatz im SPA-Editor müssen benutzerdefinierte Elemente nicht mehr injiziert werden, da nur ein zusätzliches Datenattribut erforderlich ist. Dadurch wird das Markup-Verfahren für Frontend-Entwickler vereinfacht.
 
 ## Headful und Headless in AEM {#headful-headless}
 
 SPAs können mit flexiblen Integrationsstufen innerhalb von AEM aktiviert werden, einschließlich SPAs, die außerhalb von AEM entwickelt und gepflegt werden. Darüber hinaus können SPAs innerhalb von AEM genutzt werden und gleichzeitig AEM verwenden, um Inhalte an zusätzliche Endpunkte headless bereitzustellen.
 
 >[!TIP]
-Weitere Informationen finden Sie im Dokument [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md).
+>
+>Weitere Informationen finden Sie im Dokument [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md).
 
 ## Nächste Schritte {#next-steps}
 
