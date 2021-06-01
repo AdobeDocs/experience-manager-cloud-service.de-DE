@@ -1,7 +1,7 @@
 ---
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 20%
@@ -36,7 +36,7 @@ Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/
 Ihre Cloud-Umgebungen werden über Cloud Manager erstellt, aufgerufen und angezeigt. Dabei kann es sich um eine Produktions-, Staging- oder Entwicklungsumgebung handeln. Verschiedene Umgebungen unterstützen unterschiedliche Zwecke und können mit verschiedenen CI/CD-Pipelines interagiert werden. Umgebungen bestehen aus Diensten wie:
 
 * [AEM-Autorendienste](#author-services)
-* [AEM Publish Services](publish-services)
+* [AEM Publish Services](#publish-services)
 * [Dispatcher Services](#dispatcher-services)
 
    >[!NOTE]
