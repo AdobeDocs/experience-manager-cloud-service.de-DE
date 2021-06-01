@@ -2,9 +2,9 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 13%
 
 ---
@@ -142,7 +142,23 @@ Die nächste Version ist für den 10. Juni 2021 geplant.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-### Veröffentlichungsdatum {#release-date-ctt}
+### Veröffentlichungsdatum {#release-date-ctt-latest}
+
+Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-ctt-latest}
+
+* Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
+
+* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, wo eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte Ordner `tmp` gelöscht, um Speicherplatz zu sparen.
+
+### Fehlerbehebungen {#bug-fixes-ctt-latest}
+
+* Beim Löschen eines Migrationssatzes wurde in der CTT-Benutzeroberfläche gelegentlich eine nicht hilfreiche Fehlermeldung angezeigt. Dieses Problem wurde behoben.
+
+* Wenn bei der Ausführung der Benutzerzuordnung Benutzer dieselbe E-Mail-Adresse auf dem Ziel und dem Host, aber unterschiedliche Benutzernamen hatten, schlug die gesamte Erfassung fehl. Dieses Problem wurde behoben. In einem solchen widersprüchlichen Szenario wird der Benutzer/die Gruppe übersprungen und als Konflikt in der Protokolldatei protokolliert.
+
+### Veröffentlichungsdatum {#release-date-ctt-may}
 
 Die Version 1.4.0 des Content Transfer Tool wurde am 11. Mai 2021 veröffentlicht.
 
