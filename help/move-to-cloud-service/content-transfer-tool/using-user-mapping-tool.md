@@ -2,7 +2,7 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
+source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 88%
@@ -26,7 +26,7 @@ Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrier
 
 ### Benutzerzuordnungs-Tool {#mapping-tool}
 
-Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit dem migrierten Inhalt verknüpft sind.  Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer und Gruppen so zu ändern, dass sie von IMS, der Single Sign-On-Funktion, die von AEM als Cloud Service verwendet wird, korrekt erkannt werden können.  Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
+Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit dem migrierten Inhalt verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer und Gruppen so zu ändern, dass sie von IMS, der Single Sign-On-Funktion, die von AEM als Cloud Service verwendet wird, korrekt erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
 
 ## Wichtige Überlegungen {#important-considerations}
 
