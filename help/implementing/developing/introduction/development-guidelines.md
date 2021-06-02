@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 97%
+source-wordcount: '2301'
+ht-degree: 96%
 
 ---
 
@@ -251,3 +251,7 @@ Wenn Port 587 angefordert wurde (nur zulässig, wenn der Mailserver Port 465 nic
 * `smtp.ssl` auf `false` festlegen
 
 Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.tls` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
+
+## Recommendations und Richtlinien für [!DNL Assets] {#use-cases-assets}
+
+Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
