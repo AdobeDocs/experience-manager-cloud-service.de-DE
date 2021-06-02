@@ -1,10 +1,10 @@
 ---
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 20%
+source-wordcount: '596'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,7 @@ Ihr Systemadministrator ist für die Einrichtung Ihres Cloud Manager-Teams veran
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 
-Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen. Diese entsprechen in der Regel einem erworbenen Service Level Agreement (SLA). Beispielsweise kann ein Programm die AEM Ressourcen zur Unterstützung der globalen öffentlichen Websites darstellen, während ein anderes Programm einen internen zentralen DAM darstellt. Sehen Sie sich dieses Video an, um mehr zu erfahren.
+Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen. Diese entsprechen in der Regel einem erworbenen Service Level Agreement (SLA). Beispielsweise kann ein Programm die AEM Ressourcen zur Unterstützung der globalen öffentlichen Websites darstellen, während ein anderes Programm einen internen zentralen DAM darstellt. Sehen Sie sich dieses [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) an, um mehr über die Verwendung von Cloud Manager-Programmen zu erfahren.
 
 Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 
@@ -40,7 +40,7 @@ Ihre Cloud-Umgebungen werden über Cloud Manager erstellt, aufgerufen und angeze
 * [Dispatcher Services](#dispatcher-services)
 
    >[!NOTE]
-   > Weitere Informationen zu den verfügbaren Umgebungen finden Sie im Video [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager) . Weitere Informationen zu den Umgebungstypen, die ein Benutzer erstellen kann, und dazu, wie der Benutzer eine Umgebung erstellen kann, finden Sie unter [Umgebungen verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de) .
+   > Weitere Informationen zu den verfügbaren Umgebungen finden Sie im Video [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de#cloud-manager) . Weitere Informationen zu den Umgebungstypen, die ein Benutzer erstellen kann, und dazu, wie der Benutzer eine Umgebung erstellen kann, finden Sie unter [Umgebungen verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de) .
 
 ### AEM-Autorendienst {#author-services}
 
