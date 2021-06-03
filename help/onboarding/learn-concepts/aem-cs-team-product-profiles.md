@@ -1,9 +1,9 @@
 ---
 title: AEM als Cloud Service-Team und Produktprofile
 description: Auf dieser Seite erfahren Sie mehr über AEM als Cloud Service-Team und Produktprofile.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Produktprofile {#profiles}
 
-Wenn Sie einem Benutzer Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchten Sie ihm nicht unbedingt uneingeschränkten Zugriff gewähren. Produktprofile ermöglichen es jeder Lösung, über eigene Benutzerberechtigungen zu verfügen. Diese sind über die Adobe Admin Console verfügbar und zugänglich.
+Wenn Sie einem Benutzer Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchten Sie ihm nicht unbedingt uneingeschränkten Zugriff gewähren. Produktprofile ermöglichen es jeder Lösung, über eigene Benutzerberechtigungen zu verfügen. Diese sind über [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md) verfügbar und zugänglich.
 
 Lesen Sie mehr über [AEM als Cloud Service-Produktprofile](#aem-product-profiles) und [Cloud Manager-Produktprofile](#cloud-manager-product-profiles) , um zu verstehen, wie diese bei der Teameinrichtung konzertiert funktionieren.
 
@@ -46,7 +46,7 @@ Jedem Produktprofil sind spezifische Berechtigungen zugeordnet. Wenn Sie beispie
 
 * **Entwickler** haben Sie die Berechtigung, ein persönliches Zugriffstoken für den Zugriff auf Git zu generieren.
 
-* **Programm-Manager**, haben Sie Zugriff auf Git.
+* **Programm-Manager**, Sie sind berechtigt, Pipelines zu planen, dreistufige Quality Gates zu überschreiben und eine Produktionsgenehmigung zu erteilen.
 
 Ein Benutzer kann mehreren Produktprofilen zugewiesen werden. Wenn einem Benutzer beispielsweise die Rollen Business Owner und Deployment Manager zugewiesen werden, erhalten diese die Kombination oder Summe dieser Berechtigungen.
 
@@ -57,4 +57,4 @@ Ihr Cloud Manager-Team umfasst mindestens:
 * Ein Entwickler
 
    >[!NOTE]
-   >Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer einem von zwei Produktprofilen `AEM Users-xxx` oder `AEM Administrators-xxx` angehören. Sie müssen über Berechtigungen für die Instanz verfügen. Berechtigungen zur Verwaltung des zugehörigen Cloud Manager reichen nicht aus.
+   >Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer zu einem von zwei Produktprofilen gehören, z. B. `AEM Users` oder `AEM Administrators`. Sie müssen über Berechtigungen für die Instanz verfügen. Berechtigungen zum Verwalten des zugehörigen Cloud Manager reichen nicht aus.
