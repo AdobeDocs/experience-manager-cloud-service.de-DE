@@ -2,7 +2,7 @@
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Zeichnungen auf Seiten zu belassen, da Sie Notizen mit fixierbaren Anmerkungen den Prozess der Inhaltsüberprüfung unterstützen
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 35%
@@ -45,7 +45,7 @@ Anmerkungen sind nur im Anmerkungsmodus sichtbar.
 
 1. Klicken oder tippen Sie auf die Anmerkung, um das Anmerkungsdialogfeld zu öffnen und dessen Details anzuzeigen.
 
-   ![Anmerkungsdetails](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Anmerkungsdetails](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. Um den Anmerkungsmodus zu beenden und zum zuvor verwendeten Modus zurückzukehren, tippen/klicken Sie auf die Schaltfläche x rechts oben in der Symbolleiste.
 
