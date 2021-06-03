@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1496'
+ht-degree: 15%
 
 ---
 
@@ -86,6 +86,8 @@ Die folgende Version (2021.5.0) wird am 27. Mai 2021 veröffentlicht.
 
 * Sie können die Auslassungszeichen als Anmerkung verwenden, um Assets zu überprüfen. Wenn kleine Ellipsen verwendet werden, überschneidet sich die Ellipse mit der Anzahl der Anmerkung in der Druckversion. (CQ-4316792)
 
+* Die Option für die schnelle Veröffentlichung wird nicht angezeigt, wenn nach der Suche ein Asset aus den Suchergebnissen ausgewählt wird. (CQ-4317748)
+
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
@@ -148,7 +150,7 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 Die Version 2021.4.0 von Cloud Manager in AEM as a Cloud Service wurde am 8. April 2021 veröffentlicht.
 Die nächste Version ist für den 6. Mai 2021 geplant.
 
-### Neue Funktionen {#what-is-new-april}
+### Neuigkeiten {#what-is-new-april}
 
 * Die Benutzeroberfläche aktualisiert die Workflows Programm hinzufügen und bearbeiten , um sie intuitiver zu gestalten.
 
@@ -158,7 +160,7 @@ Die nächste Version ist für den 6. Mai 2021 geplant.
 
 * Die Schaltfläche **Git** verwalten wird auch dann auf der Pipelines-Karte angezeigt, wenn keine Pipelines konfiguriert wurden.
 
-* Die Version des von Cloud Manager verwendeten AEM Projektarchetyps wurde auf Version 27 aktualisiert.
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 27 aktualisiert.
 
 * Projekte, die in der Adobe I/O Developer Console von Cloud Manager erstellt wurden, können nicht mehr unbeabsichtigt bearbeitet oder gelöscht werden.
 
@@ -166,9 +168,9 @@ Die nächste Version ist für den 6. Mai 2021 geplant.
 
 * Umgebungsvariablen können jetzt auf einen bestimmten Dienst übertragen werden, entweder auf Autoren- oder auf Veröffentlichungsinstanz. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder höher.
 
-* Die Fehlermeldung beim Starten einer Pipeline beim Löschen einer Umgebung wurde geklärt.
+* Die Fehlermeldung beim Starten einer Pipeline nach dem Löschen einer Umgebung wurde klarer formuliert.
 
-* Von Eclipse-Projekten bereitgestellte OSGi-Bundles sind jetzt von der Regel `CQBP-84--dependencies` ausgeschlossen.
+* OSGi-Pakete, die von Eclipse-Projekten bereitgestellt werden, sind nun von der Regel `CQBP-84--dependencies` ausgeschlossen.
 
 ### Fehlerbehebungen {#bug-fixes-cm-april}
 
@@ -178,7 +180,7 @@ Die nächste Version ist für den 6. Mai 2021 geplant.
 
 * Probleme für `CloudServiceIncompatibleWorkflowProcess` hatten den falschen Schweregrad in der herunterladbaren CSV-Datei des Problems.
 
-* Die `Runmode`-Prüfung erzeugte Fehlalarme auf Nicht-Ordner-Knoten.
+* Die `Runmode`-Prüfung ergab falschpositive Werte für Nicht-Ordner-Knoten.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
