@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 13%
+source-wordcount: '1349'
+ht-degree: 20%
 
 ---
 
@@ -97,6 +97,29 @@ Sehen Sie sich das Video [Versionsübersicht vom Mai 2021](https://video.tv.adob
    * Asien-Pazifik 24. Juni 2021.
 
 
+## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+
+### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
+
+* **Kontextuelle Hilfe**: Es wurde eine kontextuelle Hilfe für den Editor für adaptive Formulare, den Vorlageneditor und den Design-Editor hinzugefügt, um Autoren dabei zu helfen, verschiedene Funktionen von Editoren besser zu verstehen.
+* **Fehlermeldungen im Eigenschaftenbrowser**: Es wurden Fehlermeldungen für jede Eigenschaft im Browser Adaptive Forms Properties hinzugefügt. Diese Meldungen helfen beim Verständnis der zulässigen Werte für ein Feld.
+
+### Bevorstehende Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Output as a Cloud Service: Der Output-Dienst unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen und asynchronen Batch-Modus generieren. Dabei können Sie mit dem Output-Dienst Anwendungen mit folgenden Funktionen erstellen:
+
+* Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
+* Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
+* Generieren von druckbaren PDFs aus XFA-Formular-PDFs
+
+Sie können an formscsbeta@adobe.com schreiben, um sich für das Betaprogramm zu registrieren.
+
+### Fehlerbehebungen in [!DNL Forms] {#forms-bugs-fixed}
+
+* Wenn Sie in einem Schritt &quot;Aufgabe zuweisen&quot;von AEM Forms-Workflows das Standardsymbol der Aktionsschaltflächen durch ein Coral-Symbol ersetzen, funktioniert der Workflow nicht mehr und protokolliert eine Ausnahme. Der Workflow funktioniert wie erwartet, wenn Standardsymbole verwendet werden.
+* Wenn Sie auf der Layoutebene die Anzahl der Spalten ändern, die Bearbeitungsebene öffnen und einige Komponenten in ein Bedienfeld ziehen, werden im Inhaltsbereich des adaptiven Formulareditors quadratische blaue Felder angezeigt und der Editor reagiert nicht mehr.
+* Die Fehlermeldung einer Regeleditoroption im Zusammenhang mit der Bereitstellung der URL eines adaptiven oder externen Assets ist zu lang und nicht benutzerfreundlich.
+
 ## Cloud Manager {#cloud-manager}
 
 In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0.
@@ -106,11 +129,11 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
 Die nächste Version ist für den 10. Juni 2021 geplant.
 
-### Neue Funktionen {#what-is-new-may}
+### Neuigkeiten {#what-is-new-may}
 
-* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, in demselben bereitgestellten Paketsatz.
+* Die PackageOverlaps-Qualitätsregel erkennt jetzt, wenn dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, und zwar in demselben bereitgestellten Paketsatz.
 
-* Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
+* Der Repository-Endpunkt in der Public API enthält jetzt die Git-URL.
 
 * Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarios.
 
@@ -118,7 +141,7 @@ Die nächste Version ist für den 10. Juni 2021 geplant.
 
 * Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programme angewendet werden.
 
-* Das Erlebnis Bearbeiten des Programms wurde aktualisiert.
+* Programmbearbeitung wurde modernisiert.
 
 * In der Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebungsdetails&quot;werden bis zu 250 Domänennamen per Paginierung angezeigt.
 
@@ -132,11 +155,11 @@ Die nächste Version ist für den 10. Juni 2021 geplant.
 
 * Anstatt &quot;gelöschte&quot;Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **DELETED**.
 
-* Einige Qualitätsprobleme vom Typ Code Smell wirkten sich fälschlicherweise auf die Zuverlässigkeitsbewertung aus.
+* Einige Code-Smell-Qualitätsprobleme haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
 
 * Da Wildcard-Domänen nicht unterstützt werden, verhindert die Benutzeroberfläche das Senden einer Wildcard-Domäne durch den Benutzer.
 
-* Wenn die Pipelineausführung zwischen Mitternacht und 1 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als die am Vortag erstellte Version.
+* Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer war als eine Version, die am Vortag erstellt wurde.
 
 * Während der Einrichtung des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode Git verwalten auf der Seite Überblick als Link von der Heldenkarte angezeigt.
 
@@ -146,7 +169,7 @@ Die nächste Version ist für den 10. Juni 2021 geplant.
 
 Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlicht.
 
-### Neue Funktionen {#what-is-new-ctt-latest}
+### Neuigkeiten {#what-is-new-ctt-latest}
 
 * Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
 
@@ -162,7 +185,7 @@ Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlich
 
 Die Version 1.4.0 des Content Transfer Tool wurde am 11. Mai 2021 veröffentlicht.
 
-### Neue Funktionen {#what-is-new-ctt-may}
+### Neuigkeiten {#what-is-new-ctt-may}
 
 * Diese Version des Content Transfer Tool erstellt Textausgabeformate für Assets, die in Cloud Service migriert werden. Textausgabeformate sind erforderlich, um die Volltextsuche in aufgenommenen Assets zu unterstützen.
 * Die maximale Anzahl der Migrationssätze für das Content Transfer Tool, die ein Benutzer erstellen kann, wurde von 4 auf 10 erhöht.
