@@ -1,57 +1,63 @@
 ---
 title: Hinzufügen von Seitenanmerkungen
-description: Viele Komponenten, die direkt zur Handhabung von Inhalten verwendet werden, ermöglichen das Hinzufügen von Anmerkungen.
+description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Zeichnungen auf Seiten zu belassen, da Sie Notizen mit fixierbaren Anmerkungen den Prozess der Inhaltsüberprüfung unterstützen
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 100%
+source-wordcount: '700'
+ht-degree: 35%
 
 ---
 
 # Hinzufügen von Seitenanmerkungen {#adding-page-annotations}
 
-Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
+Das Erstellen von Inhalten für Ihr digitales Erlebnis erfordert oft Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
 
-Bei einer Anmerkung wird eine farbige Zeichnung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
+Eine Anmerkung platziert eine einfache Zeichnung oder Notiz (denken Sie an eine reale Kurznotiz) auf der Seite. Mit der Anmerkung können Sie Kommentare oder Fragen für andere Autoren und Prüfer hinterlassen.
 
->[!NOTE]
+>[!TIP]
 >
 >Beachten Sie, dass Sie auch mithilfe von [Kommentaren](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) Feedback zu einer Seite geben können.
 
-## Anmerkungen {#annotations}
-
 Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet.
 
->[!CAUTION]
+>[!TIP]
 >
->Durch Löschen einer Ressource (z. B. einer Komponente) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind (unabhängig von ihrer Position auf der Seite als Ganzes).
+>Je nach Ihren Anforderungen können Sie auch einen [Workflow](/help/sites-cloud/authoring/workflows/overview.md) entwickeln, um Benachrichtigungen zu senden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
 
->[!NOTE]
->
->Je nach Ihren Anforderungen können Sie auch einen Workflow erstellen, damit Benachrichtigungen gesendet werden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
+## Kennzeichnung von Anmerkungen {#annotation-indicator}
 
-### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
+Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
 
-Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen.
+![Kennzeichnung von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-1. Sie können den Anmerkungsmodus über das Symbol in der Symbolleiste (rechts oben) aufrufen, wenn Sie eine Seite bearbeiten:
+## Anmerkungsmodus {#annotate-mode}
+
+Anmerkungen sind nur im Anmerkungsmodus sichtbar.
+
+1. Sie können den Anmerkungsmodus über das Symbol in der Symbolleiste (oben rechts) aufrufen, wenn Sie eine Seite bearbeiten:
 
    ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
 
    Sie können nun vorhandene Anmerkungen anzeigen.
 
-   >[!NOTE]
-   >
-   >Zum Beenden des Anmerkungsmodus tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
+   ![Anmerkungsbeispiele](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
+1. Klicken oder tippen Sie auf die Anmerkung, um das Anmerkungsdialogfeld zu öffnen und dessen Details anzuzeigen.
 
-   >[!NOTE]
-   >
-   >Wenn Sie keine weiteren Anmerkungen hinzufügen möchten (und zur Anzeige zurückkehren wollen), tippen/klicken Sie auf das Symbol „Abbrechen“ (x-Symbol in einem weißen Kreis) links in der Symbolleiste oben.
+   ![Anmerkungsdetails](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Tippen/klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
+1. Um den Anmerkungsmodus zu beenden und zum zuvor verwendeten Modus zurückzukehren, tippen/klicken Sie auf die Schaltfläche x rechts oben in der Symbolleiste.
+
+## Hinzufügen und Bearbeiten von Anmerkungen {#annotating-a-component}
+
+Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen für Ihren Inhalt erstellen, bearbeiten, verschieben oder löschen
+
+1. [Starten Sie den ](#annotate-mode) Anmerkungsmodus auf der Seite.
+
+1. Klicken oder tippen Sie auf das Symbol Anmerkung hinzufügen (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
+
+1. Klicken oder tippen Sie auf die gewünschte Komponente (Komponenten, die kommentiert werden können, werden mit einem blauen Rahmen markiert), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
    ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -64,31 +70,22 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
       Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
 
-   * Farbe wählen/ändern:
+   * Wählen oder ändern Sie die Farbe:
 
       ![Schaltfläche „Anmerkungsfarbfeld“](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
-   * Die Anmerkung löschen.
-
-      ![Schaltfläche zum Löschen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-delete.png)
-
-1. Sie können das Dialogfeld für die Anmerkungen schließen, indem Sie außerhalb des Dialogfelds. Eine abgeschnittene Ansicht (das erste Wort) der Anmerkung wird zusammen mit sämtlichen Zeichnungen angezeigt:
+1. Sie können das Anmerkungsdialogfeld schließen, indem Sie außerhalb des Dialogfelds auf klicken oder tippen. Eine abgeschnittene Ansicht der Anmerkung wird zusammen mit allen Zeichnungen angezeigt:
 
    ![Anmerkungszeichnungen](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. Wenn Sie mit dem Bearbeiten einer bestimmten Anmerkung fertig sind, können Sie Folgendes tun:
 
-   * Klicken/tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder die Anmerkung löschen.
-
-      * Zeichnungen können nicht unabhängig von der Anmerkung gelöscht werden.
+   * Klicken oder tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen. Nach dem Öffnen können Sie den Volltext anzeigen, Änderungen vornehmen oder [die Anmerkung löschen.](#deleting-annotations)
    * Positionieren Sie die Textmarkierung neu.
-   * Klicken/tippen Sie auf eine Zeichnung, um diese Zeichnung auszuwählen und sie auf die gewünschte Position zu ziehen.
-   * Verschieben oder kopieren Sie eine Komponente.
+   * Klicken oder tippen Sie auf eine Zeichnung, um diese Zeichnung auszuwählen und sie an die gewünschte Position zu ziehen.
+   * Verschieben oder Kopieren einer Komponente
+      * Alle zugehörigen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert, ihre Position in Bezug auf den Absatz bleibt jedoch gleich.
 
-      * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert, ihre Position in Relation zum Absatz bleibt gleich.
-
-
-1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, tippen/klicken Sie auf das Anmerkungssymbol (x-Symbol) oben rechts in der Symbolleiste.
 
 >[!NOTE]
 >
@@ -98,11 +95,37 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 >
 >Die Definition einer einzelnen Komponente bestimmt, ob Anmerkungen in Instanzen dieser Komponente möglich sind oder nicht.
 
-## Kennzeichnung von Anmerkungen {#annotation-indicator}
+## Löschen von Anmerkungen und Zeichnungen {#deleting-annotations}
 
-Anmerkungen werden nicht im Bearbeitungsmodus angezeigt, doch die Kennzeichnung oben rechts in der Symbolleiste gibt an, wie viele Anmerkungen auf der aktuellen Seite vorhanden sind. Die Kennzeichnung ersetzt das standardmäßige Anmerkungssymbol, dient jedoch ebenfalls als schneller Link, mit dem Sie den Anmerkungsmodus aktivieren/deaktivieren können:
+Anmerkungen und zugehörige Zeichnungen können gelöscht werden.
 
-![Kennzeichnung von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+1. [Starten Sie den ](#annotate-mode) Anmerkungsmodus auf der Seite.
+
+1. Klicken/tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen.
+
+1. Klicken oder tippen Sie auf das Symbol Löschen .
+
+   ![Anmerkung löschen](/help/sites-cloud/authoring/assets/annotation-delete.png)
+
+1. Die Anmerkung und alle zugehörigen Zeichnungen werden gelöscht.
+
+>[!NOTE]
+>
+>Beim Löschen einer Komponente werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind, unabhängig von ihrer Position auf der Seite als Ganzes.
+
+## Löschen von Zeichnungen nur {#deleting-sketches}
+
+Sie können bei allen zugehörigen Zeichnungen nur bestimmte Zeichnungen anstelle der gesamten Anmerkung löschen.
+
+1. [Starten Sie den ](#annotate-mode) Anmerkungsmodus auf der Seite.
+
+1. Klicken oder tippen Sie auf die Zeichnung. AEM markiert es mit einem dunkelblauen Kasten.
+
+   ![Zeichnung zum Löschen auswählen](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
+
+1. Drücken Sie die Entf-Taste auf Ihrer Tastatur.
+
+1. Die Zeichnung wird gelöscht, die Anmerkung bleibt jedoch erhalten.
 
 ## Hinzufügen von Anmerkungen zu anderen Ressourcen {#annotating-other-resources}
 
