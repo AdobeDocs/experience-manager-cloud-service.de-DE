@@ -1,7 +1,7 @@
 ---
 title: AEM als Cloud Service-Team und Produktprofile
 description: Auf dieser Seite erfahren Sie mehr über AEM als Cloud Service-Team und Produktprofile.
-source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
+source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -26,6 +26,8 @@ Ihre AEM als Cloud Service-Team-Mitglieder werden über die Admin Console beim O
 * **AEM Administrator**: Ein AEM Administrator wird in der Regel Entwicklern zugewiesen, insbesondere Entwicklern, die Zugriff auf beispielsweise die Entwicklungsumgebungen benötigen. Das Produktprofil AEM Administratoren wird verwendet, um Administratorberechtigungen in der zugehörigen AEM zu gewähren.
 
 * **AEM Benutzer**: AEM Benutzer sind die Benutzer in Ihrem Unternehmen, die AEM als Cloud Service im Rahmen der Vereinbarung mit Adobe verwenden. Diese Mitglieder müssen Zugriff auf AEM haben, um ihre Aufgaben wahrnehmen zu können. Das Produktprofil AEM Benutzer wird in der Regel einem AEM Inhaltsautor zugewiesen, der den Inhalt erstellt und überprüft (dabei kann es sich um verschiedene Typen handeln). z. B. Seiten, Assets, Veröffentlichungen usw.), bevor sie auf Ihrer Website veröffentlicht werden. Diesen Mitgliedern wird das AEM Benutzerproduktprofil zugewiesen, das unten angezeigt wird.
+
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
    >Jeder Benutzer, der einem AEM als Cloud Service-Produktprofil zugewiesen ist, hat (schreibgeschützt) Zugriff auf Cloud Manager.
