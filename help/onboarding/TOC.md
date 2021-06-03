@@ -5,9 +5,9 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: 9d9cdcb1b7f08fbfbaa4b0ec19f1b039334329ee
+source-git-commit: c430d28d046e312c19a4e96bd4e978fb41f2eed4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 95%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 95%
 + Onboarding-Konzepte {#onboarding-concepts}
    + [Systemadministrator](/help/onboarding/learn-concepts/system-administrator.md)
    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-   + [Identity Management-System](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
    + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Einführung in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM als Cloud Service-Team und Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
