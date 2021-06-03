@@ -1,7 +1,7 @@
 ---
 title: AEM als Cloud Service-Team und Produktprofile
 description: Auf dieser Seite erfahren Sie mehr über AEM als Cloud Service-Team und Produktprofile.
-source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
+source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -23,9 +23,9 @@ AEM as a Cloud Service ist das vollständig Cloud-native Angebot, das AEM als Di
 
 Ihre AEM als Cloud Service-Team-Mitglieder werden über die Admin Console beim Onboarding zu einem oder mehreren der folgenden Produktprofile hinzugefügt und zugewiesen.
 
-* **AEM Administrator**: Ein AEM Administrator wird in der Regel Entwicklern zugewiesen, insbesondere Entwicklern, die Zugriff auf beispielsweise die Entwicklungsumgebungen benötigen. Das Produktprofil AEM Administratoren wird verwendet, um Administratorberechtigungen in der zugehörigen AEM zu gewähren.
+* **AEM Administratoren**: Ein AEM Administrator wird in der Regel Entwicklern zugewiesen, insbesondere Entwicklern, die Zugriff auf beispielsweise die Entwicklungsumgebungen benötigen. Das Produktprofil AEM Administratoren wird verwendet, um Administratorberechtigungen in der zugehörigen AEM zu gewähren.
 
-* **AEM Benutzer**: AEM Benutzer sind die Benutzer in Ihrem Unternehmen, die AEM als Cloud Service im Rahmen der Vereinbarung mit Adobe verwenden. Diese Mitglieder müssen Zugriff auf AEM haben, um ihre Aufgaben wahrnehmen zu können. Das Produktprofil AEM Benutzer wird in der Regel einem AEM Inhaltsautor zugewiesen, der den Inhalt erstellt und überprüft (dabei kann es sich um verschiedene Typen handeln). z. B. Seiten, Assets, Veröffentlichungen usw.), bevor sie auf Ihrer Website veröffentlicht werden. Diesen Mitgliedern wird das AEM Benutzerproduktprofil zugewiesen, das unten angezeigt wird.
+* **AEM-Benutzer**: AEM Benutzer sind die Benutzer in Ihrem Unternehmen, die AEM als Cloud Service im Rahmen der Vereinbarung mit Adobe verwenden. Diese Mitglieder müssen Zugriff auf AEM haben, um ihre Aufgaben wahrnehmen zu können. Das Produktprofil AEM Benutzer wird in der Regel einem AEM Inhaltsautor zugewiesen, der den Inhalt erstellt und überprüft (dabei kann es sich um verschiedene Typen handeln). z. B. Seiten, Assets, Veröffentlichungen usw.), bevor sie auf Ihrer Website veröffentlicht werden. Diesen Mitgliedern wird das AEM Benutzerproduktprofil zugewiesen, das unten angezeigt wird.
 
    ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
