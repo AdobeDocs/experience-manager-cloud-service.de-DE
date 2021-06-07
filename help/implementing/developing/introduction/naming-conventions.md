@@ -2,10 +2,10 @@
 title: Benennungskonventionen
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 90%
+source-wordcount: '223'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### JCR-Service-Programme {#jcr-utilities}
 
-[JcrUtil](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
+[JcrUtil](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
 
 * `isValidName`
    * Stellt sicher, dass der Name nicht leer ist und nur gültige Zeichen enthält.
@@ -34,7 +34,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### Seiten-Manager {#page-manager}
 
-[PageManager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
+[PageManager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
 
 ### Verhalten der AEM-Benutzeroberfläche {#ui-behavior}
 
