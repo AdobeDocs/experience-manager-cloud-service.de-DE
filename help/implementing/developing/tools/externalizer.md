@@ -2,10 +2,10 @@
 title: Externalisieren von URLs
 description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert in eine externe und absolute URL umwandeln können.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 12%
+source-wordcount: '569'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ In AEM ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfa
 
 Da eine AEM als Cloud Service-Instanz ihre extern sichtbare URL nicht kennen kann und manchmal ein Link außerhalb des Anforderungsbereichs erstellt werden muss, bietet dieser Dienst eine zentrale Stelle, an der diese externen URLs konfiguriert und erstellt werden können.
 
-In diesem Artikel wird beschrieben, wie Sie den Externalizer-Dienst konfigurieren und verwenden. Technische Details zu diesem Dienst finden Sie im Abschnitt [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+In diesem Artikel wird beschrieben, wie Sie den Externalizer-Dienst konfigurieren und verwenden. Technische Details zu diesem Dienst finden Sie im Abschnitt [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Standardverhalten des Externalizers und Überschreiben von {#default-behavior}
 
@@ -49,7 +49,7 @@ Definieren Sie eine Domänenzuordnung für den Externalizer-Service wie folgt:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   wobei:
+   Dabei ist:
 
    * **`scheme`** ist normalerweise http oder https, kann aber ein anderes Protokoll sein.
 
@@ -125,4 +125,4 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der Externalizer-Dienst verw
 
 >[!TIP]
 >
->Weitere Beispiele finden Sie in den [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>Weitere Beispiele finden Sie in den [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
