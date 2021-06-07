@@ -2,9 +2,9 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3659'
 ht-degree: 99%
 
 ---
@@ -297,7 +297,7 @@ Insbesondere, wenn Sie sich den tatsächlichen Text einer **Titelkomponente** an
 
 Die definierten Eigenschaften sind von den einzelnen Definitionen abhängig. Zwar können sie komplexer als oben dargestellt sein, folgen aber dennoch denselben grundlegenden Prinzipien.
 
-## Komponentenhierarchie und Vererbung   {#component-hierarchy-and-inheritance}
+## Komponentenhierarchie und Vererbung  {#component-hierarchy-and-inheritance}
 
 Komponenten in AEM unterliegen der **Ressourcentyphierarchie**. Diese wird verwendet, um Komponenten mit der `sling:resourceSuperType`-Eigenschaft zu erweitern. Dies ermöglicht es der Komponente, von einer anderen Komponente zu erben.
 
@@ -450,7 +450,7 @@ Dieses Ereignis wird ausgelöst, wenn das Dialogfeld geladen (oder erneut gelade
 
 ## Vorschauverhalten {#preview-behavior}
 
-Der [WCM-Modus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
+Der [WCM-Modus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den Vorschaumodus gesetzt, auch wenn die Seite nicht aktualisiert wird.
 
 Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müssen so definiert werden, dass sie sich selbst aktualisieren und sich dann auf den Wert des Cookies verlassen.
 
