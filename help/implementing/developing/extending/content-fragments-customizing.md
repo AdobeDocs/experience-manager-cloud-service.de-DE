@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 92%
+source-wordcount: '1808'
+ht-degree: 95%
 
 ---
 
@@ -75,7 +75,7 @@ z. B. `jcr:content/data/myvariation`
 * Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
 `jcr:content`
 
-#### Asset-Speicherort   {#asset-location}
+#### Asset-Speicherort  {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -168,7 +168,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
-[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
-* **Inhaltsfragment** ([ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhaltsfragment** ([ContentFragment](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
@@ -204,7 +204,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
    Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
-   * **Inhaltselement** ([ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Inhaltselement** ([ContentElement](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -216,7 +216,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
          * Entfernen von Varianten (siehe [Einschränkungen](#caveats))
          * Zugriff auf Variantendaten (siehe `ContentVariation`)
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
-   * **Inhaltsvariante** ([ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Inhaltsvariante** ([ContentVariation](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -246,9 +246,9 @@ Folgendes kann angepasst werden:
 
 * `ContentElement` kann angepasst werden an:
 
-   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) – für den Zugriff auf die Strukturdaten des Elements.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) – für den Zugriff auf die Strukturdaten des Elements.
 
-* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` kann angepasst werden an:
 
