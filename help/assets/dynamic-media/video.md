@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
 feature: Videoprofile
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 68%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
-## Schnellstartanleitungen: Videos  {#quick-start-videos}
+## Schnellstartanleitungen: Videos {#quick-start-videos}
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, den schnellen Einstieg in adaptive Videosets in dynamischen Medien zu schaffen. Nach jedem Schritt sind Querverweise auf Themenüberschriften, in denen Sie weitere Informationen finden können.
 
@@ -499,7 +499,7 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
 1. Tippen Sie auf **[!UICONTROL Welche Anmeldedaten brauche ich?]**
 1. Geben Sie auf der Seite **[!UICONTROL Anmeldedaten zu Projekt hinzufügen]** in Schritt 2 unter der Überschrift **[!UICONTROL OAuth 2.0-Client-ID generieren]** im Feld „Name“ ggf. einen eindeutigen Namen ein. Sie können auch den von Google angegebenen Standardnamen verwenden.
-1. Geben Sie unter der Überschrift **[!UICONTROL Autorisierte JavaScript™-Ursprünge]** im Textfeld den folgenden Pfad ein, ersetzen Sie Ihre eigene Domäne und Port-Nummer im Pfad und drücken Sie dann **[!UICONTROL Enter]** , um den Pfad zur Liste hinzuzufügen:
+1. Geben Sie unter der Überschrift **[!UICONTROL Autorisierte JavaScript-Ursprünge]** im Textfeld den folgenden Pfad ein, ersetzen Sie Ihre eigene Domäne und Port-Nummer im Pfad und drücken Sie dann **[!UICONTROL Enter]** , um den Pfad zur Liste hinzuzufügen:
 
    `https://<servername.domain>:<port_number>`
 
@@ -545,7 +545,7 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 
 >[!CAUTION]
 >
->Stellen Sie sicher, dass Sie in YouTube *bereits mindestens einen Kanal eingerichtet haben, bevor Sie* unter YouTube-Einstellungen in Experience Manager Kanäle hinzufügen (siehe [Einrichten von YouTube in Experience Manager](#setting-up-youtube-in-aem) unten). Wenn Sie den Kanal nicht einrichten, werden Sie nicht vor vorhandenen Kanälen gewarnt. Beim Hinzufügen eines Kanals wird die Google-Überprüfung jedoch weiterhin durchgeführt. Es gibt jedoch keine Option, um festzulegen, welcher Kanal das Video gesendet wird.
+>Stellen Sie sicher, dass Sie in YouTube *bereits mindestens einen Kanal eingerichtet haben, bevor Sie* unter YouTube-Einstellungen in Experience Manager Kanäle hinzufügen (siehe [Einrichten von YouTube in Experience Manager](#setting-up-youtube-in-aem) unten). Wenn Sie die Kanaleinrichtung nicht durchführen, werden Sie nicht vor vorhandenen Kanälen gewarnt. Beim Hinzufügen eines Kanals wird die Google-Überprüfung jedoch weiterhin durchgeführt. Es gibt jedoch keine Option, um festzulegen, welcher Kanal das Video gesendet wird.
 
 **So erstellen Sie einen YouTube-Kanal:**
 
@@ -607,7 +607,7 @@ Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. Sie kehren gleic
 1. Kehren Sie zum Dialogfeld „YouTube-Kontoeinstellungen“ zurück. Fügen Sie im Feld **[!UICONTROL JSON-Konfiguration]** den JSON-Text ein.
 1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
 
-   Sie werden jetzt YouTube-Kanäle in Experience Manager einrichten.
+   Richten Sie jetzt YouTube-Kanäle in Experience Manager ein.
 
 1. Tippen Sie auf **[!UICONTROL Kanal hinzufügen]**.
 1. Geben Sie im Dialogfeld „Kanalname“ den Namen des Kanals ein, den Sie zuvor in der Aufgabe zum **[!UICONTROL Hinzufügen von Kanälen zu YouTube]** erstellt haben.
@@ -623,7 +623,7 @@ Lassen Sie die Seite YouTube-Konfiguration erstellen geöffnet. Sie kehren gleic
 
 1. Tippen Sie auf **[!UICONTROL Zulassen]**.
 
-   Richten Sie nun Tags für die Veröffentlichung ein.
+   Richten Sie jetzt Tags für die Veröffentlichung ein.
 
 1. **[!UICONTROL Festlegen von Tags für die Veröffentlichung]**: Tippen Sie auf der Seite „Cloud Services“ > „YouTube“ auf das Stiftsymbol, um die Liste der Tags zu bearbeiten, die Sie verwenden möchten.
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, tippen Sie auf das Dropdownlisten-Symbol (umgekehrtes Caret).
@@ -653,7 +653,7 @@ Lassen Sie das Dialogfeld YouTube-Kontoeinstellungen geöffnet. Sie kehren gleic
 1. Kehren Sie zum Dialogfeld „YouTube-Kontoeinstellungen“ zurück. Fügen Sie im Feld **[!UICONTROL JSON-Konfiguration]** den JSON-Text ein.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
-   Sie werden jetzt YouTube-Kanäle in Experience Manager einrichten.
+   Richten Sie jetzt YouTube-Kanäle in Experience Manager ein.
 
 1. Tippen Sie rechts neben **[!UICONTROL Verfügbare Kanäle]** auf **+** (Pluszeichen).
 1. Geben Sie im Dialogfeld „Einstellungen für YouTube-Kanal“ im Feld „Titel“ den Namen des Kanals ein, den Sie zuvor in der Aufgabe **[!UICONTROL Hinzufügen von Kanälen zu YouTube]** erstellt haben.
@@ -669,7 +669,7 @@ Lassen Sie das Dialogfeld YouTube-Kontoeinstellungen geöffnet. Sie kehren gleic
 
 1. Tippen Sie auf **[!UICONTROL Zulassen]**.
 
-   Richten Sie nun Tags für die Veröffentlichung ein.
+   Richten Sie jetzt Tags für die Veröffentlichung ein.
 
 1. **[!UICONTROL Festlegen von Tags für die Veröffentlichung]**: Tippen Sie auf der Seite „Cloud Services“ > „YouTube“ auf das Stiftsymbol, um die Liste der Tags zu bearbeiten, die Sie verwenden möchten.
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, tippen Sie auf das Dropdownlisten-Symbol (umgekehrtes Caret).
@@ -1057,7 +1057,7 @@ Untertitel bieten zudem eine größere Barrierefreiheit, indem optional zuschalt
 >[!NOTE]
 Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
-Dynamic Media kann Untertiteldateien in das JSON-Format (JavaScript™ Object Notation) konvertieren. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen/indizieren, um die Videos leichter auffindbar zu machen und Kunden mehr Details zum Videoinhalt zu geben.
+Dynamic Media kann Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertieren. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen/indizieren, um die Videos leichter auffindbar zu machen und Kunden mehr Details zum Videoinhalt zu geben.
 
 Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Serving static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api).
 
