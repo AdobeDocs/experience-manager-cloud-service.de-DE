@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie Kanäle in Screens as a 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,11 @@ In diesem Dokument erfahren Sie, wie Sie Kanäle für Ihr AEM Screens-Projekt in
 Gehen Sie wie folgt vor, um einen neuen Sequenzkanal in Screens als Cloud Service zu erstellen:
 
 1. Navigieren Sie zum Screens Content Provider.
-1. Navigieren Sie zu Ihrem AEM Screens-Projekt, z. B. SanJoseCafe.
+
+1. Navigieren Sie zu Ihrem AEM Screens-Projekt, z. B. *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. Wählen Sie in Ihrem Projekt den Ordner **Kanäle** aus, z. B. SanJoseCafe > Kanäle.
 1. Klicken Sie in der Aktionsleiste auf **Erstellen** .
 1. Wählen Sie die Vorlage aus, z. B. **Sequenzkanal** im Assistenten **Erstellen** und klicken Sie auf **Weiter**.
