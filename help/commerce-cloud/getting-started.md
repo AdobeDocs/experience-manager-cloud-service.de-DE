@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 34%
@@ -81,7 +81,7 @@ Gehen Sie wie folgt vor, um AEM über die Adobe I/O-CLI mit einer Commerce-Lösu
 
    Weitere Informationen finden Sie in den [CLI-Dokumentationen](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid).
 
-   Die Commerce-GraphQL-Endpunkt-URL muss auf den GraphQl-Dienst des Commerce verweisen und eine sichere HTTPS-Verbindung verwenden. Beispiel: `https://demo.magentosite.cloud/graphql`.
+   Die Commerce-GraphQL-Endpunkt-URL muss auf den GraphQl-Dienst des Commerce verweisen und eine sichere HTTPS-Verbindung verwenden. Beispiel: `https://<yourmagentosystem>/graphql`.
 
 4. Aktivieren von Stage-Katalog-Funktionen, für die eine Authentifizierung erforderlich ist (optional)
 
