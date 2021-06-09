@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 85%
@@ -21,7 +21,7 @@ Die Entwicklung von AEM Commerce-Projekten basierend auf Commerce Integration Fr
 
 - [Struktur von AEM-Projekten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de)
 - [AEM as a Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [Entwicklungsrichtlinien für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [Entwicklungsrichtlinien für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de)
 
 ## Lokale Entwicklung mit dem AEM as a Cloud Service-SDK {#local}
 
@@ -73,13 +73,13 @@ Gehen Sie für die lokale CIF-Add-on-Entwicklung mit dem AEM as a Cloud Service-
    Beispiel für Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Beispiel für Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Diese Variable wird von AEM verwendet, um eine Verbindung zu Ihrem E-Commerce-System herzustellen. Außerdem enthält das CIF-Add-on einen lokalen Reverse-Proxy, um den Commerce GraphQL-Endpunkt lokal verfügbar zu machen. Dies wird von den CIF-Authoring-Werkzeugen (Produktkonsole und Picker) und für die Client-seitigen CIF-Komponenten verwendet, die direkte GraphQL-Aufrufe durchführen.
