@@ -5,9 +5,9 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: c430d28d046e312c19a4e96bd4e978fb41f2eed4
+source-git-commit: fca1c30cfd321581eda3ed7e4514fd428e11cfad
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '707'
 ht-degree: 95%
 
 ---
@@ -85,7 +85,8 @@ ht-degree: 95%
       + [Löschen einer IP-Zulassungsliste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html?lang=de)
       + [Überprüfen des IP-Zulassungslistenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html?lang=de)
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
-      + [Aktuelle Versionshinweise (2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Aktuelle Versionshinweise (2021.6.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Versionshinweise für 2021.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [Versionshinweise für 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Versionshinweise für 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [Versionshinweise für 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
