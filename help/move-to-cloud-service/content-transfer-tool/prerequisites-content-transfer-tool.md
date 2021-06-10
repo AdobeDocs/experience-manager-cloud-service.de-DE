@@ -1,20 +1,27 @@
 ---
 title: Voraussetzungen für das Content Transfer Tool
 description: Voraussetzungen für das Content Transfer Tool
-source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 7%
 
 ---
 
 # Voraussetzungen für das Content Transfer Tool {#prerequisites}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="Wichtige Überlegungen zur Verwendung des Content Transfer Tool"
+>abstract="Beachten Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools, einschließlich Java- und AEM-Versionen, unterstützte Datenspeichertypen, Überlegungen zu Benutzergruppen und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Best Practices und Richtlinien"
+
 Die folgende Tabelle fasst die Voraussetzungen für die Verwendung des Content Transfer Tool zusammen.
 
 Überprüfen Sie alle unten aufgeführten Aspekte:
 
-| Besonderheiten | Derzeit unterstützte Funktionen |
+| Aspekte | Derzeit unterstützte Funktionen |
 |--- |--- |
 | AEM-Version | Das Content Transfer Tool kann nur mit AEM 6.3 oder höheren Versionen ausgeführt werden. Um das Content Transfer Tool mit AEM 6.2 oder älteren Versionen verwenden zu können, ist eine ersetzende Aktualisierung des Inhalts-Repositorys auf AEM 6.5 erforderlich. Dazu ist es nicht erforderlich, den Code auf AEM 6.5 zu aktualisieren. |
 | Größe des Segmentspeichers | Das Content Transfer Tool unterstützt derzeit bis zu 83 GB unter *Autor* und 31 GB unter *Publish*. |
