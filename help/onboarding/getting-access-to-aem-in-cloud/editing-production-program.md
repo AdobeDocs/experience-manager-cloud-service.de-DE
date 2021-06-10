@@ -2,7 +2,7 @@
 title: 'Bearbeiten eines Produktionsprogramms '
 description: Bearbeiten eines Produktionsprogramms
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 46%
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu bearbeiten:
 
    Navigieren Sie zur Registerkarte **Allgemein** , um die Programmbeschreibung zu bearbeiten.
 
-   ![](assets/edit-program-general.png)
+   ![](assets/edit-program-prod1.png)
 
    Auf der Registerkarte **Lösungen und Add-ons** werden zwei Optionen angezeigt, z. B. **Sites** und **Assets** für Produktions- und Sandbox-Programme. Sie können auch die Add-On-Option **Commerce** auswählen, die unter **Sites** verfügbar ist, wie in der folgenden Abbildung dargestellt.
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu bearbeiten:
    >[!NOTE]
    >Mindestens eine Lösung muss für ein Programm ausgewählt sein, d. h. der Benutzer darf die Auswahl nicht für alle Lösungen während des Bearbeitungs-Programm-Workflows aufheben.
 
-1. Klicken Sie auf **Save** , um den Workflow des Bearbeitungsprogramms abzuschließen.
+1. Klicken Sie auf **Update** , um den Workflow des Bearbeitungsprogramms abzuschließen.
 
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
