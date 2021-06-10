@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 96%
+source-wordcount: '2322'
+ht-degree: 95%
 
 ---
 
@@ -215,6 +215,10 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 
 AEM as a Cloud Service erfordert die Verschlüsselung von ausgehenden E-Mails. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und senden.
 
+>[!NOTE]
+>
+>Der Mail-Dienst kann mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den Mail-Dienst](/help/security/oauth2-support-for-mail-service.md).
+
 ### Anfordern des Zugriffs {#requesting-access}
 
 Ausgehende E-Mails sind standardmäßig deaktiviert. Um sie zu aktivieren, senden Sie ein Support-Ticket mit:
@@ -238,7 +242,7 @@ AEM CS erfordert, dass E-Mails über Port 465 gesendet werden. Wenn ein Mailserv
 
 E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html). Für AEM as a Cloud Service müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service vorgenommen werden:
+Weitere Informationen zur Konfiguration von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) . Für AEM as a Cloud Service müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service vorgenommen werden:
 
 Wenn Port 465 angefordert wurde:
 
