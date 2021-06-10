@@ -2,22 +2,24 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
+source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 78%
+source-wordcount: '275'
+ht-degree: 69%
 
 ---
 
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.  Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen. Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Diese Dateien können über die Benutzeroberfläche heruntergeladen werden. Dies kann über die Seite **Übersicht** erfolgen:
+## Herunterladen von Protokollen {#download-logs}
+
+Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Karte **Umgebungen** auf der Seite **Übersicht**:
 
 ![](assets/download-logs1.png)
 
-Oder über die Seite **Umgebungen**:
+Oder über die Seite &quot;Umgebungsdetails&quot;:
 
 ![](assets/download-logs.png)
 
@@ -28,13 +30,13 @@ Oder über die Seite **Umgebungen**:
 
 ## Herunterladen von Protokollen für den Vorschaudienst {#download-preview-service}
 
-Benutzer können Protokolle für den Vorschaudienst herunterladen
+Gehen Sie wie folgt vor, um Protokolle für den Vorschaudienst herunterzuladen
 
 1. Navigieren Sie zur Karte **Umgebungen** auf der Seite **Übersicht** von Cloud Manager.
 
-1. Wählen Sie im Menü ... die Option Protokolle herunterladen aus.
+1. Wählen Sie **Protokolle herunterladen** aus dem **...** Menü.
 
-1. Wählen Sie aus den Dienst-Dropdown-Optionen **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
+1. Wählen Sie aus dem Dropdown-Menü **Service** die Option **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
 
    >[!NOTE]
    >Diese Aktion kann auch über die Seite &quot;Umgebungsdetails&quot;durchgeführt werden.
