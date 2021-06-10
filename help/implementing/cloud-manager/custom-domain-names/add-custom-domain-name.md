@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 98%
+source-wordcount: '610'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
 
-* Jede Cloud Manager-Umgebung kann bis zu 100 benutzerdefinierte Domains pro Umgebung hosten.
+* Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten.
 
 * Derselbe Domain-Name kann nicht in mehr als einer Umgebung verwendet werden.
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um über die Seite mit den Domain-Einstellungen einen b
 
 1. Klicken Sie auf die Schaltfläche **Domain hinzufügen**, um das Dialogfeld **Domain-Name hinzufügen** zu öffnen.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Geben Sie unter **Domain-Name** den benutzerdefinierten Domain-Namen ein.
 
@@ -47,6 +47,11 @@ Gehen Sie wie folgt vor, um über die Seite mit den Domain-Einstellungen einen b
    >Bei der Eingabe Ihrer Domain sollten Sie weder `http://`, noch `https://` oder Leerzeichen verwenden.
 
 1. Wählen Sie die **Umgebung** aus, deren Veröffentlichungs-Service mit dem Domain-Namen verknüpft werden soll.
+
+1. Wählen Sie den Dienst entweder als **Publish** oder **Vorschau** aus.
+
+   >[!NOTE]
+   >Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten. Weitere Informationen zum Vorschaudienst finden Sie unter [Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Wählen Sie aus der Dropdown-Liste das **SSL-Zertifikat der Domain** und anschließend **Weiter** aus.
 
