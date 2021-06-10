@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1620'
+ht-degree: 78%
 
 ---
 
@@ -62,7 +62,6 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
    >[!NOTE]
    >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
 
-
 ## Umgebungsdetails {#viewing-environment}
 
 Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebungen auf.
@@ -77,8 +76,36 @@ Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebunge
 
 1. Wählen Sie eine der Umgebung aus der Liste aus, um die Details zur Umgebung anzuzeigen.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >Der Vorschaudienst wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Weitere Informationen finden Sie im Abschnitt [Zugriff auf den Vorschaudienst](#access-preview-service) .
 
+   ![](assets/environ-preview1.png)
+
+
+### Zugriff auf den Vorschaudienst {#access-preview-service}
+
+Die Funktion &quot;Vorschaufunktion&quot;bietet für jede AEM als Cloud Service-Umgebung über Cloud Manager einen zusätzlichen Vorschau-(Veröffentlichungs-)Dienst.
+
+Zeigen Sie eine Vorschau des endgültigen Erlebnisses einer Website an, bevor diese die Veröffentlichungsumgebung erreicht und öffentlich verfügbar ist. Einige Hinweise, bevor Sie den Vorschaudienst anzeigen und verwenden können:
+
+1. **AEM Version**: Ihre Umgebung muss AEM Version  `2021.5.5343.20210542T070738Z` oder höher sein. Stellen Sie sicher, dass in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
+
+1. **Standard-IP-Zulassungsliste sperren**: Bei der ersten Erstellung müssen Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschaudienst in Ihrer Umgebung aktiv aufheben, um den Zugriff zu ermöglichen.
+
+1. **Inhalt zur Vorschau veröffentlichen**: Sie können Inhalte im Vorschaudienst veröffentlichen, indem Sie die Benutzeroberfläche Veröffentlichung verwalten in AEM verwenden. Weitere Informationen finden Sie unter [Vorschau von Inhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
+
+Ein Benutzer mit den erforderlichen Berechtigungen muss einen der folgenden Schritte ausführen, um *den Zugriff auf den Vorschaudienst zu entsperren und den gewünschten Zugriff bereitzustellen:*
+
+1. Erstellen Sie eine entsprechende IP-Zulassungsliste und wenden Sie sie auf den Vorschaudienst an. Befolgen Sie dies sofort, indem Sie die Anwendung von `Preview Default [Env ID] IP Allow List` im Vorschaudienst aufheben.
+
+   ODER,
+
+1. Verwenden Sie den Workflow IP-Zulassungsliste-Update , um die standardmäßige IP-Adresse zu entfernen und die entsprechenden IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+
+   >[!NOTE]
+   >Die oben genannten Schritte müssen vor der Freigabe der Vorschau-Dienst-URL für ein Team durchgeführt werden, um sicherzustellen, dass die entsprechenden Mitglieder Ihres Teams auf die Vorschau-URL zugreifen können.
+
+   Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol nicht mehr angezeigt.
 
 ## Aktualisieren einer Umgebung {#updating-dev-environment}
 
@@ -146,9 +173,13 @@ Zusätzlich können Sie sich lokal über die Zusammenfassungsseite für die **Um
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## Verwalten von benutzerdefinierten Domain-Namen {#manage-cdn}
 
 Navigieren Sie von der Zusammenfassungsseite für die Umgebungen zur Detailseite **Umgebungen**.
+
+>[!NOTE]
+>Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten.
 
 Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Publish-Service ausgeführt werden:
 
@@ -162,9 +193,13 @@ Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Publi
 
 1. [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
 Navigieren Sie auf der Zusammenfassungsseite für die Umgebungen zur Seite „Umgebungsdetails“. Hier können Sie die folgenden Aktionen für den Publish- und/oder Author-Service für Ihre Umgebung durchführen.
+
+>[!NOTE]
+>Die Funktion &quot;IP-Zulassungsliste&quot;wird jetzt in Cloud Manager für Autoren-, Veröffentlichungs- und Vorschaudienste unterstützt (verfügbar in Sites-Programmen).
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
