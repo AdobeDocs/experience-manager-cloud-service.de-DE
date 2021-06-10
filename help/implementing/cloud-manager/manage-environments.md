@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 77%
 
 ---
@@ -90,9 +90,7 @@ Zeigen Sie eine Vorschau des endgültigen Erlebnisses einer Website an, bevor di
 
 1. **AEM Version**: Ihre Umgebung muss AEM Version  `2021.5.5343.20210542T070738Z` oder höher sein. Stellen Sie sicher, dass in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
 
-1. **Standard-IP-Zulassungsliste sperren**: Bei der Erstellung wird dem Vorschaudienst eine standardmäßige IP-Zulassungsliste mit der Bezeichnung  `Preview Default [Env ID]`, wie in der folgenden Abbildung dargestellt, zugewiesen.
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **Standard-IP-Zulassungsliste sperren**: Bei der Erstellung wird dem Vorschaudienst eine standardmäßige IP-Zulassungsliste mit der Bezeichnung  `Preview Default [Env ID]` zugewiesen.
 
    >[!NOTE]
    >Bei der ersten Erstellung müssen Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschaudienst in Ihrer Umgebung aktiv aufheben, um den Zugriff zu ermöglichen.
