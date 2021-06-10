@@ -2,7 +2,7 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 78%
@@ -92,22 +92,22 @@ Zeigen Sie eine Vorschau des endgültigen Erlebnisses einer Website an, bevor di
 
 1. **Standard-IP-Zulassungsliste sperren**: Bei der ersten Erstellung müssen Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschaudienst in Ihrer Umgebung aktiv aufheben, um den Zugriff zu ermöglichen.
 
+   Ein Benutzer mit den erforderlichen Berechtigungen muss einen der folgenden Schritte ausführen, um *den Zugriff auf den Vorschaudienst zu entsperren und den gewünschten Zugriff bereitzustellen:*
+
+   1. Erstellen Sie eine entsprechende IP-Zulassungsliste und wenden Sie sie auf den Vorschaudienst an. Befolgen Sie dies sofort, indem Sie die Anwendung von `Preview Default [Env ID] IP Allow List` im Vorschaudienst aufheben.
+
+      ODER,
+
+   1. Verwenden Sie den Workflow IP-Zulassungsliste-Update , um die standardmäßige IP-Adresse zu entfernen und die entsprechenden IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+
+      >[!NOTE]
+      >Die oben genannten Schritte müssen vor der Freigabe der Vorschau-Dienst-URL für ein Team durchgeführt werden, um sicherzustellen, dass die entsprechenden Mitglieder Ihres Teams auf die Vorschau-URL zugreifen können.
+
+      Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol nicht mehr angezeigt, wie unten dargestellt.
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **Inhalt zur Vorschau veröffentlichen**: Sie können Inhalte im Vorschaudienst veröffentlichen, indem Sie die Benutzeroberfläche Veröffentlichung verwalten in AEM verwenden. Weitere Informationen finden Sie unter [Vorschau von Inhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) .
-
-Ein Benutzer mit den erforderlichen Berechtigungen muss einen der folgenden Schritte ausführen, um *den Zugriff auf den Vorschaudienst zu entsperren und den gewünschten Zugriff bereitzustellen:*
-
-1. Erstellen Sie eine entsprechende IP-Zulassungsliste und wenden Sie sie auf den Vorschaudienst an. Befolgen Sie dies sofort, indem Sie die Anwendung von `Preview Default [Env ID] IP Allow List` im Vorschaudienst aufheben.
-
-   ODER,
-
-1. Verwenden Sie den Workflow IP-Zulassungsliste-Update , um die standardmäßige IP-Adresse zu entfernen und die entsprechenden IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
-
-   >[!NOTE]
-   >Die oben genannten Schritte müssen vor der Freigabe der Vorschau-Dienst-URL für ein Team durchgeführt werden, um sicherzustellen, dass die entsprechenden Mitglieder Ihres Teams auf die Vorschau-URL zugreifen können.
-
-   Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol nicht mehr angezeigt, wie unten dargestellt.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Aktualisieren einer Umgebung {#updating-dev-environment}
 
