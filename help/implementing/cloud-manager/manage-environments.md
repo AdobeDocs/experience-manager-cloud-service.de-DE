@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 78%
 
 ---
@@ -105,7 +105,9 @@ Ein Benutzer mit den erforderlichen Berechtigungen muss einen der folgenden Schr
    >[!NOTE]
    >Die oben genannten Schritte müssen vor der Freigabe der Vorschau-Dienst-URL für ein Team durchgeführt werden, um sicherzustellen, dass die entsprechenden Mitglieder Ihres Teams auf die Vorschau-URL zugreifen können.
 
-   Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol nicht mehr angezeigt.
+   Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol nicht mehr angezeigt, wie unten dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Aktualisieren einer Umgebung {#updating-dev-environment}
 
