@@ -2,7 +2,7 @@
 title: 'Bearbeiten eines Sandbox-Programms '
 description: Bearbeiten eines Sandbox-Programms
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 46%
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
 
    Navigieren Sie zur Registerkarte **Allgemein** , um die Programmbeschreibung zu bearbeiten.
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    Auf der Registerkarte **Lösungen und Add-ons** werden zwei Optionen angezeigt, z. B. **Sites** und **Assets** für Produktions- und Sandbox-Programme. Sie können auch die Add-On-Option **Commerce** auswählen, die unter **Sites** verfügbar ist, wie in der folgenden Abbildung dargestellt.
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu bearbeiten:
    >[!NOTE]
    >Mindestens eine Lösung muss für ein Programm ausgewählt sein, d. h. der Benutzer darf die Auswahl nicht für alle Lösungen während des Bearbeitungs-Programm-Workflows aufheben.
 
-1. Klicken Sie auf **Save** , um den Workflow des Bearbeitungsprogramms abzuschließen.
+1. Klicken Sie auf **Update** , um den Workflow des Bearbeitungsprogramms abzuschließen.
 
 
 ## Überlegungen beim Bearbeiten eines Programms {#considerations-editing}
