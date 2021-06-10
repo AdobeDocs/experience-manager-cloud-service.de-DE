@@ -2,10 +2,10 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 78%
 
 ---
 
@@ -25,6 +25,21 @@ Oder über die Seite **Umgebungen**:
 >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
 
 ![](assets/download-logs2.png)
+
+## Herunterladen von Protokollen für den Vorschaudienst {#download-preview-service}
+
+Benutzer können Protokolle für den Vorschaudienst herunterladen
+
+1. Navigieren Sie zur Karte **Umgebungen** auf der Seite **Übersicht** von Cloud Manager.
+
+1. Wählen Sie im Menü ... die Option Protokolle herunterladen aus.
+
+1. Wählen Sie aus den Dienst-Dropdown-Optionen **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
+
+   >[!NOTE]
+   >Diese Aktion kann auch über die Seite &quot;Umgebungsdetails&quot;durchgeführt werden.
+
+   ![](assets/download-preview.png)
 
 
 ## Protokolle über API {#logs-through-api}
