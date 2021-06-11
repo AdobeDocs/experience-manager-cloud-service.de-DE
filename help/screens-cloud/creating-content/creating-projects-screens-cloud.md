@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie ein Projekt in Screens a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
+source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
 
@@ -29,35 +29,25 @@ Gehen Sie wie folgt vor, um ein neues Projekt in Screens as a Cloud Service zu e
    >[!NOTE]
    >Unter [Verwenden des Screens Content Providers](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf den Screens Content Provider zugreifen.
 
-1. Klicken Sie oben rechts in der Aktionsleiste auf **Erstellen** —> **Entität erstellen** .
+1. Klicken Sie oben rechts in der Aktionsleiste auf **Screens-Projekt erstellen** .
 
-   ![](/help/screens-cloud/assets/create-content/create-project1.png)
-
-1. Wählen Sie **Screens Project** aus dem Assistenten **Erstellen** . Klicken Sie auf **Next**.
-
-   ![](/help/screens-cloud/assets/create-content/create-project2.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Geben Sie den **Titel** Ihres Projekts im Dialogfeld **Screens-Projekt erstellen** ein, z. B. *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-project3.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >Das Feld **Name** wird automatisch im Dialogfeld **Screens-Projekt erstellen** entsprechend dem ausgewählten Titel eingefügt.
 
-1. Klicken Sie auf **Erstellen**. Ihr Screens-Projekt wird im Screens Content Provider als *FirstDigitalExperience* angezeigt.
+1. Klicken Sie auf **Save**. Ihr Screens-Projekt wird im Screens Content Provider als *FirstDigitalExperience* angezeigt.
 
-   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
+1. Ihr Projekt wird im Screens Content Provider mit zwei Ordnern namens **Standorte** und **Kanäle** angezeigt.
 
-   Oder
+   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
-   1. Klicken Sie in der Aktionsleiste auf **Screens-Projekt erstellen** .
-
-      ![](/help/screens-cloud/assets/create-content/create-project7.png)
-
-   1. Geben Sie den **Titel** Ihres Projekts ein. Klicken Sie auf **Save**.
-
-      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    Nachdem Sie jetzt ein AEM Screens-Projekt eingerichtet haben, können Sie mit dem Hinzufügen von Kanälen und Standorten zu Ihrem Projekt beginnen.
 
 ### Löschen eines vorhandenen Projekts {#deleting-project}
