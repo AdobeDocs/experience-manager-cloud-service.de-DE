@@ -2,37 +2,39 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 72%
+source-wordcount: '235'
+ht-degree: 68%
 
 ---
 
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzer können über die Karte **Umgebungen** auf der Seite **Übersicht** oder Umgebungsdetails auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
 ## Herunterladen von Protokollen {#download-logs}
 
-Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
+Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
-1. Sie können Protokolle über die Benutzeroberfläche herunterladen, entweder über die Karte **Umgebungen** von der Seite **Übersicht**:
-
-![](assets/download-logs1.png)
-
-Oder über die Seite &quot;Umgebungsdetails&quot;:
-
-![](assets/download-logs.png)
-
->[!NOTE]
->Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
+1. Navigieren Sie von der Seite **Übersicht** zur Karte **Umgebungen** .
 
 1. Wählen Sie **Protokolle herunterladen** aus dem **...** Menü.
 
-1. Wählen Sie aus dem Dropdown-Menü **Service** Optionen wie **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol. Diese Aktion kann auch über die Seite &quot;Umgebungsdetails&quot;durchgeführt werden.
+   ![](assets/download-logs1.png)
 
-![](assets/download-preview.png)
+   *Oder*
+
+   Auf der Seite &quot;Umgebungsdetails&quot;:
+
+   ![](assets/download-logs.png)
+
+   >[!NOTE]
+   >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
+
+1. Wählen Sie aus dem Dropdown-Menü **Service** Optionen wie **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
+
+   ![](assets/download-preview.png)
 
 
 ## Protokolle über API {#logs-through-api}
