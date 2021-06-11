@@ -2,20 +2,22 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
+source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 69%
+source-wordcount: '245'
+ht-degree: 72%
 
 ---
 
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen. Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzer können über die Umgebungskarte auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
 ## Herunterladen von Protokollen {#download-logs}
 
-Diese Dateien können über die Benutzeroberfläche heruntergeladen werden, entweder von der Karte **Umgebungen** auf der Seite **Übersicht**:
+Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
+
+1. Sie können Protokolle über die Benutzeroberfläche herunterladen, entweder über die Karte **Umgebungen** von der Seite **Übersicht**:
 
 ![](assets/download-logs1.png)
 
@@ -26,22 +28,11 @@ Oder über die Seite &quot;Umgebungsdetails&quot;:
 >[!NOTE]
 >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
 
-![](assets/download-logs2.png)
-
-## Herunterladen von Protokollen für den Vorschaudienst {#download-preview-service}
-
-Gehen Sie wie folgt vor, um Protokolle für den Vorschaudienst herunterzuladen
-
-1. Navigieren Sie zur Karte **Umgebungen** auf der Seite **Übersicht** von Cloud Manager.
-
 1. Wählen Sie **Protokolle herunterladen** aus dem **...** Menü.
 
-1. Wählen Sie aus dem Dropdown-Menü **Service** die Option **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
+1. Wählen Sie aus dem Dropdown-Menü **Service** Optionen wie **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol. Diese Aktion kann auch über die Seite &quot;Umgebungsdetails&quot;durchgeführt werden.
 
-   >[!NOTE]
-   >Diese Aktion kann auch über die Seite &quot;Umgebungsdetails&quot;durchgeführt werden.
-
-   ![](assets/download-preview.png)
+![](assets/download-preview.png)
 
 
 ## Protokolle über API {#logs-through-api}
