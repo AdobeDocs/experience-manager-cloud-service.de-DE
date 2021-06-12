@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arb
 feature: Interaktive Bilder
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
-ht-degree: 92%
+source-wordcount: '4245'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ Die folgende Abbildung zeigt ein Banner mit Shopping-Funktion mit einem Schnella
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Siehe [Interaktive Bilder in Aktion](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) auf der oben abgebildeten Web-Seite.
+Siehe [Interaktive Bilder in Aktion](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) auf der oben abgebildeten Web-Seite.
 
 ## Sehen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ Sehen Sie sich eine exemplarische Vorgehensweise zu [wie interaktive Bildbanner 
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, interaktive Bilder in Adobe Experience Manager Assets einzurichten und schnell auszuführen.
 
-Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden [Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden [Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -146,7 +146,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 **Beispiel**
 
-Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html) anwenden.
+Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) anwenden.
 
 Die Demo-Webseite enthält mehrere Produkt-Miniaturansichten, von denen jede eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“ aufweist. Klicken Sie bei aktiviertem Debugging-Tool des Webbrowsers auf jede Schaltfläche und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier auf der Seite verfügbaren Produktschnellansichten aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
 
@@ -168,7 +168,7 @@ Auf Grundlage einer solchen Analyse würden Sie `categoryId` und `SKU` für Hots
 
 Sie können jetzt ein Bildbanner hochladen und ihm Hotspots mit der Funktion für interaktive Bilder mit Shopping-Funktion in Experience Manager Assets hinzufügen.
 
-## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder  {#optional-creating-an-interactive-image-viewer-preset}
+## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder {#optional-creating-an-interactive-image-viewer-preset}
 
 Sie können die standardmäßige Viewer-Vorgabe für interaktive Bilder mit dem Namen `Shoppable_Banner` verwenden, die im Lieferumfang von Experience Manager-Assets enthalten ist. Sie können auch eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen.
 
@@ -338,13 +338,13 @@ Der kopierte Einbettungs-Code ist für eine responsive Umgebung ausgelegt, sodas
 
 **Beispiel**
 
-Wenn Sie die [Demo-Website als Beispiel](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html) betrachten, beachten Sie, dass das Bild mit den drei Personen ein statisches `IMG`-Tag darstellt:
+Wenn Sie die [Demo-Website als Beispiel](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) betrachten, beachten Sie, dass das Bild mit den drei Personen ein statisches `IMG`-Tag darstellt:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen Ersetzung durch den kopierten Einbettungscode aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen Ersetzung durch den kopierten Einbettungscode aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in den vorhandenen Schnellansichten integriert.
@@ -489,7 +489,7 @@ Im Folgenden finden Sie den vollständigen Quell-Code:
  s7interactiveimageviewer.init();
 ```
 
-Die [endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
+Die [endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
 ## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
 
