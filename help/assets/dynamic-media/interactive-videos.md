@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowi
 feature: Interaktive Videos
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '6051'
-ht-degree: 93%
+source-wordcount: '6021'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Wenn das Video beendet wird, wird eine visuelle Zusammenfassung sämtlicher Ange
 
 Informationen hierzu finden Sie auch unter [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md).
 
-## Interaktives Video in Aktion  {#interactive-video-in-action}
+## Interaktives Video in Aktion {#interactive-video-in-action}
 
 Um ein interaktives Video mit Shopping-Funktion anzuzeigen, klicken Sie auf [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), scrollen Sie auf der Seite zur Überschrift **[!UICONTROL Shop-fähige Medien]** und klicken Sie dann auf das gewünschte Video mit Shopping-Funktion, um die Wiedergabe zu starten.
 
@@ -32,7 +32,7 @@ Siehe auch [Verwenden von interaktiven Videos mit Dynamic Media](https://experie
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video
 
 -->
 
@@ -60,11 +60,11 @@ Im Webinar [Using Interactive Video, Link Sharing, and YouTube sharing in Experi
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, interaktive Videos in Dynamic Media einzurichten und schnell auszuführen.
 
-Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, [das auf dieser Demo-Web-Seite basiert, der noch *keine* Interaktivität hinzugefügt wurde](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html).
+Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, [das auf dieser Demo-Web-Seite basiert, der noch *keine* Interaktivität hinzugefügt wurde](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
 Die **Beispiele** veranschaulichen die Schritte zur Integration interaktiver Videos auf Ihrer Website.
 
-Wenn Sie das Tutorial im letzten Beispielabschnitt abschließen, wird [Ihre endgültige Demo-Web-Seite mit dem vollständig integrierten interaktiven Video wie folgt aussehen](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html).
+Wenn Sie das Tutorial im letzten Beispielabschnitt abschließen, wird [Ihre endgültige Demo-Web-Seite mit dem vollständig integrierten interaktiven Video wie folgt aussehen](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html).
 
 
 
@@ -181,7 +181,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 Wenn der oben genannte Ansatz auf die Beispiel-Website angewendet wird, resultiert daraus eine Web-Seite mit mehreren Miniaturansichten für Produkte, wobei jede Ansicht die Schaltfläche „MEHR ANZEIGEN“ aufweist:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Nachdem Sie alle auf der Seite verfügbaren Produktschnellansichten aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
 
@@ -524,7 +524,7 @@ Wenn Sie jedoch eine Interaktivität hinzugefügt haben, um eine Schnellansicht 
 
 Verwenden der Demo-Website als ein Beispiel:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Beachten Sie, dass der Einbettungs-Code für Videos standardmäßig wir folgt lautet:
 
@@ -555,7 +555,7 @@ Beachten Sie, dass der Einbettungs-Code für Videos standardmäßig wir folgt la
 
 Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs-Code des interaktiven Videos aus Experience Manager ersetzen. Das Ergebnis sehen Sie unter folgender URL. Ein auf der Seite vorhandenes interaktives Video wird zwar angezeigt, es ist jedoch noch nicht mit den vorhandenen Schnellansichten integriert:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrieren eines interaktiven Videos mit einer vorhandenen Schnellansicht {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -754,7 +754,7 @@ Der vollständige Quell-Code lautet wie folgt:
 
 Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Video sieht wie folgt aus:
 
-[https://marketing.adobe.com/resources/help/de_DE/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows® {#using-quickviews-to-create-custom-pop-ups}
 
