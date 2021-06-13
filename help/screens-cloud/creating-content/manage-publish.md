@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 17%
 
 ---
 
@@ -32,13 +32,22 @@ In diesem Dokument erfahren Sie, wie Sie ein neues Projekt für Ihr AEM Screens-
 
 Gehen Sie wie folgt vor, um den Kanal zu veröffentlichen:
 
-1. Navigieren Sie zu und wählen Sie den Kanal aus Ihrem Projekt aus, z. B. **FirstDigitalExperience** —> Kanäle > ChannelFood.
+1. Navigieren Sie zum Kanal und wählen Sie ihn aus Ihrem Projekt aus, z. B. **FirstDigitalExperience** —> **Kanäle** —> **SchleifenChannelOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Klicken Sie in der Aktionsleiste auf **Veröffentlichung verwalten** .
 
-1. Wählen Sie im Assistenten Veröffentlichung verwalten die Aktion als Veröffentlichen und Planung als Jetzt aus und klicken Sie auf **Weiter**.
+1. Wählen Sie **Aktion** als **Veröffentlichen** und **Planung** als **Jetzt** im **Assistenten &quot;Veröffentlichung verwalten**&quot;aus und klicken Sie auf **Weiter**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Klicken Sie in der Aktionsleiste auf **+Untergeordnete Elemente einbeziehen**. Deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf Hinzufügen, um sie zu veröffentlichen. Standardmäßig werden alle Felder markiert und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
 
 1. Nachdem Sie den Kanal im Assistenten **Veröffentlichung verwalten** ausgewählt haben, klicken Sie auf **Veröffentlichen** , um den Kanal zu veröffentlichen.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Wie geht es weiter {#whats-next}
@@ -48,4 +57,4 @@ Nachdem Sie nun Ihre Kanäle im Projekt veröffentlicht haben, können Sie:
 * Erstellen und Verwalten von Standorten über den Screens Content Provider
 * Erstellen und Verwalten von Playern über den Screens Services Provider
 
-   Sie sollten mit der Journey von Screens als Cloud Service-Netzwerkadministrator fortfahren, indem Sie das Dokument erneut überprüfen.
+   Sie sollten Ihre Screens als Cloud Service-Journey fortsetzen, indem Sie sich das Dokument erneut ansehen.
