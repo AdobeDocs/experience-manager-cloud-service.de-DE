@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Player einer Anzei
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Nachdem das Projekt eingerichtet wurde, müssen Sie den Player einer Anzeige zuw
 
 ## Vorgabe {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie Anzeigen in Screens Services Provider erstellen und verwalten. Nach dem Lesen sollten Sie lernen, wie Sie einen Player einer Anzeige zuweisen können.
+In diesem Dokument erfahren Sie, wie Sie einen Player einer Anzeige im Screens Services Provider zuweisen. Dies sind die letzten obligatorischen Schritte, bevor die Inhaltswiedergabe in Screens als Cloud Service-Player beginnt.
 
 ## Schritte zum Zuweisen eines Players zu einer Anzeige {#create-display}
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Player zuzuweisen:
 
 1. Nachdem Sie auf Auswählen geklickt haben, wird die zugewiesene Anzeige unter dem Bedienfeld **ZUGEWIESENE ANZEIGE** angezeigt.
 
-   Jetzt wird die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe des Inhalts. Der Player sollte jetzt Inhalte herunterladen und wiedergeben. Herzlichen Glückwunsch!
+   Jetzt wird die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe des Inhalts. Der Player sollte jetzt Inhalte herunterladen und wiedergeben. **Herzlichen Glückwunsch!**
 
    ![image](/help/screens-cloud/assets/player/output.gif)
 
