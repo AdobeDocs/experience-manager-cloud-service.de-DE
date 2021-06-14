@@ -2,10 +2,10 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Versionshinweise
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: 04195582602c0cb4cc6d359dff6abfc8dbc24614
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 17%
+source-wordcount: '419'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +36,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index` -Knoten als unveränderlich zu klassifizieren.
 
-* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst.
+* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern, die zur AEM Laufzeit bereitgestellt werden, genauer identifiziert.
 
 * Um Verwirrung zu vermeiden, wurden die Segmentzeilen Veröffentlichen AEM und Veröffentlichen des Dispatchers auf der Seite Umgebungsdetails konsolidiert.
 
