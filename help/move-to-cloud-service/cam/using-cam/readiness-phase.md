@@ -4,12 +4,17 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2a75efe9e2e1ac8e2745608309f12b49eac9843
+source-git-commit: 7d0afd7337cb1011e43d9a7beb4214262fba8200
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
 
 
 # Bereitschaftsphase in Cloud Acceleration Manager {#readiness-phase-cam}
+
+Nachdem Sie ein Projekt in Cloud Acceleration Manager erstellt haben, können Sie jetzt mit der Bereitschaftsphase beginnen.
+
+## Verwenden von Tools in der Bereitschaftsphase {#readiness-phase}
+
