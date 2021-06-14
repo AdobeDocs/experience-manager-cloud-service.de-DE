@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie Anzeigen in Screens as a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 16%
+source-wordcount: '283'
+ht-degree: 14%
 
 ---
 
@@ -53,3 +53,6 @@ Wählen Sie die Anzeige aus und klicken Sie unten im Bedienfeld auf **Löschen**
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 
+## Wie geht es weiter {#whats-next}
+
+Nachdem Sie nun gelernt haben, wie Anzeigen für Ihr Projekt erstellt und verwaltet werden, sollten Sie Ihren Screens-Player als Cloud Service-Journey fortsetzen, indem Sie sich das Dokument [Installieren und Konfigurieren des Screens-Players für AEM als Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md) ansehen.
