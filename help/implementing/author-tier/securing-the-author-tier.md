@@ -2,10 +2,10 @@
 title: Sichern der Autorenebene
 description: Sichern der Autorenebene
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 22392b609dea7052998649f8f959e971d01202cb
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 100%
+source-wordcount: '125'
+ht-degree: 66%
 
 ---
 
@@ -15,7 +15,11 @@ Beim Erstellen einer neuen Umgebung mit AEM as a Cloud Service ist die resultier
 
 Sie können die Netzwerkrichtlinien weiter konfigurieren, um den Zugriff auf Ihre Autorenebene zu sichern. Das Verfahren basiert auf der Autorisierung der IP-Bereiche, die Netzwerkzugriff auf Ihre Autorenumgebung erhalten sollen.
 
-Um diese Regeln einzurichten, reichen Sie ein Support-Ticket (über die Adobe Admin Console) mit den folgenden Informationen ein:
-- Programm-ID
-- Umgebungs-ID
-- Zu autorisierende IP-Adressbereiche
+Um diese Regeln einzurichten, reichen Sie ein Support-Ticket von der [Adobe Admin Console](https://adminconsole.adobe.com/) mit den erforderlichen Informationen ein:
+
+* Programm-ID
+* Umgebungs-ID
+* Zu autorisierende IP-Adressbereiche
+
+   >[!NOTE]
+   >Weitere Informationen finden Sie unter [Anwenden einer IP-Zulassungsliste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=en) .
