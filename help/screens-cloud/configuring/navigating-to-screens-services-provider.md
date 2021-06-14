@@ -1,18 +1,18 @@
 ---
-title: Einrichten des Screens-Dienstleisters
-description: Auf dieser Seite wird die Einrichtung des Screens-Dienstleisters beschrieben.
+title: Navigieren zum Screens Services Provider
+description: Auf dieser Seite wird beschrieben, wie Sie zum Screens-Dienstanbieter navigieren.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
 
 
-# Einrichten des Screens-Dienstleisters {#setup-screens-services-provider}
+# Navigieren Sie zu Screens Services Provider {#setup-screens-services-provider} .
 
 ## Einführung {#introduction}
 
@@ -44,5 +44,5 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie den Screens-Dienstanbieter einrichten, zu dem Sie navigieren können, finden Sie weitere Informationen unter Screens Content Provider .
+Nachdem Sie gelernt haben, wie Sie den Screens-Dienstanbieter einrichten, können Sie zu [Verwenden des Screens Content Providers](/help/screens-cloud/configuring/using-screens-content-provider.md) navigieren, um weitere Informationen zu erhalten.
 
