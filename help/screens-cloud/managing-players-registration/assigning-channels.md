@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal einer Anzeig
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2514255c20a87a2e469c1678e6aee20a517eb9ab
+source-git-commit: 8108589cb69c31e1b6d838476efc56684a97728e
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 18%
+source-wordcount: '289'
+ht-degree: 37%
 
 ---
 
@@ -18,9 +18,7 @@ Nachdem das Projekt fertig eingerichtet wurde, müssen Sie den Kanal einer Anzei
 
 ## Vorgabe {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie einen Kanal einer Anzeige zuweisen, sobald die Anzeige fertig ist und der Inhalt des Kanals ausgefüllt ist. Nach dem Lesen sollten Sie:
-
-* Erfahren Sie, wie Sie einen Kanal einer Anzeige vom Screens Services Provider zuweisen.
+In diesem Dokument erfahren Sie, wie Sie einer Anzeige einen Kanal zuweisen, sobald die Anzeige fertig ist und Sie Inhalt zu Ihrem Kanal hinzugefügt und veröffentlicht haben. Nach der Lektüre sollten Sie verstehen, wie Sie einen Kanal einer Anzeige vom Screens Services Provider zuweisen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -35,10 +33,24 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
 
 1. Navigieren Sie zu Screens Services Provider und wählen Sie **Displays** aus dem linken Navigationsbereich aus.
 
-1. Wählen Sie die Anzeige aus, z. B. ChannelFoodDisplay aus der Liste, und klicken Sie auf Kanal zuweisen , um der Anzeige einen Kanal zuzuweisen.
+1. Klicken Sie auf **Kanal** zur Anzeige zuweisen.
 
-1. Wählen Sie den Kanal aus, z. B. ChannelFood aus der Dropdownliste. Legen Sie die Priorität und Aktivierung fest und klicken Sie auf Erstellen .
+   ![image](/help/screens-cloud/assets/display/assignchannel-1.png)
+
+1. Füllen Sie die folgenden Felder aus dem Dialogfeld **Kanal zuweisen** aus.
+
+   1. Wählen Sie den Kanalnamen aus der Dropdown-Liste aus.
+   1. Wählen Sie die Priorität aus.
+
+      >[!NOTE]
+      >Mit „Priorität“ können Zuweisungen geordnet werden, falls mehrere die Wiedergabekriterien erfüllen. Höhere Werte haben stets Vorrang vor niedrigeren Werten. Wenn es beispielsweise die beiden Kanäle A und B gibt und A eine Priorität von 1 und B eine Priorität von 2 hat, wird Kanal B angezeigt, da er eine höhere Priorität als A hat.
+   1. Wählen Sie in **Activation** das Start- und Enddatum aus.
+
+      ![image](/help/screens-cloud/assets/display/assignchannel-2.png)
+
+1. Klicken Sie auf **Erstellen**. Sie sehen, dass ein Kanal für diese Anzeige zugewiesen ist, wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-   Nachdem Sie auf Erstellen geklickt haben, sehen Sie, dass ein Kanal für diese Anzeige zugewiesen ist.
 
