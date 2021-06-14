@@ -5,10 +5,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
       + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [Benutzerspezifische Regeln für Codequalität](cloud-manager/custom-code-quality-rules.md)
+      + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
       + [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
@@ -57,7 +57,7 @@ ht-degree: 95%
       + [Überprüfen des IP-Zulassungslistenstatus](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Verwalten von Code {#managing-code}
-   + [Umgang mit Maven-Projektversionen ](cloud-manager/project-version-handling.md)
+   + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
    + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
@@ -70,7 +70,7 @@ ht-degree: 95%
    + [Protokollierung](developing/introduction/logging.md)
    + [Konfigurationen und der Konfigurations-Browser](developing/introduction/configurations.md)
    + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
@@ -158,7 +158,7 @@ ht-degree: 95%
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
    + [Der Link Externalizer](/help/implementing/developing/tools/externalizer.md)
-+ Personalisierung  {#personalization}
++ Personalisierung {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Konfigurieren von ContextHub ](developing/personalization/configuring-contexthub.md)
    + [Hinzufügen von ContextHub zu Seiten](developing/personalization/adding-contexthub.md)
