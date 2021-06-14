@@ -4,15 +4,15 @@ description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
 
 
-# Installieren von Playern in Screens als Cloud Service {#installing-players-screens-cloud}
+# Installieren und Konfigurieren von Playern in Screens as a Cloud Service {#installing-players-screens-cloud}
 
 Im folgenden Abschnitt wird beschrieben, wie Sie AEM Screens-Player installieren, die für On-Premise-AEM registriert sind. Außerdem müssen Sie den vorhandenen Player werkseitig zurücksetzen und dann den neuen Player für AEM Screens als Cloud Service registrieren.
 
