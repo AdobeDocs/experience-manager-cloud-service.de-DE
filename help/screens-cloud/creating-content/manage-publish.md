@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 17%
 
 ---
@@ -52,9 +52,4 @@ Gehen Sie wie folgt vor, um den Kanal zu veröffentlichen:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun Ihre Kanäle im Projekt veröffentlicht haben, können Sie:
-
-* Erstellen und Verwalten von Standorten über den Screens Content Provider
-* Erstellen und Verwalten von Playern über den Screens Services Provider
-
-   Sie sollten Ihre Screens als Cloud Service-Journey fortsetzen, indem Sie sich das Dokument erneut ansehen.
+Nachdem Sie nun Ihre Kanäle im Projekt veröffentlicht haben, sollten Sie Ihre Screens als Cloud Service-Journey fortsetzen, indem Sie das Dokument [Installieren und Konfigurieren von Playern in Screens als Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) erneut ansehen.
