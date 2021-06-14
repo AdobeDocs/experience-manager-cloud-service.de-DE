@@ -4,10 +4,10 @@ description: Auf dieser Seite wird die Verwendung des Screens Content Providers 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 2%
+source-wordcount: '190'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,11 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Screens Content Provider verwen
 >**Voraussetzung**
 >Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten des Screens-Dienstanbieters](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) , um zu erfahren, wie Sie über den Screens-Dienstanbieter zu dieser Benutzeroberfläche navigieren.
 
-Sobald Sie sich beim Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen.
+Sobald Sie sich beim Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen. Verwenden Sie den Screens Content Provider, um Folgendes zu erstellen und zu verwalten:
+
+* Projekte
+* Kanäle
+* Standorte
 
 ## Wie geht es weiter {#whats-next}
 
