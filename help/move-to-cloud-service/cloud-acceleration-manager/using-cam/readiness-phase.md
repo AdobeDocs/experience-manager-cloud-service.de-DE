@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,12 @@ Die Bereitschaftsphase umfasst:
 * [Best Practices-Analyse](#best-practices-analysis)
 * [Planung und Einrichtung](#planning-setup)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum Abschnitt **Bereitschaft** zu navigieren, wie in der folgenden Abbildung dargestellt.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
 
 ## Verwenden der Best Practices-Analysekarte {#best-practices-analysis}
 
