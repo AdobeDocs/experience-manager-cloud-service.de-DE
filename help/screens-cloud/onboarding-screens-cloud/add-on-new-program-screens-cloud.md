@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie in Cloud Manager für Sc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '311'
+ht-degree: 11%
 
 ---
 
@@ -27,7 +27,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Screens als Add-on zu einem neu
 
 Gehen Sie wie folgt vor, um Screens als Add-on zu einem neuen Programm in Cloud Manager hinzuzufügen:
 
-1. Zu Cloud Manager navigieren.
+1. Navigieren Sie zu [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >Weitere Informationen zu Cloud Manager finden Sie unter [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) .
@@ -50,5 +50,5 @@ Gehen Sie wie folgt vor, um Screens als Add-on zu einem neuen Programm in Cloud 
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie Screens als Add-On zu einem vorhandenen Cloud Manager-Programm hinzufügen können und Ihr Programm unter den Programmen und Produkten von Cloud Manager sehen, können Sie jetzt mit dem nächsten Schritt im Onboarding-Prozess fortfahren, d. h. [Erstellen einer Verzweigung für Ihr Projekt in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Nachdem Sie gelernt haben, wie Sie Screens als Add-On zu einem vorhandenen Cloud Manager-Programm hinzufügen können und Ihr Programm unter den Programmen und Produkten von Cloud Manager sehen, können Sie jetzt mit dem nächsten Schritt im Integrationsprozess fortfahren, nämlich [Erstellen einer Verzweigung für Ihr Projekt in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
