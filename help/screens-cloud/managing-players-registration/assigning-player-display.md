@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Player einer Anzei
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,11 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Player zuzuweisen:
 
    ![image](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Nachdem Sie auf Auswählen geklickt haben, wird die zugewiesene Anzeige unter dem Bedienfeld **ZUGEWIESENE ANZEIGE** angezeigt.
+## Inhaltswiedergabe {#content-playback}
 
-   Jetzt wird die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe des Inhalts. Der Player sollte jetzt Inhalte herunterladen und wiedergeben. **Herzlichen Glückwunsch!**
+Nachdem Sie einem Player eine Anzeige zugewiesen haben, wie im vorherigen Abschnitt gezeigt, wird die zugewiesene Anzeige unter dem Bedienfeld **ZUGEWIESENE ANZEIGE** angezeigt.
 
-   ![image](/help/screens-cloud/assets/player/output.gif)
+Jetzt wird die Anzeige Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe des Inhalts. Der Player sollte jetzt Inhalte herunterladen und wiedergeben. **Herzlichen Glückwunsch!**
+
+![image](/help/screens-cloud/assets/player/output.gif)
 
