@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 10e08b100c637db968b405b65d72a896ad411308
+source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 23%
+source-wordcount: '933'
+ht-degree: 24%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 23%
 >id="aemcloud_onboarding_overview"
 >title="Onboarding-Übersicht"
 >abstract="Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine bestehende migrieren, dient dieses Handbuch als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung für den Cloud Service optimiert und erfolgreich ist. Sie benötigen die Hilfe Ihrer Adobe ID und Ihres Systemadministrators, um Benutzer zu Cloud Manager zu den ihnen zugewiesenen Rollen und Berechtigungen hinzuzufügen."
->additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="Ausstellung auf Dienstebene - AEM als Cloud Service"
 
 Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine bestehende migrieren, dient dieses Handbuch als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung für den Cloud Service optimiert und erfolgreich ist.
 
