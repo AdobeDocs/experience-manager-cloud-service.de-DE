@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 4%
 
 ---
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
    * Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsergebnisse anzuzeigen.
    * Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt
 
-## Verwenden von Planung und Einrichtung {#planning-setup}
+## Verwenden der Planungs- und Setup-Karte {#planning-setup}
 
 In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 
