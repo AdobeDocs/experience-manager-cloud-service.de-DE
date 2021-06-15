@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens als Cl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 1%
+source-wordcount: '395'
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ Nachdem Sie Player für Screens als Cloud Service installiert und konfiguriert h
 
 ## Vorgabe {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie Player im Screens-Dienstanbieter registrieren. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie Player im Screens-Dienstanbieter registrieren. Nach dem Lesen sollten Sie in der Lage sein:
 
-* Erfahren Sie, wie Sie Player registrieren.
-* Sie können Ihre Kanäle in einem AEM Screens-Projekt verwalten, bezogen auf den Umfang.
+* Informationen zur Registrierung von Playern
+* wie Sie den Registrierungsprozess von Screens Services Provider abschließen
 
 ## Schritte zum Registrieren eines Screens-Players {#register-players}
 
@@ -66,3 +66,6 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
+## Wie geht es weiter {#whats-next}
+
+Nachdem Sie den Player im Cloud -Modus installiert und konfiguriert haben, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Player in Screens as a Cloud Service zuweisen](/help/screens-cloud/managing-players-registration/assigning-player-display.md) vom Screens-Dienstanbieter erneut ansehen.
