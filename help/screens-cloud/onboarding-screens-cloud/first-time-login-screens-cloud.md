@@ -4,9 +4,9 @@ description: Auf dieser Seite werden die ersten Schritte bei den ersten Schritte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ Klicken Sie hier , um das neueste Feature Pack herunterzuladen.
 
 ## Hinzufügen von Benutzern zu Adobe Admin Console {#admin-console}
 
-Nachdem Sie über eine Adobe Identity Management System (IMS)-Organisations-ID verfügen, können Sie jetzt mit [Adobe Admin Console](https://adminconsole.adobe.com/) integriert werden. Weitere Informationen zum Hinzufügen von Benutzern zur Admin Console finden Sie unter [Adobe Admin Console-Benutzer](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) .
+Nachdem Sie über eine Adobe Identity Management System (IMS)-Organisations-ID verfügen, können Sie jetzt auf [Adobe Admin Console](https://adminconsole.adobe.com/) zugreifen. Weitere Informationen zum Hinzufügen von Benutzern zur Admin Console finden Sie unter [Adobe Admin Console-Benutzer](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) .
 
 >[!NOTE]
 >Die Benutzer haben Zugriff auf AEM Cloud Service-Produktprofil, damit sie sich über Adobe ID oder Federated ID bei AEM anmelden können.
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie über eine IMS-Organisations-ID verfügen und der Adobe Admin Console als Benutzer hinzugefügt wurden, können Sie jetzt das Screens-Add-on zum neuen oder vorhandenen Programm für Screens als Cloud Service in Cloud Manager hinzufügen.
+Nachdem Sie über eine IMS-Organisations-ID verfügen und der Adobe Admin Console als Benutzer hinzugefügt wurden, können Sie jetzt das [Screens-Add-on zum neuen Programm](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) oder [einem bestehenden Programm](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) für Screens als Cloud Service in Cloud Manager hinzufügen.
