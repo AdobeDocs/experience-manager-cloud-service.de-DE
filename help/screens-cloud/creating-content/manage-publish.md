@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 17%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 17%
 
 ## Einführung {#introduction}
 
-Sie können Inhalte aus AEM Screens veröffentlichen. Mit der Funktion Veröffentlichung verwalten können Sie Inhaltsaktualisierungen vom Autor an den Player senden, um sie zu veröffentlichen. Sie können Inhalte für Ihr gesamtes AEM Screens-Projekt oder nur für einen Ihrer Kanäle, Standorte, Player oder Anwendungen veröffentlichen oder die Veröffentlichung rückgängig machen.
+Sie können Inhalte aus AEM Screens veröffentlichen. Mit der Funktion Veröffentlichung verwalten können Sie Inhaltsaktualisierungen vom Autor an den Player senden, um sie zu veröffentlichen. Sie können Inhalte für Ihr gesamtes AEM Screens-Projekt oder nur für einen Kanal, einen Speicherort, einen Player oder eine Anwendung veröffentlichen oder die Veröffentlichung rückgängig machen.
 
 >[!IMPORTANT]
 >Nachdem Sie einen oder mehrere Kanäle in Ihrem Projekt erstellt haben, müssen Sie die Kanäle veröffentlichen, um die Kanäle/Kanäle in der Lagerbestandslistenansicht im AEM Screens-Dienstleister anzuzeigen.
 
 ## Vorgabe {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie ein neues Projekt für Ihr AEM Screens-Projekt in Screens Content Provider erstellen. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie ein neues Projekt für Ihr AEM Screens-Projekt in Screens Content Provider erstellen. Nach dem Lesen sollten Sie in der Lage sein:
 
-* Erfahren Sie, wie Sie einen Kanal veröffentlichen.
-* Kanalveröffentlichung in Bezug auf den Umfang verwalten.
+* Hier erfahren Sie, wie Sie einen Kanal veröffentlichen.
+* Veröffentlichung im Hinblick auf den Umfang verwalten
 
 ## Schritte zum Veröffentlichen eines Kanals {#publish-channel}
 
