@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a C
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Installieren und Konfigurieren von Playern in Screens as a Cloud Service {#installing-players-screens-cloud}
 
-Im folgenden Abschnitt wird beschrieben, wie Sie AEM Screens-Player installieren, die für On-Premise-AEM registriert sind. Außerdem müssen Sie den vorhandenen Player werkseitig zurücksetzen und dann den neuen Player für AEM Screens als Cloud Service registrieren.
+In diesem Abschnitt wird beschrieben, wie Sie AEM Screens-Player installieren, die für On-Premise-AEM registriert sind. Außerdem müssen Sie den vorhandenen Player werkseitig zurücksetzen und dann den neuen Player bei AEM Screens als Cloud Service registrieren.
 
 ## Vorgabe {#objective}
 
@@ -48,4 +48,4 @@ Gehen Sie wie folgt vor, um den Player zu aktualisieren:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie den Player im Cloud-Modus installiert und konfiguriert haben, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Registrieren von Playern in Screens als Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) vom Screens-Dienstanbieter erneut durchlesen.
+Nachdem Sie den Player im Cloud -Modus installiert und konfiguriert haben, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Registrieren von Playern in Screens als Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) vom Screens-Dienstanbieter lesen.
