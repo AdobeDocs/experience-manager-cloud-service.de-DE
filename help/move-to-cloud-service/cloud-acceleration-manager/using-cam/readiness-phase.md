@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 4%
 
 ---
@@ -18,20 +18,20 @@ Nachdem Sie ein Projekt in Cloud Acceleration Manager erstellt haben, können Si
 
 Die Bereitschaftsphase umfasst:
 
-* Best Practices-Analyse
-* Planung und Einrichtung
+* [Best Practices-Analyse](#best-practices-analysis)
+* [Planung und Einrichtung](#planning-setup)
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Verwenden der Best Practices-Analyse {#best-practices-analysis}
+## Verwenden der Best Practices-Analysekarte {#best-practices-analysis}
 
-Gehen Sie wie folgt vor, um die Best Practices-Analyse zu verwenden:
+Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwenden:
 
 1. Klicken Sie auf die Schaltfläche **Überprüfen** in der Karte **Best Practices Analysis** .
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Führen Sie diese Schritte aus, um Best Practices Analyzer herunterzuladen und auf einem Klon Ihres AEM-Systems auszuführen.
+1. Führen Sie diese Schritte aus, um Best Practices Analyzer (BPA) herunterzuladen und auf einem Klon Ihres AEM-Systems auszuführen.
 
    1. Navigieren Sie zum Portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
@@ -46,9 +46,9 @@ Gehen Sie wie folgt vor, um die Best Practices-Analyse zu verwenden:
 
 1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM.
 
-   * Durch Klicken auf jede Karte wird die zugehörige Registerkarte geöffnet
-   * Alle Berichtregisterkarten (einschließlich Filterung) können für Freigabe oder zukünftigen Abruf mit einem Lesezeichen versehen werden
-   * Details zu den einzelnen Berichtsuchvorgängen über das Detailsymbol anzeigen
+   * Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
+   * Sie können alle Berichtregisterkarten (einschließlich Filterung) mit einem Lesezeichen versehen, um sie freizugeben oder in Zukunft abzurufen
+   * Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsergebnisse anzuzeigen.
    * Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt
 
 ## Verwenden von Planung und Einrichtung {#planning-setup}
@@ -66,8 +66,5 @@ In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 ## Wie geht es weiter {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie jetzt den nächsten Schritt mithilfe der Implementierungsphase überprüfen.
-
-
-
 
 
