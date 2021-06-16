@@ -4,10 +4,10 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 4%
+source-wordcount: '441'
+ht-degree: 3%
 
 ---
 
@@ -21,12 +21,18 @@ Die Bereitschaftsphase umfasst:
 * [Best Practices-Analyse](#best-practices-analysis)
 * [Planung und Einrichtung](#planning-setup)
 
-Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum Abschnitt **Bereitschaft** zu navigieren, wie in der folgenden Abbildung dargestellt.
+Gehen Sie wie folgt vor, um zur Bereitschaftsphase zu navigieren:
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen.
 
->[!NOTE]
->Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Navigieren Sie zum Abschnitt **Bereitschaft** , wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
 
 ## Verwenden der Best Practices-Analysekarte {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM.
+1. Nachdem Sie einen neuen Bericht hochgeladen haben, wird der Bericht Best Practices-Analyse angezeigt.
 
-   * Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
-   * Sie können alle Berichtregisterkarten (einschließlich Filterung) mit einem Lesezeichen versehen, um sie freizugeben oder in Zukunft abzurufen
-   * Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsergebnisse anzuzeigen.
-   * Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Bericht zu Best Practices für die Analyse](#analysis-report) .
+
+### Überprüfen des Analyseberichts zu Best Practices {#analysis-report}
+
+Auf der Berichtseite stehen folgende Karten zur Verfügung:
+
+>[!NOTE]
+>Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
+
+1. **Berichteigenschaften**: Diese Karte bietet Informationen in den Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum usw.
+
+1. **Berichtsübersicht**:
+
+   Diese Karte liefert die Ergebnisse des Berichts
+
+1. **Best Practices-Bewertung**
+
+1. **Bewertung der Migrationskomplexität**
+
+   >[!NOTE]
+   > Darüber hinaus können Sie:
+   >* Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
+   >* Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) zum Freigeben oder künftigen Abruf
+   >* Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsfindungen anzuzeigen.
+
 
 ## Verwenden der Planungs- und Setup-Karte {#planning-setup}
 
