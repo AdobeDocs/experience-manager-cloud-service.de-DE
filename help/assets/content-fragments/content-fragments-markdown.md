@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax ve
 feature: Inhaltsfragmente
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 93%
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -165,7 +165,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Anders als ein vorformatierten Codeblock zeigt ein Codebereich Code in einem normal Absatz an.
+Um einen Codebereich anzugeben, schließen Sie ihn mit Backtick-Anführungszeichen (&amp;grave;) ein. Anders als ein vorformatierten Codeblock zeigt ein Codebereich Code in einem normal Absatz an.
 
 Beispiel:
 
