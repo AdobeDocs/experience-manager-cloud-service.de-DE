@@ -4,10 +4,10 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
 Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report an:
 
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Jede Karte bietet folgende Möglichkeiten:
 >* Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
@@ -77,11 +79,26 @@ Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report
 
 #### Berichteigenschaften {#report-properties}
 
-Diese Karte bietet Informationen in den Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum usw.
+Diese Karte enthält Informationen zu Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum und Adobe Experience Manager (AEM)-Details.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Berichtsübersicht {#report-overview}
 
 Diese Karte liefert die Ergebnisse des Berichts
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Wenn Sie auf diesen Bericht klicken, wird der Tab **Bericht** geöffnet, wie in der folgenden Abbildung dargestellt.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Unter [Interpretieren des Berichts &quot;Best Practices Analyzer&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) erfahren Sie mehr über die Kategorien von Befunden und die Wichtigkeitsstufen.
 
 #### Bewertung bewährter Verfahren {#best-practices-assessment}
 
