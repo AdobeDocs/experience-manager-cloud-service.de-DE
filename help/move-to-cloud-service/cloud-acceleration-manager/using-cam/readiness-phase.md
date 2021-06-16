@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
 1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Bericht zu Best Practices für die Analyse](#analysis-report) .
 
+   >[!NOTE]
+   >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
+
 ### Überprüfen des Analyseberichts zu Best Practices {#analysis-report}
 
-Auf der Berichtseite stehen folgende Karten zur Verfügung:
+Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report an:
 
 >[!NOTE]
->Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
+> Jede Karte bietet folgende Möglichkeiten:
+>* Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
+>* Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) zum Freigeben oder künftigen Abruf
+>* Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsfindungen anzuzeigen.
 
-1. **Berichteigenschaften**: Diese Karte bietet Informationen in den Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum usw.
 
-1. **Berichtsübersicht**:
+#### Berichteigenschaften {#report-properties}
 
-   Diese Karte liefert die Ergebnisse des Berichts
+Diese Karte bietet Informationen in den Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum usw.
 
-1. **Best Practices-Bewertung**
+#### Berichtsübersicht {#report-overview}
 
-1. **Bewertung der Migrationskomplexität**
+Diese Karte liefert die Ergebnisse des Berichts
 
-   >[!NOTE]
-   > Darüber hinaus können Sie:
-   >* Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
-   >* Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) zum Freigeben oder künftigen Abruf
-   >* Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsfindungen anzuzeigen.
+#### Bewertung bewährter Verfahren {#best-practices-assessment}
+
+Diese Karte bietet eine
+
+#### Bewertung der Migrationskomplexität {#migration-complexity-assessment}
+
+Diese Karte bietet
 
 
 ## Verwenden der Planungs- und Setup-Karte {#planning-setup}
