@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 100%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster  {#navigation-panel}
+### Navigationsfenster {#navigation-panel}
 
 Das Navigationsfenster:
 
@@ -71,7 +71,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Projekte | Die Projektekonsole bietet Ihnen direkten Zugriff auf Ihre Projekte. [Projekte sind virtuelle Dashboards](/help/sites-cloud/authoring/projects/overview.md), die zum Aufbau eines Teams verwendet werden können. Sie können diesem Team dann Zugriff auf Ressourcen, Workflows und Aufgaben gewähren, damit alle auf ein gemeinsames Ziel hinarbeiten. |
 | Sites | Mit der Konsole „Sites“ können Sie [Websites erstellen, anzeigen und verwalten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md), die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsole können Sie Seiten erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen sowie Workflows starten. |
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
-| Assets | In der Konsole „Assets“ können Sie digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien, importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird.<!--add some kind of assets link--> |
+| Assets | Mit der Konsole &quot;Assets&quot;können Sie [digitale Assets wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md) importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Sie können [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) auch über die Konsole &quot;Assets&quot;erstellen und verwalten. |
 | Personalisierung | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 
 ## Tools-Bereich {#tools-panel}
@@ -203,7 +203,7 @@ Dokumentation für Web Experience Management anzeigen
    >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
    >
    >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Aktionssymbolleiste {#actions-toolbar}
@@ -223,8 +223,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
+Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
 ## Schnellaktionen  {#quick-actions}
 
@@ -245,8 +244,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 * [Listenansicht](#list-view)
 
 >[!NOTE]
->
->Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
+Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
 ### Auswählen von Ressourcen  {#selecting-resources}
 
@@ -376,8 +374,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
    >[!NOTE]
-   >
-   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+   Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
    ![Spaltenreihenfolge](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -396,8 +393,7 @@ So können Sie z. B. in **Sites** nur Inhalt (Standard), die Inhaltsstruktur, d
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
 >[!NOTE]
->
->[Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
+[Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
 
 ### Inhaltsstruktur {#content-tree}
 
@@ -408,9 +404,8 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
->Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
+Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ### Zeitleiste {#timeline}
 
