@@ -4,9 +4,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 17%
 
 ---
@@ -23,9 +23,9 @@ Sie können Inhalte aus AEM Screens veröffentlichen. Mit der Funktion Veröffen
 
 ## Vorgabe {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie ein neues Projekt für Ihr AEM Screens-Projekt in Screens Content Provider erstellen. Nach dem Lesen sollten Sie in der Lage sein:
+In diesem Dokument erfahren Sie, wie Sie die bearbeiteten Inhalte beim Screens Services-Anbieter und -Player veröffentlichen. Nach dem Lesen sollten Sie in der Lage sein:
 
-* Hier erfahren Sie, wie Sie einen Kanal veröffentlichen.
+* Informationen zum Veröffentlichen eines Kanals
 * Veröffentlichung im Hinblick auf den Umfang verwalten
 
 ## Schritte zum Veröffentlichen eines Kanals {#publish-channel}
