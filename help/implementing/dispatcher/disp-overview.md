@@ -3,10 +3,10 @@ title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -34,9 +34,9 @@ Die Dispatcher Tools sind Teil des gesamten AEM as a Cloud Service-SDK und biete
 
 ## Herunterladen und Extrahieren der Tools {#extracting-the-sdk}
 
-Die Dispatcher Tools, die zum [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) gehören, können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)-Portal heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Version der Dispatcher Tools verfügbar ist, kann für die Bereitstellung in Cloud-Umgebungen verwendet werden, in denen diese Version der AEM in der Cloud oder höher ausgeführt wird.
+Die Dispatcher Tools, die zum [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) gehören, können aus einer ZIP-Datei im [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)-Portal heruntergeladen werden. Jede neue Konfiguration, die in dieser neuen Version der Dispatcher Tools verfügbar ist, kann verwendet werden, um sie in Cloud-Umgebungen bereitzustellen, in denen diese Version der AEM in der Cloud oder höher ausgeführt wird.
 
-Entpacken Sie das SDK, das die Dispatcher Tools für macOS/Linux und Windows enthält.
+Entpacken Sie das SDK, das die Dispatcher Tools für macOS, Linux und Windows bündelt.
 
 **Für macOS/Linux** erstellen Sie die ausführbare Datei des Dispatcher-Tool-Artefakts und führen Sie es aus. Sie extrahiert die Dispatcher Tools-Dateien selbst in das Verzeichnis, in dem Sie sie gespeichert haben (wobei `version` die Version der Dispatcher Tools ist).
 
@@ -112,7 +112,7 @@ Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie enthält eine Reihe 
 
 * `conf.d/variables/custom.vars`
 
-Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
+Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie können an dieser Stelle Definitionen für Apache-Variablen hinzufügen.
 
 * `conf.d/variables/global.vars`
 
@@ -361,7 +361,7 @@ Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 **Veraltetes Konfigurations-Layout erkannt, Kompatibilitätsmodus wird aktiviert**
 
-Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Dies wird weiterhin rückwärts unterstützt
+Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Auch wenn dies noch rückwärts unterstützt wird
 -Kompatibilität verwenden, sollten Sie zum neuen Layout wechseln.
 
 ## Lokale Validierung der Dispatcher-Konfigurationssyntax, damit Apache httpd {#local-validation} starten kann
