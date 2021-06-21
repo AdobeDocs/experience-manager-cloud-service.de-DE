@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um den Kanal zu veröffentlichen:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Klicken Sie in der Aktionsleiste auf **+Untergeordnete Elemente einbeziehen**. Deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf Hinzufügen, um sie zu veröffentlichen. Standardmäßig werden alle Felder markiert und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
+   >Klicken Sie in der Aktionsleiste auf **+ Untergeordnete Elemente einbeziehen**. Deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf Hinzufügen, um sie zu veröffentlichen. Standardmäßig werden alle Felder markiert und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
 
 1. Nachdem Sie den Kanal im Assistenten **Veröffentlichung verwalten** ausgewählt haben, klicken Sie auf **Veröffentlichen** , um den Kanal zu veröffentlichen.
 
