@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM als Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 86%
+source-wordcount: '891'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzwec
 
 Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanforderungen des Kunden. Für die Veröffentlichungsebene können Kunden optional von ihrem eigenen CDN darauf verweisen, welches sie verwalten müssen. Dies wird von Fall zu Fall auf der Grundlage der Erfüllung bestimmter Voraussetzungen gestattet, insbesondere dass der Kunde eine Altintegration mit seinem CDN-Anbieter hat, die schwer aufzugeben ist.
 
-## AEM-verwaltetes CDN {#aem-managed-cdn}
+## AEM-verwaltetes CDN  {#aem-managed-cdn}
 
 Befolgen Sie die nachstehenden Abschnitte, um mithilfe der Cloud Manager-Self-Service-Benutzeroberfläche die Bereitstellung von Inhalten mit dem vorkonfigurierten CDN von AEM vorzubereiten:
 
@@ -61,14 +61,18 @@ Konfigurationsanweisungen:
 1. Legen Sie die Host-Kopfzeile mit der Ursprungs-Domain fest, bei der es sich um den CDN-Eingang von AEM handelt. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Senden Sie die SNI-Kopfzeile an den Ursprung. Wie die Host-Kopfzeile muss die SNI-Kopfzeile die Ursprungsdomain sein.
 1. Legen Sie entweder `X-Edge-Key` oder `X-AEM-Edge-Key` fest (wenn Ihr CDN `X-Edge-*` abschneidet). Der Wert muss von Adobe stammen.
-   * Dies ist erforderlich, damit das Adobe-CDN die Anforderungsquelle überprüfen und die `X-Forwarded-*`-Header an die AEM übergeben kann. Beispielsweise wird `X-Forwarded-Host` von AEM verwendet, um die Host-Kopfzeile zu bestimmen, und `X-Forwarded-For` wird verwendet, um die Client-IP zu bestimmen. Daher ist es Sache des vertrauenswürdigen Aufrufers (d. h. des kundenverwalteten CDN), die Richtigkeit der `X-Forwarded-*`-Kopfzeilen sicherzustellen (siehe Hinweis unten).
-   * Optional kann der Zugriff auf den Eingang des Adobe CDN blockiert werden, wenn kein `X-Edge-Key` vorhanden ist. Bitte informieren Sie die Adobe, wenn Sie direkten Zugriff auf den Eingang von Adobe CDN benötigen (um blockiert zu werden).
+   * Dies ist erforderlich, damit das Adobe-CDN die Anfragequelle überprüfen und die `X-Forwarded-*`-Header an die AEM-Anwendung übergeben kann. Beispielsweise wird von AEM `X-Forwarded-Host` verwendet, um die Host-Kopfzeile zu bestimmen, und `X-Forwarded-For` wird verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des vom Kunden verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
+   * Optional kann der Zugriff auf den Eingang zum Adobe CDN blockiert werden, wenn kein `X-Edge-Key` vorhanden ist. Bitte informieren Sie Adobe, wenn Sie direkten Zugriff auf den Eingang zum Adobe CDN benötigen (oder um ihn zu blockieren).
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
 >[!NOTE]
 >
 >Kunden, die ein eigenes CDN verwalten, müssen die Integrität der Kopfzeilen sicherstellen, die an das CDN von AEM gesendet werden. Beispielsweise empfehlen wir, dass Kunden alle `X-Forwarded-*`-Kopfzeilen löschen und für sie bekannte und kontrollierte Werte festlegen. Beispiel: `X-Forwarded-For` muss die IP-Adresse des Kunden enthalten, während `X-Forwarded-Host` den Host der Website enthalten muss.
+
+>[!NOTE]
+>
+>Sandbox-Programmumgebungen unterstützen kein vom Kunden bereitgestelltes CDN.
 
 Aufgrund des zusätzlichen Wechsels kann zu einem kleinen Leistungseinbruch kommen, obwohl Wechsel vom Kunden-CDN zum von AEM verwalteten CDN wahrscheinlich effizient sind.
 
