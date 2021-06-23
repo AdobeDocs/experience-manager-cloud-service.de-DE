@@ -4,14 +4,14 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 73%
+source-wordcount: '830'
+ht-degree: 68%
 
 ---
 
-# Wesentliche Änderungen in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
+# Wesentliche Änderungen in[!DNL Experience Manager Assets]as a [!DNL Cloud Service] {#notable-changes}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] bietet eine Vielzahl neuer Funktionen und Möglichkeiten für die Verwaltung Ihrer Experience Manager-Projekte. Es gibt viele Unterschiede zwischen [!DNL Experience Manager Assets] On-Premise oder als Adobe Managed Service (gehostet) im Vergleich zu [!DNL Experience Manager] as a [!DNL Cloud Service]. In diesem Artikel werden wichtige Unterschiede bei den Funktionalitäten von [!DNL Assets] verdeutlicht.
 
@@ -21,7 +21,7 @@ Die Hauptunterschiede gegenüber Adobe [Experience Manager] 6.5 bestehen in den 
 * [Asset-Microservices für Cloud-native Verarbeitung](#asset-microservices).
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui).
 
-## Asset-Aufnahme und -Verarbeitung {#asset-ingestion}
+## Asset-Erfassung, -Verarbeitung und -Verteilung {#asset-ingestion-distribution}
 
 Der Asset-Upload wurde auf Effizienz optimiert, indem eine bessere Skalierung der Aufnahme, schnellere Uploads, eine schnellere Verarbeitung mithilfe von Microservices und eine Massenaufnahme ermöglicht wurden. Produktfunktionen (Web-Benutzeroberflächen, Desktop-Clients) wurden aktualisiert. Dies kann sich auch auf einige bestehende Anpassungen auswirken.
 
@@ -33,6 +33,8 @@ Der Asset-Upload wurde auf Effizienz optimiert, indem eine bessere Skalierung de
    * Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md).
    * Um bei der Verarbeitung benutzerdefinierte Workflow-Schritte durchzuführen, können Sie [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) verwenden.
 
+* Die Website-Komponenten, die eine Binärdatei ohne Umwandlung bereitstellen, können den direkten Download verwenden. Das Sling-GET-Servlet wird aktualisiert, damit Entwickler dies standardmäßig tun können. Die Website-Komponenten, die eine Binärdatei mit einer Umwandlung bereitstellen (z. B. Größenanpassung über ein Servlet), können weiterhin wie bisher funktionieren.
+
 Die mit Asset-Microservices generierten Standardausgabeformate werden in abwärtskompatibler Weise in den Asset-Repository-Knoten unter Verwendung derselben Benennungskonventionen gespeichert.
 
 ## Entwickeln und Testen von Asset-Microservices {#asset-microservices}
@@ -42,7 +44,6 @@ Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung 
 Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] vernetzt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
 Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
-
 
 ## Funktionsparität mit [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
