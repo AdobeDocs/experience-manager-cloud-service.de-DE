@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart-Tags, Tagging
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 92%
@@ -207,7 +207,7 @@ So moderieren Sie die Smart-Tags Ihrer Assets:
 
 1. Gehen Sie zur Seite „[!UICONTROL Eigenschaften]“ des betreffenden Assets. Beachten Sie, dass das beworbene Tag eine hohe Relevanz erhält und es aus diesem Grund höher in den Suchergebnissen angezeigt wird.
 
-### [!DNL Experience Manager] Suchergebnisse mit Smart-Tags {#understand-search} verstehen
+### [!DNL Experience Manager] Suchergebnisse mit Smart-Tags verstehen {#understand-search}
 
 Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff in den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
