@@ -2,14 +2,14 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 94%
+source-wordcount: '810'
+ht-degree: 89%
 
 ---
 
-# Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
+# Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltung Ihrer AEM-Projekte. Es gibt jedoch eine Reihe von Unterschieden zwischen AEM Sites On-Premise oder in Adobe Managed Services im Vergleich zu AEM Cloud Service. In diesem Dokument wird auf die wichtigsten Unterschiede eingegangen.
 
@@ -114,10 +114,4 @@ Für den Projektübergang von AMS oder eine On-Premise-Installation empfiehlt Ad
 
 ## Asset-Handhabung und -Bereitstellung {#asset-handling}
 
-Asset-Uploads, -Handhabung und -Downloads wurden in Assets as a Cloud Service optimiert, um eine effizientere Skalierung und schnellere Uploads und Downloads zu ermöglichen. Allerdings kann es Auswirkungen auf vorhandenen benutzerspezifischen Code geben.
-
-* Der Standard-Workflow **DAM-Update-Asset** vorheriger AEM-Versionen ist nicht mehr verfügbar.
-* Website-Komponenten, die eine Binärdatei **ohne Umwandlung** bereitstellen, sollten den direkten Download verwenden.
-   * Das Sling GET-Servlet wurde entsprechend der Standardeinstellung geändert.
-* Website-Komponenten, die eine Binärdatei **mit Umwandlung** bereitstellen (z. B. Größenanpassung über Servlet), können weiterhin wie bisher ausgeführt werden.
-* Für Assets, die über Package Manager eingehen, ist eine manuelle erneute Verarbeitung mithilfe der Aktion **Assets erneut verarbeiten** über die AEM Assets-Benutzeroberfläche erforderlich.
+Das Hochladen, Verarbeiten und Herunterladen von Assets ist in Experience Manager Assets as a Cloud Service optimiert. Es ist jetzt effizienter, ermöglicht eine größere Skalierung und schnellere Uploads und Downloads. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Siehe [Änderungen an  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
