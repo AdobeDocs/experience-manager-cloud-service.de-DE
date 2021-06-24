@@ -2,12 +2,12 @@
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie einer Seite in Adobe Experience Manager as a Cloud Service Dynamic Media-Komponenten hinzufügen.
 contentOwner: Rick Brough
-feature: Asset-Verwaltung
+feature: Asset-Management
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3222'
 ht-degree: 77%
 
 ---
@@ -22,7 +22,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie [!DNL Adobe Exp
 >
 >Stellen Sie sicher, dass Sie Assets veröffentlichen, bevor Sie sie zu Seiten in [!DNL Experience Manager] hinzufügen. Siehe [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite  {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite {#adding-a-dynamic-media-component-to-a-page}
 
 Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Medien, Panoramamedien, Smart-Zuschnitt-Videos oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite.
 
@@ -131,7 +131,7 @@ Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellunge
 
 * das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die importiert werden, bevor Sie Dynamic Media aktivieren, haben keine Pyramid TIFF-Datei.
 
-#### Arbeiten mit Bildern  {#when-working-with-images}
+#### Arbeiten mit Bildern {#when-working-with-images}
 
 Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
@@ -172,9 +172,9 @@ Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie
 
    ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Beachten Sie, dass alle [!DNL Experience Manager] Dynamic Media Smart Imaging-DPR-Werte ignoriert werden.
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Bildes.
 
@@ -251,9 +251,9 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der
 
    ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Beachten Sie, dass alle [!DNL Experience Manager] Dynamic Media Smart Imaging-DPR-Werte ignoriert werden.
 
 * **[!UICONTROL Titel]**  - Ändern Sie den Titel des Smart-Zuschnitt-Bildes.
 
