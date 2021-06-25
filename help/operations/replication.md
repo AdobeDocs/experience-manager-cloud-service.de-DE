@@ -1,11 +1,11 @@
 ---
 title: Replikation
-description: Distribution  und Fehlerbehebung bei der Replikation.
+description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 39%
+source-wordcount: '1071'
+ht-degree: 28%
 
 ---
 
@@ -42,7 +42,7 @@ Aktivieren eines Baumes:
    ![Verteilen](assets/distribute.png "Verteilen")
 4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
 
-### Workflow für Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
+### Arbeitsablauf der Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
 
 Sie können eine Baumstruktur replizieren, indem Sie **Tools - Workflow - Modelle** auswählen und das vordefinierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
@@ -82,7 +82,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
 * `replicateAsParticipant` (boolescher Wert, Standard:  `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
 * `enableVersion` (boolescher Wert, Standard:  `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
-* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass alle aktivierten Agenten verwendet werden). Es wird empfohlen, explizit über die agentId zu sein. Legen Sie ihn beispielsweise auf den Wert fest: publish
+* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, explizit über die agentId zu sein. Legen Sie ihn beispielsweise auf den Wert fest: veröffentlichen. Wird der Agent auf `preview` gesetzt, wird er im Vorschaudienst veröffentlicht
 * `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
    * `onlyActivated` - Nur Pfade, die nicht als aktiviert markiert sind, werden aktiviert.
    * `onlyModified` - Nur Pfade aktivieren, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
@@ -111,6 +111,66 @@ Nachfolgend finden Sie Beispiele für Protokolle, die während eines Workflows m
 **Unterstützung für die Fortsetzung der Migration**
 
 Der Workflow verarbeitet Inhalte in Teilen, von denen jeder eine Teilmenge des zu veröffentlichenden vollständigen Inhalts darstellt. Wenn der Workflow aus irgendeinem Grund vom System angehalten wird, wird der noch nicht verarbeitete Block neu gestartet und verarbeitet. In einer Protokollanweisung wird angegeben, dass der Inhalt aus einem bestimmten Pfad wieder aufgenommen wurde.
+
+### Replikations-API {#replication-api}
+
+Sie können Inhalte mithilfe der Replcation API veröffentlichen, die in AEM als Cloud Service enthalten ist.
+
+Weitere Informationen finden Sie in der [API-Dokumentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+
+**Grundlegende Verwendung der API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Replikation mit bestimmten Agenten**
+
+Beim Replizieren von Ressourcen wie im Beispiel oben werden nur die standardmäßig aktiven Agenten verwendet. In AEM als Cloud Service ist dies nur der Agent &quot;publish&quot;, der den Autor mit der Veröffentlichungsstufe verbindet.
+
+Um die Vorschaufunktion zu unterstützen, wurde ein neuer Agent namens &quot;Vorschau&quot;hinzugefügt, der standardmäßig nicht aktiv ist. Dieser Agent wird verwendet, um den Autor mit der Vorschauebene zu verbinden. Wenn Sie nur über den Vorschauagenten replizieren möchten, müssen Sie diesen Vorschauagenten explizit über einen `AgentFilter` auswählen.
+
+Im folgenden Beispiel erfahren Sie, wie Sie dies durchführen:
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+Wenn Sie einen solchen Filter nicht bereitstellen und nur den Agenten &quot;publish&quot;verwenden, wird der Agent &quot;preview&quot;nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
+
+Die Gesamtsumme `ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Agenten &quot;preview&quot;verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Agenten &quot;publish&quot;. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
 
 ## Fehlerbehebung {#troubleshooting}
 
