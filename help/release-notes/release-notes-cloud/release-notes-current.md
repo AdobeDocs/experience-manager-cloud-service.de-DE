@@ -2,15 +2,15 @@
 title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 15%
+source-wordcount: '1663'
+ht-degree: 23%
 
 ---
 
 
-# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
@@ -48,7 +48,7 @@ Sehen Sie sich das Video [Versionsübersicht vom Mai 2021](https://video.tv.adob
 
 ## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen im Vorabversionskanal {#what-is-new-assets-prerelease}
+### Neue Funktionen im Kanal für die Vorabversion {#what-is-new-assets-prerelease}
 
 * Metadatenschemata können direkt auf die Ordnereigenschaften angewendet werden.
 
@@ -69,33 +69,7 @@ Sehen Sie sich das Video [Versionsübersicht vom Mai 2021](https://video.tv.adob
 
 * Mit der DSGVO (Smart Imaging Device Pixel Ratio) und der Optimierung der Netzwerkbandbreite können Sie effizient hochwertige Bilder auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite bereitstellen. Siehe [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die oben genannten Verbesserungen der intelligenten Bildbearbeitung lautet:
-   >
-   >* Nordamerika 24. Mai 2021 in NA,
-      >
-      >
-   * Europa, Naher Osten und Afrika, 25. Juni 2021,
-      >
-      >
-   * Asien-Pazifik 19. Juli 2021.
-
-
-* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der [!DNL Dynamic Media]-Bereitstellung (Fmt-URL-Modifikator).
-
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die AVIF-Unterstützung lautet:
-   >
-   >* Nordamerika 10. Mai 2021,
-      >
-      >
-   * Europa, Naher Osten und Afrika 24. Mai 2021,
-      >
-      >
-   * Asien-Pazifik 24. Juni 2021.
-
+* Neue Unterstützung für das Bildformat AVIF der nächsten Generation in [!DNL Dynamic Media] Bereitstellung (`fmt` URL-Modifikator). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
@@ -129,7 +103,7 @@ In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM as a C
 Die Version 2021.6.0 von Cloud Manager in AEM wurde am 10. Juni 2021 veröffentlicht.
 Die nächste Version ist für den 15. Juli 2021 geplant.
 
-### Neuigkeiten {#what-is-new-junecm}
+### Neue Funktionen {#what-is-new-junecm}
 
 * Der Vorschaudienst wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) .
 
@@ -137,11 +111,11 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Der Name des Programms kann jetzt im Dialogfeld Programm bearbeiten bearbeitet werden.
 
-* Der standardmäßige Zweigname, der sowohl bei der Projekterstellung als auch im Standard-Push-Befehl über Git-Workflows verwalten verwendet wird, wurde in `main` geändert.
+* Der standardmäßige Name der Verzweigung, der sowohl bei der Projekterstellung als auch im Standard-Push-Befehl über „Git-Workflows verwalten“ verwendet wird, wurde zu `main` geändert.
 
 * Die Bearbeitung des Programmerlebnisses in der Benutzeroberfläche wurde aktualisiert.
 
-* Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index` -Knoten als unveränderlich zu klassifizieren.
+* Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index`-Knoten als unveränderlich zu klassifizieren.
 
 * Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern, die zur AEM Laufzeit bereitgestellt werden, genauer identifiziert.
 
@@ -155,11 +129,11 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Fehlerbehebungen {#bug-fixes-junecm}
 
-* JCR-Knotendefinitionen, die einen Zeilenumbruch enthalten, nachdem der Stammelementname nicht korrekt analysiert wurde.
+* Fehlerkorrektur – JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Die List-Repositorys-API filtert keine gelöschten Repositorys.
+* Fehlerkorrektur – Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Eine falsche Fehlermeldung wurde angezeigt, wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde.
+* Fehlerkorrektur – Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
 * Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste den grünen Status *active* sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
@@ -172,7 +146,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
 
-### Neuigkeiten {#what-is-new-may}
+### Neue Funktionen {#what-is-new-may}
 
 * Die PackageOverlaps-Qualitätsregel erkennt jetzt, wenn dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, und zwar in demselben bereitgestellten Paketsatz.
 
@@ -212,7 +186,7 @@ Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai
 
 Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlicht.
 
-### Neuigkeiten {#what-is-new-ctt-latest}
+### Neue Funktionen {#what-is-new-ctt-latest}
 
 * Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
 
@@ -228,7 +202,7 @@ Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlich
 
 Die Version 1.4.0 des Content Transfer Tool wurde am 11. Mai 2021 veröffentlicht.
 
-### Neuigkeiten {#what-is-new-ctt-may}
+### Neue Funktionen {#what-is-new-ctt-may}
 
 * Diese Version des Content Transfer Tool erstellt Textausgabeformate für Assets, die in Cloud Service migriert werden. Textausgabeformate sind erforderlich, um die Volltextsuche in aufgenommenen Assets zu unterstützen.
 * Die maximale Anzahl der Migrationssätze für das Content Transfer Tool, die ein Benutzer erstellen kann, wurde von 4 auf 10 erhöht.
