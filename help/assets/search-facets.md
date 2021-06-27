@@ -4,9 +4,9 @@ description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM ers
 feature: Search,Metadata
 role: Business Practitioner,Administrator
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2361'
 ht-degree: 99%
 
 ---
@@ -268,17 +268,6 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     <ul>
      <li>Bezeichnung</li>
      <li>Eigenschaftsname</li>
-     <li>Beschreibung</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Bewertung</td>
-   <td>Suchprädikat für die Suche nach Assets basierend auf ihrer durchschnittlichen Bewertung </td>
-   <td>
-    <ul>
-     <li>Bezeichnung</li>
-     <li>Eigenschaftsname</li>
-     <li>Optionspfad</li>
      <li>Beschreibung</li>
     </ul> </td>
   </tr>
