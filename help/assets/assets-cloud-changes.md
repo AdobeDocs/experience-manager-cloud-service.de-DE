@@ -4,10 +4,10 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
+source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 66%
+source-wordcount: '846'
+ht-degree: 67%
 
 ---
 
@@ -59,7 +59,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Teilasset-Generierung für ebenenübergreifende Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Dies betrifft beispielsweise die Anmerkung mehrseitiger PDF-Dateien. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
 | Startseite | Nicht unterstützt. | Weitere Informationen finden Sie unter [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=de) |
 | Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| Asset-Bewertung | Nicht unterstützt. | Das Widget im Metadatenschema-Editor, das die Option zur Asset-Bewertung bereitgestellt hat, wird nicht unterstützt. |
+| Asset-Bewertungen | Nicht unterstützt. | Das Bewertungs-Widget im Metadatenschema-Editor wird nicht unterstützt. |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
