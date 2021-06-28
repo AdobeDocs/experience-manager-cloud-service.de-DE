@@ -1,25 +1,22 @@
 ---
 title: Hinzufügen von Screens-Add-ons zu einem vorhandenen Programm in Cloud Manager
 description: Auf dieser Seite wird beschrieben, wie Sie einem bestehenden Programm in Cloud Manager für Screens as a Cloud Service ein Screens-Add-on hinzufügen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
-# Hinzufügen des Screens-Add-ons zu einem vorhandenen Programm in Cloud Manager {#adding-screens-program}
+# Hinzufügen von Screens-Add-ons zu einem vorhandenen Programm in Cloud Manager {#adding-screens-program}
 
 In diesem Abschnitt wird beschrieben, wie Sie Screens als Add-on zu einem vorhandenen Programm in Cloud Manager hinzufügen.
 
 >[!NOTE]
 >Weitere Informationen zu Cloud Manager-Programmen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) .
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 Mit den folgenden Schritten erfahren Sie, wie Sie einem vorhandenen Programm in Cloud Manager das Screens-Add-on hinzufügen.
 
@@ -34,14 +31,14 @@ Gehen Sie wie folgt vor, um Screens als Add-on zu einem vorhandenen Programm hin
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf die Option **Programm bearbeiten** auf der Seite **Übersicht** von Cloud Manager.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
-   >Auf der Seite **Programm bearbeiten** werden zwei Registerkarten **Allgemein** und **Lösungen und Add-ons** angezeigt.
+   >Auf der Seite **Programm bearbeiten** werden zwei Registerkarten, **Allgemein** und **Lösungen und Add-ons** angezeigt.
 
 1. Auf der Registerkarte **Lösungen und Add-ons** werden Optionen wie Sites, Assets und Screens angezeigt. Wählen Sie die Add-On-Option **Screens** aus, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Klicken Sie auf **Update**, nachdem Sie Ihre Optionen ausgewählt haben.
 
