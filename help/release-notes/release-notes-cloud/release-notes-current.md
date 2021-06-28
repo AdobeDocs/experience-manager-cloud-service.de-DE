@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 24%
+source-wordcount: '1254'
+ht-degree: 22%
 
 ---
 
@@ -154,5 +154,25 @@ Sie können [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogram
 * Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Site/Konfiguration
+
+## Content Transfer Tool {#content-transfer-tool}
+
+### Veröffentlichungsdatum {#release-date-ctt-latest}
+
+Die Version 1.5.4 des Content Transfer Tool wurde am 28. Juni 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-ctt-latest}
+
+* Unterstützung für einen optionalen Schritt [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) zur Verwendung mit CTT hinzugefügt. Der Schritt &quot;Vorab-Kopie&quot;kann verwendet werden, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist.
+
+* Eine Schutzmaßnahme wurde zu CTT hinzugefügt, um zu verhindern, dass Benutzer die Aufnahme stoppen und möglicherweise Daten beschädigen, sobald sie während der Aufnahmephase den kritischen Punkt erreicht haben.
+
+* Extraktionsprotokolle wurden beschreibender gestaltet, um die Fehlerbehebung zu unterstützen.
+
+* In der Benutzeroberfläche wurden beschreibende Statusmeldungen zur Aufnahme hinzugefügt.
+
+### Fehlerbehebungen {#bug-fixes-ctt-latest}
+
+* Beim Beenden einer Aufnahme in der Autoreninstanz hat die Benutzeroberfläche eine zuvor abgeschlossene Aufnahme in der Veröffentlichungsinstanz von `FINISHED` in `STOPPED` überschrieben. Dieses Problem wurde behoben.
 
 
