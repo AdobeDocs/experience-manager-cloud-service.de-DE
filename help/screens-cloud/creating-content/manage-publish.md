@@ -1,10 +1,7 @@
 ---
 title: Veröffentlichen eines Kanals in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens as a Cloud Service veröffentlichen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 17%
@@ -21,7 +18,7 @@ Sie können Inhalte aus AEM Screens veröffentlichen. Mit der Funktion Veröffen
 >[!IMPORTANT]
 >Nachdem Sie einen oder mehrere Kanäle in Ihrem Projekt erstellt haben, müssen Sie die Kanäle veröffentlichen, um die Kanäle/Kanäle in der Lagerbestandslistenansicht im AEM Screens-Dienstleister anzuzeigen.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie die bearbeiteten Inhalte beim Screens Services-Anbieter und -Player veröffentlichen. Nach dem Lesen sollten Sie in der Lage sein:
 
