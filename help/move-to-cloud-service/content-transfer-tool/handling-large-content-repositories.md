@@ -1,7 +1,7 @@
 ---
 title: Umgang mit großen Inhaltsverzeichnissen
 description: In diesem Abschnitt wird die Handhabung von umfangreichen Inhalts-Repositorys beschrieben.
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -38,13 +38,13 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool einricht
 
 ### 0. Bestimmen Sie die Gesamtgröße aller Inhalte im Datenspeicher. {#determine-total-size}
 
-#### Azure Blob Storage-Datenspeicher
+#### Azure Blob Storage-Datenspeicher {#azure-blob-storage}
 
 Verwenden Sie auf der Seite mit den Containereigenschaften im Azure-Portal die Schaltfläche **Größe berechnen** , um die Größe des gesamten Inhalts im Container zu bestimmen. Beispiel:
 
 ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3-Datenspeicher
+#### Amazon S3-Datenspeicher {#amazon-data}
 
 Sie können die Registerkarte Metriken des Containers verwenden, um die Größe des gesamten Inhalts im Container zu bestimmen. Beispiel:
 
@@ -67,7 +67,7 @@ Erstellen Sie in der AEM-Quellinstanz in crx-quickstart/cloud-migration eine neu
 
 Der Inhalt dieser Konfigurationsdatei hängt davon ab, ob Ihre AEM-Quellinstanz einen Azure- oder Amazon S3-Datenspeicher verwendet.
 
-#### Azure Blob Storage-Datenspeicher
+#### Azure Blob Storage-Datenspeicher {#azure-blob-storage-data}
 
 Ihre azcopy.config -Datei sollte die folgenden Eigenschaften enthalten (stellen Sie sicher, dass Sie den richtigen azCopyPath und azureSas für Ihre Instanz verwenden).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3-Datenspeicher
+#### Amazon S3-Datenspeicher {#amazon-data-store}
 
 Ihre Datei azcopy.config sollte die folgenden Eigenschaften enthalten (stellen Sie sicher, dass Sie die richtigen Werte für Ihre Instanz verwenden).
 
