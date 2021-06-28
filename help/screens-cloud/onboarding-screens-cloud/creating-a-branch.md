@@ -1,10 +1,7 @@
 ---
 title: Erstellen einer Verzweigung
 description: Auf dieser Seite wird das Erstellen einer Verzweigung in Cloud Manager für Screens as a Cloud Service beschrieben.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 3%
@@ -19,7 +16,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine Verzweigung für Ihr Programm
 >[!NOTE]
 >Informationen zum Erstellen eines AEM Anwendungsprojekts in Cloud Manager mithilfe des Assistenten finden Sie unter [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) .
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 Im folgenden Abschnitt wird beschrieben, wie Sie mithilfe des Assistenten eine Verzweigung für Ihr Programm in Cloud Manager erstellen.
 
@@ -29,19 +26,19 @@ Im folgenden Abschnitt wird beschrieben, wie Sie mithilfe des Assistenten eine V
 
 1. Klicken Sie auf **Erstellen** , um Ihre Verzweigung und Ihr Projekt zu erstellen.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
 1. Wählen Sie den Assistenten **Titel** und **Neuer Verzweigungsname** aus **Verzweigung und Projekt erstellen** aus und klicken Sie auf **Erstellen**.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
 1. Auf der Seite **Übersicht** von Cloud Manager wird die Karte für Aktionsaufrufe angezeigt, die den Status aktualisiert, wenn die Projekterstellung läuft.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
 1. Sobald die Projekterstellung erfolgreich abgeschlossen ist, wird die Karte-Aktualisierung für Aktionsaufrufe auf der Seite **Übersicht** von Cloud Manager angezeigt.
 
-   ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## Wie geht es weiter {#whats-next}
 
