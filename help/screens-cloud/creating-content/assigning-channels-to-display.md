@@ -1,10 +1,7 @@
 ---
 title: Zuweisen eines Kanals zu einer Anzeige in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal einer Anzeige in Screens als Cloud Service zuweisen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 41%
@@ -16,7 +13,7 @@ ht-degree: 41%
 
 Nachdem das Projekt fertig eingerichtet wurde, müssen Sie den Kanal einer Anzeige zuweisen, um den Inhalt anzuzeigen.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie einer Anzeige einen Kanal zuweisen, sobald die Anzeige fertig ist und Sie Inhalt zu Ihrem Kanal hinzugefügt und veröffentlicht haben. Nach der Lektüre sollten Sie verstehen, wie Sie einen Kanal einer Anzeige vom Screens Services Provider zuweisen.
 
@@ -35,11 +32,11 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
 
 1. Klicken Sie auf **Kanal** zur Anzeige zuweisen.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-1.png)
+   ![Bild](/help/screens-cloud/assets/display/assignchannel-1.png)
 
 1. Füllen Sie die folgenden Felder aus dem Dialogfeld **Kanal zuweisen** aus.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-2.png)
+   ![Bild](/help/screens-cloud/assets/display/assignchannel-2.png)
 
    1. Wählen Sie den Kanalnamen aus der Dropdown-Liste aus.
    1. Wählen Sie die Priorität aus.
@@ -50,7 +47,7 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
 
 1. Klicken Sie auf **+ Wiederholung hinzufügen** , um einen Intervallzeitplan für Ihren Kanal hinzuzufügen.
 
-   ![image](/help/screens-cloud/assets/create-content/recurrence-1.png)
+   ![Bild](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
    >Sie können Ihrem Kanal mehrere Intervallzeitpläne hinzufügen. Mit den Intervallzeitplänen wird Dayparting eingeführt, sodass Sie einen globalen Zeitplan mit mehreren Kanälen festlegen können, die zu bestimmten Tageszeiten ausgeführt werden. Diese Einstellung kann dann für alle Anzeigen wiederverwendet werden.
@@ -66,7 +63,7 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
 
 1. Klicken Sie auf **Erstellen** und jetzt sehen Sie, dass ein Kanal für diese Anzeige zugewiesen ist, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
+   ![Bild](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
 ## Wie geht es weiter {#whats-next}
