@@ -5,10 +5,10 @@ breadcrumb-title: Versionshinweise
 user-guide-description: Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme.
 feature: Versionshinweise
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: d27f9d394edef827a119212c9024ecfaf46d2ce8
+source-git-commit: 87bb02229279ea2344d55cb029b8a1c1da0c33ae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '125'
+ht-degree: 96%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 0%
 + Versionshinweise {#release-notes}
    + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [Versionshinweise für 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [Versionshinweise für 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [Versionshinweise für 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [Versionshinweise für 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
