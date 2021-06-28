@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
-ht-degree: 23%
+ht-degree: 44%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 23%
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
->Von hier aus können Sie zu den Versionshinweisen früherer Versionen navigieren. z. B. für die 2020, 2021 usw.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2020, 2021 usw.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.5.0 von [!DNL Adobe Experience Manager] wurde am 27. Mai 2021 veröffentlicht.
+Die Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service wiurde am 27. Mai 2021 veröffentlicht.
 Die folgende Version (2021.6.0) wird am 24. Juni 2021 veröffentlicht.
 
 ## Release Video {#release-video}
@@ -70,7 +70,7 @@ Sehen Sie sich das Video [Versionsübersicht vom Mai 2021](https://video.tv.adob
 
 * Mit der DSGVO (Smart Imaging Device Pixel Ratio) und der Optimierung der Netzwerkbandbreite können Sie effizient hochwertige Bilder auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite bereitstellen. Siehe [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
 
-* Neue Unterstützung für das Bildformat AVIF der nächsten Generation in [!DNL Dynamic Media] Bereitstellung (`fmt` URL-Modifikator). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* Neue Unterstützung für das Bildformat AVIF der nächsten Generation in [!DNL Dynamic Media] Bereitstellung (`fmt` URL-Modifikator). Weitere Informationen und die Timeline finden Sie unter [Image Serving and Rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
@@ -97,7 +97,7 @@ Sie können an formscsbeta@adobe.com schreiben, um sich für das Betaprogramm zu
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0 und 2021.5.0 beschrieben.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0 und 2021.5.0.
 
 ## Veröffentlichungsdatum {#release-date-june-cm}
 
@@ -145,47 +145,47 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Veröffentlichungsdatum {#release-date-cm-may}
 
-Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
+Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2021.5.0 war der 6. Mai 2021.
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Die PackageOverlaps-Qualitätsregel erkennt jetzt, wenn dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, und zwar in demselben bereitgestellten Paketsatz.
+* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Package mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, in demselben bereitgestellten Package-Satz.
 
-* Der Repository-Endpunkt in der Public API enthält jetzt die Git-URL.
+* Der Repository-Endpunkt in der Public-API enthält jetzt die Git-URL.
 
 * Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarios.
 
-* Beim Pushen von Code an Adobe Git wurden zeitweise auftretende Fehler behoben.
+* Beim Pushen von Code an Adobe Git wurden treten jetzt keine Fehler mehr auf.
 
-* Das Commerce-Add-on kann jetzt während des Workflows Programm bearbeiten auf Sandbox-Programme angewendet werden.
+* Das Commerce-Add-on kann jetzt während des Workflows „Programm bearbeiten“ auf Sandbox-Programme angewendet werden.
 
-* Programmbearbeitung wurde modernisiert.
+* Das Erlebnis „Programm bearbeiten“ wurde aktualisiert.
 
-* In der Tabelle &quot;Domänennamen&quot;auf der Seite &quot;Umgebungsdetails&quot;werden bis zu 250 Domänennamen per Paginierung angezeigt.
+* In der Tabelle „Domain-Namen“ auf der Seite „Umgebungsdetails“ werden bis zu 250 Domain-Namen per Paginierung angezeigt.
 
-* Auf der Registerkarte &quot;Lösungen&quot;in den Workflows Programm hinzufügen und Programm bearbeiten wird die Lösung angezeigt, selbst wenn für das Programm nur eine Lösung verfügbar ist.
+* Auf der Registerkarte „Lösungen“ in den Workflows „Programm hinzufügen“ und „Programm bearbeiten“ wird die Lösung angezeigt, auch wenn für das Programm nur eine Lösung verfügbar ist.
 
-* Die Fehlermeldung im Build-Schrittprotokoll, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
+* Die Fehlermeldung im Build-Schrittprotokoll, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, ist jetzt klar.
 
 ### Fehlerbehebungen {#bug-fixes-cm-may}
 
-* Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste einen grünen &quot;aktiven&quot;Status sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
+* Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner „aktiver“ Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Anstatt &quot;gelöschte&quot;Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **DELETED**.
+* Die Pipeline-Variablen-API markiert „gelöschte“ Variablen nicht nur mit dem Status **GELÖSCHT**, sondern entfernt sie jetzt tatsächlich.
 
 * Einige Code-Smell-Qualitätsprobleme haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
 
-* Da Wildcard-Domänen nicht unterstützt werden, verhindert die Benutzeroberfläche das Senden einer Wildcard-Domäne durch den Benutzer.
+* Dank der Unterstützung von Wildcard-Domains kann der Benutzer jetzt Wildcard-Domains über die Benutzeroberfläche senden.
 
 * Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer war als eine Version, die am Vortag erstellt wurde.
 
-* Während der Einrichtung des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode Git verwalten auf der Seite Überblick als Link von der Heldenkarte angezeigt.
+* Fehlerkorrektur – Während der Einrichtung des Sandbox-Programms wird jetzt, sobald das Projekt mit dem Beispiel-Code erfolgreich erstellt wurde, „Git verwalten“ als Link von der Hero-Karte auf der Übersichtsseite angezeigt.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
 ### Veröffentlichungsdatum {#release-date-ctt-latest}
 
-Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlicht.
+Das Content Transfer Tool 1.4.6 wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-latest}
 
@@ -201,17 +201,17 @@ Die Version 1.4.6 des Content Transfer Tool wurde am 27. Mai 2021 veröffentlich
 
 ### Veröffentlichungsdatum {#release-date-ctt-may}
 
-Die Version 1.4.0 des Content Transfer Tool wurde am 11. Mai 2021 veröffentlicht.
+Das Content Transfer Tool 1.4.0 wurde am 11. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-may}
 
-* Diese Version des Content Transfer Tool erstellt Textausgabeformate für Assets, die in Cloud Service migriert werden. Textausgabeformate sind erforderlich, um die Volltextsuche in aufgenommenen Assets zu unterstützen.
+* Diese Version des Content Transfer Tool erstellt Textausgabedarstellungen für Assets, die zu Cloud Service migriert werden. Textausgabedarstellungen sind erforderlich, um die Volltextsuche für aufgenommene Assets zu unterstützen.
 * Die maximale Anzahl der Migrationssätze für das Content Transfer Tool, die ein Benutzer erstellen kann, wurde von 4 auf 10 erhöht.
 
 ### Fehlerbehebungen {#bug-fixes-ctt-may}
 
 * Mehrere Fehlerbehebungen im Zusammenhang mit der Funktion zur automatischen Aktualisierung in der Benutzeroberfläche des Content Transfer Tool.
-* Content Transfer Tool mit `wipe=true` führte zu einem falschen Zählerindex auf dem Ziel. Dieses Problem wurde behoben.
+* Content Transfer Tool mit `wipe=true` führt nicht mehr zu einem falschen Zählerindex auf dem Ziel. Dieses Problem wurde behoben.
 
 ## Commerce-Add-on {#cloud-services-commerce}
 
