@@ -1,10 +1,7 @@
 ---
 title: Registrieren von Playern in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens als Cloud Service registrieren.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -16,7 +13,7 @@ ht-degree: 2%
 
 Nachdem Sie Player für Screens als Cloud Service installiert und konfiguriert haben, müssen Sie die Player registrieren.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie Player im Screens-Dienstanbieter registrieren. Nach dem Lesen sollten Sie in der Lage sein:
 
@@ -36,11 +33,11 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
    >[!NOTE]
    >Wenn keine gültigen/nicht abgelaufenen Codes vorhanden sind, klicken Sie auf Code erstellen , geben Sie einen Namen für den Code ein und wählen Sie die Ablaufeinstellungen gemäß Ihren Anforderungen aus.
 
-   ![image](/help/screens-cloud/assets/player/register-player1.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player1.png)
 
 1. Füllen Sie die folgenden Felder im Dialogfeld **Registrierungscode** erstellen aus:
 
-   ![image](/help/screens-cloud/assets/player/register-player2.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player2.png)
 
    1. **Name des Registrierungs-Codes**: Name Ihres Registrierungscodes
    1. **Ablauf des Registrierungs-Codes**: Ablaufdatum für Ihren Registrierungscode
@@ -49,22 +46,22 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 
 1. Klicken Sie auf **Erstellen** , um den Registrierungs-Code zu erstellen. Ihr Player wird mit dem Registrierungs-Code in der Liste angezeigt.
 
-   ![image](/help/screens-cloud/assets/player/register-player3.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Klicken Sie auf den Wert unter der Spalte **REGISTRIERUNGSCODE** , um den Wert in die Zwischenablage zu kopieren.
 
 1. Fügen Sie diesen Wert in das Feld **Geben Sie Code** auf der Registerkarte **Player-Registrierung** in der Admin-Benutzeroberfläche des AEM Screens-Players ein und klicken Sie auf **Registrieren**.
 
-   ![image](/help/screens-cloud/assets/player/register-player4.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player4.png)
 
 
 1. Nachdem Sie den Code hinzugefügt haben, sehen Sie, dass der Player jetzt über die Admin-Benutzeroberfläche des Players registriert ist.
 
-   ![image](/help/screens-cloud/assets/player/register-player5.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player5.png)
 
 1. Sie sollten sehen, dass dieser Player jetzt im linken Navigationsbereich unter **Player** angezeigt wird. Der im Screens-Dienstanbieter angezeigte Code stimmt mit dem Bedienfeld **Systeminformationen** in der Admin-Benutzeroberfläche unter Player-Code überein.
 
-   ![image](/help/screens-cloud/assets/player/register-player6.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player6.png)
 
 ## Wie geht es weiter {#whats-next}
 
