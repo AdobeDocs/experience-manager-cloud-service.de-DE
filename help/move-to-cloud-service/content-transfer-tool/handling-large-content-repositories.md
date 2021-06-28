@@ -1,7 +1,7 @@
 ---
 title: Umgang mit großen Inhaltsverzeichnissen
 description: In diesem Abschnitt wird die Handhabung von umfangreichen Inhalts-Repositorys beschrieben.
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -134,7 +134,6 @@ Blobs, die vor dem Fehler kopiert wurden, werden von AzCopy bei nachfolgenden Au
 Mit der Veröffentlichung des Content Transfer Tool 1.5.4 haben wir die AzCopy-Unterstützung zur Authoring-Erfassung hinzugefügt.
 
 >[!NOTE]
->
 > Es wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
 
 Um AzCopy während der Aufnahme nutzen zu können, müssen Sie eine AEM als Cloud Service-Version verwenden, die mindestens Version 2021.6.5561 ist.
