@@ -4,10 +4,10 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
+source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 67%
+source-wordcount: '858'
+ht-degree: 66%
 
 ---
 
@@ -56,7 +56,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Metadaten-Writeback | Funktionsweise unterschiedlich | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Writeback wird von Asset-Microservices verarbeitet. |
 | Verarbeitung der mit Package Manager hochgeladenen Assets | Benötigt manuelles Eingreifen. | Manuelle Neuverarbeitung mit der Aktion **[!UICONTROL Asset erneut verarbeiten]**. |
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder falsche Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Weitere Informationen finden Sie unter [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=de). |
-| Teilasset-Generierung für ebenenübergreifende Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Dies betrifft beispielsweise die Anmerkung mehrseitiger PDF-Dateien. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
+| Generieren von Unter-Assets für oder Kommentieren von ebenenübergreifenden Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Beispielsweise ist das Anzeigen oder Kommentieren einer mehrseitigen PDF-, INDD-, PPT-, PPTX- und AI-Datei nicht möglich. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
 | Startseite | Nicht unterstützt. | Weitere Informationen finden Sie unter [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=de) |
 | Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Asset-Bewertungen | Nicht unterstützt. | Das Bewertungs-Widget im Metadatenschema-Editor wird nicht unterstützt. |
