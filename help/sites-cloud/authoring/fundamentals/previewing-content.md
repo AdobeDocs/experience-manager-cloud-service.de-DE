@@ -2,9 +2,9 @@
 title: Vorschau des Inhalts
 description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau des Inhalts anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ Sie können Inhalte mithilfe der Benutzeroberfläche &quot;Veröffentlichung ver
 
 1. Klicken Sie auf **Weiter** und dann zur Bestätigung **Veröffentlichen**.
 
-Zeigen Sie den Vorschauinhalt an und hängen Sie **preview** an die Veröffentlichungs-URL Ihrer Produktionsinstanz an. Die URL sollte wie folgt erstellt werden:
+1. In einem Dialogfeld werden die URLs für den Zugriff auf den Inhalt in der Vorschau-Umgebung angezeigt.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Sie können auch **preview** an die Veröffentlichungs-URL Ihrer Produktionsinstanz anhängen, um den Vorschauinhalt anzuzeigen.
+
+   Die URL sollte wie folgt erstellt werden:
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten Ihrer Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
 
