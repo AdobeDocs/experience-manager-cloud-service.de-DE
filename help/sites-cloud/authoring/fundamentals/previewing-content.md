@@ -2,9 +2,9 @@
 title: Vorschau des Inhalts
 description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau des Inhalts anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
+source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten Ihrer Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
 
-Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow der Inhaltsstruktur veröffentlichen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) verwendet wird, wobei der Parameter agentId für die Vorschau festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten AgentFilter verwendet wird.
+Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow der Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet wird, wobei der Parameter agentId für die Vorschau festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten AgentFilter verwendet wird.
 
 ## Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configuring-osgi-settings-for-the-preview-tier}
 
