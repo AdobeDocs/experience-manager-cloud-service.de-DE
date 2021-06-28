@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 94%
+source-wordcount: '97'
+ht-degree: 90%
 
 ---
 
@@ -22,11 +22,12 @@ ht-degree: 94%
    + [Nach der Live-Schaltung](/help/move-to-cloud-service/post-go-live.md)
 + Cloud-Umstellungs-Tools {#cloud-migration}
    + Best Practices Analyzer {#best-practices-analyzer}
-      + [Überblick](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [Übersicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Verwenden von Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Content Transfer Tool {#content-transfer-tool}
-      + [Überblick](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Voraussetzungen für das Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Umgang mit großen Inhaltsverzeichnissen](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [Verwenden des User Mapping Tools](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Verwenden des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Code-Refaktorierungs-Tools {#refactoring-tools}
