@@ -1,10 +1,7 @@
 ---
 title: Erste Anmeldung bei Screens als Cloud Service
 description: Auf dieser Seite werden die ersten Schritte bei den ersten Schritten mit Screens as a Cloud Service beschrieben.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 1%
