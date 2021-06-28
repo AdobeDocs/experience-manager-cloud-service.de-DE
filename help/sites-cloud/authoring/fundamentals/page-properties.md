@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 99%
+source-wordcount: '1930'
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ Konfigurieren der Miniaturansicht der Seite
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen** – Legen Sie Eigenschaften für Cloud Services fest
+* **Cloud Service-Konfigurationen**  - Festlegen von Eigenschaften für Cloud-Services
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -197,7 +197,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 
 * **Rollout-Konfigurationen** – Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
@@ -218,6 +218,12 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
    * **Rollout-Konfigurationen von übergeordneter Seite übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
    * **Rollout-Konfiguration auswählen** – Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite übernehmen** nicht aktiviert ist.
 
+### Vorschau {#preview}
+
+Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
+
+* Vorschau-URL - die URL, die für den Zugriff auf den Inhalt in der Vorschau-Umgebung verwendet wird
+
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
 * In der Konsole **Sites**:
@@ -228,7 +234,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 * Im Seiteneditor:
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
-### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
+### In der Sites-Konsole (einzelne Seite)  {#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
@@ -251,7 +257,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
    * **Speichern und schließen**
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
-### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
+### In der Sites-Konsole (mehrere Seiten)  {#from-the-sites-console-multiple-pages}
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
