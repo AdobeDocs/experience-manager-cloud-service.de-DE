@@ -2,9 +2,9 @@
 title: Voraussetzungen für das Content Transfer Tool
 description: Voraussetzungen für das Content Transfer Tool
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 269ef355e10acd99e9cfcb9cac9e676b079a7ecb
+source-git-commit: 87fa7079388e7a125ed62577123959524390486c
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,7 @@ Die folgende Tabelle fasst die Voraussetzungen für die Verwendung des Content T
 |--- |--- |
 | AEM-Version | Das Content Transfer Tool kann nur mit AEM 6.3 oder höheren Versionen ausgeführt werden. Um das Content Transfer Tool mit AEM 6.2 oder älteren Versionen verwenden zu können, ist eine ersetzende Aktualisierung des Inhalts-Repositorys auf AEM 6.5 erforderlich. Dazu ist es nicht erforderlich, den Code auf AEM 6.5 zu aktualisieren. |
 | Größe des Segmentspeichers | Derzeit werden bis zu 83 GB unter *Autor* und 31 GB unter *Veröffentlichung* unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für die Segmentspeichergröße über diesen Beschränkungen zu besprechen. |
-| Gesamtgröße des Inhalts-Repositorys <br>*(Segmentspeicher + Datenspeicher)* | Das Content Transfer Tool wurde entwickelt, um Inhalte für Datenspeicher vom Typ Dateidatenspeicher bis zu 10 TB zu übertragen. Mehr als 10 TB werden derzeit nicht unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für Inhalte zu besprechen, die größer als 10 TB sind. Für Amazon S3- und Azure Data Store-Typen von Datenspeichern kann ein optionaler Pre-Copy-Schritt verwendet werden, um den Inhaltstransfer und die Unterstützung von mehr als 10 TB Datenspeichergröße erheblich zu beschleunigen. |
+| Gesamtgröße des Inhalts-Repositorys <br>*(Segmentspeicher + Datenspeicher)* | Das Content Transfer Tool wurde entwickelt, um Inhalte für Datenspeicher vom Typ Dateidatenspeicher bis zu 10 TB zu übertragen. Mehr als 10 TB werden derzeit nicht unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für Inhalte zu besprechen, die größer als 10 TB sind. <br>Für Amazon S3- und Azure Data Store-Typen von Datenspeichern kann ein optionaler Pre-Copy-Schritt verwendet werden, um den Inhaltstransfer erheblich zu beschleunigen und einen Datenspeicher mit einer Größe von mehr als 10 TB zu unterstützen. |
 | Inhalt in unveränderlichen Pfaden | Das Content Transfer Tool kann nicht verwendet werden, um Inhalte in unveränderlichen Pfaden zu migrieren. Um Inhalte von `/etc` zu übertragen, dürfen nur bestimmte `"/etc"` Pfade ausgewählt werden, jedoch nur, um [AEM Forms als Cloud Service von AEM Forms zu unterstützen](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Weitere Informationen zur Repository-Umstrukturierung finden Sie unter [Allgemeine Repository-Neustrukturierung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) . |
 
 ## Wie geht es weiter {#whats-next}
