@@ -1,10 +1,7 @@
 ---
 title: Erstellen eines Projekts in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie ein Projekt in Screens as a Cloud Service erstellen.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -12,11 +9,11 @@ ht-degree: 0%
 ---
 
 
-# Erstellen und Verwalten eines Projekts in Screens als Cloud Service {#creating-project-screens-cloud}
+# Erstellen und Verwalten eines Projekts in Screens as a Cloud Service {#creating-project-screens-cloud}
 
 Der erste Schritt bei der Implementierung eines neuen Projekts in Screens als Cloud Service besteht darin, ein neues Projekt zu erstellen.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie ein neues AEM Screens-Projekt in Screens Content Provider erstellen. Nach dem Lesen sollten Sie in der Lage sein, Ihr AEM Screens-Projekt in Bezug auf den Umfang zu erstellen.
 
@@ -27,7 +24,7 @@ Gehen Sie wie folgt vor, um ein neues Projekt in Screens as a Cloud Service zu e
 1. Navigieren Sie zum Screens Content Provider.
 
    >[!NOTE]
-   >Unter [Verwenden des Screens Content Providers](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf den Screens Content Provider zugreifen.
+   >Unter [Verwenden des Screens Content Providers] erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf den Screens Content Provider zugreifen.
 
 1. Klicken Sie oben rechts in der Aktionsleiste auf **Screens-Projekt erstellen** .
 
@@ -64,4 +61,4 @@ Gehen Sie wie folgt vor, um ein vorhandenes Projekt aus dem Screens Content Prov
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie jetzt ein AEM Screens-Projekt eingerichtet haben, können Sie einen neuen Kanal erstellen und den Kanälen Inhalte hinzufügen. Informationen zum Erstellen und Verwalten von Inhalten in Kanälen finden Sie unter [Erstellen und Verwalten von Kanälen](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md) .
+Nachdem Sie jetzt ein AEM Screens-Projekt eingerichtet haben, können Sie einen neuen Kanal erstellen und den Kanälen Inhalte hinzufügen. Informationen zum Erstellen und Verwalten von Inhalten in Kanälen finden Sie unter [Erstellen und Verwalten von Kanälen] .
