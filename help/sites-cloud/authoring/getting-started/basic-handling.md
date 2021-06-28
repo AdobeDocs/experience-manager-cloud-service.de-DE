@@ -2,9 +2,9 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 98%
 
 ---
@@ -92,7 +92,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![Globale Navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Suchen](/help/sites-cloud/authoring/getting-started/search.md)
+* [Suche](/help/sites-cloud/authoring/getting-started/search.md)
 
    ![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -162,7 +162,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
@@ -225,7 +225,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >[!NOTE]
 Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen  {#quick-actions}
+## Schnellaktionen {#quick-actions}
 
 In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -246,7 +246,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >[!NOTE]
 Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen  {#selecting-resources}
+### Auswählen von Ressourcen {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -316,7 +316,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Vorlage, auf der die Seite basiert
    * Änderungsdetails
    * Sprache der Seite
-   * Veröffentlichungsdetails
+   * Veröffentlichung und Vorschau von Details
 
 
 ### Kartenansicht {#card-view}
@@ -362,6 +362,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Name** – Seitenname, der in einer mehrsprachigen Autorenumgebung nützlich sein kann, da er Teil der Seiten-URL ist und unabhängig von der Sprache gleich bleibt
    * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
    * **Veröffentlicht** – Veröffentlichungsstatus
+   * **Vorschau**  - Vorschaustatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
    * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
    * **Seitenanalyse**
@@ -382,7 +383,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
 
-## Schienenauswahl {#rail-selector}
+## Leistenauswahl {#rail-selector}
 
 Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole stehen unterschiedliche Optionen zur Verfügung.
 
