@@ -1,10 +1,7 @@
 ---
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Kanäle in Screens as a Cloud Service erstellen und verwalten.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 16%
@@ -12,12 +9,12 @@ ht-degree: 16%
 ---
 
 
-# Erstellen und Verwalten von Kanälen in Screens als Cloud Service {#creating-channels-screens-cloud}
+# Erstellen und Verwalten von Kanälen in Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Nachdem Sie ein AEM Screens-Projekt erstellt haben, müssen Sie Kanäle erstellen.
 ***Kanäle***, zeigen eine Sequenz von Inhalten (Bilder und Videos), eine Website oder eine Einzelseitenanwendung an.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie Kanäle für Ihr AEM Screens-Projekt in Screens Content Provider erstellen und verwalten. Nach dem Lesen sollten Sie Folgendes tun:
 
