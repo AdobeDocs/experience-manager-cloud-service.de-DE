@@ -4,14 +4,14 @@ description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche O
 feature: Asset-Management, Bildprofile, Videoprofile
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 86%
+source-wordcount: '1270'
+ht-degree: 75%
 
 ---
 
-# Informationen zu Dynamic Media – Bild- und Videoprofile {#about-dm-image-video-profiles}
+# Informationen zu Dynamic Media – Bild- und Videoprofile{#about-dm-image-video-profiles}
 
 Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
 
@@ -34,7 +34,7 @@ Siehe auch [Best Practices zum Organisieren Ihrer digitalen Assets für die Verw
 >
 >Dasselbe gilt auch, wenn Sie Assets zwischen zwei Ordnern verschieben, denen dasselbe Profil zugewiesen ist.
 
-## Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner {#reprocessing-assets}
+## Dynamic Media-Assets in einem Ordner erneut verarbeiten {#reprocessing-assets}
 
 Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, neu verarbeiten.
 
@@ -59,6 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Dynamic Media-Assets in einem Ordner erneut verarbeiten:**
+
 1. Navigieren Sie in [!DNL Experience Manager] von der Seite &quot;Assets&quot;zu einem Asset-Ordner, dem ein Bildprofil oder ein Videoprofil zugewiesen ist und für den Sie die Scene7 **anwenden möchten: Neuverarbeitung des Workflows Asset** .
 
    Bei Ordnern, denen ein Bildprofil oder ein Videoprofil zugewiesen ist, wird der Name des Profils in der Kartenansicht direkt unter dem Ordnernamen angezeigt.
@@ -69,35 +70,35 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste]**.
-1. Tippen Sie unten links auf der Seite rechts neben dem [!UICONTROL Kommentarfeld] auf das Caret-Symbol (**^**).
+1. Wählen Sie links oben auf der Seite aus der Dropdownliste **[!UICONTROL Timeline]** aus.
+1. Wählen Sie links unten auf der Seite rechts neben dem Feld [!UICONTROL Kommentar] das Karussymbol ( **^** ) aus.
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Klicken Sie auf **[!UICONTROL Workflow starten]**.
+1. Wählen Sie **[!UICONTROL Workflow starten]** aus.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
    ![Assets erneut verarbeiten 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
+1. Wählen Sie **[!UICONTROL Start]** und dann **[!UICONTROL Bestätigen]** aus.
 
-   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, klicken Sie auf der Hauptseite [!DNL Experience Manager] auf **[!UICONTROL Tools > Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, wählen Sie auf der Hauptseite [!DNL Experience Manager] die Option **[!UICONTROL Tools > Workflow]** aus. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Wählen Sie in der Menüleiste **[!UICONTROL Offener Verlauf]** aus. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
-### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
+### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows (optional) {#adjusting-load}
 
 (Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Das Verarbeitungsbanner bleibt also länger bei [!DNL Experience Manager]-Assets. Wenn die durchschnittliche Dateigröße jedoch kleiner als 1 MB oder kleiner ist, empfiehlt es sich, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
-1. Tippen Sie in [!DNL Experience Manager] auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
+1. Wählen Sie in [!DNL Experience Manager] **[!UICONTROL Adobe Experience Manager]** aus, um auf die globale Navigationskonsole zuzugreifen. Wählen Sie dann das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]** aus.
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
    ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
-1. Tippen Sie oben rechts auf der Workflow-Seite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
-1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Bearbeiten]** aus. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
+1. Auf der Scene7: Workflow-Seite &quot;Assets erneut verarbeiten&quot;in der Nähe der oberen rechten Ecke wählen Sie **[!UICONTROL Bearbeiten]** aus, um den Workflow zu &quot;entsperren&quot;.
+1. Wählen Sie im Workflow die Komponente Scene7 Batch-Upload aus, um die Symbolleiste zu öffnen, und wählen Sie dann **[!UICONTROL Konfigurieren]** in der Symbolleiste aus.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
@@ -111,9 +112,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Dialogfeld „Eigenschaften“](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Batch-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
+1. Wählen Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 - Schritteigenschaften]** die Option **[!UICONTROL Fertig]**.
 
-1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. In der oberen rechten Ecke der Scene7: Neuverarbeitung der Workflow-Modellseite für Assets, wählen Sie **[!UICONTROL Sync]** aus. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -122,7 +123,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 <!-- MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -133,12 +134,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
