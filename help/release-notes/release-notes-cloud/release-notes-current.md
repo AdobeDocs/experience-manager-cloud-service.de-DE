@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
+source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1385'
 ht-degree: 21%
 
 ---
@@ -144,9 +144,9 @@ Sie können [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogram
 * Wenn ein Feld vor dem Senden von Daten an den Backend-Dienst über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, aber der Formulardatenmodelldienst kann die Nachvalidierung nicht aufrufen.
 * Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird manchmal der Inhalt der Datei nicht gesendet und am anderen Ende wird eine 0-Byte-Datei empfangen. Dies ist ein bekanntes Problem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## AEM Screens {#aem-screens}
+## [!DNL Adobe Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
 
-In diesem Abschnitt werden die Versionshinweise für Screens as a Cloud Service beschrieben.
+In diesem Abschnitt werden die Versionshinweise für AEM Screens as a Cloud Service beschrieben.
 
 ### Veröffentlichungsdatum {#release-date-june-screens}
 
