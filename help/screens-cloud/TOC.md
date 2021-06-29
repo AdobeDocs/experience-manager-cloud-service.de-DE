@@ -3,7 +3,7 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: Machen Sie sich mit AEM Screens as a Cloud Service vertraut.
-source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
+source-git-commit: 38c749e76ae8bc6efa72beb6963b53311ec3817e
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 7%
@@ -25,16 +25,16 @@ ht-degree: 7%
    + [Erstellen einer Verzweigung](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
    + [Erstellen einer Umgebung](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
    + [Ausführen der Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + Konfigurieren von Screens as a Cloud Service Project {#configure-screens-cloud}
-      + [Navigieren zum Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
-      + [Navigieren zum Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
++ Konfigurieren von Screens as a Cloud Service Project {#configure-screens-cloud}
+   + [Navigieren zum Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
+   + [Navigieren zum Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + Erstellen von Inhalten {#create-content}
    + [Erstellen und Verwalten eines Projekts in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [Erstellen und Verwalten eines Kanals in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
    + [Verwalten von Veröffentlichungen](/help/screens-cloud/creating-content/manage-publish.md)
    + [Erstellen und Verwalten einer Anzeige im Screens Services Provider](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [Zuweisen eines Kanals zu einer Anzeige](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-   + Verwalten des Players und der Registrierung {#manage-player-registration}
-      + [Installieren des Screens-Players](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-      + [Registrieren des Players](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-      + [Zuweisen eines Players zu einer Anzeige](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ Verwalten des Players und der Registrierung {#manage-player-registration}
+   + [Installieren des Screens-Players](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+   + [Registrieren des Players](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+   + [Zuweisen eines Players zu einer Anzeige](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
