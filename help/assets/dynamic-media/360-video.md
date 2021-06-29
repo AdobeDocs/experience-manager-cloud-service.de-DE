@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Re
 feature: 360-Grad-VR-Video
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 90%
+source-wordcount: '932'
+ht-degree: 76%
 
 ---
 
@@ -25,9 +25,9 @@ Siehe [Verwenden von Dynamic Media-360-Grad-Videos und benutzerdefinierten Vide
 
 Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## 360-Grad-Video in Aktion  {#video-in-action}
+## 360-Grad-Video in Aktion {#video-in-action}
 
-Tippen Sie auf [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS), um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Zeiger an eine neue Position, um den Anzeigewinkel zu ändern.
+Wählen Sie [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) aus, um ein Browserfenster zu öffnen und ein 360-Grad-Video anzuzeigen. Ziehen Sie während der Videowiedergabe den Zeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
 ![360-Grad-Video-Beispiel](assets/6_5_360videoiss_simplified.png)-*Videoframe aus Space Station 360*
 
@@ -37,14 +37,14 @@ Sie können 360-Grad-/VR-Videos mit Adobe Premiere Pro anzeigen und bearbeiten. 
 
 Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](https://helpx.adobe.com/de/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
+## Hochladen von Assets zur Verwendung mit dem 360-Grad-Video-Viewer {#uploading-assets-for-use-with-the-video-viewer}
 
 360 Video-Assets, die in [!DNL Experience Manager] hochgeladen werden, werden auf einer Asset-Seite wie normale Video-Assets als **Multimedia** gekennzeichnet.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
-**So laden Sie Assets für die Verwendung mit dem 360-Grad-Video-Viewer hoch:**
+**Hochladen von Assets zur Verwendung mit dem 360-Grad-Video-Viewer:**
 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -56,7 +56,7 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
    * Idealerweise weisen Ihre ursprünglichen 360-Grad-Videoinhalte eine der folgenden Auflösungen auf:
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
-      * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
+      * 2160p - 3840 x 2160, auch als 4k-, UHD- oder Ultra HD-Auflösung bezeichnet. Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computermonitoren verfügbar. Die 2160p-Auflösung wird oft als &quot;4k&quot;bezeichnet, da die Breite nahe 4000 Pixel liegt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
    * [Erstellen Sie ein benutzerdefiniertes adaptives Videoprofil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) mit hochwertigeren Ausgabedarstellungen. Angenommen, Sie können ein adaptives Videoprofil erstellen, das diese drei Einstellungen enthält:
 
       * Breite=automatisch; Höhe = 720; Bitrate = 2500 Kbit/s
@@ -89,7 +89,7 @@ Start by uploading 360 Videos.
 
 -->
 
-## Anzeigen einer Vorschau für 360-Grad-Videos {#previewing-video}
+## Vorschau 360-Grad-Video {#previewing-video}
 
 Mit der Vorschau können Sie sehen, wie Ihr 360-Grad-Video für Kunden angezeigt wird, und sicherstellen, dass es sich wie erwartet verhält.
 
@@ -101,32 +101,32 @@ Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu [!DNL Experience Manager Sites] Seiten.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-**So zeigen Sie eine Vorschau von 360-Grad-Videos an**
+**So zeigen Sie eine Vorschau von 360-Grad-Videos an:**
 
-1. Navigieren Sie in **[!UICONTROL Assets]** zu einem von Ihnen erstellten 360-Grad-Video. Um es im Vorschaumodus zu öffnen, tippen Sie auf das 360-Grad-Video-Asset.
+1. Navigieren Sie in **[!UICONTROL Assets]** zu einem von Ihnen erstellten 360-Grad-Video. Um es im Vorschaumodus zu öffnen, wählen Sie das 360-Grad-Video-Asset aus.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Um eine Vorschau des Videos anzuzeigen, tippen Sie auf das 360-Grade-Video-Asset.
+   Um eine Vorschau des Videos anzuzeigen, wählen Sie das 360-Grad-Video-Asset aus.
 
-1. Tippen Sie links oben auf der Vorschauseite auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer]** aus.
+1. Wählen Sie auf der Vorschauseite links oben auf der Seite die Dropdown-Liste aus und klicken Sie dann auf **[!UICONTROL Viewer]**.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360_social]** und führen Sie einen der folgenden Schritte aus:
+   Wählen Sie in der Viewer-Liste **[!UICONTROL Video360_social]** aus und führen Sie dann einen der folgenden Schritte aus:
 
    * Um den Anzeigewinkel der statischen Szene zu ändern, ziehen Sie den Zeiger über das Video.
-   * Um mit der Wiedergabe zu beginnen, tippen Sie auf die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos. Ziehen Sie während der Wiedergabe des Videos den Zeiger über das Video, um den Anzeigewinkel zu ändern.
+   * Um die Wiedergabe zu starten, wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos aus. Ziehen Sie während der Wiedergabe des Videos den Zeiger über das Video, um den Anzeigewinkel zu ändern.
 
    ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
-   * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR]**.
+   * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
       Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 
-1. Tippen Sie oben rechts auf der Vorschauseite auf **[!UICONTROL Schließen]**.
+1. Wählen Sie rechts oben auf der Vorschauseite **[!UICONTROL Close]** aus.
 
 ## Veröffentlichen von 360-Grad-Videos {#publishing-video}
 
