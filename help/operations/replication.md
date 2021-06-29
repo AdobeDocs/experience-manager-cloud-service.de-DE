@@ -2,10 +2,10 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 26%
 
 ---
 
@@ -42,17 +42,17 @@ Um die entsprechende automatische Replikation zu realisieren, müssen Sie die **
 Aktivieren eines Baumes:
 
 1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
-2. Wählen Sie die Karte **forwardPublisher** aus.
-3. Wählen Sie in der Benutzeroberfläche der forwardPublisher-Web-Konsole **Verteilen** aus.
+2. Wählen Sie die Karte **publish** aus.
+3. Wählen Sie in der Benutzeroberfläche der Web-Konsole veröffentlichen **Verteilen** aus.
 
-   ![Verteilen](assets/distribute.png "Verteilen")
+   ![Verteilen](assets/publish-distribute.png "Verteilen")
 4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
 
 ### Arbeitsablauf der Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
 
 Sie können eine Baumstruktur replizieren, indem Sie **Tools - Workflow - Modelle** auswählen und das vordefinierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Ändern Sie das Originalmodell nicht oder rufen Sie es auf. Stellen Sie stattdessen sicher, dass Sie das Modell zuerst kopieren und dann ändern oder aufrufen.
 
@@ -191,13 +191,13 @@ Ausführlichere Informationen zum Verwalten von Veröffentlichungen finden Sie i
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Autoren-Service:
 
 1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
-2. Wählen Sie die Karte **forwardPublisher** aus.
-   ![Status](assets/status.png "Status")
+2. Wählen Sie die Karte **publish** aus.
+   ![Status](assets/publish-status.png "Status")
 3. Überprüfen des Warteschlangenstatus, der grün sein sollte.
 4. Sie können die Verbindung zum Replikations-Service testen.
 5. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird.
 
-![Protokolle](assets/logs.png "Protokolle")
+![Protokolle](assets/publish-logs.png "Protokolle")
 
 Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Veröffentlichungs-Service zurückgesetzt.
 In diesem Fall sollten die Warteschlangen überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf eine Warteschlange mit rotem Status klicken, wird die Warteschlange mit ausstehenden Elementen angezeigt, von der aus einzelne oder alle Elemente bei Bedarf gelöscht werden können.
