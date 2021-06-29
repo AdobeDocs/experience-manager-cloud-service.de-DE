@@ -1,7 +1,7 @@
 ---
 title: Umgang mit großen Inhaltsverzeichnissen
 description: In diesem Abschnitt wird die Handhabung von umfangreichen Inhalts-Repositorys beschrieben.
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3-Datenspeicher {#amazon-data-store}
+#### Amazon S3-Datenspeicher {#amazon-sdata-store}
 
 Ihre Datei azcopy.config sollte die folgenden Eigenschaften enthalten (stellen Sie sicher, dass Sie die richtigen Werte für Ihre Instanz verwenden).
 
@@ -134,7 +134,7 @@ Blobs, die vor dem Fehler kopiert wurden, werden von AzCopy bei nachfolgenden Au
 Mit der Veröffentlichung des Content Transfer Tool 1.5.4 haben wir die AzCopy-Unterstützung zur Authoring-Erfassung hinzugefügt.
 
 >[!NOTE]
-> Es wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
+>Es wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
 
 Um AzCopy während der Aufnahme nutzen zu können, müssen Sie eine AEM als Cloud Service-Version verwenden, die mindestens Version 2021.6.5561 ist.
 
