@@ -2,19 +2,19 @@
 title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
-feature: Asset-Berichte,Asset Management
+feature: Asset-Berichte,Asset-Management
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '872'
+ht-degree: 100%
 
 ---
 
 # Asset-Berichte {#asset-reports}
 
-Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte enthalten nützliche Informationen zur Nutzung Ihres Systems, zur Interaktion der Benutzer mit Assets und zu den freigegebenen Assets.<!-- downloaded and -->
+Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren, und beantworten die Frage, welche Assets <!-- downloaded and --> freigegeben werden.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
@@ -22,7 +22,7 @@ Das [!DNL Assets]-Berichterstellungs-Framework nutzt [!DNL Sling]-Aufträge, um 
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optional) and --> eine Benachrichtigung im Posteingang benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen, auf der alle zuvor erstellten Berichte angezeigt werden.
+Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optional) and --> eine Benachrichtigung im Posteingang benachrichtigt. Auf der Berichtslistenseite können Sie einen Bericht anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Erstellen von Berichten {#generate-reports}
 
@@ -105,7 +105,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten   zu Berichten  {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -120,7 +120,6 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 -->
 
 * Hochladen
-* Download
 * Ablauf
 * Änderung
 * Veröffentlichung
@@ -160,7 +159,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## Fehlerbehebungsinformationen {#tips-troubleshoot}
+## Informationen zur Fehlerbehebung {#tips-troubleshoot}
 
 * Wenn der [!UICONTROL Bericht zur Speichernutzung] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
 
