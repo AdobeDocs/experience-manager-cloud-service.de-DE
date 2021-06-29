@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: Business Practitioner,Administrator
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a6813cf691acb868589932719e33303871859323
 workflow-type: tm+mt
 source-wordcount: '4916'
 ht-degree: 86%
@@ -28,7 +28,7 @@ ht-degree: 86%
 | [Such-Ranking und -Optimierung](#searchrank) | [Benutzerdefinierte Prädikate](#custompredicates) | [Smart-Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Suchbereich](#scope) |  | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpected-results) |
 | [Suche aus anderen Lösungen und Apps heraus](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-Desktop-Programm](#desktop-app)</li><li>[Adobe Stock-Fotos](#adobe-stock)</li><li>[Dynamic Media-Assets](#search-dynamic-media-assets)</li></ul> |  |  |
-| [Asset-Wähler](#asset-selector) |  |  |
+| [Asset-Wähler](#asset-picker) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
@@ -192,7 +192,7 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 * So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title=Basel Meeting Room): `title:*Meeting*`
 * So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit title=John Doe): `*Adobe* title:"John Doe"`
 
-## Suchen Sie nach Assets aus anderen [!DNL Experience Manager] Angeboten oder Schnittstellen {#search-assets-other-surfaces}
+## Suchen von Assets über andere [!DNL Experience Manager]-Angebote oder -Schnittstellen {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] verbindet das DAM-Repository mit verschiedenen anderen  [!DNL Experience Manager] Lösungen, um einen schnelleren Zugriff auf digitale Assets zu ermöglichen und die kreativen Workflows zu optimieren. Jede Asset-Erkennung beginnt mit dem Durchsuchen oder Suchen. Das Suchverhalten ist über die verschiedenen Oberflächen und Lösungen hinweg weitgehend gleich. Einige Suchmethoden ändern sich je nach Zielgruppe, Anwendungsfall und Benutzeroberfläche in den [!DNL Experience Manager] -Lösungen. Die genauen Methoden für die einzelnen Lösungen sind unter den unten stehenden Links dokumentiert. Die allgemein anwendbaren Tipps und Verhaltensweisen werden in diesem Artikel beschrieben.
 
@@ -208,11 +208,11 @@ Kreativprofis verwenden das Desktop-Programm, um die [!DNL Experience Manager As
 
 Geschäftsbenutzer und Marketing-Experten nutzen Brand Portal, um genehmigte digitale Assets effizient und sicher mit erweiterten internen Teams, Partnern und Wiederverkäufern zu teilen. Siehe [Suchen von Assets in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=de).
 
-### Suchen Sie [!DNL Adobe Stock] Bilder {#adobe-stock1}
+### Suchen Sie nach [!DNL Adobe Stock] Bildern {#adobe-stock1}
 
 Benutzer können in der Benutzeroberfläche [!DNL Experience Manager] nach Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im OmniSearch-Feld hinzu. Sie können auch das Bedienfeld **[!UICONTROL Filter]** verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen bzw. mit der Adobe Stock-Dateinummer nach einem bestimmten Asset suchen. Siehe [manage [!DNL Adobe Stock] images in [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Suchen Sie nach [!DNL Dynamic Media] Assets {#search-dynamic-media-assets}
+### Suchen nach [!DNL Dynamic Media] Assets {#search-dynamic-media-assets}
 
 Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** im Bedienfeld **[!UICONTROL Filter]** auswählen. Dadurch werden Assets wie Bildsets, Karussells, Sets für gemischte Medien und Rotationssets gefiltert und angezeigt. Beim Erstellen von Web-Seiten können Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sets ist in einem Popup-Menü verfügbar.
 
@@ -400,7 +400,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | Video-Codec | x264 Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Video-Bitrate | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Audio-Codec | Libvorbis, Lame MP3, AAC Encoding. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
-| Audiobitrate  | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
+| Audiobitrate | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 
 ## Arbeiten mit Asset-Suchergebnissen {#aftersearch}
 
