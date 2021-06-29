@@ -1,10 +1,10 @@
 ---
 title: Erste Anmeldung bei Screens als Cloud Service
 description: Auf dieser Seite werden die ersten Schritte bei den ersten Schritten mit Screens as a Cloud Service beschrieben.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 1%
+source-wordcount: '237'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Nach Unterzeichnung des Vertrags startet Adobe Managed Services (AMS) das Onboar
 
 ## Verfügbarkeit des Feature Packs {#availability}
 
-Das AMS-Screens-Cloud Feature Pack ist über das Software Distribution-Portal verfügbar.
+Das AMS-Screens-Cloud Feature Pack ist über [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) verfügbar.
 Klicken Sie hier , um das neueste Feature Pack herunterzuladen.
 
 ## Hinzufügen von Benutzern zu Adobe Admin Console {#admin-console}
