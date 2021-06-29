@@ -1,7 +1,7 @@
 ---
 title: Navigieren zum Screens Services Provider
 description: Auf dieser Seite wird beschrieben, wie Sie zum Screens-Dienstanbieter navigieren.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
 1. Navigieren Sie von [hier](https://experience.adobe.com/screens) zum Screens-Dienstleister.
 
-   >[!NOTE]
+   >[!CAUTION]
    >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
 
 1. Wählen Sie **Kanäle** in der linken Navigationsleiste aus und klicken Sie auf **In Content Provider öffnen**.
