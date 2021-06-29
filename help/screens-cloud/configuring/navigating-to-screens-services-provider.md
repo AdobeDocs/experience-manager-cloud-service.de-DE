@@ -1,9 +1,9 @@
 ---
 title: Navigieren zum Screens Services Provider
 description: Auf dieser Seite wird beschrieben, wie Sie zum Screens-Dienstanbieter navigieren.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -41,5 +41,5 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie den Screens-Dienstanbieter einrichten, können Sie zu [Verwenden des Screens Content Providers](/help/screens-cloud/configuring/using-screens-content-provider.md) navigieren, um weitere Informationen zu erhalten.
+Nachdem Sie gelernt haben, wie Sie den Screens-Dienstanbieter einrichten, können Sie zu [Verwenden des Screens Content Providers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) navigieren, um weitere Informationen zu erhalten.
 
