@@ -1,9 +1,9 @@
 ---
 title: Verwenden des Screens Content Providers
 description: Auf dieser Seite wird die Verwendung des Screens Content Providers zum Erstellen von Inhalten beschrieben.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## Zielsetzung {#objective}
 
-Im folgenden Abschnitt wird beschrieben, wie Sie Screens Content Provider verwenden, nachdem Sie Screens Services Provider eingerichtet haben.
+Im folgenden Abschnitt wird beschrieben, wie Sie den Screens Content Provider verwenden, nachdem Sie [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) eingerichtet haben.
 
 ## Verwenden des Screens Content Providers {#screens-content-provider}
 
@@ -25,7 +25,9 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Screens Content Provider verwen
 >**Voraussetzung**
 >Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten des Screens-Dienstanbieters](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) , um zu erfahren, wie Sie über den Screens-Dienstanbieter zu dieser Benutzeroberfläche navigieren.
 
-Sobald Sie sich bei Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen. Verwenden Sie den Screens Content Provider, um Folgendes zu erstellen und zu verwalten:
+Sobald Sie sich bei Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen.
+
+Sie müssen den Screens Content Provider verwenden, um Folgendes zu erstellen und zu verwalten:
 
 * Projekte
 * Kanäle
