@@ -2,9 +2,9 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 28%
 
 ---
@@ -34,6 +34,10 @@ Um die entsprechende automatische Replikation zu realisieren, müssen Sie die **
 ![OSGi-Ein-Aus-Trigger-Konfiguration](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Aktivieren eines Baumes {#tree-activation}
+
+>[!NOTE]
+>
+>Dieser Ansatz sollte als veraltet betrachtet werden, da er nicht den Status behält und weniger skalierbar ist als andere Ansätze. Es wird von der Adobe empfohlen, stattdessen Veröffentlichungs- oder Workflow-Methoden zu verwenden.
 
 Aktivieren eines Baumes:
 
