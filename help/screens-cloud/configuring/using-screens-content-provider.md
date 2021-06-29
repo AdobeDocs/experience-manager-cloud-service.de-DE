@@ -1,10 +1,10 @@
 ---
 title: Verwenden des Screens Content Providers
 description: Auf dieser Seite wird die Verwendung des Screens Content Providers zum Erstellen von Inhalten beschrieben.
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Screens Content Provider verwen
 
 >[!NOTE]
 >**Voraussetzung**
->Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie den Abschnitt Einrichten des Screens-Dienstleisters , um zu erfahren, wie Sie von Screens Services Provider aus zu dieser Benutzeroberfläche navigieren.
+>Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten des Screens-Dienstanbieters](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) , um zu erfahren, wie Sie über den Screens-Dienstanbieter zu dieser Benutzeroberfläche navigieren.
 
 Sobald Sie sich bei Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen. Verwenden Sie den Screens Content Provider, um Folgendes zu erstellen und zu verwalten:
 
@@ -33,6 +33,6 @@ Sobald Sie sich bei Screens Content Provider angemeldet haben, können Sie jetzt
 
 ## Wie geht es weiter {#whats-next}
 
-Jetzt haben Sie gelernt, wie Sie zum Screens Content Provider navigieren, und sollten Sie Ihren Screens-Cloud Service-Journey jetzt fortsetzen, indem Sie das Dokument unter &quot;Erstellen und Verwalten von Projekten in Screens as a Cloud Service&quot;lesen.
+Jetzt haben Sie gelernt, wie Sie zum Screens Content Provider navigieren, und sollten Sie Ihren Screens-Cloud Service als Journey weiterführen, indem Sie das Dokument [Erstellen und Verwalten eines Projekts in Screens als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en) erneut ansehen.
 
 
