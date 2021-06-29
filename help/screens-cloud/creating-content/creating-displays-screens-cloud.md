@@ -1,10 +1,10 @@
 ---
 title: Erstellen und Verwalten von Anzeigen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Anzeigen in Screens as a Cloud Service erstellen und verwalten.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 16%
+source-wordcount: '292'
+ht-degree: 15%
 
 ---
 
@@ -52,4 +52,4 @@ Wählen Sie die Anzeige aus und klicken Sie unten im Bedienfeld auf **Löschen**
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun gelernt haben, wie Anzeigen für Ihr Projekt erstellt und verwaltet werden, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Zuweisen eines Kanals zu einer Anzeige in Screens as a Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md) erneut ansehen.
+Nachdem Sie nun gelernt haben, wie Anzeigen für Ihr Projekt erstellt und verwaltet werden, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Zuweisen eines Kanals zu einer Anzeige in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en) erneut ansehen.
