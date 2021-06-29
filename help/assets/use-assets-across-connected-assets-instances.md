@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset-Management,Connected Assets,Asset-Verteilung, Benutzer und Gruppen
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 77%
 
 ---
@@ -120,9 +120,9 @@ Sie können die Verbindung zwischen den konfigurierten [!DNL Sites]-Bereitstellu
 
 Sie können eine Verbindung zwischen der [!DNL Sites]-Implementierung und der [!DNL Dynamic Media]-Implementierung konfigurieren, die es Webseitenautoren ermöglicht, [!DNL Dynamic Media]-Bilder auf ihren Webseiten zu verwenden. Beim Erstellen von Webseiten bleibt die Erfahrung bei der Verwendung von Remote-Assets und Remote-[!DNL Dynamic Media]-Bereitstellungen gleich. Dadurch können Sie die Funktion [!DNL Dynamic Media] über die Funktion &quot;Connected Assets&quot;nutzen, z. B. smartes Zuschneiden und Bildvorgaben.
 
-Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
+Gehen Sie wie folgt vor, um die Verbindung zu konfigurieren:
 
-1. Erstellen Sie die Konfiguration Connected Assets wie oben beschrieben. Wählen Sie beim Konfigurieren der Funktion die Option **[!UICONTROL Original-Ausgabeformat für Dynamic Media Connected Assets abrufen]** aus.
+1. Erstellen Sie die Konfiguration Connected Assets wie oben beschrieben. Wenn Sie die Funktion nicht konfigurieren, wählen Sie die Option **[!UICONTROL Original-Ausgabeformat für Dynamic Media Connected Assets abrufen]** aus.
 
 1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote [!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen unter [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -133,7 +133,7 @@ Gehen Sie wie folgt vor, um diese Verbindung zu konfigurieren.
 
 1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Webseiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
-## Verwenden von Remote-Assets   {#use-remote-assets}
+## Verwenden von Remote-Assets  {#use-remote-assets}
 
 Die Website-Autoren verwenden Content Finder zum Verbinden mit der DAM-Implemetierung. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
 
