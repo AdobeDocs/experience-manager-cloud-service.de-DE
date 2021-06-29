@@ -2,9 +2,9 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1155'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
-Diese Standard-AEM-Funktionen für Autoren ändern sich mit AEM Cloud Service nicht.
+Auf diese Weise können Sie die ausgewählten Seiten sofort veröffentlichen, ohne dass die zusätzlichen Optionen über den Ansatz Veröffentlichung verwalten verfügbar sind.
+
+Weitere Informationen finden Sie unter [Veröffentlichung verwalten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Einschalt- und Ausschaltzeiten – Trigger-Konfiguration {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Wenn Sie einen solchen Filter nicht bereitstellen und nur den Agenten &quot;publish&quot;verwenden, wird der Agent &quot;preview&quot;nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
 
 Die Gesamtsumme `ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Agenten &quot;preview&quot;verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Agenten &quot;publish&quot;. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
+
+### Veröffentlichung verwalten  {#manage-publication}
+
+Veröffentlichung verwalten bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
+
+Wenn Sie die untergeordneten Elemente eines Ordners für die Option &quot;Später veröffentlichen&quot;einbeziehen, wird der Workflow Inhaltsstruktur veröffentlichen aufgerufen, der in diesem Artikel beschrieben wird.
+
+Ausführlichere Informationen zum Verwalten von Veröffentlichungen finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Fehlerbehebung {#troubleshooting}
 
