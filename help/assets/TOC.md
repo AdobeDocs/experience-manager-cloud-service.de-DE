@@ -4,10 +4,10 @@ user-guide-title: Handbuch zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 100%
+source-wordcount: '484'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
    + [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
-   + [Suchen von Assets](search-assets.md)
+   + [Suchen von Assets  ](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
@@ -34,7 +34,7 @@ ht-degree: 100%
    + [Verwenden von [!DNL Adobe Stock] -Assets in AEM](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
-   + [Integrieren mit [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Integration von  mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Verwenden und Konfigurieren von Asset Insights](assets-insights.md)
@@ -45,6 +45,7 @@ ht-degree: 100%
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
    + [Wasserzeichen-Assets](watermark-assets.md)
+   + [Verarbeiten von Assets mit [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
    + [Verweise auf Entwicklerdokumente und APIs](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
@@ -63,7 +64,7 @@ ht-degree: 100%
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
 + Freigeben und Verteilen von Assets {#brand-portal}
-   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von  [!DNL Assets]  mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Veröffentlichen von Assets von [!DNL Brand Portal] zu [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
 + Inhaltsfragmente {#content-fragments}
@@ -123,5 +124,5 @@ ht-degree: 100%
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](dynamic-media/http2faq.md)
-   + [Einstellung von Flash Viewer](dynamic-media/flash-viewers-eol.md)
+   + [End of Life von Flash-Viewern](dynamic-media/flash-viewers-eol.md)
    + [Einstellung von DHTML Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
