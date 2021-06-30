@@ -4,9 +4,9 @@ description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Int
 contentOwner: AG
 feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
 role: Business Practitioner,Administrator
-source-git-commit: 05f2bfac12d37b8ef9940e3381c709891cabe236
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,37 @@ Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, m�
 
 Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:
 
-**Auto-Ton**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und basierend auf den einzigartigen Eigenschaften des Bildes intelligent Licht- und Farbkorrekturen vorzunehmen.
-**Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. So erstellen Sie beispielsweise Horizonte auf Ebene.
-**Lightroom-Vorgaben**: Wendet einen benutzerdefinierten Look auf Bilder an, um ein konsistentes Erscheinungsbild mit benutzerdefinierten Vorgaben zu erzielen.
-**Bild-Cutout**: Verwendet künstliche Intelligenz, um Auswahlmöglichkeiten um visuelle Objekte zu erstellen und Hintergrund mit einem einzigen Befehl zu entfernen.
-**Bildmaske**: Verwendet künstliche Intelligenz, um mit einem einzigen Befehl Masken um visuelle Objekte zu erstellen.
-**Photoshop-Aktionen**: Wendet eine Reihe von Aufgaben (in Photoshop) auf eine Datei oder einen Dateistapel an.
-**Smart Object Replacement**: Personalisierungen werden skaliert durchgeführt, indem Sie Bilder austauschen und dabei alle in einer PSD-Datei angewendeten Effekte und Anpassungen beibehalten.
+* **Auto-Ton**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und basierend auf den einzigartigen Eigenschaften des Bildes intelligent Licht- und Farbkorrekturen vorzunehmen.
+* **Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. So erstellen Sie beispielsweise Horizonte auf Ebene.
+* **Lightroom-Vorgaben**: Wendet einen benutzerdefinierten Look auf Bilder an, um ein konsistentes Erscheinungsbild mit benutzerdefinierten Vorgaben zu erzielen.
+* **Bild-Cutout**: Verwendet künstliche Intelligenz, um Auswahlmöglichkeiten um visuelle Objekte zu erstellen und Hintergrund mit einem einzigen Befehl zu entfernen.
+* **Bildmaske**: Verwendet künstliche Intelligenz, um mit einem einzigen Befehl Masken um visuelle Objekte zu erstellen.
+* **Photoshop-Aktionen**: Wendet eine Reihe von Aufgaben (in Photoshop) auf eine Datei oder einen Dateistapel an.
+* **Smart Object Replacement**: Personalisierungen werden skaliert durchgeführt, indem Sie Bilder austauschen und dabei alle in einer PSD-Datei angewendeten Effekte und Anpassungen beibehalten.
 
 ## Verarbeitungsprofil zur Verarbeitung von Assets verwenden {#process-assets}
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
 
-1. Wenden Sie sich an den Adobe-Support, um die Lizenz zu erwerben.
-1. Navigieren Sie zu Tools > Assets > Verarbeitungsprofile.
-1. Wählen Sie Erstellen aus und geben Sie einen Namen an.
-1. Wählen Sie die Registerkarte Kreativ aus. Geben Sie den Ausgabeordner an und wählen Sie [!UICONTROL Neu hinzufügen] aus, um kreative Konfigurationen hinzuzufügen. Geben Sie den Namen der Ausgabedarstellung (oder den Namen der Ausgabe), die Erweiterung (oder den Dateityp) an, wählen Sie Qualität (oder Ausgabeparameter), wählen Sie Listen vom Typ MIME ein- und ausschließen (oder den Asset-Eingabefilter) und wählen Sie den gewünschten kreativen Vorgang aus.
-1. Für einige Vorgänge ist ein zusätzlicher Parameter (Asset) erforderlich. Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
+1. Wenden Sie sich an [Adobe Customer Care](https://experienceleague.adobe.com/#support), um die Lizenz zu erhalten.
+
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]**.
+
+1. Wählen Sie **[!UICONTROL Erstellen]** und geben Sie einen **[!UICONTROL Namen]** an.
+
+1. Wählen Sie die Registerkarte **[!UICONTROL Creative]**, geben Sie den Ausgabeordner an und wählen Sie **[!UICONTROL Neu hinzufügen]** aus, um kreative Konfigurationen hinzuzufügen.
+
+1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder den Ausgabenamen), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie Listen vom Typ MIME ein- und ausschließen (oder den Asset-Eingabefilter) und wählen Sie den gewünschten kreativen Vorgang aus.
+
+1. Einige Vorgänge erfordern einen zusätzlichen Parameter (Asset). Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
 
 1. Fügen Sie weitere kreative Vorgänge als Teil desselben Verarbeitungsprofils hinzu oder speichern Sie das Profil.
 
-1. Wenden Sie das Verarbeitungsprofil auf einen Ordner an. Wählen Sie den Ordner Eigenschaften und Asset-Verarbeitung aus und wählen Sie das erstellte Verarbeitungsprofil aus.
+1. Wenden Sie das Verarbeitungsprofil auf einen Ordner an. Wählen Sie auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das anzuwendende Verarbeitungsprofil aus.
 
-Nachdem das Verarbeitungsprofil auf einen DAM-Ordner angewendet wurde, führen alle Assets, die in diesen Ordner (oder in Unterordnern, sofern nicht überschrieben) hochgeladen oder aktualisiert wurden, zusätzlich zur Standardverarbeitung die definierten Vorgänge aus.
+Nachdem das Verarbeitungsprofil auf einen DAM-Ordner angewendet wurde, führen alle in diesen Ordner hochgeladenen oder aktualisierten Assets zusätzlich zur Standardverarbeitung die definierten Vorgänge aus. Die Unterordner übernehmen dieselben Profile wie auf die übergeordneten Ordner angewendet. Benutzer können diese Vererbung überschreiben.
 
-Um die vorhandenen Assets manuell zu verarbeiten, wählen Sie die Assets aus, wählen Sie die Option **[!UICONTROL Neu verarbeiten]** und wählen Sie dann das erforderliche Verarbeitungsprofil aus.
+Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, wählen Sie die Option **[!UICONTROL Neu verarbeiten]** und wählen Sie dann das erforderliche Verarbeitungsprofil aus.
 
 ## Tipps und Einschränkungen {#limitations-best-practices}
 
