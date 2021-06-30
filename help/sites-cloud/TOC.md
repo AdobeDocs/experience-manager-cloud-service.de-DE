@@ -1,15 +1,15 @@
 ---
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
 sub-product: Inhaltserstellung in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
 feature: 'Authoring – '
 role: Business Practitioner
-source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
+source-git-commit: c19c15c4e71c8ead1c3cb05add052a8ffae79d0a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '310'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
       + [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](authoring/getting-started/quick-start.md)
       + [Authoring – Konzepte](authoring/getting-started/concepts.md)
       + [Grundlegende Handhabung](authoring/getting-started/basic-handling.md)
-      + [Suchen](authoring/getting-started/search.md)
+      + [Suche](authoring/getting-started/search.md)
       + [Konfigurieren der Kontoumgebung](authoring/getting-started/account-environment.md)
       + [Ihr Posteingang](authoring/getting-started/inbox.md)
       + [Tastaturbefehle](authoring/getting-started/keyboard-shortcuts.md)
@@ -38,8 +38,8 @@ ht-degree: 0%
       + [Veröffentlichen von Seiten](authoring/fundamentals/publishing-pages.md)
       + [Inhaltsfragmente](authoring/fundamentals/content-fragments.md)
       + [Experience Fragments](authoring/fundamentals/experience-fragments.md)
-      + [Exportieren in CSV  ](authoring/fundamentals/csv-export.md)
-      + [Komponenten ](authoring/fundamentals/components.md)
+      + [Exportieren in CSV ](authoring/fundamentals/csv-export.md)
+      + [Komponenten](authoring/fundamentals/components.md)
       + [Authoring für Mobilgeräte](authoring/fundamentals/mobile.md)
       + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](authoring/fundamentals/accessible-content.md)
       + [Fehlerbehebung](authoring/fundamentals/troubleshooting.md)
@@ -69,13 +69,13 @@ ht-degree: 0%
       + [Arbeiten mit Workflows](authoring/workflows/overview.md)
       + [Anwenden von Workflows auf Seiten](authoring/workflows/applying.md)
       + [Teilnehmen an Workflows](authoring/workflows/participating.md)
-   + Personalisierung  {#personalization}
+   + Personalisierung {#personalization}
       + [Überblick über die Personalisierung](authoring/personalization/overview.md)
       + [Vorschau von Seiten mit ContextHub-Daten](authoring/personalization/contexthub.md)
       + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
       + [Verwenden zielgerichteter Inhalte in Multisites](authoring/personalization/multisite-targeted-content.md)
       + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](authoring/personalization/multisite-structure.md)
-      + [Verwalten von Aktivitäten ](authoring/personalization/activities.md)
+      + [Verwalten von Aktivitäten   ](authoring/personalization/activities.md)
       + [Verwalten von Zielgruppen](authoring/personalization/audiences.md)
       + [Erstellen und Verwalten von Angeboten  ](authoring/personalization/offers.md)
       + [Grundlegendes zur Segmentierung](authoring/personalization/segmentation.md)
@@ -94,7 +94,7 @@ ht-degree: 0%
          + [Best Practices für MSM](administering/msm/best-practices.md)
          + [Fehlerbehebung und häufig gestellte Fragen](administering/msm/troubleshooting.md)
       + Übersetzung {#translation}
-         + [Übersetzen von Inhalten für mehrsprachige Sites](administering/translation/overview.md)
+         + [Übersetzen von Inhalten für mehrsprachige Websites](administering/translation/overview.md)
          + [Vorbereiten von Inhalten für die Übersetzung](administering/translation/preparation.md)
          + [Verwalten von Übersetzungsprojekten](administering/translation/managing-projects.md)
          + [Assistent „Sprachkopie erstellen“](administering/translation/wizard.md)
