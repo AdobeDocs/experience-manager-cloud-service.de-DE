@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1491'
 ht-degree: 20%
 
 ---
@@ -92,7 +92,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs nutzen, um die Asset-Produktion skaliert zu automatisieren. Die Geschwindigkeit von Inhalten wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit und Iterationen erheblich verkürzt werden. Die Funktion erfordert keine Programmierung und funktioniert innerhalb des DAM. Siehe [Generieren von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Adobe Asset Link] v3.0 für  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]und  [!DNL Adobe InDesign] und  [!DNL Adobe Asset Link] v2.0 für  [!DNL Adobe XD] wird veröffentlicht. Er bietet:
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) für  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator] und  [!DNL Adobe InDesign] und  [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link-for-xd.html) für  [!DNL Adobe XD] ist verfügbar. Er bietet:
 
    * Unterstützung für [!DNL Assets Essentials].
    * Möglichkeit, automatisch eine Verbindung zu [!DNL Experience Manager] als [!DNL Cloud Service] oder [!DNL Assets Essentials] herzustellen.
@@ -114,6 +114,14 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 * [!DNL Experience Manager Assets] bettet den PDF-Viewer zur Vorschau der unterstützten Dokumentformate ein. Es wird von [!DNL Adobe Document Cloud] betrieben. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
 
    ![PDF-Dateien in  [!DNL Experience Manager] der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* Eine Erweiterung des Benutzererlebnisses zeigt die Anzahl der in einem Ordner vorhandenen Assets an. Für mehr als 1000 Assets in einem Ordner zeigt [!DNL Assets] 1000+ an.
+
+   ![Anzahl der Assets in einem Ordner wird auf der Benutzeroberfläche angezeigt](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* Sie können ein Metadatenschema direkt auf einen Ordner in dessen [!UICONTROL Eigenschaften] anwenden.
+
+   ![Hinzufügen von Metadatenschemata aus Ordnereigenschaften](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 
