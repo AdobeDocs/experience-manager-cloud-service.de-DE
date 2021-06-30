@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 21%
+source-wordcount: '1395'
+ht-degree: 20%
 
 ---
 
@@ -90,14 +90,12 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen in [!DNL Assets] {#ga-features-assets}
 
-* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs nutzen, um die Asset-Produktion skaliert zu automatisieren. Die Geschwindigkeit von Inhalten wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit und Iterationen erheblich verkürzt werden. Die Funktion erfordert keinen Code und funktioniert innerhalb des DAM.
+* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs nutzen, um die Asset-Produktion skaliert zu automatisieren. Die Geschwindigkeit von Inhalten wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit und Iterationen erheblich verkürzt werden. Die Funktion erfordert keine Programmierung und funktioniert innerhalb des DAM. Siehe [Generieren von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] v3.0 für  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]und  [!DNL Adobe InDesign] und  [!DNL Adobe Asset Link] v2.0 für  [!DNL Adobe XD] wird veröffentlicht. Er bietet:
 
    * Unterstützung für [!DNL Assets Essentials].
    * Möglichkeit, automatisch eine Verbindung zu [!DNL Experience Manager] als [!DNL Cloud Service] oder [!DNL Assets Essentials] herzustellen.
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### Neue Funktionen im Kanal [!DNL Assets] der Vorabversion {#beta-features-assets}
 
