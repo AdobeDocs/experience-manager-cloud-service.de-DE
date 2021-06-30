@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart-Tags, Tagging
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 92%
+source-wordcount: '2355'
+ht-degree: 89%
 
 ---
 
@@ -97,13 +97,16 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 
 **Beispiele**: Weitere Beispiele zur Orientierung:
 
-* Erstellen Sie ein Tag-Modell, das Folgendes umfasst:
-   * nur die Tags, die sich auf Automodelle beziehen.
-   * nur die Tags, die sich auf die Farben von Hemden beziehen.
-   * nur die Tags, die sich auf Jacken für Frauen und Männer beziehen.
+* Erstellen Sie ein Tag-Modell, das nur Folgendes enthält:
+
+   * Die Tags bezogen sich auf Automodelle.
+   * Die Tags beziehen sich auf die Farben von Hemden.
+   * Die Tags, die sich auf Jacken für Frauen und Männer beziehen.
+
 * Erstellen Sie nicht Folgendes:
-   * ein Tag-Modell, das in den Jahren 2019 und 2020 auf den Markt gekommene Automodelle enthält.
-   * mehrere Tag-Modelle, die dieselben Automodelle enthalten.
+
+   * Ein Tag-Modell, das in den Jahren 2019 und 2020 veröffentlichte Automodelle enthält.
+   * Mehrere Tag-Modelle, die dieselben Automodelle enthalten.
 
 **Zum Trainieren verwendete Bilder**: Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
 
