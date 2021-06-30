@@ -4,7 +4,7 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Versionshinweise
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
+source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 59%
@@ -60,7 +60,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Startseite | Nicht unterstützt. | Weitere Informationen finden Sie unter [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=de) |
 | Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Asset-Bewertungen | Nicht unterstützt. | Das Bewertungs-Widget im Metadatenschema-Editor wird nicht unterstützt. |
-| Inhaltsverteilungsfilter | Nicht unterstützt. | Ein beliebtes Nutzungsszenario von `ContentDispositionFilter` besteht darin, Administratoren zu ermöglichen, [!DNL Experience Manager] so zu konfigurieren, dass HTML-Dateien bereitgestellt und PDF-Dateien inline geöffnet werden, anstatt sie herunterzuladen. Auf den Veröffentlichungsinstanzen können Sie die Dispatcher-Konfiguration verwenden. In den Autoreninstanzen empfiehlt Adobe keine Änderung am Content Disposition-Header. Siehe [Filter für Inhaltsdisposition in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| Inhaltsdispositionsfilter | Nicht unterstützt. | Ein beliebtes Nutzungsszenario von `ContentDispositionFilter` besteht darin, Administratoren zu ermöglichen, [!DNL Experience Manager] so zu konfigurieren, dass HTML-Dateien bereitgestellt und PDF-Dateien inline geöffnet werden, anstatt sie herunterzuladen. Auf den Veröffentlichungsinstanzen können Sie die Dispatcher-Konfiguration verwenden. In den Autoreninstanzen empfiehlt Adobe keine Änderung am Content Disposition-Header. Siehe [Filter für Inhaltsdisposition in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Bericht herunterladen](/help/assets/asset-reports.md) | Nicht unterstützt. | Vorerst ist der Download-Bericht mit Informationen zur Asset-Nutzung nicht verfügbar. Siehe [Bericht herunterladen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Vorlage für Produktfotos | Nicht unterstützt. | Siehe [Produkt-Fotoshooting-Vorlage in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
