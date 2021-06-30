@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 20%
 
 ---
@@ -97,12 +97,23 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
    * Unterstützung für [!DNL Assets Essentials].
    * Möglichkeit, automatisch eine Verbindung zu [!DNL Experience Manager] als [!DNL Cloud Service] oder [!DNL Assets Essentials] herzustellen.
 
+* Mit dem Tool [Asset-Massenaufnahme](/help/assets/add-assets.md#asset-bulk-ingestor) können Sie Metadaten während einer Massenaufnahme hinzufügen.
+
 ### Neue Funktionen im Kanal [!DNL Assets] der Vorabversion {#beta-features-assets}
 
 * Die Anzeigeeinstellungen wurden verbessert, sodass Benutzer eine Standardansicht und einen standardmäßigen Sortierparameter wählen können.
+
+   ![Festlegen der Standardansicht in den Anzeigeeinstellungen](/help/assets/assets/view-settings-for-defaults.png)
+
 * Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen.
+
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
-* [!DNL Experience Manager Assets] bettet den PDF-Viewer, der von bereitgestellt wird,  [!DNL Adobe Document Cloud] ein, um die unterstützten Dokumente in der Vorschau anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+
+   ![Filtern von Suchordnern mithilfe von Sucheigenschaften](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] bettet den PDF-Viewer zur Vorschau der unterstützten Dokumentformate ein. Es wird von [!DNL Adobe Document Cloud] betrieben. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+
+   ![PDF-Dateien in  [!DNL Experience Manager] der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 
