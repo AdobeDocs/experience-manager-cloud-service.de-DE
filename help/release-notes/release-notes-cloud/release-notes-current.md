@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 20%
+source-wordcount: '1544'
+ht-degree: 19%
 
 ---
 
@@ -111,7 +111,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
    ![Filtern von Suchordnern mithilfe von Sucheigenschaften](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] bettet den PDF-Viewer zur Vorschau der unterstützten Dokumentformate ein. Es wird von [!DNL Adobe Document Cloud] betrieben. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+* [!DNL Experience Manager Assets] bettet den PDF-Viewer zur Vorschau der unterstützten Dokumentformate ein. Es wird von [!DNL Adobe Document Cloud] betrieben. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert. Die in der Vorschau verfügbaren Steuerelemente sind Zoomen, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Der integrierte PDF-Viewer unterstützt die Dateiformate AI, DOCX, INDD, PDF und PSD. Sie können das Asset selbst kommentieren, Kommentare und Anmerkungen in der PDF-Datei werden jedoch nicht unterstützt.
 
    ![PDF-Dateien in  [!DNL Experience Manager] der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 
