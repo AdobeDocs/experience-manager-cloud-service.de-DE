@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset-Management, Bildprofile, Videoprofile
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 73%
+source-wordcount: '500'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,7 @@ Beachten Sie die folgenden Best Practices für die Organisation Ihrer digitalen
    * Siehe [Metadatenprofile](/help/assets/metadata-profiles.md).
    * Informationen hierzu finden Sie unter [Metadaten für die Verwaltung digitaler Assets](/help/assets/manage-metadata.md).
 
-* In den meisten Fällen wächst die Sammlung mit digitalen Assets stets weiter an. Daher ist es wichtig, dass die Metadatennutzung, die Ordnerstruktur und die Dateibenennung für alle hochgeladenen Assets bereits frühzeitig formalisiert werden. Indem Sie diese Aspekte standardisieren, wird sichergestellt, dass Sie auch bei einem stets wachsenden Pool mit digitalen Assets Verarbeitungsprofile präziser und konsistenter auf Ordner anwenden können.
+* In den meisten Fällen wächst die Sammlung mit digitalen Assets stets weiter an. Daher ist es wichtig - bereits früher -, die Metadatenverwendung, die Ordnerstruktur und die Dateibenennung für alle hochgeladenen Assets zu formalisieren. Indem Sie diese Aspekte standardisieren, wird sichergestellt, dass Sie auch bei einem stets wachsenden Pool mit digitalen Assets Verarbeitungsprofile präziser und konsistenter auf Ordner anwenden können.
 * Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Ordnerstrukturen, mit deren Hilfe Sie verfeinern können, welche Profile zugewiesen werden sollen, können beispielsweise Folgendes umfassen:
 
    * **Entwicklungsordner**  - enthalten digitale Assets, an denen Sie derzeit arbeiten.
