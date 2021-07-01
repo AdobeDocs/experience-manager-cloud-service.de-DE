@@ -1,14 +1,14 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
-description: Erfahren Sie mehr über Best Practices zur Optimierung der Qualität Ihrer Bild-Assets mit Dynamic Media.
+description: Lernen Sie Best Practices kennen, mit denen Sie die Qualität Ihrer Bild-Assets mit Dynamic Media optimieren können.
 contentOwner: Rick Brough
-feature: Asset-Verwaltung
+feature: Asset-Management
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 85%
+source-wordcount: '1480'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 Die Optimierung der Bildqualität kann viel Zeit in Anspruch nehmen, da zahlreiche Faktoren dazu beitragen, angemessene Ergebnisse zu erzielen. Das Ergebnis ist teilweise subjektiv, da Einzelpersonen die Bildqualität unterschiedlich empfinden. Daher ist strukturiertes Experimentieren entscheidend.
 
-Adobe Experience Manager umfasst mehr als 100 Dynamic Media-Bildbereitstellungsbefehle zum Optimieren und Optimieren von Bildern und zum Rendern von Ergebnissen. Mit den folgenden Richtlinien können Sie den Prozess anhand von einigen wesentlichen Befehlen und Best Practices optimieren und schnell angemessene Ergebnisse erzielen.
+Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dynamic Media, mit denen Bilder angepasst und optimiert und Ergebnisse gerendert werden können. Mit den folgenden Richtlinien können Sie den Prozess anhand von einigen wesentlichen Befehlen und Best Practices optimieren und schnell angemessene Ergebnisse erzielen.
 
 ## Best Practices für das Bildformat (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -40,13 +40,13 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 ## Best Practices für Bild-Scharfzeichnung {#best-practices-for-image-sharpening}
 
-Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit, um mehr über die Funktionsweise von Scharfzeichnen und Unschärfemaske in Experience Manager zu erfahren, indem Sie auf die folgenden hilfreichen Ressourcen verweisen:
+Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit und machen Sie sich mit der Funktionsweise von Scharfzeichnung und Unschärfemaske in Experience Manager vertraut, indem Sie die folgenden nützlichen Ressourcen lesen:
 
-* Das Whitepaper zu Best Practices [Adobe Dynamic Media Classic - Bildqualität und Scharfzeichnen Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
+* Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
 * Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media) an.
 
-Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder mit nur einer oder der anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
+Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Ausgabe oder bei beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder mit nur einer oder der anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
 Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
@@ -65,11 +65,11 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich Best Practices für den Filter, finden Sie in den folgenden Ressourcen:
 
-      * Das Whitepaper zu Best Practices [Adobe Dynamic Media Classic - Bildqualität und Scharfzeichnen Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
+      * Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
       * Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media) an.
 
-      * Mit Experience Manager können Sie auch einen vierten Parameter steuern: monochrom (0,1). Dieser Parameter bestimmt, ob die Unschärfemaske auf jede Farbkomponente separat mit dem Wert 0 oder auf die Bildhelligkeit/-intensität mit dem Wert 1 angewendet wird.
+      * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 
 
@@ -99,7 +99,7 @@ Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 
 ## Best Practices für die JPEG-Skalierung (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-Der Parameter `jpegSize` ist nützlich, wenn Sie sicherstellen möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung auf Geräten mit begrenztem Speicher nicht überschreitet.
+Der Parameter `jpegSize` ist nützlich, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 
 * Dieser Parameter wird in Kilobyte festgelegt (`jpegSize=&lt;size_in_kilobytes&gt;`). Damit wird die maximal zulässige Größe für die Bildbereitstellung definiert.
 * `&jpegSize=` interagiert mit dem JPG-Komprimierungsparameter `&qlt=`. Wenn die JPG-Antwort mit dem angegebenen JPG-Komprimierungsparameter (`&qlt=`) nicht den Wert von jpegSize überschreitet, wird das Bild mit dem definierten Wert für `&qlt=` zurückgegeben. Andernfalls wird `&qlt=` nach und nach reduziert, bis das Bild der maximal zulässigen Größe entspricht oder bis das System bestimmt, dass die Bildgröße nicht erreicht werden kann, und einen Fehler zurückgibt.
@@ -122,4 +122,4 @@ Beim Experimentieren sind die folgenden allgemeinen Vorschläge hilfreich, um Ih
 
 * Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
 * Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerdefinierte Vorgabenname in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
-* Experience Manager bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Um die Rendering-Ergebnisse zu optimieren, können Ihnen die Beratungsdienste von [Adobe](https://business.adobe.com/customers/consulting-services/main.html) bei benutzerdefinierten Einblicken und Best Practices helfen.
+* Experience Manager bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Um die Rendering-Ergebnisse zu verfeinern und zu optimieren, können die [Consulting Services](https://business.adobe.com/de/customers/consulting-services/main.html) von Adobe Sie mit individuellen Einblicken und Best Practices unterstützen.
