@@ -1,29 +1,29 @@
 ---
-title: Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popup-Fenster
+title: Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht
 description: '"Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierte Inhalte für die Anzeige im Popup-Fenster Windows® Trigger haben."'
 feature: Interaktive Bilder, interaktive Videos, Karussellbanner
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 93%
+source-wordcount: '1009'
+ht-degree: 80%
 
 ---
 
-# Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows® {#using-quickviews-to-create-custom-pop-ups}
+# Erstellen eines benutzerdefinierten Popup-Windows® mithilfe der Schnellansicht {#using-quickviews-to-create-custom-pop-ups}
 
-Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig vom verwendeten Viewer können Kunden auf einen Hotspot, ein Miniaturbild oder eine Imagemap tippen, um Informationen oder verwandte Inhalte anzuzeigen.
+Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Je nach verwendetem Viewer können Kunden einen Hotspot, ein Miniaturbild oder eine Imagemap auswählen, um Informationen oder verwandte Inhalte anzuzeigen.
 
-Schnellansichten werden in Dynamic Media von folgenden Viewern unterstützt:
+Die Schnellansicht wird von den folgenden Viewern in Dynamic Media unterstützt:
 
-* Interaktive Bilder (klickbare Hotspots)
-* Interaktives Video (klickbare Miniaturbilder während der Videowiedergabe)
-* Karussellbanner (klickbare Hotspots oder Imagemaps)
+* Interaktive Bilder (auswählbare Hotspots)
+* Interaktives Video (auswählbare Miniaturbilder während der Videowiedergabe)
+* Karussellbanner (auswählbare Hotspots oder Imagemaps)
 
 Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zum Erstellen einer Schnellansicht für alle drei unterstützten Viewer identisch.
 
-**So verwenden Sie Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows®:**
+**So erstellen Sie ein benutzerdefiniertes Popup-Windows® mithilfe der Schnellansicht:**
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
@@ -73,7 +73,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
     </tbody>
    </table>
 
-1. Der von Ihnen verwendete Viewer muss wissen, wie die Schnellansicht zu verwenden ist.
+1. Der von Ihnen verwendete Viewer muss wissen, wie die Schnellansicht verwendet werden kann.
 
    Der Viewer verwendet einen Handler mit dem Namen `QuickViewActive`.
 
@@ -106,7 +106,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
 1. Konfigurieren Sie jetzt den `quickViewActivate`-Handler.
 
-   Der `quickViewActivate`-Handler steuert die Schnellansichten im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungs-Code stellt eine Zuordnung für die SKU-Variable bereit, die in der Schnellansicht festgelegt wurde. Er führt auch einen Beispielfunktionsaufruf `loadQuickView` durch.
+   Der Handler `quickViewActivate` steuert die Schnellansicht im Viewer. Der Handler enthält die Variablenliste und die Funktionsaufrufe, die mit der Schnellansicht verwendet werden. Der Einbettungscode stellt die Zuordnung für die SKU-Variable bereit, die in der Schnellansicht festgelegt wurde. Er führt auch einen Beispielfunktionsaufruf `loadQuickView` durch.
 
    **Variablenzuordnung**
 Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnellansicht enthaltenen SKU-Wert und den allgemeinen Variablen zu:
@@ -117,7 +117,7 @@ Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnella
 
    `var sku=inData.sku`
 
-   Ordnen Sie weitere Variablen aus der Schnellansicht wie folgt zu:
+   Ordnen Sie auch andere Variablen aus der Schnellansicht zu, wie im Folgenden gezeigt:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -174,7 +174,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
 1. Platzieren Sie das Popup-`DIV` im Body-Bereich Ihrer HTML-Seite.
 
-   Für eines der Elemente ist eine ID festgelegt, die mit den SKU-Wert aktualisiert wird, wenn der Benutzer eine Schnellansicht aufruft. Das Beispiel beinhaltet auch eine einfache Schaltfläche, um das Popup-Fenster wieder auszublenden.
+   Eines der Elemente wird mit einer ID festgelegt, die mit dem SKU-Wert aktualisiert wird, wenn der Benutzer eine Schnellansicht aufruft. Das Beispiel beinhaltet auch eine einfache Schaltfläche, um das Popup-Fenster wieder auszublenden.
 
    ```xml
    <div id="quickview_div" >
@@ -196,7 +196,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    </script>
    ```
 
-1. Laden Sie eine HTML-Testseite auf Ihren Webserver hoch und öffnen Sie sie. Der Viewer zeigt das Popup `DIV` an, wenn ein Benutzer eine Schnellansicht aufruft.
+1. Laden Sie eine HTML-Testseite auf Ihren Webserver hoch und öffnen Sie sie. Der Viewer zeigt das Popup-`DIV` an, wenn ein Benutzer eine Schnellansicht aufruft.
 1. **Anzeigen des benutzerdefinierten Popup-Fensters im Vollbildmodus**
 
    Einige Viewer, wie der interaktive Video-Viewer, unterstützen die Anzeige im Vollbildmodus. Wenn Sie das Popup-Fenster jedoch verwenden, wie in den vorherigen Schritten beschrieben, wird es im Vollbildmodus hinter dem Viewer angezeigt.
