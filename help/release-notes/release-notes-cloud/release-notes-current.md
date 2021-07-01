@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 18%
 
 ---
@@ -211,5 +211,21 @@ Die Version 1.5.4 des Content Transfer Tool wurde am 28. Juni 2021 veröffentlic
 ### Fehlerbehebungen {#bug-fixes-ctt-latest}
 
 * Beim Beenden einer Aufnahme in der Autoreninstanz hat die Benutzeroberfläche eine zuvor abgeschlossene Aufnahme in der Veröffentlichungsinstanz von `FINISHED` in `STOPPED` überschrieben. Dieses Problem wurde behoben.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Veröffentlichungsdatum {#release-date-bpa}
+
+Die Version 2.1.16 von Best Practices Analyzer wurde am 30. Juni 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-bpa-latest}
+
+* Möglichkeit, fehlende untergeordnete Knoten in Ordnern unter `/content/dam` zu erkennen und darüber zu berichten.
+
+* Möglichkeit, die verwendete Version von Best Practices Analyzer zu erkennen und darüber zu berichten.
+
+### Fehlerbehebungen {#bug-fixes-bpa-latest}
+
+* Fehler bei der Protokollierung in Zusammenhang mit nicht unterstützten Repository Structure (URS) behoben.
 
 
