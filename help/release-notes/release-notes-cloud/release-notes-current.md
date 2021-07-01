@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 18%
 
 ---
@@ -152,8 +152,6 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
    * Generieren Sie Dokumente, indem Sie Vorlagendateien mit XML-Daten füllen.
    * Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
    * Generieren Sie druckbare PDFs aus einem XFA-Formular-PDF und Adobe Acrobat-Formular (AcroForm).
-
-* **Variable Data Externalizer**: Sie können Daten AEM Workflow-Variablen in einem externen Speichersystem speichern, das von Ihrem Unternehmen verwaltet wird.
 
 Sie können [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogramm anzumelden.
 
