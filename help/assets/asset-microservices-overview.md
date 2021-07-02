@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute Microservices,Workflow,Versionsinformationen,Asset-Verarbeitung
 role: Architect,Administrator
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 99%
+source-wordcount: '828'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] bietet eine Cloud-native Mög
 * Gegebenenfalls werden native Adobe-Dateiverarbeitungs-Services verwendet, um eine Ausgabe mit hoher Wiedergabetreue und einen [effizienten Umgang mit proprietären Adobe-Formaten](file-format-support.md) zu ermöglichen.
 * Möglichkeit, den Nachbearbeitungs-Workflow so zu konfigurieren, dass benutzerspezifische Aktionen und Integrationen hinzugefügt werden können.
 
-Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie ImageMagick und FFmpeg-Transkodierung) zu vermeiden, die Konfiguration des Systems zu vereinfachen und standardmäßig einfache Funktionen für gängige Dateitypen bereitzustellen.
+Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie [!DNL ImageMagick] und FFmpeg-Transkodierung) zu vermeiden und Konfigurationen zu vereinfachen, während standardmäßig grundlegende Funktionen für die gängigen Dateiformate bereitgestellt werden.
 
 ## Umfangreiche Architektur {#asset-microservices-architecture}
 
@@ -40,19 +40,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Die wichtigsten Schritte der Erfassung und Verarbeitung mithilfe von Asset-Microservices sind:
 
-* Clients wie Webbrowser oder Adobe Asset Link senden eine Upload-Anfrage an Experience Manager und beginnen mit dem Hochladen der Binärdatei direkt in den binären Cloud-Speicher.
-* Nach Abschluss des direkten binären Uploads benachrichtigt der Client Experience Manager.
-* Experience Manager sendet eine Verarbeitungsanfrage an die Asset-Microservices. Der Inhalt der Anfrage hängt von der Konfiguration der Verarbeitungsprofile in Experience Manager ab, die angeben, welche Ausgabedarstellungen generiert werden sollen.
+* Clients wie Webbrowser oder Adobe Asset Link senden eine Upload-Anfrage an [!DNL Experience Manager] und beginnen mit dem Hochladen der Binärdatei direkt in den binären Cloud-Speicher.
+* Nach Abschluss des direkten binären Uploads benachrichtigt der Client [!DNL Experience Manager].
+* [!DNL Experience Manager] sendet eine Verarbeitungsanfrage an Asset-Microservices. Der Inhalt der Anfrage hängt von der Konfiguration der Verarbeitungsprofile in [!DNL Experience Manager] ab, die angeben, welche Ausgabeformate generiert werden sollen.
 * Das Backend der Assets-Microservices empfängt die Anfrage und sendet sie je nach Anfrage an einen oder mehrere Microservices. Jeder Microservice greift direkt auf die ursprüngliche Binärdatei im binären Cloud-Speicher zu.
 * Die Ergebnisse der Verarbeitung, z. B. Ausgabedarstellungen, werden im binären Cloud-Speicher gespeichert.
-* Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Ausgabedarstellungen) vorhanden sind. Die generierten Ausgabedarstellungen sind in Experience Manager für das hochgeladene Asset verfügbar.
+* Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Ausgabedarstellungen) vorhanden sind. Die generierten Ausgabeformate sind in [!DNL Experience Manager] für das hochgeladene Asset verfügbar.
 
 Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Falls konfiguriert, kann Experience Manager auch ein benutzerdefiniertes Workflow-Modell starten, um die Nachbearbeitung des Assets durchzuführen. Führen Sie beispielsweise benutzerdefinierte Schritte aus, die spezifisch für Ihre Umgebung sind, wie z. B. das Abrufen von Informationen aus einem Unternehmenssystem und das Hinzufügen von Asset-Eigenschaften.
 
 Der Aufnahme- und Verarbeitungsfluss sind Schlüsselkonzepte der Asset-Microservices-Architektur für Experience Manager.
 
 * **Direkter Binärzugriff**: Assets werden nach der Konfiguration für Experience Manager-Umgebungen in den binären Cloud-Speicher übertragen (und hochgeladen). Anschließend erhalten [!DNL Experience Manager], Asset-Microservices und schließlich Clients direkten Zugriff auf sie, um ihre Arbeit auszuführen. Dadurch wird die Belastung der Netzwerke und die Duplizierung der gespeicherten Binärdateien minimiert.
-* **Externalisierte Verarbeitung**: Die Verarbeitung von Assets erfolgt außerhalb der [!DNL Experience Manager]-Umgebung und hält deren Ressourcen (CPU, Speicher) für die Bereitstellung der wichtigsten Digital-Asset-Management-Funktionen und die Unterstützung der interaktiven Arbeit mit dem System für Endanwender frei.
+* **Externalisierte Verarbeitung**: Die Verarbeitung von Assets erfolgt außerhalb der  [!DNL Experience Manager] Umgebung und speichert ihre Ressourcen (CPU, Speicher) für die Bereitstellung der wichtigsten DAM-Funktionen (Digital Asset Management) und die Unterstützung der interaktiven Arbeit mit dem System für Endbenutzer
 
 ## Asset-Upload mit direktem Binärzugriff {#asset-upload-with-direct-binary-access}
 
