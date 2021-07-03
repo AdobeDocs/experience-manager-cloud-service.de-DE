@@ -3,16 +3,16 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Von [!DNL Experience Manager Assets] as a [!DNL Cloud Service] unterstützte Dateiformate und MIME-Typen.
 contentOwner: AG
 feature: Asset-Management,Ausgabeformate
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 99%
 
 ---
 
-# Von [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
+# Von [!DNL Assets] unterstützte Dateiformate  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
@@ -106,7 +106,7 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/asset
 | STL | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
 | USDz | verwalten | verwalten | verwalten | verwalten | verwalten | - | - | verwalten |
 
-## [!DNL Camera RAW]-Formate {#camera-raw-formats}
+## [!DNL Camera RAW]-Formate  {#camera-raw-formats}
 
 | Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
