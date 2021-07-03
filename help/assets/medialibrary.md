@@ -3,9 +3,9 @@ title: Media Library für grundlegende digitale Asset-Verwaltung verwenden
 description: '[!DNL Experience Manager Assets] und Media Library für die Asset-Verwaltung.'
 contentOwner: AG
 feature: Asset-Management,Publishing
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 6%
@@ -41,7 +41,7 @@ Experience Manager Assets bietet DAM-Funktionen von Unternehmensklassen. Die Ass
 
 Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Funktionen verhindern möchten, entfernen Sie alle [!DNL Assets]-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den [!DNL Assets]-Administrator aus [!DNL Experience Manager]. Hierdurch verhindern Sie, dass Benutzer versehentlich [!DNL Assets]-Funktionen nutzen, für die Sie keine Lizenz haben.
 
-## Media Library {#use-media-library} verwenden
+## Verwenden von Media Library {#use-media-library}
 
 Media Library deckt im Großen und Ganzen die folgenden Anwendungsfälle ab:
 
