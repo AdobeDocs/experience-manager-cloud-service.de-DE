@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart-Tags, Tagging
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: 4654706865c6f6511ac2893370db3424b20797cc
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2346'
 ht-degree: 89%
 
 ---
@@ -63,7 +63,7 @@ Sie können die folgenden Asset-Typen mit Tags versehen:
 
 ## Grundlegendes zu Tag-Modellen und Richtlinien {#understand-tag-models-guidelines}
 
-Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Bei der Anwendung helfen die Tags, verschiedene Schuhtypen zu finden, zum Beispiel nach Farbe, nach Design oder nach Gebrauch. Um die inhaltliche Darstellung eines Trainings-Modells in [!DNL Experience Manager] zu verstehen, stellen Sie sich ein Trainings-Modell als eine Entität der obersten Ebene vor, die aus einer Gruppe manuell hinzugefügter Tags und Beispielbildern für jedes Tag besteht. Jedes Tag kann ausschließlich auf ein Bild angewendet werden.
+Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Wenn die Tags angewendet werden, helfen sie bei der Suche nach verschiedenen Schuhtypen, z. B. nach Entwurf oder Verwendung. Um die inhaltliche Darstellung eines Trainings-Modells in [!DNL Experience Manager] zu verstehen, stellen Sie sich ein Trainings-Modell als eine Entität der obersten Ebene vor, die aus einer Gruppe manuell hinzugefügter Tags und Beispielbildern für jedes Tag besteht. Jedes Tag kann ausschließlich auf ein Bild angewendet werden.
 
 Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Sie einen Satz eindeutiger Tags, die die Objekte in den Bildern im Kontext Ihres Unternehmens am besten beschreiben. Stellen Sie sicher, dass die Assets in Ihrem Satz den [Trainings-Richtlinien](#training-guidelines) entsprechen.
 
@@ -100,7 +100,6 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 * Erstellen Sie ein Tag-Modell, das nur Folgendes enthält:
 
    * Die Tags bezogen sich auf Automodelle.
-   * Die Tags beziehen sich auf die Farben von Hemden.
    * Die Tags, die sich auf Jacken für Frauen und Männer beziehen.
 
 * Erstellen Sie nicht Folgendes:
