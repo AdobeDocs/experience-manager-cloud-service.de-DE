@@ -2,13 +2,13 @@
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
 description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  Benutzern mit Behinderungen helfen.
 contentOwner: AG
-feature: Barrierefreiheit,Asset-Verwaltung
-role: Business Practitioner,Architect,Leader
+feature: Barrierefreiheit,Asset-Management
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um 
 * Hilfs-Hardware, einschließlich Switch-Steuerungen, aktualisierbarer Braille-Displays und anderer Computer-Eingabegeräte.
 * Tools zum Vergrößern der Benutzeroberfläche.
 
-## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind  {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
