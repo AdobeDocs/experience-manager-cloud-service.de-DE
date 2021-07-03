@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset-Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 89%
+source-wordcount: '1024'
+ht-degree: 78%
 
 ---
 
@@ -66,17 +66,19 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
-## Download assets shared using link sharing {#link-share-download}
+## Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe {#link-share-download}
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+>[!NOTE]
+>
+>Diese Funktion ist im Vorabversionskanal für Experience Manager verfügbar.
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um sie für interessierte Personen verfügbar zu machen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+Wenn Benutzer Assets von freigegebenen Links herunterladen, verwendet [!DNL Assets] einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in einem Posteingang in ZIP-Archive mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB unterteilt.
 
-![Download inbox](assets/download-inbox.png)
--->
+Der Posteingang zeigt den Verarbeitungsstatus jedes Archivs an. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
+
+![Posteingang herunterladen](assets/download-inbox.png)
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
