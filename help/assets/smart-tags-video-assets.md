@@ -2,9 +2,9 @@
 title: Tagging von Video-Assets mit Smart-Tags
 description: Experience Manager fügt Videos mit [!DNL Adobe Sensei] automatisch kontextbezogene und beschreibende Smart-Tags hinzu.
 feature: Smart-Tags, Tagging
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 99%
@@ -65,7 +65,7 @@ Die Suchergebnisse zeigen die Video-Assets basierend auf dem von Ihnen angegeben
 
 Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets mit gesuchten Keywords in den Metadaten und den Video-Assets, die mit den gesuchten Keywords mit Smart-Tags gekennzeichnet sind. Allerdings werden die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Keywords in den Smart-Tags entsprechen. Weitere Informationen finden Sie unter [Grundlegendes zu [!DNL Experience Manager] -Suchergebnissen mit Smart-Tags](smart-tags.md#understand-search).
 
-## Moderieren von Video-Smart-Tags {#moderate-video-smart-tags}
+## Moderieren von Video-Smart-Tags  {#moderate-video-smart-tags}
 
 [!DNL Adobe Experience Manager] ermöglicht es Ihnen, Smart-Tags zu folgenden Zwecken zu kuratieren:
 
