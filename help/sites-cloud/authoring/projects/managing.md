@@ -2,9 +2,9 @@
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -25,8 +25,11 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 
 * Einfaches Projekt
 * Medienprojekt
-* Projekt für Produkt-Fotoshooting
 * Übersetzungsprojekt
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-cloud/authoring/projects/overview.md) und [Workflows](/help/sites-cloud/authoring/projects/workflows.md).  So erstellen Sie ein neues Projekt:
 
@@ -135,8 +138,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 1. Öffnen Sie das Projekt in der **Projektekonsole** und suchen Sie die Kachel **Projektinformationen**.
 
    >[!NOTE]
-   >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
