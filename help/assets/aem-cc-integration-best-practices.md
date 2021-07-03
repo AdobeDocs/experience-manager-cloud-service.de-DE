@@ -4,9 +4,9 @@ description: Best Practices für die Integration einer Experience Manager-Implem
 contentOwner: AG
 mini-toc-levels: 1
 feature: Zusammenarbeit, Adobe Asset Link, Desktop App
-role: Architect,Business Practitioner,Administrator
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 99%
@@ -25,7 +25,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 >
 >Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt und nachfolgend nicht mehr behandelt. Adobe empfiehlt neuere Funktionen wie Adobe Asset Link oder AEM-Desktop-Programm, um kreativen Benutzern den Zugriff auf in AEM verwaltete Assets zu ermöglichen.
 
-## Kooperationsanforderungen von Kreativen, Marketern und DAM-Benutzern  {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Kooperationsanforderungen von Kreativen, Marketern und DAM-Benutzern {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Voraussetzungen | Anwendungsfall | Betroffene Oberflächen |
 |---|---|---|
@@ -47,7 +47,7 @@ Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte d
 
 Festlegen der zu verwendenden Funktion
 
-### Zuordnen von Nutzungsszenarien und Adobe-Lösungen  {#mapping-of-use-cases-and-adobe-solutions}
+### Zuordnen von Nutzungsszenarien und Adobe-Lösungen {#mapping-of-use-cases-and-adobe-solutions}
 
 | Anwendungsfall | Adobe Asset Link | AEM-Desktop-Programm | Bemerkungen oder alternative Methoden |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -130,7 +130,7 @@ Lizenzierte und in AEM gespeicherte Assets aus Adobe Stock werden breiter gefass
 
 Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marketing-/Branchen-Teams sowie für die Auswahl der besten Begleitfunktionen ist es wichtig zu verstehen, wann und warum Assets in DAM gespeichert werden.
 
-### Warum Assets in DAM gespeichert werden  {#why-assets-are-stored-in-dam}
+### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
 
 Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
 
@@ -140,7 +140,7 @@ Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Asp
 
 Häufig ist das Speichern aller Assets und Aktualisierungen nicht empfehlenswert. Beispiel: Wenn Aktualisierungen von schlechter Qualität sind und einen unverhältnismäßigen Ressourcenverbrauch aufweisen, sollten die Assets nicht in DAM gespeichert werden.
 
-#### Wann Assets in DAM gespeichert werden  {#when-assets-are-stored-in-dam}
+#### Wann Assets in DAM gespeichert werden {#when-assets-are-stored-in-dam}
 
 Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Beispielsweise vermeiden sie das Speichern von Assets in den folgenden Fällen:
 
@@ -154,7 +154,7 @@ In der Regel werden Assets der folgenden Klassen in DAM gespeichert:
 * Assets, die vorab vom Kreativ-Team ausgewählt wurden
 * Bestimmte Asset-Formate, die vom Marketing-Team verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien)
 
-#### Wann Aktualisierungen von Assets in DAM gespeichert werden  {#when-updates-to-assets-are-stored-in-dam}
+#### Wann Aktualisierungen von Assets in DAM gespeichert werden {#when-updates-to-assets-are-stored-in-dam}
 
 In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzer relevant sind. Dadurch wird sichergestellt, dass Benutzern (Marketing- und ähnliche Funktionen) in der DAM-Asset-Zeitleiste nur relevante Versionen angezeigt werden.
 
@@ -171,7 +171,7 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 AEM Assets unterstützt zwei Arten von Benutzern, die auf deren Zugriff auf die AEM Assets-Implementierung basieren. Normalerweise haben Benutzer innerhalb des Unternehmensnetzwerks (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks haben dagegen keinen direkten Zugriff. Der Benutzertyp bestimmt, welche Integrationen aus technischer Sicht verwendet werden können.
 
-#### Kreative Benutzer mit direktem Zugriff auf DAM  {#creative-users-with-direct-access-to-dam}
+#### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
 In der Regel haben interne Kreativ-Teams oder Agenturen/Kreativprofis, die an das interne Netzwerk angeschlossen sind, Zugriff auf die DAM-Instanz, einschließlich AEM-Anmeldung. Die AEM- und Netzwerkinfrastruktur kann eingerichtet werden, um externen Parteien – normalerweise vertrauenswürdige Organisationen wie Agenturen, die für einen Kunden arbeiten – direkten Zugriff zu ermöglichen, damit diese über das Netzwerk (z. B. über VPN oder IP-Zulassungsliste) auf AEM zugreifen können
 
