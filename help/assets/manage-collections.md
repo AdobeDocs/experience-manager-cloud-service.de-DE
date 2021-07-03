@@ -4,9 +4,9 @@ description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 feature: Sammlungen,Asset-Verwaltung
-role: Business Practitioner
+role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 99%
@@ -27,7 +27,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 * Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Aufrufen der Konsole „Sammlungen“ {#navigate-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“  {#navigate-the-collections-console}
 
 So öffnen Sie die Konsole **[!UICONTROL Sammlungen]**:
 
@@ -135,7 +135,7 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
    >
    >Der Anlagenmodus funktioniert nur für Felder, die mehrere Werte enthalten können. Für Felder, die nur einen einzigen Wert enthalten können, werden neue Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie den **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Suchen {#searching}
+## Suche {#searching}
 
 Die Suchfunktion für Sammlungen unterstützt sowohl das [Suchen nach Sammlungen](#search-collections) als auch das [Suchen nach Assets in Sammlungen](#search-within-collections).
 
@@ -223,7 +223,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge  {#saved-searches}
+## Gespeicherte Suchvorgänge {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
