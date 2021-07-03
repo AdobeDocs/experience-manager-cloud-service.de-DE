@@ -2,10 +2,10 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln  {#project-tiles}
+## Projektkacheln {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
@@ -156,12 +156,12 @@ Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben üb
 Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
-* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
+* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es fordert auch den Workflow Kopie anfordern , um Text anzufordern und zu überprüfen.
 * [Ein Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt  {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 
@@ -173,7 +173,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 | Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
-| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
+| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Aufnahmenliste sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für /etc/commerce; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
 | Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users`-Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um ein Projekt erstellen und Assets verschieben zu können) |
 
 >[!NOTE]
