@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1586'
 ht-degree: 18%
 
 ---
@@ -105,7 +105,9 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
    ![Festlegen der Standardansicht in den Anzeigeeinstellungen](/help/assets/assets/view-settings-for-defaults.png)
 
-* Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen.
+* Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen. Siehe [Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
 
