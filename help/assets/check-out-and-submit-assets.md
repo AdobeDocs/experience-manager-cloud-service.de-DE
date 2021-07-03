@@ -2,13 +2,13 @@
 title: Ein- und Auschecken von Dateien in [!DNL Assets]
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-feature: Asset-Verwaltung
-role: Business Practitioner
+feature: Asset-Management
+role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -45,7 +45,7 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
 Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
-1. Melden Sie sich bei [!DNL Assets] als Administrator an.
+1. Melden Sie sich als Administrator bei [!DNL Assets] an.
 1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] ein oder mehrere Assets aus, die von anderen Benutzern ausgecheckt wurden.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
