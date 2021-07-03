@@ -2,13 +2,13 @@
 title: Einführung in Assets as a [!DNL Cloud Service]
 description: Neue Funktionen in Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset-Verwaltung
+feature: Asset-Management
 role: Business Practitioner,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Im Folgenden werden die wichtigsten Vorteile von Assets as a [!DNL Cloud Service
 * **Neueste Software**: Immer auf dem neuesten Stand und immer aktualisiert. Allen Benutzern wird ausschließlich die neueste Software mit allen Patches, Features, Sicherheitsfunktionen und Fehlerbehebungen zur Verfügung gestellt. Entwickler und Integratoren verwenden die neuesten APIs, sodass Probleme im Zusammenhang mit der Unterstützung mehrerer Versionen vermieden werden.
 * **Immer online**: Keine Ausfallzeiten (0 DT), da die Instanz in einem Cluster mit Backups und Redundanz bereitgestellt wird. Auch Upgrades erfolgen ohne Ausfallzeiten.
 * **Durchgehende Überwachung**: Die Überwachung des Systems ist automatisiert. Integrierte Prüfungen und Trigger tragen zudem dazu bei, die Leistung, Verfügbarkeit und allgemeine Stabilität sicherzustellen.
-* **Unkomplizierte Bereitstellungen**: Vorgänge in Cloud-basierten AEM-Versionen sind umfassend automatisiert und erfordern keine Benutzerinteraktionen. Für automatisierte Bereitstellungen automatisiert die Komponente „Cloud Manager“ (CM) die Erstellung bereitstellbarer Docker-Images, die Ihren spezifischen Code enthalten.
+* **Unkomplizierte Bereitstellungen**: AEM in den Cloud-Vorgängen sind vollständig automatisiert, sodass keine manuellen Eingriffe erforderlich sind. Für automatisierte Bereitstellungen automatisiert die Komponente „Cloud Manager“ (CM) die Erstellung bereitstellbarer Docker-Images, die Ihren spezifischen Code enthalten.
 
 ## Neue Assets-Funktionen {#whats-new-assets}
 
