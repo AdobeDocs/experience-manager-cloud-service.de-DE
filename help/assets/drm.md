@@ -2,10 +2,10 @@
 title: Digital Rights Management in [!DNL Assets]
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in  [!DNL Experience Manager]  as a  [!DNL Cloud Service] verwalten.
 contentOwner: AG
-feature: Asset Management, DRM
+feature: Asset-Management,DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 98%
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # Digital Rights Management für Assets {#digital-rights-management-in-assets}
 
-Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da [!DNL Adobe Experience Manager Assets] vollständig mit der [!DNL Experience Manager]-Plattform integriert ist, können Sie Asset-Ablaufinformationen und -Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
+Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da [!DNL Adobe Experience Manager Assets] vollständig in die [!DNL Experience Manager]-Plattform integriert ist, können Sie Asset-Ablaufinformationen und -Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
 
 ## Asset-Ablauf {#asset-expiration}
 
@@ -36,7 +36,7 @@ Sie können den Ablaufstatus eines Assets an den folgenden Stellen einsehen:
 
 Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Teil-Assets suchen.
 
-1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suchen]** , um das Suchfeld [!DNL Experience Manager] anzuzeigen.
+1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suchen]**, um das [!DNL Experience Manager]-Suchfeld anzuzeigen.
 
 1. Wählen Sie bei in das Omnisearch-Feld gesetztem Cursor die Eingabetaste `Enter` aus, um die Seite mit den Suchergebnissen anzuzeigen.
 
@@ -72,7 +72,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Asset-Zustände {#asset-states}
+## Asset-Status {#asset-states}
 
 Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhängig vom aktuellen Status eines bestimmten Assets zeigt die zugehörige Kartenansicht eine Beschreibung des Zustands an, z. B. „Abgelaufen“, „Veröffentlicht“, „Genehmigt“, „Abgelehnt“ usw.
 
