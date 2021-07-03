@@ -2,13 +2,13 @@
 title: Verteilen und Freigeben von Assets, Ordnern und Sammlungen
 description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigeben als Link, Herunterladen und über [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
-feature: Asset-Management, Zusammenarbeit, Asset-Verteilung
-role: Business Practitioner,Administrator
+feature: Asset-Management,Zusammenarbeit,Asset-Verteilung
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '754'
+ht-degree: 95%
 
 ---
 
@@ -172,7 +172,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Aktivieren von Desktop-Aktionen für die Verwendung mit dem Desktop-Programm {#desktop-actions}
 
-Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es in Ihrem Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der  [!DNL Assets] -Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
+Über die [!DNL Assets]-Benutzeroberfläche in einem Browser können Sie zu den Asset-Speicherorten navigieren oder das Asset auschecken und öffnen, um es im Desktop-Programm zu bearbeiten. Diese Optionen werden als Desktop-Aktionen bezeichnet. Wie Sie sie aktivieren, erfahren Sie unter [Aktivieren von Desktop-Aktionen in der  [!DNL Assets] -Web-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2).
 
 ![Aktivieren von Desktop-Aktionen, die beim Arbeiten mit dem Desktop-Programm als Verknüpfung verwendet werden](assets/enable_desktop_actions.png)
 
