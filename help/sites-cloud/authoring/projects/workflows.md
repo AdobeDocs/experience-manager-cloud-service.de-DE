@@ -2,9 +2,9 @@
 title: Arbeiten mit Projekt-Workflows
 description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,6 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 |  | **Einfaches Projekt** | **Medienprojekt** | **Übersetzungsprojekt** |
 |---|:-:|:-:|:-:|
 | Kopie anfordern |  | x |  |
-| Produkt-Fotoshooting |  | x |  |
 | Projekt-Genehmigung | x |  |  |
 | Launch anfordern | x |  |  |
 | Einstiegsseite anfordern | x |  |  |
@@ -48,7 +47,7 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow „Kopie anfordern“  {#request-copy-workflow}
+## Workflow „Kopie anfordern“ {#request-copy-workflow}
 
 Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
 
@@ -74,7 +73,7 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
 
    ![Bestätigung anfordern hinzugefügt](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
-## Workflow „Launch anfordern“ {#request-launch-workflow}
+## Workflow „Launch anfordern“  {#request-launch-workflow}
 
 Mit diesem Workflow können Sie einen Launch anfordern.
 
