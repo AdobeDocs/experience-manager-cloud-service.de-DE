@@ -2,19 +2,19 @@
 title: Assets-HTTP-API
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets-HTTP-API,APIs
-role: Developer,Architect,Administrator
+feature: Assets-HTTP-API, APIs
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]-HTTP-API {#assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -27,21 +27,21 @@ Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-
 
 >[!NOTE]
 >
->Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für [!DNL Experience Manager] als [!DNL Cloud Service]-Bereitstellung nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload).
+>Alle API-Aufrufe zum Hochladen oder Aktualisieren von Assets oder Binärdateien im Allgemeinen (wie Ausgabedarstellungen) werden für die Implementierung von [!DNL Experience Manager] as a [!DNL Cloud Service] nicht mehr unterstützt. Verwenden Sie zum Hochladen von Binärdateien stattdessen [direkte binäre Upload-APIs](developer-reference-material-apis.md#asset-upload).
 
 ## Inhaltsfragmente {#content-fragments}
 
-Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Sie kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
+Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist ein spezieller Asset-Typ. Es kann für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden. Da es einige Unterschiede zu `standard`-Assets (z. B. Bildern oder Dokumenten) gibt, gelten einige zusätzliche Regeln für die Verarbeitung von Inhaltsfragmenten.
 
 Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in der [!DNL Experience Manager Assets] -HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Datenmodell {#data-model}
 
-Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets). Außerdem werden detailliertere Elemente für die benutzerdefinierten Datenmodelle bereitgestellt, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
+Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets). Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments).
 
 ### Ordner {#folders}
 
-Ordner ähneln Verzeichnissen wie in herkömmlichen Dateisystemen. Ordner können nur Assets, nur Ordner oder Ordner und Assets enthalten. Ordner enthalten folgende Komponenten:
+Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Ordner können nur Assets, nur Ordner oder Ordner und Assets enthalten. Ordner enthalten folgende Komponenten:
 
 **Entitäten**: Zu den Entitäten eines Ordners zählen die untergeordneten Elemente, z. B. die Ordner und Assets.
 
@@ -65,8 +65,8 @@ Ordner ähneln Verzeichnissen wie in herkömmlichen Dateisystemen. Ordner könne
 In [!DNL Experience Manager] enthalten Assets die folgenden Elemente:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Ursprünglich wurde die Binärdatei des Assets hochgeladen.
-* Mehrere Ausgabedarstellungen wie konfiguriert. Dabei kann es sich um Bilder unterschiedlicher Größe, Videos unterschiedlicher Kodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien handeln.
+* Die ursprünglich hochgeladene Binärdatei des Assets.
+* Mehrere Ausgabedarstellungen, wie konfiguriert. Dabei kann es sich um Bilder unterschiedlicher Größe, Videos unterschiedlicher Kodierungen oder extrahierte Seiten aus PDF- oder [!DNL Adobe InDesign]-Dateien handeln.
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
@@ -95,7 +95,7 @@ Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
 >[!NOTE]
 >
->Zur besseren Lesbarkeit werden in den folgenden Beispielen die vollständigen cURL-Anmerkungen weggelassen. Die -Notation korreliert mit [Resty](https://github.com/micha/resty) , dem Skript-Wrapper für cURL.
+>Zur besseren Lesbarkeit der folgenden Beispiele wird die vollständige cURL-Notation weggelassen. Die Notation korreliert mit [Resty](https://github.com/micha/resty), einem Skript-Wrapper für cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -122,14 +122,14 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 
 ## Erstellen von Ordnern {#create-a-folder}
 
-Erstellt eine `sling`: `OrderedFolder` am angegebenen Pfad. Wenn `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Die Anfrage akzeptiert eine der folgenden Optionen:
+Erstellt einen `sling`: `OrderedFolder` im festgelegten Pfad. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameternamen als Knotennamen. Die Anfrage akzeptiert eine der folgenden Optionen:
 
 * Eine Siren-Darstellung des neuen Ordners
-* Ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form`- `data`. Diese sind nützlich, um einen Ordner direkt aus einem HTML-Formular zu erstellen.
+* Ein Satz von Name-Wert-Paaren, kodiert als `application/www-form-urlencoded` oder `multipart`/ `form` – `data`. Diese sind nützlich, um einen Ordner direkt aus einem HTML-Formular zu erstellen.
 
-Außerdem können Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
+Zusätzlich können die Eigenschaften des Ordners als URL-Abfrageparameter angegeben werden.
 
-Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schlägt der API-Aufruf mit einem Antwort-Code `500` fehl. Ein Aufruf gibt einen Antwort-Code `409` zurück, wenn der Ordner vorhanden ist.
+Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schlägt der API-Aufruf mit einem Antwort-Code `500` fehl. Ein Aufruf gibt einen Antwort-Code `409` zurück, wenn der Ordner bereits vorhanden ist.
 
 **Parameter**: `name` ist der Ordnername.
 
@@ -141,11 +141,11 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 **Antwort-Codes**: Die Antwort-Codes sind:
 
 * 201 – ERSTELLT – bei erfolgreicher Erstellung.
-* 409 - KONFLIKT - wenn der Ordner vorhanden ist.
+* 409 – KONFLIKT – wenn der Ordner vorhanden ist.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Erstellen von Assets {#create-an-asset}
+## Erstellen von Assets       {#create-an-asset}
 
 Informationen zum Erstellen eines Assets finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Mit der HTTP-API kann kein Asset erstellt werden.
 
@@ -166,9 +166,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
+## Erstellen von Asset-Ausgabeformaten {#create-an-asset-rendition}
 
-Erstellen Sie eine Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
+Erstellt eine neue Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
 **Parameter**: Die Parameter sind `name` für den Namen der Ausgabedarstellung und `file` als ein Dateiverweis.
 
@@ -184,7 +184,7 @@ Erstellen Sie eine Ausgabedarstellung für ein Asset. Wenn der Name nicht als An
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Aktualisieren von Asset-Ausgabedarstellungen {#update-an-asset-rendition}
+## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
 
 Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärdaten.
 
@@ -199,7 +199,7 @@ Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärda
 
 ## Hinzufügen eines Kommentars zu einem Asset {#create-an-asset-comment}
 
-**Parameter**: Die Parameter sind  `message` für den Nachrichtentext des Kommentars und  `annotationData` für die Anmerkungsdaten im JSON-Format bestimmt.
+**Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format.
 
 **Anfrage**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
@@ -237,7 +237,7 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 
 * `X-Destination` – ein neuer Ziel-URI im Bereich der API-Lösung, in den die Ressource kopiert werden soll.
 * `X-Depth` – entweder `infinity` oder `0`. Mit `0` werden nur die Ressource und ihre Eigenschaften kopiert und nicht ihre untergeordneten Elemente.
-* `X-Overwrite` - Verwenden Sie entweder  `T` zum erzwungenen Löschen vorhandener Ressourcen oder  `F` um zu verhindern, dass eine vorhandene Ressource überschrieben wird.
+* `X-Overwrite` – Verwenden Sie entweder `T`, um das Löschen einer vorhandenen Ressource zu erzwingen, oder `F`, um das Überschreiben einer vorhandenen Ressource zu verhindern.
 
 **Anfrage**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -268,9 +268,9 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 * Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
 
-* Die Assets-HTTP-API gibt die vollständigen Metadaten nicht zurück. Die Namespaces sind fest codiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
+* Die Assets-HTTP-API gibt nicht die vollständigen Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.
 
-* Einige Eigenschaften des Ordners oder Assets werden einem anderen Präfix zugeordnet, wenn sie mit APIs aktualisiert werden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
+* Einige Eigenschaften des Ordners oder Assets werden einem anderen Präfix zugeordnet, wenn sie mit APIs aktualisiert wurden. Das `jcr`-Präfix von `jcr:title`, `jcr:description` und `jcr:language` werden mit dem `dc`-Präfix ersetzt. Daher enthalten im zurückgegebenen JSON `dc:title` und `dc:description` die Werte aus `jcr:title` bzw. `jcr:description`.
 
 >[!MORELIKETHIS]
 >
