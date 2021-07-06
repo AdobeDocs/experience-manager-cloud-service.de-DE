@@ -5,10 +5,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 96%
+source-wordcount: '885'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
    + [Konfigurieren Ihrer CI/CD Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
-      + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Übersicht](/help/implementing/cloud-manager/overview-test-results.md)
       + [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
       + [Benutzerspezifische Regeln für Code-Qualität](cloud-manager/custom-code-quality-rules.md)
       + [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
@@ -61,7 +61,7 @@ ht-degree: 96%
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
    + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Einrichten der Enterprise-Team-Entwicklung für AEM als Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [Einrichten der Enterprise-Team-Entwicklung für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
    + [Struktur von AEM-Projekten](developing/introduction/aem-project-content-package-structure.md)
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)
@@ -70,7 +70,7 @@ ht-degree: 96%
    + [Protokollierung](developing/introduction/logging.md)
    + [Konfigurationen und der Konfigurations-Browser](developing/introduction/configurations.md)
    + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service-API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [API-Referenzmaterial](/help/implementing/developing/reference-materials.md)
    + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Headful und Headless in AEM](developing/headful-headless.md)
    + Full-Stack-AEM-Entwicklung {#full-stack}
@@ -103,10 +103,9 @@ ht-degree: 96%
          + [Implementieren einer benutzerdefinierten Auswertung von Eigenschaften](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
-      + [Java-API-Richtlinien](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Headless-Experience-Management {#headless}
       + [Headless und AEM](developing/headless/introduction.md)
-      + [Headless-Entwickler-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [Headless-Entwickler-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + Anleitungen für den Einstieg {#getting-started}
          + [Einführung](developing/headless/getting-started/introduction.md)
          + [Erstellen einer Konfiguration](developing/headless/getting-started/create-configuration.md)
@@ -147,7 +146,7 @@ ht-degree: 96%
       + [Modell-Routing](developing/hybrid/routing.md)
       + [Die RemotePage-Komponente](developing/hybrid/remote-page.md)
       + [Bearbeiten einer externen SPA in AEM](developing/hybrid/editing-external-spa.md)
-      + [Composite-Komponenten in SPA](developing/hybrid/composite-components.md)
+      + [Zusammengesetzte Komponenten in SPA](developing/hybrid/composite-components.md)
       + [Server-seitiges Rendering](developing/hybrid/ssr.md)
       + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Launch-Integration](developing/hybrid/launch-integration.md)
