@@ -1,11 +1,11 @@
 ---
 title: SPA-Referenzmaterial
-description: Übersicht über die Single-Page-Applikation-API-Referenzen und Quell-Code-Repositorys
+description: Übersicht über die Single-Page-Application-API-Referenzen und Quell-Code-Repositorys
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 92%
 
 ---
 
@@ -29,3 +29,7 @@ Im Folgenden sind die Open-Source-Repositorys auf GitHub für die SPA Bibliothek
 * [Bearbeitbare React-Komponenten](https://github.com/adobe/aem-react-editable-components)
 * [Bearbeitbare Angular-Komponenten](https://github.com/adobe/aem-angular-editable-components)
 * [SPA-Projekt-Core](https://github.com/adobe/aem-spa-project-core)
+
+>[!TIP]
+>
+>Im Dokument zu API-Referenzmaterial finden Sie alle AEM-bezogenen APIs.
