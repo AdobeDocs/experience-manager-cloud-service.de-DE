@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 
 #### Best Practices-Bewertung {#best-practices-assessment}
 
-Diese Karte bietet eine
+Die Option &quot;Best Practices-Bewertung&quot;bietet eine Bewertung Ihrer aktuellen AEM und bietet Anleitungen zu den nächsten Schritten zur Übernahme AEM Best Practices. Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
+
+* Übersicht über AEM
+* Benutzerdefinierte Komponenten und Vorlagen
+* Zusätzliche Ergebnisse
+* Langsame Abfragen
+* Wartungsaufgaben
 
 #### Bewertung der Migrationskomplexität {#migration-complexity-assessment}
 
-Diese Karte bietet
+Die Option zur Bewertung der Migrationskomplexität bietet eine Bewertung der Komplexität bei der Migration der bestehenden AEM-Implementierung zu AEM als Cloud Service. Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
 
+* Übersicht über AEM
+* Bewertung
+* Überlegungen zur Inhaltsmigration
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Verwenden der Planungs- und Einrichtungskarte {#planning-setup}
 
@@ -119,10 +130,8 @@ In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 
 1. Es wird ein Inhaltskarussell mit relevanten Informationen für diese Journey-Phase der Migration angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Wie geht es weiter {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie jetzt den nächsten Schritt mithilfe der Implementierungsphase überprüfen.
-
-
