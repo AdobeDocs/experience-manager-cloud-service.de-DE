@@ -4,9 +4,9 @@ description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um zur Bereitschaftsphase zu navigieren:
    >[!NOTE]
    >Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) .
 
-## Verwenden der Best Practices-Analysekarte {#best-practices-analysis}
+## Verwenden der Analyse-Karte mit Best Practices {#best-practices-analysis}
 
 Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwenden:
 
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
    >[!NOTE]
    >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
 
-### Überprüfen des Analyseberichts zu Best Practices {#analysis-report}
+### Überprüfen des Berichts zur Best Practices-Analyse {#analysis-report}
 
 Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report an:
 
@@ -79,17 +79,17 @@ Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report
 
 #### Berichteigenschaften {#report-properties}
 
-Diese Karte enthält Informationen zu Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum und Adobe Experience Manager (AEM)-Details.
+Die Karte **Berichteigenschaften** enthält Informationen zu Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum und Adobe Experience Manager (AEM)-Details.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
-#### Berichtsübersicht {#report-overview}
+#### Berichtübersicht {#report-overview}
 
-Diese Karte liefert die Ergebnisse des Berichts
+Diese Karte **Berichtsübersicht** enthält die Ergebnisse des Berichts, wie in der folgenden Abbildung dargestellt.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Wenn Sie auf diesen Bericht klicken, wird der Tab **Bericht** geöffnet, wie in der folgenden Abbildung dargestellt.
+Wenn Sie auf diesen Bericht klicken, wird der Tab **Bericht** geöffnet.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -100,7 +100,7 @@ Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 >[!NOTE]
 >Unter [Interpretieren des Berichts &quot;Best Practices Analyzer&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) erfahren Sie mehr über die Kategorien von Befunden und die Wichtigkeitsstufen.
 
-#### Bewertung bewährter Verfahren {#best-practices-assessment}
+#### Best Practices-Bewertung {#best-practices-assessment}
 
 Diese Karte bietet eine
 
@@ -109,7 +109,7 @@ Diese Karte bietet eine
 Diese Karte bietet
 
 
-## Verwenden der Planungs- und Setup-Karte {#planning-setup}
+## Verwenden der Planungs- und Einrichtungskarte {#planning-setup}
 
 In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 
