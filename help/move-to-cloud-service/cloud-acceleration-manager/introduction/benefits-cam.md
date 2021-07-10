@@ -4,9 +4,9 @@ description: Auf dieser Seite werden die wichtigsten Vorteile der Verwendung von
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -21,3 +21,7 @@ Die wichtigsten Vorteile von Cloud Acceleration Manager sind:
 * Bietet eine Bewertung in einem einfach zu verwendenden Format.
 * Führt die Journey der Transition durch und verwaltet sie.
 * Bietet Best Practices, relevante Hilfe und Zugriff auf Tools, um die Migrationszeit zu minimieren.
+
+## Nächste Schritte {#whats-next}
+
+Sobald Sie wissen, was Cloud Acceleration Manager ist, können Sie Cloud Acceleration Manager verwenden und Erste Schritte mit Cloud Acceleration Manager durchführen.
