@@ -4,10 +4,10 @@ description: Diese Seite bietet einen Überblick über die Implementierungsphase
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ In diesem Abschnitt erhalten Sie Informationen zur Karte der Aktivität &quot;Lo
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
-## Verwenden der Code-Refaktorierungs-Karte {#code-refactoring}
+## Verwenden der Code-Refaktorierungskarte {#code-refactoring}
 
 Die Karte der Code-Refaktorierungs-Aktivität enthält alle relevanten Informationen und hebt die Code-Refaktorierungsbereiche hervor, die Sie beim Wechsel zu AEM as a Cloud Service überprüfen müssen.
 
@@ -63,7 +63,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Karte für die Code-Refaktorierung
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
-## Verwenden der AEM als Cloud Service-Bereitstellungskarte {#aem-as-a-cloud-service-deployment}
+## AEM as a Cloud Service Deployment Card verwenden {#aem-as-a-cloud-service-deployment}
 
 AEM as a Cloud Service Deployment-Karte enthält alle relevanten Inhalte, die Ihnen bei der Bereitstellung Ihres Codes für AEM als Cloud Service helfen.
 
@@ -75,10 +75,10 @@ In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte AEM as a Cloud Se
 
 1. Es wird ein Inhaltskarussell mit relevanten Informationen für diese Journey-Phase der Migration angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## Verwenden der Content Transfer-Karte {#content-transfer}
+## Verwenden der Content Transfer Card {#content-transfer}
 
 Die Karte für die Aktivität &quot;Inhaltstransfer&quot;enthält Anleitungen und Überlegungen, die bei Verwendung des Content Transfer Tool überprüft werden sollten, um Inhalte von Ihrer aktuellen AEM-Instanz in AEM als Cloud Service zu verschieben.
 
@@ -90,7 +90,7 @@ In diesem Abschnitt erfahren Sie mehr über die Karte der Aktivität &quot;Inhal
 
 1. Es wird ein Inhaltskarussell mit relevanten Informationen für diese Journey-Phase der Migration angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) , bevor Sie das Content Transfer Tool verwenden.
