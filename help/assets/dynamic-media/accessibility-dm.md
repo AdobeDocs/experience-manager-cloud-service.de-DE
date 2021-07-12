@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Barrierefreiheit in Dynamic Media und Dynam
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Erreichbarkeit
-role: Administrator,Business Practitioner
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+feature: Barrierefreiheit
+role: Admin,User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 95%
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 Dynamic Media unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
 
-## Unterstützung der Tastaturbedienung in Dynamic Media  {#keyboard-support-in-dm}
+## Unterstützung der Tastaturbedienung in Dynamic Media   {#keyboard-support-in-dm}
 
 Da Dynamic Media ein Plug-in für [!DNL Experience Manager Assets] ist, ist der Großteil des Tastatursteuerungsverhaltens mit dem von [!DNL Experience Manager Assets] identisch. Beispielsweise verfügt die Schaltfläche `Cancel` in Dynamic Media über dieselbe Fokushervorhebung wie in [!DNL Experience Manager Assets]. Sie reagiert auch auf den `Spacebar`-Schlüssel wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
