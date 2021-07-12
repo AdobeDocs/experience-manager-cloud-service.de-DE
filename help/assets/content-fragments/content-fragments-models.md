@@ -2,9 +2,9 @@
 title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihren Headless Content dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 feature: Inhaltsfragmente
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 90%
@@ -373,7 +373,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >[!NOTE]
    Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells  {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
