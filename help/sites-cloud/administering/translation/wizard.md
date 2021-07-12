@@ -2,16 +2,16 @@
 title: Assistent „Sprachkopie erstellen“
 description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in AEM.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
-# Assistent „Sprachkopie erstellen“  {#language-copy-wizard}
+# Assistent „Sprachkopie erstellen“ {#language-copy-wizard}
 
 Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Verwendung einer mehrsprachigen Inhaltsstruktur. Mit dem Assistenten erstellen Sie ganz einfach und schnell eine Sprachkopie.
 
