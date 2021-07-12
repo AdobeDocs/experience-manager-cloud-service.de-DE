@@ -2,16 +2,16 @@
 title: Gemischte Mediensets
 description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in Dynamic Media verwenden..
 feature: Gemischte Mediensets
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
-# Gemischte Mediensets {#mixed-media-sets}
+# Gemischte Mediensets{#mixed-media-sets}
 
 Mit gemischten Mediensets können Sie eine Mischung aus Bildern, Bildsets, Rotationssets und Videos in einer Präsentation bereitstellen.
 
@@ -73,7 +73,7 @@ Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. 
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum Set für gemischte Medien hinzufügen möchten, müssen Sie auch diese erstellen.
 
-## Erstellen von gemischten Mediensets  {#creating-mixed-media-sets}
+## Erstellen von gemischten Mediensets {#creating-mixed-media-sets}
 
 Sie können Ihrem gemischten Medienset Bilder, Bildsets, Rotationssets und Videos hinzufügen. Achten Sie darauf, dass die Dateien, Bildsets und Rotationssets veröffentlicht werden können, bevor Sie diese dem gemischten Medienset hinzufügen.
 
@@ -115,7 +115,7 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 1. Um eine Vorgabe anzuwenden, tippen Sie in der rechten oberen Ecke auf **[!UICONTROL Vorgabe]** und wählen Sie eine Vorgabe aus, die auf die Assets angewendet werden soll.
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Set für gemischte Medien wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Bearbeiten von gemischten Mediensets  {#editing-mixed-media-sets}
+## Bearbeiten von gemischten Mediensets {#editing-mixed-media-sets}
 
 Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben für Assets in gemischten Mediensets ausführen, [genauso wie bei allen anderen Assets in Assets](/help/assets/manage-digital-assets.md). Sie können außerdem die folgenden Aktionen in gemischten Mediensets ausführen:
 
@@ -165,7 +165,7 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
 Weitere Informationen zum Aufrufen einer Vorschau von Sets für gemischte Medien finden Sie in [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von gemischten Mediensets  {#publishing-mixed-media-sets}
+## Veröffentlichen von gemischten Mediensets {#publishing-mixed-media-sets}
 
 Weitere Informationen zum Veröffentlichen von Sets für gemischte Medien finden Sie in [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
