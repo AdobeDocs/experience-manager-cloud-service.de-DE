@@ -2,9 +2,9 @@
 title: Markdown
 description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Inhalten zu ermöglichen.
 feature: Inhaltsfragmente
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 90%
