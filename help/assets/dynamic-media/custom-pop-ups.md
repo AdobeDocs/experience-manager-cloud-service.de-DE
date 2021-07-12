@@ -2,9 +2,9 @@
 title: Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht
 description: '"Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierte Inhalte für die Anzeige im Popup-Fenster Windows® Trigger haben."'
 feature: Interaktive Bilder, interaktive Videos, Karussellbanner
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 80%
