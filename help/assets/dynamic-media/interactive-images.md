@@ -2,16 +2,16 @@
 title: Interaktive Bilder
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten.
 feature: Interaktive Bilder
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
-# Interaktive Bilder {#interactive-images}
+# Interaktive Bilder{#interactive-images}
 
 Sie können aus statischen Bildern ganz einfach ansprechende Erlebnisse für Kunden machen, indem Sie Hotspots mit Shopping-Funktion auf ein Bild ziehen und dort ablegen. Hotspots mit Shopping-Funktion kombinieren zusätzliche Informationen über ein Produkt oder eine Dienstleistung mit einer direkten POS-Funktion, wie „In den Einkaufswagen legen“ oder „Kaufen“. Kunden können auf diese Hotspots tippen und so eine direkte Verbindung mit dem Produkt oder Service herstellen, es zum Warenkorb hinzufügen oder eine Webseite aufrufen. Direkte Erlebnisse wie diese erhöhen Kundeninteraktionen und Konversionen auf Ihrer Website.
 
@@ -200,7 +200,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der L
 
    Sie sind nun bereit, ein Bildbanner hochzuladen.
 
-## Hochladen eines Bildbanners  {#uploading-an-image-banner}
+## Hochladen eines Bildbanners {#uploading-an-image-banner}
 
 Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem nächsten Schritt fort: [Hinzufügen von Hotspots zu einem Bildbanner](#adding-hotspots-to-an-image-banner).
 
@@ -212,7 +212,7 @@ Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem n
 
    Sie können jetzt dem Bildbanner Hotspots hinzuzufügen. Anweisungen dazu finden Sie in der folgenden Aufgabe.
 
-## Hinzufügen von Hotspots zu einem Bildbanner  {#adding-hotspots-to-an-image-banner}
+## Hinzufügen von Hotspots zu einem Bildbanner {#adding-hotspots-to-an-image-banner}
 
 Sie können einem Bildbanner Hotspots hinzufügen, indem Sie den Editor auf der Seite „Hotspot-Verwaltung“ verwenden.
 
@@ -302,7 +302,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
    >[!NOTE]
    Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
-### (Optional) Anzeigen einer Vorschau für interaktive Bilder  {#optional-previewing-interactive-images}
+### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
 Mit der Vorschau können Sie eine Darstellung anzeigen, wie Ihr interaktives Bild für Kunden angezeigt wird. Mit der Vorschau können Sie auch die Hotspots des Bildes testen, um sicherzustellen, dass sie wie erwartet funktionieren.
 
@@ -491,6 +491,6 @@ Im Folgenden finden Sie den vollständigen Quell-Code:
 
 Die [endgültige Demo-Website mit dem vollständig integrierten interaktiven Bild](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
-## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups {#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popup-Fenster {#using-quickviews-to-create-custom-pop-ups}
 
-Siehe [Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
+Siehe [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popup-Fenster](/help/assets/dynamic-media/custom-pop-ups.md).
