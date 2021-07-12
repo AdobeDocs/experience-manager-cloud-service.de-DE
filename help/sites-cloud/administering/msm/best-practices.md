@@ -2,12 +2,12 @@
 title: Best Practices für MSM
 description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM-Multi-Site-Manager (MSM), die von Technik- und Beratungsteams von Adobe zusammengestellt wurden.
 feature: Multi-Site-Manager
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 
 >[!NOTE]
 >
-> Beachten Sie, dass CUGs auf der Registerkarte &quot;Berechtigungen&quot;nicht für Live Copies aus Blueprints bereitgestellt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+> Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
 ## Komponenten- und Containersynchronisierung {#components-and-container-synchronization}
 
@@ -79,13 +79,13 @@ Vermeiden Sie Folgendes:
 
 MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen:
 
-Beachten Sie beim Erstellen von Sprach-Mastern Folgendes:
+Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
 
 * MSM bietet zwar selbst **keine Inhaltsübersetzung**, kann jedoch mit entsprechenden Übersetzungs-Connectors von Dritten integriert werden. Beachten Sie Folgendes:
    * Mit MSM unterbinden Sie die Vererbung auf Seiten- und/oder Komponentenebene. So verhindern Sie, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einem Blueprint überschrieben wird.
       * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
-      * Eine Alternative für die Erstellung und Übersetzung von Sprach-Mastern ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
+      * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 
 Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachige Websites](/help/sites-cloud/administering/translation/overview.md) und in den [Best Practices zur Übersetzung.](/help/sites-cloud/administering/translation/best-practices.md)
 
