@@ -2,17 +2,17 @@
 title: Veröffentlichen von Dynamic Media-Assets
 description: Informationen zum Veröffentlichen von Dynamic Media-Assets.
 contentOwner: Rick Brough
-feature: Asset-Verwaltung
-role: Business Practitioner
+feature: Asset-Management
+role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 56%
+ht-degree: 67%
 
 ---
 
-# Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
+# Veröffentlichen von Dynamic Media-Assets {#publishing-dynamic-media-assets}
 
 Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nach dem Veröffentlichen Ihrer Dynamic Media-Assets können diese auf einer Web-Seite über eine URL eingebunden oder mittels Code eingebettet werden.
 
@@ -22,7 +22,7 @@ In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter
 
 >[!NOTE]
 >
->Wenn ein Asset bereits veröffentlicht ist, verschieben Sie das Asset in einen anderen Ordner und veröffentlichen Sie es von seinem neuen Speicherort aus erneut. Der ursprünglich veröffentlichte Asset-Speicherort ist weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset geht jedoch an Experience Manager verloren und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, die Veröffentlichung von Assets zuerst rückgängig zu machen, bevor Sie sie in einen anderen Ordner verschieben.
+>Wenn ein Asset bereits veröffentlicht ist, verschieben Sie das Asset in einen anderen Ordner und veröffentlichen Sie es von seinem neuen Speicherort aus erneut. Der ursprünglich veröffentlichte Asset-Speicherort ist weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset ist allerdings für Experience Manager nicht mehr zugänglich. Daher kann dessen Veröffentlichung nicht rückgängig gemacht werden. Deshalb wird empfohlen, die Veröffentlichung von Assets zunächst rückgängig zu machen, bevor Sie sie in einen anderen Ordner verschieben.
 
 Wenn Sie Video-Assets sofort nach der Kodierung veröffentlichen möchten, stellen Sie sicher, dass die Kodierung abgeschlossen ist. Wenn Videos kodiert werden, informiert das System Sie darüber, dass ein Videoverarbeitungs-Workflow ausgeführt wird. Wenn die Videokodierung abgeschlossen ist, können Sie eine Vorschau der Videoausgabedarstellungen anzeigen. Jetzt können Sie die Videos veröffentlichen, ohne dass Publishing-Fehler auftreten.
 
