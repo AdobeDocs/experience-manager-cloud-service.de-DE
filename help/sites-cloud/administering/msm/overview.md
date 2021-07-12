@@ -2,16 +2,16 @@
 title: Wiederverwenden von Inhalten – Multi-Site-Manager und Live Copy
 description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen des Multi-Site-Manager.
 feature: Multi-Site-Manager
-role: Administrator
+role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 100%
 
 ---
 
-# Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy {#multi-site-manager-and-live-copy}
+# Wiederverwenden von Inhalten: Multi Site Manager und Live Copy {#multi-site-manager-and-live-copy}
 
 Multi-Site-Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen.
 
@@ -30,7 +30,7 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 * [MSM-Rollout-Konflikte](rollout-conflicts.md)
 * [Best Practices für MSM](best-practices.md)
 
-## Mögliche Szenarien  {#possible-scenarios}
+## Mögliche Szenarien   {#possible-scenarios}
 
 MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispielsweise folgendermaßen aussehen:
 
@@ -40,7 +40,7 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
 
    So wurde zum Beispiel der englische Abschnitt des [WKND-Beispieltutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md) für Kunden in den USA erstellt. Die meisten Inhalte auf dieser Site können auch für andere WKND-Websites verwendet werden, die sich an englischsprachige Kunden aus verschiedenen Ländern und Kulturkreisen richten. Der Kerninhalt bleibt auf allen Sites gleich, wobei regionale Anpassungen vorgenommen werden können.
 
-   Die folgende Struktur kann für Sites in den Vereinigten Staaten und Kanada verwendet werden. Beachten Sie, dass der `language-masters`-Knoten nicht nur die Masterkopie des englischen Inhalts, sondern auch die anderer Sprachinhalte beibehält. Diese Inhalte können als Grundlage für weitere regionale Sprachinhalte neben Englisch verwendet werden.
+   Die folgende Struktur kann für Sites in den Vereinigten Staaten und Kanada verwendet werden. Beachten Sie, dass der `language-masters`-Knoten nicht nur die primäre Kopie des englischen Inhalts, sondern auch die anderer Sprachinhalte beibehält. Diese Inhalte können als Grundlage für weitere regionale Sprachinhalte neben Englisch verwendet werden.
 
    ```xml
    /content
@@ -184,7 +184,7 @@ Eine MSM-Live Copy ist eine Kopie spezifischer Site-Inhalte, die eine Live-Bezi
    * Tief: die Seite mit ihren untergeordneten Seiten
 * Synchronisierungsregeln, die als Rollout-Konfigurationen bezeichnet werden, bestimmen, welche Eigenschaften synchronisiert werden und wann die Synchronisierung durchgeführt wird.
 
-Im vorherigen Beispiel ist `/content/wknd/language-masters/en` die globale Master-Site in englischer Sprache. Zur Wiederverwendung des Inhalts dieser Site werden MSM-Live Copies erstellt:
+Im vorherigen Beispiel ist `/content/wknd/language-masters/en` die globale primäre Site in englischer Sprache. Zur Wiederverwendung des Inhalts dieser Site werden MSM-Live Copies erstellt:
 
 * Der Inhalt unter `/content/wknd/language-masters/en` ist die Quelle.
 * Der Inhalt unter `/content/wknd/language-masters/en` wird unter die Knoten `/content/wknd/us/en/` und `/content/wknd/ca/en` kopiert. Dabei handelt es sich um die Live Copies.
