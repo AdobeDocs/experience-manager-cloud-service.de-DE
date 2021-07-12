@@ -2,9 +2,9 @@
 title: Herstellen einer Verbindung mit Microsoft Translator
 description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden können, um Ihren Übersetzungs-Workflow zu automatisieren.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
@@ -48,7 +48,7 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 1. Tippen oder klicken Sie auf **Verbinden**, um die Verbindung zu überprüfen.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
-## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“ {#upgrading-the-microsoft-translator-trial-license-configuration}
+## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“  {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
@@ -66,7 +66,7 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 1. Tippen oder klicken Sie auf **Bearbeiten**.
 1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
 
-## Aktivieren der Übersetzungs-Service-Konfigurationen  {#activating-the-translator-service-configurations}
+## Aktivieren der Übersetzungs-Service-Konfigurationen   {#activating-the-translator-service-configurations}
 
 Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Veröffentlichen eines Baums](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, die die Microsoft Translator-Konfigurationen speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
