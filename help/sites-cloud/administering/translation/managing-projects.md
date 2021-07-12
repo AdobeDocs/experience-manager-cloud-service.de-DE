@@ -2,9 +2,9 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 100%
@@ -42,7 +42,7 @@ Beispiel: Der Sprachstamm `/content/wknd/fr` wurde für die französische Übers
 
 Übersetzungsprojekte können direkt über die Sites-Konsole erstellt oder aktualisiert werden.
 
-### Erstellen von Übersetzungsprojekten mithilfe des Bedienfelds „Verweise“ {#creating-translation-projects-using-the-references-panel}
+### Erstellen von Übersetzungsprojekten mithilfe des Bedienfelds „Verweise“  {#creating-translation-projects-using-the-references-panel}
 
 Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung der Ressourcen Ihres Sprachstamms ausführen und verwalten können. Wenn Sie Projekte erstellen, legen Sie die Seite im Sprachstamm, die Sie übersetzen wollen, und die Sprachkopien, für die Sie die Übersetzung durchführen wollen, fest:
 
@@ -309,7 +309,7 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 
 Klicken oder tippen Sie auf die Ellipse am unteren Rand der Kachel, um den Status der einzelnen Dateien im Auftrag anzuzeigen.
 
-### Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen  {#setting-the-due-date-of-translation-jobs}
+### Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen {#setting-the-due-date-of-translation-jobs}
 
 Geben Sie das Datum an, bis zu dem Ihr Übersetzungsanbieter die übersetzten Dateien zurückgeben muss. Die Festlegung eines Fälligkeitsdatums funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
