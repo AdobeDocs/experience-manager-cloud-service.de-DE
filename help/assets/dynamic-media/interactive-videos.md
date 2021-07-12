@@ -2,16 +2,16 @@
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten..
 feature: Interaktive Videos
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
-# Interaktive Videos {#interactive-videos}
+# Interaktive Videos{#interactive-videos}
 
 
 Sie können auf einfache Weise interaktive Videos (auch als Videos mit Shopping-Funktion bekannt) erstellen, die direkt aus dem Video die Konversion fördern. Die Kundeninteraktion mit dem Video erfolgt in einem Feld neben dem Videoplayer, in dem die zugehörigen Services, Informationen oder Produktminiaturen auf Grundlage des Umfangs im Video per Bildlauf in die Ansicht einfließen. Kunden können auf die Miniatur tippen und werden direkt mit dem Service verbunden. Alternativ können sie den Artikel für den direkten Erwerb zu einem Warenkorb hinzufügen oder sie werden mit einer Web-Seite verbunden, um weitere Informationen zu erhalten.
@@ -46,7 +46,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >Bei interaktiven Videos, die eine Web-Seite aufrufen, sobald ein Benutzer auf eine Miniaturansicht tippt, wird die Anzeige der Popup-Web-Seite auf einigen Geräten blockiert. Ändern Sie in diesen Fällen die Popup-Blocker-Einstellung auf dem Gerät. Auf einem Apple iPhone 6 tippen Sie beispielsweise auf **[!UICONTROL Einstellungen > Safari > Popups blockieren]** und schieben das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniaturansicht klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
 
-### Erstellen von interaktiven Videos  {#watch-how-interactive-videos-are-created}
+### Erstellen von interaktiven Videos {#watch-how-interactive-videos-are-created}
 
 Sehen Sie sich eine exemplarische Anleitung dazu an, wie interaktive Videos erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 Minuten und 30 Sekunden).
 [
@@ -219,7 +219,7 @@ Basierend auf dieser Analyse stellen Sie fest, dass Sie die beiden folgenden Var
 
 Sie können jetzt ein Video und die zugehörigen Miniatur-Assets hochladen.
 
-## (Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video  {#optional-creating-an-interactive-video-viewer-preset}
+## (Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video {#optional-creating-an-interactive-video-viewer-preset}
 
 Sie können diese Aufgabe überspringen und mit der nächsten fortfahren, wenn Sie eine der standardmäßigen Viewer-Vorgaben für interaktive Videos mit den Viewer-Typen `Shoppable_Video_dark` oder `Shoppable_Video_light` verwenden möchten.
 
@@ -500,7 +500,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
 Weitere Informationen zum Veröffentlichen interaktiver Video-Assets finden Sie in [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Integrieren eines interaktiven Videos auf Ihrer Website {#integrating-an-interactive-video-with-your-website}
+## Integrieren eines interaktiven Videos mit Ihrer Website {#integrating-an-interactive-video-with-your-website}
 
 Nachdem Sie ein Video hochgeladen, zu diesem Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie nun in der Lage, es zu Ihrer vorhandenen Website hinzuzufügen.
 
@@ -756,7 +756,7 @@ Die endgültige Demowebsite mit dem vollständig integrierten interaktiven Video
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows® {#using-quickviews-to-create-custom-pop-ups}
+## Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popup-Fenster {#using-quickviews-to-create-custom-pop-ups}
 
 Siehe [Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
