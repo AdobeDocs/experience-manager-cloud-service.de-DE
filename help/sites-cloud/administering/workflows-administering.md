@@ -2,16 +2,16 @@
 title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
 feature: Verwalten
-role: Administrator
+role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 
 ---
 
-# Verwalten der Workflow-Instanzen {#administering-workflow-instances}
+# Verwalten von Workflow-Instanzen {#administering-workflow-instances}
 
 Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Instanzen bereit, um sicherzustellen, dass sie wie erwartet ausgeführt werden.
 
@@ -155,7 +155,7 @@ Zum Konfigurieren des Service können Sie die OSGi-Konfigurationsdateien konfigu
  </tbody>
 </table>
 
-## Einstellen der maximalen Größe des Posteingangs  {#setting-the-maximum-size-of-the-inbox}
+## Einstellen der maximalen Größe des Posteingangs    {#setting-the-maximum-size-of-the-inbox}
 
 Sie können die maximale Größe des Posteingangs durch die Konfiguration des **Adobe Granite Workflow-Service** bestimmen. Siehe [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/implementing/deploying/configuring-osgi.md). In der folgenden Tabelle wird die Eigenschaft beschrieben, die Sie konfigurieren können.
 
