@@ -2,9 +2,9 @@
 title: Rollout-Konflikte
 description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi-Site-Manager verwalten und lösen.
 feature: Multi-Site-Manager
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einem abhängigen Live Copy-Zweig erstellt werden. Solche Konflikte müssen nach dem Rollout gehandhabt und aufgelöst werden.
 
-## Konfliktbehandlung  {#conflict-handling}
+## Konfliktbehandlung {#conflict-handling}
 
 Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, gestattet Ihnen MSM die Definition, wie (oder sogar ob) dieser Konflikt behoben werden soll.
 
