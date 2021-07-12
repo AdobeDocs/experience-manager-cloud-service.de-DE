@@ -1,19 +1,19 @@
 ---
 title: Zugehörige Inhalte
-description: Erfahren Sie, wie AEM Funktion für verknüpfte Inhalte die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet zusätzliche Flexibilität bei der Bereitstellung Headless Content.
+description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte eine Verbindung herstellt, sodass Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird, was zusätzliche Flexibilität für die Headless-Bereitstellung von Inhalten bietet.
 feature: Inhaltsfragmente
-role: Business Practitioner
+role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# Zugehörige Inhalte {#associated-content}
+# Zugehörige Inhalte{#associated-content}
 
-AEM Funktion Zugehörige Inhalte stellt die Verbindung bereit, damit Assets optional mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen mehr Flexibilität bei der Bereitstellung Headless Content, indem [Sie eine Reihe von Assets bereitstellen, auf die bei Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden kann,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) und gleichzeitig dazu beitragen, die für die Suche nach dem entsprechenden Asset erforderliche Zeit zu reduzieren.
+Die AEM-Funktion für zugehörige Inhalte stellt die Verbindung bereit, mit der Assets optional für ein Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird. Dies bietet Ihnen Flexibilität bei der Headless-Bereitstellung von Inhalten, [da Sie eine Reihe von Assets zur Verfügung haben, auf die Sie zugreifen können, wenn Sie das Inhaltsfragment auf einer Seite verwenden.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert.
 
 ## Hinzufügen von zugehörigen Inhalten {#adding-associated-content}
 
