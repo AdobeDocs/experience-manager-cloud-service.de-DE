@@ -1,18 +1,18 @@
 ---
 title: Arbeiten mit Dynamic Media
 description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Dynamic Media {#working-with-dynamic-media}
 
-Mit [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
 Dynamic Media ermöglicht interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um die Verwaltung digitaler Kampagnen zu vereinfachen und zu optimieren.
 
@@ -20,7 +20,7 @@ Dynamic Media ermöglicht interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Einsatzmöglichkeiten für Dynamic Media  {#what-you-can-do-with-dynamic-media}
+## Einsatzmöglichkeiten für Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](/help/assets/manage-digital-assets.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
@@ -37,7 +37,7 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Video](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
-* [Verwenden von Schnellansichten zum Erstellen eines benutzerdefinierten Popup-Windows®](custom-pop-ups.md)
+* [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popup-Fenster](custom-pop-ups.md)
 
 Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 
@@ -80,7 +80,7 @@ Assets mit aktivierter Dynamic Media-Funktion umfassen `pyramid.tiffs`.
 
 ### Änderung der Asset-Ansichten {#asset-views-change}
 
-Wenn Dynamic Media aktiviert ist, können Sie die Ansicht vergrößern und verkleinern, indem Sie auf die Schaltflächen `+` und `-` klicken. Sie können auch auf klicken/tippen, um in einen bestimmten Bereich zu zoomen. Zurück bringt Sie zur Originalversion und Sie können das Bild im Vollbildmodus anzeigen, indem Sie auf die diagonalen Pfeile klicken. Dynamic Media aktiviert wird wie folgt angezeigt:
+Wenn Dynamic Media aktiviert ist, können Sie die Ansicht durch Klicken auf die Schaltflächen `+` und `-` vergrößern und verkleinern. Sie können durch Klicken oder Tippen auch einen bestimmten Bereich vergrößern. Außerdem können Sie die Originalansicht wiederherstellen und das Bild durch Klicken auf die diagonalen Pfeile im Vollbildmodus anzeigen. Das aktivierte Dynamic Media sieht wie folgt aus:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
