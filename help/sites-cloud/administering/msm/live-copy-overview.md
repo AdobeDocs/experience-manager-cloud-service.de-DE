@@ -2,9 +2,9 @@
 title: Konsole „Live Copy-Übersicht“
 description: Lernen Sie die Grundlagen der Konsole „Live Copy-Übersicht“ kennen, um einen Überblick über den Status Ihrer Live Copies zu erhalten und Inhalte zu synchronisieren.
 feature: Multi-Site-Manager
-role: Administrator
+role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 100%
@@ -42,7 +42,7 @@ Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** d
    >Sie können auch zuerst die Verweise öffnen und dann die Blueprint-Seite auswählen.
 
 1. Wählen Sie **Live Copy-Übersicht** aus, um eine Übersicht aller Live Copies mit Bezug zur ausgewählten Blueprint-Seite anzuzeigen und zu verwenden.
-1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur Konsole **Sites** zurück.
+1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
 ### Eigenschaften der Blueprint-Seite {#properties-of-a-blueprint-page}
 
@@ -57,7 +57,7 @@ Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Bluepri
 
 1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
-## Verwenden der Live Copy-Übersicht  {#using-the-live-copy-overview}
+## Verwenden der Live Copy-Übersicht   {#using-the-live-copy-overview}
 
 Das Fenster **Live Copy-Übersicht** bietet einen Überblick über den Status der Live Copies in Bezug auf die ausgewählte Seite.
 
