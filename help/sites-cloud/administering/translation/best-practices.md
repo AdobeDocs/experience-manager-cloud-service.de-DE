@@ -2,9 +2,9 @@
 title: Best Practices für die Übersetzung
 description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungs-Teams von Adobe.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen** Sie Ihre globale Struktur und Ihre Prozesse, **erstellen Sie Prototypen** davon und **testen** Sie sie, um sicherzustellen, dass sie Ihr Unternehmen unterstützen und dass Sie über die notwendige Unterstützung der Stakeholder in den Regionen verfügen.
 
-## Site-Struktur  {#site-structure}
+## Site-Struktur {#site-structure}
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
@@ -37,7 +37,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Verwenden Sie MSM zur Erstellung von länderspezifischen Websites aus den übersetzten Sprachstämmen und für den Rollout von Inhalten an Websites mit derselben Sprache. Beispielsweise kann der französische Sprachstamm an die Websites von Frankreich, Belgien und die Schweiz bereitgestellt werden.
 * Planen Sie, erstellen Sie Prototypen und führen Sie Tests durch, bevor Sie die Implementierung beginnen.
 
-## Übersetzungsprozesse und -methoden  {#translation-processes-and-methods}
+## Übersetzungsprozesse und -methoden {#translation-processes-and-methods}
 
 * Engagieren Sie einen **Lokalisierungsdienstleister** mit Fachkenntnissen in Übersetzung und relevanten Lokalisierungstätigkeiten. Lokalisierungsdienstleister helfen bei der Skalierung Ihres globalen Unternehmens, indem sie ein Spektrum an Ressourcen und Technologien zur Verfügung stellen, welche die Effizienz verbessern und Übersetzungskosten sparen:
    * Einige Lokalisierungsdienstleister sind auch Technologieanbieter. Es gibt auch eigenständige Technologieanbieter, die vielen Lokalisierungsdienstleistern die Arbeit auf ihren Übersetzungsplattformen ermöglichen.
