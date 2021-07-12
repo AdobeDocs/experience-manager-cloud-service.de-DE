@@ -1,28 +1,28 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
 description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ) {#http-delivery-of-content-faq}
+# Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ){#http-delivery-of-content-faq}
 
 Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 bekanntgeben zu können. Bei Verwendung von HTTP/2 wird die Gesamtleistung gesteigert.
 
 >[!NOTE]
 >
->Für diese Funktion müssen Sie das native Inhaltsbereitstellungsnetzwerk verwenden, das zum Lieferumfang von Adobe Experience Manager - Dynamic Media gehört. Mit dieser Funktion wird kein anderes benutzerdefiniertes Netzwerk zur Inhaltsbereitstellung unterstützt.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager – Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 ## Was ist HTTP/2? {#what-is-http}
 
 HTTP/2 verbessert die Kommunikation zwischen Browsern und Servern, ermöglicht eine schnellere Übertragung von Informationen und verringert den Verarbeitungsaufwand.
 
-Der Website-Artikel [Was Sie über HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) wissen müssen, beschreibt HTTP/2 und seine Vorteile kurz und einfach.
+Der Website-Artikel [Was Sie über HTTP/2 wissen müssen](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) beschreibt HTTP/2 und seine Vorteile kurz und einfach.
 
 ## Was sind die wichtigsten Vorteile der Umstellung auf die Bereitstellung von Inhalt über HTTP/2? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -37,7 +37,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Bin ich berechtigt, auf HTTP/2 umzustellen?  {#am-i-eligible-to-switch-over-to-http}
+## Bin ich berechtigt, auf HTTP/2 umzustellen?   {#am-i-eligible-to-switch-over-to-http}
 
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
@@ -84,12 +84,12 @@ Anfragen werden in der Reihenfolge verarbeitet, in der sie beim technischen Supp
 >
 >Die Vorlaufzeit ist lang, da die Umstellung auf HTTP/2 die Löschung des Cache erfordert. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
 
-## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?  {#what-are-the-risks-with-moving-to-http}
+## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?   {#what-are-the-risks-with-moving-to-http}
 
 Durch die Umstellung auf HTTP/2 wird Ihr Cache im CDN gelöscht, da eine neue CDN-Konfiguration erforderlich ist.
 
 Der nicht zwischengespeicherte Inhalt wird direkt an die ursprünglichen Server von Adobe übertragen, bis der Cache neu aufgebaut wird. Aufgrund dieser Aktion plant Adobe, mehrere Kundentransitionen gleichzeitig zu bearbeiten. Auf diese Weise wird sichergestellt, dass beim Abrufen von Anfragen aus der Quelle eine annehmbare Leistung gewährleistet ist.
 
-## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde?   {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Laden Sie eine Erweiterung herunter, die mit Ihrem Webbrowser verwendet werden soll. Für Firefox und Chrome gibt es eine Erweiterung namens **[!UICONTROL HTTP/2 and SPDY Indicator]**. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit HTTPS aufgerufen werden. Wenn HTTP/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und die Beschriftung „X-Firefox-Spdy“ : „h2“ angezeigt.
