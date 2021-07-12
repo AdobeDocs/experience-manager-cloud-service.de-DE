@@ -2,16 +2,16 @@
 title: Vorbereiten von Inhalten für die Übersetzung
 description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 100%
 
 ---
 
-# Vorbereiten von Inhalten für die Übersetzung  {#preparing-content-for-translation}
+# Vorbereiten von Inhalten für die Übersetzung {#preparing-content-for-translation}
 
 Bei mehrsprachigen Websites wird in der Regel ein Teil der Inhalte in mehreren Sprachen bereitgestellt. Die Website wird in einer Sprache verfasst und anschließend in weitere Sprachen übersetzt. Im Allgemeinen bestehen mehrsprachige Websites aus Zweigen von Seiten, wobei jeder Zweig die Seiten der Website in einer anderen Sprache enthält.
 
@@ -82,7 +82,7 @@ Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen 
 
 1. Klicken oder tippen Sie auf **Erstellen**. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
 
-## Anzeigen des Status der Sprachstämme  {#seeing-the-status-of-language-roots}
+## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
 AEM hat eine Leiste **Verweise**, die eine Liste der erstellten Sprachstämme anzeigt.
 
@@ -134,8 +134,10 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
-> Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
+> 
+Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
 
 >[!TIP]
 >
