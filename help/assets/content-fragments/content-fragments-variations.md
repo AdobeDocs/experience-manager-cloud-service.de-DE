@@ -1,19 +1,19 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
-description: Erfahren Sie, wie Varianten Ihren Headless Content in AEM noch flexibler gestalten können, indem Sie Inhalte für das Fragment erstellen und dann entsprechend dem Zweck Varianten dieses Inhalts erstellen können.
+description: Erfahren Sie, wie Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können, indem Sie Inhalte für das Fragment erstellen und dann entsprechend dem Zweck Varianten dieses Inhalts erstellen können.
 feature: Inhaltsfragmente
-role: Business Practitioner
+role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2257'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Varianten – Erstellen von Fragmentinhalten {#variations-authoring-fragment-content}
+# Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Varianten sind eine wichtige Funktion AEM Inhaltsfragmente, da sie Ihnen das Erstellen und Bearbeiten von Kopien des Übergeordneten Inhalts für die Verwendung auf bestimmten Kanälen und/oder Szenarien ermöglichen, wodurch die Bereitstellung Headless Content noch flexibler wird.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was die Bereitstellung von Headless-Inhalten noch flexibler macht.
 
 In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 
@@ -45,6 +45,8 @@ Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **V
 Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
+
+
 Sie haben folgende Möglichkeiten:
 
 * Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
@@ -57,7 +59,7 @@ Sie haben folgende Möglichkeiten:
    * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
    * auf eine Reihe von [Aktionen](#actions) zuzugreifen
 
-* Für die Felder **Fragmentverweis** kann je nach Modelldefinition die Option **[Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)** verfügbar sein.
+* Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option **[Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)** verfügbar sein.
 
 ### Vollbild-Editor {#full-screen-editor}
 
@@ -168,7 +170,7 @@ Wenn das Inhaltsfragmentmodell Fragmentreferenzen enthält, stehen Ihren Fragmen
 
 Mit der Option **Inhaltsfragment bearbeiten** wird dieses Fragment in einer neuen Editor-Registerkarte (innerhalb derselben Browser-Registerkarte) geöffnet.
 
-Wenn Sie die ursprüngliche Registerkarte erneut auswählen (z. B. **Little Pony Inc.**), wird diese sekundäre Registerkarte geschlossen (in diesem Fall **Adam Smith**).
+Wenn Sie die ursprüngliche Registerkarte erneut auswählen (z. B. **Little Pony Inc.**), wird diese sekundäre Registerkarte geschlossen (in diesem Fall **Adam Smith**).
 
 ![Fragmentreferenzen](assets/cfm-variations-editreference.png)
 
@@ -245,8 +247,8 @@ Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
    * Zu beseitigende Sätze werden rot und durchgestrichen hervorgehoben.
    * Klicken Sie auf einen beliebigen hervorgehobenen Satz, um ihn im zusammengefassten Inhalt zu behalten.
    * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, um ihn zu beseitigen.
-   * Die Zusammenfassungsstatistiken sind dargestellt: **Actual** and **Target**-
-   * Sie können die Änderungen **Vorschau** anzeigen.
+   * Die Zusammenfassungsstatistiken werden gezeigt: **Actual** und **Target**.
+   * Sie können die Änderungen in der **Vorschau** sehen.
 
    ![Zusammenfassungsvergleich](assets/cfm-variations-06.png)
 
@@ -368,7 +370,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * **Markdown**: Die Referenz bleibt bestehen.
 
 
-## Verwalten von Varianten  {#managing-variations}
+## Verwalten von Varianten    {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
@@ -385,7 +387,7 @@ So erstellen Sie eine neue Variante:
    >[!NOTE]
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante   {#editing-a-variation}
+### Bearbeiten einer Variante    {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -424,7 +426,7 @@ So löschen Sie eine vorhandene Variante:
 
 ### Mit primärer Version synchronisieren {#synchronizing-with-master}
 
-**Primäre Version** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die primäre Version des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn Übergeordnet aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher an sie weitergeleitet werden.
+**Primäre Version** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die primäre Version des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn die primäre Version aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
 Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
@@ -448,7 +450,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt  wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
