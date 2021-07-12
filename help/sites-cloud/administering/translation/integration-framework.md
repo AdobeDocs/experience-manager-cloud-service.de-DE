@@ -2,9 +2,9 @@
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
 description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Sie können mehrere Cloud-Konfigurationen für denselben Connector erstellen, fa
 
 Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration für die Übersetzungsintegration erstellen, von der diese Verbindung genutzt wird.
 
-## Erstellen einer Konfiguration für die Übersetzungsintegration  {#creating-a-translation-integration-configuration}
+## Erstellen einer Konfiguration für die Übersetzungsintegration {#creating-a-translation-integration-configuration}
 
 Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration, um festzulegen, wie Ihre Inhalte übersetzt werden sollen. Die Konfiguration enthält die folgenden Informationen:
 
