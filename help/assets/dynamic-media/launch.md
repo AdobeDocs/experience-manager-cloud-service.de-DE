@@ -2,16 +2,16 @@
 title: Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch
 description: Erfahren Sie mehr über die Dynamic Media Viewer-Erweiterung für Platform launch und Dynamic Media Viewers 5.13. Mit dieser Erweiterung können Kunden von Adobe Analytics und Platform launch Ereignisse und Daten verwenden, die für die Viewer in ihrer Platform launch-Konfiguration spezifisch sind.
 feature: Asset-Berichte
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6662'
 ht-degree: 94%
 
 ---
 
-# Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Worum geht es bei der Integration von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -49,7 +49,7 @@ Siehe [Verfolgen von Dynamic Media-Viewern mit Einbettungs-Code](#tracking-dynam
 
 Die Integration nutzt zwei separate und unabhängige Typen der Verfolgung von Dynamic Media Viewers: *Adobe Analytics* und *Adobe Analytics for Audio and Video*.
 
-### Informationen zum Tracking mit Adobe Analytics {#about-tracking-using-adobe-analytics}
+### Informationen zum Tracking mit Adobe Analytics   {#about-tracking-using-adobe-analytics}
 
 Mit Adobe Analytics können Sie Aktionen verfolgen, die vom Endbenutzer bei der Interaktion mit Dynamic Media Viewers auf Ihrer Website ausgeführt werden. Mit Adobe Analytics können Sie außerdem Viewer-spezifische Daten verfolgen. Beispielsweise können Sie Ladeereignisse der Ansicht zusammen mit dem Asset-Namen, vorgenommenen Zoom-Aktionen und Videowiedergabeaktionen verfolgen und aufzeichnen.
 
