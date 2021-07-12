@@ -2,9 +2,9 @@
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Konsole "Assets"Ihre AEM Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless Content bilden.
 feature: Inhaltsfragmente
-role: Business Practitioner
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 79%
@@ -39,7 +39,7 @@ Der [Inhaltsfragmente-Editor](#opening-the-fragment-editor) bietet verschiedene 
 >
 >Inhaltsfragmente werden als **Assets** gespeichert und daher hauptsächlich über die **Assets-Konsole** verwaltet.
 
-## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
+## Erstellen von Inhaltsfragmenten    {#creating-content-fragments}
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
@@ -263,19 +263,19 @@ Beim Bearbeiten des Inhaltsfragments AEM automatisch Versionen erstellt, um sich
 
 Wenn Sie das Fragment geöffnet haben, können Sie die Registerkarte [Varianten](/help/assets/content-fragments/content-fragments-variations.md) verwenden, um Ihren Inhalt zu erstellen.
 
-## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments   {#creating-and-managing-variations-within-your-fragment}
+## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments  {#creating-and-managing-variations-within-your-fragment}
 
 Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](/help/assets/content-fragments/content-fragments-variations.md) dieses Inhalts erstellen und verwalten.
 
-## Verknüpfen von Inhalt mit Ihrem Fragment   {#associating-content-with-your-fragment}
+## Verknüpfen von Inhalt mit Ihrem Fragment  {#associating-content-with-your-fragment}
 
 Sie können auch Inhalt mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
 
-## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Sie können die Eigenschaften eines Fragments über die Registerkarte [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md) anzeigen und bearbeiten.
 
-## Zeitleiste für Inhaltsfragmente   {#timeline-for-content-fragments}
+## Zeitleiste für Inhaltsfragmente  {#timeline-for-content-fragments}
 
 Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
@@ -337,7 +337,7 @@ Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleic
 
 ![Vergleich](assets/cfm-managing-06.png)
 
-## Wiederherstellen einer früheren Version {#reverting-to-a-version}
+## Wiederherstellen einer früheren Version   {#reverting-to-a-version}
 
 Sie können eine frühere Version wiederherstellen.
 
