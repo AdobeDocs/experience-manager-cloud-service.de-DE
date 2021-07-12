@@ -1,12 +1,12 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
 description: Erfahren Sie, wie Sie URLs in Dynamic Media mit Ihrer Webanwendung verknüpfen.
-role: Business Practitioner
+role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 
 Ihre Websites und Programme greifen über URL-Aufrufe auf Dynamic Media-Services zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
 
-Sie verknüpfen nur dann zu URLs, wenn Sie *nicht* Adobe Experience Manager als WCM verwenden. Die Verknüpfung - im Gegensatz zur Einbettung - wird verwendet, wenn Sie einen Videoplayer als Popup- oder modales Fenster bereitstellen möchten. Wenn Sie Experience Manager als WCM verwenden, [fügen Sie die Assets direkt auf Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
+Sie verknüpfen nur dann zu URLs, wenn Sie *nicht* Adobe Experience Manager als WCM verwenden. Die Verknüpfung - im Gegensatz zur Einbettung - wird verwendet, wenn Sie einen Videoplayer als Popup- oder modales Fenster bereitstellen möchten. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
 
 Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platzieren, müssen Sie sie aus Dynamic Media kopieren.
 
@@ -30,7 +30,7 @@ Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site](res
 
 Informationen hierzu finden Sie auch unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-## Abrufen einer URL für ein Asset   {#obtaining-a-url-for-an-asset}
+## Abrufen einer URL für ein Asset  {#obtaining-a-url-for-an-asset}
 
 Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorgabe generiert wird. Wenn Sie die URL kopieren, wird sie in der Zwischenablage abgelegt, sodass Sie sie nach Bedarf in Seiten einer Website oder einem Programm einfügen können.
 
@@ -151,7 +151,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Dieser Pfad ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
@@ -206,7 +206,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
+## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets   {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
