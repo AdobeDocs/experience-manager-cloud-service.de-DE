@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media Newsletter
-description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Es soll Ihnen dabei helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Nutzen ziehen können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Beispielsweise werden Tutorials und Lösungsübersichten bereitgestellt. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr. '
-feature: Asset-Verwaltung
-role: Business Practitioner
+description: 'Der Dynamic Media Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Beispielsweise werden Tutorials und Lösungsübersichten bereitgestellt. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr. '
+feature: Asset-Management
+role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Erfahren Sie mehr über wertvolle Ressourcen zum Wissensaufbau, wie etwa Tutoria
 
    In dieser Ausgabe:
 
-   * Entdecken Sie die zehn wichtigsten verborgenen Funktionen von Dynamic Media Classic in einem Blog-Posting.
+   * Entdecken Sie die zehn besten verborgenen Funktionen von Dynamic Media Classic in einem Blog-Beitrag.
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
    * Informieren Sie sich über die bevorstehende Adobe Insider Tour.
    * Lesen Sie eine dreiteilige Blog-Serie, um Ihre Rich-Media-Strategie zu aktualisieren.
