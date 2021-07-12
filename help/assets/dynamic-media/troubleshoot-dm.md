@@ -1,12 +1,12 @@
 ---
 title: Fehlerbehebung bei Dynamic Media
 description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -22,30 +22,30 @@ Siehe [Fehlerbehebung für eine neue Dynamic Media-Konfiguration](/help/assets/d
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften  {#asset-synchronization-status-properties}
+### Asset-Synchronisierungsstatuseigenschaften    {#asset-synchronization-status-properties}
 
-Die folgenden Asset-Eigenschaften können in CRXDE Lite überprüft werden, um die erfolgreiche Synchronisierung des Assets von Adobe Experience Manager nach Dynamic Media zu bestätigen:
+Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen Experience Manager und Dynamic Media synchronisiert wurden:
 
 | **Eigenschaft** | **Beispiel** | **Beschreibung** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss gefüllt werden, um URLs für Remote-Assets von Dynamic Media zu generieren. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss ausgefüllt werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
-Synchronisierungsfehler und -probleme werden in `error.log` (Experience Manager-Serververzeichnis `/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im Paket `com.adobe.cq.dam.ips` über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
+Synchronisierungsfehler und -probleme werden in der Datei `error.log` (Experience Manager-Server-Verzeichnis `/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im Paket `com.adobe.cq.dam.ips` über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
 
 ### Versionskontrolle {#version-control}
 
-Beim Ersetzen eines vorhandenen Dynamic Media-Assets (gleicher Name und Speicherort) können Sie beide Assets beibehalten oder eine Version ersetzen/erstellen:
+Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ersetzen, können Sie beide Assets beibehalten oder eine Version ersetzen/erstellen.
 
-* Beim Beibehalten beider Elemente wird ein Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. Beispiel: `image.jpg` ist das ursprüngliche Asset und `image1.jpg` ist das neu hochgeladene Asset.
+* Wenn Sie beide beibehalten, wird ein neues Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. Beispiel: `image.jpg` ist das ursprüngliche Asset und `image1.jpg` ist das neu hochgeladene Asset.
 
 * Das Erstellen einer Version wird in Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
 
-## Bilder und Sets   {#images-and-sets}
+## Bilder und Sets    {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
@@ -62,14 +62,14 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
     <ol>
      <li><p>Öffnen Sie CRX/DE:</p>
       <ul>
-       <li>Überprüfen Sie, ob die Vorgabe im JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definiert ist. Dieser Speicherort gilt, wenn Sie ein Upgrade von Experience Manager 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Speicherort <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Überprüfen Sie, ob die Vorgabe im JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definiert ist. Dieser Speicherort trifft zu, wenn Sie ein Upgrade von Experience Manager 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Speicherort <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Überprüfen Sie, ob das Asset im JCR unter „Metadaten“ für <code>dam:scene7FileStatus</code><strong></strong> den Wert <code>PublishComplete</code> aufweist.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Aktualisieren Sie die Seite/navigieren Sie zu einer anderen Seite und kehren Sie zurück (JSP der Seitenleiste muss neu kompiliert werden).</p> <p>Wenn dies das Problem nicht behebt:</p>
+   <td><p>Aktualisieren Sie die Seite/gehen Sie zu einer anderen Seite und kehren Sie dann zurück (Seitenleisten-JSPs müssen neu kompiliert werden).</p> <p>Wenn dies das Problem nicht behebt:</p>
     <ul>
      <li>Veröffentlichen Sie das Asset.</li>
-     <li>Laden Sie das Asset erneut und veröffentlichen Sie es.</li>
+     <li>Laden Sie das Asset erneut hoch und veröffentlichen Sie es.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -124,15 +124,15 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
      <li>Weisen Sie dem Ordner ein Videoprofil zu.</li>
      <li>Bearbeiten Sie das Videoprofil, damit es mehr als eine Kodierungsvorgabe enthält.</li>
      <li>Warten Sie, bis die Verarbeitung des Videos abgeschlossen ist.</li>
-     <li>Stellen Sie vor dem erneuten Laden des Videos sicher, dass der Workflow Dynamic Media-Videokodierung nicht ausgeführt wird.<br/> </li>
-     <li>Laden Sie das Video erneut.</li>
+     <li>Stellen Sie sicher, dass der Workflow für die Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br/> </li>
+     <li>Laden Sie das Video erneut hoch.</li>
     </ol> </td>
   </tr>
   <tr>
    <td>Video ist nicht kodiert</td>
    <td>
     <ul>
-     <li>Überprüfen Sie, ob Dynamic Media Cloud Service konfiguriert ist.</li>
+     <li>Prüfen Sie, ob der Dynamic Media Cloud Service konfiguriert ist.</li>
      <li>Prüfen Sie, ob dem Upload-Ordner ein Videoprofil zugeordnet ist.</li>
     </ul> </td>
    <td>
@@ -178,7 +178,7 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
   </tr>
   <tr>
    <td>Viewer-Vorgaben werden nicht veröffentlicht</td>
-   <td><p>Wechseln Sie zur Diagnoseseite des Beispiel-Managers: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Bei ordnungsgemäßer Funktionsweise sehen Sie Folgendes:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Wechseln Sie zur Diagnoseseite des Beispiel-Managers: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Bei einem ordnungsmäßigen Ablauf wird Folgendes angezeigt:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Hinweis</strong>: Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es bis zu 10 Minuten dauern, bis die Assets im Viewer synchronisiert werden.</p> <p>Falls weiterhin nicht aktivierte Assets vorhanden sind, klicken Sie auf eine der Schaltflächen <strong>Alle nicht aktivierten Assets auflisten</strong>, um die Details anzuzeigen.</p> </td>
    <td>
     <ol>
@@ -193,7 +193,7 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
     <ol>
      <li>Navigieren Sie zum <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>-Ordner im Synchronisierungsordner für Dynamic Media (z. B. <code>/content/dam/_CSS/_OOTB</code>).</li>
      <li>Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Prüfen Sie, ob die Eigenschaften <code>dam:scene7*</code> vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass <code>dam:scene7FileStatus</code> auf <strong>PublishComplete</strong> gesetzt ist.</li>
+     <li>Prüfen Sie, ob die Eigenschaften <code>dam:scene7*</code> vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für <code>dam:scene7FileStatus</code> der Wert <strong>PublishComplete</strong> festgelegt ist.</li>
      <li>Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenketten verketten.
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -203,14 +203,14 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
        <li>Beispiel: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchronisiert oder veröffentlicht wurde, starten Sie den gesamten Kopier-/Synchronisierungsprozess neu:</p>
+   <td><p>Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchronisiert oder veröffentlicht wurden, starten Sie den gesamten Kopier-/Synchronisierungsvorgang neu:</p>
     <ol>
      <li>Navigieren Sie zu <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
      <li>Wählen Sie die folgenden Aktionen in der angegebenen Reihenfolge aus:
       <ol>
        <li>Synchronisierte Ordner löschen</li>
-       <li>Ordner "Vorgabe löschen"(unter <code>/conf</code>).
+       <li>Ordner „Vorgabe“ löschen (unter <code>/conf</code>)
        <li>Async-Auftrag für DM-Setup auslösen</li>
       </ol> </li>
      <li>Warten Sie auf die Benachrichtigung über die erfolgreiche Synchronisierung in Ihrem Experience Manager-Posteingang.
