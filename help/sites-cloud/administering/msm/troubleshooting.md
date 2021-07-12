@@ -2,9 +2,9 @@
 title: Beheben von Problemen mit MSM und häufig gestellte Fragen
 description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben, und erhalten Antworten auf häufig gestellte Fragen zu MSM.
 feature: Multi-Site-Manager
-role: Administrator
+role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
@@ -73,7 +73,7 @@ Stattdessen können Sie Folgendes tun:
 * Passen Sie die Benutzeroberfläche des Produkts an, um die Rollout-Aktionen für einen bestimmten Prinzipal auszublenden.
 * Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autoren, die keine Rollout durchführen dürfen.
 
-### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
+### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“?  {#moved-pages}
 
 Bei einem Rollout einer Blueprint-Seite wird entweder die entsprechende Live Copy-Seite aktualisiert oder eine neue Live Copy-Seite erstellt, falls diese noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal ausgerollt wird oder die Live Copy-Seite manuell gelöscht wurde).
 
