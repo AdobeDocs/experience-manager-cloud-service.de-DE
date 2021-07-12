@@ -2,9 +2,9 @@
 title: Identifizieren zu übersetzender Inhalte
 description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte identifizieren.
 feature: Sprachkopie
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
@@ -86,7 +86,7 @@ Das folgende Beispiel übersetzt den Inhalt aller `text`-Eigenschaften sowie and
 </node>
 ```
 
-## Regelsyntax für die Extrahierung von Assets von Seiten   {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntax für die Extrahierung von Assets von Seiten  {#rule-syntax-for-extracting-assets-from-pages}
 
 Verwenden Sie die folgende Regelsyntax, um in andere Komponenten integrierte oder durch andere Komponenten referenzierte Assets einzubeziehen:
 
@@ -215,7 +215,7 @@ Das Ergebnis in der xml sieht wie folgt aus:
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Manuelles Bearbeiten der Regeldatei  {#editing-the-rules-file-manually}
+## Manuelles Bearbeiten der Regeldatei {#editing-the-rules-file-manually}
 
 Die in AEM installierte Datei `translation_rules.xml` enthält einen Standardsatz an Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
 
@@ -225,7 +225,7 @@ Wenn Sie die Datei `translation_rules.xml` bearbeiten, speichern Sie zuvor eine 
 >
 >Erstellen Sie das Paket nach der Erstellung des Inhaltspakets bei jeder Bearbeitung der Datei neu.
 
-## Beispiel für eine Datei mit Übersetzungsregeln  {#example-translation-rules-file}
+## Beispiel für eine Datei mit Übersetzungsregeln {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
