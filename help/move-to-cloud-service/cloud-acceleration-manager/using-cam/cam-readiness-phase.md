@@ -1,17 +1,17 @@
 ---
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 12%
 
 ---
 
 
 # Bereitschaftsphase in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Nachdem Sie ein Projekt in Cloud Acceleration Manager erstellt haben, können Sie jetzt in der Bereitschaftsphase mit der Ausführung der verfügbaren Tools beginnen.
+Nachdem Sie ein Projekt in Cloud Acceleration Manager erstellt haben, können Sie jetzt mit der Bewertung Ihrer aktuellen AEM-Implementierung in der Bereitschaftsphase beginnen.
 
 Die Bereitschaftsphase umfasst:
 
@@ -39,7 +39,10 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Führen Sie diese Schritte aus, um Best Practices Analyzer (BPA) herunterzuladen und auf einem Klon Ihres AEM-Systems auszuführen.
+1. Führen Sie diese Schritte aus, um Best Practices Analyzer (BPA) herunterzuladen.
+
+   >[!NOTE]
+   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA in einer Autoren-Umgebung auszuführen, die der Produktions-Umgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Anwenderprogrammen möglichst nahekommt. Alternativ kann BPA in einem Klon der Autoren-Produktionsumgebung ausgeführt werden.
 
    1. Navigieren Sie zum Portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
@@ -82,7 +85,7 @@ Die Karte **Berichteigenschaften** enthält Informationen zu Berichtseigenschaft
 
 #### Berichtübersicht {#report-overview}
 
-Diese Karte **Berichtsübersicht** enthält die Ergebnisse des Berichts, wie in der folgenden Abbildung dargestellt.
+Diese Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft zur Umstellung auf AEM als Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
 
 In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 
-1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Planung und Einrichtung**, die alle relevanten Inhalte bereitstellt, die Ihnen bei der Planung und Einrichtung Ihrer AEM helfen.
+1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Planung und Einrichtung**. Diese Karte enthält alle relevanten Inhalte, die Ihnen bei der Planung und Einrichtung Ihrer AEM helfen.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Es wird ein Inhaltskarussell mit relevanten Informationen für diese Journey-Phase der Migration angezeigt.
+1. In einem Inhaltskarussell werden alle relevanten Informationen für diese Phase der Migration-Journey angezeigt.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie jetzt mit der Überprüfung des nächsten Schritts fortfahren, indem Sie die [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en) verwenden.
+Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie nun den nächsten Schritt in der [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en) überprüfen.
