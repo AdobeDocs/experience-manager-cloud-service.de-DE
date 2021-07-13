@@ -1,9 +1,9 @@
 ---
 title: Umgang mit großen Inhaltsverzeichnissen
 description: In diesem Abschnitt wird die Handhabung von umfangreichen Inhalts-Repositorys beschrieben.
-source-git-commit: c19878b41970f4cd34083395ab11cf82c1db667e
+source-git-commit: 67c6c8af76b414600975fe349f025c7bf7acef5e
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >id="aemcloud_ctt_precopy"
 >title="Umgang mit großen Inhaltsverzeichnissen"
 >abstract="Um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte als Cloud Service in AEM zu verschieben, kann die CTT AzCopy als optionalen Vorkopieschritt nutzen. Sobald dieser Vorschritt konfiguriert ist, kopiert AzCopy Blobs aus Amazon S3 oder Azure Blob Storage in den Migrationsset-Blob-Speicher. In der Aufnahmephase kopiert AzCopy Blobs aus dem Migrationssatz-Blob-Speicher in den Ziel-AEM als Cloud Service-Blob-Store."
->additional-url="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" text="Erste Schritte mit AzCopy"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Erste Schritte mit AzCopy als Pre-Copy-Schritt"
 
 Das Kopieren einer großen Anzahl von Blobs mit dem Content Transfer Tool (CTT) kann mehrere Tage dauern.
 Um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte als Cloud Service in AEM zu verschieben, kann die CTT [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) als optionalen Vorkopieschritt nutzen. Dieser Vorkopieschritt kann verwendet werden, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist.  Sobald dieser Vorschritt konfiguriert ist, kopiert AzCopy Blobs aus Amazon S3 oder Azure Blob Storage in den Migrationsset-Blob-Speicher. In der Aufnahmephase kopiert AzCopy Blobs aus dem Migrationssatz-Blob-Speicher in den Ziel-AEM als Cloud Service-Blob-Store.
