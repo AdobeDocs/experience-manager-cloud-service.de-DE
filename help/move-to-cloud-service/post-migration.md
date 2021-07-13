@@ -1,7 +1,7 @@
 ---
 title: Phase nach der Migration
 description: Phase nach der Migration
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 96%
@@ -19,8 +19,7 @@ Die folgenden Tools stehen zur Fehlerbehebung in AEM as a Cloud Service-Umgebung
 * **CRXDE Lite**
 * **Verwalten von Protokollen**
 
-
-## Entwicklerkonsole {#developer-console}
+## Developer Console {#developer-console}
 
 AEM as a Cloud Service-Entwicklungsumgebungen zum Debuggen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar.
 
