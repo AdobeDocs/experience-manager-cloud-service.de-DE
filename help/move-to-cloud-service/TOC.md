@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 69%
+source-wordcount: '127'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 69%
 + Phasen der Umstellung {#phases}
    + [Bereitschaft](/help/move-to-cloud-service/migration-readiness.md)
    + [Implementierung](/help/move-to-cloud-service/migration-implementation.md)
+   + [Live-Schaltung](/help/move-to-cloud-service/migration-go-live.md)
    + [Nach der Live-Schaltung](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
    + Einführung in Cloud Acceleration Manager {#introduction-cam}
