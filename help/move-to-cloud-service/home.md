@@ -2,10 +2,10 @@
 title: Wechseln zu AEM as a Cloud Service
 description: Adobe Experience Manager as a Cloud Service – Wechseln zu AEM as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 75%
+source-wordcount: '694'
+ht-degree: 71%
 
 ---
 
@@ -27,10 +27,10 @@ Mit AEM as a Cloud Service können sich Ihre Teams auf Innovationen konzentriere
 
 Der Übergang von der Journey zum Cloud Service umfasst die folgenden Phasen:
 
-* Bereitschaft
-* Implementierung
+* [Bereitschaft](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
+* [Implementierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
 * Live-Schaltung
-* Nach der Live-Schaltung
+* [Nach der Live-Schaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 Für eine erfolgreiche und reibungslose Umstellung sollten Sie eine ordnungsgemäße Planung sicherstellen und die in diesem Handbuch beschriebenen Best Practices einhalten.
 
@@ -43,7 +43,7 @@ Die nachstehende Abbildung zeigt eine bildliche Darstellung der empfohlenen Jour
 
 Cloud Acceleration Manager ist eine Cloud-basierte Anwendung, die IT-Teams während des gesamten Journey-Übergangszeitraums von der Planung bis hin zur Live-Schaltung auf dem Cloud Service begleitet. Richten Sie Ihre Teams für eine erfolgreiche Migration ein, indem Sie von der Adobe empfohlene Best Practices, Tipps, Dokumentationen und Tools einsetzen, um in jeder Phase des Journey zu helfen, als Cloud Service AEM zu werden.
 
-Informationen zum Starten Ihrer Migration finden Sie unter Erste Schritte mit Cloud Acceleration Manager .
+Unter [Erste Schritte mit Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) finden Sie Informationen zum Starten Ihrer Migration-Journey.
 
 ## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
