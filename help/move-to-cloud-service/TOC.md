@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 90%
+source-wordcount: '125'
+ht-degree: 69%
 
 ---
 
@@ -17,9 +17,18 @@ ht-degree: 90%
 
 + [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Phasen der Umstellung {#phases}
-   + [Planung](/help/move-to-cloud-service/planning.md)
-   + [Ausführung](/help/move-to-cloud-service/execution.md)
-   + [Nach der Live-Schaltung](/help/move-to-cloud-service/post-go-live.md)
+   + [Bereitschaft](/help/move-to-cloud-service/migration-readiness.md)
+   + [Implementierung](/help/move-to-cloud-service/migration-implementation.md)
+   + [Nach der Live-Schaltung](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Einführung in Cloud Acceleration Manager {#introduction-cam}
+      + [Übersicht](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [Vorteile](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+   + Verwenden von Cloud Acceleration Manager {#using-cam}
+      + [Erste Schritte mit Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [Bereitschaftsphase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [Implementierungsphase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [Live-Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Cloud-Umstellungs-Tools {#cloud-migration}
    + Best Practices Analyzer {#best-practices-analyzer}
       + [Übersicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
