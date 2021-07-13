@@ -2,17 +2,17 @@
 title: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln. AEM als Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domäne.
+>AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln. AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
 
 Die Bereitstellung eines Zertifikats dauert einige Tage und es wird empfohlen, Monate im Voraus für die Bereitstellung des Zertifikats zu sorgen. Weitere Informationen finden Sie unter [Beziehen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
 
@@ -38,7 +38,8 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 
 * Ein Anwender muss die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben, um ein SSL-Zertifikat in Cloud Manager installieren zu können.
 
-* Cloud Manager lässt jeweils maximal 10 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Einschränkung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden.
+* Cloud Manager lässt jeweils maximal 10 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Einschränkung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domänen (bis zu 100 SANs) abdecken. Ziehen Sie daher in Erwägung, mehrere Domänen im selben Zertifikat zu gruppieren, um innerhalb dieses Limits zu bleiben.
+
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}
 
