@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den Hotlink-Schutz in Dynamic Media aktiviere
 feature: Asset-Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
