@@ -2,10 +2,10 @@
 title: Implementierungsphase
 description: Implementierungsphase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 91%
+source-wordcount: '950'
+ht-degree: 94%
 
 ---
 
@@ -110,17 +110,4 @@ Folgen Sie den unten stehenden Ressourcen, um zu erfahren, wie Sie Cloud Manager
 
 * [Bereitstellen des Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de)
 
-## Best Practices für die Vorbereitung der Live-Schaltung {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Vorbereitung der Live-Schaltung"
->abstract="Um eine reibungslose und erfolgreiche Live-Schaltung von AEM als Cloud Service sicherzustellen, sollten Sie Code- und Inhaltsfrierzeiträume, Testdurchläufe, Content-Upups, Leistungstests, Sicherheitstests und mehr planen."
-
-Um eine reibungslose und erfolgreiche Live-Schaltung von AEM as a Cloud Service sicherzustellen, sollten Sie die folgenden Schritte ausführen:
-
-* Planen der Freeze-Periode von Code und Inhalt
-* Ausführen der endgültigen Inhaltsauffüllung
-* Abschließen der Testiterationen
-* Ausführen von Leistungs- und Sicherheitstests
-* Umstellen
