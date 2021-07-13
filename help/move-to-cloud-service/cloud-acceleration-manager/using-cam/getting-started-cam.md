@@ -1,10 +1,7 @@
 ---
 title: Erste Schritte mit Cloud Acceleration Manager
 description: Auf dieser Seite erhalten Sie einen Überblick über die Verwendung und die ersten Schritte mit Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 2%
@@ -16,7 +13,7 @@ ht-degree: 2%
 
 Cloud Acceleration Manager (CAM) ist eine kostenlose Cloud-basierte Anwendung, die eine Bewertung der aktuellen AEM-Implementierung eines Kunden ermöglicht und dessen Journey zur AEM als Cloud Service nach der von Adobe empfohlenen Migrationsmethode verwaltet.
 
-## Vorgabe {#objective}
+## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie mehr über die ersten Schritte mit Cloud Acceleration Manager (CAM). Nach dem Lesen sollten Sie in der Lage sein:
 
