@@ -1,18 +1,18 @@
 ---
-title: Verwenden von Regelsätzen zum Konvertieren von URLs
-description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs umzuwandeln. Regelsätze sind Gruppen von Anweisungen, die in einer Skriptsprache (z. B. JavaScript™) geschrieben werden und die XML-Daten auswerten und bestimmte Aktionen ausführen, wenn diese Daten bestimmte Bedingungen erfüllen.
+title: Verwenden Sie Regelsätze zum Konvertieren von URLs
+description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs umzuwandeln. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 82%
+ht-degree: 68%
 
 ---
 
-# Verwenden von Regelsätzen zum Konvertieren von URLs {#using-rulesets-to-transform-urls}
+# Verwenden Sie Regelsätze zum Konvertieren von URLs {#using-rulesets-to-transform-urls}
 
-In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Gruppen von Anweisungen, die in einer Skriptsprache (z. B. JavaScript™) geschrieben werden und die XML-Daten auswerten und bestimmte Aktionen ausführen, wenn diese Daten bestimmte Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
+In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen. Jede Regel besteht mindestens aus einer Bedingung und einer Aktion. Eine Regel vergleicht die XML-Daten mit den Bedingungen. Wenn eine Bedingung erfüllt ist, wird die entsprechende Aktion durchgeführt. Beispiele für Regelsätze:
 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Services und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
@@ -36,16 +36,16 @@ Im Zusammenhang mit Dynamic Media können Websites, die ein XML-basiertes System
 >
 >Verwenden Sie Regelsätze mit Vorsicht. Sie können verhindern, dass Dynamic Media-Inhalte auf Ihrer Website angezeigt werden.
 
-Mit den als Beispiele verfügbaren Regelsätzen können Sie Ihren eigenen Regelsatz erstellen.
- Siehe [Regelsatzreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=de).
+Es stehen Beispielregelsätze zur Verfügung, mit denen Sie einen eigenen Regelsatz erstellen können.
+Siehe [Regelsatzreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=de).
 
 Stellen Sie wie bei allen Regelsatzerstellungen sicher, dass Ihre XML-Datei gültig ist, bevor Sie sie mit einem XML-Validator-Programm wie xmlvalid hochladen.
-Siehe auch [Fehlerbehebung in Regelsätzen](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
+Siehe auch [Fehlerbehebung bei Regelsätzen](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
 Stellen Sie außerdem sicher, dass der Regelsatz zunächst in einer Staging-Umgebung getestet wurde, die sich nicht auf die Live-Produktionsumgebung auswirkt.
 Für Produktions- und Testumgebungen sind in der Regel unterschiedliche Anmeldungen erforderlich.
 
-Informationen zum Anmelden finden Sie unter dem [Adobe Dynamic Media Classic Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
+Informationen zur Anmeldung finden Sie unter der [Adobe Dynamic Media Classic -Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -53,7 +53,7 @@ Informationen zum Anmelden finden Sie unter dem [Adobe Dynamic Media Classic Des
 
 Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regelsatz](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
-**So stellen Sie XML-Regelsätze bereit:**
+## Bereitstellen von XML-Regelsätzen {#deploy-xml-rule-sets}
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
@@ -61,19 +61,19 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
 1. Laden Sie Ihre Regelsatzdatei wie folgt hoch:
 
-   * Klicken Sie in der Symbolleiste für globale Navigation auf **[!UICONTROL Hochladen]**.
-   * Klicken Sie auf der Seite **[!UICONTROL Hochladen]** in der linken oberen Ecke auf **[!UICONTROL Durchsuchen]**.
+   * Wählen Sie in der Symbolleiste für globale Navigation **[!UICONTROL Upload]** aus.
+   * Wählen Sie auf der Seite **[!UICONTROL Upload]** in der linken oberen Ecke **[!UICONTROL Durchsuchen]** aus.
    * Navigieren Sie im Dialogfeld **[!UICONTROL Öffnen]** zu Ihrer Regelsatzdatei (XML).
-   * Wählen Sie die Datei aus und klicken Sie auf **[!UICONTROL Öffnen]**.
+   * Wählen Sie die Datei aus und klicken Sie dann auf **[!UICONTROL Öffnen]**.
    * Wählen Sie rechts auf der Seite **[!UICONTROL Hochladen]** einen Zielordner für die Regelsatzdatei aus.
    * Vergewissern Sie sich unten auf der Seite, dass die Option Nach dem Hochladen veröffentlichen aktiviert ist.
-   * Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Upload starten]**.
-   * Klicken Sie in der globalen Navigationsleiste auf **[!UICONTROL Aufträge]**, um den Status der Upload-Aufträge zu prüfen. Wenn in der Spalte **[!UICONTROL Status]** auf der Seite **[!UICONTROL Auftrag]** der Status „Hochladen abgeschlossen“ angezeigt wird, fahren Sie mit den nächsten Schritten fort.
+   * Wählen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload starten]**.
+   * Wählen Sie in der Symbolleiste für globale Navigation **[!UICONTROL Aufträge]** aus, um den Status des Upload-Auftrags zu überprüfen. Wenn in der Spalte **[!UICONTROL Status]** auf der Seite **[!UICONTROL Auftrag]** der Status „Hochladen abgeschlossen“ angezeigt wird, fahren Sie mit den nächsten Schritten fort.
 
-1. Klicken Sie in der Navigationsleiste im oberen Teil der Seite auf **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
-1. Suchen Sie auf der Seite **[!UICONTROL Veröffentlichung zum Image-Server]** in der Gruppe **[!UICONTROL Katalogverwaltung]** den Pfad **[!UICONTROL Dateipfad für Regeldefinitionen]** und klicken Sie auf **[!UICONTROL Auswählen]**.
-1. Klicken Sie auf der Seite **[!UICONTROL Regeldefinitionsdatei (XML) auswählen]** auf die Regelsatzdatei und dann in der rechten unteren Ecke der Seite auf **[!UICONTROL Auswählen]**.
-1. Klicken Sie in der rechten unteren Ecke der Seite „Einstellungen“ auf **[!UICONTROL Schließen]**.
+1. Navigieren Sie in der Navigationsleiste oben auf der Seite zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
+1. Suchen Sie auf der Seite **[!UICONTROL Image-Server Publish]** unter der Gruppe **[!UICONTROL Catalog Management]** nach **[!UICONTROL Rule Set Definition File Path]** und wählen Sie **[!UICONTROL Select]**.
+1. Navigieren Sie auf der Seite **[!UICONTROL Regelsatzdefinitionsdatei (XML)]** zu Ihrer Regelsatzdatei und wählen Sie dann unten rechts auf der Seite **[!UICONTROL Wählen Sie]** aus.
+1. Wählen Sie in der rechten unteren Ecke der Seite &quot;Einstellungen&quot;die Option **[!UICONTROL Close]**.
 1. Führen Sie einen Auftrag zur Veröffentlichung des Image-Servers aus.
 
    Die Bedingungen des Regelsatzes werden auf die Anforderungen an die Live-Image-Server von Dynamic Media angewendet.
