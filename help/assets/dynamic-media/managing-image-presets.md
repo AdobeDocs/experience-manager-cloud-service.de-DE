@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Bildvorgaben und das Erstellen, Ändern und
 feature: Bildvorgaben,Viewer,Ausgabedarstellungen
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3633'
 ht-degree: 81%
 
 ---
@@ -87,7 +87,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS-
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Wählen Sie oben links in Adobe Experience Manager aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL DAM-Update-Asset]** und wählen Sie dann in der Symbolleiste **[!UICONTROL Bearbeiten]** aus. Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition`, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
+Wählen Sie links oben Adobe Experience Manager aus, navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL DAM-Update-Asset]** und wählen Sie dann in der Symbolleiste **[!UICONTROL Bearbeiten]** aus. Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition`, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
 
 #### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
