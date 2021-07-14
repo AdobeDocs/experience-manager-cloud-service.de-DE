@@ -3,10 +3,10 @@ title: Fehlerbehebung bei Dynamic Media
 description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 100%
+source-wordcount: '992'
+ht-degree: 93%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 100%
 
 Das folgende Thema beschreibt die Fehlerbehebung bei Dynamic Media.
 
-## Konfiguration für Dynamic Media {#new-dm-config}
+## Neue Dynamic Media-Konfiguration {#new-dm-config}
 
-Siehe [Fehlerbehebung für eine neue Dynamic Media-Konfiguration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Siehe [Fehlerbehebung bei einer neuen Dynamic Media-Konfiguration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Allgemein (alle Assets) {#general-all-assets}
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften    {#asset-synchronization-status-properties}
+### Statuseigenschaften für die Asset-Synchronisierung {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen Experience Manager und Dynamic Media synchronisiert wurden:
 
@@ -137,7 +137,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
     </ul> </td>
    <td>
     <ol>
-     <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
+     <li>Überprüfen Sie, ob die Dynamic Media-Konfiguration unter "Cloud Services"ordnungsgemäß eingerichtet ist.</li>
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
   <tr>
    <td>Viewer-Vorgaben werden nicht veröffentlicht</td>
    <td><p>Wechseln Sie zur Diagnoseseite des Beispiel-Managers: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Bei einem ordnungsmäßigen Ablauf wird Folgendes angezeigt:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Hinweis</strong>: Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es bis zu 10 Minuten dauern, bis die Assets im Viewer synchronisiert werden.</p> <p>Falls weiterhin nicht aktivierte Assets vorhanden sind, klicken Sie auf eine der Schaltflächen <strong>Alle nicht aktivierten Assets auflisten</strong>, um die Details anzuzeigen.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Hinweis</strong>: Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es bis zu 10 Minuten dauern, bis die Assets im Viewer synchronisiert werden.</p> <p>Wenn nicht aktivierte Assets weiterhin vorhanden sind, wählen Sie eine der Schaltflächen <strong>Alle nicht aktivierten Assets auflisten</strong> aus, um Details anzuzeigen.</p> </td>
    <td>
     <ol>
      <li>Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Wählen Sie alle Viewer-Vorgaben aus und klicken Sie auf <strong>Veröffentlichen</strong>.</li>
+     <li>Wählen Sie alle Viewer-Vorgaben und dann <strong>Publish</strong> aus.</li>
      <li>Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.</li>
     </ol> </td>
   </tr>
