@@ -1,10 +1,13 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können  in Dynamic Media.
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können    in Dynamic Media.
+feature: 3D-Assets
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 55%
+source-wordcount: '565'
+ht-degree: 77%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 55%
 
 Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
 
-Der interaktive 3D-Viewer ist auf der Asset-Detailseite in Experience Manager verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
+Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Manager verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
@@ -24,7 +27,7 @@ Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dat
 | 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary |  |
-| GLTF | GL-Übertragungsformat | model/gltf+json | Siehe **Hinweis** unten. |
+| GLTF | GL-Übertragungsformat | model/gltf+json | Siehe den **Hinweis** unten. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Unterstützung nur für die Erfassung; Vorschau nicht verfügbar. |
@@ -32,7 +35,7 @@ Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dat
 
 >[!NOTE]
 >
->Wenn Materialien nicht in der Vorschau eines gLTF-Modells dargestellt werden, stellen Sie sicher, dass sie ordnungsgemäß benannt sind und sich in einem `textures` -Ordner im selben Stammordner wie das Modell befinden, ähnlich wie im Folgenden:
+>Wenn Materialien nicht in der Vorschau eines gLTF-Modells wiedergegeben werden, stellen Sie sicher, dass sie ordnungsgemäß benannt sind und sich in einem `textures`-Ordner befinden, der sich im selben Stammordner wie das Modell befindet, ähnlich wie im Folgenden beschrieben:
 
     Asset (folder)
     model.gltf
@@ -41,38 +44,38 @@ Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dat
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager{#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager {#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 
-Darüber hinaus sind die Funktionen des Client-Computers - wie Workstation, Notebook oder Mobilgerät mit Touch-Funktion - auch bei interaktiver Bedienung der Kamera zu beachten. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
+Wenn Sie die Kamera interaktiv handhaben, muss darüber hinaus die Kapazität des Client-Computers – etwa Workstation, Notebook oder Mobilgerät mit Touch-Funktion – berücksichtigt werden. Ein relativ leistungsfähiges System mit guten Grafikfähigkeiten unterstützt eine weichere, angenehmere interaktive 3D-Anzeige.
 
-**Vorschau von 3D-Assets in Experience Manager:**
+**So erstellen Sie eine Vorschau von 3D-Assets in Experience Manager:**
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Tippen Sie in Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Navigieren Sie vom Experience Manager auf der Seite **[!UICONTROL Navigation]** zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 
    ![Navigationsseite](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste „Ansicht“ auf **[!UICONTROL Kartenansicht]** und navigieren Sie dann zu einem 3D-Asset, das Sie in der Vorschau anzeigen möchten.
+1. Wählen Sie in der rechten oberen Ecke der Seite aus der Dropdownliste Ansicht die Option **[!UICONTROL Kartenansicht]** und navigieren Sie dann zu einem 3D-Asset, das Sie in der Vorschau anzeigen möchten.
 
    ![Auswahl der 3D-Karte](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _Tippen Sie in der Kartenansicht auf die Karte des 3D-Assets, das Sie in der Vorschau anzeigen möchten._
+   _Wählen Sie in der Kartenansicht die Karte des 3D-Assets aus, das Sie in der Vorschau anzeigen möchten._
 
-1. Tippen Sie auf die Karte des 3D-Assets.
+1. Wählen Sie die Karte des 3D-Assets aus.
 
    ![Interaktive 3D-Vorschau](/help/assets/dynamic-media/assets/3d-preview.png)
    _Interaktive Vorschau eines 3D-Assets auf der Seite mit der Detailansicht des Assets._
 1. Führen Sie auf der Seite mit der Detailansicht des Assets für das 3D-Asset einen der folgenden Schritte aus:
 
-   | Anzeigen | Beschreibung | Mausaktion | Aktion auf dem Touchscreen |
+   | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
-   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie die Ansicht nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
-   | **Kamera zoomen** | Verschieben Sie die Bereiche der 3D-Szene ein- und aus. | Scrollen Sie mit dem Mausrad. | Pinch mit zwei Fingern. |
-   | **Kamera neu zentrieren** | Zentrieren Sie Ihre Kamera neu auf einen Punkt auf einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
-   | **Zurücksetzen** | Tippen Sie in der rechten unteren Ecke der Seite auf das Symbol &quot;Zurücksetzen&quot;, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf der Seite auf das Symbol &quot;Vollbild&quot;. |  |  |
+   | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben und unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Bewegen Sie sich in Bereiche der 3D-Szene und wieder heraus. | Scrollen Sie mit dem Mausrad. | Bewegen Sie zwei Finger auseinander- bzw. zusammen. |
+   | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
+   | **Zurücksetzen** | Wählen Sie unten rechts auf der Seite das Symbol Zurücksetzen aus, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, wählen Sie unten rechts auf der Seite das Symbol &quot;Vollbild&quot;aus. |  |  |
 
-1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen]**.
+1. Wenn Sie fertig sind, wählen Sie rechts oben auf der Seite **[!UICONTROL Close]** aus.
