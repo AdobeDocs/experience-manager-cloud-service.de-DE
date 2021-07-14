@@ -1,13 +1,13 @@
 ---
 title: Anwenden von Dynamic Media-Viewer-Vorgaben
-description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben angewendet werden..
+description: Erfahren Sie, wie Sie Viewer-Vorgaben in Dynamic Media anwenden.
 feature: Viewer-Vorgaben,Viewer
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 73%
+source-wordcount: '221'
+ht-degree: 37%
 
 ---
 
@@ -21,19 +21,19 @@ Siehe auch [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#pub
 
 Je nach verwendetem Veröffentlichungsmodus müssen Sie keine Viewer-Vorgaben veröffentlichen.
 
-Informationen zu Problemen mit Viewer-Vorgaben finden Sie unter [Dynamic Media – ](troubleshoot-dm.md#viewers).
+Probleme mit Viewer-Vorgaben finden Sie unter [Fehlerbehebung bei Dynamic Media](troubleshoot-dm.md#viewers).
 
-## Anwenden von Dynamic Media-Viewer-Vorgaben auf ein Asset {#applying-a-viewer-preset-to-an-asset}
+## Anwenden einer Dynamic Media-Viewer-Vorgabe auf ein Asset {#applying-a-viewer-preset-to-an-asset}
 
-1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf **[!UICONTROL Viewer]**.
+1. Öffnen Sie das Asset und wählen Sie in der linken Leiste **[!UICONTROL Viewer]** aus.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * Die Schaltflächen **[!UICONTROL URL]** und **[!UICONTROL Einbetten]** werden angezeigt, nachdem Sie eine Viewer-Vorgabe ausgewählt haben.
-   * Das System zeigt mehrere Viewer-Vorgaben an, wenn Sie in der **[!UICONTROL Detailansicht]** eines Assets „Viewer“ auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](managing-viewer-presets.md).
+   * Das System zeigt mehrere Viewer-Vorgaben an, wenn Sie in der **[!UICONTROL Detailansicht]** eines Assets „Viewer“ auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhen Sie die Anzahl der angezeigten Viewer-Vorgaben](managing-viewer-presets.md).
 
 1. Wählen Sie einen Viewer aus dem linken Bereich aus, damit Sie ihn wie im rechten Bereich gezeigt auf das Asset anwenden können. Sie können auch die [URL kopieren, um sie für andere Benutzer freizugeben](linking-urls-to-yourwebapplication.md).
 
 ## Abrufen von Viewer-Vorgaben-URLs {#obtaining-viewer-preset-urls}
 
-Informationen zum Abrufen der URLs für Viewer-Vorgaben finden Sie unter [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
+Informationen zum Abrufen der URLs für Viewer-Vorgaben finden Sie unter [Verknüpfen von URLs mit Ihrer Webanwendung](linking-urls-to-yourwebapplication.md).
