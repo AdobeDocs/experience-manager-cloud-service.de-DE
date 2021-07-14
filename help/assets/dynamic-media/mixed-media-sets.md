@@ -4,10 +4,10 @@ description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in D
 feature: Gemischte Mediensets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1470'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -21,7 +21,7 @@ Gemischte Mediensets werden durch ein Banner mit dem Wort **[!UICONTROL MixedMed
 
 >[!NOTE]
 >
->Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md).
+>Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md).
 
 ## Schnellstartanleitungen: Gemischte Mediensets {#quick-start-mixed-media-sets}
 
