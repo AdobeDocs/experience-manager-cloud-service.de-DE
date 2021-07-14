@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte 
 feature: Asset-Management
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 78%
+ht-degree: 62%
 
 ---
 
@@ -17,13 +17,13 @@ Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für respons
 
 Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM befindet. Wenn sich Ihre Website jedoch stattdessen in Adobe Experience Manager befindet, rendert ein Offsite-Bildserver das Bild und stellt es für die Webseite bereit.
 
-Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
+Siehe auch [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
-Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
+Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
 
 **So stellen Sie optimierte Bilder für eine responsive Site bereit:**
 
-1. Wechseln Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und tippen Sie im Dropdown-Menü auf **[!UICONTROL Ausgabeformate]**.
+1. Navigieren Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und wählen Sie im Dropdown-Menü **[!UICONTROL Ausgabeformate]** aus.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Bildvorgaben werden automatisch veröffentlicht.
 
-1. Tippen Sie auf **[!UICONTROL RESS]**.
+1. Wählen Sie **[!UICONTROL RESS]** aus.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
