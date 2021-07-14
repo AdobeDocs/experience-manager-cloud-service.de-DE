@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dy
 feature: Panoramabilder
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
-Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
+Siehe auch [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Hochladen von Assets für die Verwendung mit dem Viewer für Panoramabilder {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Hochladen von Assets zur Verwendung mit dem Viewer für Panoramabilder {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Panoramabilder verwendet werden können, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:
 
@@ -27,11 +27,11 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
+* Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Siehe [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
 
 Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente `Panoramic Media`.
 
-Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+Informationen zum Hochladen von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -41,7 +41,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -60,9 +60,9 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -76,10 +76,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
+## Vorschau Panoramabilder {#previewing-panoramic-images}
 
-Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
+Siehe [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
+## Panoramabilder veröffentlichen {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
