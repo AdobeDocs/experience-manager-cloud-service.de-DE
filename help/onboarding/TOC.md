@@ -5,9 +5,9 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: fca1c30cfd321581eda3ed7e4514fd428e11cfad
+source-git-commit: 673ac234f0e9bfc0f5e6878abf5d01d38cbe918f
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '710'
 ht-degree: 95%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 95%
 + Erste Schritte mit AEM as a Cloud Service {#what-is-required}
    + [Adobe ID herunterladen](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager-Rollen](what-is-required/user-roles-permissions.md)
-   + [Systemadministratoraufgaben](what-is-required/add-users-assign-cm-roles.md)
+   + [Aufgaben des Systemadministrators](what-is-required/add-users-assign-cm-roles.md)
    + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
    + [Gewähren des Benutzerzugriffs auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager-Programme {#getting-access}
@@ -85,7 +85,8 @@ ht-degree: 95%
       + [Löschen einer IP-Zulassungsliste](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html?lang=de)
       + [Überprüfen des IP-Zulassungslistenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html?lang=de)
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
-      + [Aktuelle Versionshinweise (2021.6.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Aktuelle Versionshinweise (2021.7.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Versionshinweise für 2021.6.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
       + [Versionshinweise für 2021.5.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [Versionshinweise für 2021.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [Versionshinweise für 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
