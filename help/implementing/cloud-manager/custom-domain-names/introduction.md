@@ -2,7 +2,7 @@
 title: Einführung – benutzerdefinierte Domain-Namen
 description: Einführung – benutzerdefinierte Domain-Namen
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 558cd516a89d9012e96fb0b783d0df3eecfda73d
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 85%
@@ -21,7 +21,7 @@ ht-degree: 85%
 Mit Cloud Manager können Sie per Self-Service über die Benutzeroberfläche eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren. Adobe Experience Manager as a Cloud Service wird mit einem Standard-Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Dieser Name bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen hinzufügen.
 
 >[!NOTE]
->benutzerdefinierte Domain-Namen werden nur im Programm Cloud Manager für Sites (Publish-Service) unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten. AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
+>benutzerdefinierte Domain-Namen werden nur im Programm Cloud Manager für Sites (Publish-Service) unterstützt. Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten. AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
 
 Auf der Seite mit den Domain-Einstellungen für die Benutzeroberfläche von Cloud Manager oder der Seite „Umgebungsdetails“ können Anwender mit entsprechenden Berechtigungen unterschiedliche Aufgaben ausführen, um benutzerdefinierte Domain-Namen für die Umgebung zu verwalten. Dazu zählen unter anderem:
 
