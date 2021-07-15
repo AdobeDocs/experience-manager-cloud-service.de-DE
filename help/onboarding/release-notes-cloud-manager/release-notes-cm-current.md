@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Versionshinweise
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 18%
+source-wordcount: '349'
+ht-degree: 19%
 
 ---
 
@@ -34,7 +34,7 @@ Die nächste Version ist für den 12. August 2021 geplant.
 
 * Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
 
-* Die Schaltflächen **Git** verwalten wurden umbenannt in **Git-Informationen öffnen** und das Dialogfeld wurde visuell aktualisiert.
+* Die Schaltflächen **Git** verwalten wurden in **Git Info** öffnen umbenannt und das Dialogfeld wurde visuell aktualisiert.
 
 * Die Version des AEM Projektarchetyps, der von Cloud Manager verwendet wird, wurde auf Version 28 aktualisiert.
 
@@ -46,11 +46,9 @@ Die nächste Version ist für den 12. August 2021 geplant.
 
 * Die Fehlermeldung, die angezeigt wird, wenn die maximale Anzahl von SSL-Zertifikaten erreicht wurde, war nicht hilfreich.
 
-* Unter bestimmten Umständen kann es zu einer Diskrepanz in der Release-Version kommen, die auf der Pipeline-Karte auf der Übersichtsseite angezeigt wird.
+* Unter bestimmten Umständen kann es zu einer Diskrepanz in der Release-Version kommen, die auf der Pipeline-Karte auf der Seite **Übersicht** angezeigt wird.
 
 * Der Assistent Programm hinzufügen hat fälschlicherweise angegeben, dass der Name nach der Erstellung nicht mehr geändert werden kann.
-
-* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
 
 ### Bekannte Probleme {#known-issues}
 
