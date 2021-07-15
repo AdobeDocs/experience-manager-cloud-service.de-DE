@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 18%
+source-wordcount: '1585'
+ht-degree: 21%
 
 ---
 
@@ -41,7 +41,7 @@ Sehen Sie sich das Video [Versionsübersicht vom Juni 2021](https://video.tv.ado
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0 und 2021.5.0.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0.
 
 ### Veröffentlichungsdatum {#release-date-june-cm}
 
@@ -62,7 +62,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index`-Knoten als unveränderlich zu klassifizieren.
 
-* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern, die zur AEM Laufzeit bereitgestellt werden, genauer identifiziert.
+* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern genauer identifiziert, die zur AEM-Laufzeit bereitgestellt werden.
 
 * Um Verwirrung zu vermeiden, wurden die Segmentzeilen Veröffentlichen AEM und Veröffentlichen des Dispatchers auf der Seite Umgebungsdetails konsolidiert.
 
@@ -74,11 +74,11 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Fehlerbehebungen {#bug-fixes-junecm}
 
-* Fehlerkorrektur – JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
+* JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Fehlerkorrektur – Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
+* Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Fehlerkorrektur – Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
+* Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
 * Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste den grünen Status *active* sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
@@ -144,7 +144,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Forms-Administratoren können benutzerdefinierte Spalten in AEM Posteingang filtern.
 * Forms-Entwickler können den Design-Editor und die Stilschicht des adaptiven Formular-Editors verwenden, um die Captcha-Komponente zu gestalten.
-* Verbesserte Genauigkeit beim automatischen Erkennen logischer Abschnitte in den Quellformularen und Konvertieren dieser Abschnitte in entsprechende adaptive Formularbedienfelder.
+* Verbesserte Genauigkeit bei der automatischen Erkennung logischer Abschnitte in den Quellformularen und Konvertieren dieser Abschnitte in entsprechende Bedienfelder adaptiver Formulare.
 * Es wurde eine Verschiebeaktion hinzugefügt, mit der Sie eine PDF- oder XDP-Datei von einem Ordner in einen anderen verschieben können.
 * Verkürzte Ladezeit und verbesserte Leistung des adaptiven Formulareditors und des Design-Editors.
 
