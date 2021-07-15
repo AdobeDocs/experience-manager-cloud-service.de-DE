@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Versionshinweise
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 19%
+source-wordcount: '366'
+ht-degree: 18%
 
 ---
 
@@ -28,17 +28,19 @@ Die nächste Version ist für den 12. August 2021 geplant.
 
 * Die ausgehende Ausgangs-IP wird jetzt in der Protokolldatei des Buildschritts protokolliert.
 
-* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status &quot;Update verfügbar&quot;.
+* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status **Update Verfügbar**.
 
 * Die maximal unterstützten SSL-Zertifikate wurden auf 20 pro Programm erhöht.
 
-* Erhöhen Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
+* Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
 
-* Die Schaltflächen Git verwalten wurden eingestellt und das Dialogfeld Git-Informationen wurde visuell aktualisiert.
+* Die Schaltflächen **Git** verwalten wurden umbenannt in **Git-Informationen öffnen** und das Dialogfeld wurde visuell aktualisiert.
+
+* Die Version des AEM Projektarchetyps, der von Cloud Manager verwendet wird, wurde auf Version 28 aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* In einigen Fällen war die Vorschau keine verfügbare Option beim Binden einer IP-Zulassungsliste an eine Umgebung.
+* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
 
 * Beim manuellen Navigieren zur Seite mit den Ausführungsdetails für eine nicht vorhandene Ausführung wurde kein Fehler angezeigt, sondern nur ein Bildschirm mit endlosen Ladevorgängen.
 
@@ -48,7 +50,7 @@ Die nächste Version ist für den 12. August 2021 geplant.
 
 * Der Assistent Programm hinzufügen hat fälschlicherweise angegeben, dass der Name nach der Erstellung nicht mehr geändert werden kann.
 
-* In einigen Fällen war die Vorschau keine verfügbare Option beim Binden einer IP-Zulassungsliste an eine Umgebung.
+* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
 
 ### Bekannte Probleme {#known-issues}
 
