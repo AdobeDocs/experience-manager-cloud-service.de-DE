@@ -1,7 +1,7 @@
 ---
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 5%
@@ -54,9 +54,9 @@ In diesem Abschnitt erfahren Sie, wie Sie die Karte für die Code-Refaktorierung
 
 1. Auf der Seite wird die Liste der Code-Refaktorierungs-Aktivitäten nach Schweregrad-Ebene angezeigt. Weitere Informationen erhalten Sie, wenn Sie auf die beiden hervorgehobenen Symbole klicken.
 
-   Auf der Seite werden die Überlegungen zur Code-Umgestaltung auf drei verschiedenen Registerkarten angezeigt.
+   Auf der Seite werden die Überlegungen zur Code-Umgestaltung auf drei verschiedenen Registerkarten angezeigt:
 
-   * Übersicht:
+   * Übersicht
    * Dispatcher
    * Tests
 
