@@ -1,10 +1,10 @@
 ---
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 4%
+source-wordcount: '689'
+ht-degree: 5%
 
 ---
 
@@ -54,10 +54,27 @@ In diesem Abschnitt erfahren Sie, wie Sie die Karte für die Code-Refaktorierung
 
 1. Auf der Seite wird die Liste der Code-Refaktorierungs-Aktivitäten nach Schweregrad-Ebene angezeigt. Weitere Informationen erhalten Sie, wenn Sie auf die beiden hervorgehobenen Symbole klicken.
 
+   Auf der Seite werden die Überlegungen zur Code-Umgestaltung auf drei verschiedenen Registerkarten angezeigt.
+
+   * Übersicht:
+   * Dispatcher
+   * Tests
+
+   Auf der Registerkarte **Übersicht** wird eine Liste der Code-Refaktorierungsaktivitäten angezeigt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   Die Registerkarte **Dispatcher** enthält Informationen zur Struktur der Apache- und Dispatcher-Konfigurationen für AEM als Cloud Service sowie dazu, wie sie vor der Bereitstellung in Cloud-Umgebungen lokal validiert und ausgeführt werden. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   Die Registerkarte **Testen** enthält Informationen zu Funktions-, Erlebnis-Audit- und UI-Tests.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >Lesen Sie außerdem den Inhalt auf den Registerkarten der Seite, um mehr über einige zusätzliche Bereiche zu erfahren, die nicht von Best Practices Analyzer abgedeckt werden.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## AEM as a Cloud Service Deployment Card verwenden {#aem-as-a-cloud-service-deployment}
