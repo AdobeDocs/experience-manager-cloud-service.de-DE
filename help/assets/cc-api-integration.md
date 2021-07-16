@@ -4,9 +4,9 @@ description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Int
 contentOwner: AG
 feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
 role: User,Admin
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 997f292be2498624c5218addd61ec40727eb48bc
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,20 @@ ht-degree: 0%
 
 # Generieren von Varianten von Assets mithilfe der Integration von [!DNL Adobe Creative Cloud] {#content-automation}
 
-Das Add-on zur Inhaltsautomatisierung integriert Experience Manager Assets as a Cloud Service und Adobe Creative Cloud-APIs, um Ihre Assets skaliert kreativ zu verarbeiten. Experience Manager verwendet Cloud-basierte [Asset-Microservices](/help/assets/asset-microservices-overview.md), um die Adobe Creative Cloud-Funktionen zu nutzen und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
+Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets as a Cloud Service]- und [!DNL Adobe Creative Cloud]-APIs, um Ihre Assets im Maßstab kreativ zu verarbeiten. [!DNL Experience Manager] verwendet Cloud-basierte  [Asset-](/help/assets/asset-microservices-overview.md) Microservices, um die  [!DNL Adobe Creative Cloud] Funktionen zu verwenden und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
 
-Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie sie nicht herunterladen, bearbeiten und in [!DNL Experience Manager Assets] hochladen. Erstellen und konfigurieren Sie einfach ein Verarbeitungsprofil, wenden Sie das Profil auf einen Ordner an und laden Sie die Assets in den Ordner hoch. Die in den Ordner hochgeladenen Assets werden verarbeitet, um verschiedene Varianten dieses Assets zu erstellen. Die konsistente und mühelose Massenverarbeitung und -bearbeitung von Assets spart manuelle Arbeit und erhöht die Content-Geschwindigkeit. Darüber hinaus können Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
-
+Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie keine Assets von [!DNL Experience Manager Assets] herunterladen, sie bearbeiten und erneut hochladen. Sie müssen lediglich ein Verarbeitungsprofil in [!DNL Experience Manager] erstellen und konfigurieren, das Profil auf einen Ordner anwenden und die Assets in den Ordner hochladen. Ihre hochgeladenen Assets werden basierend auf den Verarbeitungsprofilen erneut verarbeitet und Sie erhalten Varianten dieser Assets. Die konsistente und mühelose Massenverarbeitung spart manuelle Arbeit und erhöht die Content-Geschwindigkeit, auch das ohne die Notwendigkeit von kreativen Fähigkeiten. Außerdem können Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
 Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:
 
 * **Auto-Ton**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und basierend auf den einzigartigen Eigenschaften des Bildes intelligent Licht- und Farbkorrekturen vorzunehmen.
 * **Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. So erstellen Sie beispielsweise Horizonte auf Ebene.
 * **Lightroom-Vorgaben**: Wendet einen benutzerdefinierten Look auf Bilder an, um ein konsistentes Erscheinungsbild mit benutzerdefinierten Vorgaben zu erzielen.
-* **Bild-Cutout**: Verwendet künstliche Intelligenz, um Auswahlmöglichkeiten um visuelle Objekte zu erstellen und Hintergrund mit einem einzigen Befehl zu entfernen.
-* **Bildmaske**: Verwendet künstliche Intelligenz, um mit einem einzigen Befehl Masken um visuelle Objekte zu erstellen.
+* **Bild-Cutout**: Verwendet künstliche Intelligenz, um Auswahlmöglichkeiten für Alison-Objekte zu erstellen und Hintergrund mit einem einzigen Befehl zu entfernen.
+* **Bildmaske**: Verwendet künstliche Intelligenz zum Erstellen von Masken um visuelle Objekte mit einem einzigen Befehl.
 * **Photoshop-Aktionen**: Wendet eine Reihe von Aufgaben (in Photoshop) auf eine Datei oder einen Dateistapel an.
-* **Smart Object Replacement**: Personalisierungen werden skaliert durchgeführt, indem Sie Bilder austauschen und dabei alle in einer PSD-Datei angewendeten Effekte und Anpassungen beibehalten.
+* **Smart Object Replacement**: Personalisierung im Maßstab, indem Sie Bilder austauschen und dabei alle Effekte und Anpassungen beibehalten, die in einer PSD-Datei vorgenommen werden.
 
-## Verarbeitungsprofil zur Verarbeitung von Assets verwenden {#process-assets}
+## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets stapelweise zu bearbeiten {#process-assets}
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
 
@@ -38,11 +37,12 @@ Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varia
 
 1. Wählen Sie **[!UICONTROL Erstellen]** und geben Sie einen **[!UICONTROL Namen]** an.
 
-1. Wählen Sie die Registerkarte **[!UICONTROL Creative]**, geben Sie den Ausgabeordner an und wählen Sie **[!UICONTROL Neu hinzufügen]** aus, um kreative Konfigurationen hinzuzufügen.
+1. Wählen Sie die Registerkarte **[!UICONTROL Creative]** aus, geben Sie den Ausgabeordner an und wählen Sie **[!UICONTROL Neu hinzufügen]** aus, um eine kreative Konfiguration hinzuzufügen.
 
 1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder den Ausgabenamen), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie Listen vom Typ MIME ein- und ausschließen (oder den Asset-Eingabefilter) und wählen Sie den gewünschten kreativen Vorgang aus.
+   ![Kreativ-Registerkarte im Verarbeitungsprofil](assets/creative-processing-profile.png)
 
-1. Einige Vorgänge erfordern einen zusätzlichen Parameter (Asset). Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
+1. Einige Vorgänge erfordern zusätzliche Parameter (Asset). Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
 
 1. Fügen Sie weitere kreative Vorgänge als Teil desselben Verarbeitungsprofils hinzu oder speichern Sie das Profil.
 
@@ -61,4 +61,5 @@ Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, wählen Si
 >
 >* [Konfigurieren und verwenden Sie Asset-Microservices über Verarbeitungsprofile](/help/assets/asset-microservices-configure-and-use.md).
 >* [ [!DNL Experience Manager] Integrieren mit [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Asset-Erfassung und -Verarbeitung mit Asset-Microservices: Eine Übersicht](/help/assets/asset-microservices-overview.md).
 
