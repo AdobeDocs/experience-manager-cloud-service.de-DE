@@ -2,10 +2,10 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 22%
+source-wordcount: '1229'
+ht-degree: 21%
 
 ---
 
@@ -55,6 +55,10 @@ Aktivieren eines Baumes:
 
    ![Verteilen](assets/publish-distribute.png "Verteilen")
 4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
+
+Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Funktion die folgenden Richtlinien:
+* Die Gesamtgröße des für die Replikation generierten Inhaltspakets muss unter 5 MB liegen.
+* Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, mit einer harten Begrenzung von 500 Pfaden.
 
 ### Arbeitsablauf der Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
 
