@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset-Verarbeitung
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 89%
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um ein Standardverarbeitungsprofil zu erstellen:
 
 1. Administratoren greifen auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** zu. Klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Namen ein, der Ihnen hilft, das Profil beim Anwenden auf einen Ordner eindeutig zu identifizieren.
-1. Um FPO-Ausgabedarstellungen zu erstellen, aktivieren Sie auf der Registerkarte **[!UICONTROL Standard]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie einen Wert für **[!UICONTROL Qualität]** zwischen 1 und 100 ein.
+1. Um FPO-Ausgabedarstellungen zu generieren, aktivieren Sie auf der Registerkarte **[!UICONTROL Bild]** die Option **[!UICONTROL FPO-Ausgabedarstellung erstellen]**. Geben Sie einen Wert für **[!UICONTROL Qualität]** zwischen 1 und 100 ein.
 1. Um andere Ausgabedarstellungen zu erstellen, klicken Sie auf **[!UICONTROL Neu hinzufügen]** und geben Sie die folgenden Informationen ein:
 
    * Dateiname der jeweiligen Ausgabedarstellung.
