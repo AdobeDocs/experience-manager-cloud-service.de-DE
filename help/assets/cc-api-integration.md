@@ -4,9 +4,9 @@ description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Int
 contentOwner: AG
 feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
 role: User,Admin
-source-git-commit: 997f292be2498624c5218addd61ec40727eb48bc
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,9 @@ ht-degree: 0%
 Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets as a Cloud Service]- und [!DNL Adobe Creative Cloud]-APIs, um Ihre Assets im Maßstab kreativ zu verarbeiten. [!DNL Experience Manager] verwendet Cloud-basierte  [Asset-](/help/assets/asset-microservices-overview.md) Microservices, um die  [!DNL Adobe Creative Cloud] Funktionen zu verwenden und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
 
 Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie keine Assets von [!DNL Experience Manager Assets] herunterladen, sie bearbeiten und erneut hochladen. Sie müssen lediglich ein Verarbeitungsprofil in [!DNL Experience Manager] erstellen und konfigurieren, das Profil auf einen Ordner anwenden und die Assets in den Ordner hochladen. Ihre hochgeladenen Assets werden basierend auf den Verarbeitungsprofilen erneut verarbeitet und Sie erhalten Varianten dieser Assets. Die konsistente und mühelose Massenverarbeitung spart manuelle Arbeit und erhöht die Content-Geschwindigkeit, auch das ohne die Notwendigkeit von kreativen Fähigkeiten. Außerdem können Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
-Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:
 
+Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:\
+![Automatisieren von Adobe Photoshop- und Adobe Lightroom-Vorgängen für Assets](assets/content-automation.png)
 * **Auto-Ton**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und basierend auf den einzigartigen Eigenschaften des Bildes intelligent Licht- und Farbkorrekturen vorzunehmen.
 * **Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. So erstellen Sie beispielsweise Horizonte auf Ebene.
 * **Lightroom-Vorgaben**: Wendet einen benutzerdefinierten Look auf Bilder an, um ein konsistentes Erscheinungsbild mit benutzerdefinierten Vorgaben zu erzielen.
@@ -26,6 +27,8 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 * **Bildmaske**: Verwendet künstliche Intelligenz zum Erstellen von Masken um visuelle Objekte mit einem einzigen Befehl.
 * **Photoshop-Aktionen**: Wendet eine Reihe von Aufgaben (in Photoshop) auf eine Datei oder einen Dateistapel an.
 * **Smart Object Replacement**: Personalisierung im Maßstab, indem Sie Bilder austauschen und dabei alle Effekte und Anpassungen beibehalten, die in einer PSD-Datei vorgenommen werden.
+
+
 
 ## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets stapelweise zu bearbeiten {#process-assets}
 
@@ -39,7 +42,7 @@ Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varia
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Creative]** aus, geben Sie den Ausgabeordner an und wählen Sie **[!UICONTROL Neu hinzufügen]** aus, um eine kreative Konfiguration hinzuzufügen.
 
-1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder den Ausgabenamen), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie Listen vom Typ MIME ein- und ausschließen (oder den Asset-Eingabefilter) und wählen Sie den gewünschten kreativen Vorgang aus.
+1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder Ausgabename), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie **[!UICONTROL Includes]** und **[!UICONTROL Excludes]** MIME-Listen (oder Eingabe-Asset-Filter) und wählen Sie die erforderlichen Vorgang.
    ![Kreativ-Registerkarte im Verarbeitungsprofil](assets/creative-processing-profile.png)
 
 1. Einige Vorgänge erfordern zusätzliche Parameter (Asset). Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
