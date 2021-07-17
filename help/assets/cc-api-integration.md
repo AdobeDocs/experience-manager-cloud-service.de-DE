@@ -4,9 +4,9 @@ description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Int
 contentOwner: AG
 feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets as a Cloud Service]- und [!DNL Adobe Creative Cloud]-APIs, um Ihre Assets im Maßstab kreativ zu verarbeiten. [!DNL Experience Manager] verwendet Cloud-basierte  [Asset-](/help/assets/asset-microservices-overview.md) Microservices, um die  [!DNL Adobe Creative Cloud] Funktionen zu verwenden und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
 
-Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie keine Assets von [!DNL Experience Manager Assets] herunterladen, sie bearbeiten und erneut hochladen. Sie müssen lediglich ein Verarbeitungsprofil in [!DNL Experience Manager] erstellen und konfigurieren, das Profil auf einen Ordner anwenden und die Assets in den Ordner hochladen. Ihre hochgeladenen Assets werden basierend auf den Verarbeitungsprofilen erneut verarbeitet und Sie erhalten Varianten dieser Assets. Die konsistente und mühelose Massenverarbeitung spart manuelle Arbeit und erhöht die Content-Geschwindigkeit, auch das ohne die Notwendigkeit von kreativen Fähigkeiten. Außerdem können Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
+Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie keine Assets von [!DNL Experience Manager Assets] herunterladen, sie bearbeiten und erneut hochladen. Sie erstellen und konfigurieren ein Verarbeitungsprofil in [!DNL Experience Manager], wenden das Profil auf einen Ordner an und laden die Assets in den Ordner hoch. Ihre hochgeladenen Assets werden basierend auf den Verarbeitungsprofilen erneut verarbeitet und Sie erhalten Varianten dieser Assets. Die konsistente und mühelose Massenverarbeitung spart manuelle Arbeit und erhöht die Content-Geschwindigkeit, auch das ohne die Notwendigkeit von kreativen Fähigkeiten. Außerdem können die Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
 
 Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:\
 ![Automatisieren von Adobe Photoshop- und Adobe Lightroom-Vorgängen für Assets](assets/content-automation.png)
