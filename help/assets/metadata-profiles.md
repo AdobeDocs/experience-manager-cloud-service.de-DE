@@ -2,12 +2,12 @@
 title: Metadatenprofile
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadaten
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1238'
 ht-degree: 72%
 
 ---
@@ -98,7 +98,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 **Um ein Metadatenprofil global anzuwenden, führen Sie einen der folgenden Schritte aus:**
 
-* Navigieren Sie zu `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, wenden Sie das entsprechende Profil an und klicken Sie auf **Speichern**.
+* Navigieren Sie zu `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, wenden Sie das entsprechende Profil an und klicken Sie auf **[!UICONTROL Speichern]**.
 
 * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` hinzu. Klicken Sie auf **Alle speichern**.
 
@@ -110,7 +110,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. W
 
 ### Entfernen von Metadatenprofilen aus Ordnern über die Benutzeroberfläche „Profile“  {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
 1. Klicken Sie auf **[!UICONTROL Metadatenprofil aus Ordner(n)]** entfernen, wählen Sie den Ordner oder mehrere Ordner aus, aus dem/denen Sie ein Profil entfernen möchten, und klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -118,6 +118,6 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. W
 
 ### Entfernen von Metadatenprofilen aus Ordnern über „Eigenschaften“  {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
 1. Klicken Sie im Ordner auf das Häkchen, um ihn auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
