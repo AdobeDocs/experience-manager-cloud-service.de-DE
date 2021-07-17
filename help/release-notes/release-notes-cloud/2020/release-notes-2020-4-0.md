@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.4.0
 description: Versionshinweise für Experience Manager 2020.4.0
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 >* [Über Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Konfigurieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Konfigurieren von Experience Manager für die Verwendung mit Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Erstellen von Workflows in Experience Manager mithilfe von Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Erstellen von Workflows in Experience Manager mit Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Neue Funktionen in Cloud Manager {#whats-new-cloud-manager}
