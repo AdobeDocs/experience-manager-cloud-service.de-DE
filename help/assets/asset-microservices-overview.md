@@ -5,10 +5,10 @@ contentOwner: AG
 feature: asset compute Microservices,Workflow,Versionsinformationen,Asset-Verarbeitung
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 84%
+ht-degree: 82%
 
 ---
 
@@ -43,7 +43,7 @@ Die wichtigsten Schritte der Erfassung und Verarbeitung mithilfe von Asset-Micro
 * Clients wie Webbrowser oder Adobe Asset Link senden eine Upload-Anfrage an [!DNL Experience Manager] und beginnen mit dem Hochladen der Binärdatei direkt in den binären Cloud-Speicher.
 * Nach Abschluss des direkten binären Uploads benachrichtigt der Client [!DNL Experience Manager].
 * [!DNL Experience Manager] sendet eine Verarbeitungsanfrage an Asset-Microservices. Der Inhalt der Anfrage hängt von der Konfiguration der Verarbeitungsprofile in [!DNL Experience Manager] ab, die angeben, welche Ausgabeformate generiert werden sollen.
-* Das Backend der Assets-Microservices empfängt die Anfrage und sendet sie je nach Anfrage an einen oder mehrere Microservices. Jeder Microservice greift direkt auf die ursprüngliche Binärdatei im binären Cloud-Speicher zu.
+* Das Backend von Asset-Microservices empfängt die Anfrage und sendet sie basierend auf der Anfrage an einen oder mehrere Microservices. Jeder Microservice greift direkt auf die ursprüngliche Binärdatei im binären Cloud-Speicher zu.
 * Die Ergebnisse der Verarbeitung, z. B. Ausgabedarstellungen, werden im binären Cloud-Speicher gespeichert.
 * Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Ausgabedarstellungen) vorhanden sind. Die generierten Ausgabeformate sind in [!DNL Experience Manager] für das hochgeladene Asset verfügbar.
 
