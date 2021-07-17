@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 87%
+source-wordcount: '1436'
+ht-degree: 84%
 
 ---
 
@@ -69,7 +69,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
-1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
+1. [PUT des Inhalts der ](#upload-binary) Binärdatei auf einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
 1. [Senden einer HTTP-Anfrage](#complete-upload), um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.
 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 }
 ```
 
-* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
+* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
 * `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
 * `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
 * `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
@@ -125,7 +125,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, teilt der Client die Binärdatei in Teile und sendet die POST-Anfrage jeden Teils in der richtigen Reihenfolge an jede URI. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehrere URIs angegeben werden, teilt der Client die Binärdatei in Teile auf und sendet PUT-Anfragen für jeden Teil an jeden URI in der richtigen Reihenfolge. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
 
 Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Bytes und die Anzahl der Upload-URIs beträgt 2. Führen Sie dann die folgenden Schritte aus:
 
@@ -154,9 +154,7 @@ Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist,
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
-Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist.
-
-Bei erfolgreicher Ausführung antwortet der Server mit Status-Code `200`.
+Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist. Wenn der Upload erfolgreich war, antwortet der Server mit dem Status-Code `200` .
 
 ### Open-Source-Upload-Bibliothek {#open-source-upload-library}
 
