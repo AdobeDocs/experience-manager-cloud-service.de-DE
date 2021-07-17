@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Asset-Management, Übersetzung
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 99%
+source-wordcount: '2587'
+ht-degree: 92%
 
 ---
 
 # Mehrsprachige Assets {#multilingual-assets}
 
-Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird. Mit Adobe Experience Manager (AEM) Assets können Sie Übersetzungs-Workflows für Assets automatisieren (einschließlich Binärdateien, Metadaten und Tags), um Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
+Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird. Mit Adobe Experience Manager Assets können Sie Übersetzungs-Workflows für Assets (einschließlich Binärdateien, Metadaten und Tags) automatisieren, um Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
 
-Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdienstleister mit AEM und erstellen Sie Projekte für die Übersetzung von Assets in mehrere Sprachen. AEM unterstützt Workflows für menschliche und maschinelle Übersetzungen.
+Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsanbieter in Experience Manager und erstellen Sie Projekte für die Übersetzung von Assets in mehrere Sprachen. Experience Manager unterstützt Workflows für menschliche und maschinelle Übersetzung.
 
-Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in AEM importiert. Wenn Ihr Übersetzungsanbieter mit AEM integriert ist, werden die Assets automatisch zwischen AEM und dem Übersetzungsanbieter gesendet.
+Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in Experience Manager importiert. Wenn Ihr Übersetzungsanbieter in Experience Manager integriert ist, werden Assets automatisch zwischen dem Experience Manager und dem Übersetzungsanbieter gesendet.
 
 Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird.
 
-In Adobe Experience Manager (AEM) Assets sind mehrsprachige Assets in Ordnern enthalten, wobei jeder Ordner die Assets in einer anderen Sprache enthält.
+In Adobe Experience Manager Assets sind mehrsprachige Assets in Ordnern enthalten, in denen jeder Ordner die Assets in einer anderen Sprache enthält.
 
 Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/dam/it` der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](#create-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
@@ -89,7 +89,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 ### Anzeigen von Sprachstämmen {#view-language-roots}
 
-Die Touch-optimierte Benutzeroberfläche bietet einen Bereich „Verweise“, der eine Liste von Sprachstämmen anzeigt, die in AEM Assets erstellt wurden.
+Die Touch-optimierte Benutzeroberfläche bietet einen Bereich &quot;Verweise&quot;, der eine Liste der Sprachstämme anzeigt, die in [!DNL Assets] erstellt wurden.
 
 1. In der Konsole „Assets“ wählen Sie die primäre Sprachinstanz aus, für die Sie Sprachkopien erstellen möchten.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Verweise]** aus, um den Bereich „Verweise“ zu öffnen.
@@ -169,9 +169,9 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 
 ### Erstellen temporärer Sprachkopien {#creating-temporary-language-copies}
 
-Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. AEM Assets speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
+Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Assets] speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
-1. Klicken/tippen Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]**, für den Sie bereits eine Sprachkopie erstellt haben, und klicken/tippen Sie anschließend auf **[!UICONTROL In Assets einblenden]**, um den Ordner in AEM Assets zu öffnen.
+1. Klicken/tippen Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]**, für den Sie bereits eine Sprachkopie erstellt haben, und klicken/tippen Sie dann auf **[!UICONTROL In Assets einblenden]**, um den Ordner in [!DNL Assets] zu öffnen.
 1. Wählen Sie in der Benutzeroberfläche von Assets ein bereits übersetztes Asset und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**, um das Asset im Bearbeitungsmodus zu öffnen.
 1. Bearbeiten Sie das Asset und speichern Sie die Änderungen.
 1. Führen Sie Schritt 2 bis 14 des Verfahrens [Zu vorhandenem Übersetzungsprojekt hinzufügen](#add-to-existing-translation-project) aus, um die Sprachkopie zu aktualisieren.
@@ -234,7 +234,7 @@ Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchi
 
 ## Anwenden von Übersetzungs-Cloud-Services auf Ordner {#applying-translation-cloud-services-to-folders}
 
-Mit Adobe Experience Manager (AEM) können Sie von Cloud-basierten Übersetzungs-Services von Ihrem bevorzugten Übersetzungsanbieter Gebrauch machen, um sicherzustellen, dass Ihre Assets basierend auf Ihren Anforderungen übersetzt werden.
+Mit Adobe Experience Manager können Sie Cloud-basierte Übersetzungsdienste des Übersetzungsanbieters Ihrer Wahl nutzen, um sicherzustellen, dass Ihre Assets entsprechend Ihren Anforderungen übersetzt werden.
 
 Sie können den Übersetzungs-Cloud-Service direkt auf Ihren Asset-Ordner anwenden, sodass die Assets in den Übersetzungs-Workflows verwendet werden können.
 
@@ -263,7 +263,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwenden möchten, den Sie in den Übersetzungsworkflows verwenden möchten. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector aus Package Manager. Konfigurieren Sie dann den Connector über die Cloud Services Console. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
 
 1. Installieren Sie den Connector von Package Manager.
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
+1. Klicken/tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
 1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud-Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
