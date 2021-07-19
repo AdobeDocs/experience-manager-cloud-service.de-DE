@@ -2,10 +2,10 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 20%
+source-wordcount: '1189'
+ht-degree: 22%
 
 ---
 
@@ -55,10 +55,6 @@ Aktivieren eines Baumes:
 
    ![Verteilen](assets/publish-distribute.png "Verteilen")
 4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
-
-Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Funktion die folgenden Richtlinien:
-* Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, mit einer harten Begrenzung von 500 Pfaden.
-* Die Gesamtgröße des replizierten Inhalts muss unter 5 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
 
 ### Arbeitsablauf der Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
 
@@ -189,11 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Wenn Sie einen solchen Filter nicht bereitstellen und nur den Agenten &quot;publish&quot;verwenden, wird der Agent &quot;preview&quot;nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
 
 Die Gesamtsumme `ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Agenten &quot;preview&quot;verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Agenten &quot;publish&quot;. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
-
-
-**Pfad und Größenbeschränkungen für Replikations-API**
-
-Es wird empfohlen, weniger als 100 Pfade zu replizieren, wobei 500 die feste Grenze ist. Über der festen Grenze wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze überwunden werden, indem Sie die ReplicationOptions.setUseAtomicCalls auf &quot;false&quot;setzen, was eine beliebige Anzahl von Pfaden akzeptiert, aber intern Behälter erstellt, die unter diesem Grenzwert bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 5 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
 
 ## Fehlerbehebung {#troubleshooting}
 
