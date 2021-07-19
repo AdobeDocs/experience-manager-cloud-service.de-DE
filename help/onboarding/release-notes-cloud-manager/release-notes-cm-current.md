@@ -1,56 +1,61 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Versionshinweise
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 19%
+source-wordcount: '419'
+ht-degree: 52%
 
 ---
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.6.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
 >Um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen, klicken Sie auf [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 15. Juli 2021 veröffentlicht.
-Die nächste Version ist für den 12. August 2021 geplant.
+Die Version 2021.6.0 von Cloud Manager in AEM wurde am 10. Juni 2021 veröffentlicht.
+Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
-* Kunden können jetzt Azul 8- und 11-JDKs für ihre Cloud Manager-Build-Prozesse verwenden und entweder festlegen, eines dieser JDKs für toolchain-kompatible Maven-Plug-ins *oder* für die gesamte Maven-Prozessausführung zu verwenden.
+* Der Vorschaudienst wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) .
 
-* Die ausgehende Ausgangs-IP wird jetzt in der Protokolldatei des Buildschritts protokolliert.
+* Maven-Abhängigkeiten, die während des Build-Schritts heruntergeladen wurden, werden jetzt zwischen Pipeline-Ausführungen zwischengespeichert. Diese Funktion wird in den nächsten Wochen für Kunden aktiviert.
 
-* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status **Update Verfügbar**.
+* Der Name des Programms kann jetzt im Dialogfeld Programm bearbeiten bearbeitet werden.
 
-* Die maximal unterstützten SSL-Zertifikate wurden auf 20 pro Programm erhöht.
+* Der standardmäßige Name der Verzweigung, der sowohl bei der Projekterstellung als auch im Standard-Push-Befehl über „Git-Workflows verwalten“ verwendet wird, wurde zu `main` geändert.
 
-* Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
+* Die Bearbeitung des Programmerlebnisses in der Benutzeroberfläche wurde aktualisiert.
 
-* Die Schaltflächen **Git** verwalten wurden in **Git Info** öffnen umbenannt und das Dialogfeld wurde visuell aktualisiert.
+* Die Qualitätsregel `ImmutableMutableMixCheck` wurde aktualisiert, um `/oak:index`-Knoten als unveränderlich zu klassifizieren.
 
-* Die Version des AEM Projektarchetyps, der von Cloud Manager verwendet wird, wurde auf Version 28 aktualisiert.
+* Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern genauer identifiziert, die zur AEM-Laufzeit bereitgestellt werden.
+
+* Um Verwirrung zu vermeiden, wurden die Segmentzeilen Veröffentlichen AEM und Veröffentlichen des Dispatchers auf der Seite Umgebungsdetails konsolidiert.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene` -Indizes zu überprüfen. Weitere Informationen finden Sie unter [Benutzerdefinierte DAM-Asset Lucene Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+
+* Auf der Seite &quot;Umgebungsdetails&quot;werden jetzt mehrere Domänennamen für Veröffentlichungs- und Vorschaudienste angezeigt (sofern zutreffend). Weitere Informationen finden Sie unter [Umgebungsdetails](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) .
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
+* JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Beim manuellen Navigieren zur Seite mit den Ausführungsdetails für eine nicht vorhandene Ausführung wurde kein Fehler angezeigt, sondern nur ein Bildschirm mit endlosen Ladevorgängen.
+* Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Die Fehlermeldung, die angezeigt wird, wenn die maximale Anzahl von SSL-Zertifikaten erreicht wurde, war nicht hilfreich.
+* Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
-* Unter bestimmten Umständen kann es zu einer Diskrepanz in der Release-Version kommen, die auf der Pipeline-Karte auf der Seite **Übersicht** angezeigt wird.
+* Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste den grünen Status *active* sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Der Assistent Programm hinzufügen hat fälschlicherweise angegeben, dass der Name nach der Erstellung nicht mehr geändert werden kann.
+* Einige Programmbearbeitungssequenzen können dazu führen, dass die Produktions-Pipeline nicht erstellt oder bearbeitet werden kann.
 
-### Bekannte Probleme {#known-issues}
-
-Kunden, die zur Verwendung der Azul JDKs wechseln, sollten beachten, dass nicht alle vorhandenen Anwendungen ohne Fehler auf Azul JDK kompiliert werden. Es wird dringend empfohlen, vor dem Wechsel lokal zu testen.
-
+* Einige Programmbearbeitungssequenzen können dazu führen, dass auf der Seite **Übersicht** eine irreführende Meldung angezeigt wird, um die Programmeinrichtung erneut auszuführen.
