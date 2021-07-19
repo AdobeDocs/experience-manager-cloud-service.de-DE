@@ -2,7 +2,7 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 92%
@@ -23,7 +23,7 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
 
-* Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten.
+* Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten.
 
 * Derselbe Domain-Name kann nicht in mehr als einer Umgebung verwendet werden.
 
