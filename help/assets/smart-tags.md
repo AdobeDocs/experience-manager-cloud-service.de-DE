@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart-Tags, Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2350'
 ht-degree: 89%
 
 ---
@@ -19,7 +19,7 @@ Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomie
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging anhand einer Unternehmenstaxonomie dabei, die Assets am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller für das Erstellen einer Werbekampagne Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass bei einer Suche nur relevante Bilder angezeigt werden.
 
-Im Hintergrund verwenden die Funktionen ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] -Implementierungen sind  [!DNL Adobe Developer Console] standardmäßig in integriert.
+Im Hintergrund verwenden die Funktionen ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig Smart-Tags auf hochgeladene Assets automatisch an.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 
 ## Tagging von Assets mit Smart-Tags {#tag-assets}
 
-Alle Typen unterstützter Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] mit Tags versehen. Tagging ist standardmäßig aktiviert. [!DNL Experience Manager] wendet die entsprechenden Tags nahezu in Echtzeit an.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Alle Typen unterstützter Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] mit Tags versehen. Tagging ist standardmäßig aktiviert und funktioniert. [!DNL Experience Manager] wendet die entsprechenden Tags nahezu in Echtzeit an.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-Bei Bildern und Videos werden die Smart-Tags basierend auf einem visuellen Aspekt abgeleitet.
+* Bei Bildern und Videos basieren die Smart-Tags auf einem visuellen Aspekt.
 
-Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Textmenge im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die Smart-Tags die Keywords, die im Text angezeigt werden, und zwar die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert und zum Suchen nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine spezielle, strukturierte Suchfacette mit höherer Priorität, mit der die Asset-Erkennung im Vergleich zum vollständigen Suchindex verbessert wird.
+* Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Textmenge im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die Smart-Tags die Keywords, die im Text angezeigt werden, und zwar die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert und zum Suchen nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine spezielle, strukturierte Suchfacette mit höherer Priorität, mit der die Asset-Erkennung im Vergleich zum vollständigen Suchindex verbessert wird.
 
 ## Verwalten von Smart-Tags und Asset-Suchvorgängen {#manage-smart-tags-and-searches}
 
