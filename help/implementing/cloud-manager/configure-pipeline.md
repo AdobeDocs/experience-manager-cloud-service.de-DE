@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 96%
+source-wordcount: '791'
+ht-degree: 89%
 
 ---
 
@@ -116,7 +116,7 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
 1. Greifen Sie im Cloud Manager-Startbildschirm auf die Kachel **Nicht-Produktions-Pipelines** zu.
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. Klicken Sie auf **Hinzufügen**, um den Pipeline-Namen, den Pipeline-Typ und die Git-Verzweigung anzugeben.
 
@@ -124,13 +124,15 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Klicken Sie auf **Speichern**, damit die Pipeline (wie unten dargestellt) auf der Karte auf dem Startbildschirm mit drei Aktionen angezeigt wird:
+1. Klicken Sie auf **Save** und die Pipeline wird auf der Karte auf dem Startbildschirm mit fünf Aktionen angezeigt, wie unten dargestellt:
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **Bearbeiten**: Ermöglicht die Bearbeitung der Pipeline-Einstellungen.
+   * **Details**  - enthält Details zur Pipelineausführung
    * **Erstellen**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann.
-   * **Git verwalten**: Ermöglicht es dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen.
+   * **Zugriff auf Repo Info** : Ermöglicht dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen
+   * **Weitere Informationen** : Navigiert zum Verständnis der Dokumentation zur CI/CD-Pipeline.
 
 ## Die nächsten Schritte {#the-next-steps}
 
