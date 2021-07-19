@@ -2,7 +2,7 @@
 title: Verwalten von Umgebungen – Cloud Service
 description: Verwalten von Umgebungen – Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -68,7 +68,7 @@ Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebunge
 
 1. Klicken oder tippen Sie auf die Schaltfläche **Alles anzeigen**, um zur Zusammenfassungsseite der **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste von Umgebungen anzuzeigen.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![](assets/environment-view-1.png)
 
 1. Auf der Seite **Umgebungen** wird die Liste aller vorhandenen Umgebung angezeigt.
 
