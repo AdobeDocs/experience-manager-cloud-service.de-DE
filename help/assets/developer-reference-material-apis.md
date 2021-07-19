@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 84%
+source-wordcount: '1420'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | × | Nicht unterstützt. Nicht verwenden. |
 | - | Nicht verfügbar |
 
-| Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
+| Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / JCR](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
 | Original erstellen | verwalten | × | - | × | × | - |
@@ -69,7 +69,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
-1. [PUT des Inhalts der ](#upload-binary) Binärdatei auf einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
+1. [Posten des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
 1. [Senden einer HTTP-Anfrage](#complete-upload), um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.
 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 }
 ```
 
-* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
+* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://author.acme.com/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
 * `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
 * `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
 * `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
@@ -125,7 +125,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehrere URIs angegeben werden, teilt der Client die Binärdatei in Teile auf und sendet PUT-Anfragen für jeden Teil an jeden URI in der richtigen Reihenfolge. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, teilt der Client die Binärdatei in Teile und sendet die POST-Anfrage jeden Teils in der richtigen Reihenfolge an jede URI. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
 
 Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Bytes und die Anzahl der Upload-URIs beträgt 2. Führen Sie dann die folgenden Schritte aus:
 
@@ -154,7 +154,9 @@ Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist,
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
-Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist. Wenn der Upload erfolgreich war, antwortet der Server mit dem Status-Code `200` .
+Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist.
+
+Bei erfolgreicher Ausführung antwortet der Server mit Status-Code `200`.
 
 ### Open-Source-Upload-Bibliothek {#open-source-upload-library}
 
@@ -185,45 +187,21 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Kunden, die ein Upgrade von früheren Versionen von [!DNL Experience Manager] durchführen, können Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind bedeutend einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt.
 
-Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
+[!DNL Experience Manager] as a [!DNL Cloud Service] unterstützt die folgenden Workflow-Schritte:
 
-* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
-* `com.day.cq.dam.core.process.CommandLineProcess`
-* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
-* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
-* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
-* `com.day.cq.dam.core.process.DownloadAssetProcess`
-* `com.day.cq.dam.word.process.ExtractImagesProcess`
-* `com.day.cq.dam.word.process.ExtractPlainProcess`
-* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
-* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
-* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
-* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
-* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
-* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
+* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
+* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 * `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
 * `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
-* `com.day.cq.dam.core.process.GateKeeperProcess`
-* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
-* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
-* `com.day.cq.dam.video.FFMpegTranscodeProcess`
-* `com.day.cq.dam.core.process.ThumbnailProcess`
-* `com.day.cq.dam.video.FFMpegThumbnailProcess`
-* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
-* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
-* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
-* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
-* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
-* `com.day.cq.dam.core.process.MetadataProcessorProcess`
-* `com.day.cq.dam.core.process.AssetOffloadingProcess`
-* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
+* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
+* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
+* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -257,7 +235,7 @@ Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microserv
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
--->
+* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
