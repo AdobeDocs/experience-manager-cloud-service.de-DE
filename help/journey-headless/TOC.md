@@ -5,10 +5,10 @@ breadcrumb-title: AEM Headless-Entwickler-Tour
 user-guide-description: Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, deren Funktionen und wie Sie sie in Ihrem Projekt nutzen können.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
+source-git-commit: 0048cd094b24c7ef1fb326c6a7419b700e87df23
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 41%
+source-wordcount: '122'
+ht-degree: 54%
 
 ---
 
@@ -26,11 +26,3 @@ ht-degree: 41%
    + [Wie man alles zusammensetzt](developer/put-it-all-together.md)
    + [So gehen Sie mit Ihrer Headless-Anwendung live](developer/go-live.md)
    + [Optional - So erstellen Sie Einzelseitenanwendungen mit AEM](developer/create-spa.md)
-+ AEM Headless Localization Journey {#localization}
-   + [Grundlegendes zur Headless-Lokalisierung in AEM](localization/overview.md)
-   + [Erste Schritte mit AEM Headless-Lokalisierung](localization/getting-started.md)
-   + [Erfahren Sie mehr über Headless Content und wie Sie in AEM lokalisieren können.](localization/learn-about.md)
-   + [Konfigurieren des Übersetzungs-Connectors](localization/configure-connector.md)
-   + [Übersetzungsregeln konfigurieren](localization/translation-rules.md)
-   + [Inhalt übersetzen](localization/translate-content.md)
-   + [Übersetzten Inhalt veröffentlichen](localization/publish-content.md)
