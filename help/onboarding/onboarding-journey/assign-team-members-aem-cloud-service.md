@@ -4,7 +4,7 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Zielsetzung {#objective}
 
-Dieses Dokument hilft Ihnen dabei, die Schritte zu verstehen, die Ihr Systemadministrator unternehmen muss, um Ihre Teammitglieder AEM als Cloud Service-Produktprofile zuzuweisen, und warum es wichtig ist, Ihren AEM-Autoren die Möglichkeit zu geben, mit AEM auf ihre Journey zuzugreifen.
+Dieses Dokument hilft Ihnen dabei, die Schritte zu verstehen, die Ihr Systemadministrator unternehmen muss, um Ihre Teammitglieder Produktprofilen als Cloud Service AEM zu lassen, und warum es wichtig ist, Ihren AEM-Autoren zu ermöglichen, mit AEM auf ihre Journey zuzugreifen.
 
 Nach Lesen dieses Abschnitts sollten Sie Folgendes tun:
 
