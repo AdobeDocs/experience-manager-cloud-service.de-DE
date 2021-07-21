@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 2%
 
 ---
@@ -21,20 +21,14 @@ Als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboa
 
 Nach dem Lesen dieses Abschnitts sollten Sie in der Lage sein:
 
-* Grundlegendes zu Admin Console
 * Zugriff auf und Anmeldung bei Admin Console
 * Überprüfen Sie Ihre Berechtigungen als Systemadministrator über Admin Console.
 
-## Grundlagen zur Admin Console {#login-admin-console}
-
-Nach Unterzeichnung des Vertrags startet Adobe Managed Services (AMS) das Onboarding des Kunden.
-
-Nachdem Ihr Vertrag unterzeichnet wurde, schließt die Adobe die Bereitstellung für Ihr Unternehmen ab. Danach erhält der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail, über die er Systemadministratoraufgaben ausführen kann, z. B. Benutzer hinzufügen und Rollen zuweisen kann.
-
-Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und -Benutzer zu verwalten und zu verwalten. Ihr Systemadministrator meldet sich bei der Adobe Admin Console an, um Benutzer und mehr hinzuzufügen oder zu entfernen. Klicken Sie [hier](https://adminconsole.adobe.com/) , um auf die Adobe Admin Console zuzugreifen.
+>[!NOTE]
+>Bevor Sie mit dem Onboarding beginnen, informieren Sie sich bitte über Adobe Admin Console. Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und -Benutzer zu verwalten und zu verwalten. Ihr Systemadministrator meldet sich bei der Adobe Admin Console an, um Benutzer und mehr hinzuzufügen oder zu entfernen. Weitere Informationen finden Sie unter [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) .
 
 
-## Schritte für die Anmeldung bei der Admin Console {#steps-admin-console}
+## Bei der Admin Console anmelden {#steps-admin-console}
 
 Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadministratorrolle in der Admin Console zu überprüfen:
 
