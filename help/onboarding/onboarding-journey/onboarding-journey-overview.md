@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 11%
+source-wordcount: '709'
+ht-degree: 10%
 
 ---
 
@@ -47,7 +47,7 @@ Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie,
 | # | Artikel | Beschreibung |
 |---|---|---|
 | 0 | Onboarding-Journey | Dieses Dokument |
-| 1 | Lernen Sie Onboarding-Konzepte kennen, z. B.:<br>Systemadministrator<br>Admin Console<br>Adobe Identity Management System<br>Adobe ID<br>Einführung in Cloud Manager<br>AEM als Cloud Service-Team und Produktprofile<br>Adobe-Support | Erfahren Sie mehr über Onboarding-Konzepte. |
+| 1 | Lernen Sie Onboarding-Konzepte kennen, z. B.:<br>[Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service-Team und Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobe-Support](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Erfahren Sie mehr über Onboarding-Konzepte. |
 | 2 | Erste Schritte mit dem Onboarding | Erfahren Sie, wie Sie sich bei Admin Console anmelden und Ihr Profil als Systemadministrator überprüfen. |
 | 3 | Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen | Überprüfen Sie die Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. |
 | 4 | Einrichten von Cloud-Ressourcen über Cloud Manager | Erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und wer dies tun kann. Erfahren Sie außerdem, wie Ihr Cloud-Programm und Ihre Umgebungen erstellt werden. |
