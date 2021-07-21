@@ -2,10 +2,10 @@
 title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
+source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 96%
+source-wordcount: '3520'
+ht-degree: 94%
 
 ---
 
@@ -592,7 +592,88 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Benutzerdefinierte DAM Asset Lucene Oak-Indizes sind ordnungsgemäß strukturiert {#oakpal-damAssetLucene-sanity-check}
+### Benutzerdefinierte Lucene-Oak-Indizes müssen über eine tika-Konfiguration verfügen. {#oakpal-indextikanode}
+
+**Schlüssel**: IndexTikaNode
+
+**Typ**: Fehler
+
+**Schweregrad**: Blocker
+
+**Seit**: 2021,8,0
+
+Mehrere vordefinierte AEM Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes **muss** eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder `tika`  fehlt oder wenn der Knoten `tika` einen untergeordneten Knoten mit dem Namen `config.xml` fehlt.
+
+Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Indizierungsdokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#preparing-the-new-index-definition) .
+
+#### Nicht konformer Code {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### Konformer Code {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Benutzerdefinierte Lucene-Oak-Indizes dürfen nicht synchron sein {#oakpal-indexasync}
+
+**Schlüssel**: IndexAsyncProperty
+
+**Typ**: Fehler
+
+**Schweregrad**: Blocker
+
+**Seit**: 2021,8,0
+
+Oak-Indizes des Typs Lucene  muss immer asynchron indiziert sein. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+
+#### Nicht konformer Code {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Konformer Code {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Benutzerdefinierte DAM Asset Lucene Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
 
 **Schlüssel**: IndexDamAssetLucene
 
@@ -602,38 +683,31 @@ public class DontDoThis implements Page {
 
 **Seit**: 2021.6.0
 
-Damit die Asset-Suche in AEM Assets ordnungsgemäß funktioniert, muss der Oak-Index `damAssetLucene` eine Reihe von Richtlinien befolgen. Diese Regel sucht speziell für Indizes, deren Name `damAssetLucene` enthält, nach den folgenden Mustern:
-
-Der Name muss den hier beschriebenen Richtlinien zum Anpassen von Indexdefinitionen entsprechen.
-
-* Insbesondere muss der Name dem Muster `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>` folgen.
-
-* Die Indexdefinition muss über eine Eigenschaft mit mehreren Werten namens tags verfügen, die den Wert `visualSimilaritySearch` enthält.
-
-* Die Indexdefinition muss einen untergeordneten Knoten mit dem Namen `tika` haben und dieser untergeordnete Knoten muss über einen untergeordneten Knoten mit dem Namen config.xml verfügen.
+Damit die Asset-Suche in AEM Assets ordnungsgemäß funktioniert, müssen die Anpassungen des `damAssetLucene`-Oak-Index einem Satz von Richtlinien entsprechen, die für diesen Index spezifisch sind. Diese Regel überprüft, ob die Indexdefinition über eine Eigenschaft mit mehreren Werten mit dem Namen `tags` verfügen muss, die den Wert `visualSimilaritySearch` enthält.
 
 #### Nicht konformer Code {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### Konformer Code {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
@@ -929,15 +1003,15 @@ Ein ordnungsgemäß definierter Knoten einer benutzerdefinierten Suchindex-Defin
 
 AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#how-to-use) beschrieben wird.
 
-### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition müssen den Indextyp lucene verwenden {#oakpal-index-type-lucene}
+### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition müssen den Indextyp lucene verwenden   {#oakpal-index-type-lucene}
 
 **Schlüssel**: IndexType
 
-**Typ**: Code Smell
+**Typ**: Fehler
 
-**Schweregrad**: Gering
+**Schweregrad**: Blocker
 
-**Seit**: Version 2021.2.0
+**Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
 AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ oak:QueryIndexDefinition) eine Typeigenschaft mit dem Wert **lucene** aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
 
