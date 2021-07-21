@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Inhaltsfragmente
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 90%
+source-wordcount: '2312'
+ht-degree: 89%
 
 ---
 
@@ -166,10 +166,11 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
    >[!NOTE]
    Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
 
-* **Übersetzbar**
-Durch Aktivieren des Kontrollkästchens „Übersetzbar“ in einem Feld im CF-Modell-Editor
+* ****
+TranslatableÜberprüfen der 
+**** Das Kontrollkästchen &quot;Übersetzbar&quot;für ein Feld im Editor für Inhaltsfragmentmodelle sieht wie folgt aus:
 
-   * stellen Sie sicher, dass der Eigenschaftsname des Felds in der Übersetzungskonfiguration im Kontext `/content/dam/<sites-configuration>` hinzugefügt wird, falls er noch nicht vorhanden ist.
+   * Stellen Sie sicher, dass der Eigenschaftsname des Felds zur Übersetzungskonfiguration hinzugefügt wird, Kontext `/content/dam/<sites-configuration>`, falls noch nicht vorhanden.
    * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)** .
