@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset-Management, Bildprofile, Ausgabeformate
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 73%
+source-wordcount: '2762'
+ht-degree: 72%
 
 ---
 
@@ -161,9 +161,15 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 #### Anwenden von Dynamic Media-Bildprofilen auf Ordner aus &quot;Eigenschaften&quot; {#applying-image-profiles-to-folders-from-properties}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]**. Navigieren Sie dann zum übergeordneten Ordner des Ordners, auf den Sie ein Bildprofil anwenden möchten.
-1. Wählen Sie im Ordner das Häkchen aus, um es auszuwählen, und wählen Sie dann **[!UICONTROL Eigenschaften]** aus.
-1. Wählen Sie die Registerkarte **[!UICONTROL Bildprofile.]** Wählen Sie aus der Dropdownliste **[!UICONTROL Profilname]** das Profil und dann **[!UICONTROL Speichern und schließen]** aus. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Assets]**.
+1. Navigieren Sie zu einem *Ordner* (kein Asset), auf den Sie ein Bildprofil anwenden möchten.
+1. Führen Sie je nach Ansicht, in der Sie sich befinden, einen der folgenden Schritte aus:
+   * Bewegen Sie in der Kartenansicht den Mauszeiger auf den Ordner und wählen Sie dann das Häkchen aus, um ihn auszuwählen.
+   * Aktivieren Sie in der Spaltenansicht oder Listenansicht das Kontrollkästchen links neben dem Ordnernamen.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** aus.
+1. Wählen Sie die Registerkarte **[!UICONTROL Dynamic Media Processing]** aus.
+1. Wählen Sie unter **[!UICONTROL Bildprofil]** aus der Dropdownliste **[!UICONTROL Profilname]** das anzuwendende Profil aus.
+1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern und schließen]** aus. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
