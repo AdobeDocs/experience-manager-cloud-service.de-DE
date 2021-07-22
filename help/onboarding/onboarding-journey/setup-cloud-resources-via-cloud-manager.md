@@ -4,25 +4,25 @@ description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
 # Einrichten von Cloud-Ressourcen über Cloud Manager {#setup-cloud-resources}
 
-Der Systemadministrator, der der Rolle &quot;Business Owner&quot;zugewiesen ist, sollte auf Cloud Manager zugreifen und sich dort anmelden. Danach muss sich ein Team-Mitglied, das dem Produktprofil &quot;Business Owner&quot;zugewiesen ist, bei Cloud Manager anmelden und Ihr Cloud-Programm und Ihre Umgebungen erstellen, damit Ihr Expertenteam beginnen kann.
+Der Systemadministrator, der der Rolle *Business Owner* zugewiesen ist, sollte auf Cloud Manager zugreifen und sich dort anmelden. Danach muss sich ein Team-Mitglied, das dem Produktprofil *Business Owner* zugewiesen ist, bei Cloud Manager anmelden und Ihr Cloud-Programm und Ihre Umgebungen erstellen, damit Ihr Expertenteam beginnen kann.
 
 ## Zielsetzung {#objective}
 
 In diesem Dokument erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und wer sie verwenden kann.
 
-Nach Lesen dieses Abschnitts sollten Sie Folgendes tun:
+Nach Lesen dieses Abschnitts sollten Sie Folgendes verstehen:
 
-* Beachten Sie, dass ein Systemadministrator, der der Rolle &quot;Business Owner&quot;zugewiesen ist, als erster auf Cloud Manager zugreifen und sich dort anmelden muss.
-* Erfahren Sie, wie Ihr Cloud-Programm und Ihre Umgebungen erstellt werden.
+* Ein Systemadministrator, der der Rolle *Business Owner* zugewiesen ist, muss als erster auf Cloud Manager zugreifen und sich dort anmelden.
+* Erstellung des Cloud-Programms und der Umgebungen.
 
 ## Einführung {#introduction}
 
@@ -32,34 +32,45 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Ihre [Cloud Service-Programme
 
 ### Voraussetzungen {#prerequisites}
 
-* Der Systemadministrator, der der Rolle &quot;Business Owner&quot;zugewiesen ist, sollte auf Cloud Manager zugreifen und sich dort anmelden.
+* Der Systemadministrator, der der Rolle *Business Owner* zugewiesen ist, sollte auf Cloud Manager zugreifen und sich dort anmelden.
 
-* Informationen zur Navigation und Anmeldung bei Cloud Manager
+* Hier erfahren Sie, wie Sie [zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) navigieren und sich dort anmelden.
 
-* Kennenlernen von Cloud Manager-Produktprofilen
+* Machen Sie sich mit [Cloud Manager-Produktprofilen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) vertraut.
 
 * Machen Sie sich mit den Überlegungen zur Programmerstellung vertraut. Sehen Sie sich dieses Video an, um mehr zu erfahren.
 
-* Grundlegendes zu den Konzepten von Cloud Manager-Programmen und -Umgebungen
+* Grundlegendes zu den Konzepten von Cloud Manager [Programmen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) und [Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de)
 
 ## Navigieren zu Cloud Manager {#navigate-cloud-manager}
 
-1. Der Benutzer &quot;Business Owner&quot;erhält eine Begrüßungs-E-Mail, von der aus er starten kann. Wenn er sie nicht finden kann, navigieren Sie direkt zu experience.adobe.com und melden Sie sich mit Ihrer Adobe ID an.
+1. Der Benutzer *Business Owner* erhält eine Begrüßungs-E-Mail, von der aus er starten kann. Wenn er sie nicht finden kann, gehen Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) und melden Sie sich mit Ihrer Adobe ID an.
 
-1. Wählen Sie auf der Startseite Experience Cloud Experience Manager aus:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Wählen Sie auf der Adobe Experience Cloud-Startseite **Experience Manager** aus.
 
-1. Dadurch gelangen Sie zur AEM Homepage. Wählen Sie hier Cloud Manager aus:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. Dadurch gelangen Sie zur AEM Homepage. Starten Sie von hier aus **Cloud Manager** .
 
-1. Dadurch gelangen Sie zur Landingpage von Cloud Manager, wie unten dargestellt:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. Die Landingpage von Cloud Manager wird angezeigt, wie in der folgenden Abbildung dargestellt.
 
-1. Überprüfen Sie jetzt, ob Ihnen das Produktprofil Business Owner zugewiesen wurde. Wählen Sie dazu Ihr Profil oben rechts wie unten gezeigt aus:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Vergewissern Sie sich, dass Ihnen das Produktprofil &quot;Business Owner&quot;zugewiesen wurde. Wählen Sie dazu Ihr Profil oben rechts aus, wie unten dargestellt.
 
-1. Wählen Sie nun Benutzerrollen aus und stellen Sie sicher, dass Sie Business Owner zugewiesen sind.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Wählen Sie **Benutzerrollen** aus und stellen Sie sicher, dass Sie dem Business Owner zugewiesen sind.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. Dadurch wird Ihre Benutzerrolle als Business Owner bestätigt.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
 
    Gute Arbeit! Sie haben sich erfolgreich als Business Owner bei Cloud Manager angemeldet!
 
