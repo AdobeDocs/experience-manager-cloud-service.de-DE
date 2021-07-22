@@ -1,17 +1,17 @@
 ---
-title: Erste Schritte mit Onboarding-Journey
+title: Erste Schritte mit dem Onboarding-Prozess
 description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
 
-# Erste Schritte mit Onboarding-Journey {#getting-started}
+# Erste Schritte mit dem Onboarding-Prozess {#getting-started}
 
 Beim Onboarding wird ein bestimmter Systemadministrator AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
@@ -21,7 +21,7 @@ Als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboa
 
 Nach dem Lesen dieses Abschnitts sollten Sie in der Lage sein:
 
-* Zugriff auf und Anmeldung bei Admin Console
+* Zugriff und Anmeldung bei Admin Console
 * Überprüfen Sie Ihre Berechtigungen als Systemadministrator über Admin Console.
 
 >[!NOTE]
@@ -67,5 +67,5 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie sich jetzt bei Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie Ihre Onboarding-Journey fortsetzen, indem Sie das Dokument Zuweisen von Teammitgliedern zu Cloud Manager-Produktprofilen lesen.
+Nachdem Sie sich jetzt bei Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie mit dem Onboarding-Journey fortfahren, indem Sie das Dokument Zuweisen von Teammitgliedern zu Cloud Manager-Produktprofilen lesen.
 
