@@ -4,10 +4,10 @@ description: Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-E
 feature: Inhaltsfragmente
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
+source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 76%
+source-wordcount: '113'
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Im Inhaltsfragment-Editor können Sie das Strukturbaumsymbol auswählen:
 
 ![Strukturbaum der Inhaltsfragmente](assets/cfm-structuretree-01.png)
 
-Dadurch wird eine Darstellung der Fragmentstruktur im linken Fensterbereich geöffnet. Auf diese Weise können Sie durch referenzierte Fragmente und zu ihnen navigieren.
+Dadurch wird eine Darstellung der Fragmentstruktur im linken Fensterbereich geöffnet. Auf diese Weise können Sie durch referenzierte Fragmente und zu ihnen navigieren. Wenn Sie einen Verweis auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
 >[!NOTE]
 >
