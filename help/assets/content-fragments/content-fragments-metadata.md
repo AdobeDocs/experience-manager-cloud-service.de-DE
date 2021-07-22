@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragme
 feature: Inhaltsfragmente
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 71%
+source-wordcount: '208'
+ht-degree: 49%
 
 ---
 
@@ -34,5 +34,7 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Titel**
    * **Beschreibung**
    * **Tags**
+      * [](/help/sites-cloud/authoring/features/tags.md) Tags sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und Taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
    * Erstellt (nur Anzeige)
    ![Metadaten](assets/cfm-metadata-02.png)
