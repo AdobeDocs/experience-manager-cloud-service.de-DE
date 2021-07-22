@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 10%
+source-wordcount: '646'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Wir f
 
 ## Einführung {#introduction}
 
-Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass der Leser nach Abschluss Folgendes tun kann:
+Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss Folgendes tun:
 
 * Verstehen Sie, was Sie während des AEM als Cloud Service beim Onboarding von Journey erwarten.
 * Sie haben Ihrem Team die Möglichkeit gegeben, sich einzurichten und die ersten Schritte zu unternehmen, um zu lernen, wie Sie Inhalte für Ihre AEM als Cloud Service-Anwendung erstellen und entwickeln können.
@@ -31,18 +31,13 @@ Das bedeutet:
 
 ## Audience {#audience}
 
-Beim Onboarding wird ein bestimmter Systemadministrator AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
+Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
 Die Onboarding-Journey ist unten dargestellt und jeder Schritt im Journey wird in den folgenden Abschnitten ausführlich beschrieben.
 
 ## Onboarding-Journey {#exploring-onboarding-journey}
 
-
 In dieser Tour werden Sie viele Themen kennenlernen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse über die Onboarding-Schritte für AEM als Cloud Service. Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit dem Onboarding noch nicht vertraut sind, empfehlen wir daher, dass Sie am Anfang beginnen und die Schritte nacheinander fortsetzen.
-
-In dieser Tour werden Sie viele Themen kennenlernen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse, die für das Onboarding erforderlich sind, und verweisen auf eine detaillierte technische Dokumentation.
-
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit dem Onboarding noch nicht vertraut sind, empfehlen wir Ihnen daher, zunächst die Artikel zu lesen, die im Abschnitt Einstiegskonzepte lernen des Handbuchs erwähnt werden.
 
 | # | Artikel | Beschreibung |
 |---|---|---|
