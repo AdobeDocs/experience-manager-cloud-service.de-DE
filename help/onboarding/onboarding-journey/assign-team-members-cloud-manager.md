@@ -4,7 +4,7 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder Cloud Manage
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 2%
@@ -91,7 +91,7 @@ Die folgenden Schritte führen Sie durch diesen Schritt:
    >[!NOTE]
    >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >Weisen Sie den Benutzer mindestens einem Produktprofil zu, damit der Benutzer auf Cloud Manager zugreifen kann. Denken Sie daran, sich selbst (Systemadministrator) dem Business Owner zuzuweisen.
@@ -121,7 +121,7 @@ Herzlichen Glückwunsch! Jetzt wurde Ihr neu zusammengestelltes Cloud Manager-Te
    >[!NOTE]
    >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
    >[!IMPORTANT]
    >Benutzer können zum Deployment Manager-Produktprofil hinzugefügt werden, nachdem Cloud Manager-Ressourcen erstellt wurden.
@@ -147,7 +147,7 @@ Herzlichen Glückwunsch! Jetzt wurde Ihr neu zusammengestelltes Cloud Manager-Te
    >[!NOTE]
    >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
 
    >[!IMPORTANT]
