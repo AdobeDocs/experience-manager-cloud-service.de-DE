@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder Cloud Manage
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -155,12 +155,11 @@ Herzlichen Glückwunsch! Jetzt wurde Ihr neu zusammengestelltes Cloud Manager-Te
 
 ## Nächste Schritte {#whats-next}
 
-Als Systemadministrator, der die Rolle *Business Owner* zugewiesen ist, müssen Sie auf Cloud Manager zugreifen und sich dort anmelden.
->[!NOTE]
->Informationen zum Anmelden und Aufrufen von Cloud Manager finden Sie unter [Navigieren zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) .
+1. Als Systemadministrator, der der Rolle *Business Owner* zugewiesen ist, müssen Sie auf Cloud Manager zugreifen und sich dort anmelden. Informationen zum Anmelden und Aufrufen von Cloud Manager finden Sie unter [Navigieren zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en) .
 
-Ein Cloud Manager-Benutzer mit der Rolle &quot;Business Owner&quot;kann sich anmelden und Ihre Cloud-Ressourcen einschließlich Ihrer Programme und Umgebungen einrichten. Dadurch wird sichergestellt, dass Ihr Expertenteam so bald wie möglich mit dem AEM als Cloud Service beginnen kann.
-Nachdem Ihr Business Owner Ihre Cloud-Ressourcen eingerichtet hat, können Entwickler und Bereitstellungsmanager, die den Cloud Manager-Produktprofilen erfolgreich hinzugefügt wurden, auf Cloud Manager zugreifen und sich damit vertraut machen, wie sie ihren Lernpfad fortsetzen können.
+1. Als Nächstes kann sich ein Cloud Manager-Benutzer mit der Rolle *Business Owner* anmelden und Ihre Cloud-Ressourcen einschließlich Ihres Cloud-Programms und Ihrer Umgebungen einrichten. Dadurch wird sichergestellt, dass Ihr Expertenteam so bald wie möglich mit dem AEM als Cloud Service beginnen kann.
+
+1. Nachdem Ihr *Business Owner* Ihre Cloud-Ressourcen eingerichtet hat, können *Entwickler* und *Bereitstellungsmanager*, die den Cloud Manager-Produktprofilen erfolgreich hinzugefügt wurden, auf Cloud Manager zugreifen und sich selbst darauf vorbereiten, wie sie ihren Lernpfad fortsetzen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
