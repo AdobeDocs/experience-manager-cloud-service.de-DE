@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder Cloud Manage
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
+source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 1%
+source-wordcount: '1382'
+ht-degree: 2%
 
 ---
 
@@ -67,54 +67,90 @@ Gehen Sie wie folgt vor, um eine Liste der Cloud Manager-Profile anzuzeigen:
 
 Sie können jetzt Benutzer hinzufügen und sie dem Cloud Manager Business Owner-Produktprofil zuweisen.
 
-Um dies erfolgreich zu erreichen, müssen Sie in der Adobe Admin Console einen Anwender zum Produktprofil (hier AEM als Cloud Service) und zum Produktprofil &quot;Business Owner&quot;von Cloud Manager hinzufügen.
+>[!NOTE]
+>Um dies erfolgreich zu erreichen, müssen Sie in der Adobe Admin Console einen Anwender zum Produkt (hier AEM als Cloud Service) und zum Produktprofil [Cloud Manager Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) hinzufügen.
 
 Die folgenden Schritte führen Sie durch diesen Schritt:
 
-1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten, und fügen Sie sie zum Produktprofil Business Owner hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich (Systemadministrator) zuerst dem Produktprofil Business Owner hinzufügen.
+1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten, und fügen Sie sie zum Produktprofil Business Owner hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich selbst (Systemadministrator) zuerst zum Produktprofil Business Owner hinzufügen.
 
-1. Wählen Sie auf der Seite Admin Console Overview die Option Adobe Experience Manager as a Cloud Service product aus der Produkt- und Servicekarte aus, wie unten dargestellt:
+1. Wählen Sie auf der Seite [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Übersicht** die Option **Adobe Experience Manager als Cloud Service** aus der Karte **Produkte und Dienste** aus, wie unten dargestellt.
 
-1. Wählen Sie in der oberen Navigation die Registerkarte Benutzer und dann Benutzer hinzufügen aus.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Geben Sie im Dialogfeld &quot;Benutzer hinzufügen&quot;die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
+1. Wählen Sie in der oberen Navigation die Registerkarte **Benutzer** und dann **Benutzer hinzufügen** aus.
 
-1. Wählen Sie in der Produktauswahl &quot;Adobe Experience Manager as a Cloud Service&quot;aus und weisen Sie dem Benutzer das Produktprofil &quot;Business Owner&quot;wie unten dargestellt zu. Unter Cloud Manager-Produktprofile finden Sie Informationen dazu, wie Sie sicherstellen können, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
 
-1. Weisen Sie den Benutzer mindestens einem Produktprofil zu, damit der Benutzer auf Cloud Manager zugreifen kann. Denken Sie daran, sich (Systemadministrator) &quot;Business Owner&quot;zuzuweisen.
+1. Geben Sie im Dialogfeld **Benutzer zu Ihrem Team hinzufügen** die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
 
-1. Klicken Sie auf Speichern.  Der hinzugefügte Benutzer erhält eine Begrüßungs-E-Mail. Der eingeladene Benutzer kann auf Cloud Manager zugreifen, indem er auf den Link in der Begrüßungs-E-Mail klickt und sich mithilfe seiner Adobe ID anmeldet.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Wählen Sie in der Produktauswahl **Adobe Experience Manager als Cloud Service** aus und weisen Sie dem Benutzer das Produktprofil **Business Owner** wie unten dargestellt zu.
+
+   >[!NOTE]
+   >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+   >[!NOTE]
+   >Weisen Sie den Benutzer mindestens einem Produktprofil zu, damit der Benutzer auf Cloud Manager zugreifen kann. Denken Sie daran, sich selbst (Systemadministrator) dem Business Owner zuzuweisen.
+
+1. Klicken Sie auf **Speichern**.  Der hinzugefügte Benutzer erhält eine Begrüßungs-E-Mail. Der eingeladene Benutzer kann auf Cloud Manager zugreifen, indem er auf den Link in der Begrüßungs-E-Mail klickt und sich mithilfe seiner Adobe ID anmeldet.
 
 Herzlichen Glückwunsch! Jetzt wurde Ihr neu zusammengestelltes Cloud Manager-Team eingerichtet, das auch die Rolle &quot;Business Owner&quot;beinhaltet. Mitglieder erhalten eine Begrüßungs-E-Mail, in der sie zur Anmeldung und zum Zugriff auf Cloud Manager eingeladen werden. Als Business Owner müssen Sie sich jetzt nur noch einen Schritt von der Anmeldung bei Cloud Manager und der Erstellung Ihrer Cloud-Ressourcen entfernt haben.
 
 ## Zuweisen von Benutzern zum Deployment Manager-Produktprofil {#assign-users-deployment-manager}
 
-1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten, und fügen Sie sie zum Produktprofil Business Owner hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich (Systemadministrator) zuerst dem Produktprofil Business Owner hinzufügen.
+1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten sollen, und fügen Sie sie zum Deployment Manager-Produktprofil hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich selbst (Systemadministrator) zuerst zum Produktprofil Business Owner hinzufügen.
 
-1. Wählen Sie auf der Seite Admin Console Overview die Option Adobe Experience Manager as a Cloud Service product aus der Produkt- und Servicekarte aus, wie unten dargestellt:
+1. Wählen Sie auf der Seite [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Übersicht** die Option **Adobe Experience Manager als Cloud Service** aus der Karte **Produkte und Dienste** aus, wie unten dargestellt.
 
-1. Wählen Sie in der oberen Navigation die Registerkarte Benutzer und dann Benutzer hinzufügen aus.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Geben Sie im Dialogfeld &quot;Benutzer hinzufügen&quot;die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
+1. Wählen Sie in der oberen Navigation die Registerkarte **Benutzer** und dann **Benutzer hinzufügen** aus.
 
-1. Wählen Sie in der Produktauswahl &quot;Adobe Experience Manager as a Cloud Service&quot;aus und weisen Sie dem Anwender das Produktprofil &quot;Deployment Manager&quot;wie unten dargestellt zu. Unter Cloud Manager-Produktprofile finden Sie Informationen dazu, wie Sie sicherstellen können, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. Geben Sie im Dialogfeld **Benutzer zu Ihrem Team hinzufügen** die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Wählen Sie in der Produktauswahl **Adobe Experience Manager als Cloud Service** aus und weisen Sie dem Benutzer das Produktprofil **Deployment Manager** wie unten gezeigt zu.
 
    >[!NOTE]
+   >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+   >[!IMPORTANT]
    >Benutzer können zum Deployment Manager-Produktprofil hinzugefügt werden, nachdem Cloud Manager-Ressourcen erstellt wurden.
 
 ## Zuweisen von Benutzern zum Developer Product Profile {#assign-users-developer}
 
-1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten, und fügen Sie sie zum Produktprofil Business Owner hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich (Systemadministrator) zuerst dem Produktprofil Business Owner hinzufügen.
+1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten, und fügen Sie sie zum Entwicklerproduktprofil hinzu. Der Systemadministrator muss die erste Person sein, die auf Cloud Manager zugreift und sich dort anmeldet. Sie müssen sich selbst (Systemadministrator) zuerst zum Produktprofil Business Owner hinzufügen.
 
-1. Wählen Sie auf der Seite Admin Console Overview die Option Adobe Experience Manager as a Cloud Service product aus der Produkt- und Servicekarte aus, wie unten dargestellt:
+1. Wählen Sie auf der Seite [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Übersicht** die Option **Adobe Experience Manager als Cloud Service** aus der Karte **Produkte und Dienste** aus, wie unten dargestellt.
 
-1. Wählen Sie in der oberen Navigation die Registerkarte Benutzer und dann Benutzer hinzufügen aus.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. Geben Sie im Dialogfeld &quot;Benutzer hinzufügen&quot;die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
+1. Wählen Sie in der oberen Navigation die Registerkarte **Benutzer** und dann **Benutzer hinzufügen** aus.
 
-1. Wählen Sie in der Produktauswahl &quot;Adobe Experience Manager as a Cloud Service&quot;aus und weisen Sie dem Benutzer das Produktprofil &quot;Entwickler&quot;wie unten dargestellt zu. Unter Cloud Manager-Produktprofile finden Sie Informationen dazu, wie Sie sicherstellen können, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. Geben Sie im Dialogfeld **Benutzer zu Ihrem Team hinzufügen** die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten. Wählen Sie für den ID-Typ Adobe ID aus, wenn das Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. Wählen Sie in der Produktauswahl **Adobe Experience Manager als Cloud Service** aus und weisen Sie dem Benutzer das Produktprofil **Entwickler** wie unten gezeigt zu.
 
    >[!NOTE]
+   >Unter [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) finden Sie Informationen dazu, wie Sie sicherstellen, dass den richtigen Benutzern in der Admin Console die richtigen Rollen zugewiesen werden.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+
+   >[!IMPORTANT]
    >Benutzer können zum Entwicklerproduktprofil hinzugefügt werden, nachdem Cloud Manager-Ressourcen erstellt wurden.
 
 ## Nächste Schritte {#whats-next}
@@ -130,6 +166,6 @@ Nachdem Ihr Business Owner Ihre Cloud-Ressourcen eingerichtet hat, können Entwi
 
 Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 
-* Cloud Manager
-* Cloud Manager-Produktprofile
-* Admin Console Identity - Übersicht
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
+* [Cloud Manager-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
+* [Admin Console Identity - Übersicht](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)
