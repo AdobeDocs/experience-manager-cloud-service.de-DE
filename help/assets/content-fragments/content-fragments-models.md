@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Inhaltsfragmente
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
+source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 89%
+source-wordcount: '2258'
+ht-degree: 90%
 
 ---
 
@@ -166,16 +166,17 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
    >[!NOTE]
    Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
 
-* ****
-TranslatableÜberprüfen der 
-**** Das Kontrollkästchen &quot;Übersetzbar&quot;für ein Feld im Editor für Inhaltsfragmentmodelle sieht wie folgt aus:
-
-   * Stellen Sie sicher, dass der Eigenschaftsname des Felds zur Übersetzungskonfiguration hinzugefügt wird, Kontext `/content/dam/<sites-configuration>`, falls noch nicht vorhanden.
-   * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
-
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)** .
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentreferenz (verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
+
+<!--
+* **Translatable**
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+
+  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+-->
 
 ## Validierung {#validation}
 
