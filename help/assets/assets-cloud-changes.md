@@ -4,9 +4,9 @@ description: Wesentliche Änderungen an  [!DNL Adobe Experience Manager Assets] 
 feature: Versionshinweise
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '963'
 ht-degree: 52%
 
 ---
@@ -56,13 +56,14 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Metadaten-Writeback | Funktionsweise unterschiedlich | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Writeback wird von Asset-Microservices verarbeitet. |
 | Verarbeitung der mit Package Manager hochgeladenen Assets | Benötigt manuelles Eingreifen. | Manuelle Neuverarbeitung mit der Aktion **[!UICONTROL Asset erneut verarbeiten]**. |
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder falsche Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Weitere Informationen finden Sie unter [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=de). |
-| Generieren von Unter-Assets für oder Kommentieren von ebenenübergreifenden Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind nicht erfüllt. Beispielsweise ist das Anzeigen oder Kommentieren einer mehrseitigen PDF-, INDD-, PPT-, PPTX- und AI-Datei nicht möglich. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
+| Generieren von Unter-Assets für oder Kommentieren von ebenenübergreifenden Assets | Nicht unterstützt. | Abhängige Anwendungsfälle sind möglicherweise nicht erfüllt. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=de#generate-subassets). |
 | Startseite | Nicht unterstützt. | Weitere Informationen finden Sie unter [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=de) |
 | Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt. | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Asset-Bewertungen | Nicht unterstützt. | Das Bewertungs-Widget im Metadatenschema-Editor wird nicht unterstützt. |
 | Inhaltsdispositionsfilter | Nicht unterstützt. | Ein beliebtes Nutzungsszenario von `ContentDispositionFilter` besteht darin, Administratoren zu ermöglichen, [!DNL Experience Manager] so zu konfigurieren, dass HTML-Dateien bereitgestellt und PDF-Dateien inline geöffnet werden, anstatt sie herunterzuladen. Auf den Veröffentlichungsinstanzen können Sie die Dispatcher-Konfiguration verwenden. In den Autoreninstanzen empfiehlt Adobe keine Änderung am Content Disposition-Header. Siehe [Filter für Inhaltsdisposition in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
 | [Bericht herunterladen](/help/assets/asset-reports.md) | Nicht unterstützt. | Vorerst ist der Download-Bericht mit Informationen zur Asset-Nutzung nicht verfügbar. Siehe [Bericht herunterladen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Vorlage für Produktfotos | Nicht unterstützt. | Siehe [Produkt-Fotoshooting-Vorlage in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| Intelligente Übersetzung | Nicht unterstützt. | [Intelligente ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) Übersetzungen werden in  [!DNL Experience Manager] as a  [!DNL Cloud Service]nicht unterstützt. |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
