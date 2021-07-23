@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -83,40 +83,55 @@ Gehen Sie wie folgt vor, um Ihr Cloud Service-Programm aus Cloud Manager zu erst
    >[!NOTE]
    >Sie müssen ein Team-Mitglied sein, das dem Cloud Manager Business Owner-Produktprofil zugewiesen ist, um diesen Schritt erfolgreich abzuschließen.
 
-1. Wählen Sie hier Programm hinzufügen aus, um den Assistenten Programm hinzufügen zu starten. Sehen Sie sich das Video an, um zu erfahren, wie Sie Ihr AEMaaCS-Programm erstellen, und wichtige Überlegungen vor der Erstellung Ihres Programms an.
+   Klicken Sie hier auf **Programm hinzufügen** , um den Assistenten Programm hinzufügen zu starten.
 
-1. Eine schrittweise Anleitung zur Verwendung des Assistenten Programm hinzufügen finden Sie hier.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >Beachten Sie, dass der Programmname nach der Erstellung nicht mehr geändert werden kann. Wir empfehlen Ihnen, sich bezüglich des Namens, den Sie Ihrem Programm geben möchten, sicher zu sein.
+   >[!NOTE]
+   >Sehen Sie sich das [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) an, um zu erfahren, wie Sie Ihr AEM as a Cloud-Programm erstellen. Außerdem erhalten Sie Informationen über wichtige Aspekte, bevor Sie Ihr Programm erstellen.
 
-   Falls Sie den Programmnamen ändern müssen, müssen Sie sich an den Support der Adobe wenden oder sich alternativ an Ihren Kundenbetreuer der Adobe wenden. Sie werden dazu beitragen, das Programm effektiv zu löschen. Sie müssen von Anfang an mit einem potenziellen Verlust an Arbeit beginnen, den Ihr Team geleistet hat.
+   >[!IMPORTANT]
+   >Eine schrittweise Anleitung zur Verwendung des Assistenten Programm hinzufügen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en).
+   >
+   >* Beachten Sie, dass der Programmname nach der Erstellung nicht mehr geändert werden kann. Wir empfehlen Ihnen, sich bezüglich des Namens, den Sie Ihrem Programm geben möchten, sicher zu sein.
+   >* Falls Sie den Programmnamen ändern müssen, müssen Sie sich an den Support der Adobe wenden oder sich alternativ an Ihren Kundenbetreuer der Adobe wenden. Sie werden dazu beitragen, das Programm effektiv zu löschen. Sie müssen von Anfang an mit einem potenziellen Verlust an Arbeit beginnen, den Ihr Team geleistet hat.
 
-1. Nach erfolgreicher Erstellung Ihres Cloud-Programms können Sie zu Ihrem Programm navigieren, um die Übersichtsseite Ihres Programms wie unten dargestellt anzuzeigen:
 
-1. Wenn Sie dies noch nicht getan haben, ist es jetzt an der Zeit, Ihre Entwickler-Mitglieder Ihrem Cloud Manager-Team hinzuzufügen, navigieren Sie zu Benutzer zum Entwicklerproduktprofil hinzufügen und führen Sie die beschriebenen Schritte aus.
+1. Nach erfolgreicher Erstellung Ihres Cloud-Programms können Sie zu Ihrem Programm navigieren, um die Seite **Übersicht** Ihres Programms anzuzeigen, wie unten dargestellt.
 
-1. Mitglieder, die dem Produktprofil &quot;Entwickler&quot;zugewiesen sind, können sich bei Cloud Manager anmelden und Cloud Manager Git verwalten.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >Wenn Sie dies noch nicht getan haben, können Sie jetzt Ihre Entwickler-Mitglieder Ihrem Cloud Manager-Team hinzufügen. Weitere Informationen finden Sie unter Benutzer zum Produktprofil &quot;Entwickler&quot;hinzufügen und führen Sie die beschriebenen Schritte aus.
+
+1. Mitglieder, die dem Entwicklerproduktprofil zugewiesen sind, können sich bei Cloud Manager und [Cloud Manager-Git verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en) anmelden.
 
    Gute Arbeit! Nachdem Ihr Programm erfolgreich erstellt wurde, können Ihre Entwickler auf Ihr Cloud Manager-Git zugreifen!
 
 
 ## Erstellen von Cloud-Umgebungen {#create-cloud-environments}
 
+Nachdem Sie Ihr Cloud-Programm erfolgreich erstellt haben, erstellen Sie Ihre Cloud-Umgebungen.
+
 Gehen Sie wie folgt vor, um Ihre Cloud-Umgebungen aus Cloud Manager zu erstellen:
 
-1. Nachdem Sie Ihr Cloud-Programm erfolgreich erstellt haben, erstellen Sie Ihre Cloud-Umgebungen, indem Sie zur Cloud Manager-Übersichtsseite navigieren und auf der Umgebungskarte Hinzufügen auswählen.
+1. Navigieren Sie zur Seite **Übersicht** von Cloud Manager und wählen Sie **Hinzufügen** aus der Umgebungskarte aus.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >Ein Cloud Manager-Benutzer mit der Rolle Business Owner oder Deployment Manager muss angemeldet sein, um diesen Schritt erfolgreich durchführen zu können.
 
-   Sehen Sie sich außerdem das Schnellvideo-Tutorial an, um mehr über Cloud Manager-Umgebungen und darüber zu erfahren, wie Sie sie Ihrem Programm hinzufügen können.
+   Sehen Sie sich außerdem das kurze [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)-Tutorial an, um mehr über Cloud Manager-Umgebungen und darüber zu erfahren, wie Sie sie Ihrem Programm hinzufügen können.
 
-1. Dadurch wird der Assistent zum Hinzufügen der Umgebung gestartet, der Sie beim Hinzufügen Ihrer Umgebung unterstützt. Fügen Sie zuerst Ihre Entwicklungsumgebung hinzu, um sich kennenzulernen.
+1. Dadurch wird der Assistent zum Hinzufügen der Umgebung gestartet, der Sie beim Hinzufügen Ihrer Umgebung unterstützt. Fügen Sie zuerst Ihre Entwicklungsumgebung hinzu, um sich kennenzulernen. Weitere Informationen finden Sie unter [Hinzufügen einer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#adding-environments) .
 
-1. Wenn Sie dies noch nicht getan haben, können Sie jetzt Ihre Entwickler-Mitglieder zu Ihrem Cloud Manager-Team hinzufügen, zu Benutzer zum Entwicklerproduktprofil hinzufügen navigieren und die beschriebenen Schritte ausführen. Auf diese Weise können Ihre Entwickler mit dem Navigieren zu Cloud Manager und Verwalten von Cloud Manager Git beginnen.
+   >[!NOTE]
+   >Wenn Sie dies noch nicht getan haben, können Sie jetzt Ihre Entwickler-Mitglieder Ihrem Cloud Manager-Team hinzufügen. Weitere Informationen finden Sie unter Benutzer zum Produktprofil &quot;Entwickler&quot;hinzufügen und führen Sie die beschriebenen Schritte aus.
 
+1. Mitglieder, die dem Entwicklerproduktprofil zugewiesen sind, können sich bei Cloud Manager und [Cloud Manager-Git verwalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en) anmelden.
+
+   Gute Arbeit! Nachdem Ihr Programm erfolgreich erstellt wurde, können Ihre Entwickler auf Ihr Cloud Manager-Git zugreifen!
 
    Herzlichen Glückwunsch! Jetzt wurden Ihre Cloud-Programmumgebungen erstellt und Ihre Entwickler wurden zum Team hinzugefügt!
 
