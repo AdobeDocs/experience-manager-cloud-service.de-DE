@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nac
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ Weitere Informationen zu diesem Thema finden Sie hier .
 
 ## Nächste Schritte {#whats-next}
 
-Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEMaaCS vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen .
+Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen .
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
