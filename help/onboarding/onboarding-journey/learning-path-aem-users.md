@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nac
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bfed38bbb0a08e9d6484ec579c4b11d04282473b
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '335'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Die folgenden Schritte müssen befolgt werden, um auf die Autoreninstanz zugreif
 
 ## Nächste Schritte {#whats-next}
 
-Sie können jetzt Ihren Lernpfad für das Erstellen und Veröffentlichen von Seiten starten. Weitere Informationen finden Sie in der Schnellstartanleitung zum Erstellen von Seiten .
+Sie können jetzt Ihren Lernpfad für das Erstellen und Veröffentlichen von Seiten starten. Sie sollten dem Pfad folgen, indem Sie sich das Dokument Lernpfad für AEM Benutzer ansehen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
