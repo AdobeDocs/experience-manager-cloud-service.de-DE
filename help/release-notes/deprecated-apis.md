@@ -1,15 +1,15 @@
 ---
 title: Eingestellte APIs
 description: Spezifische Versionshinweise für veraltete und entfernte APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
+source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
 
 ---
 
-
-# Veraltete APIs {#deprecated-apis}
+# Eingestellte APIs {#deprecated-apis}
 
 Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarteten Entfernungsdatums. Von Kunden wird erwartet, dass sie die APIs bis zum geplanten Entfernungsdatum aus ihrem Code entfernen. Jede Verwendung der API nach dem Entfernungsdatum führt zu Fehlern in der lokalen SDK-/Entwicklungsumgebung und im Cloud Manager-Build-Prozess.
 
@@ -64,7 +64,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.json</td>
     <td>Die Apache Johnzon-Implementierung von <a href="https://johnzon.apache.org/index.html">javax.json</a> wird empfohlen und sollte verwendet werden. </td>
     <td>30.04.21</td>
-    <td>30.07.21</td>
+    <td>31.12.21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -76,13 +76,13 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 befindet sich im Wartungsmodus. Commons Lang 3 sollte stattdessen verwendet werden.</td>
     <td>30.04.21</td>
-    <td>30.07.21</td>
+    <td>31.12.21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Allgemeine Sammlungen 3 befinden sich im Wartungsmodus. Gemeinsame Sammlungen 4 sollten stattdessen verwendet werden.</td>
     <td>30.04.21</td>
-    <td>30.07.21</td>
+    <td>31.12.21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
