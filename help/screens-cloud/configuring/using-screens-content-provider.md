@@ -1,10 +1,10 @@
 ---
 title: Verwenden des Screens Content Providers
 description: Auf dieser Seite wird die Verwendung des Screens Content Providers zum Erstellen von Inhalten beschrieben.
-source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
+source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 3%
+source-wordcount: '354'
+ht-degree: 11%
 
 ---
 
@@ -25,13 +25,35 @@ Im folgenden Abschnitt wird beschrieben, wie Sie den Screens Content Provider ve
 >**Voraussetzung**
 >Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten des Screens-Dienstanbieters](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) , um zu erfahren, wie Sie über den Screens-Dienstanbieter zu dieser Benutzeroberfläche navigieren.
 
-Sobald Sie sich bei Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen.
+Gehen Sie wie folgt vor, um sich beim Screens Content Provider anzumelden:
 
-Sie müssen den Screens Content Provider verwenden, um Folgendes zu erstellen und zu verwalten:
+1. Navigieren Sie zur Startseite [Adobe Experience Cloud](https://experience.adobe.com) .
 
-* Projekte
-* Kanäle
-* Standorte
+1. Wählen Sie **Experience Manager** aus.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+1. Klicken Sie auf der Cloud Manager-Karte auf **Launch.** Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, können Sie die Benutzeroberfläche verwenden.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. Wählen Sie das Programm für Screens als Cloud Service aus und klicken Sie auf das Symbol, wie unten dargestellt, um die Seite **Übersicht** von Cloud Manager für dieses spezifische Programm zu öffnen.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+
+   >[!NOTE]
+   >Wenn Sie noch kein Programm erstellt haben, lesen Sie den Abschnitt [Erste Anmeldung bei Screens als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en), der Sie durch das Hinzufügen eines neuen Programms für Screens as a Cloud Service in Cloud Manager führt.
+
+
+1. Wählen Sie den Link auf der Karte **Umgebungen** aus, um auf den Screens Content Provider zuzugreifen.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+
+   Sobald Sie sich beim Screens Content Provider angemeldet haben, können Sie jetzt Inhalte für die Inhaltswiedergabe erstellen.
+
+   Sie müssen den Screens Content Provider verwenden, um Folgendes zu erstellen und zu verwalten:
+
+   * Projekte
+   * Kanäle
+   * Standorte
 
 ## Wie geht es weiter {#whats-next}
 
