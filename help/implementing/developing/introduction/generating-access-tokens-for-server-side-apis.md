@@ -2,10 +2,10 @@
 title: Erstellen von Zugriffs-Tokens für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 100%
+source-wordcount: '1250'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
-Ein Benutzer mit der Rolle eines IMS-Organisationsadministrators kann Anmeldedaten für AEM as a Cloud Service generieren, die dann von einem Benutzer mit der Rolle eines Umgebungsadministrators für AEM as a Cloud Service abgerufen werden können. Sie sollten auf dem Server installiert werden und als geheimer Schlüssel mit großer Sorgfalt behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden.
+Ein Benutzer mit der Rolle &quot;IMS-Organisationsadministrator&quot;und der auch Mitglied des AEM-Benutzerprofils oder AEM Administrator-Produktprofils in der AEM-Autoreninstanz ist, kann eine AEM als Cloud Service-Berechtigung generieren. Diese Berechtigung kann anschließend von einem Benutzer mit der AEM als Administrator der Cloud Service-Umgebung abgerufen werden und sollte auf dem Server installiert sein und muss sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden.
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
@@ -61,7 +61,7 @@ Die Ausgabe sieht ähnlich wie die folgende aus:
 
 >[!IMPORTANT]
 >
->Ein IMS-Organisationsadministrator (in der Regel derselbe Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat) muss zuerst auf die Developer Console zugreifen und auf die Schaltfläche **Service-Anmeldedaten abrufen** klicken, damit die Anmeldedaten generiert und später von einem Benutzer mit Administratorrechten für die AEM as a Cloud Service-Umgebung abgerufen werden können. Wenn der IMS-Organisationsadministrator dies nicht getan hat, wird in einer Meldung darauf hingewiesen, dass die Rolle eines IMS-Organisationsadministrators erforderlich ist.
+>Ein IMS-Organisationsadministrator (in der Regel derselbe Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat), der auch Mitglied des AEM-Benutzerprofils oder AEM Administratorproduktprofils in der AEM-Autoreninstanz sein sollte, muss zuerst auf die Developer Console zugreifen und auf die Schaltfläche **Dienstanmeldeinformationen** klicken, damit die Anmeldeinformationen von einem Benutzer mit Administratorberechtigungen für die AEM als Cloud Service-Umgebung generiert und später abgerufen werden. Wenn der IMS-Organisationsadministrator dies nicht getan hat, wird in einer Meldung darauf hingewiesen, dass die Rolle eines IMS-Organisationsadministrators erforderlich ist.
 
 ### Installieren der AEM-Service-Anmeldedaten auf einem Nicht-AEM-Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
