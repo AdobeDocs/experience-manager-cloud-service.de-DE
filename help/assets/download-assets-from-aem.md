@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset-Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 78%
 
 ---
@@ -109,6 +109,6 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, u
 >[!MORELIKETHIS]
 >
 >* [Herunterladen von DRM-geschützten Assets](drm.md)
-* [Herunterladen von Assets mit dem Experience Manager-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html)
+* [Herunterladen von Assets mit dem Experience Manager-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de)
 * [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
