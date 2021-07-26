@@ -2,10 +2,10 @@
 title: Voraussetzungen für das Content Transfer Tool
 description: Voraussetzungen für das Content Transfer Tool
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 14%
+source-wordcount: '488'
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgende Tabelle fasst die Voraussetzungen für die Verwendung des Content T
 | Aspekte | Derzeit unterstützte Funktionen |
 |--- |--- |
 | AEM-Version | Das Content Transfer Tool kann nur mit AEM 6.3 oder höheren Versionen ausgeführt werden. Um das Content Transfer Tool mit AEM 6.2 oder älteren Versionen verwenden zu können, ist eine ersetzende Aktualisierung des Inhalts-Repositorys auf AEM 6.5 erforderlich. Dazu ist es nicht erforderlich, den Code auf AEM 6.5 zu aktualisieren. |
-| Größe des Segmentspeichers | Derzeit werden bis zu 83 GB unter *Autor* und 31 GB unter *Veröffentlichung* unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für die Segmentspeichergröße über diesen Beschränkungen zu besprechen. |
+| Größe des Segmentspeichers | Ein vorhandenes Repository mit weniger als 55 Millionen JCR-Knoten und bis zu 83 GB (Online-komprimierte Größe) unter *Autor* und 31 GB unter *Veröffentlichung* wird derzeit unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für die Segmentspeichergröße über diesen Beschränkungen zu besprechen. |
 | Gesamtgröße des Inhalts-Repositorys <br>*(Segmentspeicher + Datenspeicher)* | Das Content Transfer Tool wurde entwickelt, um Inhalte für Datenspeicher vom Typ Dateidatenspeicher bis zu 10 TB zu übertragen. Mehr als 10 TB werden derzeit nicht unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für Inhalte zu besprechen, die größer als 10 TB sind. <br>Für Amazon S3- und Azure Data Store-Typen von Datenspeichern kann ein optionaler  [Pre-](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) CopyStep verwendet werden, um den Inhaltstransfer erheblich zu beschleunigen und eine Datenspeichergröße von mehr als 10 TB zu unterstützen. |
 | Indexgröße insgesamt | Die Indexgesamtgröße von maximal 25 GB wird derzeit unterstützt. Erstellen Sie ein Support-Ticket mit der Adobe-Kundenunterstützung, um Optionen für die Indexgröße über diesem Limit zu besprechen. |
 | Knotennamenlänge | Die Länge eines Knotennamens muss 150 Byte oder weniger betragen. Knotennamen, die länger als 150 Byte sind, müssen auf &lt;= 150 Byte gekürzt werden, damit sie vom Knotenspeicher &quot;Dokument&quot;in AEM als Cloud Service unterstützt werden. Die Erfassung schlägt fehl, wenn diese langen Knotennamen nicht behoben sind. |
