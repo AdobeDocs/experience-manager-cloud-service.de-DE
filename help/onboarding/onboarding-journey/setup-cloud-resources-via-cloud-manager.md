@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 2%
 
 ---
@@ -137,12 +137,13 @@ Gehen Sie wie folgt vor, um Ihre Cloud-Umgebungen aus Cloud Manager zu erstellen
 
 ## Nächste Schritte {#whats-next}
 
-Ihren Teammitgliedern müssen Berechtigungen für die Instanz erteilt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen. Nachdem Ihre Cloud-Ressourcen erstellt wurden und für Ihr Team verfügbar sind, muss der Systemadministrator Ihre Team-Mitglieder AEM als Cloud Service-Produktprofile aus Admin Console zuweisen.
+Ihren Teammitgliedern müssen Berechtigungen für die Instanz erteilt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen. Nachdem Ihre Cloud-Ressourcen erstellt wurden und für Ihr Team verfügbar sind, muss der Systemadministrator Ihre Team-Mitglieder AEM als Cloud Service-Produktprofile aus Adobe Admin Console zuweisen.
+
+>[!NOTE]
+>Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer zu einem von zwei Produktprofilen gehören: `AEM Users` oder `AEM Administrators`. Weitere Informationen finden Sie unter [Verwalten von Produkten und Benutzerzugriff in Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) .
 
 Sie sollten Ihre Onboarding-Journey fortsetzen, indem Sie sich das Dokument Zuweisen von Team-Mitgliedern zu AEM als Cloud Service Produktprofile ansehen.
 
->[!NOTE]
->Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer einem von zwei Produktprofilen &quot;AEM Benutzer&quot;oder &quot;AEM Administratoren&quot;angehören. Weitere Informationen
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
