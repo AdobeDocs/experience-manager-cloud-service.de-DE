@@ -1,9 +1,9 @@
 ---
 title: Erstellen von Screens-Videoausgaben in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Screens-Videoausgaben in Screens als Cloud Service erstellen.
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,24 @@ In diesem Handbuch wird beschrieben, wie Sie in Screens-Playern verwendete Video
 
 ## Schritte zum Erstellen von Screens-Videoausgaben in Screens als Cloud Service {#steps-creating-screens-video-renditions}
 
-1. Navigieren Sie in der Benutzeroberfläche von Screens Cloud zu Kanälen.
-1. Klicken Sie links oben auf die Adobe Experience Manager, um zum Screens Content Provider zu navigieren, d. h. AEM als Cloud Service.
-1. Klicken Sie jetzt im Hauptnavigationsmenü auf den Bereich Tools , dann auf &quot;Assets&quot; und dann auf &quot;Verarbeitungsprofile&quot;.
+1. Navigieren Sie in Screens Content Provider zu Ihrem Kanal.
 
-1. Klicken Sie auf &quot;Erstellen&quot;, um ein neues Verarbeitungsprofil zu erstellen.
-1. Geben Sie einen Namen an, z. B. &quot;ScreensProcessingProfile&quot;
-1. Navigieren Sie zur Registerkarte Video , um eine Videokodierung hinzuzufügen, und klicken Sie auf &quot;Neu hinzufügen&quot;
+   >[!NOTE]
+   >Weitere Informationen finden Sie unter [Verwenden des Screens Content Providers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) .
+
+1. Klicken Sie in der linken Navigationsleiste auf den Abschnitt Tools und dann auf **Assets** und dann auf **Verarbeitungsprofile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. Klicken Sie auf **Erstellen** , um ein neues Verarbeitungsprofil zu erstellen.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. Geben Sie den **Namen** ein, z. B. **ScreensProcessingProfile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. Navigieren Sie zur Registerkarte **Video** , um eine Videokodierung hinzuzufügen, und klicken Sie auf **Neu hinzufügen**.
 
 
    >[!IMPORTANT]
