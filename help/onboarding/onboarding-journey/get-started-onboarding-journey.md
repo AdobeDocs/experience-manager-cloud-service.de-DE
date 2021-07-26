@@ -4,16 +4,16 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 2%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
 # Erste Schritte mit dem Onboarding-Prozess {#getting-started}
 
-Beim Onboarding wird ein bestimmter Systemadministrator AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
+Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, die auf ihren Aufgaben basieren. Anschließend kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
 ## Zielsetzung {#objective}
 
@@ -21,7 +21,7 @@ Als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboa
 
 Nach dem Lesen dieses Abschnitts sollten Sie in der Lage sein:
 
-* Zugriff und Anmeldung bei Admin Console
+* Zugriff und Anmeldung bei Admin Console.
 * Überprüfen Sie Ihre Berechtigungen als Systemadministrator über Admin Console.
 
 >[!NOTE]
@@ -42,12 +42,12 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Melden Sie sich mit Ihrer Adobe ID an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console, wie unten dargestellt.
+1. Melden Sie sich mit Ihrem [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en) an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console, wie unten dargestellt.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie in der Aktionsleiste auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff haben müssen, wie in der folgenden Abbildung dargestellt.
+   >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff haben möchten, wie in der folgenden Abbildung dargestellt.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
