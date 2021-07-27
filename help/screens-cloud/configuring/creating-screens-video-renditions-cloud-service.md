@@ -1,15 +1,15 @@
 ---
-title: Erstellen von Screens-Videoausgaben in Screens als Cloud Service
-description: Auf dieser Seite wird beschrieben, wie Sie Screens-Videoausgaben in Screens als Cloud Service erstellen.
-source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
+title: Erstellen von Videoausgaben in Screens als Cloud Service
+description: Auf dieser Seite wird beschrieben, wie Sie Videoausgabeformate in Screens als Cloud Service erstellen.
+source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 
-# Erstellen von Screens-Videoausgaben in Screens als Cloud Service {#creating-screens-video-renditions}
+# Erstellen von Videoausgaben in Screens als Cloud Service {#creating-screens-video-renditions}
 
 ## Einführung {#introduction}
 
@@ -18,7 +18,9 @@ In diesem Handbuch wird beschrieben, wie Sie in Screens-Playern verwendete Video
 >[!IMPORTANT]
 >Die in diesem Abschnitt hervorgehobenen Schritte müssen konfiguriert werden, wenn Sie Videos in Screens-Kanälen verwenden möchten.
 
-## Schritte zum Erstellen von Screens-Videoausgaben in Screens als Cloud Service {#steps-creating-screens-video-renditions}
+## Schritte zum Erstellen von Videoausgaben in Screens als Cloud Service {#steps-creating-screens-video-renditions}
+
+Gehen Sie wie folgt vor, um Videoausgabeformate in Screens as a Cloud Service vom Screens Content Provider zu erstellen:
 
 1. Navigieren Sie in Screens Content Provider zu Ihrem Kanal.
 
