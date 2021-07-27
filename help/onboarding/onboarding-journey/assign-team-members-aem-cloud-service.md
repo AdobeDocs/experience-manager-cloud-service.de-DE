@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
+source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '814'
+ht-degree: 2%
 
 ---
 
@@ -44,6 +44,7 @@ Bevor Sie mit dem Lesen dieses Abschnitts beginnen, sollten Sie die folgenden Vo
    >[!NOTE]
    >Für das Onboarding empfehlen wir, zunächst Benutzer hinzuzufügen, die an den unmittelbaren Aufgaben teilnehmen, z. B. Administratoren, Entwickler und Inhaltsautoren. Sie können den Rest des Onboarding fortsetzen, ohne alle Benutzer hinzuzufügen. Nachdem Sie das Onboarding abgeschlossen haben, können Sie später eine größere Anzahl von Benutzern auswählen.
 
+Bevor Sie mit der Überprüfung der Schritte für die Zuweisung von Teammitgliedern zu AEM as a Cloud Service-Produktprofilen beginnen, stellen Sie sicher, dass Sie die folgenden beiden Schritte ausführen:
 
 1. Melden Sie sich bei [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) an. Weitere Informationen finden Sie unter Anmelden bei Admin Console .
 
@@ -51,11 +52,21 @@ Bevor Sie mit dem Lesen dieses Abschnitts beginnen, sollten Sie die folgenden Vo
 
 Gehen Sie wie folgt vor, um die Liste der Cloud Manager-Profile aus Adobe Admin Console anzuzeigen:
 
-1. Nachdem Sie sich bei Adobe Admin Console angemeldet haben, wählen Sie Adobe Experience Manager as a Cloud Service auf der Karte Produkte und Dienste aus:
+1. Melden Sie sich bei [Adobe Admin Console](https://adminconsole.adobe.com/) an. Wählen Sie auf der Seite **Übersicht** die Option **Adobe Experience Manager als Cloud Service** aus der Karte **Produkte und Dienste**.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
 1. Navigieren Sie zur Instanz (Autoreninstanz der Entwicklungsumgebung) und wählen Sie sie aus, wie im folgenden Bild dargestellt.
 
-   Jetzt können Sie die Liste der AEM als Cloud Service-Produktprofile sehen, die einem Benutzer basierend auf seiner Rolle zugewiesen werden müssen. Weitere Informationen dazu finden Sie unter AEM as a Cloud Service - Produktprofile .
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-1.png)
+
+
+1. Sie sehen die Liste der AEM als Cloud Service-Produktprofile, die einem Benutzer basierend auf seiner Rolle zugewiesen werden müssen.
+
+   >[!NOTE]
+   >Weitere Informationen dazu finden Sie unter [AEM als Cloud Service Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-2.png)
 
 
 ## Hinzufügen von Teammitgliedern zu AEM Benutzer- oder AEM Administrator-Produktprofil {#add-team-members}
