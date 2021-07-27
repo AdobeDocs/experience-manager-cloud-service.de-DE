@@ -1,10 +1,10 @@
 ---
 title: Erstellen von Screens-Videoausgaben in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Screens-Videoausgaben in Screens als Cloud Service erstellen.
-source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
+source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
@@ -39,20 +39,30 @@ In diesem Handbuch wird beschrieben, wie Sie in Screens-Playern verwendete Video
 
 1. Navigieren Sie zur Registerkarte **Video** , um eine Videokodierung hinzuzufügen, und klicken Sie auf **Neu hinzufügen**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Geben Sie den **Kodierungsnamen** wie **screens-fullhd** und die **Bitrate** als **2500** ein.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Stellen Sie sicher, dass Sie den Kodierungsnamen verwenden, der mit &quot;screens-&quot;beginnt, dass nur diese Videoausgabedarstellungen als Cloud Service das Videoerlebnis in Screens as a wiedergeben. Geben Sie die Bitrate ein, die Ihren Videos entspricht (2500 kbps für 720 px Video und 5000 kbps für 1080 px)
+   >Stellen Sie sicher, dass Sie den Kodierungsnamen verwenden, der mit &quot;screens-&quot;beginnt, dass nur diese Videoausgabedarstellungen als Cloud Service das Videoerlebnis in Screens wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für 720 px Video und 5000 kbps für 1080 px).
 
    >[!NOTE]
-   >Es können mehrere Videoausgabeformate mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden, aber beachten Sie, dass alle Screens- Ausgabeformate von den Screens-Geräten heruntergeladen werden, auch wenn das Gerät nur Videoausgabeformate wiedergibt.
+   >Für Videos können mehrere Videoausgabeformate mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Beachten Sie, dass alle Screens-Ausgabeformate von den Screens-Geräten heruntergeladen werden, auch wenn das Gerät nur Videoausgabedarstellungen wiedergibt.
 
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf **Save**.
 
-1. Wählen Sie das Verarbeitungsprofil aus und klicken Sie auf &quot;Profil auf Ordner anwenden&quot;.
+1. Wählen Sie das Verarbeitungsprofil aus und klicken Sie auf **Profil auf Ordner anwenden**.
 
-1. Wählen Sie die Ordner aus, in denen Screens-Videos aufbewahrt werden, und klicken Sie auf Übernehmen .
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Sie können mehrere Verarbeitungsprofile erstellen und auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die spezifischen Videoausgabeformate erhalten
+1. Wählen Sie die Ordner aus, in denen Screens-Videos aufbewahrt werden, und klicken Sie auf **Anwenden**.
 
-1. Wenn Sie Videos in den Ordner hochladen, in dem das Verarbeitungsprofil angewendet wird, werden Videos verarbeitet und konfigurierte Ausgabedarstellungen erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* Sie können mehrere Verarbeitungsprofile erstellen und auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die jeweiligen Videoausgabedarstellungen erhalten.
+   >* Wenn Sie Videos in den Ordner hochladen, in den das Verarbeitungsprofil angewendet wird, werden Videos verarbeitet und konfigurierte Ausgabedarstellungen erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.
+
 
