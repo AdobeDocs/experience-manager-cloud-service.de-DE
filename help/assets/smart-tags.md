@@ -5,21 +5,21 @@ contentOwner: AG
 feature: Smart-Tags, Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 89%
+source-wordcount: '2379'
+ht-degree: 77%
 
 ---
 
 
-# Hinzufügen von Smart-Tags zu Ihren Assets, um das Sucherlebnis zu verbessern {#smart-tag-assets-for-faster-search}
+# Hinzufügen von Smart-Tags zu Ihren Assets und Verbessern des Sucherlebnisses {#smart-tag-assets-for-faster-search}
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Keywords, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass die Assets in Suchvorgängen einfach identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging anhand einer Unternehmenstaxonomie dabei, die Assets am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller für das Erstellen einer Werbekampagne Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass bei einer Suche nur relevante Bilder angezeigt werden.
 
-Im Hintergrund verwenden die Funktionen ein KI-Framework von [Adobe Sensei](https://www.adobe.com/de/sensei/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig Smart-Tags auf hochgeladene Assets automatisch an.
+Im Hintergrund verwendet die Funktion das künstlich intelligente Framework von [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig Smart-Tags auf hochgeladene Assets automatisch an.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 * Erstellen Sie ein Tag-Modell, das nur Folgendes enthält:
 
    * Die Tags bezogen sich auf Automodelle.
-   * Die Tags, die sich auf Jacken für Frauen und Männer beziehen.
+   * Die Tags, die sich auf Jacken für Erwachsene und Kinder beziehen.
 
 * Erstellen Sie nicht Folgendes:
 
@@ -139,8 +139,8 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 1. Wählen Sie den Bericht **[!UICONTROL Smart-Tags-Training]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und eine Beschreibung für den Bericht an. Lassen Sie unter **[!UICONTROL Berichtplanen]** die Option **[!UICONTROL Jetzt]** aktiviert. Wenn Sie den Bericht für einen späteren Zeitpunkt planen möchten, wählen Sie **[!UICONTROL Später]** und geben Sie ein Datum und eine Uhrzeit an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Asset-Berichte]** den erstellten Bericht aus. Um den Bericht anzuzeigen, klicken Sie in der Symbolleiste auf **[!UICONTROL Ansicht]**.
-1. Prüfen Sie die Details des Berichts. Der Bericht zeigt den Trainings-Status der von Ihnen trainierten Tags an. Grün gibt in der Spalte **[!UICONTROL Trainings-Status]** an, dass der Smart-Tages-Service für das Tag trainiert wurde. Gelb bedeutet, dass der Service für ein bestimmtes Tag nicht vollständig trainiert ist. Fügen Sie in diesem Fall weitere Bilder mit dem jeweiligen Tag hinzu und führen Sie den Trainings-Workflow aus, um den Service vollständig für das Tag zu trainieren. Wenn Ihre Tags nicht im Bericht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
-1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht wird als [!DNL Microsoft Excel]-Tabellenkalkulation heruntergeladen.
+1. Prüfen Sie die Details des Berichts. Der Bericht zeigt den Trainings-Status der von Ihnen trainierten Tags an. Grün gibt in der Spalte **[!UICONTROL Trainings-Status]** an, dass der Smart-Tages-Service für das Tag trainiert wurde. Gelb bedeutet, dass der Dienst teilweise für ein bestimmtes Tag trainiert ist. Um den Dienst vollständig für ein Tag zu trainieren, fügen Sie weitere Bilder mit dem entsprechenden Tag hinzu und führen Sie den Trainings-Workflow aus. Wenn Ihre Tags in diesem Bericht nicht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
+1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht wird als -Tabellenkalkulation heruntergeladen.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ Alle Typen unterstützter Assets werden beim Hochladen automatisch von [!DNL Exp
 
 * Bei Bildern und Videos basieren die Smart-Tags auf einem visuellen Aspekt.
 
-* Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Textmenge im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die Smart-Tags die Keywords, die im Text angezeigt werden, und zwar die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert und zum Suchen nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine spezielle, strukturierte Suchfacette mit höherer Priorität, mit der die Asset-Erkennung im Vergleich zum vollständigen Suchindex verbessert wird.
+* Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Textmenge im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind. Bei textbasierten Assets sind die Smart-Tags die Keywords, die im Text angezeigt werden, und zwar die, die das Asset am besten beschreiben. Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert und zum Suchen nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine dedizierte, strukturierte und höher prioritäre Suchfacette. Letzteres trägt dazu bei, die Asset-Erkennung im Vergleich zu einem Suchindex zu verbessern.
 
 ## Verwalten von Smart-Tags und Asset-Suchvorgängen {#manage-smart-tags-and-searches}
 
@@ -193,13 +193,13 @@ Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Asse
 
 Sie können einem Tag auch einen höheren Rang zuweisen, um die Relevanz des Tags für das Asset zu erhöhen. Je höher der Rang eines Tags für ein Asset desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Assets in die Suchergebnisse.
 
-So moderieren Sie die Smart-Tags Ihrer Assets:
+So moderieren Sie die Smart-Tags Ihrer digitalen Assets:
 
-1. Suchen Sie im Suchfeld nach Assets, die auf einem Tag basieren.
+1. Suchen Sie im Suchfeld nach digitalen Assets basierend auf einem Tag.
 
-1. Prüfen Sie die Suchergebnisse auf Assets, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
+1. Prüfen Sie die Suchergebnisse, um die digitalen Assets zu identifizieren, die Sie für Ihre Suche nicht relevant finden.
 
-1. Wählen Sie ein solches Asset aus und wählen Sie dann in der Symbolleiste ![Symbol „Tags verwalten“](assets/do-not-localize/manage-tags-icon.png) aus.
+1. Wählen Sie ein Asset aus und wählen Sie dann ![Tag-Symbol](assets/do-not-localize/manage-tags-icon.png) in der Symbolleiste aus.
 
 1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. Wenn Sie ein spezifisches Tag für ein Asset ausschließen möchten, wählen Sie das Tag und anschießend in der Symbolleiste ![Löschsymbol](assets/do-not-localize/delete-icon.png) aus. Alternativ können Sie `X`-Symbol neben der Beschriftung auswählen.
 
@@ -213,9 +213,9 @@ So moderieren Sie die Smart-Tags Ihrer Assets:
 
 Standardmäßig kombiniert die [!DNL Experience Manager]-Suche die Suchbegriffe mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff in den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* Assets mit den Keywords `woman` und `running` in den Metadaten.
+* Assets mit `woman`- und `running`-Schlüsselwörtern in den Metadaten.
 
-* Assets, die über Smart-Tags mit einem der Keywords getaggt wurden.
+* Assets, die mit einem der Keywords getaggt wurden.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
 
@@ -223,21 +223,23 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 1. Treffer von `woman running` in den Smart-Tags.
 1. Treffer von `woman` oder `running` in Smart-Tags.
 
-## Einschränkungen beim Tagging und Best Practices {#limitations}
+## Einschränkungen und Best Practices beim Tagging {#limitations}
 
 Optimiertes Smart-Tagging basiert auf Lernmodellen von Markenbildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version der Smart-Tags gibt es folgende Einschränkungen:
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: Hemden mit geringer oder normaler Anpassung.
 * Es ist nicht möglich, Tags basierend auf winzigen Mustern oder Teilen eines Bildes zu identifizieren. Zum Beispiel Logos auf Hemden.
 * Tagging wird in den von [!DNL Experience Manager] unterstützten Sprachen unterstützt. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=de#languages).
-* Tags, die nicht realistisch gehandhabt werden, beziehen sich auf:
+* Die Tags, die nicht verarbeitet werden, beziehen sich auf:
 
-   * Nicht visuelle, abstrakte Aspekte, wie beispielsweise das Jahr oder die Jahreszeit der Veröffentlichung eines Produkts, die Stimmung oder die Emotionen, die durch ein Bild hervorgerufen werden, die subjektive Konnotation eines Videos usw.
+   * Nicht visuelle, abstrakte Aspekte, Zum Beispiel das Jahr oder die Jahreszeit der Veröffentlichung eines Produkts, die Stimmung oder die Emotion, die von einem Bild ausgelöst wird, und eine subjektive Konnotation eines Videos.
    * Feine visuelle Unterschiede bei Produkten wie Hemden mit und ohne Kragen oder kleinen Produkt-Logos, die in Produkte eingebettet sind.
 
-<!-- TBD: Add limitations related to text-based assets. -->
+Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden oder das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
 
-Verwenden Sie [!DNL Assets]-Suche (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
+<!-- TBD: Add limitations related to text files. -->
+
+Um nach Dateien mit Smart-Tags zu suchen (normal oder erweitert), verwenden Sie die [!DNL Assets]-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ Verwenden Sie [!DNL Assets]-Suche (Volltextsuche), um nach Assets mit Smart-Tags
 
 >[!MORELIKETHIS]
 >
->* [Verwalten von Assets mit Smart-Tags](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Smart-Tagging von Video-Assets](smart-tags-video-assets.md)
+>* [Erfahren Sie, wie Smart-Tags bei der Verwaltung digitaler Dateien helfen.](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Verwenden von Smart-Tags für Videos](smart-tags-video-assets.md)
 
