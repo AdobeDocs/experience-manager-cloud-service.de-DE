@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 99%
+source-wordcount: '2560'
+ht-degree: 95%
 
 ---
 
@@ -152,7 +152,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-cloud/authoring/features/templates.md).
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
 Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit einsatzbereiten Komponenten ausgestattet, die umfangreiche Funktionen bieten, wie:
 
@@ -250,7 +250,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -264,27 +264,30 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
-
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Das Symbol **Einfügen** ist mit einem Dropdown-Pfeil direkt rechts verfügbar:
+1. Tippen oder klicken Sie auf das Symbol **Einfügen** , das verfügbar wurde.
 
    ![Einfügen](/help/sites-cloud/authoring/assets/paste.png)
 
-   Wählen Sie eine der folgenden Möglichkeiten aus:
+1. Das Einfüge-Dialogfeld bietet eine Zusammenfassung der Einfügeoperation und die Möglichkeit,:
+   * **Neuer Site-Name:** Ändern Sie den Namen der eingefügten Seite
+   * **Ohne untergeordnete Elemente einfügen:** Begrenzen Sie beim Einfügen die untergeordneten Seiten der ausgewählten Seite (standardmäßig werden untergeordnete Seiten eingefügt).
 
-   1. Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
-   1. Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
+   ![Dialogfeld &quot;Einfügen&quot;](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
+1. Tippen oder klicken Sie auf die Schaltfläche **Einfügen** , um die Einfügeoperation zu bestätigen und die neuen Seiten zu erstellen.
+
+>[!NOTE]
+>
+>Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
+
+>[!NOTE]
+>
+>Wenn Sie die Einfügeaktion im Auswahlmodus starten, wird diese automatisch beendet, sobald die Seite kopiert wird.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-a-page}
 
-Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen und Ganzen gleich und wird von demselben Assistenten unterstützt. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
+Die Vorgehensweise zum Verschieben oder Umbenennen einer Seite ist im Wesentlichen identisch und beide Aktionen werden vom Assistenten &quot;Seite verschieben&quot;verarbeitet. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
 
 * Umbenennen einer Seite, ohne sie zu verschieben
 * Verschieben der Seite, ohne sie umzubenennen
@@ -412,7 +415,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 >
 >Wenn eine Seite bereits veröffentlicht ist, wird ihre Veröffentlichung vor dem Löschen automatisch rückgängig gemacht.
 
-### Sperren einer Seite {#locking-a-page}
+### Sperren einer Seite   {#locking-a-page}
 
 Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page). Auch Angaben dazu, ob eine Seite gesperrt ist, werden in beiden Fällen angezeigt.
 
