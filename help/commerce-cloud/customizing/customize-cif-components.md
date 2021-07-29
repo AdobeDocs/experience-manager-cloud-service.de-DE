@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
+source-git-commit: 1575d5d8b06b537fc9754885905aacdfd2e33fbf
 workflow-type: tm+mt
 source-wordcount: '2582'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -56,7 +56,7 @@ Wir werden das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) kl
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Fügen Sie die erforderlichen OSGi-Konfigurationen hinzu, um Ihre AEM-Instanz mit einer Magento-Instanz zu verbinden, oder fügen Sie die Konfigurationen dem neu erstellten Projekt hinzu.
@@ -89,7 +89,7 @@ Die Komponente Produkt-Teaser wird im Laufe dieses Tutorials erweitert. Als erst
 
    ![Produkt-Teaser – Standardstil](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Hinzufügen eines benutzerdefinierten Attributs in Magento {#add-custom-attribute}
+## Benutzerdefiniertes Attribut in Magento hinzufügen {#add-custom-attribute}
 
 Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. Als Nächstes fügen Sie als Teil des Produktattributs, das mithilfe der Magento-Benutzeroberfläche definiert wird, ein neues Attribut für **Umweltfreundlich** hinzu.
 
@@ -135,7 +135,7 @@ Die in AEM angezeigten Produkte und Produktdaten werden in Magento gespeichert. 
    >
    > Weitere Informationen zur [Cache-Verwaltung finden Sie im Magento-Benutzerhandbuch](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## GraphQL-IDE zur Überprüfung von Attribut {#use-graphql-ide} verwenden
+## GraphQL-IDE zur Überprüfung von Attributen verwenden {#use-graphql-ide}
 
 Bevor Sie mit dem AEM-Code anfangen, sollten Sie [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) mit einer GraphQL-IDE erkunden. Die Magento-Integration mit AEM erfolgt hauptsächlich über eine Reihe von GraphQL-Abfragen. Das Verstehen und Ändern der GraphQL-Abfragen ist eine der wichtigsten Methoden zum Erweitern der CIF-Kernkomponenten.
 
@@ -275,11 +275,9 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -330,7 +328,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
 
    Nachdem das Sling-Modell aktualisiert wurde, muss das Komponenten-Markup aktualisiert werden, um basierend auf dem Sling-Modell ein Zeichen für **Umweltfreundlich** anzuzeigen.
 
-## Anpassen des Markups des Produkt-Teasers {#customize-markup-product-teaser}
+## Anpassen des Markups für den Produkt-Teaser {#customize-markup-product-teaser}
 
 Eine gebräuchliche Erweiterung von AEM-Komponenten besteht darin, das von der Komponente erstellte Markup zu ändern. Dies geschieht durch Überschreiben des [HTL-Skripts](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de), das die Komponente zum Rendern des Markups verwendet. HTML Template Language (HTL) ist eine einfache Vorlagensprache, die AEM-Komponenten nutzen, um Markup basierend auf erstellten Inhalten dynamisch zu rendern, sodass sich die Komponenten wiederverwenden lassen. So kann z. B. der Produkt-Teaser immer wieder neu verwendet werden, um verschiedene Produkte anzuzeigen.
 
@@ -400,7 +398,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Öffnen Sie ein neues Browser-Fenster. Navigieren Sie zu AEM und dann zur **OSGi-Konsole** > **Status** > **Sling-Modelle**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -434,7 +432,7 @@ In unserem Fall möchten wir ein Banner auf dem Teaser rendern, um anhand eines 
    >
    > Es können auch Stapelspuren angezeigt werden, wenn das im Teaser verwendete Produkt als Teil seines Attributsatzes nicht über das `eco_friendly`-Attribut verfügt.
 
-## Stile für das Zeichen &quot;Umweltfreundlich&quot; {#add-styles} hinzufügen
+## Stile für das Zeichen „Umweltfreundlich“ hinzufügen {#add-styles}
 
 An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundlich** angezeigt werden soll, bereits, der Text könnte aber noch mehr Stil vertragen. Fügen Sie dem `ui.frontend`-Modul als Nächstes ein Symbol und Stile hinzu, um die Implementierung abzuschließen.
 
@@ -479,7 +477,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
