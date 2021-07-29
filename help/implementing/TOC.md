@@ -5,9 +5,9 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '921'
 ht-degree: 94%
 
 ---
@@ -172,7 +172,9 @@ ht-degree: 94%
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
    + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [Konfigurieren von Suchformularen](developing/extending/search-forms.md)
+   + Verwalten von Search Forms {#manage-search-forms}
+      + [Konfigurieren von Suchformularen](developing/extending/search-forms.md)
+      + [Suchfilter für den Posteingang konfigurieren](developing/extending/configure-inbox-search-rail.md)
    + [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md)
    + [Konfigurieren der RTE-Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
