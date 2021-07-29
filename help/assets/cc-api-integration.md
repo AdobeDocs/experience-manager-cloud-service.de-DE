@@ -4,9 +4,9 @@ description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Int
 contentOwner: AG
 feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # Generieren von Varianten von Assets mithilfe der Integration von [!DNL Adobe Creative Cloud] {#content-automation}
 
-Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets as a Cloud Service]- und [!DNL Adobe Creative Cloud]-APIs, um Ihre Assets im Maßstab kreativ zu verarbeiten. [!DNL Experience Manager] verwendet Cloud-basierte  [Asset-](/help/assets/asset-microservices-overview.md) Microservices, um die  [!DNL Adobe Creative Cloud] Funktionen zu verwenden und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
+Das Add-on zur Inhaltsautomatisierung integriert [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service]- und [!DNL Adobe Creative Cloud]-APIs zur kreativen Verarbeitung Ihrer Assets im Maßstab. [!DNL Experience Manager] verwendet Cloud-basierte  [Asset-](/help/assets/asset-microservices-overview.md) Microservices, um die  [!DNL Adobe Creative Cloud] Funktionen zu verwenden und die Asset-Erstellung und Medienverarbeitung zu automatisieren.
 
 Um Assets in [!DNL Adobe Photoshop] und [!DNL Adobe Lightroom] zu bearbeiten, müssen Sie keine Assets von [!DNL Experience Manager Assets] herunterladen, sie bearbeiten und erneut hochladen. Sie erstellen und konfigurieren ein Verarbeitungsprofil in [!DNL Experience Manager], wenden das Profil auf einen Ordner an und laden die Assets in den Ordner hoch. Ihre hochgeladenen Assets werden basierend auf den Verarbeitungsprofilen erneut verarbeitet und Sie erhalten Varianten dieser Assets. Die konsistente und mühelose Massenverarbeitung spart manuelle Arbeit und erhöht die Content-Geschwindigkeit, auch das ohne die Notwendigkeit von kreativen Fähigkeiten. Außerdem können die Entwickler und Partner die Asset-Microservices mit direktem Zugriff auf diese APIs erweitern und benutzerdefinierte Logik einschließen.
 
-Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:\
-![Automatisieren von Adobe Photoshop- und Adobe Lightroom-Vorgängen für Assets](assets/content-automation.png)
+Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorgänge für ihre Assets zu automatisieren:
+
 * **Auto-Ton**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und basierend auf den einzigartigen Eigenschaften des Bildes intelligent Licht- und Farbkorrekturen vorzunehmen.
+
 * **Auto-Upright**: Verwendet künstliche Intelligenz, um den Inhalt des Bildes zu analysieren und verzerrte Perspektiven in Bildern zu korrigieren. So erstellen Sie beispielsweise Horizonte auf Ebene.
+
+   ![Auto-Ton](/help/assets/assets/content-automation-autotone.png)
+
+   *Abbildung: Auto-Ton und automatische Ausrichtung können dazu beitragen, verzerrte Bilder zu verbessern.*
+
 * **Lightroom-Vorgaben**: Wendet einen benutzerdefinierten Look auf Bilder an, um ein konsistentes Erscheinungsbild mit benutzerdefinierten Vorgaben zu erzielen.
+
+   ![Lightroom-Vorgabe](/help/assets/assets/content-automation-lrpresets.png)
+
+   *Abbildung: Adobe Lightroom-Voreinstellung zur konsistenten Verbesserung der Bildqualität für viele Bilder.*
+
 * **Bild-Cutout**: Verwendet künstliche Intelligenz, um Auswahlmöglichkeiten für Alison-Objekte zu erstellen und Hintergrund mit einem einzigen Befehl zu entfernen.
+
+   ![Entfernen Sie den Hintergrund und schneiden Sie ein Bild aus einem Foto aus](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **Bildmaske**: Verwendet künstliche Intelligenz zum Erstellen von Masken um visuelle Objekte mit einem einzigen Befehl.
-* **Photoshop-Aktionen**: Wendet eine Reihe von Aufgaben (in Photoshop) auf eine Datei oder einen Dateistapel an.
+
+   ![Bild mit AI maskieren](/help/assets/assets/content-automation-mask.png)
+
+* **Photoshop-Aktionen**: Wendet eine Reihe von  [!DNL Adobe Photoshop] Aufgaben auf eine Datei oder einen Stapel von Dateien an.
+
+   ![Photoshop-Aktionen](/help/assets/assets/content-automation-psactions.png)
+
 * **Smart Object Replacement**: Personalisierung im Maßstab, indem Sie Bilder austauschen und dabei alle Effekte und Anpassungen beibehalten, die in einer PSD-Datei vorgenommen werden.
 
-
+   ![Objekte intelligent ersetzen](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets stapelweise zu bearbeiten {#process-assets}
 
@@ -42,9 +62,9 @@ Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varia
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Creative]** aus, geben Sie den Ausgabeordner an und wählen Sie **[!UICONTROL Neu hinzufügen]** aus, um eine kreative Konfiguration hinzuzufügen.
 
-1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder Ausgabename), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie **[!UICONTROL Includes]** und **[!UICONTROL Excludes]** MIME-Listen (oder Eingabe-Asset-Filter) und wählen Sie die erforderlichen operation.<br/>
+1. Geben Sie **[!UICONTROL Ausgabedarstellungsname]** (oder Ausgabename), **[!UICONTROL Erweiterung]** (oder Dateityp), wählen Sie **[!UICONTROL Qualität]** (oder Ausgabeparameter), wählen Sie **[!UICONTROL Includes]** und **[!UICONTROL Excludes]** MIME-Listen (oder Eingabe-Asset-Filter) und wählen Sie die erforderlichen Vorgang.
 
-   ![Kreativ-Registerkarte im Verarbeitungsprofil](assets/creative-processing-profile.png)
+   ![ Registerkarte &quot;Creative&quot;im  [!UICONTROL Verarbeitungsprofil]](assets/creative-processing-profile.png)
 
 1. Einige Vorgänge erfordern zusätzliche Parameter (Asset). Geben Sie bei Bedarf Werte für diese zusätzlichen Parameter an.
 
@@ -52,7 +72,7 @@ Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varia
 
 1. Wenden Sie das Verarbeitungsprofil auf einen Ordner an. Wählen Sie auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das anzuwendende Verarbeitungsprofil aus.
 
-Nachdem das Verarbeitungsprofil auf einen DAM-Ordner angewendet wurde, führen alle in diesen Ordner hochgeladenen oder aktualisierten Assets zusätzlich zur Standardverarbeitung die definierten Vorgänge aus. Die Unterordner übernehmen dieselben Profile wie auf die übergeordneten Ordner angewendet. Benutzer können diese Vererbung überschreiben.
+Nachdem Sie das Verarbeitungsprofil auf einen DAM-Ordner angewendet haben, führen alle Assets, die in diesen Ordner hochgeladen oder aktualisiert wurden, zusätzlich zur Standardverarbeitung die definierten Vorgänge aus. Die Unterordner übernehmen dieselben Profile wie auf die übergeordneten Ordner angewendet. Benutzer können diese Vererbung überschreiben.
 
 Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, wählen Sie die Option **[!UICONTROL Neu verarbeiten]** und wählen Sie dann das erforderliche Verarbeitungsprofil aus.
 
