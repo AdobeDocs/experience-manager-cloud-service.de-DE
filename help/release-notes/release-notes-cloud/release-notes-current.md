@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 10%
 
 ---
@@ -140,17 +140,17 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 * `bulk-offline-update-service` fehlte bei einigen Umgebungen alle Berechtigungen.
 
-* Aktualisieren Sie den Hilfe-Link, um die neue Screens-Cloud-Dokumentation abzugleichen.
+* Der Hilfe-Link wurde entsprechend der neuen Screens-Cloud-Dokumentation aktualisiert.
 
-* Zuweisung von Wiedergabelisten aufheben und das Entfernen von Wiedergabelisten mit zugewiesenen Playern deaktivieren.
+* Die Zuweisung von Wiedergabelisten aufheben und das Entfernen von Wiedergabelisten mit zugewiesenen Playern deaktivieren, funktioniert jetzt.
 
 * Der Player lädt Assets jetzt erneut herunter, wenn der Cache &quot;ALL&quot;gelöscht wird.
 
 * Die Wiederholungszeitplanung funktioniert jetzt, wenn die *Endzeit* für den folgenden Tag festgelegt ist.
 
-* `Back&Forward` funktioniert jetzt in der Cloud-Benutzeroberfläche von Screens.
+* `Back&Forward` funktioniert jetzt in Screens als Cloud Service-Benutzeroberfläche.
 
-* Tags mit demselben Namen, aber unterschiedlichen Namespaces konnten nicht erstellt werden.
+* Tags mit demselben Namen, aber unterschiedlichen Namespaces konnten nicht früher erstellt werden.
 
 ## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
