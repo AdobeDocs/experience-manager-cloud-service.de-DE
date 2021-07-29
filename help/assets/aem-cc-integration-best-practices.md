@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Zusammenarbeit, Adobe Asset Link, Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 58%
+source-wordcount: '3451'
+ht-degree: 57%
 
 ---
 
@@ -32,6 +32,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Vereinfachtes Desktop-Erlebnis für Kreative | Optimieren Sie den Zugriff auf Assets von einem DAM ([!DNL Assets]) für Kreativprofis oder, allgemeiner, für Desktop-Benutzer, die mit nativen Asset-Erstellungsanwendungen arbeiten. Sie benötigen eine einfache und unkomplizierte Möglichkeit, um Änderungen an Experience Manager zu finden, zu verwenden (zu öffnen), zu bearbeiten und zu speichern sowie neue Dateien hochzuladen. | Windows- oder Mac-Desktop, Creative Cloud-Programme |
 | Bereitstellung hochwertiger, gebrauchsfertiger Assets von [!DNL Adobe Stock] | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | [!DNL Assets];  [!DNL Adobe Stock] Marktplatz; Metadatenfelder |
 | Verteilen und Freigeben von Assets nach Organisationen | Interne Abteilungen/Zweigstellen und externe Partner, Distributoren und Agenturen verwenden die genehmigten Assets, die von der übergeordneten Organisation freigegeben wurden. Die Organisation möchte die erstellten Assets sicher und nahtlos für eine größere Wiederverwendung freigeben. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| Vordefinierte Varianten hochgeladener Assets automatisch generieren | Automatische Verarbeitung von Assets mithilfe der einzigartigen Medien-Handling- und Transformationstechnologie von Adobe für vordefinierte Aktionen. Erstellen Sie eine benutzerdefinierte Logik, um Ihre eigenen Aktionen mithilfe von APIs und Asset-Microservices zu definieren. | Benutzeroberfläche von [!DNL Assets] |
 
 ## Adobe-Angebote zur Unterstützung von Kooperationsbedarf {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Geschäftsbenutzer vereinfachen das Öffnen und Verwenden von Assets, bearbeiten und laden Änderungen auf [!DNL Experience Manager] hoch und laden neue Dateien aus der Desktop-Umgebung in [!DNL Experience Manager] hoch. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Programmen, auch Adobe-fremden, zu öffnen. | [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | Experience Manager-Desktop-Programm auf einem Windows- und Mac-Desktop |
 | Marketer und Geschäftsbenutzer können die Adobe Stock-Assets in Experience Manager entdecken, in der Vorschau anzeigen, lizenzieren, speichern und verwalten. Lizenzierte und gespeicherte Assets liefern ausgewählte Adobe Stock-Metadaten für eine bessere Governance. | [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Webschnittstelle |
 | Verbesserung der Zusammenarbeit zwischen Digital Product Designers und Marketing-Experten. Ermöglichen es Designern, die digitalen Assets in Design- und Wireframe-Modellen auf der Adobe XD-Arbeitsfläche zu verwenden. | [[!DNL Adobe Asset Link]  für  [!DNL Adobe XD]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| Marketingexperten können automatisch Varianten und Derivate basierend auf hochgeladenen Assets und vordefinierten Aktionen erstellen, die mithilfe der Anpassung erstellt wurden. Verwenden Sie diese Automatisierung, um die Content-Geschwindigkeit zu erhöhen und den manuellen Aufwand zu reduzieren. | [Inhaltsautomatisierung](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] Webschnittstelle |
 
 Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte der Zusammenarbeit. Die Verteilung und Beschaffung von Vermögenswerten im entsprechende Maß wird kurz als Verwendungsfall genannt. Für solche Lösungen sollten Sie Adobe Brand Portal oder Asset Share Commons beachten. Alternativlösungen wie [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), Lösungen, die basierend auf [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)-Komponenten erstellt werden können, [Linkfreigabe](share-assets.md). Die Verwendung der [Experience Manager Assets-Web-Benutzeroberfläche](/help/assets/manage-digital-assets.md) sollte basierend auf bestimmten Anforderungen überprüft werden.
 
