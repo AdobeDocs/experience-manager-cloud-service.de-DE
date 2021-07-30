@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 10%
 
 ---
@@ -156,22 +156,21 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* Sie können jetzt den Automated forms conversion-Dienst verwenden, um PDF forms in französischer, deutscher und spanischer Sprache in adaptive Formulare zu konvertieren.
+* Sie können jetzt den Automated forms conversion-Dienst verwenden, um [PDF forms in französischer, deutscher und spanischer Sprache](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in adaptive Formulare zu konvertieren.
 * Es wurde ein separates Bedienfeld zum Vorlagen-Editor hinzugefügt, um Fehler im Zusammenhang mit adaptiven Formularkomponenten anzuzeigen. Dies hilft, alle Fehler in adaptiven Formularen an einem Ort zu konsolidieren und die Auflösungszeit zu verkürzen.
 
 ### Neue Funktionen im Kanal für die Vorabversion [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von Kommunikations-APIs können Sie XDP-Vorlagen und XML-Daten kombinieren, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus generieren. Mit den APIs können Sie Anwendungen erstellen, mit denen Sie:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp: Kombinieren Sie XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus generieren. Mit den APIs können Sie Anwendungen erstellen, mit denen Sie:
    * Generieren Sie Dokumente, indem Sie Vorlagendateien mit XML-Daten füllen.
    * Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
    * Generieren Sie PDF-Druckdateien aus einem XFA-Formular als PDF und Adobe Acrobat-Formular.
 
 * **Variablendaten-Externalizer**: Sie können Daten vom AEM-Workflow-Variablen in einem externen Speichersystem speichern, das von Ihrem Unternehmen verwaltet wird.
 
-* **Acroform-based Document of Record**: Sie können Adobe Acrobat Form PDF (Acroform PDF) auch als Vorlage für Datensatzdokument neben XFA-basierten Formularvorlagen verwenden.
+* **Acroform-based Document of Record**: Sie können auch Adobe Acrobat Form PDF (Acroform PDF) [ ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)  als Vorlage für Datensatzdokument neben XFA-basierten Formularvorlagen verwenden.
 
-* **Microsoft Azure-Datenspeicher-Connector**: Sie können jetzt das Formulardatenmodell mit dem Microsoft Azure-Speicher verbinden. Dadurch können Sie adaptive Formulardaten in Microsoft Azure Storage als BLOB speichern und abrufen.
-
+* **Microsoft Azure-Datenspeicher-Connector**: Sie können jetzt das Formulardatenmodell mit dem Microsoft Azure-Speicher  [verbinden](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Dadurch können Sie adaptive Formulardaten abrufen und in Microsoft Azure Storage als BLOB speichern.
 
 ## Cloud Acceleration Manager {#cam}
 
