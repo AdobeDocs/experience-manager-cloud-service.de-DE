@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 48%
 
 ---
@@ -41,7 +41,7 @@ Dadurch werden die URLs der Produktseiten konfiguriert und die folgenden Optione
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-wobei im Fall des [Venia-Referenz-Stores](https://github.com/adobe/aem-cif-guides-venia)
+Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` ersetzt durch  `/content/venia/us/en/products/product-page`
 * `{{sku}}` wird durch die SKU des Erzeugnisses ersetzt, z. B.  `VP09`
@@ -58,7 +58,7 @@ Dadurch werden die URLs der Kategorie- oder Produktlistenseiten konfiguriert und
 * `{{page}}.html/{{url_path}}.html` (Standard)
 * `{{page}}.html/{{url_key}}.html`
 
-wobei im Fall des [Venia-Referenz-Stores](https://github.com/adobe/aem-cif-guides-venia)
+Im Fall von [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` ersetzt durch  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` wird durch die  `url_key` Eigenschaft der Kategorie ersetzt
