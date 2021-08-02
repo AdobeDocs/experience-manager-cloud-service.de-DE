@@ -4,10 +4,10 @@ user-guide-title: Handbuch zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 93%
+source-wordcount: '484'
+ht-degree: 70%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 93%
    + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Dynamic Media Newsletter von Experience League](dynamic-media/dynamic-media-newsletter.md)
+   + [Dynamic Media-Newsletter-Archiv nach Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
    + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
@@ -92,10 +92,10 @@ ht-degree: 93%
    + [Best Practices für die Dateiverwaltung](dynamic-media/best-practices-for-file-management.md)
    + [Bildprofile](dynamic-media/image-profiles.md)
    + [Videoprofile](dynamic-media/video-profiles.md)
-   + [Verwalten von Bildvorgaben für Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Verwalten von Dynamic Media-Bildvorgaben](dynamic-media/managing-image-presets.md)
    + [Anwenden von Dynamic Media-Bildvorgaben](dynamic-media/image-presets.md)
-   + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Verwalten von Dynamic Media-Viewer-Vorgaben](dynamic-media/managing-viewer-presets.md)
+   + [Anwenden von Dynamic Media-Viewer-Vorgaben](dynamic-media/viewer-presets.md)
    + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
    + [Invalidierung des CDN-Cache über Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
@@ -107,18 +107,18 @@ ht-degree: 93%
    + [Panoramabilder](dynamic-media/panoramic-images.md)
    + [Gemischte Mediensets](dynamic-media/mixed-media-sets.md)
    + [Rotationssets](dynamic-media/spin-sets.md)
-   + [Video](dynamic-media/video.md)
+   + [Video in Dynamic Media](dynamic-media/video.md)
    + [Karussellbanner](dynamic-media/carousel-banners.md)
    + [Interaktive Bilder](dynamic-media/interactive-images.md)
    + [Interaktive Videos](dynamic-media/interactive-videos.md)
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
-   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Experience Platform-Tags](dynamic-media/tags.md)
-   + [Verwenden der Schnellansicht zum Erstellen benutzerdefinierter Popups](dynamic-media/custom-pop-ups.md)
+   + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics- und Adobe Experience Platform-Tags](dynamic-media/tags.md)
+   + [Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht](dynamic-media/custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
-   + [Anzeigen von Dynamic Media-Assets in der Vorschau](dynamic-media/previewing-assets.md)
+   + [Vorschau von Dynamic Media-Assets anzeigen](dynamic-media/previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
-   + [Verknüpfen von URLs mit einer Web-Anwendung](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [Einbetten des Dynamic Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
+   + [URLs mit Ihrer Webanwendung verknüpfen](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
