@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Bereitstellen
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Das folgende Video bietet einen Überblick über die Implementierung von Code f�
 
 Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt umwandelt. So wird ein AEM as a Cloud Service-Programm beschrieben, wenn es in einer Cloud-Umgebung ausgeführt wird. Wenn Sie also die Pakete im Package Manager für Cloud-Umgebungen betrachten, enthält der Name „cp2fm“ und wurden alle Metadaten der transformierten Pakete entfernt. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Inhaltspakete, die für AEM as a Cloud Service-Anwendungen geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichem und veränderlichem Inhalt aufweisen. Cloud Manager installiert dann nur den veränderlichen Inhalt und gibt außerdem eine Meldung wie die folgende aus:
+Inhalts-Packages, die für AEM as a Cloud Service-Progrramme geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichem und veränderlichem Inhalt aufweisen, und Cloud Manager installiert nur den veränderlichen Inhalt und gibt außerdem eine Meldung wie diese aus:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -104,9 +104,9 @@ Nach der Umstellung auf die neue Programmversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen). Informationen zu Installationshaken finden Sie in der [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) . Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. Informationen zu Installationshaken finden Sie in der [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) . Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
 
-Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [AEM 6.5 Dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
+Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Implementierung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über Package Manager installiert werden.
@@ -115,7 +115,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie oben erwähnt, sollten Kunden mit vorhandener Code-Basis die Repository-Umstrukturierung durchführen, die durch die 6.5 Repository-Änderungen erforderlich ist, die in der [AEM 6.5-Dokumentation beschrieben werden.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Wie bereits erwähnt, sollten sich Kunden mit bestehender Code-Basis an die Repository-Umstrukturierung halten, die durch die in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) beschriebenen 6.5-Repository-Änderungen erforderlich ist.
 
 ## Repoinit {#repoinit}
 
@@ -169,9 +169,9 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Package Manager - Migrieren von Paketen mit veränderlichen Inhalten"
->abstract="Erkunden Sie die Verwendung des Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als &quot;Einzel&quot; installiert werden sollte. Dazu gehört der Import bestimmter Inhalte aus der Produktion in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung kleiner Inhaltspakete von der On-Premise-Umgebung auf AEM Cloud-Umgebungen und mehr."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Content Transfer Tool"
+>title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
+>abstract="Probieren Sie die Verwendung des Package Managers für Anwendungsfälle, in denen ein Inhalts-Package einmalig installiert werden soll, z. B. Importieren bestimmter Inhalte aus der Produktion in das Staging, um ein Produktionsproblem zu beheben, Übertragen eines kleinen Inhalts-Packages aus einer On-Premise-Umgebung in AEM-Cloud-Umgebungen und mehr."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann Package Manager in AEM as a Cloud Service-Umgebungen verwendet werden.
 
@@ -181,7 +181,7 @@ Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderlich
 
 ### Einschließen von Drittanbieterpaketen {#including-third-party}
 
-Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen (zum Beispiel von Software-Anbietern wie Übersetzungspartnern von Adobe) einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und in `pom.xml` auf sie zu verweisen. Dies ist für öffentliche Repositorys und auch für private Repositorys mit Kennwortschutz möglich, wie unter [Unterstützung für kennwortgeschütztes Maven-Repository](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) beschrieben.
+Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen (zum Beispiel von Software-Anbietern wie Übersetzungspartnern von Adobe) einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und in `pom.xml` auf sie zu verweisen. Dies ist für öffentliche Repositorys und auch für private Repositorys mit Kennwortschutz möglich, wie unter [Unterstützung für kennwortgeschütztes Maven-Repository](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) beschrieben.
 
 Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository würde in den nachfolgend dargestellten Projekt-POMs deklariert:
 
