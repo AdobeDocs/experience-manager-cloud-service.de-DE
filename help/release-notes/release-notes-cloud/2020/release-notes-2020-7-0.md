@@ -2,7 +2,7 @@
 title: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service für 2020.7.0.
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 97%
@@ -47,7 +47,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 * Der Assistent zum Verschieben von Assets wird für die in Sammlungen enthaltenen Assets nicht wie erwartet geladen. (CQ-4296756)
 * Die Werte von `dam:size` und `dam:sha1` sind von XMP Writeback ausgeschlossen. (CQ-4237355)
-* Beim Rückgängigmachen der Veröffentlichung von Assets in Batches gibt [!DNL Brand Portal] einen Fehler aus, der darauf hindeutet, dass der Anfrage-URI zu lang ist. (CQ-4299474)
+* Beim Aufheben der Veröffentlichung von Assets in Batches gibt [!DNL Brand Portal] einen Fehler aus, der darauf hindeutet, dass der Anfrage-URI zu lang ist. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -72,11 +72,11 @@ Weitere Informationen finden Sie unter [AMP-Unterstützung für die Kernkomponen
 
 * Fehlerbehebungen und Qualitätsverbesserungen am Code.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version 2020.7.0 von [!UICONTROL Cloud Manager] wurde am 9. Juli 2020 veröffentlicht.
+Die [!UICONTROL Cloud Manager]-Version 2020.7.0 wurde am 9. Juli 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
@@ -88,12 +88,12 @@ Die Version 2020.7.0 von [!UICONTROL Cloud Manager] wurde am 9. Juli 2020 verö
 
 * Cloud Manager-Pipelines unterstützen jetzt anwenderspezifische Variablen und Geheimnisse.
 
-   Weitere Informationen finden Sie unter [Pipeline-Variablen](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+   Weitere Informationen finden Sie unter Pipeline-Variablen.
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
 * Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
-Weitere Informationen finden Sie unter [Java 11-Unterstützung verwenden](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
+Weitere Informationen finden Sie unter Java 11-Unterstützung verwenden.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
