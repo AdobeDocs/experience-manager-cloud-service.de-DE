@@ -1,7 +1,7 @@
 ---
 title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: dcc598b565dfeeb7c5f62671edc8b256b60d9ec4
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 25%
@@ -64,7 +64,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 * Um Verwirrung zu vermeiden, wurden die Segmentzeilen Veröffentlichen AEM und Veröffentlichen des Dispatchers auf der Seite Umgebungsdetails konsolidiert.
 
-   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene` -Indizes zu überprüfen. Weitere Informationen finden Sie unter [Benutzerdefinierte DAM-Asset Lucene Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
 
