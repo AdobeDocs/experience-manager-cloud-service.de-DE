@@ -1,12 +1,12 @@
 ---
-title: Video
-description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten..
+title: Video in Dynamic Media
+description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten.
 feature: Videoprofile
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '9459'
+source-wordcount: '9499'
 ht-degree: 80%
 
 ---
@@ -40,8 +40,10 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
       * [Anwenden eines Videoprofils auf Ordner](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Erfahren Sie mehr über [Digitale Assets organisieren](/help/assets/organize-assets.md).
-   * Laden Sie die Primärvideos in die Ordner hoch. Sie können Videodateien mit bis zu 15 GB pro Datei hochladen. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
+   * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
+      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten.
+      * Sie können Videodateien mit bis zu 15 GB pro Datei hochladen.
       * [Videos hochladen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)
       * Weitere Informationen zu [Unterstützten Eingabedateiformaten](/help/assets/file-format-support.md)
    * [Fortschritt der Videokodierung](#monitoring-video-encoding-and-youtube-publishing-progress) in der Asset- oder Workflow-Ansicht überwachen
@@ -288,6 +290,9 @@ Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideo
 ### Quellvideodateien {#source-video-files}
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
+
+* Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten.
+* Sie können Primärquellen-Videodateien mit bis zu 15 GB hochladen.
 
 Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
 
