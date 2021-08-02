@@ -2,10 +2,10 @@
 title: Übermitteln eines AEM-Connectors
 description: Übermitteln eines AEM-Connectors
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ In vorherigen AEM-Lösungen wurde Package Manager verwendet, um Connectoren auf 
 Es gibt mehrere Möglichkeiten, wie die Pakete in ein Projekt eingebunden werden können:
 
 1. Öffentliches Repository eines Partners: Ein Partner hostet das Inhaltspaket in einem öffentlich zugänglichen Maven-Repository.
-1. Kennwortgeschütztes Repository eines Partners: Ein Partner hostet das Inhaltspaket in einem kennwortgeschützten Maven-Repository. Anweisungen finden Sie unter [Kennwortgeschützte Maven-Repositorys unter](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+1. Kennwortgeschütztes Repository eines Partners: Ein Partner hostet das Inhaltspaket in einem kennwortgeschützten Maven-Repository. Anweisungen finden Sie unter Kennwortgeschützte Maven-Repositorys .
 1. Gebündeltes Artefakt: In diesem Fall ist das Connector-Paket lokal im Maven-Projekt des Kunden enthalten.
 
 Pakete müssen unabhängig davon, wo sie gehostet werden, als Abhängigkeiten in der Datei „pom.xml“ referenziert werden, wie vom Anbieter bereitgestellt.
