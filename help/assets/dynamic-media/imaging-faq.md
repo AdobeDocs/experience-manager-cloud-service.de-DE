@@ -4,9 +4,9 @@ description: Erfahren Sie, wie die intelligente Bildbearbeitung mit Adobe Sensei
 feature: Asset-Management,Ausgabeformate
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 52%
 
 ---
@@ -184,13 +184,13 @@ Sie initiieren die Anfrage zur Verwendung der intelligenten Bildbearbeitung. nic
 
 Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Netzwerkoptimierung für ein Dynamic Media-Unternehmenskonto deaktiviert (deaktiviert). Wenn Sie eine oder beide dieser vordefinierten Verbesserungen aktivieren möchten, erstellen Sie einen Support-Fall wie unten beschrieben.
 
-Der Veröffentlichungszeitplan für die intelligente Bildbearbeitung (DPR) und Netzwerkoptimierung lautet wie folgt:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| Region | Zieldatum |
+| Region | Target date |
 |---|---|
-| Nordamerika | Live |
-| Europa, Naher Osten, Afrika | 13. August 2021 |
-| Asien-Pazifik | 22. Juli 2021 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [Verwenden Sie die Admin Console, um einen Support-Fall zu erstellen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
@@ -281,4 +281,4 @@ Wie funktioniert die DSGVO-Optimierung für die intelligente Bildbearbeitung mit
 * Wenn die Dynamic Media Foundation-Komponente standardmäßig für die DSGVO-Optimierung konfiguriert ist, um zu verhindern, dass Bilder aufgrund der DSGVO-Optimierung für die serverseitige intelligente Bildbearbeitung überdimensioniert werden, wird `dpr=off` immer den Dynamic Media Foundation-Komponentenbildern hinzugefügt. Selbst wenn der Kunde die DSGVO-Optimierung in der DM Foundation-Komponente deaktiviert, wird die DSGVO für die serverseitige intelligente Bildbearbeitung nicht aktiviert. Zusammenfassend ist festzustellen, dass in der DM Foundation-Komponente die DPR-Optimierung nur auf der Grundlage der Einstellungen auf DM Foundation-Komponentenebene wirksam wird.
 * Jede Viewer-seitige DSGVO-Optimierung arbeitet mit der serverseitigen DSGVO-Optimierung für die intelligente Bildbearbeitung zusammen und führt nicht zu übergroßen Bildern. Mit anderen Worten: Egal, wo die DSGVO vom Viewer verarbeitet wird, z. B. die Hauptansicht nur in einem zoomfähigen Viewer, die DSGVO-Werte für die serverseitige intelligente Bildbearbeitung werden nicht ausgelöst. Gleichermaßen wird der DSGVO-Wert für die serverseitige intelligente Bildbearbeitung ausgelöst, wenn Viewer-Elemente wie Farbfelder und Miniaturansichten nicht mit der DSGVO verarbeitet werden.
 
-Siehe auch [Beim Arbeiten mit Bildern](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) und [Beim Arbeiten mit smartem Zuschneiden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop) —>
+Siehe auch [Bei der Arbeit mit Bildern](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) und [Bei der Arbeit mit smartem Zuschneiden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
