@@ -1,7 +1,7 @@
 ---
 title: Verwenden des Screens Content Providers
 description: Auf dieser Seite wird die Verwendung des Screens Content Providers zum Erstellen von Inhalten beschrieben.
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 11%
@@ -30,10 +30,10 @@ Gehen Sie wie folgt vor, um sich beim Screens Content Provider anzumelden:
 1. Navigieren Sie zur Startseite [Adobe Experience Cloud](https://experience.adobe.com) .
 
 1. Wählen Sie **Experience Manager** aus.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klicken Sie auf der Cloud Manager-Karte auf **Launch.** Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, können Sie die Benutzeroberfläche verwenden.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Wählen Sie das Programm für Screens als Cloud Service aus und klicken Sie auf das Symbol, wie unten dargestellt, um die Seite **Übersicht** von Cloud Manager für dieses spezifische Programm zu öffnen.
 
