@@ -1,0 +1,53 @@
+---
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0
+feature: Versionshinweise
+exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
+source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 100%
+
+---
+
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.10.0.
+
+## Veröffentlichungsdatum {#release-date}
+
+Die Version 2020.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 1. Oktober 2020 veröffentlicht.
+
+## Cloud Manager {#cloud-manager}
+
+### Neue Funktionen {#what-is-new}
+
+* Die Seite „Umgebungen“ wurde neu gestaltet.
+
+* Im Ruhezustand befindliche Umgebungen verfügen jetzt über einen separaten Status.
+
+* Der Cloud Manager-Build-Container unterstützt jetzt die Kompilierung von Projekten mit Java 8 und Java 11. Die Unterstützung für Java 11 wird durch das Maven Toolchains-System bereitgestellt.
+
+* Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
+
+* Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
+Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
+
+
+### Fehlerbehebungen {#bug-fixes-cloud-manager}
+
+* Die Verknüpfung von Cloud Manager mit der Developer Console war vor der vollständigen Erstellung der Umgebung nicht korrekt aktiviert.
+
+* Die Verknüpfung zur Developer Console direkt aus Cloud Manager zeigte die Option zum Versetzen der Umgebung eines Sandbox-Programms in den Ruhezustand und zum Aufheben des Ruhezustands nicht an.
+
+* Die Schaltflächen „Abbrechen“ und „Speichern“ auf der Seite „Bearbeiten“ für produktionsfremde Pipelines waren nicht immer sichtbar.
+
+* Bestimmte Fehler im Code-Qualitätsprozess konnten dazu führen, dass die Protokolldatei nicht korrekt erzeugt wurde.
+
+* Beim Erstellen eines neuen Programms gab der vorgeschlagene Name manchmal ein Duplikat eines vorhandenen Programmnamens zurück.
+
+* Protokolle für bestimmte größere Pipeline-Schritte konnten nicht über die gesamte Benutzeroberfläche konsistent heruntergeladen werden.
+
+* Bei der Validierung von Umgebungsnamen trat ein Fehler mit einer Verschiebung um den Wert eins auf.
+
+* Auf der Seite „Umgebungen“ wurden manchmal Veröffentlichungs- und Dispatcher-Segmente angezeigt, wenn keine vorhanden waren.
