@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 24%
+source-wordcount: '942'
+ht-degree: 32%
 
 ---
 
@@ -38,7 +38,7 @@ Sobald Ihr Vertrag unterzeichnet wurde, finden die folgenden Veranstaltungen sta
 
 1. Ein Systemadministrator kann [Benutzern Zugriff auf eine AEM-Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md) zu Entwicklungszwecken gewähren.
 
-**[Adobe ID herunterladen](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Adobe ID herunterladen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
 Sie benötigen die Hilfe Ihrer Adobe ID und Ihres Systemadministrators, um Benutzer zu Cloud Manager zu ihren zugewiesenen Rollen hinzufügen zu lassen.
 
@@ -46,9 +46,9 @@ Sie benötigen die Hilfe Ihrer Adobe ID und Ihres Systemadministrators, um Benut
 
 Ihr Systemadministrator kann Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen. In diesem Abschnitt erfahren Sie, was *Cloud Manager-Rollen* sind und welche Berechtigungen mit den Rollen verknüpft sind, bevor Sie beginnen.
 
-**[Systemadministratoraufgaben](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
+**[Aufgaben des Systemadministrators](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff auf Berechtigungen. Dieser Benutzer hat als erster Zugriff auf Aufgaben in Admin Console und Cloud Manager.
+Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff bis zu Berechtigungen. Dieser Benutzer ist die erste Person, die Zugriff bekommt, um mit der Erledigung von Aufgaben innerhalb von Admin Console und Cloud Manager zu beginnen.
 Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden organisatorischen Aufgaben:
 
 * Hinzufügen von Benutzern
@@ -56,7 +56,7 @@ Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden orga
 
 **[Zu Cloud Manager navigieren](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um mit Ihrer Cloud-Journey mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. [Erstellen eines Programms](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md), [Zugreifen auf Git](/help/implementing/cloud-manager/accessing-git.md), [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
+Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um mit Ihrer Cloud-Journey mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. das Erstellen eines Programms, Hinzufügen einer Umgebung, [Zugreifen auf Git](/help/implementing/cloud-manager/accessing-git.md), [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager ist ein wichtiger Bestandteil von AEM as a Cloud Service. Unternehmen können [!DNL Experience Manager] in der Cloud selbst verwalten. Das umfasst ein Framework für die fortlaufende Integration und Bereitstellung (CI/CD), mit dem IT-Teams und Implementierungspartner die Bereitstellung von Anpassungen oder Aktualisierungen beschleunigen können, ohne die Leistung oder Sicherheit zu beeinträchtigen. Über die Benutzeroberfläche können Sie die CI/CD-Pipeline konfigurieren und starten.
 
 **[Gewähren des Benutzerzugriffs auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)**
@@ -75,8 +75,8 @@ In diesem Abschnitt erfahren Sie, wie ein Systemadministrator oder ein Benutzer,
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie [!DNL Experience Manager Sites] als Cloud Service erstellen und verwalten können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie [!DNL Experience Manager Assets as a Cloud Service] verwenden und verwalten. |
 | [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mithilfe AEM leistungsstarken Funktionen erstellen und anpassen können, indem Sie diese Themen zu Entwicklung und Implementierung kennenlernen. |
-| [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) | Entdecken Sie diese geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von AEM Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Implementierung beschäftigen. |
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie diese geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in [!DNL Experience Manager as a Cloud Service] integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von [!DNL Experience Manager as a Cloud Service] , z. B. Indizierungs- und Wartungsaufgaben. |
 | [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework unter [!DNL Experience Manager as a Cloud Service]. |
