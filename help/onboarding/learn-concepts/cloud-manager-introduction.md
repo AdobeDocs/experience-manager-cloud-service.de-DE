@@ -1,13 +1,13 @@
 ---
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 22%
 
 ---
-
 
 # Einführung in Cloud Manager {#intro-cloud-manager}
 
@@ -26,10 +26,10 @@ Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar, die
 Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 
 * Ein *Produktionsprogramm* wird erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
-Weitere Informationen finden Sie unter [Einführung in Produktionsprogramme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+Weitere Informationen finden Sie unter Einführung in Produktionsprogramme.
 
 * Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
-Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+Weitere Informationen finden Sie unter Einführung in Sandbox-Programme.
 
 ## Cloud Manager-Umgebungen {#cloud-manager-environments}
 
@@ -46,7 +46,7 @@ Ihre Cloud-Umgebungen werden über Cloud Manager erstellt, aufgerufen und angeze
 
 Der AEM-Autorendienst ist in einer Umgebung enthalten, in der Site-Inhalte und digitale Assets erstellt, verwaltet und aktualisiert werden. In der Regel haben nur interne Benutzer Zugriff auf den Autorendienst und befinden sich hinter einem Anmeldebildschirm. Der Authoring-Dienst ist sowohl als Authoring- als auch als Vorschau-Umgebung konzipiert.
 
-### AEM-Veröffentlichungsdienst {#publish-services}
+### AEM Publish Service {#publish-services}
 
 Der AEM-Veröffentlichungsdienst ist in einer Umgebung wie einer Website enthalten, in der das Endbenutzererlebnis gehostet wird. Dies ist der Dienst, den Besucher der Site anzeigen und damit interagieren. In der Regel ist der Veröffentlichungsdienst öffentlich verfügbar.
 
