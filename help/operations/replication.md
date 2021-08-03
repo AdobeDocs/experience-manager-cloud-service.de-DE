@@ -2,10 +2,10 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 20%
+source-wordcount: '1347'
+ht-degree: 19%
 
 ---
 
@@ -45,7 +45,7 @@ Ausführlichere Informationen zum Verwalten von Veröffentlichungen finden Sie i
 
 >[!NOTE]
 >
->Dieser Ansatz sollte als veraltet betrachtet werden, da er nicht den Status behält und weniger skalierbar ist als andere Ansätze. Es wird von der Adobe empfohlen, stattdessen Veröffentlichungs- oder Workflow-Methoden zu verwenden.
+>Dieser Ansatz sollte als veraltet betrachtet werden und wird am oder nach dem 30. September 2021 entfernt, da er nicht den Status behält und weniger skalierbar ist als andere Ansätze. Es wird von der Adobe empfohlen, stattdessen Veröffentlichungs- oder Workflow-Methoden zu verwenden.
 
 Aktivieren eines Baumes:
 
