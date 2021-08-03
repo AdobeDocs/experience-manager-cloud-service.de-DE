@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset-Berichte
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 80%
+source-wordcount: '813'
+ht-degree: 75%
 
 ---
 
@@ -67,8 +67,8 @@ Sie können die Asset Insights-Bewertungen auf der Metadatenseite anzeigen.
 
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
-1. Navigieren Sie in der Assets-Benutzeroberfläche zum Ordner, in dem die Assets enthalten sind, für die Sie Statistiken anzeigen möchten.
-1. Klicken Sie auf die Option „Layout“ und wählen Sie **[!UICONTROL Insights-Ansicht]** aus.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zu dem Ordner mit den Assets, für die Sie Einblicke anzeigen möchten.
+1. Klicken Sie in der Symbolleiste auf die Option **[!UICONTROL Layout]** und wählen Sie dann **[!UICONTROL Insights View]**.
 1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
 1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
@@ -117,6 +117,29 @@ Nachdem Sie Ihr Adobe Analytics-Konto konfiguriert haben, wird der Seitenverfolg
 
 1. Klicken Sie in der **[!UICONTROL Navigationsseite]** auf die Karte **[!UICONTROL Insights-Seitenverfolgung]**.
 1. Klicken Sie auf **[!UICONTROL Herunterladen]**, um den Seitenverfolgungs-Code herunterzuladen.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+Im folgenden Codebeispiel wird der Seitenverfolgungs-Code angezeigt, der in einer Beispiel-Webseite enthalten ist:
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
