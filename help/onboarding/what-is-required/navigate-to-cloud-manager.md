@@ -2,10 +2,10 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Landingpage von Cloud Manager navigieren.
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 42%
+source-wordcount: '489'
+ht-degree: 35%
 
 ---
 
@@ -21,14 +21,21 @@ Sobald Ihnen Ihr Systemadministrator Zugriff auf Cloud Manager gewährt, erhalte
 1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte**, wie in der folgenden Abbildung dargestellt.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Je nach den in [!UICONTROL Cloud Manager] zugewiesenen Rollen und dem Programmstatus werden bei der Verwendung der [!UICONTROL Cloud Manager]-Benutzeroberfläche unterschiedliche Bildschirme angezeigt. Weitere Informationen finden Sie im folgenden Abschnitt [Cloud Manager-Landingpage](#cloud-manager-landing) .
+
+   >[!IMPORTANT]
+   >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Bitte markieren Sie diese Seite mit einem Lesezeichen für die Zukunft, damit Sie direkt zur Landingpage von Cloud Manager navigieren können.
+
+Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch zur Seite **Programme und Produkte** von Cloud Manager navigieren. Führen Sie dazu folgende Schritte durch:
+
+1. Navigieren Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
 
 1. Wählen Sie **Experience Manager** aus.
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klicken Sie auf der Cloud Manager-Karte auf **Launch.** Nachdem Sie sich erfolgreich bei [!UICONTROL Cloud Manager] angemeldet haben, können Sie die Benutzeroberfläche verwenden.
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. Nach erfolgreicher Anmeldung gelangen Sie zur Landingpage von Cloud Manager.
 
 
 ## Cloud Manager-Landingpage {#cloud-manager-landing}
