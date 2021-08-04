@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
+source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 87%
+source-wordcount: '550'
+ht-degree: 82%
 
 ---
 
@@ -52,3 +52,11 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 | [!DNL Sites] | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des [!DNL Experience Manager]-Repositorys nicht zur Laufzeit zugegriffen werden kann. |
 | [!DNL Assets] | [!DNL Assets]-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). |
 | [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource). | Nicht zutreffend |
+
+## Java-API {#java-api}
+
+Siehe [diese Seite](/help/release-notes/deprecated-apis.md) für alle veralteten oder entfernten Java-APIs, die gelegentlich eingeführt werden.
+
+## OSGi-Konfiguration {#osgi-configuration}
+
+Unter [dieser Artikel](/help/implementing/deploying/osgi-configuration-api.md) finden Sie alle Einschränkungen bezüglich der Konfiguration von OSGi-Eigenschaften, von denen einige im Laufe der Zeit eingeführt werden können.
