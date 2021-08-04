@@ -2,16 +2,16 @@
 title: Bereitstellen des Codes – Cloud Services
 description: Bereitstellen des Codes – Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 # Bereitstellen des Codes {#deploy-your-code}
 
-## Bereitstellen von Code mit Cloud Manager in AEM als Cloud Service {#deploying-code-with-cloud-manager}
+## Bereitstellen des Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) konfiguriert haben, können Sie Ihren Code bereitstellen.
 
@@ -41,7 +41,7 @@ Sobald Sie Ihre Produktions-Pipeline (Repository, Umgebung und Testumgebung) kon
    Die **Staging-Implementierung** umfasst die folgenden Schritte:
 
    * Validierung: Dieser Schritt stellt sicher, dass die Pipeline so konfiguriert ist, dass die derzeit verfügbaren Ressourcen verwendet werden. So wird z. B. überprüft, ob die konfigurierte Verzweigung vorhanden ist und die Umgebungen verfügbar sind.
-   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Siehe [Details zur Build-Umgebung](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md), um weitere Informationen zur Build-Umgebung zu erhalten.
+   * Build- und Komponententests: Dieser Schritt führt einen containerisierten Build-Prozess aus. Siehe [Details zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), um weitere Informationen zur Build-Umgebung zu erhalten.
    * Codescan: Dieser Schritt bewertet die Qualität Ihres Programm-Codes. Weitere Informationen zum Testprozess finden Sie unter [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
    * Bilder erstellen: Dieser Schritt enthält eine Protokolldatei aus dem Prozess, der zum Erstellen von Bildern verwendet wird. Dieser Prozess ist für die Umwandlung der vom Build-Schritt erstellten Inhalts- und Dispatcher-Pakete in Docker-Bilder und die Kubernetes-Konfiguration verantwortlich.
    * Bereitstellen in der Staging-Umgebung
