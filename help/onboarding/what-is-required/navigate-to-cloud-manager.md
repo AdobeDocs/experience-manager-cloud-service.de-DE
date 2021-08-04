@@ -2,10 +2,10 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Landingpage von Cloud Manager navigieren.
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 35%
+source-wordcount: '506'
+ht-degree: 30%
 
 ---
 
@@ -66,7 +66,7 @@ Es wird eine der drei Optionen angezeigt, die unten beschrieben werden:
 
 Von hier aus kann ein Benutzer mit den richtigen Berechtigungen, z. B. eine Business Owner-Rolle in Cloud Manager, **Programm hinzufügen** auswählen, um den [Programm-Assistenten hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access) zu starten.
 
-Informationen zum Hinzufügen eines Programms in Cloud Manager finden Sie unter:
+Informationen zum Hinzufügen eines Programms in Cloud Manager finden Sie unter Erstellen von:
 
-* Erstellen eines Produktionsprogramms
-* Erstellen eines Sandbox-Programms
+* [Produktionsprogramm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [Sandbox-Programm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
