@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ Die folgenden Schritte müssen von einem Systemadministrator ausgeführt werden,
 
 ## Nächste Schritte {#whats-next}
 
-Die Benutzer, die Sie AEM als Cloud Service-Produktprofilen zugewiesen haben, können jetzt lernen, wie Sie auf die -Autoreninstanz zugreifen und sich mit Authoring-Seiten in AEM as a Cloud Service vertraut machen. Sie sollten dem Pfad folgen, indem Sie sich das Dokument Lernpfad für AEM Benutzer ansehen.
+Die Benutzer, die Sie AEM als Cloud Service-Produktprofilen zugewiesen haben, können jetzt lernen, wie Sie auf die -Autoreninstanz zugreifen und sich mit Authoring-Seiten in AEM as a Cloud Service vertraut machen. Sie sollten dem Pfad folgen, indem Sie sich das Dokument Lernpfad für AEM Benutzer oder Lernpfad für Entwickler und Bereitstellungsmanager ansehen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
