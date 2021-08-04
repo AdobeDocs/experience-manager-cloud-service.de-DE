@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] as a Cloud Service Prerelease Channel {#prerelease-channel}
 
 
 ## Einführung {#introduction}
@@ -54,7 +54,7 @@ Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, w
 
 Neue Funktionen werden in der Sites-Konsole im lokalen Schnellstart-SDK angezeigt und in der Vorabversion können Sie Code gegen neue APIs verarbeiten, indem Sie Ihr Maven-Projekt auf die Vorabversion `API Jar` in Maven Central verweisen. Sie können diese Vorabversionsfunktionen auch auf Ihrem lokalen Computer sehen, indem Sie das reguläre Schnellstart-SDK im Vorabversionsmodus starten:
 
-* Laden Sie das SDK aus dem Software Distribution-Portal herunter und installieren Sie es wie unter [Zugriff auf das AEM als Cloud Service-SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.) beschrieben.
+* Laden Sie das SDK vom Software Distribution-Portal herunter und installieren Sie es wie unter [Zugriff auf das AEM als Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) beschrieben.
 * Fügen Sie beim Starten des SDK-Schnellstarts das Argument `-r prerelease` hinzu.
 * Der Wert ist *sticky*, sodass er nur beim ersten Start ausgewählt werden kann. Installieren Sie das SDK neu, um die Befehlszeilenoption zu ändern.
 
@@ -116,7 +116,7 @@ Die `aem-prerelease-sdk-api` artifactId darf bei der Bereitstellung in der Stagi
 
 Das [AEM CS SDK-Build Analyzer-Maven-Plug-in v1.0 und höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de#developing) erkennt, ob die Vorabversion-API in einem Projekt verwendet wird, indem die Abhängigkeiten überprüft werden. Wenn der Analyzer es findet, verwendet er die Vorabversion-SDK-API, um das Projekt zu analysieren.
 
-## Besonderheiten {#considerations}
+## Aspekte {#considerations}
 
 Beim Kanal für die Vorabversion sind einige Punkte zu beachten:
 
