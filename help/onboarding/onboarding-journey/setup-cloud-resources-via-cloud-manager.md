@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 8%
 
 ---
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um zu Cloud Manager zu navigieren:
 1. Navigieren Sie zur Seite **Programme und Produkte** von Cloud Manager.
 
    >[!IMPORTANT]
-   >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren.
+   >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Bitte markieren Sie diese Seite mit einem Lesezeichen für die Zukunft, damit Sie direkt zur Landingpage von Cloud Manager navigieren können.
 
 Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Seite **Programme und Produkte** von Cloud Manager navigieren. Führen Sie dazu folgende Schritte durch:
 
@@ -91,7 +91,6 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Se
       Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie Systemadministrator sind, zeigt Ihre Landingpage die Schaltfläche **Zugriff verwalten** zusammen mit der Option **Programm hinzufügen** an, wie in der folgenden Abbildung dargestellt.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Überprüfen der Benutzerrollen {#verify-user-roles}
