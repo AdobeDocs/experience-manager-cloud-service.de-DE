@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 feature: Bereitstellen
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
+source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 89%
+source-wordcount: '2934'
+ht-degree: 94%
 
 ---
 
@@ -174,7 +174,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git.
 
 
-## OSGi-Konfigurationseigenschaftsformate {#osgi-configuration-property-formats}
+## OSGi-Konfigurationseigenschaftsformate   {#osgi-configuration-property-formats}
 
 ### Inline-Werte {#inline-values}
 
@@ -224,7 +224,7 @@ Die Variablenwerte dürfen 2048 Zeichen nicht überschreiten.
 
 >[!NOTE]
 >
->Variablennamen, denen `INTERNAL_` vorangestellt ist, sind durch Adobe reserviert. Alle Kundensatzvariablen, die mit diesem Präfix beginnen, werden ignoriert.
+>Variablennamen, die mit dem Präfix `INTERNAL_` beginnen, sind durch Adobe reserviert. Alle vom Kunden gesetzten Variablen, die mit diesem Präfix beginnen, werden ignoriert. Kunden dürfen diese Variablen auch nicht referenzieren.
 
 ### Standardwerte {#default-values}
 
@@ -259,9 +259,9 @@ Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textda
 Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Verffentlichungsumgebung erfordert:
 
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
-* Es gibt zwei Möglichkeiten, die unabhängigen Variablennamen zu erstellen:
-   * die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die zur Definition verschiedener Werte deklariert sind, denselben Variablennamen. Beispiel
-      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des &quot;service&quot;-Parameters zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) beschrieben. Der Parameter &quot;service&quot;bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann &quot;author&quot;, &quot;publish&quot;oder &quot;preview&quot;sein.
+* Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
+   * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
+      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann &quot;author&quot;, &quot;publish&quot;oder &quot;preview&quot;sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
 ### Konfigurationsbeispiele {#configuration-examples}
