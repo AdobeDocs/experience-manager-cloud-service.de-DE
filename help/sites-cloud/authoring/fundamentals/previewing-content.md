@@ -2,9 +2,9 @@
 title: Vorschau des Inhalts
 description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau des Inhalts anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Die Vorschaufunktion ist Teil der Version 2021.5.0 und wird in den nächsten Wochen schrittweise eingeführt.
+>Um die Vorschaufunktion für Umgebungen zu aktivieren, die vor dem 3. August 2021 erstellt wurden, stellen Sie sicher, dass die Umgebung AEM Version 2021.05.5368.20210529T101701Z oder höher ist, und führen Sie dann eine kundeninitiierte Pipeline aus.
 
 AEM bietet einen Sites Preview Service, der Entwicklern und Inhaltsautoren die Vorschau des endgültigen Erlebnisses einer Website ermöglicht, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
 
 Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären, wie Seitenübergänge und andere Inhalte, die nur auf der Veröffentlichungsseite verfügbar sind.
+
+Weitere Informationen finden Sie unter [Zugriff auf den Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ Sie können Inhalte mithilfe der Benutzeroberfläche &quot;Veröffentlichung ver
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten Ihrer Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
+Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) .
 
 Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow der Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet wird, wobei der Parameter agentId für die Vorschau festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten AgentFilter verwendet wird.
 
@@ -67,4 +69,4 @@ Führen Sie die folgenden Schritte aus, um die Vorschauebene mithilfe der Develo
 
 * Wählen Sie in [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) entweder **— All Preview —** oder eine Produktionsumgebung aus, die **prev** im Namen enthält.
 * Generieren Sie die relevanten Informationen für die Vorschauinstanz
-Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten Ihrer Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) .
+Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) .
