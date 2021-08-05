@@ -2,13 +2,13 @@
 title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie ein Metadatenschema für Asset-Ordner in  [!DNL Experience Manager Assets] erstellen.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadaten
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 100%
+source-wordcount: '1061'
+ht-degree: 96%
 
 ---
 
@@ -101,13 +101,13 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 
 ### Bearbeiten von Formularelementen  {#editing-form-items}
 
-Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf die Komponente und bearbeiten Sie folgende Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
+Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf die Komponente und bearbeiten Sie folgende Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen.]** Es wird empfohlen, nur ein Feld einer bestimmten Eigenschaft im Metadatenschema zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt hinzugefügte Feld vom System ausgewählt.
 
 **[!UICONTROL Feldbezeichnung]**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
 **[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Sie beginnt mit „**./**“. Dies zeigt an, dass sich der Pfad unter dem Knoten des Ordners befindet.
 
-Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
+Im Folgenden finden Sie Beispiele für gültige Werte für eine Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Ordners als Eigenschaft `dc:title`.
 
