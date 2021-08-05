@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 8%
 
 ---
@@ -56,6 +56,8 @@ Gehen Sie wie folgt vor, um zu Cloud Manager zu navigieren:
    >[!IMPORTANT]
    >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Bitte markieren Sie diese Seite mit einem Lesezeichen für die Zukunft, damit Sie direkt zur Landingpage von Cloud Manager navigieren können.
 
+1. Sie werden zur Landingpage von Cloud Manager weitergeleitet. Weitere Informationen finden Sie im Abschnitt [Anzeigen der Cloud Manager-Programme](#viewing-programs) .
+
 Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Seite **Programme und Produkte** von Cloud Manager navigieren. Führen Sie dazu folgende Schritte durch:
 
 1. Navigieren Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
@@ -68,29 +70,32 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Se
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. Nach erfolgreicher Anmeldung gelangen Sie zur Landingpage von Cloud Manager.
+1. Nach erfolgreicher Anmeldung gelangen Sie zur Landingpage von Cloud Manager. Weitere Informationen finden Sie im Abschnitt [Anzeigen der Cloud Manager-Programme](#viewing-programs) .
 
    >[!NOTE]
    >Je nach den in [!UICONTROL Cloud Manager] zugewiesenen Rollen und dem Programmstatus werden bei der Verwendung der [!UICONTROL Cloud Manager]-Benutzeroberfläche unterschiedliche Bildschirme angezeigt.
 
-   Es wird eine der drei Optionen angezeigt, die unten beschrieben werden:
+### Anzeigen von Programmen auf der Landingpage von Cloud Manager {#viewing-programs}
 
-   * **Wenn in Cloud Manager keine Programme vorhanden sind**
+Nach erfolgreicher Anmeldung gelangen Sie zur Landingpage von Cloud Manager. Es wird eine der drei Optionen angezeigt, die unten beschrieben werden:
 
-      Wenn in Ihrer Organisation keine Programme vorhanden sind, werden Sie auf der Landing Page aufgefordert, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### Wenn in Cloud Manager keine Programme vorhanden sind {#no-programs}
 
-   * **Wenn bereits Programme in Cloud Manager vorhanden sind**
+Wenn in Ihrer Organisation keine Programme vorhanden sind, werden Sie auf der Landing Page aufgefordert, Ihr erstes Programm zu erstellen, wie in der folgenden Abbildung dargestellt.
 
-      Wenn in Ihrer Organisation bereits Programme vorhanden sind, werden Sie auf der Landing Page aufgefordert, ein weiteres Programm hinzuzufügen, und es werden alle vorhandenen Programme angezeigt, wie in der Abbildung unten dargestellt.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### Wenn bereits Programme in Cloud Manager vorhanden sind {#programs-exist}
 
-   * **Wenn ein Programm vorhanden ist und der Benutzer Systemadministrator ist**
+Wenn in Ihrer Organisation bereits Programme vorhanden sind, werden Sie auf der Landing Page aufgefordert, ein weiteres Programm hinzuzufügen, und es werden alle vorhandenen Programme angezeigt, wie in der Abbildung unten dargestellt.
 
-      Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie Systemadministrator sind, zeigt Ihre Landingpage die Schaltfläche **Zugriff verwalten** zusammen mit der Option **Programm hinzufügen** an, wie in der folgenden Abbildung dargestellt.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### Wenn ein Programm vorhanden ist und der Benutzer Systemadministrator ist {#programs-exist-sysadmin}
+
+Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie Systemadministrator sind, zeigt Ihre Landingpage die Schaltfläche **Zugriff verwalten** zusammen mit der Option **Programm hinzufügen** an, wie in der folgenden Abbildung dargestellt.
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Überprüfen der Benutzerrollen {#verify-user-roles}
