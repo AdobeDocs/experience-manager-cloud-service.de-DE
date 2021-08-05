@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadaten
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
+source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 97%
+source-wordcount: '2594'
+ht-degree: 95%
 
 ---
 
@@ -105,13 +105,13 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 
 #### Bearbeiten von Metadatenkomponenten {#edit-the-metadata-component}
 
-Um die Eigenschaften einer Metadaten-Komponente im Formular zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle Eigenschaften oder einen Teil der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
+Um die Eigenschaften einer Metadaten-Komponente im Formular zu bearbeiten, klicken Sie auf die Komponente und bearbeiten Sie alle Eigenschaften oder einen Teil der folgenden Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen.]** Es wird empfohlen, nur ein Feld einer bestimmten Eigenschaft im Metadatenschema zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt hinzugefügte Feld vom System ausgewählt.
 
 **Feldbezeichnung**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
 **Zu Eigenschaft zuordnen**: Diese Eigenschaft gibt den relativen Pfad/Namen zum Asset-Knoten an, unter dem die Eigenschaft im CRX-Repository gespeichert ist. Sie beginnt mit `./`, um anzugeben, dass der Pfad sich unter dem Knoten des Assets befindet.
 
-Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
+Im Folgenden finden Sie Beispiele für gültige Werte für eine Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
