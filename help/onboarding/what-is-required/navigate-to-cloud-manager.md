@@ -2,9 +2,9 @@
 title: Navigieren zu Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie zur Landingpage von Cloud Manager navigieren.
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '515'
 ht-degree: 30%
 
 ---
@@ -24,6 +24,8 @@ Sobald Ihnen Ihr Systemadministrator Zugriff auf Cloud Manager gewährt, erhalte
 
    >[!IMPORTANT]
    >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Bitte markieren Sie diese Seite mit einem Lesezeichen für die Zukunft, damit Sie direkt zur Landingpage von Cloud Manager navigieren können.
+
+1. Sie werden zur Landingpage von Cloud Manager weitergeleitet.
 
 Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch zur Seite **Programme und Produkte** von Cloud Manager navigieren. Führen Sie dazu folgende Schritte durch:
 
