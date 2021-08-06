@@ -2,10 +2,10 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 94%
 
 ---
 
@@ -62,9 +62,21 @@ Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich K
 
 *Dateiname*: `testing.properties`
 
-*Inhalt*: `one line: ui-tests.version=1`
+*Inhalt*: `ui-tests.version=1`
 
 Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
+
+Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul UI-Tests ):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- Opt-in-Testmodul in Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen Benutzeroberflächentests verwendet werden können. Das bedeutet, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
