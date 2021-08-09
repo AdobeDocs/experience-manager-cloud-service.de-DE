@@ -14,9 +14,9 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Benutzerspezifische Regeln für Code-Qualität"
->abstract="Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf Best Practices von AEM Engineering basieren."
+>abstract="Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf bewährten Verfahren des AEM Engineering basieren."
 
-Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf Best Practices von AEM Engineering basieren.
+Auf dieser Seite werden die benutzerspezifischen Regeln für die Code-Qualität beschrieben, die von Cloud Manager ausgeführt werden und auf bewährten Verfahren des AEM Engineering basieren.
 
 >[!NOTE]
 >Die hier bereitgestellten Code-Beispiele dienen nur Veranschaulichungszwecken. Weitere Informationen zu SonarQube-Konzepten und -Qualitätsregeln finden Sie unter [Konzepte](https://docs.sonarqube.org/7.4/user-guide/concepts/).
@@ -917,7 +917,7 @@ Mit der Umstellung auf Asset-Microservices für die Asset-Verarbeitung auf AEM C
 
 **Seit**: Version 2021.2.0
 
-Die Verwendung von statischen Vorlagen war in AEM-Projekten stets weit verbreitet. Editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen .](/help/implementing/developing/components/templates.md) Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
+Die Verwendung von statischen Vorlagen war in AEM-Projekten stets weit verbreitet. Editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie unter [Seitenvorlagen.](/help/implementing/developing/components/templates.md) Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
 ### OakPAL: Die Verwendung älterer Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
 
@@ -991,7 +991,7 @@ Schwer behebbare Probleme können auftreten, wenn ein Knoten mit einer benutzerd
 
 Ein ordnungsgemäß definierter Knoten einer benutzerdefinierten Suchindex-Definition muss einen untergeordneten Knoten mit dem Namen „indexRules“ enthalten, der wiederum mindestens ein untergeordnetes Element aufweisen muss. Weitere Informationen finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition müssen Benennungskonventionen folgen {#oakpal-custom-search-definitions}
+### OakPAL – Knoten für benutzerdefinierte Suchindexdefinitionen müssen Benennungskonventionen folgen {#oakpal-custom-search-definitions}
 
 **Schlüssel**: IndexName
 
