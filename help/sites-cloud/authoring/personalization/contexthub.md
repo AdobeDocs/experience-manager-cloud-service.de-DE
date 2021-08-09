@@ -3,7 +3,7 @@ title: Vorschau von Seiten mit ContextHub-Daten
 description: In der ContextHub-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können Sie mithilfe der Leiste Store-Daten bearbeiten und Inhalte in der Vorschau ansehen.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
 
-### Inhalt der Symbolleiste  {#toolbar-content}
+### Inhalt der Symbolleiste {#toolbar-content}
 
 Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem oder mehr ContextHub-Stores eingeblendet werden. Benutzeroberflächenmodule lassen sich anhand ihres Symbols oder Titels identifizieren.
 
@@ -54,7 +54,7 @@ Einige Benutzeroberflächenmodule zeigen ein überlagertes Popup an, wenn darauf
 
 In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Steuern diese Store-Daten Seiteninhalte, können Sie mit dem Formular Änderungen vornehmen, die sich dann in den Seiteninhalten widerspiegeln.
 
-### Vollbildmodus   {#fullscreen-mode}
+### Vollbildmodus {#fullscreen-mode}
 
 Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
 
