@@ -27,7 +27,7 @@ Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wi
 
    In der folgenden Tabelle sind die Umgebungstypen und ihre Attribute zusammengefasst:
 
-   | Name | Autorenebene | AEM Publish-Ebene | Benutzer kann erstellen | Benutzer kann löschen | Pipeline, die der Umgebung zugeordnet werden kann |
+   | Name | Autorenebene | AEM Veröffentlichungsebene | Benutzer kann erstellen | Benutzer kann löschen | Pipeline, die der Umgebung zugeordnet werden kann |
    |--- |--- |--- |--- |---|---|
    | Produktion | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
    | Staging | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
@@ -183,13 +183,13 @@ Navigieren Sie von der Zusammenfassungsseite für die Umgebungen zur Detailseite
 >[!NOTE]
 >Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten.
 
-Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Publish-Service ausgeführt werden:
+Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungs-Service ausgeführt werden:
 
 1. [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
 1. [Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 1. [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
 
@@ -198,14 +198,14 @@ Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Publi
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
-Navigieren Sie auf der Zusammenfassungsseite für die Umgebungen zur Seite „Umgebungsdetails“. Hier können Sie die folgenden Aktionen für den Publish- und/oder Author-Service für Ihre Umgebung durchführen.
+Navigieren Sie auf der Zusammenfassungsseite für die Umgebungen zur Seite „Umgebungsdetails“. Hier können Sie die folgenden Aktionen für den Veröffentlichungs- und/oder Autoren-Service für Ihre Umgebung durchführen.
 
 >[!NOTE]
 >Die Funktion &quot;IP-Zulassungsliste&quot;wird jetzt in Cloud Manager für Autoren-, Veröffentlichungs- und Vorschaudienste unterstützt (verfügbar in Sites-Programmen).
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Übernehmen einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Author- oder Publish-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben und angemeldet sein.
+Beim Übernehmen einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben und angemeldet sein.
 
 >[!NOTE]
 >Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie für einen Umgebungs-Service übernommen werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
@@ -213,12 +213,12 @@ Beim Übernehmen einer IP-Zulassungsliste werden alle in der Definition der Zula
 Gehen Sie folgendermaßen vor, um eine IP-Zulassungsliste zu übernehmen:
 
 1. Navigieren Sie zur gewünschten Umgebung auf der Seite **Umgebungsdetails** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Author- oder Publish-Service auszuwählen, für den Sie sie übernehmen möchten.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autoren- oder Veröffentlichungs-Service auszuwählen, für den Sie sie übernehmen möchten.
 1. Klicken Sie auf **Übernehmen** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Prozess, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Author- und/oder Publish-Service einer Umgebung getrennt werden. Ein Benutzer mit der Rolle „Business Owner“ oder „Deployment Manager“ muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufzuheben.
+Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Prozess, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autoren- und/oder Veröffentlichungs-Service einer Umgebung getrennt werden. Ein Benutzer mit der Rolle „Business Owner“ oder „Deployment Manager“ muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufzuheben.
 
 Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
 
