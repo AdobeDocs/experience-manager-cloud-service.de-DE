@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# End of Life von Flash-Viewern {#flash-viewers-end-of-life-notice}
+# Einstellung von Flash Viewer {#flash-viewers-end-of-life-notice}
 
 Ab dem 31. Januar 2017 wird die Flash-Viewer-Plattform offiziell nicht mehr unterstützt.
 
