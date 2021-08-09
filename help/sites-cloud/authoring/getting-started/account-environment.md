@@ -3,13 +3,13 @@ title: Konfigurieren der Kontoumgebung
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren der Kontoumgebung  {#configuring-your-account-environment}
+# Konfigurieren der Kontoumgebung {#configuring-your-account-environment}
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
