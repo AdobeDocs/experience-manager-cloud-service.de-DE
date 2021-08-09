@@ -1,6 +1,6 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können    in Dynamic Media.
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können in Dynamic Media.
 feature: 3D-Assets
 role: User
 exl-id: null
@@ -72,8 +72,8 @@ Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-asse
    | Anzeigen | Beschreibung | Mausaktion | Touchscreen-Aktion |
    | --- | --- | --- | --- |
    | **Kamera drehen** | Drehen Sie die Ansicht um die 3D-Szene und Objekte. | Klicken und ziehen Sie mit der linken Maustaste. | Drücken und ziehen Sie mit einem Finger. |
-   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben und unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
-   | **Kamera zoomen** | Bewegen Sie sich in Bereiche der 3D-Szene und wieder heraus. | Scrollen Sie mit dem Mausrad. | Bewegen Sie zwei Finger auseinander- bzw. zusammen. |
+   | **Kamera schwenken** | Schwenken Sie nach links, rechts, oben oder unten. | Klicken und ziehen Sie mit der rechten Maustaste. | Drücken und ziehen Sie mit zwei Fingern. |
+   | **Kamera zoomen** | Bewegen Sie sich in Bereiche der 3D-Szene und wieder heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
    | **Zurücksetzen** | Wählen Sie unten rechts auf der Seite das Symbol Zurücksetzen aus, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |  |  |
    | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, wählen Sie unten rechts auf der Seite das Symbol &quot;Vollbild&quot;aus. |  |  |
