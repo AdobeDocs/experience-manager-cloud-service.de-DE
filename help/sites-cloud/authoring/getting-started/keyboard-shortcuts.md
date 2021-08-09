@@ -1,19 +1,19 @@
 ---
-title: 'Tastaturbefehle für Konsolen  '
+title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
 
-# Tastaturbefehle für Konsolen   {#keyboard-shortcuts-for-consoles}
+# Tastaturbefehle für Konsolen {#keyboard-shortcuts-for-consoles}
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Standort | Kürzel | Beschreibung |
+| Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl |
 | Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
@@ -25,7 +25,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) |
-|  | &grave; | Ausblenden der Schiene |
+|  | ` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
@@ -49,7 +49,7 @@ Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem
 
 AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
 
-Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastaturlayouts identisch.
+Außerdem sind die Tastaturbefehle für alle Gebietsschemas und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
