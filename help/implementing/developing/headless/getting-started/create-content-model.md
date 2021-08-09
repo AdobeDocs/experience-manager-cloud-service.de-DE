@@ -1,17 +1,17 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmentmodellen per Headless-Implementierung
-description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe AEM Headless-Funktionen mithilfe von Inhaltsfragmentmodellen erstellen und bereitstellen.
+description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '472'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Schnellstartanleitung zum Erstellen von Inhaltsfragmentmodellen per Headless-Implementierung {#creating-content-fragment-models}
 
-Definieren Sie die Struktur des Inhalts, den Sie mithilfe AEM Headless-Funktionen mithilfe von Inhaltsfragmentmodellen erstellen und bereitstellen.
+Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 
 ## Was sind Inhaltsfragmentmodelle? {#what-are-content-fragment-models}
 
