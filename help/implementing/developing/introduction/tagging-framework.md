@@ -1,9 +1,9 @@
 ---
 title: AEM-Tagging-Framework
-description: Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur,  um Inhalte zu kategorisieren und zu organisieren.
+description: Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur, um Inhalte zu kategorisieren und zu organisieren.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Das Tagging-Framework bietet außerdem die Möglichkeit, Autoren und Website-Bes
 * Wird als [Container-Tag](#container-tags) bezeichnet, wenn untergeordnete Knoten enthalten sind.
 * Das Tag wird im Repository unterhalb eines Basispfads gespeichert, der als [Stammknoten der Taxonomie](#taxonomy-root-node) bezeichnet wird.
 
-### TagID (Tag-ID)  {#tagid}
+### TagID (Tag-ID) {#tagid}
 
 Eine `TagID` identifiziert einen Pfad, der einen Tag-Knoten im Repository ergibt.
 
