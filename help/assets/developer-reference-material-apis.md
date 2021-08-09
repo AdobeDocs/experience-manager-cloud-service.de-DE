@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | × | Nicht unterstützt. Nicht verwenden. |
 | - | Nicht verfügbar |
 
-| Anwendungsfall | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
+| Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
 | Original erstellen | verwalten | × | - | × | × | - |
@@ -66,7 +66,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 ## Asset-Upload {#asset-upload}
 
-Unter [!DNL Experience Manager] als [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
+In [!DNL Experience Manager] as a [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
 1. [PUT des Inhalts der ](#upload-binary) Binärdatei auf einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
@@ -120,8 +120,8 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 * `mimeType` (Zeichenfolge): Der Mime-Typ der entsprechenden Binärdatei, wie der Initiierungsanfrage angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadToken` (Zeichenfolge): Ein Upload-Token für die entsprechende Binärdatei. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
 * `uploadURIs` (Array): Eine Liste der Zeichenfolgen, deren Werte vollständige URIs sind, in die der binäre Inhalt hochgeladen werden soll (siehe [Hochladen der Binärdatei](#upload-binary)).
-* `minPartSize` (Zahl): Die Mindestlänge (in Bytes) der Daten, die für eine der  `uploadURIs`bereitgestellt werden können, wenn mehr als eine URI vorhanden ist.
-* `maxPartSize` (Zahl): Die maximale Länge (in Bytes) der Daten, die für eine der  `uploadURIs`bereitgestellt werden können, wenn mehr als eine URI vorhanden ist.
+* `minPartSize` (Zahl): Die Mindestlänge (in Byte) der Daten, die für einen der `uploadURIs` bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
+* `maxPartSize` (Zahl): Die maximale Länge (in Byte) der Daten, die für einen der `uploadURIs` bereitgestellt werden können, wenn mehr als ein URI vorhanden ist.
 
 ### Hochladen der Binärdatei {#upload-binary}
 
@@ -139,7 +139,7 @@ Bei erfolgreicher Ausführung des Uploads antwortet der Server auf jede Anfrage 
 
 Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-POST-Anfrage an den vollständigen URI, der von den Initiierungsdaten bereitgestellt wird. Der Content-Typ des Anfragetexts sollte `application/x-www-form-urlencoded`-Formulardaten sein, die die folgenden Felder enthalten.
 
-| Felder | Typ | Erforderlich | Beschreibung |
+| Felder | Typ | Erforderlich oder nicht | Beschreibung |
 |---|---|---|---|
 | `fileName` | Zeichenfolge | Erforderlich | Der Name des Assets, wie in den Initiierungsdaten angegeben. |
 | `mimeType` | Zeichenfolge | Erforderlich | Der HTTP-Content-Typ der Binärdatei, wie in den Initiierungsdaten angegeben. |
