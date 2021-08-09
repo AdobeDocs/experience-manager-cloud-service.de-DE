@@ -1,48 +1,48 @@
 ---
-title: Wie Sie mit Ihrer Headless-Anwendung live gehen
-description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen, indem Sie Ihren lokalen Code in Git übernehmen und für die CI/CD-Pipeline in Cloud Manager Git verschieben.
+title: Live-Schalten Ihres Headless-Programms
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live schalten, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1907'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Wie Sie mit Ihrer Headless-Anwendung live gehen {#go-live}
+# Live-Schalten Ihres Headless-Programms {#go-live}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey](overview.md) erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen, indem Sie Ihren lokalen Code in Git übernehmen und für die CI/CD-Pipeline in Cloud Manager Git verschieben.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie ein Headless-Programm live schalten, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 
-## Die Geschichte bisher {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Journey [Aktualisierung Ihres Inhalts über AEM Assets-APIs](update-your-content.md) haben Sie erfahren, wie Sie Ihren vorhandenen Headless-Inhalt in AEM über die API aktualisieren können. Nun sollten Sie:
+Im vorherigen Dokument zur AEM Headless-Entwickler-Tour [Aktualisieren Ihres Inhalts über AEM Assets-APIs](update-your-content.md) haben Sie erfahren, wie Sie Ihren vorhandenen Headless-Content in AEM über die API aktualisieren können. Nun verfügen Sie über folgende Kenntnisse:
 
-* Grundlegendes zur AEM Assets HTTP-API.
+* Grundlegendes zur AEM Assets-HTTP-API
 
 Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr eigenes AEM Headless-Projekt für die Live-Schaltung vorbereiten können.
 
-## Vorgabe {#objective}
+## Ziele {#objective}
 
-In diesem Dokument erhalten Sie Informationen zur AEM Headless-Publishing-Pipeline und zu den Leistungsaspekten, die Sie beachten müssen, bevor Sie mit Ihrer Anwendung live gehen.
+In diesem Dokument erhalten Sie Informationen zur Headless-Veröffentlichungs-Pipeline von AEM und zu den Leistungsaspekten, die Sie vor der Live-Schaltung Ihres Programms beachten müssen.
 
-* Erfahren Sie mehr über das AEM SDK und die erforderlichen Entwicklungs-Tools
-* Richten Sie eine lokale Entwicklungslaufzeit ein, um Ihren Inhalt zu simulieren, bevor Sie live gehen
-* Grundlagen zur AEM Inhaltsreplikation und Zwischenspeicherung
-* Sichern und Skalieren der Anwendung vor Launch
-* Überwachen von Leistungs- und Debug-Problemen
+* Erfahren Sie mehr über das AEM-SDK und die erforderlichen Entwicklungs-Tools.
+* Richten Sie eine lokale Entwicklungslaufzeit ein, um Ihre Inhalte vor der Live-Schaltung zu simulieren.
+* Machen Sie sich mit den Grundlagen zur AEM-Inhaltsreplikation und -Zwischenspeicherung vertraut.
+* Sichern und skalieren Sie Ihr Programm vor dem Launch.
+* Überwachen Sie Performance- und Debugging-Probleme.
 
-## Das AEM SDK {#the-aem-sdk}
+## Das AEM-SDK {#the-aem-sdk}
 
-Das AEM SDK wird zum Erstellen und Bereitstellen von benutzerdefiniertem Code verwendet. Es ist das Hauptwerkzeug, das Sie benötigen, um Ihre Headless-Anwendung zu entwickeln und zu testen, bevor Sie live gehen. Sie enthält die folgenden Artefakte:
+Das AEM-SDK wird zum Erstellen und Bereitstellen von anwenderdefiniertem Code verwendet. Es ist das wichtigste Tool, das Sie vor dem Launch zum Entwickeln und Testen Ihres Headless-Programms benötigen. Es enthält die folgenden Artefakte:
 
-* Die Schnellstart-JAR-Datei - eine ausführbare JAR-Datei, die sowohl zum Einrichten einer Autoren- als auch einer Veröffentlichungsinstanz verwendet werden kann
-* Dispatcher Tools - das Dispatcher-Modul und seine Abhängigkeiten für Windows- und UNIX-basierte Systeme
-* Java-API-JAR - Die Java-JAR-/Maven-Abhängigkeit, die alle zulässigen Java-APIs verfügbar macht, die für die Entwicklung mit AEM verwendet werden können
-* Javadoc-JAR - die Javadocs für die Java-API-JAR
+* Die Quickstart-JAR-Datei: eine ausführbare JAR-Datei, die sowohl zum Einrichten einer Autoren- als auch einer Veröffentlichungsinstanz verwendet werden kann
+* Dispatcher-Tools: das Dispatcher-Modul und seine Abhängigkeiten für Windows- und UNIX-basierte Systeme
+* Java-API-JAR-Datei: die Java-JAR-/Maven-Abhängigkeit, die alle zulässigen Java-APIs verfügbar macht, die zur Entwicklung für AEM verwendet werden können
+* Javadoc-JAR: die Javadocs für die Java-API-JAR-Datei
 
-## Zusätzliche Entwicklungs-Tools {#additional-development-tools}
+## Weitere Entwicklungs-Tools {#additional-development-tools}
 
-Zusätzlich zum AEM SDK benötigen Sie zusätzliche Tools, die die lokale Entwicklung und Prüfung von Code und Inhalt erleichtern:
+Zusätzlich zum AEM-SDK benötigen Sie weitere Tools, die das lokale Entwickeln und Testen von Code und Inhalten erleichtern:
 
 * Java
 * Git
@@ -50,155 +50,155 @@ Zusätzlich zum AEM SDK benötigen Sie zusätzliche Tools, die die lokale Entwic
 * Die Node.js-Bibliothek
 * Die IDE Ihrer Wahl
 
-Da AEM eine Java-Anwendung ist, müssen Sie Java und das Java-SDK installieren, um die Entwicklung von AEM als Cloud Service zu unterstützen.
+Da AEM ein Java-Programm ist, müssen Sie Java und das Java-SDK installieren, um die Entwicklung von AEM as a Cloud Service zu unterstützen.
 
-Git wird verwendet, um die Quellcodeverwaltung zu verwalten, die Änderungen in Cloud Manager einzuchecken und sie dann in einer Produktionsinstanz bereitzustellen.
+Git wird für die Quell-Code-Verwaltung verwendet sowie um Änderungen in Cloud Manager einzuchecken und sie dann in einer Produktionsinstanz bereitzustellen.
 
-AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
+AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM-Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
 
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM verwendet wird. Node.js wird mit npm verteilt, dem De-facto-Paketmanager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem De-facto-Paket-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
 
-## Komponenten eines AEM auf einen Blick {#components-of-an-aem-system-at-a-glance}
+## Komponenten eines AEM-Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
 
-Als Nächstes sehen wir uns die Bestandteile einer AEM Umgebung an.
+Als Nächstes sehen wir uns die Bestandteile einer AEM-Umgebung an.
 
-Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- und Dispatcher-Umgebung. Dieselben Komponenten werden zur Laufzeit der lokalen Entwicklung verfügbar gemacht, damit Sie Ihre Code- und Inhaltsvorschau vor der Live-Schaltung einfacher anzeigen können.
+Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- und Dispatcher-Komponente. Dieselben Komponenten werden in der lokalen Entwicklungslaufzeit verfügbar gemacht, damit Sie Ihre Code- und Inhaltsvorschau vor der Live-Schaltung einfacher anzeigen können.
 
-* **Der Autorendienst,** bei dem interne Benutzer Inhalte erstellen, verwalten und in der Vorschau anzeigen.
+* **Der Autoren-Service**, mit dem interne Anwender Inhalte erstellen, verwalten und in der Vorschau anzeigen.
 
-* **Der Veröffentlichungsdienst** gilt als &quot;Live&quot;-Umgebung und ist in der Regel die Aufgabe, mit der Endbenutzer interagieren. Inhalte, die nach der Bearbeitung und Genehmigung im Autorendienst erstellt wurden, werden an den Veröffentlichungsdienst verteilt. Das häufigste Bereitstellungsmuster bei AEM Headless-Anwendungen besteht darin, die Produktionsversion der Anwendung mit einem AEM Publish-Dienst zu verbinden.
+* **Der Veröffentlichungs-Service** fungiert als „Live-Umgebung“ und ist in der Regel der Bereich, mit die Endanwender interagieren. Inhalte werden nach der Bearbeitung und Genehmigung im Autoren-Service an den Veröffentlichungs-Service weitergeleitet. Das häufigste Bereitstellungsmuster bei AEM Headless-Programmen besteht darin, die Produktionsversion des Programms mit dem Veröffentlichungs-Service von AEM zu verbinden.
 
-* **Der** Dispatcher ist ein statischer Webserver, der mit dem AEM Dispatcher-Modul erweitert wird. Er speichert durch die Veröffentlichungsinstanz generierte Webseiten zwischen, um die Leistung zu verbessern.
+* **Der Dispatcher** ist ein statischer Webserver, der durch das AEM Dispatcher-Modul erweitert wird. Er speichert durch die Veröffentlichungsinstanz generierte Web-Seiten zwischen, um die Leistung zu verbessern.
 
-## Lokaler Entwicklungs-Workflow {#the-local-development-workflow}
+## Workflow für die lokale Entwicklung {#the-local-development-workflow}
 
-Das lokale Entwicklungsprojekt basiert auf Apache Maven und verwendet Git für die Quellcodeverwaltung. Um das Projekt zu aktualisieren, können Entwickler ihre bevorzugte integrierte Entwicklungsumgebung wie Eclipse, Visual Studio Code oder IntelliJ verwenden.
+Das Projekt für die lokale Entwicklung basiert auf Apache Maven und verwendet Git für die Quell-Code-Verwaltung. Um das Projekt zu aktualisieren, können Entwickler ihre bevorzugte integrierte Entwicklungsumgebung wie Eclipse, Visual Studio Code oder IntelliJ verwenden.
 
-Um Code- oder Inhaltsaktualisierungen zu testen, die von Ihrer Headless-Anwendung erfasst werden, müssen Sie die Aktualisierungen für die lokale AEM-Laufzeit bereitstellen, die lokale Instanzen der AEM-Autoren- und Veröffentlichungsdienste enthält.
+Um Code- oder Inhaltsaktualisierungen zu testen, die von Ihrem Headless-Programm aufgenommen werden, müssen Sie die Aktualisierungen für die lokale AEM-Laufzeit bereitstellen, die lokale Instanzen der Autoren- und Veröffentlichungs-Services von AEM aufweist.
 
-Beachten Sie die Unterschiede zwischen den einzelnen Komponenten in der lokalen AEM-Laufzeit, da es wichtig ist, Ihre Aktualisierungen dort zu testen, wo sie am wichtigsten sind. Testen Sie beispielsweise Inhaltsaktualisierungen für Autor oder testen Sie neuen Code in der Veröffentlichungsinstanz.
+Achten Sie auf die Unterschiede zwischen den einzelnen Komponenten in der lokalen AEM-Laufzeit, da Sie Ihre Updates unbedingt dort testen sollten, wo sie am relevantesten sind. Testen Sie beispielsweise Inhaltsaktualisierungen in der Autoreninstanz, bzw. neuen Code in der Veröffentlichungsinstanz.
 
-In einem Produktionssystem sitzen ein Dispatcher und ein HTTP-Apache-Server immer vor einer AEM Veröffentlichungsinstanz. Sie bieten Caching- und Sicherheitsdienste für das AEM-System, daher ist es von größter Bedeutung, Code- und Inhaltsaktualisierungen auch für den Dispatcher zu testen.
+In einem Produktionssystem befinden sich Dispatcher und Apache-HTTP-Server immer vor der AEM-Veröffentlichungsinstanz. Sie stellen Caching- und Sicherheits-Services für das AEM-System bereit, daher ist es von größter Bedeutung, Code- und Inhaltsaktualisierungen auch für den Dispatcher zu testen.
 
-## Lokale Vorschau Ihres Codes und Inhalts mit der lokalen Entwicklungsumgebung {#previewing-your-code-and-content-locally-with-the-local-development-environment}
+## Lokale Vorschau Ihres Codes und Ihrer Inhalte mit der lokalen Entwicklungsumgebung {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Um Ihr AEM Headless-Projekt auf den Start vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts gut funktionieren.
+Um Ihr AEM Headless-Projekt auf den Launch vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts einwandfrei funktionieren.
 
-Dazu müssen Sie alles zusammenführen: Code, Inhalt und Konfiguration erstellen und in einer lokalen Entwicklungsumgebung testen, um live vorzugehen.
+Dazu müssen Sie alle Komponenten – Code, Inhalte und Konfiguration – zusammenführen und anschließend in einer lokalen Entwicklungsumgebung testen, damit sie bereit für die Live-Schaltung sind.
 
 Die lokale Entwicklungsumgebung umfasst drei Hauptbereiche:
 
-1. Das AEM-Projekt - enthält den gesamten benutzerdefinierten Code, die Konfiguration und den Inhalt, an dem die AEM-Entwickler arbeiten werden
-1. Die lokale AEM Runtime - lokale Versionen der AEM Autoren- und Veröffentlichungsdienste, die zum Bereitstellen von Code aus dem AEM Projekt verwendet werden
-1. Die lokale Dispatcher Runtime - eine lokale Version des Apache httpd-Webservers, der das Dispatcher-Modul enthält
+1. Das AEM-Projekt: Es enthält den anwenderdefinierten Code, die Konfiguration und die Inhalte, an dem die AEM-Entwickler arbeiten werden.
+1. Die lokale AEM-Laufzeit: Dabei handelt es sich um lokale Versionen der Autoren- und Veröffentlichungs-Services von AEM, die zum Bereitstellen von Code aus dem AEM-Projekt verwendet werden.
+1. Die lokale Dispatcher-Laufzeit: Dies ist eine lokale Version des Apache-HTTP-Servers („httpd“), die das Dispatcher-Modul enthält.
 
-Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für die React-App simulieren, indem Sie lokal einen statischen Knotenserver bereitstellen.
+Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für das React-Programm simulieren, indem Sie lokal einen statischen Knoten-Server bereitstellen.
 
-Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
+Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=de#prerequisites)
 
-## Bereiten Sie Ihre AEM Headless-Anwendung für Go-Live vor {#prepare-your-aem-headless-application-for-golive}
+## Vorbereiten Ihres AEM Headless-Programms für die Live-Schaltung {#prepare-your-aem-headless-application-for-golive}
 
-Jetzt ist es an der Zeit, Ihre AEM Headless App für den Start bereitzustellen, indem Sie die unten beschriebenen Best Practices befolgen.
+Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem Sie die nachfolgend beschriebenen Best Practices umsetzen.
 
-### Sichern und Skalieren der Headless-Anwendung vor dem Start {#secure-and-scale-before-launch}
+### Sichern und Skalieren Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 
-1. [Token-basierte Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) mit Ihren GraphQL-Anforderungen konfigurieren
-1. Konfigurieren Sie [Caching](/help/implementing/dispatcher/caching.md).
+1. Konfigurieren Sie die [Token-basierte Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) mit Ihren GraphQL-Anfragen.
+1. Konfigurieren Sie das [Caching](/help/implementing/dispatcher/caching.md).
 
-### Modellstruktur vs. GraphQL-Ausgabe {#structure-vs-output}
+### Modellstruktur und GraphQL-Ausgabe im Vergleich {#structure-vs-output}
 
-* Erstellen Sie keine Abfragen, die mehr als 15 KB JSON ausgeben (gzip-komprimiert). Lange JSON-Dateien sind ressourcenintensiv, damit die Clientanwendung analysiert werden kann.
-* Vermeiden Sie mehr als fünf verschachtelte Ebenen von Fragmenthierarchien. Zusätzliche Ebenen erschweren es Inhaltsautoren, die Auswirkungen ihrer Änderungen zu berücksichtigen.
-* Verwenden Sie Abfragen mit mehreren Objekten, anstatt Abfragen mit Abhängigkeitshierarchien innerhalb der Modelle zu modellieren. Dies ermöglicht eine langfristige Flexibilität bei der Neustrukturierung der JSON-Ausgabe, ohne dass viele Inhaltsänderungen erforderlich sind.
+* Erstellen Sie möglichst keine Abfragen, die JSON-Dateien mit einer Größe von mehr als 15 KB ausgeben (gzip-komprimiert). Die Analyse großer JSON-Dateien ist für Client-Programme ressourcenintensiv.
+* Vermeiden Sie mehr als fünf verschachtelte Ebenen in Fragmenthierarchien. Zusätzliche Ebenen erschweren es Inhaltsautoren, die Auswirkungen ihrer Änderungen zu berücksichtigen.
+* Verwenden Sie Abfragen mit mehreren Objekten, anstatt Abfragen mit Abhängigkeitshierarchien innerhalb der Modelle zu modellieren. Dies bietet langfristig mehr Flexibilität bei der Neustrukturierung der JSON-Ausgabe, ohne dass viele Inhaltsänderungen erforderlich werden.
 
-### Maximieren Sie das CDN Cache-Hit-Verhältnis {#maximize-cdn}
+### Maximieren der CDN-Cache-Trefferquote {#maximize-cdn}
 
 * Verwenden Sie keine direkten GraphQL-Abfragen, es sei denn, Sie fordern Live-Inhalte von der Oberfläche an.
    * Verwenden Sie nach Möglichkeit persistente Abfragen.
-   * Stellen Sie CDN-TTL über 600 Sekunden bereit, damit das CDN sie zwischenspeichert.
-   * AEM können die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
-* Teilen Sie JSON-Dateien/GraphQL-Abfragen zwischen niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zu CDN zu reduzieren und eine höhere TTL zuzuweisen. Dadurch wird das CDN minimiert, das die JSON-Datei mit dem Herkunftsserver erneut validiert.
-* Um Inhalte aus dem CDN aktiv ungültig zu machen, verwenden Sie &quot;Soft Purge&quot;. Dadurch kann das CDN den Inhalt erneut herunterladen, ohne dass ein Cache fehlschlägt.
+   * Geben Sie eine CDN-TTL von mehr als 600 Sekunden an, damit das CDN sie zwischenspeichert.
+   * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
+* Teilen Sie JSON-Dateien/GraphQL-Abfragen nach niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zum CDN zu reduzieren und eine längere TTL zuzuweisen. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
+* Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN die Inhalte erneut herunterladen, ohne dass es zu Cache-Fehlern kommt.
 
-### Verbessern der Zeit zum Herunterladen von Headless Content {#improve-download-time}
+### Verkürzen der Download-Zeit für Headless-Content {#improve-download-time}
 
 * Stellen Sie sicher, dass HTTP-Clients HTTP/2 verwenden.
-* Stellen Sie sicher, dass HTTP-Clients die Anfrage &quot;Accept Headers&quot;für gzip akzeptieren.
-* Minimieren Sie die Anzahl der Domänen, die zum Hosten von JSON und referenzierten Artefakten verwendet werden.
-* Nutzen Sie `Last-modified-since` , um Ressourcen zu aktualisieren.
+* Stellen Sie sicher, dass HTTP-Clients Header-Anfragen für gzip akzeptieren.
+* Minimieren Sie die Anzahl der Domains, die zum Hosten von JSON und referenzierten Artefakten verwendet werden.
+* Nutzen Sie `Last-modified-since`, um Ressourcen zu aktualisieren.
 * Verwenden Sie die `_reference`-Ausgabe in der JSON-Datei, um mit dem Herunterladen von Assets zu beginnen, ohne vollständige JSON-Dateien analysieren zu müssen.
 
 ## Bereitstellung für Produktion {#deploy-to-production}
 
-Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Codeaktualisierungen an ein [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) übertragen.
+Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Code-Aktualisierungen an ein [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de) übertragen.
 
-Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der CI/CD-Pipeline von [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) AEM als Cloud Service bereitgestellt werden.
+Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
-Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die ausführlich unter [hier](/help/implementing/deploying/overview.md) behandelt wird.
+Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die [hier](/help/implementing/deploying/overview.md) ausführlich erörtert wird.
 
-## Leistungsüberwachung {#performance-monitoring}
+## Performance-Überwachung {#performance-monitoring}
 
-Damit Benutzer bei der Verwendung der AEM Headless-Anwendung das bestmögliche Erlebnis erhalten, müssen Sie die wichtigsten Leistungsmetriken überwachen, wie unten beschrieben:
+Damit Anwendern bei der Nutzung des AEM Headless-Programms das bestmögliche Erlebnis geboten wird, müssen Sie die wichtigsten Performance-Metriken überwachen, wie nachfolgend beschrieben:
 
-* Vorschau- und Produktionsversionen der App überprüfen
-* Überprüfen AEM Statusseiten für den aktuellen Status der Dienstverfügbarkeit
-* Leistungsberichte aufrufen
-   * Versandleistung
-      * CDN-Leistung (schnell) - Anzahl der Aufrufe überprüfen, Cache-Rate, Fehlerraten und Nutzlasttraffic
-      * Herkunftsserver - Anzahl der Aufrufe, Fehlerraten, CPU-Auslastung, Nutzlastverkehr
-   * Autorenleistung
-      * Anzahl der Benutzer, Anforderungen und Ladevorgänge überprüfen
-* Auf App- und Space-spezifische Leistungsberichte zugreifen
-   * Sobald der Server eingerichtet ist, überprüfen Sie, ob die allgemeinen Metriken grün/orange/rot sind, und identifizieren Sie dann spezifische App-Probleme.
-   * Öffnen Sie dieselben Berichte, die oben nach App oder Leerzeichen gefiltert wurden (z. B. Photoshop-Desktop, Paywall).
-   * Splunk-Protokoll-APIs verwenden, um auf die Leistung von Diensten und Anwendungen zuzugreifen
+* Validieren der Vorschau- und Produktionsversionen des Programms
+* Prüfen der AEM-Statusseiten auf den aktuellen Status der Service-Verfügbarkeit
+* Abrufen von Performance-Berichten
+   * Bereitstellungs-Performance
+      * CDN-Performance (Fastly) – Überprüfen der Anzahl der Aufrufe, Cache-Rate, Fehlerquoten und Payload-Traffic
+      * Urspungs-Server – Anzahl der Aufrufe, Fehlerquoten, CPU-Auslastung, Payload-Traffic
+   * Authoring-Performance
+      * Überprüfen der Anzahl der Anwender, Anfragen sowie der Auslastung
+* Abrufen programm- und speicherplatzspezifischer Performance-Berichte
+   * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
+   * Öffnen der oben genannten Berichte, jedoch gefiltert nach Programm oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall)
+   * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
    * Wenden Sie sich an den Support, falls weitere Probleme auftreten.
 
 ## Fehlerbehebung {#troubleshooting}
 
 ### Debugging {#debugging}
 
-Befolgen Sie diese Best Practices als allgemeinen Ansatz zum Debugging:
+Befolgen Sie die folgenden Best Practices als allgemeinen Debugging-Ansatz:
 
-* Validieren der Funktionalität und Leistung mit der Vorschauversion der Anwendung
-* Validieren der Funktionalität und Leistung mit der Produktionsversion der Anwendung
+* Validieren der Funktionalität und Performance mit der Vorschauversion des Programms
+* Validieren der Funktionalität und Performance mit der Produktionsversion des Programms
 * Validieren mit der JSON-Vorschau des Inhaltsfragment-Editors
-* Inspect Sie die JSON-Datei in der Clientanwendung, um zu überprüfen, ob es Probleme mit der Clientanwendung oder dem Versand gibt.
-* Inspect der JSON, die GraphQL verwendet, um zu überprüfen, ob Probleme im Zusammenhang mit zwischengespeicherten Inhalten oder AEM vorliegen
+* Überprüfen der JSON-Dateien im Client-Programm, um Probleme im Programm oder bei der Bereitstellung festzustellen
+* Überprüfen der JSON-Dateien, die GraphQL verwenden, um mögliche Probleme im Zusammenhang mit zwischengespeicherten Inhalten oder AEM festzustellen
 
-### Protokollieren eines Fehlers mit Unterstützung {#logging-a-bug-with-support}
+### Protokollieren eines Fehlers beim Support {#logging-a-bug-with-support}
 
-Gehen Sie wie folgt vor, um einen Fehler effizient mit dem Support zu protokollieren, falls Sie weitere Unterstützung benötigen:
+Gehen Sie wie folgt vor, um einen Fehler effizient beim Support zu protokollieren, wenn Sie weitere Unterstützung benötigen:
 
-* Erstellen Sie bei Bedarf Screenshots des Problems.
-* Dokumentieren einer Möglichkeit, das Problem zu reproduzieren
-* Dokumentieren des Inhalts, mit dem das Problem reproduziert
-* Melden Sie ein Problem über das AEM Support-Portal mit der entsprechenden Priorität.
+* Erstellen Sie ggf. Screenshots zum Problem.
+* Dokumentieren Sie eine Methode, das Problem zu reproduzieren.
+* Dokumentieren Sie, mit welchen Inhalten sich das Problem reproduzieren lässt.
+* Protokollieren Sie das Problem über das AEM-Support-Portal mit der entsprechenden Priorität.
 
-## Die Journey endet - oder nicht? {#journey-ends}
+## Die Tour ist (fast) zu Ende {#journey-ends}
 
-Herzlichen Glückwunsch! Sie haben die AEM Headless Developer Journey abgeschlossen! Sie sollten jetzt Folgendes verstehen:
+Herzlichen Glückwunsch! Sie haben die AEM Headless-Entwickler-Tour abgeschlossen! Sie sollten jetzt mit Folgendem vertraut sein:
 
-* Der Unterschied zwischen Headless- und Headful-Content-Bereitstellung.
-* AEM Headless-Funktionen.
-* Organisieren und AEM des Headless-Projekts.
-* So erstellen Sie Headless-Inhalte in AEM.
-* So rufen Sie Headless-Inhalte in AEM ab und aktualisieren sie.
-* Wie man mit einem AEM Headless-Projekt live geht.
-* Was macht man nach der Live-Schaltung?
+* Unterschied zwischen Headless- und Headful-Inhaltsbereitstellung
+* AEM Headless-Fuktionen
+* Organisieren eines AEM Headless-Projekts
+* Erstellen von Headless-Inhalten in AEM
+* Abrufen und Aktualisieren von Headless-Inhalten in AEM
+* Live-Schaltung mit einem AEM Headless-Projekts
+* Wie geht es nach der Live-Schaltung weiter?
 
 Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfügen nun über alle erforderlichen Kenntnisse. Gute Arbeit!
 
-### Durchsuchen von Einzelseiten-Apps {#explore-spa}
+### Erkunden von Single Page Applications {#explore-spa}
 
-Die Headless-Stores in AEM müssen hier aber nicht aufhören. Im Abschnitt [Erste Schritte des Journey](getting-started.md#integration-levels) haben wir kurz besprochen, wie AEM nicht nur Headless-Bereitstellung und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
+Die Headless-Story in AEM muss hier nicht enden. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
 
-Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der Journey fort, [So erstellen Sie Einzelseiten-Apps (SPA) mit AEM.](create-spa.md)
+Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der AEM Headless-Entwickler-Tour fort: [Erstellen von Single Page Applications (SPAs) mit AEM](create-spa.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Eine Übersicht über die Bereitstellung in AEM als Cloud Service](/help/implementing/deploying/overview.md)
+* [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Das AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Lokale AEM einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Verwenden von Cloud Manager zum Bereitstellen Ihres Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integrieren Sie das Cloud Manager-Git-Repository in ein externes Git-Repository und stellen Sie ein Projekt bereit, das als Cloud Service AEM wird.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [Einrichten einer lokalen AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=de)
+* [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
+* [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Implementieren eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)
