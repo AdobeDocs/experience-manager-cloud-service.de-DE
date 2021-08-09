@@ -1,6 +1,6 @@
 ---
 title: Berichte zur Nutzung und Freigabe
-description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
 feature: Asset-Berichte,Asset-Management
 role: Admin,User
@@ -105,7 +105,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten   zu Berichten  {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
