@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 19%
+ht-degree: 54%
 
 ---
 
@@ -33,7 +33,7 @@ Um die entsprechende automatische Replikation zu realisieren, müssen Sie die **
 
 ![OSGi-Ein-Aus-Trigger-Konfiguration](/help/operations/assets/replication-on-off-trigger.png)
 
-### Veröffentlichung verwalten  {#manage-publication}
+### Veröffentlichung verwalten {#manage-publication}
 
 Veröffentlichung verwalten bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
@@ -60,30 +60,30 @@ Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Fu
 * Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, mit einer harten Begrenzung von 500 Pfaden.
 * Die Gesamtgröße des replizierten Inhalts muss unter 5 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
 
-### Arbeitsablauf der Inhaltsstruktur veröffentlichen {#publish-content-tree-workflow}
+### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
 
-Sie können eine Baumstruktur replizieren, indem Sie **Tools - Workflow - Modelle** auswählen und das vordefinierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
+Sie können eine Baumstruktur replizieren, indem Sie **Tools > Workflow > Modelle** auswählen und das vorkonfigurierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
 ![](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Ändern Sie das Originalmodell nicht oder rufen Sie es auf. Stellen Sie stattdessen sicher, dass Sie das Modell zuerst kopieren und dann ändern oder aufrufen.
+Ändern Sie das Originalmodell nicht und rufen Sie es nicht auf. Kopieren Sie stattdessen unbedingt zuerst das Modell und ändern oder rufen Sie dann diese Kopie auf.
 
-Wie alle Workflows kann sie auch über API aufgerufen werden. Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+Wie alle Workflows kann es auch über eine API aufgerufen werden. Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=de#extending-aem).
 
 Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstellen, das den Prozessschritt `Publish Content Tree` verwendet:
 
-1. Gehen Sie auf der AEM as a Cloud Service-Homepage zu **Tools - Workflow - Modelle**
-1. Klicken Sie auf der Seite &quot;Workflow-Modelle&quot;in der oberen rechten Ecke des Bildschirms auf **Erstellen** .
-1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und drücken Sie **Bearbeiten**
-1. Ziehen Sie im folgenden Fenster den Prozessschritt in den aktuellen Modellfluss:
+1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**
+1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
+1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
+1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**.
+1. Ziehen Sie im folgenden Fenster den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
 
    ![Prozessschritt](/help/operations/assets/processstep.png)
 
-1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol drücken
+1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol klicken.
 1. Klicken Sie auf die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus.
 
-   ![Treeactivation](/help/operations/assets/newstep.png)
+   ![Aktivieren der Braumstruktur](/help/operations/assets/newstep.png)
 
 1. Legen Sie alle zusätzlichen Parameter im Feld **Argumente** fest. Es können mehrere kommagetrennte Argumente kombiniert werden. Beispiel:
 
@@ -92,31 +92,31 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
    >[!NOTE]
    >
-   >Eine Liste der Parameter finden Sie unten im Abschnitt **Parameter** .
+   >Eine Liste der Parameter finden Sie unten im Abschnitt **Parameter**.
 
-1. Drücken Sie **Fertig**, um das Workflow-Modell zu speichern.
+1. Klicken Sie auf **Fertig**, um das Workflow-Modell zu speichern.
 
 **Parameter**
 
-* `replicateAsParticipant` (boolescher Wert, Standard:  `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
-* `enableVersion` (boolescher Wert, Standard:  `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
+* `replicateAsParticipant` (boolescher Wert, Standard: `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
+* `enableVersion` (boolescher Wert, Standard: `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
 * `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, explizit über die agentId zu sein. Legen Sie ihn beispielsweise auf den Wert fest: veröffentlichen. Wird der Agent auf `preview` gesetzt, wird er im Vorschaudienst veröffentlicht
 * `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
-   * `onlyActivated` - Nur Pfade, die nicht als aktiviert markiert sind, werden aktiviert.
-   * `onlyModified` - Nur Pfade aktivieren, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
-   * Das obige kann ODER mit einem senkrechten Strich (&quot;|&quot;) angegeben werden. Beispiel: `onlyActivated|onlyModified`.
+   * `onlyActivated` – Nur Pfade, die nicht als aktiviert markiert sind, werden aktiviert.
+   * `onlyModified` – Nur Pfade werden aktiviert, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
+   * Das obige kann als ODER mit einem senkrechten Strich („|“) angegeben werden. Beispiel: `onlyActivated|onlyModified`.
 
 **Protokollierung**
 
-Wenn der Workflow-Schritt für die Strukturaktivierung gestartet wird, werden die Konfigurationsparameter auf der INFO-Protokollebene protokolliert. Wenn Pfade aktiviert werden, wird auch eine INFO-Anweisung protokolliert.
+Wenn der Workflow-Schritt für die Aktivierung der Baumstruktur gestartet wird, werden die Konfigurationsparameter auf der INFO-Protokollebene protokolliert. Wenn Pfade aktiviert werden, wird auch eine INFO-Anweisung protokolliert.
 
 Eine endgültige INFO-Anweisung wird dann protokolliert, nachdem der Workflow-Schritt alle Pfade repliziert hat.
 
-Zusätzlich können Sie die Loglevel der Logger unter `com.day.cq.wcm.workflow.process.impl` auf DEBUG/TRACE erhöhen, um weitere Protokollinformationen zu erhalten.
+Zusätzlich können Sie die Protokollebene der Logger unter `com.day.cq.wcm.workflow.process.impl` auf DEBUG/TRACE erhöhen, um weitere Protokollinformationen zu erhalten.
 
-Bei Fehlern wird der Workflow-Schritt mit einem `WorkflowException` beendet, der die zugrunde liegende Ausnahme umbricht.
+Bei Fehlern wird der Workflow-Schritt mit einem `WorkflowException` beendet, der die zugrunde liegende Ausnahme umschließt.
 
-Nachfolgend finden Sie Beispiele für Protokolle, die während eines Workflows mit einer Inhaltsstruktur für die Beispielveröffentlichung generiert werden:
+Nachfolgend finden Sie Beispiele für Protokolle, die während eines Beispiel-Workflows zum Veröffentlichen von Inhaltsstrukturen erzeugt werden:
 
 ```
 21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
@@ -126,9 +126,9 @@ Nachfolgend finden Sie Beispiele für Protokolle, die während eines Workflows m
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-**Unterstützung für die Fortsetzung der Migration**
+**Fortsetzung der Unterstützung**
 
-Der Workflow verarbeitet Inhalte in Teilen, von denen jeder eine Teilmenge des zu veröffentlichenden vollständigen Inhalts darstellt. Wenn der Workflow aus irgendeinem Grund vom System angehalten wird, wird der noch nicht verarbeitete Block neu gestartet und verarbeitet. In einer Protokollanweisung wird angegeben, dass der Inhalt aus einem bestimmten Pfad wieder aufgenommen wurde.
+Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des zu veröffentlichenden vollständigen Inhalts darstellt. Wenn der Workflow aus irgendeinem Grund vom System angehalten wird, wird der noch nicht verarbeitete Block neu gestartet und verarbeitet. In einer Protokollanweisung wird angegeben, dass die Bearbeitung des Inhalts aus einem bestimmten Pfad wieder aufgenommen wurde.
 
 ### Replikations-API {#replication-api}
 
