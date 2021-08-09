@@ -5,7 +5,7 @@ exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Version 2.9.0 der [Kernkomponenten](https://experienceleague.adobe.com/docs/exp
 
 * Es wurde die Möglichkeit hinzugefügt, das Routing von reinen Angular-Seiten und AEM-/Angular-Seiten zu verwalten.
 
-### Erreichbarkeit {#accessibility}
+### Barrierefreiheit {#accessibility}
 
 * Rolle und Status des Erzählenden sind jetzt für die Masonry-Elemente im Dialogfeld **Seite erstellen** möglich, während Sie im Browser-Modus mit dem Abwärtspfeil navigieren.
 
@@ -102,11 +102,11 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Der Link zur Developer Console direkt aus Cloud Manager zeigt die Option zum Versetzen der Umgebung eines Sandbox-Programms in den Ruhezustand und zum Aufheben des Ruhezustands nicht an. Um dies zu beheben, fügen Sie in der Developer Console das Muster `#release-cm-p1234-e5678` am Ende der URL hinzu, wobei *1234* die Programm-ID und *5678* die Umgebungs-ID ist. Dies wird in einer kommenden Version adressiert.
 
-## Neue Funktionen in [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Neue Funktionen in Version  [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Geführtes Benutzererlebnis für optimierte Smart-Tags von Adobe Sensei**
 
-Mit den optimierten Smart Tags können Unternehmen Smart-Tagging-Modelle trainieren, um neben generischen Smart-Tags auch Bilder zu erkennen, die auf kundenspezifischen Unternehmens-Tags basieren.
+Mit den optimierten Smart-Tags können Unternehmen Smart-Tagging-Modelle trainieren, um neben generischen Smart-Tags auch Bilder zu erkennen, die auf kundenspezifischen Unternehmens-Tags basieren.
 
 In dieser Version gibt es ein neues, geführtes Benutzererlebnis, mit dessen Hilfe Smart-Tags-Training für Sätze kundenspezifischer Tags eingerichtet und mit Assets trainiert werden kann, die in Zukunft erkannt und mit diesen versehen werden sollen. Das Erlebnis ist jetzt intuitiver.
 Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Siehe [Hinzufügen von Smart-Tags zu Assets](/help/assets/smart-tags.md).
