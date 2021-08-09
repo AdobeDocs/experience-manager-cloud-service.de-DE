@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ Das CIF-Add-on kann als ZIP-Datei vom [Software Distribution-Portal](https://exp
 >
 >Stellen Sie sicher, dass Sie immer die neueste Version des CIF-Add-ons verwenden.
 
-### Lokale Einrichtung
+### Lokales Setup
 
 Gehen Sie für die lokale CIF-Add-on-Entwicklung mit dem AEM as a Cloud Service-SDK wie folgt vor:
 
@@ -82,11 +82,11 @@ Gehen Sie für die lokale CIF-Add-on-Entwicklung mit dem AEM as a Cloud Service-
    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
-   Diese Variable wird von AEM verwendet, um eine Verbindung zu Ihrem E-Commerce-System herzustellen. Außerdem enthält das CIF-Add-on einen lokalen Reverse-Proxy, um den Commerce GraphQL-Endpunkt lokal verfügbar zu machen. Dies wird von den CIF-Authoring-Werkzeugen (Produktkonsole und Picker) und für die Client-seitigen CIF-Komponenten verwendet, die direkte GraphQL-Aufrufe durchführen.
+   Diese Variable wird von AEM verwendet, um eine Verbindung zu Ihrem E-Commerce-System herzustellen. Darüber hinaus enthält das CIF-Add-on einen lokalen Reverse-Proxy, um den Commerce GraphQL-Endpunkt lokal verfügbar zu machen. Dies wird von den CIF-Authoring-Werkzeugen (Produktkonsole und Picker) und für die Client-seitigen CIF-Komponenten verwendet, die direkte GraphQL-Aufrufe durchführen.
 
    Diese Variable muss auch für die AEM as a Cloud Service-Umgebung eingerichtet werden. Weitere Informationen zu Variablen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#local-development).
 
-1. (Optional) Um gestaffelte Katalogfunktionen zu aktivieren, müssen Sie ein Integrations-Token für Ihre Magento-Instanz erstellen. Führen Sie die Schritte unter [Erste Schritte](./getting-started.md#staging) aus, um das Token zu erstellen.
+1. (Optional) Um Funktionen für gestaffelte Katalogdaten zu aktivieren, müssen Sie ein Integrations-Token für Ihre Magento-Instanz erstellen. Führen Sie die Schritte unter [Erste Schritte](./getting-started.md#staging) aus, um das Token zu erstellen.
 
    Setzen Sie ein OSGi-Geheimnis mit dem Namen `COMMERCE_AUTH_HEADER` auf den folgenden Wert:
 
@@ -100,7 +100,7 @@ Gehen Sie für die lokale CIF-Add-on-Entwicklung mit dem AEM as a Cloud Service-
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie AEM als Cloud Service-SDK im selben Terminal-Fenster starten, in dem die Umgebungsvariable in Schritt 5 festgelegt wurde. Wenn Sie es in einem separaten Terminalfenster starten oder durch Doppelklicken auf die JAR-Datei, stellen Sie sicher, dass die Umgebungsvariable sichtbar ist.
+>Stellen Sie sicher, dass Sie das AEM as a Cloud Service-SDK im selben Terminal-Fenster starten, in dem die Umgebungsvariable in Schritt 5 festgelegt wurde. Wenn Sie es in einem separaten Terminal-Fenster starten oder durch Doppelklicken auf die JAR-Datei, stellen Sie sicher, dass die Umgebungsvariable sichtbar ist.
 
 Überprüfen Sie das Setup über die OSGi-Konsole: `http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die mit dem CIF-Add-on zusammenhängenden Pakete, Content-Pakete und OSGi-Konfigurationen enthalten, wie sie in der Feature-Modelldatei definiert sind.
 
@@ -134,7 +134,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder das bereitgestellte `all`-Paket oder einzeln mithilfe des CIF-Inhaltspakets und der zugehörigen OSGI-Bundles eingefügt werden. Verwenden Sie die folgenden Abhängigkeiten, um einem Projekt manuell CIF-Kernkomponenten hinzuzufügen:
+CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder das bereitgestellte `all`-Paket oder sie einzeln mithilfe des CIF-Inhaltspakets und den zugehörigen OSGi-Paketen hinzugefügt werden. Verwenden Sie die folgenden Abhängigkeiten, um einem Projekt manuell CIF-Kernkomponenten hinzuzufügen:
 
 ```java
 <dependency>
@@ -168,7 +168,7 @@ CIF-Kernkomponenten können in jedem Projekt verwendet werden, indem entweder da
 
 ### Verwenden des AEM Venia Reference Store
 
-Eine zweite Möglichkeit, ein CIF-Projekt zu starten, besteht darin, den [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) zu klonen und zu verwenden. Der AEM Venia Reference Store ist ein Beispiel-Referenz-Storefront-Programm, das die Verwendung von CIF-Kernkomponenten für AEM demonstriert. Es ist als Best-Practice-Satz von Beispielen und als möglicher Ausgangspunkt für die Entwicklung Ihrer eigenen Funktionalität gedacht.
+Eine zweite Möglichkeit, ein CIF-Projekt zu starten, besteht darin, den [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) zu klonen und zu verwenden. Der AEM Venia Reference Store ist ein Beispiel-Referenz-Storefront-Programm, das die Verwendung von CIF-Kernkomponenten für AEM demonstriert. Sie ist sowohl als Satz von Best Practice-Beispielen als auch als möglicher Ausgangspunkt für die Entwicklung Ihrer eigenen Funktionalität gedacht.
 
 Um mit dem Venia Reference Store zu beginnen, klonen Sie einfach das Git-Repository und passen Sie das Projekt an Ihre Bedürfnisse an.
 
