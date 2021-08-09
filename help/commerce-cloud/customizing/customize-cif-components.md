@@ -501,4 +501,4 @@ Sie haben gerade Ihre erste AEM CIF-Komponente angepasst. Laden Sie die [fertige
 - [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Anpassen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-- [Verwendung der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md)
+- [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md)
