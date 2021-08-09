@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->In unserem Experience League-Kurs [AEM für Administratoren konfigurieren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) erfahren Sie, wie sich Benutzer mit Adobe IMS authentifizieren, um als Cloud Service AEM zu werden, und wie Adobe IMS-Benutzer, Benutzergruppen und Produktprofile verwendet werden, um den Zugriff auf AEM und die zugehörigen Funktionen zu steuern. Adobe ID erforderlich.
+>In unserem Experience League-Kurs [Konfigurieren des Zugriffs auf AEM für Administratoren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem?lang=de) erhalten Sie eine Einführung, wie sich Benutzer mithilfe von Adobe IMS bei AEM as a Cloud Service authentifizieren und wie Adobe IMS-Benutzer, -Benutzergruppen und -Produktprofile verwendet werden, um den Zugriff auf AEM und seine Features und Funktionen zu steuern. Adobe ID ist erforderlich.
 
 ## Wichtige Highlights {#key-highlights}
 
@@ -128,7 +128,7 @@ Nachfolgend sind die wichtigsten OSGI-Konfigurationen aufgeführt, die geändert
 
 ### Verwalten von Produkten und Benutzerzugriff in der Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wenn sich der Produktadministrator bei Admin Console anmeldet, sieht er mehrere Instanzen des AEM als Cloud Service-Produktkontext, wie unten dargestellt. Wählen Sie beispielsweise eines der Produkte auf der Seite **Übersicht** aus:
+Wenn sich der Produktadministrator des Kunden bei der Admin Console anmeldet, sieht er wie unten gezeigt mehrere Instanzen des AEM as a Cloud Service-Produktkontexts. Wählen Sie beispielsweise eines der Produkte auf der Seite **Übersicht** aus:
 
 ![Anmeldung von Instanzen](/help/security/assets/ims6.png)
 
@@ -136,7 +136,7 @@ Es wird eine Liste der vorhandenen Instanzen angezeigt:
 
 ![Anmeldung von Instanzen2](/help/security/assets/ims7.png)
 
-Unter jeder Produktkontextinstanz gibt es Instanzen, die sich auf Autoren- oder Veröffentlichungsdienste über Produktions-, Staging- oder Entwicklungsumgebungen erstrecken. Jede Instanz wird Produktprofilen oder Cloud Manager-Rollen zugeordnet. Diese Produktprofile werden für die Zuweisung des Zugriffs auf Benutzer und Gruppen mit den erforderlichen Berechtigungen verwendet.
+Unter jeder Produktkontext-Instanz gibt es Instanzen, die sich auf Autoren- oder Veröffentlichungs-Services über Produktions-, Staging- oder Entwicklungs-Umgebungen hinweg erstrecken. Jede Instanz wird Produktprofilen oder Cloud Manager-Rollen zugeordnet. Diese Produktprofile werden für die Zuweisung des Zugriffs an Benutzer und Gruppen mit den erforderlichen Berechtigungen verwendet.
 
 Das Profil **Administrator_xxx** wird verwendet, um Administratorberechtigungen in der zugehörigen AEM-Instanz zu gewähren, während das Profil **User_xxx** zum Hinzufügen regulärer Benutzer verwendet wird.
 
