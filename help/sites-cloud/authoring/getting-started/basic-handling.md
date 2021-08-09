@@ -92,7 +92,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![Globale Navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Suche](/help/sites-cloud/authoring/getting-started/search.md)
+* [Suchen](/help/sites-cloud/authoring/getting-started/search.md)
 
    ![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -383,7 +383,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
 
-## Leistenauswahl {#rail-selector}
+## Schienenauswahl {#rail-selector}
 
 Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole stehen unterschiedliche Optionen zur Verfügung.
 
@@ -422,7 +422,7 @@ Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
 
       * Kommentare
       * [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md)
-      * [Aktivitäten ](/help/sites-cloud/authoring/personalization/activities.md)
+      * [Aktivitäten](/help/sites-cloud/authoring/personalization/activities.md)
       * [Launches](/help/sites-cloud/authoring/launches/overview.md)
       * [Versionen](/help/sites-cloud/authoring/features/page-versions.md)
       * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
