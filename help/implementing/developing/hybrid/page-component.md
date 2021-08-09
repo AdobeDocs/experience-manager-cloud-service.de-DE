@@ -3,7 +3,7 @@ title: SPA-Seitenkomponente
 description: In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten Komponenten nicht bereit, sondern delegiert sie stattdessen an das SPA-Framework. In diesem Dokument wird erläutert, warum die Seitenkomponente einer SPA dadurch besonders ist.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '598'
 ht-degree: 100%
 
