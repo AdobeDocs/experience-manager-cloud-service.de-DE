@@ -7,7 +7,7 @@ exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -91,7 +91,7 @@ Start by uploading 360 Videos.
 
 ## Vorschau 360-Grad-Video {#previewing-video}
 
-Mit der Vorschau können Sie sehen, wie Ihr 360-Grad-Video für Kunden angezeigt wird, und sicherstellen, dass es sich wie erwartet verhält.
+Mit der Vorschau können Sie prüfen, wie das 360-Grad-Video bei Ihren Kunden aussieht, und sicherstellen, dass es sich wie erwartet verhält.
 
 Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
