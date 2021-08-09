@@ -2,13 +2,13 @@
 title: Aktivitäts-Stream in der Zeitleiste
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Zeitleiste anzeigen können.
 contentOwner: AG
-feature: Asset-Berichte, Asset-Verwaltung
+feature: Asset-Berichte,Asset-Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Löschen
 * Download (einschließlich Ausgabedarstellungen)
 * Veröffentlichen
-* Veröffentlichung rückgängig machen
+* Veröffentlichung aufheben
 * Genehmigen
 * Ablehnen
 * Verschieben
@@ -43,4 +43,4 @@ In der Zeitleiste wird der Aktivitäts-Stream für die mit den Assets ausgeführ
 
 >[!NOTE]
 >
->Der standardmäßige Speicherort für Aufgaben des Typs **[!UICONTROL Veröffentlichen]** und **[!UICONTROL Veröffentlichung rückgängig machen]** befindet sich in `/var/audit/com.day.cq.replication/content`. Für Aufgaben des Typs **[!UICONTROL Verschieben]** ist der standardmäßige Speicherort `/var/audit/com.day.cq.wcm.core.page`.
+>Der standardmäßige Speicherort für Aufgaben des Typs **[!UICONTROL Veröffentlichen]** und **[!UICONTROL Veröffentlichung aufheben]** befindet sich in `/var/audit/com.day.cq.replication/content`. Für Aufgaben des Typs **[!UICONTROL Verschieben]** ist der standardmäßige Speicherort `/var/audit/com.day.cq.wcm.core.page`.
