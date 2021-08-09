@@ -30,7 +30,7 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 * [MSM-Rollout-Konflikte](rollout-conflicts.md)
 * [Best Practices für MSM](best-practices.md)
 
-## Mögliche Szenarien   {#possible-scenarios}
+## Mögliche Szenarien {#possible-scenarios}
 
 MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispielsweise folgendermaßen aussehen:
 
