@@ -3,7 +3,7 @@ title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -154,9 +154,9 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
       ![Dialogfeld „Neue Komponente einfügen“](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. Die ausgewählte Komponente wird am Ende der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie die Komponente.
+1. Die ausgewählte Komponente wird am Ende der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
 
-### Einfügen einer Komponente mit dem Assets-Browser  {#inserting-a-component-using-the-assets-browser}
+### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -170,7 +170,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
    Am entsprechenden Ort wird eine zum Asset-Typ passende Komponente erstellt, die das ausgewählte Asset enthält.
 
-1. [Bearbeiten](#edit-content) Sie die Komponente.
+1. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 * Öffnen Sie das Dialogfeld [Komponente](#component-edit-dialog) für die Bearbeitung.
 * [Ziehen Sie ein Asset](#drag-and-drop-assets-into-component) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
 
-### Dialogfeld „Komponente bearbeiten“  {#component-edit-dialog}
+### Dialogfeld „Komponente bearbeiten“ {#component-edit-dialog}
 
 Sie können eine Komponente öffnen, um den Inhalt zu bearbeiten, indem Sie das Symbol [„Bearbeiten“ (Stiftsymbol) in der Komponenten-Symbolleiste](#component-toolbar) verwenden.
 
@@ -358,7 +358,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!TIP]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie etwa bei einer Komponente das Layout bearbeiten und dann auf eine andere Komponente klicken, werden auf der Symbolleiste für die Bearbeitung die Layout-Aktionen durch die Standardaktionen ersetzt und die Ziehpunkte für die Größenanpassung sowie die Emulator-Symbolleiste werden nicht mehr angezeigt.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie etwa bei einer Komponente das Layout bearbeiten und dann auf eine andere Komponente klicken, werden in der Symbolleiste für die Bearbeitung die Layout-Aktionen durch die Standardaktionen ersetzt und die Ziehpunkte für die Größenanpassung sowie die Emulator-Symbolleiste werden nicht mehr angezeigt.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -408,7 +408,7 @@ Beispiel:
 
 [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) bieten Reviewern und anderen Autoren die Möglichkeit, Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau  {#previewing-pages}
+## Anzeigen einer Seitenvorschau {#previewing-pages}
 
 Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
