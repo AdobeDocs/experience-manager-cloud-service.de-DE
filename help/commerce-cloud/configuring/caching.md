@@ -5,13 +5,13 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 # Caching und Leistung {#caching}
 
-## Komponenten- und GraphQL-Response-Caching {#graphql}
+## Komponenten- und GraphQL-Antwort-Caching {#graphql}
 
 Die AEM-CIF-Kernkomponenten bieten bereits integrierte Unterstützung für das Caching von GraphQL-Antworten für einzelne Komponenten. Diese Funktion kann verwendet werden, um die Anzahl der GraphQL Backend-Aufrufe erheblich zu reduzieren. Effektives Caching kann insbesondere bei sich wiederholenden Abfragen erreicht werden, z. B. beim Abrufen der Kategoriestruktur für eine Navigationskomponente oder beim Abrufen aller verfügbaren Aggregations-/Facettenwerte, die auf den Produktsuchen- und Kategorieseiten angezeigt werden.
 
