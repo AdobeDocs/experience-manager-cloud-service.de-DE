@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Komponenten  {#components}
+# Komponenten {#components}
 
 Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in Adobe Experience Manager (AEM). Komponenten wie Bilder, Text und Titel können einfach per Drag-and-Drop verschoben werden, um Inhalte zu erstellen.
 
@@ -21,7 +21,7 @@ AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-## Allgemeine Verwendung    {#general-usage}
+## Allgemeine Verwendung {#general-usage}
 
 Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
@@ -29,7 +29,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 
 * [Eigenschaften konfigurieren](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Inhalt bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-* [Inhalt bearbeiten - Vollbildmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
+* [Inhalt bearbeiten – Vollbildmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
 Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie im Artikel [Bearbeiten von Seiteninhalten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
