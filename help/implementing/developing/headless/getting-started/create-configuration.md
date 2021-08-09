@@ -1,11 +1,11 @@
 ---
 title: 'Schnellstartanleitung für Headless: Erstellen einer Konfiguration'
-description: Erstellen Sie eine Konfiguration als ersten Schritt, um mit Headless in AEM as a Cloud Service zu beginnen.
+description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen,
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 1. Überprüfen Sie die folgenden Optionen:
    * **Inhaltsfragmentmodelle**
