@@ -9,9 +9,9 @@ ht-degree: 100%
 
 ---
 
-# Aufgaben des Systemadministrators {#add-users-assign}
+# Systemadministratoraufgaben {#add-users-assign}
 
-Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff bis zu Berechtigungen. Dieser Benutzer ist die erste Person, die Zugriff bekommt, um mit der Erledigung von Aufgaben innerhalb von Admin Console und Cloud Manager zu beginnen.
+Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff bis zu Berechtigungen. Dieser Benutzer hat als erster Zugriff auf Admin Console und Cloud Manager, um mit Aufgaben zu beginnen.
 Ein Systemadministrator führt die folgenden organisatorischen Aufgaben aus:
 
 * Hinzufügen von Benutzern
