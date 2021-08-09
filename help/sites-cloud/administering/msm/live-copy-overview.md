@@ -57,7 +57,7 @@ Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Bluepri
 
 1. Verwenden Sie **Schließen**, um den Vorgang zu beenden, und kehren Sie zur **Sites-Konsole** zurück.
 
-## Verwenden der Live Copy-Übersicht   {#using-the-live-copy-overview}
+## Verwenden der Live Copy-Übersicht {#using-the-live-copy-overview}
 
 Das Fenster **Live Copy-Übersicht** bietet einen Überblick über den Status der Live Copies in Bezug auf die ausgewählte Seite.
 
@@ -110,7 +110,7 @@ Diese Registerkarte liefert detaillierte Informationen zum Status der Beziehung 
 
 ![Registerkarte „Beziehungsstatus“](../assets/live-copy-relationship-status.png)
 
-### Live Copy  {#live-copy-tab}
+### Live Copy {#live-copy-tab}
 
 Auf dieser Registerkarte können Sie die Live Copy-Konfiguration anzeigen und bearbeiten.
 
