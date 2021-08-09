@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
-AEM as a Cloud Service hält sich an die neuesten Best Practices für Package Management und Projektstruktur, die vom neuesten AEM Projektarchetyp implementiert wurden.
+AEM as a Cloud Service hält sich an die neuesten Best Practices für Package-Management und Projektstruktur, wie sie vom neuesten AEM-Projektarchetyp implementiert wurden.
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ Fügen Sie zum Verwenden des Inhaltspaket-Maven-Plug-ins das folgende Plug-in-El
 
 Verwenden Sie das im Abschnitt [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite angegebene Profil, um Maven für das Herunterladen des Plug-ins zu aktivieren.
 
-## Ziele des Inhaltspaket-Maven-Plug-ins   {#goals-of-the-content-package-maven-plugin}
+## Ziele des Inhaltspaket-Maven-Plug-ins {#goals-of-the-content-package-maven-plugin}
 
 Die durch das Inhaltspaket-Plug-in bereitgestellten Ziele und Zielparameter werden in den folgenden Abschnitten beschrieben. Die im Abschnitt „Allgemeine Parameter“ beschriebenen Parameter können für die meisten der Ziele verwendet werden. Parameter, die für ein Ziel zutreffen, werden im Abschnitt für das jeweilige Ziel beschrieben.
 
@@ -133,7 +133,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibungen im Abschnitt [Allgem
 
 ### ls {#ls}
 
-Führt die im Paketmanager bereitgestellten Pakete auf.
+Führt die im Paket-Manager bereitgestellten Pakete auf.
 
 #### Parameter {#parameters-2}
 
@@ -184,7 +184,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibung des Parameters `name` 
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Das im Maven-Projekt (Build-Phase) definierte Verzeichnis | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
 
-#### Verwenden von „filters“ {#using-filters}
+#### Verwenden von „filters“  {#using-filters}
 
 Verwenden Sie das Element „filters“ zum Definieren des Paketinhalts. Die Filter werden zum Element `workspaceFilter` in der Datei `META-INF/vault/filter.xml` des Pakets hinzugefügt.
 
