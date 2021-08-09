@@ -1,19 +1,19 @@
 ---
 title: Markdown
-description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Inhalten zu ermöglichen.
+description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Content zu ermöglichen.
 feature: Inhaltsfragmente
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
 # Markdown {#markdown}
 
-Wenn Sie [Authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) verwenden, verwendet der Inhaltsfragment-Editor die Syntax *markdown* , um Ihnen das einfache Schreiben von Headless-Inhalten zu ermöglichen:
+Wenn Sie [Inhalt erstellen oder bearbeiten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragment-Editor die *Markdown*-Syntax, um Ihnen die Erstellung von Headless-Content zu erleichtern:
 
 ![Markdown-Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
