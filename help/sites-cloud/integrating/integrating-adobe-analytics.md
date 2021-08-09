@@ -11,7 +11,7 @@ ht-degree: 94%
 
 ---
 
-# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
+# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
 
 Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration setzt Folgendes voraus:
 
@@ -26,7 +26,7 @@ Im Vergleich zu früheren Versionen von AEM ist in der Analytics-Konfiguration v
 
 ## Erstellen der Adobe Analytics-Konfiguration {#analytics-configuration}
 
-1. Navigieren Sie zu **Tools** > **Cloud-Services**.
+1. Navigieren Sie zu **Tools** > **Cloud Services**.
 2. Wählen Sie **Adobe Analytics**.
    ![Adobe Analytics-Fenster](assets/analytics_screen2.png "Adobe Analytics-Fenster")
 3. Klicken Sie auf die Schaltfläche **Erstellen**.
