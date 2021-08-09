@@ -3,7 +3,7 @@ title: Entwicklung und Seitenvergleich
 description: Verstehen Sie, wie die Seitenvergleichsfunktion funktioniert und wie sie sich auf einen Entwickler auswirken kann.
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
 ht-degree: 100%
 
