@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von Bedingungen zum Ausblenden '
+title: Verwenden von Bedingungen zum Ausblenden
 description: Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
@@ -9,11 +9,11 @@ ht-degree: 97%
 
 ---
 
-# Verwenden von Bedingungen zum Ausblenden   {#using-hide-conditions}
+# Verwenden von Bedingungen zum Ausblenden {#using-hide-conditions}
 
 Bedingungen zum Ausblenden können verwendet werden, um festzustellen, ob eine Komponentenressource gerendert wird. Etwa wenn ein Vorlagenautor die Kernkomponente [Listenkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) im [Vorlageneditor](/help/sites-cloud/authoring/features/templates.md) konfiguriert und beschließt, die Optionen zum Erstellen der Liste auf Basis untergeordneter Seiten zu deaktivieren. Durch das Deaktivieren dieser Option im Designdialogfeld wird eine Eigenschaft so festgelegt, dass beim Rendern der Listenkomponente die Bedingung zum Ausblenden ausgewertet und die Option zum Anzeigen untergeordneter Seiten nicht angezeigt wird.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Dialogfelder können aufgrund der zahlreichen Optionen sehr komplex für die Benutzer sein, die möglicherweise nur einen kleinen Teil der ihnen zur Verfügung stehenden Optionen nutzen. Dies kann dazu führen, dass die Benutzeroberfläche unübersichtlich wird.
 
@@ -23,7 +23,7 @@ Durch die Verwendung von Bedingungen zum Ausblenden haben Administratoren, Entwi
 >
 >Das Ausblenden einer Ressource auf Grundlage eines Ausdrucks ersetzt nicht die ACL-Berechtigungen. Der Inhalt bleibt bearbeitbar, wird aber einfach nicht angezeigt.
 
-## Implementierung und Nutzungsdetails   {#implementation-and-usage-details}
+## Implementierung und Nutzungsdetails {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` ist verantwortlich für das Filtern der Ressourcen basierend auf dem Vorhandensein und dem Wert der Eigenschaft `granite:hide` für das zu filternde Feld. Die Implementierung `/libs/cq/gui/components/authoring/dialog/dialog.jsp` umfasst eine Instanz von `FilteringResourceWrapper.`
 
