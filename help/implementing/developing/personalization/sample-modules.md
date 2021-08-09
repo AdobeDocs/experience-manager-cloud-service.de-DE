@@ -3,13 +3,13 @@ title: Mustertypen von ContextHub-UI-Modulen
 description: ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1126'
 ht-degree: 100%
 
 ---
 
-# Mustertypen von ContextHub-UI-Modulen  {#sample-contexthub-ui-module-types}
+# Mustertypen von ContextHub-UI-Modulen {#sample-contexthub-ui-module-types}
 
 ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden bereitgestellt:
 
@@ -19,7 +19,7 @@ ContextHub bietet mehrere Muster-UI-Module, die Sie in Ihren Lösungen verwenden
 
 Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hinzufügen eines UI-Moduls](configuring-contexthub.md#adding-a-ui-module). Informationen zum Entwickeln von UI-Modulen finden Sie unter [Erstellen von ContextHub-UI-Modultypen](extending-contexthub.md#creating-contexthub-ui-module-types).
 
-## UI-Modultyp contexthub.base   {#contexthub-base-ui-module-type}
+## UI-Modultyp contexthub.base {#contexthub-base-ui-module-type}
 
 Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
 
@@ -92,7 +92,7 @@ Instanzen des UI-Moduls contexthub.browserinfo benötigen keinen Wert für die D
 }
 ```
 
-## UI-Modultyp contexthub.datetime   {#contexthub-datetime-ui-module-type}
+## UI-Modultyp contexthub.datetime {#contexthub-datetime-ui-module-type}
 
 Das UI-Modul `contexthub.datetime` zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen „datetime“ gespeichert sind, der auf dem Store-Kandidaten `contexthub.datetime` basiert.
 
@@ -160,7 +160,7 @@ Instanzen des UI-Moduls contexthub.location erfordern keinen Wert für die Detai
 }
 ```
 
-## UI-Modultyp contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
+## UI-Modultyp contexthub.screen-orientation {#contexthub-screen-orientation-ui-module-type}
 
 Das UI-Modul `contexthub.screen-orientation` zeigt die aktuelle Bildschirmausrichtung des Clients an. Obwohl standardmäßig deaktiviert, bietet das Modul ein Popover, mit dem Sie eine Ausrichtung auswählen können. Das Modul erhält Informationen von einem ContextHub-Store namens „emulators“, der auf dem Store-Kandidaten [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) basiert.
 
@@ -208,7 +208,7 @@ Instanzen des UI-Moduls `contexthub.tagcloud` benötigen keinen Wert für die De
 }
 ```
 
-## UI-Modultyp granite.profile   {#granite-profile-ui-module-type}
+## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
 Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
 
