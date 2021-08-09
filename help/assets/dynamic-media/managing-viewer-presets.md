@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Viewer-Vorgaben
-description: Erfahren Sie, wie Sie Viewer-Vorgaben in Dynamic Media erstellen und verwalten.
+description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben erstellt und verwaltet werden.
 feature: Viewer-Vorgaben,Viewer
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
 source-wordcount: '4231'
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
@@ -67,8 +67,8 @@ Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitge
 * Apple iPhones
 * Apple iPads
 * Android™-Smartphone
-* Android™ Tablet
-* Für Videos wird eine zusätzliche Unterstützung für die MP4-Wiedergabe für [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs) bereitgestellt.
+* Android™-Tablet
+* Videos: zusätzliche Unterstützung zur MP4-Wiedergabe für [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Rich-Media-Typen für Viewer-Vorgaben {#rich-media-types-for-viewer-presets}
 
@@ -312,7 +312,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 
 ### Matrix unterstützter Mobile Viewer-Gesten {#supported-mobile-viewers-gestures-matrix}
 
-In der folgenden Tabelle sind die Handy-Viewer-Gesten aufgeführt, die auf iOS-, Android™ 2.x- und Android™ 3.x-Geräten unterstützt werden.
+In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf iOS-, Android™ 2.x- und Android™ 3.x-Geräten unterstützt werden.
 
 <table>
  <tbody>
@@ -489,7 +489,7 @@ Wenn Sie in der Viewer-Vorgabe bei der Videowiedergabe durch den Benutzer die Op
 
 Wenn Sie während der Videowiedergabe die Option **[!UICONTROL Automatischer Bildlauf]** in der Viewer-Vorgabe aktivieren (auswählen), werden die Miniaturbilder, die einem Videosegment zugewiesen sind, zu Beginn eines Segments in die Ansicht verschoben. Es gibt jedoch Fälle, in denen bestimmte Miniaturansichten innerhalb eines Segments doppelt so lange angezeigt werden wie andere Miniaturansichten vor oder nach dem Segment. Dieses Verhalten tritt auf, weil die Anzahl der Miniaturansichten in einem Segment größer ist als die Zahl, die im Bedienfeld sichtbar ist, und diese nicht gleichmäßig teilbar ist.
 
-Angenommen, Sie verfügen über ein 30-Sekunden-Videosegment. Insgesamt gibt es neun Miniaturansichten, die im Laufe dieser 30 Sekunden angezeigt werden. Die Größe Ihres Browsers wird dergestalt geändert, dass vier verfügbare Miniaturpositionen im Anzeigefeld vorliegen. Das 30-Sekunden-Videozeitsegment ist in drei Untersegmente unterteilt. In der folgenden Tabelle wird die Aufschlüsselung darüber gezeigt, welche Miniaturen für ein bestimmtes Zeituntersegment angezeigt werden:
+Gehen wir zu Illustrationszwecken von einem 30 Sekunden langen Videosegment aus. Insgesamt gibt es neun Miniaturansichten, die im Laufe dieser 30 Sekunden angezeigt werden. Die Größe Ihres Browsers wird dergestalt geändert, dass vier verfügbare Miniaturpositionen im Anzeigefeld vorliegen. Das 30-sekündige Videozeitsegment ist in drei Untersegmente unterteilt. In der folgenden Tabelle wird die Aufschlüsselung darüber gezeigt, welche Miniaturen für ein bestimmtes Zeituntersegment angezeigt werden:
 
 | **Videountersegment** | **Zeit des Untersegments in Sekunden** | **Im Feld sichtbare Miniaturen** |
 |---|---|---|
@@ -508,7 +508,7 @@ Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten 
 Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten : 3 Videountersegmente = 3 Miniaturansichten.
 
 * Dauer des Untersegments = gesamte Videodauer : Anzahl der Videountersegmente.
-Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden / 3 Videountersegmente = 10 Sekunden anhaltende Anzeige jedes Videountersegments.
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden: 3 Segmente = 10 Sekunden anhaltende Anzeige jedes Segments.
 
 #### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
@@ -539,7 +539,7 @@ Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactiva
 
 Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-**So veröffentlichen Sie Viewer-Vorgaben:** 
+**So veröffentlichen Sie Viewer-Vorgaben:**
 
 1. Wählen Sie in der linken oberen Ecke des Experience Managers das Experience Manager-Logo aus und wählen Sie dann in der linken Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]** aus.
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus.
@@ -572,7 +572,7 @@ Die Bearbeitung von *vordefinierten, standardmäßig vorhandenen Viewer-Vorgaben
 
 Sie können Viewer-Vorgaben löschen, die Sie erstellt und Dynamic Media hinzugefügt haben.
 
-**So löschen Sie benutzerdefinierte Viewer-Vorgaben:**
+**So löschen Sie anwenderdefinierte Viewer-Vorgaben:**
 
 1. Wählen Sie in der linken oberen Ecke des Experience Managers das Experience Manager-Logo aus und wählen Sie dann in der linken Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets] > [!UICONTROL Viewer-Vorgaben]** aus.
 1. Markieren Sie auf der Seite &quot;Viewer-Vorgaben&quot;einen Vorgabentitel und wählen Sie dann das Symbol **[!UICONTROL Papierkorb]** aus.
