@@ -1,12 +1,12 @@
 ---
 title: Verwenden Sie Regelsätze zum Konvertieren von URLs
-description: Erfahren Sie, wie Sie Regelsätze in Dynamic Media bereitstellen, um URLs umzuwandeln. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
+description: Erfahren Sie, wie Sie in Dynamic Media Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 68%
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,7 @@ In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu 
 
    Siehe [Entfernen von Sonderzeichen aus URLs](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Im Zusammenhang mit Dynamic Media können Websites, die ein XML-basiertes System zur Verwaltung von Asset-Informationen verwenden, XML-Dateien in Dynamic Media hochladen. Sie können eine dieser Dateien als Regelsatzdatei zur Vorverarbeitung für die Verarbeitung des Dynamic Media-Assets festlegen. Diese Datei strukturiert das Standard-URL-Protokollformat neu, um der Unternehmenslogik der in Dynamic Media integrierten Systeme zu entsprechen. Sie geben eine XML-Datei an, die als Dateipfad für die Regeldefinitionen dienen soll.
+Im Zusammenhang mit Dynamic Media können Websites, die ein XML-basiertes System zur Verwaltung von Asset-Informationen verwenden, XML-Dateien in Dynamic Media hochladen. Sie können eine dieser Dateien als Regelsatzdatei zur Vorverarbeitung für die Verarbeitung des Dynamic Media-Assets festlegen. Mit dieser Datei wird das Standard-URL-Protokollformat neu strukturiert und an die Geschäftslogik der in Dynamic Media integrierten Systeme angepasst. Sie geben eine XML-Datei an, die als Dateipfad für die Regeldefinitionen dienen soll.
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
    * Navigieren Sie im Dialogfeld **[!UICONTROL Öffnen]** zu Ihrer Regelsatzdatei (XML).
    * Wählen Sie die Datei aus und klicken Sie dann auf **[!UICONTROL Öffnen]**.
    * Wählen Sie rechts auf der Seite **[!UICONTROL Hochladen]** einen Zielordner für die Regelsatzdatei aus.
-   * Vergewissern Sie sich unten auf der Seite, dass die Option Nach dem Hochladen veröffentlichen aktiviert ist.
+   * Stellen Sie sicher, dass die Option „Nach Hochladen veröffentlichen“ am unteren Rand der Seite markiert ist.
    * Wählen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload starten]**.
    * Wählen Sie in der Symbolleiste für globale Navigation **[!UICONTROL Aufträge]** aus, um den Status des Upload-Auftrags zu überprüfen. Wenn in der Spalte **[!UICONTROL Status]** auf der Seite **[!UICONTROL Auftrag]** der Status „Hochladen abgeschlossen“ angezeigt wird, fahren Sie mit den nächsten Schritten fort.
 
@@ -78,4 +78,4 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
    Die Bedingungen des Regelsatzes werden auf die Anforderungen an die Live-Image-Server von Dynamic Media angewendet.
 
-   Wenn Sie die Regelsatzdatei ändern, werden die Änderungen sofort angewendet, wenn Sie die aktualisierte Regelsatzdatei erneut hochladen und veröffentlichen.
+   Wenn Sie Änderungen an der Regelsatzdatei vornehmen, werden die Änderungen sofort angewendet, wenn Sie die aktualisierte Regelsatzdatei erneut hochladen oder veröffentlichen.
