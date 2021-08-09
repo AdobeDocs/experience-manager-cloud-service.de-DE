@@ -2,7 +2,7 @@
 title: Stapelweises Importieren und Exportieren von Asset-Metadaten
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Massen importieren und exportieren können.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadaten
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
@@ -12,11 +12,11 @@ ht-degree: 92%
 
 ---
 
-# Stapelweises Importieren und Exportieren von Asset-Metadaten    {#import-and-export-asset-metadata-in-bulk}
+# Stapelweises Importieren und Exportieren von Asset-Metadaten {#import-and-export-asset-metadata-in-bulk}
 
 Mit Adobe Experience Manager Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei stapelweise importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-## Importieren von Metadaten    {#import-metadata}
+## Importieren von Metadaten {#import-metadata}
 
 Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der Metadaten-Writeback-Aktivität unter Verwendung von Asset-Microservices möglicherweise ressourcenintensiv sein. Adobe empfiehlt, dass Sie alle Massenvorgänge bei geringer Serverauslastung planen, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
 
