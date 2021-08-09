@@ -3,7 +3,7 @@ title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.5.
 description: Versionshinweise für Experience Manager 2020.5.0
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
 ht-degree: 100%
 
