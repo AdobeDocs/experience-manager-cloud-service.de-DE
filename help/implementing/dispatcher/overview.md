@@ -3,7 +3,7 @@ title: Übersicht über den Ablauf der Inhaltsbereitstellung
 description: Übersicht über den Ablauf der Inhaltsbereitstellung
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Auf dieser Seite wird der Veröffentlichungsdienst für die Inhaltsbereitstellun
 Der Datenfluss sieht wie folgt aus:
 
 1. Die URL wird im Browser hinzugefügt
-1. Anfrage an CDN, das in DNS dieser Domäne zugeordnet ist
+1. Anfrage an CDN, das in DNS dieser Domain zugeordnet ist
 1. Wenn der Inhalt im CDN vollständig zwischengespeichert ist, stellt CDN ihn für den Browser bereit
 1. Wenn der Inhalt nicht vollständig zwischengespeichert ist, ruft CDN den Dispatcher auf (Reverse-Proxy)
 1. Wenn der Inhalt in Dispatcher vollständig zwischengespeichert ist, stellt Dispatcher ihn dem CDN bereit
