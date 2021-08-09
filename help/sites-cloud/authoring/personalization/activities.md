@@ -1,15 +1,15 @@
 ---
-title: 'Verwalten von Aktivitäten '
+title: Verwalten von Aktivitäten
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2002'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Verwalten von Aktivitäten  {#managing-activities}
+# Verwalten von Aktivitäten {#managing-activities}
 
 Mithilfe der Aktivitätskonsole können Sie die Marketing-[Aktivitäten](/help/sites-cloud/authoring/personalization/overview.md#activities) Ihrer Marken erstellen, organisieren und verwalten:
 
@@ -47,7 +47,7 @@ Aktivitäten werden mit einer Beschriftung versehen, die beschreibt, um welche A
 
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten `cq:ActivitySettings` in der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten `cq:ActivitySettings` in der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter „Voraussetzungen für die Integration mit Adobe Target“.
 <!--
@@ -69,7 +69,7 @@ Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese e
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Aktivitäten“ und „Angebote“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**. Die Marke erscheint nun in der Aktivitätskonsole.
 
-## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole      {#adding-editing-an-activity-using-the-activities-console}
+## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole {#adding-editing-an-activity-using-the-activities-console}
 
 Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität, um Ihre Marketinganstrengungen auf bestimmte Zielgruppen abzustimmen. Beim Erstellen oder Bearbeiten von Aktivitäten werden folgende Daten festgelegt:
 
@@ -77,7 +77,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 * **Targeting-Engine:** Entweder [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oder [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) als Engine für zielgerichtete Inhalte.
 * **Auswählen einer Target-Konfiguration:** (Nur Adobe Target) Die Cloud-Konfiguration, mit der diese Aktivität eine Verbindung zu Adobe Target herstellen soll. Diese Option wird nur angezeigt, wenn Adobe Target für die Targeting-Engine ausgewählt wurde.
 * **Aktivitätstyp**: der Aktivitätstyp – A/B-Test oder Erlebnis-Targeting.
-* **Zielsetzung:** (Optional) Eine Beschreibung der Aktivität.
+* **Ziele:** (Optional) Eine Beschreibung der Aktivität.
 * **Erlebnisse:** Zuordnungen zwischen Zielgruppennamen und den Marketingsegmenten, die Sie als Ziel auswählen.
 * **Traffic-Anteile**: wurde A/B-Test ausgewählt, können Sie festlegen, welcher Anteil des Traffics (in Prozent) an die verschiedenen Erlebnisse weitergeleitet wird.
 * **Dauer:** Der Zeitraum, in dem die Aktivität angewendet wird.
@@ -92,7 +92,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 
 So fügen Sie eine Aktivität hinzu:
 
-1. Klicken oder tippen Sie auf die Marke, für die Sie eine Aktivität erstellen möchten, klicken oder tippen Sie auf **Erstellen** und anschließend auf **Aktivität erstellen**. Wenn Sie eine Aktivität bearbeiten möchten, wählen Sie sie im Master-Gebiet-Bildschirm aus und klicken oder tippen Sie auf **Aktivität bearbeiten**.
+1. Klicken oder tippen Sie auf die Marke, für die Sie eine Aktivität erstellen möchten, klicken oder tippen Sie auf **Erstellen** und anschließend auf **Aktivität erstellen**. Wenn Sie eine Aktivität bearbeiten möchten, wählen Sie sie im Bildschirm „Primäres Gebiet“ aus und klicken oder tippen Sie auf **Aktivität bearbeiten**.
 1. Machen Sie folgende Angaben und klicken oder tippen Sie dann auf **Weiter**:
    * Der Name der Aktivität.
    * Die zu verwendende Targeting-Engine. Standardmäßig ist ContextHub (AEM) ausgewählt. Sollten Sie Adobe Target verwenden, erstellen Sie die Aktivität im Editor für zielgerichtete Inhalte.
@@ -102,7 +102,7 @@ So fügen Sie eine Aktivität hinzu:
 1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
    1. Klicken oder tippen Sie auf **Zielgruppe wählen** und wählen Sie das Segment aus, auf das Ihr Erlebnis abgestimmt ist.
-   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**. 
+   1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
    1. Klicken oder tippen Sie auf **Weiter**.
 Wenn Sie A/B-Tests in Adobe Target verwenden:
    1. Klicken oder tippen Sie auf den Stift im Zielgruppenfeld, um eine Zielgruppe auszuwählen.
@@ -123,31 +123,31 @@ Wenn Sie A/B-Tests in Adobe Target verwenden:
    >
    >Nach dem Erstellen einer Aktivität muss diese zunächst veröffentlicht werden, damit sie verfügbar ist.
 
-## Veröffentlichen von Aktivitäten und Rückgängigmachen der Veröffentlichung von Aktivitäten {#publishing-and-unpublishing-activities}
+## Veröffentlichen von Aktivitäten und Aufheben der Veröffentlichung von Aktivitäten {#publishing-and-unpublishing-activities}
 
-Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht werden. Auf der anderen Seite möchten Sie die Verfügbarkeit von Aktivitäten möglicherweise verhindern, was durch das Rückgängigmachen einer Veröffentlichung erzielt wird.
+Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht werden. Auf der anderen Seite möchten Sie die Verfügbarkeit von Aktivitäten möglicherweise verhindern, was durch das Aufheben einer Veröffentlichung erzielt wird.
 
 >[!NOTE]
 >
->Beim Rückgängigmachen der Veröffentlichung einer Aktivität ändert sich der Status der Aktivität nur, wenn Sie die Seite aktualisieren.
+>Wenn Sie das Veröffentlichen einer Aktivität aufheben, ändert sich der Status der Aktivität nicht, es sei denn, Sie aktualisieren die Seite.
 
-So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
+So veröffentlichen Sie Aktivitäten oder heben deren Veröffentlichung auf:
 
-1. Klicken oder tippen Sie auf die Marke und anschließend auf das Gebiet, das die Aktivität enthält, die veröffentlicht bzw. deren Veröffentlichung rückgängig gemacht werden soll.
-1. Klicken oder tippen Sie auf das Symbol neben der Aktivität oder den Aktivitäten, die Sie veröffentlichen bzw. deren Veröffentlichung Sie rückgängig machen möchten.
+1. Klicken oder tippen Sie auf die Marke und anschließend auf das Gebiet, das die Aktivität enthält, die veröffentlicht bzw. deren Veröffentlichung aufgehoben werden soll.
+1. Klicken oder tippen Sie auf das Symbol neben der Aktivität oder den Aktivitäten, die Sie veröffentlichen bzw. deren Veröffentlichung Sie aufheben möchten.
 
    ![Veröffentlichen über die Aktivitätskonsole](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Soll die Aktivität veröffentlicht werden, klicken oder tippen Sie auf **Veröffentlichen**. Soll die Veröffentlichung der Aktivität rückgängig gemacht werden, klicken oder tippen Sie auf **Veröffentlichung rückgängig machen**. Die jeweilige Aktion wird durchgeführt und der Status der Aktivitäten in der Aktivitätskonsole angepasst (möglicherweise muss die Seite hierzu aktualisiert werden).
+1. Soll die Aktivität veröffentlicht werden, klicken oder tippen Sie auf **Veröffentlichen**. Soll die Veröffentlichung der Aktivität aufgehoben werden, klicken oder tippen Sie auf **Veröffentlichung** aufheben. Die jeweilige Aktion wird durchgeführt und der Status der Aktivitäten in der Aktivitätskonsole angepasst (möglicherweise muss die Seite hierzu aktualisiert werden).
 
-## Aktivitäten in der Autoren- und Veröffentlichungsinstanz     {#activities-on-author-and-publish-instances}
+## Aktivitäten in der Autoren- und Veröffentlichungsinstanz {#activities-on-author-and-publish-instances}
 
 Wird eine Aktivität aktiviert, deren Targeting-Engine Adobe Target ist, wird in der Autoreninstanz eine zweite Aktivität erstellt:
 
 * Mit der Aktivität in der Autoreninstanz wird die Aktivität in der Autoreninstanz verfolgt, was sich für die Simulation des Besuchererlebnisses oft als sehr nützlich erweist. Die für diese Aktivität aufgezeichneten Analysedaten spiegeln lediglich wider, was in der Autoreninstanz geschieht.
 * Die Aktivität in der Veröffentlichungsinstanz spiegelt die Aktivität auf dem Veröffentlichungsserver wider und reagiert auf Serveranfragen. Hierbei handelt es sich um die Aktivität, die auf der öffentlichen Website angezeigt wird. Für die Verfolgung und Analyse der Verwendung der online befindlichen Site wird nur die Aktivität der Veröffentlichungsinstanz benötigt.
 
-## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests)      {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Sie können die Leistung beliebiger Adobe Target-Aktivitäten (XT oder A/B) anzeigen. Wenn Sie A/B-Tests verwenden, können Sie zudem die Gewinnererlebnisse in Standarderlebnisse konvertieren.
 
@@ -172,7 +172,7 @@ So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
 1. Klicken oder tippen Sie auf **Ja**, um zu bestätigen, dass das Gewinnererlebnis konvertiert werden soll. Dies führt zur Deaktivierung der aktuellen Aktivität, die durch die Inhalte des Gewinnererlebnisses ersetzt wird.
 
-## Synchronisieren von Aktivitäten mit Adobe Target      {#synchronizing-activities-with-adobe-target}
+## Synchronisieren von Aktivitäten mit Adobe Target {#synchronizing-activities-with-adobe-target}
 
 Aktivitäten, deren Targeting-Engine Adobe Target ist, werden mit Adobe Target-Kampagnen synchronisiert. Eine Aktivität wird automatisch mit Adobe Target synchronisiert, wenn folgende Bedingungen erfüllt sind:
 
@@ -193,7 +193,7 @@ Die Autorenaktivitäten werden unmittelbar bei Bearbeitung der Aktivität synchr
 
 Veröffentlichte Aktivitäten werden zum Zeitpunkt ihrer Veröffentlichung mit der AEM-Veröffentlichungsinstanz synchronisiert.
 
-## Fehlerbehebung bei der Aktivitätssynchronisierung      {#troubleshooting-activity-synchronization}
+## Fehlerbehebung bei der Aktivitätssynchronisierung {#troubleshooting-activity-synchronization}
 
 Bei der Synchronisierung von Aktivitäten mit Adobe Target durch AEM fügt AEM eine Eigenschaft mit der Bezeichnung `thirdPartyId` hinzu. Der Wert dieser Eigenschaft basiert auf dem Aktivitätenpfad im AEM-Verzeichnis. In Adobe Target dürfen unterschiedliche Kampagnen für `thirdPartyId` keinesfalls denselben Wert aufweisen. Somit schlägt die Synchronisierung von Aktivitäten fehl, wenn eine bestehende Kampagne (mit einem anderen Aktivitätstyp A/B, XT) in Adobe Target über denselben Wert für `thirdPartyId` verfügt.
 
