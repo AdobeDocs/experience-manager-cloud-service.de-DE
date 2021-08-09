@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2020.3.0
 description: Versionshinweise für Version 2020.3.0
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
 ht-degree: 100%
 
