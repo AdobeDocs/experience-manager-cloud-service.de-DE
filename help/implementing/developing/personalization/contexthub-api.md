@@ -1,9 +1,9 @@
 ---
-title: 'Referenz zur ContextHub-JavaScript-API '
-description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde
+title: Referenz zur ContextHub-JavaScript-API
+description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4621'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei Con
 | `ContextHub.Constants.PERSISTENCE_CONTAINER_NAME` | Name des Persistenz-Containers | `ContextHubPersistence` |
 | `ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY` | Speichert den spezifischen Namen des Persistenzschlüssels, wenn das unformatierte JSON-Ergebnis gespeichert wird | `/_/raw-response` |
 | `ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY` | Speichert einen bestimmten Zeitstempel, der angibt, wann JSON-Daten abgerufen wurden | `/_/response-time` |
-| `ContextHub.Constants.SERVICE_LAST_URL_KEY` | Speichert spezifische URL des JSON-Diensts, der beim letzten Aufruf verwendet wurde | `/_/url` |
+| `ContextHub.Constants.SERVICE_LAST_URL_KEY` | Speichert spezifische URL des JSON-Service, der beim letzten Aufruf verwendet wurde | `/_/url` |
 | `ContextHub.Constants.IS_CONTAINER_EXPANDED` | Gibt an, ob die Benutzeroberfläche von ContextHub erweitert ist | `/_/container-expanded` |
 
 ### Benutzeroberflächen-Ereigniskonstanten {#ui-event-constants}
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind die Namen der Ereignisse aufgeführt, die für die
 
 Das ContextHub-Objekt bietet Zugriff auf alle Stores.
 
-### Funktionen (ContextHub)  {#functions-contexthub}
+### Funktionen (ContextHub) {#functions-contexthub}
 
 #### getAllStores() {#getallstores}
 
@@ -87,7 +87,7 @@ var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
-#### getStore(name)   {#getstore-name}
+#### getStore(name) {#getstore-name}
 
 Ruft einen Store als ein JavaScript-Objekt ab.
 
@@ -107,7 +107,7 @@ Im folgenden Beispiel wird der Geolocation-Store abgerufen:
 var geoloc = ContextHub.getStore("geolocation");
 ```
 
-## ContextHub.SegmentEngine.Segment   {#contexthub-segmentengine-segment}
+## ContextHub.SegmentEngine.Segment {#contexthub-segmentengine-segment}
 
 Stellt ein ContextHub-Segment dar. Verwenden Sie `ContextHub.SegmentEngine.SegmentManager`, um Segmente zu erhalten.
 
@@ -117,7 +117,7 @@ Stellt ein ContextHub-Segment dar. Verwenden Sie `ContextHub.SegmentEngine.Segme
 
 Gibt den Namen des Segments als Stringwert zurück.
 
-#### getPath()  {#getpath}
+#### getPath() {#getpath}
 
 Gibt den Repository-Pfad der Segmentdefinition als String-Wert zurück.
 
@@ -125,7 +125,7 @@ Gibt den Repository-Pfad der Segmentdefinition als String-Wert zurück.
 
 Bietet Zugriff auf ContextHub-Segmente.
 
-### Funktionen (ContextHub.SegmentEngine.SegmentManager)   {#functions-contexthub-segmentengine-segmentmanager}
+### Funktionen (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
 #### getResolvedSegments() {#getresolvedsegments}
 
@@ -197,7 +197,7 @@ Ein `boolean`-Wert:
 
 Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Parameter und gibt keinen Wert zurück.
 
-#### clean()  {#clean}
+#### clean() {#clean}
 
 Entfernt alle Daten aus dem Store. Die Funktion hat keine Parameter und keinen Rückgabewert.
 
@@ -213,7 +213,7 @@ Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
 Ein Objekt, das den Wert für den Schlüssel darstellt.
 
-#### getKeys(includeInternals)   {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Ruft die Schlüssel aus dem Store ab. Optional können Sie die Schlüssel abrufen, die intern vom ContextHub-Framework verwendet werden.
 
@@ -326,7 +326,7 @@ Anfangswerte werden in der `initialValues`-Eigenschaft des config-Objekts bereit
 
 * **`keepRemainingData`**: (Boolesch) Ein Wert „true“ bewirkt, dass nicht-initial-Daten beibehalten werden. Der Wert „false“ bewirkt, dass alle Daten mit Ausnahme der Anfangswerte entfernt werden.
 
-#### resolveReference(key, retry)   {#resolvereference-key-retry}
+#### resolveReference(key, retry) {#resolvereference-key-retry}
 
 Ruft einen referenzierten Schlüssel ab. Optional können Sie die Anzahl der Iterationen angeben, die zum Lösen der besten Übereinstimmung verwendet werden sollen.
 
@@ -367,7 +367,7 @@ Ein `boolean`-Wert:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Ein Store, der JSON-Daten enthält. Die Daten werden von einem externen JSONP-Dienst oder optional von einem Dienst abgerufen, der JSON-Daten zurückgibt. Geben Sie die Details des Diensts mithilfe der [`init`](#init-name-config)-Funktion an, wenn Sie eine Instanz dieser Klasse erstellen.
+Ein Store, der JSON-Daten enthält. Die Daten werden von einem externen JSONP-Service oder optional von einem Service abgerufen, der JSON-Daten zurückgibt. Geben Sie die Details des Service mithilfe der [`init`](#init-name-config)-Funktion an, wenn Sie eine Instanz dieser Klasse erstellen.
 
 Der Store verwendet die speicherinterne Persistenz (JavaScript-Variable). Storedaten sind nur während der Lebensdauer der Seite verfügbar.
 
@@ -377,7 +377,7 @@ ContextHub.Store.JSONPStore erweitert [ContextHub.Store.Core](#contexthub-store-
 
 #### configureService(serviceConfig, override) {#configureservice-serviceconfig-override}
 
-Konfiguriert die Details für die Verbindung mit dem JSONP-Dienst, den dieses Objekt verwendet. Sie können entweder die vorhandene Konfiguration aktualisieren oder ersetzen. Die Funktion gibt keinen Wert zurück.
+Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses Objekt verwendet. Sie können entweder die vorhandene Konfiguration aktualisieren oder ersetzen. Die Funktion gibt keinen Wert zurück.
 
 ##### Parameter {#parameters-configureservice}
 
@@ -385,35 +385,35 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Dienst, den dieses Ob
    * `host`: (String) Server-Name oder IP-Adresse.
    * `jsonp`: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
    * `params`: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
-   * `path`: (String) Der Pfad zum Dienst.
-   * `port`: (Number) Die Port-Nummer des Dienstes.
+   * `path`: (String) Der Pfad zum Service.
+   * `port`: (Number) Die Port-Nummer des Service.
    * `secure`: (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
       * `auto`: //
       * `true`: https://
       * `false`: http://
-* **override:** (Boolesch). Ein Wert `true` bewirkt, dass die vorhandene Dienstkonfiguration durch die Eigenschaften von `serviceConfig` ersetzt wird. Der Wert `false` bewirkt, dass die vorhandenen Dienstkonfigurationseigenschaften mit den Eigenschaften von `serviceConfig` zusammengeführt werden.
+* **override:** (Boolesch). Ein Wert `true` bewirkt, dass die vorhandene Service-Konfiguration durch die Eigenschaften von `serviceConfig` ersetzt wird. Der Wert `false` bewirkt, dass die vorhandenen Service-Konfigurationseigenschaften mit den Eigenschaften von `serviceConfig` zusammengeführt werden.
 
 #### getRawResponse() {#getrawresponse}
 
-Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Dienstes zwischengespeichert wurde. Die Funktion erfordert keine Parameter.
+Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Service zwischengespeichert wurde. Die Funktion erfordert keine Parameter.
 
 ##### Rückgabe {#returns-getrawresponse}
 
 Ein Objekt, das die unbearbeitete Antwort darstellt.
 
-#### getServiceDetails()  {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
-Ruft das Dienstobjekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Dienstobjekt enthält alle Informationen, die zum Erstellen der Service-URL erforderlich sind.
+Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das Service-Objekt enthält alle Informationen, die zum Erstellen der Service-URL erforderlich sind.
 
 ##### Rückgabe {#returns-getservicedetails}
 
 Ein Objekt mit den folgenden Eigenschaften:
 
 * **`host`:** (String) Server-Name oder IP-Adresse.
-* **`jsonp`:** (Boolesch) Ein Wert „true“ zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er false. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
+* **`jsonp`:** (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
 * **`params`:** (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
-* **`path`:** (String) Der Pfad zum Dienst.
-* **`port`:** (Number) Die Port-Nummer des Dienstes.
+* **`path`:** (String) Der Pfad zum Service.
+* **`port`:** (Number) Die Port-Nummer des Service.
 * **`secure`:** (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
    * `auto`: //
    * `true`: https://
@@ -421,7 +421,7 @@ Ein Objekt mit den folgenden Eigenschaften:
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
-Ruft die URL des JSONP-Dienstes ab.
+Ruft die URL des JSONP-Service ab.
 
 ##### Parameter {#parameters-getserviceurl}
 
@@ -429,7 +429,7 @@ Ruft die URL des JSONP-Dienstes ab.
 
 ##### Rückgabe {#returns-getserviceurl}
 
-Ein `string`-Wert, der die Dienst-URL darstellt.
+Ein `string`-Wert, der die Service-URL darstellt.
 
 #### init(name, config) {#init-name-config-1}
 
@@ -446,28 +446,28 @@ initialisiert das `ContextHub.Store.JSONPStore`-Objekt.
       * `host`: (String) Server-Name oder IP-Adresse.
       * `jsonp`: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
       * `params`: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen und Werte sind jeweils die Namen und Werte der Objekteigenschaften.
-      * `path`: (String) Der Pfad zum Dienst.
-      * `port`: (Number) Die Port-Nummer des Dienstes.
+      * `path`: (String) Der Pfad zum Service.
+      * `port`: (Number) Die Port-Nummer des Service.
       * `secure`: (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
          * `auto`: //
          * `true`: https://
          * `false`: http://
-      * `timeout`: (Number) Die Zeitspanne, die gewartet wird, bis der JSONP-Dienst vor Ablauf der Zeit reagiert (in Millisekunden).
-         * `ttl`: Die Mindestdauer in Millisekunden, die zwischen Aufrufen an den JSONP-Dienst vergeht. (Siehe [queryService](#queryservice-reload) Funktion).
+      * `timeout`: (Number) Die Zeitspanne, die gewartet wird, bis der JSONP-Service vor Ablauf der Zeit reagiert (in Millisekunden).
+         * `ttl`: Die Mindestdauer in Millisekunden, die zwischen Aufrufen an den JSONP-Service vergeht. (Siehe [queryService](#queryservice-reload) Funktion).
 
-#### queryService(reload)   {#queryservice-reload}
+#### queryService(reload) {#queryservice-reload}
 
-Fragt den Remote-JSONP-Dienst ab und speichert die Antwort zwischen. Wenn die Zeit seit dem letzten Aufruf dieser Funktion kleiner als der Wert von `config.service.ttl` ist, wird der Dienst nicht aufgerufen und die zwischengespeicherte Antwort wird nicht geändert. Optional können Sie einen Aufruf des Diensts erzwingen. Die Eigenschaft `config.service.ttl` wird festgelegt, wenn die [init](#init-name-config)-Funktion aufgerufen wird, um den Store zu initialisieren.
+Fragt den Remote-JSONP-Service ab und speichert die Antwort zwischen. Wenn die Zeit seit dem letzten Aufruf dieser Funktion kleiner als der Wert von `config.service.ttl` ist, wird der Service nicht aufgerufen und die zwischengespeicherte Antwort wird nicht geändert. Optional können Sie einen Aufruf des Service erzwingen. Die Eigenschaft `config.service.ttl` wird festgelegt, wenn die [init](#init-name-config)-Funktion aufgerufen wird, um den Store zu initialisieren.
 
 Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Service-URL nicht festgelegt ist, führt die Funktion nichts aus.
 
 ##### Parameter {#parameters-queryservice}
 
-* **`reload`:** (Boolesch) Ein Wert „true“ entfernt die zwischengespeicherte Antwort und erzwingt den Aufruf des JSONP-Dienstes.
+* **`reload`:** (Boolesch) Ein Wert „true“ entfernt die zwischengespeicherte Antwort und erzwingt den Aufruf des JSONP-Service.
 
 #### Zurücksetzen {#reset}
 
-Setzt die Anfangswerte der persistenten Daten des Stores zurück und ruft dann den JSONP-Dienst auf. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während die Anfangswerte zurückgesetzt werden. Diese Funktion gibt keinen Wert zurück.
+Setzt die Anfangswerte der persistenten Daten des Stores zurück und ruft dann den JSONP-Service auf. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während die Anfangswerte zurückgesetzt werden. Diese Funktion gibt keinen Wert zurück.
 
 Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Storeobjekts verwendet wird.
 
@@ -475,27 +475,27 @@ Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitge
 
 * **`keepRemainingData`:** (Boolesch) Ein Wert „true“ bewirkt, dass nicht-initial-Daten beibehalten werden. Der Wert „false“ bewirkt, dass alle Daten mit Ausnahme der Anfangswerte entfernt werden.
 
-#### resolveParameter(f)   {#resolveparameter-f}
+#### resolveParameter(f) {#resolveparameter-f}
 
 Löst den angegebenen Parameter auf.
 
-## ContextHub.Store.PersistedJSONPStore   {#contexthub-store-persistedjsonpstore}
+## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Dienst abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` erweitert [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten, die vom JSONP-Service abgerufen werden, bleiben jedoch gemäß der Konfiguration der ContextHub-Persistenz bestehen. (Siehe [Persistenzmodi:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
 `ContextHub.Store.PersistedStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden gemäß der Konfiguration der ContextHub-Persistenz beibehalten.
 
-## ContextHub.Store.SessionStore   {#contexthub-store-sessionstore}
+## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
 `ContextHub.Store.SessionStore` erweitert [ContextHub.Store.Core](#contexthub-store-core) so, dass es alle Funktionen dieser Klasse übernimmt. Die Daten in diesem Store werden mithilfe der speicherinternen Persistenz beibehalten (JavaScript-Objekt).
 
-## ContextHub.UI   {#contexthub-ui}
+## ContextHub.UI {#contexthub-ui}
 
-Verwaltet Benutzeroberflächenmodule und Benutzeroberflächenmodulrenderer.
+Verwaltet Benutzeroberflächenmodule und Benutzeroberflächenmodul-Renderer.
 
-### Funktionen (ContextHub.UI)   {#functions-contexthub-ui}
+### Funktionen (ContextHub.UI) {#functions-contexthub-ui}
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
@@ -517,9 +517,9 @@ ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer(
 
 ## ContextHub.Utils.Cookie {#contexthub-utils-cookie}
 
-Eine Dienstprogrammklasse für die Interaktion mit Cookies.
+Eine Service-Programmklasse für die Interaktion mit Cookies.
 
-### Funktionen (ContextHub.Utils.Cookie)   {#functions-contexthub-utils-cookie}
+### Funktionen (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
 #### exists(key) {#exists-key}
 
@@ -663,7 +663,7 @@ Entfernt alle Cookies, die einem gegebenen Filter entsprechen. Cookies werden mi
 
 Diese Funktion gibt keinen Wert zurück.
 
-## ContextHub.Utils.Eventing   {#contexthub-utils-eventing}
+## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
 Ermöglicht es Ihnen, Funktionen an ContextHub-Store-Ereignisse zu binden und zu lösen. Greifen Sie auf `ContextHub.Utils.Eventing`-Objekte für einen Store zu, der die [eventing](#eventing)-Eigenschaft des Stores verwendet.
 
@@ -682,7 +682,7 @@ Löst eine Funktion von einem Ereignis.
 
 Diese Funktion gibt keinen Wert zurück.
 
-#### on(name, handler, selector, triggerForPastEvents)   {#on-name-handler-selector-triggerforpastevents}
+#### on(name, handler, selector, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
 
 Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, wenn das Ereignis eintritt. Optional kann die Funktion für Ereignisse aufgerufen werden, die in der Vergangenheit stattgefunden haben, bevor die Bindung eingerichtet wird.
 
@@ -744,9 +744,9 @@ Wenn `triggerForPastEvents` den Wert `false` ergibt, gibt diese Funktion keinen 
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
-Eine Dienstprogrammklasse, mit der ein Objekt die Eigenschaften und Methoden eines anderen Objekts übernehmen kann.
+Eine Service-Programmklasse, mit der ein Objekt die Eigenschaften und Methoden eines anderen Objekts übernehmen kann.
 
-### Funktionen (ContextHub.Utils.inheritance)   {#functions-contexthub-utils-inheritance}
+### Funktionen (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 
 #### inherit(child, parent) {#inherit-child-parent}
 
@@ -761,7 +761,7 @@ Bewirkt, dass ein Objekt die Eigenschaften und Methoden eines anderen Objekts ü
 
 Stellt Funktionen zum Serialisieren von Objekten im JSON-Format und zum Deserialisieren von JSON-Strings in Objekten bereit.
 
-### Funktionen (ContextHub.Utils.JSON)   {#functions-contexthub-utils-json}
+### Funktionen (ContextHub.Utils.JSON) {#functions-contexthub-utils-json}
 
 #### parse(data) {#parse-data}
 
@@ -827,7 +827,7 @@ Rückgabe:
 
 Diese Klasse erleichtert die Manipulation von Datenobjekten, die gespeichert oder aus ContextHub-Stores abgerufen werden.
 
-### Funktionen (ContextHub.Utils.JSON.tree)   {#functions-contexthub-utils-json-tree}
+### Funktionen (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
 #### addAllItems() {#addallitems}
 
@@ -842,7 +842,7 @@ Erstellt eine Kopie eines Datenobjekts und fügt die Datenstruktur aus einem zwe
 
 Ein Objekt, das die zusammengeführten Daten enthält.
 
-#### cleanup()  {#cleanup}
+#### cleanup() {#cleanup}
 
 Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruktur, die keine Werte, Nullwerte oder undefinierten Werte enthalten, und gibt die Kopie zurück.
 
@@ -854,7 +854,7 @@ Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruk
 
 Eine Kopie der Struktur, die bereinigt wird.
 
-#### getItem()  {#getitem}
+#### getItem() {#getitem}
 
 Ruft den Wert eines Objekts für den a-Schlüssel ab.
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys()  {#getkeys}
+#### getKeys() {#getkeys}
 
 Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können optional auch eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
@@ -1001,7 +1001,7 @@ myObject {
 }
 ```
 
-#### sanitizeKey(key)   {#sanitizekey-key}
+#### sanitizeKey(key) {#sanitizekey-key}
 
 Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um einen String zu bereinigen, führt diese Funktion die folgenden Aktionen aus:
 
@@ -1068,9 +1068,9 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ## ContextHub.Utils.storeCandidates {#contexthub-utils-storecandidates}
 
-Ermöglicht es Ihnen, Storekandidaten zu registrieren und registrierte Storekandidaten zu erhalten.
+Ermöglicht es Ihnen, Store-Kandidaten zu registrieren und registrierte Store-Kandidaten zu erhalten.
 
-### Funktionen (ContextHub.Utils.storeCandidates)   {#functions-contexthub-utils-storecandidates}
+### Funktionen (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
 #### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
@@ -1084,7 +1084,7 @@ Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Sie kö
 
 Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Storetyps, und die Eigenschaftswerte sind ein Array von registrierten Storekandidaten.
 
-#### getStoreFromCandidates(storeType)   {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein Store-Typ mit demselben Namen erneut registriert wird, gibt die Funktion den Store-Typ mit der höchsten Priorität zurück.
 
@@ -1096,7 +1096,7 @@ Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein
 
 Ein Objekt, das den registrierten Storekandidaten darstellt. Wenn der angeforderte Storetyp nicht registriert ist, wird ein Fehler ausgelöst.
 
-#### getSupportedStoreTypes()  {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion erfordert keine Parameter.
 
