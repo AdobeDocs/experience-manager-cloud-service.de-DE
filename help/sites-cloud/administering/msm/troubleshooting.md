@@ -54,7 +54,7 @@ Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Reposit
 
 * `select * from cq:LiveSync` gibt als Ergebnis alle Live Copy-Stammseiten zurück.
 
-## Häufig gestellte Fragen (FAQ)  {#faq}
+## Häufig gestellte Fragen (FAQ) {#faq}
 
 Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
