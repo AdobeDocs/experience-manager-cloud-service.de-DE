@@ -3,7 +3,7 @@ title: Komponentenkonsole
 description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Auf sie kann über **Tools** > **Allgemein** > **Komponenten** zugegriffen werde
 
 ## Suche {#search-field}
 
-Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern: 
+Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern:
 
 ![Suchen in der Komponentenkonsole](/help/sites-cloud/authoring/assets/components-console-search.png)
 
@@ -57,7 +57,7 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
 
    >[!CAUTION]
    >
-   >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird. 
+   >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird.
 
 * **Dokumentation**
 
