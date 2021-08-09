@@ -1,12 +1,12 @@
 ---
 title: URLs mit Ihrer Webanwendung verknüpfen
-description: Erfahren Sie, wie Sie URLs in Dynamic Media mit Ihrer Webanwendung verknüpfen.
+description: Erfahren Sie, wie Sie in Dynamic Media URLs mit einem Web-Programm verknüpfen.
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 63%
+ht-degree: 74%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 63%
 
 Ihre Websites und Programme greifen über URL-Aufrufe auf Dynamic Media-Services zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
 
-Sie verknüpfen nur dann zu URLs, wenn Sie *nicht* Adobe Experience Manager als WCM verwenden. Die Verknüpfung - im Gegensatz zur Einbettung - wird verwendet, wenn Sie einen Videoplayer als Popup- oder modales Fenster bereitstellen möchten. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
+Sie verknüpfen nur dann zu URLs, wenn Sie Adobe Experience Manager *nicht* als Ihren WCM verwenden. Die Verknüpfung – im Gegensatz zur Einbettung – wird verwendet, wenn Sie einen Video-Player als Popup oder modales Fenster übermitteln möchten. Wenn Sie Adobe Experience Manager als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
 
 Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platzieren, müssen Sie sie aus Dynamic Media kopieren.
 
@@ -116,7 +116,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für eine veröffentlichte Videoausgabedarstellung {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Navigieren Sie in Adobe Experience Managerzu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und wählen Sie dann **[!UICONTROL Konfigurationen anzeigen]** aus.
 1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration aus.
 
@@ -126,7 +126,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (Der obige Pfad dient nur zu Erklärungszwecken. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
 1. Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID.
 
@@ -139,7 +139,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (Der obige Pfad dient nur zu Erklärungszwecken. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
 1. Um einen vollständigen URL-Pfad zu erstellen, ordnen Sie die kopierten Informationen in der folgenden Reihenfolge an:
 
@@ -153,7 +153,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für adaptives Streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Navigieren Sie in Adobe Experience Managerzu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und wählen Sie dann **[!UICONTROL Konfigurationen anzeigen]** aus.
 1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration aus.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
@@ -162,7 +162,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (Der obige Pfad dient nur zu Erklärungszwecken. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
    * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später bei diesen Schritten.
 
@@ -188,7 +188,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
     </tbody>
    </table>
 
-1. Kopieren Sie den vollständigen Video-Asset-Pfad in Experience Manager, wie von Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.
+1. Kopieren Sie den vollständigen Video-Asset-Pfad in Adobe Experience Manager, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.
 
    Beispiel:
 
