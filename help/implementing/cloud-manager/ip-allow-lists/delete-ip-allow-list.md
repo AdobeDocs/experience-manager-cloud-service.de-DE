@@ -3,7 +3,7 @@ title: 'Löschen einer IP-Zulassungsliste '
 description: Löschen einer IP-Zulassungsliste
 exl-id: 34414915-0078-4acb-94df-b84043ce63d8
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '83'
 ht-degree: 100%
 
