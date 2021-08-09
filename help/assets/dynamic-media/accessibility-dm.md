@@ -18,7 +18,7 @@ ht-degree: 95%
 
 Dynamic Media unterstützt Tastatursteuerungs- und Hilfstechnologien wie JAWS- und NVDA-Bildschirmlesehilfen in der Authoring-Benutzeroberfläche.
 
-## Unterstützung der Tastaturbedienung in Dynamic Media   {#keyboard-support-in-dm}
+## Unterstützung der Tastaturbedienung in Dynamic Media {#keyboard-support-in-dm}
 
 Da Dynamic Media ein Plug-in für [!DNL Experience Manager Assets] ist, ist der Großteil des Tastatursteuerungsverhaltens mit dem von [!DNL Experience Manager Assets] identisch. Beispielsweise verfügt die Schaltfläche `Cancel` in Dynamic Media über dieselbe Fokushervorhebung wie in [!DNL Experience Manager Assets]. Sie reagiert auch auf den `Spacebar`-Schlüssel wie in [!DNL Experience Manager Assets]. Weitere Informationen finden Sie in [Tastaturbefehle in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
