@@ -62,10 +62,10 @@ Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automa
 
 Erstellen Sie einen Sprachstamm als Stammseite einer Sprachkopie, die die Sprache der Inhalte identifiziert. Nachdem Sie den Sprachstamm erstellt haben, können Sie Übersetzungsprojekte erstellen, die die Sprachkopie umfassen.
 
-Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie einen ISO-Sprachcode als Wert für die Eigenschaft **Name**. Der Sprachcode muss eines der folgenden Formate aufweisen:
+Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie einen ISO-Sprach-Code als Wert für die Eigenschaft **Name**. Der Sprach-Code muss eines der folgenden Formate aufweisen:
 
-* `<language-code>` - Der unterstützte Sprachcode ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
-* `<language-code>_<country-code>` oder `<language-code>-<country-code>` – Der unterstützte Ländercode ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, zum Beispiel `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - Der unterstützte Sprach-Code ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
+* `<language-code>_<country-code>` oder `<language-code>-<country-code>` – Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, zum Beispiel `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Beachten Sie, dass die Eigenschaft **Name** als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -76,7 +76,7 @@ Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen 
    ![Seite erstellen](../assets/create-page.png)
 
 1. Wählen Sie die Seitenvorlage aus und klicken oder tippen Sie auf **Weiter**.
-1. Geben Sie in den Feldtyp **Name** den Ländercode im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
+1. Geben Sie in den Feldtyp **Name** den Länder-Code im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![Sprachstammseite erstellen](../assets/create-language-root.png)
 
@@ -88,7 +88,7 @@ AEM hat eine Leiste **Verweise**, die eine Liste der erstellten Sprachstämme an
 
 ![Sprachstämme](../assets/language-roots.png)
 
-Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe der [Leistenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) anzuzeigen.
+Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe der [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) anzuzeigen.
 
 1. Wählen Sie in der Sites-Konsole eine Seite der Website aus und klicken oder tippen Sie auf **Verweise**.
 
@@ -134,8 +134,10 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
-> Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
+> 
+Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
 
 >[!TIP]
 >
