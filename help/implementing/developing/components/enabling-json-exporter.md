@@ -13,7 +13,7 @@ ht-degree: 97%
 
 Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 
@@ -22,7 +22,7 @@ Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JS
 * [Definieren eines Sling-Modells für die Komponente](#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
 
-## Definieren eines Sling-Modells für die Komponente   {#define-a-sling-model-for-the-component}
+## Definieren eines Sling-Modells für die Komponente {#define-a-sling-model-for-the-component}
 
 Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
