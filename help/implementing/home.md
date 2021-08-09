@@ -5,40 +5,40 @@ exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
-# Implementieren von Anwendungen für AEM as a Cloud Service {#aem-implementation-guide}
+# Implementieren von Programmen für AEM as a Cloud Service {#aem-implementation-guide}
 
 Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zur Implementierung für Experience Manager as a Cloud Service. Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können.
 
 ## Wichtige Artikel zur Implementierung {#key-articles}
 
 * [Verwalten Ihrer Umgebungen mit Cloud Manager](cloud-manager/manage-environments.md)
-* [Bereitstellen von AEM als Cloud Service](deploying/overview.md)
+* [Bereitstellen in AEM as a Cloud Service](deploying/overview.md)
 * [Entwickeln für AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-* [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md)
+* [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md)
 * [Dispatcher für AEM as a Cloud Service](dispatcher/overview.md)
 
-## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
+| [Überblick](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von Experience Manager as a Cloud Service, einschließlich der Architektur des neuen Service. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mit AEM leistungsstarken Funktionen erstellen und anpassen können. |
-| [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) | Entdecken Sie diese geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mit den effektiven Funktionen von AEM erstellen und anpassen können. |
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie diese geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
-| [Commerce-Benutzerhandbuch](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM as a Cloud Service. |
+| [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM as a Cloud Service. |
 
 ## Weitere Experience Manager-Ressourcen {#other-resources}
 
