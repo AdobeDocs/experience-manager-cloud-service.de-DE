@@ -1,13 +1,13 @@
 ---
 title: Informationen zu Dynamic Media – Bild- und Videoprofile
 description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche Optionen auf Assets angewendet werden sollen, die Sie in einen Ordner hochladen. Sie können beispielsweise angeben, welche Videokodierung auf hochgeladene Dynamic Media-Video-Assets angewendet werden soll. Alternativ können Sie angeben, welches Bildprofil auf Dynamic Media-Bild-Assets angewendet werden soll, damit sie passend zugeschnitten werden.
-feature: Asset-Management, Bildprofile, Videoprofile
+feature: Asset-Management,Bildprofile,Videoprofile
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1270'
-ht-degree: 75%
+ht-degree: 79%
 
 ---
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows (optional) {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Das Verarbeitungsbanner bleibt also länger bei [!DNL Experience Manager]-Assets. Wenn die durchschnittliche Dateigröße jedoch kleiner als 1 MB oder kleiner ist, empfiehlt es sich, den Wert auf mehrere 100 zu erhöhen, jedoch nie mehr als 1000. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Stapelgröße auf 10 zu verringern.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die MIME-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Das Verarbeitungsbanner bleibt also länger bei [!DNL Experience Manager]-Assets. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße mehrere Hundert Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows:**
 
