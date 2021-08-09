@@ -1,5 +1,5 @@
 ---
-title: 'JSON-Exporter für Content Services '
+title: JSON-Exporter für Content Services
 description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
@@ -9,19 +9,19 @@ ht-degree: 98%
 
 ---
 
-# JSON-Exporter für Content Services   {#json-exporter-for-content-services}
+# JSON-Exporter für Content Services {#json-exporter-for-content-services}
 
 AEM Content Services sollen die Beschreibung und Bereitstellung von Inhalten in/aus AEM über den Fokus von Websites hinaus verallgemeinern.
 
 Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können. Diese Kanäle können Folgendes sein:
 
-* Single Page Applications
+* Single Page Applications (SPA)
 * native Mobile Apps
 * Andere Kanäle und Touchpoints außerhalb von AEM
 
 Über Inhaltsfragmente, die strukturierte Inhalte verwenden, können Sie Content Services zur Verfügung stellen, indem Sie die Inhalte mit JSON Exporter auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-## JSON Exporter mit Inhaltsfragment-Kernkomponenten   {#json-exporter-with-content-fragment-core-components}
+## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
