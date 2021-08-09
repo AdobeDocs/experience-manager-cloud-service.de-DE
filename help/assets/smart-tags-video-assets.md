@@ -1,13 +1,13 @@
 ---
 title: Tagging von Video-Assets mit Smart-Tags
 description: Experience Manager fügt Videos mit [!DNL Adobe Sensei] automatisch kontextbezogene und beschreibende Smart-Tags hinzu.
-feature: Smart-Tags, Tagging
+feature: Smart-Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
