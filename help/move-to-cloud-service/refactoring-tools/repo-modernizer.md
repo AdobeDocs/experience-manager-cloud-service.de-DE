@@ -5,7 +5,7 @@ exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der Repository Modernizer erstellt eine kompatible AEM Cloud Service-Projektstru
 
 * Das `ui.apps`-Paket wird unter `/apps` bereitgestellt und enthält den gesamten Code.
 
-* `ui.content` Das -Paket wird in Laufzeitbereichen (z. B.  `/content`,  `/conf`,  `/home`oder alles, was nicht  `/apps`) und enthält alle Inhalte und Konfigurationen.
+* Das `ui.content`-Package wird in zur Laufzeit beschreibbare Bereichen bereitgestellt (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) und enthält alle Inhalte und Konfigurationen.
 
 * Das `all`-Paket ist ein Container-Paket, das die Unterpakete `ui.apps` und `ui.content`enthält.
 
