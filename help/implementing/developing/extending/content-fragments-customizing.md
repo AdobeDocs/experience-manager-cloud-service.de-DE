@@ -5,11 +5,11 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
-# Anpassen und Erweitern von Inhaltsfragmenten {#customizing-and-extending-content-fragments}
+# Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
 
 In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein Standard-Asset. Siehe:
 
@@ -75,7 +75,7 @@ z. B. `jcr:content/data/myvariation`
 * Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
 `jcr:content`
 
-#### Asset-Speicherort  {#asset-location}
+#### Asset-Speicherort {#asset-location}
 
 Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
@@ -164,7 +164,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-server-side}
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -174,7 +174,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 >
 >Es wird dringend empfohlen, die Server-seitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen   {#key-interfaces}
+### Hauptschnittstellen {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -234,7 +234,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()   {#adapting-using-adaptto}
+### Anpassen mit adaptTo() {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -266,7 +266,7 @@ Beachten Sie Folgendes:
 
    * Durch das Entfernen vorhandener Varianten eines Elements mithilfe von `ContentElement.removeVariation()` werden die der Variante zugewiesenen globalen Datenstrukturen nicht aktualisiert. Verwenden Sie stattdessen `ContentFragment.removeVariation()`, um sicherzustellen, dass diese Datenstrukturen synchron bleiben, wodurch eine Variante global entfernt wird.
 
-## Client-seitige API für die Inhaltsfragmentverwaltung   {#the-content-fragment-management-api-client-side}
+## Client-seitige API für die Inhaltsfragmentverwaltung {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -293,7 +293,7 @@ Eine Bearbeitungssitzung wird gestartet, wenn der Benutzer ein Inhaltsfragment i
 Technisch gesehen werden alle Änderungen an *Live*-Inhalten wie bei allen anderen AEM-Bearbeitungen vorgenommen. Beim Starten der Bearbeitungssitzung wird eine Version des aktuellen, nicht bearbeiteten Status erstellt. Wenn ein Benutzer eine Bearbeitung abbricht, wird diese Version wiederhergestellt. Wenn der Benutzer auf **Speichern** klickt, wird nichts Bestimmtes ausgeführt, da die Bearbeitung an *Live*-Inhalten ausgeführt wurde. Daher bleiben alle Änderungen bereits erhalten. Durch Klicken auf **Speichern** wird auch eine Hintergrundverarbeitung ausgelöst (z. B. das Erstellen von Volltextsuchinformationen und/oder das Bearbeiten von gemischten Medien-Assets).
 
 Es gibt einige Sicherheitsmaßnahmen für Randfälle, beispielsweise, wenn der Benutzer versucht, den Editor zu verlassen, ohne die Bearbeitungssitzung zu speichern oder abzubrechen. Außerdem ist eine regelmäßige automatische Speicherung verfügbar, um Datenverluste zu vermeiden.
-Beachten Sie, dass zwei Benutzer möglicherweise dasselbe Inhaltsfragment gleichzeitig bearbeiten und daher die Änderungen der anderen Benutzer überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Checkout* der DAM-Verwaltung auf das Fragment angewendet wird.
+Beachten Sie, dass zwei Benutzer gleichzeitig dasselbe Inhaltsfragment bearbeiten können und daher die Änderungen des anderen überschreiben können. Um dies zu verhindern, muss das Inhaltsfragment gesperrt werden, indem die Aktion *Checkout* der DAM-Administration auf das Fragment angewendet wird.
 
 ## Beispiele {#examples}
 
@@ -315,7 +315,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments   {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments {#example-creating-a-new-content-fragment}
 
 Um programmgesteuert ein neues Inhaltsfragment zu erstellen, verwenden Sie eine `FragmentTemplate`, die von einer Modellressource angepasst wurde.
 
@@ -327,7 +327,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern   {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern {#example-specifying-the-auto-save-interval}
 
 Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
