@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 84%
    + [AEM als Cloud Service-Team und Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe-Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Erste Schritte mit AEM as a Cloud Service {#what-is-required}
-   + [Adobe ID herunterladen](what-is-required/get-your-adobe-id.md)
+   + [Anfordern der Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager-Rollen](what-is-required/user-roles-permissions.md)
-   + [Aufgaben des Systemadministrators](what-is-required/add-users-assign-cm-roles.md)
+   + [Systemadministratoraufgaben](what-is-required/add-users-assign-cm-roles.md)
    + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
-   + [Gewähren des Benutzerzugriffs auf eine AEM Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Gewähren des Benutzerzugriffs auf eine AEM-Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Einhaltung von Datenschutzbestimmungen {#data-privacy}
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
    + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
