@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
 ## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wird. Diese Funktion ermöglicht schnellere Downloads. Die großen Dateien werden asynchron heruntergeladen und [!DNL Experience Manager] benachrichtigt über Benachrichtigungen im Posteingang über den Abschluss. Siehe [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads. Große Dateien werden asynchron heruntergeladen und die Benutzer werden von [!DNL Experience Manager] über Benachrichtigungen im Posteingang über den Abschluss informiert. Siehe [Grundlegendes zum [!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Download-Benachrichtigung](assets/download-notification.png)
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
    *Abbildung: Optionen des Dialogfelds „Herunterladen“.*
 
-1. Wählen Sie im Dialogfeld &quot;Download&quot;die gewünschten Download-Optionen aus.
+1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
    | Download-Option | Beschreibung |
    |---|---|
@@ -100,7 +100,7 @@ Um das Herunterladen von Assets aus dem DAM zuzulassen, z. B. wenn Sie die Asset
 
 ## Deaktivieren des Asset-Download-Servlets {#disable-asset-download-servlet}
 
-Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, um DoS-ähnliche Risiken zu vermeiden. Das `Asset Download Servlet` kann in einer [!DNL Experience Manager] Autoren- und Veröffentlichungsinstanz deaktiviert werden, indem die Dispatcher-Konfiguration so aktualisiert wird, dass sie alle Asset-Download-Anfragen blockiert. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
+Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, um DoS-ähnliche Risiken zu vermeiden. Das `Asset Download Servlet` kann in einer [!DNL Experience Manager]-Autoren- und -Veröffentlichungsinstanz deaktiviert werden, indem die Dispatcher-Konfiguration so aktualisiert wird, dass sie alle Asset-Download-Anfragen blockiert. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
 
 1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring) eine neue Regel hinzu.
 
