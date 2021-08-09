@@ -85,7 +85,7 @@ Jedes neue AEM-Projekt ist immer an genau eine bestimmte Code-Basis gebunden, in
 
 Ein AEM-Programm ist der Container, der Folgendes enthält:
 
-|  Programmelement |  Nummer |
+|  Programmelement |  Zahl |
 |--- |--- |
 | Code-Repository (Git) |  1 |
 | Grundlinienbild (Sites oder Assets) |  1 |
