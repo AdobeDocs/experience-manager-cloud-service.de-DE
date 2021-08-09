@@ -26,7 +26,7 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 >
 >Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
 
-## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
+## Was sind Client-seitige Bibliotheken?  {#what-are-clientlibs}
 
 Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine Client-seitige Bibliothek ist ein Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
 
@@ -209,7 +209,7 @@ Sie können Code aus einer Client-Bibliothek in eine andere Client-Bibliothek ei
 
 Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermöglichen, die in sicheren Bereichen des Repositorys gespeichert sind.
 
-#### Anwendungsspezifische Client-Bibliotheksordner   {#app-specific-client-library-folders}
+#### Anwendungsspezifische Client-Bibliotheksordner {#app-specific-client-library-folders}
 
 Es gilt als Best Practice, alle Dateien, die zu einer Anwendung gehören, im Anwendungsordner unter `/app` abzulegen. Außerdem sollten Sie Website-Besuchern den Zugriff auf den Ordner `/app`verweigern. Um beide Best Practices einzuhalten, erstellen Sie einen Client-Bibliotheksordner unter dem Ordner `/etc`, der die Client-Bibliothek unter `/app` einbettet.
 
@@ -340,7 +340,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-#### Festlegen des Systemstandard-Minimierers   {#set-system-default-minifier}
+#### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
 YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
