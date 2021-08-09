@@ -1,23 +1,23 @@
 ---
 title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud Service mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
-feature: Inhaltsfragmente, GraphQL-API
+description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
+feature: Inhaltsfragmente,GraphQL-API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 78%
+ht-degree: 99%
 
 ---
 
 
 # AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten {#graphql-api-for-use-with-content-fragments}
 
-Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) als Cloud Service mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
+Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 
-AEM als Cloud Service-GraphQL-API, die mit Inhaltsfragmenten verwendet wird, basiert stark auf der standardmäßigen Open-Source-GraphQL-API.
+Die mit Inhaltsfragmenten verwendete GraphQL-API von AEM as a Cloud Service basiert stark auf der standardmäßigen Open-Source-GraphQL-API.
 
-Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung von Inhaltsfragmenten an JavaScript-Clients in Headless-CMS-Implementierungen:
+Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung von Inhaltsfragmenten an JavaScript-Clients in Headless CMS-Implementierungen:
 
 * Vermeiden von iterativen API-Anfragen wie bei REST,
 * Sicherstellen, dass die Bereitstellung auf die spezifischen Anforderungen beschränkt ist,
@@ -25,10 +25,10 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
->* [AEM Commerce nutzt Daten aus einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
->* AEM-Inhaltsfragmente arbeiten mit der AEM GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Programmen bereitzustellen.
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
 
 
 ## Die GraphQL-API {#graphql-api}
@@ -106,7 +106,7 @@ Sie können auch Folgendes ausführen:
 * [Persistente Abfragen, die zwischengespeichert werden](#persisted-queries-caching)
 
 >[!NOTE]
->Sie können GraphQL-Abfragen mit der [GraphiQL IDE](#graphiql-interface) testen und debuggen.
+>Zusätzlich können Sie GraphQL-Abfragen mit der [GraphiQL-IDE](#graphiql-interface) testen und debuggen.
 
 ## Der GraphQL-Endpunkt für AEM {#graphql-aem-endpoint}
 
@@ -116,41 +116,41 @@ Der Endpunkt ist der Pfad, der für den Zugriff auf GraphQL für AEM verwendet w
 * Ihre GraphQL-Abfragen senden,
 * Antworten (auf Ihre GraphQL-Abfragen) empfangen.
 
-Es gibt zwei Arten von Endpunkten in AEM:
+Es gibt zwei Arten von Endpunkten in AEMٔ:
 
 * Global
-   * Verfügbar für alle Sites.
+   * Verfügbar zur Verwendung durch alle Websites.
    * Dieser Endpunkt kann alle Inhaltsfragmentmodelle aus allen Sites-Konfigurationen verwenden (definiert im [Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
    * Wenn es Inhaltsfragmentmodelle gibt, die unter Sites-Konfigurationen freigegeben werden sollen, sollten diese unter den globalen Sites-Konfigurationen erstellt werden.
 * Sites-Konfigurationen:
    * Entspricht einer Sites-Konfiguration, wie im [Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) definiert.
-   * Spezifisch für eine bestimmte Site/ein bestimmtes Projekt.
-   * Ein konfigurationsspezifischer Endpunkt für Sites verwendet die Inhaltsfragmentmodelle aus dieser spezifischen Sites-Konfiguration zusammen mit denen aus der globalen Sites-Konfiguration.
+   * Spezifisch für eine bestimmte Website / ein bestimmtes Projekt.
+   * Ein für die Sites-Konfiguration spezifischer Endpunkt verwendet die Inhaltsfragmentmodelle aus dieser spezifischen Sites-Konfiguration zusammen mit denen aus der globalen Sites-Konfiguration.
 
 >[!CAUTION]
 >
 >Der Inhaltsfragment-Editor kann zulassen, dass ein Inhaltsfragment einer Sites-Konfiguration (über Richtlinien) auf ein Inhaltsfragment einer anderen Sites-Konfiguration verweist.
 >
->In diesem Fall können nicht alle Inhalte mithilfe eines Sites-Konfigurations-spezifischen Endpunkts abgerufen werden.
+>In diesem Fall können nicht alle Inhalte mithilfe eines für eine Sites-Konfiguration spezifischen Endpunkts abgerufen werden.
 >
 >Der Inhaltsautor sollte dieses Szenario steuern. Beispielsweise kann es nützlich sein, freigegebene Inhaltsfragmentmodelle unter die globale Sites-Konfiguration zu stellen.
 
-Der Repository-Pfad der GraphQL für AEM globalen Endpunkt lautet:
+Der Repository-Pfad des GraphQL für den globalen Endpunkt in AEM lautet:
 
 `/content/cq:graphql/global/endpoint`
 
-Für die Ihre App den folgenden Pfad in der Anfrage-URL verwenden kann:
+Ihr Programm kann den folgenden Pfad in der Anfrage-URL verwenden:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-Um einen Endpunkt für GraphQL für AEM zu aktivieren, müssen Sie Folgendes tun:
+Um den GraphQL-Endpunkt für AEM zu aktivieren, gehen Sie folgendermaßen vor:
 
 * [Aktivieren des GraphQL-Endpunkts](#enabling-graphql-endpoint)
 * [Veröffentlichen des GraphQL-Endpunkts](#publishing-graphql-endpoint)
 
 ### Aktivieren des GraphQL-Endpunkts {#enabling-graphql-endpoint}
 
-Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprechende Konfiguration. Siehe [Inhaltsfragmente - Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprechende Konfiguration. Siehe [Inhaltsfragmente – Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
@@ -160,9 +160,9 @@ So aktivieren Sie den entsprechenden Endpunkt:
 
 1. Navigieren Sie zu **Tools**, **Assets** und wählen Sie **GraphQL** aus.
 1. Wählen Sie **Erstellen**.
-1. Das Dialogfeld **GraphQL-Endpunkt** erstellen wird geöffnet. Hier können Sie Folgendes angeben:
-   * **Name**: Name des Endpunkts; können Sie einen beliebigen Text eingeben.
-   * **Verwenden Sie das von** bereitgestellte GraphQL-Schema: Verwenden Sie das Dropdown-Menü, um die gewünschte Site/das gewünschte Projekt auszuwählen.
+1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
+   * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
+   * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie das Dropdown-Menü, um die gewünschte Website / das gewünschte Projekt auszuwählen.
 
    >[!NOTE]
    >
@@ -182,19 +182,19 @@ So aktivieren Sie den entsprechenden Endpunkt:
 
 ### Veröffentlichen des GraphQL-Endpunkts {#publishing-graphql-endpoint}
 
-Wählen Sie den neuen Endpunkt und **Publish** aus, um ihn in allen Umgebungen vollständig verfügbar zu machen.
+Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umgebungen vollständig verfügbar zu machen.
 
 >[!CAUTION]
 >
 >Der Endpunkt ist für jeden zugänglich.
 >
->Bei Veröffentlichungsinstanzen kann dies ein Sicherheitsproblem darstellen, da GraphQL-Abfragen den Server stark belasten können.
+>Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
 >
->Sie müssen ACLs entsprechend Ihrem Anwendungsfall am -Endpunkt einrichten.
+>Sie müssen am Endpunkt geeignete ACLs für Ihren Anwendungsfall einrichten.
 
 ## GraphiQL-Schnittstelle {#graphiql-interface}
 
-Eine Implementierung der [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-Standardschnittstelle steht zur Verwendung mit AEM GraphQL zur Verfügung. Sie kann [mit AEM installiert werden](#installing-graphiql-interface).
+Eine Implementierung der [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-Standardschnittstelle steht zur Verwendung mit AEM-GraphQL zur Verfügung. Sie kann [mit AEM installiert werden](#installing-graphiql-interface).
 
 >[!NOTE]
 >
@@ -210,9 +210,9 @@ Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, 
 
 ![GraphiQL-Schnittstelle](assets/cfm-graphiql-interface.png "GraphiQL-Schnittstelle")
 
-### AEM GraphiQL-Schnittstelle installieren {#installing-graphiql-interface}
+### Installieren der AEM-GraphiQL-Schnittstelle {#installing-graphiql-interface}
 
-Die Benutzeroberfläche von GraphiQL kann AEM mit einem dedizierten Paket installiert werden: das Paket [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) .
+Die GraphiQL-Schnittstelle kann mit einem dedizierten Paket auf AEM installiert werden: dem Paket [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip).
 
 ## Anwendungsfälle für Autoren- und Veröffentlichungsumgebungen {#use-cases-author-publish-environments}
 
@@ -240,7 +240,7 @@ Bei Inhaltsfragmenten basieren die GraphQL-Schemas (Struktur und Typen) auf **ak
 
 >[!CAUTION]
 >
->Alle GraphQL-Schemas (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) sind über den GraphQL-Endpunkt lesbar.
+>Alle GraphQL-Schemas (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
 >
 >Das bedeutet, dass Sie sicherstellen müssen, dass keine vertraulichen Daten verfügbar sind, da sie auf diese Weise an die Öffentlichkeit gelangen könnten. Dazu gehören beispielsweise Informationen, die als Feldnamen in der Modelldefinition vorhanden sein könnten.
 
@@ -283,7 +283,7 @@ Wenn Sie zum Beispiel:
 
 Das Schema wird über denselben Endpunkt wie die GraphQL-Abfragen bereitgestellt, wobei der Client die Tatsache behandelt, dass das Schema mit der `GQLschema`-Erweiterung aufgerufen wird. Wenn Sie beispielsweise eine einfache `GET`-Anfrage an `/content/cq:graphql/global/endpoint.GQLschema` ausführen, wird das Schema mit dem Inhaltstyp ausgegeben: `text/x-graphql-schema;charset=iso-8859-1`.
 
-### Schemagenerierung - Nicht veröffentlichte Modelle {#schema-generation-unpublished-models}
+### Schemagenerierung – Nicht veröffentlichte Modelle {#schema-generation-unpublished-models}
 
 Wenn Inhaltsfragmente verschachtelt sind, kann es vorkommen, dass ein übergeordnetes Inhaltsfragmentmodell veröffentlicht wird, ein referenziertes Modell jedoch nicht.
 
@@ -291,7 +291,7 @@ Wenn Inhaltsfragmente verschachtelt sind, kann es vorkommen, dass ein übergeord
 >
 >Die AEM-Benutzeroberfläche verhindert dies, aber wenn die Veröffentlichung programmgesteuert oder mit Inhaltspaketen erfolgt, kann es vorkommen.
 
-In diesem Fall generiert AEM ein *unvollständiges*-Schema für das übergeordnete Inhaltsfragmentmodell. Das bedeutet, dass die Fragmentreferenz, die vom nicht veröffentlichten Modell abhängt, aus dem Schema entfernt wird.
+In diesem Fall generiert AEM ein *unvollständiges* Schema für das übergeordnete Inhaltsfragmentmodell. Das bedeutet, dass die Fragmentreferenz, die vom nicht veröffentlichten Modell abhängt, aus dem Schema entfernt wird.
 
 ## Felder {#fields}
 
@@ -313,11 +313,11 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 
 | Datentyp für Inhaltsfragmentmodelle | GraphQL-Typ | Beschreibung |
 |--- |--- |--- |
-| Einzelzeilentext | Zeichenfolge, [Zeichenfolge] |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
-| Mehrzeiliger Text | Zeichenfolge |  Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
+| Einzeilentext | Zeichenfolge, [Zeichenfolge] |  Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
+| Mehrzeilentext | Zeichenfolge |  Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl |  Gleitkommazahl, [Gleitkommazahl] | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
 | Boolesch |  Boolesch |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
-| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ stehen in GraphQL drei Varianten zur Verwendung AEM GraphQL zur Verfügung: `onlyDate`, `onlyTime`, `dateTime` |
+| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ gibt es drei Varianten, die in AEM-GraphQL verwendet werden können: `onlyDate`, `onlyTime`, `dateTime` |
 | Aufzählung |  Zeichenfolge |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  [Zeichenfolge] |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  Zeichenfolge |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
@@ -362,7 +362,7 @@ Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie au
 
 Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
 
-#### Metadaten   {#metadata}
+#### Metadaten {#metadata}
 
 Mit GraphQL stellt AEM auch die Metadaten eines Inhaltsfragments zur Verfügung. Metadaten sind die Informationen, die ein Inhaltsfragment beschreiben, z. B. der Titel eines Inhaltsfragments, der Pfad der Miniaturansicht, die Beschreibung eines Inhaltsfragments, das Erstellungsdatum usw.
 
@@ -377,7 +377,7 @@ Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!` |
+| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
@@ -436,7 +436,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 ## GraphQL-Variablen {#graphql-variables}
 
-Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation für Variablen](https://graphql.org/learn/queries/#variables).
+Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation zu Variablen](https://graphql.org/learn/queries/#variables).
 
 Um beispielsweise alle Inhaltsfragmente vom Typ `Article` abzurufen, die eine bestimmte Variante aufweisen, können Sie die Variable `variation` in GraphiQL angeben.
 
@@ -565,7 +565,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](#sample-all-persons-not-jobs)
-         * Siehe [Beispielabfrage - Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix](#sample-wknd-all-adventures-cycling-path-filter) beginnt
+         * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
@@ -590,32 +590,32 @@ Nachdem eine Abfrage mit einer POST-Anfrage vorbereitet wurde, kann sie mit eine
 
 Dies ist erforderlich, da POST-Abfragen normalerweise nicht zwischengespeichert werden. Wenn Sie GET mit der Abfrage als Parameter verwenden, besteht ein erhebliches Risiko, dass der Parameter für HTTP-Services und Vermittler zu groß wird.
 
-Beständige Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](#graphql-aem-endpoint) verknüpft ist. damit sie entweder oder beide verwenden können:
+Persistente Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](#graphql-aem-endpoint) verknüpft ist. Sie können also entweder eine oder beide dieser Optionen verwenden:
 
 * Globale Konfiguration und Endpunkt
 Die Abfrage hat Zugriff auf alle Inhaltsfragmentmodelle.
 * Spezifische Sites-Konfigurationen und -Endpunkte
 Das Erstellen einer persistenten Abfrage für eine bestimmte Sites-Konfiguration erfordert einen entsprechenden Sites-konfigurationsspezifischen Endpunkt (um Zugriff auf die zugehörigen Inhaltsfragmentmodelle zu gewähren).
-Um beispielsweise eine persistente Abfrage speziell für die WKND Sites-Konfiguration zu erstellen, müssen eine entsprechende WKND-spezifische Sites-Konfiguration und ein WKND-spezifischer Endpunkt im Voraus erstellt werden.
+Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfiguration zu erstellen, müssen eine entsprechende WKND-spezifische Sites-Konfiguration und ein WKND-spezifischer Endpunkt im Voraus erstellt werden.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->Die **GraphQL-Persistenzabfragen** müssen für die entsprechende Sites-Konfiguration aktiviert werden.
+>Die **GraphQL-Persistenzabfragen** für die entsprechende Sites-Konfiguration müssen aktiviert werden.
 
-Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein Modell `my-model` aus der Sites-Konfiguration `my-conf` verwendet:
+Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `my-model`-Modell aus der Sites-Konfiguration `my-conf` verwendet:
 
 * Sie können eine Abfrage mit dem `my-conf`-spezifischen Endpunkt erstellen und die Abfrage wird dann wie folgt gespeichert:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Sie können dieselbe Abfrage mit dem `global`-Endpunkt erstellen, die Abfrage wird jedoch wie folgt gespeichert:
+* Sie können dieselbe Abfrage mit dem `global`-Endpunkt erstellen, die Abfrage wird dann jedoch wie folgt gespeichert:
    `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
 >Hierbei handelt es sich um zwei verschiedene Abfragen, die unter verschiedenen Pfaden gespeichert werden.
 >
->Sie verwenden zufällig dasselbe Modell - aber über verschiedene Endpunkte.
+>Sie verwenden zufällig dasselbe Modell – aber über verschiedene Endpunkte.
 
 
 Die folgenden Schritte sind erforderlich, um eine bestimmte Abfrage beizubehalten:
@@ -818,7 +818,7 @@ Um auf den GraphQL-Endpunkt zugreifen zu können, muss eine CORS-Richtlinie im G
 
 Diese Konfiguration muss eine vertrauenswürdige Website-Herkunft `alloworigin` oder `alloworiginregexp` angeben, für die der Zugriff gewährt werden muss.
 
-Um beispielsweise Zugriff auf den GraphQL-Endpunkt und den Endpunkt für persistente Abfragen für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
+Um beispielsweise den Zugriff auf den GraphQL-Endpunkt und den Persistenzabfrage-Endpunkt für `https://my.domain` zu gewähren, können Sie Folgendes verwenden:
 
 ```xml
 {
@@ -905,7 +905,7 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 
 ## Authentifizierung {#authentication}
 
-Siehe [Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
+Siehe [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
 
 <!-- to be addressed later -->
 
