@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-Bildprofile
 description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten. Wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
-feature: Asset-Management, Bildprofile, Ausgabeformate
+feature: Asset-Management,Bildprofile,Ausgabedarstelleungen
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 72%
+ht-degree: 76%
 
 ---
 
@@ -44,14 +44,14 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Außerdem können Sie 
      <li>Werte: oben, unten, links und rechts.</li>
      <li>Der Wert für oben links ist 0,0. Von dort aus wird der Pixelzuschnitt berechnet.</li>
      <li>Startpunkt des Zuschnitts: Links ist X und oben ist Y</li>
-     <li>Horizontale Berechnung: horizontale Pixelgröße des Originalbilds abzüglich links und dann abzüglich rechts.</li>
+     <li>Horizontale Berechnung: Horizontale Pixelabmessungen des Originalbilds abzüglich des Werts für links und dann abzüglich des Werts für rechts.</li>
      <li>Vertikale Berechnung: Die vertikale Pixelhöhe abzüglich des Werts für oben und dann abzüglich des Werts für unten.</li>
     </ul> <p>Beispiel: Sie haben ein Bild in der Größe 4000 x 3000 Pixel. Sie verwenden folgende Werte: Oben = 250, Unten = 500, Links = 300, Rechts = 700.</p> <p>Schneiden Sie von oben links (300, 250) aus mit dem Füllraum 4000-300-700, 3000-250-500 oder 3000, 2250.</p> </td>
   </tr>
   <tr>
    <td>Smartes Zuschneiden</td>
    <td>Massenzuschnitt von Bildern basierend auf ihrem visuellen Fokus.</td>
-   <td><p>Smartes Zuschneiden nutzt die Möglichkeiten künstlicher Intelligenz in Adobe Sensei, um den Massenzuschnitt von Bildern schnell zu automatisieren. Smartes Zuschneiden erkennt und schneidet den Fokus in jedem Bild automatisch ab, um den gewünschten Zielpunkt zu erreichen, unabhängig von der Bildschirmgröße.</p> <p>Um smartes Zuschneiden zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ die Option <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie „Responsive Bildbeschneidung“.</p> <p>Die standardmäßigen Breakpoint-Größen für „Groß“, „Mittel“ und „Klein“ decken alle Größen ab, in denen Bilder auf Smartphones, Tablets, Computern und in Bannern verwendet werden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.</p> <p>Um weitere Haltepunkte hinzuzufügen, wählen Sie <strong>Zuschneiden</strong> hinzufügen. Um einen Zuschnitt zu löschen, wählen Sie das Symbol Papierkorb kann aus.</p> </td>
+   <td><p>Smartes Zuschneiden nutzt die Möglichkeiten künstlicher Intelligenz in Adobe Sensei, um den Massenzuschnitt von Bildern schnell zu automatisieren. Smartes Zuschneiden erkennt automatisch den Fokus in jedem Bild und schneidet es entsprechend zu, um das Haupt-Bildmotiv richtig zu erfassen – unabhängig von der Bildschirmgröße.</p> <p>Um smartes Zuschneiden zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ die Option <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie „Responsive Bildbeschneidung“.</p> <p>Die standardmäßigen Breakpoint-Größen für „Groß“, „Mittel“ und „Klein“ decken alle Größen ab, in denen Bilder auf Smartphones, Tablets, Computern und in Bannern verwendet werden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.</p> <p>Um weitere Haltepunkte hinzuzufügen, wählen Sie <strong>Zuschneiden</strong> hinzufügen. Um einen Zuschnitt zu löschen, wählen Sie das Symbol Papierkorb kann aus.</p> </td>
   </tr>
   <tr>
    <td>Farb- und Bildmuster</td>
@@ -69,7 +69,7 @@ Mit **[!UICONTROL Unscharf maskieren]** können Sie einen Scharfzeichnungsfilter
 
 >[!NOTE]
 >
->Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Im Gegensatz dazu werden kleinere Ausgabedarstellungen wie Miniaturansichten geändert (und zeigen die Unschärfemaske an).
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Kleinere Ausgabedarstellungen wie Miniaturansichten werden allerdings geändert (und hierbei wird die Unschärfemaske angezeigt).
 
 In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar:
 
@@ -94,8 +94,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
  </tbody>
 </table>
 
-Das Scharfzeichnen wird unter
-     [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -105,7 +104,7 @@ Siehe [Informationen zu Dynamic Media – Bildprofile und Videoprofile](/help/as
 
 Informationen hierzu finden Sie auch im Thema über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
-**So erstellen Sie Dynamic Media-Bildprofile:**
+**So erstellen Sie Bildprofile für Dynamic Media:**
 
 1. Wählen Sie das Adobe Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildprofile]**.
 1. Um ein Bildprofil hinzuzufügen, wählen Sie **[!UICONTROL Erstellen]** aus.
@@ -222,7 +221,7 @@ Siehe auch [Bearbeiten des smarten Zuschnitts oder smarten Farb-/Bildmusters meh
 
 ## Bearbeiten des smarten Zuschnitts oder smarten Farb-/Bildmusters mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Nachdem Sie ein Bildprofil - das smartes Zuschneiden enthält - auf einen Ordner angewendet haben, wird auf alle Bilder in diesem Ordner ein Zuschnitt angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
+Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
