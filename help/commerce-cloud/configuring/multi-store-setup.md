@@ -1,5 +1,5 @@
 ---
-title: Commerce-Multi-Store-Einrichtung
+title: Multi-Store-Einrichtung in Commerce
 description: Informationen dazu, wie Sie mehrere Store-Ansichten von Magento AEM zuordnen. Dadurch können Projekte auch mehrinstanzenfähige und mehrsprachige Anwendungsfälle unterstützen.
 sub-product: Commerce
 version: cloud-service
@@ -13,11 +13,11 @@ exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
-# Commerce-Multi-Store-Einrichtung {#multi-store}
+# Einrichten von mehreren Commerce-Shops {#multi-store}
 
 Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet werden und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Magento-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 
    >[!TIP]
    >
-   > Commerce-Kataloge können mit IDs oder UIDs adressiert werden. UIDs wurden in Magento 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   > Commerce-Kataloge können mit IDs oder UIDs adressiert werden. UIDs wurden in Magento 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
@@ -62,4 +62,4 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 * [Websites, Stores und Ansichten](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM-CIF-Kernkomponenten – Multi-Store-/Multi-Site-Konfiguration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Verwenden von Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](/help/sites-cloud/administering/msm/overview.md)
