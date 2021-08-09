@@ -3,9 +3,9 @@ title: Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 97%
 
 Ein [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können.
 
-Ein Experience Fragment-Master und/oder eine Experience Fragment-Variante verwendet:
+Ein primäres Experience Fragment und/oder eine Experience Fragment-Variante verwendet:
 
 * `sling:resourceType`: `/libs/cq/experience-fragments/components/xfpage`
 
 Da es kein `/libs/cq/experience-fragments/components/xfpage/xfpage.html` gibt, wird auf Folgendes zurückgegriffen:
 
-* `sling:resourceSuperType` :  `wcm/foundation/components/page`
+* `sling:resourceSuperType` : `wcm/foundation/components/page`
 
 ## Einfache HTML-Ausgabe {#the-plain-html-rendition}
 
@@ -55,7 +55,7 @@ Social-Varianten können in Social Media (Text und Bild) veröffentlicht werden.
 
 Das Bild und der Text für den Social-Beitrag können aus jedem beliebigen Bild- oder Textressourcentyp in beliebiger Tiefe entnommen werden (entweder im Baustein oder im Layout-Container).
 
-Social-Varianten erlauben auch Bausteine und berücksichtigen sie bei Social-Aktionen (in der Publishing-Umgebung).
+Social-Varianten erlauben auch Bausteine und berücksichtigen sie bei Social-Aktionen (in der Veröffentlichungsumgebung).
 
 Um den richtigen Text und das richtige Bild im Social Media-Netzwerk zu veröffentlichen, müssen einige Konventionen beachtet werden, wenn Sie eigene benutzerdefinierte Komponenten entwickeln.
 
@@ -95,8 +95,8 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Benutzer Experience Fragments in /content/experience-fragments als 
-`cq:allowedTemplates` -Eigenschaft dieses Ordners enthält alle Vorlagen, deren Namen mit  `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+Dadurch können Anwender Experience Fragments in „/content/experience-fragments“ erstellen, da 
+die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen umfasst, deren Namen mit `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
@@ -181,9 +181,9 @@ Für diese Anwendungsfälle stellt AEM die Link Rewriter Provider-Schnittstelle 
 
 ### Link Rewriter Provider-Schnittstelle {#link-rewriter-provider-interface}
 
-Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Dienst in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, den Prozess des Umschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
+Für kompliziertere Fälle, die nicht vom [Standard](#default-link-rewriting) abgedeckt werden, bietet AEM die Link Rewriter Provider-Schnittstelle. Dies ist eine `ConsumerType`-Schnittstelle, die Sie als Service in Ihren Bundles implementieren können. Sie umgeht die Änderungen, die AEM an internen Links eines HTML-Angebots vornimmt, die aus einem Experience Fragment gerendert wurden. Diese Schnittstelle ermöglicht es Ihnen, den Prozess des Umschreibens interner HTML-Links an Ihre geschäftlichen Anforderungen anzupassen.
 
-Beispiele für Anwendungsfälle für die Implementierung dieser Schnittstelle als Dienst:
+Beispiele für Anwendungsfälle für die Implementierung dieser Schnittstelle als Service:
 
 * Sling-Zuordnungen sind in den Veröffentlichungsinstanzen aktiviert, nicht jedoch in der Autoreninstanz
 * Eine Dispatcher- oder ähnliche Technologie wird verwendet, um URLs intern umzuleiten
@@ -209,9 +209,9 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### Verwendung der Link Rewriter Provider-Schnittstelle {#how-to-use-the-link-rewriter-provider-interface}
 
-Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle anlegen, das eine neue Dienstkomponente enthält, die die Link Rewriter Provider-Schnittstelle implementiert.
+Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle anlegen, das eine neue Service-Komponente enthält, die die Link Rewriter Provider-Schnittstelle implementiert.
 
-Dieser Dienst wird verwendet, um das Umschreiben beim Exportieren von Experience Fragments nach Target zu ermöglichen, um Zugriff auf die verschiedenen Links zu erhalten.
+Dieser Service wird verwendet, um das Umschreiben beim Exportieren von Experience Fragments nach Target zu ermöglichen, um Zugriff auf die verschiedenen Links zu erhalten.
 
 Beispiel: `ComponentService`:
 
@@ -243,7 +243,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-Damit der Dienst funktioniert, müssen jetzt drei Methoden innerhalb des Dienstes implementiert werden:
+Damit der Service funktioniert, müssen jetzt drei Methoden innerhalb des Service implementiert werden:
 
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
@@ -278,11 +278,11 @@ Im obigen Beispiel möchten wir Folgendes umschreiben:
 * für ein bestimmtes Experience Fragment:
    `/content/experience-fragment/master`
 
-Alle anderen Experience Fragments, die das System „In Target exportieren“ durchlaufen, werden ignoriert und sind von den in diesem Dienst implementierten Änderungen nicht betroffen.
+Alle anderen Experience Fragments, die das System „In Target exportieren“ durchlaufen, werden ignoriert und sind von den in diesem Service implementierten Änderungen nicht betroffen.
 
 #### rewriteLink {#rewritelink}
 
-Für die Experience Fragment-Variante, die vom Umschreibungsprozess betroffen ist, wird der Dienst dann die Links umschreiben. Bei jedem Auftreten eines Links im internen HTML-Code wird die folgende Methode aufgerufen:
+Für die Experience Fragment-Variante, die vom Umschreibungsprozess betroffen ist, wird der Service dann die Links umschreiben. Bei jedem Auftreten eines Links im internen HTML-Code wird die folgende Methode aufgerufen:
 
 `rewriteLink(String link, String tag, String attribute)`
 
@@ -290,7 +290,7 @@ Als Eingabe erhält die Methode die folgenden Parameter:
 
 * `link`
 Die 
-`String` -Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
+`String`-Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
 
 * `tag`
 Der Name des HTML-Elements, das derzeit verarbeitet wird.
@@ -310,13 +310,13 @@ Die `rewriteLink()`-Methode wird mithilfe der folgenden Parameter aufgerufen:
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-Wenn Sie den Dienst erstellen, können Sie Entscheidungen basierend auf der angegebenen Eingabe treffen und dann den Link entsprechend umschreiben.
+Wenn Sie den Service erstellen, können Sie Entscheidungen basierend auf der angegebenen Eingabe treffen und dann den Link entsprechend umschreiben.
 
-In unserem Beispiel möchten wir den `/etc.clientlibs`-Teil der URL entfernen und die entsprechende externe Domäne hinzufügen. Um die Dinge einfach zu halten, werden wir in Betracht ziehen, dass wir Zugriff auf einen Resource Resolver für Ihren Dienst haben, wie in `rewriteLinkExample2`:
+In unserem Beispiel möchten wir den `/etc.clientlibs`-Teil der URL entfernen und die entsprechende externe Domain hinzufügen. Um die Dinge einfach zu halten, werden wir in Betracht ziehen, dass wir Zugriff auf einen Resource Resolver für Ihren Service haben, wie in `rewriteLinkExample2`:
 
 >[!NOTE]
 >
->Weitere Informationen zum Abrufen eines Ressource Resolver über einen Dienstbenutzer finden Sie unter „Dienstbenutzer in AEM“.
+>Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter „Service-Benutzer in AEM“.
 
 <!--
 >For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
@@ -353,10 +353,10 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### Prioritäten – getPriority {#priorities-getpriority}
 
-Es ist nicht ungewöhnlich, dass mehrere Dienste für verschiedene Arten von Experience Fragments benötigt werden oder dass sogar ein generischer Service vorhanden ist, der die Externalisierung und Zuordnung aller Experience Fragments übernimmt. In diesen Fällen kann es zu Konflikten darüber kommen, welcher Dienst verwendet werden soll, sodass AEM die Möglichkeit bietet, **Prioritäten** für verschiedene Dienste festzulegen. Die Prioritäten werden nach folgendem Verfahren festgelegt:
+Es ist nicht ungewöhnlich, dass mehrere Service für verschiedene Arten von Experience Fragments benötigt werden oder dass sogar ein generischer Service vorhanden ist, der die Externalisierung und Zuordnung aller Experience Fragments übernimmt. In diesen Fällen kann es zu Konflikten darüber kommen, welcher Service verwendet werden soll, sodass AEM die Möglichkeit bietet, **Prioritäten** für verschiedene Services festzulegen. Die Prioritäten werden nach folgendem Verfahren festgelegt:
 
 * `getPriority()`
 
-Diese Methode ermöglicht die Verwendung mehrerer Dienste, bei denen die `shouldRewrite()`-Methode für dasselbe Experience Fragment „true“ zurückgibt. Der Dienst, der die höchste Zahl aus der `getPriority()`-Methode zurückgibt, ist der Dienst, der die Experience Fragment-Variante verarbeitet.
+Diese Methode ermöglicht die Verwendung mehrerer Services, bei denen die `shouldRewrite()`-Methode für dasselbe Experience Fragment „true“ zurückgibt. Der Service, der die höchste Zahl aus der `getPriority()`-Methode zurückgibt, ist der Service, der die Experience Fragment-Variante verarbeitet.
 
-Beispielsweise können Sie einen `GenericLinkRewriterProvider`-Dienst verwenden, der die grundlegende Zuordnung für alle Experience Fragments handhabt und wenn die `shouldRewrite()` Methode für alle Experience-Fragment-Varianten `true` zurückgibt. Für mehrere spezifische Experience Fragments ist möglicherweise eine besondere Behandlung erforderlich. In diesem Fall können Sie also einen `SpecificLinkRewriterProvider`-Dienst bereitstellen, für den die `shouldRewrite()`-Methode nur für einige Experience Fragment-Varianten „true“ zurückgibt. Um sicherzustellen, dass `SpecificLinkRewriterProvider` für die Verarbeitung dieser Experience Fragment-Varianten ausgewählt wird, muss in der `getPriority()`-Methode eine höhere Zahl zurückgegeben werden als für `GenericLinkRewriterProvider.`
+Beispielsweise können Sie einen `GenericLinkRewriterProvider`-Service verwenden, der die grundlegende Zuordnung für alle Experience Fragments handhabt und wenn die `shouldRewrite()` Methode für alle Experience-Fragment-Varianten `true` zurückgibt. Für mehrere spezifische Experience Fragments ist möglicherweise eine besondere Behandlung erforderlich. In diesem Fall können Sie also einen `SpecificLinkRewriterProvider`-Service bereitstellen, für den die `shouldRewrite()`-Methode nur für einige Experience Fragment-Varianten „true“ zurückgibt. Um sicherzustellen, dass `SpecificLinkRewriterProvider` für die Verarbeitung dieser Experience Fragment-Varianten ausgewählt wird, muss in der `getPriority()`-Methode eine höhere Zahl zurückgegeben werden als für `GenericLinkRewriterProvider.`
