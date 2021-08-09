@@ -18,7 +18,7 @@ Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden könn
 
 Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, lässt [!DNL Experience Manager Assets] das Adhoc-Hinzufügen von neuen Metadateneigenschaften nicht zu. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
 
-## Bearbeiten von Metadaten für ein Asset  {#editing-metadata-for-an-asset}
+## Bearbeiten von Metadaten für ein Asset {#editing-metadata-for-an-asset}
 
 So bearbeiten Sie Metadaten:
 
