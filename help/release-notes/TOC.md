@@ -37,7 +37,7 @@ ht-degree: 96%
       + [Versionshinweise für 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [Versionshinweise für 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [Versionshinweise für 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-+ [Neue Funktionen?](what-is-new.md)
++ [Neue Funktionen](what-is-new.md)
 + [Wichtige Änderungen in AEM Cloud Service](aem-cloud-changes.md)
 + [Bekannte Probleme](known-issues.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
