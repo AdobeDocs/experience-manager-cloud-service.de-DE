@@ -1,19 +1,19 @@
 ---
-title: 'Responsives Layout  '
+title: Responsives Layout
 description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Responsives Layout   {#responsive-layout}
+# Responsives Layout {#responsive-layout}
 
 AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
 
-Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
@@ -154,7 +154,7 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
    ![Zum Layout-Container hinzufügen](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
-   Wählen Sie daraufhin die Option  **Übergeordnetes Element** aus.
+   Wählen Sie daraufhin die Option **Übergeordnetes Element** aus.
 
    ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
@@ -230,9 +230,9 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
    >
    >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Einblenden von**
-KomponentenWählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
-**Option &quot;Verborgene** Komponenten anzeigen&quot;. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+   * **Komponenten einblenden**
+Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
+Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
 
       ![Komponenten einblenden](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
