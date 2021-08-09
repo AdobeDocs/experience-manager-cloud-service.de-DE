@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Ke
 
 Da das WKND-Tutorial die meisten Anwendungsfälle abdeckt, ist dieses Dokument nur als Ergänzung zu diesen Ressourcen gedacht. Es enthält ausführliche technische Details zur Struktur und Konfiguration von Komponenten in AEM und ist nicht als Anleitung für die ersten Schritte gedacht.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er bietet so einen guten Einstieg in die Entwicklung eigener Komponenten.
 
@@ -297,7 +297,7 @@ Insbesondere, wenn Sie sich den tatsächlichen Text einer **Titelkomponente** an
 
 Die definierten Eigenschaften sind von den einzelnen Definitionen abhängig. Zwar können sie komplexer als oben dargestellt sein, folgen aber dennoch denselben grundlegenden Prinzipien.
 
-## Komponentenhierarchie und Vererbung  {#component-hierarchy-and-inheritance}
+## Komponentenhierarchie und Vererbung {#component-hierarchy-and-inheritance}
 
 Komponenten in AEM unterliegen der **Ressourcentyphierarchie**. Diese wird verwendet, um Komponenten mit der `sling:resourceSuperType`-Eigenschaft zu erweitern. Dies ermöglicht es der Komponente, von einer anderen Komponente zu erben.
 
