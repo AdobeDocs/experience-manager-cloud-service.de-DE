@@ -2,7 +2,7 @@
 title: Digitale Assets in mehreren Sprachen erstellen und verwalten
 description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
-feature: Asset-Management, Übersetzung
+feature: Asset-Management,Übersetzung
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
@@ -105,7 +105,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]**.
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
+1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemas kopiert, die Sie in Schritt 4 gewählt haben.
 1. Um zum Ordner zu navigieren, wählen Sie die Sprachkopie und klicken Sie auf **[!UICONTROL In Assets einblenden]**.
 1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 1. Öffnen Sie den Ordner, um das Übersetzungsprojekt anzuzeigen.
@@ -220,7 +220,7 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen  {#create-structure-only}
+### Nur Struktur erstellen {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -264,7 +264,7 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungsservices anwe
 
 1. Installieren Sie den Connector von Package Manager.
 1. Klicken/tippen Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
-1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud-Services]**.
+1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
