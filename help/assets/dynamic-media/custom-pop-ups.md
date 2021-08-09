@@ -1,13 +1,13 @@
 ---
 title: Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht
-description: '"Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierte Inhalte für die Anzeige im Popup-Fenster Windows® Trigger haben."'
-feature: Interaktive Bilder, interaktive Videos, Karussellbanner
+description: '"Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popup-Fenstern angezeigt werden.“'
+feature: Interaktive Bilder,interaktive Videos,Karussellbanner
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -101,8 +101,8 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    Hier finden Sie weitere Informationen zur Methode `setHandlers()`:
 
-   * Interaktiver Bild-Viewer - [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
-   * Interaktiver Video-Viewer - [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
+   * Interaktiver Bild-Viewer – [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=de)
+   * Interaktiver Video-Viewer – [Sethandler](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=de)
 
 1. Konfigurieren Sie jetzt den `quickViewActivate`-Handler.
 
