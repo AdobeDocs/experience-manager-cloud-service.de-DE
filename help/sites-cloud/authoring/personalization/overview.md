@@ -3,7 +3,7 @@ title: Personalisierung und Content-Targeting
 description: Erfahren Sie, wie AEM personalisierte Inhalte erstellen kann
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 ## Personalisierung und Content-Targeting {#personalization-and-content-targeting}
 
-AEM stellt eine Reihe von Werkzeugen zur Bearbeitung von Inhalten für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse bereit.
+AEM stellt eine Reihe von Tools zur Bearbeitung von Inhalten für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse bereit.
 
-## Targeting-Modus  {#targeting-mode}
+## Targeting-Modus {#targeting-mode}
 
-[Verfassen Sie zielgerichtete Inhalte](/help/sites-cloud/authoring/personalization/targeted-content.md) im Targeting-Modus von AEM. Der Targeting-Modus und die Targeting-Komponente sind wichtige Werkzeuge für die Erstellung von Erlebnisinhalten für Ihre Marketingaktivitäten.
+[Verfassen Sie zielgerichtete Inhalte](/help/sites-cloud/authoring/personalization/targeted-content.md) im Targeting-Modus von AEM. Der Targeting-Modus und die Targeting-Komponente sind wichtige Werkzeuge für die Erstellung von Erlebnisinhalten für Ihre Marketing-Aktivitäten.
 
-## Aktivitäten  {#activities}
+## Aktivitäten {#activities}
 
 Mit Aktivitäten lassen sich Ihre Marketingprojekte definieren und organisieren. Teil der Aktivitäten sind die gewünschten Zielgruppen sowie der Zeitraum, in dem das Targeting durchgeführt wird.
 
@@ -33,13 +33,13 @@ Mit der [Aktivitätskonsole](/help/sites-cloud/authoring/personalization/activit
 
 Legen Sie für jede Aktivität ein oder mehr Erlebnisse fest, in denen die gewünschten Zielgruppen identifiziert sind. Mit AEM verfügen Sie über die Möglichkeit, die Inhalte jedes Erlebnisses gezielt zu steuern.
 
-Zielgruppen basieren auf Marketingsegmenten, die entweder in AEM oder Adobe Target erstellt werden. Öffnet ein Besucher eine Webseite, bestimmt die Seitenlogik die Zielgruppe, in die er fällt, und zeigt die für diese Zielgruppe erstellten Inhalte an.
+Zielgruppen basieren auf Marketingsegmenten, die entweder in AEM oder Adobe Target erstellt werden. Öffnet ein Besucher eine Web-Seite, bestimmt die Seitenlogik die Zielgruppe, in die er fällt, und zeigt die für diese Zielgruppe erstellten Inhalte an.
 
 Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zielgruppen festgelegt werden: Frauen über 30 und Frauen unter 30. Die Damenabteilung einer Website könnte für jedes Erlebnis verschiedene Produkte anzeigen.
 
 Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt. Sie können hierzu die [Aktivitätskonsole](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) oder den [Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) verwenden und Aktivitäten Erlebnisse hinzufügen.
 
-## Angebote   {#offers}
+## Angebote {#offers}
 
 Angebote sind Inhalte, die an einem Ort auf einer Seite angezeigt werden, die für ein Erlebnis festgelegt wurde. Verwenden Sie für verschiedene Erlebnisse verschiedene Angebote, um Inhalte optimal auf Ihre Zielgruppen zuzuschneiden.
 
@@ -47,7 +47,7 @@ Beispielsweise könnte die Damenabteilung einer Beispiel-Website Angebote als da
 
 Mit der [Angebotskonsole](/help/sites-cloud/authoring/personalization/offers.md) lassen sich Angebote erstellen, die für mehrere Erlebnisse eingesetzt werden sollen. Erstellen Sie Einmal-Angebote oder fügen Sie Angebote aus einer Angebotsbibliothek hinzu, wenn Sie [zielgerichtete Inhalte erstellen](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
-## Targeting-Engine    {#targeting-engine}
+## Targeting-Engine {#targeting-engine}
 
 Die Targeting-Engine ist der Mechanismus, der die Logik hinter zielgerichteten Inhalten darstellt. [Aktivitäten](/help/sites-cloud/authoring/personalization/activities.md) sind so konfiguriert, dass eine von zwei verfügbaren Targeting-Engines verwendet wird: AEM oder Adobe Target.
 
