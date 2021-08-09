@@ -3,7 +3,7 @@ title: Arbeiten mit Seitenversionen
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1521'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
    * Unterschiede bei Text und Bildern werden hervorgehoben.
 * Timewarp nutzt hierbei die Seitenversionen, um den Status der Veröffentlichungsumgebung zu ermitteln.
 
-## Erstellen einer neuen Version  {#creating-a-new-version}
+## Erstellen einer neuen Version {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
@@ -115,6 +115,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >Wenn Sie:
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
+
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 
@@ -156,7 +157,7 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
 1. Wählen Sie **Wiederherstellen** für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
 
-## Vorschau einer Version   {#previewing-a-version}
+## Vorschau einer Version {#previewing-a-version}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
 
@@ -188,7 +189,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-cloud/authoring/features/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp  {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -196,7 +197,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 >
 >[Timewarp kann auch mit Launches verwendet werden, um die Zukunft in der Vorschau anzuzeigen](/help/sites-cloud/authoring/launches/preview.md).
 
-Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Publishing-Umgebung zu bestimmen.
+Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
 Gehen Sie hierfür wie folgt vor:
 
