@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
-feature: Asset-Verwaltung, Videoprofile, Ausgabedarstellungen
+feature: Asset-Management,Videoprofile,Ausgabesdarstellungen
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '3661'
-ht-degree: 54%
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
 * **Größe des Video-Players**
 
-   Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ gesetzt. Auch bei der Wiedergabe wird die beste Qualität basierend auf der Größe des Players verwendet.
+   Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ gesetzt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
 
 Siehe [Best Practices für Videokodierung](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -31,9 +31,9 @@ Siehe auch [Best Practices für die Organisation Ihrer digitalen Assets zur Verw
 
 >[!NOTE]
 >
->Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager kodiert der Workflow **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des Veröffentlichungsfortschritts von YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Dynamic Media-Videokodierung]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+>Um die Metadaten eines Videos und die zugehörigen Videobild-Miniaturansichten zu generieren, muss das Video selbst den Kodierungsprozess in Dynamic Media durchlaufen. In Adobe Experience Manager kodiert der Workflow für **[!UICONTROL Dynamic Media-Videokodierung]** Videos, wenn Dynamic Media aktiviert und Video-Cloud Services eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des Veröffentlichungsfortschritts von YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 >
->Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das Experience Manager-System erforderlich und werden in der Benutzeroberfläche verwendet, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht visuell identifizieren können. Sie können die generierten Miniaturansichten anzeigen, wenn Sie das Ausgabedarstellungssymbol (Malerpalette) eines kodierten Videos auswählen.
+>Metadaten sind nützlich, wenn Sie nach Assets suchen. Die Miniaturansichten sind statische Videobilder, die bei der Kodierung generiert werden. Sie sind für das Adobe Experience Manager-System erforderlich und werden in der Benutzeroberfläche eingesetzt, damit Sie Videos in der Kartenansicht, der Suchergebnisansicht und der Asset-Listenansicht einfacher identifizieren können. Sie können die generierten Miniaturansichten anzeigen, wenn Sie das Ausgabedarstellungssymbol (Malerpalette) eines kodierten Videos auswählen.
 
 Wenn Sie die Erstellung des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an. Siehe [Anwenden eines Videoprofils auf Ordner](#applying-a-video-profile-to-folders).
 
@@ -92,7 +92,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
 
 ## Informationen zur Verwendung von „Smartes Zuschneiden“ in Videoprofilen {#about-smart-crop-video}
 
-Smartes Zuschneiden für Videos ist eine optionale Funktion, die in Videoprofilen verfügbar ist. Es handelt sich dabei um ein Tool, mit dem Adobe Sensei den Fokuspunkt in allen adaptiven oder progressiven Videos, die Sie hochgeladen haben, automatisch erkennt und zuschneidet, unabhängig von der Größe.
+Smartes Zuschneiden für Videos ist eine optionale Funktion, die in Videoprofilen verfügbar ist. Dabei handelt es sich um ein Tool, mit dem Adobe Sensei den Fokus in allen adaptiven oder progressiven Videos, die Sie hochgeladen haben, automatisch erkennt und zuschneidet, unabhängig von der Größe.
 
 Zu den unterstützten Videoformaten für smartes Zuschneiden gehören MP4, MKV, MOV, AVI, FLV und WMV.
 
@@ -100,9 +100,9 @@ Für die maximal unterstützte Videodateigröße beim smarten Zuschneiden gelten
 
 * Dauer von fünf Minuten.
 * 30 Frames pro Sekunde (FPS).
-* Dateigröße von 300 MB.
+* Dateigröße von 300 MB.
 
-Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
+Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise darf ein 60-FPS-Video maximal 2,5 Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
 
 ![Smartes Zuschneiden für Video](assets/smart-crop-video.png)
 
@@ -114,7 +114,7 @@ Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein P
 
 ![Bearbeiten eines Videokodierungsprofils mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
 
-Sie können das smarte Zuschneiden von Videos im Videoprofil über den Schieberegler rechts neben **[!UICONTROL Seitenverhältnis für intelligentes Zuschneiden]** in der Benutzeroberfläche ein- oder ausschalten.
+Sie können mit dem Schieberegler rechts neben **[!UICONTROL Smart Crop Ratio]** in der Benutzeroberfläche das smarte Zuschneiden im Videoprofil aktivieren oder deaktivieren.
 
 Nachdem Sie Ihr Videoprofil erstellt und gespeichert haben, können Sie es auf die gewünschten Ordner anwenden.
 
@@ -126,11 +126,11 @@ Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
 
 Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videoverschlüsselung“ (eine Gruppe mit Video-Upload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
 
-Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Als Best Practice wird empfohlen, bei Verwendung der Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** alle dem Profil hinzugefügten Kodierungsvorgaben zu validieren. Mit dieser Funktion wird sichergestellt, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
+Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Als Best Practice wird empfohlen, bei Verwendung der Einstellung **[!UICONTROL Kodieren für adaptives Streaming]** alle dem Profil hinzugefügten Kodierungsvorgaben zu validieren. Mit dieser Funktion wird sichergestellt, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
 
-Wenn Sie das Videokodierungsprofil erstellen, werden die meisten Kodierungsoptionen vorab mit den empfohlenen Standardeinstellungen ausgefüllt, um Ihnen zu helfen. Wenn Sie jedoch einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu einer schlechten Videoqualität während der Wiedergabe und anderen Leistungsproblemen führen.
+Beim Erstellen des Videokodierungsprofils sehen Sie, dass die meisten Kodierungsoptionen mit empfohlenen Standardeinstellungen gefüllt sind, um Ihnen die Arbeit zu erleichtern. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu schlechter Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen.
 
-Daher werden für alle MP4 H.264-Videokodierungsvorgaben im Profil die folgenden Werte validiert, um sicherzustellen, dass sie für alle individuellen Kodierungsvorgaben im Profil gleich sind, sodass adaptives Streaming möglich ist:
+Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden Werte validiert, um sicherzustellen, dass diese über individuelle Kodierungsvorgaben hinweg identisch sind. Dadurch wird adaptives Streaming ermöglicht:
 
 * Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
@@ -141,7 +141,7 @@ Daher werden für alle MP4 H.264-Videokodierungsvorgaben im Profil die folgenden
 * H264-Profil
 * Audio-Samplingrate
 
-Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Adaptives Streaming ist jedoch nicht möglich. Stattdessen kommt es bei Benutzern zu Single-Bitrate-Streaming. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn &quot;Für adaptives Streaming kodieren&quot;aktiviert ist.)
+Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Adaptives Streaming ist jedoch nicht möglich. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn die Einstellung „Für adaptives Streaming kodieren“ aktiviert ist.)
 
 Siehe auch [Erstellen eines Videokodierungsprofils für progressives Streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -169,12 +169,12 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um weitere Beschreibu
 1. (Optional) Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** aktiviert ist (empfohlen). Alternativ können Sie erweiterte Video- und Audioeinstellungen anpassen.
 1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
-   * Wiederholen Sie die Schritte 4 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
+   * Wiederholen Sie Schritt 4 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden für Videos hinzuzufügen:
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
    * Wählen Sie auf der Seite &quot;Videoprofil bearbeiten&quot;rechts neben der Überschrift Smart Crop Ratio die Option **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld &quot;Name&quot;einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
+   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
@@ -188,7 +188,7 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 ## Erstellen eines Videoprofils für progressives Streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
-Wenn Sie die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht verwenden, werden alle dem Profil hinzugefügten Kodierungsvorgaben als individuelle Videoausgabedarstellungen für Single-Bitrate-Streaming oder progressive Videowiedergabe behandelt. Außerdem gibt es keine Validierung, um sicherzustellen, dass alle Videoausgabedarstellungen dasselbe Seitenverhältnis aufweisen.
+Wenn Sie die Option **[!UICONTROL Kodieren für adaptives Streaming]** nicht verwenden möchten, werden alle Kodierungsvoreinstellungen, die Sie dem Profil hinzufügen, als einzelne Videoausgabedarstellungen für Single-Bitrate-Streaming oder progressive Videoausgabesdarstellung behandelt. Außerdem gibt es keine Validierung, um sicherzustellen, dass alle Videoausgabedarstellungen dasselbe Seitenverhältnis aufweisen.
 
 Die Videoformat-Codecs H.264 (.mp4) und WebM werden unterstützt.
 
@@ -210,7 +210,7 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um weitere Beschreibu
 1. Gehen Sie folgendermaßen vor:
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein.
    * Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-Um die Größe des Videos visualisieren zu können, wählen Sie das Informationssymbol für die Höhe aus, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Verwenden Sie die Seite **[!UICONTROL Größenberechnung]** , um die Videogröße (blauer Kasten) weiter festzulegen. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke des Dialogfelds **[!UICONTROL X]** aus.
+Um die Größe des Videos visualisieren zu können, wählen Sie das Informationssymbol für die Höhe aus, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** (blaues Feld) wunschgemäß weiter an. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke des Dialogfelds **[!UICONTROL X]** aus.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** aktiviert ist (empfohlen).
@@ -221,13 +221,13 @@ Wählen Sie neben jeder Option das Informationssymbol aus, um weitere Beschreibu
 1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wiederholen Sie die Schritte 4 bis 9, um weitere Kodierungsvorgaben zu erstellen.
+   * Wiederholen Sie Schritt 4 bis 9, um weitere Kodierungsvorgaben zu erstellen.
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden für Videos hinzuzufügen:
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
 
    * Wählen Sie auf der Seite &quot;Videoprofil bearbeiten&quot;rechts neben der Überschrift Smart Crop Ratio die Option **[!UICONTROL Neu hinzufügen]**.
-   * Geben Sie im Feld Name einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
+   * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
@@ -241,9 +241,9 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 ## Verwenden von benutzerdefinierten Videokodierungsparametern {#using-custom-added-video-encoding-parameters}
 
-Sie können ein vorhandenes Videokodierungsprofil bearbeiten, um erweiterte Videokodierungsparameter zu nutzen, die beim Erstellen oder Bearbeiten eines Videoprofils in Experience Manager nicht in der Benutzeroberfläche vorhanden sind. Sie können Ihrem bestehenden Profil einen oder mehrere erweiterte Parameter wie minBitrate und maxBitrate hinzufügen.
+Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Parametern zur Videokodierung zu profitieren, die beim Erstellen oder Bearbeiten eines Videoprofils in Adobe Experience Manager nicht in der Benutzeroberfläche vorhanden sind. Sie können Ihrem bestehenden Profil einen oder mehrere erweiterte Parameter wie „minBitrate“ und „maxBitrate“ hinzufügen.
 
-**So verwenden Sie benutzerdefinierte Videokodierungsparameter:**
+**So verwenden Sie anwenderdefinierte Videokodierungsparameter:**
 
 1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie auf der Seite „CRXDE Lite“ im linken Bereich des Explorers in das folgende Verzeichnis:
@@ -264,13 +264,13 @@ Sie können ein vorhandenes Videokodierungsprofil bearbeiten, um erweiterte Vide
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>Zu verwendende H.264-Stufe für die Kodierung. Normalerweise wird diese Ebene automatisch anhand der von Ihnen verwendeten Kodierungseinstellungen bestimmt.</td>
+   <td>Zu verwendende H.264-Stufe für die Kodierung. Normalerweise wird diese basierend auf den Kodierungseinstellungen automatisch bestimmt.</td>
    <td><code>String</code></td>
    <td><p>10 * H.264-Stufe</p> <p>Zum Beispiel: 3,0 = 30, 1,3 = 13</p> <p>Kein Standardwert.</p> </td>
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit Sie alle 2-10 Sekunden einen Keyframe generieren können. Bei 30 Frames pro Sekunde beträgt das Keyframe-Intervall beispielsweise 60-300.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videokodierungen und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
+   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit Sie alle 2 bis 10 Sekunden einen Keyframe generieren können. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
    <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist 60–90.</p> </td>
   </tr>
@@ -353,11 +353,11 @@ Wählen Sie das Informationssymbol für eine Beschreibung des adaptiven Streamin
 
 ## Anwenden eines Videoprofils auf Ordner {#applying-a-video-profile-to-folders}
 
-Wenn Sie einem Ordner ein Videoprofil zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Daher können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie ein Videoprofil einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
 Wenn Sie einem Ordner ein anderes Videoprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
-Ordner, denen ein Profil zugewiesen ist, werden in der Benutzeroberfläche mit dem Namen des Profils angezeigt, der im Kartennamen angezeigt wird.
+Ordner, denen ein Profil zugewiesen wurde, werden in der Benutzeroberfläche durch den Namen des Profils angegeben, der im Kartennamen angezeigt wird.
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
@@ -391,7 +391,7 @@ Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen
 
 ### Globales Anwenden eines Videoprofils {#applying-a-video-profile-globally}
 
-Sie können ein Experience Manager nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass auf alle Inhalte, die in -Assets in einem beliebigen Ordner hochgeladen werden, das ausgewählte Profil angewendet wird.
+Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in Adobe Experience Manager Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet.
 
 Siehe auch [Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -406,7 +406,7 @@ Siehe auch [Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-medi
 
 Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videoprofil-Verarbeitungsauftrags visuell überwachen können.
 
-In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Der Ordner `error.log` befindet sich im Ordner `logs` , in dem Ihre Instanz von Experience Manager installiert ist.
+In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
 
 ## Entfernen von Videoprofilen aus Ordnern {#removing-a-video-profile-from-folders}
 
