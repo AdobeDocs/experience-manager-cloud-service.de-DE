@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Funktionstests sind in drei Typen unterteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und benutzerdefinierte UI-Tests"
+>abstract="Funktionstests sind in drei Typen unterteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und Tests von benutzerdefinierten Benutzeroberflächen"
 
 Funktionstests werden in drei Typen eingeteilt:
 
