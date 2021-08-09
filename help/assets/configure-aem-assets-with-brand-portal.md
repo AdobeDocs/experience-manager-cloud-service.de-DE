@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von AEM Assets as a  [!DNL Cloud Service]  mit Brand Portal
+title: Konfigurieren von AEM Assets as a [!DNL Cloud Service] mit Brand Portal
 description: Konfigurieren von AEM Assets mit Brand Portal.
 contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset-Verteilung,Konfiguration
@@ -12,7 +12,7 @@ ht-degree: 98%
 
 ---
 
-# Konfigurieren von AEM Assets as a [!DNL Cloud Service] mit Brand Portal {#configure-aem-assets-with-brand-portal}
+# Konfigurieren von AEM Assets as a[!DNL Cloud Service]mit Brand Portal {#configure-aem-assets-with-brand-portal}
 
 Durch das Konfigurieren von Adobe Experience Manager Assets mit Brand Portal können Sie genehmigte Marken-Assets aus der Adobe Experience Manager Assets as a [!DNL Cloud Service]-Instanz in Brand Portal veröffentlichen und an die Brand Portal-Anwender verteilen.
 
@@ -76,7 +76,7 @@ In diesem Fall ist die Mandanten-ID die IMS-Org.
 
 Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die URL von Brand Portal aussieht:
 
-1. Melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/de) an und navigieren Sie zu **[!UICONTROL Produkte]**.
+1. Melden Sie sich bei der [Admin Console](http://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
 1. Wählen Sie in der linken Schiene **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Klicken Sie auf **[!UICONTROL Wechseln zu Brand Portal]**, um Brand Portal direkt im Browser zu öffnen.
 
@@ -253,7 +253,7 @@ In der Adobe Developer Console werden Projekte und APIs auf Brand Portal-Mandant
 
 Führen Sie die folgenden Schritte aus, um die Anmeldedaten für das Service-Konto und die JWT-Payload zu generieren:
 
-1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standardeinstellung ist [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
