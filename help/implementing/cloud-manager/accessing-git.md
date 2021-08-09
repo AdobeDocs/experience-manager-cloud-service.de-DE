@@ -5,7 +5,7 @@ description: Auf dieser Seite wird beschrieben, wie Sie auf das Git-Repository z
 seo-description: Auf dieser Seite erfahren Sie, wie Sie auf Ihr Git-Repository zugreifen und es verwalten.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
