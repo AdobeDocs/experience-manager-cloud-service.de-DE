@@ -3,7 +3,7 @@ title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager 
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3124'
 ht-degree: 100%
 
@@ -15,11 +15,11 @@ Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer 
 
 In diesem Dokument werden zunächst einige [Best Practices für SEO](#seo-best-practices) und Empfehlungen zu deren Erreichung bei einer AEM as a Cloud Service-Implementierung beschrieben. Anschließend beschäftigt sich das Dokument intensiver mit einigen der [komplexeren Implementierungsschritte](#aem-configurations) aus dem ersten Abschnitt.
 
-## Best Practices für SEO  {#seo-best-practices}
+## Best Practices für SEO {#seo-best-practices}
 
 Dieser Abschnitt beschreibt einige allgemeine Best Practices für SEO
 
-### URLs  {#urls}
+### URLs {#urls}
 
 Hinsichtlich URLs bestehen einige allgemein akzeptierte Best Practices.
 
@@ -46,7 +46,6 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
    * Selektoren, die einen semantischen Wert bieten, sind auf Seiten, die Selektoren verwenden, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine das auch nicht.
    * Beispiel:
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 wird vorgezogen gegenüber 
 `mybrand.com/products/product-detail.1234.html`
@@ -109,7 +108,7 @@ In den letzten Jahren geht der Trend jedoch dahin, diese zu entfernen, um URLs l
 * ermöglichen es, die Seiten auf dem Dispatcher zwischenzuspeichern, was häufig die Sicherheit erhöht;
 * ermöglichen es, Inhalte direkt zu bearbeiten, anstelle der Verwendung eines allgemeinen Servlets zur Inhaltsabfrage. Dadurch erhalten Sie die Vorteile von ACLs, die Sie auf das Repository anwenden, und Filter, die Sie für den Dispatcher verwenden.
 
-#### Verwenden von Selektoren für Servlets   {#using-selectors-for-servlets}
+#### Verwenden von Selektoren für Servlets {#using-selectors-for-servlets}
 
 AEM bietet uns zwei Optionen zum Schreiben von Servlets:
 
@@ -118,7 +117,7 @@ AEM bietet uns zwei Optionen zum Schreiben von Servlets:
 
 Das folgende Beispiel zeigt, wie diesen beiden Mustern folgende Servlets registriert werden, sowie den Vorteil, der durch die Verwendung von Sling-Servlets erzielt wird.
 
-#### Container-Servlets (eine Ebene nach unten)   {#bin-servlets-one-level-down}
+#### Container-Servlets (eine Ebene nach unten) {#bin-servlets-one-level-down}
 
 **Container**-Servlets folgen dem Muster, das viele Entwickler für die J2EE-Programmierung verwenden. Das Servlet wird an einem bestimmten Punkt des Pfades registriert, was im Falle von AEM häufig unter `/bin` geschieht, und Sie extrahieren die erforderlichen Abfrageparameter aus der Abfragezeichenfolge.
 
@@ -226,7 +225,7 @@ Bei der Standardinstallation von AEM:
 * ist der Standardwert der Eigenschaft
    **Zuordnungsspeicherort** ( `resource.resolver.map.location`)
 
-* `/etc/map`.
+* ist standardmäßig auf `/etc/map` eingestellt.
 
 Zuordnungsdefinitionen können in diesem Verzeichnis hinzugefügt werden, um eingehende Anfragen zuzuordnen, URLs auf Seiten in AEM umzuschreiben oder beides.
 
@@ -255,7 +254,7 @@ Es gibt jedoch einfachere Möglichkeiten, dies zu lösen:
    * **Apache Sling Resource Resolver Factory**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
-   Es wird empfohlen, die zur Kürzung von URLs zu regulären Ausdrücken notwendigen Zuordnungen zu erstellen und diese Konfigurationen dann unter einem OsgiConfignod, `config.publish`, zu definieren, der im Build enthalten ist.
+   Es wird empfohlen, die zur Kürzung von URLs zu regulären Ausdrücken notwendigen Zuordnungen zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode, `config.publish`, zu definieren, der im Build enthalten ist.
 
    Anstatt Zuordnungen in `/etc/map` zu definieren, können diese direkt den Eigenschaften der **URL-Zuordnungen** (`resource.resolver.mapping`) zugeordnet werden:
 
@@ -285,7 +284,7 @@ Es gibt jedoch einfachere Möglichkeiten, dies zu lösen:
    }
    ```
 
-#### Apache HTTP-Server mod_rewrite   {#apache-http-server-mod-rewrite}
+#### Apache HTTP-Server mod_rewrite {#apache-http-server-mod-rewrite}
 
 Bisher haben Sie die Zuordnungen gemeinsam mit der Logik in den Komponenten implementiert, um diese Zuordnungen bei der Ausgabe von URLs auf Seiten zu verwenden.
 
@@ -302,7 +301,7 @@ Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihre
 </VirtualHost>
 ```
 
-### Kanonische URL-Tags   {#canonical-url-tags}
+### Kanonische URL-Tags {#canonical-url-tags}
 
 Kanonische URL-Tags sind Link-Tags die in der Kopfzeile des HTML-Dokuments eingegeben werden und festlegen, wie Suchmaschinen die Seite bei der Indizierung des Inhalts behandeln sollen. Ihr Vorteil besteht darin, dass sichergestellt wird, dass eine Seite (verschiedene Versionen davon) auf gleiche Weise indiziert wird, auch wenn die auf die Seite verweisende URL Unterschiede enthält.
 
@@ -354,7 +353,7 @@ Wahlweise können Sie in einer Live-Umgebung bestimmte Pfade ablehnen, die nicht
 
 Der Nachteil der Platzierung einer Datei `robots.txt` im Stammverzeichnis der Website besteht darin, dass Dispatcher-Flush-Anfragen diese Datei löschen könnten und die URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als `DOCROOT` verschieben, wie in der Apache HTTP Server-Konfiguration festgelegt. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
 
-### Erstellen einer XML-Sitemap in AEM   {#building-an-xml-sitemap-on-aem}
+### Erstellen einer XML-Sitemap in AEM {#building-an-xml-sitemap-on-aem}
 
 Crawler verwenden XML-Sitemaps, um die Websitestrukturen besser zu verstehen. Während es keine Garantie dafür gibt, dass die Bereitstellung einer Sitemap zu verbesserten SEO-Rankings führt, ist dies dennoch eine allgemein anerkannte Best Practice. Sie können die XML-Datei manuell auf einem Webserver als Sitemap verwalten, es wird jedoch empfohlen, die Sitemap programmatisch zu generieren, was gewährleistet, dass die Sitemap automatisch Änderungen widerspiegelt, sobald sie von den Autoren vorgenommen werden.
 
@@ -364,8 +363,8 @@ Um eine Sitemap programmatisch zu generieren, registrieren Sie einen Sling-Servl
 >
 >Sie können ein Sling-Servlet registrieren, um auf den `sitemap`-Selektor mit der Endung `xml` zu warten. Dies führt zur Verarbeitung der Anfrage durch das Servlet, wenn eine URL angefordert wird, die wie folgt endet:
 >    `/<path-to>/page.sitemap.xml`
->Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
->Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
+Sie können die angeforderte Ressource von der Anfrage erhalten und eine Sitemap für diesen Punkt im Inhaltsbaum generieren, indem Sie die JCR-APIs verwenden.
+Ein solcher Ansatz ist dann vorteilhaft, wenn mehrere Sites von derselben Instanz bedient werden. Eine Anfrage an `/content/siteA.sitemap.xml` würde eine Sitemap für `siteA` generieren, während eine Anfrage an `/content/siteB.sitemap.xml` eine Sitemap für `siteB` generieren würde, ohne dass zusätzlicher Code geschrieben werden muss.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 
