@@ -35,4 +35,4 @@ ht-degree: 88%
       + [Verwenden der CIF-Katalogauswahl](customizing/use-cif-pickers.md)
 + [Adobe Commerce-PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migration](migration.md)
-+ [Häufig gestellte Fragen (FAQ) ](faq.md)
++ [Häufig gestellte Fragen (FAQ)](faq.md)
