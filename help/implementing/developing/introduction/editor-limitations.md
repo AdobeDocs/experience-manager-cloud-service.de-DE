@@ -3,7 +3,7 @@ title: Editor-Einschränkungen
 description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
 ht-degree: 100%
 
@@ -13,11 +13,11 @@ ht-degree: 100%
 
 Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
 
-## Funktionale Einschränkungen  {#functional-limitations}
+## Funktionale Einschränkungen {#functional-limitations}
 
 Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten möglicherweise mit den folgenden funktionalen Einschränkungen konfrontiert.
 
-### Links nicht aktiv   {#links-not-active}
+### Links nicht aktiv {#links-not-active}
 
 Beim [Bearbeiten einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) sind Links nicht aktiv.
 
@@ -31,13 +31,13 @@ Seiten dürfen nicht `structure` genannt werden. Seiten mit dem Namen `structure
 
 Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglicherweise mit den folgenden Einschränkungen konfrontiert.
 
-### Absolut positionierte Elemente   {#absolutely-positioned-elements}
+### Absolut positionierte Elemente {#absolutely-positioned-elements}
 
 Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
 
 * Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
 
-### vh-Einheiten   {#vh-units}
+### vh-Einheiten {#vh-units}
 
 `vh`-Einheiten werden nicht unterstützt, da die iframe-Höhe von AEM automatisch angepasst werden muss.
 
