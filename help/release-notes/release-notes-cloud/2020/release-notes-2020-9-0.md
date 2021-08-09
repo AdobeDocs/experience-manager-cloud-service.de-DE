@@ -21,7 +21,7 @@ Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wur
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* Das JavaScript-SDK für den Single Page Application (SPA)-Editor [ist jetzt Open-Source-basiert.](/help/implementing/developing/hybrid/reference-materials.md)
+* Das JavaScript-SDK für den Single Page Application (SPA)-Editor [ist jetzt Open-Source-basiert](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
 
@@ -68,7 +68,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version 2020.9.0 von [!UICONTROL Cloud Manager] wurde am 3. September 2020 veröffentlicht.
+Die [!UICONTROL Cloud Manager]-Version 2020.9.0 wurde am 3. September 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
