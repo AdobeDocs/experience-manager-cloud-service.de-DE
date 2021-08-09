@@ -3,7 +3,7 @@ title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >
 Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-## Wann ist die Verwendung von Experience Fragments sinnvoll?   {#when-should-you-use-experience-fragments}
+## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
@@ -167,7 +167,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Wählen Sie **Experience Fragment** aus, um den Assistenten zum **Erstellen von Experience Fragments** zu öffnen.
 
-   Wählen Sie die gewünschte Vorlage **** aus und klicken Sie auf **Weiter**:
+   Wählen Sie die gewünschte **Vorlage** aus und klicken Sie auf **Weiter**:
 
    ![Auswählen einer Experience Fragment-Vorlage](/help/sites-cloud/authoring/assets/xf-03.png)
 
@@ -272,7 +272,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![Schaltfläche „Baustein“](/help/sites-cloud/authoring/assets/xf-10.png)
 
-1. Geben Sie den Namen des Bausteins **** ein und bestätigen Sie ihn mit der Option **Konvertieren**:
+1. Geben Sie den **Namen des Bausteins** ein und bestätigen Sie ihn mit der Option **Konvertieren**:
 
    ![Baustein „Name“](/help/sites-cloud/authoring/assets/xf-11.png)
 
@@ -284,7 +284,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* **** Zum Master wechseln: zum Öffnen der Master-Variante in einer neuen Registerkarte
+* **Zur Hauptvariante wechseln**: zum Öffnen der Hauptvariante in einer neuen Registerkarte
 * **Umbenennen**
 * **Löschen**
 
@@ -348,9 +348,9 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 >[!NOTE]
 >
->Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Exportieren von Experience Fragments    {#exporting-experience-fragments}
+## Exportieren von Experience Fragments {#exporting-experience-fragments}
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
 
