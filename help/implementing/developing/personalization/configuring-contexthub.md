@@ -1,15 +1,15 @@
 ---
-title: 'Konfigurieren von ContextHub '
+title: Konfigurieren von ContextHub
 description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1683'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren von ContextHub  {#configuring-contexthub}
+# Konfigurieren von ContextHub {#configuring-contexthub}
 
 ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Ausführlichere Informationen zu ContextHub finden Sie in der [ContextHub-Übersicht für Entwickler](contexthub.md).
 
@@ -26,7 +26,7 @@ Der Service kann entweder mithilfe der [Web-Konsole](/help/implementing/deployin
 
 Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Autoreninstanzen. Auf Seiten von Veröffentlichungsinstanzen wird die Benutzeroberfläche nicht angezeigt.
 
-## Hinzufügen von ContextHub-UI-Modi und -Modulen   {#adding-contexthub-ui-modes-and-modules}
+## Hinzufügen von ContextHub-UI-Modi und -Modulen {#adding-contexthub-ui-modes-and-modules}
 
 Konfigurieren Sie die UI-Modi und -Module, die auf der ContextHub-Symbolleiste im Vorschaumodus angezeigt werden:
 
@@ -39,7 +39,7 @@ UI-Modi werden als Symbole auf der linken Seite der Symbolleiste angezeigt. Wenn
 
 Bei Symbolen handelt es sich um Verweise aus der [Coral-Bibliothek mit Benutzeroberflächensymbolen](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
-### Hinzufügen eines UI-Modus   {#adding-a-ui-mode}
+### Hinzufügen eines UI-Modus {#adding-a-ui-mode}
 
 Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. Beim Erstellen des UI-Modus geben Sie den Titel und das Symbol an, der bzw. das in der ContextHub-Symbolleiste angezeigt werden soll.
 
@@ -53,12 +53,12 @@ Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. 
 1. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * UI-Modustitel: Der Titel, mit dem der UI-Modus identifiziert wird.
-   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
+   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
 1. Klicken oder tippen Sie auf „Speichern“.
 
-### Hinzufügen eines UI-Moduls   {#adding-a-ui-module}
+### Hinzufügen eines UI-Moduls {#adding-a-ui-module}
 
 Fügen Sie ein ContextHub-UI-Modul einem UI-Modus hinzu, damit es in der ContextHub-Symbolleiste zum Einblenden einer Vorschau für Seiteninhalte angezeigt wird. Beim Hinzufügen eines UI-Moduls erstellen Sie eine Instanz eines Modultyps, der für ContextHub registriert ist. Sie müssen den Namen des zugeordneten Modultyps kennen, um ein UI-Modul hinzufügen zu können.
 
@@ -93,11 +93,11 @@ Die Eigenschaften von UI-Modulen enthalten eine Detailkonfiguration, in der Sie 
 1. (Optional) Geben Sie ein JSON-Objekt ein, um das UI-Modul zu konfigurieren und so die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Erstellen eines ContextHub-Store   {#creating-a-contexthub-store}
+## Erstellen eines ContextHub-Store {#creating-a-contexthub-store}
 
 Erstellen Sie einen ContextHub-Store, in dem Benutzerdaten dauerhaft gespeichert werden können und bei Bedarf zugänglich sind. ContextHub-Stores basieren auf registrierten Store-Kandidaten. Beim Erstellen des Stores benötigen Sie den Wert von storeType, unter dem der Store-Kandidat registriert wurde. (Siehe [Erstellen von benutzerdefinierten Store-Kandidaten](extending-contexthub.md#creating-custom-store-candidates).)
 
-### Store-Detailkonfiguration   {#detailed-store-configuration}
+### Store-Detailkonfiguration {#detailed-store-configuration}
 
 Beim Konfigurieren eines Stores können Sie über die Eigenschaft „Detailkonfiguration“ Werte für Store-spezifische Eigenschaften angeben. Der Wert basiert auf dem Parameter `config` der Store-Funktion `init`. Es hängt daher vom Store ab, ob dieser Wert angegeben werden muss und welches Format der Wert haben muss.
 
@@ -132,7 +132,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 1. (Optional) Geben Sie im Feld „Detailkonfiguration (JSON)“ ein JSON-Objekt ein, um die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Beispiel: Verwenden eines JSONP-Service   {#example-using-a-jsonp-service}
+## Beispiel: Verwenden eines JSONP-Service {#example-using-a-jsonp-service}
 
 In diesem Beispiel wird veranschaulicht, wie Sie einen Store konfigurieren und die Daten in einem UI-Modul anzeigen. In diesem Beispiel wird der MD5-Service der Website „jsontest.com“ als Datenquelle für einen Store verwendet. Der Service gibt den MD5-Hashcode einer bestimmten Zeichenfolge im JSON-Format zurück.
 
@@ -145,7 +145,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 }
 ```
 
-### Erstellen des Stores „contexthub.generic-jsonp“   {#creating-a-contexthub-generic-jsonp-store}
+### Erstellen des Stores „contexthub.generic-jsonp“ {#creating-a-contexthub-generic-jsonp-store}
 
 Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
@@ -201,7 +201,7 @@ Nutzen Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-module
 
 Ein Debugmodus für ContextHub kann aktiviert werden, um die Fehlerbehebung zuzulassen. Der Debugmodus kann entweder über die ContextHub-Konfiguration oder per CRXDE aktiviert werden.
 
-### Per Konfiguration   {#via-the-configuration}
+### Per Konfiguration {#via-the-configuration}
 
 Bearbeiten Sie die Konfiguration von ContextHub und aktivieren Sie die Option **Debuggen**.
 
