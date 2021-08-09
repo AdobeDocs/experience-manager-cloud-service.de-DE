@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren Sie den RTE, um barrierefreie Web-Seiten und Websites zu erstellen.
-description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um barrierefreie Websites in  [!DNL Adobe Experience Manager] zu erstellen.
+description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um barrierefreie Websites in [!DNL Adobe Experience Manager] zu erstellen.
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Für die `Text`-Komponente in [!DNL Experience Manager] zeigt der folgende Scree
 Anweisungen zum Konfigurieren von RTE finden Sie auf der Seite [Konfigurieren des Rich-Text-Editors](rich-text-editor.md). Der Artikel umfasst:
 
 * [Plug-ins und ihre Funktionen](rich-text-editor.md#aboutplugins)
-* [Konfigurationsspeicherorte](rich-text-editor.md#understand-the-configuration-paths-and-locations)
+* [Konfigurations-Speicherorte](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Konfigurieren anderer RTE-Funktionen](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
@@ -48,7 +48,7 @@ Es stehen neue semantische Blockformate als Auswahl zur Verfügung.
 
 Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt [!DNL Experience Manager] eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen können die Autoren die entsprechenden Strukturelemente auswählen, z. B. Überschriften, und globale Stile verwenden, die über die Option „Stile“ ausgewählt wurden, um ein sauberes Markup und bessere Optionen für Benutzer sicherzustellen, die mit ihren eigenen Stylesheets und korrekt strukturierten Inhalten im Internet surfen.
 
-## Verwenden der Funktion „Quellenbearbeitung“  {#use-of-the-source-edit-feature}
+## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
 
 In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Befolgung des WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](rich-text-editor.md#aboutplugins).
 
