@@ -1,11 +1,11 @@
 ---
 title: 'Registrierung, Anmeldung und Anwenderprofil '
-description: Erfahren Sie mehr über Registrierung, Anmeldung, Benutzerdaten und Gruppensynchronisierung für AEM als Cloud Service.
+description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ## Einführung {#introduction}
 
-Webanwendungen bieten häufig Kontoverwaltungsfunktionen, mit denen sich Endbenutzer auf einer Website registrieren können, auf der ihre Benutzerdaten gespeichert werden. Dadurch können sie sich in Zukunft anmelden und ein konsistentes Erlebnis genießen. In diesem Artikel werden die folgenden Konzepte für AEM als Cloud Service beschrieben:
+Web-Programme bieten häufig Funktionen zur Kontoverwaltung, mit denen sich Endanwender auf einer Website registrieren können. Dadurch werden ihre Anwenderdaten beibehalten, sodass sie sich auch künftig anmelden und von einem einheitlichen Anwendererlebnis profitieren können. In diesem Artikel werden die folgenden Konzepte für AEM as a Cloud Service beschrieben:
 
 * Registrierung
 * Anmeldung
@@ -27,7 +27,7 @@ Webanwendungen bieten häufig Kontoverwaltungsfunktionen, mit denen sich Endbenu
 
 ## Registrierung {#registration}
 
-Wenn sich ein Endanwender für ein Konto in einem AEM-Programm registriert, wird im Publish-Service von AEM ein Benutzerkonto erstellt, wie in einer Anwenderressource unter `/home/users` im JCR-Repository dargestellt.
+Wenn sich ein Endanwender für ein Konto in einem AEM-Programm registriert, wird im Veröffentlichungs-Service von AEM ein Benutzerkonto erstellt, wie in einer Anwenderressource unter `/home/users` im JCR-Repository dargestellt.
 
 Zur Implementierung der Registrierung gibt es zwei Ansätze, wie nachfolgend beschrieben.
 
@@ -48,7 +48,7 @@ In einigen Fällen erfolgte die Registrierung oder Anwendererstellung zuvor in e
 
 ## Anmeldung {#login}
 
-Sobald ein Endanwender beim Publish-Service von AEM registriert ist, kann sich dieser Anwender für den authentifizierten Zugriff anmelden (mithilfe von AEM-Autorisierungsmechanismen). Außerdem können dann anwenderspezifische Daten wie seine Profildaten beibehalten werden.
+Sobald ein Endanwender beim Veröffentlichungs-Service von AEM registriert ist, kann sich dieser Anwender für den authentifizierten Zugriff anmelden (mithilfe von AEM-Autorisierungsmechanismen). Außerdem können dann anwenderspezifische Daten wie seine Profildaten beibehalten werden.
 
 ## Implementierung {#implementation}
 
