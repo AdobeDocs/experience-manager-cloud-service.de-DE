@@ -44,7 +44,7 @@ Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisc
 
 1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
 
-### Zuordnen von Ressourcen zum Projekt   {#associating-resources-with-your-project}
+### Zuordnen von Ressourcen zum Projekt {#associating-resources-with-your-project}
 
 Da Projekte es Ihnen ermöglichen, Ressourcen zu einer Einheit zu gruppieren, können Sie diese Ressourcen nun Ihrem Projekt hinzufügen. Die Ressourcen werden als **Kacheln** bezeichnet. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschrieben.
 
@@ -138,8 +138,7 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 1. Öffnen Sie das Projekt in der **Projektekonsole** und suchen Sie die Kachel **Projektinformationen**.
 
    >[!NOTE]
-   >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
