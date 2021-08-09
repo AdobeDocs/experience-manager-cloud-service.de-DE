@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ Wird Ihre Blueprint-Konfiguration verwendet, können Sie sie mit einer Rollout-K
 
 ### Erstellen und Bearbeiten von Blueprint-Konfigurationen {#creating-editing-blueprint-configurations}
 
-Blueprint-Konfigurationen werden als unveränderliche Daten betrachtet und sind daher zur Laufzeit nicht bearbeitbar. Aus diesem Grund müssen alle Konfigurationsänderungen über Git mithilfe der CI/CD-Pipeline bereitgestellt werden.
+Blueprint-Konfigurationen werden als unveränderliche Daten betrachtet und sind daher zur Laufzeit nicht bearbeitbar. Aus diesem Grund müssen alle Konfigurationsänderungen über Git unter Verwendung der CI/CD-Pipeline bereitgestellt werden.
 
-Weitere Informationen finden Sie im Artikel [Wesentliche Änderungen an Adobe Experience Manager (AEM) als Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Weitere Informationen finden Sie im Artikel [Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
 
 Die folgenden Schritte stehen einem Administrator in einer lokalen Entwicklungsinstanz nur zu Test- und Entwicklungszwecken zur Verfügung. Diese Optionen sind in keiner AEMaaCS-Cloud-Instanz verfügbar.
 
@@ -245,7 +245,7 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Wählen Sie in der Konsole **Sites** die Seite in der Live Copy aus und öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (aus der Symbolleiste).
+1. Wählen Sie in der **Sites**-Konsole die Seite in der Live Copy aus und öffnen Sie das Bedienfeld **[Referenzen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (in der Symbolleiste).
 1. Wählen Sie die Option **Blueprint** aus der Liste, um die mit dieser Seite verbundenen Blueprints anzuzeigen.
 1. Wählen Sie den erforderlichen Blueprint aus der Liste aus.
 1. Klicken oder tippen Sie auf **Rollout**.
@@ -608,7 +608,7 @@ Je nachdem, wo innerhalb der Struktur die Option **Trennen** verwendet wird, ist
 
    Weitere Änderungen an Seiten in der Blueprint **wirken sich nicht** auf die Live Copy aus.
 
-* **Trennen auf der Stammseite einer Live Copy**
+* **Trennen auf einer Unterseite einer Live Copy**
 
    Wenn dieser Vorgang auf einer Unterseite (oder im Zweig) in einer Live Copy durchgeführt wird:
 
