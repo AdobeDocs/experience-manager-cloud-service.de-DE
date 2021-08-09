@@ -45,8 +45,6 @@ Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **V
 Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
-
-
 Sie haben folgende Möglichkeiten:
 
 * Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
@@ -76,7 +74,7 @@ Der Texteditor im Vollbildmodus bietet:
 * Zugriff auf verschiedene [Aktionen](#actions)
 * Je nach [Format](#formats) weitere Formatierungsoptionen ([Rich-Text](#rich-text))
 
-### Aktionen  {#actions}
+### Aktionen {#actions}
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
@@ -370,7 +368,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
    * **Markdown**: Die Referenz bleibt bestehen.
 
 
-## Verwalten von Varianten    {#managing-variations}
+## Verwalten von Varianten {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
@@ -387,7 +385,7 @@ So erstellen Sie eine neue Variante:
    >[!NOTE]
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante    {#editing-a-variation}
+### Bearbeiten einer Variante {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -450,7 +448,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
