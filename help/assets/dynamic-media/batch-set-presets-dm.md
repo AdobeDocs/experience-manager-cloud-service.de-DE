@@ -14,7 +14,7 @@ ht-degree: 78%
 
 # Über Stapelsatzvorgaben {#about-bsp}
 
-Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset zu erleichtern, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen. Sie können die Vorgaben zusammen mit den von Ihnen in [!DNL Dynamic Media] eingeplanten Asset-Importaufträgen ausführen lassen. Jede Vorgabe ist ein eindeutig benannter, in sich abgeschlossener Satz von Anweisungen, die definieren, wie das Bildset oder Rotationsset mithilfe von Bildern erstellt wird, die den definierten Namenskonventionen im Vorgabenrezept entsprechen.
+Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organisation mehrerer Assets in einem Bildset oder Rotationsset zu erleichtern, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen. Sie können die Vorgaben zusammen mit den von Ihnen in [!DNL Dynamic Media] eingeplanten Asset-Importaufträgen ausführen lassen. Jede Vorgabe ist ein eindeutig benannter, in sich abgeschlossener Satz von Anweisungen, die definieren, wie das Bildset oder Rotationsset mithilfe von Bildern erstellt wird, die den definierten Benennungskonventionen im Vorgabenrezept entsprechen.
 
 >[!IMPORTANT]
 >
@@ -168,7 +168,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 ## Stapelsatzvorgabe bearbeiten {#edit-bsp}
 
-Sie können eine von Ihnen bereits erstellte Stapelsatzvorgabe bearbeiten. Sie können jede der Ausdrucksgruppen ändern, die Sie für die Asset-Benennungskonvention oder die Asset-Reihenfolge erstellt haben. Bei Bedarf können Sie auch den Zielordner aktualisieren und Namenskonventionen festlegen.
+Sie können eine von Ihnen bereits erstellte Stapelsatzvorgabe bearbeiten. Sie können jede der Ausdrucksgruppen ändern, die Sie für die Asset-Benennungskonvention oder die Asset-Reihenfolge erstellt haben. Bei Bedarf können Sie auch den Zielordner aktualisieren und Benennungskonventionen festlegen.
 
 Der Name und der Vorgabetyp der Vorgabe (Bildset oder Rotationsset) können jedoch nicht geändert werden. Wenn der Name einer Vorgabe geändert werden muss, können Sie die vorhandene Vorgabe kopieren und einen neuen Namen angeben. Siehe [Eine Stapelsatzvorgabe kopieren](#copy-bsp).
 
