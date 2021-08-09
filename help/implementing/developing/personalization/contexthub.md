@@ -3,7 +3,7 @@ title: ContextHub
 description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -44,6 +44,6 @@ Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 * Entwickler können [anwenderdefinierte Speichertypen erstellen](extending-contexthub.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](adding-contexthub.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
-## Segmentierung  {#segmentation}
+## Segmentierung {#segmentation}
 
 ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](adding-contexthub.md#determining-resolved-contexthub-segments).
