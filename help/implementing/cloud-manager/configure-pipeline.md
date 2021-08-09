@@ -5,7 +5,7 @@ exl-id: d2024b42-9042-46a0-879e-110b214c7285
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
    * **Sofort abbrechen**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort genehmigen**  - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
+   * **Sofort genehmigen**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
 
 1. Die Einstellungen für die Produktions-Pipeline enthalten eine dritte Registerkarte mit der Bezeichnung **Experience Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die im Experience Audit stets enthalten sein sollten.
@@ -101,7 +101,7 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
    Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
    >[!NOTE]
-   > Die konfigurierten Seiten werden an den Dienst gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
+   > Die konfigurierten Seiten werden an den Service gesendet und gemäß den Tests für Leistung, Barrierefreiheit, SEO (Suchmaschinenoptimierung), Best Practice und PWA (Progressive Web App) bewertet.
 
 1. Klicken Sie im Bildschirm **Pipeline bearbeiten** auf **Speichern**. Auf der Seite **Übersicht** wird nun die Karte **Ihr Programm bereitstellen** angezeigt. Klicken Sie auf **Bereitstellen**, um das Programm bereitzustellen.
 
@@ -110,11 +110,11 @@ Führen Sie folgende Schritte aus, um das Verhalten und die Voreinstellungen fü
 
 ## Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität {#non-production-pipelines}
 
-Zusätzlich zur Haupt-Pipeline, die für die Staging- und Produktionsumgebung bereitgestellt wird, können Kunden weitere Pipelines einrichten, die als **produktionsfremde Pipelines** bezeichnet werden. Diese Pipelines führen immer die Schritte Build-Erstellung und Tests der Code-Qualität aus. Sie können optional auch für AEM als Cloud Service-Umgebung bereitgestellt werden.
+Zusätzlich zur Haupt-Pipeline, die für die Staging- und Produktionsumgebung bereitgestellt wird, können Kunden weitere Pipelines einrichten, die als **Produktionsfremde Pipelines** bezeichnet werden. Diese Pipelines führen immer die Schritte Build-Erstellung und Tests der Code-Qualität aus. Sie können optional auch für AEM als Cloud Service-Umgebung bereitgestellt werden.
 
 Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
-1. Greifen Sie im Cloud Manager-Startbildschirm auf die Kachel **Nicht-Produktions-Pipelines** zu.
+1. Greifen Sie im Cloud Manager-Startbildschirm auf die Kachel **Produktionsfremde Pipelines** zu.
 
    ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
@@ -128,11 +128,11 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
    ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
-   * **Bearbeiten**: Ermöglicht die Bearbeitung der Pipeline-Einstellungen.
+   * **Bearbeiten**: Ermöglicht die Bearbeitung der Pipeline-Einstellungen
    * **Details**  - enthält Details zur Pipelineausführung
-   * **Erstellen**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann.
-   * **Zugriff auf Repo Info** : Ermöglicht dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen
-   * **Weitere Informationen** : Navigiert zum Verständnis der Dokumentation zur CI/CD-Pipeline.
+   * **Erstellen**: Wechselt zur Ausführungsseite, von der die Pipeline ausgeführt werden kann
+   * **Auf Repository-Informationen zugreifen**: Ermöglicht es dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen
+   * **Weitere Informationen**: Führt zu weiteren Informationen über die Dokumentation zur CI/CD-Pipeline.
 
 ## Die nächsten Schritte {#the-next-steps}
 
