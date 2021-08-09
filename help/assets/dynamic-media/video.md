@@ -15,7 +15,7 @@ ht-degree: 80%
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
-## Schnellstartanleitungen: Videos   {#quick-start-videos}
+## Schnellstartanleitungen: Videos {#quick-start-videos}
 
 Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt finden Sie Querverweise auf Themenüberschriften, unter denen Sie weitere Informationen erhalten.
 
@@ -179,7 +179,7 @@ Sie können die Möglichkeit, die Wiedergabekomponenten mithilfe von HTML5 und C
 
 Siehe auch [Viewer nur für Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) im [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
-### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für den Bit-Ratenwechsel verwendeten Videos auf allen MP4-Videos im adaptiven Videoset.
 
@@ -266,7 +266,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
  </tbody>
 </table>
 
-## Architektur der Dynamic Media-Videolösung   {#architecture-of-dynamic-media-video-solution}
+## Architektur der Dynamic Media-Videolösung {#architecture-of-dynamic-media-video-solution}
 
 Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die über DMGateway (im Hybridmodus von Dynamic Media) hochgeladen und kodiert sowie für die öffentliche Anzeige verfügbar gemacht werden.
 
@@ -278,7 +278,7 @@ Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die
 
 ## Best Practices für die Kodierung von Videos {#best-practices-for-encoding-videos}
 
-Der Workflow für **Dynamic Media-Videokodierung** kodiert Videos, wenn Dynamic Media aktiviert und Video-Cloud-Services eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des Veröffentlichungsfortschritts von YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Dynamic Media-Videokodierung]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine Dynamic Media verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
+Der Workflow für **Dynamic Media-Videokodierung** kodiert Videos, wenn Dynamic Media aktiviert und Video-Cloud-Services eingerichtet sind. Dieser Workflow erfasst den Workflow-Prozess und Informationen zu Fehlern. Siehe [Überwachen der Videokodierung und des Veröffentlichungsfortschritts von YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Wenn Sie Dynamic Media aktiviert und Video-Cloud Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie keine Dynamic Media verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 
 Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideodateien.
 
@@ -529,7 +529,7 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
 1. Geben Sie unter der Überschrift **[!UICONTROL Benutzern angezeigter Produktname]** im Textfeld ein, was Sie auf der Zustimmungsseite anzeigen möchten.
 
-   Wenn sich der Experience Manager-Administrator bei YouTube authentifiziert, wird ihm der Einverständnisbildschirm angezeigt. Experience Manager kontaktiert YouTube, um um Erlaubnis zu bitten.
+   Wenn sich der Experience Manager-Administrator bei YouTube authentifiziert, wird ihm der Einverständnisbildschirm angezeigt. Experience Manager kontaktiert YouTube, um Erlaubnis zu bitten.
 
 1. Wählen Sie **[!UICONTROL Continue]** aus.
 1. Wählen Sie auf der Seite Anmeldeinformationen zu Ihrem Projekt hinzufügen in Schritt 4 unter der Überschrift **[!UICONTROL Download-Anmeldeinformationen]** die Option **[!UICONTROL Download]** aus.
