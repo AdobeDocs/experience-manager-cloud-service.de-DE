@@ -17,7 +17,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel und Tags**
 
@@ -157,7 +157,7 @@ Konfigurieren der Miniaturansicht der Seite
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen**  - Festlegen von Eigenschaften für Cloud-Services
+* **Cloud Service-Konfigurationen** – Legen Sie Eigenschaften für Cloud Services fest
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
