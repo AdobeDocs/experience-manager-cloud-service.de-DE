@@ -3,7 +3,7 @@ title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -11,30 +11,33 @@ ht-degree: 100%
 
 # Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren{#content-fragments-configuring-components-for-rendering}
 
-Es gibt mehrere [erweiterte Dienste](#definition-of-advanced-services-that-need-configuration) zum Rendern von Inhaltsfragmenten. Um diese Dienste zu verwenden, müssen sich die Ressourcentypen dieser Komponenten dem Inhaltsfragmente-Framework bekannt machen.
+Es gibt mehrere [erweiterte Services](#definition-of-advanced-services-that-need-configuration) zum Rendern von Inhaltsfragmenten. Um diese Services zu verwenden, müssen sich die Ressourcentypen dieser Komponenten dem Inhaltsfragmente-Framework bekannt machen.
 
-Dies erfolgt durch die Konfiguration von [OSGi-Dienst – Konfiguration der Inhaltsfragment-Komponente](#osgi-service-content-fragment-component-configuration).
+Dies erfolgt durch die Konfiguration von [OSGi-Service – Konfiguration der Inhaltsfragment-Komponente](#osgi-service-content-fragment-component-configuration).
 
 Diese Informationen sind erforderlich, wenn Sie:
 
 * Ihre eigene auf einem Inhaltsfragment basierende Komponente bereitstellen
-* und die erweiterten Dienste verwenden müssen.
+* und die erweiterten Services verwenden müssen.
 
 Es wird empfohlen, die Kernkomponenten zu verwenden.
 
 >[!CAUTION]
 >
->* **Wenn Sie die unten beschriebenen [erweiterten Dienste](#definition-of-advanced-services-that-need-configuration)** nicht benötigen, können Sie diese Konfiguration ignorieren.
+>* **Wenn Sie die unten beschriebenen [erweiterten Services](#definition-of-advanced-services-that-need-configuration)** nicht benötigen, können Sie diese Konfiguration ignorieren.
+   >
+   >
+* **Wenn Sie die vordefinierte(n) Komponente(n) erweitern oder verwenden**, wird eine Änderung der OSGi-Konfiguration nicht empfohlen.
+   >
+   >
+* **Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Services zu nutzen**. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
 >
->* **Wenn Sie die vordefinierte(n) Komponente(n) erweitern oder verwenden**, wird eine Änderung der OSGi-Konfiguration nicht empfohlen.
 >
->* **Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Dienste zu nutzen**. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
->
->Es wird daher empfohlen, die Kernkomponenten zu verwenden.
+Es wird daher empfohlen, die Kernkomponenten zu verwenden.
 
-## Definition erweiterter Dienste, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
+## Definition erweiterter Services, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
 
-Die Dienste, die die Registrierung einer Komponente erfordern:
+Die Services, die die Registrierung einer Komponente erfordern:
 
 * bestimmen Abhängigkeiten während der Veröffentlichung korrekt (d. h. stellen sicher, dass Fragmente und Modelle automatisch mit einer Seite veröffentlicht werden können, wenn sie sich seit der letzten Veröffentlichung geändert haben),
 * unterstützen Inhaltsfragmente in der Volltextsuche,
@@ -43,11 +46,11 @@ Die Dienste, die die Registrierung einer Komponente erfordern:
 * Dispatcher-Flush für referenzierte Fragmente (wenn eine Seite, die ein Fragment enthält, erneut veröffentlicht wird),
 * verwenden absatzbasiertes Rendering.
 
-Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierten erweiterten Dienste zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
+Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierten erweiterten Services zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
 
-## OSGi-Dienst – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
+## OSGi-Service – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
-Die Konfiguration muss an den OSGi-Dienst **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
+Die Konfiguration muss an den OSGi-Service **Konfiguration der Inhaltsfragment-Komponente** gebunden sein:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
@@ -93,7 +96,7 @@ Die OSGi-Konfiguration lautet:
  </tbody>
 </table>
 
-Für einige Funktionen muss Ihre Komponente vordefinierte Konventionen einhalten. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für jeden Absatz (d. h. `jcr:paragraph` für jede Komponenteninstanz) durch Ihre Komponente definiert werden müssen, damit die Dienste sie korrekt erkennen und verarbeiten können.
+Für einige Funktionen muss Ihre Komponente vordefinierte Konventionen einhalten. In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für jeden Absatz (d. h. `jcr:paragraph` für jede Komponenteninstanz) durch Ihre Komponente definiert werden müssen, damit die Services sie korrekt erkennen und verarbeiten können.
 
 <table>
  <thead>
