@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manage
 
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden. Domains können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domains werden auf der Autorenseite nicht unterstützt.
 
-* AEM as a Cloud Service unterstützt keine Platzhalterdomänen.
+* AEM as a Cloud Service unterstützt keine Platzhalter-Domains.
 
 * Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten.
 
