@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Erstellen von Seitenvorlagen   {#creating-page-templates}
+# Erstellen von Seitenvorlagen {#creating-page-templates}
 
 Wenn Sie eine Seite erstellen, müssen Sie eine Vorlage auswählen. Diese wird als Grundlage für die Erstellung der neuen Seite verwendet. Die Vorlage definiert die Struktur der Seite, anfängliche Inhalte und die Komponenten, die verwendet werden können.
 
@@ -69,7 +69,7 @@ Die im vorliegenden Dokument beschriebenen Aufgaben sind zusammen mit der Rolle 
 
 Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
-* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Werkzeuge** verfügbar ist.
+* Verwenden Sie die **Vorlagenkonsole**, die im Bereich **Allgemein** der Konsole **Tools** verfügbar ist.
    * Oder direkt unter: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Erstellen Sie bei Bedarf [einen Ordner für die Vorlagen](#creating-a-template-folder-admin).
 * [Erstellen Sie eine neue Vorlage](#creating-a-new-template-template-author), die anfangs leer ist.
@@ -132,7 +132,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
 >
 >Adobe empfiehlt, aufgrund möglicher Leistungsauswirkungen nicht mehr als 1.000 Vorlagen zu verwenden.
 
-### Definieren von Vorlageneigenschaften – Vorlagenautor   {#defining-template-properties-template-author}
+### Definieren von Vorlageneigenschaften – Vorlagenautor {#defining-template-properties-template-author}
 
 Eine Vorlage kann die folgenden Eigenschaften haben:
 
@@ -167,7 +167,7 @@ So definieren Sie eine Vorlagenminiatur:
    * Wenn Sie mit dem Ergebnis nicht zufrieden sind, klicken oder tippen Sie auf **Löschen**, um ein anderes Bild hochzuladen oder die Miniatur neu zu erzeugen.
 1. Wenn Sie mit der Miniatur zufrieden sind, klicken oder tippen Sie auf **Speichern und schließen**.
 
-### Aktivieren und Zulassen einer Vorlage – Vorlagenautor   {#enabling-and-allowing-a-template-template-author}
+### Aktivieren und Zulassen einer Vorlage – Vorlagenautor {#enabling-and-allowing-a-template-template-author}
 
 Um beim Erstellen einer Seite eine Vorlage zu verwenden, gehen Sie wie folgt vor:
 
@@ -219,18 +219,18 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 ### Veröffentlichen einer Vorlage – Vorlagenautor {#publishing-a-template-template-author}
 
-Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die voll konfigurierte Vorlage veröffentlicht werden, damit sie in der Publishing-Umgebung verfügbar ist.
+Da auf die Vorlage verwiesen wird, wenn eine Seite dargestellt wird, muss die voll konfigurierte Vorlage veröffentlicht werden, damit sie in der Veröffentlichungsumgebung verfügbar ist.
 
 1. Wählen Sie in der **Vorlagenkonsole** eine Vorlage aus.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Assistenten zu öffnen.
 1. Wählen Sie die **Inhaltsrichtlinien**, die mit veröffentlicht werden sollen.
 1. Wählen Sie **Veröffentlichen** in der Symbolleiste, um den Vorgang abzuschließen.
 
-## Bearbeiten von Vorlagen  – Vorlagenautoren   {#editing-templates-template-authors}
+## Bearbeiten von Vorlagen – Vorlagenautoren {#editing-templates-template-authors}
 
 Beim Erstellen oder Bearbeiten einer Vorlage können Sie diverse Aspekte definieren. Das Bearbeiten von Vorlagen ähnelt dem Erstellen von Seiten.
 
-Mit der Auswahl **Modus** in der Symbolleiste können Sie die jeweiligen Aspekte der Vorlage auswählen und bearbeiten:
+Mit der **Modus**-Auswahl in der Symbolleiste können Sie die jeweiligen Aspekte der Vorlage auswählen und bearbeiten:
 
 * [Struktur](#editing-a-template-structure-template-author)
 * [Anfänglicher Inhalt](#editing-a-template-initial-content-author)
