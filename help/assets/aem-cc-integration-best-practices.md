@@ -3,7 +3,7 @@ title: Best Practices zur Integration mit  [!DNL Adobe Creative Cloud]
 description: Best Practices für die Integration einer Experience Manager-Implementierung mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Zusammenarbeit, Adobe Asset Link, Desktop App
+feature: Zusammenarbeit,Adobe Asset Link,Desktop-Programm
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
@@ -27,7 +27,7 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 
 ## Kooperationsanforderungen von Kreativen, Marketern und DAM-Benutzern {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-| Voraussetzungen | Anwendungsfall | Betroffene Oberflächen |
+| Voraussetzungen | Nutzungsszenario | Betroffene Oberflächen |
 |---|---|---|
 | Vereinfachtes Desktop-Erlebnis für Kreative | Optimieren Sie den Zugriff auf Assets von einem DAM ([!DNL Assets]) für Kreativprofis oder, allgemeiner, für Desktop-Benutzer, die mit nativen Asset-Erstellungsanwendungen arbeiten. Sie benötigen eine einfache und unkomplizierte Möglichkeit, um Änderungen an Experience Manager zu finden, zu verwenden (zu öffnen), zu bearbeiten und zu speichern sowie neue Dateien hochzuladen. | Windows- oder Mac-Desktop, Creative Cloud-Programme |
 | Bereitstellung hochwertiger, gebrauchsfertiger Assets von [!DNL Adobe Stock] | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | [!DNL Assets];  [!DNL Adobe Stock] Marktplatz; Metadatenfelder |
@@ -52,7 +52,7 @@ Festlegen der zu verwendenden Funktion
 
 ### Zuordnen von Nutzungsszenarien und Adobe-Lösungen {#mapping-of-use-cases-and-adobe-solutions}
 
-| Anwendungsfall | Adobe Asset Link | Experience Manager-Desktop-Programm | Bemerkungen oder alternative Methoden |
+| Nutzungsszenario | Adobe Asset Link | Experience Manager-Desktop-Programm | Bemerkungen oder alternative Methoden |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Discover - Durchsuchen von Ordnern | Ja | Experience Manager-Web-Benutzeroberfläche + Desktop-Aktionen | Deaktivieren Sie beim Durchsuchen der Netzwerkfreigabe die Miniaturansichten, um das Herunterladen binärer Asset-Dateien zu vermeiden. |
 | Discover - Zugriff auf Sammlungen | Ja | Experience Manager-Web-Benutzeroberfläche + Desktop-Aktionen |  |
