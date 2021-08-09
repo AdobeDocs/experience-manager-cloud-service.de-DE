@@ -113,7 +113,7 @@ Anmerkungen und zugehörige Zeichnungen können gelöscht werden.
 >
 >Beim Löschen einer Komponente werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind, unabhängig von ihrer Position auf der Seite als Ganzes.
 
-## Löschen von Zeichnungen nur {#deleting-sketches}
+## Nur Zeichnungen löschen {#deleting-sketches}
 
 Sie können bei allen zugehörigen Zeichnungen nur bestimmte Zeichnungen anstelle der gesamten Anmerkung löschen.
 
