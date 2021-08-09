@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
 source-wordcount: '2322'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Das Dateisystem der Instanz sollte in AEM as a Cloud Service verwendet werden. D
 
 Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Service gesendet werden.
 
-## Überwachung {#observation}
+## Beobachrung {#observation}
 
 In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse, lokal ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt sowohl für JCR-Ereignisse als auch für Sling-Ressourcen-Ereignisse. Zum Zeitpunkt einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall handelt es sich jedoch nicht um ein lokales Ereignis und es kann sogar sein, dass es bei einer zum Zeitpunkt der Veranlassung des Ereignisses laufenden Auswahl der führenden Instanz keine aktive führende Instanz gibt.
 
@@ -165,7 +165,7 @@ Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cl
 
 Kunden haben keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebungen.
 
-### Leistungsüberwachung {#performance-monitoring}
+### Performance-Überwachung {#performance-monitoring}
 
 Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können Programmmetriken nicht überwacht werden.
 
@@ -256,6 +256,6 @@ Wenn Port 587 angefordert wurde (nur zulässig, wenn der Mailserver Port 465 nic
 
 Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.tls` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
 
-## [!DNL Assets] Entwicklungsrichtlinien und Anwendungsfälle  {#use-cases-assets}
+## [!DNL Assets] Entwicklungsrichtlinien und Anwendungsfälle {#use-cases-assets}
 
 Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
