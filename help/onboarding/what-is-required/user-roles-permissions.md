@@ -32,7 +32,7 @@ In Cloud Manager sind derzeit vier Rollen für Anwender definiert, die die Verf�
 Um Ihre Rollen in Cloud Manager anzuzeigen, melden Sie sich bei der Benutzeroberfläche von Cloud Manager an, wählen Sie Ihr Profilsymbol oben rechts und klicken Sie auf **Anwenderrollen**, wie in der folgenden Abbildung dargestellt.
 
 >[!NOTE]
->Weitere Informationen zur Anmeldung bei Cloud Manager finden Sie unter [Navigieren zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) .
+>Weitere Informationen zur Anmeldung bei Cloud Manager finden Sie unter [Navigieren zu Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
