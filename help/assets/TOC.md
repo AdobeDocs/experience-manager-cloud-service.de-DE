@@ -12,21 +12,21 @@ ht-degree: 69%
 ---
 
 
-# Handbuch zu [!DNL Assets] {#assets}
+# [!DNL Assets]-Anleitung {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Überblick und neue Funktionen](overview.md)
 + [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
-+ [[!DNL Assets] Architektur](architecture.md)
++ [[!DNL Assets]-Architektur](architecture.md)
 + [Unterstützte Dateiformate](file-format-support.md)
 + [Überblick über Asset-Microservices](asset-microservices-overview.md)
-+ [Barrierefreiheit in [!DNL Assets]](accessibility.md)
++ [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
 + Verwalten digitaler Assets {#manage}
    + [Freigeben von Assets](share-assets.md)
    + [Überwachen von Aktivitäten und DAM-Aufgaben](assets-activity-history.md)
    + [Erste Schritte mit Asset-Microservices](asset-microservices-configure-and-use.md)
    + [Hinzufügen und Hochladen von Assets](add-assets.md)
-   + [Suchen von Assets  ](search-assets.md)
+   + [Suchen von Assets](search-assets.md)
    + [Allgemeine Aufgaben zum Asset-Management](manage-digital-assets.md)
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
@@ -34,13 +34,13 @@ ht-degree: 69%
    + [Verwenden Sie [!DNL Adobe Stock] Assets](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
-   + [Integration von  mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [Integrieren mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Verwenden und Konfigurieren von Asset Insights](assets-insights.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Metadatenschema](metadata-schemas.md)
-   + [Verwalten von Video-Assets ](manage-video-assets.md)
+   + [Verwalten von Video-Assets](manage-video-assets.md)
    + [Herunterladen von Assets](download-assets-from-aem.md)
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
@@ -65,8 +65,8 @@ ht-degree: 69%
    + [MediaLibrary-Funktionen](medialibrary.md)
    + [Importieren und Exportieren von Asset-Metadaten](metadata-import-export.md)
 + Freigeben und Verteilen von Assets {#brand-portal}
-   + [Konfigurieren von  [!DNL Assets]  mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Veröffentlichen von Assets in [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Veröffentlichen von Assets in  [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Veröffentlichen von Assets von [!DNL Brand Portal] zu [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
 + Inhaltsfragmente {#content-fragments}
    + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
@@ -97,10 +97,10 @@ ht-degree: 69%
    + [Anwenden von Dynamic Media-Bildvorgaben](dynamic-media/image-presets.md)
    + [Verwalten von Dynamic Media-Viewer-Vorgaben](dynamic-media/managing-viewer-presets.md)
    + [Anwenden von Dynamic Media-Viewer-Vorgaben](dynamic-media/viewer-presets.md)
-   + [Stapelsatzvorgaben](dynamic-media/batch-set-presets-dm.md)
+   + [Stapelsatz-Vorgaben](dynamic-media/batch-set-presets-dm.md)
    + [Invalidierung des CDN-Cache über Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
-   + [Smart Imaging](dynamic-media/imaging-faq.md)
+   + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](dynamic-media/hotlink-protection.md)
    + [3D-Unterstützung](dynamic-media/assets-3d.md)
@@ -125,5 +125,5 @@ ht-degree: 69%
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)
    + [Arbeiten mit Selektoren](dynamic-media/working-with-selectors.md)
    + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](dynamic-media/http2faq.md)
-   + [End of Life von Flash-Viewern](dynamic-media/flash-viewers-eol.md)
+   + [Einstellung von Flash Viewer](dynamic-media/flash-viewers-eol.md)
    + [Einstellung von DHTML Viewer](dynamic-media/dhtml-viewer-endoflifefaqs.md)
