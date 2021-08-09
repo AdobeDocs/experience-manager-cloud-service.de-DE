@@ -1,20 +1,20 @@
 ---
 title: Headless-Entwicklung für AEM Sites as a Cloud Service
-description: Erfahren Sie, wie AEM leistungsstarke Headless-Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API eines Cloud Service zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
+description: Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM as a Cloud Service, wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 59%
+ht-degree: 98%
 
 ---
 
 
 # Headless-Entwicklung für AEM Sites as a Cloud Service {#headless-development}
 
-Erfahren Sie, wie AEM leistungsstarke Headless-Funktionen wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API eines Cloud Service zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
+Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM as a Cloud Service, wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
 
@@ -47,12 +47,12 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
    * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
    * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Kernkomponenten für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) möglich.
 
-## Ihre ersten Schritte mit AEM Headless {#first-steps}
+## Erste Schritte mit AEM Headless {#first-steps}
 
 Es stehen eine Reihe von Ressourcen zur Verfügung, mit denen Sie mit AEM Headless-Funktionen beginnen können. Sie sind für verschiedene Anwendungsfälle vorgesehen, bieten jedoch alle einen umfassenden Überblick über AEM Headless-Funktionen.
 
-| Ressource | Beschreibung | Typ | Audience | Est. Zeit |
+| Ressource | Beschreibung | Typ | Zielgruppe | Schätzung Zeit |
 |---|---|---|---|---|
-| [Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) | Beginnen Sie hier für einen umfassenden Überblick über AEM Headless-Features aus der Headless-Theorie bis hin zum Live-Start mit Ihrem ersten Headless-Projekt. | -Anleitung | Entwickler | 1 Stunde |
-| [Headless-Erste-Schritte-Handbuch](/help/implementing/developing/headless/getting-started/introduction.md) | Eine kurze Zusammenfassung der wichtigsten AEM Headless-Funktionen finden Sie in dieser Kurzanleitung. | Schnellstart | Entwickler, Administratoren | 20 Minuten |
-| [Tutorial zu den ersten Schritten mit AEM Headless-Hands](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Wenn Sie einen praxisnahen Ansatz bevorzugen, taucht dieses Tutorial direkt in die Erstellung eines einfachen Headless-Projekts ein. | Tutorial | Entwickler | 2 Stunden |
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Beginnen Sie hier, um einen umfassenden Überblick über die Headless-Funktionen von AEM zu erhalten, von der Theorie von Headless bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler | 1 Stunde |
+| [Erste Schritte mit Headless](/help/implementing/developing/headless/getting-started/introduction.md) | Eine kurze Zusammenfassung der wichtigsten AEM Headless-Funktionen finden Sie in dieser Kurzanleitung. | Schnellstart | Entwickler, Administratoren | 20 Minuten |
+| [Praktisches Tutorial für die ersten Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) | Wenn Sie einen praxisnahen Ansatz bevorzugen: dieses Tutorial steigt direkt in die Erstellung eines einfachen Headless-Projekts ein. | Tutorial | Entwickler | 2 Stunden |
