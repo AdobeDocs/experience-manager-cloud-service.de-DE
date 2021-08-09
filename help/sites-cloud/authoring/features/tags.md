@@ -3,7 +3,7 @@ title: Verwenden von Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags  {#applying-tags}
+## Anwenden von Tags {#applying-tags}
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
@@ -41,7 +41,7 @@ Um vordefinierte Tags anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften
 
 ## Veröffentlichen von Tags {#publishing-tags}
 
-Ähnlich wie Sie Seiten veröffentlichen und deren Veröffentlichung rückgängig machen, können Sie für Tags und Namespaces Folgendes ausführen:
+Ähnlich wie Sie Seiten veröffentlichen und deren Veröffentlichung aufheben, können Sie für Tags und Namespaces Folgendes ausführen:
 
 ### Aktivieren {#activate}
 
