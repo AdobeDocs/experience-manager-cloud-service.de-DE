@@ -1,18 +1,18 @@
 ---
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
-description: Erfahren Sie, wie Sie mit GraphQL mit AEM Inhalte Headless bereitstellen können, indem Sie Beispielinhalte und Abfragen untersuchen.
-feature: Inhaltsfragmente, GraphQL-API
+description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+feature: Inhaltsfragmente,GraphQL-API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
-Erfahren Sie, wie Sie mit GraphQL mit AEM Inhalte Headless bereitstellen können, indem Sie Beispielinhalte und Abfragen untersuchen.
+Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Sehen Sie dazu:
 In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispielergebnissen veranschaulicht.
 
 >[!NOTE]
-Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
+Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
 Beispiel: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
@@ -602,9 +602,9 @@ query {
 }
 ```
 
-### Beispielabfrage - Alle Abenteuer, deren `_path` mit einem bestimmten Präfix {#sample-wknd-all-adventures-cycling-path-filter} beginnt
+### Beispielabfrage – Alle Abenteuer, deren `_path` mit einem bestimmten Präfix  beginnt {#sample-wknd-all-adventures-cycling-path-filter}
 
-Alle `adventures`, wobei `_path` mit einem bestimmten Präfix (`/content/dam/wknd/en/adventures/cycling`) beginnt.
+Alle `adventures`, bei denen `_path` mit einem bestimmten Präfix (`/content/dam/wknd/en/adventures/cycling`) beginnt.
 
 **Beispielabfrage**
 
@@ -1127,7 +1127,7 @@ Diese Beispielabfrage untersucht:
 Diese Abfrage untersucht:
 
 * Alle Inhaltsfragmente vom Typ `adventure`
-* metadata
+* Metadaten
 
 **Beispielabfrage**
 
@@ -1601,4 +1601,4 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San José |  USA |  102635 |  city:na |
 | Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  city:chapter<br>city:emea |
+|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
