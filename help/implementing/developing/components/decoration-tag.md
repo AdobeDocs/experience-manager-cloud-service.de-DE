@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Decoration-Tag   {#decoration-tag}
+# Decoration-Tag {#decoration-tag}
 
 Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Dies hat zwei Hauptgründe:
 
@@ -41,7 +41,7 @@ Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden
    * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
    * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
 
-## Skript-Steuerung   {#script-controls}
+## Skript-Steuerung {#script-controls}
 
 Im Allgemeinen lässt sich das Wrapper-Verhalten in HTL wie folgt beschreiben:
 
