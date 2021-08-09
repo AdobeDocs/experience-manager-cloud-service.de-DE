@@ -5,7 +5,7 @@ exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 In diesem Dokument wird beschrieben, wie Sie den [Query Builder](query-builder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit dem [Query Builder](query-builder-api.md) können Sie problemlos das Inhalts-Repository abfragen. AEM enthält [eine Reihe von Prädikat-Auswertern](#query-builder-predicates.md), die Ihnen bei der Abfrage Ihrer Daten helfen.
 
@@ -125,7 +125,7 @@ Der folgende Ausschnitt verdeutlicht die Unterschiede in der `pom.xml`-Datei im 
              <version>3.8.1</version></dependency>
 ```
 
-#### Schreiben des Prädikat-Auswerters für eine Replikation {#writing-the-replicationpredicateevaluator}
+#### Schreiben des ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
 Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvaluator`. Diese kann in wenigen Schritten mit einem benutzerdefinierten Prädikat-Auswerter `(PredicateEvaluator`) erweitert werden.
 
