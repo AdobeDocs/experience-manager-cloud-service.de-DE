@@ -72,7 +72,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am 6. August 2020 veröffentlicht.
+Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
@@ -92,7 +92,7 @@ Die Version 2020.8.0 von [!UICONTROL Cloud Manager] wurde am 6. August 2020 ver
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Einige unnötige und unerwünschte SonarQube-Plug-ins wurden im Rahmen der Überprüfung der Codequalität ausgeführt.
+* Einige unnötige und unerwünschte SonarQube-Plug-ins wurden im Rahmen der Überprüfung der Code-Qualität ausgeführt.
 
 * Auf der Seite zur Ausführung der Pipeline wurde der Verzweigungsname falsch formatiert.
 
