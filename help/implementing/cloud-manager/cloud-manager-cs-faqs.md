@@ -5,7 +5,7 @@ description: Weitere Tipps zur Fehlerbehebung finden Sie in den häufig gestellt
 seo-description: Auf dieser Seite erhalten Sie Antworten zu den häufig gestellten Fragen zu Cloud Manager – Cloud Services
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Ein AEM Cloud Manager-Build schlägt fehl, wenn versucht wird, den Build von Jav
 
 ## Unsere Bereitstellung bleibt stecken, weil die Code-Qualitätsprüfung fehlgeschlagen ist. Gibt es eine Möglichkeit, diese Prüfung zu umgehen? {#deployment-stuck}
 
-Alle Codequalitätsfehler mit Ausnahme der *Sicherheitseinstufung* sind nicht kritische Metriken, sodass sie durch Erweitern der Elemente in der Ergebnisoberfläche umgangen werden können.
+Alle Code-Qualitätsfehler mit Ausnahme der *Sicherheitseinstufung* sind nicht kritische Metriken, sodass sie durch Erweitern der Elemente in der Ergebnisoberfläche umgangen werden können.
 
 Ein Benutzer mit der Rolle [Deployment Manager, Project Manager oder Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de#requirements) kann die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.  Weitere Informationen finden Sie unter [Dreistufige Gates beim Ausführen einer Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=de#how-to-use).
 
