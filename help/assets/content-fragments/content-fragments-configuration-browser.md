@@ -1,19 +1,19 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um AEM leistungsstarken Funktionen für die Headless-Bereitstellung zu nutzen.
+description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren, um die leistungsstarken Funktionen von AEM für die Headless-Bereitstellung zu nutzen.
 feature: Inhaltsfragmente
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Inhaltsfragmente – Konfigurations-Browser{#content-fragments-configuration-browser}
 
-Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren, um AEM leistungsstarken Funktionen für die Headless-Bereitstellung zu nutzen.
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren, um die leistungsstarken Funktionen von AEM für die Headless-Bereitstellung zu nutzen.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
@@ -26,8 +26,8 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
->* Die Option **Erstellen** steht nicht zum Erstellen neuer Modelle zur Verfügung.
->* Sie können nicht [die Sites-Konfiguration auswählen, um den zugehörigen Endpunkt](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) zu erstellen.
+>* ist die Option **Erstellen** für das Erstellen neuer Modelle nicht verfügbar.
+>* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
@@ -63,7 +63,7 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Wenden Sie die Konfiguration auf Ihren Assets-Ordner an {#apply-the-configuration-to-your-assets-folder}
+### Anwenden der Konfiguration auf Ihren Assets-Ordner {#apply-the-configuration-to-your-assets-folder}
 
 Wenn die Konfiguration **Global** für die Inhaltsfragmentfunktionalität aktiviert ist, gilt sie für jeden Assets-Ordner.
 
