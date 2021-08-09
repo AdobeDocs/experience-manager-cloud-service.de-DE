@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 94%
       + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Aktualisieren des SSL-Zertifikats des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Löschen eines benutzerderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
       + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -97,7 +97,7 @@ ht-degree: 94%
    + [Zugriff auf Git](cloud-manager/accessing-git.md)
    + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Einrichten der Enterprise-Team-Entwicklung für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [Enterprise Team Development-Setup für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
    + [Struktur von AEM-Projekten](developing/introduction/aem-project-content-package-structure.md)
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)
@@ -125,23 +125,23 @@ ht-degree: 94%
          + [Vorlagen](developing/components/templates.md)
          + [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
          + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de)
-         + [JSON-Exporter für Content Services ](developing/components/json-exporter.md)
+         + [JSON-Exporter für Content Services](developing/components/json-exporter.md)
          + [Aktivieren eines JSON-Exports für eine Komponente](developing/components/enabling-json-exporter.md)
          + [Bildeditor](developing/components/image-editor.md)
          + [Dekorations-Tags](developing/components/decoration-tag.md)
-         + [Verwenden von Bedingungen zum Ausblenden ](developing/components/hide-conditions.md)
+         + [Verwenden von Bedingungen zum Ausblenden](developing/components/hide-conditions.md)
          + [Komponenten-Referenzhandbuch](developing/components/reference.md)
       + [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md)
       + [Einbinden von Tagging in AEM-Programme](/help/implementing/developing/introduction/tagging-applications.md)
-      + Suche {#search}
-         + [Query-Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
+      + Suchen {#search}
+         + [Query Builder-API](/help/implementing/developing/introduction/query-builder-api.md)
          + [Query Builder-Prädikatsreferenz](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [Implementieren einer benutzerdefinierten Auswertung von Eigenschaften](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
    + Headless-Experience-Management {#headless}
       + [Headless und AEM](developing/headless/introduction.md)
-      + [Headless-Entwickler-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [Headless-Entwickler-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=de)
       + Anleitungen für den Einstieg {#getting-started}
          + [Einführung](developing/headless/getting-started/introduction.md)
          + [Erstellen einer Konfiguration](developing/headless/getting-started/create-configuration.md)
@@ -164,8 +164,8 @@ ht-degree: 94%
       + Bereitstellungs-API {#delivery-api}
          + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
          + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=de)
-         + [AEM GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=de)
-         + [Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=de)
+         + [AEM-GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=de)
+         + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=de)
    + Hybride und SPA AEM Entwicklung {#hybrid}
       + [Hybrid-Architektur und SPAs mit AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
@@ -191,11 +191,11 @@ ht-degree: 94%
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
-   + [Verwenden von CRXDE Lite ](/help/implementing/developing/tools/crxde.md)
-   + [Der Link Externalizer](/help/implementing/developing/tools/externalizer.md)
+   + [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
 + Personalisierung {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
-   + [Konfigurieren von ContextHub ](developing/personalization/configuring-contexthub.md)
+   + [Konfigurieren von ContextHub](developing/personalization/configuring-contexthub.md)
    + [Hinzufügen von ContextHub zu Seiten](developing/personalization/adding-contexthub.md)
    + [Beispiele für Store-Kandidaten](developing/personalization/sample-stores.md)
    + [Beispiel-Store-Module](developing/personalization/sample-modules.md)
