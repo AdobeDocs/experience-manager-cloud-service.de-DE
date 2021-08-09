@@ -3,7 +3,7 @@ title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2152'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zu
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Komponenten-Browser  {#components-browser}
+## Komponenten-Browser {#components-browser}
 
 Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um mit AEM Ihre Inhaltsseite zu erstellen.
 
@@ -158,7 +158,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Inhaltsstruktur  {#content-tree}
+## Inhaltsstruktur {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -251,7 +251,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
-* [Veröffentlichen einer Seite rückgängig machen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
+* [Veröffentlichen einer Seite aufheben](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Vorlage bearbeiten](/help/sites-cloud/authoring/features/templates.md)
 * [Als veröffentlicht anzeigen](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [In Admin anzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
@@ -260,7 +260,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi  {#page-modes}
+## Seitenmodi {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -282,6 +282,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
