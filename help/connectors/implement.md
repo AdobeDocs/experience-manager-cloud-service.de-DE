@@ -3,9 +3,9 @@ title: Implementieren von AEM-Connectoren
 description: Implementieren von AEM-Connectoren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ AEM ist eine hochmoderne Web-Experience-Management-Lösung und bietet viele pote
 * Abrufen von Assets aus AEM. Beispielsweise ein externes Content Management System (CMS), das auf ein in AEM Assets gespeichertes Asset verweist. Oder als weiteres Beispiel ein PIM-System, das mit einem Bild in AEM Assets verknüpft ist.
 * Speichern von Assets in der AEM-Infrastruktur. Zum Beispiel ein Marketing-Ressourcen-Management (MRM)-System, das ein genehmigtes Asset in AEM Assets speichert.
 * Konfigurieren und Rendern einer benutzerdefinierten Komponente der Benutzeroberfläche. Beispielsweise können Sie einem Autor gestatten, eine Videokomponente per Drag-and-Drop zu verschieben und ein bestimmtes Video für die Wiedergabe auf der Live-Site zu konfigurieren.
-* Aktionen für ein Asset mit einem Partnerdienst. Senden eines Assets an eine Videoplattform, wenn eine Seite veröffentlicht wird.
+* Aktionen für ein Asset mit einem Partner-Service. Senden eines Assets an eine Videoplattform, wenn eine Seite veröffentlicht wird.
 * Analysieren einer Site, Seite oder eines Assets in der AEM Admin Console. So können Sie beispielsweise SEO-Empfehlungen für eine vorhandene oder unveröffentlichte Seite abgeben.
-* Zugriff auf Benutzerdaten auf Seitenebene, die von einem externen Dienst verwaltet werden. Sie können beispielsweise demografische Informationen nutzen, um das Site-Erlebnis zu personalisieren. Lesen Sie mehr über ContextHub, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
+* Zugriff auf Benutzerdaten auf Seitenebene, die von einem externen Service verwaltet werden. Sie können beispielsweise demografische Informationen nutzen, um das Site-Erlebnis zu personalisieren. Lesen Sie mehr über ContextHub, ein Framework zum Speichern, Bearbeiten und Präsentieren von Kontextdaten.
 * Übersetzung von Site-Kopien oder Asset-Metadaten. Im [AEM Translation Framework Bootstrap Connector](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) finden Sie Beispiel-Code für das AEM Translation Framework, das die bevorzugte Implementierung von Übersetzungs-Connectoren ist.
 
 
@@ -61,7 +61,7 @@ Connectoren sollten sich an die in [diesem Artikel](/help/implementing/developin
 
 Darüber hinaus sollte nur Adobe Code in `/libs` schreiben, während Kunden und Partner in `/apps` schreiben.
 
-Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Diese Umstrukturierung erfolgte im Rahmen von AEM 6.5 und wird in der [AEM 6.5 Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de) beschrieben.
+Bestehende Connectoren müssen möglicherweise auch umstrukturiert werden, um jede Konfiguration, die einmal in `/etc` platziert wurde, in andere Ordner der obersten Ebene, wie z. B. `/conf`, zu verschieben. Diese Umstrukturierung erfolgte im Rahmen von AEM 6.5 und wird in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de) beschrieben.
 
 Es wird empfohlen, den Großteil des Connector-Codes unter `/apps/connectors/<vendor>` zu platzieren, um eine saubere Repository-Struktur für Kunden mit mehreren Connectoren zu unterstützen.
 
