@@ -4,8 +4,8 @@ description: Versionshinweise für Version 2020.12.0 von [!DNL Adobe Experience 
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '693'
+ht-degree: 100%
 
 ---
 
