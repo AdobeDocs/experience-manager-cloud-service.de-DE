@@ -98,7 +98,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) nutzen, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK nutzt.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 
