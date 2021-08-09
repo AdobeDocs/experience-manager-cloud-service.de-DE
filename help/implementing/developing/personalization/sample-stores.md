@@ -1,15 +1,15 @@
 ---
-title: 'Beispiele für ContextHub-Store-Kandidaten '
-description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können
+title: Beispiele für ContextHub-Store-Kandidaten
+description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können.
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
 
-# Beispiele für ContextHub-Store-Kandidaten  {#sample-contexthub-store-candidates}
+# Beispiele für ContextHub-Store-Kandidaten {#sample-contexthub-store-candidates}
 
 ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
 
@@ -61,7 +61,7 @@ Der Store-Kandidat `contexthub.geolocation` erweitert [`ContextHub.Store.Persist
 
 ### Konfiguration {#configuration-geolocation}
 
-Die Standardkonfiguration enthält Informationen zum Google-Dienst und die anfänglichen Längen- und Breitenkoordinaten.
+Die Standardkonfiguration enthält Informationen zum Google-Service und die anfänglichen Längen- und Breitenkoordinaten.
 
 ```javascript
 {
@@ -107,7 +107,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 >
 >In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
-## Beispiel-Store-Kandidat „contexthub.surferinfo“   {#contexthub-surferinfo-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.surferinfo“ {#contexthub-surferinfo-sample-store-candidate}
 
 Speichert Informationen über die aktuelle Client-Umgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
@@ -307,7 +307,7 @@ Der Store-Datenbaum ähnelt dem folgenden Beispiel:
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.profile“   {#granite-profile-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.profile“ {#granite-profile-sample-store-candidate}
 
 Informationen über den aktuellen Benutzer.
 
