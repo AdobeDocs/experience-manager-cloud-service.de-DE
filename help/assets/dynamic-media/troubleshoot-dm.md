@@ -45,7 +45,7 @@ Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ers
 
 * Das Erstellen einer Version wird in Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
 
-## Bilder und Sets    {#images-and-sets}
+## Bilder und Sets {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
@@ -63,7 +63,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
      <li><p>Öffnen Sie CRX/DE:</p>
       <ul>
        <li>Überprüfen Sie, ob die Vorgabe im JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definiert ist. Dieser Speicherort trifft zu, wenn Sie ein Upgrade von Experience Manager 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Speicherort <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
-       <li>Überprüfen Sie, ob das Asset im JCR unter „Metadaten“ für <code>dam:scene7FileStatus</code><strong></strong> den Wert <code>PublishComplete</code> aufweist.</li>
+       <li>Überprüfen Sie, ob das Asset im JCR unter „Metadaten“ für <code>dam:scene7FileStatus</code><strong> </strong>den Wert <code>PublishComplete</code> aufweist.</li>
       </ul> </li>
     </ol> </td>
    <td><p>Aktualisieren Sie die Seite/gehen Sie zu einer anderen Seite und kehren Sie dann zurück (Seitenleisten-JSPs müssen neu kompiliert werden).</p> <p>Wenn dies das Problem nicht behebt:</p>
