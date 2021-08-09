@@ -1,24 +1,24 @@
 ---
-title: Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten
+title: Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten
 description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote-AEM-GraphQL-Abfragen erforderlich ist, um Ihre Headless-Content-Bereitstellung zu sichern.
-feature: Inhaltsfragmente, GraphQL-API
+feature: Inhaltsfragmente,GraphQL-API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
-# Authentifizierung für AEM GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung Headless Content sicherzustellen.
+Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Content zu sichern.
 
 >[!NOTE]
 >
->Für Tests und Entwicklung können Sie auch direkt über die [GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) auf die AEM GraphQL-API zugreifen.
+>Für Tests und Entwicklung können Sie auch direkt über die [GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) auf die AEM-GraphQL-API zugreifen.
 
-Für die Authentifizierung muss der Drittanbieterdienst [ein Zugriffstoken](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anfrage](#use-access-token-in-graphql-request) verwendet werden kann.
+Zur Authentifizierung muss der Drittanbieter-Service ein [Zugriffs-Token](#retrieving-access-token) abrufen, das dann [in der GraphQL-Anfrage](#use-access-token-in-graphql-request) verwendet werden kann.
 
 ## Abrufen eines Zugriffs-Tokens {#retrieving-access-token}
 
