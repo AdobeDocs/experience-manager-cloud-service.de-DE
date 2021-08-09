@@ -3,15 +3,15 @@ title: AEM-Modernisierungs-Tools
 description: AEM-Modernisierungs-Tools
 exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # AEM-Modernisierungs-Tools {#aem-moderization-tools}
 
-Die AEM-Modernisierungs-Tools bieten eine Suite von Dienstprogrammen, mit denen ältere AEM-Funktionen in die modernen und unterstützten Funktionen von AEM as a Cloud Service konvertiert werden können.
+Die AEM-Modernisierungs-Tools bieten eine Reihe von Dienstprogrammen, mit denen ältere AEM-Funktionen in die modernen und unterstützten Funktionen von AEM as a Cloud Service umgewandelt werden können.
 
 
 ## Einführung {#introduction}
@@ -19,7 +19,7 @@ Die AEM-Modernisierungs-Tools bieten eine Suite von Dienstprogrammen, mit denen 
 Die AEM-Modernisierungs-Tools ermöglichen eine einfache Konvertierung von:
 
 * Statischen Vorlagen in bearbeitbare Vorlagen
-* Designkonfigurationen in Richtlinien
+* Design-Konfigurationen in Richtlinien
 * Foundation-Komponenten in Kernkomponenten
 * Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche
 
