@@ -3,7 +3,7 @@ title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -25,7 +25,8 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >
 >* `/libs/launches/templates/outofscope`
 >
->Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
+>
+Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
 >* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
 
@@ -117,7 +118,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
-### Erstellen von verschachtelten Launches  {#creating-a-nested-launch}
+### Erstellen von verschachtelten Launches {#creating-a-nested-launch}
 
 Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Launches) bietet Ihnen die Möglichkeit, einen Launch aus einem vorhandenen Launch zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vornehmen zu müssen.
 
