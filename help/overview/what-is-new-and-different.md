@@ -261,7 +261,7 @@ Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation i
 
 Weitere Informationen finden Sie unter [Übersicht und Einführung in Assets as a Cloud Service](/help/assets/overview.md).
 
-## Erste Schritte mit Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service kennenlernen {#getting-to-know-aem-as-cloud-service}
 
 Weitere Informationen finden Sie unter:
 
