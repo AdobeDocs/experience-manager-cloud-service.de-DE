@@ -3,7 +3,7 @@ title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Die richtigen Mitarbeiter, die richtigen Rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Tea
 
 Ein erfolgreiches Crew-Team braucht neun Personen auf den richtigen Plätzen – genau wie Ihr Bereitstellung-Team. Ihr Erfolg mit Adobe Experience Manager Sites hängt von der Stärke Ihrer Team-Mitglieder und von deren Zusammenarbeit ab. Stellen Sie sicher, dass Sie diese neun Rollen Mitarbeitern mit den empfohlenen Qualifikationen zugewiesen werden.
 
-| Rolle | Kompetenzen | Kompetenzstufe | Eigenschaften |
+| Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
 | Projekt-Manager | PMP-Zertifizierung, Agile-Zertifizierung, Erfahrung im Risiko-Management | Experte | Fair, konsequent, verantwortungsbewusst, organisiert, positiv, ansprechbar, bereit, Veränderungen anzunehmen |
 | Scrum Master | Scrum-Master-Zertifizierung, Agile-Zertifizierung, Moderationserfahrung | Experte | Konsequent, kreativ |
@@ -56,10 +56,10 @@ Vom Architekten bis zum Scrum Master ist jede Rolle in diesem Team unverzichtbar
 
 Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der Liste für Adobe Experience Manager Sites, mit einem wichtigen Zusatz: Sie benötigen einen Bibliothekar, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
 
-| Rolle | Kompetenzen | Kompetenzstufe | Eigenschaften |
+| Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
 | Projekt-Manager | PMP-Zertifizierung, Agile-Zertifizierung, Erfahrung im Risiko-Management | Experte | Fair, konsequent, verantwortungsbewusst, organisiert, positiv, ansprechbar, bereit, Veränderungen anzunehmen |
-| Scrum Übergeordnet | Scrum-Master-Zertifizierung, Agile-Zertifizierung, Moderationserfahrung | Experte | Konsequent, kreativ |
+| Scrum Master | Scrum-Master-Zertifizierung, Agile-Zertifizierung, Moderationserfahrung | Experte | Konsequent, kreativ |
 | Produkteigentümer | Agile-Zertifizierung, tiefes Verständnis der geschäftlichen Anforderungen | Experte | Ausgeglichen, selbstbewusst |
 | IT-Leads für Sicherheit, Infrastruktur, Tools | CISM-Zertifizierung, Adobe Experience Manager Component Developer-Zertifizierung | Experte | Detailorientiert |
 | Strategen/Power-User | Kenntnisse in Adobe Experience Manager Sites | Anfänger bis Experte | Hartnäckig, neugierig, gründlich, aufgeschlossen, bereit, Veränderungen anzunehmen, kooperativ |
@@ -77,4 +77,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen zu [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
+> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen zu [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
