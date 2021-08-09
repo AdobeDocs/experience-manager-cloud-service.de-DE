@@ -81,16 +81,16 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
 1. Wählen Sie im Assistenten für die **Inhaltsmigration** die Option **Inhaltstransfer** aus.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
 
 
    >[!NOTE]
@@ -100,7 +100,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Füllen Sie die Felder im Bildschirm **Migrationssatz erstellen** aus, wie nachfolgend beschrieben.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
@@ -138,7 +138,7 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
 
 1. Der Migrationssatz erscheint auf der Seite *Übersicht*.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
    Alle auf diesem Bildschirm vorhandenen Migrationssätze werden auf der Seite *Übersicht* mit ihren aktuellen Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
@@ -163,7 +163,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
 1. Wählen Sie auf der Seite *Übersicht* einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktion zu starten.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >Sie haben die Möglichkeit, Staging-Container während der Extraktion zu überschreiben.
@@ -171,11 +171,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
 1. Im Feld **EXTRAKTION** wird jetzt der Status **WIRD AUSGEFÜHRT** angezeigt, um anzugeben, dass die Extraktion ausgeführt wird.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    Sobald die Extraktion abgeschlossen ist, wird der Status des Migrationssatzes auf **BEENDET** aktualisiert und unter dem Feld *INFO* wird ein **grünes** Wolkensymbol angezeigt.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
    >Die Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die Übersichtsseite alle 30 Sekunden neu geladen wird.
@@ -197,7 +197,7 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
    >
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
    >
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Aufnahmevorgang beim Inhaltstransfer {#ingestion-process}
 
@@ -219,13 +219,13 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    >[!IMPORTANT]
    >Wenn die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   Klicken Sie außerdem auf **Kundenunterstützung**, um ein Ticket zu erstellen, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#pre-reqs).
+   Klicken Sie außerdem auf **Kundenunterstützung**, um ein Ticket zu erstellen, wie in der Abbildung oben dargestellt. Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs).
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status im Feld **AUFNAHME VERÖFFENTLICHEN** in **BEENDET** aktualisiert.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
 #### Auffüllaufnahme {#top-up-ingestion-process}
 
@@ -239,7 +239,7 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 
 1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
    >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird. Klicken Sie außerdem auf **Kundenunterstützung**, um ein Ticket zu erstellen, wie in der vorherigen Abbildung dargestellt.
@@ -261,16 +261,16 @@ Führen Sie dazu folgende Schritte durch:
 
 1. Navigieren Sie zur Seite *Übersicht*, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Protokoll anzeigen**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
 1. Das Dialogfeld **Protokolle** wird angezeigt. Klicken Sie auf **Extraktionsprotokolle**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
-   ![Abbildung](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)
 Oder:
 
    Sie können die Protokolle für Ihren Migrationssatz auch über den Bildschirm *Übersicht* anzeigen. Wählen Sie den Migrationssatz aus und klicken Sie unter **EXTRAKTION** auf den Status. Klicken Sie in diesem Fall auf **FERTIG**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
 1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verfolgen, können Sie SSH in Ihre AEM-Quellumgebung einbinden und die Datei `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file` verfolgen.
 
@@ -281,11 +281,11 @@ Führen Sie dazu folgende Schritte durch:
 
 1. Navigieren Sie zur Seite *Übersicht*, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Löschen**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
 1. Klicken Sie im Dialogfeld **Migrationssatz löschen** auf **Löschen**, um den Löschvorgang zu bestätigen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
 ## Fehlerbehebung {#troubleshooting}
 
