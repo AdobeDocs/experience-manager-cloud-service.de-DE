@@ -1,17 +1,17 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung
-description: Verwenden Sie AEM Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren, die Grundlage für Ihren Headless-Inhalt.
+description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung {#creating-an-assets-folder}
 
-Verwenden Sie AEM Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren, die Grundlage für Ihren Headless-Inhalt. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
+Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
 
 ## Was ist ein Asset-Ordner? {#what-is-an-assets-folder}
 
@@ -30,7 +30,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
