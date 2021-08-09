@@ -22,7 +22,7 @@ Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt 
 Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie auf unterschiedliche Begriffe im Zusammenhang mit der Veröffentlichung stoßen.
 
 * **Veröffentlichen/Veröffentlichung rückgängig machen**
-   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
+   * Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
    * Dies sind die in der AEM-Dokumentation verwendeten Begriffe.
 * **Aktivieren/Deaktivieren**
    * Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
@@ -35,7 +35,7 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
 
 Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen folgendermaßen vornehmen:
 
-* [Im Seiteneditor](#publishing-from-the-editor)
+* [Im Seiten-Editor](#publishing-from-the-editor)
 * [In der Sites-Konsole](#publishing-from-the-console)
 
 >[!NOTE]
@@ -68,7 +68,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
    ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Mit **Veröffentlichen** wird die Seite in der Publishing-Umgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Veröffentlichungsumgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
 
    ![Statusinfo-Banner veröffentlichen](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -84,10 +84,10 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
-* [Quick Publish ](#quick-publish)
-* [Veröffentlichung verwalten ](#manage-publication)
+* [Quick Publish](#quick-publish)
+* [Veröffentlichung verwalten](#manage-publication)
 
-#### Quick Publish  {#quick-publish}
+#### Quick Publish {#quick-publish}
 
 **Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
@@ -107,7 +107,7 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 >
 >Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
 
-#### Veröffentlichung verwalten  {#manage-publication}
+#### Veröffentlichung verwalten {#manage-publication}
 
 **Veröffentlichung verwalten** bietet mehr Optionen als  **Quick Publish**. Dies ermöglicht die Einbeziehung untergeordneter Seiten, die Anpassung der Verweise, den Start relevanter Workflows sowie die Möglichkeit, Inhalte zu einem späteren Zeitpunkt zu veröffentlichen.
 
@@ -209,21 +209,21 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
 Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungsumgebung gelöscht, sodass sie nicht mehr für Ihre Leser verfügbar ist.
 
-[Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten rückgängig machen:
+[Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten aufheben:
 
-* [Im Seiteneditor](#unpublishing-from-the-editor)
+* [Im Seiten-Editor](#unpublishing-from-the-editor)
 * [In der Sites-Konsole](#unpublishing-from-the-console)
 
-### Rückgängigmachen der Veröffentlichung im Editor  {#unpublishing-from-the-editor}
+### Rückgängigmachen der Veröffentlichung im Editor {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
 
-### Rückgängigmachen der Veröffentlichung in der Konsole  {#unpublishing-from-the-console}
+### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
 
-Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung rückgängig machen.
+Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichung verwenden](#manage-publication), können Sie damit auch eine Veröffentlichung aufheben.
 
 1. Wählen Sie in der Sites-Konsole die entsprechenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung rückgängig machen** anstelle der Standardoption **Veröffentlichen** aus.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie im ersten Schritt **Optionen** die Option **Veröffentlichung aufheben** anstelle der Standardoption **Veröffentlichen** aus.
 
    ![Veröffentlichung rückgängig machen - Optionen](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
@@ -244,7 +244,7 @@ Wenn Sie allerdings eine große Zahl von Inhaltsseiten erstellt bzw. aktualisier
 Dazu können Sie in der Sites-Konsole die Option [Veröffentlichung verwalten](#manage-publication) verwenden.
 
 1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen möchten bzw. dessen Veröffentlichung Sie rückgängig machen möchten, und danach **Veröffentlichung verwalten**.
-1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung rückgängig machen“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
+1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung aufheben“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
 1. Wählen Sie im Schritt **Bereich** die Stammseite aus und danach **Untergeordnete Elemente einbeziehen**.
 
    ![Verwalten von Veröffentlichungen mit Seitenauswahl](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
@@ -276,9 +276,9 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
    Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) angezeigt.
 
-* in der [Zeitleistensegment](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* in der [Zeitleisten](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Veröffentlichungsstatus in der Zeitleistensegment-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+   ![Veröffentlichungsstatus in der Zeitleisten-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) beim Bearbeiten einer Seite
 
