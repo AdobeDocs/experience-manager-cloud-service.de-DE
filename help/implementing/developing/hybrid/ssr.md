@@ -3,9 +3,9 @@ title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1502'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR 
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
+>Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project Firefly-Anwendungen](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Pro Instanz (Autor, Veröffentlichung) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
+>Pro Instanz (Autor, Publishing) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
 
 ## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 
@@ -80,7 +80,7 @@ Bei Verwendung von SSR umfasst der [Workflow für](introduction.md#interaction-w
 1. Der Browser fordert den SSR-Inhalt von AEM an.
 1. AEM sendet das Modell an Adobe I/O Runtime.
 1. Adobe I/O Runtime gibt den generierten Inhalt zurück.
-1. AEM stellt den von Adobe I/O Runtime über die HTML-Vorlage der Backend-Seitenkomponente zurückgegebenen HTML-Code bereit.
+1. AEM stellt den von Adobe I/O Runtime über die HTML-Vorlage der Backend-Seitenkomponente zurückgegebenen HTL-Code bereit.
 
 ![SSE CMS-gesteuertes AEM Adobe I/O](assets/ssr-cms-drivenaemnode-adobeio.png)
 
