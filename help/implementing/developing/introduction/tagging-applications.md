@@ -5,7 +5,7 @@ exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ In AEM kann die Sprache entweder aus der Seitensprache oder aus der Anwenderspra
 
 Beim Tagging hängt die Lokalisierung vom Kontext ab, da Tag-`titles` in der Seitensprache, in der Anwendersprache oder in jeder anderen Sprache angezeigt werden können.
 
-### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
+### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“  {#adding-a-new-language-to-the-edit-tag-dialog}
 
 Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (z. B. Finnisch) im Dialogfeld **Tag bearbeiten** hinzufügen:
 
