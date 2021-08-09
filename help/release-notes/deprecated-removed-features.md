@@ -1,6 +1,6 @@
 ---
 title: Veraltete und entfernte Funktionen
-description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service].
+description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
 workflow-type: tm+mt
