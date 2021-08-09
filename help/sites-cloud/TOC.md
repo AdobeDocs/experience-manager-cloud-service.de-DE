@@ -4,7 +4,7 @@ sub-product: Inhaltserstellung in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
-feature: 'Authoring – '
+feature: Authoring –
 role: User
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
@@ -23,7 +23,7 @@ ht-degree: 99%
       + [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](authoring/getting-started/quick-start.md)
       + [Authoring – Konzepte](authoring/getting-started/concepts.md)
       + [Grundlegende Handhabung](authoring/getting-started/basic-handling.md)
-      + [Suche](authoring/getting-started/search.md)
+      + [Suchen](authoring/getting-started/search.md)
       + [Konfigurieren der Kontoumgebung](authoring/getting-started/account-environment.md)
       + [Ihr Posteingang](authoring/getting-started/inbox.md)
       + [Tastaturbefehle](authoring/getting-started/keyboard-shortcuts.md)
@@ -38,7 +38,7 @@ ht-degree: 99%
       + [Veröffentlichen von Seiten](authoring/fundamentals/publishing-pages.md)
       + [Inhaltsfragmente](authoring/fundamentals/content-fragments.md)
       + [Experience Fragments](authoring/fundamentals/experience-fragments.md)
-      + [Exportieren in CSV ](authoring/fundamentals/csv-export.md)
+      + [Exportieren in CSV](authoring/fundamentals/csv-export.md)
       + [Komponenten](authoring/fundamentals/components.md)
       + [Authoring für Mobilgeräte](authoring/fundamentals/mobile.md)
       + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](authoring/fundamentals/accessible-content.md)
@@ -50,7 +50,7 @@ ht-degree: 99%
       + [Seitenversionen](authoring/features/page-versions.md)
       + [Seitenvergleich](authoring/features/page-diff.md)
       + [Komponentenkonsole](authoring/features/components-console.md)
-      + [Responsives Layout  ](authoring/features/responsive-layout.md)
+      + [Responsives Layout](authoring/features/responsive-layout.md)
       + [Verwenden von Tags](authoring/features/tags.md)
       + [Aktivieren von PWA (Progressive Web App)-Funktionen](authoring/features/enable-pwa.md)
    + Projekte {#projects}
@@ -75,9 +75,9 @@ ht-degree: 99%
       + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
       + [Verwenden zielgerichteter Inhalte in Multisites](authoring/personalization/multisite-targeted-content.md)
       + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](authoring/personalization/multisite-structure.md)
-      + [Verwalten von Aktivitäten   ](authoring/personalization/activities.md)
+      + [Verwalten von Aktivitäten](authoring/personalization/activities.md)
       + [Verwalten von Zielgruppen](authoring/personalization/audiences.md)
-      + [Erstellen und Verwalten von Angeboten  ](authoring/personalization/offers.md)
+      + [Erstellen und Verwalten von Angeboten](authoring/personalization/offers.md)
       + [Grundlegendes zur Segmentierung](authoring/personalization/segmentation.md)
       + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -94,7 +94,7 @@ ht-degree: 99%
          + [Best Practices für MSM](administering/msm/best-practices.md)
          + [Fehlerbehebung und häufig gestellte Fragen](administering/msm/troubleshooting.md)
       + Übersetzung {#translation}
-         + [Übersetzen von Inhalten für mehrsprachige Websites](administering/translation/overview.md)
+         + [Übersetzen von Inhalten für mehrsprachige Sites](administering/translation/overview.md)
          + [Vorbereiten von Inhalten für die Übersetzung](administering/translation/preparation.md)
          + [Verwalten von Übersetzungsprojekten](administering/translation/managing-projects.md)
          + [Assistent „Sprachkopie erstellen“](administering/translation/wizard.md)
@@ -103,5 +103,5 @@ ht-degree: 99%
          + [Herstellen einer Verbindung mit Microsoft Translator](administering/translation/connect-ms-translator.md)
          + [Best Practices für die Übersetzung](administering/translation/best-practices.md)
 + Integration mit AEM as a Cloud Service {#integrations}
-   + [Integration mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
+   + [Integration mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integrieren mit Adobe Target](integrating/integrating-adobe-target.md)
