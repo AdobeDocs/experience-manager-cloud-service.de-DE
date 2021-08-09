@@ -32,7 +32,7 @@ Die Workflows bieten in unterschiedlichem Maß Unterstützung für Migrationen. 
 * `NUI_MIGRATED`: Zu einem [Verarbeitungsprofil für den Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md) migriert.
 * `UNSUPPORTED`: Derzeit nicht unterstützt in [!DNL Experience Manager Assets] as a Cloud Service.
 
-## Asset Workflow-Migrations-Tool {#use-workflow-migrator} verwenden
+## Asset-Workflow-Migrations-Tool verwenden {#use-workflow-migrator}
 
 * **[!DNL Adobe I/O]CLI**: Adobe empfiehlt die Verwendung des Asset-Workflow-Migrationstools über  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] als  [!DNL Cloud Service] Code-Refaktorierungs-Plug-in für die  [!DNL Adobe I/O] CLI). Informationen zur Installation und Verwendung des Plug-ins finden Sie unter [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
