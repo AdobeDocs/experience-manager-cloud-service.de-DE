@@ -3,13 +3,13 @@ title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
 ht-degree: 100%
 
 ---
 
-# Seitenvergleich  {#page-diff}
+# Seitenvergleich {#page-diff}
 
 ## Einführung {#introduction}
 
@@ -34,7 +34,7 @@ Folgendes kann verglichen werden:
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden  {#presentation-of-differences}
+### Darstellung von Unterschieden {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -63,7 +63,7 @@ Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Ge
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden  {#fullscreen-and-exiting}
+### Vollbild und Beenden {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 
