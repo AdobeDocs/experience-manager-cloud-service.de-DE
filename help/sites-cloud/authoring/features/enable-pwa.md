@@ -3,7 +3,7 @@ title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
 ht-degree: 100%
 
@@ -21,8 +21,10 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 >* Kenntnis der Site- und Inhaltsstruktur
 >* Verständnis von Caching-Strategien
 >* Unterstützung durch Ihr Entwicklungs-Team
+
 >
->Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team besprechen, um herauszufinden, wie Sie sie am besten für Ihr Projekt nutzen können.
+>
+Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team besprechen, um herauszufinden, wie Sie sie am besten für Ihr Projekt nutzen können.
 
 >[!NOTE]
 >
@@ -136,7 +138,7 @@ Ihre Site ist jetzt konfiguriert und Sie können sie [als lokale App installiere
 
 Nachdem Sie [Ihre Site für die Unterstützung von PWA konfiguriert haben](#enabling-pwa-for-your-site), können Sie sie selbst ausprobieren.
 
-1. Rufen Sie die Site in einem [unterstützten Browser](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary) auf.
+1. Rufen Sie die Site in einem [unterstützten Browser](https://developer.mozilla.org/de-DE/docs/Web/Progressive_web_apps/Installable_PWAs#Summary) auf.
 1. In der Adressleiste des Browsers wird ein neues Symbol angezeigt, das darauf hinweist, dass die Site als lokale App installiert werden kann.
    * Je nach Browser kann das Symbol variieren und im Browser wird möglicherweise auch eine Benachrichtigung angezeigt (z. B. ein Banner oder ein Dialogfeld), die darauf hinweist, dass eine Installation als lokale App möglich ist.
 1. Installieren Sie das Programm.
