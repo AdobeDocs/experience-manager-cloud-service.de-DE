@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
 | Workflow-Bereinigung | Kunde | Muss in github vorgenommen werden. <br> Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. <br> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_WorkflowPurgeTask`). <br> Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der [AEM 6.5-Dokumentation zu Wartungsaufgaben](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html). |
 | Projektbereinigung | Kunde | Muss in github vorgenommen werden. <br> Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter `/libs` durch Erstellen von Eigenschaften im Ordner `/apps/settings/granite/operations/maintenance/granite_weekly` oder `granite_daily`. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. <br> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn `granite_ProjectPurgeTask`). <br> Informationen zum Konfigurieren von OSGi-Eigenschaften finden Sie in der [AEM 6.5-Dokumentation zu Wartungsaufgaben](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html). |
 
-Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgabenbereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Quell-Code-Verwaltung bearbeitet werden. In der folgenden Tabelle werden die verfügbaren Konfigurationsparameter der einzelnen Fenster beschrieben. Sehen Sie sich auch die Speicherorte und Codebeispiele an, die nach der Tabelle bereitgestellt werden.
+Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung, Ad-hoc-Aufgabenbereinigung und Projektbereinigung während des täglichen, wöchentlichen oder monatlichen Wartungsfensters planen. Diese Konfigurationen sollten direkt in der Versionsverwaltung bearbeitet werden. In der folgenden Tabelle werden die verfügbaren Konfigurationsparameter der einzelnen Fenster beschrieben. Sehen Sie sich auch die Speicherorte und Code-Beispiele an, die nach der Tabelle bereitgestellt werden.
 
 <table>
  <tbody>
@@ -60,9 +60,9 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
   <td>
-  <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
-  <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-  <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+  <p><strong>windowSchedule=daily</strong> (dieser Wert sollte nicht geändert werden)</p>
+  <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+  <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
   </td> 
   </tr>
   <tr>
@@ -70,10 +70,10 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
     <td>
-    <p><strong></strong>windowSchedule = weekly (dieser Wert sollte nicht geändert werden)</p>
-    <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-    <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
-    <p><strong>windowScheduleWeekdays= Array mit 2 Werten von 1-7 (z. B. [5,5])</strong> Der erste Wert des Arrays ist der Anfangstag, an dem der Auftrag geplant wird, und der zweite Wert der Endtag, an dem der Auftrag beendet wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
+    <p><strong>windowSchedule=weekly</strong> (dieser Wert sollte nicht geändert werden)</p>
+    <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowScheduleWeekdays= Array von 2 Werten von 1–7 (z. B. [5,5])</strong> Der erste Wert des Arrays ist der Starttag, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag gestoppt wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
     </td>
   </tr>
   <tr>
@@ -81,11 +81,11 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
     <td>
-    <p><strong></strong>windowSchedule = daily (dieser Wert sollte nicht geändert werden)</p>
-    <p><strong></strong>windowStartTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-    <p><strong></strong>windowEndTime = HH:MM unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
-    <p><strong>windowScheduleWeekdays=Array mit 2 Werten von 1-7 (z. B. [5,5])</strong> Der erste Wert des Arrays ist der Anfangstag, an dem der Auftrag geplant wird, und der zweite Wert der Endtag, an dem der Auftrag beendet wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um einen Zeitplan für die erste Woche des Monats festzulegen, oder 1 für die letzte Woche des Monats. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).</p>
+    <p><strong>windowSchedule=daily</strong> (dieser Wert sollte nicht geändert werden)</p>
+    <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
+    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowScheduleWeekdays= Array von 2 Werten von 1–7 (z. B. [5,5])</strong> Der erste Wert des Arrays ist der Starttag, an dem der Auftrag geplant wird, und der zweite Wert ist der Endtag, an dem der Auftrag gestoppt wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um in der ersten Woche des Monats zu planen, oder 1, um in der letzten Woche des Monats zu planen. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).</p>
     </td> 
     </tr>
     </tbody>
@@ -93,13 +93,13 @@ Kunden können die Ausführung der einzelnen Aufgaben für Workflow-Bereinigung,
 
 **Standorte**:
 
-* Täglich - /apps/settings/granite/operations/maintenance/granite_daily
-* Wöchentlich - /apps/settings/granite/operations/maintenance/granite_weekly
-* Monatlich - /apps/settings/granite/operations/maintenance/granite_month
+* Täglich – /apps/settings/granite/operations/maintenance/granite_daily
+* Wöchentlich – /apps/settings/granite/operations/maintenance/granite_weekly
+* Monatlich – /apps/settings/granite/operations/maintenance/granite_month
 
-**Codebeispiele**:
+**Code-Beispiele**
 
-Codebeispiel 1 (täglich)
+Code-Beispiel 1 (täglich)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -129,7 +129,7 @@ Code-Beispiel 2 (wöchentlich)
    windowStartTime="14:30"/>
 ```
 
-Codebeispiel 3 (monatlich)
+Code-Beispiel 3 (monatlich)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
