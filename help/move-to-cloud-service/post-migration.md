@@ -19,7 +19,7 @@ Die folgenden Tools stehen zur Fehlerbehebung in AEM as a Cloud Service-Umgebung
 * **CRXDE Lite**
 * **Verwalten von Protokollen**
 
-## Developer Console {#developer-console}
+## Entwicklerkonsole {#developer-console}
 
 AEM as a Cloud Service-Entwicklungsumgebungen zum Debuggen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar.
 
