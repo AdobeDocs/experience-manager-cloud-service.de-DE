@@ -3,7 +3,7 @@ title: Benachrichtigungen – Cloud Service
 description: Benachrichtigungen – Cloud Service
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '192'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >Die Genehmigung und geplanten Benachrichtigungen werden nur an Anwender mit den Rollen „Business Owner“, „Programm-Manager“ und „Implementierungs-Manager“ gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. 
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt.
 ![](assets/notify-1.png)
 
 Klicken Sie in der Kopfzeile auf das Glockensymbol, um die Seitenleiste zu öffnen und Benachrichtigungen anzuzeigen, wie in der Abbildung unten dargestellt:
