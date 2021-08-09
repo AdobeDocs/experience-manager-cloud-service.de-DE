@@ -9,7 +9,7 @@ ht-degree: 97%
 
 ---
 
-# Wesentliche Änderungen an AEM Sites as a Cloud Service{#notable-changes}
+# Wesentliche Änderungen in AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie der Cloud-nativen Skalierbarkeit, der Betriebszeit und der Aktualität, bietet AEM Sites as a Cloud Service auch eine Reihe von Sites-spezifischen Änderungen und Ergänzungen.
 
@@ -30,7 +30,7 @@ AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil de
 * [Asynchrone Seitenvorgänge](#asynchronous-page-operations)
 * [Neue Referenz-Site und Tutorial](#new-reference-site-and-tutorial)
 
-## Asynchrone Seitenvorgänge{#asynchronous-page-operations}
+## Asynchrone Seitenvorgänge {#asynchronous-page-operations}
 
 In AEM Cloud Service wurden Vorgänge, die die Benutzeroberfläche zuvor blockiert haben, in kleinere Aufgaben unterteilt, die im Hintergrund ausgeführt werden.
 
@@ -42,7 +42,7 @@ Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberflä
 >[!NOTE]
 Der Benutzer muss keine Änderungen am System vornehmen, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
 
-## Neue Referenz-Site und Tutorial{#new-reference-site-and-tutorial}
+## Neue Referenz-Site und Tutorial {#new-reference-site-and-tutorial}
 
 [WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM sowie die umfassenden Funktionen, Komponenten und Bereitstellungsmodelle widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Site und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
 
