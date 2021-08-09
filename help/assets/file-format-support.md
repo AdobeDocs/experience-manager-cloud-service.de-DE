@@ -2,13 +2,13 @@
 title: Unterstützte Dateiformate und MIME-Typen
 description: Von [!DNL Experience Manager Assets] as a [!DNL Cloud Service] unterstützte Dateiformate und MIME-Typen.
 contentOwner: AG
-feature: Asset-Management,Ausgabeformate
+feature: Asset-Management,Ausgabedarstellungen
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media
 
 Die folgenden 3D-Formate werden unterstützt:
 
-Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
