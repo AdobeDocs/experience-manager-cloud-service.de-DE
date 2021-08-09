@@ -7,7 +7,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1470'
-ht-degree: 57%
+ht-degree: 60%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
 1. [Laden Sie die Assets hoch.](#uploading-assets)
 
-   Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Berücksichtigen Sie das Zoomen bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset zoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat.
+   Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Berücksichtigen Sie das Zoomen bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset zoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
 
 1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
 
@@ -69,11 +69,11 @@ Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) be
 
 ## Hochladen von Assets {#uploading-assets}
 
-Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Denken Sie daran, dass Benutzer die Bilder im Viewer für gemischte Mediensets zoomen können. Wählen Sie daher Bilder mit dieser Zoom-Möglichkeit aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat.
+Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Denken Sie daran, dass Benutzer die Bilder im Viewer für gemischte Mediensets zoomen können. Wählen Sie daher Bilder mit dieser Zoom-Möglichkeit aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum Set für gemischte Medien hinzufügen möchten, müssen Sie auch diese erstellen.
 
-## Erstellen Sie Sets für gemischte Medien {#creating-mixed-media-sets}
+## Erstellen Sie gemischte Mediensets {#creating-mixed-media-sets}
 
 Sie können Ihrem gemischten Medienset Bilder, Bildsets, Rotationssets und Videos hinzufügen. Achten Sie darauf, dass die Dateien, Bildsets und Rotationssets veröffentlicht werden können, bevor Sie diese dem gemischten Medienset hinzufügen.
 
@@ -155,13 +155,13 @@ Sie können direkt auf der Benutzeroberfläche verschiedene Bearbeitungsaufgaben
 
    >[!NOTE]
    >
-   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (wählen Sie es nicht aus), damit Sie es auf der Seite &quot;Experience Manager-Set-Vorschau&quot;öffnen können. Wählen Sie in der linken Leiste das Dropdownmenü aus, um die Dropdownliste zu öffnen, und wählen Sie dann **[!UICONTROL Mitglieder festlegen]** aus. Bewegen Sie auf der Seite Mitglieder des Sets den Mauszeiger über ein Asset und wählen Sie dann **[!UICONTROL Bearbeiten]** (Stiftsymbol) aus, um die Bearbeitungsseite zu öffnen.
+   >* Um die Assets in einem gemischten Medienset zu bearbeiten, navigieren Sie zum gemischten Medienset. Tippen Sie auf das Set (nicht auswählen), um es auf der Seite „Experience Manager-Set-Vorschau“ zu öffnen. Wählen Sie in der linken Leiste das Dropdownmenü aus, um die Dropdownliste zu öffnen, und wählen Sie dann **[!UICONTROL Mitglieder festlegen]** aus. Bewegen Sie auf der Seite Mitglieder des Sets den Mauszeiger über ein Asset und wählen Sie dann **[!UICONTROL Bearbeiten]** (Stiftsymbol) aus, um die Bearbeitungsseite zu öffnen.
       >
       >
    * Um ein komplettes gemischtes Medienset aus einem Anzeigemodus zu löschen (z. B. Karten- oder Spaltenansicht), navigieren Sie zum gemischten Medienset. Bewegen Sie den Mauszeiger über das Set und wählen Sie **[!UICONTROL Auswählen]** (Häkchensymbol). Drücken Sie **[!UICONTROL Rücktaste]** auf Ihrer Tastatur oder wählen Sie **[!UICONTROL Mehr]** (Zeile mit drei Punkten) und dann **[!UICONTROL Löschen]**.
 
 
-## Zeigen Sie eine Vorschau der Sets für gemischte Medien an {#previewing-mixed-media-sets}
+## Zeigen Sie eine Vorschau der gemischten Mediensets an {#previewing-mixed-media-sets}
 
 Weitere Informationen zur Vorschau von gemischten Mediensets finden Sie unter [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md) .
 
