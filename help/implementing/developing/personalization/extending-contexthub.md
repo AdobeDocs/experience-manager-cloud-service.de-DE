@@ -3,7 +3,7 @@ title: Erweitern von ContextHub
 description: Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitgestellten Typen nicht Ihren Lösungsanforderungen entsprechen.
 
-## Erstellen benutzerdefinierter Store-Kandidaten  {#creating-custom-store-candidates}
+## Erstellen benutzerdefinierter Store-Kandidaten {#creating-custom-store-candidates}
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 
