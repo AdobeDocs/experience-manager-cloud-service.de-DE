@@ -1,15 +1,15 @@
 ---
-title: 'Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher '
+title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 
 ---
 
-# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher  {#adding-contexthub-to-pages-and-accessing-stores}
+# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher {#adding-contexthub-to-pages-and-accessing-stores}
 
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen.
 
@@ -25,7 +25,7 @@ Schließen Sie die `contexthub`-Komponente in den Bereich `head` Ihrer Seite ein
 
 Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt werden soll. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
-## Informationen zu ContextHub-Speichern   {#about-contexthub-stores}
+## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
 Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bietet folgende Arten von Speichern, die die Grundlage für alle Speichertypen bilden:
 
@@ -36,7 +36,7 @@ Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bie
 
 Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines neuen Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](extending-contexthub.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](sample-stores.md).
 
-### Beibehaltungsmodi   {#persistence-modes}
+### Beibehaltungsmodi {#persistence-modes}
 
 ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
 
