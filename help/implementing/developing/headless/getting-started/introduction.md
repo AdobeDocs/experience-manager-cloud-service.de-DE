@@ -1,15 +1,15 @@
 ---
-title: Headless-Erste-Schritte-Handbuch
-description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten AEM als Headless-Funktionen eines Cloud Service wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
+title: Erste Schritte mit Headless
+description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# Headless-Erste-Schritte-Handbuch {#introduction}
+# Erste Schritte mit Headless {#introduction}
 
 Die ersten Schritte für Headless zeigen einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten auf. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
@@ -19,7 +19,7 @@ Die ersten Schritte für Headless zeigen einen einfachen Weg zum Erstellen, Verw
 1. [Erstellen eines Inhaltsfragments](create-content-fragment.md)
 1. [Aufrufen und Bereitstellen von Inhaltsfragmenten](create-api-request.md)
 
-## Audience {#audience}
+## Zielgruppe {#audience}
 
 Die in den ersten Schritten für Headless beschriebenen Aufgaben sind für eine grundlegende durchgängige Demonstration der Headless-Funktionen von AEM erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
