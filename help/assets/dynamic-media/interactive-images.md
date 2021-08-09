@@ -7,7 +7,7 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '4178'
-ht-degree: 75%
+ht-degree: 81%
 
 ---
 
@@ -23,11 +23,11 @@ Siehe [Interaktive Bilder in Aktion](https://experienceleague.adobe.com/tools/dy
 
 ## Sehen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
-Sehen Sie sich eine exemplarische Vorgehensweise zu [wie interaktive Bildbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Außerdem erfahren Sie, wie Sie interaktive Bild-Banner in der Vorschau betrachten, bearbeiten und bereitstellen können.
+Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie interaktive Bildbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Außerdem erfahren Sie, wie Sie interaktive Bild-Banner in der Vorschau betrachten, bearbeiten und bereitstellen können.
 
 ## Schnellstart: Interaktive Bilder {#quick-start-interactive-images}
 
-Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, interaktive Bilder in Adobe Experience Manager Assets einzurichten und schnell auszuführen.
+Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in die Arbeit mit interaktiven Bildern in Adobe Experience Manager Assets ermöglichen.
 
 Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgaben. Hier finden Sie ein kurzes Tutorial, das auf der folgenden [Beispiel-Web-Seite basiert, der noch keine interaktiven Bilder hinzugefügt wurden](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
@@ -38,7 +38,7 @@ Das Tutorial veranschaulicht die Schritte zur Integration von interaktiven Bilde
 Schritte zum Erstellen interaktiver Bilder:
 
 1. **(Optional) Ermitteln Sie Hotspot-Variablen**. Wenn Sie eigenständig Adobe Experience Manager Assets und Dynamic Media verwenden, ermitteln Sie die dynamischen Variablen, die in Ihrer vorhandenen Schnellansichtsimplementierung verwendet werden. Dadurch wird sichergestellt, dass Sie beim Erstellen des interaktiven Bildes Hotspot-Daten eingeben können. Siehe [(Optional) Ermitteln von Hotspot-Variablen](#optional-identifying-hotspot-variables).
-Wenn Sie jedoch Experience Manager-Sites, Experience Manager-eCommerce oder beides verwenden, ist dieser Schritt nicht erforderlich.
+Wenn Sie jedoch Experience Manager Sites, Experience Manager eCommerce oder beides verwenden, ist dieser Schritt nicht erforderlich.
 
 1. **(Optional) Erstellen Sie eine Viewer-Vorgabe für interaktive Bilder**. Passen Sie das Grafikbild an, das zur Darstellung von Hotspots verwendet wird. Die Erstellung Ihrer eigenen Viewer-Vorgabe für interaktive Bilder ist nicht erforderlich, wenn Sie stattdessen die standardmäßig bereitgestellte Viewer-Vorgabe für interaktive Bilder namens `Shoppable_Banner` (Banner mit Shopping-Funktion) verwenden möchten.
 Siehe [(Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -52,7 +52,7 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 Weitere Informationen zum Veröffentlichen von interaktiven Bild-Assets finden Sie unter [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. **Fügen Sie Ihrer Website oder Ihrer Website in Experience Manager** ein interaktives Bild hinzu. Wenn Sie Sites, E-Commerce oder beides verwenden, können Sie in Experience Manager interaktive Bilder direkt zu einer Website hinzufügen. Ziehen Sie die interaktive Medienkomponente auf die Seite. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-Wenn Sie Experience Manager-Assets und Dynamic Media in der Standalone-Version verwenden, kopieren Sie den Einbettungs-Code auf Ihrer Website. Integrieren Sie sie dann in Ihre vorhandene Schnellansicht. Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
+Wenn Sie Experience Manager Assets und Dynamic Media in der Standalone-Version verwenden, kopieren Sie den Einbettungs-Code auf Ihrer Website. Integrieren Sie sie dann in Ihre vorhandene Schnellansicht. Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
 Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, integrieren Sie das neue interaktive Video in die vorhandene Schnellansicht auf Ihrer Website. Siehe [Integrieren eines interaktiven Bildes in einer Schnellansicht](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (Optional) Ermitteln von Hotspot-Variablen {#optional-identifying-hotspot-variables}
@@ -62,7 +62,7 @@ Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, integrieren Si
 >Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
 >
 >* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Bild umwandeln.
->* Bei Ihrer Implementierung von Experience Manager wird *kein* E-Commerce-Integrations-Framework verwendet, um Produktdaten aus einer beliebigen E-Commerce-Lösung in Experience Manager zu ziehen. Zu diesen Lösungen gehören IBM® WebSphere® Commerce, Elastic Path, SAP Hybris oder Intershop.
+>* Bei Ihrer Implementierung von Experience Manager wird *kein* E-Commerce-Integrations-Framework verwendet, um Produktdaten aus einer beliebigen E-Commerce-Lösung in Experience Manager zu ziehen. Zu diesen Lösungen gehören IBM WebSphere® Commerce, Elastic Path, SAP Hybris oder Intershop.
 
 >
 >
@@ -167,15 +167,15 @@ Mit diesen Informationen hat die gesamte Schnellansichts-URL das folgende Muster
 
 Auf Grundlage einer solchen Analyse würden Sie `categoryId` und `SKU` für Hotspots verwenden.
 
-Sie können jetzt ein Bildbanner hochladen und ihm Hotspots mit der Funktion für interaktive Bilder mit Shopping-Funktion in Experience Manager Assets hinzufügen.
+Jetzt können Sie ein Bildbanner hochladen und diesem Hotspots hinzufügen, indem Sie die Funktion für interaktive Bilder mit Shopping-Funktion in Experience Manager Assets verwenden.
 
 ## (Optional) Erstellen einer Viewer-Vorgabe für interaktive Bilder {#optional-creating-an-interactive-image-viewer-preset}
 
-Sie können die standardmäßige Viewer-Vorgabe für interaktive Bilder mit dem Namen `Shoppable_Banner` verwenden, die im Lieferumfang von Experience Manager-Assets enthalten ist. Sie können auch eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen.
+Sie können die standardmäßige vorkonfigurierte Viewer-Vorgabe für interaktive Bilder mit dem Namen `Shoppable_Banner` verwenden, die in Experience Manager Assets integriert ist. Sie können auch eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen.
 
 Wenn Sie eine benutzerdefinierte Viewer-Vorgabe für interaktive Bilder erstellen, können Sie das Erscheinungsbild von Hotspots auf dem Bildbanner bestimmen. Bei der Erstellung der Viewer-Vorgabe können Sie eine Hotspot-Grafik aus einer Galerie mit vordefinierten Bildern verwenden.
 
-Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der Listenseite &quot;Viewer-Vorgabe&quot;in Experience Manager-Assets aktiviert (aktiviert). Diese Funktionalität bedeutet, dass sie in der interaktiven Medienkomponente sowie dann sichtbar ist, wenn Sie ein Asset anzeigen. Um jedoch ein interaktives Banner mit dieser Viewer-Vorgabe *bereitzustellen*, *veröffentlichen* Sie auch Ihre Viewer-Vorgabe. Diese Regel gilt für benutzerdefinierte oder vordefinierte Viewer-Vorgaben.
+Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der Seite mit der Liste der „Viewer-Vorgaben“ in Experience Manager Assets aktiviert (eingeschaltet). Diese Funktionalität bedeutet, dass sie in der interaktiven Medienkomponente sowie dann sichtbar ist, wenn Sie ein Asset anzeigen. Um jedoch ein interaktives Banner mit dieser Viewer-Vorgabe *bereitzustellen*, *veröffentlichen* Sie auch Ihre Viewer-Vorgabe. Diese Regel gilt für benutzerdefinierte oder vordefinierte Viewer-Vorgaben.
 
 **So erstellen Sie eine Viewer-Vorgabe für interaktive Bilder:**
 
@@ -305,7 +305,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
 
 ### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
-Mit der Vorschau können Sie eine Darstellung anzeigen, wie Ihr interaktives Bild für Kunden angezeigt wird. Mit der Vorschau können Sie auch die Hotspots des Bildes testen, um sicherzustellen, dass sie wie erwartet funktionieren.
+Sie können die Vorschau verwenden, um zu sehen, wie das interaktive Bild für Kunden dargestellt wird. Mit der Vorschau können Sie auch die Hotspots des Bildes testen, um sicherzustellen, dass sie wie erwartet funktionieren.
 
 Wenn das interaktive Bild Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
@@ -327,7 +327,7 @@ Weitere Informationen zum Veröffentlichen interaktiver Bild-Assets finden Sie u
 
 Nachdem Sie ein Banner-Bild hochgeladen, Hotspots hinzugefügt, und das interaktive Bild veröffentlicht haben, können Sie es jetzt auf Ihrer Website hinzufügen.
 
-Wenn Sie Experience Manager Sites-Kunde sind, können Sie das interaktive Bild hinzufügen, indem Sie die interaktive Medienkomponente auf Ihre Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Wenn Sie Experience Manager Sites-Kunde sind, können Sie das interaktive Bild hinzufügen, indem Sie die interaktive Medienkomponente auf Ihre Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Wenn Sie nur Experience Manager Assets verwenden, können Sie das interaktive Bild manuell zu Ihrer Website hinzufügen, wie in diesem Abschnitt beschrieben.
 
@@ -345,7 +345,7 @@ Wenn Sie die [Demo-Website als Beispiel](https://experienceleague.adobe.com/tool
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Die Integration ist so einfach wie das Entfernen des `IMG`-Tags und dessen Ersetzung durch den kopierten Einbettungscode aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
+Die Integration ist sehr einfach. Sie entfernen das `IMG`-Tag und ersetzen es durch den kopierten Einbettungs-Code aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in den vorhandenen Schnellansichten integriert.
@@ -361,7 +361,7 @@ Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihr
 ## Integrieren eines interaktiven Bildes in eine Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-Diese Aufgabe ist nur relevant, wenn Sie ein eigenständiger Kunde von Experience Manager Assets sind.
+Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist die Integration des interaktiven Bildes in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig und es ist ein spezifischer Ansatz erforderlich. Daher ist es hilfreich, die Unterstützung durch eine IT-Person am Frontend einzubeziehen.
 
@@ -377,7 +377,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 
 Diese Aufrufe stellen möglicherweise keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Website-Logik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
-Wenn das interaktive Bild mit Shopping-Funktion Schritt 1 und teilweise Schritt 2 ersetzt, tippt ein Benutzer auf einen Hotspot im Bild mit Shopping-Funktion. Diese Benutzerinteraktion wird vom Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Webseite zurück, das alle Hotspot-Daten enthält, die zuvor zu Experience Manager Assets hinzugefügt wurden.
+Wenn das interaktive Bild mit Shopping-Funktion Schritt 1 und teilweise Schritt 2 ersetzt, tippt ein Benutzer auf einen Hotspot im Bild mit Shopping-Funktion. Diese Benutzerinteraktion wird vom Viewer verarbeitet. Der Viewer gibt ein Ereignis an die Web-Seite zurück, das alle Hotspot-Daten enthält, die zuvor zu Experience Manager Assets hinzugefügt wurden.
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
