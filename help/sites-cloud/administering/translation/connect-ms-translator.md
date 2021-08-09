@@ -66,7 +66,7 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 1. Tippen oder klicken Sie auf **Bearbeiten**.
 1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
 
-## Aktivieren der Übersetzungs-Service-Konfigurationen   {#activating-the-translator-service-configurations}
+## Aktivieren der Übersetzungs-Service-Konfigurationen {#activating-the-translator-service-configurations}
 
 Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Veröffentlichen eines Baums](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, die die Microsoft Translator-Konfigurationen speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
