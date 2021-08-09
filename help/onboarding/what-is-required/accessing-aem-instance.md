@@ -1,33 +1,33 @@
 ---
-title: 'Gewähren des Benutzerzugriffs auf eine AEM Instanz '
-description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator Benutzern Zugriff auf eine AEM gewährt.
+title: 'Gewähren des Benutzerzugriffs auf eine AEM-Instanz '
+description: Auf dieser Seite erfahren Sie, wie ein Systemadministrator Benutzern Zugriff auf eine AEM-Instanz gewährt.
 exl-id: 9f637030-dbcf-4330-9360-99d6aaea45b8
 source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
-# Gewähren des Benutzerzugriffs auf eine AEM Instanz {#accessing-aem-instance}
+# Gewähren des Benutzerzugriffs auf eine AEM-Instanz {#accessing-aem-instance}
 
 Gehen Sie als Systemadministrator wie folgt vor, um dem Benutzer Zugriff auf eine AEM-Instanz zu gewähren:
 
-1. Navigieren Sie zu Cloud Manager und klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche Zugriff verwalten **, wie unten dargestellt.**
+1. Gehen Sie zu Cloud Manager und klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche **Zugriff verwalten**, wie unten dargestellt.
 
    >[!NOTE]
-   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur die Rollen &quot;Business Owner&quot;und &quot;Deployment Manager&quot;sind zum Erstellen einer Umgebung berechtigt. Weitere Informationen zu Rollen und zugehörigen Berechtigungen finden Sie unter [Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md) . Weitere Informationen zu Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) .
+   >Sie müssen ein Systemadministrator oder der Benutzer sein, der die Umgebung erstellt hat, um einen Benutzer zur Admin Console hinzufügen zu können. Nur die Rollen „Business Owner“ (Geschaäfts-Verantwortlicher) und „Deployment Manager“ (Implementierungs-Manager) sind zum Erstellen einer Umgebung berechtigt. Weitere Informationen zu Rollen und zugehörigen Berechtigungen finden Sie unter [Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md). Weitere Informationen zu Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Oder
 
-   Wählen Sie auf der Seite **Umgebungen** **Verwalten** —> **Verwalten des Zugriffs**.
+   Wählen Sie auf der Seite **Umgebungen** **Verwalten** --> **Zugriff verwalten**.
 
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
 
-1. Nachdem Sie auf **Zugriff verwalten** geklickt haben, gelangen Sie über eine neue Registerkarte zu **Admin Console**, von der aus Sie auf die Autoreninstanz der Umgebung zugreifen können.
+1. Nachdem Sie auf **Zugriff verwalten** geklickt haben, werden Sie zur **Admin Console** weitergeleitet, von der aus Sie auf die Autoreninstanz der Umgebung zugreifen können.
 
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin-2.png)
 
@@ -39,9 +39,9 @@ Gehen Sie als Systemadministrator wie folgt vor, um dem Benutzer Zugriff auf ein
 
    Oder
 
-   Sie können auch direkt zur [Admin Console](https://adminconsole.adobe.com) navigieren, um einen Benutzer hinzuzufügen.
+   Sie können auch direkt zur [Admin Console](https://adminconsole.adobe.com) gehen, um einen Benutzer hinzuzufügen.
 
-   1. Wählen Sie die AEM Instanz von Interesse aus der Admin Console aus, wie unten dargestellt. Sie können die Karte Adobe Experience Manager als Cloud Service (Produktkontext) auswählen, um zur Tabelle mit der Liste der AEM zu gelangen.
+   1. Wählen Sie die gewünschte AEM-Instanz in der Admin Console aus, wie unten dargestellt. Sie können die Karte Adobe Experience Manager as a Cloud Service (Produktkontext) auswählen, um zur Tabelle mit der Liste der AEM-Instanzen zu gelangen.
 
       ![](/help/onboarding/what-is-required/assets/admin-console-6.png)
 
@@ -50,9 +50,9 @@ Gehen Sie als Systemadministrator wie folgt vor, um dem Benutzer Zugriff auf ein
       ![](/help/onboarding/what-is-required/assets/admin-console-7.png)
 
 
-   1. Klicken Sie auf **Benutzer hinzufügen** , um die Benutzer hinzuzufügen, denen Sie Zugriff gewähren möchten.
+   1. Klicken Sie auf **Benutzer hinzufügen**, um die Benutzer hinzuzufügen, denen Sie Zugriff gewähren möchten.
 
       ![](/help/onboarding/what-is-required/assets/admin-console-8.png)
 
       >[!NOTE]
-      >Für einige Organisationen, die vor Januar 2020 Zugang zu AEM as a Cloud Service erhalten haben, werden diese zur Adobe Admin Console weitergeleitet und das Produkt- und Umgebungsproduktprofil muss ausgewählt werden.
+      >Einige Organisationen, die vor Januar 2020 Zugang zu AEM as a Cloud Service erhalten haben, werden zur Adobe Admin Console weitergeleitet und sie müssen dort das Produkt- und Umgebungsproduktprofil auswählen.
