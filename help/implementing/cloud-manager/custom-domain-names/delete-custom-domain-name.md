@@ -3,7 +3,7 @@ title: Löschen eines benutzerderdefinierten Domain-Namens
 description: Löschen eines benutzerderdefinierten Domain-Namens
 exl-id: febe647b-46df-47cb-b542-c05bf03ac88d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '151'
 ht-degree: 100%
 
