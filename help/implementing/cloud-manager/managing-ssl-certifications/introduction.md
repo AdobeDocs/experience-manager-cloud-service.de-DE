@@ -39,7 +39,7 @@ Cloud Manager unterstützt die folgenden Kundenanforderungen für SSL-Zertifikat
 * Jede Cloud Manager-Umgebung kann mehrere Zertifikate verwenden.
 * Ein privater Schlüssel kann mehrere SSL-Zertifikate ausstellen.
 * Jedes Zertifikat enthält in der Regel mehrere Domains.
-* Der Plattform-TLS-Dienst leitet Anfragen basierend auf dem zum Beenden verwendeten SSL-Zertifikat und dem CDN-Service, der diese Domain hostet, an den CDN-Service des Kunden weiter.
+* Der Plattform-TLS-Service leitet Anfragen basierend auf dem zum Beenden verwendeten SSL-Zertifikat und dem CDN-Service, der diese Domain hostet, an den CDN-Service des Kunden weiter.
 
 Auf der Seite „SSL-Zertifikate“ der Cloud Manager-Benutzeroberfläche kann ein Benutzer mit den entsprechenden Berechtigungen mehrere Aufgaben ausführen, um SSL-Zertifikate für ein Programm zu verwalten:
 
