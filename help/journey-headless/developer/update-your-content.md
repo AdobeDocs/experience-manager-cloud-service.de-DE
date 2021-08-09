@@ -1,32 +1,32 @@
 ---
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
-description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie, wie Sie mit der REST-API auf den Inhalt Ihrer Inhaltsfragmente zugreifen und diesen aktualisieren können.
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
-
 # Aktualisieren Ihres Inhalts über AEM Assets-APIs {#update-your-content}
 
-In diesem Teil der [AEM Headless-Entwickler-Journey,](overview.md) erfahren Sie, wie Sie mit der REST-API auf den Inhalt Ihrer Inhaltsfragmente zugreifen und diesen aktualisieren können.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 
-## Die Geschichte bisher {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Journey [Zugriff auf Ihre Inhalte über AEM Bereitstellungs-APIs](access-your-content.md) haben Sie erfahren, wie Sie über die AEM GraphQL-API auf Ihre Headless-Inhalte in AEM zugreifen können. Nun sollten Sie:
+Im vorherigen Dokument der AEM Headless-Tour, [Zugriff auf Ihre Inhalte über AEM-Bereitstellungs-APIs](access-your-content.md) haben Sie erfahren, wie Sie über die AEM-GraphQL-API auf Ihre Headless-Inhalte in AEM zugreifen können. Nun sollten Sie:
 
-* Sie verfügen über ein allgemeines Verständnis von GraphQL.
-* Erfahren Sie, wie die AEM GraphQL-API funktioniert.
-* Machen Sie sich mit einigen praktischen Beispielabfragen vertraut.
+* über ein hohes Maß an Verständnis von GraphQL verfügen,
+* verstehen, wie die AEM-GraphQL-API funktioniert,
+* einige praktische Beispielabfragen verstehen.
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihre vorhandenen Headless-Inhalte in AEM über die REST-API aktualisieren können.
 
-## Vorgabe {#objective}
+## Ziele {#objective}
 
-* **Zielgruppe**: Erweitert
-* **Zielsetzung**: Erfahren Sie, wie Sie mit der REST-API auf den Inhalt Ihrer Inhaltsfragmente zugreifen und diesen aktualisieren können:
+* **Zielgruppe**: Fortgeschrittene
+* **Ziele**: Sie erfahren, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können:
    * Einführung in die AEM Assets-HTTP-API.
    * Einführung und Diskussion der Unterstützung von Inhaltsfragmenten in der API.
    * Veranschaulichende Details zur API.
@@ -35,13 +35,13 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
   * Look at sample code to see how things work in practice.
 -->
 
-## Warum benötigen Sie die Assets-HTTP-API für Inhaltsfragmente {#why-http-api}?
+## Warum Sie die Assets-HTTP-API für Inhaltsfragmente benötigen {#why-http-api}
 
-Im vorherigen Schritt der Headless-Journey haben Sie erfahren, wie Sie mit der AEM GraphQL-API Inhalte mithilfe von Abfragen abrufen können.
+Im vorherigen Teil der Headless-Tour haben Sie erfahren, wie Sie mit der AEM-GraphQL-API Inhalte mithilfe von Abfragen abrufen können.
 
-Warum ist also eine andere API erforderlich?
+Warum ist also eine weitere API erforderlich?
 
-Die Assets-HTTP-API ermöglicht zwar das **Lesen** Ihres Inhalts, ermöglicht Ihnen aber auch das **Erstellen**, **Aktualisieren** und **Löschen** von Inhalten - Aktionen, die mit der GraphQL-API nicht möglich sind.
+Die Assets-HTTP-API ermöglicht nicht nur das **Lesen** Ihrer Inhalte, sondern auch das **Erstellen**, **Aktualisieren** und **Löschen** von Inhalten – Aktionen, die mit der GraphQL-API nicht möglich sind.
 
 Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen Adobe Experience Manager as a Cloud Service-Version verfügbar.
 
@@ -52,9 +52,9 @@ Die Assets-HTTP-API umfasst die:
 * Assets-REST-API
 * einschließlich Unterstützung für Inhaltsfragmente
 
-Die aktuelle Implementierung der Assets-HTTP-API basiert auf dem Architekturstil **REST** und ermöglicht den Zugriff auf (in AEM gespeicherte) Inhalte über **CRUD**-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
+Die aktuelle Implementierung der Assets-HTTP-API basiert auf dem Architekturstil **REST** und ermöglicht den Zugriff auf (in AEM gespeicherte) Inhalte über **CRUD**-Vorgänge (Create, Read, Update, Delete, also Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit diesem Vorgang ermöglicht Ihnen die API den Betrieb von Adobe Experience Manager as a Cloud Service as a Headless CMS (Content Management System) durch Bereitstellung von Content Services für eine JavaScript-Frontend-Anwendung. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise erfordern Framework-basierte oder benutzerdefinierte Einzelseiten-Apps (SPA), dass über eine API bereitgestellte Inhalte bereitgestellt werden, häufig im JSON-Format.
+Mit diesen Oprationen ermöglicht die API es Ihnen, Adobe Experience Manager as a Cloud Service als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
 
 <!--
 >[!NOTE]
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets-HTTP-API und Inhaltsfragmente {#assets-http-api-content-fragments}
 
-Inhaltsfragmente werden für die Headless-Bereitstellung verwendet und ein Inhaltsfragment ist ein spezieller Asset-Typ. Sie werden für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet.
+Inhaltsfragmente werden für die Headless-Bereitstellung verwendet. Ein Inhaltsfragment ist ein spezieller Asset-Typ. Sie können für den Zugriff auf strukturierte Daten wie z. B. Texte, Zahlen und Daten verwendet werden.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -205,11 +205,11 @@ To create a new content fragment, the (internal repository) path of the model ha
 Associated content is currently not exposed.
 -->
 
-## Verwenden der Assets-REST-API {#using-aem-assets-rest-api}
+## Verwenden der Assets REST-API {#using-aem-assets-rest-api}
 
 ### Zugriff {#access}
 
-Die Assets-REST-API verwendet den Endpunkt `/api/assets` und benötigt für den Zugriff auf den Pfad des Assets (ohne das vorangestellte `/content/dam`).
+Die Assets REST-API verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das Asset dessen Pfad (ohne das Präfix `/content/dam`).
 
 * Das bedeutet, dass Sie für den Zugriff auf das Asset unter
    * `/content/dam/path/to/asset`
@@ -222,7 +222,7 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
->* `/content/path/to/page` **erfordert keine** Verwendung des `.model`-Selektors.
+>* `/content/path/to/page` **erforder** die Verwendung des `.model`-Selektors.
 
 
 ### Vorgang {#operation}
@@ -301,14 +301,14 @@ Nutzung erfolgt über:
 Weitere Informationen zur Verwendung der AEM Assets REST-API finden Sie unter:
 
 * Adobe Experience Manager Assets-HTTP-API (Zusätzliche Ressourcen)
-* Unterstützung von Inhaltsfragmenten in der AEM Assets HTTP API (Zusätzliche Ressourcen)
+* Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API (Zusätzliche Ressourcen)
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Journey abgeschlossen haben, sollten Sie:
+Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 
-* Machen Sie sich mit den Grundlagen der AEM Assets-HTTP-API vertraut.
-* Erfahren Sie, wie Inhaltsfragmente in dieser API unterstützt werden.
+* die Grundlagen der AEM Assets-HTTP-API verstehen,
+* verstehen, wie Inhaltsfragmente in dieser API unterstützt werden.
 
 <!--
 * Have experience with sample code and know how the API works in practice.
@@ -318,13 +318,13 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Journey abgeschlossen ha
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Sie sollten Ihre AEM Headless-Journey fortsetzen, indem Sie sich das Dokument [How Go Live with Your Headless Application](go-live.md) ansehen, in dem Sie Ihr AEM Headless-Projekt live mitnehmen.
+Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [So gehen Sie mit Ihrer Headless-Anwendung live](go-live.md) ansehen, in dem Sie mit Ihrem AEM Headless-Projekt tatsächlich live gehen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 * [Inhaltsfragment-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * [API-Referenz ](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
+   * [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API – Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 * [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
