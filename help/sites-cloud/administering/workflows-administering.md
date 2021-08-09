@@ -155,7 +155,7 @@ Zum Konfigurieren des Service können Sie die OSGi-Konfigurationsdateien konfigu
  </tbody>
 </table>
 
-## Einstellen der maximalen Größe des Posteingangs    {#setting-the-maximum-size-of-the-inbox}
+## Einstellen der maximalen Größe des Posteingangs {#setting-the-maximum-size-of-the-inbox}
 
 Sie können die maximale Größe des Posteingangs durch die Konfiguration des **Adobe Granite Workflow-Service** bestimmen. Siehe [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/implementing/deploying/configuring-osgi.md). In der folgenden Tabelle wird die Eigenschaft beschrieben, die Sie konfigurieren können.
 
