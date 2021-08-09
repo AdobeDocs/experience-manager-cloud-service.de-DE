@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Einführung zu Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Einführung in Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
 [Adobe Experience Manager](https://www.adobe.com/de/marketing/experience-manager.html) (AEM) ist nun as a Cloud Service verfügbar.
 
@@ -71,7 +71,7 @@ AEM ermöglicht dies, indem es sich sie wesentlichen Eigenschaften moderner Clou
 
    * AEM as a Cloud Service entwickelt sich täglich auf der Grundlage der von unseren Kunden durchgeführten Projekte weiter. Inhalte, Code und Konfigurationen werden ständig überprüft und mit Best Practices abgeglichen, sodass wir Sie bei der Umsetzung Ihrer Geschäftsziele unterstützen können.
 
-## Erste Schritte mit Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service kennenlernen {#getting-to-know-aem-as-cloud-service}
 
 * [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md) von Adobe Experience Manager as a Cloud Service im Vergleich zu vorherigen Versionen.
 * [Architektur](/help/core-concepts/architecture.md) von Adobe Experience Manager as a Cloud Service
