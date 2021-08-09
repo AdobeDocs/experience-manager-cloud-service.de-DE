@@ -14,7 +14,7 @@ exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72b
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '2549'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -135,7 +135,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    ![Kompilierte Site-CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   Die Datei ist die kompilierte und minimierte Version aller Sass-Dateien im Projekt.
+   Die Datei ist die kompilierte und minimierte Version aller Sass-Dateien in dem Projekt.
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-
 
    Achten Sie auf `venia/clientlibs/clientlib-site.min.css` und `venia/clientlibs/clientlib-site.min.js`. Dies sind die kompilierten CSS- und JavaScript-Dateien, die vom `ui.frontend`-Modul abgeleitet wurden.
 
-## Einbindung der Client-Bibliothek in Seitenvorlagen {#client-library-inclusion-pagetemplates}
+## Einschließen von Client-Bibliotheken mit Seitenvorlagen {#client-library-inclusion-pagetemplates}
 
 Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Sehe Sie sich zunächst an, wie das generierte Projekt die `clientlib-site`-Bibliotheken über [Seitenvorlagen](/help/implementing/developing/components/templates.md) enthält.
 
@@ -330,7 +330,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
 
    >[!CAUTION]
    >
-   > Wenn Sie einen Sass-bezogenen Fehler erhalten, beenden Sie den Server, führen Sie den Befehl `npm rebuild node-sass` aus und wiederholen Sie die oben genannten Schritte. Dazu kann es kommen, wenn dann im Projekt `aem-cif-guides-venia/pom.xml` eine andere Version von `npm` und `node` angegeben wird.
+   > Wenn Sie einen Sass-bezogenen Fehler erhalten, stoppen Sie den Server und führen Sie den Befehl `npm rebuild node-sass` aus; wiederholen Sie dann die oben genannten Schritte. Dazu kann es kommen, wenn dann im Projekt `aem-cif-guides-venia/pom.xml` eine andere Version von `npm` und `node` angegeben wird.
 
 1. Navigieren Sie mit demselben Browser als angemeldeter AEM-Instanz in einer neuen Registerkarte zu [http://localhost:8080/](http://localhost:8080/). Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
 
