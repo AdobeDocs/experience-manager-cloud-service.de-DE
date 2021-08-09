@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '2869'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Alles andere im Repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `
 
 ### Oak-Indizes {#oak-indexes}
 
-Oak-Indizes (`/oak:index`) werden speziell vom AEM Cloud as a Cloud Service-Implementierungsprozess verwaltet. Dies liegt daran, dass Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu indiziert wird, bevor zum neuen Code-Bild gewechselt wird.
+Oak-Indizes (`/oak:index`) werden speziell vom AEM as a Cloud Service-Implementierungsprozess verwaltet. Dies liegt daran, dass Cloud Manager warten muss, bis ein neuer Index bereitgestellt und vollständig neu indiziert wird, bevor zum neuen Code-Bild gewechselt wird.
 
 Aus diesem Grund müssen Oak-Indizes, obwohl sie zur Laufzeit veränderbar sind, als Code bereitgestellt werden, damit sie installiert werden können, bevor veränderbare Pakete installiert werden. Daher sind `/oak:index`-Konfigurationen Teil des Code-Pakets und nicht Teil des Inhaltspakets, [wie unten beschrieben](#recommended-package-structure).
 
@@ -88,7 +88,7 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
 
 >[!NOTE]
 >
->Derselbe Code muss in allen Umgebungen bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch in der Staging-Umgebung ein Maß an Konfidenzvalidierungen erstellt wird. Weitere Informationen finden Sie im Abschnitt zu [Runmodes](/help/implementing/deploying/overview.md#runmodes).
+>Derselbe Code muss in allen Umgebungen bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch in der Staging-Umgebung ein gewisses Maß an Konfidenzvalidierungen gewährleistet ist. Weitere Informationen finden Sie im Abschnitt zu [Ausführungsmodi](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Inhaltspakete
@@ -332,7 +332,7 @@ Code- und Inhaltspakete, die als Unterpakete bereitgestellt werden, müssen abh�
 
 Das Container-Projekt `all/pom.xml` deklariert **keinen** `<packageType>`.
 
-#### (Unveränderliche) Code-Pakettypen {#immutable-package-types}
+#### (Unveränderliche) Code-Pakettypen  {#immutable-package-types}
 
 Code-Pakete müssen ihren `packageType` auf `application` setzen.
 
@@ -359,7 +359,7 @@ In der `ui.apps/pom.xml` deklariert die `<packageType>application</packageType>`
     ...
 ```
 
-#### (Veränderliche) Code-Pakettypen {#mutable-package-types}
+#### (Veränderliche) Code-Pakettypen  {#mutable-package-types}
 
 Inhaltspakete müssen ihren `packageType` auf `content` setzen.
 
