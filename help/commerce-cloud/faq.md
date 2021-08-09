@@ -1,45 +1,45 @@
 ---
-title: AEM - Häufig gestellte Fragen zur Commerce-Integration mithilfe des Commerce Integration Framework
-description: AEM - Häufig gestellte Fragen zur Commerce-Integration mithilfe des Commerce Integration Framework
+title: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
+description: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
-# AEM - Häufig gestellte Fragen zur Commerce-Integration mithilfe des Commerce Integration Framework
+# Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 
-## 1. Wird CIF GraphQL nur für Commerce verwendet oder ist dies für die Abfrage von Inhalten verfügbar, die in AEM JCR erstellt wurden?
+## 1. Wird CIF GraphQL nur für Commerce verwendet oder kann die Sprache auch für die Abfrage von Inhalten verwendet werden, die im JCR von AEM erstellt wurden?
 
-Adobe hat die GraphQL-APIs von Magento als offizielle Commerce-APIs für alle Commerce-bezogenen Daten übernommen. Daher verwendet AEM GraphQL zum Austausch von Commerce-Daten mit Magento und mit einer beliebigen Commerce-Engine über I/O Runtime. Diese GraphQL-API ist unabhängig von AEM GraphQL-API für den Zugriff auf Inhaltsfragmente.
+Adobe hat die GraphQL-APIs von Magento als offizielle Commerce-APIs für alle Commerce-bezogenen Daten übernommen. Daher verwendet AEM GraphQL zum Austausch von Commerce-Daten mit Magento und mit einer beliebigen Commerce-Engine über I/O Runtime. Diese GraphQL-API ist beim Zugriff auf Inhaltsfragmente unabhängig von der GraphQL-API von AEM.
 
-## 2. Können Produkt-Assets (Images) über den Administrator von Adobe Commerce (Magento) gespeichert und von AEM referenziert werden? Wie können Assets aus Dynamic Media genutzt werden?
+## 2. Können Produkt-Assets (Bilder) von AEM über die Adobe E-Commerce (Magento)-Administration gespeichert und referenziert werden? Wie können Assets aus Dynamic Media genutzt werden?
 
-Es ist keine offizielle AEM Assets - Magento -Integration verfügbar. Auf dem [Marketplace](https://marketplace.magento.com/bounteous-dam.html) ist ein Partner-Connector verfügbar.
+Es ist keine offizielle Integration von AEM Assets mit Magento verfügbar. Auf dem [Marketplace](https://marketplace.magento.com/bounteous-dam.html) ist ein Partner-Connector verfügbar.
 
-Alternativ können Sie als Workaround Produkt-Assets (Bilder) in AEM Assets speichern, aber Sie müssen die Asset-URLs manuell in Magento speichern. Dynamic Media ist jetzt Teil von AEM Assets. Die Funktionalität der Lösung bleibt unverändert bestehen.
+Oder Sie können als Problemumgehung Produkt-Assets (Bilder) in AEM Assets speichern. Sie müssen die Asset-URLs jedoch manuell in Magento speichern. Dynamic Media ist jetzt Teil von AEM Assets. Die Funktionalität der Lösung bleibt unverändert bestehen.
 
-## 3. Ist es wichtig, wo die Commerce-Lösung bereitgestellt wird? (Lokal oder in der Cloud)
+## 3. Ist es wichtig, wo die Commerce-Lösung implementiert wird? (Lokal oder in der Cloud)
 
-Nein, es spielt keine Rolle, wo Ihre Commerce-Lösung bereitgestellt wird. CIF und die AEM Storefront funktionieren unabhängig vom Implementierungsmodell. Wenn die Lösung jedoch mit der empfohlenen E2E-Referenzarchitektur bereitgestellt wird, können E2E-Tests mit Leistungs-KPIs durchgeführt werden, die ein typisches Unternehmenskundenprofil darstellen. Dadurch werden zusätzliche Informationen bereitgestellt, die als Benchmark verwendet werden können.
+Nein, es spielt keine Rolle, wo Ihre Commerce-Lösung implementiert wird. CIF und die AEM-Storefront funktionieren unabhängig vom Implementierungsmodell. Wenn die Lösung jedoch mit der empfohlenen E2E-Referenzarchitektur implementiert wird, können E2E-Tests mit Leistungs-KPIs durchgeführt werden, die ein typisches Unternehmens-Kundenprofil darstellen. Dadurch werden zusätzliche Informationen bereitgestellt, die als Benchmark verwendet werden können.
 
 ## 4. Wie werden in AEM Katalogseiten oder Produktseiten erstellt? Wie können sie in AEM beibehalten werden?
 
 Katalogseiten und Produktseiten werden in AEM dynamisch basierend auf generischen Katalog- und Produktseitenvorlagen erstellt und zwischengespeichert. In AEM werden keine Produkt- oder Katalogdaten importiert und gespeichert.
 
-## 5. Wenn Sie Produktdaten in Ihrer Commerce-Lösung aktualisieren, wird die AEM dann in Echtzeit gesendet? Oder erfolgt dies per Batch-Prozess?
+## 5. Wenn man Produktdaten in seiner E-Commerce-Lösung aktualisiert, wird die Aktualisierung dann in Echtzeit an AEM gepusht? Oder erfolgt dies per Batch-Prozess?
 
-Das CIF-Add-on, das mit AEM Cloud Service verwendet wird, ermöglicht den Datenfluss von der Commerce-Lösung zu AEM On-Demand. Daher handelt es sich nicht um einen Push- oder Batch-Prozess in Echtzeit, wenn Ihre Commerce-Lösung aktualisiert wird.
+Das CIF-Add-on, das mit AEM Cloud Service verwendet wird, ermöglicht auf Anforderung den Datenfluss von der E-Commerce Lösung zu AEM. Daher handelt es sich bei diesem Vorgang nicht um einen Push-Vorgang in Echtzeit oder einen Batch-Prozess, wenn eine Aktualisierung in Ihrer E-Commerce Lösung erfolgt.
 
-## 6. Welche Kataloggröße AEM mit CIF-Unterstützung?
+## 6. Welche Kataloggröße unterstützt AEM mit CIF?
 
-Dies hängt von einigen weiteren Aspekten ab, die Sie berücksichtigen müssen. Wie hoch ist das Cache-Verhältnis Ihrer Katalogdaten und -Seiten? Wie viele gleichzeitige Anforderungen erwarten Sie während der Spitzenzeiten? Wie skalierbar sind die APIs Ihrer Commerce-Lösungen?
+Dies hängt von einigen weiteren Aspekten ab, die Sie berücksichtigen müssen. Wie hoch ist das Cache-Verhältnis Ihrer Katalogdaten und -seiten? Wie viele gleichzeitige Anfragen erwarten Sie während der Spitzenzeiten? Wie skalierbar sind die APIs Ihrer Commerce-Lösungen?
 
 ## 7. Welche Rolle spielt PIM bei diesem Framework?
 
-PIM-Daten werden über GraphQL-Anfragen für AEM und Clients bereitgestellt. Wir empfehlen, PIM in die Commerce-Engine (Magento oder andere) zu integrieren, damit PIM-Daten dann von der Commerce-Engine abgerufen werden können.
+PIM-Daten werden über GraphQL-Anfragen für AEM und Clients bereitgestellt. Wir empfehlen, PIM in die Commerce-Engine (von Magento oder anderen Anbietern) zu integrieren, sodass die PIM-Daten dann von der Commerce-Engine abgerufen werden können.
 
 ## 8. Werden über AEM Dispatcher auch Preise und andere Daten zwischengespeichert? Führt dies zu Problemen im Zusammenhang mit häufig durchgeführten Cache-Invalidierungen?
 
@@ -53,7 +53,7 @@ Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichte
 
 Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist in der Regel sehr kundenspezifisch und lässt sich besser auf projektspezifischer Ebene bereitstellen.
 
-## 11. Wie funktioniert die Suche mit AEM und Commerce mithilfe von CIF?
+## 11. Wie funktioniert die Suche bei AEM und Commerce mithilfe von CIF?
 
 Das CIF stellt die Komponenten „Suchleiste“ und „Suchergebnis“ bereit. Die Suchleistenkomponente sendet eine GraphQL-Anfrage mit dem Suchbegriff an die Commerce-Lösung, die dann eine Produktliste mit Produktname, Preis, SLUG usw. zurückgibt. Die Komponente „Suchergebnis“ zeigt dann die Suchergebnisse in einer Galerie-Ansicht auf einer Suchergebnisseite an, die in AEM erstellt wurde. Die Suche unterstützt einfache Volltextsuchen. Wir verwenden den Slug-/URL-Schlüssel, um einen Verweis auf die Produktdetailseite zu erstellen.
 
@@ -63,15 +63,15 @@ Produktdaten werden in der Regel bereits im PIM-System oder in Magento übersetz
 
 ## 13. Gibt es eine Möglichkeit, die Produktdaten durch Commerce-spezifischen Text zu optimieren? Wo kann dies geschehen? In AEM oder in der Commerce-Lösung?
 
-Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Dekorieren Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen mithilfe von Inhaltsfragmenten oder erstellen und verknüpfen Sie Experience Fragments für nicht strukturierte Inhalte mit Ihren Produkten.
+Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Versehen Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen, indem Sie Inhaltsfragmente verwenden, oder erstellen Sie Experience Fragments für unstrukturierte Inhalte und verknüpfen Sie diese mit Ihren Produkten.
 
 ## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationschicht verwendet wird?
 
-Es wird empfohlen, abstrakte Zahlungsmethoden zu verwenden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder die Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur die PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Compliance von Magentos finden Sie unter <https://magento.com/pci-compliance>
+Es wird empfohlen, abstrakte Zahlungsmethoden zu verwenden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Compliance von Magento finden Sie unter <https://magento.com/pci-compliance>
 
 ## 15. Wenn ich AEM und Magento Cloud-Versionen verwende, ist diese gemeinsame Lösung PCI-kompatibel?
 
-Ja, der Fragenkatalog D und die Bescheinigung der Konformität sind auf Anfrage erhältlich.
+Ja, der Selbstbewertungsfragebogen D und die Konformitätsbescheinigung sind auf Anfrage erhältlich.
 
 ## 16. Wie kann ich eine Adobe I/O Runtime-Testlizenz anfordern?
 
