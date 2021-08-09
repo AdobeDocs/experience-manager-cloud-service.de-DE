@@ -3,7 +3,7 @@ title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 >Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### Suchen nach Seiten {#finding-your-page}
@@ -83,7 +83,7 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-### Auswählen Ihrer Seite für weitere Aktionen   {#selecting-your-page-for-further-action}
+### Auswählen Ihrer Seite für weitere Aktionen {#selecting-your-page-for-further-action}
 
 Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
 
@@ -159,10 +159,8 @@ So bearbeiten Sie Ihre Seite:
    * Eine Komponente [kopieren (und einfügen):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
-
    >[!NOTE]
-   >
-   >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
+   Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
 
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
@@ -178,10 +176,9 @@ So bearbeiten Sie Ihre Seite:
    * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
 
    >[!NOTE]
-   >
-   >Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   Verwenden Sie den [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
 
-### Bearbeiten der Seiteneigenschaften    {#editing-the-page-properties}
+### Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
 
 Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -225,7 +222,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
    1. Öffnen Sie das Menü **Seiteninformationen**.
    1. Wählen Sie **Seite veröffentlichen**.
 
-* Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur auf der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
+* Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur in der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
 
    ![Schaltfläche „Veröffentlichung verwalten“](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -233,7 +230,7 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
 
    Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
 
-### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite    {#move-copy-and-paste-or-delete-your-page}
+### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite {#move-copy-and-paste-or-delete-your-page}
 
 Diese Aktionen können alle wie folgt ausgelöst werden:
 
@@ -254,10 +251,8 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
    * Löschen:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
-
    >[!NOTE]
-   >
-   >Löschen ist nicht als Schnellaktion verfügbar.
+   Löschen ist nicht als Schnellaktion verfügbar.
 
 ### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
@@ -285,7 +280,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 1. Tippen/klicken Sie auf den gewünschten Verweistyp, um weitere Details anzuzeigen und (bei Bedarf) weitere Aktionen auszuführen.
 
-### Erstellen einer Seitenversion    {#creating-a-version-of-your-page}
+### Erstellen einer Seitenversion {#creating-a-version-of-your-page}
 
 So erstellen Sie eine [Version](/help/sites-cloud/authoring/features/page-versions.md) Ihrer Seite:
 
