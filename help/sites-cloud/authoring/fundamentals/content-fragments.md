@@ -34,9 +34,9 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 Inhaltsfragmente ermöglichen:
 
-* **Marketing- und Kampagnenstrategie** 
+* **Marketing- und Kampagnenstrategie**
    * Überprüfen Sie Inhalte über zentral verwaltete Inhaltsfragmente.
-* **Creative Pro** 
+* **Creative Pro**
    * Verfolgen Sie kreative Assets über Sammlungen, die mit Inhaltsfragmenten verbunden sind.
 * **Copy Writer**
    * Schreiben Sie im AEM-Inhaltsfragmenteditor.
@@ -45,13 +45,13 @@ Inhaltsfragmente ermöglichen:
    * Kann Versionierung/Workflow verwenden.
    * Kann Inhaltsfragmente freigeben.
    * Kann Übersetzungen zentral verwalten.
-* **Produzenten und Journey-Manager** 
+* **Produzenten und Journey-Manager**
    * Wählen Sie bei der Erstellung in AEM aus vordefinierten Fragmenten und Varianten aus.
    * Kann darauf vertrauen, dass Fragment- und zugehörige Inhalte immer auf dem neuesten Stand sind, da Copy Writer und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite          {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 2. Fügen Sie die **Inhaltsfragmentkomponente** hinzu; entweder aus dem **Komponenten-Browser** oder mit **Neue Komponente einfügen**.
@@ -63,7 +63,7 @@ Inhaltsfragmente ermöglichen:
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-4. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Master** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+4. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Primär** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![Inhaltsfragmente im Assets-Browser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -71,7 +71,7 @@ Inhaltsfragmente ermöglichen:
    >
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
-   >* [Responsives Layout  ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
    * [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
@@ -96,21 +96,21 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
    Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
 
 * **Variante**
-   * Der Standard-**Master** ist immer verfügbar.
-   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden. 
+   * Die Standardversion **Primär** ist immer verfügbar.
+   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
 * **ID**
 
    * **HTML-ID**-Attribut, das auf die Komponente angewandt wird.
 
-### Schnelle Verbindung zum Fragmenteditor          {#quick-connection-to-fragment-editor}
+### Schnelle Verbindung zum Fragmenteditor {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-### Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
+### Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -140,7 +140,7 @@ Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert
 * Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
 
-### Verwenden von zugehörigen Inhalten          {#using-associated-content}
+### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
