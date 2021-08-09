@@ -93,7 +93,7 @@ Sie können Asset-Ordner sofort veröffentlichen oder deren Veröffentlichung au
 
    ![publish2bp](assets/publish2bp.png)
 
-1. **Ordner jetzt veröffentlichen** 
+1. **Ordner jetzt veröffentlichen**
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
@@ -162,7 +162,7 @@ So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgän
 
 1. **Späteres Rückgängigmachen der Veröffentlichung von Assets**
 
-   Wenn Sie die Veröffentlichung eines Asset-Ordners zu einem späteren Zeitpunkt rückgängig machen möchten:
+   Wenn Sie die Veröffentlichung eines Asset-Ordners zu einem späteren Zeitpunkt aufheben möchten:
 
    1. Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
@@ -180,7 +180,7 @@ So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgän
 
 ## Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
 
-Sie können Sammlungen in Ihrer AEM Assets-Cloud-Instanz veröffentlichen oder deren Veröffentlichung rückgängig machen.
+Sie können Sammlungen in Ihrer AEM Assets-Cloud-Instanz veröffentlichen oder deren Veröffentlichung aufheben.
 
 >[!NOTE]
 >
@@ -210,9 +210,9 @@ Im Folgenden werden die Schritte zum Veröffentlichen von Sammlungen aus AEM Ass
 
    ![Veröffentlichte Sammlung](assets/published_collection.png)
 
-### Veröffentlichung von Sammlungen rückgängig machen {#unpublish-collections}
+### Veröffentlichung von Sammlungen aufheben {#unpublish-collections}
 
-Sie können alle in Brand Portal veröffentlichte Sammlungen entfernen, indem Sie die Veröffentlichung über die AEM Assets-Instanz rückgängig machen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, ist deren Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
+Sie können alle in Brand Portal veröffentlichte Sammlungen entfernen, indem Sie die Veröffentlichung über die AEM Assets-Instanz aufheben. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, ist deren Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
 Im Folgenden werden die Schritte zum Aufheben der Veröffentlichung einer Sammlung beschrieben:
 
@@ -221,7 +221,7 @@ Im Folgenden werden die Schritte zum Aufheben der Veröffentlichung einer Sammlu
    ![Sammlung auswählen](assets/select_collection-1.png)
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Aus Brand Portal löschen]**.
-1. Klicken Sie im Dialogfeld auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Veröffentlichung aufheben]**.
 1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Brand Portal-Oberfläche entfernt.
 
 Darüber hinaus können Sie Metadatenschemata, Bildvorgaben, Suchfacetten und Tags von AEM Assets in Brand Portal veröffentlichen.
