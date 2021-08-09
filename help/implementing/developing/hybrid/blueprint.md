@@ -65,7 +65,7 @@ Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird
 
 Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
-### Meta-Felder   {#meta-fields}
+### Meta-Felder {#meta-fields}
 
 Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-API basiert. Die exportierbaren Sling-Modelle machen die folgende Liste von Feldern verfügbar, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
 
@@ -81,7 +81,7 @@ Siehe auch [Erste Schritte mit AEM Content Services](https://experienceleague.ad
 
 ### Framework-spezifisches Modul {#framework-specific-module}
 
-Die Trennung von Aufgaben erleichtert die Projektdurchführung. Daher sollte ein NPM-spezifisches Paket bereitgestellt werden. Dieses Paket ist für das Aggregieren und Freigeben der grundlegenden Module, Dienste und Komponenten verantwortlich. Diese Komponenten müssen die Verwaltungslogik des Datenmodells einschließen und Zugriff auf jene Daten gewähren, die die Projektkomponente erwartet. Zudem ist das Modul für das vorübergehende Verfügbarmachen nützlicher Einstiegspunkte der zugrunde liegenden Bibliotheken verantwortlich.
+Die Trennung von Aufgaben erleichtert die Projektdurchführung. Daher sollte ein NPM-spezifisches Paket bereitgestellt werden. Dieses Paket ist für das Aggregieren und Freigeben der grundlegenden Module, Services und Komponenten verantwortlich. Diese Komponenten müssen die Verwaltungslogik des Datenmodells einschließen und Zugriff auf jene Daten gewähren, die die Projektkomponente erwartet. Zudem ist das Modul für das vorübergehende Verfügbarmachen nützlicher Einstiegspunkte der zugrunde liegenden Bibliotheken verantwortlich.
 
 Um die Interoperabilität der Bibliotheken zu optimieren, empfiehlt Adobe für das Framework-spezifische Modul, die folgenden Bibliotheken zu bündeln. Bei Bedarf kann die Schicht die zugrunde liegenden APIs einkapseln und anpassen, bevor sie dem Projekt verfügbar gemacht werden.
 
@@ -98,7 +98,7 @@ NPM-Modul: [@adobe/aem-response-editable-components](https://www.npmjs.com/packa
 
 NPM-Modul: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## Hauptdienste und -komponenten {#main-services-and-components}
+## Haupt-Services und -komponenten {#main-services-and-components}
 
 Die folgenden Entitäten sollten im Einklang mit den für das jeweilige Framework geltenden Leitlinien implementiert werden. Je nach Framework-Architektur kann die Implementierung stark variieren, die beschriebenen Funktionen müssen jedoch bereitgestellt werden.
 
@@ -173,6 +173,7 @@ Beispiel:
 >
 >* `"new section"`: Zeigt an, dass das aktuelle Element der Platzhalter des Containers ist
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
+
 >
 
 
