@@ -3,9 +3,9 @@ title: Überprüfen des IP-Zulassungslistenstatus
 description: Überprüfen des IP-Zulassungslistenstatus
 exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -43,10 +43,10 @@ Sobald der Löschvorgang abgeschlossen ist, wird die IP-Zulassungsliste:
 
 ## Vorhandene CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
 
-Kunden mit Umgebungen, die bereits vorhandene CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domänennamen enthalten, sehen die folgende Meldung auf der Detailseite **IP-Zulassungsliste** und **Umgebung** . Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann ein bis zwei Werktage dauern, bis die Meldung ausgeblendet wird.
+Kunden mit Umgebungen, die bereits bestehende CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domain-Namen enthalten, sehen die folgende Meldung auf den Detailseiten **IP-Zulassungsliste** und **Umgebung**. Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann ein bis zwei Werktage dauern, bis die Meldung ausgeblendet wird.
 
 >[!NOTE]
->Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) .
+>Um die bereits vorhandenen Konfigurationen anzuzeigen und zu verwalten, müssen sie über die Benutzeroberfläche hinzugefügt werden. Weitere Informationen finden Sie unter [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
