@@ -3,7 +3,7 @@ title: Fehlerbehebung in AEM beim Authoring
 description: Probleme, die bei der Verwendung mit AEM auftreten können
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 ## Komponentenaktionen nicht in der Symbolleiste sichtbar {#component-actions-not-visible-on-toolbar}
 
 * **Problem**:
-   * Sämtliche entsprechenden Komponentenaktionen sind nicht sichtbar, wenn eine Seite in der Autorenumgebung bearbeitet wird. 
+   * Sämtliche entsprechenden Komponentenaktionen sind nicht sichtbar, wenn eine Seite in der Autorenumgebung bearbeitet wird.
 * **Grund**:
    * In seltenen Fällen kann eine frühere Aktion die Symbolleiste beeinflussen.
 * **Lösung**:
