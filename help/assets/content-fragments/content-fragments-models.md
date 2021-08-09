@@ -1,19 +1,19 @@
 ---
 title: Inhaltsfragmentmodelle
-description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihren Headless Content dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
+description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihren Headless-Content dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 feature: Inhaltsfragmente
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
 workflow-type: tm+mt
 source-wordcount: '2258'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
 
-Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente,](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Inhalt dienen.
+Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Content dienen.
 
 So verwenden Sie Inhaltsfragmentmodelle:
 
@@ -38,7 +38,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 1. Speichern Sie das leere Modell über **Erstellen**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **Öffnen** direkt bearbeiten oder über **Fertig** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells  {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inhaltsfragmente unter Verwendung unterschiedlicher **[Datentypen](#data-types)**. Mithilfe des Modell-Editors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
 
@@ -110,7 +110,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Wenn ein Bild referenziert wird, können Sie eine Miniaturansicht anzeigen
+   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniaturansicht angezeigt werden.
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -122,16 +122,16 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Das JSON wird weitergegeben und als JSON in GraphQL ausgegeben.
       * Umfasst JSON-Syntaxhervorhebung, automatische Vervollständigung und Fehlerhervorhebung im Inhaltsfragmente-Editor.
 * **Registerkarten-Platzhalter**
-   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhaltsfragmentinhalts.
+   * Ermöglicht die Einführung von Registerkarten zur Bearbeitung des Inhalts von Inhaltsfragmenten.
 Dies wird als Trennzeichen im Modell-Editor angezeigt, der Abschnitte der Liste der Inhaltsdatentypen trennt. Jede Instanz stellt den Beginn einer neuen Registerkarte dar.
 Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 
       >[!NOTE]
-      Dieser Datentyp wird ausschließlich zur Formatierung verwendet und wird vom GraphQL-AEM ignoriert.
+      Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
 
 ## Eigenschaften {#properties}
 
-Viele Eigenschaften sind selbsterklärend. Für bestimmte Eigenschaften sind im Folgenden zusätzliche Details aufgeführt:
+Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Informationen zu bestimmten Eigenschaften:
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
@@ -166,7 +166,7 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
    >[!NOTE]
    Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
 
-* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)** .
+* Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)**.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Fragmentreferenz (verschachtelte Fragmente)](#fragment-reference-nested-fragments)**.
 
@@ -214,8 +214,8 @@ AEM bietet einen Wiederholungsschutz für:
 * Inhaltsreferenzen
 Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 
-* Fragmentverweise in GraphQL
-Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
+* Fragmentreferenzen in GraphQL
+Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 
 ### Inhaltsreferenz {#content-reference}
@@ -224,12 +224,12 @@ Mit der Inhaltsreferenz können Sie Content aus einer anderen Quelle rendern, zu
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
-* Den **Stammpfad** für referenzierten Content
+* Den **Stammpfad** für referenzierte Inhalte
 * Die Inhaltstypen, auf die verwiesen werden kann
 * Einschränkungen bezüglich der Dateigrößen
-* Wenn auf ein Bild verwiesen wird:
+* Wenn ein Bild referenziert wird:
    * Miniatur anzeigen
-   * Bildbegrenzungen von Höhe und Breite
+   * Bildeinschränkungen hinsichtlich Höhe und Breite
 
 ![Inhaltsreferenz](assets/cfm-content-reference.png)
 
@@ -315,7 +315,7 @@ Ein Modell lässt sich auch aus folgenden Gründen deaktivieren:
 
 * Das Modell ist nicht mehr als Grundlage für die Erstellung *neuer* Inhaltsfragmente verfügbar.
 * Beachten Sie jedoch Folgendes:
-   * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um Auswirkungen auf die JSON-API zu vermeiden).
+   * Das GraphQL-Schema wird weiterhin generiert und kann weiterhin abgefragt werden (um eine Beeinträchtigung der JSON-API zu vermeiden).
    * Inhaltsfragmente, die auf dem Modell basieren, können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 * Das Modell kann nicht mehr referenziert werden. Vorhandene Referenzen bleiben jedoch unverändert und können weiterhin abgefragt und vom GraphQL-Endpunkt zurückgegeben werden.
 
@@ -375,7 +375,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >[!NOTE]
    Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells  {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
@@ -399,10 +399,10 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
-1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung rückgängig machen** aus der Symbolleiste aus.
+1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
 Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-## Inhaltsfragmentmodell - Eigenschaften {#content-fragment-model-properties}
+## Inhaltsfragmentmodell – Eigenschaften {#content-fragment-model-properties}
 
 Sie können die **Eigenschaften** eines Inhaltsfragmentmodells bearbeiten:
 
