@@ -7,7 +7,7 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 >
 >Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md).
 
-## Schnellstart: Bildsets   {#quick-start-image-sets}
+## Schnellstart: Bildsets {#quick-start-image-sets}
 
 So schaffen Sie einen schnellen Einstieg:
 
@@ -43,7 +43,7 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch](#uploading-assets-in-image-sets).
 
-   Laden Sie die Bilder für Ihre Bildsets hoch. Denken Sie daran, dass Benutzer im Bildset-Viewer auf Bilder zoomen können. Wählen Sie daher die Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2000 Pixel hat. Experience Manager Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
+   Laden Sie die Bilder für Ihre Bildsets hoch. Denken Sie daran, dass Benutzer im Bildset-Viewer auf Bilder zoomen können. Wählen Sie daher die Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel hat. Experience Manager Assets unterstützt zahlreiche Bilddateiformate, empfohlen werden aber verlustfreie TIFF-, PNG- und EPS-Bilder.
 
 1. [Erstellen Sie Bildsets](#creating-image-sets).
 
@@ -59,7 +59,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Administratoren können Bildset-Viewer-Vorgaben erstellen oder ändern. Wählen Sie zum Anzeigen Ihres Bildsets mit einer Viewer-Vorgabe das Bildset und links in der Leiste über die Dropdown-Liste die Option **[!UICONTROL Viewer]**.
 
-   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
+   Informationen zum Erstellen oder Bearbeiten von Viewer-Vorgaben finden Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
 
 1. (Optional) [Bildsets anzeigen](/help/assets/dynamic-media/image-sets.md#viewing-image-sets), die mit Stapelsatzvorgaben erstellt wurden.
 1. [Zeigen Sie Bildsets in einer Vorschau an](/help/assets/dynamic-media/previewing-assets.md).
@@ -238,6 +238,6 @@ Sie können mehrere Bearbeitungsaufgaben für Bildsets ausführen, z. B. die fo
 
 Siehe [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
-## Veröffentlichen von Bildsets   {#publishing-image-sets}
+## Veröffentlichen von Bildsets {#publishing-image-sets}
 
 Siehe [Assets veröffentlichen](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
