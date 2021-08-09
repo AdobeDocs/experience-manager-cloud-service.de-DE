@@ -1,19 +1,19 @@
 ---
 title: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager].
 description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-feature: Asset-Verwaltung,Hochladen
+feature: Asset-Management,Hochladen
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
-# Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+# Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] können viele Arten digitaler Assets aus vielen Quellen verwenden. Es speichert die Binärdateien und die erstellten Ausgabeformate, kann die Asset-Verarbeitung mithilfe einer Vielzahl von Workflows durchführen und die [!DNL Adobe Sensei]-Dienste ermöglichen die Verteilung über viele Kanäle über viele Oberflächen.
+[!DNL Adobe Experience Manager Assets] akzeptiert viele Arten von digitalen Assets aus vielen Quellen. Es speichert die Binärdateien und die erstellten Ausgabedarstellungen, kann die Asset-Verarbeitung mithilfe einer Vielzahl von Workflows durchführen und die [!DNL Adobe Sensei]-Services ermöglichen die Verteilung über viele Kanäle in vielen Oberflächen.
 
 [!DNL Adobe Experience Manager] In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
@@ -107,7 +107,7 @@ Sie können ein Asset mit demselben Pfad (demselben Namen und demselben Speicher
 * Eine andere Version erstellen: Eine neue Version des vorhandenen Assets wird im Repository erstellt. Sie können die beiden Versionen in der [!UICONTROL Zeitleiste] anzeigen und bei Bedarf zur bereits vorhandenen Version zurückkehren.
 * Beides beibehalten: Wenn Sie beide Assets beibehalten, wird das neue Asset umbenannt.
 
-Um das doppelte-Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Um das doppelte Asset zu löschen, das Sie hochgeladen haben, klicken Sie auf **[!UICONTROL Löschen]**.
+Um das doppelte Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONTROL Behalten]**. Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um das doppelte Asset zu löschen, das Sie gerade hochgeladen haben.
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
@@ -164,8 +164,8 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
    * [!UICONTROL Ausführen]: Führt die ausgewählte Konfiguration aus.
    * [!UICONTROL Stopp]: Beendet eine aktive Konfiguration.
    * [!UICONTROL Zeitplan]: Legen Sie einen einmaligen oder wiederkehrenden Zeitplan fest, um Assets aufzunehmen.
-   * [!UICONTROL Vorgangsstatus]: Zeigt den Status der Konfiguration an, wenn sie in einem laufenden Importauftrag oder für einen abgeschlossenen Auftrag verwendet wird.
-   * [!UICONTROL Auftragsverlauf]: Frühere Instanzen des Auftrags.
+   * [!UICONTROL Vorgangsstatus]: Zeigt den Status der Konfiguration an, wenn sie in einem laufenden Importvorgang oder für einen abgeschlossenen Vorgang verwendet wird.
+   * [!UICONTROL Vorgangsverlauf]: Frühere Instanzen des Vorgangs.
    * [!UICONTROL Assets anzeigen]: Zeigt den Zielordner an, falls vorhanden.
 
    ![Symbolleistenoptionen für Aufnahmekonfigurationen](assets/bulk-ingest-toolbar-options.png)
@@ -173,10 +173,10 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 Gehen Sie wie folgt vor, um einen einmaligen oder einen wiederkehrenden Massenimport zu planen:
 
 1. Erstellen Sie eine Konfiguration für den Massenimport.
-1. Wählen Sie die Konfiguration aus und wählen Sie **[!UICONTROL Plan]** aus der Symbolleiste aus.
-1. Legen Sie eine einmalige Erfassung fest oder planen Sie einen stündlichen, täglichen oder wöchentlichen Zeitplan. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Wählen Sie die Konfiguration aus und wählen Sie **[!UICONTROL Zeitplan]** aus der Symbolleiste aus.
+1. Legen Sie eine einmalige Aufnahme fest oder erstellen Sie einen stündlichen, täglichen oder wöchentlichen Zeitplan. Klicken Sie auf **[!UICONTROL Senden]**.
 
-   ![Massenaufnahme von Aufträgen planen](assets/bulk-ingest-schedule1.png)
+   ![Massenaufnahme-Vorgang planen](assets/bulk-ingest-schedule1.png)
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
 
@@ -213,13 +213,13 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 ## Tipps, Best Practices und Einschränkungen {#tips-limitations}
 
-* Der direkte binäre Upload ist eine neue Methode zum Hochladen von Assets. Sie wird standardmäßig von den Produktfunktionen und Clients wie der [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und dem [!DNL Experience Manager]-Desktop-Programm unterstützt. Jeder benutzerdefinierte Code, der von technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Upload-APIs und -Protokolle verwenden.
+* Der direkte binäre Upload ist eine neue Methode zum Hochladen von Assets. Sie wird standardmäßig von den Produktfunktionen und Clients wie der [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und dem [!DNL Experience Manager]-Desktop-Programm unterstützt. Jeder benutzerdefinierte Code, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Kunde-APIs und Protokolle verwenden.
 
-* Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar weitere Assets zu einem Ordner hinzufügen, es können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
+* Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar mehr Assets zu einem Ordner hinzufügen, dann können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
 
-* Wenn Sie im Dialogfeld [!UICONTROL Namenskonflikt] die Option **[!UICONTROL Ersetzen]** auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Assets Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset unter [!DNL Analytics] erfassten Daten durch die neu generierte Asset-ID invalidiert.
+* Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Assets Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset unter [!DNL Analytics] erfassten Daten durch die neu generierte Asset-ID invalidiert.
 
-* Einige Upload-Methoden halten Sie nicht davon ab, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
+* Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 
 * Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in verschachtelten Ordnern hochladen möchten, sollten Sie das [Desktop-Programm](#upload-assets-desktop-clients) verwenden.
 
