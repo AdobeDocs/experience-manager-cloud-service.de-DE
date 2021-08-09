@@ -5,11 +5,11 @@ exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '2039'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Query Builder-API  {#query-builder-api}
+# Query Builder-API {#query-builder-api}
 
 Mit dem Query Builder können Sie problemlos das Inhalts-Repository von AEM abfragen. Die Funktionalität wird über eine Java-API und eine REST-API verfügbar gemacht. In diesem Dokument werden diese APIs beschrieben.
 
@@ -25,7 +25,7 @@ Die REST-API ermöglicht den Zugriff auf genau die gleichen Funktionen per HTTP,
 >
 >Die QueryBuilder-API wird mit der JCR-API erstellt. Sie können das AEM-JCR auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Bundles verwenden. Weitere Informationen erhalten Sie unter [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Gem-Sitzung   {#gem-session}
+## Gem-Sitzung {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-index.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten.
 
@@ -135,7 +135,7 @@ Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt wer
 
 `guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
-### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst) {#find-jar-files-and-order-them-newest-first}
+### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst)  {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (in absteigender Reihenfolge) {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (in absteigender Reihenfolge)  {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -353,7 +353,7 @@ Das Präfix des Klassennamens (z. B. `similar` in [`SimilarityPredicateEvaluato
 
 Für Haupteigenschaften dieser Art können Sie die Abfrage verkürzen und anstelle der vollqualifizierten Variante `similar=/content/en` die Kurzversion `similar.similar=/content/en` verwenden. Die vollqualifizierte Form muss für alle Eigenschaften einer Klasse genutzt werden, bei denen es sich nicht um die Haupteigenschaften handelt.
 
-## Beispiel für die Nutzung der Query Builder-API   {#example-query-builder-api-usage}
+## Beispiel für die Nutzung der Query Builder-API {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -441,7 +441,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ## Testen und Debuggen {#testing-and-debugging}
 
-Zum Experimentieren mit und Debuggen von Query-Builder-Abfragen können Sie die Query Builder-Debugger-Konsole verwenden:
+Zum Experimentieren mit und Debuggen von Query Builder-Abfragen können Sie die Query Builder-Debugger-Konsole verwenden:
 
 `http://<host>:<port>/libs/cq/search/content/querydebug.html`
 
@@ -502,7 +502,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-Wenn Sie eine Abfrage mit Auswertungen von Eigenschaften verwenden, bei denen eine Filterung durchgeführt oder ein benutzerdefinierter Order-By-Vergleich verwendet wird, wird dies auch in der Abfrage angegeben:
+Wenn Sie eine Abfrage mit Auswertungen von Eigenschaften verwenden, bei denen eine Filterung durchgeführt oder ein anwenderdefinierter Order-By-Vergleich verwendet wird, wird dies auch in der Abfrage angegeben:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -517,7 +517,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Javadoc-Links   {#javadoc-links}
+## Javadoc-Links {#javadoc-links}
 
 | **Javadoc** | **Beschreibung** |
 |---|---|
