@@ -3,7 +3,7 @@ title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1692'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ So legen Sie Ihr neues Segment fest:
 1. Klicken Sie auf **Fertig**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -139,7 +139,7 @@ Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis   {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
 1. Fügen Sie die Datei zur clientlib `contexthub.segment-engine.scripts` hinzu.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
@@ -200,7 +200,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/contexthub-create-folder.png)
@@ -256,7 +256,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 >
 > Es ist nicht möglich, ein Segment von einem Ordner in einen anderen zu verschieben.
 
-## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md) getestet werden.**
 
@@ -285,6 +285,6 @@ Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Se
 1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt.
 1. Wechseln Sie zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
 
-## Verwenden Ihres Segments   {#using-your-segment}
+## Verwenden Ihres Segments {#using-your-segment}
 
 Segmente dienen zur Steuerung des tatsächlichen Inhalts, der spezifischen Zielgruppen angezeigt wird. Unter [Verwalten von Zielgruppen](audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](targeted-content.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.
