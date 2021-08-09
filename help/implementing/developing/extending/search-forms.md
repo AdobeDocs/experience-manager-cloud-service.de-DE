@@ -3,7 +3,7 @@ title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2043'
 ht-degree: 100%
 
@@ -20,12 +20,12 @@ In Kombination mit diesem steht Ihnen auch eine Reihe vordefinierter Optionen zu
 Zusammen sollen diese Ihnen helfen, Ihre Inhalte schnell und einfach zu finden:
 
 * [Suchen und Filtern](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Leistenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * [Assets-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (beim Bearbeiten von Seiten)
 
 >[!NOTE]
 >
->Sie können den zugrunde liegenden Dienst zur [Inhaltssuche und -indizierung](/help/operations/indexing.md) konfigurieren.
+>Sie können den zugrunde liegenden Service zur [Inhaltssuche und -indizierung](/help/operations/indexing.md) konfigurieren.
 
 Mit **Suchformularen** können Sie diese Bedienfelder entsprechend Ihren spezifischen Anforderungen anpassen und erweitern.
 
@@ -145,7 +145,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum  Bereich</td>
+   <td>Datum Bereich</td>
    <td>Suche nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -210,7 +210,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet  Filter</td>
+   <td>Ausgeblendet Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -268,7 +268,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Optionen  Eigenschaft</td>
+   <td>Optionen Eigenschaft</td>
    <td>Suche nach einer oder mehreren Eigenschaften der Option.</td>
    <td>
     <ul>
@@ -281,7 +281,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite  Status</td>
+   <td>Seite Status</td>
    <td>Filtern von Seiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -302,7 +302,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad  Browser</td>
+   <td>Pfad Browser</td>
    <td>Stellen Sie einen Pfad-Browser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>
@@ -313,7 +313,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
    </td>
   </tr>
   <tr>
-   <td>Pfad  Ausgeblendet</td>
+   <td>Pfad Ausgeblendet</td>
    <td>Ein Filter für den Pfad, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -598,7 +598,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds  {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -625,7 +625,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten   {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
