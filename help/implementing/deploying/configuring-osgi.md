@@ -174,7 +174,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git.
 
 
-## OSGi-Konfigurationseigenschaftsformate   {#osgi-configuration-property-formats}
+## OSGi-Konfigurationseigenschaftsformate {#osgi-configuration-property-formats}
 
 ### Inline-Werte {#inline-values}
 
