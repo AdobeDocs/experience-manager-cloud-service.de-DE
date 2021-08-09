@@ -8,7 +8,7 @@ exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1012'
-ht-degree: 75%
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Alle Legacy-Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in 
 
 Metadaten in XMP bestehen aus einer Reihe von Eigenschaften. Diese Eigenschaften sind stets mit einer bestimmten Entität verknüpft, die als Ressource bezeichnet wird. Die Eigenschaften beziehen sich also auf die Ressource. Bei XMP ist die Ressource stets das Asset.
 
-XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), das mit jedem definierten Satz von Metadatenelementen verwendet werden kann. XMP definiert außerdem bestimmte [Schemata](https://de.wikipedia.org/wiki/Schemasprache_(XML)) für Standardeigenschaften, die für die Aufzeichnung des Verlaufs einer Ressource nützlich sind, während sie mehrere Verarbeitungsschritte durchläuft – von der Aufnahme über [Scannen](https://de.wikipedia.org/wiki/Scanner_(Datenerfassung)) oder Verfassen als Text und Bildbearbeitungsschritte (wie [Zuschneiden](https://de.wikipedia.org/wiki/Cropping) oder Farbkorrektur) bis hin zur Zusammensetzung in das endgültige Bild. XMP ermöglicht es jedem Softwareprogramm oder Gerät, eigene Informationen zu einer digitalen Ressource hinzuzufügen, die dann in der endgültigen digitalen Datei gespeichert werden kann.
+XMP definiert ein [Metadatenmodell](https://de.wikipedia.org/wiki/Metadaten), das mit jedem definierten Satz von Metadatenelementen verwendet werden kann. XMP definiert außerdem bestimmte [Schemata](https://de.wikipedia.org/wiki/Schemasprache_(XML)) für Standardeigenschaften, die für die Aufzeichnung des Verlaufs einer Ressource nützlich sind, während sie mehrere Verarbeitungsschritte durchläuft – von der Aufnahme über [Scannen](https://de.wikipedia.org/wiki/Scanner_(Datenerfassung)) oder Verfassen als Text und Bildbearbeitungsschritte (wie [Zuschneiden](https://de.wikipedia.org/wiki/Cropping_%28image%29) oder Farbkorrektur) bis hin zur Zusammensetzung in das endgültige Bild. XMP ermöglicht es jedem Softwareprogramm oder Gerät, eigene Informationen zu einer digitalen Ressource hinzuzufügen, die dann in der endgültigen digitalen Datei gespeichert werden kann.
 
 XMP wird am häufigsten mit einer Untergruppe des [W3C](https://de.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) serialisiert und gespeichert, das wiederum in [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language) ausgedrückt wird.
 
@@ -74,9 +74,9 @@ Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen,
 ## XMP-Writeback in Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets.
-Wenn Sie die Metadaten für ein Asset in [!DNL Assets] ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadatenknoten in der Asset-Hierarchie gespeichert. Mit der Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabeformate des Assets übertragen. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
+Wenn Sie die Metadaten für ein Asset aus [!DNL Assets] heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert. Mit der-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft namens `dc:title` wird zurückgeschrieben, eine Eigenschaft namens `mytitle` jedoch nicht.
 
-Angenommen, Sie ändern die Eigenschaft [!UICONTROL Title] des Assets mit dem Titel `Classic Leather` in `Nylon`.
+Stellen Sie sich z. B. vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
 ![Metadaten](assets/metadata.png)
 
@@ -86,7 +86,7 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 
 >[!IMPORTANT]
 >
->Die Writeback-Funktion ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die [Metadaten-Writeback-Funktion aktivieren](#enable-xmp-writeback). MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben bricht die Vererbung.
+>Die Writeback-Funktion ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die [Metadaten-Writeback-Funktion aktivieren](#enable-xmp-writeback). MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben wird die Vererbung unterbrochen.
 
 ### Aktivieren der XMP-Writeback-Funktion {#enable-xmp-writeback}
 
@@ -101,13 +101,13 @@ Gehen Sie wie folgt vor, um Launcher zu verwenden:
 1. Rufen Sie als ein Administrator **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Starter]** auf.
 1. Wählen Sie den [!UICONTROL Starter] aus, für den die Spalte **[!UICONTROL Workflow]** den Wert **[!UICONTROL DAM-Metadaten-Writeback]** anzeigt. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 
-   ![Wählen Sie DAM-Metadaten-Writeback-Starter aus, um seine Eigenschaften zu ändern und zu aktivieren](assets/launcher-properties-metadata-writeback1.png)
+   ![DAM-Metadaten-Writeback-Launcher auswählen, um seine Eigenschaften zu ändern und ihn zu aktivieren](assets/launcher-properties-metadata-writeback1.png)
 
 1. Wählen Sie **[!UICONTROL Aktivieren]** auf der Seite **[!UICONTROL Startereigenschaften]** aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-Um den Workflow nur einmal manuell auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM Metadata Writeback] in der linken Leiste an.
+Um diesen Workflow nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow [!UICONTROL DAM-Metdaten-Writeback] in der linken Leiste an.
 
-Um den Workflow auf alle hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem Nachbearbeitungsprofil hinzu.
+Um den Workflow auf die hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem Nachbearbeitungsprofil hinzu.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
