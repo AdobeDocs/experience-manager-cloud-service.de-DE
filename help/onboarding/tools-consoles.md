@@ -3,13 +3,13 @@ title: Die Tools-Konsolen
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
 exl-id: 9cc7c82d-62ef-4226-874a-b5d8e76604af
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
 ht-degree: 100%
 
 ---
 
-# Die Tools-Konsolen{#tools-consoles}
+# Die Tools-Konsolen {#tools-consoles}
 
 Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können.
 
@@ -121,11 +121,11 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Ordner-Metadatenschemata<br /> </td>
+   <td>Ordner-Metadatenschemas<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metadatenschemata</td>
+   <td>Metadatenschemas</td>
   </tr>
   <tr>
    <td> </td>
@@ -221,7 +221,7 @@ Auf diese Konsolen kann über das [Tools-Bedienfeld der globalen Navigation](/he
   </tr>
   <tr>
    <td> </td>
-   <td>Cloud-basierte Übersetzungsdienste</td>
+   <td>Übersetzungs-Cloud-Services</td>
   </tr>
   <tr>
    <td> </td>
