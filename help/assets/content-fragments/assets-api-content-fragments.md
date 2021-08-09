@@ -1,24 +1,24 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
-description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einer wichtigen AEM Funktion für die Headless-Bereitstellung.
+description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Inhaltsfragmente,Assets-HTTP-API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einer wichtigen AEM Funktion für die Headless-Bereitstellung.
+Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 
 >[!NOTE]
 >
->Die [Assets-HTTP-API](/help/assets/mac-api-assets.md) umfasst:
+>Die [Assets-HTTP-API](/help/assets/mac-api-assets.md) umfasst die:
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
@@ -70,7 +70,7 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
->* `/content/path/to/page` **erfordert keine** Verwendung des `.model`-Selektors.
+>* `/content/path/to/page` **erfordert** die Verwendung des `.model`-Selektors.
 
 
 Die HTTP-Methode ermittelt den auszuführenden Vorgang:
@@ -222,7 +222,7 @@ Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist e
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
-#### Darstellung  {#representation}
+#### Darstellung {#representation}
 
 Inhaltsfragmente:
 
@@ -231,7 +231,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Payload eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente  {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Payload ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -375,7 +375,7 @@ Wird zurückgegeben, wenn:
    }
    ```
 
-## API-Referenz   {#api-reference}
+## API-Referenz {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
@@ -389,5 +389,5 @@ Hier finden Sie detaillierte API-Referenzen:
 
 Weitere Informationen finden Sie unter:
 
-* [Assets-HTTP-API – Dokumentation ](/help/assets/mac-api-assets.md)
-* [AEM Gem-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Assets-HTTP-API – Dokumentation](/help/assets/mac-api-assets.md)
+* [AEM Gems-Sitzung: OAuth](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
