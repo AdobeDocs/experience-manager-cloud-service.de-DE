@@ -3,7 +3,7 @@ title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) |
-|  | &grave; | Ausblenden der Schiene |
+|  | &amp;grave; | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
