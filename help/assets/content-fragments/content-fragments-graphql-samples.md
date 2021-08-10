@@ -19,8 +19,8 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ berei
 >Diese Seite sollte zusammen mit folgenden Themen gelesen werden:
 >
 >* [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
-* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
-* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Um mit GraphQL-Abfragen zu beginnen und wie sie mit AEM-Inhaltsfragmenten funktionieren, ist es hilfreich, einige praktische Beispiele zu sehen.
@@ -37,11 +37,13 @@ Sehen Sie dazu:
 In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispielergebnissen veranschaulicht.
 
 >[!NOTE]
-Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
-Beispiel: `http://localhost:4502/content/graphiql.html`
+>
+>Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
+>Beispiel: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
-Die Beispielabfragen basieren auf der [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](#content-fragment-structure-graphql).
+>
+>Die Beispielabfragen basieren auf der [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](#content-fragment-structure-graphql).
 
 ### Beispielabfrage – Alle verfügbaren Schemas und Datentypen {#sample-all-schemes-datatypes}
 
@@ -1100,7 +1102,8 @@ Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
-Da die Ergebnisse sehr umfangreich sein können, werden sie hier nicht wiedergegeben.
+>
+>Da die Ergebnisse sehr umfangreich sein können, werden sie hier nicht wiedergegeben.
 
 ### Beispielabfrage für alle Inhaltsfragmente eines bestimmten Modells mit den angegebenen Eigenschaften {#sample-wknd-all-model-properties}
 
@@ -1245,7 +1248,8 @@ Diese Abfrage untersucht:
    * Darin den Pfad und Autor des referenzierten (verschachtelten) Fragments
 
 >[!NOTE]
-Das Feld `referencearticle` hat den Datentyp `fragment-reference`.
+>
+>Das Feld `referencearticle` hat den Datentyp `fragment-reference`.
 
 **Beispielabfrage**
 
@@ -1272,7 +1276,8 @@ Diese Abfrage untersucht:
    * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
 
 >[!NOTE]
-Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
+>
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
 
 ```xml
 {
@@ -1346,7 +1351,8 @@ Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_references` zurück:
 Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Untergruppe) vom Typ `content-reference`:
 
 >[!NOTE]
-Das Feld `attachments` hat den Datentyp `content-reference`, wobei verschiedene Formen ausgewählt sind.
+>
+>Das Feld `attachments` hat den Datentyp `content-reference`, wobei verschiedene Formen ausgewählt sind.
 
 ```xml
 {
@@ -1387,7 +1393,8 @@ Diese Abfrage untersucht:
    * Darin die RTE-Inline-Verweise
 
 >[!NOTE]
-Die RTE-Inline-Verweise werden in `_references` realisiert.
+>
+>Die RTE-Inline-Verweise werden in `_references` realisiert.
 
 **Beispielabfrage**
 
