@@ -5,10 +5,10 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Bereitstellen
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 89%
+source-wordcount: '138'
+ht-degree: 86%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 89%
    + [Systemadministratoraufgaben](what-is-required/add-users-assign-cm-roles.md)
    + [Zu Cloud Manager navigieren](what-is-required/navigate-to-cloud-manager.md)
    + [Gewähren des Benutzerzugriffs auf eine AEM-Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Einhaltung von Datenschutzbestimmungen {#data-privacy}
-   + [AEM – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [AEM Sites – Einhaltung von Datenschutzbestimmungen](data-privacy-and-protection-readiness/sites-readiness.md)
-+ Barrierefreiheit {#accessibility}
-   + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](accessibility/web-accessibility.md)
-   + [Kurzanleitung zu WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Migrationsmethode {#migration-methodology}
    + [Migration zu Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Best Practices {#best-practices}
