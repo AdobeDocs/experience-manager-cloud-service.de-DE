@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Adobe Experience Manager Screens as a Cloud Service Selbsthilfe-Ressourcen und Links zur Dokumentation
-source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Screens as a Cloud
 * [Erstellen eines Projekts in Screens als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [Installieren des Screens-Players](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
-## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
@@ -36,8 +36,8 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Screens as a Cloud
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten. |
-| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von AEM Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Implementierung beschäftigen. |
-| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie diese geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
+| [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von AEM Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Bereitstellung beschäftigen. |
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie in dieser geführten Tour die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Lösungen in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 
@@ -47,7 +47,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Screens as a Cloud
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [Einhaltung der DSGVO](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
