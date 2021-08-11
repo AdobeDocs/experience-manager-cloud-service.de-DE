@@ -2,7 +2,7 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
 ht-degree: 99%
@@ -23,7 +23,7 @@ Zur Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstütz
 
 Siehe auch:
 
-* [Kurzanleitung zu WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md)
+* [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 * [Konformitätsberichte zur Barrierefreiheit für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 * [Barrierefreiheit in Assets](/help/assets/accessibility.md)
 * [Konfigurieren des Rich-Text-Editors (RTE) für die Erstellung von barrierefrei zugänglichen Inhalten](/help/implementing/developing/extending/rte-accessible-content.md)
