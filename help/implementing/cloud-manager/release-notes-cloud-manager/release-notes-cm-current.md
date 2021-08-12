@@ -1,56 +1,51 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Versionshinweise
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 19%
+source-wordcount: '289'
+ht-degree: 34%
 
 ---
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
->Um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen, klicken Sie auf [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+>Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 15. Juli 2021 veröffentlicht.
-Die nächste Version ist für den 12. August 2021 geplant.
+Die Version 2021.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. August 2021 veröffentlicht.
+Die nächste Version ist für den 9. September 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
-* Kunden können jetzt Azul 8- und 11-JDKs für ihre Cloud Manager-Build-Prozesse verwenden und entweder festlegen, eines dieser JDKs für toolchain-kompatible Maven-Plug-ins *oder* für die gesamte Maven-Prozessausführung zu verwenden.
+* Cloud Service können jetzt Berichte zur Service Level Agreement (SLA) in Cloud Manager anzeigen. Dies wird in den nächsten Monaten schrittweise bereitgestellt.
 
-* Die ausgehende Ausgangs-IP wird jetzt in der Protokolldatei des Buildschritts protokolliert.
+* Typ und Schweregrad der Qualitätsregeln IndexType und `IndexDamAssetLucene` wurden geändert. Dies sind nun beide Fehler von Blocker *serverity*.
 
-* Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status **Update Verfügbar**.
+* Neue Qualitätsregeln für Oak-Indizes wurden eingeführt, um asynchrone und tika-Konfigurationen abzudecken.
 
-* Die maximal unterstützten SSL-Zertifikate wurden auf 20 pro Programm erhöht.
+* Erhöhen Sie die maximale Anzahl von SSL-Zertifikaten pro Programm auf 50.
 
-* Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
+* Self-Service-Funktion, mit der Benutzer über die Cloud Manager-Benutzeroberfläche mehrere Repositorys erstellen und verwalten können.
 
-* Die Schaltflächen **Git** verwalten wurden in **Git Info** öffnen umbenannt und das Dialogfeld wurde visuell aktualisiert.
+* SonarQube liest unnötigerweise Git-Verlaufsdaten. Auf großen Code-Basis könnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
 
-* Die Version des AEM Projektarchetyps, der von Cloud Manager verwendet wird, wurde auf Version 28 aktualisiert.
+* Es ist jetzt eine API verfügbar, um den Maven-Abhängigkeitscache pro Pipeline ungültig zu machen.
+
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 28 aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
+* Update Verfügbar sollte nicht angezeigt werden, wenn die neueste Version kleiner als die aktuelle Version ist.
 
-* Beim manuellen Navigieren zur Seite mit den Ausführungsdetails für eine nicht vorhandene Ausführung wurde kein Fehler angezeigt, sondern nur ein Bildschirm mit endlosen Ladevorgängen.
+* Das anfängliche Onboarding schlug bei neuen Unternehmen mit sehr langen Namen fehl.
 
-* Die Fehlermeldung, die angezeigt wird, wenn die maximale Anzahl von SSL-Zertifikaten erreicht wurde, war nicht hilfreich.
+* Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies dazu, dass eine der Ausführungen fehlschlägt, wobei der Fehler *Pipeline-Ausführungsstatus* nicht aktualisiert werden kann.
 
-* Unter bestimmten Umständen kann es zu einer Diskrepanz in der Release-Version kommen, die auf der Pipeline-Karte auf der Seite **Übersicht** angezeigt wird.
-
-* Der Assistent Programm hinzufügen hat fälschlicherweise angegeben, dass der Name nach der Erstellung nicht mehr geändert werden kann.
-
-### Bekannte Probleme {#known-issues}
-
-Kunden, die zur Verwendung der Azul JDKs wechseln, sollten beachten, dass nicht alle vorhandenen Anwendungen ohne Fehler auf Azul JDK kompiliert werden. Es wird dringend empfohlen, vor dem Wechsel lokal zu testen.
 
