@@ -2,7 +2,7 @@
 title: Compliance
 description: Compliance
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 91%
@@ -15,11 +15,11 @@ Auf dieser Seite finden Sie Selbsthilfe-Ressourcen mit Informationen zur Einhalt
 
 ## Wichtige Übersichtsartikel {#key-articles}
 
-* [ – Einhaltung von Datenschutzbestimmungen](aem-readiness.md)
-* [Foundation – Einhaltung von Datenschutzbestimmungen](foundation-readiness.md)
-* [Sites – Einhaltung von Datenschutzbestimmungen](sites-readiness.md)
-* [Richtlinien für barrierefreien Web-Zugang](web-accessibility.md)
-* [Kurzanleitung zu WCAG 2.1](quick-guide-wcag.md)
+* [ – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Foundation – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Sites – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Richtlinien für barrierefreien Web-Zugang](/help/compliance/accessibility/web-accessibility.md)
+* [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
 
