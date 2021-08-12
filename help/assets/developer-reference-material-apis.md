@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets-HTTP-API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 90%
 
 ---
@@ -185,7 +185,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz oder Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 
