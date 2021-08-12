@@ -1,11 +1,11 @@
 ---
 title: Grundlegendes zu Programmen und Programmtypen
-description: Grundlegendes zu Programmen und Programmtypen – Cloud-Services
+description: Grundlegendes zu Programmen und Programmtypen – Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ In Cloud Manager befindet sich die Mandantenentität ganz oben. Sie kann mehrer
 
 Das folgende Diagramm zeigt die Hierarchie der Entitäten in Cloud Manager.
 
-![image](assets/program-types1.png)
+![Bild](assets/program-types1.png)
 
 ## Quell-Code-Repository {#source-code-repository}
 
 Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository bereitgestellt.
 
-Damit ein Benutzer auf das Git-Repository von Cloud Manager zugreifen kann, muss er einen Git-Client mit einem Befehlszeilen-Tool, einem eigenständigen visuellen Git-Client oder der IDE des Benutzers wie Eclipse, IntelliJ und NetBeans verwenden.
+Damit ein Benutzer auf das Git-Repository von Cloud Manager zugreifen kann, muss er einen Git-Client mit einem Befehlszeilen-Tool, einen eigenständigen visuellen Git-Client oder die IDE des Benutzers wie Eclipse, IntelliJ und NetBeans verwenden.
 
-Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-git.md).
+Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-repos.md).
 
-Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss eine lokale Kopie des Anwendungs-Codes erstellt werden, indem Sie ihn aus dem Cloud Manager-Repository an einen Speicherort auf dem lokalen Computer auschecken, auf dem er sein Repository erstellen möchte.
+Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss eine lokale Kopie des Anwendungs-Codes erstellt werden, indem Sie ihn aus dem Cloud Manager-Repository an einen Speicherort auf dem lokalen Computer, auf dem jemand sein Repository erstellen möchte, auschecken.
 
 ```java
 $ git clone {URL}
@@ -42,5 +42,5 @@ Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 Weitere Informationen finden Sie unter Einführung in Produktionsprogramme.
 
 
-* Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+* Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
 Weitere Informationen finden Sie unter Einführung in Sandbox-Programme.
