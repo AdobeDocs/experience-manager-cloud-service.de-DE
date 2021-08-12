@@ -2,7 +2,7 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 86%
@@ -56,7 +56,7 @@ Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden orga
 
 **[Zu Cloud Manager navigieren](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um Ihre Cloud-Tour mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. das Erstellen eines Programms, Hinzufügen einer Umgebung, [Zugreifen auf Git](/help/implementing/cloud-manager/accessing-git.md), [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
+Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um Ihre Cloud-Tour mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. das Erstellen eines Programms, Hinzufügen einer Umgebung, Zugreifen auf Git, [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager ist ein wichtiger Bestandteil von AEM as a Cloud Service. Unternehmen können [!DNL Experience Manager] in der Cloud selbst verwalten. Das umfasst ein Framework für die fortlaufende Integration und Bereitstellung (CI/CD), mit dem IT-Teams und Implementierungspartner die Bereitstellung von Anpassungen oder Aktualisierungen beschleunigen können, ohne die Leistung oder Sicherheit zu beeinträchtigen. Über die Benutzeroberfläche können Sie die CI/CD-Pipeline konfigurieren und starten.
 
 **[Gewähren des Benutzerzugriffs auf eine AEM-Instanz](/help/onboarding/what-is-required/accessing-aem-instance.md)**
