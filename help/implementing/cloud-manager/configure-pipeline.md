@@ -2,7 +2,7 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
+source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 78%
@@ -177,7 +177,7 @@ Gehen Sie wie folgt vor, um die konfigurierte Nicht-Produktions-Pipeline zu bear
 
 1. Wählen Sie das gewünschte Repository und andere erforderliche Updates aus und klicken Sie auf **Speichern**.
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## Die nächsten Schritte {#the-next-steps}
 
