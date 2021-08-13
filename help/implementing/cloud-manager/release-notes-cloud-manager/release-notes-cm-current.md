@@ -3,7 +3,7 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Versionshinweise
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 32%
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.
 
 * Es ist jetzt eine API verfügbar, um den Maven-Abhängigkeitscache pro Pipeline ungültig zu machen.
 
-* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 28 aktualisiert.
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 29 aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes}
 
