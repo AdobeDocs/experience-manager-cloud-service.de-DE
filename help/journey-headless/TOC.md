@@ -5,7 +5,7 @@ breadcrumb-title: AEM Headless-Entwickler-Tour
 user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Projekt nutzen können.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 48%
@@ -38,9 +38,9 @@ ht-degree: 48%
    + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](architect/basics.md)
    + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](architect/model-structure.md)
 + AEM Headless Translation Journey {#translation}
-   + [Grundlegendes zur Headless-Lokalisierung in AEM](translation/overview.md)
-   + [Erste Schritte mit AEM Headless-Lokalisierung](translation/getting-started.md)
-   + [Erfahren Sie mehr über Headless Content und wie Sie in AEM lokalisieren können.](translation/learn-about.md)
+   + [Grundlegendes zur Headless Translation in AEM](translation/overview.md)
+   + [Erste Schritte mit AEM Headless-Übersetzung](translation/getting-started.md)
+   + [Erfahren Sie mehr über Headless Content und wie Sie in AEM übersetzen können.](translation/learn-about.md)
    + [Konfigurieren des Übersetzungs-Connectors](translation/configure-connector.md)
    + [Übersetzungsregeln konfigurieren](translation/translation-rules.md)
    + [Inhalt übersetzen](translation/translate-content.md)
