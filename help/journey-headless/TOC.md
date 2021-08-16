@@ -5,10 +5,10 @@ breadcrumb-title: AEM Headless-Entwickler-Tour
 user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Projekt nutzen können.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
+source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 57%
+source-wordcount: '234'
+ht-degree: 48%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 57%
    + [Authoring Grundlagen für Headless mit AEM](author/basics.md)
    + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](author/references.md)
    + [Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente](author/metadata-tagging.md)
++ AEM Headless Content Architect Journey {#content-architect}
+   + [Überblick über die Journey der AEM Headless Content Architecture](architect/overview.md)
+   + [Inhaltsmodellierung für Headless mit AEM - Einführung](architect/introduction.md)
+   + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](architect/basics.md)
+   + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](architect/model-structure.md)
 + AEM Headless Translation Journey {#translation}
    + [Grundlegendes zur Headless-Lokalisierung in AEM](translation/overview.md)
    + [Erste Schritte mit AEM Headless-Lokalisierung](translation/getting-started.md)
