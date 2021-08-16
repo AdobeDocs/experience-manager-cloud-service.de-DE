@@ -1,9 +1,10 @@
 ---
 title: Journey AEM Headless Content Architect
 description: Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 42%
