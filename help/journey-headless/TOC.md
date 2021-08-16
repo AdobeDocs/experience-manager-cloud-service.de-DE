@@ -1,20 +1,21 @@
 ---
-sub-product: AEM Headless-Entwickler-Tour
-user-guide-title: AEM Headless-Entwickler-Tour
-breadcrumb-title: AEM Headless-Entwickler-Tour
+sub-product: AEM Headless-Journey
+user-guide-title: AEM Headless-Journey
+breadcrumb-title: AEM Headless-Journey
 user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Projekt nutzen können.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 48%
+ht-degree: 41%
 
 ---
 
 
-# AEM Headless-Tour {#headless-journey}
+# AEM Headless-Journey {#headless-journey}
 
++ [AEM Headless-Journey](/help/journey-headless/home.md)
 + AEM Headless-Entwickler-Tour {#developer}
    + [Grundlegendes zu Headless-Technologie in AEM](developer/overview.md)
    + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](developer/learn-about.md)
