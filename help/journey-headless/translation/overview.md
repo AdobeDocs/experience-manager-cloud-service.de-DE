@@ -4,9 +4,9 @@ description: Beginnen Sie hier für eine geführte Journey durch die Übersetzun
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '1005'
 ht-degree: 8%
 
 ---
@@ -83,5 +83,7 @@ Die Journey der Dokumentation zeigen Ihnen, wie AEM ein Geschäftsproblem löst,
 
 Journey sind so konzipiert, dass sie auf sich allein gestellt stehen. Einige davon können jedoch miteinander verbunden werden. Weitere Informationen dazu, wie AEM leistungsstarken Funktionen zusammenarbeiten, finden Sie in diesen zusätzlichen Journey .
 
+* [Headless-Authoring-Journey](/help/journey-headless/author/overview.md)  - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
+* [Headless Architect-Journey](/help/journey-headless/architect/overview.md)  - Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und wie Sie Inhalte für Ihr Projekt modellieren können.
 * [AEM Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md)  - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
 * [AEM als Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)  - Wenn Sie bereits über fundierte Kenntnisse in AEM und Headless-Technologien verfügen, sollten Sie unsere ausführlichen technischen Dokumente direkt konsultieren.
