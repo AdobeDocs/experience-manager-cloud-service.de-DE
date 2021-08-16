@@ -2,9 +2,9 @@
 title: Cloud Manager-Repositorys
 description: Cloud Manager-Repositorys
 exl-id: Cloud Manager Repositories
-source-git-commit: cebc603aab9c558239588f574f52568d05081b34
+source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Repositorys, die in Cloud Manager erstellt und verfügbar sind, können über die Seite Repositorys angezeigt und verwaltet werden.
 
 >[!NOTE]
->Es gibt eine Grenze von 300 Repositorys für alle Programme in einem bestimmten Unternehmen oder [Identity Management-System der Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
+>Es gibt eine Grenze von 300 Repositorys für alle Programme in einem bestimmten Unternehmen oder im [Identity Management-System der Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html).
 
 ## Hinzufügen und Verwalten von Repositorys {#add-manage-repos}
 
@@ -34,15 +34,12 @@ Gehen Sie wie folgt vor, um Repositorys in Cloud Manager anzuzeigen und zu verwa
 
    ![](assets/repos/repo-1.png)
 
-1. Wählen Sie **Speichern** aus. Ihr neu erstelltes Repo wird wie unten dargestellt in der Tabelle angezeigt.
+1. Wählen Sie **Speichern** aus. Ihr neu erstelltes Repo wird wie unten dargestellt in der Tabelle angezeigt. In Cloud Manager erstellte Repositorys stehen Ihnen auch zur Auswahl während der Schritte zum Hinzufügen oder Bearbeiten der Pipeline zur Verfügung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) .
 
    >[!NOTE]
    >Für jede Pipeline gibt es ein einzelnes *primäres* Repository oder eine Verzweigung. Mit [Git-Untermodulunterstützung](#git-submodule-support) können zur Build-Zeit jedoch viele sekundäre Zweige eingeschlossen werden.
 
    ![](assets/repos/create-repo3.png)
-
-   >[!NOTE]
-   >In Cloud Manager erstellte Repositorys stehen Ihnen auch zur Auswahl während der Schritte zum Hinzufügen oder Bearbeiten der Pipeline zur Verfügung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) .
 
 1. Sie können das Repository auswählen und auf die Menüoptionen ganz rechts in der Tabelle klicken, um **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen** Ihres Repositorys zu kopieren, wie in der folgenden Abbildung dargestellt.
 
