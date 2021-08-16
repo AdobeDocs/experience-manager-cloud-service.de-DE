@@ -1,9 +1,9 @@
 ---
 title: Journey AEM Dokumentation
 description: Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, indem sie komplexe und unterschiedliche Funktionen miteinander verknüpfen, um ein Geschäftsziel auf die beste Art und Weise zu lösen. Die Journey stellen die Konzepte und Features vor, die für AEM Anfänger entwickelt wurden, um ein Ziel von A bis Z zu erreichen.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,8 @@ Es stehen Ihnen bereits eine Reihe von Dokumentations-Journey zur Verfügung. Da
 | Journey | Beschreibung |
 |---|---|
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Beginnen Sie hier, um zu sehen, wie AEM Headless-Entwicklungsmodelle unterstützt und wie Sie Ihr Projekt von der Planung über die Implementierung bis hin zur Live-Schaltung in Angriff nehmen können. |
-| Headless-Authoring-Journey | Hier erfahren Sie, wie Sie Headless-Inhalte in AEM erstellen und verwalten. |
+| [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) | Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können. |
+| [Headless Architect-Journey](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und wie Sie Inhalte für Ihr Projekt modellieren können. |
 | [Headless Translation Journey](/help/journey-headless/translation/overview.md) | Hier erfahren Sie, wie Sie Ihre Headless-Übersetzungsprojekte in AEM einrichten und verwalten. |
 | AEM Onboarding-Journey | Bald! |
 | AEM Commerce Journey | Bald! |
