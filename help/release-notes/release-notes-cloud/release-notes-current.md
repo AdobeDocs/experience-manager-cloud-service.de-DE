@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
+source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 20%
+source-wordcount: '1632'
+ht-degree: 19%
 
 ---
 
@@ -144,7 +144,39 @@ Die XML-Dokumentation für Experience Manager as a Cloud Service ist allgemein v
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0 und 2021.7.0.
+
+## Veröffentlichungsdatum {#release-date-cm-aug}
+
+Die Version 2021.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. August 2021 veröffentlicht.
+Die nächste Version ist für den 9. September 2021 geplant.
+
+### Neue Funktionen {#what-is-new-aug}
+
+* Cloud Service können jetzt Berichte zur Service Level Agreement (SLA) in Cloud Manager anzeigen. Dies wird in den nächsten Monaten schrittweise bereitgestellt.
+Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) .
+
+* Typ und Schweregrad der Qualitätsregeln IndexType und `IndexDamAssetLucene` wurden geändert. Dies sind nun beide Fehler von Blocker *serverity*.
+
+* Neue Qualitätsregeln für Oak-Indizes wurden eingeführt, um asynchrone und tika-Konfigurationen abzudecken.
+
+* Erhöhen Sie die maximale Anzahl von SSL-Zertifikaten pro Programm auf 50.
+
+* Self-Service-Funktion, mit der Benutzer über die Cloud Manager-Benutzeroberfläche mehrere Repositorys erstellen und verwalten können.
+
+* SonarQube liest unnötigerweise Git-Verlaufsdaten. Auf großen Code-Basis könnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
+
+* Es ist jetzt eine API verfügbar, um den Maven-Abhängigkeitscache pro Pipeline ungültig zu machen.
+
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 29 aktualisiert.
+
+### Fehlerbehebungen {#bug-fixes-aug}
+
+* Update Verfügbar sollte nicht angezeigt werden, wenn die neueste Version kleiner als die aktuelle Version ist.
+
+* Das anfängliche Onboarding schlug bei neuen Unternehmen mit sehr langen Namen fehl.
+
+* Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies dazu, dass eine der Ausführungen fehlschlägt, wobei der Fehler *Pipeline-Ausführungsstatus* nicht aktualisiert werden kann.
 
 ### Veröffentlichungsdatum {#release-cm-july}
 
