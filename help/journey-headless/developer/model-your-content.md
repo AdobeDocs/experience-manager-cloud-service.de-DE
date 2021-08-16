@@ -2,7 +2,7 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 98%
@@ -15,7 +15,7 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Zu Beginn wurde in [Erfahren Sie mehr über CMS-Headless-Bereitstellung](learn-about.md) die Headless-Bereitstellung von Inhalten behandelt und erläutert, warum diese eingesetzt werden sollte. Dann wurde in [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) AEM Headless im Kontext Ihres eigenen Projekts beschrieben.
+Zu Beginn wurde in [Erfahren Sie mehr über CMS-Headless-Bereitstellung](learn-about.md) die Headless-Bereitstellung von Inhalten behandelt und erläutert, warum diese eingesetzt werden sollte. Dann wurde in [Erste Schritte mit AEM Headless as a Cloud Service](getting-started.md) AEM Headless im Kontext Ihres eigenen Projekts beschrieben..
 
 Im vorherigen Dokument der AEM Headless-Tour, [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) haben Sie dann die Schritte kennengelernt, die zur Implementierung Ihres ersten Projekts erforderlich sind. Nach dem Lesen sollten Sie:
 
