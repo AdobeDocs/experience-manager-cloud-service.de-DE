@@ -5,9 +5,9 @@ breadcrumb-title: Überblicksanleitung
 user-guide-description: Starten Sie hier für einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw.
 feature: Versionshinweise
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '74'
 ht-degree: 100%
 
 ---
@@ -19,3 +19,7 @@ ht-degree: 100%
 + [Einführung in AEM as a Cloud Service](introduction.md)
 + [Neue Funktionen und Unterschiede](what-is-new-and-different.md)
 + [Terminologie – Neu in der Cloud](terminology.md)
++ [SEO und URL-Verwaltung](seo-and-url-management.md)
++ [Bewerten von KPIs](assessing-kpis.md)
++ [Ausrichten von KPIs](aligning-kpis.md)
++ [Auswahl des richtigen Teams](choose-right-team.md)
