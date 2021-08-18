@@ -2,7 +2,7 @@
 title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 90%
@@ -85,7 +85,4 @@ Die Integration von AEM as a Cloud Service mit Adobe Target erfordert Kenntnisse
 >* 2.000 Erlebnisse
 >* 50 Metriken
 >* 50 Berichtssegmente
-
->
-
 
