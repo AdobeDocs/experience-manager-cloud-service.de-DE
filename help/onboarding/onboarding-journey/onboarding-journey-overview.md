@@ -4,16 +4,16 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 6%
+source-wordcount: '645'
+ht-degree: 8%
 
 ---
 
 # Onboarding-Journey {#onboarding-jourrney}
 
-Herzlichen Glückwunsch zum Start Ihrer Journey mit AEM als Cloud Service! Wir freuen uns, dass Sie hier sind und nicht warten können, bis Sie mit Ihrem Onboarding-Journey beginnen. Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dient dieses Handbuch als Ausgangspunkt für die Einrichtung Ihrer Teams und den Zugriff auf AEM als Cloud Service.
+Herzlichen Glückwunsch zum Start Ihrer Tour mit AEM as a Cloud Service! Wir freuen uns, dass Sie hier sind und nicht warten können, bis Sie mit Ihrem Onboarding-Journey beginnen. Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dient dieses Handbuch als Ausgangspunkt für die Einrichtung Ihrer Teams und den Zugriff auf AEM als Cloud Service.
 
 ## Einführung {#introduction}
 
@@ -29,7 +29,7 @@ Das bedeutet:
 * AEM Entwickler und Bereitstellungsmanager erhalten als Cloud Service Zugriff auf AEM.
 
 
-## Audience {#audience}
+## Zielgruppe {#audience}
 
 Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
@@ -39,12 +39,12 @@ Die Onboarding-Journey ist unten dargestellt und jeder Schritt im Journey wird i
 
 ## Onboarding-Journey {#exploring-onboarding-journey}
 
-In dieser Tour werden Sie viele Themen kennenlernen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse über die Onboarding-Schritte für AEM als Cloud Service. Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit dem Onboarding noch nicht vertraut sind, empfehlen wir daher, dass Sie am Anfang beginnen und die Schritte nacheinander fortsetzen.
+Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse über die Onboarding-Schritte für AEM als Cloud Service. Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit dem Onboarding noch nicht vertraut sind, empfehlen wir daher, dass Sie am Anfang beginnen und die Schritte nacheinander fortsetzen.
 
-| # | Artikel | Beschreibung |
+| Nummer | Artikel | Beschreibung |
 |---|---|---|
 | 0 | Onboarding-Journey | Dieses Dokument |
-| 1 | Lernen Sie Onboarding-Konzepte kennen, z. B.:<br>[Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service-Team und Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobe-Support](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Erfahren Sie mehr über Onboarding-Konzepte. |
+| 1 | Lernen Sie Onboarding-Konzepte kennen, z. B.:<br>[Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service-Team und Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Support für Adoben kontaktieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Erfahren Sie mehr über Onboarding-Konzepte. |
 | 2 | Erste Schritte mit dem Onboarding | Erfahren Sie, wie Sie sich bei Admin Console anmelden und Ihr Profil als Systemadministrator überprüfen. |
 | 3 | Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen | Überprüfen Sie die Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. |
 | 4 | Einrichten von Cloud-Ressourcen über Cloud Manager | Erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und wer dies tun kann. Erfahren Sie außerdem, wie Ihre Cloud-Programme und -Umgebungen erstellt werden. |
