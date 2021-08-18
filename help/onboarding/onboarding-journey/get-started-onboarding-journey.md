@@ -4,7 +4,7 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Erste Schritte mit dem Onboarding-Prozess {#getting-started}
 
-Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, die auf ihren Aufgaben basieren. Anschließend kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
+Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu Rollen basierend auf ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
 Als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboarding-Journey zusammen.
 
@@ -55,11 +55,11 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Nachdem Sie auf **Administratoren** in der Karte **Benutzer** geklickt haben, können Sie im vorherigen Schritt nach Ihrer Adobe ID-E-Mail, Ihrem Benutzernamen, Vor- oder Nachnamen suchen.
+1. Nachdem Sie auf **Administratoren** in der Karte **Benutzer** geklickt haben, können Sie durch Eingabe Ihrer Adobe ID-E-Mail, Ihres Benutzernamens, Vor- oder Nachnamens suchen.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. Die Suche muss erfolgreich Ihren E-Mail-Datensatz mit **System** in der Spalte **ADMIN ROLE** finden, wie unten dargestellt. Dadurch wird bestätigt, dass Sie Systemadministrator sind.
+1. Die Suche muss Ihren E-Mail-Datensatz erfolgreich finden. Darüber hinaus muss die **ADMIN ROLE** **System** anzeigen, wie unten dargestellt. Dies bestätigt, dass Sie Systemadministrator sind. Dadurch wird Ihre Rolle als Systemadministrator bestätigt.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
