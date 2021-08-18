@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset-Management,Ausgabedarstellungen
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 100%
@@ -227,7 +227,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
-* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 10 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
 
 >[!MORELIKETHIS]
 >
