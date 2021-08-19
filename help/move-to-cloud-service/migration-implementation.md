@@ -2,9 +2,9 @@
 title: Implementierungsphase
 description: Implementierungsphase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '943'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 * [Integration von Git mit Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html), um mehr über die Verwendung eines Single Git-Repositorys zur Bereitstellung von Code zu erfahren.
 
-* [Konfiguration von Adobe Experience as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration), um mehr über die Verwaltung von Produkten und den Benutzerzugriff in Admin Console zu erfahren.
+* [Konfiguration von Adobe Experience as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration), um mehr über die Verwaltung von Produkten und den Benutzerzugriff in Admin Console zu erfahren.
 
 
 ## Einführung {#introduction}
@@ -30,7 +30,7 @@ Die genauen Schritte für die Umstellung auf Cloud Service hängen von den von I
 
 Die folgende Abbildung zeigt die wichtigsten Schritte in der Ausführungsphase:
 
-![image](/help/move-to-cloud-service/assets/exec-image1.png)
+![Bild](/help/move-to-cloud-service/assets/exec-image1.png)
 
 ## Inhaltstransfer {#content-transfer}
 
@@ -41,7 +41,7 @@ Mit diesem Tool können Sie die gewünschte Teilmenge Ihres Inhalts angeben, die
 >[!NOTE]
 >Es wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor der Cloud Service live geschaltet wird.
 
-Weitere Informationen finden Sie unter [Content Transfer-Tool ](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
+Weitere Informationen finden Sie unter [Content Transfer-Tool](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >Die Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
@@ -52,7 +52,7 @@ Für das Entwickeln und Ausführen von Code in AEM as a Cloud Service ist eine �
 
 Für AEM Maven-Projekte sind bestimmte Änderungen erforderlich, um mit AEM as a Cloud Service kompatibel zu sein. AEM as a Cloud Service erfordert für die Bereitstellung in AEM die Trennung von *Inhalt* und *Code* in separate Pakete.
 
-* `/apps` und `/libs` werden als unveränderliche Bereiche von AEM betrachtet, da sie nach dem Start von AEM (d. h. zur Laufzeit) nicht mehr geändert (erstellt, aktualisiert, gelöscht) werden können . Jeder Versuch, einen unveränderlichen Bereich zur Laufzeit zu ändern, schlägt fehl.
+* `/apps` und `/libs` werden als unveränderliche Bereiche von AEM betrachtet, da sie nach dem Start von AEM (d. h. zur Laufzeit) nicht mehr geändert (erstellt, aktualisiert, gelöscht) werden können. Jeder Versuch, einen unveränderlichen Bereich zur Laufzeit zu ändern, schlägt fehl.
 
 * Alles andere im Repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp` usw. sind alles veränderliche Bereiche, d. h. sie können zur Laufzeit geändert werden.
 
@@ -98,7 +98,7 @@ Cloud Manager für Cloud Services-Pipeline-Ausführungen unterstützen die Ausf�
 
 Weitere Informationen zum Schreiben von Testskripten und zur empfohlenen Abdeckung von mindestens 50 % finden Sie unter [Testen der Code-Qualität](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing).
 
-Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von Cloud Manager ausgeführt werden und auf der Grundlage von Best Practices von AEM Engineering erstellt wurden, finden Sie unter [Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html?lang=de).
+Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von Cloud Manager ausgeführt werden und auf der Grundlage von Best Practices von AEM Engineering erstellt wurden, finden Sie unter [Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Die Verwendung von Cloud Manager ist der einzige Mechanismus zur Bereitstellung von Code in Cloud Service-Umgebungen.
 
