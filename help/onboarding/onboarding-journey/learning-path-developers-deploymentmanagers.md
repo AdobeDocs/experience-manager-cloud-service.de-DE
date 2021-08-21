@@ -4,18 +4,18 @@ description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nac
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 7%
 
 ---
 
 # Lernpfad für Entwickler und Bereitstellungsmanager {#learn-path-developers-deployment}
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
-Dieses Dokument hilft Ihren Entwicklern und Bereitstellungsmanagern, auf Cloud Manager zuzugreifen und sich mit der Vorbereitung auf den Lernpfad vertraut zu machen.
+Dieses Dokument hilft Ihren Entwicklern und Bereitstellungsmanagern, auf Cloud Manager zuzugreifen und sich mit der Vorbereitung auf ihren Lernpfad vertraut zu machen.
 
 Nach dem Lesen dieses Dokuments sollten Sie:
 
@@ -33,11 +33,13 @@ Wenn Sie diesen Abschnitt lesen, werden Sie wahrscheinlich einem Entwickler- ode
 
 ## Voraussetzungen {#prerequisites}
 
-Ihr Systemadministrator hat Entwickler und Bereitstellungsmanager ihren jeweiligen Produktprofilen zugewiesen. Entwickler müssen zusätzlich dem Produktprofil AEM Benutzer oder AEM Administratoren zugewiesen werden.\
-Cloud-Ressourcen wurden eingerichtet.
-Sie erfahren, wie Sie zu Cloud Manager navigieren und sich dort anmelden.
+Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
-## Git verwalten {#manage-git}
+* Ihr Systemadministrator hat Entwickler und Bereitstellungsmanager ihren jeweiligen Produktprofilen zugewiesen. Entwickler müssen zusätzlich dem Produktprofil AEM Benutzer oder AEM Administratoren zugewiesen werden.
+* Cloud-Ressourcen wurden eingerichtet.
+* Sie erfahren, wie Sie zu Cloud Manager navigieren und sich dort anmelden.
+
+## GitHub verwalten {#manage-git}
 
 Sie können über die Benutzeroberfläche von Cloud Manager mit der Self-Service-Git-Kontoverwaltung auf Ihr Git-Repository zugreifen und es verwalten.
 Weitere Informationen zu diesem Thema finden Sie unter [Zugriff auf Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
@@ -49,7 +51,7 @@ Weitere Informationen zu diesem Thema finden Sie unter [Konfigurieren der CI/CD-
 
 ## Nächste Schritte {#whats-next}
 
-Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen .
+Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen . Weitere Informationen zur Journey für Inhaltsautoren finden Sie unter Lernpfad für AEM-Autoren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
