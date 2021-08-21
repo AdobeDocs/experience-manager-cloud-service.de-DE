@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Zuweisen von Team-Mitgliedern zu AEM as a Cloud Service-Produktprofilen {#assign-team-members-cloud-service}
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
 Dieses Dokument hilft Ihnen dabei, die Schritte zu verstehen, die Ihr Systemadministrator unternehmen muss, um Ihre Teammitglieder Produktprofilen als Cloud Service AEM zu lassen, und warum es wichtig ist, Ihren AEM-Autoren zu ermöglichen, mit AEM auf ihre Journey zuzugreifen.
 
@@ -27,7 +27,7 @@ Nach Lesen dieses Abschnitts sollten Sie Folgendes verstehen:
 
 ## Einführung {#introduction}
 
-Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer zu einem von zwei Produktprofilen gehören, z. B. `AEM Users` oder `AEM Administrators`. Ihren Teammitgliedern müssen Berechtigungen für die AEM-Instanz gewährt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen. Weitere Informationen
+Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer einem von zwei Produktprofilen angehören:  `AEM Users` oder `AEM Administrators`. Ihren Teammitgliedern müssen Berechtigungen für die AEM-Instanz gewährt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen. Weitere Informationen
 
 >[!NOTE]
 >Jeder Benutzer, der AEM Benutzerproduktprofil vom Systemadministrator zugewiesen wurde, hat (schreibgeschützten) Zugriff auf Cloud Manager.
