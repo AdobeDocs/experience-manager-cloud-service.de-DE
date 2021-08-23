@@ -3,7 +3,7 @@ title: Onboarding-Journey
 description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 7%
@@ -64,4 +64,4 @@ Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folge
 
 ## Wie geht es weiter {#what-is-next}
 
-Jetzt können Sie mit der Onboarding-Journey beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel Erste Schritte mit dem Onboarding-Prozess zu lesen.
+Jetzt können Sie mit der Onboarding-Journey beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel [Erste Schritte mit dem Onboarding-Prozess](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) zu lesen.
