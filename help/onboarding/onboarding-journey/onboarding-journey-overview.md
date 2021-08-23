@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 8%
+source-wordcount: '834'
+ht-degree: 7%
 
 ---
 
@@ -36,6 +36,17 @@ Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleag
 Die Onboarding-Journey ist unten dargestellt und jeder Schritt im Journey wird in den folgenden Abschnitten ausführlich beschrieben.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Diese Journey wurde für eine Systemadministratorperson entwickelt, die Anforderungen, Schritte und Ansätze beschreibt. Die Journey definiert zusätzliche Rollen, mit denen der Systemadministrator für ein erfolgreiches Projekt interagieren muss, aber die Sicht auf die Journey ist die eines Administrators.
+
+Im Folgenden finden Sie die Rollen, die in dieser Journey interagieren.
+
+| Rolle | Beschreibung | Rolle beim Journey |
+|---|---|---|
+| Systemadministrator | Ermöglicht die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer Aufgabenverantwortung, anhand derer sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen kann. | Verwaltet alle Aspekte ihrer Benutzer, vom Zugriff auf Berechtigungen. |
+| AEM Author | Erstellt und überprüft den Inhalt (dieser kann mehrere Arten von Inhalten umfassen; z. B. Seiten, Assets, Veröffentlichungen) vor der Veröffentlichung auf Ihrer Website. | Sobald Berechtigungen erteilt wurden, kann die Journey des eigenen Bereitstellungsmanagers starten. |
+| Entwickler | Hat Erfahrung bei der Entwicklung AEM Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Sobald Berechtigungen erteilt wurden, kann ihre eigene Entwickler-Journey starten |
+| Bereitstellungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt eine beliebige Pipeline aus und stellt Code für AEM Umgebung oder Codequalität bereit. | Sobald Berechtigungen erteilt wurden, kann die Journey des eigenen Bereitstellungsmanagers starten. |
 
 ## Onboarding-Journey {#exploring-onboarding-journey}
 
