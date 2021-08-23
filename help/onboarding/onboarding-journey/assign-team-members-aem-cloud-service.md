@@ -3,9 +3,9 @@ title: 'Zuweisen von Team-Mitgliedern zu AEM as a Cloud Service-Produktprofilen 
 description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Cloud Service-Produktprofilen zuweisen.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Die folgenden Schritte müssen von einem Systemadministrator ausgeführt werden,
 
 ## Nächste Schritte {#whats-next}
 
-Die Benutzer, die Sie AEM als Cloud Service-Produktprofilen zugewiesen haben, können jetzt lernen, wie Sie auf die -Autoreninstanz zugreifen und sich mit Authoring-Seiten in AEM as a Cloud Service vertraut machen. Sie sollten dem Pfad folgen, indem Sie sich das Dokument Lernpfad für AEM Benutzer oder Lernpfad für Entwickler und Bereitstellungsmanager ansehen.
+Die Benutzer, die Sie AEM als Cloud Service-Produktprofilen zugewiesen haben, können jetzt lernen, wie Sie auf die -Autoreninstanz zugreifen und sich mit Authoring-Seiten in AEM as a Cloud Service vertraut machen. Sie sollten dem Pfad folgen, indem Sie sich das Dokument Lernpfad für [AEM Benutzer](/help/onboarding/onboarding-journey/learning-path-aem-users.md) oder für [Entwickler und Bereitstellungsmanager](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) ansehen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
