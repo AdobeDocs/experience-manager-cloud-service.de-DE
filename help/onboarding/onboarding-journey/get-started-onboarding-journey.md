@@ -3,7 +3,7 @@ title: Erste Schritte mit dem Onboarding-Prozess
 description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -66,5 +66,5 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie sich jetzt bei Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie mit dem Onboarding-Journey fortfahren, indem Sie das Dokument Zuweisen von Teammitgliedern zu Cloud Manager-Produktprofilen lesen.
+Nachdem Sie sich jetzt bei Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie Ihre Onboarding-Journey fortsetzen, indem Sie das Dokument [Team-Mitglieder zu Cloud Manager-Produktprofilen zuweisen](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) lesen.
 
