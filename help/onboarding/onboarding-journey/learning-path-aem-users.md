@@ -2,9 +2,8 @@
 title: Lernpfad für AEM Benutzer
 description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nach dem Zugriff, wenn Sie ein AEM Benutzer sind.
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
@@ -13,7 +12,7 @@ ht-degree: 3%
 
 # Lernpfad für AEM Benutzer {#learn-path-aem-users}
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
 Dieses Dokument hilft Ihren AEM als Cloud Service-Inhaltsautoren beim Zugriff auf Adobe Experience Manager (AEM).
 
