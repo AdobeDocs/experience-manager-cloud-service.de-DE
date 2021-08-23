@@ -2,9 +2,8 @@
 title: 'Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen '
 description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 00f1611b46e0f325802f3ed4bb2d96f8fcaf8535
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 3%
