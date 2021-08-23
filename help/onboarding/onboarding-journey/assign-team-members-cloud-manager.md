@@ -3,7 +3,7 @@ title: 'Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen '
 description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 3%
@@ -157,7 +157,7 @@ Die folgenden Schritte führen Sie durch diesen Schritt:
 
 ## Nächste Schritte {#whats-next}
 
-Sie haben mehr über drei verschiedene Cloud Manager-Produktprofile erfahren, z. B. Business Owner, Deployment Manager und Developer. Als Nächstes weisen Sie Team-Mitglieder Cloud Manager-Produktprofilen wie Business Owner, Deployment Manager und Developer zu. Jetzt können Sie mit dem Onboarding-Journey fortfahren, indem Sie sich das Dokument Cloud-Ressourcen für die Einrichtung über Cloud Manager ansehen. Hier erfahren Sie mehr:
+Sie haben mehr über drei verschiedene Cloud Manager-Produktprofile erfahren, z. B. Business Owner, Deployment Manager und Developer. Als Nächstes weisen Sie Team-Mitglieder Cloud Manager-Produktprofilen wie Business Owner, Deployment Manager und Developer zu. Sie können jetzt mit dem Onboarding-Journey fortfahren, indem Sie das Dokument [Cloud-Ressourcen über Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) überprüfen. Hier erfahren Sie:
 
 1. Als Systemadministrator, der die Rolle *Business Owner* zugewiesen ist, müssen Sie auf Cloud Manager zugreifen und sich dort anmelden.
 
