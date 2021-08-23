@@ -3,7 +3,7 @@ title: Lernpfad für Entwickler und Bereitstellungsmanager
 description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nach dem Zugriff, wenn Sie Entwickler oder Bereitstellungsmanager sind.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 7%
@@ -50,7 +50,7 @@ Weitere Informationen zu diesem Thema finden Sie unter [Konfigurieren der CI/CD-
 
 ## Nächste Schritte {#whats-next}
 
-Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen . Weitere Informationen zur Journey für Inhaltsautoren finden Sie unter Lernpfad für AEM-Autoren.
+Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt Zusätzliche Ressourcen . Weitere Informationen zum Lernen von Journey für Inhaltsautoren finden Sie unter [Lernpfad für AEM-Autoren](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
