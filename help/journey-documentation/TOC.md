@@ -5,7 +5,7 @@ breadcrumb-title: Journey AEM Dokumentation
 user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Projekt nutzen können.
 feature: Entwickler-Tools
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 93d7e7159cefba687ce085eda32d8da44e60fdc5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 25%
@@ -40,15 +40,14 @@ Please note that all links to other guides need to be absolute references with l
    + [Übersetzungsregeln konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
    + [Inhalt übersetzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
    + [Übersetzten Inhalt veröffentlichen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
-+ AEM Headless Content Author Journey {#content-author}
-   + [AEM Headless Content Author Journey - Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/overview.md)
-   + [Authoring für Headless mit AEM - Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/introduction.md)
-   + [Authoring Grundlagen für Headless mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/basics.md)
-   + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/references.md)
-   + [Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/metadata-tagging.md)
-+ AEM Headless Content Architect Journey {#content-architect}
-   + [Überblick über die Journey der AEM Headless Content Architecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/overview.md)
-   + [Inhaltsmodellierung für Headless mit AEM - Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/introduction.md)
-   + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/basics.md)
-   + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/model-structure.md)
-
++ AEM Headless Content Author Journey {#author}
+   + [AEM Headless Content Author Journey - Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+   + [Authoring für Headless mit AEM - Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+   + [Authoring Grundlagen für Headless mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+   + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+   + [Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ AEM Headless Content Architect Journey {#architect}
+   + [Überblick über die Journey der AEM Headless Content Architecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+   + [Inhaltsmodellierung für Headless mit AEM - Einführung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+   + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+   + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
