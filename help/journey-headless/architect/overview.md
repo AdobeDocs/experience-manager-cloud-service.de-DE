@@ -4,10 +4,10 @@ description: Beginnen Sie hier mit einer geführten Journey durch die leistungss
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 30%
+source-wordcount: '694'
+ht-degree: 29%
 
 ---
 
@@ -63,3 +63,4 @@ Journey sind so konzipiert, dass sie auf sich allein gestellt stehen. Einige dav
 * [Headless-Authoring-Journey](/help/journey-headless/author/overview.md)  - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
 * [AEM Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md)  - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
 * [AEM als Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)  - Wenn Sie bereits über fundierte Kenntnisse in AEM und Headless-Technologien verfügen, sollten Sie unsere ausführlichen technischen Dokumente direkt konsultieren.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)  - Wenn Sie lieber lernen, indem Sie es tun und technisch geneigt sind, nehmen Sie unsere praxisorientierten Tutorials, organisiert von API und Framework, die die Erstellung und Verwendung von Anwendungen erforschen, die auf AEM Headless aufbauen.
