@@ -3,10 +3,10 @@ title: Lernpfad für AEM Benutzer
 description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nach dem Zugriff, wenn Sie ein AEM Benutzer sind.
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '383'
+ht-degree: 4%
 
 ---
 
@@ -34,11 +34,24 @@ Ihr Systemadministrator muss alle erforderlichen Schritte ausgeführt und Sie be
 
 ## Bei der Autoreninstanz anmelden {#login-author}
 
-Die folgenden Schritte müssen befolgt werden, um auf die Autoreninstanz zugreifen zu können:
+Gehen Sie wie folgt vor, um auf die Autoreninstanz zuzugreifen:
 
-1. Führen Sie die folgenden Schritte aus, um zu Cloud Manager zu navigieren. Alternativ können Sie direkt zu Cloud Manager gehen und sich anmelden.
+1. Navigieren Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
+
+1. Wählen Sie auf der Adobe Experience Cloud-Startseite **Experience Manager** aus.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. Dadurch gelangen Sie zur AEM Homepage. Starten Sie von hier aus **Cloud Manager** .
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >Alternativ können Sie auch direkt von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) zur Anmeldeseite von Cloud Manager navigieren. Bitte Lesezeichen für diese Seite einfügen, um Sie bei der Navigation zur Landingpage von Cloud Manager zu unterstützen.
 
 1. Klicken Sie auf der Seite **Übersicht** in Cloud Manager auf den Link &quot;Autor&quot;auf der Karte **Umgebungen**.
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. Dadurch wird eine neue Registerkarte geöffnet, auf der Sie sich mit Ihrer Adobe ID in der Autorenumgebung anmelden können.
 
