@@ -3,9 +3,9 @@ title: Einrichten von Cloud-Ressourcen über Cloud Manager
 description: Auf dieser Seite erfahren Sie, wie Sie Cloud-Ressourcen über Cloud Manager einrichten
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 15%
 
 ---
@@ -41,7 +41,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Ihre [Cloud Service-Programme
 
 ## Zu Cloud Manager navigieren {#navigate-cloud-manager}
 
-Der Business Owner-Benutzer erhält eine Begrüßungs-E-Mail mit einem Link zum Einstieg. Wenn er sie nicht finden kann, navigieren Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
+Der Business Owner-Benutzer erhält eine Begrüßungs-E-Mail mit einem Link zu den ersten Schritten. Wenn er sie nicht finden kann, greifen Sie direkt auf [Cloud Manager](https://my.cloudmanager.adobe.com/) zu, indem Sie sich mit Ihrer Adobe ID anmelden.
 
 Gehen Sie wie folgt vor, um zu Cloud Manager zu navigieren:
 
