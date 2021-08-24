@@ -3,9 +3,9 @@ title: 'Zuweisen von Team-Mitgliedern zu AEM as a Cloud Service-Produktprofilen 
 description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder AEM as a Cloud Service-Produktprofilen zuweisen.
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '833'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Nach Lesen dieses Abschnitts sollten Sie Folgendes verstehen:
 
 ## Einführung {#introduction}
 
-Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer einem von zwei Produktprofilen angehören:  `AEM Users` oder `AEM Administrators`. Ihren Teammitgliedern müssen Berechtigungen für die AEM-Instanz gewährt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen. Weitere Informationen
+Um Zugriff auf AEM als Cloud Service zu erhalten, müssen Benutzer einem von zwei Produktprofilen angehören:  `AEM Users` oder `AEM Administrators`. Ihren Teammitgliedern müssen Berechtigungen für die AEM-Instanz gewährt werden, da die Berechtigungen zum Verwalten von Cloud Manager nicht ausreichen.
 
 >[!NOTE]
 >Jeder Benutzer, der AEM Benutzerproduktprofil vom Systemadministrator zugewiesen wurde, hat (schreibgeschützten) Zugriff auf Cloud Manager.
@@ -85,7 +85,7 @@ Die folgenden Schritte müssen von einem Systemadministrator ausgeführt werden,
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. Über eine neue Registerkarte gelangen Sie zu Adobe Admin Console, von wo aus Sie Zugriff auf die Autoreninstanz der Umgebung haben. Wählen Sie *AEM Administratoren* oder *AEM Benutzer* basierend auf den Berechtigungen, die diese Person erhalten muss. Erfahren Sie mehr über [AEM als Cloud Service-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+1. Über eine neue Registerkarte gelangen Sie zu Adobe Admin Console, von wo aus Sie Zugriff auf die Autoreninstanz der Umgebung haben. Wählen Sie **AEM Administratoren** oder **AEM Benutzer** basierend auf den Berechtigungen, die diese Person erhalten muss. Erfahren Sie mehr über [AEM als Cloud Service-Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ Die Benutzer, die Sie AEM als Cloud Service-Produktprofilen zugewiesen haben, k�
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
+* [Verwalten von Produkten und Benutzerzugriff in der Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [Schnellstartanleitung zum Verfassen von Seiten (Authoring)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
