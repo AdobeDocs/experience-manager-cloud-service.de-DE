@@ -3,10 +3,10 @@ title: Lernpfad für Entwickler und Bereitstellungsmanager
 description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nach dem Zugriff, wenn Sie Entwickler oder Bereitstellungsmanager sind.
 hide: true
 index: false
-source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
+source-git-commit: 53b98708044a7df8c4d24f25046c098f1a307743
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 6%
 
 ---
 
@@ -68,3 +68,14 @@ Entwickler- und Bereitstellungsmanager können sich jetzt mit der Entwicklung vo
 
 * [Erste Schritte mit AEM SPA Editor für Entwickler](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
+## Experience Leaguen {#exp-league-courses}
+
+Weitere Informationen erhalten Sie in den Kursen der Erfahrungsklasse . Stellen Sie sicher, dass Sie sich für den Zugriff auf die Kurse angemeldet haben:
+
+* [Traditionelle Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
