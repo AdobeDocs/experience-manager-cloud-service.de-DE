@@ -3,7 +3,7 @@ title: Onboarding-Journey
 description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
 hide: true
 index: false
-source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
+source-git-commit: d5a948bd296d7e6ac9aca0b7bfc72202c1046b99
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 7%
@@ -55,12 +55,12 @@ Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folge
 |---|---|---|
 | 0 | Onboarding-Journey | Dieses Dokument |
 | 1 | Lernen Sie Onboarding-Konzepte kennen, z. B.:<br>[Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM als Cloud Service-Team und Produktprofile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Support für Adoben kontaktieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Erfahren Sie mehr über Onboarding-Konzepte. |
-| 2 | Erste Schritte mit dem Onboarding | Erfahren Sie, wie Sie sich bei Admin Console anmelden und Ihr Profil als Systemadministrator überprüfen. |
-| 3 | Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen | Überprüfen Sie die Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. |
-| 4 | Einrichten von Cloud-Ressourcen über Cloud Manager | Erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und wer dies tun kann. Erfahren Sie außerdem, wie Ihre Cloud-Programme und -Umgebungen erstellt werden. |
-| 5 | Zuweisen von Team-Mitgliedern zu AEM as a Cloud Service-Produktprofilen | Erfahren Sie, wie Systemadministrator Ihre Teammitglieder AEM als Cloud Service-Produktprofile zuweist. |
-| 6 | Lernpfad für AEM Entwickler und Bereitstellungsmanager | Erfahren Sie, wie Sie als Entwickler auf Cloud Manager Git zugreifen und es verwalten können und wie Sie als Bereitstellungsmanager Pipelines einrichten und Code in Cloud Manager bereitstellen können. |
-| 7 | Lernpfad für AEM Benutzer | Erfahren Sie, wie Sie als AEM-Autor auf AEM als Cloud Service-Instanz zugreifen und sich mit der Inhaltserstellung für AEM als Cloud Service vertraut machen können. |
+| 2 | [Erste Schritte mit dem Onboarding](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) | Erfahren Sie, wie Sie sich bei Admin Console anmelden und Ihr Profil als Systemadministrator überprüfen. |
+| 3 | [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) | Überprüfen Sie die Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. |
+| 4 | [Einrichten von Cloud-Ressourcen über Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) | Erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und wer dies tun kann. Erfahren Sie außerdem, wie Ihre Cloud-Programme und -Umgebungen erstellt werden. |
+| 5 | [Zuweisen von Team-Mitgliedern zu AEM as a Cloud Service-Produktprofilen](/help/onboarding/onboarding-journey/assign-team-members-aem-cloud-service.md) | Erfahren Sie, wie Systemadministrator Ihre Teammitglieder AEM als Cloud Service-Produktprofile zuweist. |
+| 6 | [Lernpfad für AEM Entwickler und Bereitstellungsmanager](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) | Erfahren Sie, wie Sie als Entwickler auf Cloud Manager Git zugreifen und es verwalten können und wie Sie als Bereitstellungsmanager Pipelines einrichten und Code in Cloud Manager bereitstellen können. |
+| 7 | [Lernpfad für AEM Benutzer](/help/onboarding/onboarding-journey/learning-path-aem-users.md) | Erfahren Sie, wie Sie als AEM-Autor auf AEM als Cloud Service-Instanz zugreifen und sich mit der Inhaltserstellung für AEM als Cloud Service vertraut machen können. |
 
 ## Wie geht es weiter {#what-is-next}
 
