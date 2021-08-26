@@ -1,9 +1,9 @@
 ---
 title: Erstellen eines Projekts in Screens als Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie ein Projekt in Screens as a Cloud Service erstellen.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Der erste Schritt bei der Implementierung eines neuen Projekts in Screens als Cloud Service besteht darin, ein neues Projekt zu erstellen.
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie ein neues AEM Screens-Projekt in Screens Content Provider erstellen. Nach dem Lesen sollten Sie in der Lage sein, Ihr AEM Screens-Projekt in Bezug auf den Umfang zu erstellen.
 
@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor, um ein neues Projekt in Screens as a Cloud Service zu e
 1. Navigieren Sie zum Screens Content Provider.
 
    >[!NOTE]
-   >Unter [Verwenden des Screens Content Providers] erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf den Screens Content Provider zugreifen.
+   >Unter [Verwenden des Screens Content Providers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) erfahren Sie, wie Sie zum Erstellen Ihres Projekts auf den Screens Content Provider zugreifen.
 
 1. Klicken Sie oben rechts in der Aktionsleiste auf **Screens-Projekt erstellen** .
 
