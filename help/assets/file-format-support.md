@@ -2,12 +2,12 @@
 title: Unterstützte Dateiformate und MIME-Typen
 description: Von [!DNL Experience Manager Assets] as a [!DNL Cloud Service] unterstützte Dateiformate und MIME-Typen.
 contentOwner: AG
-feature: Asset-Management,Ausgabedarstellungen
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 100%
 
 ---
@@ -159,7 +159,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | PPTX | verwalten | verwalten | verwalten | verwalten | verwalten |
 | PS | - | - | verwalten | - | - |
 | RTF | - | verwalten | - | verwalten | verwalten |
-| TXT | - | verwalten | - | verwalten | verwalten |
+| TXT | verwalten | verwalten | - | verwalten | verwalten |
 | XLS | - | - | - | verwalten | verwalten |
 | XLSX | verwalten | verwalten | verwalten | verwalten | verwalten |
 | XML | - | verwalten | - | - | - |
@@ -228,5 +228,5 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 >[!MORELIKETHIS]
 >
 >* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md)
-* [Unterstützte Dateiformate für das Tagging textbasierter Assets mit Smart-Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Unterstützte Dateiformate für das Tagging textbasierter Assets mit Smart-Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
