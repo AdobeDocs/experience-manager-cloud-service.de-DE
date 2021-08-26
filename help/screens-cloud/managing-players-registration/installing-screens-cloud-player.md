@@ -1,9 +1,9 @@
 ---
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service installieren und konfigurieren.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ Der Player meldet verschiedene Wiedergabemetriken mit jeweils `ping` , die stand
 
 Die grundlegende Wiedergabe-Überwachung in einem AEM Screens-Player ermöglicht Ihnen Folgendes:
 
-* Remote-Überwachung der ordnungsgemäßen Wiedergabe von Inhalten durch einen Player
+* Remote-Überwachung, ob ein Player Inhalte ordnungsgemäß wiedergibt.
 
-* Verbessern der Reaktionsrate auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld
+* Verbessern Sie die Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld.
 
-* Geringeres Risiko, dem Endbenutzer ein defektes Erlebnis anzuzeigen
+* Verringert das Risiko, dem Endbenutzer ein fehlerhaftes Erlebnis anzuzeigen.
 
 ### Eigenschaften {#understand-properties}
 
@@ -78,11 +78,11 @@ Die folgenden Eigenschaften sind in jedem `ping` enthalten:
 
 Im Folgenden finden Sie einige Einschränkungen bei der grundlegenden Wiedergabe-Überwachung:
 
-* Da der Player seinen eigenen Wiedergabestatus an den Server meldet, benötigt er eine aktive Verbindung.
+* Der Player meldet dem Server seinen eigenen Wiedergabestatus, sodass eine aktive Verbindung erforderlich ist.
 
 * Die `isContentRendering`-Eigenschaft, die prüft, ob die GPU derzeit ressourcenintensiv ist, um standardmäßig aktiviert zu werden, und erfordert eine explizite Anmeldung über die Player-Voreinstellungen. Es wird empfohlen, es nicht zusammen mit Videos zu verwenden.
 
-* Wird für Sequenzkanäle unterstützt.
+* Diese Funktion wird für Sequenzkanäle unterstützt.
 
 ## Wie geht es weiter {#whats-next}
 
