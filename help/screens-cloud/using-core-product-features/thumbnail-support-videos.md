@@ -3,9 +3,9 @@ title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Se
 description: Auf dieser Seite wird beschrieben, wie Sie Miniaturansichten für Videos in Screens als Cloud Service hinzufügen.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Bearbeiten Sie die Eigenschaften der Videokomponente.
+1. Wählen Sie das Video aus und klicken Sie auf das Symbol *Schraubenschlüssel* , um die Videoeigenschaften zu öffnen.
 
-1. Ziehen Sie ein Bild aus der Asset-Auswahl in die Dropzone Miniaturansicht .
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Anzeigen einer Vorschau des Kanals
+1. Das Dialogfeld **Video** wird geöffnet, in dem Sie die Dropzone **Miniaturansicht** anzeigen.
 
-1. Wenn ein Video für die Komponente festgelegt ist, wird das Video wiedergegeben. Wenn nicht, und die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben. Andernfalls wird die Komponente als nicht konfiguriert betrachtet und übersprungen
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Ziehen Sie ein Bild aus der Asset-Auswahl in die Dropzone **Miniatur** und klicken Sie auf **Fertig**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Klicken Sie auf **Vorschau**.
+
+1. Wenn ein Video für die Komponente festgelegt ist, wird das Video wiedergegeben. Wenn nicht, und die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben. Andernfalls wird die Komponente als nicht konfiguriert betrachtet und übersprungen.
 
 ## Unterstützte Anwendungsfälle bei der Verwendung von Miniaturansichten in Videos {#understand-use-case}
 
