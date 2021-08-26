@@ -1,10 +1,10 @@
 ---
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service installieren und konfigurieren.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
@@ -74,6 +74,15 @@ Die folgenden Eigenschaften sind in jedem `ping` enthalten:
 >|—|—|
 >|isContentRendering {boolean}|true , wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse)|
 
+### Beschränkungen {#limitations}
+
+Im Folgenden finden Sie einige Einschränkungen bei der grundlegenden Wiedergabe-Überwachung:
+
+* Da der Player seinen eigenen Wiedergabestatus an den Server meldet, benötigt er eine aktive Verbindung.
+
+* Die `isContentRendering`-Eigenschaft, die prüft, ob die GPU derzeit ressourcenintensiv ist, um standardmäßig aktiviert zu werden, und erfordert eine explizite Anmeldung über die Player-Voreinstellungen. Es wird empfohlen, es nicht zusammen mit Videos zu verwenden.
+
+* Wird für Sequenzkanäle unterstützt.
 
 ## Wie geht es weiter {#whats-next}
 
