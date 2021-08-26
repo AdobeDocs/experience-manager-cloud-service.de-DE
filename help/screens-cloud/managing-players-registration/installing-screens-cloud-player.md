@@ -1,9 +1,9 @@
 ---
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service installieren und konfigurieren.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 In diesem Abschnitt wird beschrieben, wie Sie AEM Screens-Player installieren, die für On-Premise-AEM registriert sind. Außerdem müssen Sie den vorhandenen Player werkseitig zurücksetzen und dann den neuen Player bei AEM Screens als Cloud Service registrieren.
 
-## Zielsetzung {#objective}
+## Ziele {#objective}
 
 In diesem Dokument erfahren Sie, wie Sie den Player einrichten, bevor Sie die Player registrieren. Nach dem Lesen sollten Sie Folgendes verstehen können:
 
@@ -42,6 +42,38 @@ Gehen Sie wie folgt vor, um den Player zu aktualisieren:
    ![Bild](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Klicken Sie auf **Bestätigen Sie**, dass die Registrierung des Players aufgehoben wird, wenn Sie zum Cloud-Modus wechseln.
+
+## Grundlegende Wiedergabe-Überwachung {#playback-monitoring}
+
+Der Player meldet verschiedene Wiedergabemetriken mit jeweils `ping` , die standardmäßig 30 Sekunden betragen. Basierend auf den Metriken können Sie verschiedene Edge-Fälle erkennen, wie z. B. festes Erlebnis, leerer Bildschirm und Planungsprobleme. Dadurch können Sie Probleme auf dem Gerät verstehen und beheben und so Untersuchungen und Korrekturmaßnahmen beschleunigen.
+
+Die grundlegende Wiedergabe-Überwachung in einem AEM Screens-Player ermöglicht Ihnen Folgendes:
+
+* Remote-Überwachung der ordnungsgemäßen Wiedergabe von Inhalten durch einen Player
+
+* Verbessern der Reaktionsrate auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld
+
+* Geringeres Risiko, dem Endbenutzer ein defektes Erlebnis anzuzeigen
+
+### Eigenschaften {#understand-properties}
+
+Die folgenden Eigenschaften sind in jedem `ping` enthalten:
+
+| Eigenschaft | Beschreibung |
+|---|---|
+| id {string} | Player-ID |
+| activeChannel {string} | derzeit den Kanalpfad wiedergeben, oder null, wenn nichts geplant ist |
+| activeElements {string} | Kommagetrennte Zeichenfolge, derzeit sichtbare Elemente in allen wiedergegebenen Sequenzkanälen (mehrere bei einem Mehrzonen-Layout) |
+| isDefaultContent {boolean} | &quot;true&quot;, wenn der Wiedergabekanal als Standard- oder Fallback-Kanal betrachtet wird (d. h. hat Priorität 1 und keinen Zeitplan) |
+| hasContentChanged {boolean} | true , wenn der Inhalt in den letzten 5 Minuten geändert wurde, andernfalls false |
+| lastContentChange {string} | Zeitstempel der letzten Inhaltsänderung |
+
+>[!NOTE]
+>Optional kann eine erweiterte Eigenschaft in den Player-Voreinstellungen (Enable Play-back Monitoring) aktiviert werden, und zwar:
+>|Eigenschaft|Beschreibung|
+>|—|—|
+>|isContentRendering {boolean}|true , wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse)|
+
 
 ## Wie geht es weiter {#whats-next}
 
