@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 30%
+source-wordcount: '1367'
+ht-degree: 27%
 
 ---
 
@@ -90,6 +90,24 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 * **Analytics für adaptive Forms**: Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
 
 * **Verbinden Sie AEM Forms einfach mit Microsoft Dynamics und Salesforce.com**: Der Dienst bietet vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft Dynamics und Salesforce.com, wodurch es Entwicklern  [schneller und einfacher wird, Microsoft Dynamics und Salesforce.com als Datenquellen für ein adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) zu konfigurieren.
+
+## [!DNL Screens] as a  [!DNL Cloud Service] {#screens}
+
+### Neue Funktionen {#what-is-new-screens}
+
+* Als Inhaltsautor können Sie jetzt eine Miniaturansicht für Videos definieren, damit Sie dieses Bild als Platzhalter verwenden und die Inhaltswiedergabe und das Targeting ordnungsgemäß testen können, während das eigentliche Video vom entsprechenden Team fertig gestellt wird.
+Weitere Informationen finden Sie unter [Grundlegende Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) .
+
+* Unterstützung von Miniaturbildern für Videos in wird jetzt in Screens as a Cloud Service unterstützt. Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden kann, während das eigentliche Video vom entsprechenden Team fertig gestellt wird. Das Bild kann auch verwendet werden, falls die Wiedergabe des Videos fehlschlägt.
+
+### Fehlerbehebungen {#bug-fixes-screens}
+
+* Der Player konnte keine Inhalte von der eingebetteten Seite anzeigen. Dieses Problem wurde behoben.
+
+* Nach erfolgreicher Anmeldung wurde die Seite &quot;Interner Server-Fehler&quot;angezeigt, auf der die Standardseite (Kanäle) aufgerufen wurde.
+
+* Zugehörige Tag-Einträge wurden beim Entfernen der Wiedergabeliste(n) nicht entfernt.
+
 
 ## CIF-Add-on {#cloud-services-cif}
 
