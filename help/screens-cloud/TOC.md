@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: Machen Sie sich mit AEM Screens as a Cloud Service vertraut.
-source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 7%
 
 ---
@@ -39,3 +39,5 @@ ht-degree: 7%
    + [Installieren des Screens-Players](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
    + [Registrieren des Players](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
    + [Zuweisen eines Players zu einer Anzeige](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ Verwenden von Code-Produktfunktionen {#core-product-features}
+   + [Unterstützung von Miniaturansichten für Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
