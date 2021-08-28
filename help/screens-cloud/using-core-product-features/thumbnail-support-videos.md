@@ -2,9 +2,9 @@
 title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Miniaturansichten für Videos in Screens als Cloud Service hinzufügen.
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Mit der Unterstützung von Miniaturansichten können Sie:
 * Legen Sie einen Ausweichmechanismus fest, falls auf dem Gerät Wiedergabeprobleme auftreten.
 
 ## Verwenden von Miniaturansichten in Videos {#using-thumbnails}
+
+>[!IMPORTANT]
+>**Voraussetzungen**
+>Bevor Sie lernen, wie Sie Miniaturansichten für Videos verwenden, sollten Sie wissen, wie Sie Videoausgabeformate für Kanäle in Screens as a Cloud Service erstellen. Weitere Informationen finden Sie unter [hier](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) .
 
 Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
@@ -68,6 +72,6 @@ Miniaturansichten in Videos unterstützen die folgenden Anwendungsfälle:
 
 * Eine Videokomponente mit nur der Miniaturansicht wird die Miniaturansicht wiedergegeben.
 
-* Eine Videokomponente mit sowohl dem Video- als auch dem Miniaturansichtssatz gibt das Video wieder.
+* Eine Videokomponente mit sowohl dem Video (wenn das Video die richtige Wiedergabe aufweist) als auch dem Miniaturbild-Set gibt das Video wieder.
 
 * Eine Videokomponente mit dem Videoset gibt die Miniaturansicht im Fall eines Wiedergabefehlers wieder oder springt einfach zum nächsten Element, falls die Miniaturansicht nicht konfiguriert ist.
