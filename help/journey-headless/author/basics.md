@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Konzepte und Methoden der Inhaltserstel
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ In der Konsole können Sie Ordner auswählen, um zu Ihrem Inhaltsfragment zu nav
 
 Die Konsole **Assets** enthält dedizierte **Action Toolbars** und **Schnellaktionen**, die Sie verwenden können, nachdem Sie eine Ressource ausgewählt haben (z. B. einen Ordner oder ein Inhaltsfragment).
 
-Die Schnellaktionen sind für eine einzelne Ressource verfügbar:
+Die Schnellaktionen sind für eine einzelne Ressource verfügbar. Siehe **Basel** im folgenden Beispiel:
 
 ![Schnellaktionen](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ Wenn Sie nicht über sehr wenige Inhaltsfragmente verfügen, sollten Sie diese o
 
 #### Erstellen eines Ordners {#creating-folder}
 
-Erstellen Sie dazu eine Reihe von Ordnern im Abschnitt **Dateien** der Assets-Konsole. Wählen Sie die Option **Create** (oben rechts), gefolgt von **Create Folder**:
+Erstellen Sie dazu eine Reihe von Ordnern im Abschnitt **Dateien** der Assets-Konsole. Wählen Sie die Option **Erstellen** (oben rechts), gefolgt von **Ordner**:
 
 ![Option &quot;Ordner erstellen&quot;](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dan
 
 Dieser Abschnitt ist etwas erweiterter. Sie benötigen es nicht wirklich, wenn Sie gerade erst anfangen und Dinge ausprobieren, aber es ist *sehr* nützlich, wenn Sie viele Fragmente haben. Also ist es gut, darüber zu wissen - auch wenn man es noch nicht ganz benutzt.
 
-Ihr Inhaltsarchitekt hat alle Inhaltsfragmentmodelle erstellt, die für Ihr aktuelles Projekt erforderlich sind, und möglicherweise auch einige andere Projekte. Um die Arbeit Ihrer Autoren zu vereinfachen, können Sie die Liste der für einen bestimmten Ordner verfügbaren Modelle einschränken.
+Ihr Inhaltsarchitekt hat alle Inhaltsfragmentmodelle erstellt, die für Ihr aktuelles Projekt erforderlich sind, und möglicherweise auch einige andere Projekte. Um Ihnen und anderen Autoren die Arbeit zu erleichtern, können Sie die Liste der für einen bestimmten Ordner verfügbaren Modelle einschränken.
 
 Nachdem Sie Ihren Ordner erstellt haben, können Sie den Ordner **Eigenschaften** öffnen. Hier finden Sie verschiedene Registerkarten mit Informationen und Konfigurationsdetails zum Ordner. Insbesondere für Inhaltsfragmente können Sie die Registerkarte **Richtlinien** verwenden, um bestimmte Pfade und/oder Tags für diesen Ordner zu definieren. Dadurch werden die für die Verwendung im Ordner verfügbaren Inhaltsfragmentmodelle eingeschränkt, da dies bedeutet, dass Inhaltsfragmentmodelle diese Anforderungen erfüllen müssen, bevor sie zum Generieren von Fragmenten in diesem Ordner verwendet werden können.
 
@@ -147,7 +147,7 @@ Dieses Mal öffnet sich ein Assistent. Der erste Schritt besteht darin, das Inha
 
 ![Inhaltsfragment erstellen - Modell auswählen](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Nachdem Sie mit **Next** fortfahren, können Sie die Details für Ihr Fragment angeben:
+Nachdem Sie mit **Next** fortfahren, können Sie die Details (**Basic** und **Advanced**) für Ihr Fragment angeben:
 
 ![Inhaltsfragment erstellen - Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
