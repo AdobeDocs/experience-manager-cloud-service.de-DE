@@ -4,8 +4,8 @@ user-guide-title: Einstieg in AEM as a Cloud Service
 breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Deploying
-role: Architect, Developer
-source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
+role: Admin, User, Developer
+source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 81%
