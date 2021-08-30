@@ -1,19 +1,19 @@
 ---
 title: 360-Grad-/VR-Video
 description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Reality (VR)-Videos in Dynamic Media.
-feature: 360-Grad-VR-Video
+feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 79%
+source-wordcount: '927'
+ht-degree: 76%
 
 ---
 
 # 360-Grad-/VR-Video {#vr-video}
 
-360-Grad-Videos zeichnen ein Motiv aus allen Richtungen gleichzeitig auf. Sie werden mit einer omnidirektionalen Kamera oder mit mehreren Kameras aufgenommen. Während der Wiedergabe auf einer flachen Anzeige kann der Benutzer den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.
+360°-Videos zeichnen gleichzeitig eine Ansicht in alle Richtungen auf. Sie werden mit einer omnidirektionalen Kamera oder mit mehreren Kameras aufgenommen. Während der Wiedergabe auf einer flachen Anzeige kann der Benutzer den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.
 
 Dynamic Media bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.
 
@@ -27,7 +27,7 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 ## 360-Grad-Video in Aktion {#video-in-action}
 
-Wählen Sie [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) aus, um ein Browserfenster zu öffnen und ein 360-Grad-Video anzuzeigen. Ziehen Sie während der Videowiedergabe den Zeiger an eine neue Position, um den Anzeigewinkel zu ändern.
+Wählen Sie [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) aus, um ein Browserfenster zu öffnen und ein 360°-Video anzuzeigen. Ziehen Sie während der Videowiedergabe den Zeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
 ![360-Grad-Video-Beispiel](assets/6_5_360videoiss_simplified.png)-*Videoframe aus Space Station 360*
 
@@ -122,7 +122,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
-      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360-Grad-Videokameras aufgezeichnet oder erfasst wird.
+      Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual Reality-Headsets angezeigt werden. Wie bei normalen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video mit 360°-Videokameras aufgezeichnet oder erfasst wird.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 

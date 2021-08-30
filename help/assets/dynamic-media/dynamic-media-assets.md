@@ -1,10 +1,10 @@
 ---
 title: Arbeiten mit Dynamic Media
 description: Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 88%
+source-wordcount: '169'
+ht-degree: 67%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 88%
 
 Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-Dynamic Media ermöglicht interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um die Verwaltung digitaler Kampagnen zu vereinfachen und zu optimieren.
+Dynamic Media bietet interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360° und Videos. Dynamic Media verfügt über eine einzigartige Integration der Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
 
 Das Arbeiten mit Dynamic Media ist in der klassischen Benutzeroberfläche nicht verfügbar. Siehe [Arbeiten mit Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) , in dem die Touch-optimierte Benutzeroberfläche behandelt wird.
 

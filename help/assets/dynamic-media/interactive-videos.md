@@ -1,12 +1,12 @@
 ---
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten..
-feature: Interaktive Videos
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ Um ein interaktives Video mit Shopping-Funktion anzuzeigen, wählen Sie [Live-De
 
 * Wenn während der Wiedergabe Produkte im Video verwendet werden, wird das gleiche Produkt auf der rechten Seite als Miniaturansicht angezeigt.
 
-* Um das Video anzuhalten und die Schnellansicht des Produkts zu öffnen, wählen Sie die Miniaturansicht aus. Wählen Sie beispielsweise die KitchenAid-Miniaturansicht im Video aus, um eine 360-Grad-Rotationsansicht des Mixers zu erhalten, oder zoomen Sie hinein, um die Details des Mixers anzuzeigen.
+* Um das Video anzuhalten und die Schnellansicht des Produkts zu öffnen, wählen Sie die Miniaturansicht aus. Wählen Sie beispielsweise die KitchenAid-Miniaturansicht im Video aus, um eine 360°-Rotationsansicht des Mixers zu erhalten, oder zoomen Sie hinein, um die Details des Mixers anzuzeigen.
 
 Siehe auch [Verwenden von interaktiven Videos mit Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=de#dynamic-media)
 
@@ -99,8 +99,7 @@ Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie da
 >* Ihre Adobe Experience Manager-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, SAP Hybris oder Intershop in Experience Manager abzurufen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
+>Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
 
 Ermitteln Sie zunächst die durch Ihre vorhandene Schnellansichtsimplementierung verwendeten dynamischen Variablen, damit Sie die Produktminiaturen während des Erstellungsvorgangs des interaktiven Videos der entsprechenden Produktschnellansicht zuordnen können.
 

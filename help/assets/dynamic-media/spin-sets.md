@@ -1,12 +1,12 @@
 ---
 title: Rotationssets
 description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten..
-feature: Rotationssets
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 78%
 
 ---
@@ -103,7 +103,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
 >[!NOTE]
 >
->Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
+>Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Sortieren Sie sie so, dass die Rotation eine glatte 360°-Ansicht ergibt.
 
 **So erstellen Sie Rotationssets:**
 

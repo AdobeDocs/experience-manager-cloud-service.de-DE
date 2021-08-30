@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-Newsletter-Archiv
 description: 'Der Dynamic Media-Newsletter nach Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Beispielsweise werden Tutorials und Lösungsübersichten bereitgestellt. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr. '
-feature: Asset-Management
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 70%
+source-wordcount: '1050'
+ht-degree: 69%
 
 ---
 
@@ -124,7 +124,7 @@ In diesem archivierten One-Stopp-Shop-Newsletter finden Sie wertvolle Ressourcen
    * Informieren Sie sich über ein bevorstehendes Webinar zum Schutz Ihrer digitalen Ressourcen.
    * Die nächsten Stationen der informativen Adobe Insider Tour.
    * Erfreuliche Funktionen, wenn Sie Dynamic Media in Experience Manager Assets (Experience Manager Assets) verwenden.
-   * Hinzufügen von 360-Grad-Videos und benutzerdefinierten Videominiaturen zu Ihrer Website.
+   * Hinzufügen von 360°-Videos und benutzerdefinierten Videominiaturen zu Ihrer Website.
    * Treffen Sie `Andrew Hathaway`, Principal Solutions Consultant für Dynamic Media in Experience Manager Assets.
 
 * **[Juni 2019, Ausgabe 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
