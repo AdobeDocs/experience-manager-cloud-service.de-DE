@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -35,10 +35,12 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 >[!NOTE]
 >Sie müssen Systemadministrator sein, um die folgenden Schritte erfolgreich ausführen zu können.
 
-1. Klicken Sie in Ihrer Begrüßungs-E-Mail auf **Erste Schritte** , um zur Admin Console zu navigieren oder direkt von [hier](https://adminconsole.adobe.com) zur Admin Console zu navigieren.
+1. Klicken Sie in der Begrüßungs-E-Mail auf **Erste Schritte** , wie in der folgenden Abbildung dargestellt, um zur Admin Console zu navigieren oder direkt von [hier](https://adminconsole.adobe.com) zur Admin Console zu navigieren.
 
    >[!NOTE]
    >Als Systemadministrator erhalten Sie mehrere E-Mails. Suchen Sie nach der Begrüßungs-E-Mail, in der Sie Informationen zum Organisationsnamen erhalten, auf den Sie Zugriff erhalten haben, und klicken Sie auf **Erste Schritte**. Wenn Sie die E-Mail nicht finden können, navigieren Sie direkt zu [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Melden Sie sich mit Ihrem [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en) an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console, wie unten dargestellt.
 
