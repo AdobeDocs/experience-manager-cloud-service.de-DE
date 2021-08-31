@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Onboarding-Journey
 breadcrumb-title: Onboarding-Journey
 user-guide-description: Beginnen Sie hier mit einer geführten Journey, die für eine Systemadministratorperson entwickelt wurde und die Anforderungen, Schritte und Ansätze beschreibt. Die Journey definiert zusätzliche Rollen, mit denen der Systemadministrator für ein erfolgreiches Projekt interagieren muss, aber die Sicht auf die Journey ist die eines Administrators.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
