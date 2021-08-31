@@ -4,9 +4,9 @@ description: Auf dieser Seite erfahren Sie mehr über die nächsten Schritte nac
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,9 @@ Dieses Dokument hilft Ihren AEM als Cloud Service-Inhaltsautoren beim Zugriff au
 
 Nach dem Lesen sollten Sie Folgendes verstehen:
 
-* Zugriff auf Cloud Manager.
-* Zugriff auf AEM als Cloud Service-Instanz.
-* Inhaltserstellung für AEM als Cloud Service.
+* Zugriff auf Cloud Manager
+* Zugriff auf AEM als Cloud Service-Instanz
+* Inhaltserstellung für AEM als Cloud Service
 
 ## Einführung  {#introduction}
 
