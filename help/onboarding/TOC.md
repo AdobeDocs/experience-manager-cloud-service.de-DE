@@ -5,15 +5,15 @@ breadcrumb-title: Onboarding-Anleitung
 user-guide-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: e4d8ba9975ef612d5ca346888914b19dba56db3b
+source-git-commit: 673340ba6e33daca2b1a371286ec38d6eaaca461
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 72%
+source-wordcount: '114'
+ht-degree: 70%
 
 ---
 
 
-# Onboarding-Erlebnis starten {#onboarding-experience}
+# Onboarding-Erlebnis starten {#onboarding}
 
 + [Einstieg in AEM as a Cloud Service](/help/onboarding/home.md)
 + Onboarding-Konzepte {#onboarding-concepts}
@@ -24,7 +24,7 @@ ht-degree: 72%
    + [Einführung in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM als Cloud Service-Team und Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe-Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Onboarding-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
++ [Onboarding-Journey-Anleitung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
 + Erste Schritte mit AEM as a Cloud Service {#what-is-required}
    + [Anfordern der Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager-Rollen](what-is-required/user-roles-permissions.md)
