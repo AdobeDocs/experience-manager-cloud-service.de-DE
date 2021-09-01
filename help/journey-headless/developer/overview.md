@@ -2,10 +2,10 @@
 title: AEM Headless-Entwickler-Tour
 description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 55%
+source-wordcount: '1201'
+ht-degree: 54%
 
 ---
 
@@ -15,11 +15,9 @@ Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexi
 
 ## Einführung {#introduction}
 
-Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
-
 Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
-Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss:
+Dieser Leitfaden führt Sie durch die Headless-Implementierungsthemen in AEM, sodass Sie nach Abschluss Folgendes tun:
 
 * Umfassendes Verständnis davon, was die Headless-Bereitstellung von Inhalten ist und welche Vorteile sie bietet
 * Kenntnisse der Headless-Funktionen von AEM und wie sie zusammenarbeiten, um Headless-Erlebnisse bereitzustellen
@@ -31,7 +29,7 @@ Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschl
 
 Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, AEM Headless-Journey beginnen.
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, sind [AEM Headless-Journey](/help/journey-headless/home.md) der Ausgangspunkt.
 
 >[!TIP]
 >
@@ -43,13 +41,12 @@ Diese Tour ist für die Entwickler-Persona konzipiert. Sie legt die Anforderunge
 
 Im Folgenden finden Sie die Rollen, die in dieser Journey interagieren.
 
-| Rolle | Beschreibung | Rolle beim Journey |
+| Rolle | Beschreibung | Rolle in dieser Journey |
 |---|---|---|
-| Entwickler | Hat Erfahrung bei der Entwicklung von Headless-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Zielgruppe dieser Journey |
+| Entwickler (Zielgruppe) | Hat Erfahrung bei der Entwicklung von Headless-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Zielgruppe dieser Journey |
 | Inhaltsautor | Erstellt und verwaltet Headless-Inhalte | Inhaltsautoren erstellen Inhalte, die der Entwickler per Headless-Implementierung bereitstellt. |
 | Administrator | Verwalten der grundlegenden Einrichtung und Konfiguration von AEM | Der Entwickler arbeitet mit dem Administrator zusammen, um für die Entwicklung erforderliche Konfigurationsänderungen vorzunehmen. |
 | Inhaltsarchitektur | Analysiert die Anforderungen an die Daten, die Headless-Implementierung erfolgen muss, und definiert die Struktur für diese Daten | Entwickler arbeiten mit dem Inhaltsarchitekten zusammen, um die Struktur der Daten und die Anforderungen für die Bereitstellung Headless zu verstehen. |
-| Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Der Übersetzungs-Spezialist arbeitet mit dem Inhaltsarchitekten zusammen, um die anfängliche Organisation von Inhalten zu definieren, und muss ggf. mit dem Entwickler für übersetzungsspezifische Anforderungen zusammenarbeiten. |
 
 Informationen in dieser Journey können natürlich für alle Personen nützlich sein, aber einige Informationen können für bestimmte Rollen überflüssig sein. Halten Sie sich für [bevorstehende Journey bereit, die zusätzliche Rollen behandeln.](/help/journey-documentation/home.md#journeys)
 

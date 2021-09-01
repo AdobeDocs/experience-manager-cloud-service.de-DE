@@ -1,10 +1,10 @@
 ---
 title: AEM Headless-Journey
 description: Beginnen Sie hier mit einem Überblick über die geführten Journey, die zum Verständnis AEM leistungsstarken Headless-Funktionen verfügbar sind.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 12%
+source-wordcount: '459'
+ht-degree: 14%
 
 ---
 
@@ -30,19 +30,11 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM
 
 ## Zielgruppen {#audiences}
 
-Headless-Journey sind für mehrere Personen konzipiert, in denen Anforderungen, Schritte und Ansätze zur Implementierung von Headless-Lösungen aus verschiedenen Perspektiven dargestellt werden. Eine Journey ist für eine bestimmte Person definiert, definiert aber auch zusätzliche Personen, mit denen der Leser interagiert.
+Headless-Journey sind für unterschiedliche Personas konzipiert, in denen Anforderungen, Schritte und Ansätze zur Implementierung von Headless-Lösungen aus unterschiedlichen Perspektiven dargestellt werden.
 
-Im Folgenden finden Sie die Rollen, die in den Headless-Journey interagieren.
+Eine individuelle Journey ist für eine bestimmte Person oder Zielgruppe definiert, definiert aber auch zusätzliche Personen, mit denen der Leser interagiert.
 
-| Rolle | Beschreibung | Rolle beim Journey |
-|---|---|---|
-| Entwickler | Hat Erfahrung bei der Entwicklung von Headless-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Der Entwickler arbeitet mit Autoren, Administratoren und Architekten zusammen, um die Daten zu verstehen und eine Headless-Anwendung zu erstellen, die diese Daten nutzt. |
-| Inhaltsautor | Erstellt und verwaltet Headless-Inhalte | Inhaltsautoren erstellen Inhalte, die der Entwickler per Headless-Implementierung bereitstellt. |
-| Administrator | Verwalten der grundlegenden Einrichtung und Konfiguration von AEM | Der Entwickler arbeitet mit dem Administrator zusammen, um für die Entwicklung erforderliche Konfigurationsänderungen vorzunehmen. |
-| Inhaltsarchitektur | Analysiert die Anforderungen an die Daten, die Headless-Implementierung erfolgen muss, und definiert die Struktur für diese Daten | Entwickler arbeiten mit dem Inhaltsarchitekten zusammen, um die Struktur der Daten und die Anforderungen für die Bereitstellung Headless zu verstehen. |
-| Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Der Übersetzungs-Spezialist arbeitet mit dem Inhaltsarchitekten zusammen, um die anfängliche Organisation von Inhalten zu definieren und kann mit dem Entwickler für übersetzungsspezifische Anforderungen zusammenarbeiten. |
-
-Informationen in diesen Journey können natürlich für alle Personen nützlich sein, doch einige Informationen können für bestimmte Rollen überflüssig sein.
+Informationen in den Journey können natürlich für mehrere Personen nützlich sein, aber eine Journey ist auf eine bestimmte Person ausgerichtet und einige Informationen können für bestimmte Rollen überflüssig sein.
 
 ## Headless-Journey {#headless-journeys}
 
