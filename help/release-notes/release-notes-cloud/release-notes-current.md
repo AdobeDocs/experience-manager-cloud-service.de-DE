@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
+source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 26%
@@ -95,7 +95,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-screens}
 
-* Screens as a Cloud Service unterstützt jetzt die grundlegende Wiedergabe-Überwachung. Der Player meldet jetzt verschiedene Wiedergabemetriken mit jedem &quot;Ping&quot;(standardmäßig 30 Sekunden). Basierend auf den Metriken bietet es die Möglichkeit, verschiedene Edge-Fälle zu erkennen (festes Erlebnis, leerer Bildschirm, Planungsproblem usw.). Mit dieser Funktion kann das Team remote überwachen, ob ein Player Inhalte ordnungsgemäß wiedergibt, die Reaktionsrate auf leere Bildschirme oder fehlerhafte Erlebnisse vor Ort verbessert und das Risiko verringert, dem Endbenutzer ein defektes Erlebnis anzuzeigen.
+* Screens as a Cloud Service unterstützt jetzt die grundlegende Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping verschiedene Wiedergabemetriken (standardmäßig 30 Sekunden). Basierend auf den Metriken bietet es die Möglichkeit, verschiedene Edge-Fälle zu erkennen (festes Erlebnis, leerer Bildschirm, Planungsproblem usw.). Mit dieser Funktion kann das Team remote überwachen, ob ein Player Inhalte ordnungsgemäß wiedergibt, die Reaktionsrate auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld verbessert und das Risiko verringert, dem Endbenutzer ein defektes Erlebnis anzuzeigen.
 Weitere Informationen finden Sie unter [Grundlegende Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) .
 
 * Unterstützung von Miniaturbildern für Videos in wird jetzt in Screens as a Cloud Service unterstützt. Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden kann, während das eigentliche Video vom entsprechenden Team fertig gestellt wird. Das Bild kann auch verwendet werden, falls die Wiedergabe des Videos fehlschlägt.
