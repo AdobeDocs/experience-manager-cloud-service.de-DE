@@ -4,30 +4,14 @@ description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journ
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '532'
 ht-degree: 7%
 
 ---
 
 # Onboarding-Journey {#onboarding-jourrney}
-
-Herzlichen Glückwunsch zum Start Ihrer Tour mit AEM as a Cloud Service! Wir freuen uns, dass Sie hier sind und nicht warten können, bis Sie mit Ihrem Onboarding-Journey beginnen. Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine vorhandene migrieren, dient dieses Handbuch als Ausgangspunkt für die Einrichtung Ihrer Teams und den Zugriff auf AEM als Cloud Service.
-
-## Einführung {#introduction}
-
-Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss Folgendes haben:
-
-* Vollständiges Verständnis dessen, was während des AEM als Cloud Service beim Onboarding von Journey zu erwarten ist.
-* Ihr Team konnte damit beginnen und die ersten Schritte durchführen, um zu lernen, wie Sie Inhalte für Ihre AEM als Cloud Service-Anwendung erstellen und entwickeln können.
-
-Das bedeutet:
-
-* Ihr Team ist eingerichtet und hat Zugriff auf Cloud-Ressourcen.
-* AEM-Autoren haben Zugriff auf AEM as a Cloud Service,
-* AEM Entwickler und Bereitstellungsmanager erhalten als Cloud Service Zugriff auf AEM.
-
 
 ## Onboarding-Erlebnis {#audience}
 
