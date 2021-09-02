@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 21%
+source-wordcount: '675'
+ht-degree: 19%
 
 ---
 
@@ -19,6 +19,17 @@ Um sicherzustellen, dass Kunden schnell mit AEM as a Cloud Service beginnen kön
 
 Ihr Systemadministrator ist für die Einrichtung Ihres Cloud Manager-Teams verantwortlich, das auch Personen umfasst, die Ihre Cloud-Ressourcen und -Entwickler erstellen. Unter [Einrichten der Enterprise-Team-Entwicklung für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) erfahren Sie, wie Cloud Manager bei der Einrichtung der Enterprise-Team-Entwicklung unterstützt.
 
+## Navigieren zur Übersichtsseite von Cloud Manager {#navigate-cloud-manager}
+
+Gehen Sie wie folgt vor, um zu Cloud Manager zu navigieren:
+
+1. Navigieren Sie von [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) direkt zur Anmeldeseite von Cloud Manager.
+
+   >[!NOTE]
+   >Bitte Lesezeichen für diese Seite einfügen, um Sie bei der Navigation zur Landingpage von Cloud Manager zu unterstützen.
+
+1. Wählen Sie auf der Seite **Programme und Produkte** von Cloud Manager das Programm aus, um die Seite **Übersicht** zu öffnen.
+
 ## Cloud Manager-Programme {#cloud-manager-programs}
 
 Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen. Diese entsprechen in der Regel einem erworbenen Service Level Agreement (SLA). Beispielsweise kann ein Programm die AEM Ressourcen zur Unterstützung der globalen öffentlichen Websites darstellen, während ein anderes Programm einen internen zentralen DAM darstellt. Sehen Sie sich dieses [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) an, um mehr über die Verwendung von Cloud Manager-Programmen zu erfahren.
@@ -28,7 +39,7 @@ Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 * Ein *Produktionsprogramm* wird erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
 Weitere Informationen finden Sie unter [Einführung in Produktionsprogramme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en).
 
-* Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispielcode, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+* Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
 Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en).
 
 ## Cloud Manager-Umgebungen {#cloud-manager-environments}
