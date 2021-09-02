@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
+source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 19%
+source-wordcount: '756'
+ht-degree: 23%
 
 ---
 
@@ -29,6 +29,16 @@ Gehen Sie wie folgt vor, um zu Cloud Manager zu navigieren:
    >Bitte Lesezeichen für diese Seite einfügen, um Sie bei der Navigation zur Landingpage von Cloud Manager zu unterstützen.
 
 1. Wählen Sie auf der Seite **Programme und Produkte** von Cloud Manager das Programm aus, um die Seite **Übersicht** zu öffnen.
+
+Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Seite Programme und Produkte von Cloud Manager navigieren. Führen Sie dazu folgende Schritte durch:
+
+1. Navigieren Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) und melden Sie sich mit Ihrer Adobe ID an.
+
+1. Wählen Sie **Experience Manager** aus.
+
+1. Klicken Sie auf der Karte „Cloud Manager“ auf **Launch**. Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie die Benutzeroberfläche verwenden.
+
+Nach erfolgreicher Anmeldung werden Sie zur Landingpage von Cloud Manager weitergeleitet.
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 
