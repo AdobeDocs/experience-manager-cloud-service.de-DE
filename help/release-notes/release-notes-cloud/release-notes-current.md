@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
+source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +64,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM Archetypprojekt für Forms as a Cloud Service enthält jetzt das [Canvas 3.0-Design und die Formulardatenmodelle für Microsoft Dynamics und Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM Archetypprojekt für Forms as a Cloud Service enthält jetzt [Formulardatenmodelle für Microsoft Dynamics und Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Acroform-based Document of Record**: AEM Forms as a Cloud Service unterstützt die Verwendung von  [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de)  als Vorlage für Datensatzdokument neben XFA-basierten Formularvorlagen.
 
