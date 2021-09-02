@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ Sobald Ihr Vertrag unterzeichnet wurde, findet Folgendes statt:
 
 1. Adobe schließt die Bereitstellung für Ihr Unternehmen ab. Danach erhält der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail, nach der er [Systemadministratoraufgaben](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) ausführen kann. Dazu gehören das Hinzufügen von Benutzern, die Zuweisung zu Rollen und die Gewährung eines angemessenen Zugriffs auf Cloud Manager.
 
-1. Benutzer, die von Ihrem Systemadministrator hinzugefügt wurden, erhalten eine Begrüßungs-E-Mail, damit sie erfolgreich [Zu Cloud Manager navigieren](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) können. Benutzer können sich jetzt über ihre Adobe ID anmelden und ihre Tour mit Cloud Manager beginnen.
+1. Benutzer, die von Ihrem Systemadministrator hinzugefügt wurden, erhalten daraufhin eine Begrüßungs-E-Mail, damit sie erfolgreich zu Cloud Manager navigieren können. Benutzer können sich jetzt über ihre Adobe ID anmelden und ihre Tour mit Cloud Manager beginnen.
 
 1. Zu Entwicklungszwecken kann ein Systemadministrator [Benutzern Zugriff auf eine AEM-Instanz gewähren](/help/onboarding/what-is-required/accessing-aem-instance.md).
 
@@ -54,7 +54,7 @@ Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden orga
 * Hinzufügen von Benutzern
 * Zuweisen von Benutzern zu Cloud Manager-Rollen und -Berechtigungen
 
-**[Zu Cloud Manager navigieren](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
+* **Zu Cloud Manager navigieren**
 
 Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um Ihre Cloud-Tour mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. das Erstellen eines Programms, Hinzufügen einer Umgebung, Zugreifen auf Git, [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager ist ein wichtiger Bestandteil von AEM as a Cloud Service. Unternehmen können [!DNL Experience Manager] in der Cloud selbst verwalten. Das umfasst ein Framework für die fortlaufende Integration und Bereitstellung (CI/CD), mit dem IT-Teams und Implementierungspartner die Bereitstellung von Anpassungen oder Aktualisierungen beschleunigen können, ohne die Leistung oder Sicherheit zu beeinträchtigen. Über die Benutzeroberfläche können Sie die CI/CD-Pipeline konfigurieren und starten.
