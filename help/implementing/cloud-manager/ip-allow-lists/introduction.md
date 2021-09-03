@@ -2,10 +2,10 @@
 title: Einführung – IP-Zulassungslisten in Cloud Manager
 description: Einführung – IP-Zulassungslisten in Cloud Manager
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 3f282169b9ac2e2cf3e58277fd0c32cd97003de2
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 94%
+source-wordcount: '314'
+ht-degree: 86%
 
 ---
 
@@ -19,6 +19,9 @@ ht-degree: 94%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=de" text="Anzeigen und Aktualisieren einer IP-Zulassungsliste"
 
 AEM as a Cloud Service ist für das Internet offen und die Sicherheit wird durch Benutzerauthentifizierung und -autorisierung gewährleistet. Die IP-Zulassungsliste ist eine Funktion in Cloud Manager, mit der der Zugriff auf vertrauenswürdige Benutzer beschränkt und gesteuert werden kann. Mit dieser Funktion können berechtigte Benutzer Zulassungslisten vertrauenswürdiger IP-Adressen erstellen, über die Website-Benutzer auf ihre AEM-Domains zugreifen können.
+
+>[!NOTE]
+>Sie können maximal 10 IP-Zulassungslisten in Ihrem Programm hinzufügen und maximal 50 IP/CIDR-Adressen zu jeder IP-Zulassungsliste hinzufügen.
 
 IP-Zulassungslisten können einmal hinzugefügt und mehrmals als Einheit oder Entität auf einen Autoren- und/oder Veröffentlichungs-Service in einer Umgebung angewendet/nicht angewendet werden.
 
