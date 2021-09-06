@@ -2,10 +2,11 @@
 title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
-ht-degree: 66%
+source-wordcount: '2413'
+ht-degree: 67%
 
 ---
 
@@ -406,7 +407,7 @@ Die Protokollierungsstufen für diese Module werden durch die Variablen `DISP_LO
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Terminal-Ausgabe gedruckt. Meistens möchten Sie, dass sich diese Protokolle in DEBUG befinden. Dies kann durch Übergeben der Debug-Ebene als Parameter beim Ausführen von Docker erfolgen. Beispiel: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Terminal-Ausgabe gedruckt. Meistens möchten Sie, dass sich diese Protokolle in DEBUG befinden. Dies kann durch Übergeben der Debug-Ebene als Parameter beim Ausführen von Docker erfolgen. Beispiel: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgestellt, der in Cloud Manager verfügbar ist.
 
@@ -440,7 +441,7 @@ In der Dispatcher-Konfiguration ist dieselbe Umgebungsvariable verfügbar. Wenn 
 Wenn Sie Ihre Konfiguration lokal testen, können Sie verschiedene Umgebungstypen simulieren, indem Sie die Variable direkt `DISP_RUN_MODE` an das `docker_run.sh`-Skript übergeben:
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 Der Standardausführungsmodus, wenn kein Wert für DISP_RUN_MODE übergeben wird, ist „dev“.
@@ -471,7 +472,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migration vom alten Modus zum flexiblen Modus {#migrating}
 
-Mit der Cloud Manager -Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden die vorherigen Einschränkungen des [Legacy-Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang sicherzustellen:
+Mit der Cloud Manager -Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden die vorherigen Einschränkungen des [Legacy-Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang sicherzustellen:
 
 1. **Lokaler Test.** Fügen Sie mithilfe des neuesten Dispatcher Tools SDK den Ordner und die Datei hinzu  `opt-in/USE_SOURCES_DIRECTLY`. Befolgen Sie die Anweisungen in diesem Artikel zur lokalen Validierung, um zu testen, ob der Dispatcher lokal funktioniert.
 2. **Cloud-Entwicklungstests:**
