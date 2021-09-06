@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Cloud Manager
 description: Auf dieser Seite erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und -Umgebungen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 23%
+source-wordcount: '907'
+ht-degree: 36%
 
 ---
 
@@ -39,6 +39,26 @@ Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus zur Se
 1. Klicken Sie auf der Karte „Cloud Manager“ auf **Launch**. Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie die Benutzeroberfläche verwenden.
 
    Nach erfolgreicher Anmeldung werden Sie zur Landingpage von Cloud Manager weitergeleitet.
+
+## Rollenbasierte Berechtigungen in Cloud Manager {#role-based-permissions}
+
+| Berechtigung | Beschreibung | Geschäftsinhaber | Bereitstellungs-Manager | Programm-Manager | Entwickler |
+|--- |--- |--- |--- |--- |--- |
+| Programm hinzufügen<br>Programm bearbeiten | Neues Programm hinzufügen.<br>Programm bearbeiten – Lösungen oder Add-ons hinzufügen oder entfernen | x |  |  |  |
+| Umgebung einrichten | Kann Produktions-, Staging und Entwicklungs-Umgebungen erstellen. | x | x |  |  |
+| Umgebung aktualisieren | Kann Produktions-, Staging und Entwicklungs-Umgebungen aktualisieren. | x | x |  |  |
+| Entwicklungsumgebung löschen | Kann Entwicklungsumgebungen löschen. | x | x |  |  |
+| Einrichten der Pipeline | Kann die Pipeline einrichten oder bearbeiten. |  | x |  |  |
+| Pipeline-Ausführung | Kann die Pipeline starten. | x | x |  |  |
+| Pipeline-Ausführung | Kann wichtige 3-Tier-Fehler ablehnen/akzeptieren. | x | x | x |  |
+| Pipeline-Ausführung | Kann die GoLive-Genehmigung bereitstellen. | x | x | x |  |
+| Pipeline-Ausführung | Kann die Bereitstellung für die Produktion planen. | x | x | x |  |
+| Pipeline löschen | Kann eine Pipeline löschen. |  | x |  |  |
+| Ausführung abbrechen | Kann die aktuelle Ausführung abbrechen. |  | x |  |  |
+| Persönliches Zugriffs-Token erstellen | Kann auf Git zugreifen. |  | x |  | x |
+
+>[!NOTE]
+>Ein Anwender kann mehreren Rollen zugewiesen werden. Wenn Sie beispielsweise einem Anwender die Rollen „Geschäftsinhaber“ und „Implementierungs-Manager“ zuweisen, erhalten diese die Kombination oder Summe dieser Berechtigungen.
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 

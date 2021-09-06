@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: 5a0c744d848397d9eb9581e0a0a2cd143c5a7412
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 83%
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,7 @@ Dieser Abschnitt enthält die wichtigsten Artikel zu Ihrer Tour, wenn Sie mit AE
 
 Sobald Ihr Vertrag unterzeichnet wurde, findet Folgendes statt:
 
-1. Adobe schließt die Bereitstellung für Ihr Unternehmen ab. Danach erhält der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail, nach der er [Systemadministratoraufgaben](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) ausführen kann. Dazu gehören das Hinzufügen von Benutzern, die Zuweisung zu Rollen und die Gewährung eines angemessenen Zugriffs auf Cloud Manager.
+1. Adobe schließt die Bereitstellung für Ihr Unternehmen ab. Danach erhält der Systemadministrator Ihres Unternehmens eine Begrüßungs-E-Mail, über die er Systemadministratoraufgaben ausführen kann, einschließlich des Hinzufügens von Benutzern, der Zuweisung zu Rollen und der Gewährung eines angemessenen Zugriffs auf Cloud Manager.
 
 1. Benutzer, die von Ihrem Systemadministrator hinzugefügt wurden, erhalten daraufhin eine Begrüßungs-E-Mail, damit sie erfolgreich zu Cloud Manager navigieren können. Benutzer können sich jetzt über ihre Adobe ID anmelden und ihre Tour mit Cloud Manager beginnen.
 
@@ -42,11 +42,11 @@ Sobald Ihr Vertrag unterzeichnet wurde, findet Folgendes statt:
 
 Sie benötigen Ihre Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzern, die zu Cloud Manager hinzugefügt wurden, die ihnen zugewiesenen Rollen zu verschaffen.
 
-**[Cloud Manager-Rollen](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**Cloud Manager-Rollen**
 
 Ihr Systemadministrator kann Benutzer hinzufügen und sie Cloud Manager-Rollen zuweisen. Bevor Sie beginnen, erfahren Sie in diesem Abschnitt, was *Cloud Manager-Rollen* sind und welche Berechtigungen mit den Rollen verknüpft sind.
 
-**[Systemadministratoraufgaben](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
+**Systemadministratoraufgaben**
 
 Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff bis zu Berechtigungen. Dieser Benutzer hat als erster Zugriff auf Admin Console und Cloud Manager, um mit Aufgaben zu beginnen.
 Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden organisatorischen Aufgaben:
@@ -54,12 +54,12 @@ Die folgenden Dokumentationsseiten enthalten Informationen zu grundlegenden orga
 * Hinzufügen von Benutzern
 * Zuweisen von Benutzern zu Cloud Manager-Rollen und -Berechtigungen
 
-* **Zu Cloud Manager navigieren**
+**Zu Cloud Manager navigieren**
 
 Nachdem Sie als Benutzer hinzugefügt und einer Cloud Manager-Rolle zugewiesen wurden, können Sie auf Cloud Manager zugreifen, um Ihre Cloud-Tour mit AEM zu beginnen. Benutzer können verschiedene Aufgaben ausführen, z. B. das Erstellen eines Programms, Hinzufügen einer Umgebung, Zugreifen auf Git, [Konfigurieren einer Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und [Bereitstellen von Code](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager ist ein wichtiger Bestandteil von AEM as a Cloud Service. Unternehmen können [!DNL Experience Manager] in der Cloud selbst verwalten. Das umfasst ein Framework für die fortlaufende Integration und Bereitstellung (CI/CD), mit dem IT-Teams und Implementierungspartner die Bereitstellung von Anpassungen oder Aktualisierungen beschleunigen können, ohne die Leistung oder Sicherheit zu beeinträchtigen. Über die Benutzeroberfläche können Sie die CI/CD-Pipeline konfigurieren und starten.
 
-* **Gewähren des Benutzerzugriffs auf eine AEM-Instanz**
+**Gewähren des Benutzerzugriffs auf eine AEM-Instanz**
 
 In diesem Abschnitt erfahren Sie, wie ein Systemadministrator oder ein Benutzer, der eine Umgebung erstellt hat, anderen Benutzern Zugriff auf eine AEM-Instanz gewähren kann.
 
