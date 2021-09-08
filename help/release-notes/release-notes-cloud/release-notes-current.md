@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1473'
+ht-degree: 26%
 
 ---
 
@@ -142,11 +142,11 @@ Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.
 
 * Self-Service-Funktion, mit der Benutzer über die Cloud Manager-Benutzeroberfläche mehrere Repositorys erstellen und verwalten können.
 
-* SonarQube liest unnötigerweise Git-Verlaufsdaten. Auf großen Code-Basien konnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
+* SonarQube liest unnötigerweise Git-Verlaufsdaten. Auf großen Code-Basen konnte dies zu einer unnötigen Build-Leistungsbeeinträchtigung führen.
 
 * Es ist jetzt eine API verfügbar, um den Maven-Abhängigkeits-Cache pro Pipeline zu invalidieren.
 
-* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 29 aktualisiert.
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 29 aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes-aug}
 
@@ -154,7 +154,7 @@ Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.
 
 * Das anfängliche Onboarding schlug bei neuen Unternehmen mit sehr langen Namen fehl.
 
-* Fehlerkorrektur – Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies nicht mehr dazu, dass eine der Ausführungen mit dem Fehler *Pipeline-Ausführungsstatus konnte nicht aktualisiert werden* fehlschlägt.
+* Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies nicht mehr dazu, dass eine der Ausführungen mit dem Fehler *Pipeline-Ausführungsstatus konnte nicht aktualisiert werden* fehlschlägt.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -169,4 +169,20 @@ Die Version 1.5.6 des Content Transfer Tool wurde am 11. August 2021 veröffentl
 * Die Schaltfläche **Aufnahme stoppen** wurde während der Aufnahme in die Veröffentlichungsinstanz deaktiviert. Dies ist nicht erforderlich, da es während der Aufnahme der Veröffentlichung keinen mongo restore -Schritt gibt.
 
 * Die CTT hat das Verzeichnis `/tmp` nach einer erfolgreichen Extraktion nicht bereinigt. Dies führte manchmal zu Problemen mit dem Festplattenspeicher.
+
+## Best Practices Analyzer {#best-practices-analyzer}
+
+### Veröffentlichungsdatum {#release-date-bpa-latest}
+
+Die Version 2.1.18 von Best Practices Analyzer wurde am 2. September 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new}
+
+* Möglichkeit, die Gesamtzahl der Knoten zu erkennen und darüber zu berichten.
+
+* Möglichkeit, den Knotenspeichertyp und die Knotengröße zu erkennen und darüber zu berichten.
+
+### Fehlerbehebungen {#bug-fixes-bpa}
+
+* BPA erkannte fälschlicherweise das Vorhandensein des Commerce Integration Framework.
 
