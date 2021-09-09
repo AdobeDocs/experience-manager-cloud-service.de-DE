@@ -3,7 +3,7 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 40%
@@ -24,6 +24,8 @@ Die nächste Version ist für den 7. Oktober 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 30 aktualisiert.
+
 * Die Programmkarten auf der Landingpage von Cloud Manager und das zugehörige Erlebnis wurden aktualisiert.
 
 * Das Protokoll &quot;Codequalitätsschritt&quot;enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scanprozess.
@@ -31,8 +33,6 @@ Die nächste Version ist für den 7. Oktober 2021 geplant.
 * Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
 * Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Übersichtsseite von Cloud Manager.
-
-* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 30 aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes}
 
