@@ -5,9 +5,9 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1036'
 ht-degree: 94%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 94%
 + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
 + Verwenden von Cloud Manager {#using-cloud-manager}
    + Versionshinweise für Cloud Manager {#release-notes-cloud-manager}
-      + [Aktuelle Versionshinweise (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Aktuelle Versionshinweise (2021.9.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Versionshinweise für 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Versionshinweise für 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Versionshinweise für 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Versionshinweise für 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
@@ -97,7 +98,7 @@ ht-degree: 94%
 + Verwalten von Code {#managing-code}
    + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
    + [Repositorys in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
-   + [Zugreifen auf Repositorys](cloud-manager/accessing-repos.md)
+   + [Zugriff auf Repositorys](cloud-manager/accessing-repos.md)
    + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [Enterprise Team Development-Setup für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
