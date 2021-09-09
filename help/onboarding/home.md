@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 77%
+source-wordcount: '556'
+ht-degree: 58%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 77%
 
 Herzlichen Glückwunsch zum Start Ihrer Tour mit AEM as a Cloud Service! Unabhängig davon, ob Sie eine neue Anwendung implementieren oder eine bestehende migrieren, dient dieses Handbuch als Ausgangspunkt, um sicherzustellen, dass Ihre Anwendung für Cloud Service optimiert und erfolgreich ist.
 
-Diese Anleitung hilft Ihnen und Ihrem Team, zügig mit Cloud Manager zu starten. Sie benötigen Ihre Adobe ID und die Hilfe Ihres Systemadministrators, um Benutzern, die zu Cloud Manager hinzugefügt wurden, die ihnen zugewiesenen Rollen (in Admin Console als Produktprofile bezeichnet) und zugehörigen Berechtigungen zu verschaffen. Die Anweisungen, wie der Systemadministrator dies über Admin Console durchführen kann, werden beschrieben. Die Liste der Cloud Manager-Rollen, in Admin Console als Produktprofile bezeichnet, und der zugehörigen Berechtigungen werden detailliert beschrieben, sodass Sie bestimmen können, welche Rollen für verschiedene Benutzer in Ihrem Unternehmen erforderlich sein können.
+## Onboarding-Erlebnis {#audience}
 
-Die folgende Abbildung veranschaulicht Ihre Onboarding-Tour, beginnend mit der Begrüßungs-E-Mail, die Ihr Systemadministrator erhält, und gipfelnd im Zugriff der Benutzer auf Cloud Manager für AEM as a Cloud Service.
+Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+Die Onboarding-Journey ist unten dargestellt und jeder Schritt im Journey wird in den folgenden Abschnitten ausführlich beschrieben.
 
-Siehe [Onboarding-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) , um mit dem Onboarding zu beginnen.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Bevor Sie sich eingehend mit der Onboarding-Journey befassen, sollten Sie den Abschnitt Einsteigerkonzepte lernen lesen, der folgende Themen behandelt:
->* [Systemadministrator](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Einführung in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM als Cloud Service-Team und Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Adobe-Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Diese Journey wurde für eine Systemadministratorperson entwickelt, die Anforderungen, Schritte und Ansätze beschreibt. Die Journey definiert zusätzliche Rollen, mit denen der Systemadministrator für ein erfolgreiches Projekt interagieren muss, aber die Sicht auf die Journey ist die eines Administrators.
 
+Siehe [Onboarding-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) , um mit dem Onboarding zu beginnen.
 
 ## [!DNL Experience Manager as a Cloud Service] Handbücher {#aem-guides}
 

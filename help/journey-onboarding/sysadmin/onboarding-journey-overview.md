@@ -3,24 +3,15 @@ title: Onboarding-Journey
 description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 7%
+source-wordcount: '401'
+ht-degree: 10%
 
 ---
 
 # Onboarding-Journey {#onboarding-jourrney}
-
-## Onboarding-Erlebnis {#audience}
-
-Beim Onboarding wird ein bestimmter [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM als Cloud Service für Ihr Unternehmen einrichten. Dazu gehört die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM als Cloud Service-Ressourcen zugreifen.
-
-Die Onboarding-Journey ist unten dargestellt und jeder Schritt im Journey wird in den folgenden Abschnitten ausführlich beschrieben.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Diese Journey wurde für eine Systemadministratorperson entwickelt, die Anforderungen, Schritte und Ansätze beschreibt. Die Journey definiert zusätzliche Rollen, mit denen der Systemadministrator für ein erfolgreiches Projekt interagieren muss, aber die Sicht auf die Journey ist die eines Administrators.
 
 ## Onboarding-Journey {#exploring-onboarding-journey}
 
