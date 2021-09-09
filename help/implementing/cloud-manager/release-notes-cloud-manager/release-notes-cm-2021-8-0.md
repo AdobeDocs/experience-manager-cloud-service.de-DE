@@ -2,8 +2,7 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 62%
@@ -48,5 +47,3 @@ Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.
 * Das anfängliche Onboarding schlug bei neuen Unternehmen mit sehr langen Namen fehl.
 
 * Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies nicht mehr dazu, dass eine der Ausführungen mit dem Fehler *Pipeline-Ausführungsstatus konnte nicht aktualisiert werden* fehlschlägt.
-
-

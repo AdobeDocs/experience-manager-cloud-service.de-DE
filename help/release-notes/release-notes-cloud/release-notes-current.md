@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 26%
+source-wordcount: '1630'
+ht-degree: 24%
 
 ---
 
@@ -122,12 +122,34 @@ Weitere Informationen finden Sie unter [Unterstützung für Miniaturansichten f�
 
 ## Cloud Manager  {#cloud-manager}
 
-In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.8.0 und 2021.7.0.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0 und 2021.8.0.
+
+## Veröffentlichungsdatum {#release-date-cm-sept}
+
+Die Version 2021.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. September 2021 veröffentlicht.
+Die nächste Version ist für den 7. Oktober 2021 geplant.
+
+### Neue Funktionen {#what-is-new-cm-sept}
+
+* Die Programmkarten auf der Landingpage von Cloud Manager und das zugehörige Erlebnis wurden aktualisiert.
+
+* Das Protokoll &quot;Codequalitätsschritt&quot;enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scanprozess.
+
+* Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
+
+* Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Übersichtsseite von Cloud Manager.
+
+* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 30 aktualisiert.
+
+### Fehlerbehebungen {#bug-fixes-sept}
+
+* Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, das die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
+
+* Falsche URL wurde kopiert, wenn die Menüoption URL kopieren auf dem Bildschirm Repositorys ausgewählt wurde.
 
 ## Veröffentlichungsdatum {#release-date-cm-aug}
 
 Die Version 2021.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. August 2021 veröffentlicht.
-Die nächste Version wird am 9. September 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-aug}
 
