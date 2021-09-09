@@ -2,7 +2,7 @@
 title: Eingestellte APIs
 description: Spezifische Versionshinweise für veraltete und entfernte APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
+source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
@@ -40,7 +40,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>com.day.cq.jcrclustersupport</td>
     <td>Verwenden der Discovery-API von Sling als Alternative</td>
     <td>2015</td>
-    <td>30.07.21</td>
+    <td>entfernt</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -58,7 +58,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>05.03.21</td>
-    <td>06.06.21</td>
+    <td>entfernt</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -70,7 +70,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>Benutzerdefinierte Persistenzmanager werden in AEM als Cloud Service nicht unterstützt.</td>
     <td>30.04.21</td>
-    <td>30.07.21</td>
+    <td>entfernt</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -88,7 +88,7 @@ Nachstehend finden Sie eine umfassende Liste veralteter AEM-APIs und des erwarte
     <td>org.apache.felix.systemready</td>
     <td>Es wird empfohlen, stattdessen die Apache Felix HealthCheck-API zu verwenden</td>
     <td>30.04.21</td>
-    <td>30.07.21</td>
+    <td>entfernt</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
