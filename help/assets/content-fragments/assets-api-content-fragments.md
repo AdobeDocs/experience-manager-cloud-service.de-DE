@@ -1,12 +1,12 @@
 ---
 title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
-feature: Inhaltsfragmente,Assets-HTTP-API
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,7 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
 >Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
@@ -29,7 +30,7 @@ Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern vo
 
 Die API ermöglicht es Ihnen, Adobe Experience Manager as a Cloud Service als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
-Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
+Zum Beispiel [Einzelseiten-Apps (SPA)](/help/implementing/developing/hybrid/introduction.md), Framework-basiert oder benutzerdefiniert, erfordern Inhalte, die über die HTTP-API bereitgestellt werden, oft im JSON-Format.
 
 [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) stellen eine sehr umfassende, flexible und anpassbare API bereit, die erforderliche Lesevorgänge für diesen Zweck durchführen kann und deren JSON-Ausgabe angepasst werden kann. Dazu sind jedoch Kenntnisse von AEM WCM (Web Content Management) für die Implementierung erforderlich, da sie in (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat direkten Zugriff auf dieses Wissen.
 
@@ -65,7 +66,6 @@ Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
 >[!NOTE]
->
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
@@ -148,8 +148,8 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
->
 
+>
 
 
 In Umgebungen mit bestimmten Authentifizierungsanforderungen wird OAuth empfohlen.

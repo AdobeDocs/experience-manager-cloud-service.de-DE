@@ -2,8 +2,8 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -24,8 +24,6 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 * Der Inhalt der angepassten Definition hat eine höhere Priorität als der des Originals (d. h. er *überlagert* oder *überschreibt* ihn).
 
 * Wo nötig, geben bei der Anpassung definierte [Eigenschaften](#properties) an, wie aus dem Original zusammengeführte Inhalte zu verwenden sind.
-
-<!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
@@ -49,6 +47,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths) abhängig.
 >
 >* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
+
 >
 >Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 
@@ -72,7 +71,7 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
    Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore` (  `String`)
 
    Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
@@ -121,7 +120,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 >
 >Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Daten in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
-### Nutzungsszenarien {#use-cases}
+### Anwendungsfälle {#use-cases}
 
 Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
@@ -242,17 +241,3 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->

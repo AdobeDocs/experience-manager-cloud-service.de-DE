@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -16,10 +16,6 @@ In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein
 * [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 * [Verwalten von Assets](/help/assets/manage-digital-assets.md) für weitere Informationen zu Standard-Assets.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Architektur {#architecture}
 
@@ -133,7 +129,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 * **Übersetzungen**
 
-   Inhaltsfragmente sind vollständig mit dem AEM-Übersetzungs-Workflow integriert. Auf Architekturebene bedeutet dies:
+   Inhaltsfragmente sind vollständig in den [AEM Übersetzungs-Workflow](/help/sites-cloud/administering/translation/overview.md) integriert. Auf Architekturebene bedeutet dies:
 
    * Die einzelnen Übersetzungen eines Inhaltsfragments sind separate Fragmente, z. B.:
 
