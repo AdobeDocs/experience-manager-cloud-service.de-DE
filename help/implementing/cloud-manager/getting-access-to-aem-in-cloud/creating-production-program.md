@@ -2,10 +2,10 @@
 title: 'Erstellen eines Produktionsprogramms '
 description: Erstellen eines Produktionsprogramms
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 92%
+source-wordcount: '238'
+ht-degree: 77%
 
 ---
 
@@ -41,9 +41,9 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Sobald Sie Ihre Programmkarte auf der Landingpage sehen, zeigen Sie mit der Maus darauf, um das Symbol „Cloud Manager“ auszuwählen und zur Seite **Übersicht über Cloud Manager** zu navigieren.
+1. Sobald Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie die **...** , um die für Sie verfügbaren Menüoptionen anzuzeigen. Wählen Sie **Cloud Manager** aus, wie in der folgenden Abbildung dargestellt, um zur Seite **Übersicht** von Cloud Manager zu navigieren.
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. Die Hauptkarte für Aktionsaufrufe zeigt dem Benutzer, wie er eine Umgebung, eine produktionsfremde Pipeline und schließlich eine Produktionspipeline erstellt.
    ![](assets/set-up-prod5.png)
