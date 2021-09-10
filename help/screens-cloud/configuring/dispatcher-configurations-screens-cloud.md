@@ -1,10 +1,10 @@
 ---
 title: Dispatcher-Konfigurationen in Screens as a Cloud Service
 description: Auf dieser Seite werden Dispatcher-Konfigurationen in Screens als Cloud Service beschrieben.
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 2%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +17,7 @@ In diesem Abschnitt werden die Dispatcher-Konfigurationen für Screens als Cloud
 
 Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröffentlichungsinstanzen in Screens as a Cloud Service zu.
 
-### Filter {#filters}
-
-## AEM Screens Filters
+### AEM Screens Filters {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröff
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## Cache-Regeln {#cache-rules}
+### Cache-Regeln {#cache-rules}
 
 * Fügen Sie `/statfileslevel "10"` zum Abschnitt `/cache` in `publish_farm.any`/ hinzu.
 
    >[!NOTE]
-   >Dies unterstützt das Zwischenspeichern von bis zu 10 Ebenen vom Cache-Basisverzeichnis und macht es möglich, bei der Veröffentlichung von Inhalten ungültig, anstatt alles zu invalidieren. Sie können diese Ebene ändern, je nachdem, wie tief Ihre Inhaltsstruktur ist.
+   >Diese Cache-Regel unterstützt die Zwischenspeicherung von bis zu 10 Ebenen vom Cache-Basisverzeichnis und macht die Veröffentlichung von Inhalten ungültig, anstatt alles zu invalidieren. Sie können diese Ebene ändern, je nachdem, wie tief Ihre Inhaltsstruktur eingerichtet ist.
 
 * Fügen Sie Folgendes zum Abschnitt `/invalidate` in `publish_farm.any` hinzu.
 
@@ -56,7 +54,7 @@ Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröff
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
