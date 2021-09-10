@@ -5,7 +5,7 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 94%
@@ -56,6 +56,13 @@ ht-degree: 94%
       + [Einrichten des Projekts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Grundlagen zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [Verwalten von Umgebungen](cloud-manager/manage-environments.md)
+   + Verwalten von Code {#managing-code}
+      + [Umgang mit Maven-Projektversionen](cloud-manager/managing-code/project-version-handling.md)
+      + [Repositorys in Cloud Manager](cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [Zugriff auf Repositorys](cloud-manager/managing-code/accessing-repos.md)
+      + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
+      + [Arbeiten mit Git-Repositorys aus mehreren Quellen](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [Enterprise Team Development-Setup für AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [Konfigurieren Ihrer CI/CD Pipeline](cloud-manager/configure-pipeline.md)
    + [Bereitstellen des Codes](cloud-manager/deploy-code.md)
    + Grundlegendes zu Testergebnissen – Cloud Services {#test-results}
@@ -95,13 +102,6 @@ ht-degree: 94%
       + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Überprüfen des IP-Zulassungslistenstatus](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ Verwalten von Code {#managing-code}
-   + [Umgang mit Maven-Projektversionen](cloud-manager/project-version-handling.md)
-   + [Repositorys in Cloud Manager](cloud-manager/cloud-manager-repositories.md)
-   + [Zugriff auf Repositorys](cloud-manager/accessing-repos.md)
-   + [Integrieren von Git mit Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-   + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Enterprise Team Development-Setup für AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + Entwickeln für AEM as a Cloud Service {#developing}
    + [Struktur von AEM-Projekten](developing/introduction/aem-project-content-package-structure.md)
    + [Repository-Strukturpaket von AEM-Projekten](developing/introduction/repository-structure-package.md)

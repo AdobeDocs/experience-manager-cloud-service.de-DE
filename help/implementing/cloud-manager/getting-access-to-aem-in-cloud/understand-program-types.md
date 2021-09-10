@@ -2,7 +2,7 @@
 title: Grundlegendes zu Programmen und Programmtypen
 description: Grundlegendes zu Programmen und Programmtypen – Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Das Cloud Manager-Programm wird automatisch mit seinem eigenen Git-Repository be
 
 Damit ein Benutzer auf das Git-Repository von Cloud Manager zugreifen kann, muss er einen Git-Client mit einem Befehlszeilen-Tool, einen eigenständigen visuellen Git-Client oder die IDE des Benutzers wie Eclipse, IntelliJ und NetBeans verwenden.
 
-Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/accessing-repos.md).
+Nachdem ein Git-Client eingerichtet wurde, können Sie Ihr Git-Repository über die Cloud Manager-Benutzeroberfläche verwalten. Weitere Informationen zum Verwalten von Git mithilfe der Cloud Manager-Benutzeroberfläche finden Sie unter [Zugriff auf Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Um mit der Entwicklung der AEM Cloud-Anwendung zu beginnen, muss eine lokale Kopie des Anwendungs-Codes erstellt werden, indem Sie ihn aus dem Cloud Manager-Repository an einen Speicherort auf dem lokalen Computer, auf dem jemand sein Repository erstellen möchte, auschecken.
 
