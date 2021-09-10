@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 96%
+source-wordcount: '1572'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    { /glob "*" /type "allow" }
    ```
 
-* Um zu verhindern, dass bestimmte Inhalte zwischengespeichert werden, setzen Sie die Cache-Steuerungskopfzeile auf *privat*. Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **secure** zwischengespeichert werden:
+* Um zu verhindern, dass bestimmte Inhalte im CDN **zwischengespeichert werden, setzen Sie die Cache-Control-Kopfzeile auf *private*.** Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **secure** im CDN zwischengespeichert werden:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 
    >[!NOTE]
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
+
+   >[!NOTE]
+   >Beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Caching-Regeln](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
