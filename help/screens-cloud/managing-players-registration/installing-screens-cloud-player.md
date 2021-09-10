@@ -1,13 +1,13 @@
 ---
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service installieren und konfigurieren.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # Installieren und Konfigurieren von Playern in Screens as a Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ Gehen Sie wie folgt vor, um den Player zu aktualisieren:
 
 ## Grundlegende Wiedergabe-Überwachung {#playback-monitoring}
 
-Der Player meldet verschiedene Wiedergabemetriken mit jeweils `ping` , die standardmäßig 30 Sekunden betragen. Basierend auf den Metriken können Sie verschiedene Edge-Fälle erkennen, wie z. B. festes Erlebnis, leerer Bildschirm und Planungsprobleme. Dadurch können Sie Probleme auf dem Gerät verstehen und beheben und so Untersuchungen und Korrekturmaßnahmen beschleunigen.
+Der Player meldet verschiedene Wiedergabemetriken mit jeweils `ping` , die standardmäßig 30 Sekunden betragen. Basierend auf diesen Metriken können wir verschiedene Edge-Fälle wie festes Erlebnis, leerer Bildschirm und Planungsprobleme erkennen. Dadurch können wir Probleme auf dem Gerät verstehen und beheben und so mit Ihnen eine Untersuchung und Korrekturmaßnahmen beschleunigen.
 
-Die grundlegende Wiedergabe-Überwachung in einem AEM Screens-Player ermöglicht Ihnen Folgendes:
+Die grundlegende Wiedergabe-Überwachung in einem AEM Screens-Player ermöglicht Folgendes:
 
 * Remote-Überwachung, ob ein Player Inhalte ordnungsgemäß wiedergibt.
 
@@ -80,9 +80,11 @@ Im Folgenden finden Sie einige Einschränkungen bei der grundlegenden Wiedergabe
 
 * Der Player meldet dem Server seinen eigenen Wiedergabestatus, sodass eine aktive Verbindung erforderlich ist.
 
-* Die `isContentRendering`-Eigenschaft, die prüft, ob die GPU derzeit ressourcenintensiv ist, um standardmäßig aktiviert zu werden, und erfordert eine explizite Anmeldung über die Player-Voreinstellungen. Es wird empfohlen, es nicht zusammen mit Videos zu verwenden.
+* Die `isContentRendering`-Eigenschaft, die die GPU prüft, ist derzeit zu ressourcenintensiv, um standardmäßig aktiviert zu werden, und erfordert eine explizite Anmeldung von den Player-Voreinstellungen. Es wird empfohlen, es nicht zusammen mit Videos in der Produktion zu verwenden.
 
-* Diese Funktion wird für Sequenzkanäle unterstützt.
+* Diese Funktion wird nur für Sequenzkanäle unterstützt und deckt noch nicht den Anwendungsfall für interaktive Kanäle (SPA) ab.
+
+* Die Metriken sind noch nicht vollständig für unsere Kunden verfügbar. Wir arbeiten intensiv daran, in naher Zukunft einen dashboard-ähnlichen Berichterstellungs- und Warnmechanismus zu aktivieren.
 
 ## Wie geht es weiter {#whats-next}
 
