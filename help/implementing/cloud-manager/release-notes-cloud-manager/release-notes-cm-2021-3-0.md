@@ -1,12 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
-feature: Versionshinweise
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+feature: Release Information
+source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 85%
+source-wordcount: '447'
+ht-degree: 100%
 
 ---
 
@@ -18,18 +17,18 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. März 2021 veröffentlicht.
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 ### Neue Funktionen {#what-is-new}
 
 * Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
 
 * Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
-   * Fügen Sie Sites-Lösungen zu einem vorhandenen Programm mit Assets hinzu oder umgekehrt.
-   * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm mit sowohl Sites als auch Assets.
+   * Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.
+   * Entfernen von Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets umfasst.
    * Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 
-* Die Bezeichnung **AEM-Push-Updates** wird jetzt sowohl für die Bildschirme Pipeline-Ausführung als auch Aktivität angezeigt.
+* Die Bezeichnung **AEM-Push-Updates** wird jetzt sowohl für die Bildschirme „Pipeline-Ausführung“ als auch „Aktivität“ angezeigt.
 
 * Wenn eine Umgebung in den Ruhezustand versetzt wurde, aber auch ein AEM-Update verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
 
@@ -39,11 +38,11 @@ Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. M
 
 * Die Beschriftung **Version** wurde im Bildschirm zur Ausführung der Produktions-Pipeline in **Git-Tag** umbenannt.
 
-* Die Bezeichnungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden umbenannt, um ihr tatsächliches Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
+* Die Bezeichnungen, die das Verhalten definieren, wenn wichtige Metriken den definierten Schwellenwert nicht erreichen, wurden neu beschriftet, um ihr wahres Verhalten widerzuspiegeln: **Sofort abbrechen** und **Sofort genehmigen**.
 
-* Die Listen veralteter Klassen und Methoden wurden auf Grundlage von Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
+* Die Listen zum Entfernen von Klassen und Methoden wurden auf der Grundlage der Version `2021.3.4997.20210303T022849Z-210225` des AEM Cloud Service SDK aktualisiert.
 
-* Die Cloud Manager-Produktions-Pipeline enthält jetzt die Funktion [Benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+* Die Cloud Manager-Produktions-Pipeline umfasst jetzt [Testfunktionen für die benutzerdefinierte Benutzeroberflächen](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Fehlerbehebungen  {#bug-fixes}
 

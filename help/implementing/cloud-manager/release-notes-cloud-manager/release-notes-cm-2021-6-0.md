@@ -1,12 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
-feature: Versionshinweise
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+feature: Release Information
+source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 50%
+source-wordcount: '420'
+ht-degree: 53%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 50%
 Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
->Um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen, klicken Sie auf [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+>Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
 
 ## Veröffentlichungsdatum {#release-date}
 
