@@ -1,13 +1,13 @@
 ---
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # Implementierungsphase in Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -21,7 +21,7 @@ Die Implementierungsphase umfasst:
 
 Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen und zum Abschnitt **Implementierung** zu navigieren, wie in der folgenden Abbildung dargestellt.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) .
@@ -35,11 +35,11 @@ In diesem Abschnitt erhalten Sie Informationen zur Karte der Aktivität &quot;Lo
 
 1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Lokale Entwicklung** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. Ein Inhaltskarussell zeigt die relevanten Informationen für diese Phase der Migration-Journey an.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Verwenden der Code-Refaktorierungskarte {#code-refactoring}
@@ -50,7 +50,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Karte für die Code-Refaktorierung
 
 1. Klicken Sie auf die Schaltfläche **Überprüfen** auf der Aktivitätskarte **Code-Refaktorierung** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-4.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. Auf der Seite wird die Liste der Code-Refaktorierungs-Aktivitäten nach Schweregrad-Ebene angezeigt. Weitere Informationen erhalten Sie, wenn Sie auf die beiden hervorgehobenen Symbole klicken.
 
@@ -60,21 +60,16 @@ In diesem Abschnitt erfahren Sie, wie Sie die Karte für die Code-Refaktorierung
    * Dispatcher
    * Tests
 
-   Auf der Registerkarte **Übersicht** wird eine Liste der Code-Refaktorierungsaktivitäten angezeigt.
+>[!NOTE]
+>Lesen Sie den Inhalt in diesen Registerkarten, um einige zusätzliche Bereiche zu verstehen, die nicht von Best Practices Analyzer abgedeckt werden.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+Die Registerkarte **Dispatcher** enthält Informationen zur Struktur der Apache- und Dispatcher-Konfigurationen für AEM als Cloud Service sowie dazu, wie sie vor der Bereitstellung in Cloud-Umgebungen lokal validiert und ausgeführt werden. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
 
-   Die Registerkarte **Dispatcher** enthält Informationen zur Struktur der Apache- und Dispatcher-Konfigurationen für AEM als Cloud Service sowie dazu, wie sie vor der Bereitstellung in Cloud-Umgebungen lokal validiert und ausgeführt werden. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+Die Registerkarte **Testen** enthält Informationen zu Funktions-, Erlebnis-Audit- und UI-Tests.
 
-   Die Registerkarte **Testen** enthält Informationen zu Funktions-, Erlebnis-Audit- und UI-Tests.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >Lesen Sie außerdem den Inhalt auf den Registerkarten der Seite, um mehr über einige zusätzliche Bereiche zu erfahren, die nicht von Best Practices Analyzer abgedeckt werden.
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service Deployment Card verwenden {#aem-as-a-cloud-service-deployment}
@@ -85,11 +80,11 @@ In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte AEM as a Cloud Se
 
 1. Klicken Sie auf die Schaltfläche **Anzeigen** auf der Aktivitätskarte **AEM als Cloud Service-Bereitstellung** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Ein Inhaltskarussell zeigt die relevanten Informationen für diese Phase der Migration-Journey an.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Verwenden der Content Transfer Card {#content-transfer}
@@ -100,14 +95,14 @@ In diesem Abschnitt erfahren Sie mehr über die Karte der Aktivität &quot;Inhal
 
 1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Aktivitätskarte **Inhaltstransfer** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. Ein Inhaltskarussell zeigt die relevanten Informationen für diese Phase der Migration-Journey an.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
-   >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) , bevor Sie das Content Transfer Tool verwenden.
+   >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de) , bevor Sie das Content Transfer Tool verwenden.
 
 ### Schätzen der Content Transfer Time {#calculating}
 
