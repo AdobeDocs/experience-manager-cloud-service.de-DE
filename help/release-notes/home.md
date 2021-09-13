@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 53%
 
 ---
@@ -32,7 +32,7 @@ Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager
 
 Vorbereitung auf eine Version:
 
-1. Markieren Sie Ihre Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) und markieren Sie Ihre Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
+1. Markieren Sie Ihre Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) und markieren Sie Ihre Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
 1. Lesen Sie die Versionshinweise: Lesen Sie die [aktuellen Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md) , um sich mit den Release- und Vorabversionsfunktionen vertraut zu machen.
 1. Auf neue Funktionen zugreifen und diese ausprobieren: Aktivieren Sie den Kanal [Vorabversion](/help/release-notes/prerelease.md) in Ihren Nicht-Produktionsumgebungen und versuchen Sie, die Funktionen in Ihren benutzerdefinierten Umgebungen zu bewerten.
 1. Trainieren von Benutzern: Verwenden Sie Dokumentations- und Experience League-Ressourcen, um Anwender auf die neuesten Funktionen vertraut zu machen.

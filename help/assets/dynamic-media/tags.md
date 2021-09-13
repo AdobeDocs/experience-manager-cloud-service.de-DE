@@ -1,13 +1,13 @@
 ---
 title: Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Experience Platform Tags
 description: Erfahren Sie mehr über die Dynamic Media Viewer-Erweiterung für Experience Platform-Tags und Dynamic Media-Viewer 5.13. Mit dieser Erweiterung können Kunden von Adobe Analytics und Platform-Tags Ereignisse und Daten verwenden, die für die Dynamic Media-Viewer in ihrer Experience Platform-Tags-Konfiguration spezifisch sind.
-feature: Asset-Berichte
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
-ht-degree: 55%
+source-wordcount: '6675'
+ht-degree: 58%
 
 ---
 
@@ -25,7 +25,7 @@ Diese Integration ermöglicht Ihnen, die Nutzung von Dynamic Media Viewers auf I
 
 Weitere Informationen zu Adobe-Erweiterungen oder Drittanbietererweiterungen finden Sie unter [Adobe-Erweiterungen](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) im Benutzerhandbuch zu Experience Platform-Tags.
 
-**Dieses Thema ist für Folgendes gedacht:** Site-Administratoren, Entwickler im Adobe Experience Manager-Programm und Mitarbeiter im Betrieb.
+**Dieses Thema richtet sich an:** Website-Administratoren, Entwickler für das Adobe Experience Manager-Programm und Anwender.
 
 ### Einschränkungen der Integration {#limitations-of-the-integration}
 
@@ -117,7 +117,7 @@ Die folgende Beispielkonfiguration in Experience Platform Tags zeigt, wie ein As
 
    ![image2019-3](assets/image2019-3.png)
 
-1. Die resultierende Regelkonfiguration sieht wie folgt aus:
+1. Die daraus resultierende Regelkonfiguration sieht wie folgt aus:
 
    ![image2019-4](assets/image2019-4.png)
 
@@ -231,7 +231,7 @@ Das oben aufgestellte Beispiel wirkt sich auch auf die Lebensdauer des Datenelem
 
 In jedem Fall werden Werte von Datenelementen, die von Dynamic Media Viewers gesteuert werden, nicht im lokalen Speicher oder auf dem Server gespeichert. Stattdessen werden sie nur in der Client-seitigen Experience Platform-Tags-Bibliothek beibehalten. Die Werte solcher Datenelemente verschwinden, wenn die Web-Seite neu geladen wird.
 
-Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). Datenelemente, die die Dynamic Media-Viewers-Erweiterung verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
+Im Allgemeinen unterstützt der Datenelement-Editor eine [Festlegung der Speicherdauer](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). Datenelemente, die die Dynamic Media-Viewers-Erweiterung verwenden, unterstützen jedoch als Speicherdauer nur die Option **[!UICONTROL Ohne]**. Das Festlegen eines anderen Werts ist in der Benutzeroberfläche möglich, in diesem Fall wird jedoch das Verhalten des Datenelements nicht definiert. Die Erweiterung verwaltet den Wert des Datenelements selbst: das Datenelement, das den Wert des Viewer-Ereignisarguments während des gesamten Lebenszyklus des Viewers beibehält.
 
 ### Über Regeln in der Dynamic Media-Viewers-Erweiterung {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -399,7 +399,7 @@ In der folgenden Tabelle sind die Dynamic Media-Viewer-Ereignisse sowie die unte
 
 ## Alle Integrationselemente konfigurieren {#configuring-all-the-integration-pieces}
 
-**Voraussetzungen**
+**VORAUSSETZUNGEN**
 
 Adobe empfiehlt, dass Sie die gesamte Dokumentation vor diesem Abschnitt gründlich durchlesen, damit Sie die vollständige Integration verstehen.
 
@@ -439,11 +439,11 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 1. Wählen Sie rechts oben auf der Seite „Adobe Analytics“ rechts neben dem Feld **[!UICONTROL Berichte durchsuchen]** die gewünschte Report Suite aus der Dropdown-Liste. Wenn mehrere Report Suites verfügbar sind und Sie nicht sicher sind, welche verwendet werden soll, wenden Sie sich an Ihren Adobe Analytics-Administrator, um sich bei der Auswahl der zu verwendenden Report Suite helfen zu lassen.
 
-   Im folgenden Beispiel hat ein Benutzer eine Report Suite mit dem Namen *DynamicMediaViewersExtensionDoc* erstellt und aus der Dropdown-Liste ausgewählt. Der Name der Report Suite ist nur ein Beispiel. Sie entscheiden selbst, welchen Report Suite-Namen Sie auswählen.
+   In der folgenden Abbildung hat ein Benutzer eine Report Suite mit dem Namen *DynamicMediaViewersExtensionDoc* erstellt und aus der Dropdown-Liste ausgewählt. Der Name der Report Suite ist nur ein Beispiel. Sie entscheiden selbst, welchen Report Suite-Namen Sie auswählen.
 
    Wenn keine Report Suite verfügbar ist, müssen Sie oder Ihr Adobe Analytics-Administrator eine erstellen, bevor Sie mit der Konfiguration fortfahren können.
 
-   Siehe [Berichte und Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=de#manage-report-suites) und [Report Suite erstellen](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
+   Siehe [Berichte und Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=de#manage-report-suites) und [Report Suite erstellen](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
 
    In Adobe Analytics werden Report Suites unter **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** verwaltet.
 
@@ -464,7 +464,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
    Um eine neue Custom Traffic-Variable zu aktivieren, gehen Sie in Adobe Analytics in der Symbolleiste zu **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Report Suite Manager]** den richtigen Bericht aus und gehen Sie dann in der Symbolleiste zu **[!UICONTROL Einstellungen bearbeiten]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic-Variablen]**.
-1. Wählen Sie eine nicht verwendete Variable aus, geben Sie ihr einen beschreibenden Namen ( **[!UICONTROL Viewer-Asset (prop 30)]**) und ändern Sie dann das Kombinationsfeld in der Spalte &quot;Aktiviert&quot;in &quot;Aktiviert&quot;.
+1. Wählen Sie hier eine nicht verwendete Variable, geben Sie ihr einen beschreibenden Namen (**[!UICONTROL Viewer-Asset (prop 30)]**) und setzen Sie das Kombinationsfeld in der Spalte „Aktiviert“ auf „Aktiviert“.
 
    Der folgende Screenshot ist ein Beispiel für eine Custom Traffic-Variable ( **[!UICONTROL prop30]**) zur Verfolgung eines vom Viewer verwendeten Asset-Namens:
 
@@ -490,7 +490,7 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, wird Folgendes für die
 
 * Erstellung einer neuen Eigenschaft, um alle Konfigurationen zusammenzuhalten.
 * Installation und Einrichtung von Erweiterungen. Der Client-seitige Code aller in der Eigenschaft installierten Erweiterungen wird in einer Bibliothek kompiliert. Diese Bibliothek wird später von der Web-Seite verwendet.
-* Konfiguration von Datenelementen und Regeln. Diese Konfiguration definiert, welche Daten von den Dynamic Media-Viewern abgerufen werden sollen, wann die Tracking-Logik Trigger werden soll und wo die Daten des Viewers in Adobe Analytics gesendet werden sollen.
+* Konfiguration von Datenelementen und Regeln. Diese Konfiguration bestimmt darüber, welche Daten von den Dynamic Media-Viewern erfasst werden, wann die Tracking-Logik ausgelöst wird und wohin die Daten des Viewers in Adobe Analytics gesendet werden.
 * Veröffentlichen der Bibliothek.
 
 **So konfigurieren Sie Experience Platform Tags für die Integration:**
@@ -747,9 +747,8 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
    * **[!UICONTROL Titel]**: Geben Sie einen beschreibenden Kontonamen ein.
    * **[!UICONTROL Autorisierungs-Server]**: Kehren Sie zur Seite mit den Integrationsdetails zurück, die Sie zuvor geöffnet haben. Wählen Sie die Registerkarte **[!UICONTROL JWT]** aus. Kopieren Sie den Servernamen - ohne Pfad - wie unten hervorgehoben.
 
-(Der Beispiel-Server-Name dient nur zu Erläuterungszwecken.)   Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
-Beispiel: `https://ims-na1.adobelogin.com/`
-(Der Beispiel-Server-Name dient nur zu Erläuterungszwecken.)
+(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)   Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
+Beispiel: `https://ims-na1.adobelogin.com/`(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _Seite mit Integrationsdetails - Registerkarte „JWT“_
@@ -772,7 +771,7 @@ Beispiel: `https://ims-na1.adobelogin.com/`
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
    _Seite mit Integrationsdetails – Registerkarte „JWT“_
 
-   Die Seite Konto mit allen ausgefüllten Feldern wird in etwa wie folgt angezeigt:
+   Die Kontoseite mit allen ausgefüllten Feldern sieht in etwa wie folgt aus:
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
