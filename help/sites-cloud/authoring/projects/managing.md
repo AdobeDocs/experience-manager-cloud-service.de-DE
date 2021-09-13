@@ -2,10 +2,10 @@
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren.
 
 In der **Projektekonsole** können Sie Ihre Projekte aufrufen und bearbeiten:
 
-![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
 In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projekt verknüpfen sowie Projekte oder Ressourcenlinks löschen. Sie können eine Kachel öffnen, um den Projektinhalt anzuzeigen oder Elemente hinzuzufügen. In diesem Thema werden diese Vorgehensweisen beschrieben.
 
@@ -40,7 +40,7 @@ Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisc
 
 1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniaturansicht** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
 
-   ![Hinzufügen von Projektdetails](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Hinzufügen von Projektdetails](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tippen oder klicken Sie auf **Erstellen**. Daraufhin werden Sie gefragt, ob Sie ein neues Projekt öffnen oder zur Konsole zurückkehren möchten.
 
@@ -85,13 +85,11 @@ In einigen Kacheln benötigen Sie möglicherweise mehr als ein Element. Dies ist
 
 So fügen Sie einer Kachel Elemente hinzu:
 
-1. Navigieren Sie in **Projekte** zum Projekt und klicken Sie in der Kachel, der Sie ein Element hinzufügen möchten, auf das Plussymbol.
+1. Navigieren Sie in **Projekte** zum Projekt und tippen oder klicken Sie auf den Pfeil nach unten auf der Kachel, der Sie ein Element hinzufügen möchten.
 
-   ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Fügen Sie der Kachel auf dieselbe Weise ein Element hinzu wie bei der Erstellung einer neuen Kachel. Projektkacheln werden [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschrieben. In diesem Beispiel wurde ein Workflow hinzugefügt.
-
-   ![Ein weiteres Element, das zu einer Kachel hinzugefügt wird](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Öffnen einer Kachel {#opening-a-tile}
 
@@ -99,19 +97,17 @@ Manchmal kann es nötig sein zu wissen, welche Elemente in einer aktuellen Kache
 
 Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern können:
 
-1. Tippen/klicken Sie in der Projektekonsole auf die Auslassungszeichen (...).
+1. Tippen/klicken Sie in der Projektekonsole auf die Auslassungszeichen (...). unten auf der Karte angezeigt.
 
-   ![Öffnen einer Kachel](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Öffnen einer Kachel](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. In AEM wird eine Liste mit den Elementen in der Kachel angezeigt. Sie können den Auswahlmodus aktivieren, um die Elemente zu ändern oder zu löschen.
 
-   ![Geöffnete Kachel](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Geöffnete Kachel](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Anzeigen von Projektstatistiken {#viewing-project-statistics}
 
-Um Projektstatistiken anzuzeigen, klicken Sie in der **Projektekonsole** auf **Statistikansicht anzeigen**. Der Fortschrittsstatus für jedes Projekt wird angezeigt. Klicken Sie erneut auf **Statistikansicht anzeigen**, um zur **Projektekonsole** zurückzukehren.
-
-![Projektstatistiken](/help/sites-cloud/authoring/assets/projects-stats.png)
+Sie können Projektstatistiken in der Konsole **Projekte** anzeigen.
 
 ### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
 
@@ -138,12 +134,11 @@ So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 1. Öffnen Sie das Projekt in der **Projektekonsole** und suchen Sie die Kachel **Projektinformationen**.
 
    >[!NOTE]
-   >
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).
 
-   ![Aktivieren eines Projekts](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Aktivieren eines Projekts](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Tippen/klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.

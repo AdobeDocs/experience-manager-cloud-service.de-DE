@@ -1,13 +1,13 @@
 ---
 title: Multi Site Manager und Übersetzung
 description: Erfahren Sie, wie Sie Ihre Inhalte projektübergreifend wiederverwenden und mehrsprachige Websites in AEM verwalten können.
-feature: Verwalten
+feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '410'
+ht-degree: 90%
 
 ---
 
@@ -21,6 +21,10 @@ Multi Site Manager und Übersetzungs-Tools von Adobe Experience Manager vereinfa
    * [Übersetzen von Inhalten für mehrsprachige Sites](translation/overview.md)
 
 Diese beiden Funktionen können kombiniert und für [internationale, mehrsprachige](#multinational-and-multilingual-sites) Websites eingesetzt werden.
+
+>[!TIP]
+>
+>Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
 
 ## Internationale, mehrsprachige Websites {#multinational-and-multilingual-sites}
 
@@ -55,5 +59,5 @@ Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprachstämme hinweg 
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
 >* [Best Practices für MSM](msm/best-practices.md)
-* [Best Practices für die Übersetzung](translation/best-practices.md)
+>* [Best Practices für die Übersetzung](translation/best-practices.md)
 

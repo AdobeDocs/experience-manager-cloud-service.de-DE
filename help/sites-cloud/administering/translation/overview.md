@@ -1,13 +1,13 @@
 ---
 title: Übersetzen von Inhalten für mehrsprachige Sites
 description: Verschaffen Sie sich einen Überblick darüber, wie Inhalte für mehrsprachige Sites übersetzt werden.
-feature: Sprachkopie
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 86%
 
 ---
 
@@ -17,6 +17,10 @@ Automatisieren Sie die Übersetzung von Seiteninhalten und Assets, um mehrsprach
 
 * **Menschliche Übersetzung:** Inhalte werden an Ihren Übersetzungsdienstleister gesendet und von professionellen Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
 * **Maschinelle Übersetzung:** Der maschinelle Übersetzungs-Service übersetzt sofort Ihre Inhalte.
+
+>[!TIP]
+>
+>Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
 
 Die Übersetzung der Inhalte umfasst die folgenden Schritte:
 

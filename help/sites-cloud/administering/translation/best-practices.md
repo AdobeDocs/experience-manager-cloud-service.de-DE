@@ -1,17 +1,21 @@
 ---
 title: Best Practices für die Übersetzung
 description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungs-Teams von Adobe.
-feature: Sprachkopie
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 95%
 
 ---
 
 # Best Practices für die Übersetzung {#translation-best-practices}
+
+>[!TIP]
+>
+>Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
 
 ## Allgemein {#general}
 

@@ -1,15 +1,15 @@
 ---
 solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
-sub-product: Inhaltserstellung in AEM as a Cloud Service
+sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Inhaltserstellung in AEM as a Cloud Service
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
-feature: Authoring –
+feature: Authoring
 role: User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 99%
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 
@@ -94,6 +94,7 @@ ht-degree: 99%
          + [Best Practices für MSM](administering/msm/best-practices.md)
          + [Fehlerbehebung und häufig gestellte Fragen](administering/msm/troubleshooting.md)
       + Übersetzung {#translation}
+         + [Journey der Übersetzungsdokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [Übersetzen von Inhalten für mehrsprachige Sites](administering/translation/overview.md)
          + [Vorbereiten von Inhalten für die Übersetzung](administering/translation/preparation.md)
          + [Verwalten von Übersetzungsprojekten](administering/translation/managing-projects.md)

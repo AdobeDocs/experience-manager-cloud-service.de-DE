@@ -1,19 +1,23 @@
 ---
 title: Vorbereiten von Inhalten für die Übersetzung
 description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
-feature: Sprachkopie
+feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
 # Vorbereiten von Inhalten für die Übersetzung {#preparing-content-for-translation}
 
 Bei mehrsprachigen Websites wird in der Regel ein Teil der Inhalte in mehreren Sprachen bereitgestellt. Die Website wird in einer Sprache verfasst und anschließend in weitere Sprachen übersetzt. Im Allgemeinen bestehen mehrsprachige Websites aus Zweigen von Seiten, wobei jeder Zweig die Seiten der Website in einer anderen Sprache enthält.
+
+>[!TIP]
+>
+>Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
 
 Die [WKND-Tutorial-Website](/help/implementing/developing/introduction/develop-wknd-tutorial.md) umfasst mehrere Sprachzweige und weist die folgende Struktur auf:
 
@@ -134,6 +138,7 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
 > Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
 

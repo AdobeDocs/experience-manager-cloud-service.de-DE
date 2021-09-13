@@ -2,10 +2,10 @@
 title: Arbeiten mit Aufgaben
 description: Aufgaben sind am Inhalt durchgeführte Arbeiten und werden in Projekten verwendet, um festzustellen, inwieweit aktuelle Aufgaben vollständig durchgeführt sind.
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '580'
-ht-degree: 100%
+source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb de
 * Prozentsatz der aktiven Aufgaben
 * Prozentsatz der überfälligen Aufgaben
 
-![Aufgabenkachel](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Aufgabenkachel](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Anzeigen oder Ändern von Aufgaben in einem Projekt {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -47,7 +47,7 @@ Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste
 
 #### Aufgabendetails {#task-details}
 
-Tippen/klicken Sie für weitere Informationen über eine bestimmte Aufgabe in der Aufgabenliste auf die Aufgabe und öffnen Sie „Aufgabendetails“.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und **Öffnen**.
 
 ![Aufgabendetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 

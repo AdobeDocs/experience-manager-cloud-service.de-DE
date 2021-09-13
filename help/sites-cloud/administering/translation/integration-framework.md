@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
 description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
-feature: Sprachkopie
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ Das Framework für die Übersetzungsintegration integriert Übersetzungsdienstle
 1. [Verknüpfen Sie die Cloud-Konfigurationen mit Ihren Seiten.](#configuring-pages-for-translation)
 
 Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhalten Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
+
+>[!TIP]
+>
+>Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 

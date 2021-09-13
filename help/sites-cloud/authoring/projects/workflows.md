@@ -2,10 +2,10 @@
 title: Arbeiten mit Projekt-Workflows
 description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '452'
+ht-degree: 99%
 
 ---
 
@@ -21,15 +21,14 @@ Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
 Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verfügbar:
 
-|  | **Einfaches Projekt** | **Medienprojekt** | **Übersetzungsprojekt** |
-|---|:-:|:-:|:-:|
-| Kopie anfordern |  | x |  |
-| Projekt-Genehmigung | x |  |  |
-| Launch anfordern | x |  |  |
-| Einstiegsseite anfordern | x |  |  |
-| E-Mail anfordern | x |  |  |
-| DAM-Sprachkopie erstellen&amp;ast; |  |  | x |
-| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  |  | x |
+|  | **Einfaches Projekt** | **Übersetzungsprojekt** |
+|---|:-:|:-:|
+| Projektbestätigungs-Workflow | x |  |
+| Launch anfordern | x |  |
+| Einstiegsseite anfordern | x |  |
+| E-Mail anfordern | x |  |
+| DAM-Sprachkopie erstellen&amp;ast; |  | x |
+| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  | x |
 
 >[!NOTE]
 >
@@ -47,19 +46,6 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow „Kopie anfordern“ {#request-copy-workflow}
-
-Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
-
-1. Wählen Sie in Ihrem Medienprojekt das **Plussymbol** in der Kachel **Workflows** aus und wählen Sie dann **Workflow „Kopie anfordern“** aus.
-1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung dazu ein, was Sie anfordern. Geben Sie bei Bedarf eine Zielwortanzahl, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
-
-   ![Workflow „Kopie anfordern“](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
-
-   ![Kopie anfordern hinzugefügt](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Workflow für Projektbestätigung {#project-approval-workflow}
 
 Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
@@ -70,8 +56,6 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
    ![Bestätigung anfordern](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
-
-   ![Bestätigung anfordern hinzugefügt](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Workflow „Launch anfordern“  {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ Mit diesem Workflow können Sie einen Launch anfordern.
 
 ## Workflow „Sprachkopie erstellen (und übersetzen)“ für Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen** werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert.
+Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen**[ werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert.](/help/assets/translate-assets.md)

@@ -2,10 +2,10 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 96%
+source-wordcount: '1259'
+ht-degree: 94%
 
 ---
 
@@ -83,7 +83,7 @@ Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken u
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf das Pluszeichen (+) oder auf **Erlebnis hinzufügen** klicken und den Erlebnistyp auswählen.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf den Pfeil nach unten tippen oder klicken und auf **Erlebnis hinzufügen** tippen und den Erlebnistyp auswählen.
 
 ![Erlebnis hinzufügen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
