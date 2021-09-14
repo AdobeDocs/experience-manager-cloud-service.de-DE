@@ -2,10 +2,10 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 93%
+source-wordcount: '1315'
+ht-degree: 84%
 
 ---
 
@@ -50,11 +50,10 @@ Die folgenden Sonderfälle werden protokolliert:
 
 * Wenn beim Auffüllen von Inhalten der Inhalt nicht übertragen wird, weil er sich seit der vorherigen Übertragung nicht geändert hat, werden auch die mit diesem Inhalt verknüpften Benutzer und Gruppen nicht übertragen, selbst wenn sich die Benutzer und Gruppen in der Zwischenzeit geändert haben. Dies liegt daran, dass Benutzer und Gruppen zusammen mit dem Inhalt, mit dem sie verknüpft sind, migriert werden.
 
-* Die Aufnahme schlägt in den folgenden Szenarien fehl:
+* Wenn die Ziel-AEM-Benutzerinstanz über einen Cloud Service mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
 
-1. Wenn die Ziel-AEM Cloud Service-Instanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer auf der Quell-AEM-Instanz verfügt.
+* Wenn zwei Benutzer in der Quell-AEM-Instanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und eine der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
 
-1. Wenn sich in der Quell-AEM-Instanz zwei Benutzer mit unterschiedlichen Benutzernamen, aber derselben E-Mail-Adresse befinden. Mit AEM as a Cloud Service können nicht zwei Benutzer dieselbe E-Mail-Adresse haben.
 
 ## Verwenden des User Mapping Tools {#using-user-mapping-tool}
 
