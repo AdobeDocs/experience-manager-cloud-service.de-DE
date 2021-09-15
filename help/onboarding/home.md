@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 60%
+source-wordcount: '521'
+ht-degree: 58%
 
 ---
 
@@ -35,9 +35,8 @@ Die unten abgebildete Onboarding-Journey wurde für einen Systemadministrator en
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Überblick](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über [!DNL Experience Manager as a Cloud Service], einschließlich Einführung, Terminologie usw. |
+| [Überblick](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über [!DNL Experience Manager as a Cloud Service], einschließlich Einführung, Terminologie, Architektur und so weiter. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von [!DNL Experience Manager as a Cloud Service], einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
-| [Grundlegende Konzepte](/help/core-concepts/home.md) | Dieses Handbuch bietet eine Einführung in die grundlegenden Konzepte von [!DNL Experience Manager as a Cloud Service] , einschließlich der Architektur des neuen Service. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu [!DNL Experience Manager as a Cloud Service]. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie [!DNL Experience Manager Sites] als Cloud Service erstellen und verwalten können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie [!DNL Experience Manager Assets as a Cloud Service] verwenden und verwalten. |
