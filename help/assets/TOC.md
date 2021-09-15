@@ -4,10 +4,10 @@ user-guide-title: Handbuch zu Assets as a Cloud Service
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 69%
+source-wordcount: '483'
+ht-degree: 68%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 69%
    + [Metadatenprofile](metadata-profiles.md)
    + [Metadatenschema](metadata-schemas.md)
    + [Verwalten von Video-Assets](manage-video-assets.md)
+   + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
    + [Herunterladen von Assets](download-assets-from-aem.md)
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 69%
    + [Authentifizierung für GraphQL-Remote-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
-   + [Generieren von FPO-Ausgabeformaten für Adobe InDesign](configure-fpo-renditions.md)
+   + [Nur für Platzierung generieren - Ausgabeformate](configure-fpo-renditions.md)
    + [Asset-Berichte](asset-reports.md)
    + [Kaskadierende Metadaten](cascading-metadata.md)
    + [XMP-Metadaten](xmp-metadata.md)
