@@ -2,13 +2,13 @@
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
 description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Benutzern mit Behinderungen helfen.
 contentOwner: AG
-feature: Barrierefreiheit,Asset-Management
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 100%
+source-wordcount: '1911'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # Funktionen für die Barrierefreiheit in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] ermöglicht es Erstellern und Herausgebern von Inhalten, beeindruckende Erlebnisse im Web bereitzustellen. Adobe ist bestrebt, Entwickler mit Behinderungen einzubeziehen, indem die Barrierefreiheit von [!DNL Experience Manager] verbessert wird. Die Software wird kontinuierlich verbessert, um die Bedürfnisse aller Arten von Benutzern zu erfüllen und die weltweiten Standards einzuhalten, die Personen mit visuellen, auditiven, Mobilitäts- oder anderen Beeinträchtigungen einschließen.
+[!DNL Adobe Experience Manager] Ersteller und Herausgeber von Inhalten können beeindruckende Erlebnisse im Internet bereitstellen. Adobe ist bestrebt, Entwickler mit Behinderungen einzubeziehen, indem die Barrierefreiheit von [!DNL Experience Manager] verbessert wird. Die Software wird kontinuierlich verbessert, um die Bedürfnisse aller Arten von Benutzern zu erfüllen und die weltweiten Standards einzuhalten, die Personen mit visuellen, auditiven, Mobilitäts- oder anderen Beeinträchtigungen einschließen.
 
 [!DNL Experience Manager] veröffentlicht Informationen zur Konformität, die die eingehaltenen Standards beschreiben, die Funktionen für Barrierefreiheit im Produkt skizzieren und den Grad der Konformität erläutern. Die Konformitätsberichte zur Barrierefreiheit helfen den Benutzern von [!DNL Experience Manager], den Grad der Einhaltung verschiedener Standards zu verstehen. Mit den in [!DNL Assets] vorgenommenen Verbesserungen können alle Benutzer die Benutzeroberflächen problemlos über Tastatur, Bildschirmleser, Lupen und andere Hilfstechnologien verwenden.
 

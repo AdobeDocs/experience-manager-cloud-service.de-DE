@@ -4,10 +4,10 @@ description: Wesentliche Änderungen an  [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 71%
+source-wordcount: '986'
+ht-degree: 69%
 
 ---
 
@@ -39,7 +39,7 @@ Mit Asset-Microservices generierte Standardausgabedarstellungen werden in abwär
 
 ## Entwickeln und Testen von Asset-Microservices {#asset-microservices}
 
-Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie [!DNL ImageMagick]) zu vermeiden, Konfigurationen zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt die Extraktion von Miniaturansichten in PSD- und PSB-Formaten möglich, die zuvor Drittanbieterlösungen wie [!DNL ImageMagick] erforderten. Sie können die komplexen Konfigurationen von [!DNL ImageMagick] nicht für die Konfiguration [!UICONTROL Verarbeitungsprofile] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und Verarbeitungsprofile für die [einfache Transkodierung von MP4-Videos](/help/assets/manage-video-assets.md#transcode-video).
+Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Methoden von Drittanbietern (wie [!DNL ImageMagick]) zu vermeiden, Konfigurationen zu vereinfachen und sofort einsatzbereite Funktionen für gängige Dateitypen bereitzustellen. Sie können jetzt eine [breite Palette von Dateitypen](/help/assets/file-format-support.md) verarbeiten, die mehr Formate standardmäßig abdecken, als dies mit früheren Versionen von Experience Manager möglich war. Beispielsweise ist jetzt die Extraktion von Miniaturansichten aus PSD- und PSB-Formaten möglich, die zuvor Drittanbieterlösungen wie [!DNL ImageMagick] erforderten. Sie können die komplexen Konfigurationen von [!DNL ImageMagick] nicht für die Konfiguration [!UICONTROL Verarbeitungsprofile] verwenden. Verwenden Sie [!DNL Dynamic Media] für die erweiterte FFmpeg-Transkodierung von Videos und Verarbeitungsprofile für die [einfache Transkodierung von MP4-Videos](/help/assets/manage-video-assets.md#transcode-video).
 
 Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] vernetzt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
@@ -52,7 +52,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Funktion oder Nutzungsszenario | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Kommentare |
 |-----|-----|-----|
 | [Ermittlung doppelter Assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funktioniert anders. | Hier erfahren Sie mehr zur [Funktionsweise in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=de). |
-| [FPO-Ausgabedarstellungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Funktioniert anders. |  |
+| [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) | Funktioniert anders. | Verarbeitungsprofile verwenden Asset-Microservices zum Generieren von FPO-Ausgabedarstellungen. In Experience Manager 6.5 war eine Drittanbieterlösung wie [!DNL ImageMagick] verfügbar, um die Ausgabedarstellungen zu generieren. |
 | Metadaten-Writeback | Funktioniert anders. | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Writeback wird von Asset-Microservices verarbeitet. |
 | Verarbeitung der mit Package Manager hochgeladenen Assets | Erfordert manuelles Eingreifen. | Veranlassen Sie die Neuverarbeitung manuell mit der Aktion **[!UICONTROL Assets erneut verarbeiten]**. |
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Weitere Informationen finden Sie unter [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=de). |
@@ -73,7 +73,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 >* [Liste veralteter und entfernter Funktionen](/help/release-notes/deprecated-removed-features.md)
 >* [Einführung](/help/overview/introduction.md)
 >* [Neue Funktionen und Unterschiede](/help/overview/what-is-new-and-different.md)
->* [Die Architektur](/help/overview/architecture.md)
+>* [Die Architektur](/help/core-concepts/architecture.md)
 >* [Wesentliche Änderungen](/help/release-notes/aem-cloud-changes.md)
 >* [Wesentliche Änderungen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
