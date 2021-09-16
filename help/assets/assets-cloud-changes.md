@@ -4,10 +4,10 @@ description: Wesentliche Änderungen an  [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 69%
+source-wordcount: '997'
+ht-degree: 68%
 
 ---
 
@@ -64,6 +64,7 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | [Bericht herunterladen](/help/assets/asset-reports.md) | Nicht unterstützt. | Vorerst ist der Download-Bericht mit Informationen zur Asset-Nutzung nicht verfügbar. Siehe [Bericht herunterladen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Vorlage für Produktfotos | Nicht unterstützt. | Siehe [Produkt-Fotoshooting-Vorlage in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Intelligente Übersetzung | Nicht unterstützt. | [Intelligente ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) Übersetzungen werden in  [!DNL Experience Manager] as a  [!DNL Cloud Service]nicht unterstützt. |
+| WebDAV | Nicht unterstützt. | Alternativen finden Sie unter [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) oder [Entwicklerreferenzmaterial](/help/assets/developer-reference-material-apis.md). |
 | Klassische Benutzeroberfläche | Nicht unterstützt. | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
 
 >[!MORELIKETHIS]
