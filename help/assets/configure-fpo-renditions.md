@@ -4,12 +4,13 @@ description: Generieren Sie mithilfe des Experience Manager Assets-Workflows und
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 8%
 
 ---
+
 
 # Nur für Platzierung generieren für Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Assets bietet Ausgabeformate, die nur für die Platzierung (FPO) verwendet werde
 Experience Manager as a Cloud Service bietet Cloud-native Asset-Verarbeitungsfunktionen zum Generieren der FPO-Ausgabedarstellungen. Verwenden Sie Asset-Microservices für die Generierung von Ausgabedarstellungen. Sie können die Ausgabegenerierung neu hochgeladener Assets und der in Experience Manager vorhandenen Assets konfigurieren.
 
 Im Folgenden werden die Schritte zum Generieren von FPO-Ausgabedarstellungen beschrieben:
+
 1. [Erstellen Sie ein Verarbeitungsprofil](#create-processing-profile).
+
 1. Konfigurieren Sie Experience Manager für die Verwendung dieses Profils, um [neue Assets zu verarbeiten](#generate-renditions-of-new-assets).
 1. Verwenden Sie die Profile, um [vorhandene Assets zu verarbeiten](#generate-renditions-of-existing-assets).
 

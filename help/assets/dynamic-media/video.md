@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 80%
 
 ---
 
-# Video{#video}
+# Video {#video}
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
@@ -37,7 +37,6 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
    * Verknüpfen Sie das Videoverarbeitungsprofil mit den Ordnern, in die Sie die Primärvideos hochladen.
 
       * [Anwenden eines Videoprofils auf Ordner](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Erfahren Sie mehr über [Digitale Assets organisieren](/help/assets/organize-assets.md).
    * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
@@ -54,9 +53,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
    * Video-Assets organisieren und durchsuchen
 
-      * [Organisieren digitaler ](/help/assets/organize-assets.md)
-AssetsWeitere Informationen zu  [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [Organisieren von digitalen Assets](/help/assets/organize-assets.md)
       * [Suchen nach Video-Assets ](/help/assets/search-assets.md#custompredicates) oder  [Suchen nach Assets](/help/assets/manage-digital-assets.md#search-assets)
    * Video-Assets vorab anzeigen und veröffentlichen
 
@@ -64,41 +61,27 @@ AssetsWeitere Informationen zu  [Best Practices für die Organisation Ihrer digi
          [Vorschau von ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) Videos oder Vorschau  [von Assets anzeigen](/help/assets/dynamic-media/previewing-assets.md)
          [Verwalten von Videoausgabeformaten](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Mit Videometadaten arbeiten
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * Bearbeiten Sie die Eigenschaften des Videos, wie den Titel, die Beschreibung, die Tags und die benutzerdefinierten Metadatenfelder:
+         [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * Arbeiten mit Videometadaten
+      * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
+      * [Metadatenschemas](/help/assets/metadata-schemas.md)
+   * Videos prüfen, genehmigen und mit Anmerkungen versehen und die vollständige Versionskontrolle behalten
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [Anmerkungen zu ](/help/assets/manage-video-assets.md#annotate-video-assets) Videos  [Anmerkungen zu Assets](/help/assets/manage-digital-assets.md#annotating)
 
-    * Bearbeiten der Eigenschaften von Video wie Titel, Beschreibung und Tags, benutzerdefinierte Metadatenfelder:
-    [Bearbeiten von Videoeigenschaften](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-metadata.md)
-    * [Metadatenschemata](/help/assets/metadata-schemas.md)
-    
-    * Videos überprüfen, genehmigen und kommentieren und Vollversion pflegen
-    
-    * [Anmerken von Videos](/help/assets/manage-video-assets.md#annotate-video-assets) oder [Anmerken von Assets](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [Erstellen einer Version](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [Starten eines Workflows für ein Asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-an-asset)
+      * [Erstellen einer Version](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [Starten eines Workflows für ein Asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [Ordner-Assets prüfen](/help/assets/bulk-approval.md)
+      * [Projekte](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [Überprüfen der Ordnerelemente](/help/assets/bulk-approval.md)
-    * [Projekte](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. **Veröffentlichen Sie die Videos in Dynamic Media** anhand der folgenden Schritte:
 
