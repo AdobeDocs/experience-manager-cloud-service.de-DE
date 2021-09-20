@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 100%
+source-wordcount: '2098'
+ht-degree: 84%
 
 ---
 
@@ -208,3 +208,12 @@ Wenn ein Index in einer späteren Version des Programms entfernt werden soll, k�
 ```
 
 Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen `damAssetLucene-8-custom-4`-Index hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
+
+## Indexoptimierungen
+
+Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Auch wenn die Indexoptimierung bei kleinen und mittleren Projekten keine große Rolle spielt, ist es für Projekte mit großen Inhalts-Repositorys und höherer Content-Geschwindigkeit unerlässlich, gezielte Effizienzverbesserungen für die Indizierung durchzuführen. Nicht optimierte Indizes und Fallback-Indizes sollten so weit wie möglich vermieden werden. Es wird empfohlen, proaktive Schritte zu unternehmen, um sicherzustellen, dass für alle Abfragen in AEM geeignete und optimierte Indizes verfügbar sind. Wenn kein geeigneter Index vorhanden ist, durchlaufen Abfragen das gesamte Repository. Solche Abfragen sollten durch Analyse der Protokolldateien identifiziert werden, um die Indexdefinitionen entsprechend zu optimieren, da eine durchgehende Abfrage des Repositorys die am wenigsten effiziente Abfragemethode in AEM ist. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) .
+
+### Lucene-Volltextindex auf AEM als Cloud Service
+
+Der Volltext-Index lucene2 indiziert standardmäßig alle Inhalte im AEM-Repository und ist daher aufgrund seiner Repository-abhängigen Größe äußerst ineffizient. Der Lucene-Volltext-Index wird seit September 2021 nicht mehr in AEM als Cloud Service bereitgestellt. Daher wird es nicht mehr auf der Produktseite in AEM als Cloud Service verwendet und sollte nicht zum Ausführen von Kundencode erforderlich sein. Für AEM als Cloud Service-Umgebungen mit gängigen Lucene-Indizes arbeitet Adobe mit Kunden einzeln für einen koordinierten Ansatz, um diesen Index auszugleichen und bessere, optimierte Indizes zu verwenden. Wenn entgegen allen Erwartungen ein Volltext-Index benötigt wird, um Abfragen in benutzerdefiniertem Code durchzuführen, sollte die Indexdefinition, die mit dem Lucene-Index vergleichbar ist, unter einem anderen Namen erstellt werden, um Konflikte bei der Wartung zu vermeiden.
+Diese Optimierung gilt nicht für andere AEM-Umgebungen, die On-Premise gehostet oder von Adobe Managed Services verwaltet werden, es sei denn, die Adobe empfiehlt etwas Anderes.
