@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 90%
+source-wordcount: '3063'
+ht-degree: 86%
 
 ---
 
@@ -286,6 +286,23 @@ Führen Sie dazu folgende Schritte durch:
 1. Klicken Sie im Dialogfeld **Migrationssatz löschen** auf **Löschen**, um den Löschvorgang zu bestätigen.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz {#running-ctt-on-publish}
+
+Es wird empfohlen, beim Verschieben von Inhalten auf eine Veröffentlichungsinstanz CTT auf der Veröffentlichungsinstanz der Quelle zu installieren, um Inhalte in die Veröffentlichungsinstanz der Zielgruppe zu verschieben. Befolgen Sie den unten beschriebenen empfohlenen Ansatz:
+
+* Verwenden Sie dieselbe CTT-Version, die in der -Autoreninstanz verwendet wurde.
+
+* Es muss nur ein einzelner Veröffentlichungsknoten migriert werden. Sie sollte vor Beginn der Extraktion aus dem Lastenausgleich entfernt werden.
+
+* Verwenden Sie beim Erstellen des Migrationssatzes die URL der Autorenumgebung AEMaaCS.
+
+* Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsstufe NICHT herunterskaliert (im Gegensatz zum Autor). Vermeiden Sie als Vorsichtsmaßnahme von Benutzern initiierte Schreibvorgänge wie:
+
+   * Inhaltsverteilung von der AEMaaCS-Autoreninstanz zur Veröffentlichung in dieser Umgebung
+   * Benutzersynchronisierung zwischen Veröffentlichungsinstanzen
+
 
 ## Fehlerbehebung {#troubleshooting}
 
