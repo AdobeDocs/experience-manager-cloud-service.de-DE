@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 87%
+source-wordcount: '2057'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,9 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
 
-1. Einschränkungen: Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs Lucene unterstützt.
+1. Beschränkungen:
+* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes vom Typ Lucene unterstützt.
+* Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 
 ## Verwendung {#how-to-use}
 
