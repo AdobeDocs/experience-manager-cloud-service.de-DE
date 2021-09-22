@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 44%
+source-wordcount: '1355'
+ht-degree: 61%
 
 ---
-
 
 # Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
 
@@ -68,76 +68,49 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 #### Neue Funktionen in Dynamic Media {#what-is-new-dm}
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md).
-
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die oben genannten Verbesserungen der intelligenten Bildbearbeitung lautet:
-   >
-   >* Nordamerika 24. Mai 2021 in NA,
-      >
-      >
-   * Europa, Naher Osten und Afrika, 25. Juni 2021,
-      >
-      >
-   * Asien-Pazifik 19. Juli 2021.
-
-
+* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator).
-
-   >[!NOTE]
-   >
-   >Die Veröffentlichungszeitleiste für die AVIF-Unterstützung lautet:
-   >
-   >* Nordamerika 10. Mai 2021,
-      >
-      >
-   * Europa, Naher Osten und Afrika 24. Mai 2021,
-      >
-      >
-   * Asien-Pazifik 24. Juni 2021.
-
 
 ## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
 * **Kontextuelle Hilfe**: Es wurde eine kontextuelle Hilfe für den Editor für adaptive Formulare, den Vorlageneditor und den Design-Editor hinzugefügt, um Autoren dabei zu helfen, verschiedene Funktionen von Editoren besser zu verstehen.
-* **Fehlermeldungen im Eigenschaftenbrowser**: Es wurden Fehlermeldungen für jede Eigenschaft im Browser Adaptive Forms Properties hinzugefügt. Diese Meldungen helfen beim Verständnis der zulässigen Werte für ein Feld.
+* **Fehlermeldungen im Eigenschaften-Browser**: Es wurden Fehlermeldungen für jede Eigenschaft im Eigenschaften-Browser für adaptive Formulare hinzugefügt. Diese Meldungen helfen beim Verständnis der zulässigen Werte für ein Feld.
 
-### Bevorstehende Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
+### Kommende Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service: Der Output-Dienst unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen und asynchronen Batch-Modus generieren. Dabei können Sie mit dem Output-Dienst Anwendungen mit folgenden Funktionen erstellen:
+Output as a Cloud Service: Der Output-Service unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu erstellen. Mit dem Service können Sie Dokumente im synchronen und asynchronen Batch-Modus generieren. Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
 
-* Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
-* Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
+* Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten.
+* Generieren von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
 
-Sie können an formscsbeta@adobe.com schreiben, um sich für das Betaprogramm zu registrieren.
+Sie können sich an formscsbeta@adobe.com wenden, um sich für das Beta-Programm zu registrieren.
 
 ### Fehlerbehebungen in [!DNL Forms] {#forms-bugs-fixed}
 
-* Wenn Sie in einem Schritt &quot;Aufgabe zuweisen&quot;von AEM Forms-Workflows das Standardsymbol der Aktionsschaltflächen durch ein Coral-Symbol ersetzen, funktioniert der Workflow nicht mehr und protokolliert eine Ausnahme. Der Workflow funktioniert wie erwartet, wenn Standardsymbole verwendet werden.
-* Wenn Sie auf der Layoutebene die Anzahl der Spalten ändern, die Bearbeitungsebene öffnen und einige Komponenten in ein Bedienfeld ziehen, werden im Inhaltsbereich des adaptiven Formulareditors quadratische blaue Felder angezeigt und der Editor reagiert nicht mehr.
-* Die Fehlermeldung einer Regeleditoroption im Zusammenhang mit der Bereitstellung der URL eines adaptiven oder externen Assets ist zu lang und nicht benutzerfreundlich.
+* Fehlerkorrektur – Wenn Sie in einem Schritt „Aufgabe zuweisen“ von AEM Forms-Workflows das Standardsymbol der Aktions-Schaltflächen durch ein Coral-Symbol ersetzen, funktioniert der Workflow jetzt und protokolliert keinen Ausnahmefehler mehr. Der Workflow funktioniert wie erwartet, wenn Standardsymbole verwendet werden.
+* Wenn Sie auf der Layout-Ebene die Anzahl der Spalten ändern, die Bearbeitungsebene öffnen und einige Komponenten in einen Bereich ziehen, werden im Inhaltsbereich des adaptiven Formulareditors keine quadratischen blauen Kästen mehr angezeigt und der Editor reagiert jetzt normal.
+* Die Fehlermeldung einer Regeleditoroption im Zusammenhang mit der Bereitstellung der URL eines adaptiven oder externen Assets ist jetzt benutzerfreundlich und nicht mehr zu lang.
 
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
 ### Veröffentlichungsdatum {#release-date-cm-may}
 
-Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2021.5.0 war der 6. Mai 2021.
-Die folgende Version wurde am 03. Juni 2021 veröffentlicht.
+Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
+Die nächste Version ist für den 3. Juni 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Package mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, in demselben bereitgestellten Package-Satz.
+* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, im selben bereitgestellten Paketsatz.
 
-* Der Repository-Endpunkt in der Public-API enthält jetzt die Git-URL.
+* Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
-* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarios.
+* Das von Cloud Manager-Anwendern heruntergeladene Bereitstellungsprotokoll ist nun aufschlussreicher und enthält Details zu Fehlern und Erfolgsszenarios.
 
 * Beim Pushen von Code an Adobe Git wurden treten jetzt keine Fehler mehr auf.
 
@@ -145,25 +118,25 @@ Die folgende Version wurde am 03. Juni 2021 veröffentlicht.
 
 * Das Erlebnis „Programm bearbeiten“ wurde aktualisiert.
 
-* In der Tabelle „Domain-Namen“ auf der Seite „Umgebungsdetails“ werden bis zu 250 Domain-Namen per Paginierung angezeigt.
+* In der Tabelle „Domain-Names“ auf der Seite mit den Umgebungsdetails werden bis zu 250 Domain-Namen mit Seitenumbruch angezeigt.
 
 * Auf der Registerkarte „Lösungen“ in den Workflows „Programm hinzufügen“ und „Programm bearbeiten“ wird die Lösung angezeigt, auch wenn für das Programm nur eine Lösung verfügbar ist.
 
-* Die Fehlermeldung im Build-Schrittprotokoll, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, ist jetzt klar.
+* Die Fehlermeldung, die im Build-Schritt-Protokoll aufgeführt wurde, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
 
 ### Fehlerbehebungen {#bug-fixes-cm-may}
 
 * Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner „aktiver“ Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Die Pipeline-Variablen-API markiert „gelöschte“ Variablen nicht nur mit dem Status **GELÖSCHT**, sondern entfernt sie jetzt tatsächlich.
+* Anstatt „gelöschte“ Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **GELÖSCHT**.
 
-* Einige Code-Smell-Qualitätsprobleme haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
+* Einige Code-Smell-Qualitätsprobleme haben sich fälschlicherweise auf die Zuverlässigkeitsbewertung ausgewirkt.
 
-* Dank der Unterstützung von Wildcard-Domains kann der Benutzer jetzt Wildcard-Domains über die Benutzeroberfläche senden.
+* Da Platzhalter-Domains nicht unterstützt werden, verhindert die Benutzeroberfläche das Senden von Platzhalter-Domains durch Anwender.
 
-* Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer war als eine Version, die am Vortag erstellt wurde.
+* Wenn die Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als die am Vortag erstellte Version.
 
-* Fehlerkorrektur – Während der Einrichtung des Sandbox-Programms wird jetzt, sobald das Projekt mit dem Beispiel-Code erfolgreich erstellt wurde, „Git verwalten“ als Link von der Hero-Karte auf der Übersichtsseite angezeigt.
+* Während des Setups des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode auf der Übersichtsseite „Git verwalten“ als Link von der Hero-Karte angezeigt.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
