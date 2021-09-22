@@ -1,10 +1,10 @@
 ---
 title: Cloud Manager-Repositorys
 description: Cloud Manager-Repositorys
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 87%
+source-wordcount: '595'
+ht-degree: 68%
 
 ---
 
@@ -39,9 +39,25 @@ Gehen Sie wie folgt vor, um Repositorys in Cloud Manager anzuzeigen und zu verwa
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Sie können das Repository auswählen und auf die Menüoptionen ganz rechts in der Tabelle klicken, um **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen** für Ihr Repository auszuführen, wie in der folgenden Abbildung dargestellt.
+1. Sie können das Repository auswählen und auf die Menüoptionen ganz rechts in der Tabelle klicken, um **Repository-URL** oder **Anzeigen und Aktualisieren** oder **Löschen** Ihres Repositorys zu kopieren, wie in der folgenden Abbildung dargestellt.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Löschen eines Repositorys {#delete-repo}
+
+Gehen Sie wie folgt vor, um ein Repository in Cloud Manager zu löschen:
+>[!NOTE]
+>Das Löschen eines Repositorys führt zu Folgendem:
+>1. Machen Sie den gelöschten Repository-Namen für neue Repositorys, die in Zukunft erstellt werden können, unbrauchbar. In diesem Fall wird eine Fehlermeldung wie unten dargestellt angezeigt:
+   >*Repository-Name muss innerhalb des Unternehmens eindeutig sein.*
+>1. Stellen Sie sicher, dass das gelöschte Repository in Cloud Manager nicht verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
+
+
+1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Repositorys** und gehen Sie zur Seite **Repositorys**.
+
+1. Wählen Sie das Repository aus und klicken Sie auf die Menüoptionen ganz rechts in der Tabelle. Klicken Sie auf **Löschen** , um das Repository zu löschen, wie in der folgenden Abbildung dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Unterstützung von Git-Untermodulen {#git-submodule-support}
