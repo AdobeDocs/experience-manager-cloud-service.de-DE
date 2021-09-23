@@ -2,10 +2,10 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
+source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 84%
+source-wordcount: '1375'
+ht-degree: 80%
 
 ---
 
@@ -63,11 +63,12 @@ Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
 1. Öffnen Sie mit Ihrer Adobe ID die [Adobe Developer Console](https://console.adobe.io).
 1. Erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes.
-1. Fügen Sie eine API hinzu.
-1. Wählen Sie „User Management API“.
+1. API hinzufügen - Klicken Sie auf **Zum Projekt hinzufügen** und wählen Sie **API** aus.
+1. Wählen Sie „User Management API“.  Möglicherweise müssen Sie Berechtigungen für diese Option erhalten.
 1. Erstellen Sie JWT-Anmeldedaten.
-1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).
-1. Erstellen Sie ein Zugriffs-Token (bzw. ein JWT-Token oder ein Inhaber-Token).
+1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).  Es gibt eine Schaltfläche, **Generieren Sie ein öffentliches/privates Keypair**, das dies für Sie tun wird.  Achten Sie darauf, sowohl die öffentlichen als auch die privaten Schlüssel zu speichern.
+1. Navigieren Sie zur User Management-API.
+1. Generieren Sie ein Zugriffstoken (oder Trägertoken), indem Sie den Inhalt des privaten Schlüssels in das Textfeld einfügen und auf **Generate Token** klicken.
 1. Speichern Sie alle diese Informationen wie **Client-ID**, **geheimen Client-Schlüssel**, **ID des technischen Kontos**, **E-Mail-Adresse des technischen Kontos**, **Organisations-ID** und **Zugriffs-Token** sicher.
 
 ## Benutzeroberfläche {#user-interface}
