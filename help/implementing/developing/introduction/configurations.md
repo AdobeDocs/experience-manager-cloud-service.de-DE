@@ -1,10 +1,10 @@
 ---
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 99%
 
 ---
 
@@ -33,10 +33,10 @@ Sowohl der AEM-Administrator als auch die Autoren können Konfigurationen als Ar
 
 Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werden.
 
-* [Cloud-Konfigurationen](/help/implementing/developing/introduction/configurations.md)
 * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
+* verschiedene Cloud-Konfigurationen
 
 ### Beispiel {#administrator-example}
 
@@ -76,13 +76,13 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](naming-conventions.md) angepasst.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
-   * [Cloud-Konfigurationen](/help/implementing/developing/introduction/configurations.md)
    * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
    * [Bearbeitbare Vorlagen](/help/sites-cloud/authoring/features/templates.md)
+   * verschiedene Cloud-Konfigurationen
 1. Tippen oder klicken Sie auf **Erstellen**.
 
 >[!TIP]
