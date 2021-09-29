@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 85%
 
 ---
@@ -73,7 +73,7 @@ Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:
 
 >[!NOTE]
 >
->Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0**, das es Ihnen unmöglich macht, `oak:index` zu Modulen von `<packageType>application</packageType>` hinzuzufügen. Um dieses Problem zu umgehen, verwenden Sie Version **1.0.4**.
+>Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0**, das es Ihnen unmöglich macht, `oak:index` zu Modulen von `<packageType>application</packageType>` hinzuzufügen. Sie sollten auf eine neuere Version dieses Plug-ins aktualisieren.
 
 Indexdefinitionen werden jetzt als benutzerdefiniert und versioniert gekennzeichnet:
 
