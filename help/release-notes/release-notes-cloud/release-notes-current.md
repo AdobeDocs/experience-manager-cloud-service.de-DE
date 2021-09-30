@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
+source-git-commit: 29af6f91f5aeb6ad971a35637f1635e0b038a57f
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 24%
+ht-degree: 39%
 
 ---
 
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 ## Veröffentlichungsdatum {#release-date}
 
 Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] aktuelle Version (2021.8.0) ist der 26. August 2021.
-Die folgende Version (2021.9.0) wurde am 30. September 2021 veröffentlicht.
+Die folgende Version (2021.9.0) wurde am 4. Oktober 2021 veröffentlicht.
 
 ## Release Video {#release-video}
 
@@ -66,15 +66,15 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * AEM Archetypprojekt für Forms as a Cloud Service enthält jetzt [Formulardatenmodelle für Microsoft Dynamics und Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
-* **Acroform-based Document of Record**: AEM Forms as a Cloud Service unterstützt die Verwendung von  [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de)  als Vorlage für Datensatzdokument neben XFA-basierten Formularvorlagen.
+* **AcroForm-basiertes Datensatzdokument**: AEM Forms as a Cloud Service unterstützt neben XFA-basierten Formularvorlagen die Verwendung von [Adobe Acrobat Form PDF (AcroForm PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für Datensatzdokumente (DoR, Documents of Record).
 
 * **Microsoft Azure-Datenspeicher-Connector**: Sie können jetzt das [Formulardatenmodell mit dem Microsoft Azure-Speicher verbinden](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=de). Dadurch können Sie Daten adaptiver Formulare abrufen und im Microsoft Azure-Speicher als BLOB speichern.
 
 ### Beta-Funktion von [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um In-Process-Daten in kundenverwalteten Repositorys zu externalisieren. Sie können beispielsweise
-   * Aktivieren Sie die Funktion zum Speichern und Fortsetzen von Forms Portal und speichern Sie adaptive Formularentwürfe in einem kundenverwalteten Datenrepository.
-   * Speichern Sie AEM Workflow-Daten (AEM Workflow-Variablen-Daten), die vertrauliche personenbezogene Daten (EPPD) enthalten, in einem kundenverwalteten Repository.
+* **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise
+   * die Speicher- und Wiederaufnahmefunktion von Forms Portal aktivieren und adaptive Formularentwürfe in einem vom Kunden verwalteten Daten-Repository speichern.
+   * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible persönliche Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=de) können Sie XDP-Vorlagen und XML-Daten kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit diesem Service können Sie Dokumente im synchronen Modus erstellen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
    * Generieren von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
@@ -85,9 +85,9 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen im Kanal für die [!DNL Forms]-Vorabversion {#prerelease-features-forms}
 
-* **Verwenden Sie Adobe Sign-Rollen in einem adaptiven Formular**: Die Service-Levels von Adobe Sign für Unternehmen und Unternehmen bieten die Möglichkeit, die Rollen von Vertragsempfängern über den Unterzeichner hinaus zu erweitern und so ihren Workflow-Anforderungen besser zu entsprechen. Sie können jetzt [jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform) zu konfigurieren, wobei &quot;Unterzeichner&quot;die Standardrolle ist.
+* **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular**: Die Service-Levels von Adobe Sign für Unternehmen bieten die Möglichkeit, die Rollen von Empfängern von Vereinbarungen über die unterschreibende Person hinaus zu erweitern und so ihren Workflow-Anforderungen besser zu entsprechen. Sie können jetzt [jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform), wobei „Unterschreibende Person“ die Standardrolle ist.
 
-* **Analytics für adaptive Forms**: Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft, informierte, datenbasierte Entscheidungen zu treffen, um das Endbenutzererlebnis zu verbessern.
+* **Analytics für adaptive Formulare**: Sie können jetzt das Endbenutzerverhalten über Adobe Analytics für adaptive Formulare erfassen und verfolgen, um Erkenntnisse über Endbenutzer zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Erlebnis der Endbenutzer zu verbessern.
 
 * **Verbinden Sie AEM Forms einfach mit Microsoft Dynamics und Salesforce.com**: Der Dienst bietet vordefinierte Datenquellenkonfigurationen und Datenmodelle für Microsoft Dynamics und Salesforce.com, wodurch es Entwicklern  [schneller und einfacher wird, Microsoft Dynamics und Salesforce.com als Datenquellen für ein adaptives Formular](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) zu konfigurieren.
 
@@ -127,7 +127,7 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 ## Veröffentlichungsdatum {#release-date-cm-sept}
 
 Die Version 2021.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. September 2021 veröffentlicht.
-Die nächste Version ist für den 7. Oktober 2021 geplant.
+Die nächste Version wird am 7. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cm-sept}
 
@@ -135,7 +135,7 @@ Die nächste Version ist für den 7. Oktober 2021 geplant.
 
 * Die Programmkarten auf der Landingpage von Cloud Manager und das zugehörige Erlebnis wurden aktualisiert.
 
-* Das Protokoll &quot;Codequalitätsschritt&quot;enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scanprozess.
+* Das „Code Quality Step“-Protokoll enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scan-Prozess.
 
 * Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
@@ -146,7 +146,7 @@ Die nächste Version ist für den 7. Oktober 2021 geplant.
 
 * Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, das die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
 
-* Falsche URL wurde kopiert, wenn die Menüoption URL kopieren auf dem Bildschirm Repositorys ausgewählt wurde.
+* Eine falsche URL wurde kopiert, wenn die Menüoption „URL kopieren“ auf dem Bildschirm „Repositorys“ ausgewählt wurde.
 
 ## Veröffentlichungsdatum {#release-date-cm-aug}
 
