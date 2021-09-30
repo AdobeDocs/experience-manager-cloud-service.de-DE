@@ -2,10 +2,10 @@
 title: Verwalten von Protokollen – Cloud Service
 description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 68%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
 Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
 
-Für das Herunterladen der Protokolldateien für eine bestimmte Umgebung würde der Befehl ungefähr folgendermaßen aussehen:
+Wenn Sie beispielsweise die Protokolldateien für eine bestimmte Umgebung herunterladen möchten, entspricht der Befehl ungefähr dem
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
