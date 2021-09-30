@@ -2,12 +2,12 @@
 title: Entwicklerreferenzen für  [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets-HTTP-API
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1430'
 ht-degree: 90%
 
 ---
@@ -30,7 +30,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | × | Nicht unterstützt. Nicht verwenden. |
 | - | Nicht verfügbar |
 
-| Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
+| Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
 | Original erstellen | verwalten | × | - | × | × | - |
@@ -185,7 +185,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz oder Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz oder Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 

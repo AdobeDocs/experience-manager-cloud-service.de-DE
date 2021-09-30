@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '3929'
 ht-degree: 99%
@@ -57,7 +57,7 @@ Weitere Informationen zur GraphQL-API finden Sie in den folgenden Abschnitten (n
 
    * [Einführung in GraphQL](https://graphql.org/learn)
 
-   * [GraphQL-Spezifikation](http://spec.graphql.org/)
+   * [GraphQL-Spezifikation](https://spec.graphql.org/)
 
 * Unter [graphql.com](https://graphql.com):
 

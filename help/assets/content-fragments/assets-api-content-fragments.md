@@ -3,9 +3,9 @@ title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfra
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1947'
 ht-degree: 98%
 
 ---
@@ -256,7 +256,7 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Weitere Informationen finden Sie in der [API-Referenz](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lesen/Bereitstellen {#read-delivery}
 
@@ -377,7 +377,7 @@ Wird zurückgegeben, wenn:
 
 Hier finden Sie detaillierte API-Referenzen:
 
-* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
