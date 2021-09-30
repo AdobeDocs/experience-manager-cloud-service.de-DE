@@ -2,10 +2,10 @@
 title: Grundlegendes zu Programmen und Programmtypen
 description: Grundlegendes zu Programmen und Programmtypen – Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
@@ -39,8 +39,8 @@ $ git clone {URL}
 Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 
 * Ein *Produktionsprogramm* wird erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
-Weitere Informationen finden Sie unter Einführung in Produktionsprogramme.
+Weitere Informationen finden Sie unter [Einführung in Produktionsprogramme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en).
 
 
 * Ein *Sandbox-Programm* wird normalerweise für Schulungen, Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt. Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen eingeführt, die ein Produktionsprogramm nicht hat. Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
-Weitere Informationen finden Sie unter Einführung in Sandbox-Programme.
+Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en).

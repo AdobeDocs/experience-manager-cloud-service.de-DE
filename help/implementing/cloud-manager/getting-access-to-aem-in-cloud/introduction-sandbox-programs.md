@@ -2,10 +2,10 @@
 title: 'Einführung in Sandbox-Programme '
 description: Einführung in Sandbox-Programme
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 91%
+source-wordcount: '320'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,10 @@ Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalieru
 
 Sandbox-Programme umfassen [!DNL Sites] und [!DNL Assets] und werden automatisch mit einem Git-Repository, einer Entwicklungsumgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird basierend auf dem AEM-Projektarchetyp mit einem Beispielprojekt gefüllt.
 
-Weitere Informationen zu den Programmtypen finden Sie unter Einführung zu Programmen und Programmtypen.
+>[!NOTE]
+>Benutzerdefinierte Domänen und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
+
+Weitere Informationen zu den Programmtypen finden Sie unter [Einführung zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en).
 
 ### Attribute von Sandbox-Programmen {#attributes-sandbox}
 
