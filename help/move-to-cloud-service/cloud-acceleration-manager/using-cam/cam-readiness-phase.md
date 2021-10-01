@@ -1,13 +1,13 @@
 ---
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 12%
 
 ---
-
 
 # Bereitschaftsphase in Cloud Acceleration Manager {#readiness-phase-cam}
 
@@ -22,11 +22,11 @@ Gehen Sie wie folgt vor, um zur Bereitschaftsphase zu navigieren:
 
 1. Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Navigieren Sie zum Abschnitt **Bereitschaft** , wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Weitere Informationen finden Sie unter Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager .
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
 1. Klicken Sie auf die Schaltfläche **Überprüfen** in der Karte **Best Practices Analysis** .
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Führen Sie diese Schritte aus, um Best Practices Analyzer (BPA) herunterzuladen.
 
@@ -53,11 +53,14 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
 1. Klicken Sie auf **Laden Sie den neuen Bericht** hoch, um den BPA-Bericht in CAM hochzuladen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >Der Bericht kann nicht hochgeladen werden, wenn Sie sich im Inkognito-Modus des Browsers befinden.
 
 1. Nachdem Sie einen neuen Bericht hochgeladen haben, wird der Bericht Best Practices-Analyse angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Bericht zu Best Practices für die Analyse](#analysis-report) .
 
@@ -68,7 +71,7 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
 Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report an:
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Jede Karte bietet folgende Möglichkeiten:
@@ -81,21 +84,21 @@ Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report
 
 Die Karte **Berichteigenschaften** enthält Informationen zu Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum und Adobe Experience Manager (AEM)-Details.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Berichtübersicht {#report-overview}
 
 Diese Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft zur Umstellung auf AEM als Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
 Wenn Sie auf diesen Bericht klicken, wird der Tab **Bericht** geöffnet.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
 Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Unter [Interpretieren des Berichts &quot;Best Practices Analyzer&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) erfahren Sie mehr über die Kategorien von Befunden und die Wichtigkeitsstufen.
@@ -120,7 +123,7 @@ Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
 * Bewertung
 * Überlegungen zur Inhaltsmigration
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Verwenden der Planungs- und Einrichtungskarte {#planning-setup}
 
@@ -128,11 +131,11 @@ In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
 
 1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Planung und Einrichtung**. Diese Karte enthält alle relevanten Inhalte, die Ihnen bei der Planung und Einrichtung Ihrer AEM helfen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. In einem Inhaltskarussell werden alle relevanten Informationen für diese Phase der Migration-Journey angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Wie geht es weiter {#whats-next}
 
