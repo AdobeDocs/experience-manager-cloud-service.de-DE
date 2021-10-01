@@ -2,9 +2,9 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2152'
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+workflow-type: tm+mt
+source-wordcount: '2154'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 >
 >Sie können diese Tour überspringen und jederzeit wiederholen, indem Sie sie im Menü **Seiteninformationen** auswählen.
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
@@ -269,6 +269,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Zielsetzung:](/help/sites-cloud/authoring/personalization/targeted-content.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem früheren Zeitpunkt aufgewiesen hat.
 * [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
+* [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
 * [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Veröffentlichungsumgebung oder zur Navigation anhand der Links im Inhalt.
 * [Anmerken](/help/sites-cloud/authoring/fundamentals/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 
@@ -282,8 +283,8 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
->
 
+>
 
 
 ## Pfadauswahl {#path-selection}
@@ -304,7 +305,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ![Schaltfläche „Auswahl-Dialogfeld öffnen“](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Pfad-Browser {#path-browser}
+### Pfad Browser {#path-browser}
 
 Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 

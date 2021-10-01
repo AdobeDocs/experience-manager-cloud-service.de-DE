@@ -5,9 +5,9 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1040'
 ht-degree: 93%
 
 ---
@@ -192,6 +192,7 @@ ht-degree: 93%
       + [Launch-Integration](developing/hybrid/launch-integration.md)
       + [SPA-Referenzdokumente](developing/hybrid/reference-materials.md)
 + Entwickler-Tools {#developer-tools}
+   + [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
