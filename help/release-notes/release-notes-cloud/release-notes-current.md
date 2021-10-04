@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 39%
+source-wordcount: '1722'
+ht-degree: 38%
 
 ---
 
@@ -179,19 +179,35 @@ Weitere Informationen finden Sie unter [SLA Reporting](https://experienceleague.
 
 * Wenn eine Pipeline gelegentlich aus irgendeinem Grund zweimal ausgelöst wird, führt dies nicht mehr dazu, dass eine der Ausführungen mit dem Fehler *Pipeline-Ausführungsstatus konnte nicht aktualisiert werden* fehlschlägt.
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Veröffentlichungsdatum {#release-date-october-cam}
+
+Die Cloud Acceleration Manager-Version wurde am 4. Oktober 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-cam}
+
+* Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, die BPA-Berichte in einer druckbaren Vorschau anzuzeigen, sodass sie einfach drucken oder in PDF drucken können, um die Freigabe zu erleichtern. Siehe Schritt 6 und 7 unter [Verwenden der Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## Content Transfer Tool {#content-transfer-tool}
 
 ### Veröffentlichungsdatum {#release-date-ctt-latest}
 
-Die Version 1.5.6 des Content Transfer Tool wurde am 11. August 2021 veröffentlicht.
+Die Version 1.6.0 des Content Transfer Tool wurde am 4. Oktober 2021 veröffentlicht.
 
-### Fehlerbehebungen {#bug-fixes-ctt}
+### Neue Funktionen {#what-is-new-ctt}
 
-* In einigen Fällen wurden nicht alle Benutzer in die Zielinstanz migriert. Um diese Fehlerbehebung zu erhalten, ist die CTT-Version 1.5.6 zusammen mit AEM-ethos-Tools 1.2.354 oder einer höheren Version auf der Ziel-AEM als Cloud Service-Instanz erforderlich.
+* Verbesserte Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Benutzerzuordnungs-Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#using-user-mapping-tool).
+   * Testen Sie die Verbindung zur User Management-API, bevor Sie die Benutzerzuordnung ausführen.
+   * Fehler lassen und mit der Aktivität Benutzerzuordnung fortfahren
+   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das Zugriffstoken abläuft (nach 24 Stunden). Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
 
-* Die Schaltfläche **Aufnahme stoppen** wurde während der Aufnahme in die Veröffentlichungsinstanz deaktiviert. Dies ist nicht erforderlich, da es während der Aufnahme der Veröffentlichung keinen mongo restore -Schritt gibt.
+* Um die CTT-Stabilität zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden.
 
-* Die CTT hat das Verzeichnis `/tmp` nach einer erfolgreichen Extraktion nicht bereinigt. Dies führte manchmal zu Problemen mit dem Festplattenspeicher.
+* Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
+
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
