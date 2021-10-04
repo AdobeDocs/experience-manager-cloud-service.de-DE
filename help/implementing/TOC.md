@@ -5,10 +5,10 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: 89480738357e8f26185aaa8ea1c6190e58baa644
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 93%
+source-wordcount: '1047'
+ht-degree: 92%
 
 ---
 
@@ -210,6 +210,7 @@ ht-degree: 93%
    + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
    + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
 + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
+   + [Erweitern von AEM mit Adobe Developer App Builder](developing/extending/app-builder.md)
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
    + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](developing/extending/content-fragments-configuring-components-rendering.md)
