@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 88%
+source-wordcount: '1769'
+ht-degree: 86%
 
 ---
 
@@ -79,6 +79,10 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 >[!NOTE]
 >
 >Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+
+>[!NOTE]
+>
+>Seiten, auf die im Editor [Aliase](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über die tatsächlichen Pfade zugegriffen wird.
 
 ### Veröffentlichungen über die Konsole {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der
 ### Rückgängigmachen der Veröffentlichung im Editor {#unpublishing-from-the-editor}
 
 Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig machen möchten, wählen Sie analog zur [Veröffentlichung einer Seite](#publishing-from-the-editor) im Menü **Seiteninformationen** die Option **Veröffentlichung der Seite rückgängig machen** aus.
+
+>[!NOTE]
+>
+>Seiten, auf die im Editor [Aliase](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) zugegriffen wird, können nicht depubliziert werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über die tatsächlichen Pfade zugegriffen wird.
 
 ### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
 

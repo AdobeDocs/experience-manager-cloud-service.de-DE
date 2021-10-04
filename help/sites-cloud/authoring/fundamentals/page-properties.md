@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 97%
+source-wordcount: '1966'
+ht-degree: 93%
 
 ---
 
@@ -101,14 +101,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
    * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
-
-   >[!NOTE]
-   >
-   >Alias legt die Eigenschaft `sling:alias` fest, um einen Alias für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
-   >
-   >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden.
-   >
-   >Weitere Informationen finden Sie in „Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“.
+      * Wenn Sie beispielsweise den Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite auch über `/content/wknd/us/en/magazine/private` zugegriffen werden.
+      * Beim Erstellen eines Alias wird die `sling:alias`-Eigenschaft auf dem Seitenknoten festgelegt, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt.
+      * Seiten, auf die über Alias im Editor zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, die über ihre tatsächlichen Pfade aufgerufen werden.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
