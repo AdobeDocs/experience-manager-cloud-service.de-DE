@@ -1,9 +1,9 @@
 ---
 title: Erweitern von [!DNL Adobe Experience Manager] als Cloud Service mit Adobe Developer App Builder.
 description: Erweitern von [!DNL Adobe Experience Manager] als Cloud Service mit Adobe Developer App Builder.
-source-git-commit: 4bd0419ff31195fef1565b50f87b4b55f81361f0
+source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,10 @@ App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in verschi
 * Benutzererlebnis-Erweiterbarkeit - Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts- und Back-Office-Apps zu erstellen.
 
 App Builder (ehemals Project Firefly) steht seit Sommer 2020 für Unternehmenskunden und -partner über unsere Entwicklervorschau zur Verfügung. Die allgemeine Verfügbarkeit (GA) von App Builder ist für Dezember 2021 geplant. Wir freuen uns über Entwickler, den App Builder über unser [Testprogramm](http://adobe.ly/appbuilder-trial) auszuprobieren.
+
+>[!NOTE]
+>
+> Kunden von AEM 6.5, die den App Builder nutzen möchten, finden unter [Erweitern von Adobe Experience Manager as a Cloud Service mithilfe von Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html) weitere Informationen.
 
 ## Architektur {#architecture}
 
