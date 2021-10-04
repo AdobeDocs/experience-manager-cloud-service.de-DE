@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 95%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -92,18 +92,6 @@ Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in
 
    ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt, um die Freigabe zu erleichtern.
-
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit den Berichten geöffnet, die in einer druckbaren Vorschau angezeigt werden. Klicken Sie auf **Print**, um den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
-
-   >[!IMPORTANT]
-   * Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
-   * Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
-
-
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Verwenden von Filtern im Bericht „Best Practices Analyzer“  {#bpa-filters}

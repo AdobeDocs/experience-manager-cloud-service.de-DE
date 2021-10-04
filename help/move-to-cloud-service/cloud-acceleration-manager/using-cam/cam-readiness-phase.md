@@ -2,10 +2,10 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 12%
+source-wordcount: '751'
+ht-degree: 11%
 
 ---
 
@@ -66,6 +66,19 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
    >[!NOTE]
    >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
+
+1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt, um die Freigabe zu erleichtern.
+
+   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit den Berichten geöffnet, die in einer druckbaren Vorschau angezeigt werden. Klicken Sie auf **Print**, um den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
+
+   >[!IMPORTANT]
+   >* Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
+   >* Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
+
+
+   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Überprüfen des Berichts zur Best Practices-Analyse {#analysis-report}
 
