@@ -2,10 +2,10 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: c8e7c6c45d898029b55bcfc09f7f2b7051d03031
+source-git-commit: b290b402fe58d449dd85e9eaaef5b75e61ac1a74
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 80%
+source-wordcount: '1367'
+ht-degree: 69%
 
 ---
 
@@ -75,17 +75,20 @@ Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
 Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltstransfer**.
+1. Wählen Sie die Adobe Experience Manager aus und navigieren Sie zu &quot;Tools&quot;-> **Vorgänge** -> **Benutzerzuordnung**.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+
 1. Klicken Sie auf **Create User Mapping Config**.
 
    >[!NOTE]
    >Wenn Sie diesen Schritt überspringen, wird die Zuordnung von Benutzern und Gruppen während der Extraktion übersprungen.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
 
-   Füllen Sie die Felder in „User Management API Configuration“ wie unten beschrieben aus:
+   Füllen Sie die Felder in **User Management API Configuration** aus, wie unten beschrieben.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
 
    * **Org ID**: Geben Sie die Organisations-ID aus dem Adobe Identity Management System (IMS) für das Unternehmen ein, deren Anwender migriert werden.
 
@@ -99,16 +102,15 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
       >[!NOTE]
       >Das Zugriffs-Token läuft alle 24 Stunden ab und muss dann neu erstellt werden. Um ein neues Token zu erstellen, gehen Sie zurück zur [Adobe Developer Console](https://console.adobe.io), wählen Sie Ihr Projekt aus, klicken Sie auf **User Management API** und fügen Sie denselben privaten Schlüssel in das Feld ein.
 
-1. Klicken Sie nach Eingabe der obigen Informationen auf **Save**.
+1. Klicken Sie nach dem Ausfüllen der Felder auf **Testkonfiguration** , um die Verbindung zum User Management-API-Dienst zu testen. Wenn die Verbindung erfolgreich hergestellt wurde, können Sie auf **Speichern** klicken, um die Konfiguration zu speichern.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+1. Wählen Sie nach dem Speichern der Konfiguration die Konfiguration aus und klicken Sie auf **Benutzerzuordnung starten**.
 
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. Erstellen Sie einen Migrationssatz, indem Sie auf **Create Migration Set** klicken, die Felder ausfüllen und dann auf **Save** klicken. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+1. Nachdem die Benutzerzuordnung abgeschlossen ist, klicken Sie auf **Ergebnisse**, um die Zusammenfassung anzuzeigen.
 
-   >[!NOTE]
-   >Der Umschalter zum Einschließen der Zuordnung von Benutzern aus IMS-Benutzern und -Gruppen ist standardmäßig aktiviert. Bei dieser Einstellung wird das User Mapping Tool ggf. während der Extraktion für den Migrationssatz ausgeführt. Dies ist die empfohlene Methode zum Durchführen der Extraktion mit dem Content Transfer Tool. Wenn dieser Umschalter deaktiviert ist und/oder keine Benutzerzuordnungskonfiguration erstellt wurde, wird die Zuordnung von Benutzern und Gruppen während der Extraktion übersprungen.
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
-
-1. Informationen zum Ausführen der Extraktion finden Sie unter [Ausführen des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+   >[!IMPORTANT]
+   >Sobald die Benutzerzuordnung abgeschlossen ist, können Sie mit der Breadcrumb-Leiste zurück zur Seite Inhaltsmigration navigieren. Auf der Karte Benutzerzuordnung werden der Status und der Zeitstempel angezeigt. Klicken Sie auf **Inhaltstransfer** , um einen Migrationssatz für die Extraktion zu erstellen. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .

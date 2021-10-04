@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 98%
+source-wordcount: '2591'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
@@ -91,6 +91,19 @@ Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generiere
 Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in der Abbildung unten dargestellt.
 
    ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt, um die Freigabe zu erleichtern.
+
+   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit den Berichten geöffnet, die in einer druckbaren Vorschau angezeigt werden. Klicken Sie auf **Print**, um den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
+
+   >[!IMPORTANT]
+   * Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
+   * Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
+
+
+   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Verwenden von Filtern im Bericht „Best Practices Analyzer“  {#bpa-filters}
