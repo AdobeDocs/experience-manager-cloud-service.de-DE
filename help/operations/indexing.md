@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 85%
+source-wordcount: '2139'
+ht-degree: 82%
 
 ---
 
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten 
 
 Der Volltext-Index `/oak:index/lucene-2` kann sehr groß werden, da er standardmäßig alle Knoten im AEM-Repository indiziert. Der Lucene-Volltext-Index wird seit September 2021 nicht mehr in AEM als Cloud Service bereitgestellt. Daher wird es nicht mehr auf der Produktseite in AEM als Cloud Service verwendet und sollte nicht zum Ausführen von Kundencode erforderlich sein. Für AEM als Cloud Service-Umgebungen mit gängigen Lucene-Indizes arbeitet Adobe mit Kunden einzeln für einen koordinierten Ansatz, um diesen Index auszugleichen und bessere, optimierte Indizes zu verwenden. Wenn dieser Index für benutzerdefinierte Abfragen als temporäre Lösung erforderlich ist, sollte eine Kopie dieses Index erstellt werden, wobei ein anderer Name verwendet wird, z. B. `/oak:index/acme.lucene-1-custom-1`, wie [hier](/help/operations/indexing.md) beschrieben.
 Diese Optimierung gilt nicht für andere AEM-Umgebungen, die On-Premise gehostet oder von Adobe Managed Services verwaltet werden, es sei denn, die Adobe empfiehlt etwas Anderes.
+
+## Abfrageoptimierung
+
+Mit dem Tool **Abfrageleistung** können Sie beliebte und langsame JCR-Abfragen beobachten. Darüber hinaus kann sie Abfragen analysieren und verschiedene Informationen anzeigen, insbesondere wenn für diese Abfrage ein Index verwendet wird oder nicht.
+
+Im Gegensatz zu AEM On-Premise zeigt AEM als Cloud Service das Tool **Abfrageleistung** nicht mehr in der Benutzeroberfläche an. Stattdessen ist sie jetzt über die Entwicklerkonsole (in Cloud Manager) auf der Registerkarte **Abfragen** verfügbar.
