@@ -2,7 +2,7 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 72c1e85fca032f82a2755f9ca601625e1a3f7461
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 51%
@@ -13,18 +13,18 @@ ht-degree: 51%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2021,08,0 |
+| Version | 2021,09,0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
 ## Vorbereitung auf eine Version {#how-to-prepare}
 
-Mit dem kontinuierlichen Veröffentlichungsmodell in [!DNL Adobe Experience Manager] als Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, Funktionsversionen und kritischen Updates:
+Mit dem kontinuierlichen Release-Modell in [!DNL Adobe Experience Manager] as a Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, Funktionsversionen und kritischen Updates:
 
 * Die Funktionsveröffentlichungen erfolgen mit vorhersehbarer monatlicher Häufigkeit und konzentrieren sich auf neue Funktionen und Produktinnovationen.
-* Kritische Aktualisierungen werden häufig vorgenommen und konzentrieren sich auf Sicherheitsupdates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] als Cloud Service stets auf dem neuesten Stand mit allen wichtigen Korrekturen ist.
+* Kritische Aktualisierungen werden häufig vorgenommen und konzentrieren sich auf Sicherheitsupdates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service immer auf dem neuesten Stand ist und wichtige Korrekturen vorgenommen werden.
 
-Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] als Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus trainieren/vorbereiten.
+Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus trainieren/vorbereiten.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Vorbereitung auf eine Version:
 * [Bekannte Probleme](known-issues.md)
 * [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## as a Cloud Service Handbücher für Experience Manager {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|

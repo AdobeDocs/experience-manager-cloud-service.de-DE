@@ -1,8 +1,7 @@
 ---
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 92%
@@ -54,7 +53,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wird. Diese Verbesserung ermöglicht schnellere Downloads.
+* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads.
 
 * Wenn ein Asset über die Option &quot;linkshare&quot;heruntergeladen wird, können Sie jetzt auswählen, ob Sie die Ausgabedarstellungen herunterladen oder nicht. Zuvor wurden alle Asset-Ausgabedarstellungen heruntergeladen.
 
@@ -68,7 +67,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Beim Bearbeiten eines Metadatenschemas wird ein Datentyp hinzugefügt, der einen Freiformtextbereich im Metadaten-Editor bereitstellt. Benutzer können diesen Textbereich verwenden, um Freiformtext als Metadaten eines Assets einzugeben. Siehe [Metadatenschema-Editor](/help/assets/metadata-schemas.md).
 
-* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift ändern. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu.
+* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift ändern. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu. 
 
 * Beim Durchsuchen von Assets in der Spaltenansicht zeigt ein visueller Indikator für jedes Asset den Status Genehmigt oder Abgelehnt an.
 
@@ -104,9 +103,9 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
    Sie können jetzt das Formularsigniererlebnis für asynchrone Übermittlungen adaptiver Formulare verwenden. Sie können ein adaptives Formular auch in eine [!DNL Experience Manager Sites]-Seite einbetten und das Formularsigniererlebnis für Übermittlungen adaptiver Formulare verwenden.
 
-* **Unterstützung für die Verwendung einer Variablen zum Angeben einer Anlage beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“**
+* **Unterstützung für die Verwendung einer Variablen zum Angeben eines Anhang beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“**
 
-   Beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“ können Sie jetzt eine Variable vom Typ „document“ verwenden, um eine Anlage als Input für das adaptive Formular auszuwählen.
+   Beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“ können Sie jetzt eine Variable vom Typ „document“ verwenden, um einen Anhang als Eingabe für das adaptive Formular auszuwählen.
 
 * **Unterstützung für die Verwendung der Option „Literal“ zum Festlegen eines Werts für eine JSON-Typvariable**
 
@@ -118,7 +117,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Fehlerbehebungen in [!DNL Forms] {#bug-fixes-forms}
 
-* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein aufzuzeichnendes Dokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird keine Fehlermeldung angezeigt und die Aufgabe kann nicht gesendet werden.
+* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein Datensatzdokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird jetzt eine Fehlermeldung angezeigt und die Aufgabe wird nicht übermittelt.
 
 ### Weitere Updates {#misc-2021-04-0-forms}
 
@@ -143,7 +142,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Das Feld „Stammkategorie“ wurde auf der Registerkarte „Commerce“ in den Seiteneigenschaften von Kategorieseiten nicht angezeigt
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.4.0.
 

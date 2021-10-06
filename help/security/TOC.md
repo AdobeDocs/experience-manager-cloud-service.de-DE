@@ -1,14 +1,14 @@
 ---
-sub-product: Sicherheit für AEM as a Cloud Service
+sub-product: Security for AEM as a Cloud Service
 user-guide-title: Sicherheit für AEM as a Cloud Service
 breadcrumb-title: Sicherheitsanleitung
 user-guide-description: Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service.
-feature: Konfiguration
+feature: Configuring
 role: Admin
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 3993e5575d87e403acaff333f33a452135430a80
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 91%
+source-wordcount: '70'
+ht-degree: 78%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 91%
 # Sicherheit {#security}
 
 + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
++ [Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren](/help/security/configuring-advanced-networking.md)
 + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
 + [IMS-Unterstützung für AEM as a Cloud Service](ims-support.md)
 + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)

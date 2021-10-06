@@ -4,13 +4,13 @@ description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung 
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
+source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 19%
+source-wordcount: '690'
+ht-degree: 16%
 
 ---
-
 
 # Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM {#architect-headless-content-fragment-models}
 
@@ -66,7 +66,7 @@ Sie können Instanzen von **Datentypen** auf den linken Bereich ziehen - Sie def
 
 ![Felder definieren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Zum Beispiel:
 
 ![Dateneigenschaften](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,6 +101,10 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 >
 >Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
+Sobald ein Modell veröffentlicht wird, ist es *locked* in einem schreibgeschützten Modus auf der Autoreninstanz. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
+
+Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht direkt bearbeiten. Sie können die **gesperrten**-Modelle entweder über die Konsole oder den Modell-Editor verwalten.
+
 ## Wie geht es weiter {#whats-next}
 
 Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ihre eigenen Inhaltsfragmentmodelle zu erstellen.
@@ -126,6 +130,8 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
       * [Veröffentlichen eines Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+
+      * [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Anleitungen für den Einstieg
 
