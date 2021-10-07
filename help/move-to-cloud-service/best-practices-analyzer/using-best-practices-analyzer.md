@@ -2,7 +2,7 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 98%
@@ -91,6 +91,7 @@ Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generiere
 Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in der Abbildung unten dargestellt.
 
    ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
 
 
 #### Verwenden von Filtern im Bericht „Best Practices Analyzer“  {#bpa-filters}

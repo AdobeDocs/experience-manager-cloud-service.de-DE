@@ -2,9 +2,9 @@
 title: Überprüfen des Status von DNS-Einträgen
 description: Überprüfen des Status von DNS-Einträgen
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine
 Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
 
 * **DNS wird falsch aufgelöst**
-Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöst/übertragen wurde oder fehlerhaft ist. Ein Adobe-Support-Mitarbeiter wird automatisch benachrichtigt.
+Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöst/übertragen wurde oder fehlerhaft ist.
 
    >[!NOTE]
    >Sie müssen entweder einen `CNAME` oder einen `A-record` konfigurieren, indem Sie die entsprechenden Anweisungen befolgen. Weitere Informationen finden Sie unter „Konfigurieren von DNS-Einstellungen“. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status auswählen.
