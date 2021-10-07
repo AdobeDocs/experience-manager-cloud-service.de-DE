@@ -2,9 +2,9 @@
 title: Technische Grundlagen von AEM
 description: Eine Übersicht über die technischen Grundlagen von AEM, einschließlich der Art und Weise, wie AEM und grundlegende Technologien wie JCR, Sling und OSGi strukturiert sind.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 99%
 
 ---
@@ -34,9 +34,9 @@ Die zugrunde liegenden Ebenen für Content-Repository und Geschäftslogik basier
 
 ## Java Content Repository {#java-content-repository}
 
-Der Java Content Repository-Standard [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest. Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG.
+Der Java Content Repository-Standard [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest. Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG.
 
-Das [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket `javax.jcr.*` wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket `javax.jcr.*` wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
 
 AEM basiert auf einem JCR.
 

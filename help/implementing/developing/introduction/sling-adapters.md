@@ -2,10 +2,10 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 04767681216ebee845fa6120e3da8db8e105f68f
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2234'
-ht-degree: 100%
+source-wordcount: '2219'
+ht-degree: 92%
 
 ---
 
@@ -25,11 +25,11 @@ Es gibt die folgenden Nutzungsszenarien:
 
 * Rufen Sie spezifische Objekte für die Implementierung ab.
 
-   Eine JCR-basierte Implementierung der generischen [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html)-Schnittstelle ermöglicht beispielsweise Zugriff auf das zugrunde liegende JCR-[`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)-Element.
+   Eine JCR-basierte Implementierung der generischen [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html)-Schnittstelle ermöglicht beispielsweise Zugriff auf das zugrunde liegende JCR-[`Node`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)-Element.
 
 * Erstellung von direkten Verknüpfungen für Objekte, für die interne Kontextobjekte übergeben werden müssen.
 
-   Der JCR-basierte [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) enthält beispielsweise einen Verweis auf die [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) der Anfrage, die wiederum für viele Objekte benötigt wird, deren Ausführung von dieser Anfragesitzung abhängig ist, z. B. [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) oder [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
+   Der JCR-basierte [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) enthält beispielsweise einen Verweis auf die [`JCR Session`](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) der Anfrage, die wiederum für viele Objekte benötigt wird, deren Ausführung von dieser Anfragesitzung abhängig ist, z. B. [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) oder [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
 
 * Direkte Verknüpfung mit Services.
 
@@ -80,15 +80,15 @@ Adaptierung von [**Resource**](https://docs.adobe.com/content/help/en/experience
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>Wenn dies eine auf einem JCR-Knoten basierende Ressource oder eine JCR-Eigenschaft mit Verweis auf einen Knoten ist.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td>
    <td>Wenn dies eine auf einer JCR-Eigenschaft basierende Ressource ist.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Item</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">Item</a></td>
    <td>Wenn dies eine JCR-basierte Ressource ist (Knoten oder Eigenschaft).</td>
   </tr>
   <tr>
@@ -128,7 +128,7 @@ Adaptierung von [**Resource**](https://docs.adobe.com/content/help/en/experience
    <td>Wenn diese Ressource ein Skript ist (z. B. eine JSP-Datei), für das ein Skriptmodul bei Sling registriert ist, oder wenn es eine Servlet-Ressource ist.</td>
   </tr>
   <tr>
-   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"> Long</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html"> Double</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"> Calendar</a><br /><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Value</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"> String[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"> Boolean[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"> Long[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"> Calendar[]</a><br /><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Value[]</a></td>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"> Long</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html"> Double</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"> Calendar</a><br /><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Value</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"> String[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"> Boolean[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"> Long[]</a><br /><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"> Calendar[]</a><br /><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"> Value[]</a></td>
    <td>Gibt den bzw. die Werte zurück, wenn es eine auf einer JCR-Eigenschaft basierende Ressource ist (und der Wert passt).</td>
   </tr>
   <tr>
@@ -211,7 +211,7 @@ Adaption von [**ResourceResolver**](https://docs.adobe.com/content/help/en/exper
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html">Session</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html">Session</a></td>
    <td>Die JCR-Sitzung der Anfrage, wenn es sich um einen JCR-basierten Ressourcenauflöser handelt (Standard).</td>
   </tr>
   <tr>
@@ -288,7 +288,7 @@ Adaption von **[Page](https://docs.adobe.com/content/help/en/experience-manager-
    <td>Bezeichnete Ressource (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td>
    <td>Knoten der Seite.</td>
   </tr>
   <tr>
@@ -303,7 +303,7 @@ Adaption von **[Component](https://docs.adobe.com/content/help/en/experience-man
 | [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource der Komponente. |
 |---|---|
 | [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | Bezeichnete Ressource (== this). |
-| [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten der Komponente. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten der Komponente. |
 | ... | Alle Elemente, für die die Ressource der Komponente adaptiert werden kann. |
 
 Adaption von **[Template](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** für:
@@ -311,7 +311,7 @@ Adaption von **[Template](https://docs.adobe.com/content/help/en/experience-mana
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>Ressource der Vorlage.</td>
   </tr>
   <tr>
@@ -319,7 +319,7 @@ Adaption von **[Template](https://docs.adobe.com/content/help/en/experience-mana
    <td>Bezeichnete Ressource (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td>
    <td>Knoten dieser Vorlage.</td>
   </tr>
   <tr>
@@ -333,7 +333,7 @@ Adaption von **[Template](https://docs.adobe.com/content/help/en/experience-mana
 
 Adaption von **Authorizable**, **User** und **Group** für:
 
-| [Knoten](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
+| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Gibt den Replizierungsstatus für den Stammknoten des Benutzers/der Gruppe zurück. |
 
@@ -343,7 +343,7 @@ Adaption von **Asset** für:
 
 | [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Assets. |
 |---|---|
-| [Knoten](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Assets. |
+| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Assets. |
 | ... | Alle Elemente, für die die Ressource des Assets adaptiert werden kann. |
 
 #### Tagging {#tagging}
@@ -352,7 +352,7 @@ Adaption von **Tag** für:
 
 | [Ressource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Tags. |
 |---|---|
-| [Knoten](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Tags. |
+| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Tags. |
 | ... | Alle Elemente, für die die Ressource des Tags adaptiert werden kann. |
 
 #### Andere {#other}

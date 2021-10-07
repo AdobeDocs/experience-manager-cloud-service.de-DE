@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 100%
+source-wordcount: '2218'
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ Facettenextraktion wird nicht unterstützt.
 
 ### hasPermission {#haspermission}
 
-Dieses Prädikat beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
+Dieses Prädikat beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
