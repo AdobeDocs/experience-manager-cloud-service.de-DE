@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 84%
+source-wordcount: '3216'
+ht-degree: 81%
 
 ---
 
@@ -50,6 +50,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Wenn Sie benutzerdefinierte Indizes verwenden, müssen Sie sicherstellen, dass Sie die benutzerdefinierten Indizes mit dem Knoten `tika` konfigurieren, bevor Sie das Content Transfer Tool ausführen. Weitere Informationen finden Sie unter [Vorbereiten der neuen Indexdefinition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#preparing-the-new-index-definition).
 
 * Wenn Sie Auffüllungen vornehmen möchten, ist es wichtig, dass die Inhaltsstruktur des vorhandenen Inhalts nicht von dem Zeitpunkt an geändert wird, zu dem die ursprüngliche Extraktion erfolgt, bis zum Zeitpunkt der Auffüllextraktion. Auffüllungen können nicht für Inhalte ausgeführt werden, deren Struktur seit der ersten Extraktion geändert wurde. Bitte stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
+
+* Wenn Sie Versionen als Teil eines Migrationssatzes einbeziehen möchten und mit `wipe=false` Auffüllungen durchführen, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu halten und Auffüllungen in einem Migrationssatz durchzuführen, müssen Sie die Aufnahme als `wipe=true` durchführen.
 
 ## Verfügbarkeit {#availability}
 
@@ -120,6 +122,8 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
       1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
+      >[!NOTE]
+      >Wenn Sie Versionen als Teil eines Migrationssatzes einbeziehen möchten und mit `wipe=false` Auffüllungen durchführen, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu halten und Auffüllungen in einem Migrationssatz durchzuführen, müssen Sie die Aufnahme als `wipe=true` durchführen.
 
       1. **Zuordnung von IMS-Benutzern und -Gruppen einschließen**: Wählen Sie die Option aus, um die Zuordnung von IMS-Benutzern und -Gruppen einzuschließen.
 Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de).
@@ -132,6 +136,7 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
          >* `/libs`
          >* `/home`
          >* `/etc` (einige `/etc`-Pfade können in CTT ausgewählt werden)
+
 
 
 1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Migrationssatz erstellen** ausgefüllt haben.
