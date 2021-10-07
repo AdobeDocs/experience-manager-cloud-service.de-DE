@@ -4,18 +4,14 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 81%
+source-wordcount: '2256'
+ht-degree: 100%
 
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
-
->[!NOTE]
->
->Die Funktion [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](#locked-published-content-fragment-models) befindet sich in der Beta-Phase.
 
 Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Content dienen.
 
@@ -415,82 +411,28 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
 Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, werden Sie über eine Fehlermeldung darüber informiert:
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cfm-model-unpublish-error.png)
+This feature provides governance for Content Fragment Models that have been published. 
 
-Die Meldung weist darauf hin, dass Sie das Bedienfeld [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) überprüfen, um weitere Untersuchungen durchzuführen:
+The challenge:
 
-![Inhaltsfragmentmodell in Verweisen](assets/cfm-model-references.png)
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
-## Gesperrte (veröffentlichte) Inhaltsfragmentmodelle {#locked-published-content-fragment-models}
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
 
->[!NOTE]
-Die Funktion Gesperrte (veröffentlichte) Inhaltsfragmentmodelle befindet sich in der Beta-Phase.
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
 
-Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlicht wurden.
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
 
-### Die Herausforderung {#the-challenge}
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-* Inhaltsfragmentmodelle bestimmen das Schema für GraphQL-Abfragen in AEM.
+The solution:
 
-   * AEM GraphQL-Schemas werden erstellt, sobald ein Inhaltsfragmentmodell erstellt wird, und sie können in der Autoren- und Veröffentlichungsumgebung vorhanden sein.
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-   * Schemas auf der Veröffentlichungsinstanz sind die wichtigsten, da sie die Grundlage für die Live-Bereitstellung von Inhaltsfragmentinhalten im JSON-Format bieten.
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-* Probleme können auftreten, wenn Inhaltsfragmentmodelle geändert oder bearbeitet werden. Das bedeutet, dass sich das Schema ändert, was wiederum vorhandene GraphQL-Abfragen beeinflussen kann.
-
-* Das Hinzufügen neuer Felder zu einem Inhaltsfragmentmodell sollte (in der Regel) keine schädlichen Auswirkungen haben. Wenn Sie jedoch vorhandene Datenfelder (z. B. deren Namen) ändern oder Felddefinitionen löschen, werden vorhandene GraphQL-Abfragen bei der Anforderung dieser Felder beschädigt.
-
-### Die Anforderungen {#the-requirements}
-
-* Um Benutzer auf die Risiken aufmerksam zu machen, die bei der Bearbeitung von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden (d. h. von Modellen, die veröffentlicht wurden).
-
-* Außerdem, um unbeabsichtigte Änderungen zu vermeiden.
-
-Bei beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Modelle erneut veröffentlicht werden.
-
-### Die Lösung {#the-solution}
-
-Um diese Probleme zu beheben, sind Inhaltsfragmentmodelle *gesperrt* im schreibgeschützten Modus des Autors - sobald sie veröffentlicht wurden. Dies wird durch **Gesperrt** gekennzeichnet:
-
-![Karte des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
-
-Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie den Inhalt und die Struktur der Modelle sehen, sie können jedoch nicht bearbeitet werden.
-
-Sie können die **gesperrten**-Modelle entweder über die Konsole oder den Modell-Editor verwalten:
-
-* Konsole
-
-   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit den Aktionen **Entsperren** und **Sperren** in der Symbolleiste verwalten:
-
-   ![Symbolleiste des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
-
-   * Sie können **Entsperren** ein Modell, um Änderungen zu ermöglichen.
-
-      Wenn Sie **Entsperren** auswählen, wird ein Warnhinweis angezeigt und Sie müssen die Aktion **Entsperren** bestätigen:
-      ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cfm-model-unlock-message.png)
-
-      Anschließend können Sie das Modell zur Bearbeitung öffnen.
-
-   * Anschließend können Sie das Modell auch **Sperren**.
-   * Durch eine erneute Veröffentlichung wird das Modell sofort wieder in den Modus **Gesperrt** (SCHREIBGESCHÜTZT) versetzt.
-
-* Modell-Editor
-
-   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**:
-
-      ![Meldung beim Anzeigen eines gesperrten Inhaltsfragmentmodells](assets/cfm-model-editor-lock-message.png)
-
-   * Wenn Sie **Schreibgeschützt anzeigen** auswählen, können Sie den Inhalt und die Struktur des Modells sehen:
-
-      ![Schreibgeschützt anzeigen - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-view-only.png)
-
-   * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Aktualisierungen bearbeiten und speichern:
-
-      ![Bearbeiten - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-edit.png)
-
-      >[!NOTE]
-      Oben kann noch eine Warnung angezeigt werden. In diesem Fall wird das Modell jedoch bereits von vorhandenen Inhaltsfragmenten verwendet.
-
-   * **** Mit Abbruch kehren Sie zur Konsole zurück.
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

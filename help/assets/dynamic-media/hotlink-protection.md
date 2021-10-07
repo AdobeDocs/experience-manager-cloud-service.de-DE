@@ -4,18 +4,18 @@ description: Erfahren sie, wie Sie den Hotlink-Schutz in Dynamic Media aktiviere
 feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 84%
+source-wordcount: '190'
+ht-degree: 93%
 
 ---
 
 # Aktivieren des Hotlink-Schutzes in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Von Hotlinking spricht man, wenn eine Drittanbieter-Website HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Der Hotlink-*Schutz* ist eine Methode, um das direkte Verknüpfen anderer Websites mit Bildern, CSS oder JavaScript auf Ihren Web-Seiten zu verhindern. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
+Von Hotlinking spricht man, wenn eine Drittanbieter-Website HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Der Hotlink-*Schutz* ist eine Methode, um das direkte Verknüpfen anderer Websites mit Bildern, CSS oder JavaScript™ auf Ihren Web-Seiten zu verhindern. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
 
-[Adobe-](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) Kundenunterstützung kann einen Referrer-Filter auf CDN-Ebene konfigurieren. Dadurch wird sichergestellt, dass Dynamic Media-Inhalte nur Websites zur Verfügung gestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domain stehen.
+[Der Adobe-Kunden-Service](https://helpx.adobe.com/de/support.html) kann einen Referrer-Filter auf CDN-Ebene konfigurieren. Dadurch wird sichergestellt, dass Dynamic Media-Inhalte nur Websites zur Verfügung gestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domain stehen.
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
 description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 90%
+source-wordcount: '797'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
 ## Wie verläuft der Prozess für die Aktivierung von HTTP/2 für mein Dynamic Media-Konto? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) und fordern Sie die Umstellung auf HTTP/2 an. Dies wird nicht automatisch für Sie erledigt.
+Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und fordern Sie die Umstellung auf HTTP/2 an. Dies wird nicht automatisch für Sie erledigt.
 
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
 
@@ -70,15 +70,15 @@ Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.c
 
    Gehen Sie zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
 
-   1. Der Kundensupport fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet wurden, zur HTTP/2-Kundenwarteschlange hinzu.
-   1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Support Sie, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
+   1. Der technische Support fügt Sie entsprechend der Reihenfolge der eingegangenen Anfragen der HTTP/2-Kundenwarteschlange hinzu.
+   1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich die Kundenunterstützung mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
    1. Nach Abschluss werden Sie benachrichtigt, wonach Sie prüfen können, ob die Umstellung auf HTTP/2 erfolgreich durchgeführt wurde.
 
 
 
 ## Wann kann ich mit der Umstellung auf HTTP/2 rechnen? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Anfragen werden in der Reihenfolge verarbeitet, in der sie beim Support eingehen.
+Anfragen werden in der Reihenfolge verarbeitet, in der sie beim technischen Support eingehen.
 
 >[!NOTE]
 >

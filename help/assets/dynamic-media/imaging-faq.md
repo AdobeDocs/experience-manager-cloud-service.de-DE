@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die intelligente Bildbearbeitung mit Adobe Sensei
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2624'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -213,10 +213,10 @@ Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Net
       Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media Classic-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
    1. Geben Sie an, ob sie über HTTP/2 funktionieren soll.
 
-1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur Warteliste für Kunden mit intelligenter Bildbearbeitung hinzu.
-1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Kundensupport Sie, um ein Zieldatum zu koordinieren und festzulegen.
+1. Der Adobe-Kunden-Service nimmt Sie in die Kunden-Warteliste für die intelligente Bildbearbeitung auf. Dies geschieht in der Reihenfolge der eingehenden Anfragen.
+1. Wenn Adobe Ihre Anfrage bearbeiten kann, setzt sich der Kunden-Service mit Ihnen zwecks Koordinierung und Vereinbarung eines Zieldatums in Verbindung.
 1. **Optional**: Sie können die intelligente Bildbearbeitung optional im Staging testen, bevor die Adobe die neue Funktion in die Produktionsumgebung überträgt.
-1. Sie werden nach Abschluss durch den Support benachrichtigt.
+1. Sie werden nach Abschluss durch den Kunden-Service benachrichtigt.
 1. Zur maximalen Leistungsverbesserung der intelligenten Bildbearbeitung empfiehlt Adobe eine Time-to-Live (TTL)-Einstellung von mindestens 24 Stunden. Die TTL-Einstellung definiert, wie lange Assets vom CDN-Service im Cache gespeichert werden. So ändern Sie diese Einstellung:
 
    1. Wenn Sie Dynamic Media Classic verwenden, gehen Sie zu **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**. Stellen Sie den Wert **[!UICONTROL Standardeinstellung für Time-To-Live des Client-Cache]** auf mindestens 24 ein.
@@ -224,7 +224,7 @@ Standardmäßig sind die DSGVO für die intelligente Bildbearbeitung und die Net
 
 ## Wann wird mein Konto voraussichtlich für die intelligente Bildbearbeitung aktiviert? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Anfragen werden in der Reihenfolge verarbeitet, in der sie vom Support empfangen werden, gemäß der Warteliste.
+Die Anfragen werden in der Reihenfolge ihres Eingangs bei der Kundenbetreuung gemäß Warteliste bearbeitet.
 
 >[!NOTE]
 >

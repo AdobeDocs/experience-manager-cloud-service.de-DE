@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
 
-1. Wenden Sie sich an [Adobe Customer Support](https://experienceleague.adobe.com/#support) , um die Lizenz zu erhalten.
+1. Wenden Sie sich an [Adobe Customer Care](https://experienceleague.adobe.com/#support), um die Lizenz zu erhalten.
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]**.
 
