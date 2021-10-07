@@ -1,10 +1,10 @@
 ---
 title: Wichtige Überlegungen zum Benutzerzuordnungs-Tool
 description: Wichtige Überlegungen zum Benutzerzuordnungs-Tool
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 71%
+source-wordcount: '521'
+ht-degree: 67%
 
 ---
 
@@ -35,3 +35,7 @@ Die folgenden Sonderfälle werden protokolliert:
 * Wenn die AEM Cloud Service-Zielinstanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
 
 * Wenn zwei Benutzer in der Quell-AEM-Instanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und eine der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
+
+### Nächste Schritte {#whats-next}
+
+Sobald Sie die wichtigen Aspekte und Ausnahmefälle kennen, können Sie das Tool jetzt verwenden. Weitere Informationen finden Sie unter [Verwenden des Benutzerzuordnungstools](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) .
