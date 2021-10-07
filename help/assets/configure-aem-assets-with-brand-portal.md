@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2402'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -138,7 +138,7 @@ Sie haben nun die folgenden Möglichkeiten:
 * [Veröffentlichen von Vorgaben, Schemata und Facetten in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Veröffentlichen von Tags in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
+Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de).
 
 **Verteilungsprotokolle**
 
@@ -178,7 +178,7 @@ Neben dem Automatisierungs-Workflow zur Aktivierung von Brand Portal unter AEM A
 
 >[!NOTE]
 >
->Kontaktieren Sie den Adobe Support, wenn beim Aktivieren des Brand Portal-Mandanten Probleme auftreten.
+>Wenden Sie sich an den Support , wenn Sie beim Aktivieren Ihres Brand Portal-Mandanten Probleme haben.
 
 ## Manuelle Konfiguration mit der Adobe-Entwicklerkonsole {#manual-configuration}
 

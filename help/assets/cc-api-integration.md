@@ -2,15 +2,15 @@
 title: Inhaltsautomatisierung für die Creative Cloud-Integration
 description: Generieren von Varianten von Assets mithilfe der Creative Cloud-Integration
 contentOwner: AG
-feature: Hochladen,Asset-Verarbeitung,Veröffentlichung,Asset compute-Microservices,Workflow
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # Generieren von Varianten von Assets mithilfe der Integration von [!DNL Adobe Creative Cloud] {#content-automation}
 
@@ -46,7 +46,7 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
    ![Photoshop-Aktionen](/help/assets/assets/content-automation-psactions.png)
 
-* **Smart Object Replacement**: Personalisierung im Maßstab, indem Sie Bilder austauschen und dabei alle Effekte und Anpassungen beibehalten, die in einer PSD-Datei vorgenommen werden.
+* **Smart Object Replacement**: Personalisierung in großem Maßstab, indem Sie Bilder austauschen können, während alle Effekte und Anpassungen beibehalten werden, die innerhalb einer PSD-Datei vorgenommen werden.
 
    ![Objekte intelligent ersetzen](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
 
-1. Wenden Sie sich an [Adobe Customer Care](https://experienceleague.adobe.com/#support), um die Lizenz zu erhalten.
+1. Wenden Sie sich an [Adobe Customer Support](https://experienceleague.adobe.com/#support) , um die Lizenz zu erhalten.
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]**.
 

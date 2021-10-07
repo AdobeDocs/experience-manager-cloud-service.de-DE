@@ -232,7 +232,7 @@ ht-degree: 92%
    + [Ablauf der Inhaltsbereitstellung](dispatcher/overview.md)
    + [Dispatcher in der Cloud](dispatcher/disp-overview.md)
    + [Validieren und Debuggen mit den Dispatcher Tools](dispatcher/validation-debug.md)
-   + [Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service](dispatcher/ams-aem.md)
+   + [Migration der Dispatcher-Konfiguration von AMS auf AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Validieren und Debuggen mit den alten Dispatcher Tools](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Caching in AEM as a Cloud Service](dispatcher/caching.md)

@@ -2,13 +2,13 @@
 title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
 description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
 contentOwner: AG
-feature: Asset-Management,Publishing
+feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: e294ecdefca89bc3fd16ee2166a1a8418d0237ee
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 87%
 
 ---
 
@@ -45,22 +45,16 @@ Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Fu
 
 Media Library deckt im Großen und Ganzen die folgenden Anwendungsfälle ab:
 
-* Bereitstellen von einfachen DAM-Funktionen für Web-Seiten, die mit [!DNL Adobe Experience Manager Sites] erstellt wurden.
+* Stellen Sie grundlegende DAM-Funktionen für Web-Seiten bereit, die mit [!DNL Adobe Experience Manager Sites] erstellt wurden.
 * Adaptive Formulare und Kommunikationen, die mit [!DNL Adobe Experience Manager Forms] erstellt wurden.
 * Mit [!DNL Adobe Experience Manager Screens] erstellte digitale Bildschirmerlebnisse.
 * [!DNL Assets]-HTTP-REST-APIs für Headless-Vorgänge.
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-* Basic metadata properties
-* Tag management
-* Version control
 * Static renditions
-* Projects, tasks, workflow authoring
+* Projects, tasks authoring
 * Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -79,13 +73,21 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Kommentieren von Assets.
 * Hinzufügen von Assets zu [!DNL Sites]-Seiten über die Content-Suche.
 * Verwenden von [!DNL Content Fragments].
+* Verwenden Sie HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
+* Marketing Cloud-Integration.
+* Anpassen und Erweitern der Benutzeroberfläche für die Asset-Verwaltung.
+* Greifen Sie auf Query Builder (API) zu, um die Suchfunktion zu erweitern.
+* Erstellen Sie statische Tags.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Bei Fragen wenden Sie sich an die Kundenunterstützung von Adobe.
+>Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenden Sie sich bei Fragen an den Support.
+
+Beachten Sie, dass Sie keine Smart-Tags, [!DNL Asset]-Links, [!DNL Asset]-Selektoren, Massen-Tagging, Ändern von Asset-Workflows ohne [!DNL Assets]-Lizenz verwenden können.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

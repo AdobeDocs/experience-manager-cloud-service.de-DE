@@ -3,10 +3,10 @@ title: Verwenden Sie Regelsätze zum Konvertieren von URLs
 description: Erfahren Sie, wie Sie in Dynamic Media Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -45,7 +45,7 @@ Siehe auch [Fehlerbehebung bei Regelsätzen](https://helpx.adobe.com/de/experien
 Stellen Sie außerdem sicher, dass der Regelsatz zunächst in einer Staging-Umgebung getestet wurde, die sich nicht auf die Live-Produktionsumgebung auswirkt.
 Für Produktions- und Testumgebungen sind in der Regel unterschiedliche Anmeldungen erforderlich.
 
-Informationen zur Anmeldung finden Sie unter der [Adobe Dynamic Media Classic -Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
+Informationen zur Anmeldung finden Sie im Adobe Dynamic Media Classic-Desktop-Programm [unter ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -57,7 +57,7 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
-   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
+   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Support.
 
 1. Laden Sie Ihre Regelsatzdatei wie folgt hoch:
 

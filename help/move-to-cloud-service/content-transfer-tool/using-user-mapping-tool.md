@@ -26,7 +26,7 @@ Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrier
 
 ### Benutzerzuordnungs-Tool {#mapping-tool}
 
-Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit dem migrierten Inhalt verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer und Gruppen so zu ändern, dass sie von IMS, der Single Sign-On-Funktion, die von AEM als Cloud Service verwendet wird, korrekt erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
+Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit dem migrierten Inhalt verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer und Gruppen so zu ändern, dass sie von IMS, der von AEM as a Cloud Service Single-Sign-On-Funktion, richtig erkannt werden. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
 
 ## Wichtige Überlegungen {#important-considerations}
 
@@ -50,7 +50,7 @@ Die folgenden Sonderfälle werden protokolliert:
 
 * Wenn beim Auffüllen von Inhalten der Inhalt nicht übertragen wird, weil er sich seit der vorherigen Übertragung nicht geändert hat, werden auch die mit diesem Inhalt verknüpften Benutzer und Gruppen nicht übertragen, selbst wenn sich die Benutzer und Gruppen in der Zwischenzeit geändert haben. Dies liegt daran, dass Benutzer und Gruppen zusammen mit dem Inhalt, mit dem sie verknüpft sind, migriert werden.
 
-* Wenn die Ziel-AEM-Benutzerinstanz über einen Cloud Service mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse auf dem Zielsystem zulässig ist.
+* Wenn die AEM Cloud Service-Zielinstanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
 
 * Wenn zwei Benutzer in der Quell-AEM-Instanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und eine der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
 

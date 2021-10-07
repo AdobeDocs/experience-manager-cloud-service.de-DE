@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
 
    ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit dem Bericht in einer druckbaren Vorschau geöffnet. Klicken Sie auf **Print**, um den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
+1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit dem Bericht in einer druckbaren Vorschau geöffnet. Klicken Sie auf **Print**, um den Bericht in ein PDF-Format zu drucken, um die Freigabe zu erleichtern.
 
    >[!IMPORTANT]
    >* Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
@@ -101,7 +101,7 @@ Die Karte **Berichteigenschaften** enthält Informationen zu Berichtseigenschaft
 
 #### Berichtübersicht {#report-overview}
 
-Diese Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft zur Umstellung auf AEM als Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
+Diese Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft zur Umstellung auf AEM as a Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
 
 ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ Die Option &quot;Best Practices-Bewertung&quot;bietet eine Bewertung Ihrer aktue
 
 #### Bewertung der Migrationskomplexität {#migration-complexity-assessment}
 
-Die Option zur Bewertung der Migrationskomplexität bietet eine Bewertung der Komplexität bei der Migration der bestehenden AEM-Implementierung zu AEM als Cloud Service.
+Die Option zur Bewertung der Migrationskomplexität bietet eine Bewertung der Komplexität, um die vorhandene AEM zu AEM as a Cloud Service zu migrieren.
 
 Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
 

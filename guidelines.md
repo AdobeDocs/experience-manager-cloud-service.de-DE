@@ -1,6 +1,8 @@
 ---
-source-git-commit: 51f1220bba554fb4a1b2ad38b9de1430ff2a5530
-translation-type: tm+mt
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 91%
 
 ---
 # Richtlinien für Beiträge zur Adobe Experience Manager-Dokumentation
@@ -13,11 +15,11 @@ Das Ziel der AEM-Dokumentation besteht darin, AEM-Benutzer schnellstmöglich mit
 
 ## Beiträge zur Dokumentation
 
-Zur stetigen Verbesserung der AEM-Dokumentation ist die gesamte Community von AEM-Benutzern gerne willkommen, zur Dokumentation beizutragen. Sei es durch Pull-Anforderungen oder Probleme, bei den Verbesserungen der Dokumentation kann es sich um Korrekturen, Klarstellungen, Erweiterungen und weitere Beispiele handeln.
+Zur stetigen Verbesserung der AEM-Dokumentation ist die gesamte Community von AEM-Benutzern herzlich eingeladen, zur Dokumentation beizutragen. Sei es durch Pull-Anfragen oder Probleme, bei den Verbesserungen der Dokumentation kann es sich um Korrekturen, Klarstellungen, Erweiterungen und weitere Beispiele handeln.
 
 ## Dokumentationsstandards
 
-Auch wenn wir Beiträge zu unserer Dokumentation begrüßen, sollte jeder Beitrag zur AEM-Dokumentation in Form einer Pull-Anforderung oder eines Problems mit unseren Beitrags- und Dokumentationsstandards übereinstimmen.
+Auch wenn wir Beiträge zu unserer Dokumentation begrüßen, sollte jeder Beitrag zur AEM-Dokumentation in Form einer Pull-Anfrage oder eines Problems mit unseren Beitrags- und Dokumentationsstandards übereinstimmen.
 
 Beiträge, die diesen Standards nicht entsprechen, können abgelehnt werden.
 
@@ -33,17 +35,17 @@ Ausnahmen gelten für die Versionshinweise, in denen bekannte Probleme mit mögl
 
 ### Dokumentationsbeiträge sind nicht zur Beantwortung technischer Fragen geeignet.
 
-Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anforderungen sind jedoch nur für *Beiträge* vorgesehen. Sie sollen nicht zur Beantwortung Ihrer Fragen zur Verwendung von AEM, zur Implementierung Ihres AEM-Projekts oder zur Lösung technischer Probleme verwendet werden.
+Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anfragen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht zur Beantwortung Ihrer Fragen über die Verwendung von AEM, Implementierung Ihres AEM-Projekts oder zur Lösung technischer Probleme gedacht.
 
-Fragen zur Verwendung von AEM oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [Enterprise-Support-Portal für Experience Cloud](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) gemeldet oder in der [Experience Manager-Community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) diskutiert werden.
+Fragen zur Verwendung von AEM oder technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [Support-Portal für Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
 
-***AEM-Dokumentationsbeiträge sind kein Ersatz für die Adobe-Kundenunterstützung*** und Beiträge, die Antworten auf Supportfragen suchen, werden abgelehnt.
+***AEM Dokumentationsbeiträge sind kein Ersatz für die Adobe-*** Kundenunterstützung und Beiträge, die Antworten auf Supportfragen suchen, werden abgelehnt.
 
 ### Die Beiträge müssen sich eindeutig auf die betroffenen Dokumentationsseiten beziehen.
 
-Wenn Sie ein Problem erstellen, um Verbesserungen an der Dokumentation vorzuschlagen, müssen Sie Links zu den betroffenen Seiten einbeziehen. Wenn Sie ein Problem mithilfe des Links **Diese Seite bearbeiten** auf einer Dokumentationsseite erstellen, wird das Problem automatisch mit einem Link zur Seite erstellt.
+Wenn Sie ein Problem erstellen, um Verbesserungen an der Dokumentation vorzuschlagen, müssen Sie Links zu den betroffenen Seiten angeben. Wenn Sie ein Problem mithilfe des Links **Diese Seite bearbeiten** auf einer Dokumentationsseite erstellen, wird das Problem automatisch mit einem Link zur Seite erstellt.
 
-Dies gilt nicht für Pull-Anforderungen, da Pull-Anforderungen standardmäßig auf die betroffene(n) Seite(n) verweisen.
+Dies gilt nicht für Pull-Anfragen, da Pull-Anfragen standardmäßig auf die betroffene(n) Seite(n) verweisen.
 
 ## Dokumentationsrichtlinien
 
@@ -67,9 +69,9 @@ Das [Manual of Style von Microsoft](https://docs.microsoft.com/de-de/style-guide
 
 ### Formatierung
 
-| Item | Stil |
+| Element | Stil |
 |---|---|
-| UI-Element oder UI-Option | **fett** |
+| Element oder Option der Benutzeroberfläche | **fett** |
 | Dateiname, Pfad, Benutzereingabe, Parameterwerte | `monospaced` |
 | Code, Befehlszeile | ```Code Block``` |
 
@@ -85,6 +87,6 @@ Versuchen Sie nach Möglichkeit direkte Verweise auf eine bestimmte Version im g
 
 ### Verwendung von Day, AEM, CQ, CRX
 
-Das Produkt sollte in einem Artikel zum ersten Mal immer mit dem vollständigen Namen **von Adobe Experience Manager** genannt und anschließend als **AEM** bezeichnet werden.
+Das Produkt sollte in einem Artikel zum ersten Mal immer mit dem vollständigen Namen **Adobe Experience Manager** genannt und anschließend als **AEM** bezeichnet werden.
 
-Day, Day-Software, CQ und CRX sollten nur verwendet werden, wenn dies unvermeidlich ist, z.B. in Klassennamen oder bei Verweisen auf die AEM-Historie.
+Day, Day-Software, CQ und CRX sollten nur verwendet werden, wenn dies unvermeidlich ist, z. B. in Klassennamen oder bei Verweisen auf die AEM-Historie.
