@@ -2,9 +2,9 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 87%
 
 ---
@@ -190,10 +190,6 @@ Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients
 Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
 AEM as a Cloud Service erfordert den Versand von Post über Port 465. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
-
->[!NOTE]
->
->Beachten Sie, dass Adobe keine SMTP-Regression über eine eindeutige dedizierte IP-Adresse unterstützt.
 
 ### Konfiguration {#email-configuration}
 
